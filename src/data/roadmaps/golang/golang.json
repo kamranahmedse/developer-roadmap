@@ -3,15 +3,15 @@
         "controls": {
             "control": [
                 {
-                    "ID": "2701",
+                    "ID": "3111",
                     "typeID": "Arrow",
-                    "zOrder": "0",
+                    "zOrder": "1",
                     "w": "38",
                     "h": "79",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "323",
-                    "y": "187",
+                    "x": "333",
+                    "y": "197",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -33,15 +33,15 @@
                     }
                 },
                 {
-                    "ID": "2702",
+                    "ID": "3112",
                     "typeID": "Arrow",
-                    "zOrder": "1",
+                    "zOrder": "2",
                     "w": "206",
                     "h": "329",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "606",
-                    "y": "1279",
+                    "x": "616",
+                    "y": "1289",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -62,45 +62,15 @@
                     }
                 },
                 {
-                    "ID": "2703",
-                    "typeID": "Arrow",
-                    "zOrder": "2",
-                    "w": "1",
-                    "h": "69",
-                    "measuredW": "150",
-                    "measuredH": "100",
-                    "x": "527",
-                    "y": "1291",
-                    "properties": {
-                        "curvature": "0",
-                        "leftArrow": "false",
-                        "rightArrow": "false",
-                        "stroke": "dotted",
-                        "color": "10027263",
-                        "p0": {
-                            "x": -0.5,
-                            "y": 0
-                        },
-                        "p1": {
-                            "x": 0.37281767955801104,
-                            "y": 0.003535911602209944
-                        },
-                        "p2": {
-                            "x": -0.5,
-                            "y": 69
-                        }
-                    }
-                },
-                {
-                    "ID": "2704",
+                    "ID": "3113",
                     "typeID": "Arrow",
                     "zOrder": "3",
                     "w": "1",
                     "h": "69",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "374",
-                    "y": "1280",
+                    "x": "537",
+                    "y": "1301",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -122,15 +92,45 @@
                     }
                 },
                 {
-                    "ID": "2705",
+                    "ID": "3114",
                     "typeID": "Arrow",
                     "zOrder": "4",
+                    "w": "1",
+                    "h": "69",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "384",
+                    "y": "1290",
+                    "properties": {
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "rightArrow": "false",
+                        "stroke": "dotted",
+                        "color": "10027263",
+                        "p0": {
+                            "x": -0.5,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.37281767955801104,
+                            "y": 0.003535911602209944
+                        },
+                        "p2": {
+                            "x": -0.5,
+                            "y": 69
+                        }
+                    }
+                },
+                {
+                    "ID": "3115",
+                    "typeID": "Arrow",
+                    "zOrder": "5",
                     "w": "140",
                     "h": "78",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "247",
-                    "y": "1275",
+                    "x": "257",
+                    "y": "1285",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -152,15 +152,15 @@
                     }
                 },
                 {
-                    "ID": "2706",
+                    "ID": "3116",
                     "typeID": "Arrow",
-                    "zOrder": "5",
+                    "zOrder": "6",
                     "w": "121",
                     "h": "3",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "618",
-                    "y": "1278",
+                    "x": "628",
+                    "y": "1288",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -181,15 +181,15 @@
                     }
                 },
                 {
-                    "ID": "2707",
+                    "ID": "3117",
                     "typeID": "Arrow",
-                    "zOrder": "6",
+                    "zOrder": "7",
                     "w": "203",
                     "h": "97",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "628",
-                    "y": "1181",
+                    "x": "638",
+                    "y": "1191",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -210,15 +210,15 @@
                     }
                 },
                 {
-                    "ID": "2708",
+                    "ID": "3118",
                     "typeID": "Arrow",
-                    "zOrder": "7",
+                    "zOrder": "8",
                     "w": "68",
                     "h": "20",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "204",
-                    "y": "1217",
+                    "x": "214",
+                    "y": "1227",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -240,15 +240,15 @@
                     }
                 },
                 {
-                    "ID": "2709",
+                    "ID": "3119",
                     "typeID": "Arrow",
-                    "zOrder": "8",
+                    "zOrder": "9",
                     "w": "68",
                     "h": "61",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "201",
-                    "y": "1218",
+                    "x": "211",
+                    "y": "1228",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -270,15 +270,15 @@
                     }
                 },
                 {
-                    "ID": "2710",
+                    "ID": "3120",
                     "typeID": "Arrow",
-                    "zOrder": "9",
+                    "zOrder": "10",
                     "w": "57",
                     "h": "28",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "335",
-                    "y": "1181",
+                    "x": "345",
+                    "y": "1191",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -300,15 +300,15 @@
                     }
                 },
                 {
-                    "ID": "2711",
+                    "ID": "3121",
                     "typeID": "Arrow",
-                    "zOrder": "10",
+                    "zOrder": "11",
                     "w": "68",
                     "h": "26",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "195",
-                    "y": "1164",
+                    "x": "205",
+                    "y": "1174",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -330,15 +330,15 @@
                     }
                 },
                 {
-                    "ID": "2712",
+                    "ID": "3122",
                     "typeID": "Arrow",
-                    "zOrder": "11",
+                    "zOrder": "12",
                     "w": "64",
                     "h": "19",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "203",
-                    "y": "1137",
+                    "x": "213",
+                    "y": "1147",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -360,15 +360,15 @@
                     }
                 },
                 {
-                    "ID": "2713",
+                    "ID": "3123",
                     "typeID": "Arrow",
-                    "zOrder": "12",
+                    "zOrder": "13",
                     "w": "70",
                     "h": "24",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "330",
-                    "y": "1153",
+                    "x": "340",
+                    "y": "1163",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -390,15 +390,15 @@
                     }
                 },
                 {
-                    "ID": "2714",
+                    "ID": "3124",
                     "typeID": "Arrow",
-                    "zOrder": "13",
+                    "zOrder": "14",
                     "w": "93",
                     "h": "21",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "635",
-                    "y": "1133",
+                    "x": "645",
+                    "y": "1143",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -420,15 +420,15 @@
                     }
                 },
                 {
-                    "ID": "2715",
+                    "ID": "3125",
                     "typeID": "Arrow",
-                    "zOrder": "14",
+                    "zOrder": "15",
                     "w": "94",
                     "h": "28",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "634",
-                    "y": "1099",
+                    "x": "644",
+                    "y": "1109",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -450,15 +450,15 @@
                     }
                 },
                 {
-                    "ID": "2716",
+                    "ID": "3126",
                     "typeID": "Arrow",
-                    "zOrder": "15",
+                    "zOrder": "16",
                     "w": "111",
                     "h": "43",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "274",
-                    "y": "1035",
+                    "x": "284",
+                    "y": "1045",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -480,15 +480,15 @@
                     }
                 },
                 {
-                    "ID": "2717",
+                    "ID": "3127",
                     "typeID": "Arrow",
-                    "zOrder": "16",
+                    "zOrder": "17",
                     "w": "121",
                     "h": "3",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "265",
-                    "y": "1084",
+                    "x": "275",
+                    "y": "1094",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -510,15 +510,15 @@
                     }
                 },
                 {
-                    "ID": "2718",
+                    "ID": "3128",
                     "typeID": "Arrow",
-                    "zOrder": "17",
+                    "zOrder": "18",
                     "w": "77",
                     "h": "1",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "180",
-                    "y": "925",
+                    "x": "190",
+                    "y": "935",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -540,15 +540,15 @@
                     }
                 },
                 {
-                    "ID": "2719",
+                    "ID": "3129",
                     "typeID": "Arrow",
-                    "zOrder": "18",
+                    "zOrder": "19",
                     "w": "99",
                     "h": "108",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "300",
-                    "y": "929",
+                    "x": "310",
+                    "y": "939",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -569,45 +569,15 @@
                     }
                 },
                 {
-                    "ID": "2720",
-                    "typeID": "Arrow",
-                    "zOrder": "19",
-                    "w": "1",
-                    "h": "69",
-                    "measuredW": "150",
-                    "measuredH": "100",
-                    "x": "619",
-                    "y": "952",
-                    "properties": {
-                        "curvature": "0",
-                        "leftArrow": "false",
-                        "rightArrow": "false",
-                        "stroke": "dotted",
-                        "color": "10027263",
-                        "p0": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "p1": {
-                            "x": 0.4819277108433732,
-                            "y": 0.018072289156626505
-                        },
-                        "p2": {
-                            "x": 0,
-                            "y": 68.5
-                        }
-                    }
-                },
-                {
-                    "ID": "2721",
+                    "ID": "3130",
                     "typeID": "Arrow",
                     "zOrder": "20",
                     "w": "1",
                     "h": "69",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "536",
-                    "y": "955",
+                    "x": "629",
+                    "y": "962",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -629,15 +599,15 @@
                     }
                 },
                 {
-                    "ID": "2722",
+                    "ID": "3131",
                     "typeID": "Arrow",
                     "zOrder": "21",
                     "w": "1",
                     "h": "69",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "464",
-                    "y": "957",
+                    "x": "546",
+                    "y": "965",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -659,15 +629,15 @@
                     }
                 },
                 {
-                    "ID": "2723",
+                    "ID": "3132",
                     "typeID": "Arrow",
                     "zOrder": "22",
                     "w": "1",
                     "h": "69",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "404",
-                    "y": "954",
+                    "x": "474",
+                    "y": "967",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -689,15 +659,45 @@
                     }
                 },
                 {
-                    "ID": "2724",
+                    "ID": "3133",
                     "typeID": "Arrow",
                     "zOrder": "23",
+                    "w": "1",
+                    "h": "69",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "414",
+                    "y": "964",
+                    "properties": {
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "rightArrow": "false",
+                        "stroke": "dotted",
+                        "color": "10027263",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4819277108433732,
+                            "y": 0.018072289156626505
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 68.5
+                        }
+                    }
+                },
+                {
+                    "ID": "3134",
+                    "typeID": "Arrow",
+                    "zOrder": "24",
                     "w": "94",
                     "h": "1",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "646",
-                    "y": "1038",
+                    "x": "656",
+                    "y": "1048",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -719,45 +719,15 @@
                     }
                 },
                 {
-                    "ID": "2725",
-                    "typeID": "Arrow",
-                    "zOrder": "24",
-                    "w": "97",
-                    "h": "40",
-                    "measuredW": "150",
-                    "measuredH": "100",
-                    "x": "635",
-                    "y": "988",
-                    "properties": {
-                        "curvature": "0",
-                        "leftArrow": "false",
-                        "rightArrow": "false",
-                        "stroke": "dotted",
-                        "color": "10027263",
-                        "p0": {
-                            "x": 97,
-                            "y": -0.5
-                        },
-                        "p1": {
-                            "x": 0.5439101123595506,
-                            "y": 0.05905617977528093
-                        },
-                        "p2": {
-                            "x": 0,
-                            "y": 39.5
-                        }
-                    }
-                },
-                {
-                    "ID": "2726",
+                    "ID": "3136",
                     "typeID": "Arrow",
                     "zOrder": "25",
                     "w": "1",
                     "h": "118",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "301",
-                    "y": "805",
+                    "x": "311",
+                    "y": "815",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -778,15 +748,15 @@
                     }
                 },
                 {
-                    "ID": "2727",
+                    "ID": "3137",
                     "typeID": "Arrow",
                     "zOrder": "26",
                     "w": "2",
                     "h": "68",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "137",
-                    "y": "796",
+                    "x": "147",
+                    "y": "806",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -808,15 +778,15 @@
                     }
                 },
                 {
-                    "ID": "2728",
+                    "ID": "3138",
                     "typeID": "Arrow",
                     "zOrder": "27",
                     "w": "1",
                     "h": "51",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "227",
-                    "y": "807",
+                    "x": "237",
+                    "y": "817",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -838,15 +808,15 @@
                     }
                 },
                 {
-                    "ID": "2729",
+                    "ID": "3139",
                     "typeID": "Arrow",
                     "zOrder": "28",
                     "w": "1",
                     "h": "54",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "495",
-                    "y": "803",
+                    "x": "505",
+                    "y": "813",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -868,15 +838,15 @@
                     }
                 },
                 {
-                    "ID": "2730",
+                    "ID": "3140",
                     "typeID": "Arrow",
                     "zOrder": "29",
                     "w": "98",
                     "h": "2",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "300",
-                    "y": "800",
+                    "x": "310",
+                    "y": "810",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -897,15 +867,15 @@
                     }
                 },
                 {
-                    "ID": "2731",
+                    "ID": "3141",
                     "typeID": "Arrow",
                     "zOrder": "30",
                     "w": "1",
                     "h": "58",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "497",
-                    "y": "739",
+                    "x": "507",
+                    "y": "749",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -927,15 +897,15 @@
                     }
                 },
                 {
-                    "ID": "2732",
+                    "ID": "3142",
                     "typeID": "Arrow",
                     "zOrder": "31",
                     "w": "107",
                     "h": "125",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "619",
-                    "y": "815",
+                    "x": "629",
+                    "y": "825",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -957,15 +927,15 @@
                     }
                 },
                 {
-                    "ID": "2733",
+                    "ID": "3143",
                     "typeID": "Arrow",
                     "zOrder": "32",
                     "w": "91",
                     "h": "69",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "630",
-                    "y": "813",
+                    "x": "640",
+                    "y": "823",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -987,15 +957,15 @@
                     }
                 },
                 {
-                    "ID": "2734",
+                    "ID": "3144",
                     "typeID": "Arrow",
                     "zOrder": "33",
                     "w": "107",
                     "h": "4",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "625",
-                    "y": "796",
+                    "x": "635",
+                    "y": "806",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1017,15 +987,15 @@
                     }
                 },
                 {
-                    "ID": "2735",
+                    "ID": "3145",
                     "typeID": "Arrow",
                     "zOrder": "34",
                     "w": "95",
                     "h": "34",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "631",
-                    "y": "809",
+                    "x": "641",
+                    "y": "819",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1047,15 +1017,15 @@
                     }
                 },
                 {
-                    "ID": "2736",
+                    "ID": "3146",
                     "typeID": "Arrow",
                     "zOrder": "35",
                     "w": "109",
                     "h": "57",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "623",
-                    "y": "742",
+                    "x": "633",
+                    "y": "752",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1077,15 +1047,15 @@
                     }
                 },
                 {
-                    "ID": "2737",
+                    "ID": "3147",
                     "typeID": "Arrow",
                     "zOrder": "36",
                     "w": "141",
                     "h": "181",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "587",
-                    "y": "499",
+                    "x": "597",
+                    "y": "509",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1107,15 +1077,15 @@
                     }
                 },
                 {
-                    "ID": "2738",
+                    "ID": "3148",
                     "typeID": "Arrow",
                     "zOrder": "37",
                     "w": "125",
                     "h": "133",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "607",
-                    "y": "501",
+                    "x": "617",
+                    "y": "511",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1137,15 +1107,15 @@
                     }
                 },
                 {
-                    "ID": "2739",
+                    "ID": "3149",
                     "typeID": "Arrow",
                     "zOrder": "38",
                     "w": "4",
                     "h": "78",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "498",
-                    "y": "494",
+                    "x": "508",
+                    "y": "504",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1167,15 +1137,15 @@
                     }
                 },
                 {
-                    "ID": "2740",
+                    "ID": "3150",
                     "typeID": "Arrow",
                     "zOrder": "39",
                     "w": "2",
                     "h": "83",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "422",
-                    "y": "493",
+                    "x": "432",
+                    "y": "503",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1197,15 +1167,15 @@
                     }
                 },
                 {
-                    "ID": "2741",
+                    "ID": "3151",
                     "typeID": "Arrow",
                     "zOrder": "40",
                     "w": "101",
                     "h": "83",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "632",
-                    "y": "499",
+                    "x": "642",
+                    "y": "509",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1227,15 +1197,15 @@
                     }
                 },
                 {
-                    "ID": "2742",
+                    "ID": "3152",
                     "typeID": "Arrow",
                     "zOrder": "41",
                     "w": "27",
                     "h": "64",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "372",
-                    "y": "300",
+                    "x": "382",
+                    "y": "310",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1256,15 +1226,15 @@
                     }
                 },
                 {
-                    "ID": "2743",
+                    "ID": "3153",
                     "typeID": "__group__",
                     "zOrder": "42",
                     "measuredW": "535",
                     "measuredH": "90",
                     "w": "535",
                     "h": "90",
-                    "x": "36",
-                    "y": "232",
+                    "x": "46",
+                    "y": "242",
                     "properties": {
                         "controlName": "ext_link:roadmap.sh/backend"
                     },
@@ -1314,15 +1284,15 @@
                     }
                 },
                 {
-                    "ID": "2744",
+                    "ID": "3154",
                     "typeID": "Arrow",
                     "zOrder": "43",
                     "w": "126",
                     "h": "299",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "509",
-                    "y": "497",
+                    "x": "519",
+                    "y": "507",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1343,15 +1313,15 @@
                     }
                 },
                 {
-                    "ID": "2745",
+                    "ID": "3155",
                     "typeID": "Arrow",
                     "zOrder": "44",
                     "w": "98",
                     "h": "47",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "631",
-                    "y": "436",
+                    "x": "641",
+                    "y": "446",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1373,15 +1343,15 @@
                     }
                 },
                 {
-                    "ID": "2746",
+                    "ID": "3156",
                     "typeID": "Arrow",
                     "zOrder": "45",
                     "w": "120",
                     "h": "44",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "627",
-                    "y": "495",
+                    "x": "637",
+                    "y": "505",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1403,15 +1373,15 @@
                     }
                 },
                 {
-                    "ID": "2747",
+                    "ID": "3157",
                     "typeID": "Arrow",
                     "zOrder": "46",
                     "w": "107",
                     "h": "51",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "306",
-                    "y": "435",
+                    "x": "316",
+                    "y": "445",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1433,15 +1403,15 @@
                     }
                 },
                 {
-                    "ID": "2748",
+                    "ID": "3158",
                     "typeID": "Arrow",
                     "zOrder": "47",
                     "w": "108",
                     "h": "44",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "306",
-                    "y": "492",
+                    "x": "316",
+                    "y": "502",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1463,15 +1433,15 @@
                     }
                 },
                 {
-                    "ID": "2749",
+                    "ID": "3159",
                     "typeID": "Arrow",
                     "zOrder": "48",
                     "w": "115",
                     "h": "5",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "304",
-                    "y": "487",
+                    "x": "314",
+                    "y": "497",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1493,15 +1463,15 @@
                     }
                 },
                 {
-                    "ID": "2750",
+                    "ID": "3160",
                     "typeID": "Arrow",
                     "zOrder": "49",
                     "w": "123",
                     "h": "3",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "607",
-                    "y": "488",
+                    "x": "617",
+                    "y": "498",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1523,28 +1493,28 @@
                     }
                 },
                 {
-                    "ID": "2751",
+                    "ID": "3161",
                     "typeID": "Label",
                     "zOrder": "50",
                     "measuredW": "37",
                     "measuredH": "36",
-                    "x": "404",
-                    "y": "368",
+                    "x": "414",
+                    "y": "378",
                     "properties": {
                         "size": "28",
                         "text": "Go"
                     }
                 },
                 {
-                    "ID": "2752",
+                    "ID": "3162",
                     "typeID": "Arrow",
                     "zOrder": "51",
                     "w": "51",
                     "h": "59",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "430",
-                    "y": "416",
+                    "x": "440",
+                    "y": "426",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -1565,15 +1535,15 @@
                     }
                 },
                 {
-                    "ID": "2753",
+                    "ID": "3163",
                     "typeID": "__group__",
                     "zOrder": "52",
                     "measuredW": "262",
                     "measuredH": "43",
                     "w": "262",
                     "h": "43",
-                    "x": "384",
-                    "y": "467",
+                    "x": "394",
+                    "y": "477",
                     "properties": {
                         "controlName": "100-go-basics"
                     },
@@ -1612,15 +1582,15 @@
                     }
                 },
                 {
-                    "ID": "2754",
+                    "ID": "3164",
                     "typeID": "__group__",
                     "zOrder": "53",
                     "measuredW": "247",
                     "measuredH": "42",
                     "w": "247",
                     "h": "42",
-                    "x": "87",
-                    "y": "422",
+                    "x": "97",
+                    "y": "432",
                     "properties": {
                         "controlName": "100-go-basics:basic-syntax"
                     },
@@ -1660,15 +1630,15 @@
                     }
                 },
                 {
-                    "ID": "2755",
+                    "ID": "3165",
                     "typeID": "__group__",
                     "zOrder": "54",
                     "measuredW": "249",
                     "measuredH": "42",
                     "w": "249",
                     "h": "42",
-                    "x": "85",
-                    "y": "468",
+                    "x": "95",
+                    "y": "478",
                     "properties": {
                         "controlName": "101-go-basics:variables"
                     },
@@ -1707,15 +1677,15 @@
                     }
                 },
                 {
-                    "ID": "2756",
+                    "ID": "3166",
                     "typeID": "__group__",
                     "zOrder": "55",
                     "measuredW": "280",
                     "measuredH": "42",
                     "w": "280",
                     "h": "42",
-                    "x": "718",
-                    "y": "514",
+                    "x": "728",
+                    "y": "524",
                     "properties": {
                         "controlName": "109-go-basics:packages"
                     },
@@ -1754,15 +1724,15 @@
                     }
                 },
                 {
-                    "ID": "2757",
+                    "ID": "3167",
                     "typeID": "__group__",
                     "zOrder": "56",
                     "measuredW": "280",
                     "measuredH": "42",
                     "w": "280",
                     "h": "42",
-                    "x": "718",
-                    "y": "468",
+                    "x": "728",
+                    "y": "478",
                     "properties": {
                         "controlName": "108-go-basics:functions"
                     },
@@ -1801,15 +1771,15 @@
                     }
                 },
                 {
-                    "ID": "2758",
+                    "ID": "3168",
                     "typeID": "__group__",
                     "zOrder": "57",
                     "measuredW": "350",
                     "measuredH": "141",
                     "w": "350",
                     "h": "141",
-                    "x": "684",
-                    "y": "201",
+                    "x": "694",
+                    "y": "211",
                     "children": {
                         "controls": {
                             "control": [
@@ -1960,15 +1930,15 @@
                     }
                 },
                 {
-                    "ID": "2759",
+                    "ID": "3169",
                     "typeID": "__group__",
                     "zOrder": "58",
                     "measuredW": "280",
                     "measuredH": "42",
                     "w": "280",
                     "h": "42",
-                    "x": "718",
-                    "y": "423",
+                    "x": "728",
+                    "y": "433",
                     "properties": {
                         "controlName": "107-go-basics:conditionals"
                     },
@@ -2008,15 +1978,15 @@
                     }
                 },
                 {
-                    "ID": "2760",
+                    "ID": "3170",
                     "typeID": "__group__",
                     "zOrder": "59",
                     "measuredW": "127",
                     "measuredH": "42",
                     "w": "127",
                     "h": "42",
-                    "x": "718",
-                    "y": "561",
+                    "x": "728",
+                    "y": "571",
                     "properties": {
                         "controlName": "110-go-basics:type-casting"
                     },
@@ -2055,15 +2025,15 @@
                     }
                 },
                 {
-                    "ID": "2761",
+                    "ID": "3171",
                     "typeID": "__group__",
                     "zOrder": "60",
                     "measuredW": "146",
                     "measuredH": "42",
                     "w": "146",
                     "h": "42",
-                    "x": "852",
-                    "y": "561",
+                    "x": "862",
+                    "y": "571",
                     "properties": {
                         "controlName": "111-go-basics:type-inference"
                     },
@@ -2102,15 +2072,15 @@
                     }
                 },
                 {
-                    "ID": "2762",
+                    "ID": "3172",
                     "typeID": "__group__",
                     "zOrder": "61",
                     "measuredW": "106",
                     "measuredH": "42",
                     "w": "106",
                     "h": "42",
-                    "x": "352",
-                    "y": "556",
+                    "x": "362",
+                    "y": "566",
                     "properties": {
                         "controlName": "103-go-basics:for-loop"
                     },
@@ -2149,15 +2119,15 @@
                     }
                 },
                 {
-                    "ID": "2763",
+                    "ID": "3173",
                     "typeID": "__group__",
                     "zOrder": "62",
                     "measuredW": "192",
                     "measuredH": "42",
                     "w": "192",
                     "h": "42",
-                    "x": "351",
-                    "y": "601",
+                    "x": "361",
+                    "y": "611",
                     "properties": {
                         "controlName": "105-go-basics:conditionals"
                     },
@@ -2196,15 +2166,15 @@
                     }
                 },
                 {
-                    "ID": "2764",
+                    "ID": "3174",
                     "typeID": "__group__",
                     "zOrder": "63",
                     "measuredW": "262",
                     "measuredH": "43",
                     "w": "262",
                     "h": "43",
-                    "x": "384",
-                    "y": "780",
+                    "x": "394",
+                    "y": "790",
                     "properties": {
                         "controlName": "101-go-advanced"
                     },
@@ -2243,15 +2213,15 @@
                     }
                 },
                 {
-                    "ID": "2765",
+                    "ID": "3175",
                     "typeID": "__group__",
                     "zOrder": "64",
                     "measuredW": "181",
                     "measuredH": "42",
                     "w": "181",
                     "h": "42",
-                    "x": "816",
-                    "y": "656",
+                    "x": "826",
+                    "y": "666",
                     "properties": {
                         "controlName": "116-go-basics:structs"
                     },
@@ -2290,15 +2260,15 @@
                     }
                 },
                 {
-                    "ID": "2766",
+                    "ID": "3176",
                     "typeID": "__group__",
                     "zOrder": "65",
                     "measuredW": "143",
                     "measuredH": "42",
                     "w": "143",
                     "h": "42",
-                    "x": "714",
-                    "y": "776",
+                    "x": "724",
+                    "y": "786",
                     "properties": {
                         "controlName": "103-go-advanced:interfaces"
                     },
@@ -2337,15 +2307,15 @@
                     }
                 },
                 {
-                    "ID": "2767",
+                    "ID": "3177",
                     "typeID": "__group__",
                     "zOrder": "66",
                     "measuredW": "84",
                     "measuredH": "42",
                     "w": "84",
                     "h": "42",
-                    "x": "718",
-                    "y": "608",
+                    "x": "728",
+                    "y": "618",
                     "properties": {
                         "controlName": "112-go-basics:arrays"
                     },
@@ -2384,15 +2354,15 @@
                     }
                 },
                 {
-                    "ID": "2768",
+                    "ID": "3178",
                     "typeID": "__group__",
                     "zOrder": "67",
                     "measuredW": "92",
                     "measuredH": "42",
                     "w": "92",
                     "h": "42",
-                    "x": "808",
-                    "y": "608",
+                    "x": "818",
+                    "y": "618",
                     "properties": {
                         "controlName": "113-go-basics:slices"
                     },
@@ -2431,15 +2401,15 @@
                     }
                 },
                 {
-                    "ID": "2769",
+                    "ID": "3179",
                     "typeID": "__group__",
                     "zOrder": "68",
                     "measuredW": "94",
                     "measuredH": "42",
                     "w": "94",
                     "h": "42",
-                    "x": "717",
-                    "y": "656",
+                    "x": "727",
+                    "y": "666",
                     "properties": {
                         "controlName": "115-go-basics:make"
                     },
@@ -2478,15 +2448,15 @@
                     }
                 },
                 {
-                    "ID": "2770",
+                    "ID": "3180",
                     "typeID": "__group__",
                     "zOrder": "69",
                     "measuredW": "81",
                     "measuredH": "42",
                     "w": "81",
                     "h": "42",
-                    "x": "462",
-                    "y": "556",
+                    "x": "472",
+                    "y": "566",
                     "properties": {
                         "controlName": "104-go-basics:range"
                     },
@@ -2525,15 +2495,15 @@
                     }
                 },
                 {
-                    "ID": "2771",
+                    "ID": "3181",
                     "typeID": "__group__",
                     "zOrder": "70",
                     "measuredW": "92",
                     "measuredH": "42",
                     "w": "92",
                     "h": "42",
-                    "x": "905",
-                    "y": "608",
+                    "x": "915",
+                    "y": "618",
                     "properties": {
                         "controlName": "114-go-basics:maps"
                     },
@@ -2572,15 +2542,15 @@
                     }
                 },
                 {
-                    "ID": "2772",
+                    "ID": "3182",
                     "typeID": "__group__",
                     "zOrder": "71",
                     "measuredW": "281",
                     "measuredH": "42",
                     "w": "281",
                     "h": "42",
-                    "x": "715",
-                    "y": "730",
+                    "x": "725",
+                    "y": "740",
                     "properties": {
                         "controlName": "102-go-advanced:types-and-type-assertions"
                     },
@@ -2619,15 +2589,15 @@
                     }
                 },
                 {
-                    "ID": "2773",
+                    "ID": "3183",
                     "typeID": "__group__",
                     "zOrder": "72",
                     "measuredW": "192",
                     "measuredH": "42",
                     "w": "192",
                     "h": "42",
-                    "x": "351",
-                    "y": "647",
+                    "x": "361",
+                    "y": "657",
                     "properties": {
                         "controlName": "106-go-basics:errors-panic-recover"
                     },
@@ -2666,15 +2636,15 @@
                     }
                 },
                 {
-                    "ID": "2774",
+                    "ID": "3184",
                     "typeID": "__group__",
                     "zOrder": "73",
                     "measuredW": "142",
                     "measuredH": "42",
                     "w": "142",
                     "h": "42",
-                    "x": "715",
-                    "y": "822",
+                    "x": "725",
+                    "y": "832",
                     "properties": {
                         "controlName": "105-go-advanced:goroutines"
                     },
@@ -2713,15 +2683,15 @@
                     }
                 },
                 {
-                    "ID": "2775",
+                    "ID": "3185",
                     "typeID": "__group__",
                     "zOrder": "74",
                     "measuredW": "134",
                     "measuredH": "42",
                     "w": "134",
                     "h": "42",
-                    "x": "862",
-                    "y": "822",
+                    "x": "872",
+                    "y": "832",
                     "properties": {
                         "controlName": "106-go-advanced:channels"
                     },
@@ -2760,15 +2730,15 @@
                     }
                 },
                 {
-                    "ID": "2776",
+                    "ID": "3186",
                     "typeID": "__group__",
                     "zOrder": "75",
                     "measuredW": "142",
                     "measuredH": "42",
                     "w": "142",
                     "h": "42",
-                    "x": "715",
-                    "y": "868",
+                    "x": "725",
+                    "y": "878",
                     "properties": {
                         "controlName": "107-go-advanced:buffer"
                     },
@@ -2807,15 +2777,15 @@
                     }
                 },
                 {
-                    "ID": "2777",
+                    "ID": "3187",
                     "typeID": "__group__",
                     "zOrder": "76",
                     "measuredW": "134",
                     "measuredH": "42",
                     "w": "134",
                     "h": "42",
-                    "x": "862",
-                    "y": "868",
+                    "x": "872",
+                    "y": "878",
                     "properties": {
                         "controlName": "108-go-advanced:select"
                     },
@@ -2854,15 +2824,15 @@
                     }
                 },
                 {
-                    "ID": "2778",
+                    "ID": "3188",
                     "typeID": "__group__",
                     "zOrder": "77",
                     "measuredW": "133",
                     "measuredH": "42",
                     "w": "133",
                     "h": "42",
-                    "x": "863",
-                    "y": "914",
+                    "x": "873",
+                    "y": "924",
                     "properties": {
                         "controlName": "110-go-advanced:scheduler"
                     },
@@ -2902,15 +2872,15 @@
                     }
                 },
                 {
-                    "ID": "2779",
+                    "ID": "3189",
                     "typeID": "__group__",
                     "zOrder": "78",
                     "measuredW": "145",
                     "measuredH": "42",
                     "w": "145",
                     "h": "42",
-                    "x": "425",
-                    "y": "713",
+                    "x": "435",
+                    "y": "723",
                     "properties": {
                         "controlName": "100-go-advanced:go-modules"
                     },
@@ -2949,15 +2919,15 @@
                     }
                 },
                 {
-                    "ID": "2780",
+                    "ID": "3190",
                     "typeID": "__group__",
                     "zOrder": "79",
                     "measuredW": "222",
                     "measuredH": "43",
                     "w": "222",
                     "h": "43",
-                    "x": "99",
-                    "y": "779",
+                    "x": "109",
+                    "y": "789",
                     "properties": {
                         "controlName": "102-go-building-clis"
                     },
@@ -2996,15 +2966,15 @@
                     }
                 },
                 {
-                    "ID": "2781",
+                    "ID": "3191",
                     "typeID": "__group__",
                     "zOrder": "80",
                     "measuredW": "237",
                     "measuredH": "66",
                     "w": "237",
                     "h": "66",
-                    "x": "384",
-                    "y": "838",
+                    "x": "394",
+                    "y": "848",
                     "properties": {
                         "controlName": "101-go-advanced:working-with-json"
                     },
@@ -3056,15 +3026,15 @@
                     }
                 },
                 {
-                    "ID": "2782",
+                    "ID": "3192",
                     "typeID": "__group__",
                     "zOrder": "81",
                     "measuredW": "134",
                     "measuredH": "42",
                     "w": "134",
                     "h": "42",
-                    "x": "862",
-                    "y": "776",
+                    "x": "872",
+                    "y": "786",
                     "properties": {
                         "controlName": "104-go-advanced:context"
                     },
@@ -3103,15 +3073,15 @@
                     }
                 },
                 {
-                    "ID": "2783",
+                    "ID": "3193",
                     "typeID": "__group__",
                     "zOrder": "82",
                     "measuredW": "73",
                     "measuredH": "42",
                     "w": "73",
                     "h": "42",
-                    "x": "99",
-                    "y": "838",
+                    "x": "109",
+                    "y": "848",
                     "properties": {
                         "controlName": "100-go-building-clis:cobra"
                     },
@@ -3150,15 +3120,15 @@
                     }
                 },
                 {
-                    "ID": "2784",
+                    "ID": "3194",
                     "typeID": "__group__",
                     "zOrder": "83",
                     "measuredW": "100",
                     "measuredH": "42",
                     "w": "100",
                     "h": "42",
-                    "x": "179",
-                    "y": "838",
+                    "x": "189",
+                    "y": "848",
                     "properties": {
                         "controlName": "101-go-building-clis:urfave-cli"
                     },
@@ -3196,15 +3166,15 @@
                     }
                 },
                 {
-                    "ID": "2785",
+                    "ID": "3195",
                     "typeID": "__group__",
                     "zOrder": "84",
                     "measuredW": "275",
                     "measuredH": "43",
                     "w": "275",
                     "h": "43",
-                    "x": "373",
-                    "y": "1016",
+                    "x": "383",
+                    "y": "1026",
                     "properties": {
                         "controlName": "104-go-web-frameworks"
                     },
@@ -3243,15 +3213,15 @@
                     }
                 },
                 {
-                    "ID": "2786",
+                    "ID": "3196",
                     "typeID": "__group__",
                     "zOrder": "85",
                     "measuredW": "79",
                     "measuredH": "42",
                     "w": "79",
                     "h": "42",
-                    "x": "353",
-                    "y": "926",
+                    "x": "363",
+                    "y": "936",
                     "properties": {
                         "controlName": "100-go-web-frameworks:beego"
                     },
@@ -3290,15 +3260,15 @@
                     }
                 },
                 {
-                    "ID": "2787",
+                    "ID": "3197",
                     "typeID": "__group__",
                     "zOrder": "86",
                     "measuredW": "54",
                     "measuredH": "42",
                     "w": "54",
                     "h": "42",
-                    "x": "438",
-                    "y": "926",
+                    "x": "448",
+                    "y": "936",
                     "properties": {
                         "controlName": "101-go-web-frameworks:gin"
                     },
@@ -3337,15 +3307,15 @@
                     }
                 },
                 {
-                    "ID": "2788",
+                    "ID": "3198",
                     "typeID": "__group__",
                     "zOrder": "87",
                     "measuredW": "76",
                     "measuredH": "42",
                     "w": "76",
                     "h": "42",
-                    "x": "499",
-                    "y": "926",
+                    "x": "509",
+                    "y": "936",
                     "properties": {
                         "controlName": "102-go-web-frameworks:revel"
                     },
@@ -3384,15 +3354,15 @@
                     }
                 },
                 {
-                    "ID": "2789",
+                    "ID": "3199",
                     "typeID": "__group__",
                     "zOrder": "88",
                     "measuredW": "76",
                     "measuredH": "42",
                     "w": "76",
                     "h": "42",
-                    "x": "582",
-                    "y": "926",
+                    "x": "592",
+                    "y": "936",
                     "properties": {
                         "controlName": "103-go-web-frameworks:echo"
                     },
@@ -3431,15 +3401,15 @@
                     }
                 },
                 {
-                    "ID": "2791",
+                    "ID": "3200",
                     "typeID": "__group__",
                     "zOrder": "89",
                     "measuredW": "100",
                     "measuredH": "42",
                     "w": "100",
                     "h": "42",
-                    "x": "720",
-                    "y": "966",
+                    "x": "835",
+                    "y": "1025",
                     "properties": {
                         "controlName": "104-go-web-frameworks:gorilla"
                     },
@@ -3477,15 +3447,15 @@
                     }
                 },
                 {
-                    "ID": "2792",
+                    "ID": "3201",
                     "typeID": "__group__",
                     "zOrder": "90",
                     "measuredW": "110",
                     "measuredH": "43",
                     "w": "110",
                     "h": "43",
-                    "x": "212",
-                    "y": "904",
+                    "x": "222",
+                    "y": "914",
                     "properties": {
                         "controlName": "103-go-orms"
                     },
@@ -3524,15 +3494,15 @@
                     }
                 },
                 {
-                    "ID": "2793",
+                    "ID": "3202",
                     "typeID": "__group__",
                     "zOrder": "91",
                     "measuredW": "89",
                     "measuredH": "42",
                     "w": "89",
                     "h": "42",
-                    "x": "99",
-                    "y": "905",
+                    "x": "109",
+                    "y": "915",
                     "properties": {
                         "controlName": "100-go-orms:gorm"
                     },
@@ -3571,15 +3541,15 @@
                     }
                 },
                 {
-                    "ID": "2794",
+                    "ID": "3203",
                     "typeID": "__group__",
                     "zOrder": "92",
                     "measuredW": "275",
                     "measuredH": "43",
                     "w": "275",
                     "h": "43",
-                    "x": "373",
-                    "y": "1063",
+                    "x": "383",
+                    "y": "1073",
                     "properties": {
                         "controlName": "105-go-logging"
                     },
@@ -3618,15 +3588,15 @@
                     }
                 },
                 {
-                    "ID": "2795",
+                    "ID": "3204",
                     "typeID": "__group__",
                     "zOrder": "93",
                     "measuredW": "93",
                     "measuredH": "42",
                     "w": "93",
                     "h": "42",
-                    "x": "193",
-                    "y": "1063",
+                    "x": "203",
+                    "y": "1073",
                     "properties": {
                         "controlName": "101-go-logging:zap"
                     },
@@ -3665,15 +3635,15 @@
                     }
                 },
                 {
-                    "ID": "2797",
+                    "ID": "3205",
                     "typeID": "__group__",
                     "zOrder": "94",
                     "measuredW": "275",
                     "measuredH": "43",
                     "w": "275",
                     "h": "43",
-                    "x": "373",
-                    "y": "1110",
+                    "x": "383",
+                    "y": "1120",
                     "properties": {
                         "controlName": "106-go-realtime-communication"
                     },
@@ -3712,15 +3682,15 @@
                     }
                 },
                 {
-                    "ID": "2798",
+                    "ID": "3206",
                     "typeID": "__group__",
                     "zOrder": "95",
                     "measuredW": "205",
                     "measuredH": "42",
                     "w": "205",
                     "h": "42",
-                    "x": "717",
-                    "y": "1092",
+                    "x": "727",
+                    "y": "1102",
                     "properties": {
                         "controlName": "100-go-realtime-communication:melody"
                     },
@@ -3759,15 +3729,15 @@
                     }
                 },
                 {
-                    "ID": "2799",
+                    "ID": "3207",
                     "typeID": "__group__",
                     "zOrder": "96",
                     "measuredW": "205",
                     "measuredH": "42",
                     "w": "205",
                     "h": "42",
-                    "x": "717",
-                    "y": "1140",
+                    "x": "727",
+                    "y": "1150",
                     "properties": {
                         "controlName": "101-go-realtime-communication:centrifugo"
                     },
@@ -3806,15 +3776,15 @@
                     }
                 },
                 {
-                    "ID": "2800",
+                    "ID": "3208",
                     "typeID": "__group__",
                     "zOrder": "97",
                     "measuredW": "275",
                     "measuredH": "43",
                     "w": "275",
                     "h": "43",
-                    "x": "372",
-                    "y": "1158",
+                    "x": "382",
+                    "y": "1168",
                     "properties": {
                         "controlName": "107-go-api-clients"
                     },
@@ -3853,15 +3823,15 @@
                     }
                 },
                 {
-                    "ID": "2801",
+                    "ID": "3209",
                     "typeID": "__group__",
                     "zOrder": "98",
                     "measuredW": "90",
                     "measuredH": "42",
                     "w": "90",
                     "h": "42",
-                    "x": "250",
-                    "y": "1139",
+                    "x": "260",
+                    "y": "1149",
                     "properties": {
                         "controlName": "100-go-api-clients:rest"
                     },
@@ -3900,15 +3870,15 @@
                     }
                 },
                 {
-                    "ID": "2802",
+                    "ID": "3210",
                     "typeID": "__group__",
                     "zOrder": "99",
                     "measuredW": "113",
                     "measuredH": "42",
                     "w": "113",
                     "h": "42",
-                    "x": "99",
-                    "y": "1119",
+                    "x": "109",
+                    "y": "1129",
                     "properties": {
                         "controlName": "100-go-api-clients:rest:heimdall"
                     },
@@ -3947,15 +3917,15 @@
                     }
                 },
                 {
-                    "ID": "2803",
+                    "ID": "3211",
                     "typeID": "__group__",
                     "zOrder": "100",
                     "measuredW": "113",
                     "measuredH": "42",
                     "w": "113",
                     "h": "42",
-                    "x": "99",
-                    "y": "1166",
+                    "x": "109",
+                    "y": "1176",
                     "properties": {
                         "controlName": "101-go-api-clients:rest:grequests"
                     },
@@ -3994,15 +3964,15 @@
                     }
                 },
                 {
-                    "ID": "2804",
+                    "ID": "3212",
                     "typeID": "__group__",
                     "zOrder": "101",
                     "measuredW": "90",
                     "measuredH": "42",
                     "w": "90",
                     "h": "42",
-                    "x": "250",
-                    "y": "1188",
+                    "x": "260",
+                    "y": "1198",
                     "properties": {
                         "controlName": "101-go-api-clients:graphql"
                     },
@@ -4041,15 +4011,15 @@
                     }
                 },
                 {
-                    "ID": "2805",
+                    "ID": "3213",
                     "typeID": "__group__",
                     "zOrder": "102",
                     "measuredW": "113",
                     "measuredH": "42",
                     "w": "113",
                     "h": "42",
-                    "x": "99",
-                    "y": "1216",
+                    "x": "109",
+                    "y": "1226",
                     "properties": {
                         "controlName": "100-go-api-clients:graphql:graphql-go"
                     },
@@ -4088,15 +4058,15 @@
                     }
                 },
                 {
-                    "ID": "2806",
+                    "ID": "3214",
                     "typeID": "__group__",
                     "zOrder": "103",
                     "measuredW": "113",
                     "measuredH": "42",
                     "w": "113",
                     "h": "42",
-                    "x": "99",
-                    "y": "1262",
+                    "x": "109",
+                    "y": "1272",
                     "properties": {
                         "controlName": "101-go-api-clients:graphql:gqlgen"
                     },
@@ -4135,15 +4105,15 @@
                     }
                 },
                 {
-                    "ID": "2807",
+                    "ID": "3215",
                     "typeID": "__group__",
                     "zOrder": "104",
                     "measuredW": "275",
                     "measuredH": "43",
                     "w": "275",
                     "h": "43",
-                    "x": "715",
-                    "y": "1259",
+                    "x": "725",
+                    "y": "1269",
                     "properties": {
                         "controlName": "108-go-testing-your-apps"
                     },
@@ -4182,15 +4152,15 @@
                     }
                 },
                 {
-                    "ID": "2808",
+                    "ID": "3216",
                     "typeID": "__group__",
                     "zOrder": "105",
                     "measuredW": "313",
                     "measuredH": "43",
                     "w": "313",
                     "h": "43",
-                    "x": "336",
-                    "y": "1255",
+                    "x": "346",
+                    "y": "1265",
                     "properties": {
                         "controlName": "109-go-microservices"
                     },
@@ -4229,15 +4199,15 @@
                     }
                 },
                 {
-                    "ID": "2809",
+                    "ID": "3217",
                     "typeID": "__group__",
                     "zOrder": "106",
                     "measuredW": "179",
                     "measuredH": "42",
                     "w": "179",
                     "h": "42",
-                    "x": "99",
-                    "y": "1345",
+                    "x": "109",
+                    "y": "1355",
                     "properties": {
                         "controlName": "100-go-microservices:watermill"
                     },
@@ -4276,15 +4246,15 @@
                     }
                 },
                 {
-                    "ID": "2810",
+                    "ID": "3218",
                     "typeID": "__group__",
                     "zOrder": "107",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "290",
-                    "y": "1345",
+                    "x": "300",
+                    "y": "1355",
                     "properties": {
                         "controlName": "101-go-microservices:rpcx"
                     },
@@ -4323,15 +4293,15 @@
                     }
                 },
                 {
-                    "ID": "2811",
+                    "ID": "3219",
                     "typeID": "__group__",
                     "zOrder": "108",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "290",
-                    "y": "1390",
+                    "x": "300",
+                    "y": "1400",
                     "properties": {
                         "controlName": "102-go-microservices:go-kit"
                     },
@@ -4370,15 +4340,15 @@
                     }
                 },
                 {
-                    "ID": "2812",
+                    "ID": "3220",
                     "typeID": "__group__",
                     "zOrder": "109",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "290",
-                    "y": "1436",
+                    "x": "300",
+                    "y": "1446",
                     "properties": {
                         "controlName": "103-go-microservices:micro"
                     },
@@ -4417,15 +4387,15 @@
                     }
                 },
                 {
-                    "ID": "2813",
+                    "ID": "3221",
                     "typeID": "__group__",
                     "zOrder": "110",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "290",
-                    "y": "1482",
+                    "x": "300",
+                    "y": "1492",
                     "properties": {
                         "controlName": "104-go-microservices:go-zero"
                     },
@@ -4464,15 +4434,15 @@
                     }
                 },
                 {
-                    "ID": "2814",
+                    "ID": "3222",
                     "typeID": "__group__",
                     "zOrder": "111",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "454",
-                    "y": "1345",
+                    "x": "464",
+                    "y": "1355",
                     "properties": {
                         "controlName": "105-go-microservices:protocol-buffers"
                     },
@@ -4511,15 +4481,15 @@
                     }
                 },
                 {
-                    "ID": "2815",
+                    "ID": "3223",
                     "typeID": "__group__",
                     "zOrder": "112",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "454",
-                    "y": "1391",
+                    "x": "464",
+                    "y": "1401",
                     "properties": {
                         "controlName": "106-go-microservices:grpc-go"
                     },
@@ -4558,15 +4528,15 @@
                     }
                 },
                 {
-                    "ID": "2816",
+                    "ID": "3224",
                     "typeID": "__group__",
                     "zOrder": "113",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "454",
-                    "y": "1437",
+                    "x": "464",
+                    "y": "1447",
                     "properties": {
                         "controlName": "107-go-microservices:grpc-gateway"
                     },
@@ -4605,15 +4575,15 @@
                     }
                 },
                 {
-                    "ID": "2817",
+                    "ID": "3225",
                     "typeID": "__group__",
                     "zOrder": "114",
                     "measuredW": "148",
                     "measuredH": "42",
                     "w": "148",
                     "h": "42",
-                    "x": "454",
-                    "y": "1483",
+                    "x": "464",
+                    "y": "1493",
                     "properties": {
                         "controlName": "108-go-microservices:twirp"
                     },
@@ -4652,15 +4622,15 @@
                     }
                 },
                 {
-                    "ID": "2818",
+                    "ID": "3226",
                     "typeID": "Arrow",
                     "zOrder": "115",
                     "w": "1",
                     "h": "98",
                     "measuredW": "150",
                     "measuredH": "100",
-                    "x": "811",
-                    "y": "1636",
+                    "x": "821",
+                    "y": "1646",
                     "properties": {
                         "curvature": "0",
                         "leftArrow": "false",
@@ -4682,15 +4652,15 @@
                     }
                 },
                 {
-                    "ID": "2819",
+                    "ID": "3227",
                     "typeID": "__group__",
                     "zOrder": "116",
                     "measuredW": "468",
                     "measuredH": "84",
                     "w": "468",
                     "h": "84",
-                    "x": "510",
-                    "y": "1581",
+                    "x": "520",
+                    "y": "1591",
                     "properties": {
                         "controlName": "ext_link:roadmap.sh/backend"
                     },
@@ -4740,15 +4710,15 @@
                     }
                 },
                 {
-                    "ID": "2820",
+                    "ID": "3228",
                     "typeID": "__group__",
                     "zOrder": "117",
                     "measuredW": "102",
                     "measuredH": "42",
                     "w": "102",
                     "h": "42",
-                    "x": "719",
-                    "y": "1015",
+                    "x": "729",
+                    "y": "1025",
                     "properties": {
                         "controlName": "105-go-web-frameworks:gofiber"
                     },
@@ -4787,15 +4757,15 @@
                     }
                 },
                 {
-                    "ID": "2821",
+                    "ID": "3229",
                     "typeID": "__group__",
                     "zOrder": "118",
                     "measuredW": "250",
                     "measuredH": "246",
                     "w": "250",
                     "h": "246",
-                    "x": "84",
-                    "y": "516",
+                    "x": "94",
+                    "y": "526",
                     "properties": {
                         "controlName": "102-go-basics:data-types"
                     },
@@ -5047,15 +5017,15 @@
                     }
                 },
                 {
-                    "ID": "2822",
+                    "ID": "3230",
                     "typeID": "__group__",
                     "zOrder": "119",
                     "measuredW": "92",
                     "measuredH": "42",
                     "w": "92",
                     "h": "42",
-                    "x": "194",
-                    "y": "1015",
+                    "x": "204",
+                    "y": "1025",
                     "properties": {
                         "controlName": "100-go-logging:zerolog"
                     },
@@ -5094,15 +5064,15 @@
                     }
                 },
                 {
-                    "ID": "2823",
+                    "ID": "3231",
                     "typeID": "__group__",
                     "zOrder": "120",
                     "measuredW": "142",
                     "measuredH": "42",
                     "w": "142",
                     "h": "42",
-                    "x": "715",
-                    "y": "914",
+                    "x": "725",
+                    "y": "924",
                     "properties": {
                         "controlName": "109-go-advanced:mutext"
                     },
@@ -5140,6 +5110,83 @@
                             ]
                         }
                     }
+                },
+                {
+                    "ID": "3232",
+                    "typeID": "__group__",
+                    "zOrder": "121",
+                    "measuredW": "282",
+                    "measuredH": "42",
+                    "w": "282",
+                    "h": "42",
+                    "x": "725",
+                    "y": "969",
+                    "properties": {
+                        "controlName": "111-go-advanced:generics"
+                    },
+                    "children": {
+                        "controls": {
+                            "control": [
+                                {
+                                    "ID": "0",
+                                    "typeID": "Canvas",
+                                    "zOrder": "0",
+                                    "w": "282",
+                                    "h": "42",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "0",
+                                    "y": "0",
+                                    "properties": {
+                                        "color": "16770457"
+                                    }
+                                },
+                                {
+                                    "ID": "1",
+                                    "typeID": "Label",
+                                    "zOrder": "1",
+                                    "measuredW": "66",
+                                    "measuredH": "24",
+                                    "x": "108",
+                                    "y": "9",
+                                    "properties": {
+                                        "size": "16",
+                                        "text": "Generics"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "ID": "3233",
+                    "typeID": "Arrow",
+                    "zOrder": "0",
+                    "w": "120",
+                    "h": "177",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "615",
+                    "y": "824",
+                    "properties": {
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "rightArrow": "false",
+                        "stroke": "dotted",
+                        "color": "10027263",
+                        "p0": {
+                            "x": 120,
+                            "y": 176.5
+                        },
+                        "p1": {
+                            "x": 0.6311916037373609,
+                            "y": -0.052796621016254895
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": -0.5
+                        }
+                    }
                 }
             ]
         },
@@ -5153,8 +5200,8 @@
         "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
         "mockupH": "1547",
         "mockupW": "998",
-        "measuredW": "1034",
-        "measuredH": "1734",
+        "measuredW": "1044",
+        "measuredH": "1744",
         "version": "1.0"
     },
     "groupOffset": {
