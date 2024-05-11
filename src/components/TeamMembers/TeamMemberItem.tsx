@@ -2,8 +2,10 @@ import { MailIcon } from '../ReactIcons/MailIcon';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { MemberRoleBadge } from './RoleBadge';
 import type { TeamMemberItem } from './TeamMembersPage';
-import { $canManageCurrentTeam } from '../../stores/team';
+import { $canManageCurrentTeam, $currentTeam } from '../../stores/team';
 import { useStore } from '@nanostores/react';
+import { useAuth } from '../../hooks/use-auth';
+import { cn } from '../../lib/classname';
 
 type TeamMemberProps = {
   member: TeamMemberItem;
@@ -29,6 +31,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
     onSendProgressReminder,
   } = props;
 
+  const currentTeam = useStore($currentTeam);
   const canManageTeam = useStore($canManageCurrentTeam);
   const showNoProgressBadge = !member.hasProgress && member.status === 'joined';
   const allowProgressReminder =
@@ -36,6 +39,10 @@ export function TeamMemberItem(props: TeamMemberProps) {
     !member.hasProgress &&
     member.status === 'joined' &&
     member.userId !== userId;
+  const isPersonalProgressOnly =
+    currentTeam?.personalProgressOnly &&
+    currentTeam.role === 'member' &&
+    String(member._id) !== currentTeam.memberId;
 
   return (
     <div
@@ -61,7 +68,18 @@ export function TeamMemberItem(props: TeamMemberProps) {
             <h3 className="inline-grid grid-cols-[auto_auto_auto] items-center font-medium">
               <a
                 href={`/team/member?t=${member.teamId}&m=${member._id}`}
-                className="truncate"
+                className={cn(
+                  'truncate',
+                  isPersonalProgressOnly
+                    ? 'pointer-events-none cursor-default no-underline'
+                    : '',
+                )}
+                onClick={(e) => {
+                  if (isPersonalProgressOnly) {
+                    e.preventDefault();
+                  }
+                }}
+                aria-disabled={isPersonalProgressOnly}
               >
                 {member.name}
               </a>

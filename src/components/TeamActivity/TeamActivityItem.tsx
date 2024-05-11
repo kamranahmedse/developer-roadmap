@@ -4,6 +4,8 @@ import type { TeamStreamActivity } from './TeamActivityPage';
 import { ChevronsDown, ChevronsUp } from 'lucide-react';
 import { ActivityTopicTitles } from '../Activity/ActivityTopicTitles';
 import { cn } from '../../lib/classname';
+import { useStore } from '@nanostores/react';
+import { $currentTeam } from '../../stores/team';
 
 type TeamActivityItemProps = {
   onTopicClick?: (activity: TeamStreamActivity) => void;
@@ -22,6 +24,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const { user, onTopicClick, teamId } = props;
   const { activities } = user;
 
+  const currentTeam = useStore($currentTeam);
   const [showAll, setShowAll] = useState(false);
 
   const resourceLink = (activity: TeamStreamActivity) => {
@@ -62,10 +65,25 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
     : '/images/default-avatar.png';
 
+  const isPersonalProgressOnly =
+    currentTeam?.personalProgressOnly &&
+    currentTeam.role === 'member' &&
+    user.memberId !== currentTeam.memberId;
   const username = (
     <a
       href={`/team/member?t=${teamId}&m=${user?.memberId}`}
-      className="inline-flex items-center gap-1.5 underline underline-offset-2 hover:underline"
+      className={cn(
+        'inline-flex items-center gap-1.5 underline underline-offset-2 hover:underline',
+        isPersonalProgressOnly
+          ? 'pointer-events-none cursor-default no-underline'
+          : '',
+      )}
+      onClick={(e) => {
+        if (isPersonalProgressOnly) {
+          e.preventDefault();
+        }
+      }}
+      aria-disabled={isPersonalProgressOnly}
     >
       <img
         className="inline-block h-5 w-5 rounded-full"
