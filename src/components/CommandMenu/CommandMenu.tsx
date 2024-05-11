@@ -17,6 +17,7 @@ import { ClipboardIcon } from '../ReactIcons/ClipboardIcon.tsx';
 import { GuideIcon } from '../ReactIcons/GuideIcon.tsx';
 import { HomeIcon } from '../ReactIcons/HomeIcon.tsx';
 import { VideoIcon } from '../ReactIcons/VideoIcon.tsx';
+import { cn } from '../../lib/classname.ts';
 
 export type PageType = {
   id: string;
@@ -245,8 +246,10 @@ export function CommandMenu() {
                       <div className="border-b border-gray-100"></div>
                     )}
                     <a
-                      className={`flex w-full items-center rounded p-2 text-sm ${counter === activeCounter ? 'bg-gray-100' : ''
-                        }`}
+                      className={cn(
+                        'flex w-full items-center rounded p-2 text-sm',
+                        counter === activeCounter ? 'bg-gray-100' : '',
+                      )}
                       onMouseOver={() => setActiveCounter(counter)}
                       href={page.url}
                     >
