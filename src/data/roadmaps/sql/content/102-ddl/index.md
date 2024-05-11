@@ -41,7 +41,6 @@ Data Definition Language (DDL) is a subset of SQL. Its primary function is to cr
     ```sql
     ALTER TABLE table_name
     RENAME COLUMN old_column_name TO new_column_name;
-    
     ```
 
 
