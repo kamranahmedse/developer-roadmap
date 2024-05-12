@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [Interactive Diagrams](https://rxmarbles.com/#from)
 - [How to Read RxJS Marble Diagrams](https://www.youtube.com/watch?v=m6jkzIHMEdg)
 - [Observables Part 4 - Marble Diagrams](https://www.youtube.com/watch?v=wXcPenSfdo0)
-
