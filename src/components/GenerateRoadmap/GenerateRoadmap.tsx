@@ -294,7 +294,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     setIsLoading(false);
     pageProgressMessage.set('');
-    return response.roadmapSlug;
+    return {
+      roadmapId: response.roadmapId,
+      roadmapSlug: response.roadmapSlug,
+    };
   };
 
   const downloadGeneratedRoadmapContent = async () => {
@@ -686,9 +689,9 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   <button
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
-                      const roadmapSlug = await saveAIRoadmap();
-                      if (roadmapSlug) {
-                        window.location.href = `/r/${roadmapSlug}`;
+                      const response = await saveAIRoadmap();
+                      if (response?.roadmapSlug) {
+                        window.location.href = `/r/${response.roadmapSlug}`;
                       }
                     }}
                     disabled={isLoading}
@@ -703,10 +706,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   <button
                     className="hidden items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:inline-flex sm:text-sm"
                     onClick={async () => {
-                      const roadmapId = await saveAIRoadmap();
-                      if (roadmapId) {
+                      const response = await saveAIRoadmap();
+                      if (response?.roadmapId) {
                         window.open(
-                          `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${roadmapId}`,
+                          `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response?.roadmapId}`,
                           '_blank',
                         );
                       }
