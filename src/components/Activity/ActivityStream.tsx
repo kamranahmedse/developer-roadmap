@@ -31,10 +31,15 @@ export type UserStreamActivity = {
 type ActivityStreamProps = {
   activities: UserStreamActivity[];
   className?: string;
+  onResourceClick?: (
+    resourceId: string,
+    resourceType: ResourceType,
+    isCustomResource: boolean,
+  ) => void;
 };
 
 export function ActivityStream(props: ActivityStreamProps) {
-  const { activities, className } = props;
+  const { activities, className, onResourceClick } = props;
 
   const [showAll, setShowAll] = useState(false);
   const [selectedActivity, setSelectedActivity] =
@@ -92,15 +97,25 @@ export function ActivityStream(props: ActivityStreamProps) {
                     ? `/r/${resourceSlug}`
                     : `/${resourceId}`;
 
-            const resourceLinkComponent = (
-              <a
-                className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
-                target="_blank"
-                href={resourceUrl}
-              >
-                {resourceTitle}
-              </a>
-            );
+            const resourceLinkComponent =
+              onResourceClick && resourceType !== 'question' ? (
+                <button
+                  className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
+                  onClick={() =>
+                    onResourceClick(resourceId, resourceType, isCustomResource!)
+                  }
+                >
+                  {resourceTitle}
+                </button>
+              ) : (
+                <a
+                  className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
+                  target="_blank"
+                  href={resourceUrl}
+                >
+                  {resourceTitle}
+                </a>
+              );
 
             const topicCount = topicTitles?.length || 0;
 

@@ -11,6 +11,10 @@ import { ActivityStream } from '../Activity/ActivityStream';
 import { MemberRoleBadge } from '../TeamMembers/RoleBadge';
 import { TeamMemberEmptyPage } from './TeamMemberEmptyPage';
 import { Pagination } from '../Pagination/Pagination';
+import type { ResourceType } from '../../lib/resource-progress';
+import { MemberProgressModal } from '../TeamProgress/MemberProgressModal';
+import { useStore } from '@nanostores/react';
+import { $currentTeam } from '../../stores/team';
 
 type GetTeamMemberProgressesResponse = TeamMemberDocument & {
   name: string;
@@ -31,12 +35,19 @@ export function TeamMemberDetailsPage() {
   const { t: teamId, m: memberId } = getUrlParams() as { t: string; m: string };
 
   const toast = useToast();
+  const currentTeam = useStore($currentTeam);
 
   const [memberProgress, setMemberProgress] =
     useState<GetTeamMemberProgressesResponse | null>(null);
   const [memberActivity, setMemberActivity] =
     useState<GetTeamMemberActivityResponse | null>(null);
   const [currPage, setCurrPage] = useState(1);
+
+  const [selectedResource, setSelectedResource] = useState<{
+    resourceId: string;
+    resourceType: ResourceType;
+    isCustomResource?: boolean;
+  } | null>(null);
 
   const loadMemberProgress = async () => {
     const { response, error } = await httpGet<GetTeamMemberProgressesResponse>(
@@ -90,7 +101,25 @@ export function TeamMemberDetailsPage() {
 
   return (
     <>
-      <div className="flex items-center gap-3 mb-8">
+      {selectedResource && (
+        <MemberProgressModal
+          teamId={teamId}
+          member={{
+            ...memberProgress,
+            _id: memberId,
+            updatedAt: new Date(memberProgress.updatedAt).toISOString(),
+            progress: memberProgress.progresses,
+          }}
+          resourceId={selectedResource.resourceId}
+          resourceType={selectedResource.resourceType}
+          isCustomResource={selectedResource.isCustomResource}
+          onClose={() => setSelectedResource(null)}
+          onShowMyProgress={() => {
+            window.location.href = `/team/member?t=${teamId}&m=${currentTeam?.memberId}`;
+          }}
+        />
+      )}
+      <div className="mb-8 flex items-center gap-3">
         <img
           src={avatarUrl}
           alt={memberProgress?.name}
@@ -130,6 +159,13 @@ export function TeamMemberDetailsPage() {
                   title={progress.resourceTitle}
                   roadmapSlug={progress.roadmapSlug}
                   showActions={false}
+                  onResourceClick={() => {
+                    setSelectedResource({
+                      resourceId: progress.resourceId,
+                      resourceType: progress.resourceType,
+                      isCustomResource: progress.isCustomResource,
+                    });
+                  }}
                 />
               );
             })}
@@ -146,6 +182,9 @@ export function TeamMemberDetailsPage() {
             activities={
               memberActivity?.data?.flatMap((act) => act.activity) || []
             }
+            onResourceClick={(resourceId, resourceType, isCustomResource) => {
+              setSelectedResource({ resourceId, resourceType, isCustomResource });
+            }}
           />
           <Pagination
             currPage={currPage}
