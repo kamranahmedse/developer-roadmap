@@ -30,6 +30,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fingerprintjs/fingerprintjs": "^4.3.0",
     "@nanostores/react": "^0.7.2",
+    "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",

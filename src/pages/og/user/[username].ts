@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getDefaultOpenGraphImageBuffer } from '../../../lib/open-graph';
+import { Transformer } from '@napi-rs/image';
 
 export const prerender = false;
 
@@ -24,9 +25,11 @@ export const GET: APIRoute<any, Params> = async (context) => {
   );
 
   const svg = await response.text();
-  return new Response(svg, {
+  const transformer = Transformer.fromSvg(svg).crop(0, 0, 1200, 630);
+
+  return new Response(await transformer.png(), {
     headers: {
-      'Content-Type': 'image/svg+xml',
+      'Content-Type': 'image/png',
     },
   });
 };
