@@ -17,6 +17,7 @@ type ResourceProgressType = {
   isCustomResource: boolean;
   roadmapSlug?: string;
   showActions?: boolean;
+  onResourceClick?: () => void;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
@@ -24,6 +25,7 @@ export function ResourceProgress(props: ResourceProgressType) {
     showClearButton = true,
     isCustomResource,
     showActions = true,
+    onResourceClick,
   } = props;
 
   const userId = getUser()?.id;
@@ -53,13 +55,21 @@ export function ResourceProgress(props: ResourceProgressType) {
   const totalMarked = doneCount + skippedCount;
   const progressPercentage = getPercentage(totalMarked, totalCount);
 
+  const Slot = onResourceClick ? 'button' : 'a';
+
   return (
     <div className="relative">
-      <a
-        target="_blank"
-        href={url}
+      <Slot
+        {...(onResourceClick
+          ? {
+              onClick: onResourceClick,
+            }
+          : {
+              href: url,
+              target: '_blank',
+            })}
         className={cn(
-          'group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400',
+          'group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400',
           showActions ? 'pr-7' : '',
         )}
       >
@@ -74,7 +84,7 @@ export function ResourceProgress(props: ResourceProgressType) {
             width: `${progressPercentage}%`,
           }}
         ></span>
-      </a>
+      </Slot>
 
       {showActions && (
         <div className="absolute right-2 top-0 flex h-full items-center">
