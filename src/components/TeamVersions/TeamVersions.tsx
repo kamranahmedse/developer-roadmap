@@ -106,6 +106,10 @@ export function TeamVersions(props: TeamVersionsProps) {
   }, []);
 
   useEffect(() => {
+    if (!selectedTeamVersion) {
+      return;
+    }
+    
     clearResourceProgress();
 
     // teams have customizations. Assigning #customized-roadmap to roadmapSvgWrap
