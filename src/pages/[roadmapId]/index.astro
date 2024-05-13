@@ -129,6 +129,14 @@ const ogImageUrl =
       client:only='react'
     />
 
+    {
+      roadmapId === 'docker' && (
+        <p class='mb-8 sm:mb-12 px-5 text-center text-xs text-gray-400'>
+          Roadmap owner Insight Partners is an investor in Docker.
+        </p>
+      )
+    }
+
     <FAQs faqs={roadmapFAQs as unknown as FAQType[]} />
 
     <RelatedRoadmaps roadmap={roadmapData} />
