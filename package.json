@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "format": "prettier --write .",
+    "gh-labels": "./scripts/create-roadmap-labels.sh",
     "astro": "astro",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
     "upgrade": "ncu -u",
@@ -19,6 +20,7 @@
     "best-practice-dirs": "node scripts/best-practice-dirs.cjs",
     "best-practice-content": "node scripts/best-practice-content.cjs",
     "generate:og": "node ./scripts/generate-og-images.mjs",
+    "warm:urls": "sh ./scripts/warm-urls.sh https://roadmap.sh/sitemap-0.xml",
     "compress:images": "tsx ./scripts/compress-images.ts",
     "test:e2e": "playwright test"
   },
@@ -29,6 +31,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fingerprintjs/fingerprintjs": "^4.3.0",
     "@nanostores/react": "^0.7.2",
+    "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",

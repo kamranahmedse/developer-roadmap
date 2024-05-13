@@ -3,15 +3,15 @@
     "controls": {
       "control": [
         {
-          "ID": "7868",
+          "ID": "2603",
           "typeID": "Arrow",
           "zOrder": "0",
           "w": "1",
           "h": "203",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "721",
-          "y": "1323",
+          "x": "731",
+          "y": "1333",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -32,15 +32,15 @@
           }
         },
         {
-          "ID": "7869",
+          "ID": "2604",
           "typeID": "Arrow",
           "zOrder": "1",
           "w": "187",
           "h": "138",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "494",
-          "y": "1163",
+          "x": "504",
+          "y": "1173",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -62,15 +62,15 @@
           }
         },
         {
-          "ID": "7870",
+          "ID": "2605",
           "typeID": "Arrow",
           "zOrder": "2",
           "w": "158",
           "h": "87",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "494",
-          "y": "1214",
+          "x": "504",
+          "y": "1224",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -92,15 +92,15 @@
           }
         },
         {
-          "ID": "7871",
+          "ID": "2606",
           "typeID": "Arrow",
           "zOrder": "3",
           "w": "162",
           "h": "42",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "485",
-          "y": "1265",
+          "x": "495",
+          "y": "1275",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -122,15 +122,15 @@
           }
         },
         {
-          "ID": "7872",
+          "ID": "2607",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "167",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "486",
-          "y": "1319",
+          "x": "496",
+          "y": "1329",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -152,15 +152,15 @@
           }
         },
         {
-          "ID": "7873",
+          "ID": "2608",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "167",
           "h": "65",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1084",
-          "y": "1169",
+          "x": "1094",
+          "y": "1179",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -182,15 +182,15 @@
           }
         },
         {
-          "ID": "7874",
+          "ID": "2609",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "152",
           "h": "24",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1100",
-          "y": "1161",
+          "x": "1110",
+          "y": "1171",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -212,15 +212,15 @@
           }
         },
         {
-          "ID": "7875",
+          "ID": "2610",
           "typeID": "Arrow",
           "zOrder": "7",
           "w": "152",
           "h": "31",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1100",
-          "y": "1117",
+          "x": "1110",
+          "y": "1127",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -242,15 +242,15 @@
           }
         },
         {
-          "ID": "7876",
+          "ID": "2611",
           "typeID": "Arrow",
           "zOrder": "8",
           "w": "158",
           "h": "69",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1087",
-          "y": "1069",
+          "x": "1097",
+          "y": "1079",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -272,15 +272,15 @@
           }
         },
         {
-          "ID": "7877",
+          "ID": "2612",
           "typeID": "Arrow",
           "zOrder": "9",
           "w": "213",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "811",
-          "y": "974",
+          "x": "821",
+          "y": "984",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -301,15 +301,15 @@
           }
         },
         {
-          "ID": "7878",
+          "ID": "2613",
           "typeID": "Arrow",
           "zOrder": "10",
           "w": "148",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "512",
-          "y": "871",
+          "x": "522",
+          "y": "881",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -331,15 +331,15 @@
           }
         },
         {
-          "ID": "7879",
+          "ID": "2614",
           "typeID": "Arrow",
           "zOrder": "11",
           "w": "1",
           "h": "94",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "705",
-          "y": "875",
+          "x": "715",
+          "y": "885",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -360,15 +360,15 @@
           }
         },
         {
-          "ID": "7880",
+          "ID": "2615",
           "typeID": "Arrow",
           "zOrder": "12",
           "w": "1",
           "h": "98",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "705",
-          "y": "967",
+          "x": "715",
+          "y": "977",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -390,15 +390,15 @@
           }
         },
         {
-          "ID": "7881",
+          "ID": "2616",
           "typeID": "Arrow",
           "zOrder": "13",
           "w": "224",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1011",
-          "y": "619",
+          "x": "1021",
+          "y": "629",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -419,15 +419,15 @@
           }
         },
         {
-          "ID": "7882",
+          "ID": "2617",
           "typeID": "Arrow",
           "zOrder": "14",
           "w": "1",
           "h": "131",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1334",
-          "y": "827",
+          "x": "1344",
+          "y": "837",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -448,15 +448,15 @@
           }
         },
         {
-          "ID": "7883",
+          "ID": "2618",
           "typeID": "Arrow",
           "zOrder": "15",
           "w": "146",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1096",
-          "y": "838",
+          "x": "1106",
+          "y": "848",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -478,15 +478,15 @@
           }
         },
         {
-          "ID": "7884",
+          "ID": "2619",
           "typeID": "Arrow",
           "zOrder": "16",
           "w": "119",
           "h": "49",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1115",
-          "y": "777",
+          "x": "1125",
+          "y": "787",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -508,15 +508,15 @@
           }
         },
         {
-          "ID": "7885",
+          "ID": "2620",
           "typeID": "Arrow",
           "zOrder": "17",
           "w": "124",
           "h": "99",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1113",
-          "y": "722",
+          "x": "1123",
+          "y": "732",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -538,15 +538,15 @@
           }
         },
         {
-          "ID": "7886",
+          "ID": "2621",
           "typeID": "Arrow",
           "zOrder": "18",
           "w": "537",
           "h": "2",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "796",
-          "y": "955",
+          "x": "806",
+          "y": "965",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -567,15 +567,15 @@
           }
         },
         {
-          "ID": "7887",
+          "ID": "2622",
           "typeID": "Arrow",
           "zOrder": "19",
           "w": "1",
           "h": "179",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1010",
-          "y": "441",
+          "x": "1020",
+          "y": "451",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -596,29 +596,29 @@
           }
         },
         {
-          "ID": "7888",
+          "ID": "2623",
           "typeID": "TextArea",
           "zOrder": "20",
           "w": "238",
           "h": "55",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "893",
-          "y": "513",
+          "x": "903",
+          "y": "523",
           "properties": {
             "borderColor": "16777215"
           }
         },
         {
-          "ID": "7889",
+          "ID": "2624",
           "typeID": "Arrow",
           "zOrder": "21",
           "w": "164",
           "h": "147",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1065",
-          "y": "281",
+          "x": "1075",
+          "y": "291",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -640,14 +640,14 @@
           }
         },
         {
-          "ID": "7890",
+          "ID": "2625",
           "typeID": "Arrow",
           "zOrder": "22",
           "w": "161",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1071",
-          "y": "330",
+          "x": "1081",
+          "y": "340",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -669,15 +669,15 @@
           }
         },
         {
-          "ID": "7891",
+          "ID": "2626",
           "typeID": "Arrow",
           "zOrder": "23",
           "w": "138",
           "h": "50",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1098",
-          "y": "385",
+          "x": "1108",
+          "y": "395",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -699,15 +699,15 @@
           }
         },
         {
-          "ID": "7892",
+          "ID": "2627",
           "typeID": "Arrow",
           "zOrder": "24",
           "w": "148",
           "h": "3",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1109",
-          "y": "444",
+          "x": "1119",
+          "y": "454",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -729,15 +729,15 @@
           }
         },
         {
-          "ID": "7893",
+          "ID": "2628",
           "typeID": "Arrow",
           "zOrder": "25",
           "w": "281",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "749",
-          "y": "447",
+          "x": "759",
+          "y": "457",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -758,15 +758,15 @@
           }
         },
         {
-          "ID": "7894",
+          "ID": "2629",
           "typeID": "Arrow",
           "zOrder": "26",
           "w": "138",
           "h": "145",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "445",
-          "y": "452",
+          "x": "455",
+          "y": "462",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -788,15 +788,15 @@
           }
         },
         {
-          "ID": "7895",
+          "ID": "2630",
           "typeID": "Arrow",
           "zOrder": "27",
           "w": "128",
           "h": "93",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "444",
-          "y": "449",
+          "x": "454",
+          "y": "459",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -818,15 +818,15 @@
           }
         },
         {
-          "ID": "7896",
+          "ID": "2631",
           "typeID": "Arrow",
           "zOrder": "28",
           "w": "119",
           "h": "41",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "444",
-          "y": "449",
+          "x": "454",
+          "y": "459",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -848,15 +848,15 @@
           }
         },
         {
-          "ID": "7897",
+          "ID": "2632",
           "typeID": "Arrow",
           "zOrder": "29",
           "w": "116",
           "h": "57",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "444",
-          "y": "374",
+          "x": "454",
+          "y": "384",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -878,15 +878,15 @@
           }
         },
         {
-          "ID": "7898",
+          "ID": "2633",
           "typeID": "Arrow",
           "zOrder": "30",
           "w": "149",
           "h": "109",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "451",
-          "y": "324",
+          "x": "461",
+          "y": "334",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -908,15 +908,15 @@
           }
         },
         {
-          "ID": "7899",
+          "ID": "2634",
           "typeID": "Arrow",
           "zOrder": "31",
           "w": "177",
           "h": "214",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "450",
-          "y": "445",
+          "x": "460",
+          "y": "455",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -938,15 +938,15 @@
           }
         },
         {
-          "ID": "7900",
+          "ID": "2635",
           "typeID": "Arrow",
           "zOrder": "32",
           "w": "1",
           "h": "112",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "676",
-          "y": "441",
+          "x": "686",
+          "y": "451",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -968,15 +968,15 @@
           }
         },
         {
-          "ID": "7901",
+          "ID": "2636",
           "typeID": "Arrow",
           "zOrder": "33",
           "w": "146",
           "h": "2",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "421",
-          "y": "436",
+          "x": "431",
+          "y": "446",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -998,15 +998,15 @@
           }
         },
         {
-          "ID": "7902",
+          "ID": "2637",
           "typeID": "Arrow",
           "zOrder": "34",
           "w": "173",
           "h": "268",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "737",
-          "y": "168",
+          "x": "747",
+          "y": "178",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1027,28 +1027,187 @@
           }
         },
         {
-          "ID": "7903",
+          "ID": "2638",
           "typeID": "Label",
           "zOrder": "35",
           "measuredW": "149",
           "measuredH": "36",
-          "x": "833",
-          "y": "116",
+          "x": "843",
+          "y": "126",
           "properties": {
             "size": "28",
             "text": "Spring Boot"
           }
         },
         {
-          "ID": "7908",
+          "ID": "2639",
+          "typeID": "__group__",
+          "zOrder": "36",
+          "measuredW": "350",
+          "measuredH": "141",
+          "w": "350",
+          "h": "141",
+          "x": "1170",
+          "y": "60",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "350",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "314",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "Find the detailed version of this roadmap"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "319",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "size": "17",
+                    "text": "along with resources and other roadmaps"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "320",
+                  "measuredH": "45",
+                  "w": "320",
+                  "h": "45",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "320",
+                          "h": "45",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "105",
+                          "measuredH": "28",
+                          "x": "141",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "2",
+                          "measuredW": "45",
+                          "measuredH": "28",
+                          "x": "66",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https"
+                          }
+                        },
+                        {
+                          "ID": "3",
+                          "typeID": "Label",
+                          "zOrder": "3",
+                          "measuredW": "5",
+                          "measuredH": "28",
+                          "x": "113",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          }
+                        },
+                        {
+                          "ID": "4",
+                          "typeID": "Label",
+                          "zOrder": "4",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "120",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        },
+                        {
+                          "ID": "5",
+                          "typeID": "Label",
+                          "zOrder": "5",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "128",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2640",
           "typeID": "__group__",
           "zOrder": "37",
           "measuredW": "391",
           "measuredH": "55",
           "w": "391",
           "h": "55",
-          "x": "700",
-          "y": "229",
+          "x": "710",
+          "y": "239",
           "properties": {
             "controlName": "ext_link:roadmap.sh/java"
           },
@@ -1089,15 +1248,15 @@
           }
         },
         {
-          "ID": "7909",
+          "ID": "2641",
           "typeID": "Arrow",
           "zOrder": "38",
           "w": "1",
           "h": "64",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "907",
-          "y": "40",
+          "x": "917",
+          "y": "50",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1119,2485 +1278,15 @@
           }
         },
         {
-          "ID": "7915",
-          "typeID": "__group__",
-          "zOrder": "40",
-          "measuredW": "238",
-          "measuredH": "50",
-          "w": "238",
-          "h": "50",
-          "x": "528",
-          "y": "415",
-          "properties": {
-            "controlName": "100-spring-core"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "98",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Core"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7916",
-          "typeID": "__group__",
-          "zOrder": "41",
-          "measuredW": "180",
-          "measuredH": "215",
-          "w": "180",
-          "h": "215",
-          "x": "587",
-          "y": "512",
-          "properties": {
-            "controlName": "100-spring-core:introduction"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "180",
-                  "h": "215",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "98",
-                  "measuredH": "26",
-                  "x": "41",
-                  "y": "15",
-                  "properties": {
-                    "size": "18",
-                    "text": "Introduction"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7917",
-          "typeID": "__group__",
-          "zOrder": "42",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "558",
-          "y": "563",
-          "properties": {
-            "controlName": "100-spring-core:introduction:terminology"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Terminology"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7918",
-          "typeID": "__group__",
-          "zOrder": "43",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "558",
-          "y": "615",
-          "properties": {
-            "controlName": "101-spring-core:introduction:architecture"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Architecture"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7919",
-          "typeID": "__group__",
-          "zOrder": "44",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "558",
-          "y": "666",
-          "properties": {
-            "controlName": "102-spring-core:introduction:why-spring"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Why Spring?"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7920",
-          "typeID": "__group__",
-          "zOrder": "45",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "304",
-          "properties": {
-            "controlName": "101-spring-core:configuration"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "109",
-                  "measuredH": "26",
-                  "x": "64",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Configuration"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7921",
-          "typeID": "__group__",
-          "zOrder": "46",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "355",
-          "properties": {
-            "controlName": "102-spring-core:dependency-injection"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "178",
-                  "measuredH": "26",
-                  "x": "30",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Dependency Injection"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7922",
-          "typeID": "__group__",
-          "zOrder": "47",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "407",
-          "properties": {
-            "controlName": "103-spring-core:spring-ioc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "90",
-                  "measuredH": "26",
-                  "x": "74",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring IOC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7923",
-          "typeID": "__group__",
-          "zOrder": "48",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "459",
-          "properties": {
-            "controlName": "104-spring-core:spring-aop"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "93",
-                  "measuredH": "26",
-                  "x": "72",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring AOP"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7924",
-          "typeID": "__group__",
-          "zOrder": "49",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "511",
-          "properties": {
-            "controlName": "105-spring-core:spring-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring MVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7925",
-          "typeID": "__group__",
-          "zOrder": "50",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "563",
-          "properties": {
-            "controlName": "106-spring-core:annotations"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "96",
-                  "measuredH": "26",
-                  "x": "71",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Annotations"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7926",
-          "typeID": "__group__",
-          "zOrder": "51",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "219",
-          "y": "615",
-          "properties": {
-            "controlName": "107-spring-core:spring-bean-scope"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "158",
-                  "measuredH": "26",
-                  "x": "40",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Bean Scope"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7927",
-          "typeID": "__group__",
-          "zOrder": "52",
-          "measuredW": "238",
-          "measuredH": "50",
-          "w": "238",
-          "h": "50",
-          "x": "892",
-          "y": "418",
-          "properties": {
-            "controlName": "101-spring-security"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "123",
-                  "measuredH": "26",
-                  "x": "57",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Security"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7928",
-          "typeID": "__group__",
-          "zOrder": "53",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "265",
-          "properties": {
-            "controlName": "100-spring-security:authentication"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "117",
-                  "measuredH": "26",
-                  "x": "60",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Authentication"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7929",
-          "typeID": "__group__",
-          "zOrder": "54",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "316",
-          "properties": {
-            "controlName": "101-spring-security:authorization"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "106",
-                  "measuredH": "26",
-                  "x": "66",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Authorization"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7930",
-          "typeID": "__group__",
-          "zOrder": "55",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "367",
-          "properties": {
-            "controlName": "102-spring-security:oauth2"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "61",
-                  "measuredH": "26",
-                  "x": "88",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "OAuth2"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7931",
-          "typeID": "__group__",
-          "zOrder": "56",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "419",
-          "properties": {
-            "controlName": "103-spring-security:jwt-authentication"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "159",
-                  "measuredH": "26",
-                  "x": "39",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JWT Authentication"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7932",
-          "typeID": "Label",
-          "zOrder": "57",
-          "measuredW": "107",
-          "measuredH": "28",
-          "x": "958",
-          "y": "527",
-          "properties": {
-            "size": "20",
-            "text": "Spring Boot"
-          }
-        },
-        {
-          "ID": "7933",
-          "typeID": "__group__",
-          "zOrder": "58",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "594",
-          "properties": {
-            "controlName": "102-spring-boot-starters"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "165",
-                  "measuredH": "26",
-                  "x": "36",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Boot Starters"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7934",
-          "typeID": "__group__",
-          "zOrder": "59",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "645",
-          "properties": {
-            "controlName": "103-autconfiguration"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "142",
-                  "measuredH": "26",
-                  "x": "48",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Autoconfiguration"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7935",
-          "typeID": "__group__",
-          "zOrder": "60",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "696",
-          "properties": {
-            "controlName": "104-spring-boot-actuators"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "77",
-                  "measuredH": "26",
-                  "x": "80",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Actuators"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7936",
-          "typeID": "__group__",
-          "zOrder": "61",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1222",
-          "y": "748",
-          "properties": {
-            "controlName": "105-embedded-server"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "148",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Embedded Server"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7937",
-          "typeID": "__group__",
-          "zOrder": "62",
-          "measuredW": "240",
-          "measuredH": "47",
-          "w": "240",
-          "h": "47",
-          "x": "1222",
-          "y": "800",
-          "properties": {
-            "controlName": "106-hibernate"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "240",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "82",
-                  "measuredH": "26",
-                  "x": "79",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Hibernate"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7938",
-          "typeID": "__group__",
-          "zOrder": "63",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "929",
-          "y": "702",
-          "properties": {
-            "controlName": "100-hibernate:transactions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "46",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Transactions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7939",
-          "typeID": "__group__",
-          "zOrder": "64",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "929",
-          "y": "754",
-          "properties": {
-            "controlName": "101-hibernate:relationships"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "111",
-                  "measuredH": "26",
-                  "x": "43",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Relationships"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7940",
-          "typeID": "__group__",
-          "zOrder": "65",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "929",
-          "y": "806",
-          "properties": {
-            "controlName": "102-hibernate:entity-lifecycle"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "121",
-                  "measuredH": "26",
-                  "x": "38",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Entity Lifecycle"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7941",
-          "typeID": "__group__",
-          "zOrder": "66",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "588",
-          "y": "942",
-          "properties": {
-            "controlName": "107-spring-data"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7942",
-          "typeID": "__group__",
-          "zOrder": "67",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "587",
-          "y": "1033",
-          "properties": {
-            "controlName": "100-spring-data:spring-data-jpa"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "131",
-                  "measuredH": "26",
-                  "x": "53",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data JPA"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7943",
-          "typeID": "__group__",
-          "zOrder": "68",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "587",
-          "y": "1085",
-          "properties": {
-            "controlName": "101-spring-data:spring-data-mongodb"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "183",
-                  "measuredH": "26",
-                  "x": "27",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data MongoDB"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7944",
-          "typeID": "__group__",
-          "zOrder": "69",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "587",
-          "y": "1137",
-          "properties": {
-            "controlName": "102-spring-data:spring-data-jdbc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "148",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data JDBC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7945",
-          "typeID": "__group__",
-          "zOrder": "70",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "587",
-          "y": "848",
-          "properties": {
-            "controlName": "108-microservices"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "114",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Microservices"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7946",
-          "typeID": "__group__",
-          "zOrder": "71",
-          "measuredW": "153",
-          "measuredH": "323",
-          "w": "153",
-          "h": "323",
-          "x": "370",
-          "y": "767",
-          "properties": {
-            "controlName": "100-microservices:spring-cloud"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "153",
-                  "h": "323",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "24",
-                  "y": "14",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7947",
-          "typeID": "__group__",
-          "zOrder": "72",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "220",
-          "y": "816",
-          "properties": {
-            "controlName": "100-microservices:spring-cloud:spring-cloud-gateway"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "180",
-                  "measuredH": "26",
-                  "x": "52",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud Gateway"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7948",
-          "typeID": "__group__",
-          "zOrder": "73",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "220",
-          "y": "868",
-          "properties": {
-            "controlName": "101-microservices:spring-cloud:cloud-config"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "89",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Cloud Config"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7949",
-          "typeID": "__group__",
-          "zOrder": "74",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "220",
-          "y": "921",
-          "properties": {
-            "controlName": "102-microservices:spring-cloud:spring-cloud-circuit-breaker"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "232",
-                  "measuredH": "26",
-                  "x": "26",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud Circuit Breaker"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7950",
-          "typeID": "__group__",
-          "zOrder": "75",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "220",
-          "y": "973",
-          "properties": {
-            "controlName": "103-microservices:spring-cloud:spring-cloud-openfeign"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "201",
-                  "measuredH": "26",
-                  "x": "41",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud OpenFeign"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7951",
-          "typeID": "__group__",
-          "zOrder": "76",
-          "measuredW": "91",
-          "measuredH": "47",
-          "w": "91",
-          "h": "47",
-          "x": "220",
-          "y": "1027",
-          "properties": {
-            "controlName": "104-microservices:spring-cloud:hystrix"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "55",
-                  "measuredH": "26",
-                  "x": "20",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Hystrix"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7952",
-          "typeID": "__group__",
-          "zOrder": "77",
-          "measuredW": "91",
-          "measuredH": "47",
-          "w": "91",
-          "h": "47",
-          "x": "317",
-          "y": "1027",
-          "properties": {
-            "controlName": "105-microservices:spring-cloud:sleuth"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "51",
-                  "measuredH": "26",
-                  "x": "20",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Sleuth"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7953",
-          "typeID": "__group__",
-          "zOrder": "78",
-          "measuredW": "91",
-          "measuredH": "47",
-          "w": "91",
-          "h": "47",
-          "x": "413",
-          "y": "1027",
-          "properties": {
-            "controlName": "106-microservices:spring-cloud:eureka"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "57",
-                  "measuredH": "26",
-                  "x": "17",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Eureka"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7954",
-          "typeID": "Arrow",
-          "zOrder": "79",
-          "w": "1",
-          "h": "339",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1025",
-          "y": "975",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 338.4082071365567
-            },
-            "p1": {
-              "x": 0.46428571428571513,
-              "y": -0.003992113361953183
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "7955",
-          "typeID": "__group__",
-          "zOrder": "80",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "929",
-          "y": "1127",
-          "properties": {
-            "controlName": "109-spring-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "48",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring MVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7956",
-          "typeID": "__group__",
-          "zOrder": "81",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1239",
-          "y": "1050",
-          "properties": {
-            "controlName": "100-spring-mvc:servlet"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "57",
-                  "measuredH": "26",
-                  "x": "68",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Servlet"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7957",
-          "typeID": "__group__",
-          "zOrder": "82",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1239",
-          "y": "1102",
-          "properties": {
-            "controlName": "101-spring-mvc:jsp-files"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "76",
-                  "measuredH": "26",
-                  "x": "59",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JSP Files"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7958",
-          "typeID": "__group__",
-          "zOrder": "83",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1239",
-          "y": "1154",
-          "properties": {
-            "controlName": "102-spring-mvc:architecture"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "47",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Architecture"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7959",
-          "typeID": "__group__",
-          "zOrder": "84",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1239",
-          "y": "1207",
-          "properties": {
-            "controlName": "103-spring-mvc:components"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "104",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Components"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7960",
-          "typeID": "Arrow",
-          "zOrder": "85",
-          "w": "213",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "812",
-          "y": "1314",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 212.98029127925827,
-              "y": 0.8810260550936846
-            },
-            "p1": {
-              "x": 0.46428571428571536,
-              "y": -0.003992113361953186
-            },
-            "p2": {
-              "x": -0.2750123853365949,
-              "y": 0.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "7961",
-          "typeID": "__group__",
-          "zOrder": "86",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "632",
-          "y": "1291",
-          "properties": {
-            "controlName": "110-testing"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "59",
-                  "measuredH": "26",
-                  "x": "67",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Testing"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7962",
-          "typeID": "__group__",
-          "zOrder": "87",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "226",
-          "y": "1139",
-          "properties": {
-            "controlName": "100-testing:jpa-test"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "70",
-                  "measuredH": "26",
-                  "x": "102",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JPA Test"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7963",
-          "typeID": "__group__",
-          "zOrder": "88",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "226",
-          "y": "1191",
-          "properties": {
-            "controlName": "101-testing:mock-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "84",
-                  "measuredH": "26",
-                  "x": "95",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "MockMVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7964",
-          "typeID": "__group__",
-          "zOrder": "89",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "226",
-          "y": "1244",
-          "properties": {
-            "controlName": "102-testing:spring-boot-test-annotation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "234",
-                  "measuredH": "26",
-                  "x": "20",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "@SpringBootTest Annotation"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7965",
-          "typeID": "__group__",
-          "zOrder": "90",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "226",
-          "y": "1296",
-          "properties": {
-            "controlName": "103-testing:mockbean-annotation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "194",
-                  "measuredH": "26",
-                  "x": "40",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "@Mockbean Annotation"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7966",
-          "typeID": "Arrow",
-          "zOrder": "91",
-          "w": "1",
-          "h": "139",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "721",
-          "y": "1565",
-          "properties": {
-            "color": "2848996",
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4438624012549725,
-              "y": -0.00008403832147459167
-            },
-            "p2": {
-              "x": 0,
-              "y": 139
-            },
-            "stroke": "dotted"
-          }
-        },
-        {
-          "ID": "7967",
-          "typeID": "TextArea",
-          "zOrder": "92",
-          "w": "443",
-          "h": "124",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "493",
-          "y": "1496"
-        },
-        {
-          "ID": "7968",
-          "typeID": "Label",
-          "zOrder": "93",
-          "measuredW": "303",
-          "measuredH": "25",
-          "x": "563",
-          "y": "1516",
-          "properties": {
-            "size": "17",
-            "text": "Continue Learning with following Tracks"
-          }
-        },
-        {
-          "ID": "7969",
-          "typeID": "__group__",
-          "zOrder": "94",
-          "measuredW": "198",
-          "measuredH": "44",
-          "w": "198",
-          "h": "44",
-          "x": "717",
-          "y": "1551",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/backend"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "147",
-                  "measuredH": "25",
-                  "x": "25",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Backend Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7970",
-          "typeID": "__group__",
-          "zOrder": "95",
-          "measuredW": "185",
-          "measuredH": "44",
-          "w": "185",
-          "h": "44",
-          "x": "522",
-          "y": "1551",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/java"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "185",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "116",
-                  "measuredH": "25",
-                  "x": "35",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Java Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7971",
+          "ID": "2642",
           "typeID": "__group__",
           "zOrder": "39",
           "measuredW": "408",
           "measuredH": "202",
           "w": "408",
           "h": "202",
-          "x": "225",
-          "y": "50",
+          "x": "235",
+          "y": "60",
           "children": {
             "controls": {
               "control": [
@@ -3876,26 +1565,76 @@
           }
         },
         {
-          "ID": "7972",
+          "ID": "2643",
           "typeID": "__group__",
-          "zOrder": "36",
-          "measuredW": "350",
-          "measuredH": "141",
-          "w": "350",
-          "h": "141",
-          "x": "1160",
-          "y": "50",
+          "zOrder": "40",
+          "measuredW": "238",
+          "measuredH": "50",
+          "w": "238",
+          "h": "50",
+          "x": "538",
+          "y": "425",
+          "properties": {
+            "controlName": "100-spring-core"
+          },
           "children": {
             "controls": {
               "control": [
                 {
                   "ID": "0",
-                  "typeID": "Canvas",
+                  "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "350",
-                  "h": "141",
-                  "measuredW": "100",
-                  "measuredH": "70",
+                  "w": "238",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "98",
+                  "measuredH": "26",
+                  "x": "70",
+                  "y": "12",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Core"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2644",
+          "typeID": "__group__",
+          "zOrder": "41",
+          "measuredW": "180",
+          "measuredH": "215",
+          "w": "180",
+          "h": "215",
+          "x": "597",
+          "y": "522",
+          "properties": {
+            "controlName": "100-spring-core:introduction"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "180",
+                  "h": "215",
+                  "measuredW": "200",
+                  "measuredH": "140",
                   "x": "0",
                   "y": "0"
                 },
@@ -3903,131 +1642,2345 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "314",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "17",
+                  "measuredW": "98",
+                  "measuredH": "26",
+                  "x": "41",
+                  "y": "15",
                   "properties": {
-                    "size": "17",
-                    "text": "Find the detailed version of this roadmap"
+                    "size": "18",
+                    "text": "Introduction"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2645",
+          "typeID": "__group__",
+          "zOrder": "42",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "568",
+          "y": "573",
+          "properties": {
+            "controlName": "100-spring-core:introduction:terminology"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
                   }
                 },
                 {
-                  "ID": "2",
+                  "ID": "1",
                   "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "319",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "45",
+                  "zOrder": "1",
+                  "measuredW": "99",
+                  "measuredH": "26",
+                  "x": "69",
+                  "y": "11",
                   "properties": {
-                    "size": "17",
-                    "text": "along with resources and other roadmaps"
+                    "size": "18",
+                    "text": "Terminology"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2646",
+          "typeID": "__group__",
+          "zOrder": "43",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "568",
+          "y": "625",
+          "properties": {
+            "controlName": "101-spring-core:introduction:architecture"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
                   }
                 },
                 {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "320",
-                  "measuredH": "45",
-                  "w": "320",
-                  "h": "45",
-                  "x": "15",
-                  "y": "81",
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "99",
+                  "measuredH": "26",
+                  "x": "69",
+                  "y": "11",
                   "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "320",
-                          "h": "45",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "borderColor": "4273622",
-                            "color": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "105",
-                          "measuredH": "28",
-                          "x": "141",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "roadmap.sh"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "45",
-                          "measuredH": "28",
-                          "x": "66",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Label",
-                          "zOrder": "3",
-                          "measuredW": "5",
-                          "measuredH": "28",
-                          "x": "113",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": ":"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "120",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "Label",
-                          "zOrder": "5",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "128",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        }
-                      ]
-                    }
+                    "size": "18",
+                    "text": "Architecture"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2647",
+          "typeID": "__group__",
+          "zOrder": "44",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "568",
+          "y": "676",
+          "properties": {
+            "controlName": "102-spring-core:introduction:why-spring"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "99",
+                  "measuredH": "26",
+                  "x": "69",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Why Spring?"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2648",
+          "typeID": "__group__",
+          "zOrder": "45",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "314",
+          "properties": {
+            "controlName": "101-spring-core:configuration"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "109",
+                  "measuredH": "26",
+                  "x": "64",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Configuration"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2649",
+          "typeID": "__group__",
+          "zOrder": "46",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "365",
+          "properties": {
+            "controlName": "102-spring-core:dependency-injection"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "178",
+                  "measuredH": "26",
+                  "x": "30",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Dependency Injection"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2650",
+          "typeID": "__group__",
+          "zOrder": "47",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "417",
+          "properties": {
+            "controlName": "103-spring-core:spring-ioc"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "90",
+                  "measuredH": "26",
+                  "x": "74",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring IOC"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2651",
+          "typeID": "__group__",
+          "zOrder": "48",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "469",
+          "properties": {
+            "controlName": "104-spring-core:spring-aop"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "93",
+                  "measuredH": "26",
+                  "x": "72",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring AOP"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2652",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "521",
+          "properties": {
+            "controlName": "105-spring-core:spring-mvc"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "97",
+                  "measuredH": "26",
+                  "x": "70",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring MVC"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2653",
+          "typeID": "__group__",
+          "zOrder": "50",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "573",
+          "properties": {
+            "controlName": "106-spring-core:annotations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "96",
+                  "measuredH": "26",
+                  "x": "71",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Annotations"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2654",
+          "typeID": "__group__",
+          "zOrder": "51",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "229",
+          "y": "625",
+          "properties": {
+            "controlName": "107-spring-core:spring-bean-scope"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "158",
+                  "measuredH": "26",
+                  "x": "40",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Bean Scope"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2655",
+          "typeID": "__group__",
+          "zOrder": "52",
+          "measuredW": "238",
+          "measuredH": "50",
+          "w": "238",
+          "h": "50",
+          "x": "902",
+          "y": "428",
+          "properties": {
+            "controlName": "101-spring-security"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "123",
+                  "measuredH": "26",
+                  "x": "57",
+                  "y": "12",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Security"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2656",
+          "typeID": "__group__",
+          "zOrder": "53",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "275",
+          "properties": {
+            "controlName": "100-spring-security:authentication"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "117",
+                  "measuredH": "26",
+                  "x": "60",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Authentication"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2657",
+          "typeID": "__group__",
+          "zOrder": "54",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "326",
+          "properties": {
+            "controlName": "101-spring-security:authorization"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "106",
+                  "measuredH": "26",
+                  "x": "66",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Authorization"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2658",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "377",
+          "properties": {
+            "controlName": "102-spring-security:oauth2"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "61",
+                  "measuredH": "26",
+                  "x": "88",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "OAuth2"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2659",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "429",
+          "properties": {
+            "controlName": "103-spring-security:jwt-authentication"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "159",
+                  "measuredH": "26",
+                  "x": "39",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "JWT Authentication"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2660",
+          "typeID": "Label",
+          "zOrder": "57",
+          "measuredW": "107",
+          "measuredH": "28",
+          "x": "968",
+          "y": "537",
+          "properties": {
+            "size": "20",
+            "text": "Spring Boot"
+          }
+        },
+        {
+          "ID": "2661",
+          "typeID": "__group__",
+          "zOrder": "58",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "604",
+          "properties": {
+            "controlName": "102-spring-boot-starters"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "165",
+                  "measuredH": "26",
+                  "x": "36",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Boot Starters"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2662",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "655",
+          "properties": {
+            "controlName": "103-autconfiguration"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "142",
+                  "measuredH": "26",
+                  "x": "48",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Autoconfiguration"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2663",
+          "typeID": "__group__",
+          "zOrder": "60",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "706",
+          "properties": {
+            "controlName": "104-spring-boot-actuators"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "77",
+                  "measuredH": "26",
+                  "x": "80",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Actuators"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2664",
+          "typeID": "__group__",
+          "zOrder": "61",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "1232",
+          "y": "758",
+          "properties": {
+            "controlName": "105-embedded-server"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "148",
+                  "measuredH": "26",
+                  "x": "45",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Embedded Server"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2665",
+          "typeID": "__group__",
+          "zOrder": "62",
+          "measuredW": "240",
+          "measuredH": "47",
+          "w": "240",
+          "h": "47",
+          "x": "1232",
+          "y": "810",
+          "properties": {
+            "controlName": "106-hibernate"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "240",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "82",
+                  "measuredH": "26",
+                  "x": "79",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Hibernate"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2666",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "939",
+          "y": "712",
+          "properties": {
+            "controlName": "100-hibernate:transactions"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "105",
+                  "measuredH": "26",
+                  "x": "46",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Transactions"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2667",
+          "typeID": "__group__",
+          "zOrder": "64",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "939",
+          "y": "764",
+          "properties": {
+            "controlName": "101-hibernate:relationships"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "111",
+                  "measuredH": "26",
+                  "x": "43",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Relationships"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2668",
+          "typeID": "__group__",
+          "zOrder": "65",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "939",
+          "y": "816",
+          "properties": {
+            "controlName": "102-hibernate:entity-lifecycle"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "121",
+                  "measuredH": "26",
+                  "x": "38",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Entity Lifecycle"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2669",
+          "typeID": "__group__",
+          "zOrder": "66",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "598",
+          "y": "952",
+          "properties": {
+            "controlName": "107-spring-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "97",
+                  "measuredH": "26",
+                  "x": "70",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Data"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2670",
+          "typeID": "__group__",
+          "zOrder": "67",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "597",
+          "y": "1043",
+          "properties": {
+            "controlName": "100-spring-data:spring-data-jpa"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "131",
+                  "measuredH": "26",
+                  "x": "53",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Data JPA"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2671",
+          "typeID": "__group__",
+          "zOrder": "68",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "597",
+          "y": "1095",
+          "properties": {
+            "controlName": "101-spring-data:spring-data-mongodb"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "183",
+                  "measuredH": "26",
+                  "x": "27",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Data MongoDB"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2672",
+          "typeID": "__group__",
+          "zOrder": "69",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "597",
+          "y": "1147",
+          "properties": {
+            "controlName": "102-spring-data:spring-data-jdbc"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "148",
+                  "measuredH": "26",
+                  "x": "45",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Data JDBC"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2673",
+          "typeID": "__group__",
+          "zOrder": "70",
+          "measuredW": "238",
+          "measuredH": "47",
+          "w": "238",
+          "h": "47",
+          "x": "597",
+          "y": "858",
+          "properties": {
+            "controlName": "108-microservices"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "238",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "114",
+                  "measuredH": "26",
+                  "x": "70",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Microservices"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2674",
+          "typeID": "__group__",
+          "zOrder": "71",
+          "measuredW": "153",
+          "measuredH": "323",
+          "w": "153",
+          "h": "323",
+          "x": "380",
+          "y": "777",
+          "properties": {
+            "controlName": "100-microservices:spring-cloud"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "153",
+                  "h": "323",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "105",
+                  "measuredH": "26",
+                  "x": "24",
+                  "y": "14",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Cloud"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2675",
+          "typeID": "__group__",
+          "zOrder": "72",
+          "measuredW": "284",
+          "measuredH": "47",
+          "w": "284",
+          "h": "47",
+          "x": "230",
+          "y": "826",
+          "properties": {
+            "controlName": "100-microservices:spring-cloud:spring-cloud-gateway"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "284",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "180",
+                  "measuredH": "26",
+                  "x": "52",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Cloud Gateway"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2676",
+          "typeID": "__group__",
+          "zOrder": "73",
+          "measuredW": "284",
+          "measuredH": "47",
+          "w": "284",
+          "h": "47",
+          "x": "230",
+          "y": "878",
+          "properties": {
+            "controlName": "101-microservices:spring-cloud:cloud-config"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "284",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "105",
+                  "measuredH": "26",
+                  "x": "89",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Cloud Config"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2677",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "284",
+          "measuredH": "47",
+          "w": "284",
+          "h": "47",
+          "x": "230",
+          "y": "931",
+          "properties": {
+            "controlName": "102-microservices:spring-cloud:spring-cloud-circuit-breaker"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "284",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "232",
+                  "measuredH": "26",
+                  "x": "26",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Cloud Circuit Breaker"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2678",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "284",
+          "measuredH": "47",
+          "w": "284",
+          "h": "47",
+          "x": "230",
+          "y": "983",
+          "properties": {
+            "controlName": "103-microservices:spring-cloud:spring-cloud-openfeign"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "284",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "201",
+                  "measuredH": "26",
+                  "x": "41",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring Cloud OpenFeign"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2680",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "131",
+          "measuredH": "47",
+          "w": "131",
+          "h": "47",
+          "x": "230",
+          "y": "1037",
+          "properties": {
+            "controlName": "105-microservices:spring-cloud:sleuth"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "131",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "51",
+                  "measuredH": "26",
+                  "x": "40",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Sleuth"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2681",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "145",
+          "measuredH": "47",
+          "w": "145",
+          "h": "47",
+          "x": "369",
+          "y": "1037",
+          "properties": {
+            "controlName": "106-microservices:spring-cloud:eureka"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "145",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "57",
+                  "measuredH": "26",
+                  "x": "44",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Eureka"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2682",
+          "typeID": "Arrow",
+          "zOrder": "78",
+          "w": "1",
+          "h": "339",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1035",
+          "y": "985",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.48803395698428176,
+              "y": 338.4082071365567
+            },
+            "p1": {
+              "x": 0.46428571428571513,
+              "y": -0.003992113361953183
+            },
+            "p2": {
+              "x": 0.48803395698428176,
+              "y": -0.11897394490631541
+            }
+          }
+        },
+        {
+          "ID": "2683",
+          "typeID": "__group__",
+          "zOrder": "79",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "939",
+          "y": "1137",
+          "properties": {
+            "controlName": "109-spring-mvc"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "97",
+                  "measuredH": "26",
+                  "x": "48",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Spring MVC"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2684",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "1249",
+          "y": "1060",
+          "properties": {
+            "controlName": "100-spring-mvc:servlet"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "57",
+                  "measuredH": "26",
+                  "x": "68",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Servlet"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2685",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "1249",
+          "y": "1112",
+          "properties": {
+            "controlName": "101-spring-mvc:jsp-files"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "76",
+                  "measuredH": "26",
+                  "x": "59",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "JSP Files"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2686",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "1249",
+          "y": "1164",
+          "properties": {
+            "controlName": "102-spring-mvc:architecture"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "99",
+                  "measuredH": "26",
+                  "x": "47",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Architecture"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2687",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "1249",
+          "y": "1217",
+          "properties": {
+            "controlName": "103-spring-mvc:components"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "104",
+                  "measuredH": "26",
+                  "x": "45",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Components"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2688",
+          "typeID": "Arrow",
+          "zOrder": "84",
+          "w": "213",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "822",
+          "y": "1324",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 212.98029127925827,
+              "y": 0.8810260550936846
+            },
+            "p1": {
+              "x": 0.46428571428571536,
+              "y": -0.003992113361953186
+            },
+            "p2": {
+              "x": -0.2750123853365949,
+              "y": 0.8810260550936846
+            }
+          }
+        },
+        {
+          "ID": "2689",
+          "typeID": "__group__",
+          "zOrder": "85",
+          "measuredW": "193",
+          "measuredH": "47",
+          "w": "193",
+          "h": "47",
+          "x": "642",
+          "y": "1301",
+          "properties": {
+            "controlName": "110-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "59",
+                  "measuredH": "26",
+                  "x": "67",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "Testing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2690",
+          "typeID": "__group__",
+          "zOrder": "86",
+          "measuredW": "273",
+          "measuredH": "47",
+          "w": "273",
+          "h": "47",
+          "x": "236",
+          "y": "1149",
+          "properties": {
+            "controlName": "100-testing:jpa-test"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "273",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "70",
+                  "measuredH": "26",
+                  "x": "102",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "JPA Test"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2691",
+          "typeID": "__group__",
+          "zOrder": "87",
+          "measuredW": "273",
+          "measuredH": "47",
+          "w": "273",
+          "h": "47",
+          "x": "236",
+          "y": "1201",
+          "properties": {
+            "controlName": "101-testing:mock-mvc"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "273",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "84",
+                  "measuredH": "26",
+                  "x": "95",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "MockMVC"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2692",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "273",
+          "measuredH": "47",
+          "w": "273",
+          "h": "47",
+          "x": "236",
+          "y": "1254",
+          "properties": {
+            "controlName": "102-testing:spring-boot-test-annotation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "273",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "234",
+                  "measuredH": "26",
+                  "x": "20",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "@SpringBootTest Annotation"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2693",
+          "typeID": "__group__",
+          "zOrder": "89",
+          "measuredW": "273",
+          "measuredH": "47",
+          "w": "273",
+          "h": "47",
+          "x": "236",
+          "y": "1306",
+          "properties": {
+            "controlName": "103-testing:mockbean-annotation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "273",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "194",
+                  "measuredH": "26",
+                  "x": "40",
+                  "y": "11",
+                  "properties": {
+                    "size": "18",
+                    "text": "@Mockbean Annotation"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2694",
+          "typeID": "Arrow",
+          "zOrder": "90",
+          "w": "1",
+          "h": "139",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "731",
+          "y": "1575",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459167
+            },
+            "p2": {
+              "x": 0,
+              "y": 139
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "2695",
+          "typeID": "TextArea",
+          "zOrder": "91",
+          "w": "443",
+          "h": "124",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "503",
+          "y": "1506"
+        },
+        {
+          "ID": "2696",
+          "typeID": "Label",
+          "zOrder": "92",
+          "measuredW": "303",
+          "measuredH": "25",
+          "x": "573",
+          "y": "1526",
+          "properties": {
+            "size": "17",
+            "text": "Continue Learning with following Tracks"
+          }
+        },
+        {
+          "ID": "2697",
+          "typeID": "__group__",
+          "zOrder": "93",
+          "measuredW": "198",
+          "measuredH": "44",
+          "w": "198",
+          "h": "44",
+          "x": "727",
+          "y": "1561",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/backend"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "198",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "147",
+                  "measuredH": "25",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Backend Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2698",
+          "typeID": "__group__",
+          "zOrder": "94",
+          "measuredW": "185",
+          "measuredH": "44",
+          "w": "185",
+          "h": "44",
+          "x": "532",
+          "y": "1561",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/java"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "185",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "116",
+                  "measuredH": "25",
+                  "x": "35",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Java Roadmap"
                   }
                 }
               ]
@@ -4037,17 +3990,17 @@
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1 copy",
-      "order": 1000010.2336643032,
+      "name": "New Wireframe 1 copy 8",
+      "order": 1000000.6428282561,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "D5E1AC09-3023-4145-A52A-4D904363A065",
+    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
     "mockupH": "1664",
     "mockupW": "1291",
-    "measuredW": "1510",
-    "measuredH": "1704",
+    "measuredW": "1520",
+    "measuredH": "1714",
     "version": "1.0"
   },
   "groupOffset": {
@@ -4055,5 +4008,5 @@
     "y": 0
   },
   "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/New%20Project%201.bmpr"
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
 }

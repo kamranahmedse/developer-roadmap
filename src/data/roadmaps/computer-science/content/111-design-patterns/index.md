@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Design Patterns - Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
 - [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns/)

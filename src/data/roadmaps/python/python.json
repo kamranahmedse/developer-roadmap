@@ -3,15 +3,15 @@
     "controls": {
       "control": [
         {
-          "ID": "7218",
+          "ID": "4269",
           "typeID": "Arrow",
           "zOrder": "0",
-          "w": "158",
-          "h": "62",
+          "w": "166",
+          "h": "88",
           "measuredW": "150",
           "measuredH": "100",
           "x": "992",
-          "y": "1159",
+          "y": "1160",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -20,28 +20,28 @@
             "stroke": "dotted",
             "p0": {
               "x": 0.047263099007864184,
-              "y": 0.6533333333334213
+              "y": -0.34666666666657875
             },
             "p1": {
               "x": 0.6549769871651536,
-              "y": 0.17428100166851102
+              "y": 0.174281001668511
             },
             "p2": {
-              "x": 157.98689817887566,
-              "y": 62.80486195765479
+              "x": 166.5,
+              "y": 88
             }
           }
         },
         {
-          "ID": "7219",
+          "ID": "4270",
           "typeID": "Arrow",
           "zOrder": "1",
-          "w": "162",
-          "h": "70",
+          "w": "170",
+          "h": "86",
           "measuredW": "150",
           "measuredH": "100",
           "x": "998",
-          "y": "1074",
+          "y": "1058",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -49,21 +49,21 @@
             "color": "10027263",
             "stroke": "dotted",
             "p0": {
-              "x": 162,
+              "x": 169.5,
               "y": 0
             },
             "p1": {
-              "x": 0.38529283745163273,
-              "y": 0.1707591687518475
+              "x": 0.3852928374516326,
+              "y": 0.17075916875184752
             },
             "p2": {
               "x": -0.05325918258233742,
-              "y": 69.87473104876676
+              "y": 85.87473104876676
             }
           }
         },
         {
-          "ID": "7220",
+          "ID": "4271",
           "typeID": "Arrow",
           "zOrder": "2",
           "w": "3",
@@ -92,7 +92,7 @@
           }
         },
         {
-          "ID": "7221",
+          "ID": "4272",
           "typeID": "Arrow",
           "zOrder": "3",
           "w": "185",
@@ -122,7 +122,7 @@
           }
         },
         {
-          "ID": "7222",
+          "ID": "4273",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "134",
@@ -152,7 +152,7 @@
           }
         },
         {
-          "ID": "7223",
+          "ID": "4274",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "135",
@@ -182,7 +182,7 @@
           }
         },
         {
-          "ID": "7224",
+          "ID": "4275",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "140",
@@ -212,15 +212,15 @@
           }
         },
         {
-          "ID": "7225",
+          "ID": "4276",
           "typeID": "Arrow",
           "zOrder": "7",
           "w": "1",
-          "h": "164",
+          "h": "188",
           "measuredW": "150",
           "measuredH": "100",
           "x": "1225",
-          "y": "1074",
+          "y": "1050",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -232,17 +232,17 @@
               "y": 0
             },
             "p1": {
-              "x": 0.4604452230239243,
+              "x": 0.4604452230239244,
               "y": 0.0036766536054163917
             },
             "p2": {
               "x": 0,
-              "y": 164.29796919462592
+              "y": 188.29796919462592
             }
           }
         },
         {
-          "ID": "7226",
+          "ID": "4277",
           "typeID": "Arrow",
           "zOrder": "8",
           "w": "1",
@@ -271,7 +271,7 @@
           }
         },
         {
-          "ID": "7227",
+          "ID": "4278",
           "typeID": "Arrow",
           "zOrder": "9",
           "w": "87",
@@ -279,7 +279,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "1040",
-          "y": "1237",
+          "y": "1257",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -301,7 +301,7 @@
           }
         },
         {
-          "ID": "7228",
+          "ID": "4279",
           "typeID": "Arrow",
           "zOrder": "10",
           "w": "138",
@@ -309,7 +309,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "1041",
-          "y": "1240",
+          "y": "1260",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -331,7 +331,7 @@
           }
         },
         {
-          "ID": "7229",
+          "ID": "4280",
           "typeID": "Arrow",
           "zOrder": "11",
           "w": "139",
@@ -339,7 +339,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "1043",
-          "y": "1242",
+          "y": "1262",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -361,15 +361,15 @@
           }
         },
         {
-          "ID": "7230",
+          "ID": "4283",
           "typeID": "Arrow",
           "zOrder": "12",
-          "w": "142",
-          "h": "85",
+          "w": "112",
+          "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1034",
-          "y": "982",
+          "x": "1017",
+          "y": "1252",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -378,28 +378,28 @@
             "stroke": "dotted",
             "p0": {
               "x": 0.047263099007864184,
-              "y": -0.34666666666657875
+              "y": 0.6533333333334213
             },
             "p1": {
-              "x": 0.45447116402693255,
-              "y": -0.14876029092509369
+              "x": 0.4604452230239243,
+              "y": 0.0036766536054163913
             },
             "p2": {
-              "x": 141.9075249167838,
-              "y": 85.08956113800468
+              "x": 111.59431322349451,
+              "y": 0.6533333333334213
             }
           }
         },
         {
-          "ID": "7231",
+          "ID": "4284",
           "typeID": "Arrow",
           "zOrder": "13",
-          "w": "111",
-          "h": "34",
+          "w": "112",
+          "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1031",
-          "y": "1032",
+          "x": "1017",
+          "y": "1047",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -408,82 +408,22 @@
             "stroke": "dotted",
             "p0": {
               "x": 0.047263099007864184,
-              "y": -0.34666666666657875
+              "y": 0.6533333333334213
             },
             "p1": {
-              "x": 0.4166479025358807,
-              "y": -0.11155062310930966
+              "x": 0.4604452230239243,
+              "y": 0.0036766536054163913
             },
             "p2": {
-              "x": 111.34668926623954,
-              "y": 34.03347757295023
+              "x": 111.59431322349451,
+              "y": 0.6533333333334213
             }
           }
         },
         {
-          "ID": "7232",
+          "ID": "4285",
           "typeID": "Arrow",
           "zOrder": "14",
-          "w": "112",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1017",
-          "y": "1232",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.047263099007864184,
-              "y": 0.6533333333334213
-            },
-            "p1": {
-              "x": 0.4604452230239243,
-              "y": 0.0036766536054163913
-            },
-            "p2": {
-              "x": 111.59431322349451,
-              "y": 0.6533333333334213
-            }
-          }
-        },
-        {
-          "ID": "7233",
-          "typeID": "Arrow",
-          "zOrder": "15",
-          "w": "112",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1017",
-          "y": "1077",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.047263099007864184,
-              "y": 0.6533333333334213
-            },
-            "p1": {
-              "x": 0.4604452230239243,
-              "y": 0.0036766536054163913
-            },
-            "p2": {
-              "x": 111.59431322349451,
-              "y": 0.6533333333334213
-            }
-          }
-        },
-        {
-          "ID": "7234",
-          "typeID": "Arrow",
-          "zOrder": "16",
           "w": "294",
           "h": "468",
           "measuredW": "150",
@@ -511,9 +451,9 @@
           }
         },
         {
-          "ID": "7235",
+          "ID": "4286",
           "typeID": "Canvas",
-          "zOrder": "17",
+          "zOrder": "15",
           "w": "131",
           "h": "166",
           "measuredW": "100",
@@ -522,9 +462,9 @@
           "y": "1133"
         },
         {
-          "ID": "7236",
+          "ID": "4287",
           "typeID": "Arrow",
-          "zOrder": "18",
+          "zOrder": "16",
           "w": "278",
           "h": "304",
           "measuredW": "150",
@@ -552,9 +492,9 @@
           }
         },
         {
-          "ID": "7237",
+          "ID": "4288",
           "typeID": "Arrow",
-          "zOrder": "19",
+          "zOrder": "17",
           "w": "1",
           "h": "205",
           "measuredW": "150",
@@ -582,9 +522,9 @@
           }
         },
         {
-          "ID": "7238",
+          "ID": "4289",
           "typeID": "Arrow",
-          "zOrder": "20",
+          "zOrder": "18",
           "w": "129",
           "h": "131",
           "measuredW": "150",
@@ -612,9 +552,9 @@
           }
         },
         {
-          "ID": "7239",
+          "ID": "4290",
           "typeID": "Arrow",
-          "zOrder": "21",
+          "zOrder": "19",
           "w": "128",
           "h": "91",
           "measuredW": "150",
@@ -642,9 +582,9 @@
           }
         },
         {
-          "ID": "7240",
+          "ID": "4291",
           "typeID": "Arrow",
-          "zOrder": "22",
+          "zOrder": "20",
           "w": "134",
           "h": "50",
           "measuredW": "150",
@@ -672,9 +612,9 @@
           }
         },
         {
-          "ID": "7241",
+          "ID": "4292",
           "typeID": "Arrow",
-          "zOrder": "23",
+          "zOrder": "21",
           "w": "138",
           "h": "6",
           "measuredW": "150",
@@ -702,9 +642,9 @@
           }
         },
         {
-          "ID": "7242",
+          "ID": "4293",
           "typeID": "Arrow",
-          "zOrder": "24",
+          "zOrder": "22",
           "w": "113",
           "h": "115",
           "measuredW": "150",
@@ -731,9 +671,9 @@
           }
         },
         {
-          "ID": "7243",
+          "ID": "4294",
           "typeID": "Arrow",
-          "zOrder": "25",
+          "zOrder": "23",
           "w": "1",
           "h": "76",
           "measuredW": "150",
@@ -761,9 +701,9 @@
           }
         },
         {
-          "ID": "7244",
+          "ID": "4295",
           "typeID": "Arrow",
-          "zOrder": "26",
+          "zOrder": "24",
           "w": "221",
           "h": "117",
           "measuredW": "150",
@@ -790,9 +730,9 @@
           }
         },
         {
-          "ID": "7245",
+          "ID": "4296",
           "typeID": "Arrow",
-          "zOrder": "27",
+          "zOrder": "25",
           "w": "1",
           "h": "95",
           "measuredW": "150",
@@ -820,9 +760,9 @@
           }
         },
         {
-          "ID": "7246",
+          "ID": "4297",
           "typeID": "Arrow",
-          "zOrder": "28",
+          "zOrder": "26",
           "w": "1",
           "h": "80",
           "measuredW": "150",
@@ -849,9 +789,9 @@
           }
         },
         {
-          "ID": "7247",
+          "ID": "4298",
           "typeID": "Arrow",
-          "zOrder": "29",
+          "zOrder": "27",
           "w": "96",
           "h": "46",
           "measuredW": "150",
@@ -879,9 +819,9 @@
           }
         },
         {
-          "ID": "7248",
+          "ID": "4299",
           "typeID": "Arrow",
-          "zOrder": "30",
+          "zOrder": "28",
           "w": "98",
           "h": "43",
           "measuredW": "150",
@@ -909,9 +849,9 @@
           }
         },
         {
-          "ID": "7249",
+          "ID": "4300",
           "typeID": "Arrow",
-          "zOrder": "31",
+          "zOrder": "29",
           "w": "99",
           "h": "50",
           "measuredW": "150",
@@ -939,9 +879,9 @@
           }
         },
         {
-          "ID": "7250",
+          "ID": "4301",
           "typeID": "Arrow",
-          "zOrder": "32",
+          "zOrder": "30",
           "w": "99",
           "h": "50",
           "measuredW": "150",
@@ -969,9 +909,9 @@
           }
         },
         {
-          "ID": "7251",
+          "ID": "4302",
           "typeID": "Arrow",
-          "zOrder": "33",
+          "zOrder": "31",
           "w": "115",
           "h": "3",
           "measuredW": "150",
@@ -999,9 +939,9 @@
           }
         },
         {
-          "ID": "7252",
+          "ID": "4303",
           "typeID": "Arrow",
-          "zOrder": "34",
+          "zOrder": "32",
           "w": "143",
           "h": "3",
           "measuredW": "150",
@@ -1029,9 +969,9 @@
           }
         },
         {
-          "ID": "7253",
+          "ID": "4304",
           "typeID": "Label",
-          "zOrder": "35",
+          "zOrder": "33",
           "measuredW": "87",
           "measuredH": "36",
           "x": "721",
@@ -1042,9 +982,9 @@
           }
         },
         {
-          "ID": "7254",
+          "ID": "4305",
           "typeID": "Arrow",
-          "zOrder": "36",
+          "zOrder": "34",
           "w": "1",
           "h": "55",
           "measuredW": "150",
@@ -1071,9 +1011,9 @@
           }
         },
         {
-          "ID": "7255",
+          "ID": "4306",
           "typeID": "__group__",
-          "zOrder": "37",
+          "zOrder": "35",
           "measuredW": "262",
           "measuredH": "43",
           "w": "262",
@@ -1118,9 +1058,9 @@
           }
         },
         {
-          "ID": "7256",
+          "ID": "4307",
           "typeID": "__group__",
-          "zOrder": "38",
+          "zOrder": "36",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1166,9 +1106,9 @@
           }
         },
         {
-          "ID": "7257",
+          "ID": "4308",
           "typeID": "__group__",
-          "zOrder": "39",
+          "zOrder": "37",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1214,9 +1154,9 @@
           }
         },
         {
-          "ID": "7258",
+          "ID": "4309",
           "typeID": "__group__",
-          "zOrder": "40",
+          "zOrder": "38",
           "measuredW": "256",
           "measuredH": "42",
           "w": "256",
@@ -1261,9 +1201,9 @@
           }
         },
         {
-          "ID": "7259",
+          "ID": "4310",
           "typeID": "__group__",
-          "zOrder": "41",
+          "zOrder": "39",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1309,9 +1249,9 @@
           }
         },
         {
-          "ID": "7260",
+          "ID": "4311",
           "typeID": "__group__",
-          "zOrder": "42",
+          "zOrder": "40",
           "measuredW": "254",
           "measuredH": "42",
           "w": "254",
@@ -1356,9 +1296,9 @@
           }
         },
         {
-          "ID": "7261",
+          "ID": "4312",
           "typeID": "__group__",
-          "zOrder": "43",
+          "zOrder": "41",
           "measuredW": "256",
           "measuredH": "42",
           "w": "256",
@@ -1404,9 +1344,9 @@
           }
         },
         {
-          "ID": "7262",
+          "ID": "4313",
           "typeID": "__group__",
-          "zOrder": "44",
+          "zOrder": "42",
           "measuredW": "262",
           "measuredH": "43",
           "w": "262",
@@ -1451,9 +1391,9 @@
           }
         },
         {
-          "ID": "7263",
+          "ID": "4314",
           "typeID": "__group__",
-          "zOrder": "45",
+          "zOrder": "43",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1498,9 +1438,9 @@
           }
         },
         {
-          "ID": "7264",
+          "ID": "4315",
           "typeID": "__group__",
-          "zOrder": "46",
+          "zOrder": "44",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1545,9 +1485,9 @@
           }
         },
         {
-          "ID": "7265",
+          "ID": "4316",
           "typeID": "__group__",
-          "zOrder": "47",
+          "zOrder": "45",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1592,9 +1532,9 @@
           }
         },
         {
-          "ID": "7266",
+          "ID": "4317",
           "typeID": "__group__",
-          "zOrder": "48",
+          "zOrder": "46",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1639,9 +1579,9 @@
           }
         },
         {
-          "ID": "7267",
+          "ID": "4318",
           "typeID": "__group__",
-          "zOrder": "49",
+          "zOrder": "47",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1686,9 +1626,9 @@
           }
         },
         {
-          "ID": "7268",
+          "ID": "4319",
           "typeID": "__group__",
-          "zOrder": "50",
+          "zOrder": "48",
           "measuredW": "222",
           "measuredH": "42",
           "w": "222",
@@ -1733,9 +1673,9 @@
           }
         },
         {
-          "ID": "7269",
+          "ID": "4320",
           "typeID": "__group__",
-          "zOrder": "51",
+          "zOrder": "49",
           "measuredW": "311",
           "measuredH": "43",
           "w": "311",
@@ -1780,9 +1720,9 @@
           }
         },
         {
-          "ID": "7270",
+          "ID": "4321",
           "typeID": "__group__",
-          "zOrder": "52",
+          "zOrder": "50",
           "measuredW": "115",
           "measuredH": "142",
           "w": "115",
@@ -1824,9 +1764,9 @@
           }
         },
         {
-          "ID": "7271",
+          "ID": "4322",
           "typeID": "__group__",
-          "zOrder": "53",
+          "zOrder": "51",
           "measuredW": "90",
           "measuredH": "42",
           "w": "90",
@@ -1871,9 +1811,9 @@
           }
         },
         {
-          "ID": "7272",
+          "ID": "4323",
           "typeID": "__group__",
-          "zOrder": "54",
+          "zOrder": "52",
           "measuredW": "91",
           "measuredH": "42",
           "w": "91",
@@ -1918,9 +1858,9 @@
           }
         },
         {
-          "ID": "7273",
+          "ID": "4324",
           "typeID": "__group__",
-          "zOrder": "55",
+          "zOrder": "53",
           "measuredW": "119",
           "measuredH": "42",
           "w": "119",
@@ -1965,9 +1905,9 @@
           }
         },
         {
-          "ID": "7274",
+          "ID": "4325",
           "typeID": "__group__",
-          "zOrder": "56",
+          "zOrder": "54",
           "measuredW": "232",
           "measuredH": "43",
           "w": "232",
@@ -2012,9 +1952,9 @@
           }
         },
         {
-          "ID": "7275",
+          "ID": "4326",
           "typeID": "__group__",
-          "zOrder": "57",
+          "zOrder": "55",
           "measuredW": "183",
           "measuredH": "43",
           "w": "183",
@@ -2059,9 +1999,168 @@
           }
         },
         {
-          "ID": "7280",
+          "ID": "4327",
           "typeID": "__group__",
-          "zOrder": "59",
+          "zOrder": "56",
+          "measuredW": "350",
+          "measuredH": "141",
+          "w": "350",
+          "h": "141",
+          "x": "1048",
+          "y": "153",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "350",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "314",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "Find the detailed version of this roadmap"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "319",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "size": "17",
+                    "text": "along with resources and other roadmaps"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "320",
+                  "measuredH": "45",
+                  "w": "320",
+                  "h": "45",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "320",
+                          "h": "45",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "105",
+                          "measuredH": "28",
+                          "x": "141",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "2",
+                          "measuredW": "45",
+                          "measuredH": "28",
+                          "x": "64",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https"
+                          }
+                        },
+                        {
+                          "ID": "3",
+                          "typeID": "Label",
+                          "zOrder": "3",
+                          "measuredW": "5",
+                          "measuredH": "28",
+                          "x": "113",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          }
+                        },
+                        {
+                          "ID": "4",
+                          "typeID": "Label",
+                          "zOrder": "4",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "120",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        },
+                        {
+                          "ID": "5",
+                          "typeID": "Label",
+                          "zOrder": "5",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "128",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4328",
+          "typeID": "__group__",
+          "zOrder": "57",
           "measuredW": "374",
           "measuredH": "50",
           "w": "374",
@@ -2108,9 +2207,9 @@
           }
         },
         {
-          "ID": "7281",
+          "ID": "4329",
           "typeID": "Arrow",
-          "zOrder": "60",
+          "zOrder": "58",
           "w": "1",
           "h": "77",
           "measuredW": "150",
@@ -2138,9 +2237,9 @@
           }
         },
         {
-          "ID": "7282",
+          "ID": "4330",
           "typeID": "__group__",
-          "zOrder": "61",
+          "zOrder": "59",
           "measuredW": "131",
           "measuredH": "184",
           "w": "131",
@@ -2182,9 +2281,9 @@
           }
         },
         {
-          "ID": "7283",
+          "ID": "4331",
           "typeID": "__group__",
-          "zOrder": "62",
+          "zOrder": "60",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2230,9 +2329,9 @@
           }
         },
         {
-          "ID": "7284",
+          "ID": "4332",
           "typeID": "__group__",
-          "zOrder": "63",
+          "zOrder": "61",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2278,9 +2377,9 @@
           }
         },
         {
-          "ID": "7285",
+          "ID": "4333",
           "typeID": "__group__",
-          "zOrder": "64",
+          "zOrder": "62",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2325,9 +2424,9 @@
           }
         },
         {
-          "ID": "7286",
+          "ID": "4334",
           "typeID": "__group__",
-          "zOrder": "65",
+          "zOrder": "63",
           "measuredW": "172",
           "measuredH": "42",
           "w": "172",
@@ -2372,9 +2471,9 @@
           }
         },
         {
-          "ID": "7287",
+          "ID": "4335",
           "typeID": "__group__",
-          "zOrder": "66",
+          "zOrder": "64",
           "measuredW": "171",
           "measuredH": "42",
           "w": "171",
@@ -2419,9 +2518,9 @@
           }
         },
         {
-          "ID": "7288",
+          "ID": "4336",
           "typeID": "__group__",
-          "zOrder": "67",
+          "zOrder": "65",
           "measuredW": "174",
           "measuredH": "42",
           "w": "174",
@@ -2466,9 +2565,9 @@
           }
         },
         {
-          "ID": "7289",
+          "ID": "4337",
           "typeID": "__group__",
-          "zOrder": "68",
+          "zOrder": "66",
           "measuredW": "173",
           "measuredH": "193",
           "w": "173",
@@ -2510,9 +2609,9 @@
           }
         },
         {
-          "ID": "7290",
+          "ID": "4338",
           "typeID": "__group__",
-          "zOrder": "69",
+          "zOrder": "67",
           "measuredW": "148",
           "measuredH": "42",
           "w": "148",
@@ -2557,9 +2656,9 @@
           }
         },
         {
-          "ID": "7291",
+          "ID": "4339",
           "typeID": "__group__",
-          "zOrder": "70",
+          "zOrder": "68",
           "measuredW": "146",
           "measuredH": "42",
           "w": "146",
@@ -2604,9 +2703,9 @@
           }
         },
         {
-          "ID": "7292",
+          "ID": "4340",
           "typeID": "__group__",
-          "zOrder": "71",
+          "zOrder": "69",
           "measuredW": "146",
           "measuredH": "42",
           "w": "146",
@@ -2651,9 +2750,9 @@
           }
         },
         {
-          "ID": "7293",
+          "ID": "4341",
           "typeID": "__group__",
-          "zOrder": "72",
+          "zOrder": "70",
           "measuredW": "352",
           "measuredH": "54",
           "w": "352",
@@ -2744,957 +2843,9 @@
           }
         },
         {
-          "ID": "7299",
+          "ID": "4342",
           "typeID": "__group__",
-          "zOrder": "74",
-          "measuredW": "193",
-          "measuredH": "42",
-          "w": "193",
-          "h": "42",
-          "x": "322",
-          "y": "1150",
-          "properties": {
-            "controlName": "106-python-advanced-topics:list-comprehensions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "154",
-                  "measuredH": "24",
-                  "x": "20",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "List Comprehensions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7300",
-          "typeID": "__group__",
-          "zOrder": "75",
-          "measuredW": "193",
-          "measuredH": "42",
-          "w": "193",
-          "h": "42",
-          "x": "322",
-          "y": "1195",
-          "properties": {
-            "controlName": "107-python-advanced-topics:generator-expressions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "167",
-                  "measuredH": "24",
-                  "x": "13",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Generator Expressions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7301",
-          "typeID": "__group__",
-          "zOrder": "76",
-          "measuredW": "193",
-          "measuredH": "42",
-          "w": "193",
-          "h": "42",
-          "x": "322",
-          "y": "1240",
-          "properties": {
-            "controlName": "108-python-advanced-topics:paradigms"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "77",
-                  "measuredH": "24",
-                  "x": "58",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Paradigms"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7302",
-          "typeID": "__group__",
-          "zOrder": "77",
-          "measuredW": "155",
-          "measuredH": "43",
-          "w": "155",
-          "h": "43",
-          "x": "1098",
-          "y": "1056",
-          "properties": {
-            "controlName": "100-python-frameworks:synchronous"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "155",
-                  "h": "43",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "93",
-                  "measuredH": "24",
-                  "x": "31",
-                  "y": "10",
-                  "properties": {
-                    "size": "16",
-                    "text": "Synchronous"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7303",
-          "typeID": "__group__",
-          "zOrder": "78",
-          "measuredW": "87",
-          "measuredH": "42",
-          "w": "87",
-          "h": "42",
-          "x": "950",
-          "y": "965",
-          "properties": {
-            "controlName": "100-python-frameworks:synchronous:django"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "87",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "52",
-                  "measuredH": "24",
-                  "x": "18",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Django"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7304",
-          "typeID": "__group__",
-          "zOrder": "79",
-          "measuredW": "88",
-          "measuredH": "42",
-          "w": "88",
-          "h": "42",
-          "x": "950",
-          "y": "1011",
-          "properties": {
-            "controlName": "101-python-frameworks:synchronous:flask"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "88",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "38",
-                  "measuredH": "24",
-                  "x": "25",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Flask"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7305",
-          "typeID": "__group__",
-          "zOrder": "80",
-          "measuredW": "88",
-          "measuredH": "42",
-          "w": "88",
-          "h": "42",
-          "x": "950",
-          "y": "1057",
-          "properties": {
-            "controlName": "102-python-frameworks:synchronous:pyramid"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "88",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "58",
-                  "measuredH": "24",
-                  "x": "15",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Pyramid"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7306",
-          "typeID": "__group__",
-          "zOrder": "81",
-          "measuredW": "156",
-          "measuredH": "43",
-          "w": "156",
-          "h": "43",
-          "x": "1095",
-          "y": "1211",
-          "properties": {
-            "controlName": "101-python-frameworks:asynchronous"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "156",
-                  "h": "43",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "101",
-                  "measuredH": "24",
-                  "x": "27",
-                  "y": "10",
-                  "properties": {
-                    "size": "16",
-                    "text": "Asynchronous"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7307",
-          "typeID": "__group__",
-          "zOrder": "82",
-          "measuredW": "91",
-          "measuredH": "42",
-          "w": "91",
-          "h": "42",
-          "x": "956",
-          "y": "1211",
-          "properties": {
-            "controlName": "100-python-frameworks:asynchronous:gevent"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "50",
-                  "measuredH": "24",
-                  "x": "21",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "gevent"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7308",
-          "typeID": "__group__",
-          "zOrder": "83",
-          "measuredW": "89",
-          "measuredH": "42",
-          "w": "89",
-          "h": "42",
-          "x": "957",
-          "y": "1257",
-          "properties": {
-            "controlName": "101-python-frameworks:asynchronous:aiohttp"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "89",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "50",
-                  "measuredH": "24",
-                  "x": "20",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "aiohttp"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7309",
-          "typeID": "__group__",
-          "zOrder": "84",
-          "measuredW": "91",
-          "measuredH": "42",
-          "w": "91",
-          "h": "42",
-          "x": "956",
-          "y": "1303",
-          "properties": {
-            "controlName": "102-python-frameworks:asynchronous:tornado"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "60",
-                  "measuredH": "24",
-                  "x": "16",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Tornado"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7310",
-          "typeID": "__group__",
-          "zOrder": "85",
-          "measuredW": "91",
-          "measuredH": "42",
-          "w": "91",
-          "h": "42",
-          "x": "956",
-          "y": "1349",
-          "properties": {
-            "controlName": "103-python-frameworks:asynchronous:sanic"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "91",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "41",
-                  "measuredH": "24",
-                  "x": "25",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "Sanic"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7311",
-          "typeID": "__group__",
-          "zOrder": "86",
-          "measuredW": "89",
-          "measuredH": "42",
-          "w": "89",
-          "h": "42",
-          "x": "1199",
-          "y": "1131",
-          "properties": {
-            "controlName": "102-python-frameworks:fastapi"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "89",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "56",
-                  "measuredH": "24",
-                  "x": "17",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "FastAPI"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7312",
-          "typeID": "__group__",
-          "zOrder": "87",
-          "measuredW": "154",
-          "measuredH": "42",
-          "w": "154",
-          "h": "42",
-          "x": "493",
-          "y": "1479",
-          "properties": {
-            "controlName": "100-python-testing:unittest-pyunit"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "154",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "116",
-                  "measuredH": "24",
-                  "x": "19",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "unittest / pyUnit"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7313",
-          "typeID": "__group__",
-          "zOrder": "88",
-          "measuredW": "154",
-          "measuredH": "42",
-          "w": "154",
-          "h": "42",
-          "x": "493",
-          "y": "1432",
-          "properties": {
-            "controlName": "101-python-testing:pytest"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "154",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "44",
-                  "measuredH": "24",
-                  "x": "55",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "pytest"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7314",
-          "typeID": "__group__",
-          "zOrder": "89",
-          "measuredW": "154",
-          "measuredH": "42",
-          "w": "154",
-          "h": "42",
-          "x": "493",
-          "y": "1340",
-          "properties": {
-            "controlName": "102-python-testing:doctest"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "154",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "54",
-                  "measuredH": "24",
-                  "x": "50",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "doctest"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7315",
-          "typeID": "__group__",
-          "zOrder": "90",
-          "measuredW": "154",
-          "measuredH": "42",
-          "w": "154",
-          "h": "42",
-          "x": "493",
-          "y": "1386",
-          "properties": {
-            "controlName": "102-python-testing:nose"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "154",
-                  "h": "42",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "36",
-                  "measuredH": "24",
-                  "x": "59",
-                  "y": "9",
-                  "properties": {
-                    "size": "16",
-                    "text": "nose"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7316",
-          "typeID": "Arrow",
-          "zOrder": "91",
-          "w": "1",
-          "h": "139",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "883",
-          "y": "1673",
-          "properties": {
-            "color": "2848996",
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4438624012549725,
-              "y": -0.00008403832147459167
-            },
-            "p2": {
-              "x": 0,
-              "y": 139
-            },
-            "stroke": "dotted"
-          }
-        },
-        {
-          "ID": "7317",
-          "typeID": "TextArea",
-          "zOrder": "92",
-          "w": "552",
-          "h": "124",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "595",
-          "y": "1604"
-        },
-        {
-          "ID": "7318",
-          "typeID": "Label",
-          "zOrder": "93",
-          "measuredW": "468",
-          "measuredH": "25",
-          "x": "624",
-          "y": "1624",
-          "properties": {
-            "size": "17",
-            "text": "For ecosystem and more, check other tracks involving Python"
-          }
-        },
-        {
-          "ID": "7319",
-          "typeID": "__group__",
-          "zOrder": "94",
-          "measuredW": "229",
-          "measuredH": "44",
-          "w": "229",
-          "h": "44",
-          "x": "890",
-          "y": "1659",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/devops"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "229",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "141",
-                  "measuredH": "25",
-                  "x": "44",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "DevOps Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7320",
-          "typeID": "__group__",
-          "zOrder": "95",
-          "measuredW": "252",
-          "measuredH": "44",
-          "w": "252",
-          "h": "44",
-          "x": "624",
-          "y": "1659",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/backend"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "252",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "147",
-                  "measuredH": "25",
-                  "x": "52",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Backend Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "7321",
-          "typeID": "__group__",
-          "zOrder": "73",
+          "zOrder": "71",
           "measuredW": "328",
           "measuredH": "200",
           "w": "328",
@@ -3979,15 +3130,18 @@
           }
         },
         {
-          "ID": "7322",
+          "ID": "4343",
           "typeID": "__group__",
-          "zOrder": "58",
-          "measuredW": "350",
-          "measuredH": "141",
-          "w": "350",
-          "h": "141",
-          "x": "1048",
-          "y": "153",
+          "zOrder": "72",
+          "measuredW": "193",
+          "measuredH": "42",
+          "w": "193",
+          "h": "42",
+          "x": "322",
+          "y": "1150",
+          "properties": {
+            "controlName": "106-python-advanced-topics:list-comprehensions"
+          },
           "children": {
             "controls": {
               "control": [
@@ -3995,142 +3149,928 @@
                   "ID": "0",
                   "typeID": "Canvas",
                   "zOrder": "0",
-                  "w": "350",
-                  "h": "141",
+                  "w": "193",
+                  "h": "42",
                   "measuredW": "100",
                   "measuredH": "70",
                   "x": "0",
-                  "y": "0"
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
                 },
                 {
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "314",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "17",
+                  "measuredW": "154",
+                  "measuredH": "24",
+                  "x": "20",
+                  "y": "9",
                   "properties": {
-                    "size": "17",
-                    "text": "Find the detailed version of this roadmap"
+                    "size": "16",
+                    "text": "List Comprehensions"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4344",
+          "typeID": "__group__",
+          "zOrder": "73",
+          "measuredW": "193",
+          "measuredH": "42",
+          "w": "193",
+          "h": "42",
+          "x": "322",
+          "y": "1195",
+          "properties": {
+            "controlName": "107-python-advanced-topics:generator-expressions"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
                   }
                 },
                 {
-                  "ID": "2",
+                  "ID": "1",
                   "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "319",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "45",
+                  "zOrder": "1",
+                  "measuredW": "167",
+                  "measuredH": "24",
+                  "x": "13",
+                  "y": "9",
                   "properties": {
-                    "size": "17",
-                    "text": "along with resources and other roadmaps"
+                    "size": "16",
+                    "text": "Generator Expressions"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4345",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "193",
+          "measuredH": "42",
+          "w": "193",
+          "h": "42",
+          "x": "322",
+          "y": "1240",
+          "properties": {
+            "controlName": "108-python-advanced-topics:paradigms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "193",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
                   }
                 },
                 {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "320",
-                  "measuredH": "45",
-                  "w": "320",
-                  "h": "45",
-                  "x": "15",
-                  "y": "81",
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "77",
+                  "measuredH": "24",
+                  "x": "58",
+                  "y": "9",
                   "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "320",
-                          "h": "45",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "borderColor": "4273622",
-                            "color": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "105",
-                          "measuredH": "28",
-                          "x": "141",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "roadmap.sh"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "45",
-                          "measuredH": "28",
-                          "x": "64",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Label",
-                          "zOrder": "3",
-                          "measuredW": "5",
-                          "measuredH": "28",
-                          "x": "113",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": ":"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "120",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "Label",
-                          "zOrder": "5",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "128",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        }
-                      ]
-                    }
+                    "size": "16",
+                    "text": "Paradigms"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4346",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "155",
+          "measuredH": "43",
+          "w": "155",
+          "h": "43",
+          "x": "1098",
+          "y": "1026",
+          "properties": {
+            "controlName": "100-python-frameworks:synchronous"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "155",
+                  "h": "43",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "93",
+                  "measuredH": "24",
+                  "x": "31",
+                  "y": "10",
+                  "properties": {
+                    "size": "16",
+                    "text": "Synchronous"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4347",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "87",
+          "measuredH": "42",
+          "w": "87",
+          "h": "42",
+          "x": "1201",
+          "y": "1131",
+          "properties": {
+            "controlName": "100-python-frameworks:synchronous:django"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "87",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "52",
+                  "measuredH": "24",
+                  "x": "18",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Django"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4348",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "88",
+          "measuredH": "42",
+          "w": "88",
+          "h": "42",
+          "x": "1201",
+          "y": "1177",
+          "properties": {
+            "controlName": "101-python-frameworks:synchronous:flask"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "88",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "38",
+                  "measuredH": "24",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Flask"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4349",
+          "typeID": "__group__",
+          "zOrder": "78",
+          "measuredW": "88",
+          "measuredH": "42",
+          "w": "88",
+          "h": "42",
+          "x": "950",
+          "y": "1027",
+          "properties": {
+            "controlName": "102-python-frameworks:synchronous:pyramid"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "88",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "58",
+                  "measuredH": "24",
+                  "x": "15",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Pyramid"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4350",
+          "typeID": "__group__",
+          "zOrder": "79",
+          "measuredW": "156",
+          "measuredH": "43",
+          "w": "156",
+          "h": "43",
+          "x": "1095",
+          "y": "1231",
+          "properties": {
+            "controlName": "101-python-frameworks:asynchronous"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "156",
+                  "h": "43",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "101",
+                  "measuredH": "24",
+                  "x": "27",
+                  "y": "10",
+                  "properties": {
+                    "size": "16",
+                    "text": "Asynchronous"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4351",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "91",
+          "measuredH": "42",
+          "w": "91",
+          "h": "42",
+          "x": "956",
+          "y": "1231",
+          "properties": {
+            "controlName": "100-python-frameworks:asynchronous:gevent"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "91",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "50",
+                  "measuredH": "24",
+                  "x": "21",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "gevent"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4352",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "89",
+          "measuredH": "42",
+          "w": "89",
+          "h": "42",
+          "x": "957",
+          "y": "1277",
+          "properties": {
+            "controlName": "101-python-frameworks:asynchronous:aiohttp"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "89",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "50",
+                  "measuredH": "24",
+                  "x": "20",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "aiohttp"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4353",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "91",
+          "measuredH": "42",
+          "w": "91",
+          "h": "42",
+          "x": "956",
+          "y": "1323",
+          "properties": {
+            "controlName": "102-python-frameworks:asynchronous:tornado"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "91",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "60",
+                  "measuredH": "24",
+                  "x": "16",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Tornado"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4354",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "91",
+          "measuredH": "42",
+          "w": "91",
+          "h": "42",
+          "x": "956",
+          "y": "1369",
+          "properties": {
+            "controlName": "103-python-frameworks:asynchronous:sanic"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "91",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "41",
+                  "measuredH": "24",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Sanic"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4355",
+          "typeID": "__group__",
+          "zOrder": "84",
+          "measuredW": "89",
+          "measuredH": "42",
+          "w": "89",
+          "h": "42",
+          "x": "1199",
+          "y": "1085",
+          "properties": {
+            "controlName": "102-python-frameworks:fastapi"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "89",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "24",
+                  "x": "17",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "FastAPI"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4356",
+          "typeID": "__group__",
+          "zOrder": "85",
+          "measuredW": "154",
+          "measuredH": "42",
+          "w": "154",
+          "h": "42",
+          "x": "493",
+          "y": "1479",
+          "properties": {
+            "controlName": "100-python-testing:unittest-pyunit"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "116",
+                  "measuredH": "24",
+                  "x": "19",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "unittest / pyUnit"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4357",
+          "typeID": "__group__",
+          "zOrder": "86",
+          "measuredW": "154",
+          "measuredH": "42",
+          "w": "154",
+          "h": "42",
+          "x": "493",
+          "y": "1432",
+          "properties": {
+            "controlName": "101-python-testing:pytest"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "44",
+                  "measuredH": "24",
+                  "x": "55",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "pytest"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4358",
+          "typeID": "__group__",
+          "zOrder": "87",
+          "measuredW": "154",
+          "measuredH": "42",
+          "w": "154",
+          "h": "42",
+          "x": "493",
+          "y": "1340",
+          "properties": {
+            "controlName": "102-python-testing:doctest"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "54",
+                  "measuredH": "24",
+                  "x": "50",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "doctest"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4359",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "154",
+          "measuredH": "42",
+          "w": "154",
+          "h": "42",
+          "x": "493",
+          "y": "1386",
+          "properties": {
+            "controlName": "102-python-testing:nose"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "36",
+                  "measuredH": "24",
+                  "x": "59",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "nose"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4360",
+          "typeID": "Arrow",
+          "zOrder": "89",
+          "w": "1",
+          "h": "139",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "883",
+          "y": "1673",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459167
+            },
+            "p2": {
+              "x": 0,
+              "y": 139
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "4361",
+          "typeID": "TextArea",
+          "zOrder": "90",
+          "w": "552",
+          "h": "124",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "595",
+          "y": "1604"
+        },
+        {
+          "ID": "4362",
+          "typeID": "Label",
+          "zOrder": "91",
+          "measuredW": "468",
+          "measuredH": "25",
+          "x": "624",
+          "y": "1624",
+          "properties": {
+            "size": "17",
+            "text": "For ecosystem and more, check other tracks involving Python"
+          }
+        },
+        {
+          "ID": "4363",
+          "typeID": "__group__",
+          "zOrder": "92",
+          "measuredW": "229",
+          "measuredH": "44",
+          "w": "229",
+          "h": "44",
+          "x": "890",
+          "y": "1659",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/devops"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "229",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "141",
+                  "measuredH": "25",
+                  "x": "44",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "DevOps Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4364",
+          "typeID": "__group__",
+          "zOrder": "93",
+          "measuredW": "252",
+          "measuredH": "44",
+          "w": "252",
+          "h": "44",
+          "x": "624",
+          "y": "1659",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/backend"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "252",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "147",
+                  "measuredH": "25",
+                  "x": "52",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Backend Roadmap"
                   }
                 }
               ]
@@ -4140,13 +4080,13 @@
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1 copy",
-      "order": 1000010.2336643032,
+      "name": "New Wireframe 1 copy 8",
+      "order": 1000000.6428282561,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "D5E1AC09-3023-4145-A52A-4D904363A065",
+    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
     "mockupH": "1659",
     "mockupW": "1164",
     "measuredW": "1399",
@@ -4158,5 +4098,5 @@
     "y": 0
   },
   "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/New%20Project%201.bmpr"
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
 }

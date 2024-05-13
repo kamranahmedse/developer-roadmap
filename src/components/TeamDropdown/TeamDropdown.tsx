@@ -23,6 +23,7 @@ export type UserTeamItem = {
   role: AllowedRoles;
   status: AllowedMemberStatus;
   memberId: string;
+  personalProgressOnly?: boolean;
 };
 
 export type TeamListResponse = UserTeamItem[];

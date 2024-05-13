@@ -35,7 +35,13 @@ Data Definition Language (DDL) is a subset of SQL. Its primary function is to cr
 5. `RENAME`: This is used to rename an object in the database.
 
     ```sql
-    RENAME TABLE old_table_name TO new_table_name;
+    -- To rename a table
+    ALTER TABLE table_name
+    RENAME TO new_table_name;
+    
+    -- To rename a column
+    ALTER TABLE table_name
+    RENAME COLUMN old_column_name TO new_column_name;
     ```
 
 Remember: In DDL operations, `COMMIT` and `ROLLBACK` statement cannot be performed because the MySQL engine automatically commits the changes.

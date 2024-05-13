@@ -5,3 +5,7 @@ In Linux, understanding the directory hierarchy is crucial for efficient navigat
 Each directory serves a specific purpose. For instance, `/bin` holds binary executable files (command files), `/etc` has system configuration files, `/home` stores users' personal files, and `/var` contains varying files such as logs and print queues.
 
 No code snippet is necessary as understanding directory hierarchy is a conceptual knowledge and doesn't involve code execution.
+
+Visit the following resources to learn more:
+
+ - [Overview of File System Hierarchy Standard (FHS)](https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr).

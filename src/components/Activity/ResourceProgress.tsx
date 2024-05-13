@@ -1,6 +1,7 @@
 import { getUser } from '../../lib/jwt';
 import { getPercentage } from '../../helper/number';
 import { ResourceProgressActions } from './ResourceProgressActions';
+import { cn } from '../../lib/classname';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -15,10 +16,17 @@ type ResourceProgressType = {
   showClearButton?: boolean;
   isCustomResource: boolean;
   roadmapSlug?: string;
+  showActions?: boolean;
+  onResourceClick?: () => void;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
-  const { showClearButton = true, isCustomResource } = props;
+  const {
+    showClearButton = true,
+    isCustomResource,
+    showActions = true,
+    onResourceClick,
+  } = props;
 
   const userId = getUser()?.id;
 
@@ -47,12 +55,23 @@ export function ResourceProgress(props: ResourceProgressType) {
   const totalMarked = doneCount + skippedCount;
   const progressPercentage = getPercentage(totalMarked, totalCount);
 
+  const Slot = onResourceClick ? 'button' : 'a';
+
   return (
     <div className="relative">
-      <a
-        target="_blank"
-        href={url}
-        className="group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 pr-7 text-left text-sm transition-all hover:border-gray-400"
+      <Slot
+        {...(onResourceClick
+          ? {
+              onClick: onResourceClick,
+            }
+          : {
+              href: url,
+              target: '_blank',
+            })}
+        className={cn(
+          'group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400',
+          showActions ? 'pr-7' : '',
+        )}
       >
         <span className="flex-grow truncate">{title}</span>
         <span className="text-xs text-gray-400">
@@ -65,18 +84,20 @@ export function ResourceProgress(props: ResourceProgressType) {
             width: `${progressPercentage}%`,
           }}
         ></span>
-      </a>
+      </Slot>
 
-      <div className="absolute right-2 top-0 flex h-full items-center">
-        <ResourceProgressActions
-          userId={userId!}
-          resourceType={resourceType}
-          resourceId={resourceId}
-          isCustomResource={isCustomResource}
-          onCleared={onCleared}
-          showClearButton={showClearButton}
-        />
-      </div>
+      {showActions && (
+        <div className="absolute right-2 top-0 flex h-full items-center">
+          <ResourceProgressActions
+            userId={userId!}
+            resourceType={resourceType}
+            resourceId={resourceId}
+            isCustomResource={isCustomResource}
+            onCleared={onCleared}
+            showClearButton={showClearButton}
+          />
+        </div>
+      )}
     </div>
   );
 }

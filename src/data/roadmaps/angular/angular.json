@@ -3,15 +3,103 @@
     "controls": {
       "control": [
         {
-          "ID": "1079",
+          "ID": "2968",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "1",
+          "h": "92",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "705",
+          "y": "401",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": -0.3346582539068095,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5209787928221856,
+              "y": 0.005742251223491234
+            },
+            "p2": {
+              "x": -0.3346582539068095,
+              "y": 91.5
+            }
+          }
+        },
+        {
+          "ID": "2969",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "1",
+          "h": "92",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "705",
+          "y": "238",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": -0.3346582539068095,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5209787928221856,
+              "y": 0.005742251223491234
+            },
+            "p2": {
+              "x": -0.3346582539068095,
+              "y": 91.5
+            }
+          }
+        },
+        {
+          "ID": "2970",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "1",
+          "h": "108",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "707",
+          "y": "130",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.3346582539068095,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5209787928221856,
+              "y": 0.005742251223491234
+            },
+            "p2": {
+              "x": -0.3346582539068095,
+              "y": 108
+            }
+          }
+        },
+        {
+          "ID": "2971",
           "typeID": "Arrow",
           "zOrder": "3",
           "w": "147",
           "h": "139",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "466",
-          "y": "2240",
+          "x": "476",
+          "y": "2250",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -33,15 +121,15 @@
           }
         },
         {
-          "ID": "1080",
+          "ID": "2972",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "137",
           "h": "97",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "471",
-          "y": "2233",
+          "x": "481",
+          "y": "2243",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -63,15 +151,15 @@
           }
         },
         {
-          "ID": "1081",
+          "ID": "2973",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "152",
           "h": "67",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "465",
-          "y": "2151",
+          "x": "475",
+          "y": "2161",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -93,15 +181,15 @@
           }
         },
         {
-          "ID": "1082",
+          "ID": "2974",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "148",
           "h": "47",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "453",
-          "y": "2228",
+          "x": "463",
+          "y": "2238",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -123,15 +211,15 @@
           }
         },
         {
-          "ID": "1083",
+          "ID": "2975",
           "typeID": "Arrow",
           "zOrder": "7",
           "w": "145",
           "h": "15",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "463",
-          "y": "2206",
+          "x": "473",
+          "y": "2216",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -153,15 +241,15 @@
           }
         },
         {
-          "ID": "1084",
+          "ID": "2976",
           "typeID": "Arrow",
           "zOrder": "8",
           "w": "136",
           "h": "5",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "940",
-          "y": "2022",
+          "x": "950",
+          "y": "2032",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -183,15 +271,15 @@
           }
         },
         {
-          "ID": "1085",
+          "ID": "2977",
           "typeID": "Arrow",
           "zOrder": "9",
           "w": "104",
           "h": "40",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "936",
-          "y": "1976",
+          "x": "946",
+          "y": "1986",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -213,15 +301,15 @@
           }
         },
         {
-          "ID": "1086",
+          "ID": "2978",
           "typeID": "Arrow",
           "zOrder": "10",
           "w": "136",
           "h": "5",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "940",
-          "y": "1970",
+          "x": "950",
+          "y": "1980",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -243,15 +331,15 @@
           }
         },
         {
-          "ID": "1087",
+          "ID": "2979",
           "typeID": "Arrow",
           "zOrder": "11",
           "w": "4",
           "h": "617",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "780",
-          "y": "2032",
+          "x": "790",
+          "y": "2042",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -272,15 +360,15 @@
           }
         },
         {
-          "ID": "1088",
+          "ID": "2980",
           "typeID": "Arrow",
           "zOrder": "12",
           "w": "274",
           "h": "90",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "429",
-          "y": "1878",
+          "x": "439",
+          "y": "1888",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -301,15 +389,15 @@
           }
         },
         {
-          "ID": "1089",
+          "ID": "2981",
           "typeID": "Arrow",
           "zOrder": "13",
           "w": "1",
           "h": "82",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "397",
-          "y": "1884",
+          "x": "407",
+          "y": "1894",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -331,15 +419,15 @@
           }
         },
         {
-          "ID": "1090",
+          "ID": "2982",
           "typeID": "Arrow",
           "zOrder": "14",
           "w": "1",
           "h": "82",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "281",
-          "y": "1872",
+          "x": "291",
+          "y": "1882",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -361,15 +449,15 @@
           }
         },
         {
-          "ID": "1091",
+          "ID": "2983",
           "typeID": "Arrow",
           "zOrder": "15",
           "w": "165",
           "h": "4",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "419",
-          "y": "1868",
+          "x": "429",
+          "y": "1878",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -390,15 +478,15 @@
           }
         },
         {
-          "ID": "1092",
+          "ID": "2984",
           "typeID": "Arrow",
           "zOrder": "16",
           "w": "1",
           "h": "87",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1050",
-          "y": "1588",
+          "x": "1060",
+          "y": "1598",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -420,15 +508,15 @@
           }
         },
         {
-          "ID": "1093",
+          "ID": "2985",
           "typeID": "Arrow",
           "zOrder": "17",
           "w": "110",
           "h": "48",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "396",
-          "y": "1686",
+          "x": "406",
+          "y": "1696",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -450,15 +538,15 @@
           }
         },
         {
-          "ID": "1094",
+          "ID": "2986",
           "typeID": "Arrow",
           "zOrder": "18",
           "w": "232",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "668",
-          "y": "1680",
+          "x": "678",
+          "y": "1690",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -479,15 +567,15 @@
           }
         },
         {
-          "ID": "1095",
+          "ID": "2987",
           "typeID": "Arrow",
           "zOrder": "19",
           "w": "1",
           "h": "205",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "574",
-          "y": "1569",
+          "x": "584",
+          "y": "1579",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -509,15 +597,15 @@
           }
         },
         {
-          "ID": "1096",
+          "ID": "2988",
           "typeID": "Arrow",
           "zOrder": "20",
           "w": "121",
           "h": "93",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "388",
-          "y": "1568",
+          "x": "398",
+          "y": "1578",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -539,15 +627,15 @@
           }
         },
         {
-          "ID": "1097",
+          "ID": "2989",
           "typeID": "Arrow",
           "zOrder": "21",
           "w": "137",
           "h": "3",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "375",
-          "y": "1677",
+          "x": "385",
+          "y": "1687",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -569,15 +657,15 @@
           }
         },
         {
-          "ID": "1098",
+          "ID": "2990",
           "typeID": "Arrow",
           "zOrder": "22",
           "w": "122",
           "h": "54",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "382",
-          "y": "1616",
+          "x": "392",
+          "y": "1626",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -599,15 +687,15 @@
           }
         },
         {
-          "ID": "1099",
+          "ID": "2991",
           "typeID": "Arrow",
           "zOrder": "23",
           "w": "160",
           "h": "188",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "652",
-          "y": "1481",
+          "x": "662",
+          "y": "1491",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -628,15 +716,15 @@
           }
         },
         {
-          "ID": "1100",
+          "ID": "2992",
           "typeID": "Arrow",
           "zOrder": "24",
           "w": "112",
           "h": "19",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "860",
-          "y": "1479",
+          "x": "870",
+          "y": "1489",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -658,15 +746,15 @@
           }
         },
         {
-          "ID": "1101",
+          "ID": "2993",
           "typeID": "Arrow",
           "zOrder": "25",
           "w": "110",
           "h": "36",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "858",
-          "y": "1431",
+          "x": "868",
+          "y": "1441",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -688,15 +776,15 @@
           }
         },
         {
-          "ID": "1102",
+          "ID": "2994",
           "typeID": "Arrow",
           "zOrder": "26",
           "w": "121",
           "h": "93",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "389",
-          "y": "1367",
+          "x": "399",
+          "y": "1377",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -718,15 +806,15 @@
           }
         },
         {
-          "ID": "1103",
+          "ID": "2995",
           "typeID": "Arrow",
           "zOrder": "27",
           "w": "153",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "650",
-          "y": "1472",
+          "x": "660",
+          "y": "1482",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -747,15 +835,15 @@
           }
         },
         {
-          "ID": "1104",
+          "ID": "2996",
           "typeID": "Arrow",
           "zOrder": "28",
           "w": "137",
           "h": "3",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "376",
-          "y": "1476",
+          "x": "386",
+          "y": "1486",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -777,15 +865,15 @@
           }
         },
         {
-          "ID": "1105",
+          "ID": "2997",
           "typeID": "Arrow",
           "zOrder": "29",
           "w": "122",
           "h": "54",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "383",
-          "y": "1415",
+          "x": "393",
+          "y": "1425",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -807,15 +895,15 @@
           }
         },
         {
-          "ID": "1106",
+          "ID": "2998",
           "typeID": "Arrow",
           "zOrder": "30",
           "w": "162",
           "h": "253",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "583",
-          "y": "1206",
+          "x": "593",
+          "y": "1216",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -836,15 +924,15 @@
           }
         },
         {
-          "ID": "1107",
+          "ID": "2999",
           "typeID": "Arrow",
           "zOrder": "31",
           "w": "137",
           "h": "97",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "535",
-          "y": "1199",
+          "x": "545",
+          "y": "1209",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -866,15 +954,15 @@
           }
         },
         {
-          "ID": "1108",
+          "ID": "3000",
           "typeID": "Arrow",
           "zOrder": "32",
           "w": "152",
           "h": "67",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "529",
-          "y": "1117",
+          "x": "539",
+          "y": "1127",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -896,15 +984,15 @@
           }
         },
         {
-          "ID": "1109",
+          "ID": "3001",
           "typeID": "Arrow",
           "zOrder": "33",
           "w": "148",
           "h": "47",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "517",
-          "y": "1194",
+          "x": "527",
+          "y": "1204",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -926,15 +1014,15 @@
           }
         },
         {
-          "ID": "1110",
+          "ID": "3002",
           "typeID": "Arrow",
           "zOrder": "34",
           "w": "145",
           "h": "15",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "527",
-          "y": "1172",
+          "x": "537",
+          "y": "1182",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -956,15 +1044,15 @@
           }
         },
         {
-          "ID": "1111",
+          "ID": "3003",
           "typeID": "Arrow",
           "zOrder": "35",
           "w": "1",
           "h": "109",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "642",
-          "y": "858",
+          "x": "652",
+          "y": "868",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -986,15 +1074,15 @@
           }
         },
         {
-          "ID": "1112",
+          "ID": "3004",
           "typeID": "Arrow",
           "zOrder": "36",
           "w": "2",
           "h": "212",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "744",
-          "y": "966",
+          "x": "754",
+          "y": "976",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1015,15 +1103,15 @@
           }
         },
         {
-          "ID": "1113",
+          "ID": "3005",
           "typeID": "Arrow",
           "zOrder": "37",
           "w": "133",
           "h": "72",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "464",
-          "y": "963",
+          "x": "474",
+          "y": "973",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1045,15 +1133,15 @@
           }
         },
         {
-          "ID": "1114",
+          "ID": "3006",
           "typeID": "Arrow",
           "zOrder": "38",
           "w": "153",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "810",
-          "y": "734",
+          "x": "820",
+          "y": "744",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1075,15 +1163,15 @@
           }
         },
         {
-          "ID": "1115",
+          "ID": "3007",
           "typeID": "Arrow",
           "zOrder": "39",
           "w": "152",
           "h": "16",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "454",
-          "y": "960",
+          "x": "464",
+          "y": "970",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1105,15 +1193,15 @@
           }
         },
         {
-          "ID": "1116",
+          "ID": "3008",
           "typeID": "Arrow",
           "zOrder": "40",
           "w": "137",
           "h": "47",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "463",
-          "y": "903",
+          "x": "473",
+          "y": "913",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1135,15 +1223,15 @@
           }
         },
         {
-          "ID": "1117",
+          "ID": "3009",
           "typeID": "Arrow",
           "zOrder": "41",
           "w": "1",
           "h": "137",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1070",
-          "y": "897",
+          "x": "1080",
+          "y": "907",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1165,15 +1253,15 @@
           }
         },
         {
-          "ID": "1118",
+          "ID": "3010",
           "typeID": "Arrow",
           "zOrder": "42",
           "w": "194",
           "h": "4",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "753",
-          "y": "963",
+          "x": "763",
+          "y": "973",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1194,15 +1282,15 @@
           }
         },
         {
-          "ID": "1119",
+          "ID": "3011",
           "typeID": "Arrow",
           "zOrder": "43",
           "w": "137",
           "h": "97",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "467",
-          "y": "740",
+          "x": "477",
+          "y": "750",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1224,15 +1312,15 @@
           }
         },
         {
-          "ID": "1120",
+          "ID": "3012",
           "typeID": "Arrow",
           "zOrder": "44",
           "w": "152",
           "h": "67",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "461",
-          "y": "658",
+          "x": "471",
+          "y": "668",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1254,15 +1342,15 @@
           }
         },
         {
-          "ID": "1121",
+          "ID": "3013",
           "typeID": "Arrow",
           "zOrder": "45",
           "w": "148",
           "h": "47",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "449",
-          "y": "735",
+          "x": "459",
+          "y": "745",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1284,15 +1372,15 @@
           }
         },
         {
-          "ID": "1122",
+          "ID": "3014",
           "typeID": "Arrow",
           "zOrder": "46",
           "w": "145",
           "h": "15",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "459",
-          "y": "713",
+          "x": "469",
+          "y": "723",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1314,15 +1402,15 @@
           }
         },
         {
-          "ID": "1123",
+          "ID": "3015",
           "typeID": "Arrow",
           "zOrder": "47",
           "w": "161",
           "h": "20",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "810",
-          "y": "1761",
+          "x": "820",
+          "y": "1771",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1344,15 +1432,15 @@
           }
         },
         {
-          "ID": "1124",
+          "ID": "3016",
           "typeID": "Arrow",
           "zOrder": "48",
           "w": "140",
           "h": "16",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "812",
-          "y": "1795",
+          "x": "822",
+          "y": "1805",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1374,15 +1462,15 @@
           }
         },
         {
-          "ID": "1125",
+          "ID": "3017",
           "typeID": "Arrow",
           "zOrder": "49",
           "w": "383",
           "h": "90",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "649",
-          "y": "1784",
+          "x": "659",
+          "y": "1794",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1403,15 +1491,15 @@
           }
         },
         {
-          "ID": "1126",
+          "ID": "3018",
           "typeID": "Arrow",
           "zOrder": "50",
           "w": "226",
           "h": "473",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "698",
-          "y": "485",
+          "x": "708",
+          "y": "495",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1432,15 +1520,15 @@
           }
         },
         {
-          "ID": "1127",
+          "ID": "3019",
           "typeID": "Arrow",
           "zOrder": "51",
           "w": "131",
           "h": "37",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "836",
-          "y": "475",
+          "x": "846",
+          "y": "485",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1462,15 +1550,15 @@
           }
         },
         {
-          "ID": "1128",
+          "ID": "3020",
           "typeID": "Arrow",
           "zOrder": "52",
           "w": "109",
           "h": "5",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "850",
-          "y": "463",
+          "x": "860",
+          "y": "473",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1492,15 +1580,15 @@
           }
         },
         {
-          "ID": "1129",
+          "ID": "3021",
           "typeID": "Arrow",
           "zOrder": "53",
           "w": "117",
           "h": "50",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "840",
-          "y": "411",
+          "x": "850",
+          "y": "421",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1522,15 +1610,15 @@
           }
         },
         {
-          "ID": "1130",
+          "ID": "3022",
           "typeID": "Arrow",
           "zOrder": "54",
           "w": "107",
           "h": "107",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "456",
-          "y": "478",
+          "x": "466",
+          "y": "488",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1552,15 +1640,15 @@
           }
         },
         {
-          "ID": "1131",
+          "ID": "3023",
           "typeID": "Arrow",
           "zOrder": "55",
           "w": "126",
           "h": "56",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "448",
-          "y": "410",
+          "x": "458",
+          "y": "420",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1582,15 +1670,15 @@
           }
         },
         {
-          "ID": "1132",
+          "ID": "3024",
           "typeID": "Arrow",
           "zOrder": "56",
           "w": "130",
           "h": "59",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "445",
-          "y": "472",
+          "x": "455",
+          "y": "482",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1612,15 +1700,15 @@
           }
         },
         {
-          "ID": "1133",
+          "ID": "3025",
           "typeID": "Arrow",
           "zOrder": "57",
           "w": "137",
           "h": "6",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "443",
-          "y": "467",
+          "x": "453",
+          "y": "477",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1642,15 +1730,15 @@
           }
         },
         {
-          "ID": "1134",
+          "ID": "3026",
           "typeID": "__group__",
           "zOrder": "58",
           "measuredW": "240",
           "measuredH": "49",
           "w": "240",
           "h": "49",
-          "x": "222",
-          "y": "387",
+          "x": "232",
+          "y": "397",
           "properties": {
             "controlName": "100-typescript-basics:what-is-typescript"
           },
@@ -1690,15 +1778,15 @@
           }
         },
         {
-          "ID": "1135",
+          "ID": "3027",
           "typeID": "__group__",
           "zOrder": "59",
           "measuredW": "240",
           "measuredH": "50",
           "w": "240",
           "h": "50",
-          "x": "222",
-          "y": "499",
+          "x": "232",
+          "y": "509",
           "properties": {
             "controlName": "102-typescript-basics:structural-typing"
           },
@@ -1738,15 +1826,15 @@
           }
         },
         {
-          "ID": "1136",
+          "ID": "3028",
           "typeID": "__group__",
           "zOrder": "60",
           "measuredW": "240",
           "measuredH": "50",
           "w": "240",
           "h": "50",
-          "x": "222",
-          "y": "555",
+          "x": "232",
+          "y": "565",
           "properties": {
             "controlName": "103-typescript-basics:type-inference"
           },
@@ -1786,28 +1874,187 @@
           }
         },
         {
-          "ID": "1140",
+          "ID": "3029",
           "typeID": "Label",
           "zOrder": "61",
           "measuredW": "97",
           "measuredH": "36",
-          "x": "653",
-          "y": "337",
+          "x": "663",
+          "y": "347",
           "properties": {
             "size": "28",
             "text": "Angular"
           }
         },
         {
-          "ID": "1146",
+          "ID": "3030",
+          "typeID": "__group__",
+          "zOrder": "62",
+          "measuredW": "350",
+          "measuredH": "141",
+          "w": "350",
+          "h": "141",
+          "x": "910",
+          "y": "168",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "350",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "314",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "Find the detailed version of this roadmap"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "319",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "size": "17",
+                    "text": "along with resources and other roadmaps"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "320",
+                  "measuredH": "45",
+                  "w": "320",
+                  "h": "45",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "320",
+                          "h": "45",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "105",
+                          "measuredH": "28",
+                          "x": "141",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "2",
+                          "measuredW": "45",
+                          "measuredH": "28",
+                          "x": "65",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https"
+                          }
+                        },
+                        {
+                          "ID": "3",
+                          "typeID": "Label",
+                          "zOrder": "3",
+                          "measuredW": "5",
+                          "measuredH": "28",
+                          "x": "113",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          }
+                        },
+                        {
+                          "ID": "4",
+                          "typeID": "Label",
+                          "zOrder": "4",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "120",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        },
+                        {
+                          "ID": "5",
+                          "typeID": "Label",
+                          "zOrder": "5",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "128",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3031",
           "typeID": "__group__",
           "zOrder": "63",
           "measuredW": "303",
           "measuredH": "52",
           "w": "303",
           "h": "52",
-          "x": "545",
-          "y": "447",
+          "x": "555",
+          "y": "457",
           "properties": {
             "controlName": "100-typescript-basics"
           },
@@ -1846,15 +2093,15 @@
           }
         },
         {
-          "ID": "1147",
+          "ID": "3032",
           "typeID": "__group__",
           "zOrder": "64",
           "measuredW": "240",
           "measuredH": "50",
           "w": "240",
           "h": "50",
-          "x": "222",
-          "y": "442",
+          "x": "232",
+          "y": "452",
           "properties": {
             "controlName": "101-typescript-basics:why-use-typescript"
           },
@@ -1894,15 +2141,15 @@
           }
         },
         {
-          "ID": "1148",
+          "ID": "3033",
           "typeID": "__group__",
           "zOrder": "65",
           "measuredW": "222",
           "measuredH": "50",
           "w": "222",
           "h": "50",
-          "x": "943",
-          "y": "386",
+          "x": "953",
+          "y": "396",
           "properties": {
             "controlName": "104-typescript-basics:union-types"
           },
@@ -1941,15 +2188,15 @@
           }
         },
         {
-          "ID": "1149",
+          "ID": "3034",
           "typeID": "__group__",
           "zOrder": "66",
           "measuredW": "222",
           "measuredH": "50",
           "w": "222",
           "h": "50",
-          "x": "943",
-          "y": "441",
+          "x": "953",
+          "y": "451",
           "properties": {
             "controlName": "105-typescript-basics:builtin-types"
           },
@@ -1988,15 +2235,15 @@
           }
         },
         {
-          "ID": "1150",
+          "ID": "3035",
           "typeID": "__group__",
           "zOrder": "67",
           "measuredW": "222",
           "measuredH": "50",
           "w": "222",
           "h": "50",
-          "x": "943",
-          "y": "497",
+          "x": "953",
+          "y": "507",
           "properties": {
             "controlName": "106-typescript-basics:type-guard"
           },
@@ -2036,15 +2283,15 @@
           }
         },
         {
-          "ID": "1151",
+          "ID": "3036",
           "typeID": "__group__",
           "zOrder": "68",
           "measuredW": "262",
           "measuredH": "50",
           "w": "262",
           "h": "50",
-          "x": "586",
-          "y": "712",
+          "x": "596",
+          "y": "722",
           "properties": {
             "controlName": "101-rxjs-basics"
           },
@@ -2083,15 +2330,15 @@
           }
         },
         {
-          "ID": "1152",
+          "ID": "3037",
           "typeID": "__group__",
           "zOrder": "69",
           "measuredW": "256",
           "measuredH": "50",
           "w": "256",
           "h": "50",
-          "x": "221",
-          "y": "635",
+          "x": "231",
+          "y": "645",
           "properties": {
             "controlName": "100-rxjs-basics:observable-pattern"
           },
@@ -2130,15 +2377,15 @@
           }
         },
         {
-          "ID": "1153",
+          "ID": "3038",
           "typeID": "__group__",
           "zOrder": "70",
           "measuredW": "256",
           "measuredH": "50",
           "w": "256",
           "h": "50",
-          "x": "221",
-          "y": "690",
+          "x": "231",
+          "y": "700",
           "properties": {
             "controlName": "101-rxjs-basics:observable-lifecycle"
           },
@@ -2177,15 +2424,15 @@
           }
         },
         {
-          "ID": "1154",
+          "ID": "3039",
           "typeID": "__group__",
           "zOrder": "71",
           "measuredW": "256",
           "measuredH": "50",
           "w": "256",
           "h": "50",
-          "x": "221",
-          "y": "746",
+          "x": "231",
+          "y": "756",
           "properties": {
             "controlName": "102-rxjs-basics:marble-diagrams"
           },
@@ -2224,15 +2471,15 @@
           }
         },
         {
-          "ID": "1155",
+          "ID": "3040",
           "typeID": "__group__",
           "zOrder": "72",
           "measuredW": "256",
           "measuredH": "50",
           "w": "256",
           "h": "50",
-          "x": "221",
-          "y": "802",
+          "x": "231",
+          "y": "812",
           "properties": {
             "controlName": "103-rxjs-basics:rxjs-vs-promises"
           },
@@ -2271,15 +2518,15 @@
           }
         },
         {
-          "ID": "1156",
+          "ID": "3041",
           "typeID": "__group__",
           "zOrder": "73",
           "measuredW": "262",
           "measuredH": "50",
           "w": "262",
           "h": "50",
-          "x": "901",
-          "y": "935",
+          "x": "911",
+          "y": "945",
           "properties": {
             "controlName": "102-angular-basics"
           },
@@ -2318,15 +2565,15 @@
           }
         },
         {
-          "ID": "1157",
+          "ID": "3042",
           "typeID": "__group__",
           "zOrder": "74",
           "measuredW": "262",
           "measuredH": "50",
           "w": "262",
           "h": "50",
-          "x": "900",
-          "y": "876",
+          "x": "910",
+          "y": "886",
           "properties": {
             "controlName": "100-angular-basics:angularjs-vs-angular"
           },
@@ -2365,39 +2612,39 @@
           }
         },
         {
-          "ID": "1158",
+          "ID": "3043",
           "typeID": "Canvas",
           "zOrder": "75",
           "w": "198",
           "h": "393",
           "measuredW": "100",
           "measuredH": "70",
-          "x": "964",
-          "y": "1001"
+          "x": "974",
+          "y": "1011"
         },
         {
-          "ID": "1159",
+          "ID": "3044",
           "typeID": "Label",
           "zOrder": "76",
           "measuredW": "101",
           "measuredH": "26",
-          "x": "1012",
-          "y": "1018",
+          "x": "1022",
+          "y": "1028",
           "properties": {
             "text": "What are __",
             "size": "18"
           }
         },
         {
-          "ID": "1160",
+          "ID": "3045",
           "typeID": "__group__",
           "zOrder": "77",
           "measuredW": "222",
           "measuredH": "50",
           "w": "222",
           "h": "50",
-          "x": "657",
-          "y": "1166",
+          "x": "667",
+          "y": "1176",
           "properties": {
             "controlName": "104-templates"
           },
@@ -2436,15 +2683,15 @@
           }
         },
         {
-          "ID": "1161",
+          "ID": "3046",
           "typeID": "__group__",
           "zOrder": "78",
           "measuredW": "157",
           "measuredH": "50",
           "w": "157",
           "h": "50",
-          "x": "221",
-          "y": "1095",
+          "x": "231",
+          "y": "1105",
           "properties": {
             "controlName": "100-templates:interpolation"
           },
@@ -2483,15 +2730,15 @@
           }
         },
         {
-          "ID": "1162",
+          "ID": "3047",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "161",
           "measuredH": "50",
           "w": "161",
           "h": "50",
-          "x": "384",
-          "y": "1095",
+          "x": "394",
+          "y": "1105",
           "properties": {
             "controlName": "101-templates:property-binding"
           },
@@ -2530,15 +2777,15 @@
           }
         },
         {
-          "ID": "1163",
+          "ID": "3048",
           "typeID": "__group__",
           "zOrder": "80",
           "measuredW": "126",
           "measuredH": "50",
           "w": "126",
           "h": "50",
-          "x": "691",
-          "y": "1732",
+          "x": "701",
+          "y": "1742",
           "properties": {
             "controlName": "100-state-management:ngxs"
           },
@@ -2577,15 +2824,15 @@
           }
         },
         {
-          "ID": "1164",
+          "ID": "3049",
           "typeID": "__group__",
           "zOrder": "81",
           "measuredW": "126",
           "measuredH": "50",
           "w": "126",
           "h": "50",
-          "x": "691",
-          "y": "1789",
+          "x": "701",
+          "y": "1799",
           "properties": {
             "controlName": "101-state-management:ngrx"
           },
@@ -2624,15 +2871,15 @@
           }
         },
         {
-          "ID": "1165",
+          "ID": "3050",
           "typeID": "__group__",
           "zOrder": "82",
           "measuredW": "255",
           "measuredH": "50",
           "w": "255",
           "h": "50",
-          "x": "222",
-          "y": "2128",
+          "x": "232",
+          "y": "2138",
           "properties": {
             "controlName": "100-testing-angular-apps:testing-pipes"
           },
@@ -2671,15 +2918,15 @@
           }
         },
         {
-          "ID": "1166",
+          "ID": "3051",
           "typeID": "__group__",
           "zOrder": "83",
           "measuredW": "255",
           "measuredH": "50",
           "w": "255",
           "h": "50",
-          "x": "222",
-          "y": "2183",
+          "x": "232",
+          "y": "2193",
           "properties": {
             "controlName": "101-testing-angular-apps:testing-services"
           },
@@ -2718,15 +2965,15 @@
           }
         },
         {
-          "ID": "1167",
+          "ID": "3052",
           "typeID": "__group__",
           "zOrder": "84",
           "measuredW": "576",
           "measuredH": "105",
           "w": "576",
           "h": "105",
-          "x": "575",
-          "y": "2457",
+          "x": "585",
+          "y": "2467",
           "properties": {
             "controlName": "ext_link:roadmap.sh/frontend"
           },
@@ -2776,15 +3023,15 @@
           }
         },
         {
-          "ID": "1168",
+          "ID": "3053",
           "typeID": "__group__",
           "zOrder": "85",
           "measuredW": "243",
           "measuredH": "50",
           "w": "243",
           "h": "50",
-          "x": "579",
-          "y": "940",
+          "x": "589",
+          "y": "950",
           "properties": {
             "controlName": "103-angular-cli"
           },
@@ -2823,26 +3070,26 @@
           }
         },
         {
-          "ID": "1169",
+          "ID": "3054",
           "typeID": "Canvas",
           "zOrder": "86",
           "w": "253",
           "h": "188",
           "measuredW": "100",
           "measuredH": "70",
-          "x": "221",
-          "y": "877"
+          "x": "231",
+          "y": "887"
         },
         {
-          "ID": "1170",
+          "ID": "3055",
           "typeID": "__group__",
           "zOrder": "87",
           "measuredW": "123",
           "measuredH": "50",
           "w": "123",
           "h": "50",
-          "x": "235",
-          "y": "891",
+          "x": "245",
+          "y": "901",
           "properties": {
             "controlName": "100-angular-cli:ng-build"
           },
@@ -2881,15 +3128,15 @@
           }
         },
         {
-          "ID": "1171",
+          "ID": "3056",
           "typeID": "__group__",
           "zOrder": "88",
           "measuredW": "94",
           "measuredH": "50",
           "w": "94",
           "h": "50",
-          "x": "364",
-          "y": "891",
+          "x": "374",
+          "y": "901",
           "properties": {
             "controlName": "101-angular-cli:ng-serve"
           },
@@ -2928,15 +3175,15 @@
           }
         },
         {
-          "ID": "1172",
+          "ID": "3057",
           "typeID": "__group__",
           "zOrder": "89",
           "measuredW": "123",
           "measuredH": "50",
           "w": "123",
           "h": "50",
-          "x": "236",
-          "y": "946",
+          "x": "246",
+          "y": "956",
           "properties": {
             "controlName": "102-angular-cli:ng-generate"
           },
@@ -2975,15 +3222,15 @@
           }
         },
         {
-          "ID": "1173",
+          "ID": "3058",
           "typeID": "__group__",
           "zOrder": "90",
           "measuredW": "94",
           "measuredH": "50",
           "w": "94",
           "h": "50",
-          "x": "365",
-          "y": "946",
+          "x": "375",
+          "y": "956",
           "properties": {
             "controlName": "103-angular-cli:ng-test"
           },
@@ -3022,15 +3269,15 @@
           }
         },
         {
-          "ID": "1174",
+          "ID": "3059",
           "typeID": "__group__",
           "zOrder": "91",
           "measuredW": "145",
           "measuredH": "50",
           "w": "145",
           "h": "50",
-          "x": "579",
-          "y": "839",
+          "x": "589",
+          "y": "849",
           "properties": {
             "controlName": "106-angular-cli:schematics"
           },
@@ -3069,15 +3316,15 @@
           }
         },
         {
-          "ID": "1175",
+          "ID": "3060",
           "typeID": "__group__",
           "zOrder": "92",
           "measuredW": "123",
           "measuredH": "49",
           "w": "123",
           "h": "49",
-          "x": "235",
-          "y": "1002",
+          "x": "245",
+          "y": "1012",
           "properties": {
             "controlName": "104-angular-cli:ng-e2e"
           },
@@ -3116,15 +3363,15 @@
           }
         },
         {
-          "ID": "1176",
+          "ID": "3061",
           "typeID": "__group__",
           "zOrder": "93",
           "measuredW": "94",
           "measuredH": "49",
           "w": "94",
           "h": "49",
-          "x": "364",
-          "y": "1002",
+          "x": "374",
+          "y": "1012",
           "properties": {
             "controlName": "105-angular-cli:ng-new"
           },
@@ -3163,15 +3410,15 @@
           }
         },
         {
-          "ID": "1177",
+          "ID": "3062",
           "typeID": "__group__",
           "zOrder": "94",
           "measuredW": "222",
           "measuredH": "274",
           "w": "222",
           "h": "274",
-          "x": "941",
-          "y": "567",
+          "x": "951",
+          "y": "577",
           "properties": {
             "controlName": "104-rxjs-basics:operators"
           },
@@ -3207,15 +3454,15 @@
           }
         },
         {
-          "ID": "1178",
+          "ID": "3063",
           "typeID": "__group__",
           "zOrder": "95",
           "measuredW": "196",
           "measuredH": "50",
           "w": "196",
           "h": "50",
-          "x": "955",
-          "y": "616",
+          "x": "965",
+          "y": "626",
           "properties": {
             "controlName": "100-rxjs-basics:operators:filtering"
           },
@@ -3254,15 +3501,15 @@
           }
         },
         {
-          "ID": "1179",
+          "ID": "3064",
           "typeID": "__group__",
           "zOrder": "96",
           "measuredW": "195",
           "measuredH": "50",
           "w": "195",
           "h": "50",
-          "x": "955",
-          "y": "670",
+          "x": "965",
+          "y": "680",
           "properties": {
             "controlName": "101-rxjs-basics:operators:rate-limiting"
           },
@@ -3301,15 +3548,15 @@
           }
         },
         {
-          "ID": "1180",
+          "ID": "3065",
           "typeID": "__group__",
           "zOrder": "97",
           "measuredW": "197",
           "measuredH": "50",
           "w": "197",
           "h": "50",
-          "x": "954",
-          "y": "726",
+          "x": "964",
+          "y": "736",
           "properties": {
             "controlName": "102-rxjs-basics:operators:transformation"
           },
@@ -3348,15 +3595,15 @@
           }
         },
         {
-          "ID": "1181",
+          "ID": "3066",
           "typeID": "__group__",
           "zOrder": "98",
           "measuredW": "197",
           "measuredH": "50",
           "w": "197",
           "h": "50",
-          "x": "954",
-          "y": "781",
+          "x": "964",
+          "y": "791",
           "properties": {
             "controlName": "103-rxjs-basics:operators:combination"
           },
@@ -3395,15 +3642,15 @@
           }
         },
         {
-          "ID": "1182",
+          "ID": "3067",
           "typeID": "__group__",
           "zOrder": "99",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1054",
+          "x": "925",
+          "y": "1064",
           "properties": {
             "controlName": "101-angular-basics:angular-components"
           },
@@ -3442,15 +3689,15 @@
           }
         },
         {
-          "ID": "1183",
+          "ID": "3068",
           "typeID": "__group__",
           "zOrder": "100",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1108",
+          "x": "925",
+          "y": "1118",
           "properties": {
             "controlName": "102-angular-basics:angular-templates"
           },
@@ -3489,15 +3736,15 @@
           }
         },
         {
-          "ID": "1184",
+          "ID": "3069",
           "typeID": "__group__",
           "zOrder": "101",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1163",
+          "x": "925",
+          "y": "1173",
           "properties": {
             "controlName": "103-angular-basics:angular-modules"
           },
@@ -3536,15 +3783,15 @@
           }
         },
         {
-          "ID": "1185",
+          "ID": "3070",
           "typeID": "__group__",
           "zOrder": "102",
           "measuredW": "324",
           "measuredH": "50",
           "w": "324",
           "h": "50",
-          "x": "221",
-          "y": "1150",
+          "x": "231",
+          "y": "1160",
           "properties": {
             "controlName": "102-templates:template-statements"
           },
@@ -3583,15 +3830,15 @@
           }
         },
         {
-          "ID": "1186",
+          "ID": "3071",
           "typeID": "__group__",
           "zOrder": "103",
           "measuredW": "324",
           "measuredH": "50",
           "w": "324",
           "h": "50",
-          "x": "221",
-          "y": "1206",
+          "x": "231",
+          "y": "1216",
           "properties": {
             "controlName": "103-templates:binding-data-props-attrs-events"
           },
@@ -3630,15 +3877,15 @@
           }
         },
         {
-          "ID": "1187",
+          "ID": "3072",
           "typeID": "__group__",
           "zOrder": "104",
           "measuredW": "154",
           "measuredH": "50",
           "w": "154",
           "h": "50",
-          "x": "221",
-          "y": "1261",
+          "x": "231",
+          "y": "1271",
           "properties": {
             "controlName": "104-templates:reference-vars"
           },
@@ -3677,15 +3924,15 @@
           }
         },
         {
-          "ID": "1188",
+          "ID": "3073",
           "typeID": "__group__",
           "zOrder": "105",
           "measuredW": "164",
           "measuredH": "50",
           "w": "164",
           "h": "50",
-          "x": "381",
-          "y": "1261",
+          "x": "391",
+          "y": "1271",
           "properties": {
             "controlName": "105-templates:input-output"
           },
@@ -3724,15 +3971,15 @@
           }
         },
         {
-          "ID": "1189",
+          "ID": "3074",
           "typeID": "__group__",
           "zOrder": "106",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1218",
+          "x": "925",
+          "y": "1228",
           "properties": {
             "controlName": "104-angular-basics:dependency-injection"
           },
@@ -3771,15 +4018,15 @@
           }
         },
         {
-          "ID": "1190",
+          "ID": "3075",
           "typeID": "__group__",
           "zOrder": "107",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1273",
+          "x": "925",
+          "y": "1283",
           "properties": {
             "controlName": "105-angular-basics:services"
           },
@@ -3818,15 +4065,15 @@
           }
         },
         {
-          "ID": "1191",
+          "ID": "3076",
           "typeID": "__group__",
           "zOrder": "108",
           "measuredW": "236",
           "measuredH": "50",
           "w": "236",
           "h": "50",
-          "x": "915",
-          "y": "1329",
+          "x": "925",
+          "y": "1339",
           "properties": {
             "controlName": "106-angular-basics:routing"
           },
@@ -3865,15 +4112,15 @@
           }
         },
         {
-          "ID": "1192",
+          "ID": "3077",
           "typeID": "__group__",
           "zOrder": "109",
           "measuredW": "186",
           "measuredH": "50",
           "w": "186",
           "h": "50",
-          "x": "489",
-          "y": "1448",
+          "x": "499",
+          "y": "1458",
           "properties": {
             "controlName": "105-rendering-topics"
           },
@@ -3912,15 +4159,15 @@
           }
         },
         {
-          "ID": "1193",
+          "ID": "3078",
           "typeID": "__group__",
           "zOrder": "110",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1344",
+          "x": "231",
+          "y": "1354",
           "properties": {
             "controlName": "100-rendering-topics:builtin-directives"
           },
@@ -3959,15 +4206,15 @@
           }
         },
         {
-          "ID": "1194",
+          "ID": "3079",
           "typeID": "__group__",
           "zOrder": "111",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1399",
+          "x": "231",
+          "y": "1409",
           "properties": {
             "controlName": "101-rendering-topics:builtin-pipes"
           },
@@ -4006,15 +4253,15 @@
           }
         },
         {
-          "ID": "1195",
+          "ID": "3080",
           "typeID": "__group__",
           "zOrder": "112",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1453",
+          "x": "231",
+          "y": "1463",
           "properties": {
             "controlName": "102-rendering-topics:change-detection"
           },
@@ -4053,15 +4300,15 @@
           }
         },
         {
-          "ID": "1196",
+          "ID": "3081",
           "typeID": "__group__",
           "zOrder": "113",
           "measuredW": "133",
           "measuredH": "50",
           "w": "133",
           "h": "50",
-          "x": "745",
-          "y": "1448",
+          "x": "755",
+          "y": "1458",
           "properties": {
             "controlName": "106-forms"
           },
@@ -4100,15 +4347,15 @@
           }
         },
         {
-          "ID": "1197",
+          "ID": "3082",
           "typeID": "__group__",
           "zOrder": "114",
           "measuredW": "212",
           "measuredH": "50",
           "w": "212",
           "h": "50",
-          "x": "951",
-          "y": "1414",
+          "x": "961",
+          "y": "1424",
           "properties": {
             "controlName": "100-forms:reactive-forms"
           },
@@ -4147,15 +4394,15 @@
           }
         },
         {
-          "ID": "1198",
+          "ID": "3083",
           "typeID": "__group__",
           "zOrder": "115",
           "measuredW": "212",
           "measuredH": "50",
           "w": "212",
           "h": "50",
-          "x": "951",
-          "y": "1469",
+          "x": "961",
+          "y": "1479",
           "properties": {
             "controlName": "101-forms:template-driven-forms"
           },
@@ -4194,15 +4441,15 @@
           }
         },
         {
-          "ID": "1199",
+          "ID": "3084",
           "typeID": "__group__",
           "zOrder": "116",
           "measuredW": "186",
           "measuredH": "50",
           "w": "186",
           "h": "50",
-          "x": "489",
-          "y": "1644",
+          "x": "499",
+          "y": "1654",
           "properties": {
             "controlName": "107-routing"
           },
@@ -4241,15 +4488,15 @@
           }
         },
         {
-          "ID": "1200",
+          "ID": "3085",
           "typeID": "__group__",
           "zOrder": "117",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "493",
-          "y": "1540",
+          "x": "503",
+          "y": "1550",
           "properties": {
             "controlName": "100-routing:configuration"
           },
@@ -4288,15 +4535,15 @@
           }
         },
         {
-          "ID": "1201",
+          "ID": "3086",
           "typeID": "__group__",
           "zOrder": "118",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1549",
+          "x": "231",
+          "y": "1559",
           "properties": {
             "controlName": "101-routing:router-outlets"
           },
@@ -4335,15 +4582,15 @@
           }
         },
         {
-          "ID": "1202",
+          "ID": "3087",
           "typeID": "__group__",
           "zOrder": "119",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1659",
+          "x": "231",
+          "y": "1669",
           "properties": {
             "controlName": "103-routing:router-events"
           },
@@ -4382,15 +4629,15 @@
           }
         },
         {
-          "ID": "1203",
+          "ID": "3088",
           "typeID": "__group__",
           "zOrder": "120",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1604",
+          "x": "231",
+          "y": "1614",
           "properties": {
             "controlName": "102-routing:router-links"
           },
@@ -4429,15 +4676,15 @@
           }
         },
         {
-          "ID": "1204",
+          "ID": "3089",
           "typeID": "__group__",
           "zOrder": "121",
           "measuredW": "285",
           "measuredH": "50",
           "w": "285",
           "h": "50",
-          "x": "878",
-          "y": "1655",
+          "x": "888",
+          "y": "1665",
           "properties": {
             "controlName": "108-services-remote-data"
           },
@@ -4476,15 +4723,15 @@
           }
         },
         {
-          "ID": "1205",
+          "ID": "3090",
           "typeID": "__group__",
           "zOrder": "122",
           "measuredW": "178",
           "measuredH": "50",
           "w": "178",
           "h": "50",
-          "x": "221",
-          "y": "1715",
+          "x": "231",
+          "y": "1725",
           "properties": {
             "controlName": "104-routing:guards"
           },
@@ -4523,15 +4770,15 @@
           }
         },
         {
-          "ID": "1206",
+          "ID": "3091",
           "typeID": "__group__",
           "zOrder": "123",
           "measuredW": "285",
           "measuredH": "50",
           "w": "285",
           "h": "50",
-          "x": "878",
-          "y": "1709",
+          "x": "888",
+          "y": "1719",
           "properties": {
             "controlName": "109-lifecycle-hooks"
           },
@@ -4570,15 +4817,15 @@
           }
         },
         {
-          "ID": "1207",
+          "ID": "3092",
           "typeID": "__group__",
           "zOrder": "124",
           "measuredW": "212",
           "measuredH": "50",
           "w": "212",
           "h": "50",
-          "x": "951",
-          "y": "1560",
+          "x": "961",
+          "y": "1570",
           "properties": {
             "controlName": "100-services-remote-data:dependency-injection"
           },
@@ -4617,15 +4864,15 @@
           }
         },
         {
-          "ID": "1208",
+          "ID": "3093",
           "typeID": "__group__",
           "zOrder": "125",
           "measuredW": "154",
           "measuredH": "50",
           "w": "154",
           "h": "50",
-          "x": "493",
-          "y": "1747",
+          "x": "503",
+          "y": "1757",
           "properties": {
             "controlName": "105-routing:lazy-loading"
           },
@@ -4664,15 +4911,15 @@
           }
         },
         {
-          "ID": "1209",
+          "ID": "3094",
           "typeID": "__group__",
           "zOrder": "126",
           "measuredW": "126",
           "measuredH": "50",
           "w": "126",
           "h": "50",
-          "x": "540",
-          "y": "1848",
+          "x": "550",
+          "y": "1858",
           "properties": {
             "controlName": "111-zones"
           },
@@ -4711,15 +4958,15 @@
           }
         },
         {
-          "ID": "1210",
+          "ID": "3095",
           "typeID": "__group__",
           "zOrder": "127",
           "measuredW": "286",
           "measuredH": "50",
           "w": "286",
           "h": "50",
-          "x": "877",
-          "y": "1763",
+          "x": "887",
+          "y": "1773",
           "properties": {
             "controlName": "110-state-management"
           },
@@ -4758,15 +5005,15 @@
           }
         },
         {
-          "ID": "1211",
+          "ID": "3096",
           "typeID": "__group__",
           "zOrder": "128",
           "measuredW": "227",
           "measuredH": "50",
           "w": "227",
           "h": "50",
-          "x": "221",
-          "y": "1847",
+          "x": "231",
+          "y": "1857",
           "properties": {
             "controlName": "112-creating-a-custom-x"
           },
@@ -4805,15 +5052,15 @@
           }
         },
         {
-          "ID": "1212",
+          "ID": "3097",
           "typeID": "__group__",
           "zOrder": "129",
           "measuredW": "121",
           "measuredH": "50",
           "w": "121",
           "h": "50",
-          "x": "221",
-          "y": "1929",
+          "x": "231",
+          "y": "1939",
           "properties": {
             "controlName": "100-creating-a-custom-x:directive"
           },
@@ -4852,15 +5099,15 @@
           }
         },
         {
-          "ID": "1213",
+          "ID": "3098",
           "typeID": "__group__",
           "zOrder": "130",
           "measuredW": "100",
           "measuredH": "50",
           "w": "100",
           "h": "50",
-          "x": "348",
-          "y": "1929",
+          "x": "358",
+          "y": "1939",
           "properties": {
             "controlName": "101-creating-a-custom-x:pipe"
           },
@@ -4898,15 +5145,15 @@
           }
         },
         {
-          "ID": "1214",
+          "ID": "3099",
           "typeID": "__group__",
           "zOrder": "131",
           "measuredW": "227",
           "measuredH": "50",
           "w": "227",
           "h": "50",
-          "x": "221",
-          "y": "1983",
+          "x": "231",
+          "y": "1993",
           "properties": {
             "controlName": "102-creating-a-custom-x:library"
           },
@@ -4945,15 +5192,15 @@
           }
         },
         {
-          "ID": "1215",
+          "ID": "3100",
           "typeID": "__group__",
           "zOrder": "132",
           "measuredW": "272",
           "measuredH": "50",
           "w": "272",
           "h": "50",
-          "x": "588",
-          "y": "2205",
+          "x": "598",
+          "y": "2215",
           "properties": {
             "controlName": "115-testing-angular-apps"
           },
@@ -4992,15 +5239,15 @@
           }
         },
         {
-          "ID": "1216",
+          "ID": "3101",
           "typeID": "__group__",
           "zOrder": "133",
           "measuredW": "255",
           "measuredH": "50",
           "w": "255",
           "h": "50",
-          "x": "222",
-          "y": "2238",
+          "x": "232",
+          "y": "2248",
           "properties": {
             "controlName": "102-testing-angular-apps:testing-component-bindings"
           },
@@ -5039,15 +5286,15 @@
           }
         },
         {
-          "ID": "1217",
+          "ID": "3102",
           "typeID": "__group__",
           "zOrder": "134",
           "measuredW": "255",
           "measuredH": "50",
           "w": "255",
           "h": "50",
-          "x": "222",
-          "y": "2293",
+          "x": "232",
+          "y": "2303",
           "properties": {
             "controlName": "103-testing-angular-apps:testing-directives"
           },
@@ -5086,15 +5333,15 @@
           }
         },
         {
-          "ID": "1218",
+          "ID": "3103",
           "typeID": "__group__",
           "zOrder": "135",
           "measuredW": "255",
           "measuredH": "50",
           "w": "255",
           "h": "50",
-          "x": "222",
-          "y": "2348",
+          "x": "232",
+          "y": "2358",
           "properties": {
             "controlName": "104-testing-angular-apps:testing-component-templates"
           },
@@ -5133,15 +5380,15 @@
           }
         },
         {
-          "ID": "1219",
+          "ID": "3104",
           "typeID": "__group__",
           "zOrder": "136",
           "measuredW": "271",
           "measuredH": "50",
           "w": "271",
           "h": "50",
-          "x": "689",
-          "y": "2000",
+          "x": "699",
+          "y": "2010",
           "properties": {
             "controlName": "114-angular-ssg"
           },
@@ -5180,15 +5427,15 @@
           }
         },
         {
-          "ID": "1220",
+          "ID": "3105",
           "typeID": "__group__",
           "zOrder": "137",
           "measuredW": "272",
           "measuredH": "50",
           "w": "272",
           "h": "50",
-          "x": "688",
-          "y": "1944",
+          "x": "698",
+          "y": "1954",
           "properties": {
             "controlName": "113-angular-ssr"
           },
@@ -5227,15 +5474,15 @@
           }
         },
         {
-          "ID": "1221",
+          "ID": "3106",
           "typeID": "__group__",
           "zOrder": "138",
           "measuredW": "197",
           "measuredH": "50",
           "w": "197",
           "h": "50",
-          "x": "1020",
-          "y": "1944",
+          "x": "1030",
+          "y": "1954",
           "properties": {
             "controlName": "100-angular-ssr:angular-universal"
           },
@@ -5274,15 +5521,15 @@
           }
         },
         {
-          "ID": "1222",
+          "ID": "3107",
           "typeID": "__group__",
           "zOrder": "139",
           "measuredW": "197",
           "measuredH": "50",
           "w": "197",
           "h": "50",
-          "x": "1020",
-          "y": "2000",
+          "x": "1030",
+          "y": "2010",
           "properties": {
             "controlName": "100-angular-ssg:scully"
           },
@@ -5321,15 +5568,15 @@
           }
         },
         {
-          "ID": "1223",
+          "ID": "3108",
           "typeID": "__group__",
           "zOrder": "140",
           "measuredW": "274",
           "measuredH": "57",
           "w": "274",
           "h": "57",
-          "x": "577",
-          "y": "212",
+          "x": "587",
+          "y": "222",
           "properties": {
             "controlName": "ext_link:roadmap.sh/javascript"
           },
@@ -5370,103 +5617,15 @@
           }
         },
         {
-          "ID": "1228",
-          "typeID": "Arrow",
-          "zOrder": "2",
-          "w": "1",
-          "h": "108",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "697",
-          "y": "120",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "10027263",
-            "p0": {
-              "x": -0.3346582539068095,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5209787928221856,
-              "y": 0.005742251223491234
-            },
-            "p2": {
-              "x": -0.3346582539068095,
-              "y": 108
-            }
-          }
-        },
-        {
-          "ID": "1229",
-          "typeID": "Arrow",
-          "zOrder": "1",
-          "w": "1",
-          "h": "92",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "695",
-          "y": "228",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.3346582539068095,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5209787928221856,
-              "y": 0.005742251223491234
-            },
-            "p2": {
-              "x": -0.3346582539068095,
-              "y": 91.5
-            }
-          }
-        },
-        {
-          "ID": "1230",
-          "typeID": "Arrow",
-          "zOrder": "0",
-          "w": "1",
-          "h": "92",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "695",
-          "y": "391",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.3346582539068095,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5209787928221856,
-              "y": 0.005742251223491234
-            },
-            "p2": {
-              "x": -0.3346582539068095,
-              "y": 91.5
-            }
-          }
-        },
-        {
-          "ID": "1231",
+          "ID": "3109",
           "typeID": "__group__",
           "zOrder": "141",
           "measuredW": "300",
           "measuredH": "141",
           "w": "300",
           "h": "141",
-          "x": "220",
-          "y": "160",
+          "x": "230",
+          "y": "170",
           "children": {
             "controls": {
               "control": [
@@ -5629,15 +5788,18 @@
           }
         },
         {
-          "ID": "1232",
+          "ID": "3110",
           "typeID": "__group__",
-          "zOrder": "62",
-          "measuredW": "350",
-          "measuredH": "141",
-          "w": "350",
-          "h": "141",
-          "x": "900",
-          "y": "158",
+          "zOrder": "142",
+          "measuredW": "227",
+          "measuredH": "50",
+          "w": "227",
+          "h": "50",
+          "x": "230",
+          "y": "2046",
+          "properties": {
+            "controlName": "103-creating-a-custom-x:standalone-component"
+          },
           "children": {
             "controls": {
               "control": [
@@ -5645,142 +5807,27 @@
                   "ID": "0",
                   "typeID": "Canvas",
                   "zOrder": "0",
-                  "w": "350",
-                  "h": "141",
+                  "w": "227",
+                  "h": "50",
                   "measuredW": "100",
                   "measuredH": "70",
                   "x": "0",
-                  "y": "0"
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
                 },
                 {
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "314",
+                  "measuredW": "182",
                   "measuredH": "25",
-                  "x": "14",
-                  "y": "17",
+                  "x": "23",
+                  "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Find the detailed version of this roadmap"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "319",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "45",
-                  "properties": {
-                    "size": "17",
-                    "text": "along with resources and other roadmaps"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "320",
-                  "measuredH": "45",
-                  "w": "320",
-                  "h": "45",
-                  "x": "15",
-                  "y": "81",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "320",
-                          "h": "45",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "borderColor": "4273622",
-                            "color": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "105",
-                          "measuredH": "28",
-                          "x": "141",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "roadmap.sh"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "45",
-                          "measuredH": "28",
-                          "x": "65",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Label",
-                          "zOrder": "3",
-                          "measuredW": "5",
-                          "measuredH": "28",
-                          "x": "113",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": ":"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "120",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "Label",
-                          "zOrder": "5",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "128",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        }
-                      ]
-                    }
+                    "text": "Standalone Component"
                   }
                 }
               ]
@@ -5790,17 +5837,17 @@
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1",
-      "order": 1000000,
+      "name": "New Wireframe 1 copy 8",
+      "order": 1000000.6428282561,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "BFEFC928-2756-4044-9FAF-3CD2D8DBA3C9",
+    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
     "mockupH": "2529",
     "mockupW": "1030",
-    "measuredW": "1250",
-    "measuredH": "2649",
+    "measuredW": "1260",
+    "measuredH": "2659",
     "version": "1.0"
   },
   "groupOffset": {
@@ -5808,5 +5855,5 @@
     "y": 0
   },
   "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/New%20Project%201.bmpr"
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
 }
