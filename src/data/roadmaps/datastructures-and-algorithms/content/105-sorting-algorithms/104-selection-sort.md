@@ -21,9 +21,6 @@ private static void selSort(int[] arr, int n) {
         for (int i : arr) {
             System.out.print(i + " ");
         }
-
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'selSort'");
     }
 ```
 
