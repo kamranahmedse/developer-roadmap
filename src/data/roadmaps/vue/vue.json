@@ -2001,11 +2001,11 @@
           "ID": "4750",
           "typeID": "__group__",
           "zOrder": "61",
-          "measuredW": "216",
+          "measuredW": "225",
           "measuredH": "44",
-          "w": "216",
+          "w": "225",
           "h": "44",
-          "x": "211",
+          "x": "202",
           "y": "350",
           "properties": {
             "controlName": "100-fundamental-topics:components:single-file-components"
@@ -2017,7 +2017,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "216",
+                  "w": "225",
                   "h": "44",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -2033,7 +2033,7 @@
                   "zOrder": "1",
                   "measuredW": "183",
                   "measuredH": "25",
-                  "x": "16",
+                  "x": "21",
                   "y": "10",
                   "properties": {
                     "size": "17",
@@ -2048,11 +2048,11 @@
           "ID": "4751",
           "typeID": "__group__",
           "zOrder": "62",
-          "measuredW": "216",
+          "measuredW": "226",
           "measuredH": "44",
-          "w": "216",
+          "w": "226",
           "h": "44",
-          "x": "211",
+          "x": "201",
           "y": "400",
           "properties": {
             "controlName": "101-fundamental-topics:components:component-registration"
@@ -2064,7 +2064,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "216",
+                  "w": "226",
                   "h": "44",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -2080,7 +2080,7 @@
                   "zOrder": "1",
                   "measuredW": "188",
                   "measuredH": "25",
-                  "x": "14",
+                  "x": "19",
                   "y": "10",
                   "properties": {
                     "size": "17",
@@ -3009,11 +3009,11 @@
           "ID": "4773",
           "typeID": "__group__",
           "zOrder": "83",
-          "measuredW": "104",
+          "measuredW": "67",
           "measuredH": "44",
-          "w": "104",
+          "w": "67",
           "h": "44",
-          "x": "211",
+          "x": "201",
           "y": "451",
           "properties": {
             "controlName": "102-fundamental-topics:components:props"
@@ -3025,7 +3025,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "104",
+                  "w": "67",
                   "h": "44",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -3041,7 +3041,7 @@
                   "zOrder": "1",
                   "measuredW": "45",
                   "measuredH": "25",
-                  "x": "29",
+                  "x": "11",
                   "y": "9",
                   "properties": {
                     "size": "17",
@@ -3056,12 +3056,12 @@
           "ID": "4774",
           "typeID": "__group__",
           "zOrder": "84",
-          "measuredW": "104",
+          "measuredW": "73",
           "measuredH": "44",
-          "w": "104",
+          "w": "73",
           "h": "44",
-          "x": "323",
-          "y": "450",
+          "x": "272",
+          "y": "451",
           "properties": {
             "controlName": "103-fundamental-topics:components:events"
           },
@@ -3072,7 +3072,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "104",
+                  "w": "73",
                   "h": "44",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -3088,7 +3088,7 @@
                   "zOrder": "1",
                   "measuredW": "53",
                   "measuredH": "25",
-                  "x": "25",
+                  "x": "10",
                   "y": "10",
                   "properties": {
                     "size": "17",
@@ -3103,11 +3103,11 @@
           "ID": "4775",
           "typeID": "__group__",
           "zOrder": "85",
-          "measuredW": "216",
+          "measuredW": "225",
           "measuredH": "44",
-          "w": "216",
+          "w": "225",
           "h": "44",
-          "x": "211",
+          "x": "202",
           "y": "500",
           "properties": {
             "controlName": "104-fundamental-topics:components:attribute-inheritance"
@@ -3119,7 +3119,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "216",
+                  "w": "225",
                   "h": "44",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -3135,7 +3135,7 @@
                   "zOrder": "1",
                   "measuredW": "158",
                   "measuredH": "25",
-                  "x": "29",
+                  "x": "34",
                   "y": "10",
                   "properties": {
                     "size": "17",
@@ -5464,6 +5464,53 @@
             "p2": {
               "x": 0,
               "y": 0
+            }
+          }
+        },
+        {
+          "ID": "4830",
+          "typeID": "__group__",
+          "zOrder": "138",
+          "measuredW": "78",
+          "measuredH": "44",
+          "w": "78",
+          "h": "44",
+          "x": "349",
+          "y": "451",
+          "properties": {
+            "controlName": "105-fundamental-topics:components:v-model"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "78",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "62",
+                  "measuredH": "25",
+                  "x": "8",
+                  "y": "10",
+                  "properties": {
+                    "size": "17",
+                    "text": "v-model"
+                  }
+                }
+              ]
             }
           }
         }
