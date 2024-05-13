@@ -46,6 +46,7 @@ function handleGuest() {
     '/team/roadmaps',
     '/team/new',
     '/team/members',
+    '/team/member',
     '/team/settings',
   ];
 
