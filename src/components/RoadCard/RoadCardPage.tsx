@@ -9,6 +9,8 @@ import { SelectionButton } from './SelectionButton';
 import { StepCounter } from './StepCounter';
 import { Editor } from './Editor';
 import { CopyIcon } from 'lucide-react';
+import { httpPatch } from '../../lib/http';
+import { useToast } from '../../hooks/use-toast';
 
 type StepLabelProps = {
   label: string;
@@ -24,11 +26,28 @@ function StepLabel(props: StepLabelProps) {
 }
 
 export function RoadCardPage() {
+  const user = useAuth();
+  const toast = useToast();
+
   const { isCopied, copyText } = useCopyText();
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [version, setVersion] = useState<'tall' | 'wide'>('tall');
   const [variant, setVariant] = useState<'dark' | 'light'>('dark');
-  const user = useAuth();
+
+  const markRoadCardDone = async () => {
+    const { error } = await httpPatch(
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-onboarding-config`,
+      {
+        id: 'roadCard',
+        status: 'done',
+      },
+    );
+
+    if (error) {
+      toast.error(error?.message || 'Something went wrong');
+    }
+  };
+
   if (!user) {
     return null;
   }
@@ -131,20 +150,24 @@ export function RoadCardPage() {
           <div className="mt-3 grid grid-cols-2 gap-2">
             <button
               className="flex items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium"
-              onClick={() =>
+              onClick={() => {
                 downloadImage({
                   url: badgeUrl.toString(),
                   name: 'road-card',
                   scale: 4,
-                })
-              }
+                });
+                markRoadCardDone();
+              }}
             >
               Download
             </button>
             <button
               disabled={isCopied}
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
-              onClick={() => copyText(badgeUrl.toString())}
+              onClick={() => {
+                copyText(badgeUrl.toString());
+                markRoadCardDone();
+              }}
             >
               <CopyIcon size={16} className="mr-1 inline-block h-4 w-4" />
 
@@ -156,11 +179,13 @@ export function RoadCardPage() {
             <Editor
               title={'HTML'}
               text={`<a href="https://roadmap.sh"><img src="${badgeUrl}" alt="roadmap.sh"/></a>`.trim()}
+              onCopy={() => markRoadCardDone()}
             />
 
             <Editor
               title={'Markdown'}
               text={`[![roadmap.sh](${badgeUrl})](https://roadmap.sh)`.trim()}
+              onCopy={() => markRoadCardDone()}
             />
           </div>
 
