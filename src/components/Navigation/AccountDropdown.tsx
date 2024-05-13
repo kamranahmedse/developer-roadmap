@@ -9,6 +9,7 @@ import { OnboardingModal } from './OnboardingModal.tsx';
 import { httpGet } from '../../lib/http.ts';
 import { useToast } from '../../hooks/use-toast.ts';
 import type { UserDocument } from '../../api/user.ts';
+import { NotificationIndicator } from './NotificationIndicator.tsx';
 
 export type OnboardingConfig = Pick<
   UserDocument,
@@ -123,9 +124,7 @@ export function AccountDropdown() {
           Account&nbsp;<span className="text-gray-300">/</span>&nbsp;Teams
         </span>
         <ChevronDown className="h-4 w-4 shrink-0 stroke-[2.5px]" />
-        {shouldShowOnboardingStatus && (
-          <span className="absolute -top-1.5 right-1 h-3 w-3 rounded-full border border-slate-900 bg-green-500 before:absolute before:inset-0 before:-z-0 before:h-full before:w-full before:animate-ping before:rounded-full before:bg-green-400 before:content-['']" />
-        )}
+        {shouldShowOnboardingStatus && !showDropdown && <NotificationIndicator />}
       </button>
 
       {showDropdown && (
