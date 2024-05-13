@@ -20,7 +20,7 @@
     "best-practice-dirs": "node scripts/best-practice-dirs.cjs",
     "best-practice-content": "node scripts/best-practice-content.cjs",
     "generate:og": "node ./scripts/generate-og-images.mjs",
-    "warm:og": "sh ./scripts/warm-og.sh https://roadmap.sh/sitemap-0.xml",
+    "warm:urls": "sh ./scripts/warm-urls.sh https://roadmap.sh/sitemap-0.xml",
     "compress:images": "tsx ./scripts/compress-images.ts",
     "test:e2e": "playwright test"
   },

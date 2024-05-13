@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Usage: warm-og.sh <sitemap-url>
-# Example: warm-og.sh https://www.example.com/sitemap.xml
+# Usage: warm-urls.sh <sitemap-url>
+# Example: warm-urls.sh https://www.example.com/sitemap.xml
 
 # Check if sitemap url is provided
 if [ -z "$1" ]; then
@@ -19,9 +19,15 @@ for url in $urls; do
   # Fetch the og:image URL from the meta tags
   og_image_url=$(curl -s "$url" | grep -o "<meta property=\"og:image\" content=\"[^\"]*\"" | sed 's#<meta property="og:image" content="\([^"]*\)"#\1#')
 
+  # warm the URL
+  echo "Warming up URL: $url"
+  if ! curl -s -I "$url" > /dev/null; then
+    failed_urls+=("$url")
+  fi
+
   # Warm up the og:image URL
   if [ -n "$og_image_url" ]; then
-    echo "Warming up $og_image_url"
+    echo "Warming up OG: $og_image_url"
     if ! curl -s -I "$og_image_url" > /dev/null; then
       failed_urls+=("$og_image_url")
     fi
