@@ -22,7 +22,7 @@ Web development is typically divided into two main categories: [backend developm
 
 Two of the key components when it comes to backend development are the programming language that you are going to code in and the database. In this article, we will be looking into a subset of programming languages that could be used for backend development. We will be discussing the pros and cons of each and the community to help you pick the best programming language for backend development.
 
-Diving straight in, I'll cover the top 5 backend programming languages that you should to learn if you’re looking to broaden your horizons in the server-side world.
+Diving straight in, I will cover the top 5 backend programming languages that you should to learn if you’re looking to broaden your horizons in the server-side world.
 
 ## Top 5 Backend Languages to Learn for Web Development
 
