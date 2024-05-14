@@ -46,12 +46,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
 
   if (!roadmapData || isLoading) {
     return (
-      <div
-        className="flex w-full justify-center"
-        style={{
-          ...(dimensions || {}),
-        }}
-      >
+      <div className="flex w-full justify-center">
         <Spinner
           innerFill="#2563eb"
           outerFill="#E5E7EB"
@@ -62,13 +57,9 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
   }
 
   return (
-    <div
-      style={{
-        ...(dimensions || {}),
-      }}
-    >
+    <>
       <EditorRoadmapRenderer {...roadmapData} resourceId={resourceId} />
       <ProgressNudge resourceId={resourceId} resourceType={resourceType} />
-    </div>
+    </>
   );
 }
