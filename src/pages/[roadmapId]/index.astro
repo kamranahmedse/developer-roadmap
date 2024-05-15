@@ -118,7 +118,7 @@ const ogImageUrl =
             <EditorRoadmap
               resourceId={roadmapId}
               resourceType='roadmap'
-              dimensions={roadmapData.dimensions}
+              dimensions={roadmapData.dimensions!}
               client:load
             />
           ) : (
@@ -141,7 +141,7 @@ const ogImageUrl =
 
     {
       roadmapId === 'docker' && (
-        <p class='mb-8 sm:mb-12 px-5 text-center text-xs text-gray-400'>
+        <p class='mb-8 px-5 text-center text-xs text-gray-400 sm:mb-12'>
           Roadmap owner Insight Partners is an investor in Docker.
         </p>
       )

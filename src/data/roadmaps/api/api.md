@@ -9,8 +9,8 @@ description: 'Step by step guide to becoming an API Design Developer in 2024'
 isNew: false
 hasTopics: true
 dimensions:
-  width: 1614
-  height: 3456
+  width: 1040
+  height: 968
 schema:
   headline: 'ASP.NET Core Developer Roadmap'
   description: 'Learn how to become a ASP.NET Core Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

@@ -17,6 +17,10 @@ export type RoadmapRendererProps = {
   resourceId: string;
   nodes: Node[];
   edges: Edge[];
+  dimensions: {
+    width: number;
+    height: number;
+  };
 };
 
 type RoadmapNodeDetails = {
@@ -165,6 +169,7 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       ref={roadmapRef}
       roadmap={{ nodes, edges }}
       onRendered={() => {
+        roadmapRef.current?.setAttribute('data-renderer', 'editor');
         renderResourceProgress('roadmap', resourceId).finally();
       }}
     />
