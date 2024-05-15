@@ -9,7 +9,9 @@ First of all thank you for considering to contribute. Please look at the details
 
 ## New Roadmaps
 
-For new roadmaps, submit a roadmap by providing [a textual roadmap similar to this roadmap](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5) in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
+For new roadmaps, you can either:
+- Submit a roadmap by providing [a textual roadmap similar to this roadmap](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5) in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
+- Create an interactive roadmap yourself using the [draw](https://draw.roadmap.sh/) feature & submit the link to that roadmap in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
 
 ## Existing Roadmaps
 
