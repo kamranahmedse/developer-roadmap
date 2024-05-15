@@ -11,6 +11,7 @@ import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Edge, Node } from 'reactflow';
 import { Renderer } from '../../../editor/renderer';
+import { slugify } from '../../lib/slugger';
 
 export type RoadmapRendererProps = {
   resourceId: string;
@@ -22,6 +23,7 @@ type RoadmapNodeDetails = {
   nodeId: string;
   nodeType: string;
   targetGroup: SVGElement;
+  title: string;
 };
 
 function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
@@ -29,11 +31,12 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
 
   const nodeId = targetGroup?.dataset?.nodeId;
   const nodeType = targetGroup?.dataset?.type;
-  if (!nodeId || !nodeType) {
+  const title = targetGroup?.dataset?.title;
+  if (!nodeId || !nodeType || !title) {
     return null;
   }
 
-  return { nodeId, nodeType, targetGroup };
+  return { nodeId, nodeType, targetGroup, title };
 }
 
 const allowedNodeTypes = ['topic', 'subtopic', 'button'];
@@ -74,8 +77,14 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
 
   const handleSvgClick = useCallback((e: MouseEvent) => {
     const target = e.target as SVGElement;
-    const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) {
+    const { nodeId, nodeType, targetGroup, title } =
+      getNodeDetails(target) || {};
+    if (
+      !nodeId ||
+      !nodeType ||
+      !allowedNodeTypes.includes(nodeType) ||
+      !title
+    ) {
       return;
     }
 
@@ -106,10 +115,11 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
+    const detailsPattern = `${slugify(title)}@${nodeId}`;
     window.dispatchEvent(
       new CustomEvent('roadmap.node.click', {
         detail: {
-          topicId: nodeId,
+          topicId: detailsPattern,
           resourceId,
           resourceType: 'roadmap',
         },
