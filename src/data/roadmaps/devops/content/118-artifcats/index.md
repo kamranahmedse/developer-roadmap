@@ -1,1 +1,1 @@
-# Artifcats
+# Artifacts
