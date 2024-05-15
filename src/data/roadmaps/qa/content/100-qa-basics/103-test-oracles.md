@@ -5,3 +5,4 @@ A test oracle is a mechanism; different from the program itself that can be used
 Visit the following resources to learn more:
 
 - [What are Test Oracles](https://ecomputernotes.com/software-engineering/what-are-test-oracles)
+- [Test Oracle in Software Testing] (https://www.youtube.com/watch?v=DR22zNNetp0&t=1s)
