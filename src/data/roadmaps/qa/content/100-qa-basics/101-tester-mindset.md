@@ -14,4 +14,4 @@ Visit the following resources to learn more:
 
 - [The Software Tester’s Mindset](https://softwaretester.careers/the-software-testers-mindset/)
 - [How to Think Like a Tester](https://medium.com/@blakenorrish/how-to-think-like-a-tester-7a174ff6aeaf)
-- Read ISTQB® Foundation Level Syllabus 2018 (1.5.2 Tester’s and Developer’s Mindsets)
+- [ISTQB® Foundation Level Syllabus 2018](https://www.turkishtestingboard.org/files/FL-Syllabus-2018-GA.pdf)
