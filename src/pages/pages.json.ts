@@ -22,6 +22,7 @@ export async function GET() {
         metadata: {
           tags: roadmap.frontmatter.tags,
         },
+        renderer: roadmap?.frontmatter?.renderer || 'balsamiq',
       })),
       ...bestPractices.map((bestPractice) => ({
         id: bestPractice.id,

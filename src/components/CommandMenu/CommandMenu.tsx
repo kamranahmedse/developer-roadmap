@@ -18,6 +18,7 @@ import { GuideIcon } from '../ReactIcons/GuideIcon.tsx';
 import { HomeIcon } from '../ReactIcons/HomeIcon.tsx';
 import { VideoIcon } from '../ReactIcons/VideoIcon.tsx';
 import { cn } from '../../lib/classname.ts';
+import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
 
 export type PageType = {
   id: string;
@@ -27,6 +28,7 @@ export type PageType = {
   icon?: ReactElement;
   isProtected?: boolean;
   metadata?: Record<string, any>;
+  renderer?: AllowedRoadmapRenderer;
 };
 
 const defaultPages: PageType[] = [

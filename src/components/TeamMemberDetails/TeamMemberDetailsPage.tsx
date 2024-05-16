@@ -15,6 +15,7 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { MemberProgressModal } from '../TeamProgress/MemberProgressModal';
 import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../../stores/team';
+import { MemberCustomProgressModal } from '../TeamProgress/MemberCustomProgressModal';
 
 type GetTeamMemberProgressesResponse = TeamMemberDocument & {
   name: string;
@@ -99,10 +100,15 @@ export function TeamMemberDetailsPage() {
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${memberProgress?.avatar}`
     : '/images/default-avatar.png';
 
+  const ProgressModal =
+    selectedResource && !selectedResource.isCustomResource
+      ? MemberProgressModal
+      : MemberCustomProgressModal;
+
   return (
     <>
       {selectedResource && (
-        <MemberProgressModal
+        <ProgressModal
           teamId={teamId}
           member={{
             ...memberProgress,
@@ -183,7 +189,11 @@ export function TeamMemberDetailsPage() {
               memberActivity?.data?.flatMap((act) => act.activity) || []
             }
             onResourceClick={(resourceId, resourceType, isCustomResource) => {
-              setSelectedResource({ resourceId, resourceType, isCustomResource });
+              setSelectedResource({
+                resourceId,
+                resourceType,
+                isCustomResource,
+              });
             }}
           />
           <Pagination

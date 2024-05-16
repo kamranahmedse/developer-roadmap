@@ -147,6 +147,7 @@ export function TeamRoadmaps() {
     toast.loading('Adding roadmap');
     pageProgressMessage.set('Adding roadmap');
     setIsLoading(true);
+    const roadmap = allRoadmaps.find((r) => r.id === roadmapId);
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${
         import.meta.env.PUBLIC_API_URL
@@ -156,6 +157,7 @@ export function TeamRoadmaps() {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
+        renderer: roadmap?.renderer || 'balsamiq',
       },
     );
 
