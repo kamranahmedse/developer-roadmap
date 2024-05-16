@@ -6,7 +6,7 @@ excludedBySlug: '/full-stack/vs-software-engineer'
 seo:
   title: 'Full Stack Developer or Software Engineer – Which Way to Go?'
   description: 'Unsure about your dev career path? Compare full stack developer and software engineer roles to make an informed decision.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/full-stack-developer-vs-software-engineer-et7gi.png'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/full-stack-developer-vs-software-engineer-yy0dk.jpg'
 isNew: true
 type: 'textual'
 date: 2024-05-02
