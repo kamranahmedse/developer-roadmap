@@ -229,12 +229,12 @@ const groups: GroupType[] = [
       {
         title: 'React Native',
         link: '/react-native',
-        type: 'role',
+        type: 'skill',
       },
       {
         title: 'Flutter',
         link: '/flutter',
-        type: 'role',
+        type: 'skill',
       },
     ],
   },
