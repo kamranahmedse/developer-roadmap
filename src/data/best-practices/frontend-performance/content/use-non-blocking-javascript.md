@@ -16,4 +16,3 @@ JavaScript blocks the normal parsing of the HTML document, so when the parser re
 - If you have small scripts, maybe use inline script place above async scripts.
 
 - [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/v5/get-started)
-- [Defer loading JavaScript](https://varvy.com/pagespeed/defer-loading-javascript.html)
