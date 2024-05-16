@@ -221,11 +221,14 @@ export function TeamRoadmaps() {
     />
   );
 
+  const filteredAllRoadmaps = allRoadmaps.filter(
+    (r) => !teamResources.find((c) => c?.defaultRoadmapId === r.id),
+  );
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
       teamResourceConfig={teamResources}
-      allRoadmaps={allRoadmaps}
+      allRoadmaps={filteredAllRoadmaps}
       teamId={teamId}
       onRoadmapAdd={(roadmapId: string) => {
         onAdd(roadmapId).finally(() => {

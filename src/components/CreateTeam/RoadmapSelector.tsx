@@ -24,6 +24,7 @@ export type TeamResourceConfig = {
   topics?: number;
   sharedTeamMemberIds: string[];
   sharedFriendIds: string[];
+  defaultRoadmapId?: string;
 }[];
 
 type RoadmapSelectorProps = {
