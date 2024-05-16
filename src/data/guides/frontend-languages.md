@@ -6,7 +6,7 @@ excludedBySlug: '/frontend/languages'
 seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-1axiy.png'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-exm6g.jpg'
 isNew: true
 type: 'textual'
 date: 2024-05-02
