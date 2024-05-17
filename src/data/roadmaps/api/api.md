@@ -2,11 +2,12 @@
 jsonUrl: '/jsons/roadmaps/aspnet-core.json'
 pdfUrl: '/pdfs/roadmaps/aspnet-core.pdf'
 order: 9
+isForkable: false
 briefTitle: 'API Design'
 briefDescription: 'Step by step guide to learn how to design and build robust APIs.'
 title: 'API Design Roadmap'
 description: 'Step by step guide to learn how to design and build robust APIs.'
-isNew: false
+isNew: true
 hasTopics: true
 dimensions:
   width: 968
