@@ -27,7 +27,7 @@ type RoadmapNodeDetails = {
   nodeId: string;
   nodeType: string;
   targetGroup: SVGElement;
-  title: string;
+  title?: string;
 };
 
 function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
@@ -36,7 +36,7 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   const nodeId = targetGroup?.dataset?.nodeId;
   const nodeType = targetGroup?.dataset?.type;
   const title = targetGroup?.dataset?.title;
-  if (!nodeId || !nodeType || !title) {
+  if (!nodeId || !nodeType) {
     return null;
   }
 
@@ -83,12 +83,8 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup, title } =
       getNodeDetails(target) || {};
-    if (
-      !nodeId ||
-      !nodeType ||
-      !allowedNodeTypes.includes(nodeType) ||
-      !title
-    ) {
+
+    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) {
       return;
     }
 
@@ -119,6 +115,9 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
+    if (!title) {
+      return;
+    }
     const detailsPattern = `${slugify(title)}@${nodeId}`;
     window.dispatchEvent(
       new CustomEvent('roadmap.node.click', {
