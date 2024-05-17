@@ -19,8 +19,8 @@ schema:
   datePublished: '2023-05-17'
   dateModified: '2023-05-17'
 seo:
-  title: 'API Design'
-  description: 'Step by step guide to learn how to design and build robust APIs in 2024.'
+  title: 'API Design Roadmap'
+  description: 'Learn how to design and develop robust APIs with this community-driven API Design roadmap. It lists all the essential skills and tools you need to develop APIs.'
   keywords:
     - 'guide to becoming a api designer'
     - 'guide to becoming an api engineer'
