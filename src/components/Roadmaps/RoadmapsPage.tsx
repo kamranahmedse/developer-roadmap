@@ -79,7 +79,7 @@ const groups: GroupType[] = [
       },
       {
         title: 'API Design',
-        link: '/api',
+        link: '/api-design',
         type: 'role',
         otherGroups: ['Web Development'],
       },
