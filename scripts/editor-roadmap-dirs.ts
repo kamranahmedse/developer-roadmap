@@ -73,18 +73,12 @@ const roadmapContentFiles = await fs.readdir(roadmapContentDir, {
 });
 
 nodes.forEach(async (node, index) => {
-  // CONTENT DIR STRUCTURE
-  // roadmapId/content/{100+index}-{slugified-label}@{nodeId}/index.md
-  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}/index.md`;
+  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}.md`;
   if (roadmapContentFiles.includes(nodeDirPattern)) {
     console.log(`Skipping ${nodeDirPattern}`);
     return;
   }
 
-  await fs.mkdir(
-    path.join(roadmapContentDir, nodeDirPattern.replace('/index.md', '')),
-    {},
-  );
   await fs.writeFile(
     path.join(roadmapContentDir, nodeDirPattern),
     `# ${node.data.label}`,
