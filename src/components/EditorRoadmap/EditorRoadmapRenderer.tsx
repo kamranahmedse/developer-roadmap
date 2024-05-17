@@ -43,7 +43,7 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   return { nodeId, nodeType, targetGroup, title };
 }
 
-const allowedNodeTypes = ['topic', 'subtopic', 'button'];
+const allowedNodeTypes = ['topic', 'subtopic', 'button', 'link-item'];
 
 export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
   const { resourceId, nodes = [], edges = [] } = props;
@@ -88,7 +88,7 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
-    if (nodeType === 'button') {
+    if (nodeType === 'button' || nodeType === 'link-item') {
       const link = targetGroup?.dataset?.link || '';
       const isExternalLink = link.startsWith('http');
       if (isExternalLink) {
