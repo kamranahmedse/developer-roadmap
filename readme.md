@@ -36,6 +36,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
 - [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
+- [API Design Roadmap](https://roadmap.sh/api-design)
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
