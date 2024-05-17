@@ -109,6 +109,7 @@ Clone the repository, install the dependencies and start the application
 
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git
+cd developer-roadmap
 npm install
 npm run dev
 ```
