@@ -168,6 +168,9 @@ export function TeamRoadmaps() {
 
     setTeamResources(response);
     toast.success('Roadmap added');
+    if (roadmap?.renderer === 'editor') {
+      setIsAddingRoadmap(false);
+    }
   }
 
   async function onRemove(resourceId: string) {

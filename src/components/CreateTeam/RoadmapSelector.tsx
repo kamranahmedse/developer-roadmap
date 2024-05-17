@@ -107,6 +107,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     pageProgressMessage.set(`Adding roadmap to team`);
+    const renderer = allRoadmaps.find((r) => r.id === roadmapId)?.renderer;
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${
         import.meta.env.PUBLIC_API_URL
@@ -116,6 +117,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
+        renderer: renderer || 'balsamiq',
       },
     );
 
@@ -125,6 +127,9 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     setTeamResources(response);
+    if (renderer === 'editor') {
+      setShowSelectRoadmapModal(false);
+    }
   }
 
   useEffect(() => {
