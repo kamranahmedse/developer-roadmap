@@ -47,17 +47,28 @@ if (roadmapFrontmatter.renderer !== 'editor') {
   process.exit(1);
 }
 
+console.log(`Launching chromium`);
 const browser = await playwright.chromium.launch();
 const context = await browser.newContext();
 const page = await context.newPage();
 
-const pageUrl = `http://localhost:3000/${roadmapId}/pdf`;
+const pageUrl = `http://localhost:3000/${roadmapId}/svg`;
+console.log(`Opening page ${pageUrl}`);
 await page.goto(pageUrl);
 await page.waitForSelector('#resource-svg-wrap');
+console.log(`Generating PDF ${pageUrl}`);
 await page.pdf({
   path: `./public/pdfs/roadmaps/${roadmapId}.pdf`,
   margin: { top: 0, right: 0, bottom: 0, left: 0 },
   height: roadmapFrontmatter?.dimensions?.height || 2000,
   width: roadmapFrontmatter?.dimensions?.width || 968,
 });
+
+console.log(`Generating png ${pageUrl}`);
+await page.locator('#resource-svg-wrap>svg').screenshot({
+  path: `./public/roadmaps/${roadmapId}.png`,
+  type: 'png',
+  scale: 'device',
+});
+
 await browser.close();

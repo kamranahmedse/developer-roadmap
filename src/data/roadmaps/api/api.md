@@ -1,6 +1,6 @@
 ---
-jsonUrl: '/jsons/roadmaps/aspnet-core.json'
-pdfUrl: '/pdfs/roadmaps/aspnet-core.pdf'
+jsonUrl: '/jsons/roadmaps/api.json'
+pdfUrl: '/pdfs/roadmaps/api.pdf'
 order: 9
 isForkable: false
 briefTitle: 'API Design'
@@ -15,7 +15,7 @@ dimensions:
 schema:
   headline: 'API Design Roadmap'
   description: 'Step by step guide to learn how to design and build robust APIs.'
-  imageUrl: 'https://roadmap.sh/roadmaps/aspnet-core.png'
+  imageUrl: 'https://roadmap.sh/roadmaps/api.png'
   datePublished: '2023-05-17'
   dateModified: '2023-05-17'
 seo:
