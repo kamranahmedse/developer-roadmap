@@ -9,8 +9,8 @@ description: 'Step by step guide to learn how to design and build robust APIs.'
 isNew: false
 hasTopics: true
 dimensions:
-  width: 1040
-  height: 2470
+  width: 968
+  height: 2317.91
 schema:
   headline: 'API Design Roadmap'
   description: 'Step by step guide to learn how to design and build robust APIs.'
