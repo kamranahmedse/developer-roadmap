@@ -64,6 +64,7 @@ await page.pdf({
   width: roadmapFrontmatter?.dimensions?.width || 968,
 });
 
+// @todo generate png from the pdf
 console.log(`Generating png ${pageUrl}`);
 await page.locator('#resource-svg-wrap>svg').screenshot({
   path: `./public/roadmaps/${roadmapId}.png`,
