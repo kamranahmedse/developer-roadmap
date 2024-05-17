@@ -92,7 +92,7 @@ export function OnboardingModal(props: OnboardingModalProps) {
         title: 'Invite your Team',
         description: 'Invite your team to collaborate on roadmaps',
         status: onboardingConfig?.onboarding?.inviteTeam || 'pending',
-        url: '/team',
+        url: '/team/new',
         urlText: 'Create Team',
       },
     ];
