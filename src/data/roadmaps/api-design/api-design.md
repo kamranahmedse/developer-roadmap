@@ -1,6 +1,6 @@
 ---
-jsonUrl: '/jsons/roadmaps/api.json'
-pdfUrl: '/pdfs/roadmaps/api.pdf'
+jsonUrl: '/jsons/roadmaps/api-design.json'
+pdfUrl: '/pdfs/roadmaps/api-design.pdf'
 order: 9
 isForkable: false
 briefTitle: 'API Design'
@@ -15,7 +15,7 @@ dimensions:
 schema:
   headline: 'API Design'
   description: 'Step by step guide to learn how to design and build robust APIs.'
-  imageUrl: 'https://roadmap.sh/roadmaps/api.png'
+  imageUrl: 'https://roadmap.sh/roadmaps/api-design.png'
   datePublished: '2023-05-17'
   dateModified: '2023-05-17'
 seo:
