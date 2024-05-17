@@ -189,10 +189,10 @@ export function TeamActivityPage() {
             Team Activity
           </h3>
           <ul className="mb-4 mt-2 flex flex-col gap-3">
-            {usersWithActivities.map((user) => {
+            {usersWithActivities.map((user, index) => {
               return (
                 <TeamActivityItem
-                  key={user._id}
+                  key={`${user._id}-${index}`}
                   user={user}
                   teamId={teamId}
                   onTopicClick={setSelectedActivity}

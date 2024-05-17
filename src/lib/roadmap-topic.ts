@@ -7,12 +7,18 @@ import type { RoadmapFrontmatter } from './roadmap';
 // -> /src/data/roadmaps/vue/content/102-ecosystem
 //    /vue/ecosystem
 function generateTopicUrl(filePath: string) {
-  return filePath
+  let result = filePath
     .replace('/src/data/roadmaps/', '/') // Remove the base `/src/data/roadmaps` from path
-    .replace('/content', '') // Remove the `/[roadmapId]/content`
-    .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
+    .replace('/content', ''); // Remove the `/[roadmapId]/content`
+
+  if (result.match(/\/\d+-/g)) {
+    result = result.replace(/\/\d+-/g, '/'); // Remove ordering info `/101-ecosystem`
+  }
+  result = result
     .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
     .replace(/\.md$/, ''); // Remove `.md` from the end of file
+
+  return result;
 }
 
 export interface RoadmapTopicFileType {
@@ -34,7 +40,7 @@ export async function getRoadmapTopicFiles(): Promise<
     '/src/data/roadmaps/*/content/**/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const mapping: Record<string, RoadmapTopicFileType> = {};

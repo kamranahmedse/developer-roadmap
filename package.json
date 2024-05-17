@@ -15,6 +15,9 @@
     "upgrade": "ncu -u",
     "roadmap-links": "node scripts/roadmap-links.cjs",
     "roadmap-dirs": "node scripts/roadmap-dirs.cjs",
+    "roadmap-assets": "tsx scripts/editor-roadmap-assets.ts",
+    "editor-roadmap-dirs": "tsx scripts/editor-roadmap-dirs.ts",
+    "editor-roadmap-content": "tsx scripts/editor-roadmap-content.ts",
     "roadmap-content": "node scripts/roadmap-content.cjs",
     "generate-renderer": "sh scripts/generate-renderer.sh",
     "best-practice-dirs": "node scripts/best-practice-dirs.cjs",
@@ -35,7 +38,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.8.3",
+    "astro": "^4.8.5",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
     "dom-to-image": "^2.6.0",
@@ -50,6 +53,7 @@
     "nanostores": "^0.10.3",
     "node-html-parser": "^6.1.13",
     "npm-check-updates": "^16.14.20",
+    "playwright": "^1.44.0",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-calendar-heatmap": "^1.9.0",
@@ -62,7 +66,7 @@
     "roadmap-renderer": "^1.0.6",
     "satori": "^0.10.13",
     "satori-html": "^0.3.2",
-    "sharp": "^0.33.3",
+    "sharp": "^0.33.4",
     "slugify": "^1.6.6",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.3",
@@ -80,10 +84,10 @@
     "gh-pages": "^6.1.1",
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
-    "openai": "^4.45.0",
+    "openai": "^4.47.1",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tsx": "^4.10.2"
+    "tsx": "^4.10.4"
   }
 }

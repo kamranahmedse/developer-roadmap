@@ -1,4 +1,5 @@
 ---
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
 import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
@@ -113,11 +114,20 @@ const ogImageUrl =
             canSubmitContribution={true}
           />
 
-          <FrameRenderer
-            resourceType={'roadmap'}
-            resourceId={roadmapId}
-            dimensions={roadmapData.dimensions}
-          />
+          {roadmapData?.renderer === 'editor' ? (
+            <EditorRoadmap
+              resourceId={roadmapId}
+              resourceType='roadmap'
+              dimensions={roadmapData.dimensions!}
+              client:load
+            />
+          ) : (
+            <FrameRenderer
+              resourceType={'roadmap'}
+              resourceId={roadmapId}
+              dimensions={roadmapData.dimensions}
+            />
+          )}
         </div>
       )
     }
@@ -126,12 +136,13 @@ const ogImageUrl =
     <UserProgressModal
       resourceId={roadmapId}
       resourceType='roadmap'
+      renderer={roadmapData?.renderer}
       client:only='react'
     />
 
     {
       roadmapId === 'docker' && (
-        <p class='mb-8 sm:mb-12 px-5 text-center text-xs text-gray-400'>
+        <p class='mb-8 px-5 text-center text-xs text-gray-400 sm:mb-12'>
           Roadmap owner Insight Partners is an investor in Docker.
         </p>
       )

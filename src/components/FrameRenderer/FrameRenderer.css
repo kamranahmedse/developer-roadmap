@@ -52,7 +52,7 @@ svg .done rect {
   fill: #cbcbcb !important;
 }
 
-svg .done rect[stroke="rgb(255,229,153)"] {
+svg .done rect[stroke='rgb(255,229,153)'] {
   stroke: #cbcbcb !important;
 }
 
@@ -133,10 +133,12 @@ svg .removed path {
   }
 }
 
-#customized-roadmap #resource-svg-wrap g:not([class]),
-#customized-roadmap #resource-svg-wrap circle,
-#customized-roadmap #resource-svg-wrap path[stroke='#fff'],
-#customized-roadmap #resource-svg-wrap g[data-group-id$='-note'] {
+#customized-roadmap #resource-svg-wrap:not([data-renderer]) g:not([class]),
+#customized-roadmap #resource-svg-wrap:not([data-renderer]) circle,
+#customized-roadmap #resource-svg-wrap:not([data-renderer]) path[stroke='#fff'],
+#customized-roadmap
+  #resource-svg-wrap:not([data-renderer])
+  g[data-group-id$='-note'] {
   display: none;
 }
 

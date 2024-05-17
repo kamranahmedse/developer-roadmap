@@ -1,0 +1,3 @@
+# Performance Testing in API Design
+
+Performance Testing in API design refers to the practice of evaluating and ensuring that an API operates reliably and efficiently under varying workloads. Properly conducted performance testing can verify an API's speed, response time, reliability, and scalability. As an integral aspect of API design, it checks if API's are effectively meeting expectations for system functionality and demonstrates the potential areas of optimization. Performance testing is essential in maintaining high standards of user experience by preventing unexpected failures, and optimizing API consumer satisfaction.

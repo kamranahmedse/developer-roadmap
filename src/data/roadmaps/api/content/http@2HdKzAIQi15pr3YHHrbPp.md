@@ -1,0 +1,3 @@
+# HTTP in API Design
+
+HTTP, or Hypertext Transfer Protocol, is a fundamental piece of any API design. It is the protocol used for transmitting hypermedia data on the web, such as HTML webpages or JSON from a web API. Understanding HTTP is crucial in API design as it provides the structure for how requests and responses should be constructed and handled. It dictates how endpoints are defined, how data should be transferred, and what status codes should be used to convey specific scenarios. A solid grounding in HTTP principles allows for more robust, efficient and secure API designs.

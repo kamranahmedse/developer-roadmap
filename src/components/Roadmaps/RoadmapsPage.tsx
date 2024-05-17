@@ -78,6 +78,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development', 'Absolute Beginners'],
       },
       {
+        title: 'API Design',
+        link: '/api',
+        type: 'role',
+        otherGroups: ['Web Development'],
+      },
+      {
         title: 'QA',
         link: '/qa',
         type: 'role',

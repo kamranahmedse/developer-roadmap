@@ -28,7 +28,7 @@ import {
   PenSquare,
   Component,
   Waypoints,
-  CheckSquare,
+  CheckSquare, Braces,
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
@@ -159,17 +159,15 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapMultiCard
-        roadmaps={[
-          { title: 'System Design', link: '/system-design' },
-        ]}
-        description='Learn how to design large scale systems and prepare for system design interviews.'
-        secondaryRoadmaps={[
-          {
-            title: 'Design and Architecture',
-            link: '/software-design-architecture',
-          },
-        ]}
-        secondaryDescription='Or learn how to design and architect software systems.'
+      roadmaps={[{ title: 'System Design', link: '/system-design' }]}
+      description='Learn how to design large scale systems and prepare for system design interviews.'
+      secondaryRoadmaps={[
+        {
+          title: 'Design and Architecture',
+          link: '/software-design-architecture',
+        },
+      ]}
+      secondaryDescription='Or learn how to design and architect software systems.'
     />
   </RoleRoadmaps>
 
@@ -216,12 +214,21 @@ import { TipItem } from '../components/GetStarted/TipItem';
     title='Are you a Backend Developer?'
     description='Explore the general backend roadmap or dive into a specific technology like Node.js, Python, Java etc'
   >
-    <RoadmapCard
-      icon={ServerCog}
-      title='Backend'
-      link='/backend'
-      description='Learn all you need to know to become a backend developer.'
-    />
+    <div class='flex flex-col gap-3'>
+      <RoadmapCard
+        icon={ServerCog}
+        title='Backend'
+        link='/backend'
+        description='Learn all you need to know to become a backend developer.'
+      />
+
+      <RoadmapCard
+          icon={Braces}
+          title='APIs'
+          link='/api'
+          description='Learn all you need to know to design robust APIs.'
+      />
+    </div>
 
     <RoadmapMultiCard
       roadmaps={[
