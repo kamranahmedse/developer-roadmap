@@ -77,13 +77,11 @@ const enrichedNodes = nodes
       edges.find((edge) => edge.target === node.id)?.source || '';
     const parentNode = nodes.find((n) => n.id === parentNodeId);
 
-    const newNode = {
+    return {
       ...node,
       parentId: parentNodeId,
       parentTitle: parentNode?.data?.label || '',
     };
-
-    return newNode;
   }) as (Node & { parentId?: string; parentTitle?: string })[];
 
 const roadmapContentDir = path.join(ROADMAP_CONTENT_DIR, roadmapId, 'content');
@@ -109,9 +107,6 @@ function writeTopicContent(
 # (Put a heading for the topic without adding parent "Subtopic in Topic" or "Topic in Roadmap" etc.)
 
 (Write me a brief introduction for the topic with regards to "${roadmapTitle}")
-
-(add any code snippets ONLY if necessary and makes sense)
-
 `;
 
   if (!parentTopic) {
@@ -143,7 +138,7 @@ function writeTopicContent(
 }
 
 async function writeNodeContent(node: Node & { parentTitle?: string }) {
-  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}/index.md`;
+  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}.md`;
   if (!roadmapContentFiles.includes(nodeDirPattern)) {
     console.log(`Missing file for: ${nodeDirPattern}`);
     return;

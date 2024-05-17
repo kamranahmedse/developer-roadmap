@@ -5,7 +5,7 @@ order: 9
 isForkable: false
 briefTitle: 'API Design'
 briefDescription: 'Step by step guide to learn how to design and build robust APIs.'
-title: 'API Design Roadmap'
+title: 'API Design'
 description: 'Step by step guide to learn how to design and build robust APIs.'
 isNew: true
 hasTopics: true
@@ -13,13 +13,13 @@ dimensions:
   width: 968
   height: 2317.91
 schema:
-  headline: 'API Design Roadmap'
+  headline: 'API Design'
   description: 'Step by step guide to learn how to design and build robust APIs.'
   imageUrl: 'https://roadmap.sh/roadmaps/api.png'
   datePublished: '2023-05-17'
   dateModified: '2023-05-17'
 seo:
-  title: 'API Design Roadmap'
+  title: 'API Design'
   description: 'Step by step guide to learn how to design and build robust APIs in 2024.'
   keywords:
     - 'guide to becoming a api designer'
