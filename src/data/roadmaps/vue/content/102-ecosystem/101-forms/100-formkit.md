@@ -4,5 +4,5 @@ FormKit helps build forms faster by simplifying form structure, generation, vali
 
 Visit the following resources to learn more:
 
-- [Formkit Documentation](https://formkit.dev/)
+- [Formkit Documentation](https://formkit.com/)
 
