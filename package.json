@@ -38,7 +38,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.8.5",
+    "astro": "^4.8.6",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
     "dom-to-image": "^2.6.0",
@@ -88,6 +88,6 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tsx": "^4.10.4"
+    "tsx": "^4.10.5"
   }
 }
