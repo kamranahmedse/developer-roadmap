@@ -10,3 +10,8 @@ An array is a linear data structure that can hold elements and arrange them. It 
 - [Arrays in C++](https://www.youtube.com/watch?v=G38hQKXa_RU&pp=ygUJYXJyYXkgYysr)
 - [Arrays in Rust](https://www.youtube.com/watch?v=cH6Qv47MPwk&pp=ygUKYXJyYXkgcnVzdA%3D%3D)
 - [Arrays in Ruby](https://www.youtube.com/watch?v=SP3Vf2KcYeU&pp=ygUKYXJyYXkgcnVieQ%3D%3D)
+- [Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
+- [Array Data Structure - Coursera](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+- [UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)
+- [Dynamic Arrays - Coursera](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
+- [Jagged Arrays](https://www.youtube.com/watch?v=1jtrQqYpt7g)
