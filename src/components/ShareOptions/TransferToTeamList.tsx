@@ -9,6 +9,7 @@ type TransferToTeamListProps = {
   teams: UserTeamItem[];
   setTeams: (teams: UserTeamItem[]) => void;
 
+  currentTeamId?: string;
   selectedTeamId: string | null;
   setSelectedTeamId: (teamId: string | null) => void;
 
@@ -24,6 +25,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
     selectedTeamId,
     setSelectedTeamId,
     isTeamMembersLoading,
+    currentTeamId,
     setIsTeamMembersLoading,
     onTeamChange,
   } = props;
@@ -38,7 +40,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
     }
 
     const { response, error } = await httpGet<UserTeamItem[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -46,7 +48,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
     }
 
     setTeams(
-      response.filter((team) => ['admin', 'manager'].includes(team.role))
+      response.filter((team) => ['admin', 'manager'].includes(team.role)),
     );
   }
 
@@ -80,13 +82,16 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
         <ul className="mt-2 grid grid-cols-3 gap-1.5">
           {teams.map((team) => {
             const isSelected = team._id === selectedTeamId;
+            if (team._id === currentTeamId) {
+              return null;
+            }
 
             return (
               <li key={team._id}>
                 <button
                   className={cn(
                     'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5 disabled:cursor-not-allowed disabled:opacity-70',
-                    isSelected && 'border-gray-500 bg-gray-100 text-black'
+                    isSelected && 'border-gray-500 bg-gray-100 text-black',
                   )}
                   disabled={isTeamMembersLoading}
                   onClick={() => {

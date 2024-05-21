@@ -53,6 +53,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isTransferringToTeam, setIsTransferringToTeam] = useState(false);
   const [isSettingsUpdated, setIsSettingsUpdated] = useState(false);
   const [friends, setFriends] = useState<ListFriendsResponse>([]);
   const [teams, setTeams] = useState<UserTeamItem[]>([]);
@@ -71,13 +72,12 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   );
   const [selectedTeamId, setSelectedTeamId] = useState<string | null>(null);
 
-  const canTransferRoadmap = visibility === 'team' && !teamId;
   let isUpdateDisabled = false;
   // Disable update button if there are no friends to share with
   if (visibility === 'friends' && sharedFriendIds.length === 0) {
     isUpdateDisabled = true;
     // Disable update button if there are no team to transfer
-  } else if (canTransferRoadmap && !selectedTeamId) {
+  } else if (isTransferringToTeam && !selectedTeamId) {
     isUpdateDisabled = true;
     // Disable update button if there are no members to share with
   } else if (
@@ -198,6 +198,8 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
       </div>
 
       <ShareOptionTabs
+        isTransferringToTeam={isTransferringToTeam}
+        setIsTransferringToTeam={setIsTransferringToTeam}
         visibility={visibility}
         setVisibility={setVisibility}
         teamId={teamId}
@@ -226,48 +228,52 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
       />
 
       <div className="mt-4 flex grow flex-col">
-        {visibility === 'public' && (
-          <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
-            <Globe2 className="mb-3 h-10 w-10 text-gray-300" />
-            <p className="font-medium text-gray-500">
-              Anyone with the link can access.
-            </p>
-          </div>
-        )}
-        {visibility === 'me' && (
-          <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
-            <Lock className="mb-3 h-10 w-10 text-gray-300" />
-            <p className="font-medium text-gray-500">
-              Only you will be able to access.
-            </p>
-          </div>
+        {!isTransferringToTeam && (
+          <>
+            {visibility === 'public' && (
+              <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+                <Globe2 className="mb-3 h-10 w-10 text-gray-300" />
+                <p className="font-medium text-gray-500">
+                  Anyone with the link can access.
+                </p>
+              </div>
+            )}
+            {visibility === 'me' && (
+              <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+                <Lock className="mb-3 h-10 w-10 text-gray-300" />
+                <p className="font-medium text-gray-500">
+                  Only you will be able to access.
+                </p>
+              </div>
+            )}
+            {/* For Personal Roadmap */}
+            {visibility === 'friends' && (
+              <ShareFriendList
+                friends={friends}
+                setFriends={setFriends}
+                sharedFriendIds={sharedFriendIds}
+                setSharedFriendIds={setSharedFriendIds}
+              />
+            )}
+
+            {/* For Team Roadmap */}
+            {visibility === 'team' && teamId && (
+              <ShareTeamMemberList
+                teamId={teamId}
+                sharedTeamMemberIds={sharedTeamMemberIds}
+                setSharedTeamMemberIds={setSharedTeamMemberIds}
+                membersCache={membersCache}
+                isTeamMembersLoading={isTeamMembersLoading}
+                setIsTeamMembersLoading={setIsTeamMembersLoading}
+              />
+            )}
+          </>
         )}
 
-        {/* For Personal Roadmap */}
-        {visibility === 'friends' && (
-          <ShareFriendList
-            friends={friends}
-            setFriends={setFriends}
-            sharedFriendIds={sharedFriendIds}
-            setSharedFriendIds={setSharedFriendIds}
-          />
-        )}
-
-        {/* For Team Roadmap */}
-        {visibility === 'team' && teamId && (
-          <ShareTeamMemberList
-            teamId={teamId}
-            sharedTeamMemberIds={sharedTeamMemberIds}
-            setSharedTeamMemberIds={setSharedTeamMemberIds}
-            membersCache={membersCache}
-            isTeamMembersLoading={isTeamMembersLoading}
-            setIsTeamMembersLoading={setIsTeamMembersLoading}
-          />
-        )}
-
-        {canTransferRoadmap && (
+        {isTransferringToTeam && (
           <>
             <TransferToTeamList
+              currentTeamId={teamId}
               teams={teams}
               setTeams={setTeams}
               selectedTeamId={selectedTeamId}
@@ -319,7 +325,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
           Close
         </button>
 
-        {canTransferRoadmap && (
+        {isTransferringToTeam && (
           <UpdateAction
             disabled={
               isUpdateDisabled || isLoading || sharedTeamMemberIds.length === 0
@@ -335,7 +341,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
           </UpdateAction>
         )}
 
-        {!canTransferRoadmap && (
+        {!isTransferringToTeam && (
           <UpdateAction
             disabled={isUpdateDisabled || isLoading}
             onClick={() => {

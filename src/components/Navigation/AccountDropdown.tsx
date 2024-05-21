@@ -93,7 +93,7 @@ export function AccountDropdown() {
   ).length;
 
   return (
-    <div className="relative z-50 animate-fade-in">
+    <div className="relative z-[90] animate-fade-in">
       {isOnboardingModalOpen && onboardingConfig && (
         <OnboardingModal
           onboardingConfig={onboardingConfig}

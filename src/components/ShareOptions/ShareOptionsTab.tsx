@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import type { AllowedRoadmapVisibility } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { cn } from '../../lib/classname';
+import { $teamList } from '../../stores/team.ts';
+import { useStore } from '@nanostores/react';
 
 export const allowedVisibilityLabels: {
   id: AllowedRoadmapVisibility;
@@ -44,15 +46,29 @@ export const allowedVisibilityLabels: {
 type ShareOptionTabsProps = {
   visibility: AllowedRoadmapVisibility;
   setVisibility: (visibility: AllowedRoadmapVisibility) => void;
+
+  isTransferringToTeam: boolean;
+  setIsTransferringToTeam: (isTransferringToTeam: boolean) => void;
+
   teamId?: string;
 
   onChange: (visibility: AllowedRoadmapVisibility) => void;
 };
 
 export function ShareOptionTabs(props: ShareOptionTabsProps) {
-  const { visibility, setVisibility, teamId, onChange } = props;
+  const {
+    isTransferringToTeam,
+    setIsTransferringToTeam,
+    visibility,
+    setVisibility,
+    teamId,
+    onChange,
+  } = props;
 
-  const handleClick = (visibility: AllowedRoadmapVisibility) => {
+  const teamList = useStore($teamList);
+
+  const handleTabClick = (visibility: AllowedRoadmapVisibility) => {
+    setIsTransferringToTeam(false);
     setVisibility(visibility);
     onChange(visibility);
   };
@@ -63,11 +79,9 @@ export function ShareOptionTabs(props: ShareOptionTabsProps) {
         {allowedVisibilityLabels.map((v) => {
           if (v.id === 'friends' && teamId) {
             return null;
-          } else if (v.id === 'team' && !teamId) {
-            return null;
           }
 
-          const isActive = v.id === visibility;
+          const isActive = !isTransferringToTeam && v.id === visibility;
           return (
             <li key={v.id}>
               <OptionTab
@@ -75,21 +89,21 @@ export function ShareOptionTabs(props: ShareOptionTabsProps) {
                 isActive={isActive}
                 icon={v.icon}
                 onClick={() => {
-                  handleClick(v.id);
+                  handleTabClick(v.id);
                 }}
               />
             </li>
           );
         })}
       </ul>
-      {!teamId && (
+      {(!teamId || teamList.length > 1) && (
         <div className="grow">
           <OptionTab
             label="Transfer to team"
             icon={ArrowLeftRight}
-            isActive={visibility === 'team'}
+            isActive={isTransferringToTeam}
             onClick={() => {
-              handleClick('team');
+              setIsTransferringToTeam(true);
             }}
             className='border-red-300 text-red-600 hover:border-red-200 hover:bg-red-50 data-[active="true"]:border-red-600 data-[active="true"]:bg-red-600 data-[active="true"]:text-white'
           />
@@ -115,7 +129,7 @@ function OptionTab(props: OptionTabProps) {
       className={cn(
         'flex items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm text-black hover:border-gray-300 hover:bg-gray-100',
         'data-[active="true"]:border-gray-500 data-[active="true"]:bg-gray-200 data-[active="true"]:text-black',
-        className
+        className,
       )}
       data-active={isActive}
       disabled={isActive}

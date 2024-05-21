@@ -82,25 +82,24 @@ export function ShareSuccess(props: ShareSuccessProps) {
         </p>
       )}
 
-      <div className="mt-2 border-t pt-2">
-        <p className="text-sm text-gray-400">
-          You can also embed this roadmap on your website.
-        </p>
-        <div className="mt-2">
-          <input
-            onClick={(e) => {
-              e.currentTarget.select();
-              copyText(embedHtml);
-            }}
-            readOnly={true}
-            className="w-full resize-none rounded-md border bg-gray-50 p-2 text-sm"
-            value={embedHtml}
-          />
-        </div>
-      </div>
-
       {visibility === 'public' && (
         <>
+          <div className="mt-2 border-t pt-2">
+            <p className="text-sm text-gray-400">
+              You can also embed this roadmap on your website.
+            </p>
+            <div className="mt-2">
+              <input
+                onClick={(e) => {
+                  e.currentTarget.select();
+                  copyText(embedHtml);
+                }}
+                readOnly={true}
+                className="w-full resize-none rounded-md border bg-gray-50 p-2 text-sm"
+                value={embedHtml}
+              />
+            </div>
+          </div>
           <div className="-mx-4 mt-4 flex items-center gap-1.5">
             <span className="h-px grow bg-gray-300" />
             <span className="px-2 text-xs uppercase text-gray-400">Or</span>
