@@ -1,3 +1,8 @@
 # Search Algorithms
 
 Search algorithms are techniques used for finding a specific item or group of items among a collection of data. They operate by checking each element in the dataset in order to locate the target selection. The primary types of search algorithms are linear search, binary search, depth-first search, and breadth-first search. Linear search scans each element in sequence, while binary search operates by splitting the dataset in half repeatedly until finding the desired element. Depth-first and breadth-first searches are both used with more intricate data structures like trees and graphs. The former explores the depth of a branch before the breadth, while the latter explores all neighboring nodes before proceeding to the nodes at the next level depth.
+
+Visit the following resources to learn more:
+
+- [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
+- [Search Algorithms – Linear Search and Binary Search](https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/)
