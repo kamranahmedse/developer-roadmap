@@ -5104,7 +5104,7 @@
                     "x": "735",
                     "y": "934",
                     "properties": {
-                        "controlName": "109-go-advanced:mutext"
+                        "controlName": "109-go-advanced:mutex"
                     },
                     "children": {
                         "controls": {
@@ -5134,7 +5134,7 @@
                                     "y": "9",
                                     "properties": {
                                         "size": "16",
-                                        "text": "Mutext"
+                                        "text": "Mutex"
                                     }
                                 }
                             ]
