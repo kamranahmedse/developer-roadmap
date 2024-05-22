@@ -6,7 +6,7 @@ Exponential algorithms are those that grow at a rate of 2^n. This means that for
 def exponential(n):
     if n == 0:
         return 1
-    return 2 * exponential(n - 1)
+    return exponential(n - 1) + exponential(n - 1)
 ```
 
 As you can see, the algorithm's runtime grows exponentially. For each additional input, the algorithm will take twice as long to run.
