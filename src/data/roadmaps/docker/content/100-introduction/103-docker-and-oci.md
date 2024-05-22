@@ -14,7 +14,7 @@ OCI has three main specifications:
 
 - **Image Specification (image-spec):** It defines the container image format, which describes the contents of a container and can be run by a compliant runtime. Docker's initial image format has led to the creation of the OCI image-spec.
 
-- **Distribution Specification (distribution-spec):** It defines defines an API protocol to facilitate and standardize the distribution of content. Docker's existing registry API served as a starting point and heavily influenced the design of the OCI Distro Spec. 
+- **Distribution Specification (distribution-spec):** It defines an API protocol to facilitate and standardize the distribution of content. Docker's existing registry API served as a starting point and heavily influenced the design of the OCI Distro Spec. 
 
 
 ### Compatibility between Docker and OCI
