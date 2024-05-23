@@ -21,7 +21,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
   return (
     <div className="relative hidden border-t text-sm font-medium sm:block">
       {isAnswerVisible && (
-        <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"></div>
+        <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"></div>
       )}
       <h2
         className="z-50 flex cursor-pointer items-center px-2 py-2.5 text-base font-medium"
