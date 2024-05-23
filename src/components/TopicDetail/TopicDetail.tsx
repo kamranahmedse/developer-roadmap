@@ -218,7 +218,7 @@ export function TopicDetail(props: TopicDetailProps) {
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
 
   return (
-    <div className={'relative z-50'}>
+    <div className={'relative z-[90]'}>
       <div
         ref={topicRef}
         tabIndex={0}
