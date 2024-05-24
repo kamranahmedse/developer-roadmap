@@ -1,9 +1,12 @@
+import type { MouseEventHandler } from "react";
+
 type CloseIconProps = {
   className?: string;
+  onClick?: MouseEventHandler<SVGSVGElement>
 };
 
 export function CloseIcon(props: CloseIconProps) {
-  const { className } = props;
+  const { className, onClick } = props;
 
   return (
     <svg
@@ -15,6 +18,7 @@ export function CloseIcon(props: CloseIconProps) {
       strokeWidth="1.5"
       stroke="currentColor"
       className={className}
+      onClick={onClick}
     >
       <path d="M18 6 6 18" /><path d="m6 6 12 12" />
     </svg>
