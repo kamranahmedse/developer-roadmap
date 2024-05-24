@@ -16,6 +16,9 @@ const bestPractices = await getAllBestPractices();
 const questionGroups = await getAllQuestionGroups();
 
 const guides = await getAllGuides();
+const questionGuides = (await getAllQuestionGroups()).filter(
+  (questionGroup) => questionGroup.frontmatter.authorId,
+);
 const videos = await getAllVideos();
 ---
 
@@ -77,7 +80,11 @@ const videos = await getAllVideos();
     />
 
     <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
-      <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
+      <FeaturedGuides
+        heading='Guides'
+        guides={guides.slice(0, 7)}
+        questions={questionGuides.slice(0, 7)}
+      />
       <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
     </div>
   </div>

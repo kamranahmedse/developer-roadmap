@@ -47,8 +47,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <span>Knew</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
             <span className="tabular-nums">{knowCount}</span>{' '}
-            <span className="hidden lg:inline">Questions</span>
-            <span className="inline sm:hidden">Questions</span>
+            Items
           </span>
         </span>
 
@@ -57,8 +56,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <span>Learnt</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
             <span className="tabular-nums">{didNotKnowCount}</span>{' '}
-            <span className="hidden lg:inline">Questions</span>
-            <span className="inline sm:hidden">Questions</span>
+            Items
           </span>
         </span>
 
@@ -67,8 +65,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <span>Skipped</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
             <span className="tabular-nums">{skippedCount}</span>{' '}
-            <span className="hidden lg:inline">Questions</span>
-            <span className="inline sm:hidden">Questions</span>
+            Items
           </span>
         </span>
 

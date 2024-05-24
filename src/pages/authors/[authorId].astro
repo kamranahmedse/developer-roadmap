@@ -6,6 +6,7 @@ import { getVideosByAuthor } from '../../lib/video';
 import GuideListItem from '../../components/GuideListItem.astro';
 import { getAuthorById, getAuthorIds } from '../../lib/author';
 import VideoListItem from '../../components/VideoListItem.astro';
+import { getAllQuestionGroups } from '../../lib/question-group';
 
 interface Params extends Record<string, string | undefined> {}
 
@@ -23,6 +24,9 @@ const author = await getAuthorById(authorId);
 const authorFrontmatter = author.frontmatter;
 
 const guides = await getGuidesByAuthor(authorId);
+const questionGuides = (await getAllQuestionGroups()).filter(
+  (group) => group.frontmatter.authorId === authorId,
+);
 const videos = await getVideosByAuthor(authorId);
 ---
 
@@ -129,7 +133,15 @@ const videos = await getVideosByAuthor(authorId);
     <div
       class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
     >
-      {guides.map((guide) => <GuideListItem guide={guide} />)}
+      {
+        [...guides, ...questionGuides]
+          .sort((a, b) => {
+            const aDate = a.frontmatter.date || a.frontmatter.publishedAt;
+            const bDate = b.frontmatter.date || b.frontmatter.publishedAt;
+            return new Date(bDate) - new Date(aDate);
+          })
+          .map((guide) => <GuideListItem guide={guide} />)
+      }
       {videos.map((video) => <VideoListItem video={video} />)}
     </div>
   </div>

@@ -1,0 +1,5 @@
+There are many ways to protect your relational database from SQL injection attacks, but here are three very common ones.
+
+- **Prepared statements with parameterized queries.** This is probably the most effective way since it’s done by a library or framework, and all you have to do is write your queries leaving placeholders for where the data is meant to go, and then, in a separate place, provide the actual data.
+- **Use an ORM (Object-Relational Mapping).** These frameworks allow you to abstract the interaction with your database and create the SQL queries for you, taking into account all matters of security around that interaction.
+- **Escaping data.** If you want to do this manually, you can take care of escaping special characters that might break how you construct your SQL queries. Keeping a list of blacklisted characters to escape in this situation is a good idea, so you can programmatically go through them.

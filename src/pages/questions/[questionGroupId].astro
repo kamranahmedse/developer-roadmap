@@ -10,6 +10,9 @@ import {
   getAllQuestionGroups,
   type QuestionGroupType,
 } from '../../lib/question-group';
+import QuestionGuide from '../../components/Questions/QuestionGuide.astro';
+import { markdownToHtml } from '../../lib/markdown';
+import MarkdownFile from '../../components/MarkdownFile.astro';
 
 export interface Props {
   questionGroup: QuestionGroupType;
@@ -36,37 +39,45 @@ const { frontmatter } = questionGroup;
   keywords={frontmatter.seo.keywords}
   permalink={`/questions/${questionGroup.id}`}
 >
-  <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
-    <div class='container !max-w-[740px]'>
-      <div class='mb-3 mt-2 text-left sm:mb-5 sm:mt-8 sm:text-center'>
-        <div class='mb-2 md:mb-6'>
-          <a
-            href='/questions'
-            class='group rounded-md text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-gray-800'
-          >
-            <span
-              class='inline-block transform transition-transform group-hover:translate-x-[-2px]'
-            >
-              &larr;
-            </span>
-            Back to all Questions
-          </a>
-        </div>
-        <h1 class='mb-1 text-2xl font-bold sm:mb-5 sm:text-5xl'>
-          {frontmatter.title}
-        </h1>
-        <p class='hidden text-xl text-gray-500 sm:block'>
-          {frontmatter.description}
-        </p>
-      </div>
+  {
+    !questionGroup.frontmatter.authorId && (
+      <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
+        <div class='container !max-w-[740px]'>
+          <div class='mb-3 mt-2 text-left sm:mb-5 sm:mt-8 sm:text-center'>
+            <div class='mb-2 md:mb-6'>
+              <a
+                href='/questions'
+                class='group rounded-md text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-gray-800'
+              >
+                <span class='inline-block transform transition-transform group-hover:translate-x-[-2px]'>
+                  &larr;
+                </span>
+                Back to all Questions
+              </a>
+            </div>
+            <h1 class='mb-1 text-2xl font-bold sm:mb-5 sm:text-5xl'>
+              {frontmatter.title}
+            </h1>
+            <p class='hidden text-xl text-gray-500 sm:block'>
+              {frontmatter.description}
+            </p>
+          </div>
 
-      <QuestionsList
-        groupId={questionGroup.id}
-        questions={questionGroup.questions}
-        client:load
-      />
-    </div>
-  </div>
+          <QuestionsList
+            groupId={questionGroup.id}
+            questions={questionGroup.questions}
+            client:load
+          />
+        </div>
+      </div>
+    )
+  }
+
+  {
+    questionGroup.frontmatter.authorId && (
+      <QuestionGuide questionGroup={questionGroup} />
+    )
+  }
 
   <div slot='page-footer'>
     <Footer />

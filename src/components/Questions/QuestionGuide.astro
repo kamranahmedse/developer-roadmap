@@ -1,0 +1,154 @@
+---
+import {
+  getGuideTableOfContent,
+  type GuideFileType,
+  HeadingGroupType,
+} from '../../lib/guide';
+import MarkdownFile from '../MarkdownFile.astro';
+import { TableOfContent } from '../TableOfContent/TableOfContent';
+import { markdownToHtml, replaceVariables } from '../../lib/markdown';
+import { QuestionGroupType } from '../../lib/question-group';
+import { QuestionsList } from './QuestionsList';
+
+interface Props {
+  questionGroup: QuestionGroupType;
+}
+
+const { questionGroup } = Astro.props;
+
+const allHeadings = questionGroup.getHeadings();
+const tableOfContent: HeadingGroupType[] = [
+  ...getGuideTableOfContent(allHeadings),
+  {
+    depth: 2,
+    title: 'Test with Flashcards',
+    children: [],
+    slug: 'test-with-flashcards',
+    text: 'Test yourself with Flashcards',
+  },
+  {
+    depth: 2,
+    title: 'Questions List',
+    children: [
+      {
+        depth: 2,
+        title: 'Beginner Level',
+        children: [],
+        slug: 'beginner-level',
+        text: 'Beginner Level',
+      } as HeadingGroupType,
+      {
+        depth: 2,
+        title: 'Intermediate Level',
+        children: [],
+        slug: 'intermediate-level',
+        text: 'Intermediate Level',
+      } as HeadingGroupType,
+      {
+        depth: 2,
+        title: 'Advanced Level',
+        children: [],
+        slug: 'advanced-level',
+        text: 'Advanced Level',
+      } as HeadingGroupType,
+    ],
+    slug: 'questions-list',
+    text: 'Questions List',
+  },
+];
+
+const showTableOfContent = tableOfContent.length > 0;
+const { frontmatter: guideFrontmatter, author } = questionGroup;
+---
+
+<article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
+  {
+    showTableOfContent && (
+      <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+        <TableOfContent toc={tableOfContent} client:load />
+      </div>
+    )
+  }
+
+  <div
+    class:list={[
+      'col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] py-5 sm:py-10',
+      {
+        'lg:border-r': showTableOfContent,
+      },
+    ]}
+  >
+    <MarkdownFile>
+      <h1 class='mb-3 text-balance text-4xl font-bold'>
+        {replaceVariables(guideFrontmatter.title)}
+      </h1>
+      {
+        author && (
+          <p class='my-0 flex items-center justify-start text-sm text-gray-400'>
+            <a
+              href={`/authors/${author?.id}`}
+              class='inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline'
+            >
+              <img
+                alt={author.frontmatter.name}
+                src={author.frontmatter.imageUrl}
+                class='mb-0 mr-2 inline h-5 w-5 rounded-full'
+              />
+              {author.frontmatter.name}
+            </a>
+            <span class='mx-2 hidden sm:inline'>&middot;</span>
+            <a
+              class='hidden underline-offset-2 hover:text-gray-600 sm:inline'
+              href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/question-groups/${questionGroup.id}`}
+              target='_blank'
+            >
+              Improve this Guide
+            </a>
+          </p>
+        )
+      }
+      <questionGroup.Content />
+
+      <h2 id='test-with-flashcards'>Test yourself with Flashcards</h2>
+      <p>
+        You can either use these flashcards or jump to the questions list
+        section below to see them in a list format.
+      </p>
+      <div class='mx-0 sm:-mb-32'>
+        <QuestionsList
+          groupId={questionGroup.id}
+          questions={questionGroup.questions}
+          client:load
+        />
+      </div>
+
+      <h2 id='questions-list'>Questions List</h2>
+      <p>
+        If you prefer to see the questions in a list format, you can find them
+        below.
+      </p>
+
+      {
+        ['beginner', 'intermediate', 'advanced'].map((questionLevel) => (
+          <div class='mb-5'>
+            <h3 id={`${questionLevel}-level`} class='mb-0 capitalize'>
+              {questionLevel} Level
+            </h3>
+            {questionGroup.questions
+              .filter((q) => {
+                return q.topics
+                  .map((t) => t.toLowerCase())
+                  .includes(questionLevel);
+              })
+              .map((q) => (
+                <div class='mb-5'>
+                  <h4>{q.question}</h4>
+                  <div set:html={markdownToHtml(q.answer, false)} />
+                </div>
+              ))}
+          </div>
+        ))
+      }
+    </MarkdownFile>
+  </div>
+</article>

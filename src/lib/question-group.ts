@@ -1,5 +1,6 @@
 import type { MarkdownFileType } from './file';
 import slugify from 'slugify';
+import { getAllAuthors } from './author.ts';
 
 interface RawQuestionGroupFrontmatter {
   order: number;
@@ -8,6 +9,8 @@ interface RawQuestionGroupFrontmatter {
   title: string;
   description: string;
   isNew: boolean;
+  authorId?: string;
+  date?: string;
   seo: {
     title: string;
     description: string;
@@ -49,15 +52,14 @@ export type QuestionGroupType = RawQuestionGroupFileType & {
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
-  const questionGroupFilesMap =
-    await import.meta.glob<RawQuestionGroupFileType>(
-      `/src/data/question-groups/*/*.md`,
-      {
-        eager: true,
-      },
-    );
+  const questionGroupFilesMap = import.meta.glob<RawQuestionGroupFileType>(
+    `/src/data/question-groups/*/*.md`,
+    {
+      eager: true,
+    },
+  );
 
-  const answerFilesMap = await import.meta.glob<string>(
+  const answerFilesMap = import.meta.glob<string>(
     // get the files inside /src/data/question-groups/[ignore]/content/*.md
     `/src/data/question-groups/*/content/*.md`,
     {
@@ -65,6 +67,8 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
       query: '?raw',
     },
   );
+
+  const allAuthors = await getAllAuthors();
 
   return Object.values(questionGroupFilesMap)
     .map((questionGroupFile) => {
@@ -81,7 +85,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           if (answerText.endsWith('.md')) {
             const answerFilePath = `/src/data/question-groups/${questionGroupDir}/content/${answerText}`;
             answerText =
-              answerFilesMap[answerFilePath]?.default ||
+              (answerFilesMap[answerFilePath] as any)?.default ||
               answerFilesMap[answerFilePath] ||
               `File missing: ${answerFilePath}`;
 
@@ -113,6 +117,9 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
         id: questionGroupFileId,
         questions: formattedAnswers,
         allTopics: uniqueTopics,
+        author: allAuthors.find(
+          (author) => author.id === questionGroupFile.frontmatter.authorId,
+        )!,
       };
     })
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);

@@ -1,0 +1,5 @@
+For this type of application, you have to distinguish between “data at rest” and “data in transit”. The first one describes your data while it’s stored in your database (or any data storage you have). And the latter (data in transit) describes your data while it’s traveling between backend services or even between the server and the client.
+
+For “data in transit”, you should be ensuring that connection happens inside a secure and encrypted channel such as HTTPS.
+
+And for “data at rest” use strong encryption algorithms such as [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) or [ECC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) and make sure to keep their associated keys somewhere safe, such as inside a dedicated secrets management tool or key management services (KMS).

@@ -74,7 +74,8 @@ export function QuestionsList(props: QuestionsListProps) {
     });
 
     // Shuffle and set pending questions
-    setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
+    // setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
+    setPendingQuestions(pendingQuestions);
     setQuestions(unshuffledQuestions);
 
     setIsLoading(false);
