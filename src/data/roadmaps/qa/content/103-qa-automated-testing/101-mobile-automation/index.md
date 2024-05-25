@@ -5,3 +5,4 @@ Mobile automation, as the name suggests, refers to 'automation' that is done on 
 Visit the following resources to learn more:
 
 - [Mobile Automation Testing Steps and Process](https://u-tor.com/topic/mobile-automation-steps)
+- [Benefits and Risks of Test Automation, ISTQB V4.0 6.2](https://turkishtestingboard.org/files/ISTQB_CTFL_Syllabus-v40.pdf)
