@@ -29,7 +29,14 @@ int add(int a, int b)
 
 int main()
 {
-  int (*funcptr) (int, int) = add; // Pointer 'funcptr' now points to the functions 'add'
+  int (*funcptr) (int, int) = &add; // Pointer 'funcptr' now points to the functions 'add'
+
+  // basic syntax of function pointer => '' return_type (*pointer_name) (parameter_types) ''
+  // In the above initialization, &add takes the address of the add function and assigns it to funcPtr.
+  // This can also be written without the address-of operator, as it is implicitly understood when
+  // assigning a function to a function pointer
+  // => int (*funcptr) (int, int) = add; is also correct
+
   funcptr(4, 5); // Return 9
 }
 ``` 
