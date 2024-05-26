@@ -29,16 +29,16 @@
   },
   "dependencies": {
     "@astrojs/node": "^8.2.5",
-    "@astrojs/react": "^3.3.4",
-    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/react": "^3.4.0",
+    "@astrojs/sitemap": "^3.1.5",
     "@astrojs/tailwind": "^5.1.0",
     "@fingerprintjs/fingerprintjs": "^4.3.0",
     "@nanostores/react": "^0.7.2",
     "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
-    "@types/react": "^18.3.2",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.8.6",
+    "astro": "^4.9.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
     "dom-to-image": "^2.6.0",
@@ -48,12 +48,12 @@
     "image-size": "^1.1.1",
     "jose": "^5.3.0",
     "js-cookie": "^3.0.5",
-    "lucide-react": "^0.378.0",
+    "lucide-react": "^0.379.0",
     "nanoid": "^5.0.7",
     "nanostores": "^0.10.3",
     "node-html-parser": "^6.1.13",
     "npm-check-updates": "^16.14.20",
-    "playwright": "^1.44.0",
+    "playwright": "^1.44.1",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-calendar-heatmap": "^1.9.0",
@@ -74,7 +74,7 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
+    "@playwright/test": "^1.44.1",
     "@tailwindcss/typography": "^0.5.13",
     "@types/dom-to-image": "^2.6.7",
     "@types/js-cookie": "^3.0.6",
@@ -86,8 +86,8 @@
     "markdown-it": "^14.1.0",
     "openai": "^4.47.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tsx": "^4.10.5"
+    "tsx": "^4.11.0"
   }
 }
