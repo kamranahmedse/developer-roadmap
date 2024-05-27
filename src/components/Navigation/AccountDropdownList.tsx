@@ -45,7 +45,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
             className={cn(
               'flex h-9 w-full items-center rounded py-1 pl-3 pr-2 text-sm font-medium text-slate-100 hover:opacity-80',
               isConfigLoading
-                ? 'striped-loader-lighter flex border-slate-800 opacity-70'
+                ? 'striped-loader-darker flex border-slate-800 opacity-70'
                 : 'border-slate-600 bg-slate-700',
             )}
             onClick={onOnboardingClick}

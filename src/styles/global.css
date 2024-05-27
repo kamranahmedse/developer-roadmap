@@ -84,7 +84,7 @@ a > code:before {
   animation: barberpole 15s linear infinite;
 }
 
-.striped-loader-lighter {
+.striped-loader-darker {
   background-image: repeating-linear-gradient(
     -45deg,
     transparent,
