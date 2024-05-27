@@ -6,6 +6,7 @@ seo:
   title: 'Building a BitTorrent Client - roadmap.sh'
   description: 'Learn everything you need to know about BitTorrent by writing a client in Go'
 isNew: false
+canonicalUrl: 'https://blog.jse.li/posts/torrent/'
 type: 'textual'
 date: 2021-01-17
 sitemap:
