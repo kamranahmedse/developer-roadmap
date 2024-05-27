@@ -41,7 +41,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
       </h2>
 
       <div
-        className={`absolute left-0 right-0 top-0 z-50 mt-0 rounded-md border bg-white ${
+        className={`absolute left-0 right-0 top-0 z-[100] mt-0 rounded-md border bg-white ${
           isAnswerVisible ? 'block' : 'hidden'
         }`}
         ref={ref}
