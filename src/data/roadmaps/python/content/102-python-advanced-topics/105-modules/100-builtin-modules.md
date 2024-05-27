@@ -1,6 +1,6 @@
 # Builtin Modules
 
-Python interpreter has a number of built-in functions. They are always available for use in every interpreter session. Many of them have been discussed previously. For example `print()` and `input()` for I/O, number conversion functions (`int()`, `float()`, `complex()`), data type conversions (`list()`, `tuple()`, `set()`) etc.
+Python has a rich standard library of built-in modules that provide a wide range of functionality. Some of the most commonly used built-in modules include: sys, os, math, datetime, random, re, itertools, etc.
 
 Visit the following resources to learn more:
 
