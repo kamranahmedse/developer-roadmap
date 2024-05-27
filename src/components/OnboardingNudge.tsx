@@ -7,7 +7,7 @@ type OnboardingNudgeProps = {
   onStartOnboarding: () => void;
 };
 
-const NUDGE_ONBOARDING_KEY = 'should_nudge_onboarding';
+export const NUDGE_ONBOARDING_KEY = 'should_nudge_onboarding';
 
 export function OnboardingNudge(props: OnboardingNudgeProps) {
   const { onStartOnboarding } = props;

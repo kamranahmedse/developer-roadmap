@@ -8,6 +8,7 @@ import { httpPatch } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import type { OnboardingConfig } from './AccountDropdown';
 import { setAuthToken } from '../../lib/jwt';
+import { NUDGE_ONBOARDING_KEY } from '../OnboardingNudge.tsx';
 
 type Task = {
   id: string;
@@ -157,9 +158,11 @@ export function OnboardingModal(props: OnboardingModalProps) {
         </p>
       </div>
 
-      <ul className={cn('flex flex-col divide-y', {
-        'border-b': tasks[tasks.length - 1]?.status === 'done',
-      })}>
+      <ul
+        className={cn('flex flex-col divide-y', {
+          'border-b': tasks[tasks.length - 1]?.status === 'done',
+        })}
+      >
         {/*sort to put completed tasks at the end */}
         {tasks.map((task, taskCounter) => {
           const isDone = task.status === 'done';
@@ -175,9 +178,11 @@ export function OnboardingModal(props: OnboardingModalProps) {
                 'border-t': taskCounter === 0 && isDone,
               })}
             >
-              <div className={cn('flex items-start gap-2', {
-                'opacity-50': task.status === 'done'
-              })}>
+              <div
+                className={cn('flex items-start gap-2', {
+                  'opacity-50': task.status === 'done',
+                })}
+              >
                 <span className="relative top-px flex h-5 w-5 items-center justify-center">
                   {isDone ? (
                     <Check className="h-4 w-4 stroke-[3px] text-green-500" />
