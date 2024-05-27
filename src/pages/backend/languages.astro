@@ -14,10 +14,12 @@ if (!guide) {
 
 const { frontmatter: guideData } = guide!;
 
-const ogImageUrl = getOpenGraphImageUrl({
-  group: 'guide',
-  resourceId: guideId,
-});
+const ogImageUrl =
+  guideData.seo.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'guide',
+    resourceId: guideId,
+  });
 ---
 
 <BaseLayout
