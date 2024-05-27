@@ -10,6 +10,7 @@ import { httpGet } from '../../lib/http.ts';
 import { useToast } from '../../hooks/use-toast.ts';
 import type { UserDocument } from '../../api/user.ts';
 import { NotificationIndicator } from './NotificationIndicator.tsx';
+import { OnboardingNudge } from '../OnboardingNudge.tsx';
 
 export type OnboardingConfig = Pick<
   UserDocument,
@@ -24,7 +25,7 @@ export function AccountDropdown() {
   const [isTeamsOpen, setIsTeamsOpen] = useState(false);
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
-  const [isConfigLoading, setIsConfigLoading] = useState(true);
+  const [isConfigLoading, setIsConfigLoading] = useState(false);
   const [isOnboardingModalOpen, setIsOnboardingModalOpen] = useState(false);
   const [onboardingConfig, setOnboardingConfig] = useState<
     OnboardingConfig | undefined
@@ -93,66 +94,80 @@ export function AccountDropdown() {
   ).length;
 
   return (
-    <div className="relative z-[90] animate-fade-in">
-      {isOnboardingModalOpen && onboardingConfig && (
-        <OnboardingModal
-          onboardingConfig={onboardingConfig}
-          onClose={() => {
-            setIsOnboardingModalOpen(false);
-          }}
-          onIgnoreTask={(taskId, status) => {
-            loadOnboardingConfig().finally(() => {});
-          }}
-        />
-      )}
-      {isCreatingRoadmap && (
-        <CreateRoadmapModal
-          onClose={() => {
-            setIsCreatingRoadmap(false);
+    <>
+      {shouldShowOnboardingStatus && !isOnboardingModalOpen && (
+        <OnboardingNudge
+          onStartOnboarding={() => {
+            loadOnboardingConfig().then(() => {
+              setIsOnboardingModalOpen(true);
+            });
           }}
         />
       )}
 
-      <button
-        className="relative flex h-8 w-40 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
-        onClick={() => {
-          setIsTeamsOpen(false);
-          setShowDropdown(!showDropdown);
-        }}
-      >
-        <span className="inline-flex items-center">
-          Account&nbsp;<span className="text-gray-300">/</span>&nbsp;Teams
-        </span>
-        <ChevronDown className="h-4 w-4 shrink-0 stroke-[2.5px]" />
-        {shouldShowOnboardingStatus && !showDropdown && <NotificationIndicator />}
-      </button>
+      <div className="relative z-[90] animate-fade-in">
+        {isOnboardingModalOpen && onboardingConfig && (
+          <OnboardingModal
+            onboardingConfig={onboardingConfig}
+            onClose={() => {
+              setIsOnboardingModalOpen(false);
+            }}
+            onIgnoreTask={(taskId, status) => {
+              loadOnboardingConfig().finally(() => {});
+            }}
+          />
+        )}
+        {isCreatingRoadmap && (
+          <CreateRoadmapModal
+            onClose={() => {
+              setIsCreatingRoadmap(false);
+            }}
+          />
+        )}
 
-      {showDropdown && (
-        <div
-          ref={dropdownRef}
-          className="absolute right-0 z-50 mt-2 min-h-[152px] w-48 rounded-md bg-slate-800 py-1 shadow-xl"
+        <button
+          className="relative flex h-8 w-40 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
+          onClick={() => {
+            setIsTeamsOpen(false);
+            setShowDropdown(!showDropdown);
+          }}
         >
-          {isTeamsOpen ? (
-            <DropdownTeamList setIsTeamsOpen={setIsTeamsOpen} />
-          ) : (
-            <AccountDropdownList
-              onCreateRoadmap={() => {
-                setIsCreatingRoadmap(true);
-                setShowDropdown(false);
-              }}
-              setIsTeamsOpen={setIsTeamsOpen}
-              onOnboardingClick={() => {
-                setIsOnboardingModalOpen(true);
-                setShowDropdown(false);
-              }}
-              shouldShowOnboardingStatus={shouldShowOnboardingStatus}
-              isConfigLoading={isConfigLoading}
-              onboardingConfigCount={onboardingCount}
-              doneConfigCount={onboardingDoneCount}
-            />
+          <span className="inline-flex items-center">
+            Account&nbsp;<span className="text-gray-300">/</span>&nbsp;Teams
+          </span>
+          <ChevronDown className="h-4 w-4 shrink-0 stroke-[2.5px]" />
+          {shouldShowOnboardingStatus && !showDropdown && (
+            <NotificationIndicator />
           )}
-        </div>
-      )}
-    </div>
+        </button>
+
+        {showDropdown && (
+          <div
+            ref={dropdownRef}
+            className="absolute right-0 z-50 mt-2 min-h-[152px] w-48 rounded-md bg-slate-800 py-1 shadow-xl"
+          >
+            {isTeamsOpen ? (
+              <DropdownTeamList setIsTeamsOpen={setIsTeamsOpen} />
+            ) : (
+              <AccountDropdownList
+                onCreateRoadmap={() => {
+                  setIsCreatingRoadmap(true);
+                  setShowDropdown(false);
+                }}
+                setIsTeamsOpen={setIsTeamsOpen}
+                onOnboardingClick={() => {
+                  setIsOnboardingModalOpen(true);
+                  setShowDropdown(false);
+                }}
+                shouldShowOnboardingStatus={shouldShowOnboardingStatus}
+                isConfigLoading={isConfigLoading}
+                onboardingConfigCount={onboardingCount}
+                doneConfigCount={onboardingDoneCount}
+              />
+            )}
+          </div>
+        )}
+      </div>
+    </>
   );
 }
