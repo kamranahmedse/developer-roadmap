@@ -33,7 +33,7 @@ export function OnboardingNudge(props: OnboardingNudgeProps) {
   return (
     <div
       className={cn(
-        'fixed left-0 right-0 top-0 z-[91] flex w-full items-center justify-center bg-yellow-300 py-1.5',
+        'fixed left-0 right-0 top-0 z-[91] flex w-full items-center justify-center bg-yellow-300 border-b border-b-yellow-500/30 py-1.5',
         {
           'striped-loader': isLoading,
         },

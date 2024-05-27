@@ -311,7 +311,7 @@
       "type": "section",
       "position": {
         "x": -206.8881872719935,
-        "y": 451.40074822234897
+        "y": 436.40074822234897
       },
       "selected": true,
       "data": {
@@ -325,15 +325,15 @@
         }
       },
       "zIndex": -999,
-      "width": 266,
-      "height": 234,
+      "width": 264,
+      "height": 289,
       "style": {
-        "width": 266,
-        "height": 234
+        "width": 264,
+        "height": 289
       },
       "positionAbsolute": {
         "x": -206.8881872719935,
-        "y": 451.40074822234897
+        "y": 436.40074822234897
       },
       "dragging": false,
       "resizing": false,
@@ -865,7 +865,7 @@
       "type": "subtopic",
       "position": {
         "x": -196.3881872719935,
-        "y": 453.90074822234897
+        "y": 438.90074822234897
       },
       "selected": true,
       "data": {
@@ -882,7 +882,7 @@
       "height": 49,
       "positionAbsolute": {
         "x": -196.3881872719935,
-        "y": 453.90074822234897
+        "y": 438.90074822234897
       },
       "dragging": false,
       "style": {
@@ -898,7 +898,7 @@
       "type": "subtopic",
       "position": {
         "x": -196.3881872719935,
-        "y": 507.90074822234897
+        "y": 492.90074822234897
       },
       "selected": true,
       "data": {
@@ -915,7 +915,7 @@
       "height": 49,
       "positionAbsolute": {
         "x": -196.3881872719935,
-        "y": 507.90074822234897
+        "y": 492.90074822234897
       },
       "dragging": false,
       "style": {
@@ -927,11 +927,11 @@
       "focusable": true
     },
     {
-      "id": "Wwd-0PjrtViMFWxRGaQey",
+      "id": "dqslZ1FfJjCqkWhxY5JGD",
       "type": "subtopic",
       "position": {
         "x": -196.3881872719935,
-        "y": 561.900748222349
+        "y": 546.900748222349
       },
       "selected": true,
       "data": {
@@ -941,14 +941,14 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "MKVcPM2EzAr2_Ieyp9Fu3"
+        "oldId": "Wwd-0PjrtViMFWxRGaQey"
       },
       "zIndex": 999,
       "width": 245,
       "height": 49,
       "positionAbsolute": {
         "x": -196.3881872719935,
-        "y": 561.900748222349
+        "y": 546.900748222349
       },
       "dragging": false,
       "style": {
@@ -964,7 +964,7 @@
       "type": "subtopic",
       "position": {
         "x": -196.3881872719935,
-        "y": 615.900748222349
+        "y": 600.900748222349
       },
       "selected": true,
       "data": {
@@ -981,7 +981,7 @@
       "height": 49,
       "positionAbsolute": {
         "x": -196.3881872719935,
-        "y": 615.900748222349
+        "y": 600.900748222349
       },
       "dragging": false,
       "style": {
@@ -996,8 +996,8 @@
       "id": "iA0C1mFlM_73GcL9XNJmF",
       "type": "button",
       "position": {
-        "x": -576.1381872719934,
-        "y": 615.900748222349
+        "x": -577.1381872719934,
+        "y": 600.900748222349
       },
       "selected": true,
       "data": {
@@ -1014,8 +1014,8 @@
       "width": 244,
       "height": 49,
       "positionAbsolute": {
-        "x": -576.1381872719934,
-        "y": 615.900748222349
+        "x": -577.1381872719934,
+        "y": 600.900748222349
       },
       "dragging": false,
       "style": {
@@ -3548,6 +3548,39 @@
       "resizing": false,
       "focusable": true,
       "selectable": true
+    },
+    {
+      "id": "Wwd-0PjrtViMFWxRGaQey",
+      "type": "subtopic",
+      "position": {
+        "x": -198.46804969796983,
+        "y": 654.900748222349
+      },
+      "selected": true,
+      "data": {
+        "label": "gRPC APIs",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "MKVcPM2EzAr2_Ieyp9Fu3"
+      },
+      "zIndex": 999,
+      "width": 245,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -198.46804969796983,
+        "y": 654.900748222349
+      },
+      "dragging": false,
+      "style": {
+        "width": 245,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
     }
   ],
   "edges": [
