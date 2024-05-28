@@ -245,7 +245,11 @@ export function TopicDetail(props: TopicDetailProps) {
               <div className="mb-2">
                 {!isEmbed && (
                   <TopicProgressButton
-                    topicId={topicId}
+                    topicId={
+                      topicId.indexOf('@') !== -1
+                        ? topicId.split('@')[1]
+                        : topicId
+                    }
                     resourceId={resourceId}
                     resourceType={resourceType}
                     onClose={() => {
@@ -288,13 +292,16 @@ export function TopicDetail(props: TopicDetailProps) {
                     </div>
                   )}
                   {canSubmitContribution && (
-                    <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center max-w-[400px] mx-auto text-center">
-                      <HeartHandshake className="h-16 w-16 text-gray-300 mb-2" />
+                    <div className="mx-auto flex h-[calc(100%-38px)] max-w-[400px] flex-col items-center justify-center text-center">
+                      <HeartHandshake className="mb-2 h-16 w-16 text-gray-300" />
                       <p className="text-lg font-semibold text-gray-900">
                         Help us write this content
                       </p>
-                      <p className="text-sm text-gray-500 mt-2 mb-3">
-                        Write a brief introduction to this topic and submit a link to a good article, podcast, video, or any other self-vetted resource that helped you understand this topic better.
+                      <p className="mb-3 mt-2 text-sm text-gray-500">
+                        Write a brief introduction to this topic and submit a
+                        link to a good article, podcast, video, or any other
+                        self-vetted resource that helped you understand this
+                        topic better.
                       </p>
                       <a
                         href={contributionUrl}
