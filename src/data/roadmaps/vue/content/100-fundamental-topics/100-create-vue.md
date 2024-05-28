@@ -5,3 +5,4 @@
 Learn more using the following resources:
 
 - [Creating a Vue Project](https://cli.vuejs.org/guide/creating-a-project.html)
+- [How 'npm create vue@latest' works](https://dev.to/nikitadmitr/how-npm-create-vuelatest-works-ac5)
