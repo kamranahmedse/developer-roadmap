@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [Pointers](https://go.dev/tour/moretypes/1)
 - [Go by Example: Pointers](https://gobyexample.com/pointers)
-- [GeeksForGeeks: Pointers](https://www.geeksforgeeks.org/pointers-in-golang/)
+- [YouTube: Pointers](https://www.youtube.com/watch?v=a4HcEsJ1hIE)
