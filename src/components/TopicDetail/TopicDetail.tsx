@@ -23,7 +23,7 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { Ban, FileText, X } from 'lucide-react';
+import { Ban, FileText, HeartHandshake, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -58,6 +58,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [isContributing, setIsContributing] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
+  const [hasContent, setHasContent] = useState(false);
   const [topicTitle, setTopicTitle] = useState('');
   const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
@@ -177,6 +178,9 @@ export function TopicDetail(props: TopicDetailProps) {
 
           const titleElem: HTMLElement = topicDom.querySelector('h1')!;
 
+          const otherElems = topicDom.querySelectorAll('body > *:not(h1, div)');
+
+          setHasContent(otherElems.length > 0);
           setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
           setTopicHtmlTitle(titleElem?.textContent || '');
@@ -207,7 +211,6 @@ export function TopicDetail(props: TopicDetailProps) {
     return null;
   }
 
-  const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
   const resourceTitleForSearch = resourceTitle
     ?.toLowerCase()
     ?.replace(/\s+?roadmap/gi, '');
@@ -225,7 +228,7 @@ export function TopicDetail(props: TopicDetailProps) {
         className="fixed right-0 top-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoading && (
-          <div className="flex w-full h-full items-center justify-center">
+          <div className="flex h-full w-full items-center justify-center">
             <Spinner
               outerFill="#d1d5db"
               className="h-6 w-6 sm:h-8 sm:w-8"
@@ -265,20 +268,45 @@ export function TopicDetail(props: TopicDetailProps) {
 
               {/* Topic Content */}
               {hasContent ? (
-                <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
-                  {topicTitle && <h1>{topicTitle}</h1>}
-                  <div
-                    id="topic-content"
-                    dangerouslySetInnerHTML={{ __html: topicHtml }}
-                  />
-                </div>
+                <>
+                  <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
+                    {topicTitle && <h1>{topicTitle}</h1>}
+                    <div
+                      id="topic-content"
+                      dangerouslySetInnerHTML={{ __html: topicHtml }}
+                    />
+                  </div>
+                </>
               ) : (
-                <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
-                  <FileText className="h-16 w-16 text-gray-300" />
-                  <p className="mt-2 text-lg font-medium text-gray-500">
-                    Empty Content
-                  </p>
-                </div>
+                <>
+                  {!canSubmitContribution && (
+                    <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
+                      <FileText className="h-16 w-16 text-gray-300" />
+                      <p className="mt-2 text-lg font-medium text-gray-500">
+                        Empty Content
+                      </p>
+                    </div>
+                  )}
+                  {canSubmitContribution && (
+                    <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center max-w-[400px] mx-auto text-center">
+                      <HeartHandshake className="h-16 w-16 text-gray-300 mb-2" />
+                      <p className="text-lg font-semibold text-gray-900">
+                        Help us write this content
+                      </p>
+                      <p className="text-sm text-gray-500 mt-2 mb-3">
+                        Write a brief introduction to this topic and submit a link to a good article, podcast, video, or any other self-vetted resource that helped you understand this topic better.
+                      </p>
+                      <a
+                        href={contributionUrl}
+                        target={'_blank'}
+                        className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                      >
+                        <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                        Submit a Pull Request
+                      </a>
+                    </div>
+                  )}
+                </>
               )}
 
               {links.length > 0 && (
@@ -313,8 +341,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 <div className="mb-12 mt-3 border-t text-sm text-gray-400">
                   <div className="mb-4 mt-3">
                     <p className="">
-                      Can't find what you're looking for? Try these pre-filled
-                      search queries:
+                      Find more resources using these pre-filled search queries:
                     </p>
                     <div className="mt-3 flex gap-2  text-gray-700">
                       <a
