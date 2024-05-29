@@ -187,11 +187,12 @@ export function TopicDetail(props: TopicDetailProps) {
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
-          setHasContent(true);
 
           const sanitizedMarkdown = sanitizeMarkdown(
             (response as RoadmapContentDocument).description || '',
           );
+
+          setHasContent(sanitizedMarkdown?.length > 0);
           topicHtml = markdownToHtml(sanitizedMarkdown, false);
         }
 
