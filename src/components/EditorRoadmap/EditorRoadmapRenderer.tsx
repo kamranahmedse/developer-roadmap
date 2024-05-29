@@ -12,6 +12,8 @@ import { useToast } from '../../hooks/use-toast';
 import type { Edge, Node } from 'reactflow';
 import { Renderer } from '../../../editor/renderer';
 import { slugify } from '../../lib/slugger';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export type RoadmapRendererProps = {
   resourceId: string;
@@ -104,6 +106,11 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
 
     if (e.shiftKey) {
       e.preventDefault();
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
+
       updateTopicStatus(
         nodeId,
         isCurrentStatusLearning ? 'pending' : 'learning',
@@ -111,6 +118,11 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     } else if (e.altKey) {
       e.preventDefault();
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
+
       updateTopicStatus(nodeId, isCurrentStatusSkipped ? 'pending' : 'skipped');
       return;
     }
@@ -143,6 +155,10 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
     const isCurrentStatusDone = targetGroup?.classList.contains('done');
     updateTopicStatus(nodeId, isCurrentStatusDone ? 'pending' : 'done');
   }, []);
