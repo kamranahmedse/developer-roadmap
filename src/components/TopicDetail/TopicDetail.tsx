@@ -192,6 +192,8 @@ export function TopicDetail(props: TopicDetailProps) {
           const sanitizedMarkdown = sanitizeMarkdown(
             (response as RoadmapContentDocument).description || '',
           );
+
+          setHasContent(sanitizedMarkdown?.length > 0);
           topicHtml = markdownToHtml(sanitizedMarkdown, false);
         }
 
