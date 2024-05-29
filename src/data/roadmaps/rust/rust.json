@@ -8913,6 +8913,84 @@
               "y": 0
             }
           }
+        },
+        {
+          "ID": "842",
+          "typeID": "__group__",
+          "zOrder": "219",
+          "measuredW": "98",
+          "measuredH": "50",
+          "w": "98",
+          "h": "50",
+          "x": "338",
+          "y": "1868",
+          "properties": {
+            "controlName": "104-web-development:leptos"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "98",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "41",
+                  "measuredH": "25",
+                  "x": "28",
+                  "y": "13",
+                  "properties": {
+                    "size": "17",
+                    "text": "Leptos"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "843",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "147",
+          "h": "85",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "390",
+          "y": "1887",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "top",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 85
+            },
+            "p1": {
+              "x": 0,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
         }
       ]
     },
