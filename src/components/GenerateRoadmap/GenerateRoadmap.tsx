@@ -25,20 +25,14 @@ import { Ban, Cog, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
-import {
-  deleteUrlParam,
-  getUrlParams,
-  setUrlParams,
-} from '../../lib/browser.ts';
+import { deleteUrlParam, getUrlParams } from '../../lib/browser.ts';
 import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
-import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { useParams } from '../../hooks/use-params.ts';
 import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
 
