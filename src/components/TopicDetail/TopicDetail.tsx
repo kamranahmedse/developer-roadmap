@@ -187,7 +187,6 @@ export function TopicDetail(props: TopicDetailProps) {
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
-          setHasContent(true);
 
           const sanitizedMarkdown = sanitizeMarkdown(
             (response as RoadmapContentDocument).description || '',
