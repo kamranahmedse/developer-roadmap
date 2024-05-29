@@ -308,20 +308,19 @@ import { TipItem } from '../components/GetStarted/TipItem';
       description='Learn all you need to know to become an Android Developer.'
     />
 
+    <RoadmapCard
+      icon={Smartphone}
+      title='iOS'
+      link='/ios'
+      description='Learn all you need to know to become an iOS Developer.'
+    />
+
     <RoadmapMultiCard
       roadmaps={[
         { title: 'React Native', link: '/react-native' },
         { title: 'Flutter', link: '/flutter' },
       ]}
       description='Or learn a cross-platform framework?'
-    />
-
-    <RoadmapCard
-      icon={Smartphone}
-      title='iOS'
-      link='/ios'
-      isUpcoming={true}
-      description='We will be adding an iOS roadmap soon.'
     />
   </RoleRoadmaps>
   <RoleRoadmaps
