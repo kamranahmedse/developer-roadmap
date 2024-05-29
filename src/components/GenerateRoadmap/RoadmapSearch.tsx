@@ -42,7 +42,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     setIsAuthenticatedUser(isLoggedIn());
   }, []);
 
-  const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
+  const randomTerms = ['OAuth', 'UI / UX', 'SRE', 'DevRel'];
 
   return (
     <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
