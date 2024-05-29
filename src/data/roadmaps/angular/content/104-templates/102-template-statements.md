@@ -5,3 +5,4 @@ Template statements are methods or properties that you can use in your HTML to r
 Visit the following resources to learn more:
 
 - [Angular Official Website](https://angular.io/guide/template-statements)
+- [Understanding Template Statements](https://angular.dev/guide/templates/template-statements#)
