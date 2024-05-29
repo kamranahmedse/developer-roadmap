@@ -6,7 +6,7 @@ briefTitle: 'SQL'
 briefDescription: 'Step by step guide to learning SQL in 2024'
 title: 'SQL Roadmap'
 description: 'Step by step guide to learning SQL in 2024'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968
