@@ -37,3 +37,7 @@ export default SimpleText;
 ```
 
 In this example, we create a `Text` element with some text content, apply styling, limit it to two lines, and add an `onPress` event.
+
+Visit the following resources to learn more:
+
+- [Text - React Native](https://reactnative.dev/docs/text)
