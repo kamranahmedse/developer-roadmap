@@ -13,28 +13,19 @@ type ProgressStatButtonProps = {
   icon: ReactNode;
   label: string;
   count: number;
-  onClick: () => void;
 };
 
-function ProgressStatButton(props: ProgressStatButtonProps) {
-  const { icon, label, count, onClick, isDisabled = false } = props;
+function ProgressStatLabel(props: ProgressStatButtonProps) {
+  const { icon, label, count } = props;
 
   return (
-    <button
-      disabled={isDisabled}
-      onClick={onClick}
-      className="group relative flex flex-1 items-center overflow-hidden rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black disabled:pointer-events-none disabled:opacity-50 sm:rounded-xl sm:px-4 sm:py-3 sm:text-base"
-    >
+    <span className="group relative flex flex-1 items-center overflow-hidden rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors disabled:opacity-50 sm:rounded-xl sm:px-4 sm:py-3 sm:text-base">
       {icon}
       <span className="flex flex-grow justify-between">
         <span>{label}</span>
         <span>{count}</span>
       </span>
-
-      <span className="absolute left-0 right-0 top-full flex h-full items-center justify-center border border-black bg-black text-white transition-all duration-200 group-hover:top-0">
-        Restart Asking
-      </span>
-    </button>
+    </span>
   );
 }
 
@@ -43,12 +34,11 @@ type QuestionFinishedProps = {
   didNotKnowCount: number;
   skippedCount: number;
   totalCount: number;
-  onReset: (type: QuestionProgressType | 'reset') => void;
+  onReset: () => void;
 };
 
 export function QuestionFinished(props: QuestionFinishedProps) {
-  const { knowCount, didNotKnowCount, skippedCount, totalCount, onReset } =
-    props;
+  const { knowCount, didNotKnowCount, skippedCount, onReset } = props;
 
   return (
     <div className="relative flex flex-grow flex-col items-center justify-center px-4 sm:px-0">
@@ -63,31 +53,25 @@ export function QuestionFinished(props: QuestionFinishedProps) {
       </p>
 
       <div className="mb-5 mt-5 flex w-full flex-col gap-1.5 px-2 sm:flex-row sm:gap-3 sm:px-16">
-        <ProgressStatButton
+        <ProgressStatLabel
           icon={<ThumbsUp className="mr-1 h-4" />}
           label="Knew"
           count={knowCount}
-          isDisabled={knowCount === 0}
-          onClick={() => onReset('know')}
         />
-        <ProgressStatButton
+        <ProgressStatLabel
           icon={<Sparkles className="mr-1 h-4" />}
           label="Learned"
           count={didNotKnowCount}
-          isDisabled={didNotKnowCount === 0}
-          onClick={() => onReset('dontKnow')}
         />
-        <ProgressStatButton
+        <ProgressStatLabel
           icon={<SkipForward className="mr-1 h-4" />}
           label="Skipped"
           count={skippedCount}
-          isDisabled={skippedCount === 0}
-          onClick={() => onReset('skip')}
         />
       </div>
       <div className="mb-4 mt-2 text-sm sm:mb-0">
         <button
-          onClick={() => onReset('reset')}
+          onClick={() => onReset()}
           className="flex items-center gap-0.5 text-sm text-red-700 hover:text-black sm:text-base"
         >
           <RefreshCcw className="mr-1 h-4" />

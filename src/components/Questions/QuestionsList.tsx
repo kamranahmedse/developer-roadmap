@@ -24,14 +24,14 @@ type QuestionsListProps = {
 };
 
 export function QuestionsList(props: QuestionsListProps) {
-  const { questions: unshuffledQuestions, groupId } = props;
+  const { questions: defaultQuestions, groupId } = props;
 
   const toast = useToast();
 
+  const [questions, setQuestions] = useState(defaultQuestions);
   const [isLoading, setIsLoading] = useState(true);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [questions, setQuestions] = useState<QuestionType[]>();
-  const [pendingQuestions, setPendingQuestions] = useState<QuestionType[]>([]);
+  const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
 
   const [userProgress, setUserProgress] = useState<UserQuestionProgress>();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -57,7 +57,7 @@ export function QuestionsList(props: QuestionsListProps) {
     return response;
   }
 
-  async function loadQuestions() {
+  async function prepareProgress() {
     const userProgress = await fetchUserProgress();
     setUserProgress(userProgress);
 
@@ -65,7 +65,7 @@ export function QuestionsList(props: QuestionsListProps) {
     const didNotKnowQuestions = userProgress?.dontKnow || [];
     const skipQuestions = userProgress?.skip || [];
 
-    const pendingQuestions = unshuffledQuestions.filter((question) => {
+    const pendingQuestionIndex = questions.findIndex((question) => {
       return (
         !knownQuestions.includes(question.id) &&
         !didNotKnowQuestions.includes(question.id) &&
@@ -73,31 +73,21 @@ export function QuestionsList(props: QuestionsListProps) {
       );
     });
 
-    // Shuffle and set pending questions
-    // setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
-    setPendingQuestions(pendingQuestions);
-    setQuestions(unshuffledQuestions);
-
+    setCurrQuestionIndex(pendingQuestionIndex);
     setIsLoading(false);
   }
 
-  async function resetProgress(type: QuestionProgressType | 'reset' = 'reset') {
+  async function resetProgress() {
     let knownQuestions = userProgress?.know || [];
     let didNotKnowQuestions = userProgress?.dontKnow || [];
     let skipQuestions = userProgress?.skip || [];
 
     if (!isLoggedIn()) {
-      if (type === 'know') {
-        knownQuestions = [];
-      } else if (type === 'dontKnow') {
-        didNotKnowQuestions = [];
-      } else if (type === 'skip') {
-        skipQuestions = [];
-      } else if (type === 'reset') {
-        knownQuestions = [];
-        didNotKnowQuestions = [];
-        skipQuestions = [];
-      }
+      setQuestions(defaultQuestions);
+
+      knownQuestions = [];
+      didNotKnowQuestions = [];
+      skipQuestions = [];
     } else {
       setIsLoading(true);
 
@@ -106,7 +96,7 @@ export function QuestionsList(props: QuestionsListProps) {
           import.meta.env.PUBLIC_API_URL
         }/v1-reset-question-progress/${groupId}`,
         {
-          status: type,
+          status: 'reset',
         },
       );
 
@@ -120,21 +110,13 @@ export function QuestionsList(props: QuestionsListProps) {
       skipQuestions = response?.skip || [];
     }
 
-    const pendingQuestions = unshuffledQuestions.filter((question) => {
-      return (
-        !knownQuestions.includes(question.id) &&
-        !didNotKnowQuestions.includes(question.id) &&
-        !skipQuestions.includes(question.id)
-      );
-    });
-
+    setCurrQuestionIndex(0);
     setUserProgress({
       know: knownQuestions,
       dontKnow: didNotKnowQuestions,
       skip: skipQuestions,
     });
 
-    setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
     setIsLoading(false);
   }
 
@@ -173,30 +155,29 @@ export function QuestionsList(props: QuestionsListProps) {
       newProgress = response;
     }
 
-    const updatedQuestionList = pendingQuestions.filter(
-      (q) => q.id !== questionId,
-    );
+    const nextQuestionIndex = currQuestionIndex + 1;
 
     setUserProgress(newProgress);
-    setPendingQuestions(updatedQuestionList);
     setIsLoading(false);
 
-    if (updatedQuestionList.length === 0) {
+    if (!nextQuestionIndex || !questions[nextQuestionIndex]) {
       setShowConfetti(true);
     }
+
+    setCurrQuestionIndex(nextQuestionIndex);
   }
 
   useEffect(() => {
-    loadQuestions().then(() => null);
-  }, [unshuffledQuestions]);
+    prepareProgress().then(() => null);
+  }, [questions]);
 
   const knowCount = userProgress?.know.length || 0;
   const dontKnowCount = userProgress?.dontKnow.length || 0;
   const skipCount = userProgress?.skip.length || 0;
   const hasProgress = knowCount > 0 || dontKnowCount > 0 || skipCount > 0;
 
-  const currQuestion = pendingQuestions[0];
-  const hasFinished = !isLoading && hasProgress && !currQuestion;
+  const currQuestion = questions[currQuestionIndex];
+  const hasFinished = !isLoading && hasProgress && currQuestionIndex === -1;
 
   return (
     <div className="mb-0 gap-3 text-center sm:mb-40">
@@ -204,11 +185,37 @@ export function QuestionsList(props: QuestionsListProps) {
         knowCount={knowCount}
         didNotKnowCount={dontKnowCount}
         skippedCount={skipCount}
-        totalCount={unshuffledQuestions?.length || questions?.length}
+        totalCount={questions?.length}
         isLoading={isLoading}
         showLoginAlert={!isLoggedIn() && hasProgress}
         onResetClick={() => {
-          resetProgress('reset').finally(() => null);
+          resetProgress().finally(() => null);
+        }}
+        onNextClick={() => {
+          if (
+            currQuestionIndex !== -1 &&
+            currQuestionIndex < questions.length - 1
+          ) {
+            updateQuestionStatus('skip', currQuestion.id).finally(() => null);
+          }
+        }}
+        onPrevClick={() => {
+          if (currQuestionIndex > 0) {
+            const prevQuestion = questions[currQuestionIndex - 1];
+            // remove last question from the progress of the user
+            const tempUserProgress = {
+              know:
+                userProgress?.know.filter((id) => id !== prevQuestion.id) || [],
+              dontKnow:
+                userProgress?.dontKnow.filter((id) => id !== prevQuestion.id) ||
+                [],
+              skip:
+                userProgress?.skip.filter((id) => id !== prevQuestion.id) || [],
+            };
+
+            setUserProgress(tempUserProgress);
+            setCurrQuestionIndex(currQuestionIndex - 1);
+          }
         }}
       />
 
@@ -228,12 +235,12 @@ export function QuestionsList(props: QuestionsListProps) {
       >
         {hasFinished && (
           <QuestionFinished
-            totalCount={unshuffledQuestions?.length || questions?.length || 0}
+            totalCount={questions?.length || 0}
             knowCount={knowCount}
             didNotKnowCount={dontKnowCount}
             skippedCount={skipCount}
-            onReset={(type: QuestionProgressType | 'reset') => {
-              resetProgress(type).finally(() => null);
+            onReset={() => {
+              resetProgress().finally(() => null);
             }}
           />
         )}
