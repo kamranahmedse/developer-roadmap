@@ -4,4 +4,4 @@ Property binding helps you set values for properties of HTML elements or directi
 
 Visit the following resources to learn more:
 
-- [Angular Official Website](https://angular.io/guide/property-binding)
+- [Angular Official Website](https://angular.dev/guide/templates/property-binding)
