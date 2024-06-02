@@ -16,7 +16,7 @@ This starts a new container and maps the host's port 8080 to the container's por
 
 ## Listing Containers
 
-To list all running containers, use the `docker ps` command. To view all containers (including those that have stopped), use the `-a` flag:
+To list all running containers, use the `docker container ls` command. To view all containers (including those that have stopped), use the `-a` flag:
 
 ```bash
 docker container ls -a
@@ -30,7 +30,7 @@ To access a running container's shell, use the `docker exec` command:
 docker exec -it CONTAINER_ID bash
 ```
 
-Replace `CONTAINER_ID` with the ID or name of your desired container. You can find this in the output of `docker ps`.
+Replace `CONTAINER_ID` with the ID or name of your desired container. You can find this in the output of `docker container ls`.
 
 ## Stopping Containers
 
