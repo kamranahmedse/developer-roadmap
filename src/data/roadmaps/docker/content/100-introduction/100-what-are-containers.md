@@ -4,6 +4,9 @@ Containers are lightweight, portable, and isolated software environments that al
 
 ## How do containers work?
 
+Let consider , container as an independent small computer, it is a small computer in which everything will run like a phone.
+Containers are lightweight, portable, and isolated software 
+
 Unlike traditional virtualization, which emulates a complete operating system with its hardware resources, containers share the host's OS kernel and leverage lightweight virtualization techniques to create isolated processes. This approach leads to several benefits, including:
 
 - **Efficiency**: Containers have less overhead and can share common libraries and executable files, making it possible to run more containers on a single host compared to virtual machines (VMs).
