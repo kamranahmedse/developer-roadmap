@@ -36,3 +36,7 @@ export default App;
 ```
 
 In the above example, `source` prop is used to add the image URL, `style` prop for adding some custom styling, and `resizeMode` to define how the image should stretch to fill the available space. The `Text` component inside the `ImageBackground` is then rendered on top of the image.
+
+For more information and details, you can refer to the React Native docs:
+
+- [Image Background - React Native](https://reactnative.dev/docs/imagebackground)
