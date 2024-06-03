@@ -1,4 +1,11 @@
-import { CheckCircle, RotateCcw, SkipForward, Sparkles } from 'lucide-react';
+import {
+  CheckCircle,
+  ChevronLeft,
+  ChevronRight,
+  RotateCcw,
+  SkipForward,
+  Sparkles,
+} from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 
 type QuestionsProgressProps = {
@@ -9,6 +16,8 @@ type QuestionsProgressProps = {
   totalCount?: number;
   skippedCount?: number;
   onResetClick?: () => void;
+  onPrevClick?: () => void;
+  onNextClick?: () => void;
 };
 
 export function QuestionsProgress(props: QuestionsProgressProps) {
@@ -20,6 +29,8 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
     totalCount = 0,
     skippedCount = 0,
     onResetClick = () => null,
+    onPrevClick = () => null,
+    onNextClick = () => null,
   } = props;
 
   const totalSolved = knowCount + didNotKnowCount + skippedCount;
@@ -36,8 +47,22 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
             }}
           />
         </div>
-        <span className="ml-3 text-sm">
-          {totalSolved} / {totalCount}
+        <span className="ml-3 flex items-center text-sm">
+          <button
+            onClick={onPrevClick}
+            className="text-zinc-400 hover:text-black"
+          >
+            <ChevronLeft className="h-4" strokeWidth={3} />
+          </button>
+          <span className="block min-w-[41px] text-center">
+            <span className="tabular-nums">{totalSolved}</span> / {totalCount}
+          </span>
+          <button
+            onClick={onNextClick}
+            className="text-zinc-400 hover:text-black"
+          >
+            <ChevronRight className="h-4" strokeWidth={3} />
+          </button>
         </span>
       </div>
 
@@ -46,8 +71,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <CheckCircle className="mr-1 h-4" />
           <span>Knew</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className="tabular-nums">{knowCount}</span>{' '}
-            Items
+            <span className="tabular-nums">{knowCount}</span> Items
           </span>
         </span>
 
@@ -55,8 +79,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <Sparkles className="mr-1 h-4" />
           <span>Learnt</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className="tabular-nums">{didNotKnowCount}</span>{' '}
-            Items
+            <span className="tabular-nums">{didNotKnowCount}</span> Items
           </span>
         </span>
 
@@ -64,8 +87,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <SkipForward className="mr-1 h-4" />
           <span>Skipped</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className="tabular-nums">{skippedCount}</span>{' '}
-            Items
+            <span className="tabular-nums">{skippedCount}</span> Items
           </span>
         </span>
 
