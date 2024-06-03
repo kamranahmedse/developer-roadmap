@@ -1,6 +1,6 @@
 # log/slog
 
-The `log` and `log/slog` (since go 1.21) packages is the standard logging packages in Go. These packages provides a simple logging API that can be used to log messages to the console or to a file.
+The `log` and `log/slog` (since go 1.21) packages are the standard logging packages in Go. These packages provides a simple logging API that can be used to log messages to the console or to a file.
 
 Visit the following resources to learn more:
 
