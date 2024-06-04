@@ -11,3 +11,12 @@ grep "pattern" fileName
 ```
 
 This command will search for the specified pattern within the file and prints the line to the terminal.
+
+There is also an alternative to `grep` - `ripgrep`.
+
+`ripgrep` is an extremely fast text processor that supports all the features of `grep` and extends it.
+
+Visit the following resources to learn more:
+
+- [bgsu.edu: Advanced Grep Topics](https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm)
+- [Ripgrep: Github Repository](https://github.com/BurntSushi/ripgrep)
