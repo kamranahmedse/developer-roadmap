@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [Is There Any Reason to Still Use React Class Components?](https://medium.com/geekculture/is-there-any-reason-to-still-use-react-class-components-9b6a1e6aa9ef)
 - [Functional Components vs Class Components in React](https://www.freecodecamp.org/news/functional-components-vs-class-components-in-react)
 - [Migrate Class Components to Functional Components with Hooks in React](https://www.robinwieruch.de/react-hooks-migration/)
+- [React Class Components Tutorial](https://www.youtube.com/watch?v=lnV34uLEzis)
