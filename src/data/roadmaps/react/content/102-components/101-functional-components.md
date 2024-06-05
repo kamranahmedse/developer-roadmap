@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [Your first component](https://react.dev/learn/your-first-component)
 - [Passing props to a component](https://react.dev/learn/passing-props-to-a-component)
 - [Functional Components in React](https://www.robinwieruch.de/react-function-component/)
+- [React JS Functional Components](https://www.youtube.com/watch?v=NJ_qbsLf52w)
