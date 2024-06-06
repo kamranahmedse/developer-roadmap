@@ -6,8 +6,6 @@ Visit the following resources to learn more:
 
 - [The Odin Project](https://www.theodinproject.com//)
 - [What The Flexbox!](https://flexbox.io/)
-- [Learn CSS | Codecademy](https://www.codecademy.com/learn/learn-css)
-- [Learn Intermediate CSS | Codecademy](https://www.codecademy.com/learn/learn-intermediate-css)
 - [CSS Complete Course](https://youtu.be/n4R2E7O-Ngo)
 - [CSS Crash Course For Absolute Beginners](https://www.youtube.com/watch?v=yfoY53QXEnI)
 - [HTML and CSS Tutorial](https://www.youtube.com/watch?v=D-h8L5hgW-w)

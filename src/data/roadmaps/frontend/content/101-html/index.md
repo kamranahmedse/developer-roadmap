@@ -8,7 +8,6 @@ Visit the following resources to learn more:
 - [htmlreference.io: All HTML elements at a glance](https://htmlreference.io/)
 - [HTML For Beginners The Easy Way](https://html.com)
 - [Web Development Basics](https://internetingishard.netlify.app/html-and-css/index.html)
-- [Codecademy - Learn HTML](https://www.codecademy.com/learn/learn-html)
 - [Interactive HTML Course](https://github.com/denysdovhan/learnyouhtml)
 - [HTML Full Course for Beginners | Complete All-in-One Tutorial ](https://youtu.be/mJgBOIoGihA)
 - [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)

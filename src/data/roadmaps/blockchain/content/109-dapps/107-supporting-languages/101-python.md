@@ -10,4 +10,3 @@ Visit the following resources to learn more:
 - [W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
 - [Python Crash Course](https://ehmatthes.github.io/pcc/)
 - [Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [Codecademy - Learn Python 2](https://www.codecademy.com/learn/learn-python)

@@ -5,4 +5,3 @@ Scaling databases is the process of adapting them to handle more data and users 
 Visit the following resources to learn more:
 
 - [MongoDB: Database Scaling Basics](https://www.mongodb.com/basics/scaling)
-- [Codecademy: Database Scaling Strategies](https://www.codecademy.com/article/database-scaling-strategies)

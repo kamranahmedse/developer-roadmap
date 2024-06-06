@@ -7,7 +7,6 @@ Visit the following resources to learn more:
 - [Visit Dedicated JavaScript Roadmap](/javascript)
 - [W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
-- [Codecademy - Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 - [JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
 - [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)

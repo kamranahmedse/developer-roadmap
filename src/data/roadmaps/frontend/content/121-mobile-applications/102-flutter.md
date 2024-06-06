@@ -16,8 +16,6 @@ Visit the following resources to learn more:
 
 - [Visit Dedicated Flutter Roadmap](/flutter)
 - [Flutter Website](https://flutter.dev)
-- [Flutter Tutorial](https://www.w3adda.com/flutter-tutorial)
 - [Flutter Tutorial for Beginners](https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
-- [Flutter Tutorial](https://www.w3adda.com/flutter-tutorial)
 - [Learn Dart Programming](https://www.tutorialspoint.com/dart_programming/index.htm)
 - [12 Ways Flutter Streamlines App Development](https://thenewstack.io/12-ways-flutter-streamlines-app-development/)
