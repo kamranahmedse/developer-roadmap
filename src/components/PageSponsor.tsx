@@ -4,6 +4,7 @@ import { sponsorHidden } from '../stores/page';
 import { useStore } from '@nanostores/react';
 import { X } from 'lucide-react';
 import { setViewSponsorCookie } from '../lib/jwt';
+import { isMobile } from '../lib/is-mobile';
 
 export type PageSponsorType = {
   company: string;
@@ -50,6 +51,7 @@ export function PageSponsor(props: PageSponsorProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-sponsor`,
       {
         href: window.location.pathname,
+        mobile: isMobile() ? 'true' : 'false',
       },
     );
 
@@ -75,9 +77,15 @@ export function PageSponsor(props: PageSponsorProps) {
   };
 
   const clickSponsor = async (sponsorId: string) => {
-    const { response, error } = await httpPatch<{ status: 'ok' }>(
+    const clickUrl = new URL(
       `${import.meta.env.PUBLIC_API_URL}/v1-view-sponsor/${sponsorId}`,
-      {},
+    );
+
+    const { response, error } = await httpPatch<{ status: 'ok' }>(
+      clickUrl.toString(),
+      {
+        mobile: isMobile() ? true : false,
+      },
     );
 
     if (error || !response) {
