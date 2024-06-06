@@ -4,4 +4,4 @@ Enable an application to handle transient failures when it tries to connect to a
 
 Learn more from the following resources:
 
-- [Retry pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/retry)
+- [@article@Retry pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/retry)

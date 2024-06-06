@@ -4,8 +4,8 @@ Network security in Kubernetes involves securing network communication between d
 
 Learn more from the following links:
 
-- [Network Policies - Documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-- [Kubernetes Security Best Practices](https://www.youtube.com/watch?v=oBf5lrmquYI)
-- [6 Kubernetes Security Best Practices](https://thenewstack.io/6-kubernetes-security-best-practices/)
-- [The Kubernetes Network Security Effect](https://thenewstack.io/the-kubernetes-network-security-effect/)
-- [Kubernetes Security Best Practices to Keep You out of the News](https://thenewstack.io/kubernetes-security-best-practices-to-keep-you-out-of-the-news/)
+- [@official@Network Policies - Documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+- [@video@Kubernetes Security Best Practices](https://www.youtube.com/watch?v=oBf5lrmquYI)
+- [@article@6 Kubernetes Security Best Practices](https://thenewstack.io/6-kubernetes-security-best-practices/)
+- [@article@The Kubernetes Network Security Effect](https://thenewstack.io/the-kubernetes-network-security-effect/)
+- [@article@Kubernetes Security Best Practices to Keep You out of the News](https://thenewstack.io/kubernetes-security-best-practices-to-keep-you-out-of-the-news/)

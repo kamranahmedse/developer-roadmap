@@ -4,5 +4,5 @@
 
 For more information, visit the following link:
 
-- [What is .NET?](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
-- [An Overview of .NET](https://auth0.com/blog/what-is-dotnet-platform-overview/)
+- [@article@What is .NET?](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
+- [@article@An Overview of .NET](https://auth0.com/blog/what-is-dotnet-platform-overview/)

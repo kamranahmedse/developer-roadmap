@@ -8,4 +8,4 @@ Route requests to multiple services or multiple service instances using a single
 
 To learn more, visit the following links:
 
-- [Gateway Routing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)
+- [@article@Gateway Routing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)

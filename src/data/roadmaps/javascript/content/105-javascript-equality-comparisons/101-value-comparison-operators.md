@@ -8,4 +8,4 @@ In javascript, the `==` operator does the type conversion of the operands before
 
 Visit the following resources to learn more:
 
-- [Equality comparisons and sameness - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is)
+- [@article@Equality comparisons and sameness - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is)

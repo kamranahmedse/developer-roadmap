@@ -4,4 +4,4 @@ In Rust, the `char` keyword is used to denote a character type. A `char` in Rust
 
 Learn more from the following links:
 
-- [The Character Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-character-type)
+- [@article@The Character Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-character-type)

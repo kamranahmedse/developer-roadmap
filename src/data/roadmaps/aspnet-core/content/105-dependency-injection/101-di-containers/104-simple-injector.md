@@ -6,6 +6,6 @@ Simple Injector uses a technique called "registration" to define the objects and
 
 For more information, visit the following resources:
 
-- [How to use Simple Injector?](https://www.infoworld.com/article/3636242/how-to-use-simple-injector-in-aspnet-core-mvc.html)
-- [Simple Injector's Documentation](https://docs.simpleinjector.org/en/latest/)
-- [Example of Dependency Injection Using Simple Injector](https://www.c-sharpcorner.com/UploadFile/4d9083/dependency-injection-using-simple-injector/)
+- [@article@How to use Simple Injector?](https://www.infoworld.com/article/3636242/how-to-use-simple-injector-in-aspnet-core-mvc.html)
+- [@article@Simple Injector's Documentation](https://docs.simpleinjector.org/en/latest/)
+- [@article@Example of Dependency Injection Using Simple Injector](https://www.c-sharpcorner.com/UploadFile/4d9083/dependency-injection-using-simple-injector/)

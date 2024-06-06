@@ -31,12 +31,12 @@ In these types, the number after "i" or "u" denotes the size of the integer type
 
 There're also the `isize` and  the `usize` integer types. The sizes of these primitive are taken from the computer architecture (32/64 bits). When one these types is declared, the compiler calculate, so to speak, how many bytes it takes to reference any location in memory. For example, on a 32 bit target, this is 4 bytes and on a 64 bit target, this is 8 bytes.
 
-- [Integer Data Type in Rust](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types)
+- [@article@Integer Data Type in Rust](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types)
 
-- [Rust Data Types (With Examples)](https://www.programiz.com/rust/data-types#integer-type)
+- [@article@Rust Data Types (With Examples)](https://www.programiz.com/rust/data-types#integer-type)
 
-- [Machine-dependent Integer Types](https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types)
+- [@article@Machine-dependent Integer Types](https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types)
 
 Learn more from the following links:
 
-- [Integer Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types)
+- [@article@Integer Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types)

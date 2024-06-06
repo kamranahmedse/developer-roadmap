@@ -6,6 +6,6 @@ A monolithic architecture is often used for small to medium-sized systems, where
 
 Learn more from the following links:
 
-- [Overview of Monolithic Architecture](https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith)
-- [What is Monolithic architecture?](https://www.techtarget.com/whatis/definition/monolithic-architecture)
-- [What is Software Architecture? (Monolithic vs. Layered vs. Microservice)s](https://www.youtube.com/watch?v=_07NtoK-Kns)
+- [@article@Overview of Monolithic Architecture](https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith)
+- [@article@What is Monolithic architecture?](https://www.techtarget.com/whatis/definition/monolithic-architecture)
+- [@video@What is Software Architecture? (Monolithic vs. Layered vs. Microservice)s](https://www.youtube.com/watch?v=_07NtoK-Kns)

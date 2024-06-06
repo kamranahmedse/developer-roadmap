@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Reactivity API — reactive](https://vuejs.org/api/reactivity-core.html#reactive)
-- [Diving into Vue 3 - The Reactivity API](https://developers.deepgram.com/blog/2022/02/diving-into-vue-3-reactivity-api/)
+- [@article@Reactivity API — reactive](https://vuejs.org/api/reactivity-core.html#reactive)
+- [@article@Diving into Vue 3 - The Reactivity API](https://developers.deepgram.com/blog/2022/02/diving-into-vue-3-reactivity-api/)

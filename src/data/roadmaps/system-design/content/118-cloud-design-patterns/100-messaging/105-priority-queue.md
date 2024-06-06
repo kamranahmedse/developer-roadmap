@@ -4,4 +4,4 @@ Prioritize requests sent to services so that requests with a higher priority are
 
 Learn more from the following links:
 
-- [Priority Queue pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/priority-queue)
+- [@article@Priority Queue pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/priority-queue)

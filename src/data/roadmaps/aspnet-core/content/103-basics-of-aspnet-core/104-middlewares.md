@@ -6,6 +6,6 @@ In the ASP.NET Core framework, middleware is a key concept that is used to build
 
 Visit the following links for more resources:
 
-- [What is Middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
-- [Introduction to Middleware](https://www.techtarget.com/searchapparchitecture/definition/middleware)
-- [What is Middleware in .NET?](https://www.talend.com/resources/what-is-middleware/)
+- [@article@What is Middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
+- [@article@Introduction to Middleware](https://www.techtarget.com/searchapparchitecture/definition/middleware)
+- [@article@What is Middleware in .NET?](https://www.talend.com/resources/what-is-middleware/)

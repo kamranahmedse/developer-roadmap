@@ -4,4 +4,4 @@ Actix is a powerful, pragmatic, and extremely fast web framework for Rust. It is
 
 Visit the following resources to learn more:
 
-- [Actix](https://actix.rs/)
+- [@official@Actix](https://actix.rs/)

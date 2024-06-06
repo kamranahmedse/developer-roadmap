@@ -4,4 +4,4 @@ Headless Chrome is a way to run the Chrome browser in a headless environment wit
 
 Visit the following resources to learn more:
 
-- [Headless Chromium](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
+- [@article@Headless Chromium](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)

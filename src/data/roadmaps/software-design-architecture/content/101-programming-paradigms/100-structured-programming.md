@@ -4,4 +4,4 @@ Structured programming is a programming paradigm that emphasizes the use of stru
 
 Learn more from the following links:
 
-- [Overview of Structured programming](https://www.techtarget.com/searchsoftwarequality/definition/structured-programming-modular-programming)
+- [@article@Overview of Structured programming](https://www.techtarget.com/searchsoftwarequality/definition/structured-programming-modular-programming)

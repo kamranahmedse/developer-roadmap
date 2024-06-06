@@ -10,6 +10,6 @@ It is the default behavior of an Entity Framework, where a child entity is loade
 
 Visit the following links for more resources:
 
-- [Eager Loading & Lazy Loading](https://www.c-sharpcorner.com/article/eager-loading-lazy-loading-and-explicit-loading-in-entity-framework/)
-- [Difference between Eager and Lazy Loading](https://stackoverflow.com/questions/31366236/lazy-loading-vs-eager-loading)
-- [Working With Lazy & Eager Loading in Entity Framework](https://dzone.com/articles/working-with-lazy-loading-and-eager-loading-in-ent)
+- [@article@Eager Loading & Lazy Loading](https://www.c-sharpcorner.com/article/eager-loading-lazy-loading-and-explicit-loading-in-entity-framework/)
+- [@article@Difference between Eager and Lazy Loading](https://stackoverflow.com/questions/31366236/lazy-loading-vs-eager-loading)
+- [@article@Working With Lazy & Eager Loading in Entity Framework](https://dzone.com/articles/working-with-lazy-loading-and-eager-loading-in-ent)

@@ -8,6 +8,6 @@ Memcached has no internal mechanism to track misses which may happen. However, s
 
 Visit the following resources to learn more:
 
-- [Memcached, From Wikipedia](https://en.wikipedia.org/wiki/Memcached)
-- [Memcached, From Official Github](https://github.com/memcached/memcached#readme)
-- [Memcached Tutorial](https://www.tutorialspoint.com/memcached/index.htm)
+- [@article@Memcached, From Wikipedia](https://en.wikipedia.org/wiki/Memcached)
+- [@opensource@Memcached, From Official Github](https://github.com/memcached/memcached#readme)
+- [@article@Memcached Tutorial](https://www.tutorialspoint.com/memcached/index.htm)

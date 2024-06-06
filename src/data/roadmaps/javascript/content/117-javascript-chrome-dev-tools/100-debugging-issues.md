@@ -6,4 +6,4 @@ However, for quicker, more complex and easier to handler debugging (which also d
 
 Visit the following resources to learn more:
 
-- [Debugging JavaScript in the sources panel](https://developer.chrome.com/docs/devtools/javascript/)
+- [@article@Debugging JavaScript in the sources panel](https://developer.chrome.com/docs/devtools/javascript/)

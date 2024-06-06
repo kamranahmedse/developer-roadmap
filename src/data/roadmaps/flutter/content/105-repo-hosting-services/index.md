@@ -12,6 +12,6 @@ When choosing a repository hosting service for your Flutter project, consider yo
 
 Learn more from the following links:
 
-- [Host Flutter Website On GitHub Pages](https://www.youtube.com/watch?v=z-yOqoQ2q6s)
-- [How to Deploy a Flutter Web App?](https://medium.com/solute-labs/flutter-for-web-how-to-deploy-a-flutter-web-app-c7d9db7ced2e)
-- [Deploying - Flutter](https://docs.flutter.dev/deployment/web#deploying-to-the-web)
+- [@video@Host Flutter Website On GitHub Pages](https://www.youtube.com/watch?v=z-yOqoQ2q6s)
+- [@article@How to Deploy a Flutter Web App?](https://medium.com/solute-labs/flutter-for-web-how-to-deploy-a-flutter-web-app-c7d9db7ced2e)
+- [@article@Deploying - Flutter](https://docs.flutter.dev/deployment/web#deploying-to-the-web)

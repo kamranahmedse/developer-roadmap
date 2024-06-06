@@ -6,4 +6,4 @@ A subscription includes a "subscription" field at the top level, followed by the
 
 Learn more from following links:
 
-- [Subscriptions and Live Queries - Real Time with GraphQL](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)
+- [@article@Subscriptions and Live Queries - Real Time with GraphQL](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)

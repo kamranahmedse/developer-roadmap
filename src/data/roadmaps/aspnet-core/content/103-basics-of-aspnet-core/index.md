@@ -4,6 +4,6 @@ ASP.NET Core is a open-source, cross-platform web framework for building modern 
 
 For more information, visit the following resources:
 
-- [ASP.NET documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
-- [ASP.NET Core Tutorial](https://www.tutorialspoint.com/asp.net_core/index.htm)
-- [Learn ASP.NET Core from Scratch](https://www.tutorialsteacher.com/core)
+- [@article@ASP.NET documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
+- [@article@ASP.NET Core Tutorial](https://www.tutorialspoint.com/asp.net_core/index.htm)
+- [@article@Learn ASP.NET Core from Scratch](https://www.tutorialsteacher.com/core)

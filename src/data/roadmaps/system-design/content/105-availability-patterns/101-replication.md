@@ -8,4 +8,4 @@ Replication is an availability pattern that involves having multiple copies of t
 
 Visit the following links for more resources:
 
-- [Replication: Availability Pattern](https://github.com/donnemartin/system-design-primer#replication)
+- [@opensource@Replication: Availability Pattern](https://github.com/donnemartin/system-design-primer#replication)

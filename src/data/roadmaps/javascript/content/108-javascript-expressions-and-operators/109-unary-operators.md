@@ -4,5 +4,5 @@ JavaScript Unary Operators are the special operators that consider a single oper
 
 Visit the following resources to learn more:
 
-- [Unary Operators in JavaScript](https://www.educba.com/unary-operators-in-javascript/)
-- [Unary Operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators)
+- [@article@Unary Operators in JavaScript](https://www.educba.com/unary-operators-in-javascript/)
+- [@article@Unary Operators - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators)

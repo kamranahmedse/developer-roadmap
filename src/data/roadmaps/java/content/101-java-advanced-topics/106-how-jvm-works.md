@@ -4,7 +4,7 @@ The Java Virtual Machine is a program whose purpose is to execute other programs
 
 Visit the following resources to learn more:
 
-- [What is JVM?](https://www.javatpoint.com/jvm-java-virtual-machine)
-- [Introducing the Java Virtual Machine](https://www.infoworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
-- [JVM (Java Virtual Machine) Architecture](https://www.javatpoint.com/jvm-java-virtual-machine)
-- [How JVM works?](https://youtu.be/G1ubVOl9IBw)
+- [@article@What is JVM?](https://www.javatpoint.com/jvm-java-virtual-machine)
+- [@article@Introducing the Java Virtual Machine](https://www.infoworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
+- [@article@JVM (Java Virtual Machine) Architecture](https://www.javatpoint.com/jvm-java-virtual-machine)
+- [@video@How JVM works?](https://youtu.be/G1ubVOl9IBw)

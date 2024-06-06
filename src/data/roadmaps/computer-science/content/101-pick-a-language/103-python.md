@@ -4,13 +4,13 @@ Python is a well known programming language which is both a strongly typed and a
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated Python Roadmap](/python)
-- [Python Website](https://www.python.org/)
-- [Python Getting Started](https://www.python.org/about/gettingstarted/)
-- [Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [FreeCodeCamp.org - How to Learn Python ? ](https://www.freecodecamp.org/news/how-to-learn-python/)
-- [Python principles - Python basics](https://pythonprinciples.com/)
-- [W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
-- [Python Crash Course](https://ehmatthes.github.io/pcc/)
-- [An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
-- [Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)
+- [@roadmap@Visit Dedicated Python Roadmap](/python)
+- [@official@Python Website](https://www.python.org/)
+- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
+- [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
+- [@article@FreeCodeCamp.org - How to Learn Python ? ](https://www.freecodecamp.org/news/how-to-learn-python/)
+- [@article@Python principles - Python basics](https://pythonprinciples.com/)
+- [@article@W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
+- [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@article@An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
+- [@article@Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)

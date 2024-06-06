@@ -4,8 +4,8 @@ Python is an interpreted high-level general-purpose programming language. Its de
 
 To start learning Python, here are some useful resources:
 
-- [Python.org](https://www.python.org/) - The official website offers extensive documentation and tutorials for beginners as well as advanced users.
-- [Real Python](https://realpython.com/) - Offers a variety of Python tutorials, articles, and courses that cater to different experience levels.
-- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - A beginner-friendly book that teaches Python by guiding you through practical tasks and automation examples.
+- [@official@Python.org](https://www.python.org/) - The official website offers extensive documentation and tutorials for beginners as well as advanced users.
+- [@article@Real Python](https://realpython.com/) - Offers a variety of Python tutorials, articles, and courses that cater to different experience levels.
+- [@article@Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - A beginner-friendly book that teaches Python by guiding you through practical tasks and automation examples.
 
 Remember, practice is key, and the more you work with Python, the more you'll appreciate its utility in the world of cyber security.

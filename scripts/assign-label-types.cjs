@@ -129,19 +129,20 @@ allRoadmapDirs.forEach((roadmapId) => {
 
   // for each of the files, assign the type of link to the beginning of each markdown link
   // i.e. - [@article@abc](xyz) where @article@ is the type of link. Possible types:
+  // - @official@
+  // - @opensource@
   // - @article@
   // - @course@
   // - @opensource@
   // - @podcast@
   // - @video@
-  // - @website@
   files.forEach((file) => {
     const content = fs.readFileSync(file, 'utf-8');
     const lines = content.split('\n');
 
     const newContent = lines
       .map((line) => {
-        if (line.startsWith('- [')) {
+        if (line.startsWith('- [') && !line.startsWith('- [@')) {
           const type = line.match(/@(\w+)@/);
           if (type) {
             return line;
@@ -158,8 +159,8 @@ allRoadmapDirs.forEach((roadmapId) => {
             }
 
             if (!fullUrl) {
-              console.error('No URL found in line:', line);
-              return;
+              console.error('Invalid URL found in:', file);
+              return line;
             }
           }
 

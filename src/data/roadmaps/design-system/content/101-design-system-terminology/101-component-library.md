@@ -4,6 +4,6 @@ A component library is a collection of all the components used in a website, sof
 
 Visit the following resources to learn more:
 
-- [Pattern Lab](https://patternlab.io/)
-- [Fractal](https://fractal.build/)
-- [Storybook](https://storybook.js.org/)
+- [@article@Pattern Lab](https://patternlab.io/)
+- [@article@Fractal](https://fractal.build/)
+- [@article@Storybook](https://storybook.js.org/)

@@ -6,5 +6,5 @@ Key-value stores provide high performance and are often used for simple data mod
 
 To learn more, visit the following links:
 
-- [Key–value database](https://en.wikipedia.org/wiki/Key%E2%80%93value_database)
-- [What are the disadvantages of using a key/value table?](https://stackoverflow.com/questions/4056093/what-are-the-disadvantages-of-using-a-key-value-table-over-nullable-columns-or)
+- [@article@Key–value database](https://en.wikipedia.org/wiki/Key%E2%80%93value_database)
+- [@article@What are the disadvantages of using a key/value table?](https://stackoverflow.com/questions/4056093/what-are-the-disadvantages-of-using-a-key-value-table-over-nullable-columns-or)

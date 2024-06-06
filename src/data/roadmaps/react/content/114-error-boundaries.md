@@ -6,4 +6,4 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 
 Visit the following resources to learn more:
 
-- [Error Boundaries in React](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
+- [@official@Error Boundaries in React](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)

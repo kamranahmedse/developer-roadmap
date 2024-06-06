@@ -4,4 +4,4 @@ AWS Well-Architected Framework is a set of strategic guidelines provided by Amaz
 
 Visit the following resources to learn more:
 
-- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)
+- [@article@AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)

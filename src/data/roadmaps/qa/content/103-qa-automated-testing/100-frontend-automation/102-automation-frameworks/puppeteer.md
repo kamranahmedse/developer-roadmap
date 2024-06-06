@@ -4,5 +4,5 @@ Puppeteer is a Node library which provides a high-level API to control headless 
 
 Visit the following resources to learn more:
 
-- [Puppetter](https://developer.chrome.com/docs/puppeteer/)
-- [Puppetter Tutorial](https://www.freecodecamp.org/news/how-to-use-puppeteer-with-nodejs/)
+- [@article@Puppetter](https://developer.chrome.com/docs/puppeteer/)
+- [@article@Puppetter Tutorial](https://www.freecodecamp.org/news/how-to-use-puppeteer-with-nodejs/)

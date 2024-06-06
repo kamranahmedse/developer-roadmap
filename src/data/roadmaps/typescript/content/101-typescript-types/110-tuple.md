@@ -16,4 +16,4 @@ const third = pair[2];
 
 Learn more from the following links:
 
-- [Tuple Types](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types)
+- [@article@Tuple Types](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types)

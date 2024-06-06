@@ -4,4 +4,4 @@ In some cases, we may want to pass a template fragment to a child component, and
 
 Visit the following resources to learn more:
 
-- [Slots in Vue.js](https://vuejs.org/guide/components/slots.html)
+- [@article@Slots in Vue.js](https://vuejs.org/guide/components/slots.html)

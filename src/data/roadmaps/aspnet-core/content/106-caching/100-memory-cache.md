@@ -4,6 +4,6 @@ Memory caching (often simply referred to as caching) is a technique in which com
 
 Visit the following resources to learn more:
 
-- [Cache in-memory in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-7.0)
-- [Intro to In-Memory Caching in C#](https://www.youtube.com/watch?v=2jj2wH60QuE)
-- [What is Memory Caching?](https://hazelcast.com/glossary/memory-caching/)
+- [@article@Cache in-memory in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-7.0)
+- [@video@Intro to In-Memory Caching in C#](https://www.youtube.com/watch?v=2jj2wH60QuE)
+- [@article@What is Memory Caching?](https://hazelcast.com/glossary/memory-caching/)

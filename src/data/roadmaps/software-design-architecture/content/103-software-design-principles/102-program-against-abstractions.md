@@ -6,5 +6,5 @@ Programming against abstractions allows for more flexibility in the code. When c
 
 Learn more from the following resources:
 
-- [What is Abstraction in Programming – And Why is it Useful?](https://www.freecodecamp.org/news/what-is-abstraction-in-programming/)
-- [Overview of Abstraction principle](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming))
+- [@article@What is Abstraction in Programming – And Why is it Useful?](https://www.freecodecamp.org/news/what-is-abstraction-in-programming/)
+- [@article@Overview of Abstraction principle](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming))

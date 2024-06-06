@@ -4,5 +4,5 @@ Kubernetes (k8s) security involves protecting against potential threats to a clu
 
 Learn more from the following resources:
 
-- [Security Documentation](https://kubernetes.io/docs/concepts/security/)
-- [Kubernetes Security Best Practices you need to know](https://www.youtube.com/watch?v=oBf5lrmquYI)
+- [@official@Security Documentation](https://kubernetes.io/docs/concepts/security/)
+- [@video@Kubernetes Security Best Practices you need to know](https://www.youtube.com/watch?v=oBf5lrmquYI)

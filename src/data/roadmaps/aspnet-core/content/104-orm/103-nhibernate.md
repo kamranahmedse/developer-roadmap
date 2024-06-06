@@ -6,6 +6,6 @@ NHibernate uses the concept of "mapping files" which are XML files that define h
 
 For more information, visit the following links:
 
-- [What is Nhibernate?](https://www.partech.nl/en/publications/2021/08/what-is-nhibernate-and-how-is-it-different-from-entity-framework)
-- [NHibernate - ORM](https://www.tutorialspoint.com/nhibernate/nhibernate_orm.htm)
-- [Get Started with NHibernate](https://nhibernate.info/)
+- [@article@What is Nhibernate?](https://www.partech.nl/en/publications/2021/08/what-is-nhibernate-and-how-is-it-different-from-entity-framework)
+- [@article@NHibernate - ORM](https://www.tutorialspoint.com/nhibernate/nhibernate_orm.htm)
+- [@official@Get Started with NHibernate](https://nhibernate.info/)

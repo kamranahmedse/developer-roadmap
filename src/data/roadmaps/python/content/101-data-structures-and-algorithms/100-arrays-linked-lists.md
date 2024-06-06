@@ -4,8 +4,8 @@ Arrays store elements in contiguous memory locations, resulting in easily calcul
 
 Visit the following resources to learn more:
 
-- [Python Array Tutorial](https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/)
-- [Arrays in Python](https://www.edureka.co/blog/arrays-in-python/)
-- [Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
-- [Linked List Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=odW9FU8jPRQ)
-- [Linked List Python](https://realpython.com/linked-lists-python/)
+- [@article@Python Array Tutorial](https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/)
+- [@article@Arrays in Python](https://www.edureka.co/blog/arrays-in-python/)
+- [@video@Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
+- [@video@Linked List Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=odW9FU8jPRQ)
+- [@article@Linked List Python](https://realpython.com/linked-lists-python/)

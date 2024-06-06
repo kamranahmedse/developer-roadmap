@@ -6,4 +6,4 @@ Fields are defined in the GraphQL schema, which is a blueprint of the data that 
 
 Learn more from the following links:
 
-- [GraphQL: Types and Fields](https://graphql.org/learn/queries/#fields)
+- [@official@GraphQL: Types and Fields](https://graphql.org/learn/queries/#fields)

@@ -4,4 +4,4 @@ Implement functional checks in an application that external tools can access thr
 
 To learn more visit the following links:
 
-- [Health Endpoint Monitoring pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring)
+- [@article@Health Endpoint Monitoring pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring)

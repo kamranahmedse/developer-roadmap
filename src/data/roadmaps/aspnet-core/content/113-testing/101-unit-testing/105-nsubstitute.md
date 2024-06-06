@@ -4,5 +4,5 @@ NSubstitute is a popular open-source .NET library that allows developers to crea
 
 To learn more, visit the following links:
 
-- [Overview of NSubstitute](https://github.com/nsubstitute/NSubstitute)
-- [Getting started NSubstitute](https://nsubstitute.github.io/help/getting-started/)
+- [@opensource@Overview of NSubstitute](https://github.com/nsubstitute/NSubstitute)
+- [@article@Getting started NSubstitute](https://nsubstitute.github.io/help/getting-started/)

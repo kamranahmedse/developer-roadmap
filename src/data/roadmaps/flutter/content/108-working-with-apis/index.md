@@ -6,5 +6,5 @@ The `http` library is a popular choice for making HTTP requests in Flutter, as i
 
 Learn more from the following resources:
 
-- [Using Google APIs](https://dart.dev/guides/google-apis)
-- [How to work with APIs in Flutter?](https://www.youtube.com/watch?v=uVo7HDWDUEQ)
+- [@article@Using Google APIs](https://dart.dev/guides/google-apis)
+- [@video@How to work with APIs in Flutter?](https://www.youtube.com/watch?v=uVo7HDWDUEQ)

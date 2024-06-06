@@ -6,4 +6,4 @@ Optimistic rollups allow anyone to publish blocks without providing proofs of va
 
 Visit the following resources to learn more:
 
-- [How Do Optimistic Rollups Work (The Complete Guide)](https://www.alchemy.com/overviews/optimistic-rollups)
+- [@article@How Do Optimistic Rollups Work (The Complete Guide)](https://www.alchemy.com/overviews/optimistic-rollups)

@@ -6,4 +6,4 @@ Thanks to the router outlet, your app will have multiple views/pages and the app
 
 Visit the following resources to learn more:
 
-- [Understanding Router Outlets](https://angular.io/api/router/RouterOutlet)
+- [@official@Understanding Router Outlets](https://angular.io/api/router/RouterOutlet)

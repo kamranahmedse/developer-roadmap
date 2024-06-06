@@ -10,4 +10,4 @@ type T2 = Exclude<string | number | (() => void), Function>; // string | number
 
 Learn more from the following links:
 
-- [Exclude<UnionType, ExcludedMembers>](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers)
+- [@article@Exclude<UnionType, ExcludedMembers>](https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers)

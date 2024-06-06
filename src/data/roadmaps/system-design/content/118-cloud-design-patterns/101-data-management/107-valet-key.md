@@ -4,4 +4,4 @@ Use a token that provides clients with restricted direct access to a specific re
 
 Learn more from the following links:
 
-- [Valet Key pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/valet-key)
+- [@article@Valet Key pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/valet-key)

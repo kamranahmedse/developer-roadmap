@@ -18,5 +18,5 @@ There is also an alternative to `grep` - `ripgrep`.
 
 Visit the following resources to learn more:
 
-- [bgsu.edu: Advanced Grep Topics](https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm)
-- [Ripgrep: Github Repository](https://github.com/BurntSushi/ripgrep)
+- [@article@bgsu.edu: Advanced Grep Topics](https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm)
+- [@opensource@Ripgrep: Github Repository](https://github.com/BurntSushi/ripgrep)

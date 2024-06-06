@@ -10,4 +10,4 @@ There are three types of exceptions -
 
 Visit the following resources to learn more:
 
-- [Understanding Java Exceptions](https://www.youtube.com/watch?v=W-N2ltgU-X4)
+- [@video@Understanding Java Exceptions](https://www.youtube.com/watch?v=W-N2ltgU-X4)

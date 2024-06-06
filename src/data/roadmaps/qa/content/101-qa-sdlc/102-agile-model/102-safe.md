@@ -4,4 +4,4 @@ Scaled Agile Framework (SAFe) is a freely available online knowledge base that a
 
 Visit the following resources to learn more:
 
-- [SAFe (Scaled Agile Framework) Tutorial](https://www.guru99.com/scaled-agile-framework.html)
+- [@article@SAFe (Scaled Agile Framework) Tutorial](https://www.guru99.com/scaled-agile-framework.html)

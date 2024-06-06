@@ -6,5 +6,5 @@ Axios is a client HTTP API based on the XMLHttpRequest interface provided by bro
 
 Visit the following resources to learn more:
 
-- [Axios Getting Started](https://axios-http.com/docs/intro)
-- [How to make HTTP requests with Axios](https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#why)
+- [@article@Axios Getting Started](https://axios-http.com/docs/intro)
+- [@article@How to make HTTP requests with Axios](https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#why)

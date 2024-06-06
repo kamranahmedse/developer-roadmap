@@ -4,6 +4,6 @@ Iterators and generators, introduced into JavaScript with ECMAScript 6, represen
 
 Visit the following resources to learn more:
 
-- [Introduction to Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-introduction)
-- [A Detailed Discussion on Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-iterators)
-- [What Exactly Are Generators? - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-generators)
+- [@article@Introduction to Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-introduction)
+- [@article@A Detailed Discussion on Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-iterators)
+- [@article@What Exactly Are Generators? - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-generators)

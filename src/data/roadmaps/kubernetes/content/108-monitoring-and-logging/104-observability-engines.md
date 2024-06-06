@@ -4,5 +4,5 @@ Observability in Kubernetes (k8s) refers to the ability to gain insight into the
 
 Learn more from the following resources:
 
-- [Kubernetes Observability 101: Tools, Best Practices, And More](https://www.cloudzero.com/blog/kubernetes-observability)
-- [Kubernetes Observability in KubeSphere](https://kubesphere.io/observability/)
+- [@article@Kubernetes Observability 101: Tools, Best Practices, And More](https://www.cloudzero.com/blog/kubernetes-observability)
+- [@article@Kubernetes Observability in KubeSphere](https://kubesphere.io/observability/)

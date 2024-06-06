@@ -4,6 +4,6 @@ In browsers, the top-level scope is the global scope. This means that within the
 
 Visit the following resources to learn more:
 
-- [global Keyword in Node.js](https://nodejs.org/api/globals.html#global)
-- [What is Global Object?](https://www.youtube.com/watch?v=jn8PZNBmKm0)
-- [Global Object in Node](https://www.youtube.com/watch?v=PY-AycMkEAg)
+- [@official@global Keyword in Node.js](https://nodejs.org/api/globals.html#global)
+- [@video@What is Global Object?](https://www.youtube.com/watch?v=jn8PZNBmKm0)
+- [@video@Global Object in Node](https://www.youtube.com/watch?v=PY-AycMkEAg)

@@ -4,6 +4,6 @@ Open Systems Interconnection (OSI) model is a **conceptual** model consists of 7
 
 Visit the following resources to learn more:
 
-- [What is OSI Model?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/open-systems-interconnection-model-osi/)
-- [OSI Model](https://www.youtube.com/watch?v=dV8mjZd1OtU)
-- [OSI vs TCP/IP Model](https://www.youtube.com/watch?v=F5rni9fr1yE)
+- [@article@What is OSI Model?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/open-systems-interconnection-model-osi/)
+- [@video@OSI Model](https://www.youtube.com/watch?v=dV8mjZd1OtU)
+- [@video@OSI vs TCP/IP Model](https://www.youtube.com/watch?v=F5rni9fr1yE)

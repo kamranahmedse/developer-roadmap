@@ -14,6 +14,6 @@ Additionally, there are other complex data types like dynamic, var, and Object i
 
 Visit the following resources to learn more:
 
-- [Built-in types](https://dart.dev/guides/language/language-tour#built-in-types)
-- [Overview of Built-in Types](https://dart.dev/guides/language/coming-from/js-to-dart#built-in-types)
-- [Collections | Dart](https://dart.dev/language/collections)
+- [@article@Built-in types](https://dart.dev/guides/language/language-tour#built-in-types)
+- [@article@Overview of Built-in Types](https://dart.dev/guides/language/coming-from/js-to-dart#built-in-types)
+- [@article@Collections | Dart](https://dart.dev/language/collections)

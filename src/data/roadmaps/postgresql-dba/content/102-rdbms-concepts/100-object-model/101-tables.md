@@ -74,4 +74,4 @@ Be cautious when using this command, as there's no way to recover a table once i
 
 By understanding the basics of creating, modifying, and deleting tables in PostgreSQL, you now have a solid foundation to build your database and store data in a structured manner.
 
-- [Table Basics](https://www.postgresql.org/docs/current/ddl-basics.html)
+- [@official@Table Basics](https://www.postgresql.org/docs/current/ddl-basics.html)

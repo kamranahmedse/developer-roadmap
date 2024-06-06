@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [BitBucket Website](https://bitbucket.com/)
-- [How to use BitBucket?](https://bitbucket.org/product/guides)
+- [@official@BitBucket Website](https://bitbucket.com/)
+- [@official@How to use BitBucket?](https://bitbucket.org/product/guides)

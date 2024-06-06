@@ -4,5 +4,5 @@ Cypress is an open-source end-to-end testing framework for web applications, it'
 
 To learn more, visit the following links:
 
-- [Cypress - End To End Testing Tool](https://www.c-sharpcorner.com/article/getting-started-with-cypress-io/)
-- [Overview of Cypress](https://www.cypress.io/)
+- [@article@Cypress - End To End Testing Tool](https://www.c-sharpcorner.com/article/getting-started-with-cypress-io/)
+- [@official@Overview of Cypress](https://www.cypress.io/)

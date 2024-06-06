@@ -7,4 +7,4 @@ Vue offers two built-in components that can help work with transitions and anima
 
 Visit the following resources to learn more:
 
-- [Transition Component](https://vuejs.org/guide/built-ins/transition.html#transition)
+- [@article@Transition Component](https://vuejs.org/guide/built-ins/transition.html#transition)

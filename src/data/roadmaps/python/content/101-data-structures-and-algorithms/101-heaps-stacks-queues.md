@@ -8,10 +8,10 @@
 
 Visit the following resources to learn more:
 
-- [Heaps, Stacks, Queues](https://stephanosterburg.gitbook.io/scrapbook/coding/coding-interview/data-structures/heaps-stacks-queues)
-- [Stack Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=I5lq6sCuABE)
-- [Queue Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=mDCi1lXd9hc)
-- [How to Implement Python Stack?](https://realpython.com/how-to-implement-python-stack/)
-- [Queue in Python](https://www.geeksforgeeks.org/queue-in-python/)
-- [Python Stacks, Queues, and Priority Queues in Practice](https://realpython.com/queue-in-python/)
-- [Heap Implementation in Python](https://www.educative.io/answers/heap-implementation-in-python)
+- [@article@Heaps, Stacks, Queues](https://stephanosterburg.gitbook.io/scrapbook/coding/coding-interview/data-structures/heaps-stacks-queues)
+- [@video@Stack Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=I5lq6sCuABE)
+- [@video@Queue Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=mDCi1lXd9hc)
+- [@article@How to Implement Python Stack?](https://realpython.com/how-to-implement-python-stack/)
+- [@article@Queue in Python](https://www.geeksforgeeks.org/queue-in-python/)
+- [@article@Python Stacks, Queues, and Priority Queues in Practice](https://realpython.com/queue-in-python/)
+- [@article@Heap Implementation in Python](https://www.educative.io/answers/heap-implementation-in-python)

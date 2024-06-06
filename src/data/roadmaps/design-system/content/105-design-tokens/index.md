@@ -4,4 +4,4 @@ Variables that store values for the base layer of your design system, like colou
 
 Visit the following resources to learn more:
 
-- [What Are Design Tokens?](https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/)
+- [@article@What Are Design Tokens?](https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/)

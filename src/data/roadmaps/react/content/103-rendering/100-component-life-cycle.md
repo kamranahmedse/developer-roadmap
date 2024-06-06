@@ -6,5 +6,5 @@ It is not recommended to use lifecycle methods manually. Instead, use the useEff
 
 Visit the following resources to learn more:
 
-- [Class Component](https://react.dev/reference/react/Component)
-- [Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)
+- [@official@Class Component](https://react.dev/reference/react/Component)
+- [@official@Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)

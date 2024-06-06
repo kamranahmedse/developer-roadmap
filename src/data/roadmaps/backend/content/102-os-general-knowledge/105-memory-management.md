@@ -6,4 +6,4 @@ To achieve a degree of multiprogramming and proper utilization of memory, memory
 
 Visit the following resources to learn more:
 
-- [Demystifying memory management in modern programming languages](https://dev.to/deepu105/demystifying-memory-management-in-modern-programming-languages-ddd)
+- [@article@Demystifying memory management in modern programming languages](https://dev.to/deepu105/demystifying-memory-management-in-modern-programming-languages-ddd)

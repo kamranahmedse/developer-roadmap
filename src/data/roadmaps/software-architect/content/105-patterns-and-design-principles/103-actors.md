@@ -4,5 +4,5 @@ Actor Model is a model that represents actors as the basic unit of a system, the
 
 Visit the following resources to learn more:
 
-- [Actor Model Explained](https://www.youtube.com/watch?v=ELwEdb_pD0k)
-- [The actor model in 10 minutes](https://www.brianstorti.com/the-actor-model/)
+- [@video@Actor Model Explained](https://www.youtube.com/watch?v=ELwEdb_pD0k)
+- [@article@The actor model in 10 minutes](https://www.brianstorti.com/the-actor-model/)

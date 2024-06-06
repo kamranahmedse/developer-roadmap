@@ -4,5 +4,5 @@ An assignment operator assigns a value to its left operand based on the value of
 
 Visit the following resources to learn more:
 
-- [Assignment Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
-- [Basic Operators](https://javascript.info/operators#assignment)
+- [@article@Assignment Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+- [@article@Basic Operators](https://javascript.info/operators#assignment)

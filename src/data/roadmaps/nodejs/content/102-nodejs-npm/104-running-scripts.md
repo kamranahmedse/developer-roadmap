@@ -4,5 +4,5 @@ In Node.js, npm scripts are used for the purpose of initiating a server, startin
 
 Visit the following resources to learn more:
 
-- [Example of Running Scripts](https://riptutorial.com/node-js/example/4592/running-scripts)
-- [Running Scripts](https://docs.npmjs.com/downloading-and-installing-packages-locally)
+- [@article@Example of Running Scripts](https://riptutorial.com/node-js/example/4592/running-scripts)
+- [@article@Running Scripts](https://docs.npmjs.com/downloading-and-installing-packages-locally)

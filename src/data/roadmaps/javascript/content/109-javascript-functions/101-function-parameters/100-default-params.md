@@ -4,4 +4,4 @@ Default function parameters allow named parameters to be initialized with defaul
 
 Visit the following resources to learn more:
 
-- [Default Parameters - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+- [@article@Default Parameters - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)

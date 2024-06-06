@@ -9,5 +9,5 @@ TypeScript extends JavaScript, providing a better developer experience. The bene
 
 Visit the following resources to learn more:
 
-- [linguinecode - Reasons to use TypeScript](https://linguinecode.com/post/5-reasons-why-to-use-typescript)
-- [Codemotion - Reasons to use TypeScript](https://www.codemotion.com/magazine/backend/why-you-should-use-typescript-for-your-next-project/)
+- [@article@linguinecode - Reasons to use TypeScript](https://linguinecode.com/post/5-reasons-why-to-use-typescript)
+- [@article@Codemotion - Reasons to use TypeScript](https://www.codemotion.com/magazine/backend/why-you-should-use-typescript-for-your-next-project/)

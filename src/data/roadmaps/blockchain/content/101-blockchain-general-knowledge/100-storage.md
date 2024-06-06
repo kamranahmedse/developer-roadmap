@@ -4,6 +4,6 @@ Unlike a centralized server operated by a single company or organization, decent
 
 Visit the following resources to learn more:
 
-- [Blockchain Storage](https://www.techtarget.com/searchstorage/definition/blockchain-storage)
-- [Decentralized Storage](https://ethereum.org/en/developers/docs/storage/)
-- [How IPFS works](https://docs.ipfs.tech/concepts/how-ipfs-works/)
+- [@article@Blockchain Storage](https://www.techtarget.com/searchstorage/definition/blockchain-storage)
+- [@article@Decentralized Storage](https://ethereum.org/en/developers/docs/storage/)
+- [@article@How IPFS works](https://docs.ipfs.tech/concepts/how-ipfs-works/)

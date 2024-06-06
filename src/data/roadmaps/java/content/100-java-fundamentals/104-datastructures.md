@@ -9,6 +9,6 @@ As the name indicates itself, a **Data Structure** is a way of organizing the da
 
 Visit the following resources to learn more:
 
-- [ Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
-- [Java + DSA + Interview Preparation Course](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
-- [Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
+- [@article@ Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
+- [@video@Java + DSA + Interview Preparation Course](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
+- [@video@Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)

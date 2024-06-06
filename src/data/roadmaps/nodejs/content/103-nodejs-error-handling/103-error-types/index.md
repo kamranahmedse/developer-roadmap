@@ -6,5 +6,5 @@ Knowing the difference in types of errors and the reasons for them will make it 
 
 Visit the following resources to learn more:
 
-- [Node.js Errors](https://nodejs.org/api/errors.html)
-- [MDN: JavaScript Error Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+- [@official@Node.js Errors](https://nodejs.org/api/errors.html)
+- [@article@MDN: JavaScript Error Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)

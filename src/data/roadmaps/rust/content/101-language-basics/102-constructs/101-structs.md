@@ -4,4 +4,4 @@ In Rust, `struct` is a custom data type used for grouping related values togethe
 
 Learn more from the following links:
 
-- [Defining and Instantiating Structs](https://rust-book.cs.brown.edu/ch05-01-defining-structs.html)
+- [@article@Defining and Instantiating Structs](https://rust-book.cs.brown.edu/ch05-01-defining-structs.html)

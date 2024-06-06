@@ -4,4 +4,4 @@ Interprocess communication (IPC) refers specifically to the mechanisms an operat
 
 Visit the following resources to learn more:
 
-- [Interprocess Communication - Neso Academy](https://www.youtube.com/watch?v=dJuYKfR8vec)
+- [@video@Interprocess Communication - Neso Academy](https://www.youtube.com/watch?v=dJuYKfR8vec)

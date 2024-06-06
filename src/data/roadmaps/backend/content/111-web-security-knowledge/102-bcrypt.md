@@ -4,6 +4,6 @@ bcrypt is a password hashing function, that has been proven reliable and secure 
 
 Visit the following resources to learn more:
 
-- [bcrypts npm package](https://www.npmjs.com/package/bcrypt)
-- [Understanding bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
-- [bcrypt explained](https://www.youtube.com/watch?v=O6cmuiTBZVs)
+- [@article@bcrypts npm package](https://www.npmjs.com/package/bcrypt)
+- [@article@Understanding bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
+- [@video@bcrypt explained](https://www.youtube.com/watch?v=O6cmuiTBZVs)

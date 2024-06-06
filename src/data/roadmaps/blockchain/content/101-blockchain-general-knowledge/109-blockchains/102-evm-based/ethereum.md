@@ -6,6 +6,6 @@ The Ethereum platform launched in 2015, and it’s now the second largest form o
 
 Visit the following resources to learn more:
 
-- [Ethereum whitepaper](https://ethereum.org/en/whitepaper/)
-- [Intro to Ethereum](https://ethereum.org/en/developers/docs/intro-to-ethereum/)
-- [A gentle introduction to Ethereum](https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/)
+- [@official@Ethereum whitepaper](https://ethereum.org/en/whitepaper/)
+- [@official@Intro to Ethereum](https://ethereum.org/en/developers/docs/intro-to-ethereum/)
+- [@article@A gentle introduction to Ethereum](https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/)

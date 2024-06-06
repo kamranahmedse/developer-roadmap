@@ -4,6 +4,6 @@ CommonJS modules are the original way to package JavaScript code for Node.js. No
 
 Visit the following resources to learn more:
 
-- [Modules in Javascript: CJS Section](https://www.freecodecamp.org/news/modules-in-javascript/#commonjsmodules)
-- [How the CJS Module System Works](https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/)
-- [How to Import and Export Modules in CJS](https://www.youtube.com/watch?v=XTND4rjATXA)
+- [@article@Modules in Javascript: CJS Section](https://www.freecodecamp.org/news/modules-in-javascript/#commonjsmodules)
+- [@article@How the CJS Module System Works](https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/)
+- [@video@How to Import and Export Modules in CJS](https://www.youtube.com/watch?v=XTND4rjATXA)

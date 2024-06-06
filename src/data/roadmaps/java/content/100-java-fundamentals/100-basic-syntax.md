@@ -7,5 +7,5 @@ Understanding the basics is the key to a solid foundation. In this section, lear
 
 Visit the following resources to learn more:
 
-- [Java - Basic Syntax](https://www.youtube.com/watch?v=81piDKqPxjQ)
-- [Java Tutorial for Beginners](https://www.youtube.com/watch?v=RRubcjpTkks)
+- [@video@Java - Basic Syntax](https://www.youtube.com/watch?v=81piDKqPxjQ)
+- [@video@Java Tutorial for Beginners](https://www.youtube.com/watch?v=RRubcjpTkks)

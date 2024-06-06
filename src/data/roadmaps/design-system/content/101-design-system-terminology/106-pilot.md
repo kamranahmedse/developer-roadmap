@@ -4,4 +4,4 @@ Pilots are one of the best ways to put your design system through its paces, esp
 
 Visit the following resources to learn more:
 
-- [Design Systems: Pilots & Scorecards](https://superfriendly.com/design-systems/articles/design-systems-pilots-scorecards/)
+- [@article@Design Systems: Pilots & Scorecards](https://superfriendly.com/design-systems/articles/design-systems-pilots-scorecards/)

@@ -6,5 +6,5 @@ A Value Object is defined by its value rather than its identity, meaning that tw
 
 Learn more from the following links:
 
-- [Overview - Implement Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects)
-- [Intro to Value object](https://en.wikipedia.org/wiki/Value_object)
+- [@article@Overview - Implement Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects)
+- [@article@Intro to Value object](https://en.wikipedia.org/wiki/Value_object)

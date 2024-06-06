@@ -10,5 +10,5 @@ Popular service mesh implementations include Istio and Linkerd, which offer robu
 
 Visit the following resources to learn more:
 
-- [What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
-- [Microservices pain points and how service mesh can help solve those issues](https://www.youtube.com/watch?v=QiXK0B9FhO0)
+- [@article@What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
+- [@video@Microservices pain points and how service mesh can help solve those issues](https://www.youtube.com/watch?v=QiXK0B9FhO0)

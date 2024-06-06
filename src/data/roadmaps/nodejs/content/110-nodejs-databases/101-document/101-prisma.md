@@ -4,5 +4,5 @@ Prisma provides an open source next-generation ORM in the TypeScript ecosystem. 
 
 Visit the following resources to learn more:
 
-- [Prisma Website](https://www.prisma.io/)
-- [Prisma & MongoDB Youtube Tutorial](https://www.youtube.com/watch?v=-7r4whMKt1s)
+- [@official@Prisma Website](https://www.prisma.io/)
+- [@video@Prisma & MongoDB Youtube Tutorial](https://www.youtube.com/watch?v=-7r4whMKt1s)

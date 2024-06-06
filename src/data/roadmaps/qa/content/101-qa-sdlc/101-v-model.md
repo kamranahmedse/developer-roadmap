@@ -4,4 +4,4 @@ V Model is a highly disciplined SDLC model that has a testing phase parallel to 
 
 Visit the following resources to learn more:
 
-- [V-Model in Software Testing](https://www.guru99.com/v-model-software-testing.html)
+- [@article@V-Model in Software Testing](https://www.guru99.com/v-model-software-testing.html)

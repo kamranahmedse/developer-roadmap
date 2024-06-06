@@ -6,9 +6,9 @@ In Go, each of these concurrent tasks are called `Goroutines`.
 
 Visit the following resources to learn more:
 
-- [Goroutines](https://go.dev/tour/concurrency/1)
-- [Effective Go: Goroutines](https://go.dev/doc/effective_go#goroutines)
-- [GoRoutines](https://www.youtube.com/watch?v=LvgVSSpwND8)
-- [Understanding Concurrency](https://www.youtube.com/watch?v=V-0ifUKCkBI)
-- [Go by Example: Goroutines](https://gobyexample.com/goroutines)
-- [Golang Goroutine Basics You MUST Learn! (by Golang Dojo on YouTube)](https://youtu.be/oHIbeTmmTaA)
+- [@official@Goroutines](https://go.dev/tour/concurrency/1)
+- [@official@Effective Go: Goroutines](https://go.dev/doc/effective_go#goroutines)
+- [@video@GoRoutines](https://www.youtube.com/watch?v=LvgVSSpwND8)
+- [@video@Understanding Concurrency](https://www.youtube.com/watch?v=V-0ifUKCkBI)
+- [@article@Go by Example: Goroutines](https://gobyexample.com/goroutines)
+- [@video@Golang Goroutine Basics You MUST Learn! (by Golang Dojo on YouTube)](https://youtu.be/oHIbeTmmTaA)

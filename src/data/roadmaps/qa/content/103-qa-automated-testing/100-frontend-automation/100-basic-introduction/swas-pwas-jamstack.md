@@ -17,6 +17,6 @@ Jamstack removes the need for business logic to dictate the web experience. It e
 
 Visit the following resources to learn more:
 
-- [SWA](https://www.staticapps.org/)
-- [PWA](https://web.dev/progressive-web-apps/)
-- [Jamstack](https://jamstack.org/)
+- [@article@SWA](https://www.staticapps.org/)
+- [@article@PWA](https://web.dev/progressive-web-apps/)
+- [@official@Jamstack](https://jamstack.org/)

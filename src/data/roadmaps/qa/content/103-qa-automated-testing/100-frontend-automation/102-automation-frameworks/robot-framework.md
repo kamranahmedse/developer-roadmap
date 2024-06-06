@@ -6,6 +6,6 @@ Robot Framework is open and extensible. Robot Framework can be integrated with v
 
 Visit the following resources to learn more:
 
-- [Robot Framework Official Website](https://robotframework.org/)
-- [Robot Framework Official User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
-- [Basic Step-by-step Robot Framework tutorial](https://medium.com/swlh/robot-framework-the-basics-dfeadc025bea)
+- [@official@Robot Framework Official Website](https://robotframework.org/)
+- [@official@Robot Framework Official User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
+- [@article@Basic Step-by-step Robot Framework tutorial](https://medium.com/swlh/robot-framework-the-basics-dfeadc025bea)

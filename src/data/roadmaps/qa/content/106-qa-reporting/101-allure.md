@@ -4,5 +4,5 @@ Allure Report is a flexible, lightweight multi-language test reporting tool. It 
 
 Visit the following resources to learn more:
 
-- [Allure](https://qameta.io/)
-- [Allure Official Docs](https://docs.qameta.io/allure-report/)
+- [@article@Allure](https://qameta.io/)
+- [@article@Allure Official Docs](https://docs.qameta.io/allure-report/)

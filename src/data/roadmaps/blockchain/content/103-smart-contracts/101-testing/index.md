@@ -4,6 +4,6 @@ Testing smart contracts is one of the most important measures for improving smar
 
 Visit the following resources to learn more:
 
-- [Testing Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/testing/)
-- [How to Test Ethereum Smart Contracts](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
-- [Writing automated smart contract tests](https://docs.openzeppelin.com/learn/writing-automated-tests)
+- [@article@Testing Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/testing/)
+- [@article@How to Test Ethereum Smart Contracts](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [@article@Writing automated smart contract tests](https://docs.openzeppelin.com/learn/writing-automated-tests)

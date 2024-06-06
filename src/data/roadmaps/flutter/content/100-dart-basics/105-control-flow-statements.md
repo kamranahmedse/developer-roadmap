@@ -14,5 +14,5 @@ These control flow statements can be used to create complex logic and control th
 
 Visit the following resources to learn more:
 
-- [Branches in Dart](https://dart.dev/language/branches)
-- [Loops in Dart](https://dart.dev/language/loops)
+- [@article@Branches in Dart](https://dart.dev/language/branches)
+- [@article@Loops in Dart](https://dart.dev/language/loops)

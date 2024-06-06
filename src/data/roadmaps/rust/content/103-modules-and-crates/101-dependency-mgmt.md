@@ -4,5 +4,5 @@ Dependency management in Rust is handled by a tool called Cargo. Cargo helps you
 
 Visit the following resources to learn more:
 
-- [Rust Blog: Cargo](https://blog.rust-lang.org/2016/05/05/cargo-pillars.html)
-- [Rust by Example: Dependencies](https://doc.rust-lang.org/rust-by-example/cargo/deps.html)
+- [@article@Rust Blog: Cargo](https://blog.rust-lang.org/2016/05/05/cargo-pillars.html)
+- [@article@Rust by Example: Dependencies](https://doc.rust-lang.org/rust-by-example/cargo/deps.html)

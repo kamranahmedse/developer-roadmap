@@ -4,4 +4,4 @@ Traits generics are a notable feature in Rust that pertain to defining shared be
 
 Visit the following resources to learn more:
 
-- [Book: Generic Types, Traits, and Lifetimes](https://doc.rust-lang.org/book/ch10-00-generics.html)
+- [@article@Book: Generic Types, Traits, and Lifetimes](https://doc.rust-lang.org/book/ch10-00-generics.html)

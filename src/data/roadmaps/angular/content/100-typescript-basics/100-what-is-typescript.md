@@ -4,7 +4,7 @@ TypeScript is a strongly typed, object-oriented, compiled programming language t
 
 Visit the following resources to learn more:
 
-- [What is TypeScript](https://thenewstack.io/what-is-typescript/)
-- [W3Schools – TypeScript Tutorial](https://www.w3schools.com/typescript/)
-- [Tutorials point – TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
-- [TypeScript Crash Course for Beginners](https://www.youtube.com/watch?v=d56mG7DezGs)
+- [@article@What is TypeScript](https://thenewstack.io/what-is-typescript/)
+- [@article@W3Schools – TypeScript Tutorial](https://www.w3schools.com/typescript/)
+- [@article@Tutorials point – TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
+- [@video@TypeScript Crash Course for Beginners](https://www.youtube.com/watch?v=d56mG7DezGs)

@@ -15,4 +15,4 @@ type C = Awaited<boolean | Promise<number>>;
 
 Learn more from the following links:
 
-- [Awaited<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype)
+- [@article@Awaited<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype)

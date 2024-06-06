@@ -4,5 +4,5 @@ Noda Time is an open-source library for .NET that provides a more complete and a
 
 To learn more, visit the following links:
 
-- [Intro to Noda Time](https://nodatime.org/)
-- [What's the use of Noda Time?](https://nodatime.org/3.1.x/userguide/rationale)
+- [@official@Intro to Noda Time](https://nodatime.org/)
+- [@official@What's the use of Noda Time?](https://nodatime.org/3.1.x/userguide/rationale)

@@ -18,4 +18,4 @@ Most of the time, a primitive value is represented directly at the lowest level 
 
 Visit the following resources to learn more:
 
-- [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+- [@article@Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)

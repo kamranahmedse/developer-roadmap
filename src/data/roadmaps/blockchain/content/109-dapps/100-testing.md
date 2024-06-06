@@ -6,6 +6,6 @@ Like traditional software, testing dApps involves testing the entire stack that 
 
 Visit the following resources to learn more:
 
-- [What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
-- [Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
-- [How to test dApps (decentralized applications)](https://rhian-is.medium.com/how-to-test-dapps-decentralized-applications-4662cf61db90)
+- [@article@What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
+- [@article@Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+- [@article@How to test dApps (decentralized applications)](https://rhian-is.medium.com/how-to-test-dapps-decentralized-applications-4662cf61db90)

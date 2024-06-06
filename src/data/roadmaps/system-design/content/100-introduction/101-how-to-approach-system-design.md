@@ -12,7 +12,7 @@ There are several steps that can be taken when approaching a system design:
 
 Note that this is a general approach to System Design. For interview specific answers, see the following resources:
 
-- [How to approach System Design?](https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question)
-- [What are system design questions?](https://www.hiredintech.com/system-design)
-- [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
-- [My System Design Template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
+- [@opensource@How to approach System Design?](https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question)
+- [@article@What are system design questions?](https://www.hiredintech.com/system-design)
+- [@video@Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
+- [@article@My System Design Template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)

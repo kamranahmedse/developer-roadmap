@@ -6,6 +6,6 @@ AutoMapper uses a convention-based approach to mapping, which means that it auto
 
 To learn more, visit the following resources:
 
-- [What is Automapper in ASP.NET?](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
-- [Getting Started with AutoMapper in ASP.NET](https://code-maze.com/automapper-net-core/)
-- [Examples of AutoMapper in ASP.NET](https://dotnettutorials.net/lesson/automapper-in-c-sharp/)
+- [@article@What is Automapper in ASP.NET?](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
+- [@article@Getting Started with AutoMapper in ASP.NET](https://code-maze.com/automapper-net-core/)
+- [@article@Examples of AutoMapper in ASP.NET](https://dotnettutorials.net/lesson/automapper-in-c-sharp/)

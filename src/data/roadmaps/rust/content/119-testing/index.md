@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Rust Book: Writing Automated Tests](https://doc.rust-lang.org/book/ch11-00-testing.html)
-- [YouTube](https://www.youtube.com/watch?v=8XaVlL3lObQ)
+- [@article@Rust Book: Writing Automated Tests](https://doc.rust-lang.org/book/ch11-00-testing.html)
+- [@video@YouTube](https://www.youtube.com/watch?v=8XaVlL3lObQ)

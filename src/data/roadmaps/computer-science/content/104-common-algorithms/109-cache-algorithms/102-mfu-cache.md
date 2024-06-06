@@ -4,5 +4,5 @@ MFU Cache is another cache algorithm. The difference is that instead of deleting
 
 Visit the following resources to learn more:
 
-- [Comparison of MFU and LRU page replacement algorithms](https://stackoverflow.com/questions/13597246/comparison-of-mfu-and-lru-page-replacement-algorithms)
-- [Why does cache use Most Recently Used (MRU) algorithm as evict policy?](https://stackoverflow.com/questions/5088128/why-does-cache-use-most-recently-used-mru-algorithm-as-evict-policy)
+- [@article@Comparison of MFU and LRU page replacement algorithms](https://stackoverflow.com/questions/13597246/comparison-of-mfu-and-lru-page-replacement-algorithms)
+- [@article@Why does cache use Most Recently Used (MRU) algorithm as evict policy?](https://stackoverflow.com/questions/5088128/why-does-cache-use-most-recently-used-mru-algorithm-as-evict-policy)

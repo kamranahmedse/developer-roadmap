@@ -4,7 +4,7 @@ Kubernetes (k8s) can secure containers and pods through measures like using trus
 
 Learn more from the following links:
 
-- [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
-- [Kubernetes Security - Security Context for a Pod or Container](https://www.youtube.com/watch?v=i8wfvoVf2xs)
-- [Tutorial: Create a Kubernetes Pod Security Policy](https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/)
-- [6 Overlooked Yet Important Kubernetes Features to Secure](https://thenewstack.io/6-overlooked-yet-important-kubernetes-features-to-secure/)
+- [@official@Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+- [@video@Kubernetes Security - Security Context for a Pod or Container](https://www.youtube.com/watch?v=i8wfvoVf2xs)
+- [@article@Tutorial: Create a Kubernetes Pod Security Policy](https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/)
+- [@article@6 Overlooked Yet Important Kubernetes Features to Secure](https://thenewstack.io/6-overlooked-yet-important-kubernetes-features-to-secure/)

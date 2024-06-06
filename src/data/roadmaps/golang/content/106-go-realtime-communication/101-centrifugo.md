@@ -4,5 +4,5 @@ Centrifugo is an open-source scalable real-time messaging server. Centrifugo can
 
 Visit the following resources to learn more:
 
-- [GitHub Repository](https://github.com/centrifugal/centrifugo)
-- [Getting started](https://centrifugal.dev/docs/getting-started/introduction)
+- [@opensource@GitHub Repository](https://github.com/centrifugal/centrifugo)
+- [@article@Getting started](https://centrifugal.dev/docs/getting-started/introduction)

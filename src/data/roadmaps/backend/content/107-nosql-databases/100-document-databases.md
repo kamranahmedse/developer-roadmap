@@ -6,10 +6,10 @@ MongoDB is a source-available cross-platform document-oriented database program.
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated MongoDB Roadmap](/mongodb)
-- [MongoDB Website](https://www.mongodb.com/)
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB Online Sandbox](https://mongoplayground.net/)
-- [Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
-- [Dynamo DB Docs](https://docs.aws.amazon.com/dynamodb/index.html)
-- [Official Developers Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+- [@roadmap@Visit Dedicated MongoDB Roadmap](/mongodb)
+- [@article@MongoDB Website](https://www.mongodb.com/)
+- [@article@MongoDB Documentation](https://docs.mongodb.com/)
+- [@article@MongoDB Online Sandbox](https://mongoplayground.net/)
+- [@article@Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
+- [@article@Dynamo DB Docs](https://docs.aws.amazon.com/dynamodb/index.html)
+- [@article@Official Developers Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)

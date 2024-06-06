@@ -4,6 +4,6 @@ Prometheus is a free software application used for event monitoring and alerting
 
 Visit the following resources to learn more:
 
-- [Prometheus Website](https://prometheus.io/)
-- [Official Documentation](https://prometheus.io/docs/introduction/overview/)
-- [Getting Started with Prometheus](https://prometheus.io/docs/tutorials/getting_started/)
+- [@official@Prometheus Website](https://prometheus.io/)
+- [@official@Official Documentation](https://prometheus.io/docs/introduction/overview/)
+- [@official@Getting Started with Prometheus](https://prometheus.io/docs/tutorials/getting_started/)

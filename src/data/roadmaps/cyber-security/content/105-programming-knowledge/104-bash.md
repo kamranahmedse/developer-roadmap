@@ -32,9 +32,9 @@ As a cyber security expert, having a strong foundation in Bash can save you time
 
 Some resources to begin your journey with Bash are:
 
-- [GNU Bash Manual](https://www.gnu.org/software/bash/manual/bash.html): A comprehensive guide to Bash, provided by the GNU project.
-- [Bash Beginner's Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/): A beginner-friendly guide that covers the basics of Bash scripting.
-- [Bash Academy](https://www.bash.academy/): An interactive platform to start learning Bash from scratch.
-- [Learn Shell](https://www.learnshell.org/): An online resource with tutorials and exercises to help you practice your Bash skills.
+- [@article@GNU Bash Manual](https://www.gnu.org/software/bash/manual/bash.html): A comprehensive guide to Bash, provided by the GNU project.
+- [@article@Bash Beginner's Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/): A beginner-friendly guide that covers the basics of Bash scripting.
+- [@official@Bash Academy](https://www.bash.academy/): An interactive platform to start learning Bash from scratch.
+- [@article@Learn Shell](https://www.learnshell.org/): An online resource with tutorials and exercises to help you practice your Bash skills.
 
 Bash scripting is a versatile tool in the cybersecurity toolkit, and mastering it will provide you with greater control over the systems you protect.

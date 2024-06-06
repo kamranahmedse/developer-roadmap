@@ -15,4 +15,4 @@ By following these component principles, software can be developed in a way that
 
 Learn more from the following links:
 
-- [Component-Based Architecture](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)
+- [@article@Component-Based Architecture](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)

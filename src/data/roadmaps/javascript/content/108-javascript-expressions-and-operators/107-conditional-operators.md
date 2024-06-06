@@ -10,5 +10,5 @@ Syntax:
 
 Visit the following resources to learn more:
 
-- [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_operator)
-- [W3Schools - JavaScript Tutorials](https://www.w3schools.com/js/js_comparisons.asp)
+- [@article@JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_operator)
+- [@article@W3Schools - JavaScript Tutorials](https://www.w3schools.com/js/js_comparisons.asp)

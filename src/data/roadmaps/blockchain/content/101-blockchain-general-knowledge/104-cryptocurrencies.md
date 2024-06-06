@@ -4,6 +4,6 @@ A cryptocurrency, crypto-currency, or crypto is a digital currency designed to w
 
 Visit the following resources to learn more:
 
-- [What Is Cryptocurrency?](https://www.investopedia.com/terms/c/cryptocurrency.asp)
-- [Cryptocurrency: What It Is and How It Works](https://www.nerdwallet.com/article/investing/cryptocurrency)
-- [How Cryptocurrency actually works.](https://youtu.be/rYQgy8QDEBI)
+- [@article@What Is Cryptocurrency?](https://www.investopedia.com/terms/c/cryptocurrency.asp)
+- [@article@Cryptocurrency: What It Is and How It Works](https://www.nerdwallet.com/article/investing/cryptocurrency)
+- [@video@How Cryptocurrency actually works.](https://youtu.be/rYQgy8QDEBI)

@@ -4,5 +4,5 @@ A decentralized autonomous organization (DAO) is an emerging form of legal struc
 
 Visit the following resources to learn more:
 
-- [What Is A DAO And How Do They Work?](https://consensys.net/blog/blockchain-explained/what-is-a-dao-and-how-do-they-work/)
-- [Decentralized Autonomous Organization (DAO)](https://www.investopedia.com/tech/what-dao/)
+- [@article@What Is A DAO And How Do They Work?](https://consensys.net/blog/blockchain-explained/what-is-a-dao-and-how-do-they-work/)
+- [@article@Decentralized Autonomous Organization (DAO)](https://www.investopedia.com/tech/what-dao/)

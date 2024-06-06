@@ -16,5 +16,5 @@ Spring Core is the foundation of the Spring Framework, which provides a comprehe
 
 This list is not exhaustive, it covers common terms and concepts used. Visit the following links to learn more about Spring:
 
-- [Spring Boot - Official Website](https://spring.io/projects/spring-boot)
-- [Spring Boot - Starter Guide](https://spring.io/quickstart)
+- [@official@Spring Boot - Official Website](https://spring.io/projects/spring-boot)
+- [@official@Spring Boot - Starter Guide](https://spring.io/quickstart)

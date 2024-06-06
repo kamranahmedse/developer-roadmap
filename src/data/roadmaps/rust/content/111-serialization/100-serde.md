@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Official Website](https://serde.rs/)
-- [Docs.rs: Serde](https://docs.rs/serde/latest/serde/)
+- [@official@Official Website](https://serde.rs/)
+- [@article@Docs.rs: Serde](https://docs.rs/serde/latest/serde/)

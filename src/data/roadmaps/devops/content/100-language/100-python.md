@@ -4,9 +4,9 @@ Python is a multi-paradigm language. Being an interpreted language, code is exec
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated Python Roadmap](/python)
-- [Python Website](https://www.python.org/)
-- [Python Getting Started](https://www.python.org/about/gettingstarted/)
-- [Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
-- [Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@roadmap@Visit Dedicated Python Roadmap](/python)
+- [@official@Python Website](https://www.python.org/)
+- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
+- [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
+- [@article@W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
+- [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)

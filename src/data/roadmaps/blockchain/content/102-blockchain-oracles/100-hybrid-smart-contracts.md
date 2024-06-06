@@ -4,5 +4,5 @@ Hybrid smart contracts combine code running on the blockchain (on-chain) with da
 
 Visit the following resources to learn more:
 
-- [Hybrid Smart Contracts Explained](https://blog.chain.link/hybrid-smart-contracts-explained/)
-- [A complete guide to understand hybrid smart contracts](https://www.leewayhertz.com/hybrid-smart-contracts/)
+- [@article@Hybrid Smart Contracts Explained](https://blog.chain.link/hybrid-smart-contracts-explained/)
+- [@article@A complete guide to understand hybrid smart contracts](https://www.leewayhertz.com/hybrid-smart-contracts/)

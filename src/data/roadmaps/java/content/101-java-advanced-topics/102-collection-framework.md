@@ -4,5 +4,5 @@ The Collection in Java is a framework that provides an architecture to store and
 
 Visit the following resources to learn more:
 
-- [Collections in Java](https://www.javatpoint.com/collections-in-java)
-- [Java - Collections Framework](https://www.tutorialspoint.com/java/java_collections.htm)
+- [@article@Collections in Java](https://www.javatpoint.com/collections-in-java)
+- [@article@Java - Collections Framework](https://www.tutorialspoint.com/java/java_collections.htm)

@@ -6,4 +6,4 @@ It is also coded using in-page markup on the page that the information applies t
 
 Visit the following resources to learn more:
 
-- [Google Developers docs](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)
+- [@article@Google Developers docs](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)

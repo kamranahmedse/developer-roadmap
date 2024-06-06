@@ -4,5 +4,5 @@ Smart contracts are extremely flexible, capable of both holding large quantities
 
 Visit the following resources to learn more:
 
-- [Smart Contract Security](https://ethereum.org/en/developers/docs/smart-contracts/security/)
-- [Ethereum Smart Contract Security Recommendations](https://consensys.net/blog/developers/ethereum-smart-contract-security-recommendations/)
+- [@article@Smart Contract Security](https://ethereum.org/en/developers/docs/smart-contracts/security/)
+- [@article@Ethereum Smart Contract Security Recommendations](https://consensys.net/blog/developers/ethereum-smart-contract-security-recommendations/)

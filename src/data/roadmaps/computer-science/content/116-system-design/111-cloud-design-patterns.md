@@ -6,4 +6,4 @@ The link below has cloud design patterns where each pattern describes the proble
 
 Visit the following resources to learn more:
 
-- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [@article@Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

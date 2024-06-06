@@ -4,4 +4,4 @@ So far you may have covered two forms of code reuse in Vue: [components](https:/
 
 Visit the following resources to learn more:
 
-- [Custom Directives](https://vuejs.org/guide/reusability/custom-directives.html)
+- [@article@Custom Directives](https://vuejs.org/guide/reusability/custom-directives.html)

@@ -6,6 +6,6 @@ In an ASP.NET application, MySQL can be used as the underlying database for stor
 
 For more information, visit the following links:
 
-- [Getting started with ASP.NET Core and MySQL](https://dev.mysql.com/blog-archive/getting-started-with-asp-net-core-and-mysql-connectornet/)
-- [MySql database connectivity with ASP.Net](https://www.c-sharpcorner.com/UploadFile/brij_mcn/mysql-database-connectivity-with-Asp-Net/)
-- [How To Connect MySQL With ASP.NET](https://www.youtube.com/watch?v=g5rVd1JGbIg)
+- [@article@Getting started with ASP.NET Core and MySQL](https://dev.mysql.com/blog-archive/getting-started-with-asp-net-core-and-mysql-connectornet/)
+- [@article@MySql database connectivity with ASP.Net](https://www.c-sharpcorner.com/UploadFile/brij_mcn/mysql-database-connectivity-with-Asp-Net/)
+- [@video@How To Connect MySQL With ASP.NET](https://www.youtube.com/watch?v=g5rVd1JGbIg)

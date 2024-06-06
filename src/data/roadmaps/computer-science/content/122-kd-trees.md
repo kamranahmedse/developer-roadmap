@@ -4,5 +4,5 @@ K-D Trees are a data structure that allow for fast nearest neighbor search in hi
 
 Visit the following resources to learn more:
 
-- [K-D Tree Algorithm](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
-- [K-d Trees - Computerphile](https://www.youtube.com/watch?v=BK5x7IUTIyU)
+- [@video@K-D Tree Algorithm](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
+- [@video@K-d Trees - Computerphile](https://www.youtube.com/watch?v=BK5x7IUTIyU)

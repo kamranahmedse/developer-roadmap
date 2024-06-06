@@ -8,7 +8,7 @@ Triggers are special type of stored procedures that are automatically executed i
 
 For more information, visit the following links:
 
-- [Database Triggers](https://docs.oracle.com/cd/A57673_01/DOC/server/doc/SCN73/ch15.htm)
-- [Database Triggers: Examples & Overview](https://study.com/academy/lesson/database-triggers-examples-overview.html)
-- [What are Triggers in SQL?](https://www.edureka.co/blog/triggers-in-sql/)
-- [What is a SQL Trigger?](https://www.essentialsql.com/sql-trigger/)
+- [@article@Database Triggers](https://docs.oracle.com/cd/A57673_01/DOC/server/doc/SCN73/ch15.htm)
+- [@article@Database Triggers: Examples & Overview](https://study.com/academy/lesson/database-triggers-examples-overview.html)
+- [@article@What are Triggers in SQL?](https://www.edureka.co/blog/triggers-in-sql/)
+- [@article@What is a SQL Trigger?](https://www.essentialsql.com/sql-trigger/)

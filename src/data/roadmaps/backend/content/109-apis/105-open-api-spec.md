@@ -6,7 +6,7 @@ An OpenAPI definition can then be used by documentation generation tools to disp
 
 Visit the following resources to learn more:
 
-- [OpenAPI Specification Website](https://swagger.io/specification/)
-- [Open API Live Editor](https://swagger.io/tools/swagger-editor/)
-- [Official training guide](https://swagger.io/docs/specification/about/)
-- [OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0](https://www.youtube.com/watch?v=6kwmW_p_Tig)
+- [@article@OpenAPI Specification Website](https://swagger.io/specification/)
+- [@article@Open API Live Editor](https://swagger.io/tools/swagger-editor/)
+- [@article@Official training guide](https://swagger.io/docs/specification/about/)
+- [@video@OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0](https://www.youtube.com/watch?v=6kwmW_p_Tig)

@@ -6,10 +6,10 @@ In Practice: B-Trees are widely used in databases. Most modern filesystems use B
 
 Visit the following resources to learn more:
 
-- [B-Tree - Wikipedia](https://en.wikipedia.org/wiki/B-tree)
-- [B-Tree Datastructure](http://btechsmartclass.com/data_structures/b-trees.html)
-- [Introduction to B-Trees](https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6)
-- [B-Tree Definition and Insertion](https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
-- [B-Tree Deletion](https://www.youtube.com/watch?v=svfnVhJOfMc&index=8&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
-- [MIT 6.851 - Memory Hierarchy Models](https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
-- [B-Trees (playlist) in 26 minutes](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)
+- [@article@B-Tree - Wikipedia](https://en.wikipedia.org/wiki/B-tree)
+- [@article@B-Tree Datastructure](http://btechsmartclass.com/data_structures/b-trees.html)
+- [@video@Introduction to B-Trees](https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6)
+- [@video@B-Tree Definition and Insertion](https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+- [@video@B-Tree Deletion](https://www.youtube.com/watch?v=svfnVhJOfMc&index=8&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+- [@video@MIT 6.851 - Memory Hierarchy Models](https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
+- [@video@B-Trees (playlist) in 26 minutes](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)

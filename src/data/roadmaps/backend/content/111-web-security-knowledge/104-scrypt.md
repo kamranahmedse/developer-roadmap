@@ -4,4 +4,4 @@ Scrypt (pronounced "ess crypt") is a password hashing function (like bcrypt). It
 
 Visit the following resources to learn more:
 
-- [Wikipedia - Scrypt](https://en.wikipedia.org/wiki/Scrypt)
+- [@article@Wikipedia - Scrypt](https://en.wikipedia.org/wiki/Scrypt)

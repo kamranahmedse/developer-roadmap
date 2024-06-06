@@ -4,6 +4,6 @@ DigitalOcean is a cloud computing service offering products and services in Comp
 
 Visit the following resources to learn more:
 
-- [DigitalOcean Website](https://www.digitalocean.com/)
-- [Official Documentation](https://docs.digitalocean.com/products/)
-- [DigitalOcean Get Started Guide](https://docs.digitalocean.com/products/getting-started/)
+- [@official@DigitalOcean Website](https://www.digitalocean.com/)
+- [@article@Official Documentation](https://docs.digitalocean.com/products/)
+- [@article@DigitalOcean Get Started Guide](https://docs.digitalocean.com/products/getting-started/)

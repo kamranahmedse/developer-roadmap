@@ -4,7 +4,7 @@ In Kubernetes, a pod is the smallest deployable unit that represents a single in
 
 Learn more from the following links:
 
-- [Pods Documentation](https://kubernetes.io/docs/concepts/workloads/pods/)
-- [What is a Pod in kubernetes ? Why do you need it ?](https://www.youtube.com/watch?v=k0fzMZgpp14)
-- [The Kubernetes Way: Pods and Services](https://thenewstack.io/kubernetes-way-part-one/)
-- [5 Best Practices for Configuring Kubernetes Pods Running in Production](https://thenewstack.io/5-best-practices-for-configuring-kubernetes-pods-running-in-production/)
+- [@official@Pods Documentation](https://kubernetes.io/docs/concepts/workloads/pods/)
+- [@video@What is a Pod in kubernetes ? Why do you need it ?](https://www.youtube.com/watch?v=k0fzMZgpp14)
+- [@article@The Kubernetes Way: Pods and Services](https://thenewstack.io/kubernetes-way-part-one/)
+- [@article@5 Best Practices for Configuring Kubernetes Pods Running in Production](https://thenewstack.io/5-best-practices-for-configuring-kubernetes-pods-running-in-production/)

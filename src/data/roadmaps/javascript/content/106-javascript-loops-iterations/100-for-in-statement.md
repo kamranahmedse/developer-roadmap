@@ -4,5 +4,5 @@ The for...in statement iterates over all enumerable properties of an object that
 
 Visit the following resources to learn more:
 
-- [for...in statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-- [The for..in loop with examples](https://javascript.info/object#forin)
+- [@article@for...in statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+- [@article@The for..in loop with examples](https://javascript.info/object#forin)

@@ -81,4 +81,4 @@ Example:
 
 Implementing these optimizations in your FlatList config will help improve the performance of large lists in your React Native application.
 
-- [Optimizing Flatlist Configuration](https://reactnative.dev/docs/optimizing-flatlist-configuration)
+- [@article@Optimizing Flatlist Configuration](https://reactnative.dev/docs/optimizing-flatlist-configuration)

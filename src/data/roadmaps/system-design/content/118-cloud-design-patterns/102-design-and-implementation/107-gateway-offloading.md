@@ -4,4 +4,4 @@ Offload shared or specialized service functionality to a gateway proxy. This pat
 
 To learn more, visit the following links:
 
-- [Gateway Offloading pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)
+- [@article@Gateway Offloading pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)

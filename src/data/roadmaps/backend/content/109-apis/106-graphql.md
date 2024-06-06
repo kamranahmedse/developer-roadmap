@@ -10,4 +10,4 @@ GraphQL is widely used in modern web and mobile applications, and it is supporte
 
 Visit the following resources to learn more:
 
-- [GraphQL Official Website](https://graphql.org/)
+- [@official@GraphQL Official Website](https://graphql.org/)

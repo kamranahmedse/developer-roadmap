@@ -6,5 +6,5 @@ A repository is a pattern that can be used to organize the data access code and 
 
 Learn more from the following links:
 
-- [Tutorial - Repository Design Pattern](https://www.youtube.com/watch?v=mb6bwnEaZ3U)
-- [Introduction to Repository Design Patterns](https://cubettech.com/resources/blog/introduction-to-repository-design-pattern/)
+- [@video@Tutorial - Repository Design Pattern](https://www.youtube.com/watch?v=mb6bwnEaZ3U)
+- [@article@Introduction to Repository Design Patterns](https://cubettech.com/resources/blog/introduction-to-repository-design-pattern/)

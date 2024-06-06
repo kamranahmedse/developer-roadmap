@@ -4,5 +4,5 @@ GitOps is a set of practices for managing infrastructure and applications using 
 
 Learn more from the following resources:
 
-- [DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
-- [Using GitOps with a Kubernetes cluster](https://docs.gitlab.com/ee/user/clusters/agent/gitops.html)
+- [@video@DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
+- [@article@Using GitOps with a Kubernetes cluster](https://docs.gitlab.com/ee/user/clusters/agent/gitops.html)

@@ -5,5 +5,5 @@ There are several options available to make API calls from your React.js applica
 
 Visit the following resources to learn more:
 
-- [AJAX and APIs](https://reactjs.org/docs/faq-ajax.html)
-- [How to fetch data in React](https://www.robinwieruch.de/react-hooks-fetch-data/)
+- [@article@AJAX and APIs](https://reactjs.org/docs/faq-ajax.html)
+- [@article@How to fetch data in React](https://www.robinwieruch.de/react-hooks-fetch-data/)

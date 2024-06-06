@@ -6,6 +6,6 @@ In Python, you define a function with the `def` keyword, then write the function
 
 Visit the following resources to learn more:
 
-- [Python Functions – How to Define and Call a Function](https://www.freecodecamp.org/news/python-functions-define-and-call-a-function/)
-- [Python Functions - W3Schools](https://www.w3schools.com/python/python_functions.asp)
-- [Built-in Functions in Python](https://docs.python.org/3/library/functions.html)
+- [@article@Python Functions – How to Define and Call a Function](https://www.freecodecamp.org/news/python-functions-define-and-call-a-function/)
+- [@article@Python Functions - W3Schools](https://www.w3schools.com/python/python_functions.asp)
+- [@article@Built-in Functions in Python](https://docs.python.org/3/library/functions.html)

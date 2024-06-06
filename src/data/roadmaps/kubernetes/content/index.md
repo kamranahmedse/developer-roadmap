@@ -4,6 +4,6 @@ Kubernetes, also known as K8s, is an open-source container orchestration platfor
 
 Learn more from the following resources:
 
-- [Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
-- [Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8)
-- [Kubernetes Tutorial for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do&t=1s)
+- [@official@Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+- [@video@Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8)
+- [@video@Kubernetes Tutorial for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do&t=1s)

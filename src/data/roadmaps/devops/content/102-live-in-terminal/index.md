@@ -4,4 +4,4 @@ A terminal is simply a text-based interface to the computer, it is used to inter
 
 Visit the following resources to learn more:
 
-- [What is CLI?](https://en.wikipedia.org/wiki/Command-line_interface)
+- [@article@What is CLI?](https://en.wikipedia.org/wiki/Command-line_interface)

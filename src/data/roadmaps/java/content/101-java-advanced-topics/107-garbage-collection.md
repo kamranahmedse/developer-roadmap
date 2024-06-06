@@ -4,6 +4,6 @@ Java garbage collection is the process by which Java programs perform automatic 
 
 Visit the following resources to learn more:
 
-- [Java Garbage Collection](https://stackify.com/what-is-java-garbage-collection/)
-- [Java Garbage Collection](https://www.javatpoint.com/Garbage-Collection)
-- [Garbage Collection in Java - Geekific](https://www.youtube.com/watch?v=XXOaCV5xm9s)
+- [@article@Java Garbage Collection](https://stackify.com/what-is-java-garbage-collection/)
+- [@article@Java Garbage Collection](https://www.javatpoint.com/Garbage-Collection)
+- [@video@Garbage Collection in Java - Geekific](https://www.youtube.com/watch?v=XXOaCV5xm9s)

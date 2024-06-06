@@ -4,4 +4,4 @@ A system is healthy if it is running and capable of processing requests. The pur
 
 Learn more from the following:
 
-- [Health Monitoring of a System](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#health-monitoring)
+- [@article@Health Monitoring of a System](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#health-monitoring)

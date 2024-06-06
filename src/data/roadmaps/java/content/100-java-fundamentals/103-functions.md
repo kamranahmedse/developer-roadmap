@@ -9,6 +9,6 @@ Steps -
 
 Visit the following resources to learn more:
 
-- [Methods/Functions in Java.](https://www.javatpoint.com/method-in-java)
-- [Learn Functions/Methods in Java](https://www.w3schools.com/java/java_methods.asp)
-- [Functions / Methods in Java](https://www.youtube.com/watch?v=vvanI8NRlSI)
+- [@article@Methods/Functions in Java.](https://www.javatpoint.com/method-in-java)
+- [@article@Learn Functions/Methods in Java](https://www.w3schools.com/java/java_methods.asp)
+- [@video@Functions / Methods in Java](https://www.youtube.com/watch?v=vvanI8NRlSI)

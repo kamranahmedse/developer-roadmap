@@ -32,9 +32,9 @@ Here are some essential concepts to understand while working with PowerShell:
 
 To get started with PowerShell, begin by learning about the available cmdlets, syntax, and features. Useful resources for learning PowerShell include:
 
-- [Microsoft's Official PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
-- [Learning PowerShell GitHub Repository](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
-- [PowerShell.org](https://powershell.org/)
+- [@article@Microsoft's Official PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [@opensource@Learning PowerShell GitHub Repository](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
+- [@official@PowerShell.org](https://powershell.org/)
 - Online forums and communities such as [Stack Overflow](https://stackoverflow.com/questions/tagged/powershell) and [Reddit's r/PowerShell](https://www.reddit.com/r/PowerShell/)
 
 In conclusion, PowerShell is an essential tool for anyone working with Windows systems and can greatly benefit those in the cybersecurity field. The ability to automate tasks and manage configurations using PowerShell will provide a significant advantage, allowing for more efficient and accurate work.

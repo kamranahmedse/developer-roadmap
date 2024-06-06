@@ -46,4 +46,4 @@ And the model will generate 5 questions for you to answer.
 
 There are probably other ways to use LLMs to study. Many learning companies like Duolingo and Quizlet are implementing LLMs into their products.
 
-- [LLMs as a Study Buddy](https://learnprompting.org/docs/basic_applications/study_tool)
+- [@article@LLMs as a Study Buddy](https://learnprompting.org/docs/basic_applications/study_tool)

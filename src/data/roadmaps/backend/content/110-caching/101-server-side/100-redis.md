@@ -4,5 +4,5 @@ Redis is an open source (BSD licensed), in-memory **data structure store** used 
 
 Visit the following resources to learn more:
 
-- [Redis Website](https://redis.io/)
-- [Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
+- [@official@Redis Website](https://redis.io/)
+- [@video@Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)

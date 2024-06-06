@@ -12,5 +12,5 @@ DDD connects the implementation to an evolving model and it is predicated on the
 
 Visit the following resources to learn more:
 
-- [Domain-Driven Design](https://redis.com/glossary/domain-driven-design-ddd/)
-- [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
+- [@article@Domain-Driven Design](https://redis.com/glossary/domain-driven-design-ddd/)
+- [@article@Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)

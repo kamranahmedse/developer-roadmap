@@ -4,5 +4,5 @@ In blockchain, decentralization refers to the transfer of control and decision-m
 
 Visit the following resources to learn more:
 
-- [What is decentralization?](https://aws.amazon.com/blockchain/decentralization-in-blockchain/)
-- [What is Decentralization in Blockchain?](https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/)
+- [@article@What is decentralization?](https://aws.amazon.com/blockchain/decentralization-in-blockchain/)
+- [@article@What is Decentralization in Blockchain?](https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/)

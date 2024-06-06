@@ -9,7 +9,7 @@ Visit the following resources to learn more:
 - [@article@HTML For Beginners The Easy Way](https://html.com)
 - [@article@Web Development Basics](https://internetingishard.netlify.app/html-and-css/index.html)
 - [@opensource@Interactive HTML Course](https://github.com/denysdovhan/learnyouhtml)
-- [@video@HTML Full Course for Beginners | Complete All-in-One Tutorial ](https://youtu.be/mJgBOIoGihA)
+- [@video@HTML Full Course for Beginners](https://youtu.be/mJgBOIoGihA)
 - [@video@HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
 - [@video@HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU)
 - [@article@You don't need JavaScript for that](https://www.htmhell.dev/adventcalendar/2023/2/)

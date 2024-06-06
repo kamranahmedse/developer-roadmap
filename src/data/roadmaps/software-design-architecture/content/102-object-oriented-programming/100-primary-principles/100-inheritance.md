@@ -4,5 +4,5 @@ Inheritance is a fundamental concept in object-oriented programming (OOP) that a
 
 Learn more from the following links:
 
-- [What is inheritance in programming?](https://www.youtube.com/watch?v=ajOYOxCanhE)
-- [Overview of Inheritance (object-oriented programming)](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))
+- [@video@What is inheritance in programming?](https://www.youtube.com/watch?v=ajOYOxCanhE)
+- [@article@Overview of Inheritance (object-oriented programming)](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))

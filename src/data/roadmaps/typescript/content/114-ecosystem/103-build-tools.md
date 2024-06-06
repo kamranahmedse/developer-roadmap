@@ -6,11 +6,11 @@ Common usages of task runners include numerous development tasks such as: spinni
 
 Visit the following resources to learn more:
 
-- [webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
-- [Vite Next Generation Frontend Tooling](https://vitejs.dev)
-- [Parcel is a zero configuration build tool for the web](https://parceljs.org/)
-- [esbuild is an extremely fast JavaScript bundler and minifier](https://esbuild.github.io/)
-- [swc is a super-fast compiler written in Rust](https://swc.rs/)
-- [tsup is a zero-config TypeScript build tool](https://tsup.egoist.sh/)
-- [Rollup is a module bundler for JavaScript](https://rollupjs.org/guide/en/)
-- [tsdx is a zero-config CLI for TypeScript package development](https://tsdx.io/)
+- [@article@webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
+- [@article@Vite Next Generation Frontend Tooling](https://vitejs.dev)
+- [@article@Parcel is a zero configuration build tool for the web](https://parceljs.org/)
+- [@article@esbuild is an extremely fast JavaScript bundler and minifier](https://esbuild.github.io/)
+- [@article@swc is a super-fast compiler written in Rust](https://swc.rs/)
+- [@article@tsup is a zero-config TypeScript build tool](https://tsup.egoist.sh/)
+- [@article@Rollup is a module bundler for JavaScript](https://rollupjs.org/guide/en/)
+- [@article@tsdx is a zero-config CLI for TypeScript package development](https://tsdx.io/)

@@ -4,6 +4,6 @@ go-zero is a web and rpc framework with lots of engineering best practices built
 
 Visit the following resources to learn more:
 
-- [Go-zero](https://go-zero.dev/)
-- [Go-zero Docs](https://go-zero.dev/docs/introduction)
-- [GitHub Repository](https://github.com/zeromicro/go-zero)
+- [@article@Go-zero](https://go-zero.dev/)
+- [@article@Go-zero Docs](https://go-zero.dev/docs/introduction)
+- [@opensource@GitHub Repository](https://github.com/zeromicro/go-zero)

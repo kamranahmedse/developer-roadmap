@@ -10,4 +10,4 @@ When data is not cached, it can cause a number of undesirable behaviors, includi
 
 In turn, these problems can lead to poor response times, increased contention in the data store, and poor scalability.
 
-- [No Caching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/no-caching/)
+- [@article@No Caching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/no-caching/)

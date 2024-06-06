@@ -10,5 +10,5 @@ Reactive programming in Flutter helps create dynamic and responsive apps that ca
 
 Learn more from the following links:
 
-- [Get Started with Reactive Programming](https://www.didierboelens.com/2018/12/reactive-programming-streams-bloc-practical-use-cases/)
-- [Reactive Programming in Flutter](https://www.youtube.com/watch?v=x4FKXw4Uvls)
+- [@article@Get Started with Reactive Programming](https://www.didierboelens.com/2018/12/reactive-programming-streams-bloc-practical-use-cases/)
+- [@video@Reactive Programming in Flutter](https://www.youtube.com/watch?v=x4FKXw4Uvls)

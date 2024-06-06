@@ -48,5 +48,5 @@ Smishing, or SMS phishing, is the act of using text messages to deceive victims 
 
 By staying informed about these various attack types, you can better protect yourself and your organization from falling victim to cyber threats. Remain vigilant and ensure you have proper security measures in place to minimize the risk of these attacks.
 
-- [What is Phishing?](https://www.phishing.org/what-is-phishing)
-- [Phishing Examples](https://www.phishing.org/phishing-examples)
+- [@official@What is Phishing?](https://www.phishing.org/what-is-phishing)
+- [@official@Phishing Examples](https://www.phishing.org/phishing-examples)

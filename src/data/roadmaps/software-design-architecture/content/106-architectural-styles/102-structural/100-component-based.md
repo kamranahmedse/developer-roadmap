@@ -6,4 +6,4 @@ In CBD, a software system is divided into a set of components, each of which has
 
 Learn more from the following links:
 
-- [Component Based Software architecture](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)
+- [@article@Component Based Software architecture](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)

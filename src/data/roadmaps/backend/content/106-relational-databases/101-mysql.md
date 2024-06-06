@@ -4,8 +4,8 @@ MySQL is an incredibly popular open source relational database management system
 
 Visit the following resources to learn more:
 
-- [MySQL website](https://www.mysql.com/)
-- [W3Schools - MySQL tutorial ](https://www.w3schools.com/mySQl/default.asp)
-- [MySQL tutorial for beginners](https://www.youtube.com/watch?v=7S_tz1z_5bA)
-- [MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
-- [MySQL Tutorial](https://www.mysqltutorial.org/)
+- [@official@MySQL website](https://www.mysql.com/)
+- [@article@W3Schools - MySQL tutorial ](https://www.w3schools.com/mySQl/default.asp)
+- [@video@MySQL tutorial for beginners](https://www.youtube.com/watch?v=7S_tz1z_5bA)
+- [@article@MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
+- [@article@MySQL Tutorial](https://www.mysqltutorial.org/)

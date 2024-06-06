@@ -4,4 +4,4 @@ If you are building a Design System from Scratch, you may skip the "Existing Des
 
 Visit the following resources to learn more:
 
-- [Create a Design System with Figma - Full Course](https://www.youtube.com/watch?v=RYDiDpW2VkM)
+- [@video@Create a Design System with Figma - Full Course](https://www.youtube.com/watch?v=RYDiDpW2VkM)

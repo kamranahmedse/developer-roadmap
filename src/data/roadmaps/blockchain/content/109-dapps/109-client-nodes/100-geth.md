@@ -4,4 +4,4 @@ Go Ethereum (Geth) is one of the three original implementations (along with C++ 
 
 Visit the following resources to learn more:
 
-- [Geth Documentation](https://geth.ethereum.org/docs/)
+- [@article@Geth Documentation](https://geth.ethereum.org/docs/)

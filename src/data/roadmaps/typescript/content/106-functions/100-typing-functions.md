@@ -30,4 +30,4 @@ divide = (a, b) => {
 
 Learn more from the following links:
 
-- [TypeScript Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+- [@article@TypeScript Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)

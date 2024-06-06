@@ -4,5 +4,5 @@ In Rust, "borrowing" is a technique which allows you to access the data of a par
 
 Learn more from the following links:
 
-- [References and Borrowing](https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html)
-- [The Slice Type](https://rust-book.cs.brown.edu/ch04-04-slices.html)
+- [@article@References and Borrowing](https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html)
+- [@article@The Slice Type](https://rust-book.cs.brown.edu/ch04-04-slices.html)

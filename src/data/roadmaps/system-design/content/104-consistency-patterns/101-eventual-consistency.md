@@ -4,4 +4,4 @@ Eventual consistency is a form of Weak Consistency. After an update is made to t
 
 To learn more, visit the following links:
 
-- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)
+- [@article@Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)

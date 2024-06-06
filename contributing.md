@@ -41,8 +41,18 @@ Please adhere to the following style when adding content to a topic:
 
 Visit the following resources to learn more:
 
-- [Description of link](Link)
+- [@type@Description of link](Link)
 ```
+
+`@type@` can be one of the following:
+
+- `@official@`
+- `@opensource@`
+- `@article@`
+- `@course@`
+- `@opensource@`
+- `@podcast@`
+- `@video@`
 
 ## Guidelines
 

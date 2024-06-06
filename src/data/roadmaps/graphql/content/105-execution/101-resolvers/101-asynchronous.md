@@ -6,4 +6,4 @@ An asynchronous resolver is a type of resolver that runs, but instead of returni
 
 Learn more from the following links:
 
-- [Get Started with Asynchronous](https://graphql.org/learn/execution/#asynchronous-resolvers)
+- [@official@Get Started with Asynchronous](https://graphql.org/learn/execution/#asynchronous-resolvers)

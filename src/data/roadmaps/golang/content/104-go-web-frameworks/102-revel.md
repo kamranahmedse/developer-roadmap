@@ -4,5 +4,5 @@ Revel organizes endpoints into Controllers. They provide easy data binding and f
 
 Visit the following resources to learn more:
 
-- [Revel](https://revel.github.io/tutorial/index.html)
-- [Revel Packages](https://pkg.go.dev/github.com/revel/revel)
+- [@article@Revel](https://revel.github.io/tutorial/index.html)
+- [@article@Revel Packages](https://pkg.go.dev/github.com/revel/revel)

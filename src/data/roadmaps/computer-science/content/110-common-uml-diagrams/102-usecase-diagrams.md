@@ -10,6 +10,6 @@ A usecase diagram is a diagram that shows the actors and the usecases of the sys
 
 Visit the following resources to learn more:
 
-- [UML Use Case Diagram Tutorial](https://www.lucidchart.com/pages/uml-use-case-diagram)
-- [What is Use Case Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/)
-- [UML Use Case Diagram Tutorial](https://www.youtube.com/watch?v=zid-MVo7M-E)
+- [@article@UML Use Case Diagram Tutorial](https://www.lucidchart.com/pages/uml-use-case-diagram)
+- [@article@What is Use Case Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/)
+- [@video@UML Use Case Diagram Tutorial](https://www.youtube.com/watch?v=zid-MVo7M-E)

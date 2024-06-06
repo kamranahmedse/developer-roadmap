@@ -4,5 +4,5 @@ gRPC-Gateway creates a layer over gRPC services that will act as a RESTful servi
 
 Visit the following resources to learn more:
 
-- [Grpc-gateway Github](https://github.com/grpc-ecosystem/grpc-gateway/)
-- [Grpc-gateway Doc](https://grpc-ecosystem.github.io/grpc-gateway/)
+- [@opensource@Grpc-gateway Github](https://github.com/grpc-ecosystem/grpc-gateway/)
+- [@article@Grpc-gateway Doc](https://grpc-ecosystem.github.io/grpc-gateway/)

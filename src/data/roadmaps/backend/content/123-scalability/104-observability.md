@@ -8,8 +8,8 @@ You can of course implement all those features by yourself, but there are a lot 
 
 Visit the following resources to learn more:
 
-- [DataDog Docs](https://docs.datadoghq.com/)
-- [AWS CloudWatch Docs](https://aws.amazon.com/cloudwatch/getting-started/)
-- [Sentry Docs](https://docs.sentry.io/)
-- [AWS re:Invent 2017: Improving Microservice and Serverless Observability with Monitor](https://www.youtube.com/watch?v=Wx0SHRb2xcI)
-- [Observability and Instrumentation: What They Are and Why They Matter](https://newrelic.com/blog/best-practices/observability-instrumentation)
+- [@article@DataDog Docs](https://docs.datadoghq.com/)
+- [@article@AWS CloudWatch Docs](https://aws.amazon.com/cloudwatch/getting-started/)
+- [@article@Sentry Docs](https://docs.sentry.io/)
+- [@video@AWS re:Invent 2017: Improving Microservice and Serverless Observability with Monitor](https://www.youtube.com/watch?v=Wx0SHRb2xcI)
+- [@article@Observability and Instrumentation: What They Are and Why They Matter](https://newrelic.com/blog/best-practices/observability-instrumentation)

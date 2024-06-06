@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: Reqwest](https://docs.rs/reqwest/latest/reqwest/)
+- [@article@Docs.rs: Reqwest](https://docs.rs/reqwest/latest/reqwest/)

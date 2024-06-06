@@ -11,7 +11,7 @@ There are several different types of design patterns, including:
 
 Learn more from the following links:
 
-- [What Are Design Patterns?](https://www.youtube.com/watch?v=BWprw8UHIzA)
-- [Overview - Software Design Pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
-- [Explaining, imaging and simplifying design patterns](https://refactoring.guru/design-patterns/what-is-pattern)
+- [@video@What Are Design Patterns?](https://www.youtube.com/watch?v=BWprw8UHIzA)
+- [@article@Overview - Software Design Pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
+- [@article@Explaining, imaging and simplifying design patterns](https://refactoring.guru/design-patterns/what-is-pattern)
  

@@ -4,5 +4,5 @@ Emotion is a library designed for writing css styles with JavaScript. It provide
 
 Visit the following resources to learn more:
 
-- [Official Website and Docs](https://emotion.sh/docs/introduction)
-- [Styled components using emotion in React](https://www.youtube.com/watch?v=yO3JU2bMLGA)
+- [@official@Official Website and Docs](https://emotion.sh/docs/introduction)
+- [@video@Styled components using emotion in React](https://www.youtube.com/watch?v=yO3JU2bMLGA)

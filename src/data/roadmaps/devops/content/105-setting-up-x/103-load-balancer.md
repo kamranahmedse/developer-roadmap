@@ -4,5 +4,5 @@ Load Balancer acts as the **traffic cop** sitting in front of your servers and r
 
 Visit the following resources to learn more:
 
-- [What is Load Balancing?](https://www.nginx.com/resources/glossary/load-balancing/)
-- [Load Balancing concepts and algorithms](https://www.cloudflare.com/en-gb/learning/performance/what-is-load-balancing/)
+- [@article@What is Load Balancing?](https://www.nginx.com/resources/glossary/load-balancing/)
+- [@article@Load Balancing concepts and algorithms](https://www.cloudflare.com/en-gb/learning/performance/what-is-load-balancing/)

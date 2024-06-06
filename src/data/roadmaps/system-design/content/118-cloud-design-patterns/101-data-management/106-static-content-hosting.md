@@ -4,4 +4,4 @@ Deploy static content to a cloud-based storage service that can deliver them dir
 
 Learn more from the following links:
 
-- [Static Content Hosting pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)
+- [@article@Static Content Hosting pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)

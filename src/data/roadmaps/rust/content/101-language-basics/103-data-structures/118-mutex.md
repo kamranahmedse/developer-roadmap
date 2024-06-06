@@ -4,4 +4,4 @@
 
 Learn more from the following links:
 
-- [Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html)
+- [@article@Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html)

@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Global API — nextTick](https://vuejs.org/api/general.html#nexttick)
+- [@article@Global API — nextTick](https://vuejs.org/api/general.html#nexttick)

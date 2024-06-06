@@ -11,4 +11,4 @@ Separating out the web layer from the application layer (also known as platform 
 
 For more resources, visit the following links:
 
-- [Intro to architecting systems for scale](http://lethain.com/introduction-to-architecting-systems-for-scale/#platform_layer)
+- [@article@Intro to architecting systems for scale](http://lethain.com/introduction-to-architecting-systems-for-scale/#platform_layer)

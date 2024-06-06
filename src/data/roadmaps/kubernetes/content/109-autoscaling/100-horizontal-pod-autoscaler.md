@@ -4,4 +4,4 @@ It is a feature in Kubernetes that automatically scales the number of replicas o
 
 Learn more from the following resources:
 
-- [Horizontal Pod Autoscaling - Documentation](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [@official@Horizontal Pod Autoscaling - Documentation](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)

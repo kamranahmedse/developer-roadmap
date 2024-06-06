@@ -4,5 +4,5 @@ The `__dirname` in a node script returns the path of the folder where the curren
 
 Visit the following resources to learn more:
 
-- [Official Website](https://nodejs.org/docs/latest/api/modules.html#__dirname)
-- [How to use \_\_dirname](https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname)
+- [@official@Official Website](https://nodejs.org/docs/latest/api/modules.html#__dirname)
+- [@article@How to use \_\_dirname](https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname)

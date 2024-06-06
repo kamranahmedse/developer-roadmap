@@ -4,4 +4,4 @@ Warp is a web server framework for Rust that focuses on composability and safety
 
 Visit the following resources to learn more:
 
-- [Docs.rs: Warp](https://docs.rs/warp/latest/warp/)
+- [@article@Docs.rs: Warp](https://docs.rs/warp/latest/warp/)

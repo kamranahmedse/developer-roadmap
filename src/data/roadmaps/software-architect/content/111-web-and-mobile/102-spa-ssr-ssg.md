@@ -6,5 +6,5 @@
 
 Visit the following resources to learn more:
 
-- [Web design patterns — SSR, SSG, and SPA](https://medium.com/codex/web-design-patterns-ssr-ssg-and-spa-fadad7673dfe)
-- [Rendering on the Web](https://web.dev/rendering-on-the-web/)
+- [@article@Web design patterns — SSR, SSG, and SPA](https://medium.com/codex/web-design-patterns-ssr-ssg-and-spa-fadad7673dfe)
+- [@article@Rendering on the Web](https://web.dev/rendering-on-the-web/)

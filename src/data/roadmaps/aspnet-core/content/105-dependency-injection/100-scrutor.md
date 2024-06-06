@@ -6,5 +6,5 @@ One of the main features of Scrutor is its ability to automatically scan assembl
 
 For more information, visit the following resources:
 
-- [How to use Scrutor in ASP.Net Core?](https://www.infoworld.com/article/3321356/how-to-use-scrutor-in-aspnet-core.html)
-- [Complete Guide to Scrutor](https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/)
+- [@article@How to use Scrutor in ASP.Net Core?](https://www.infoworld.com/article/3321356/how-to-use-scrutor-in-aspnet-core.html)
+- [@article@Complete Guide to Scrutor](https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/)

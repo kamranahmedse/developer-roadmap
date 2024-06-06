@@ -4,6 +4,6 @@ Model-View-Controller (MVC) is an architectural pattern that separates the conce
 
 Learn more from the following links:
 
-- [MVC Design Pattern](https://www.geeksforgeeks.org/mvc-design-pattern/)
-- [MVC Framework - Introduction](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
-- [Tutorial - MVC Architectural Pattern](https://www.youtube.com/watch?v=e9S90R-Y24Q)
+- [@article@MVC Design Pattern](https://www.geeksforgeeks.org/mvc-design-pattern/)
+- [@article@MVC Framework - Introduction](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
+- [@video@Tutorial - MVC Architectural Pattern](https://www.youtube.com/watch?v=e9S90R-Y24Q)

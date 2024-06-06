@@ -6,4 +6,4 @@ There are two primary approaches to load balancing. Dynamic load balancing uses 
 
 To learn more, visit the following links:
 
-- [Types of Load Balancing Algorithms](https://www.cloudflare.com/learning/performance/types-of-load-balancing-algorithms/)
+- [@article@Types of Load Balancing Algorithms](https://www.cloudflare.com/learning/performance/types-of-load-balancing-algorithms/)

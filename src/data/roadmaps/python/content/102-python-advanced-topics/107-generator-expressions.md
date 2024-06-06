@@ -6,5 +6,5 @@ Generator expressions are a useful tool for efficiently producing large sequence
 
 Visit the following resources to learn more:
 
-- [Python Generator Expressions](https://www.pythontutorial.net/advanced-python/python-generator-expressions/)
-- [List Comprehensions in Python and Generator Expressions](https://djangostars.com/blog/list-comprehensions-and-generator-expressions/)
+- [@article@Python Generator Expressions](https://www.pythontutorial.net/advanced-python/python-generator-expressions/)
+- [@article@List Comprehensions in Python and Generator Expressions](https://djangostars.com/blog/list-comprehensions-and-generator-expressions/)

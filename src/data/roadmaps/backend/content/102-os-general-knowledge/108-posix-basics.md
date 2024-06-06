@@ -10,6 +10,6 @@ POSIX also adds a standard for exit codes, filesystem semantics, and several oth
 
 Visit the following resources to learn more:
 
-- [POSIX standard by IEEE](https://pubs.opengroup.org/onlinepubs/9699919799/)
-- [Summary of some POSIX implementations](https://unix.stackexchange.com/a/220877)
-- [A guide to POSIX](https://www.baeldung.com/linux/posix)
+- [@article@POSIX standard by IEEE](https://pubs.opengroup.org/onlinepubs/9699919799/)
+- [@article@Summary of some POSIX implementations](https://unix.stackexchange.com/a/220877)
+- [@article@A guide to POSIX](https://www.baeldung.com/linux/posix)

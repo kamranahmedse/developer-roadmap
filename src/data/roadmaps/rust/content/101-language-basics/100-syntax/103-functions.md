@@ -4,4 +4,4 @@ In Rust, functions are declared using the `fn` keyword. Each function takes a se
 
 Learn more from the following links:
 
-- [Functions](https://rust-book.cs.brown.edu/ch03-03-how-functions-work.html)
+- [@article@Functions](https://rust-book.cs.brown.edu/ch03-03-how-functions-work.html)

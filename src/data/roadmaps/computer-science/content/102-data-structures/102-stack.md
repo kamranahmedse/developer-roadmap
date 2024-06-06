@@ -4,6 +4,6 @@ Stack is a linear collection of items where items are inserted and removed in a 
 
 Visit the following resources to learn more:
 
-- [Stack Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=I5lq6sCuABE)
-- [Stack in 3 minutes](https://www.youtube.com/watch?v=KcT3aVgrrpU)
-- [Stack Data Structure](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+- [@video@Stack Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=I5lq6sCuABE)
+- [@video@Stack in 3 minutes](https://www.youtube.com/watch?v=KcT3aVgrrpU)
+- [@course@Stack Data Structure](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)

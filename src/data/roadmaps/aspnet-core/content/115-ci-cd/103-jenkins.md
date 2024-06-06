@@ -6,6 +6,6 @@ In ASP.NET, Jenkins can be used to automate various tasks related to the develop
 
 To learn more, visit the following links:
 
-- [Continuous Deployment With Jenkins And .NET](https://www.c-sharpcorner.com/article/continuous-deployment-with-jenkins-and-net/)
-- [How to build ASP.NET Core code with Jenkins](https://referbruv.com/blog/cicd-getting-started-automating-aspnet-core-build-using-jenkins/)
-- [How to publish ASP.NET Apps using Jenkins](https://www.ahmetkucukoglu.com/en/how-to-publish-asp-net-core-application-by-using-jenkins)
+- [@article@Continuous Deployment With Jenkins And .NET](https://www.c-sharpcorner.com/article/continuous-deployment-with-jenkins-and-net/)
+- [@article@How to build ASP.NET Core code with Jenkins](https://referbruv.com/blog/cicd-getting-started-automating-aspnet-core-build-using-jenkins/)
+- [@article@How to publish ASP.NET Apps using Jenkins](https://www.ahmetkucukoglu.com/en/how-to-publish-asp-net-core-application-by-using-jenkins)

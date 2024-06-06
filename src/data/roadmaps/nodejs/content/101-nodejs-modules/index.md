@@ -4,7 +4,7 @@ We split our code into different files to maintain, organize and reuse code when
 
 Visit the following resources to learn more:
 
-- [Modules: CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules)
-- [CommonJS vs. ES modules in Node.js](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
-- [Using Modules](https://www.freecodecamp.org/news/modular-programming-nodejs-npm-modules/)
-- [Modules in Node.js](https://www.youtube.com/watch?v=9Amxzvq5LY8&)
+- [@official@Modules: CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules)
+- [@article@CommonJS vs. ES modules in Node.js](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
+- [@article@Using Modules](https://www.freecodecamp.org/news/modular-programming-nodejs-npm-modules/)
+- [@video@Modules in Node.js](https://www.youtube.com/watch?v=9Amxzvq5LY8&)

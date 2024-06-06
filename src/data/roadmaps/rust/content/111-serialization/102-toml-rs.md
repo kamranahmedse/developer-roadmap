@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: TOML](https://docs.rs/toml/latest/toml/)
+- [@article@Docs.rs: TOML](https://docs.rs/toml/latest/toml/)

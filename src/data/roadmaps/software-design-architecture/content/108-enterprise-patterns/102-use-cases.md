@@ -13,4 +13,4 @@ Use cases are often used to drive the design and development of the system, as t
 
 Learn more from the following links:
 
-- [Use Case Patterns](https://caminao.blog/how-to-implement-symbolic-representations/patterns/functional-patterns/use-case-patterns/)
+- [@article@Use Case Patterns](https://caminao.blog/how-to-implement-symbolic-representations/patterns/functional-patterns/use-case-patterns/)

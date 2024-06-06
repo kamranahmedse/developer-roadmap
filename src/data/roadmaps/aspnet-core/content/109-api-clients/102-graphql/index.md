@@ -6,6 +6,6 @@ In ASP.NET, GraphQL can be used to create web services that expose data in a mor
 
 To learn more, visit the following resources:
 
-- [How to implement GraphQL in ASP.Net](https://blog.christian-schou.dk/how-to-implement-graphql-in-asp-net-core/)
-- [Intro to GraphQL](https://graphql-dotnet.github.io/docs/getting-started/introduction/)
-- [Developing API In .NET Core With GraphQL](https://www.c-sharpcorner.com/article/building-api-in-net-core-with-graphql2/)
+- [@article@How to implement GraphQL in ASP.Net](https://blog.christian-schou.dk/how-to-implement-graphql-in-asp-net-core/)
+- [@article@Intro to GraphQL](https://graphql-dotnet.github.io/docs/getting-started/introduction/)
+- [@article@Developing API In .NET Core With GraphQL](https://www.c-sharpcorner.com/article/building-api-in-net-core-with-graphql2/)

@@ -6,5 +6,5 @@ It is also important to understand the benefits of [idempotent](https://en.wikip
 
 To learn more, visit the following links:
 
-- [What is an idempotent operation?](https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation)
-- [Overview of Idempotent Operation](https://www.baeldung.com/cs/idempotent-operations)
+- [@article@What is an idempotent operation?](https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation)
+- [@article@Overview of Idempotent Operation](https://www.baeldung.com/cs/idempotent-operations)

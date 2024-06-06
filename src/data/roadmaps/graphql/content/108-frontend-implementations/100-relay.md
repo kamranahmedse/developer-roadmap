@@ -6,4 +6,4 @@ Relay is designed to work with GraphQL on the server and provides a set of clien
 
 Learn more from the following links:
 
-- [GraphQL Code Generator & Relay Compiler](https://the-guild.dev/blog/graphql-codegen-relay-compiler)
+- [@article@GraphQL Code Generator & Relay Compiler](https://the-guild.dev/blog/graphql-codegen-relay-compiler)

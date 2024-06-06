@@ -6,4 +6,4 @@ Google introduced Bigtable as the first wide column store, which influenced the 
 
 Learn more from the following links:
 
-- [Bigtable architecture](https://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf)
+- [@article@Bigtable architecture](https://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf)

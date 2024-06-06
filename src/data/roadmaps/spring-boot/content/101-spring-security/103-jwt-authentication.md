@@ -4,6 +4,6 @@ Spring Security can be used to implement JWT Authentication and Authorization to
 
 For more resources, visit the following links:
 
-- [JWT Token Authentication in Spring](https://springframework.guru/jwt-authentication-in-spring-microservices-jwt-token/)
-- [Spring Security with JWT for REST API](https://www.toptal.com/spring/spring-security-tutorial)
-- [Spring Security - JWT](https://www.tutorialspoint.com/spring_security/spring_security_with_jwt.htm)
+- [@article@JWT Token Authentication in Spring](https://springframework.guru/jwt-authentication-in-spring-microservices-jwt-token/)
+- [@article@Spring Security with JWT for REST API](https://www.toptal.com/spring/spring-security-tutorial)
+- [@article@Spring Security - JWT](https://www.tutorialspoint.com/spring_security/spring_security_with_jwt.htm)

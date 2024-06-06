@@ -4,6 +4,6 @@ LightBDD is an open-source, lightweight, and easy-to-use BDD (Behavior-Driven De
 
 To learn more, visit the following links:
 
-- [Getting started with Behavior Driven Development (BDD) in .NET](https://www.youtube.com/watch?v=EEeVU0z26u0)
-- [Introduction To BDD using SpecFlow in ASP.NET](https://www.youtube.com/watch?v=8KPrhBqZ-kk)
-- [The Lightweight Behavior Driven Development test framework](https://github.com/LightBDD/LightBDD)
+- [@video@Getting started with Behavior Driven Development (BDD) in .NET](https://www.youtube.com/watch?v=EEeVU0z26u0)
+- [@video@Introduction To BDD using SpecFlow in ASP.NET](https://www.youtube.com/watch?v=8KPrhBqZ-kk)
+- [@opensource@The Lightweight Behavior Driven Development test framework](https://github.com/LightBDD/LightBDD)

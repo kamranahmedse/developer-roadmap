@@ -4,5 +4,5 @@ AnimatedBuilder is a widget in Flutter that allows you to build animations. It t
 
 Learn more from the following links:
 
-- [AnimatedBuilder Class](https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html)
-- [Refactoring with AnimatedBuilders](https://docs.flutter.dev/development/ui/animations/tutorial#refactoring-with-animatedbuilder)
+- [@article@AnimatedBuilder Class](https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html)
+- [@article@Refactoring with AnimatedBuilders](https://docs.flutter.dev/development/ui/animations/tutorial#refactoring-with-animatedbuilder)

@@ -4,4 +4,4 @@ Messaging is a pattern that allows for the communication and coordination betwee
 
 Learn more from the following links:
 
-- [Messaging Cloud Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/messaging)
+- [@article@Messaging Cloud Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/messaging)

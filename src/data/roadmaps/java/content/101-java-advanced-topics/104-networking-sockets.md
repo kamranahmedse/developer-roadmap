@@ -6,6 +6,6 @@
 
 Visit the following resources to learn more:
 
-- [Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)
-- [What is Socket Programming?](https://youtu.be/BqBKEXLqdvI)
-- [Java Networking](https://www.tutorialspoint.com/java/java_networking.htm)
+- [@article@Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)
+- [@video@What is Socket Programming?](https://youtu.be/BqBKEXLqdvI)
+- [@article@Java Networking](https://www.tutorialspoint.com/java/java_networking.htm)

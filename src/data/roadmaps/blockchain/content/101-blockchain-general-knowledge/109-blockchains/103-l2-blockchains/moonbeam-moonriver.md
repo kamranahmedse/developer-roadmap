@@ -6,5 +6,5 @@ Moonriver is an incentivized testnet. It enables developers to create, test, and
 
 Visit the following resources to learn more:
 
-- [About Moonbeam](https://docs.moonbeam.network/learn/platform/networks/moonbeam/)
-- [Moonbeam Vision](https://docs.moonbeam.network/learn/platform/vision/)
+- [@article@About Moonbeam](https://docs.moonbeam.network/learn/platform/networks/moonbeam/)
+- [@article@Moonbeam Vision](https://docs.moonbeam.network/learn/platform/vision/)

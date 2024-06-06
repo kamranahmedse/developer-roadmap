@@ -4,4 +4,4 @@ Learn how to run database migrations effectively. Especially zero downtime multi
 
 Visit the following resources to learn more:
 
-- [Databases as a Challenge for Continuous Delivery](https://phauer.com/2015/databases-challenge-continuous-delivery/)
+- [@article@Databases as a Challenge for Continuous Delivery](https://phauer.com/2015/databases-challenge-continuous-delivery/)

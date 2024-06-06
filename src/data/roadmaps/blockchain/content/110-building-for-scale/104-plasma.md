@@ -4,4 +4,4 @@ Plasma is a framework that allows the creation of child blockchains that use the
 
 Visit the following resources to learn more:
 
-- [Plasma Chains - Ethereum](https://ethereum.org/en/developers/docs/scaling/plasma/)
+- [@article@Plasma Chains - Ethereum](https://ethereum.org/en/developers/docs/scaling/plasma/)

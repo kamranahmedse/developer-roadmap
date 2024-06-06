@@ -6,6 +6,6 @@ In the case of ASP.NET, cloud providers such as Microsoft Azure, Amazon Web Serv
 
 To learn more, visit the following links:
 
-- [Building a .NET Cloud Application](https://www.c-sharpcorner.com/article/building-the-net-cloud-application/)
-- [How to make a .NET Cloud Application?](https://dotnet.microsoft.com/en-us/apps/cloud)
-- [Getting started with Cloud](https://aws.amazon.com/free/)
+- [@article@Building a .NET Cloud Application](https://www.c-sharpcorner.com/article/building-the-net-cloud-application/)
+- [@article@How to make a .NET Cloud Application?](https://dotnet.microsoft.com/en-us/apps/cloud)
+- [@article@Getting started with Cloud](https://aws.amazon.com/free/)

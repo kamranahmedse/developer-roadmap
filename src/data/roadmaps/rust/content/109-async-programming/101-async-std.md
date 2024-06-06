@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: async-std](https://docs.rs/async-std/latest/async_std/)
+- [@article@Docs.rs: async-std](https://docs.rs/async-std/latest/async_std/)

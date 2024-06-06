@@ -6,5 +6,5 @@ White listing is a process of adding an email to an approved sender list, so ema
 
 Visit the following resources to learn more:
 
-- [Basic Introduction to whitelisting](https://www.cblohm.com/blog/education-marketing-trends/what-is-email-whitelisting/)
-- [Detailed Introduction to greylisting](https://en.wikipedia.org/wiki/Greylisting_(email))
+- [@article@Basic Introduction to whitelisting](https://www.cblohm.com/blog/education-marketing-trends/what-is-email-whitelisting/)
+- [@article@Detailed Introduction to greylisting](https://en.wikipedia.org/wiki/Greylisting_(email))

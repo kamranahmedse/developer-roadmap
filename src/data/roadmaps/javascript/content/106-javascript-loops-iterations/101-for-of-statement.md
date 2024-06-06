@@ -4,4 +4,4 @@ The for...of statement executes a loop that operates on a sequence of values sou
 
 Visit the following resources to learn more:
 
-- [for...of statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+- [@article@for...of statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)

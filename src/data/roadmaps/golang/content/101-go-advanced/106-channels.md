@@ -6,9 +6,9 @@ Channels are a typed conduit through which you can send and receive values with 
 
 Visit the following resources to learn more:
 
-- [Channels](https://go.dev/tour/concurrency/2)
-- [Effective Go: Channels](https://go.dev/doc/effective_go#channels)
-- [Go by Example: Channels](https://gobyexample.com/channels)
-- [Channels in Golang](https://golangbot.com/channels/)
-- [Channels](https://www.youtube.com/watch?v=e4bu9g-bYtg)
-- [Golang Channel Basics You must Know!](https://youtu.be/LgCmPHqAuf4)
+- [@official@Channels](https://go.dev/tour/concurrency/2)
+- [@official@Effective Go: Channels](https://go.dev/doc/effective_go#channels)
+- [@article@Go by Example: Channels](https://gobyexample.com/channels)
+- [@article@Channels in Golang](https://golangbot.com/channels/)
+- [@video@Channels](https://www.youtube.com/watch?v=e4bu9g-bYtg)
+- [@video@Golang Channel Basics You must Know!](https://youtu.be/LgCmPHqAuf4)

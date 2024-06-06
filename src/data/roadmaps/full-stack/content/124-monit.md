@@ -13,5 +13,5 @@ Some of the key features of Monit are:
 
 Have a look at the following resources to learn more about Monit:
 
-- [Monit - Opensource Self Healing Server Monitoring](https://www.youtube.com/watch?v=3cA5lNje1Ow)
-- [Monit documentation](https://mmonit.com/monit/documentation/)
+- [@video@Monit - Opensource Self Healing Server Monitoring](https://www.youtube.com/watch?v=3cA5lNje1Ow)
+- [@article@Monit documentation](https://mmonit.com/monit/documentation/)

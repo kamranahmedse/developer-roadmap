@@ -8,9 +8,9 @@ RTK is often used as an alternative to writing Redux applications from scratch, 
 
 Visit the following resources to learn more:
 
-- [Redux Toolkit - ReduxJS](https://redux-toolkit.js.org/)
-- [Official Website](https://redux.js.org/)
-- [Official Getting Started to Redux](https://redux.js.org/introduction/getting-started)
-- [Redux Toolkit Official Website](https://redux-toolkit.js.org)
-- [Official Tutorial to Learn Redux](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
-- [Redux Tutorial - Beginner to Advanced](https://youtube.com/watch?v=zrs7u6bdbUw)
+- [@article@Redux Toolkit - ReduxJS](https://redux-toolkit.js.org/)
+- [@article@Official Website](https://redux.js.org/)
+- [@article@Official Getting Started to Redux](https://redux.js.org/introduction/getting-started)
+- [@article@Redux Toolkit Official Website](https://redux-toolkit.js.org)
+- [@article@Official Tutorial to Learn Redux](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+- [@video@Redux Tutorial - Beginner to Advanced](https://youtube.com/watch?v=zrs7u6bdbUw)

@@ -45,5 +45,5 @@ SELECT anon.set_anonymous_function('clients', 'email', 'anon.email(text)');
 
 For further details on PostgreSQL Anonymizer, consult the following resources:
 
-- [Official PostgreSQL Anonymizer Documentation](https://postgresql-anonymizer.readthedocs.io/)
-- [GitHub Repository](https://gitlab.com/dalibo/postgresql_anonymizer)
+- [@article@Official PostgreSQL Anonymizer Documentation](https://postgresql-anonymizer.readthedocs.io/)
+- [@opensource@GitHub Repository](https://gitlab.com/dalibo/postgresql_anonymizer)

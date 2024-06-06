@@ -4,5 +4,5 @@ Go doesn't support automatic type conversion, but it allows type casting, which 
 
 Visit the following resources to learn more:
 
-- [Tour of Go: Type Casting Basics](https://go.dev/tour/basics/13)
-- [Go Docs: Type Casting](https://golangdocs.com/type-casting-in-golang)
+- [@official@Tour of Go: Type Casting Basics](https://go.dev/tour/basics/13)
+- [@article@Go Docs: Type Casting](https://golangdocs.com/type-casting-in-golang)

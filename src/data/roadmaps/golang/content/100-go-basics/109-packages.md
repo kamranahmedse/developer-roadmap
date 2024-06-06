@@ -4,8 +4,8 @@ Packages are the most powerful part of the Go language. The purpose of a package
 
 Visit the following resources to learn more:
 
-- [How to create a package in Go](https://www.golang-book.com/books/intro/11)
-- [How to manage external dependencies in Go](https://go.dev/doc/modules/managing-dependencies)
-- [Go Packages explorer](https://pkg.go.dev/)
-- [Standard library](https://pkg.go.dev/std)
-- [Go Packages](https://www.programiz.com/golang/packages)
+- [@article@How to create a package in Go](https://www.golang-book.com/books/intro/11)
+- [@official@How to manage external dependencies in Go](https://go.dev/doc/modules/managing-dependencies)
+- [@article@Go Packages explorer](https://pkg.go.dev/)
+- [@article@Standard library](https://pkg.go.dev/std)
+- [@article@Go Packages](https://www.programiz.com/golang/packages)

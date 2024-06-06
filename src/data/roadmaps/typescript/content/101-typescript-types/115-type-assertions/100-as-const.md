@@ -14,4 +14,4 @@ Using as const allows TypeScript to infer more accurate types for constants, whi
 
 Learn more from the following links:
 
-- [const assertions](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions)
+- [@article@const assertions](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions)

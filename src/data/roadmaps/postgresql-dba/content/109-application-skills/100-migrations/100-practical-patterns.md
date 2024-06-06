@@ -43,8 +43,8 @@ Having seed data and sample data can be helpful to initialize an empty database 
 Consider using tools and frameworks to automate the application of migrations across different environments. This will ensure that your schema changes are applied consistently, reducing the chances of human error.
 
 Popular tools for automating PostgreSQL migrations include:
-- [Flyway](https://flywaydb.org/)
-- [Alembic](https://alembic.sqlalchemy.org/)
-- [Sqitch](https://sqitch.org/)
+- [@article@Flyway](https://flywaydb.org/)
+- [@article@Alembic](https://alembic.sqlalchemy.org/)
+- [@article@Sqitch](https://sqitch.org/)
 
 By following these practical patterns, you'll have a more efficient and maintainable migration process for your PostgreSQL projects, making it easier for your team to collaborate and manage schema changes over time.

@@ -4,5 +4,5 @@ Activity diagrams are used to model the flow of control in a system. They are us
 
 Visit the following resources to learn more:
 
-- [UML Activity Diagram Tutorial](https://www.lucidchart.com/pages/uml-activity-diagram)
-- [What is Activity Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/)
+- [@article@UML Activity Diagram Tutorial](https://www.lucidchart.com/pages/uml-activity-diagram)
+- [@article@What is Activity Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/)

@@ -6,5 +6,5 @@ NUKE allows you to define your build process using a simple, declarative syntax,
 
 To learn more, visit the following links:
 
-- [How to Build Automation with NUKE](https://learn.microsoft.com/en-us/shows/on-net/build-automation-with-nuke)
-- [Automate your .NET project builds with NUKE](https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/)
+- [@article@How to Build Automation with NUKE](https://learn.microsoft.com/en-us/shows/on-net/build-automation-with-nuke)
+- [@article@Automate your .NET project builds with NUKE](https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/)

@@ -21,4 +21,4 @@ The Twelve-Factor App methodology is widely adopted by developers of SaaS applic
 
 Visit the following resources to learn more:
 
-- [The Twelve-Factor App](https://12factor.net/)
+- [@article@The Twelve-Factor App](https://12factor.net/)

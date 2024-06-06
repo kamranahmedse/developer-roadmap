@@ -4,4 +4,4 @@ A truly healthy system requires that the components and subsystems that compose 
 
 Learn more from the following:
 
-- [Availability Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#availability-monitoring)
+- [@article@Availability Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#availability-monitoring)

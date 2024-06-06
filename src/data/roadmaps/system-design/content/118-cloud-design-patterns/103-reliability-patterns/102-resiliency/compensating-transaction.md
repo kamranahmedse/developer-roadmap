@@ -4,5 +4,5 @@ Undo the work performed by a series of steps, which together define an eventuall
 
 Learn more from the following resources:
 
-- [Compensating Transaction pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)
-- [Intro to Compensation Transaction](https://en.wikipedia.org/wiki/Compensating_transaction)
+- [@article@Compensating Transaction pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)
+- [@article@Intro to Compensation Transaction](https://en.wikipedia.org/wiki/Compensating_transaction)

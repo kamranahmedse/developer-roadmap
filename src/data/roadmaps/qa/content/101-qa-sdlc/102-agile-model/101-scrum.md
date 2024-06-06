@@ -4,5 +4,5 @@ Scrum in Software Testing is a methodology for building complex software applica
 
 Visit the following resources to learn more:
 
-- [Scrum Testing Methodology Tutorial](https://www.guru99.com/scrum-testing-beginner-guide.html)
-- [Scrum - What is, How it works](https://www.atlassian.com/agile/scrum)
+- [@article@Scrum Testing Methodology Tutorial](https://www.guru99.com/scrum-testing-beginner-guide.html)
+- [@article@Scrum - What is, How it works](https://www.atlassian.com/agile/scrum)

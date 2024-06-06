@@ -4,4 +4,4 @@ Enable multiple concurrent consumers to process messages received on the same me
 
 Learn more from the following links:
 
-- [Competing Consumers pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/competing-consumers)
+- [@article@Competing Consumers pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/competing-consumers)

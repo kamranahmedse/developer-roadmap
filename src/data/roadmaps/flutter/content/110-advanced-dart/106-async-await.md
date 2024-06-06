@@ -9,5 +9,5 @@ With `async`/`await`, you can write asynchronous code that is easy to read, writ
 
 Learn more from the following resources:
 
-- [Asynchronous programming: async, await](https://dart.dev/codelabs/async-await)
-- [Async widgets](https://docs.flutter.dev/development/ui/widgets/async)
+- [@article@Asynchronous programming: async, await](https://dart.dev/codelabs/async-await)
+- [@article@Async widgets](https://docs.flutter.dev/development/ui/widgets/async)

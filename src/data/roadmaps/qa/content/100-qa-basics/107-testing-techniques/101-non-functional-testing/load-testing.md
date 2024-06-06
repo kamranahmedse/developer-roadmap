@@ -4,4 +4,4 @@ Load Testing is a type of Performance Testing that determines the performance of
 
 Visit the following resources to learn more:
 
-- [Load testing and Best Practices](https://loadninja.com/load-testing/)
+- [@article@Load testing and Best Practices](https://loadninja.com/load-testing/)

@@ -4,8 +4,8 @@ The `context` package provides a standard way to solve the problem of managing t
 
 Visit the following resources to learn more:
 
-- [Go Context](https://pkg.go.dev/context)
-- [Go by Example: Context](https://gobyexample.com/context)
-- [Digital Ocean: How to Use Contexts in Go](https://www.digitalocean.com/community/tutorials/how-to-use-contexts-in-go)
-- [Context in Go](https://www.youtube.com/watch?v=LSzR0VEraWw)
-- [Understanding Contexts in Go](https://youtu.be/h2RdcrMLQAo)
+- [@article@Go Context](https://pkg.go.dev/context)
+- [@article@Go by Example: Context](https://gobyexample.com/context)
+- [@article@Digital Ocean: How to Use Contexts in Go](https://www.digitalocean.com/community/tutorials/how-to-use-contexts-in-go)
+- [@video@Context in Go](https://www.youtube.com/watch?v=LSzR0VEraWw)
+- [@video@Understanding Contexts in Go](https://youtu.be/h2RdcrMLQAo)

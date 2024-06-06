@@ -12,7 +12,7 @@ Additionally, it's come with a lot of best practices and conventions baked in, w
 
 Visit the following resources to learn more:
 
-- [Why Spring?](https://spring.io/why-spring)
-- [Spring vs Spring Boot: Know The Difference](https://www.interviewbit.com/blog/spring-vs-spring-boot)
-- [A Comparison Between Spring and Spring Boot](https://www.baeldung.com/spring-vs-spring-boot)
-- [Advantages of Spring Boot](https://www.adservio.fr/post/advantages-of-spring-boot)
+- [@official@Why Spring?](https://spring.io/why-spring)
+- [@article@Spring vs Spring Boot: Know The Difference](https://www.interviewbit.com/blog/spring-vs-spring-boot)
+- [@article@A Comparison Between Spring and Spring Boot](https://www.baeldung.com/spring-vs-spring-boot)
+- [@article@Advantages of Spring Boot](https://www.adservio.fr/post/advantages-of-spring-boot)

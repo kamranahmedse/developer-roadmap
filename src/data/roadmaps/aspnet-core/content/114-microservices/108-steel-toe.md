@@ -4,6 +4,6 @@ Steeltoe is an open-source project that provides a set of libraries for building
 
 To learn more, visit the following links:
 
-- [.NET Microservices with Steeltoe](https://learn.microsoft.com/en-us/shows/on-net/net-microservices-with-steeltoe)
-- [Steeltoe Documentation](https://docs.steeltoe.io/api/v3/welcome/index.html)
-- [.NET Microservices with Steeltoe](https://www.youtube.com/watch?v=QLRi6iPapVg)
+- [@article@.NET Microservices with Steeltoe](https://learn.microsoft.com/en-us/shows/on-net/net-microservices-with-steeltoe)
+- [@article@Steeltoe Documentation](https://docs.steeltoe.io/api/v3/welcome/index.html)
+- [@video@.NET Microservices with Steeltoe](https://www.youtube.com/watch?v=QLRi6iPapVg)

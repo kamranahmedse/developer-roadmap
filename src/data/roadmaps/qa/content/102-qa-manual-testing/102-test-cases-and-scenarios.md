@@ -6,5 +6,5 @@ A Test Scenario is defined as any functionality that can be tested. It is a coll
 
 Visit the following resources to learn more:
 
-- [Test Case vs Test Scenario – Difference Between Them](https://www.guru99.com/test-case-vs-test-scenario.html)
-- [How to Write Test Cases in Software Testing with Examples](https://www.guru99.com/test-case.html)
+- [@article@Test Case vs Test Scenario – Difference Between Them](https://www.guru99.com/test-case-vs-test-scenario.html)
+- [@article@How to Write Test Cases in Software Testing with Examples](https://www.guru99.com/test-case.html)

@@ -4,4 +4,4 @@ The process.stdout property is an inbuilt application programming interface of t
 
 Visit the following resources to learn more:
 
-- [process.stdout](https://nodejs.org/api/process.html#processstdout)
+- [@official@process.stdout](https://nodejs.org/api/process.html#processstdout)

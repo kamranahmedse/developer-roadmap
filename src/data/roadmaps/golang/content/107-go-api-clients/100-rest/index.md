@@ -4,5 +4,5 @@ REST (Representational State Transfer) API (Application Programming Interface) i
 
 Visit the following resources to learn more:
 
-- [Tutorial](https://go.dev/doc/tutorial/web-service-gin)
-- [RESTful APIs Series](https://youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY)
+- [@official@Tutorial](https://go.dev/doc/tutorial/web-service-gin)
+- [@video@RESTful APIs Series](https://youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY)

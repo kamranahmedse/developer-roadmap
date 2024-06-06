@@ -6,5 +6,5 @@ Denormalization is the opposite of normalization. It is the process of adding re
 
 Visit the following resources to learn more:
 
-- [Normalization vs. Denormalization | Events and Event Streaming](https://www.youtube.com/watch?v=sDU94hraq8g)
-- [Normalization - 1NF, 2NF, 3NF and 4NF](https://www.youtube.com/watch?v=UrYLYV7WSHM)
+- [@video@Normalization vs. Denormalization | Events and Event Streaming](https://www.youtube.com/watch?v=sDU94hraq8g)
+- [@video@Normalization - 1NF, 2NF, 3NF and 4NF](https://www.youtube.com/watch?v=UrYLYV7WSHM)

@@ -4,5 +4,5 @@ Architectural principles refer to a set of guidelines or rules that are used to 
 
 To learn more, visit the following links:
 
-- [Intro to Architectural Principles](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles)
-- [Principles of Software Design](https://www.youtube.com/watch?v=TO9igqkPtfc)
+- [@article@Intro to Architectural Principles](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles)
+- [@video@Principles of Software Design](https://www.youtube.com/watch?v=TO9igqkPtfc)

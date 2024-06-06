@@ -4,4 +4,4 @@ The usual way to run a Node.js program is to run the globally available `node` c
 
 Visit the following resources to learn more:
 
-- [Run Node.js from Command Line](https://nodejs.org/en/learn/command-line/run-nodejs-scripts-from-the-command-line/)
+- [@official@Run Node.js from Command Line](https://nodejs.org/en/learn/command-line/run-nodejs-scripts-from-the-command-line/)

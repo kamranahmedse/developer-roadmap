@@ -4,8 +4,8 @@ The Event Loop is one of the most critical aspects of Node.js. Why is this so im
 
 Visit the following resources to learn more:
 
-- [The Node.JS Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
-- [JavaScript Visualized: Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
-- [The Node.js Event Loop](https://www.coursera.org/lecture/secure-full-stack-mean-developer/the-node-js-event-loop-j5fbT)
-- [The NodeJS Event loop](https://nodejs.org/en/guides/event-loop-timers-and-nexttick)
-- [Don't Block the Event Loop](https://nodejs.org/en/guides/dont-block-the-event-loop)
+- [@official@The Node.JS Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#what-is-the-event-loop)
+- [@article@JavaScript Visualized: Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+- [@course@The Node.js Event Loop](https://www.coursera.org/lecture/secure-full-stack-mean-developer/the-node-js-event-loop-j5fbT)
+- [@official@The NodeJS Event loop](https://nodejs.org/en/guides/event-loop-timers-and-nexttick)
+- [@official@Don't Block the Event Loop](https://nodejs.org/en/guides/dont-block-the-event-loop)

@@ -6,7 +6,7 @@ While there are several Ethereum standards. These ERC Ethereum standards are the
 
 Visit the following resources to learn more:
 
-- [What are Ethereum request for comments (ERC) Standards](https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80)
-- [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
-- [ERC-721 Token Standard (NFTs)](https://decrypt.co/resources/erc-721-ethereum-nft-token-standard)
-- [ERC-1155 Token Standard (Multi-Token)](https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard)
+- [@article@What are Ethereum request for comments (ERC) Standards](https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80)
+- [@article@ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+- [@article@ERC-721 Token Standard (NFTs)](https://decrypt.co/resources/erc-721-ethereum-nft-token-standard)
+- [@article@ERC-1155 Token Standard (Multi-Token)](https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard)

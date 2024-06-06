@@ -4,6 +4,6 @@ Modules are the collection of JavaScript codes in a separate logical file that c
 
 Visit the following resources to learn more:
 
-- [Creating a Module in Node.js](https://www.youtube.com/watch?v=Cxo4UKpHv5s)
-- [CommonJS vs ESM in Node.js](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
-- [Modules and Imports in Node.js](https://reflectoring.io/nodejs-modules-imports/)
+- [@video@Creating a Module in Node.js](https://www.youtube.com/watch?v=Cxo4UKpHv5s)
+- [@article@CommonJS vs ESM in Node.js](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
+- [@article@Modules and Imports in Node.js](https://reflectoring.io/nodejs-modules-imports/)

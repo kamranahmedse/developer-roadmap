@@ -4,4 +4,4 @@ Every modern web browser includes a powerful suite of developer tools. These too
 
 Visit the following resources to learn more:
 
-- [What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+- [@article@What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)

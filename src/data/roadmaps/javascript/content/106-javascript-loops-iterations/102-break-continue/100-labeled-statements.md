@@ -6,6 +6,6 @@ A label is simply an identifier followed by a colon`(:)` that is applied to a bl
 
 Visit the following resources to learn more:
 
-- [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label)
-- [Tutorialspoint – JavaScript Tutorial](https://www.tutorialspoint.com/What-are-label-statements-in-JavaScript)
-- [Labels for break/continue](https://javascript.info/while-for#labels-for-break-continue)
+- [@article@JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label)
+- [@article@Tutorialspoint – JavaScript Tutorial](https://www.tutorialspoint.com/What-are-label-statements-in-JavaScript)
+- [@article@Labels for break/continue](https://javascript.info/while-for#labels-for-break-continue)

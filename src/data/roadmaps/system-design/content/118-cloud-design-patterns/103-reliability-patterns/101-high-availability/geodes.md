@@ -4,4 +4,4 @@ The Geode pattern involves deploying a collection of backend services into a set
 
 To learn more visit the following links:
 
-- [Geode pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes)
+- [@article@Geode pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes)

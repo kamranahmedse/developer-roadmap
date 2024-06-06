@@ -4,5 +4,5 @@ Template engines in ASP.NET are libraries that allow developers to embed dynamic
 
 To learn more, visit the followin link:
 
-- [Template Engine in ASP.NET](https://ej2.syncfusion.com/aspnetmvc/documentation/common/template-engine)
-- [How to to Create Custom Templates using the .Net Template Engine ](https://www.infoq.com/articles/dotnet-core-template-engine/)
+- [@article@Template Engine in ASP.NET](https://ej2.syncfusion.com/aspnetmvc/documentation/common/template-engine)
+- [@article@How to to Create Custom Templates using the .Net Template Engine ](https://www.infoq.com/articles/dotnet-core-template-engine/)

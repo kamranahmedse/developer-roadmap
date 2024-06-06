@@ -4,4 +4,4 @@ Waterfall Model is a sequential model that divides software development into pre
 
 Visit the following resources to learn more:
 
-- [What is Waterfall Model in SDLC? Advantages and Disadvantages](https://www.guru99.com/what-is-sdlc-or-waterfall-model.html)
+- [@article@What is Waterfall Model in SDLC? Advantages and Disadvantages](https://www.guru99.com/what-is-sdlc-or-waterfall-model.html)

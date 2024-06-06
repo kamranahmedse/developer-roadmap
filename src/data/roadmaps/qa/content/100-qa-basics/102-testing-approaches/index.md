@@ -13,4 +13,4 @@ Three approaches are commonly used to implement functional testing:
 
 Visit the following resources to learn more:
 
-- [Functional Testing Approaches and Agile Considerations](https://www.qualitylogic.com/knowledge-center/functional-testing-approaches-agile-considerations/)
+- [@article@Functional Testing Approaches and Agile Considerations](https://www.qualitylogic.com/knowledge-center/functional-testing-approaches-agile-considerations/)

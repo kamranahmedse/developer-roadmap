@@ -15,4 +15,4 @@ In this example, someValue is initially of type any, and we use the as operator 
 
 It's important to note that type assertions do not change the runtime type of a value, and do not cause any type of conversion. They are a compile-time construct used for static type checking in TypeScript.
 
-- [Type assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions)
+- [@article@Type assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions)

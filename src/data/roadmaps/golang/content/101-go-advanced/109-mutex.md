@@ -4,4 +4,4 @@ Go allows us to run code concurrently using goroutines. However, when concurrent
 
 Visit the following resources to learn more:
 
-- [ Using a Mutex in Go with Examples](https://www.sohamkamani.com/golang/mutex/)
+- [@article@ Using a Mutex in Go with Examples](https://www.sohamkamani.com/golang/mutex/)

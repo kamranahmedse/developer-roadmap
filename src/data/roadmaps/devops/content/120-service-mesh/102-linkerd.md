@@ -4,6 +4,6 @@ Linkerd is an open source service mesh designed to be deployed into a variety of
 
 Visit the following resources to learn more:
 
-- [Linkerd Website](https://linkerd.io/)
-- [Linkerd Documentation](https://linkerd.io/2.11/overview/)
-- [What is Linkerd?](https://www.techtarget.com/searchitoperations/definition/Linkerd)
+- [@official@Linkerd Website](https://linkerd.io/)
+- [@official@Linkerd Documentation](https://linkerd.io/2.11/overview/)
+- [@article@What is Linkerd?](https://www.techtarget.com/searchitoperations/definition/Linkerd)

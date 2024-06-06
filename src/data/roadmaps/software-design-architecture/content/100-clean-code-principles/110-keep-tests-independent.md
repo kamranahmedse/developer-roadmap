@@ -13,4 +13,4 @@ Here are some ways to keep tests independent in system architecture:
 
 Learn more from the following links:
 
-- [Keeping Tests Valuable](https://www.checklyhq.com/learn/headless/valuable-tests/)
+- [@article@Keeping Tests Valuable](https://www.checklyhq.com/learn/headless/valuable-tests/)

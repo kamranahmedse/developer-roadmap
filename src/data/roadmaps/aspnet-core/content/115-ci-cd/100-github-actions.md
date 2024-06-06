@@ -6,6 +6,6 @@ In ASP.NET, GitHub Actions can be used to automate various tasks related to the 
 
 Visit the following links to learn more:
 
-- [Intro to GitHub Actions for .NET](https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/)
-- [Tutorial: Create a GitHub Action with .NET](https://learn.microsoft.com/en-us/dotnet/devops/create-dotnet-github-action)
-- [Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net)
+- [@article@Intro to GitHub Actions for .NET](https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/)
+- [@article@Tutorial: Create a GitHub Action with .NET](https://learn.microsoft.com/en-us/dotnet/devops/create-dotnet-github-action)
+- [@article@Building and testing .NET](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net)

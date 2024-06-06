@@ -4,5 +4,5 @@ The TOGAF content framework provides a detailed model of architectural work prod
 
 Visit the following resources to learn more:
 
-- [Official Website](https://www.opengroup.org/togaf)
-- [Wikipedia](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)
+- [@article@Official Website](https://www.opengroup.org/togaf)
+- [@article@Wikipedia](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)

@@ -10,4 +10,4 @@ Picking the right database for a system is an important decision, as it can have
 
 Overall, by choosing the right database, you can ensure that your system will perform well, scale as needed, and be maintainable in the long run.
 
-- [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
+- [@video@Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)

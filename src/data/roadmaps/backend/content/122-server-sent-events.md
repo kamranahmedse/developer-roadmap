@@ -8,4 +8,4 @@ To use SSE, the client must create an EventSource object and specify the URL of 
 
 Visit the following resources to learn more:
 
-- [Server-Sent Events - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
+- [@article@Server-Sent Events - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)

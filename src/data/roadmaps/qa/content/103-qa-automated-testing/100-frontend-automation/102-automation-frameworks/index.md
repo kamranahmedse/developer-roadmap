@@ -4,5 +4,5 @@ A Test Automation Framework is a set of guidelines like coding standards, test-d
 
 Visit the following resources to learn more:
 
-- [Test Automation Framework: What is, Architecture & Types](https://www.guru99.com/test-automation-framework.html)
-- [Popular Test Automation Frameworks](https://www.browserstack.com/guide/best-test-automation-frameworks)
+- [@article@Test Automation Framework: What is, Architecture & Types](https://www.guru99.com/test-automation-framework.html)
+- [@article@Popular Test Automation Frameworks](https://www.browserstack.com/guide/best-test-automation-frameworks)

@@ -4,5 +4,5 @@ Dart has a rich set of core libraries that provide essentials for many everyday 
 
 Visit the following resources to learn more:
 
-- [Core libraries](https://dart.dev/guides/libraries)
-- [Libraries](https://api.flutter.dev/)
+- [@article@Core libraries](https://dart.dev/guides/libraries)
+- [@article@Libraries](https://api.flutter.dev/)

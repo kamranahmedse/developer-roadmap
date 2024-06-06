@@ -4,5 +4,5 @@ MediatR is an open-source library for .NET that is designed to simplify the proc
 
 For more information, visit the following links:
 
-- [Use MediatR in ASP.NET or ASP.NET Core](https://medium.com/dotnet-hub/use-mediatr-in-asp-net-or-asp-net-core-cqrs-and-mediator-in-dotnet-how-to-use-mediatr-cqrs-aspnetcore-5076e2f2880c)
-- [How to implement CQRS using MediatR in an ASP.NET?](https://christian-schou.dk/blog/how-to-implement-cqrs-with-mediatr-in-asp-net/)
+- [@article@Use MediatR in ASP.NET or ASP.NET Core](https://medium.com/dotnet-hub/use-mediatr-in-asp-net-or-asp-net-core-cqrs-and-mediator-in-dotnet-how-to-use-mediatr-cqrs-aspnetcore-5076e2f2880c)
+- [@article@How to implement CQRS using MediatR in an ASP.NET?](https://christian-schou.dk/blog/how-to-implement-cqrs-with-mediatr-in-asp-net/)

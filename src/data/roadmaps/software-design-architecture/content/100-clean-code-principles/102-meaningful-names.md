@@ -4,4 +4,4 @@ You should follow the practice of giving clear and descriptive names to differen
 
 Learn more from the following links:
 
-- [A Guide for Naming Things in Programming](https://levelup.gitconnected.com/a-guide-for-naming-things-in-programming-2dc2d74879f8)
+- [@article@A Guide for Naming Things in Programming](https://levelup.gitconnected.com/a-guide-for-naming-things-in-programming-2dc2d74879f8)

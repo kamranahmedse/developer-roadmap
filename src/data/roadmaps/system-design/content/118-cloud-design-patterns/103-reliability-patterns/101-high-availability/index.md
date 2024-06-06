@@ -4,4 +4,4 @@ Azure infrastructure is composed of geographies, regions, and Availability Zones
 
 Learn more from the following links:
 
-- [High availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#high-availability)
+- [@article@High availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#high-availability)

@@ -24,4 +24,4 @@ In this example, the `Lengthwise` interface defines a `length` property. The `lo
 
 Learn more from the following resources:
 
-- [Generic Constraints - TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints)
+- [@article@Generic Constraints - TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints)

@@ -6,4 +6,4 @@ In the ASP.NET Core framework, filters and attributes are used to add additional
 
 - **Attributes** are classes that derive from `Attribute` class, and are used to decorate controllers, action methods, or properties with additional metadata. For example, the Authorize attribute can be used to require that a user is authenticated before accessing a specific action method, and the `ValidateAntiForgeryToken` attribute can be used to protect against cross-site request forgery (CSRF) attacks.
 
-- [Filters](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/filters?view=aspnetcore-7.0)
+- [@article@Filters](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/filters?view=aspnetcore-7.0)
