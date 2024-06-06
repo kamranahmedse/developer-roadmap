@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Angular Roadmap](/angular)
 - [@official@Official - Getting started with Angular](https://angular.io/start)
-- [@video@Angular for Beginners Course [Full Front End Tutorial with TypeScript]](https://www.youtube.com/watch?v=3qBXWUpoPHo)
+- [@video@Angular for Beginners Course](https://www.youtube.com/watch?v=3qBXWUpoPHo)

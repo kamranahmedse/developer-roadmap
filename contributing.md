@@ -44,7 +44,7 @@ Visit the following resources to learn more:
 - [@type@Description of link](Link)
 ```
 
-`@type@` can be one of the following:
+`@type@` must be one of the following and describes the type of content you are adding:
 
 - `@official@`
 - `@opensource@`
@@ -53,6 +53,8 @@ Visit the following resources to learn more:
 - `@opensource@`
 - `@podcast@`
 - `@video@`
+
+It's important to add a valid type, this will help us categorize the content and display it properly on the roadmap.
 
 ## Guidelines
 

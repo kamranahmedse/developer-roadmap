@@ -52,11 +52,11 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
   course: 'bg-green-400',
   opensource: 'bg-black text-white',
   'roadmap.sh': 'bg-black text-white',
-  'roadmap': 'bg-black text-white',
+  roadmap: 'bg-black text-white',
   podcast: 'bg-purple-300',
   video: 'bg-purple-300',
   website: 'bg-blue-300',
-  'official': 'bg-blue-600 text-white',
+  official: 'bg-blue-600 text-white',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -190,22 +190,30 @@ export function TopicDetail(props: TopicDetailProps) {
 
           const otherElems = topicDom.querySelectorAll('body > *:not(h1, div)');
 
-          const listLinks = Array.from(
-            topicDom.querySelectorAll('ul > li > a'),
-          ).map((link, counter) => {
-            const typePattern = /@([a-z]+)@/;
-            let linkText = link.textContent || '';
-            const linkHref = link.getAttribute('href') || '';
-            const linkType = linkText.match(typePattern)?.[1] || 'article';
-            linkText = linkText.replace(typePattern, '');
+          const listLinks = Array.from(topicDom.querySelectorAll('ul > li > a'))
+            .map((link, counter) => {
+              const typePattern = /@([a-z]+)@/;
+              let linkText = link.textContent || '';
+              const linkHref = link.getAttribute('href') || '';
+              const linkType = linkText.match(typePattern)?.[1] || 'article';
+              linkText = linkText.replace(typePattern, '');
 
-            return {
-              id: `link-${linkHref}-${counter}`,
-              title: linkText,
-              url: linkHref,
-              type: linkType as AllowedLinkTypes,
-            };
-          });
+              return {
+                id: `link-${linkHref}-${counter}`,
+                title: linkText,
+                url: linkHref,
+                type: linkType as AllowedLinkTypes,
+              };
+            })
+            .sort((a, b) => {
+              // official at the top
+              // opensource at second
+              // article at third
+              // videos at fourth
+              // rest at last
+              const order = ['official', 'opensource', 'article', 'video'];
+              return order.indexOf(a.type) - order.indexOf(b.type);
+            });
 
           const lastUl = topicDom.querySelector('ul:last-child');
           if (lastUl) {
