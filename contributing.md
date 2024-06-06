@@ -2,22 +2,10 @@
 
 First of all thank you for considering to contribute. Please look at the details below:
 
-- [Create a New Branch](#create-a-new-branch)
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
 - [Adding Content](#adding-content)
 - [Guidelines](#guidelines)
-
-## Create A New Branch
-
-To create a new branch against `develop` for your contribution please do the following:
-
-```bash
-git clone https://github.com/kamranahmedse/developer-roadmap.git # Clone Repo
-cd developer-roadmap                                             # Change Directory
-git switch develop && git pull                                   # Switch and pull
-git checkout -b "a-sensible-branch-name"                         # Create your branch
-```
 
 ## New Roadmaps
 
@@ -57,10 +45,6 @@ Visit the following resources to learn more:
 ```
 
 ## Guidelines
-
-- <p><strong>Please open your pull request (PR) against the develop branch.</strong><br />
-
-  To keep caching and deployments under control, please open your PR's against the `develop` branch, which will then be merged into `master` at the end of the day.
 
 - <p><strong>Adding everything available out there is not the goal!</strong><br />
 
