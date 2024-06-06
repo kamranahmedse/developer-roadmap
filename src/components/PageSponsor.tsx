@@ -80,11 +80,12 @@ export function PageSponsor(props: PageSponsorProps) {
     const clickUrl = new URL(
       `${import.meta.env.PUBLIC_API_URL}/v1-view-sponsor/${sponsorId}`,
     );
-    clickUrl.searchParams.set('mobile', isMobile() ? 'true' : 'false');
 
     const { response, error } = await httpPatch<{ status: 'ok' }>(
       clickUrl.toString(),
-      {},
+      {
+        mobile: isMobile() ? true : false,
+      },
     );
 
     if (error || !response) {
