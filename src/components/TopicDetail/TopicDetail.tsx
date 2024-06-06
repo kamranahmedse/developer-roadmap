@@ -42,10 +42,10 @@ type TopicDetailProps = {
 const linkTypes: Record<AllowedLinkTypes, string> = {
   article: 'bg-yellow-200',
   course: 'bg-green-200',
-  opensource: 'bg-blue-200',
+  opensource: 'bg-black-200 text-white',
   podcast: 'bg-purple-200',
-  video: 'bg-pink-200',
-  website: 'bg-red-200',
+  video: 'bg-pink-300',
+  website: 'bg-blue-300',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -165,9 +165,8 @@ export function TopicDetail(props: TopicDetailProps) {
         }
         let topicHtml = '';
         if (!isCustomResource) {
-          topicHtml = response as string;
           const topicDom = new DOMParser().parseFromString(
-            topicHtml,
+            response as string,
             'text/html',
           );
 
@@ -180,6 +179,31 @@ export function TopicDetail(props: TopicDetailProps) {
 
           const otherElems = topicDom.querySelectorAll('body > *:not(h1, div)');
 
+          const listLinks = Array.from(
+            topicDom.querySelectorAll('ul > li > a'),
+          ).map((link, counter) => {
+            const typePattern = /@([a-z]+)@/;
+            let linkText = link.textContent || '';
+            const linkHref = link.getAttribute('href') || '';
+            const linkType = linkText.match(typePattern)?.[1] || 'article';
+            linkText = linkText.replace(typePattern, '');
+
+            return {
+              id: `link-${linkHref}-${counter}`,
+              title: linkText,
+              url: linkHref,
+              type: linkType as AllowedLinkTypes,
+            };
+          });
+
+          const lastUl = topicDom.querySelector('ul:last-child');
+          if (lastUl) {
+            lastUl.remove();
+          }
+
+          topicHtml = topicDom.body.innerHTML;
+
+          setLinks(listLinks);
           setHasContent(otherElems.length > 0);
           setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
@@ -322,7 +346,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 <ul className="mt-6 space-y-1">
                   {links.map((link) => {
                     return (
-                      <li>
+                      <li key={link.id}>
                         <a
                           href={link.url}
                           target="_blank"
@@ -331,7 +355,9 @@ export function TopicDetail(props: TopicDetailProps) {
                           <span
                             className={cn(
                               'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
-                              linkTypes[link.type],
+                              link.type in linkTypes
+                                ? linkTypes[link.type]
+                                : 'bg-gray-200',
                             )}
                           >
                             {link.type.charAt(0).toUpperCase() +
