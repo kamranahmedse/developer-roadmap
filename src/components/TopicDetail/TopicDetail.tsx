@@ -23,13 +23,21 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { Ban, FileText, HeartHandshake, X } from 'lucide-react';
+import {
+  Ban,
+  ExternalLink,
+  ExternalLinkIcon,
+  FileText,
+  HeartHandshake,
+  X,
+} from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
+import { isMobile } from '../../../editor/utils/is-mobile.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
@@ -40,10 +48,10 @@ type TopicDetailProps = {
 };
 
 const linkTypes: Record<AllowedLinkTypes, string> = {
-  article: 'bg-yellow-200',
-  course: 'bg-green-200',
-  opensource: 'bg-black-200 text-white',
-  podcast: 'bg-purple-200',
+  article: 'bg-yellow-300',
+  course: 'bg-green-300',
+  opensource: 'bg-black text-white',
+  podcast: 'bg-purple-300',
   video: 'bg-pink-300',
   website: 'bg-blue-300',
 };
@@ -350,18 +358,17 @@ export function TopicDetail(props: TopicDetailProps) {
                         <a
                           href={link.url}
                           target="_blank"
-                          className="font-medium underline"
+                          className="group font-medium text-gray-800 underline underline-offset-1 hover:text-black"
                         >
                           <span
                             className={cn(
-                              'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
+                              'mr-2 inline-block rounded px-1.5 py-0.5 text-xs uppercase no-underline',
                               link.type in linkTypes
                                 ? linkTypes[link.type]
                                 : 'bg-gray-200',
                             )}
                           >
-                            {link.type.charAt(0).toUpperCase() +
-                              link.type.slice(1)}
+                            {link.type}
                           </span>
                           {link.title}
                         </a>
@@ -373,7 +380,7 @@ export function TopicDetail(props: TopicDetailProps) {
 
               {/* Contribution */}
               {canSubmitContribution && !hasEnoughLinks && contributionUrl && (
-                <div className="mb-12 mt-3 border-t text-sm text-gray-400">
+                <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
                   <div className="mb-4 mt-3">
                     <p className="">
                       Find more resources using these pre-filled search queries:
