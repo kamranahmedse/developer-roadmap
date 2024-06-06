@@ -5,4 +5,4 @@ Replication is a process that involves sharing information to ensure consistency
 Visit the following resources to learn more:
 
 - [Database Replication](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#database-replication)
-- [Replication (computing)](<https://en.wikipedia.org/wiki/Replication_(computing)>)
+- [Replication (computing)](https://en.wikipedia.org/wiki/Replication_(computing))

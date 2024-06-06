@@ -7,4 +7,4 @@ Similar to the advantages of federation, sharding results in less read and write
 Learn more from the following links:
 
 - [The coming of the Shard](http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html)
-- [Shard (database architecture)](<https://en.wikipedia.org/wiki/Shard_(database_architecture)>)
+- [Shard (database architecture)](https://en.wikipedia.org/wiki/Shard_(database_architecture))

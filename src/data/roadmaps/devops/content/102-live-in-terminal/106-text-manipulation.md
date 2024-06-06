@@ -36,7 +36,7 @@ The `grep` command (**g**lobal search for **r**egular **e**xpression and **p**ri
 `sort` command is used to sort the contents of a file in a particular order. By default, it sorts a file assuming the contents are in ASCII. But it also can also be used to sort numerically by using appropriate options.
 
 - [Sort command with examples](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/)
-- [Options](<https://en.wikipedia.org/wiki/Sort_(Unix)>)
+- [Options](https://en.wikipedia.org/wiki/Sort_(Unix))
 - [Linux Tutorials|sort command GeeksforGeeks](https://www.youtube.com/watch?v=fEx5rnbDKO4)
 
 The cut utility cuts out selected portions of each line (as specified by list) from each file and writes them to the standard output.
@@ -52,7 +52,7 @@ The uniq utility reads the specified input_file comparing adjacent lines, and wr
 `cat` (concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output. It helps us to create, view, and concatenate files.
 
 - [Cat Command with examples](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)
-- [Options](<https://en.wikipedia.org/wiki/Cat_(Unix)>)
+- [Options](https://en.wikipedia.org/wiki/Cat_(Unix))
 - [Linux Tutorials|cat command|GeeksforGeeks](https://www.youtube.com/watch?v=exj5WMUJ11g)
 
 `echo` is a built-in command in Linux used to display lines of text/string that are passed as an argument. It is mostly used in shell scripts and batch files to output status text or `ENV` variables to the screen or a file.
