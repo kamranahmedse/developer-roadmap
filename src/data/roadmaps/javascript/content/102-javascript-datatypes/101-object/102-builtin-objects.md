@@ -14,4 +14,3 @@ Visit the following resources to learn more:
 
 - [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 - [JavaScript Built-in Objects](https://www.tutorialride.com/javascript/javascript-built-in-objects.htm)
-- [Built-in Objects](https://www.scaler.com/topics/javascript-built-in-objects/)

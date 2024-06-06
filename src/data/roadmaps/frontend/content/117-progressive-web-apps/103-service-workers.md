@@ -8,4 +8,4 @@ Service Workers are supported by most modern web browsers, and they are an essen
 
 Visit the following resources to learn more:
 
-- [Service Workers - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- [@article@Service Workers - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)

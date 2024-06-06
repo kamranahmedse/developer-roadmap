@@ -4,5 +4,5 @@ Gridsome is a Vue.js powered Jamstack framework for building static generated we
 
 Visit the following resources to learn more:
 
-- [Gridsome Website](https://gridsome.org/)
-- [Gridsome Documentation](https://gridsome.org/docs/)
+- [@official@Gridsome Website](https://gridsome.org/)
+- [@official@Gridsome Documentation](https://gridsome.org/docs/)

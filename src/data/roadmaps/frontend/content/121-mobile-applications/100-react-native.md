@@ -4,6 +4,6 @@ React Native is a popular JavaScript-based mobile app framework that allows you 
 
 Visit the following resources to learn more:
 
-- [Official Website](https://reactnative.dev/)
-- [Official Getting Started to React Native](https://reactnative.dev/docs/getting-started)
-- [Build a React Native App by Mosh](https://www.youtube.com/watch?v=0-S5a0eXPoc)
+- [@official@Official Website](https://reactnative.dev/)
+- [@official@Official Getting Started to React Native](https://reactnative.dev/docs/getting-started)
+- [@video@Build a React Native App by Mosh](https://www.youtube.com/watch?v=0-S5a0eXPoc)

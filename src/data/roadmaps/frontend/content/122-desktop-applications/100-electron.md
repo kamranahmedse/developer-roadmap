@@ -4,6 +4,6 @@ Electron allows you to build cross-platform desktop applications with HTML, CSS,
 
 Visit the following resources to learn more:
 
-- [Electron Website](https://www.electronjs.org/)
-- [Electron Docs](https://www.electronjs.org/docs/latest/)
-- [Create a Desktop App With JavaScript & Electron](https://www.youtube.com/watch?v=ML743nrkMHw)
+- [@article@Electron Website](https://www.electronjs.org/)
+- [@article@Electron Docs](https://www.electronjs.org/docs/latest/)
+- [@video@Create a Desktop App With JavaScript & Electron](https://www.youtube.com/watch?v=ML743nrkMHw)

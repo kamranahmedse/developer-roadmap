@@ -49,11 +49,14 @@ type TopicDetailProps = {
 
 const linkTypes: Record<AllowedLinkTypes, string> = {
   article: 'bg-yellow-300',
-  course: 'bg-green-300',
+  course: 'bg-green-400',
   opensource: 'bg-black text-white',
+  'roadmap.sh': 'bg-black text-white',
+  'roadmap': 'bg-black text-white',
   podcast: 'bg-purple-300',
-  video: 'bg-pink-300',
+  video: 'bg-purple-300',
   website: 'bg-blue-300',
+  'official': 'bg-blue-600 text-white',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -368,7 +371,14 @@ export function TopicDetail(props: TopicDetailProps) {
                                 : 'bg-gray-200',
                             )}
                           >
-                            {link.type}
+                            {link.type === 'opensource' ? (
+                              <>
+                                {link.url.includes('github') && 'GitHub'}
+                                {link.url.includes('gitlab') && 'GitLab'}
+                              </>
+                            ) : (
+                              link.type
+                            )}
                           </span>
                           {link.title}
                         </a>

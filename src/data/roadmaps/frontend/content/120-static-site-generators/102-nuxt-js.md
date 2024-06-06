@@ -6,7 +6,7 @@ rendering and generating static websites.
 
 Visit the following resources to learn more:
 
-- [Official Website](https://nuxtjs.org/)
-- [Official Docs for Getting Started](https://nuxtjs.org/docs/get-started)
-- [Mastering Nuxt.js](https://masteringnuxt.com/)
-- [Vue.js for Beginners - Full Course at freeCodeCamp YouTube Channel](https://www.youtube.com/watch?v=FXpIoQ_rT_c)
+- [@official@Official Website](https://nuxtjs.org/)
+- [@official@Official Docs for Getting Started](https://nuxtjs.org/docs/get-started)
+- [@article@Mastering Nuxt.js](https://masteringnuxt.com/)
+- [@video@Vue.js for Beginners - Full Course at freeCodeCamp YouTube Channel](https://www.youtube.com/watch?v=FXpIoQ_rT_c)

@@ -4,6 +4,6 @@ Web Components is a suite of different technologies allowing you to create reusa
 
 Visit the following resources to learn more:
 
-- [Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-- [WebComponents.org](https://webcomponents.github.io/)
-- [Web Components Crash Course](https://www.youtube.com/watch?v=PCWaFLy3VUo)
+- [@article@Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [@article@WebComponents.org](https://webcomponents.github.io/)
+- [@video@Web Components Crash Course](https://www.youtube.com/watch?v=PCWaFLy3VUo)

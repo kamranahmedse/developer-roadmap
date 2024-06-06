@@ -4,5 +4,5 @@ As with any object-based coding method, the purpose of OOCSS or Object Oriented 
 
 Visit the following resources to learn more:
 
-- [OOCSS Official Website](http://oocss.org/)
-- [Introduction to Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
+- [@official@OOCSS Official Website](http://oocss.org/)
+- [@article@Introduction to Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)

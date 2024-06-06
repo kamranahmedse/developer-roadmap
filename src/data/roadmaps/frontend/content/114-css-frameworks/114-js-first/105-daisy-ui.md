@@ -4,5 +4,5 @@ Component library around Tailwind CSS that comes with several built-in component
 
 Visit the following resources to learn more:
 
-- [DaisyUI Website](https://daisyui.com/)
-- [DaisyUI Documentation](https://daisyui.com/docs/install/)
+- [@official@DaisyUI Website](https://daisyui.com/)
+- [@official@DaisyUI Documentation](https://daisyui.com/docs/install/)

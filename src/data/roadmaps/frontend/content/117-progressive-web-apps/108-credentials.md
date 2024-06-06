@@ -8,4 +8,4 @@ The Credential Management API is supported by most modern web browsers and is de
 
 Visit the following resources to learn more:
 
-- [Credential Management API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API)
+- [@article@Credential Management API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API)

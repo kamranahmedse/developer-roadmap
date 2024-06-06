@@ -4,6 +4,6 @@ Less extends CSS with dynamic behavior such as variables, mixins, operations and
 
 Visit the following resources to learn more:
 
-- [Official Website](https://lesscss.org/)
-- [Official Documentation](https://lesscss.org/usage/)
-- [ Less CSS Pre-Processor Tutorial](https://www.youtube.com/watch?v=YD91G8DdUsw)
+- [@article@Official Website](https://lesscss.org/)
+- [@article@Official Documentation](https://lesscss.org/usage/)
+- [@video@ Less CSS Pre-Processor Tutorial](https://www.youtube.com/watch?v=YD91G8DdUsw)

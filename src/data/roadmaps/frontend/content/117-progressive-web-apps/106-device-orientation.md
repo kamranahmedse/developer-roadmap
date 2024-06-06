@@ -8,4 +8,4 @@ The Device Orientation API is supported by most modern web browsers and is often
 
 Visit the following resources to learn more:
 
-- [Device Orientation API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events)
+- [@article@Device Orientation API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events)

@@ -4,4 +4,4 @@ An important aspect of web components is encapsulation — being able to keep th
 
 Visit the following resources to learn more:
 
-- [Using shadow DOM | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+- [@article@Using shadow DOM | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)

@@ -14,10 +14,6 @@ function getHostNameWithoutTld(hostname) {
 }
 
 function isOfficialWebsite(hostname, fileName, roadmapId) {
-  if (hostname === 'javascript.info') {
-    return false;
-  }
-
   fileName = fileName.replace('/index.md', '').replace('.md', '');
 
   const parts = fileName.split('/');
@@ -46,14 +42,17 @@ function isOfficialWebsite(hostname, fileName, roadmapId) {
 // - @video@
 // - @website@
 // content is only educational websites
-function getTypeFromHostname(hostname) {
+function getTypeFromHostname(hostname, fileName, roadmapId) {
   hostname = hostname.replace('www.', '');
 
-  const videoHostnames = ['youtube.com', 'vimeo.com'];
+  const videoHostnames = ['youtube.com', 'vimeo.com', 'youtu.be'];
   const courseHostnames = ['coursera.org', 'udemy.com', 'edx.org'];
   const podcastHostnames = ['spotify.com', 'apple.com'];
   const opensourceHostnames = ['github.com', 'gitlab.com'];
   const articleHostnames = [
+    'neilpatel.com',
+    'learningseo.io',
+    'htmlreference.io',
     'docs.gitlab.com',
     'docs.github.com',
     'skills.github.com',
@@ -96,10 +95,14 @@ function getTypeFromHostname(hostname) {
   }
 
   if (hostname === 'roadmap.sh') {
-    return 'website';
+    return 'roadmap.sh';
   }
 
-  return '';
+  if (isOfficialWebsite(hostname, fileName, roadmapId)) {
+    return 'official';
+  }
+
+  return 'article';
 }
 
 function readNestedMarkdownFiles(dir, files = []) {
@@ -133,47 +136,49 @@ files.forEach((file) => {
   const content = fs.readFileSync(file, 'utf-8');
   const lines = content.split('\n');
 
-  const newContent = lines.map((line) => {
-    if (line.startsWith('- [')) {
-      const type = line.match(/@(\w+)@/);
-      if (type) {
-        return line;
-      }
-
-      let fullUrl = line.match(/\((https?:\/\/[^)]+)\)/)?.[1];
-      if (!fullUrl) {
-        // is it slashed URL i.e. - [abc](/xyz)
-        fullUrl = line.match(/\((\/[^)]+)\)/)?.[1];
-        if (fullUrl) {
-          fullUrl = `https://roadmap.sh${fullUrl}`;
+  const newContent = lines
+    .map((line) => {
+      if (line.startsWith('- [')) {
+        const type = line.match(/@(\w+)@/);
+        if (type) {
+          return line;
         }
+
+        let urlMatches = line.match(/\((https?:\/\/[^)]+)\)/);
+        let fullUrl = urlMatches?.[1];
 
         if (!fullUrl) {
-          console.error('No URL found in line:', line);
-          return;
+          // is it slashed URL i.e. - [abc](/xyz)
+          fullUrl = line.match(/\((\/[^)]+)\)/)?.[1];
+          if (fullUrl) {
+            fullUrl = `https://roadmap.sh${fullUrl}`;
+          }
+
+          if (!fullUrl) {
+            console.error('No URL found in line:', line);
+            return;
+          }
         }
+
+        const url = new URL(fullUrl);
+        const hostname = url.hostname;
+
+        let urlType = getTypeFromHostname(hostname, file, roadmapId);
+        const linkText = line.match(/\[([^\]]+)\]/)[1];
+
+        if (
+          linkText.toLowerCase().startsWith('visit dedicated') &&
+          linkText.toLowerCase().endsWith('roadmap')
+        ) {
+          urlType = 'roadmap';
+        }
+
+        return line.replace('- [', `- [@${urlType}@`).replace('](', '](');
       }
 
-      const url = new URL(fullUrl);
-      const hostname = url.hostname;
+      return line;
+    })
+    .join('\n');
 
-      const urlType =
-        getTypeFromHostname(hostname) ||
-        (isOfficialWebsite(hostname, file, roadmapId) ? 'official' : '');
-
-      if (urlType === 'official') {
-        console.log('Official:', hostname);
-        process.exit(0);
-      }
-
-      if (!urlType) {
-        console.error('Missing type:', hostname);
-        return;
-      }
-    }
-
-    return line;
-  });
-
-  console.log(file);
+  fs.writeFileSync(file, newContent);
 });
