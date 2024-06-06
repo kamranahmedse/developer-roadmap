@@ -27,5 +27,4 @@ int main() {
 In the code above, the variable `num` is statically typed as an `int`, `pi` is statically typed as a `double`, and `c` is statically typed as a `char`. If you attempt to assign the value of `pi` to `num`, the value `3.14159` will be converted to the integer `3` and assigned to `num`. Similarly, when the value of `num` is assigned to `c`, the compiler will convert the value `65` to its corresponding [ASCII](https://www.ascii-code.com) code, which is `A`.
 
 - [Type-Coversion](https://www.programiz.com/cpp-programming/type-conversion)
-- [Implicit Vs Explicit Type Conversion](https://www.geeksforgeeks.org/type-conversion-in-c/)
 - [Static Vs Dynamic](https://www.techtarget.com/searchapparchitecture/tip/Static-vs-dynamic-typing-The-details-and-differences)

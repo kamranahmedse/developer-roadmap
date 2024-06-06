@@ -5,6 +5,5 @@ In Python, object-oriented Programming (OOPs) is a programming paradigm that use
 Visit the following resources to learn more:
 
 - [Object Oriented Programming in Python](https://realpython.com/python3-object-oriented-programming/)
-- [Python OOP Concepts](https://www.geeksforgeeks.org/python-oops-concepts/)
 - [Object Oriented Programming (OOP) In Python - Beginner Crash Course](https://www.youtube.com/watch?v=-pEs-Bss8Wc/)
 - [OOP in Python One Shot](https://www.youtube.com/watch?v=Ej_02ICOIgs)

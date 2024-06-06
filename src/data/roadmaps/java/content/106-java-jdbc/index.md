@@ -4,5 +4,4 @@ JDBC is an API(Application programming interface) used in java programming to in
 
 Visit the following resources to learn more:
 
-- [Introduction to JDBC](https://www.geeksforgeeks.org/introduction-to-jdbc/)
 - [IBM: What is JDBC](https://www.ibm.com/docs/en/informix-servers/12.10?topic=started-what-is-jdbc)

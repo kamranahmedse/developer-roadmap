@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [More on async await](https://javascript.info/async-await)
 - [Using async await](https://www.youtube.com/watch?v=V_Kr9OSfDeU)
 - [W3Docs Async/Await](https://www.w3docs.com/learn-javascript/async-await.html)
-- [Difference between Promise and Async/Await](https://www.geeksforgeeks.org/difference-between-promise-and-async-await-in-node-js/)

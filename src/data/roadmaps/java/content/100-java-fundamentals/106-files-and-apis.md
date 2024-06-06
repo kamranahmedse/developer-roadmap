@@ -9,6 +9,5 @@ Visit the following resources to learn more:
 
 - [How To Work With Files In Java](https://www.marcobehler.com/guides/java-files)
 - [Java File Class](https://www.javatpoint.com/java-file-class)
-- [Java.io.File Class in Java](https://www.geeksforgeeks.org/file-class-in-java/)
 - [Java HttpURLConnection Example - Java HTTP Request GET, POST](https://www.digitalocean.com/community/tutorials/java-httpurlconnection-example-java-http-request-get-post)
 - [5 ways to make HTTP requests in Java](https://www.twilio.com/blog/5-ways-to-make-http-requests-in-java)

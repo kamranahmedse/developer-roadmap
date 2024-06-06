@@ -8,5 +8,4 @@ Visit the following resources to learn more:
 
 - [Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)
 - [What is Socket Programming?](https://youtu.be/BqBKEXLqdvI)
-- [Socket Programming](https://www.geeksforgeeks.org/socket-programming-in-java/)
 - [Java Networking](https://www.tutorialspoint.com/java/java_networking.htm)

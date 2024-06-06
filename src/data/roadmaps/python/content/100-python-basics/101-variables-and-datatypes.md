@@ -6,7 +6,6 @@ Visit the following resources to learn more:
 
 - [Variables in Python](https://realpython.com/python-variables)
 - [W3Schools — Python Variables](https://www.w3schools.com/python/python_variables.asp)
-- [Python Variables - Geeks for Geeks](https://www.geeksforgeeks.org/python-variables/)
 - [Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
 - [Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)

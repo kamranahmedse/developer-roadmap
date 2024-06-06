@@ -8,7 +8,6 @@ Visit the following resources to learn more:
 
 - [Goroutines](https://go.dev/tour/concurrency/1)
 - [Effective Go: Goroutines](https://go.dev/doc/effective_go#goroutines)
-- [Goroutines in Golang](https://www.geeksforgeeks.org/goroutines-concurrency-in-golang)
 - [GoRoutines](https://www.youtube.com/watch?v=LvgVSSpwND8)
 - [Understanding Concurrency](https://www.youtube.com/watch?v=V-0ifUKCkBI)
 - [Go by Example: Goroutines](https://gobyexample.com/goroutines)

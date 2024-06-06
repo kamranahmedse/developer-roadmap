@@ -16,12 +16,11 @@ Networking tools are used to troubleshoot network issues. They are also used to 
 `traceroute` command is a command in Linux that prints the route a network packet takes from its source (e.g. your computer) to the destination host (e.g., roadmap.sh). It is quite valuable in investigating slow network connections as it can help us spot the slow leg of the network packet journey through the internet.
 
 - [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)
-- [Traceroute command in Linux with examples](https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/)
 
 `ping` (**P**acket **In**ternet **G**roper) command is used to check the network connectivity between host and server/host. This command takes as input the IP address or the URL and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is recorded which is called latency.
 
 - [What is ping command?](https://linuxize.com/post/linux-ping-command/)
-- [ping command with examples](https://www.geeksforgeeks.org/ping-command-in-linux-with-examples/)
+
 
 `mtr` combines the functionality of the traceroute and ping programs in a single network diagnostic tool.
 
@@ -61,10 +60,7 @@ IPtables is a command-line firewall utility that uses policy chains to allow or 
 
 `dig` command stands for **D**omain **I**nformation **G**roper. It is used for retrieving information about DNS name servers. It is mostly used by network administrators for verifying and troubleshooting DNS problems and to perform DNS lookups. It replaces older tools such as `nslookup` and the `host`.
 
-- [What is dig command?](https://www.geeksforgeeks.org/dig-command-in-linux-with-examples/)
 - [More on dig](https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux/)
-- [What is host command?](https://www.geeksforgeeks.org/host-command-in-linux-with-examples/)
-- [What is nslookup command?](https://www.geeksforgeeks.org/nslookup-command-in-linux-with-examples/)
 - [What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
 
 `SCP` is an acronym for Secure Copy Protocol.It is a command line utility that allows the user to securely copy files and directories between two locations usually between unix or linux systems.The protocol ensures the transmission of files is encrypted to prevent anyone with suspicious intentions from getting sensitive information.`SCP` uses encryption over an `SSH` (Secure Shell) connection, this ensures that the data being transferred is protected from suspicious attacks.

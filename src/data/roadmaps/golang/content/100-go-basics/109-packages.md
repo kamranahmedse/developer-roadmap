@@ -8,5 +8,4 @@ Visit the following resources to learn more:
 - [How to manage external dependencies in Go](https://go.dev/doc/modules/managing-dependencies)
 - [Go Packages explorer](https://pkg.go.dev/)
 - [Standard library](https://pkg.go.dev/std)
-- [Packages in Golang](https://www.geeksforgeeks.org/packages-in-golang/)
 - [Go Packages](https://www.programiz.com/golang/packages)

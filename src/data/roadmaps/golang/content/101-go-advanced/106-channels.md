@@ -11,5 +11,4 @@ Visit the following resources to learn more:
 - [Go by Example: Channels](https://gobyexample.com/channels)
 - [Channels in Golang](https://golangbot.com/channels/)
 - [Channels](https://www.youtube.com/watch?v=e4bu9g-bYtg)
-- [GeeksForGeeks: Channel in Golang](https://www.geeksforgeeks.org/channel-in-golang/)
 - [Golang Channel Basics You must Know!](https://youtu.be/LgCmPHqAuf4)

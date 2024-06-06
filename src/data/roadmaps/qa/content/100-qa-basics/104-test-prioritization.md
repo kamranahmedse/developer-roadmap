@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [A Tour of what is Test Prioritization?](https://www.browserstack.com/guide/test-case-prioritization)
 - [Test Prioritization](https://www.professionalqa.com/test-prioritization)
-- [Learn about Test Prioritization](https://www.geeksforgeeks.org/test-case-prioritization-in-software-testing/)
 - [Test Prioritization fundamentals!](https://testomat.io/features/test-case-priorities/)

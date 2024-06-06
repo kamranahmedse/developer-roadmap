@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [Robot Framework Official Website](https://robotframework.org/)
 - [Robot Framework Official User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 - [Basic Step-by-step Robot Framework tutorial](https://medium.com/swlh/robot-framework-the-basics-dfeadc025bea)
-- [Excellent tutorial to start working with Robot Framework](https://www.geeksforgeeks.org/robot-framework-in-python/)

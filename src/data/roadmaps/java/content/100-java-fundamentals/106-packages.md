@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [Packages in Java](https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html)
 - [Java Package](https://www.javatpoint.com/package)
-- [Packages In Java](https://www.geeksforgeeks.org/packages-in-java/)

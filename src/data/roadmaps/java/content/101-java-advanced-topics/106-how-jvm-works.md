@@ -6,6 +6,5 @@ Visit the following resources to learn more:
 
 - [What is JVM?](https://www.javatpoint.com/jvm-java-virtual-machine)
 - [Introducing the Java Virtual Machine](https://www.infoworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
-- [JVM Architecture](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/)
 - [JVM (Java Virtual Machine) Architecture](https://www.javatpoint.com/jvm-java-virtual-machine)
 - [How JVM works?](https://youtu.be/G1ubVOl9IBw)

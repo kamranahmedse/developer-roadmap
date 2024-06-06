@@ -17,25 +17,21 @@ Some of the most common commands you will use in the terminal are text manipulat
 
 `awk` is a general-purpose scripting language used for manipulating data or text and generating reports in the Linux world. It is mostly used for pattern scanning and processing. It searches one or more files to see if they contain lines that match the specified patterns and then performs the associated actions.
 
-- [What is AWK? How to use it?](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/)
 - [How AWK works?](https://linuxize.com/post/awk-command/)
 - [Linux Crash Course - awk](https://www.youtube.com/watch?v=oPEnvuj9QrI)
 
 `sed`(**S**tream **Ed**itor) command in UNIX can perform lots of functions on file like searching, finding and replacing, insertion or deletion. By using SED you can edit files even without opening them in editors like [VI Editor](https://www.redhat.com/sysadmin/introduction-vi-editor).
 
-- [What is SED? with examples](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
 - [Detailed Manual](https://www.gnu.org/software/sed/manual/sed.html)
 - [Linux Crash Course - The sed Command](https://www.youtube.com/watch?v=nXLnx8ncZyE&t=218s)
 
 The `grep` command (**g**lobal search for **r**egular **e**xpression and **p**rint out) searches file(s) for a particular pattern of characters, and displays all lines that contain that pattern. It can be used with other commands like `ps` making it more useful.
 
-- [What is Grep? with examples](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 - [Detailed Manual](https://www.gnu.org/software/grep/manual/grep.html)
 - [Linux Crash Course - The grep Command](https://www.youtube.com/watch?v=Tc_jntovCM0)
 
 `sort` command is used to sort the contents of a file in a particular order. By default, it sorts a file assuming the contents are in ASCII. But it also can also be used to sort numerically by using appropriate options.
 
-- [Sort command with examples](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/)
 - [Options](https://en.wikipedia.org/wiki/Sort_(Unix))
 - [Linux Tutorials|sort command GeeksforGeeks](https://www.youtube.com/watch?v=fEx5rnbDKO4)
 
@@ -47,7 +43,7 @@ The cut utility cuts out selected portions of each line (as specified by list) f
 The uniq utility reads the specified input_file comparing adjacent lines, and writes a copy of each unique input line to the output_file.
 
 - [uniq Documentation](https://man7.org/linux/man-pages/man1/uniq.1.html)
-- [uniq Cheat Sheet](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/)
+
 
 `cat` (concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output. It helps us to create, view, and concatenate files.
 

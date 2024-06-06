@@ -8,5 +8,4 @@ Visit the following resources to learn more:
 
 - [Select](https://go.dev/tour/concurrency/5)
 - [Go by Example: Select](https://gobyexample.com/select)
-- [Select in Golang](https://www.geeksforgeeks.org/select-statement-in-go-language/)
 - [Select Statement](https://www.youtube.com/watch?v=1c7ttSJDMAI)

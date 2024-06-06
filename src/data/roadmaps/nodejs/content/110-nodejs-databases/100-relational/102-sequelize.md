@@ -12,4 +12,3 @@ Visit the following resources to learn more:
 - [Sequelize - NPM Package](https://www.npmjs.com/package/sequelize)
 - [Official Sequelize Docs](https://sequelize.org/docs/v6/getting-started/)
 - [Getting started with Sequelize](https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e)
-- [Sequelize in Node.js](https://www.geeksforgeeks.org/how-to-use-sequelize-in-node-js/)

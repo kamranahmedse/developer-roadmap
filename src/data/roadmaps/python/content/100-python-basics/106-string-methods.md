@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [Practical String Methods applications](https://www.youtube.com/watch?v=Ctqi5Y4X-jA&t=11s)
 - [Comprehensive Study of String methods](https://www.w3schools.com/python/python_ref_string.asp)
-- [String Slicing in Python](https://www.geeksforgeeks.org/string-slicing-in-python/)

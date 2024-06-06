@@ -7,4 +7,3 @@ Example - $ node inspect myscript.js
 Visit the following resources to learn more:
 
 - [Official Website](https://nodejs.org/api/debugger.html)
-- [Node.js Debugging](https://www.geeksforgeeks.org/node-js-debugging/)

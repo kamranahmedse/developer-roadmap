@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)
 - [Downloading and installing packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)
 - [NPM Install Docs](https://docs.npmjs.com/cli/v8/commands/npm-install)
-- [What is global installation of dependencies in Node.js ?](https://www.geeksforgeeks.org/what-is-global-installation-of-dependencies-in-node-js/)

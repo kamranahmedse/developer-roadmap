@@ -4,7 +4,6 @@ Java provides a new additional package in Java 8 called java.util.stream. This p
 
 Visit the following resources to learn more:
 
-- [Streams in Java](https://www.geeksforgeeks.org/stream-in-java/)
 - [Java 8 Stream](https://www.javatpoint.com/java-8-stream)
 - [Streams API Tutorial in Java 8+](https://www.youtube.com/watch?v=VNovNwHr9jY)
 - [Java 8 Streams Tutorial](https://www.youtube.com/watch?v=t1-YZ6bF-g0)
