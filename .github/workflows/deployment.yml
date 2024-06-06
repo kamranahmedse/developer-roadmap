@@ -1,13 +1,6 @@
 name: Deploy to EC2
 on:
   workflow_dispatch: # allow manual run
-  push:
-    branches:
-      - master
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'editor/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
