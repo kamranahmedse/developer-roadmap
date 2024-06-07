@@ -1,0 +1,1 @@
+Promises are JavaScript objects that represent the eventual completion of an asynchronous call. Through promises you’re able to handle the successful or failed execution of the asynchronous call.
