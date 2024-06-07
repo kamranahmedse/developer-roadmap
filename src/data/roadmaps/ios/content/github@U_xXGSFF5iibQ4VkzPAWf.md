@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@official@GitHub Docs](https://docs.github.com/en)
 - [@video@How to Use GitHub](https://www.youtube.com/watch?v=v_1iqtOnUMg)
-- 
+- [@article@What is GitHub](https://blog.hubspot.com/website/what-is-github-used-for)
