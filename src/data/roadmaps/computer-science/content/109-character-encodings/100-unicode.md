@@ -4,5 +4,5 @@ Unicode is a standard for encoding characters. It is a superset of ASCII, which 
 
 Visit the following resources to learn more:
 
-- [How Unicode Works: What Every Developer Needs to Know About Strings and 🦄](https://deliciousbrains.com/how-unicode-works/)
-- [Characters, Symbols and the Unicode Miracle - Computerphile](https://www.youtube.com/watch?v=MijmeoH9LT4)
+- [@article@How Unicode Works: What Every Developer Needs to Know About Strings and 🦄](https://deliciousbrains.com/how-unicode-works/)
+- [@video@Characters, Symbols and the Unicode Miracle - Computerphile](https://www.youtube.com/watch?v=MijmeoH9LT4)

@@ -4,5 +4,4 @@ Nohup, short for no hang up is a command in Linux systems that keep processes ru
 
 Visit the following resources to learn more:
 
-- [Nohup command](https://www.digitalocean.com/community/tutorials/nohup-command-in-linux)
-- [geekforgeeks Nohup example](https://www.geeksforgeeks.org/nohup-command-in-linux-with-examples/)
+- [@article@Nohup command](https://www.digitalocean.com/community/tutorials/nohup-command-in-linux)

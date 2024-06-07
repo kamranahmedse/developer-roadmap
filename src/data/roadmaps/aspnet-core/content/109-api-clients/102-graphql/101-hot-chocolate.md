@@ -6,6 +6,6 @@ Hot Chocolate provides a set of classes and methods that make it easy to create 
 
 To learn more, visit the following resources:
 
-- [Getting started with HotChocolate](https://learn.microsoft.com/en-us/shows/on-net/getting-started-with-hotchocolate)
-- [ASP.NET Core and HotChocolate](https://chillicream.com/docs/hotchocolate/v12/api-reference/aspnetcore)
-- [Intro to HotChocolate](https://chillicream.com/docs/hotchocolate)
+- [@article@Getting started with HotChocolate](https://learn.microsoft.com/en-us/shows/on-net/getting-started-with-hotchocolate)
+- [@article@ASP.NET Core and HotChocolate](https://chillicream.com/docs/hotchocolate/v12/api-reference/aspnetcore)
+- [@article@Intro to HotChocolate](https://chillicream.com/docs/hotchocolate)

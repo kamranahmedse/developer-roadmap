@@ -4,10 +4,10 @@ A Data structure is a format to organize, manage and store data in a way that al
 
 Visit the following resources to learn more:
 
-- [ Data structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure)
-- [Introduction to the Stack Data Structure](https://youtu.be/4F-BnR2XwqU)
-- [Introduction to the Queue Data Structure](https://youtu.be/GRA_3Ppl2ZI)
-- [Intro to Recursion: Anatomy of a Recursive Solution](https://youtu.be/yBWlPte6FhA)
-- [Binary Tree Algorithms for Technical Interviews - Full Course](https://youtu.be/fAAZixBzIAI)
-- [Graph Algorithms for Technical Interviews - Full Course](https://youtu.be/tWVWeAqZ0WU)
-- [Dynamic Programming - Learn to Solve Algorithmic Problems & Coding Challenges](https://youtu.be/oBt53YbR9Kk)
+- [@article@ Data structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure)
+- [@video@Introduction to the Stack Data Structure](https://youtu.be/4F-BnR2XwqU)
+- [@video@Introduction to the Queue Data Structure](https://youtu.be/GRA_3Ppl2ZI)
+- [@video@Intro to Recursion: Anatomy of a Recursive Solution](https://youtu.be/yBWlPte6FhA)
+- [@video@Binary Tree Algorithms for Technical Interviews - Full Course](https://youtu.be/fAAZixBzIAI)
+- [@video@Graph Algorithms for Technical Interviews - Full Course](https://youtu.be/tWVWeAqZ0WU)
+- [@video@Dynamic Programming - Learn to Solve Algorithmic Problems & Coding Challenges](https://youtu.be/oBt53YbR9Kk)

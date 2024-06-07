@@ -4,4 +4,4 @@ In Rust, `floats` are used to represent floating-point numbers. They are defined
 
 Learn more from the following links:
 
-- [Floating-Point Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#floating-point-types)
+- [@article@Floating-Point Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#floating-point-types)

@@ -4,4 +4,4 @@ Sharding is a technique used to horizontally partition a large data set across m
 
 Learn more from the following links:
 
-- [Sharding pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding)
+- [@article@Sharding pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding)

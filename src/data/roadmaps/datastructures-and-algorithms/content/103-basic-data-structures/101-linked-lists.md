@@ -4,5 +4,5 @@ Linked Lists are a type of data structure used for storing collections of data. 
 
 Learn more from the following links:
 
-- [Linked List Explained: from Basics to Advanced](https://www.freecodecamp.org/news/how-linked-lists-work/)
-- [Introduction To Linked List](https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2)
+- [@article@Linked List Explained: from Basics to Advanced](https://www.freecodecamp.org/news/how-linked-lists-work/)
+- [@video@Introduction To Linked List](https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2)

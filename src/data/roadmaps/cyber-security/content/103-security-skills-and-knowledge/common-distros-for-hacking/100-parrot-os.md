@@ -18,4 +18,4 @@ Parrot OS, also known as Parrot Security OS, is a powerful Linux-based distribut
 
 Overall, Parrot OS is a reliable, versatile, and user-friendly cyber security distribution, ideal for both beginners and advanced users engaged in ethical hacking, penetration testing, and digital forensics.
 
-- [Link to Download Parrot OS ](https://www.parrotsec.org/download/)
+- [@article@Link to Download Parrot OS ](https://www.parrotsec.org/download/)

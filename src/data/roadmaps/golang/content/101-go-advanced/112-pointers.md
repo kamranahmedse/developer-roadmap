@@ -4,6 +4,6 @@ Go pointers are a powerful feature that allows you to work with memory addresses
 
 Visit the following resources to learn more:
 
-- [Pointers](https://go.dev/tour/moretypes/1)
-- [Go by Example: Pointers](https://gobyexample.com/pointers)
-- [YouTube: Pointers](https://www.youtube.com/watch?v=a4HcEsJ1hIE)
+- [@official@Pointers](https://go.dev/tour/moretypes/1)
+- [@article@Go by Example: Pointers](https://gobyexample.com/pointers)
+- [@video@YouTube: Pointers](https://www.youtube.com/watch?v=a4HcEsJ1hIE)

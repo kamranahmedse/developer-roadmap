@@ -4,5 +4,5 @@ In Rust language, the concept of unit integration encompasses writing tests for 
 
 Visit the following resources to learn more:
 
-- [Rust Book: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
-- [Rust by Example: Unit testing](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html)
+- [@article@Rust Book: How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [@article@Rust by Example: Unit testing](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html)

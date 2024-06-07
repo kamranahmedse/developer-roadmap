@@ -6,5 +6,5 @@ Encapsulation refers to the idea that an object's internal state should be hidde
 
 Learn more from the following links:
 
-- [What is Object Oriented Programming?](https://www.youtube.com/watch?v=pTB0EiLXUC8)
-- [Overview of Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)
+- [@video@What is Object Oriented Programming?](https://www.youtube.com/watch?v=pTB0EiLXUC8)
+- [@article@Overview of Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming)

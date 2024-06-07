@@ -6,4 +6,4 @@ In Flutter, objects that represent the state of the app, such as widgets and the
 
 Learn more from the following links:
 
-- [Immutable data in Flutter](https://dart.academy/immutable-data-patterns-in-dart-and-flutter/)
+- [@article@Immutable data in Flutter](https://dart.academy/immutable-data-patterns-in-dart-and-flutter/)

@@ -10,4 +10,4 @@ But using tokens requires a bit of coding know-how. Most developers pick up the 
 
 Visit the following resources to learn more:
 
-- [What Is Token-Based Authentication?](https://www.okta.com/identity-101/what-is-token-based-authentication/)
+- [@article@What Is Token-Based Authentication?](https://www.okta.com/identity-101/what-is-token-based-authentication/)

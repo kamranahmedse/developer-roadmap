@@ -4,6 +4,6 @@ Cupertino widgets are a set of Flutter widgets that mimic the look and feel of A
 
 Visit the following resources to learn more:
 
-- [Cupertino (iOS-style) widgets](https://docs.flutter.dev/development/ui/widgets/cupertino)
-- [Flutter Cupertino Tutorial](https://blog.logrocket.com/flutter-cupertino-tutorial-build-ios-apps-native/)
-- [Flutter Cupertino Widgets](https://www.youtube.com/watch?v=L-TY_5NZ7z4)
+- [@article@Cupertino (iOS-style) widgets](https://docs.flutter.dev/development/ui/widgets/cupertino)
+- [@article@Flutter Cupertino Tutorial](https://blog.logrocket.com/flutter-cupertino-tutorial-build-ios-apps-native/)
+- [@video@Flutter Cupertino Widgets](https://www.youtube.com/watch?v=L-TY_5NZ7z4)

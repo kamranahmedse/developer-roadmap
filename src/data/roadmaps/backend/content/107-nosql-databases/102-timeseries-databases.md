@@ -6,5 +6,5 @@ InfluxDB was built from the ground up to be a purpose-built time series database
 
 Visit the following resources to learn more:
 
-- [InfluxDB Website](https://www.influxdata.com/)
-- [Time series database](https://www.influxdata.com/time-series-database/)
+- [@article@InfluxDB Website](https://www.influxdata.com/)
+- [@article@Time series database](https://www.influxdata.com/time-series-database/)

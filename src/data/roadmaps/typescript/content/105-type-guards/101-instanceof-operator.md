@@ -24,4 +24,4 @@ if (pet instanceof Bird) {
 
 Learn more from the following links:
 
-- [instanceOf Operator](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing)
+- [@article@instanceOf Operator](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing)

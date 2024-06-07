@@ -34,4 +34,4 @@ Here is a high-level summary of the Kerberos authentication process:
 
 In summary, Kerberos is a robust and widely used authentication protocol that helps secure client/server communications. Its centralized management and strong security measures make it an excellent choice for organizations with demanding authentication requirements. However, it also has its limitations and complexities that must be carefully managed to maintain a secure and efficient authentication process.
 
-- [Kerberos authentication process](https://youtu.be/_44CHD3Vx-0)
+- [@video@Kerberos authentication process](https://youtu.be/_44CHD3Vx-0)

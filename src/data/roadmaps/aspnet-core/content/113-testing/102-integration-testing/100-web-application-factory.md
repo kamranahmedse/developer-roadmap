@@ -4,6 +4,6 @@ Web Application Factory (WAF) is a built-in feature of the ASP.NET Core framewor
 
 To learn more, visit the following links:
 
-- [Integration tests in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0)
-- [Integration Testing ASP.NET Core WebAPI Applications](https://www.youtube.com/watch?v=xs8gNQjCXw0)
-- [How to use WebApplicationFactory in .NET](https://stackoverflow.com/questions/69058176/how-to-use-webapplicationfactory-in-net6-without-speakable-entry-point)
+- [@article@Integration tests in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0)
+- [@video@Integration Testing ASP.NET Core WebAPI Applications](https://www.youtube.com/watch?v=xs8gNQjCXw0)
+- [@article@How to use WebApplicationFactory in .NET](https://stackoverflow.com/questions/69058176/how-to-use-webapplicationfactory-in-net6-without-speakable-entry-point)

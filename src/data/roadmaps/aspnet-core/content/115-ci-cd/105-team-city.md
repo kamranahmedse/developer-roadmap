@@ -6,6 +6,6 @@ In ASP.NET, TeamCity can be used to automate various tasks related to the develo
 
 Visit the following links to learn more:
 
-- [Tutorial on TeamCity with ASP.NET](https://www.jetbrains.com/help/teamcity/net.html)
-- [How to Build ASP.NET application with TeamCity?](https://www.youtube.com/watch?v=KNzxyhSWV-4)
-- [How to deploy ASP.NET Core sites using Teamcity?](https://medium.com/monkii/how-to-deploy-asp-net-core-sites-using-teamcity-or-just-command-line-cf05fdee58f5)
+- [@article@Tutorial on TeamCity with ASP.NET](https://www.jetbrains.com/help/teamcity/net.html)
+- [@video@How to Build ASP.NET application with TeamCity?](https://www.youtube.com/watch?v=KNzxyhSWV-4)
+- [@article@How to deploy ASP.NET Core sites using Teamcity?](https://medium.com/monkii/how-to-deploy-asp-net-core-sites-using-teamcity-or-just-command-line-cf05fdee58f5)

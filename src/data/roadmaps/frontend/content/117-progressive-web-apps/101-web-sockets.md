@@ -8,4 +8,4 @@ Web Sockets is supported by most modern web browsers and can be used with a vari
 
 Visit the following resources to learn more:
 
-- [Web Sockets - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [@article@Web Sockets - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)

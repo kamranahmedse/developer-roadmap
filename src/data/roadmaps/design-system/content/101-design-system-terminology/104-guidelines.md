@@ -4,4 +4,4 @@ Design guidelines are sets of recommendations on how to apply design principles 
 
 Visit the following resources to learn more:
 
-- [Design Guidelines](https://www.interaction-design.org/literature/topics/design-guidelines)
+- [@article@Design Guidelines](https://www.interaction-design.org/literature/topics/design-guidelines)

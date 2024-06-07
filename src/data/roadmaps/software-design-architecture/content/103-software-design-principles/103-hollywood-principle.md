@@ -6,4 +6,4 @@ This principle is often used in the context of inversion of control (IoC) and de
 
 Learn more from the following resources:
 
-- [Tutorial - Hollywood Principle](https://www.youtube.com/watch?v=lRuygpsXE5s)
+- [@video@Tutorial - Hollywood Principle](https://www.youtube.com/watch?v=lRuygpsXE5s)

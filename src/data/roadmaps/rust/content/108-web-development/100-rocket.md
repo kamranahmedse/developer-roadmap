@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Rocket](https://rocket.rs/)
+- [@official@Rocket](https://rocket.rs/)

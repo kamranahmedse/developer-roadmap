@@ -4,4 +4,4 @@ Web sockets are a bidirectional communication protocol between a client and a se
 
 Visit the following resources to learn more:
 
-- [What is web socket and how it is different from the HTTP?](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)
+- [@article@What is web socket and how it is different from the HTTP?](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/)

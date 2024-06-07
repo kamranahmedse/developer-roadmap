@@ -6,5 +6,5 @@ Sieve is typically used in email servers and clients, and it can be used to impl
 
 To learn more, visit the following resources:
 
-- [Analysis of Sieve](https://en.wikipedia.org/wiki/Sieve_analysis)
-- [Sorting in a .NET Core API using Sieve](https://www.youtube.com/watch?v=x0utCah3cFk)
+- [@article@Analysis of Sieve](https://en.wikipedia.org/wiki/Sieve_analysis)
+- [@video@Sorting in a .NET Core API using Sieve](https://www.youtube.com/watch?v=x0utCah3cFk)

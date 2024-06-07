@@ -5,6 +5,6 @@ It is based on non-blocking IO (libevent/libev) and lightweight greenlets. Non-b
 
 Visit the following resources to learn more:
 
-- [gevent — Official Website](http://www.gevent.org/)
-- [GitHub Repository](https://github.com/gevent/gevent)
-- [gevent For the Working Python Developer](https://sdiehl.github.io/gevent-tutorial/)
+- [@official@gevent — Official Website](http://www.gevent.org/)
+- [@opensource@GitHub Repository](https://github.com/gevent/gevent)
+- [@article@gevent For the Working Python Developer](https://sdiehl.github.io/gevent-tutorial/)

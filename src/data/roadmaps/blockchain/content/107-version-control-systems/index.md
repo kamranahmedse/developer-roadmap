@@ -4,6 +4,6 @@ Version control/source control systems allow developers to track and control cha
 
 Visit the following resources to learn more:
 
-- [Git](https://git-scm.com/)
-- [Mercurial](https://www.mercurial-scm.org/)
-- [What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [@article@Git](https://git-scm.com/)
+- [@article@Mercurial](https://www.mercurial-scm.org/)
+- [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)

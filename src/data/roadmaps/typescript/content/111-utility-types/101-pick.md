@@ -19,4 +19,4 @@ const todo: TodoPreview = {
 
 Learn more from the following links:
 
-- [Pick<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)
+- [@article@Pick<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)

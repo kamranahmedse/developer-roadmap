@@ -8,6 +8,6 @@ The ELK Stack is a collection of three open-source products — Elasticsearch, L
 
 For more information, visit the following links:
 
-- [What Is Elk?](https://aws.amazon.com/what-is/elk-stack/)
-- [Complete Guide to Elk](https://logz.io/learn/complete-guide-elk-stack/)
-- [ELK Stack Tutorial: What is Kibana, Logstash & Elasticsearch?](https://www.guru99.com/elk-stack-tutorial.html)
+- [@article@What Is Elk?](https://aws.amazon.com/what-is/elk-stack/)
+- [@article@Complete Guide to Elk](https://logz.io/learn/complete-guide-elk-stack/)
+- [@article@ELK Stack Tutorial: What is Kibana, Logstash & Elasticsearch?](https://www.guru99.com/elk-stack-tutorial.html)

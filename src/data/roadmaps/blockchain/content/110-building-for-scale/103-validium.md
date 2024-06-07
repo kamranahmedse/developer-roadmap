@@ -4,4 +4,4 @@ Validium is a scaling solution that enforces integrity of transactions using val
 
 Visit the following resources to learn more:
 
-- [Validium - Ethereum](https://ethereum.org/en/developers/docs/scaling/validium/)
+- [@article@Validium - Ethereum](https://ethereum.org/en/developers/docs/scaling/validium/)

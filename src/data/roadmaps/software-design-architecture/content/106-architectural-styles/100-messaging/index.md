@@ -10,5 +10,5 @@ In general, messaging is a powerful concept that allows for the decoupling and s
 
 Learn more from the following links:
 
-- [Architectural Styles in Software Engineering](https://shapingsoftware.com/2009/02/09/architectural-styles/)
-- [Architectural Messaging Patterns](https://www.redhat.com/architect/architectural-messaging-patterns)
+- [@article@Architectural Styles in Software Engineering](https://shapingsoftware.com/2009/02/09/architectural-styles/)
+- [@article@Architectural Messaging Patterns](https://www.redhat.com/architect/architectural-messaging-patterns)

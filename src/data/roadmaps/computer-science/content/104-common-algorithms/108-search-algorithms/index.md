@@ -4,5 +4,5 @@ Search algorithms are used to find a specific item in a collection of items. For
 
 Visit the following resources to learn more:
 
-- [Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
-- [Search Algorithms – Linear Search and Binary Search](https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/)
+- [@article@Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
+- [@article@Search Algorithms – Linear Search and Binary Search](https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/)

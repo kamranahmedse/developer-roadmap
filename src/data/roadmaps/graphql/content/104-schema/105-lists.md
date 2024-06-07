@@ -6,4 +6,4 @@ Lists are used to represent an array of items in a GraphQL schema, and can be us
 
 Learn more from the following links:
 
-- [Get started with Lists](https://graphql.org/learn/schema/#lists-and-non-null)
+- [@official@Get started with Lists](https://graphql.org/learn/schema/#lists-and-non-null)

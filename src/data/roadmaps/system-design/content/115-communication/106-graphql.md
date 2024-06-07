@@ -4,5 +4,5 @@ GraphQL is a query language and runtime for building APIs. It allows clients to 
 
 To learn more, visit the following links:
 
-- [GraphQL Server](https://www.howtographql.com/basics/3-big-picture/)
-- [What is GraphQL?](https://www.redhat.com/en/topics/api/what-is-graphql)
+- [@article@GraphQL Server](https://www.howtographql.com/basics/3-big-picture/)
+- [@article@What is GraphQL?](https://www.redhat.com/en/topics/api/what-is-graphql)

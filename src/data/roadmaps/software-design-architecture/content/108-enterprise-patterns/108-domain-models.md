@@ -6,5 +6,5 @@ A Domain Model is a collection of objects that represent the real-world concepts
 
 Learn more from the following links:
 
-- [Overview - Domain Models](https://sparxsystems.com/enterprise_architect_user_guide/14.0/model_domains/specialized_models.html)
-- [Tutorial - Domain Model Pattern](https://www.youtube.com/watch?v=75EGANiqADw)
+- [@article@Overview - Domain Models](https://sparxsystems.com/enterprise_architect_user_guide/14.0/model_domains/specialized_models.html)
+- [@video@Tutorial - Domain Model Pattern](https://www.youtube.com/watch?v=75EGANiqADw)

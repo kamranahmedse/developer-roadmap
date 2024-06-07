@@ -4,7 +4,7 @@ Styled-components is a CSS-in-JS library that enables you to write regular CSS a
 
 Visit the following resources to learn more:
 
-- [Official Website](https://styled-components.com/)
-- [Official Docs](https://styled-components.com/docs)
-- [Styled Components Crash Course & Project](https://www.youtube.com/watch?v=02zO0hZmwnw)
-- [Best Practices for Styled Components](https://www.robinwieruch.de/styled-components/)
+- [@article@Official Website](https://styled-components.com/)
+- [@article@Official Docs](https://styled-components.com/docs)
+- [@video@Styled Components Crash Course & Project](https://www.youtube.com/watch?v=02zO0hZmwnw)
+- [@article@Best Practices for Styled Components](https://www.robinwieruch.de/styled-components/)

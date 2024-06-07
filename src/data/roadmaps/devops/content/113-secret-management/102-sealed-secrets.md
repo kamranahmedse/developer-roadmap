@@ -15,4 +15,4 @@ Sealed Secrets is commonly used in Kubernetes environments to securely store and
 
 Visit the following resources to learn more:
 
-- [Sealed Secrets - Bitnami](https://github.com/bitnami-labs/sealed-secrets)
+- [@opensource@Sealed Secrets - Bitnami](https://github.com/bitnami-labs/sealed-secrets)

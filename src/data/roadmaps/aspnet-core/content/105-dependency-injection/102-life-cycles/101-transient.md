@@ -6,6 +6,6 @@ Transient lifetime is useful when you have services that are stateless and do no
 
 For more information:
 
-- [What are Transient Dependencies?](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/)
-- [Dependency Injection Lifetime](https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/)
-- [Dependency Injection Explained with Transient](https://www.youtube.com/watch?v=NkTF_6IQPiY)
+- [@article@What are Transient Dependencies?](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/)
+- [@article@Dependency Injection Lifetime](https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/)
+- [@video@Dependency Injection Explained with Transient](https://www.youtube.com/watch?v=NkTF_6IQPiY)

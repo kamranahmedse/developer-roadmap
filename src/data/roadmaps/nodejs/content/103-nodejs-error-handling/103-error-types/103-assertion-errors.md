@@ -4,5 +4,5 @@ An `AssertionError` in Node.js is an error that is thrown when the `assert` modu
 
 Visit the following resources to learn more:
 
-- [Node.js Assert](https://nodejs.org/api/assert.html#new-assertassertionerroroptions)
-- [Node.js Error Handling - AssertionError](https://blog.airbrake.io/blog/nodejs-error-handling/assertionerror-nodejs)
+- [@official@Node.js Assert](https://nodejs.org/api/assert.html#new-assertassertionerroroptions)
+- [@article@Node.js Error Handling - AssertionError](https://blog.airbrake.io/blog/nodejs-error-handling/assertionerror-nodejs)

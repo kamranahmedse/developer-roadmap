@@ -4,5 +4,5 @@ Cloud providers provide a layer of APIs to abstract infrastructure and provision
 
 Visit the following resources to learn more:
 
-- [Cloud service provider](https://www.techtarget.com/searchitchannel/definition/cloud-service-provider-cloud-provider)
-- [What are Cloud Providers?](https://www.redhat.com/en/topics/cloud-computing/what-are-cloud-providers)
+- [@article@Cloud service provider](https://www.techtarget.com/searchitchannel/definition/cloud-service-provider-cloud-provider)
+- [@article@What are Cloud Providers?](https://www.redhat.com/en/topics/cloud-computing/what-are-cloud-providers)

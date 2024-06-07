@@ -14,4 +14,4 @@ if (typeof value === 'string') {
 
 Learn more from the following links:
 
-- [Type Guards and Differentiating Types](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards)
+- [@article@Type Guards and Differentiating Types](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards)

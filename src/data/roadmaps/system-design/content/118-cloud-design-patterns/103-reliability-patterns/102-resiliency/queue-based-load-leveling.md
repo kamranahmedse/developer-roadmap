@@ -4,4 +4,4 @@ Use a queue that acts as a buffer between a task and a service it invokes in ord
 
 To learn more visit the following links:
 
-- [Queue-Based Load Leveling pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)
+- [@article@Queue-Based Load Leveling pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)

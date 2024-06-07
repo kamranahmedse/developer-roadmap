@@ -4,4 +4,4 @@ Testing Techniques are methods applied to evaluate a system or a component with 
 
 Visit the following resources to learn more:
 
-- [What are Testing Techniques : Types, Advantages & Disadvantages](https://www.elprocus.com/what-are-testing-techniques-types-advantages-disadvantages/)
+- [@article@What are Testing Techniques : Types, Advantages & Disadvantages](https://www.elprocus.com/what-are-testing-techniques-types-advantages-disadvantages/)

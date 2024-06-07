@@ -4,5 +4,5 @@ Custom Scheduler Extenders in Kubernetes enhance the scheduling capabilities of 
 
 Learn more from the following resources:
 
-- [Custom Scheduler Kubernetes | Multiple Schedulers Kubernetes](https://www.youtube.com/watch?v=NiB7sjXmiZc)
-- [Create a custom Kubernetes scheduler](https://developer.ibm.com/articles/creating-a-custom-kube-scheduler/)
+- [@video@Custom Scheduler Kubernetes | Multiple Schedulers Kubernetes](https://www.youtube.com/watch?v=NiB7sjXmiZc)
+- [@article@Create a custom Kubernetes scheduler](https://developer.ibm.com/articles/creating-a-custom-kube-scheduler/)

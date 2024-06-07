@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: JSON](https://docs.rs/json/latest/json/)
+- [@article@Docs.rs: JSON](https://docs.rs/json/latest/json/)

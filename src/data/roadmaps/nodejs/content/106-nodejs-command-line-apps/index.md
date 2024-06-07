@@ -4,6 +4,6 @@ Command Line Applications are applications that can be run from the command line
 
 Visit the following resources to learn more:
 
-- [Intro To CLI Applications](https://learn.co/lessons/intro-to-cli-applications)
-- [Build a Command Line Application with Node.js](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs)
-- [ 5-Minute Node.js CLI Project](https://www.youtube.com/watch?v=_oHByo8tiEY)
+- [@article@Intro To CLI Applications](https://learn.co/lessons/intro-to-cli-applications)
+- [@article@Build a Command Line Application with Node.js](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs)
+- [@video@ 5-Minute Node.js CLI Project](https://www.youtube.com/watch?v=_oHByo8tiEY)

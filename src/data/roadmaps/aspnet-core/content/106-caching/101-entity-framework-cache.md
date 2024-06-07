@@ -7,6 +7,6 @@ However, during peak loads, high-transaction .NET Core apps using EF Core have p
 
 Visit the following resources to learn more:
 
-- [Entity Framework 2nd Level Cache](https://www.gridgain.com/docs/latest/developers-guide/net-specific/net-entity-framework-cache)
-- [What is Entity Framework?](https://www.youtube.com/watch?v=Z7713GBhi4k)
-- [Caching In Entity Framework](https://www.c-sharpcorner.com/article/caching-in-entity-framework-ef-core-using-ncache/)
+- [@article@Entity Framework 2nd Level Cache](https://www.gridgain.com/docs/latest/developers-guide/net-specific/net-entity-framework-cache)
+- [@video@What is Entity Framework?](https://www.youtube.com/watch?v=Z7713GBhi4k)
+- [@article@Caching In Entity Framework](https://www.c-sharpcorner.com/article/caching-in-entity-framework-ef-core-using-ncache/)

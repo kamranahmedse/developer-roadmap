@@ -4,5 +4,5 @@ Function borrowing allows us to use the methods of one object on a different obj
 
 Visit the following resources to learn more:
 
-- [Function borrowing](https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4)
-- [When would I use function borrowing](https://stackoverflow.com/questions/69892281/when-would-i-use-function-borrowing)
+- [@article@Function borrowing](https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4)
+- [@article@When would I use function borrowing](https://stackoverflow.com/questions/69892281/when-would-i-use-function-borrowing)

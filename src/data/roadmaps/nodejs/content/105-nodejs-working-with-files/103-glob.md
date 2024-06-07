@@ -4,4 +4,4 @@ The glob pattern is most commonly used to specify filenames, called wildcard cha
 
 Visit the following resources to learn more:
 
-- [NPM Glob](https://www.npmjs.com/package/glob)
+- [@article@NPM Glob](https://www.npmjs.com/package/glob)

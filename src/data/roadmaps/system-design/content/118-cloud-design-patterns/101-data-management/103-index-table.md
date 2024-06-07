@@ -4,4 +4,4 @@ Create indexes over the fields in data stores that are frequently referenced by 
 
 Learn more from the following links:
 
-- [Index Table pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/index-table)
+- [@article@Index Table pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/index-table)

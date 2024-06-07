@@ -14,5 +14,5 @@ These patterns can help to improve the maintainability and scalability of the so
 
 Learn more from the following links:
 
-- [Software Architecture Patterns in Enterprise Software](https://blog.devgenius.io/10-software-architecture-patterns-in-enterprise-software-development-fabacb5ed0c8)
-- [What are Enterprise Integration Patterns?](https://www.youtube.com/watch?v=WNm3QmJadNs)
+- [@article@Software Architecture Patterns in Enterprise Software](https://blog.devgenius.io/10-software-architecture-patterns-in-enterprise-software-development-fabacb5ed0c8)
+- [@video@What are Enterprise Integration Patterns?](https://www.youtube.com/watch?v=WNm3QmJadNs)

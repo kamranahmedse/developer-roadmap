@@ -4,5 +4,5 @@ To use variables in JavaScript, we first need to create it i.e. declare a variab
 
 Visit the following resources to learn more:
 
-- [Storing the information you need — Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
-- [JavaScript Variables - CodeGuage](https://www.codeguage.com/courses/js/variables)
+- [@article@Storing the information you need — Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+- [@article@JavaScript Variables - CodeGuage](https://www.codeguage.com/courses/js/variables)

@@ -4,4 +4,4 @@ Being consistent refers to maintaining a consistent pattern. This can include us
 
 Learn more from the following links:
 
-- [10 Tips for Writing Clean Code](https://www.pluralsight.com/blog/software-development/10-steps-to-clean-code)
+- [@article@10 Tips for Writing Clean Code](https://www.pluralsight.com/blog/software-development/10-steps-to-clean-code)

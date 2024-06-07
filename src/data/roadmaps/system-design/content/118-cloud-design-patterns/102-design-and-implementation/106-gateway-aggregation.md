@@ -4,4 +4,4 @@ Use a gateway to aggregate multiple individual requests into a single request. T
 
 To learn more, visit the following links:
 
-- [Gateway Aggregation pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)
+- [@article@Gateway Aggregation pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)

@@ -12,5 +12,5 @@ The choice of state management technique depends on the complexity and size of t
 
 Learn more from the following resources:
 
-- [State management in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt)
-- [Intro to State Management](https://docs.flutter.dev/development/data-and-backend/state-mgmt/intro)
+- [@article@State management in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt)
+- [@article@Intro to State Management](https://docs.flutter.dev/development/data-and-backend/state-mgmt/intro)

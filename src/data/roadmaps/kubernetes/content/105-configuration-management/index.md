@@ -4,5 +4,5 @@ Configuration management in Kubernetes (K8s) is the process of defining and mana
 
 Learn more from the following links:
 
-- [Configuration Management with Containers](https://kubernetes.io/blog/2016/04/configuration-management-with-containers/)
-- [Configuration Management in Kubernetes for Beginners](https://www.youtube.com/watch?v=o-gXx7r7Rz4)
+- [@official@Configuration Management with Containers](https://kubernetes.io/blog/2016/04/configuration-management-with-containers/)
+- [@video@Configuration Management in Kubernetes for Beginners](https://www.youtube.com/watch?v=o-gXx7r7Rz4)

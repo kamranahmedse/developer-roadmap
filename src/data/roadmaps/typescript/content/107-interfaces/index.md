@@ -20,4 +20,4 @@ In this example, the `User` interface defines the structure of the `user` object
 
 Learn more from the following links:
 
-- [TypeScript - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- [@article@TypeScript - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

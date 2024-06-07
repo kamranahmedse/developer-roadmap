@@ -4,4 +4,4 @@ Publishing in Rust involves packaging up your library or executable and making i
 
 Visit the following resources to learn more:
 
-- [The Cargo Book: Publishing on crates.io](https://doc.rust-lang.org/cargo/reference/publishing.html)
+- [@article@The Cargo Book: Publishing on crates.io](https://doc.rust-lang.org/cargo/reference/publishing.html)

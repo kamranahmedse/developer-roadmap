@@ -10,4 +10,4 @@ There are several ways to implement pagination in GraphQL:
 
 To learn more, visit the following links:
 
-- [Get Started with Pagination](https://graphql.org/learn/pagination/)
+- [@official@Get Started with Pagination](https://graphql.org/learn/pagination/)

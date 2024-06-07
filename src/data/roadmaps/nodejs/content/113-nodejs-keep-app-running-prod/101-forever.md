@@ -4,4 +4,4 @@ Forever is a node.js package for ensuring that a given script runs continuously 
 
 Visit the following resources to learn more:
 
-- [Forever package documentation](https://www.npmjs.com/package/forever)
+- [@article@Forever package documentation](https://www.npmjs.com/package/forever)

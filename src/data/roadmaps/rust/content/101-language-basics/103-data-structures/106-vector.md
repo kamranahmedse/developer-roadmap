@@ -4,4 +4,4 @@ A `Vector` in Rust, often referred to as `Vec`, is a growable, or dynamically-si
 
 Learn more from the following links:
 
-- [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html?highlight=vector#storing-lists-of-values-with-vectors)
+- [@article@Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html?highlight=vector#storing-lists-of-values-with-vectors)

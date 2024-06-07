@@ -4,5 +4,5 @@ Python has a rich standard library of built-in modules that provide a wide range
 
 Visit the following resources to learn more:
 
-- [Python Modules](https://www.digitalocean.com/community/tutorials/python-modules)
-- [Python - Built-In Modules](https://www.knowledgehut.com/tutorials/python-tutorial/python-built-in-modules)
+- [@article@Python Modules](https://www.digitalocean.com/community/tutorials/python-modules)
+- [@article@Python - Built-In Modules](https://www.knowledgehut.com/tutorials/python-tutorial/python-built-in-modules)

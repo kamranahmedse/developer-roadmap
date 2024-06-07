@@ -4,5 +4,5 @@ Gnosis is a blockchain based on Ethereum, which changed the consensus model to P
 
 Visit the following resources to learn more:
 
-- [Gnosis whitepaper](https://blockchainlab.com/pdf/gnosis_whitepaper.pdf)
-- [Gnosis overview](https://developers.gnosischain.com/#gnosis-chain)
+- [@article@Gnosis whitepaper](https://blockchainlab.com/pdf/gnosis_whitepaper.pdf)
+- [@article@Gnosis overview](https://developers.gnosischain.com/#gnosis-chain)

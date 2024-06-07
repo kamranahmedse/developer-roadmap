@@ -4,4 +4,4 @@ A Test Plan is a detailed document that describes the test strategy, objectives,
 
 Visit the following resources to learn more:
 
-- [Test Plan: What is, How to Create (with Example)](https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html)
+- [@article@Test Plan: What is, How to Create (with Example)](https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html)

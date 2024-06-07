@@ -8,5 +8,5 @@ Cohesion, on the other hand, refers to the degree to which the responsibilities 
 
 To learn more, visit the following links:
 
-- [Cohesion and Coupling in Software Engineering](https://www.youtube.com/watch?v=NweTzHYBgYU)
-- [Overview of Coupling and Cohesion](https://www.geeksforgeeks.org/software-engineering-coupling-and-cohesion/)
+- [@video@Cohesion and Coupling in Software Engineering](https://www.youtube.com/watch?v=NweTzHYBgYU)
+- [@article@Overview of Coupling and Cohesion](https://www.geeksforgeeks.org/software-engineering-coupling-and-cohesion/)

@@ -4,5 +4,5 @@ Kubernetes (k8s) extensions and APIs are used to customize the behavior of Kuber
 
 Learn more from the following resources:
 
-- [Extensions - Documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions)
-- [The Kubernetes API - Documentation](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
+- [@official@Extensions - Documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions)
+- [@official@The Kubernetes API - Documentation](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)

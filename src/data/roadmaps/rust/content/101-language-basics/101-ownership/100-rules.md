@@ -4,4 +4,4 @@ In Rust, the concept of ownership is described by three main rules. Firstly, eac
 
 Learn more from the following links:
 
-- [What Is Ownership?](https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html)
+- [@article@What Is Ownership?](https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html)

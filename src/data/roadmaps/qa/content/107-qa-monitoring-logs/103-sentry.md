@@ -4,4 +4,4 @@ Sentry tracks your software performance, measuring metrics like throughput and l
 
 Visit the following resources to learn more:
 
-- [Sentry Website](https://sentry.io)
+- [@official@Sentry Website](https://sentry.io)

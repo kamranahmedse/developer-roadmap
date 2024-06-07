@@ -4,5 +4,5 @@ In Rust, `pattern matching` is a robust tool that allows you to destructure data
 
 Learn more from the following links:
 
-- [The match Control Flow Construct](https://rust-book.cs.brown.edu/ch06-02-match.html)
-- [Concise Control Flow with if let](https://rust-book.cs.brown.edu/ch06-03-if-let.html)
+- [@article@The match Control Flow Construct](https://rust-book.cs.brown.edu/ch06-02-match.html)
+- [@article@Concise Control Flow with if let](https://rust-book.cs.brown.edu/ch06-03-if-let.html)

@@ -6,4 +6,4 @@ In GraphQL, data is represented as a graph, where nodes represent objects and ed
 
 Learn more from the following links:
 
-- [GraphQL - Thinking in Graphs](https://graphql.org/learn/thinking-in-graphs/)
+- [@official@GraphQL - Thinking in Graphs](https://graphql.org/learn/thinking-in-graphs/)

@@ -35,6 +35,7 @@ export async function httpCall<
   url: string,
   options?: HttpOptionsType,
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
+  let statusCode: number = 0;
   try {
     const fingerprintPromise = await fp.load();
     const fingerprint = await fingerprintPromise.get();
@@ -50,6 +51,7 @@ export async function httpCall<
         ...(options?.headers ?? {}),
       }),
     });
+    statusCode = response.status;
 
     // @ts-ignore
     const doesAcceptHtml = options?.headers?.['Accept'] === 'text/html';
@@ -83,7 +85,7 @@ export async function httpCall<
     return {
       response: undefined,
       error: {
-        status: 0,
+        status: statusCode,
         message: error.message,
       },
     };

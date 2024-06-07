@@ -6,6 +6,6 @@ Postgres is known for its robustness and reliability, as well as its support for
 
 For more information, visit the following resources:
 
-- [Postgresql - Open Source Relational Database](https://www.postgresql.org/)
-- [What is Postgresql?](https://postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/)
-- [Introduction, Advantages & Disadvantages of PostgreSQL](https://guru99.com/introduction-postgresql.htmlPostgresql)
+- [@official@Postgresql - Open Source Relational Database](https://www.postgresql.org/)
+- [@article@What is Postgresql?](https://postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/)
+- [@article@Introduction, Advantages & Disadvantages of PostgreSQL](https://guru99.com/introduction-postgresql.htmlPostgresql)

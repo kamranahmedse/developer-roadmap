@@ -4,7 +4,7 @@ Grafana is the open-source platform for monitoring and observability. It allows 
 
 Visit the following resources to learn more:
 
-- [Grafana Website](https://grafana.com/)
-- [Grafana Official Documentation](https://grafana.com/docs/)
-- [Grafana Community](https://community.grafana.com/)
-- [Grafana Webinars and Videos](https://grafana.com/videos/)
+- [@official@Grafana Website](https://grafana.com/)
+- [@official@Grafana Official Documentation](https://grafana.com/docs/)
+- [@article@Grafana Community](https://community.grafana.com/)
+- [@official@Grafana Webinars and Videos](https://grafana.com/videos/)

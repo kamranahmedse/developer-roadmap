@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [GitLab Documentation](https://docs.gitlab.com/)
-- [GitLab Website](https://gitlab.com/)
-- [Development: Connect git to GitLab for Small Projects](https://thenewstack.io/development-connect-git-to-gitlab-for-small-projects/)
+- [@article@GitLab Documentation](https://docs.gitlab.com/)
+- [@opensource@GitLab Website](https://gitlab.com/)
+- [@article@Development: Connect git to GitLab for Small Projects](https://thenewstack.io/development-connect-git-to-gitlab-for-small-projects/)

@@ -11,5 +11,5 @@ Here are a few key differences between TypeScript and JavaScript:
 
 Learn more from the following links:
 
-- [Learning JavaScript and TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#learning-javascript-and-typescript)
-- [TypeScript vs. JavaScript](https://thenewstack.io/typescript-vs-javascript/)
+- [@article@Learning JavaScript and TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#learning-javascript-and-typescript)
+- [@article@TypeScript vs. JavaScript](https://thenewstack.io/typescript-vs-javascript/)

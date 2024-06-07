@@ -70,4 +70,4 @@ int main()
 
 In the above example, Poco is used to send an HTTP GET request and process the response. It manages tasks like connecting to the server, handling exceptions, and managing HTTP headers.
 
-- [Official Docs for Poco Library](https://docs.pocoproject.org/)
+- [@article@Official Docs for Poco Library](https://docs.pocoproject.org/)

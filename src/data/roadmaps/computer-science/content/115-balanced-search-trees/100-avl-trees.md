@@ -6,7 +6,7 @@ In practice: From what I can tell, these aren't used much in practice, but I cou
 
 Visit the following resources to learn more:
 
-- [MIT AVL Trees / AVL Sort](https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6)
-- [AVL Trees](https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees)
-- [AVL Tree Implementation](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
-- [Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)
+- [@video@MIT AVL Trees / AVL Sort](https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6)
+- [@course@AVL Trees](https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees)
+- [@course@AVL Tree Implementation](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
+- [@course@Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)

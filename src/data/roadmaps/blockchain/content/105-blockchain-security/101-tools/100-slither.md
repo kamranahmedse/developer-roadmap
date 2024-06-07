@@ -4,4 +4,4 @@ Slither is a Solidity static analysis framework written in Python 3. It runs a s
 
 Visit the following resources to learn more:
 
-- [Slither, the Solidity source analyzer](https://github.com/crytic/slither/blob/master/README.md)
+- [@opensource@Slither, the Solidity source analyzer](https://github.com/crytic/slither/blob/master/README.md)

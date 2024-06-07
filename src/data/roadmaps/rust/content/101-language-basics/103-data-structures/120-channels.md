@@ -4,4 +4,4 @@ Channels in Rust allow communication between threads. They are a programming par
 
 Learn more from the following links:
 
-- [Channels](https://doc.rust-lang.org/rust-by-example/std_misc/channels.html)
+- [@article@Channels](https://doc.rust-lang.org/rust-by-example/std_misc/channels.html)

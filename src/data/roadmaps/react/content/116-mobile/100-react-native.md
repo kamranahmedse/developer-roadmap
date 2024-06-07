@@ -4,5 +4,5 @@ React Native is an open-source UI software framework created by Meta Platforms, 
 
 Visit the following resources to learn more:
 
-- [React Native: Official Website](https://reactnative.dev/)
-- [Official Getting Started](https://reactnative.dev/docs/getting-started)
+- [@official@React Native: Official Website](https://reactnative.dev/)
+- [@official@Official Getting Started](https://reactnative.dev/docs/getting-started)

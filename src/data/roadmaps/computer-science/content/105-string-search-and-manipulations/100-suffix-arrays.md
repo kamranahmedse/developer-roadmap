@@ -4,8 +4,8 @@ Suffix arrays are a data structure that allows us to quickly find all the suffix
 
 Visit the following resources to learn more:
 
-- [Suffix Array | Set 1 (Introduction)](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
-- [Suffix array introduction](https://www.youtube.com/watch?v=zqKlL3ZpTqs)
-- [Advanced Data Structures: Suffix Arrays](https://www.youtube.com/watch?v=IzMxbboPcqQ)
-- [Suffix arrays: building](https://www.youtube.com/watch?v=ZWlbhBjjwyA)
-- [Suffix Arrays - Coursera](https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays)
+- [@article@Suffix Array | Set 1 (Introduction)](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
+- [@video@Suffix array introduction](https://www.youtube.com/watch?v=zqKlL3ZpTqs)
+- [@video@Advanced Data Structures: Suffix Arrays](https://www.youtube.com/watch?v=IzMxbboPcqQ)
+- [@video@Suffix arrays: building](https://www.youtube.com/watch?v=ZWlbhBjjwyA)
+- [@course@Suffix Arrays - Coursera](https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays)

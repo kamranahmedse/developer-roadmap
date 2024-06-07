@@ -4,5 +4,5 @@ User Acceptance Testing (UAT) is a type of testing performed by the end user or 
 
 Visit the following resources to learn more:
 
-- [What is User Acceptance Testing (UAT)?](https://www.guru99.com/user-acceptance-testing.html)
-- [How to plan your UAT](https://www.youtube.com/watch?v=AU8SV7091-s)
+- [@article@What is User Acceptance Testing (UAT)?](https://www.guru99.com/user-acceptance-testing.html)
+- [@video@How to plan your UAT](https://www.youtube.com/watch?v=AU8SV7091-s)

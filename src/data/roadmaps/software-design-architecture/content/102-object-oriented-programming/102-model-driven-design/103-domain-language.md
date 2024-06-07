@@ -6,5 +6,5 @@ A domain language is used to provide a common understanding of the problem domai
 
 Learn more from the following links:
 
-- [Overview of Domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language)
-- [What are Domain Languages (DSLs)?](https://www.jetbrains.com/mps/concepts/domain-specific-languages/)
+- [@article@Overview of Domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language)
+- [@article@What are Domain Languages (DSLs)?](https://www.jetbrains.com/mps/concepts/domain-specific-languages/)

@@ -29,4 +29,4 @@ Active-active failover can also be referred to as master-master failover.
 
 To learn more visit the following links:
 
-- [Fail Over Pattern - High Availability](https://www.filecloud.com/blog/2015/12/architectural-patterns-for-high-availability/)
+- [@article@Fail Over Pattern - High Availability](https://www.filecloud.com/blog/2015/12/architectural-patterns-for-high-availability/)

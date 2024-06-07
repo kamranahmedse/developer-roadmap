@@ -4,6 +4,6 @@ StackExchange.Redis is a high performance general purpose redis client for .NET 
 
 Visit the following resources to learn more:
 
-- [Using StackExchange.Redis with .NET](https://docs.redis.com/latest/rs/references/client_references/client_csharp/)
-- [Introduction to StackExchange.Redis](https://www.youtube.com/watch?v=rsXvpCHdldg)
-- [Getting Started with Stackexchange Redis](https://stackexchange.github.io/StackExchange.Redis/)
+- [@article@Using StackExchange.Redis with .NET](https://docs.redis.com/latest/rs/references/client_references/client_csharp/)
+- [@video@Introduction to StackExchange.Redis](https://www.youtube.com/watch?v=rsXvpCHdldg)
+- [@article@Getting Started with Stackexchange Redis](https://stackexchange.github.io/StackExchange.Redis/)

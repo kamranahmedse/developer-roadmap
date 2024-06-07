@@ -6,6 +6,6 @@ A component with a render prop takes a function that returns a React element and
 
 Visit the following resources to learn more:
 
-- [Render Props in React](https://react.dev/learn/passing-props-to-a-component)
-- [How to create a Render Prop Component](https://www.robinwieruch.de/react-render-props/)
-- [Render Props Pattern](https://www.patterns.dev/posts/render-props-pattern/)
+- [@official@Render Props in React](https://react.dev/learn/passing-props-to-a-component)
+- [@article@How to create a Render Prop Component](https://www.robinwieruch.de/react-render-props/)
+- [@article@Render Props Pattern](https://www.patterns.dev/posts/render-props-pattern/)

@@ -4,4 +4,4 @@ Control the consumption of resources used by an instance of an application, an i
 
 To learn more visit the following links:
 
-- [Throttling pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/throttling)
+- [@article@Throttling pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/throttling)

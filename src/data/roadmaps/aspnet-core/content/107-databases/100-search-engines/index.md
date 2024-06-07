@@ -6,6 +6,6 @@ Search engines can be integrated into an ASP.NET application by using libraries 
 
 To learn more, visit the following resources:
 
-- [Search Engine Optimization with ASP.NET](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/september/search-engine-optimization-with-asp-net-4-0-visual-studio-2010-and-iis7)
-- [Creating an ASP.NET Search Engine](https://www.developerfusion.com/article/4389/create-a-site-search-engine-in-aspnet/)
-- [Simple Search Engine in ASP.NET](https://www.youtube.com/watch?v=KTkubhS-u50)
+- [@article@Search Engine Optimization with ASP.NET](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/september/search-engine-optimization-with-asp-net-4-0-visual-studio-2010-and-iis7)
+- [@article@Creating an ASP.NET Search Engine](https://www.developerfusion.com/article/4389/create-a-site-search-engine-in-aspnet/)
+- [@video@Simple Search Engine in ASP.NET](https://www.youtube.com/watch?v=KTkubhS-u50)

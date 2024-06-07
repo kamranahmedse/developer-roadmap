@@ -6,4 +6,4 @@ Fastlane provides a suite of tools for automating tasks such as building, testin
 
 Learn more from the following links:
 
-- [Fast Lane - CI/CD in Flutter](https://docs.flutter.dev/deployment/cd)
+- [@article@Fast Lane - CI/CD in Flutter](https://docs.flutter.dev/deployment/cd)

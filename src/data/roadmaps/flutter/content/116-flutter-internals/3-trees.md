@@ -6,5 +6,5 @@ A Flutter app's widget tree is created by composing smaller widgets into larger 
 
 Learn more from the following links:
 
-- [Beginning Flutter — Understanding Tree](https://medium.com/@JediPixels/beginning-flutter-understanding-the-widget-tree-3513c94dc356)
-- [Tree in Flutter](https://docs.flutter.dev/resources/inside-flutter#tree-surgery)
+- [@article@Beginning Flutter — Understanding Tree](https://medium.com/@JediPixels/beginning-flutter-understanding-the-widget-tree-3513c94dc356)
+- [@article@Tree in Flutter](https://docs.flutter.dev/resources/inside-flutter#tree-surgery)

@@ -4,4 +4,4 @@ Real-time in GraphQL refers to the ability to receive real-time updates from a G
 
 Learn more from the following links:
 
-- [Get Started with Real Time with GraphQL](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)
+- [@article@Get Started with Real Time with GraphQL](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)

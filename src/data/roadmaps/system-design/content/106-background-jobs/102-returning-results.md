@@ -4,4 +4,4 @@ Background jobs execute asynchronously in a separate process, or even in a separ
 
 Learn more from the following links:
 
-- [Returning Results - Background Jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#returning-results)
+- [@article@Returning Results - Background Jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#returning-results)

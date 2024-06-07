@@ -4,4 +4,4 @@ The arguments object is an Array-like object accessible inside functions that co
 
 Visit the following resources to learn more:
 
-- [The arguments object - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
+- [@article@The arguments object - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)

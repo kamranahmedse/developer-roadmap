@@ -4,6 +4,6 @@ Greedy algorithms are a type of algorithm that always makes the choice that seem
 
 Visit the following resources to learn more:
 
-- [Greedy Algorithms - Geeks for Geeks](https://www.geeksforgeeks.org/greedy-algorithms/)
-- [Greedy Algorithms - Programiz](https://www.programiz.com/dsa/greedy-algorithm)
-- [Greedy Algorithms Tutorial – Solve Coding Challenges](https://www.youtube.com/watch?v=bC7o8P_Ste4)
+- [@article@Greedy Algorithms - Geeks for Geeks](https://www.geeksforgeeks.org/greedy-algorithms/)
+- [@article@Greedy Algorithms - Programiz](https://www.programiz.com/dsa/greedy-algorithm)
+- [@video@Greedy Algorithms Tutorial – Solve Coding Challenges](https://www.youtube.com/watch?v=bC7o8P_Ste4)

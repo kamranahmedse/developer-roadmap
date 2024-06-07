@@ -4,5 +4,5 @@ Advanced generics in Rust offer a powerful set of tools for creating reusable an
 
 Visit the following resources to learn more:
 
-- [Book: Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
-- [Rust by Example: Generics](https://doc.rust-lang.org/rust-by-example/generics.html)
+- [@article@Book: Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+- [@article@Rust by Example: Generics](https://doc.rust-lang.org/rust-by-example/generics.html)

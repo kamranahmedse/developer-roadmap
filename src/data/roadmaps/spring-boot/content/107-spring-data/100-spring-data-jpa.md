@@ -4,6 +4,6 @@ Spring Data JPA is a library that makes it easy to implement Java Persistence AP
 
 For more resources, visit the following links:
 
-- [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
-- [Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
-- [Spring Data JPA Tutorial](https://www.javatpoint.com/spring-and-jpa-integration)
+- [@official@Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+- [@article@Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
+- [@article@Spring Data JPA Tutorial](https://www.javatpoint.com/spring-and-jpa-integration)

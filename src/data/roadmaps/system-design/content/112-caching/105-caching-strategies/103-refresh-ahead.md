@@ -12,4 +12,4 @@ Refresh-ahead can result in reduced latency vs read-through if the cache can acc
 
 To learn more, visit the following links:
 
-- [From cache to in-memory data grid](http://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast)
+- [@article@From cache to in-memory data grid](http://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast)

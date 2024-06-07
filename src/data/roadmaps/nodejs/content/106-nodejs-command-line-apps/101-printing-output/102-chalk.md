@@ -4,5 +4,5 @@ Chalk is a clean and focused library used to do string styling in your terminal 
 
 Visit the following resources to learn more:
 
-- [Chalk Docs](https://github.com/chalk/chalk#readme)
-- [Style Command Line Output with Chalk Package in Node.js](https://www.positronx.io/style-command-line-output-with-chalk-library-in-node-js/)
+- [@opensource@Chalk Docs](https://github.com/chalk/chalk#readme)
+- [@article@Style Command Line Output with Chalk Package in Node.js](https://www.positronx.io/style-command-line-output-with-chalk-library-in-node-js/)

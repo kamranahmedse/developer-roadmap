@@ -6,11 +6,11 @@ Core Services are responsible for managing fundamental utilities and services th
 
 Visit the following resources to learn more:
 
-- [Core Services Layer Overview](https://developer.apple.com/documentation/coreservices)
-- [Core Foundation](https://developer.apple.com/documentation/corefoundation)
-- [Core Data](https://developer.apple.com/documentation/coredata)
-- [Core Location](https://developer.apple.com/documentation/corelocation)
-- [CFNetwork](https://developer.apple.com/documentation/cfnetwork)
-- [Core Motion](https://developer.apple.com/documentation/coremotion)
-- [Foundation](https://developer.apple.com/documentation/foundation)
-- [WebKit](https://developer.apple.com/documentation/webkit)
+- [@article@Core Services Layer Overview](https://developer.apple.com/documentation/coreservices)
+- [@article@Core Foundation](https://developer.apple.com/documentation/corefoundation)
+- [@article@Core Data](https://developer.apple.com/documentation/coredata)
+- [@article@Core Location](https://developer.apple.com/documentation/corelocation)
+- [@article@CFNetwork](https://developer.apple.com/documentation/cfnetwork)
+- [@article@Core Motion](https://developer.apple.com/documentation/coremotion)
+- [@article@Foundation](https://developer.apple.com/documentation/foundation)
+- [@article@WebKit](https://developer.apple.com/documentation/webkit)

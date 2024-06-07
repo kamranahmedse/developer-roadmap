@@ -4,4 +4,4 @@ Learn to follow the best practices for writing maintainable and scalable HTML do
 
 Visit the following resources to learn more:
 
-- [HTML Best Practices](https://github.com/hail2u/html-best-practices)
+- [@opensource@HTML Best Practices](https://github.com/hail2u/html-best-practices)

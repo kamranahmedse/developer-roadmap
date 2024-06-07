@@ -14,4 +14,4 @@ Note that the union type uses the `|` operator that defines a variable which can
 
 Learn more from the following links:
 
-- [Intersection Types in TypeScript](https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/)
+- [@article@Intersection Types in TypeScript](https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/)

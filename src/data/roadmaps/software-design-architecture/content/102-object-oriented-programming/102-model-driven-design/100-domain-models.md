@@ -6,5 +6,5 @@ A domain model is used to provide a clear and consistent representation of the p
 
 Learn more from the following links:
 
-- [Overview of Domain model](https://en.wikipedia.org/wiki/Domain_model)
-- [Domain Driven Design](https://khalilstemmler.com/articles/categories/domain-driven-design/)
+- [@article@Overview of Domain model](https://en.wikipedia.org/wiki/Domain_model)
+- [@article@Domain Driven Design](https://khalilstemmler.com/articles/categories/domain-driven-design/)

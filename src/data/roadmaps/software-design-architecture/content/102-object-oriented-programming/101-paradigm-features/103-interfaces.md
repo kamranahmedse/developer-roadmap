@@ -6,4 +6,4 @@ Interfaces are used to define a common behavior for a group of related classes, 
 
 Learn more from the following resources:
 
-- [Fundamental concepts: What's an Interface?](https://www.youtube.com/watch?v=o1jBgdhQsGo)
+- [@video@Fundamental concepts: What's an Interface?](https://www.youtube.com/watch?v=o1jBgdhQsGo)

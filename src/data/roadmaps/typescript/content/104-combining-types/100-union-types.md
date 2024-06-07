@@ -12,4 +12,4 @@ function combine(input1: string | number, input2: string | number) {
 
 Learn more from the following links:
 
-- [Union Types in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
+- [@article@Union Types in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)

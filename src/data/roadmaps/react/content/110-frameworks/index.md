@@ -4,5 +4,5 @@ Server-side rendering (SSR) is a technique for rendering a JavaScript applicatio
 
 There are several frameworks and libraries available for server-side rendering React applications, most common being:
 
-- [Next.js](https://nextjs.org/)
-- [Remix](https://remix.run/)
+- [@article@Next.js](https://nextjs.org/)
+- [@article@Remix](https://remix.run/)

@@ -4,4 +4,4 @@ A `trait` definition in Rust is a way to define a set of behaviors necessary for
 
 Visit the following resources to learn more:
 
-- [Rust by Example: Traits](https://doc.rust-lang.org/rust-by-example/trait.html)
+- [@article@Rust by Example: Traits](https://doc.rust-lang.org/rust-by-example/trait.html)

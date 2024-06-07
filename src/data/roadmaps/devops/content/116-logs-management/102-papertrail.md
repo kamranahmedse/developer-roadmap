@@ -4,6 +4,6 @@ Papertrail is a leading centralized log management solution for capturing, stori
 
 Visit the following resources to learn more:
 
-- [Papertrail Website](https://www.papertrail.com/)
-- [Official Guides](https://www.papertrail.com/solution/guides/)
-- [Official Blog](https://www.papertrail.com/blog/)
+- [@official@Papertrail Website](https://www.papertrail.com/)
+- [@official@Official Guides](https://www.papertrail.com/solution/guides/)
+- [@official@Official Blog](https://www.papertrail.com/blog/)

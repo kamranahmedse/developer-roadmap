@@ -6,6 +6,6 @@ In ASP.NET, WebSockets can be used to create real-time, highly interactive web a
 
 To learn more, visit the following links:
 
-- [WebSockets support in ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/websockets?view=aspnetcore-7.0)
-- [Understanding WebSockets with ASP.NET](https://sahansera.dev/understanding-websockets-with-aspnetcore-5/)
-- [Writing a WebSocket server in ASP.NET](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_server)
+- [@article@WebSockets support in ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/websockets?view=aspnetcore-7.0)
+- [@article@Understanding WebSockets with ASP.NET](https://sahansera.dev/understanding-websockets-with-aspnetcore-5/)
+- [@article@Writing a WebSocket server in ASP.NET](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_server)

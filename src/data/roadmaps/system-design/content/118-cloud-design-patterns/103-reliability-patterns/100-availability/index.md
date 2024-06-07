@@ -4,4 +4,4 @@ Availability is measured as a percentage of uptime, and defines the proportion o
 
 To learn more visit the following links:
 
-- [Availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#availability)
+- [@article@Availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#availability)

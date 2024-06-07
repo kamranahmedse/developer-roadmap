@@ -4,5 +4,5 @@ Rolling Updates is a deployment strategy in Kubernetes for deploying new version
 
 Learn more from the following resources:
 
-- [Rolling Back a Deployment - Docs](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
-- [Kubernetes Rolling Update | Rollback Deployment](https://www.youtube.com/watch?v=xRifmrap7S8)
+- [@official@Rolling Back a Deployment - Docs](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
+- [@video@Kubernetes Rolling Update | Rollback Deployment](https://www.youtube.com/watch?v=xRifmrap7S8)

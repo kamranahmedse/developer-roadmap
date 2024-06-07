@@ -69,4 +69,4 @@ You can deploy a PostgreSQL application on Kubernetes by following these steps:
 
 By following these steps, you can successfully deploy and manage a PostgreSQL application using the Kubernetes deployment system.
 
-- [Run PostgreSQL. The Kubernetes way](https://cloudnative-pg.io/)
+- [@article@Run PostgreSQL. The Kubernetes way](https://cloudnative-pg.io/)

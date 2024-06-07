@@ -4,5 +4,5 @@ CQRS (Segregation of Responsibility for Command Queries) is an architecture patt
 
 Visit the following resources to learn more:
 
-- [CQRS](https://martinfowler.com/bliki/CQRS.html)
-- [Introduction to CQRS](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+- [@article@CQRS](https://martinfowler.com/bliki/CQRS.html)
+- [@article@Introduction to CQRS](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)

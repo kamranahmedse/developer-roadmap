@@ -4,6 +4,6 @@ An operating system is a main program on computer, that governs all other applic
 
 Visit the following resources to learn more:
 
-- [Operating System - Overview](https://www.tutorialspoint.com/operating_system/os_overview.htm)
-- [Operating System Concepts](https://codex.cs.yale.edu/avi/os-book/OS10/index.html)
-- [Operating System Basics ](https://www.youtube.com/watch?v=9GDX-IyZ_C8)
+- [@article@Operating System - Overview](https://www.tutorialspoint.com/operating_system/os_overview.htm)
+- [@article@Operating System Concepts](https://codex.cs.yale.edu/avi/os-book/OS10/index.html)
+- [@video@Operating System Basics ](https://www.youtube.com/watch?v=9GDX-IyZ_C8)

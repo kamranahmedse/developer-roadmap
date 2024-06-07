@@ -4,4 +4,4 @@ Thanks to its popularity, Vue has been enriched by a vast ecosystem of plugins a
 
 Visit the following resources to learn more:
 
-- [Awesome Vue.js](https://github.com/vuejs/awesome-vue)
+- [@opensource@Awesome Vue.js](https://github.com/vuejs/awesome-vue)

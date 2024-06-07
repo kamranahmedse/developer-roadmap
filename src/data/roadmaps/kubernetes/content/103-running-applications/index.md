@@ -4,5 +4,5 @@ For running application in a Kubernetes cluster, you need to define Kubernetes o
 
 Learn more from the following link:
 
-- [Run Application - Documentation](https://kubernetes.io/docs/tasks/run-application/)
-- [Kubernetes Tutorial | Run & Deploy Spring Boot Application](https://www.youtube.com/watch?v=7o7e8OAAWyg)
+- [@official@Run Application - Documentation](https://kubernetes.io/docs/tasks/run-application/)
+- [@video@Kubernetes Tutorial | Run & Deploy Spring Boot Application](https://www.youtube.com/watch?v=7o7e8OAAWyg)

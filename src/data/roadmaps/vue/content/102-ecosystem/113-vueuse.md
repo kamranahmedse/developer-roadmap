@@ -4,5 +4,5 @@ VueUse is a collection of utility functions based on Composition API. It has ove
 
 Visit the following resources to learn more:
 
-- [Official Website - VueUse](https://vueuse.org/)
+- [@official@Official Website - VueUse](https://vueuse.org/)
 

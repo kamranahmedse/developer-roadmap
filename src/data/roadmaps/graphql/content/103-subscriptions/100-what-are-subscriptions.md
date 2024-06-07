@@ -6,4 +6,4 @@ Subscriptions are defined on the server and are structured similar to queries an
 
 To learn more, visit the following links:
 
-- [How GraphQL Subscriptions Work?](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)
+- [@article@How GraphQL Subscriptions Work?](https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql)

@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
 
-- [Learn Algorithms](https://leetcode.com/explore/learn/)
-- [Leetcode - Study Plans](https://leetcode.com/studyplan/)
-- [Algorithms Specialization](https://imp.i384100.net/5gqv4n)
+- [@article@Learn Algorithms](https://leetcode.com/explore/learn/)
+- [@article@Leetcode - Study Plans](https://leetcode.com/studyplan/)
+- [@article@Algorithms Specialization](https://imp.i384100.net/5gqv4n)

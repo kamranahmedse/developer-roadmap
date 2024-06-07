@@ -4,4 +4,4 @@ It is based on the assumption that every system should take care of a concern in
 
 Visit the following resources to learn more:
 
-- [Toptal Developers Website](https://www.toptal.com/data-science/data-warehouse-concepts-principles)
+- [@article@Toptal Developers Website](https://www.toptal.com/data-science/data-warehouse-concepts-principles)

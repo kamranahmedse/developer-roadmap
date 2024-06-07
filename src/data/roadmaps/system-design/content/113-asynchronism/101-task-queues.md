@@ -6,4 +6,4 @@ Tasks queues receive tasks and their related data, runs them, then delivers thei
 
 To learn more, visit the following links:
 
-- [Celery - Distributed Task Queue](https://docs.celeryq.dev/en/stable/)
+- [@article@Celery - Distributed Task Queue](https://docs.celeryq.dev/en/stable/)

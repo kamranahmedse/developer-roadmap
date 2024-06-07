@@ -11,4 +11,4 @@ When a client sends a query or mutation to a GraphQL server, the server performs
 
 Learn more from the following links:
 
-- [Get Started with GraphQL](https://graphql.org/learn/)
+- [@official@Get Started with GraphQL](https://graphql.org/learn/)

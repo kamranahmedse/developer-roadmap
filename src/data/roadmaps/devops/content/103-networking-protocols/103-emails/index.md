@@ -4,4 +4,4 @@ Electronic mail, commonly shortened to “email,” is a communication method th
 
 Visit the following resources to learn more:
 
-- [What is an email?](https://www.cloudflare.com/learning/email-security/what-is-email/)
+- [@article@What is an email?](https://www.cloudflare.com/learning/email-security/what-is-email/)

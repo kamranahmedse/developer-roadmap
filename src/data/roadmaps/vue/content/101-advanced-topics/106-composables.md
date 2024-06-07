@@ -6,5 +6,5 @@ When building frontend applications, we often need to reuse logic for common tas
 
 Visit the following resources to learn more:
 
-- [Vue.js Composables](https://vuejs.org/guide/reusability/composables.html)
-- [What is a Composable? (Vue 3)](https://www.youtube.com/watch?v=h8yveYCbFQM)
+- [@article@Vue.js Composables](https://vuejs.org/guide/reusability/composables.html)
+- [@video@What is a Composable? (Vue 3)](https://www.youtube.com/watch?v=h8yveYCbFQM)

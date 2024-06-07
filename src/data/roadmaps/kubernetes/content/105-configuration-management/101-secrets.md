@@ -4,6 +4,6 @@ Kubernetes secrets store sensitive data such as passwords, tokens, and API keys 
 
 Lear more from the following links:
 
-- [Documentation - Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
-- [Kubernetes Secrets in 5 Minutes!](https://www.youtube.com/watch?v=cQAEK9PBY8U)
-- [Kubernetes Secrets Management: 3 Approaches, 9 Best Practices](https://thenewstack.io/kubernetes-secrets-management-3-approaches-9-best-practices/)
+- [@official@Documentation - Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
+- [@video@Kubernetes Secrets in 5 Minutes!](https://www.youtube.com/watch?v=cQAEK9PBY8U)
+- [@article@Kubernetes Secrets Management: 3 Approaches, 9 Best Practices](https://thenewstack.io/kubernetes-secrets-management-3-approaches-9-best-practices/)

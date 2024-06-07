@@ -4,6 +4,6 @@ VuePress is composed of two parts: a minimalistic static site generator (opens n
 
 Visit the following resources to learn more:
 
-- [Official Website](https://vuepress.vuejs.org/)
-- [Official Docs for Getting Started](https://vuepress.vuejs.org/guide/getting-started.html)
-- [Introduction to VuePress](https://www.youtube.com/watch?v=lIv1ItUzktc)
+- [@article@Official Website](https://vuepress.vuejs.org/)
+- [@article@Official Docs for Getting Started](https://vuepress.vuejs.org/guide/getting-started.html)
+- [@video@Introduction to VuePress](https://www.youtube.com/watch?v=lIv1ItUzktc)

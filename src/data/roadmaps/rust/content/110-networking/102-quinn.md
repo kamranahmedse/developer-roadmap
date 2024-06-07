@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: quinn](https://docs.rs/quinn/latest/quinn/)
+- [@article@Docs.rs: quinn](https://docs.rs/quinn/latest/quinn/)

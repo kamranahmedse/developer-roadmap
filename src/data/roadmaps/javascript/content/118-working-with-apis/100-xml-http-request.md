@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
-- [Network request - XMLHttpRequest](https://javascript.info/xmlhttprequest)
-- [W3Schools](https://www.w3schools.com/xml/xml_http.asp)
+- [@article@Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+- [@article@Network request - XMLHttpRequest](https://javascript.info/xmlhttprequest)
+- [@article@W3Schools](https://www.w3schools.com/xml/xml_http.asp)

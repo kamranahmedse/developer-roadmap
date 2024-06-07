@@ -5,4 +5,4 @@ v-model is a directive that allows you to create two-way data bindings on form i
 
 Visit the following resources to learn more:
 
-- [Vue.js Guide](https://vuejs.org/guide/components/v-model.html#component-v-model)
+- [@article@Vue.js Guide](https://vuejs.org/guide/components/v-model.html#component-v-model)

@@ -4,6 +4,6 @@ In Rust, **mocking** is a process that lets you create fake functions, objects, 
 
 Visit the following resources to learn more:
 
-- [Docs.rs: mockito](https://docs.rs/mockito/latest/mockito/)
-- [Docs.rs: mockall](https://docs.rs/mockall/latest/mockall/)
-- [Docs.rs: mockall_double](https://docs.rs/mockall_double/latest/mockall_double/)
+- [@article@Docs.rs: mockito](https://docs.rs/mockito/latest/mockito/)
+- [@article@Docs.rs: mockall](https://docs.rs/mockall/latest/mockall/)
+- [@article@Docs.rs: mockall_double](https://docs.rs/mockall_double/latest/mockall_double/)

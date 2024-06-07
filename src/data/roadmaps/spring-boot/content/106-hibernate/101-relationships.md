@@ -11,6 +11,6 @@ Here are the four types of relationships we can have between objects in Hibernat
 
 Visit the following links for more information:
 
-- [Hibernate Relationships In Depth](https://www.java4s.com/hibernate/hibernate-relationships-in-depth/)
-- [Guide to JPA with Hibernate - Relationship Mapping](https://stackabuse.com/a-guide-to-jpa-with-hibernate-relationship-mapping/)
-- [Hibernate Mapping](https://dzone.com/articles/hibernate-mapping)
+- [@article@Hibernate Relationships In Depth](https://www.java4s.com/hibernate/hibernate-relationships-in-depth/)
+- [@article@Guide to JPA with Hibernate - Relationship Mapping](https://stackabuse.com/a-guide-to-jpa-with-hibernate-relationship-mapping/)
+- [@article@Hibernate Mapping](https://dzone.com/articles/hibernate-mapping)

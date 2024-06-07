@@ -4,4 +4,4 @@
 
 Learn more from the following links:
 
-- [Hashset](https://doc.rust-lang.org/rust-by-example/std/hash/hashset.html)
+- [@article@Hashset](https://doc.rust-lang.org/rust-by-example/std/hash/hashset.html)

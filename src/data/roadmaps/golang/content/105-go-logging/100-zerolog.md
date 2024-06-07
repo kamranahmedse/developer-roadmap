@@ -6,4 +6,4 @@ Zerolog's API is designed to provide both a great developer experience and stunn
 
 Visit the following resources to learn more:
 
-- [GitHub Repository](https://github.com/rs/zerolog)
+- [@opensource@GitHub Repository](https://github.com/rs/zerolog)

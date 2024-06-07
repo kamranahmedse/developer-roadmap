@@ -4,4 +4,4 @@ After an update is made to the data, it is not guaranteed that any subsequent re
 
 To learn more, visit the following links:
 
-- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)
+- [@article@Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)

@@ -5,5 +5,5 @@ The main objectives of database design in DBMS are to produce logical and physic
 
 Visit the following resources to learn more:
 
-- [Database design basics](https://support.microsoft.com/en-us/office/database-design-basics-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5)
-- [Database Design Course](https://www.youtube.com/watch?v=ztHopE5Wnpc)
+- [@article@Database design basics](https://support.microsoft.com/en-us/office/database-design-basics-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5)
+- [@video@Database Design Course](https://www.youtube.com/watch?v=ztHopE5Wnpc)

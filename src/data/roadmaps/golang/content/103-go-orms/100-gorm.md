@@ -4,6 +4,6 @@ The GORM is fantastic ORM library for Golang, aims to be developer friendly. It 
 
 Visit the following resources to learn more:
 
-- [Gorm](https://gorm.io/docs/index.html)
-- [Gorm Package](https://pkg.go.dev/gorm.io/gorm)
-- [GORM And MYSQL](https://youtu.be/1E_YycpCsXw?si=_XeaElLMMChaEZw3)
+- [@official@Gorm](https://gorm.io/docs/index.html)
+- [@article@Gorm Package](https://pkg.go.dev/gorm.io/gorm)
+- [@video@GORM And MYSQL](https://youtu.be/1E_YycpCsXw?si=_XeaElLMMChaEZw3)

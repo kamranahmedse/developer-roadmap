@@ -4,5 +4,5 @@ Puppeteer is an open-source library for automating web browsers, similar to Sele
 
 For more information, visit the following links:
 
-- [Why use Puppeteer?](https://www.kiltandcode.com/puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/)
-- [Documentations of Puppeteer](https://www.puppeteersharp.com/)
+- [@article@Why use Puppeteer?](https://www.kiltandcode.com/puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/)
+- [@article@Documentations of Puppeteer](https://www.puppeteersharp.com/)

@@ -4,5 +4,5 @@ JavaScript Object Notation (JSON) is a standard text-based format for representi
 
 Visit the following resources to learn more:
 
-- [Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
-- [JSON Tutorial for Beginners](https://www.youtube.com/watch?v=iiADhChRriM)
+- [@article@Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+- [@video@JSON Tutorial for Beginners](https://www.youtube.com/watch?v=iiADhChRriM)

@@ -4,4 +4,4 @@
 
 Learn more from the following links:
 
-- [RwLock](https://doc.rust-lang.org/std/sync/struct.RwLock.html)
+- [@article@RwLock](https://doc.rust-lang.org/std/sync/struct.RwLock.html)

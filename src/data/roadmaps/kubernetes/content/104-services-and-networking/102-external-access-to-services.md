@@ -4,6 +4,6 @@ External access to Kubernetes (k8s) Services allows external clients to access p
 
 Learn more from the following links:
 
-- [How do I provide external access to Kubernetes services](https://www.youtube.com/watch?v=iBYTFpoXx24)
-- [Ingress - Documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-- [Kubernetes Ingress for Beginners](https://thenewstack.io/kubernetes-ingress-for-beginners/)
+- [@video@How do I provide external access to Kubernetes services](https://www.youtube.com/watch?v=iBYTFpoXx24)
+- [@official@Ingress - Documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [@article@Kubernetes Ingress for Beginners](https://thenewstack.io/kubernetes-ingress-for-beginners/)

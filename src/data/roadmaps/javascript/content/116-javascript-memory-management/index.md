@@ -4,5 +4,5 @@ Low-level languages like C, have manual memory management primitives such as `ma
 
 Visit the following resources to learn more:
 
-- [JavaScript Garbage Collection](https://javascript.info/garbage-collection)
-- [Memory Management in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
+- [@article@JavaScript Garbage Collection](https://javascript.info/garbage-collection)
+- [@article@Memory Management in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)

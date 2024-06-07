@@ -4,5 +4,5 @@ Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes 
 
 Visit the following resources to learn more:
 
-- [Rust Programming Language](https://www.rust-lang.org/)
-- [How to write and deploy a smart contract in Rust](https://docs.near.org/tutorials/nfts/introduction)
+- [@article@Rust Programming Language](https://www.rust-lang.org/)
+- [@article@How to write and deploy a smart contract in Rust](https://docs.near.org/tutorials/nfts/introduction)

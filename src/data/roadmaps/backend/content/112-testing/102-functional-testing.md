@@ -5,5 +5,5 @@ It contrasts with non-functional testing, which includes performance, load, scal
 
 Visit the following resources to learn more:
 
-- [What is Functional Testing?](https://www.guru99.com/functional-testing.html)
-- [Functional Testing vs Non-Functional Testing](https://youtu.be/j_79AXkG4PY)
+- [@article@What is Functional Testing?](https://www.guru99.com/functional-testing.html)
+- [@video@Functional Testing vs Non-Functional Testing](https://youtu.be/j_79AXkG4PY)

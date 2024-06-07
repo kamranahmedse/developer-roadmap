@@ -4,4 +4,4 @@ The directive `v-if` is used to conditionally render a block. The block will onl
 
 Visit the following resources to learn more:
 
-- [Conditional Rendering](https://vuejs.org/guide/essentials/conditional.html)
+- [@article@Conditional Rendering](https://vuejs.org/guide/essentials/conditional.html)

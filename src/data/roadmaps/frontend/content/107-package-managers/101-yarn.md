@@ -4,6 +4,6 @@ Yarn is a software packaging system developed in 2016 by Facebook for Node.js Ja
 
 Visit the following resources to learn more:
 
-- [Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
-- [Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)
-- [Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
+- [@article@Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+- [@article@Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)
+- [@video@Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)

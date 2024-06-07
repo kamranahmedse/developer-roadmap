@@ -4,5 +4,5 @@ ng serve — This command builds, deploy, serves and every time watches your cod
 
 Visit the following resources to learn more:
 
-- [Ng serve - Angular.io](https://angular.io/cli/serve)
-- [Running a project with ng serve](https://www.youtube.com/watch?v=-w-RfHcLt5U)
+- [@official@Ng serve - Angular.io](https://angular.io/cli/serve)
+- [@video@Running a project with ng serve](https://www.youtube.com/watch?v=-w-RfHcLt5U)

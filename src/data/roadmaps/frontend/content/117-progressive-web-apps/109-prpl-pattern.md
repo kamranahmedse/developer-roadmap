@@ -11,4 +11,4 @@ The PRPL pattern is designed to improve the perceived performance of a web page 
 
 Visit the following resources to learn more:
 
-- [PRPL Pattern - Google Developers](https://developers.google.com/web/fundamentals/performance/prpl-pattern)
+- [@article@PRPL Pattern - Google Developers](https://developers.google.com/web/fundamentals/performance/prpl-pattern)

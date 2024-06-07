@@ -6,5 +6,5 @@ In ASP.NET, Travis CI can be used to automate various tasks related to the devel
 
 Visit the following links to learn more:
 
-- [How to use Travis CI to Deploy to Azure in ASP.NET](https://devblogs.microsoft.com/cse/2015/09/30/using-travis-ci-to-deploy-to-azure/)
-- [Concepts for Beginners of Travis CI in ASP.NET](https://docs.travis-ci.com/user/for-beginners/)
+- [@article@How to use Travis CI to Deploy to Azure in ASP.NET](https://devblogs.microsoft.com/cse/2015/09/30/using-travis-ci-to-deploy-to-azure/)
+- [@article@Concepts for Beginners of Travis CI in ASP.NET](https://docs.travis-ci.com/user/for-beginners/)

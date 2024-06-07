@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [pub.dev](https://pub.dev/)
-- [Using packages](https://docs.flutter.dev/development/packages-and-plugins/using-packages)
+- [@official@pub.dev](https://pub.dev/)
+- [@article@Using packages](https://docs.flutter.dev/development/packages-and-plugins/using-packages)

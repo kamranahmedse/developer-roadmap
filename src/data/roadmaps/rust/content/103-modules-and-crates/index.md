@@ -4,4 +4,4 @@ In Rust, a module is a namespace that contains definitions of functions or types
 
 Visit the following resources to learn more:
 
-- [Rust Book: Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
+- [@article@Rust Book: Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)

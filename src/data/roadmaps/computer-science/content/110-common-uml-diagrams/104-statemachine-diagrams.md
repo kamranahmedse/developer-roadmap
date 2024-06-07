@@ -4,6 +4,6 @@ State machine diagrams are used to show the different states an object can be in
 
 Visit the following resources to learn more:
 
-- [What is State Machine Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/)
-- [State Machine Diagram Tutorial](https://www.lucidchart.com/pages/uml-state-machine-diagram)
-- [State Machine Diagram](https://www.sciencedirect.com/topics/computer-science/state-machine-diagram)
+- [@article@What is State Machine Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/)
+- [@article@State Machine Diagram Tutorial](https://www.lucidchart.com/pages/uml-state-machine-diagram)
+- [@article@State Machine Diagram](https://www.sciencedirect.com/topics/computer-science/state-machine-diagram)

@@ -4,6 +4,6 @@ Spring Data JDBC is a part of the Spring Data project that provides support for 
 
 Visit the following links for more resources on spring data jdbc:
 
-- [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
-- [Spring Data JDBC - Reference Documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/)
-- [Introduction to Spring Data JDBC](https://www.baeldung.com/spring-data-jdbc-intro)
+- [@official@Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
+- [@article@Spring Data JDBC - Reference Documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/)
+- [@article@Introduction to Spring Data JDBC](https://www.baeldung.com/spring-data-jdbc-intro)

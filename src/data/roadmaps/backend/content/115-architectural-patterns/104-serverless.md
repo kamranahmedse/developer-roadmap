@@ -4,6 +4,6 @@ Serverless is an architecture in which a developer builds and runs applications 
 
 Visit the following resources to learn more:
 
-- [Serverless](https://www.ibm.com/cloud/learn/serverless)
-- [AWS Services](https://aws.amazon.com/serverless/)
-- [Serverless Computing in 100 Seconds](https://www.youtube.com/watch?v=W_VV2Fx32_Y&ab_channel=Fireship)
+- [@article@Serverless](https://www.ibm.com/cloud/learn/serverless)
+- [@article@AWS Services](https://aws.amazon.com/serverless/)
+- [@video@Serverless Computing in 100 Seconds](https://www.youtube.com/watch?v=W_VV2Fx32_Y&ab_channel=Fireship)

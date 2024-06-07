@@ -4,4 +4,4 @@ In Rust, `BTreeMap` is a generic collection that stores data in a sorted tree st
 
 Learn more from the following links:
 
-- [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html)
+- [@article@BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html)

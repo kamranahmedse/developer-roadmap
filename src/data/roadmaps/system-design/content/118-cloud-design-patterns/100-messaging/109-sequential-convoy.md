@@ -4,5 +4,5 @@ Sequential Convoy is a pattern that allows for the execution of a series of task
 
 Learn more from the following links:
 
-- [What is Sequential Convoy?](https://learn.microsoft.com/en-us/biztalk/core/sequential-convoys)
-- [Overview - Sequential Convoy pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy)
+- [@article@What is Sequential Convoy?](https://learn.microsoft.com/en-us/biztalk/core/sequential-convoys)
+- [@article@Overview - Sequential Convoy pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy)

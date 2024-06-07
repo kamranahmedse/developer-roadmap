@@ -4,5 +4,5 @@ Instrumentation is a critical part of the monitoring process. You can make meani
 
 Learn more from the following links:
 
-- [Instrumenting an application](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#instrumenting-an-application)
-- [Instrumenting using Open Telemetry](https://opentelemetry.io/docs/concepts/what-is-opentelemetry)
+- [@article@Instrumenting an application](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#instrumenting-an-application)
+- [@article@Instrumenting using Open Telemetry](https://opentelemetry.io/docs/concepts/what-is-opentelemetry)

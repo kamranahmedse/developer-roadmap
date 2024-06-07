@@ -4,4 +4,4 @@ Fluid is a template engine for .NET that is based on the Fluid template language
 
 To learn more, visit the following links:
 
-- [Overview of Fluid](https://github.com/sebastienros/fluid)
+- [@opensource@Overview of Fluid](https://github.com/sebastienros/fluid)

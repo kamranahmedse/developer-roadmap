@@ -6,4 +6,4 @@ In Flutter, the widgets in the app's widget tree represent the state of the app.
 
 Visit the following links:
 
-- [Using the Memory view](https://docs.flutter.dev/development/tools/devtools/memory)
+- [@article@Using the Memory view](https://docs.flutter.dev/development/tools/devtools/memory)

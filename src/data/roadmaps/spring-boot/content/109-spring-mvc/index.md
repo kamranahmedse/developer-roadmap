@@ -6,6 +6,6 @@ In Spring MVC, the application is divided into three main components: the Model,
 
 For more information, visit the following links:
 
-- [Spring MVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial)
-- [Spring - MVC Framework](https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
-- [Spring MVC Tutorial – Everything You Need To Know](https://www.edureka.co/blog/spring-mvc-tutorial/)
+- [@article@Spring MVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial)
+- [@article@Spring - MVC Framework](https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
+- [@article@Spring MVC Tutorial – Everything You Need To Know](https://www.edureka.co/blog/spring-mvc-tutorial/)

@@ -4,5 +4,5 @@ Processes and threads are the basic building blocks of a computer program. They 
 
 Visit the following resources to learn more:
 
-- [Whats the difference between Process and a Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
-- [Operating Systems and System Programming](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
+- [@article@Whats the difference between Process and a Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
+- [@article@Operating Systems and System Programming](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)

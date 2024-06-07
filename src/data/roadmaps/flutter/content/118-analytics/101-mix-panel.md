@@ -13,5 +13,5 @@ Some key features of Mixpanel for Flutter apps include:
 
 Learn more from the following links:
 
-- [Overview of Flutter Mixpanel](https://levelup.gitconnected.com/flutter-web-mixpanel-6046ffb664fb)
-- [Flutter Mixpanel Analytics Integration](https://medium.com/flutter-clan/flutter-mixpanel-analytics-integration-b5840b155f7b)
+- [@article@Overview of Flutter Mixpanel](https://levelup.gitconnected.com/flutter-web-mixpanel-6046ffb664fb)
+- [@article@Flutter Mixpanel Analytics Integration](https://medium.com/flutter-clan/flutter-mixpanel-analytics-integration-b5840b155f7b)

@@ -6,6 +6,6 @@ Graceful degradation is often used as an alternative to progressive enhancement,
 
 Visit the following resources to learn more:
 
-- [What is Graceful Degradation & Why Does it Matter?](https://blog.hubspot.com/website/graceful-degradation)
-- [Four Considerations When Designing Systems For Graceful Degradation](https://newrelic.com/blog/best-practices/design-software-for-graceful-degradation)
-- [The Art of Graceful Degradation](https://farfetchtechblog.com/en/blog/post/the-art-of-failure-ii-graceful-degradation/)
+- [@article@What is Graceful Degradation & Why Does it Matter?](https://blog.hubspot.com/website/graceful-degradation)
+- [@article@Four Considerations When Designing Systems For Graceful Degradation](https://newrelic.com/blog/best-practices/design-software-for-graceful-degradation)
+- [@article@The Art of Graceful Degradation](https://farfetchtechblog.com/en/blog/post/the-art-of-failure-ii-graceful-degradation/)

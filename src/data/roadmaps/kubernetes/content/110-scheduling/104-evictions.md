@@ -4,5 +4,5 @@ Evictions terminate or delete running pods from a node due to reasons like resou
 
 Learn more from the following links:
 
-- [Node-pressure Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/)
-- [API-initiated Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/)
+- [@official@Node-pressure Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/)
+- [@official@API-initiated Eviction](https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/)

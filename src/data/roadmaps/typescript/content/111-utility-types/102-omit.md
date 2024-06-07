@@ -28,4 +28,4 @@ const todoInfo: TodoInfo = {
 
 Learn more from the following links:
 
-- [Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)
+- [@article@Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)

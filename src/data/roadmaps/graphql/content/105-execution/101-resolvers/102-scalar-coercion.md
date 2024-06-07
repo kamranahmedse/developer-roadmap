@@ -6,4 +6,4 @@ Scalar coercion can be implemented in the resolvers by using the **GraphQLScalar
 
 Learn more from the following links:
 
-- [Get started with Scalar coercion](https://graphql.org/learn/execution/#scalar-coercion)
+- [@official@Get started with Scalar coercion](https://graphql.org/learn/execution/#scalar-coercion)

@@ -4,4 +4,4 @@ An undirected graph is graph, i.e., a set of objects (called vertices or nodes) 
 
 Visit the following resources to learn more:
 
-- [Undirected Graph](https://mathinsight.org/definition/undirected_graph)
+- [@article@Undirected Graph](https://mathinsight.org/definition/undirected_graph)

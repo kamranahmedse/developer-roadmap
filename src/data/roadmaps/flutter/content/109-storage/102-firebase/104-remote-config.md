@@ -15,4 +15,4 @@ You can use Remote Config to control the appearance of your app, change the beha
 
 Learn more from the following:
 
-- [Firebase Remote Config](https://www.youtube.com/watch?v=34ExOdNEMXI)
+- [@video@Firebase Remote Config](https://www.youtube.com/watch?v=34ExOdNEMXI)

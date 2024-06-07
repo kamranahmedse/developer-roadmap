@@ -8,9 +8,9 @@ A **Relational database** is a type of database that stores and provides access 
 
 Visit the following resources to learn more:
 
-- [Oracle: What is a Database?](https://www.oracle.com/database/what-is-database/)
-- [Prisma.io: What are Databases?](https://www.prisma.io/dataguide/intro/what-are-databases)
-- [Intro To Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
-- [What is Relational Database](https://youtu.be/OqjJjpjDRLc)
-- [NoSQL Explained](https://www.mongodb.com/nosql-explained)
-- [How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
+- [@article@Oracle: What is a Database?](https://www.oracle.com/database/what-is-database/)
+- [@article@Prisma.io: What are Databases?](https://www.prisma.io/dataguide/intro/what-are-databases)
+- [@article@Intro To Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
+- [@video@What is Relational Database](https://youtu.be/OqjJjpjDRLc)
+- [@article@NoSQL Explained](https://www.mongodb.com/nosql-explained)
+- [@video@How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)

@@ -6,6 +6,6 @@ Hangfire uses a storage backend, such as SQL Server or Redis, to persist the sta
 
 To learn more, visit the following links:
 
-- [Hangfire with ASP.NET Core](https://code-maze.com/hangfire-with-asp-net-core/)
-- [Intro to Hangfire](https://www.partech.nl/nl/publicaties/2021/05/a-beginners-guide-to-hangfire)
-- [How to use Hangfire with ASP.NET](https://blog.christian-schou.dk/how-to-use-hangfire-with-asp-net-core-5-0-api/)
+- [@article@Hangfire with ASP.NET Core](https://code-maze.com/hangfire-with-asp-net-core/)
+- [@article@Intro to Hangfire](https://www.partech.nl/nl/publicaties/2021/05/a-beginners-guide-to-hangfire)
+- [@article@How to use Hangfire with ASP.NET](https://blog.christian-schou.dk/how-to-use-hangfire-with-asp-net-core-5-0-api/)

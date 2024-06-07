@@ -8,4 +8,4 @@ Event sourcing is often used in conjunction with other patterns, such as Command
 
 Visit the following resources to learn more:
 
-- [Event Sourcing - Martin Fowler](https://martinfowler.com/eaaDev/EventSourcing.html)
+- [@article@Event Sourcing - Martin Fowler](https://martinfowler.com/eaaDev/EventSourcing.html)

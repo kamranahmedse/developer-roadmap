@@ -4,5 +4,5 @@ React 16.0 was released with an update to the React core algorithm. This new cor
 
 Visit the following resources to learn more:
 
-- [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
-- [Understanding React Fiber Architecture](https://dzone.com/articles/understanding-of-react-fiber-architecture)
+- [@opensource@React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
+- [@article@Understanding React Fiber Architecture](https://dzone.com/articles/understanding-of-react-fiber-architecture)

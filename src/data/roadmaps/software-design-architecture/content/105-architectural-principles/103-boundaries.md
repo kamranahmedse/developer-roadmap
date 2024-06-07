@@ -6,4 +6,4 @@ Boundaries are important because they define the points of interaction between d
 
 To learn more, visit the following links:
 
-- [Boundaries in Software Architecture](https://www.open.edu/openlearn/science-maths-technology/approaches-software-development/content-section-1.1.4)
+- [@article@Boundaries in Software Architecture](https://www.open.edu/openlearn/science-maths-technology/approaches-software-development/content-section-1.1.4)

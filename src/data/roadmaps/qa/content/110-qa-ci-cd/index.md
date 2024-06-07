@@ -6,6 +6,6 @@ Continuous Delivery is a software engineering method in which a team develops so
 
 Visit the following resources to learn more:
 
-- [What is CI/CD? Continuous Integration and Continuous Delivery](https://www.guru99.com/continuous-integration.html)
-- [Continuous Integration vs Delivery vs Deployment](https://www.guru99.com/continuous-integration-vs-delivery-vs-deployment.html)
-- [CI/CD Pipeline: Learn with Example](https://www.guru99.com/ci-cd-pipeline.html)
+- [@article@What is CI/CD? Continuous Integration and Continuous Delivery](https://www.guru99.com/continuous-integration.html)
+- [@article@Continuous Integration vs Delivery vs Deployment](https://www.guru99.com/continuous-integration-vs-delivery-vs-deployment.html)
+- [@article@CI/CD Pipeline: Learn with Example](https://www.guru99.com/ci-cd-pipeline.html)

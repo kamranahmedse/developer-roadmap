@@ -4,4 +4,4 @@ Monolithic Persistence refers to the use of a single, monolithic database to sto
 
 To learn more, visit the following links:
 
-- [Monolithic Persistence antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/monolithic-persistence/)
+- [@article@Monolithic Persistence antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/monolithic-persistence/)

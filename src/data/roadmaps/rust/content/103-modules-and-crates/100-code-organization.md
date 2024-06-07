@@ -4,5 +4,5 @@ In Rust, the fundamental structure for organizing your code is through using a *
 
 Visit the following resources to learn more:
 
-- [Rust by Example: Modules](https://doc.rust-lang.org/rust-by-example/mod.html)
-- [The Rust Reference: Namespaces](https://doc.rust-lang.org/reference/names/namespaces.html)
+- [@article@Rust by Example: Modules](https://doc.rust-lang.org/rust-by-example/mod.html)
+- [@article@The Rust Reference: Namespaces](https://doc.rust-lang.org/reference/names/namespaces.html)

@@ -6,6 +6,6 @@
 
 Visit the following resources to learn more:
 
-- [JavaScript Built-in Functions](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
-- [Built-in Methods in Javascript](https://dev.to/elpepebenitez/built-in-methods-in-javascript-4bll)
-- [Built-in Functions:](https://www.tutorialride.com/javascript/javascript-built-in-functions.htm)
+- [@article@JavaScript Built-in Functions](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
+- [@article@Built-in Methods in Javascript](https://dev.to/elpepebenitez/built-in-methods-in-javascript-4bll)
+- [@article@Built-in Functions:](https://www.tutorialride.com/javascript/javascript-built-in-functions.htm)

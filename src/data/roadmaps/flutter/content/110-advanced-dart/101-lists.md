@@ -12,5 +12,5 @@ These widgets allow you to display items in a scrolling list, a grid, or a combi
 
 Learn more from the following:
 
-- [List Class](https://api.flutter.dev/flutter/dart-core/List-class.html)
-- [Dart Programming – List](https://www.geeksforgeeks.org/dart-programming-list/)
+- [@article@List Class](https://api.flutter.dev/flutter/dart-core/List-class.html)
+- [@article@Dart Programming – List](https://www.geeksforgeeks.org/dart-programming-list/)

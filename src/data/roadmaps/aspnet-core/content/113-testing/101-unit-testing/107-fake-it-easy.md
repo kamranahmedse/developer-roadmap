@@ -4,5 +4,5 @@ FakeItEasy is an open-source library for .NET that allows developers to create f
 
 Visit the following links to learn more:
 
-- [Easy mocking in C# code with FakeItEasy library](https://devislandblog.wordpress.com/2018/05/09/easy-mocking-in-c-code-with-fakeiteasy-library/)
-- [FakeItEasy when testing ASP.NET Core controllers](https://stackoverflow.com/questions/56170818/how-to-fake-an-interface-method-dynamically-with-fakeiteasy-when-testing-asp-net)
+- [@article@Easy mocking in C# code with FakeItEasy library](https://devislandblog.wordpress.com/2018/05/09/easy-mocking-in-c-code-with-fakeiteasy-library/)
+- [@article@FakeItEasy when testing ASP.NET Core controllers](https://stackoverflow.com/questions/56170818/how-to-fake-an-interface-method-dynamically-with-fakeiteasy-when-testing-asp-net)

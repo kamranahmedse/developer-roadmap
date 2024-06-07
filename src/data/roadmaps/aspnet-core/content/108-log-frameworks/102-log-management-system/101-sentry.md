@@ -6,6 +6,6 @@ In an ASP.NET application, Sentry can be used to capture and track errors that o
 
 For more information, visit the following links:
 
-- [Sentry Documentation in .NET](https://docs.sentry.io/platforms/dotnet/)
-- [ASP.NET and Sentry](https://docs.sentry.io/platforms/dotnet/guides/aspnetcore/)
-- [Usage of Sentry in ASP.NET](https://docs.sentry.io/platforms/dotnet/guides/aspnetcore/usage/)
+- [@article@Sentry Documentation in .NET](https://docs.sentry.io/platforms/dotnet/)
+- [@article@ASP.NET and Sentry](https://docs.sentry.io/platforms/dotnet/guides/aspnetcore/)
+- [@article@Usage of Sentry in ASP.NET](https://docs.sentry.io/platforms/dotnet/guides/aspnetcore/usage/)

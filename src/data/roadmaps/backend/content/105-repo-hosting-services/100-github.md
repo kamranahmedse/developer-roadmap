@@ -4,11 +4,11 @@ GitHub is a provider of Internet hosting for software development and version co
 
 Visit the following resources to learn more:
 
-- [GitHub Website](https://github.com)
-- [GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
-- [How to Use Git in a Professional Dev Team](https://ooloo.io/project/github-flow)
-- [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
-- [Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)
-- [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
-- [Git and GitHub - CS50 Beyond 2019](https://www.youtube.com/watch?v=eulnSXkhE7I)
-- [Learn Git Branching](https://learngitbranching.js.org/?locale=en_us)
+- [@opensource@GitHub Website](https://github.com)
+- [@article@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
+- [@article@How to Use Git in a Professional Dev Team](https://ooloo.io/project/github-flow)
+- [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
+- [@video@Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)
+- [@video@Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [@video@Git and GitHub - CS50 Beyond 2019](https://www.youtube.com/watch?v=eulnSXkhE7I)
+- [@article@Learn Git Branching](https://learngitbranching.js.org/?locale=en_us)

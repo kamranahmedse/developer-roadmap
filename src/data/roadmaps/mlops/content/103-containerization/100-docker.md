@@ -4,6 +4,6 @@ Docker is a platform for working with containerized applications. Among its feat
 
 Visit the following resources to learn more:
 
-- [Docker Documentation](https://docs.docker.com/)
-- [Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
-- [Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)
+- [@article@Docker Documentation](https://docs.docker.com/)
+- [@video@Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
+- [@video@Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)

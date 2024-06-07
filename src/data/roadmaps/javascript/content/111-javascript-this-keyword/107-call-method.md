@@ -4,4 +4,4 @@ The `call()` method calls the function with a reference to the aspire object to 
 
 Visit the following resources to learn more:
 
-- [call() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+- [@article@call() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)

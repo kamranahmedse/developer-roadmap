@@ -4,10 +4,10 @@ Role-Based Access Control (RBAC) is a method of controlling access to Kubernetes
 
 Learn more from the following resources:
 
-- [Role Based Access Control Good Practices](https://kubernetes.io/docs/concepts/security/rbac-good-practices/)
-- [Understand Role Based Access Control in Kubernetes](https://www.youtube.com/watch?v=G3R24JSlGjY)
-- [A Primer on Kubernetes Access Control](https://thenewstack.io/a-primer-on-kubernetes-access-control/)
-- [A Practical Approach to Understanding Kubernetes Authorization](https://thenewstack.io/a-practical-approach-to-understanding-kubernetes-authorization/)
-- [3 Realistic Approaches to Kubernetes RBAC](https://thenewstack.io/three-realistic-approaches-to-kubernetes-rbac/)
-- [Role-Based Access Control: Five Common Authorization Patterns](https://thenewstack.io/role-based-access-control-five-common-authorization-patterns/)
-- [Securing Kubernetes and Other Resources at Scale Using RBAC](https://thenewstack.io/securing-kubernetes-and-other-resources-at-scale-using-rbac/)
+- [@official@Role Based Access Control Good Practices](https://kubernetes.io/docs/concepts/security/rbac-good-practices/)
+- [@video@Understand Role Based Access Control in Kubernetes](https://www.youtube.com/watch?v=G3R24JSlGjY)
+- [@article@A Primer on Kubernetes Access Control](https://thenewstack.io/a-primer-on-kubernetes-access-control/)
+- [@article@A Practical Approach to Understanding Kubernetes Authorization](https://thenewstack.io/a-practical-approach-to-understanding-kubernetes-authorization/)
+- [@article@3 Realistic Approaches to Kubernetes RBAC](https://thenewstack.io/three-realistic-approaches-to-kubernetes-rbac/)
+- [@article@Role-Based Access Control: Five Common Authorization Patterns](https://thenewstack.io/role-based-access-control-five-common-authorization-patterns/)
+- [@article@Securing Kubernetes and Other Resources at Scale Using RBAC](https://thenewstack.io/securing-kubernetes-and-other-resources-at-scale-using-rbac/)

@@ -4,4 +4,4 @@ Directives in GraphQL are a way to modify the execution of a query or a field. T
 
 To learn more, visit the following links:
 
-- [Directives in GraphQL](https://graphql.org/learn/queries/#directives)
+- [@official@Directives in GraphQL](https://graphql.org/learn/queries/#directives)

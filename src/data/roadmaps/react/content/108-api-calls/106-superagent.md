@@ -4,5 +4,5 @@ Small progressive client-side HTTP request library, and Node.js module with the 
 
 Visit the following resources to learn more:
 
-- [Official Website](https://ladjs.github.io/superagent)
-- [GitHub Repository](https://github.com/visionmedia/superagent)
+- [@article@Official Website](https://ladjs.github.io/superagent)
+- [@opensource@GitHub Repository](https://github.com/visionmedia/superagent)

@@ -8,7 +8,7 @@ In distributed systems, it is often a trade-off between availability and consist
 
 Have a look at the following resources to learn more:
 
-- [CAP Theorem](https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s)
-- [CAP Theorem Revisited](https://robertgreiner.com/cap-theorem-revisited/)
-- [A plain english introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
-- [CAP FAQ](https://github.com/henryr/cap-faq)
+- [@video@CAP Theorem](https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s)
+- [@article@CAP Theorem Revisited](https://robertgreiner.com/cap-theorem-revisited/)
+- [@article@A plain english introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
+- [@opensource@CAP FAQ](https://github.com/henryr/cap-faq)

@@ -4,6 +4,6 @@ FluentValidation is an open-source library for .NET that provides a fluent, easy
 
 To learn more, visit the following links:
 
-- [Documentations of FluentValidation](https://docs.fluentvalidation.net/en/latest/)
-- [FluentValidation in ASP.NET Core](https://docs.fluentvalidation.net/en/latest/aspnet.html)
-- [Overview of FluentValidation in ASP.NET Core](https://code-maze.com/fluentvalidation-in-aspnet/)
+- [@article@Documentations of FluentValidation](https://docs.fluentvalidation.net/en/latest/)
+- [@article@FluentValidation in ASP.NET Core](https://docs.fluentvalidation.net/en/latest/aspnet.html)
+- [@article@Overview of FluentValidation in ASP.NET Core](https://code-maze.com/fluentvalidation-in-aspnet/)

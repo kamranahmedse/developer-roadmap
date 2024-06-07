@@ -6,4 +6,4 @@ Angular uses the Observer pattern which simply means — Observable objects are 
 
 Visit the following resources to learn more:
 
-- [Angular and Observable](https://medium.com/fuzzycloud/angular-and-observable-4bf890b2a282)
+- [@article@Angular and Observable](https://medium.com/fuzzycloud/angular-and-observable-4bf890b2a282)

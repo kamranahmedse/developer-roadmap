@@ -6,4 +6,4 @@ Software configuration management is a systems engineering process that tracks a
 
 Visit the following resources to learn more:
 
-- [What is configuration management?](https://www.atlassian.com/microservices/microservices-architecture/configuration-management)
+- [@article@What is configuration management?](https://www.atlassian.com/microservices/microservices-architecture/configuration-management)

@@ -6,6 +6,6 @@ In an ASP.NET application, Redis can be used as a caching mechanism to store fre
 
 To learn more, visit the following resources:
 
-- [Redis OM .NET](https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/)
-- [Caching in ASP.NET using Redis](https://www.codemag.com/Article/2205091/Distributed-Caching-in-ASP.NET-Core-6-Using-Redis-in-Azure)
-- [Getting started in Redis with .NET](https://docs.redis.com/latest/rs/references/client_references/client_csharp/)
+- [@official@Redis OM .NET](https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/)
+- [@article@Caching in ASP.NET using Redis](https://www.codemag.com/Article/2205091/Distributed-Caching-in-ASP.NET-Core-6-Using-Redis-in-Azure)
+- [@article@Getting started in Redis with .NET](https://docs.redis.com/latest/rs/references/client_references/client_csharp/)

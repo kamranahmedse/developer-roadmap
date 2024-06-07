@@ -4,6 +4,6 @@ The Spring MVC (Model-View-Controller) is a web application framework that is pa
 
 For more resources, visit the following resources:
 
-- [Spring MVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial)
-- [Spring – MVC Framework](https://www.geeksforgeeks.org/spring-mvc-framework/)
-- [Overview of Spring MVC Architecture](https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html)
+- [@article@Spring MVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial)
+- [@article@Spring – MVC Framework](https://www.geeksforgeeks.org/spring-mvc-framework/)
+- [@article@Overview of Spring MVC Architecture](https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html)

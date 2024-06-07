@@ -14,4 +14,4 @@ Object-oriented programming (OOP) is a programming paradigm that is based on the
 
 Learn more from the following resources:
 
-- [Overview of Object-Oriented Paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)
+- [@article@Overview of Object-Oriented Paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)

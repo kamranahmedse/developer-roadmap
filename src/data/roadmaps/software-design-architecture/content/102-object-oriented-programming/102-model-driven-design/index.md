@@ -6,4 +6,4 @@ The main advantage of using MDD is that it allows for a clear separation of conc
 
 Learn more from the following links:
 
-- [Model Driven Design – theory to practice](https://www.todaysoftmag.com/article/1529/model-driven-design-theory-to-practice)
+- [@article@Model Driven Design – theory to practice](https://www.todaysoftmag.com/article/1529/model-driven-design-theory-to-practice)

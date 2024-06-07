@@ -4,6 +4,6 @@ In TypeScript, we can define a variable that can have multiple types of values. 
 
 Visit the following resources to learn more:
 
-- [Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html)
-- [Union Type video for Beginners](https://www.youtube.com/watch?v=uxjpm4W5pCo)
-- [Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
+- [@article@Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html)
+- [@video@Union Type video for Beginners](https://www.youtube.com/watch?v=uxjpm4W5pCo)
+- [@article@Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)

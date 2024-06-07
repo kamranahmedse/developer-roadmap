@@ -10,5 +10,5 @@ The second part is explicit in all languages. The first and last parts are expli
 
 Visit the following resources to learn more:
 
-- [MDN docs - Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
-- [Lifecycle in Memory Management](https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c)
+- [@article@MDN docs - Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
+- [@article@Lifecycle in Memory Management](https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c)

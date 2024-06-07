@@ -4,4 +4,4 @@ Chokidar is a fast open-source file watcher for node. js. You give it a bunch of
 
 Visit the following resources to learn more:
 
-- [NPM Docs](https://www.npmjs.com/package/chokidar)
+- [@article@NPM Docs](https://www.npmjs.com/package/chokidar)

@@ -4,6 +4,6 @@ A cache server is a **dedicated network server** or service acting as a server t
 
 Visit the following resources to learn more:
 
-- [What is Caching?](https://www.cloudflare.com/en-gb/learning/cdn/what-is-caching/)
-- [What is Cache Server?](https://networkencyclopedia.com/cache-server/)
-- [Site Cache vs Browser Cache vs Server Cache](https://wp-rocket.me/blog/different-types-of-caching/)
+- [@article@What is Caching?](https://www.cloudflare.com/en-gb/learning/cdn/what-is-caching/)
+- [@article@What is Cache Server?](https://networkencyclopedia.com/cache-server/)
+- [@article@Site Cache vs Browser Cache vs Server Cache](https://wp-rocket.me/blog/different-types-of-caching/)

@@ -4,4 +4,4 @@ An API client is a set of tools and protocols that operate from an application o
 
 Visit the following resources to learn more:
 
-- [API Clients](https://rapidapi.com/blog/api-glossary/client/)
+- [@article@API Clients](https://rapidapi.com/blog/api-glossary/client/)

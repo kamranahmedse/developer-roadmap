@@ -4,6 +4,6 @@ Entity Framework Core (EF Core) is an open-source Object-Relational Mapping (ORM
 
 For more information, visit the following links:
 
-- [Example of Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
-- [Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/)
-- [What are the Basics of Entity Framework Core?](https://www.jetbrains.com/dotnet/guide/tutorials/basics/entity-framework-core/)
+- [@article@Example of Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+- [@article@Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/)
+- [@article@What are the Basics of Entity Framework Core?](https://www.jetbrains.com/dotnet/guide/tutorials/basics/entity-framework-core/)

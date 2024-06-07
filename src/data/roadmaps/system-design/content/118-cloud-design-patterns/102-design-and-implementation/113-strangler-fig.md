@@ -4,4 +4,4 @@ Incrementally migrate a legacy system by gradually replacing specific pieces of 
 
 To learn more, visit the following links:
 
-- [What is Strangler fig?](https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)
+- [@article@What is Strangler fig?](https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)

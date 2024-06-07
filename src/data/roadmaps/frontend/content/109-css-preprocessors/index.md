@@ -4,5 +4,5 @@ CSS Preprocessors are scripting languages that extend the default capabilities o
 
 Visit the following resources to learn more:
 
-- [CSS Preprocessors Explained](https://www.freecodecamp.org/news/css-preprocessors/)
-- [Why Use Preprocessors?](https://sherocommerce.com/what-is-a-css-preprocessors-why-use-them/)
+- [@article@CSS Preprocessors Explained](https://www.freecodecamp.org/news/css-preprocessors/)
+- [@article@Why Use Preprocessors?](https://sherocommerce.com/what-is-a-css-preprocessors-why-use-them/)

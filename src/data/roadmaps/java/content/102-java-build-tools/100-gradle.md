@@ -4,8 +4,8 @@ Gradle is an open-source build automation tool that helps software engineers to 
 
 Visit the following resources to learn more:
 
-- [Gradle](https://gradle.org/)
-- [Gradle Tutorial](https://youtu.be/kONQCIAcWeI)
-- [Working with Gradle](https://youtu.be/6V6G3RyxEMk)
-- [Gradle](https://www.javatpoint.com/gradle)
-- [Building Java Projects with Gradle](https://spring.io/guides/gs/gradle/)
+- [@official@Gradle](https://gradle.org/)
+- [@video@Gradle Tutorial](https://youtu.be/kONQCIAcWeI)
+- [@video@Working with Gradle](https://youtu.be/6V6G3RyxEMk)
+- [@article@Gradle](https://www.javatpoint.com/gradle)
+- [@article@Building Java Projects with Gradle](https://spring.io/guides/gs/gradle/)

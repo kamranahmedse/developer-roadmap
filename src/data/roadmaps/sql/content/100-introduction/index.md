@@ -13,6 +13,6 @@ SQL databases come in a number of forms, such as Oracle Database, Microsoft SQL 
 
 Learn more about SQL from the following resources:
 
-- [SQL Tutorial - Mode](https://mode.com/sql-tutorial/)
-- [SQL Tutorial](https://www.sqltutorial.org/)
-- [SQL Tutorial - W3Schools](https://www.w3schools.com/sql/default.asp)
+- [@article@SQL Tutorial - Mode](https://mode.com/sql-tutorial/)
+- [@article@SQL Tutorial](https://www.sqltutorial.org/)
+- [@article@SQL Tutorial - W3Schools](https://www.w3schools.com/sql/default.asp)

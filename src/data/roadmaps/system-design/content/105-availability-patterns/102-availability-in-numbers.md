@@ -50,5 +50,5 @@ If both `Foo` and `Bar` each had 99.9% availability, their total availability in
 
 To learn more, visit the following links:
 
-- [Availability in System Design](https://www.enjoyalgorithms.com/blog/availability-system-design-concept/)
-- [Uptime calculator: How much downtime corresponds to 99.9 % uptime](https://uptime.is/)
+- [@article@Availability in System Design](https://www.enjoyalgorithms.com/blog/availability-system-design-concept/)
+- [@article@Uptime calculator: How much downtime corresponds to 99.9 % uptime](https://uptime.is/)

@@ -4,5 +4,5 @@ DotLiquid is an open-source templating engine for .NET that is based on the Liqu
 
 To learn more, visit the following resources:
 
-- [Guide to DotLiquid](https://discoverdot.net/projects/dotliquid)
-- [What is DotLiquid in ASP.NET Core?](https://grandnode.medium.com/dotliquid-in-asp-net-core-e-commerce-platform-how-to-handle-message-templates-a6865be3a612)
+- [@article@Guide to DotLiquid](https://discoverdot.net/projects/dotliquid)
+- [@article@What is DotLiquid in ASP.NET Core?](https://grandnode.medium.com/dotliquid-in-asp-net-core-e-commerce-platform-how-to-handle-message-templates-a6865be3a612)

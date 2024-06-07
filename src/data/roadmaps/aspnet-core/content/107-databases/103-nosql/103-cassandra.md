@@ -6,6 +6,6 @@ Cassandra is a column-family store and it stores data in a structured format, us
 
 For more information, visit the following links:
 
-- [Introduction to Cassandra](https://www.tutorialspoint.com/cassandra/cassandra_introduction.htm)
-- [Overview of Cassandra in ASP.NET](https://www.spiceworks.com/tech/big-data/articles/what-is-cassandra/)
-- [Introduction to Apache Cassandra](https://www.geeksforgeeks.org/introduction-to-apache-cassandra/)
+- [@article@Introduction to Cassandra](https://www.tutorialspoint.com/cassandra/cassandra_introduction.htm)
+- [@article@Overview of Cassandra in ASP.NET](https://www.spiceworks.com/tech/big-data/articles/what-is-cassandra/)
+- [@article@Introduction to Apache Cassandra](https://www.geeksforgeeks.org/introduction-to-apache-cassandra/)

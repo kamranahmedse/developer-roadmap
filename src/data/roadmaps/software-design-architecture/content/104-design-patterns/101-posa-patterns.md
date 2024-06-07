@@ -11,5 +11,5 @@ POSA patterns are divided into four categories:
 
 Learn more from the following links:
 
-- [POSA Pattern Examples](https://www.youtube.com/watch?v=iYNa_KcWxCU)
-- [Overview of Pattern-Oriented Software Architecture](https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture)
+- [@video@POSA Pattern Examples](https://www.youtube.com/watch?v=iYNa_KcWxCU)
+- [@article@Overview of Pattern-Oriented Software Architecture](https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture)

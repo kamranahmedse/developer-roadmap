@@ -11,5 +11,5 @@ SOA provides four different service types:
 
 Visit the following resources to learn more:
 
-- [SOA Architecture By AWS](https://aws.amazon.com/what-is/service-oriented-architecture/)
-- [SOA Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/)
+- [@article@SOA Architecture By AWS](https://aws.amazon.com/what-is/service-oriented-architecture/)
+- [@article@SOA Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/)

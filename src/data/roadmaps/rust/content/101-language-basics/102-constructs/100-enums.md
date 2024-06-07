@@ -4,4 +4,4 @@ Enums, short for enumerations, allow you to define a type by enumerating its pos
 
 Learn more from the following links:
 
-- [Defining an Enum](https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html)
+- [@article@Defining an Enum](https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html)

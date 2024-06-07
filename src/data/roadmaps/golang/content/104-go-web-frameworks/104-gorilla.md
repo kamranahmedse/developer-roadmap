@@ -4,5 +4,5 @@ Gorilla is a web toolkit for the Go programming language that provides useful, c
 
 Visit the following resources to learn more:
 
-- [Github Repository](https://github.com/gorilla)
-- [Official Website](https://www.gorillatoolkit.org/)
+- [@opensource@Github Repository](https://github.com/gorilla)
+- [@article@Official Website](https://www.gorillatoolkit.org/)

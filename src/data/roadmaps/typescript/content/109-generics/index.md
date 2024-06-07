@@ -16,4 +16,4 @@ In this example, the `identity` function takes a single argument of any data typ
 
 Learn more from the following resources:
 
-- [Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)
+- [@article@Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)

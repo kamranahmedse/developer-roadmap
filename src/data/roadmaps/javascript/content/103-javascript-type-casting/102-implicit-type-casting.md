@@ -4,7 +4,7 @@ Implicit type conversion happens when the compiler or runtime automatically conv
 
 Visit the following resources to learn more:
 
-- [GeeksForGeeks - JavaScript Tutorials](https://www.geeksforgeeks.org/javascript-type-conversion/)
-- [W3Schools - JavaScript Tutorials](https://www.w3schools.com/js/js_type_conversion.asp)
-- [TutorialsPoint - JavaScript Tutorials](https://www.tutorialspoint.com/explain-typecasting-in-javascript)
-- [What you need to know about Javascripts Implicit Coercion](https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23)
+- [@article@GeeksForGeeks - JavaScript Tutorials](https://www.geeksforgeeks.org/javascript-type-conversion/)
+- [@article@W3Schools - JavaScript Tutorials](https://www.w3schools.com/js/js_type_conversion.asp)
+- [@article@TutorialsPoint - JavaScript Tutorials](https://www.tutorialspoint.com/explain-typecasting-in-javascript)
+- [@article@What you need to know about Javascripts Implicit Coercion](https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23)

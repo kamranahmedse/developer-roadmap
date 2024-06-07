@@ -39,4 +39,4 @@ In the above example, `source` prop is used to add the image URL, `style` prop f
 
 For more information and details, you can refer to the React Native docs:
 
-- [Image Background - React Native](https://reactnative.dev/docs/imagebackground)
+- [@article@Image Background - React Native](https://reactnative.dev/docs/imagebackground)

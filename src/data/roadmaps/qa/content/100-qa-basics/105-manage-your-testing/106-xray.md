@@ -6,4 +6,4 @@ Jira's aim is to help you improve the quality of your systems through effective 
 
 Visit the following resources to learn more:
 
-- [xRay - Getting Started](https://docs.getxray.app/display/XRAY/Getting+started)
+- [@article@xRay - Getting Started](https://docs.getxray.app/display/XRAY/Getting+started)

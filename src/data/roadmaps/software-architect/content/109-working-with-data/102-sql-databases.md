@@ -9,4 +9,4 @@ Examples of SQL Databases
 
 Visit the following resources to learn more:
 
-- [SQL Databases](https://www.openlogic.com/blog/what-sql-database)
+- [@article@SQL Databases](https://www.openlogic.com/blog/what-sql-database)

@@ -4,6 +4,6 @@ Integration testing is a broad category of tests where multiple software modules
 
 Visit the following resources to learn more:
 
-- [Integration Testing](https://www.guru99.com/integration-testing.html)
-- [How to Integrate and Test Your Tech Stack](https://thenewstack.io/how-to-integrate-and-test-your-tech-stack/)
-- [What is Integration Testing?](https://youtu.be/QYCaaNz8emY)
+- [@article@Integration Testing](https://www.guru99.com/integration-testing.html)
+- [@article@How to Integrate and Test Your Tech Stack](https://thenewstack.io/how-to-integrate-and-test-your-tech-stack/)
+- [@video@What is Integration Testing?](https://youtu.be/QYCaaNz8emY)

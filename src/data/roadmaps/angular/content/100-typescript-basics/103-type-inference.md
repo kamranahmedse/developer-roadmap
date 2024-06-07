@@ -4,5 +4,5 @@ In TypeScript, several places where `type inference` is used to provide type inf
 
 Visit the following resources to learn more:
 
-- [Type Inference - typescriptlang](https://www.typescriptlang.org/docs/handbook/type-inference.html)
-- [Type Inference video for Beginners](https://www.youtube.com/watch?v=3ui_st7rtfA)
+- [@article@Type Inference - typescriptlang](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+- [@video@Type Inference video for Beginners](https://www.youtube.com/watch?v=3ui_st7rtfA)

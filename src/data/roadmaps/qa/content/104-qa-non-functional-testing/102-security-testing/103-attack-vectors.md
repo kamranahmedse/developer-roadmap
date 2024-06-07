@@ -4,4 +4,4 @@ This metric reflects the context by which vulnerability exploitation is possible
 
 Visit the following resources to learn more:
 
-- [FIRST.org Website](https://www.first.org/cvss/v3.1/specification-document)
+- [@article@FIRST.org Website](https://www.first.org/cvss/v3.1/specification-document)

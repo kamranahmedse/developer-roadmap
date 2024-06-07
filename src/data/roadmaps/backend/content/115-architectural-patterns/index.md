@@ -4,4 +4,4 @@ An architectural pattern is a general, reusable solution to a commonly occurring
 
 Visit the following resources to learn more:
 
-- [Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
+- [@article@Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)

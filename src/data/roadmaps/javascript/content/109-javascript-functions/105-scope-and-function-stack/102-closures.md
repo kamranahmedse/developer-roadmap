@@ -4,5 +4,5 @@ Function closures are one of the most powerful, yet most misunderstood, concepts
 
 Visit the following resources to learn more:
 
-- [JavaScript Closures - The Simplest Explanation](https://www.codeguage.com/courses/js/functions-closures)
-- [JavaScript Closures Explained in 3 Minutes](https://medium.com/learning-new-stuff/javascript-closures-explained-in-3-minutes-5aae8dce2014)
+- [@article@JavaScript Closures - The Simplest Explanation](https://www.codeguage.com/courses/js/functions-closures)
+- [@article@JavaScript Closures Explained in 3 Minutes](https://medium.com/learning-new-stuff/javascript-closures-explained-in-3-minutes-5aae8dce2014)

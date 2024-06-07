@@ -8,7 +8,3 @@ Python is a multi-paradigm programming language, which means that it supports se
 - Aspect-oriented programming: This paradigm is based on the idea of separating cross-cutting concerns from the main functionality of a program. Python does not have built-in support for aspect-oriented programming, but it can be achieved using libraries or language extensions.
 
 Python's support for multiple paradigms makes it a versatile and flexible language, and it allows developers to choose the paradigm that best fits their needs.
-
-Visit the following resources to learn more:
-
-- [Programming Paradigms in Python](https://www.geeksforgeeks.org/programming-paradigms-in-python/)

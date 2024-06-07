@@ -4,5 +4,5 @@ Security Testing is a type of Software Testing that uncovers vulnerabilities, th
 
 Visit the following resources to learn more:
 
-- [What is Security Testing? Types with Example](https://www.guru99.com/what-is-security-testing.html)
-- [Security Testing: Types, Tools, and Best Practices](https://brightsec.com/blog/security-testing/)
+- [@article@What is Security Testing? Types with Example](https://www.guru99.com/what-is-security-testing.html)
+- [@article@Security Testing: Types, Tools, and Best Practices](https://brightsec.com/blog/security-testing/)

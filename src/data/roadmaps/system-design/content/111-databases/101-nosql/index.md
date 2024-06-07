@@ -10,5 +10,5 @@ BASE is often used to describe the properties of NoSQL databases. In comparison 
 
 Learn more from the following links:
 
-- [Brief of NOSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
-- [Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)
+- [@article@Brief of NOSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
+- [@video@Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)

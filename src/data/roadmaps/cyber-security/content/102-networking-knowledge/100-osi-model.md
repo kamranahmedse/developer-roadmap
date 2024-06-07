@@ -36,5 +36,5 @@ Each of these layers interacts with the adjacent layers to pass data packets bac
 
 In the next section, we will discuss network protocols and how they play an essential role in network communication and security.
 
-- [What is OSI Model?](https://www.youtube.com/watch?v=Ilk7UXzV_Qc&ab_channel=RealPars)
-- [Lecture - OSI Model](https://www.youtube.com/watch?v=0Rb8AkTEASw)
+- [@video@What is OSI Model?](https://www.youtube.com/watch?v=Ilk7UXzV_Qc&ab_channel=RealPars)
+- [@video@Lecture - OSI Model](https://www.youtube.com/watch?v=0Rb8AkTEASw)

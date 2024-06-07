@@ -86,4 +86,4 @@ WHERE id IN (SELECT DISTINCT user_id FROM orders);
 
 There's much more to explore with various types of queries, but this foundational knowledge will serve as a solid basis for further learning and experimentation.
 
-- [Querying a Table](https://www.postgresql.org/docs/current/tutorial-select.html)
+- [@official@Querying a Table](https://www.postgresql.org/docs/current/tutorial-select.html)

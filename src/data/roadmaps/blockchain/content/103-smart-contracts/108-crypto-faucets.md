@@ -6,5 +6,5 @@ Faucets are common in development environments where developers obtain testnet c
 
 Visit the following resources to learn more:
 
-- [What Is A Crypto Faucet?](https://academy.binance.com/en/articles/what-is-a-crypto-faucet)
-- [What are crypto faucets and how do they work?](https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work)
+- [@article@What Is A Crypto Faucet?](https://academy.binance.com/en/articles/what-is-a-crypto-faucet)
+- [@article@What are crypto faucets and how do they work?](https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work)

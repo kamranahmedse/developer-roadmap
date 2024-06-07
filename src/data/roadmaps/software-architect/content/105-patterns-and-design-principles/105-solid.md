@@ -10,5 +10,5 @@ SOLID is a set of principles applied to object-oriented design (OOD) to create m
 
 Visit the following resources to learn more:
 
-- [SOLID Principles](https://www.baeldung.com/solid-principles)
-- [SOLID: The First 5 Principles of Object Oriented Design](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
+- [@article@SOLID Principles](https://www.baeldung.com/solid-principles)
+- [@article@SOLID: The First 5 Principles of Object Oriented Design](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)

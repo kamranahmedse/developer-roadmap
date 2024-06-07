@@ -4,5 +4,5 @@ Axios is a promise-based HTTP Client for node.js and the browser. Used for makin
 
 Visit the following resources to learn more:
 
-- [Axios Official Documentations](https://axios-http.com/docs/intro)
-- [Axios Tutorial](https://www.youtube.com/watch?v=6LyagkoRWYA)
+- [@article@Axios Official Documentations](https://axios-http.com/docs/intro)
+- [@video@Axios Tutorial](https://www.youtube.com/watch?v=6LyagkoRWYA)

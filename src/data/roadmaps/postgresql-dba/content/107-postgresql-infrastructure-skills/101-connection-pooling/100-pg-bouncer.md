@@ -39,7 +39,7 @@ Finally, start the PgBouncer daemon to enable connection pooling.
 
 ## Useful Resources
 
-- [Official PgBouncer Documentation](https://www.pgbouncer.org)
-- [PostgreSQL Wiki - PgBouncer](https://wiki.postgresql.org/wiki/PgBouncer)
+- [@official@Official PgBouncer Documentation](https://www.pgbouncer.org)
+- [@article@PostgreSQL Wiki - PgBouncer](https://wiki.postgresql.org/wiki/PgBouncer)
 
 By using PgBouncer, you can efficiently manage connections to your PostgreSQL database and improve the scalability and performance of your application. Happy pooling!

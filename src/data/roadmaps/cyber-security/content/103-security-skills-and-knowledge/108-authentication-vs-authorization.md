@@ -6,9 +6,9 @@ To ensure cybersecurity, it's essential to understand the differences between tw
 
 **Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:
 
-- [Two-factor authentication (2FA)](https://authy.com/what-is-2fa/)
-- [Biometrics (fingerprint, facial recognition, etc.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5428991/)
-- [Security tokens or certificates](https://www.comodo.com/e-commerce/ssl-certificates/certificate.php)
+- [@article@Two-factor authentication (2FA)](https://authy.com/what-is-2fa/)
+- [@article@Biometrics (fingerprint, facial recognition, etc.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5428991/)
+- [@article@Security tokens or certificates](https://www.comodo.com/e-commerce/ssl-certificates/certificate.php)
 
 In simple terms, authentication answers the question, _"Who are you?"_
 
@@ -20,9 +20,9 @@ For example, a basic user may be authorized to view and edit their personal data
 
 Common methods of implementing authorization include:
 
-- [Role-based access control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
-- [Access Control Lists (ACLs)](https://en.wikipedia.org/wiki/Access-control_list)
-- [Attribute-based access control (ABAC)](https://en.wikipedia.org/wiki/Attribute-based_access_control)
+- [@article@Role-based access control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
+- [@article@Access Control Lists (ACLs)](https://en.wikipedia.org/wiki/Access-control_list)
+- [@article@Attribute-based access control (ABAC)](https://en.wikipedia.org/wiki/Attribute-based_access_control)
 
 In a nutshell, authorization answers the question, _"What are you allowed to do?"_
 

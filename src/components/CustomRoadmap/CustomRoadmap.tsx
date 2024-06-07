@@ -15,6 +15,9 @@ export const allowedLinkTypes = [
   'course',
   'website',
   'podcast',
+  'roadmap.sh',
+  'official',
+  'roadmap',
 ] as const;
 
 export type AllowedLinkTypes = (typeof allowedLinkTypes)[number];

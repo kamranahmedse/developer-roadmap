@@ -6,7 +6,7 @@ The name Kubernetes originates from Greek, meaning helmsman or pilot. K8s as an 
 
 Learn more from the following links:
 
-- [Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
-- [Tutorial - Kubernetes](https://www.youtube.com/watch?v=VnvRFRk_51k&t=1sn)
-- [What is Kubernetes?](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
-- [Kubernetes Overview & Essential Reading](https://thenewstack.io/kubernetes/)
+- [@official@Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+- [@video@Tutorial - Kubernetes](https://www.youtube.com/watch?v=VnvRFRk_51k&t=1sn)
+- [@article@What is Kubernetes?](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
+- [@article@Kubernetes Overview & Essential Reading](https://thenewstack.io/kubernetes/)

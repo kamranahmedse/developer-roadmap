@@ -16,5 +16,5 @@ Architectural patterns are a set of solutions that have been proven to work well
 
 Learn more from the following links:
 
-- [Overview - Architectural Pattern](https://en.wikipedia.org/wiki/Architectural_pattern)
-- [Architecture Patterns Used In Enterprise Software Development](https://www.youtube.com/watch?v=BrT3AO8bVQY)
+- [@article@Overview - Architectural Pattern](https://en.wikipedia.org/wiki/Architectural_pattern)
+- [@video@Architecture Patterns Used In Enterprise Software Development](https://www.youtube.com/watch?v=BrT3AO8bVQY)

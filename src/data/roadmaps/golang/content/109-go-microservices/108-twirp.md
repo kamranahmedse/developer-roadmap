@@ -6,5 +6,5 @@ Twirp is similar to gRPC, but without the custom HTTP server and transport imple
 
 Visit the following resources to learn more:
 
-- [GitHub Repository](https://github.com/twitchtv/twirp)
-- [Getting started](https://twitchtv.github.io/twirp/docs/intro.html)
+- [@opensource@GitHub Repository](https://github.com/twitchtv/twirp)
+- [@article@Getting started](https://twitchtv.github.io/twirp/docs/intro.html)

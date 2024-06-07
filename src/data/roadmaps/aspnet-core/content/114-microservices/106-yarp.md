@@ -4,5 +4,5 @@ YARP is a library to help create reverse proxy servers that are high-performance
 
 To learn more, visit the following links:
 
-- [Getting Started with YARP](https://microsoft.github.io/reverse-proxy/articles/getting-started.html)
-- [YARP: The .NET Reverse proxy](https://www.youtube.com/watch?v=1IqQkNcsqWE)
+- [@article@Getting Started with YARP](https://microsoft.github.io/reverse-proxy/articles/getting-started.html)
+- [@video@YARP: The .NET Reverse proxy](https://www.youtube.com/watch?v=1IqQkNcsqWE)

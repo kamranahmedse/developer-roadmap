@@ -25,4 +25,4 @@ VLANs play a crucial role in network security; however, they are not foolproof. 
 
 In summary, VLANs offer a flexible and secure way to manage and segment networks based on needs and requirements. By understanding their purpose, types, and security considerations, network administrators can efficiently use VLANs to improve overall network performance and security.
 
-- [VLAN Explained](https://www.youtube.com/watch?v=jC6MJTh9fRE)
+- [@video@VLAN Explained](https://www.youtube.com/watch?v=jC6MJTh9fRE)

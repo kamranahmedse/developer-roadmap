@@ -4,4 +4,4 @@ The Data Transfer Object Design Pattern is one of the enterprise application arc
 
 Learn more from the following links:
 
-- [Data Transfer Object pattern and Mappers](https://medium.com/@abdalrhmanalkraien/data-transfer-object-pattern-and-mapper-116508bc9df0)
+- [@article@Data Transfer Object pattern and Mappers](https://medium.com/@abdalrhmanalkraien/data-transfer-object-pattern-and-mapper-116508bc9df0)

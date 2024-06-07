@@ -4,7 +4,7 @@ Jasmine is a behavior-driven development framework for testing JavaScript code. 
 
 Visit the following resources to learn more:
 
-- [Official Website](https://jasmine.github.io/)
-- [Official Docs](https://jasmine.github.io/pages/docs_home.html)
-- [Official Repository](https://github.com/jasmine/jasmine)
-- [Javascript Unit Testing with Jasmine](https://www.youtube.com/watch?v=rw4KlxKEENQ)
+- [@article@Official Website](https://jasmine.github.io/)
+- [@article@Official Docs](https://jasmine.github.io/pages/docs_home.html)
+- [@opensource@Official Repository](https://github.com/jasmine/jasmine)
+- [@video@Javascript Unit Testing with Jasmine](https://www.youtube.com/watch?v=rw4KlxKEENQ)

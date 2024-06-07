@@ -4,4 +4,4 @@ Traits in Rust programming language define shared behaviors. They are a way to g
 
 Learn more from the following links:
 
-- [Traits: Defining Shared Behaviour](https://doc.rust-lang.org/book/ch10-02-traits.html)
+- [@article@Traits: Defining Shared Behaviour](https://doc.rust-lang.org/book/ch10-02-traits.html)

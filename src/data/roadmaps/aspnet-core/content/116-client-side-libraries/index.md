@@ -4,4 +4,4 @@ Client-side libraries in ASP.NET are libraries that are used to add functionalit
 
 Visit the following resources to learn more:
 
-- [How to use Client Side Library in ASP.NET Core](https://www.youtube.com/watch?v=VwqozSbQuec)
+- [@video@How to use Client Side Library in ASP.NET Core](https://www.youtube.com/watch?v=VwqozSbQuec)

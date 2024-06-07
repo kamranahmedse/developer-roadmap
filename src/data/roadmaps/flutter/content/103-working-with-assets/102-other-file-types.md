@@ -10,4 +10,4 @@ In Flutter, you can work with different file types besides images. Some common f
 
 Learn more from the following links:
 
-- [File class](https://api.flutter.dev/flutter/dart-io/File-class.html)
+- [@article@File class](https://api.flutter.dev/flutter/dart-io/File-class.html)

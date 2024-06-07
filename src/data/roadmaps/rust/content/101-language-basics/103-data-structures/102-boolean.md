@@ -4,4 +4,4 @@
 
 Learn more from the following links:
 
-- [The Boolean Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-boolean-type)
+- [@article@The Boolean Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-boolean-type)

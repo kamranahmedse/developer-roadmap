@@ -16,6 +16,6 @@ Widgets in Flutter are also designed to be highly reusable, allowing developers 
 
 Visit the following resources to learn more:
 
-- [Introduction to widgets](https://docs.flutter.dev/development/ui/widgets-intro)
-- [Widget catalog](https://docs.flutter.dev/development/ui/widgets)
-- [Flutter Widgets Explained](https://www.youtube.com/watch?v=FU2Eeizo95o)
+- [@article@Introduction to widgets](https://docs.flutter.dev/development/ui/widgets-intro)
+- [@article@Widget catalog](https://docs.flutter.dev/development/ui/widgets)
+- [@video@Flutter Widgets Explained](https://www.youtube.com/watch?v=FU2Eeizo95o)

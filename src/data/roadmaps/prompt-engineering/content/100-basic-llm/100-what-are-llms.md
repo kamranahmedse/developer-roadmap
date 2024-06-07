@@ -6,5 +6,5 @@ LLMs have the ability to achieve state-of-the-art performance in multiple Natura
 
 As an example, OpenAI's GPT-3 is a prominent LLM that has gained significant attention due to its capability to generate high-quality text and perform a variety of language tasks with minimal fine-tuning. 
 
-- [Introduction to LLMs](https://roadmap.sh/guides/introduction-to-llms)
-- [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+- [@roadmap.sh@Introduction to LLMs](https://roadmap.sh/guides/introduction-to-llms)
+- [@video@Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)

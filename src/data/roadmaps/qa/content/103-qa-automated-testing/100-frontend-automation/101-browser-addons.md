@@ -6,5 +6,5 @@ Given that Chrome is the undisputed market leader in web browsers, it’s safe t
 
 Visit the following resources to learn more:
 
-- [8 Browser Plugins for Testing](https://blog.gurock.com/browser-plugins-for-testing/)
-- [15 Best Chrome Extensions for Software Testers](https://www.softwaretestingmaterial.com/chrome-extensions-for-software-testers/)
+- [@article@8 Browser Plugins for Testing](https://blog.gurock.com/browser-plugins-for-testing/)
+- [@article@15 Best Chrome Extensions for Software Testers](https://www.softwaretestingmaterial.com/chrome-extensions-for-software-testers/)

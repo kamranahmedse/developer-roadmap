@@ -4,4 +4,4 @@ CLI-Progress is a package that provides a custom progress bar for CLI applicatio
 
 Visit the following resources to learn more:
 
-- [CLI-Progress Documentation](https://www.npmjs.com/package/cli-progress)
+- [@article@CLI-Progress Documentation](https://www.npmjs.com/package/cli-progress)

@@ -6,4 +6,4 @@ Once data becomes distributed with techniques such as federation and sharding, m
 
 To learn more, visit the following links:
 
-- [Denormalization](https://en.wikipedia.org/wiki/Denormalization)
+- [@article@Denormalization](https://en.wikipedia.org/wiki/Denormalization)

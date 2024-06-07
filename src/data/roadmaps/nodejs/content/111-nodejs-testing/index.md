@@ -6,4 +6,3 @@ The two most common testing approaches are unit testing and end-to-end testing. 
 
 Visit the following resources to learn more:
 
-- [Differences between end-to-end testing and unit testing](https://www.geeksforgeeks.org/difference-between-end-to-end-testing-and-unit-testing/)

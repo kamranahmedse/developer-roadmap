@@ -9,6 +9,6 @@ Functional programming is a programming paradigm that emphasizes immutability, s
 
 Learn more from the following links:
 
-- [Brief Overview of Functional Programming](https://buildflutter.com/functional-programming-with-flutter/)
-- [Functional Programming in Dart & Flutter](https://yogi-6.medium.com/list/functional-programming-in-dart-flutter-2f3ac9d7fa39)
-- [Functional programming - Flutter](https://docs.flutter.dev/resources/faq)
+- [@article@Brief Overview of Functional Programming](https://buildflutter.com/functional-programming-with-flutter/)
+- [@article@Functional Programming in Dart & Flutter](https://yogi-6.medium.com/list/functional-programming-in-dart-flutter-2f3ac9d7fa39)
+- [@article@Functional programming - Flutter](https://docs.flutter.dev/resources/faq)

@@ -4,5 +4,5 @@ Mailinator allows Developers and QA Testing teams to automatically test their SM
 
 Visit the following resources to learn more:
 
-- [Mailinator](https://www.mailinator.com/)
-- [Mailinator Official Docs](https://www.mailinator.com/docs/index.html#mailinator)
+- [@official@Mailinator](https://www.mailinator.com/)
+- [@official@Mailinator Official Docs](https://www.mailinator.com/docs/index.html#mailinator)

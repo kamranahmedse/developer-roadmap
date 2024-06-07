@@ -6,5 +6,5 @@ There are different types of message buses, such as event-driven message buses, 
 
 Visit the following links to learn more:
 
-- [Implementation of Message Bus C# microservices](https://stackoverflow.com/questions/51330229/implementation-of-message-bus-c-sharp-microservices)
-- [Building a Message Bus with .NET Core](https://fatihdumanli.medium.com/build-a-message-bus-implementation-with-net-core-and-rabbitmq-9ba350b777f4)
+- [@article@Implementation of Message Bus C# microservices](https://stackoverflow.com/questions/51330229/implementation-of-message-bus-c-sharp-microservices)
+- [@article@Building a Message Bus with .NET Core](https://fatihdumanli.medium.com/build-a-message-bus-implementation-with-net-core-and-rabbitmq-9ba350b777f4)

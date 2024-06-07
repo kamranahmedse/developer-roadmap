@@ -8,4 +8,4 @@ Authentication is a crucial aspect of securing your React Native application. It
 
 Have a look at the following react native page for further details about security.
 
-- [Authentication and Deep Linking](https://reactnative.dev/docs/security#authentication-and-deep-linking)
+- [@article@Authentication and Deep Linking](https://reactnative.dev/docs/security#authentication-and-deep-linking)

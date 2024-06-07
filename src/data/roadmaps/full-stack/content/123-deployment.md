@@ -16,4 +16,4 @@ Now that you know the basics of AWS, you should be able to deploy your applicati
 
 If you get stuck, here is a video that shows how to deploy a Node.js application to AWS EC2: 
 
-- [Deploy Node App on AWS EC2](https://youtu.be/oHAQ3TzUTro)
+- [@video@Deploy Node App on AWS EC2](https://youtu.be/oHAQ3TzUTro)

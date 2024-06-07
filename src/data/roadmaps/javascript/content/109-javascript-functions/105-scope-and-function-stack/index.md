@@ -17,5 +17,5 @@ The function stack is how the interpreter keeps track of its place in a script t
 
 Visit the following resources to learn more:
 
-- [Function stack (call stack) - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
-- [Kinds of Scope - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+- [@article@Function stack (call stack) - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
+- [@article@Kinds of Scope - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope)

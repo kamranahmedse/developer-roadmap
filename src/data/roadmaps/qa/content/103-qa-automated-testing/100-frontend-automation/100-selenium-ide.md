@@ -6,5 +6,5 @@ Selenium itself is an open-source, automated testing tool used to test web appli
 
 Visit the following resources to learn more:
 
-- [Selenium IDE Website](https://www.selenium.dev/selenium-ide/)
-- [Selenium IDE Tutorial](https://www.softwaretestinghelp.com/selenium-ide-script-selenium-tutorial-3/)
+- [@official@Selenium IDE Website](https://www.selenium.dev/selenium-ide/)
+- [@article@Selenium IDE Tutorial](https://www.softwaretestinghelp.com/selenium-ide-script-selenium-tutorial-3/)

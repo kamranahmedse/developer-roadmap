@@ -6,9 +6,9 @@ Core OS supports essential functionalities like the Apple File System (APFS), wh
 
 Visit the following resources to learn more:
 
-- [Kernel API](https://developer.apple.com/documentation/kernel)
-- [System Configuration](https://developer.apple.com/documentation/systemconfiguration)
-- [Apple File System Guide](https://developer.apple.com/documentation/foundation/file_system/about_apple_file_system)
-- [Keychain Services](https://developer.apple.com/documentation/security/keychain_services)
-- [LibDispatch](https://developer.apple.com/documentation/dispatch)
-- [LibXPC](https://developer.apple.com/documentation/xpc)
+- [@article@Kernel API](https://developer.apple.com/documentation/kernel)
+- [@article@System Configuration](https://developer.apple.com/documentation/systemconfiguration)
+- [@article@Apple File System Guide](https://developer.apple.com/documentation/foundation/file_system/about_apple_file_system)
+- [@article@Keychain Services](https://developer.apple.com/documentation/security/keychain_services)
+- [@article@LibDispatch](https://developer.apple.com/documentation/dispatch)
+- [@article@LibXPC](https://developer.apple.com/documentation/xpc)

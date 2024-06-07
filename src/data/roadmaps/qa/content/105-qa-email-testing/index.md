@@ -4,5 +4,5 @@ Email testing allows you to view your email before sending it out to your subscr
 
 Visit the following resources to learn more:
 
-- [About Email Testing](https://www.campaignmonitor.com/blog/email-marketing/how-email-testing-and-rendering-works-and-why-its-important/)
-- [Checklist: How to Test and QA an Email](https://sponge.io/checklist-how-to-test-and-qa-an-email/)
+- [@article@About Email Testing](https://www.campaignmonitor.com/blog/email-marketing/how-email-testing-and-rendering-works-and-why-its-important/)
+- [@article@Checklist: How to Test and QA an Email](https://sponge.io/checklist-how-to-test-and-qa-an-email/)

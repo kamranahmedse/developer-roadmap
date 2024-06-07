@@ -6,6 +6,6 @@ Automated testing is the application of software tools to automate a human-drive
 
 Visit the following resources to learn more:
 
-- [What is Automated Testing?](https://www.atlassian.com/continuous-delivery/software-testing/automated-testing)
-- [Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
-- [Learning Path with different programming language](https://testautomationu.applitools.com/learningpaths.html)
+- [@article@What is Automated Testing?](https://www.atlassian.com/continuous-delivery/software-testing/automated-testing)
+- [@article@Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+- [@article@Learning Path with different programming language](https://testautomationu.applitools.com/learningpaths.html)

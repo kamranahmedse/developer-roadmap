@@ -4,6 +4,6 @@ Spring Cloud Hystrix is a library for managing the fault tolerance of microservi
 
 For more resources, visit the following links:
 
-- [Spring Boot - Hystrix](https://www.tutorialspoint.com/spring_boot/spring_boot_hystrix.htm)
-- [Circuit Breaker: Hystrix Clients](https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html)
-- [Hystrix: Spring Cloud](https://stackabuse.com/spring-cloud-hystrix/)
+- [@article@Spring Boot - Hystrix](https://www.tutorialspoint.com/spring_boot/spring_boot_hystrix.htm)
+- [@article@Circuit Breaker: Hystrix Clients](https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html)
+- [@article@Hystrix: Spring Cloud](https://stackabuse.com/spring-cloud-hystrix/)

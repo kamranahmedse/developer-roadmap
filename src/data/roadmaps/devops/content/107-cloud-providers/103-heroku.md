@@ -4,6 +4,6 @@ Heroku is a cloud platform as a service subsidiary of Salesforce. Heroku officia
 
 Visit the following resources to learn more:
 
-- [Heroku Website](https://www.heroku.com/)
-- [Official Documentation](https://devcenter.heroku.com/)
-- [Heroku Get Started Guide](https://devcenter.heroku.com/start)
+- [@official@Heroku Website](https://www.heroku.com/)
+- [@article@Official Documentation](https://devcenter.heroku.com/)
+- [@article@Heroku Get Started Guide](https://devcenter.heroku.com/start)

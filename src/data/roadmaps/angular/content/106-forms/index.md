@@ -6,7 +6,7 @@ Angular provides two approaches to handle user inputs trough forms: reactive and
 
 Visit the following resources to learn more:
 
-- [Introduction to forms in Angular](https://angular.io/guide/forms-overview)
-- [Angular Forms](https://www.w3schools.com/angular/angular_forms.asp)
-- [Angular Forms Tutorial](https://www.youtube.com/watch?v=-bGgjgx3fGs)
-- [Building Forms in Angular Apps](https://www.youtube.com/watch?v=hAaoPOx_oIw)
+- [@official@Introduction to forms in Angular](https://angular.io/guide/forms-overview)
+- [@article@Angular Forms](https://www.w3schools.com/angular/angular_forms.asp)
+- [@video@Angular Forms Tutorial](https://www.youtube.com/watch?v=-bGgjgx3fGs)
+- [@video@Building Forms in Angular Apps](https://www.youtube.com/watch?v=hAaoPOx_oIw)

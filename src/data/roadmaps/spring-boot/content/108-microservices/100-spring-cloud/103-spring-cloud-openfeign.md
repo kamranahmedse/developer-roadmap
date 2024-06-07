@@ -4,6 +4,6 @@ Spring Cloud OpenFeign is a library for creating declarative REST clients in Spr
 
 For more resources, visit the following links:
 
-- [Introduction to Spring Cloud OpenFeign](https://www.baeldung.com/spring-cloud-openfeign)
-- [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
-- [Simple Implementation of Spring Cloud OpenFeign](https://medium.com/javarevisited/simple-implementation-of-spring-cloud-openfeign-7f022630d01d)
+- [@article@Introduction to Spring Cloud OpenFeign](https://www.baeldung.com/spring-cloud-openfeign)
+- [@official@Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+- [@article@Simple Implementation of Spring Cloud OpenFeign](https://medium.com/javarevisited/simple-implementation-of-spring-cloud-openfeign-7f022630d01d)

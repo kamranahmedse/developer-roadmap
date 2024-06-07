@@ -4,4 +4,4 @@ The **Stack** is a fundamental data structure in Rust, which is based on the pri
 
 Learn more from the following links:
 
-- [Box, Stack and Heap](https://doc.rust-lang.org/rust-by-example/std/box.html)
+- [@article@Box, Stack and Heap](https://doc.rust-lang.org/rust-by-example/std/box.html)

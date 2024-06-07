@@ -9,4 +9,4 @@ Primary memory or RAM is a volatile memory, meaning the primary memory data exis
 
 Visit the following resources to learn more:
 
-- [Registers and RAM](https://youtu.be/fpnE6UAfbtU)
+- [@video@Registers and RAM](https://youtu.be/fpnE6UAfbtU)

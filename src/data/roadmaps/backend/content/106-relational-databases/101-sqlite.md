@@ -4,5 +4,5 @@ SQLite is a relational database management system that is embedded into the end 
 
 Visit the following resources to learn more:
 
-- [SQLite website](https://www.sqlite.org/index.html)
-- [SQLite Tutorial](https://www.sqlitetutorial.net/)
+- [@official@SQLite website](https://www.sqlite.org/index.html)
+- [@article@SQLite Tutorial](https://www.sqlitetutorial.net/)

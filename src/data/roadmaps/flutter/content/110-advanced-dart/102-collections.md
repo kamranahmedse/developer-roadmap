@@ -12,5 +12,5 @@ These collections are built-in data structures that can be used to store and man
 
 Learn more from the following:
 
-- [Generic collections in Flutter](https://dart.dev/guides/language/language-tour#generic-collections-and-the-types-they-contain)
-- [Iterable collections](https://dart.dev/codelabs/iterables)
+- [@article@Generic collections in Flutter](https://dart.dev/guides/language/language-tour#generic-collections-and-the-types-they-contain)
+- [@article@Iterable collections](https://dart.dev/codelabs/iterables)

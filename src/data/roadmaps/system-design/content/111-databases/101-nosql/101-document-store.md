@@ -6,4 +6,4 @@ Based on the underlying implementation, documents are organized by collections, 
 
 To learn more, visit the following links:
 
-- [Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)
+- [@article@Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)

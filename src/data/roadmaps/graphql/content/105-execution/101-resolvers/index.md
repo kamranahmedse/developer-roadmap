@@ -6,4 +6,4 @@ Each field in a GraphQL schema has a corresponding resolver function that is res
 
 Learn more from the following links:
 
-- [Guide to Resolver](https://the-guild.dev/blog/better-type-safety-for-resolvers-with-graphql-codegen)
+- [@article@Guide to Resolver](https://the-guild.dev/blog/better-type-safety-for-resolvers-with-graphql-codegen)

@@ -36,4 +36,4 @@ Achieving a CompTIA A+ certification can offer several benefits, such as:
 
 Overall, if you're an aspiring IT professional, the CompTIA A+ certification is a great starting point to kick off your IT career and begin acquiring the skills and knowledge needed to thrive in this ever-evolving industry.
 
-- [CompTIA A+ 220-1101 - Professor Messer](https://www.youtube.com/@professormesser/search?query=CompTIA%20220-1101%20A%2B)
+- [@video@CompTIA A+ 220-1101 - Professor Messer](https://www.youtube.com/@professormesser/search?query=CompTIA%20220-1101%20A%2B)

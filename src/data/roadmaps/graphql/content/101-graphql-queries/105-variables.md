@@ -4,5 +4,5 @@ Variables in GraphQL are a way to pass dynamic values to a query or a mutation. 
 
 To learn more, visit the following links:
 
-- [GraphQL Variables](https://dgraph.io/docs/graphql/api/variables/)
-- [Intro to Variables in GraphQL](https://graphql.org/learn/queries/#variables)
+- [@article@GraphQL Variables](https://dgraph.io/docs/graphql/api/variables/)
+- [@official@Intro to Variables in GraphQL](https://graphql.org/learn/queries/#variables)
