@@ -2,6 +2,10 @@
 
 Pressable is a core component in React Native that makes any view respond properly to touch or press events. It provides a wide range of event handlers for managing user interactions, such as onPress, onPressIn, onPressOut, and onLongPress. With Pressable, you can create custom buttons, cards, or any touchable elements within your app.
 
+Diff in TouchableOpacity and Pressable  :-
+->TouchableOpacity : Reduces the opacity of child elements when pressed, creating a fade effect.
+->Pressable : More versatile and flexible, allowing detailed handling of touch events (e.g., onPress, onLongPress, onPressIn, onPressOut).
+
 To use Pressable in your React Native application, you need to import it from 'react-native':
 
 ```javascript
