@@ -37,7 +37,6 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
-import { isMobile } from '../../../editor/utils/is-mobile.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
