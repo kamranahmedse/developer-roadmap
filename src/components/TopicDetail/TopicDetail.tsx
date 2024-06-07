@@ -23,21 +23,13 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import {
-  Ban,
-  ExternalLink,
-  ExternalLinkIcon,
-  FileText,
-  HeartHandshake,
-  X,
-} from 'lucide-react';
+import { Ban, FileText, HeartHandshake, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
-import { isMobile } from '../../../editor/utils/is-mobile.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
