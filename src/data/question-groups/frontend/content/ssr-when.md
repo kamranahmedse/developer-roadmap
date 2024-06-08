@@ -2,6 +2,6 @@ Server-side rendering (SSR) is a technique in which a web server generates the H
 
 There are several ideal use cases for SSR:
 
-- **Content-rich websites**. For example, new sites, blogs, etc.
+- **Content-rich websites**. For example, news sites, blogs, etc.
 - **SEO-heavy applications**. When the success of the web app relies on SEO, this approach can greatly improve the performance of the site (and because of that, the SEO performance).
-- **Progressive web applications**. When the application needs to render fast to provide a fast and performance user experience, the application can initially be rendered in the server, and then hydrated in the client for subsequent integrations.
+- **Progressive web applications**. When the application needs to render fast to provide a fast and performance user experience, the application can initially be rendered on the server, and then hydrated on the client for subsequent integrations.
