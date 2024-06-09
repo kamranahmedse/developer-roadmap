@@ -179,15 +179,35 @@ export function TopicDetail(props: TopicDetailProps) {
           const contributionUrl = urlElem?.dataset?.githubUrl || '';
 
           const titleElem: HTMLElement = topicDom.querySelector('h1')!;
-
           const otherElems = topicDom.querySelectorAll('body > *:not(h1, div)');
 
-          const listLinks = Array.from(topicDom.querySelectorAll('ul > li > a'))
+          let ulWithLinks: HTMLUListElement = document.createElement('ul');
+
+          // we need to remove the `ul` with just links (i.e. resource links)
+          // and show them separately.
+          topicDom.querySelectorAll('ul').forEach((ul) => {
+            const lisWithJustLinks = Array.from(
+              ul.querySelectorAll('li'),
+            ).filter((li) => {
+              return (
+                li.children.length === 1 &&
+                li.children[0].tagName === 'A' &&
+                li.children[0].textContent === li.textContent
+              );
+            });
+
+            if (lisWithJustLinks.length > 0) {
+              ulWithLinks = ul;
+            }
+          });
+
+          const listLinks = Array.from(ulWithLinks.querySelectorAll('li > a'))
             .map((link, counter) => {
-              const typePattern = /@([a-z]+)@/;
+              const typePattern = /@([a-z.]+)@/;
               let linkText = link.textContent || '';
               const linkHref = link.getAttribute('href') || '';
               const linkType = linkText.match(typePattern)?.[1] || 'article';
+
               linkText = linkText.replace(typePattern, '');
 
               return {
@@ -207,9 +227,8 @@ export function TopicDetail(props: TopicDetailProps) {
               return order.indexOf(a.type) - order.indexOf(b.type);
             });
 
-          const lastUl = topicDom.querySelector('ul:last-child');
-          if (lastUl) {
-            lastUl.remove();
+          if (ulWithLinks) {
+            ulWithLinks.remove();
           }
 
           topicHtml = topicDom.body.innerHTML;
