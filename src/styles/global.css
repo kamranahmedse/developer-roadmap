@@ -61,7 +61,6 @@ a > code:before {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 3px 10px;
-  display: block;
   background: repeating-linear-gradient(
       -45deg,
       transparent,
