@@ -11,6 +11,6 @@ Visit the following resources to learn more:
 - [@article@Parcel is a zero configuration build tool for the web](https://parceljs.org/)
 - [@article@esbuild is an extremely fast JavaScript bundler and minifier](https://esbuild.github.io/)
 - [@article@swc is a super-fast compiler written in Rust](https://swc.rs/)
-- [@article@tsup is a zero-config TypeScript build tool](https://tsup.egoist.sh/)
+- [@article@tsup is a zero-config TypeScript build tool](https://tsup.egoist.dev/)
 - [@article@Rollup is a module bundler for JavaScript](https://rollupjs.org/guide/en/)
 - [@article@tsdx is a zero-config CLI for TypeScript package development](https://tsdx.io/)
