@@ -72,7 +72,7 @@ So, how do you learn these essential skills? In what sequence do you acquire the
 
 ## How to become a DevOps Engineer
 
-The internet is full of resources for learning DevOps and DevOps tools. Many of these guides lack structure and organization, resulting in a dilemma of where to start. To help beginners learn DevOps in a structured manner, [r](https://roadmap.sh)[oadmap.sh](https://roadmap.sh) has a beginner-friendly [DevOps roadmap](https://roadmap.sh/devops?r=devops-beginner). 
+The internet is full of resources for learning DevOps and DevOps tools. Many of these guides lack structure and organization, resulting in a dilemma of where to start. To help beginners learn DevOps in a structured manner, [roadmap.sh](https://roadmap.sh) has a beginner-friendly [DevOps roadmap](https://roadmap.sh/devops?r=devops-beginner). 
 
 This section presents a concise version of the DevOps roadmap. It is recommended that you implement real-world projects recommended in each stage of the roadmap. In the end, you can publish these DevOps projects to GitHub as an open-source project repository, and the repository will act as your portfolio.
 
