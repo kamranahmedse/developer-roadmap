@@ -108,7 +108,7 @@ You can demonstrate your understanding of containerization tools by creating a s
 ### Step 6: Cloud platform
 Cloud platforms like [AWS](https://roadmap.sh/aws), Azure, and Google Cloud Platform are some popular cloud providers that allow you to deploy your projects without investing in expensive hardware. Many cloud services across these cloud platforms are analogous. So, if you are a beginner, start with AWS, as it is the most widely used cloud platform. Once you are comfortable with AWS’s services and key concepts, you can deploy the application created in earlier stages to the AWS. 
 
-Alternatively, you could demonstrate your understanding by taking the [certification exam from AWS](https://aws.amazon.com/certification/?trk=dc557659-52ab-4a28-b2b8-0b1fb90235db&sc_channel=ps&ef_id=CjwKCAjw88yxBhBWEiwA7cm6pRXCRcI-uDNNigl81tPxsbbyV9RqT6MsdSM_x5EzoFnfxcr6N22rvBoCS7IQAvD_BwE:G:s&s_kwcid=AL!4422!3!465713397254!e!!g!!aws%20certification!11138243015!111694711080&gclid=CjwKCAjw88yxBhBWEiwA7cm6pRXCRcI-uDNNigl81tPxsbbyV9RqT6MsdSM_x5EzoFnfxcr6N22rvBoCS7IQAvD_BwE).
+Alternatively, you could demonstrate your understanding by taking the [certification exam from AWS](https://aws.amazon.com/certification/).
 
 Once comfortable launching your infrastructure using the GUI, you should learn about Infrastructure as Code(IaC). I recommend using [Terraform](https://www.terraform.io/) for IaC as it is cloud-agnostic. Terraform allows you to set up and make changes to infrastructure resources by editing a configuration file.
 
