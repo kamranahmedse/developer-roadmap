@@ -157,7 +157,6 @@ A continuous learning and continuous improvement mindset is essential across all
 
 You may not have the DevOps mindset, but that is okay. You can build this mindset as you learn and grow into the role. Let us look at some technical skills required to become a DevOps engineer.
 
-
 ## Who can become a DevOps Engineer?
 
 Anyone with the right skillset can become a DevOps engineer. Typically, it is easier to transition into a DevOps role if you are a,
@@ -169,7 +168,6 @@ Anyone with the right skillset can become a DevOps engineer. Typically, it is ea
 If you are a newbie in software engineering, you are encouraged to learn the above skills and concepts. You can then apply for a DevOps intern position. You may look for vacancies in local companies or remote job boards.
 
 Depending on your current skill set and practical experience, the time to transition into a DevOps role will vary. However, following a structured learning path will help you speed up and ease the process.
-
 
 ## What next?
 
