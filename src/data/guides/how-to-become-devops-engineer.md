@@ -43,6 +43,7 @@ Let’s dive into the essential skills required for a [DevOps engineer](https://
 A DevOps engineer should understand the operating system, especially Linux (distribution or any variant). This is because most of the servers in use are Linux-based, so having a solid foundation in the Linux OS is imperative for infrastructure management and troubleshooting.
 
 ### Solid programming fundamentals
+
 As a DevOps engineer, you will use your knowledge of programming and scripting language to:
 
 - Automate frequent and boring tasks
