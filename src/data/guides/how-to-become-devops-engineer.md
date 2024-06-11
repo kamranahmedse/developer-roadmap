@@ -25,8 +25,7 @@ If you are trying to get into tech or are already in tech and have been explorin
 
 This article provides in-depth knowledge on how to become a DevOps engineer, highlighting the mindset and technical skills(including DevOps tools) required to become one.
 
-## TL;DR:
-DevOps combines development and operations to automate software delivery. To become a DevOps engineer, you should adopt a mindset of automation, risk awareness, systems thinking, and continuous learning. In addition to the mindset, follow the steps below:
+**TL;DR:** DevOps combines development and operations to automate software delivery. To become a DevOps engineer, you should adopt a mindset of automation, risk awareness, systems thinking, and continuous learning. In addition to the mindset, follow the steps below:
 
 - Step 1: Learn a programming language
 - Step 2: Get comfortable with Linux and terminal
