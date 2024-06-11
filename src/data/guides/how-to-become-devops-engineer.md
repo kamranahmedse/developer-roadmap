@@ -68,8 +68,6 @@ Procuring hardware to deploy the software is not always feasible and beneficial.
 IaC can be seen as a superior form of automation for a DevOps engineer. IaC tools like Terraform and Amazon Cloud CDK allow the operations team to set up and manage infrastructure by simply changing a configuration file. This makes it easier to manage and scale the application.
 
 So, how do you learn these essential skills? In what sequence do you acquire these skills? The following section presents a complete roadmap on how you can learn these skills and become a DevOps engineer.
-
-
 ## How to become a DevOps Engineer
 
 The internet is full of resources for learning DevOps and DevOps tools. Many of these guides lack structure and organization, resulting in a dilemma of where to start. To help beginners learn DevOps in a structured manner, [roadmap.sh](https://roadmap.sh) has a beginner-friendly [DevOps roadmap](https://roadmap.sh/devops?r=devops-beginner). 
