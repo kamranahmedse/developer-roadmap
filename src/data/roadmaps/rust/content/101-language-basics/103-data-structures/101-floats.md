@@ -28,7 +28,6 @@ fn main() {
 Learn more from the following links:
 
 - [@video@Rust Tutorial - Floating-Points](https://www.youtube.com/watch?v=t047Hseyj_k&t=335s)
-- [@oficial@f32 - Rust](https://doc.rust-lang.org/std/primitive.f32.html)
-- [@oficial@f64 - Rust](https://doc.rust-lang.org/std/primitive.f64.html)
+- [@official@f32 - Rust](https://doc.rust-lang.org/std/primitive.f32.html)
 - [@article@IEEE-754 Standard](https://en.wikipedia.org/wiki/IEEE_754)
 - [@article@Floating-Point Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#floating-point-types)
