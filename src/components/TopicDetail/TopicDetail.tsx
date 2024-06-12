@@ -365,7 +365,7 @@ export function TopicDetail(props: TopicDetailProps) {
                         className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                       >
                         <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                        Edit this Content
+                        Add Learning Resources
                       </a>
                     </div>
                   )}
@@ -445,7 +445,7 @@ export function TopicDetail(props: TopicDetailProps) {
                     className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                    Edit this Content
+                    Add Learning Resources
                   </a>
                 </div>
               )}

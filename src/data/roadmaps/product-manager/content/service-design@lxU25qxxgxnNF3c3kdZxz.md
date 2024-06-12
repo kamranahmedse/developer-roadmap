@@ -1,1 +1,3 @@
-# Service Design
+# Service Design 
+
+Service Design refers to the process of planning and organizing a business's resources (people, infrastructure, materials, etc.) to directly improve the service's quality, interactions between service provider and clients, and the customer's experience. For a Product Manager, it's a crucial practice as it gives them a broader understanding of their product's lifecycle and interactions with the end users. This process aids in crafting or refining products to ensure alignment with customer needs and provide superior user experience.

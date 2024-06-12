@@ -3345,7 +3345,7 @@
         "x": -599.3135868850914,
         "y": -176.03181769055132
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Related Roadmaps",
         "links": [
@@ -3390,7 +3390,7 @@
         "x": 158.23571626420664,
         "y": -175.8282364125966
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "Find the detailed version of this roadmap along with other similar roadmaps",
         "style": {
@@ -3423,7 +3423,7 @@
         "x": 171.43909067700685,
         "y": -93.84267299485134
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "roadmap.sh",
         "href": "https://roadmap.sh",

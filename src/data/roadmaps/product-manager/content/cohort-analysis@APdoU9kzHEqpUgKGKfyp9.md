@@ -1,1 +1,3 @@
 # Cohort Analysis
+
+Cohort Analysis is a valuable tool in a Product manager's data-driven decision-making toolkit. This specific kind of analysis divides a product's user base into related groups. It's not strictly about the demographics, but rather the shared characteristics within a specific timeframe. These groups, or cohorts, could be determined by the users' behaviors, experiences, or traits. Understanding these cohorts and their behaviors proves to be crucial in identifying trends, predicting user actions, and innovating ways to improve overall user experience and product utility.

@@ -1,1 +1,3 @@
 # Problem Framing
+
+Problem Framing is a vigorous process undertaken by Product Managers to clearly understand, articulate, and define the issues that a product or service aims to resolve. It necessitates critical and creative thinking to identify the root cause of a problem, its potential implications, its users, and the impact of its solutions. Essentially, a well-framed problem can guide Product Managers while they navigate through the product's design and development phases, ensuring that the final product successfully addresses the issue at hand and delivers substantial value to its users.

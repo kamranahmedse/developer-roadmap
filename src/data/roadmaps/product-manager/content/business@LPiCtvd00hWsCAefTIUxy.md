@@ -1,1 +1,3 @@
-# I
+# Business
+
+As a Product Manager, having a comprehensive understanding of the business is essential. Business knowledge can help the Product Manager to make better decisions regarding the product direction, market needs, and resource allocation. It encompasses having a clear understanding of the company's business model, financials, competitive environment, and corporate strategy. Furthermore, a business-oriented Product Manager can effectively balance the conflicting needs of the customers, the business, and the product, driving maximum value. This topic, `Business for Product Managers`, emphasizes the importance of business acumen for Product Managers.

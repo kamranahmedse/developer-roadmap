@@ -1,1 +1,5 @@
 # Product vs Product Management
+
+Product and Product Management are two core concepts in the world of business and are intricately related yet distinctively different. A 'Product' essentially refers to a physical good, service or experience that a company offers to its customers. It is the result of an idea brought to life, designed to meet a certain need or desire of the customer.
+
+On the other hand, 'Product Management' is a multifaceted function responsible for guiding and overseeing the development, marketing, sales, and improvement of this product. It's the role of the Product Manager to strategize, roadmap, and define the product, and the direction it should take inorder to succeed in the market. Hence, while the product is the actual offering, product management is the process that ensures its success.

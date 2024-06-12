@@ -1,1 +1,3 @@
 # Active Listening
+
+Active Listening is a fundamental skill for a Product Manager. It involves giving full attention to the speaker and showing interest in the information provided. This encompasses comprehending, retaining, and effectively responding to the speaker. For a Product Manager, Active Listening is crucial for understanding the requirements of customers, stakeholders, and team members. It enables a comprehensive understanding of user needs and promotes inclusive decision-making while formulating product strategies.

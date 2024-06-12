@@ -12,8 +12,8 @@ seo:
   title: Product Manager
   description: Everything you need to know to become a Product Manager
 dimensions:
-  height: 1292
-  width: 1171
+  width: 968
+  height: 5200
 schema:
   headline: Product Manager
   description: Everything you need to know to become a Product Manager

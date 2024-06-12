@@ -1,1 +1,3 @@
-# Vision & Mission
+# Strategic Thinking
+
+Strategic thinking is a critical competence for Product Managers. This involves the ability to think long-term, beyond immediate actions, to comprehend how various components influence each other within the big picture, as well as predicting potential outcomes. It's about identifying strengths and weaknesses, understanding opportunities and threats, planning for diverse scenarios, and making sound decisions. A Product Manager with strategic thinking skills effectively aligns product decisions with the broader organizational strategy, anticipates upcoming market trends, and maintains a competitive edge.

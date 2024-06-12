@@ -1,1 +1,3 @@
 # CAC (Customer Acquisition Cost)
+
+Customer Acquisition Cost (CAC) is a fundamental concept in business and specifically, a significant metric for Product Managers to monitor and optimize. Essentially, CAC is the total cost incurred to acquire a new customer, including all the product, research, marketing, and other associated costs. It provides valuable insight about the efficiency and effectiveness of a company's customer acquisition strategies. In the realm of a Product Manager, understanding and managing CAC is key to ensure that the product's value proposition is being communicated effectively, while also staying profitable and scalable. Hence, a detailed understanding and continuous tracking of CAC is an integral part of effective product management.

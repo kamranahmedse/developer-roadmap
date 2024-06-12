@@ -1,1 +1,3 @@
 # Mind Mapping
+
+Mind Mapping is an essential tool in the arsenal of a Product Manager. It involves the graphical or pictorial representation of ideas or tasks emerging from a core central concept. As product managers wrestle with strategy formulation, project management, feature breakout, and stakeholder communication, mind maps provide a valuable ally to visualize complex concepts and relationships. Mind mapping encourages brainstorming, fosters association of ideas, and aids in effectively organizing and structuring the numerous elements of a product's lifeline.
