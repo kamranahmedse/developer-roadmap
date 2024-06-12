@@ -18,6 +18,7 @@ export const allowedLinkTypes = [
   'roadmap.sh',
   'official',
   'roadmap',
+  'daily.dev'
 ] as const;
 
 export type AllowedLinkTypes = (typeof allowedLinkTypes)[number];
