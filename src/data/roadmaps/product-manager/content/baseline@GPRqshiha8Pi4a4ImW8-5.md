@@ -1,3 +1,3 @@
-# Baseline in Product Management
+# Baseline-based Goals
 
-In the dynamic realm of product management, a baseline is a crucial measure or point of reference used in the creation and manipulation of a project or product. This term typically refers to a defined standard for products, against which product managers can assess and compare the product's current performance and features. The baseline serves as a comprehensive documentation of the product's initial phase and essential characteristics, providing a foundation for progress tracking and strategic decision-making. As a product manager, understanding the baseline concept is essential for enabling effective control and management of product development stages, milestones, and iterations.
+These goals aim to maintain or improve the current level of performance, such as keeping customer satisfaction scores above a certain threshold.
