@@ -310,6 +310,11 @@ const groups: GroupType[] = [
         link: '/technical-writer',
         type: 'role',
       },
+      {
+        title: 'Product Manager',
+        link: '/product-manager',
+        type: 'role',
+      },
     ],
   },
   {
