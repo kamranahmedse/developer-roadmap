@@ -4,4 +4,4 @@ AWS EC2 instances come in a variety of types optimized to fit different use case
 
 Instance types are further divided into six parts such as general purpose, compute optimized, memory optimized, accelerated computing, storage optimized, HPC optimized.
 
-- [@article@AWS EC2 Instance Types](https://aws.amazon.com/ec2/instance-types)
+- [@official@AWS EC2 Instance Types](https://aws.amazon.com/ec2/instance-types)
