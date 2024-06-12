@@ -285,7 +285,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Product vs Product Management",
+        "label": "Project vs Product Management",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -5473,7 +5473,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Identifyig Risks",
+        "label": "Identifying Risks",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
