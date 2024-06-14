@@ -1,3 +1,7 @@
 # Roles and Responsibilities of a Product Manager
 
 A product manager is a pivotal role that stands at the crossroads of business, technology, and user experience aspects. Their roles and responsibilities include understanding customer needs, defining and communicating product strategy, prioritizing product features, liaising with different teams such as engineering, sales and marketing to ensure seamless product development and launch, monitoring and analyzing market trends, and ultimately driving the success of the product in the market. A prodigious product manager, with a unique blend of business acuity and technical knack, can significantly impact the product's acceptance in the market and the company's bottom line.
+
+Learn more from the following resources:
+
+- [@article@Product Manager Roles & Responsibilities](https://www.productside.com/product-manager-roles-and-responsibilities-keytask/)
