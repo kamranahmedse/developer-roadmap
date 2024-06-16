@@ -4,4 +4,4 @@ In large applications, we may need to divide the app into smaller chunks and onl
 
 Visit the following resources to learn more:
 
-- [Async Components](https://vuejs.org/guide/components/async.html)
+- [@article@Async Components](https://vuejs.org/guide/components/async.html)

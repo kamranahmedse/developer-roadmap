@@ -10,6 +10,6 @@ These cloud-specific tools are designed to be used in conjunction with cloud-bas
 
 Visit the following resources to learn more:
 
-- [AWS Secrets Manager - Amazon Web Services](https://aws.amazon.com/secrets-manager/)
-- [Google Cloud Secret Manager - Google Cloud](https://cloud.google.com/secret-manager)
-- [Azure Key Vault - Microsoft Azure](https://azure.microsoft.com/en-us/services/key-vault/)
+- [@article@AWS Secrets Manager - Amazon Web Services](https://aws.amazon.com/secrets-manager/)
+- [@article@Google Cloud Secret Manager - Google Cloud](https://cloud.google.com/secret-manager)
+- [@article@Azure Key Vault - Microsoft Azure](https://azure.microsoft.com/en-us/services/key-vault/)

@@ -4,5 +4,5 @@ The Builtin types represent the different types of values supported by the langu
 
 Visit the following resources to learn more:
 
-- [TypeScript Types - Tutorialspoint](https://www.tutorialspoint.com/typescript/typescript_types.htm)
-- [Builtin Type video for Beginners](https://www.youtube.com/watch?v=Nt9ajBrqV_M)
+- [@article@TypeScript Types - Tutorialspoint](https://www.tutorialspoint.com/typescript/typescript_types.htm)
+- [@video@Builtin Type video for Beginners](https://www.youtube.com/watch?v=Nt9ajBrqV_M)

@@ -4,6 +4,6 @@ Integration testing in ASP.NET refers to the process of testing how different co
 
 Visit the following links to learn more:;
 
-- [Integration tests in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0)
-- [Integration Testing ASP.NET Core WebAPI Applications](https://www.youtube.com/watch?v=xs8gNQjCXw0)
-- [A Sample Project Integration Test In ASP.NET](https://www.youtube.com/watch?v=ziSKkR2nvis)
+- [@article@Integration tests in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0)
+- [@video@Integration Testing ASP.NET Core WebAPI Applications](https://www.youtube.com/watch?v=xs8gNQjCXw0)
+- [@video@A Sample Project Integration Test In ASP.NET](https://www.youtube.com/watch?v=ziSKkR2nvis)

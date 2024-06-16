@@ -13,4 +13,4 @@ In JavaScript, a function that doesn’t return any value will implicitly return
 
 Learn more from the following links:
 
-- [void - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)
+- [@article@void - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)

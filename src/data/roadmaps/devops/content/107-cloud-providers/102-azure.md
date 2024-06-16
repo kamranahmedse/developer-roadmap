@@ -4,7 +4,7 @@ Microsoft Azure is a cloud computing service operated by Microsoft. Azure curren
 
 Visit the following resources to learn more:
 
-- [Azure Website](https://azure.microsoft.com/en-us/)
-- [Official Documentation](https://docs.microsoft.com/en-us/azure/)
-- [Azure Get Started Guide](https://azure.microsoft.com/en-ca/get-started/#explore-azure)
-- [Get to know Azure](https://azure.microsoft.com/en-us/explore/)
+- [@article@Azure Website](https://azure.microsoft.com/en-us/)
+- [@article@Official Documentation](https://docs.microsoft.com/en-us/azure/)
+- [@article@Azure Get Started Guide](https://azure.microsoft.com/en-ca/get-started/#explore-azure)
+- [@article@Get to know Azure](https://azure.microsoft.com/en-us/explore/)

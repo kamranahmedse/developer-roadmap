@@ -4,5 +4,5 @@ Null object pattern is a design pattern that is used to represent a null value w
 
 Visit the following resources to learn more:
 
-- [Design Patterns - Null Object Pattern](https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm)
-- [Null Object Design Pattern - Geeks for Geeks](https://www.geeksforgeeks.org/null-object-design-pattern/)
+- [@article@Design Patterns - Null Object Pattern](https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm)
+- [@article@Null Object Design Pattern - Geeks for Geeks](https://www.geeksforgeeks.org/null-object-design-pattern/)

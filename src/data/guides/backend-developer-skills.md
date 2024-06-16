@@ -6,6 +6,7 @@ excludedBySlug: '/backend/developer-skills'
 seo:
   title: '8 In-Demand Backend Developer Skills to Master'
   description: 'Learn what the essential backend developer skills are that you should learn and master to advance in your career.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-skills-30wwu.jpg'
 isNew: false
 type: 'textual'
 date: 2024-02-27
@@ -37,9 +38,9 @@ So, let's get going!
 
 Before we move on and start discussing the different backend development skills you should focus on, let’s first understand what a backend developer is. After all, if you’re looking to actually become a backend developer, you’ll need this.
 
-A backend developer focuses entirely on writing business logic for an application and much of the supporting logic as well. 
+A backend developer focuses entirely on writing business logic for an application and much of the supporting logic as well.
 
-That said, there might be applications where the business logic is split into the frontend and the backend.  However, while the frontend dev might have to share their time between UI code and business logic, the backend dev will focus most of their time on core business logic. That’s the main difference between the two.
+That said, there might be applications where the business logic is split into the frontend and the backend. However, while the frontend dev might have to share their time between UI code and business logic, the backend dev will focus most of their time on core business logic. That’s the main difference between the two.
 
 ![UI vs Backend](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1709056806118.png)
 
@@ -83,7 +84,7 @@ For example, take a look at the period between 2012 and 2015; in just 3 years, 9
 
 Some of those languages are very relevant to this day, such as TypeScript and Rust, while others, such as Hack and Crystal, might be known to only a few in very niche sectors.
 
-Of course, it’s impossible to predict which programming language will become a standard. However, the skill that you need to hone is that of keeping an eye on the industry to spot new and emerging trends. 
+Of course, it’s impossible to predict which programming language will become a standard. However, the skill that you need to hone is that of keeping an eye on the industry to spot new and emerging trends.
 
 ### The importance of supporting frameworks
 
@@ -110,7 +111,7 @@ The following diagram shows an example of what a very simple system’s architec
 
 While the example is oversimplified, it gives you an idea of what the practice of “architecting a system” is.
 
-Essentially, architecting a system means coming up with concepts that represent different aspects of the solution and then deciding how you want to make them interact with each other. 
+Essentially, architecting a system means coming up with concepts that represent different aspects of the solution and then deciding how you want to make them interact with each other.
 
 Why is architecture so important here? Because it gives you properties such as code encapsulation, separation of concerns, reusability, and even scalability as a byproduct of the architecture itself.
 
@@ -120,12 +121,12 @@ Let’s take a quick look at some of the most common architectures used for crea
 
 There are too many different architectural styles and patterns to cover them all inside a single article, but let's just look at some of the most common ones and how they can help you while working on your backend system.
 
-- **Monolithic architecture:** In a monolithic architecture, the entire application is built as a single, tightly coupled unit. All components (frontend, backend, database, etc) are part of the same codebase.  This is a great first architecture because it feels very natural to develop under, and if your project is not going to grow out of proportion, then you will probably not hit any of the cons.
+- **Monolithic architecture:** In a monolithic architecture, the entire application is built as a single, tightly coupled unit. All components (frontend, backend, database, etc) are part of the same codebase. This is a great first architecture because it feels very natural to develop under, and if your project is not going to grow out of proportion, then you will probably not hit any of the cons.
 - **Microservice-based architecture:** The application is divided into small, independent services, each responsible for a specific business capability. These services communicate through APIs.
 - **Service-Oriented Architecture:** Similar to microservices, a service-oriented architecture splits functionality into individual services. The main difference is that these services aren’t as granular as a microservice, so they might incorporate functionalities related to different business entities.
 - **Event-driven architecture:** With this architecture, each system (or service) responds to events (e.g., user actions and messages from other services) by triggering actions or processes. All services communicate with each other indirectly through an event bus (also known as a “message bus”), so it removes the possibility of having two or more services coupled with each other (meaning that they can’t be treated individually).
 - **Serverless Architecture:** Also known as Function as a Service (FaaS), serverless architecture allows you to focus on writing code without worrying about the server where they’ll run. Functions are executed in response to events without the need for provisioning or managing servers (this is done FOR you automatically).
-- **Microkernel architecture:** This architecture lets you build the core, essential functionality into a small microkernel and have the rest of the features built as plugins that can be added, removed  or exchanged easily.
+- **Microkernel architecture:** This architecture lets you build the core, essential functionality into a small microkernel and have the rest of the features built as plugins that can be added, removed or exchanged easily.
 
 And if you want to know more about the patterns and principles mentioned here, please check out the [Software Design and Architecture roadmap](https://roadmap.sh/software-design-architecture).
 
@@ -141,9 +142,9 @@ These are the standard structured databases (A.K.A relational databases) where y
 
 ### NoSQL databases
 
-As the name implies, these are not your standard SQL databases; in fact, within this category, there are columnar databases, document-based ones (such as MongoDB), key-value-based ones (like Redis), and more.  They don’t use predefined data structures, giving you more flexibility and control over what you can store and how you store it. Backend developers will deal with only a handful of these, as there are many different sub-types, and more are created every year.
+As the name implies, these are not your standard SQL databases; in fact, within this category, there are columnar databases, document-based ones (such as MongoDB), key-value-based ones (like Redis), and more. They don’t use predefined data structures, giving you more flexibility and control over what you can store and how you store it. Backend developers will deal with only a handful of these, as there are many different sub-types, and more are created every year.
 
-Some examples of these databases are: 
+Some examples of these databases are:
 
 - MongoDB, a document-based database (see here a mongoDB roadmap if you’re interested).
 - Redis, an in-memory key-value pair database.
@@ -166,7 +167,7 @@ Now, if you’re inside the “**The System**” box, then you need to understan
 
 Don’t worry though, for both situations, there are always frameworks and libraries you can use to simplify your task and ensure you’re following the proper industry standards.
 
-### What are the most common API types? 
+### What are the most common API types?
 
 The most common types of APIs used in the industry currently are REST and GraphQL.
 
@@ -189,7 +190,7 @@ Version control references the ability for you and other developers to share cod
 
 While Git is the industry standard at the moment, GitHub has created such a popular platform around Git, that it almost makes it mandatory to learn about.
 
-So go ahead and create an account, browse what others are doing, and upload your own personal projects. It’s definitely a great way to learn. 
+So go ahead and create an account, browse what others are doing, and upload your own personal projects. It’s definitely a great way to learn.
 
 ### What should you learn about Git?
 
@@ -198,7 +199,7 @@ If you’re picking up Git as your version control system of choice, there are t
 - **The basics.** Clearly understanding how Git works and the basic commands to add, push and pull changes. You should aim to learn enough about them to feel comfortable using them on your day-to-day (because you will).
 - **Branching strategies.** Sadly, using Git alone is not enough. While through Git you can already start versioning your code, when the project is complex enough and your team big enough, the tool alone will not be enough. You’ll have to come up with [branching strategies](https://learngitbranching.js.org/?locale=es_ES) to organize the whole team’s workflow.
 
-Keep in mind that Git and Git branching are not trivial topics, and they’ll take a while to master. So, while you should give yourself time to learn about them, also make sure you check with others (or use tools such as ChatGPT) to validate your commands before using them. Remember,  a wrong Git command or a wrong workflow can cause major problems within a project, especially if there are many developers working on the same codebase.
+Keep in mind that Git and Git branching are not trivial topics, and they’ll take a while to master. So, while you should give yourself time to learn about them, also make sure you check with others (or use tools such as ChatGPT) to validate your commands before using them. Remember, a wrong Git command or a wrong workflow can cause major problems within a project, especially if there are many developers working on the same codebase.
 
 ## Testing
 

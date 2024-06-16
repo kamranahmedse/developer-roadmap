@@ -4,5 +4,5 @@ Pipes to transform strings, currency amounts, dates, and other data for display.
 
 Visit the following resources to learn more:
 
-- [Create a custom pipe - angular.io](https://angular.io/guide/pipes-custom-data-trans)
-- [Create a custom pipe video for Beginners](https://www.youtube.com/watch?v=P2587FN4Y0w)
+- [@official@Create a custom pipe - angular.io](https://angular.io/guide/pipes-custom-data-trans)
+- [@video@Create a custom pipe video for Beginners](https://www.youtube.com/watch?v=P2587FN4Y0w)

@@ -4,6 +4,6 @@ BDDfy is an open-source, fluent, and extensible BDD (Behavior-Driven Development
 
 To learn more, visit the following links:
 
-- [Using BDDfy for Unit Tests](https://www.michael-whelan.net/using-bddfy-for-unit-tests/)
-- [Introducing BDDfy in ASP.NET](https://codeproject.com/Articles/205381/Introducing-BDDfy-the-simplest-BDD-framework-for-N)
-- [Implement BDD with .NET](https://www.youtube.com/watch?v=GYN_srjAvyk)
+- [@article@Using BDDfy for Unit Tests](https://www.michael-whelan.net/using-bddfy-for-unit-tests/)
+- [@article@Introducing BDDfy in ASP.NET](https://codeproject.com/Articles/205381/Introducing-BDDfy-the-simplest-BDD-framework-for-N)
+- [@video@Implement BDD with .NET](https://www.youtube.com/watch?v=GYN_srjAvyk)

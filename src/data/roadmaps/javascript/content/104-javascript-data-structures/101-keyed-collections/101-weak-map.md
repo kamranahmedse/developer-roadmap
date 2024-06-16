@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
-- [WeakMap and WeakSet](https://javascript.info/weakmap-weakset)
+- [@article@WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+- [@article@WeakMap and WeakSet](https://javascript.info/weakmap-weakset)

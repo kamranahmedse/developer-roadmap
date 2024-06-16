@@ -4,6 +4,6 @@ Variable is the name given to a memory location to store a value of a specific [
 
 Visit the following resources to learn more:
 
-- [Go Variables](https://go.dev/tour/basics/8)
-- [Go by Example: Variables](https://gobyexample.com/variables)
-- [w3schools Go variables](https://www.w3schools.com/go/go_variables.php)
+- [@official@Go Variables](https://go.dev/tour/basics/8)
+- [@article@Go by Example: Variables](https://gobyexample.com/variables)
+- [@article@w3schools Go variables](https://www.w3schools.com/go/go_variables.php)

@@ -8,4 +8,4 @@ Binary trees are a 2-ary tree, with branching factor = 2
 
 Visit the following resources to learn more:
 
-- [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
+- [@article@K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)

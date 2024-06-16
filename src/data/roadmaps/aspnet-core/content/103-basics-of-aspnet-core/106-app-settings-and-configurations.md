@@ -8,6 +8,6 @@ In the ASP.NET Core framework, app settings and configurations refer to the proc
 
 For more information, visit the following links:
 
-- [What is Azure App Configuration?](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview)
-- [What are App Configurations and how do I work with them?](https://support.procore.com/faq/what-are-app-configurations)
-- [Configuration & AppSettings](https://docs.servicestack.net/appsettings)
+- [@article@What is Azure App Configuration?](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview)
+- [@article@What are App Configurations and how do I work with them?](https://support.procore.com/faq/what-are-app-configurations)
+- [@article@Configuration & AppSettings](https://docs.servicestack.net/appsettings)

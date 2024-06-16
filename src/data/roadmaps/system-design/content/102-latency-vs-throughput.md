@@ -6,6 +6,6 @@ Generally, you should aim for maximal throughput with acceptable latency.
 
 Learn more from the following links:
 
-- [System Design: Latency vs Throughput](https://cs.fyi/guide/latency-vs-throughput/)
-- [Understanding Latency versus Throughput](https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput)
-- [Latency and Throughput - MIT](https://www.youtube.com/watch?v=3HIV4MnLGCw)
+- [@article@System Design: Latency vs Throughput](https://cs.fyi/guide/latency-vs-throughput/)
+- [@article@Understanding Latency versus Throughput](https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput)
+- [@video@Latency and Throughput - MIT](https://www.youtube.com/watch?v=3HIV4MnLGCw)

@@ -6,6 +6,6 @@ ELMAH is widely used for error logging, management and tracking in ASP.NET appli
 
 For more resources, visit the following links:
 
-- [Introduction To ELMAH](https://www.c-sharpcorner.com/article/introduction-to-elmah-in-mvc/)
-- [How to Configure Elmah in ASP.net MVC](https://www.youtube.com/watch?v=oqheVBZR0PM)
-- [ELMAH Integration in ASP.NET MVC Application](https://www.ecanarys.com/Blogs/ArticleID/184/ELMAH-Integration-in-ASP-NET-MVC-Application)
+- [@article@Introduction To ELMAH](https://www.c-sharpcorner.com/article/introduction-to-elmah-in-mvc/)
+- [@video@How to Configure Elmah in ASP.net MVC](https://www.youtube.com/watch?v=oqheVBZR0PM)
+- [@article@ELMAH Integration in ASP.NET MVC Application](https://www.ecanarys.com/Blogs/ArticleID/184/ELMAH-Integration-in-ASP-NET-MVC-Application)

@@ -6,6 +6,6 @@ NLog is a powerful, flexible, and easy-to-use logging library that can be used i
 
 For more resources, visit the following links:
 
-- [Logging with NLog in ASP.NET](https://codewithmukesh.com/blog/logging-with-nlog-in-aspnet-core/)
-- [Introduction To NLog With ASP.NET Core](https://www.c-sharpcorner.com/article/introduction-to-nlog-with-asp-net-core2/)
-- [Tutorial of Nlog with ASP.NET](https://www.youtube.com/watch?v=PnlxRmHg0lU)
+- [@article@Logging with NLog in ASP.NET](https://codewithmukesh.com/blog/logging-with-nlog-in-aspnet-core/)
+- [@article@Introduction To NLog With ASP.NET Core](https://www.c-sharpcorner.com/article/introduction-to-nlog-with-asp-net-core2/)
+- [@video@Tutorial of Nlog with ASP.NET](https://www.youtube.com/watch?v=PnlxRmHg0lU)

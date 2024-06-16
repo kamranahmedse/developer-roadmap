@@ -11,5 +11,5 @@ All of these storage options are supported through third-party packages, which a
 
 Visit the following links to learn more:
 
-- [Storage - Flutter Tutorial](https://www.youtube.com/watch?v=UpKrhZ0Hppks)
-- [Cloud Storage in Flutter](https://firebase.flutter.dev/docs/storage/overview/)
+- [@video@Storage - Flutter Tutorial](https://www.youtube.com/watch?v=UpKrhZ0Hppks)
+- [@article@Cloud Storage in Flutter](https://firebase.flutter.dev/docs/storage/overview/)

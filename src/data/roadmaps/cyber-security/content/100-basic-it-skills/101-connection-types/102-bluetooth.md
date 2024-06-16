@@ -16,5 +16,5 @@ Below are some key points about Bluetooth:
 
 In conclusion, Bluetooth offers a convenient means of connecting devices wirelessly. While it provides reasonably secure communication, users must stay informed about potential vulnerabilities and follow good security practices to safeguard their devices.
 
-- [Bluetooth security risks to know (and how to avoid them)](https://us.norton.com/blog/mobile/bluetooth-security)
-- [Bluetooth security best practices from official website](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/)
+- [@article@Bluetooth security risks to know (and how to avoid them)](https://us.norton.com/blog/mobile/bluetooth-security)
+- [@official@Bluetooth security best practices from official website](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/)

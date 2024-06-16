@@ -4,7 +4,7 @@ Maze solving problem is a classic problem in computer science. It is a problem w
 
 Visit the following resources to learn more:
 
-- [Maze Solving Algorithms](https://github.com/john-science/mazelib/blob/main/docs/MAZE_SOLVE_ALGOS.md)
-- [Maze Solving Algorithms](https://kidscodecs.com/maze-solving-algorithms/)
-- [Maze Solving - Computerphile](https://www.youtube.com/watch?v=rop0W4QDOUI)
-- [Python Maze Solving Tutorial (Using Recursion)](https://www.youtube.com/watch?v=XP94WC_XnZc)
+- [@opensource@Maze Solving Algorithms](https://github.com/john-science/mazelib/blob/main/docs/MAZE_SOLVE_ALGOS.md)
+- [@article@Maze Solving Algorithms](https://kidscodecs.com/maze-solving-algorithms/)
+- [@video@Maze Solving - Computerphile](https://www.youtube.com/watch?v=rop0W4QDOUI)
+- [@video@Python Maze Solving Tutorial (Using Recursion)](https://www.youtube.com/watch?v=XP94WC_XnZc)

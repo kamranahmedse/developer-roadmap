@@ -5,6 +5,6 @@ NoSQL is often described as a BASE system (**B**asically **A**vailable, **S**oft
 
 Visit the following resources to learn more:
 
-- [NoSQL Explained](https://www.mongodb.com/nosql-explained)
-- [How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
-- [SQL vs NoSQL Explained](https://www.youtube.com/watch?v=ruz-vK8IesE)
+- [@article@NoSQL Explained](https://www.mongodb.com/nosql-explained)
+- [@video@How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
+- [@video@SQL vs NoSQL Explained](https://www.youtube.com/watch?v=ruz-vK8IesE)

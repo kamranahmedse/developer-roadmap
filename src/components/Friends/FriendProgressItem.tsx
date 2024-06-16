@@ -7,12 +7,14 @@ import { useToast } from '../../hooks/use-toast';
 import { TrashIcon } from '../ReactIcons/TrashIcon';
 import { AddedUserIcon } from '../ReactIcons/AddedUserIcon';
 import { AddUserIcon } from '../ReactIcons/AddUserIcon';
+import type { AllowedRoadmapRenderer } from '../../lib/roadmap';
 
 type FriendProgressItemProps = {
   friend: ListFriendsResponse[0];
   onShowResourceProgress: (
     resourceId: string,
-    isCustomResource?: boolean
+    isCustomResource?: boolean,
+    renderer?: AllowedRoadmapRenderer,
   ) => void;
   onReload: () => void;
 };
@@ -27,7 +29,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
     pageProgressMessage.set('Please wait...');
     const { response, error } = await httpDelete(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-friend/${userId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -43,7 +45,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
     pageProgressMessage.set('Please wait...');
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-add-friend/${userId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -92,7 +94,8 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                     onClick={() =>
                       onShowResourceProgress(
                         progress.resourceId,
-                        progress.isCustomResource
+                        progress.isCustomResource,
+                        progress?.renderer,
                       )
                     }
                     className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
@@ -160,7 +163,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                       deleteFriend(friend.userId, 'Friend removed').finally(
                         () => {
                           pageProgressMessage.set('');
-                        }
+                        },
                       );
                     }}
                   >
@@ -198,7 +201,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                   addFriend(friend.userId, 'Friend request accepted').finally(
                     () => {
                       pageProgressMessage.set('');
-                    }
+                    },
                   );
                 }}
               >
@@ -225,7 +228,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                   deleteFriend(friend.userId, 'Friend request removed').finally(
                     () => {
                       pageProgressMessage.set('');
-                    }
+                    },
                   );
                 }}
               >
@@ -267,7 +270,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                     onClick={() => {
                       deleteFriend(
                         friend.userId,
-                        'Friend request withdrawn'
+                        'Friend request withdrawn',
                       ).finally(() => {
                         pageProgressMessage.set('');
                       });
@@ -304,7 +307,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                   addFriend(friend.userId, 'Friend request accepted').finally(
                     () => {
                       pageProgressMessage.set('');
-                    }
+                    },
                   );
                 }}
                 className="mb-1 block w-full max-w-[150px] rounded-md bg-black py-1.5 text-sm text-white"
@@ -316,7 +319,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                 onClick={() => {
                   deleteFriend(
                     friend.userId,
-                    'Friend request rejected'
+                    'Friend request rejected',
                   ).finally(() => {
                     pageProgressMessage.set('');
                   });

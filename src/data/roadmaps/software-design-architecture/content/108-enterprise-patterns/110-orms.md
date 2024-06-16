@@ -6,4 +6,4 @@ ORMs are designed to abstract away the complexity of working with a relational d
 
 Learn more from the following links:
 
-- [Why do you need an ORM?](https://enterprisecraftsmanship.com/posts/do-you-need-an-orm/)
+- [@article@Why do you need an ORM?](https://enterprisecraftsmanship.com/posts/do-you-need-an-orm/)

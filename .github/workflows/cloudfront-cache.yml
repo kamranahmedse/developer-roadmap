@@ -1,10 +1,6 @@
 name: Clears Cloudfront Cache
 on:
-  # Allow manual Run
   workflow_dispatch:
-  # Run at midnight utc
-  schedule:
-    - cron: '0 0 * * *'
 jobs:
   aws_costs:
     runs-on: ubuntu-latest

@@ -10,4 +10,4 @@ Each of these patterns has its own advantages and disadvantages, and the choice 
 
 Have a look at the following resources to learn more:
 
-- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)
+- [@article@Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)

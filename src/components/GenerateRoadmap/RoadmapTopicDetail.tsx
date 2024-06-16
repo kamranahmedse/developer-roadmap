@@ -124,7 +124,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const openAIKey = getOpenAIKey();
 
   return (
-    <div className={'relative z-50'}>
+    <div className={'relative z-[90]'}>
       <div
         ref={topicRef}
         tabIndex={0}

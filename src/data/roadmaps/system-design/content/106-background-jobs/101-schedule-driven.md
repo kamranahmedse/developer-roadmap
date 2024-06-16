@@ -10,4 +10,4 @@ Typical examples of tasks that are suited to schedule-driven invocation include 
 
 Learn more from the following links:
 
-- [Schedule Driven - Background Jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#schedule-driven-triggers)
+- [@article@Schedule Driven - Background Jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#schedule-driven-triggers)

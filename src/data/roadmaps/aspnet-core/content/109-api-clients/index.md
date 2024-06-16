@@ -8,6 +8,6 @@ API clients in ASP.NET are typically built using the HttpClient class, which is 
 
 Visit the following links to learn more:
 
-- [How to Call a Web API From a .NET Client](https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client)
-- [Overview of Web API REST Service in ASP.NET](https://www.c-sharpcorner.com/article/consuming-asp-net-web-api-rest-service-in-asp-net-mvc-using-http-client/)
-- [Building an ASP.NET Web API With ASP.NET](https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial)
+- [@article@How to Call a Web API From a .NET Client](https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client)
+- [@article@Overview of Web API REST Service in ASP.NET](https://www.c-sharpcorner.com/article/consuming-asp-net-web-api-rest-service-in-asp-net-mvc-using-http-client/)
+- [@article@Building an ASP.NET Web API With ASP.NET](https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial)

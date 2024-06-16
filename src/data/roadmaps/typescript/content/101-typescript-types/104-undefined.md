@@ -20,4 +20,4 @@ function doSomething(x: string | null) {
 
 Learn more from the following links:
 
-- [null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined)
+- [@article@null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined)

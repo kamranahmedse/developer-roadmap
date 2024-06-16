@@ -8,5 +8,5 @@ Lighthouse provides a comprehensive and easy-to-use tool for identifying and fix
 
 Visit the following resources to learn more:
 
-- [Lighthouse - Google Developers](https://developers.google.com/web/tools/lighthouse)
-- [Improving Load Performance - Chrome DevTools 101](https://www.youtube.com/watch?v=5fLW5Q5ODiE)
+- [@article@Lighthouse - Google Developers](https://developers.google.com/web/tools/lighthouse)
+- [@video@Improving Load Performance - Chrome DevTools 101](https://www.youtube.com/watch?v=5fLW5Q5ODiE)

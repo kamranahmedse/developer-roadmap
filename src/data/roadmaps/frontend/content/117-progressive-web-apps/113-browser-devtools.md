@@ -16,4 +16,4 @@ Chrome DevTools is a powerful and essential tool for web developers, and it is w
 
 Visit the following resources to learn more:
 
-- [Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)
+- [@article@Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)

@@ -19,9 +19,9 @@ Migrations are a way to manage and evolve your database schema over time. As you
 
 Several tools are available that support migrations in PostgreSQL, including:
 
-- [Alembic](https://alembic.sqlalchemy.org/en/latest/): A lightweight and extensible migration tool written in Python that works seamlessly with SQLAlchemy (a popular ORM for Python).
-- [Flyway](https://flywaydb.org/): A popular Java-based database migration tool that supports PostgreSQL, among other databases.
-- [Liquibase](https://www.liquibase.org): An open-source, Java-based database migration tool that supports multiple databases including PostgreSQL.
-- [Node-pg-migrate](https://github.com/salsita/node-pg-migrate): A convenient migration tool for Node.js applications that use PostgreSQL as their back-end.
+- [@article@Alembic](https://alembic.sqlalchemy.org/en/latest/): A lightweight and extensible migration tool written in Python that works seamlessly with SQLAlchemy (a popular ORM for Python).
+- [@article@Flyway](https://flywaydb.org/): A popular Java-based database migration tool that supports PostgreSQL, among other databases.
+- [@article@Liquibase](https://www.liquibase.org): An open-source, Java-based database migration tool that supports multiple databases including PostgreSQL.
+- [@opensource@Node-pg-migrate](https://github.com/salsita/node-pg-migrate): A convenient migration tool for Node.js applications that use PostgreSQL as their back-end.
 
 To effectively leverage migrations for your PostgreSQL application, you should choose a migration tool that fits the technology stack and workflow of your team. Once you have selected a tool, start incorporating migrations into your application's development and deployment processes, ensuring consistency, testability, and easier collaboration on schema updates.

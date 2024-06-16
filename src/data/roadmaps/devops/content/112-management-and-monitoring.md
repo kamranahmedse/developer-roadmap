@@ -4,4 +4,4 @@ DevOps management and monitoring entails overseeing the entire development proce
 
 Visit the following resources to learn more:
 
-- [Management and Monitoring Get Started Guide](https://www.atlassian.com/devops/devops-tools/devops-monitoring)
+- [@article@Management and Monitoring Get Started Guide](https://www.atlassian.com/devops/devops-tools/devops-monitoring)

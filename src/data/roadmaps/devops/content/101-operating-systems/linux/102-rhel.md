@@ -8,8 +8,8 @@ RHEL derivatives are often used in enterprise environments because they offer th
 
 Visit the following resources to learn more:
 
-- [Red Hat Enterprise Linux Website](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
-- [RHEL Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
-- [RHEL Getting Started Guides](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/get-started)
-- [What is Red Hat Enterprise Linux (RHEL) - Red Hat](https://www.redhat.com/en/topics/linux/what-is-rhel)
-- [Learn Linux 101](https://developer.ibm.com/series/learn-linux-101/)
+- [@article@Red Hat Enterprise Linux Website](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
+- [@article@RHEL Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
+- [@article@RHEL Getting Started Guides](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/get-started)
+- [@article@What is Red Hat Enterprise Linux (RHEL) - Red Hat](https://www.redhat.com/en/topics/linux/what-is-rhel)
+- [@article@Learn Linux 101](https://developer.ibm.com/series/learn-linux-101/)

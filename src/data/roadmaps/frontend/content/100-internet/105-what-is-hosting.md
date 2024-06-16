@@ -4,6 +4,6 @@ Web hosting is an online service that allows you to publish your website files o
 
 Visit the following resources to learn more:
 
-- [What Is Web Hosting? Explained](https://www.youtube.com/watch?v=htbY9-yggB0)
-- [Different Types of Web Hosting Explained](https://www.youtube.com/watch?v=AXVZYzw8geg)
-- [Where to Host a Fullstack Project on a Budget](https://www.youtube.com/watch?v=Kx_1NYYJS7Q)
+- [@video@What Is Web Hosting? Explained](https://www.youtube.com/watch?v=htbY9-yggB0)
+- [@video@Different Types of Web Hosting Explained](https://www.youtube.com/watch?v=AXVZYzw8geg)
+- [@video@Where to Host a Fullstack Project on a Budget](https://www.youtube.com/watch?v=Kx_1NYYJS7Q)

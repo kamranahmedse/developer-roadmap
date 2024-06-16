@@ -4,4 +4,4 @@ CQRS stands for Command and Query Responsibility Segregation, a pattern that sep
 
 Learn more from the following links:
 
-- [CQRS pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+- [@article@CQRS pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)

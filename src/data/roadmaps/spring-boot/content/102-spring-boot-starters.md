@@ -4,6 +4,6 @@ Spring Boot starters are a set of convenient dependency descriptors that you can
 
 For more information, visit the following links:
 
-- [Intro to Spring Boot Starters](https://www.baeldung.com/spring-boot-starters)
-- [Spring Boot Starters](https://www.javatpoint.com/spring-boot-starters)
-- [Starters in Spring Boot](https://www.geeksforgeeks.org/spring-boot-starters/)
+- [@article@Intro to Spring Boot Starters](https://www.baeldung.com/spring-boot-starters)
+- [@article@Spring Boot Starters](https://www.javatpoint.com/spring-boot-starters)
+- [@article@Starters in Spring Boot](https://www.geeksforgeeks.org/spring-boot-starters/)

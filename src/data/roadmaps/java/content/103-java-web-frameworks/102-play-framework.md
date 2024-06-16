@@ -4,7 +4,7 @@ Play Framework is a high-productivity web application framework that allows the 
 
 Visit the following resources to learn more:
 
-- [Play Framework Website](https://www.playframework.com/)
-- [Introduction to Play Framework](https://youtu.be/bLrmnjPQsZc)
-- [What is Play Framework?](https://en.wikipedia.org/wiki/Play_Framework)
-- [Intro to Play Framework](https://www.baeldung.com/java-intro-to-the-play-framework)
+- [@official@Play Framework Website](https://www.playframework.com/)
+- [@video@Introduction to Play Framework](https://youtu.be/bLrmnjPQsZc)
+- [@article@What is Play Framework?](https://en.wikipedia.org/wiki/Play_Framework)
+- [@article@Intro to Play Framework](https://www.baeldung.com/java-intro-to-the-play-framework)

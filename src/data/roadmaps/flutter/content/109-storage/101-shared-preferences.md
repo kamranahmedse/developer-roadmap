@@ -4,5 +4,5 @@ In Flutter, SharedPreferences is a plugin allowing you to store data in key-valu
 
 Visit the following resources to learn more:
 
-- [shared_preferences - pub.dev package](https://pub.dev/packages/shared_preferences)
-- [How do I access Shared Preferences?](https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-access-shared-preferences)
+- [@article@shared_preferences - pub.dev package](https://pub.dev/packages/shared_preferences)
+- [@article@How do I access Shared Preferences?](https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-access-shared-preferences)

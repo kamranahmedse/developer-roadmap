@@ -6,7 +6,6 @@ A `select` blocks until one of its cases can run, then it executes that case. It
 
 Visit the following resources to learn more:
 
-- [Select](https://go.dev/tour/concurrency/5)
-- [Go by Example: Select](https://gobyexample.com/select)
-- [Select in Golang](https://www.geeksforgeeks.org/select-statement-in-go-language/)
-- [Select Statement](https://www.youtube.com/watch?v=1c7ttSJDMAI)
+- [@official@Select](https://go.dev/tour/concurrency/5)
+- [@article@Go by Example: Select](https://gobyexample.com/select)
+- [@video@Select Statement](https://www.youtube.com/watch?v=1c7ttSJDMAI)

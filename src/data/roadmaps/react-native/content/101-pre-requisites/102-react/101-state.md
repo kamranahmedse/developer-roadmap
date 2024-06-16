@@ -48,4 +48,4 @@ function App() {
 
 Remember: do not modify the state directly; always use the `setState()` method or updater function provided by the `useState` hook.
 
-- [Component State](https://react.dev/learn/managing-state)
+- [@official@Component State](https://react.dev/learn/managing-state)

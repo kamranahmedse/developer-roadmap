@@ -4,8 +4,8 @@ GitLab offers a CI/CD service that can be used as a SaaS offering or self-manage
 
 Visit the following resources to learn more:
 
-- [GitLab Website](https://gitlab.com/)
-- [GitLab Documentation](https://docs.gitlab.com/)
-- [Get Started with GitLab CI](https://docs.gitlab.com/ee/ci/quick_start/)
-- [Learn GitLab Tutorials](https://docs.gitlab.com/ee/tutorials/)
-- [GitLab CI/CD Examples](https://docs.gitlab.com/ee/ci/examples/)
+- [@opensource@GitLab Website](https://gitlab.com/)
+- [@article@GitLab Documentation](https://docs.gitlab.com/)
+- [@article@Get Started with GitLab CI](https://docs.gitlab.com/ee/ci/quick_start/)
+- [@article@Learn GitLab Tutorials](https://docs.gitlab.com/ee/tutorials/)
+- [@article@GitLab CI/CD Examples](https://docs.gitlab.com/ee/ci/examples/)

@@ -4,5 +4,5 @@ Resource health monitoring in Kubernetes involves monitoring the health and avai
 
 Learn more from the following resources:
 
-- [Dashboards with Grafana and Prometheus](https://www.youtube.com/watch?v=fzny5uUaAeY)
-- [How to Monitor a Kubernetes Cluster with Prometheus & Grafana](https://www.youtube.com/watch?v=YDtuwlNTzRc)
+- [@video@Dashboards with Grafana and Prometheus](https://www.youtube.com/watch?v=fzny5uUaAeY)
+- [@video@How to Monitor a Kubernetes Cluster with Prometheus & Grafana](https://www.youtube.com/watch?v=YDtuwlNTzRc)

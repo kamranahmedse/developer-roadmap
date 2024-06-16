@@ -6,5 +6,5 @@ A layered architecture is often used for large and complex systems, where the ne
 
 Learn more from the following links:
 
-- [Layered Architectures](https://www.youtube.com/watch?v=0kpTKLTx8f4)
-- [Get started with Layered Architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf)
+- [@video@Layered Architectures](https://www.youtube.com/watch?v=0kpTKLTx8f4)
+- [@article@Get started with Layered Architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf)

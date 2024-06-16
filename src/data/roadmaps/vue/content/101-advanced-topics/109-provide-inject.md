@@ -4,4 +4,4 @@ Usually, when we need to pass data from the parent to a child component, we use 
 
 Visit the following resources to learn more:
 
-- [Provide / Inject in Vue.js](https://vuejs.org/guide/components/provide-inject.html)
+- [@article@Provide / Inject in Vue.js](https://vuejs.org/guide/components/provide-inject.html)

@@ -4,4 +4,4 @@ Consolidate multiple tasks or operations into a single computational unit. This 
 
 To learn more, visit the following links:
 
-- [Compute Resource Consolidation pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation)
+- [@article@Compute Resource Consolidation pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation)

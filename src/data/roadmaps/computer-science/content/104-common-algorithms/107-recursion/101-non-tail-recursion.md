@@ -6,7 +6,7 @@ In “non-tail recursion”, there are outstanding operations after the recursiv
 
 Visit the following resources to learn more:
 
-- [What is non-tail recursion?](https://www.quora.com/What-is-non-tail-recursion)
-- [Tail vs Non-Tail Recursion](https://www.baeldung.com/cs/tail-vs-non-tail-recursion)
-- [Recursion (Solved Problem 1)](https://www.youtube.com/watch?v=IVLUGb_gDDE)
-- [Types of Recursion (Part 2) | Tail & Non-tail Recursion](https://www.youtube.com/watch?v=HIt_GPuD7wk)
+- [@article@What is non-tail recursion?](https://www.quora.com/What-is-non-tail-recursion)
+- [@article@Tail vs Non-Tail Recursion](https://www.baeldung.com/cs/tail-vs-non-tail-recursion)
+- [@video@Recursion (Solved Problem 1)](https://www.youtube.com/watch?v=IVLUGb_gDDE)
+- [@video@Types of Recursion (Part 2) | Tail & Non-tail Recursion](https://www.youtube.com/watch?v=HIt_GPuD7wk)

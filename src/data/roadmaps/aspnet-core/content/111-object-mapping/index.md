@@ -6,6 +6,6 @@ There are several libraries available for object mapping in ASP.NET, such as Aut
 
 Visit the following links to learn more:
 
-- [Building a Fast Object-to-Object Mapper in .NET](https://www.twilio.com/blog/building-blazing-fast-object-mapper-c-sharp-net-core)
-- [Overview of Object Mapping in ASP.NET](https://docs.abp.io/en/abp/latest/Object-To-Object-Mapping)
-- [Comparison of Object Mapper Libraries](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
+- [@article@Building a Fast Object-to-Object Mapper in .NET](https://www.twilio.com/blog/building-blazing-fast-object-mapper-c-sharp-net-core)
+- [@article@Overview of Object Mapping in ASP.NET](https://docs.abp.io/en/abp/latest/Object-To-Object-Mapping)
+- [@article@Comparison of Object Mapper Libraries](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)

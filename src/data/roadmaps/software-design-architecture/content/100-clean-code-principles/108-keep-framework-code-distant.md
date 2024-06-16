@@ -14,4 +14,4 @@ By following these best practices, the system architecture will be more maintain
 
 Learn more from the following links:
 
-- [Clean architecture](https://pusher.com/tutorials/clean-architecture-introduction/)
+- [@article@Clean architecture](https://pusher.com/tutorials/clean-architecture-introduction/)

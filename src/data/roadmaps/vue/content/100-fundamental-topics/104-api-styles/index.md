@@ -4,4 +4,4 @@ Up until Vue 2, there was one way to create components in Vue. With Vue 3, a new
 
 Visit the following resources to learn more:
 
-- [The Difference Between the Composition API and Options API in Vue](https://fjolt.com/article/vue-composition-api-vs-options-api)
+- [@article@The Difference Between the Composition API and Options API in Vue](https://fjolt.com/article/vue-composition-api-vs-options-api)

@@ -8,7 +8,7 @@ gRPC uses the protocol buffer language to define the structure of the data that 
 
 Visit the following resources to learn more:
 
-- [gRPC Website](https://grpc.io/)
-- [gRPC Introduction](https://grpc.io/docs/what-is-grpc/introduction/)
-- [gRPC Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/)
-- [Stephane Maarek - gRPC Introduction](https://youtu.be/XRXTsQwyZSU)
+- [@official@gRPC Website](https://grpc.io/)
+- [@official@gRPC Introduction](https://grpc.io/docs/what-is-grpc/introduction/)
+- [@official@gRPC Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/)
+- [@video@Stephane Maarek - gRPC Introduction](https://youtu.be/XRXTsQwyZSU)

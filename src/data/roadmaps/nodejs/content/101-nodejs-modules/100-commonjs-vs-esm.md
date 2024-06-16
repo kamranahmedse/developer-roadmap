@@ -4,8 +4,8 @@ CommonJS and ES (EcmaScript) are module systems used in Node. CommonJS is the de
 
 Visit the following resources to learn more:
 
-- [CommonJS vs ESM](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
-- [Using CommonJS](https://www.javascripttutorial.net/nodejs-tutorial/nodejs-modules/)
-- [Using ES Modules](https://blog.logrocket.com/es-modules-in-node-today/)
-- [Using Modules](https://www.youtube.com/watch?v=pP4kjXykbio)
-- [CommonJS vs. ES Modules: Modules and Imports in NodeJS](https://reflectoring.io/nodejs-modules-imports/)
+- [@article@CommonJS vs ESM](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
+- [@article@Using CommonJS](https://www.javascripttutorial.net/nodejs-tutorial/nodejs-modules/)
+- [@article@Using ES Modules](https://blog.logrocket.com/es-modules-in-node-today/)
+- [@video@Using Modules](https://www.youtube.com/watch?v=pP4kjXykbio)
+- [@article@CommonJS vs. ES Modules: Modules and Imports in NodeJS](https://reflectoring.io/nodejs-modules-imports/)

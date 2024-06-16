@@ -21,7 +21,7 @@ Overall, Spring IoC container provides a central location to manage the lifecycl
 
 More more resources, check out the following links:
 
-- [Spring IoC, Spring Bean Example Tutorial](https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial)
-- [Intro to Inversion of Control with Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
-- [IoC Container](https://www.javatpoint.com/ioc-container)
-- [Spring – IoC Container](https://www.geeksforgeeks.org/spring-ioc-container/)
+- [@article@Spring IoC, Spring Bean Example Tutorial](https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial)
+- [@article@Intro to Inversion of Control with Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
+- [@article@IoC Container](https://www.javatpoint.com/ioc-container)
+- [@article@Spring – IoC Container](https://www.geeksforgeeks.org/spring-ioc-container/)

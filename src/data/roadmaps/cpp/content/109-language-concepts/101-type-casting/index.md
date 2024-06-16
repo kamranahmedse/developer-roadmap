@@ -43,4 +43,4 @@ Type casting is the process of converting a value from one data type to another.
 
 Remember to use the right type of casting based on the specific situation and follow good programming practices in order to ensure a safe and efficient code.
 
-- [Casting in C++](https://youtu.be/pWZS1MtxI-A)
+- [@video@Casting in C++](https://youtu.be/pWZS1MtxI-A)

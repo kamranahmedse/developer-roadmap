@@ -4,6 +4,6 @@ NativeScript is an open source framework for creating native iOS and Android app
 
 Visit the following resources to learn more:
 
-- [Official Website](https://nativescript.org/)
-- [Official Getting Started to NativeScript](https://docs.nativescript.org/)
-- [NativeScript Tutorial for Beginners](https://www.youtube.com/watch?v=DcCSq2Y9bow)
+- [@official@Official Website](https://nativescript.org/)
+- [@article@Official Getting Started to NativeScript](https://docs.nativescript.org/)
+- [@video@NativeScript Tutorial for Beginners](https://www.youtube.com/watch?v=DcCSq2Y9bow)

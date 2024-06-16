@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [Go Ranges](https://go.dev/tour/moretypes/16)
-- [Go by Example: Range](https://gobyexample.com/range)
-- [Go ranges basic patterns](https://yourbasic.org/golang/for-loop-range-array-slice-map-channel/)
+- [@official@Go Ranges](https://go.dev/tour/moretypes/16)
+- [@article@Go by Example: Range](https://gobyexample.com/range)
+- [@article@Go ranges basic patterns](https://yourbasic.org/golang/for-loop-range-array-slice-map-channel/)

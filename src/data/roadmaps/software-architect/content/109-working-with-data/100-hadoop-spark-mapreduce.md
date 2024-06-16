@@ -6,5 +6,5 @@ Hadoop MapReduce is a software framework for easily writing applications which p
 
 Visit the following resources to learn more:
 
-- [Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce)
-- [Hadoop explained in 5 minutes](https://www.youtube.com/watch?v=aReuLtY0YMI)
+- [@article@Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce)
+- [@video@Hadoop explained in 5 minutes](https://www.youtube.com/watch?v=aReuLtY0YMI)

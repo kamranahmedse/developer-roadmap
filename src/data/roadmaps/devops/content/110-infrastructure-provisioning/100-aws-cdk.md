@@ -4,8 +4,8 @@ The AWS Cloud Development Kit (AWS CDK) is an open-source software development f
 
 Visit the following resources to learn more:
 
-- [AWS CDK Website](https://aws.amazon.com/cdk/)
-- [Official Documentation](https://docs.aws.amazon.com/cdk/index.html)
-- [What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
-- [AWS SDK Getting Started Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
-- [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
+- [@article@AWS CDK Website](https://aws.amazon.com/cdk/)
+- [@article@Official Documentation](https://docs.aws.amazon.com/cdk/index.html)
+- [@article@What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+- [@article@AWS SDK Getting Started Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
+- [@opensource@AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)

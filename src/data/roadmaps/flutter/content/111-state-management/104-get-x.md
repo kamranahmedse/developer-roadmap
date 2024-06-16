@@ -4,5 +4,5 @@ GetX is a lightweight and powerful solution for state management and navigation 
 
 Learn more from the following links:
 
-- [GetX in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#getx)
-- [Complete GetX State Management | Flutter](https://www.youtube.com/watch?v=CNpXbeI_slw)
+- [@article@GetX in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#getx)
+- [@video@Complete GetX State Management | Flutter](https://www.youtube.com/watch?v=CNpXbeI_slw)

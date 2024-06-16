@@ -13,4 +13,4 @@ SOPS is commonly used in DevOps environments to securely store and manage secret
 
 Visit the following resources to learn more:
 
-- [Mozilla SOPS - Official Website](https://github.com/mozilla/sops)
+- [@opensource@Mozilla SOPS - Official Website](https://github.com/mozilla/sops)

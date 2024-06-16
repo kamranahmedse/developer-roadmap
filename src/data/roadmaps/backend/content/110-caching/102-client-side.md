@@ -4,4 +4,4 @@ Client-side caching is the storage of network data to a local cache for future r
 
 Visit the following resources to learn more:
 
-- [Everything you need to know about HTTP Caching](https://www.youtube.com/watch?v=HiBDZgTNpXY)
+- [@video@Everything you need to know about HTTP Caching](https://www.youtube.com/watch?v=HiBDZgTNpXY)

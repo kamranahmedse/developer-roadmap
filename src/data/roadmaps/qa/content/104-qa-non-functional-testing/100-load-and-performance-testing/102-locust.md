@@ -10,5 +10,5 @@ Locust is an easy-to-use, scriptable and scalable performance testing tool. You 
 
 Visit the following resources to learn more:
 
-- [Locust Website](https://locust.io/)
-- [Learn Locust](https://www.youtube.com/playlist?list=PLJ9A48W0kpRKMCzJARCObgJs3SinOewp5)
+- [@official@Locust Website](https://locust.io/)
+- [@video@Learn Locust](https://www.youtube.com/playlist?list=PLJ9A48W0kpRKMCzJARCObgJs3SinOewp5)

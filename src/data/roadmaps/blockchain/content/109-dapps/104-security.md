@@ -4,6 +4,6 @@ dApps face unique security challenges as they run on immutable blockchains. dApp
 
 Visit the following resources to learn more:
 
-- [DAPP Security Standards](https://github.com/Dexaran/DAPP-security-standards/blob/master/README.md)
-- [dApp Security Considerations](https://livebook.manning.com/book/building-ethereum-dapps/chapter-14/)
-- [dApp Security:All You Need to Know](https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security)
+- [@opensource@DAPP Security Standards](https://github.com/Dexaran/DAPP-security-standards/blob/master/README.md)
+- [@article@dApp Security Considerations](https://livebook.manning.com/book/building-ethereum-dapps/chapter-14/)
+- [@article@dApp Security:All You Need to Know](https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security)

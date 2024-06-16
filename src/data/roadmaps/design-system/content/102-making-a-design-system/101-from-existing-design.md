@@ -4,4 +4,4 @@ If you are creating a Design System from pre-existing product design, there is a
 
 Visit the following resources to learn more:
 
-- [Create a Design System with Figma - Full Course](https://www.youtube.com/watch?v=RYDiDpW2VkM)
+- [@video@Create a Design System with Figma - Full Course](https://www.youtube.com/watch?v=RYDiDpW2VkM)

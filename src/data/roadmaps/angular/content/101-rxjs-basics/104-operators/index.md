@@ -32,5 +32,5 @@ const observable = interval(1000 /* number of milliseconds */);
 
 Visit the following resources to learn more:
 
-- [List of creation operators](https://rxjs.dev/guide/operators#creation-operators-list)
-- [Full RxJS Operators Documentation](https://rxjs.dev/guide/operators)
+- [@article@List of creation operators](https://rxjs.dev/guide/operators#creation-operators-list)
+- [@article@Full RxJS Operators Documentation](https://rxjs.dev/guide/operators)

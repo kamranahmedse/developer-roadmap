@@ -11,6 +11,8 @@ export function resourceTitleFromId(id: string): string {
     .join(' ');
 }
 
+export type AllowedRoadmapRenderer = 'balsamiq' | 'editor';
+
 export interface RoadmapFrontmatter {
   pdfUrl: string;
   order: number;
@@ -53,6 +55,7 @@ export interface RoadmapFrontmatter {
     changefreq: string;
   };
   tags: string[];
+  renderer?: AllowedRoadmapRenderer;
 }
 
 export type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter> & {

@@ -16,6 +16,6 @@ These are just a few examples of the many annotations that are available in Spri
 
 Visit the following link for more details on annotations in spring boot:
 
-- [Spring Annotations](https://www.digitalocean.com/community/tutorials/spring-annotations)
-- [Spring Boot Annotations](https://www.javatpoint.com/spring-boot-annotations)
-- [Annotations in Spring](https://www.techferry.com/articles/spring-annotations.html)
+- [@article@Spring Annotations](https://www.digitalocean.com/community/tutorials/spring-annotations)
+- [@article@Spring Boot Annotations](https://www.javatpoint.com/spring-boot-annotations)
+- [@article@Annotations in Spring](https://www.techferry.com/articles/spring-annotations.html)

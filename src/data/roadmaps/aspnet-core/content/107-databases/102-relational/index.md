@@ -6,5 +6,5 @@ The main feature of a relational database is the ability to establish relationsh
 
 For more information, visit the following links:
 
-- [Introduction to Working with Database in ASP.NET](https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/5-working-with-data)
-- [Implement a Relational Database with ASP.NET](https://openclassrooms.com/en/courses/5671811-implement-a-relational-database-with-asp-net-core)
+- [@article@Introduction to Working with Database in ASP.NET](https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/5-working-with-data)
+- [@article@Implement a Relational Database with ASP.NET](https://openclassrooms.com/en/courses/5671811-implement-a-relational-database-with-asp-net-core)

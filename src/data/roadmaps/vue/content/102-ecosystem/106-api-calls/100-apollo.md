@@ -4,7 +4,7 @@ Apollo is a platform for building a unified graph, a communication layer that he
 
 Visit the following resources to learn more:
 
-- [Apollo Website](https://www.apollographql.com)
-- [Official Docs](https://www.apollographql.com/docs/)
-- [Official YouTube Channel](https://www.youtube.com/c/ApolloGraphQL/)
-- [GraphQL With React Tutorial - Apollo Client](https://www.youtube.com/watch?v=YyUWW04HwKY)
+- [@article@Apollo Website](https://www.apollographql.com)
+- [@article@Official Docs](https://www.apollographql.com/docs/)
+- [@video@Official YouTube Channel](https://www.youtube.com/c/ApolloGraphQL/)
+- [@video@GraphQL With React Tutorial - Apollo Client](https://www.youtube.com/watch?v=YyUWW04HwKY)

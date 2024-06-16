@@ -6,5 +6,5 @@ It supports multiple messaging transports such as RabbitMQ, Azure Service Bus, A
 
 To learn more, visit the following links:
 
-- [Using MassTransit with RabbitMQ in ASP.NET Core](https://code-maze.com/masstransit-rabbitmq-aspnetcore/)
-- [Complete guide to MassTransit](https://github.com/MassTransit/MassTransit)
+- [@article@Using MassTransit with RabbitMQ in ASP.NET Core](https://code-maze.com/masstransit-rabbitmq-aspnetcore/)
+- [@opensource@Complete guide to MassTransit](https://github.com/MassTransit/MassTransit)

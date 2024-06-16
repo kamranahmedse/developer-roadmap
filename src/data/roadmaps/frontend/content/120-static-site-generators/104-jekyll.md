@@ -4,5 +4,5 @@ Jekyll is a static site generator. It takes text written in your favorite markup
 
 Visit the following resources to learn more:
 
-- [Jekyll Website](https://jekyllrb.com/)
-- [Jekyll Docs](https://jekyllrb.com/docs/)
+- [@article@Jekyll Website](https://jekyllrb.com/)
+- [@article@Jekyll Docs](https://jekyllrb.com/docs/)

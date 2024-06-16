@@ -4,6 +4,6 @@ Formik is another famous opensource form library that helps with getting values 
 
 Visit the following resources to learn more:
 
-- [Official Website — Formik](https://formik.org/)
-- [Getting Started](https://formik.org/docs/overview)
-- [formik/formik](https://github.com/formik/formik)
+- [@official@Official Website — Formik](https://formik.org/)
+- [@official@Getting Started](https://formik.org/docs/overview)
+- [@opensource@formik/formik](https://github.com/formik/formik)

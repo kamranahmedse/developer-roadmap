@@ -4,4 +4,4 @@ Good design encompasses factors such as consistency and coherence in component d
 
 Visit the following resources to learn more:
 
-- [Design and implementation patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)
+- [@article@Design and implementation patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)

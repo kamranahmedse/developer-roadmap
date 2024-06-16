@@ -26,9 +26,9 @@ const { guide } = Astro.props;
 const { frontmatter: guideData, author } = guide;
 
 const ogImageUrl =
-  guideData.ogImageUrl ||
+  guideData.seo.ogImageUrl ||
   getOpenGraphImageUrl({
-    group: 'guides',
+    group: 'guide',
     resourceId: guideId,
   });
 ---

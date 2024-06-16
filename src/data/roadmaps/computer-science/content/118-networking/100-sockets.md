@@ -4,5 +4,5 @@ A socket is an interface for network communication. It is a way for two programs
 
 Visit the following resources to learn more:
 
-- [A Beginners Guide to WebSockets](https://www.youtube.com/watch?v=8ARodQ4Wlf4)
-- [WebSockets in 100 Seconds & Beyond with Socket.io](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
+- [@video@A Beginners Guide to WebSockets](https://www.youtube.com/watch?v=8ARodQ4Wlf4)
+- [@video@WebSockets in 100 Seconds & Beyond with Socket.io](https://www.youtube.com/watch?v=1BfCnjr_Vjg)

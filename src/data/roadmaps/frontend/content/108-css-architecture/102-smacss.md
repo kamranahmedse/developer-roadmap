@@ -4,4 +4,4 @@ SMACSS (pronounced “smacks”) is more style guide than rigid framework. SMACS
 
 Visit the following resources to learn more:
 
-- [SMACSS Official Website](http://smacss.com/)
+- [@official@SMACSS Official Website](http://smacss.com/)

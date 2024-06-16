@@ -4,4 +4,4 @@ A balanced binary tree, also referred to as a height-balanced binary tree, is de
 
 Visit the following resources to learn more:
 
-- [Balanced Binary Tree](https://www.programiz.com/dsa/balanced-binary-tree)
+- [@article@Balanced Binary Tree](https://www.programiz.com/dsa/balanced-binary-tree)

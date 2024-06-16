@@ -4,5 +4,5 @@ Scriban is an open-source, lightweight template engine for .NET that is based on
 
 Visit the following links to learn more about Scriban:
 
-- [Guide to Scriban in ASP.NET](https://github.com/scriban/scriban)
-- [Introduction to Scriban](https://www.markvanaalst.com/blog/sxa/sxa-9-3-introducing-scriban/)
+- [@opensource@Guide to Scriban in ASP.NET](https://github.com/scriban/scriban)
+- [@article@Introduction to Scriban](https://www.markvanaalst.com/blog/sxa/sxa-9-3-introducing-scriban/)

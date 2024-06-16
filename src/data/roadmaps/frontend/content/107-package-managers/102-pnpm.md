@@ -4,5 +4,5 @@ PNPM is an alternative package manager for Node. js which stands for “Performa
 
 Visit the following resources to learn more:
 
-- [Official Website](https://pnpm.io)
-- [Meet PNPM: The Faster, More Performant NPM](https://blog.bitsrc.io/pnpm-javascript-package-manager-4b5abd59dc9)
+- [@official@Official Website](https://pnpm.io)
+- [@article@Meet PNPM: The Faster, More Performant NPM](https://blog.bitsrc.io/pnpm-javascript-package-manager-4b5abd59dc9)

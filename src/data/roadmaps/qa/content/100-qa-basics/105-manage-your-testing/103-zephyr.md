@@ -8,4 +8,4 @@ Zephyr is a testing solution that improves the quality of your software by manag
 
 Visit the following resources to learn more:
 
-- [Zephyr for JIRA Tutorial: Test Management Tool](https://www.guru99.com/zephyr-agile-jira.html)
+- [@article@Zephyr for JIRA Tutorial: Test Management Tool](https://www.guru99.com/zephyr-agile-jira.html)

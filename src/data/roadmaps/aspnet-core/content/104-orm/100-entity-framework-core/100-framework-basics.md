@@ -6,7 +6,7 @@ ORM frameworks are tools that map the objects in an application to the database 
 
 For more resources, visit the following link:
 
-- [ORM Framework](https://www.h2kinfosys.com/blog/orm-framework/)
-- [What are Frameworks in ORM](https://www.killerphp.com/articles/what-are-orm-frameworks/)
-- [Essentials of ORM Framework](https://medium.com/@mikependon/the-essentials-of-orm-framework-in-your-software-development-837131efd91b)
-- [ORM Frameworks – What is an Object-Relational Mapping Framework](https://onlinecode.org/what-are-orm-frameworks/)
+- [@article@ORM Framework](https://www.h2kinfosys.com/blog/orm-framework/)
+- [@article@What are Frameworks in ORM](https://www.killerphp.com/articles/what-are-orm-frameworks/)
+- [@article@Essentials of ORM Framework](https://medium.com/@mikependon/the-essentials-of-orm-framework-in-your-software-development-837131efd91b)
+- [@article@ORM Frameworks – What is an Object-Relational Mapping Framework](https://onlinecode.org/what-are-orm-frameworks/)

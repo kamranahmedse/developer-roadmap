@@ -4,5 +4,5 @@ Back tracking algorithms are used to solve problems that can be broken down into
 
 Visit the following resources to learn more:
 
-- [Backtracking Algorithms](https://www.geeksforgeeks.org/backtracking-algorithms)
-- [Backtracking Algorithm](https://www.programiz.com/dsa/backtracking-algorithm)
+- [@article@Backtracking Algorithms](https://www.geeksforgeeks.org/backtracking-algorithms)
+- [@article@Backtracking Algorithm](https://www.programiz.com/dsa/backtracking-algorithm)

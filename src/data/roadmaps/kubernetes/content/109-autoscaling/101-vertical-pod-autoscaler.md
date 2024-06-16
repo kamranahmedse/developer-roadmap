@@ -4,5 +4,5 @@ Vertical Pod Autoscaler (VPA) is a Kubernetes feature that automates the process
 
 Learn more from the following resources:
 
-- [What is Kubernetes VPA?](https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/)
-- [Vertical Pod Autoscaling: Example](https://www.youtube.com/watch?v=3h-vDDTZrm8)
+- [@article@What is Kubernetes VPA?](https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/)
+- [@video@Vertical Pod Autoscaling: Example](https://www.youtube.com/watch?v=3h-vDDTZrm8)

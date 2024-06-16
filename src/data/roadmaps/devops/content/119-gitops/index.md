@@ -8,4 +8,4 @@ GitOps is designed to be a more efficient and agile way of managing cloud-native
 
 Visit the following resources to learn more:
 
-- [Guide to GitOps](https://www.weave.works/technologies/gitops/)
+- [@article@Guide to GitOps](https://www.weave.works/technologies/gitops/)

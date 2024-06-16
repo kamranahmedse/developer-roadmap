@@ -4,6 +4,5 @@ Modules refer to a file containing Python statements and definitions. A file con
 
 Visit the following resources to learn more:
 
-- [Python Modules](https://docs.python.org/3/tutorial/modules.html)
-- [Python Modules - Geeks for Geeks](https://www.geeksforgeeks.org/python-modules/)
-- [Modules in Python](https://www.programiz.com/python-programming/modules)
+- [@article@Python Modules](https://docs.python.org/3/tutorial/modules.html)
+- [@article@Modules in Python](https://www.programiz.com/python-programming/modules)

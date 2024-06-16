@@ -4,5 +4,5 @@ Datadog is a monitoring and analytics platform for large-scale applications. It 
 
 Visit the following resources to learn more:
 
-- [Datadog Website](https://www.datadoghq.com/)
-- [Official Documentation](https://docs.datadoghq.com/)
+- [@article@Datadog Website](https://www.datadoghq.com/)
+- [@article@Official Documentation](https://docs.datadoghq.com/)

@@ -4,6 +4,6 @@ Ebean is an object-relational mapping tool written in Java. It supports the stan
 
 Visit the following resources to learn more:
 
-- [Ebean](https://ebean.io/)
-- [Ebean Documentation](https://ebean.io/docs/)
-- [Guide to Ebean](https://www.baeldung.com/ebean-orm)
+- [@official@Ebean](https://ebean.io/)
+- [@official@Ebean Documentation](https://ebean.io/docs/)
+- [@article@Guide to Ebean](https://www.baeldung.com/ebean-orm)

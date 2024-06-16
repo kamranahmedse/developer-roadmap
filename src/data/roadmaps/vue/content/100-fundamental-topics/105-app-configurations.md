@@ -4,5 +4,5 @@ Every application instance exposes a `config` object that contains the configura
 
 Visit the following resources to learn more:
 
-- [Official Documentation](https://vuejs.org/api/application.html#app-config)
-- [official API Documentation](https://vuejs.org/api/application.html)
+- [@article@Official Documentation](https://vuejs.org/api/application.html#app-config)
+- [@article@official API Documentation](https://vuejs.org/api/application.html)

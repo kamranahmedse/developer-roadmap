@@ -4,4 +4,4 @@ EasyCaching is an open-source caching library that contains basic usages and som
 
 Visit the following resources to learn more:
 
-- [Easy Caching using Redis](https://easycaching.readthedocs.io/en/latest/Redis/)
+- [@article@Easy Caching using Redis](https://easycaching.readthedocs.io/en/latest/Redis/)

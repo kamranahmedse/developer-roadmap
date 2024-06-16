@@ -1,4 +1,3 @@
-import { Modal } from '../Modal.tsx';
 import { useEffect, useState } from 'react';
 import { deleteOpenAIKey, getOpenAIKey, saveOpenAIKey } from '../../lib/jwt.ts';
 import { cn } from '../../lib/classname.ts';
@@ -17,7 +16,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
   const [defaultOpenAIKey, setDefaultOpenAIKey] = useState('');
 
-  const [hasError, setHasError] = useState(false);
+  const [error, setError] = useState('');
   const [openaiApiKey, setOpenaiApiKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -57,7 +56,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
         className="mt-4"
         onSubmit={async (e) => {
           e.preventDefault();
-          setHasError(false);
+          setError('');
 
           const normalizedKey = openaiApiKey.trim();
           if (!normalizedKey) {
@@ -68,7 +67,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
           }
 
           if (!normalizedKey.startsWith('sk-')) {
-            setHasError(true);
+            setError("Invalid OpenAI API key. It should start with 'sk-'");
             return;
           }
 
@@ -81,7 +80,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
           );
 
           if (error) {
-            setHasError(true);
+            setError(error.message);
             setIsLoading(false);
             return;
           }
@@ -100,13 +99,13 @@ export function OpenAISettings(props: OpenAISettingsProps) {
             className={cn(
               'block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-800 transition-colors focus:border-black focus:outline-none',
               {
-                'border-red-500 bg-red-100 focus:border-red-500': hasError,
+                'border-red-500 bg-red-100 focus:border-red-500': error,
               },
             )}
             placeholder="Enter your OpenAI API key"
             value={openaiApiKey}
             onChange={(e) => {
-              setHasError(false);
+              setError('');
               setOpenaiApiKey((e.target as HTMLInputElement).value);
             }}
           />
@@ -127,9 +126,9 @@ export function OpenAISettings(props: OpenAISettingsProps) {
           We do not store your API key on our servers.
         </p>
 
-        {hasError && (
+        {error && (
           <p className="mt-2 text-sm text-red-500">
-            Please enter a valid OpenAI API key
+              {error}
           </p>
         )}
         <button

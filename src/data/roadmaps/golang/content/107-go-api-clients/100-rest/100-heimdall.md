@@ -10,4 +10,4 @@ All HTTP methods are exposed as a fluent interface.
 
 Visit the following resources to learn more:
 
-- [GitHub Repository](https://github.com/gojek/heimdall)
+- [@opensource@GitHub Repository](https://github.com/gojek/heimdall)

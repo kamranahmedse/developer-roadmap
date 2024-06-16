@@ -7,4 +7,4 @@ Enums also called as enumeration types are a special kind of scalar that is rest
 
 Learn more from the following links:
 
-- [What are Enums?](https://graphql.org/learn/schema/#enumeration-types)
+- [@official@What are Enums?](https://graphql.org/learn/schema/#enumeration-types)

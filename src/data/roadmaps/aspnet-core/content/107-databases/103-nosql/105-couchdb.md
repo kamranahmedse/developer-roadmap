@@ -6,5 +6,5 @@ In an ASP.NET application, CouchDB can be used as a data store to persist and re
 
 Visit the following resources to learn more:
 
-- [CouchDB in ASP.NET Core Application](https://www.c-sharpcorner.com/article/crud-operation-to-couchdb-via-rest-api-in-asp-net-core-application/)
-- [Use CouchDB with .NET](https://stackoverflow.com/questions/1050152/use-couchdb-with-net)
+- [@article@CouchDB in ASP.NET Core Application](https://www.c-sharpcorner.com/article/crud-operation-to-couchdb-via-rest-api-in-asp-net-core-application/)
+- [@article@Use CouchDB with .NET](https://stackoverflow.com/questions/1050152/use-couchdb-with-net)

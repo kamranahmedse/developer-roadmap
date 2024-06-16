@@ -12,7 +12,7 @@ Benefits of Polygon zkEVM
 
 Visit the following resources to learn more:
 
-- [Introduction to Polygon zkEVM](https://wiki.polygon.technology/docs/zkevm/introduction/)
-- [Polygon zkEVM Quickstart](https://wiki.polygon.technology/docs/zkevm/develop/)
-- [Polygon zkEVM Faucet Guide](https://wiki.polygon.technology/docs/zkevm/guides/zkevm-faucet/)
-- [Polygon zkEVM Asset Bridging Guide](https://wiki.polygon.technology/docs/zkevm/bridge-to-zkevm/)
+- [@article@Introduction to Polygon zkEVM](https://wiki.polygon.technology/docs/zkevm/introduction/)
+- [@article@Polygon zkEVM Quickstart](https://wiki.polygon.technology/docs/zkevm/develop/)
+- [@article@Polygon zkEVM Faucet Guide](https://wiki.polygon.technology/docs/zkevm/guides/zkevm-faucet/)
+- [@article@Polygon zkEVM Asset Bridging Guide](https://wiki.polygon.technology/docs/zkevm/bridge-to-zkevm/)

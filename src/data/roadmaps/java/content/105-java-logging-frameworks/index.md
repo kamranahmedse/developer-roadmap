@@ -4,7 +4,7 @@ Logging is an important feature that helps developers to trace out the errors. I
 
 Visit the following resources to learn more:
 
-- [Introduction to Java Logging](https://www.baeldung.com/java-logging-intro)
-- [Java Logger](https://www.javatpoint.com/java-logger)
-- [Java Logging Frameworks](https://en.wikipedia.org/wiki/Java_logging_framework)
-- [How to Do Logging In Java](https://www.marcobehler.com/guides/java-logging)
+- [@article@Introduction to Java Logging](https://www.baeldung.com/java-logging-intro)
+- [@article@Java Logger](https://www.javatpoint.com/java-logger)
+- [@article@Java Logging Frameworks](https://en.wikipedia.org/wiki/Java_logging_framework)
+- [@article@How to Do Logging In Java](https://www.marcobehler.com/guides/java-logging)

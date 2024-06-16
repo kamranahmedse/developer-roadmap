@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Reactivity Core — computed](https://vuejs.org/api/reactivity-core.html#computed)
+- [@article@Reactivity Core — computed](https://vuejs.org/api/reactivity-core.html#computed)

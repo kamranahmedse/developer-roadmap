@@ -4,5 +4,5 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 
 Visit the following resources to learn more:
 
-- [Flask - Official Website](https://flask.palletsprojects.com/)
-- [Flask - Official Tutorial](https://flask.palletsprojects.com/en/3.0.x/tutorial/)
+- [@article@Flask - Official Website](https://flask.palletsprojects.com/)
+- [@article@Flask - Official Tutorial](https://flask.palletsprojects.com/en/3.0.x/tutorial/)

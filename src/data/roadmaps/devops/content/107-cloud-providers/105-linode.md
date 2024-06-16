@@ -4,6 +4,6 @@ Linode is a cloud computing service owned by Akamai Technologies. Linode positio
 
 Visit the following resources to learn more:
 
-- [Linode Website](https://www.linode.com/)
-- [Official Documentation](https://www.linode.com/docs/)
-- [Linode Getting Started Guide](https://www.linode.com/docs/guides/getting-started/)
+- [@official@Linode Website](https://www.linode.com/)
+- [@official@Official Documentation](https://www.linode.com/docs/)
+- [@official@Linode Getting Started Guide](https://www.linode.com/docs/guides/getting-started/)

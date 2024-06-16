@@ -4,5 +4,5 @@ Vultr is an infrastructure focussed cloud computing service, available in 25 loc
 
 Visit the following resources to learn more:
 
-- [Vultr Website](https://www.vultr.com/)
-- [Official Documentation](https://www.vultr.com/docs/)
+- [@official@Vultr Website](https://www.vultr.com/)
+- [@official@Official Documentation](https://www.vultr.com/docs/)

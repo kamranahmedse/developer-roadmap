@@ -11,5 +11,5 @@ The `pubspec.yaml` file is used to manage dependencies, assets, and other settin
 
 Learn more from the following links:
 
-- [Flutter Tutorial - Assets](https://www.youtube.com/watch?v=Hxh6nNHSUjo)
-- [Adding Assets in Flutter](https://docs.flutter.dev/development/ui/assets-and-images)
+- [@video@Flutter Tutorial - Assets](https://www.youtube.com/watch?v=Hxh6nNHSUjo)
+- [@article@Adding Assets in Flutter](https://docs.flutter.dev/development/ui/assets-and-images)

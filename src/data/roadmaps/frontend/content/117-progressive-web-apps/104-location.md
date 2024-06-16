@@ -6,4 +6,4 @@ To use the Geolocation API, a web page must first request permission from the us
 
 Visit the following resources to learn more:
 
-- [Geolocation API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+- [@article@Geolocation API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)

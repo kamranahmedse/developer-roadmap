@@ -4,7 +4,7 @@ Indexed Collections are collections that have numeric indices i.e. the collectio
 
 Visit the following resources to learn more:
 
-- [Indexed Collections](https://www.geeksforgeeks.org/javascript-indexed-collections/)
-- [What is Indexed collections?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections)
-- [Indexed collections in JavaScript](https://www.tutorialspoint.com/indexed-collections-in-javascript)
-- [Javascript Arrays](https://youtu.be/XYq9QpgAx8g)
+- [@article@Indexed Collections](https://www.geeksforgeeks.org/javascript-indexed-collections/)
+- [@article@What is Indexed collections?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections)
+- [@article@Indexed collections in JavaScript](https://www.tutorialspoint.com/indexed-collections-in-javascript)
+- [@video@Javascript Arrays](https://youtu.be/XYq9QpgAx8g)

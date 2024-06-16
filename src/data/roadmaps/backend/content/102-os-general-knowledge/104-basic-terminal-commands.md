@@ -10,8 +10,8 @@ After enough exposure and practice to these commands, it will become easier to u
 
 Visit the following resources to learn more:
 
-- [40 Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands)
-- [A collection of modern/faster/saner alternatives to common unix commands](https://github.com/ibraheemdev/modern-unix)
-- [Command Line Tutorial](https://www.learnenough.com/command-line-tutorial)
-- [Commandline Challenge](https://cmdchallenge.com/)
-- [The 50 Most Popular Linux & Terminal Commands (with timestamps)](https://www.youtube.com/watch?v=ZtqBQ68cfJc)
+- [@article@40 Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands)
+- [@opensource@A collection of modern/faster/saner alternatives to common unix commands](https://github.com/ibraheemdev/modern-unix)
+- [@article@Command Line Tutorial](https://www.learnenough.com/command-line-tutorial)
+- [@article@Commandline Challenge](https://cmdchallenge.com/)
+- [@video@The 50 Most Popular Linux & Terminal Commands (with timestamps)](https://www.youtube.com/watch?v=ZtqBQ68cfJc)

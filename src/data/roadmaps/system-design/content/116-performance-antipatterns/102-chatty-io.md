@@ -10,4 +10,4 @@ Network calls and other I/O operations are inherently slow compared to compute t
 
 To learn more, visit the following links:
 
-- [Chatty I/O antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/chatty-io/)
+- [@article@Chatty I/O antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/chatty-io/)

@@ -12,10 +12,10 @@ These are just a few examples of the many methods available in RxJS for transfor
 
 Here are the official documentation links for the RxJS transformation methods:
 
-- [map](https://rxjs.dev/api/operators/map)
-- [flatMap](https://rxjs.dev/api/operators/flatMap)
-- [concatMap](https://rxjs.dev/api/operators/concatMap)
-- [mergeMap](https://rxjs.dev/api/operators/mergeMap)
-- [switchMap](https://rxjs.dev/api/operators/switchMap)
+- [@article@map](https://rxjs.dev/api/operators/map)
+- [@article@flatMap](https://rxjs.dev/api/operators/flatMap)
+- [@article@concatMap](https://rxjs.dev/api/operators/concatMap)
+- [@article@mergeMap](https://rxjs.dev/api/operators/mergeMap)
+- [@article@switchMap](https://rxjs.dev/api/operators/switchMap)
 
 You can find more information and examples on these methods in the official RxJS documentation. Additionally, you can find more operators on https://rxjs.dev/api/operators and you can also find more information on the library as a whole on https://rxjs.dev/

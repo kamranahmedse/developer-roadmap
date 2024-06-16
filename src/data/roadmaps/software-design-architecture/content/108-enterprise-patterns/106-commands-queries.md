@@ -6,4 +6,4 @@ Queries are used for retrieving data from the system, such as reading data from 
 
 Learn more from the following links:
 
-- [Get Started with CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+- [@article@Get Started with CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)

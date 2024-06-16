@@ -4,5 +4,5 @@ TLS (Transport Layer Security) is a cryptographic protocol that provides privacy
 
 Visit the following resources to learn more:
 
-- [SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
-- [SSL/TLS - Cristina Formaini](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
+- [@video@SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
+- [@video@SSL/TLS - Cristina Formaini](https://www.youtube.com/watch?v=Rp3iZUvXWlM)

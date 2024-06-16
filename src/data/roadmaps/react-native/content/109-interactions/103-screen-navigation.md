@@ -4,5 +4,5 @@ In React Native, navigating from one screen to another is a crucial aspect of ap
 
 Learn more from the following resources:
 
-- [React Native Navigation](https://github.com/wix/react-native-navigation)
-- [React Navigation](https://reactnavigation.org/)
+- [@opensource@React Native Navigation](https://github.com/wix/react-native-navigation)
+- [@article@React Navigation](https://reactnavigation.org/)

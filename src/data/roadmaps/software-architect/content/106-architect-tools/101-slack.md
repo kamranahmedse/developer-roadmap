@@ -4,6 +4,6 @@ Slack is a messaging app for business that connects people to the information th
 
 Visit the following resources to learn more:
 
-- [Slack](https://slack.com)
-- [What is Slack?](https://www.youtube.com/watch?v=q19RtuCHt1Q)
-- [Getting Started](https://slack.com/intl/en-in/help/categories/360000049043)
+- [@official@Slack](https://slack.com)
+- [@video@What is Slack?](https://www.youtube.com/watch?v=q19RtuCHt1Q)
+- [@official@Getting Started](https://slack.com/intl/en-in/help/categories/360000049043)

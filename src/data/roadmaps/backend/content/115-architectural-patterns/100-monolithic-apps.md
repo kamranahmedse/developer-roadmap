@@ -4,5 +4,5 @@ Monolithic architecture is a pattern in which an application handles requests, e
 
 Visit the following resources to learn more:
 
-- [Pattern: Monolithic Architecture](https://microservices.io/patterns/monolithic.html)
-- [Monolithic Architecture - Advantages & Disadvantages](https://datamify.medium.com/monolithic-architecture-advantages-and-disadvantages-e71a603eec89)
+- [@article@Pattern: Monolithic Architecture](https://microservices.io/patterns/monolithic.html)
+- [@article@Monolithic Architecture - Advantages & Disadvantages](https://datamify.medium.com/monolithic-architecture-advantages-and-disadvantages-e71a603eec89)

@@ -6,5 +6,5 @@ In Event sourcing, all changes to the state of the system are treated as events,
 
 Learn more from the following links:
 
-- [Event Sourcing Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
-- [Design Patterns: Why Event Sourcing?](https://www.youtube.com/watch?v=rUDN40rdly8)
+- [@article@Event Sourcing Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
+- [@video@Design Patterns: Why Event Sourcing?](https://www.youtube.com/watch?v=rUDN40rdly8)

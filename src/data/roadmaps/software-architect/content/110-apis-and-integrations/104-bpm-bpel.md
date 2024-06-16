@@ -15,6 +15,6 @@ Programmers use BPEL to define how a business process that involves web services
 
 Visit the following resources to learn more:
 
-- [What is BPM?](https://www.redhat.com/en/topics/automation/what-is-business-process-management)
-- [BPEL described](https://www.ibm.com/docs/en/baw/19.x?topic=SS8JB4_19.x/com.ibm.wbpm.wid.main.doc/prodoverview/topics/cbpelproc.html)
-- [BPM vs BPEL](https://www.youtube.com/watch?v=V6nr5dnb1JQ)
+- [@article@What is BPM?](https://www.redhat.com/en/topics/automation/what-is-business-process-management)
+- [@article@BPEL described](https://www.ibm.com/docs/en/baw/19.x?topic=SS8JB4_19.x/com.ibm.wbpm.wid.main.doc/prodoverview/topics/cbpelproc.html)
+- [@video@BPM vs BPEL](https://www.youtube.com/watch?v=V6nr5dnb1JQ)

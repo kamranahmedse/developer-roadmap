@@ -14,5 +14,5 @@ if (condition) {
 
 Visit the following resources to learn more:
 
-- [if...else - MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [Conditional branching: if, ? - javascript.info](https://javascript.info/ifelse)
+- [@article@if...else - MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [@article@Conditional branching: if, ? - javascript.info](https://javascript.info/ifelse)

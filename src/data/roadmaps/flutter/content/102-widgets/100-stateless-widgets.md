@@ -4,6 +4,5 @@ Stateless widgets in Flutter are widgets that don't maintain any mutable state. 
 
 Visit the following resources to learn more:
 
-- [StatelessWidget class](https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html)
-- [Flutter – Stateful vs Stateless Widgets](https://www.geeksforgeeks.org/flutter-stateful-vs-stateless-widgets/)
-- [How to Create Stateless Widgets](https://medium.com/flutter/how-to-create-stateless-widgets-6f33931d859)
+- [@article@StatelessWidget class](https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html)
+- [@article@How to Create Stateless Widgets](https://medium.com/flutter/how-to-create-stateless-widgets-6f33931d859)

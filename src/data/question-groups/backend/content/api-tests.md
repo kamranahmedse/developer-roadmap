@@ -1,0 +1,5 @@
+As backend developers, we have to think about the types of tests that there are out there.
+
+- **Unit tests:** Always remember to only test the relevant logic through the public interface of your code (avoid testing private methods or inaccessible functions inside your modules). Focus on the business logic and don’t try to test the code that uses external services (like a database, the disk or anything outside of the piece of code you’re testing).
+- **Integration tests:** Test the full endpoint through its public interface (the actual HTTP endpoint) and see how it integrates with the external services it’s using (i.e the database, another API, etc).
+- **Load testing / performance testing:** You might want to also check how the new endpoint behaves under heavy stress. This might not be required depending on the API you’re using, but as a rule of thumb, it’s a good one to perform at the end of the development phase before releasing the new endpoint into prod.

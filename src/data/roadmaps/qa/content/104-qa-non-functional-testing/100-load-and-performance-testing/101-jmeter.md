@@ -4,5 +4,5 @@ Apache JMeter is an Apache project that can be used as a load testing tool for a
 
 Visit the following resources to learn more:
 
-- [Apache JMeter Website](https://jmeter.apache.org/)
-- [Learn JMeter](https://www.youtube.com/playlist?list=PLJ9A48W0kpRIjLkZ32Do9yDZXnnm7_uj_)
+- [@article@Apache JMeter Website](https://jmeter.apache.org/)
+- [@video@Learn JMeter](https://www.youtube.com/playlist?list=PLJ9A48W0kpRIjLkZ32Do9yDZXnnm7_uj_)

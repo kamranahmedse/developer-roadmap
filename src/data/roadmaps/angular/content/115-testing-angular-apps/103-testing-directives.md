@@ -4,5 +4,5 @@ Directives are classes that add new behavior or modify the existing behavior to 
 
 Visit the following resources to learn more:
 
-- [Angular.io Website](https://angular.io/guide/testing-attribute-directives)
-- [tesing-angular Website](https://testing-angular.com/testing-directives/)
+- [@official@Angular.io Website](https://angular.io/guide/testing-attribute-directives)
+- [@article@tesing-angular Website](https://testing-angular.com/testing-directives/)

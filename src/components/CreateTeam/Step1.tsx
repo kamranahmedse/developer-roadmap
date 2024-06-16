@@ -46,7 +46,7 @@ export function Step1(props: Step1Props) {
   const [linkedInUrl, setLinkedInUrl] = useState(team?.links?.linkedIn || '');
   const [gitHubUrl, setGitHubUrl] = useState(team?.links?.github || '');
   const [teamSize, setTeamSize] = useState<ValidTeamSize>(
-    team?.teamSize || ('' as any)
+    team?.teamSize || ('' as any),
   );
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -74,7 +74,7 @@ export function Step1(props: Step1Props) {
           }),
           roadmapIds: [],
           bestPracticeIds: [],
-        }
+        },
       ));
 
       if (error || !response?._id) {
@@ -96,7 +96,7 @@ export function Step1(props: Step1Props) {
             teamSize,
             linkedInUrl: linkedInUrl || undefined,
           }),
-        }
+        },
       ));
 
       if (error || (response as any)?.status !== 'ok') {
@@ -168,7 +168,10 @@ export function Step1(props: Step1Props) {
 
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
-          <label htmlFor="website" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="website"
+            className="text-sm leading-none text-slate-500"
+          >
             Company LinkedIn URL
           </label>
           <input
@@ -187,7 +190,10 @@ export function Step1(props: Step1Props) {
       )}
 
       <div className="mt-4 flex w-full flex-col">
-        <label htmlFor="website" className="text-sm leading-none text-slate-500">
+        <label
+          htmlFor="website"
+          className="text-sm leading-none text-slate-500"
+        >
           GitHub Organization URL
         </label>
         <input
@@ -221,11 +227,11 @@ export function Step1(props: Step1Props) {
               setTeamSize((e.target as HTMLSelectElement).value as any)
             }
           >
-            <option value="">
-              Select team size
-            </option>
+            <option value="">Select team size</option>
             {validTeamSizes.map((size) => (
-              <option key={size} value={size}>{size} people</option>
+              <option key={size} value={size}>
+                {size} people
+              </option>
             ))}
           </select>
         </div>

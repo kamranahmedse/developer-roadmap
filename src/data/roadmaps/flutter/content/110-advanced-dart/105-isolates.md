@@ -11,5 +11,5 @@ Isolates are created using the `Isolate` class and can be used for a variety of 
 
 Learn more from the following links:
 
-- [How isolates work](https://dart.dev/guides/language/concurrency#how-isolates-work)
-- [Dart - Isolates and event loops](https://medium.com/dartlang/dart-asynchronous-programming-isolates-and-event-loops-bffc3e296a6a)
+- [@article@How isolates work](https://dart.dev/guides/language/concurrency#how-isolates-work)
+- [@article@Dart - Isolates and event loops](https://medium.com/dartlang/dart-asynchronous-programming-isolates-and-event-loops-bffc3e296a6a)

@@ -6,6 +6,6 @@ In the context of an ASP.NET application, RabbitMQ can be used to send and recei
 
 To learn more, visit the following links:
 
-- [How to Use RabbitMQ in ASP NET?](https://www.freecodespot.com/blog/use-rabbitmq-in-asp-net-core/)
-- [Introduction of RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html)
-- [ASP.NET and RabbitMQ](https://referbruv.com/blog/integrating-rabbitmq-with-aspnet-core-quickstart-with-an-example/)
+- [@article@How to Use RabbitMQ in ASP NET?](https://www.freecodespot.com/blog/use-rabbitmq-in-asp-net-core/)
+- [@official@Introduction of RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html)
+- [@article@ASP.NET and RabbitMQ](https://referbruv.com/blog/integrating-rabbitmq-with-aspnet-core-quickstart-with-an-example/)

@@ -4,5 +4,5 @@ With tens of thousands of users, RabbitMQ is one of the most popular open-source
 
 Visit the following resources to learn more:
 
-- [RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
-- [RabbitMQ Tutorial - Message Queues and Distributed Systems](https://www.youtube.com/watch?v=nFxjaVmFj5E)
+- [@official@RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)
+- [@video@RabbitMQ Tutorial - Message Queues and Distributed Systems](https://www.youtube.com/watch?v=nFxjaVmFj5E)

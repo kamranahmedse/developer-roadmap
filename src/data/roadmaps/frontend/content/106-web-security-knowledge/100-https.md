@@ -6,9 +6,9 @@ Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which 
 
 Visit the following resources to learn more:
 
-- [What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)
-- [Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
-- [Enabling HTTPS on Your Servers](https://web.dev/enable-https/)
-- [How HTTPS works (comic)](https://howhttps.works/)
-- [SSL, TLS, HTTP, HTTPS Explained](https://www.youtube.com/watch?v=hExRDVZHhig)
-- [HTTPS — Stories from the field](https://www.youtube.com/watch?v=GoXgl9r0Kjk)
+- [@article@What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)
+- [@article@Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
+- [@article@Enabling HTTPS on Your Servers](https://web.dev/enable-https/)
+- [@article@How HTTPS works (comic)](https://howhttps.works/)
+- [@video@SSL, TLS, HTTP, HTTPS Explained](https://www.youtube.com/watch?v=hExRDVZHhig)
+- [@video@HTTPS — Stories from the field](https://www.youtube.com/watch?v=GoXgl9r0Kjk)

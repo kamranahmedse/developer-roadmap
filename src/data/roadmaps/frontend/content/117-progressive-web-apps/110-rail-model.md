@@ -11,4 +11,4 @@ The RAIL model is designed to provide a framework for optimizing the performance
 
 Visit the following resources to learn more:
 
-- [RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)
+- [@article@RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)

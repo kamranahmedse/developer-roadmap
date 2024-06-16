@@ -4,6 +4,6 @@ BenchmarkDotNet is an open-source library for .NET that provides a simple and ea
 
 To learn more, visit the following links:
 
-- [Benchmarking .NET Using BenchmarkDotNet](https://www.codemag.com/Article/2209061/Benchmarking-.NET-6-Applications-Using-BenchmarkDotNet-A-Deep-Dive)
-- [Benchmarking ASP.NET Applications with .NET Crank](https://www.youtube.com/watch?v=2IgfrnG-128)
-- [Intro to BenchmarkDotNet](https://www.youtube.com/watch?v=mmza9x3QxYE)
+- [@article@Benchmarking .NET Using BenchmarkDotNet](https://www.codemag.com/Article/2209061/Benchmarking-.NET-6-Applications-Using-BenchmarkDotNet-A-Deep-Dive)
+- [@video@Benchmarking ASP.NET Applications with .NET Crank](https://www.youtube.com/watch?v=2IgfrnG-128)
+- [@video@Intro to BenchmarkDotNet](https://www.youtube.com/watch?v=mmza9x3QxYE)

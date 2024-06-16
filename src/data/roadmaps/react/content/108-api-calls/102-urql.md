@@ -13,4 +13,4 @@ urql is often used as an alternative to other GraphQL libraries, such as Apollo 
 
 Visit the following resources to learn more:
 
-- [urql - Formidable Labs](https://formidable.com/open-source/urql/)
+- [@article@urql - Formidable Labs](https://formidable.com/open-source/urql/)

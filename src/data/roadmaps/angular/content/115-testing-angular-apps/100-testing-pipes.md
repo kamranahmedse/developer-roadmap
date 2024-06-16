@@ -4,5 +4,5 @@ An Angular Pipe is a special function that is called from a Component template. 
 
 Visit the following resources to learn more:
 
-- [Angular.io Website](https://angular.io/guide/testing-pipes)
-- [Testing-Angular.com](https://testing-angular.com/testing-pipes/)
+- [@official@Angular.io Website](https://angular.io/guide/testing-pipes)
+- [@article@Testing-Angular.com](https://testing-angular.com/testing-pipes/)

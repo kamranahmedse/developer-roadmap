@@ -8,5 +8,5 @@ The framework provides several utility functions to help you interact with your 
 
 Visit the following resources to learn more:
 
-- [An introduction to integration testing](https://docs.flutter.dev/cookbook/testing/integration/introduction)
-- [Integration Tests](https://docs.flutter.dev/testing#integration-tests)
+- [@article@An introduction to integration testing](https://docs.flutter.dev/cookbook/testing/integration/introduction)
+- [@article@Integration Tests](https://docs.flutter.dev/testing#integration-tests)

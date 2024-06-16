@@ -12,5 +12,5 @@ These are some of the most popular log frameworks in ASP.NET, each of them has i
 
 Visit the following links to learn more:
 
-- [Implement logging in ASP.NET](https://learn.microsoft.com/en-us/training/modules/aspnet-logging/)
-- [ASP.NET Core: Logging with log4net](https://www.linkedin.com/learning/asp-dot-net-core-logging-with-log4net)
+- [@article@Implement logging in ASP.NET](https://learn.microsoft.com/en-us/training/modules/aspnet-logging/)
+- [@article@ASP.NET Core: Logging with log4net](https://www.linkedin.com/learning/asp-dot-net-core-logging-with-log4net)

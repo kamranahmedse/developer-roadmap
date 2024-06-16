@@ -6,4 +6,4 @@ This pattern can be useful for offloading common client connectivity tasks such 
 
 To learn more, visit the following links:
 
-- [Ambassador pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador)
+- [@article@Ambassador pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador)

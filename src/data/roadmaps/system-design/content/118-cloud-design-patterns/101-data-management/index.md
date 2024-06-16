@@ -4,4 +4,4 @@ Data management is the key element of cloud applications, and influences most of
 
 Learn more from the following links:
 
-- [Data management patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management)
+- [@article@Data management patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management)

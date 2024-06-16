@@ -9,4 +9,4 @@ In a nutshell, the main differences between the Promise and the Observable are a
 
 Visit the following resources to learn more:
 
-- [Why RxJS? RxJS vs Promises](https://javascript.plainenglish.io/why-rxjs-rxjs-vs-promises-b28962771d68)
+- [@article@Why RxJS? RxJS vs Promises](https://javascript.plainenglish.io/why-rxjs-rxjs-vs-promises-b28962771d68)

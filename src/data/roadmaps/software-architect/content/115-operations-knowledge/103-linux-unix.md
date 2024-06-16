@@ -4,7 +4,7 @@ Knowledge of UNIX is a must for almost all kind of development as most of the co
 
 Visit the following resources to learn more:
 
-- [Linux Operating System - Crash Course](https://www.youtube.com/watch?v=ROjZy1WbCIA)
-- [Coursera - Unix Courses](https://www.coursera.org/courses?query=unix)
-- [Linux Basics ](https://dev.to/rudrakshi99/linux-basics-2onj)
-- [Unix / Linux Tutorial](https://www.tutorialspoint.com/unix/index.htm)
+- [@video@Linux Operating System - Crash Course](https://www.youtube.com/watch?v=ROjZy1WbCIA)
+- [@course@Coursera - Unix Courses](https://www.coursera.org/courses?query=unix)
+- [@article@Linux Basics ](https://dev.to/rudrakshi99/linux-basics-2onj)
+- [@article@Unix / Linux Tutorial](https://www.tutorialspoint.com/unix/index.htm)

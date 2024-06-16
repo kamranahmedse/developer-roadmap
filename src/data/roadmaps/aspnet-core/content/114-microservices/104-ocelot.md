@@ -6,6 +6,6 @@ One of the key features of Ocelot is its flexibility, it can route incoming requ
 
 To learn more, visit the following links:
 
-- [Implement API Gateways with Ocelot](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot)
-- [Getting Started with Ocelot](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html)
-- [Building an API Gateway in ASP.NET using Ocelotss](https://www.youtube.com/watch?v=hlUGZ6Hmv6s)
+- [@article@Implement API Gateways with Ocelot](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot)
+- [@article@Getting Started with Ocelot](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html)
+- [@video@Building an API Gateway in ASP.NET using Ocelotss](https://www.youtube.com/watch?v=hlUGZ6Hmv6s)

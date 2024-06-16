@@ -4,6 +4,6 @@ ORM stands for Object-Relational Mapping, and it is a technique that allows a de
 
 Visit the following resources to learn more:
 
-- [ORM (Object Relational Mapping)](https://www.telerik.com/blogs/dotnet-basics-orm-object-relational-mapping)
-- [What is an ORM – The Meaning of Object Relational Mapping](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/)
-- [Understanding Object-Relational Mapping: Pros, Cons](https://www.altexsoft.com/blog/object-relational-mapping/)
+- [@article@ORM (Object Relational Mapping)](https://www.telerik.com/blogs/dotnet-basics-orm-object-relational-mapping)
+- [@article@What is an ORM – The Meaning of Object Relational Mapping](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/)
+- [@article@Understanding Object-Relational Mapping: Pros, Cons](https://www.altexsoft.com/blog/object-relational-mapping/)

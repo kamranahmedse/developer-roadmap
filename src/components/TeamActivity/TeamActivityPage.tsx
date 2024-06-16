@@ -18,7 +18,7 @@ export type TeamStreamActivity = {
   resourceSlug?: string;
   isCustomResource?: boolean;
   actionType: AllowedActivityActionType;
-  topicIds?: string[];
+  topicTitles?: string[];
   createdAt: Date;
   updatedAt: Date;
 };
@@ -39,6 +39,7 @@ type GetTeamActivityResponse = {
       name: string;
       avatar?: string;
       username?: string;
+      memberId?: string;
     }[];
     activities: TeamActivityStreamDocument[];
   };
@@ -98,38 +99,70 @@ export function TeamActivityPage() {
   }, [teamId]);
 
   const { users, activities } = teamActivities?.data;
-  const usersWithActivities = useMemo(() => {
-    const validActivities = activities.filter((activity) => {
+  const validActivities = useMemo(() => {
+    return activities?.filter((activity) => {
       return (
         activity.activity.length > 0 &&
-        activity.activity.some((t) => (t?.topicIds?.length || 0) > 0)
+        activity.activity.some((t) => (t?.topicTitles?.length || 0) > 0)
       );
     });
+  }, [activities]);
 
-    return users
-      .map((user) => {
-        const userActivities = validActivities
-          .filter((activity) => activity.userId === user._id)
-          .flatMap((activity) => activity.activity)
-          .filter((activity) => (activity?.topicIds?.length || 0) > 0)
-          .sort((a, b) => {
-            return (
-              new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
-            );
-          });
+  const sortedUniqueCreatedAt = useMemo(() => {
+    return new Set(
+      validActivities
+        ?.map((activity) => new Date(activity.createdAt).setHours(0, 0, 0, 0))
+        .sort((a, b) => {
+          return new Date(b).getTime() - new Date(a).getTime();
+        }),
+    );
+  }, [validActivities]);
 
-        return {
-          ...user,
-          activities: userActivities,
-        };
-      })
-      .filter((user) => user.activities.length > 0)
-      .sort((a, b) => {
-        return (
-          new Date(b.activities[0].updatedAt).getTime() -
-          new Date(a.activities[0].updatedAt).getTime()
-        );
-      });
+  const usersWithActivities = useMemo(() => {
+    const enrichedUsers: {
+      _id: string;
+      name: string;
+      avatar?: string;
+      username?: string;
+      activities: TeamStreamActivity[];
+    }[] = [];
+
+    for (const uniqueCreatedAt of sortedUniqueCreatedAt) {
+      const uniqueActivities = validActivities.filter(
+        (activity) =>
+          new Date(activity.createdAt).setHours(0, 0, 0, 0) === uniqueCreatedAt,
+      );
+
+      const usersWithUniqueActivities = users
+        .map((user) => {
+          const userActivities = uniqueActivities
+            .filter((activity) => activity.userId === user._id)
+            .flatMap((activity) => activity.activity)
+            .filter((activity) => (activity?.topicTitles?.length || 0) > 0)
+            .sort((a, b) => {
+              return (
+                new Date(b.updatedAt).getTime() -
+                new Date(a.updatedAt).getTime()
+              );
+            });
+
+          return {
+            ...user,
+            activities: userActivities,
+          };
+        })
+        .filter((user) => user.activities.length > 0)
+        .sort((a, b) => {
+          return (
+            new Date(b.activities[0].updatedAt).getTime() -
+            new Date(a.activities[0].updatedAt).getTime()
+          );
+        });
+
+      enrichedUsers.push(...usersWithUniqueActivities);
+    }
+
+    return enrichedUsers;
   }, [users, activities]);
 
   if (!teamId) {
@@ -156,11 +189,12 @@ export function TeamActivityPage() {
             Team Activity
           </h3>
           <ul className="mb-4 mt-2 flex flex-col gap-3">
-            {usersWithActivities.map((user) => {
+            {usersWithActivities.map((user, index) => {
               return (
                 <TeamActivityItem
-                  key={user._id}
+                  key={`${user._id}-${index}`}
                   user={user}
+                  teamId={teamId}
                   onTopicClick={setSelectedActivity}
                 />
               );

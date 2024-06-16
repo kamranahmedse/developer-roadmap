@@ -1,22 +1,39 @@
 ---
-import type { GuideFileType } from '../lib/guide';
+import type { GuideFileType, GuideFrontmatter } from '../lib/guide';
 import { replaceVariables } from '../lib/markdown';
+import { QuestionGroupType } from '../lib/question-group';
 
 export interface Props {
-  guide: GuideFileType;
+  guide: GuideFileType | QuestionGroupType;
+}
+
+function isQuestionGroupType(
+  guide: GuideFileType | QuestionGroupType,
+): guide is QuestionGroupType {
+  return (guide as QuestionGroupType).questions !== undefined;
 }
 
 const { guide } = Astro.props;
 const { frontmatter, id } = guide;
+
+let pageUrl = '';
+let guideType = '';
+
+if (isQuestionGroupType(guide)) {
+  pageUrl = `/questions/${id}`;
+  guideType = 'Questions';
+} else {
+  const excludedBySlug = (frontmatter as GuideFrontmatter).excludedBySlug;
+  pageUrl = excludedBySlug ? excludedBySlug : `/guides/${id}`;
+  guideType = (frontmatter as GuideFrontmatter).type;
+}
 ---
 
 <a
   class:list={[
     'text-md group block flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600',
   ]}
-  href={frontmatter.excludedBySlug
-    ? frontmatter.excludedBySlug
-    : `/guides/${id}`}
+  href={pageUrl}
 >
   <span
     class='text-sm transition-transform group-hover:translate-x-2 md:text-base'
@@ -38,7 +55,7 @@ const { frontmatter, id } = guide;
     }
   </span>
   <span class='hidden text-xs capitalize text-gray-500 sm:block'>
-    {frontmatter.type}
+    {guideType}
   </span>
 
   <span class='block text-xs text-gray-400 sm:hidden'> &raquo;</span>

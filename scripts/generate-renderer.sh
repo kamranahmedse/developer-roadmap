@@ -30,3 +30,5 @@ done
 
 # ignore the worktree changes for the editor directory
 git update-index --assume-unchanged editor/readonly-editor.tsx || true
+git update-index --assume-unchanged editor/renderer/index.tsx || true
+git update-index --assume-unchanged editor/renderer/renderer.ts || true

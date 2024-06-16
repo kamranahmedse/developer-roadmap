@@ -4,7 +4,7 @@ OWASP or Open Web Application Security Project is an online community that produ
 
 Visit the following resources to learn more:
 
-- [Wikipedia - OWASP](https://en.wikipedia.org/wiki/OWASP)
-- [OWASP Application Security Verification Standard](https://github.com/OWASP/ASVS)
-- [OWASP Top 10 Security Risks](https://cheatsheetseries.owasp.org/IndexTopTen.html)
-- [OWASP Cheatsheets](https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html)
+- [@article@Wikipedia - OWASP](https://en.wikipedia.org/wiki/OWASP)
+- [@opensource@OWASP Application Security Verification Standard](https://github.com/OWASP/ASVS)
+- [@article@OWASP Top 10 Security Risks](https://cheatsheetseries.owasp.org/IndexTopTen.html)
+- [@article@OWASP Cheatsheets](https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html)

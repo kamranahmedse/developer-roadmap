@@ -1,3 +1,3 @@
 # Jailbreaking
 
-- [Jailbreaking](https://learnprompting.org/docs/prompt_hacking/jailbreaking)
+- [@article@Jailbreaking](https://learnprompting.org/docs/prompt_hacking/jailbreaking)

@@ -6,4 +6,4 @@ Typical security requirements may include specific elements of confidentiality, 
 
 Visit the following resources to learn more:
 
-- [Security Testing Wiki](https://en.wikipedia.org/wiki/Security_testing)
+- [@article@Security Testing Wiki](https://en.wikipedia.org/wiki/Security_testing)

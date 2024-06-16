@@ -4,4 +4,4 @@ Integration tests validate interactions between multiple components. For smart c
 
 Visit the following resources to learn more:
 
-- [Unit tests vs integration tests | Smart contract testing course](https://youtu.be/GxnX9k8i0zM)
+- [@video@Unit tests vs integration tests | Smart contract testing course](https://youtu.be/GxnX9k8i0zM)

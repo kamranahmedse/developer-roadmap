@@ -6,5 +6,5 @@ There are several technologies and libraries available for implementing real-tim
 
 To learn more, visit the following resources:
 
-- [Overview of ASP.NET Core SignalR](https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-7.0)
-- [Real-time ASP.NET with SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr)
+- [@article@Overview of ASP.NET Core SignalR](https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-7.0)
+- [@article@Real-time ASP.NET with SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr)

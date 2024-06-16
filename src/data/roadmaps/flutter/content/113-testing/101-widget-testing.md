@@ -8,5 +8,5 @@ The framework provides several utility functions to help you build and test widg
 
 Visit the following resources to learn more:
 
-- [An introduction to widget testing](https://docs.flutter.dev/cookbook/testing/widget/introduction)
-- [Widget Tests - Flutter](https://docs.flutter.dev/testing#widget-tests)
+- [@article@An introduction to widget testing](https://docs.flutter.dev/cookbook/testing/widget/introduction)
+- [@article@Widget Tests - Flutter](https://docs.flutter.dev/testing#widget-tests)

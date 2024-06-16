@@ -4,6 +4,6 @@ Accessibility Testing is defined as a type of Software Testing performed to ensu
 
 Visit the following resources to learn more:
 
-- [What is Accessibility Testing? (Examples)](https://www.guru99.com/accessibility-testing.html)
-- [Accessibility Testing Tutorial (Step By Step Guide)](https://www.softwaretestinghelp.com/what-is-web-accessibility-testing/)
-- [IBM Accessibility Toolkit](https://www.ibm.com/able/)
+- [@article@What is Accessibility Testing? (Examples)](https://www.guru99.com/accessibility-testing.html)
+- [@article@Accessibility Testing Tutorial (Step By Step Guide)](https://www.softwaretestinghelp.com/what-is-web-accessibility-testing/)
+- [@article@IBM Accessibility Toolkit](https://www.ibm.com/able/)

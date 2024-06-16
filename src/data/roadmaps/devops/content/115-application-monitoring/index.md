@@ -4,5 +4,5 @@ Application monitoring refers to the practice of making the status and performan
 
 Visit the following resources to learn more:
 
-- [Applying Basic vs. Advanced Monitoring Techniques](https://thenewstack.io/applying-basic-vs-advanced-monitoring-techniques/)
-- [Why Legacy Apps Need Your Monitoring Love, Too](https://thenewstack.io/why-legacy-apps-need-your-monitoring-love-too/)
+- [@article@Applying Basic vs. Advanced Monitoring Techniques](https://thenewstack.io/applying-basic-vs-advanced-monitoring-techniques/)
+- [@article@Why Legacy Apps Need Your Monitoring Love, Too](https://thenewstack.io/why-legacy-apps-need-your-monitoring-love-too/)

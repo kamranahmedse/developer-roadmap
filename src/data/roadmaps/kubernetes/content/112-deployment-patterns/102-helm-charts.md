@@ -4,5 +4,5 @@ Helm is a Kubernetes package manager that simplifies the deployment and manageme
 
 Learn more from the following resources:
 
-- [Helm Docs](https://helm.sh/docs/)
-- [What is Helm in Kubernetes? Helm and Helm Charts explained](https://www.youtube.com/watch?v=-ykwb1d0DXU)
+- [@official@Helm Docs](https://helm.sh/docs/)
+- [@video@What is Helm in Kubernetes? Helm and Helm Charts explained](https://www.youtube.com/watch?v=-ykwb1d0DXU)

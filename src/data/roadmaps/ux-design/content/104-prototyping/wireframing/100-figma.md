@@ -16,4 +16,4 @@
 
 - **Plugins**: Figma supports a wide range of user-created plugins that extend its functionality, allowing you to tailor the tool to your specific needs.
 
-- [Figma Website](https://figma.com)
+- [@official@Figma Website](https://figma.com)

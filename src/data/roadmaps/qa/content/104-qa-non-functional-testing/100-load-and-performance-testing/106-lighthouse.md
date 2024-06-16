@@ -4,4 +4,4 @@ Lighthouse is an open-source, automated tool for improving the quality of web pa
 
 Visit the following resources to learn more:
 
-- [Lighthouse Website](https://github.com/GoogleChrome/lighthouse/)
+- [@opensource@Lighthouse Website](https://github.com/GoogleChrome/lighthouse/)

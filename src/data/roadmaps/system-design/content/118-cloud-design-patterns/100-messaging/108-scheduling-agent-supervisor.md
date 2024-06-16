@@ -4,4 +4,4 @@ Coordinate a set of distributed actions as a single operation. If any of the act
 
 Learn more from the following links:
 
-- [Scheduler Agent Supervisor pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor)
+- [@article@Scheduler Agent Supervisor pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor)

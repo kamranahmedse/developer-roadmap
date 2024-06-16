@@ -78,6 +78,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development', 'Absolute Beginners'],
       },
       {
+        title: 'API Design',
+        link: '/api-design',
+        type: 'role',
+        otherGroups: ['Web Development'],
+      },
+      {
         title: 'QA',
         link: '/qa',
         type: 'role',
@@ -227,14 +233,19 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'iOS',
+        link: '/ios',
+        type: 'role',
+      },
+      {
         title: 'React Native',
         link: '/react-native',
-        type: 'role',
+        type: 'skill',
       },
       {
         title: 'Flutter',
         link: '/flutter',
-        type: 'role',
+        type: 'skill',
       },
     ],
   },
@@ -297,6 +308,11 @@ const groups: GroupType[] = [
       {
         title: 'Technical Writer',
         link: '/technical-writer',
+        type: 'role',
+      },
+      {
+        title: 'Product Manager',
+        link: '/product-manager',
         type: 'role',
       },
     ],

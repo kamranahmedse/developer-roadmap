@@ -4,6 +4,6 @@ Networking is crucial for communication between pods and resources in a Kubernet
 
 Learn more from the following resources:
 
-- [Cluster Networking - Documentation](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
-- [Job with Pod-to-Pod Communication](https://kubernetes.io/docs/tasks/job/job-with-pod-to-pod-communication/)
-- [How Kubernetes Provides Networking and Storage to Applications](https://thenewstack.io/how-kubernetes-provides-networking-and-storage-to-applications/)
+- [@official@Cluster Networking - Documentation](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
+- [@official@Job with Pod-to-Pod Communication](https://kubernetes.io/docs/tasks/job/job-with-pod-to-pod-communication/)
+- [@article@How Kubernetes Provides Networking and Storage to Applications](https://thenewstack.io/how-kubernetes-provides-networking-and-storage-to-applications/)

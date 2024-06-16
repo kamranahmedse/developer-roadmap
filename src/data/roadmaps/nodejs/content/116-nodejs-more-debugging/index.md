@@ -8,4 +8,3 @@ Using `console.log` to debug the code generally dives into an infinite loop of â
 
 Visit the following resources to learn more:
 
-- [Node.js Debugging](https://www.geeksforgeeks.org/node-js-debugging/)

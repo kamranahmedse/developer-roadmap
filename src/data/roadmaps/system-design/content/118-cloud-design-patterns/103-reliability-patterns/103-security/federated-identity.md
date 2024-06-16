@@ -4,4 +4,4 @@ Delegate authentication to an external identity provider. This can simplify deve
 
 To learn more, visit the following links:
 
-- [Federated Identity pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/federated-identity)
+- [@article@Federated Identity pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/federated-identity)

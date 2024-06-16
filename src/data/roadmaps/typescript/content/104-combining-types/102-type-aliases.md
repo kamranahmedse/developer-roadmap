@@ -16,4 +16,4 @@ In the example above, `Name` and `Age` are type aliases for `string` and `number
 
 Learn more from the following links:
 
-- [Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases)
+- [@article@Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases)

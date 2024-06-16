@@ -4,5 +4,5 @@ Hibernate is an open source object-relational mapping tool that provides a frame
 
 Visit the following resources to learn more:
 
-- [Hibernate](https://hibernate.org/)
-- [Hibernate Tutorial](https://www.javatpoint.com/hibernate-tutorial)
+- [@official@Hibernate](https://hibernate.org/)
+- [@article@Hibernate Tutorial](https://www.javatpoint.com/hibernate-tutorial)

@@ -6,6 +6,6 @@ By using Spring Cloud Config, developers can have a centralized and consistent a
 
 For more resources, visit the following links:
 
-- [Spring Cloud Config](https://spring.io/projects/spring-cloud-config)
-- [Quick Intro to Spring Cloud Configuration](https://www.baeldung.com/spring-cloud-configuration)
-- [Spring Boot - Cloud Configuration Server](https://www.tutorialspoint.com/spring_boot/spring_boot_cloud_configuration_server.htm)
+- [@official@Spring Cloud Config](https://spring.io/projects/spring-cloud-config)
+- [@article@Quick Intro to Spring Cloud Configuration](https://www.baeldung.com/spring-cloud-configuration)
+- [@article@Spring Boot - Cloud Configuration Server](https://www.tutorialspoint.com/spring_boot/spring_boot_cloud_configuration_server.htm)

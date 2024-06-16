@@ -9,6 +9,6 @@ Spring Boot follows a layered architecture in which each layer communicates with
 
 For more information, visit the following links:
 
-- [Spring Boot Architecture](https://www.javatpoint.com/spring-boot-architecture)
-- [Spring Boot Architecture – Detailed Explanation](https://www.interviewbit.com/blog/spring-boot-architecture)
-- [Spring Boot – Architecture](https://www.geeksforgeeks.org/spring-boot-architecture/)
+- [@article@Spring Boot Architecture](https://www.javatpoint.com/spring-boot-architecture)
+- [@article@Spring Boot Architecture – Detailed Explanation](https://www.interviewbit.com/blog/spring-boot-architecture)
+- [@article@Spring Boot – Architecture](https://www.geeksforgeeks.org/spring-boot-architecture/)

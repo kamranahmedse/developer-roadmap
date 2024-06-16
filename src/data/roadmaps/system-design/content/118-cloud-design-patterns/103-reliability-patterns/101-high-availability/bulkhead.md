@@ -4,5 +4,5 @@ The Bulkhead pattern is a type of application design that is tolerant of failure
 
 Learn more from the following links:
 
-- [Bulkhead pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
-- [Get started with Bulkhead](https://dzone.com/articles/resilient-microservices-pattern-bulkhead-pattern)
+- [@article@Bulkhead pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
+- [@article@Get started with Bulkhead](https://dzone.com/articles/resilient-microservices-pattern-bulkhead-pattern)

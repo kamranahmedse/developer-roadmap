@@ -4,5 +4,5 @@ GitLab is a provider of internet hosting for software development and version co
 
 Visit the following resources to learn more:
 
-- [GitLab Website](https://gitlab.com/)
-- [GitLab Documentation](https://docs.gitlab.com/)
+- [@opensource@GitLab Website](https://gitlab.com/)
+- [@article@GitLab Documentation](https://docs.gitlab.com/)

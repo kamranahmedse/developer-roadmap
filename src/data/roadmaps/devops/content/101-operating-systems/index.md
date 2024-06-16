@@ -6,8 +6,7 @@ An OS permits software programmes to communicate with a computer's hardware, The
 
 Visit the following resources to learn more:
 
-- [All you need to know about OS.](https://www.javatpoint.com/os-tutorial)
-- [Learn Operating Systems](https://www.tutorialspoint.com/operating_system/os_overview.htm)
-- [Operating Systems tutorials.](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)
-- [What are Operating Systems?](https://www.youtube.com/watch?v=pVzRTmdd9j0)
-- [Operating Systems!](https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O)
+- [@article@All you need to know about OS.](https://www.javatpoint.com/os-tutorial)
+- [@article@Learn Operating Systems](https://www.tutorialspoint.com/operating_system/os_overview.htm)
+- [@video@What are Operating Systems?](https://www.youtube.com/watch?v=pVzRTmdd9j0)
+- [@video@Operating Systems!](https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O)

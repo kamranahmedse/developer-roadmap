@@ -6,5 +6,5 @@ TypeORM supports both [Active Record](https://typeorm.io/active-record-data-mapp
 
 Visit the following resources to learn more:
 
-- [TypeORM Docs](https://typeorm.io)
-- [TypeORM Crash Course](https://www.youtube.com/watch?v=JaTbzPcyiOE)
+- [@official@TypeORM Docs](https://typeorm.io)
+- [@video@TypeORM Crash Course](https://www.youtube.com/watch?v=JaTbzPcyiOE)

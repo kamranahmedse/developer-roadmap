@@ -26,7 +26,7 @@ const questionGroups = await getAllQuestionGroups();
             <GridItem
               url={`/questions/${questionGroup.id}`}
               isNew={questionGroup.frontmatter.isNew}
-              title={questionGroup.frontmatter.title}
+              title={questionGroup.frontmatter.briefTitle}
               description={`${questionGroup.questions.length} Questions &middot; ${questionGroup.allTopics.length} topics`}
             />
           ))

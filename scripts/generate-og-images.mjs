@@ -475,8 +475,6 @@ function getRoadmapDefaultTemplate({ title, description }) {
 
 function getRoadmapImageTemplate({ title, description, image, height, width }) {
   return html`<div tw="bg-white relative flex flex-col h-full w-full">
-    <div tw="absolute flex top-0 left-0 w-full h-[18px] bg-black"></div>
-
     <div tw="flex flex-col px-[90px] pt-[90px]">
       <div tw="flex flex-col pb-0">
         <div tw="text-[70px] leading-[70px] tracking-tight">

@@ -1,9 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { getRelativeTimeString } from '../../lib/date';
 import type { ResourceType } from '../../lib/resource-progress';
 import { EmptyStream } from './EmptyStream';
 import { ActivityTopicsModal } from './ActivityTopicsModal.tsx';
-import {Book, BookOpen, ChevronsDown, ChevronsDownUp, ChevronsUp, ChevronsUpDown} from 'lucide-react';
+import { ChevronsDown, ChevronsUp } from 'lucide-react';
+import { ActivityTopicTitles } from './ActivityTopicTitles.tsx';
+import { cn } from '../../lib/classname.ts';
 
 export const allowedActivityActionType = [
   'in_progress',
@@ -21,31 +23,39 @@ export type UserStreamActivity = {
   resourceSlug?: string;
   isCustomResource?: boolean;
   actionType: AllowedActivityActionType;
-  topicIds?: string[];
+  topicTitles?: string[];
   createdAt: Date;
   updatedAt: Date;
 };
 
 type ActivityStreamProps = {
   activities: UserStreamActivity[];
+  className?: string;
+  onResourceClick?: (
+    resourceId: string,
+    resourceType: ResourceType,
+    isCustomResource: boolean,
+  ) => void;
 };
 
 export function ActivityStream(props: ActivityStreamProps) {
-  const { activities } = props;
+  const { activities, className, onResourceClick } = props;
 
   const [showAll, setShowAll] = useState(false);
   const [selectedActivity, setSelectedActivity] =
     useState<UserStreamActivity | null>(null);
 
   const sortedActivities = activities
-    .filter((activity) => activity?.topicIds && activity.topicIds.length > 0)
+    .filter(
+      (activity) => activity?.topicTitles && activity.topicTitles.length > 0,
+    )
     .sort((a, b) => {
       return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
     })
     .slice(0, showAll ? activities.length : 10);
 
   return (
-    <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+    <div className={cn('mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8', className)}>
       <h2 className="mb-3 text-xs uppercase text-gray-400">
         Learning Activity
       </h2>
@@ -57,8 +67,8 @@ export function ActivityStream(props: ActivityStreamProps) {
           resourceId={selectedActivity.resourceId}
           resourceType={selectedActivity.resourceType}
           isCustomResource={selectedActivity.isCustomResource}
-          topicIds={selectedActivity.topicIds || []}
-          topicCount={selectedActivity.topicIds?.length || 0}
+          topicTitles={selectedActivity.topicTitles || []}
+          topicCount={selectedActivity.topicTitles?.length || 0}
           actionType={selectedActivity.actionType}
         />
       )}
@@ -73,8 +83,9 @@ export function ActivityStream(props: ActivityStreamProps) {
               resourceTitle,
               actionType,
               updatedAt,
-              topicIds,
+              topicTitles,
               isCustomResource,
+              resourceSlug,
             } = activity;
 
             const resourceUrl =
@@ -83,20 +94,30 @@ export function ActivityStream(props: ActivityStreamProps) {
                 : resourceType === 'best-practice'
                   ? `/best-practices/${resourceId}`
                   : isCustomResource && resourceType === 'roadmap'
-                    ? `/r/${resourceId}`
+                    ? `/r/${resourceSlug}`
                     : `/${resourceId}`;
 
-            const resourceLinkComponent = (
-              <a
-                className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
-                target="_blank"
-                href={resourceUrl}
-              >
-                {resourceTitle}
-              </a>
-            );
+            const resourceLinkComponent =
+              onResourceClick && resourceType !== 'question' ? (
+                <button
+                  className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
+                  onClick={() =>
+                    onResourceClick(resourceId, resourceType, isCustomResource!)
+                  }
+                >
+                  {resourceTitle}
+                </button>
+              ) : (
+                <a
+                  className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
+                  target="_blank"
+                  href={resourceUrl}
+                >
+                  {resourceTitle}
+                </a>
+              );
 
-            const topicCount = topicIds?.length || 0;
+            const topicCount = topicTitles?.length || 0;
 
             const timeAgo = (
               <span className="ml-1 text-xs text-gray-400">
@@ -108,32 +129,35 @@ export function ActivityStream(props: ActivityStreamProps) {
               <li key={_id} className="py-2 text-sm text-gray-600">
                 {actionType === 'in_progress' && (
                   <>
-                    Started{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => setSelectedActivity(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
-                    in {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Started&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
-                    Completed{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => setSelectedActivity(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
-                    in {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Completed&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'answered' && (
                   <>
-                    Answered {topicCount} question{topicCount > 1 ? 's' : ''} in{' '}
-                    {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Answered&nbsp;{topicCount}&nbsp;question
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
               </li>
@@ -146,16 +170,20 @@ export function ActivityStream(props: ActivityStreamProps) {
 
       {activities.length > 10 && (
         <button
-          className="mt-3 gap-2 flex items-center rounded-md border border-black pl-1.5 pr-2 py-1 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+          className="mt-3 flex items-center gap-2 rounded-md border border-black py-1 pl-1.5 pr-2 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
           onClick={() => setShowAll(!showAll)}
         >
-          {showAll ? <>
-            <ChevronsUp size={14} />
-            Show less
-          </> : <>
-            <ChevronsDown size={14} />
-            Show more
-          </>}
+          {showAll ? (
+            <>
+              <ChevronsUp size={14} />
+              Show less
+            </>
+          ) : (
+            <>
+              <ChevronsDown size={14} />
+              Show more
+            </>
+          )}
         </button>
       )}
     </div>

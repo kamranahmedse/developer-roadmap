@@ -20,4 +20,4 @@ When implementing defaulting, keep the following guidelines in mind:
 
 In summary, defaulting is a powerful UX design technique that, when used thoughtfully, can streamline user interactions and lead to better usability and user satisfaction.
 
-- [The Power of Defaults](https://www.nngroup.com/articles/the-power-of-defaults/)
+- [@article@The Power of Defaults](https://www.nngroup.com/articles/the-power-of-defaults/)

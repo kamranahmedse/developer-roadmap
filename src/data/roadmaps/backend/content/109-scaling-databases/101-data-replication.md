@@ -4,4 +4,4 @@ Data replication is the process by which data residing on a physical/virtual ser
 
 Visit the following resources to learn more:
 
-- [What is Data Replication?](https://youtu.be/fUrKt-AQYtE)
+- [@video@What is Data Replication?](https://youtu.be/fUrKt-AQYtE)

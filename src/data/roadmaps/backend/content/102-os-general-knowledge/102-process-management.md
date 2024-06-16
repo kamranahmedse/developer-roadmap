@@ -4,5 +4,5 @@ Process management involves various tasks like creation, scheduling, termination
 
 Visit the following resources to learn more:
 
-- [Operating System: Process and Process Management](https://medium.com/@akhandmishra/operating-system-process-and-process-management-108d83e8ce60)
-- [Process Management in OS: PCB in Operating System](https://www.guru99.com/process-management-pcb.html)
+- [@article@Operating System: Process and Process Management](https://medium.com/@akhandmishra/operating-system-process-and-process-management-108d83e8ce60)
+- [@article@Process Management in OS: PCB in Operating System](https://www.guru99.com/process-management-pcb.html)

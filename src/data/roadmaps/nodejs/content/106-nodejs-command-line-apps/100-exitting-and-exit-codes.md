@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Node.js Docs on exit](https://nodejs.org/docs/latest/api/process.html)
-- [How to Exit a Process in Node.js](https://www.knowledgehut.com/blog/web-development/node-js-process-exit)
+- [@official@Node.js Docs on exit](https://nodejs.org/docs/latest/api/process.html)
+- [@article@How to Exit a Process in Node.js](https://www.knowledgehut.com/blog/web-development/node-js-process-exit)

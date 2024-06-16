@@ -5,4 +5,4 @@ Standard JS is a tool in the Code Review category of a tech stack.
 
 Visit the following resources to learn more:
 
-- [Official Website](https://standardjs.com/)
+- [@official@Official Website](https://standardjs.com/)

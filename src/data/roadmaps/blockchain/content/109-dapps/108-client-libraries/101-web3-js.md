@@ -4,4 +4,4 @@ web3.js is a collection of libraries that allow you to interact with a local or 
 
 Visit the following resources to learn more:
 
-- [web3.js Documentation](https://web3js.readthedocs.io/)
+- [@article@web3.js Documentation](https://web3js.readthedocs.io/)

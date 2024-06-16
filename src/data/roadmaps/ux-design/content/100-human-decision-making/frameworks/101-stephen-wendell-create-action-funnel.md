@@ -12,4 +12,4 @@ Stephen Wendell's Create Action Funnel is a UX design framework focused on conve
 
 By implementing Stephen Wendell's `Create Action Funnel`, you can effectively guide users through an engaging journey that motivates them to become active customers, ultimately increasing conversion rates and overall satisfaction.
 
-- [Behavioral Science Crash Course: Steve Wendel's CREATE Action Funnel](https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel)
+- [@article@Behavioral Science Crash Course: Steve Wendel's CREATE Action Funnel](https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel)

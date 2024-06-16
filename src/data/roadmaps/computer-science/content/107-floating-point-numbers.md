@@ -4,5 +4,5 @@ Floating point numbers are numbers that have a decimal point in them. They are u
 
 Visit the following resources to learn more:
 
-- [Representation of Floating Point Numbers - 1](https://www.youtube.com/watch?v=ji3SfClm8TU)
-- [Why 0.1 + 0.2 != 0.3? | Floating Point Math](https://www.youtube.com/watch?v=RIiq4tTt6rI)
+- [@video@Representation of Floating Point Numbers - 1](https://www.youtube.com/watch?v=ji3SfClm8TU)
+- [@video@Why 0.1 + 0.2 != 0.3? | Floating Point Math](https://www.youtube.com/watch?v=RIiq4tTt6rI)

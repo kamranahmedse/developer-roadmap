@@ -4,4 +4,4 @@ Split a large message into a claim check and a payload. Send the claim check to 
 
 Learn more from the following links:
 
-- [Claim Check - Cloud Design patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check)
+- [@article@Claim Check - Cloud Design patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check)

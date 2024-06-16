@@ -6,6 +6,6 @@ There are several types of NoSQL databases, such as document databases, key-valu
 
 To learn more, visit the following links:
 
-- [NoSQL in .NET Applications](https://www.slideshare.net/shijucv/nosql-database-in-net-apps)
-- [Open Source NoSQL Database for .NET](https://www.alachisoft.com/nosdb/)
-- [Use NoSQL databases in ASP.NET](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/nosql-database-persistence-infrastructure)
+- [@article@NoSQL in .NET Applications](https://www.slideshare.net/shijucv/nosql-database-in-net-apps)
+- [@article@Open Source NoSQL Database for .NET](https://www.alachisoft.com/nosdb/)
+- [@article@Use NoSQL databases in ASP.NET](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/nosql-database-persistence-infrastructure)

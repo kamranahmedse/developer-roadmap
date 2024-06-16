@@ -4,6 +4,6 @@ PyPI, typically pronounced pie-pee-eye, is a repository containing several hundr
 
 Visit the following resources to learn more:
 
-- [PyPI Official Website](https://pypi.org/)
-- [Getting Started with Pip and PyPI in Python](https://www.youtube.com/watch?v=bPSfNKvhooA)
-- [How to Publish an Open-Source Python Package to PyPI](https://realpython.com/pypi-publish-python-package/)
+- [@official@PyPI Official Website](https://pypi.org/)
+- [@video@Getting Started with Pip and PyPI in Python](https://www.youtube.com/watch?v=bPSfNKvhooA)
+- [@article@How to Publish an Open-Source Python Package to PyPI](https://realpython.com/pypi-publish-python-package/)

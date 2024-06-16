@@ -4,4 +4,4 @@ Move configuration information out of the application deployment package to a ce
 
 To learn more, visit the following links:
 
-- [External Configuration Store pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)
+- [@article@External Configuration Store pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store)

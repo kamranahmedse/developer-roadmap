@@ -4,6 +4,6 @@ Bitwise operators are used to perform operations on individual bits of a number.
 
 Visit the following resources to learn more:
 
-- [Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
-- [Binary: Plusses & Minuses (Why We Use Twos Complement) - Computerphile](https://www.youtube.com/watch?v=lKTsv6iVxV4)
-- [Algorithms: Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)
+- [@video@Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
+- [@video@Binary: Plusses & Minuses (Why We Use Twos Complement) - Computerphile](https://www.youtube.com/watch?v=lKTsv6iVxV4)
+- [@video@Algorithms: Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)

@@ -11,5 +11,5 @@ Here's how to use dependency injection in Flutter:
 
 Learn more from the following links:
 
-- [Dependency Injection In Flutter](https://medium.com/flutter-community/dependency-injection-in-flutter-f19fb66a0740)
-- [Flutter Dependency Injection For Beginners](https://www.youtube.com/watch?v=vBT-FhgMaWM)
+- [@article@Dependency Injection In Flutter](https://medium.com/flutter-community/dependency-injection-in-flutter-f19fb66a0740)
+- [@video@Flutter Dependency Injection For Beginners](https://www.youtube.com/watch?v=vBT-FhgMaWM)

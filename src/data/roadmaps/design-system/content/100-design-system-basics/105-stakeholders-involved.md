@@ -13,4 +13,4 @@ Building an effective design system is not an individual responsibility, you nee
 
 Visit the following resources to learn more:
 
-- [Designing the Design System](https://www.designbetter.co/design-systems-handbook/designing-design-system)
+- [@article@Designing the Design System](https://www.designbetter.co/design-systems-handbook/designing-design-system)

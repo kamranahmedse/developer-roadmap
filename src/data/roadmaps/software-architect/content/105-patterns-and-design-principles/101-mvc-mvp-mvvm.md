@@ -9,4 +9,4 @@ Another variant of the MVC is the model-view-viewmodel pattern. The Model-view-v
 
 Visit the following resources to learn more:
 
-- [MVC, MVP and MVVM Design Pattern](https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad)
+- [@article@MVC, MVP and MVVM Design Pattern](https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad)

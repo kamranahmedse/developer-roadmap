@@ -13,5 +13,5 @@ Lambdas are defined using the `=>` operator and can take zero or more arguments.
 
 Learn more from the following links:
 
-- [Lambda functions in Dart](https://medium.com/jay-tillu/lambda-functions-in-dart-7db8b759f07a)
-- [Anonymous Function in Dart | Lambda Function](https://www.youtube.com/watch?v=XTKKQdTAR0U)
+- [@article@Lambda functions in Dart](https://medium.com/jay-tillu/lambda-functions-in-dart-7db8b759f07a)
+- [@video@Anonymous Function in Dart | Lambda Function](https://www.youtube.com/watch?v=XTKKQdTAR0U)

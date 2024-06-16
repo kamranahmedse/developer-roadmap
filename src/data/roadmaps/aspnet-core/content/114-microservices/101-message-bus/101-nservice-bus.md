@@ -6,5 +6,5 @@ NSB supports multiple messaging transports, including MSMQ, RabbitMQ, and Azure 
 
 To learn more, visit the following links:
 
-- [Using NServiceBus in an ASP.NET](https://docs.particular.net/samples/web/send-from-aspnetcore-webapi/)
-- [Learn NServiceBus from .NET Core](https://www.codeproject.com/Articles/1224839/Learn-NServiceBus-from-NET-Core-WebAPI)
+- [@article@Using NServiceBus in an ASP.NET](https://docs.particular.net/samples/web/send-from-aspnetcore-webapi/)
+- [@article@Learn NServiceBus from .NET Core](https://www.codeproject.com/Articles/1224839/Learn-NServiceBus-from-NET-Core-WebAPI)

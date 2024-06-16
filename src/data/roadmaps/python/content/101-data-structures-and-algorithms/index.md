@@ -4,6 +4,6 @@ A data structure is a named location that can be used to store and organize data
 
 Visit the following resources to learn more:
 
-- [Learn DS & Algorithms](https://www.programiz.com/dsa)
-- [Data Structures Illustrated](https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
-- [DSA Course by Google](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513)
+- [@article@Learn DS & Algorithms](https://www.programiz.com/dsa)
+- [@video@Data Structures Illustrated](https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
+- [@article@DSA Course by Google](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513)

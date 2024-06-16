@@ -4,6 +4,6 @@ Blockchains, cryptocurrency, smart contracts, and oracles have emerged as new te
 
 Visit the following resources to learn more:
 
-- [What Crypto Is Really About](https://blog.chain.link/what-crypto-is-really-about/)
-- [Ethereum Consensus Mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
-- [The Superiority of Cryptographic Truth](https://youtu.be/AEtBPbmIRKQ)
+- [@article@What Crypto Is Really About](https://blog.chain.link/what-crypto-is-really-about/)
+- [@article@Ethereum Consensus Mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
+- [@video@The Superiority of Cryptographic Truth](https://youtu.be/AEtBPbmIRKQ)

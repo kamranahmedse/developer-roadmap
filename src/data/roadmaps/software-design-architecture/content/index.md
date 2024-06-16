@@ -14,5 +14,5 @@ Each architecture pattern or style has its own set of advantages and disadvantag
 
 Learn more from the following links:
 
-- [Software Architecture & Design Introduction](https://www.tutorialspoint.com/software_architecture_design/introduction.htm)
-- [Overview of Software architecture](https://en.wikipedia.org/wiki/Software_architecture)
+- [@article@Software Architecture & Design Introduction](https://www.tutorialspoint.com/software_architecture_design/introduction.htm)
+- [@article@Overview of Software architecture](https://en.wikipedia.org/wiki/Software_architecture)

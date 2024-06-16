@@ -4,6 +4,6 @@ Modules encapsulate all sorts of code like functions and variables and expose al
 
 Visit the following resources to learn more:
 
-- [Modules, introduction](https://javascript.info/modules-intro)
-- [Export and Import](https://javascript.info/import-export)
-- [Dynamic imports](https://javascript.info/modules-dynamic-imports)
+- [@article@Modules, introduction](https://javascript.info/modules-intro)
+- [@article@Export and Import](https://javascript.info/import-export)
+- [@article@Dynamic imports](https://javascript.info/modules-dynamic-imports)

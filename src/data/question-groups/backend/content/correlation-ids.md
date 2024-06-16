@@ -1,0 +1,3 @@
+Correlation IDs are unique identifiers added on requests done to distributed architectures to facilitate tracking of requests throughout the architecture. Remember that usually, when a request hits a distributed backend system, the data from the request passes through multiple web services before generating a response.
+
+This makes it easy to understand the journey each request goes through to debug any potential problems or performance issues.

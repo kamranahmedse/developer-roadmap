@@ -4,6 +4,6 @@ Spring Data is a collection of projects for data access in Spring-based applicat
 
 For more resources, visit the following links:
 
-- [Spring Data](https://spring.io/projects/spring-data)
-- [Spring Data – One API To Rule Them All?](https://www.infoq.com/articles/spring-data-intro/)
-- [What is JPA, Spring Data and Spring Data JPA](https://www.amitph.com/jpa-and-spring-data-jpa/)
+- [@official@Spring Data](https://spring.io/projects/spring-data)
+- [@article@Spring Data – One API To Rule Them All?](https://www.infoq.com/articles/spring-data-intro/)
+- [@article@What is JPA, Spring Data and Spring Data JPA](https://www.amitph.com/jpa-and-spring-data-jpa/)

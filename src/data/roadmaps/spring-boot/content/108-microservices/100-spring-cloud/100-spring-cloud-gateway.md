@@ -6,6 +6,6 @@ Spring Cloud Gateway is built on top of the Spring Framework and Spring Boot, an
 
 Visit the following links for more resources:
 
-- [What is Spring Cloud Gateway?](https://tanzu.vmware.com/developer/guides/scg-what-is/)
-- [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
-- [Exploring the New Spring Cloud Gateway](https://www.baeldung.com/spring-cloud-gateway)
+- [@article@What is Spring Cloud Gateway?](https://tanzu.vmware.com/developer/guides/scg-what-is/)
+- [@official@Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+- [@article@Exploring the New Spring Cloud Gateway](https://www.baeldung.com/spring-cloud-gateway)

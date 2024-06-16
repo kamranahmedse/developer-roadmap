@@ -4,5 +4,5 @@ cukes-rest takes simplicity of Cucumber and provides bindings for HTTP specifica
 
 Visit the following resources to learn more:
 
-- [Cukes Github](https://github.com/ctco/cukes)
-- [Getting Started with Cukes-REST](https://speakerdeck.com/larchaon/getting-started-with-cukes-rest?slide=23)
+- [@opensource@Cukes Github](https://github.com/ctco/cukes)
+- [@article@Getting Started with Cukes-REST](https://speakerdeck.com/larchaon/getting-started-with-cukes-rest?slide=23)

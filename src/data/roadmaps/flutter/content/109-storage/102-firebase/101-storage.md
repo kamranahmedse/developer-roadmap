@@ -6,4 +6,4 @@ To use Firebase Storage in your Flutter app, you need to first create a Firebase
 
 Learn more from the following:
 
-- [How to Upload and Retrieve Images from Firebase Storage](https://www.youtube.com/watch?v=sM-WMcX66FI)
+- [@video@How to Upload and Retrieve Images from Firebase Storage](https://www.youtube.com/watch?v=sM-WMcX66FI)

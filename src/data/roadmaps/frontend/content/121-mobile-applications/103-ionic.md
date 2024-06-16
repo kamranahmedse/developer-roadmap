@@ -4,6 +4,6 @@ Ionic framework is an open-source UI toolkit for building performant, high-quali
 
 Visit the following resources to learn more:
 
-- [Official Website](https://ionicframework.com/)
-- [Official Getting Started to Ionic framework](https://ionicframework.com/docs/)
-- [Ionic Framework 4 - Full Tutorial](https://www.youtube.com/watch?v=AvbuIRg8_Jg)
+- [@article@Official Website](https://ionicframework.com/)
+- [@article@Official Getting Started to Ionic framework](https://ionicframework.com/docs/)
+- [@video@Ionic Framework 4 - Full Tutorial](https://www.youtube.com/watch?v=AvbuIRg8_Jg)

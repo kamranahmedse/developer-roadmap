@@ -45,4 +45,4 @@ LoLBAS present a significant challenge to cyber security, as they blend in with 
 
 Ensure you are well prepared to identify and mitigate LoLBAS attacks by following the recommendations provided in this guide. Stay vigilant and stay secure!
 
-- [LOLBAS project](https://lolbas-project.github.io/#)
+- [@article@LOLBAS project](https://lolbas-project.github.io/#)

@@ -38,9 +38,9 @@ _Node.js:_ A JavaScript runtime environment built on Chrome's V8 JavaScript engi
 
 Here are some resources to sharpen your JavaScript programming skills:
 
-- [Mozilla Developer Network (MDN) JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-- [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
-- [freeCodeCamp's JavaScript Curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
-- [Eloquent JavaScript: A Modern Introduction to Programming](https://eloquentjavascript.net/) (book)
+- [@article@Mozilla Developer Network (MDN) JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [@article@W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
+- [@article@freeCodeCamp's JavaScript Curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+- [@article@Eloquent JavaScript: A Modern Introduction to Programming](https://eloquentjavascript.net/) (book)
 
 By mastering JavaScript, you'll be better equipped to build more interactive and dynamic web applications, thus enhancing your overall cyber security skills.

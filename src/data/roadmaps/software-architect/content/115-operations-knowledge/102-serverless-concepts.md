@@ -6,6 +6,6 @@ There are still servers in serverless, but they are abstracted away from app dev
 
 Visit the following resources to learn more:
 
-- [What is serverless?](https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless)
-- [What is serverless computing?](https://www.cloudflare.com/learning/serverless/what-is-serverless/)
-- [Serverless on AWS](https://aws.amazon.com/serverless/)
+- [@article@What is serverless?](https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless)
+- [@article@What is serverless computing?](https://www.cloudflare.com/learning/serverless/what-is-serverless/)
+- [@article@Serverless on AWS](https://aws.amazon.com/serverless/)

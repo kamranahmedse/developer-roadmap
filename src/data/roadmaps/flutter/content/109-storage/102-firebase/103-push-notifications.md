@@ -10,4 +10,4 @@ To implement push notifications in Flutter using Firebase, follow these steps:
 
 Learn more from the following links:
 
-- [How do I set up push notifications?](https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-set-up-push-notifications)
+- [@article@How do I set up push notifications?](https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-set-up-push-notifications)

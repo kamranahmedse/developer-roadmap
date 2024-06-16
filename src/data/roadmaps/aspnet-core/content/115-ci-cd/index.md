@@ -6,5 +6,5 @@ In the context of ASP.NET, CI/CD can be used to automate various tasks related t
 
 To learn more, visit the following links:
 
-- [How to reate a CI/CD pipeline for ASP.NET?](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/)
-- [Building a CI/CD Pipeline in Azure DevOps for ASP.NET Core](https://youtube.com/watch?v=eOQL0nXQlLs)
+- [@article@How to reate a CI/CD pipeline for ASP.NET?](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/)
+- [@video@Building a CI/CD Pipeline in Azure DevOps for ASP.NET Core](https://youtube.com/watch?v=eOQL0nXQlLs)

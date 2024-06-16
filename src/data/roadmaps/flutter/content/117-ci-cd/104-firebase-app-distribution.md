@@ -6,4 +6,4 @@ With Firebase App Distribution, developers can upload a pre-release version of t
 
 To learn more visit the following links:
 
-- [Firebase Hosting](https://firebase.google.com/docs/hosting)
+- [@article@Firebase Hosting](https://firebase.google.com/docs/hosting)

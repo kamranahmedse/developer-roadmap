@@ -31,4 +31,4 @@ Write-through is a slow overall operation due to the write operation, but subseq
 
 Have a look at the following resources to learn more:
 
-- [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+- [@article@Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)

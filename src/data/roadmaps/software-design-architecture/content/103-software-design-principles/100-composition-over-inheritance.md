@@ -6,5 +6,5 @@ Inheritance is a powerful mechanism for creating reusable code, but it can also 
 
 Learn more from the following links:
 
-- [Tutorial - Composition over Inheritance](https://www.youtube.com/watch?v=wfMtDGfHWpA)
-- [Overview of Composition over Inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
+- [@video@Tutorial - Composition over Inheritance](https://www.youtube.com/watch?v=wfMtDGfHWpA)
+- [@article@Overview of Composition over Inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)

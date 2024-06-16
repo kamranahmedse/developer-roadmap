@@ -4,4 +4,4 @@ UML is a standard way of visualizing a software system. It is a general-purpose,
 
 Visit the following resources to learn more:
 
-- [UML Diagrams Full Course (Unified Modeling Language)](https://www.youtube.com/watch?v=WnMQ8HlmeXc)
+- [@video@UML Diagrams Full Course (Unified Modeling Language)](https://www.youtube.com/watch?v=WnMQ8HlmeXc)

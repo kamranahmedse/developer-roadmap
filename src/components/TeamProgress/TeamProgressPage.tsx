@@ -227,6 +227,7 @@ export function TeamProgressPage() {
               <MemberProgressItem
                 key={member._id}
                 member={member}
+                teamId={teamId}
                 isMyProgress={member?.email === user?.email}
                 onShowResourceProgress={(resourceId, isCustomResource) => {
                   setShowMemberProgress({

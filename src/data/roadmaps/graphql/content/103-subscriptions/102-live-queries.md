@@ -6,4 +6,4 @@ With live queries, the client can subscribe to a specific query and receive upda
 
 Learn more from the following links:
 
-- [GraphQL Live Queries](https://the-guild.dev/blog/collecting-graphql-live-query-resource-identifier-with-graphql-tools)
+- [@article@GraphQL Live Queries](https://the-guild.dev/blog/collecting-graphql-live-query-resource-identifier-with-graphql-tools)

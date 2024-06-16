@@ -6,7 +6,7 @@ Newman is a command-line Collection Runner for Postman. It enables you to run an
 
 Visit the following resources to learn more:
 
-- [Postman website](https://www.postman.com)
-- [Learn postman](https://learning.postman.com/docs/getting-started/introduction/)
-- [API testing with postman](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
-- [ Newman cli usage](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+- [@official@Postman website](https://www.postman.com)
+- [@article@Learn postman](https://learning.postman.com/docs/getting-started/introduction/)
+- [@video@API testing with postman](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
+- [@article@ Newman cli usage](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)

@@ -6,6 +6,6 @@ One of the key features of Orleans is its use of the virtual actor model, which 
 
 To learn more, visit the following links:
 
-- [Microsoft Orleans](https://learn.microsoft.com/en-us/dotnet/orleans/overview)
-- [Building real applications with Orleans](https://www.youtube.com/watch?v=8duFuggnj8o)
-- [Introduction to Orleans](https://dev.to/willvelida/introduction-to-microsoft-orleans-796)
+- [@article@Microsoft Orleans](https://learn.microsoft.com/en-us/dotnet/orleans/overview)
+- [@video@Building real applications with Orleans](https://www.youtube.com/watch?v=8duFuggnj8o)
+- [@article@Introduction to Orleans](https://dev.to/willvelida/introduction-to-microsoft-orleans-796)

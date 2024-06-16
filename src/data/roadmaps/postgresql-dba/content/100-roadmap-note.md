@@ -6,5 +6,5 @@ Also, note that the roadmap topics contain some introductory content that is mea
 
 If you are a beginner, you can start with the following resources:
 
-- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
-- [PostgreSQL Exercises](https://pgexercises.com/)
+- [@article@PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+- [@article@PostgreSQL Exercises](https://pgexercises.com/)

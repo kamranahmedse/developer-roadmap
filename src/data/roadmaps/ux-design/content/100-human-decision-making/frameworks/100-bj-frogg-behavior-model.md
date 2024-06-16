@@ -10,4 +10,4 @@ B.J. Fogg, a renowned psychologist, and researcher at Stanford University, propo
 
 UX designers should strive to find the balance between these three factors to facilitate the desired user behavior. By understanding your audience and their needs, implementing clear and concise triggers, and minimizing the effort required for action, the FBM can be an effective tool for designing user-centered products.
 
-- [meaning of BJ fogg's behavior model](https://behaviormodel.org/)
+- [@official@meaning of BJ fogg's behavior model](https://behaviormodel.org/)

@@ -24,4 +24,4 @@ In this example, the `Animal` class has a name field, a constructor that sets th
 
 Learn more from the following resources:
 
-- [Tutorial - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
+- [@article@Tutorial - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)

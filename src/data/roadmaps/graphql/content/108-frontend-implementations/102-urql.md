@@ -4,4 +4,4 @@ URQL is a highly customizable and versatile GraphQL client with which you add on
 
 Visit the following resources to learn more:
 
-- [urql - Formidable Labs](https://formidable.com/open-source/urql/)
+- [@article@urql - Formidable Labs](https://formidable.com/open-source/urql/)

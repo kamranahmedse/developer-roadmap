@@ -23,7 +23,7 @@ const hasTnsBanner = !!tnsBannerLink;
 
 <div
   class:list={[
-    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 bg-white',
+    'mb-0 mt-4 rounded-md border-0 bg-white sm:mt-7 sm:border',
     ...(hasTnsBanner
       ? [
           {
@@ -42,7 +42,7 @@ const hasTnsBanner = !!tnsBannerLink;
   <ResourceProgressStats
     resourceId={roadmapId}
     resourceType='roadmap'
-    hasSecondaryBanner={hasTitleQuestion}
+    hasSecondaryBanner={Boolean(hasTitleQuestion)}
   />
 
   {

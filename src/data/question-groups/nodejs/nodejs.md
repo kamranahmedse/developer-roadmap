@@ -4,7 +4,7 @@ briefTitle: 'Node.js'
 briefDescription: 'Test, rate and improve your Node.js knowledge with these questions.'
 title: 'Node.js Questions'
 description: 'Test, rate and improve your Node.js knowledge with these questions.'
-isNew: true
+isNew: false
 seo:
   title: 'Node.js Questions'
   description: 'Curated list of Node.js questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'

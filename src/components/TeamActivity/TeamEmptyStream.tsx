@@ -1,4 +1,4 @@
-import { Activity, List, ListTodo } from 'lucide-react';
+import { ListTodo } from 'lucide-react';
 
 type TeamActivityItemProps = {
   teamId: string;

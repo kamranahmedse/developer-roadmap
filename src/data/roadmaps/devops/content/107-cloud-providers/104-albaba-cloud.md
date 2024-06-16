@@ -4,6 +4,6 @@ Alibaba Cloud is a cloud computing service, offering over 100 products and servi
 
 Visit the following resources to learn more:
 
-- [Alibaba Cloud Website](https://www.alibabacloud.com/)
-- [Official Documentation](https://www.alibabacloud.com/help/en/)
-- [Alibaba Cloud Getting Started Guide](https://www.alibabacloud.com/getting-started)
+- [@article@Alibaba Cloud Website](https://www.alibabacloud.com/)
+- [@article@Official Documentation](https://www.alibabacloud.com/help/en/)
+- [@article@Alibaba Cloud Getting Started Guide](https://www.alibabacloud.com/getting-started)

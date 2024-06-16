@@ -4,6 +4,6 @@ Swashbuckle is an open-source library for .NET that provides a simple and easy-t
 
 To learn more, visit the following resources:
 
-- [Get started with Swashbuckle and ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-7.0&tabs=visual-studio)
-- [How to Setup Swagger in ASP.NET with Swashbuckle?](https://www.andrewhoefling.com/Blog/Post/web-api-swagger-swashbuckle)
-- [How to use Swagger/Swashbuckle in ASP.NET?](https://www.pragimtech.com/blog/azure/how-to-use-swagger-in-asp.net-core-web-api/)
+- [@article@Get started with Swashbuckle and ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-7.0&tabs=visual-studio)
+- [@article@How to Setup Swagger in ASP.NET with Swashbuckle?](https://www.andrewhoefling.com/Blog/Post/web-api-swagger-swashbuckle)
+- [@article@How to use Swagger/Swashbuckle in ASP.NET?](https://www.pragimtech.com/blog/azure/how-to-use-swagger-in-asp.net-core-web-api/)

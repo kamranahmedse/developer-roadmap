@@ -16,9 +16,9 @@ To install a compiler, simply follow the instructions provided by the respective
 
 An IDE is a software application that provides facilities for programming, such as code editing, debugging, and building. Some popular C++ IDEs include:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) (Windows, macOS)
-- [Eclipse](https://eclipse.org) (Windows, macOS, Linux)
-- [Code::Blocks](http://www.codeblocks.org) (Windows, macOS, Linux)
+- [@article@Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) (Windows, macOS)
+- [@article@Eclipse](https://eclipse.org) (Windows, macOS, Linux)
+- [@article@Code::Blocks](http://www.codeblocks.org) (Windows, macOS, Linux)
 
 After downloading and installing an IDE, you might need to configure it to use the installed compiler. Check the documentation of the respective IDE for instructions on how to do this.
 

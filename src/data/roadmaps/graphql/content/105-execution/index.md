@@ -4,5 +4,5 @@ In GraphQL, execution refers to the process of executing a query or mutation and
 
 Learn more from the following links:
 
-- [Get Started with Execution in GraphQL](https://graphql.org/learn/execution/)
-- [Intro to Execution](https://graphql.org/graphql-js/execution/)
+- [@official@Get Started with Execution in GraphQL](https://graphql.org/learn/execution/)
+- [@official@Intro to Execution](https://graphql.org/graphql-js/execution/)

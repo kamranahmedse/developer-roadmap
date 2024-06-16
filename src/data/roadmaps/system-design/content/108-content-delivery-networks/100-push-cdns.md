@@ -6,4 +6,4 @@ Sites with a small amount of traffic or sites with content that isn't often upda
 
 To learn more, visit the following links:
 
-- [Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)
+- [@opensource@Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)

@@ -4,4 +4,4 @@ Message brokers are an inter-application communication technology to help build 
 
 Visit the following resources to learn more:
 
-- [Introduction to Message Brokers](https://www.youtube.com/watch?v=57Qr9tk6Uxc)
+- [@video@Introduction to Message Brokers](https://www.youtube.com/watch?v=57Qr9tk6Uxc)

@@ -8,5 +8,5 @@ React Native Testing Library (RNTL) is a collection of tools and utilities to te
 
 Follow the links below for more details:
 
-- [React Native Testing Library](https://callstack.github.io/react-native-testing-library/)
-- [React Native Testing Library (Docs)](https://testing-library.com/docs/react-native-testing-library/intro/)
+- [@article@React Native Testing Library](https://callstack.github.io/react-native-testing-library/)
+- [@article@React Native Testing Library (Docs)](https://testing-library.com/docs/react-native-testing-library/intro/)

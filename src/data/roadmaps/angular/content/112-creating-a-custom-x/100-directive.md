@@ -6,5 +6,5 @@ From the core concept, Angular directives are categorized into three categories:
 
 Visit the following resources to learn more:
 
-- [Create a custom directive - Freecodecamp](https://www.freecodecamp.org/news/angular-directives-learn-how-to-use-or-create-custom-directives-in-angular-c9b133c24442/)
-- [Create a custom directive video for Beginners](https://www.youtube.com/watch?v=AoN56g6UAsE)
+- [@article@Create a custom directive - Freecodecamp](https://www.freecodecamp.org/news/angular-directives-learn-how-to-use-or-create-custom-directives-in-angular-c9b133c24442/)
+- [@video@Create a custom directive video for Beginners](https://www.youtube.com/watch?v=AoN56g6UAsE)
