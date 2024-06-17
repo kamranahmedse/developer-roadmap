@@ -4,5 +4,5 @@ Svelte Kit is a framework for building web applications with the Svelte JavaScri
 
 Visit the following resources to learn more:
 
-- [Svelte Kit Official Website](https://kit.svelte.dev/)
-- [Official Svelte Kit Docs](https://kit.svelte.dev/docs/introduction)
+- [@article@Svelte Kit Official Website](https://kit.svelte.dev/)
+- [@article@Official Svelte Kit Docs](https://kit.svelte.dev/docs/introduction)

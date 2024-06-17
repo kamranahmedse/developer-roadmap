@@ -6,5 +6,5 @@ Validation in Software Engineering is a dynamic mechanism of testing and validat
 
 Visit the following resources to learn more:
 
-- [Differences Between Verification and Validation](https://www.guru99.com/verification-v-s-validation-in-a-software-testing.html)
-- [Design Verification & Validation Process](https://www.guru99.com/design-verification-process.html)
+- [@article@Differences Between Verification and Validation](https://www.guru99.com/verification-v-s-validation-in-a-software-testing.html)
+- [@article@Design Verification & Validation Process](https://www.guru99.com/design-verification-process.html)

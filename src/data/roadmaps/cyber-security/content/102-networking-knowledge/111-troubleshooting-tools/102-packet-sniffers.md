@@ -19,9 +19,9 @@ Some of the main features offered by packet sniffers include:
 
 There are numerous packet sniffers available, both open-source and commercial. Some popular packet sniffers include:
 
-- [Wireshark](https://www.wireshark.org/): A popular open-source packet analyzer with advanced features and support for various platforms.
-- [tcpdump](https://www.tcpdump.org/): A command-line packet sniffer and analyzer primarily used in Unix-based systems.
-- [Npcap](https://nmap.org/npcap/): A packet capture framework for Windows that supports Windows 10 and newer versions.
+- [@article@Wireshark](https://www.wireshark.org/): A popular open-source packet analyzer with advanced features and support for various platforms.
+- [@article@tcpdump](https://www.tcpdump.org/): A command-line packet sniffer and analyzer primarily used in Unix-based systems.
+- [@article@Npcap](https://nmap.org/npcap/): A packet capture framework for Windows that supports Windows 10 and newer versions.
 
 ## Cyber Security & Packet Sniffers
 

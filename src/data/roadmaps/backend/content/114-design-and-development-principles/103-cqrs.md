@@ -4,4 +4,4 @@ CQRS, or command query responsibility segregation, defines an architectural patt
 
 Visit the following resources to learn more:
 
-- [CQRS Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+- [@article@CQRS Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)

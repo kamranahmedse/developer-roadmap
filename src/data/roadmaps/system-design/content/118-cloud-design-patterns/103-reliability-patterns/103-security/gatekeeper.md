@@ -4,4 +4,4 @@ Protect applications and services using a dedicated host instance that acts as a
 
 Learn more from the following resources:
 
-- [Gatekeeper pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gatekeeper)
+- [@article@Gatekeeper pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/gatekeeper)

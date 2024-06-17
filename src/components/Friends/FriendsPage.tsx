@@ -11,6 +11,7 @@ import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
 import { UserCustomProgressModal } from '../UserProgress/UserCustomProgressModal';
 import { UserIcon } from 'lucide-react';
+import type { AllowedRoadmapRenderer } from '../../lib/roadmap';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -22,6 +23,7 @@ type FriendResourceProgress = {
   skipped: number;
   done: number;
   total: number;
+  renderer?: AllowedRoadmapRenderer;
 };
 
 export type ListFriendsResponse = {
@@ -55,6 +57,7 @@ export function FriendsPage() {
     resourceId: string;
     friend: ListFriendsResponse[0];
     isCustomResource?: boolean;
+    renderer?: AllowedRoadmapRenderer;
   }>();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -92,8 +95,8 @@ export function FriendsPage() {
     (grouping) => grouping.value === selectedGrouping,
   );
 
-  const filteredFriends = friends.filter(
-    (friend) => selectedGroupingType?.statuses.includes(friend.status),
+  const filteredFriends = friends.filter((friend) =>
+    selectedGroupingType?.statuses.includes(friend.status),
   );
 
   const receivedRequests = friends.filter(
@@ -124,6 +127,7 @@ export function FriendsPage() {
         resourceType={'roadmap'}
         onClose={() => setShowFriendProgress(undefined)}
         isCustomResource={showFriendProgress?.isCustomResource}
+        renderer={showFriendProgress?.renderer}
       />
     );
 
@@ -182,11 +186,16 @@ export function FriendsPage() {
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
-              onShowResourceProgress={(resourceId, isCustomResource) => {
+              onShowResourceProgress={(
+                resourceId,
+                isCustomResource,
+                renderer,
+              ) => {
                 setShowFriendProgress({
                   resourceId,
                   friend,
                   isCustomResource,
+                  renderer,
                 });
               }}
               key={friend.userId}

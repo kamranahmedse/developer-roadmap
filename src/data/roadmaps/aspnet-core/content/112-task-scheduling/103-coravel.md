@@ -6,6 +6,6 @@ Coravel is inspired by Laravel's task scheduler and it's built on top of the .NE
 
 To learn more, visit the following links:
 
-- [Documentation of Coravel](https://docs.coravel.net/)
-- [ASP.NET Task Scheduling with Coravel](https://www.youtube.com/watch?v=vu0fxlWl0wo)
-- [How to Run a .Net Console App with Coravel](https://www.youtube.com/watch?v=KQpw_OYkKq8)
+- [@article@Documentation of Coravel](https://docs.coravel.net/)
+- [@video@ASP.NET Task Scheduling with Coravel](https://www.youtube.com/watch?v=vu0fxlWl0wo)
+- [@video@How to Run a .Net Console App with Coravel](https://www.youtube.com/watch?v=KQpw_OYkKq8)

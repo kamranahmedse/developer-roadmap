@@ -4,5 +4,5 @@ In order to enter into the world of Angular application development, typescript 
 
 Visit the following resources to learn more:
 
-- [Typescript a Beginners Guide](https://medium.com/jspoint/typescript-a-beginners-guide-6956fe8bcf9e)
-- [TypeScript Playground](https://www.typescriptlang.org/play)
+- [@article@Typescript a Beginners Guide](https://medium.com/jspoint/typescript-a-beginners-guide-6956fe8bcf9e)
+- [@article@TypeScript Playground](https://www.typescriptlang.org/play)

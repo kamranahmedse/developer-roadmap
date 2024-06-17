@@ -6,5 +6,5 @@ AgileMapper uses a convention-based approach to mapping, which means that it aut
 
 To learn more, visit the following links:
 
-- [Comparison of Object Mapper Libraries](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
-- [Overview of Agile Mapper](https://readthedocs.org/projects/agilemapper/)
+- [@article@Comparison of Object Mapper Libraries](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
+- [@article@Overview of Agile Mapper](https://readthedocs.org/projects/agilemapper/)

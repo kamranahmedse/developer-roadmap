@@ -6,5 +6,5 @@ The main advantage of using the publish-subscribe pattern is that it allows for 
 
 Learn more from the following links:
 
-- [Publish-Subscribe Architecture (Explained by Example)](https://www.youtube.com/watch?v=O1PgqUqZKTA)
-- [Tutorial - Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
+- [@video@Publish-Subscribe Architecture (Explained by Example)](https://www.youtube.com/watch?v=O1PgqUqZKTA)
+- [@article@Tutorial - Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)

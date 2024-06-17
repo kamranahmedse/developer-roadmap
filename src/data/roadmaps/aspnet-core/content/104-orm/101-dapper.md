@@ -6,5 +6,5 @@ Dapper helps you to write efficient and concise code for interacting with databa
 
 To learn more about Dapper, you can visit the following links:
 
-- [The official Dapper website](https://github.com/StackExchange/Dapper)
-- [The Dapper Documentation](https://dapper-tutorial.net)
+- [@opensource@The official Dapper website](https://github.com/StackExchange/Dapper)
+- [@article@The Dapper Documentation](https://dapper-tutorial.net)

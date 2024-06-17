@@ -4,6 +4,6 @@ It is a controller that manages the deployment and scaling of a set of stateful 
 
 Learn more from the following links:
 
-- [StatefulSets Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
-- [Kubernetes StatefulSet | Tutorial](https://www.youtube.com/watch?v=pPQKAR1pA9U)
-- [Different Approaches for Building Stateful Kubernetes Applications](https://thenewstack.io/different-approaches-for-building-stateful-kubernetes-applications/)
+- [@official@StatefulSets Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+- [@video@Kubernetes StatefulSet | Tutorial](https://www.youtube.com/watch?v=pPQKAR1pA9U)
+- [@article@Different Approaches for Building Stateful Kubernetes Applications](https://thenewstack.io/different-approaches-for-building-stateful-kubernetes-applications/)

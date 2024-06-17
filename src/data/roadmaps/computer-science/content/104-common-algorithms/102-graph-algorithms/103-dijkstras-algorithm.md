@@ -4,5 +4,5 @@ Dijkstra's algorithm is a graph traversal algorithm that finds the shortest path
 
 Visit the following resources to learn more:
 
-- [Dijkstras Algorithm - MIT](https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare)
-- [Dijkstras Algorithm in 3 Minutes](https://www.youtube.com/watch?v=_lHSawdgXpI)
+- [@video@Dijkstras Algorithm - MIT](https://www.youtube.com/watch?v=NSHizBK9JD8&t=1731s&ab_channel=MITOpenCourseWare)
+- [@video@Dijkstras Algorithm in 3 Minutes](https://www.youtube.com/watch?v=_lHSawdgXpI)

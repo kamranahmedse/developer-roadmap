@@ -8,5 +8,5 @@ Adjacency list is an array of vectors. Size of the array is equal to the number 
 
 Visit the following resources to learn more:
 
-- [Adjacency Matrix - Graph Representation](https://www.programiz.com/dsa/graph-adjacency-matrix)
-- [Adjacency List - Graph Representation](https://www.programiz.com/dsa/graph-adjacency-list)
+- [@article@Adjacency Matrix - Graph Representation](https://www.programiz.com/dsa/graph-adjacency-matrix)
+- [@article@Adjacency List - Graph Representation](https://www.programiz.com/dsa/graph-adjacency-list)

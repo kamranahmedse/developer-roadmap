@@ -8,6 +8,6 @@ Panic recovery in Go depends on a feature of the language called deferred functi
 
 Visit the following resources to learn more:
 
-- [Error handling and Go](https://go.dev/blog/error-handling-and-go)
-- [Go Defer, Panic and Recover](https://go.dev/blog/defer-panic-and-recover)
-- [Effective error handling in Go](https://earthly.dev/blog/golang-errors/)
+- [@official@Error handling and Go](https://go.dev/blog/error-handling-and-go)
+- [@official@Go Defer, Panic and Recover](https://go.dev/blog/defer-panic-and-recover)
+- [@article@Effective error handling in Go](https://earthly.dev/blog/golang-errors/)

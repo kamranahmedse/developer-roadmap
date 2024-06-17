@@ -4,6 +4,6 @@ Assigning quotas to namespaces is a way to limit resource usage for specific gro
 
 Learn more from the following resources:
 
-- [Resource Quotas - Documentation](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
-- [Kubernetes Namespaces Explained in 15 mins](https://www.youtube.com/watch?v=K3jNo4z5Jx8)
-- [Leveraging Namespaces for Cost Optimization with Kubernetes](https://thenewstack.io/leveraging-namespaces-for-cost-optimization-with-kubernetes/)
+- [@official@Resource Quotas - Documentation](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+- [@video@Kubernetes Namespaces Explained in 15 mins](https://www.youtube.com/watch?v=K3jNo4z5Jx8)
+- [@article@Leveraging Namespaces for Cost Optimization with Kubernetes](https://thenewstack.io/leveraging-namespaces-for-cost-optimization-with-kubernetes/)

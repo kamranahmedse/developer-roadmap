@@ -6,5 +6,5 @@ DynamoDB is designed to handle extremely high levels of read and write throughpu
 
 For more information, visit the following links:
 
-- [Getting started with DynamoDB](https://aws.amazon.com/dynamodb/)
-- [Introduction to DynamoDB](https://cloudacademy.com/lab/introduction-dynamodb/)
+- [@article@Getting started with DynamoDB](https://aws.amazon.com/dynamodb/)
+- [@article@Introduction to DynamoDB](https://cloudacademy.com/lab/introduction-dynamodb/)

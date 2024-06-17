@@ -4,5 +4,5 @@ Opacity is a Flutter widget that allows you to control the transparency of its c
 
 Visit the following resources to learn more:
 
-- [Fade a widget in and out](https://docs.flutter.dev/cookbook/animation/opacity-animation)
-- [AnimatedOpacity widget](https://docs.flutter.dev/codelabs/implicit-animations#animate-opacity-with-animatedopacity-widgets)
+- [@article@Fade a widget in and out](https://docs.flutter.dev/cookbook/animation/opacity-animation)
+- [@article@AnimatedOpacity widget](https://docs.flutter.dev/codelabs/implicit-animations#animate-opacity-with-animatedopacity-widgets)

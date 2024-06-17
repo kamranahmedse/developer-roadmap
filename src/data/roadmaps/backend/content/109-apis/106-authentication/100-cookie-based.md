@@ -4,4 +4,4 @@ Cookies are pieces of data used to identify the user and their preferences. The 
 
 Visit the following resources to learn more:
 
-- [How does cookie based authentication work?](https://stackoverflow.com/questions/17769011/how-does-cookie-based-authentication-work)
+- [@article@How does cookie based authentication work?](https://stackoverflow.com/questions/17769011/how-does-cookie-based-authentication-work)

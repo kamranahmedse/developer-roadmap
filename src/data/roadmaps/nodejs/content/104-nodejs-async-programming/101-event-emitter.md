@@ -4,5 +4,5 @@ In Node.js, an event can be described simply as a string with a corresponding ca
 
 Visit the following resources to learn more:
 
-- [What are Event Emitters?](https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter)
-- [Using Event Emitters in Node.js](https://www.digitalocean.com/community/tutorials/using-event-emitters-in-node-js)
+- [@official@What are Event Emitters?](https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter)
+- [@article@Using Event Emitters in Node.js](https://www.digitalocean.com/community/tutorials/using-event-emitters-in-node-js)

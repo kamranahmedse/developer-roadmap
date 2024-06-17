@@ -4,7 +4,7 @@ Spring Core Configuration is the process of configuring the Spring Framework, wh
 
 To learn more about Spring Core Configuration from the links below:
 
-- [Spring Framework Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
-- ["Spring Configuration" tutorial](https://www.baeldung.com/project-configuration-with-spring)
-- ["Spring Framework" tutorial](https://www.tutorialspoint.com/spring/index.htm)
-- ["Spring Core" video tutorial](https://www.youtube.com/watch?v=GB8k2-Egfv0)
+- [@article@Spring Framework Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
+- [@article@"Spring Configuration" tutorial](https://www.baeldung.com/project-configuration-with-spring)
+- [@article@"Spring Framework" tutorial](https://www.tutorialspoint.com/spring/index.htm)
+- [@video@"Spring Core" video tutorial](https://www.youtube.com/watch?v=GB8k2-Egfv0)

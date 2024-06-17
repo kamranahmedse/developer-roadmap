@@ -4,4 +4,4 @@ In GraphQL, an operation name is an optional identifier that can be used to uniq
 
 Learn more from the following resources:
 
-- [Intro to Operation Name](https://graphql.org/learn/queries/#operation-name)
+- [@official@Intro to Operation Name](https://graphql.org/learn/queries/#operation-name)

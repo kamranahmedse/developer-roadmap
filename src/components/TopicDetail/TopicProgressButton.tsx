@@ -82,7 +82,6 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
     'l',
     () => {
       if (progress === 'learning') {
-        onClose();
         return;
       }
 
@@ -138,7 +137,9 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
     )
       .then(() => {
         setProgress(progress);
-        onClose();
+        if (progress !== 'learning') {
+          onClose();
+        }
         renderTopicProgress(topicId, progress);
         refreshProgressCounters();
       })

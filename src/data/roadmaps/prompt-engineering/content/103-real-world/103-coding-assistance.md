@@ -151,4 +151,4 @@ print("Social Security tax is: $", round(ss_tax, 2))
 
 Learn more from the following resources:
 
-- [LLM Coding Assistance](https://learnprompting.org/docs/basic_applications/coding_assistance)
+- [@article@LLM Coding Assistance](https://learnprompting.org/docs/basic_applications/coding_assistance)

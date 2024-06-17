@@ -4,8 +4,8 @@ Version control systems allow you to track changes to your codebase/files over t
 
 Visit the following resources to learn more:
 
-- [Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)
-- [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
-- [Learn Git in 20 Minutes](https://youtu.be/Y9XZQO1n_7c?t=21)
-- [Git Documentation](https://git-scm.com/docs)
-- [Learn Git by Atlassian](https://www.atlassian.com/git)
+- [@video@Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)
+- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [@video@Learn Git in 20 Minutes](https://youtu.be/Y9XZQO1n_7c?t=21)
+- [@article@Git Documentation](https://git-scm.com/docs)
+- [@article@Learn Git by Atlassian](https://www.atlassian.com/git)

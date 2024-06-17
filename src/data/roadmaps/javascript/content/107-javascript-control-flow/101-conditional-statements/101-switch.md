@@ -24,6 +24,6 @@ switch (expression) {
 
 Visit the following resources to learn more:
 
-- [switch - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-- [The `switch` Statement: Why, What and How - CodeGuage](https://www.codeguage.com/courses/js/conditions-switch)
-- [The switch statement - javascript.info](https://javascript.info/switch)
+- [@article@switch - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+- [@article@The `switch` Statement: Why, What and How - CodeGuage](https://www.codeguage.com/courses/js/conditions-switch)
+- [@article@The switch statement - javascript.info](https://javascript.info/switch)

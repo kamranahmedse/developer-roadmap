@@ -59,4 +59,4 @@ PostgreSQL provides special data types to work with geometric and network data:
 
 In summary, PostgreSQL offers a broad range of data types that cater to different types of information. Understanding these data types and how to use them effectively will help you design efficient database schemas and optimize your database performance.
 
-- [An introduction to PostgreSQL data types](https://www.prisma.io/dataguide/postgresql/introduction-to-data-types)
+- [@article@An introduction to PostgreSQL data types](https://www.prisma.io/dataguide/postgresql/introduction-to-data-types)

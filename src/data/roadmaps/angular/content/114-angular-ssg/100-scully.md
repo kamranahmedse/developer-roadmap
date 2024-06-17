@@ -4,5 +4,5 @@ Scully is the best static site generator for Angular projects looking to embrace
 
 Visit the following resources to learn more:
 
-- [Scully Website](https://scully.io/)
-- [Github Repository](https://github.com/scullyio/scully)
+- [@official@Scully Website](https://scully.io/)
+- [@opensource@Github Repository](https://github.com/scullyio/scully)

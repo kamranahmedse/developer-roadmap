@@ -4,8 +4,8 @@ Substring search is the problem of finding a substring in a string. This is a ve
 
 Visit the following resources to learn more:
 
-- [Introduction to Substring Search](https://www.coursera.org/lecture/algorithms-part2/introduction-to-substring-search-n3ZpG)
-- [What is the fastest substring search algorithm?](https://stackoverflow.com/questions/3183582/what-is-the-fastest-substring-search-algorithm)
-- [Check if a string is substring of another](https://www.geeksforgeeks.org/check-string-substring-another/)
-- [Anagram Substring Search (Or Search for all permutations)](https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
-- [Substring Search - Exercises](https://algs4.cs.princeton.edu/53substring/)
+- [@course@Introduction to Substring Search](https://www.coursera.org/lecture/algorithms-part2/introduction-to-substring-search-n3ZpG)
+- [@article@What is the fastest substring search algorithm?](https://stackoverflow.com/questions/3183582/what-is-the-fastest-substring-search-algorithm)
+- [@article@Check if a string is substring of another](https://www.geeksforgeeks.org/check-string-substring-another/)
+- [@article@Anagram Substring Search (Or Search for all permutations)](https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
+- [@article@Substring Search - Exercises](https://algs4.cs.princeton.edu/53substring/)

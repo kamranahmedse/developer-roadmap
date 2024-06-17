@@ -23,4 +23,4 @@ In both examples, `num` is a number, but the type assertions tell the compiler t
 
 Learn more from the following links:
 
-- [Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions)
+- [@article@Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions)

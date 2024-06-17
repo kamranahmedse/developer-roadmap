@@ -6,6 +6,6 @@ A DI container typically consists of two main parts: a configuration API, which 
 
 For more information, visit the following links:
 
-- [What is DI Container?](https://www.dotnettricks.com/learn/dependencyinjection/what-is-ioc-container-or-di-container)
-- [Getting Started with DI Container](https://stackoverflow.com/questions/50718586/what-is-a-di-container)
-- [How to Use DI Container?](https://learn.userfrosting.com/services/the-di-container)
+- [@article@What is DI Container?](https://www.dotnettricks.com/learn/dependencyinjection/what-is-ioc-container-or-di-container)
+- [@article@Getting Started with DI Container](https://stackoverflow.com/questions/50718586/what-is-a-di-container)
+- [@article@How to Use DI Container?](https://learn.userfrosting.com/services/the-di-container)

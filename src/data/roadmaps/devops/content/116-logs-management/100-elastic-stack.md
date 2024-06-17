@@ -8,7 +8,7 @@ Elastic Stack is a group of open source products comprised of Elasticsearch, Kib
 
 Visit the following resources to learn more:
 
-- [Elastic Stack Website](https://www.elastic.co/elastic-stack/)
-- [Official Docs](https://www.elastic.co/guide/index.html)
-- [Elastic Stack features](https://www.elastic.co/elastic-stack/features)
-- [Logstash vs Fluentd](https://logz.io/blog/fluentd-logstash/)
+- [@official@Elastic Stack Website](https://www.elastic.co/elastic-stack/)
+- [@official@Official Docs](https://www.elastic.co/guide/index.html)
+- [@official@Elastic Stack features](https://www.elastic.co/elastic-stack/features)
+- [@article@Logstash vs Fluentd](https://logz.io/blog/fluentd-logstash/)

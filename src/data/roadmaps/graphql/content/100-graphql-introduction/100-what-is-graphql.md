@@ -6,5 +6,5 @@ A GraphQL service is created by defining types and fields on those types, then p
 
 To learn more, visit the following links:
 
-- [Introduction to graphQL](https://graphql.org/learn/)
-- [Tutorial - What is graphQL?](https://www.howtographql.com/basics/0-introduction/)
+- [@official@Introduction to graphQL](https://graphql.org/learn/)
+- [@article@Tutorial - What is graphQL?](https://www.howtographql.com/basics/0-introduction/)

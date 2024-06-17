@@ -4,5 +4,5 @@ Services and networking are key components that enable communication between pod
 
 Learn more from the following resources:
 
-- [Service - Documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
-- [The Kubernetes Network Model](https://kubernetes.io/docs/concepts/services-networking/#the-kubernetes-network-model)
+- [@official@Service - Documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [@official@The Kubernetes Network Model](https://kubernetes.io/docs/concepts/services-networking/#the-kubernetes-network-model)

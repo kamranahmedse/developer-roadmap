@@ -20,4 +20,4 @@ let name = function(param1: type1, param2: type2, ...): returnType {
 
 Learn more from the following links:
 
-- [Functions in TypeScript](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+- [@article@Functions in TypeScript](https://www.typescriptlang.org/docs/handbook/2/functions.html)

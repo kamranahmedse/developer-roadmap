@@ -13,11 +13,11 @@ Here is the list of common ways of authentication:
 
 Visit the following resources to learn more:
 
-- [User Authentication: Understanding the Basics & Top Tips](https://swoopnow.com/user-authentication/)
-- [An overview about authentication methods](https://betterprogramming.pub/how-do-you-authenticate-mate-f2b70904cc3a)
-- [SSO - Single Sign On](https://roadmap.sh/guides/sso)
-- [OAuth - Open Authorization](https://roadmap.sh/guides/oauth)
-- [JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
-- [Token Based Authentication](https://roadmap.sh/guides/token-authentication)
-- [Session Based Authentication](https://roadmap.sh/guides/session-authentication)
-- [Basic Authentication](https://roadmap.sh/guides/basic-authentication)
+- [@article@User Authentication: Understanding the Basics & Top Tips](https://swoopnow.com/user-authentication/)
+- [@article@An overview about authentication methods](https://betterprogramming.pub/how-do-you-authenticate-mate-f2b70904cc3a)
+- [@roadmap.sh@SSO - Single Sign On](https://roadmap.sh/guides/sso)
+- [@roadmap.sh@OAuth - Open Authorization](https://roadmap.sh/guides/oauth)
+- [@roadmap.sh@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
+- [@roadmap.sh@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
+- [@roadmap.sh@Session Based Authentication](https://roadmap.sh/guides/session-authentication)
+- [@roadmap.sh@Basic Authentication](https://roadmap.sh/guides/basic-authentication)

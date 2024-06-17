@@ -4,4 +4,4 @@ Security provides confidentiality, integrity, and availability assurances agains
 
 Learn more from the following links:
 
-- [Security patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)
+- [@article@Security patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/security/security-patterns)

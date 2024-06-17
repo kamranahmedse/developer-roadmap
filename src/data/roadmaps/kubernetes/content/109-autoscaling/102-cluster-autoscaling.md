@@ -4,5 +4,5 @@ Cluster Autoscaling is a feature in Kubernetes that automatically scales the clu
 
 Learn more from the following resource:
 
-- [Autoscaling in Kubernetes](https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/)
-- [Kubernetes cluster autoscaling for beginners](https://www.youtube.com/watch?v=jM36M39MA3I)
+- [@official@Autoscaling in Kubernetes](https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/)
+- [@video@Kubernetes cluster autoscaling for beginners](https://www.youtube.com/watch?v=jM36M39MA3I)

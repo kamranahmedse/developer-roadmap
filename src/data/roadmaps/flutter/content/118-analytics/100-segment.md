@@ -13,4 +13,4 @@ Some key features of Segment for Flutter apps include:
 
 Learn more from the following links:
 
-- [Doc of flutter_segment](https://pub.dev/packages/flutter_segment)
+- [@article@Doc of flutter_segment](https://pub.dev/packages/flutter_segment)

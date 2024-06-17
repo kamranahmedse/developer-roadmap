@@ -8,7 +8,7 @@ import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
 import { ReadonlyEditor } from '../../../editor/readonly-editor';
-import { ProgressLoadingError } from './ProgressLoadingError';
+import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
 
@@ -144,13 +144,19 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
   }
 
   if (isLoading || error) {
-    return <ProgressLoadingError isLoading={isLoading} error={error || ''} />;
+    return (
+      <ModalLoader
+        text={'Loading user progress..'}
+        isLoading={isLoading}
+        error={error || ''}
+      />
+    );
   }
 
   return (
     <div
       id={'user-progress-modal'}
-      className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+      className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
     >
       <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div

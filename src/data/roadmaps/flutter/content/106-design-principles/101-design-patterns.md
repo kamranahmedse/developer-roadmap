@@ -15,7 +15,6 @@ When choosing a design pattern for your Flutter application, consider your speci
 
 Learn more from the following links:
 
-- [Flutter - Design](https://dart.dev/guides/language/effective-dart/design)
-- [Design Patterns Explained in 10 Minutes](https://www.youtube.com/watch?v=tv-_1er1mWI)
-- [Cookbook Designs in Flutter](https://docs.flutter.dev/cookbook/design)
-- [Flutter Design Patterns](https://www.youtube.com/watch?v=sk5hwzfndqs&list=pllzmawv2ytgb-1ldoo-9vctgre-1dywkp&index=1)
+- [@article@Flutter - Design](https://dart.dev/guides/language/effective-dart/design)
+- [@video@Design Patterns Explained in 10 Minutes](https://www.youtube.com/watch?v=tv-_1er1mWI)
+- [@article@Cookbook Designs in Flutter](https://docs.flutter.dev/cookbook/design)

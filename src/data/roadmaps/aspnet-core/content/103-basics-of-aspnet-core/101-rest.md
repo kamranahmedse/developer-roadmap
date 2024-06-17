@@ -4,6 +4,6 @@ REST (Representational State Transfer) is an architectural style for building we
 
 For more information, visit the following resources:
 
-- [What is REST Services?](http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet)
-- [Restful API In ASP.NET: Introduction of REST & Web API](https://www.c-sharpcorner.com/UploadFile/4b0136/restful-api-in-Asp-Net-introduction-of-rest-web-api/)
-- [What are RESTful APIs](https://www.pragimtech.com/blog/blazor/what-are-restful-apis/)
+- [@article@What is REST Services?](http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet)
+- [@article@Restful API In ASP.NET: Introduction of REST & Web API](https://www.c-sharpcorner.com/UploadFile/4b0136/restful-api-in-Asp-Net-introduction-of-rest-web-api/)
+- [@article@What are RESTful APIs](https://www.pragimtech.com/blog/blazor/what-are-restful-apis/)

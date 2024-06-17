@@ -10,4 +10,4 @@ Examples of noisy neighbor scenarios include:
 
 Learn from the following links:
 
-- [Noisy Neighbor antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)
+- [@article@Noisy Neighbor antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)

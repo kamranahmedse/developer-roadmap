@@ -17,4 +17,4 @@ todo.title = 'Hello';
 
 Learn more from the following links:
 
-- [Readonly<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
+- [@article@Readonly<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)

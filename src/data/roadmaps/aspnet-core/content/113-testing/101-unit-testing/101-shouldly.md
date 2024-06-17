@@ -4,5 +4,5 @@ Shouldly is a .NET library that provides a set of extension methods for writing 
 
 To learn more, visit the following links:
 
-- [How to Use Shouldly to Improve Unit Tests in .NET?](https://code-maze.com/improve-unit-tests-shouldly-dotnet/)
-- [Improve Test Asserts with Shouldly](https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx?admgarea=ALM)
+- [@article@How to Use Shouldly to Improve Unit Tests in .NET?](https://code-maze.com/improve-unit-tests-shouldly-dotnet/)
+- [@article@Improve Test Asserts with Shouldly](https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx?admgarea=ALM)

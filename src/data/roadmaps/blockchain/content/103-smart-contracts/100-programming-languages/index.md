@@ -4,4 +4,4 @@ Smart contracts can be programmed using relatively developer-friendly languages.
 
 Visit the following resources to learn more:
 
-- [Smart Contract Languages](https://ethereum.org/en/developers/docs/smart-contracts/languages/)
+- [@article@Smart Contract Languages](https://ethereum.org/en/developers/docs/smart-contracts/languages/)

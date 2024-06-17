@@ -4,4 +4,4 @@ Load data on demand into a cache from a data store. This can improve performance
 
 Learn more from the following links:
 
-- [Cache-Aside pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside)
+- [@article@Cache-Aside pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside)

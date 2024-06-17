@@ -22,4 +22,4 @@ class Car {
 
 Learn more from the following links:
 
-- [TypeScript Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
+- [@article@TypeScript Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)

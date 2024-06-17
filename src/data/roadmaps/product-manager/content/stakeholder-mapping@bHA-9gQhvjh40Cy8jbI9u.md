@@ -1,0 +1,3 @@
+# Stakeholder Mapping in Product Management
+
+Stakeholder mapping is a crucial aspect of product management. It is the process by which a product manager identifies and categorizes the individuals or groups that have a vested interest in the product's development and its overall success. These stakeholders could be internal, such as team members, or external like clients, end-users or strategic partners, each bringing in their unique perspectives, expectations, and requirements. A well-conducted stakeholder mapping helps product managers better understand the influence and impact of each stakeholder, manage their expectations, and effectively communicate throughout the product life cycle.

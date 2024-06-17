@@ -6,5 +6,5 @@ EasyNetQ supports a wide range of messaging patterns, such as publish-subscribe,
 
 To learn more, visit the following links:
 
-- [Overview of EasyNetQ](https://easynetq.com/)
-- [RabbitMQ with EasyNetQ Tutorials](https://www.youtube.com/watch?v=CqxV_Xn4PlI)
+- [@official@Overview of EasyNetQ](https://easynetq.com/)
+- [@video@RabbitMQ with EasyNetQ Tutorials](https://www.youtube.com/watch?v=CqxV_Xn4PlI)

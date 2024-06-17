@@ -4,5 +4,5 @@ A CSS framework provides the user with a fully functional CSS stylesheet, allowi
 
 Visit the following resources to learn more:
 
-- [CSS Frameworks Introduction](https://en.wikipedia.org/wiki/CSS_framework)
-- [What are the benefits of using a css framework](https://css-tricks.com/what-are-the-benefits-of-using-a-css-framework/)
+- [@article@CSS Frameworks Introduction](https://en.wikipedia.org/wiki/CSS_framework)
+- [@article@What are the benefits of using a css framework](https://css-tricks.com/what-are-the-benefits-of-using-a-css-framework/)

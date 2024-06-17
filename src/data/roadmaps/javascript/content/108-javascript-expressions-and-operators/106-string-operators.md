@@ -6,5 +6,5 @@ The shorthand assignment operator `+=` can also be used to concatenate strings.
 
 Visit the following resources to learn more:
 
-- [JavaScript MDN Tutorials](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators)
-- [String Concatenation - JavaScript.info](https://javascript.info/operators#string-concatenation-with-binary)
+- [@article@JavaScript MDN Tutorials](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators)
+- [@article@String Concatenation - JavaScript.info](https://javascript.info/operators#string-concatenation-with-binary)

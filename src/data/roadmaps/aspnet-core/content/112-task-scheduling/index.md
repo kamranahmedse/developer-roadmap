@@ -6,5 +6,5 @@ In ASP.NET, task scheduling can be implemented using a variety of libraries and 
 
 To learn more, visit the following links:
 
-- [Task Scheduling in ASP.NET](https://www.youtube.com/watch?v=Vg4AOpb7OqA)
-- [How schedule Tasks in ASP.NET?](https://beansoftware.com/ASP.NET-Tutorials/Scheduled-Tasks.aspx)
+- [@video@Task Scheduling in ASP.NET](https://www.youtube.com/watch?v=Vg4AOpb7OqA)
+- [@article@How schedule Tasks in ASP.NET?](https://beansoftware.com/ASP.NET-Tutorials/Scheduled-Tasks.aspx)

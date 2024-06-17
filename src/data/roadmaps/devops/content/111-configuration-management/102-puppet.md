@@ -4,6 +4,6 @@ Puppet, an automated administrative engine for your Linux, Unix, and Windows sys
 
 Visit the following resources to learn more:
 
-- [Puppet Website](https://puppet.com/)
-- [Official Documentation](https://puppet.com/docs)
-- [Introduction to Puppet](https://puppet.com/docs/puppet/6/puppet_overview.html)
+- [@official@Puppet Website](https://puppet.com/)
+- [@official@Official Documentation](https://puppet.com/docs)
+- [@official@Introduction to Puppet](https://puppet.com/docs/puppet/6/puppet_overview.html)

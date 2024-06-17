@@ -1,0 +1,3 @@
+# Linear under Project Management Tools
+
+Linear is a powerful project management tool designed to help teams improve their productivity and efficiency. It helps organize, prioritize, and track tasks in one streamlined platform. For the role of a Product Manager, Linear is an essential tool that aids in managing and monitoring progress, evaluating performance, and ensuring the roadmap aligns with the strategic goals of the product. Product managers may utilize the functionalities of Linear to communicate with various stakeholders, delegate tasks, and manage product backlogs effectively. Its clean and user-friendly interface makes it easy for Product Managers to streamline their workflow and focus more on building high-quality products.

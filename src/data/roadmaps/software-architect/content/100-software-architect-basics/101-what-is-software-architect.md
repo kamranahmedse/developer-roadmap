@@ -4,4 +4,4 @@ An expert developer who design software solutions from the ground up, making hig
 
 Visit the following resources to learn more:
 
-- [12 Skills a Software Architect Needs](https://www.redhat.com/architect/what-is-software-architect)
+- [@article@12 Skills a Software Architect Needs](https://www.redhat.com/architect/what-is-software-architect)

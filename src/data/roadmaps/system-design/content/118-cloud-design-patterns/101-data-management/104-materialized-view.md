@@ -4,4 +4,4 @@ Generate prepopulated views over the data in one or more data stores when the da
 
 Learn more from the following links:
 
-- [Materialized View pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/materialized-view)
+- [@article@Materialized View pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/materialized-view)

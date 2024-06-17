@@ -13,4 +13,4 @@ Here are some ways to use meaningful names in system architecture:
 
 Learn more from the following links:
 
-- [How to Write Meaningful Variable Names?](https://workat.tech/machine-coding/tutorial/writing-meaningful-variable-names-clean-code-za4m83tiesy0)
+- [@article@How to Write Meaningful Variable Names?](https://workat.tech/machine-coding/tutorial/writing-meaningful-variable-names-clean-code-za4m83tiesy0)

@@ -6,6 +6,6 @@ To learn more about types in Go, visit these resources :
 
 Visit the following resources to learn more:
 
-- [Basic data types](https://www.w3schools.com/go/go_data_types.php)
-- [Tour of Go: types](https://go.dev/tour/basics/11)
-- [Go types with examples](https://golangbyexample.com/all-data-types-in-golang-with-examples/)
+- [@article@Basic data types](https://www.w3schools.com/go/go_data_types.php)
+- [@official@Tour of Go: types](https://go.dev/tour/basics/11)
+- [@article@Go types with examples](https://golangbyexample.com/all-data-types-in-golang-with-examples/)

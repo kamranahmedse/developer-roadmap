@@ -4,6 +4,6 @@ In practice: For every 2-4 tree, there are corresponding red–black trees with 
 
 Visit the following resources to learn more:
 
-- [CS 61B Lecture 26: Balanced Search Trees](https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q)
-- [Bottom Up 234-Trees](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
-- [Top Down 234-Trees](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)
+- [@article@CS 61B Lecture 26: Balanced Search Trees](https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q)
+- [@video@Bottom Up 234-Trees](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+- [@video@Top Down 234-Trees](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)

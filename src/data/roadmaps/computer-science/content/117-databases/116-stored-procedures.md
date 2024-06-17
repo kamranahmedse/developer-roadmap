@@ -4,5 +4,5 @@ Stored Procedures are created to perform one or more DML operations on Database.
 
 Visit the following resources to learn more:
 
-- [What is Stored Procedures in SQL ?](https://www.geeksforgeeks.org/what-is-stored-procedures-in-sql/)
-- [SQL Stored Procedures](https://www.programiz.com/sql/stored-procedures)
+- [@article@What is Stored Procedures in SQL ?](https://www.geeksforgeeks.org/what-is-stored-procedures-in-sql/)
+- [@article@SQL Stored Procedures](https://www.programiz.com/sql/stored-procedures)

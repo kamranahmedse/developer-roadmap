@@ -6,5 +6,5 @@ The identity map pattern is typically used in conjunction with an ORM (Object-Re
 
 Learn more from the following links:
 
-- [Overview of Identity map pattern](https://en.wikipedia.org/wiki/Identity_map_pattern)
-- [Tutorial - Identity Map Design Pattern](https://youtube.com/watch?v=erDxkIyNudY)
+- [@article@Overview of Identity map pattern](https://en.wikipedia.org/wiki/Identity_map_pattern)
+- [@video@Tutorial - Identity Map Design Pattern](https://youtube.com/watch?v=erDxkIyNudY)

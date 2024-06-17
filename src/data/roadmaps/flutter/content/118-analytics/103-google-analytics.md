@@ -6,4 +6,4 @@ With Google Analytics, Flutter developers can track user interactions with their
 
 Learn more from the following links:
 
-- [Google Analytics for Firebase](https://firebase.flutter.dev/docs/analytics/overview/)
+- [@article@Google Analytics for Firebase](https://firebase.flutter.dev/docs/analytics/overview/)

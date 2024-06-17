@@ -4,5 +4,5 @@ State channels refer to the process in which users transact with one another dir
 
 Visit the following resources to learn more:
 
-- [The Basics of State Channels](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/)
-- [State Channels: An Introduction to Off-chain Transactions](https://www.talentica.com/blogs/state-channels-an-introduction-to-off-chain-transactions/)
+- [@article@The Basics of State Channels](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/)
+- [@article@State Channels: An Introduction to Off-chain Transactions](https://www.talentica.com/blogs/state-channels-an-introduction-to-off-chain-transactions/)

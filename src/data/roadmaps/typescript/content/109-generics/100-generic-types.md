@@ -33,4 +33,4 @@ myGenericNumber.add = function (x, y) {
 
 Learn more from the following resources:
 
-- [Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)
+- [@article@Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)

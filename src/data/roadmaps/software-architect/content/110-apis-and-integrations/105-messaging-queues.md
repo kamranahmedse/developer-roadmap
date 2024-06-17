@@ -4,5 +4,5 @@ Message queuing makes it possible for applications to communicate asynchronously
 
 Visit the following resources to learn more:
 
-- [Messaging Queues](https://aws.amazon.com/message-queue/)
-- [Messaging Queues Tutorial](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_message_queues.htm)
+- [@article@Messaging Queues](https://aws.amazon.com/message-queue/)
+- [@article@Messaging Queues Tutorial](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_message_queues.htm)

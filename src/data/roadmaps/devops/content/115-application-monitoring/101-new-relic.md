@@ -4,6 +4,6 @@ New Relic is where dev, ops, security and business teams solve software–perfor
 
 Visit the following resources to learn more:
 
-- [New Relic Website](https://newrelic.com/)
-- [Official Documentation](https://docs.newrelic.com/)
-- [New Relic Developer Hub](https://developer.newrelic.com/)
+- [@official@New Relic Website](https://newrelic.com/)
+- [@article@Official Documentation](https://docs.newrelic.com/)
+- [@article@New Relic Developer Hub](https://developer.newrelic.com/)

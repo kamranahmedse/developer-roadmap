@@ -4,4 +4,4 @@ Type object pattern is a creational design pattern that allows us to create a ne
 
 Visit the following resources to learn more:
 
-- [Type Object Pattern](https://gameprogrammingpatterns.com/type-object.html)
+- [@article@Type Object Pattern](https://gameprogrammingpatterns.com/type-object.html)

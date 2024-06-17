@@ -14,4 +14,4 @@ In write-behind, the application does the following:
 
 To learn more, visit the following links:
 
-- [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+- [@article@Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)

@@ -4,5 +4,5 @@ Microsoft Dynamics 365 is a combination of both Enterprise Resource Planning (ER
 
 Visit the following resources to learn more:
 
-- [Everything you ever wanted to know about Microsoft Dynamics](https://www.nigelfrank.com/insights/everything-you-ever-wanted-to-know-about-dynamics-crm)
-- [What is Microsoft Dynamics?](https://www.youtube.com/watch?v=ogfclHWgqgE)
+- [@article@Everything you ever wanted to know about Microsoft Dynamics](https://www.nigelfrank.com/insights/everything-you-ever-wanted-to-know-about-dynamics-crm)
+- [@video@What is Microsoft Dynamics?](https://www.youtube.com/watch?v=ogfclHWgqgE)

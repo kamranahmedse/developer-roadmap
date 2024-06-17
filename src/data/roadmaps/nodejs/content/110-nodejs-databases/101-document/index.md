@@ -4,4 +4,4 @@ A document database is a type of nonrelational database that is designed to stor
 
 Visit the following resources to learn more:
 
-- [What Is a Document Database?](https://aws.amazon.com/nosql/document/)
+- [@article@What Is a Document Database?](https://aws.amazon.com/nosql/document/)

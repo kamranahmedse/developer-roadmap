@@ -4,5 +4,5 @@ Load balancing is the process of distributing network or application traffic acr
 
 Visit the following resources to learn more:
 
-- [Load Balancers 101](https://www.youtube.com/watch?v=galcDRNd5Ow)
-- [What is Load Balancing?](https://www.youtube.com/watch?v=gGLophKzJs8)
+- [@video@Load Balancers 101](https://www.youtube.com/watch?v=galcDRNd5Ow)
+- [@video@What is Load Balancing?](https://www.youtube.com/watch?v=gGLophKzJs8)

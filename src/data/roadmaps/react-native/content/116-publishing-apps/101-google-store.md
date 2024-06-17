@@ -2,4 +2,4 @@
 
 Publishing your React Native app on Google Store consists of several steps.
 
-- [Publishing to Google Play Store](https://reactnative.dev/docs/signed-apk-android)
+- [@article@Publishing to Google Play Store](https://reactnative.dev/docs/signed-apk-android)

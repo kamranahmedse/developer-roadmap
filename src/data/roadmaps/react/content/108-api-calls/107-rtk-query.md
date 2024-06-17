@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [RTK Query - Official Website](https://redux-toolkit.js.org/rtk-query/overview)
+- [@article@RTK Query - Official Website](https://redux-toolkit.js.org/rtk-query/overview)

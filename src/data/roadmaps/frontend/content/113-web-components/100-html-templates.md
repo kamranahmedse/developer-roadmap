@@ -4,4 +4,4 @@ The `<template>` HTML element is a mechanism for holding HTML that is not to be 
 
 Visit the following resources to learn more:
 
-- [Using templates and slots | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
+- [@article@Using templates and slots | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)

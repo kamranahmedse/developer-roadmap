@@ -42,9 +42,11 @@ function handleGuest() {
     '/account',
     '/team',
     '/team/progress',
+    '/team/activity',
     '/team/roadmaps',
     '/team/new',
     '/team/members',
+    '/team/member',
     '/team/settings',
   ];
 

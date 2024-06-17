@@ -4,4 +4,4 @@ Even though we can speed up the image building with layer caching enable, we don
 
 Have a look at the following resources for sample implementations:
 
-- [Hot Reloading - Docker](https://courses.devopsdirective.com/docker-beginner-to-pro/lessons/11-development-workflow/01-hot-reloading)
+- [@article@Hot Reloading - Docker](https://courses.devopsdirective.com/docker-beginner-to-pro/lessons/11-development-workflow/01-hot-reloading)

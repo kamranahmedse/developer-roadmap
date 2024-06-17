@@ -9,5 +9,5 @@ There are two types of polymorphism:
 
 Learn more from the following links:
 
-- [Overview of Polymorphism in programming](https://www.bmc.com/blogs/polymorphism-programming/)
-- [What is polymorphism in programming?](https://www.youtube.com/watch?v=tIWm3I_Zu7I)
+- [@article@Overview of Polymorphism in programming](https://www.bmc.com/blogs/polymorphism-programming/)
+- [@video@What is polymorphism in programming?](https://www.youtube.com/watch?v=tIWm3I_Zu7I)

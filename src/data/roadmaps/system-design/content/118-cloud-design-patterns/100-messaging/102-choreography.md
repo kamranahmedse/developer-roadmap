@@ -4,4 +4,4 @@ Have each component of the system participate in the decision-making process abo
 
 Learn more from the following links:
 
-- [Choreography pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography)
+- [@article@Choreography pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography)

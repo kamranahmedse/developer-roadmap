@@ -8,9 +8,12 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { topicSelectorAll } from '../../lib/resource-progress';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
-import { ProgressLoadingError } from './ProgressLoadingError';
+import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
+import type { PageType } from '../CommandMenu/CommandMenu.tsx';
+import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
 
 export type ProgressMapProps = {
   userId?: string;
@@ -18,6 +21,7 @@ export type ProgressMapProps = {
   resourceType: ResourceType;
   onClose?: () => void;
   isCustomResource?: boolean;
+  renderer?: AllowedRoadmapRenderer;
 };
 
 export type UserProgressResponse = {
@@ -39,6 +43,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceType,
     userId: propUserId,
     onClose: onModalClose,
+    renderer = 'balsamiq',
   } = props;
 
   const { s: userId = propUserId } = getUrlParams();
@@ -87,15 +92,18 @@ export function UserProgressModal(props: ProgressMapProps) {
 
   async function getRoadmapSVG(
     jsonUrl: string,
+    renderer: AllowedRoadmapRenderer = 'balsamiq',
   ): Promise<SVGElement | undefined> {
     const { error, response: roadmapJson } = await httpGet(jsonUrl);
     if (error || !roadmapJson) {
       throw error || new Error('Something went wrong. Please try again!');
     }
 
-    return await wireframeJSONToSVG(roadmapJson, {
-      fontURL: '/fonts/balsamiq.woff2',
-    });
+    return renderer === 'editor'
+      ? await renderFlowJSON(roadmapJson as any)
+      : await wireframeJSONToSVG(roadmapJson, {
+          fontURL: '/fonts/balsamiq.woff2',
+        });
   }
 
   function onClose() {
@@ -124,8 +132,10 @@ export function UserProgressModal(props: ProgressMapProps) {
     }
 
     setIsLoading(true);
+    setError('');
+
     Promise.all([
-      getRoadmapSVG(resourceJsonUrl),
+      getRoadmapSVG(resourceJsonUrl, renderer),
       getUserProgress(userId, resourceType, resourceId),
     ])
       .then(([svg, user]) => {
@@ -187,13 +197,19 @@ export function UserProgressModal(props: ProgressMapProps) {
   }
 
   if (isLoading || error) {
-    return <ProgressLoadingError isLoading={isLoading} error={error} />;
+    return (
+      <ModalLoader
+        text={'Loading user progress..'}
+        isLoading={isLoading}
+        error={error}
+      />
+    );
   }
 
   return (
     <div
       id={'user-progress-modal'}
-      className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+      className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
     >
       <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div

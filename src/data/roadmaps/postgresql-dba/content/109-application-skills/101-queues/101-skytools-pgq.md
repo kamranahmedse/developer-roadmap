@@ -13,4 +13,4 @@ Here's a brief overview of some core concepts of PGQ:
 - **Producer**: A producer application adds events to the queue. Producers can be external applications or built using PL/pgSQL functions.
 - **Consumer**: A consumer application processes the events from the queue. Consumers can be implemented in any programming language capable of interfacing with the PostgreSQL database.
 
-- [PgQ — Generic Queue for PostgreSQL](https://github.com/pgq)
+- [@opensource@PgQ — Generic Queue for PostgreSQL](https://github.com/pgq)

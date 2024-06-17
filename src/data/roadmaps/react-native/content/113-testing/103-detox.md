@@ -4,4 +4,4 @@ Detox is an end-to-end testing framework for React Native applications. It enabl
 
 Learn more about Detox from the following links:
 
-- [Detox Official Docs](https://wix.github.io/Detox/)
+- [@article@Detox Official Docs](https://wix.github.io/Detox/)

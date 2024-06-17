@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Microsoft - .NET CLI overview](https://learn.microsoft.com/en-us/dotnet/core/tools/)
-- [Intro To The .NET CLI](https://youtu.be/RQLzp2Z8-BE)
+- [@article@Microsoft - .NET CLI overview](https://learn.microsoft.com/en-us/dotnet/core/tools/)
+- [@video@Intro To The .NET CLI](https://youtu.be/RQLzp2Z8-BE)

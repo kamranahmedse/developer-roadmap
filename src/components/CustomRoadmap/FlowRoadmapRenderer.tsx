@@ -125,6 +125,32 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
     }
   }, []);
 
+  const handleChecklistCheckboxClick = useCallback(
+    (e: MouseEvent, checklistId: string) => {
+      const target = e?.currentTarget as HTMLDivElement;
+      if (!target) {
+        return;
+      }
+
+      const isCurrentStatusDone = target?.classList.contains('done');
+      updateTopicStatus(checklistId, isCurrentStatusDone ? 'pending' : 'done');
+    },
+    [],
+  );
+
+  const handleChecklistLabelClick = useCallback(
+    (e: MouseEvent, checklistId: string) => {
+      const target = e?.currentTarget as HTMLDivElement;
+      if (!target) {
+        return;
+      }
+
+      const isCurrentStatusDone = target?.classList.contains('done');
+      updateTopicStatus(checklistId, isCurrentStatusDone ? 'pending' : 'done');
+    },
+    [],
+  );
+
   return (
     <>
       {hideRenderer && (
@@ -162,6 +188,8 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         onTopicAltClick={handleTopicAltClick}
         onButtonNodeClick={handleLinkClick}
         onLinkClick={handleLinkClick}
+        onChecklistCheckboxClick={handleChecklistCheckboxClick}
+        onChecklistLableClick={handleChecklistLabelClick}
         fontFamily="Balsamiq Sans"
         fontURL="/fonts/balsamiq.woff2"
       />

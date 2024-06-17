@@ -8,7 +8,7 @@ During the development of this automation standard the web has changed a lot and
 
 Visit the following resources to learn more:
 
-- [WebdriverIO Website](https://webdriver.io/)
-- [A brief overview of WebdriverIO](https://webdriver.io/docs/what-is-webdriverio)
-- [Getting started with WebdriverIO](https://webdriver.io/docs/gettingstarted)
-- [WebdriverIO Tutorial](https://www.youtube.com/watch?v=e8goAKb6CC0&list=PL6AdzyjjD5HBbt9amjf3wIVMaobb28ZYN)
+- [@official@WebdriverIO Website](https://webdriver.io/)
+- [@official@A brief overview of WebdriverIO](https://webdriver.io/docs/what-is-webdriverio)
+- [@official@Getting started with WebdriverIO](https://webdriver.io/docs/gettingstarted)
+- [@video@WebdriverIO Tutorial](https://www.youtube.com/watch?v=e8goAKb6CC0&list=PL6AdzyjjD5HBbt9amjf3wIVMaobb28ZYN)

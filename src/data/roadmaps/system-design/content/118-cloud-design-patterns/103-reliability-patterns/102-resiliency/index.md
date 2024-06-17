@@ -8,4 +8,4 @@ Detecting failures and recovering quickly and efficiently, is necessary to maint
 
 Learn more from the following links:
 
-- [Resiliency Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#resiliency)
+- [@article@Resiliency Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#resiliency)

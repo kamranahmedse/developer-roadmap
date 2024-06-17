@@ -6,5 +6,5 @@ Message Queues: A message queue is a software component that allows multiple sys
 
 Learn more from the following links:
 
-- [System Design — Message Queues](https://medium.com/must-know-computer-science/system-design-message-queues-245612428a22)
-- [Overview of Message Queue pattern](https://badia-kharroubi.gitbooks.io/microservices-architecture/content/patterns/communication-patterns/message-queue-pattern.html)
+- [@article@System Design — Message Queues](https://medium.com/must-know-computer-science/system-design-message-queues-245612428a22)
+- [@article@Overview of Message Queue pattern](https://badia-kharroubi.gitbooks.io/microservices-architecture/content/patterns/communication-patterns/message-queue-pattern.html)

@@ -6,5 +6,5 @@ In an ASP.NET application, MongoDB can be used as a data store to persist and re
 
 To learn more, visit the following resources:
 
-- [Use MongoDB in Your C# ASP.NET Apps](https://developer.okta.com/blog/2020/01/02/mongodb-csharp-aspnet-datastore)
-- [MongoDB With ASP.NET Core Web API](https://www.c-sharpcorner.com/article/using-mongodb-with-asp-net-core-web-api/)
+- [@article@Use MongoDB in Your C# ASP.NET Apps](https://developer.okta.com/blog/2020/01/02/mongodb-csharp-aspnet-datastore)
+- [@article@MongoDB With ASP.NET Core Web API](https://www.c-sharpcorner.com/article/using-mongodb-with-asp-net-core-web-api/)

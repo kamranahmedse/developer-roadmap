@@ -4,5 +4,5 @@ In GraphQL, an object is a type that represents a group of fields. Objects can b
 
 To learn more, visit the following:
 
-- [Object Types and Fields](https://graphql.org/learn/schema/#object-types-and-fields)
-- [Object Types](https://graphql.org/graphql-js/object-types/)
+- [@official@Object Types and Fields](https://graphql.org/learn/schema/#object-types-and-fields)
+- [@official@Object Types](https://graphql.org/graphql-js/object-types/)

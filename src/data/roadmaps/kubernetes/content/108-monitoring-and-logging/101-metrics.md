@@ -4,5 +4,5 @@ Metrics to monitor include CPU usage, memory usage, network usage, disk usage, A
 
 Learn more from the following resources:
 
-- [Node Metrics Data](https://kubernetes.io/docs/reference/instrumentation/node-metrics/)
-- [How to collect metrics in K8s?](https://www.youtube.com/watch?v=JQrk6HwlN78)
+- [@official@Node Metrics Data](https://kubernetes.io/docs/reference/instrumentation/node-metrics/)
+- [@video@How to collect metrics in K8s?](https://www.youtube.com/watch?v=JQrk6HwlN78)

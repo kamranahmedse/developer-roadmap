@@ -1,0 +1,3 @@
+When a function is defined within another function, it retains access to the variables and parameters of the outer function, even after the outer function has finished executing. That link, between the inner function and its scope inside the outer function is known as “closure”
+
+You can use them to create private variables that can only be accessed by the inner function, you can even use them to create complex objects with access to a rich context that is only available globally to them.

@@ -6,6 +6,6 @@ TypeScript’s structural type system was designed based on how JavaScript code 
 
 Visit the following resources to learn more:
 
-- [Structural typings — Medium](https://medium.com/redox-techblog/structural-typing-in-typescript-4b89f21d6004)
-- [Structural typings — Typescriptlang](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
-- [Structural typing video for Beginners](https://www.youtube.com/watch?v=kWtwsX_rT3k)
+- [@article@Structural typings — Medium](https://medium.com/redox-techblog/structural-typing-in-typescript-4b89f21d6004)
+- [@article@Structural typings — Typescriptlang](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
+- [@video@Structural typing video for Beginners](https://www.youtube.com/watch?v=kWtwsX_rT3k)

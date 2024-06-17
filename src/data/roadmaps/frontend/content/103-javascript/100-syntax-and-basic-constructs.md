@@ -4,7 +4,7 @@ JavaScript allows you to add interactivity to your pages. Common examples that y
 
 Visit the following resources to learn more:
 
-- [W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
-- [The Modern JavaScript Tutorial](https://javascript.info/)
-- [JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
-- [Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
+- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
+- [@article@The Modern JavaScript Tutorial](https://javascript.info/)
+- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
+- [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)

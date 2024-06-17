@@ -6,5 +6,5 @@ The main advantage of using EDA is that it allows for a clear separation of conc
 
 Learn more from the following links:
 
-- [Overview of Event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming)
-- [What is event-driven architecture?](https://www.redhat.com/en/topics/integration/what-is-event-driven-architecture)
+- [@article@Overview of Event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming)
+- [@article@What is event-driven architecture?](https://www.redhat.com/en/topics/integration/what-is-event-driven-architecture)

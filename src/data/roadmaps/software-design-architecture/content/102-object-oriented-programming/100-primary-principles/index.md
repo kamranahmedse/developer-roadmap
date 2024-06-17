@@ -11,5 +11,5 @@ There are several primary principles that are considered fundamental to object-o
 
 Learn more from the following links:
 
-- [Principles of Object-Oriented Programming](https://khalilstemmler.com/articles/object-oriented/programming/4-principles/)
-- [What are four basic principles of OOP?](https://medium.com/@cancerian0684/what-are-four-basic-principles-of-object-oriented-programming-645af8b43727)
+- [@article@Principles of Object-Oriented Programming](https://khalilstemmler.com/articles/object-oriented/programming/4-principles/)
+- [@article@What are four basic principles of OOP?](https://medium.com/@cancerian0684/what-are-four-basic-principles-of-object-oriented-programming-645af8b43727)

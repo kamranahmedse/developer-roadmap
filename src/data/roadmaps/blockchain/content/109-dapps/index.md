@@ -4,5 +4,5 @@ A decentralized application (dApp) is an application that can operate autonomous
 
 Visit the following resources to learn more:
 
-- [Introduction to dApps](https://ethereum.org/en/developers/docs/dapps/)
-- [What Is a Dapp? Decentralized Apps Explained](https://www.coindesk.com/learn/what-is-a-dapp-decentralized-apps-explained/)
+- [@article@Introduction to dApps](https://ethereum.org/en/developers/docs/dapps/)
+- [@article@What Is a Dapp? Decentralized Apps Explained](https://www.coindesk.com/learn/what-is-a-dapp-decentralized-apps-explained/)

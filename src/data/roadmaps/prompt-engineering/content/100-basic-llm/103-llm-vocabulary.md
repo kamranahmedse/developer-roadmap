@@ -31,4 +31,4 @@ When working with LLMs, you will come across a lot of new terms. This section wi
 
 References and further learning:
 
-- [LLM Vocabulary](https://learnprompting.org/docs/vocabulary)
+- [@article@LLM Vocabulary](https://learnprompting.org/docs/vocabulary)

@@ -4,5 +4,5 @@ ASCII is a character encoding standard for electronic communication. It was deve
 
 Visit the following resources to learn more:
 
-- [Must Know about Character Encodings](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
-- [Character Encoding](https://cs.lmu.edu/~ray/notes/charenc/)
+- [@article@Must Know about Character Encodings](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+- [@article@Character Encoding](https://cs.lmu.edu/~ray/notes/charenc/)

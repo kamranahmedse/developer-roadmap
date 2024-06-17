@@ -4,10 +4,10 @@ The Domain Name System (DNS) is the phonebook of the Internet. Humans access inf
 
 Visit the following resources to learn more:
 
-- [What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
-- [Mess with DNS - DNS Playground](https://messwithdns.net/)
-- [How DNS works (comic)](https://howdns.works/)
-- [DNS and How does it Work?](https://www.youtube.com/watch?v=Wj0od2ag5sk)
-- [DNS Records](https://www.youtube.com/watch?v=7lxgpKh_fRY)
-- [When to add glue records to DNS settings](https://www.youtube.com/watch?v=e48AyJOA9W8)
-- [DNS Records for Newbies - How To Manage Website Records](https://www.youtube.com/watch?v=YV5tkQYcvfg)
+- [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
+- [@article@Mess with DNS - DNS Playground](https://messwithdns.net/)
+- [@article@How DNS works (comic)](https://howdns.works/)
+- [@video@DNS and How does it Work?](https://www.youtube.com/watch?v=Wj0od2ag5sk)
+- [@video@DNS Records](https://www.youtube.com/watch?v=7lxgpKh_fRY)
+- [@video@When to add glue records to DNS settings](https://www.youtube.com/watch?v=e48AyJOA9W8)
+- [@video@DNS Records for Newbies - How To Manage Website Records](https://www.youtube.com/watch?v=YV5tkQYcvfg)

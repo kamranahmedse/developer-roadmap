@@ -4,4 +4,4 @@ Implement a facade or adapter layer between different subsystems that don't shar
 
 To learn more, visit the following links:
 
-- [Anti-corruption Layer pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)
+- [@article@Anti-corruption Layer pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)

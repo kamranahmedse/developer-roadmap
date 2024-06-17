@@ -4,6 +4,6 @@ Process forking is a way to create a new process from an existing process. The n
 
 Visit the following resources to learn more:
 
-- [Understanding fork() system call for new process creation](https://www.youtube.com/watch?v=PwxTbksJ2fo)
-- [fork() and exec() System Calls](https://www.youtube.com/watch?v=IFEFVXvjiHY)
-- [The fork() function in C](https://www.youtube.com/watch?v=cex9XrZCU14)
+- [@video@Understanding fork() system call for new process creation](https://www.youtube.com/watch?v=PwxTbksJ2fo)
+- [@video@fork() and exec() System Calls](https://www.youtube.com/watch?v=IFEFVXvjiHY)
+- [@video@The fork() function in C](https://www.youtube.com/watch?v=cex9XrZCU14)

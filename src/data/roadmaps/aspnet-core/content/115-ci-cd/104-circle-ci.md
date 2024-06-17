@@ -6,5 +6,5 @@ In ASP.NET, CircleCI can be used to automate various tasks related to the develo
 
 Visit the following links to learn more:
 
-- [How to Setup CircleCI for ASP.NET project](https://discuss.circleci.com/t/setup-circleci-for-asp-net-project/33796s)
-- [Building and testing an ASP.NET apps with CircleCI](https://circleci.com/blog/building-and-testing-an-asp-net-core-application/)
+- [@article@How to Setup CircleCI for ASP.NET project](https://discuss.circleci.com/t/setup-circleci-for-asp-net-project/33796s)
+- [@official@Building and testing an ASP.NET apps with CircleCI](https://circleci.com/blog/building-and-testing-an-asp-net-core-application/)

@@ -4,4 +4,4 @@ While "CSS in JS" is the most predominant way of styling modern frontend applica
 
 Visit the following resources to learn more:
 
-- [Ways to CSS style a React application](https://www.robinwieruch.de/react-css-styling/)
+- [@article@Ways to CSS style a React application](https://www.robinwieruch.de/react-css-styling/)

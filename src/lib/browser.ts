@@ -32,11 +32,20 @@ export function setUrlParams(params: Record<string, string>) {
   }
 
   const url = new URL(window.location.href);
+  let hasUpdatedUrl = false;
 
   for (const [key, value] of Object.entries(params)) {
+    if (url.searchParams.get(key) === String(value)) {
+      continue;
+    }
+
     url.searchParams.delete(key);
     url.searchParams.set(key, value);
+
+    hasUpdatedUrl = true;
   }
 
-  window.history.pushState(null, '', url.toString());
+  if (hasUpdatedUrl) {
+    window.history.pushState(null, '', url.toString());
+  }
 }

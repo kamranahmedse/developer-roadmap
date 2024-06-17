@@ -4,5 +4,5 @@ Regression Testing is a type of software testing to confirm that a recent progra
 
 Visit the following resources to learn more:
 
-- [Regression Testing](https://www.javatpoint.com/regression-testing)
-- [What is Regression Testing with Test Cases](https://www.guru99.com/regression-testing.html)
+- [@article@Regression Testing](https://www.javatpoint.com/regression-testing)
+- [@article@What is Regression Testing with Test Cases](https://www.guru99.com/regression-testing.html)

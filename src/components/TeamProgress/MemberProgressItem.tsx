@@ -1,22 +1,38 @@
+import { useStore } from '@nanostores/react';
 import type { TeamMember } from './TeamProgressPage';
 import { useState } from 'react';
+import { $currentTeam } from '../../stores/team';
+import { cn } from '../../lib/classname';
 
 type MemberProgressItemProps = {
   member: TeamMember;
   onShowResourceProgress: (
     resourceId: string,
-    isCustomResource: boolean
+    isCustomResource: boolean,
   ) => void;
   isMyProgress?: boolean;
+  teamId: string;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
-  const { member, onShowResourceProgress, isMyProgress = false } = props;
+  const {
+    member,
+    onShowResourceProgress,
+    isMyProgress = false,
+    teamId,
+  } = props;
 
+  const currentTeam = useStore($currentTeam);
   const memberProgress = member?.progress?.sort((a, b) => {
     return b.done - a.done;
   });
 
   const [showAll, setShowAll] = useState(false);
+
+  const isPersonalProgressOnly =
+    currentTeam?.personalProgressOnly &&
+    currentTeam.role === 'member' &&
+    String(member._id) !== currentTeam.memberId;
+  const memberDetailsUrl = `/team/member?t=${teamId}&m=${member._id}`;
 
   return (
     <>
@@ -36,11 +52,43 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
           />
           <div className="inline-grid w-full">
             {!isMyProgress && (
-              <h3 className="truncate font-medium">{member.name}</h3>
+              <a
+                href={memberDetailsUrl}
+                className={cn(
+                  'truncate font-medium',
+                  isPersonalProgressOnly
+                    ? 'pointer-events-none cursor-default no-underline'
+                    : '',
+                )}
+                onClick={(e) => {
+                  if (isPersonalProgressOnly) {
+                    e.preventDefault();
+                  }
+                }}
+                aria-disabled={isPersonalProgressOnly}
+              >
+                {member.name}
+              </a>
             )}
             {isMyProgress && (
               <div className="inline-grid grid-cols-[auto,32px] items-center gap-1.5">
-                <h3 className="truncate font-medium">{member.name}</h3>
+                <a
+                  href={memberDetailsUrl}
+                  className={cn(
+                    'truncate font-medium',
+                    isPersonalProgressOnly
+                      ? 'pointer-events-none cursor-default no-underline'
+                      : '',
+                  )}
+                  onClick={(e) => {
+                    if (isPersonalProgressOnly) {
+                      e.preventDefault();
+                    }
+                  }}
+                  aria-disabled={isPersonalProgressOnly}
+                >
+                  {member.name}
+                </a>
                 <span className="rounded-md bg-red-500 px-1 py-0.5 text-xs text-white">
                   You
                 </span>
@@ -57,7 +105,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                   onClick={() =>
                     onShowResourceProgress(
                       progress.resourceId,
-                      progress.isCustomResource!
+                      progress.isCustomResource!,
                     )
                   }
                   className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
@@ -81,7 +129,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                   />
                 </button>
               );
-            }
+            },
           )}
 
           {memberProgress.length > 4 && !showAll && (

@@ -12,5 +12,5 @@ These services can be used to create a full-featured development environment tha
 
 For more information, visit the following links:
 
-- [Build, test, and deploy .NET Core apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive)
-- [Microsoft Azure DevOps for ASP .NET Core Web apps](https://techmindfactory.com/Microsoft-Azure-DevOps-for-ASP-.NET-Core-Web-apps/)
+- [@article@Build, test, and deploy .NET Core apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive)
+- [@article@Microsoft Azure DevOps for ASP .NET Core Web apps](https://techmindfactory.com/Microsoft-Azure-DevOps-for-ASP-.NET-Core-Web-apps/)

@@ -4,4 +4,4 @@ Improper instantiation in system design refers to the practice of creating unnec
 
 Learn more from the following links:
 
-- [Improper Instantiation antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/)
+- [@article@Improper Instantiation antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/)

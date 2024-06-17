@@ -4,7 +4,7 @@ Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic 
 
 Visit the following resources to learn more:
 
-- [Cloudflare - What is SSL?](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
-- [Cloudflare - What is TLS?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls/)
-- [Wikipedia - SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
-- [SSH vs SSL vs TLS](https://www.youtube.com/watch?v=k3rFFLmQCuY)
+- [@article@Cloudflare - What is SSL?](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
+- [@article@Cloudflare - What is TLS?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls/)
+- [@article@Wikipedia - SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+- [@video@SSH vs SSL vs TLS](https://www.youtube.com/watch?v=k3rFFLmQCuY)

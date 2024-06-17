@@ -4,5 +4,5 @@ Jaeger is an open source, end-to-end distributed tracing system that enables us 
 
 Visit the following resources to learn more:
 
-- [Jaeger Website](https://www.jaegertracing.io/)
-- [Official Documentation](https://www.jaegertracing.io/docs/1.37/)
+- [@article@Jaeger Website](https://www.jaegertracing.io/)
+- [@article@Official Documentation](https://www.jaegertracing.io/docs/1.37/)

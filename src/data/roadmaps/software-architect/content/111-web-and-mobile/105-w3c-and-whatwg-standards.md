@@ -6,5 +6,5 @@ Web Hypertext Application Technology Working Group (WHATWG) is another set of we
 
 Visit the following resources to learn more:
 
-- [W3C Standards](https://www.w3.org/standards/)
-- [WHATWG Standards](https://spec.whatwg.org/)
+- [@article@W3C Standards](https://www.w3.org/standards/)
+- [@article@WHATWG Standards](https://spec.whatwg.org/)

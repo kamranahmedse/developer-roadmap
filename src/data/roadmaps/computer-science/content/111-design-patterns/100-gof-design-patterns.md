@@ -4,4 +4,4 @@ Gang of Four (GoF) design patterns are a set of 23 design patterns that were fir
 
 Visit the following resources to learn more:
 
-- [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [@opensource@Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)

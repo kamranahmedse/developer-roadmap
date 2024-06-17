@@ -8,5 +8,5 @@ With GraphQL, the client defines the structure of the data it needs, by sending 
 
 To learn more, visit the following links:
 
-- [Introduction to GraphQL](https://graphql.org/learn/)
-- [Getting started with GraphQL](https://graphql.org/)
+- [@official@Introduction to GraphQL](https://graphql.org/learn/)
+- [@official@Getting started with GraphQL](https://graphql.org/)

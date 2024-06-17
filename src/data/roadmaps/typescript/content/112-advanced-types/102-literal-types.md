@@ -15,4 +15,4 @@ In this example, the `Age` literal type is created by using the number `42` as a
 
 Learn more from the following links:
 
-- [Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
+- [@article@Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)

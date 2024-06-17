@@ -4,6 +4,6 @@ Spring Security OAuth2 library provides support for both the authorization code 
 
 Learn more about Oauth2 from the following resources:
 
-- [Spring Boot - OAuth2 with JWT](https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm)
-- [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-- [Spring Security](https://www.tutorialspoint.com/spring_security/spring_security_with_oauth2.htm)
+- [@article@Spring Boot - OAuth2 with JWT](https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm)
+- [@official@Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+- [@article@Spring Security](https://www.tutorialspoint.com/spring_security/spring_security_with_oauth2.htm)

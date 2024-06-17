@@ -9,6 +9,6 @@ SHA (Secure Hash Algorithms) is a family of cryptographic hash functions created
 
 Visit the following resources to learn more:
 
-- [Wikipedia - SHA-1](https://en.wikipedia.org/wiki/SHA-1)
-- [Wikipedia - SHA-2](https://en.wikipedia.org/wiki/SHA-2)
-- [Wikipedia - SHA-3](https://en.wikipedia.org/wiki/SHA-3)
+- [@article@Wikipedia - SHA-1](https://en.wikipedia.org/wiki/SHA-1)
+- [@article@Wikipedia - SHA-2](https://en.wikipedia.org/wiki/SHA-2)
+- [@article@Wikipedia - SHA-3](https://en.wikipedia.org/wiki/SHA-3)

@@ -4,4 +4,4 @@ Melody is websocket framework based on [github.com/gorilla/websocket](https://gi
 
 Visit the following resources to learn more:
 
-- [GitHub Repository](https://github.com/olahol/melody)
+- [@opensource@GitHub Repository](https://github.com/olahol/melody)

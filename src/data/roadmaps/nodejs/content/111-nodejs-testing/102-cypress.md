@@ -4,5 +4,5 @@ Cypress is a new front end testing tool built for the modern web. It enables you
 
 Visit the following resources to learn more:
 
-- [Cypress Website](https://www.cypress.io/)
-- [Cypress Documentation](https://docs.cypress.io/)
+- [@official@Cypress Website](https://www.cypress.io/)
+- [@article@Cypress Documentation](https://docs.cypress.io/)

@@ -4,4 +4,4 @@ Distributed systems refer to the design and organization of software components 
 
 Learn more from the following links:
 
-- [Overview of Distributed Architecture](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
+- [@article@Overview of Distributed Architecture](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)

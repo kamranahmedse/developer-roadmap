@@ -6,6 +6,6 @@ You can use Redis in many programming languages. It is such a popular and widely
 
 Visit the following resources to learn more:
 
-- [Learn how to build with Redis Stack and .NET](https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/)
-- [Redis Cache In ASP.NET 6.0 Web API](https://www.c-sharpcorner.com/article/easily-use-redis-cache-in-asp-net-6-0-web-api/)
-- [ASP.Net Core Distributed Caching - Redis Caching](https://www.youtube.com/watch?v=4Br-QnBo6Yw)
+- [@official@Learn how to build with Redis Stack and .NET](https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/)
+- [@article@Redis Cache In ASP.NET 6.0 Web API](https://www.c-sharpcorner.com/article/easily-use-redis-cache-in-asp-net-6-0-web-api/)
+- [@video@ASP.Net Core Distributed Caching - Redis Caching](https://www.youtube.com/watch?v=4Br-QnBo6Yw)

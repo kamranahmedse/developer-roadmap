@@ -4,5 +4,5 @@ The React Testing Library is a very lightweight solution for testing React compo
 
 Visit the following resources to learn more:
 
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [How to use React Testing Library](https://www.robinwieruch.de/react-testing-library/)
+- [@article@React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [@article@How to use React Testing Library](https://www.robinwieruch.de/react-testing-library/)

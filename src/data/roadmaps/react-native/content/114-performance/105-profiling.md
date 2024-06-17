@@ -6,4 +6,4 @@ For iOS, Instruments is an invaluable tool, and on Android you should learn to u
 
 Visit the following for more details:
 
-- [Profiling React Native](https://reactnative.dev/docs/profiling)
+- [@article@Profiling React Native](https://reactnative.dev/docs/profiling)

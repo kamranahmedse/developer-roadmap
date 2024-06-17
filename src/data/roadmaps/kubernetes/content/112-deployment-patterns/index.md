@@ -4,5 +4,5 @@ Deployments is a Kubernetes resource used to declaratively manage the rollout an
 
 Learn more from the following resources:
 
-- [Deployments - Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-- [How Kubernetes deployments work?](https://www.youtube.com/watch?v=mNK14yXIZF4)
+- [@official@Deployments - Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+- [@video@How Kubernetes deployments work?](https://www.youtube.com/watch?v=mNK14yXIZF4)

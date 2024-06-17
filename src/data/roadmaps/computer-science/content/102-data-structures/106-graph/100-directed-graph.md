@@ -4,4 +4,4 @@ A directed graph is graph, i.e., a set of objects (called vertices or nodes) tha
 
 Visit the following resources to learn more:
 
-- [Directed Graph](https://en.wikipedia.org/wiki/Directed_graph)
+- [@article@Directed Graph](https://en.wikipedia.org/wiki/Directed_graph)

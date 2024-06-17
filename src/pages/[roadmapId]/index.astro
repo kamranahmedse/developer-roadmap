@@ -1,7 +1,7 @@
 ---
-import FAQs from '../../components/FAQs/FAQs.astro';
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
@@ -13,6 +13,7 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
@@ -53,16 +54,22 @@ if (roadmapData.schema) {
 }
 
 if (roadmapFAQs.length) {
-  jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
+  jsonLdSchema.push(generateFAQSchema(roadmapFAQs as unknown as FAQType[]));
 }
+
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
-  ogImageUrl={roadmapData?.seo?.ogImageUrl ||
-    'https://roadmap.sh/images/og-img.png'}
+  ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}
@@ -100,13 +107,27 @@ if (roadmapFAQs.length) {
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
           />
-          <TopicDetail client:idle canSubmitContribution={true} />
-
-          <FrameRenderer
-            resourceType={'roadmap'}
-            resourceId={roadmapId}
-            dimensions={roadmapData.dimensions}
+          <TopicDetail
+            resourceTitle={roadmapData.title}
+            resourceType='roadmap'
+            client:idle
+            canSubmitContribution={true}
           />
+
+          {roadmapData?.renderer === 'editor' ? (
+            <EditorRoadmap
+              resourceId={roadmapId}
+              resourceType='roadmap'
+              dimensions={roadmapData.dimensions!}
+              client:load
+            />
+          ) : (
+            <FrameRenderer
+              resourceType={'roadmap'}
+              resourceId={roadmapId}
+              dimensions={roadmapData.dimensions}
+            />
+          )}
         </div>
       )
     }
@@ -115,10 +136,19 @@ if (roadmapFAQs.length) {
     <UserProgressModal
       resourceId={roadmapId}
       resourceType='roadmap'
+      renderer={roadmapData?.renderer}
       client:only='react'
     />
 
-    <FAQs faqs={roadmapFAQs} />
+    {
+      roadmapId === 'docker' && (
+        <p class='mb-8 px-5 text-center text-xs text-gray-400 sm:mb-12'>
+          Roadmap owner Insight Partners is an investor in Docker.
+        </p>
+      )
+    }
+
+    <FAQs faqs={roadmapFAQs as unknown as FAQType[]} />
 
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>

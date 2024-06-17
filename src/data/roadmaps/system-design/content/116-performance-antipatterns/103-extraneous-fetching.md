@@ -11,4 +11,4 @@ Extraneous fetching can lead to a number of issues, such as:
 
 Visit the following links to learn more:
 
-- [Extraneous Fetching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/extraneous-fetching/)
+- [@article@Extraneous Fetching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/extraneous-fetching/)

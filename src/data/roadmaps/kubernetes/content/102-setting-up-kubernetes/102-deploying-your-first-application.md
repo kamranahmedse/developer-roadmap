@@ -4,8 +4,8 @@ To deploy your first application in Kubernetes, you need to create a deployment 
 
 Learn more from the following links:
 
-- [Using kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/)
-- [Deploying An Application On Kubernetes From A to Z](https://www.weave.works/blog/deploying-an-application-on-kubernetes-from-a-to-z)
-- [Kubernetes Tutorial | Your First Kubernetes Application](https://www.youtube.com/watch?v=Vj6EFnav5Mg)
-- [Kubernetes 101: Deploying Your First Application](https://www.youtube.com/watch?v=XltFOyGanYE)
-- [Kubernetes 101: Deploy Your First Application with MicroK8s](https://thenewstack.io/kubernetes-101-deploy-your-first-application-with-microk8s/)
+- [@official@Using kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/)
+- [@article@Deploying An Application On Kubernetes From A to Z](https://www.weave.works/blog/deploying-an-application-on-kubernetes-from-a-to-z)
+- [@video@Kubernetes Tutorial | Your First Kubernetes Application](https://www.youtube.com/watch?v=Vj6EFnav5Mg)
+- [@video@Kubernetes 101: Deploying Your First Application](https://www.youtube.com/watch?v=XltFOyGanYE)
+- [@article@Kubernetes 101: Deploy Your First Application with MicroK8s](https://thenewstack.io/kubernetes-101-deploy-your-first-application-with-microk8s/)

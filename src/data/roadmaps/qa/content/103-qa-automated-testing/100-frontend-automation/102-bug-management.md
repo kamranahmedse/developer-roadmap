@@ -4,5 +4,5 @@ Exploratory Testing is all about exploring the software by navigating random pat
 
 Visit the following resources to learn more:
 
-- [Bug Magnet Website](https://bugmagnet.org/)
-- [Bug Magnet: Chrome Extension for Exploratory Testing](http://www.testingjournals.com/bug-magnet-extension-exploratory-testing/)
+- [@article@Bug Magnet Website](https://bugmagnet.org/)
+- [@article@Bug Magnet: Chrome Extension for Exploratory Testing](http://www.testingjournals.com/bug-magnet-extension-exploratory-testing/)

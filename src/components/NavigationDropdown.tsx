@@ -1,5 +1,4 @@
 import {
-  BookOpen,
   BookOpenText,
   CheckSquare,
   FileQuestion,
@@ -69,14 +68,15 @@ export function NavigationDropdown() {
         })}
         onClick={() => setIsOpen(true)}
         onMouseOver={() => setIsOpen(true)}
+        aria-label="Open Navigation Dropdown"
       >
         <Menu className="h-5 w-5" />
       </button>
       <div
         className={cn(
-          'absolute pointer-events-none left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          'pointer-events-none invisible absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
           {
-            'pointer-events-auto translate-y-2.5 opacity-100': isOpen,
+            'pointer-events-auto visible translate-y-2.5 opacity-100': isOpen,
           },
         )}
       >

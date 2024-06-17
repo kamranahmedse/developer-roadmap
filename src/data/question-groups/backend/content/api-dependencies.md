@@ -1,0 +1,3 @@
+A great way to handle API dependencies in backend systems is to take advantage of API versioning. Through this simple practice, you can ensure that your systems are actually using the right API, even if there are multiple versions of it.
+
+This also allows you to have multiple backend systems using different versions of the same API without any risk of inconsistency or of updates breaking your systems.

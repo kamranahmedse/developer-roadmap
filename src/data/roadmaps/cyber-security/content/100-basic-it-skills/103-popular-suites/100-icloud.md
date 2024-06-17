@@ -28,4 +28,4 @@ Apple takes the security of iCloud very seriously and has implemented multiple l
 
 Overall, iCloud is a convenient and secure way for Apple device users to store and synchronize their data across devices. This cloud-based service offers numerous features to ensure seamless access and enhanced protection for user data.
 
-- [All about iCloud](https://www.intego.com/mac-security-blog/everything-you-can-do-with-icloud-the-complete-guide/)
+- [@article@All about iCloud](https://www.intego.com/mac-security-blog/everything-you-can-do-with-icloud-the-complete-guide/)

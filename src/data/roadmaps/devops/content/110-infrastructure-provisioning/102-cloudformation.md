@@ -4,7 +4,7 @@ CloudFormation is the AWS service that helps to define collections of AWS resour
 
 Visit the following resources to learn more:
 
-- [AWS CloudFormation Website](https://aws.amazon.com/cloudformation/)
-- [Official Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-- [AWS CloudFormation Getting Started Guide](https://aws.amazon.com/cloudformation/getting-started/)
-- [CloudFormation Sample Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates.html)
+- [@article@AWS CloudFormation Website](https://aws.amazon.com/cloudformation/)
+- [@article@Official Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
+- [@article@AWS CloudFormation Getting Started Guide](https://aws.amazon.com/cloudformation/getting-started/)
+- [@article@CloudFormation Sample Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-sample-templates.html)

@@ -10,5 +10,5 @@ There are several types of layered architectures, but a common one is the three-
 
 Learn more from the following links:
 
-- [Software Architecture Patterns — Layered Architecture](https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057)
-- [5 Primary Layers in Software Architecture?](https://www.indeed.com/career-advice/career-development/what-are-the-layers-in-software-architecture)
+- [@article@Software Architecture Patterns — Layered Architecture](https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057)
+- [@article@5 Primary Layers in Software Architecture?](https://www.indeed.com/career-advice/career-development/what-are-the-layers-in-software-architecture)

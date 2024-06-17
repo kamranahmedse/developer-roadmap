@@ -51,4 +51,4 @@ CompTIA provides a range of study materials and resources, including:
 
 The CompTIA Linux+ certification is an excellent starting point for aspiring Linux professionals, as it validates essential skills required for entry-level Linux administration roles. By obtaining this certification, you can enhance your career prospects and demonstrate your competence to potential employers. So, buckle up and start your Linux journey with the CompTIA Linux+ certification!
 
-- [Linux Basics](https://linuxjourney.com/)
+- [@article@Linux Basics](https://linuxjourney.com/)

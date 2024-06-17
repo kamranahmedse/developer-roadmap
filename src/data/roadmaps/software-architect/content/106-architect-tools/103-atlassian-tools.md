@@ -39,11 +39,11 @@ Jira Align is an Enterprise Agile Planning platform that helps improve visibilit
 
 Visit the following resources to learn more:
 
-- [Jira Service Desk](https://www.atlassian.com/software/jira/service-management/features/service-desk)
-- [Jira Core](https://www.atlassian.com/software/jira/work-management)
-- [Confluence](https://www.atlassian.com/wac/software/confluence?)
-- [Bitbucket](https://bitbucket.org/product/)
-- [Statuspage](https://www.atlassian.com/software/statuspage)
-- [Opsgenie](https://www.atlassian.com/software/opsgenie)
-- [Advanced Roadmaps for Jira](https://www.atlassian.com/software/jira/features/roadmaps)
-- [Jira Align](https://www.atlassian.com/software/jira/align)
+- [@official@Jira Service Desk](https://www.atlassian.com/software/jira/service-management/features/service-desk)
+- [@official@Jira Core](https://www.atlassian.com/software/jira/work-management)
+- [@official@Confluence](https://www.atlassian.com/wac/software/confluence?)
+- [@article@Bitbucket](https://bitbucket.org/product/)
+- [@official@Statuspage](https://www.atlassian.com/software/statuspage)
+- [@official@Opsgenie](https://www.atlassian.com/software/opsgenie)
+- [@official@Advanced Roadmaps for Jira](https://www.atlassian.com/software/jira/features/roadmaps)
+- [@official@Jira Align](https://www.atlassian.com/software/jira/align)

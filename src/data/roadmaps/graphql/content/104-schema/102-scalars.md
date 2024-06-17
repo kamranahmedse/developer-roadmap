@@ -14,4 +14,4 @@ Scalars are “leaf” values in GraphQL. There are several built-in scalars, an
 
 Learn more from the following links:
 
-- [Get started with Scalars in GraphQL](https://graphql.org/learn/schema/#scalar-types)
+- [@official@Get started with Scalars in GraphQL](https://graphql.org/learn/schema/#scalar-types)

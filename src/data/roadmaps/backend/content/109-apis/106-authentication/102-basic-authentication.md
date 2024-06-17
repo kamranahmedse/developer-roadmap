@@ -6,5 +6,5 @@ Because it is a part of the HTTP specifications, all the browsers have native su
 
 Visit the following resources to learn more:
 
-- [HTTP Basic Authentication](https://roadmap.sh/guides/http-basic-authentication)
-- [Illustrated HTTP Basic Authentication](https://www.youtube.com/watch?v=mwccHwUn7Gc)
+- [@roadmap.sh@HTTP Basic Authentication](https://roadmap.sh/guides/http-basic-authentication)
+- [@video@Illustrated HTTP Basic Authentication](https://www.youtube.com/watch?v=mwccHwUn7Gc)

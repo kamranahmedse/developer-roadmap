@@ -4,5 +4,5 @@ Mocha is a feature-rich JavaScript test framework running on Node.js and in the 
 
 Visit the following resources to learn more:
 
-- [Official Website and Docs](https://mochajs.org/)
-- [Testing Node.js with Mocha](https://www.youtube.com/watch?v=Bs68k6xfR3E)
+- [@article@Official Website and Docs](https://mochajs.org/)
+- [@video@Testing Node.js with Mocha](https://www.youtube.com/watch?v=Bs68k6xfR3E)

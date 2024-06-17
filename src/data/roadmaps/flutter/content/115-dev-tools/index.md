@@ -12,5 +12,5 @@ Flutter DevTools is a suite of development tools provided by Flutter to help dev
 
 Learn more from the following links:
 
-- [Flutter - DevTools](https://docs.flutter.dev/development/tools/devtools/overview)
-- [Dart DevTools](https://dart.dev/tools/dart-devtools)
+- [@article@Flutter - DevTools](https://docs.flutter.dev/development/tools/devtools/overview)
+- [@article@Dart DevTools](https://dart.dev/tools/dart-devtools)

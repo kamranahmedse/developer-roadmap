@@ -28,5 +28,5 @@ P2P is a decentralized connection type where devices connect directly with each 
 
 In summary, understanding and managing different connection types is an essential aspect of cyber security. By using secure connections and taking preventive measures, you can reduce the risk of unauthorized access, data breaches, and other malicious activities.
 
-- [Connection & Service Types Pt. 1](https://youtu.be/TzEMiD2mc-Q)
-- [Connection & Services Types Pt. 2 ](https://youtu.be/4N3M1aKzoyQ)
+- [@video@Connection & Service Types Pt. 1](https://youtu.be/TzEMiD2mc-Q)
+- [@video@Connection & Services Types Pt. 2 ](https://youtu.be/4N3M1aKzoyQ)

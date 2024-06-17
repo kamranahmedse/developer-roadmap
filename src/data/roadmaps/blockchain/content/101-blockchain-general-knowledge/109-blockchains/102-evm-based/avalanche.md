@@ -4,5 +4,5 @@ Avalanche describes itself as an “open, programmable smart contracts platform 
 
 Visit the following resources to learn more:
 
-- [Avalanche whitepaper](https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf)
-- [Avalanche official website](https://www.avax.network/)
+- [@article@Avalanche whitepaper](https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf)
+- [@article@Avalanche official website](https://www.avax.network/)

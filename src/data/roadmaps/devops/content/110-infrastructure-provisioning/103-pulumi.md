@@ -4,6 +4,6 @@ Pulumi is an open source Infrastructure as Code tool that can be written in Type
 
 Visit the following resources to learn more:
 
-- [Pulumi Website](https://www.pulumi.com/)
-- [Official Documentation](https://www.pulumi.com/docs/)
-- [Pulumi Getting Started Guide](https://www.pulumi.com/docs/get-started/)
+- [@official@Pulumi Website](https://www.pulumi.com/)
+- [@official@Official Documentation](https://www.pulumi.com/docs/)
+- [@official@Pulumi Getting Started Guide](https://www.pulumi.com/docs/get-started/)

@@ -6,7 +6,7 @@ Learn about the sorting algorithms and know the best case/worst case, average co
 
 Visit the following resources to learn more:
 
-- [CS 61B Lecture 29: Sorting I](https://archive.org/details/ucberkeley_webcast_EiUvYS2DT6I)
-- [CS 61B Lecture 30: Sorting II](https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk)
-- [CS 61B Lecture 32: Sorting III](https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc)
-- [CS 61B Lecture 33: Sorting V](https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4)
+- [@article@CS 61B Lecture 29: Sorting I](https://archive.org/details/ucberkeley_webcast_EiUvYS2DT6I)
+- [@article@CS 61B Lecture 30: Sorting II](https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk)
+- [@article@CS 61B Lecture 32: Sorting III](https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc)
+- [@article@CS 61B Lecture 33: Sorting V](https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4)

@@ -4,5 +4,5 @@ Prisma is an ORM that helps app developers build faster and make fewer errors. C
 
 Visit the following resources to learn more:
 
-- [Prisma Website](https://www.prisma.io/)
-- [Prisma Official Documentations](https://www.prisma.io/docs/)
+- [@official@Prisma Website](https://www.prisma.io/)
+- [@official@Prisma Official Documentations](https://www.prisma.io/docs/)

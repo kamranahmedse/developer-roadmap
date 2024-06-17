@@ -4,5 +4,5 @@ A blockchain oracle is a third-party service that connects smart contracts with 
 
 Visit the following resources to learn more:
 
-- [Blockchain Oracle](https://en.wikipedia.org/wiki/Blockchain_oracle)
-- [What Is a Blockchain Oracle?](https://chain.link/education/blockchain-oracles)
+- [@article@Blockchain Oracle](https://en.wikipedia.org/wiki/Blockchain_oracle)
+- [@official@What Is a Blockchain Oracle?](https://chain.link/education/blockchain-oracles)

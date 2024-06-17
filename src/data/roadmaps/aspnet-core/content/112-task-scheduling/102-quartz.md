@@ -6,5 +6,5 @@ With Quartz, you can schedule jobs to run at specific times or intervals, and yo
 
 To learn more, visit the following links:
 
-- [Intro to Quartz in ASP.NET](https://aspnetboilerplate.com/Pages/Documents/Quartz-Integration)
-- [How to work with Quartz.Net in ASP.NET](https://www.infoworld.com/article/3078781/how-to-work-with-quartz-net-in-c.html)
+- [@article@Intro to Quartz in ASP.NET](https://aspnetboilerplate.com/Pages/Documents/Quartz-Integration)
+- [@article@How to work with Quartz.Net in ASP.NET](https://www.infoworld.com/article/3078781/how-to-work-with-quartz-net-in-c.html)

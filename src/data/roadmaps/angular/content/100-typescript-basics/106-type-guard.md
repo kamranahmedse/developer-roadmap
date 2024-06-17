@@ -8,5 +8,5 @@ Type guards are typically used for narrowing a type and are pretty similar to fe
 
 Visit the following resources to learn more:
 
-- [Types Guards - Blog](https://blog.logrocket.com/how-to-use-type-guards-typescript/)
-- [TypeScript Type Guards Explained](https://www.youtube.com/watch?v=FEeEItMtDwg)
+- [@article@Types Guards - Blog](https://blog.logrocket.com/how-to-use-type-guards-typescript/)
+- [@video@TypeScript Type Guards Explained](https://www.youtube.com/watch?v=FEeEItMtDwg)

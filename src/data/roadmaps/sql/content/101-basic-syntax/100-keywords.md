@@ -55,6 +55,6 @@ in ALL CAPS for readability. There are many more keywords in SQL, but these are 
 
 Learn more about SQL from the following resources:
 
-- [SQL Tutorial - Mode](https://mode.com/sql-tutorial/)
-- [SQL Tutorial](https://www.sqltutorial.org/)
-- [SQL Tutorial - W3Schools](https://www.w3schools.com/sql/default.asp)
+- [@article@SQL Tutorial - Mode](https://mode.com/sql-tutorial/)
+- [@article@SQL Tutorial](https://www.sqltutorial.org/)
+- [@article@SQL Tutorial - W3Schools](https://www.w3schools.com/sql/default.asp)

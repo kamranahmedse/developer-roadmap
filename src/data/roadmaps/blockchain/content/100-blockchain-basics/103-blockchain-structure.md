@@ -6,7 +6,7 @@ Understanding blockchain security requires understanding how the blockchain is p
 
 Visit the following resources to learn more:
 
-- [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
-- [Blockchain Architecture 101: Components, Structure, and Benefits](https://komodoplatform.com/en/academy/blockchain-architecture-101/)
-- [Blockchain structure](https://resources.infosecinstitute.com/topic/blockchain-structure/)
-- [Blockchain Basics | Coursera](https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z)
+- [@article@Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+- [@article@Blockchain Architecture 101: Components, Structure, and Benefits](https://komodoplatform.com/en/academy/blockchain-architecture-101/)
+- [@article@Blockchain structure](https://resources.infosecinstitute.com/topic/blockchain-structure/)
+- [@course@Blockchain Basics | Coursera](https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z)

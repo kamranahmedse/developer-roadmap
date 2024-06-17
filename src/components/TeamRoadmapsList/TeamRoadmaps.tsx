@@ -147,6 +147,7 @@ export function TeamRoadmaps() {
     toast.loading('Adding roadmap');
     pageProgressMessage.set('Adding roadmap');
     setIsLoading(true);
+    const roadmap = allRoadmaps.find((r) => r.id === roadmapId);
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${
         import.meta.env.PUBLIC_API_URL
@@ -156,6 +157,7 @@ export function TeamRoadmaps() {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
+        renderer: roadmap?.renderer || 'balsamiq',
       },
     );
 
@@ -166,6 +168,9 @@ export function TeamRoadmaps() {
 
     setTeamResources(response);
     toast.success('Roadmap added');
+    if (roadmap?.renderer === 'editor') {
+      setIsAddingRoadmap(false);
+    }
   }
 
   async function onRemove(resourceId: string) {
@@ -219,11 +224,14 @@ export function TeamRoadmaps() {
     />
   );
 
+  const filteredAllRoadmaps = allRoadmaps.filter(
+    (r) => !teamResources.find((c) => c?.defaultRoadmapId === r.id),
+  );
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
       teamResourceConfig={teamResources}
-      allRoadmaps={allRoadmaps}
+      allRoadmaps={filteredAllRoadmaps}
       teamId={teamId}
       onRoadmapAdd={(roadmapId: string) => {
         onAdd(roadmapId).finally(() => {
@@ -473,7 +481,7 @@ export function TeamRoadmaps() {
                     )}
 
                     <a
-                      href={`/r?id=${resourceConfig.resourceId}`}
+                      href={`/r/${resourceConfig.roadmapSlug}`}
                       className={
                         'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
                       }
@@ -566,7 +574,7 @@ export function TeamRoadmaps() {
                     )}
 
                     <a
-                      href={`/${resourceConfig.resourceId}`}
+                      href={`/${resourceConfig.resourceId}?t=${teamId}`}
                       className={
                         'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
                       }

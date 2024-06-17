@@ -28,7 +28,7 @@ import {
   PenSquare,
   Component,
   Waypoints,
-  CheckSquare,
+  CheckSquare, Braces, FolderKanban,
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
@@ -159,17 +159,15 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapMultiCard
-        roadmaps={[
-          { title: 'System Design', link: '/system-design' },
-        ]}
-        description='Learn how to design large scale systems and prepare for system design interviews.'
-        secondaryRoadmaps={[
-          {
-            title: 'Design and Architecture',
-            link: '/software-design-architecture',
-          },
-        ]}
-        secondaryDescription='Or learn how to design and architect software systems.'
+      roadmaps={[{ title: 'System Design', link: '/system-design' }]}
+      description='Learn how to design large scale systems and prepare for system design interviews.'
+      secondaryRoadmaps={[
+        {
+          title: 'Design and Architecture',
+          link: '/software-design-architecture',
+        },
+      ]}
+      secondaryDescription='Or learn how to design and architect software systems.'
     />
   </RoleRoadmaps>
 
@@ -216,12 +214,21 @@ import { TipItem } from '../components/GetStarted/TipItem';
     title='Are you a Backend Developer?'
     description='Explore the general backend roadmap or dive into a specific technology like Node.js, Python, Java etc'
   >
-    <RoadmapCard
-      icon={ServerCog}
-      title='Backend'
-      link='/backend'
-      description='Learn all you need to know to become a backend developer.'
-    />
+    <div class='flex flex-col gap-3'>
+      <RoadmapCard
+        icon={ServerCog}
+        title='Backend'
+        link='/backend'
+        description='Learn all you need to know to become a backend developer.'
+      />
+
+      <RoadmapCard
+          icon={Braces}
+          title='API Design'
+          link='/api-design'
+          description='Learn all you need to know to design robust APIs.'
+      />
+    </div>
 
     <RoadmapMultiCard
       roadmaps={[
@@ -277,8 +284,9 @@ import { TipItem } from '../components/GetStarted/TipItem';
       roadmaps={[
         { title: 'Docker', link: '/docker' },
         { title: 'Kubernetes', link: '/kubernetes' },
+        { title: 'Linux', link: '/linux' },
       ]}
-      description='or perhaps you want to learn Docker or Kubernetes?'
+      description='or perhaps you want to learn Docker, Kubernetes or Linux?'
       secondaryRoadmaps={[
         { title: 'Python', link: '/python' },
         { title: 'Go', link: '/golang' },
@@ -300,20 +308,19 @@ import { TipItem } from '../components/GetStarted/TipItem';
       description='Learn all you need to know to become an Android Developer.'
     />
 
+    <RoadmapCard
+      icon={Smartphone}
+      title='iOS'
+      link='/ios'
+      description='Learn all you need to know to become an iOS Developer.'
+    />
+
     <RoadmapMultiCard
       roadmaps={[
         { title: 'React Native', link: '/react-native' },
         { title: 'Flutter', link: '/flutter' },
       ]}
       description='Or learn a cross-platform framework?'
-    />
-
-    <RoadmapCard
-      icon={Smartphone}
-      title='iOS'
-      link='/ios'
-      isUpcoming={true}
-      description='We will be adding an iOS roadmap soon.'
     />
   </RoleRoadmaps>
   <RoleRoadmaps
@@ -329,10 +336,17 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapCard
+      icon={Bot}
+      title='Data Analyst'
+      link='/data-analyst'
+      description='Learn all you need to know to become a Data Analyst.'
+    />
+
+    <RoadmapCard
       icon={MessageCircleCode}
       title='Prompt Engineering'
       link='/prompt-engineering'
-      description='Learn how to write better prompts for GPT-3 and other language models.'
+      description='Learn how to write better prompts for GPT-* and other language models.'
     />
 
     <RoadmapCard
@@ -348,7 +362,7 @@ import { TipItem } from '../components/GetStarted/TipItem';
     title='Fancy something else?'
     description='Explore the following roadmaps about UX, Game Development, Software Architect and more'
   >
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
         icon={ShieldHalf}
         title='Cyber Security'
@@ -361,8 +375,14 @@ import { TipItem } from '../components/GetStarted/TipItem';
         link='/ux-design'
         description='Learn all you need to know to become a UX Designer.'
       />
+      <RoadmapCard
+          icon={PenSquare}
+          title='Blockchain'
+          link='/blockchain'
+          description='Learn all you need to know to become a Blockchain Developer.'
+      />
     </div>
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
         icon={Gamepad2}
         title='Game Development'
@@ -376,12 +396,12 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a Technical Writer.'
       />
     </div>
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
-        icon={PenSquare}
-        title='Blockchain'
-        link='/blockchain'
-        description='Learn all you need to know to become a Technical Writer.'
+          icon={FolderKanban}
+          title='Product Manager'
+          link='/product-manager'
+          description='Learn all you need to know to become a Project Manager.'
       />
       <RoadmapCard
         icon={Component}

@@ -18,4 +18,4 @@ How Containers Address These Challenges is as follows:
 
 Overall, containers have become an essential tool for organizations that want to respond quickly to market changes, improve resource efficiency, and ensure reliable and consistent software delivery. They have revolutionized modern software development practices and have long-lasting impact in the world of deployment and application management.
 
-- [Introduction to containers - AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/106/introduction-to-containers)
+- [@article@Introduction to containers - AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/106/introduction-to-containers)

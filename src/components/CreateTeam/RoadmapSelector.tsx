@@ -14,6 +14,7 @@ import { useToast } from '../../hooks/use-toast';
 
 export type TeamResourceConfig = {
   isCustomResource: boolean;
+  roadmapSlug?: string;
   title: string;
   description?: string;
   visibility?: AllowedRoadmapVisibility;
@@ -23,6 +24,7 @@ export type TeamResourceConfig = {
   topics?: number;
   sharedTeamMemberIds: string[];
   sharedFriendIds: string[];
+  defaultRoadmapId?: string;
 }[];
 
 type RoadmapSelectorProps = {
@@ -80,7 +82,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       {
         resourceId: roadmapId,
         resourceType: 'roadmap',
-      }
+      },
     );
 
     if (error || !response) {
@@ -105,6 +107,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     pageProgressMessage.set(`Adding roadmap to team`);
+    const renderer = allRoadmaps.find((r) => r.id === roadmapId)?.renderer;
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${
         import.meta.env.PUBLIC_API_URL
@@ -114,7 +117,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
-      }
+        renderer: renderer || 'balsamiq',
+      },
     );
 
     if (error || !response) {
@@ -123,6 +127,9 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     setTeamResources(response);
+    if (renderer === 'editor') {
+      setShowSelectRoadmapModal(false);
+    }
   }
 
   useEffect(() => {
@@ -312,7 +319,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                               `${
                                 import.meta.env.PUBLIC_EDITOR_APP_URL
                               }/${resourceId}`,
-                              '_blank'
+                              '_blank',
                             );
                             return;
                           }
@@ -335,7 +342,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   )}
                 </div>
               );
-            }
+            },
           )}
         </div>
       )}

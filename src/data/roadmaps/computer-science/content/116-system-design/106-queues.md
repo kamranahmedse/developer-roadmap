@@ -4,6 +4,6 @@ Messaging queues are a common way to decouple systems. They are used to decouple
 
 Visit the following resources to learn more:
 
-- [Message Queues - System Design](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#message-queues)
-- [What is a Message Queue?](https://www.youtube.com/watch?v=xErwDaOc-Gs)
-- [What is a Message Queue and Where is it used?](https://www.youtube.com/watch?v=oUJbuFMyBDk)
+- [@article@Message Queues - System Design](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#message-queues)
+- [@video@What is a Message Queue?](https://www.youtube.com/watch?v=xErwDaOc-Gs)
+- [@video@What is a Message Queue and Where is it used?](https://www.youtube.com/watch?v=oUJbuFMyBDk)

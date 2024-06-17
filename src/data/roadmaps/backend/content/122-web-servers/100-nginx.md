@@ -4,5 +4,5 @@ NGINX is a powerful web server and uses a non-threaded, event-driven architectur
 
 Visit the following resources to learn more:
 
-- [Official Website](https://nginx.org/)
-- [NGINX Explained in 100 Seconds](https://www.youtube.com/watch?v=JKxlsvZXG7c)
+- [@official@Official Website](https://nginx.org/)
+- [@video@NGINX Explained in 100 Seconds](https://www.youtube.com/watch?v=JKxlsvZXG7c)

@@ -4,5 +4,5 @@ Canary Deployments is a technique used in Kubernetes to gradually roll out new v
 
 Learn more from the following resources:
 
-- [Canary deployment for K8s deployments](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/canary-demo?view=azure-devops&tabs=yaml)
-- [Kubernetes canary deployments Explained](https://www.youtube.com/watch?v=sCevTD_GtvU)
+- [@article@Canary deployment for K8s deployments](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/canary-demo?view=azure-devops&tabs=yaml)
+- [@video@Kubernetes canary deployments Explained](https://www.youtube.com/watch?v=sCevTD_GtvU)

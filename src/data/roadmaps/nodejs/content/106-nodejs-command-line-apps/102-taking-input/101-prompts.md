@@ -4,4 +4,4 @@ Prompts is a higher level and user friendly interface built on top of Node.js's 
 
 Visit the following resources to learn more:
 
-- [Official Documentation](https://www.npmjs.com/package/prompts)
+- [@article@Official Documentation](https://www.npmjs.com/package/prompts)

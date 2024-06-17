@@ -73,3 +73,7 @@ When building container images, it's essential to be aware of both image size an
 - **Scan images for vulnerabilities:** Use tools like [Anchore](https://anchore.com/) or [Clair](https://github.com/quay/clair) to scan your images for vulnerabilities and fix them before deployment.
 
 By following these best practices, you'll be able to build more efficient and secure container images, leading to improved performance and a reduced risk of vulnerabilities in your applications.
+
+Visit the following resources to learn more:
+
+- [@official@Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)

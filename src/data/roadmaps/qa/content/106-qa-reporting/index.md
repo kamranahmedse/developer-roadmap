@@ -6,5 +6,5 @@ So basically, test reports should document all of the test cases that were perfo
 
 Visit the following resources to learn more:
 
-- [How do you write a QA report?](https://www.netguru.com/blog/how-to-write-qa-report)
-- [How To Write QA Test Summary Report? [13 Easy Steps]](https://www.qatouch.com/blog/how-to-write-qa-test-summary-report/)
+- [@article@How do you write a QA report?](https://www.netguru.com/blog/how-to-write-qa-report)
+- [@article@How To Write QA Test Summary Report? [13 Easy Steps]](https://www.qatouch.com/blog/how-to-write-qa-test-summary-report/)

@@ -4,5 +4,5 @@ Through its SaaS-based platform, PagerDuty empowers developers, DevOps, IT opera
 
 Visit the following resources to learn more:
 
-- [PagerDuty Website](https://www.pagerduty.com/)
-- [Learn PagerDuty](https://university.pagerduty.com/)
+- [@official@PagerDuty Website](https://www.pagerduty.com/)
+- [@article@Learn PagerDuty](https://university.pagerduty.com/)

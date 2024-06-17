@@ -14,4 +14,4 @@ By following these design principles, you can create a user-friendly and visuall
 
 Learn more from the following:
 
-- [Design - Principles](https://docs.flutter.dev/cookbook/design)
+- [@article@Design - Principles](https://docs.flutter.dev/cookbook/design)

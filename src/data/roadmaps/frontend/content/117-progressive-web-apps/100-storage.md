@@ -6,4 +6,4 @@ The Web Storage API is designed to be simple and easy to use, and it is widely s
 
 Visit the following resources to learn more:
 
-- [Web Storage API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+- [@article@Web Storage API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)

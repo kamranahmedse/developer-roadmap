@@ -4,5 +4,5 @@ After.js is an open-source JavaScript framework for developing SSR (Server Side 
 
 Visit the following resources to learn more:
 
-- [Official GitHub repository](https://github.com/jaredpalmer/after.js)
-- [Documentation](https://www.npmjs.com/package/@jaredpalmer/after)
+- [@opensource@Official GitHub repository](https://github.com/jaredpalmer/after.js)
+- [@article@Documentation](https://www.npmjs.com/package/@jaredpalmer/after)

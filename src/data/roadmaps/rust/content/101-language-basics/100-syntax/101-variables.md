@@ -4,5 +4,5 @@ In Rust, variables are declared using the `let` keyword. They are immutable by d
 
 Learn more from the following links:
 
-- [Variables and Mutability](https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html)
-- [Data Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html)
+- [@article@Variables and Mutability](https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html)
+- [@article@Data Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html)

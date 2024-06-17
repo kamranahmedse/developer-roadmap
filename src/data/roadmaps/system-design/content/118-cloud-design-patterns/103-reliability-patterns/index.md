@@ -4,4 +4,4 @@ These patterns provide a way to design and implement systems that can withstand 
 
 Learn more from the following links:
 
-- [Reliability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)
+- [@article@Reliability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)

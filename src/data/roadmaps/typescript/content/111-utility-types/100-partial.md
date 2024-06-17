@@ -28,4 +28,4 @@ console.log(newUser);
 
 Learn more from the following links:
 
-- [Partial<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
+- [@article@Partial<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)

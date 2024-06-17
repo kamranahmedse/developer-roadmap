@@ -4,7 +4,7 @@ Props (short for “properties”) and state are both plain JavaScript objects. 
 
 Visit the following resources to learn more:
 
-- [State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
-- [How to use Props in React](https://www.robinwieruch.de/react-pass-props-to-component/)
-- [What is the difference between state and props in React?](https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react)
-- [How to update state from props in React](https://www.robinwieruch.de/react-derive-state-props/)
+- [@official@State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
+- [@article@How to use Props in React](https://www.robinwieruch.de/react-pass-props-to-component/)
+- [@article@What is the difference between state and props in React?](https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react)
+- [@article@How to update state from props in React](https://www.robinwieruch.de/react-derive-state-props/)

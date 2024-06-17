@@ -6,6 +6,6 @@ In ASP.NET, Azure Pipelines can be used to automate various tasks related to the
 
 To learn more, visit the following links:
 
-- [Deploy ASP.NET Apps with Azure Pipelines](https://learn.microsoft.com/en-us/training/modules/deploy-aspnet-apps-azure-app-service-pipelines/)
-- [Build ASP.NET apps with .NET Framework](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/aspnet/build-aspnet-4?view=azure-devops)
-- [How to Build, test & deploy .NET Apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive)
+- [@article@Deploy ASP.NET Apps with Azure Pipelines](https://learn.microsoft.com/en-us/training/modules/deploy-aspnet-apps-azure-app-service-pipelines/)
+- [@article@Build ASP.NET apps with .NET Framework](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/aspnet/build-aspnet-4?view=azure-devops)
+- [@article@How to Build, test & deploy .NET Apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive)

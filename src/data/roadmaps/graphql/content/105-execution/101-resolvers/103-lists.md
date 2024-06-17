@@ -6,4 +6,4 @@ The resolver function for a list field can retrieve the data from a database or 
 
 Learn more from the following links:
 
-- [Get started with Lists and Non-Null](https://graphql.org/learn/schema/#lists-and-non-null)
+- [@official@Get started with Lists and Non-Null](https://graphql.org/learn/schema/#lists-and-non-null)

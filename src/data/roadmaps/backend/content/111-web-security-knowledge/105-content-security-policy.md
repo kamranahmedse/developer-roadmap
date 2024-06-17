@@ -4,5 +4,5 @@ Content Security Policy is a computer security standard introduced to prevent cr
 
 Visit the following resources to learn more:
 
-- [MDN — Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-- [Google Devs — Content Security Policy (CSP)](https://developers.google.com/web/fundamentals/security/csp)
+- [@article@MDN — Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- [@article@Google Devs — Content Security Policy (CSP)](https://developers.google.com/web/fundamentals/security/csp)

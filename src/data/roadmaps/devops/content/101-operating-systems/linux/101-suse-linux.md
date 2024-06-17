@@ -4,6 +4,6 @@ openSUSE is a free to use Linux distribution aimed to promote the use of Linux e
 
 Visit the following resources to learn more:
 
-- [openSUSE Linux Website](https://www.opensuse.org/)
-- [openSUSE Documentation](https://en.opensuse.org/Main_Page)
-- [Unofficial openSUSE Getting Started Guide](https://opensuse-guide.org/)
+- [@article@openSUSE Linux Website](https://www.opensuse.org/)
+- [@article@openSUSE Documentation](https://en.opensuse.org/Main_Page)
+- [@article@Unofficial openSUSE Getting Started Guide](https://opensuse-guide.org/)

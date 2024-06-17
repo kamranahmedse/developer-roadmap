@@ -4,5 +4,5 @@ Non-functional testing is a type of software testing to test non-functional para
 
 Visit the following resources to learn more:
 
-- [What is Non Functional Testing](https://www.browserstack.com/guide/what-is-non-functional-testing)
-- [Types of Non Functional Testing](https://www.guru99.com/non-functional-testing.html)
+- [@article@What is Non Functional Testing](https://www.browserstack.com/guide/what-is-non-functional-testing)
+- [@article@Types of Non Functional Testing](https://www.guru99.com/non-functional-testing.html)

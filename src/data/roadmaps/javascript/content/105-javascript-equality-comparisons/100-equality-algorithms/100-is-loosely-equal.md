@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [ Loosely Equality (==) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
-- [Comparison - javascript.info](https://javascript.info/comparison)
+- [@article@ Loosely Equality (==) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
+- [@article@Comparison - javascript.info](https://javascript.info/comparison)

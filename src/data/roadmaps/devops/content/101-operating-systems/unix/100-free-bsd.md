@@ -4,7 +4,7 @@ FreeBSD is a free and open-source Unix-like operating system including many feat
 
 Visit the following resources to learn more:
 
-- [FreeBSD Website](https://www.freebsd.org/)
-- [Official FreeBSD Documentation](https://docs.freebsd.org/en/)
-- [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/)
-- [FreeBSD Resources for Newbies ](https://www.freebsd.org/projects/newbies/)
+- [@official@FreeBSD Website](https://www.freebsd.org/)
+- [@article@Official FreeBSD Documentation](https://docs.freebsd.org/en/)
+- [@article@FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/)
+- [@official@FreeBSD Resources for Newbies ](https://www.freebsd.org/projects/newbies/)

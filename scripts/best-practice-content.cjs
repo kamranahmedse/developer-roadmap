@@ -4,11 +4,7 @@ const path = require('path');
 const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
 const ALL_BEST_PRACTICES_DIR = path.join(
   __dirname,
-  '../src/data/best-practices'
-);
-const BEST_PRACTICE_JSON_DIR = path.join(
-  __dirname,
-  '../public/jsons/best-practices'
+  '../src/data/best-practices',
 );
 
 const bestPracticeId = process.argv[2];
@@ -29,14 +25,13 @@ if (!allowedBestPracticeIds.includes(bestPracticeId)) {
 const BEST_PRACTICE_CONTENT_DIR = path.join(
   ALL_BEST_PRACTICES_DIR,
   bestPracticeId,
-  'content'
+  'content',
 );
-const { Configuration, OpenAIApi } = require('openai');
-const configuration = new Configuration({
+const OpenAI = require('openai');
+
+const openai = new OpenAI({
   apiKey: OPEN_AI_API_KEY,
 });
-
-const openai = new OpenAIApi(configuration);
 
 function getFilesInFolder(folderPath, fileList = {}) {
   const files = fs.readdirSync(folderPath);
@@ -62,13 +57,19 @@ function getFilesInFolder(folderPath, fileList = {}) {
 }
 
 function writeTopicContent(topicTitle) {
-  let prompt = `I am reading a guide that has best practices about "${bestPracticeTitle}". I want to know more about "${topicTitle}". Write me a brief introductory paragraph about this and some tips on how I make sure of this? Behave as if you are the author of the guide.`;
+  let prompt = `I will give you a topic and you need to write a brief paragraph with examples (if possible) about why it is important for the "${bestPracticeTitle}". Just reply to the question without adding any other information about the prompt and use simple language. Also do not start your sentences with "XYZ is important because..". Your format should be as follows:
+
+# (Put a heading for the topic)
+
+(Write a brief paragraph about why it is important for the "${bestPracticeTitle})
+ 
+First topic is: ${topicTitle}`;
 
   console.log(`Generating '${topicTitle}'...`);
 
   return new Promise((resolve, reject) => {
-    openai
-      .createChatCompletion({
+    openai.chat.completions
+      .create({
         model: 'gpt-4',
         messages: [
           {
@@ -78,7 +79,7 @@ function writeTopicContent(topicTitle) {
         ],
       })
       .then((response) => {
-        const article = response.data.choices[0].message.content;
+        const article = response.choices[0].message.content;
 
         resolve(article);
       })
@@ -90,9 +91,12 @@ function writeTopicContent(topicTitle) {
 
 async function writeFileForGroup(group, topicUrlToPathMapping) {
   const topicId = group?.properties?.controlName;
-  const topicTitle = group?.children?.controls?.control?.find(
-    (control) => control?.typeID === 'Label'
-  )?.properties?.text;
+  const topicTitle = group?.children?.controls?.control
+    ?.filter((control) => control?.typeID === 'Label')
+    .map((control) => control?.properties?.text)
+    .join(' ')
+    .toLowerCase();
+
   const currTopicUrl = `/${topicId}`;
   if (currTopicUrl.startsWith('/check:')) {
     return;
@@ -102,7 +106,6 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 
   if (!contentFilePath) {
     console.log(`Missing file for: ${currTopicUrl}`);
-    process.exit(0);
     return;
   }
 
@@ -123,8 +126,13 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
     return;
   }
 
+  if (!topicTitle) {
+    console.log(`Skipping ${topicId}. No title.`);
+    return;
+  }
+
   const topicContent = await writeTopicContent(topicTitle);
-  newFileContent += `\n\n${topicContent}`;
+  newFileContent = `${topicContent}`;
 
   console.log(`Writing ${topicId}..`);
   fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
@@ -138,14 +146,14 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 async function run() {
   const topicUrlToPathMapping = getFilesInFolder(BEST_PRACTICE_CONTENT_DIR);
 
-  const bestPracticeJson = require(path.join(
-    BEST_PRACTICE_JSON_DIR,
-    `${bestPracticeId}.json`
-  ));
+  const bestPracticeJson = require(
+    path.join(ALL_BEST_PRACTICES_DIR, `${bestPracticeId}/${bestPracticeId}`),
+  );
+
   const groups = bestPracticeJson?.mockup?.controls?.control?.filter(
     (control) =>
       control.typeID === '__group__' &&
-      !control.properties?.controlName?.startsWith('ext_link')
+      !control.properties?.controlName?.startsWith('ext_link'),
   );
 
   if (!OPEN_AI_API_KEY) {

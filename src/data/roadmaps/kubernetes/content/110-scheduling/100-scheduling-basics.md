@@ -4,5 +4,5 @@ Scheduling involves assigning pods to worker nodes based on criteria such as res
 
 Learn more from the following resources:
 
-- [Kubernetes Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
-- [How Scheduling in Kubernetes Works](https://www.youtube.com/watch?v=0FvQR-0tK54)
+- [@official@Kubernetes Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
+- [@video@How Scheduling in Kubernetes Works](https://www.youtube.com/watch?v=0FvQR-0tK54)

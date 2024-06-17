@@ -4,5 +4,5 @@ The Software Development Life Cycle (SDLC) is a process followed for a software 
 
 Visit the following resources to learn more:
 
-- [QA Role In SDLC: Why Is Quality Assurance Important In IT](https://cadabra.studio/blog/why-is-quality-assurance-important-qa-role-in-sdlc/)
-- [SDLC Overview](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm)
+- [@article@QA Role In SDLC: Why Is Quality Assurance Important In IT](https://cadabra.studio/blog/why-is-quality-assurance-important-qa-role-in-sdlc/)
+- [@article@SDLC Overview](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm)

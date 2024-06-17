@@ -21,9 +21,9 @@ Disassemblers and decompilers are essential tools in reverse engineering, as the
 
 Some popular disassemblers and decompilers are:
 
-- [IDA Pro](https://www.hex-rays.com/products/ida/)
-- [Ghidra](https://ghidra-sre.org/)
-- [Hopper](https://www.hopperapp.com/)
+- [@article@IDA Pro](https://www.hex-rays.com/products/ida/)
+- [@article@Ghidra](https://ghidra-sre.org/)
+- [@article@Hopper](https://www.hopperapp.com/)
 
 ## Debuggers
 
@@ -31,9 +31,9 @@ Debuggers are another essential tool for reverse engineering, as they allow you 
 
 Some popular debuggers include:
 
-- [OllyDbg](http://www.ollydbg.de/)
-- [GDB](https://www.gnu.org/software/gdb/)
-- [x64dbg](https://x64dbg.com/)
+- [@article@OllyDbg](http://www.ollydbg.de/)
+- [@article@GDB](https://www.gnu.org/software/gdb/)
+- [@article@x64dbg](https://x64dbg.com/)
 
 ## Common Reverse Engineering Techniques
 

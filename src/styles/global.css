@@ -8,7 +8,7 @@
   }
 
   .badge {
-    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white
+    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white;
   }
 
   /* Chrome, Safari and Opera */
@@ -61,7 +61,6 @@ a > code:before {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 3px 10px;
-  display: block;
   background: repeating-linear-gradient(
       -45deg,
       transparent,
@@ -74,11 +73,23 @@ a > code:before {
 
 .striped-loader {
   background-image: repeating-linear-gradient(
-          -45deg,
-          transparent,
-          transparent 5px,
-          hsla(0, 0%, 0%, 0.025) 5px,
-          hsla(0, 0%, 0%, 0.025) 10px
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(0, 0%, 0%, 0.025) 5px,
+    hsla(0, 0%, 0%, 0.025) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
+.striped-loader-darker {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(0, 0%, 0%, 0.20) 5px,
+    hsla(0, 0%, 0%, 0.20) 10px
   );
   background-size: 200% 200%;
   animation: barberpole 15s linear infinite;

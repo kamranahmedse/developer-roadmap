@@ -1,6 +1,6 @@
 # undefined
 
-JavaScript has two primitive values used to signal absent or uninitialized value: `null` (absent) and `undefined` (unintialized).
+JavaScript has two primitive values used to signal absent or uninitialized value: `null` (absent) and `undefined` (uninitialized).
 
 TypeScript has two corresponding _types_ by the same names. How these types behave depends on whether you have the `strictNullChecks` option on.
 
@@ -20,4 +20,4 @@ function doSomething(x: string | null) {
 
 Learn more from the following links:
 
-- [null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined)
+- [@article@null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined)

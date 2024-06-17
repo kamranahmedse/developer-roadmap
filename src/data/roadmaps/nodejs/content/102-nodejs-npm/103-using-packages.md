@@ -4,4 +4,4 @@ Open source Node modules are very powerful as you can instantly get access to th
 
 Visit the following resources to learn more:
 
-- [How to import and use npm modules](https://learn.coderslang.com/0014-how-to-import-and-use-npm-modules/)
+- [@article@How to import and use npm modules](https://learn.coderslang.com/0014-how-to-import-and-use-npm-modules/)

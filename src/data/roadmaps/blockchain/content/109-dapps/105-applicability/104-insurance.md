@@ -4,5 +4,5 @@ Blockchain technology has the ability to automate claims functions by verifying 
 
 Visit the following resources to learn more:
 
-- [Smart Contract Use Cases - Insurance](https://blog.chain.link/smart-contract-use-cases/#insurance)
-- [Top 7 Use Cases of Blockchain in the Insurance Industry](https://imaginovation.net/blog/blockchain-insurance-industry-examples/)
+- [@article@Smart Contract Use Cases - Insurance](https://blog.chain.link/smart-contract-use-cases/#insurance)
+- [@article@Top 7 Use Cases of Blockchain in the Insurance Industry](https://imaginovation.net/blog/blockchain-insurance-industry-examples/)

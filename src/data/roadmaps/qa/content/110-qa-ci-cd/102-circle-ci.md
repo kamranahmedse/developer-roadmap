@@ -4,6 +4,6 @@ CircleCI is a CI/CD service that can be integrated with GitHub, BitBucket and Gi
 
 Visit the following resources to learn more:
 
-- [CircleCI Website](https://circleci.com/)
-- [CircleCI Documentation](https://circleci.com/docs)
-- [Configuration Tutorial](https://circleci.com/docs/config-intro)
+- [@official@CircleCI Website](https://circleci.com/)
+- [@official@CircleCI Documentation](https://circleci.com/docs)
+- [@official@Configuration Tutorial](https://circleci.com/docs/config-intro)

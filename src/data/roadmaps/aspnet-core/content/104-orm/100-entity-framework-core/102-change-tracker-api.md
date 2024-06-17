@@ -7,6 +7,6 @@ The Change Tracker API is typically exposed through the context class, which is 
 When an entity is retrieved from the database, the Change Tracker API marks it as "unchanged". When a property of the entity is modified, the Change Tracker API marks the entity as "modified". And when a new entity is added to the context, the Change Tracker API marks it as "added".
 For more resources, visit the following links:
 
-- [Change Tracking in EF Core](https://learn.microsoft.com/en-us/ef/core/change-tracking/)
-- [Intro to Change Tracking](https://www.oreilly.com/library/view/programming-entity-framework/9781449331825/ch05.html)
-- [ChangeTracker in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/changetracker-in-ef-core.aspx)
+- [@article@Change Tracking in EF Core](https://learn.microsoft.com/en-us/ef/core/change-tracking/)
+- [@article@Intro to Change Tracking](https://www.oreilly.com/library/view/programming-entity-framework/9781449331825/ch05.html)
+- [@article@ChangeTracker in Entity Framework Core](https://www.entityframeworktutorial.net/efcore/changetracker-in-ef-core.aspx)

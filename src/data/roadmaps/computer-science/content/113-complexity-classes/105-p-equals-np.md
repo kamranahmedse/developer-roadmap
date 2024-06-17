@@ -4,4 +4,4 @@ The P = NP problem is one of the most famous problems in computer science. It as
 
 Visit the following resources to learn more:
 
-- [Whats P=NP?, and why is it such a famous question?](https://stackoverflow.com/questions/111307/whats-p-np-and-why-is-it-such-a-famous-question)
+- [@article@Whats P=NP?, and why is it such a famous question?](https://stackoverflow.com/questions/111307/whats-p-np-and-why-is-it-such-a-famous-question)

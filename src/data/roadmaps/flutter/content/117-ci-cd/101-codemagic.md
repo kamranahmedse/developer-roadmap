@@ -6,5 +6,5 @@ Codemagic provides a simple and efficient way for Flutter developers to automate
 
 Learn more from the following links:
 
-- [Codemagic - Flutter](https://codemagic.io/start/)
-- [Create a build archive with Codemagic](https://docs.flutter.dev/deployment/ios#create-a-build-archive-with-codemagic-cli-tools)
+- [@official@Codemagic - Flutter](https://codemagic.io/start/)
+- [@article@Create a build archive with Codemagic](https://docs.flutter.dev/deployment/ios#create-a-build-archive-with-codemagic-cli-tools)

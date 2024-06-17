@@ -4,5 +4,5 @@ Solr is highly reliable, scalable and fault tolerant, providing distributed inde
 
 Visit the following resources to learn more:
 
-- [Official Website](https://solr.apache.org/)
-- [Official Documentation](https://solr.apache.org/resources.html#documentation)
+- [@article@Official Website](https://solr.apache.org/)
+- [@article@Official Documentation](https://solr.apache.org/resources.html#documentation)

@@ -1,2 +1,3 @@
 # Style Modifiers
-- [Style Modifiers](https://learnprompting.org/docs/images/style_modifiers)
+
+- [@article@Style Modifiers](https://learnprompting.org/docs/image_prompting/style_modifiers)

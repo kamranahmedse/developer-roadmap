@@ -9,5 +9,5 @@ Analytics is a key aspect of understanding user behavior and measuring app perfo
 
 Learn more from the following links:
 
-- [Flutter Analytics using Firebase](https://www.youtube.com/watch?v=31KpJXqCayo)
-- [Top Flutter Analytics](https://fluttergems.dev/analytics-consumer-insights/)
+- [@video@Flutter Analytics using Firebase](https://www.youtube.com/watch?v=31KpJXqCayo)
+- [@article@Top Flutter Analytics](https://fluttergems.dev/analytics-consumer-insights/)

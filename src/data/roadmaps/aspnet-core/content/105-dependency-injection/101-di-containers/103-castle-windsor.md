@@ -6,6 +6,6 @@ Castle Windsor uses a technique called "registration" to define the objects and 
 
 Visit the following links for more resources:
 
-- [Getting Started with Dependency Injection Using Castle Windsor](https://www.codementor.io/@copperstarconsulting/getting-started-with-dependency-injection-using-castle-windsor-4meqzcsvh)
-- [What is Castle Windsor?](https://stackoverflow.com/questions/124871/what-is-castle-windsor-and-why-should-i-care)
-- [Intro to Castle Windsor](http://www.castleproject.org/projects/windsor/)
+- [@article@Getting Started with Dependency Injection Using Castle Windsor](https://www.codementor.io/@copperstarconsulting/getting-started-with-dependency-injection-using-castle-windsor-4meqzcsvh)
+- [@article@What is Castle Windsor?](https://stackoverflow.com/questions/124871/what-is-castle-windsor-and-why-should-i-care)
+- [@article@Intro to Castle Windsor](http://www.castleproject.org/projects/windsor/)

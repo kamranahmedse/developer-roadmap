@@ -1,0 +1,3 @@
+If the backend application being debugged is in the local dev machine, a simple solution would be to use the IDE itself. Most modern IDEs, such as IntelliJ, Eclipse and others have integrated debugging capabilities.
+
+If the backend application is on the server though, you’ll have to use other techniques, such as logging, which you can do with logging libraries. Or, you can use more complex tools such as JProfiler or NewRelic.

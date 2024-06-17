@@ -4,12 +4,12 @@ Terraform is an extremely popular open source Infrastructure as Code (IaC) tool 
 
 Visit the following resources to learn more:
 
-- [Terraform Website](https://www.terraform.io/)
-- [Terraform Documentation](https://www.terraform.io/docs)
-- [Terraform Tutorials](https://learn.hashicorp.com/terraform)
-- [Intro to Terraform Video](https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp)
-- [Terraform CDK Website](https://www.terraform.io/cdktf)
-- [What is the CDKTF?](https://www.terraform.io/cdktf/concepts/cdktf-architecture)
-- [CDKTF Getting Started Guide](https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf)
-- [CDKTF Examples](https://www.terraform.io/cdktf/examples)
-- [How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)
+- [@official@Terraform Website](https://www.terraform.io/)
+- [@official@Terraform Documentation](https://www.terraform.io/docs)
+- [@article@Terraform Tutorials](https://learn.hashicorp.com/terraform)
+- [@video@Intro to Terraform Video](https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp)
+- [@official@Terraform CDK Website](https://www.terraform.io/cdktf)
+- [@official@What is the CDKTF?](https://www.terraform.io/cdktf/concepts/cdktf-architecture)
+- [@article@CDKTF Getting Started Guide](https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf)
+- [@official@CDKTF Examples](https://www.terraform.io/cdktf/examples)
+- [@article@How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)

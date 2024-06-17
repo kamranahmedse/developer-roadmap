@@ -6,6 +6,6 @@ In ASP.NET, REST can be used to create web services that expose data in a standa
 
 To learn more, visit the following links:
 
-- [What is REST Services in ASP.NET?](http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet)
-- [What are RESTful APIs?](https://www.pragimtech.com/blog/blazor/what-are-restful-apis/)
-- [Tutorial of Rest and Restful API](https://www.youtube.com/watch?v=4r1CIUs5s2I)
+- [@article@What is REST Services in ASP.NET?](http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet)
+- [@article@What are RESTful APIs?](https://www.pragimtech.com/blog/blazor/what-are-restful-apis/)
+- [@video@Tutorial of Rest and Restful API](https://www.youtube.com/watch?v=4r1CIUs5s2I)

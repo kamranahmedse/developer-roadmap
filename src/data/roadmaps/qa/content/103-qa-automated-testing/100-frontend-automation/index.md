@@ -4,4 +4,4 @@ Front-end automation is a way to characterize automation that streamlines tasks 
 
 Visit the following resources to learn more:
 
-- [How we do automated testing on our frontend](https://dev.to/davidz/how-we-do-automated-testing-on-our-frontend-b10)
+- [@article@How we do automated testing on our frontend](https://dev.to/davidz/how-we-do-automated-testing-on-our-frontend-b10)

@@ -6,5 +6,5 @@ To achieve high levels of uptime, it is important to eliminate single points of 
 
 Visit the following resources to learn more:
 
-- [How High Availability Works in the Cloud](https://codster.io/en/blog/high-availability-in-the-cloud/)
-- [Techniques for Achieving High Availability](https://www.sqlservercentral.com/articles/cloud-computing-basics-achieving-high-availability-2)
+- [@article@How High Availability Works in the Cloud](https://codster.io/en/blog/high-availability-in-the-cloud/)
+- [@article@Techniques for Achieving High Availability](https://www.sqlservercentral.com/articles/cloud-computing-basics-achieving-high-availability-2)

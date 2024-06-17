@@ -6,5 +6,5 @@ Functional programming encourages immutability, which means that once a variable
 
 Learn more from the following links:
 
-- [What is Functional Programming?](https://www.codingdojo.com/blog/what-is-functional-programming)
-- [Tutorial - Functional Programming?](https://www.youtube.com/watch?v=dAPL7MQGjyM)
+- [@article@What is Functional Programming?](https://www.codingdojo.com/blog/what-is-functional-programming)
+- [@video@Tutorial - Functional Programming?](https://www.youtube.com/watch?v=dAPL7MQGjyM)

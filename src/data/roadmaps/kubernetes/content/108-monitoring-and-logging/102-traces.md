@@ -4,5 +4,5 @@ Tracing in Kubernetes involves monitoring the flow of requests through different
 
 Learn more from the following resources:
 
-- [Traces For Kubernetes System Components](https://kubernetes.io/docs/concepts/cluster-administration/system-traces/)
-- [Introduction to Tracing](https://www.youtube.com/watch?v=idDu_jXqf4E)
+- [@official@Traces For Kubernetes System Components](https://kubernetes.io/docs/concepts/cluster-administration/system-traces/)
+- [@video@Introduction to Tracing](https://www.youtube.com/watch?v=idDu_jXqf4E)

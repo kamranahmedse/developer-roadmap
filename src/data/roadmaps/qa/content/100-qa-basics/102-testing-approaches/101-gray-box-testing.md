@@ -4,4 +4,4 @@ Gray box testing is a software testing technique to test a software product or a
 
 Visit the following resources to learn more:
 
-- [What is Gray Box Testing? Techniques & Example](https://www.guru99.com/grey-box-testing.html)
+- [@article@What is Gray Box Testing? Techniques & Example](https://www.guru99.com/grey-box-testing.html)

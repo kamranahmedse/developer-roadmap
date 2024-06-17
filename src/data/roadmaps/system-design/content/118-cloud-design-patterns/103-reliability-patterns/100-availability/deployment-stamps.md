@@ -4,5 +4,5 @@ The deployment stamp pattern involves provisioning, managing, and monitoring a h
 
 To learn more visit the following links:
 
-- [Deployment Stamps pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp)
-- [Deployment Stamps 101](https://blog.devgenius.io/deployment-stamps-101-7c04a6f704a2)
+- [@article@Deployment Stamps pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp)
+- [@article@Deployment Stamps 101](https://blog.devgenius.io/deployment-stamps-101-7c04a6f704a2)

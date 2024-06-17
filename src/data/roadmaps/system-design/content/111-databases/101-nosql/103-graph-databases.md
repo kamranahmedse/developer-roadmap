@@ -6,5 +6,5 @@ Graphs databases offer high performance for data models with complex relationshi
 
 Learn more from the following links:
 
-- [Graph database](https://en.wikipedia.org/wiki/Graph_database)
-- [Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)
+- [@article@Graph database](https://en.wikipedia.org/wiki/Graph_database)
+- [@video@Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)

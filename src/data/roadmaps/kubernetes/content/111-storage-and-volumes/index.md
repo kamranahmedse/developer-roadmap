@@ -4,6 +4,6 @@ Volumes provide directories accessible to containers running in a pod and can be
 
 Learn more from the following resources:
 
-- [The basics of stateful applications in Kubernetes](https://www.youtube.com/watch?v=GieXzb91I40)
-- [Storage Documentation](https://kubernetes.io/docs/concepts/storage/)
-- [Persistent Volumes Documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
+- [@video@The basics of stateful applications in Kubernetes](https://www.youtube.com/watch?v=GieXzb91I40)
+- [@official@Storage Documentation](https://kubernetes.io/docs/concepts/storage/)
+- [@official@Persistent Volumes Documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)

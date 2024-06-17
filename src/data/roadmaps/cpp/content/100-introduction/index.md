@@ -49,6 +49,7 @@ C++ has several basic data types for representing integer, floating-point, and c
 - `float`: single-precision floating-point values
 - `double`: double-precision floating-point values
 - `char`: single characters
+- `bool`: boolean values
 
 Variables must be declared with a data type before they can be used:
 
@@ -57,6 +58,7 @@ int x;
 float y;
 double z;
 char c;
+bool b;
 ```
 
 ## Control Structures
@@ -129,5 +131,5 @@ int main() {
 
 This basic introduction to C++ should provide you with a good foundation for further learning. Explore more topics such as classes, objects, inheritance, polymorphism, templates, and the Standard Template Library (STL) to deepen your understanding of C++ and start writing more advanced programs.
 
-- [LearnC++](https://www.learncpp.com/)
-- [C++ Full Course by freeCodeCamp](https://youtu.be/vLnPwxZdW4Y)
+- [@article@LearnC++](https://www.learncpp.com/)
+- [@video@C++ Full Course by freeCodeCamp](https://youtu.be/vLnPwxZdW4Y)

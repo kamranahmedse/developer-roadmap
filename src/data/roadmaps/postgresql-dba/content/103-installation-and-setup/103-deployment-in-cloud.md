@@ -51,4 +51,4 @@ Here's a general outline of the steps to deploy PostgreSQL in the cloud:
 
 By following these steps, you can have a fully operational PostgreSQL instance in the cloud. Make sure to review the specific documentation and tutorials provided by each cloud service to ensure proper setup and configuration. As your PostgreSQL database grows, you can take advantage of the scalability and flexibility offered by cloud providers to adjust resources and performance as needed.
 
-- [Postgres On Kubernetes](https://cloudnative-pg.io/)
+- [@article@Postgres On Kubernetes](https://cloudnative-pg.io/)

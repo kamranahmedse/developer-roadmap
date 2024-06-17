@@ -8,5 +8,5 @@ Gatling’s architecture is asynchronous as long as the underlying protocol, suc
 
 Visit the following resources to learn more:
 
-- [Gatling Website](https://gatling.io/)
-- [Learn Gatling](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJE6s8I1MjWm-z8BGbUYNCw)
+- [@official@Gatling Website](https://gatling.io/)
+- [@video@Learn Gatling](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJE6s8I1MjWm-z8BGbUYNCw)

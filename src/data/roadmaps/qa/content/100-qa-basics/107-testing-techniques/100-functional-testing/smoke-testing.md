@@ -4,4 +4,4 @@ Smoke Testing is a software testing process that determines whether the deployed
 
 Visit the following resources to learn more:
 
-- [Smoke Testing | Software Testing](https://www.guru99.com/smoke-testing.html)
+- [@article@Smoke Testing | Software Testing](https://www.guru99.com/smoke-testing.html)

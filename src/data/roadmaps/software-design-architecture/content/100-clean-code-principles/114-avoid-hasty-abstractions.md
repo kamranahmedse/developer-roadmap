@@ -14,4 +14,4 @@ Here are some ways to avoid hasty abstractions in system architecture:
 
 Learn more from the following links:
 
-- [AHA Programming](https://kentcdodds.com/blog/aha-programming)
+- [@article@AHA Programming](https://kentcdodds.com/blog/aha-programming)

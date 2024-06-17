@@ -6,5 +6,5 @@ ExpressMapper uses a convention-based approach to mapping, which means that it a
 
 To learn more, visit the following links:
 
-- [Intro to Express Mapper](https://expressmapper.org/)
-- [Express Mapper - The New .NET Mapper](https://www.codeproject.com/Tips/1009198/Expressmapper-The-New-NET-Mapper)
+- [@official@Intro to Express Mapper](https://expressmapper.org/)
+- [@article@Express Mapper - The New .NET Mapper](https://www.codeproject.com/Tips/1009198/Expressmapper-The-New-NET-Mapper)

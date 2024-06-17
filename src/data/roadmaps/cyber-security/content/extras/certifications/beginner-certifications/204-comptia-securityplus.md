@@ -23,9 +23,9 @@ To earn the CompTIA Security+ certification, candidates must pass the SY0-601 ex
 
 Preparation for the CompTIA Security+ exam involves a combination of self-study, instructor-led courses, and hands-on experience in the cybersecurity field. Recommended resources include:
 
-- [Official CompTIA Security+ Study Guide](https://www.comptia.org/training/books/security-study-guide)
-- [CompTIA Security+ Certification Exam Objectives](https://www.comptia.org/training/resources/exam-objectives)
-- [Professor Messer's Free Security+ Video Course](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-exam/)
+- [@official@Official CompTIA Security+ Study Guide](https://www.comptia.org/training/books/security-study-guide)
+- [@official@CompTIA Security+ Certification Exam Objectives](https://www.comptia.org/training/resources/exam-objectives)
+- [@article@Professor Messer's Free Security+ Video Course](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-exam/)
 - Practice exams and study materials from reputable providers such as [ExamCompass](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests), [ITProTV](https://www.itpro.tv/courses/comptia/security-601/), or [Dion Training](https://www.diontraining.com/comptia-security/)
 
 While there are no formal prerequisites to take the Security+ exam, CompTIA recommends candidates have two years of experience in IT administration, focusing on security, and a CompTIA Network+ certification.

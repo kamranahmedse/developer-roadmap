@@ -4,6 +4,6 @@ Webpack is a module bundler. Its main purpose is to bundle JavaScript files for 
 
 Visit the following resources to learn more:
 
-- [Webpack Official Website](https://webpack.js.org/)
-- [Webpack Documentation](https://webpack.js.org/concepts/)
-- [A Complete Guide to Webpack 5](https://www.valentinog.com/blog/webpack)
+- [@article@Webpack Official Website](https://webpack.js.org/)
+- [@article@Webpack Documentation](https://webpack.js.org/concepts/)
+- [@article@A Complete Guide to Webpack 5](https://www.valentinog.com/blog/webpack)

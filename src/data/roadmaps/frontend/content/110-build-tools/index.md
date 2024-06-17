@@ -6,6 +6,6 @@ Common usages of task runners include numerous development tasks such as: spinni
 
 Visit the following resources to learn more:
 
-- [webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
-- [Vite Next Generation Frontend Tooling](https://vitejs.dev)
-- [Parcel is a zero configuration build tool for the web](https://parceljs.org/)
+- [@article@webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
+- [@article@Vite Next Generation Frontend Tooling](https://vitejs.dev)
+- [@article@Parcel is a zero configuration build tool for the web](https://parceljs.org/)

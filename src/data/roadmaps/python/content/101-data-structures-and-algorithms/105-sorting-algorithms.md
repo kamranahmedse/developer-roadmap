@@ -6,5 +6,5 @@ The importance of sorting lies in the fact that data searching can be optimized 
 
 Visit the following resources to learn more:
 
-- [Sorting Algorithms in Python](https://realpython.com/sorting-algorithms-python/)
-- [Python - Sorting Algorithms](https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm)
+- [@article@Sorting Algorithms in Python](https://realpython.com/sorting-algorithms-python/)
+- [@article@Python - Sorting Algorithms](https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm)

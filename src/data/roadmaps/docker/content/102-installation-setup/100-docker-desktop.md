@@ -27,6 +27,6 @@ To install Docker Desktop on your machine, follow these steps:
 
 Learn more from the following resources:
 
-- [Docker Desktop Documentation](https://docs.docker.com/desktop/)
-- [Docker Get Started Guide](https://docs.docker.com/get-started/)
-- [Docker Hub](https://hub.docker.com/)
+- [@article@Docker Desktop Documentation](https://docs.docker.com/desktop/)
+- [@article@Docker Get Started Guide](https://docs.docker.com/get-started/)
+- [@article@Docker Hub](https://hub.docker.com/)

@@ -4,5 +4,5 @@ The Caddy web server is an extensible, cross-platform, open-source web server wr
 
 Visit the following resources to learn more:
 
-- [Official Website](https://caddyserver.com/)
-- [Getting started with Caddy the HTTPS Web Server from scratch](https://www.youtube.com/watch?v=t4naLFSlBpQ)
+- [@article@Official Website](https://caddyserver.com/)
+- [@video@Getting started with Caddy the HTTPS Web Server from scratch](https://www.youtube.com/watch?v=t4naLFSlBpQ)

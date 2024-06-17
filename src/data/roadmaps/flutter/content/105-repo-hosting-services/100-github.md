@@ -14,6 +14,6 @@ GitHub also provides a wide range of tools and services for developers, includin
 
 Learn more from the following resources:
 
-- [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
-- [Get Started with Github](https://docs.github.com/en)
-- [GitHub Tutorial – for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
+- [@video@Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [@article@Get Started with Github](https://docs.github.com/en)
+- [@article@GitHub Tutorial – for Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners/)

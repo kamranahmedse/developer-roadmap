@@ -4,5 +4,5 @@ A key to building software that meets requirements without defects is testing. S
 
 Visit the following resources to learn more:
 
-- [What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
-- [Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+- [@article@What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
+- [@article@Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)

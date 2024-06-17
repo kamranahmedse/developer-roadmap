@@ -6,4 +6,4 @@ The client is responsible for presenting the user interface and handling user in
 
 Learn more from the following links:
 
-- [Intro to Client-server Architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/ClientServer.pdf)
+- [@article@Intro to Client-server Architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/ClientServer.pdf)

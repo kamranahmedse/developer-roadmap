@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AstroIcon from '../../components/AstroIcon.astro';
+import { getGuidesByAuthor } from '../../lib/guide';
+import { getVideosByAuthor } from '../../lib/video';
+import GuideListItem from '../../components/GuideListItem.astro';
+import { getAuthorById, getAuthorIds } from '../../lib/author';
+import VideoListItem from '../../components/VideoListItem.astro';
+import { getAllQuestionGroups } from '../../lib/question-group';
+
+interface Params extends Record<string, string | undefined> {}
+
+export async function getStaticPaths() {
+  const authorIds = await getAuthorIds();
+
+  return authorIds.map((authorId) => ({
+    params: { authorId },
+  }));
+}
+
+const { authorId } = Astro.params;
+
+const author = await getAuthorById(authorId);
+const authorFrontmatter = author.frontmatter;
+
+const guides = await getGuidesByAuthor(authorId);
+const questionGuides = (await getAllQuestionGroups()).filter(
+  (group) => group.frontmatter.authorId === authorId,
+);
+const videos = await getVideosByAuthor(authorId);
+---
+
+<BaseLayout
+  permalink={`/author/${author.id}`}
+  title={`${author.frontmatter.name} - Author at roadmap.sh`}
+  briefTitle={author.frontmatter.name}
+  ogImageUrl={`https://roadmap.sh/${authorFrontmatter.imageUrl}`}
+  description={`${author.frontmatter.name} has written ${guides.length} articles on roadmap.sh on a variety of topics.`}
+  noIndex={false}
+  jsonLd={[
+    {
+      '@context': 'https://schema.org/',
+      '@type': 'Person',
+      name: authorFrontmatter.name,
+      url: `https://roadmap.sh/authors/${authorId}`,
+      image: authorFrontmatter.imageUrl.startsWith('http')
+        ? authorFrontmatter.imageUrl
+        : `https://roadmap.sh${authorFrontmatter.imageUrl}`,
+      sameAs: authorFrontmatter.social
+        ? Object.values(authorFrontmatter.social)
+        : [],
+      ...(authorFrontmatter.employment && {
+        jobTitle: authorFrontmatter.employment?.title,
+        worksFor: {
+          '@type': 'Organization',
+          name: authorFrontmatter.employment.company,
+        },
+      }),
+    },
+  ]}
+>
+  <div class='container pb-0 pt-4 md:pb-16 md:pt-8'>
+    <div class=''>
+      <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
+        <div class='flex-grow'>
+          <h1 class='text-2xl font-bold md:text-3xl'>
+            {authorFrontmatter.name}
+          </h1>
+          <div
+            class='mb-4 mt-1 flex flex-col gap-3 leading-normal text-gray-800 md:mb-6 md:mt-4 [&>p>a]:font-semibold [&>p>a]:underline'
+          >
+            <author.Content />
+          </div>
+
+          <div class='flex items-center justify-between'>
+            <div class='flex items-center gap-1.5'>
+              {
+                authorFrontmatter.social?.github && (
+                  <a
+                    href={authorFrontmatter.social.github}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='github' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                authorFrontmatter.social.twitter && (
+                  <a
+                    href={authorFrontmatter.social.twitter}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='twitter' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                authorFrontmatter.social.linkedin && (
+                  <a
+                    href={authorFrontmatter.social.linkedin}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='linkedin-2' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                authorFrontmatter.social.website && (
+                  <a
+                    href={authorFrontmatter.social.website}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='globe' class='h-[20px]' />
+                  </a>
+                )
+              }
+            </div>
+          </div>
+        </div>
+        <div class='hidden flex-shrink-0 flex-col md:flex'>
+          <img
+            alt="Kamran Ahmed's profile picture"
+            class='block h-[175px] w-[175px] rounded-full bg-gray-100'
+            src={authorFrontmatter.imageUrl}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
+    >
+      {
+        [...guides, ...questionGuides]
+          .sort((a, b) => {
+            const aDate = a.frontmatter.date || a.frontmatter.publishedAt;
+            const bDate = b.frontmatter.date || b.frontmatter.publishedAt;
+            return new Date(bDate) - new Date(aDate);
+          })
+          .map((guide) => <GuideListItem guide={guide} />)
+      }
+      {videos.map((video) => <VideoListItem video={video} />)}
+    </div>
+  </div>
+</BaseLayout>

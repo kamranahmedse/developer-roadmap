@@ -4,6 +4,6 @@ Database constraints are rules that are used to limit the data that can be store
 
 Visit the following resources to learn more:
 
-- [SQL Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
-- [Constraints of SQL](https://www.educative.io/courses/database-design-fundamentals/m7JnY9Xm6Qp)
-- [Constraints in DBMS](https://beginnersbook.com/2015/04/constraints-in-dbms/)
+- [@article@SQL Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
+- [@article@Constraints of SQL](https://www.educative.io/courses/database-design-fundamentals/m7JnY9Xm6Qp)
+- [@article@Constraints in DBMS](https://beginnersbook.com/2015/04/constraints-in-dbms/)

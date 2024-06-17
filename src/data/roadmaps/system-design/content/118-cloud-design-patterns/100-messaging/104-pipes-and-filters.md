@@ -4,4 +4,4 @@ Decompose a task that performs complex processing into a series of separate elem
 
 Learn more from the following links:
 
-- [Pipes and Filters pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters)
+- [@article@Pipes and Filters pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters)

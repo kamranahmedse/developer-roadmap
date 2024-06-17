@@ -4,4 +4,4 @@ Compatibility is nothing but the capability of existing or living together. Comp
 
 Visit the following resources to learn more:
 
-- [What is Compatibility Testing? Forward & Backward Example](https://www.guru99.com/compatibility-testing.html)
+- [@article@What is Compatibility Testing? Forward & Backward Example](https://www.guru99.com/compatibility-testing.html)

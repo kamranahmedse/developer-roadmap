@@ -4,6 +4,6 @@ SpecFlow is an open-source tool that allows developers to create automated accep
 
 To learn more, visit the following links:
 
-- [SpecFlow’s documentation](https://docs.specflow.org/_/downloads/specflow/en/latest/pdf/)
-- [Getting Started with SpecFlow](https://docs.specflow.org/projects/getting-started/en/latest/index.html)
-- [What is SpecFlow?](https://specflow.org/tools/specflow/)
+- [@article@SpecFlow’s documentation](https://docs.specflow.org/_/downloads/specflow/en/latest/pdf/)
+- [@article@Getting Started with SpecFlow](https://docs.specflow.org/projects/getting-started/en/latest/index.html)
+- [@official@What is SpecFlow?](https://specflow.org/tools/specflow/)

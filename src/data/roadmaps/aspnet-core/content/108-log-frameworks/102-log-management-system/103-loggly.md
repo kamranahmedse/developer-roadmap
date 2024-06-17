@@ -6,5 +6,5 @@ In an ASP.NET application, Loggly can be used to collect and analyze log data. L
 
 For more resources, visit the following links:
 
-- [Loggly in ASP.NET Core using Serilog](https://itnext.io/loggly-in-asp-net-core-using-serilog-dc0e2c7d52eb)
-- [Using Loggly For Troubleshooting Bugs](https://www.loggly.com/blog/use-loggly-troubleshooting-bugs-code/)
+- [@article@Loggly in ASP.NET Core using Serilog](https://itnext.io/loggly-in-asp-net-core-using-serilog-dc0e2c7d52eb)
+- [@official@Using Loggly For Troubleshooting Bugs](https://www.loggly.com/blog/use-loggly-troubleshooting-bugs-code/)

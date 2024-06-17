@@ -4,6 +4,6 @@ The Splunk platform removes the barriers between data and action, empowering obs
 
 Visit the following resources to learn more:
 
-- [Splunk Website](https://www.splunk.com/)
-- [Official Documentation](https://docs.splunk.com/Documentation)
-- [Splunk Videos](https://www.splunk.com/en_us/resources/videos.html)
+- [@official@Splunk Website](https://www.splunk.com/)
+- [@article@Official Documentation](https://docs.splunk.com/Documentation)
+- [@official@Splunk Videos](https://www.splunk.com/en_us/resources/videos.html)

@@ -24,4 +24,4 @@ Prompts can help reduce inaccuracies and ambiguities in the AI's responses. By p
 
 In conclusion, the need for prompting stems from its role in guiding AI model behavior, improving text quality and relevance, eliciting a specific output, aligning AI and human intent, and reducing inaccuracies and ambiguity in generated content. By understanding and mastering the art of prompting, users can unlock the true potential of AI language models.
 
-- [Prompting Basics](https://learnprompting.org/docs/basics/prompting)
+- [@article@Prompting Basics](https://learnprompting.org/docs/basics/prompting)

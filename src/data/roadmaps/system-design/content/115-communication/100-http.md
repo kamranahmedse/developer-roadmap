@@ -17,6 +17,6 @@ DELETE | Deletes a resource            | Yes         | No   | No                
 
 HTTP is an application layer protocol relying on lower-level protocols such as TCP and UDP.
 
-- [Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
-- [What Is HTTP?](https://www.nginx.com/resources/glossary/http/)
-- [What is the difference between HTTP protocol and TCP protocol?](https://www.quora.com/What-is-the-difference-between-HTTP-protocol-and-TCP-protocol)
+- [@article@Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
+- [@article@What Is HTTP?](https://www.nginx.com/resources/glossary/http/)
+- [@article@What is the difference between HTTP protocol and TCP protocol?](https://www.quora.com/What-is-the-difference-between-HTTP-protocol-and-TCP-protocol)

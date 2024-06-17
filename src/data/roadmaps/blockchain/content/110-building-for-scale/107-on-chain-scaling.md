@@ -4,4 +4,4 @@ On-chain scaling refers to any direct modification made to a blockchain, like da
 
 Visit the following resources to learn more:
 
-- [Scaling - Ethereum](https://ethereum.org/en/developers/docs/scaling/)
+- [@article@Scaling - Ethereum](https://ethereum.org/en/developers/docs/scaling/)

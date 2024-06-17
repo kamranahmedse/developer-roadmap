@@ -4,5 +4,5 @@ Web frameworks are designed to write web applications. Frameworks are collection
 
 Visit the following resources to learn more:
 
-- [What is the difference between a framework and a library?](https://www.youtube.com/watch?v=D_MO9vIRBcA)
-- [ Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE)
+- [@video@What is the difference between a framework and a library?](https://www.youtube.com/watch?v=D_MO9vIRBcA)
+- [@video@ Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE)

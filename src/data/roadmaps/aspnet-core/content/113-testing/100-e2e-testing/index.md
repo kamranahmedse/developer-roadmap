@@ -4,6 +4,6 @@ E2E testing is a method of testing the complete functionality of an application,
 
 Visit the following links to learn more:
 
-- [End-to-End Testing ASP.NET Core APIs](https://www.youtube.com/watch?v=WWN-9ahbdIU)
-- [ASP.NET Core and its testing](https://blog.devgenius.io/asp-net-core-end-to-end-testing-52325e28e387)
-- [Unit Test and E2E Test in ASP.NET](https://learn.microsoft.com/en-us/odata/webapi/unittest-e2etest)
+- [@video@End-to-End Testing ASP.NET Core APIs](https://www.youtube.com/watch?v=WWN-9ahbdIU)
+- [@article@ASP.NET Core and its testing](https://blog.devgenius.io/asp-net-core-end-to-end-testing-52325e28e387)
+- [@article@Unit Test and E2E Test in ASP.NET](https://learn.microsoft.com/en-us/odata/webapi/unittest-e2etest)

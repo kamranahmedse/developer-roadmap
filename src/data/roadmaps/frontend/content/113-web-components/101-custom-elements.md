@@ -4,4 +4,4 @@ One of the key features of the Web Components standard is the ability to create 
 
 Visit the following resources to learn more:
 
-- [Using custom elements | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+- [@article@Using custom elements | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)

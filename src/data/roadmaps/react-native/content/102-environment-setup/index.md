@@ -6,7 +6,7 @@ In React Native, setting up the development environment is a crucial step. The e
 
 Expo CLI is a command-line tool built for creating and managing React Native projects easily. It streamlines your development process by providing an entire development environment, including building and deploying your app to both iOS and Android platforms.
 
-Visit the [Expo CLI Quickstart](https://reactnative.dev/docs/environment-setup) page for detailed instructions on how to set up your environment.
+Visit the [Expo CLI Quickstart](https://docs.expo.dev/get-started/create-a-project) page for detailed instructions on how to set up your environment.
 
 ## React Native CLI
 

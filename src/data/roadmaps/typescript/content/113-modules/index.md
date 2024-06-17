@@ -26,5 +26,5 @@ MyModule.doSomething(); // Output: "Doing something..."
 
 Learn more from the following links:
 
-- [Modules](https://www.typescriptlang.org/docs/handbook/modules.html#handbook-content)
-- [TypeScript - Modules](https://www.youtube.com/watch?v=EpOPR03z4Vw)
+- [@article@Modules](https://www.typescriptlang.org/docs/handbook/modules.html#handbook-content)
+- [@video@TypeScript - Modules](https://www.youtube.com/watch?v=EpOPR03z4Vw)

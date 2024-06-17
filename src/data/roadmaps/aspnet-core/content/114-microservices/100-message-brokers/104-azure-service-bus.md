@@ -4,6 +4,6 @@ Azure Service Bus is a scalable and reliable messaging platform that can handle 
 
 To learn more, visit the following links:
 
-- [Getting Started With Azure Service Bus and ASP.NET Core](https://www.c-sharpcorner.com/article/get-started-with-azure-service-bus-queues-asp-net-core-part-1/)
-- [How to Send & receive messages from Azure Service Bus queue (.NET)?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless)
-- [What is Azure Service Bus?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
+- [@article@Getting Started With Azure Service Bus and ASP.NET Core](https://www.c-sharpcorner.com/article/get-started-with-azure-service-bus-queues-asp-net-core-part-1/)
+- [@article@How to Send & receive messages from Azure Service Bus queue (.NET)?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless)
+- [@article@What is Azure Service Bus?](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)

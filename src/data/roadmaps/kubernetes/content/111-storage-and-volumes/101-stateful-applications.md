@@ -6,5 +6,5 @@ Volumes are the basic building blocks of storage in Kubernetes. A volume is a di
 
 Learn more from the following resources:
 
-- [Stateful Applications](https://kubernetes.io/docs/tutorials/stateful-application/)
-- [The basics of stateful applications in Kubernetes](https://www.youtube.com/watch?v=GieXzb91I40)
+- [@official@Stateful Applications](https://kubernetes.io/docs/tutorials/stateful-application/)
+- [@video@The basics of stateful applications in Kubernetes](https://www.youtube.com/watch?v=GieXzb91I40)

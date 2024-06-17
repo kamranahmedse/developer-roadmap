@@ -4,4 +4,4 @@ The `bind()` method return a new method that has its `this` keyword refers to th
 
 Visit the following resources to learn more:
 
-- [bind() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+- [@article@bind() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)

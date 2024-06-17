@@ -8,5 +8,5 @@ Curved animations in Flutter can be achieved using the "CurvedAnimation" class. 
 
 Learn more from the following links:
 
-- [Curved­Animation](https://docs.flutter.dev/development/ui/animations/tutorial)
-- [CurvedAnimation Class](https://api.flutter.dev/flutter/animation/CurvedAnimation-class.html)
+- [@article@Curved­Animation](https://docs.flutter.dev/development/ui/animations/tutorial)
+- [@article@CurvedAnimation Class](https://api.flutter.dev/flutter/animation/CurvedAnimation-class.html)

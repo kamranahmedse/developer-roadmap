@@ -6,6 +6,6 @@ In an ASP.NET application, Sphinx can be integrated as a search engine to provid
 
 For more information, visit the following links:
 
-- [Overview of Sphinx in ASP.NET](https://www.sphinxconnector.net/)
-- [Intro to Sphinx](http://sphinxsearch.com/forum/view.html?id=3609)
-- [Documentation of Sphinx in ASP.NET](https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)
+- [@article@Overview of Sphinx in ASP.NET](https://www.sphinxconnector.net/)
+- [@article@Intro to Sphinx](http://sphinxsearch.com/forum/view.html?id=3609)
+- [@article@Documentation of Sphinx in ASP.NET](https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)

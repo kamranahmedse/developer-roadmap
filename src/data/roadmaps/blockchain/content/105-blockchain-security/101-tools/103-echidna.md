@@ -4,4 +4,4 @@ Echidna is a Haskell program designed for fuzzing/property-based testing of Ethe
 
 Visit the following resources to learn more:
 
-- [Echidna: A Fast Smart Contract Fuzzer](https://github.com/crytic/echidna/blob/master/README.md)
+- [@opensource@Echidna: A Fast Smart Contract Fuzzer](https://github.com/crytic/echidna/blob/master/README.md)

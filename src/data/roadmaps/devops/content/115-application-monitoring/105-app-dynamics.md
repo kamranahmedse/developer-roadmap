@@ -4,5 +4,5 @@ AppDynamics is a full-stack application performance management (APM) and IT oper
 
 Visit the following resources to learn more:
 
-- [AppDynamics Website](https://www.appdynamics.com/)
-- [Official Resources](https://www.appdynamics.com/resources)
+- [@official@AppDynamics Website](https://www.appdynamics.com/)
+- [@official@Official Resources](https://www.appdynamics.com/resources)

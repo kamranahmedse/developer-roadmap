@@ -4,5 +4,5 @@ Nightwatch.js is an open-source automated testing framework that is powered by N
 
 Visit the following resources to learn more:
 
-- [Nightwatch.js Website](https://nightwatchjs.org/)
-- [NightwatchJS Tutorial: Get Started with Automation Testing](https://www.browserstack.com/guide/nightwatch-framework-tutorial)
+- [@article@Nightwatch.js Website](https://nightwatchjs.org/)
+- [@article@NightwatchJS Tutorial: Get Started with Automation Testing](https://www.browserstack.com/guide/nightwatch-framework-tutorial)

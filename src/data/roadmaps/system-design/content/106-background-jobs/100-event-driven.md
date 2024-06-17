@@ -8,4 +8,4 @@ Event-driven invocation uses a trigger to start the background task. Examples of
 
 Learn more from the following links:
 
-- [Background Jobs - Event Driven Triggers](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#event-driven-triggers)
+- [@article@Background Jobs - Event Driven Triggers](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#event-driven-triggers)

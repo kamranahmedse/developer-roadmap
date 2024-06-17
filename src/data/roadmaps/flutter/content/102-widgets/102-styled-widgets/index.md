@@ -9,5 +9,5 @@ Styled Widgets are Flutter widgets that are decorated with custom styles, such a
 
 Learn more from the following links:
 
-- [Styling widgets in Flutter](https://docs.flutter.dev/development/ui/widgets/styling)
-- [Style Your Flutter Widgets](https://www.youtube.com/watch?v=kcq8AbVyMbk)
+- [@article@Styling widgets in Flutter](https://docs.flutter.dev/development/ui/widgets/styling)
+- [@video@Style Your Flutter Widgets](https://www.youtube.com/watch?v=kcq8AbVyMbk)
