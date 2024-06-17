@@ -2,7 +2,7 @@
 
 ## Check pgBackRest
 
-In this section, we'll discuss the importance of monitoring your PostgreSQL backup and recovery solution, specifically focusing on `check pgBackRest`. `pgBackRest` is a widely-used backup tool for PostgreSQL databases, providing features like full, differential, incremental and archive backups, support for multiple repostories and threaded backup/restore processes.
+In this section, we'll discuss the importance of monitoring your PostgreSQL backup and recovery solution, specifically focusing on `check pgBackRest`. `pgBackRest` is a widely-used backup tool for PostgreSQL databases, providing features like full, differential, incremental and archive backups, support for multiple repositories and threaded backup/restore processes.
 
 ### Why should you monitor pgBackRest?
 

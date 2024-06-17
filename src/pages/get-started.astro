@@ -28,7 +28,7 @@ import {
   PenSquare,
   Component,
   Waypoints,
-  CheckSquare, Braces,
+  CheckSquare, Braces, FolderKanban,
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
@@ -362,7 +362,7 @@ import { TipItem } from '../components/GetStarted/TipItem';
     title='Fancy something else?'
     description='Explore the following roadmaps about UX, Game Development, Software Architect and more'
   >
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
         icon={ShieldHalf}
         title='Cyber Security'
@@ -375,8 +375,14 @@ import { TipItem } from '../components/GetStarted/TipItem';
         link='/ux-design'
         description='Learn all you need to know to become a UX Designer.'
       />
+      <RoadmapCard
+          icon={PenSquare}
+          title='Blockchain'
+          link='/blockchain'
+          description='Learn all you need to know to become a Blockchain Developer.'
+      />
     </div>
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
         icon={Gamepad2}
         title='Game Development'
@@ -390,12 +396,12 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a Technical Writer.'
       />
     </div>
-    <div class='flex flex-col justify-center gap-3'>
+    <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
-        icon={PenSquare}
-        title='Blockchain'
-        link='/blockchain'
-        description='Learn all you need to know to become a Blockchain Developer.'
+          icon={FolderKanban}
+          title='Product Manager'
+          link='/product-manager'
+          description='Learn all you need to know to become a Project Manager.'
       />
       <RoadmapCard
         icon={Component}

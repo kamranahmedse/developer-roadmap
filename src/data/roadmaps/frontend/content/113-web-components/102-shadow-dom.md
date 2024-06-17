@@ -4,4 +4,5 @@ An important aspect of web components is encapsulation — being able to keep th
 
 Visit the following resources to learn more:
 
+- [@video@DOM vs Virtual DOM vs Shadow DOM](https://youtu.be/7Tok22qxPzQ?si=2cw36PNSgFTcNHWx)
 - [@article@Using shadow DOM | MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)

@@ -1,4 +1,4 @@
-# Hashing/Ecncryption/Encoding
+# Hashing/Encryption/Encoding
 
 Hashing is a one-way function that takes an input and produces a fixed-length output. The output is called a hash. The hash is a unique representation of the input. The hash is deterministic, meaning that the same input will always produce the same hash. The hash is irreversible, meaning that it is impossible to go from the hash back to the original input. The hash is collision-resistant, meaning that it is impossible to find two different inputs that produce the same hash.
 
