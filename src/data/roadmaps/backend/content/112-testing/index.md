@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
 - [@article@Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

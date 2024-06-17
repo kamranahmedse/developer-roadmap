@@ -12,3 +12,4 @@ Some of the examples of performance antipatterns include:
 Learn more from the following links:
 
 - [@article@Performance antipatterns for cloud applications](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/)
+- [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)

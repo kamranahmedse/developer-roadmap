@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@official@Anatomy of a component](https://angular.dev/guide/components)
 - [@official@Composing with Components in Angular](https://angular.dev/essentials/components)
 - [@video@Standalone Components in Angular](https://www.youtube.com/watch?v=x5PZwb4XurU)
+- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

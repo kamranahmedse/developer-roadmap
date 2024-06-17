@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@What Crypto Is Really About](https://blog.chain.link/what-crypto-is-really-about/)
 - [@article@Ethereum Consensus Mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
 - [@video@The Superiority of Cryptographic Truth](https://youtu.be/AEtBPbmIRKQ)
+- [@feed@Explore top posts about Decentralization](https://app.daily.dev/tags/decentralization?ref=roadmapsh)

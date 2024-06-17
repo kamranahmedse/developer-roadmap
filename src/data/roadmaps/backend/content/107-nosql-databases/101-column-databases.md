@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Apache Cassandra](https://cassandra.apache.org/_/index.html)
 - [@video@Apache Cassandra - Course for Beginners](https://www.youtube.com/watch?v=J-cSy5MeMOA)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

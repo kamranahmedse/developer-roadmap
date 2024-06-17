@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@White Box Testing – What is, Techniques, Example & Types](https://www.guru99.com/white-box-testing.html)
 - [@article@A Complete Guide With Techniques, Examples, & Tools](https://www.softwaretestinghelp.com/white-box-testing-techniques-with-example/)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

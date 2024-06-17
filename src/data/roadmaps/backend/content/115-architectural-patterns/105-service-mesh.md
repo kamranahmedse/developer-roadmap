@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 
 - [@article@What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
 - [@video@Microservices pain points and how service mesh can help solve those issues](https://www.youtube.com/watch?v=QiXK0B9FhO0)
+- [@feed@Explore top posts about Service Mesh](https://app.daily.dev/tags/service-mesh?ref=roadmapsh)

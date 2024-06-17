@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Puppet Website](https://puppet.com/)
 - [@official@Official Documentation](https://puppet.com/docs)
 - [@official@Introduction to Puppet](https://puppet.com/docs/puppet/6/puppet_overview.html)
+- [@feed@Explore top posts about Puppet](https://app.daily.dev/tags/puppet?ref=roadmapsh)

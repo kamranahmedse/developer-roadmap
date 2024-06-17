@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is a crypto wallet?](https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet)
 - [@official@What is a Crypto Wallet? A Beginner’s Guide](https://crypto.com/university/crypto-wallets)
+- [@feed@Explore top posts about Crypto](https://app.daily.dev/tags/crypto?ref=roadmapsh)

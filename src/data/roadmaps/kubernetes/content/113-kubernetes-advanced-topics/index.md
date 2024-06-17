@@ -5,4 +5,5 @@ Kubernetes can be extended with custom resources and controllers to manage compl
 Learn more from the following resources:
 
 - [@article@47 Advanced Tutorials for Mastering Kubernetes](https://techbeacon.com/enterprise-it/47-advanced-tutorials-mastering-kubernetes)
-- [@video@Tutorial Series - Advance Kubernetes](https://www.youtube.com/watch?v=OW4MoJudZx8&list=PLTCuRW0ikUdO_XzQtTNrvUAHAAuGeLXfY)
+- [@video@Tutorial Series - Advance Kubernetes](https://www.youtube.com/watch?v=OW4MoJudZx8\&list=PLTCuRW0ikUdO_XzQtTNrvUAHAAuGeLXfY)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

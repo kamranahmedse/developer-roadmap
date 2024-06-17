@@ -5,3 +5,4 @@ A busy database in system design refers to a database that is handling a high vo
 To learn more, visit the following links:
 
 - [@article@Busy Database antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-database/)
+- [@feed@Explore top posts about Database](https://app.daily.dev/tags/database?ref=roadmapsh)

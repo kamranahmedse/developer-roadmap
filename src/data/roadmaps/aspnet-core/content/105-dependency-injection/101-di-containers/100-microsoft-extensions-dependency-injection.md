@@ -9,3 +9,4 @@ For more information, visit the following links:
 - [@article@Guide to Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection?view=dotnet-plat-ext-7.0)
 - [@article@Exploring the Microsoft.Extensions.DependencyInjection](https://www.codeproject.com/Articles/5339241/Exploring-the-Microsoft-Extensions-DependencyInjec)
 - [@article@How to use Microsoft.Extensions.DependencyInjection](https://stackoverflow.com/questions/53825155/how-can-i-use-microsoft-extensions-dependencyinjection-in-an-net-core-console-a)
+- [@feed@Explore top posts about Microsoft](https://app.daily.dev/tags/microsoft?ref=roadmapsh)

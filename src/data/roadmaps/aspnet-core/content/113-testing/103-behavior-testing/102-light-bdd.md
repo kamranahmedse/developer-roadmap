@@ -7,3 +7,4 @@ To learn more, visit the following links:
 - [@video@Getting started with Behavior Driven Development (BDD) in .NET](https://www.youtube.com/watch?v=EEeVU0z26u0)
 - [@video@Introduction To BDD using SpecFlow in ASP.NET](https://www.youtube.com/watch?v=8KPrhBqZ-kk)
 - [@opensource@The Lightweight Behavior Driven Development test framework](https://github.com/LightBDD/LightBDD)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

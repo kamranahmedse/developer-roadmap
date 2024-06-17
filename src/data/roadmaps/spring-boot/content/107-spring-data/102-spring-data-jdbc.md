@@ -7,3 +7,4 @@ Visit the following links for more resources on spring data jdbc:
 - [@official@Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
 - [@article@Spring Data JDBC - Reference Documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/)
 - [@article@Introduction to Spring Data JDBC](https://www.baeldung.com/spring-data-jdbc-intro)
+- [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

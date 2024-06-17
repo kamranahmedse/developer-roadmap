@@ -9,3 +9,4 @@ Learn more from the following resources:
 - [@official@Tools for Monitoring Resources](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/)
 - [@official@Monitoring, Logging, and Debugging](https://kubernetes.io/docs/tasks/debug/)
 - [@official@Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+- [@feed@Explore top posts about Logging](https://app.daily.dev/tags/logging?ref=roadmapsh)

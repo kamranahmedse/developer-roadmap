@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@official@Learn Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [@article@Why Choose Node.js?](https://medium.com/selleo/why-choose-node-js-b0091ad6c3fc)
 - [@article@5 Reasons to Choose Node.js](https://www.bitovi.com/blog/5-reasons-to-choose-nodejs)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

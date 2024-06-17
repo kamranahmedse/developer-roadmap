@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@video@Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [@video@Git and GitHub - CS50 Beyond 2019](https://www.youtube.com/watch?v=eulnSXkhE7I)
 - [@article@Learn Git Branching](https://learngitbranching.js.org/?locale=en_us)
+- [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@opensource@Official GitHub repository](https://github.com/jaredpalmer/after.js)
 - [@article@Documentation](https://www.npmjs.com/package/@jaredpalmer/after)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

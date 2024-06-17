@@ -5,3 +5,4 @@
 Visit the following resources to learn more:
 
 - [@article@Docs.rs: JSON](https://docs.rs/json/latest/json/)
+- [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)

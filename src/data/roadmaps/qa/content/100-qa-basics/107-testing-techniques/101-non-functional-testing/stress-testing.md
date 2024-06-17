@@ -7,3 +7,4 @@ e.g. Injecting high volume of requests per second to an API might cause the disr
 Visit the following resources to learn more:
 
 - [@article@What is Stress Testing in Software Testing?](https://www.guru99.com/stress-testing-tutorial.html)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

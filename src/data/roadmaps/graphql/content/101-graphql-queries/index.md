@@ -7,3 +7,4 @@ A GraphQL query is structured as a single object, with a "query" or "mutation" f
 To learn more, visit the following links:
 
 - [@official@What are GraphQL Queries?](https://graphql.org/learn/queries/)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

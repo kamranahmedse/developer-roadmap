@@ -40,3 +40,4 @@ While Kali Linux is widely used and respected in the cybersecurity community, it
 Kali Linux is a powerful and widely used distribution tailored for cybersecurity experts and penetration testers. Its extensive collection of tools, combined with regular updates and customization options, make it an attractive choice for those seeking a reliable and feature-rich operating system geared towards cybersecurity tasks. However, it is essential for users to remain mindful of the responsibility and legality associated with using these tools.
 
 - [@official@kali Linux](https://www.kali.org/)
+- [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)

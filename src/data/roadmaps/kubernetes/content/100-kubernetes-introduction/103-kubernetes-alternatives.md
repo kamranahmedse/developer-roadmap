@@ -14,3 +14,4 @@ Learn more from the following links:
 - [@article@Compare Apache Mesos vs. Kubernetes](https://www.techtarget.com/searchitoperations/tip/Compare-container-orchestrators-Apache-Mesos-vs-Kubernetes)
 - [@article@Docker Swarm, a User-Friendly Alternative to Kubernetes](https://thenewstack.io/docker-swarm-a-user-friendly-alternative-to-kubernetes/)
 - [@article@Can You Live without Kubernetes?](https://thenewstack.io/can-you-live-without-kubernetes/)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

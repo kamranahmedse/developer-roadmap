@@ -5,3 +5,4 @@ Consul is a service mesh solution providing a full featured control plane with s
 Visit the following resources to learn more:
 
 - [@official@What is Consul?](https://www.consul.io/docs/intro)
+- [@feed@Explore top posts about HashiCorp](https://app.daily.dev/tags/hashicorp?ref=roadmapsh)

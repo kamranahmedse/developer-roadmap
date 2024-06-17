@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Greedy Algorithms - Geeks for Geeks](https://www.geeksforgeeks.org/greedy-algorithms/)
 - [@article@Greedy Algorithms - Programiz](https://www.programiz.com/dsa/greedy-algorithm)
 - [@video@Greedy Algorithms Tutorial – Solve Coding Challenges](https://www.youtube.com/watch?v=bC7o8P_Ste4)
+- [@feed@Explore top posts about Algorithms](https://app.daily.dev/tags/algorithms?ref=roadmapsh)

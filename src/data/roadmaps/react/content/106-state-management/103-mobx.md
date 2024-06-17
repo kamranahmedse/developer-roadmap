@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@MobX Official Website](https://mobx.js.org/)
 - [@video@Intro to MobX Tutorial](https://www.youtube.com/watch?v=WQQq1QbYlAw)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

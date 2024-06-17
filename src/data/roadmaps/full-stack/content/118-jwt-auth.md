@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@video@What Is JWT and Why Should You Use JWT](https://www.youtube.com/watch?v=7Q17ubqLfaM)
 - [@video@What is JWT? JSON Web Token Explained](https://www.youtube.com/watch?v=926mknSW9Lo)
 - [@video@JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4)
+- [@feed@Explore top posts about JWT](https://app.daily.dev/tags/jwt?ref=roadmapsh)

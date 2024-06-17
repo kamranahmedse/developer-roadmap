@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@article@The Flutter command-line tool](https://docs.flutter.dev/reference/flutter-cli)
 - [@article@CLI Packages in Flutter](https://dart.dev/server/libraries#command-line-packages)
 - [@article@Get started with Flutter CLI](https://dart.dev/tutorials/server/get-started)
+- [@feed@Explore top posts about CLI](https://app.daily.dev/tags/cli?ref=roadmapsh)

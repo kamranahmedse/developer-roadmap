@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@course@Coursera Complete Course for Google Cloud ](https://www.coursera.org/professional-certificates/cloud-engineering-gcp#courses)
 - [@video@Google Cloud by Edureka on You-Tube](https://www.youtube.com/watch?v=IUU6OR8yHCc)
 - [@article@5 Tips to Become a Google Cloud Certified Professional Architect](https://thenewstack.io/5-tips-to-become-a-google-cloud-certified-professional-architect/)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

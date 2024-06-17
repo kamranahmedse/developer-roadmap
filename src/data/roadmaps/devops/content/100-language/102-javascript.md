@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@article@W3Schools – Node.js Tutorial](https://www.w3schools.com/nodejs/)
 - [@article@What is NPM?](https://www.w3schools.com/nodejs/nodejs_npm.asp)
 - [@article@Official Documentation](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

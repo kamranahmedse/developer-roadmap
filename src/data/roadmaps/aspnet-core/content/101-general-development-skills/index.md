@@ -22,3 +22,4 @@ For more information, visit the following links:
 - [@video@Asp.net - Complete Tutorial](https://www.youtube.com/watch?v=kdPtNMb8tPw)
 - [@video@Learn Cloud Computing](https://www.youtube.com/watch?v=eWwK2FKWp0g)
 - [@video@DevOps Course for Beginners](https://www.youtube.com/watch?v=hQcFE0RD0cQ)
+- [@feed@Explore top posts about Career](https://app.daily.dev/tags/career?ref=roadmapsh)

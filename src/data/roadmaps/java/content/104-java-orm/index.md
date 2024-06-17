@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 
 - [@article@ORM tutorial](https://www.altexsoft.com/blog/object-relational-mapping/)
 - [@article@Java Databases: An Overview of Libraries & APIs](https://www.marcobehler.com/guides/java-databases)
+- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

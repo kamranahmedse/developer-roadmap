@@ -9,3 +9,4 @@ Event sourcing is often used in conjunction with other patterns, such as Command
 Visit the following resources to learn more:
 
 - [@article@Event Sourcing - Martin Fowler](https://martinfowler.com/eaaDev/EventSourcing.html)
+- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [@article@How to use React Testing Library](https://www.robinwieruch.de/react-testing-library/)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

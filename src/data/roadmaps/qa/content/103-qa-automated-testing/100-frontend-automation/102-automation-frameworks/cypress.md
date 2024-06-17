@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Official Documentation](https://docs.cypress.io/guides/overview/why-cypress#Other)
 - [@official@How it works](https://www.cypress.io/how-it-works)
 - [@video@Cypress End-to-End Testing](https://www.youtube.com/watch?v=7N63cMKosIE)
+- [@feed@Explore top posts about Cypress](https://app.daily.dev/tags/cypress?ref=roadmapsh)

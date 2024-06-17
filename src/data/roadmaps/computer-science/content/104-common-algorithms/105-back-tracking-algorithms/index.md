@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Backtracking Algorithms](https://www.geeksforgeeks.org/backtracking-algorithms)
 - [@article@Backtracking Algorithm](https://www.programiz.com/dsa/backtracking-algorithm)
+- [@feed@Explore top posts about Algorithms](https://app.daily.dev/tags/algorithms?ref=roadmapsh)

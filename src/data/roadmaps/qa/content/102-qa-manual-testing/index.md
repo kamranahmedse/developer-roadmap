@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Manual Testing Tutorial: What is, Types, Concepts](https://www.guru99.com/manual-testing.html)
 - [@article@Manual Testing](https://www.javatpoint.com/manual-testing)
+- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)

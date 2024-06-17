@@ -8,3 +8,4 @@ To learn more, visit the following links:
 
 - [@official@Introduction to graphQL](https://graphql.org/learn/)
 - [@article@Tutorial - What is graphQL?](https://www.howtographql.com/basics/0-introduction/)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

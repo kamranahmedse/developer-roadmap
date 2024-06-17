@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Tutorial](https://go.dev/doc/tutorial/web-service-gin)
 - [@video@RESTful APIs Series](https://youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY)
+- [@feed@Explore top posts about REST API](https://app.daily.dev/tags/rest-api?ref=roadmapsh)

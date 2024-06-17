@@ -7,3 +7,4 @@ Learn more from the following resources:
 - [@official@Tools for Monitoring Resources - Documentation](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/)
 - [@article@Kubernetes Resource Optimization: Just The Basics](https://sequoia.makes.software/kubernetes-resource-optimization-just-the-basics/)
 - [@article@How to Choose the Right Kubernetes Monitoring Tool ](https://thenewstack.io/how-to-choose-the-right-kubernetes-monitoring-tool/)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

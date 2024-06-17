@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Introduction to Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-introduction)
 - [@article@A Detailed Discussion on Iterators - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-iterators)
 - [@article@What Exactly Are Generators? - Advanced JavaScript](https://www.codeguage.com/courses/advanced-js/iteration-generators)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Security Documentation](https://kubernetes.io/docs/concepts/security/)
 - [@video@Kubernetes Security Best Practices you need to know](https://www.youtube.com/watch?v=oBf5lrmquYI)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

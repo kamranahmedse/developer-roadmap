@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Smart Contract Security](https://ethereum.org/en/developers/docs/smart-contracts/security/)
 - [@article@Ethereum Smart Contract Security Recommendations](https://consensys.net/blog/developers/ethereum-smart-contract-security-recommendations/)
+- [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)

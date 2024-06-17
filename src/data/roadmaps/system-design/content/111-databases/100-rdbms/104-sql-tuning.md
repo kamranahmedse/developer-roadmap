@@ -11,3 +11,4 @@ To learn more, visit the following links:
 
 - [@article@Optimizing MySQL Queries](https://aiddroid.com/10-tips-optimizing-mysql-queries-dont-suck/)
 - [@article@How we optimized PostgreSQL queries 100x](https://towardsdatascience.com/how-we-optimized-postgresql-queries-100x-ff52555eabe?gi=13caf5bcf32e)
+- [@feed@Explore top posts about SQL](https://app.daily.dev/tags/sql?ref=roadmapsh)

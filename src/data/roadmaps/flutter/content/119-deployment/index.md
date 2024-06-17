@@ -13,3 +13,4 @@ In general, deploying a Flutter app involves a combination of technical skills a
 Learn more from the following links:
 
 - [@article@Flutter - Web deployment](https://dart.dev/web/deployment)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

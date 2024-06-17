@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@video@DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
 - [@article@Using GitOps with a Kubernetes cluster](https://docs.gitlab.com/ee/user/clusters/agent/gitops.html)
+- [@feed@Explore top posts about GitOps](https://app.daily.dev/tags/gitops?ref=roadmapsh)

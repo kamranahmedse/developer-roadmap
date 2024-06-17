@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@W3Schools – TypeScript Tutorial](https://www.w3schools.com/typescript/)
 - [@article@Tutorials point – TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
 - [@video@TypeScript Crash Course for Beginners](https://www.youtube.com/watch?v=d56mG7DezGs)
+- [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

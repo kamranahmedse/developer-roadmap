@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Intro To CLI Applications](https://learn.co/lessons/intro-to-cli-applications)
 - [@article@Build a Command Line Application with Node.js](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs)
 - [@video@ 5-Minute Node.js CLI Project](https://www.youtube.com/watch?v=_oHByo8tiEY)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

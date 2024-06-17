@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@opensource@Getting started](https://github.com/vercel/styled-jsx)
 - [@video@Styled JSX in Next.js: Master Next.js](https://www.youtube.com/watch?v=SM5uVbfgfdo)
+- [@feed@Explore top posts about JSX](https://app.daily.dev/tags/jsx?ref=roadmapsh)

@@ -7,3 +7,4 @@ The most common way to send GraphQL queries and mutations over HTTP is by using 
 To learn more, visit the following links:
 
 - [@official@Serving over HTTP](https://graphql.org/learn/serving-over-http/)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

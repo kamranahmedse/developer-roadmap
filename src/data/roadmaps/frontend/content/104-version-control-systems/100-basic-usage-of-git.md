@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)
 - [@article@Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)
 - [@article@Tutorial: Git for Absolutely Everyone](https://thenewstack.io/tutorial-git-for-absolutely-everyone/)
+- [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)

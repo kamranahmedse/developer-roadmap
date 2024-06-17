@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@How to use BitBucket?](https://bitbucket.org/product/guides)
 - [@official@BitBucket Website](https://bitbucket.com/)
+- [@feed@Explore top posts about Bitbucket](https://app.daily.dev/tags/bitbucket?ref=roadmapsh)

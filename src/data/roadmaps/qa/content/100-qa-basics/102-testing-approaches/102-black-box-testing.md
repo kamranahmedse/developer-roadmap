@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is BLACK Box Testing? Techniques, Example & Types](https://www.guru99.com/black-box-testing.html)
 - [@article@Black Box Testing: An In-Depth Tutorial With Examples And Techniques](https://www.softwaretestinghelp.com/black-box-testing/)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

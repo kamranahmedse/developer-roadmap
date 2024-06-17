@@ -9,3 +9,4 @@ To learn more, visit the following links:
 - [@article@Building a .NET Cloud Application](https://www.c-sharpcorner.com/article/building-the-net-cloud-application/)
 - [@article@How to make a .NET Cloud Application?](https://dotnet.microsoft.com/en-us/apps/cloud)
 - [@article@Getting started with Cloud](https://aws.amazon.com/free/)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

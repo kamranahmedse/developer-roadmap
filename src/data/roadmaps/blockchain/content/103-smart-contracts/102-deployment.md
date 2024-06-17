@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Deploying Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/deploying/)
 - [@article@Deploying and interacting with smart contracts](https://docs.openzeppelin.com/learn/deploying-and-interacting)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

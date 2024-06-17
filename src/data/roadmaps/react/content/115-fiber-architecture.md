@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@opensource@React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
 - [@article@Understanding React Fiber Architecture](https://dzone.com/articles/understanding-of-react-fiber-architecture)
+- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Typescript a Beginners Guide](https://medium.com/jspoint/typescript-a-beginners-guide-6956fe8bcf9e)
 - [@article@TypeScript Playground](https://www.typescriptlang.org/play)
+- [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

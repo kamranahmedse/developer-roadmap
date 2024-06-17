@@ -1,6 +1,6 @@
 # Deployment in Cloud
 
-In this section, we will discuss deploying PostgreSQL in the cloud. Deploying your PostgreSQL database in the cloud offers significant advantages such as scalability, flexibility, high availability, and cost reduction. There are several cloud providers that offer PostgreSQL as a service, which means you can quickly set up and manage your databases without having to worry about underlying infrastructure, backups, and security measures. 
+In this section, we will discuss deploying PostgreSQL in the cloud. Deploying your PostgreSQL database in the cloud offers significant advantages such as scalability, flexibility, high availability, and cost reduction. There are several cloud providers that offer PostgreSQL as a service, which means you can quickly set up and manage your databases without having to worry about underlying infrastructure, backups, and security measures.
 
 ## Major Cloud Providers
 
@@ -52,3 +52,4 @@ Here's a general outline of the steps to deploy PostgreSQL in the cloud:
 By following these steps, you can have a fully operational PostgreSQL instance in the cloud. Make sure to review the specific documentation and tutorials provided by each cloud service to ensure proper setup and configuration. As your PostgreSQL database grows, you can take advantage of the scalability and flexibility offered by cloud providers to adjust resources and performance as needed.
 
 - [@article@Postgres On Kubernetes](https://cloudnative-pg.io/)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

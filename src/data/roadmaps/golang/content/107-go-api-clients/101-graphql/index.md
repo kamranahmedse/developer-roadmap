@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@article@How to GraphQL: The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
 - [@video@GraphQL Full Course - Novice to Expert (by freeCodeCamp.org on YouTube)](https://www.youtube.com/watch?v=ed8SzALpx1Q)
 - [@video@Beginner GraphQL Series (by Ben Awad on YouTube)](https://www.youtube.com/playlist?list=PLN3n1USn4xln0j_NN9k4j5hS1thsGibKi)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

@@ -7,3 +7,4 @@ For more resources, visit the following links:
 - [@official@Spring Cloud Circuit Breaker](https://spring.io/projects/spring-cloud-circuitbreaker)
 - [@article@Quick Guide to Spring Cloud Circuit Breaker](https://www.baeldung.com/spring-cloud-circuit-breaker)
 - [@article@Spring Cloud - Circuit Breaker using Hystrix](https://www.tutorialspoint.com/spring_cloud/spring_cloud_circuit_breaker_using_hystrix.htm)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

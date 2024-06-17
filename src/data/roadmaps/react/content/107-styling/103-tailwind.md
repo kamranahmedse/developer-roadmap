@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@Tailwind CSS Crash Course](https://www.youtube.com/watch?v=UBOj6rqRUME)
 - [@video@Should You Use Tailwind CSS?](https://www.youtube.com/watch?v=hdGsFpZ0J2E)
 - [@video@Official Screencasts](https://www.youtube.com/c/TailwindLabs/videos)
+- [@feed@Explore top posts about Tailwind CSS](https://app.daily.dev/tags/tailwind-css?ref=roadmapsh)

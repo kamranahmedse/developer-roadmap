@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 
 - [@article@What is Functional Testing?](https://www.guru99.com/functional-testing.html)
 - [@video@Functional Testing vs Non-Functional Testing](https://youtu.be/j_79AXkG4PY)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

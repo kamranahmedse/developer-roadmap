@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Elastic Kibana Website](https://www.elastic.co/kibana/)
 - [@article@Learn Kibana](https://www.elastic.co/training/free)
+- [@feed@Explore top posts about ELK](https://app.daily.dev/tags/elk?ref=roadmapsh)

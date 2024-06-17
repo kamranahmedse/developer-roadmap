@@ -5,3 +5,4 @@ API Security refers to the practices and products that are used to secure applic
 Have a look at the following resources to understand API security and vulnerabilties further:
 
 - [@article@OWASP Project API Security](https://owasp.org/API-Security/editions/2023/en/0x00-toc/)
+- [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

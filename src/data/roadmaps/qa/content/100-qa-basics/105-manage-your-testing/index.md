@@ -5,3 +5,4 @@ Test Management is a process of managing the testing activities in order to ensu
 Visit the following resources to learn more:
 
 - [@article@Test Management Process in Software Testing](https://www.guru99.com/test-management-phases-a-complete-guide-for-testing-project.html)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

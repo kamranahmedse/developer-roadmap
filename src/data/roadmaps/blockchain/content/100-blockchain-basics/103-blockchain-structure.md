@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Blockchain Architecture 101: Components, Structure, and Benefits](https://komodoplatform.com/en/academy/blockchain-architecture-101/)
 - [@article@Blockchain structure](https://resources.infosecinstitute.com/topic/blockchain-structure/)
 - [@course@Blockchain Basics | Coursera](https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z)
+- [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)

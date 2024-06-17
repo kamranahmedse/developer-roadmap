@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@Docker Swarm Tutorial for Beginners](https://www.youtube.com/watch?v=Tm0Q5zr3FL4)
 - [@article@Tutorial: Manage Docker Swarm with Portainer](https://thenewstack.io/tutorial-manage-docker-swarm-with-portainer/)
 - [@article@Tutorial: Create a Docker Swarm with Persistent Storage Using GlusterFS](https://thenewstack.io/tutorial-create-a-docker-swarm-with-persistent-storage-using-glusterfs/)
+- [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)

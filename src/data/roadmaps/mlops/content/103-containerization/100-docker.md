@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Docker Documentation](https://docs.docker.com/)
 - [@video@Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [@video@Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)
+- [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)

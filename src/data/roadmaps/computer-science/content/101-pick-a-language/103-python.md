@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
 - [@article@An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
 - [@article@Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)
+- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

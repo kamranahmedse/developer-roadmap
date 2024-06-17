@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Deployments - Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - [@video@How Kubernetes deployments work?](https://www.youtube.com/watch?v=mNK14yXIZF4)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

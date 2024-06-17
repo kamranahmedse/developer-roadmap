@@ -5,3 +5,4 @@ Knex.js is a "batteries included" SQL query builder for PostgreSQL, CockroachDB,
 Visit the following resources to learn more:
 
 - [@article@Knex.js Docs](https://knexjs.org)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

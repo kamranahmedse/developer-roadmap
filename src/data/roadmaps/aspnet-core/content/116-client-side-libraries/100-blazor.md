@@ -12,3 +12,4 @@ To learn more, visit the following resources:
 - [@article@Guide to ASP.NET Core Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-7.0)
 - [@article@What Is Blazor And How It Works?](https://www.c-sharpcorner.com/article/what-is-blazor-and-how-does-it-works/)
 - [@video@Tutorial of ASP.NET Core Blazor](https://www.youtube.com/watch?v=LyO4zj6NRuc)
+- [@feed@Explore top posts about Blazor](https://app.daily.dev/tags/blazor?ref=roadmapsh)

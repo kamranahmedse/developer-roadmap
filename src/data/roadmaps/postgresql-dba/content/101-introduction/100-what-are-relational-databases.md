@@ -30,3 +30,4 @@ Relational databases offer several advantages in terms of efficiency, flexibilit
 In summary, relational databases are a powerful and versatile tool for storing and managing structured data. Their ability to represent relationships among data and to ensure data integrity make them the backbone of many applications and services.
 
 - [@article@Relational Databases: concept and history](https://www.ibm.com/topics/relational-databases)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

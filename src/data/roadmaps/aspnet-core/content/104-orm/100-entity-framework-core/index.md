@@ -7,3 +7,4 @@ For more information, visit the following links:
 - [@article@Example of Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 - [@article@Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/)
 - [@article@What are the Basics of Entity Framework Core?](https://www.jetbrains.com/dotnet/guide/tutorials/basics/entity-framework-core/)
+- [@feed@Explore top posts about .NET](https://app.daily.dev/tags/.net?ref=roadmapsh)

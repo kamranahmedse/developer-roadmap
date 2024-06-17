@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@video@Sharding & Database Partitioning | System Design Basics](https://www.youtube.com/watch?v=RynPj8C0BXA)
 - [@video@Database Sharding - Watch](https://www.youtube.com/watch?v=hdxdhCpgYo8)
 - [@video@Database Sharding in 5 minutes](https://www.youtube.com/watch?v=kSH4bt8ypOQ)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

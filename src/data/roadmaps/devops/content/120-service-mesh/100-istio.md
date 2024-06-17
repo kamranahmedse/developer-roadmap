@@ -5,3 +5,4 @@ Istio is an open source service mesh platform that provides a way to control how
 Visit the following resources to learn more:
 
 - [@article@What is Istio?](https://www.redhat.com/en/topics/microservices/what-is-istio)
+- [@feed@Explore top posts about Istio](https://app.daily.dev/tags/istio?ref=roadmapsh)

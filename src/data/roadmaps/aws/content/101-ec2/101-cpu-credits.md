@@ -5,3 +5,4 @@ AWS EC2 instances earn CPU Credits when they are idle and consume CPU credits wh
 Learn more from the following link:
 
 - [@article@Burstable performance instances and CPU credits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html)
+- [@feed@Explore top posts about Computing](https://app.daily.dev/tags/computing?ref=roadmapsh)

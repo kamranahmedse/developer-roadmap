@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@Complete Docker Course - From BEGINNER to PRO!](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [@video@Docker Tutorial](https://youtu.be/3c-iBn73dDE)
 - [@video@Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)
+- [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)

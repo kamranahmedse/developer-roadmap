@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Serverless Architectures By AWS](https://aws.amazon.com/lambda/serverless-architectures-learn-more/)
 - [@article@Serverless in Detail](https://martinfowler.com/articles/serverless.html)
+- [@feed@Explore top posts about Serverless](https://app.daily.dev/tags/serverless?ref=roadmapsh)

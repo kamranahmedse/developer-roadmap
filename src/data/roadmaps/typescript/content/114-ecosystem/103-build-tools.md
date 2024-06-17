@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@article@tsup is a zero-config TypeScript build tool](https://tsup.egoist.dev/)
 - [@article@Rollup is a module bundler for JavaScript](https://rollupjs.org/guide/en/)
 - [@article@tsdx is a zero-config CLI for TypeScript package development](https://tsdx.io/)
+- [@feed@Explore top posts about Tools](https://app.daily.dev/tags/tools?ref=roadmapsh)

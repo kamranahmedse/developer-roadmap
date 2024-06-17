@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Flask - Official Website](https://flask.palletsprojects.com/)
 - [@article@Flask - Official Tutorial](https://flask.palletsprojects.com/en/3.0.x/tutorial/)
+- [@feed@Explore top posts about Flask](https://app.daily.dev/tags/flask?ref=roadmapsh)

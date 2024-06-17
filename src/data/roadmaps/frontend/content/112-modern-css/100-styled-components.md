@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Official Website](https://styled-components.com/)
 - [@article@Official Docs](https://styled-components.com/docs)
 - [@video@Styled Components Crash Course & Project](https://www.youtube.com/watch?v=02zO0hZmwnw)
+- [@feed@Explore top posts about Styled Components](https://app.daily.dev/tags/styled-components?ref=roadmapsh)

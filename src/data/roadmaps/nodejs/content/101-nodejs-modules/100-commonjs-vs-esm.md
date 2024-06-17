@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Using ES Modules](https://blog.logrocket.com/es-modules-in-node-today/)
 - [@video@Using Modules](https://www.youtube.com/watch?v=pP4kjXykbio)
 - [@article@CommonJS vs. ES Modules: Modules and Imports in NodeJS](https://reflectoring.io/nodejs-modules-imports/)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

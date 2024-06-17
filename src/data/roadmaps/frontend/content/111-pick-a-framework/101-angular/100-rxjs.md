@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@RxJS Angular Docs](https://angular.io/guide/rx-library)
 - [@video@RxJS Crash Course](https://www.youtube.com/watch?v=PhggNGsSQyg)
 - [@video@RxJS Quick Start](https://www.youtube.com/watch?v=2LCo926NFLI)
+- [@feed@Explore top posts about RxJS](https://app.daily.dev/tags/rxjs?ref=roadmapsh)

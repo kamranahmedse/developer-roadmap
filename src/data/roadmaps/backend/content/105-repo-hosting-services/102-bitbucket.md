@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@official@A brief overview of Bitbucket](https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket)
 - [@video@Bitbucket tutorial | How to use Bitbucket Cloud](https://www.youtube.com/watch?v=M44nEyd_5To)
 - [@video@Bitbucket Tutorial | Bitbucket for Beginners](https://www.youtube.com/watch?v=i5T-DB8tb4A)
+- [@feed@Explore top posts about Bitbucket](https://app.daily.dev/tags/bitbucket?ref=roadmapsh)

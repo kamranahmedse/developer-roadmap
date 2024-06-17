@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@The Next.js Handbook — freeCodeCamp](https://www.freecodecamp.org/news/the-next-js-handbook/)
 - [@video@Next.js for Beginners - freeCodeCamp](https://www.youtube.com/watch?v=KjY94sAKLlw)
 - [@video@Introduction to Next.js and React by Lee Robinson](https://www.youtube.com/watch?v=h2BcitZPMn4)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

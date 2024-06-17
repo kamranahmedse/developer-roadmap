@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Angular Universal](https://angular.io/guide/universal)
 - [@article@Rendering on the Web](https://web.dev/rendering-on-the-web/)
+- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

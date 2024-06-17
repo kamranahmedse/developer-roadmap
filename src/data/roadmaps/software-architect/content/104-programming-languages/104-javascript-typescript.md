@@ -16,3 +16,4 @@ Visit the following resources to learn more:
 - [@article@TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
 - [@article@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript)
 - [@video@TypeScript for Beginners](https://www.youtube.com/watch?v=BwuLxPH8IDs)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

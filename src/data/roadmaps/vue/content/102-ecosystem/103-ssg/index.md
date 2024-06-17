@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Next.js SSG](https://nextjs.org/docs/advanced-features/static-html-export)
 - [@article@Gatsby SSG](https://www.gatsbyjs.com/docs/glossary/static-site-generator/)
 - [@article@SSG — An 11ty, Vite And JAM Sandwich](https://www.smashingmagazine.com/2021/10/building-ssg-11ty-vite-jam-sandwich/)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)
