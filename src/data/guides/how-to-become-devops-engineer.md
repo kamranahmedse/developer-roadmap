@@ -1,8 +1,8 @@
 ---
 title: 'How to become a DevOps Engineer in @currentYear@'
 description: 'Want to become a DevOps engineer? Our @currentYear@ guide covers skills, certifications, and expert career advice. Start your journey today!'
-authorId: kamran
-excludedBySlug: 'devops/how-to-become-devops-engineer'
+authorId: william
+excludedBySlug: '/devops/how-to-become-devops-engineer'
 seo:
   title: 'How to become a DevOps Engineer in @currentYear@'
   description: 'Want to become a DevOps engineer? Our @currentYear@ guide covers skills, certifications, and expert career advice. Start your journey today!'
