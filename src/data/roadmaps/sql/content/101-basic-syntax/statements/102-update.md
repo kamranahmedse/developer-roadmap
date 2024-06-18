@@ -26,7 +26,7 @@ Here's an example that might provide some clarity. For an imaginary `Employees` 
 | 2          | John    | Clerk    | 30000  |
 | 3          | Bob     | Engineer | 40000  |
 
-If you want to increase Bob's salary by $5000, you would use:
+If you want to increase Bob's salary by $45000, you would use:
 
 ```sql
 UPDATE Employees
