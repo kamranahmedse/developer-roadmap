@@ -31,3 +31,4 @@ Lsof lists on its standard output file information about files opened by process
 - [@article@lsof Cheat Sheet](https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/)
 - [@article@lsof Documentation](https://man7.org/linux/man-pages/man8/lsof.8.html)
 - [@video@Linux Crash Course - The lsof Command](https://www.youtube.com/watch?v=n9nZ1ellaV0)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

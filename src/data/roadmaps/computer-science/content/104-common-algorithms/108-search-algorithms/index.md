@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Searching Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
 - [@article@Search Algorithms – Linear Search and Binary Search](https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/)
+- [@feed@Explore top posts about Algorithms](https://app.daily.dev/tags/algorithms?ref=roadmapsh)

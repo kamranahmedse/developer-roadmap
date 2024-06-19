@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@opensource@You Dont Know JS Yet (book series)](https://github.com/getify/You-Dont-Know-JS)
 - [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
 - [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

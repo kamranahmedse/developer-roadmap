@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 - [@article@CI/CD Pipeline: A Gentle Introduction](https://semaphoreci.com/blog/cicd-pipeline)
 - [@video@DevOps CI/CD Explained in 100 Seconds](https://www.youtube.com/watch?v=scEDHsr3APg)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

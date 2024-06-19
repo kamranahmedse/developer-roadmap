@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@video@What is Relational Database](https://youtu.be/OqjJjpjDRLc)
 - [@article@NoSQL Explained](https://www.mongodb.com/nosql-explained)
 - [@video@How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
+- [@feed@Explore top posts about Database](https://app.daily.dev/tags/database?ref=roadmapsh)

@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@Computer Networking Course - Network Engineering](https://www.youtube.com/watch?v=qiQR5rTSshw)
 - [@article@Khan Academy - Networking](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
 - [@video@Networking Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
+- [@feed@Explore top posts about Networking](https://app.daily.dev/tags/networking?ref=roadmapsh)

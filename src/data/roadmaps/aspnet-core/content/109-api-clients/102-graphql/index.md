@@ -9,3 +9,4 @@ To learn more, visit the following resources:
 - [@article@How to implement GraphQL in ASP.Net](https://blog.christian-schou.dk/how-to-implement-graphql-in-asp-net-core/)
 - [@article@Intro to GraphQL](https://graphql-dotnet.github.io/docs/getting-started/introduction/)
 - [@article@Developing API In .NET Core With GraphQL](https://www.c-sharpcorner.com/article/building-api-in-net-core-with-graphql2/)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

@@ -8,3 +8,4 @@ Visit the following links:
 
 - [@article@Documentation of Datadog](https://www.datadoghq.com/)
 - [@article@Configuring the .NET Core with Datadog](https://docs.datadoghq.com/tracing/trace_collection/library_config/dotnet-core/?tab=environmentvariables)
+- [@feed@Explore top posts about DevOps](https://app.daily.dev/tags/devops?ref=roadmapsh)

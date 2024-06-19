@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Heroku Website](https://www.heroku.com/)
 - [@article@Official Documentation](https://devcenter.heroku.com/)
 - [@article@Heroku Get Started Guide](https://devcenter.heroku.com/start)
+- [@feed@Explore top posts about Heroku](https://app.daily.dev/tags/heroku?ref=roadmapsh)

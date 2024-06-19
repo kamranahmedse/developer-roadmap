@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Linkerd Website](https://linkerd.io/)
 - [@official@Linkerd Documentation](https://linkerd.io/2.11/overview/)
 - [@article@What is Linkerd?](https://www.techtarget.com/searchitoperations/definition/Linkerd)
+- [@feed@Explore top posts about Infrastructure](https://app.daily.dev/tags/infrastructure?ref=roadmapsh)

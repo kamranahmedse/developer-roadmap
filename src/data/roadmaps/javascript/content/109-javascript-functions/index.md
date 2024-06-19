@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Functions - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 - [@video@JavaScript Functions - Programming with Mosh](https://youtu.be/N8ap4k_1QEQ)
 - [@article@JavaScript Functions in Detail - CodeGuage](https://www.codeguage.com/courses/js/functions-basics)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -7,3 +7,4 @@ Additionally data should be protected at rest, in transit, and via authorized ac
 Visit the following resources to learn more:
 
 - [@article@Data management patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management)
+- [@feed@Explore top posts about Data Management](https://app.daily.dev/tags/data-management?ref=roadmapsh)

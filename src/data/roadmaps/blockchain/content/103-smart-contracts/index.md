@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@What Are Smart Contracts and How Do They Work?](https://chain.link/education/smart-contracts)
 - [@video@Smart contracts - Simply Explained](https://youtu.be/ZE2HxTmxfrI)
+- [@feed@Explore top posts about Smart Contracts](https://app.daily.dev/tags/smart-contracts?ref=roadmapsh)

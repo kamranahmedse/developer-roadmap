@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Angular.io Website](https://angular.io/guide/testing-services)
 - [@article@Testing-Angular.com](https://testing-angular.com/testing-services/)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

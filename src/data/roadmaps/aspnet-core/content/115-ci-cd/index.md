@@ -8,3 +8,4 @@ To learn more, visit the following links:
 
 - [@article@How to reate a CI/CD pipeline for ASP.NET?](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/)
 - [@video@Building a CI/CD Pipeline in Azure DevOps for ASP.NET Core](https://youtube.com/watch?v=eOQL0nXQlLs)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

@@ -6,3 +6,4 @@ Use following resources to learn more:
 
 - [@video@Learn Kotlin Programming for Beginners - Free Code Camp](https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1)
 - [@article@Learn Kotlin - w3schools](https://www.w3schools.com/kotlin/)
+- [@feed@Explore top posts about Kotlin](https://app.daily.dev/tags/kotlin?ref=roadmapsh)

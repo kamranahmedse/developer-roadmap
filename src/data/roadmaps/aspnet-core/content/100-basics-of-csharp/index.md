@@ -1,4 +1,4 @@
-# C#
+# C\#
 
 C# (pronounced "C-sharp") is a general-purpose, object-oriented programming language developed by Microsoft. It is part of the .NET family of languages and is used to build a wide range of applications, from web and mobile applications to games and cloud services.
 
@@ -12,3 +12,4 @@ Visit the following links for more information:
 - [@article@Basics Of C#](https://www.c-sharpcorner.com/UploadFile/e9fdcd/basics-of-C-Sharp/)
 - [@article@C# Tutorials](https://dotnettutorials.net/course/csharp-dot-net-tutorials/)
 - [@article@C# tutorials - W3Schools](https://www.w3schools.com/cs/index.php)
+- [@feed@Explore top posts about C#](https://app.daily.dev/tags/c#?ref=roadmapsh)

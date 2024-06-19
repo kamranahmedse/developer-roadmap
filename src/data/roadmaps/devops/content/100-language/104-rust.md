@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@article@Microsoft Learn Course](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
 - [@article@Quick Rust Guide](https://sivanaikk.github.io/rust/)
 - [@article@Rust Katas - Small, interactive Rust exercises](https://rustlings.cool/)
+- [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)

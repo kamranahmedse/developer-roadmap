@@ -5,3 +5,4 @@ JDBCTemplate is a central class in Spring's JDBC core package that simplifies th
 Visit the following resources to learn more:
 
 - [@article@JDBC Template tutorial](https://www.baeldung.com/spring-jdbc-jdbctemplate)
+- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

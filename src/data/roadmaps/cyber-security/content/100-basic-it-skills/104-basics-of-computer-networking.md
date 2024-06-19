@@ -52,4 +52,5 @@ The Open Systems Interconnection (OSI) model is a conceptual framework used to u
 Mastering the basics of computer networking is key to understanding and implementing effective cyber security measures. This chapter has covered essential networking concepts, but it is important to continually expand your knowledge in this ever-evolving field.
 
 - [@article@What is Computer Networking?](https://tryhackme.com/room/whatisnetworking)
-- [@video@Learn Networking in 3 hours (basics for cybersecurity and DevOps)](https://www.youtube.com/watch?v=iSOfkw_YyOU&t=1549s)
+- [@video@Learn Networking in 3 hours (basics for cybersecurity and DevOps)](https://www.youtube.com/watch?v=iSOfkw_YyOU\&t=1549s)
+- [@feed@Explore top posts about Networking](https://app.daily.dev/tags/networking?ref=roadmapsh)

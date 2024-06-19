@@ -12,7 +12,7 @@ tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral
 question:
   title: 'What is Backend Development?'
   description: |
-    Backend web development is the part of web development that deals with the server-side of a web application. This includes creating and managing the server-side logic, connecting the application to a database, creating server-side APIs, handling user authentication and authorization, and processing and responding to user requests. It often involves the use of [backend development languages](https://roadmap.sh/backend/languages) such as Python, Java, Ruby, PHP, JavaScript (Node.js), and .NET languages.
+    Backend development refers to the server-side aspect of web development, focusing on creating and managing the server logic, databases, and APIs. It involves handling user authentication, authorization, and processing user requests, typically using [backend development languages](https://roadmap.sh/backend/languages) such as Python, Java, Ruby, PHP, JavaScript (Node.js), and .NET.
 
     ## What does a Backend Developer do?
     A backend developer focuses on creating and maintaining the server-side components of web applications. They are primarily tasked with developing server-side APIs, handling database operations, and ensuring that the backend can manage high traffic volumes efficiently. Key responsibilities include integrating external services such as payment gateways and cloud services, and enhancing the performance and scalability of systems. This role is crucial for processing and securing data, serving as the backbone that supports frontend developers in delivering a seamless user experience.

@@ -15,3 +15,4 @@ To learn more, visit the following links:
 
 - [@opensource@What Is REST?](https://github.com/donnemartin/system-design-primer#representational-state-transfer-rest)
 - [@article@What are the drawbacks of using RESTful APIs?](https://www.quora.com/What-are-the-drawbacks-of-using-RESTful-APIs)
+- [@feed@Explore top posts about REST API](https://app.daily.dev/tags/rest-api?ref=roadmapsh)

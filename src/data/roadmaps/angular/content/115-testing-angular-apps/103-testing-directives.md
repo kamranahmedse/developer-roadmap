@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Angular.io Website](https://angular.io/guide/testing-attribute-directives)
 - [@article@tesing-angular Website](https://testing-angular.com/testing-directives/)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

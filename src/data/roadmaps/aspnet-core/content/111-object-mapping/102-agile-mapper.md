@@ -8,3 +8,4 @@ To learn more, visit the following links:
 
 - [@article@Comparison of Object Mapper Libraries](https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp)
 - [@article@Overview of Agile Mapper](https://readthedocs.org/projects/agilemapper/)
+- [@feed@Explore top posts about Agile](https://app.daily.dev/tags/agile?ref=roadmapsh)

@@ -21,3 +21,4 @@ For more resources, visit the following links:
 - [@official@Spring Cloud](https://spring.io/projects/spring-cloud)
 - [@article@Spring Cloud Tutorial](https://www.javatpoint.com/spring-cloud)
 - [@article@Spring Cloud – Bootstrapping](https://www.baeldung.com/spring-cloud-bootstrapping)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

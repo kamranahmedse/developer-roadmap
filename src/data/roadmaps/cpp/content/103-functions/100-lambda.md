@@ -14,7 +14,7 @@ Here is a basic syntax of a lambda function in C++:
 
 - **capture-list**: A list of variables from the surrounding scope that the lambda function can access.
 - **parameters**: The list of input parameters, just like in a regular function. Optional.
-- **return_type**: The type of the value that the lambda function will return. This part is optional, and the compiler can deduce it in many cases.
+- **return\_type**: The type of the value that the lambda function will return. This part is optional, and the compiler can deduce it in many cases.
 - **function body**: The code that defines the operation of the lambda function.
 
 ## Usage Examples
@@ -59,7 +59,8 @@ auto updateDays = [&expiresInDays](int newDays) {
 updateDays(30); // expiresInDays = 30
 ```
 
-Note that, when using the capture by reference, any change made to the captured variable *inside* the lambda function will affect its value in the surrounding scope.
+Note that, when using the capture by reference, any change made to the captured variable _inside_ the lambda function will affect its value in the surrounding scope.
 
 - [@video@Lambdas in C++](https://youtu.be/MH8mLFqj-n8)
 - [@article@Lambda Expressions](https://en.cppreference.com/w/cpp/language/lambda)
+- [@feed@Explore top posts about AWS Lambda](https://app.daily.dev/tags/aws-lambda?ref=roadmapsh)

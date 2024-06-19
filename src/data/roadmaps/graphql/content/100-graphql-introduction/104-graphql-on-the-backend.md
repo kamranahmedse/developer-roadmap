@@ -9,3 +9,4 @@ The GraphQL server is responsible for handling the incoming queries and mutation
 Learn more from the following links:
 
 - [@article@How to use GraphQL in Backend?](https://www.howtographql.com/)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

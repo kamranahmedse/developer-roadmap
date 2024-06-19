@@ -21,3 +21,4 @@ Visit the following resources to learn more:
 - [@roadmap.sh@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
 - [@roadmap.sh@Session Based Authentication](https://roadmap.sh/guides/session-authentication)
 - [@roadmap.sh@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
+- [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)

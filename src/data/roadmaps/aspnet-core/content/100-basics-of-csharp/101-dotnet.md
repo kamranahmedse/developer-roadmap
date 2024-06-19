@@ -6,3 +6,4 @@ For more information, visit the following link:
 
 - [@article@What is .NET?](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
 - [@article@An Overview of .NET](https://auth0.com/blog/what-is-dotnet-platform-overview/)
+- [@feed@Explore top posts about .NET](https://app.daily.dev/tags/.net?ref=roadmapsh)

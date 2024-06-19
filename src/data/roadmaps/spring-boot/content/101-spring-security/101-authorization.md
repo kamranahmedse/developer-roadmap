@@ -7,3 +7,4 @@ Visit the following links for more information:
 - [@article@Spring Authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/index.html)
 - [@article@Advanced authorization in Spring](https://docs.spring.io/spring-security/site/docs/5.2.11.RELEASE/reference/html/authorization.html)
 - [@article@Spring Security: Authentication and Authorization In-Depth](https://www.marcobehler.com/guides/spring-security)
+- [@feed@Explore top posts about Authorization](https://app.daily.dev/tags/authorization?ref=roadmapsh)

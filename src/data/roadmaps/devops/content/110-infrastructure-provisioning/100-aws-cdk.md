@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
 - [@article@AWS SDK Getting Started Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
 - [@opensource@AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
+- [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)

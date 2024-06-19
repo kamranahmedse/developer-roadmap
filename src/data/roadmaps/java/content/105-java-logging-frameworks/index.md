@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Java Logger](https://www.javatpoint.com/java-logger)
 - [@article@Java Logging Frameworks](https://en.wikipedia.org/wiki/Java_logging_framework)
 - [@article@How to Do Logging In Java](https://www.marcobehler.com/guides/java-logging)
+- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

@@ -11,3 +11,4 @@ A few example cases where one may use headless browser testing include:
 Visit the following resources to learn more:
 
 - [@article@What is Headless Browser Testing and Why is it Important?](https://www.browserstack.com/guide/what-is-headless-browser-testing)
+- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)

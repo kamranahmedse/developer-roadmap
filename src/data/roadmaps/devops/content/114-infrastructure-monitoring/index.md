@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Best Practices to Optimize Infrastructure Monitoring within DevOps Teams](https://thenewstack.io/best-practices-to-optimize-infrastructure-monitoring-within-devops-teams/)
 - [@article@Seven Steps to Effective Cloud Native Infrastructure Monitoring](https://thenewstack.io/seven-steps-to-effective-cloud-native-infrastructure-monitoring/)
+- [@feed@Explore top posts about Infrastructure](https://app.daily.dev/tags/infrastructure?ref=roadmapsh)

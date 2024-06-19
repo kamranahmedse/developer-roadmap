@@ -12,3 +12,4 @@ Learn more from the following links:
 
 - [@article@Brief of NOSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
 - [@video@Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)
+- [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)

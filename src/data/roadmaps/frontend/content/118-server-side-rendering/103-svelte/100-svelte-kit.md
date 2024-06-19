@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Svelte Kit Official Website](https://kit.svelte.dev/)
 - [@article@Official Svelte Kit Docs](https://kit.svelte.dev/docs/introduction)
+- [@feed@Explore top posts about Svelte](https://app.daily.dev/tags/svelte?ref=roadmapsh)

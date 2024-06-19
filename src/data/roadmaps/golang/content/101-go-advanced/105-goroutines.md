@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@video@Understanding Concurrency](https://www.youtube.com/watch?v=V-0ifUKCkBI)
 - [@article@Go by Example: Goroutines](https://gobyexample.com/goroutines)
 - [@video@Golang Goroutine Basics You MUST Learn! (by Golang Dojo on YouTube)](https://youtu.be/oHIbeTmmTaA)
+- [@feed@Explore top posts about Golang](https://app.daily.dev/tags/golang?ref=roadmapsh)

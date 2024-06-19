@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@official@Passing props to a component](https://react.dev/learn/passing-props-to-a-component)
 - [@article@Functional Components in React](https://www.robinwieruch.de/react-function-component/)
 - [@video@React JS Functional Components](https://www.youtube.com/watch?v=NJ_qbsLf52w)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

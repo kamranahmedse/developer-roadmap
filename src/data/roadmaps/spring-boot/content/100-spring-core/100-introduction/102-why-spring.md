@@ -16,3 +16,4 @@ Visit the following resources to learn more:
 - [@article@Spring vs Spring Boot: Know The Difference](https://www.interviewbit.com/blog/spring-vs-spring-boot)
 - [@article@A Comparison Between Spring and Spring Boot](https://www.baeldung.com/spring-vs-spring-boot)
 - [@article@Advantages of Spring Boot](https://www.adservio.fr/post/advantages-of-spring-boot)
+- [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

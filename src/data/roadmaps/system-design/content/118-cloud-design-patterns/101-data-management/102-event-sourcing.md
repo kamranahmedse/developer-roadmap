@@ -5,3 +5,4 @@ Instead of storing just the current state of the data in a domain, use an append
 Learn more from the following links:
 
 - [@article@Event Sourcing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
+- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

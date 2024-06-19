@@ -9,3 +9,4 @@ For more information, visit the following resources:
 - [@official@Postgresql - Open Source Relational Database](https://www.postgresql.org/)
 - [@article@What is Postgresql?](https://postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/)
 - [@article@Introduction, Advantages & Disadvantages of PostgreSQL](https://guru99.com/introduction-postgresql.htmlPostgresql)
+- [@feed@Explore top posts about PostgreSQL](https://app.daily.dev/tags/postgresql?ref=roadmapsh)

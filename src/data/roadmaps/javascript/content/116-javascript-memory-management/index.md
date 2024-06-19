@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@JavaScript Garbage Collection](https://javascript.info/garbage-collection)
 - [@article@Memory Management in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

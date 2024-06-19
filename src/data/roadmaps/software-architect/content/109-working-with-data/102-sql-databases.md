@@ -10,3 +10,4 @@ Examples of SQL Databases
 Visit the following resources to learn more:
 
 - [@article@SQL Databases](https://www.openlogic.com/blog/what-sql-database)
+- [@feed@Explore top posts about SQL](https://app.daily.dev/tags/sql?ref=roadmapsh)

@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@official@Official Docs for Getting Started](https://nuxtjs.org/docs/get-started)
 - [@article@Mastering Nuxt.js](https://masteringnuxt.com/)
 - [@video@Vue.js for Beginners - Full Course at freeCodeCamp YouTube Channel](https://www.youtube.com/watch?v=FXpIoQ_rT_c)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

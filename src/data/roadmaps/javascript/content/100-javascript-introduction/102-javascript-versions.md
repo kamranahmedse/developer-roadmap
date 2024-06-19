@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@roadmap.sh@Brief History of JavaScript](https://roadmap.sh/guides/history-of-javascript)
 - [@article@What’s the difference between JavaScript and ECMAScript?](https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/)
 - [@article@JavaScript Version](https://www.w3schools.com/js/js_versions.asp)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

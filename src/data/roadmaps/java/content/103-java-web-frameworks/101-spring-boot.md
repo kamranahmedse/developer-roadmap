@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@article@Learn Spring Boot](https://www.baeldung.com/spring-boot)
 - [@video@Spring Boot Tutorial](https://youtu.be/vtPkZShrvXQ)
 - [@video@Spring Boot for Beginners](https://youtu.be/UfOxcrxhC0s)
+- [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

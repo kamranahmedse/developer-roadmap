@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@Complete SEO Course for Beginners](https://www.youtube.com/watch?v=xsVTqzratPs)
 - [@video@SEO Expert Course](https://www.youtube.com/watch?v=SnxeXZpZkI0)
 - [@article@Learning SEO](https://learningseo.io/)
+- [@feed@Explore top posts about SEO](https://app.daily.dev/tags/seo?ref=roadmapsh)

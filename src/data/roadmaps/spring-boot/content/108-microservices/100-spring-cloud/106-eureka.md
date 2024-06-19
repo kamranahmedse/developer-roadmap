@@ -9,3 +9,4 @@ For more resources, visit the following links:
 - [@article@Introduction to Spring Cloud Netflix – Eureka](https://www.baeldung.com/spring-cloud-netflix-eureka)
 - [@article@Spring Boot - Eureka Server](https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm)
 - [@video@Introducing Spring Cloud EUREKA](https://www.youtube.com/watch?v=1uNo1NrqsX4)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

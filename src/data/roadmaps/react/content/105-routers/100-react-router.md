@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@React Router v6 in 1 hour](https://youtu.be/0cSVuySEB0A)
 - [@article@How to use React Router v6](https://www.robinwieruch.de/react-router/)
 - [@article@React Router Cheat Sheet](https://devhints.io/react-router/)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

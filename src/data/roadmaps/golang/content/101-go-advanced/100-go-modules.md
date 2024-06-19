@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@official@How to create a module in Go](https://go.dev/doc/tutorial/create-module)
 - [@official@How to use modules in Go](https://go.dev/blog/using-go-modules)
 - [@article@How to modify existing projects to use Go modules](https://jfrog.com/blog/converting-projects-for-go-modules/)
+- [@feed@Explore top posts about Golang](https://app.daily.dev/tags/golang?ref=roadmapsh)

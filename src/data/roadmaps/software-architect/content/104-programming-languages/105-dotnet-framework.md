@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@article@C# Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
 - [@article@F# Documentation](https://learn.microsoft.com/en-us/dotnet/fsharp/?WT.mc_id=dotnet-35129-website)
 - [@article@Visual Basic Documentation](https://learn.microsoft.com/en-us/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website)
+- [@feed@Explore top posts about .NET](https://app.daily.dev/tags/.net?ref=roadmapsh)

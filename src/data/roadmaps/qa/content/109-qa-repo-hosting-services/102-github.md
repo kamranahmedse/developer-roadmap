@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [@video@Git and GitHub - CS50 Beyond 2019](https://www.youtube.com/watch?v=eulnSXkhE7I)
 - [@article@How to Use Git in a Professional Dev Team](https://ooloo.io/project/github-flow)
+- [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)

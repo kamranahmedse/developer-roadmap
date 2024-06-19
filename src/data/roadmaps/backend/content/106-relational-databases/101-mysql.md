@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@MySQL tutorial for beginners](https://www.youtube.com/watch?v=7S_tz1z_5bA)
 - [@article@MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
 - [@article@MySQL Tutorial](https://www.mysqltutorial.org/)
+- [@feed@Explore top posts about MySQL](https://app.daily.dev/tags/mysql?ref=roadmapsh)

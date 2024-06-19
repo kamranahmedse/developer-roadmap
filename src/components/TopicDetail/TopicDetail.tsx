@@ -24,7 +24,7 @@ import type {
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
 import { Ban, FileText, HeartHandshake, X } from 'lucide-react';
-import { getUrlParams } from '../../lib/browser';
+import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
@@ -49,6 +49,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
   video: 'bg-purple-300',
   website: 'bg-blue-300',
   official: 'bg-blue-600 text-white',
+  feed: "bg-[#ce3df3] text-white"
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -223,7 +224,7 @@ export function TopicDetail(props: TopicDetailProps) {
               // article at third
               // videos at fourth
               // rest at last
-              const order = ['official', 'opensource', 'article', 'video'];
+              const order = ['official', 'opensource', 'article', 'video', 'feed'];
               return order.indexOf(a.type) - order.indexOf(b.type);
             });
 
@@ -381,6 +382,18 @@ export function TopicDetail(props: TopicDetailProps) {
                           href={link.url}
                           target="_blank"
                           className="group font-medium text-gray-800 underline underline-offset-1 hover:text-black"
+                          onClick={() => {
+                            // if it is one of our roadmaps, we want to track the click
+                            if (canSubmitContribution) {
+                              const parsedUrl = parseUrl(link.url);
+
+                              window.fireEvent({
+                                category: 'TopicResourceClick',
+                                action: `Click: ${parsedUrl.hostname}`,
+                                label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
+                              });
+                            }
+                          }}
                         >
                           <span
                             className={cn(

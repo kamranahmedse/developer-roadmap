@@ -20,3 +20,4 @@ Visit the following resources to learn more:
 - [@article@SWA](https://www.staticapps.org/)
 - [@article@PWA](https://web.dev/progressive-web-apps/)
 - [@official@Jamstack](https://jamstack.org/)
+- [@feed@Explore top posts about JAMstack](https://app.daily.dev/tags/jamstack?ref=roadmapsh)

@@ -8,3 +8,4 @@ To learn more, visit the following links:
 
 - [@article@Working with Apache Kafka in ASP.NET](https://www.codemag.com/Article/2201061/Working-with-Apache-Kafka-in-ASP.NET-6-Core)
 - [@article@Kafka and .NET](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html)
+- [@feed@Explore top posts about Apache](https://app.daily.dev/tags/apache?ref=roadmapsh)

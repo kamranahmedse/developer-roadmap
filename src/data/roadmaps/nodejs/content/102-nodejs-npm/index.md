@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@article@Official Website](https://www.npmjs.com/)
 - [@article@Official Documentation](https://docs.npmjs.com/)
 - [@video@NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

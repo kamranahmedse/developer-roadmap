@@ -5,3 +5,4 @@ React Native is a popular choice for cross-platform application development, but
 - [@article@Flutter Official Website](https://flutter.dev/)
 - [@article@Ionic Official Website](https://ionicframework.com/)
 - [@article@Xamarin Official Website](https://dotnet.microsoft.com/apps/xamarin)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

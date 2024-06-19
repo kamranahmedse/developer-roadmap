@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Applying Basic vs. Advanced Monitoring Techniques](https://thenewstack.io/applying-basic-vs-advanced-monitoring-techniques/)
 - [@article@Why Legacy Apps Need Your Monitoring Love, Too](https://thenewstack.io/why-legacy-apps-need-your-monitoring-love-too/)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

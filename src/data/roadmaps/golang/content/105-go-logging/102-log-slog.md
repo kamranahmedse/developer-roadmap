@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Official Documentation: log/slog](https://pkg.go.dev/log/slog) `(since go 1.21)`
 - [@official@Go Blog: Structured Logging with slog](https://go.dev/blog/slog)
 - [@article@Go by Example: Logging](https://gobyexample.com/logging)
+- [@feed@Explore top posts about Logging](https://app.daily.dev/tags/logging?ref=roadmapsh)

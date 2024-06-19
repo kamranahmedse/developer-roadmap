@@ -9,3 +9,4 @@ For more information, visit the following links:
 - [@article@Getting started with ASP.NET Core and MySQL](https://dev.mysql.com/blog-archive/getting-started-with-asp-net-core-and-mysql-connectornet/)
 - [@article@MySql database connectivity with ASP.Net](https://www.c-sharpcorner.com/UploadFile/brij_mcn/mysql-database-connectivity-with-Asp-Net/)
 - [@video@How To Connect MySQL With ASP.NET](https://www.youtube.com/watch?v=g5rVd1JGbIg)
+- [@feed@Explore top posts about MySQL](https://app.daily.dev/tags/mysql?ref=roadmapsh)

@@ -20,13 +20,15 @@ To install Docker Desktop on your machine, follow these steps:
 - **Launch Docker Desktop**: Once the installation is complete, start Docker Desktop and sign in with your Docker Hub account. If you don't have an account, you can sign up for a free account on the [Docker Hub website](https://hub.docker.com/).
 - **Verify installation**: Open a terminal or command prompt and run the following command to verify that Docker Desktop has been installed correctly:
 
-   ```bash
-   docker --version
-   ```
-   If the installation was successful, the command should output the Docker version information.
+  ```bash
+  docker --version
+  ```
+
+  If the installation was successful, the command should output the Docker version information.
 
 Learn more from the following resources:
 
 - [@article@Docker Desktop Documentation](https://docs.docker.com/desktop/)
 - [@article@Docker Get Started Guide](https://docs.docker.com/get-started/)
 - [@article@Docker Hub](https://hub.docker.com/)
+- [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)

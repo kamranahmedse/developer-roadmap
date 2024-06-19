@@ -7,5 +7,6 @@ NoSQL stands for Not Only SQL. It's used for non-relational databases. A NoSQL d
 Visit the following resources to learn more:
 
 - [@video@SQL vs. NoSQL: Whats the difference?](https://www.youtube.com/watch?v=Q5aTUc7c4jg)
-- [@video@Database Design Tips | Choosing the Best Database in a System Design Interview](https://www.youtube.com/watch?v=cODCpXtPHbQ&t=22s)
+- [@video@Database Design Tips | Choosing the Best Database in a System Design Interview](https://www.youtube.com/watch?v=cODCpXtPHbQ\&t=22s)
 - [@video@NoSQL vs SQL – Which Type of Database Should You Use?](https://www.youtube.com/watch?v=FzlpwoeSrE0)
+- [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)

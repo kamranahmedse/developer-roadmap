@@ -8,3 +8,4 @@ Learn more from the following links:
 
 - [@article@What is Functional Programming?](https://www.codingdojo.com/blog/what-is-functional-programming)
 - [@video@Tutorial - Functional Programming?](https://www.youtube.com/watch?v=dAPL7MQGjyM)
+- [@feed@Explore top posts about Functional Programming](https://app.daily.dev/tags/functional-programming?ref=roadmapsh)

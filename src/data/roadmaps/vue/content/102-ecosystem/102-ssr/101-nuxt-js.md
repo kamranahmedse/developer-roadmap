@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Get Started with Nuxt](https://explorers.netlify.com/learn/get-started-with-nuxt)
 - [@article@Nuxt.js Fundamentals](https://vueschool.io/courses/nuxtjs-fundamentals)
 - [@official@Nuxt Examples](https://nuxt.com/docs/examples/essentials/hello-world)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

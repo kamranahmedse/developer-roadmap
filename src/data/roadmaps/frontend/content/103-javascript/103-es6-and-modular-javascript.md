@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@Build 15 JavaScript Projects - Vanilla JavaScript](https://www.youtube.com/watch?v=3PHXvlpOkf4)
 - [@article@Modern JavaScript ES6, ES7 & ES8](https://codeloop.org/learn-modern-javascript-es6-es7-es8)
 - [@article@Easy ES6 Goodies for Busy JavaScript Developers](https://thenewstack.io/fat-arrow-points-way-easy-es6-goodies-busy-js-devs/)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

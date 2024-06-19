@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@CS 61B Lecture 30: Sorting II](https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk)
 - [@article@CS 61B Lecture 32: Sorting III](https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc)
 - [@article@CS 61B Lecture 33: Sorting V](https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4)
+- [@feed@Explore top posts about Algorithms](https://app.daily.dev/tags/algorithms?ref=roadmapsh)

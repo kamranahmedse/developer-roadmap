@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Composition API FAQ](https://vuejs.org/guide/extras/composition-api-faq.html)
 - [@article@Composition API](https://vuejs.org/api/#composition-api)
 - [@article@Vue 3 Composition API](https://www.thisdot.co/blog/vue-3-composition-api-ref-and-reactive)
+- [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)

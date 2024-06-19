@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Getting Started with Smart Contract Fuzzing](https://www.immunebytes.com/blog/getting-started-with-smart-contract-fuzzing/)
 - [@article@Solidity smart contract Static Code Analysis](https://lightrains.com/blogs/solidity-static-analysis-tools/#static-code-analysis)
 - [@video@Smart contract Fuzzing](https://youtu.be/LRyyNzrqgOc)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@SQLite website](https://www.sqlite.org/index.html)
 - [@article@SQLite Tutorial](https://www.sqlitetutorial.net/)
+- [@feed@Explore top posts about SQLite](https://app.daily.dev/tags/sqlite?ref=roadmapsh)

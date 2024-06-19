@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@official@Selenium IDE Website](https://www.selenium.dev/selenium-ide/)
 - [@article@Selenium IDE Tutorial](https://www.softwaretestinghelp.com/selenium-ide-script-selenium-tutorial-3/)
+- [@feed@Explore top posts about Selenium](https://app.daily.dev/tags/selenium?ref=roadmapsh)

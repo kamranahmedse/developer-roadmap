@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Set up a K8s cluster](https://kubernetes.io/docs/home/#set-up-a-k8s-cluster)
 - [@video@Kubernetes | Cluster Setup](https://www.youtube.com/watch?v=z_w3me8tmJA)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

@@ -5,4 +5,5 @@ Object-oriented programming (OOP) is a programming paradigm that is based on the
 Learn more from the following links:
 
 - [@article@Discover Object Oriented Programming](https://opendsa.cs.vt.edu/ODSA/Books/Everything/html/IntroOO.html)
-- [@video@Software Development Tutorial - What is object-oriented language?s](https://www.youtube.com/watch?app=desktop&v=SS-9y0H3Si8)
+- [@video@Software Development Tutorial - What is object-oriented language?s](https://www.youtube.com/watch?app=desktop\&v=SS-9y0H3Si8)
+- [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

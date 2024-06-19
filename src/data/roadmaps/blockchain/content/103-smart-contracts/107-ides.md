@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Integrated Development Environments](https://ethereum.org/en/developers/docs/ides/)
 - [@article@Remix - Ethereum IDE & community](https://remix-project.org/)
+- [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)

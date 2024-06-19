@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Binance whitepaper](https://www.exodus.com/assets/docs/binance-coin-whitepaper.pdf)
 - [@official@BNB Chain overview](https://www.binance.com/en/blog/all/bnb-chain-blockchain-for-exchanging-the-world-304219301536473088)
+- [@feed@Explore top posts about Crypto](https://app.daily.dev/tags/crypto?ref=roadmapsh)

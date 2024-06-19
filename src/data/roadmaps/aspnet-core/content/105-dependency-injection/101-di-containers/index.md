@@ -9,3 +9,4 @@ For more information, visit the following links:
 - [@article@What is DI Container?](https://www.dotnettricks.com/learn/dependencyinjection/what-is-ioc-container-or-di-container)
 - [@article@Getting Started with DI Container](https://stackoverflow.com/questions/50718586/what-is-a-di-container)
 - [@article@How to Use DI Container?](https://learn.userfrosting.com/services/the-di-container)
+- [@feed@Explore top posts about Containers](https://app.daily.dev/tags/containers?ref=roadmapsh)

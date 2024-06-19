@@ -18,48 +18,48 @@ You can deploy a PostgreSQL application on Kubernetes by following these steps:
 
 - **Create a Deployment YAML file** - This file will define the deployment specification of your PostgreSQL application. It should specify the PostgreSQL container image, the number of replicas, and any other required settings like environment variables, secrets, and volumes:
 
-    ```
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: postgresql
-    spec:
-      replicas: 2
-      selector:
-        matchLabels:
+  ```
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: postgresql
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        app: postgresql
+    template:
+      metadata:
+        labels:
           app: postgresql
-      template:
-        metadata:
-          labels:
-            app: postgresql
-        spec:
-          containers:
-          - name: postgres
-            image: postgres:latest
-            env:
-            - name: POSTGRES_DB
-              value: mydb
-            - name: POSTGRES_USER
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-secret
-                  key: username
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-secret
-                  key: password
-            ports:
-            - containerPort: 5432
-              name: postgres
-            volumeMounts:
-            - name: postgres-data
-              mountPath: /var/lib/postgresql/data
-          volumes:
+      spec:
+        containers:
+        - name: postgres
+          image: postgres:latest
+          env:
+          - name: POSTGRES_DB
+            value: mydb
+          - name: POSTGRES_USER
+            valueFrom:
+              secretKeyRef:
+                name: postgres-secret
+                key: username
+          - name: POSTGRES_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: postgres-secret
+                key: password
+          ports:
+          - containerPort: 5432
+            name: postgres
+          volumeMounts:
           - name: postgres-data
-            persistentVolumeClaim:
-              claimName: postgres-pvc
-    ```
+            mountPath: /var/lib/postgresql/data
+        volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+  ```
 
 - **Create and apply the deployment in Kubernetes** - Run `kubectl apply -f deployment.yaml` to create the deployment in your Kubernetes cluster.
 
@@ -70,3 +70,4 @@ You can deploy a PostgreSQL application on Kubernetes by following these steps:
 By following these steps, you can successfully deploy and manage a PostgreSQL application using the Kubernetes deployment system.
 
 - [@article@Run PostgreSQL. The Kubernetes way](https://cloudnative-pg.io/)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

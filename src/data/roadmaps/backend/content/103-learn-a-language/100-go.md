@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@article@Making a RESTful JSON API in Go](https://thenewstack.io/make-a-restful-json-api-go/)
 - [@article@Go, the Programming Language of the Cloud](https://thenewstack.io/go-the-programming-language-of-the-cloud/)
 - [@video@Go Class by Matt](https://www.youtube.com/playlist?list=PLoILbKo9rG3skRCj37Kn5Zj803hhiuRK6)
+- [@feed@Explore top posts about Golang](https://app.daily.dev/tags/golang?ref=roadmapsh)

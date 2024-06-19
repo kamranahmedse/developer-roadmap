@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Server-Side Rendering (SSR)](https://vuejs.org/guide/scaling-up/ssr.html)
 - [@video@what is server side rendering?](https://www.youtube.com/watch?v=GQzn7XRdzxY)
 - [@video@What is server-side rendering for web development?](https://www.youtube.com/watch?v=okvg3MRAPs0)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

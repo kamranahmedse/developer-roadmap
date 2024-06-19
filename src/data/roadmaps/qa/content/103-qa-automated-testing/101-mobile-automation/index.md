@@ -5,3 +5,4 @@ Mobile automation, as the name suggests, refers to 'automation' that is done on 
 Visit the following resources to learn more:
 
 - [@article@Mobile Automation Testing Steps and Process](https://u-tor.com/topic/mobile-automation-steps)
+- [@feed@Explore top posts about Automation](https://app.daily.dev/tags/automation?ref=roadmapsh)

@@ -5,3 +5,4 @@ An API client is a set of tools and protocols that operate from an application o
 Visit the following resources to learn more:
 
 - [@article@API Clients](https://rapidapi.com/blog/api-glossary/client/)
+- [@feed@Explore top posts about Golang](https://app.daily.dev/tags/golang?ref=roadmapsh)

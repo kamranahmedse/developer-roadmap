@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 
 - [@article@Database design basics](https://support.microsoft.com/en-us/office/database-design-basics-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5)
 - [@video@Database Design Course](https://www.youtube.com/watch?v=ztHopE5Wnpc)
+- [@feed@Explore top posts about Database](https://app.daily.dev/tags/database?ref=roadmapsh)

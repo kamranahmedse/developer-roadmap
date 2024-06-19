@@ -6,3 +6,4 @@ Frameworks make the life of web developers easier by giving them a structure for
 Visit the following resources to learn more:
 
 - [@article@Pyscript: A Browser-Based Python Framework for the 99%](https://thenewstack.io/pyscript-a-browser-based-python-framework/)
+- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

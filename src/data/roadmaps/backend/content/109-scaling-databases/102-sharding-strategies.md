@@ -4,5 +4,6 @@ Sharding strategy is a technique to split a large dataset into smaller chunks (l
 
 Visit the following resources to learn more:
 
-- [@article@Wikipedia - Sharding in Database Architectures](https://en.wikipedia.org/wiki/Shard_(database_architecture))
+- [@article@Wikipedia - Sharding in Database Architectures](https://en.wikipedia.org/wiki/Shard_\(database_architecture\))
 - [@article@How sharding a database can make it faster](https://stackoverflow.blog/2022/03/14/how-sharding-a-database-can-make-it-faster/)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

@@ -12,6 +12,21 @@ export function getUrlParams() {
   return paramsObj;
 }
 
+export function parseUrl(url: string) {
+  const parser = document.createElement('a');
+  parser.href = url;
+
+  return {
+    protocol: parser.protocol,
+    hostname: parser.hostname,
+    port: parser.port,
+    pathname: parser.pathname,
+    search: parser.search,
+    hash: parser.hash,
+    host: parser.host,
+  };
+}
+
 export function deleteUrlParam(key: string) {
   if (typeof window === 'undefined') {
     return;

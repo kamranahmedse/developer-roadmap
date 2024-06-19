@@ -11,3 +11,4 @@ Monitoring might be able to help detect attacks on the system. For example, a la
 Visit the following to learn more:
 
 - [@article@Security Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#security-monitoring)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

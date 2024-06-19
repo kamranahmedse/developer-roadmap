@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@opensource@Protobuf Github](https://github.com/protocolbuffers/protobuf/)
 - [@article@Protobuf Doc](https://developers.google.com/protocol-buffers/)
 - [@article@Protobuf with Go](https://developers.google.com/protocol-buffers/docs/gotutorial/)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

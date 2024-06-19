@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Recoil Official Website](https://recoiljs.org/)
 - [@article@Official Documentation](https://recoiljs.org/docs/introduction/getting-started)
 - [@video@Learn the basics of Recoil.js](https://www.youtube.com/watch?v=BchtCWxs7sA)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Bitcoin blockchain transactions | Bitcoin Developer](https://developer.bitcoin.org/reference/transactions.html)
 - [@article@Ethereum blockchain transactions | ethereum.org](https://ethereum.org/en/developers/docs/transactions/)
 - [@course@Blockchain Basics | Coursera](https://www.coursera.org/lecture/blockchain-basics/basic-operations-OxILB)
+- [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)

@@ -15,3 +15,4 @@
 Visit the following resources to learn more:
 
 - [@article@Swift vs Objective-C](https://www.waldo.com/blog/swift-vs-objective-c)
+- [@feed@Explore top posts about C Programming](https://app.daily.dev/tags/c?ref=roadmapsh)

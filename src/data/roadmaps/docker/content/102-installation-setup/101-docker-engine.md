@@ -9,6 +9,7 @@ Docker Engine includes:
 
 Docker Engine can build container images, run containers from them, and generally do most things that Docker Desktop but is Linux only and doesn't provide all of the developer experience polish that Docker Desktop provides.
 
-For more information about docker engine see: 
+For more information about docker engine see:
 
 - [@article@Docker Engine - Docker Documentation](https://docs.docker.com/engine/)
+- [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)

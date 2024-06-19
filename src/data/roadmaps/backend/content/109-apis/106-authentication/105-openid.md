@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@OAuth vs OpenID](https://securew2.com/blog/oauth-vs-openid-which-is-better)
 - [@video@An Illustrated Guide to OAuth and OpenID Connect](https://www.youtube.com/watch?v=t18YB3xDfXI)
 - [@video@OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+- [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)

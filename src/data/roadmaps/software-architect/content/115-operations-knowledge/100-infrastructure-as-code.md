@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@Video introduction to infrastructure as code](https://www.youtube.com/watch?v=zWw2wuiKd5o)
 - [@article@GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code](https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/)
 - [@article@What is infrastructure as code](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)
+- [@feed@Explore top posts about Infrastructure](https://app.daily.dev/tags/infrastructure?ref=roadmapsh)

@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 
 - [@article@What is ETL?](https://www.snowflake.com/guides/what-etl)
 - [@video@ETL explained](https://www.youtube.com/watch?v=OW5OgsLpDCQ)
+- [@feed@Explore top posts about ETL](https://app.daily.dev/tags/etl?ref=roadmapsh)

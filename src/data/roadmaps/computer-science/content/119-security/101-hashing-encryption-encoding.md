@@ -9,3 +9,4 @@ Encoding is a two-way function that takes an input and produces an output. The o
 Visit the following resources to learn more:
 
 - [@video@Encoding, Encryption and Hashing -- Whats the Difference?](https://www.youtube.com/watch?v=-bAnBzvMLig)
+- [@feed@Explore top posts about Encryption](https://app.daily.dev/tags/encryption?ref=roadmapsh)

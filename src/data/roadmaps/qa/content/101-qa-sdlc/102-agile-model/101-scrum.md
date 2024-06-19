@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Scrum Testing Methodology Tutorial](https://www.guru99.com/scrum-testing-beginner-guide.html)
 - [@article@Scrum - What is, How it works](https://www.atlassian.com/agile/scrum)
+- [@feed@Explore top posts about Scrum](https://app.daily.dev/tags/scrum?ref=roadmapsh)

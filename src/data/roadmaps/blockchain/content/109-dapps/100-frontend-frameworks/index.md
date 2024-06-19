@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Web3 Frontend – Everything You Need to Learn About Building Dapp Frontends](https://moralis.io/web3-frontend-everything-you-need-to-learn-about-building-dapp-frontends/)
 - [@video@What is the difference between a framework and a library?](https://www.youtube.com/watch?v=D_MO9vIRBcA)
 - [@video@ Which JS Framework is best?](https://www.youtube.com/watch?v=cuHDQhDhvPE)
+- [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)

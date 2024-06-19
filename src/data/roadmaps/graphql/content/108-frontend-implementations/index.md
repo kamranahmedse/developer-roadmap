@@ -7,3 +7,4 @@ When using GraphQL on the frontend, developers can use a GraphQL client library,
 Learn more from the following links:
 
 - [@article@Guide to GraphQL for Front-End Developers](https://www.howtographql.com/react-apollo/0-introduction/)
+- [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)

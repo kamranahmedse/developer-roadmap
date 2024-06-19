@@ -8,3 +8,4 @@ Learn more from the following links:
 - [@video@Kubernetes Security - Security Context for a Pod or Container](https://www.youtube.com/watch?v=i8wfvoVf2xs)
 - [@article@Tutorial: Create a Kubernetes Pod Security Policy](https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/)
 - [@article@6 Overlooked Yet Important Kubernetes Features to Secure](https://thenewstack.io/6-overlooked-yet-important-kubernetes-features-to-secure/)
+- [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

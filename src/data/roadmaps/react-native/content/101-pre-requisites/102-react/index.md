@@ -10,3 +10,4 @@ React Native uses React, a JavaScript library for building user interfaces. You 
 Once you have a basic understanding of React, start with React Native.
 
 - [@article@React Native Basics](https://reactnative.dev/docs/getting-started)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

@@ -5,3 +5,4 @@ The security of cryptographic systems depends on some secret data that is known 
 Visit the following resources to learn more:
 
 - [@article@Smart Contract Randomness or ReplicatedLogic Attack](https://blog.finxter.com/randomness-or-replicatedlogic-attack-on-smart-contracts/)
+- [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

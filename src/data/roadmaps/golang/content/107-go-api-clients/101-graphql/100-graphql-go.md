@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Graphql-go documentation](https://pkg.go.dev/github.com/graphql-go/graphql)
 - [@opensource@Github Repository](https://github.com/graphql-go/graphql)
 - [@video@GraphQL-Go - Golang Tutorial (by TechPractice on YouTube)](https://www.youtube.com/watch?v=YK7BQfQ84ws)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

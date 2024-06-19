@@ -1,10 +1,10 @@
-#  What is C++?
+# What is C++?
 
 C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language. It was first introduced in 1985 and provides object-oriented features like classes and inheritance. C++ is widely used in various applications like game development, system programming, embedded systems, and high-performance computing.
 
 C++ is a statically-typed language, meaning that the type of a variable is determined during compilation, and has an extensive library called the C++ Standard Library, which provides a rich set of functions, algorithms, and data structures for various tasks.
 
-C++ builds upon the features of C, and thus, most C programs can be compiled and run with a C++ compiler. 
+C++ builds upon the features of C, and thus, most C programs can be compiled and run with a C++ compiler.
 
 ## Code Example
 
@@ -48,3 +48,4 @@ In the above program, we define a simple function `add` and a class `Calculator`
 - [@video@C++ Tutorial for Beginners - Full Course](https://youtu.be/vLnPwxZdW4Y)
 - [@article@w3schools C++ tutorial](https://www.w3schools.com/cpp/)
 - [@article@Learn C++](https://www.learncpp.com/)
+- [@feed@Explore top posts about C++](https://app.daily.dev/tags/c++?ref=roadmapsh)

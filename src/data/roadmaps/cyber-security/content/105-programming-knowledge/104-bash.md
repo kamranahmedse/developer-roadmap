@@ -36,5 +36,6 @@ Some resources to begin your journey with Bash are:
 - [@article@Bash Beginner's Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/): A beginner-friendly guide that covers the basics of Bash scripting.
 - [@official@Bash Academy](https://www.bash.academy/): An interactive platform to start learning Bash from scratch.
 - [@article@Learn Shell](https://www.learnshell.org/): An online resource with tutorials and exercises to help you practice your Bash skills.
+- [@feed@Explore top posts about Bash](https://app.daily.dev/tags/bash?ref=roadmapsh)
 
 Bash scripting is a versatile tool in the cybersecurity toolkit, and mastering it will provide you with greater control over the systems you protect.

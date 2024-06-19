@@ -35,3 +35,4 @@ By understanding Linux's features and best practices, you can leverage its power
 - [@article@Learn Linux](https://linuxjourney.com/)
 - [@video@Introduction to Linux](https://youtu.be/sWbUDq4S6Y8)
 - [@article@Linux Commands Cheat Sheet](https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheat-Sheet.pdf?_ga=2.100546909.2114439087.1713515209-1230351550.1713515209)
+- [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)

@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 
 - [@official@Chef Website](https://www.chef.io/products/chef-infra)
 - [@article@Chef Tutorial](https://www.tutorialspoint.com/chef/index.htm)
+- [@feed@Explore top posts about Chef](https://app.daily.dev/tags/chef?ref=roadmapsh)

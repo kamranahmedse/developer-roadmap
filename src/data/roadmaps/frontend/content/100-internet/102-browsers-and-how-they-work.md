@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Role of Rendering Engine in Browsers](https://www.browserstack.com/guide/browser-rendering-engine)
 - [@article@Populating the Page: How Browsers Work](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work)
 - [@video@How Do Web Browsers Work?](https://www.youtube.com/watch?v=WjDrMKZWCt0)
+- [@feed@Explore top posts about Browsers](https://app.daily.dev/tags/browsers?ref=roadmapsh)

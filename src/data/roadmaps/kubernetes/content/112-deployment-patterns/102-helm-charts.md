@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Helm Docs](https://helm.sh/docs/)
 - [@video@What is Helm in Kubernetes? Helm and Helm Charts explained](https://www.youtube.com/watch?v=-ykwb1d0DXU)
+- [@feed@Explore top posts about Helm](https://app.daily.dev/tags/helm?ref=roadmapsh)
