@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Elasticsearch Website](https://www.elastic.co/elasticsearch/)
 - [@official@Elasticsearch Documentation](https://www.elastic.co/guide/index.html)
+- [@feed@Explore top posts about ELK](https://app.daily.dev/tags/elk?ref=roadmapsh)

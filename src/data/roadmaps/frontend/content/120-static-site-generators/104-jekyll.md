@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Jekyll Website](https://jekyllrb.com/)
 - [@article@Jekyll Docs](https://jekyllrb.com/docs/)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

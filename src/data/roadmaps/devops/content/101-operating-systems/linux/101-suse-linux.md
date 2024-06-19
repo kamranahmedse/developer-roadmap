@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@openSUSE Linux Website](https://www.opensuse.org/)
 - [@article@openSUSE Documentation](https://en.opensuse.org/Main_Page)
 - [@article@Unofficial openSUSE Getting Started Guide](https://opensuse-guide.org/)
+- [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)

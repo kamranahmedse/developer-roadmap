@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@official@Learn Node.js Official Website](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [@article@Node.JS Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
 - [@video@Node.js and Express.js Full Course](https://www.youtube.com/watch?v=Oe421EPjeBE)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

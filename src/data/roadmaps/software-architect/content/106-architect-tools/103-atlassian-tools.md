@@ -47,3 +47,4 @@ Visit the following resources to learn more:
 - [@official@Opsgenie](https://www.atlassian.com/software/opsgenie)
 - [@official@Advanced Roadmaps for Jira](https://www.atlassian.com/software/jira/features/roadmaps)
 - [@official@Jira Align](https://www.atlassian.com/software/jira/align)
+- [@feed@Explore top posts about Atlassian](https://app.daily.dev/tags/atlassian?ref=roadmapsh)

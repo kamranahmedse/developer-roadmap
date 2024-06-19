@@ -9,3 +9,4 @@ This problem typically occurs when an application is developed as monolithic pie
 To learn more about this and how to fix this pattern, visit the following link:
 
 - [@article@Busy Front End antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/)
+- [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)

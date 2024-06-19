@@ -7,3 +7,4 @@ Visit the following resources to learn more about AWS, Azure, and GCP:
 - [@roadmap.sh@AWS Roadmap](https://roadmap.sh/aws)
 - [@article@Azure Tutorials](https://docs.microsoft.com/en-us/learn/azure/)
 - [@article@GCP Learning Resources](https://cloud.google.com/training)
+- [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)

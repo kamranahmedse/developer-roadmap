@@ -10,3 +10,4 @@ Learn more from the following links:
 
 - [@article@SQL vs NoSQL: The Differences](https://www.sitepoint.com/sql-vs-nosql-differences/)
 - [@article@SQL vs NoSQL - When to Use Each](https://www.ibm.com/cloud/blog/sql-vs-nosql)
+- [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)

@@ -8,3 +8,4 @@ Visit the following resources for more information:
 
 - [@article@Structured Logging and Logs Management in ASP.NET](https://medium.com/@stavsofer/structured-logging-and-logs-management-asp-net-core-serilog-seq-61109f740696)
 - [@article@ASP.NET Logging Basics](https://www.loggly.com/ultimate-guide/net-logging-basics/)
+- [@feed@Explore top posts about Logging](https://app.daily.dev/tags/logging?ref=roadmapsh)

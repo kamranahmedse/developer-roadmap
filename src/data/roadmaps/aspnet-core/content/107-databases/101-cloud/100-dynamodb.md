@@ -8,3 +8,4 @@ For more information, visit the following links:
 
 - [@article@Getting started with DynamoDB](https://aws.amazon.com/dynamodb/)
 - [@article@Introduction to DynamoDB](https://cloudacademy.com/lab/introduction-dynamodb/)
+- [@feed@Explore top posts about AWS DynamoDB](https://app.daily.dev/tags/aws-dynamodb?ref=roadmapsh)

@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@InfluxDB Website](https://www.influxdata.com/)
 - [@article@Time series database](https://www.influxdata.com/time-series-database/)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

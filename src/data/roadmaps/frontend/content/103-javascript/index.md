@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
 - [@article@Build 30 Javascript projects in 30 days](https://javascript30.com/)
 - [@opensource@Learn the basics of JavaScript](https://github.com/workshopper/javascripting)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

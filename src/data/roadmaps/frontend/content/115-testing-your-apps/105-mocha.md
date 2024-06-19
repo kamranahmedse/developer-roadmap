@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Official Website and Docs](https://mochajs.org/)
 - [@video@Testing Node.js with Mocha](https://www.youtube.com/watch?v=Bs68k6xfR3E)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

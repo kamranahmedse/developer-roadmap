@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@A Primer: Continuous Integration and Continuous Delivery (CI/CD)](https://thenewstack.io/a-primer-continuous-integration-and-continuous-delivery-ci-cd/)
 - [@article@3 Ways to Use Automation in CI/CD Pipelines](https://thenewstack.io/3-ways-to-use-automation-in-ci-cd-pipelines/)
 - [@article@Articles about CI/CD](https://thenewstack.io/category/ci-cd/)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

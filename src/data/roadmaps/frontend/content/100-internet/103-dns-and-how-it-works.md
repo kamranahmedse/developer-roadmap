@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@DNS Records](https://www.youtube.com/watch?v=7lxgpKh_fRY)
 - [@video@When to add glue records to DNS settings](https://www.youtube.com/watch?v=e48AyJOA9W8)
 - [@video@DNS Records for Newbies - How To Manage Website Records](https://www.youtube.com/watch?v=YV5tkQYcvfg)
+- [@feed@Explore top posts about DNS](https://app.daily.dev/tags/dns?ref=roadmapsh)

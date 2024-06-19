@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@video@System Design 101](https://www.youtube.com/watch?v=Y-Gl4HEyeUQ)
 - [@video@Scaling the Unscalable](https://www.youtube.com/watch?v=a2rcgzludDU)
 - [@video@System design interview: Scale to 1 million users](https://www.youtube.com/watch?v=YkGHxOg9d3M)
+- [@feed@Explore top posts about Career](https://app.daily.dev/tags/career?ref=roadmapsh)

@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 
 - [@article@Domain-Driven Design](https://redis.com/glossary/domain-driven-design-ddd/)
 - [@article@Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
+- [@feed@Explore top posts about Domain-Driven Design](https://app.daily.dev/tags/domain-driven-design?ref=roadmapsh)

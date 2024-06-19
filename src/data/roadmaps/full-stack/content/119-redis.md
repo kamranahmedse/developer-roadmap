@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Redis Website](https://redis.io/)
 - [@video@Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
 - [@video@Redis Caching in Node.js](https://www.youtube.com/watch?v=oaJq1mQ3dFI)
+- [@feed@Explore top posts about Redis](https://app.daily.dev/tags/redis?ref=roadmapsh)

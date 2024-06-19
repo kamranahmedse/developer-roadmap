@@ -9,3 +9,4 @@ Some popular KV databases include Redis, Memcached, and LevelDB. These databases
 Visit the following resources to learn more:
 
 - [@article@Key-Value Databases - Wikipedia](https://en.wikipedia.org/wiki/Key-value_database)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

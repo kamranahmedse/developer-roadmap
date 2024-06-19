@@ -4,4 +4,5 @@ Cloud Functions for Firebase is a serverless computing platform that simplifies 
 
 Learn more from the following links:
 
-- [@video@Getting Started with Firebase Cloud Functions](https://youtube.com/playlist?list=PLl-K7zZEsYLkPZHe41m4jfAxUi0JjLgSM&si=yx0EwIXxhG2PHRXp)
+- [@video@Getting Started with Firebase Cloud Functions](https://youtube.com/playlist?list=PLl-K7zZEsYLkPZHe41m4jfAxUi0JjLgSM\&si=yx0EwIXxhG2PHRXp)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

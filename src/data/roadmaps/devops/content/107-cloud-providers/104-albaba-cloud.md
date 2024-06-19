@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Alibaba Cloud Website](https://www.alibabacloud.com/)
 - [@article@Official Documentation](https://www.alibabacloud.com/help/en/)
 - [@article@Alibaba Cloud Getting Started Guide](https://www.alibabacloud.com/getting-started)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

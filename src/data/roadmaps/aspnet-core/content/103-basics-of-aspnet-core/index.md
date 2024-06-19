@@ -7,3 +7,4 @@ For more information, visit the following resources:
 - [@article@ASP.NET documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0)
 - [@article@ASP.NET Core Tutorial](https://www.tutorialspoint.com/asp.net_core/index.htm)
 - [@article@Learn ASP.NET Core from Scratch](https://www.tutorialsteacher.com/core)
+- [@feed@Explore top posts about ASP.NET](https://app.daily.dev/tags/aspnet?ref=roadmapsh)

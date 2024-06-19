@@ -49,6 +49,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
   video: 'bg-purple-300',
   website: 'bg-blue-300',
   official: 'bg-blue-600 text-white',
+  feed: "bg-[#ce3df3] text-white"
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -223,7 +224,7 @@ export function TopicDetail(props: TopicDetailProps) {
               // article at third
               // videos at fourth
               // rest at last
-              const order = ['official', 'opensource', 'article', 'video'];
+              const order = ['official', 'opensource', 'article', 'video', 'feed'];
               return order.indexOf(a.type) - order.indexOf(b.type);
             });
 

@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce)
 - [@video@Hadoop explained in 5 minutes](https://www.youtube.com/watch?v=aReuLtY0YMI)
+- [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)

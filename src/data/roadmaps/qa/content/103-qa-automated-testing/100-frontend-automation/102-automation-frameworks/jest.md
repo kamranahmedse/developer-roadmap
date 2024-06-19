@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Official Website](https://jestjs.io/)
 - [@article@Official Documentation](https://jestjs.io/docs/getting-started)
 - [@video@Jest Crash Course - Unit Testing in JavaScript](https://www.youtube.com/watch?v=7r4xVDI2vho)
+- [@feed@Explore top posts about Jest](https://app.daily.dev/tags/jest?ref=roadmapsh)

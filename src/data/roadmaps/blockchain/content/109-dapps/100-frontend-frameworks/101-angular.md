@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Angular Roadmap](/angular)
 - [@official@Official - Getting started with Angular](https://angular.io/start)
+- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

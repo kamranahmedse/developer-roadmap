@@ -7,3 +7,4 @@ In Node.js, you need to restart the process to make changes take effect. This ad
 Visit the following resources to learn more:
 
 - [@article@How To Restart Your Node.js Apps Automatically with nodemon](https://www.digitalocean.com/community/tutorials/workflow-nodemon)
+- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

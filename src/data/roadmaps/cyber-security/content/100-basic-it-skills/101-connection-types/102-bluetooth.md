@@ -18,3 +18,4 @@ In conclusion, Bluetooth offers a convenient means of connecting devices wireles
 
 - [@article@Bluetooth security risks to know (and how to avoid them)](https://us.norton.com/blog/mobile/bluetooth-security)
 - [@official@Bluetooth security best practices from official website](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/)
+- [@feed@Explore top posts about Bluetooth](https://app.daily.dev/tags/bluetooth?ref=roadmapsh)

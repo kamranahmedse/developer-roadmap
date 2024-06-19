@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@official@Solana Whitepaper](https://solana.com/solana-whitepaper.pdf)
 - [@article@Solana Architecture](https://docs.solana.com/cluster/overview)
 - [@article@Start Building Solana!](https://beta.solpg.io/?utm_source=solana.com)
+- [@feed@Explore top posts about Solana](https://app.daily.dev/tags/solana?ref=roadmapsh)

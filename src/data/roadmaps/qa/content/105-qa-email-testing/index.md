@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@About Email Testing](https://www.campaignmonitor.com/blog/email-marketing/how-email-testing-and-rendering-works-and-why-its-important/)
 - [@article@Checklist: How to Test and QA an Email](https://sponge.io/checklist-how-to-test-and-qa-an-email/)
+- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)

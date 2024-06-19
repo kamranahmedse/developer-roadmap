@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Agile Methodology: What is Agile Model in Software Testing?](https://www.guru99.com/agile-scrum-extreme-testing.html)
 - [@article@Agile Model](https://www.javatpoint.com/software-engineering-agile-model)
 - [@article@Manifesto for Agile Software Development](https://agilemanifesto.org/)
+- [@feed@Explore top posts about Agile](https://app.daily.dev/tags/agile?ref=roadmapsh)

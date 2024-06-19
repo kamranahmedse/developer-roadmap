@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@W3Schools: Learn CSS](https://www.w3schools.com/css/)
 - [@article@W3Schools: JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@Articles about Frontend Development](https://thenewstack.io/category/frontend-dev/)
+- [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)

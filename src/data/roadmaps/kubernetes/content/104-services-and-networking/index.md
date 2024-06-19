@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Service - Documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [@official@The Kubernetes Network Model](https://kubernetes.io/docs/concepts/services-networking/#the-kubernetes-network-model)
+- [@feed@Explore top posts about Networking](https://app.daily.dev/tags/networking?ref=roadmapsh)

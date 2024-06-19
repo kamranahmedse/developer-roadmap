@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@official@Official Docs](https://www.elastic.co/guide/index.html)
 - [@official@Elastic Stack features](https://www.elastic.co/elastic-stack/features)
 - [@article@Logstash vs Fluentd](https://logz.io/blog/fluentd-logstash/)
+- [@feed@Explore top posts about ELK](https://app.daily.dev/tags/elk?ref=roadmapsh)

@@ -28,3 +28,4 @@ Some common methods employed in DDoS attacks include:
 In conclusion, both DoS and DDoS attacks aim to disrupt the availability of a target system by overwhelming its resources. However, their key differences lie in the scale and complexity of the attack, with DDoS attacks being more powerful and more challenging to defend against. It is crucial for organizations to implement robust security measures to detect and mitigate these attacks to maintain the availability and integrity of their systems.
 
 - [@video@DDOS Attack](https://www.youtube.com/watch?v=PTJ6UZz1pPQ)
+- [@feed@Explore top posts about Cybersecurity](https://app.daily.dev/tags/cyber?ref=roadmapsh)

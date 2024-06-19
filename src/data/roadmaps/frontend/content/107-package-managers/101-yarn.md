@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 - [@article@Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)
 - [@video@Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
+- [@feed@Explore top posts about Yarn](https://app.daily.dev/tags/yarn?ref=roadmapsh)

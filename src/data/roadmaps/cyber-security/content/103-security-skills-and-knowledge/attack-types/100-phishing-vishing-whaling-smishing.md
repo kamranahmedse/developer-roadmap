@@ -50,3 +50,4 @@ By staying informed about these various attack types, you can better protect you
 
 - [@official@What is Phishing?](https://www.phishing.org/what-is-phishing)
 - [@official@Phishing Examples](https://www.phishing.org/phishing-examples)
+- [@feed@Explore top posts about Phishing](https://app.daily.dev/tags/phishing?ref=roadmapsh)

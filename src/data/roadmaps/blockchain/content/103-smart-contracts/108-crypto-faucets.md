@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@What Is A Crypto Faucet?](https://academy.binance.com/en/articles/what-is-a-crypto-faucet)
 - [@article@What are crypto faucets and how do they work?](https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work)
+- [@feed@Explore top posts about Crypto](https://app.daily.dev/tags/crypto?ref=roadmapsh)

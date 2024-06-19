@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Serverless](https://www.ibm.com/cloud/learn/serverless)
 - [@article@AWS Services](https://aws.amazon.com/serverless/)
-- [@video@Serverless Computing in 100 Seconds](https://www.youtube.com/watch?v=W_VV2Fx32_Y&ab_channel=Fireship)
+- [@video@Serverless Computing in 100 Seconds](https://www.youtube.com/watch?v=W_VV2Fx32_Y\&ab_channel=Fireship)
+- [@feed@Explore top posts about Serverless](https://app.daily.dev/tags/serverless?ref=roadmapsh)

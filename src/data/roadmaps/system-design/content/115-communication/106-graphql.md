@@ -6,3 +6,4 @@ To learn more, visit the following links:
 
 - [@article@GraphQL Server](https://www.howtographql.com/basics/3-big-picture/)
 - [@article@What is GraphQL?](https://www.redhat.com/en/topics/api/what-is-graphql)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

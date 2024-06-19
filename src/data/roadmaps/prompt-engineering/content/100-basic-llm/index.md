@@ -5,3 +5,4 @@ LLM stands for "Large Language Model." These are advanced AI systems designed to
 Visit the following resources to learn more about LLMs.
 
 - [@roadmap.sh@Introduction to LLMs](https://roadmap.sh/guides/introduction-to-llms)
+- [@feed@Explore top posts about LLM](https://app.daily.dev/tags/llm?ref=roadmapsh)

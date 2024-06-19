@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
 - [@article@W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

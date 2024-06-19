@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Learn postman](https://learning.postman.com/docs/getting-started/introduction/)
 - [@video@API testing with postman](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
 - [@article@ Newman cli usage](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+- [@feed@Explore top posts about Postman](https://app.daily.dev/tags/postman?ref=roadmapsh)

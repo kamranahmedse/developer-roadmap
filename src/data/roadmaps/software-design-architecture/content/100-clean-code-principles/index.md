@@ -16,3 +16,4 @@ Clean code is code that is easy to read, understand, and maintain. It follows a 
 Learn more from the following links:
 
 - [@article@Introduction to Clean Code & Software Design Principles](https://workat.tech/machine-coding/tutorial/introduction-clean-code-software-design-principles-nwu4qqc63e09)
+- [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

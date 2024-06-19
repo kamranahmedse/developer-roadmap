@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Go by Example: Testing](https://gobyexample.com/testing)
 - [@article@YourBasic Go: Table-driven unit tests](https://yourbasic.org/golang/table-driven-unit-test/)
 - [@article@Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests/)
+- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Spark Java](https://sparkjava.com/)
 - [@article@Intro to Spark Java Framework](https://www.baeldung.com/spark-framework-rest-api)
 - [@article@What is Spark java?](https://www.javatpoint.com/spark-java)
+- [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)

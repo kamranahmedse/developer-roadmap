@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [@article@DigitalOcean - An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 - [@video@What is OAuth really all about](https://www.youtube.com/watch?v=t4-416mg6iU)
 - [@video@OAuth 2.0: An Overview](https://www.youtube.com/watch?v=CPbvxxslDTU)
+- [@feed@Explore top posts about OAuth](https://app.daily.dev/tags/oauth?ref=roadmapsh)

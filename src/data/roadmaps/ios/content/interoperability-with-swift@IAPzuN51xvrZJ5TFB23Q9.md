@@ -15,3 +15,4 @@ Swift is designed to work seamlessly with Objective-C, allowing developers to in
 Visit the following resources to learn more:
 
 - [@video@Bridging Swift And Objective C](https://www.youtube.com/watch?v=Wp_-8tE85hE)
+- [@feed@Explore top posts about Swift](https://app.daily.dev/tags/swift?ref=roadmapsh)

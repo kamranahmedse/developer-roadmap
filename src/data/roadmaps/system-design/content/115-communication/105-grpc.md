@@ -5,3 +5,4 @@ gRPC is a high-performance, open-source framework for building remote procedure 
 Learn more from the following links:
 
 - [@article@What Is gRPC?](https://www.wallarm.com/what/the-concept-of-grpc)
+- [@feed@Explore top posts about gRPC](https://app.daily.dev/tags/grpc?ref=roadmapsh)

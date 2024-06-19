@@ -28,3 +28,4 @@ Hack The Box is an excellent resource for anyone looking to enhance their cybers
 
 - [@official@HackTheBox website](https://www.hackthebox.com/)
 - [@article@HTB Academy ](https://academy.hackthebox.com/)
+- [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

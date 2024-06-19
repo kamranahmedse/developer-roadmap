@@ -35,3 +35,4 @@ The SANs Holiday Hack Challenge is a valuable experience for people with an inte
 In conclusion, the SANs Holiday Hack Challenge offers a unique opportunity to develop your cybersecurity skills in a fun and challenging environment. Whether you are new to the field or an industry veteran, participating in this event will help you grow professionally and make valuable connections in the cybersecurity community. Don't miss the next SANs Holiday Hack Challenge!
 
 - [@official@SANS Holiday Hack Challenge](https://www.sans.org/holidayhack)
+- [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

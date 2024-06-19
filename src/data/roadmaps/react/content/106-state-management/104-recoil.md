@@ -16,3 +16,4 @@ Recoil is often used as an alternative to other state management libraries, such
 Visit the following resources to learn more:
 
 - [@article@Recoil - Official Website](https://recoiljs.org/)
+- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

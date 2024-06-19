@@ -23,6 +23,7 @@ Common methods of implementing authorization include:
 - [@article@Role-based access control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
 - [@article@Access Control Lists (ACLs)](https://en.wikipedia.org/wiki/Access-control_list)
 - [@article@Attribute-based access control (ABAC)](https://en.wikipedia.org/wiki/Attribute-based_access_control)
+- [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)
 
 In a nutshell, authorization answers the question, _"What are you allowed to do?"_
 

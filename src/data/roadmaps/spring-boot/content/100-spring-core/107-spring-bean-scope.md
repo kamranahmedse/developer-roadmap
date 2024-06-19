@@ -20,3 +20,4 @@ Visit the following links for more resources:
 - [@article@Spring - Bean Scopes](https://www.tutorialspoint.com/spring/spring_bean_scopes.htm)
 - [@article@Quick Guide to Spring Bean Scopes](https://www.baeldung.com/spring-bean-scopes)
 - [@article@Spring Bean Scopes](https://www.digitalocean.com/community/tutorials/spring-bean-scopes)
+- [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

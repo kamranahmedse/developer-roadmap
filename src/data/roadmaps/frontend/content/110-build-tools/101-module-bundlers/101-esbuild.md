@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Esbuild Documentation](https://esbuild.github.io/api/)
 - [@video@Why are People Obsessed with esbuild?](https://www.youtube.com/watch?v=9XS_RA6zyyU)
 - [@video@What Is ESBuild?](https://www.youtube.com/watch?v=ZY8Vu8cbWF0)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

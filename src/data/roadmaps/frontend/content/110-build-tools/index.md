@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
 - [@article@Vite Next Generation Frontend Tooling](https://vitejs.dev)
 - [@article@Parcel is a zero configuration build tool for the web](https://parceljs.org/)
+- [@feed@Explore top posts about Tools](https://app.daily.dev/tags/tools?ref=roadmapsh)

@@ -1,6 +1,7 @@
 # Why use TypeScript
 
 TypeScript extends JavaScript, providing a better developer experience. The benefits of using TypeScript over JavaScript include:
+
 - **Static typing** – TypeScript comes with optional static typing and a type inference system, which means that a variable declared with no type may be inferred by TypeScript based on its value.
 - **Object-oriented programming** – TypeScript supports object-oriented programming concepts like classes, inheritance, etc.
 - **Compile time checks** – JavaScript is an interpreted programming language. There is no compilation involved. Hence, the errors get caught during the runtime. Since TypeScript compiles into JavaScript, errors get reported during the compile time rather than the runtime.
@@ -11,3 +12,4 @@ Visit the following resources to learn more:
 
 - [@article@linguinecode - Reasons to use TypeScript](https://linguinecode.com/post/5-reasons-why-to-use-typescript)
 - [@article@Codemotion - Reasons to use TypeScript](https://www.codemotion.com/magazine/backend/why-you-should-use-typescript-for-your-next-project/)
+- [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

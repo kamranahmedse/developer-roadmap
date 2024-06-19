@@ -14,6 +14,7 @@ Now that you know the basics of AWS, you should be able to deploy your applicati
 - Setup HTTPs using [certbot](https://roadmap.sh/guides/setup-and-auto-renew-ssl-certificates)
 - And voilla! You have deployed your application to AWS!
 
-If you get stuck, here is a video that shows how to deploy a Node.js application to AWS EC2: 
+If you get stuck, here is a video that shows how to deploy a Node.js application to AWS EC2:
 
 - [@video@Deploy Node App on AWS EC2](https://youtu.be/oHAQ3TzUTro)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

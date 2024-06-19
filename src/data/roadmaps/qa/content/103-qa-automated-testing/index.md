@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@What is Automated Testing?](https://www.atlassian.com/continuous-delivery/software-testing/automated-testing)
 - [@article@Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
 - [@article@Learning Path with different programming language](https://testautomationu.applitools.com/learningpaths.html)
+- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)

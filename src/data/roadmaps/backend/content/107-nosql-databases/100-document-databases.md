@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@article@Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
 - [@article@Dynamo DB Docs](https://docs.aws.amazon.com/dynamodb/index.html)
 - [@article@Official Developers Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+- [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Ruby Website](https://www.ruby-lang.org/en/)
 - [@article@Learn Ruby in 20 minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
+- [@feed@Explore top posts about Ruby](https://app.daily.dev/tags/ruby?ref=roadmapsh)

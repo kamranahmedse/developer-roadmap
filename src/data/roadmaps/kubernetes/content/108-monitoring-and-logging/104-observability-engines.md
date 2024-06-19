@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Kubernetes Observability 101: Tools, Best Practices, And More](https://www.cloudzero.com/blog/kubernetes-observability)
 - [@article@Kubernetes Observability in KubeSphere](https://kubesphere.io/observability/)
+- [@feed@Explore top posts about Observability](https://app.daily.dev/tags/observability?ref=roadmapsh)

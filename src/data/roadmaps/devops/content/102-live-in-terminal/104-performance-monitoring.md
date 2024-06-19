@@ -11,11 +11,9 @@ Nmon is a fully interactive performance monitoring command-line utility tool for
 
 - [@article@nmon Documentation](https://www.ibm.com/docs/en/aix/7.2?topic=n-nmon-command)
 
-
 The iostat command in Linux is used for monitoring system input/output statistics for devices and partitions. It monitors system input/output by observing the time the devices are active in relation to their average transfer rates. The iostat produce reports may be used to change the system configuration to raised balance the input/output between the physical disks.
 
 - [@article@iostat Documentation](https://man7.org/linux/man-pages/man1/iostat.1.html)
-
 
 Short for **S**ystem **A**ctivity **R**eport, `sar` is a command line tool for Unix and Unix-like operating systems that shows a report of different information about the usage and activity of resources in the operating system.
 
@@ -28,3 +26,4 @@ Short for **V**irtual **m**emory **stat**istic reporter, `vmstat` is a command l
 - [@article@Linux commands: exploring virtual memory with vmstat](https://www.redhat.com/sysadmin/linux-commands-vmstat)
 - [@article@VMstat Man Page](https://man7.org/linux/man-pages/man8/vmstat.8.html)
 - [@article@vmstat tutorial](https://phoenixnap.com/kb/vmstat-command)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Modules, introduction](https://javascript.info/modules-intro)
 - [@article@Export and Import](https://javascript.info/import-export)
 - [@article@Dynamic imports](https://javascript.info/modules-dynamic-imports)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

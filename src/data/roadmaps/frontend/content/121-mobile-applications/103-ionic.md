@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Official Website](https://ionicframework.com/)
 - [@article@Official Getting Started to Ionic framework](https://ionicframework.com/docs/)
 - [@video@Ionic Framework 4 - Full Tutorial](https://www.youtube.com/watch?v=AvbuIRg8_Jg)
+- [@feed@Explore top posts about Ionic](https://app.daily.dev/tags/ionic?ref=roadmapsh)

@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
 - [@article@GraphQL Tutorials](https://odyssey.apollographql.com/)
 - [@video@GraphQL Course for Beginners](https://www.youtube.com/watch?v=ed8SzALpx1Q)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

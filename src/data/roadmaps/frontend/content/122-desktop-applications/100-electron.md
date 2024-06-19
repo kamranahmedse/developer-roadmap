@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Electron Website](https://www.electronjs.org/)
 - [@article@Electron Docs](https://www.electronjs.org/docs/latest/)
 - [@video@Create a Desktop App With JavaScript & Electron](https://www.youtube.com/watch?v=ML743nrkMHw)
+- [@feed@Explore top posts about Electron](https://app.daily.dev/tags/electron?ref=roadmapsh)

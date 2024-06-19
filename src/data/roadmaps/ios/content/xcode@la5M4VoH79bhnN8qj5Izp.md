@@ -5,4 +5,5 @@ Xcode is Apple’s integrated development environment (IDE) for macOS, used to d
 Learn more from the following resources:
 
 - [@official@Xcode Documentation](https://developer.apple.com/xcode/)
-- [@video@Xcode 15 Tutorial for Beginners (2024)](https://www.youtube.com/watch?v=8Xcq4yRQ0pU&pp=ygUTeGNvZGUgdHV0b3JpYWwgMjAyNA%3D%3D)
+- [@video@Xcode 15 Tutorial for Beginners (2024)](https://www.youtube.com/watch?v=8Xcq4yRQ0pU\&pp=ygUTeGNvZGUgdHV0b3JpYWwgMjAyNA%3D%3D)
+- [@feed@Explore top posts about Xcode](https://app.daily.dev/tags/xcode?ref=roadmapsh)

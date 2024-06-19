@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@AdonisJS Website](https://adonisjs.com/)
 - [@article@AdonisJS Official Documentations](https://docs.adonisjs.com/guides/introduction)
-- [@video@Beginner AdonisJS Tutorial](https://www.youtube.com/watch?v=VIvBeEj9QVg&list=PL9gT3zlT0C1Ngrii-NCPpuRvUO1mIGzwf)
+- [@video@Beginner AdonisJS Tutorial](https://www.youtube.com/watch?v=VIvBeEj9QVg\&list=PL9gT3zlT0C1Ngrii-NCPpuRvUO1mIGzwf)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@official@Java Website](https://www.java.com/)
 - [@article@W3 Schools Tutorials](https://www.w3schools.com/java/)
 - [@video@Java Crash Course](https://www.youtube.com/watch?v=eIrMbAQSU34)
+- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

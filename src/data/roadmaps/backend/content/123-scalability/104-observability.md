@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@article@Sentry Docs](https://docs.sentry.io/)
 - [@video@AWS re:Invent 2017: Improving Microservice and Serverless Observability with Monitor](https://www.youtube.com/watch?v=Wx0SHRb2xcI)
 - [@article@Observability and Instrumentation: What They Are and Why They Matter](https://newrelic.com/blog/best-practices/observability-instrumentation)
+- [@feed@Explore top posts about Observability](https://app.daily.dev/tags/observability?ref=roadmapsh)

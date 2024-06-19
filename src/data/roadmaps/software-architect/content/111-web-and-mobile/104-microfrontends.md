@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@video@Micro-Frontends Course - Beginner to Expert](https://www.youtube.com/watch?v=lKKsjpH09dU)
 - [@article@Micro Frontends](https://micro-frontends.org/)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@BEM Official Website](https://en.bem.info)
 - [@article@OOCSS Official Website](http://oocss.org/)
 - [@article@SMACSS Official Website](http://smacss.com/)
+- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

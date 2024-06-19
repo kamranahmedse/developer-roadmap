@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 
 - [@article@Argo CD - Argo Project](https://argo-cd.readthedocs.io/en/stable/)
 - [@video@ArgoCD Tutorial for Beginners](https://www.youtube.com/watch?v=MeU5_k9ssrs)
+- [@feed@Explore top posts about ArgoCD](https://app.daily.dev/tags/argocd?ref=roadmapsh)

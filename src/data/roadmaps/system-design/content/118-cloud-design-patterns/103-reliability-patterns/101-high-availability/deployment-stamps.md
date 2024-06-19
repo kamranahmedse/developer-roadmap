@@ -6,3 +6,4 @@ To learn more visit the following links:
 
 - [@article@Deployment Stamps pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp)
 - [@article@Deployment Stamps 101](https://blog.devgenius.io/deployment-stamps-101-7c04a6f704a2)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

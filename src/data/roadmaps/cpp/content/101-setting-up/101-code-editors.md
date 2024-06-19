@@ -13,3 +13,4 @@ These are just a few examples, and there are many other code editors available, 
 To work with C++ in your chosen code editor, you often need to install some additional tools and add-ons, such as compilers, linters, and debugger support. Make sure to follow the instructions provided in the editor's documentation to set up C++ correctly.
 
 - [@article@Using C++ on Linux in VSCode](https://code.visualstudio.com/docs/cpp/config-linux)
+- [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

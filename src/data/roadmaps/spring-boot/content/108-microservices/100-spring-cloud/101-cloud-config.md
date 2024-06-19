@@ -9,3 +9,4 @@ For more resources, visit the following links:
 - [@official@Spring Cloud Config](https://spring.io/projects/spring-cloud-config)
 - [@article@Quick Intro to Spring Cloud Configuration](https://www.baeldung.com/spring-cloud-configuration)
 - [@article@Spring Boot - Cloud Configuration Server](https://www.tutorialspoint.com/spring_boot/spring_boot_cloud_configuration_server.htm)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

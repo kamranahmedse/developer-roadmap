@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Prisma Website](https://www.prisma.io/)
 - [@video@Prisma & MongoDB Youtube Tutorial](https://www.youtube.com/watch?v=-7r4whMKt1s)
+- [@feed@Explore top posts about Prisma](https://app.daily.dev/tags/prisma?ref=roadmapsh)

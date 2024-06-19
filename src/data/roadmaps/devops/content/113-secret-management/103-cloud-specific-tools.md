@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [@article@AWS Secrets Manager - Amazon Web Services](https://aws.amazon.com/secrets-manager/)
 - [@article@Google Cloud Secret Manager - Google Cloud](https://cloud.google.com/secret-manager)
 - [@article@Azure Key Vault - Microsoft Azure](https://azure.microsoft.com/en-us/services/key-vault/)
+- [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

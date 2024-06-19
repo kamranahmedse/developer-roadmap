@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Extensions - Documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions)
 - [@official@The Kubernetes API - Documentation](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
+- [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)

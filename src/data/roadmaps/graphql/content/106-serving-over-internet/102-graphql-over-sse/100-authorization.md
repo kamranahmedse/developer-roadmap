@@ -11,3 +11,4 @@ There are several ways to implement authorization in GraphQL:
 To learn more, visit the following links:
 
 - [@official@Get Started with Authorization](https://graphql.org/learn/authorization/)
+- [@feed@Explore top posts about Authorization](https://app.daily.dev/tags/authorization?ref=roadmapsh)

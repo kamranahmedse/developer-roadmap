@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@article@Redux Toolkit Official Website](https://redux-toolkit.js.org)
 - [@article@Official Tutorial to Learn Redux](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 - [@video@Redux Tutorial - Beginner to Advanced](https://youtube.com/watch?v=zrs7u6bdbUw)
+- [@feed@Explore top posts about Redux](https://app.daily.dev/tags/redux?ref=roadmapsh)

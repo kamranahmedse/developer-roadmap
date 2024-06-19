@@ -8,3 +8,4 @@ Visit the following links to learn more:
 
 - [@article@How to use Travis CI to Deploy to Azure in ASP.NET](https://devblogs.microsoft.com/cse/2015/09/30/using-travis-ci-to-deploy-to-azure/)
 - [@article@Concepts for Beginners of Travis CI in ASP.NET](https://docs.travis-ci.com/user/for-beginners/)
+- [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

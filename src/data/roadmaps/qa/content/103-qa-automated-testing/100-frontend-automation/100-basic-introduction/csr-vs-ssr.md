@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@video@Server Side Rendering vs Client Side Rendering](https://www.youtube.com/watch?v=rNVcZklcmqU)
 - [@article@SSR vs CSR vs SSG](https://medium.com/@prashantramnyc/server-side-rendering-ssr-vs-client-side-rendering-csr-vs-pre-rendering-using-static-site-89f2d05182ef)
+- [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

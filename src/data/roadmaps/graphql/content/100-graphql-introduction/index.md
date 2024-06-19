@@ -10,3 +10,4 @@ To learn more, visit the following links:
 
 - [@official@Introduction to GraphQL](https://graphql.org/learn/)
 - [@official@Getting started with GraphQL](https://graphql.org/)
+- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

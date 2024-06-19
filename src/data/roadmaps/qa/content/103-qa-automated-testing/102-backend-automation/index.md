@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is backend testing?](https://testinggenez.com/what-is-backend-testing-and-types/)
 - [@article@Backend Testing Tutorial](https://www.guru99.com/what-is-backend-testing.html)
+- [@feed@Explore top posts about Automation](https://app.daily.dev/tags/automation?ref=roadmapsh)

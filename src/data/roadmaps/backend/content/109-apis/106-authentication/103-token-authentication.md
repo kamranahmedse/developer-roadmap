@@ -11,3 +11,4 @@ But using tokens requires a bit of coding know-how. Most developers pick up the 
 Visit the following resources to learn more:
 
 - [@article@What Is Token-Based Authentication?](https://www.okta.com/identity-101/what-is-token-based-authentication/)
+- [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)

@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 
 - [@article@Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [@article@Strict mode in JavaScript](https://javascript.info/strict-mode)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

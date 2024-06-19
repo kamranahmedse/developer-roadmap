@@ -42,5 +42,6 @@ Here are some resources to sharpen your JavaScript programming skills:
 - [@article@W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@freeCodeCamp's JavaScript Curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 - [@article@Eloquent JavaScript: A Modern Introduction to Programming](https://eloquentjavascript.net/) (book)
+- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
 
 By mastering JavaScript, you'll be better equipped to build more interactive and dynamic web applications, thus enhancing your overall cyber security skills.

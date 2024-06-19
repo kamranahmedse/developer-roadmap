@@ -5,3 +5,4 @@ A truly healthy system requires that the components and subsystems that compose 
 Learn more from the following:
 
 - [@article@Availability Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#availability-monitoring)
+- [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

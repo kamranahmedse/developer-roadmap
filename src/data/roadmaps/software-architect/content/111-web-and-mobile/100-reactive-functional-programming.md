@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Functional Programming with JavaScript](https://www.telerik.com/blogs/functional-programming-javascript)
 - [@article@What is Functional Programming?](https://www.freecodecamp.org/news/functional-programming-in-javascript/)
 - [@article@What is Reactive Programming?](https://www.techtarget.com/searchapparchitecture/definition/reactive-programming)
+- [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)
