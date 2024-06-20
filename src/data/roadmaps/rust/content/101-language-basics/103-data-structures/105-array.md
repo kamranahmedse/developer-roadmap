@@ -4,4 +4,7 @@ In Rust, an `array` is a collection of elements of the same type, organized cons
 
 Learn more from the following links:
 
+- [@official@Rust - array](https://doc.rust-lang.org/std/primitive.array.html)
 - [@article@The Array Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-array-type)
+- [@article@Rust Array (With Examples)](https://www.programiz.com/rust/array)
+- [@video@Rust Tutorial - Arrays](https://www.youtube.com/watch?v=t047Hseyj_k&t=767s)

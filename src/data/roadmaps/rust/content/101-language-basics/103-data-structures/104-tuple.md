@@ -4,4 +4,6 @@ In Rust, a **Tuple** is a type of data structure that holds a finite number of e
 
 Learn more from the following links:
 
+- [@official@Tuple - Rust](https://doc.rust-lang.org/std/primitive.tuple.html)
 - [@article@The Tuple Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type)
+- [@video@Rust Tutorial - Tuples](https://www.youtube.com/watch?v=t047Hseyj_k&t=506s)
