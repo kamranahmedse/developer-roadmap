@@ -1,4 +1,5 @@
 ---
+renderer: 'editor'
 jsonUrl: '/jsons/roadmaps/frontend.json'
 pdfUrl: '/pdfs/roadmaps/frontend.pdf'
 order: 1
@@ -18,7 +19,7 @@ question:
     As a front-end developer, you'll be responsible for creating the user interface of a website, to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.
 dimensions:
   width: 968
-  height: 2587.63
+  height: 3100
 schema:
   headline: 'Frontend Developer Roadmap: What is Frontend Development?'
   description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
