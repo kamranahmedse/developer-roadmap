@@ -141,7 +141,7 @@ questions:
     topics:
       - 'Intermediate'
   - question: Describe the concept of eventual consistency and its implications in backend systems
-    answer: api-dependencies.md
+    answer: eventual-consistency.md
     topics:
       - 'Intermediate'
   - question: What is a reverse proxy, and how is it useful in backend development?
