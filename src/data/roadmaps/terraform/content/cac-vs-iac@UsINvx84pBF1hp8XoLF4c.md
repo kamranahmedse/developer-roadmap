@@ -1,1 +1,3 @@
 # CaC vs IaC
+
+CaC (Configuration as Code) and IaC (Infrastructure as Code) are both ways to manage infrastructure resources, but they focus on different things. CaC deals with setting up and managing the software and settings within your servers, like user settings and app configs. Examples of CaC tools include Ansible and Puppet. IaC, on the other hand, is about managing the underlying infrastructure, like virtual machines, networks, and storage. Examples of IaC tools include Terraform and AWS CloudFormation. So, while IaC sets up the environment, CaC ensures the software within that environment runs correctly.
