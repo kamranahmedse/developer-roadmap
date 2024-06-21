@@ -56,6 +56,7 @@ const pageUrl = `http://localhost:3000/${roadmapId}/svg`;
 console.log(`Opening page ${pageUrl}`);
 await page.goto(pageUrl);
 await page.waitForSelector('#resource-svg-wrap');
+await page.waitForTimeout(5000);
 console.log(`Generating PDF ${pageUrl}`);
 await page.pdf({
   path: `./public/pdfs/roadmaps/${roadmapId}.pdf`,
