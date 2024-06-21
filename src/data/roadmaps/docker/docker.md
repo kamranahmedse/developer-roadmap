@@ -26,7 +26,7 @@ seo:
     - 'docker for beginners'
     - 'how to learn docker'
     - 'use docker in production'
-    - 'docker roadmap 2023'
+    - 'docker roadmap 2024'
     - 'guide to learning docker'
     - 'docker roadmap'
     - 'docker learning path'
