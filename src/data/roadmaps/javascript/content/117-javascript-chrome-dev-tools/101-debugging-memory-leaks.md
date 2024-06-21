@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Effective Javascript Debugging ](https://medium.com/swlh/effective-javascript-debugging-memory-leaks-75059b2436f6)
 - [@article@Debugging JavaScript memory leaks](https://www.debugbear.com/blog/debugging-javascript-memory-leaks)
 - [@article@Debugging Memory Leaks In Production JavaScript Applications](https://www.jackhoy.com/web-applications/2020/10/21/debugging-memory-leaks-in-nodejs.html)
+- [@video@JavaScript Memory Leaks Visualized and How To Fix Them](https://youtu.be/IkoGmbNJolo)
