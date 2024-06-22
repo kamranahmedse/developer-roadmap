@@ -1,6 +1,6 @@
 # Structs
 
-In Rust, a **struct** is a custom data type used for grouping related values together into one entity. Structs are similar to classes in other programming languages. Essentially, each `struct` creates a new type that we can use to streamline complex data handling.
+In Rust, a struct is a custom data type used for grouping related values together into one entity. Structs are similar to classes in other programming languages. Essentially, each `struct` creates a new type that we can use to streamline complex data handling.
 
 There are three types of `struct` in Rust: classic 'C' structs, tuple structs, and unit structs.
 
