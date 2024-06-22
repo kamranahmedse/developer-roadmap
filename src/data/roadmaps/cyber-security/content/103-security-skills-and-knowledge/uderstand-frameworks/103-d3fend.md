@@ -18,7 +18,8 @@ D3FEND Matrix is a complementary tool for ATT&CK framework and offers a systemat
 
 ## Real-World Application
 
-
+- **Product Comparison and Gap Analysis**: D3FEND allows organizations to evaluate the functionalities of various cybersecurity products. Using a standardized taxonomy of defensive techniques, stakeholders can precisely identify differences and gaps between products, facilitating better decision-making when acquiring new solutions.
+- **Defining Testing Scope**: The framework aids in developing offensive test plans by linking defensive techniques to associated offensive strategies. This method offers a detailed insight into the effectiveness of a defensive product's claimed capabilities, helping organizations to accurately validate their cybersecurity defenses.
 
 - [D3FEND Paper](https://d3fend.mitre.org/resources/D3FEND.pdf)
 - [D3FEND Official Site](https://d3fend.mitre.org)
