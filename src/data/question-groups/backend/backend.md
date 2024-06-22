@@ -5,7 +5,7 @@ briefDescription: 'Test, rate and improve your Backend knowledge with these ques
 title: '50 Popular Backend Developer Interview Questions and Answers'
 description: 'Test, rate and improve your Backend knowledge with these questions.'
 authorId: 'fernando'
-isNew: true
+isNew: false
 date: 2024-05-24
 seo:
   title: '50 Popular Backend Developer Interview Questions and Answers'
