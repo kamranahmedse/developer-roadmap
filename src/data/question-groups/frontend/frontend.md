@@ -5,7 +5,7 @@ briefDescription: 'Test, rate and improve your Frontend knowledge with these que
 title: 'Top 30 Popular Front End Developer Interview Questions'
 description: 'Test, rate and improve your Frontend knowledge with these questions.'
 authorId: 'fernando'
-isNew: true
+isNew: false
 date: 2024-05-24
 seo:
   title: 'Top 30 Popular Front End Developer Interview Questions'

@@ -7,7 +7,7 @@ seo:
   title: 'DevOps vs SRE: Key Differences Explained'
   description: 'DevOps vs SRE: Discover which role suits your career best. Learn key differences, skills required, and career prospects in our detailed guide.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-vs-sre-ofdcy.jpg'
-isNew: false
+isNew: true
 type: 'textual'
 date: 2024-06-13
 sitemap:
