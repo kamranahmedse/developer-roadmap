@@ -1,6 +1,6 @@
 # Constructs
 
-In Rust, **constructs** refer to different elements used to build the structure of the program. Constructs includes variables, functions, data types, control flow statements, and more.
+In Rust, "constructs" refer to different elements used to build the structure of the program. Constructs includes variables, functions, data types, control flow statements, and more.
 
 - **Variables** store data, and their immutable or mutable status is determined at their declaration with `let` and `let mut`, respectively.
 - **Functions** are reusable blocks of code defined by the `fn` keyword.
