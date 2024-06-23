@@ -4,9 +4,15 @@ import {
   type RoadmapRendererProps,
 } from './EditorRoadmapRenderer';
 import { Spinner } from '../ReactIcons/Spinner';
-import type { ResourceType } from '../../lib/resource-progress';
+import {
+  clearMigratedRoadmapProgress,
+  type ResourceType,
+} from '../../lib/resource-progress';
 import { httpGet } from '../../lib/http';
 import { ProgressNudge } from '../FrameRenderer/ProgressNudge';
+import { getUrlParams } from '../../lib/browser.ts';
+import { cn } from '../../lib/classname.ts';
+import { getUser } from '../../lib/jwt.ts';
 
 type EditorRoadmapProps = {
   resourceId: string;
@@ -20,6 +26,7 @@ type EditorRoadmapProps = {
 export function EditorRoadmap(props: EditorRoadmapProps) {
   const { resourceId, resourceType = 'roadmap', dimensions } = props;
 
+  const [hasSwitchedRoadmap, setHasSwitchedRoadmap] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [roadmapData, setRoadmapData] = useState<
     Omit<RoadmapRendererProps, 'resourceId'> | undefined
@@ -27,9 +34,11 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
 
   const loadRoadmapData = async () => {
     setIsLoading(true);
+    const { r: switchRoadmapId } = getUrlParams();
+
     const { response, error } = await httpGet<
       Omit<RoadmapRendererProps, 'resourceId'>
-    >(`/${resourceId}.json`);
+    >(`/${switchRoadmapId || resourceId}.json`);
 
     if (error) {
       console.error(error);
@@ -38,21 +47,29 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
 
     setRoadmapData(response);
     setIsLoading(false);
+    setHasSwitchedRoadmap(!!switchRoadmapId);
   };
 
   useEffect(() => {
+    clearMigratedRoadmapProgress(resourceType, resourceId);
     loadRoadmapData().finally();
   }, [resourceId]);
+
+  const aspectRatio = dimensions.width / dimensions.height;
 
   if (!roadmapData || isLoading) {
     return (
       <div
         style={
-          {
-            '--aspect-ratio': dimensions.width / dimensions.height,
-          } as CSSProperties
+          !hasSwitchedRoadmap
+            ? ({
+                '--aspect-ratio': aspectRatio,
+              } as CSSProperties)
+            : undefined
         }
-        className="flex aspect-[var(--aspect-ratio)] w-full justify-center"
+        className={
+          'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+        }
       >
         <div className="flex w-full justify-center">
           <Spinner
@@ -68,11 +85,15 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
   return (
     <div
       style={
-        {
-          '--aspect-ratio': dimensions.width / dimensions.height,
-        } as CSSProperties
+        !hasSwitchedRoadmap
+          ? ({
+              '--aspect-ratio': aspectRatio,
+            } as CSSProperties)
+          : undefined
       }
-      className="flex aspect-[var(--aspect-ratio)] w-full justify-center"
+      className={
+        'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+      }
     >
       <EditorRoadmapRenderer
         {...roadmapData}

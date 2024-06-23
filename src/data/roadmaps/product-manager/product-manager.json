@@ -603,7 +603,7 @@
         "x": 833.2357162642066,
         "y": -167.8282364125966
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "Find the detailed version of this roadmap along with other similar roadmaps",
         "style": {
@@ -636,7 +636,7 @@
         "x": 846.4390906770068,
         "y": -85.84267299485134
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "roadmap.sh",
         "href": "https://roadmap.sh",
