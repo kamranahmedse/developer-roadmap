@@ -51,7 +51,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
         <span className="relative -top-[0.45px] mr-2 text-xs font-medium uppercase text-yellow-400">
           Progress
         </span>
-        <span>{done}</span> of <span>{$totalRoadmapNodes}</span> Done
+        <span>{done > $totalRoadmapNodes ? $totalRoadmapNodes : done}</span> of <span>{$totalRoadmapNodes}</span> Done
       </span>
 
       <span
