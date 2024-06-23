@@ -102,7 +102,7 @@ export function clearMigratedRoadmapProgress(
     return;
   }
 
-  localStorage.removeItem(`${resourceType}-${resourceId}-${userId}-progress`);
+  localStorage.removeItem(roadmapKey);
   localStorage.setItem(clearedKey, '1');
 }
 
