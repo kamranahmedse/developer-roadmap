@@ -526,8 +526,8 @@
       "id": "yWG2VUkaF5IJVVut6AiSy",
       "type": "topic",
       "position": {
-        "x": -611.8814218617622,
-        "y": 244.27030742190215
+        "x": -601.8814218617622,
+        "y": 260.27030742190215
       },
       "selected": false,
       "data": {
@@ -547,8 +547,8 @@
       },
       "resizing": false,
       "positionAbsolute": {
-        "x": -611.8814218617622,
-        "y": 244.27030742190215
+        "x": -601.8814218617622,
+        "y": 260.27030742190215
       },
       "focusable": true
     },
@@ -558,8 +558,8 @@
       "id": "PCirR2QiFYO89Fm-Ev3o1",
       "type": "subtopic",
       "position": {
-        "x": -654.8814218617622,
-        "y": -98.48450673924191
+        "x": -644.8814218617622,
+        "y": -37.48450673924191
       },
       "selected": false,
       "data": {
@@ -584,8 +584,8 @@
         "height": 49
       },
       "positionAbsolute": {
-        "x": -654.8814218617622,
-        "y": -98.48450673924191
+        "x": -644.8814218617622,
+        "y": -37.48450673924191
       },
       "focusable": true
     },
@@ -595,8 +595,8 @@
       "id": "z8-556o-PaHXjlytrawaF",
       "type": "subtopic",
       "position": {
-        "x": -654.8814218617622,
-        "y": -44.48450673924191
+        "x": -644.8814218617622,
+        "y": 16.51549326075809
       },
       "selected": false,
       "data": {
@@ -617,8 +617,8 @@
       "zIndex": 999,
       "dragging": false,
       "positionAbsolute": {
-        "x": -654.8814218617622,
-        "y": -44.48450673924191
+        "x": -644.8814218617622,
+        "y": 16.51549326075809
       },
       "style": {
         "width": 259,
@@ -633,8 +633,8 @@
       "id": "V5zucKEHnIPPjwHqsMPHF",
       "type": "subtopic",
       "position": {
-        "x": -654.8814218617622,
-        "y": 9.515493260758092
+        "x": -644.8814218617622,
+        "y": 70.51549326075809
       },
       "selected": false,
       "data": {
@@ -655,8 +655,8 @@
       "zIndex": 999,
       "dragging": false,
       "positionAbsolute": {
-        "x": -654.8814218617622,
-        "y": 9.515493260758092
+        "x": -644.8814218617622,
+        "y": 70.51549326075809
       },
       "style": {
         "width": 259,
@@ -670,8 +670,8 @@
       "id": "iJIqi7ngpGHWAqtgdjgxB",
       "type": "subtopic",
       "position": {
-        "x": -654.8814218617622,
-        "y": 63.51549326075809
+        "x": -644.8814218617622,
+        "y": 124.51549326075809
       },
       "selected": false,
       "data": {
@@ -692,8 +692,8 @@
       "zIndex": 999,
       "dragging": false,
       "positionAbsolute": {
-        "x": -654.8814218617622,
-        "y": 63.51549326075809
+        "x": -644.8814218617622,
+        "y": 124.51549326075809
       },
       "style": {
         "width": 259,
@@ -707,8 +707,8 @@
       "id": "mH_qff8R7R6eLQ1tPHLgG",
       "type": "subtopic",
       "position": {
-        "x": -654.8814218617622,
-        "y": 117.51549326075809
+        "x": -644.8814218617622,
+        "y": 178.5154932607581
       },
       "selected": false,
       "data": {
@@ -729,8 +729,8 @@
       "zIndex": 999,
       "dragging": false,
       "positionAbsolute": {
-        "x": -654.8814218617622,
-        "y": 117.51549326075809
+        "x": -644.8814218617622,
+        "y": 178.5154932607581
       },
       "style": {
         "width": 259,
@@ -2356,7 +2356,7 @@
         "x": 37.63179628497846,
         "y": 1344.100267415748
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "Jest",
         "style": {
@@ -4802,6 +4802,40 @@
       },
       "focusable": true,
       "resizing": false
+    },
+    {
+      "id": "MfErpYwkJ0wiWJZEUVfrb",
+      "type": "button",
+      "position": {
+        "x": -654.8814218617622,
+        "y": -153.72969257809785
+      },
+      "selected": false,
+      "data": {
+        "label": "Visit Beginner Friendly Version",
+        "href": "/frontend?r=frontend-beginner",
+        "color": "#ffffff",
+        "backgroundColor": "#232323",
+        "style": {
+          "fontSize": 17
+        },
+        "oldId": "2zqZkyVgigifcRS1H7F_b"
+      },
+      "zIndex": 999,
+      "width": 351,
+      "height": 49,
+      "dragging": false,
+      "style": {
+        "width": 351,
+        "height": 49
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -654.8814218617622,
+        "y": -153.72969257809785
+      },
+      "selectable": true,
+      "focusable": true
     }
   ],
   "edges": [
