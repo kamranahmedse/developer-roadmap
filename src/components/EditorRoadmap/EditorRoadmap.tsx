@@ -4,11 +4,15 @@ import {
   type RoadmapRendererProps,
 } from './EditorRoadmapRenderer';
 import { Spinner } from '../ReactIcons/Spinner';
-import type { ResourceType } from '../../lib/resource-progress';
+import {
+  clearMigratedRoadmapProgress,
+  type ResourceType,
+} from '../../lib/resource-progress';
 import { httpGet } from '../../lib/http';
 import { ProgressNudge } from '../FrameRenderer/ProgressNudge';
 import { getUrlParams } from '../../lib/browser.ts';
 import { cn } from '../../lib/classname.ts';
+import { getUser } from '../../lib/jwt.ts';
 
 type EditorRoadmapProps = {
   resourceId: string;
@@ -47,6 +51,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
   };
 
   useEffect(() => {
+    clearMigratedRoadmapProgress(resourceType, resourceId);
     loadRoadmapData().finally();
   }, [resourceId]);
 
@@ -86,7 +91,9 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
             } as CSSProperties)
           : undefined
       }
-      className={'flex aspect-[var(--aspect-ratio)] w-full justify-center flex-col'}
+      className={
+        'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+      }
     >
       <EditorRoadmapRenderer
         {...roadmapData}
