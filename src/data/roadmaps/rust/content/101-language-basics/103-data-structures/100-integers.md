@@ -2,8 +2,8 @@
 
 In Rust, integers are a primitive data type that hold whole number values, both positive and negative. Integer types in Rust can be divided into signed and unsigned ones:
 
-- Signed integers, denoted by "i", are those that can hold negative, zero, and positive values
-- Unsigned integers, denoted by "u" only hold zero and positive values.
+- Signed integers, denoted by "i", are those that can hold negative, zero, and positive values.
+- Unsigned integers, denoted by "u", only hold zero and positive values.
 
 Each denotation is followed by a number which represents the number of bits they occupy in memory. The available integer types are:
 
@@ -29,7 +29,7 @@ The unsigned integer types consist of:
 
 In these types, the number after "i" or "u" denotes the size of the integer type in bits.
 
-There're also the `isize` and  the `usize` integer types. The sizes of these primitive are taken from the computer architecture (32/64 bits). When one these types is declared, the compiler calculate, so to speak, how many bytes it takes to reference any location in memory. For example, on a 32 bit target, this is 4 bytes and on a 64 bit target, this is 8 bytes.
+There's also the `isize` and `usize` integer types. The sizes of these primitive are taken from the computer architecture (32/64 bits). When one of these types is declared, the compiler calculates, so to speak, how many bytes it takes to reference any location in memory. For example, on a 32-bit target, this is 4 bytes, and on a 64-bit target, this is 8 bytes.
 
 - [@article@Integer Data Type in Rust](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types)
 
