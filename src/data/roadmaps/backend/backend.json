@@ -71,7 +71,7 @@
       "id": "UFd8PEg6IwJMXvuv8Ow1f",
       "type": "section",
       "position": {
-        "x": 61.5678836929921,
+        "x": 51.5678836929921,
         "y": 647.9126418589183
       },
       "selected": false,
@@ -86,14 +86,14 @@
         }
       },
       "zIndex": -999,
-      "width": 275,
+      "width": 288,
       "height": 338,
       "style": {
-        "width": 275,
+        "width": 288,
         "height": 338
       },
       "positionAbsolute": {
-        "x": 61.5678836929921,
+        "x": 51.5678836929921,
         "y": 647.9126418589183
       },
       "dragging": false,
@@ -865,7 +865,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "eyP1K2ve-C0gDYt6Hdgw0"
+        "oldId": "eyP1K2ve-C0gDYt6Hdgw0",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 100,
@@ -912,13 +918,13 @@
       "dragging": false
     },
     {
-      "width": 130,
+      "width": 133,
       "height": 49,
       "id": "ptD8EVqwFUYr4W5A_tABY",
       "type": "subtopic",
       "position": {
-        "x": -664.8591391487768,
-        "y": 503.9601900569286
+        "x": -666.3591391487768,
+        "y": 258.6876382503563
       },
       "selected": false,
       "data": {
@@ -928,19 +934,26 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "eCkVAP0s0GKyY88M2fBDS"
+        "oldId": "eCkVAP0s0GKyY88M2fBDS",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
-        "width": 130,
+        "width": 133,
         "height": 49
       },
       "zIndex": 999,
       "focusable": true,
       "positionAbsolute": {
-        "x": -664.8591391487768,
-        "y": 503.9601900569286
+        "x": -666.3591391487768,
+        "y": 258.6876382503563
       },
-      "dragging": false
+      "dragging": false,
+      "resizing": false
     },
     {
       "width": 130,
@@ -949,7 +962,7 @@
       "type": "subtopic",
       "position": {
         "x": -664.8591391487768,
-        "y": 321.2181341005084
+        "y": 497.10143585693174
       },
       "selected": false,
       "data": {
@@ -959,7 +972,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "e4KQQInL16_RB4JdObH0I"
+        "oldId": "e4KQQInL16_RB4JdObH0I",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 130,
@@ -969,18 +988,18 @@
       "focusable": true,
       "positionAbsolute": {
         "x": -664.8591391487768,
-        "y": 321.2181341005084
+        "y": 497.10143585693174
       },
       "dragging": false
     },
     {
-      "width": 130,
+      "width": 133,
       "height": 49,
       "id": "Wcp-VDdFHipwa7hNAp1z_",
       "type": "subtopic",
       "position": {
-        "x": -664.8591391487768,
-        "y": 267.6434516293295
+        "x": -666.3591391487768,
+        "y": 311.6876382503563
       },
       "selected": false,
       "data": {
@@ -990,17 +1009,23 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "yqA_KjfiUMC8BUu4IK9cy"
+        "oldId": "yqA_KjfiUMC8BUu4IK9cy",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
-        "width": 130,
+        "width": 133,
         "height": 49
       },
       "zIndex": 999,
       "focusable": true,
       "positionAbsolute": {
-        "x": -664.8591391487768,
-        "y": 267.6434516293295
+        "x": -666.3591391487768,
+        "y": 311.6876382503563
       },
       "dragging": false
     },
@@ -1053,7 +1078,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "lNsaFZwGE7vA0Km-Jfft4"
+        "oldId": "lNsaFZwGE7vA0Km-Jfft4",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 132,
@@ -1085,7 +1116,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "ulpADspLetx1g61PqMGU8"
+        "oldId": "ulpADspLetx1g61PqMGU8",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 175,
@@ -1116,7 +1153,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "3z18KztSA_4OY7zwxpFbB"
+        "oldId": "3z18KztSA_4OY7zwxpFbB",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 175,
@@ -1147,7 +1190,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "bwQCmYPLWxGuE-GFmm3UG"
+        "oldId": "bwQCmYPLWxGuE-GFmm3UG",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 175,
@@ -1178,7 +1227,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "YXyxPWu91_gMdNwFdTfRO"
+        "oldId": "YXyxPWu91_gMdNwFdTfRO",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 175,
@@ -1273,7 +1328,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "FHrVrP-ndnV8MsDKMxdsq"
+        "oldId": "FHrVrP-ndnV8MsDKMxdsq",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1304,7 +1365,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "50VkyrePI7pvgEyrWB1xN"
+        "oldId": "50VkyrePI7pvgEyrWB1xN",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1335,7 +1402,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "4aBoOyTn1ALDRHYcfwzHf"
+        "oldId": "4aBoOyTn1ALDRHYcfwzHf",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1366,7 +1439,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "--uLs-qyQYLn1WDir6KVt"
+        "oldId": "--uLs-qyQYLn1WDir6KVt",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1397,7 +1476,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "plXELtRHevUzYUL3doQSs"
+        "oldId": "plXELtRHevUzYUL3doQSs",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1428,7 +1513,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "rFgQmfporOARKXsmzAy64"
+        "oldId": "rFgQmfporOARKXsmzAy64",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1460,7 +1551,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "5pdTq6LCx8VXjd0-J1a1s"
+        "oldId": "5pdTq6LCx8VXjd0-J1a1s",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 161,
@@ -1521,7 +1618,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "S9MgYBsbsQ47S7J0Qg8wi"
+        "oldId": "S9MgYBsbsQ47S7J0Qg8wi",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 197,
@@ -1552,7 +1655,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "5dMoHdwlIIT8o3SE4JIJA"
+        "oldId": "5dMoHdwlIIT8o3SE4JIJA",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 197,
@@ -1584,7 +1693,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "x4ws8SdWuAI2aH_kDauT0"
+        "oldId": "x4ws8SdWuAI2aH_kDauT0",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 197,
@@ -1615,7 +1730,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "w_wOm7K0vM0mdW1aoNkoS"
+        "oldId": "w_wOm7K0vM0mdW1aoNkoS",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 197,
@@ -1676,7 +1797,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "jg0GK9Vk3j4ASFJAYTCg9"
+        "oldId": "jg0GK9Vk3j4ASFJAYTCg9",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 177,
@@ -1708,7 +1835,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "eZd-7w3ka8BhaAx8kGTgi"
+        "oldId": "eZd-7w3ka8BhaAx8kGTgi",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 206,
@@ -1739,7 +1872,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "DUfNRRq7b-9qrmi3Jl9cg"
+        "oldId": "DUfNRRq7b-9qrmi3Jl9cg",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 177,
@@ -1771,7 +1910,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "WcI3SBJRcNaE188PNbOVu"
+        "oldId": "WcI3SBJRcNaE188PNbOVu",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 100,
@@ -1803,7 +1948,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "QWSfT7edQOzSqxErGjzEW"
+        "oldId": "QWSfT7edQOzSqxErGjzEW",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 103,
@@ -1835,7 +1986,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "gVsbyjVssRCpAf6r-tF0O"
+        "oldId": "gVsbyjVssRCpAf6r-tF0O",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 206,
@@ -1866,7 +2023,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "SuTsL6Hx2f9mGGkuz6qzR"
+        "oldId": "SuTsL6Hx2f9mGGkuz6qzR",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 206,
@@ -1898,7 +2061,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "VCs8QGDemoQSkB36h9PJK"
+        "oldId": "VCs8QGDemoQSkB36h9PJK",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 138,
@@ -1930,7 +2099,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "bIXcS6GrLumi6encivC_r"
+        "oldId": "bIXcS6GrLumi6encivC_r",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 137,
@@ -1962,7 +2137,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "xPvVwGQw28uMeLYIWn8yn"
+        "oldId": "xPvVwGQw28uMeLYIWn8yn",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 138,
@@ -2053,7 +2234,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "U7mP1unVOQgVXCCuXh8De"
+        "oldId": "U7mP1unVOQgVXCCuXh8De",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 190,
@@ -2085,7 +2272,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "Lcb9mmKc5k2UofZ0_o6Rs"
+        "oldId": "Lcb9mmKc5k2UofZ0_o6Rs",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -2117,7 +2310,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "J_kRwf-neWCW5DjfBmybt"
+        "oldId": "J_kRwf-neWCW5DjfBmybt",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -2206,13 +2405,19 @@
       },
       "selected": false,
       "data": {
-        "label": "GOD Design Patterns",
+        "label": "GOF Design Patterns",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "SbNqTFqv0nGaEgFRPJTdF"
+        "oldId": "SbNqTFqv0nGaEgFRPJTdF",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 238,
@@ -2243,7 +2448,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "9f7ACjQRRLA7XKYnksZSf"
+        "oldId": "9f7ACjQRRLA7XKYnksZSf",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 238,
@@ -2274,7 +2485,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "qrAayg7BD7kxb7_L2SJah"
+        "oldId": "qrAayg7BD7kxb7_L2SJah",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 238,
@@ -2305,7 +2522,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "O9Rikw8IeZBubICKMEWfh"
+        "oldId": "O9Rikw8IeZBubICKMEWfh",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 238,
@@ -2336,7 +2559,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "2s5av-0dXEoxUdJDBkGAw"
+        "oldId": "2s5av-0dXEoxUdJDBkGAw",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 240,
@@ -2367,7 +2596,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "eEjwT_0m1ClZ1Mzk3Tpe1"
+        "oldId": "eEjwT_0m1ClZ1Mzk3Tpe1",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2398,7 +2633,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "hbD8zLd1zLo8cxe1Zzv_q"
+        "oldId": "hbD8zLd1zLo8cxe1Zzv_q",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2429,7 +2670,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "3ihAuijCWt3qpmjhCvPAN"
+        "oldId": "3ihAuijCWt3qpmjhCvPAN",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2460,7 +2707,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "qpFqX--0c3Ns3GcMTLwIV"
+        "oldId": "qpFqX--0c3Ns3GcMTLwIV",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2491,7 +2744,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "VN_aqqc0Ud08WEfGm0RD0"
+        "oldId": "VN_aqqc0Ud08WEfGm0RD0",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2522,7 +2781,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "-Kl-yF0-CvcxFVftrIhc3"
+        "oldId": "-Kl-yF0-CvcxFVftrIhc3",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 215,
@@ -2585,7 +2850,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "nWqysC_xHODqEUf0bHiac"
+        "oldId": "nWqysC_xHODqEUf0bHiac",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 156,
@@ -2617,7 +2888,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "jHzW3C8W4K0B-APmq20sQ"
+        "oldId": "jHzW3C8W4K0B-APmq20sQ",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 156,
@@ -2745,7 +3022,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "AdD_qP2zWpDRF7fye4BAf"
+        "oldId": "AdD_qP2zWpDRF7fye4BAf",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -2776,7 +3059,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "nCUR4HAGITzZGQ9Ur-lwF"
+        "oldId": "nCUR4HAGITzZGQ9Ur-lwF",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -2807,7 +3096,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "EszP1HTjYUcKJlODbvIlQ"
+        "oldId": "EszP1HTjYUcKJlODbvIlQ",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 103,
@@ -2838,7 +3133,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "GWX9hx7Zi-hJEuQl_smnD"
+        "oldId": "GWX9hx7Zi-hJEuQl_smnD",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 103,
@@ -2869,7 +3170,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "OV10LPpeU9WkCnLB2nbjh"
+        "oldId": "OV10LPpeU9WkCnLB2nbjh",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 103,
@@ -2900,7 +3207,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "th-s4CCGHamJSHHWbRbtF"
+        "oldId": "th-s4CCGHamJSHHWbRbtF",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 103,
@@ -2921,7 +3234,7 @@
       "type": "topic",
       "position": {
         "x": -434.321810236714,
-        "y": 2203.658992209215
+        "y": 2201.9516809090464
       },
       "selected": false,
       "data": {
@@ -2941,7 +3254,7 @@
       "focusable": true,
       "positionAbsolute": {
         "x": -434.321810236714,
-        "y": 2203.658992209215
+        "y": 2201.9516809090464
       },
       "dragging": false,
       "resizing": false
@@ -2995,7 +3308,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "xPvVwGQw28uMeLYIWn8yn"
+        "oldId": "xPvVwGQw28uMeLYIWn8yn",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 123,
@@ -3027,7 +3346,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "DfDS2g4vh52wUPGJN3mfV"
+        "oldId": "DfDS2g4vh52wUPGJN3mfV",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 123,
@@ -3092,7 +3417,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "Xv09yYM-kt_kMbFWL7PCP"
+        "oldId": "Xv09yYM-kt_kMbFWL7PCP",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -3124,7 +3455,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "28U6q_X-NTYf7OSKHjoWH"
+        "oldId": "28U6q_X-NTYf7OSKHjoWH",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -3190,7 +3527,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "zIP4lygeKaH1P-VYRMpdU"
+        "oldId": "zIP4lygeKaH1P-VYRMpdU",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 153,
@@ -3289,7 +3632,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "Xv09yYM-kt_kMbFWL7PCP"
+        "oldId": "Xv09yYM-kt_kMbFWL7PCP",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 220,
@@ -3320,7 +3669,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "8IeJ7ktBmXW9hH7NRzbzm"
+        "oldId": "8IeJ7ktBmXW9hH7NRzbzm",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 220,
@@ -3351,7 +3706,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "WdGqs2CLc2cDPEjzEPoFj"
+        "oldId": "WdGqs2CLc2cDPEjzEPoFj",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 220,
@@ -3382,7 +3743,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "KWAhsjFJilEvMka5KXzY2"
+        "oldId": "KWAhsjFJilEvMka5KXzY2",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 220,
@@ -3413,7 +3780,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "IQ1VmqKR6MzNOM_HrJMn_"
+        "oldId": "IQ1VmqKR6MzNOM_HrJMn_",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 220,
@@ -3444,7 +3817,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "8IH45wy4nlKOmoXusIki3"
+        "oldId": "8IH45wy4nlKOmoXusIki3",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 248,
@@ -3475,7 +3854,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "16vCgVCVKx2T6PgR6eJxo"
+        "oldId": "16vCgVCVKx2T6PgR6eJxo",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 248,
@@ -3574,7 +3959,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "G9AI_i3MkUE1BsO3_-PH7"
+        "oldId": "G9AI_i3MkUE1BsO3_-PH7",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 215,
@@ -3605,7 +3996,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "qAu-Y4KI2Z_y-EqiG86cR"
+        "oldId": "qAu-Y4KI2Z_y-EqiG86cR",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 215,
@@ -3636,7 +4033,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "JansCqGDyXecQkD1K7E7e"
+        "oldId": "JansCqGDyXecQkD1K7E7e",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 215,
@@ -3701,7 +4104,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "WQkKdXwjbqov8KLR4Bn20"
+        "oldId": "WQkKdXwjbqov8KLR4Bn20",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 126,
@@ -3733,7 +4142,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "dlG1bVkDmjI3PEGpkm1xH"
+        "oldId": "dlG1bVkDmjI3PEGpkm1xH",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 126,
@@ -3765,7 +4180,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "dlG1bVkDmjI3PEGpkm1xH"
+        "oldId": "dlG1bVkDmjI3PEGpkm1xH",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 126,
@@ -3797,7 +4218,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "TJaO2ePry2wrNVasuj2me"
+        "oldId": "TJaO2ePry2wrNVasuj2me",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 126,
@@ -3829,7 +4256,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "kGTALrvCpxyVCXHRmkI7s"
+        "oldId": "kGTALrvCpxyVCXHRmkI7s",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 99,
@@ -3861,7 +4294,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "dlG1bVkDmjI3PEGpkm1xH"
+        "oldId": "dlG1bVkDmjI3PEGpkm1xH",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 171,
@@ -3893,7 +4332,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "AAgciyxuDvS2B_c6FRMvT"
+        "oldId": "AAgciyxuDvS2B_c6FRMvT",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 171,
@@ -3925,7 +4370,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "x-WBJjBd8u93ym5gtxGsR"
+        "oldId": "x-WBJjBd8u93ym5gtxGsR",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 99,
@@ -3957,7 +4408,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "0v3OsaghJEGHeXX0c5kqn"
+        "oldId": "0v3OsaghJEGHeXX0c5kqn",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 171,
@@ -3989,7 +4446,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "LU6WUbkWKbPM1rb2_gEqa"
+        "oldId": "LU6WUbkWKbPM1rb2_gEqa",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 99,
@@ -4437,12 +4900,12 @@
       "focusable": true
     },
     {
-      "width": 275,
+      "width": 288,
       "height": 49,
       "id": "PY9G7KQy8bF6eIdr1ydHf",
       "type": "subtopic",
       "position": {
-        "x": 61.5678836929921,
+        "x": 51.5678836929921,
         "y": 647.9126418589183
       },
       "selected": false,
@@ -4456,13 +4919,13 @@
         "oldId": "lfNFDZZNdrB0lbEaMtU71"
       },
       "style": {
-        "width": 275,
+        "width": 288,
         "height": 49
       },
       "zIndex": 999,
       "focusable": true,
       "positionAbsolute": {
-        "x": 61.5678836929921,
+        "x": 51.5678836929921,
         "y": 647.9126418589183
       },
       "dragging": false,
@@ -4485,7 +4948,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "PY9G7KQy8bF6eIdr1ydHf"
+        "oldId": "PY9G7KQy8bF6eIdr1ydHf",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 123,
@@ -4517,7 +4986,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "UxS_mzVUjLigEwKrXnEeB"
+        "oldId": "UxS_mzVUjLigEwKrXnEeB",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 254,
@@ -4549,7 +5024,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "yRiJgjjv2s1uV9vgo3n8m"
+        "oldId": "yRiJgjjv2s1uV9vgo3n8m",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 254,
@@ -4581,7 +5062,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "0rGj7FThLJZouSQUhnqGW"
+        "oldId": "0rGj7FThLJZouSQUhnqGW",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 125,
@@ -4613,7 +5100,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "vp-muizdICcmU0gN8zmkS"
+        "oldId": "vp-muizdICcmU0gN8zmkS",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 254,
@@ -4645,7 +5138,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "ffzsh8_5yRq85trFt9Xhk"
+        "oldId": "ffzsh8_5yRq85trFt9Xhk",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 109,
@@ -4677,7 +5176,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "z3EJBpgGm0_Uj3ymhypbX"
+        "oldId": "z3EJBpgGm0_Uj3ymhypbX",
+        "legend": {
+          "id": "R9WLhURhPdVNXP7AUTDvR",
+          "label": "Order not strict / Learn anytime",
+          "color": "#929292",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 137,
@@ -4800,7 +5305,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "GPFRMcY1DEtRgnaZwJ3vW"
+        "oldId": "GPFRMcY1DEtRgnaZwJ3vW",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 156,
@@ -4832,7 +5343,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "VoYSis1F1ZfTxMlQlXQKB"
+        "oldId": "VoYSis1F1ZfTxMlQlXQKB",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 156,
@@ -4896,7 +5413,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "sVuIdAe08IWJVqAt4z-ag"
+        "oldId": "sVuIdAe08IWJVqAt4z-ag",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -4927,7 +5450,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "osvajAJlwGI3XnX0fE-kA"
+        "oldId": "osvajAJlwGI3XnX0fE-kA",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 193,
@@ -5025,7 +5554,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "28U6q_X-NTYf7OSKHjoWH"
+        "oldId": "28U6q_X-NTYf7OSKHjoWH",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5057,7 +5592,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "qOlNzZ7U8LhIGukb67n7U"
+        "oldId": "qOlNzZ7U8LhIGukb67n7U",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5123,7 +5664,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "28U6q_X-NTYf7OSKHjoWH"
+        "oldId": "28U6q_X-NTYf7OSKHjoWH",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5155,7 +5702,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "qOlNzZ7U8LhIGukb67n7U"
+        "oldId": "qOlNzZ7U8LhIGukb67n7U",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5187,7 +5740,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "h1SAjQltHtztSt8QmRgab"
+        "oldId": "h1SAjQltHtztSt8QmRgab",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "right-center"
+        }
       },
       "style": {
         "width": 175,
@@ -5252,7 +5811,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "RyJFLLGieJ8Xjt-DlIayM"
+        "oldId": "RyJFLLGieJ8Xjt-DlIayM",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5284,7 +5849,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "5T0ljwlHL0545ICCeehcQ"
+        "oldId": "5T0ljwlHL0545ICCeehcQ",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5350,7 +5921,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "XbM4TDImSH-56NsITjyHK"
+        "oldId": "XbM4TDImSH-56NsITjyHK",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5382,7 +5959,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "WiAK70I0z-_bzbWNwiHUd"
+        "oldId": "WiAK70I0z-_bzbWNwiHUd",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 136,
@@ -5414,7 +5997,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "BTNJfWemFKEeNeTyENXui"
+        "oldId": "BTNJfWemFKEeNeTyENXui",
+        "legend": {
+          "id": "DMx7rAjVBWMbzjSde-tvp",
+          "label": "Alternative Option / Pick this or purple",
+          "color": "#4f7a28",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 153,
@@ -5446,7 +6035,13 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
-        "oldId": "4X-sbqpP0NDhM99bKdqIa"
+        "oldId": "4X-sbqpP0NDhM99bKdqIa",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "left-center"
+        }
       },
       "style": {
         "width": 215,
@@ -6046,24 +6641,6 @@
         "strokeWidth": 3.5,
         "stroke": "#2b78e4"
       },
-      "source": "NvUcSDWBhzJZ31nzT4UlE",
-      "sourceHandle": "x2",
-      "target": "ptD8EVqwFUYr4W5A_tABY",
-      "targetHandle": "w1",
-      "data": {
-        "edgeStyle": "dashed"
-      },
-      "id": "reactflow__edge-NvUcSDWBhzJZ31nzT4UlEx2-ptD8EVqwFUYr4W5A_tABYw1",
-      "selected": false,
-      "focusable": true
-    },
-    {
-      "style": {
-        "strokeDasharray": "0.8 8",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
       "source": "r45b461NxLN6wBODJ5CNP",
       "sourceHandle": "z2",
       "target": "VPxOdjJtKAqmM5V0LR5OC",
@@ -6145,24 +6722,6 @@
       },
       "selected": false,
       "id": "reactflow__edge-ezdqQW9wTUw93F6kjOzkuw2-_I1E__wCIVrhjMk6IMieEx1",
-      "focusable": true
-    },
-    {
-      "style": {
-        "strokeDasharray": "0.8 8",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
-      "source": "NvUcSDWBhzJZ31nzT4UlE",
-      "sourceHandle": "w2",
-      "target": "Ry_5Y-BK7HrkIc6X0JG1m",
-      "targetHandle": "x1",
-      "data": {
-        "edgeStyle": "dashed"
-      },
-      "id": "reactflow__edge-NvUcSDWBhzJZ31nzT4UlEw2-Ry_5Y-BK7HrkIc6X0JG1mx1",
-      "selected": false,
       "focusable": true
     },
     {
@@ -7282,6 +7841,40 @@
       "id": "reactflow__edge-yAWJWj4D761M0i8iERID3x2-sVXZrBCsiSzWBBYWTm-nQy1",
       "type": "step",
       "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "NvUcSDWBhzJZ31nzT4UlE",
+      "sourceHandle": "x2",
+      "target": "Ry_5Y-BK7HrkIc6X0JG1m",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "dashed"
+      },
+      "id": "reactflow__edge-NvUcSDWBhzJZ31nzT4UlEx2-Ry_5Y-BK7HrkIc6X0JG1mw1",
+      "selected": false
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "NvUcSDWBhzJZ31nzT4UlE",
+      "sourceHandle": "w2",
+      "target": "Wcp-VDdFHipwa7hNAp1z_",
+      "targetHandle": "x1",
+      "data": {
+        "edgeStyle": "dashed"
+      },
+      "id": "reactflow__edge-NvUcSDWBhzJZ31nzT4UlEw2-Wcp-VDdFHipwa7hNAp1z_x1",
+      "selected": false
     }
   ]
 }
