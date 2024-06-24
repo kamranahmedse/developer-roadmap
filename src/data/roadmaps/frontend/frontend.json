@@ -301,7 +301,7 @@
         "x": 91.2410268116243,
         "y": -94.72969257809785
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "How does the internet work?",
         "style": {
@@ -339,7 +339,7 @@
         "x": 91.2410268116243,
         "y": -40.729692578097854
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "What is HTTP?",
         "style": {
@@ -377,7 +377,7 @@
         "x": 91.2410268116243,
         "y": 13.270307421902146
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "What is Domain Name?",
         "style": {
@@ -415,7 +415,7 @@
         "x": 91.2410268116243,
         "y": 67.27030742190215
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "What is hosting?",
         "style": {
@@ -453,7 +453,7 @@
         "x": 91.2410268116243,
         "y": 121.27030742190215
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "DNS and how it works?",
         "style": {
@@ -491,7 +491,7 @@
         "x": 91.2410268116243,
         "y": 175.27030742190215
       },
-      "selected": true,
+      "selected": false,
       "data": {
         "label": "Browsers and how they work?",
         "style": {
@@ -4872,7 +4872,7 @@
         "edgeStyle": "dashed"
       },
       "id": "ronTDxAvatzbk4n5a-McM",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
@@ -4890,7 +4890,7 @@
         "edgeStyle": "dashed"
       },
       "id": "gaNQ1Peug0eiN0Bfxhtgw",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
@@ -4908,7 +4908,7 @@
         "edgeStyle": "dashed"
       },
       "id": "351utcB2QNjRmDe5bmcD1",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
@@ -4926,7 +4926,7 @@
         "edgeStyle": "dashed"
       },
       "id": "lupNr9zUQ0sXyzPBxcglQ",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
@@ -4944,7 +4944,7 @@
         "edgeStyle": "dashed"
       },
       "id": "2IVWwbU20VSU47qjiVU-f",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
@@ -4962,7 +4962,7 @@
         "edgeStyle": "dashed"
       },
       "id": "9MbeqIRipRgbe34jwalxo",
-      "selected": true,
+      "selected": false,
       "focusable": true
     },
     {
