@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@JavaScript Promises - Basics](https://www.codeguage.com/courses/advanced-js/promises-basics)
 - [@article@JavaScript Promises - Chaining](https://www.codeguage.com/courses/advanced-js/promises-chaining)
 - [@article@JavaScript Promises - Error Handling](https://www.codeguage.com/courses/advanced-js/promises-error-handling)
+- [@video@JavaScript Promises - Visualized](https://youtu.be/Xs1EMmBLpn4)

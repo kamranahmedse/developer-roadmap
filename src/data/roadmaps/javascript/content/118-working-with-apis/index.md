@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 - [@article@XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 - [@article@Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [@article@Is fetch API better than XMLHTTPRequest](https://medium.com/beginners-guide-to-mobile-web-development/the-fetch-api-2c962591f5c)
-- [@article@Ajax Battle: XMLHttpRequest vs the Fetch API](https://blog.openreplay.com/ajax-battle-xmlhttprequest-vs-the-fetch-api)
+- [@article@Ajax Battle: XMLHttpRequest vs the Fetch API](https://blog.openreplay.com/ajax-battle-xmlhttprequest-vs-fetch/)
