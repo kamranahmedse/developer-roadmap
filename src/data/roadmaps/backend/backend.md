@@ -1,4 +1,5 @@
 ---
+renderer: 'editor'
 jsonUrl: '/jsons/roadmaps/backend.json'
 pdfUrl: '/pdfs/roadmaps/backend.pdf'
 order: 2
@@ -7,7 +8,7 @@ briefDescription: 'Step by step guide to becoming a backend developer in 2024'
 title: 'Backend Developer'
 description: 'Step by step guide to becoming a modern backend developer in 2024'
 hasTopics: true
-isForkable: true
+isForkable: false
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 question:
   title: 'What is Backend Development?'
@@ -18,7 +19,7 @@ question:
     A backend developer focuses on creating and maintaining the server-side components of web applications. They are primarily tasked with developing server-side APIs, handling database operations, and ensuring that the backend can manage high traffic volumes efficiently. Key responsibilities include integrating external services such as payment gateways and cloud services, and enhancing the performance and scalability of systems. This role is crucial for processing and securing data, serving as the backbone that supports frontend developers in delivering a seamless user experience.
 dimensions:
   width: 968
-  height: 2583.2
+  height: 3500
 schema:
   headline: 'Backend Developer Roadmap: What is Backend Development?'
   description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
