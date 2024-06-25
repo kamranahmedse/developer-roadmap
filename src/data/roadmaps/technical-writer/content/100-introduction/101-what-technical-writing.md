@@ -7,3 +7,7 @@ The primary objective of a technical writer is to simplify complicated informati
 Technical writing prioritizes clear and consistent communication, using straightforward language and maintaining a uniform writing style to prevent confusion.Technical writers often integrate visual aids and leverage documentation tools to achieve these objectives.
 
 The ultimate goal is to enable the user to understand and navigate a new product or concept without difficulty.
+
+Visit the following resources to learn more:
+
+- [@article@**What is Technical Writing? The Complete Guide**](https://blog.contentre.io/what-is-technical-writing)
