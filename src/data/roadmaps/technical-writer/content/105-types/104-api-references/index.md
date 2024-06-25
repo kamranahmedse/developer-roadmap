@@ -6,3 +6,7 @@ API References are comprehensive guides designed to understand the details of th
 **API References**
 API References offer in-depth information about the functionalities of APIs. Details such as `endpoints`, `request examples`, `response types`, `response examples`, and `error codes` are thoroughly enumerated. They are made to assist developers in understanding the intricate workings of the API, allowing them to incorporate the API seamlessly into their software.
 ```
+
+Visit the following resources to learn more:
+
+- [@article@**How to Write Good API Reference Guides**](https://blog.contentre.io/how-to-write-good-api-reference-guides/)
