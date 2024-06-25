@@ -664,7 +664,7 @@
       },
       "selected": false,
       "data": {
-        "label": "AV Foundation",
+        "label": "AVFoundation",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -763,7 +763,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Meta",
+        "label": "Metal",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -1327,7 +1327,7 @@
       },
       "selected": false,
       "data": {
-        "label": "XCode",
+        "label": "Xcode",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2020,7 +2020,7 @@
       },
       "selected": false,
       "data": {
-        "label": "UI Kit",
+        "label": "UIKit",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2350,7 +2350,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Swift UI",
+        "label": "SwiftUI",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2812,7 +2812,7 @@
       },
       "selected": false,
       "data": {
-        "label": "UI Kit",
+        "label": "UIKit",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -3010,7 +3010,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Swift UI",
+        "label": "SwiftUI",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -6038,7 +6038,7 @@
       },
       "selected": false,
       "data": {
-        "label": "XCode Debugger",
+        "label": "Xcode Debugger",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

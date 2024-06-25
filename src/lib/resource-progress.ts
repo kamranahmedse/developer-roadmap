@@ -85,7 +85,7 @@ export function clearMigratedRoadmapProgress(
   resourceType: string,
   resourceId: string,
 ) {
-  const migratedRoadmaps = ['frontend'];
+  const migratedRoadmaps = ['frontend', 'backend'];
 
   if (!migratedRoadmaps.includes(resourceId)) {
     return;
@@ -100,7 +100,8 @@ export function clearMigratedRoadmapProgress(
   const clearedKey = `${resourceType}-${resourceId}-${userId}-cleared`;
 
   const clearedCount = parseInt(localStorage.getItem(clearedKey) || '0', 10);
-  if (!clearedCount || clearedCount >= 10) {
+
+  if (clearedCount >= 10) {
     return;
   }
 
