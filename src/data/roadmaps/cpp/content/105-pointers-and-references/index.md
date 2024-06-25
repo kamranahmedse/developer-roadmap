@@ -55,4 +55,6 @@ Modifying the value of `ref` will also modify the value of `num` because they sh
 
 **Note:** References are generally used when you want to pass a variable by reference in function arguments or when you want to create an alias for a variable without the need for pointer syntax.
 
-- [@article@Function Pointer in C++](https://www.geeksforgeeks.org/function-pointer-in-cpp/)
+Learn more from the following resources:
+
+- [@article@Function Pointer in C++](https://www.scaler.com/topics/cpp/function-pointer-cpp/)
