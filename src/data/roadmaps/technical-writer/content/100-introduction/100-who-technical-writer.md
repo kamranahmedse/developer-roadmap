@@ -5,3 +5,4 @@ A **Technical Writer** is a professional communicator whose role is focused on c
 - [@article@**What Is a Technical Writer?**](https://boffin.education/introduction-to-technical-writing/#2-what-is-a-technical-writer)
 - [@article@**A Day in the Life of a Technical Writer**](https://boffin.education/technical-writing-roles-and-responsibilities/#4-a-day-in-the-life-of-a-technical-writer)
 - [@article@**Glossary of Technical Writing Terms: "Technical Writer"**](https://boffin.education/glossary-of-technical-writing-terms/#technical-writer)
+- [@article@**Who is a Technical Writer? How to become one**](https://blog.contentre.io/who-is-a-technical-writer/)
