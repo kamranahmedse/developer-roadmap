@@ -664,7 +664,7 @@
       },
       "selected": false,
       "data": {
-        "label": "AV Foundation",
+        "label": "AVFoundation",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
