@@ -58,6 +58,10 @@ It's important to add a valid type, this will help us categorize the content and
 
 ## Guidelines
 
+- <p><strong>Please don't use the project for self-promotion!</strong><br />
+
+  We believe this project is a valuable asset to the developer community and it includes numerous helpful resources. We kindly ask you to avoid submitting pull requests for the sole purpose of self-promotion. We appreciate contributions that genuinely add value, such as guides from maintainers of well-known frameworks, and will consider accepting these even if they're self authored. Thank you for your understanding and cooperation!
+
 - <p><strong>Adding everything available out there is not the goal!</strong><br />
 
   The roadmaps represent the skillset most valuable today, i.e., if you were to enter any of the listed fields today, what would you learn? There might be things that are of-course being used today but prioritize the things that are most in demand today, e.g., agreed that lots of people are using angular.js today but you wouldn't want to learn that instead of React, Angular, or Vue. Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included.</p>
@@ -94,3 +98,4 @@ It's important to add a valid type, this will help us categorize the content and
   - Rewriting content in a way that doesn't add any value.
   - None English content.
   - PR's that don't follow our style guide, have no description and a default title.
+  - Links to your own blog articles.
