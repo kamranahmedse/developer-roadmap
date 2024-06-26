@@ -32,12 +32,14 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 > Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
 
-### Web Development:
+Web Development
+
 - [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
 - [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
 
-### Frontend Development:
+Frontend Development
+
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [React Native Roadmap](https://roadmap.sh/react-native)
@@ -45,7 +47,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [TypeScript Roadmap](https://roadmap.sh/typescript)
 - [Vue Roadmap](https://roadmap.sh/vue)
 
-### Backend Development:
+Backend Development
+
 - [ASP.NET Core Roadmap](https://roadmap.sh/aspnet-core)
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Java Roadmap](https://roadmap.sh/java)
@@ -53,56 +56,68 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Rust Roadmap](https://roadmap.sh/rust)
 - [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 
-### DevOps and Infrastructure:
+DevOps and Infrastructure
+
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Kubernetes Roadmap](https://roadmap.sh/kubernetes)
 - [Linux Roadmap](https://roadmap.sh/linux)
 
-### AI, Data Science, and Data Analysis:
+AI, Data Science, and Data Analysis
+
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 
-### Database and Storage:
+Database and Storage
+
 - [MongoDB Roadmap](https://roadmap.sh/mongodb)
 - [PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
 - [SQL Roadmap](https://roadmap.sh/sql)
 
-### Mobile Development:
+Mobile Development
+
 - [Android Roadmap](https://roadmap.sh/android)
 - [Flutter Roadmap](https://roadmap.sh/flutter)
 - [iOS Roadmap](https://roadmap.sh/ios)
 
-### Specialized Development:
-- [Blockchain Roadmap](https://roadmap.sh/blockchain)
-- [Game Developer Roadmap](https://roadmap.sh/game-developer) / [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
+Specialized Development
 
-### Architecture and Design:
+- [Blockchain Roadmap](https://roadmap.sh/blockchain)
+- [Game Developer Roadmap](https://roadmap.sh/game-developer)  
+- [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
+
+Architecture and Design
+
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - [System Design Roadmap](https://roadmap.sh/system-design)
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 
-### Quality Assurance:
+Quality Assurance
+
 - [QA Roadmap](https://roadmap.sh/qa)
 
-### Technical Writing and Management:
+Technical Writing and Management
+
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 
-### Specific Languages:
+Specific Languages
+
 - [C++ Roadmap](https://roadmap.sh/cpp)
 - [Python Roadmap](https://roadmap.sh/python)
 
-### API and GraphQL:
+API and GraphQL
+
 - [API Design Roadmap](https://roadmap.sh/api-design)
 - [GraphQL Roadmap](https://roadmap.sh/graphql)
 
-### Prompt Engineering:
+Prompt Engineering
+
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 
 There are also interactive best practices:
