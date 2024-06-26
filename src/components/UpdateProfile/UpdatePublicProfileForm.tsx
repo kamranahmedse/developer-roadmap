@@ -9,7 +9,8 @@ import type {
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
 import {
-  ArrowUpRight, Check,
+  ArrowUpRight,
+  Check,
   CheckCircle,
   Copy,
   Eye,
@@ -64,6 +65,7 @@ export function UpdatePublicProfileForm() {
   const [github, setGithub] = useState('');
   const [twitter, setTwitter] = useState('');
   const [linkedin, setLinkedin] = useState('');
+  const [dailydev, setDailydev] = useState('');
   const [website, setWebsite] = useState('');
 
   const [profileRoadmaps, setProfileRoadmaps] = useState<RoadmapType[]>([]);
@@ -94,6 +96,7 @@ export function UpdatePublicProfileForm() {
         website,
         name,
         email,
+        dailydev,
       },
     );
 
@@ -141,6 +144,7 @@ export function UpdatePublicProfileForm() {
     setGithub(links?.github || '');
     setTwitter(links?.twitter || '');
     setLinkedin(links?.linkedin || '');
+    setDailydev(links?.dailydev || '');
     setWebsite(links?.website || '');
     setProfileVisibility(defaultProfileVisibility || 'public');
     setHeadline(publicConfig?.headline || '');
@@ -526,6 +530,23 @@ export function UpdatePublicProfileForm() {
             placeholder="https://www.linkedin.com/in/username/"
             value={linkedin}
             onChange={(e) => setLinkedin((e.target as HTMLInputElement).value)}
+          />
+        </div>
+        <div className="flex w-full flex-col">
+          <label
+            htmlFor="dailydev"
+            className="text-sm leading-none text-slate-500"
+          >
+            daily.dev
+          </label>
+          <input
+            type="text"
+            name="dailydev"
+            id="dailydev"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="https://app.daily.dev/username"
+            value={dailydev}
+            onChange={(e) => setDailydev((e.target as HTMLInputElement).value)}
           />
         </div>
 
