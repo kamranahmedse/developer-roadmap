@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [@article@Linked List Explained: from Basics to Advanced](https://www.freecodecamp.org/news/how-linked-lists-work/)
 - [@video@Introduction To Linked List](https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2)
+- [@video@Python Linked List](https://www.youtube.com/watch?v=qp8u-frRAnU&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=4&ab_channel=codebasics)
