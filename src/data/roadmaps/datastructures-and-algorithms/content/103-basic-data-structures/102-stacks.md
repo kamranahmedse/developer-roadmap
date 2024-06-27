@@ -13,4 +13,6 @@ The basic principle of stack operation is that in a stack, the element that is a
 Learn more from the following links:
 
 - [@video@Stacks](https://www.youtube.com/watch?v=GYptUgnIM_I&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69&ab_channel=takeUforward)
+- [@video@freeCodeCamp](https://www.youtube.com/watch?v=O1KeXo8lE8A&t=3525s&ab_channel=freeCodeCamp.org)
 - [@video@Python Stacks](https://www.youtube.com/watch?v=zwb3GmNAtFk&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=7&ab_channel=codebasics)
+- [@article@Leetcode](https://leetcode.com/problems/valid-parentheses/)
