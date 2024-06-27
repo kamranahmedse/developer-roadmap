@@ -4,4 +4,8 @@ In Rust, `String` is a growable, mutable, owned, UTF-8 encoded string type. When
 
 Learn more from the following links:
 
-- [@article@What Is a String?](https://doc.rust-lang.org/book/ch08-02-strings.html?highlight=String#what-is-a-string)
+- [@official@String in std::string - Rust](https://doc.rust-lang.org/std/string/struct.String.html)
+- [@official@str - Rust](https://doc.rust-lang.org/std/primitive.str.html)
+- [@official@What Is a String?](https://doc.rust-lang.org/book/ch08-02-strings.html?highlight=String#what-is-a-string)
+- [@article@Rust String (With Examples)](https://www.programiz.com/rust/string)
+- [@video@All Rust string types explained](https://www.youtube.com/watch?v=CpvzeyzgQdw&pp=ygUOc3RyaW5nIGluIHJ1c3Q%3D)
