@@ -8,4 +8,3 @@ Learn more from the following links:
 - [@video@Python Hash Table Part 1](https://www.youtube.com/watch?v=ea8BRGxGmlA)
 - [@video@Python Hash Table Part 2](https://www.youtube.com/watch?v=54iv1si4YCM)
 
-  
