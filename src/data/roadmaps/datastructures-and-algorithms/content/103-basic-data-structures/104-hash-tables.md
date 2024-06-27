@@ -5,7 +5,7 @@
 Learn more from the following links:
 
 - [@video@Hash Table](https://www.youtube.com/watch?v=KEs5UyBJ39g&ab_channel=takeUforward)
-- [@video@Python Hash Table Part 1](https://www.youtube.com/watch?v=ea8BRGxGmlA&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=5&ab_channel=codebasics)
+- [@video@Python Hash Table Part 1](https://www.youtube.com/watch?v=ea8BRGxGmlA)
 - [@video@Python Hash Table Part 2](https://www.youtube.com/watch?v=54iv1si4YCM&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=6&ab_channel=codebasics)
 
   
