@@ -44,6 +44,7 @@ export interface UserDocument {
     github?: string;
     linkedin?: string;
     twitter?: string;
+    dailydev?: string;
     website?: string;
   };
   username?: string;
