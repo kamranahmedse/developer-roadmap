@@ -20,7 +20,7 @@ return_type function_name(parameter list) {
 
 - `return_type`: Data type of the output produced by the function. It can be `void`, indicating that the function doesn't return any value.
 - `function_name`: Name given to the function, following C++ naming conventions.
-- `parameter list`: List of input parameters/arguments that are needed to perform the task. It is optional, and when no parameters are needed, you can leave it blank or use the keyword `void`.
+- `parameter list`: List of input parameters/arguments that are needed to perform the task. It is optional, you can leave it blank when no parameters are needed.
 
 ## Example
 
