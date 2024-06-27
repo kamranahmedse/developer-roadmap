@@ -1,5 +1,12 @@
-import { Github, Globe, LinkedinIcon, Mail, Twitter } from 'lucide-react';
+import {
+  Github,
+  Globe,
+  LinkedinIcon,
+  Mail,
+  Twitter,
+} from 'lucide-react';
 import type { GetPublicProfileResponse } from '../../api/user';
+import { DailyDevIcon } from '../DailyDevIcon';
 
 type UserPublicProfileHeaderProps = {
   userDetails: GetPublicProfileResponse;
@@ -12,7 +19,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
   const { headline, isAvailableForHire, isEmailVisible } = publicConfig!;
 
   return (
-    <div className="flex items-center gap-6 container bg-white border p-8 rounded-xl">
+    <div className="container flex items-center gap-6 rounded-xl border bg-white p-8">
       <img
         src={
           avatar
@@ -37,6 +44,9 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
             <UserLink href={links?.linkedin} icon={LinkedinIcon} />
           )}
           {links?.twitter && <UserLink href={links?.twitter} icon={Twitter} />}
+          {links?.dailydev && (
+            <UserLink href={links?.dailydev} icon={DailyDevIcon} />
+          )}
           {links?.website && <UserLink href={links?.website} icon={Globe} />}
           {isEmailVisible && <UserLink href={`mailto:${email}`} icon={Mail} />}
         </div>
@@ -47,7 +57,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
 
 type UserLinkProps = {
   href: string;
-  icon: typeof Github;
+  icon: ((props: React.SVGProps<SVGSVGElement>) => JSX.Element) | typeof Globe;
 };
 
 export function UserLink(props: UserLinkProps) {

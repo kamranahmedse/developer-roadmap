@@ -61,6 +61,8 @@ updateDays(30); // expiresInDays = 30
 
 Note that, when using the capture by reference, any change made to the captured variable _inside_ the lambda function will affect its value in the surrounding scope.
 
+Learn more from the following resources:
+
 - [@video@Lambdas in C++](https://youtu.be/MH8mLFqj-n8)
 - [@article@Lambda Expressions](https://en.cppreference.com/w/cpp/language/lambda)
 - [@feed@Explore top posts about AWS Lambda](https://app.daily.dev/tags/aws-lambda?ref=roadmapsh)
