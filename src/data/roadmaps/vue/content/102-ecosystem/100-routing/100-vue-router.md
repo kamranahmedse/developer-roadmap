@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Vue Router](https://router.vuejs.org/)
 - [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)
+- [@video@The Vue Router](https://www.youtube.com/watch?v=juocv4AtrHo)
