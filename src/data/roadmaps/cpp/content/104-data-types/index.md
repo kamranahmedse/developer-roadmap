@@ -90,7 +90,7 @@ Structures are used to store different data types under a single variable and ac
 Example:
 ```cpp
 struct Person {
-    string name;
+    std::string name;
     int age;
     float height;
 };
@@ -105,11 +105,11 @@ Example:
 ```cpp
 class Person {
 public:
-    string name;
+    std::string name;
     int age;
 
     void printInfo() {
-        cout << "Name: " << name << ", Age: " << age << endl;
+        std::cout << "Name: " << name << ", Age: " << age << std::endl;
     };
 };
 
