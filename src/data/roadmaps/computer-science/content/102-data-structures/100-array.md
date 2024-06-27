@@ -4,6 +4,7 @@ Arrays store elements in contiguous memory locations, resulting in easily calcul
 
 Visit the following resources to learn more:
 
+- [@video@Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
 - [@course@Array Data Structure - Coursera](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
 - [@course@Dynamic Arrays - Coursera](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
 - [@article@UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE)
