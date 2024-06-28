@@ -45,14 +45,13 @@ Example using GDB:
 // test.cpp
 
 #include <iostream>
-using namespace std;
 
 int main() {
     int num1 = 10;
     int num2 = 0;
     int result = num1 / num2;
 
-    cout << "Result: " << result << endl;
+    std::cout << "Result: " << result << std::endl;
 
     return 0;
 }

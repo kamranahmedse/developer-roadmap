@@ -11,15 +11,15 @@ isUpcoming: false
 isNew: true
 seo:
   title: Product Manager
-  description: Everything you need to know to become a Product Manager.
+  description: Learn what product management is, what product managers do and how to become one using our community-driven roadmap.
 dimensions:
   width: 968
   height: 5200
 schema:
   headline: Product Manager
-  description: Everything you need to know to become a Product Manager.
+  description: Learn what product management is, what product managers do and how to become one using our community-driven roadmap.
   datePublished: '2024-06-10'
-  dateModified: '2024-06-10'
+  dateModified: '2024-06-27'
   imageUrl: https://roadmap.sh/roadmaps/product-manager.png
 relatedRoadmaps:
   - 'ux-design'

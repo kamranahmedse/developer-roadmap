@@ -1017,8 +1017,8 @@
       "id": "Iv-ZRTeVmvk7l7X9nk3ds",
       "type": "paragraph",
       "position": {
-        "x": 351.5493344024744,
-        "y": -60
+        "x": 346.5493344024744,
+        "y": -59.5
       },
       "selected": false,
       "data": {
@@ -1026,19 +1026,24 @@
         "style": {
           "fontSize": 20,
           "justifyContent": "flex-start",
-          "textAlign": "left"
+          "textAlign": "center"
         }
       },
       "zIndex": 999,
-      "width": 175,
-      "height": 67,
+      "width": 185,
+      "height": 66,
       "dragging": false,
       "positionAbsolute": {
-        "x": 351.5493344024744,
-        "y": -60
+        "x": 346.5493344024744,
+        "y": -59.5
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "style": {
+        "width": 185,
+        "height": 66
+      },
+      "resizing": false
     },
     {
       "id": "AY7_xUeCl6ilqZzg1YFoP",
@@ -1763,7 +1768,7 @@
       "id": "i-TQe48edt3Va_oZGVBLX",
       "type": "paragraph",
       "position": {
-        "x": -185.4848179138105,
+        "x": -188.4848179138105,
         "y": 1007.1758182495494
       },
       "selected": false,
@@ -1772,20 +1777,25 @@
         "style": {
           "fontSize": 20,
           "justifyContent": "flex-start",
-          "textAlign": "left"
+          "textAlign": "center"
         },
         "oldId": "Iv-ZRTeVmvk7l7X9nk3ds"
       },
       "zIndex": 999,
-      "width": 210,
+      "width": 216,
       "height": 67,
       "dragging": false,
       "positionAbsolute": {
-        "x": -185.4848179138105,
+        "x": -188.4848179138105,
         "y": 1007.1758182495494
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "style": {
+        "width": 216,
+        "height": 67
+      },
+      "resizing": false
     },
     {
       "id": "5xAE-9viD7DP_ugQ6NE_C",

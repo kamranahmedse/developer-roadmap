@@ -4,7 +4,7 @@ A **function** is a group of statements that perform a specific task, organized 
 
 There are mainly two types of functions in C++:
 
-- **Standard library functions**: Pre-defined functions available in the C++ standard library, such as `printf()`, `scanf()`, `sqrt()`, and many more. These functions are part of the standard library, so you need to include the appropriate header file to use them.
+- **Standard library functions**: Pre-defined functions available in the C++ standard library, such as `sort()`, `strlen()`, `sqrt()`, and many more. These functions are part of the standard library, so you need to include the appropriate header file to use them.
 
 - **User-defined functions**: Functions created by the programmer to perform a specific task. To create a user-defined function, you need to define the function and call it in your code.
 
@@ -20,13 +20,12 @@ return_type function_name(parameter list) {
 
 - `return_type`: Data type of the output produced by the function. It can be `void`, indicating that the function doesn't return any value.
 - `function_name`: Name given to the function, following C++ naming conventions.
-- `parameter list`: List of input parameters/arguments that are needed to perform the task. It is optional, and when no parameters are needed, you can leave it blank or use the keyword `void`.
+- `parameter list`: List of input parameters/arguments that are needed to perform the task. It is optional, you can leave it blank when no parameters are needed.
 
 ## Example
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 // Function to add two numbers
 int addNumbers(int a, int b) {
@@ -37,7 +36,7 @@ int addNumbers(int a, int b) {
 int main() {
     int num1 = 5, num2 = 10;
     int result = addNumbers(num1, num2); // Calling the function
-    cout << "The sum is: " << result << endl;
+    std::cout << "The sum is: " << result << std::endl;
     return 0;
 }
 ```
@@ -52,7 +51,6 @@ A function prototype is a declaration of the function without its body, and it i
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 // Function prototype
 int multiplyNumbers(int x, int y);
@@ -60,7 +58,7 @@ int multiplyNumbers(int x, int y);
 int main() {
     int num1 = 3, num2 = 7;
     int result = multiplyNumbers(num1, num2); // Calling the function
-    cout << "The product is: " << result << endl;
+    std::cout << "The product is: " << result << std::endl;
     return 0;
 }
 
