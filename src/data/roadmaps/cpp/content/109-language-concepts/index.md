@@ -25,14 +25,14 @@ Example:
 ```cpp
 // If-else statement
 if (age > 18) {
-    cout << "You are eligible to vote.";
+    std::cout << "You are eligible to vote.";
 } else {
-    cout << "You are not eligible to vote.";
+    std::cout << "You are not eligible to vote.";
 }
 
 // For loop
 for (int i = 0; i < 5; i++) {
-    cout << "Hello World!";
+    std::cout << "Hello World!";
 }
 ```
 
@@ -47,7 +47,7 @@ int add(int a, int b) {
 
 int main() {
     int sum = add(10, 20);
-    cout << "The sum is: " << sum;
+    std::cout << "The sum is: " << sum;
     return 0;
 }
 ```
@@ -61,7 +61,7 @@ Example:
 int marks[] = {90, 80, 95, 85};
 
 // Vector
-vector<int> scores = {10, 20, 30, 40};
+std::vector<int> scores = {10, 20, 30, 40};
 ```
 
 ## Pointers
@@ -80,17 +80,17 @@ Example:
 ```cpp
 // Structure
 struct Student {
-    string name;
+    std::string name;
     int age;
 };
 
 // Class
 class Employee {
 public:
-    string name;
+    std::string name;
     int age;
     void displayInfo() {
-        cout << "Name: " << name << "\nAge: " << age;
+        std::cout << "Name: " << name << "\nAge: " << age;
     }
 };
 ```
@@ -103,14 +103,14 @@ Example:
 class Base {
 public:
     void display() {
-        cout << "This is the base class.";
+        std::cout << "This is the base class.";
     }
 };
 
 class Derived : public Base {
 public:
     void display() {
-        cout << "This is the derived class.";
+        std::cout << "This is the derived class.";
     }
 };
 ```
@@ -124,7 +124,7 @@ try {
     // Code that might throw an exception
     int result = a / b;
 } catch (const exception &e) {
-    cout << "Caught an exception: " << e.what();
+    std::cout << "Caught an exception: " << e.what();
 }
 ```
 

@@ -39,11 +39,11 @@ try {
     throw "Division by zero not allowed!";
   } else {
     int result = num1 / num2;
-    cout << "Result: " << result << endl;
+    std::cout << "Result: " << result << std::endl;
   }
 }
 catch (const char* e) {
-  cout << "Error: " << e << endl;
+  std::cout << "Error: " << e << std::endl;
 }
 ```
 
