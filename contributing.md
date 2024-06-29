@@ -50,7 +50,6 @@ Visit the following resources to learn more:
 - `@opensource@`
 - `@article@`
 - `@course@`
-- `@opensource@`
 - `@podcast@`
 - `@video@`
 
