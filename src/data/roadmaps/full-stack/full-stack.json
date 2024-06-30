@@ -687,7 +687,7 @@
           "y": "387",
           "properties": {
             "size": "32",
-            "text": "Full Stack "
+            "text": "Full-stack "
           }
         },
         {
@@ -3411,7 +3411,7 @@
           "y": "2503",
           "properties": {
             "size": "17",
-            "text": "Continue Learning with following relevant tracks"
+            "text": "Continue Learning with the following relevant tracks"
           }
         },
         {
@@ -3782,7 +3782,7 @@
                   "y": "249",
                   "properties": {
                     "size": "18",
-                    "text": "full stack development."
+                    "text": "full-stack development."
                   }
                 },
                 {

@@ -5,9 +5,9 @@ Now that you have learnt HTML and CSS, you should be able to build static webpag
 The practice that I used to follow when I was learning was this:
 
 - While you are watching a course or reading a book, make sure to code along with the instructor/author — pause the video at regular intervals and code what you are being taught.
-- Search on YouTube and watch a few project based tutorials on the topic that you are learning. Apart from coding along with the instructor:
+- Search on YouTube and watch a few project-based tutorials on the topic that you are learning. Apart from coding along with the instructor:
   - Try to build the same project at least 2 to 3 times on your own without looking at the video. If you get stuck, refer to the section of the video where the instructor builds that part of the project.
-  - Build something else that is similar to the project that you just built. For example, if you just built a todo app, try to build a notes app or a reminder app.
+  - Build something else that is similar to the project that you just built. For example, if you just built a todo app, try to build a note app or a reminder app.
 
 ## Project Ideas
 
