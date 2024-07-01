@@ -11,7 +11,7 @@ hasTopics: true
 isForkable: false
 isNew: true
 question:
-  title: 'What is DevRel Engineering?'
+  title: 'What is DevRel/Developer Relations?'
   description: |
     DevRel, short for Developer Relations, is a role that focuses on building relationships with developers and the developer community. DevRel professionals work to create a positive developer experience by providing technical resources, support, and advocacy. They often represent a company or organization at developer events, conferences, and online forums, and help developers understand and use the company's products and services. DevRel roles can vary widely depending on the organization, but typically involve a mix of technical expertise, communication skills, and community building.
 
