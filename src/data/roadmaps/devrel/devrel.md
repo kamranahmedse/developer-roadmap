@@ -9,6 +9,7 @@ title: 'DevRel Engineer'
 description: 'Step by step guide to becoming a DevRel Engineer in 2024'
 hasTopics: true
 isForkable: false
+isNew: true
 question:
   title: 'What is DevRel Engineering?'
   description: |
@@ -18,7 +19,7 @@ question:
     Building relationships with developers and the developer community, creating technical resources and content, representing the company at events and conferences, providing support and advocacy for developers, and helping developers understand and use the company's products and services.
 dimensions:
   width: 968
-  height: 3500
+  height: 3550
 schema:
   headline: 'DevRel Roadmap: What is DevRel Engineering?'
   description: 'Learn what DevRel is, what developer advocates do and how to become one using our community-driven roadmap.'
@@ -59,8 +60,6 @@ relatedRoadmaps:
   - 'backend'
   - 'full-stack'
   - 'product-manager'
-relatedQuestions:
-  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'
