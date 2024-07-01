@@ -5900,8 +5900,8 @@
       "id": "9KGr7c7SKxXq3kn8In0I2",
       "type": "paragraph",
       "position": {
-        "x": -308.61787473083643,
-        "y": 1233.057254188356
+        "x": -321.61787473083643,
+        "y": 1232.557254188356
       },
       "selected": false,
       "data": {
@@ -5917,13 +5917,18 @@
         }
       },
       "zIndex": 999,
-      "width": 215,
-      "height": 67,
+      "width": 239,
+      "height": 68,
       "dragging": false,
       "positionAbsolute": {
-        "x": -308.61787473083643,
-        "y": 1233.057254188356
-      }
+        "x": -321.61787473083643,
+        "y": 1232.557254188356
+      },
+      "style": {
+        "width": 239,
+        "height": 68
+      },
+      "resizing": false
     },
     {
       "id": "Hi6E8R4-iQtZVnus3np_5",
