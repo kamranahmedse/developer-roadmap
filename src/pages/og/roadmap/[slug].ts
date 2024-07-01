@@ -25,11 +25,6 @@ export const GET: APIRoute<any, Params> = async (context) => {
   }
 
   const svg = await getResourceOpenGraph('roadmap', slug);
-
-  if (slug === 'devrel') {
-    console.log(svg);
-  }
-
   const transformer = Transformer.fromSvg(svg).crop(0, 0, 1200, 630);
 
   return new Response(await transformer.png(), {
