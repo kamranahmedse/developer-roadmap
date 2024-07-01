@@ -222,6 +222,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Terraform',
+        link: '/terraform',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
