@@ -1,15 +1,11 @@
 # Memory Management
 
-Memory management is the process of allocating memory for objects and freeing it after use.
+Memory management involves allocating memory for objects and freeing it after use. Manual Retain-Release (MRR) requires developers to explicitly manage memory using reference counting, provided by the Foundation class NSObject. Automatic Reference Counting (ARC) automates this process by inserting memory management method calls during compilation, though it still uses reference counting. In contrast, Garbage Collection (GC) automatically tracks object ownership and releases unreferenced objects, using a different mechanism than MRR and ARC, and is supported only in the Mac OS X runtime environment, not on iOS.
 
-- Manual Retain-Release (MRR) is where you explicitly manage memory by keeping track of the objects you have. This is implemented using a model known as reference counting, which the Foundation class NSObject provides in conjunction with the runtime environment.
-
-- In Automatic Reference Counting (ARC), the system uses the same reference counting as the MRR system, but it inserts the appropriate memory management method calls for you during compilation.
-
-- In Garbage Collection (GC), the system automatically tracks which objects own other objects. It then automatically releases (or collects) objects that are no longer referenced. This method uses a different mechanism than those used in MRR and ARC, and is only supported in the runtime environment on Mac OS X, not iOS.
 > Beginning May 1, 2015, new Mac apps and app updates submitted to the Mac App Store may no longer use garbage collection, which was deprecated in OS X Mountain Lion. Instead, migrate your apps to Automatic Reference Counting, using the migration assistant in Xcode to help with this transition. Apps may continue to use retain/release for manual memory management. For more information, read the [Transitioning to ARC Release Notes](https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
 
 Visit the following resources to learn more:
+
 - [@official@WWDC2021: ARC in Swift: Basics and beyond](https://developer.apple.com/videos/play/wwdc2021/10216/)
 - [@official@ARC(Automatic Reference Counting)](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/)
 - [@official@About Memory Management](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html)
