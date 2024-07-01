@@ -34,3 +34,4 @@ In conclusion, cryptography is a fundamental aspect of cyber security, offering 
 
 - [@article@Cryptography for Dummies (TryHackMe)](https://tryhackme.com/room/cryptographyfordummies)
 - [@feed@Explore top posts about Cryptography](https://app.daily.dev/tags/cryptography?ref=roadmapsh)
+- [@article@How to Protect Data in Transit using HMAC and Diffie-Hellman in Node.js](https://www.freecodecamp.org/news/hmac-diffie-hellman-in-node/)
