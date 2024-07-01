@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@React W3Schools](https://www.w3schools.com/react/react_intro.asp)
 - [@article@Advanced: Custom Setup with Webpack](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 - [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)
+- [@feed@Explore top posts about React](https://www.youtube.com/watch?v=FxgM9k1rg0Q)
