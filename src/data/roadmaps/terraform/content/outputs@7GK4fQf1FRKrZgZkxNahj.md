@@ -5,4 +5,5 @@ Terraform outputs expose selected values from a configuration or module, making 
 Learn more from the following resources:
 
 - [@official@Output Values](https://developer.hashicorp.com/terraform/language/values/outputs)
-- [@video@Learn Terraform Outputs in 4 Minutes](https://www.youtube.com/watch?v=i-Ky1Tut_2I&pp=ygURdGVycmFmb3JtIG91dHB1dHM%3D)
+- [@article@Terraform Output Values](https://spacelift.io/blog/terraform-output)
+- [@video@Learn Terraform Outputs in 4 Minutes](https://www.youtube.com/watch?v=i-Ky1Tut_2I)

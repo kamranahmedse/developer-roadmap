@@ -5,4 +5,5 @@ Infrastructure as Code (IaC) is a practice in DevOps and cloud computing that in
 Learn more from the following resources:
 
 - [@article@What Is It? Why Is It Important?](https://www.hashicorp.com/resources/what-is-infrastructure-as-code)
+- [@article@What is Infrastructure as Code?](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)
 - [@video@What is Infrastructure as Code?](https://www.youtube.com/watch?v=zWw2wuiKd5o)

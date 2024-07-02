@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Terraform Registry](https://registry.terraform.io/)
 - [@article@Terraform Registry Guide](https://spacelift.io/blog/terraform-registry)
+- [@video@Terraform Registry Providers and Modules](https://www.youtube.com/watch?v=q4VdvS8aXnc)

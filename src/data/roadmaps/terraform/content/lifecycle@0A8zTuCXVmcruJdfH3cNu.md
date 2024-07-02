@@ -4,3 +4,4 @@ The lifecycle meta-argument in Terraform customizes the behavior of resources du
 
 - [@official@Terraform Docs - for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
 - [@article@Terraform Resource Lifecycle](https://spacelift.io/blog/terraform-resource-lifecycle)
+- [@article@Understanding the Lifecycle Block](https://dev.to/pwd9000/terraform-understanding-the-lifecycle-block-4f6e)

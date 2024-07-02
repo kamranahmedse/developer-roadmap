@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@official@Terraform Docs - count](https://developer.hashicorp.com/terraform/language/meta-arguments/count)
 - [@article@Terraform by Example - count](https://www.terraformbyexample.com/count)
+- [@video@Conditional blocks in Terraform using count](https://www.youtube.com/watch?v=RVoIqWkN_gI)

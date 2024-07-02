@@ -5,4 +5,5 @@ Terraform uses variables to make configurations more flexible and reusable. Vari
 Learn more from the following resources:
 
 - [@official@Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
-- [@article@How To Use Terraform Variables](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://spacelift.io/blog/how-to-use-terraform-variables&ved=2ahUKEwi-iLGTsYiHAxUMUEEAHWkKAm4QFnoECBIQAQ&usg=AOvVaw1WYN2hT1VjbCgUwrgSss9T)
+- [@article@How To Use Terraform Variables](https://spacelift.io/blog/how-to-use-terraform-variables)
+- [@video@Learn How to Use Terraform Variable](https://www.youtube.com/watch?v=oArutYYvQ_Y)

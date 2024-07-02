@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@official@Terraform Docs - for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
 - [@article@Terraform by Example - for_each](https://www.terraformbyexample.com/for_each)
+- [@video@Terraform for loops](https://www.youtube.com/watch?v=4qO7WK6D3cA)

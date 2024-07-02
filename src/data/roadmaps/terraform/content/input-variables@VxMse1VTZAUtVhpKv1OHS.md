@@ -5,4 +5,5 @@ Terraform input variables are parameters for modules, declared using variable bl
 Learn more from the following resources:
 
 - [@official@Define Input Variables](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-variables)
+- [@article@Terraform Input and Output Variables Explained](https://kodekloud.com/blog/terraform-variables-explained/)
 - [@video@Terraform Basics: Input Variables](https://www.youtube.com/watch%3Fv%3D2f65JhfYmIo)

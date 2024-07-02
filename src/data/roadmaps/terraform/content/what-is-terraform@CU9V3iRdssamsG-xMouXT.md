@@ -5,4 +5,5 @@ Terraform is a powerful tool designed by HashiCorp that helps you set up, manage
 Learn more from the following resources:
 
 - [@official@What is Terraform?](https://developer.hashicorp.com/terraform/intro#what-is-terraform)
+- [@article@What is Terraform?](https://www.varonis.com/blog/what-is-terraform)
 - [@video@What is Terraform? Terraform Explained in 2 Minutes](https://www.youtube.com/watch?v=lIaUz2GAqEQ)

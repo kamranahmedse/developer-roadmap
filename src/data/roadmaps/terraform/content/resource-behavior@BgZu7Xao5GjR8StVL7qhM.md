@@ -5,3 +5,4 @@ Resource behavior encompasses how resources are managed, created, updated, and d
 Learn more from the following resources:
 
 - [@official@Behaviour](https://developer.hashicorp.com/terraform/language/resources/behavior)
+- [@article@Terraform Resource Syntax, Behavior and State](https://terraformguru.com/terraform-certification-using-azure-cloud/09-Resource-Syntax-and-Behavior/)

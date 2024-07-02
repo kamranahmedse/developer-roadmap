@@ -5,3 +5,4 @@ Configuring providers in Terraform involves specifying the required provider in 
 Learn more from the following resources:
 
 - [@official@Providers Overview](https://developer.hashicorp.com/terraform/language/providers#providers)
+- [@article@How To Use Terraform Providers](https://www.env0.com/blog/how-to-use-terraform-providers)

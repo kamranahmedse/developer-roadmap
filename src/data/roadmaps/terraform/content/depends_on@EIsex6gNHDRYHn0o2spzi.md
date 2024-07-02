@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Terraform Docs - depends_on](https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on)
 - [@article@How to Use Terraform depends_on](https://spacelift.io/blog/terraform-depends-on)
+- [@video@How to use Terraform depends_on meta tag?](https://www.youtube.com/watch?v=v0Qt-ltvmXU)
