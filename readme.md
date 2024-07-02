@@ -32,20 +32,25 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 > Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
 
-Web Development
+AI, Data Science, and Data Analysis
 
-- [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
-- [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
-- [Full Stack Roadmap](https://roadmap.sh/full-stack)
+- [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
+- [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
+- [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
+- [MLOps Roadmap](https://roadmap.sh/mlops)
 
-Frontend Development
+API and GraphQL
 
-- [Angular Roadmap](https://roadmap.sh/angular)
-- [JavaScript Roadmap](https://roadmap.sh/javascript)
-- [React Native Roadmap](https://roadmap.sh/react-native)
-- [React Roadmap](https://roadmap.sh/react)
-- [TypeScript Roadmap](https://roadmap.sh/typescript)
-- [Vue Roadmap](https://roadmap.sh/vue)
+- [API Design Roadmap](https://roadmap.sh/api-design)
+- [GraphQL Roadmap](https://roadmap.sh/graphql)
+
+Architecture and Design
+
+- [Design System Roadmap](https://roadmap.sh/design-system)
+- [Software Architect Roadmap](https://roadmap.sh/software-architect)
+- [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
+- [System Design Roadmap](https://roadmap.sh/system-design)
+- [UX Design Roadmap](https://roadmap.sh/ux-design)
 
 Backend Development
 
@@ -56,6 +61,12 @@ Backend Development
 - [Rust Roadmap](https://roadmap.sh/rust)
 - [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 
+Database and Storage
+
+- [MongoDB Roadmap](https://roadmap.sh/mongodb)
+- [PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
+- [SQL Roadmap](https://roadmap.sh/sql)
+
 DevOps and Infrastructure
 
 - [AWS Roadmap](https://roadmap.sh/aws)
@@ -64,18 +75,14 @@ DevOps and Infrastructure
 - [Kubernetes Roadmap](https://roadmap.sh/kubernetes)
 - [Linux Roadmap](https://roadmap.sh/linux)
 
-AI, Data Science, and Data Analysis
+Frontend Development
 
-- [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
-- [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
-- [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
-- [MLOps Roadmap](https://roadmap.sh/mlops)
-
-Database and Storage
-
-- [MongoDB Roadmap](https://roadmap.sh/mongodb)
-- [PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
-- [SQL Roadmap](https://roadmap.sh/sql)
+- [Angular Roadmap](https://roadmap.sh/angular)
+- [JavaScript Roadmap](https://roadmap.sh/javascript)
+- [React Native Roadmap](https://roadmap.sh/react-native)
+- [React Roadmap](https://roadmap.sh/react)
+- [TypeScript Roadmap](https://roadmap.sh/typescript)
+- [Vue Roadmap](https://roadmap.sh/vue)
 
 Mobile Development
 
@@ -83,58 +90,51 @@ Mobile Development
 - [Flutter Roadmap](https://roadmap.sh/flutter)
 - [iOS Roadmap](https://roadmap.sh/ios)
 
+Prompt Engineering
+
+- [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+
+Quality Assurance
+
+- [QA Roadmap](https://roadmap.sh/qa)
+
 Specialized Development
 
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
 - [Game Developer Roadmap](https://roadmap.sh/game-developer)  
 - [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
 
-Architecture and Design
+Specific Languages
 
-- [Design System Roadmap](https://roadmap.sh/design-system)
-- [Software Architect Roadmap](https://roadmap.sh/software-architect)
-- [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
-- [System Design Roadmap](https://roadmap.sh/system-design)
-- [UX Design Roadmap](https://roadmap.sh/ux-design)
-
-Quality Assurance
-
-- [QA Roadmap](https://roadmap.sh/qa)
+- [C++ Roadmap](https://roadmap.sh/cpp)
+- [Python Roadmap](https://roadmap.sh/python)
 
 Technical Writing and Management
 
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 
-Specific Languages
+Web Development
 
-- [C++ Roadmap](https://roadmap.sh/cpp)
-- [Python Roadmap](https://roadmap.sh/python)
-
-API and GraphQL
-
-- [API Design Roadmap](https://roadmap.sh/api-design)
-- [GraphQL Roadmap](https://roadmap.sh/graphql)
-
-Prompt Engineering
-
-- [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
+- [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
+- [Full Stack Roadmap](https://roadmap.sh/full-stack)
 
 There are also interactive best practices:
 
-- [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
-- [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
-- [Code Review Best Practices](https://roadmap.sh/best-practices/code-review)
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
+- [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
+- [Code Review Best Practices](https://roadmap.sh/best-practices/code-review)
+- [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
 
 ..and questions to help you test, rate and improve your knowledge
 
+- [Backend Questions](https://roadmap.sh/questions/backend)
+- [Frontend Questions](https://roadmap.sh/questions/frontend)
 - [JavaScript Questions](https://roadmap.sh/questions/javascript)
 - [Node.js Questions](https://roadmap.sh/questions/nodejs)
 - [React Questions](https://roadmap.sh/questions/react)
-- [Backend Questions](https://roadmap.sh/questions/backend)
-- [Frontend Questions](https://roadmap.sh/questions/frontend)
 
 ![](https://i.imgur.com/waxVImv.png)
 
