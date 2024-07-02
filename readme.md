@@ -35,6 +35,12 @@ Here is the list of available roadmaps with more being actively worked upon.
 AI, Data Science, and Data Analysis
 
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
+
+=======
+- [AWS Roadmap](https://roadmap.sh/aws)
+- [Linux Roadmap](https://roadmap.sh/linux)
+- [Terraform Roadmap](https://roadmap.sh/terraform)
+
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
@@ -113,6 +119,7 @@ Technical Writing and Management
 
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
+- [DevRel Engineer Roadmap](https://roadmap.sh/devrel)
 
 Web Development
 

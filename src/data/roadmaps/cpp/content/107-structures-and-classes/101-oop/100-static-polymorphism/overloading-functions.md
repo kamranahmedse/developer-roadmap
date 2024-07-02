@@ -10,18 +10,17 @@ Here's an example illustrating function overloading:
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 void print(int num) {
-    cout << "Printing int: " << num << endl;
+    std::cout << "Printing int: " << num << std::endl;
 }
 
 void print(double num) {
-    cout << "Printing double: " << num << endl;
+    std::cout << "Printing double: " << num << std::endl;
 }
 
 void print(char const *str) {
-    cout << "Printing string: " << str << endl;
+    std::cout << "Printing string: " << str << std::endl;
 }
 
 int main() {

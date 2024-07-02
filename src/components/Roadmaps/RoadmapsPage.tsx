@@ -222,6 +222,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Terraform',
+        link: '/terraform',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
@@ -313,6 +319,11 @@ const groups: GroupType[] = [
       {
         title: 'Product Manager',
         link: '/product-manager',
+        type: 'role',
+      },
+      {
+        title: 'DevRel Engineer',
+        link: '/devrel',
         type: 'role',
       },
     ],

@@ -4,4 +4,7 @@ The `HashMap` in Rust is part of the standard library's collections framework an
 
 Learn more from the following links:
 
-- [@article@Storing Keys With Associated Values In Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html?highlight=hashmap#storing-keys-with-associated-values-in-hash-maps)
+- [@official@HashMap in std::collections - Rust](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
+- [@official@Storing Keys With Associated Values In Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html?highlight=hashmap#storing-keys-with-associated-values-in-hash-maps)
+- [@article@Hash Table](https://en.wikipedia.org/wiki/Hash_table)
+- [@video@HashMaps: key-value stores in Rust](https://www.youtube.com/watch?v=BfmSYuDdg8Q)

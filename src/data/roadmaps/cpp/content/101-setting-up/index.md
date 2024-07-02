@@ -6,9 +6,8 @@ Setting up C++ requires a few steps, including installing a compiler, configurin
 
 A compiler is required to convert C++ code into machine language. Some popular C++ compilers include:
 
-- GCC (GNU Compiler Collection) for Linux and macOS
-- MinGW (Minimalist GNU for Windows) for Windows
-- Microsoft Visual C++ for Windows
+- GCC (GNU Compiler Collection) for Linux and macOS, but can also be used on Windows through MinGW
+- MSVC (Microsoft Visual C++) for Windows
 
 To install a compiler, simply follow the instructions provided by the respective websites.
 

@@ -18,11 +18,10 @@ For example:
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     for (int i = 0; i < 5; i++) {
-        cout << "Iteration: " << i << endl;
+        std::cout << "Iteration: " << i << std::endl;
     }
     return 0;
 }
@@ -44,12 +43,11 @@ For example:
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int i = 0;
     while (i < 5) {
-        cout << "Iteration: " << i << endl;
+        std::cout << "Iteration: " << i << std::endl;
         i++;
     }
     return 0;
@@ -72,12 +70,11 @@ For example:
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int i = 0;
     do {
-        cout << "Iteration: " << i << endl;
+        std::cout << "Iteration: " << i << std::endl;
         i++;
     } while (i < 5);
     return 0;
@@ -85,5 +82,7 @@ int main() {
 ```
 
 In summary, loops are an integral part of C++ programming that allow you to execute a block of code multiple times. The three types of loops in C++ are `for`, `while`, and `do-while`. Each type has its own specific use case and can be chosen depending on the desired behavior.
+
+Learn more from the following resources:
 
 - [@article@C++ For Loop](https://www.w3schools.com/cpp/cpp_for_loop.asp)
