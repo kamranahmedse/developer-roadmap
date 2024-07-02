@@ -1,6 +1,72 @@
 {
   "nodes": [
     {
+      "id": "6d4tMXBEALIhd7Imd7ZK9",
+      "type": "paragraph",
+      "position": {
+        "x": -719.0482259900746,
+        "y": -255.15106699547107
+      },
+      "selected": false,
+      "data": {
+        "label": "Shout-out to Arindam who helped review and publish this roadmap.",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "#000000",
+          "backgroundColor": "#ffffff",
+          "color": "#000000",
+          "justifyContent": "flex-start",
+          "padding": 13,
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 292,
+      "height": 143,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -719.0482259900746,
+        "y": -255.15106699547107
+      },
+      "style": {
+        "width": 292,
+        "height": 143
+      },
+      "resizing": false
+    },
+    {
+      "id": "BL1Bq50iSyBK89CKVdnIe",
+      "type": "section",
+      "position": {
+        "x": 81.61857813823781,
+        "y": 1810.7066619312445
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "style": {
+          "width": 150,
+          "height": 100,
+          "fontSize": 17
+        },
+        "oldId": "Vtf0uaqE8v-EBNZyIXr3f"
+      },
+      "zIndex": -999,
+      "width": 257,
+      "height": 146,
+      "style": {
+        "width": 257,
+        "height": 146
+      },
+      "positionAbsolute": {
+        "x": 81.61857813823781,
+        "y": 1810.7066619312445
+      },
+      "dragging": false,
+      "resizing": false,
+      "focusable": true
+    },
+    {
       "id": "ahghohZ-_jxpfO8dcio2-",
       "type": "vertical",
       "position": {
@@ -854,45 +920,6 @@
       },
       "dragging": false,
       "focusable": true
-    },
-    {
-      "id": "PstbOGqR_4C2WWV8CWXes",
-      "type": "linksgroup",
-      "position": {
-        "x": -718.0774561984448,
-        "y": -270.15106699547107
-      },
-      "selected": false,
-      "data": {
-        "label": "Related Roadmaps",
-        "links": [
-          {
-            "id": "-lnv-MTn0XvfK8ZUygICA",
-            "label": "Full Stack Roadmap",
-            "url": "https://roadmap.sh/full-stack"
-          },
-          {
-            "id": "pQJ4u3V4QPWbLc1fUwbt-",
-            "label": "DevOps Roadmap",
-            "url": "https://roadmap.sh/devops"
-          }
-        ]
-      },
-      "zIndex": 999,
-      "width": 323,
-      "height": 133,
-      "positionAbsolute": {
-        "x": -718.0774561984448,
-        "y": -270.15106699547107
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "style": {
-        "width": 323,
-        "height": 133
-      },
-      "resizing": false
     },
     {
       "id": "ocnvHsixvBpr2fvjtqFmU",
@@ -1766,8 +1793,8 @@
       "id": "POcRkF3dnnUCt2WQX71B-",
       "type": "horizontal",
       "position": {
-        "x": 52,
-        "y": 314.5755466544489
+        "x": 50,
+        "y": 316
       },
       "selected": false,
       "data": {
@@ -1782,8 +1809,8 @@
       "height": 20,
       "dragging": false,
       "positionAbsolute": {
-        "x": 52,
-        "y": 314.5755466544489
+        "x": 50,
+        "y": 316
       },
       "style": {
         "width": 288,
@@ -3939,38 +3966,6 @@
       "focusable": true
     },
     {
-      "id": "BL1Bq50iSyBK89CKVdnIe",
-      "type": "section",
-      "position": {
-        "x": 81.61857813823781,
-        "y": 1810.7066619312445
-      },
-      "selected": false,
-      "data": {
-        "label": "",
-        "style": {
-          "width": 150,
-          "height": 100,
-          "fontSize": 17
-        },
-        "oldId": "Vtf0uaqE8v-EBNZyIXr3f"
-      },
-      "zIndex": -999,
-      "width": 257,
-      "height": 146,
-      "style": {
-        "width": 257,
-        "height": 146
-      },
-      "positionAbsolute": {
-        "x": 81.61857813823781,
-        "y": 1810.7066619312445
-      },
-      "dragging": false,
-      "resizing": false,
-      "focusable": true
-    },
-    {
       "width": 257,
       "height": 49,
       "id": "8aiLVG4clveX1Luiehvxr",
@@ -5962,6 +5957,38 @@
       },
       "resizing": false,
       "focusable": true
+    },
+    {
+      "id": "6mHmGW_Ib6DhELxRzCA_k",
+      "type": "button",
+      "position": {
+        "x": -696.3901779625485,
+        "y": -178.92445334555111
+      },
+      "selected": false,
+      "data": {
+        "label": "Visit his Blog",
+        "href": "https://arindam1729.hashnode.dev/",
+        "color": "#000000",
+        "backgroundColor": "#d6d6d6",
+        "style": {
+          "fontSize": 17
+        },
+        "borderColor": "#D6D6D6"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -696.3901779625485,
+        "y": -178.92445334555111
+      },
+      "dragging": false,
+      "style": {
+        "width": 248,
+        "height": 49
+      },
+      "resizing": true
     }
   ],
   "edges": [
