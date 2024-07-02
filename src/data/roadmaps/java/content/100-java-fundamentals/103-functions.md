@@ -4,11 +4,19 @@ A method/function is a way to perform some task. Similarly, in programming like 
 
 Steps -
 
-1. Define function - datatype function_name(parameters){body}
-2. Call function - function_name(values)
+1. Define function - `datatype function_name(parameters){body}`
+2. Call function - `function_name(values)`
+3. Lambda functions - `x -> x + 1`
+4. Pass a function as a variable -
+```
+final Consumer<Integer> simpleReference1 = App::someMethod1;  
+simpleReference1.accept(1);
+```
 
 Visit the following resources to learn more:
 
 - [@article@Methods/Functions in Java.](https://www.javatpoint.com/method-in-java)
 - [@article@Learn Functions/Methods in Java](https://www.w3schools.com/java/java_methods.asp)
 - [@video@Functions / Methods in Java](https://www.youtube.com/watch?v=vvanI8NRlSI)
+- [@video@Lambda functions](https://www.w3schools.com/java/java_lambda.asp)
+- [@video@Passing functions as a variable](https://northcoder.com/post/passing-java-functions-in-variables/)
