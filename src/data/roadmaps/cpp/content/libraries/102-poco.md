@@ -28,7 +28,6 @@ Here's an example demonstrating an HTTP client using the Poco library:
 
 using namespace Poco::Net;
 using namespace Poco;
-using namespace std;
 
 int main()
 {
@@ -45,22 +44,24 @@ int main()
 
     // Process the response
     HTTPResponse response;
-    istream& responseStream = session.receiveResponse(response);
+    std::istream& responseStream = session.receiveResponse(response);
     if (response.getStatus() == HTTPResponse::HTTP_OK)
     {
       // Successful
+      std::string responseBody;
       StreamCopier::copyToString(responseStream, responseBody);
-      cout << "Response: " << responseBody << endl;
+
+      std::cout << "Response: " << responseBody << std::endl;
     }
     else
     {
       // Error
-      cout << "Error: " << response.getStatus() << " " << response.getReason() << endl;
+      std::cout << "Error: " << response.getStatus() << " " << response.getReason() << std::endl;
     }
   }
   catch(const Exception& e)
   {
-    cerr << "Error: " << e.displayText() << endl;
+    std::cerr << "Error: " << e.displayText() << std::endl;
     return -1;
   }
 

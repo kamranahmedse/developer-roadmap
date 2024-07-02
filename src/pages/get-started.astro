@@ -28,7 +28,7 @@ import {
   PenSquare,
   Component,
   Waypoints,
-  CheckSquare, Braces, FolderKanban,
+  CheckSquare, Braces, FolderKanban, Coins, Megaphone,
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
@@ -285,8 +285,9 @@ import { TipItem } from '../components/GetStarted/TipItem';
         { title: 'Docker', link: '/docker' },
         { title: 'Kubernetes', link: '/kubernetes' },
         { title: 'Linux', link: '/linux' },
+        { title: 'Terraform', link: '/terraform' },
       ]}
-      description='or perhaps you want to learn Docker, Kubernetes or Linux?'
+      description='or perhaps you want to learn Docker, Kubernetes, Terraform or Linux?'
       secondaryRoadmaps={[
         { title: 'Python', link: '/python' },
         { title: 'Go', link: '/golang' },
@@ -376,7 +377,7 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a UX Designer.'
       />
       <RoadmapCard
-          icon={PenSquare}
+          icon={Coins}
           title='Blockchain'
           link='/blockchain'
           description='Learn all you need to know to become a Blockchain Developer.'
@@ -394,6 +395,12 @@ import { TipItem } from '../components/GetStarted/TipItem';
         title='Technical Writer'
         link='/technical-writer'
         description='Learn all you need to know to become a Technical Writer.'
+      />
+      <RoadmapCard
+          icon={Megaphone}
+          title='DevRel Engineer'
+          link='/devrel'
+          description='Learn all you need to know to become a DevRel Engineer.'
       />
     </div>
     <div class='flex flex-col justify-start gap-3'>

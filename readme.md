@@ -42,6 +42,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [Linux Roadmap](https://roadmap.sh/linux)
+- [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
@@ -79,6 +80,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
+- [DevRel Engineer Roadmap](https://roadmap.sh/devrel)
 
 There are also interactive best practices:
 
