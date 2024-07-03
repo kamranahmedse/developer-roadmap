@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)
 - [@official@Downloading and installing packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)
-- [@official@NPM Install Docs](https://docs.npmjs.com/cli/v8/commands/npm-install)
+- [@official@NPM Install Docs](https://docs.npmjs.com/cli/commands/npm-install)
