@@ -85,7 +85,7 @@ export function clearMigratedRoadmapProgress(
   resourceType: string,
   resourceId: string,
 ) {
-  const migratedRoadmaps = ['frontend', 'backend'];
+  const migratedRoadmaps = ['frontend', 'backend', 'devops'];
 
   if (!migratedRoadmaps.includes(resourceId)) {
     return;
