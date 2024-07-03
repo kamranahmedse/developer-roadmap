@@ -1,1 +1,6 @@
 # Xibs
+
+UIKit Xibs (XML Interface Builder files) are resource files used to design individual view hierarchies or custom views in iOS development. Unlike Storyboards, which can represent an entire app's interface, Xibs typically focus on smaller, reusable UI components or single view controllers. They offer a visual way to create and layout UI elements, set up constraints, and configure properties without writing code. Xibs are particularly useful for creating custom table view cells, reusable views, or view controllers that need to be instantiated programmatically. 
+
+Learn more from the following resources:
+
