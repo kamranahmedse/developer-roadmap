@@ -421,7 +421,7 @@ export function TopicDetail(props: TopicDetailProps) {
               )}
 
               {/* Contribution */}
-              {canSubmitContribution && !hasEnoughLinks && contributionUrl && (
+              {canSubmitContribution && !hasEnoughLinks && contributionUrl && hasContent && (
                 <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
                   <div className="mb-4 mt-3">
                     <p className="">

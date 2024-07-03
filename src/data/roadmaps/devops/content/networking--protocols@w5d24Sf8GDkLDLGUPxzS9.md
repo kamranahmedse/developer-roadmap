@@ -4,34 +4,13 @@ As a DevOps engineer you will need to understand the basics of networking protoc
 
 Here are some of the resources to learn about SSH:
 
-- [@article@SSH Intro](https://www.baeldung.com/cs/ssh-intro)
-- [@article@What is SSH?](https://www.ssh.com/academy/ssh/protocol)
-- [@article@SFTP using SSH](https://www.goanywhere.com/blog/how-sftp-works)
 - [@video@OpenSSH Full Guide](https://www.youtube.com/watch?v=YS5Zh7KExvE)
-
-Visit the following to learn about SSL/TLS:
-
 - [@article@Cloudflare - What is SSL?](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
 - [@article@Cloudflare - What is TLS?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls/)
-- [@article@Wikipedia - SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
 - [@video@SSH vs SSL vs TLS](https://www.youtube.com/watch?v=k3rFFLmQCuY)
-
-Learn about HTTP and HTTPS:
-
 - [@article@Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
 - [@article@What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
-- [@article@An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [@article@HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
-- [@video@HTTP Crash Course & Exploration](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
 - [@article@What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)
-- [@article@Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
-- [@article@Enabling HTTPS on Your Servers](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/enable-https)
-- [@article@How HTTPS works (comic)](https://howhttps.works/)
-
-Here are some resources to learn about DNS:
-
 - [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
-- [@article@HOw DNS works (comic)](https://howdns.works/)
 - [@video@DNS and How does it Work?](https://www.youtube.com/watch?v=Wj0od2ag5sk)
 - [@video@DNS Records](https://www.youtube.com/watch?v=7lxgpKh_fRY)
-- [@feed@Explore top posts about Networking](https://app.daily.dev/tags/networking?ref=roadmapsh)
