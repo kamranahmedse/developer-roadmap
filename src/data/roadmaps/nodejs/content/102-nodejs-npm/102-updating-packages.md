@@ -5,5 +5,5 @@ npm provides various features to help install and maintain the project's depende
 Visit the following resources to learn more:
 
 - [@article@How to update?](https://www.freecodecamp.org/news/how-to-update-npm-dependencies/)
-- [@video@Updating dependencies all at once by using several commands](https://www.youtube.com/watch?v=Ghdfdq17JAY)
+- [@video@How to Update All NPM Dependencies At Once](https://www.youtube.com/watch?v=Ghdfdq17JAY)
 - [@official@Updating packages downloaded from the registry](https://docs.npmjs.com/updating-packages-downloaded-from-the-registry)
