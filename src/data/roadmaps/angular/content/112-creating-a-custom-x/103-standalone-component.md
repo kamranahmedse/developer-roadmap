@@ -4,4 +4,4 @@ Standalone components provide a simplified way to build Angular applications. St
 
 Visit the following resources to learn more:
 
-- [@official@Angular Website](https://angular.io/guide/standalone-components)
+- [@official@Angular Website](https://angular.dev/guide/components/importing)

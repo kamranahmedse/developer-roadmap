@@ -4,5 +4,5 @@ With a component template , you can save and reuse component processes and prope
 
 Visit the following resources to learn more:
 
-- [@official@Angular.io Website](https://angular.io/guide/architecture-components)
+- [@official@Component testing scenarios](https://angular.dev/guide/testing/components-scenarios)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

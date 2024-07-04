@@ -1,3 +1,3 @@
 # Zones
 
-- [@official@Angular - NgZone](https://angular.io/guide/zone)
+- [@official@Angular - NgZone](https://angular.dev/api/core/NgZone)

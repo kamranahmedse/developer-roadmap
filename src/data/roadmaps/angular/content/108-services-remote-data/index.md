@@ -4,5 +4,5 @@ Components shouldn't fetch or save data directly and shouldn't knowingly present
 
 Visit the following resources to learn more:
 
-- [@official@Adding Services in Angular](https://angular.io/tutorial/toh-pt4)
-- [@official@Get Data from Server](https://angular.io/tutorial/toh-pt6)
+- [@official@Creating an injectable service](https://angular.dev/guide/di/creating-injectable-service)
+- [@official@Understanding communicating with backend services using HTTP](https://angular.dev/guide/http)

@@ -9,7 +9,6 @@ Components are the main building block for Angular applications. Each component 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Components Overview](https://angular.io/guide/component-overview)
 - [@official@Anatomy of a component](https://angular.dev/guide/components)
 - [@official@Composing with Components in Angular](https://angular.dev/essentials/components)
 - [@video@Standalone Components in Angular](https://www.youtube.com/watch?v=x5PZwb4XurU)
