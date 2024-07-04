@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@opensource@tfenv](https://github.com/tfutils/tfenv]
 - [@article@How to Use tfenv to Manage Multiple Terraform Versions](https://spacelift.io/blog/tfenv)
-- [@video@Quick Tech: trend](https://www.youtube.com/watch?v=Smk5PrRPQsU)
+- [@video@Quick Tech: tfenv](https://www.youtube.com/watch?v=Smk5PrRPQsU)
