@@ -4,3 +4,6 @@ UIKit is a fundamental framework for building user interfaces in iOS application
 
 Learn more from the following resources: 
 
+- [@official@UIKit Documentation](https://developer.apple.com/documentation/uikit)
+- [@article@Build Your First iOS App with UIKit](https://daily.dev/blog/build-your-first-ios-app-with-uikit-beginners-guide)
+- [@video@Introduction to Programmatic UI - UIKit](https://www.youtube.com/watch?v=_U6_l58Cv4E)
