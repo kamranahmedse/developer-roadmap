@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)
 - [@article@Zustand - Official Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [@opensource@pmndrs/zustand](https://github.com/pmndrs/zustand)
+- [@video@pmndrs/zustand](https://github.com/pmndrs/zustand)
