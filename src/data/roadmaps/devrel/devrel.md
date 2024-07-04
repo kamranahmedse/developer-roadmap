@@ -3,10 +3,10 @@ renderer: 'editor'
 jsonUrl: '/jsons/roadmaps/devrel.json'
 pdfUrl: '/pdfs/roadmaps/devrel.pdf'
 order: 20
-briefTitle: 'DevRel Engineer'
-briefDescription: 'Step by step guide to becoming a DevRel Engineer in 2024'
-title: 'DevRel Engineer'
-description: 'Step by step guide to becoming a DevRel Engineer in 2024'
+briefTitle: 'Developer Relations'
+briefDescription: 'Step by step guide to becoming a Developer Advocate in 2024'
+title: 'Developer Relations'
+description: 'Step by step guide to becoming a Developer Advocate in 2024'
 hasTopics: true
 isForkable: false
 isNew: true
@@ -15,7 +15,7 @@ question:
   description: |
     DevRel, short for Developer Relations, is a role that focuses on building relationships with developers and the developer community. DevRel professionals work to create a positive developer experience by providing technical resources, support, and advocacy. They often represent a company or organization at developer events, conferences, and online forums, and help developers understand and use the company's products and services. DevRel roles can vary widely depending on the organization, but typically involve a mix of technical expertise, communication skills, and community building.
 
-    ## What does a DevRel Engineer do?
+    ## What does a Developer Advocate do?
     Building relationships with developers and the developer community, creating technical resources and content, representing the company at events and conferences, providing support and advocacy for developers, and helping developers understand and use the company's products and services.
 dimensions:
   width: 968
@@ -55,6 +55,7 @@ seo:
     - 'what is devrel'
     - 'devrel quiz'
     - 'devrel interview questions'
+    - 'developer advocate'
 relatedRoadmaps:
   - 'frontend'
   - 'backend'
