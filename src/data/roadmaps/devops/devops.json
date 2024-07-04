@@ -4135,7 +4135,7 @@
       "id": "NiVvRbCOCDpVvif48poCo",
       "type": "subtopic",
       "data": {
-        "label": "Pometheus",
+        "label": "Prometheus",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
