@@ -71,7 +71,7 @@ loginSchema.validate({email: 'user@example.com', password: 'password'});
 ```
 
 ## 5. Keep Dependencies Up to Date
-Regularly update your dependencies to ensure they don't contain known security vulnerabilities. Use tools like [npm audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) and [dependabot](https://github.com/dependabot/dependabot-core) to automatically audit and update your dependencies.
+Regularly update your dependencies to ensure they don't contain known security vulnerabilities. Use tools like [npm audit](https://docs.npmjs.com/cli/commands/npm-audit) and [dependabot](https://github.com/dependabot/dependabot-core) to automatically audit and update your dependencies.
 
 ### Example:
 Using npm, you can update your dependencies and check for potential vulnerabilities:
