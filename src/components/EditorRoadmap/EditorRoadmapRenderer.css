@@ -15,11 +15,11 @@ svg > g[data-type='todo'] {
 }
 
 svg > g[data-type='topic']:hover > rect {
-  fill: #d6d700;
+  fill: var(--hover-color);
 }
 
 svg > g[data-type='subtopic']:hover > rect {
-  fill: #f3c950;
+  fill: var(--hover-color);
 }
 svg g[data-type='button']:hover,
 svg g[data-type='link-item']:hover,
