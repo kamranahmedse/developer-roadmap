@@ -4,5 +4,5 @@ The command can be used to build a project of type "application" or "library". W
 
 Visit the following resources to learn more:
 
-- [@official@Ng Build - Angular.io](https://angular.io/cli/build)
+- [@official@Angular CLI - ng build](https://angular.dev/cli/build)
 - [@video@Building an Angular project](https://www.youtube.com/watch?v=VB6WuCPDwz0)

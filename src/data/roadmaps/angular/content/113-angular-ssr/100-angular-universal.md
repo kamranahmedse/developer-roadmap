@@ -4,6 +4,6 @@ Angular Universal also known as server-side rendering is tool which allows serve
 
 Visit the following resources to learn more:
 
-- [@official@Angular Website](https://angular.io/guide/universal)
+- [@official@Angular Website](https://angular.dev/guide/ssr)
 - [@opensource@Github Repository](https://github.com/angular/universal)
 - [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)
