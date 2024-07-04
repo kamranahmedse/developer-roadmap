@@ -2,15 +2,16 @@
 jsonUrl: '/jsons/roadmaps/data-analyst.json'
 pdfUrl: '/pdfs/roadmaps/data-analyst.pdf'
 order: 4
+renderer: "editor"
 briefTitle: 'Data Analyst'
 briefDescription: 'Step by step guide to becoming an Data Analyst in 2024'
 title: 'Data Analyst Roadmap'
 description: 'Step by step guide to becoming an Data Analyst in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
-  height: 2410.4
+  height: 2650
 schema:
   headline: 'Data Analyst Roadmap'
   description: 'Learn how to become an Data Analyst with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
