@@ -45,7 +45,15 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   return { nodeId, nodeType, targetGroup, title };
 }
 
-const allowedNodeTypes = ['topic', 'subtopic', 'button', 'link-item'];
+const allowedNodeTypes = [
+  'topic',
+  'subtopic',
+  'button',
+  'link-item',
+  'resourceButton',
+  'todo',
+  'todo-checkbox',
+];
 
 export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
   const { resourceId, nodes = [], edges = [] } = props;
@@ -90,7 +98,11 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
-    if (nodeType === 'button' || nodeType === 'link-item') {
+    if (
+      nodeType === 'button' ||
+      nodeType === 'link-item' ||
+      nodeType === 'resourceButton'
+    ) {
       const link = targetGroup?.dataset?.link || '';
       const isExternalLink = link.startsWith('http');
       if (isExternalLink) {
@@ -103,6 +115,20 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
 
     const isCurrentStatusLearning = targetGroup?.classList.contains('learning');
     const isCurrentStatusSkipped = targetGroup?.classList.contains('skipped');
+
+    if (nodeType === 'todo-checkbox') {
+      e.preventDefault();
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
+
+      const newStatus = targetGroup?.classList.contains('done')
+        ? 'pending'
+        : 'done';
+      updateTopicStatus(nodeId, newStatus);
+      return;
+    }
 
     if (e.shiftKey) {
       e.preventDefault();
