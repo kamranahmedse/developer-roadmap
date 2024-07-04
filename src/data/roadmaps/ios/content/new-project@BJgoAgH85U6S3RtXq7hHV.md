@@ -4,5 +4,5 @@ To create an Xcode project for your app, select a platform template such as iOS,
 
 Learn more from the following resources:
 
-- [@official@](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app#Prepare-configuration-information)
+- [@official@Creating an Xcode project for an app](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app)
 - [@video@Build Your First iOS App For Beginners](https://www.youtube.com/watch?v=nqTcAzPS3oc)
