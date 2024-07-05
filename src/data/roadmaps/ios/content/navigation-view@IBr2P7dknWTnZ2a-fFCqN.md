@@ -4,7 +4,6 @@ Use a NavigationView to create a navigation-based app in which the user can trav
 > [!WARNING]
 > Deprecated. Use NavigationStack and NavigationSplitView instead. For more information, see Migrating to new navigation types.
 
-
 Visit the following resources to learn more:
 
 - [@official@Navigation View](https://developer.apple.com/documentation/swiftui/navigationview)
