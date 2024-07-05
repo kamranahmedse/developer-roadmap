@@ -6,4 +6,4 @@ Through Core Data’s Data Model editor, you define your data’s types and rela
 Visit the following resources to learn more:
 
 - [@official@CoreData](https://developer.apple.com/documentation/coredata/)
-- [@course@Core Data by Tutorials](https://www.kodeco.com/books/core-data-by-tutorials/v8.0)
+- [@video@iOS Core Data Quick Start](https://www.youtube.com/watch?v=O7u9nYWjvKk)
