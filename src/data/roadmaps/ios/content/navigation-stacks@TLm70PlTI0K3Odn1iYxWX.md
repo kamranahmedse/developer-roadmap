@@ -1,8 +1,11 @@
 # Navigation Stacks
-A view that displays a root view and enables you to present additional views over the root view.
-Use a navigation stack to present a stack of views over a root view. People can add views to the top of the stack by clicking or tapping a NavigationLink, and remove views using built-in, platform-appropriate controls, like a Back button or a swipe gesture. The stack always displays the most recently added view that hasn’t been removed, and doesn’t allow the root view to be removed.
+
+iOS 16 introduced a new concept of navigating through SiwftUI apps: NavigationStack.
+NavigationStack is data-driven, meaning that you specify navigationDestinations for each data type (models) that your app supports.
+These destinations are defined once for each NavigationStack and are valid throughout the app.
+Navigation itself is handled through the NavigationLink View, which allows setting a label and a value (your model).
 
 Visit the following resources to learn more:
 
-- [@official@Navigation Stack](https://developer.apple.com/documentation/swiftui/navigationstack)
-- [@article@Navigation Stack](https://designcode.io/swiftui-handbook-navigation-stack)
+- [@official@NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack)
+- [@video@NavigationStack](https://www.youtube.com/watch?v=DMsALlhObNk)
