@@ -4,3 +4,6 @@ UIKit views are the core visual elements in iOS interfaces, serving as the canva
 
 Learn more from the following resources:
 
+- [@official@Views and Controls](https://developer.apple.com/documentation/uikit/views_and_controls)
+- [@video@Intro to UIKit and UIViews](https://www.youtube.com/watch?v=w58ncTHKiK4)
+- [@article@Performing iOS Animations On Views With UIKit And UIView](https://www.smashingmagazine.com/2019/11/performing-ios-animations-views-uikit-uiview)

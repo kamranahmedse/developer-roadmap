@@ -4,3 +4,5 @@ UIKit components are the building blocks of iOS user interfaces, offering a wide
 
 Learn more from the following resources:
 
+- [@article@UIKit Component Styling](https://medium.com/@greenSyntax/uikit-component-styling-in-ios-ae218ae4823e)
+- [@article@Customizable UI Components on iOS Using UIKit](https://pspdfkit.com/blog/2023/customizable-ui-components/)

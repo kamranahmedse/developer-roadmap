@@ -4,3 +4,5 @@ UIKit View Transitions provide mechanisms for animating changes between differen
 
 Learn more from the following resources:
 
+- [@article@View Controller Transitions](https://developer.apple.com/documentation/uikit/animation_and_haptics/view_controller_transitions)
+- [@course@Kodeco - UIKit Transitions](https://www.kodeco.com/books/ios-animations-by-tutorials/v6.0/chapters/5-transitions)

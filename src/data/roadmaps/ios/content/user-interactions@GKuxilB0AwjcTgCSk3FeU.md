@@ -4,3 +4,5 @@ UIKit User Interactions encompass the various ways users can engage with an iOS 
 
 Learn more from the following resources:
 
+- [@official@Interactions](https://developer.apple.com/documentation/uikit/uiview/2891054-interactions)
+- [@article@How do I handle user interactions in iOS apps?](https://clouddevs.com/ios/user-interactions/)

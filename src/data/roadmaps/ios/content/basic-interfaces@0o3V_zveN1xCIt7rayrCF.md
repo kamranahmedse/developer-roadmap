@@ -4,3 +4,8 @@ UIKit Basic Interfaces refer to the fundamental user interface elements provided
 
 Learn more from the following resources:
 
+- [@official@UINavigationBar](https://developer.apple.com/documentation/uikit/uinavigationbar)
+- [@official@UITabBar](https://developer.apple.com/documentation/uikit/uitabbar)
+- [@official@UIToolBar](https://developer.apple.com/documentation/uikit/uitoolbar)
+- [@official@UITableView](https://developer.apple.com/documentation/uikit/uitableview)
+- [@official@UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview)
