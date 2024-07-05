@@ -1,3 +1,0 @@
-# Network
-
-In Android, the `Network` component offers vital capabilities that enable communication and interaction among users, between users and remote servers, and between users and cloud services. Android provides a variety of APIs and services to interact with networks. The primary APIs are the `ConnectivityManager`, `WifiManager`, `TelephonyManager`, and `BluetoothManager` APIs, among others. ConnectivityManager, for example, can tell you about network connectivity changes. The **Network** component also involves tools for network monitoring and testing, which can be useful for optimizing app performance and dealing with connectivity issues. Be aware, some network operations are subject to system imposed restrictions and require specific permissions.

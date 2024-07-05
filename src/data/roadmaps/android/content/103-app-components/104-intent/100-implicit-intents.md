@@ -1,3 +1,0 @@
-# Implicit Intents
-
-In Android development, **Implicit Intents** do not specify the target component explicitly like Explicit Intents. Instead, they allow the system to find a suitable component matching the Intent description to handle the request. The system will find an activity that can handle this intent by comparing the `<intent-filter>` section in the `AndroidManifest.xml` of all apps installed on the device against the Implicit Intent. An ideal example of an implicit intent is opening a URL. You do not need to know the specific activity that can handle this request, you just declare an intent to view a web page and Android system will select the suitable app that can open the URL.
