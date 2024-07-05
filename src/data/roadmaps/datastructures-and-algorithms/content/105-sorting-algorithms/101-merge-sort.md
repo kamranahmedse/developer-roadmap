@@ -4,5 +4,5 @@ __Merge sort__ is a type of sorting algorithm that follows the divide-and-conque
 
 Learn more from the following resources:
 
-- [@video@Merge Sort](https://www.youtube.com/watch?v=p__ETf2CKY4)
+- [@video@Merge Sort](https://www.youtube.com/watch?v=4VqmGXwpLqc)
 - [@article@Merge Sort Visulize](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/)
