@@ -4,6 +4,7 @@ Quicksort, also known as partition-exchange sort, is an efficient, in-place sort
 
 Learn more from the following resources:
 
-[@video@A Complete Overview of Quicksort](https://www.youtube.com/watch?v=0SkOjNaO1XY)
-[@video@QuickSort](https://www.youtube.com/watch?v=7h1s2SojIRw)
-[@video@QuickSort Analysis](https://www.youtube.com/watch?v=-qOVVRIZzao)
+- [@video@A Complete Overview of Quicksort](https://www.youtube.com/watch?v=0SkOjNaO1XY)
+- [@video@QuickSort](https://www.youtube.com/watch?v=7h1s2SojIRw)
+- [@video@QuickSort Analysis](https://www.youtube.com/watch?v=-qOVVRIZzao)
+- [@article@Quick Sort Visulize](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/visualize/)
