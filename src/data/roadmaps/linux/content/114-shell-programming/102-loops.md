@@ -13,7 +13,7 @@ Here is a simple sample for loop in bash/shell:
 ```bash
 for i in 1 2 3
 do
-   echo $i
+   echo "$i"
 done
 ```
 This will output:
