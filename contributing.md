@@ -95,6 +95,6 @@ It's important to add a valid type, this will help us categorize the content and
 
   - Adding whitespace that doesn't add to the readability of the content.
   - Rewriting content in a way that doesn't add any value.
-  - None English content.
+  - Non-English content.
   - PR's that don't follow our style guide, have no description and a default title.
   - Links to your own blog articles.
