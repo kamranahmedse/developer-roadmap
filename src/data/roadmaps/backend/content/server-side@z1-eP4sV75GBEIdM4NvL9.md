@@ -8,6 +8,8 @@ Next time the user revisits the website, it loads the already saved or cached co
 
 Visit the following resources to learn more:
 
-- [@article@Server-side caching ](https://www.starwindsoftware.com/resource-library/server-side-caching/)
 - [@article@Server-side caching and Client-side caching](https://www.codingninjas.com/codestudio/library/server-side-caching-and-client-side-caching)
+- [@article@Caching strategies](https://medium.com/@genchilu/cache-strategy-in-backend-d0baaacd2d79)
+- [@article@Local vs distributed](https://redis.io/glossary/distributed-caching/)
+- [@article@Example - Hibernate caching](https://medium.com/@himani.prasad016/caching-in-hibernate-3ad4f479fcc0)
 - [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)
