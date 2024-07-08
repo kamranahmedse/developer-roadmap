@@ -190,11 +190,22 @@ export class Renderer {
     e.preventDefault();
 
     const isCurrentStatusDone = targetGroup.classList.contains('done');
-    const normalizedGroupId = groupId
-      .replace(/^\d+-/, '')
-      .replace('check:', '');
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
 
     if (normalizedGroupId.startsWith('ext_link:')) {
+      return;
+    }
+
+    if (/^check:/.test(groupId)) {
+      window.dispatchEvent(
+        new CustomEvent(`${this.resourceType}.topic.toggle`, {
+          detail: {
+            topicId: groupId.replace('check:', ''),
+            resourceType: this.resourceType,
+            resourceId: this.resourceId,
+          },
+        }),
+      );
       return;
     }
 
