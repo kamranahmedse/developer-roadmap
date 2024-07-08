@@ -152,6 +152,10 @@ export class Renderer {
       return;
     }
 
+    if (/^check:/.test(topicId)) {
+      topicId = topicId.replace('check:', '');
+    }
+
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
       {
@@ -190,9 +194,7 @@ export class Renderer {
     e.preventDefault();
 
     const isCurrentStatusDone = targetGroup.classList.contains('done');
-    const normalizedGroupId = groupId
-      .replace(/^\d+-/, '')
-      .replace('check:', '');
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
 
     if (normalizedGroupId.startsWith('ext_link:')) {
       return;
