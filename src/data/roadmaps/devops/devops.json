@@ -1595,7 +1595,7 @@
       },
       "selected": false,
       "data": {
-        "label": "BitBucket",
+        "label": "Bitbucket",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -4135,7 +4135,7 @@
       "id": "NiVvRbCOCDpVvif48poCo",
       "type": "subtopic",
       "data": {
-        "label": "Pometheus",
+        "label": "Prometheus",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

@@ -1,3 +1,3 @@
-# Heap - A Powerful Analytics Tool
+# Heap Analytics
 
 Heap Analytics is a robust solution for product managers looking to gain actionable insights into their product's usage and performance. It's a powerful analytics tool that allows the automatic capturing of every user interaction across the entire customer journey. From clicks and taps to form submissions and transactions, Heap captures all data without needing any pre-defined tracking set-up. As a Product Manager, understanding the value that Heap brings in effortlessly tracking user engagement and offering data-driven insights is integral for refining product decisions and driving the overall product strategy.

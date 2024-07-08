@@ -4,5 +4,5 @@ Routing in Angular allows the users to create a single-page application with mul
 
 Visit the following resources to learn more:
 
-- [@official@Angular Routing](https://angular.io/guide/routing-overview)
-- [@official@Common Routing Tasks](https://angular.io/guide/router)
+- [@official@Angular Routing](https://angular.dev/guide/routing)
+- [@official@Common Routing Tasks](https://angular.dev/guide/routing/common-router-tasks)

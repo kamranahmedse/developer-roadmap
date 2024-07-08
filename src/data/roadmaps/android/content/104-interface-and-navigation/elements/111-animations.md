@@ -1,5 +1,0 @@
-# Animations
-
-In Android, animations are used to give a more visual, dynamic, and interactive aspect to a static user interface. Android offers four categories of animation APIs in order to create and manage the animations. These are: **Property Animation**: This allows modification of properties of an object over a given time period. **View Animation**: Consists of two subcategories i.e. Tween Animation (transition of a view from one state to another) and Frame Animation (displaying frames one after another). **Drawable Animation**: This is similar to a slideshow, showing one image after another. Lastly, **Layout Animation**: This is used to animate the layout itself when views are added or removed.
-
-You can utilize Android's built-in animations or fully customize your own to add unique transitions and movements in your applications. Every app can benefit from a touch of animation to create a more immersive and pleasant user experience.

@@ -6,5 +6,5 @@ SKDirectives are classes that add additional behavior to elements in your Angula
 
 Visit the following resources to learn more:
 
-- [@official@Understanding BuiltIn Directives](https://angular.io/guide/built-in-directives)
+- [@official@Built-in directives](https://angular.dev/guide/directives/)
 - [@article@BuiltIn Directives Types](https://thinkster.io/tutorials/angular-2-directives)

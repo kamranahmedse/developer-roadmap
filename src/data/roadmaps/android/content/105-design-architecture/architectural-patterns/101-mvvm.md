@@ -1,3 +1,0 @@
-# MVVM
-
-"**MVVM**" stands for "Model View ViewModel" and it is an architectural pattern that aims to separate the development of Graphical User Interface from the business logic. In MVVM, the **Model** represents the data and the business logic of the app. The **View** is responsible for the display of the data and interacts with the user. The **ViewModel** acts as a link between the Model and the View. It handles all the UI logic and preserves the state of the data when the configuration changes or when the app is stopped and then started again.

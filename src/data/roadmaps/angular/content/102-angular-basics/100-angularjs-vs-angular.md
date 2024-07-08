@@ -5,5 +5,5 @@ AngularJS was the older version of Angular, whose support officially ended in Ja
 Visit the following resources to learn more:
 
 - [@official@AngularJS Website](https://angularjs.org/)
-- [@official@Official - Getting started with Angular](https://angular.io/start)
+- [@official@Official - Welcome to the Angular tutorial](https://angular.dev/tutorials/learn-angular)
 - [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

@@ -9,4 +9,5 @@ Visit the following resources to learn more:
 - [@opensource@Zustand - Official Website](https://github.com/pmndrs/zustand)
 - [@article@Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)
 - [@article@Zustand - Official Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
-- [@opensource@pmndrs/zustand](https://github.com/pmndrs/zustand)
+- [@opensource@Zustand Repository](https://github.com/pmndrs/zustand)
+- [@video@Zustand Tutorial for Beginners](https://www.youtube.com/watch?v=AYO4qHAnLQI&t)

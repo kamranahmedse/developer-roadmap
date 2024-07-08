@@ -8,5 +8,5 @@ The default Angular project, All dependencies installed in node_modules folder ,
 
 Visit the following resources to learn more:
 
-- [@official@Ng New - Angular.io](https://angular.io/cli/new)
+- [@official@Angular CLI - ng new](https://angular.dev/cli/new)
 - [@video@ng New command](https://www.youtube.com/watch?v=NdEpZezptkQ)

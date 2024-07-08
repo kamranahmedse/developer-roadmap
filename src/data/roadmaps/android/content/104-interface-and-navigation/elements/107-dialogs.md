@@ -1,5 +1,0 @@
-# Dialogs
-
-Dialogs in Android are small windows that prompt users to make a decision or enter additional information. They don't fill the screen and are normally used for modal events that require users to take action before they can proceed. In Android, `Dialog` is actually an abstract class directly subclassed from `Object`. `AlertDialog` is the subclass that you will most commonly use, which contains a number of methods as compared to `Dialog` to support features like lists, checkboxes, radio buttons, and a custom layout design. They are typically used for user interactions such as warnings, notifications, and menus. 
-
-To create a dialog, you must use the `Dialog` class or one of its subclasses, such as `DialogFragment` or `AlertDialog`. For a more detailed explanation on implementing dialogs in Android, you can refer to the official Android Developer's Guide.

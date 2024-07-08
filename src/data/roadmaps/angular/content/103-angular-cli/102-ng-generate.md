@@ -4,5 +4,5 @@ ng generate is used to create the component in angular project. These are the tw
 
 Visit the following resources to learn more:
 
-- [@official@Ng generate - Angular.io](https://angular.io/cli/generate)
+- [@official@Angular CLI - ng generate](https://angular.dev/cli/generate)
 - [@video@Angular cli generate component](https://www.youtube.com/watch?v=NlHlu_zzmo4)
