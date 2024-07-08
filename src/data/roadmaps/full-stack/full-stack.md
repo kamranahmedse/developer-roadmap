@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/full-stack.json'
 pdfUrl: '/pdfs/roadmaps/full-stack.pdf'
+renderer: 'editor'
 order: 3
 briefTitle: 'Full Stack'
 briefDescription: 'Step by step guide to becoming a full stack developer in 2024'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 1951.64
+  height: 2075
 question:
   title: 'What is Full Stack Development?'
   description: |

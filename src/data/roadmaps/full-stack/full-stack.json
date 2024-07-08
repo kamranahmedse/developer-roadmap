@@ -1,4053 +1,3025 @@
 {
-  "mockup": {
-    "controls": {
-      "control": [
-        {
-          "ID": "2236",
-          "typeID": "Arrow",
-          "zOrder": "0",
-          "w": "118",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "2303",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 117.74886541217052,
-              "y": 0.21773558030963613
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 0.21773558030963613
-            }
-          }
-        },
-        {
-          "ID": "2237",
-          "typeID": "Arrow",
-          "zOrder": "1",
-          "w": "1",
-          "h": "86",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "858",
-          "y": "2050",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": -0.056906605600943294
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 86.21773558030964
-            }
-          }
-        },
-        {
-          "ID": "2238",
-          "typeID": "Arrow",
-          "zOrder": "2",
-          "w": "94",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1240",
-          "y": "2048",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.2886071293653458,
-              "y": -0.02339096824744047
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 94.53612190937179,
-              "y": -0.02339096824744047
-            }
-          }
-        },
-        {
-          "ID": "2239",
-          "typeID": "Arrow",
-          "zOrder": "3",
-          "w": "94",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1243",
-          "y": "1931",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.2886071293653458,
-              "y": -0.02339096824744047
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 94.53612190937179,
-              "y": -0.02339096824744047
-            }
-          }
-        },
-        {
-          "ID": "2240",
-          "typeID": "Arrow",
-          "zOrder": "4",
-          "w": "1",
-          "h": "69",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "970",
-          "y": "1769",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": -0.5
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 68.5
-            }
-          }
-        },
-        {
-          "ID": "2241",
-          "typeID": "Arrow",
-          "zOrder": "5",
-          "w": "1",
-          "h": "69",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "903",
-          "y": "1769",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": -0.5
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 68.5
-            }
-          }
-        },
-        {
-          "ID": "2242",
-          "typeID": "Arrow",
-          "zOrder": "6",
-          "w": "1",
-          "h": "69",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "833",
-          "y": "1763",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": -0.5
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 68.5
-            }
-          }
-        },
-        {
-          "ID": "2243",
-          "typeID": "Arrow",
-          "zOrder": "7",
-          "w": "879",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "1848",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.2324758426682365,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.49999999999999906,
-              "y": 0
-            },
-            "p2": {
-              "x": 878.8417317755348,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2244",
-          "typeID": "Arrow",
-          "zOrder": "8",
-          "w": "1",
-          "h": "71",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "557",
-          "y": "868",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "14540253",
-            "p0": {
-              "x": -0.33333333333337123,
-              "y": 70.33333333333337
-            },
-            "p1": {
-              "x": 0.49999999999999906,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.33333333333337123,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2245",
-          "typeID": "Arrow",
-          "zOrder": "9",
-          "w": "93",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "361",
-          "y": "1587",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "14540253",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5008960573476694,
-              "y": 0.0011062084265900647
-            },
-            "p2": {
-              "x": 93,
-              "y": 0
-            }
-          }
-        },
-        {
-          "ID": "2246",
-          "typeID": "Arrow",
-          "zOrder": "10",
-          "w": "229",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "453",
-          "y": "1644",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 229,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2247",
-          "typeID": "Arrow",
-          "zOrder": "11",
-          "w": "119",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "1138",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 119.38938788584869,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999996,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2248",
-          "typeID": "Arrow",
-          "zOrder": "12",
-          "w": "1",
-          "h": "250",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "975",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0.45578755817643923
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 250.74987188583827
-            }
-          }
-        },
-        {
-          "ID": "2249",
-          "typeID": "Arrow",
-          "zOrder": "13",
-          "w": "1",
-          "h": "93",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "862",
-          "y": "880",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0,
-              "y": 0.24609978251851317
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 93.12070867681257
-            }
-          }
-        },
-        {
-          "ID": "2250",
-          "typeID": "Arrow",
-          "zOrder": "14",
-          "w": "1",
-          "h": "105",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1196",
-          "y": "678",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0,
-              "y": 0.30573956210059805
-            },
-            "p1": {
-              "x": 0.4999999999999996,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 105.12070867681257
-            }
-          }
-        },
-        {
-          "ID": "2251",
-          "typeID": "Arrow",
-          "zOrder": "15",
-          "w": "1",
-          "h": "106",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "862",
-          "y": "677",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0,
-              "y": -0.06514400623188976
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 106.12070867681257
-            }
-          }
-        },
-        {
-          "ID": "2252",
-          "typeID": "Arrow",
-          "zOrder": "16",
-          "w": "1",
-          "h": "222",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "451",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0.05892607650582704
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 222
-            }
-          }
-        },
-        {
-          "ID": "2253",
-          "typeID": "Arrow",
-          "zOrder": "17",
-          "w": "877",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "458",
-          "y": "673",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.47611064428963346,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.4999999999999994,
-              "y": 0
-            },
-            "p2": {
-              "x": 877,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2254",
-          "typeID": "__group__",
-          "zOrder": "18",
-          "measuredW": "99",
-          "measuredH": "49",
-          "w": "99",
-          "h": "49",
-          "x": "665",
-          "y": "649",
-          "properties": {
-            "controlName": "101-css"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "99",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "33",
-                  "measuredH": "25",
-                  "x": "33",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "CSS"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2255",
-          "typeID": "__group__",
-          "zOrder": "19",
-          "measuredW": "146",
-          "measuredH": "50",
-          "w": "146",
-          "h": "50",
-          "x": "1000",
-          "y": "649",
-          "properties": {
-            "controlName": "103-javascript"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "146",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "81",
-                  "measuredH": "25",
-                  "x": "32",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "JavaScript"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2256",
-          "typeID": "__group__",
-          "zOrder": "20",
-          "measuredW": "115",
-          "measuredH": "49",
-          "w": "115",
-          "h": "49",
-          "x": "512",
-          "y": "649",
-          "properties": {
-            "controlName": "100-html"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "115",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "48",
-                  "measuredH": "25",
-                  "x": "34",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "HTML"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2257",
-          "typeID": "Label",
-          "zOrder": "21",
-          "measuredW": "148",
-          "measuredH": "40",
-          "x": "371",
-          "y": "387",
-          "properties": {
-            "size": "32",
-            "text": "Full Stack "
-          }
-        },
-        {
-          "ID": "2258",
-          "typeID": "__group__",
-          "zOrder": "22",
-          "measuredW": "361",
-          "measuredH": "150",
-          "w": "361",
-          "h": "150",
-          "x": "1007",
-          "y": "254",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "361",
-                  "h": "150",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "332",
-                  "measuredH": "26",
-                  "x": "16",
-                  "y": "18",
-                  "properties": {
-                    "size": "18",
-                    "text": "Find the detailed version of this checklist"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "318",
-                  "measuredH": "26",
-                  "x": "16",
-                  "y": "46",
-                  "properties": {
-                    "size": "18",
-                    "text": "With details on how to implement these"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "329",
-                  "measuredH": "51",
-                  "w": "329",
-                  "h": "51",
-                  "x": "16",
-                  "y": "82",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "329",
-                          "h": "51",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "4273622",
-                            "borderColor": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "172",
-                          "measuredH": "28",
-                          "x": "79",
-                          "y": "12",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https://roadmap.sh"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2259",
-          "typeID": "Arrow",
-          "zOrder": "23",
-          "w": "1",
-          "h": "152",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "215",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0,
-              "y": -0.5
-            },
-            "p1": {
-              "x": 0.4999999999999996,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 151.7942452326543
-            }
-          }
-        },
-        {
-          "ID": "2260",
-          "typeID": "__group__",
-          "zOrder": "24",
-          "measuredW": "302",
-          "measuredH": "50",
-          "w": "302",
-          "h": "50",
-          "x": "607",
-          "y": "747",
-          "properties": {
-            "controlName": "102-checkpoint-static-websites"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "302",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "253",
-                  "measuredH": "26",
-                  "x": "23",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Static Webpages",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2261",
-          "typeID": "Arrow",
-          "zOrder": "25",
-          "w": "881",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "1226",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.2324758426682365,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.4999999999999991,
-              "y": 0
-            },
-            "p2": {
-              "x": 880.971517875545,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2262",
-          "typeID": "__group__",
-          "zOrder": "26",
-          "measuredW": "307",
-          "measuredH": "50",
-          "w": "307",
-          "h": "50",
-          "x": "931",
-          "y": "747",
-          "properties": {
-            "controlName": "104-checkpoint-interactivity"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "307",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "210",
-                  "measuredH": "26",
-                  "x": "49",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Interactivity",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2263",
-          "typeID": "Arrow",
-          "zOrder": "27",
-          "w": "1",
-          "h": "298",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1336",
-          "y": "674",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 298.325993023479
-            }
-          }
-        },
-        {
-          "ID": "2264",
-          "typeID": "__group__",
-          "zOrder": "28",
-          "measuredW": "99",
-          "measuredH": "50",
-          "w": "99",
-          "h": "50",
-          "x": "1286",
-          "y": "747",
-          "properties": {
-            "controlName": "105-npm"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "99",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "34",
-                  "measuredH": "25",
-                  "x": "33",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "npm"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2265",
-          "typeID": "Arrow",
-          "zOrder": "29",
-          "w": "226",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1106",
-          "y": "868",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 225.53175987254372,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2266",
-          "typeID": "__group__",
-          "zOrder": "30",
-          "measuredW": "307",
-          "measuredH": "50",
-          "w": "307",
-          "h": "50",
-          "x": "931",
-          "y": "843",
-          "properties": {
-            "controlName": "106-external-packages"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "307",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "268",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — External Packages",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2267",
-          "typeID": "Arrow",
-          "zOrder": "31",
-          "w": "880",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "974",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0.09019887269550964,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.49999999999999944,
-              "y": 0
-            },
-            "p2": {
-              "x": 880,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2268",
-          "typeID": "__group__",
-          "zOrder": "32",
-          "measuredW": "80",
-          "measuredH": "50",
-          "w": "80",
-          "h": "50",
-          "x": "1117",
-          "y": "947",
-          "properties": {
-            "controlName": "107-git"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "80",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "22",
-                  "measuredH": "25",
-                  "x": "29",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Git"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2269",
-          "typeID": "__group__",
-          "zOrder": "33",
-          "measuredW": "101",
-          "measuredH": "50",
-          "w": "101",
-          "h": "50",
-          "x": "1000",
-          "y": "947",
-          "properties": {
-            "controlName": "108-github"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "101",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "54",
-                  "measuredH": "25",
-                  "x": "24",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "GitHub"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2270",
-          "typeID": "__group__",
-          "zOrder": "34",
-          "measuredW": "302",
-          "measuredH": "50",
-          "w": "302",
-          "h": "50",
-          "x": "607",
-          "y": "843",
-          "properties": {
-            "controlName": "109-collaborative-work"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "302",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "268",
-                  "measuredH": "26",
-                  "x": "17",
-                  "y": "13",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Collaborative Work",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2271",
-          "typeID": "Canvas",
-          "zOrder": "35",
-          "w": "271",
-          "h": "149",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "522",
-          "y": "932",
-          "properties": {
-            "borderColor": "16777215"
-          }
-        },
-        {
-          "ID": "2272",
-          "typeID": "__group__",
-          "zOrder": "36",
-          "measuredW": "286",
-          "measuredH": "50",
-          "w": "286",
-          "h": "50",
-          "x": "512",
-          "y": "1113",
-          "properties": {
-            "controlName": "112-frontend-apps"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "286",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "236",
-                  "measuredH": "26",
-                  "x": "28",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Frontend Apps",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2273",
-          "typeID": "Label",
-          "zOrder": "37",
-          "measuredW": "220",
-          "measuredH": "26",
-          "x": "534",
-          "y": "1010",
-          "properties": {
-            "size": "18",
-            "text": "Feel free to skip and revisit"
-          }
-        },
-        {
-          "ID": "2274",
-          "typeID": "__group__",
-          "zOrder": "38",
-          "measuredW": "120",
-          "measuredH": "50",
-          "w": "120",
-          "h": "50",
-          "x": "529",
-          "y": "948",
-          "properties": {
-            "controlName": "111-react"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "120",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "47",
-                  "measuredH": "25",
-                  "x": "36",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "React"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2275",
-          "typeID": "__group__",
-          "zOrder": "39",
-          "measuredW": "129",
-          "measuredH": "50",
-          "w": "129",
-          "h": "50",
-          "x": "657",
-          "y": "948",
-          "properties": {
-            "controlName": "110-tailwind"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "129",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "94",
-                  "measuredH": "25",
-                  "x": "18",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "TailwindCSS"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2276",
-          "typeID": "Label",
-          "zOrder": "40",
-          "measuredW": "237",
-          "measuredH": "26",
-          "x": "534",
-          "y": "1040",
-          "properties": {
-            "size": "18",
-            "text": "after learning some backend."
-          }
-        },
-        {
-          "ID": "2277",
-          "typeID": "__group__",
-          "zOrder": "41",
-          "measuredW": "120",
-          "measuredH": "50",
-          "w": "120",
-          "h": "50",
-          "x": "998",
-          "y": "1200",
-          "properties": {
-            "controlName": "113-nodejs"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "120",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "58",
-                  "measuredH": "25",
-                  "x": "31",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Node.js"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2278",
-          "typeID": "Canvas",
-          "zOrder": "42",
-          "w": "271",
-          "h": "54",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "522",
-          "y": "1197",
-          "properties": {
-            "borderColor": "16777215"
-          }
-        },
-        {
-          "ID": "2279",
-          "typeID": "Label",
-          "zOrder": "43",
-          "measuredW": "229",
-          "measuredH": "26",
-          "x": "543",
-          "y": "1211",
-          "properties": {
-            "size": "18",
-            "text": "Start Backend Development"
-          }
-        },
-        {
-          "ID": "2280",
-          "typeID": "__group__",
-          "zOrder": "44",
-          "measuredW": "429",
-          "measuredH": "85",
-          "w": "429",
-          "h": "85",
-          "x": "926",
-          "y": "1077",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Label",
-                  "zOrder": "0",
-                  "measuredW": "405",
-                  "measuredH": "26",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "size": "18",
-                    "text": "You can pick any backend programming language."
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "388",
-                  "measuredH": "26",
-                  "x": "0",
-                  "y": "29",
-                  "properties": {
-                    "size": "18",
-                    "text": "My recommendation is Node.js because you are"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "429",
-                  "measuredH": "26",
-                  "x": "0",
-                  "y": "59",
-                  "properties": {
-                    "size": "18",
-                    "text": "already familiar with JavaScript and it’s easier to pick."
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2281",
-          "typeID": "Arrow",
-          "zOrder": "45",
-          "w": "1",
-          "h": "289",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1336",
-          "y": "1226",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 288.9594087182493
-            }
-          }
-        },
-        {
-          "ID": "2282",
-          "typeID": "Arrow",
-          "zOrder": "46",
-          "w": "229",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1106",
-          "y": "1307",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 229,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2283",
-          "typeID": "__group__",
-          "zOrder": "47",
-          "measuredW": "280",
-          "measuredH": "50",
-          "w": "280",
-          "h": "50",
-          "x": "927",
-          "y": "1282",
-          "properties": {
-            "controlName": "114-cli-apps"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "280",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "191",
-                  "measuredH": "26",
-                  "x": "44",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — CLI Apps",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2284",
-          "typeID": "__group__",
-          "zOrder": "48",
-          "measuredW": "135",
-          "measuredH": "50",
-          "w": "135",
-          "h": "50",
-          "x": "1233",
-          "y": "1347",
-          "properties": {
-            "controlName": "115-postgresql"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "135",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "93",
-                  "measuredH": "25",
-                  "x": "21",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "PostgreSQL"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2285",
-          "typeID": "Arrow",
-          "zOrder": "49",
-          "w": "229",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1106",
-          "y": "1441",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 229,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2286",
-          "typeID": "__group__",
-          "zOrder": "50",
-          "measuredW": "276",
-          "measuredH": "50",
-          "w": "276",
-          "h": "50",
-          "x": "927",
-          "y": "1416",
-          "properties": {
-            "controlName": "116-crud"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "276",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "228",
-                  "measuredH": "26",
-                  "x": "24",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Simple CRUD",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2287",
-          "typeID": "Arrow",
-          "zOrder": "51",
-          "w": "881",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "1516",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.2324758426682365,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.4999999999999991,
-              "y": 0
-            },
-            "p2": {
-              "x": 880.971517875545,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2288",
-          "typeID": "Arrow",
-          "zOrder": "52",
-          "w": "1",
-          "h": "250",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "862",
-          "y": "1094",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 0,
-              "y": 0.2769850029135341
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 250.7539131759347
-            }
-          }
-        },
-        {
-          "ID": "2289",
-          "typeID": "Label",
-          "zOrder": "53",
-          "measuredW": "170",
-          "measuredH": "26",
-          "x": "671",
-          "y": "1310",
-          "properties": {
-            "size": "18",
-            "text": "Backend Starts Here"
-          }
-        },
-        {
-          "ID": "2290",
-          "typeID": "Arrow",
-          "zOrder": "54",
-          "w": "1",
-          "h": "48",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "857",
-          "y": "1297",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0.013075579052838293
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 48.325993023478986
-            },
-            "color": "3355443"
-          }
-        },
-        {
-          "ID": "2291",
-          "typeID": "Arrow",
-          "zOrder": "55",
-          "w": "1",
-          "h": "48",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "859",
-          "y": "1297",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0.013075579052838293
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 48.325993023478986
-            },
-            "color": "3355443"
-          }
-        },
-        {
-          "ID": "2292",
-          "typeID": "Arrow",
-          "zOrder": "56",
-          "w": "1",
-          "h": "48",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "863",
-          "y": "1297",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0.013075579052838293
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 48.325993023478986
-            },
-            "color": "3355443"
-          }
-        },
-        {
-          "ID": "2293",
-          "typeID": "__group__",
-          "zOrder": "57",
-          "measuredW": "145",
-          "measuredH": "50",
-          "w": "145",
-          "h": "50",
-          "x": "750",
-          "y": "1491",
-          "properties": {
-            "controlName": "117-restful-apis"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "145",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "102",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "RESTful APIs"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2294",
-          "typeID": "__group__",
-          "zOrder": "58",
-          "measuredW": "111",
-          "measuredH": "50",
-          "w": "111",
-          "h": "50",
-          "x": "614",
-          "y": "1491",
-          "properties": {
-            "controlName": "118-jwt-auth"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "111",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "74",
-                  "measuredH": "25",
-                  "x": "19",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "JWT Auth"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2295",
-          "typeID": "__group__",
-          "zOrder": "59",
-          "measuredW": "277",
-          "measuredH": "50",
-          "w": "277",
-          "h": "50",
-          "x": "494",
-          "y": "1617",
-          "properties": {
-            "controlName": "120-complete-app"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "277",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "233",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Complete App",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2296",
-          "typeID": "Arrow",
-          "zOrder": "60",
-          "w": "1",
-          "h": "331",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "1517",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0.45578755817643923
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 331.5
-            }
-          }
-        },
-        {
-          "ID": "2297",
-          "typeID": "__group__",
-          "zOrder": "61",
-          "measuredW": "89",
-          "measuredH": "50",
-          "w": "89",
-          "h": "50",
-          "x": "496",
-          "y": "1491",
-          "properties": {
-            "controlName": "119-redis"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "89",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "45",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Redis"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2298",
-          "typeID": "Arrow",
-          "zOrder": "62",
-          "w": "1",
-          "h": "718",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "361",
-          "y": "869",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "14540253",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.49979684489989734,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 718
-            }
-          }
-        },
-        {
-          "ID": "2299",
-          "typeID": "Arrow",
-          "zOrder": "63",
-          "w": "194",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "361",
-          "y": "867",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "14540253",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4999934253780398,
-              "y": 0.0005275763265275694
-            },
-            "p2": {
-              "x": 195,
-              "y": 0
-            }
-          }
-        },
-        {
-          "ID": "2300",
-          "typeID": "Canvas",
-          "zOrder": "64",
-          "w": "271",
-          "h": "80",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "303",
-          "y": "1320",
-          "properties": {
-            "borderColor": "16777215"
-          }
-        },
-        {
-          "ID": "2301",
-          "typeID": "Label",
-          "zOrder": "65",
-          "measuredW": "230",
-          "measuredH": "26",
-          "x": "324",
-          "y": "1331",
-          "properties": {
-            "size": "18",
-            "text": "Learn Frontend Frameworks"
-          }
-        },
-        {
-          "ID": "2302",
-          "typeID": "Label",
-          "zOrder": "66",
-          "measuredW": "170",
-          "measuredH": "26",
-          "x": "324",
-          "y": "1359",
-          "properties": {
-            "size": "18",
-            "text": "If you skipped earlier"
-          }
-        },
-        {
-          "ID": "2303",
-          "typeID": "Arrow",
-          "zOrder": "67",
-          "w": "315",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "361",
-          "y": "1734",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 314.84917963190844,
-              "y": -0.24608682406528715
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": -1.851258080486789e-18
-            },
-            "p2": {
-              "x": 0,
-              "y": -0.24608682406528715
-            }
-          }
-        },
-        {
-          "ID": "2304",
-          "typeID": "Arrow",
-          "zOrder": "68",
-          "w": "74",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "600",
-          "y": "1737",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 74,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5046441213217208,
-              "y": -0.0016627488112519412
-            },
-            "p2": {
-              "x": 0,
-              "y": 0
-            }
-          }
-        },
-        {
-          "ID": "2305",
-          "typeID": "Arrow",
-          "zOrder": "69",
-          "w": "74",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "600",
-          "y": "1741",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 74,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.5046441213217208,
-              "y": -0.0016627488112519412
-            },
-            "p2": {
-              "x": 0,
-              "y": 0
-            }
-          }
-        },
-        {
-          "ID": "2306",
-          "typeID": "Label",
-          "zOrder": "70",
-          "measuredW": "246",
-          "measuredH": "26",
-          "x": "516",
-          "y": "1754",
-          "properties": {
-            "size": "18",
-            "text": "Get Some DevOps Knowledge"
-          }
-        },
-        {
-          "ID": "2307",
-          "typeID": "__group__",
-          "zOrder": "71",
-          "measuredW": "145",
-          "measuredH": "50",
-          "w": "145",
-          "h": "50",
-          "x": "381",
-          "y": "1824",
-          "properties": {
-            "controlName": "121-linux-basics"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "145",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "25",
-                  "x": "24",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Linux Basics"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2308",
-          "typeID": "__group__",
-          "zOrder": "72",
-          "measuredW": "198",
-          "measuredH": "50",
-          "w": "198",
-          "h": "50",
-          "x": "802",
-          "y": "1820",
-          "properties": {
-            "controlName": "122-basic-aws-services"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "153",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Basic AWS Services"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2309",
-          "typeID": "__group__",
-          "zOrder": "73",
-          "measuredW": "64",
-          "measuredH": "50",
-          "w": "64",
-          "h": "50",
-          "x": "802",
-          "y": "1740",
-          "properties": {
-            "controlName": "100-basic-aws-services:ec2"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "64",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "36",
-                  "measuredH": "26",
-                  "x": "14",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "EC2"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2310",
-          "typeID": "__group__",
-          "zOrder": "74",
-          "measuredW": "61",
-          "measuredH": "50",
-          "w": "61",
-          "h": "50",
-          "x": "872",
-          "y": "1740",
-          "properties": {
-            "controlName": "101-basic-aws-services:vpc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "61",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "36",
-                  "measuredH": "26",
-                  "x": "13",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "VPC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2311",
-          "typeID": "__group__",
-          "zOrder": "75",
-          "measuredW": "107",
-          "measuredH": "50",
-          "w": "107",
-          "h": "50",
-          "x": "803",
-          "y": "1686",
-          "properties": {
-            "controlName": "103-basic-aws-services:route53"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "107",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "71",
-                  "measuredH": "26",
-                  "x": "18",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Route53"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2312",
-          "typeID": "__group__",
-          "zOrder": "76",
-          "measuredW": "85",
-          "measuredH": "50",
-          "w": "85",
-          "h": "50",
-          "x": "916",
-          "y": "1686",
-          "properties": {
-            "controlName": "104-basic-aws-services:ses"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "85",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "34",
-                  "measuredH": "26",
-                  "x": "28",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "SES"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2313",
-          "typeID": "__group__",
-          "zOrder": "77",
-          "measuredW": "62",
-          "measuredH": "50",
-          "w": "62",
-          "h": "50",
-          "x": "938",
-          "y": "1740",
-          "properties": {
-            "controlName": "102-basic-aws-services:s3"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "62",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "22",
-                  "measuredH": "26",
-                  "x": "20",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "S3"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2314",
-          "typeID": "Arrow",
-          "zOrder": "78",
-          "w": "1",
-          "h": "289",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1336",
-          "y": "1848",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 288.9594087182493
-            }
-          }
-        },
-        {
-          "ID": "2315",
-          "typeID": "__group__",
-          "zOrder": "79",
-          "measuredW": "223",
-          "measuredH": "50",
-          "w": "223",
-          "h": "50",
-          "x": "747",
-          "y": "2025",
-          "properties": {
-            "controlName": "127-ci-cd"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "223",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "179",
-                  "measuredH": "26",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — CI / CD",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2316",
-          "typeID": "__group__",
-          "zOrder": "80",
-          "measuredW": "87",
-          "measuredH": "50",
-          "w": "87",
-          "h": "50",
-          "x": "1292",
-          "y": "1966",
-          "properties": {
-            "controlName": "124-monit"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "87",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "44",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Monit"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2317",
-          "typeID": "__group__",
-          "zOrder": "81",
-          "measuredW": "251",
-          "measuredH": "50",
-          "w": "251",
-          "h": "50",
-          "x": "999",
-          "y": "2024",
-          "properties": {
-            "controlName": "125-monitoring"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "251",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "204",
-                  "measuredH": "26",
-                  "x": "24",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Monitoring",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2318",
-          "typeID": "Arrow",
-          "zOrder": "82",
-          "w": "881",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "2137",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.10054691206102007,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.499999999999999,
-              "y": 0
-            },
-            "p2": {
-              "x": 880.8417317755348,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2319",
-          "typeID": "__group__",
-          "zOrder": "83",
-          "measuredW": "157",
-          "measuredH": "50",
-          "w": "157",
-          "h": "50",
-          "x": "1053",
-          "y": "2113",
-          "properties": {
-            "controlName": "126-github-actions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "157",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "114",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "GitHub Actions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2320",
-          "typeID": "__group__",
-          "zOrder": "84",
-          "measuredW": "256",
-          "measuredH": "50",
-          "w": "256",
-          "h": "50",
-          "x": "997",
-          "y": "1907",
-          "properties": {
-            "controlName": "123-deployment"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "256",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "214",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Deployment",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2321",
-          "typeID": "__group__",
-          "zOrder": "85",
-          "measuredW": "102",
-          "measuredH": "50",
-          "w": "102",
-          "h": "50",
-          "x": "671",
-          "y": "2112",
-          "properties": {
-            "controlName": "128-ansible"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "102",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "56",
-                  "measuredH": "25",
-                  "x": "23",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Ansible"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2322",
-          "typeID": "Arrow",
-          "zOrder": "86",
-          "w": "1",
-          "h": "86",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "576",
-          "y": "2050",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "stroke": "dotted",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": -0.056906605600943294
-            },
-            "p1": {
-              "x": 0.4999999999999997,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.4638780906282136,
-              "y": 86.21773558030964
-            }
-          }
-        },
-        {
-          "ID": "2323",
-          "typeID": "__group__",
-          "zOrder": "87",
-          "measuredW": "245",
-          "measuredH": "50",
-          "w": "245",
-          "h": "50",
-          "x": "454",
-          "y": "2025",
-          "properties": {
-            "controlName": "129-automation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "245",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "208",
-                  "measuredH": "26",
-                  "x": "19",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Checkpoint — Automation",
-                    "color": "16777215"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2324",
-          "typeID": "Arrow",
-          "zOrder": "88",
-          "w": "1",
-          "h": "274",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "453",
-          "y": "2137",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0.45578755817643923
-            },
-            "p1": {
-              "x": 0.4999999999999996,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 274.50913558489674
-            }
-          }
-        },
-        {
-          "ID": "2325",
-          "typeID": "__group__",
-          "zOrder": "89",
-          "measuredW": "109",
-          "measuredH": "50",
-          "w": "109",
-          "h": "50",
-          "x": "398",
-          "y": "2191",
-          "properties": {
-            "controlName": "130-terraform"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "109",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "75",
-                  "measuredH": "25",
-                  "x": "17",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Terraform"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2326",
-          "typeID": "TextArea",
-          "zOrder": "90",
-          "w": "370",
-          "h": "155",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "1055",
-          "y": "1595"
-        },
-        {
-          "ID": "2327",
-          "typeID": "Label",
-          "zOrder": "91",
-          "measuredW": "311",
-          "measuredH": "26",
-          "x": "1076",
-          "y": "1613",
-          "properties": {
-            "color": "4985136",
-            "size": "18",
-            "text": "Use the checkpoints and do not forget"
-          }
-        },
-        {
-          "ID": "2328",
-          "typeID": "Label",
-          "zOrder": "92",
-          "measuredW": "296",
-          "measuredH": "26",
-          "x": "1076",
-          "y": "1643",
-          "properties": {
-            "color": "4985136",
-            "size": "18",
-            "text": "to practice what you learn. There are"
-          }
-        },
-        {
-          "ID": "2329",
-          "typeID": "Label",
-          "zOrder": "93",
-          "measuredW": "302",
-          "measuredH": "26",
-          "x": "1076",
-          "y": "1673",
-          "properties": {
-            "color": "4985136",
-            "size": "18",
-            "text": "project ideas at each checkpoint that"
-          }
-        },
-        {
-          "ID": "2330",
-          "typeID": "Label",
-          "zOrder": "94",
-          "measuredW": "320",
-          "measuredH": "26",
-          "x": "1076",
-          "y": "1703",
-          "properties": {
-            "color": "4985136",
-            "size": "18",
-            "text": "you can build to solidify your knowledge."
-          }
-        },
-        {
-          "ID": "2331",
-          "typeID": "__group__",
-          "zOrder": "95",
-          "measuredW": "265",
-          "measuredH": "50",
-          "w": "265",
-          "h": "50",
-          "x": "521",
-          "y": "2278",
-          "properties": {
-            "controlName": "131-infrastructure"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "265",
-                  "h": "50",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "227",
-                  "measuredH": "26",
-                  "x": "17",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "color": "16777215",
-                    "text": "Checkpoint — Infrastructure"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2332",
-          "typeID": "Arrow",
-          "zOrder": "96",
-          "w": "504",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "453",
-          "y": "2411",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": -0.10054691206102007,
-              "y": -0.20575476734575204
-            },
-            "p1": {
-              "x": 0.499999999999999,
-              "y": 0
-            },
-            "p2": {
-              "x": 503.7236123379937,
-              "y": -0.20575476734575204
-            }
-          }
-        },
-        {
-          "ID": "2333",
-          "typeID": "Arrow",
-          "zOrder": "97",
-          "w": "1",
-          "h": "289",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "959",
-          "y": "2411",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 288.9594087182493
-            }
-          }
-        },
-        {
-          "ID": "2334",
-          "typeID": "TextArea",
-          "zOrder": "98",
-          "w": "635",
-          "h": "112",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "640",
-          "y": "2486"
-        },
-        {
-          "ID": "2335",
-          "typeID": "Label",
-          "zOrder": "99",
-          "measuredW": "366",
-          "measuredH": "25",
-          "x": "775",
-          "y": "2503",
-          "properties": {
-            "size": "17",
-            "text": "Continue Learning with following relevant tracks"
-          }
-        },
-        {
-          "ID": "2336",
-          "typeID": "__group__",
-          "zOrder": "100",
-          "measuredW": "198",
-          "measuredH": "44",
-          "w": "198",
-          "h": "44",
-          "x": "1062",
-          "y": "2540",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/devops"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "141",
-                  "measuredH": "25",
-                  "x": "28",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "DevOps Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2337",
-          "typeID": "__group__",
-          "zOrder": "101",
-          "measuredW": "198",
-          "measuredH": "44",
-          "w": "198",
-          "h": "44",
-          "x": "856",
-          "y": "2540",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/backend"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "147",
-                  "measuredH": "25",
-                  "x": "25",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Backend Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2338",
-          "typeID": "__group__",
-          "zOrder": "102",
-          "measuredW": "198",
-          "measuredH": "44",
-          "w": "198",
-          "h": "44",
-          "x": "650",
-          "y": "2540",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/frontend"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "149",
-                  "measuredH": "25",
-                  "x": "24",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Frontend Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2339",
-          "typeID": "__group__",
-          "zOrder": "103",
-          "measuredW": "381",
-          "measuredH": "302",
-          "w": "381",
-          "h": "302",
-          "x": "604",
-          "y": "254",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "381",
-                  "h": "302",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "318",
-                  "measuredH": "26",
-                  "x": "19",
-                  "y": "61",
-                  "properties": {
-                    "size": "18",
-                    "text": "If you are already a full-stack developer"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "328",
-                  "measuredH": "26",
-                  "x": "19",
-                  "y": "91",
-                  "properties": {
-                    "size": "18",
-                    "text": "you should visit these roadmaps instead."
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "106",
-                  "measuredH": "44",
-                  "w": "106",
-                  "h": "44",
-                  "x": "20",
-                  "y": "130",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/frontend"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "106",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "70",
-                          "measuredH": "25",
-                          "x": "18",
-                          "y": "9",
-                          "properties": {
-                            "size": "17",
-                            "text": "Frontend"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "4",
-                  "typeID": "__group__",
-                  "zOrder": "4",
-                  "measuredW": "113",
-                  "measuredH": "44",
-                  "w": "113",
-                  "h": "44",
-                  "x": "137",
-                  "y": "130",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/backend"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "113",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "68",
-                          "measuredH": "25",
-                          "x": "23",
-                          "y": "9",
-                          "properties": {
-                            "size": "17",
-                            "text": "Backend"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "5",
-                  "typeID": "__group__",
-                  "zOrder": "5",
-                  "measuredW": "101",
-                  "measuredH": "44",
-                  "w": "101",
-                  "h": "44",
-                  "x": "262",
-                  "y": "130",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/devops"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "101",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "62",
-                          "measuredH": "25",
-                          "x": "20",
-                          "y": "9",
-                          "properties": {
-                            "size": "17",
-                            "text": "DevOps"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "6",
-                  "typeID": "Label",
-                  "zOrder": "6",
-                  "measuredW": "288",
-                  "measuredH": "26",
-                  "x": "22",
-                  "y": "189",
-                  "properties": {
-                    "size": "18",
-                    "text": "Target audience for this roadmap is"
-                  }
-                },
-                {
-                  "ID": "7",
-                  "typeID": "Label",
-                  "zOrder": "7",
-                  "measuredW": "311",
-                  "measuredH": "26",
-                  "x": "22",
-                  "y": "219",
-                  "properties": {
-                    "size": "18",
-                    "text": "absolute beginners wanting to get into"
-                  }
-                },
-                {
-                  "ID": "8",
-                  "typeID": "Label",
-                  "zOrder": "8",
-                  "measuredW": "186",
-                  "measuredH": "26",
-                  "x": "22",
-                  "y": "249",
-                  "properties": {
-                    "size": "18",
-                    "text": "full stack development."
-                  }
-                },
-                {
-                  "ID": "9",
-                  "typeID": "Label",
-                  "zOrder": "9",
-                  "measuredW": "135",
-                  "measuredH": "28",
-                  "x": "19",
-                  "y": "20",
-                  "properties": {
-                    "size": "20",
-                    "text": "Audience Note"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2340",
-          "typeID": "Canvas",
-          "zOrder": "104",
-          "w": "363",
-          "h": "136",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1007",
-          "y": "420"
-        },
-        {
-          "ID": "2341",
-          "typeID": "Canvas",
-          "zOrder": "105",
-          "w": "26",
-          "h": "26",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1023",
-          "y": "436",
-          "properties": {
-            "color": "3355443"
-          }
-        },
-        {
-          "ID": "2342",
-          "typeID": "Label",
-          "zOrder": "106",
-          "measuredW": "249",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "436",
-          "properties": {
-            "size": "18",
-            "text": "Project Ideas and Suggestions"
-          }
-        },
-        {
-          "ID": "2343",
-          "typeID": "Canvas",
-          "zOrder": "107",
-          "w": "26",
-          "h": "26",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1023",
-          "y": "471",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "2344",
-          "typeID": "Label",
-          "zOrder": "108",
-          "measuredW": "150",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "471",
-          "properties": {
-            "size": "18",
-            "text": "Key topics to learn"
-          }
-        },
-        {
-          "ID": "2345",
-          "typeID": "Arrow",
-          "zOrder": "109",
-          "w": "1",
-          "h": "20",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1034",
-          "y": "512",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 0,
-              "y": 0.07526588698897285
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 19.753913175934713
-            }
-          }
-        },
-        {
-          "ID": "2346",
-          "typeID": "Label",
-          "zOrder": "110",
-          "measuredW": "153",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "509",
-          "properties": {
-            "size": "18",
-            "text": "Change of Domain"
-          }
-        },
-        {
-          "ID": "2347",
-          "typeID": "Arrow",
-          "zOrder": "111",
-          "w": "1",
-          "h": "20",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1037",
-          "y": "512",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 0,
-              "y": 0.07526588698897285
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 19.753913175934713
-            }
-          }
-        },
-        {
-          "ID": "2348",
-          "typeID": "Arrow",
-          "zOrder": "112",
-          "w": "271",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1203",
-          "y": "613",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 270.18342568627713,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2349",
-          "typeID": "Arrow",
-          "zOrder": "113",
-          "w": "228",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "278",
-          "y": "747",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": 0.49770846294279636,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 228.53175987254372,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "2350",
-          "typeID": "Arrow",
-          "zOrder": "114",
-          "w": "60",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "929",
-          "y": "2724",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": 0,
-              "y": 0.12070867681268282
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 60,
-              "y": 0.12070867681268282
-            }
-          }
+  "nodes": [
+    {
+      "id": "kPPgIGhyoDoJoUJnP-vOY",
+      "type": "section",
+      "position": {
+        "x": 44.659212053078704,
+        "y": -125.50228984395414
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "style": {
+          "width": 150,
+          "height": 100,
+          "fontSize": 17,
+          "backgroundColor": "#ffffff",
+          "borderColor": "#000000"
         }
-      ]
+      },
+      "zIndex": -999,
+      "width": 355,
+      "height": 103,
+      "style": {
+        "width": 355,
+        "height": 103
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": 44.659212053078704,
+        "y": -125.50228984395414
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
     },
-    "attributes": {
-      "name": "New Wireframe 1 copy 8",
-      "order": 1000000.6428282561,
-      "parentID": null,
-      "notes": ""
+    {
+      "id": "tmRyxL2cIei7PVHdOvmuJ",
+      "type": "horizontal",
+      "position": {
+        "x": 253.00948964805815,
+        "y": 1215.2210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "zh4DYU0QpAolXJ6wE0CEe"
+      },
+      "zIndex": 999,
+      "width": 84,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 253.00948964805815,
+        "y": 1215.2210153640276
+      },
+      "dragging": false,
+      "style": {
+        "width": 84,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
     },
-    "branchID": "Master",
-    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
-    "mockupH": "2510",
-    "mockupW": "1196",
-    "measuredW": "1474",
-    "measuredH": "2725",
-    "version": "1.0"
-  },
-  "groupOffset": {
-    "x": 0,
-    "y": 0
-  },
-  "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
+    {
+      "id": "Ju00mr0KLGN2BV6yEQGPt",
+      "type": "vertical",
+      "position": {
+        "x": -45.86972326342038,
+        "y": 1834.052389726952
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#4136D4"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 104,
+      "positionAbsolute": {
+        "x": -45.86972326342038,
+        "y": 1834.052389726952
+      },
+      "dragging": false,
+      "style": {
+        "width": 20,
+        "height": 104
+      },
+      "resizing": false,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "width": 453,
+      "height": 124,
+      "id": "sVXZrBCsiSzWBBYWTm-nQ",
+      "type": "paragraph",
+      "position": {
+        "x": -253.28332913299596,
+        "y": 1746.0147859609992
+      },
+      "selected": false,
+      "data": {
+        "label": "Continue Learning with following relevant tracks",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "borderColor": "#000000",
+          "backgroundColor": "#ffffff"
+        },
+        "oldId": "0vLaVNJaJSHZ_bHli6Qzs"
+      },
+      "zIndex": 999,
+      "positionAbsolute": {
+        "x": -253.28332913299596,
+        "y": 1746.0147859609992
+      },
+      "dragging": false,
+      "style": {
+        "width": 453,
+        "height": 124
+      },
+      "resizing": false,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "width": 161,
+      "height": 68,
+      "id": "iogwMmOvub2ZF4zgg6WyF",
+      "type": "title",
+      "position": {
+        "x": -584.5823082314752,
+        "y": -192.89091544360696
+      },
+      "selected": false,
+      "data": {
+        "label": "Full Stack",
+        "style": {
+          "fontSize": 28,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "9nxw2PEl-_eQPW0FHNPq2"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -584.5823082314752,
+        "y": -192.89091544360696
+      },
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "width": 103,
+      "height": 49,
+      "id": "sQsxo9QyLKZyhMnFUcxhS",
+      "type": "button",
+      "position": {
+        "x": -235.86972326342038,
+        "y": 1802.4845433334572
+      },
+      "selected": false,
+      "data": {
+        "label": "Frontend",
+        "href": "https://roadmap.sh/frontend",
+        "color": "#FFFFFf",
+        "backgroundColor": "#4136D4",
+        "style": {
+          "fontSize": 17
+        },
+        "borderColor": "#4136D4",
+        "oldId": "uSLzfLPXxS5-P7ozscvjZ"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -235.86972326342038,
+        "y": 1802.4845433334572
+      },
+      "style": {
+        "width": 103,
+        "height": 49
+      },
+      "focusable": true,
+      "resizing": false,
+      "selectable": true
+    },
+    {
+      "width": 20,
+      "height": 81,
+      "id": "LEijbLyxg4RyutKEM2Y5g",
+      "type": "vertical",
+      "position": {
+        "x": -514.0823082314752,
+        "y": -273.89091544360696
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#0A33FF"
+        },
+        "oldId": "xD07fJ1NmNeAarVCEfubU"
+      },
+      "zIndex": 999,
+      "positionAbsolute": {
+        "x": -514.0823082314752,
+        "y": -273.89091544360696
+      },
+      "dragging": false,
+      "focusable": true,
+      "style": {
+        "width": 20,
+        "height": 81
+      },
+      "resizing": false,
+      "selectable": true
+    },
+    {
+      "id": "yHmHXymPNWwu8p1vvqD3o",
+      "type": "paragraph",
+      "position": {
+        "x": 45.49718479195076,
+        "y": -280.15106699547107
+      },
+      "selected": false,
+      "data": {
+        "label": "Find the detailed version of this roadmap along with other similar roadmaps",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "left",
+          "borderColor": "#000000",
+          "backgroundColor": "#FFFFFf"
+        }
+      },
+      "zIndex": 999,
+      "width": 354,
+      "height": 143,
+      "positionAbsolute": {
+        "x": 45.49718479195076,
+        "y": -280.15106699547107
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 354,
+        "height": 143
+      },
+      "resizing": false
+    },
+    {
+      "id": "2zqZkyVgigifcRS1H7F_b",
+      "type": "button",
+      "position": {
+        "x": 58.7005592047509,
+        "y": -198.1655035777258
+      },
+      "selected": false,
+      "data": {
+        "label": "roadmap.sh",
+        "href": "https://roadmap.sh",
+        "color": "#ffffff",
+        "backgroundColor": "#4136D6",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 329,
+      "height": 49,
+      "dragging": false,
+      "style": {
+        "width": 329,
+        "height": 49
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": 58.7005592047509,
+        "y": -198.1655035777258
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "B0kARTODvCBi0iOF8iiqI",
+      "type": "topic",
+      "position": {
+        "x": -395.56446376179997,
+        "y": 43.404587772901664
+      },
+      "selected": false,
+      "data": {
+        "label": "HTML",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "mGgx_QTEPmVKf6AijX9fi"
+      },
+      "zIndex": 999,
+      "width": 104,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -395.56446376179997,
+        "y": 43.404587772901664
+      },
+      "dragging": false,
+      "style": {
+        "width": 104,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "dAJHWmGeiYdzZ1ZjrWz1S",
+      "type": "topic",
+      "position": {
+        "x": -251.56446376179997,
+        "y": 43.404587772901664
+      },
+      "selected": false,
+      "data": {
+        "label": "CSS",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "mGgx_QTEPmVKf6AijX9fi"
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -251.56446376179997,
+        "y": 43.404587772901664
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "T9PB6WQf-Fa9NXKKvVOy_",
+      "type": "topic",
+      "position": {
+        "x": 28.00948964805815,
+        "y": 43.404587772901664
+      },
+      "selected": false,
+      "data": {
+        "label": "JavaScript",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "khoUtTUxdf8udAzN9_CAb"
+      },
+      "zIndex": 999,
+      "width": 124,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 28.00948964805815,
+        "y": 43.404587772901664
+      },
+      "dragging": false,
+      "style": {
+        "width": 124,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "mGgx_QTEPmVKf6AijX9fi",
+      "type": "topic",
+      "position": {
+        "x": 298.1821043313223,
+        "y": 133.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "npm",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 298.1821043313223,
+        "y": 133.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "WsdUAEaI7FX6DKKhPXUHp",
+      "type": "subtopic",
+      "position": {
+        "x": -351.97806963137555,
+        "y": 133.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint - Static Webpages",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "7JU1cVggMDoZUV-adGsf-"
+      },
+      "zIndex": 999,
+      "width": 290,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -351.97806963137555,
+        "y": 133.40458777290166
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 290,
+        "height": 49
+      },
+      "resizing": true
+    },
+    {
+      "id": "arAWBttFmMY6g99PcEaeA",
+      "type": "vertical",
+      "position": {
+        "x": -117.38142186176219,
+        "y": 69.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "8MhESAMICF6j7X3RL9bFE"
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 64,
+      "positionAbsolute": {
+        "x": -117.38142186176219,
+        "y": 69.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 20,
+        "height": 64
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "2DFzoIUjKdAKGjfu_SCfa",
+      "type": "subtopic",
+      "position": {
+        "x": -23.99051035194185,
+        "y": 133.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint - Interactivity",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "YVMyHFSCVF-GgXydq-SFJ"
+      },
+      "zIndex": 999,
+      "width": 286,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -23.99051035194185,
+        "y": 133.40458777290166
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 286,
+        "height": 49
+      },
+      "resizing": false
+    },
+    {
+      "id": "CVVeXklBu8uEr7oyiSEhQ",
+      "type": "vertical",
+      "position": {
+        "x": 191.6185781382378,
+        "y": 71.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "8MhESAMICF6j7X3RL9bFE"
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 62,
+      "positionAbsolute": {
+        "x": 191.6185781382378,
+        "y": 71.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 20,
+        "height": 62
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "We2APJpOPTr-VNfowG0kI",
+      "type": "topic",
+      "position": {
+        "x": 162.00948964805815,
+        "y": 316.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Git",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "khoUtTUxdf8udAzN9_CAb"
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 162.00948964805815,
+        "y": 316.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "8sPXL8iClpPqje03ksses",
+      "type": "topic",
+      "position": {
+        "x": -19.56446376179997,
+        "y": 316.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "GitHub",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "khoUtTUxdf8udAzN9_CAb"
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -19.56446376179997,
+        "y": 316.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "R4aeJNOrfWyVp3ea-qF4H",
+      "type": "subtopic",
+      "position": {
+        "x": -26.978069631375547,
+        "y": 215.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint - External Packages",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "YVMyHFSCVF-GgXydq-SFJ"
+      },
+      "zIndex": 999,
+      "width": 289,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -26.978069631375547,
+        "y": 215.40458777290166
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "PW10DTLV-5U2ue770SXtM",
+      "type": "horizontal",
+      "position": {
+        "x": 262.02193036862445,
+        "y": 229.90458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "BfadoWcewEUb5PQ_itqK-"
+      },
+      "zIndex": 999,
+      "width": 84,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 262.02193036862445,
+        "y": 229.90458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 84,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "CVCqdPkq_hGQfI8EEi5RC",
+      "type": "topic",
+      "position": {
+        "x": -329.47806963137555,
+        "y": 315.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Tailwind CSS",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -329.47806963137555,
+        "y": 315.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 145,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "khoUtTUxdf8udAzN9_CAb",
+      "type": "topic",
+      "position": {
+        "x": -444.8178956686777,
+        "y": 315.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "React",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "mGgx_QTEPmVKf6AijX9fi"
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -444.8178956686777,
+        "y": 315.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "zFGWxgLPcZoW7KIzlnSV9",
+      "type": "subtopic",
+      "position": {
+        "x": -350.97806963137555,
+        "y": 215.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint - Collaborative Work",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "7JU1cVggMDoZUV-adGsf-"
+      },
+      "zIndex": 999,
+      "width": 289,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -350.97806963137555,
+        "y": 215.40458777290166
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "8MhESAMICF6j7X3RL9bFE",
+      "type": "vertical",
+      "position": {
+        "x": -117.38142186176219,
+        "y": 265.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 73,
+      "positionAbsolute": {
+        "x": -117.38142186176219,
+        "y": 265.40458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 20,
+        "height": 73
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "H63WyNiiJ2Yr9HWs98EjR",
+      "type": "paragraph",
+      "position": {
+        "x": -459.47806963137555,
+        "y": 396.90458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Feel free to skip these and revisit after learning Backend",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "transparent",
+          "backgroundColor": "TRANSPARENT",
+          "color": "#000000",
+          "textAlign": "center",
+          "justifyContent": "center",
+          "padding": 16
+        },
+        "oldId": "fKzuMTsf6XL_0Ik6t8SAX"
+      },
+      "zIndex": 999,
+      "width": 275,
+      "height": 63,
+      "dragging": false,
+      "style": {
+        "width": 275,
+        "height": 63
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -459.47806963137555,
+        "y": 396.90458777290166
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "QfW-odmDYknm_qXNcDu5o",
+      "type": "paragraph",
+      "position": {
+        "x": -482.08230823147517,
+        "y": 575.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "Start Backend Development",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "transparent",
+          "backgroundColor": "#ffffff",
+          "color": "#000000",
+          "textAlign": "center",
+          "justifyContent": "center",
+          "padding": 16
+        }
+      },
+      "zIndex": 999,
+      "width": 264,
+      "height": 48,
+      "dragging": false,
+      "style": {
+        "width": 264,
+        "height": 48
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -482.08230823147517,
+        "y": 575.9045877729017
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "7JU1cVggMDoZUV-adGsf-",
+      "type": "subtopic",
+      "position": {
+        "x": -443.47806963137555,
+        "y": 483.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint - Frontend Apps",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        }
+      },
+      "zIndex": 999,
+      "width": 259,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -443.47806963137555,
+        "y": 483.40458777290166
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "yrZUjoNj7mjOHaZVRiFJV",
+      "type": "horizontal",
+      "position": {
+        "x": -502.08230823147517,
+        "y": 497.90458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 62,
+      "height": 20,
+      "positionAbsolute": {
+        "x": -502.08230823147517,
+        "y": 497.90458777290166
+      },
+      "dragging": false,
+      "style": {
+        "width": 62,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "_aA6Hp4KkgJeptqo8oKTg",
+      "type": "topic",
+      "position": {
+        "x": 7.00948964805815,
+        "y": 574.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "Node.js",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "cUOfvOlQ_0Uu1VX3i67kJ"
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 7.00948964805815,
+        "y": 574.9045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 145,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "qCV1wiNSXj4OSHyMqxRIK",
+      "type": "paragraph",
+      "position": {
+        "x": -26.978069631375547,
+        "y": 431.40458777290166
+      },
+      "selected": false,
+      "data": {
+        "label": "You can pick any backend programming language. My recommendation is Node.js because you are already familiar with JavaScript and it's easier to pick.",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "transparent",
+          "backgroundColor": "TRANSPARENT",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "center",
+          "padding": 16
+        },
+        "oldId": "fKzuMTsf6XL_0Ik6t8SAX"
+      },
+      "zIndex": 999,
+      "width": 444,
+      "height": 101,
+      "dragging": false,
+      "style": {
+        "width": 444,
+        "height": 101
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -26.978069631375547,
+        "y": 431.40458777290166
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "0QKpvDD33C3WCmNGtRanp",
+      "type": "vertical",
+      "position": {
+        "x": -104.20433957685361,
+        "y": 531.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "stroke": "#000000"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 130,
+      "positionAbsolute": {
+        "x": -104.20433957685361,
+        "y": 531.9045877729017
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 20,
+        "height": 130
+      },
+      "resizing": false
+    },
+    {
+      "id": "WqNcVZ8IkyqEubdd9JCa1",
+      "type": "label",
+      "position": {
+        "x": -283.06446376179997,
+        "y": 630.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "Backend Starts here",
+        "href": "",
+        "color": "#000000",
+        "style": {
+          "fontSize": 17
+        },
+        "oldId": "Dj2QhtEuuIgKc2CvgFGyK"
+      },
+      "zIndex": 999,
+      "width": 173,
+      "height": 36,
+      "positionAbsolute": {
+        "x": -283.06446376179997,
+        "y": 630.9045877729017
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "JGu0TKwAw-ieiG92BytYI",
+      "type": "subtopic",
+      "position": {
+        "x": -47.99051035194185,
+        "y": 651.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — CLI Apps",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "YVMyHFSCVF-GgXydq-SFJ"
+      },
+      "zIndex": 999,
+      "width": 301,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -47.99051035194185,
+        "y": 651.9045877729017
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 301,
+        "height": 49
+      },
+      "resizing": false
+    },
+    {
+      "id": "o72NM00uoHXswkadhqVVW",
+      "type": "horizontal",
+      "position": {
+        "x": 253.00948964805815,
+        "y": 666.4045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "BfadoWcewEUb5PQ_itqK-"
+      },
+      "zIndex": 999,
+      "width": 84,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 253.00948964805815,
+        "y": 666.4045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 84,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "vmHbWdmMHF53otXIrqzRV",
+      "type": "topic",
+      "position": {
+        "x": -117.38142186176219,
+        "y": 847.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "RESTful APIs",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "cUOfvOlQ_0Uu1VX3i67kJ"
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -117.38142186176219,
+        "y": 847.9045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 150,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "3EtGLO6cwkLc1-o9gwFNk",
+      "type": "subtopic",
+      "position": {
+        "x": -49.99051035194191,
+        "y": 779.7210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Simple CRUD Apps",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "sO_9-l4FECbaqiaFnyeXO"
+      },
+      "zIndex": 999,
+      "width": 303,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -49.99051035194191,
+        "y": 779.7210153640276
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "BQV2ycD-EnmssO1idTgx9",
+      "type": "horizontal",
+      "position": {
+        "x": 253.00948964805815,
+        "y": 794.2210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "zh4DYU0QpAolXJ6wE0CEe"
+      },
+      "zIndex": 999,
+      "width": 84,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 253.00948964805815,
+        "y": 794.2210153640276
+      },
+      "dragging": false,
+      "style": {
+        "width": 84,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "vHojhJYjiN0IwruEqi1Dv",
+      "type": "topic",
+      "position": {
+        "x": -257.06446376179997,
+        "y": 847.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "JWT Auth",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "cUOfvOlQ_0Uu1VX3i67kJ"
+      },
+      "zIndex": 999,
+      "width": 122,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -257.06446376179997,
+        "y": 847.9045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 122,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "Onfd7Sl8LG2sjh2aQY7gb",
+      "type": "topic",
+      "position": {
+        "x": -460.08230823147517,
+        "y": 847.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "Redis",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "cUOfvOlQ_0Uu1VX3i67kJ"
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -460.08230823147517,
+        "y": 847.9045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "SHTSvMDqI7X1_ZT7-m--n",
+      "type": "topic",
+      "position": {
+        "x": -576.5823082314752,
+        "y": 1145.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "Linux Basics",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "cUOfvOlQ_0Uu1VX3i67kJ"
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -576.5823082314752,
+        "y": 1145.3143775154215
+      },
+      "dragging": false,
+      "style": {
+        "width": 145,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "gSUWhfd0DQoJjDpHEkk0i",
+      "type": "horizontal",
+      "position": {
+        "x": -504.47806963137555,
+        "y": 970.0850398450953
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "b7EdI-25v_eVMkqTBa0se"
+      },
+      "zIndex": 999,
+      "width": 99,
+      "height": 20,
+      "positionAbsolute": {
+        "x": -504.47806963137555,
+        "y": 970.0850398450953
+      },
+      "selectable": true,
+      "focusable": true,
+      "dragging": false,
+      "style": {
+        "width": 99,
+        "height": 20
+      },
+      "resizing": false
+    },
+    {
+      "id": "v4NF25lJElAtkU0Rm6Fob",
+      "type": "subtopic",
+      "position": {
+        "x": -459.47806963137555,
+        "y": 955.5850398450953
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Complete App",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "YVMyHFSCVF-GgXydq-SFJ"
+      },
+      "zIndex": 999,
+      "width": 264,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -459.47806963137555,
+        "y": 955.5850398450953
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "Oav7YPRBmsE1gVhEURckg",
+      "type": "horizontal",
+      "position": {
+        "x": -560.0823082314752,
+        "y": 1037.8143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "stroke": "#000000"
+        },
+        "oldId": "rQozP_4g0XSRR4l5-OGsI"
+      },
+      "zIndex": 999,
+      "width": 242,
+      "height": 20,
+      "positionAbsolute": {
+        "x": -560.0823082314752,
+        "y": 1037.8143775154215
+      },
+      "dragging": false,
+      "resizing": false,
+      "style": {
+        "width": 242,
+        "height": 20
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "Dj2QhtEuuIgKc2CvgFGyK",
+      "type": "label",
+      "position": {
+        "x": -473.2578102157039,
+        "y": 1051.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "DevOps starts here",
+        "href": "",
+        "color": "#000000",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 36,
+      "positionAbsolute": {
+        "x": -473.2578102157039,
+        "y": 1051.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "cUOfvOlQ_0Uu1VX3i67kJ",
+      "type": "topic",
+      "position": {
+        "x": -241.7043395768536,
+        "y": 1145.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "Basic AWS Services",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 209,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -241.7043395768536,
+        "y": 1145.3143775154215
+      },
+      "dragging": false,
+      "style": {
+        "width": 209,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "6oBIxYj8WPcUHidQ99tus",
+      "type": "subtopic",
+      "position": {
+        "x": -239.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "EC2",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "B-cphY7Imnv6JBMujVIF7"
+      },
+      "zIndex": 999,
+      "width": 70,
+      "height": 51,
+      "style": {
+        "width": 70,
+        "height": 51
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -239.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "QtL-bLKtWIdH00K6k_PdC",
+      "type": "subtopic",
+      "position": {
+        "x": -165.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "VPC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "c"
+        },
+        "oldId": "n2Xp_ijJ2OS8xhE7xMWxk"
+      },
+      "zIndex": 999,
+      "width": 70,
+      "height": 51,
+      "style": {
+        "width": 70,
+        "height": 51
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -165.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "5zyYpu9cyuTFwQCjTbHpS",
+      "type": "subtopic",
+      "position": {
+        "x": -239.56446376179997,
+        "y": 1032.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "Route53",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "B-cphY7Imnv6JBMujVIF7"
+      },
+      "zIndex": 999,
+      "width": 103,
+      "height": 51,
+      "style": {
+        "width": 103,
+        "height": 51
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -239.56446376179997,
+        "y": 1032.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "B-cphY7Imnv6JBMujVIF7",
+      "type": "subtopic",
+      "position": {
+        "x": -133.7043395768536,
+        "y": 1032.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "SES",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 51,
+      "style": {
+        "width": 100,
+        "height": 51
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -133.7043395768536,
+        "y": 1032.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "n2Xp_ijJ2OS8xhE7xMWxk",
+      "type": "subtopic",
+      "position": {
+        "x": -91.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "S3",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "B-cphY7Imnv6JBMujVIF7"
+      },
+      "zIndex": 999,
+      "width": 59,
+      "height": 51,
+      "style": {
+        "width": 59,
+        "height": 51
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -91.56446376179997,
+        "y": 1087.3143775154215
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "fKzuMTsf6XL_0Ik6t8SAX",
+      "type": "paragraph",
+      "position": {
+        "x": 58.49718479195076,
+        "y": 923.8143775154215
+      },
+      "selected": false,
+      "data": {
+        "label": "Use the checkpoints and do not forget to practice what you learn. There are project ideas at each checkpoint that you can build to solidify your knowledge.",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "#000000",
+          "backgroundColor": "#ffffff",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "center",
+          "padding": 16
+        },
+        "oldId": "QfW-odmDYknm_qXNcDu5o"
+      },
+      "zIndex": 999,
+      "width": 341,
+      "height": 139,
+      "dragging": false,
+      "style": {
+        "width": 341
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": 58.49718479195076,
+        "y": 923.8143775154215
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "y1SFX7uvWaCy4OYBnECLu",
+      "type": "topic",
+      "position": {
+        "x": 290.52193036862445,
+        "y": 1266.5238331844262
+      },
+      "selected": false,
+      "data": {
+        "label": "Monit",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 88,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 290.52193036862445,
+        "y": 1266.5238331844262
+      },
+      "dragging": false,
+      "style": {},
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "HGhnbMg6jh6cAmUH4DtOx",
+      "type": "topic",
+      "position": {
+        "x": 262.02193036862445,
+        "y": 716.9045877729017
+      },
+      "selected": false,
+      "data": {
+        "label": "PostgreSQL",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 262.02193036862445,
+        "y": 716.9045877729017
+      },
+      "dragging": false,
+      "style": {
+        "width": 145,
+        "height": 49
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "J2_IWAb1s9zZcxOY3NXm2",
+      "type": "subtopic",
+      "position": {
+        "x": 16.00948964805815,
+        "y": 1200.7210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Deployment",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "sO_9-l4FECbaqiaFnyeXO"
+      },
+      "zIndex": 999,
+      "width": 247,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 16.00948964805815,
+        "y": 1200.7210153640276
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 247,
+        "height": 49
+      }
+    },
+    {
+      "id": "863KMXcFJzInvTp_-Ldmz",
+      "type": "topic",
+      "position": {
+        "x": 103.00948964805815,
+        "y": 1392.5238331844262
+      },
+      "selected": false,
+      "data": {
+        "label": "GitHub Actions",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 159,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 103.00948964805815,
+        "y": 1392.5238331844262
+      },
+      "dragging": false,
+      "style": {},
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "zh4DYU0QpAolXJ6wE0CEe",
+      "type": "horizontal",
+      "position": {
+        "x": 253.00948964805815,
+        "y": 1340.2210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "BfadoWcewEUb5PQ_itqK-"
+      },
+      "zIndex": 999,
+      "width": 84,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 253.00948964805815,
+        "y": 1340.2210153640276
+      },
+      "dragging": false,
+      "style": {
+        "width": 84,
+        "height": 20
+      },
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "NQmEl27eBPYhivcXdOEz3",
+      "type": "subtopic",
+      "position": {
+        "x": 16.00948964805815,
+        "y": 1325.7210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Monitoring",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "sO_9-l4FECbaqiaFnyeXO"
+      },
+      "zIndex": 999,
+      "width": 247,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 16.00948964805815,
+        "y": 1325.7210153640276
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 247,
+        "height": 49
+      }
+    },
+    {
+      "id": "rFXupYpUFfp7vZO8zh614",
+      "type": "topic",
+      "position": {
+        "x": -327.56446376179997,
+        "y": 1392.5238331844262
+      },
+      "selected": false,
+      "data": {
+        "label": "Ansible",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "2kKHuQZScu7hCDgQWxl5u"
+      },
+      "zIndex": 999,
+      "width": 101,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -327.56446376179997,
+        "y": 1392.5238331844262
+      },
+      "dragging": false,
+      "style": {},
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "WJIx6JGqxoNT-vKk4LMQp",
+      "type": "vertical",
+      "position": {
+        "x": -128.06446376179997,
+        "y": 1366
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        },
+        "oldId": "gJhoy4tQwP4Gtwh0wL343"
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 50,
+      "style": {
+        "width": 20,
+        "height": 50
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -128.06446376179997,
+        "y": 1366
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "liaY1GnlOateB_ZKBjNpY",
+      "type": "subtopic",
+      "position": {
+        "x": -226.56446376179997,
+        "y": 1325.7210153640276
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — CI / CD",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "sO_9-l4FECbaqiaFnyeXO"
+      },
+      "zIndex": 999,
+      "width": 217,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -226.56446376179997,
+        "y": 1325.7210153640276
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 217,
+        "height": 49
+      },
+      "resizing": false
+    },
+    {
+      "id": "2kKHuQZScu7hCDgQWxl5u",
+      "type": "topic",
+      "position": {
+        "x": -560.0823082314752,
+        "y": 1468.728630371825
+      },
+      "selected": false,
+      "data": {
+        "label": "Terraform",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "khoUtTUxdf8udAzN9_CAb"
+      },
+      "zIndex": 999,
+      "width": 120,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -560.0823082314752,
+        "y": 1468.728630371825
+      },
+      "dragging": false,
+      "style": {},
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "gJhoy4tQwP4Gtwh0wL343",
+      "type": "vertical",
+      "position": {
+        "x": -473.2578102157039,
+        "y": 1365.182006288024
+      },
+      "selected": false,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 50,
+      "style": {
+        "width": 20,
+        "height": 50
+      },
+      "resizing": false,
+      "positionAbsolute": {
+        "x": -473.2578102157039,
+        "y": 1365.182006288024
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "sO_9-l4FECbaqiaFnyeXO",
+      "type": "subtopic",
+      "position": {
+        "x": -571.7578102157039,
+        "y": 1324.9030216520516
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Automation",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "YVMyHFSCVF-GgXydq-SFJ"
+      },
+      "zIndex": 999,
+      "width": 251,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -571.7578102157039,
+        "y": 1324.9030216520516
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 251,
+        "height": 49
+      },
+      "resizing": false
+    },
+    {
+      "id": "b7EdI-25v_eVMkqTBa0se",
+      "type": "horizontal",
+      "position": {
+        "x": -498,
+        "y": 1552.5384432996068
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 99,
+      "height": 20,
+      "positionAbsolute": {
+        "x": -498,
+        "y": 1552.5384432996068
+      },
+      "selectable": true,
+      "focusable": true,
+      "dragging": false,
+      "style": {
+        "width": 99,
+        "height": 20
+      },
+      "resizing": false
+    },
+    {
+      "id": "YVMyHFSCVF-GgXydq-SFJ",
+      "type": "subtopic",
+      "position": {
+        "x": -415.56446376179997,
+        "y": 1538.0384432996068
+      },
+      "selected": false,
+      "data": {
+        "label": "Checkpoint — Infrastructure",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "a"
+        },
+        "oldId": "7JU1cVggMDoZUV-adGsf-"
+      },
+      "zIndex": 999,
+      "width": 259,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -415.56446376179997,
+        "y": 1538.0384432996068
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "width": 103,
+      "height": 49,
+      "id": "DezWXw5LWeP1S5Sosj90S",
+      "type": "button",
+      "position": {
+        "x": -128.86972326342038,
+        "y": 1802.4845433334572
+      },
+      "selected": false,
+      "data": {
+        "label": "Backend",
+        "href": "https://roadmap.sh/backend",
+        "color": "#FFFFFf",
+        "backgroundColor": "#4136D4",
+        "style": {
+          "fontSize": 17
+        },
+        "borderColor": "#4136D4",
+        "oldId": "uSLzfLPXxS5-P7ozscvjZ"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -128.86972326342038,
+        "y": 1802.4845433334572
+      },
+      "style": {
+        "width": 103,
+        "height": 49
+      },
+      "focusable": true,
+      "resizing": false,
+      "selectable": true
+    },
+    {
+      "width": 103,
+      "height": 49,
+      "id": "DsvdvpHWD0FgTjdkSJ9Uu",
+      "type": "button",
+      "position": {
+        "x": -21.869723263420383,
+        "y": 1802.4845433334572
+      },
+      "selected": false,
+      "data": {
+        "label": "DevOps",
+        "href": "https://roadmap.sh/devops",
+        "color": "#FFFFFf",
+        "backgroundColor": "#4136D4",
+        "style": {
+          "fontSize": 17
+        },
+        "borderColor": "#4136D4",
+        "oldId": "uSLzfLPXxS5-P7ozscvjZ"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": -21.869723263420383,
+        "y": 1802.4845433334572
+      },
+      "style": {
+        "width": 103,
+        "height": 49
+      },
+      "focusable": true,
+      "resizing": false,
+      "selectable": true
+    },
+    {
+      "width": 100,
+      "height": 49,
+      "id": "uSLzfLPXxS5-P7ozscvjZ",
+      "type": "button",
+      "position": {
+        "x": 85.13027673657962,
+        "y": 1802.4845433334572
+      },
+      "selected": false,
+      "data": {
+        "label": "AWS",
+        "href": "https://roadmap.sh/aws",
+        "color": "#FFFFFf",
+        "backgroundColor": "#4136D4",
+        "style": {
+          "fontSize": 17
+        },
+        "borderColor": "#4136D4",
+        "oldId": "PkhQdVms2TGgnPrytCBPZ"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 85.13027673657962,
+        "y": 1802.4845433334572
+      },
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "focusable": true,
+      "resizing": true,
+      "selectable": true
+    },
+    {
+      "id": "2bi7EWaC5QIWX6_Vl6988",
+      "type": "paragraph",
+      "position": {
+        "x": 72.1182771963982,
+        "y": -101.66069241448308
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "#000000",
+          "backgroundColor": "#fcff00",
+          "color": "#ffffff",
+          "textAlign": "left",
+          "justifyContent": "flex-start",
+          "padding": 3
+        },
+        "oldId": "kvS4x6z7YWJjMpkpU01yh"
+      },
+      "zIndex": 999,
+      "width": 25,
+      "height": 25,
+      "resizing": false,
+      "style": {
+        "width": 25,
+        "height": 25
+      },
+      "positionAbsolute": {
+        "x": 72.1182771963982,
+        "y": -101.66069241448308
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "aaWX__NQvUofoN1VzwgD0",
+      "type": "label",
+      "position": {
+        "x": 102.99749010787673,
+        "y": -107.16069241448308
+      },
+      "selected": false,
+      "data": {
+        "label": "Key topics to learn",
+        "href": "",
+        "color": "#000000",
+        "style": {
+          "fontSize": 17
+        },
+        "oldId": "7HLG5FTMmOWGS-mOpqnQh"
+      },
+      "zIndex": 999,
+      "width": 157,
+      "height": 36,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 102.99749010787673,
+        "y": -107.16069241448308
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "kvS4x6z7YWJjMpkpU01yh",
+      "type": "paragraph",
+      "position": {
+        "x": 72.1182771963982,
+        "y": -68.28925019287855
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "#000000",
+          "backgroundColor": "#000000",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "flex-start",
+          "padding": 3
+        }
+      },
+      "zIndex": 999,
+      "width": 25,
+      "height": 25,
+      "resizing": false,
+      "style": {
+        "width": 25,
+        "height": 25
+      },
+      "positionAbsolute": {
+        "x": 72.1182771963982,
+        "y": -68.28925019287855
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "7HLG5FTMmOWGS-mOpqnQh",
+      "type": "label",
+      "position": {
+        "x": 102.99749010787673,
+        "y": -71.16069241448308
+      },
+      "selected": false,
+      "data": {
+        "label": "Project ideas and suggestions",
+        "href": "",
+        "color": "#000000",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 36,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 102.99749010787673,
+        "y": -71.16069241448308
+      },
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "9mrs26igEG0D9GpMv2NZc",
+      "type": "section",
+      "position": {
+        "x": -317.516084034493,
+        "y": -278.10767016925365
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "style": {
+          "width": 150,
+          "height": 100,
+          "fontSize": 17,
+          "backgroundColor": "#ffffff",
+          "borderColor": "#000000"
+        }
+      },
+      "zIndex": -999,
+      "width": 345,
+      "height": 259,
+      "style": {
+        "width": 345,
+        "height": 259
+      },
+      "positionAbsolute": {
+        "x": -317.516084034493,
+        "y": -278.10767016925365
+      },
+      "dragging": false,
+      "resizing": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "id": "X8Gvqj2h4wkfA1Cx2d1iW",
+      "type": "paragraph",
+      "position": {
+        "x": -297.06446376179997,
+        "y": -251.15106699547107
+      },
+      "selected": false,
+      "data": {
+        "label": "If you are already a full-stack developer you should visit the following tracks.",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "transparent",
+          "backgroundColor": "transparent",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "flex-start",
+          "padding": 0
+        },
+        "oldId": "7cbUuhyNE2SoZbm2Zh_t7"
+      },
+      "zIndex": 999,
+      "width": 310,
+      "height": 55,
+      "positionAbsolute": {
+        "x": -297.06446376179997,
+        "y": -251.15106699547107
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 310
+      },
+      "resizing": false
+    },
+    {
+      "id": "7cbUuhyNE2SoZbm2Zh_t7",
+      "type": "paragraph",
+      "position": {
+        "x": -297.06446376179997,
+        "y": -122.15106699547107
+      },
+      "selected": false,
+      "data": {
+        "label": "Target audience for this roadmap is absolute beginners wanting to get into full-stack development.",
+        "style": {
+          "fontSize": 17,
+          "borderColor": "transparent",
+          "backgroundColor": "transparent",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "flex-start",
+          "padding": 0
+        }
+      },
+      "zIndex": 999,
+      "width": 310,
+      "height": 80,
+      "positionAbsolute": {
+        "x": -297.06446376179997,
+        "y": -122.15106699547107
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": {
+        "width": 310
+      },
+      "resizing": false
+    },
+    {
+      "id": "p1nlhjqz_BiKFFop2yHpJ",
+      "type": "button",
+      "position": {
+        "x": -293.3007174828185,
+        "y": -187.42126760749414
+      },
+      "selected": false,
+      "data": {
+        "label": "Frontend",
+        "href": "https://roadmap.sh/frontend",
+        "color": "#ffffff",
+        "backgroundColor": "#4136D6",
+        "style": {
+          "fontSize": 17
+        },
+        "oldId": "x1j-a82XiCX3bNIgLFryZ"
+      },
+      "zIndex": 999,
+      "width": 98,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -293.3007174828185,
+        "y": -187.42126760749414
+      },
+      "dragging": false,
+      "style": {
+        "width": 98,
+        "height": 49
+      },
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "id": "bt_V8XXqg8XDAJCzHrbWt",
+      "type": "button",
+      "position": {
+        "x": -192.09195631976291,
+        "y": -187.42126760749414
+      },
+      "selected": false,
+      "data": {
+        "label": "Backend",
+        "href": "https://roadmap.sh/backend",
+        "color": "#ffffff",
+        "backgroundColor": "#4136D6",
+        "style": {
+          "fontSize": 17
+        },
+        "oldId": "x1j-a82XiCX3bNIgLFryZ"
+      },
+      "zIndex": 999,
+      "width": 98,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -192.09195631976291,
+        "y": -187.42126760749414
+      },
+      "dragging": false,
+      "style": {
+        "width": 98,
+        "height": 49
+      },
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "id": "x1j-a82XiCX3bNIgLFryZ",
+      "type": "button",
+      "position": {
+        "x": -89.5180029099048,
+        "y": -187.42126760749414
+      },
+      "selected": false,
+      "data": {
+        "label": "DevOps",
+        "href": "https://roadmap.sh/devops",
+        "color": "#ffffff",
+        "backgroundColor": "#4136D6",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 88,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -89.5180029099048,
+        "y": -187.42126760749414
+      },
+      "dragging": false,
+      "style": {
+        "width": 88,
+        "height": 49
+      },
+      "focusable": true,
+      "selectable": true
+    }
+  ],
+  "edges": [
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "sourceHandle": "x2",
+      "target": "sVXZrBCsiSzWBBYWTm-nQ",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "PShueM-HfMGu2Jy1dt73g",
+      "selected": false,
+      "type": "smoothstep",
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "iogwMmOvub2ZF4zgg6WyF",
+      "sourceHandle": "x2",
+      "target": "B0kARTODvCBi0iOF8iiqI",
+      "targetHandle": "y2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-iogwMmOvub2ZF4zgg6WyFx2-mGgx_QTEPmVKf6AijX9fiy2",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "B0kARTODvCBi0iOF8iiqI",
+      "sourceHandle": "z2",
+      "target": "dAJHWmGeiYdzZ1ZjrWz1S",
+      "targetHandle": "y2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-B0kARTODvCBi0iOF8iiqIz2-mGgx_QTEPmVKf6AijX9fiy2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "T9PB6WQf-Fa9NXKKvVOy_",
+      "sourceHandle": "z2",
+      "target": "mGgx_QTEPmVKf6AijX9fi",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-khoUtTUxdf8udAzN9_CAbz2-mGgx_QTEPmVKf6AijX9fiw1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "dAJHWmGeiYdzZ1ZjrWz1S",
+      "sourceHandle": "z2",
+      "target": "T9PB6WQf-Fa9NXKKvVOy_",
+      "targetHandle": "y2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-dAJHWmGeiYdzZ1ZjrWz1Sz2-khoUtTUxdf8udAzN9_CAby2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "mGgx_QTEPmVKf6AijX9fi",
+      "sourceHandle": "x2",
+      "target": "We2APJpOPTr-VNfowG0kI",
+      "targetHandle": "z2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-mGgx_QTEPmVKf6AijX9fix2-We2APJpOPTr-VNfowG0kIz2",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "We2APJpOPTr-VNfowG0kI",
+      "sourceHandle": "y2",
+      "target": "8sPXL8iClpPqje03ksses",
+      "targetHandle": "z1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-We2APJpOPTr-VNfowG0kIy2-khoUtTUxdf8udAzN9_CAbz1",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "8sPXL8iClpPqje03ksses",
+      "sourceHandle": "y2",
+      "target": "CVCqdPkq_hGQfI8EEi5RC",
+      "targetHandle": "z1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-8sPXL8iClpPqje03kssesy2-khoUtTUxdf8udAzN9_CAbz1",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "CVCqdPkq_hGQfI8EEi5RC",
+      "sourceHandle": "y2",
+      "target": "khoUtTUxdf8udAzN9_CAb",
+      "targetHandle": "z2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-2kKHuQZScu7hCDgQWxl5uy2-khoUtTUxdf8udAzN9_CAbz2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "khoUtTUxdf8udAzN9_CAb",
+      "sourceHandle": "y2",
+      "target": "QfW-odmDYknm_qXNcDu5o",
+      "targetHandle": "y1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-khoUtTUxdf8udAzN9_CAby2-QfW-odmDYknm_qXNcDu5oy1",
+      "selected": false,
+      "selectable": true,
+      "focusable": true,
+      "type": "smoothstep"
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "QfW-odmDYknm_qXNcDu5o",
+      "sourceHandle": "z2",
+      "target": "_aA6Hp4KkgJeptqo8oKTg",
+      "targetHandle": "y1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-QfW-odmDYknm_qXNcDu5oz2-2kKHuQZScu7hCDgQWxl5uy1",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "HGhnbMg6jh6cAmUH4DtOx",
+      "sourceHandle": "x2",
+      "target": "vmHbWdmMHF53otXIrqzRV",
+      "targetHandle": "z1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-2kKHuQZScu7hCDgQWxl5ux2-cUOfvOlQ_0Uu1VX3i67kJz1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "vmHbWdmMHF53otXIrqzRV",
+      "sourceHandle": "y2",
+      "target": "vHojhJYjiN0IwruEqi1Dv",
+      "targetHandle": "z2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-vmHbWdmMHF53otXIrqzRVy2-cUOfvOlQ_0Uu1VX3i67kJz2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "vHojhJYjiN0IwruEqi1Dv",
+      "sourceHandle": "y2",
+      "target": "Onfd7Sl8LG2sjh2aQY7gb",
+      "targetHandle": "z1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-vHojhJYjiN0IwruEqi1Dvy2-cUOfvOlQ_0Uu1VX3i67kJz1",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "Onfd7Sl8LG2sjh2aQY7gb",
+      "sourceHandle": "y2",
+      "target": "SHTSvMDqI7X1_ZT7-m--n",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-Onfd7Sl8LG2sjh2aQY7gby2-cUOfvOlQ_0Uu1VX3i67kJw1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "SHTSvMDqI7X1_ZT7-m--n",
+      "sourceHandle": "z2",
+      "target": "cUOfvOlQ_0Uu1VX3i67kJ",
+      "targetHandle": "y2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-SHTSvMDqI7X1_ZT7-m--nz2-cUOfvOlQ_0Uu1VX3i67kJy2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "cUOfvOlQ_0Uu1VX3i67kJ",
+      "sourceHandle": "z2",
+      "target": "y1SFX7uvWaCy4OYBnECLu",
+      "targetHandle": "w2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-cUOfvOlQ_0Uu1VX3i67kJz2-2kKHuQZScu7hCDgQWxl5uw2",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "_aA6Hp4KkgJeptqo8oKTg",
+      "sourceHandle": "z2",
+      "target": "HGhnbMg6jh6cAmUH4DtOx",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-_aA6Hp4KkgJeptqo8oKTgz2-HGhnbMg6jh6cAmUH4DtOxw1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "y1SFX7uvWaCy4OYBnECLu",
+      "sourceHandle": "x2",
+      "target": "863KMXcFJzInvTp_-Ldmz",
+      "targetHandle": "z1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-y1SFX7uvWaCy4OYBnECLux2-2kKHuQZScu7hCDgQWxl5uz1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "863KMXcFJzInvTp_-Ldmz",
+      "sourceHandle": "y2",
+      "target": "rFXupYpUFfp7vZO8zh614",
+      "targetHandle": "z2",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-863KMXcFJzInvTp_-Ldmzy2-2kKHuQZScu7hCDgQWxl5uz2",
+      "selected": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "rFXupYpUFfp7vZO8zh614",
+      "sourceHandle": "y2",
+      "target": "2kKHuQZScu7hCDgQWxl5u",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-rFXupYpUFfp7vZO8zh614y2-2kKHuQZScu7hCDgQWxl5uw1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "2kKHuQZScu7hCDgQWxl5u",
+      "sourceHandle": "x2",
+      "target": "sVXZrBCsiSzWBBYWTm-nQ",
+      "targetHandle": "w1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-2kKHuQZScu7hCDgQWxl5ux2-sVXZrBCsiSzWBBYWTm-nQw1",
+      "selected": false,
+      "type": "smoothstep",
+      "selectable": true,
+      "focusable": true
+    }
+  ]
 }

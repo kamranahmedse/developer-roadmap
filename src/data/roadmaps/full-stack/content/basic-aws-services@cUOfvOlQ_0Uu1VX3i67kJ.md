@@ -1,12 +1,6 @@
 # Basic AWS Services
 
-AWS has several services but you don't need to know all of them. Here are the most common ones that you can get started with:
-
-- [@article@EC2](https://aws.amazon.com/ec2/) - Virtual machines in the cloud
-- [@article@VPC](https://aws.amazon.com/vpc/) - Virtual private cloud
-- [@article@S3](https://aws.amazon.com/s3/) - Object storage
-- [@article@Route 53](https://aws.amazon.com/route53/) - DNS
-- [@article@SES](https://aws.amazon.com/ses/) - Email sending
+AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPN, S3, Route 53, and SES.
 
 Here are some of the resources to get you started:
 
