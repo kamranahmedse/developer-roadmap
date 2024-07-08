@@ -1023,7 +1023,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Repo Hosting Services",
+        "label": "VCS Hosting",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
