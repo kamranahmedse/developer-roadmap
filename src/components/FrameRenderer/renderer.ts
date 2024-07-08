@@ -190,7 +190,9 @@ export class Renderer {
     e.preventDefault();
 
     const isCurrentStatusDone = targetGroup.classList.contains('done');
-    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+    const normalizedGroupId = groupId
+      .replace(/^\d+-/, '')
+      .replace('check:', '');
 
     if (normalizedGroupId.startsWith('ext_link:')) {
       return;
