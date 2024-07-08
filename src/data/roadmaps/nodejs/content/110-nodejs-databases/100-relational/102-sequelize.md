@@ -9,7 +9,7 @@ An ORM is known as Object Relational Mapper. This is a tool or a level of abstra
 Visit the following resources to learn more:
 
 - [@official@Sequelize Website](https://sequelize.org/)
-- [@article@Sequelize - NPM Package](https://www.npmjs.com/package/sequelize)
+- [@official@Sequelize - NPM Package](https://www.npmjs.com/package/sequelize)
 - [@official@Official Sequelize Docs](https://sequelize.org/docs/v6/getting-started/)
 - [@article@Getting started with Sequelize](https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e)
 - [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

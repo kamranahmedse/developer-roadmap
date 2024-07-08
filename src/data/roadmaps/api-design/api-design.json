@@ -1406,7 +1406,7 @@
         }
       },
       "zIndex": 999,
-      "width": 366,
+      "width": 370,
       "height": 69,
       "dragging": false,
       "positionAbsolute": {
@@ -1416,7 +1416,7 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 366,
+        "width": 370,
         "height": 69
       },
       "resizing": false

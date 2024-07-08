@@ -1,3 +1,0 @@
-# Relative
-
-`RelativeLayout` in Android is a layout that positions views based on their relationship to each other or the parent. This means that you can set your views related to the position of siblings (other child views) or the parent. For example, you can place a button right to an ImageView, or at the bottom of a parent view. Android systems determine this order dynamically by examining each of the RelativeLayout parameters, such as `android:layout_below` or `android:layout_toRightOf`, and applying them according to the rules defined. This layout is useful when you're building a UI that needs to maintain relative positioning of elements, even as screen size or orientation changes.

@@ -26,4 +26,4 @@ Further documentation can be found in the official RxJS documentation:
 
 - WithLatestFrom: https://rxjs.dev/api/operators/withLatestFrom
 
-- ForkJoin: https://rxjs.dev/api/operators/forkJoin
+- ForkJoin: https://rxjs.dev/api/index/function/forkJoin

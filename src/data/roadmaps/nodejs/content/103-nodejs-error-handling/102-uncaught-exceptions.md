@@ -6,6 +6,6 @@ The correct use of `uncaughtException` is to perform synchronous cleanup of allo
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://nodejs.org/api/process.html#event-uncaughtexception)
+- [@official@Uncaught Exception Error Events](https://nodejs.org/api/process.html#event-uncaughtexception)
 - [@article@Let It Crash: Best Practices for Handling Node.js Errors on Shutdown](https://blog.heroku.com/best-practices-nodejs-errors)
 - [@article@Uncaught Exceptions in Node.js](https://shapeshed.com/uncaught-exceptions-in-node/)

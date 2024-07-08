@@ -1,5 +1,6 @@
 ---
 pdfUrl: '/pdfs/roadmaps/android.pdf'
+renderer: 'editor'
 order: 5
 briefTitle: 'Android'
 briefDescription: 'Step by step guide to becoming an Android Developer in 2024'
@@ -9,7 +10,7 @@ hasTopics: true
 isNew: false
 dimensions:
   width: 968
-  height: 2197.76
+  height: 2070
 schema:
   headline: 'Android Developer Roadmap'
   description: 'Learn how to become a Android Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

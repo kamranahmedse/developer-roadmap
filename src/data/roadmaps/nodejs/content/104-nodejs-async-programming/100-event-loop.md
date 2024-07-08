@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@course@The Node.js Event Loop](https://www.coursera.org/lecture/secure-full-stack-mean-developer/the-node-js-event-loop-j5fbT)
 - [@official@The NodeJS Event loop](https://nodejs.org/en/guides/event-loop-timers-and-nexttick)
 - [@official@Don't Block the Event Loop](https://nodejs.org/en/guides/dont-block-the-event-loop)
+- [@article@Event Loop in Node.js - Mixu's Node book](https://book.mixu.net/node/ch2.html#the-event-loop-understanding-how-node-executes-javascript-code)

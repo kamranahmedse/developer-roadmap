@@ -2,12 +2,13 @@
 jsonUrl: '/jsons/roadmaps/devops.json'
 pdfUrl: '/pdfs/roadmaps/devops.pdf'
 order: 3
+renderer: 'editor'
 briefTitle: 'DevOps'
 briefDescription: 'Step by step guide for DevOps or operations role in 2024'
 title: 'DevOps Roadmap'
 description: 'Step by step guide for DevOps, SRE or any other Operations Role in 2024'
 hasTopics: true
-isForkable: true
+isForkable: false
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 question:
   title: 'What is DevOps?'
@@ -20,13 +21,15 @@ question:
     While DevOps is not a specific job title or role, organizations often hire for a "DevOps Engineer" role. A DevOps Engineer is a software engineer who specializes in the practices and tools that enable the continuous delivery of software. DevOps Engineers are responsible for the design and implementation of applications, software, and services for their organization, and they work closely with developers, testers, and operations staff to oversee the code releases.
 dimensions:
   width: 968
-  height: 2527.46
+  height: 2850
 schema:
   headline: 'DevOps Roadmap'
   description: 'Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in our community-driven roadmap.'
   imageUrl: 'https://roadmap.sh/roadmaps/devops.png'
   datePublished: '2023-01-05'
   dateModified: '2023-06-10'
+relatedQuestions:
+  - 'backend'
 seo:
   title: 'DevOps Roadmap: Learn to become a DevOps Engineer or SRE'
   description: 'Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in our community-driven roadmap.'

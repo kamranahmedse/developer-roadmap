@@ -1,4 +1,4 @@
-# Trello - A Project Management Tool for Product Managers
+# Trello
 
 Product management entails numerous responsibilities, among which is managing several tasks, teams and deadlines to make sure that products are developed and launched on time. To effectively manage these responsibilities, Product Managers often require robust Project Management Tools. One such tool is "Trello".
 

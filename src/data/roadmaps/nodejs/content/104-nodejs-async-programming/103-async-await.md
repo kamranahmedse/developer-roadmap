@@ -4,7 +4,7 @@ Async/Await is a special syntax to work with promises in a more comfortable fash
 
 Visit the following resources to learn more:
 
-- [@article@Official Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+- [@official@Async/Await Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - [@article@More on async await](https://javascript.info/async-await)
 - [@video@Using async await](https://www.youtube.com/watch?v=V_Kr9OSfDeU)
 - [@article@W3Docs Async/Await](https://www.w3docs.com/learn-javascript/async-await.html)

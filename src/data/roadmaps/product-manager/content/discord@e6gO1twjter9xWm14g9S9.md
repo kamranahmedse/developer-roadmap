@@ -1,3 +1,3 @@
-# Discord - A Communication Tool for Product Managers
+# Discord
 
 Discord is a widely used communication tool that is beginning to make its mark in the field of product management. It offers a secure and user-friendly platform with features that are quintessential for a Product Manager. With its rich text chats, voice channels, and ability to create multiple channels with different access levels, it ensures seamless communication within cross-functional teams. For Product Managers, Discord can be an essential collaboration tool that aids in the exchange of innovative ideas, constructive feedback, and bug reporting, thereby allowing them to design, plan, and execute with efficiency.

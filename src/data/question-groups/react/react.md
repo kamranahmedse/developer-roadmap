@@ -35,7 +35,7 @@ questions:
       - 'Beginner'
   - question: What is the difference between Real DOM and Virtual DOM?
     answer: |
-      Virtual DOM is the representation of a UI in the form of a plain javascript object. It is a node tree that lists the elements, their attributes and content as Objects and their properties. Real DOM is the real representation of a UI which can be seen and inspected in the browser.
+      Virtual DOM is the representation of a UI in the form of a plain JavaScript object. It is a node tree that lists the elements, their attributes and content as Objects and their properties. Real DOM is the real representation of a UI which can be seen and inspected in the browser.
       Manipulating the virtual DOM is much faster than real DOM, because nothing gets drawn on the screen. React uses this virtual DOM to figure out the most efficient way to update the browser DOM.
     topics:
       - 'Core'
@@ -80,7 +80,7 @@ questions:
   - question: What are refs in React?
     answer: |
       Refs are used to get reference to a DOM node or an instance of a component. They help to access the DOM nodes or React elements created in the render method.
-      You can also use refs When you want a component to “remember” some information, but you don’t want that information to trigger new renders, you can use a ref.
+      You can also use refs when you want a component to “remember” some information, but you don’t want that information to trigger new renders, you can use a ref.
     topics:
       - 'Core'
       - 'Intermediate'
@@ -98,7 +98,7 @@ questions:
       - 'Advanced'
   - question: What is the difference between react and react-dom packages?
     answer: |
-      React is a library for building user interfaces. The package `react` contains only the renderer-agnostic code i.e. the core React library, algorithm for computing changes in the UI and other helpers. . The package `react-dom` contains the code specific to the DOM rendering of React components.
+      React is a library for building user interfaces. The package `react` contains only the renderer-agnostic code i.e. the core React library, algorithm for computing changes in the UI and other helpers. The package `react-dom` contains the code specific to the DOM rendering of React components.
     topics:
       - 'Core'
       - 'Beginner'
@@ -224,7 +224,7 @@ questions:
     topics:
       - 'UX'
       - 'Intermediate'
-  - question: How React Virtual DOM works?
+  - question: How does React Virtual DOM work?
     answer: virtual-dom.md
     topics:
       - 'Core'

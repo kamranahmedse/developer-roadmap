@@ -4,6 +4,6 @@ NodeJS and NPM allow two methods of installing dependencies/packages: Local and 
 
 Visit the following resources to learn more:
 
-- [@article@Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)
-- [@article@Downloading and installing packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)
-- [@article@NPM Install Docs](https://docs.npmjs.com/cli/v8/commands/npm-install)
+- [@official@Downloading and installing packages locally](https://docs.npmjs.com/downloading-and-installing-packages-locally)
+- [@official@Downloading and installing packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)
+- [@official@NPM Install Docs](https://docs.npmjs.com/cli/commands/npm-install)
