@@ -928,7 +928,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Github",
+        "label": "GitHub",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -1040,7 +1040,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Repo hosting services",
+        "label": "Repo Hosting Services",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
