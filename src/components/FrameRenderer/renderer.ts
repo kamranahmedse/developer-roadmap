@@ -152,6 +152,10 @@ export class Renderer {
       return;
     }
 
+    if (/^check:/.test(topicId)) {
+      topicId = topicId.replace('check:', '');
+    }
+
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
       {
