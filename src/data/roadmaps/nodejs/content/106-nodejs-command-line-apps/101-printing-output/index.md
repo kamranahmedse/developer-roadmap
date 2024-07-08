@@ -4,4 +4,4 @@ Printing output in Node.js command-line applications is a fundamental aspect of 
 
 Visit the following resources to learn more:
 
-- [@official@Learn - Output to the command line using Node.js](https://nodejs.org/en/learn/command-line/output-to-the-command-line-using-nodejs)
+- [@official@Output to the command line using Node.js](https://nodejs.org/en/learn/command-line/output-to-the-command-line-using-nodejs)
