@@ -9,5 +9,6 @@ The choice between SQL and NoSQL depends on the specific use case and requiremen
 Learn more from the following links:
 
 - [@article@SQL vs NoSQL: The Differences](https://www.sitepoint.com/sql-vs-nosql-differences/)
-- [@article@SQL vs NoSQL - When to Use Each](https://www.ibm.com/cloud/blog/sql-vs-nosql)
+- [@article@SQL vs. NoSQL Databases: What’s the Difference?](https://www.ibm.com/blog/sql-vs-nosql/)
+- [@article@NoSQL vs. SQL Databases](https://www.mongodb.com/nosql-explained/nosql-vs-sql)
 - [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)
