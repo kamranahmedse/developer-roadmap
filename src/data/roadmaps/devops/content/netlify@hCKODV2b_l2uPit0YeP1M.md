@@ -4,5 +4,5 @@ Netlify Functions are serverless functions that allow developers to run server-s
 
 Visit the following resources to learn more:
 
-- [@article@Official Documentation](https://docs.netlify.com/platform/primitives/#functions)
+- [@official@Official Documentation](https://docs.netlify.com/platform/primitives/#functions)
 - [@article@Introducing Netlify Functions 2.0](https://www.netlify.com/blog/introducing-netlify-functions-2-0/)
