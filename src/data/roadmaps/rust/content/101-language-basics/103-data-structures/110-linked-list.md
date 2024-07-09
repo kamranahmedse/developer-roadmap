@@ -4,4 +4,5 @@ The **Linked List** in Rust is a sequence of nodes where each node consists of a
 
 Learn more from the following links:
 
+- [@official@LinkedList in std::collections - Rust](https://doc.rust-lang.org/std/collections/struct.LinkedList.html)
 - [@article@LinkedList](https://doc.rust-lang.org/std/collections/struct.LinkedList.html)
