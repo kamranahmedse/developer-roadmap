@@ -16,3 +16,5 @@ Learn more from the following resources:
 
 - [@course@Hashicorp Output Tutorial](https://developer.hashicorp.com/terraform/tutorials/configuration-language/outputs)
 - [@official@Declaring an output value](https://developer.hashicorp.com/terraform/language/values/outputs#declaring-an-output-value)
+- [@article@Terraform Output Values : Complete Guide & Examples](https://spacelift.io/blog/terraform-output)
+- [@article@Terraform: Output a field from a module](https://stackoverflow.com/questions/47034515/terraform-output-a-field-from-a-module)
