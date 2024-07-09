@@ -92,6 +92,7 @@ export function clearMigratedRoadmapProgress(
     'data-analyst',
     'android',
     'full-stack',
+    'ai-data-scientist',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
