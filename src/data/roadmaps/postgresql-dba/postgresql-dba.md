@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/postgresql-dba.json'
 pdfUrl: '/pdfs/roadmaps/postgresql-dba.pdf'
+renderer: 'editor'
 order: 5
 briefTitle: 'PostgreSQL'
 briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2024'
@@ -9,7 +10,7 @@ description: 'Step by step guide to becoming a modern PostgreSQL DB Administrato
 hasTopics: true
 dimensions:
   width: 969
-  height: 3050.89
+  height: 3675
 seo:
   title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.'

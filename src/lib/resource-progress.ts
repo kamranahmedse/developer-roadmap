@@ -93,6 +93,7 @@ export function clearMigratedRoadmapProgress(
     'android',
     'full-stack',
     'ai-data-scientist',
+    'postgresql-dba',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
