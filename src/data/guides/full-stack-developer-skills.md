@@ -21,8 +21,6 @@ tags:
 
 ![image](https://assets.roadmap.sh/guest/full-stack-developer-skills-abb38.jpg)
 
-## 8 In-Demand Full Stack Developer Skills to Master
-
 It should be no surprise to anyone that given the fast pace of the web development industry, every type of developer, especially full stack developers, must stay ahead of the curve by continuously updating their skills.
 
 Full-stack web developers share a unique blend of expertise that allows them to independently build and maintain entire web applications. However, this mix of skills is a double-edged sword because it makes staying up-to-date harder for them.
