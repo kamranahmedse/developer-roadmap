@@ -161,7 +161,10 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
       return;
     }
 
-    const target = e?.currentTarget as HTMLDivElement;
+    const target =
+      node?.type === 'todo'
+        ? document.querySelector(`[data-id="${node.id}"]`)
+        : (e?.currentTarget as HTMLDivElement);
     if (!target) {
       return;
     }
@@ -237,7 +240,6 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
             <div className="px-4 pb-2">
               <ReadonlyEditor
                 variant="modal"
-                hasMinimap={false}
                 roadmap={roadmap!}
                 className="min-h-[400px]"
                 onRendered={() => {
