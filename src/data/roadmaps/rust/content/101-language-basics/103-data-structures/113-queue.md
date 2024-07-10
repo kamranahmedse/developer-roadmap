@@ -5,4 +5,3 @@ In Rust, a Queue is another important linear data structure which follows a part
 Learn more from the following links:
 
 - [@official@Queues](https://docs.rs/queues/latest/queues/)
-- [@official@VecDeque in std::collections - Rust](https://doc.rust-lang.org/std/collections/struct.VecDeque.html)
