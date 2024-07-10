@@ -4,4 +4,4 @@ A `Binary Heap` is a complete binary tree which is either Min Heap or Max Heap. 
 
 Learn more from the following links:
 
-- [@article@BinaryHeap](https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html)
+- [@official@BinaryHeap](https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html)

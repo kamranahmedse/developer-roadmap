@@ -4,4 +4,4 @@ In Rust, a Queue is another important linear data structure which follows a part
 
 Learn more from the following links:
 
-- [@article@Queues](https://docs.rs/queues/latest/queues/)
+- [@official@Queues](https://docs.rs/queues/latest/queues/)
