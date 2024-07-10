@@ -62,7 +62,10 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
   }
 
   const handleTopicRightClick = useCallback((e: MouseEvent, node: Node) => {
-    const target = e?.currentTarget as HTMLDivElement;
+    const target =
+      node?.type === 'todo'
+        ? document.querySelector(`[data-id="${node.id}"]`)
+        : (e?.currentTarget as HTMLDivElement);
     if (!target) {
       return;
     }
