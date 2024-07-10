@@ -4,3 +4,4 @@ The `terraform state replace-provider` command in Terraform is used to update th
 
 Learn more from the following resources:
 
+- [@official@Command - state replace-provider](https://developer.hashicorp.com/terraform/cli/commands/state/replace-provider)
