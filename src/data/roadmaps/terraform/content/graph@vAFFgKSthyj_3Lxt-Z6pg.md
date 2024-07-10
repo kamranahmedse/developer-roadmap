@@ -7,3 +7,4 @@ Learn more from the following resources:
 - [@official@graph command](https://developer.hashicorp.com/terraform/cli/commands/graph)
 - [@article@How to Generate Images with Terraform Graph Command](https://spacelift.io/blog/terraform-graph)
 - [@video@Terraform — Resource Graph](https://www.youtube.com/watch?v=YbnBstMyVEI)
+- [@opensource@Graphviz](https://gitlab.com/graphviz/graphviz)
