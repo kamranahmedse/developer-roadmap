@@ -4,5 +4,5 @@ CaC (Configuration as Code) and IaC (Infrastructure as Code) are both ways to ma
 
 Learn more from the following resources:
 
-- [@video@ Ansible vs. Terraform: What's the difference?](https://www.youtube.com/watch?v=rx4Uh3jv1cA)
+- [@video@Ansible vs. Terraform: What's the difference?](https://www.youtube.com/watch?v=rx4Uh3jv1cA)
 - [@article@IaC vs CaC](https://medium.com/@cloudhacks_/infrastructure-as-code-iac-vs-configuration-as-code-cac-unraveling-the-differences-24fbce05ae25)

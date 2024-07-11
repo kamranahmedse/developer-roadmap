@@ -20,5 +20,5 @@ swapon /swapfile # enables the file for swapping
 
 Remember that the decision of where to place your swap space, how much swap space to have, and how to utilize swap space are all important considerations in optimizing your system's performance.
 
-- [@article@ Swap - Arch Wiki](https://wiki.archlinux.org/title/Swap)
-- [@article@ zram (alternative) - Arch Wiki](https://wiki.archlinux.org/title/Zram)
+- [@article@Swap - Arch Wiki](https://wiki.archlinux.org/title/Swap)
+- [@article@zram (alternative) - Arch Wiki](https://wiki.archlinux.org/title/Zram)

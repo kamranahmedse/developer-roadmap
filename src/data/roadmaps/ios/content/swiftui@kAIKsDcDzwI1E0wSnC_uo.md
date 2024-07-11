@@ -7,4 +7,4 @@ Learn more from the following resources:
 - [@official@SwiftUI Documentation](https://developer.apple.com/xcode/swiftui/)
 - [@official@Apple - SwiftUI Documentation](https://developer.apple.com/documentation/SwiftUI?changes=latest_minor)
 - [@article@Build an iOS app with SwiftUI](https://www.swift.org/getting-started/swiftui/)
-- [@video@ WWDC24: SwiftUI essentials | Apple ](https://www.youtube.com/watch?v=HyQgpxX__-A)
+- [@video@WWDC24: SwiftUI essentials | Apple ](https://www.youtube.com/watch?v=HyQgpxX__-A)
