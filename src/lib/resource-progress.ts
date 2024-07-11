@@ -94,6 +94,7 @@ export function clearMigratedRoadmapProgress(
     'full-stack',
     'ai-data-scientist',
     'postgresql-dba',
+    'blockchain',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

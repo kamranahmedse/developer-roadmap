@@ -6,8 +6,5 @@ Polygon, formerly known as the Matic Network, is a protocol that allows anyone t
 - [@official@Polygon PoS](https://polygon.technology/polygon-pos), a proof of stake, EVM compatible side chain
 - [@official@Polygon CDK](https://polygon.technology/polygon-cdk), a Chain Development Kit for building customizable zk powered L2s
 - [@official@Polygon ID](https://polygon.technology/polygon-id), identity infrastructure and SDKs to facilitate trusted and secure relationships between apps and users
-
-Visit the following resources to learn more:
-
 - [@article@Introduction to Polygon](https://wiki.polygon.technology/)
 - [@official@Polygon POL whitepaper](https://polygon.technology/papers/pol-whitepaper)
