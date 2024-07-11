@@ -369,6 +369,7 @@ export function refreshProgressCounters() {
 
   const totalClickable = getMatchingElements([
     '.clickable-group',
+    '[data-type="todo"]',
     '[data-type="topic"]',
     '[data-type="subtopic"]',
     '.react-flow__node-topic',
@@ -387,6 +388,9 @@ export function refreshProgressCounters() {
 
   const totalCheckBoxesDone = document.querySelectorAll(
     '[data-group-id^="check:"].done',
+  ).length;
+  const totalCheckBoxes2Done = document.querySelectorAll(
+      '[data-type="todo-checkbox"].done',
   ).length;
   const totalCheckBoxesLearning = document.querySelectorAll(
     '[data-group-id^="check:"].learning',
@@ -412,7 +416,7 @@ export function refreshProgressCounters() {
       '.clickable-group.done:not([data-group-id^="ext_link:"])',
       '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
       '[data-id].done', // All data-id=*.done elements are custom roadmap nodes
-    ]).length - totalCheckBoxesDone;
+    ]).length - totalCheckBoxesDone - totalCheckBoxes2Done;
   const totalLearning =
     getMatchingElements([
       '.clickable-group.learning',
