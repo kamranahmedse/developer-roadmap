@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Sass Website](https://sass-lang.com/)
 - [@article@Official Documentation](https://sass-lang.com/documentation)
-- [@video@ Sass Tutorial for Beginners](https://www.youtube.com/watch?v=_a5j7KoflTs)
-- [@video@ Sass, BEM, & Responsive Design](https://www.youtube.com/watch?v=jfMHA8SqUL4)
+- [@video@Sass Tutorial for Beginners](https://www.youtube.com/watch?v=_a5j7KoflTs)
+- [@video@Sass, BEM, & Responsive Design](https://www.youtube.com/watch?v=jfMHA8SqUL4)

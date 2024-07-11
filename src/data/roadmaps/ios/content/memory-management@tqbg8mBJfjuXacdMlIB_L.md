@@ -12,4 +12,4 @@ Visit the following resources to learn more:
 - [@official@Mac Apps That Use Garbage Collection Must Move to ARC](https://developer.apple.com/news/?id=02202015a)
 - [@official@MemoryLayout](https://developer.apple.com/documentation/swift/memorylayout)
 - [@official@Detect and diagnose memory issues](https://developer.apple.com/videos/play/wwdc2021/10180/)
-- [@official@ WWDC24: Analyze heap memory](https://www.youtube.com/watch?v=X_JYRz-Hd0o)
+- [@official@WWDC24: Analyze heap memory](https://www.youtube.com/watch?v=X_JYRz-Hd0o)

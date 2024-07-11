@@ -11,8 +11,8 @@ Visit the following resources to learn more:
 
 - [@article@How To Work With Files In Java](https://www.marcobehler.com/guides/java-files)
 - [@article@Java File Class](https://www.javatpoint.com/java-file-class)
-- [@article@ (old) Java HttpURLConnection Example - Java HTTP Request GET, POST](https://www.digitalocean.com/community/tutorials/java-httpurlconnection-example-java-http-request-get-post)
-- [@article@ New Java HttpClient](https://www.baeldung.com/java-9-http-client)
+- [@article@(old) Java HttpURLConnection Example - Java HTTP Request GET, POST](https://www.digitalocean.com/community/tutorials/java-httpurlconnection-example-java-http-request-get-post)
+- [@article@New Java HttpClient](https://www.baeldung.com/java-9-http-client)
 - [@article@5 ways to make HTTP requests in Java](https://www.twilio.com/blog/5-ways-to-make-http-requests-in-java)
 - [@article@Read a file line by line in Java](https://mkyong.com/java8/java-8-stream-read-a-file-line-by-line/)
 - [@article@Various ways to read a file to String in Java](https://howtodoinjava.com/java/io/java-read-file-to-string-examples/)

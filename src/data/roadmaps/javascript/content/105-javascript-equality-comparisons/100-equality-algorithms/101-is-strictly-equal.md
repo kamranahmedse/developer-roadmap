@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@ Strictly Equality (===) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
+- [@article@Strictly Equality (===) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)
 - [@article@Comparison - javascript.info](https://javascript.info/comparison)
