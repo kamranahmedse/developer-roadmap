@@ -6,7 +6,7 @@ excludedBySlug: '/backend/developer-skills'
 seo:
   title: '8 In-Demand Backend Developer Skills to Master'
   description: 'Learn what the essential backend developer skills are that you should learn and master to advance in your career.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-skills-30wwu.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-skills-ece68.jpg'
 isNew: false
 type: 'textual'
 date: 2024-02-27
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![The best backend developer skills to learn.](https://assets.roadmap.sh/guest/backend-developer-skills-ece68.jpg)
 
 Whether your goal is to become a backend developer or to stay relevant as one, the goal itself requires adopting an eternal student mindset. The ever-evolving web development space demands continuous learning, regardless of the programming language you use. New frameworks, libraries, and methodologies emerge regularly, offering different solutions to old problems. To remain relevant as a [backend developer](/backend), you’ll have to stay updated by honing your core skills.
 

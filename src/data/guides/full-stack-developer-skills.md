@@ -19,7 +19,7 @@ tags:
   - 'guide-sitemap'
 ---
 
-![image](https://assets.roadmap.sh/guest/full-stack-developer-skills-abb38.jpg)
+![The best full stack developer skills to learn.](https://assets.roadmap.sh/guest/full-stack-developer-skills-abb38.jpg)
 
 It should be no surprise to anyone that given the fast pace of the web development industry, every type of developer, especially full stack developers, must stay ahead of the curve by continuously updating their skills.
 

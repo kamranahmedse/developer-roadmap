@@ -6,7 +6,7 @@ excludedBySlug: '/backend/project-ideas'
 seo:
   title: '20 Backend Project Ideas to take you from Beginner to Pro'
   description: 'Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-ovr48.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg'
 isNew: false
 type: 'textual'
 date: 2024-05-09
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![Fresh ideas for backend projects.](https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg)
 
 As backend developers, showcasing our work to others is not straightforward, given that what we do is not very visible.
 

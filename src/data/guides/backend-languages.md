@@ -6,7 +6,7 @@ excludedBySlug: '/backend/languages'
 seo:
   title: 'The 5 Best Backend Development Languages to Master (@currentYear@)'
   description: 'Discover the best backend development languages to learn right now for career development, with practical tips from an experienced developer.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-development-languages-78dxq.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-languages-2x930.jpg'
 isNew: false
 type: 'textual'
 date: 2024-01-18
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![The best backend languages to learn.](https://assets.roadmap.sh/guest/backend-languages-2x930.jpg)
 
 Web development is typically divided into two main categories: [backend development](https://roadmap.sh/backend) and [frontend development](https://roadmap.sh/frontend). Frontend development focuses on the visible part of the application for end-users, i.e. the part that users interact with, while backend development involves writing code that remains unseen but is essential for the functioning of all applications—the business logic.
 

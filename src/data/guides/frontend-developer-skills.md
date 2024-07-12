@@ -19,7 +19,7 @@ tags:
   - 'guide-sitemap'
 ---
 
-![12 In-Demand Front End Developer Skills to Master](https://assets.roadmap.sh/guest/frontend-developer-skills-zdpyd.jpg)
+![The best frontend developer skills to learn.](https://assets.roadmap.sh/guest/frontend-developer-skills-zdpyd.jpg)
 
 Front end development is probably one of the most dynamic fields in our industry, it’s constantly forcing developers to stay up-to-date with the latest trends and technologies. Either by learning about new frameworks or libraries, or simply by making them choose between their current stack and the hot new framework released every other month.
 

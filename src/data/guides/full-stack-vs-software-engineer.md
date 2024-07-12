@@ -19,6 +19,8 @@ tags:
   - 'guide-sitemap'
 ---
 
+![Choosing between full stack developer or software engineer.](https://assets.roadmap.sh/guest/full-stack-developer-vs-software-engineer-yy0dk.jpg)
+
 Have you ever heard the saying that **all full-stack developers are software engineers, but not all software engineers are full-stack developers**?
 
 A full-stack developer is responsible for the user-facing side and the behind-the-scenes logic that makes everything work, while a software engineer may specialize in just one of these areas.
