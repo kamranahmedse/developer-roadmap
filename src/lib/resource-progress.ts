@@ -95,6 +95,7 @@ export function clearMigratedRoadmapProgress(
     'ai-data-scientist',
     'postgresql-dba',
     'blockchain',
+    'qa',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
@@ -391,7 +392,7 @@ export function refreshProgressCounters() {
     '[data-group-id^="check:"].done',
   ).length;
   const totalCheckBoxes2Done = document.querySelectorAll(
-      '[data-type="todo-checkbox"].done',
+    '[data-type="todo-checkbox"].done',
   ).length;
   const totalCheckBoxesLearning = document.querySelectorAll(
     '[data-group-id^="check:"].learning',
@@ -417,7 +418,9 @@ export function refreshProgressCounters() {
       '.clickable-group.done:not([data-group-id^="ext_link:"])',
       '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
       '[data-id].done', // All data-id=*.done elements are custom roadmap nodes
-    ]).length - totalCheckBoxesDone - totalCheckBoxes2Done;
+    ]).length -
+    totalCheckBoxesDone -
+    totalCheckBoxes2Done;
   const totalLearning =
     getMatchingElements([
       '.clickable-group.learning',
