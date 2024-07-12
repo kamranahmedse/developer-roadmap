@@ -57,6 +57,8 @@ export function ProfileUsername(props: ProfileUsernameProps) {
     setIsLoading(false);
   };
 
+  const USERNAME_REGEX = /^[a-zA-Z0-9]*$/;
+
   return (
     <div className="flex w-full flex-col">
       <label
@@ -88,7 +90,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
                   href={`${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/u/${username}`}
                   target="_blank"
                   className={
-                    'ml-0.5 rounded-md border border-purple-500 px-1.5 py-0.5 text-xs font-medium text-purple-700 transition-colors hover:bg-purple-500 hover:text-purple-800 hover:text-white'
+                    'ml-0.5 rounded-md border border-purple-500 px-1.5 py-0.5 text-xs font-medium text-purple-700 transition-colors hover:bg-purple-500 hover:text-white'
                   }
                 >
                   roadmap.sh/u/{username}
@@ -117,7 +119,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
               // only allow letters, numbers
               const keyCode = e.key;
               const validKey =
-                /^[a-zA-Z0-9]*$/.test(keyCode) && username.length < 10;
+                USERNAME_REGEX.test(keyCode) && username.length <= 10;
               if (
                 !validKey &&
                 !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(
@@ -127,7 +129,13 @@ export function ProfileUsername(props: ProfileUsernameProps) {
                 e.preventDefault();
               }
             }}
-            onChange={(e) => {
+            onInput={(e) => {
+              const value = (e.target as HTMLInputElement).value?.trim();
+              const isValid = USERNAME_REGEX.test(value) && value.length <= 10;
+              if (!isValid) {
+                return;
+              }
+
               setUsername((e.target as HTMLInputElement).value.toLowerCase());
             }}
             required={profileVisibility === 'public'}
