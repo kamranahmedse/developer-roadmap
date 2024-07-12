@@ -73,7 +73,7 @@ export function TriggerVerifyEmail() {
           Verifying your new Email
         </h2>
         <div className="text-sm sm:text-base">
-          {isLoading && <p>Please wait while we verify your new Email..</p>}
+          {isLoading && <p>Please wait while we verify your new Email.</p>}
           {error && <p className="text-red-700">{error}</p>}
         </div>
       </div>
