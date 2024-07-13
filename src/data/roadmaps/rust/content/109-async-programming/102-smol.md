@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [Docs.rs: smol](https://docs.rs/smol/latest/smol/)
+- [@official@Docs.rs: smol](https://docs.rs/smol/latest/smol/)

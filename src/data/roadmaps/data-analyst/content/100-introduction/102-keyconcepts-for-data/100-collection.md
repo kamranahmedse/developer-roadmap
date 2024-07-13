@@ -4,5 +4,5 @@ In the realm of data analysis, the concept of collection holds immense importanc
 
 Visit the following resources to learn more:
 
-- [What Is Data Collection: Methods, Types, Tools](https://www.simplilearn.com/what-is-data-collection-article#what_is_data_collection)
-- [Data Collection Methods: Types & Examples](https://www.questionpro.com/blog/data-collection-methods/)
+- [@article@What Is Data Collection: Methods, Types, Tools](https://www.simplilearn.com/what-is-data-collection-article#what_is_data_collection)
+- [@article@Data Collection Methods: Types & Examples](https://www.questionpro.com/blog/data-collection-methods/)
