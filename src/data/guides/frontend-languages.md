@@ -6,7 +6,7 @@ excludedBySlug: '/frontend/languages'
 seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-exm6g.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-languages-8gh0j.jpg'
 isNew: false
 type: 'textual'
 date: 2024-05-02
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![The best frontend languages to learn.](https://assets.roadmap.sh/guest/frontend-languages-8gh0j.jpg)
 
 Just starting out in web or mobile development? You may feel swamped by all the programming languages, libraries, and frameworks. With new options popping up daily, it's easy to get overwhelmed. This guide will help you navigate that initial confusion.
 

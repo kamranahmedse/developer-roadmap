@@ -222,6 +222,8 @@ questions:
       - 'Advanced'
 ---
 
+![The best backend interview questions to prepare for.](https://assets.roadmap.sh/guest/backend-developer-interview-questions-pm9jx.jpg)
+
 Getting ready for a software developer interview is never easy, especially if you’re new to the main tech stack of the company. This is why understanding the type of questions you might get asked during a technical interview is one of the keys to success.
 
 In this article, we’ll go over 50 popular backend interview questions ordered by experience level.

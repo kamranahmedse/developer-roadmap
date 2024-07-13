@@ -6,7 +6,7 @@ excludedBySlug: '/devops/how-to-become-devops-engineer'
 seo:
   title: 'How to become a DevOps Engineer in @currentYear@'
   description: 'Want to become a DevOps engineer? Our @currentYear@ guide covers skills, certifications, and expert career advice. Start your journey today!'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/how-to-become-devops-engineer-3opju.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/become-devops-engineer-4x2p7.jpg'
 isNew: true
 type: 'textual'
 date: 2024-06-11
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![How to become a DevOps engineer.](https://assets.roadmap.sh/guest/become-devops-engineer-4x2p7.jpg)
 
 If you are trying to get into tech or are already in tech and have been exploring roles across the industry, you must have come across Development and Operations (DevOps). In fact, DevOps is one of the highest-paying roles in the tech industry. But **what is DevOps, and how is it different from other roles?**
 

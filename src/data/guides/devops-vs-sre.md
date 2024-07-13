@@ -6,7 +6,7 @@ excludedBySlug: '/devops/devops-vs-sre'
 seo:
   title: 'DevOps vs SRE: Key Differences Explained'
   description: 'DevOps vs SRE: Discover which role suits your career best. Learn key differences, skills required, and career prospects in our detailed guide.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/devops-vs-sre-ofdcy.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/devops-vs-sre1-pfhzy.jpg'
 isNew: true
 type: 'textual'
 date: 2024-06-13
@@ -18,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![Key differences between DevOps and SRE.](https://assets.roadmap.sh/guest/devops-vs-sre1-pfhzy.jpg)
 
 When it comes to managing and enhancing software development and operations, companies often adopt sets of practices and processes such as Development Operations (DevOps) or Site Reliability Engineering (SRE). These approaches increase their ability to deliver applications scalably and maintain a fast pace.
 
