@@ -96,6 +96,7 @@ export function clearMigratedRoadmapProgress(
     'postgresql-dba',
     'blockchain',
     'qa',
+    'software-architect',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
