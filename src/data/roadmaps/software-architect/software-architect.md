@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/software-architect.json'
 pdfUrl: '/pdfs/roadmaps/software-architect.pdf'
+renderer: 'editor'
 order: 8
 briefTitle: 'Software Architect'
 briefDescription: 'Step by step guide to become a Software Architect in 2024'
