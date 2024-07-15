@@ -97,6 +97,7 @@ export function clearMigratedRoadmapProgress(
     'blockchain',
     'qa',
     'software-architect',
+    'cyber-security',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
