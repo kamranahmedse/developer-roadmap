@@ -3124,45 +3124,15 @@
         "oldId": "weIlGqGN15U8BH1yE9moA"
       },
       "position": {
-        "x": -489.23643593653094,
-        "y": 1715.9835318380642
+        "x": -490.26733623226676,
+        "y": 1759.9060085371989
       },
       "width": 214,
       "height": 49,
       "selected": false,
       "positionAbsolute": {
-        "x": -489.23643593653094,
-        "y": 1715.9835318380642
-      },
-      "dragging": false,
-      "style": {
-        "width": 214,
-        "height": 49
-      },
-      "selectable": true,
-      "focusable": true,
-      "resizing": false
-    },
-    {
-      "id": "q1I5X_UBGH9LyF7UKHl_u",
-      "type": "subtopic",
-      "data": {
-        "label": "Best Practices",
-        "style": {
-          "fontSize": 17
-        },
-        "oldId": "zCU02_5Pide5BZiuMuqEU"
-      },
-      "position": {
-        "x": -489.23643593653094,
-        "y": 1768.9835318380642
-      },
-      "width": 214,
-      "height": 49,
-      "selected": false,
-      "positionAbsolute": {
-        "x": -489.23643593653094,
-        "y": 1768.9835318380642
+        "x": -490.26733623226676,
+        "y": 1759.9060085371989
       },
       "dragging": false,
       "style": {
@@ -3185,14 +3155,14 @@
       },
       "position": {
         "x": -489.23643593653094,
-        "y": 1821.9835318380642
+        "y": 1811.9060085371989
       },
       "width": 214,
       "height": 49,
       "selected": false,
       "positionAbsolute": {
         "x": -489.23643593653094,
-        "y": 1821.9835318380642
+        "y": 1811.9060085371989
       },
       "dragging": false,
       "style": {
@@ -3215,14 +3185,14 @@
       },
       "position": {
         "x": -489.23643593653094,
-        "y": 1874.9835318380642
+        "y": 1863.9060085371989
       },
       "width": 214,
       "height": 49,
       "selected": false,
       "positionAbsolute": {
         "x": -489.23643593653094,
-        "y": 1874.9835318380642
+        "y": 1863.9060085371989
       },
       "dragging": false,
       "style": {
@@ -3245,14 +3215,14 @@
       },
       "position": {
         "x": -490.26733623226676,
-        "y": 1980.9835318380642
+        "y": 1967.9060085371989
       },
       "width": 214,
       "height": 49,
       "selected": false,
       "positionAbsolute": {
         "x": -490.26733623226676,
-        "y": 1980.9835318380642
+        "y": 1967.9060085371989
       },
       "dragging": false,
       "style": {
@@ -3275,14 +3245,14 @@
       },
       "position": {
         "x": -490.26733623226676,
-        "y": 2033.9835318380642
+        "y": 2019.9060085371989
       },
       "width": 214,
       "height": 49,
       "selected": false,
       "positionAbsolute": {
         "x": -490.26733623226676,
-        "y": 2033.9835318380642
+        "y": 2019.9060085371989
       },
       "dragging": false,
       "style": {
@@ -3893,7 +3863,7 @@
       "type": "subtopic",
       "position": {
         "x": -489.23643593653094,
-        "y": 1927.9835318380642
+        "y": 1915.9060085371989
       },
       "selected": false,
       "data": {
@@ -3909,7 +3879,7 @@
       "height": 49,
       "positionAbsolute": {
         "x": -489.23643593653094,
-        "y": 1927.9835318380642
+        "y": 1915.9060085371989
       },
       "dragging": false,
       "style": {
@@ -5412,25 +5382,6 @@
         "edgeStyle": "dashed"
       },
       "id": "reactflow__edge-ECcHo0KTDN27MuVTC-Fwyy2-zCU02_5Pide5BZiuMuqEUz1",
-      "selected": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "style": {
-        "strokeDasharray": "0.8 8",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
-      "source": "ECcHo0KTDN27MuVTC-Fwy",
-      "sourceHandle": "y2",
-      "target": "q1I5X_UBGH9LyF7UKHl_u",
-      "targetHandle": "z1",
-      "data": {
-        "edgeStyle": "dashed"
-      },
-      "id": "reactflow__edge-ECcHo0KTDN27MuVTC-Fwyy2-q1I5X_UBGH9LyF7UKHl_uz1",
       "selected": false,
       "selectable": true,
       "focusable": true
