@@ -98,6 +98,7 @@ export function clearMigratedRoadmapProgress(
     'qa',
     'software-architect',
     'cyber-security',
+    'ux-design',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
