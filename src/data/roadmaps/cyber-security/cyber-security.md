@@ -2,6 +2,7 @@
 jsonUrl: '/jsons/roadmaps/cyber-security.json'
 pdfUrl: '/pdfs/roadmaps/cyber-security.pdf'
 order: 11
+renderer: 'editor'
 briefTitle: 'Cyber Security'
 briefDescription: 'Step by step guide to becoming a Cyber Security Expert in 2024'
 title: 'Cyber Security Expert'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 3316.15
+  height: 4000
 schema:
   headline: 'Cyber Security Roadmap: Learn to become a Cyber Security Expert'
   description: 'Learn how to become a Cyber Security expert with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
