@@ -4,3 +4,4 @@ HashiCorp Cloud Platform (HCP) is best used when organizations need a managed, s
 
 Learn more from the following resources:
 
+- [@official@Use Cases](https://developer.hashicorp.com/terraform/intro/use-cases)
