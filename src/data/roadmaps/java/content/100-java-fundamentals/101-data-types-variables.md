@@ -13,4 +13,4 @@ Visit the following resources to learn more:
 - [@article@Java Variables](https://www.javatpoint.com/java-variables)
 - [@article@Learn more about Data types and Variables](https://www.javatpoint.com/java-data-types)
 - [@article@Java enums](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
-- [@article@Java Rerords](https://www.baeldung.com/java-record-keyword)
+- [@article@Java Records](https://www.baeldung.com/java-record-keyword)
