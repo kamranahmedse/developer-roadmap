@@ -5361,6 +5361,43 @@
       "selectable": true
     },
     {
+      "id": "prometheus-node-id",
+      "type": "subtopic",
+      "position": {
+        "x": 1510.8528975202719,
+        "y": 2661.733953859971
+      },
+      "data": {
+        "label": "Prometheus",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "legend": {
+          "id": "fsxYh49oVbysjbXYBdL0J",
+          "label": "Alternative Option - Pick this or Purple",
+          "color": "#667113",
+          "position": "right-center"
+        }
+      },
+      "width": 179,
+      "height": 49,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1510.8528975202719,
+        "y": 2661.733953859971
+      },
+      "dragging": false,
+      "style": {
+        "width": 179,
+        "height": 49
+      },
+      "resizing": false,
+      "focusable": true,
+      "selectable": true
+    },
+    {
       "id": "yHmHXymPNWwu8p1vvqD3o",
       "type": "paragraph",
       "position": {
