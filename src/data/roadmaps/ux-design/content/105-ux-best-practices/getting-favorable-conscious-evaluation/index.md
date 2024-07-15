@@ -1,1 +1,0 @@
-# Getting favorable conscious evaluation

@@ -1,1 +1,0 @@
-# New business model
