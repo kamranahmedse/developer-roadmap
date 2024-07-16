@@ -2,6 +2,7 @@
 import { roadmapApi } from '../api/roadmap';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { DiscoverRoadmaps } from '../components/DiscoverRoadmaps/DiscoverRoadmaps';
+import { DiscoverError } from '../components/DiscoverRoadmaps/DiscoverError';
 
 export const prerender = false;
 
@@ -9,14 +10,11 @@ const roadmapApiClient = roadmapApi(Astro);
 
 const { error, response: roadmaps } =
   await roadmapApiClient.listShowcaseRoadmap();
-console.log('-'.repeat(20));
-console.log(error);
-console.log('-'.repeat(20));
-
 const searchParams = Astro.url.searchParams.toString();
 ---
 
 <BaseLayout title='Discover Custom Roadmaps'>
+  {error && <DiscoverError message={error.message} />}
   {
     roadmaps && (
       <DiscoverRoadmaps
