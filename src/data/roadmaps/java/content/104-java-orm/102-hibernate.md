@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Hibernate](https://hibernate.org/)
 - [@article@Hibernate Tutorial](https://www.javatpoint.com/hibernate-tutorial)
-- [@articel@Second-level caching explained](https://hazelcast.com/glossary/hibernate-second-level-cache/)
+- [@article@Second-level caching explained](https://hazelcast.com/glossary/hibernate-second-level-cache/)
