@@ -1,6 +1,7 @@
 ---
 pdfUrl: '/pdfs/roadmaps/game-developer.pdf'
 order: 17
+renderer: 'editor'
 briefTitle: 'Game Developer'
 briefDescription: 'Roadmap to becoming a Game Developer in 2024'
 title: 'Game Developer'
@@ -9,7 +10,7 @@ hasTopics: true
 isNew: false
 dimensions:
   width: 968
-  height: 2104.59
+  height: 2370
 schema:
   headline: 'Game Developer Roadmap'
   description: 'Learn what Game Development is, what game developers do and how to become one using our community-driven roadmap.'

@@ -1,3 +1,0 @@
-# Specular
-
-Specular reflection, often referred to simply as "specularity", pertains to the glossiness of a gaming object's surface. It represents the mirror-like reflection of light from the surface, providing that shiny, polished appearance on the objects. The specular value details how much of the light hitting the object is reflected directly into the viewer's eyes, creating a bright, shiny spot. This reflective value can be fine-tuned using the specular color and intensity settings to match specific object properties – like the reflectiveness of plastic versus metal. In practice, this is often used to simulate the subtle reflections from the rough surface, offering a greater sense of realism in the game's visual representation.

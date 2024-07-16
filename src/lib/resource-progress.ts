@@ -99,6 +99,7 @@ export function clearMigratedRoadmapProgress(
     'software-architect',
     'cyber-security',
     'ux-design',
+    'game-developer',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

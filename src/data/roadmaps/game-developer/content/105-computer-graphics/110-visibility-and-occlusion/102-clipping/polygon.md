@@ -1,3 +1,0 @@
-# Polygon
-
-`Polygon` is a fundamental term used in computer graphics and game development. It is a plane figure that is described by a finite number of straight line segments connected to form a closed polygonal chain or polygonal circuit. The segments that form a polygon are known as its edges or sides, and the points where the edges meet are the polygon's vertices. In 3D modeling, polygons are used to create the surfaces of objects. Triangles, rectangles, pentagons, hexagons are examples of polygons. Complex 3D models are made up of numerous polygons. Polygons are crucial to determining the detail of 3D models in games; higher polygon counts usually mean higher detail.

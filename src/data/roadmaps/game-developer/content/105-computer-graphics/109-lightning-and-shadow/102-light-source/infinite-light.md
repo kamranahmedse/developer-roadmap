@@ -1,3 +1,0 @@
-# Infinite Light
-
-`Infinite light` in game development refers to a type of light source that emits light rays in parallel. This source is assumed to be located at an infinite distance away, hence the term 'infinite light'. Each ray of light coming from the source is regarded as a straight line. This is especially useful for simulating sunlight or far off light sources in outdoor scenes as the light rays from these sources, when received on earth, can be safely assumed to be parallel to each other. However, keep in mind that infinite light does not produce any localized lighting effects or shadows, as it dispenses even lighting throughout your scene.

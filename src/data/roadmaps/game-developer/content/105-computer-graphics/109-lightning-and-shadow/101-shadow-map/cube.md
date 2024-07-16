@@ -1,3 +1,0 @@
-# Cube
-
-A **Cube** is a three-dimensional geometric figure known for its symmetric and box-like shape. It is also characterized by its equal length, width, and height dimensions. In game development, cubes can be the starting point for creating more complex 3D models. They are utilized in numerous ways such as creating physical objects, defining environments, constructing characters, and more. Furthermore, in the context of a shadow map, a cube map can be generated to deal with omnidirectional light sources. Cube mapping, a process that uses a six-sided cube as the map shape, is particularly useful for creating reflections and applying textures on 3D models.
