@@ -1,3 +1,0 @@
-# kqueue
-
-`kqueue` is a scalable event notification interface introduced in FreeBSD 4.1 and later adopted in NetBSD, OpenBSD, and Mac OS X. It provides a mechanism that allows you to track many kernel events with a single system call. `kqueue` can detect changes to files and directories, handle signals, process termination, and network I/O. For a server-side game developer, getting notifications about network I/O can be essential, and `kqueue` provides a means to efficiently do this. However, not all Unix-based and POSIX-compliant operating systems support `kqueue`, so alternatives such as `epoll` might be necessary depending on your platform. For instance, `kqueue` is not natively supported in Linux but is available through certain libraries.

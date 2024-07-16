@@ -100,6 +100,7 @@ export function clearMigratedRoadmapProgress(
     'cyber-security',
     'ux-design',
     'game-developer',
+    'server-side-game-developer',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

@@ -1,3 +1,0 @@
-# RDBMS
-
-**RDBMS** or **Relational Database Management System** is a type of database management system that stores data in the form of related tables. These tables are interconnected via relational operators. Each row in these tables has an unique identifier known as its **Primary Key**, and the data can be accessed or reorganized in many different ways without needing to reorganize the tables themselves. **Structured Query Language (SQL)** is the standard language used for interfacing with RDBMS. Notable RDBMS examples include Oracle Database, MySQL, Microsoft SQL Server, and PostgreSQL.

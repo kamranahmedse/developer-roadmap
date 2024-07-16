@@ -1,6 +1,7 @@
 ---
 pdfUrl: '/pdfs/roadmaps/server-side-game-developer.pdf'
 order: 17
+renderer: 'editor'
 briefTitle: 'Server Side Game Developer'
 briefDescription: 'Roadmap to becoming a Server Side Game Developer in 2024'
 title: 'Server Side Game Developer'
@@ -10,7 +11,7 @@ isNew: true
 isHidden: true
 dimensions:
   width: 968
-  height: 2618.02
+  height: 2850
 schema:
   headline: 'Server Side Game Developer Roadmap'
   description: 'Learn what Server Side Game Development is, what server side game developers do and how to become one using our community-driven roadmap.'

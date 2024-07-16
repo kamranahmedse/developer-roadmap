@@ -1,3 +1,0 @@
-# select
-
-`Select` is an important system call that can handle multiple I/O operations concurrently. It comes in very handy when dealing with server-side programming due to its capacity to handle multiple connections at a time. `Select` resides in the operating system, awaiting for one or more of the I/O conditions it is monitoring to occur. Its main function is to monitor multiple file descriptors to see if they are ready for reading, writing or if an exceptional condition has occurred. It is ideally used in server-based games where the system has to deal with multiple clients simultaneously. It is quite crucial in applications where the extent of I/O activities is not determinable in advance.
