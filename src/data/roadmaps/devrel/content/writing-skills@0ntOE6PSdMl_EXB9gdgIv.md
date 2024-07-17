@@ -4,6 +4,6 @@ Good writing skills are crucial for software developers because they enhance com
 
 Learn more from the following resources:
 
-- [@article@Signposting: How to reduce cognitive load for your reader](https://newsletter.weskao.com/p/sign-posting-how-to-reduce-cognitive)
 - [@article@Putting Ideas into Words](https://www.paulgraham.com/words.html)
 - [@article@Patterns in confusing explanations](https://jvns.ca/blog/confusing-explanations/)
+- [@article@Signposting: How to reduce cognitive load for your reader](https://newsletter.weskao.com/p/sign-posting-how-to-reduce-cognitive)
