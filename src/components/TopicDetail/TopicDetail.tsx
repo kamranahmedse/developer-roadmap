@@ -366,7 +366,7 @@ export function TopicDetail(props: TopicDetailProps) {
                         className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                       >
                         <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                        Add Learning Resources
+                        Help us Improve this Content
                       </a>
                     </div>
                   )}
@@ -448,9 +448,9 @@ export function TopicDetail(props: TopicDetailProps) {
                   </div>
 
                   <p className="mb-2 mt-2 leading-relaxed">
-                    Help us improve this introduction and submit a link to a
-                    good article, podcast, video, or any other self-vetted
-                    resource that helped you understand this topic better.
+                    This popup should be a brief introductory paragraph for the topic and a few links
+                    to good articles, videos, or any other self-vetted resources. Please consider
+                    submitting a PR to improve this content.
                   </p>
                   <a
                     href={contributionUrl}
@@ -458,7 +458,7 @@ export function TopicDetail(props: TopicDetailProps) {
                     className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                    Add Learning Resources
+                    Help us Improve this Content
                   </a>
                 </div>
               )}
