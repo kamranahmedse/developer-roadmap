@@ -27,7 +27,7 @@ If you are building web applications, the ability to work on both front-end and 
 
 To remain competitive as a Java developer, you must continuously improve your skill sets to meet evolving industry demands. 
 
-This guide will equip you with the skills required in 2024. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career. 
+This guide will equip you with the skills required in 2024. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
 
 These are the skills we will cover in this guide:
 
@@ -64,15 +64,15 @@ Here are the front-end skills you should learn in 2024:
 
 ### HTML and CSS
 
-HyperText Markup Language (HTML) is the building block for all web pages. It dictates users' content and structure when interacting with a website or application, including text, images, videos, and more. 
+HyperText Markup Language (HTML) is the building block for all web pages. It dictates users' content and structure when interacting with a website or application, including text, images, videos, and more.
 
-Whereas HTML provides the structure of web pages, Cascading Style Sheets (CSS) enhance their appearance and layout. CSS determines how the content on a web page is styled and presented, including aspects like colors, fonts, spacing, and more. Additionally, CSS helps you create responsive designs that adapt to various screen sizes. 
+Whereas HTML provides the structure of web pages, Cascading Style Sheets (CSS) enhance their appearance and layout. CSS determines how the content on a web page is styled and presented, including aspects like colors, fonts, spacing, and more. Additionally, CSS helps you create responsive designs that adapt to various screen sizes.
 
 ![HTML and CSS](https://assets.roadmap.sh/guest/html-and-css-kktts.JPG)
 
 ### JavaScript
 
-JavaScript is a programming language used alongside HTML and CSS to enhance the functionality and interactivity of web pages. Whereas HTML and CSS are responsible for creating the structure and design of web pages, [JavaScript](https://roadmap.sh/javascript) adds dynamic elements such as content updates, animations, 2D/3D graphics, and other interactive features. Over the years, JavaScript has evolved significantly, introducing powerful frameworks such as [React](https://roadmap.sh/react), [Vue](https://roadmap.sh/vue), and [Angular](https://roadmap.sh/angular), among others. These frameworks empower you to build software ranging from small applications to large-scale enterprise systems. 
+JavaScript is a programming language used alongside HTML and CSS to enhance the functionality and interactivity of web pages. Whereas HTML and CSS are responsible for creating the structure and design of web pages, [JavaScript](https://roadmap.sh/javascript) adds dynamic elements such as content updates, animations, 2D/3D graphics, and other interactive features. Over the years, JavaScript has evolved significantly, introducing powerful frameworks such as [React](https://roadmap.sh/react), [Vue](https://roadmap.sh/vue), and [Angular](https://roadmap.sh/angular), among others. These frameworks empower you to build software ranging from small applications to large-scale enterprise systems.
 
 ![JavaScript](https://jbstechinfo.com/wp-content/uploads/2023/08/JavaScript-Symbol.png)
 
@@ -164,11 +164,11 @@ The JVM is a virtual machine that loads, verifies, and executes Java programs. I
 
 ### Jakarta Server Pages
 
-Jakarta Server Pages (JSP), previously known as Java Server Pages, is a suite of technologies that enables you to generate dynamic web pages. It facilitates the integration of Java code within static web markup, which is then compiled and executed on the server to deliver dynamic web applications. 
+Jakarta Server Pages (JSP), previously known as Java Server Pages, is a suite of technologies that enables you to generate dynamic web pages. It facilitates the integration of Java code within static web markup, which is then compiled and executed on the server to deliver dynamic web applications.
 
 ![Jakarta server pages](https://jakarta.ee/images/jakarta/jakarta-ee-logo-color.svg)
 
-### Front-end frameworks 
+### Front-end frameworks
 
 While Java can work with HTML, CSS, and JavaScript, there are scenarios where businesses need a clear separation between front-end and back-end development. This requirement could arise from diverse factors such as deployment strategies, continuous delivery pipelines, virtual (2D/3D) rendering demands, dynamic user interfaces, and performance optimizations. Therefore, knowledge of popular JavaScript frameworks like [React](https://roadmap.sh/react), [Vue](https://roadmap.sh/vue), [Angular](https://roadmap.sh/angular), etc. is critical for building scalable user interfaces.
 
@@ -204,13 +204,13 @@ The WORA mantra empowers developers to write Java programs that are capable of r
 
 ### Java in virtual reality, augmented reality, and mixed reality
 
-Java has also been widely adopted for building applications that support interactivity and immersive experiences, particularly in the realms of virtual reality (VR), augmented reality (AR), and mixed reality (XR). 
+Java has also been widely adopted for building applications that support interactivity and immersive experiences, particularly in the realms of virtual reality (VR), augmented reality (AR), and mixed reality (XR).
 
-For example, in e-commerce, full stack developers can use Java’s capabilities to create realistic and virtual environments that allow customers to visualize how different clothing items and footwear will look on them before making a purchase. 
+For example, in e-commerce, full stack developers can use Java’s capabilities to create realistic and virtual environments that allow customers to visualize how different clothing items and footwear will look on them before making a purchase.
 
 ### Java in AI
 
-Another field in which Java is gaining adoption is AI. Java's maintainability, object-oriented approach, enhanced security, garbage collection, and platform independence have positioned it as a vital tool for modeling and powering AI applications. These features make Java well-suited for developing robust and scalable AI solutions that can effectively handle complex data processing and analysis tasks. 
+Another field in which Java is gaining adoption is AI. Java's maintainability, object-oriented approach, enhanced security, garbage collection, and platform independence have positioned it as a vital tool for modeling and powering AI applications. These features make Java well-suited for developing robust and scalable AI solutions that can effectively handle complex data processing and analysis tasks.
 
 ![Java usage](https://assets.roadmap.sh/guest/java-usage-8bazm.JPG)
 
