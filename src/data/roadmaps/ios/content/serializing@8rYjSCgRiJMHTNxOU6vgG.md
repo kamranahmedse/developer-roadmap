@@ -4,3 +4,6 @@ Serialization in iOS development involves converting complex data structures or 
 
 Learn more from the following resources:
 
+- [@official@Encoding, Decoding and Serialization](https://developer.apple.com/documentation/swift/encoding-decoding-and-serialization)
+- [@official@Codable](https://developer.apple.com/documentation/swift/codable)
+- [@article@Codable Cheat Sheet](https://www.hackingwithswift.com/articles/119/codable-cheat-sheet)

@@ -4,3 +4,5 @@ Static libraries in iOS development are collections of compiled code that are li
 
 Learn more from the following resources:
 
+- [@article@Static Library in iOS](https://swiftpublished.com/article/static-library-in-ios-part1)
+- [@video@ How to Create an XCFramework - Frameworks and Static Libraries ](https://www.youtube.com/watch?v=40EmwraG4-k)

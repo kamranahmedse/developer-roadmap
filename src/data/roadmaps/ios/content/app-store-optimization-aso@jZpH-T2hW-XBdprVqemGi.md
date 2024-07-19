@@ -4,3 +4,6 @@ App Store Optimization (ASO) is the process of improving the visibility and rank
 
 Learn more from the following resources:
 
+- [@video@5 Essential ASO Strategies to Boost Your App Store Ranking in 2024](https://www.youtube.com/watch?v=bqM9x-oRZOA)
+- [@video@Advanced App Store Optimization Strategies for 2024](https://www.youtube.com/watch?v=d8TOuMnMv74)
+- [@article@What is App Store Optimization (ASO)?](https://appradar.com/academy/what-is-app-store-optimization-aso)

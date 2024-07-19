@@ -4,3 +4,6 @@ Grand Central Dispatch (GCD) is a powerful concurrency framework in iOS that sim
 
 Learn more from the following resources:
 
+- [@official@Dispatch@](https://developer.apple.com/documentation/DISPATCH)
+- [@article@Grand Central Dispatch (GCD) in iOS: The Developer's Guide](https://hackernoon.com/grand-central-dispatch-gcd-in-ios-the-developers-guide)
+- [@article@Grand Central Dispatch in iOS](https://medium.com/@knoo/gcd-grand-central-dispatch-in-ios-b2dd665cabd5)

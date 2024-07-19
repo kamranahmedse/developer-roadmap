@@ -4,3 +4,6 @@ Jenkins is an open-source automation server widely used for continuous integrati
 
 Learn more from the following resources:
 
+- [@official@Jenkins Website](https://www.jenkins.io/)
+- [@article@What is Jenkins?](https://www.spiceworks.com/tech/devops/articles/what-is-jenkins/)
+- [@article@How to use Jenkins to build your iOS app](https://sabapathy7.medium.com/how-to-use-jenkins-to-build-your-ios-app-55a8d147e3b2)

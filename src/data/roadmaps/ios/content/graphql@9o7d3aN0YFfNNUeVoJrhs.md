@@ -4,3 +4,5 @@ GraphQL is a query language and runtime for APIs, offering an alternative to tra
 
 Learn more from the following resources:
 
+- [@official@GraphQL Website](https://graphql.org/)
+- [@official@GraphQL Roadmap](https://roadmap.sh/graphql]

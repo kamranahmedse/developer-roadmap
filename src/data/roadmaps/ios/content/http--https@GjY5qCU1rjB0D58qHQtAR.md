@@ -4,3 +4,5 @@ HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are fundamental proto
 
 Learn more from the following resources:
 
+- [@official@URLSession](https://developer.apple.com/documentation/foundation/urlsession)
+- [@article@Mastering URLSession in Swift](https://elamir.medium.com/mastering-urlsession-in-swift-a-comprehensive-guide-d3a3aa740f6e)

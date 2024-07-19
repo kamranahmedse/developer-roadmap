@@ -4,3 +4,6 @@ Alamofire is a popular third-party networking library for iOS, built on top of A
 
 Learn more from the following resources:
 
+- [@opensource@Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)
+- [@article@Alamofire Tutorial with Swift (Quickstart)](https://codewithchris.com/alamofire/)
+- [@article@How to Use Alamofire in Swift: A Guide](https://www.waldo.com/blog/how-to-use-alamofire)

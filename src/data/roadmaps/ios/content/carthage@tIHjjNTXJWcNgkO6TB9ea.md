@@ -4,3 +4,5 @@ Carthage is a decentralized dependency manager for iOS and macOS development, of
 
 Learn more from the following resources:
 
+- [@opensource@carthage/carthage](https://github.com/Carthage/Carthage)
+- [@course@Carthage - Getting Started](https://www.kodeco.com/7649117-carthage-tutorial-getting-started)

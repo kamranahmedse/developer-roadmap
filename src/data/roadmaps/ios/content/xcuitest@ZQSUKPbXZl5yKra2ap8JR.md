@@ -4,3 +4,6 @@ XCUITest is a robust framework within XCTest designed specifically for automated
 
 Learn more from the following resources:
 
+- [@article@Getting Started with XCUITest](https://www.browserstack.com/guide/getting-started-xcuitest-framework)
+- [@article@Learn the Fundamentals of XCUITest Framework](https://www.headspin.io/blog/a-step-by-step-guide-to-xcuitest-framework)
+- [@article@Saucelabs - Getting Started with XCUITest](https://saucelabs.com/resources/blog/getting-started-with-xcuitest)

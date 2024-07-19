@@ -4,3 +4,6 @@ JSON and XML parsing in iOS involves converting structured data formats into nat
 
 Learn more from the following resources:
 
+- [@article@JSON Parsing in Swift explained with code examples](https://www.avanderlee.com/swift/json-parsing-decoding/)
+- [@article@Parsing XML using Swift](https://medium.com/cracking-swift/parsing-remote-xml-using-swift-bfa9701fff84)
+- [@official@XMLParser](https://developer.apple.com/documentation/foundation/xmlparser)

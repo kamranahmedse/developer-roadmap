@@ -4,3 +4,6 @@ URLSession is a powerful and flexible API in iOS for handling HTTP and HTTPS net
 
 Learn more from the following resources:
 
+- [@official@Fetching website data into memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
+- [@video@Networking in iOS with URLSession](https://www.youtube.com/watch?v=zvfViYmETuc)
+- [@article@URLSession in Swift](https://janviarora.medium.com/urlsession-in-swift-f0f7348e37d5)

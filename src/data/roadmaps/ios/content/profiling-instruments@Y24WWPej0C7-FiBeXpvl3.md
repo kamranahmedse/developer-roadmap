@@ -4,3 +4,6 @@ Profiling Instruments is a suite of powerful performance analysis tools integrat
 
 Learn more from the following resources:
 
+- [@video@Getting Started with Instruments](https://developer.apple.com/videos/play/wwdc2019/411/)
+- [@article@5 Simple Steps to Find Slow Code Using Xcode Time Profiler](https://swiftsenpai.com/xcode/using-time-profiler/)
+- [@article@An overview of the time profiler in Instruments](https://augmentedcode.io/2021/05/24/an-overview-of-the-time-profiler-in-instruments/)

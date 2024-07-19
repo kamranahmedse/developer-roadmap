@@ -4,3 +4,6 @@ MapKit is a powerful framework provided by Apple for integrating interactive map
 
 Learn more from the following resources:
 
+- [@official@MapKit](https://developer.apple.com/documentation/mapkit/)
+- [@video@Meet MapKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2023/10043/)
+- [@article@Implement MapKit APIs](https://medium.com/simform-engineering/mapkit-swiftui-in-ios-17-1fec82c3bf00)

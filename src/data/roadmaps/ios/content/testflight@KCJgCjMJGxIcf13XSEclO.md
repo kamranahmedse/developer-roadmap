@@ -4,3 +4,6 @@ TestFlight is Apple's beta testing service for iOS applications, allowing develo
 
 Learn more from the following resources:
 
+- [@official@Beta testing made simple with TestFlight](https://developer.apple.com/testflight/)
+- [@video@Get started with TestFlight](https://developer.apple.com/videos/play/tech-talks/110343/)
+- [@article@What is TestFlight and how to use it](https://vikramios.medium.com/what-is-testflight-how-to-use-it-44dba5d2f263)

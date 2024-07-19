@@ -4,3 +4,6 @@ XCFramework is an advanced packaging format introduced by Apple for distributing
 
 Learn more from the following resources:
 
+- [@official@Creating a multiplatform binary framework bundle](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)
+- [@official@Distributing binary frameworks as Swift packages](https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages)
+- [@article@Creating an XCFramework](https://rhonabwy.com/2023/02/10/creating-an-xcframework/)

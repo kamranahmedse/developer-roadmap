@@ -4,3 +4,6 @@ The Accessibility Inspector is a powerful tool in Xcode that helps developers en
 
 Learn more from the following resources:
 
+- [@official@Accessibility Inspector](https://developer.apple.com/documentation/accessibility/accessibility-inspector)
+- [@official@Inspecting the accessibility of the screens in your app](https://developer.apple.com/documentation/accessibility/inspecting-the-accessibility-of-screens)
+- [@video@Perform accessibility audits for your app](https://developer.apple.com/videos/play/wwdc2023/10035/)

@@ -4,3 +4,6 @@ Tailor is a cross-platform static analysis and lint tool specifically designed f
 
 Learn more from the following resources:
 
+- [@opensource@sleekbyte/tailor](https://github.com/sleekbyte/tailor)
+- [@official@Tailor Website](https://sleekbyte.github.io/tailor/)
+- [@article@Tailor](https://docs.codeclimate.com/docs/tailor)

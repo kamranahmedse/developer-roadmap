@@ -4,3 +4,5 @@ The Xcode Debugger is an essential tool for iOS developers, providing capabiliti
 
 Learn more from the following resources:
 
+- [@video@Debugging in Xcode](https://www.youtube.com/watch?v=ZAqnJQn7xp4)
+- [@article@Xcode Debug Console Tour: Exploring All Options](https://www.avanderlee.com/xcode/xcode-debug-console/)

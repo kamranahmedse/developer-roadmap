@@ -4,3 +4,6 @@ GameKit is a framework provided by Apple for iOS, macOS, and tvOS that facilitat
 
 Learn more from the following resources:
 
+- [@official@GameKit](https://developer.apple.com/documentation/gamekit)
+- [@article@How to integrate GameKit](https://medium.com/swlh/how-to-integrate-gamekit-ios-794061428197)
+- [@article@How to Implement a GameKit Leaderboard in SwiftUI](https://www.freecodecamp.org/news/how-to-implement-a-leaderboard-in-swiftui/)

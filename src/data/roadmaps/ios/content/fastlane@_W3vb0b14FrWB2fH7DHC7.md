@@ -12,3 +12,6 @@ Fastlane uses a configuration file (Fastfile) where developers can define lanes 
 
 Learn more from the following resources:
 
+- [@official@FastLane Website](https://fastlane.tools)
+- [@opensource@fastlane/fastlane](https://github.com/fastlane/fastlane)
+- [@video@How to Submit an app to the AppStore using Fastlane](https://www.youtube.com/watch?v=zuoQS-ZFXW0&t=197s)

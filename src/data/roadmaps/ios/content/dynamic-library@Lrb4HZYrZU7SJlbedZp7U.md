@@ -4,3 +4,5 @@ Dynamic libraries in iOS development are code modules that are loaded into an ap
 
 Learn more from the following resources:
 
+- [@official@Overview of Dynamic Libraries](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html)
+- [@article@Static Library vs Dynamic Library in iOS](https://pratheeshbennet.medium.com/static-library-vs-dynamic-library-in-ios-55478ed53a03)

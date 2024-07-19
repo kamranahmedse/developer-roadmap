@@ -12,3 +12,7 @@ This process ensures that apps are of high quality, secure, and provide a good u
 
 Learn more from the following resources:
 
+- [@official@Distribute on App Store](https://developer.apple.com/distribute/)
+- [@official@Distributing Custom Apps](https://developer.apple.com/custom-apps/)
+- [@video@Submit App to App Store (Upload iOS App)](https://www.youtube.com/watch?v=bz_KJdXylh0)
+- [@article@Creating the iOS Provisioning Profiles](https://support.staffbase.com/hc/en-us/articles/115003598691-Creating-the-iOS-Provisioning-Profiles)

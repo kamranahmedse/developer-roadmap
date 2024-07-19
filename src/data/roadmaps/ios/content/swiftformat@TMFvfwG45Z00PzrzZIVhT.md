@@ -4,3 +4,6 @@ SwiftFormat is a powerful command-line tool and Xcode extension designed to auto
 
 Learn more from the following resources:
 
+- [@opensource@nicklockwood/SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
+- [@article@SwiftFormat Automation for iOS Apps](https://medium.com/@pranav.kasetti/swiftformat-automation-for-ios-apps-42c91000a9af)
+- [@video@ How to Setup Swift Format on XCode 14 ](https://www.youtube.com/watch?v=S7e_rp_ZRKY)

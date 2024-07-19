@@ -4,3 +4,6 @@ Operation Queues in iOS provide a high-level, object-oriented approach to managi
 
 Learn more from the following resources:
 
+- [@official@OperationQueue](https://developer.apple.com/documentation/foundation/operationqueue)
+- [@article@Getting started with Operations and OperationQueues in Swift](https://www.avanderlee.com/swift/operations/)
+- [@article@Working with Operation Queue in Swift: Managing Multithreading and Cancelling Operations](https://www.linkedin.com/pulse/working-operation-queue-swift-managing-multithreading-igor-rukaleev-2t1ye/)
