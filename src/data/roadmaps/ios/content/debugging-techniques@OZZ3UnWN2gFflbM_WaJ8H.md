@@ -1,1 +1,3 @@
 # Debugging Techniques
+
+Debugging techniques in iOS development include using Xcode’s integrated debugger, which allows developers to set breakpoints, inspect variables, and step through code to identify issues. Utilizing the LLDB (Low-Level Debugger) commands in the console helps examine program state and perform complex operations. Instruments, another powerful tool within Xcode, is used for profiling and identifying performance bottlenecks, memory leaks, and energy usage. Logging with NSLog or print statements can also provide insight into runtime behavior. Additionally, employing unit tests and running the application on real devices can help uncover device-specific issues and ensure code reliability.

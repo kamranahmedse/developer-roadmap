@@ -7,7 +7,17 @@ For instance, `nano` is a basic text editor, which is easy to use and perfect fo
 To edit a file you first need to open it using a command like:
 
 ```bash
-nano filename
+nano [filename]
 ```
 
-This command will open the file `filename` in the `nano` editor. Once open, you can make changes to the file, save, and exit it. Other editors like `vi/vim` and `emacs` have their own specific commands for editing, saving and exiting files. It's essential to learn the basic commands of your chosen editor to efficiently work with files in Linux.
+```bash
+vi [filename] or vim [filename]
+```
+
+```bash
+gedit [filename]
+```
+Visit the following resources to learn more: 
+
+- [@article@How to edit a file](https://www.scaler.com/topics/how-to-edit-a-file-in-linux/)
+- [@article@Linux edit file](https://www.javatpoint.com/linux-edit-file)    

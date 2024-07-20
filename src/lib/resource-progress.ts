@@ -102,6 +102,8 @@ export function clearMigratedRoadmapProgress(
     'game-developer',
     'server-side-game-developer',
     'technical-writer',
+    'mlops',
+    'computer-science',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

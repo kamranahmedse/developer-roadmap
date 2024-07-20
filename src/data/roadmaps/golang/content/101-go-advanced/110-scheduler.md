@@ -1,6 +1,6 @@
 # Go Scheduler
 
-Go Scheduler allows us to understand more deeply about how Golang works internally. In terms of logical prcoessors, 
+Go Scheduler allows us to understand more deeply about how Golang works internally. In terms of logical processors, 
 cores, threads, pool cache, context switching etc. The Go scheduler is part of the Go runtime, and the Go runtime 
 is built into your application
 

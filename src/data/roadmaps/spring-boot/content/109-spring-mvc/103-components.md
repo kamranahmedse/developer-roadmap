@@ -15,5 +15,5 @@ There are other supporting components that are used to manage the lifecycle of t
 
 For more information, visit the following links:
 
-- [@article@Spring Boot vs Spring MVC: How do They Compare?](https://rollbar.com/blog/spring-boot-vs-spring-mvc-how-do-they-compare/)
-- [@article@Spring MVC components](http://makble.com/spring-mvc-components)
+- [@article@Spring Boot vs Spring MVC: How do They Compare?](https://www.javatpoint.com/spring-vs-spring-boot-vs-spring-mvc)
+- [@article@Spring MVC components](https://www.javatpoint.com/spring-vs-spring-boot-vs-spring-mvc)

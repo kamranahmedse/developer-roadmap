@@ -2,6 +2,7 @@
 jsonUrl: '/jsons/roadmaps/computer-science.json'
 pdfUrl: '/pdfs/roadmaps/computer-science.pdf'
 order: 1
+renderer: 'editor'
 briefTitle: 'Computer Science'
 briefDescription: 'Curriculum with free resources for a self-taught developer.'
 title: 'Computer Science'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 3009.05
+  height: 3550
 schema:
   headline: 'Computer Science Roadmap'
   description: 'Computer Science roadmap for the self-taught developers and bootcamp grads. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
