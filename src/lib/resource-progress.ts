@@ -104,6 +104,7 @@ export function clearMigratedRoadmapProgress(
     'technical-writer',
     'mlops',
     'computer-science',
+    'react',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
