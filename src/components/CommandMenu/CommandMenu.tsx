@@ -243,7 +243,7 @@ export function CommandMenu() {
                 const groupChanged = prevPage && prevPage.group !== page.group;
 
                 return (
-                  <Fragment key={page.id}>
+                  <Fragment key={page.group+'/'+page.id}>
                     {groupChanged && (
                       <div className="border-b border-gray-100"></div>
                     )}
