@@ -314,9 +314,9 @@ You can learn more details by exploring the [React Native roadmap](https://roadm
 ### WebAssembly and front-end development
 ![WebAssembly](https://assets.roadmap.sh/guest/webassembly-logo-lugnl.png)
 
-WebAssembly (or Wasm) is a binary instruction format serving as a compilation target for programming languages, enabling them to run efficiently in web browsers. It empowers developers to write high-performance code in languages like C, [C++](https://roadmap.sh/cpp), and [Rust](https://roadmap.sh/rust), which can then be seamlessly integrated into web applications, enhancing web front-end development capabilities. 
+WebAssembly (or Wasm) is a binary instruction format serving as a compilation target for programming languages, enabling them to run efficiently in web browsers. It empowers developers to write high-performance code in languages like C, [C++](https://roadmap.sh/cpp), and [Rust](https://roadmap.sh/rust), which can then be seamlessly integrated into web applications, enhancing web front-end development capabilities.
 
-Beyond the web, WebAssembly has also gained adoption in various domains, such as game distribution, server-side applications, hybrid native apps on mobile devices, and symmetric computations. 
+Beyond the web, WebAssembly has also gained adoption in various domains, such as game distribution, server-side applications, hybrid native apps on mobile devices, and symmetric computations.
 
 Companies like Figma, AutoCAD, and cloud-native companies actively leverage WebAssembly to meet their performance needs and contribute to the WebAssembly ecosystem by building libraries, tools, and packages that enhance its capabilities.
 
@@ -333,11 +333,11 @@ The points are:
 
 ### Project requirement
 
-A specific project's scope, goals, and features play an essential role in selecting the right language to learn, and answering these questions is vital: 
+A specific project's scope, goals, and features play an essential role in selecting the right language to learn, and answering these questions is vital:
 
-- What kind of application are you building? 
-- How complex is the data flow and logic? 
-- Is customization and scalability important? 
+- What kind of application are you building?
+- How complex is the data flow and logic?
+- Is customization and scalability important?
 
 The answers will help narrow your options and focus on languages that suit the project's needs. For example, if you are building a dynamic application for data collection, JavaScript or PHP alongside HTML and CSS are excellent choices.
 
@@ -361,6 +361,6 @@ In summary, essential languages to learn in 2024 include HTML for structure, CSS
 
 Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the choice of technologies during front-end development.
 
-Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end r](https://roadmap.sh/frontend)[oadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development. 
+Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end r](https://roadmap.sh/frontend)[oadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
 
-Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your skills to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress. 
+Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your skills to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress.
