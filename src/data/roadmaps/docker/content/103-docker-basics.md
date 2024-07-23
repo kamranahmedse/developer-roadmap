@@ -26,3 +26,15 @@ Below are some essential Docker commands you'll use frequently:
 - `docker container stop <container>`: Stop a running container.
 - `docker container rm <container>`: Remove a stopped container.
 - `docker image rm <image>`: Remove an image from your local machine.
+
+## Additional Tips
+
+- **Docker Compose**: For managing multi-container applications, Docker Compose is a powerful tool that uses a `docker-compose.yml` file to define and run multi-container Docker applications.
+
+- **Docker Swarm/Kubernetes**: For container orchestration, Docker Swarm is Docker's native clustering and scheduling tool, while Kubernetes is a widely adopted container orchestration platform.
+
+- **Security**: Regularly scan your Docker images for vulnerabilities using tools like `docker scan` or third-party scanners.
+
+- **Best Practices**: Follow Docker best practices such as minimizing the number of layers in your Dockerfile, using `.dockerignore` to exclude unnecessary files, and keeping your Docker images up-to-date.
+
+These should help you stay current with Docker and its ecosystem!
