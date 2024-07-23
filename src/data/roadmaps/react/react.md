@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/react.json'
 pdfUrl: '/pdfs/roadmaps/react.pdf'
+renderer: 'editor'
 order: 2
 briefTitle: 'React'
 briefDescription: 'Step by step guide to become a React Developer in 2024'
@@ -9,7 +10,7 @@ description: 'Everything that is there to learn about React and the ecosystem in
 hasTopics: true
 dimensions:
   width: 968
-  height: 1570.26
+  height: 2140
 schema:
   headline: 'React Developer Roadmap'
   description: 'Learn to become a React developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
