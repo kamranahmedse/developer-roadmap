@@ -106,6 +106,7 @@ export function clearMigratedRoadmapProgress(
     'computer-science',
     'react',
     'vue',
+    'javascript',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
