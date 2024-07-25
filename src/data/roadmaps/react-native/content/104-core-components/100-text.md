@@ -13,11 +13,11 @@ Here's a simple example using the `Text` component:
 
 ```javascript
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, Alert StyleSheet } from 'react-native';
 
 const SimpleText = () => {
   return (
-    <Text style={styles.text} numberOfLines={2} onPress={() => alert('Hello')}>
+    <Text style={styles.text} numberOfLines={2} onPress={() => Alert.alert('Hello')}>
       This is an example of a Text component in React Native. Tap on me!
     </Text>
   );
