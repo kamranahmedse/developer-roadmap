@@ -10,7 +10,7 @@ description: 'Everything that is there to learn about Angular and the ecosystem 
 hasTopics: true
 dimensions:
   width: 968
-  height: 2277.8
+  height: 3330
 schema:
   headline: 'Angular Developer Roadmap'
   description: 'Learn how to become a Angular Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

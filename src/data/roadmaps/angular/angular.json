@@ -1215,45 +1215,6 @@
       "selectable": true
     },
     {
-      "id": "YD5y17K5nqmWaBwYcufZO",
-      "type": "legend",
-      "position": {
-        "x": -522.3080206821377,
-        "y": -232.76957062917046
-      },
-      "selected": false,
-      "data": {
-        "label": "",
-        "legends": [
-          {
-            "id": "NEZQB0yHPCcKwsESDYbk5",
-            "color": "#38761d",
-            "label": "Beginner Topics / start with these"
-          },
-          {
-            "id": "bcE9YSY2vLzRyJQSceY9M",
-            "label": "Intermediate Topics / pick these next",
-            "color": "#9900ff"
-          },
-          {
-            "id": "iRlgVcCk54BVDA-Rx0kt8",
-            "label": "Advanced Topics / pick these at last",
-            "color": "#000"
-          }
-        ]
-      },
-      "zIndex": 999,
-      "width": 348,
-      "height": 124,
-      "positionAbsolute": {
-        "x": -522.3080206821377,
-        "y": -232.76957062917046
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
       "width": 91,
       "height": 49,
       "id": "U0fJo2a3vnaodNJhfZ78I",
@@ -6480,6 +6441,54 @@
       "focusable": true,
       "resizing": false,
       "selectable": true
+    },
+    {
+      "id": "4IpVbs5l5Qz-pw_WAFaPH",
+      "type": "linksgroup",
+      "position": {
+        "x": -523.7433266387567,
+        "y": -244.76957062917046
+      },
+      "selected": false,
+      "data": {
+        "label": "",
+        "links": [
+          {
+            "id": "hzJfebcalqROLYAvmHsee",
+            "label": "JavaScript Roadmap",
+            "href": "",
+            "url": "https://roadmap.sh/javascript"
+          },
+          {
+            "id": "CsdVEytvzSdpIeO3so7Or",
+            "label": "TypeScript Roadmap",
+            "url": "https://roadmap.sh/typescript"
+          },
+          {
+            "id": "7rPkH1iD0bKSMQiczroYV",
+            "label": "React Roadmap",
+            "url": "https://roadmap.sh/react"
+          },
+          {
+            "id": "NKONoOeOrflmwinWXCtQ-",
+            "label": "Vue Roadmap",
+            "url": "https://roadmap.sh/vue"
+          }
+        ]
+      },
+      "zIndex": 999,
+      "width": 279,
+      "height": 156,
+      "positionAbsolute": {
+        "x": -523.7433266387567,
+        "y": -244.76957062917046
+      },
+      "dragging": false,
+      "style": {
+        "width": 279,
+        "height": 156
+      },
+      "resizing": false
     }
   ],
   "edges": [
