@@ -23,5 +23,5 @@ Some common DNS record types you might encounter include:
 As an essential part of the internet, the security and integrity of the DNS infrastructure are crucial. However, it's vulnerable to various types of cyber attacks, such as DNS cache poisoning, Distributed Denial of Service (DDoS) attacks, and DNS hijacking. Proper DNS security measures, such as DNSSEC (DNS Security Extensions) and monitoring unusual DNS traffic patterns, can help mitigate risks associated with these attacks.
 
 - [@article@DNS in detail (TryHackMe)](https://tryhackme.com/room/dnsindetail)
-- [@video@DNS in 100 Seconds (YouTube)](https://www.youtube.com/watch?v=uvr9lhugayu)
+- [@video@DNS Explained in 100 Seconds (YouTube)](https://www.youtube.com/watch?v=UVR9lhUGAyU)
 - [@feed@Explore top posts about DNS](https://app.daily.dev/tags/dns?ref=roadmapsh)
