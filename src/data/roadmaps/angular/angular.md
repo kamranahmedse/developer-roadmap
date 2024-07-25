@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/angular.json'
 pdfUrl: '/pdfs/roadmaps/angular.pdf'
+renderer: 'editor'
 order: 4
 briefTitle: 'Angular'
 briefDescription: 'Step by step guide to become a Angular Developer in 2024'
