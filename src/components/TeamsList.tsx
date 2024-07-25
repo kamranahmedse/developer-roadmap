@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/use-auth';
 import { pageProgressMessage } from '../stores/page';
 import { useToast } from '../hooks/use-toast';
 import { type UserTeamItem } from './TeamDropdown/TeamDropdown';
+import { Rating } from './Rating/Rating';
 
 export function TeamsList() {
   const [teamList, setTeamList] = useState<UserTeamItem[]>([]);
@@ -11,7 +12,7 @@ export function TeamsList() {
   const toast = useToast();
   async function getAllTeam() {
     const { response, error } = await httpGet<UserTeamItem[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -35,6 +36,17 @@ export function TeamsList() {
           <p className="mt-2 text-gray-400">
             Here are the teams you are part of
           </p>
+
+          <Rating ratings={0.5} />
+          <Rating ratings={1} />
+          <Rating ratings={1.5} />
+          <Rating ratings={2} />
+          <Rating ratings={2.5} />
+          <Rating ratings={3} />
+          <Rating ratings={3.5} />
+          <Rating ratings={4} />
+          <Rating ratings={4.5} />
+          <Rating ratings={5} />
         </div>
         <ul className="mb-3 flex flex-col gap-1">
           <li>
