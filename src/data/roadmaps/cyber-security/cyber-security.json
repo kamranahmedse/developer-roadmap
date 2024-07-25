@@ -4203,7 +4203,7 @@
       },
       "selected": false,
       "data": {
-        "label": "proxmax",
+        "label": "proxmox",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
