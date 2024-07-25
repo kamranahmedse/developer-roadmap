@@ -4,5 +4,5 @@ Queues are a type of data structure in which elements are held in a sequence and
 
 Learn more from the following links:
 
-- [@video@Queue](https://www.youtube.com/watch?v=GYptUgnIM_I)
+- [@video@Queue](https://www.youtube.com/watch?v=M6GnoUDpqEE)
 - [@video@Python Queue](https://www.youtube.com/watch?v=rUUrmGKYwHw)
