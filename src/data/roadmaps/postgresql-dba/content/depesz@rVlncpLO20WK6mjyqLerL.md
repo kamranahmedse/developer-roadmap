@@ -4,3 +4,4 @@
 
 Learn more from the following resources:
 
+- [@official@Depesz Website](https://www.depesz.com/)

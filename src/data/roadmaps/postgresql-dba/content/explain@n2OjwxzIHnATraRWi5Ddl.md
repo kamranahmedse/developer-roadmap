@@ -6,3 +6,5 @@ Understanding the performance and efficiency of your queries is crucial when wor
 
 Learn more from the following resources:
 
+- [@official@Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
+- [@article@PostgreSQL EXPLAIN](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-explain/)

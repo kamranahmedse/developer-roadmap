@@ -6,3 +6,5 @@ By default, every PostgreSQL database has a `public` schema, which is the defaul
 
 Learn more from the following resources:
 
+- [@article@PostgreSQL Schema](https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/)
+- [@official@Schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)

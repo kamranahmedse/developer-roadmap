@@ -4,3 +4,5 @@ PostgreSQL allows you to define object privileges for various types of database 
 
 Learn more from the following resources:
 
+- [@official@ALTER DEFAULT PRIVILEGES](https://www.postgresql.org/docs/current/sql-alterdefaultprivileges.html)
+- [@official@Privileges](https://www.postgresql.org/docs/current/ddl-priv.html)

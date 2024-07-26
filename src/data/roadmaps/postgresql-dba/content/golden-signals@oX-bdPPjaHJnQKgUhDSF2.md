@@ -4,3 +4,5 @@ Golden Signals are a set of metrics that help monitor application performance an
 
 Learn more from the following resources:
 
+- [@article@The Four Golden Signals](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals)
+- [@article@4 SRE Golden Signals (What they are and why they matter)](https://www.blameless.com/blog/4-sre-golden-signals-what-they-are-and-why-they-matter)

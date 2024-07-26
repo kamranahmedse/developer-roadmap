@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@article@Linux iotop Check What’s Stressing & Increasing Load On Hard Disks](https://www.cyberciti.biz/hardware/linux-iotop-simple-top-like-io-monitor/)
+- [@article@iotop man page](https://linux.die.net/man/1/iotop)

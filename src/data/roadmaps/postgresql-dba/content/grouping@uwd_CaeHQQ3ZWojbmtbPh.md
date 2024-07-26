@@ -4,3 +4,6 @@ Grouping is a powerful technique in SQL that allows you to organize and aggregat
 
 Learn more from the following resources:
 
+- [@article@PostgreSQL GROUP BY](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-group-by/)
+- [@article@PostgreSQL - GROUP BY](https://www.tutorialspoint.com/postgresql/postgresql_group_by.htm)
+- [@article@PostgreSQL - HAVING](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-having/)

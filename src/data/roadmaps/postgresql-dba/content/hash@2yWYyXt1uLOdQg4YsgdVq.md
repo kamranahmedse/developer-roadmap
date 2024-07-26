@@ -4,3 +4,5 @@ Hash Indexes are a type of database index that uses a hash function to map each 
 
 Learn more from the following resources:
 
+- [@official@Hash](https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-HASH)
+- [@article@Re-Introducing Hash Indexes in PostgreSQL](https://hakibenita.com/postgresql-hash-index)

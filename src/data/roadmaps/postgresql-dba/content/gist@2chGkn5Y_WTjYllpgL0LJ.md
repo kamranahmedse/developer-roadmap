@@ -4,3 +4,5 @@ The Generalized Search Tree (GiST) is a powerful and flexible index type in Post
 
 Learn more from the following resources:
 
+- [@official@GIST Indexes](https://www.postgresql.org/docs/8.1/gist.html)
+- [@article@Generalized Search Trees for Database Systems](https://www.vldb.org/conf/1995/P562.PDF)

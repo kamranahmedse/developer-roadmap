@@ -4,3 +4,5 @@ Hybrid Transactional/Analytical Processing (HTAP) in PostgreSQL refers to a data
 
 Learn more from the following resources:
 
+- [@article@HTAP: Hybrid Transactional and Analytical Processing](https://www.snowflake.com/guides/htap-hybrid-transactional-and-analytical-processing/)
+- [@article@What is HTAP?](https://planetscale.com/blog/what-is-htap)

@@ -4,3 +4,5 @@ Grep is a powerful command-line tool used for searching plain-text data sets aga
 
 Learn more from the following resources:
 
+- [@article@grep command in Linux/Unix](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+- [@article@Use the Grep Command](https://docs.rackspace.com/docs/use-the-linux-grep-command)

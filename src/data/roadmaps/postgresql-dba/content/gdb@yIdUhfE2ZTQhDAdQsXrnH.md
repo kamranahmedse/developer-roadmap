@@ -4,3 +4,5 @@ GDB, the GNU Debugger, is a powerful debugging tool that provides inspection and
 
 Learn more from the following resources:
 
+- [@official@GDB](https://sourceware.org/gdb/)
+- [@article@Learn how to use GDB](https://opensource.com/article/21/3/debug-code-gdb)

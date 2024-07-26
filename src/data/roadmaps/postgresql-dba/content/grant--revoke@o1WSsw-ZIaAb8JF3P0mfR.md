@@ -4,3 +4,7 @@ One of the most important aspects of database management is providing appropriat
 
 Learn more from the following resources:
 
+- [@official@GRANT](https://www.postgresql.org/docs/current/sql-grant.html)
+- [@official@REVOKE](https://www.postgresql.org/docs/current/sql-revoke.html)
+- [@article@PostgreSQL GRANT statement](https://www.postgresqltutorial.com/postgresql-administration/postgresql-grant/)
+- [@article@PostgreSQL REVOKE statement](https://www.postgresqltutorial.com/postgresql-administration/postgresql-revoke/)
