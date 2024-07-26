@@ -5,5 +5,4 @@ A graph database stores nodes and relationships instead of tables, or documents.
 Visit the following resources to learn more:
 
 - [@article@What is a Graph Database?](https://neo4j.com/developer/graph-database/)
-- [@article@Graph Databases VS Relational Databases](https://www.freecodecamp.org/news/graph-database-vs-relational-database/)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

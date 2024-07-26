@@ -1,3 +1,0 @@
-# Operations
-
-TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data between systems over an IP network. Some of the primary operations include "Connection Establishment" that initializes a connection using a 3-way handshake, "Data Transfer" where packets of data are sent from sender to receiver, "Connection Termination" that closes the connection when transmission is complete, and "Error Control" which handles retransmission of lost data or corrupted packets. Additionally, TCP handles "Flow Control" to prevent a sender from overwhelming a receiver with data, and "Congestion Control" to manage network congestion and avoid packet loss.

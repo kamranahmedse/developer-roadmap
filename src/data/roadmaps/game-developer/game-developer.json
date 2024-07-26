@@ -566,59 +566,31 @@
       "id": "SIvQYH0q1H29NgbtLq3L8",
       "type": "button",
       "position": {
-        "x": 323.241338239984,
-        "y": -56.48985085377855
+        "x": 267.11202169501337,
+        "y": -55.32399710033968
       },
       "selected": false,
       "data": {
         "label": "Server Side",
         "href": "https://roadmap.sh/server-side-game-developer",
-        "color": "#ffffff",
-        "backgroundColor": "#4036d6",
+        "color": "#000000",
+        "backgroundColor": "#DEDEDE",
         "style": {
           "fontSize": 17
         },
-        "borderColor": "#4036D6"
+        "borderColor": "#DEDEDE"
       },
       "zIndex": 999,
-      "width": 212,
+      "width": 170,
       "height": 49,
       "style": {
-        "width": 212,
+        "width": 170,
         "height": 49
       },
       "resizing": false,
       "positionAbsolute": {
-        "x": 323.241338239984,
-        "y": -56.48985085377855
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "id": "j46wg2LkFjjWj3hi3Q2mJ",
-      "type": "label",
-      "position": {
-        "x": 324.741338239984,
-        "y": -1.3239971003396818
-      },
-      "selected": false,
-      "data": {
-        "label": "Click to visit the roadmap",
-        "href": "",
-        "color": "#000000",
-        "style": {
-          "fontSize": 17
-        }
-      },
-      "zIndex": 999,
-      "width": 209,
-      "height": 36,
-      "style": {},
-      "positionAbsolute": {
-        "x": 324.741338239984,
-        "y": -1.3239971003396818
+        "x": 267.11202169501337,
+        "y": -55.32399710033968
       },
       "dragging": false,
       "selectable": true,
@@ -5483,6 +5455,37 @@
       "focusable": true,
       "resizing": false,
       "selectable": true
+    },
+    {
+      "id": "3in61wmgTAqq7nSJm00p-",
+      "type": "horizontal",
+      "position": {
+        "x": 441.84147172248663,
+        "y": -40.82399710033968
+      },
+      "selected": false,
+      "data": {
+        "label": "horizontal node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 92,
+      "height": 20,
+      "positionAbsolute": {
+        "x": 441.84147172248663,
+        "y": -40.82399710033968
+      },
+      "dragging": false,
+      "style": {
+        "width": 92,
+        "height": 20
+      },
+      "resizing": false
     }
   ],
   "edges": [

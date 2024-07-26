@@ -6,4 +6,3 @@ Have a look at the following resources to understand API security and vulnerabil
 
 - [@article@OWASP Project API Security](https://owasp.org/API-Security/editions/2023/en/0x00-toc/)
 - [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)
-- [@article@How to Protect Data in Transit using HMAC and Diffie-Hellman in Node.js](https://www.freecodecamp.org/news/hmac-diffie-hellman-in-node/)

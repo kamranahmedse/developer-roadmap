@@ -4,7 +4,6 @@ Functional programming is a style of programming where code is written using pur
 
 Learn more from the following resources:
 
-- [@article@The Principles of Functional Programming](https://www.freecodecamp.org/news/the-principles-of-functional-programming/)
 - [@video@Functional programming - A general introduction](https://www.youtube.com/watch?v=8z_bUIl_uPo)
 - [@video@Intro to Swift for Functional Programmers](https://www.youtube.com/watch?v=rYC-TnKoi40)
 - [@feed@Explore top posts about Functional Programming](https://app.daily.dev/tags/functional-programming?ref=roadmapsh)

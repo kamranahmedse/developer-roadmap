@@ -1,3 +1,0 @@
-# io_uring
-
-`IO_uring` is a high-performance I/O interface in the Linux kernel, which was introduced in version 5.1. It provides a scalable and efficient I/O submission and completion model, surpassing the traditional POSIX interfaces. Unlike the older mechanisms like `select`, `poll`, and `epoll`, or `IOCP` in Windows, `IO_uring` uses ring buffers that are shared between the application and the kernel. This minimizes the need for system calls, thus enhancing performance. The interface allows for queueing up I/O operations (reads, writes, syncs, and others), as well as submissions of multiple operations at once. Furthermore, `IO_uring` supports both buffered and direct I/O, and includes support for I/O priorities.

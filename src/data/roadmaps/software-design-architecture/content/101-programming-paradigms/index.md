@@ -11,4 +11,3 @@ A programming paradigm is a fundamental style or approach to solving problems us
 Learn more from the following links:
 
 - [@article@Overview of Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
-- [@article@Introduction of Programming Paradigms](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)

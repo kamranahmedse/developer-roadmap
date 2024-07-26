@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/javascript.json'
 pdfUrl: '/pdfs/roadmaps/javascript.pdf'
+renderer: 'editor'
 order: 5
 briefTitle: 'JavaScript'
 briefDescription: 'Step by step guide to learn JavaScript in 2024'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2438.9
+  height: 2550
 schema:
   headline: 'JavaScript Roadmap'
   description: 'Learn JavaScript with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

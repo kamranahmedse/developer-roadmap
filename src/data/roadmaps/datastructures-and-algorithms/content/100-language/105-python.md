@@ -8,7 +8,6 @@ Visit the following resources to learn more:
 - [@official@Python Website](https://www.python.org/)
 - [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [@article@FreeCodeCamp.org - How to Learn Python ? ](https://www.freecodecamp.org/news/how-to-learn-python/)
 - [@article@Python principles - Python basics](https://pythonprinciples.com/)
 - [@article@W3Schools - Python Tutorial ](https://www.w3schools.com/python/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)

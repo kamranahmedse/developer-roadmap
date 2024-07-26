@@ -14,4 +14,5 @@ Visit the following resources to learn more:
 - [@article@Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)
 - [@article@Java: A Beginners Guide](https://www.amazon.co.uk/Java-Beginners-Guide-Herbert-Schildt/dp/1260463559)
 - [@article@Java: The Complete Reference](https://www.amazon.co.uk/gp/product/B09JL8BMK7/ref=dbs_a_def_rwt_bibl_vppi_i2)
+- [@course@Introduction to Java by Hyperskill (JetBrains Academy)](https://hyperskill.org/tracks/8)
 - [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

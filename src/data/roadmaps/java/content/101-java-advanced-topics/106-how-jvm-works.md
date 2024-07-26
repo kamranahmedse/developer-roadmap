@@ -4,7 +4,6 @@ The Java Virtual Machine (JVM) is a platform-dependent program that executes pla
 
 Visit the following resources to learn more:
 
-- [@article@What is JVM & architecture?](https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/)
 - [@article@Introducing the Java Virtual Machine](https://www.infoworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
 - [@video@How JVM works?](https://youtu.be/G1ubVOl9IBw)
 - [@article@JVM languages](https://www.whizlabs.com/blog/jvm-languages/)

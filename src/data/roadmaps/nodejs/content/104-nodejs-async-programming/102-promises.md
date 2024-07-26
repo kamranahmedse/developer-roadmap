@@ -13,5 +13,4 @@ Visit the following resources to learn more:
 
 - [@article@Promise Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [@official@Promises](https://www.promisejs.org/)
-- [@article@JavaScript Promises for Beginners](https://www.freecodecamp.org/news/javascript-promises-for-beginners/)
 - [@video@Asynchronous JavaScript - Promises](https://www.youtube.com/watch?v=a_8nrslImo4/)

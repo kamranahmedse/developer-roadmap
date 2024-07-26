@@ -6,6 +6,6 @@ Learn more from the following resources:
 
 - [@official@CALayer Documentation](https://developer.apple.com/documentation/quartzcore/calayer)
 - [@official@CABasicAnimation Documentation]
-- [@official@]CAKeyframeAnimation Documentation](https://developer.apple.com/documentation/quartzcore/cakeyframeanimation)
+- [@official@CAKeyframeAnimation Documentation](https://developer.apple.com/documentation/quartzcore/cakeyframeanimation)
 (https://developer.apple.com/documentation/quartzcore/cabasicanimation)
 - [@article@What is CALayer?](https://www.hackingwithswift.com/example-code/calayer/what-is-calayer)

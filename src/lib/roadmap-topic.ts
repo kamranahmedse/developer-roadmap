@@ -11,9 +11,10 @@ function generateTopicUrl(filePath: string) {
     .replace('/src/data/roadmaps/', '/') // Remove the base `/src/data/roadmaps` from path
     .replace('/content', ''); // Remove the `/[roadmapId]/content`
 
-  if (result.match(/\/\d+-/g)) {
+  if (result.match(/\/\d+-/g) && !result.match(/\/\d-/g)) {
     result = result.replace(/\/\d+-/g, '/'); // Remove ordering info `/101-ecosystem`
   }
+
   result = result
     .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
     .replace(/\.md$/, ''); // Remove `.md` from the end of file

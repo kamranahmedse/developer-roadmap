@@ -1,3 +1,0 @@
-# Coroutine
-
-A **Coroutine** is a special kind of function that has the ability to pause its execution while saving its local state. Unlike standard functions which start at their beginning when called and run to completion, coroutine can start, pause at any point of its execution, and then resume from the same point later. This pause and resume functionality, makes coroutines a great tool for writing asynchronous code and managing activities that are typically difficult to deal with in procedural programming such as time-dependent or event-driven operations. Coroutines are commonly used in server-side development for tasks like handling concurrent requests without the need for creating multiple threads or processes.

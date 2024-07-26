@@ -1,3 +1,0 @@
-# epoll
-
-`epoll` is a Linux kernel system call introduced in version 2.5.44 that provides a scalable I/O event notification mechanism. It was designed to replace the less scalable `poll` and `select` system calls when handling a large number of file descriptors. `epoll` uses an event-driven programming approach. Instead of frequently asking the operating system to check every file descriptor, the application tells the operating system what to track and goes to sleep. Then, the operating system wakes up the app when an event occurs on one of the tracked descriptors. This mechanism significantly reduces resource usage and latency, which is critical for server-side game development that involves real-time communication and high-performance needs.

@@ -1,7 +1,8 @@
 ---
 jsonUrl: '/jsons/roadmaps/vue.json'
 pdfUrl: '/pdfs/roadmaps/vue.pdf'
-order: 4
+renderer: 'editor'
+order: 3
 briefTitle: 'Vue'
 briefDescription: 'Step by step guide to become a Vue Developer in 2024'
 title: 'Vue Developer'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 1657.07
+  height: 2150
 schema:
   headline: 'Vue Developer Roadmap'
   description: 'Learn to become a Vue Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

@@ -1,6 +1,7 @@
 ---
 pdfUrl: '/pdfs/roadmaps/technical-writer.pdf'
 order: 17
+renderer: 'editor'
 briefTitle: 'Technical Writer'
 briefDescription: 'Roadmap for anyone looking for a career in technical writing'
 title: 'Technical Writer'

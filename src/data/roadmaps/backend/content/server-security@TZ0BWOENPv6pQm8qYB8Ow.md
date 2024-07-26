@@ -11,7 +11,3 @@ Learn about the security of your server and how to secure it. Here are some of t
 - Enable two-factor authentication: Two-factor authentication adds an extra layer of security to your accounts by requiring a second form of authentication, such as a code sent to your phone, in addition to your password.
 
 Also learn about OpenSSL and creating your own PKI as well as managing certs, renewals, and mutual client auth with x509 certs
-
-Learn more from the following resources:
-
-- [@article@How to Defend Against Server-Side Request Forgery](https://www.freecodecamp.org/news/defending-against-ssrf-attacks/)
