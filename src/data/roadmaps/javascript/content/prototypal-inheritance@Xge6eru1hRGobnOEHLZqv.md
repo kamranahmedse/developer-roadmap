@@ -5,5 +5,4 @@ The Prototypal Inheritance is a feature in javascript used to add methods and pr
 Visit the following resources to learn more:
 
 - [@article@JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-- [@article@GeeksForGeeks – JavaScript Tutorial](https://www.geeksforgeeks.org/prototypal-inheritance-using-__proto__-in-javascript/)
 - [@article@Prototype Inheritance](https://javascript.info/prototype-inheritance)

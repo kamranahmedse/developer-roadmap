@@ -7,5 +7,4 @@ Visit the following resources to learn more:
 - [@article@Type Conversions](https://javascript.info/type-conversions)
 - [@article@JavaScript Type Conversion](https://www.w3schools.com/js/js_type_conversion.asp)
 - [@article@Type Casting in JavaScript](https://www.tutorialspoint.com/type-casting-in-javascript)
-- [@article@JavaScript Type Cast](https://www.geeksforgeeks.org/javascript-type-conversion)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

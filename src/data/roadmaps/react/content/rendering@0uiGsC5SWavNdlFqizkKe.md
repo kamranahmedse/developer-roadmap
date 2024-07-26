@@ -13,4 +13,3 @@ This process is known as reconciliation, and it is an important aspect of how Re
 
 Visit the following resources to learn more:
 
-- [@article@React.js under the Hood](https://www.freecodecamp.org/news/react-under-the-hood/)

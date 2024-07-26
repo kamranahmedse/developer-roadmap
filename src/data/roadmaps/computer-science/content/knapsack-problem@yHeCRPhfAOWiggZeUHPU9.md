@@ -4,6 +4,5 @@ KnapSack Problem is a classic problem in computer science. It is a problem in wh
 
 Visit the following resources to learn more:
 
-- [@article@0-1 Knapsack Problem | DP-10](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
 - [@article@How to solve the Knapsack Problem with dynamic programming](https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf)
 - [@video@3.1 Knapsack Problem - Greedy Method](https://www.youtube.com/watch?v=oTTzNMHM05I)

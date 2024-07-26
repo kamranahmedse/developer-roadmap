@@ -61,7 +61,7 @@ Python's versatility is evident in its applicability across a spectrum of indust
 
 So, let's talk about Django – it's like the superhero of web frameworks, at least in the world of Python. This high-level powerhouse is all about that "batteries-included" style, giving you a whole package of tools and features that make development lightning-fast. It follows the [Model-View-Controller](https://www.crio.do/blog/understand-mvc-architecture/) (MVC) architecture that gives your web applications a solid structure, making them scalable and easy to keep up.
 
-Part of that whole “batteries-included” motto means that it comes with an admin panel, an [ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/) (Object-Relational Mapping) for smooth data handling, and security features that make sure your project is secured out-of-the-box. All these goodies work together, making Django a top choice for projects, whether they're a walk in the park or a brain-bending challenge.
+Part of that whole “batteries-included” motto means that it comes with an admin panel, an ORM (Object-Relational Mapping) for smooth data handling, and security features that make sure your project is secured out-of-the-box. All these goodies work together, making Django a top choice for projects, whether they're a walk in the park or a brain-bending challenge.
 
 ##### Flask
 

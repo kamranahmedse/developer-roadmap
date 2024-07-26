@@ -4,6 +4,5 @@ Longest path problem is a problem that asks us to find the longest path in a gra
 
 Visit the following resources to learn more:
 
-- [@article@Longest Path in a Directed Acyclic Graph](https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/)
 - [@video@Shortest/Longest path on a Directed Acyclic Graph (DAG) | Graph Theory](https://www.youtube.com/watch?v=TXkDpqjDMHA)
 - [@video@Longest Simple Path - Intro to Algorithms](https://www.youtube.com/watch?v=lRH0tax5dFA)

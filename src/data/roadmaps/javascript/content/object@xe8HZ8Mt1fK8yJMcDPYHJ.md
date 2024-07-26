@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@Objects](https://javascript.info/object)
 - [@article@Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 - [@article@JavaScript Object Definition](https://www.w3schools.com/js/js_object_definition.asp)
-- [@article@Objects in JavaScript ](https://www.geeksforgeeks.org/objects-in-javascript/)

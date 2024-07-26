@@ -4,5 +4,4 @@ Big endian is the most common type of endianness. In this type, the most signifi
 
 Visit the following resources to learn more:
 
-- [@article@Little and Big Endian Mystery](https://www.geeksforgeeks.org/little-and-big-endian-mystery/)
 - [@video@Lecture 22. Big Endian and Little Endian](https://www.youtube.com/watch?v=T1C9Kj_78ek)

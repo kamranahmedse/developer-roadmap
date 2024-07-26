@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is a lexical environment? - JavaScript - CodeGuage](https://www.codeguage.com/courses/js/functions-closures#What_is_a_lexical_environment)
 - [@article@Lexical scoping - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#lexical_scoping)
-- [@article@Lexical Scope in JavaScript – What Exactly Is Scope in JS?](https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/)

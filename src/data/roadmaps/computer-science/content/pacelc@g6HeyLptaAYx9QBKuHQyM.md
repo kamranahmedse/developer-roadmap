@@ -4,5 +4,4 @@ The PACELC Theorem is an extension of the CAP Theorem. One of the questions that
 
 Visit the following resources to learn more:
 
-- [@article@PACELC Theorem - Geeks for Geeks](https://www.geeksforgeeks.org/pacelc-theorem/)
 - [@article@PACELC Theorem](https://www.scylladb.com/glossary/pacelc-theorem/)
