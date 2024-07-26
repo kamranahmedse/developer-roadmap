@@ -14,12 +14,12 @@ The CompTIA Network+ certification covers several essential networking topics, s
 
 ## Exam Details
 
-To become Network+ certified, you must pass the [N10-007 exam](https://www.comptia.org/certifications/network). The exam consists of:
+To become Network+ certified, you must pass the [N10-008 exam](https://www.comptia.org/certifications/network) or [N10-009 exam](https://www.comptia.org/certifications/network). The exam consists of:
 
 - Up to 90 questions, including multiple-choice and performance-based questions
 - Duration: 90 minutes
 - Passing Score: 720 out of 900
-- Exam Cost: $338 USD
+- Exam Cost: $369 USD
 
 ## Benefits of CompTIA Network+ Certification
 
@@ -31,3 +31,17 @@ By earning the CompTIA Network+ certification, you can demonstrate your competen
 - **Vendor-neutral**: Since the Network+ certification covers a broad range of networking topics, it is applicable to many different network environments and technologies.
 
 To get started with your CompTIA Network+ certification journey, [visit the official CompTIA website](https://www.comptia.org/certifications/network) for more information on the certification, exam preparation, and testing centers.
+
+## Preparation Resources
+
+- **Strengthen Networking Fundamentals:**: The CompTIA Network+ exam emphasizes understanding networking fundamentals. To build a solid foundation, grasp concepts like TCP/IP protocols, subnetting, the OSI model, network devices, and addressing schemes.
+
+- **Engage in Hands-on Practice:**: Theory alone won't suffice for excelling in the N10-008 or N10-009 exam. Practical experience is crucial for understanding networking concepts and troubleshooting scenarios. Take practice exams to assess your readiness and get familiar with the exam format. Additionally, work with virtual labs to enhance your practical understanding of network configurations and troubleshooting. 
+
+Recommended resources include:
+
+- [@official@Official CompTIA Network+](https://www.comptia.org/certifications/network)
+- [@video@CompTIA Network+ Full Course FREE [23+ Hours]](https://www.youtube.com/watch?v=xmpYfyNmWbw)
+- [@article@Professor Messer’s CompTIA N10-008 Network+ Course FREE](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/)
+- [@course@Total Seminars](https://www.udemy.com/course/comptia-networkplus-certification/)
+- [@course@Dion Training](https://www.udemy.com/course/comptia-network-009/)
