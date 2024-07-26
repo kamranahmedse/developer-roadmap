@@ -76,8 +76,6 @@ It's important to add a valid type, this will help us categorize the content and
 - <p><strong>Write meaningful commit messages</strong><br >
 
   Meaningful commit messages help speed up the review process as well as help other contributors in gaining a good overview of the repositories commit history without having to dive into every commit.
-  
-  (See the following guide on how to write good [commit messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)).
 
   </p>
 - <p><strong>Look at the existing issues/pull requests before opening new ones</strong></p>

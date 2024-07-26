@@ -5,6 +5,5 @@ Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a 
 Visit the following resources to learn more:
 
 - [@video@Graph Algorithms I - Topological Sorting, Prims Algorithm - Lecture 6](https://www.youtube.com/watch?v=i_AQT_XfvD8\&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm\&index=7)
-- [@article@Prim’s Minimum Spanning Tree (MST) | Greedy Algo-5](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
 - [@article@Prims Algorithm](https://www.programiz.com/dsa/prim-algorithm)
 - [@feed@Explore top posts about Data Science](https://app.daily.dev/tags/data-science?ref=roadmapsh)

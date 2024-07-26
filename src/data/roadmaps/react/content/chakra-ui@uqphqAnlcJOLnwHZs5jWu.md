@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@Chakra UI Official Getting Started](https://chakra-ui.com/docs/getting-started)
 - [@video@Official Getting Started Video](https://youtu.be/wI2vqXsjsIo)
 - [@video@Chakra UI Crash Course](https://youtu.be/s-bIsz-NR3c)
-- [@article@Why You Should Start Using Chakra UI](https://www.freecodecamp.org/news/why-should-you-start-using-chakraui/)

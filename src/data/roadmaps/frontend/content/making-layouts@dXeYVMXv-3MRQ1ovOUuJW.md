@@ -9,7 +9,6 @@ Visit the following resources to learn more:
 - [@article@All about Floats](https://css-tricks.com/all-about-floats/)
 - [@article@Positioning Types: How Do They Differ?](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
 - [@article@The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-- [@article@The CSS Display Property](https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/)
 - [@article@A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 - [@article@A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid)
 - [@article@Learn CSS Grid - Course](https://cssgrid.io/)

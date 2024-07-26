@@ -5,8 +5,6 @@ The Document Object Model (DOM) is a programming interface built for HTML and XM
 Visit the following resources to learn more:
 
 - [@article@DOM Tree](https://javascript.info/dom-nodes)
-- [@article@GeeksForGeeks - DOM (Document Object Model)](https://www.geeksforgeeks.org/dom-document-object-model/)
-- [@article@What is the DOM?](https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/)
 - [@article@Eloquent JavaScript, 3rd Edition: The Document Object Model](https://eloquentjavascript.net/14_dom.html)
 - [@article@JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
 - [@article@JavaScript DOM](https://www.javascripttutorial.net/javascript-dom/)

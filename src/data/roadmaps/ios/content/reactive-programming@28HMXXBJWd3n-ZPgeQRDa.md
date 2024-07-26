@@ -5,5 +5,4 @@ Reactive Programming is a declarative programming paradigm focused on data strea
 Learn more from the following resources:
 
 - [@article@What is reactive programming?](https://www.baeldung.com/cs/reactive-programming#:~:text=Reactive%20programming%20is%20a%20declarative,or%20reactive%20systems%20in%20general.)
-- [@article@What is Reactive Programming? Beginner's Guide to Writing Reactive Code](https://www.freecodecamp.org/news/reactive-programming-beginner-guide/)
 - [@video@What is reactive programming?](https://www.youtube.com/watch?v=X-DeG_uGFUU)

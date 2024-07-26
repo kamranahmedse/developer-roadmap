@@ -4,5 +4,4 @@ npm packages allow you to bundle some specific functionality into a reusable pac
 
 Visit the following resources to learn more:
 
-- [@article@How to make a tiny npm package and publish it](https://www.freecodecamp.org/news/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78/)
 - [@article@Best practices for creating a modern npm package](https://snyk.io/blog/best-practices-create-modern-npm-package/)

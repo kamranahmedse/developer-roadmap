@@ -6,5 +6,4 @@ Learn more from the following resources:
 
 - [@official@Git Documentation](https://www.git-scm.com/)
 - [@video@Git in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
-- [@article@An introduction to Git](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)
 - [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)

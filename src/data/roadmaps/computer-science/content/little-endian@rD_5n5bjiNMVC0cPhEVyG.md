@@ -4,6 +4,5 @@ Little Endian is a way of storing data in memory. It is the opposite of Big Endi
 
 Visit the following resources to learn more:
 
-- [@article@What is Endianness? Big-Endian vs Little-Endian Explained with Examples](https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/)
 - [@video@Big Endian vs Little Endian.mp4](https://www.youtube.com/watch?v=JrNF0KRAlyo)
 - [@video@Endianness Explained With an Egg - Computerphile](https://www.youtube.com/watch?v=NcaiHcBvDR4)

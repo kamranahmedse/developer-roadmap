@@ -7,4 +7,3 @@ The `setInterval()` method helps us to repeatedly execute a function after a fix
 Visit the following resources to learn more:
 
 - [@article@Scheduling: setTimeout and setInterval](https://javascript.info/settimeout-setinterval)
-- [@article@What is the use of setInterval() method in JavaScript?](https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/)

@@ -6,5 +6,4 @@ For more information, visit the following links:
 
 - [@article@Intro to Spring Boot Starters](https://www.baeldung.com/spring-boot-starters)
 - [@article@Spring Boot Starters](https://www.javatpoint.com/spring-boot-starters)
-- [@article@Starters in Spring Boot](https://www.geeksforgeeks.org/spring-boot-starters/)
 - [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

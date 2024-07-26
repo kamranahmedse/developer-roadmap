@@ -33,7 +33,6 @@ The `grep` command (**g**lobal search for **r**egular **e**xpression and **p**ri
 `sort` command is used to sort the contents of a file in a particular order. By default, it sorts a file assuming the contents are in ASCII. But it also can also be used to sort numerically by using appropriate options.
 
 - [@article@Options](https://en.wikipedia.org/wiki/Sort_(Unix))
-- [@video@Linux Tutorials|sort command GeeksforGeeks](https://www.youtube.com/watch?v=fEx5rnbDKO4)
 
 The cut utility cuts out selected portions of each line (as specified by list) from each file and writes them to the standard output.
 
@@ -49,7 +48,6 @@ The uniq utility reads the specified input_file comparing adjacent lines, and wr
 
 - [@article@Cat Command with examples](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)
 - [@article@Options](https://en.wikipedia.org/wiki/Cat_(Unix))
-- [@video@Linux Tutorials|cat command|GeeksforGeeks](https://www.youtube.com/watch?v=exj5WMUJ11g)
 
 `echo` is a built-in command in Linux used to display lines of text/string that are passed as an argument. It is mostly used in shell scripts and batch files to output status text or `ENV` variables to the screen or a file.
 
@@ -68,7 +66,6 @@ The tr utility copies the standard input to the standard output with substitutio
 The nl utility reads lines from the named file or the standard input if the file argument is omitted, applies a configurable line numbering filter operation and writes the result to the standard output.
 
 - [@article@nl Documentation](https://man7.org/linux/man-pages/man1/nl.1.html)
-- [@article@nl Cheat Sheet](https://www.geeksforgeeks.org/nl-command-in-linux-with-examples/)
 
 The wc utility displays the number of lines, words, and bytes contained in each input file, or standard input (if no file is specified) to the standard output.
 

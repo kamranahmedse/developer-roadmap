@@ -12,6 +12,6 @@ Visit the following resources to learn more:
 - [@article@Red Hat: What is GraphQL?](https://www.redhat.com/en/topics/api/what-is-graphql)
 - [@article@Digital Ocean: An Introduction to GraphQL](https://www.digitalocean.com/community/tutorials/an-introduction-to-graphql)
 - [@article@How to GraphQL: The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
-- [@video@GraphQL Full Course - Novice to Expert (by freeCodeCamp.org on YouTube)](https://www.youtube.com/watch?v=ed8SzALpx1Q)
+- [@video@GraphQL Full Course - Novice to Expert](https://www.youtube.com/watch?v=ed8SzALpx1Q)
 - [@video@Beginner GraphQL Series (by Ben Awad on YouTube)](https://www.youtube.com/playlist?list=PLN3n1USn4xln0j_NN9k4j5hS1thsGibKi)
 - [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

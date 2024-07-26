@@ -4,7 +4,6 @@ ESModules is a standard that was introduced with ES6 (2015). The idea was to sta
 
 Visit the following resources to learn more:
 
-- [@article@Introduction to Modules in Javascript](https://www.freecodecamp.org/news/modules-in-javascript/)
 - [@article@Full ESM module overview from MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 - [@article@Full ESM module overview from js.info](https://javascript.info/modules)
 - [@article@Node.js documentation for ESModules](https://nodejs.org/api/esm.html)

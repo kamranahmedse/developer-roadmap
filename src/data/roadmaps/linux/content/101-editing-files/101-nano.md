@@ -22,5 +22,4 @@ nano filename
 Visit the following resources to learn more: 
 
 - [@article@Blog on nano](https://ioflood.com/blog/nano-linux-command/)
-- [@article@Nano-text-editor](https://www.geeksforgeeks.org/nano-text-editor-in-linux/)
 - [@video@Nano editor fundamentals](https://www.youtube.com/watch?v=gyKiDczLIZ4&ab_channel=HackerSploit)

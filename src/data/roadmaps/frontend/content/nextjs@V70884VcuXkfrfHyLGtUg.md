@@ -8,7 +8,6 @@ Visit the following resources to learn more:
 
 - [@official@Official Website](https://nextjs.org/)
 - [@official@Official Docs for Getting Started](https://nextjs.org/docs/getting-started)
-- [@article@The Next.js Handbook — FreeCodeCamp](https://www.freecodecamp.org/news/the-next-js-handbook/)
 - [@article@Mastering Next.js](https://masteringnextjs.com/)
 - [@video@Next.js for Beginners - Full Course at freeCodeCamp YouTube Channel](https://youtu.be/1WmNXEVia8I)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
