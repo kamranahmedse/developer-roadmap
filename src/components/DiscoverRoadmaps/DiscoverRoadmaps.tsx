@@ -3,6 +3,7 @@ import type { ListShowcaseRoadmapResponse } from '../../api/roadmap';
 import { Pagination } from '../Pagination/Pagination';
 import { SearchRoadmap } from './SearchRoadmap';
 import { EmptyDiscoverRoadmaps } from './EmptyDiscoverRoadmaps';
+import { Rating } from '../Rating/Rating';
 
 type DiscoverRoadmapsProps = {
   searchParams: string;
@@ -55,6 +56,12 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
                         }).format(roadmap.topicCount)}{' '}
                         topics
                       </span>
+
+                      <Rating
+                        rating={roadmap?.ratings?.average || 0}
+                        readOnly={true}
+                        starSize={16}
+                      />
                     </div>
                   </a>
                 </li>

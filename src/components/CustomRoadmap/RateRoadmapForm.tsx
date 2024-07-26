@@ -7,6 +7,7 @@ import { useToast } from '../../hooks/use-toast';
 import { isLoggedIn } from '../../lib/jwt';
 import { Loader2 } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import { showLoginPopup } from '../../lib/popup';
 
 type GetMyRoadmapRatingResponse = {
   id?: string;
@@ -77,13 +78,12 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
       return;
     }
 
-    toast.success('Rating successful');
-    setUserRatingId(response.id);
-    setIsLoading(false);
+    window.location.reload();
   };
 
   useEffect(() => {
     if (!isLoggedIn() || !roadmapSlug) {
+      setIsLoading(false);
       return;
     }
 
@@ -209,6 +209,11 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
           <button
             className="mt-4 flex h-10 w-full items-center justify-center rounded-full bg-black p-2.5 text-sm font-medium text-white disabled:opacity-60"
             onClick={() => {
+              if (!isLoggedIn()) {
+                showLoginPopup();
+                return;
+              }
+
               setIsRatingRoadmap(true);
             }}
             disabled={isLoading}

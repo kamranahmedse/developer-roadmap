@@ -13,6 +13,7 @@ export type ListShowcaseRoadmapResponse = {
     | 'visibility'
     | 'createdAt'
     | 'topicCount'
+    | 'ratings'
   >[];
   totalCount: number;
   totalPages: number;

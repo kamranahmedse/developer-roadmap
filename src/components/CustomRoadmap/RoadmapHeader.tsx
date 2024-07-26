@@ -28,6 +28,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     team,
     visibility,
     ratings,
+    unseenRatingCount,
   } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
@@ -156,8 +157,8 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                   className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
                 >
                   <Shapes className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  <span className="hidden sm:inline-block">Edit Roadmap</span>
-                  <span className="sm:hidden">Edit</span>
+                  <span className="hidden lg:inline-block">Edit Roadmap</span>
+                  <span className="lg:hidden">Edit</span>
                 </a>
                 <button
                   onClick={() => setIsSharing(true)}
@@ -180,13 +181,15 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                     deleteResource().finally(() => null);
                   }}
                 />
-
-                <CustomRoadmapRatings
-                  roadmapSlug={roadmapSlug!}
-                  ratings={ratings!}
-                />
               </>
             )}
+
+            <CustomRoadmapRatings
+              roadmapSlug={roadmapSlug!}
+              ratings={ratings!}
+              canManage={$canManageCurrentRoadmap}
+              unseenRatingCount={unseenRatingCount || 0}
+            />
           </div>
         </div>
 
