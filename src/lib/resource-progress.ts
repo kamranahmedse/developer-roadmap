@@ -108,6 +108,7 @@ export function clearMigratedRoadmapProgress(
     'vue',
     'javascript',
     'angular',
+    'nodejs',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
