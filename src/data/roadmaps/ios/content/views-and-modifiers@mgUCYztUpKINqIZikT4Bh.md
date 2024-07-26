@@ -4,5 +4,8 @@ SwiftUI views and modifiers form the core of UI development in the framework. Vi
 
 Learn more from the following resources:
 
-- [@official@](https://developer.apple.com/documentation/swiftui/viewmodifier)
+- [@official@Views and modifiers: Documentation](https://developer.apple.com/documentation/swiftui/viewmodifier)
+- [@official@Apple Tutorials: Views - Using stacks to arrange views](https://developer.apple.com/tutorials/app-dev-training/using-stacks-to-arrange-views)
+- [@official@Apple Tutorials: Views - Creating a card view](https://developer.apple.com/tutorials/app-dev-training/creating-a-card-view)
+- [@official@Apple Tutorials: Views - Displaying data in a list](https://developer.apple.com/tutorials/app-dev-training/displaying-data-in-a-list)
 - [@article@Views and modifiers: Introduction](https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-introduction)
