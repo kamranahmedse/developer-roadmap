@@ -1,6 +1,6 @@
 # useRef
 
-[@official@useRef](https://react.dev/reference/react/useRef) is a React hook that provides a way to create a mutable reference that persists across component re-renders. It's used to store a value that doesn't cause re-renders when it changes.
+useRef is a React hook that provides a way to create a mutable reference that persists across component re-renders. It stores a value that doesn't cause re-renders when it changes.
 
 Visit the following resources to learn more:
 - [@official@useRef](https://react.dev/reference/react/useRef)
