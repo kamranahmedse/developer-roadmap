@@ -9,5 +9,5 @@ Learn more from the following resources:
 - [@official@Apple Tutorials: State Management - Responding to events](https://developer.apple.com/tutorials/app-dev-training/responding-to-events)
 - [@official@Apple Tutorials: State Management - Managing state and life cycle](https://developer.apple.com/tutorials/app-dev-training/managing-state-and-life-cycle)
 - [@official@Apple Tutorials: State Management - Updating app data](https://developer.apple.com/tutorials/app-dev-training/updating-app-data)
-- [@article@Advanced: SwiftUI State Managment](https://medium.com/@canakyildz/advanced-swiftui-state-management-3816d804477e)
+- [@article@Advanced: SwiftUI State Management](https://medium.com/@canakyildz/advanced-swiftui-state-management-3816d804477e)
 - [@article@A Guide to Managing State in SwiftUI](https://www.waldo.com/blog/manage-swiftui-state)
