@@ -6,4 +6,5 @@ The Rate is the number of requests per second. The Errors is the number of reque
 
 The Red Method is a methodology for analyzing the performance of any system. It directs the construction of a checklist, which for server analysis can be used for quickly identifying resource bottlenecks or errors. It begins by posing questions, and then seeks answers, instead of beginning with given metrics (partial answers) and trying to work backwards.
 
-Have a look at the following article for more information on the Red Method: [USE and RED Method](https://orangematter.solarwinds.com/2017/10/05/monitoring-and-observability-with-use-and-red/).
+Learn more from the following resources:
+
