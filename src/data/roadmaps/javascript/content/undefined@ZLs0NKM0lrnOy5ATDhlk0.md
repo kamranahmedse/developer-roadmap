@@ -17,8 +17,3 @@ if (y) {
 } else {
     console.log("No value", y); // Output: No value undefined
 }
-```
-
-- [@article@undefined - MDN]((https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/undefined))
-
-- [@video@Are You Using Null And Undefined Wrong?](https://www.youtube.com/watch?v=7bpQUVK9Gn4)
