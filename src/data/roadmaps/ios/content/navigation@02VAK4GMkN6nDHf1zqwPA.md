@@ -4,5 +4,8 @@ SwiftUI navigation offers a declarative approach to managing app structure and f
 
 Learn more from the following resources:
 
+- [@official@Apple Tutorials: Navigation and modal presentation - Creating a navigation hierarchy](https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy)
+- [@official@Apple Tutorials: Navigation and modal presentation - Managing data flow between views](https://developer.apple.com/tutorials/app-dev-training/managing-data-flow-between-views)
+- [@official@Apple Tutorials: Navigation and modal presentation - Creating the edit view](https://developer.apple.com/tutorials/app-dev-training/creating-the-edit-view)
 - [@article@The complete guide to NavigationView in SwiftUI](https://www.hackingwithswift.com/articles/216/complete-guide-to-navigationview-in-swiftui)
 - [@opensource@pointfreeco/swiftui-navigation](https://github.com/pointfreeco/swiftui-navigation)
