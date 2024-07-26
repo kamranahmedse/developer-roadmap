@@ -9,10 +9,9 @@ import { type TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
 import { RoadmapActionButton } from './RoadmapActionButton';
 import { Lock, Shapes } from 'lucide-react';
-import { Modal } from '../Modal';
-import { ShareSuccess } from '../ShareOptions/ShareSuccess';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
+import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -28,10 +27,10 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     creator,
     team,
     visibility,
+    ratings,
   } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
-  const [isSharingWithOthers, setIsSharingWithOthers] = useState(false);
   const toast = useToast();
 
   async function deleteResource() {
@@ -71,23 +70,6 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   const avatarUrl = creator?.avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${creator?.avatar}`
     : '/images/default-avatar.png';
-
-  const sharingWithOthersModal = isSharingWithOthers && (
-    <Modal
-      onClose={() => setIsSharingWithOthers(false)}
-      wrapperClassName="max-w-lg"
-      bodyClassName="p-4 flex flex-col"
-    >
-      <ShareSuccess
-        visibility="public"
-        roadmapSlug={roadmapSlug}
-        roadmapId={roadmapId!}
-        description={description}
-        onClose={() => setIsSharingWithOthers(false)}
-        isSharingWithOthers={true}
-      />
-    </Modal>
-  );
 
   return (
     <div className="border-b">
@@ -171,7 +153,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                     import.meta.env.PUBLIC_EDITOR_APP_URL
                   }/${$currentRoadmap?._id}`}
                   target="_blank"
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium  text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
+                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
                 >
                   <Shapes className="mr-1.5 h-4 w-4 stroke-[2.5]" />
                   <span className="hidden sm:inline-block">Edit Roadmap</span>
@@ -198,19 +180,11 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                     deleteResource().finally(() => null);
                   }}
                 />
-              </>
-            )}
 
-            {!$canManageCurrentRoadmap && visibility === 'public' && (
-              <>
-                {sharingWithOthersModal}
-                <button
-                  onClick={() => setIsSharingWithOthers(true)}
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium  text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  Share with Others
-                </button>
+                <CustomRoadmapRatings
+                  roadmapSlug={roadmapSlug!}
+                  ratings={ratings!}
+                />
               </>
             )}
           </div>

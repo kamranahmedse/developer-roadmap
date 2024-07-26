@@ -38,8 +38,6 @@ export interface RoadmapDocument {
   visibility: AllowedRoadmapVisibility;
   sharedFriendIds?: string[];
   sharedTeamMemberIds?: string[];
-  isDiscoverable?: boolean;
-  showcaseStatus?: AllowedShowcaseStatus;
   feedbacks?: {
     userId: string;
     email: string;
@@ -51,6 +49,16 @@ export interface RoadmapDocument {
   };
   nodes: any[];
   edges: any[];
+
+  isDiscoverable?: boolean;
+  showcaseStatus?: AllowedShowcaseStatus;
+  ratings: {
+    average: number;
+    breakdown: {
+      [key: number]: number;
+    };
+  };
+
   createdAt: Date;
   updatedAt: Date;
 }

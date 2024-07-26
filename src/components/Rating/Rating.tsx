@@ -1,20 +1,29 @@
 import { useState } from 'react';
+import { cn } from '../../lib/classname';
 
 type RatingProps = {
-  ratings?: number;
+  rating?: number;
+  onRatingChange?: (rating: number) => void;
   starSize?: number;
   readOnly?: boolean;
+  className?: string;
 };
 
 export function Rating(props: RatingProps) {
-  const { ratings = 0, starSize, readOnly = false } = props;
+  const {
+    rating = 0,
+    starSize,
+    readOnly = false,
+    className,
+    onRatingChange,
+  } = props;
 
-  const [stars, setStars] = useState(Number(ratings.toFixed(2)));
+  const [stars, setStars] = useState(Number(rating.toFixed(2)));
   const starCount = Math.floor(stars);
   const decimalWidthPercentage = Math.min((stars - starCount) * 100, 100);
 
   return (
-    <div className="mt-4 flex">
+    <div className={cn('flex', className)}>
       {[1, 2, 3, 4, 5].map((counter) => {
         const isActive = counter <= starCount;
         const hasDecimal = starCount + 1 === counter;
@@ -28,6 +37,7 @@ export function Rating(props: RatingProps) {
             }
             onClick={() => {
               setStars(counter);
+              onRatingChange?.(counter);
             }}
             readOnly={readOnly}
           />
@@ -56,6 +66,7 @@ function RatingStar(props: RatingStarProps) {
         height: `${starSize}px`,
       }}
       disabled={readOnly}
+      type="button"
     >
       <span className="absolute inset-0">
         <svg
