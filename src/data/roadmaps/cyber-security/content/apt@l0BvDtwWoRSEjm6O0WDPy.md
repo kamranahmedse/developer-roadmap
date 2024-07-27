@@ -10,6 +10,16 @@ Advanced Persistent Threats, or APTs, are a class of cyber threats characterized
 
 - **Motivation**: APTs often have significant resources behind them, which allows for sustained cyber campaigns against specific targets. The motivation can be monetary gain, espionage, or even maintaining a competitive edge in the marketplace. APTs can also be used to sow chaos and destabilize geopolitical rivals.
 
+## Common APT attack techniques
+
+- Social engineering
+- Zero-day attacks
+- Supply chain attacks
+- Rootkits
+- Command and control servers
+
+Advanced Persistent Threat (APT) groups employ various tools to infiltrate and discreetly extend their reach within a network. These tools include worms, keyloggers, bots, password crackers, spyware, and techniques for obfuscating code.
+
 ## Detecting and Mitigating APTs
 
 Due to the sophisticated and persistent nature of APTs, they can be challenging to detect and protect against. However, implementing several best practices can help organizations mitigate the risk and impact of APTs:
@@ -21,3 +31,5 @@ Due to the sophisticated and persistent nature of APTs, they can be challenging 
 - Employ advanced threat intelligence solutions to identify and anticipate potential APT campaigns.
 
 APT attacks can be damaging and disruptive to organizations, but understanding the nature of these threats and implementing a comprehensive security strategy can help minimize the risk and protect valuable assets. Remember, APTs are not just a concern for large enterprises and governments; organizations of all sizes can be targeted. Staying vigilant and proactive is key to staying safe from these advanced threats.
+
+- [@article@What Are Advanced Persistent Threats? - IBM](https://www.ibm.com/topics/advanced-persistent-threats)
