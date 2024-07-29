@@ -10,6 +10,7 @@ import { LoadingRoadmaps } from '../ExploreAIRoadmap/LoadingRoadmaps';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { DiscoverRoadmapSorting } from './DiscoverRoadmapSorting';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
 type DiscoverRoadmapsProps = {};
 
@@ -103,90 +104,132 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
     setRoadmapsResponse(response);
   };
 
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
+
   const roadmaps = roadmapsResponse?.data || [];
 
   const loadingIndicator = isLoading && <LoadingRoadmaps />;
 
   return (
-    <section className="container mx-auto py-3 sm:py-6">
-      <div className="mb-3.5 flex items-stretch justify-between gap-2.5">
-        <SearchRoadmap
-          total={roadmapsResponse?.totalCount || 0}
-          value={pageState.searchTerm}
-          isLoading={isLoading}
-          onValueChange={(value) => {}}
-        />
+      <>
+          {isCreatingRoadmap && (
+              <CreateRoadmapModal
+                  onClose={() => {
+                      setIsCreatingRoadmap(false);
+                  }}
+              />
+          )}
 
-        <DiscoverRoadmapSorting
-          sortBy={pageState.sortBy}
-          onSortChange={(sortBy) => {
-            setPageState({
-              ...pageState,
-              sortBy,
-            });
-          }}
-        />
-      </div>
-
-      {loadingIndicator}
-      {roadmaps.length === 0 && !isLoading && <EmptyDiscoverRoadmaps />}
-      {roadmaps.length > 0 && !isLoading && (
-        <>
-          <ul className="mb-4 grid grid-cols-1 items-stretch gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {roadmaps.map((roadmap) => {
-              const roadmapLink = `/r/${roadmap.slug}`;
-              return (
-                <li key={roadmap._id} className="h-full">
-                  <a
-                    key={roadmap._id}
-                    href={roadmapLink}
-                    className="flex h-full flex-col rounded-md border transition-colors hover:bg-gray-100"
-                    target={'_blank'}
-                  >
-                    <div className="grow">
-                      <h2 className="mt-2.5 px-2.5 text-base font-medium leading-tight">
-                        {roadmap.title}
-                      </h2>
-                      <p className="my-2.5 px-2.5 text-sm text-gray-500">
-                        {roadmap.description}
+          <div className="border-b bg-white py-7">
+              <div className="container text-left">
+                  <div className="flex flex-col items-start bg-white">
+                      <h1 className="mb-1 text-2xl font-bold sm:text-3xl">
+                          Community Roadmaps
+                      </h1>
+                      <p className="text-base text-gray-500">
+                          Browse the roadmaps created by the community or{' '}
+                          <button
+                              onClick={() => {
+                                  setIsCreatingRoadmap(true);
+                              }}
+                              className="rounded text-blue-600 underline"
+                          >
+                              create your own roadmap
+                          </button>
                       </p>
-                    </div>
-
-                    <div className="flex items-center justify-between gap-2 px-2.5 py-2">
-                      <span className="flex items-center gap-1.5 text-xs text-gray-400">
-                        <Shapes size={15} className="inline-block" />
-                        {Intl.NumberFormat('en-US', {
-                          notation: 'compact',
-                        }).format(roadmap.topicCount)}{' '}
-                        topics
-                      </span>
-
-                      <Rating
-                        rating={roadmap?.ratings?.average || 0}
-                        readOnly={true}
-                        starSize={16}
+                  </div>
+              </div>
+          </div>
+          <div className="py-3 bg-gray-50">
+              <section className="container mx-auto py-3">
+                  <div className="mb-3.5 flex items-stretch justify-between gap-2.5">
+                      <SearchRoadmap
+                          total={roadmapsResponse?.totalCount || 0}
+                          value={pageState.searchTerm}
+                          isLoading={isLoading}
+                          onValueChange={(value) => {
+                          }}
                       />
-                    </div>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
 
-          <Pagination
-            currPage={roadmapsResponse?.currPage || 1}
-            totalPages={roadmapsResponse?.totalPages || 1}
-            perPage={roadmapsResponse?.perPage || 0}
-            totalCount={roadmapsResponse?.totalCount || 0}
-            onPageChange={(page) => {
-              setPageState({
-                ...pageState,
-                currentPage: page,
-              });
-            }}
-          />
-        </>
-      )}
-    </section>
+                      <DiscoverRoadmapSorting
+                          sortBy={pageState.sortBy}
+                          onSortChange={(sortBy) => {
+                              setPageState({
+                                  ...pageState,
+                                  sortBy,
+                              });
+                          }}
+                      />
+                  </div>
+
+                  {loadingIndicator}
+                  {roadmaps.length === 0 && !isLoading && <EmptyDiscoverRoadmaps/>}
+                  {roadmaps.length > 0 && !isLoading && (
+                      <>
+                          <ul className="mb-4 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                              {roadmaps.map((roadmap) => {
+                                  const roadmapLink = `/r/${roadmap.slug}`;
+                                  const totalRatings = Object.keys(
+                                      roadmap.ratings?.breakdown || [],
+                                  ).reduce(
+                                      (acc: number, key: string) =>
+                                          acc + roadmap.ratings.breakdown[key as any],
+                                      0,
+                                  );
+                                  return (
+                                      <li key={roadmap._id} className="h-full min-h-[175px]">
+                                          <a
+                                              key={roadmap._id}
+                                              href={roadmapLink}
+                                              className="flex h-full flex-col rounded-lg border bg-white p-3.5 transition-colors hover:border-gray-300 hover:bg-gray-50"
+                                              target={'_blank'}
+                                          >
+                                              <div className="grow">
+                                                  <h2 className="text-balance text-base font-bold leading-tight">
+                                                      {roadmap.title}
+                                                  </h2>
+                                                  <p className="mt-2 text-sm text-gray-500">
+                                                      {roadmap.description}
+                                                  </p>
+                                              </div>
+
+                                              <div className="flex items-center justify-between gap-2">
+                          <span className="flex items-center gap-1 text-xs text-gray-400">
+                            <Shapes size={15} className="inline-block"/>
+                              {Intl.NumberFormat('en-US', {
+                                  notation: 'compact',
+                              }).format(roadmap.topicCount)}{' '}
+                          </span>
+
+                                                  <Rating
+                                                      rating={roadmap?.ratings?.average || 0}
+                                                      readOnly={true}
+                                                      starSize={16}
+                                                      total={totalRatings}
+                                                  />
+                                              </div>
+                                          </a>
+                                      </li>
+                                  );
+                              })}
+                          </ul>
+
+                          <Pagination
+                              currPage={roadmapsResponse?.currPage || 1}
+                              totalPages={roadmapsResponse?.totalPages || 1}
+                              perPage={roadmapsResponse?.perPage || 0}
+                              totalCount={roadmapsResponse?.totalCount || 0}
+                              onPageChange={(page) => {
+                                  setPageState({
+                                      ...pageState,
+                                      currentPage: page,
+                                  });
+                              }}
+                          />
+                      </>
+                  )}
+              </section>
+          </div>
+      </>
   );
 }
