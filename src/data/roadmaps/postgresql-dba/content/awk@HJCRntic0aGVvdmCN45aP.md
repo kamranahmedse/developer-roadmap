@@ -5,4 +5,4 @@ Awk is a versatile text processing tool that is widely used for various data man
 Learn more from the following resources:
 
 - [@article@Awk](https://www.grymoire.com/Unix/Awk.html)
-- [@article@Awl command in Linux/Unix](https://www.digitalocean.com/community/tutorials/awk-command-linux-unix)
+- [@article@Awk command in Linux/Unix](https://www.digitalocean.com/community/tutorials/awk-command-linux-unix)
