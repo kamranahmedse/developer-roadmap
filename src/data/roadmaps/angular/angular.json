@@ -1194,7 +1194,7 @@
       "selected": false,
       "data": {
         "label": "Frontend",
-        "href": "https://roadm.sh/frontend",
+        "href": "https://roadmap.sh/frontend",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
@@ -1226,7 +1226,7 @@
       "selected": false,
       "data": {
         "label": "React",
-        "href": "https://roadm.sh/react",
+        "href": "https://roadmap.sh/react",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
@@ -6422,7 +6422,7 @@
       "selected": false,
       "data": {
         "label": "Vue.js",
-        "href": "https://roadm.sh/vue",
+        "href": "https://roadmap.sh/vue",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
