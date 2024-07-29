@@ -20,8 +20,8 @@ export function EmptyDiscoverRoadmaps() {
     <>
       {creatingRoadmapModal}
 
-      <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl border px-5 py-3 sm:px-0 sm:py-20">
-        <Wand2 className="mb-4 h-8 w-8 opacity-10 sm:h-14 sm:w-14" />
+      <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl border px-5 py-3 sm:px-0 sm:py-20 bg-white">
+        <Map className="mb-4 h-8 w-8 opacity-10 sm:h-14 sm:w-14" />
         <h2 className="mb-1 text-lg font-semibold sm:text-xl">
           No Roadmaps Found
         </h2>
@@ -41,7 +41,7 @@ export function EmptyDiscoverRoadmaps() {
           </button>
           <a
             href="/roadmaps"
-            className="flex w-full items-center gap-1.5 rounded-md bg-yellow-400 px-3 py-1.5 text-xs text-black hover:bg-yellow-500 sm:w-auto sm:text-sm"
+            className="flex w-full items-center gap-1.5 rounded-md bg-gray-300 px-3 py-1.5 text-xs text-black hover:bg-gray-400 sm:w-auto sm:text-sm"
           >
             <Map className="h-4 w-4" />
             Visit Official Roadmaps

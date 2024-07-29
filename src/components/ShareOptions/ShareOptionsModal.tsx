@@ -403,7 +403,7 @@ function DiscoveryCheckbox(props: DiscoveryCheckboxProps) {
         onChange={(e) => setIsDiscoverable(e.target.checked)}
       />
       <span className="text-sm text-gray-500 group-hover:text-gray-700">
-        Include on discovery page (when launched)
+        Include on discovery page
       </span>
     </label>
   );

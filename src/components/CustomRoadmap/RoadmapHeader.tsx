@@ -8,7 +8,7 @@ import { httpDelete, httpPut } from '../../lib/http';
 import { type TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
 import { RoadmapActionButton } from './RoadmapActionButton';
-import { Lock, Shapes } from 'lucide-react';
+import {Lock, Pencil, PenSquare, Shapes} from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
@@ -156,19 +156,13 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                   target="_blank"
                   className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
                 >
-                  <Shapes className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  <span className="hidden lg:inline-block">Edit Roadmap</span>
+                  <PenSquare className="mr-1.5 h-4 w-4 stroke-[2.5]" />
+                  <span className="hidden lg:inline-block">Edit</span>
                   <span className="lg:hidden">Edit</span>
                 </a>
-                <button
-                  onClick={() => setIsSharing(true)}
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  Sharing
-                </button>
 
                 <RoadmapActionButton
+                  onUpdateSharing={() => setIsSharing(true)}
                   onDelete={() => {
                     const confirmation = window.confirm(
                       'Are you sure you want to delete this roadmap?',

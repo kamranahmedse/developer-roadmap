@@ -11,6 +11,7 @@ import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { DiscoverRoadmapSorting } from './DiscoverRoadmapSorting';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
+import { Tooltip } from '../Tooltip.tsx';
 
 type DiscoverRoadmapsProps = {};
 
@@ -120,23 +121,53 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
         />
       )}
 
-      <div className="border-b bg-white py-7">
+      <div className="border-b bg-white pt-10 pb-7">
         <div className="container text-left">
           <div className="flex flex-col items-start bg-white">
-            <h1 className="mb-1 text-2xl font-bold sm:text-3xl">
+            <h1 className="mb-1 text-2xl font-bold sm:text-4xl">
               Community Roadmaps
             </h1>
-            <p className="text-base text-gray-500">
-              Browse the roadmaps created by the community or{' '}
-              <button
-                onClick={() => {
-                  setIsCreatingRoadmap(true);
-                }}
-                className="rounded text-blue-600 underline"
-              >
-                create your own roadmap
-              </button>
+            <p className="mb-3 text-base text-gray-500">
+              An unvetted, selected list of community-curated roadmaps
             </p>
+            <div className="relative">
+              <div className="flex items-center gap-1.5">
+                <span className="group relative normal-case">
+                  <Tooltip
+                    position={'bottom-left'}
+                    additionalClass={
+                      'translate-y-0.5 bg-yellow-300 font-normal !text-black'
+                    }
+                  >
+                    Ask us to feature it once you're done!
+                  </Tooltip>
+                  <button
+                    className="rounded-md bg-black px-3.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-black"
+                    onClick={() => {
+                      setIsCreatingRoadmap(true);
+                    }}
+                  >
+                    Create your own roadmap
+                  </button>
+                </span>
+                <span className="group relative normal-case">
+                  <Tooltip
+                    position={'bottom-left'}
+                    additionalClass={
+                      'translate-y-0.5 bg-yellow-300 font-normal !text-black'
+                    }
+                  >
+                    Up-to-date and maintained by the official team
+                  </Tooltip>
+                  <a
+                    href="/roadmaps"
+                    className="block rounded-md border border-gray-300 bg-gray-50 px-3.5 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+                  >
+                    Visit our official roadmaps
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

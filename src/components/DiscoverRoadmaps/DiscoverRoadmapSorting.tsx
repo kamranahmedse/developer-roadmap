@@ -45,7 +45,7 @@ export function DiscoverRoadmapSorting(props: DiscoverRoadmapSortingProps) {
       ref={dropdownRef}
     >
       <button
-        className="py-15 flex w-full items-center justify-between gap-2 rounded-md border px-2 text-sm"
+        className="py-15 flex w-full items-center justify-between gap-2 rounded-md border px-2 text-sm bg-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{selectedValue?.label}</span>
