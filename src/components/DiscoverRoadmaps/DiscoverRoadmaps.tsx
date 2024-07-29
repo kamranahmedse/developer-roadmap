@@ -91,7 +91,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-list-showcase-roadmap`,
       {
         currPage,
-        ...(searchTerm && { term: searchTerm }),
+        ...(searchTerm && { searchTerm }),
         ...(sortBy && { sortBy }),
       },
     );
