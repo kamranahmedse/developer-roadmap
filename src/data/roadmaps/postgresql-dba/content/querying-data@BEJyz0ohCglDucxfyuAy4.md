@@ -4,3 +4,7 @@ Querying data with Data Manipulation Language (DML) in PostgreSQL involves using
 
 Learn more from the following resources:
 
+- [@official@SELECT](https://www.postgresql.org/docs/current/sql-select.html)
+- [@official@INSERT](https://www.postgresql.org/docs/current/sql-insert.html)
+- [@official@UPDATE](https://www.postgresql.org/docs/current/sql-update.html)
+- [@official@DELETE](https://www.postgresql.org/docs/current/sql-delete.html)

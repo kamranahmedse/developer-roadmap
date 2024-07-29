@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@official@pg_state_activity](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ACTIVITY-VIEW)
+- [@article@Understanding pg_stat_activity](https://www.depesz.com/2022/07/05/understanding-pg_stat_activity/)

@@ -4,3 +4,6 @@ In PostgreSQL, functions and procedures encapsulate reusable logic within the da
 
 Learn more from the following resources:
 
+- [@official@CREATE PROCEDURE](https://www.postgresql.org/docs/current/sql-createprocedure.html)
+- [@official@CREATE FUNCTION](https://www.postgresql.org/docs/current/sql-createfunction.html)
+- [@article@PostgreSQL CREATE PROCEDURE](https://www.postgresqltutorial.com/postgresql-plpgsql/postgresql-create-procedure/)

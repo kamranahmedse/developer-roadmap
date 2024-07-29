@@ -6,3 +6,5 @@ There are various types of lock modes available, such as `AccessShareLock`, `Row
 
 Learn more from the following resources:
 
+- [@official@Lock Management](https://www.postgresql.org/docs/current/runtime-config-locks.html)
+- [@article@Understanding Postgres Locks and Managing Concurrent Transactions](https://medium.com/@sonishubham65/understanding-postgres-locks-and-managing-concurrent-transactions-1ededce53d59)

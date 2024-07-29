@@ -4,3 +4,5 @@ Sysstat is a collection of performance monitoring tools for Linux. It collects v
 
 Learn more from the following resources:
 
+- [@opensource@sysstat/sysstat](https://github.com/sysstat/sysstat)
+- [@article@Sysstat – All-in-One System Performance and Usage Activity Monitoring Tool For Linux](https://www.tecmint.com/install-sysstat-in-linux/)

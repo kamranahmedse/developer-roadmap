@@ -4,3 +4,5 @@ PgCluu is a powerful and easy-to-use PostgreSQL performance monitoring and tunin
 
 Learn more from the following resources:
 
+- [@official@pgCluu Website](https://pgcluu.darold.net/)
+- [@opensource@darold/pgcluu](https://github.com/darold/pgcluu)

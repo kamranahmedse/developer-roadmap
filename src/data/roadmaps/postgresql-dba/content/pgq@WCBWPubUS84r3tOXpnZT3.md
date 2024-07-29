@@ -4,5 +4,4 @@ Skytools is a set of tools developed by Skype to assist with using PostgreSQL da
 
 Learn more from the following resources:
 
-
 - [@opensource@PgQ — Generic Queue for PostgreSQL](https://github.com/pgq)

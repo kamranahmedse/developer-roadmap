@@ -4,3 +4,5 @@ Practical patterns for PostgreSQL migrations include using version control tools
 
 Learn more from the following resources:
 
+- [@official@Liquibase Website](https://www.liquibase.com/)
+- [@official@Flyway Website](https://flywaydb.org/)

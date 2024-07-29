@@ -4,3 +4,5 @@ When working with PostgreSQL, it is often useful to analyze the performance of y
 
 Learn more from the following resources:
 
+- [@official@Error reporting and logging](https://www.postgresql.org/docs/current/runtime-config-logging.html)
+- [@article@PostgreSQL Logging: Everything You Need to Know](https://betterstack.com/community/guides/logging/how-to-start-logging-with-postgresql/)

@@ -4,3 +4,5 @@ Online Analytical Processing (OLAP) in PostgreSQL refers to a class of systems d
 
 Learn more from the following resources:
 
+- [@article@Transforming Postgres into a Fast OLAP Database](https://blog.paradedb.com/pages/introducing_analytics)
+- [@video@Online Analytical Processing](https://www.youtube.com/watch?v=NuVAgAgemGI)

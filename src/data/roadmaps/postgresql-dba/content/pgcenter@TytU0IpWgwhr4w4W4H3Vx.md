@@ -4,3 +4,4 @@
 
 Learn more from the following resources:
 
+- [@opensource@lesovsky/pgcenter](https://github.com/lesovsky/pgcenter)

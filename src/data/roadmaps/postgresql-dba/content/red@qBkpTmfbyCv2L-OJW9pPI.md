@@ -8,3 +8,5 @@ The Red Method is a methodology for analyzing the performance of any system. It 
 
 Learn more from the following resources:
 
+- [@article@The RED Method: A New Approach to Monitoring Microservices](https://thenewstack.io/monitoring-microservices-red-method)
+- [@article@PostgreSQL, RED, Golden Signals](https://dataegret.com/2020/10/postgresql-red-golden-signals-getting-started/)

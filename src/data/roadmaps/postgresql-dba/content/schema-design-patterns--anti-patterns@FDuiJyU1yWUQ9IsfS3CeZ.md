@@ -4,3 +4,5 @@ Schema design patterns in PostgreSQL ensure efficient and scalable databases by 
 
 Learn more from the following resources:
 
+- [@article@How to Design Your PostgreSQL Database: Two Schema Examples](https://www.timescale.com/learn/how-to-design-postgresql-database-two-schema-examples)
+- [@video@What is STAR schema | Star vs Snowflake Schema](https://www.youtube.com/watch?v=hQvCOBv_-LE)

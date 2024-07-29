@@ -4,3 +4,5 @@ Practical patterns for implementing queues in PostgreSQL include using a dedicat
 
 Learn more from the following resources:
 
+- [@article@Postgres as Queue](https://leontrolski.github.io/postgres-as-queue.html)
+- [@video@Can PostgreSQL Replace Your Messaging Queue?](https://www.youtube.com/watch?v=IDb2rKhzzt8)

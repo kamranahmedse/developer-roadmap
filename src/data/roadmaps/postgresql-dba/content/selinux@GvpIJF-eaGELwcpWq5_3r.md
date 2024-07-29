@@ -4,3 +4,5 @@ SELinux, or Security-Enhanced Linux, is a Linux kernel security module that brin
 
 Learn more from the following resources:
 
+- [@article@What is SELinux?](https://www.redhat.com/en/topics/linux/what-is-selinux)
+- [@article@Introduction to SELinux](https://github.blog/developer-skills/programming-languages-and-frameworks/introduction-to-selinux/)

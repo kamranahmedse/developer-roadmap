@@ -4,3 +4,5 @@ Lateral join allows you to reference columns from preceding tables in a query, m
 
 Learn more from the following resources:
 
+- [@official@LATERAL Subqueries](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-LATERAL)
+- [@article@How to use lateral join in PostgreSQL](https://popsql.com/learn-sql/postgresql/how-to-use-lateral-joins-in-postgresql)

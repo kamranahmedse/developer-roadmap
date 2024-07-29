@@ -4,3 +4,5 @@ Online Transaction Processing (OLTP) in PostgreSQL refers to a class of systems 
 
 Learn more from the following resources:
 
+- [@video@OLTP vs OLAP](https://www.youtube.com/watch?v=iw-5kFzIdgY)
+- [@article@What is OLTP?](https://www.oracle.com/uk/database/what-is-oltp/)

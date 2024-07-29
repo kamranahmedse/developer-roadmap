@@ -4,3 +4,6 @@ In PostgreSQL, roles are entities that manage database access permissions, combi
 
 Learn more from the following resources:
 
+- [@video@For Your Eyes Only: Roles, Privileges, and Security in PostgreSQL](https://www.youtube.com/watch?v=mtPM3iZFE04)
+- [@official@Database Roles](https://www.postgresql.org/docs/current/user-manag.html)
+- [@official@Predefined Roles](https://www.postgresql.org/docs/current/predefined-roles.html)

@@ -4,3 +4,5 @@ Salt (SaltStack) is an open-source configuration management, remote execution, a
 
 Learn more from the following resources:
 
+- [@official@Saltstack Website](https://saltproject.io/index.html)
+- [@opensource@saltstack/salt](https://github.com/saltstack/salt)

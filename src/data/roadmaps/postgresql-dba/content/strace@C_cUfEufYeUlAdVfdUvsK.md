@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@article@strace man page](https://man7.org/linux/man-pages/man1/strace.1.html)
+- [@article@Understand system calls with strace](https://opensource.com/article/19/10/strace)

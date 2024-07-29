@@ -4,3 +4,5 @@ Transactions are a fundamental concept in database management systems, allowing 
 
 Learn more from the following resources:
 
+- [@official@Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
+- [@video@How to implement transactions](https://www.youtube.com/watch?v=DvJq4L41ru0)

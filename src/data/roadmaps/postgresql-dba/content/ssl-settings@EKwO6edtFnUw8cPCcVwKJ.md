@@ -4,3 +4,6 @@ Securing the communication channels is a crucial aspect of protecting your Postg
 
 Learn more from the following resources:
 
+- [@official@SSL Support](https://www.postgresql.org/docs/current/libpq-ssl.html)
+- [@article@How to Configure SSL on PostgreSQL](https://www.cherryservers.com/blog/how-to-configure-ssl-on-postgresql)
+- [@video@How to use SSL in PostgreSQL The Right Way](https://www.youtube.com/watch?v=Y1lsbF9NWW0)

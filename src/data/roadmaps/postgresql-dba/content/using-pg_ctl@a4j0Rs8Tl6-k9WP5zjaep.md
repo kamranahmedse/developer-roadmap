@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@official@pg_ctl](https://www.postgresql.org/docs/current/app-pg-ctl.html)
+- [@article@pg_ctl Tips and Tricks](https://pgdash.io/blog/pgctl-tips-tricks.html)

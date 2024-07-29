@@ -4,3 +4,5 @@ Shell scripts are a powerful tool used to automate repetitive tasks and perform 
 
 Learn more from the following resources:
 
+- [@article@Shell scripting tutorial](https://www.tutorialspoint.com/unix/shell_scripting.htm)
+- [@video@Shell Scripting for Beginners](https://www.youtube.com/watch?v=cQepf9fY6cE&list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_)

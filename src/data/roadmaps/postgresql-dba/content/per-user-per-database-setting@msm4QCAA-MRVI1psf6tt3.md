@@ -6,3 +6,5 @@ These commands store the settings in the system catalog and apply them whenever 
 
 Learn more from the following resources:
 
+- [@official@ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html)
+- [@official@ALTER DATABASE](https://www.postgresql.org/docs/current/sql-alterdatabase.html)

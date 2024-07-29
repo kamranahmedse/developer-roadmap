@@ -4,3 +4,5 @@ In this section, we will discuss the concept of query processing in PostgreSQL. 
 
 Learn more from the following resources:
 
+- [@article@Query Processing in PostgreSQL](https://medium.com/agedb/query-processing-in-postgresql-1309fa93f69f)
+- [@course@Understand PostgreSQL query processing - Microsoft](https://learn.microsoft.com/en-us/training/modules/understand-postgresql-query-process/)

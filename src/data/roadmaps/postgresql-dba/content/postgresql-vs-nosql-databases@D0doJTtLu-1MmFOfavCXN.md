@@ -4,3 +4,5 @@ PostgreSQL, a powerful open-source relational database system, excels in handlin
 
 Learn more from the following resources:
 
+- [@article@What’s the Difference Between MongoDB and PostgreSQL?](https://aws.amazon.com/compare/the-difference-between-mongodb-and-postgresql/)
+- [@article@MongoDB vs PostgreSQL: 15 Critical Differences](https://kinsta.com/blog/mongodb-vs-postgresql/)

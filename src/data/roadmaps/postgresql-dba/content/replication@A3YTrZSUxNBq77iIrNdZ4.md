@@ -4,3 +4,5 @@ Replication, in simple terms, is the process of copying data from one database s
 
 Learn more from the following resources:
 
+- [@official@Replication](https://www.postgresql.org/docs/current/runtime-config-replication.html)
+- [@article@PostgreSQL Replication](https://kinsta.com/blog/postgresql-replication/)

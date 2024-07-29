@@ -4,3 +4,5 @@ Sed is a powerful command-line utility for text processing and manipulation in U
 
 Learn more from the following resources:
 
+- [@article@sed, a stream editor](https://www.gnu.org/software/sed/manual/sed.html)
+- [@article@How to use the sed command on Linux](https://www.howtogeek.com/666395/how-to-use-the-sed-command-on-linux/)

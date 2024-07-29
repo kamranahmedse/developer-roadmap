@@ -4,3 +4,5 @@ Docker is an excellent tool for simplifying the installation and management of a
 
 Learn more from the following resources:
 
+- [@video@How to Set Up a PostgreSQL Database with Docker](https://www.youtube.com/watch?v=RdPYA-wDhTA)
+- [@article@How to Use the Postgres Docker Official Image](https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)

@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@official@pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html)
+- [@article@Using pg_stat_statements to Optimize Queries](https://www.timescale.com/blog/using-pg-stat-statements-to-optimize-queries/)

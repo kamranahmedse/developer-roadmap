@@ -4,3 +4,5 @@ Perf tools is a suite of performance analysis tools that comes as part of the Li
 
 Learn more from the following resources:
 
+- [@article@Profiling with Linux perf tool](https://mariadb.com/kb/en/profiling-with-linux-perf-tool/)
+- [@official@perf: Linux profiling with performance counters ](https://perf.wiki.kernel.org/index.php/Main_Page)

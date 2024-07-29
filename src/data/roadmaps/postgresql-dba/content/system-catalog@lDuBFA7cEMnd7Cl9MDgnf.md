@@ -4,3 +4,5 @@ The PostgreSQL system catalog is a set of tables and views that store metadata a
 
 Learn more from the following resources:
 
+- [@official@System Catalogs](https://www.postgresql.org/docs/current/catalogs.html)
+- [@article@Exploring the PostgreSQL System Catalogs](https://www.openlogic.com/blog/postgresql-system-catalog-overview)

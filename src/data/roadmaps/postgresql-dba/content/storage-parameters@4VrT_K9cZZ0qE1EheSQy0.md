@@ -4,3 +4,6 @@ Storage parameters help optimize the database's performance by allowing you to c
 
 Learn more from the following resources:
 
+- [@official@ALTER INDEX](https://www.postgresql.org/docs/current/sql-alterindex.html)
+- [@article@PostgreSQL Storage Parameters](https://pgpedia.info/s/storage-parameters.html)
+- [@article@SQL ALTER TABLE Statement](https://www.w3schools.com/sql/sql_alter.asp)

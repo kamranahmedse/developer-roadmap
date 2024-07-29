@@ -9,3 +9,6 @@ Vacuuming is an essential component in PostgreSQL maintenance tasks. By reclaimi
 
 Learn more from the following resources:
 
+- [@official@VACUUM](https://www.postgresql.org/docs/current/sql-vacuum.html)
+- [@official@Routine Vacuuming](https://www.postgresql.org/docs/current/routine-vacuuming.html)
+- [@article@PostgreSQL Vacuuming Command to Optimize Database Performance](https://www.percona.com/blog/postgresql-vacuuming-to-optimize-database-performance-and-reclaim-space/)

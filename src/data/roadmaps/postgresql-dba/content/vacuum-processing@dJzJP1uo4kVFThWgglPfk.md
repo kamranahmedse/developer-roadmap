@@ -4,3 +4,5 @@ Vacuum processing is an essential aspect of maintaining the performance and stab
 
 Learn more from the following resources:
 
+- [@article@PostgreSQL VACUUM Guide and Best Practices](https://www.enterprisedb.com/blog/postgresql-vacuum-and-analyze-best-practice-tips)
+- [@article@How to run VACUUM ANALYZE explicitly?](https://medium.com/@dmitry.romanoff/postgresql-how-to-run-vacuum-analyze-explicitly-5879ec39da47)

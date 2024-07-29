@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@official@PL/pgSQL — SQL Procedural Language](https://www.postgresql.org/docs/current/plpgsql.html)
+- [@article@PostgreSQL PL/pgSQL](https://www.postgresqltutorial.com/postgresql-plpgsql/)

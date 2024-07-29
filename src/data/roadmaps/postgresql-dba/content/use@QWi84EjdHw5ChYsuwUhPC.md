@@ -4,3 +4,6 @@ The Utilization Saturation and Errors (USE) Method is a methodology for analyzin
 
 Learn more from the following resources:
 
+- [@article@The USE Method](https://www.brendangregg.com/usemethod.html)
+- [@article@Making the USE method of monitoring useful](https://www.infoworld.com/article/2270621/making-the-use-method-of-monitoring-useful.html)
+- [@article@Adopting monitoring frameworks - RED and USE ](https://lantern.splunk.com/Observability/Product_Tips/Observability_Cloud/Adopting_monitoring_frameworks_-_RED_and_USE)

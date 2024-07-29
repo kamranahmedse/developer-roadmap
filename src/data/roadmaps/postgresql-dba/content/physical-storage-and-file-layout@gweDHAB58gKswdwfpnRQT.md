@@ -4,3 +4,5 @@ PostgreSQL's physical storage and file layout optimize data management and perfo
 
 Learn more from the following resources:
 
+- [@article@What is $PGDATA in PostgreSQL?](https://stackoverflow.com/questions/26851709/what-is-pgdata-in-postgresql)
+- [@official@TOAST](https://www.postgresql.org/docs/current/storage-toast.html)

@@ -4,3 +4,4 @@ When securing your PostgreSQL database, one of the most important components to 
 
 Learn more from the following resources:
 
+- [@official@The pg_hba.conf file](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html)

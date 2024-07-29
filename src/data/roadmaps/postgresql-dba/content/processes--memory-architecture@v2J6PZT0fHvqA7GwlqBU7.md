@@ -9,3 +9,5 @@ PostgreSQL’s process memory architecture is designed to efficiently manage res
 
 Learn more from the following resources:
 
+- [@article@Understanding PostgreSQL Shared Memory](https://stackoverflow.com/questions/32930787/understanding-postgresql-shared-memory)
+- [@article@Understanding The Process and Memory Architecture of PostgreSQL](https://dev.to/titoausten/understanding-the-process-and-memory-architecture-of-postgresql-5hhp)

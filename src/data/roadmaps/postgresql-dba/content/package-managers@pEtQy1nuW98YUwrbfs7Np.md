@@ -4,3 +4,6 @@ Package managers are essential tools that help you install, update, and manage s
 
 Learn more from the following resources:
 
+- [@article@Install PostgreSQL with APT](https://www.postgresql.org/download/linux/ubuntu/)
+- [@article@Install PostgreSQL with YUM & DNF](https://www.postgresql.org/download/linux/redhat/)
+- [@article@Install PostgreSQL with Homebrew](https://wiki.postgresql.org/wiki/Homebrew)
