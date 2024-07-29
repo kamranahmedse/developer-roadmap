@@ -5,5 +5,6 @@ This is particularly useful when many components need to access the same data or
 
 Visit the following resources to learn more:
 
--[@official@Using the useContext](https://react.dev/reference/react/useContext)
--[@official@Understand the concept of context](https://react.dev/learn/passing-data-deeply-with-context)
+- [@official@Using useContext](https://react.dev/reference/react/useContext)
+- [@official@Explore the concept of context](https://react.dev/learn/passing-data-deeply-with-context)
+- [@video@Learn useContext In 13 Minutes](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
