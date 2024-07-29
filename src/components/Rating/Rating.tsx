@@ -7,6 +7,7 @@ type RatingProps = {
   starSize?: number;
   readOnly?: boolean;
   className?: string;
+  total?: number;
 };
 
 export function Rating(props: RatingProps) {
@@ -21,6 +22,10 @@ export function Rating(props: RatingProps) {
   const [stars, setStars] = useState(Number(rating.toFixed(2)));
   const starCount = Math.floor(stars);
   const decimalWidthPercentage = Math.min((stars - starCount) * 100, 100);
+
+  if (readOnly && starCount === 0) {
+    return <span className="text-xs text-gray-400">No ratings yet</span>;
+  }
 
   return (
     <div className={cn('flex', className)}>
@@ -43,6 +48,11 @@ export function Rating(props: RatingProps) {
           />
         );
       })}
+      {props.total && (
+        <span className="ml-1.5 text-xs text-gray-400">
+          ({Intl.NumberFormat('en-US').format(props.total)})
+        </span>
+      )}
     </div>
   );
 }
