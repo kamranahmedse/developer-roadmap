@@ -1,66 +1,9 @@
 # PostgreSQL Roles
 
-PostgreSQL utilizes *roles* as a flexible method for managing user authentication, access control, and permissions within a database. In this section, we will discuss the various aspects of roles and their significance in PostgreSQL security.
+In PostgreSQL, roles are entities that manage database access permissions, combining user and group functionalities. Roles can own database objects and have privileges, such as the ability to create databases or tables. A role can be configured with login capabilities (login role), or it can be used purely for privilege management (group role). Roles can inherit permissions from other roles, simplifying the management of complex permission hierarchies. Key role attributes include `SUPERUSER` (full access), `CREATEDB` (ability to create databases), `CREATEROLE` (ability to create and manage other roles), and `REPLICATION` (replication-related privileges). Roles are created and managed using SQL commands such as `CREATE ROLE`, `ALTER ROLE`, and `DROP ROLE`.
 
-## What are roles?
+Learn more from the following resources:
 
-A role in PostgreSQL represents a user or a group of users, depending on the context. Roles can be used to control which actions a user can perform on a specific database object. There are two types of roles: login roles and group roles. A login role can be assigned to a user who needs to access the database, while a group role can be assigned to multiple users for easier control over access and permissions.
-
-## Creating Roles
-
-To create a new role, you can use the `CREATE ROLE` command followed by the role name. For example:
-
-```sql
-CREATE ROLE new_role;
-```
-
-To create a role with login capabilities, you can use the `LOGIN` clause:
-
-```sql
-CREATE ROLE user_role WITH LOGIN;
-```
-
-## Role Attributes
-
-Roles can be assigned various attributes to control their behavior and privileges within the PostgreSQL environment. Some common role attributes include:
-
-- `LOGIN`: Allows the role to log in and establish a new database session.
-- `SUPERUSER`: Grants all privileges to the role, including overriding access restrictions.
-- `CREATEDB`: Allows the role to create new databases.
-- `CREATEROLE`: Allows the role to create and manage other roles.
-
-You can also specify multiple attributes for a role when using the `CREATE ROLE` command:
-
-```sql
-CREATE ROLE admin_role WITH LOGIN CREATEDB CREATEROLE;
-```
-
-## Altering and Dropping Roles
-
-To modify an existing role, you can use the `ALTER ROLE` command, followed by the role name and the attributes you wish to change. For example:
-
-```sql
-ALTER ROLE user_role WITH CREATEDB;
-```
-
-To remove a role from the PostgreSQL environment, you can use the `DROP ROLE` command:
-
-```sql
-DROP ROLE unwanted_role;
-```
-
-## Role Membership
-
-Roles can be members of other roles, inheriting the attributes and privileges of the parent role. This mechanism makes it easier to manage access and permissions for groups of users. To grant membership to a role, you can use the `GRANT` command:
-
-```sql
-GRANT parent_role TO member_role;
-```
-
-To remove role membership, you can use the `REVOKE` command:
-
-```sql
-REVOKE parent_role FROM member_role;
-```
-
-In conclusion, roles are a crucial concept in PostgreSQL security that enables efficient management of user access and permissions within a database. By understanding how to create, modify, and manage roles in PostgreSQL, you can ensure a secure and well-organized database environment.
+- [@video@For Your Eyes Only: Roles, Privileges, and Security in PostgreSQL](https://www.youtube.com/watch?v=mtPM3iZFE04)
+- [@official@Database Roles](https://www.postgresql.org/docs/current/user-manag.html)
+- [@official@Predefined Roles](https://www.postgresql.org/docs/current/predefined-roles.html)
