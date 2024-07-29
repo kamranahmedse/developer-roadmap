@@ -7,6 +7,4 @@ Type assertions in Golang provide access to the exact type of variable of an int
 Visit the following resources to learn more:
 
 - [@official@Types Assertions ](https://go.dev/tour/methods/15)
-- [@article@Data Types in Go ](https://geeksforgeeks.org/data-types-in-go/)
 - [@video@Go Syntax - Type Assertions ](https://youtube.com/watch?v=vtGbi9bGr3s)
-
