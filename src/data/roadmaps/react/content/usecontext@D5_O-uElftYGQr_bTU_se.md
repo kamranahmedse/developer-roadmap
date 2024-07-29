@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 
 - [@official@Using useContext](https://react.dev/reference/react/useContext)
 - [@official@Explore the concept of context](https://react.dev/learn/passing-data-deeply-with-context)
-- [@video@WebDevSimplified](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
+- [@video@Learn useContext In 13 Minutes](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
