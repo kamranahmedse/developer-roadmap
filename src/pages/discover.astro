@@ -1,27 +1,8 @@
 ---
-import { roadmapApi } from '../api/roadmap';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { DiscoverRoadmaps } from '../components/DiscoverRoadmaps/DiscoverRoadmaps';
-import { DiscoverError } from '../components/DiscoverRoadmaps/DiscoverError';
-
-export const prerender = false;
-
-const roadmapApiClient = roadmapApi(Astro);
-
-const { error, response: roadmaps } =
-  await roadmapApiClient.listShowcaseRoadmap();
-const searchParams = Astro.url.searchParams.toString();
 ---
 
 <BaseLayout title='Discover Custom Roadmaps'>
-  {error && <DiscoverError message={error.message} />}
-  {
-    roadmaps && (
-      <DiscoverRoadmaps
-        roadmapsResponse={roadmaps}
-        searchParams={searchParams}
-        client:load
-      />
-    )
-  }
+  <DiscoverRoadmaps client:load />
 </BaseLayout>
