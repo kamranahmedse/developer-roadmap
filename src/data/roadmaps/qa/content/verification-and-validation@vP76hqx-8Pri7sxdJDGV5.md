@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Differences Between Verification and Validation](https://www.guru99.com/verification-v-s-validation-in-a-software-testing.html)
 - [@article@Design Verification & Validation Process](https://www.guru99.com/design-verification-process.html)
+- [@article@DVerification and Validation in Software Engineering](https://www.geeksforgeeks.org/software-engineering-verification-and-validation/)
