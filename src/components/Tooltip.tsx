@@ -3,6 +3,7 @@ import { clsx } from 'clsx';
 
 type TooltipProps = {
   children: ReactNode;
+  additionalClass?: string;
   position?:
     | 'right-center'
     | 'right-top'
@@ -19,7 +20,7 @@ type TooltipProps = {
 };
 
 export function Tooltip(props: TooltipProps) {
-  const { children, position = 'right-center' } = props;
+  const { children, additionalClass = '', position = 'right-center' } = props;
 
   let positionClass = '';
   if (position === 'right-center') {
@@ -52,7 +53,8 @@ export function Tooltip(props: TooltipProps) {
     <span
       className={clsx(
         'pointer-events-none absolute z-10 block w-max transform rounded-md bg-gray-900 px-2 py-1 text-sm font-medium text-white opacity-0 shadow-sm duration-100 group-hover:opacity-100',
-        positionClass
+        positionClass,
+        additionalClass,
       )}
     >
       {children}

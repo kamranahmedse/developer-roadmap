@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import { Lock, MoreVertical, Shapes, Trash2 } from 'lucide-react';
+import { Lock, MoreVertical, PenSquare, Shapes, Trash2 } from 'lucide-react';
 
 type RoadmapActionButtonProps = {
   onDelete?: () => void;
@@ -32,9 +32,23 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-0 top-full mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md z-[9999]"
+          className="align-right absolute right-0 top-full z-[9999] mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
         >
           <ul>
+            {onCustomize && (
+              <li>
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    onCustomize();
+                  }}
+                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                >
+                  <PenSquare size={14} className="mr-2" />
+                  Edit
+                </button>
+              </li>
+            )}
             {onUpdateSharing && (
               <li>
                 <button
@@ -46,20 +60,6 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
                 >
                   <Lock size={14} className="mr-2" />
                   Sharing
-                </button>
-              </li>
-            )}
-            {onCustomize && (
-              <li>
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    onCustomize();
-                  }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
-                >
-                  <Shapes size={14} className="mr-2" />
-                  Customize
                 </button>
               </li>
             )}
