@@ -107,7 +107,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
     <div className="flex flex-col gap-3">
       {showRatingsBreakdown && !isRatingRoadmap && (
         <>
-          <ul className="mt-4 flex flex-col gap-1 rounded-lg bg-white p-5">
+          <ul className="flex flex-col gap-1 rounded-lg bg-white p-5">
             {ratingsKeys.map((rating) => {
               const percentage =
                 totalRatings <= 0
@@ -134,7 +134,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
                   </div>
 
                   <span className="w-[35px] shrink-0 text-xs text-gray-500">
-                    {percentage}%
+                    {parseInt(`${percentage}`, 10)}%
                   </span>
                 </li>
               );

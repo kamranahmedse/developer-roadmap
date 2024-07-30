@@ -21,7 +21,10 @@ export function CustomRoadmapRatingsModal(
 ) {
   const { onClose, ratings, roadmapSlug, canManage = false } = props;
 
-  const [activeTab, setActiveTab] = useState<ActiveTab>('ratings');
+  const [activeTab, setActiveTab] = useState<ActiveTab>(
+    canManage ? 'feedback' : 'ratings',
+  );
+
   const tabs: {
     id: ActiveTab;
     label: string;
@@ -38,36 +41,38 @@ export function CustomRoadmapRatingsModal(
 
   return (
     <Modal onClose={onClose} bodyClassName="bg-transparent shadow-none">
-      {canManage && (
-        <div className="-mx-4 mb-4 flex items-center gap-4 border-b px-4">
-          {tabs.map((tab) => {
-            const isActive = tab.id === activeTab;
+      {/*{canManage && (*/}
+      {/*  <div className="mb-1 flex items-center gap-1">*/}
+      {/*    {tabs.map((tab) => {*/}
+      {/*      const isActive = tab.id === activeTab;*/}
 
-            return (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  setActiveTab(tab.id);
-                }}
-                className={cn(
-                  'py-2 text-sm',
-                  isActive
-                    ? 'border-b-2 border-black font-medium'
-                    : 'text-gray-500 hover:text-gray-700',
-                )}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      {/*      return (*/}
+      {/*        <button*/}
+      {/*          key={tab.id}*/}
+      {/*          onClick={() => {*/}
+      {/*            setActiveTab(tab.id);*/}
+      {/*          }}*/}
+      {/*          className={cn('rounded-md bg-white px-3 py-2 text-sm', {*/}
+      {/*            'bg-gray-100 font-medium text-black': isActive,*/}
+      {/*            'text-gray-500 hover:text-gray-700': !isActive,*/}
+      {/*          })}*/}
+      {/*        >*/}
+      {/*          {tab.label}*/}
+      {/*        </button>*/}
+      {/*      );*/}
+      {/*    })}*/}
+      {/*  </div>*/}
+      {/*)}*/}
 
       {activeTab === 'ratings' && (
-        <RateRoadmapForm ratings={ratings} roadmapSlug={roadmapSlug} canManage={canManage} />
+        <RateRoadmapForm
+          ratings={ratings}
+          roadmapSlug={roadmapSlug}
+          canManage={canManage}
+        />
       )}
       {activeTab === 'feedback' && (
-        <ListRoadmapRatings roadmapSlug={roadmapSlug} />
+        <ListRoadmapRatings ratings={ratings} roadmapSlug={roadmapSlug} />
       )}
     </Modal>
   );
