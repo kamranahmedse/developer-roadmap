@@ -9,4 +9,4 @@ Visit the following resources to learn more:
 - [@video@Angular state management with NgRx](https://www.youtube.com/watch?v=a3_GW3RBqn0)
 - [@video@Angular NgRx Signal Store Crash Course (For NgRx Beginners)](https://www.youtube.com/watch?v=HqxY0JPlh54)
 - [@video@NgRx Best Practices](https://www.youtube.com/watch?v=yYiO-kjmLAc&list=PLu062eICIOdFRYWaf8deRTe09ROGjg1JO&index=1)
-- [@video@https://www.youtube.com/watch?v=vcfZ0EQpYTA](https://www.youtube.com/watch?v=vcfZ0EQpYTA)
+- [@video@Angular Course with NgRx - Building Angular Project From Scratch](https://www.youtube.com/watch?v=vcfZ0EQpYTA)
