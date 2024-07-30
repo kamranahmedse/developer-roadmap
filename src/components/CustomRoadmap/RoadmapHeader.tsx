@@ -8,7 +8,6 @@ import { httpDelete, httpPut } from '../../lib/http';
 import { type TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
 import { RoadmapActionButton } from './RoadmapActionButton';
-import { Lock, Pencil, PenSquare, Shapes } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
@@ -29,6 +28,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     visibility,
     ratings,
     unseenRatingCount,
+    showcaseStatus,
   } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
@@ -172,12 +172,14 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               </>
             )}
 
-            <CustomRoadmapRatings
-              roadmapSlug={roadmapSlug!}
-              ratings={ratings!}
-              canManage={$canManageCurrentRoadmap}
-              unseenRatingCount={unseenRatingCount || 0}
-            />
+            {((ratings?.average || 0) > 0 || showcaseStatus === 'visible') && (
+              <CustomRoadmapRatings
+                roadmapSlug={roadmapSlug!}
+                ratings={ratings!}
+                canManage={$canManageCurrentRoadmap}
+                unseenRatingCount={unseenRatingCount || 0}
+              />
+            )}
           </div>
         </div>
 

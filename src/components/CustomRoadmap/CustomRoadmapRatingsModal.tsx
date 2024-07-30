@@ -1,10 +1,7 @@
-import { useState, type CSSProperties } from 'react';
-import { formatCommaNumber } from '../../lib/number';
+import { useState } from 'react';
 import { Modal } from '../Modal';
-import { Rating } from '../Rating/Rating';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { RateRoadmapForm } from './RateRoadmapForm';
-import { cn } from '../../lib/classname';
 import { ListRoadmapRatings } from './ListRoadmapRatings';
 
 type ActiveTab = 'ratings' | 'feedback';
