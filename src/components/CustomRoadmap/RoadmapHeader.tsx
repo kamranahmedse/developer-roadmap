@@ -110,7 +110,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
         <div className="flex justify-between gap-2 sm:gap-0">
           <div className="flex justify-stretch gap-1 sm:gap-2">
             <a
-              href="/discover"
+              href="/community"
               className="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
               aria-label="Back to All Roadmaps"
             >

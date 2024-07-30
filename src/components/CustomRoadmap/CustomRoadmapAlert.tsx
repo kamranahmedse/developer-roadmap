@@ -40,7 +40,7 @@ export function CustomRoadmapAlert() {
             &middot;
           </span>
           <a
-            href="/discover"
+            href="/community"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-700 underline-offset-2 hover:underline"
           >
             <HeartHandshake className="h-4 w-4 stroke-[2.5]" />
