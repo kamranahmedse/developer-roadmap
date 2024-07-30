@@ -128,7 +128,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
               Community Roadmaps
             </h1>
             <p className="mb-3 text-base text-gray-500">
-              An unvetted, selected list of community-curated roadmaps
+              A selected list of community-created roadmaps
             </p>
             <div className="relative">
               <div className="flex flex-col sm:flex-row items-center gap-1.5">
