@@ -115,7 +115,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               aria-label="Back to All Roadmaps"
             >
               &larr;
-              <span className="hidden sm:inline">&nbsp;Discover More</span>
+              <span className="hidden sm:inline">&nbsp;Discover more</span>
             </a>
 
             <ShareRoadmapButton

@@ -172,8 +172,8 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
 
       {!isLoading && ratings.length === 0 && (
         <div className="flex flex-col items-center justify-center py-10">
-          <MessageCircle className="size-12 text-gray-600" />
-          <p className="mt-3 text-lg text-gray-600">No Feedbacks</p>
+          <MessageCircle className="size-12 text-gray-200" />
+          <p className="mt-3 text-base text-gray-600">No Feedbacks</p>
         </div>
       )}
     </div>
