@@ -7,4 +7,4 @@ To use the Notifications API, a web page must first request permission from the 
 Visit the following resources to learn more:
 
 - [@article@Notifications API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
-- [@video@Create React Notifications With the Web Notifications API](https://www.youtube.com/watch?v=mfrppinfmz0)
+- [@video@How To Send Push Notifications With JavaScript](https://youtu.be/Bm0JjR4kP8w?si=-2Nu0I2Zl9f-R1zj)
