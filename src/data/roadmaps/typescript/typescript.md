@@ -2,6 +2,7 @@
 jsonUrl: '/jsons/roadmaps/typescript.json'
 pdfUrl: '/pdfs/roadmaps/typescript.pdf'
 order: 6
+renderer: 'editor'
 briefTitle: 'TypeScript'
 briefDescription: 'Everything you need to learn about TypeScript in 2024'
 title: 'TypeScript'
@@ -10,7 +11,7 @@ hasTopics: true
 isNew: false
 dimensions:
   width: 968
-  height: 1884.38
+  height: 2050
 schema:
   headline: 'TypeScript Roadmap'
   description: 'Learn everything about TypeScript with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
