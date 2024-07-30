@@ -50,7 +50,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
   video: 'bg-purple-300',
   website: 'bg-blue-300',
   official: 'bg-blue-600 text-white',
-  feed: 'bg-[#ce3df3] text-white',
+  feed: "bg-[#ce3df3] text-white"
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -225,13 +225,7 @@ export function TopicDetail(props: TopicDetailProps) {
               // article at third
               // videos at fourth
               // rest at last
-              const order = [
-                'official',
-                'opensource',
-                'article',
-                'video',
-                'feed',
-              ];
+              const order = ['official', 'opensource', 'article', 'video', 'feed'];
               return order.indexOf(a.type) - order.indexOf(b.type);
             });
 
@@ -430,52 +424,47 @@ export function TopicDetail(props: TopicDetailProps) {
               )}
 
               {/* Contribution */}
-              {canSubmitContribution &&
-                !hasEnoughLinks &&
-                contributionUrl &&
-                hasContent && (
-                  <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
-                    <div className="mb-4 mt-3">
-                      <p className="">
-                        Find more resources using these pre-filled search
-                        queries:
-                      </p>
-                      <div className="mt-3 flex gap-2 text-gray-700">
-                        <a
-                          href={googleSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                        >
-                          <GoogleIcon className={'h-4 w-4'} />
-                          Google
-                        </a>
-                        <a
-                          href={youtubeSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                        >
-                          <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                          YouTube
-                        </a>
-                      </div>
-                    </div>
-
-                    <p className="mb-2 mt-2 leading-relaxed">
-                      This popup should be a brief introductory paragraph for
-                      the topic and a few links to good articles, videos, or any
-                      other self-vetted resources. Please consider submitting a
-                      PR to improve this content.
+              {canSubmitContribution && !hasEnoughLinks && contributionUrl && hasContent && (
+                <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
+                  <div className="mb-4 mt-3">
+                    <p className="">
+                      Find more resources using these pre-filled search queries:
                     </p>
-                    <a
-                      href={contributionUrl}
-                      target={'_blank'}
-                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                    >
-                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                      Help us Improve this Content
-                    </a>
+                    <div className="mt-3 flex gap-2  text-gray-700">
+                      <a
+                        href={googleSearchUrl}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                      >
+                        <GoogleIcon className={'h-4 w-4'} />
+                        Google
+                      </a>
+                      <a
+                        href={youtubeSearchUrl}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                      >
+                        <YouTubeIcon className={'h-4 w-4 text-red-500'} />
+                        YouTube
+                      </a>
+                    </div>
                   </div>
-                )}
+
+                  <p className="mb-2 mt-2 leading-relaxed">
+                    This popup should be a brief introductory paragraph for the topic and a few links
+                    to good articles, videos, or any other self-vetted resources. Please consider
+                    submitting a PR to improve this content.
+                  </p>
+                  <a
+                    href={contributionUrl}
+                    target={'_blank'}
+                    className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                  >
+                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                    Help us Improve this Content
+                  </a>
+                </div>
+              )}
             </div>
             {resourceId === 'devops' && (
               <div className="mt-4">
