@@ -8,7 +8,7 @@ import { httpDelete, httpPut } from '../../lib/http';
 import { type TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
 import { RoadmapActionButton } from './RoadmapActionButton';
-import {Lock, Pencil, PenSquare, Shapes} from 'lucide-react';
+import { Lock, Pencil, PenSquare, Shapes } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
@@ -110,11 +110,12 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
         <div className="flex justify-between gap-2 sm:gap-0">
           <div className="flex justify-stretch gap-1 sm:gap-2">
             <a
-              href="/roadmaps"
+              href="/discover"
               className="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
               aria-label="Back to All Roadmaps"
             >
-              &larr;<span className="hidden sm:inline">&nbsp;All Roadmaps</span>
+              &larr;
+              <span className="hidden sm:inline">&nbsp;Community Roadmaps</span>
             </a>
 
             <ShareRoadmapButton

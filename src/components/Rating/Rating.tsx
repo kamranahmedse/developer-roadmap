@@ -14,18 +14,14 @@ export function Rating(props: RatingProps) {
   const {
     rating = 0,
     starSize,
-    readOnly = false,
     className,
     onRatingChange,
+    readOnly = false,
   } = props;
 
   const [stars, setStars] = useState(Number(rating.toFixed(2)));
   const starCount = Math.floor(stars);
   const decimalWidthPercentage = Math.min((stars - starCount) * 100, 100);
-
-  if (readOnly && starCount === 0) {
-    return <span className="text-xs text-gray-400">No ratings yet</span>;
-  }
 
   return (
     <div className={cn('flex', className)}>

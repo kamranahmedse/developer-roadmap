@@ -37,7 +37,7 @@ export function CustomRoadmapRatingsModal(
   ];
 
   return (
-    <Modal onClose={onClose} bodyClassName="p-4">
+    <Modal onClose={onClose} bodyClassName="bg-transparent shadow-none">
       {canManage && (
         <div className="-mx-4 mb-4 flex items-center gap-4 border-b px-4">
           {tabs.map((tab) => {
@@ -64,7 +64,7 @@ export function CustomRoadmapRatingsModal(
       )}
 
       {activeTab === 'ratings' && (
-        <RateRoadmapForm ratings={ratings} roadmapSlug={roadmapSlug} />
+        <RateRoadmapForm ratings={ratings} roadmapSlug={roadmapSlug} canManage={canManage} />
       )}
       {activeTab === 'feedback' && (
         <ListRoadmapRatings roadmapSlug={roadmapSlug} />

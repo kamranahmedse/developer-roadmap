@@ -1,13 +1,14 @@
-import { useEffect, useState, type CSSProperties } from 'react';
+import { useEffect, useState } from 'react';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { formatCommaNumber } from '../../lib/number';
 import { Rating } from '../Rating/Rating';
 import { httpGet, httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { isLoggedIn } from '../../lib/jwt';
-import { Loader2 } from 'lucide-react';
+import { Loader2, Star } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { showLoginPopup } from '../../lib/popup';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
 
 type GetMyRoadmapRatingResponse = {
   id?: string;
@@ -18,10 +19,11 @@ type GetMyRoadmapRatingResponse = {
 type RateRoadmapFormProps = {
   ratings: RoadmapDocument['ratings'];
   roadmapSlug: string;
+  canManage?: boolean;
 };
 
 export function RateRoadmapForm(props: RateRoadmapFormProps) {
-  const { ratings, roadmapSlug } = props;
+  const { ratings, canManage = false, roadmapSlug } = props;
   const { breakdown = {}, average: _average } = ratings || {};
   const average = _average || 0;
 
@@ -31,9 +33,14 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
     0,
   );
 
+  // if no rating then only show the ratings breakdown if the user can manage the roadmap
+  const showRatingsBreakdown = average > 0 || canManage;
+
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
-  const [isRatingRoadmap, setIsRatingRoadmap] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [isRatingRoadmap, setIsRatingRoadmap] = useState(!showRatingsBreakdown);
   const [userRatingId, setUserRatingId] = useState<string | undefined>();
   const [userRating, setUserRating] = useState(0);
   const [userFeedback, setUserFeedback] = useState('');
@@ -61,7 +68,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
       return;
     }
 
-    setIsLoading(true);
+    setIsSubmitting(true);
     const path = userRatingId
       ? 'v1-update-custom-roadmap-rating'
       : 'v1-rate-custom-roadmap';
@@ -74,7 +81,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
 
     if (!response || error) {
       toast.error(error?.message || 'Something went wrong');
-      setIsLoading(false);
+      setIsSubmitting(false);
       return;
     }
 
@@ -91,51 +98,109 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
   }, [roadmapSlug]);
 
   return (
-    <>
-      <div className="flex items-center gap-2">
-        <Rating rating={average} readOnly />
-        <span className="font-medium">{average} out of 5</span>
-      </div>
+    <div className="flex flex-col gap-3">
+      {showRatingsBreakdown && !isRatingRoadmap && (
+        <>
+          <ul className="mt-4 flex flex-col gap-1 rounded-lg bg-white p-5">
+            {ratingsKeys.map((rating) => {
+              const percentage =
+                totalRatings <= 0
+                  ? 0
+                  : ((breakdown?.[rating] || 0) / totalRatings) * 100;
 
-      <span className="mt-2 inline-block text-gray-500">
-        {formatCommaNumber(totalRatings)} ratings
-      </span>
+              return (
+                <li
+                  key={`rating-${rating}`}
+                  className="flex items-center gap-2 text-sm"
+                >
+                  <span className="shrink-0">{rating} star</span>
+                  <div className="relative h-8 w-full overflow-hidden rounded-md border">
+                    <div
+                      className="h-full bg-yellow-300"
+                      style={{ width: `${percentage}%` }}
+                    ></div>
 
-      <ul className="mt-4 flex flex-col gap-2">
-        {ratingsKeys.map((rating) => {
-          const percentage =
-            totalRatings <= 0
-              ? 0
-              : ((breakdown?.[rating] || 0) / totalRatings) * 100;
+                    {percentage > 0 && (
+                      <span className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center justify-center text-xs text-black">
+                        {formatCommaNumber(breakdown?.[rating] || 0)}
+                      </span>
+                    )}
+                  </div>
 
-          return (
-            <li key={`rating-${rating}`} className="flex items-center gap-2">
-              <span className="shrink-0">{rating} star</span>
-              <div
-                className="relative h-6 w-full overflow-hidden rounded-md border after:absolute after:inset-0 after:w-[var(--rating-percentage)] after:bg-yellow-400 after:content-['']"
-                style={
-                  {
-                    '--rating-percentage': `${percentage}%`,
-                  } as CSSProperties
-                }
-              />
-              <span className="w-14 shrink-0 text-sm text-gray-500">
-                {percentage}%
-              </span>
-            </li>
-          );
-        })}
-      </ul>
+                  <span className="w-14 shrink-0 text-sm text-gray-500">
+                    {percentage}%
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )}
 
-      <hr className="my-5 bg-gray-300" />
+      {!canManage && !isRatingRoadmap && (
+        <div className="relative min-h-[100px] rounded-lg bg-white p-4">
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Spinner isDualRing={false} className="h-5 w-5" />
+            </div>
+          )}
 
-      <div>
-        <h3 className="font-semibold">Rate this roadmap</h3>
-        <p className="mt-1 text-sm">
-          Share your thoughts with the roadmap creator.
-        </p>
+          {!isLoading && !isRatingRoadmap && !userRatingId && (
+            <>
+              <p className="mb-2 text-center text-sm font-medium">
+                Rate and share your thoughts with the roadmap creator.
+              </p>
+              <button
+                className="flex h-10 w-full items-center justify-center rounded-full bg-black p-2.5 text-sm font-medium text-white disabled:opacity-60"
+                onClick={() => {
+                  if (!isLoggedIn()) {
+                    showLoginPopup();
+                    return;
+                  }
 
-        {(isRatingRoadmap || userRatingId) && (
+                  setIsRatingRoadmap(true);
+                }}
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <Loader2 className="size-4 animate-spin" />
+                ) : (
+                  'Rate Roadmap'
+                )}
+              </button>
+            </>
+          )}
+
+          {!isLoading && !isRatingRoadmap && userRatingId && (
+            <div>
+              <h3 className="mb-2.5 flex items-center justify-between text-base font-semibold">
+                Your Feedback
+                <button
+                  className="ml-2 text-sm font-medium text-blue-500 underline underline-offset-2"
+                  onClick={() => {
+                    setIsRatingRoadmap(true);
+                  }}
+                >
+                  Edit Rating
+                </button>
+              </h3>
+              <div className="flex items-center gap-2">
+                <Rating rating={userRating} starSize={19} readOnly /> (
+                {userRating})
+              </div>
+              {userFeedback && <p className="mt-2 text-sm">{userFeedback}</p>}
+            </div>
+          )}
+        </div>
+      )}
+
+      {!canManage && isRatingRoadmap && (
+        <div className="rounded-lg bg-white p-5">
+          <h3 className="font-semibold">Rate this roadmap</h3>
+          <p className="mt-1 text-sm">
+            Share your thoughts with the roadmap creator.
+          </p>
+
           <form
             className="mt-4"
             onSubmit={(e) => {
@@ -155,45 +220,37 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
                 htmlFor="rating-feedback"
                 className="block text-sm font-medium"
               >
-                Feedback
+                Feedback to Creator{' '}
+                <span className="font-normal text-gray-400">(Optional)</span>
               </label>
               <textarea
                 id="rating-feedback"
-                className="min-h-24 rounded-md border p-1 outline-none focus:border-gray-500"
+                className="min-h-24 rounded-md border p-2 text-sm outline-none focus:border-gray-500"
+                placeholder="Share your thoughts with the roadmap creator"
                 value={userFeedback}
                 onChange={(e) => {
                   setUserFeedback(e.target.value);
                 }}
               />
-              <p className="text-right text-xs text-gray-700">
-                Feedback will be only visible to the creator.
-              </p>
             </div>
 
-            <div
-              className={cn(
-                'mt-4 grid gap-1',
-                userRatingId ? 'grid-cols-1' : 'grid-cols-2',
-              )}
-            >
-              {!userRatingId && (
-                <button
-                  className="h-10 w-full rounded-full border p-2.5 text-sm font-medium disabled:opacity-60"
-                  onClick={() => {
-                    setIsRatingRoadmap(false);
-                  }}
-                  type="button"
-                  disabled={isLoading}
-                >
-                  Cancel
-                </button>
-              )}
+            <div className={cn('mt-4 grid grid-cols-2 gap-1')}>
+              <button
+                className="h-10 w-full rounded-full border p-2.5 text-sm font-medium disabled:opacity-60"
+                onClick={() => {
+                  setIsRatingRoadmap(false);
+                }}
+                type="button"
+                disabled={isSubmitting}
+              >
+                Cancel
+              </button>
               <button
                 className="flex h-10 w-full items-center justify-center rounded-full bg-black p-2.5 text-sm font-medium text-white disabled:opacity-60"
                 type="submit"
-                disabled={isLoading}
+                disabled={isSubmitting}
               >
-                {isLoading ? (
+                {isSubmitting ? (
                   <Loader2 className="size-4 animate-spin" />
                 ) : userRatingId ? (
                   'Update Rating'
@@ -203,29 +260,8 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
               </button>
             </div>
           </form>
-        )}
-
-        {!isRatingRoadmap && !userRatingId && (
-          <button
-            className="mt-4 flex h-10 w-full items-center justify-center rounded-full bg-black p-2.5 text-sm font-medium text-white disabled:opacity-60"
-            onClick={() => {
-              if (!isLoggedIn()) {
-                showLoginPopup();
-                return;
-              }
-
-              setIsRatingRoadmap(true);
-            }}
-            disabled={isLoading}
-          >
-            {isLoading ? (
-              <Loader2 className="size-4 animate-spin" />
-            ) : (
-              'Rate Roadmap'
-            )}
-          </button>
-        )}
-      </div>
-    </>
+        </div>
+      )}
+    </div>
   );
 }
