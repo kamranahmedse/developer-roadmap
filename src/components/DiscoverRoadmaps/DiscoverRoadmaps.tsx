@@ -161,7 +161,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
                   </Tooltip>
                   <a
                     href="/roadmaps"
-                    className="inline-block rounded-md bg-gray-300 px-3.5 py-2 text-sm text-black sm:py-1.5 sm:text-base"
+                    className="inline-block rounded-md bg-gray-300 px-3.5 py-1.5 text-sm text-black sm:py-1.5 sm:text-sm"
                   >
                     Visit our official roadmaps
                   </a>
