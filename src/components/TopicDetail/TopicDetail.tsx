@@ -30,6 +30,7 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
+import { lockBodyScroll } from '../../lib/dom.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
@@ -262,6 +263,8 @@ export function TopicDetail(props: TopicDetailProps) {
 
   useEffect(() => {
     if (isActive) topicRef?.current?.focus();
+
+    lockBodyScroll(isActive);
   }, [isActive]);
 
   if (!isActive) {
