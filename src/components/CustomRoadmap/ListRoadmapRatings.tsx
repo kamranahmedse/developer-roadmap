@@ -8,6 +8,7 @@ import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { getRelativeTimeString } from '../../lib/date.ts';
 import { cn } from '../../lib/classname.ts';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal.tsx';
+import { Pagination } from '../Pagination/Pagination.tsx';
 
 export interface RoadmapRatingDocument {
   _id?: string;
@@ -20,10 +21,16 @@ export interface RoadmapRatingDocument {
   updatedAt: Date;
 }
 
-type ListRoadmapRatingsResponse = (RoadmapRatingDocument & {
-  name: string;
-  avatar: string;
-})[];
+type ListRoadmapRatingsResponse = {
+  data: (RoadmapRatingDocument & {
+    name: string;
+    avatar?: string;
+  })[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
 
 type ListRoadmapRatingsProps = {
   roadmapSlug: string;
@@ -41,11 +48,18 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-  const [ratings, setRatings] = useState<ListRoadmapRatingsResponse>([]);
+  const [ratingsResponse, setRatingsResponse] =
+    useState<ListRoadmapRatingsResponse | null>(null);
 
-  const listRoadmapRatings = async () => {
+  const listRoadmapRatings = async (currPage: number = 1) => {
+    setIsLoading(true);
+
     const { response, error } = await httpGet<ListRoadmapRatingsResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-roadmap-ratings/${roadmapSlug}`,
+      {
+        currPage,
+        perPage: 1,
+      },
     );
 
     if (!response || error) {
@@ -54,7 +68,7 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
       return;
     }
 
-    setRatings(response);
+    setRatingsResponse(response);
     setError('');
     setIsLoading(false);
   };
@@ -76,8 +90,10 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
     );
   }
 
+  const ratings = ratingsResponse?.data || [];
+
   return (
-    <div className="relative min-h-[100px] rounded-lg bg-white p-2 overflow-hidden">
+    <div className="relative min-h-[100px] overflow-auto rounded-lg bg-white p-2 md:max-h-[550px]">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <Spinner isDualRing={false} />
@@ -85,14 +101,20 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
       )}
 
       {!isLoading && ratings.length > 0 && (
-        <div>
-          <div className='text-sm px-2 py-1.5 text-yellow-900 mb-2 rounded-lg bg-yellow-50 flex items-center gap-1 justify-center'>
-            <span>Rated <span className="font-medium">{averageRating.toFixed(1)}</span></span>
+        <div className="relative">
+          <div className="sticky top-1.5 mb-2 flex items-center justify-center gap-1 rounded-lg bg-yellow-50 px-2 py-1.5 text-sm text-yellow-900">
+            <span>
+              Rated{' '}
+              <span className="font-medium">{averageRating.toFixed(1)}</span>
+            </span>
             <Rating starSize={15} rating={averageRating} readOnly />
-            by <span className="font-medium">{totalWhoRated} user{totalWhoRated > 1 && 's'}</span>
+            by{' '}
+            <span className="font-medium">
+              {totalWhoRated} user{totalWhoRated > 1 && 's'}
+            </span>
           </div>
 
-          <div className="flex flex-col">
+          <div className="mb-3 flex flex-col">
             {ratings.map((rating) => {
               const userAvatar = rating?.avatar
                 ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${rating.avatar}`
@@ -135,6 +157,17 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
               );
             })}
           </div>
+
+          <Pagination
+            variant="minimal"
+            totalCount={ratingsResponse?.totalCount || 1}
+            currPage={ratingsResponse?.currPage || 1}
+            totalPages={ratingsResponse?.totalPages || 1}
+            perPage={ratingsResponse?.perPage || 1}
+            onPageChange={(page) => {
+              listRoadmapRatings(page).then();
+            }}
+          />
         </div>
       )}
 

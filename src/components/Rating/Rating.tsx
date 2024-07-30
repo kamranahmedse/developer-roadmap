@@ -37,6 +37,10 @@ export function Rating(props: RatingProps) {
               isActive ? 100 : hasDecimal ? decimalWidthPercentage : 0
             }
             onClick={() => {
+              if (readOnly) {
+                return;
+              }
+              
               setStars(counter);
               onRatingChange?.(counter);
             }}
@@ -64,15 +68,15 @@ function RatingStar(props: RatingStarProps) {
   const { onClick, widthPercentage = 100, starSize = 20, readOnly } = props;
 
   return (
-    <button
-      onClick={onClick}
-      className="relative block cursor-pointer text-gray-300 disabled:cursor-default"
+    <div
+      className="relative block cursor-pointer text-gray-300 disabled:cursor-default aria-disabled:cursor-default"
       style={{
         width: `${starSize}px`,
         height: `${starSize}px`,
       }}
-      disabled={readOnly}
-      type="button"
+      onClick={onClick}
+      aria-disabled={readOnly}
+      role="button"
     >
       <span className="absolute inset-0">
         <svg
@@ -112,6 +116,6 @@ function RatingStar(props: RatingStarProps) {
           </svg>
         </span>
       </span>
-    </button>
+    </div>
   );
 }
