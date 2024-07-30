@@ -30,5 +30,10 @@ export function roadmapApi(context: APIContext) {
         searchParams,
       );
     },
+    isShowcaseRoadmap: async function (slug: string) {
+      return api(context).get<{
+        isShowcase: boolean;
+      }>(`${import.meta.env.PUBLIC_API_URL}/v1-is-showcase-roadmap/${slug}`);
+    },
   };
 }
