@@ -58,7 +58,6 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-list-roadmap-ratings/${roadmapSlug}`,
       {
         currPage,
-        perPage: 1,
       },
     );
 
