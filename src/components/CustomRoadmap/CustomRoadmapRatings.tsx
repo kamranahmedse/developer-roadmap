@@ -38,7 +38,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
         <>
           {!canManage && (
             <button
-              className="flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
+              className="flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
               onClick={() => {
                 setIsDetailsOpen(true);
               }}
@@ -49,7 +49,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
             </button>
           )}
           {canManage && (
-            <span className="flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium cursor-default opacity-50">
+            <span className="flex h-[34px] cursor-default items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium opacity-50">
               <Star className="size-4 fill-yellow-400 text-yellow-400" />
               <span className="hidden md:block">No ratings yet</span>
               <span className="block md:hidden">Rate</span>
@@ -60,7 +60,7 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
 
       {average > 0 && (
         <button
-          className="relative flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
+          className="relative flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
           onClick={() => {
             setIsDetailsOpen(true);
           }}
