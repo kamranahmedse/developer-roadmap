@@ -35,16 +35,27 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
         />
       )}
       {average === 0 && (
-        <button
-          className="flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
-          onClick={() => {
-            setIsDetailsOpen(true);
-          }}
-        >
-          <Star className="size-4 fill-yellow-400 text-yellow-400" />
-          <span className="hidden md:block">Rate this roadmap</span>
-          <span className="block md:hidden">Rate</span>
-        </button>
+        <>
+          {!canManage && (
+            <button
+              className="flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
+              onClick={() => {
+                setIsDetailsOpen(true);
+              }}
+            >
+              <Star className="size-4 fill-yellow-400 text-yellow-400" />
+              <span className="hidden md:block">Rate this roadmap</span>
+              <span className="block md:hidden">Rate</span>
+            </button>
+          )}
+          {canManage && (
+            <span className="flex items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium cursor-default opacity-50">
+              <Star className="size-4 fill-yellow-400 text-yellow-400" />
+              <span className="hidden md:block">No ratings yet</span>
+              <span className="block md:hidden">Rate</span>
+            </span>
+          )}
+        </>
       )}
 
       {average > 0 && (

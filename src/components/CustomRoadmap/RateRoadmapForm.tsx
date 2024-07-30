@@ -46,6 +46,12 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
   const [userFeedback, setUserFeedback] = useState('');
 
   const loadMyRoadmapRating = async () => {
+    // user can't have the rating for their own roadmap
+    if (canManage) {
+      setIsLoading(false);
+      return;
+    }
+
     const { response, error } = await httpGet<GetMyRoadmapRatingResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-my-roadmap-rating/${roadmapSlug}`,
     );
@@ -127,7 +133,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
                     )}
                   </div>
 
-                  <span className="w-14 shrink-0 text-sm text-gray-500">
+                  <span className="w-[35px] shrink-0 text-xs text-gray-500">
                     {percentage}%
                   </span>
                 </li>

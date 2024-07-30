@@ -115,7 +115,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               aria-label="Back to All Roadmaps"
             >
               &larr;
-              <span className="hidden sm:inline">&nbsp;Community Roadmaps</span>
+              <span className="hidden sm:inline">&nbsp;Discover More</span>
             </a>
 
             <ShareRoadmapButton
@@ -150,20 +150,13 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                   />
                 )}
 
-                <a
-                  href={`${
-                    import.meta.env.PUBLIC_EDITOR_APP_URL
-                  }/${$currentRoadmap?._id}`}
-                  target="_blank"
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <PenSquare className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  <span className="hidden lg:inline-block">Edit</span>
-                  <span className="lg:hidden">Edit</span>
-                </a>
-
                 <RoadmapActionButton
                   onUpdateSharing={() => setIsSharing(true)}
+                  onCustomize={() => {
+                    window.location.href = `${
+                      import.meta.env.PUBLIC_EDITOR_APP_URL
+                    }/${$currentRoadmap?._id}`;
+                  }}
                   onDelete={() => {
                     const confirmation = window.confirm(
                       'Are you sure you want to delete this roadmap?',

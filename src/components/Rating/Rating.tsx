@@ -44,9 +44,9 @@ export function Rating(props: RatingProps) {
           />
         );
       })}
-      {props.total && (
+      {(props.total || 0) > 0 && (
         <span className="ml-1.5 text-xs text-gray-400">
-          ({Intl.NumberFormat('en-US').format(props.total)})
+          ({Intl.NumberFormat('en-US').format(props.total!)})
         </span>
       )}
     </div>
