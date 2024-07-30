@@ -68,7 +68,7 @@ export function SearchRoadmap(props: SearchRoadmapProps) {
           {Intl.NumberFormat('en-US', {
             notation: 'compact',
           }).format(total)}{' '}
-          results found
+          result{total > 1 ? 's' : ''} found
         </p>
       )}
     </div>

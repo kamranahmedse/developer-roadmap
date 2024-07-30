@@ -131,7 +131,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
               An unvetted, selected list of community-curated roadmaps
             </p>
             <div className="relative">
-              <div className="flex items-center gap-1.5">
+              <div className="flex flex-col sm:flex-row items-center gap-1.5">
                 <span className="group relative normal-case">
                   <Tooltip
                     position={'bottom-left'}
@@ -161,7 +161,7 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
                   </Tooltip>
                   <a
                     href="/roadmaps"
-                    className="block rounded-md border border-gray-300 bg-gray-50 px-3.5 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
+                    className="inline-block rounded-md bg-gray-300 px-3.5 py-2 text-sm text-black sm:py-1.5 sm:text-base"
                   >
                     Visit our official roadmaps
                   </a>
