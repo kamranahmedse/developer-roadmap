@@ -6,4 +6,5 @@ Learn more from the following resources:
 
 - [@article@HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [@articles@What are HTTP status codes?](https://umbraco.com/knowledge-base/http-status-codes/)
+- [@article@List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 - [@video@HTTP Status Codes explained in 5 minutes](https://www.youtube.com/watch?v=qmpUfWN7hh4)

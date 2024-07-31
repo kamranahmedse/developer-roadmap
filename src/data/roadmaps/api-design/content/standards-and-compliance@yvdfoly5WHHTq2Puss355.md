@@ -5,3 +5,9 @@ When designing APIs, it's crucial to consider the concept of standards and compl
 Compliance on the other hand, emphasizes on meeting protocol requirements or standards such as REST or SOAP. Furthermore, operating within regulated industries can also necessitate certain compliance measures like GDPR, HIPAA and others. Compliance in API Design ensures interoperability and safety of data transmission between systems. 
 
 In essence, Standards and Compliance in API Design contributes towards building more secure, robust, and efficient APIs that are user-friendly and universally understandable.
+
+Learn more from the following resources:
+
+- [@article@What is API compliance?](https://tyk.io/learning-center/api-compliance/)
+- [@article@What is API compliance and why is it important?](https://www.traceable.ai/blog-post/achieve-api-compliance)
+- [@article@REST API standards](https://www.integrate.io/blog/rest-api-standards/)
