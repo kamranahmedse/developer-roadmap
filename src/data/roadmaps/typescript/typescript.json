@@ -735,7 +735,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Compilre Options",
+        "label": "Compiler Options",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
