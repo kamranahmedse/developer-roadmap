@@ -6,6 +6,8 @@ This method revolves around the server creating a session for the user after the
 
 Understanding Session Based Authentication is crucial for secure API design, especially in scenarios where security is a top priority or in legacy systems where this method is prevalent.
 
+Learn more from the following resources:
+
 - [@official@Session Based Authentication - Roadmap.sh](https://roadmap.sh/guides/session-based-authentication)
 - [@video@Session Based Authentication - Roadmap.sh](https://www.youtube.com/watch?v=gKkBEOq_shs)
 - [@article@Session vs Token Authentication](https://www.authgear.com/post/session-vs-token-authentication)
