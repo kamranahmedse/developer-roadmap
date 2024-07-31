@@ -8,11 +8,9 @@ import { httpDelete, httpPut } from '../../lib/http';
 import { type TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
 import { RoadmapActionButton } from './RoadmapActionButton';
-import { Lock, Shapes } from 'lucide-react';
-import { Modal } from '../Modal';
-import { ShareSuccess } from '../ShareOptions/ShareSuccess';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
+import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -28,10 +26,12 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     creator,
     team,
     visibility,
+    ratings,
+    unseenRatingCount,
+    showcaseStatus,
   } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
-  const [isSharingWithOthers, setIsSharingWithOthers] = useState(false);
   const toast = useToast();
 
   async function deleteResource() {
@@ -72,23 +72,6 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${creator?.avatar}`
     : '/images/default-avatar.png';
 
-  const sharingWithOthersModal = isSharingWithOthers && (
-    <Modal
-      onClose={() => setIsSharingWithOthers(false)}
-      wrapperClassName="max-w-lg"
-      bodyClassName="p-4 flex flex-col"
-    >
-      <ShareSuccess
-        visibility="public"
-        roadmapSlug={roadmapSlug}
-        roadmapId={roadmapId!}
-        description={description}
-        onClose={() => setIsSharingWithOthers(false)}
-        isSharingWithOthers={true}
-      />
-    </Modal>
-  );
-
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
@@ -127,11 +110,12 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
         <div className="flex justify-between gap-2 sm:gap-0">
           <div className="flex justify-stretch gap-1 sm:gap-2">
             <a
-              href="/roadmaps"
+              href="/community"
               className="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
               aria-label="Back to All Roadmaps"
             >
-              &larr;<span className="hidden sm:inline">&nbsp;All Roadmaps</span>
+              &larr;
+              <span className="hidden sm:inline">&nbsp;Discover more</span>
             </a>
 
             <ShareRoadmapButton
@@ -166,26 +150,13 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                   />
                 )}
 
-                <a
-                  href={`${
-                    import.meta.env.PUBLIC_EDITOR_APP_URL
-                  }/${$currentRoadmap?._id}`}
-                  target="_blank"
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium  text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <Shapes className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  <span className="hidden sm:inline-block">Edit Roadmap</span>
-                  <span className="sm:hidden">Edit</span>
-                </a>
-                <button
-                  onClick={() => setIsSharing(true)}
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  Sharing
-                </button>
-
                 <RoadmapActionButton
+                  onUpdateSharing={() => setIsSharing(true)}
+                  onCustomize={() => {
+                    window.location.href = `${
+                      import.meta.env.PUBLIC_EDITOR_APP_URL
+                    }/${$currentRoadmap?._id}`;
+                  }}
                   onDelete={() => {
                     const confirmation = window.confirm(
                       'Are you sure you want to delete this roadmap?',
@@ -201,17 +172,13 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               </>
             )}
 
-            {!$canManageCurrentRoadmap && visibility === 'public' && (
-              <>
-                {sharingWithOthersModal}
-                <button
-                  onClick={() => setIsSharingWithOthers(true)}
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium  text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
-                >
-                  <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
-                  Share with Others
-                </button>
-              </>
+            {((ratings?.average || 0) > 0 || showcaseStatus === 'visible') && (
+              <CustomRoadmapRatings
+                roadmapSlug={roadmapSlug!}
+                ratings={ratings!}
+                canManage={$canManageCurrentRoadmap}
+                unseenRatingCount={unseenRatingCount || 0}
+              />
             )}
           </div>
         </div>

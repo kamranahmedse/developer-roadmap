@@ -1,5 +1,5 @@
 import { CheckIcon } from '../ReactIcons/CheckIcon';
-import { AIAnnouncement } from '../AIAnnouncement.tsx';
+import { FeatureAnnouncement } from '../FeatureAnnouncement.tsx';
 
 type EmptyProgressProps = {
   title?: string;
@@ -23,7 +23,7 @@ export function EmptyProgress(props: EmptyProgressProps) {
       <p className={'text-sm text-gray-400 sm:text-base'}>{message}</p>
 
       <p className="mt-5">
-        <AIAnnouncement />
+        <FeatureAnnouncement />
       </p>
     </div>
   );

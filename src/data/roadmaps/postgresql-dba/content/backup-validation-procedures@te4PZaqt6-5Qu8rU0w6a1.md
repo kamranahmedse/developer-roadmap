@@ -1,9 +1,5 @@
 # Backup Validation Procedures
 
-In this section, we will discuss the key concepts and procedures to validate and verify the integrity of your PostgreSQL backups. Proper backup validation is crucial to ensure that your data can be restored successfully in case of a disaster or data loss.
-
-## Why Validate Backups?
-
 It's not enough to just take backups; you must also ensure that your backups are valid and restorable. A corrupt or incomplete backup can lead to data loss or downtime during a crisis. Therefore, it's essential to follow best practices and validate your PostgreSQL backups periodically.
 
 ## Key Validation Procedures
@@ -24,4 +20,7 @@ Here are the critical backup validation procedures you should follow:
 
 After validating your backups, it's essential to document the results and address any issues encountered during the validation process. This may involve refining your backup and recovery strategies, fixing any errors or updating your scripts and tools.
 
-By following the above backup validation procedures, you can have confidence in your PostgreSQL backups and be well-prepared to handle data recovery situations. Remember always to ensure the quality and effectiveness of your backup and recovery strategies, as data security is crucial for the success of your operations.
+Learn more from the following resources:
+
+- [@official@pg_verifybackup](https://www.postgresql.org/docs/current/app-pgverifybackup.html)
+- [@article@PostgreSQL Backup and Restore Validation](https://portal.nutanix.com/page/documents/solutions/details?targetId=NVD-2155-Nutanix-Databases:postgresql-backup-and-restore-validation.html)

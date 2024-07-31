@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
 
 export function getRelativeTimeString(
-  date: string,
+  date: string | Date,
   isTimed: boolean = false,
 ): string {
   if (!Intl?.RelativeTimeFormat) {
-    return date;
+    return date.toString();
   }
 
   const rtf = new Intl.RelativeTimeFormat('en', {
