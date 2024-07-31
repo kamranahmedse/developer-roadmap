@@ -1,4 +1,5 @@
 # ATT&CK
+
 MITRE ATT&CK® stands for Adversarial Tactics, Techniques & Common Knowledge. 
 
 MITRE ATT&CK documents various strategies, methods, and processes employed by adversaries at every stage of a cybersecurity incident, from the reconnaissance and strategizing phase to the final implementation of the attack. 
