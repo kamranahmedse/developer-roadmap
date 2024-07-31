@@ -1574,7 +1574,7 @@
       },
       "selected": false,
       "data": {
-        "label": "changeDetection",
+        "label": "change-detection",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -3024,38 +3024,6 @@
       "positionAbsolute": {
         "x": -340.63327447982533,
         "y": 739.2304293708296
-      },
-      "selectable": true,
-      "focusable": true,
-      "dragging": false
-    },
-    {
-      "id": "_-mTs_FMeob-ZGK-bb3j-",
-      "type": "subtopic",
-      "position": {
-        "x": -332.63327447982533,
-        "y": 848.2304293708296
-      },
-      "selected": false,
-      "data": {
-        "label": "Change Detection",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        },
-        "oldId": "CCLlL17z35brwlr-q2FDV"
-      },
-      "zIndex": 999,
-      "width": 187,
-      "height": 49,
-      "style": {
-        "width": 187,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": -332.63327447982533,
-        "y": 848.2304293708296
       },
       "selectable": true,
       "focusable": true,
