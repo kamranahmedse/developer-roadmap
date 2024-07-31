@@ -110,6 +110,7 @@ export function clearMigratedRoadmapProgress(
     'angular',
     'nodejs',
     'typescript',
+    'python',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
