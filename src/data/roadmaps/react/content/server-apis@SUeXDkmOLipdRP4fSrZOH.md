@@ -19,3 +19,5 @@ Data Normalization: Normalize the data structure to simplify state management an
 
 ### For further references: 
 The official React documentation provides a solid foundation for understanding how to integrate APIs with React components.
+[@official@Documentation For API](https://react.dev/reference/react-dom/server)
+[@official@Beginers Guide for server API](https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/)
