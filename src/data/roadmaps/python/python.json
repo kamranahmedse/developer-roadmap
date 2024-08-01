@@ -690,7 +690,7 @@
       "selected": false,
       "data": {
         "label": "Backend",
-        "href": "https://roadm.sh/backend",
+        "href": "https://roadmap.sh/backend",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
@@ -3645,7 +3645,7 @@
       "selected": false,
       "data": {
         "label": "DevOps",
-        "href": "https://roadm.sh/devops",
+        "href": "https://roadmap.sh/devops",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
