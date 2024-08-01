@@ -7,7 +7,6 @@ import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
-import { TeamVersions } from './TeamVersions/TeamVersions';
 import { CreateVersion } from './CreateVersion/CreateVersion';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
@@ -148,12 +147,6 @@ const hasTnsBanner = !!tnsBannerLink;
       </div>
 
       <div class='flex items-center gap-1 sm:gap-2'>
-        <TeamVersions
-          resourceType='roadmap'
-          resourceId={roadmapId}
-          client:only='react'
-        />
-
         {
           isRoadmapReady && (
             <a
