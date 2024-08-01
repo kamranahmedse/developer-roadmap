@@ -1,3 +1,23 @@
 # URL, Query & Path Parameters
 
 When designing APIs, an integral part involves dealing with uniform resource locators (URLs), query parameters, and path parameters. These components play crucial parts in how the API sends and retrieves data. The URL forms the basis of the API given that it identifies the resource on the server. Query parameters are used to filter specific results, sorting or showing specific data fields. On the other hand, Path parameters serve as placeholders for variable data that will be input into the URL, allowing us to customize the data response. Understanding the usage of URL, query, and path parameters is of utmost importance for creating efficient, scalable and user-friendly APIs.
+
+## Example
+
+### URL
+```bash
+https://someurl.com
+```
+This is a random URL which includes the protocol (HTTPS) as well as the domain name `(someurl.com)`.
+
+### Path Parameter
+```bash
+https://someurl.com/:id
+```
+Here `:id` is a path parameter. It is part of the URL path and typically used to identify a specific resource.
+
+### Query Parameter
+```bash
+https://someurl.com/books?genre=fiction&origin=Canada
+```
+In this case, `genre` and `origin` are query parameters. They appear after the `?` in the URL and are usually used to filter or sort the resources returned by the API.
