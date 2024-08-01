@@ -6,14 +6,24 @@ type TabLinkProps = {
   text: string;
   isActive: boolean;
   isExternal?: boolean;
+  badgeText?: string;
+  hideTextOnMobile?: boolean;
   url: string;
 };
 
 export function TabLink(props: TabLinkProps) {
-  const { icon: Icon, isExternal = false, url, text, isActive } = props;
+  const {
+    icon: Icon,
+    badgeText,
+    isExternal = false,
+    url,
+    text,
+    isActive,
+    hideTextOnMobile = false,
+  } = props;
 
   const className = cn(
-    'inline-flex items-center gap-1.5 border-b-2 px-2 pb-2.5 text-sm',
+    'inline-flex transition-colors items-center gap-1.5 border-b-2 px-2 pb-2.5 text-sm',
     {
       'cursor-default border-b-black font-medium text-black': isActive,
       'border-b-transparent font-normal text-gray-400 hover:text-gray-700':
@@ -22,11 +32,15 @@ export function TabLink(props: TabLinkProps) {
     },
   );
 
+  const textClass = cn({
+    'hidden sm:inline': hideTextOnMobile,
+  });
+
   if (isActive) {
     return (
       <span className={className}>
         <Icon className="h-4 w-4 flex-shrink-0" />
-        {text}
+        <span className={textClass}>{text}</span>
       </span>
     );
   }
@@ -41,7 +55,13 @@ export function TabLink(props: TabLinkProps) {
       className={className}
     >
       <Icon className="h-4 w-4 flex-shrink-0" />
-      {text}
+      <span className={textClass}>{text}</span>
+
+      {badgeText && (
+        <span className="ml-0.5 hidden rounded-full bg-gray-200 px-1.5 py-0.5 text-xs font-medium text-black sm:block">
+          {badgeText}
+        </span>
+      )}
     </a>
   );
 }

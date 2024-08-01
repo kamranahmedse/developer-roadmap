@@ -1,27 +1,17 @@
 ---
 import {
-  ChevronRightIcon,
-  Download,
   ArrowLeftIcon,
   FolderKanbanIcon,
   MapIcon,
   MessageCircle,
-  SwordsIcon,
 } from 'lucide-react';
 import { TabLink } from './TabLink';
-import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
-import { Share2 } from 'lucide-react';
-import ShareIcons from './ShareIcons/ShareIcons.astro';
-import { RoadmapTitleQuestion } from './RoadmapTitleQuestion';
-import ResourceProgressStats from './ResourceProgressStats.astro';
-import { isLoggedIn } from '../lib/jwt';
-import { showLoginPopup } from '../lib/popup';
 
 export interface Props {
   title: string;
@@ -42,11 +32,9 @@ const {
   roadmapId,
   tnsBannerLink,
   isUpcoming = false,
-  hasSearch = false,
   note,
   hasTopics = false,
   question,
-  isForkable = false,
 } = Astro.props;
 
 const roadmapTitle =
@@ -80,7 +68,7 @@ const hasTnsBanner = !!tnsBannerLink;
   >
     <div class='flex items-start justify-between'>
       <a
-        class='inline-flex items-center justify-center rounded-md bg-gray-300 px-3 py-1.5 text-xs font-medium hover:bg-gray-400 sm:hidden sm:text-sm'
+        class='inline-flex items-center justify-center rounded-md bg-gray-300 px-2 py-1.5 text-xs font-medium hover:bg-gray-400 sm:hidden sm:text-sm'
         aria-label='Back to roadmaps'
         href={'/roadmaps'}
       >
@@ -134,6 +122,7 @@ const hasTnsBanner = !!tnsBannerLink;
           url={`/${roadmapId}/projects`}
           icon={FolderKanbanIcon}
           text='Projects'
+          badgeText='soon'
         />
       </div>
 
@@ -142,6 +131,7 @@ const hasTnsBanner = !!tnsBannerLink;
         icon={MessageCircle}
         text='Suggest Changes'
         isExternal={true}
+        hideTextOnMobile={true}
       />
     </div>
   </div>
