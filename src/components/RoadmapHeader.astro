@@ -1,11 +1,16 @@
 ---
-import { ChevronRightIcon } from 'lucide-react';
+import {
+  ChevronRightIcon,
+  Download,
+  ArrowLeftIcon,
+  FolderKanbanIcon,
+  MapIcon,
+  MessageCircle,
+  SwordsIcon,
+} from 'lucide-react';
+import { TabLink } from './TabLink';
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
-import RoadmapHint from './RoadmapHint.astro';
-import RoadmapNote from './RoadmapNote.astro';
-import TopicSearch from './TopicSearch/TopicSearch.astro';
-import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
@@ -15,6 +20,8 @@ import { Share2 } from 'lucide-react';
 import ShareIcons from './ShareIcons/ShareIcons.astro';
 import { RoadmapTitleQuestion } from './RoadmapTitleQuestion';
 import ResourceProgressStats from './ResourceProgressStats.astro';
+import { isLoggedIn } from '../lib/jwt';
+import { showLoginPopup } from '../lib/popup';
 
 export interface Props {
   title: string;
@@ -53,7 +60,7 @@ const hasTnsBanner = !!tnsBannerLink;
 <LoginPopup />
 <ProgressHelpPopup />
 
-<div class='container mt-3 flex flex-col gap-2.5'>
+<div class='container mt-0 flex flex-col gap-2.5 px-0 sm:mt-3 sm:px-4'>
   {
     tnsBannerLink && (
       <div class='hidden rounded-md border bg-white px-2 py-1.5 sm:block'>
@@ -68,16 +75,28 @@ const hasTnsBanner = !!tnsBannerLink;
     )
   }
 
-  <div class='relative rounded-lg border bg-white px-5 py-4'>
+  <div
+    class='relative rounded-none border bg-white px-5 pb-0 pt-4 sm:rounded-lg'
+  >
     <div class='flex items-start justify-between'>
       <a
+        class='inline-flex items-center justify-center rounded-md bg-gray-300 px-3 py-1.5 text-xs font-medium hover:bg-gray-400 sm:hidden sm:text-sm'
+        aria-label='Back to roadmaps'
+        href={'/roadmaps'}
+      >
+        <ArrowLeftIcon className='h-4 w-4' />
+      </a>
+
+      <a
         href='/roadmaps'
-        class='rounded-md text-sm font-medium text-gray-500 transition-all hover:-translate-x-1 hover:text-black focus:outline-0'
+        class='hidden rounded-md text-sm font-medium text-gray-500 transition-all hover:-translate-x-1 hover:text-black focus:outline-0 sm:block'
         aria-label='Back to All Roadmaps'
       >
         &larr;&nbsp;<span>&nbsp;All Roadmaps</span>
       </a>
-      <div class='flex items-center gap-1 relative -top-0.5 -right-2'>
+      <div
+        class='relative right-0 top-0 flex items-center gap-1 sm:-right-2 sm:-top-0.5'
+      >
         <DownloadRoadmapButton roadmapId={roadmapId} client:idle />
         <ShareRoadmapButton
           description={description}
@@ -86,8 +105,8 @@ const hasTnsBanner = !!tnsBannerLink;
         />
       </div>
     </div>
-    <div class='my-3 sm:mb-4'>
-      <h1 class='mb-0.5 text-2xl font-bold sm:mb-1.5 sm:text-3xl'>
+    <div class='mb-5 mt-5 sm:mb-8 sm:mt-5'>
+      <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-3xl'>
         {title}
         <span class='relative top-0 sm:-top-1'>
           <MarkFavorite
@@ -104,22 +123,26 @@ const hasTnsBanner = !!tnsBannerLink;
     </div>
 
     <div class='flex justify-between gap-2 sm:gap-0'>
-      <div class='flex gap-1 sm:gap-2'>
-        <!-- here will be tabs -->
+      <div class='relative top-px flex gap-1 sm:gap-3'>
+        <TabLink
+          url={`/${roadmapId}`}
+          icon={MapIcon}
+          isActive={true}
+          text='Roadmap'
+        />
+        <TabLink
+          url={`/${roadmapId}/projects`}
+          icon={FolderKanbanIcon}
+          text='Projects'
+        />
       </div>
 
-      <div class='flex items-center gap-1 sm:gap-2'>
-        <a
-          href={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
-          target='_blank'
-          class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-          aria-label='Suggest Changes'
-        >
-          <Icon icon='comment' class='h-3 w-3' />
-          <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
-          <span class='ml-2 inline sm:hidden'>Suggest</span>
-        </a>
-      </div>
+      <TabLink
+        url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
+        icon={MessageCircle}
+        text='Suggest Changes'
+        isExternal={true}
+      />
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 import Loader from '../Loader.astro';
 import './FrameRenderer.css';
+import { Spinner } from "../ReactIcons/Spinner";
 import { ProgressNudge } from "./ProgressNudge";
 
 export interface Props {
@@ -16,6 +17,7 @@ const { resourceId, resourceType, dimensions = null } = Astro.props;
 ---
 
 <div
+    class="mt-3.5"
   id='resource-svg-wrap'
   style={dimensions
     ? `--aspect-ratio:${dimensions.width}/${dimensions.height}`
