@@ -1,4 +1,5 @@
 ---
+import { ChevronRightIcon } from 'lucide-react';
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import RoadmapHint from './RoadmapHint.astro';
@@ -7,11 +8,13 @@ import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
-import { CreateVersion } from './CreateVersion/CreateVersion';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
+import { DownloadRoadmapButton } from './DownloadRoadmapButton';
 import { Share2 } from 'lucide-react';
 import ShareIcons from './ShareIcons/ShareIcons.astro';
+import { RoadmapTitleQuestion } from './RoadmapTitleQuestion';
+import ResourceProgressStats from './ResourceProgressStats.astro';
 
 export interface Props {
   title: string;
@@ -39,8 +42,6 @@ const {
   isForkable = false,
 } = Astro.props;
 
-const isRoadmapReady = !isUpcoming;
-
 const roadmapTitle =
   roadmapId === 'devops'
     ? 'DevOps'
@@ -52,26 +53,41 @@ const hasTnsBanner = !!tnsBannerLink;
 <LoginPopup />
 <ProgressHelpPopup />
 
-<div class='relative border-b'>
-  <div
-    class:list={[
-      'container relative py-5',
-      {
-        'sm:py-16': hasTnsBanner,
-        'sm:py-12': !hasTnsBanner,
-      },
-    ]}
-  >
-    <div class='mb-3 mt-0 sm:mb-4'>
-      {
-        isForkable && (
-          <div class='mb-2'>
-            <CreateVersion client:load roadmapId={roadmapId} />
-          </div>
-        )
-      }
+<div class='container mt-3 flex flex-col gap-2.5'>
+  {
+    tnsBannerLink && (
+      <div class='hidden rounded-md border bg-white px-2 py-1.5 sm:block'>
+        <p class='py-0.5 text-left text-sm'>
+          <span class='badge mr-1'>Partner</span>
+          Get the latest {roadmapTitle} news from our sister site{' '}
+          <a href={tnsBannerLink} target='_blank' class='font-medium underline'>
+            TheNewStack.io
+          </a>
+        </p>
+      </div>
+    )
+  }
 
-      <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
+  <div class='relative rounded-lg border bg-white px-5 py-4'>
+    <div class='flex items-start justify-between'>
+      <a
+        href='/roadmaps'
+        class='rounded-md text-sm font-medium text-gray-500 transition-all hover:-translate-x-1 hover:text-black focus:outline-0'
+        aria-label='Back to All Roadmaps'
+      >
+        &larr;&nbsp;<span>&nbsp;All Roadmaps</span>
+      </a>
+      <div class='flex items-center gap-1 relative -top-0.5 -right-2'>
+        <DownloadRoadmapButton roadmapId={roadmapId} client:idle />
+        <ShareRoadmapButton
+          description={description}
+          pageUrl={`https://roadmap.sh/${roadmapId}`}
+          client:idle
+        />
+      </div>
+    </div>
+    <div class='my-3 sm:mb-4'>
+      <h1 class='mb-0.5 text-2xl font-bold sm:mb-1.5 sm:text-3xl'>
         {title}
         <span class='relative top-0 sm:-top-1'>
           <MarkFavorite
@@ -82,116 +98,28 @@ const hasTnsBanner = !!tnsBannerLink;
           />
         </span>
       </h1>
-      <p class='text-sm text-gray-500 sm:text-lg'>{description}</p>
+      <p class='text-balance text-sm text-gray-500 sm:text-base'>
+        {description}
+      </p>
     </div>
 
     <div class='flex justify-between gap-2 sm:gap-0'>
       <div class='flex gap-1 sm:gap-2'>
-        {
-          !hasSearch && (
-            <>
-              <a
-                href='/roadmaps'
-                class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-                aria-label='Back to All Roadmaps'
-              >
-                &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
-              </a>
-
-              <ShareRoadmapButton
-                description={description}
-                pageUrl={`https://roadmap.sh/${roadmapId}`}
-                client:idle
-              />
-
-              {isRoadmapReady && (
-                <>
-                  <button
-                    data-guest-required
-                    data-popup='login-popup'
-                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
-                    aria-label='Download Roadmap'
-                  >
-                    <Icon icon='download' />
-                    <span class='ml-2 hidden sm:inline'>Download</span>
-                  </button>
-
-                  <a
-                    data-auth-required
-                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
-                    aria-label='Download Roadmap'
-                    target='_blank'
-                    href={`/pdfs/roadmaps/${roadmapId}.pdf`}
-                  >
-                    <Icon icon='download' />
-                    <span class='ml-2 hidden sm:inline'>Download</span>
-                  </a>
-                </>
-              )}
-            </>
-          )
-        }
-
-        {
-          hasSearch && (
-            <a
-              href={`/${roadmapId}`}
-              class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-              aria-label='Back to Visual Roadmap'
-            >
-              &larr;
-              <span class='inline'>&nbsp;Visual Roadmap</span>
-            </a>
-          )
-        }
+        <!-- here will be tabs -->
       </div>
 
       <div class='flex items-center gap-1 sm:gap-2'>
-        {
-          isRoadmapReady && (
-            <a
-              href={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
-              target='_blank'
-              class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-              aria-label='Suggest Changes'
-            >
-              <Icon icon='comment' class='h-3 w-3' />
-              <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
-              <span class='ml-2 inline sm:hidden'>Suggest</span>
-            </a>
-          )
-        }
+        <a
+          href={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
+          target='_blank'
+          class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
+          aria-label='Suggest Changes'
+        >
+          <Icon icon='comment' class='h-3 w-3' />
+          <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
+          <span class='ml-2 inline sm:hidden'>Suggest</span>
+        </a>
       </div>
     </div>
-
-    <!-- Desktop: Roadmap Resources - Alert -->
-    {
-      hasTopics && (
-        <RoadmapHint
-          tnsBannerLink={tnsBannerLink}
-          titleQuestion={question?.title}
-          titleAnswer={question?.description}
-          roadmapId={roadmapId}
-        />
-      )
-    }
-
-    {hasSearch && <TopicSearch />}
   </div>
-
-  {
-    tnsBannerLink && (
-      <div class='absolute left-0 right-0 top-0 hidden border-b border-b-gray-200 px-2 py-1.5 sm:block'>
-        <p class='py-0.5 text-center text-sm'>
-          <span class='badge mr-1'>Partner</span>
-          Get the latest {roadmapTitle} news from our sister site{' '}
-          <a href={tnsBannerLink} target='_blank' class='font-medium underline'>
-            TheNewStack.io
-          </a>
-        </p>
-      </div>
-    )
-  }
 </div>
-
-{note && <RoadmapNote text={note} />}
