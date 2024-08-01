@@ -13,7 +13,7 @@ export function TabLink(props: TabLinkProps) {
   const { icon: Icon, isExternal = false, url, text, isActive } = props;
 
   const className = cn(
-    'inline-flex items-center gap-1 border-b-2 px-2 pb-2.5 text-sm',
+    'inline-flex items-center gap-1.5 border-b-2 px-2 pb-2.5 text-sm',
     {
       'cursor-default border-b-black font-medium text-black': isActive,
       'border-b-transparent font-normal text-gray-400 hover:text-gray-700':
