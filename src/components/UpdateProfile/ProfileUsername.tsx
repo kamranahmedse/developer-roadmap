@@ -119,7 +119,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
               // only allow letters, numbers
               const keyCode = e.key;
               const validKey =
-                USERNAME_REGEX.test(keyCode) && username.length <= 10;
+                USERNAME_REGEX.test(keyCode) && username.length <= 20;
               if (
                 !validKey &&
                 !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(
@@ -131,7 +131,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             }}
             onInput={(e) => {
               const value = (e.target as HTMLInputElement).value?.trim();
-              const isValid = USERNAME_REGEX.test(value) && value.length <= 10;
+              const isValid = USERNAME_REGEX.test(value) && value.length <= 20;
               if (!isValid) {
                 return;
               }
