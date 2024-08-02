@@ -2058,7 +2058,7 @@
       "selected": false,
       "data": {
         "label": "API Security Best Practices",
-        "href": "",
+        "href": "https://roadmap.sh/best-practices/api-security",
         "color": "#ffffff",
         "backgroundColor": "#2a79e4",
         "style": {
@@ -2323,7 +2323,7 @@
       "selected": false,
       "data": {
         "label": "API Performance Best Practices",
-        "href": "",
+        "href": "https://roadmap.sh/best-practices/backend-performance",
         "color": "#ffffff",
         "backgroundColor": "#2a79e4",
         "style": {
