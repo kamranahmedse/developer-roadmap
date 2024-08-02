@@ -10,6 +10,5 @@ export function ReadonlyEditor(props: any) {
         npm run generate-renderer
       </code>
     </div>
-  );loij
-  45
+  );
 }
