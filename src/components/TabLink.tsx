@@ -58,7 +58,7 @@ export function TabLink(props: TabLinkProps) {
       <span className={textClass}>{text}</span>
 
       {badgeText && (
-        <span className="hidden items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black sm:flex group-hover:bg-yellow-300 transition-colors">
+        <span className="hidden ml-0.5 items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black transition-colors group-hover:bg-yellow-300 sm:flex">
           <span className="relative -top-px">{badgeText}</span>
         </span>
       )}
