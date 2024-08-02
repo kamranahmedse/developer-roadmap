@@ -85,6 +85,12 @@ const hasTnsBanner = !!tnsBannerLink;
       <div
         class='relative right-0 top-0 flex items-center gap-1 sm:-right-2 sm:-top-0.5'
       >
+        <MarkFavorite
+          resourceId={roadmapId}
+          resourceType='roadmap'
+          className='relative top-px mr-2 text-gray-500 !opacity-100 hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] hover:[&>svg]:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
+          client:only='react'
+        />
         <DownloadRoadmapButton roadmapId={roadmapId} client:idle />
         <ShareRoadmapButton
           description={description}
@@ -96,14 +102,6 @@ const hasTnsBanner = !!tnsBannerLink;
     <div class='mb-5 mt-5 sm:mb-8 sm:mt-5'>
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-3xl'>
         {title}
-        <span class='relative top-0 sm:-top-1'>
-          <MarkFavorite
-            resourceId={roadmapId}
-            resourceType='roadmap'
-            className='relative ml-1.5 text-gray-500 !opacity-100 hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] hover:[&>svg]:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
-            client:only='react'
-          />
-        </span>
       </h1>
       <p class='text-balance text-sm text-gray-500 sm:text-base'>
         {description}
@@ -122,7 +120,7 @@ const hasTnsBanner = !!tnsBannerLink;
           url={`/${roadmapId}/projects`}
           icon={FolderKanbanIcon}
           text='Projects'
-          badgeText='soon'
+          badgeText='coming soon'
         />
       </div>
 

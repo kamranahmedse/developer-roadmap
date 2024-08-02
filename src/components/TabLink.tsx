@@ -23,7 +23,7 @@ export function TabLink(props: TabLinkProps) {
   } = props;
 
   const className = cn(
-    'inline-flex transition-colors items-center gap-1.5 border-b-2 px-2 pb-2.5 text-sm',
+    'inline-flex group transition-colors items-center gap-1.5 border-b-2 px-2 pb-2.5 text-sm',
     {
       'cursor-default border-b-black font-medium text-black': isActive,
       'border-b-transparent font-normal text-gray-400 hover:text-gray-700':
@@ -58,8 +58,8 @@ export function TabLink(props: TabLinkProps) {
       <span className={textClass}>{text}</span>
 
       {badgeText && (
-        <span className="ml-0.5 hidden rounded-full bg-gray-200 px-1.5 py-0.5 text-xs font-medium text-black sm:block">
-          {badgeText}
+        <span className="hidden items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black sm:flex group-hover:bg-yellow-300 transition-colors">
+          <span className="relative -top-px">{badgeText}</span>
         </span>
       )}
     </a>
