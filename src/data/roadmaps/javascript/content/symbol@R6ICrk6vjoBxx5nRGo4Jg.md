@@ -4,5 +4,5 @@ Symbols are a unique and immutable primitive data type in JavaScript, introduced
 
 Learn more from the following resources:
 
-- [@article@Symbols in JavaScript](https://www.javascripttutorial.net/symbol/)
-- [@article@Symbols Data type in JavaScript](https://javascript.info/symbol)
+- [@article@Symbol data type in JavaScript](https://www.javascripttutorial.net/symbol/)
+- [@article@Symbol type](https://javascript.info/symbol)
