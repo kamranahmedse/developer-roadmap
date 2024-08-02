@@ -5,3 +5,4 @@ dist
 public
 node_modules
 pnpm-lock.yaml
+html.index
