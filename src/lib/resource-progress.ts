@@ -110,6 +110,7 @@ export function clearMigratedRoadmapProgress(
     'angular',
     'nodejs',
     'typescript',
+    'python',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
@@ -450,9 +451,9 @@ export function refreshProgressCounters() {
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {
-    doneCountEls.forEach(
-      (doneCountEl) => (doneCountEl.innerHTML = `${totalDone}`),
-    );
+    doneCountEls.forEach((doneCountEl) => {
+      doneCountEl.innerHTML = `${totalDone + totalSkipped}`;
+    });
   }
 
   const learningCountEls = document.querySelectorAll(
