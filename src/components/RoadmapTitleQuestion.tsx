@@ -58,7 +58,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
             onClick={() => setIsAnswerVisible(false)}
           >
             <span className="flex flex-grow items-center">
-              <Info className="mr-2 inline-block h-6 w-6" />
+              <Info className="mr-2 inline-block h-4 w-4" strokeWidth={2.5} />
               {question}
             </span>
             <span className="relative -top-px flex-shrink-0 text-gray-400">

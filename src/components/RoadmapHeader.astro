@@ -24,6 +24,7 @@ export interface Props {
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
+  activeTab?: 'roadmap' | 'projects';
 }
 
 const {
@@ -35,6 +36,7 @@ const {
   note,
   hasTopics = false,
   question,
+  activeTab = 'roadmap',
 } = Astro.props;
 
 const roadmapTitle =
@@ -113,14 +115,15 @@ const hasTnsBanner = !!tnsBannerLink;
         <TabLink
           url={`/${roadmapId}`}
           icon={MapIcon}
-          isActive={true}
+          isActive={activeTab === 'roadmap'}
           text='Roadmap'
         />
         <TabLink
           url={`/${roadmapId}/projects`}
           icon={FolderKanbanIcon}
           text='Projects'
-          badgeText='coming soon'
+          isActive={activeTab === 'projects'}
+          badgeText='soon'
         />
       </div>
 
