@@ -13,11 +13,11 @@ const { resourceId, resourceType } = Astro.props;
 <div
   data-progress-nums-container
   class:list={[
-    'striped-loader relative flex items-center justify-between rounded-md bg-white px-3 py-2.5',
+    'striped-loader relative flex items-center justify-between rounded-md bg-white px-2 sm:px-2.5 py-2 sm:py-2.5',
   ]}
 >
   <p
-    class='flex text-sm opacity-0 transition-opacity duration-300'
+    class='flex text-xs sm:text-sm opacity-0 transition-opacity duration-300'
     data-progress-nums
   >
     <span
