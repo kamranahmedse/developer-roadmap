@@ -70,7 +70,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute left-0 z-[999] mt-1 w-48 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute right-0 z-[999] mt-1 w-40 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="flex flex-col px-1 py-1">
             <button
               onClick={() => {
