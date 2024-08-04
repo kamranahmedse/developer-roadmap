@@ -11,9 +11,6 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh/',
-  experimental: {
-    rewriting: true,
-  },
   markdown: {
     shikiConfig: {
       theme: 'dracula',
