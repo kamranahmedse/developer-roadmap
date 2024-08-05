@@ -2,7 +2,7 @@
 
 AnalogJS is a full-stack meta-framework powered by Vite and Nitro for Angular. Analog supports both Server-Side Rendering (SSR) and Static Site Generation (SSG). Analog uses file-based routing and supports API (server) routes.
 
-Visting the following resources to learn more: 
+Visit the following resources to learn more: 
 
 - [@official@Analog](https://analogjs.org/)
 - [@video@Robin Goetz - AnalogJS - The Vite powered Angular meta-framework | NG Belgrade Conf 2024](https://www.youtube.com/watch?v=BSgpvP4eAGk)
