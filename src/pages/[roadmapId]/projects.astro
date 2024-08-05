@@ -6,6 +6,7 @@ import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import { FolderKanbanIcon } from 'lucide-react';
 import { EmptyProjects } from '../../components/Projects/EmptyProjects';
+import { ProjectsList } from '../../components/Projects/ProjectsList';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
@@ -46,6 +47,15 @@ const ogImageUrl =
     group: 'roadmap',
     resourceId: roadmapId,
   });
+
+const projects = ['a'];
+
+const descriptionNoun = {
+  'AI and Data Scientist': 'AI and Data Science',
+  'Game Developer': 'Game Development',
+  'Technical Writer': 'Technical Writing',
+  'Product Manager': 'Product Management',
+};
 ---
 
 <BaseLayout
@@ -61,8 +71,8 @@ const ogImageUrl =
 >
   <div class='bg-gray-50'>
     <RoadmapHeader
-      title={roadmapData.title}
-      description={roadmapData.description}
+      title={`${roadmapData.briefTitle} Projects`}
+      description={`Project ideas to take you from beginner to advanced in ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`}
       note={roadmapData.note}
       tnsBannerLink={roadmapData.tnsBannerLink}
       roadmapId={roadmapId}
@@ -74,11 +84,8 @@ const ogImageUrl =
     />
 
     <div class='container'>
-      <div
-        class='relative my-2.5 flex min-h-[400px] flex-col items-center justify-center rounded-lg border bg-white'
-      >
-        <EmptyProjects client:load />
-      </div>
+      {projects.length === 0 && <EmptyProjects client:load />}
+      {projects.length > 0 && <ProjectsList client:load />}
     </div>
   </div>
 </BaseLayout>
