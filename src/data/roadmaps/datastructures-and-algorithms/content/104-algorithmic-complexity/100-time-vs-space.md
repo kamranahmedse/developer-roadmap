@@ -5,3 +5,6 @@ In the context of algorithmic complexity, "time" refers to the amount of computa
 Learn more from the following resources:
 
 - [@article@Cheat Sheet](https://www.bigocheatsheet.com/)
+- [@video@Big O Notation — Calculating Time Complexity](https://www.youtube.com/watch?v=Z0bH0cMY0E8)
+- [@video@Free Code Camp Big-O Tutorial](https://youtu.be/Mo4vesaut8g?si=1jyb-EkfCLf9PNND)
+  
