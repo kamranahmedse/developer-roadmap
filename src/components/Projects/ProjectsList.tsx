@@ -1,10 +1,20 @@
 import { ProjectCard } from './ProjectCard.tsx';
-import { Diff, HeartHandshake } from 'lucide-react';
+import { HeartHandshake, Trash2 } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import {
+  projectDifficulties,
+  type ProjectDifficultyType,
+  type ProjectFileType,
+} from '../../lib/project.ts';
+import {
+  deleteUrlParam,
+  getUrlParams,
+  setUrlParams,
+} from '../../lib/browser.ts';
 
 type DifficultyButtonProps = {
-  difficulty: 'beginner' | 'intermediate' | 'senior';
+  difficulty: ProjectDifficultyType;
   isActive?: boolean;
   onClick?: () => void;
 };
@@ -28,36 +38,65 @@ function DifficultyButton(props: DifficultyButtonProps) {
   );
 }
 
-export function ProjectsList() {
+type ProjectsListProps = {
+  projects: ProjectFileType[];
+};
+
+export function ProjectsList(props: ProjectsListProps) {
+  const { projects } = props;
+
+  const { difficulty: urlDifficulty } = getUrlParams();
   const [difficulty, setDifficulty] = useState<
-    'beginner' | 'intermediate' | 'senior'
-  >();
+    ProjectDifficultyType | undefined
+  >(urlDifficulty);
+
+  const projectsByDifficulty: Map<ProjectDifficultyType, ProjectFileType[]> =
+    useMemo(() => {
+      const result = new Map<ProjectDifficultyType, ProjectFileType[]>();
+
+      for (const project of projects) {
+        const difficulty = project.frontmatter.difficulty;
+
+        if (!result.has(difficulty)) {
+          result.set(difficulty, []);
+        }
+
+        result.get(difficulty)?.push(project);
+      }
+
+      return result;
+    }, [projects]);
+
+  const matchingProjects = difficulty
+    ? projectsByDifficulty.get(difficulty) || []
+    : projects;
 
   return (
     <div className="flex flex-col">
       <div className="my-2.5 flex items-center justify-between">
-        <div className="flex items-center gap-1">
-          <DifficultyButton
-            onClick={() => {
-              setDifficulty('beginner');
-            }}
-            difficulty={'beginner'}
-            isActive={difficulty === 'beginner'}
-          />
-          <DifficultyButton
-            onClick={() => {
-              setDifficulty('intermediate');
-            }}
-            difficulty={'intermediate'}
-            isActive={difficulty === 'intermediate'}
-          />
-          <DifficultyButton
-            onClick={() => {
-              setDifficulty('senior');
-            }}
-            difficulty={'senior'}
-            isActive={difficulty === 'senior'}
-          />
+        <div className="flex gap-1">
+          {projectDifficulties.map((projectDifficulty) => (
+            <DifficultyButton
+              onClick={() => {
+                setDifficulty(projectDifficulty);
+                setUrlParams({ difficulty: projectDifficulty });
+              }}
+              difficulty={projectDifficulty}
+              isActive={projectDifficulty === difficulty}
+            />
+          ))}
+          {difficulty && (
+            <button
+              onClick={() => {
+                setDifficulty(undefined);
+                deleteUrlParam('difficulty');
+              }}
+              className="flex items-center gap-1.5 rounded-md border border-red-500 bg-transparent px-2 py-0.5 text-sm text-red-500 transition-colors hover:bg-red-500 hover:text-white"
+            >
+              <Trash2 className="h-3.5 w-3.5" strokeWidth={2.25} />
+              Clear
+            </button>
+          )}
         </div>
         <a
           href={''}
@@ -68,27 +107,23 @@ export function ProjectsList() {
         </a>
       </div>
       <div className="mb-24 grid grid-cols-3 gap-1.5">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {matchingProjects.length === 0 && (
+          <div className="col-span-3 rounded-md border bg-white p-4 text-left text-sm text-gray-500">
+            <p>No matching projects found.</p>
+          </div>
+        )}
+
+        {matchingProjects
+          .sort((project) => {
+            return project.frontmatter.difficulty === 'beginner'
+              ? -1
+              : project.frontmatter.difficulty === 'intermediate'
+                ? 0
+                : 1;
+          })
+          .map((matchingProject) => (
+            <ProjectCard project={matchingProject} />
+          ))}
       </div>
     </div>
   );
