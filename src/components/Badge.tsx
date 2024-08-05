@@ -13,6 +13,7 @@ export function Badge(type: BadgeProps) {
     yellow: 'bg-yellow-100 text-yellow-700 border-yellow-200',
     grey: 'bg-gray-100 text-gray-700 border-gray-200',
     white: 'bg-white text-black border-gray-200',
+    teal: 'bg-teal-100 text-teal-700 border-teal-200',
   };
 
   return (

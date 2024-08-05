@@ -1,0 +1,95 @@
+---
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
+import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Badge } from '../../components/Badge';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+} from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import RoadmapNote from '../../components/RoadmapNote.astro';
+import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
+import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import {
+  getAllProjects,
+  getProjectById,
+  getProjectsByRoadmapId,
+  ProjectFrontmatter,
+} from '../../lib/project';
+import AstroIcon from '../../components/AstroIcon.astro';
+
+export async function getStaticPaths() {
+  const projects = await getAllProjects();
+
+  return projects
+    .map((project) => project.id)
+    .map((projectId) => ({
+      params: { projectId },
+    }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  projectId: string;
+}
+
+const { projectId } = Astro.params as Params;
+
+const project = await getProjectById(projectId);
+const projectData = project.frontmatter as ProjectFrontmatter;
+
+let jsonLdSchema = [];
+
+const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
+---
+
+<BaseLayout
+  permalink={`/projects/${projectId}`}
+  title={projectData?.seo?.title}
+  briefTitle={projectData.title}
+  ogImageUrl={ogImageUrl}
+  description={projectData.seo.description}
+  keywords={projectData.seo.keywords}
+  jsonLd={jsonLdSchema}
+  resourceId={projectId}
+  resourceType='project'
+>
+  <div class='bg-gray-50'>
+    <div class='container'>
+      <div
+        class='my-3 flex flex-row items-center gap-1.5 rounded-md border bg-white px-2 py-2 text-sm font-medium'
+      >
+        <AstroIcon icon='map' class='h-4 w-4' />
+        Relevant roadmaps to visit <span class='flex flex-row gap-1'>
+          {
+            project.roadmaps.map((roadmap) => (
+              <a
+                class='text-blue-700 underline underline-offset-2 hover:text-blue-800'
+                href={`/${roadmap.id}`}
+              >
+                {roadmap.frontmatter?.briefTitle}
+              </a>
+            ))
+          }
+        </span>
+      </div>
+
+      <div class='mb-3 overflow-hidden rounded-md border bg-white p-5'>
+        <div class='-m-5 p-4'>
+          <div class='mb-2 flex flex-row gap-1.5'>
+            <Badge variant='yellow' text={projectData.difficulty} />
+            <Badge variant='blue' text={projectData.nature} />
+          </div>
+          <h1 class='text-2xl font-semibold'>{projectData.title}</h1>
+          <p class='text-gray-500'>{projectData.description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

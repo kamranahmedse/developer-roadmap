@@ -1,6 +1,11 @@
 import type { MarkdownFileType } from './file';
+import { getRoadmapById, type RoadmapFileType } from './roadmap.ts';
 
-export const projectDifficulties = ['beginner', 'intermediate', 'advanced'] as const;
+export const projectDifficulties = [
+  'beginner',
+  'intermediate',
+  'advanced',
+] as const;
 export type ProjectDifficultyType = (typeof projectDifficulties)[number];
 
 export interface ProjectFrontmatter {
@@ -14,12 +19,14 @@ export interface ProjectFrontmatter {
     title: string;
     description: string;
     keywords: string[];
+    ogImageUrl: string;
   };
   roadmapIds: string[];
 }
 
 export type ProjectFileType = MarkdownFileType<ProjectFrontmatter> & {
   id: string;
+  roadmaps: RoadmapFileType[];
 };
 
 /**
@@ -74,9 +81,14 @@ export async function getProjectById(
   groupId: string,
 ): Promise<ProjectFileType> {
   const project = await import(`../data/projects/${groupId}.md`);
+  const roadmapIds = project.frontmatter.roadmapIds || [];
+  const roadmaps = await Promise.all(
+    roadmapIds.map((roadmapId: string) => getRoadmapById(roadmapId)),
+  );
 
   return {
     ...project,
+    roadmaps: roadmaps,
     id: projectPathToId(project.file),
   };
 }
