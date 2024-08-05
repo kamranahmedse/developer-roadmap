@@ -1,6 +1,6 @@
 # @if
 
-The @if block conditionally displays its content when its condition expression is truthy.  Content is added and removed from the DOM based on the evaluation of conditional expressions in the @if and @else blocks.
+The @if block conditionally displays its content when its condition expression is truthy. Content is added and removed from the DOM based on the evaluation of conditional expressions in the @if and @else blocks.
 
 ```
 const count = signal(0);
