@@ -2,25 +2,22 @@
 
 The @if block conditionally displays its content when its condition expression is truthy. Content is added and removed from the DOM based on the evaluation of conditional expressions in the @if and @else blocks.
 
-```
-const count = signal(0);
+'''html
+<div>
+  @if (x > y) {
+    <p>{{x}} is greater than {{y}}</p>
+  } @else if (y > x) {
+    <p>{{x}} is less than {{y}}</p>
+  } @else {
+    <p>{{x}} is equal to {{y}}</p>
+  }
+</div>
+'''
 
-@if(count){
-    return true;
-}
-```
+Some things to be mindful of when using @if:
 
-Remember to read a signal inside a conditional because a signal will always be evaluated as truthy since signals cannot be null.
-
-```
-const count = signal(0);
-
-@if(count() === 1){
-    return false;
-}
-```
-
-Another issue that can occur with signals and @if is type-narrowing problems.  
+- If you forget to read a signal, the conditional will always be evaluated as truthy since signals cannot be null.
+- Inside an @if conditional, using optional chaining on an object's property can cause TypeScript issues.
 
 Visit the following resources to learn more:
 
