@@ -1,6 +1,6 @@
 ---
 title: 'Task Tracker'
-description: 'Build a command line (CLI) app to track your tasks and manage your to-do list.'
+description: 'Build a CLI app to track your tasks and manage your to-do list.'
 isNew: false
 sort: 1
 difficulty: 'beginner'

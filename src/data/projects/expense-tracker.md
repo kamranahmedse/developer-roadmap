@@ -1,8 +1,8 @@
 ---
 title: 'Expense Tracker'
-description: 'Build a simple expense tracker application to manage your finances.'
+description: 'Build a simple expense tracker to manage your finances.'
 isNew: false
-sort: 2
+sort: 3
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
