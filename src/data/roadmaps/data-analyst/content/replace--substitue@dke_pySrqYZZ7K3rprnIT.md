@@ -1,5 +1,0 @@
-# Replace/Substitute
-
-When working with datasets, there is often a need for a Data Analyst to alter or adjust certain values. This necessity might arise due to incorrect or inaccurate entries, outliers affecting the results, or simply the need to rewrite certain values for better interpretation and analysis of the data. One of the key basic functions that allow for such alterations in the data is the 'replace' or 'substitute' function.
-
-The replace or substitute function provides an efficient way to replace certain values in a dataset with another. This fundamental function is not only applicable to numerals but it is also functional with categorical data. In data analysis, this replace or substitute function is absolutely critical, contributing greatly to data cleaning, manipulation, and subsequently, the accuracy and reliability of the analytical results obtained.
