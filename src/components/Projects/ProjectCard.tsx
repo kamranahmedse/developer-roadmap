@@ -23,7 +23,6 @@ export function ProjectCard(props: ProjectCardProps) {
     <a
       href={`/projects/${id}`}
       className="flex flex-col rounded-md border bg-white p-3 transition-colors hover:border-gray-300 hover:bg-gray-50"
-      target="_blank"
     >
       <span className="flex justify-between gap-1.5">
         <Badge

@@ -20,7 +20,11 @@ roadmapIds:
   - 'backend'
 ---
 
-You are required to create a simple RESTful API with basic CRUD operations for a personal blogging platform. CRUD stands for Create, Read, Update, and Delete. The goals of this project are to help you:
+You are required to create a simple RESTful API with basic CRUD operations for a personal blogging platform. CRUD stands for Create, Read, Update, and Delete. 
+
+## Goals
+
+The goals of this project are to help you:
 
 - Understand what the RESTful APIs are including best practices and conventions
 - Learn how to create a RESTful API
@@ -29,19 +33,25 @@ You are required to create a simple RESTful API with basic CRUD operations for a
 - Learn how to perform CRUD operations using an API
 - Learn how to work with databases
 
-## Constraints
-
-- You can use any programming language and framework of your choice
-- You can use any database of your choice (SQL or NoSQL)
-- You can use any libraries for validation and error handling
-- There is no frontend required for this project since you are building an API
-- You can use any API testing tool like Postman, Insomnia, or cURL to test your API
-
 ## Requirements
 
-Each blog post should have the following fields:
+You should create a RESTful API for a personal blogging platform. The API should allow users to perform the following operations:
 
-```json
+- Create a new blog post
+- Update an existing blog post
+- Delete an existing blog post
+- Get a single blog post
+- Get all blog posts
+- Filter blog posts by a search term
+
+Given below are the details for each API operation.
+
+### Create Blog Post
+
+Create a new blog post using the `POST` method
+
+```plaintext
+POST /posts
 {
   "title": "My First Blog Post",
   "content": "This is the content of my first blog post.",
@@ -50,14 +60,9 @@ Each blog post should have the following fields:
 }
 ```
 
-The API should have the following endpoints:
+Each blog post should have the following fields:
 
-### Create Blog Post
-
-Create a new blog post using the `POST` method
-
-```plaintext
-POST /posts
+```json
 {
   "title": "My First Blog Post",
   "content": "This is the content of my first blog post.",
