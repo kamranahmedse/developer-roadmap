@@ -19,12 +19,6 @@ roadmapIds:
   - 'backend'
 ---
 
-# Task Tracker CLI
-
-Build a command line interface (CLI) to track your tasks and manage your to-do list.
-
-## Description
-
 You are required to build a command line interface (CLI) application that allows users to manage their tasks and to-do list. The application should be able to perform the following operations:
 
 - Add a new task
@@ -34,3 +28,4 @@ You are required to build a command line interface (CLI) application that allows
 - Update a task
 - Search for a task
 - Filter tasks by status (done, pending)
+
