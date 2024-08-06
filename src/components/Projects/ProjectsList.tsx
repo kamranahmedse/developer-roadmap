@@ -114,6 +114,9 @@ export function ProjectsList(props: ProjectsListProps) {
         )}
 
         {matchingProjects
+          .sort((a, b) => {
+            return b.frontmatter.sort - a.frontmatter.sort;
+          })
           .sort((project) => {
             return project.frontmatter.difficulty === 'beginner'
               ? -1

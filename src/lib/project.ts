@@ -12,6 +12,7 @@ export interface ProjectFrontmatter {
   title: string;
   description: string;
   isNew: boolean;
+  sort: number;
   difficulty: ProjectDifficultyType;
   nature: string;
   skills: string[];

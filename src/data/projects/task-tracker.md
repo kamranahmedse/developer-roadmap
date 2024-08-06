@@ -2,13 +2,13 @@
 title: 'Task Tracker'
 description: 'Build a command line (CLI) app to track your tasks and manage your to-do list.'
 isNew: false
+sort: 1
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
   - 'Programming Language'
   - 'CLI'
   - 'Filesystem'
-  - 'Logic Building'
 seo:
   title: 'Task Tracker CLI'
   description: 'Build a command line interface (CLI) to track your tasks and manage your to-do list.'
