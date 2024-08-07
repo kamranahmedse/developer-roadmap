@@ -6,10 +6,12 @@ import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import { FolderKanbanIcon } from 'lucide-react';
 import { EmptyProjects } from '../../components/Projects/EmptyProjects';
+import { ProjectsList } from '../../components/Projects/ProjectsList';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
 import {
   generateArticleSchema,
   generateFAQSchema,
@@ -46,14 +48,32 @@ const ogImageUrl =
     group: 'roadmap',
     resourceId: roadmapId,
   });
+
+const descriptionNoun = {
+  'AI and Data Scientist': 'AI and Data Science',
+  'Game Developer': 'Game Development',
+  'Technical Writer': 'Technical Writing',
+  'Product Manager': 'Product Management',
+};
+
+const title = `${roadmapData.briefTitle} Projects`;
+const description = `Project ideas to take you from beginner to advanced in ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
+
+// `Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`
+const seoTitle = `${roadmapData.briefTitle} Projects`;
+const nounTitle =
+  descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
+const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
+
+const projects = await getProjectsByRoadmapId(roadmapId);
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
-  title={roadmapData?.seo?.title}
+  title={seoTitle}
+  description={seoDescription}
   briefTitle={roadmapData.briefTitle}
   ogImageUrl={ogImageUrl}
-  description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={true}
   resourceId={roadmapId}
@@ -61,8 +81,8 @@ const ogImageUrl =
 >
   <div class='bg-gray-50'>
     <RoadmapHeader
-      title={roadmapData.title}
-      description={roadmapData.description}
+      title={title}
+      description={description}
       note={roadmapData.note}
       tnsBannerLink={roadmapData.tnsBannerLink}
       roadmapId={roadmapId}
@@ -71,14 +91,12 @@ const ogImageUrl =
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
       activeTab='projects'
+      projectCount={projects.length}
     />
 
     <div class='container'>
-      <div
-        class='relative my-2.5 flex min-h-[400px] flex-col items-center justify-center rounded-lg border bg-white'
-      >
-        <EmptyProjects client:load />
-      </div>
+      {projects.length === 0 && <EmptyProjects client:load />}
+      {projects.length > 0 && <ProjectsList projects={projects} client:load />}
     </div>
   </div>
 </BaseLayout>

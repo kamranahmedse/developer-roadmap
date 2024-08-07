@@ -15,7 +15,7 @@ export function EmptyProjects() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="relative my-2.5 flex min-h-[400px] flex-col items-center justify-center rounded-lg border bg-white">
       <FolderKanbanIcon className="h-14 w-14 text-gray-300" strokeWidth={1.5} />
       <h2 className="mb-0.5 mt-2 text-center text-base font-medium text-gray-900 sm:text-xl">
         <span className="hidden sm:inline">Projects are coming soon!</span>
