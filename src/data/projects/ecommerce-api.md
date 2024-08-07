@@ -2,7 +2,7 @@
 title: 'E-Commerce API'
 description: 'E-Commerce platform with cart and payment gateway integration.'
 isNew: false
-sort: 12
+sort: 13
 difficulty: 'intermediate'
 nature: 'API'
 skills:

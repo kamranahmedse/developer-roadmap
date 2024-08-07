@@ -2,7 +2,7 @@
 title: 'Workout Tracker'
 description: 'App to let users track their workouts and progress.'
 isNew: false
-sort: 12
+sort: 14
 difficulty: 'intermediate'
 nature: 'API'
 skills:
