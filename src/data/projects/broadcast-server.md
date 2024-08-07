@@ -18,6 +18,11 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'nodejs'
+  - 'python'
+  - 'java'
+  - 'golang'
+  - 'spring-boot'
 ---
 
 You are required to create a simple broadcast server that will allow clients to connect to it, send messages that will be broadcasted to all connected clients.

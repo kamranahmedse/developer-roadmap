@@ -66,14 +66,14 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
   <div class='bg-gray-50'>
     <div class='container'>
       <div
-        class='my-3 flex flex-row items-center gap-1.5 rounded-md border bg-white px-2 py-2 text-sm'
+        class='my-3 flex flex-wrap flex-row items-center gap-1.5 rounded-md border bg-white px-2 py-2 text-sm'
       >
         <AstroIcon icon='map' class='h-4 w-4' />
-        Relevant roadmaps to visit <span class='flex flex-row gap-1'>
+        Relevant roadmaps <span class='flex flex-row flex-wrap gap-1'>
           {
             project.roadmaps.map((roadmap) => (
               <a
-                class='text-blue-700 underline underline-offset-2 hover:text-blue-800'
+                class='bg-gray-500 text-white text-sm px-1.5 rounded hover:bg-black transition-colors'
                 href={`/${roadmap.id}`}
               >
                 {roadmap.frontmatter?.briefTitle}

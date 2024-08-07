@@ -17,6 +17,11 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'nodejs'
+  - 'python'
+  - 'java'
+  - 'golang'
+  - 'spring-boot'
 ---
 
 You are required to build an API for an e-commerce platform. If you have developed the other projects in this roadmap, you will have to keep in mind everything you have learned so far:

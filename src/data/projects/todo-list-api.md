@@ -19,6 +19,11 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'nodejs'
+  - 'python'
+  - 'java'
+  - 'golang'
+  - 'spring-boot'
 ---
 
 In this project you are required to develop a RESTful API to allow users to manage their to-do list. The previous backend projects have only focused on the CRUD operations, but this project will require you to implement user authentication as well.
