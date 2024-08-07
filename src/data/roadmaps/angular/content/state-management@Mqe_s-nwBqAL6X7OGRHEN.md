@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@What is State Management?](https://www.techtarget.com/searchapparchitecture/definition/state-management)
 - [@article@Angular state management made simple with NgRx](https://blog.logrocket.com/angular-state-management-made-simple-with-ngrx/)
 - [@article@Angular State Management with NgRx](https://www.syncfusion.com/blogs/post/angular-state-management-with-ngrx.aspx)
+- [@article@State Management and the Facade pattern in Angular](https://thefullstack.engineer/full-stack-development-series-part-10-state-management-and-the-facade-pattern-in-angular)
