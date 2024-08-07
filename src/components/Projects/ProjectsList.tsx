@@ -106,7 +106,7 @@ export function ProjectsList(props: ProjectsListProps) {
           Submit a Project Idea
         </a>
       </div>
-      <div className="mb-24 grid grid-cols-3 gap-1.5">
+      <div className="mb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5">
         {matchingProjects.length === 0 && (
           <div className="col-span-3 rounded-md border bg-white p-4 text-left text-sm text-gray-500">
             <p>No matching projects found.</p>
