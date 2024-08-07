@@ -33,6 +33,7 @@ docker run -d --mount source=my-volume,destination=/data your-image
 ```
 
 In both examples above, `my-volume` is the name of the volume we created earlier, and `/data` is the path inside the container where the volume will be mounted.
+
 > For an in-depth exploration of the `-v` and `--mount` flags, consult Docker's official guide on [Choose the -v or --mount flag](https://docs.docker.com/storage/bind-mounts/#choose-the--v-or---mount-flag).
 
 
