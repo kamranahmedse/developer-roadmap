@@ -17,6 +17,7 @@ import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import RoadmapNote from '../../components/RoadmapNote.astro';
 import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -68,6 +69,7 @@ const ogImageUrl =
 
 const question = roadmapData?.question;
 const note = roadmapData.note;
+const projects = await getProjectsByRoadmapId(roadmapId);
 ---
 
 <BaseLayout
@@ -110,6 +112,7 @@ const note = roadmapData.note;
       isUpcoming={roadmapData.isUpcoming}
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
+      projectCount={projects.length}
     />
 
     <div class='container mt-2.5'>

@@ -1796,38 +1796,6 @@
       "selectable": true
     },
     {
-      "id": "4mVhtJA14q6buWhHzRzz7",
-      "type": "subtopic",
-      "data": {
-        "label": "Python",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        },
-        "oldId": "E0hIgQEeZlEidr4HtUFrL"
-      },
-      "position": {
-        "x": 13.13989797603216,
-        "y": 369.60000000000014
-      },
-      "width": 100,
-      "height": 49,
-      "selected": false,
-      "style": {
-        "width": 100,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": 13.13989797603216,
-        "y": 369.60000000000014
-      },
-      "dragging": false,
-      "resizing": false,
-      "focusable": true,
-      "selectable": true
-    },
-    {
       "id": "g_EBQizZsIe-vn8ir6FTv",
       "type": "subtopic",
       "data": {
@@ -5551,6 +5519,32 @@
         "x": -120.55417943283828,
         "y": 554.3426822070478
       }
+    },
+    {
+      "id": "VVU8uggtiOrRNaN-IzatG",
+      "type": "button",
+      "position": {
+        "x": 15.13989797603216,
+        "y": 369.3426822070478
+      },
+      "selected": false,
+      "data": {
+        "label": "Python",
+        "href": "https://roadmap.sh/python",
+        "color": "#ffffff",
+        "backgroundColor": "#2a79e4",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 97,
+      "height": 49,
+      "positionAbsolute": {
+        "x": 15.13989797603216,
+        "y": 369.3426822070478
+      },
+      "dragging": false
     }
   ],
   "edges": [
