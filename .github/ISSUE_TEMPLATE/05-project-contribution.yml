@@ -14,7 +14,7 @@ body:
       placeholder: e.g. Backend Roadmap
     validations:
       required: true
-  - type: select
+  - type: dropdown
     id: project-difficulty
     attributes:
       label: Project Difficulty
