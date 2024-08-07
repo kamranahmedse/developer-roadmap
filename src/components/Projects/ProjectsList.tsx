@@ -114,15 +114,15 @@ export function ProjectsList(props: ProjectsListProps) {
         )}
 
         {matchingProjects
-          .sort((a, b) => {
-            return b.frontmatter.sort - a.frontmatter.sort;
-          })
           .sort((project) => {
             return project.frontmatter.difficulty === 'beginner'
               ? -1
               : project.frontmatter.difficulty === 'intermediate'
                 ? 0
                 : 1;
+          })
+          .sort((a, b) => {
+            return a.frontmatter.sort - b.frontmatter.sort;
           })
           .map((matchingProject) => (
             <ProjectCard project={matchingProject} />
