@@ -74,7 +74,7 @@ export function ProjectsList(props: ProjectsListProps) {
   return (
     <div className="flex flex-col">
       <div className="my-2.5 flex items-center justify-between">
-        <div className="flex gap-1">
+        <div className="flex flex-wrap gap-1">
           {projectDifficulties.map((projectDifficulty) => (
             <DifficultyButton
               onClick={() => {
@@ -100,13 +100,13 @@ export function ProjectsList(props: ProjectsListProps) {
         </div>
         <a
           href={''}
-          className="flex items-center gap-2 rounded-md border border-transparent px-2 py-0.5 text-sm underline underline-offset-2 hover:bg-black hover:text-white hover:no-underline"
+          className="hidden items-center gap-2 rounded-md border border-transparent px-2 py-0.5 text-sm underline underline-offset-2 hover:bg-black hover:text-white hover:no-underline sm:flex"
         >
           <HeartHandshake className="h-4 w-4" />
           Submit a Project Idea
         </a>
       </div>
-      <div className="mb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5">
+      <div className="mb-24 grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-3">
         {matchingProjects.length === 0 && (
           <div className="col-span-3 rounded-md border bg-white p-4 text-left text-sm text-gray-500">
             <p>No matching projects found.</p>
