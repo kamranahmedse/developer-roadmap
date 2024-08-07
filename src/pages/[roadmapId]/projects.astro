@@ -75,7 +75,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
   briefTitle={roadmapData.briefTitle}
   ogImageUrl={ogImageUrl}
   keywords={roadmapData.seo.keywords}
-  noIndex={true}
+  noIndex={projects.length === 0}
   resourceId={roadmapId}
   resourceType='roadmap'
 >
