@@ -4,7 +4,7 @@ description: 'E-Commerce platform with cart and payment gateway integration.'
 isNew: false
 sort: 12
 difficulty: 'intermediate'
-nature: 'CLI'
+nature: 'API'
 skills:
   - 'Programming Language'
   - 'Database'
@@ -12,7 +12,7 @@ skills:
   - 'Inventory Management'
 seo:
   title: 'E-Commerce API Project Idea'
-  description: ''
+  description: 'E-Commerce platform with cart and payment gateway integration.'
   keywords:
     - 'backend project idea'
 roadmapIds:
