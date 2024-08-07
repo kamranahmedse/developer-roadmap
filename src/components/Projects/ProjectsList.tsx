@@ -99,7 +99,10 @@ export function ProjectsList(props: ProjectsListProps) {
           )}
         </div>
         <a
-          href={''}
+          href={
+            'https://github.com/kamranahmedse/developer-roadmap/issues/new?assignees=&labels=project+contribution&projects=&template=05-project-contribution.yml'
+          }
+          target={'_blank'}
           className="hidden items-center gap-2 rounded-md border border-transparent px-2 py-0.5 text-sm underline underline-offset-2 hover:bg-black hover:text-white hover:no-underline sm:flex"
         >
           <HeartHandshake className="h-4 w-4" />
