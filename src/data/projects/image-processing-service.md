@@ -8,6 +8,8 @@ nature: 'API'
 skills:
   - 'Programming Language'
   - 'Image Processing'
+  - 'Database'
+  - 'Queues'
 seo:
   title: 'Image Processing Service Project Idea'
   description: 'Build a service that allows users to upload and process images.'
@@ -143,6 +145,7 @@ GET /images?page=1&limit=10
 - Put a rate limit on image transformations to prevent abuse.
 - Consider caching transformed images to improve performance.
 - Implement error handling and validation for all endpoints.
+- Optionally use a message queue like RabbitMQ or Kafka to process image transformations asynchronously.
 
 <hr />
 

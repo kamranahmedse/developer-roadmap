@@ -11,7 +11,7 @@ type ProjectCardProps = {
 const badgeVariants: Record<ProjectDifficultyType, string> = {
   beginner: 'yellow',
   intermediate: 'green',
-  advanced: 'red',
+  advanced: 'blue',
 };
 
 export function ProjectCard(props: ProjectCardProps) {

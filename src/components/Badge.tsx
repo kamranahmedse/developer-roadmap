@@ -14,6 +14,7 @@ export function Badge(type: BadgeProps) {
     grey: 'bg-gray-100 text-gray-700 border-gray-200',
     white: 'bg-white text-black border-gray-200',
     teal: 'bg-teal-100 text-teal-700 border-teal-200',
+    black: 'bg-gray-500 text-white border-gray-500',
   };
 
   return (
