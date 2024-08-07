@@ -4,6 +4,7 @@ First of all thank you for considering to contribute. Please look at the details
 
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
+- [Adding Projects](#adding-projects)
 - [Adding Content](#adding-content)
 - [Guidelines](#guidelines)
 
@@ -21,6 +22,10 @@ For the existing roadmaps, please follow the details listed for the nature of co
 - **Adding or Removing Nodes** — Please open an [issue](https://github.com/kamranahmedse/developer-roadmap/issues) with your suggestion.
 
 **Note:** Please note that our goal is <strong>not to have the biggest list of items</strong>. Our goal is to list items or skills most relevant today.
+
+## Adding Projects
+
+If you have a project idea that you think we should add to the roadmap, feel fre to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
 
 ## Adding Content
 

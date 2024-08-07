@@ -21,6 +21,7 @@ export interface Props {
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
+  projectCount?: number;
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
@@ -35,6 +36,7 @@ const {
   isUpcoming = false,
   note,
   hasTopics = false,
+  projectCount = 0,
   question,
   activeTab = 'roadmap',
 } = Astro.props;
@@ -123,7 +125,7 @@ const hasTnsBanner = !!tnsBannerLink;
           icon={FolderKanbanIcon}
           text='Projects'
           isActive={activeTab === 'projects'}
-          badgeText='soon'
+          badgeText={projectCount > 0 ? '' : 'soon'}
         />
       </div>
 

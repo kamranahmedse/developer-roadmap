@@ -124,10 +124,10 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
       <div className="border-b bg-white pt-10 pb-7">
         <div className="container text-left">
           <div className="flex flex-col items-start bg-white">
-            <h1 className="mb-1 text-2xl font-bold sm:text-4xl">
+            <h1 className="mb-2 text-3xl font-bold sm:text-4xl">
               Community Roadmaps
             </h1>
-            <p className="mb-3 text-base text-gray-500">
+            <p className="mb-5 text-base text-gray-500">
               A selected list of community-created roadmaps
             </p>
             <div className="relative">
