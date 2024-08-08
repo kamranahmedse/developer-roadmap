@@ -83,7 +83,7 @@ The following section presents a complete DevOps roadmap on how you can learn th
 
 The internet is full of resources for learning DevOps and DevOps tools. Many of these guides lack structure and organization, resulting in a dilemma of where to start. 
 
-To help beginners learn DevOps in a structured manner, [roadmap.sh](http://roadmap.sh/) has a beginner-friendly [DevOps engineer roadmap](https://roadmap.sh/devops?r=devops-beginner) that will help you land into DevOps engineer positions. 
+To help beginners learn DevOps in a structured manner, [roadmap.sh](https://roadmap.sh/) has a beginner-friendly [DevOps engineer roadmap](https://roadmap.sh/devops?r=devops-beginner) that will help you land into DevOps engineer positions. 
 
 This section presents a concise version of the DevOps engineering roadmap. It is recommended that you implement real-world projects recommended in each stage of the roadmap. In the end, you can publish these DevOps projects to GitHub as an open-source project repository, and the repository will act as your portfolio and increase your exposure in the DevOps community.
 
