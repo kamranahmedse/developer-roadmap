@@ -25,7 +25,7 @@ For the existing roadmaps, please follow the details listed for the nature of co
 
 ## Adding Projects
 
-If you have a project idea that you think we should add to the roadmap, feel fre to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
+If you have a project idea that you think we should add to the roadmap, feel free to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
 
 ## Adding Content
 
