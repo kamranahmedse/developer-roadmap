@@ -2494,7 +2494,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Events",
+        "label": "Event Binding",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

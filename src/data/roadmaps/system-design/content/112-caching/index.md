@@ -16,3 +16,7 @@ Also, you can have the cache in several places, examples include:
 - Web Server Caching
 - Database Caching
 - Application Caching
+
+To learn more, visit the following links:
+
+- [@article@Caching Strategies](https://medium.com/@mmoshikoo/cache-strategies-996e91c80303)

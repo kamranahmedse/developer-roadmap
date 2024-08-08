@@ -5,3 +5,4 @@ Although you can build forms using vanilla React, it normally requires a lot of 
 Visit the following resources to learn more:
 
 - [@article@How to use Forms in React](https://www.robinwieruch.de/react-form/)
+- [@video@React Forms: the SIMPLEST way](https://www.youtube.com/watch?v=CT-72lTXdPg)
