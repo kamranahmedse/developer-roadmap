@@ -3868,7 +3868,11 @@
       },
       "selected": false,
       "data": {
-        "label": "horizontal node"
+        "label": "horizontal node",
+        "style": {
+          "stroke": "#2B78E4",
+          "strokeWidth": 3.5
+        }
       },
       "zIndex": 999,
       "width": 358,
@@ -5329,25 +5333,6 @@
         "strokeWidth": 3.5,
         "stroke": "#2b78e4"
       },
-      "source": "zEWmq0Y1LFPMQelpucrph",
-      "sourceHandle": "y2",
-      "target": "WigElh37ztiRYRstQR9NE",
-      "targetHandle": "z1",
-      "data": {
-        "edgeStyle": "dashed"
-      },
-      "id": "reactflow__edge-zEWmq0Y1LFPMQelpucrphy2-WigElh37ztiRYRstQR9NEz1",
-      "selected": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "style": {
-        "strokeDasharray": "0.8 8",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
       "source": "vTMd0bqz4eTgLnhfgY61h",
       "sourceHandle": "z2",
       "target": "6FdHTzqQwJqR4czP5qXAY",
@@ -5578,6 +5563,23 @@
       "id": "reactflow__edge-UDqbT1y-YzBrljfKSz_RGx2-GV_zWF6rSWg5bqgiXhOEfw1",
       "selected": false,
       "focusable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "WigElh37ztiRYRstQR9NE",
+      "sourceHandle": "z2",
+      "target": "zEWmq0Y1LFPMQelpucrph",
+      "targetHandle": "y1",
+      "data": {
+        "edgeStyle": "dashed"
+      },
+      "id": "reactflow__edge-WigElh37ztiRYRstQR9NEz2-zEWmq0Y1LFPMQelpucrphy1",
+      "selected": false
     }
   ]
 }
