@@ -111,6 +111,7 @@ export function clearMigratedRoadmapProgress(
     'nodejs',
     'typescript',
     'python',
+    'sql',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

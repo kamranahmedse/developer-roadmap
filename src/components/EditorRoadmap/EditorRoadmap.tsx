@@ -91,7 +91,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
           : undefined
       }
       className={
-        'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+        'mt-5 flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
       }
     >
       <EditorRoadmapRenderer
