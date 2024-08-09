@@ -11,4 +11,4 @@ And that is it! You have successfully completed the roadmap and are now a full-s
 
 ## What's next?
 
-Go ahead and build something cool! Share your learnings with the community and help others learn as well. If you have any questions, feel free to join our [discord server](https://discord.gg/cJpEt5Qbwa) and ask away!
+Go ahead and build something cool! Share your learnings with the community and help others learn as well. If you have any questions, feel free to join our [discord server](https://discord.gg/ZrSpJ8zH) and ask away!
