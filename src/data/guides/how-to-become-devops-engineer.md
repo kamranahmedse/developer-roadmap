@@ -7,7 +7,7 @@ seo:
   title: 'How to become a DevOps Engineer in @currentYear@'
   description: 'Want to become a DevOps engineer? Our @currentYear@ guide covers skills, certifications, and expert career advice. Start your journey today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/become-devops-engineer-4x2p7.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-06-11
 sitemap:
