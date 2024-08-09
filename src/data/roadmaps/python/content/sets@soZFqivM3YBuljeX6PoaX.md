@@ -4,5 +4,4 @@ Python Set is an unordered collection of data types that is iterable, mutable, a
 
   Visit the following resources to learn more:
   
-  -[@article@Python Sets](https://www.geeksforgeeks.org/python-sets/?ref=gcse)
   -[@video@Python Sets tutorial for Beginners](https://www.youtube.com/watch?v=t9j8lCUGZXo)
