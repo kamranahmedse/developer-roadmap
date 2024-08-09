@@ -60,11 +60,11 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
     setSearchResults(searchResults);
   }, [searchText, allRoadmaps]);
 
-  const roleBasedRoadmaps = searchResults.filter(
-    (roadmap) => roadmap?.metadata?.tags?.includes('role-roadmap'),
+  const roleBasedRoadmaps = searchResults.filter((roadmap) =>
+    roadmap?.metadata?.tags?.includes('role-roadmap'),
   );
-  const skillBasedRoadmaps = searchResults.filter(
-    (roadmap) => roadmap?.metadata?.tags?.includes('skill-roadmap'),
+  const skillBasedRoadmaps = searchResults.filter((roadmap) =>
+    roadmap?.metadata?.tags?.includes('skill-roadmap'),
   );
 
   return (
