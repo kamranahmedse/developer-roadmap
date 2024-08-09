@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user';
-import { httpGet, httpPost } from '../../lib/http';
+import { httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { CheckIcon, Loader2, X, XCircle } from 'lucide-react';
+import { CheckIcon, Loader2, X } from 'lucide-react';
 import { useDebounceValue } from '../../hooks/use-debounce.ts';
 
 type ProfileUsernameProps = {
@@ -56,8 +56,9 @@ export function ProfileUsername(props: ProfileUsernameProps) {
     setIsUnique(response.isUnique);
     setIsLoading(false);
   };
-
   const USERNAME_REGEX = /^[a-zA-Z0-9]*$/;
+  const isUserNameValid = (value: string) =>
+    USERNAME_REGEX.test(value) && value.length <= 20;
 
   return (
     <div className="flex w-full flex-col">
@@ -118,10 +119,8 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             onKeyDown={(e) => {
               // only allow letters, numbers
               const keyCode = e.key;
-              const validKey =
-                USERNAME_REGEX.test(keyCode) && username.length <= 10;
               if (
-                !validKey &&
+                !isUserNameValid(keyCode) &&
                 !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(
                   keyCode,
                 )
@@ -131,8 +130,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             }}
             onInput={(e) => {
               const value = (e.target as HTMLInputElement).value?.trim();
-              const isValid = USERNAME_REGEX.test(value) && value.length <= 10;
-              if (!isValid) {
+              if (!isUserNameValid(value)) {
                 return;
               }
 
