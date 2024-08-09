@@ -1,16 +1,8 @@
-# Linux User Groups
+# User Management: Users & Groups
 
-In Linux, a User Group is a mechanism used to manage the system’s users and permissions. It represents a collection of users, designed specifically to simplify system administration. Each user in Linux is a part of one or more groups. These groups are primarily used for determining access rights to various system resources, including files, directories, devices, etc.
+User management in Linux uses user groups to manage system users and permissions efficiently. A user group is a collection of users that simplifies system administration by determining access rights to resources like files and directories. Each user belongs to one or more groups, allowing administrators to grant specific privileges without full superuser access. Commands like `groupadd`, `groupdel`, `groupmod`, `usermod`, and `gpasswd` are used to manage groups. Proper group management is crucial for a secure and organized system environment. For detailed instructions, refer to resources on managing Linux groups.
 
-Understanding and appropriately managing user groups in Linux is crucial for overall system security. It allows the administrator to grant certain privileges to a specific set of users, without granting them complete superuser or 'root' access.
+Learn more from the following resources:
 
-One can check a user’s group affiliations using the `groups` command, while the `/etc/group` file contains a list of all groups on the system.
-
-```bash
-groups [username]
-cat /etc/group
-```
-
-At times, it becomes necessary to add or remove users from groups, modifications to group properties or even the creation and deletion of groups altogether. These operations can typically be performed using the `groupadd`, `groupdel`, `groupmod`, `usermod`, and `gpasswd` commands.
-
-Overall, user groups are an essential component of Linux User Management, helping to maintain a secure and organized system environment.
+- [@article@How to create, delete, and modify groups in Linux](https://www.redhat.com/sysadmin/linux-groups)
+- [@article@How to manage groups on Linux](https://linuxconfig.org/how-to-manage-groups-on-linux)
