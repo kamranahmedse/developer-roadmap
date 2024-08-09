@@ -28,3 +28,5 @@ Kubernetes plays a crucial role in managing containerized applications at scale,
 While both Kubernetes and Docker Swarm are orchestration platforms, they differ in terms of complexity, scalability, and ease of use. Kubernetes provides more advanced features, better scalability, and higher fault tolerance, but has a steeper learning curve. Docker Swarm, on the other hand, is simpler and more straightforward but lacks some advanced functionality.
 
 In the context of these differences, selecting the right orchestration platform depends on the needs and requirements of your project.
+
+> Here is the [roadmap of Kubernetes](https://roadmap.sh/kubernetes). Keep learning!😊
