@@ -3088,7 +3088,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Remix",
+        "label": "react-router",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
