@@ -7,7 +7,7 @@ seo:
   title: '12 In-Demand Front End Developer Skills to Master'
   description: 'Master these 12 in-demand front end developer skills and become a standout candidate in the web development field.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-skills-zdpyd.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-07-04
 sitemap:

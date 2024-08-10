@@ -2431,7 +2431,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Properties Binding",
+        "label": "Property Binding",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2463,7 +2463,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Attributes Binding",
+        "label": "Attribute Binding",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2494,7 +2494,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Events",
+        "label": "Event Binding",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

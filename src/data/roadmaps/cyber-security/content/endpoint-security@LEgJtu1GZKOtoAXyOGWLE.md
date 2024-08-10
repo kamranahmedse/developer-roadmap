@@ -25,3 +25,9 @@ To effectively secure your endpoints, consider implementing the following measur
 - **User Training**: Educate users about the importance of endpoint security and the best practices for maintaining it. This includes topics like creating strong passwords, avoiding phishing scams, and following safe browsing practices.
 
 By taking a comprehensive approach to endpoint security, you can protect your organization's network and sensitive data from the growing threat of cyberattacks.
+
+Learn more from the following resources:
+
+- [@video@Endpoint Security](https://youtu.be/5d7PCDm_MXs?si=RX3sAdNPLG0tJOaR&t=11)
+- [@course@Manage endpoint security - Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/manage-endpoint-security/)
+

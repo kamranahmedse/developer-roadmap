@@ -2,6 +2,7 @@
 jsonUrl: '/jsons/roadmaps/sql.json'
 pdfUrl: '/pdfs/roadmaps/sql.pdf'
 order: 8
+renderer: 'editor'
 briefTitle: 'SQL'
 briefDescription: 'Step by step guide to learning SQL in 2024'
 title: 'SQL Roadmap'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2116.16
+  height: 2270
 schema:
   headline: 'SQL Roadmap'
   description: 'Comprehensive roadmap to learn SQL from scratch in 2024. From basic syntax to advanced querying, this step-by-step guide will equip you with the skills needed to excel in database management and data analysis.'

@@ -77,7 +77,9 @@ These are the best front-end languages you should learn in 2024:
 
 ### HyperText Markup Language (HTML)
 
-![HTML HyperText Markup Language](https://assets.roadmap.sh/guest/html-bmvj9.png)
+<p align="center">
+  <img src="https://assets.roadmap.sh/guest/html-bmvj9.png" alt="HTML HyperText Markup Language" />
+</p>
 
 HTML is the standard markup language for creating web pages. It defines the structure and layout of content within a web browser, allowing for the display of text, images, videos, and more that users interact with. HTML is beginner-friendly, supported across multiple browsers, and fundamental to web development. 
 
