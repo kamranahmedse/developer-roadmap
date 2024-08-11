@@ -32,9 +32,11 @@ While Linux is inherently secure, there are best practices to enhance your syste
 
 By understanding Linux's features and best practices, you can leverage its powerful capabilities and robust security features to enhance your computing environment's performance and safety.
 
+Recommended resources include:
+
 - [@article@Learn Linux](https://linuxjourney.com/)
 - [@video@Linux in 100 Seconds](https://www.youtube.com/watch?v=rrB13utjYV4)
 - [@video@Introduction to Linux](https://youtu.be/sWbUDq4S6Y8)
 - [@article@Linux Commands Cheat Sheet](https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheat-Sheet.pdf)
-- [@course@Linux from scratch- Cisco](https://www.netacad.com/courses/os-it/ndg-linux-unhatched)
+- [@course@Linux from scratch - Cisco](https://www.netacad.com/courses/os-it/ndg-linux-unhatched)
 - [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)
