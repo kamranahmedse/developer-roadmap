@@ -1345,7 +1345,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Vim / Nano /  Emacs",
+        "label": "Vim / Nano / VS Code",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
