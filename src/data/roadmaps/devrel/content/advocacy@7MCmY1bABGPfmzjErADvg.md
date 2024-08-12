@@ -5,4 +5,5 @@ Developer Advocacy is the practice of representing and supporting the needs and 
 Learn more from the following resources:
 
 - [@article@What is developer advocacy?](https://appsembler.com/glossary/developer-advocacy/)
+- [@article@The Developer Advocate Playbook: Your Go-To Guide to Turning Users into Champions 🚀](https://www.doc-e.ai/post/the-developer-advocate-playbook-your-go-to-guide-to-turning-users-into-champions)
 - [@video@Developer Relations: New Career Path for Developers](https://www.youtube.com/watch?v=iA2SQ4OL4GU)
