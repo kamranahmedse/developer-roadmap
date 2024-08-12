@@ -5,5 +5,6 @@ Animation in React can be achieved using various methods, such as CSS transition
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://reactnative.dev/docs/animations)
-- [@article@How to Create Animations in React 18](https://www.freecodecamp.org/news/create-animations-in-react/)
+- [@article@Framer Motion Docs](https://www.framer.com/motion/)
+- [@article@GSAP Docs](https://gsap.com/docs/v3/)
+- [@article@React Spring Docs](https://www.react-spring.dev/docs/getting-started)
