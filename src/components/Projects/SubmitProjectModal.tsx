@@ -2,20 +2,32 @@ import { X } from 'lucide-react';
 import { Modal } from '../Modal';
 import { useState, type FormEvent } from 'react';
 import { useToast } from '../../hooks/use-toast';
+import { httpPost } from '../../lib/http';
+
+type SubmitProjectResponse = {
+  repositoryUrl: string;
+  submittedAt: Date;
+};
 
 type SubmitProjectModalProps = {
   onClose: () => void;
   projectId: string;
-  onSubmit: () => void;
+  repositoryUrl?: string;
+  onSubmit: (response: SubmitProjectResponse) => void;
 };
 
 export function SubmitProjectModal(props: SubmitProjectModalProps) {
-  const { onClose, projectId, onSubmit } = props;
+  const {
+    onClose,
+    projectId,
+    onSubmit,
+    repositoryUrl: defaultRepositoryUrl = '',
+  } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
-  const [repoUrl, setRepoUrl] = useState('');
+  const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -76,10 +88,19 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         throw new Error('Project URL not found in the readme file');
       }
 
-      // TODO: Make API call to update the project status
+      const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
+      const { response: submitResponse, error } =
+        await httpPost<SubmitProjectResponse>(submitProjectUrl, {
+          repositoryUrl: repoUrl,
+        });
+
+      if (error || !submitResponse) {
+        throw new Error(error?.message || 'Failed to submit project');
+      }
+
       setSuccessMessage('Repository verified successfully');
       setIsLoading(false);
-      onSubmit();
+      onSubmit(submitResponse);
     } catch (error: any) {
       console.error(error);
       setError(error?.message || 'Failed to verify repository');
