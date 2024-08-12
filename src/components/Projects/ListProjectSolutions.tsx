@@ -10,6 +10,8 @@ import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
 import { cn } from '../../lib/classname';
 import { LeavingRoadmapWarningModal } from './LeavingRoadmapWarningModal';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -99,6 +101,11 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     solutionId: string,
     voteType: AllowedVoteType,
   ) => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
     pageProgressMessage.set('Submitting vote...');
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-vote-project/${solutionId}`,
