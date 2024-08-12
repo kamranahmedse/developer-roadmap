@@ -1,6 +1,7 @@
 # Object.is
 
-The Object.is() static method determines whether two values are the same value.
+- The Object.is() static method determines whether two values are the same value.
+- The Following scenario shows the examples of leveraging the `Object.is`
 
 ```js
 console.log(Object.is('1', 1));
@@ -16,6 +17,16 @@ const obj = {};
 console.log(Object.is(obj, {}));
 // Expected output: false
 ```
-Visit the following resources to learn more:
 
-- [@article@Object.is() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
+- There are few basic assumptions for the `Object.is()` method while using
+
+  The Value returns `true` when
+
+  - Both are `undefined`
+  - Both are `null`
+  - Both are either `true` (or) `false`
+  - Both strings of the same length with the same characters in the same order
+
+Further more details, Pls refer the below MDN doc
+
+- [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
