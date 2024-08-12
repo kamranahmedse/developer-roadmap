@@ -1,6 +1,8 @@
 # MVC or Model View Controller
 
-MVC or `Model View Controller` is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected elements. These elements are:
+MVC or `Model View Controller` is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected components.
+
+Components:
 
 - `Model`: The internal representations of information. This can often be an Interactor or UseCase
 - `View`: The interface that presents information to and accepts it from the user
