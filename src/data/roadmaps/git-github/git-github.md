@@ -20,7 +20,7 @@ schema:
   dateModified: '2024-08-12'
 seo:
   title: 'Git and GitHub Roadmap'
-  description: 'Learn about Git and GitHub using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  description: 'Learn about Git and GitHub using this roadmap. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'git and github roadmap 2024'
     - 'git roadmap'
