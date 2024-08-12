@@ -137,7 +137,7 @@ export function ProjectMilestoneStrip(props: ProjectMilestoneStripProps) {
 
             <button
               className={cn(
-                'mt-3 text-center text-sm font-medium text-blue-600 underline underline-offset-2 hover:opacity-60',
+                'mt-3 inline-flex self-center text-center text-sm font-medium text-blue-600 underline underline-offset-2 hover:opacity-60',
                 stepIndex >= 1 && 'text-black no-underline',
               )}
               onClick={() => {
@@ -156,7 +156,7 @@ export function ProjectMilestoneStrip(props: ProjectMilestoneStripProps) {
 
             <button
               className={cn(
-                'mt-3 text-sm font-medium text-blue-600 underline underline-offset-2 hover:opacity-60',
+                'mt-3 inline-flex self-center text-sm font-medium text-blue-600 underline underline-offset-2 hover:opacity-60',
                 stepIndex >= 2 && 'text-black no-underline',
                 stepIndex < 1 && 'text-black opacity-50 hover:opacity-50',
               )}
