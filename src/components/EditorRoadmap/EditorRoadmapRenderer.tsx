@@ -94,6 +94,8 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
     const { nodeId, nodeType, targetGroup, title } =
       getNodeDetails(target) || {};
 
+    console.log(nodeId);
+
     if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) {
       return;
     }
