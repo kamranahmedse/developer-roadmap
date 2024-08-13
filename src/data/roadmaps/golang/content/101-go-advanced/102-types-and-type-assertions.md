@@ -1,4 +1,4 @@
-# Types and type assertions
+# Types, Type assertions and Type switches
 
 **Types** in Golang specify the data type that a valid Go variable can hold. Golang has four categories of Types including Basic, Aggregate, Reference, and Interface Types
 
