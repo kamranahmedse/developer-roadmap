@@ -41,3 +41,6 @@ In this syntax:
 
 The `FROM` clause is essential in identifying where the data is coming from, making it a fundamental part of any SQL query.
 
+Visit the following resources to learn more:
+- [@article@More about From Clause](https://www.javatpoint.com/mysql-from)
+
