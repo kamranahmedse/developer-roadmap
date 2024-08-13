@@ -4,37 +4,31 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "iTB37-67lxtBhgolP_Y2l",
         "title": "Interactive HTML Course",
         "url": "https://github.com/denysdovhan/learnyouhtml",
         "type": "opensource"
       },
       {
-        "id": "Q-vluL4_vR3FuqnBdoZoS",
         "title": "W3Schools: Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
         "type": "article"
       },
       {
-        "id": "F_X5tT-06K3kQzEyHLZEq",
         "title": "Explore top posts about HTML",
         "url": "https://app.daily.dev/tags/html?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "JF8voFQXgkAc1UrtsIJu5",
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
         "type": "video"
       },
       {
-        "id": "33LsADgiVsOv73jQUs7QU",
         "title": "HTML Tutorial for Beginners: HTML Crash Course",
         "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
         "type": "video"
       },
       {
-        "id": "H_A_R1OBdwSvdqDtapzLt",
         "title": "HTML and CSS Full Course - Beginner To Pro",
         "url": "https://youtu.be/a_iQb1lnAEQ",
         "type": "video"
@@ -46,43 +40,36 @@
     "description": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "2FY03GQpZaK5eD6DZNbYn",
         "title": "W3Schools — Learn CSS",
         "url": "https://www.w3schools.com/css/",
         "type": "article"
       },
       {
-        "id": "zTw9tkRtUn1VRGhWAgOgU",
         "title": "Learn to Code HTML & CSS",
         "url": "https://learn.shayhowe.com/html-css/building-your-first-web-page/",
         "type": "article"
       },
       {
-        "id": "pgw3Rhv-Y5ixe8CmbafWS",
         "title": "What The Flexbox!",
         "url": "https://flexbox.io/",
         "type": "article"
       },
       {
-        "id": "Zi3joOXHel-3J4rgmz0O4",
         "title": "Explore top posts about CSS",
         "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "w2bRBW7paMe-N6kOYAThp",
         "title": "CSS Crash Course For Absolute Beginners",
         "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
         "type": "video"
       },
       {
-        "id": "q4CyRXFYiKV1AVxHFJAbe",
         "title": "HTML and CSS Tutorial",
         "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w",
         "type": "video"
       },
       {
-        "id": "Fb8iJlgQuTgNek6VOA31e",
         "title": "CSS Masterclass - Tutorial & Course for Beginners",
         "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA",
         "type": "video"
@@ -94,37 +81,31 @@
     "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:\n\nWe also have this [JavaScript roadmap](/javascript). You don't need to follow it right now, just learn from some courses and revisit the roadmap later in your journey.",
     "links": [
       {
-        "id": "l_JC_FEq9PE4WHmhfAi2R",
         "title": "W3Schools – JavaScript Tutorial",
         "url": "https://www.w3schools.com/js/",
         "type": "article"
       },
       {
-        "id": "91W0iHEXEzm-Ljh2_v6b1",
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
         "type": "article"
       },
       {
-        "id": "bmBARYtNVWZaQ90kE-_J7",
         "title": "Exploring JS: JavaScript books for programmers",
         "url": "https://exploringjs.com/",
         "type": "article"
       },
       {
-        "id": "KRIef6u1dnQZKdsEMr7Yk",
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "P67DEBLFbIvIEFV9Lj3TD",
         "title": "JavaScript Crash Course for Beginners",
         "url": "https://youtu.be/hdI2bqOjy3c?t=2",
         "type": "video"
       },
       {
-        "id": "twTzUO8B8G05r_BBpJRO-",
         "title": "Build a Netflix Landing Page Clone with HTML, CSS & JS",
         "url": "https://youtu.be/P7t13SGytRk",
         "type": "video"
@@ -136,37 +117,31 @@
     "description": "npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "TPVsY0Kd_OwJQNm8Yb0ny",
         "title": "How to NPM",
         "url": "https://github.com/workshopper/how-to-npm",
         "type": "opensource"
       },
       {
-        "id": "zZjmSRIRTPMezW1v6AlGk",
         "title": "Modern JavaScript for Dinosaurs",
         "url": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html",
         "type": "article"
       },
       {
-        "id": "qWUpMNzYoR0mNgPWIEI1A",
         "title": "An Absolute Beginners Guide to Using npm",
         "url": "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/",
         "type": "article"
       },
       {
-        "id": "18O_S9v54iXtXN3icyXW9",
         "title": "Explore top posts about NPM",
         "url": "https://app.daily.dev/tags/npm?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "XCrnawffzYZfRIy_xc8rV",
         "title": "NPM tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=2V1UUhBJ62Y",
         "type": "video"
       },
       {
-        "id": "Lgq20q05hTNPoeMsaI6ct",
         "title": "NPM Crash Course",
         "url": "https://www.youtube.com/watch?v=jHDhaSSKmB0",
         "type": "video"
@@ -188,31 +163,26 @@
     "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "wfRzChTBCXUFdkzedFJVw",
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
         "type": "article"
       },
       {
-        "id": "PPVRnEsSJPUXLsvWMFVP7",
         "title": "Git Cheat Sheet",
         "url": "https://cs.fyi/guide/git-cheatsheet",
         "type": "article"
       },
       {
-        "id": "nxxP3k1yPO2_bQEUcljyX",
         "title": "Explore top posts about Git",
         "url": "https://app.daily.dev/tags/git?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "QL8z1MeIPYvQdrsKAvMOL",
         "title": "Git & GitHub Crash Course For Beginners",
         "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
         "type": "video"
       },
       {
-        "id": "r1h4hkXW3VBfYBDYeTYFS",
         "title": "Git Tutorial For Dummies",
         "url": "https://www.youtube.com/watch?v=mJ-qvsxPHpY",
         "type": "video"
@@ -224,49 +194,41 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "8ZKp2dePuF0tZpL1_2r8K",
         "title": "GitHub Website",
         "url": "https://github.com",
         "type": "opensource"
       },
       {
-        "id": "9yJQ_kLnHVTo409lHjvKG",
         "title": "GitHub Documentation",
         "url": "https://docs.github.com/en/get-started/quickstart",
         "type": "article"
       },
       {
-        "id": "y8SPRwJH-2NQv_BMwEfm1",
         "title": "How to Use Git in a Professional Dev Team",
         "url": "https://ooloo.io/project/github-flow",
         "type": "article"
       },
       {
-        "id": "7xZFFkeDnQkEBMUVGKQl9",
         "title": "Explore top posts about GitHub",
         "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "F3CGrPhqiF6zMdjCabhoC",
         "title": "What is GitHub?",
         "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
         "type": "video"
       },
       {
-        "id": "EEVuEBt09UO29AHxE1gd_",
         "title": "Git vs. GitHub: Whats the difference?",
         "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
         "type": "video"
       },
       {
-        "id": "SAGAj9rPRBbYLm9OKC2l8",
         "title": "Git and GitHub for Beginners",
         "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
         "type": "video"
       },
       {
-        "id": "Lw8yEw7flHxuB5DcKsXs2",
         "title": "Git and GitHub - CS50 Beyond 2019",
         "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
         "type": "video"
@@ -283,37 +245,31 @@
     "description": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "wQTgkGUnR45GkmBSJP3fL",
         "title": "Tailwind Website",
         "url": "https://tailwindcss.com",
         "type": "article"
       },
       {
-        "id": "vsYkiwq_J41wYjih5DAKY",
         "title": "Explore top posts about Tailwind CSS",
         "url": "https://app.daily.dev/tags/tailwind-css?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "gy908mBahK1oeYKxKgyh_",
         "title": "Tailwind CSS Full Course for Beginners",
         "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo",
         "type": "video"
       },
       {
-        "id": "SDy4Ng51-Y-QfDtnF7AAs",
         "title": "Tailwind CSS Crash Course",
         "url": "https://www.youtube.com/watch?v=UBOj6rqRUME",
         "type": "video"
       },
       {
-        "id": "s2p3I8MC0J832iicKmQTq",
         "title": "Should You Use Tailwind CSS?",
         "url": "https://www.youtube.com/watch?v=hdGsFpZ0J2E",
         "type": "video"
       },
       {
-        "id": "qPrCK2J3vkYC16tqpMDFm",
         "title": "Official Screencasts",
         "url": "https://www.youtube.com/c/TailwindLabs/videos",
         "type": "video"
@@ -325,43 +281,36 @@
     "description": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "JCKXBYPRTHf-hOGi6V3ay",
         "title": "Visit Dedicated React Roadmap",
         "url": "/react",
         "type": "article"
       },
       {
-        "id": "VtygkB1TDVTV4Rbw0SAS5",
         "title": "React Website",
         "url": "https://reactjs.org/",
         "type": "article"
       },
       {
-        "id": "q2K2W4ZBcLx8V62nWVMUN",
         "title": "Official Getting Started",
         "url": "https://reactjs.org/tutorial/tutorial.html",
         "type": "article"
       },
       {
-        "id": "bSvWw6mkjVVAh2ZstYQ4O",
         "title": "Explore top posts about React",
         "url": "https://app.daily.dev/tags/react?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "fJ-TliHbU8qZGU3wJYJNt",
         "title": "React JS Course for Beginners",
         "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
         "type": "video"
       },
       {
-        "id": "-H3E_eextxlbywOgpqv9M",
         "title": "React Course - Beginners Tutorial for React",
         "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
         "type": "video"
       },
       {
-        "id": "wPtTExhkFulSq3byu4hcN",
         "title": "Understanding Reacts UI Rendering Process",
         "url": "https://www.youtube.com/watch?v=i793Qm6kv3U",
         "type": "video"
@@ -383,31 +332,26 @@
     "description": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "8RwOpiqHiyvsjbcvqrojH",
         "title": "Official Website",
         "url": "https://nodejs.org/en/about/",
         "type": "article"
       },
       {
-        "id": "veZ3YsWHrDfjOMe1bXFht",
         "title": "Learn Node.js Official Website",
         "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
         "type": "article"
       },
       {
-        "id": "5GU2laZ-zyRfcQW9gSh-h",
         "title": "Node.JS Introduction",
         "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
         "type": "article"
       },
       {
-        "id": "bZKnqQrCpUtBQv891ivx5",
         "title": "Explore top posts about Node.js",
         "url": "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "UgPfbGmJNCymBB8ICZbAR",
         "title": "Node.js and Express.js Full Course",
         "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
         "type": "video"
@@ -424,19 +368,16 @@
     "description": "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Yzz2KrC1sVqp0lDc5nt5T",
         "title": "What is a REST API?",
         "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
         "type": "article"
       },
       {
-        "id": "kp-Bvg4tl5YgK8wxHfnX3",
         "title": "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
         "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
         "type": "article"
       },
       {
-        "id": "S2eVZthKuXatQDZmB9C5B",
         "title": "Learn REST: A RESTful Tutorial",
         "url": "https://restapitutorial.com/",
         "type": "article"
@@ -453,43 +394,36 @@
     "description": "JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWT tokens are designed to be compact, safe to use within URLs, and ideal for SSO contexts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "eED8AblNYNX2x5gK_8-X3",
         "title": "jwt.io Website",
         "url": "https://jwt.io/",
         "type": "article"
       },
       {
-        "id": "m6kJ-tDZgUG2LG5gcHxOt",
         "title": "Introduction to JSON Web Tokens",
         "url": "https://jwt.io/introduction",
         "type": "article"
       },
       {
-        "id": "oITBcnZKxrujp7KrxMI3y",
         "title": "What is JWT?",
         "url": "https://www.akana.com/blog/what-is-jwt",
         "type": "article"
       },
       {
-        "id": "fbKWXMKwuSkByfdApwo8j",
         "title": "Explore top posts about JWT",
         "url": "https://app.daily.dev/tags/jwt?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "eZ_RRACxJbz10I9katL3I",
         "title": "What Is JWT and Why Should You Use JWT",
         "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM",
         "type": "video"
       },
       {
-        "id": "ZF-HjUvR5kXTRWZRo653L",
         "title": "What is JWT? JSON Web Token Explained",
         "url": "https://www.youtube.com/watch?v=926mknSW9Lo",
         "type": "video"
       },
       {
-        "id": "rrbOX3v7bYUzALVK4-Foq",
         "title": "JWT Authentication Tutorial - Node.js",
         "url": "https://www.youtube.com/watch?v=mbsmsi7l3r4",
         "type": "video"
@@ -501,25 +435,21 @@
     "description": "Redis is an open source (BSD licensed), in-memory **data structure store** used as a database, cache, message broker, and streaming engine. Redis provides data structures such as [strings](https://redis.io/topics/data-types-intro#strings), [hashes](https://redis.io/topics/data-types-intro#hashes), [lists](https://redis.io/topics/data-types-intro#lists), [sets](https://redis.io/topics/data-types-intro#sets), [sorted sets](https://redis.io/topics/data-types-intro#sorted-sets) with range queries, [bitmaps](https://redis.io/topics/data-types-intro#bitmaps), [hyperloglogs](https://redis.io/topics/data-types-intro#hyperloglogs), [geospatial indexes](https://redis.io/commands/geoadd), and [streams](https://redis.io/topics/streams-intro). Redis has built-in [replication](https://redis.io/topics/replication), [Lua scripting](https://redis.io/commands/eval), [LRU eviction](https://redis.io/topics/lru-cache), [transactions](https://redis.io/topics/transactions), and different levels of [on-disk persistence](https://redis.io/topics/persistence), and provides high availability via [Redis Sentinel](https://redis.io/topics/sentinel) and automatic partitioning with [Redis Cluster](https://redis.io/topics/cluster-tutorial).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "GCsLmp6Zp6OjzY8RABTqE",
         "title": "Redis Website",
         "url": "https://redis.io/",
         "type": "article"
       },
       {
-        "id": "1u5soZEBeEH2fvorAS1yk",
         "title": "Explore top posts about Redis",
         "url": "https://app.daily.dev/tags/redis?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "INIf9t5pgI52cg_Z3q7eq",
         "title": "Redis in 100 Seconds",
         "url": "https://www.youtube.com/watch?v=G1rOthIU-uo",
         "type": "video"
       },
       {
-        "id": "xUmk7xpAJa641eeC8oScY",
         "title": "Redis Caching in Node.js",
         "url": "https://www.youtube.com/watch?v=oaJq1mQ3dFI",
         "type": "video"
@@ -531,31 +461,26 @@
     "description": "Knowledge of UNIX is a must for almost all kind of development as most of the codes that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "kemcjZFPVqHWNEAhB-qe_",
         "title": "Coursera - Unix Courses",
         "url": "https://www.coursera.org/courses?query=unix",
         "type": "course"
       },
       {
-        "id": "X7gC-rZwJDmyrk4-q9KRt",
         "title": "Linux Basics",
         "url": "https://dev.to/rudrakshi99/linux-basics-2onj",
         "type": "article"
       },
       {
-        "id": "EPc5wTedddgUEPlmB8lne",
         "title": "Unix / Linux Tutorial",
         "url": "https://www.tutorialspoint.com/unix/index.htm",
         "type": "article"
       },
       {
-        "id": "Ans-qpPLFH2ohOVKtWLdx",
         "title": "Explore top posts about Linux",
         "url": "https://app.daily.dev/tags/linux?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "hS-QCmOr93dWnDceuk8g2",
         "title": "Linux Operating System - Crash Course",
         "url": "https://www.youtube.com/watch?v=ROjZy1WbCIA",
         "type": "video"
@@ -572,67 +497,56 @@
     "description": "AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPN, S3, Route 53, and SES.\n\nHere are some of the resources to get you started:",
     "links": [
       {
-        "id": "s9clJXi3h2_iM4_3FcwZI",
         "title": "Up and Running with AWS VPC",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc",
         "type": "article"
       },
       {
-        "id": "s6y0AJbMFweE14GtC9IV8",
         "title": "Up and Running with AWS EC2",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2",
         "type": "article"
       },
       {
-        "id": "7eYaVuFEec0yhTSXCEWZ1",
         "title": "VPC Basics",
         "url": "https://cloudcasts.io/course/vpc-basics",
         "type": "article"
       },
       {
-        "id": "C0e37ypr7VZp5EZZm5OJy",
         "title": "EC2 Essentials",
         "url": "https://cloudcasts.io/course/ec2-essentials",
         "type": "article"
       },
       {
-        "id": "Ij8UyustUFJsA7faLWhdU",
         "title": "Explore top posts about AWS",
         "url": "https://app.daily.dev/tags/aws?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "ZOQ2Ib7rqAInPha6LCiUe",
         "title": "Deploy Node App on AWS EC2",
         "url": "https://youtu.be/oHAQ3TzUTro",
         "type": "video"
       },
       {
-        "id": "LlmzILJXFPDpO2dKjRmuH",
         "title": "AWS VPC & Subnets For Beginners",
         "url": "https://youtu.be/TUTqYEZZUdc",
         "type": "video"
       },
       {
-        "id": "yaxBFfC2V7iY9GnXjoC4P",
         "title": "Sam Meech-Ward's AWS Videos",
         "url": "https://www.youtube.com/playlist?list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
         "type": "video"
       },
       {
-        "id": "WQJ5Us1tcLgL9431p9m1H",
         "title": "DNS with AWS Route 53",
         "url": "https://www.youtube.com/watch?v=yRIY7BJohfo",
         "type": "video"
       },
       {
-        "id": "E-QyFLzGq5lB4BxYvlfs9",
         "title": "Upload Images to S3 from Node Back End",
         "url": "https://www.youtube.com/watch?v=NZElg91l_ms",
         "type": "video"
       },
       {
-        "id": "wQVd89gpAzleaZSzyr0cs",
         "title": "S3 Bucket Hosting a Static Website",
         "url": "https://www.youtube.com/watch?v=RoY3ekCCxKc&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
         "type": "video"
@@ -644,25 +558,21 @@
     "description": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the form of virtual servers, known as instances. With EC2, you can quickly scale your infrastructure up or down as your computing requirements change. This service effectively reduces the time required to obtain and boot new server instances, allowing you to easily adjust capacity according to the needs of your application.",
     "links": [
       {
-        "id": "Q3_eNlQ_Du89czoLyVhLI",
         "title": "Up and Running with AWS EC2",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2",
         "type": "article"
       },
       {
-        "id": "W8UT8g6eBz8nTWHAVSW0_",
         "title": "EC2 Essentials",
         "url": "https://cloudcasts.io/course/ec2-essentials",
         "type": "article"
       },
       {
-        "id": "yJtXj3_ywZ233kdlrlnQ0",
         "title": "Explore top posts about AWS EC2",
         "url": "https://app.daily.dev/tags/aws-ec2?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "J6-1DOqJ-QLU46smNpV3I",
         "title": "Deploy Node App on AWS EC2",
         "url": "https://youtu.be/oHAQ3TzUTro",
         "type": "video"
@@ -674,19 +584,16 @@
     "description": "VPC stands for **Virtual Private Cloud** and is an essential service provided by AWS that allows you to create a private, isolated section within the AWS cloud, where you can define your own virtual network. It offers a more secure and controlled environment, enabling you to easily launch and manage your resources within your personal network.",
     "links": [
       {
-        "id": "E_gR5mDBxKyZyZLqV1I73",
         "title": "Up and Running with AWS VPC",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc",
         "type": "article"
       },
       {
-        "id": "xHh3Q-_8B4o2HuNLa5-uW",
         "title": "VPC Basics",
         "url": "https://cloudcasts.io/course/vpc-basics",
         "type": "article"
       },
       {
-        "id": "ReTzKZC7XmbC96zZmpaDn",
         "title": "AWS VPC & Subnets For Beginners",
         "url": "https://youtu.be/TUTqYEZZUdc",
         "type": "video"
@@ -698,19 +605,16 @@
     "description": "[Route53](https://aws.amazon.com/route53/) is AWS's Domain Name System (DNS) service that plays a critical role in connecting user requests to your web application or other resources within your infrastructure. With Route53, you can easily manage domains, redirect traffic, and configure domain-related settings. It has several advantages, including high availability, low latency, and integration with other AWS resources.",
     "links": [
       {
-        "id": "gKqxNKdzlJFrNgVXoKtCs",
         "title": "Amazon Route 53",
         "url": "https://www.youtube.com/watch?v=RGWgfhZByAI",
         "type": "video"
       },
       {
-        "id": "3uJf_P_emcww9ShttFVeA",
         "title": "AWS Route 53 Domain Name",
         "url": "https://www.youtube.com/watch?v=jDz4j_kkyLA",
         "type": "video"
       },
       {
-        "id": "uOiayqldznuREWsMTUK73",
         "title": "DNS with AWS Route 53",
         "url": "https://www.youtube.com/watch?v=yRIY7BJohfo&t=2s",
         "type": "video"
@@ -722,7 +626,6 @@
     "description": "Amazon SES (Simple Email Service) is a scalable, flexible, and cost-effective cloud-based email service that is specifically designed for developers, marketers, and businesses to send and receive marketing, transactional, and notification emails. SES is useful, especially when you need to send a large volume of emails, as it offers high deliverability, reliability, and ease of use.",
     "links": [
       {
-        "id": "8ZINd_Vi90MSQkXc3yNeG",
         "title": "Contact Form Submission With AWS SES",
         "url": "https://www.youtube.com/watch?v=HiHflLTqiwU",
         "type": "video"
@@ -734,19 +637,16 @@
     "description": "S3 is a service that allows you to store files in the cloud. It's a simple service that you can use to store files and serve them to your users.",
     "links": [
       {
-        "id": "gwnJhRdjHj30M5eCj9hBD",
         "title": "Explore top posts about AWS S3",
         "url": "https://app.daily.dev/tags/aws-s3?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "SjxDGjSBXtJsypBm_GHwr",
         "title": "Upload Images to S3 from Node Back End",
         "url": "https://www.youtube.com/watch?v=NZElg91l_ms",
         "type": "video"
       },
       {
-        "id": "u9vaf6t_bngJYXa8S9YT-",
         "title": "S3 Bucket Hosting a Static Website",
         "url": "https://www.youtube.com/watch?v=RoY3ekCCxKc&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
         "type": "video"
@@ -758,13 +658,11 @@
     "description": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.\n\nSome of the key features of Monit are:\n\n*   **Automatic Recovery:** Monit can automatically restart a service or process if it fails, making your application more resistant to unexpected issues.\n*   **Alert Notifications:** Monit can send email notifications when a problem is detected or when a certain condition is met, keeping you informed about the health of your application.\n*   **Event Logging:** All events detected by Monit are stored in a log for easy troubleshooting and analysis.\n*   **Resource Limit Monitoring:** Monit can monitor the resource utilization (CPU, memory, network, etc.) of a process or service and take action if a specific limit is exceeded.\n*   **Flexible Configuration:** Monit uses a simple, human-readable configuration syntax that allows you to tailor its behavior to your needs.\n*   **Web Interface:** Monit provides a built-in web interface for remotely monitoring your application's status and manage services.\n\nHave a look at the following resources to learn more about Monit:",
     "links": [
       {
-        "id": "aeFeVeNa86iAEyQfjFps1",
         "title": "Monit documentation",
         "url": "https://mmonit.com/monit/documentation/",
         "type": "article"
       },
       {
-        "id": "JjMvUK3QNprjEDFoM1sMS",
         "title": "Monit - Opensource Self Healing Server Monitoring",
         "url": "https://www.youtube.com/watch?v=3cA5lNje1Ow",
         "type": "video"
@@ -776,37 +674,31 @@
     "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "HKt1RzYQE5IMjcdGnwerB",
         "title": "Visit Dedicated PostgreSQL DBA Roadmap",
         "url": "/postgresql-dba",
         "type": "article"
       },
       {
-        "id": "fxWNFjfOAhh8SstisS72q",
         "title": "Official Website",
         "url": "https://www.postgresql.org/",
         "type": "article"
       },
       {
-        "id": "AVL8f0LWaWztOt18iJYDv",
         "title": "Learn PostgreSQL - Full Tutorial for Beginners",
         "url": "https://www.postgresqltutorial.com/",
         "type": "article"
       },
       {
-        "id": "u78CV_kEpMRN4QxAXIRlr",
         "title": "Explore top posts about PostgreSQL",
         "url": "https://app.daily.dev/tags/postgresql?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "08o00p69ipbTXcWHxQp5U",
         "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
         "url": "https://www.youtube.com/watch?v=qw--VYLpxG4",
         "type": "video"
       },
       {
-        "id": "DQfBI8k4Kd3C2YLF9HSNe",
         "title": "Postgres tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=eMIxuk0nOkU",
         "type": "video"
@@ -818,13 +710,11 @@
     "description": "Now that you know the basics of AWS, you should be able to deploy your application to AWS. You don't need to use all the AWS services, here is what you can probably get started with:\n\n*   Setup an EC2 instance using any AMI (e.g. latest version of Ubuntu)\n*   SSH into the EC2 instance using the key pair you created\n*   Install Node.js on the EC2 instance\n*   Install Git on the EC2 instance\n*   Clone your application from GitHub\n*   Install and configure database on the EC2 instance (e.g. PostgreSQL)\n*   Make sure that the security group of the EC2 instance allows HTTP and HTTPS traffic\n*   Try to access your application using the public IP address of the EC2 instance\n*   Purchase or setup a domain name using Route53 (or any other domain name provider) and point it to the public IP address of the EC2 instance\n*   Setup HTTPs using [certbot](https://roadmap.sh/guides/setup-and-auto-renew-ssl-certificates)\n*   And voilla! You have deployed your application to AWS!\n\nIf you get stuck, here is a video that shows how to deploy a Node.js application to AWS EC2:",
     "links": [
       {
-        "id": "kFNOPNYzrmeERC2OhQ-sZ",
         "title": "Explore top posts about CI/CD",
         "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "IY9xhukNWV1ZO6TFtBmvS",
         "title": "Deploy Node App on AWS EC2",
         "url": "https://youtu.be/oHAQ3TzUTro",
         "type": "video"
@@ -836,31 +726,26 @@
     "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.",
     "links": [
       {
-        "id": "9uSboSruUQw9jc60dwzo_",
         "title": "Github Actions",
         "url": "https://github.com/features/actions",
         "type": "opensource"
       },
       {
-        "id": "I8dPh3WTQk_DvFs9-6fgl",
         "title": "Github Actions Documentation",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
       },
       {
-        "id": "iOOMCJuXTaqOJ2yely30G",
         "title": "Explore top posts about GitHub",
         "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "50dcELPLN9N5JgaZQ1D4H",
         "title": "5 Ways to DevOps-ify your App",
         "url": "https://www.youtube.com/watch?v=eB0nUzAI7M8",
         "type": "video"
       },
       {
-        "id": "3x9IRQpoOBm_Z6qj9k-bV",
         "title": "DevOps CI/CD Explained in 100 Seconds",
         "url": "https://www.youtube.com/watch?v=scEDHsr3APg",
         "type": "video"
@@ -877,31 +762,26 @@
     "description": "Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "WVW-Y4q531mz1WFrHuVO4",
         "title": "Ansible Website",
         "url": "https://www.ansible.com/",
         "type": "article"
       },
       {
-        "id": "E08wEAyg24uF3HrT8rLhT",
         "title": "Official Documentation",
         "url": "https://docs.ansible.com/",
         "type": "article"
       },
       {
-        "id": "FX62puhmt0sxo1q97VD-2",
         "title": "Ansible Getting Started Guide",
         "url": "https://www.ansible.com/resources/get-started",
         "type": "article"
       },
       {
-        "id": "4S-ZfYppiZ4-irFA-fY0j",
         "title": "Explore top posts about Ansible",
         "url": "https://app.daily.dev/tags/ansible?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "Apazp5jJrVH3GBFRQd50W",
         "title": "Ansible Full Course for Beginners",
         "url": "https://www.youtube.com/watch?v=9Ua2b06oAr4",
         "type": "video"
@@ -918,61 +798,51 @@
     "description": "Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "bm1jK2dO2MLacwqw41bdY",
         "title": "Terraform Website",
         "url": "https://www.terraform.io/",
         "type": "article"
       },
       {
-        "id": "ZDmqa3TOJpDnUCLR07c-p",
         "title": "Terraform Documentation",
         "url": "https://www.terraform.io/docs",
         "type": "article"
       },
       {
-        "id": "ENnArhyiPJunZWlJBSGLm",
         "title": "Terraform Tutorials",
         "url": "https://learn.hashicorp.com/terraform",
         "type": "article"
       },
       {
-        "id": "Q1jrOS9qZ03KGXVCUwMTc",
         "title": "Terraform CDK Website",
         "url": "https://www.terraform.io/cdktf",
         "type": "article"
       },
       {
-        "id": "byXCPvxWV-AzBE9xPZCLx",
         "title": "What is the CDKTF?",
         "url": "https://www.terraform.io/cdktf/concepts/cdktf-architecture",
         "type": "article"
       },
       {
-        "id": "6AUysH9zh2YvO5i--Tyua",
         "title": "CDKTF Getting Started Guide",
         "url": "https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf",
         "type": "article"
       },
       {
-        "id": "9MOYMPEfsaT3qWV0HwqRp",
         "title": "CDKTF Examples",
         "url": "https://www.terraform.io/cdktf/examples",
         "type": "article"
       },
       {
-        "id": "ztdG4VDope6tkuMDJl1Y1",
         "title": "How to Scale Your Terraform Infrastructure",
         "url": "https://thenewstack.io/how-to-scale-your-terraform-infrastructure/",
         "type": "article"
       },
       {
-        "id": "QqBpCQAhImk4UyA1wiCln",
         "title": "Explore top posts about Terraform",
         "url": "https://app.daily.dev/tags/terraform?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "P6HzcUr93gRNNJ3o0Q5Iv",
         "title": "Intro to Terraform Video",
         "url": "https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp",
         "type": "video"

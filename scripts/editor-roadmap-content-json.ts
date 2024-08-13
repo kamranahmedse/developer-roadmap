@@ -7,15 +7,10 @@ import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
 import { markdownToHtml } from '../src/lib/markdown';
 import { HTMLElement, parse } from 'node-html-parser';
-import { nanoid } from 'nanoid';
 import { htmlToMarkdown } from '../src/lib/html';
 
-// ERROR: `__dirname` is not defined in ES module scope
-// https://iamwebwiz.medium.com/how-to-fix-dirname-is-not-defined-in-es-module-scope-34d94a86694d
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// Usage: tsx ./scripts/editor-roadmap-dirs.ts <roadmapId>
 
 export const allowedLinkTypes = [
   'video',
@@ -94,7 +89,6 @@ for (const roadmapId of editorRoadmapIds) {
       title: string;
       description: string;
       links: {
-        id: string;
         title: string;
         url: string;
         type: string;
@@ -151,7 +145,6 @@ for (const roadmapId of editorRoadmapIds) {
               linkText = linkText.replace(typePattern, '');
 
               return {
-                id: nanoid(),
                 title: linkText,
                 url: linkHref,
                 type: linkType,

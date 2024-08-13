@@ -9,19 +9,16 @@
     "description": "Terraform is a powerful tool designed by HashiCorp that helps you set up, manage, and update infrastructure safely and efficiently across various cloud providers. Think of it as a way to define your cloud resources—like servers, storage, and networks—using a simple code format. This makes it easier to automate, share, and manage your infrastructure, ensuring that everything is consistent and can be quickly reproduced or modified as needed.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "yjVfSC_onF6nA2AHjbttn",
         "title": "What is Terraform?",
         "url": "https://developer.hashicorp.com/terraform/intro#what-is-terraform",
         "type": "article"
       },
       {
-        "id": "J0Cgb7brbDF3v6AZWNLs_",
         "title": "What is Terraform?",
         "url": "https://www.varonis.com/blog/what-is-terraform",
         "type": "article"
       },
       {
-        "id": "dOe4SBjhrtjLQc58GqHdh",
         "title": "What is Terraform? Terraform Explained in 2 Minutes",
         "url": "https://www.youtube.com/watch?v=lIaUz2GAqEQ",
         "type": "video"
@@ -33,19 +30,16 @@
     "description": "Using Terraform offers numerous benefits. It allows you to define your infrastructure as code (IaC), making it human-readable, versioned, and shareable. Its multi-cloud support means you can manage resources consistently across various cloud providers and on-premises environments. By automating infrastructure provisioning and management, Terraform reduces manual errors and speeds up deployments. Version control integration ensures you can track changes, roll back when needed, and collaborate effectively with team members. Terraform's use of templates and modules ensures configuration consistency and reusability across projects and environments, while its state management capabilities keep track of existing resources for efficient updates.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Gl9yBLrAar1HU7tuIWlQZ",
         "title": "Use Cases",
         "url": "https://developer.hashicorp.com/terraform/intro/use-cases#use-cases",
         "type": "article"
       },
       {
-        "id": "AzfBMgSdA0KKm3_xoQeic",
         "title": "9 Terraform Use Cases for Your Infrastructure as Code",
         "url": "https://spacelift.io/blog/terraform-use-cases",
         "type": "article"
       },
       {
-        "id": "928vOVY-ZhMNhgYsMUbwx",
         "title": "What are the Benefits of Using Terraform?",
         "url": "https://www.youtube.com/watch?v=0M4IvedbLJ4",
         "type": "video"
@@ -57,25 +51,21 @@
     "description": "Follow the instructions given in the following URL to install terraform:",
     "links": [
       {
-        "id": "w6L-32nz_s6snH2VwEUaE",
         "title": "Installing Terraform",
         "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli",
         "type": "article"
       },
       {
-        "id": "s_csg0Z0wq0nYC966EdzK",
         "title": "Install Terraform on Ubuntu",
         "url": "https://www.youtube.com/watch?v=LM3RLgNu7tU",
         "type": "video"
       },
       {
-        "id": "WBhQtPwifE4az0uGwi99d",
         "title": "Install Terraform on MacOS",
         "url": "https://www.youtube.com/watch?v=ViMwnReV1A8",
         "type": "video"
       },
       {
-        "id": "sqjoIAfVuMnNjtQiT-W2x",
         "title": "Install Terraform on Windows 10/11",
         "url": "https://www.youtube.com/watch?v=qj4cOSYr7po",
         "type": "video"
@@ -87,13 +77,11 @@
     "description": "CaC (Configuration as Code) and IaC (Infrastructure as Code) are both ways to manage infrastructure resources, but they focus on different things. CaC deals with setting up and managing the software and settings within your servers, like user settings and app configs. Examples of CaC tools include Ansible and Puppet. IaC, on the other hand, is about managing the underlying infrastructure, like virtual machines, networks, and storage. Examples of IaC tools include Terraform and AWS CloudFormation. So, while IaC sets up the environment, CaC ensures the software within that environment runs correctly.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "5GI4bQT6OGQsVUxZU7z2S",
         "title": "IaC vs CaC",
         "url": "https://medium.com/@cloudhacks_/infrastructure-as-code-iac-vs-configuration-as-code-cac-unraveling-the-differences-24fbce05ae25",
         "type": "article"
       },
       {
-        "id": "hBp9ai96eSbAkN0j7xIhq",
         "title": "Ansible vs. Terraform: What's the difference?",
         "url": "https://www.youtube.com/watch?v=rx4Uh3jv1cA",
         "type": "video"
@@ -105,19 +93,16 @@
     "description": "Project initialization in Terraform involves setting up the necessary configuration files and directory structure for managing infrastructure as code. The `terraform init` command is crucial in this process, as it initializes the working directory, downloads the required provider plugins, and sets up the backend configuration for storing state files. This command ensures that the project is correctly configured and ready for subsequent Terraform commands, laying the foundation for efficient and organized infrastructure management.\n\nLearn more from the following resources:\n\n\\-[@official@Init Command](https://developer.hashicorp.com/terraform/cli/commands/init)",
     "links": [
       {
-        "id": "ub8qQP5EVXZGhNHCskIry",
         "title": "Initialize Terraform Configuration",
         "url": "https://developer.hashicorp.com/terraform/tutorials/cli/init",
         "type": "article"
       },
       {
-        "id": "XD8f8u6w1V3uVQS_W7UqD",
         "title": "Terraform Init",
         "url": "https://spacelift.io/blog/terraform-init",
         "type": "article"
       },
       {
-        "id": "OwvtHWF7d8h-kZRvkwnpF",
         "title": "Learn Terraform: The Init Command",
         "url": "https://www.youtube.com/watch?v=82lsMLqWjS4",
         "type": "video"
@@ -129,19 +114,16 @@
     "description": "Terraform Providers are plugins that enable interaction with various external APIs. They manage the lifecycle of resources by defining resource types and data sources. Each provider requires configuration, typically including authentication details and endpoint URLs. Providers are specified in the `provider` block, and multiple providers can be used in a single Terraform project to manage resources across different platforms.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "ng-skxrhcPc5NqysSR2_A",
         "title": "Providers Documentation",
         "url": "https://developer.hashicorp.com/terraform/language/providers#providers",
         "type": "article"
       },
       {
-        "id": "oELhqAamW4MmqEdEPLxM3",
         "title": "Understanding Terraform Providers",
         "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/getting-started-terraform/providers.html",
         "type": "article"
       },
       {
-        "id": "eVWEccbkPoydRscVflssm",
         "title": "What are terraform providers and how to use them?",
         "url": "https://www.youtube.com/watch?v=Kd7ddHBR2ec",
         "type": "video"
@@ -153,19 +135,16 @@
     "description": "The Terraform Registry is a centralized repository for discovering, sharing, and using Terraform modules and providers. It allows users to browse and download pre-built configurations, enabling quick integration of best practices. The registry supports versioning, ensuring consistent deployments, and includes detailed documentation for each module and provider. Users can also publish their own modules to the registry, facilitating community collaboration and reuse.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "lF9DVvBGGsu5ab6n8UAF_",
         "title": "Terraform Registry",
         "url": "https://registry.terraform.io/",
         "type": "article"
       },
       {
-        "id": "Zicwm4_Gl59qkyunHEXDM",
         "title": "Terraform Registry Guide",
         "url": "https://spacelift.io/blog/terraform-registry",
         "type": "article"
       },
       {
-        "id": "_qVIf8W11a4npM29uMyet",
         "title": "Terraform Registry Providers and Modules",
         "url": "https://www.youtube.com/watch?v=q4VdvS8aXnc",
         "type": "video"
@@ -177,13 +156,11 @@
     "description": "Configuring providers in Terraform involves specifying the required provider in the `provider` block within your Terraform configuration files. This block includes settings such as authentication credentials, region, and other provider-specific parameters. Providers must be initialized using `terraform init` to download and install the necessary plugins. Multiple configurations can be managed by aliasing providers, enabling resource management across different environments or accounts within the same provider.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "TNRMAFUOlfpqPa5toTUOK",
         "title": "Providers Overview",
         "url": "https://developer.hashicorp.com/terraform/language/providers#providers",
         "type": "article"
       },
       {
-        "id": "cE4I-i4PhlnWONzAlQWKO",
         "title": "How To Use Terraform Providers",
         "url": "https://www.env0.com/blog/how-to-use-terraform-providers",
         "type": "article"
@@ -195,7 +172,6 @@
     "description": "Specifying provider versions in Terraform ensures consistent and predictable behavior across different environments. Instead of using the `version` meta-argument within the provider block, which was deprecated and removed in Terraform 0.13, provider version constraints should now be defined in the `required_providers` block. This approach prevents unexpected changes or compatibility issues due to provider updates, enhancing stability and reliability in infrastructure management. It allows you to control when and how provider updates are applied, ensuring that your infrastructure code runs with the expected provider functionality.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "SvuXSYk52My6LJfrc4rA7",
         "title": "Requiring Providers",
         "url": "https://developer.hashicorp.com/terraform/language/providers/requirements#requiring-providers",
         "type": "article"
@@ -207,13 +183,11 @@
     "description": "HashiCorp Configuration Language (HCL) is a configuration language built by HashiCorp that is used for configuring products in the HashiCorp ecosystem. With its human-readable style, HCL is designed to strike a balance between a generic configuration language like JSON or YAML and a high-level scripting language. In relation to the Terraform Roadmap, HCL is the primary language used for writing Terraform configuration files, thus making it a fundamental part of defining and providing data center infrastructure in a descriptive manner.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "gn69ggF9ztUfhYDrauek_",
         "title": "HCL Repository",
         "url": "https://github.com/hashicorp/hcl",
         "type": "opensource"
       },
       {
-        "id": "evvir710aJhL2qb3CwWoz",
         "title": "https://developer.hashicorp.com/terraform/language",
         "url": "https://developer.hashicorp.com/terraform/language",
         "type": "article"
@@ -225,19 +199,16 @@
     "description": "Infrastructure as Code (IaC) is a practice in DevOps and cloud computing that involves managing and provisioning computing infrastructure through machine-readable configuration files, rather than through physical hardware configuration or interactive configuration tools. This approach allows for version control, automation, and consistency in infrastructure deployment, making it easier to manage, scale, and replicate environments while reducing the risk of human error.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "cUmkeTCrNHdcMb_RI_Q0i",
         "title": "What Is It? Why Is It Important?",
         "url": "https://www.hashicorp.com/resources/what-is-infrastructure-as-code",
         "type": "article"
       },
       {
-        "id": "iw5QPswcgx-eUOOevU-Ef",
         "title": "What is Infrastructure as Code?",
         "url": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
         "type": "article"
       },
       {
-        "id": "wlZfcRt1iQZnTeYqS-QAR",
         "title": "What is Infrastructure as Code?",
         "url": "https://www.youtube.com/watch?v=zWw2wuiKd5o",
         "type": "video"
@@ -254,7 +225,6 @@
     "description": "The Basic Syntax of HashiCorp Configuration Language (HCL) includes defining blocks, attributes, and expressions. Blocks are fundamental units like `resource`, `module`, and `provider`, identified by keywords and enclosed in curly braces. Attributes are key-value pairs within blocks, where keys are strings and values can be strings, numbers, or other data types. Expressions allow embedding variables, functions, and references to other resources, enabling dynamic configurations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "8c_o7LvjAF4t9OorIcWJQ",
         "title": "HCL Native Syntax Specification",
         "url": "https://github.com/hashicorp/hcl/blob/main/hclsyntax/spec.md",
         "type": "opensource"
@@ -266,13 +236,11 @@
     "description": "Resources represent components of your infrastructure such as Virtual Machines, Storage Buckets, Databases or Virtual Private Clouds. Access to provider resources comes after successful project initalization after declaring your desired providers.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "0IYHF5TbMBWRKmCxFUybY",
         "title": "Resource Blocks",
         "url": "https://developer.hashicorp.com/terraform/language/resources/syntax",
         "type": "article"
       },
       {
-        "id": "3oEQZq-uJ-kqI29UIuCmH",
         "title": "Define Infrastructure With Terraform Resources",
         "url": "https://developer.hashicorp.com/terraform/tutorials/configuration-language/resource",
         "type": "video"
@@ -284,13 +252,11 @@
     "description": "Resource behavior encompasses how resources are managed, created, updated, and destroyed according to the configuration specified in Terraform files. Each resource block specifies desired attributes, and Terraform ensures that the real-world infrastructure matches these specifications. If writing a configuration for the first time, the resources defined will only exist in the configuration and will not be reflected on the target platform until applied. When a configuration is applied, Terraform generates an execution plan, determining the actions required to reach the desired state, such as creating new resources, updating existing ones, or deleting resources no longer needed.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Wz01VvXrn7eSFuPin3bbK",
         "title": "Behaviour",
         "url": "https://developer.hashicorp.com/terraform/language/resources/behavior",
         "type": "article"
       },
       {
-        "id": "lUAQTsQT_9CrRAoSLfq7A",
         "title": "Terraform Resource Syntax, Behavior and State",
         "url": "https://terraformguru.com/terraform-certification-using-azure-cloud/09-Resource-Syntax-and-Behavior/",
         "type": "article"
@@ -307,19 +273,16 @@
     "description": "The depends\\_on meta-argument in Terraform is used to explicitly declare dependencies between resources, ensuring that one or more resources are created or destroyed only after the specified dependent resources have been successfully applied. This is crucial for managing resource dependencies that are not automatically detected by Terraform’s implicit dependency analysis. By using depends\\_on, you can enforce the correct order of resource creation, modification, or destruction, which is particularly useful in complex infrastructure setups where certain resources must exist or be configured before others can be effectively managed. This meta-argument enhances the reliability and predictability of your Terraform configurations\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "-ssKqhrQQZ440wtrVnxX0",
         "title": "Terraform Docs - depends_on",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on",
         "type": "article"
       },
       {
-        "id": "MdgMfyOvnlx9phstqCubk",
         "title": "How to Use Terraform depends_on",
         "url": "https://spacelift.io/blog/terraform-depends-on",
         "type": "article"
       },
       {
-        "id": "mejI5kt8yr8A63InzXkrE",
         "title": "How to use Terraform depends_on meta tag?",
         "url": "https://www.youtube.com/watch?v=v0Qt-ltvmXU",
         "type": "video"
@@ -331,19 +294,16 @@
     "description": "The count meta-argument in Terraform allows you to specify the number of instances of a particular resource to create. By setting count to a numeric value, Terraform dynamically generates multiple instances of the resource, indexed from 0 to count-1. This is useful for managing infrastructure that requires multiple identical or similar resources, such as creating multiple virtual machines or storage buckets. Using count, you can conditionally create resources by setting the value based on variables or expressions, making your configurations more flexible and reducing redundancy. Each instance of the resource can be uniquely referenced using the count.index value, enabling more granular control and customization of each resource instance.\n\nNote: You cannot delare count and for\\_each on the same resource.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "BaUWUUZ5iw28ToXPZhXjf",
         "title": "Terraform Docs - count",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/count",
         "type": "article"
       },
       {
-        "id": "8A5z3RDZkoqiyy-B0pDM-",
         "title": "Terraform by Example - count",
         "url": "https://www.terraformbyexample.com/count",
         "type": "article"
       },
       {
-        "id": "kxgbE3HdKnp462nAWMzBf",
         "title": "Conditional blocks in Terraform using count",
         "url": "https://www.youtube.com/watch?v=RVoIqWkN_gI",
         "type": "video"
@@ -355,19 +315,16 @@
     "description": "The for\\_each meta-argument in Terraform enables you to create multiple instances of a resource based on a set or map. Unlike count, which uses a simple integer, for\\_each allows for more granular and dynamic resource creation, as each instance is associated with a specific key-value pair from the given set or map. This meta-argument is particularly useful for creating resources with unique configurations derived from the keys and values of the set or map. By leveraging for\\_each, you can manage collections of resources more efficiently, ensuring each instance can be individually referenced and customized based on its specific key.\n\nNote: You cannot declare for\\_each and count in the same resource.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "J83oQscSTUALsAxar1OHQ",
         "title": "Terraform Docs - for_each",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/for_each",
         "type": "article"
       },
       {
-        "id": "k7ekV2Pc5suCe4VGL26t2",
         "title": "Terraform by Example - for_each",
         "url": "https://www.terraformbyexample.com/for_each",
         "type": "article"
       },
       {
-        "id": "mOIrZayyARUVJFEgiQnCx",
         "title": "Terraform for loops",
         "url": "https://www.youtube.com/watch?v=4qO7WK6D3cA",
         "type": "video"
@@ -379,13 +336,11 @@
     "description": "The `provider` meta-argument in Terraform specifies which provider configuration to use for a resource, overriding the default provider selection based on the resource type name. This is useful in scenarios where multiple configurations of the same provider are required, such as managing resources across different regions or environments. By setting the `provider` argument, you can ensure that the resource uses the specified provider setup, identified by its alias, enhancing control and flexibility in multi-provider or multi-region deployments. This meta-argument is essential for precisely directing Terraform on how to interact with the underlying infrastructure provider.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Whubp8Ec0dVegtVIp6r_3",
         "title": "Terraform Docs - for_each",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/resource-provider",
         "type": "article"
       },
       {
-        "id": "w4_pa4QmRDg1afLZqU3lC",
         "title": "Terraform by Example - for_each",
         "url": "https://www.terraformbyexample.com/providers/",
         "type": "article"
@@ -397,19 +352,16 @@
     "description": "The lifecycle meta-argument in Terraform customizes the behavior of resources during creation, update, and deletion. It includes settings such as create\\_before\\_destroy, which ensures a new resource is created before the old one is destroyed, preventing downtime. prevent\\_destroy protects resources from accidental deletion, and ignore\\_changes specifies attributes to ignore during updates, allowing external modifications without triggering Terraform changes. These options provide fine-grained control over resource management, ensuring that the desired state of infrastructure is maintained with minimal disruption and precise handling of resource lifecycles.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "4bZiZyT-tUDEpuQlzHgYd",
         "title": "Terraform Docs - for_each",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle",
         "type": "article"
       },
       {
-        "id": "vz5h8sjcGIGSSnJ_bRLZk",
         "title": "Terraform Resource Lifecycle",
         "url": "https://spacelift.io/blog/terraform-resource-lifecycle",
         "type": "article"
       },
       {
-        "id": "sspnmMkHJzG_LBybqpDXm",
         "title": "Understanding the Lifecycle Block",
         "url": "https://dev.to/pwd9000/terraform-understanding-the-lifecycle-block-4f6e",
         "type": "article"
@@ -421,19 +373,16 @@
     "description": "Meta-arguments in Terraform resources provide additional control over how resources are managed and interact within the configuration.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "jAY6uDaiyirfSOL9KeXUZ",
         "title": "Meta Arguments in Terraform",
         "url": "https://muditmathur121.medium.com/meta-arguments-in-terraform-aaaa6e3734e6",
         "type": "article"
       },
       {
-        "id": "0u96rWe9NqgnWTR-ugPIU",
         "title": "Terraform Meta-Arguments",
         "url": "https://www.devopsschool.com/blog/terraform-tutorials-meta-arguments/",
         "type": "article"
       },
       {
-        "id": "zcuEXGbmhYlNQTxK_fqQX",
         "title": "Resource Meta Arguments",
         "url": "https://www.youtube.com/watch?v=7JraLCfroyE",
         "type": "video"
@@ -445,19 +394,16 @@
     "description": "Terraform uses variables to make configurations more flexible and reusable. Variables can be declared in `.tf` files and assigned values through various methods, including default values, command-line flags, environment variables, or separate `.tfvars` files. They support multiple data types such as string, number, bool, list, and map. Variables can be referenced throughout the configuration using the `var` prefix. This system enables infrastructure as code to be more dynamic and adaptable to different environments or use cases.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "_1-QEJYq-t2XENUCvGNa2",
         "title": "Input Variables",
         "url": "https://developer.hashicorp.com/terraform/language/values/variables",
         "type": "article"
       },
       {
-        "id": "xSh7sUYb9vluHdve40-fM",
         "title": "How To Use Terraform Variables",
         "url": "https://spacelift.io/blog/how-to-use-terraform-variables",
         "type": "article"
       },
       {
-        "id": "K33AjCHhgXOrFdVeKpeVB",
         "title": "Learn How to Use Terraform Variable",
         "url": "https://www.youtube.com/watch?v=oArutYYvQ_Y",
         "type": "video"
@@ -469,19 +415,16 @@
     "description": "Terraform input variables are parameters for modules, declared using variable blocks. They support multiple data types, default values, and descriptions. Users provide values when invoking modules or running Terraform. Accessed via `var.<name>` syntax, input variables enable flexible, reusable infrastructure templates adaptable to various deployment scenarios. They can be marked sensitive for security and are typically defined in a `variables.tf` file.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "VR-G2bIXRs1vduJczaQyk",
         "title": "Define Input Variables",
         "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-variables",
         "type": "article"
       },
       {
-        "id": "DIOIkGCXRaTFvgTgN5XOA",
         "title": "Terraform Input and Output Variables Explained",
         "url": "https://kodekloud.com/blog/terraform-variables-explained/",
         "type": "article"
       },
       {
-        "id": "KfYkgZi-q9e85AG74-7BV",
         "title": "Terraform Basics: Input Variables",
         "url": "https://www.youtube.com/watch%3Fv%3D2f65JhfYmIo",
         "type": "video"
@@ -493,13 +436,11 @@
     "description": "Terraform variable type constraints specify allowed data types for input variables. They include primitive types (string, number, bool), complex types (list, set, map, object), and any for unspecified types. Constraints can enforce specific structures, nested types, or value ranges. They're defined in the variable block's type argument, helping catch errors early and ensuring correct variable usage throughout configurations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "-oAXS5bKGYPDY_2anJh3u",
         "title": "Variable Type Contraints",
         "url": "https://developer.hashicorp.com/terraform/language/expressions/type-constraints",
         "type": "article"
       },
       {
-        "id": "na6s1fPiyxu_EczNZoW6Z",
         "title": "Terraform Type Constraints",
         "url": "https://www.youtube.com/watch?v=hNZiZEQfV4Q",
         "type": "video"
@@ -516,13 +457,11 @@
     "description": "A Terraform `variables.tf` file centralizes input variable declarations for a module or configuration. It typically contains multiple variable blocks, each defining a single input variable with its name, type constraint, optional default value, and description. This file serves as a single reference point for all variables used in the configuration, enhancing readability and maintainability. While not mandatory, using `variables.tf` is a common practice to organize and document a module's expected inputs.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "GJ_cFk5KSzJMZXAedftwl",
         "title": "Parameterize Your Configuration",
         "url": "https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables#parameterize-your-configuration",
         "type": "article"
       },
       {
-        "id": "VkRyKD_HSTXnUDP4tKmuJ",
         "title": "You should be using tfvars vs variables in Terraform",
         "url": "https://www.youtube.com/watch?v=BHWM4D2GJvI",
         "type": "video"
@@ -544,19 +483,16 @@
     "description": "Terraform outputs expose selected values from a configuration or module, making them accessible to users or other modules. Defined in output blocks, typically in an `outputs.tf` file, they can reference resource attributes or other computed values. Outputs are displayed after apply operations, can be queried using terraform output commands, and are crucial for passing information between modules or to external systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "omm3oCc0kdjmWSvubJ_2i",
         "title": "Output Values",
         "url": "https://developer.hashicorp.com/terraform/language/values/outputs",
         "type": "article"
       },
       {
-        "id": "ob0fyoOUACZT_H45Fp3U1",
         "title": "Terraform Output Values",
         "url": "https://spacelift.io/blog/terraform-output",
         "type": "article"
       },
       {
-        "id": "sJMJ_Ls_TzG7kZF5I1S9F",
         "title": "Learn Terraform Outputs in 4 Minutes",
         "url": "https://www.youtube.com/watch?v=i-Ky1Tut_2I",
         "type": "video"
@@ -568,25 +504,21 @@
     "description": "Terraform output syntax is used to define values that should be made accessible after applying a Terraform configuration. The basic syntax is:\n\n    output \"name\" {\n      value = expression\n      description = \"Optional description\"\n      sensitive = bool\n    }\n    \n\n`name` is a unique identifier for the output. `value` is the expression whose result will be output. `description` is optional and provides context. `sensitive` is a boolean flag to mark sensitive data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "0rfAPNjNYDvHHTVCXNs4R",
         "title": "Hashicorp Output Tutorial",
         "url": "https://developer.hashicorp.com/terraform/tutorials/configuration-language/outputs",
         "type": "course"
       },
       {
-        "id": "awSjLnvR2J9PVWuGOENSg",
         "title": "Declaring an output value",
         "url": "https://developer.hashicorp.com/terraform/language/values/outputs#declaring-an-output-value",
         "type": "article"
       },
       {
-        "id": "9rXhGUM_sGadrTjRLmqqF",
         "title": "Terraform Output Values : Complete Guide & Examples",
         "url": "https://spacelift.io/blog/terraform-output",
         "type": "article"
       },
       {
-        "id": "XhlcODSfaIIvqdsVnJE_d",
         "title": "Terraform: Output a field from a module",
         "url": "https://stackoverflow.com/questions/47034515/terraform-output-a-field-from-a-module",
         "type": "article"
@@ -598,13 +530,11 @@
     "description": "Terraform sensitive outputs are a feature used to protect sensitive information in Terraform configurations. When an output is marked as sensitive, Terraform obscures its value in the console output and state files, displaying it as \"\" instead of the actual value. This is crucial for protecting sensitive data like passwords or API keys.\n\nTo mark an output as sensitive, use the sensitive argument in the output block:\n\n    output \"database_password\" {\n      value     = aws_db_instance.example.password\n      sensitive = true\n    }\n    \n\nSensitive outputs are still accessible programmatically, but their values are hidden in logs and the console to prevent accidental exposure. This feature helps maintain security when sharing Terraform configurations or outputs with team members or in CI/CD pipelines.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "2jlZRw9_J0G2C4KMqI-t7",
         "title": "How to output sensitive data in Terraform",
         "url": "https://support.hashicorp.com/hc/en-us/articles/5175257151891-How-to-output-sensitive-data-with-Terraform",
         "type": "article"
       },
       {
-        "id": "8VKVhSk0QYik3Zsc50M7e",
         "title": "Surpressing values in CLI output",
         "url": "https://developer.hashicorp.com/terraform/language/values/outputs#sensitive-suppressing-values-in-cli-output",
         "type": "article"
@@ -616,13 +546,11 @@
     "description": "Terraform preconditions are declarative checks within resource or data blocks that validate configuration or state before Terraform attempts to create or modify resources. They use condition arguments to specify logical tests and `error_message` arguments for custom failure notifications. Preconditions help catch misconfigurations early, enforce business rules, and ensure dependencies are met before resource operations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "HST8lCv-25tCX0VMsxAPU",
         "title": "Custom Condition Checks",
         "url": "https://developer.hashicorp.com/terraform/language/values/outputs#custom-condition-checks",
         "type": "article"
       },
       {
-        "id": "hb4Z6bxx1LyJt8F-NiZp3",
         "title": "Using Precondition and Postcondition Blocks in Terraform",
         "url": "https://www.youtube.com/watch?v=55ZLu8tSnvk",
         "type": "video"
@@ -634,25 +562,21 @@
     "description": "Terraform `format` and `validate` are two essential commands for maintaining clean and correct Terraform configurations:\n\n*   `terraform fmt` automatically formats Terraform configuration files to a consistent style. It adjusts indentation, aligns arguments, and sorts blocks and arguments. This command helps maintain code readability and consistency across team projects.\n    \n*   `terraform validate` checks the syntax and internal consistency of Terraform configurations. It verifies that the configuration is syntactically valid, references are correct, and attribute names and types are appropriate. This command catches errors early in the development process, before attempting to apply changes to infrastructure.\n    \n\nYou can learn more about these using the following resources",
     "links": [
       {
-        "id": "XdOltld-pYhyafSodHsbu",
         "title": "Validate, format, lint, secure, and test Terraform IaC",
         "url": "https://tech.aabouzaid.com/2020/04/validate-format-lint-and-test-terraform-iac-ci.html",
         "type": "article"
       },
       {
-        "id": "JlIWV6xnUjHv1AO-Ffc8u",
         "title": "Terraform Validate - Documentation",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/validate",
         "type": "article"
       },
       {
-        "id": "6bneeyVf0A2-LadCJ09jo",
         "title": "Terraform Format - Documentation",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/fmt",
         "type": "article"
       },
       {
-        "id": "I7obrQQbjtcUzrv-9pMYF",
         "title": "Terraform Validate Command – Validate Configuration Locally",
         "url": "https://spacelift.io/blog/terraform-validate",
         "type": "article"
@@ -664,19 +588,16 @@
     "description": "terraform fmt is a command in Terraform that automatically formats configuration files to a consistent style. It adjusts indentation, aligns arguments, and sorts blocks and arguments alphabetically. The command rewrites Terraform configuration files (.tf and .tfvars) in the current directory and its subdirectories. It's used to maintain a consistent coding style across projects and teams, improving readability and reducing merge conflicts. The command can be run with options like -recursive to format files in subdirectories, -diff to show the differences, or -check to validate formatting without making changes. Regularly using terraform fmt is considered a best practice in Terraform development workflows.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "9sH85BZMPtEJ2WLAQwv3B",
         "title": "Terraform fmt Documentation",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/fmt",
         "type": "article"
       },
       {
-        "id": "rNJ0xQvc6RzFRO_V5GGKc",
         "title": "Using Terraform fmt Command to Format Your Terraform Code",
         "url": "https://spacelift.io/blog/terraform-fmt",
         "type": "article"
       },
       {
-        "id": "g67uIr4s-QSBNPqqBtKyq",
         "title": "How to auto-format Terraform code",
         "url": "https://www.youtube.com/watch?v=kZX3KLOZvhY",
         "type": "video"
@@ -688,7 +609,6 @@
     "description": "The validate command helps you make sure your Terraform code is syntactically correct before you deploy. This helps you to prevent misconfiguration due to missing attributes or incorrect dependencies, saving time, improving efficiency, and reducing cost.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "vWyCbI1egHD8BagzrHUtT",
         "title": "Terraform Validate practical examples",
         "url": "https://www.env0.com/blog/terraform-validate-command-practical-examples-and-best-practices",
         "type": "article"
@@ -700,19 +620,16 @@
     "description": "TFLint is a third-party, extensible linter for Terraform code. It performs static analysis of Terraform configurations to detect potential errors, enforce best practices, and maintain code consistency. Key features include: Checking for potential errors that terraform validate might miss, enforcing naming conventions and code style rules, identifying deprecated syntax or resource types and, providing cloud provider-specific checks\n\nTFLint is configurable via .tflint.hcl files and supports custom rules. It can be integrated into CI/CD pipelines for automated code quality checks. While not an official Terraform tool, TFLint is widely used in the Terraform community to complement built-in validation tools and improve overall code quality and reliability in infrastructure-as-code projects.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "nQxA49ZR2J6H0tSumLrFj",
         "title": "TFLint Documentation",
         "url": "https://github.com/terraform-linters/tflint",
         "type": "opensource"
       },
       {
-        "id": "srDBOAqkiZufubpli2Afm",
         "title": "What is TFLint and How to Lint Your Terraform Code",
         "url": "https://spacelift.io/blog/what-is-tflint",
         "type": "article"
       },
       {
-        "id": "HF6yUViPyi09-N9WzGb_C",
         "title": "Quick Tech - TFLint",
         "url": "https://www.youtube.com/watch?v=-BKWpI4Olpw",
         "type": "video"
@@ -724,7 +641,6 @@
     "description": "Deploying Terraform-defined infrastructure involves several key steps:\n\n*   Initialize the working directory with `terraform init`\n*   Review changes with `terraform plan`\n*   Apply the configuration using `terraform apply`.\n\nYou can learn more from the following resources:",
     "links": [
       {
-        "id": "oH6Vwr9ETRcFAnSW6FL0U",
         "title": "The Core Terraform Workflow",
         "url": "https://developer.hashicorp.com/terraform/intro/core-workflow",
         "type": "article"
@@ -736,19 +652,16 @@
     "description": "`terraform plan` is a command that creates an execution plan, showing what changes Terraform will make to your infrastructure. It compares the current state with the desired state defined in configuration files and outputs a detailed list of resources to be created, modified, or deleted. Importantly, it doesn't make any actual changes to infrastructure, instead helping identify potential issues before applying changes. The plan can be saved to a file for later execution or review. This command is crucial for reviewing changes before implementation, especially in complex environments, and is commonly used in code reviews and CI/CD pipelines to validate proposed infrastructure modifications. While terraform plan provides a preview, it's worth noting that it can't always predict every change due to external factors or API limitations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "k2D7YzasoFKwxxqcjVYw0",
         "title": "Create a Terraform plan",
         "url": "https://developer.hashicorp.com/terraform/tutorials/cli/plan",
         "type": "course"
       },
       {
-        "id": "y3pjv0DCE5cePYKg8_lKD",
         "title": "Terraform plan command and how it works",
         "url": "https://spacelift.io/blog/terraform-plan",
         "type": "article"
       },
       {
-        "id": "njdkvI8_0FzpuP-c45CD-",
         "title": "Terraform - Terraform Plan",
         "url": "https://www.youtube.com/watch?v=9v08h-Oaelo",
         "type": "video"
@@ -760,19 +673,16 @@
     "description": "`terraform apply` is the command used to implement the changes defined in your Terraform configuration files. It creates, updates, or deletes the specified infrastructure resources to match the desired state. Before making changes, it shows a plan similar to terraform plan and prompts for confirmation, unless the -auto-approve flag is used. Apply updates the state file to reflect the current infrastructure state, enabling Terraform to track and manage resources over time. It handles dependencies between resources, creating them in the correct order.\n\nLearn more from the following resoureces:",
     "links": [
       {
-        "id": "iExCpMxcp7x56K-sGI61u",
         "title": "Apply Terraform configuration",
         "url": "https://developer.hashicorp.com/terraform/tutorials/cli/apply",
         "type": "course"
       },
       {
-        "id": "FTf8WhQk4GXBSg7quMjGx",
         "title": "Terraform Apply Documentation",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
         "type": "article"
       },
       {
-        "id": "9Mu1hEqKlRs7Bd1C8gc2Y",
         "title": "Terraform Apply Command: Options, Examples and Best Practices",
         "url": "https://www.env0.com/blog/terraform-apply-guide-command-options-and-examples",
         "type": "article"
@@ -789,25 +699,21 @@
     "description": "The terraform graph command generates a visual representation of either a configuration or execution plan. It creates a graph of resources and their dependencies in DOT format, which can be converted into an image using tools like Graphviz. This visual aid helps developers understand complex resource relationships, identify potential issues in resource ordering, and visualize the overall structure of their infrastructure. The graph can show different aspects of the Terraform configuration, including resource dependencies, data flow, and module relationships. While primarily used for debugging and documentation purposes, the graph command is also valuable for presenting infrastructure designs to stakeholders or for educational purposes. It's particularly useful in large, complex projects where understanding resource interdependencies can be challenging.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "qTRE47zrtBVDDzWzs_m-9",
         "title": "Graphviz",
         "url": "https://gitlab.com/graphviz/graphviz",
         "type": "opensource"
       },
       {
-        "id": "MUYAzuBASBSwoaKZfnRyY",
         "title": "graph command",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/graph",
         "type": "article"
       },
       {
-        "id": "cmfcH1epWDOiRMHxLvS6A",
         "title": "How to Generate Images with Terraform Graph Command",
         "url": "https://spacelift.io/blog/terraform-graph",
         "type": "article"
       },
       {
-        "id": "DLRHoEkeVbOVbe_Z7hAqd",
         "title": "Terraform — Resource Graph",
         "url": "https://www.youtube.com/watch?v=YbnBstMyVEI",
         "type": "video"
@@ -819,7 +725,6 @@
     "description": "The terraform list command is used to display a list of resources within the Terraform state. It provides a quick overview of all the resources currently being managed by Terraform in your configuration. This command is particularly useful when working with large or complex infrastructures, allowing developers to quickly see what resources are under Terraform's control. The output includes the resource type and name for each managed resource, making it easy to identify specific elements of your infrastructure. It's often used in conjunction with other state manipulation commands to verify the contents of the state or to identify resources for further inspection or modification.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "N51mj5s9d2ATeYz1vw8xl",
         "title": "Terraform state list",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/list",
         "type": "article"
@@ -831,13 +736,11 @@
     "description": "The terraform output command is used to extract the value of an output variable from the Terraform state. It allows you to view the values of outputs defined in your Terraform configuration after they have been applied. This command is useful for retrieving information about your infrastructure, such as IP addresses, resource IDs, or computed values, which can then be used in scripts or passed to other systems. When run without arguments, it displays all outputs. You can specify a particular output name to retrieve a specific value. The command supports different output formats, including JSON, making it easy to integrate with other tools or workflows. It's particularly valuable in CI/CD pipelines or when Terraform is used as part of a larger automation process.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "LiX89ivAdSoKoNModmoir",
         "title": "Terraform output command",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/output",
         "type": "article"
       },
       {
-        "id": "U6eeCU6EeuViF9s1E1vPp",
         "title": "Terraform output",
         "url": "https://learning-ocean.com/tutorials/terraform/terraform-output/",
         "type": "article"
@@ -849,7 +752,6 @@
     "description": "Cleaning up after using Terraform involves removing the infrastructure resources created and managing the associated state. The primary command for this is `terraform destroy`, which deletes all resources managed by the current Terraform configuration. It shows a destruction plan and requires confirmation before proceeding. After destruction, you should remove or archive the state files if they're no longer needed. For partial cleanup, you can remove specific resources from the state using `terraform state rm` and then run `terraform apply` to delete them. It's crucial to ensure all resources are properly removed to avoid unnecessary costs and security risks. Always review the destruction plan carefully, especially in shared or production environments, to prevent accidental deletion of critical resources.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "v9fIy8BU-lFu3XUXR9vaU",
         "title": "How to Destroy Terraform Resources",
         "url": "https://spacelift.io/blog/how-to-destroy-terraform-resources",
         "type": "article"
@@ -861,19 +763,16 @@
     "description": "terraform destroy is a command used to remove all resources managed by a Terraform configuration. It creates a plan to delete all resources and prompts for confirmation before execution. This command is useful for cleaning up temporary environments or decommissioning entire infrastructures. It removes resources in the reverse order of their dependencies to ensure proper teardown. While powerful, terraform destroy should be used cautiously, especially in shared or production environments, as it can lead to data loss if not carefully managed. It's often used in conjunction with terraform state commands for more granular control over resource removal. After destruction, Terraform updates the state file to reflect the changes, but it's important to manage or remove this file if the project is being completely decommissioned.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "WYxDJGUaWYGlHfQHQFSTn",
         "title": "Destroy infrastructure",
         "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-destroy",
         "type": "course"
       },
       {
-        "id": "0dS0JKEDq-UVuP6AmYqJv",
         "title": "Terraform Destroy Documentation",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/destroy",
         "type": "article"
       },
       {
-        "id": "Z8qzu30uKFw6rZ7IYS4eh",
         "title": "How to destroy Terraform resources",
         "url": "https://spacelift.io/blog/how-to-destroy-terraform-resources",
         "type": "article"
@@ -885,19 +784,16 @@
     "description": "Terraform state is a crucial concept in Terraform that tracks the current state of your managed infrastructure. It's typically stored in a file named terraform.tfstate, which maps real-world resources to your configuration. This state allows Terraform to determine which changes are necessary to achieve the desired configuration. It contains sensitive information and should be stored securely, often in remote backends like S3 or Terraform Cloud. The state can be manipulated using terraform state commands for tasks like moving resources between states or removing resources from management. Proper state management is essential for collaborative work, ensuring consistency across team members and enabling Terraform to accurately plan and apply changes to your infrastructure.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "vSfo9mMw3ATFutzbImiuE",
         "title": "State",
         "url": "https://developer.hashicorp.com/terraform/language/state",
         "type": "article"
       },
       {
-        "id": "vs1WMBZ9qK1mE2-6hKQtM",
         "title": "Purpose of Terraform state",
         "url": "https://developer.hashicorp.com/terraform/language/state/purpose",
         "type": "article"
       },
       {
-        "id": "SIeF24q6yEKqfCHIzSnsG",
         "title": "Managing Terraform state files",
         "url": "https://www.youtube.com/watch?v=UDBVCzg2IRo",
         "type": "video"
@@ -909,19 +805,16 @@
     "description": "Terraform remote state refers to storing the state file in a shared, centralized location rather than locally. This approach enables team collaboration, improves security, and ensures state consistency. Common remote backends include cloud storage services like AWS S3, Azure Blob Storage, or managed services like Terraform Cloud. Remote state allows multiple team members to safely work on the same infrastructure, prevents state file loss, and can provide locking mechanisms to avoid concurrent modifications. It's configured in the backend block of the Terraform configuration. Remote state can also be used to share outputs between different Terraform configurations, enabling modular infrastructure design. While more complex to set up initially, remote state is considered a best practice for production environments and team-based Terraform workflows.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "r5KRNz3b40B6_cCQyhkiP",
         "title": "Remote state",
         "url": "https://developer.hashicorp.com/terraform/language/state/remote",
         "type": "article"
       },
       {
-        "id": "whwptQ-x3GhJ-QvldyNJ6",
         "title": "The terraform_remote_state Data Source",
         "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
         "type": "article"
       },
       {
-        "id": "u-0pZwKAFMz3ghSeYk74R",
         "title": "Terraform remote state backends explained",
         "url": "https://www.youtube.com/watch?v=jSoMQCBxp7E",
         "type": "video"
@@ -933,19 +826,16 @@
     "description": "Terraform state locking is a mechanism that prevents concurrent modifications to the same state file, avoiding potential conflicts and data corruption. When enabled, Terraform acquires a lock before performing operations that could modify the state, such as apply or destroy. If the lock is unavailable, Terraform waits or fails, depending on configuration. State locking is automatically supported by many backend types, including S3 with DynamoDB, Azure Blob Storage, and Terraform Cloud. It's crucial for team environments where multiple users or automation processes might attempt simultaneous changes. While essential for data integrity, it's important to implement proper lock management to prevent stuck locks from blocking operations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "QlKTgWz3eVGuAaIDdM4Nb",
         "title": "State - Locking",
         "url": "https://developer.hashicorp.com/terraform/language/state/locking",
         "type": "article"
       },
       {
-        "id": "ODIeaRqEtHMHyHsbAQG_7",
         "title": "State Storage and Locking",
         "url": "https://developer.hashicorp.com/terraform/language/state/backends",
         "type": "article"
       },
       {
-        "id": "bNwwI_tXZTX02YzivHUGV",
         "title": "Terraform - State locking",
         "url": "https://www.youtube.com/watch?v=QdDCUpggmrw",
         "type": "video"
@@ -957,19 +847,16 @@
     "description": "terraform state import is a command used to bring existing resources under Terraform management. It allows you to add resources that were created outside of Terraform (e.g., manually or by other tools) into your Terraform state. The command takes two main arguments: the Terraform resource address and the real-world resource identifier. When executed, it adds the resource to the state file without modifying the actual infrastructure. This is useful for adopting Terraform in environments with existing resources, or for recovering from scenarios where state and reality have diverged. After importing, you need to write the corresponding configuration in your Terraform files to match the imported resource.\n\nIn Terraform v1.5.0 and later you can also create `import` blocks in any Terraform configuration file.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "H6G80OpsIGwvDMGKPwAN9",
         "title": "Terraform import command",
         "url": "https://developer.hashicorp.com/terraform/cli/import",
         "type": "article"
       },
       {
-        "id": "3u-bFfICuM-5BGwtkwKzN",
         "title": "Terraform Import: What it is and how to use it",
         "url": "https://terrateam.io/blog/terraform-import",
         "type": "article"
       },
       {
-        "id": "AFYHrSqhaFTGZX9lBMt-S",
         "title": "Exploring the Import Block in Terraform 1.5",
         "url": "https://www.youtube.com/watch?v=znfh_00EDZ0",
         "type": "video"
@@ -981,19 +868,16 @@
     "description": "Splitting Terraform state files involves dividing a large state into smaller, more manageable parts. This is typically done using Terraform workspaces or by organizing resources into separate modules with their own state files. The process helps manage complex infrastructures, improves performance, and allows for more granular access control. To split an existing state, you can use `terraform state mv` to move resources between states, or `terraform state rm` followed by `terraform import` in a new configuration. This approach is beneficial for large projects, enabling teams to work on different parts of infrastructure independently. However, it requires careful planning to manage dependencies between split states. Proper state splitting can lead to more efficient workflows, easier troubleshooting, and better alignment with organizational structures in large-scale Terraform deployments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "uYML6dNGs79_I-uncibEL",
         "title": "How to split state files",
         "url": "https://support.hashicorp.com/hc/en-us/articles/7955227415059-How-to-Split-State-Files",
         "type": "article"
       },
       {
-        "id": "RdPKjlUZKNQheuX0mLcwE",
         "title": "Introducing terraform-state-split",
         "url": "https://www.shebanglabs.io/moving-terraform-resources-between-different-states/",
         "type": "article"
       },
       {
-        "id": "yWm5CEfpGnM5U38amQnGt",
         "title": "Organizing Terraform with multiple states",
         "url": "https://www.youtube.com/watch?v=5TfgdKXr45I",
         "type": "video"
@@ -1005,7 +889,6 @@
     "description": "Terraform state versioning refers to the practice of maintaining multiple versions of the state file over time. While Terraform itself doesn't provide built-in versioning, it's typically achieved through backend configurations that support versioning, such as Amazon S3 with versioning enabled or Terraform Cloud. This approach allows teams to track changes, rollback to previous states if needed, and maintain an audit trail of infrastructure modifications. Versioning helps in recovering from accidental state corruptions or deletions, and in understanding the evolution of infrastructure over time. It's considered a best practice for production environments, enhancing disaster recovery capabilities and providing insights into infrastructure changes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "nVaGRjewo-D49dAj7bhXC",
         "title": "State Versions API",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/api-docs/state-versions",
         "type": "article"
@@ -1017,19 +900,16 @@
     "description": "Terraform state files often contain sensitive data like passwords, API keys, and other secrets used in resource configurations. This data is stored in plaintext within the state file, posing a security risk if the file is compromised. To mitigate this, Terraform offers several approaches: marking variables as sensitive to prevent them from appearing in logs, using encrypted remote backends for state storage, implementing strict access controls on state files, and utilizing external secret management systems. It's crucial to treat state files as sensitive and secure them accordingly. For highly sensitive environments, some teams opt to store certain secrets outside of Terraform entirely, injecting them at runtime. Regularly auditing state files for sensitive information and implementing proper security measures is essential for maintaining the confidentiality of infrastructure secrets in Terraform deployments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "CFJXMfPnpRcYRDHN6ITR5",
         "title": "Sensitive data in state",
         "url": "https://developer.hashicorp.com/terraform/language/state/sensitive-data",
         "type": "article"
       },
       {
-        "id": "_C65mSmtsC0nGyuN_ysKI",
         "title": "Handling Sensitive Values in State",
         "url": "https://developer.hashicorp.com/terraform/plugin/best-practices/sensitive-state",
         "type": "article"
       },
       {
-        "id": "93aa8RiQSfjOi0wQuQzp7",
         "title": "Terraform — Protecting Sensitive Data",
         "url": "https://www.youtube.com/watch?v=yLc1YkB7DFo",
         "type": "video"
@@ -1041,19 +921,16 @@
     "description": "Terraform state best practices focus on security, consistency, and collaboration.\n\n*   Store state files remotely in encrypted, version-controlled backends like S3 or Terraform Cloud to enable team access and enhance security.\n*   Implement state locking to prevent concurrent modifications. Use workspaces or separate state files for different environments.\n*   Regularly back up state files and enable versioning for rollback capabilities.\n*   Avoid storing sensitive data directly in state; instead, use secret management tools.\n*   Keep state files separate from your Terraform configuration in version control.\n*   Utilize state subcommands for maintenance and troubleshooting. Implement access controls to restrict state file access.\n*   Regularly review and clean up unused resources in the state.\n\nThese practices help maintain a secure, efficient, and manageable Terraform workflow, especially in team environments and complex infrastructures.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "X4PI9WvWdGVnMYbVQUXMH",
         "title": "Managing Terraform State – Best Practices & Examples",
         "url": "https://spacelift.io/blog/terraform-state",
         "type": "article"
       },
       {
-        "id": "0SYJmZPSPJPjZ4Rfo3eH_",
         "title": "Best Practices for Terraform State File Management",
         "url": "https://www.cloudthat.com/resources/blog/best-practices-for-terraform-state-file-management",
         "type": "article"
       },
       {
-        "id": "FLxxxJrzwuBeTu7NmzlQs",
         "title": "Managing Terraform State Files - What are your options?",
         "url": "https://www.youtube.com/watch?v=keiIyarEKf8",
         "type": "video"
@@ -1065,19 +942,16 @@
     "description": "The -replace flag in Terraform is used with the apply or plan command to force the replacement of a specific resource by tainting the resources. This flag instructs Terraform to delete and recreate the specified resource instead of updating it in place. It's useful when you need to regenerate a resource completely, such as when certain attributes can't be modified after creation. The flag is typically used when Terraform can't automatically detect that a resource needs replacement, or when you want to force a replacement for testing or troubleshooting purposes. While powerful, this flag should be used cautiously, especially with stateful resources, as it can lead to data loss. It's often employed in scenarios where in-place updates are not sufficient to achieve the desired configuration state of a resource.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "YjskyZC4aVFvfaIAWkTA-",
         "title": "Forcing Re-creation of Resources",
         "url": "https://developer.hashicorp.com/terraform/cli/state/taint",
         "type": "article"
       },
       {
-        "id": "-t6RngIHDzFp6Mp-58cbr",
         "title": "Terraform Taint, Untaint, Replace – How to Use It (Examples)",
         "url": "https://spacelift.io/blog/terraform-taint",
         "type": "article"
       },
       {
-        "id": "ZZBlkWemHoZcKldMTmnNp",
         "title": "Terraform Taint Is Bad Actually - Use Replace Instead",
         "url": "https://www.youtube.com/watch?v=v_T1fuYGjV0",
         "type": "video"
@@ -1089,13 +963,11 @@
     "description": "The terraform show command displays a human-readable view of the current state or a saved plan file. When used without arguments, it presents the current state of the managed infrastructure, including all resources and their attributes. If given a path to a saved plan file, it shows the changes that would be made by applying that plan. This command is useful for inspecting the current state of your infrastructure, verifying the details of specific resources, or reviewing planned changes before applying them. It provides a comprehensive overview of your Terraform-managed resources, making it valuable for debugging, auditing, and understanding the current state of your infrastructure. The output includes sensitive information if present, so care should be taken when sharing or displaying the results in unsecured environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "RygalehZ5Y9Ep3yzPxPMn",
         "title": "Terrform show",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/show",
         "type": "article"
       },
       {
-        "id": "QZnK1RIPZBFFuQ_4izmA9",
         "title": "Terraform state show",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/show",
         "type": "article"
@@ -1107,19 +979,16 @@
     "description": "The terraform state rm command is used to remove resources from the Terraform state without destroying the actual infrastructure. This command is useful when you want to stop managing a resource with Terraform without deleting it, or when you need to move a resource to a different state file. It takes one or more resource addresses as arguments, specifying which resources to remove from state. After removal, Terraform will no longer track or manage these resources, but they will continue to exist in your infrastructure. This command should be used carefully, as it can create discrepancies between your Terraform configuration and the actual state of your infrastructure.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "f0qEhjxok0aHig2SSKtvb",
         "title": "Terraform rm command",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/rm",
         "type": "article"
       },
       {
-        "id": "Y1sbnkkGEGZhsb3Abz3SP",
         "title": "Terraform State Rm: How to Remove a Resource From State File",
         "url": "https://spacelift.io/blog/terraform-state-rm",
         "type": "article"
       },
       {
-        "id": "YVZKWV8j1QT3u_NDvdVUL",
         "title": "How to remove resource from Terraform state file | terraform state rm example",
         "url": "https://www.youtube.com/watch?v=uK__Ls6an1c",
         "type": "video"
@@ -1131,19 +1000,16 @@
     "description": "The terraform state mv command is used to move resources within a Terraform state or between separate state files. It allows for reorganizing the state without modifying the actual infrastructure. This command is useful when refactoring Terraform configurations, moving resources between modules, or splitting a large state file into smaller ones. It takes two arguments: the source and destination addresses of the resource. The command updates all references to the moved resource, ensuring that future operations correctly target the resource at its new location. This functionality is particularly valuable when restructuring complex projects or adapting to changing organizational needs. However, it should be used cautiously, as incorrect moves can lead to state inconsistencies.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "wzPXz8LXyjpspGnC5QFGG",
         "title": "Terraform state mv",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/mv",
         "type": "article"
       },
       {
-        "id": "4amlzWmIi-re1hq0WzkAB",
         "title": "Moving resoureces",
         "url": "https://developer.hashicorp.com/terraform/cli/state/move",
         "type": "article"
       },
       {
-        "id": "pPpPsFRygeYJhh2Lc3iPO",
         "title": "Terraform — Terraform State MV ",
         "url": "https://www.youtube.com/watch?v=i10IMXn3l0o",
         "type": "video"
@@ -1160,19 +1026,16 @@
     "description": "In Terraform, root and child modules refer to different levels of module hierarchy in a configuration. The root module is the main set of configuration files in the working directory where Terraform is executed. It's the entry point of your Terraform project and typically calls other modules. Child modules, on the other hand, are modules called by the root module or by other modules. They are reusable components that encapsulate specific resource configurations. Root modules define the overall architecture and compose child modules to create the complete infrastructure. Child modules focus on specific, repeatable tasks or resource groups. This hierarchy allows for better organization, reusability, and maintainability of Terraform code, enabling complex infrastructures to be broken down into manageable, modular components.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Vd4Tcmmy_xifGulpAgdnB",
         "title": "The root module",
         "url": "https://developer.hashicorp.com/terraform/language/modules#the-root-module",
         "type": "article"
       },
       {
-        "id": "GxA0REyoagklLQ4BFyJ5U",
         "title": "Child modules",
         "url": "https://developer.hashicorp.com/terraform/language/modules#child-modules",
         "type": "article"
       },
       {
-        "id": "c-o7-A2wpzdsXfQxRDE_3",
         "title": "What is the difference between Terraform \"Module\" and \"Child Module\"",
         "url": "https://stackoverflow.com/questions/77671412/what-is-the-difference-between-terraform-module-and-child-module",
         "type": "article"
@@ -1184,19 +1047,16 @@
     "description": "Using published modules in Terraform involves incorporating pre-built, often community-contributed modules into your infrastructure code. These modules are typically available through the Terraform Registry or other version control systems. They provide ready-made configurations for common infrastructure components, saving time and promoting best practices. To use a published module, you specify its source (usually a URL or registry path) and version in your Terraform configuration. You can then configure the module by passing input variables. Published modules can range from simple resource wrappers to complex, multi-resource configurations. They offer benefits like reduced development time, standardized implementations, and community-tested solutions. However, it's important to review and understand any published module before using it in production environments to ensure it meets your specific requirements and security standards.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "TY6HlakI1L1Ye0huDYG-k",
         "title": "Terraform Registry - Modules",
         "url": "https://registry.terraform.io/browse/modules",
         "type": "opensource"
       },
       {
-        "id": "n3nmIqMPhAlqkudoOwgtj",
         "title": "Publishing Modules",
         "url": "https://developer.hashicorp.com/terraform/registry/modules/publish",
         "type": "article"
       },
       {
-        "id": "OVnQu_gccy189MU-5PJoW",
         "title": "Terraform - Publish modules",
         "url": "https://www.youtube.com/watch?v=9vBp1D3myH8",
         "type": "video"
@@ -1208,19 +1068,16 @@
     "description": "Creating local modules in Terraform involves organizing a set of related resources into a reusable package within your project. To create a local module, you typically create a new directory within your project structure and place Terraform configuration files (`.tf`) inside it. These files define the resources, variables, and outputs for the module. The module can then be called from your root configuration using a module block, specifying the local path to the module directory. Local modules are useful for encapsulating and reusing common infrastructure patterns within a project, improving code organization and maintainability. They can accept input variables for customization and provide outputs for use in the calling configuration. Local modules are particularly beneficial for breaking down complex infrastructures into manageable, logical components and for standardizing resource configurations across a project.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "3kY7ZBfGXk_NGDGKj2LCr",
         "title": "Build and use a local moduke",
         "url": "https://developer.hashicorp.com/terraform/tutorials/modules/module-create",
         "type": "article"
       },
       {
-        "id": "GZzRNZ7dbZRvVyXMoVZOi",
         "title": "How to create reusable infrastructure with Terraform modules",
         "url": "https://blog.gruntwork.io/how-to-create-reusable-infrastructure-with-terraform-modules-25526d65f73d",
         "type": "article"
       },
       {
-        "id": "XVSUayvWEl0iAs16k6hRF",
         "title": "Creating a module in Terraform",
         "url": "https://www.youtube.com/watch?v=OeL2AlsdNaQ",
         "type": "video"
@@ -1232,7 +1089,6 @@
     "description": "Module inputs and outputs in Terraform facilitate the flow of data into and out of modules, enabling customization and data sharing. Inputs are defined using variable blocks within a module and allow the module's behavior to be customized when it's used. They can have default values and type constraints.\n\nWhen calling a module, inputs are provided as arguments. Outputs, defined using output blocks, expose specific values from the module's resources, making them available to the calling module. This allows for data to be passed between modules or to be used in other parts of the configuration. Outputs can include computed values, resource attributes, or any Terraform expression. Properly designed inputs and outputs are crucial for creating flexible, reusable modules that can be easily integrated into various configurations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "jekm3Uh5mz8l4kiXzY7ce",
         "title": "Accessing module output values",
         "url": "https://developer.hashicorp.com/terraform/language/modules/syntax#accessing-module-output-values",
         "type": "article"
@@ -1244,19 +1100,16 @@
     "description": "Terraform module best practices focus on creating reusable, maintainable, and scalable infrastructure components.\n\n*   Modules should have a single, clear purpose and be designed with flexibility in mind, using input variables for customization.\n*   Outputs should be carefully chosen to provide necessary information without over-exposing internal details.\n*   Version your modules and use semantic versioning to manage changes.\n*   Keep modules small and focused, adhering to the single responsibility principle.\n*   Document your modules thoroughly, including usage examples and input/output descriptions.\n*   Use consistent naming conventions and structure across modules.\n*   Test modules in isolation and as part of larger systems.\n*   Avoid hard-coding values that might change across environments.\n*   Consider using nested modules for complex structures, but be mindful of over-nesting.\n*   Regularly review and refactor modules to incorporate improvements and maintain best practices.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "AQS48IaJ9wEBa7qsrJQzh",
         "title": "Module best practices",
         "url": "https://developer.hashicorp.com/terraform/tutorials/modules/module#module-best-practices",
         "type": "article"
       },
       {
-        "id": "laHql9VWwUF8Z5yw73G0X",
         "title": "Terraform Modules Guide: Best Practices & Examples",
         "url": "https://www.env0.com/blog/terraform-modules",
         "type": "article"
       },
       {
-        "id": "PYVY78d7h2BEFK1flVkbt",
         "title": "Best practices for modularizing a Terraform project | PlatformCon 2023",
         "url": "https://www.youtube.com/watch?v=byzwaTng3ac",
         "type": "video"
@@ -1273,13 +1126,11 @@
     "description": "Provisioners in Terraform should be used judiciously, primarily when other declarative options are insufficient. They're appropriate for tasks that can't be accomplished through Terraform's resource configurations or data sources. Common scenarios include running initialization scripts on newly created servers, installing software not covered by provider-specific resources, or performing one-time setup tasks. Provisioners are useful for bootstrapping configuration management tools or handling complex, stateful operations that Terraform can't manage directly. However, they should be considered a last resort due to their potential to make Terraform runs less predictable and harder to manage. Whenever possible, prefer using cloud-init scripts, custom images, or separate configuration management tools. When provisioners are necessary, design them to be idempotent and resilient to failures to maintain Terraform's desired state consistency.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Ci9cNGQq2IBtr1nm7Td0C",
         "title": "My thoughts on why you should use Terraform Provisioners as a final option",
         "url": "https://thomasthornton.cloud/2023/05/11/my-thoughts-on-why-you-should-use-terraform-provisioners-as-a-final-option/",
         "type": "article"
       },
       {
-        "id": "6ZMEP04-3y194heJciU26",
         "title": "Why Terraform Provisioners Are The Last Resort?",
         "url": "https://k21academy.com/terraform-iac/terraform-provisioners/",
         "type": "article"
@@ -1291,19 +1142,16 @@
     "description": "Creation and destroy-time provisioners in Terraform are used to execute actions at specific points in a resource's lifecycle. Creation-time provisioners run after a resource is created, while destroy-time provisioners run before a resource is destroyed. Creation-time provisioners are useful for tasks like initializing a newly created server, installing software, or configuring applications. Destroy-time provisioners are typically used for cleanup tasks, such as deregistering a server from a load balancer before deletion. Both types can be specified within a resource block.\n\nCreation-time provisioners that fail will cause the resource creation to fail, potentially leaving resources in an incomplete state. Destroy-time provisioners that fail don't prevent resource destruction but may leave external resources in an inconsistent state. Due to their potential impact on Terraform's ability to manage state consistently, both types should be used cautiously and designed to be idempotent and fault-tolerant.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "HFC35Z753lB9o8ZW7LIi9",
         "title": "Creation time provisioners",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#creation-time-provisioners",
         "type": "article"
       },
       {
-        "id": "v8l9ovjtVWUO--J1lfbQy",
         "title": "Destroy time provisioners",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#destroy-time-provisioners",
         "type": "article"
       },
       {
-        "id": "BTsEZsRru784dvDxj7KBu",
         "title": "How to: Terraform destroy time provisioners",
         "url": "https://support.hashicorp.com/hc/en-us/articles/11119084989587-How-to-Terraform-Destroy-time-Provisioners",
         "type": "article"
@@ -1315,13 +1163,11 @@
     "description": "The Terraform file provisioner is used to copy files or directories from the machine running Terraform to a newly created resource. It's useful for tasks like uploading configuration files, scripts, or other necessary data to remote systems. The file provisioner can copy a single file or recursively copy directories. It supports both source and content arguments, allowing for either file-based or inline content transfers. This provisioner is often used in conjunction with remote-exec provisioners to execute uploaded scripts. While convenient for simple file transfers, it's important to consider security implications, especially when dealing with sensitive data. For more complex or large-scale file management tasks, dedicated configuration management tools are often preferred. The file provisioner is best used for small, straightforward file transfers needed to bootstrap or configure newly created resources.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "D1uhRcpB6W_C5NebLtpzm",
         "title": "Terraform file provisioner",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/file",
         "type": "article"
       },
       {
-        "id": "qJ5rrPTnlKWi0nZhNhU_1",
         "title": "The file provisioner",
         "url": "https://learning-ocean.com/tutorials/terraform/terraform-file-provisioner/",
         "type": "article"
@@ -1333,19 +1179,16 @@
     "description": "The local-exec provisioner in Terraform allows the execution of local commands on the machine running Terraform after a resource is created. It's useful for tasks that need to be performed locally rather than on the remote resource. This provisioner can run scripts, update local files, or trigger local processes based on the creation of cloud resources. Common use cases include updating local inventories, triggering local notifications, or running local scripts that interact with the newly created resources. While powerful, it should be used judiciously as it can make Terraform operations dependent on the local environment. The local-exec provisioner doesn't affect the resource itself and isn't tracked in Terraform's state, so it's important to design these commands to be idempotent. It's best suited for simple, local operations that don't require complex error handling or state management.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "U6WQ1a0DDrWInfnc4zzcP",
         "title": "local-exec Provisioner",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec",
         "type": "article"
       },
       {
-        "id": "GrUnY1MAW8r_UjrzvaQqW",
         "title": "Local-Exec Provisioner",
         "url": "https://learning-ocean.com/tutorials/terraform/terraform-local-exec-provisioner/",
         "type": "article"
       },
       {
-        "id": "hy157JAzC3E9kqm4SF7Bc",
         "title": "Terraform - Local exec",
         "url": "https://www.youtube.com/watch?v=2dVq8L2LBc0",
         "type": "video"
@@ -1357,19 +1200,16 @@
     "description": "The remote-exec provisioner in Terraform is used to invoke scripts directly on a remote resource after it has been created. This provisioner is commonly used for tasks like software installation, configuration, or any other setup required on the newly created resource. It can run either a list of commands or a script file on the remote system. The remote-exec provisioner requires a connection block to specify how to access the remote system, typically using SSH for Linux or WinRM for Windows. While useful for initial setup tasks, it's generally recommended to use this provisioner sparingly and prefer more robust configuration management tools for complex or ongoing management tasks. Care should be taken to ensure that scripts run by remote-exec are idempotent and handle potential network issues or other failures gracefully.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Sw_Bi7s9ep7xVXadzBt9o",
         "title": "Remote-exec provisioner",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec",
         "type": "article"
       },
       {
-        "id": "ovXuoepQJC74iOGefT_3k",
         "title": "Terraform remote-exec provisioner",
         "url": "https://learning-ocean.com/tutorials/terraform/terraform-remote-exec-provisioner/",
         "type": "article"
       },
       {
-        "id": "34UhCEycgG1YwtWuMZnOp",
         "title": "Terraform - remote-exec",
         "url": "https://www.youtube.com/watch?v=kjDXbGeLvRw",
         "type": "video"
@@ -1381,13 +1221,11 @@
     "description": "Terraform custom provisioners allow developers to extend Terraform's provisioning capabilities beyond the built-in options. These are created using Go programming language and the Terraform plugin SDK. Custom provisioners can perform specialized tasks tailored to specific infrastructure needs or organizational requirements. They follow the same lifecycle as built-in provisioners, executing during resource creation or destruction.\n\nDeveloping custom provisioners requires a deep understanding of Terraform's architecture and Go programming. They're useful for integrating Terraform with proprietary systems or implementing complex, organization-specific provisioning logic. However, custom provisioners should be approached cautiously, as they increase maintenance overhead and can complicate Terraform upgrades. In many cases, it's preferable to use existing provisioners or separate configuration management tools unless there's a compelling need for custom functionality.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Ie2WE6CUSkYrhNxwQNe7D",
         "title": "Terraform provisioners",
         "url": "https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax",
         "type": "article"
       },
       {
-        "id": "Wv-JCV2W1tMmPxE0M-g5s",
         "title": "Terraform provisioners - Why you should avoid them",
         "url": "https://spacelift.io/blog/terraform-provisioners",
         "type": "article"
@@ -1399,19 +1237,16 @@
     "description": "Terraform data sources allow retrieval of information from external systems or existing resources for use within Terraform configurations. They provide a way to query and fetch data that can be used in resource definitions, making configurations more dynamic and adaptable. Data sources don't create or manage resources; instead, they read existing data. Common uses include fetching AMI IDs, looking up IP ranges, or retrieving information about existing infrastructure components. Data sources are defined using data blocks in Terraform configuration files and can accept arguments to filter or specify the data being requested. They enable Terraform to integrate with existing infrastructure or external systems, facilitating more flexible and context-aware resource management.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "J5sVqlwrZYYKbyRUkCHzP",
         "title": "Terraform data sources",
         "url": "https://developer.hashicorp.com/terraform/language/data-sources",
         "type": "article"
       },
       {
-        "id": "bJ7KmjTYHQ3TFVmW0RwxS",
         "title": "Terraform Data Sources – How They Are Utilized",
         "url": "https://spacelift.io/blog/terraform-data-sources-how-they-are-utilised",
         "type": "article"
       },
       {
-        "id": "hivNjQiZaWWIRqnJZX__w",
         "title": "Data Sources in Terraform",
         "url": "https://www.youtube.com/watch?v=Y92Q5nW5-5g",
         "type": "video"
@@ -1423,19 +1258,16 @@
     "description": "Terraform template files are a powerful feature for creating customizable, reusable configuration snippets. These files, typically with a `.tftpl` extension, contain placeholders that can be filled with variables at runtime. Terraform uses the `templatefile` function to process these files, replacing variables with actual values. This approach is useful for generating configuration files, scripts, or any text-based content that needs to be parameterized. Template files enhance modularity and reduce repetition in Terraform configurations. They're commonly used for creating user data scripts for EC2 instances, generating complex JSON configurations, or preparing any text-based resource that requires dynamic content. The `templatefile` function reads the contents of a file and renders its template syntax with a given set of variables, allowing for dynamic and flexible resource configurations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "qemf6le3qzlmYsc1YD4pk",
         "title": "templatefile function",
         "url": "https://developer.hashicorp.com/terraform/language/functions/templatefile",
         "type": "article"
       },
       {
-        "id": "aeEd-_QsR9ugtd6iZ8-p8",
         "title": "What are Terraform templates?",
         "url": "https://spacelift.io/blog/terraform-templates",
         "type": "article"
       },
       {
-        "id": "hY351-E8RdQCqHgJLDFrB",
         "title": "Using templatefile in Terraform",
         "url": "https://www.youtube.com/watch?v=cRYYFCekOIk",
         "type": "video"
@@ -1447,19 +1279,16 @@
     "description": "The `terraform state pull` and `terraform state push` commands are used for managing Terraform state in remote backends. The `pull` command retrieves the current state from the configured backend and outputs it to stdout, allowing for inspection or backup of the remote state. It's useful for debugging or for performing manual state manipulations.\n\nThe`push` command does the opposite, uploading a local state file to the configured backend, overwriting the existing remote state. This is typically used to restore a backup or to manually reconcile state discrepancies. Both commands should be used with caution, especially push, as they can potentially overwrite important state information.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Q2vFpmdFgpaQNOukPIfxM",
         "title": "Command - State pull",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/pull",
         "type": "article"
       },
       {
-        "id": "OJbvPXHpkUjRSUNvgySTL",
         "title": "Command - State push",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/push",
         "type": "article"
       },
       {
-        "id": "qfX_b6B4sv0Q4YmWN8W85",
         "title": "Migrate Workspace State Using Terraform State Push / Pull",
         "url": "https://support.hashicorp.com/hc/en-us/articles/360001151948-Migrate-Workspace-State-Using-Terraform-State-Push-Pull",
         "type": "article"
@@ -1471,7 +1300,6 @@
     "description": "The `terraform state replace-provider` command in Terraform is used to update the provider information in the state file without altering the actual infrastructure. This command is particularly useful when migrating from one provider to another, or when updating to a new major version of a provider that involves a change in the provider's namespace. It allows users to change the provider associated with resources in the state file, effectively telling Terraform to use a different provider for managing these resources in future operations. This command is crucial for maintaining state consistency during provider transitions or upgrades, especially in large-scale infrastructures. While it doesn't modify the actual resources, it updates Terraform's understanding of which provider should be used to manage them, facilitating smooth provider migrations without requiring resource recreation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "pMG1ON4WFjoA2sCPJ0G-Q",
         "title": "Command - state replace-provider",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/state/replace-provider",
         "type": "article"
@@ -1483,19 +1311,16 @@
     "description": "The `terraform state force-unlock` command in Terraform is used to manually release a stuck state lock. State locking is a mechanism that prevents concurrent operations on the same state, but occasionally a lock may not be properly released due to crashes or network issues. This command allows administrators to forcibly remove the lock, enabling further Terraform operations to proceed. It should be used with extreme caution, as it can lead to state corruption if multiple users are attempting to modify the state simultaneously. Before using force-unlock, it's crucial to ensure that no other Terraform operations are genuinely in progress. This command is typically a last resort for resolving locking issues and should only be employed when certain that the lock is erroneously held and no conflicting operations are ongoing.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "1I-Rkp68T11dV_QbWtg-R",
         "title": "Command: force-unlock",
         "url": "https://developer.hashicorp.com/terraform/cli/commands/force-unlock",
         "type": "article"
       },
       {
-        "id": "m6UiPI0phpHMqvwhVymBy",
         "title": "Terraform force-unlock command",
         "url": "https://spacelift.io/blog/terraform-force-unlock",
         "type": "article"
       },
       {
-        "id": "VfshUHtOPBr1TALA-KF79",
         "title": "Terraform — Force Unlock",
         "url": "https://www.youtube.com/watch?v=qVs9pLaXSeg",
         "type": "video"
@@ -1507,19 +1332,16 @@
     "description": "Terraform workspaces allow managing multiple distinct sets of infrastructure resources within a single configuration. They provide a way to create separate instances of state for the same configuration, enabling users to maintain different environments (like development, staging, and production) or experiment with changes without affecting the main infrastructure. Each workspace has its own state file, allowing for isolated management of resources. Workspaces are particularly useful for testing changes before applying them to production or for managing slight variations in configuration across different environments. They can be easily switched between using Terraform CLI commands. For more significant environment differences, separate configuration directories or state files might be more appropriate.\n\nLearn more with the following resources:",
     "links": [
       {
-        "id": "Lse5qkaiexLpfbi3aK71s",
         "title": "Workspaces",
         "url": "https://developer.hashicorp.com/terraform/language/state/workspaces",
         "type": "article"
       },
       {
-        "id": "Yx6-cBG-bIR2amIDP2Qdx",
         "title": "What are Terraform workspaces?",
         "url": "https://spacelift.io/blog/terraform-workspaces",
         "type": "article"
       },
       {
-        "id": "wwp_klSWxhC9MHCVM2jR7",
         "title": "Structuring Repositories for Terraform Workspaces - Hashicorp",
         "url": "https://www.youtube.com/watch?v=IDLGpkRmDXg",
         "type": "video"
@@ -1536,19 +1358,16 @@
     "description": "Using Terraform with GitHub Actions allows for automated infrastructure management as part of a GitHub-based CI/CD pipeline. This integration enables automatic planning, validation, and application of Terraform configurations when changes are pushed to a repository. Typical workflow steps include checking out code, setting up Terraform, initializing the working directory, and running Terraform commands like plan and apply. GitHub Actions can be configured to run Terraform in different environments, manage state files, and handle secrets securely. It's important to configure appropriate permissions and use GitHub Secrets for sensitive data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "xs8YdiQ1koFn73A4hNFb1",
         "title": "setup-terraform",
         "url": "https://github.com/hashicorp/setup-terraform",
         "type": "opensource"
       },
       {
-        "id": "1QXaN-cZ7LgSnUGGgq5IJ",
         "title": "Automate Terraform with GitHub Actions",
         "url": "https://developer.hashicorp.com/terraform/tutorials/automation/github-actions",
         "type": "article"
       },
       {
-        "id": "-iURG7X7m_A3u71R9MElG",
         "title": "Terraform with GitHub Actions : How to Manage & Scale",
         "url": "https://spacelift.io/blog/github-actions-terraform",
         "type": "article"
@@ -1560,19 +1379,16 @@
     "description": "Integrating Terraform with CircleCI enables automated infrastructure management within CircleCI's continuous integration and deployment pipelines. This setup allows for consistent and repeatable infrastructure deployments alongside application code changes. In a typical CircleCI configuration, jobs are defined to run Terraform commands like init, plan, and apply. The workflow can include steps for checking out code, setting up Terraform, and managing state files. CircleCI's environment variables and contexts can be used to securely store and access sensitive data like cloud provider credentials. CircleCI's parallelism features can be leveraged for faster execution of Terraform in complex setups.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "CIrlmi5Xbih4tF9Fm-mpa",
         "title": "CircleCI Terraform Orb",
         "url": "https://circleci.com/developer/orbs/orb/circleci/terraform",
         "type": "opensource"
       },
       {
-        "id": "Zc62zNTrEk92fFK7dbQbL",
         "title": "Deploy infrastructure with Terraform and CircleCI",
         "url": "https://developer.hashicorp.com/terraform/tutorials/automation/circle-ci",
         "type": "article"
       },
       {
-        "id": "ECTjP9ksbrSn52DgX3n2w",
         "title": "How I deployed terraform resources with CircleCI",
         "url": "https://medium.com/nerd-for-tech/how-i-deployed-terraform-resources-with-circleci-628aa29ed514",
         "type": "article"
@@ -1584,19 +1400,16 @@
     "description": "Using Terraform with GitLab CI enables automated infrastructure management within GitLab's CI/CD pipeline. A typical GitLab CI pipeline for Terraform includes stages for validation, planning, and applying changes. The pipeline can be configured to run Terraform commands automatically on code pushes or merge requests. GitLab CI variables are used to store sensitive information like cloud credentials securely. GitLab's native features like environments and approvals can be leveraged to manage different deployment stages and control when changes are applied.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "tQmBSBijJ0igjo6BdSCyk",
         "title": "Infrastructure as Code with Terraform and GitLab",
         "url": "https://docs.gitlab.com/ee/user/infrastructure/iac/",
         "type": "article"
       },
       {
-        "id": "NmmyANbxVL3RkMaOz84mo",
         "title": "How to Implement GitLab CI/CD Pipeline with Terraform",
         "url": "https://spacelift.io/blog/gitlab-terraform",
         "type": "article"
       },
       {
-        "id": "dS7Vom89Ge1_cUZJ0czBv",
         "title": "Automate deploying to AWS using Terraform with GitLab CICD pipeline",
         "url": "https://www.youtube.com/watch?v=oqOzM_WBqZc",
         "type": "video"
@@ -1608,19 +1421,16 @@
     "description": "Using Terraform with Jenkins enables automated infrastructure management within a Jenkins-based CI/CD pipeline. This integration allows for consistent and repeatable infrastructure deployments alongside application builds. In a typical setup, Jenkins jobs or pipelines are configured to execute Terraform commands, such as `init`, `plan`, and `apply`. Jenkins can manage different environments by using parameters or separate jobs for each environment. Proper credential management is crucial for securely handling cloud provider access keys. Jenkins' rich plugin ecosystem can enhance Terraform workflows with additional features like visualization and notification capabilities.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "7PmZ7a-zNW7K3fVwH0lZ1",
         "title": "Terraform with Jenkins – How to Manage Workflows",
         "url": "https://spacelift.io/blog/terraform-jenkins",
         "type": "article"
       },
       {
-        "id": "0GJJfykh4AfLkJcyWAYKa",
         "title": "£article@How to run Terraform in your Jenkins CI/CD pipeline.",
         "url": "https://blog.digger.dev/how-to-run-terraform-in-jenkins/",
         "type": "article"
       },
       {
-        "id": "p_dAEFIjfTgGOzW3xQFit",
         "title": "How to Use Terraform and Jenkins to Automate Infrastructure Setup",
         "url": "https://www.youtube.com/watch?v=kIDiP3Unj7Y",
         "type": "video"
@@ -1637,13 +1447,11 @@
     "description": "Terraform unit testing focuses on verifying the behavior of individual modules or components in isolation. It typically involves creating small, focused test cases that validate the expected outputs and resource configurations of a module given specific inputs. Tools like Terratest, a Go library, are commonly used for writing and running these tests. Unit tests for Terraform might check if resources are correctly defined, if count and for\\_each meta-arguments work as expected, or if output values are calculated correctly. These tests often use mock data or minimal real infrastructure to simulate various scenarios. While they don't guarantee the actual creation of resources, unit tests are valuable for quickly catching logic errors, ensuring module interfaces work as intended, and maintaining code quality as modules evolve.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "n8Rx4TTKptRr6IVC-wICy",
         "title": "Terraform unit tests",
         "url": "https://www.hashicorp.com/blog/testing-hashicorp-terraform#unit-tests",
         "type": "article"
       },
       {
-        "id": "I1m3KddpRYm2qTHDGhrrv",
         "title": "Integration or unit testing",
         "url": "https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing",
         "type": "article"
@@ -1655,19 +1463,16 @@
     "description": "Terraform contract testing focuses on verifying the interfaces and interactions between different modules or components of your infrastructure code. This approach ensures that modules work correctly together and adhere to expected input/output contracts. Contract tests typically validate that a module accepts the correct input variables, produces the expected outputs, and creates resources with the right attributes. They often involve setting up test fixtures with mock data or minimal real infrastructure. The goal is to catch integration issues early, such as mismatched variable types or unexpected resource configurations. Contract testing helps maintain consistency across module versions and ensures that changes to one module don't break dependent modules. This type of testing is particularly valuable in large, modular Terraform projects where multiple teams may be working on different components of the infrastructure.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "V_9NY-HjJzIxac-L50SOX",
         "title": "Terraform Contract Tests",
         "url": "https://www.hashicorp.com/blog/testing-hashicorp-terraform#contract-tests",
         "type": "article"
       },
       {
-        "id": "s6WUiFyz7_8L5o5WW123D",
         "title": "Contract Testing: An Introduction and Guide",
         "url": "https://www.blazemeter.com/blog/contract-testing#:~:text=Contract%20testing%20focuses%20on%20verifying,services%20that%20rely%20on%20it.",
         "type": "article"
       },
       {
-        "id": "Olnef_S3uKxztgCu70fuk",
         "title": "Contract testing for microservices is a must!",
         "url": "https://www.youtube.com/watch?v=Fh8CqZtghQw",
         "type": "video"
@@ -1679,19 +1484,16 @@
     "description": "Terraform integration testing involves verifying that Terraform configurations work correctly with actual cloud resources and services. These tests create real infrastructure components, interact with them, and then destroy them, ensuring that resources are properly provisioned and configured in a live environment. Integration tests typically use frameworks like Terratest or custom scripts to automate the process of applying Terraform configurations, validating the resulting infrastructure, and cleaning up afterwards. They check for correct resource creation, proper configuration of interdependent resources, and overall system behavior. While more time-consuming and potentially costly than unit tests, integration tests provide high confidence in the reliability of Terraform code in real-world scenarios. They're crucial for catching issues that may only appear when interacting with actual cloud services, such as API limitations or unexpected service behaviors.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "scRieyWnbOO83pk1QgPV2",
         "title": "Integration or unit testing",
         "url": "https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing",
         "type": "article"
       },
       {
-        "id": "hAP8_Qc3rPZbAndcSODQF",
         "title": "Integration tests",
         "url": "https://www.hashicorp.com/blog/testing-hashicorp-terraform#integration-tests",
         "type": "article"
       },
       {
-        "id": "93G1WH_p0jaIMi4FVmdLR",
         "title": "Learn Terraform - Integration and End-to-End Testing",
         "url": "https://www.youtube.com/watch?v=gdcc1WBzMwY",
         "type": "video"
@@ -1703,19 +1505,16 @@
     "description": "Terraform end-to-end testing involves validating the entire infrastructure deployment process from start to finish, simulating real-world usage scenarios. These tests apply complete Terraform configurations to create full environments, verify the functionality and interactions of all components, and then destroy the infrastructure. End-to-end tests often include checking network connectivity, application deployments, and overall system performance. They may involve multiple Terraform modules and external systems, testing the infrastructure as a cohesive unit. While resource-intensive and time-consuming, these tests provide the highest level of confidence in the infrastructure's correctness and reliability. They're particularly valuable for detecting issues that arise from complex interactions between different parts of the infrastructure. End-to-end tests are typically run less frequently than other types of tests, often as part of release processes or major change validations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "NFA3yJC267NosxsbxWg8a",
         "title": "Getting Started: End to End Tests",
         "url": "https://tf2project.io/docs/getting-started/end-to-end-tests.html",
         "type": "article"
       },
       {
-        "id": "hvOczzQ9D4ugCELKiLVXL",
         "title": "End-to-end tests",
         "url": "https://www.hashicorp.com/blog/testing-hashicorp-terraform#end-to-end-tests",
         "type": "article"
       },
       {
-        "id": "_PzazBXVUx6uV64gY15KA",
         "title": "End To End Testing On Terraform With Terratest",
         "url": "https://www.youtube.com/watch?v=PlzL6Bv2fSA",
         "type": "video"
@@ -1727,19 +1526,16 @@
     "description": "Testing Terraform modules involves validating their functionality, reusability, and correctness in isolation and as part of larger systems. This process typically includes unit testing to verify individual module behavior, integration testing to ensure proper interaction with other components, and sometimes end-to-end testing for complex modules. Tests often use tools like Terratest or custom scripts to automate the creation of resources, verification of outputs, and cleanup. Key aspects include testing various input combinations, verifying resource attributes and outputs, and ensuring idempotency. Module testing also involves checking for proper handling of edge cases and error conditions. While it requires initial setup effort, thorough module testing enhances reliability, facilitates refactoring, and improves overall infrastructure code quality.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "iEBxrNICLeuz9T0Z5cg60",
         "title": "Write Terraform tests",
         "url": "https://developer.hashicorp.com/terraform/tutorials/configuration-language/test",
         "type": "article"
       },
       {
-        "id": "NWkl5RKwfqX46kirTttz6",
         "title": "Terraform test",
         "url": "https://developer.hashicorp.com/terraform/language/tests",
         "type": "article"
       },
       {
-        "id": "KnSuU-HgS_mntdXQx6Sqf",
         "title": "Terraform module testing",
         "url": "https://www.youtube.com/watch?v=1LInIWM_2UQ",
         "type": "video"
@@ -1761,13 +1557,11 @@
     "description": "Terraform parallelism refers to its ability to create, modify, or destroy multiple resources concurrently. By default, Terraform performs operations on up to 10 resource instances simultaneously. This parallel execution can significantly reduce the time required for applying large configurations. The level of parallelism can be adjusted using the `-parallelism` flag in Terraform commands or through configuration settings. Increasing parallelism can speed up operations, especially in large infrastructures, but may also increase load on the API endpoints of cloud providers. It's important to balance parallelism with API rate limits and resource dependencies. Some resources or providers may not support parallel operations, and Terraform automatically serializes these. Effective use of parallelism requires understanding resource dependencies and provider capabilities to optimize performance without causing errors or exceeding service limits.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "-pWhMBhgD6DCaf4dCZwO8",
         "title": "Considerations when setting the TFE_PARALLELISM environment variable",
         "url": "https://support.hashicorp.com/hc/en-us/articles/10348130482451-Considerations-when-setting-the-TFE-PARALLELISM-environment-variable",
         "type": "article"
       },
       {
-        "id": "vQyVRp7qKFbQVF5_vdbgO",
         "title": "Walking the graph",
         "url": "https://developer.hashicorp.com/terraform/internals/graph#walking-the-graph",
         "type": "article"
@@ -1779,19 +1573,16 @@
     "description": "A Terraform deployment workflow for scaling typically involves several key stages optimized for managing large infrastructures. It starts with code development in feature branches, followed by automated testing including syntax checks, linting, and unit tests. Pull requests trigger plan generations for review. After approval, changes merge to a main branch, initiating a CI/CD pipeline. This pipeline runs more comprehensive tests, including integration and possibly end-to-end tests. For large infrastructures, the workflow often includes staged deployments, starting with lower environments and progressively moving to production. It may involve partial applies or use of workspaces to manage different environments. The process incorporates manual approval gates for critical changes. State management becomes crucial, often utilizing remote backends with locking. Monitoring and logging are integrated to track deployment progress and catch issues early.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "ZBw7gYMQmKk9-1xVyqgss",
         "title": "The Core Terraform Workflow",
         "url": "https://developer.hashicorp.com/terraform/intro/core-workflow",
         "type": "article"
       },
       {
-        "id": "t3ZK8wEk3n_URMm7ZJIdl",
         "title": "Terraform Basics: Core Workflow",
         "url": "https://www.youtube.com/watch?v=sqLD39xqcx0",
         "type": "video"
       },
       {
-        "id": "abE0FLTYJTf7N4IxeqsFc",
         "title": "Advanced Concepts and Faster Workflows in the Terraform Language",
         "url": "https://www.youtube.com/watch?v=J8J7ixBNF-M",
         "type": "video"
@@ -1803,19 +1594,16 @@
     "description": "Terragrunt is a thin wrapper for Terraform that provides extra tools for keeping your configurations DRY (Don't Repeat Yourself), working with multiple Terraform modules, and managing remote state. It helps in managing large-scale infrastructure by reducing code duplication and simplifying the management of multiple environments. Key features include the ability to keep Terraform code DRY by defining inputs and backend configurations centrally, execute Terraform commands on multiple modules at once, and manage remote state for each module automatically. Terragrunt also facilitates the use of Terraform modules across different environments by allowing for easy parameter injection. It's particularly useful in complex, multi-environment setups where maintaining consistency and reducing repetition in Terraform configurations is crucial.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "avO7OamIxfUlhcrlsc6HJ",
         "title": "gruntwork-io/terragrunt",
         "url": "https://github.com/gruntwork-io/terragrunt",
         "type": "opensource"
       },
       {
-        "id": "SsQOKirGO__lZ9zF_lgE9",
         "title": "Terragrunt Website",
         "url": "https://terragrunt.gruntwork.io/",
         "type": "article"
       },
       {
-        "id": "UI4BWFmheh9h2G6VKjktf",
         "title": "Terragrunt Tutorial: Examples and Use Cases",
         "url": "https://www.env0.com/blog/terragrunt",
         "type": "article"
@@ -1827,19 +1615,16 @@
     "description": "Infracost is an open-source tool that provides real-time cost estimates for Terraform projects. It analyzes Terraform configuration files and generates detailed cost breakdowns for cloud resources across various providers like AWS, Azure, and Google Cloud. Infracost integrates into CI/CD pipelines to show cost implications of infrastructure changes during the development process. It supports diff outputs, showing how proposed changes will affect costs. This tool is particularly valuable for teams looking to optimize cloud spending and maintain cost awareness throughout the infrastructure development lifecycle. Infracost can be used standalone or integrated with other tools, helping teams make informed decisions about resource provisioning and configuration changes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "0I21dIX4_-e5C0IyAB_nD",
         "title": "infracost/infracost",
         "url": "https://github.com/infracost/infracost",
         "type": "opensource"
       },
       {
-        "id": "Wgjtr-hNkq08y3HERp4Zf",
         "title": "Infracost Website",
         "url": "https://www.infracost.io/",
         "type": "article"
       },
       {
-        "id": "8d3qWF834jAERs_bE340a",
         "title": "Shifting FinOps Left: A live demo",
         "url": "https://www.youtube.com/watch?v=BQeO137DDo8",
         "type": "video"
@@ -1851,19 +1636,16 @@
     "description": "Terraform secret management is a critical aspect of secure infrastructure-as-code practices, focusing on the protection of sensitive information like API keys, passwords, and access tokens. Instead of storing secrets directly in Terraform files, best practices advocate for using external secret management systems such as HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault. These systems allow Terraform to retrieve secrets securely during execution, significantly reducing the risk of exposure. For local development, tools like git-crypt or SOPS provide encryption for sensitive files, while Terraform's built-in encrypted state storage options safeguard secrets in state files. By marking variables as sensitive, accidental logging of secret values can be prevented. In CI/CD pipelines, it's crucial to inject secrets securely at runtime and avoid committing them to version control systems. Regular rotation of secrets and access audits further enhance security.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "aBJ6dgR_TIu0y5rV64rIk",
         "title": "Terraform Secrets - How to manage them",
         "url": "https://spacelift.io/blog/terraform-secrets",
         "type": "article"
       },
       {
-        "id": "OLKDgH4mKmbb8C5ss1CHx",
         "title": "A comprehensive guide to managing secrets in your Terraform code",
         "url": "https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1",
         "type": "article"
       },
       {
-        "id": "E2KWd7MGOaxLoiWU56w-3",
         "title": "Inject secrets with Vault",
         "url": "https://developer.hashicorp.com/terraform/tutorials/secrets",
         "type": "article"
@@ -1875,19 +1657,16 @@
     "description": "Hashicorp Sentinel is a policy-as-code framework integrated with HashiCorp's enterprise products, including Terraform Cloud and Terraform Enterprise. It allows organizations to define and enforce standardized, fine-grained policies across their infrastructure deployments. Sentinel policies can be written to check for security compliance, cost management, or operational best practices before Terraform applies any changes. These policies use a domain-specific language to define rules that evaluate Terraform plans and state, enabling teams to catch potential issues early in the development process. Sentinel can enforce mandatory policies that prevent non-compliant infrastructure changes from being applied, or advisory policies that warn but don't block deployments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "gJkLzUSFgQCD_o0SiOBVb",
         "title": "hashicorp/terraform-sentinel-policies",
         "url": "https://github.com/hashicorp/terraform-sentinel-policies",
         "type": "opensource"
       },
       {
-        "id": "Id_TxsYQstmviPtjGOf7W",
         "title": "Terraform and Sentinel",
         "url": "https://developer.hashicorp.com/sentinel/docs/terraform",
         "type": "article"
       },
       {
-        "id": "ldNeA3B1GX3IXnoBu2YO8",
         "title": "Enforce policy-as-code",
         "url": "https://www.terraform.io/use-cases/enforce-policy-as-code",
         "type": "article"
@@ -1899,19 +1678,16 @@
     "description": "Trivy is a comprehensive, open-source security scanner primarily known for container image scanning, but it also supports Infrastructure as Code (IaC) analysis, including Terraform configurations. It can detect vulnerabilities in dependencies, misconfigurations in cloud infrastructure setups, and potential security risks in Terraform code. Trivy's IaC scanning capabilities cover various cloud providers and can identify issues related to compliance, security best practices, and common misconfigurations. The tool is designed for easy integration into CI/CD pipelines, offering fast scanning times and multiple output formats for better reporting and integration with other DevOps tools. Trivy's strength lies in its ability to provide a unified scanning solution across different aspects of the software development lifecycle, from container images to IaC, making it a versatile tool for maintaining security throughout the development and deployment process.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "wQFMWenz2wgwEXKKd6kNR",
         "title": "aquasecurity/trivy",
         "url": "https://github.com/aquasecurity/trivy",
         "type": "opensource"
       },
       {
-        "id": "mCHrbJGXtbpSvPr41pARH",
         "title": "Trivy Website",
         "url": "https://trivy.dev/",
         "type": "article"
       },
       {
-        "id": "fqEwnqoOQjVjm3a2TkKUq",
         "title": "How to secure Terraform code with Trivy",
         "url": "https://verifa.io/blog/how-to-secure-terraform-trivy/",
         "type": "article"
@@ -1923,19 +1699,16 @@
     "description": "KICS (Keeping Infrastructure as Code Secure) is an open-source static analysis tool designed to scan Infrastructure as Code (IaC) files, including Terraform configurations, for security vulnerabilities, compliance issues, and infrastructure misconfigurations. It supports multiple IaC technologies and cloud providers, offering a comprehensive approach to securing cloud-native environments. KICS uses a robust set of predefined rules to detect potential security risks, ranging from insecure defaults to violations of industry standards and best practices. The tool allows for custom query development, enabling organizations to tailor scans to their specific security and compliance needs. KICS can be easily integrated into CI/CD pipelines, providing early detection of issues in the development lifecycle. Its ability to generate detailed reports and support various output formats facilitates easy interpretation of results and integration with other security and DevOps tools, making it a valuable asset in maintaining secure and compliant infrastructure deployments managed through Terraform.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "2DoSr8auC0GNwb69TDLef",
         "title": "checkmarx/kics",
         "url": "https://github.com/Checkmarx/kics",
         "type": "opensource"
       },
       {
-        "id": "MZBwxlfI_gDR4_lbiC2Aq",
         "title": "KICS Website",
         "url": "https://kics.io/index.html",
         "type": "article"
       },
       {
-        "id": "wQBns04LKCleT8asUCJpx",
         "title": "Autoremediate your Infrastructure-as-Code",
         "url": "https://www.youtube.com/watch?v=jVpQPTyg3hs",
         "type": "video"
@@ -1952,19 +1725,16 @@
     "description": "Terrascan is an open-source static code analyzer for Infrastructure as Code (IaC) that helps detect compliance and security violations across multiple IaC tools, including Terraform. It scans Terraform configurations against a set of predefined policies to identify potential security risks, misconfigurations, and compliance issues before deployment. Terrascan can be integrated into CI/CD pipelines, providing early detection of vulnerabilities in the development lifecycle. It supports custom policies, allowing organizations to enforce their specific security and compliance requirements. The tool covers various cloud providers and can be extended to support additional policy types.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "OaFI9TIpVMLp-k9kAKBSX",
         "title": "tenable/terrascan",
         "url": "https://github.com/tenable/terrascan",
         "type": "opensource"
       },
       {
-        "id": "4quXpB86rNAeVx_sZJeii",
         "title": "Terrascan Website",
         "url": "https://runterrascan.io/",
         "type": "article"
       },
       {
-        "id": "19712ZU0yQzPYtPJjQPgr",
         "title": "What is Terrascan?",
         "url": "https://spacelift.io/blog/what-is-terrascan",
         "type": "article"
@@ -1976,19 +1746,16 @@
     "description": "Checkov is an open-source static code analysis tool designed for scanning Infrastructure as Code (IaC) files, including Terraform configurations, for security and compliance issues. It provides a comprehensive set of out-of-the-box policies covering various cloud providers and security best practices. Checkov can identify misconfigurations, security risks, and compliance violations in Terraform code before deployment, helping to shift security left in the development process. The tool supports custom policies written in Python, allowing organizations to enforce specific requirements. Checkov integrates easily into CI/CD pipelines and offers multiple output formats for better reporting and integration with other tools. Its ability to scan for a wide range of issues, from insecure defaults to compliance with standards like CIS Benchmarks, makes it a powerful asset for maintaining secure and compliant infrastructure deployments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Bjzc8hCGDNErrzXTN6CDu",
         "title": "bridgecrewio/checkov",
         "url": "https://github.com/bridgecrewio/checkov",
         "type": "opensource"
       },
       {
-        "id": "mE2oAVaD9tOLatyIquvcF",
         "title": "Checkov Website",
         "url": "https://www.checkov.io/",
         "type": "article"
       },
       {
-        "id": "COoNtA9ymkmsOjDFu8Dv4",
         "title": "Scanning Terraform Code with Checkov",
         "url": "https://devopscube.com/terraform-checkov-scan/",
         "type": "article"
@@ -2005,7 +1772,6 @@
     "description": "HashiCorp Cloud Platform (HCP) is best used when organizations need a managed, scalable solution for their infrastructure-as-code practices. It's particularly valuable for teams seeking to streamline operations across multi-cloud environments, enhance collaboration, and maintain consistent governance. HCP is ideal when there's a need for centralized management of Terraform workflows, secure remote operations, and integrated secrets management. It's beneficial for large enterprises or growing teams that require robust access controls, policy enforcement, and audit capabilities. HCP should be considered when the complexity of self-managing HashiCorp tools becomes a burden, or when there's a desire to reduce operational overhead. It's also useful when organizations want to leverage the synergies between different HashiCorp products like Terraform, Vault, and Consul in a unified, managed environment. The platform is most effective when scaling infrastructure management needs outgrow the capabilities of standalone Terraform implementations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "kmVYY-lwX-D610cnBFvH8",
         "title": "Use Cases",
         "url": "https://developer.hashicorp.com/terraform/intro/use-cases",
         "type": "article"
@@ -2017,19 +1783,16 @@
     "description": "HashiCorp Cloud Platform (HCP) offers several enterprise-grade features designed to enhance large-scale infrastructure management:\n\n1.  Centralized workflow management for Terraform operations\n2.  Advanced role-based access control (RBAC) for fine-grained permissions\n3.  Policy as Code with Sentinel for governance and compliance\n4.  Private network connectivity for secure access to cloud resources\n5.  Audit logging for comprehensive tracking of all platform activities\n6.  Integrated secrets management with Vault\n7.  Service networking capabilities through Consul\n8.  Multi-cloud and hybrid cloud support\n9.  Scalable remote state management\n10.  Cost estimation and optimization tools\n11.  Customizable policy libraries for security and compliance\n12.  Single sign-on (SSO) and identity federation\n13.  API-driven automation for infrastructure provisioning\n14.  Collaborative features for team-based infrastructure development\n15.  Continuous compliance monitoring and reporting\n\nThese features collectively provide a robust, secure, and scalable environment for enterprise-level infrastructure management and DevOps practices.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "jYozutxPxmSdCmlI42dBv",
         "title": "HCP Website",
         "url": "https://www.hashicorp.com/cloud",
         "type": "article"
       },
       {
-        "id": "22hGQlCnMXVa7Vko7vpl6",
         "title": "HCP Terraform Plans and Features",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/overview",
         "type": "article"
       },
       {
-        "id": "tT_RIPWmfSupfTN_D0Oy6",
         "title": "How does The Infrastructure Cloud work?",
         "url": "https://www.youtube.com/watch?v=zWWGsJrWj5E",
         "type": "video"
@@ -2041,19 +1804,16 @@
     "description": "HCP (HashiCorp Cloud Platform) authentication provides secure access management for its services, including Terraform Cloud. It utilizes a comprehensive identity and access management system that supports multiple authentication methods. These include username/password combinations, single sign-on (SSO) integration with popular identity providers, and API tokens for programmatic access. HCP supports SAML 2.0 for enterprise-grade SSO, allowing seamless integration with existing identity management systems. For machine-to-machine communication, HCP offers service principal authentication, enabling secure, automated interactions with HCP services. The platform also provides fine-grained role-based access control (RBAC), allowing administrators to define and manage user permissions across different resources and operations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "9NDKEGvIzIL68qPkaXVJD",
         "title": "hashicorp/hcp-auth-login",
         "url": "https://github.com/hashicorp/hcp-auth-action",
         "type": "opensource"
       },
       {
-        "id": "S4fmC6chCUK3bUqGGKzqJ",
         "title": "hcp auth login",
         "url": "https://developer.hashicorp.com/hcp/docs/cli/commands/auth/login",
         "type": "article"
       },
       {
-        "id": "pFPFkPRMXATgvfk2P-4tO",
         "title": "Authenticate with HCP",
         "url": "https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/auth",
         "type": "article"
@@ -2065,19 +1825,16 @@
     "description": "HCP workspaces, particularly in the context of Terraform Cloud, provide isolated environments for managing different sets of infrastructure. Each workspace is associated with a specific Terraform configuration and maintains its own state file, variables, and access controls. Workspaces enable teams to organize and separate infrastructure based on projects, environments, or teams. They support collaborative workflows by allowing multiple team members to work on the same infrastructure while maintaining version control and change history. HCP workspaces offer features like remote state management, secure variable storage, and integration with version control systems. They also provide run triggers for automating workflows across dependent infrastructures. With built-in access controls, organizations can enforce least-privilege principles by granting specific permissions to users or teams for each workspace.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "Cq82w-NPBSFopT6PqJfH_",
         "title": "Workspaces",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
         "type": "article"
       },
       {
-        "id": "RJA81y_NY-DKz5WeJBWBO",
         "title": "Organize workspaces with projects",
         "url": "https://developer.hashicorp.com/terraform/tutorials/cloud/projects",
         "type": "article"
       },
       {
-        "id": "t6LFqBCyyy38JHKcsbfMe",
         "title": "Organize your Terraform Cloud workspaces using Projects",
         "url": "https://www.youtube.com/watch?v=J1T1tbU6wAU",
         "type": "video"
@@ -2089,19 +1846,16 @@
     "description": "HCP's Version Control System (VCS) integration, particularly in Terraform Cloud, enables seamless connection between infrastructure code repositories and HCP services. This feature allows teams to directly link their Git repositories (from providers like GitHub, GitLab, or Bitbucket) to HCP workspaces. When configured, changes pushed to the linked repository automatically trigger Terraform runs in the corresponding workspace. This integration supports GitOps workflows, ensuring that infrastructure changes go through proper version control processes. It enables features like automatic plan generation on pull requests, providing early feedback on proposed changes. The integration also supports branch-based workflows, allowing different branches to be linked to different workspaces for staging and production environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "8bk2FP4DoG2_S0SJJDP_y",
         "title": "Connecting VCS Providers to HCP Terraform",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/vcs",
         "type": "article"
       },
       {
-        "id": "AJ_YEO9itB3mzidBHUoK2",
         "title": "Use VCS-driven workflow",
         "url": "https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-vcs-change",
         "type": "article"
       },
       {
-        "id": "O-ZQkkCFvUHPLa2Zq-c87",
         "title": "Configuring Workspace VCS Connections",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/vcs",
         "type": "article"
@@ -2113,19 +1867,16 @@
     "description": "HCP Run Tasks, a feature of Terraform Cloud, allow for the integration of external services or custom logic into the Terraform workflow. These tasks can be configured to run before or after Terraform plans and applies, enabling additional validation, notification, or data processing steps. Run Tasks can be used for various purposes such as security scanning, cost estimation, custom policy checks, or triggering external workflows. They are executed via webhooks, allowing integration with a wide range of third-party services or internal tools. This feature enhances the flexibility and extensibility of the Terraform workflow, enabling organizations to implement custom processes and integrations tailored to their specific needs.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "umAkwZAk7UQ9wkBKdEFxt",
         "title": "Run Tasks",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
         "type": "article"
       },
       {
-        "id": "Z4MD6Wzp4g0BcFoePoQLU",
         "title": "Terrafrom Registry - Run Tasks",
         "url": "https://registry.terraform.io/browse/run-tasks",
         "type": "article"
       },
       {
-        "id": "6XvqLnKKnUycLGD6ro0w6",
         "title": "Run Tasks API",
         "url": "https://developer.hashicorp.com/terraform/cloud-docs/api-docs/run-tasks/run-tasks",
         "type": "article"
@@ -2137,19 +1888,16 @@
     "description": "Version management in Terraform is crucial for maintaining consistency across different environments and team members. Tools like `tfenv` allow developers to easily switch between different versions of Terraform. `tfenv` is a version manager that installs and manages multiple Terraform versions on a single system. It enables teams to specify and use specific Terraform versions for different projects, ensuring compatibility and reproducibility. This tool, along with others like `tfswitch`, helps manage potential conflicts arising from version differences, facilitates easier upgrades, and supports working on multiple projects with varying Terraform version requirements.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "1cJSOajlbAhYKGn8fpFHS",
         "title": "tfenv",
         "url": "https://github.com/tfutils/tfenv",
         "type": "opensource"
       },
       {
-        "id": "4X1BzTX9TDurfNip8LIkP",
         "title": "How to Use tfenv to Manage Multiple Terraform Versions",
         "url": "https://spacelift.io/blog/tfenv",
         "type": "article"
       },
       {
-        "id": "5xwtQZAvYXKd2kiU0mytr",
         "title": "Quick Tech: tfenv",
         "url": "https://www.youtube.com/watch?v=Smk5PrRPQsU",
         "type": "video"

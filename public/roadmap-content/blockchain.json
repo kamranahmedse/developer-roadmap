@@ -4,37 +4,31 @@
     "description": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "XkoYZR_eCRNI-lkWk-Fsr",
         "title": "Introduction to Blockchain",
         "url": "https://chain.link/education-hub/blockchain",
         "type": "article"
       },
       {
-        "id": "aiJ6sRhzjFikuijSMqccU",
         "title": "Blockchain Explained",
         "url": "https://www.investopedia.com/terms/b/blockchain.asp",
         "type": "article"
       },
       {
-        "id": "1bwfrqQlLFEO9uqHahZeZ",
         "title": "An Elementary and Slightly Distilled Introduction to Blockchain",
         "url": "https://markpetherbridge.co.uk/blog/an-elementary-and-slightly-distilled-introduction-to-blockchain/",
         "type": "article"
       },
       {
-        "id": "rowFD8eHbtqSH5qin3ORw",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "e0eHzFfrRd0oDWJxIJCGu",
         "title": "How does a blockchain work?",
         "url": "https://youtu.be/SSo_EIwHSd4",
         "type": "video"
       },
       {
-        "id": "cj1gN9YTNA71mB5Ids2BE",
         "title": "What Is a Blockchain? | Blockchain Basics for Developers",
         "url": "https://youtu.be/4ff9esY_4aU",
         "type": "video"
@@ -46,31 +40,26 @@
     "description": "The blockchain gets its name from its underlying structure. The blockchain is organized as a series of “blocks” that are “chained” together.\n\nUnderstanding blockchain security requires understanding how the blockchain is put together. This requires knowing what the blocks and chains of blockchain are and why they are designed the way that they are.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "cKPM-tp0hzRtH8bfk6J67",
         "title": "Blockchain Basics | Coursera",
         "url": "https://www.coursera.org/lecture/blockchain-basics/blockchain-structure-5rj9Z",
         "type": "course"
       },
       {
-        "id": "0h-Yvyq0UKrXeCR9FNTAw",
         "title": "Blockchain Architecture Basics: Components, Structure, Benefits & Creation",
         "url": "https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture",
         "type": "article"
       },
       {
-        "id": "fpav0tiB6ud6baU0jg9Ix",
         "title": "Blockchain Architecture 101: Components, Structure, and Benefits",
         "url": "https://komodoplatform.com/en/academy/blockchain-architecture-101/",
         "type": "article"
       },
       {
-        "id": "KDAQO3W5aiv_nRwctsCQi",
         "title": "Blockchain structure",
         "url": "https://resources.infosecinstitute.com/topic/blockchain-structure/",
         "type": "article"
       },
       {
-        "id": "FVbQNDp1tw8ONFQ4P_Ckh",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -82,37 +71,31 @@
     "description": "Operations in a decentralized networks are the responsibility of the peer participants and their respective computational nodes. These are specific for each type of blockchain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "jGHyWPPz95fBtq4wd8Vyc",
         "title": "Blockchain Basics | Coursera",
         "url": "https://www.coursera.org/lecture/blockchain-basics/basic-operations-OxILB",
         "type": "course"
       },
       {
-        "id": "cgmJQhmqI80QiNxfk_ed0",
         "title": "Blockchain Basics: Structure, Operations, and the Bitcoin Blockchain",
         "url": "https://www.mlq.ai/blockchain-basics/",
         "type": "article"
       },
       {
-        "id": "tpboLrM-jCorwSesg5HLU",
         "title": "Bitcoin blockchain transactions | Bitcoin Developer",
         "url": "https://developer.bitcoin.org/reference/transactions.html",
         "type": "article"
       },
       {
-        "id": "2UB32RVFBIaZg6a6FTb0w",
         "title": "Ethereum blockchain transactions | ethereum.org",
         "url": "https://ethereum.org/en/developers/docs/transactions/",
         "type": "article"
       },
       {
-        "id": "jbs19Shn97YHArUzXsQN1",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "X3OZPx4XNcsVjGsjnzsN6",
         "title": "How Bitcoin blockchain actually work (Video)",
         "url": "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
         "type": "video"
@@ -124,25 +107,21 @@
     "description": "Blockchain applications go far beyond cryptocurrency and bitcoin. With its ability to create more transparency and fairness while also saving businesses time and money, the technology is impacting a variety of sectors in ways that range from how contracts are enforced to making government work more efficiently.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "SExK0usx5878HaW0XkpVU",
         "title": "Blockchain Use Cases and Applications by Industry",
         "url": "https://consensys.net/blockchain-use-cases/",
         "type": "article"
       },
       {
-        "id": "QSomM0kVF9MCXiQEfMIwP",
         "title": "Top 10 Real-World Applications Of Blockchain Technology",
         "url": "https://www.blockchain-council.org/blockchain/top-10-real-world-applications-of-blockchain-technology/",
         "type": "article"
       },
       {
-        "id": "90yfuX-dRQL_A-_ix_uN6",
         "title": "Ethereum blockchain transactions | ethereum.org",
         "url": "https://ethereum.org/en/developers/docs/transactions/",
         "type": "article"
       },
       {
-        "id": "-2K0ak8SJmN8LpOkSmhYB",
         "title": "E34 Blockchain Applications and Real-World Use Cases Disrupting the Status Quo",
         "url": "https://builtin.com/blockchain/blockchain-applications",
         "type": "article"
@@ -154,31 +133,26 @@
     "description": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "jvrXYcU7aW3yHumyKsMKX",
         "title": "Blockchain Explained",
         "url": "https://www.investopedia.com/terms/b/blockchain.asp",
         "type": "article"
       },
       {
-        "id": "kbT6f2fNUeKLjCTlA9Izs",
         "title": "What is decentralization?",
         "url": "https://aws.amazon.com/blockchain/decentralization-in-blockchain/",
         "type": "article"
       },
       {
-        "id": "DDx_HmVzK3-CtLLzkso4b",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "F4azpzV-xtaaF_z8YaEMZ",
         "title": "How does a blockchain work?",
         "url": "https://youtu.be/SSo_EIwHSd4",
         "type": "video"
       },
       {
-        "id": "mQvtsltCKxccnshJIyDZU",
         "title": "What Is a Blockchain? | Blockchain Basics for Developers",
         "url": "https://youtu.be/4ff9esY_4aU",
         "type": "video"
@@ -190,19 +164,16 @@
     "description": "In blockchain, decentralization refers to the transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network. Decentralized networks strive to reduce the level of trust that participants must place in one another, and deter their ability to exert authority or control over one another in ways that degrade the functionality of the network.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "pRnIX25nkvDc3dd6P0vgg",
         "title": "What is decentralization?",
         "url": "https://aws.amazon.com/blockchain/decentralization-in-blockchain/",
         "type": "article"
       },
       {
-        "id": "ifiJ9YirIZRrY2zJveqRo",
         "title": "What is Decentralization in Blockchain?",
         "url": "https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/",
         "type": "article"
       },
       {
-        "id": "Li5Tr_8wuh7gnytQJiZAt",
         "title": "Explore top posts about Decentralization",
         "url": "https://app.daily.dev/tags/decentralization?ref=roadmapsh",
         "type": "article"
@@ -219,19 +190,16 @@
     "description": "Visit the following resources to learn more:",
     "links": [
       {
-        "id": "qGQcZTVPFbuAu0S3vL3H0",
         "title": "The Complete Course On Understanding Blockchain Technology",
         "url": "https://www.udemy.com/course/understanding-blockchain-technology/",
         "type": "course"
       },
       {
-        "id": "Qxm-rMNM3xZsdLcpBVT0J",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "hWoQSJYmlIjzx_QRHoOsK",
         "title": "Blockchain Technology Explained",
         "url": "https://youtu.be/qOVAbKKSH10",
         "type": "video"
@@ -243,13 +211,11 @@
     "description": "Mining is the process of adding transaction details to the Blockchain, like sender address, hash value, etc. The Blockchain contains all the history of the transactions that have taken place in the past for record purposes and it is stored in such a manner that, it can’t be manipulated.\n\nAn Incentive is basically a reward given to a Blockchain Miner for speeding up the transactions and making correct decisions while processing the complete transaction securely.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "QG_4OdfMeHpBDPfHeMaCd",
         "title": "Ethereum Consensus Mechanisms",
         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/",
         "type": "article"
       },
       {
-        "id": "ibOtqObimy99b42yhYQ_M",
         "title": "Solana Staking Rewards",
         "url": "https://docs.solana.com/implemented-proposals/staking-rewards",
         "type": "article"
@@ -261,25 +227,21 @@
     "description": "Blockchains, cryptocurrency, smart contracts, and oracles have emerged as new technologies for coordinating social and economic activities in a more secure, transparent, and accessible manner. Most importantly, these technologies are revealing the power of cryptographic guarantees—what we often call cryptographic truth—in restoring users’ trust in everyday interactions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "3fwsYfteggNfg6PI5BM6a",
         "title": "What Crypto Is Really About",
         "url": "https://blog.chain.link/what-crypto-is-really-about/",
         "type": "article"
       },
       {
-        "id": "athF21r8j1fdHylvNKBZB",
         "title": "Ethereum Consensus Mechanisms",
         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/",
         "type": "article"
       },
       {
-        "id": "srDGKFFPED2MSzAYBbZMT",
         "title": "Explore top posts about Decentralization",
         "url": "https://app.daily.dev/tags/decentralization?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "wpyhoRbDj8dG06NH1ytJR",
         "title": "The Superiority of Cryptographic Truth",
         "url": "https://youtu.be/AEtBPbmIRKQ",
         "type": "video"
@@ -291,25 +253,21 @@
     "description": "A fork happens whenever a community makes a change to the blockchain’s protocol, or basic set of rules.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "zHI0prPEmHemqVQPFsktJ",
         "title": "Blockchain Fork",
         "url": "https://en.wikipedia.org/wiki/Fork_(blockchain)",
         "type": "article"
       },
       {
-        "id": "hSEdc23Hx0uTefFl8q7Cc",
         "title": "What is a fork?",
         "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-fork",
         "type": "article"
       },
       {
-        "id": "3S2pHCaqNSokuNXlnQDMl",
         "title": "What Is a Hard Fork?",
         "url": "https://www.investopedia.com/terms/h/hard-fork.asp",
         "type": "article"
       },
       {
-        "id": "BVkQCkie3vubMlIiOUWWg",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -321,25 +279,21 @@
     "description": "A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of exchange through a blockchain, which is not reliant on any central authority, such as a government or bank, to uphold or maintain it.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "mz7s33XakWDGNsfxJAG2H",
         "title": "What Is Cryptocurrency?",
         "url": "https://www.investopedia.com/terms/c/cryptocurrency.asp",
         "type": "article"
       },
       {
-        "id": "prsTR2lQ0XNMJmwHB7SkS",
         "title": "Cryptocurrency: What It Is and How It Works",
         "url": "https://www.nerdwallet.com/article/investing/cryptocurrency",
         "type": "article"
       },
       {
-        "id": "lWyQTGrKpnH4QwH5PiGgt",
         "title": "Explore top posts about Crypto",
         "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "FvdieRoj9VOM-DgMWhRdp",
         "title": "How Cryptocurrency actually works.",
         "url": "https://youtu.be/rYQgy8QDEBI",
         "type": "video"
@@ -351,13 +305,11 @@
     "description": "A cryptocurrency wallet is an application that functions as a wallet for your cryptocurrency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "5MjhVRlUyyvQr1mmKT1JR",
         "title": "What is a Cryptocurrency Wallet?",
         "url": "https://www.investopedia.com/terms/b/bitcoin-wallet.asp",
         "type": "article"
       },
       {
-        "id": "tMfiTi5ojgF336dvRH7Gn",
         "title": "What is a Crypto Wallet? A Beginner’s Guide",
         "url": "https://crypto.com/university/crypto-wallets",
         "type": "article"
@@ -369,31 +321,26 @@
     "description": "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial behavior.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "K2fSVWWhWqbJfv_ABk-n2",
         "title": "Cryptography",
         "url": "https://en.wikipedia.org/wiki/Cryptography",
         "type": "article"
       },
       {
-        "id": "oE5Lb7s5zNV2QPPYcnmMZ",
         "title": "What is Cryptography",
         "url": "https://www.synopsys.com/glossary/what-is-cryptography.html",
         "type": "article"
       },
       {
-        "id": "z-YIiw8ov5X202Q9HeqXh",
         "title": "Explore top posts about Cryptography",
         "url": "https://app.daily.dev/tags/cryptography?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "WrikcBT8e24Yfk0A3WIMz",
         "title": "Asymmetric Encryption - Simply explained",
         "url": "https://youtu.be/AQDCe585Lnc",
         "type": "video"
       },
       {
-        "id": "mt01udS07Lun4T7sbuxo0",
         "title": "What is Cryptography?",
         "url": "https://www.youtube.com/watch?v=6_Cxj5WKpIw",
         "type": "video"
@@ -405,19 +352,16 @@
     "description": "Consensus for blockchain is a procedure in which the peers of a Blockchain network reach agreement about the present state of the data in the network. Through this, consensus algorithms establish reliability and trust in the Blockchain network.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "3NgOmHP_2t1jpfzgkzvcM",
         "title": "Consensus Mechanisms in Blockchain: A Beginner’s Guide",
         "url": "https://crypto.com/university/consensus-mechanisms-explained",
         "type": "article"
       },
       {
-        "id": "1uB-498sX07c4z7t9ZoZQ",
         "title": "Consensus Mechanisms",
         "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/",
         "type": "article"
       },
       {
-        "id": "nvX860ce7PueGKgD3HWvt",
         "title": "What Is a Consensus Mechanism?",
         "url": "https://www.coindesk.com/learn/what-is-a-consensus-mechanism/",
         "type": "article"
@@ -429,25 +373,21 @@
     "description": "The concept of “blockchain interoperability” refers to the ability of different blockchain networks to exchange and leverage data between one another and to move unique types of digital assets between the networks’ respective blockchains.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "dV__GoSVRpMgVwakJZUIt",
         "title": "Cross-Chain Interoperability: What it Means for Blockchain",
         "url": "https://www.gemini.com/cryptopedia/why-is-interoperability-important-for-blockchain",
         "type": "article"
       },
       {
-        "id": "QT161x8FyX8zj3f8CVkN9",
         "title": "Blockchain Interoperability : Why Is Cross Chain Technology Important?",
         "url": "https://101blockchains.com/blockchain-interoperability/",
         "type": "article"
       },
       {
-        "id": "ZY7CRKtj-61FhiH6ofImG",
         "title": "Blockchain Interoperability – Understanding Cross-Chain Technology",
         "url": "https://www.blockchain-council.org/blockchain/blockchain-interoperability/",
         "type": "article"
       },
       {
-        "id": "_2cndGAv3yVC50nTASRnC",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -459,43 +399,36 @@
     "description": "Solana is a public blockchain platform with smart contract functionality. Its native cryptocurrency is SOL.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "5m2qffAb02cBIuTTYoj9G",
         "title": "What is Solana, and how does it work?",
         "url": "https://cointelegraph.com/news/what-is-solana-and-how-does-it-work",
         "type": "article"
       },
       {
-        "id": "2Ox2wqdUpE4M7IWy1qism",
         "title": "Beginners Guide To Solana",
         "url": "https://solana.com/news/getting-started-with-solana-development",
         "type": "article"
       },
       {
-        "id": "ZfnXUKpbrLRbhB3H0Beci",
         "title": "Solana Introduction",
         "url": "https://docs.solana.com/introduction",
         "type": "article"
       },
       {
-        "id": "P52CmbMXLUMGFdLHxWO5X",
         "title": "Solana Whitepaper",
         "url": "https://solana.com/solana-whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "kklkbbsG41ddx9Nsm_QSL",
         "title": "Solana Architecture",
         "url": "https://docs.solana.com/cluster/overview",
         "type": "article"
       },
       {
-        "id": "hUUP6pzfnedgSZcAa6Gyn",
         "title": "Start Building Solana!",
         "url": "https://beta.solpg.io/?utm_source=solana.com",
         "type": "article"
       },
       {
-        "id": "92icmsUmrvFefl-zxdoa2",
         "title": "Explore top posts about Solana",
         "url": "https://app.daily.dev/tags/solana?ref=roadmapsh",
         "type": "article"
@@ -507,25 +440,21 @@
     "description": "TON is a fully decentralized layer-1 blockchain designed by Telegram to onboard billions of users. It boasts ultra-fast transactions, tiny fees, easy-to-use apps, and is environmentally friendly.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "l26kuYOuxdhygqrhdRVoA",
         "title": "TON Telegram integration highlights synergy of blockchain community",
         "url": "https://cointelegraph.com/news/ton-telegram-integration-highlights-synergy-of-blockchain-community",
         "type": "article"
       },
       {
-        "id": "UqsmcLkc-BuRy5iF-gSgQ",
         "title": "Start building on The Open Network",
         "url": "https://ton.org/dev",
         "type": "article"
       },
       {
-        "id": "k9gs-bHLJ0nS5EGRc1N1T",
         "title": "TON Introduction",
         "url": "https://ton.org/docs/learn/introduction",
         "type": "article"
       },
       {
-        "id": "W3cZ7O7N0IOOTdv8rNgyn",
         "title": "Blockchain analysis",
         "url": "https://ton.org/analysis",
         "type": "article"
@@ -537,19 +466,16 @@
     "description": "The Ethereum Virtual Machine (EVM) is a dedicated software virtual stack that executes smart contract bytecode and is integrated into each Ethereum node. Simply said, EVM is a software framework that allows developers to construct Ethereum-based decentralized applications (DApps). All Ethereum accounts and smart contracts are stored on this virtual computer.\n\nMany blockchains have forked the Ethereum blockchain and added functionality on top, these blockchains are referred to as EVM-based blockchains.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "6DVPH2WuajpNyjqjAR6pG",
         "title": "What is Ethereum Virtual Machine?",
         "url": "https://moralis.io/evm-explained-what-is-ethereum-virtual-machine/",
         "type": "article"
       },
       {
-        "id": "9mi0W4G510j9Jh8goKVWX",
         "title": "Explore top posts about EVM",
         "url": "https://app.daily.dev/tags/evm?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "JXfzJwMnQ2lcza5UkRUfY",
         "title": "Understanding the Ethereum Virtual Machine (EVM): Concepts and Architecture",
         "url": "https://www.youtube.com/watch?v=kCswGz9naZg",
         "type": "video"
@@ -561,13 +487,11 @@
     "description": "Blockchain systems vary considerably in their design, particularly with regard to the consensus mechanisms used to perform the essential task of verifying network data.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "vvM7IhQd9-uryK5kdn21f",
         "title": "Types of Blockchains: PoW, PoS, and Private",
         "url": "https://www.gemini.com/cryptopedia/blockchain-types-pow-pos-private",
         "type": "article"
       },
       {
-        "id": "o88N9_h4cD6V07XOitFcL",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -579,25 +503,21 @@
     "description": "Ethereum is a programmable blockchain platform with the capacity to support smart contracts, dapps (decentralized apps), and other DeFi projects. The Ethereum native token is the Ether (ETH), and it’s used to fuel operations on the blockchain.\n\nThe Ethereum platform launched in 2015, and it’s now the second largest form of crypto next to Bitcoin (BTC).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "5PemnlSf0XCQiNRHkRtTP",
         "title": "Ethereum whitepaper",
         "url": "https://ethereum.org/en/whitepaper/",
         "type": "article"
       },
       {
-        "id": "ovaqEs0HUVwhSkB-AmK5P",
         "title": "Intro to Ethereum",
         "url": "https://ethereum.org/en/developers/docs/intro-to-ethereum/",
         "type": "article"
       },
       {
-        "id": "idA8IIdlndSOtT13_604A",
         "title": "A gentle introduction to Ethereum",
         "url": "https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/",
         "type": "article"
       },
       {
-        "id": "LaId9vVv1_6fYqxJhoAHr",
         "title": "Explore top posts about Ethereum",
         "url": "https://app.daily.dev/tags/ethereum?ref=roadmapsh",
         "type": "article"
@@ -609,37 +529,31 @@
     "description": "Polygon, formerly known as the Matic Network, is a protocol that allows anyone to create and exchange value, powered by zero-knowledge technology. Polygon provides multiple solutions including",
     "links": [
       {
-        "id": "t3NH4OT8v0Q11qWPxLQmR",
         "title": "Polygon zkEVM",
         "url": "https://polygon.technology/polygon-zkevm",
         "type": "article"
       },
       {
-        "id": "m39B7FAEag0_S3RV-G5Ea",
         "title": "Polygon PoS",
         "url": "https://polygon.technology/polygon-pos",
         "type": "article"
       },
       {
-        "id": "MotKKD-gU2fLx2IDR4hwi",
         "title": "Polygon CDK",
         "url": "https://polygon.technology/polygon-cdk",
         "type": "article"
       },
       {
-        "id": "CFIA_-vSbloqj6X5y_q4y",
         "title": "Polygon ID",
         "url": "https://polygon.technology/polygon-id",
         "type": "article"
       },
       {
-        "id": "adKqd9E1QQ1c-y56tsoQr",
         "title": "Introduction to Polygon",
         "url": "https://wiki.polygon.technology/",
         "type": "article"
       },
       {
-        "id": "lnjgNUhoWJf4BuXjdSwd8",
         "title": "Polygon POL whitepaper",
         "url": "https://polygon.technology/papers/pol-whitepaper",
         "type": "article"
@@ -651,19 +565,16 @@
     "description": "Binance Smart Chain (also known as BNB Chain) is a blockchain project initiated by Binance as a central piece of their cryptocurrency exchange, which is the largest exchange in the world in terms of daily trading volume of cryptocurrencies.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "rb77TEDqKm0IamFdILVvm",
         "title": "Binance whitepaper",
         "url": "https://www.exodus.com/assets/docs/binance-coin-whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "Ys1QVvi1BwtTKpNZB8ntb",
         "title": "BNB Chain overview",
         "url": "https://www.binance.com/en/blog/all/bnb-chain-blockchain-for-exchanging-the-world-304219301536473088",
         "type": "article"
       },
       {
-        "id": "aM33i8BGBw-Tre1_5_9xL",
         "title": "Explore top posts about Crypto",
         "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
@@ -675,13 +586,11 @@
     "description": "Gnosis is a blockchain based on Ethereum, which changed the consensus model to PoS to solve major issues on the Ethereum mainnet. While the platform solves problems surrounding transaction fees and speed, it also means that the Gnosis chain is less decentralized, as it is somewhat reliant on the Ethereum chain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "DANQFa5mqueQ52QnvBDjm",
         "title": "Gnosis whitepaper",
         "url": "https://blockchainlab.com/pdf/gnosis_whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "TNWn8XhPG_CaOKEaKETFT",
         "title": "Gnosis overview",
         "url": "https://developers.gnosischain.com/#gnosis-chain",
         "type": "article"
@@ -693,13 +602,11 @@
     "description": "Huobi's ECO Chain (also known as HECO) is a public blockchain that provides developers with a low-cost onchain environment for running decentralized apps (dApps) of smart contracts and storing digital assets.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "kH50YP0vpe7xCUim-p3aR",
         "title": "Huobi Eco Chain whitepaper",
         "url": "https://www.hecochain.com/developer.133bd45.pdf",
         "type": "article"
       },
       {
-        "id": "QsPOa8FhTFjROvbyYpxxo",
         "title": "Introduction to HECO Chain",
         "url": "https://docs.hecochain.com/#/",
         "type": "article"
@@ -711,13 +618,11 @@
     "description": "Avalanche describes itself as an “open, programmable smart contracts platform for decentralized applications.” What does that mean? Like many other decentralized protocols, Avalanche has its own token called AVAX, which is used to pay transaction fees and can be staked to secure the network.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "tnJ7ddjyCZxSKpgRZQVOF",
         "title": "Avalanche whitepaper",
         "url": "https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "-fZnAoRNm9awb9UJgx4cw",
         "title": "Avalanche official website",
         "url": "https://www.avax.network/",
         "type": "article"
@@ -729,13 +634,11 @@
     "description": "Fantom is a decentralized, open-source smart contract platform that supports decentralized applications (dApps) and digital assets. It's one of many blockchain networks built as a faster, more efficient alternative to Ethereum, it uses the proof-of-stake consensus mechanism.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "cA2fZqVjXIzoNjpNWDiJf",
         "title": "Fantom whitepaper",
         "url": "https://arxiv.org/pdf/1810.10360.pdf",
         "type": "article"
       },
       {
-        "id": "w9_zS_AAHdEP8DMAzDDUp",
         "title": "Fantom overview",
         "url": "https://docs.fantom.foundation/",
         "type": "article"
@@ -747,13 +650,11 @@
     "description": "Moonbeam is a Polkadot network parachain that promises cross-chain interoperability between the Ethereum and Polkadot . More specifically, Moonbeam is a smart contract platform that enables developers to move dApps between the two networks without having to rewrite code or redeploy infrastructure.\n\nMoonriver is an incentivized testnet. It enables developers to create, test, and adjust their protocols prior to launching on Moonbeam. Moonbeam is the mainnet of the ecosystem.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "l47flg7EqiV0SiiW7AyvY",
         "title": "About Moonbream",
         "url": "https://docs.moonbeam.network/learn/platform/networks/moonbeam/",
         "type": "article"
       },
       {
-        "id": "crDj9YCOfH96jlGORJ-nj",
         "title": "Moonbeam Vision",
         "url": "https://docs.moonbeam.network/learn/platform/vision/",
         "type": "article"
@@ -765,25 +666,21 @@
     "description": "Everscale is a layer-1 PoS blockchain network of the 5th generation. It is one of the most technologically advanced blockchain networks, and that is not a marketing exaggeration. Everscale incorporates all the blockchain innovations and concepts of recent years. Its versatility helps it develop as a decentralized hub for many blockchains and resource-demanding applications such as GameFi, DeFi, micro-transactions, real-time bidding, etc.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "aFW_D5JzUm21nTX6dCGUq",
         "title": "Everscale site",
         "url": "https://everscale.network",
         "type": "article"
       },
       {
-        "id": "z1jEeZwiyKlqjoknK31sY",
         "title": "Everscale Whitepaper",
         "url": "https://everscale.network/docs/everscale-whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "Y45ZNeNDJrSzq5mTLnsm1",
         "title": "Documentation",
         "url": "https://docs.everscale.network/",
         "type": "article"
       },
       {
-        "id": "brxBxXoSMEyu9GTfDOyk4",
         "title": "Guide",
         "url": "https://everscale.guide/",
         "type": "article"
@@ -795,31 +692,26 @@
     "description": "Gosh is a development platform that is purpose-built for securing the software supply chain and extracting the value locked in projects. It is the first blockchain-based platform for software development, which allows developers and businesses to create products in a familiar, straightforward, and safe way.\n\nOn Gosh, every operation, commit, and transaction is trustless, traceable, and transparent. This means that developers can build composable, censorship-resistant repositories, and monetize their open source projects by turning them into a DAO.\n\nGosh is built on cryptography, decentralization, and consensus, which means that repositories have no owner and are managed in a decentralized way. Developers can use Gosh like they use Git and turn any Gosh repository into a DAO and configure it to suit their needs. They can also fund their DAO and use DeFi applications to incentivize code security.\n\nWith Gosh, builds are no longer at risk. From source code on Gosh to Docker container, developers can be sure that their build is safe. Mission-critical applications can also write their scripts as formally verified smart contracts to get rid of holes in the CI/CD process.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "buylwmmQkCoDgvFrw9xf1",
         "title": "Gosh site",
         "url": "https://gosh.sh/",
         "type": "article"
       },
       {
-        "id": "kddkSYl3XMYZpyGtIo6lA",
         "title": "Gosh Documentation",
         "url": "https://docs.gosh.sh/",
         "type": "article"
       },
       {
-        "id": "Avw-hhCM5uPG6KGxuvkdg",
         "title": "Gosh Web",
         "url": "https://app.gosh.sh/",
         "type": "article"
       },
       {
-        "id": "gDFumsg7Tm3IFsVApPI0q",
         "title": "Docker Extension",
         "url": "https://docs.gosh.sh/working-with-gosh/docker-extension/",
         "type": "article"
       },
       {
-        "id": "KFAJAjFR8NrzAsMHjHb1T",
         "title": "Git Remote Helper",
         "url": "https://docs.gosh.sh/working-with-gosh/git-remote-helper/",
         "type": "article"
@@ -831,25 +723,21 @@
     "description": "TON is a fully decentralized layer-1 blockchain designed by Telegram to onboard billions of users. It boasts ultra-fast transactions, tiny fees, easy-to-use apps, and is environmentally friendly.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "FN_9db0mU1rVIT0pl7Dns",
         "title": "TON Telegram integration highlights synergy of blockchain community",
         "url": "https://cointelegraph.com/news/ton-telegram-integration-highlights-synergy-of-blockchain-community",
         "type": "article"
       },
       {
-        "id": "EEHSufI9DYUY2EJdr_Rfe",
         "title": "Start building on The Open Network",
         "url": "https://ton.org/dev",
         "type": "article"
       },
       {
-        "id": "nOc_1qtvw6WxOhM4IeaB4",
         "title": "TON Introduction",
         "url": "https://ton.org/docs/learn/introduction",
         "type": "article"
       },
       {
-        "id": "nzIMPv4dClqP1z7oK5Hur",
         "title": "Blockchain analysis",
         "url": "https://ton.org/analysis",
         "type": "article"
@@ -861,25 +749,21 @@
     "description": "The Venom Foundation is the first crypto foundation licensed in UAE's ADGM and is set to launch its blockchain platform soon. The platform uses asynchronous blockchain technology of dynamical sharding, which enables boundless scalability, higher security guarantees with decentralization, and manages the gross data transaction flows without faltering by increasing fees and transaction times. The foundation aims to develop and support a self-sufficient blockchain ecosystem with non-custodial wallet options, transparent transaction histories, interchain transactions, staking on validator nodes, and a native decentralized exchange, among others.\n\nThe MENA region entrepreneurs are considered pioneers in global crypto trend adoption, and the foundation's customizable approach is well-suited to bridging different dimensions of market participants. The platform has a panel of industry leaders and seasoned investors, and the project is generating attention in MENA due to its transactional management possibilities, higher security, and inbound governmental database projects. The foundation will work with ecosystem participants to offer new products such as NFT marketplace, derivative exchange, fiat-backed stablecoin, and others to come with the potential to become a bridge towards wide adoption of CBDC in the UAE, other MENA countries and globally.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "jpAnhnbMuf8FEwCZZiaGF",
         "title": "Venom site",
         "url": "https://venom.foundation",
         "type": "article"
       },
       {
-        "id": "PfRraUZQtLr5dTbjs9Vrl",
         "title": "Venom whitepaper",
         "url": "https://venom.foundation/Venom_Whitepaper.pdf",
         "type": "article"
       },
       {
-        "id": "avA47PXmN1SPA8OVjaRzy",
         "title": "Venom Documentation",
         "url": "https://docs.venom.foundation/",
         "type": "article"
       },
       {
-        "id": "aRYhphe85Tp9gIKblnvpx",
         "title": "Explore Grants",
         "url": "https://venom.foundation/#explore_grants",
         "type": "article"
@@ -896,25 +780,21 @@
     "description": "Layer-2 refers to a network or technology that operates on top of an underlying blockchain protocol to improve its scalability and efficiency.\n\nThis category of scaling solutions entails shifting a portion of Ethereum's transactional burden to an adjacent system architecture, which then handles the brunt of the network’s processing and only subsequently reports back to Ethereum to finalize its results.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "4L6rIkfk-N1uPunrZkENM",
         "title": "Layer-1 and Layer-2 Blockchain Scaling Solutions",
         "url": "https://www.gemini.com/cryptopedia/blockchain-layer-2-network-layer-1-network",
         "type": "article"
       },
       {
-        "id": "by5oP3YQpW_U1_zXT0ihg",
         "title": "Layer 2 - Binance Academy",
         "url": "https://academy.binance.com/en/glossary/layer-2",
         "type": "article"
       },
       {
-        "id": "63dKDPUmXBLrmxSvpaaCq",
         "title": "Develop a ZK-powered Layer 2 with the Polygon CDK open-source framework",
         "url": "https://wiki.polygon.technology/docs/cdk/",
         "type": "article"
       },
       {
-        "id": "hRC0P0YzlwLcTBH8rBb93",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -926,13 +806,11 @@
     "description": "Arbitrum aims to reduce transaction fees and congestion by moving as much computation and data storage off of Ethereum's main blockchain (layer 1) as it can. Storing data off of Ethereum's blockchain is known as Layer 2 scaling solutions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "4S7S1-vWLqllOEN7qxnWb",
         "title": "Arbitrum whitepaper",
         "url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf",
         "type": "article"
       },
       {
-        "id": "5u0ujt00bUwfQI4bpDttQ",
         "title": "Inside Arbitrum",
         "url": "https://developer.offchainlabs.com/docs/Inside_Arbitrum",
         "type": "article"
@@ -944,13 +822,11 @@
     "description": "Moonbeam is a Polkadot network parachain that promises cross-chain interoperability between the Ethereum and Polkadot . More specifically, Moonbeam is a smart contract platform that enables developers to move dApps between the two networks without having to rewrite code or redeploy infrastructure.\n\nMoonriver is an incentivized testnet. It enables developers to create, test, and adjust their protocols prior to launching on Moonbeam. Moonbeam is the mainnet of the ecosystem.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "JfoLaO5n3MGVkiQC99AUy",
         "title": "About Moonbeam",
         "url": "https://docs.moonbeam.network/learn/platform/networks/moonbeam/",
         "type": "article"
       },
       {
-        "id": "tN68UZNtt4Y_bIOHvnz4n",
         "title": "Moonbeam Vision",
         "url": "https://docs.moonbeam.network/learn/platform/vision/",
         "type": "article"
@@ -962,13 +838,11 @@
     "description": "TVM-based blockchain is a type of blockchain that uses the Telegram Open Network Virtual Machine (TVM) for executing smart contracts. This allows for fast and efficient execution of smart contracts and enables developers to create decentralized applications.\n\nBoC stands for Bag of Cells, and it refers to the data structure used in the TVM-based blockchain to store all the information related to a smart contract. This includes the code of the contract, its state, and other relevant data. The Bag of Cells is a highly efficient data structure that allows for fast and secure storage of smart contract data.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "7LuAn5n5-a0Ey_-1DLpsI",
         "title": "Original specification",
         "url": "https://ton.org/tvm.pdf",
         "type": "article"
       },
       {
-        "id": "VkIFIYf8J2dK9E_l-eft2",
         "title": "Everscale VM specification",
         "url": "https://docs.everscale.network/tvm.pdf",
         "type": "article"
@@ -980,19 +854,16 @@
     "description": "A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in from the world, but also the reverse. Information from the world encapsulates multiple sources so that decentralized knowledge is obtained.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "pQBbRi7QJBD777tTeDgex",
         "title": "Blockchain Oracle",
         "url": "https://en.wikipedia.org/wiki/Blockchain_oracle",
         "type": "article"
       },
       {
-        "id": "VaB8t_JvEl5T7l9Pq2kER",
         "title": "What Is a Blockchain Oracle?",
         "url": "https://chain.link/education/blockchain-oracles",
         "type": "article"
       },
       {
-        "id": "5Td917jCPqQH7CipMFVV_",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -1004,13 +875,11 @@
     "description": "Hybrid smart contracts combine code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain) provided by Decentralized Oracle Networks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "SdkPkuTaE-nijTcXraxim",
         "title": "Hybrid Smart Contracts Explained",
         "url": "https://blog.chain.link/hybrid-smart-contracts-explained/",
         "type": "article"
       },
       {
-        "id": "pwTU9J_yeuDezOWPcJPgz",
         "title": "A complete guide to understand hybrid smart contracts",
         "url": "https://www.leewayhertz.com/hybrid-smart-contracts/",
         "type": "article"
@@ -1022,13 +891,11 @@
     "description": "Chainlink is a decentralized network of oracles that enables smart contracts to securely interact with real-world data and services that exist outside of blockchain networks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "FnEamTH8wYa36CL7bMNiV",
         "title": "What Is Chainlink? A Beginner’s Guide",
         "url": "https://blog.chain.link/what-is-chainlink/",
         "type": "article"
       },
       {
-        "id": "vOlQwEoXSHR0wYGxsaITQ",
         "title": "What Is Chainlink in 5 Minutes",
         "url": "https://www.gemini.com/cryptopedia/what-is-chainlink-and-how-does-it-work",
         "type": "article"
@@ -1040,25 +907,21 @@
     "description": "By leveraging many different data sources, and implementing an oracle system that isn’t controlled by a single entity, decentralized oracle networks provide an increased level of security and fairness to smart contracts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "jWZhE4nWUia44MlxrttQK",
         "title": "Decentralized Oracle Networks",
         "url": "https://medium.com/coinmonks/decentralized-oracle-networks-9fead28f5fe5",
         "type": "article"
       },
       {
-        "id": "9R5kHE7srVVsA2QqdI8my",
         "title": "A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks",
         "url": "https://chainlinktoday.com/a-beginners-guide-to-the-evolution-of-decentralized-oracle-networks/",
         "type": "article"
       },
       {
-        "id": "80Oed2PUxjv8etvd7BXgJ",
         "title": "Understanding Blockchain Oracle",
         "url": "https://chain.link/education/blockchain-oracles",
         "type": "article"
       },
       {
-        "id": "S04Xdogd8KUSiyOQvYreB",
         "title": "Explore top posts about Oracle",
         "url": "https://app.daily.dev/tags/oracle?ref=roadmapsh",
         "type": "article"
@@ -1070,19 +933,16 @@
     "description": "A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Dh0-y4qFx_vcPhceeEvYa",
         "title": "What Are Smart Contracts and How Do They Work?",
         "url": "https://chain.link/education/smart-contracts",
         "type": "article"
       },
       {
-        "id": "n6s6vlSwLWtVjtAQDsc5Q",
         "title": "Explore top posts about Smart Contracts",
         "url": "https://app.daily.dev/tags/smart-contracts?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "h-L0T-gOJUxKyjR_166vy",
         "title": "Smart contracts - Simply Explained",
         "url": "https://youtu.be/ZE2HxTmxfrI",
         "type": "video"
@@ -1094,37 +954,31 @@
     "description": "Solidity is an object-oriented programming language created specifically by Ethereum Network team for constructing smart contracts on various blockchain platforms, most notably, Ethereum.\n\n*   It's used to create smart contracts that implements business logic and generate a chain of transaction records in the blockchain system.\n*   It acts as a tool for creating machine-level code and compiling it on the Ethereum Vitural Machine (EVM).\n\nLike any other programming languages, Solidity also has variables, functions, classes, arithmetic operations, string manipulation, and many more.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "fqnrO7Lr06Ntr9q0hGf1R",
         "title": "Solidity Programming Language",
         "url": "https://soliditylang.org/",
         "type": "article"
       },
       {
-        "id": "AuIdt4Pt1Hh_NmrzFVejf",
         "title": "Solidity Tutorial",
         "url": "https://www.tutorialspoint.com/solidity/index.htm",
         "type": "article"
       },
       {
-        "id": "2_C2Ib62cJqR7xNCVuFGk",
         "title": "Explore top posts about Solidity",
         "url": "https://app.daily.dev/tags/solidity?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "aevZflrZNf3y5vnrPowAl",
         "title": "Solidity Course by FreeCodeCamp",
         "url": "https://www.youtube.com/watch?v=ipwxYa-F1uY",
         "type": "video"
       },
       {
-        "id": "DUZQfgTXS65jVnmBn21zx",
         "title": "Solidity Course by Dapp University",
         "url": "https://www.youtube.com/watch?v=EhPeHeoKF88",
         "type": "video"
       },
       {
-        "id": "M_b1DIC6Hwv0GS35bE0ys",
         "title": "Learn Blockchain, Solidity, and Full Stack Web3 Development",
         "url": "https://youtu.be/gyMwXuJrbJQ",
         "type": "video"
@@ -1136,13 +990,11 @@
     "description": "Vyper is a contract-oriented, pythonic programming language that targets the Ethereum Virtual Machine (EVM).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "MD0SoXu0mjuwnSteE49M7",
         "title": "Vyper Programming Language",
         "url": "https://vyper.readthedocs.io/en/stable/",
         "type": "article"
       },
       {
-        "id": "_e8SUauwdvIfYZ3awoyGH",
         "title": "Learn Vyper in Y Minutes",
         "url": "https://learnxinyminutes.com/docs/vyper/",
         "type": "article"
@@ -1154,19 +1006,16 @@
     "description": "Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. It is popular on smart contract chains Solana and Polkadot.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "l80bD_268GCdzPorROYf6",
         "title": "Rust Programming Language",
         "url": "https://www.rust-lang.org/",
         "type": "article"
       },
       {
-        "id": "OU5YHcT487-z_VWIDK-5B",
         "title": "How to write and deploy a smart contract in Rust",
         "url": "https://docs.near.org/tutorials/nfts/introduction",
         "type": "article"
       },
       {
-        "id": "B46ttKUhjQ5jnK4xCzCjn",
         "title": "Explore top posts about Rust",
         "url": "https://app.daily.dev/tags/rust?ref=roadmapsh",
         "type": "article"
@@ -1178,19 +1027,16 @@
     "description": "Unit testing involves testing individual components in a smart contract for correctness. A unit test is simple, quick to run, and provides a clear idea of what went wrong if the test fails.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "-eh-HdDb7STA2v-uSXAns",
         "title": "Smart Contracts Unit Testing",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/#unit-testing",
         "type": "article"
       },
       {
-        "id": "Zz9KOG7o3SL_e4ANm6r0z",
         "title": "Tips for Unit Testing Ethereum Smart Contracts in Solidity",
         "url": "https://betterprogramming.pub/a-few-tips-for-unit-testing-ethereum-smart-contract-in-solidity-d804062068fb",
         "type": "article"
       },
       {
-        "id": "KugkE4jpgAGNyPT8UT5wv",
         "title": "Explore top posts about Testing",
         "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
         "type": "article"
@@ -1202,13 +1048,11 @@
     "description": "Integration tests validate interactions between multiple components. For smart contract testing this can mean interactions between different components of a single contract, or across multiple contracts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "OfP38Yc8WhHNZQ39Qa-9o",
         "title": "Explore top posts about Testing",
         "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "ObhScqb78rV4aPjJeJXd6",
         "title": "Unit tests vs integration tests | Smart contract testing course",
         "url": "https://youtu.be/GxnX9k8i0zM",
         "type": "video"
@@ -1220,19 +1064,16 @@
     "description": "Code coverage is a metric that can help you understand how much of your source is tested. It's a very useful metric that can help you assess the quality of your test suite.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "w1tXbqkeiDPZL5SnV14qf",
         "title": "Testing Smart Contracts",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/testing/",
         "type": "article"
       },
       {
-        "id": "-N4ncHBtFmunsFpl6yhmB",
         "title": "Smart Contract Code Coverage In Hardhat",
         "url": "https://medium.com/coinmonks/smart-contract-code-coverage-in-hardhat-d4a5ff6c9ba6",
         "type": "article"
       },
       {
-        "id": "wTyvAQBUe85yDi_drF0Cg",
         "title": "Explore top posts about General Programming",
         "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
         "type": "article"
@@ -1244,19 +1085,16 @@
     "description": "Unlike other software, smart contracts don’t run on a local computer or a remote server: they live on the blockchain. Thus, interacting with them is different from more traditional applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "ZdxsqyRxY0HHYUlCRVKCd",
         "title": "Deploying Smart Contracts",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/deploying/",
         "type": "article"
       },
       {
-        "id": "vxuadJvUu2RMlqdFKInhV",
         "title": "Deploying and interacting with smart contracts",
         "url": "https://docs.openzeppelin.com/learn/deploying-and-interacting",
         "type": "article"
       },
       {
-        "id": "qmbMksElDOliUHEn82x8q",
         "title": "Explore top posts about CI/CD",
         "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
         "type": "article"
@@ -1268,13 +1106,11 @@
     "description": "Monitoring smart contracts allow their authors to view its activity and interactions based on generated transactions and events, allowing verification of the contract's intended purpose and functionality.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "bIuN3tTE9wQrv0X-q3kNg",
         "title": "Monitoring Smart Contracts",
         "url": "https://consensys.github.io/smart-contract-best-practices/development-recommendations/solidity-specific/event-monitoring/",
         "type": "article"
       },
       {
-        "id": "dhyxDnT0yrIfba_905ToT",
         "title": "Explore top posts about Monitoring",
         "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh",
         "type": "article"
@@ -1286,25 +1122,21 @@
     "description": "Smart contracts are immutable by default. Once they are created there is no way to alter them, effectively acting as an unbreakable contract among participants. However, for some scenarios, it is desirable to be able to modify them.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "8tYi-8_va_3WnPz8BBABA",
         "title": "Upgrading Ethereum contracts",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/upgrading/",
         "type": "article"
       },
       {
-        "id": "KStoMVcPifnNqZwHDPXFX",
         "title": "Upgrading smart contracts",
         "url": "https://docs.openzeppelin.com/learn/upgrading-smart-contracts",
         "type": "article"
       },
       {
-        "id": "-Z5vJYVHFaiQqBeRX04L3",
         "title": "What are Upgradable Smart Contracts? Full Guide",
         "url": "https://moralis.io/what-are-upgradable-smart-contracts-full-guide/",
         "type": "article"
       },
       {
-        "id": "xhDTdsAKMM5m3ufdHBC-z",
         "title": "Upgrading your Smart Contracts | A Tutorial & Introduction",
         "url": "https://youtu.be/bdXJmWajZRY",
         "type": "video"
@@ -1316,25 +1148,21 @@
     "description": "An ‘Ethereum Request for Comments’ (ERC) is a document that programmers use to write smart contracts on Ethereum Blockchain. They describe rules in these documents that Ethereum-based tokens must comply with.\n\nWhile there are several Ethereum standards. These ERC Ethereum standards are the most well-known and popular: ERC-20, ERC-721, ERC-1155, and ERC-777.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "4vmDsqe39Eifcuvn0do4f",
         "title": "What are Ethereum request for comments (ERC) Standards",
         "url": "https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80",
         "type": "article"
       },
       {
-        "id": "7x-3sZncCv6Sf4N8vyeCT",
         "title": "ERC-20 Token Standard",
         "url": "https://ethereum.org/en/developers/docs/standards/tokens/erc-20/",
         "type": "article"
       },
       {
-        "id": "-1iAK7ZshkT6vhewEWYrD",
         "title": "ERC-721 Token Standard (NFTs)",
         "url": "https://decrypt.co/resources/erc-721-ethereum-nft-token-standard",
         "type": "article"
       },
       {
-        "id": "Ok6XM7hvhpAgxtLNN1Gt7",
         "title": "ERC-1155 Token Standard (Multi-Token)",
         "url": "https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard",
         "type": "article"
@@ -1346,19 +1174,16 @@
     "description": "A cryptocurrency wallet is a device, physical medium, program, or service which stores the public and/or private keys for cryptocurrency transactions. In addition to this basic function of storing the keys, a cryptocurrency wallet more often also offers the functionality of encrypting and/or signing information.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "AU-ffueW57B0kYQ6pb6Hp",
         "title": "What is a crypto wallet?",
         "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet",
         "type": "article"
       },
       {
-        "id": "38-ObddkfiVpwf6bRQZ-U",
         "title": "What is a Crypto Wallet? A Beginner’s Guide",
         "url": "https://crypto.com/university/crypto-wallets",
         "type": "article"
       },
       {
-        "id": "5WXoIxxuj2M45Lnrj9ia1",
         "title": "Explore top posts about Crypto",
         "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
@@ -1370,19 +1195,16 @@
     "description": "An integrated development environment is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "MGX9BqKq4eLb9NJvsIAx_",
         "title": "Integrated Development Environments",
         "url": "https://ethereum.org/en/developers/docs/ides/",
         "type": "article"
       },
       {
-        "id": "cgrcwG8VT0W7Or-HGoSFq",
         "title": "Remix - Ethereum IDE & community",
         "url": "https://remix-project.org/",
         "type": "article"
       },
       {
-        "id": "bO0FwAtDJ_VJKjd_Iq4R_",
         "title": "Explore top posts about DevTools",
         "url": "https://app.daily.dev/tags/devtools?ref=roadmapsh",
         "type": "article"
@@ -1394,19 +1216,16 @@
     "description": "A crypto faucet lets users earn small crypto rewards by completing simple tasks. The metaphor is based on how even one drop of water from a leaky faucet could eventually fill up a cup. There are various kinds of crypto faucets, including bitcoin (BTC), Ethereum (ETH), and BNB faucets.\n\nFaucets are common in development environments where developers obtain testnet crypto in order develop and test their application prior to mainnet deployment.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "sisQpsf-N2j02Xnl4BRBo",
         "title": "What Is A Crypto Faucet?",
         "url": "https://academy.binance.com/en/articles/what-is-a-crypto-faucet",
         "type": "article"
       },
       {
-        "id": "b59HfMxcC9LLH1wXkXu8V",
         "title": "What are crypto faucets and how do they work?",
         "url": "https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work",
         "type": "article"
       },
       {
-        "id": "838xj-Trur5hj6Fij2jOg",
         "title": "Explore top posts about Crypto",
         "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
@@ -1418,19 +1237,16 @@
     "description": "Decentralized storage is where data is stored on a decentralized network across multiple locations by users or groups who are incentivized to join, store, and keep data accessible. The servers used are hosted by people, rather than a single company. Anyone is free to join, they are kept honest due to smart contracts, and they are incentivized to participate via tokens.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "eiF_Osiwga4Ly6-VpQHCL",
         "title": "What Is Decentralized Storage?",
         "url": "https://medium.com/@ppio/what-is-decentralized-storage-9c4b761942e2",
         "type": "article"
       },
       {
-        "id": "q8Yz11ZA_XoU4HDYzVbMm",
         "title": "Decentralized Storage",
         "url": "https://ethereum.org/en/developers/docs/storage/",
         "type": "article"
       },
       {
-        "id": "glYj1-GY4DVGYG_hcJzIg",
         "title": "Explore top posts about Decentralized",
         "url": "https://app.daily.dev/tags/decentralized?ref=roadmapsh",
         "type": "article"
@@ -1442,19 +1258,16 @@
     "description": "Building a full-fledged dapp requires different pieces of technology. Software frameworks include many of the needed features or provide easy plugin systems to pick the tools you desire.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "VPi27Kb5Cpoq6-zJoSzPC",
         "title": "dApp Development Frameworks",
         "url": "https://ethereum.org/en/developers/docs/frameworks/",
         "type": "article"
       },
       {
-        "id": "VMZUfFgxPCv6bDvucSNF4",
         "title": "A Definitive List of Ethereum Developer Tools - Frameworks",
         "url": "https://media.consensys.net/an-definitive-list-of-ethereum-developer-tools-2159ce865974#frameworks",
         "type": "article"
       },
       {
-        "id": "lmh6jNM4DLYrNCtjiM6up",
         "title": "Top 10 Smart Contract Developer Tools You Need for 2022",
         "url": "https://medium.com/better-programming/top-10-smart-contract-developer-tools-you-need-for-2022-b763f5df689a",
         "type": "article"
@@ -1466,19 +1279,16 @@
     "description": "Hardhat is an Ethereum development environment. It allows users to compile contracts and run them on a development network. Get Solidity stack traces, console.log and more.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "xWSI7S4D7k5j2n4Jxh3pw",
         "title": "Hardhat Overview",
         "url": "https://hardhat.org/hardhat-runner/docs/getting-started#overview",
         "type": "article"
       },
       {
-        "id": "jDUAhEFDaakq3e1YIMbH6",
         "title": "Explore top posts about Hardhat",
         "url": "https://app.daily.dev/tags/hardhat?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "_yG4bZknAIINH4amrPTjR",
         "title": "Build and Deploy Smart Contracts using Hardhat",
         "url": "https://youtu.be/GBc3lBrXEBo",
         "type": "video"
@@ -1490,13 +1300,11 @@
     "description": "Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "yhL2zSV4_doyLqkL69tmX",
         "title": "Brownie Overview",
         "url": "https://eth-brownie.readthedocs.io/",
         "type": "article"
       },
       {
-        "id": "GZMSi5rI1wc56umPYraO9",
         "title": "Python and Blockchain: Deploy Smart Contracts using Brownie",
         "url": "https://youtu.be/QfFO22lwSw4",
         "type": "video"
@@ -1508,13 +1316,11 @@
     "description": "A development environment, testing framework, and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "zYo_y4hqSjnu6FWUYAig1",
         "title": "Truffle Overview",
         "url": "https://trufflesuite.com/docs/truffle/",
         "type": "article"
       },
       {
-        "id": "VjyP7KA1cpCCNhdDP7V7a",
         "title": "Truffle Tutorial for Beginners | Compile, Test & Deploy Smart contracts to any EVM Blockchain",
         "url": "https://youtu.be/62f757RVEvU",
         "type": "video"
@@ -1526,13 +1332,11 @@
     "description": "Foundry is a smart contract development toolchain. Foundry manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "rmw1NOkYCHaJZpi0E1eYx",
         "title": "Foundry Overview",
         "url": "https://book.getfoundry.sh/",
         "type": "article"
       },
       {
-        "id": "B6mpQi9Zxos49dWkOP54Z",
         "title": "Intro to Foundry",
         "url": "https://youtu.be/fNMfMxGxeag",
         "type": "video"
@@ -1544,19 +1348,16 @@
     "description": "Smart contracts are extremely flexible, capable of both holding large quantities of tokens (often in excess of $1B) and running immutable logic based on previously deployed smart contract code. While this has created a vibrant and creative ecosystem of trustless, interconnected smart contracts, it is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "HFJrniOyrbQ7a-AIZDZHA",
         "title": "Smart Contract Security",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/security/",
         "type": "article"
       },
       {
-        "id": "kGDqbYXovBMn1924axQK9",
         "title": "Ethereum Smart Contract Security Recommendations",
         "url": "https://consensys.net/blog/developers/ethereum-smart-contract-security-recommendations/",
         "type": "article"
       },
       {
-        "id": "P2_1WbJt54uE6bh4Q_69I",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -1568,13 +1369,11 @@
     "description": "Smart contract programming requires a different engineering mindset. The cost of failure can be high, and change can be difficult.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "_OpSznANfrcv1UXmnaHqv",
         "title": "Ethereum Smart Contract Security Best Practices",
         "url": "https://consensys.github.io/smart-contract-best-practices/",
         "type": "article"
       },
       {
-        "id": "14gHfkw5GgDPxhsIma3zo",
         "title": "Smart Contract Security and Auditing 101",
         "url": "https://youtu.be/0aJfCug1zTM",
         "type": "video"
@@ -1586,25 +1385,21 @@
     "description": "Fuzzing or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a smart contract.\n\nStatic analysis is the analysis of smart contracts performed without executing them.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "g7uL5m3vuS5d192Y-srl4",
         "title": "Getting Started with Smart Contract Fuzzing",
         "url": "https://www.immunebytes.com/blog/getting-started-with-smart-contract-fuzzing/",
         "type": "article"
       },
       {
-        "id": "S7aewfzPmbJpb07_UbqZP",
         "title": "Solidity smart contract Static Code Analysis",
         "url": "https://lightrains.com/blogs/solidity-static-analysis-tools/#static-code-analysis",
         "type": "article"
       },
       {
-        "id": "KtHHMineSSqPgbWgFP0uY",
         "title": "Explore top posts about Testing",
         "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "bhvJdN3-wPn_T4O7i-bvN",
         "title": "Smart contract Fuzzing",
         "url": "https://youtu.be/LRyyNzrqgOc",
         "type": "video"
@@ -1616,19 +1411,16 @@
     "description": "Smart contract audits enable developers to provide a thorough analysis of smart contract sets. The main goal of a smart contract audit is to detect and eliminate vulnerabilities, starting with the most common threat vectors.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "agKvBQD8T6WbOTEjg6Xil",
         "title": "Smart Contract Attack Vectors",
         "url": "https://github.com/kadenzipfel/smart-contract-attack-vectors",
         "type": "opensource"
       },
       {
-        "id": "rTyFb1o6IKmfvcGd3qle0",
         "title": "Solidity Security: Comprehensive list of known attack vectors and common anti-patterns",
         "url": "https://blog.sigmaprime.io/solidity-security.html",
         "type": "article"
       },
       {
-        "id": "4wuSdwMFhlLWIv2ERtxLS",
         "title": "Blockchain Attack Vectors: Vulnerabilities of the Most Secure Technology",
         "url": "https://www.apriorit.com/dev-blog/578-blockchain-attack-vectors",
         "type": "article"
@@ -1640,13 +1432,11 @@
     "description": "The security of cryptographic systems depends on some secret data that is known to authorized persons but unknown and unpredictable to others. To achieve this unpredictability, some randomization is typically employed. Modern cryptographic protocols often require frequent generation of random quantities. Cryptographic attacks that subvert or exploit weaknesses in this process are known as randomness attacks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "BSYkLrC3Rwlz_9Yvwqk-l",
         "title": "Smart Contract Randomness or ReplicatedLogic Attack",
         "url": "https://blog.finxter.com/randomness-or-replicatedlogic-attack-on-smart-contracts/",
         "type": "article"
       },
       {
-        "id": "S-ocLs5Kl3L5JWo50hpOE",
         "title": "Explore top posts about Security",
         "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
         "type": "article"
@@ -1663,7 +1453,6 @@
     "description": "Slither is a Solidity static analysis framework written in Python 3. It runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "7pYRjLa16HljwFweSW-YR",
         "title": "Slither, the Solidity source analyzer",
         "url": "https://github.com/crytic/slither/blob/master/README.md",
         "type": "opensource"
@@ -1675,7 +1464,6 @@
     "description": "Manticore is a symbolic execution tool for analysis of smart contracts and binaries.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "08BPUwjBcQkE_jikfmfjs",
         "title": "Manticore Docs",
         "url": "https://manticore.readthedocs.io/",
         "type": "article"
@@ -1687,13 +1475,11 @@
     "description": "MythX is a comprehensive smart contract security analysis tools developed by Consensys. It allows users to detect security vulnerabilities in Ethereum smart contracts throughout the development life cycle as well as analyze Solidity dapps for security holes and known smart contract vulnerabilities.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "hgHd7y-xt84RufXgxVAyA",
         "title": "MythX Official Site",
         "url": "https://mythx.io/",
         "type": "article"
       },
       {
-        "id": "OM6CaApv3JozoFvbDlBJx",
         "title": "MythX Documentation",
         "url": "https://docs.mythx.io/",
         "type": "article"
@@ -1705,7 +1491,6 @@
     "description": "Echidna is a Haskell program designed for fuzzing/property-based testing of Ethereum smarts contracts. It uses sophisticated grammar-based fuzzing campaigns based on a contract ABI to falsify user-defined predicates or Solidity assertions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "wOglOwoiLM6xVWSSPOhwm",
         "title": "Echidna: A Fast Smart Contract Fuzzer",
         "url": "https://github.com/crytic/echidna/blob/master/README.md",
         "type": "opensource"
@@ -1722,7 +1507,6 @@
     "description": "OpenZeppelin Contracts helps you minimize risk by using battle-tested libraries of smart contracts for Ethereum and other blockchains. It includes the most used implementations of ERC standards.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "h6ueNu7iFD1hhKx46s5Fj",
         "title": "OpenZeppelin Contracts",
         "url": "https://docs.openzeppelin.com/contracts/",
         "type": "article"
@@ -1734,19 +1518,16 @@
     "description": "Version control/source control systems allow developers to track and control changes to code over time. These services often include the ability to make atomic revisions to code, branch/fork off of specific points, and to compare versions of code. They are useful in determining the who, what, when, and why code changes were made.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "G9-fYayPUEFWxrYviE_aB",
         "title": "Git",
         "url": "https://git-scm.com/",
         "type": "article"
       },
       {
-        "id": "-QhtaDxOTNhbbqbDXE3Zr",
         "title": "Mercurial",
         "url": "https://www.mercurial-scm.org/",
         "type": "article"
       },
       {
-        "id": "2HO02dPtg4-T-AIl1-Xh7",
         "title": "What is Version Control?",
         "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
         "type": "article"
@@ -1758,25 +1539,21 @@
     "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "t4I8ySqlJZ7bVL4DrBlqU",
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
         "type": "article"
       },
       {
-        "id": "laqgzV8pMsOtgb9U8xe2a",
         "title": "Git Cheat Sheet",
         "url": "https://cs.fyi/guide/git-cheatsheet",
         "type": "article"
       },
       {
-        "id": "4KDvsIt3dsP6o1AsO1sPL",
         "title": "Explore top posts about Git",
         "url": "https://app.daily.dev/tags/git?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "S3UsQGIPHjM55sSc_gCjf",
         "title": "Git & GitHub Crash Course For Beginners",
         "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
         "type": "video"
@@ -1788,25 +1565,21 @@
     "description": "When working on a team, you often need a remote place to put your code so others can access it, create their own branches, and create or review pull requests. These services often include issue tracking, code review, and continuous integration features. A few popular choices are GitHub, GitLab, BitBucket, and AWS CodeCommit.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Km6ZplUI6ztIZhhCPYVUp",
         "title": "GitHub",
         "url": "https://github.com/features/",
         "type": "opensource"
       },
       {
-        "id": "T74aHtylYBqOuzfij_iGG",
         "title": "GitLab",
         "url": "https://about.gitlab.com/",
         "type": "article"
       },
       {
-        "id": "51TzQLELiUBTc-LA1t4iT",
         "title": "BitBucket",
         "url": "https://bitbucket.org/product/guides/getting-started/overview",
         "type": "article"
       },
       {
-        "id": "rmoU3RH53mM5dQJF9z8hX",
         "title": "How to choose the best source code repository",
         "url": "https://bitbucket.org/product/code-repository",
         "type": "article"
@@ -1818,49 +1591,41 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "rSSj3zaM-7H0YripmC6hs",
         "title": "GitHub Website",
         "url": "https://github.com",
         "type": "opensource"
       },
       {
-        "id": "WQPE5ik_uBHGjCMeSHnGq",
         "title": "GitHub Documentation",
         "url": "https://docs.github.com/en/get-started/quickstart",
         "type": "article"
       },
       {
-        "id": "pYxqcLsuDMKDaNQ9KhNsv",
         "title": "How to Use Git in a Professional Dev Team",
         "url": "https://ooloo.io/project/github-flow",
         "type": "article"
       },
       {
-        "id": "atUw8za3QrkoKcn4O6vzS",
         "title": "Explore top posts about GitHub",
         "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "zarCjxNorfVr-f5NytQ1j",
         "title": "What is GitHub?",
         "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
         "type": "video"
       },
       {
-        "id": "fpHT1fVHpC0gUTvVeJSbs",
         "title": "Git vs. GitHub: Whats the difference?",
         "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
         "type": "video"
       },
       {
-        "id": "b1Ow_bITxe3fUvZZYKTGc",
         "title": "Git and GitHub for Beginners",
         "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
         "type": "video"
       },
       {
-        "id": "YPoQwvwc_r7UGX98kDzoB",
         "title": "Git and GitHub - CS50 Beyond 2019",
         "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
         "type": "video"
@@ -1872,19 +1637,16 @@
     "description": "GitLab is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "gYvbM_EeVYOcgkA8EdKMG",
         "title": "GitLab Website",
         "url": "https://gitlab.com/",
         "type": "opensource"
       },
       {
-        "id": "_yyyZfFHX8yUeV-GmoW0N",
         "title": "GitLab Documentation",
         "url": "https://docs.gitlab.com/",
         "type": "article"
       },
       {
-        "id": "QacCLCeDUSzz90i48HMTe",
         "title": "Explore top posts about GitLab",
         "url": "https://app.daily.dev/tags/gitlab?ref=roadmapsh",
         "type": "article"
@@ -1896,43 +1658,36 @@
     "description": "Bitbucket is a Git based hosting and source code repository service that is Atlassian's alternative to other products like GitHub, GitLab etc\n\nBitbucket offers hosting options via Bitbucket Cloud (Atlassian's servers), Bitbucket Server (customer's on-premise) or Bitbucket Data Centre (number of servers in customers on-premise or cloud environment)\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "vrl4a35XepQk8U842fxHl",
         "title": "Bitbucket Website",
         "url": "https://bitbucket.org/product",
         "type": "article"
       },
       {
-        "id": "s2JHf20msksu0v-9Jqw9g",
         "title": "A brief overview of Bitbucket",
         "url": "https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket",
         "type": "article"
       },
       {
-        "id": "KDW7XOfLo-ukgr78HDo5r",
         "title": "Getting started with Bitbucket",
         "url": "https://bitbucket.org/product/guides/basics/bitbucket-interface",
         "type": "article"
       },
       {
-        "id": "BuAy-5tZGVQRrT1GsZmsr",
         "title": "Using Git with Bitbucket Cloud",
         "url": "https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud",
         "type": "article"
       },
       {
-        "id": "wykiO1SR6jkEfDWDvNP_W",
         "title": "Explore top posts about Bitbucket",
         "url": "https://app.daily.dev/tags/bitbucket?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "FOoZK1hK_Ors5i5iSKlRr",
         "title": "Bitbucket tutorial | How to use Bitbucket Cloud",
         "url": "https://www.youtube.com/watch?v=M44nEyd_5To",
         "type": "video"
       },
       {
-        "id": "tnWNgNa049C2G3s--G37_",
         "title": "Bitbucket Tutorial | Bitbucket for Beginners",
         "url": "https://www.youtube.com/watch?v=i5T-DB8tb4A",
         "type": "video"
@@ -1944,13 +1699,11 @@
     "description": "A decentralized application (dApp) is an application that can operate autonomously, through the use of smart contracts that run on a blockchain. Like traditional applications, dApps provide some function or utility to its users.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Lvu3jBWvPw7OWp64mg_gp",
         "title": "Introduction to dApps",
         "url": "https://ethereum.org/en/developers/docs/dapps/",
         "type": "article"
       },
       {
-        "id": "jyd7w68afYLES1gi3vL27",
         "title": "What Is a Dapp? Decentralized Apps Explained",
         "url": "https://www.coindesk.com/learn/what-is-a-dapp-decentralized-apps-explained/",
         "type": "article"
@@ -1962,19 +1715,16 @@
     "description": "dApps can be used for just about anything that requires two or more parties to agree on something. When the appropriate conditions are met, the smart contract will execute automatically. An important differentiation is that these transactions are no longer based on trust but they are rather based on cryptographically-backed smart contracts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Z2Nnk9E-ytfWUfpDAkuWH",
         "title": "What Is a dApp? A Guide to Decentralized Applications",
         "url": "https://www.sofi.com/learn/content/what-is-a-dapp/",
         "type": "article"
       },
       {
-        "id": "-EyxueltVmWnr-ndJfYdm",
         "title": "Blockchain Use Cases and Applications by Industry",
         "url": "https://consensys.net/blockchain-use-cases/",
         "type": "article"
       },
       {
-        "id": "GE6MJKBxyRH7kiUqpUbKq",
         "title": "The real-world use cases for blockchain technology",
         "url": "https://roboticsandautomationnews.com/2022/05/20/the-real-world-use-cases-for-blockchain-technology/",
         "type": "article"
@@ -1986,25 +1736,21 @@
     "description": "Decentralized finance offers financial instruments without relying on intermediaries such as brokerages, exchanges, or banks by using smart contracts on a blockchain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "qt9Kj7BnyLEKNdjgpOqCZ",
         "title": "Decentralized Finance (DeFi) Definition",
         "url": "https://www.investopedia.com/decentralized-finance-defi-5113835",
         "type": "article"
       },
       {
-        "id": "eXHYr2yx3CVsJy2BSNBkZ",
         "title": "What is DeFi?",
         "url": "https://www.coinbase.com/learn/crypto-basics/what-is-defi",
         "type": "article"
       },
       {
-        "id": "GhseW7EQrZ1k9UCkHIaPz",
         "title": "Explore top posts about DeFi",
         "url": "https://app.daily.dev/tags/defi?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "4ivNaSGScbC8hl6oaKL-Z",
         "title": "What is DeFi? (Decentralized Finance Animated)",
         "url": "https://www.youtube.com/watch?v=17QRFlml4pA",
         "type": "video"
@@ -2016,13 +1762,11 @@
     "description": "A decentralized autonomous organization (DAO) is an emerging form of legal structure. With no central governing body, every member within a DAO typically shares a common goal and attempt to act in the best interest of the entity. Popularized through cryptocurrency enthusiasts and blockchain technology, DAOs are used to make decisions in a bottoms-up management approach.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "vSTt9_EwgHUtxVfwguJ2_",
         "title": "What Is A DAO And How Do They Work?",
         "url": "https://consensys.net/blog/blockchain-explained/what-is-a-dao-and-how-do-they-work/",
         "type": "article"
       },
       {
-        "id": "5qoL7URddIxSWPLAEoW00",
         "title": "Decentralized Autonomous Organization (DAO)",
         "url": "https://www.investopedia.com/tech/what-dao/",
         "type": "article"
@@ -2034,25 +1778,21 @@
     "description": "A non-fungible token (NFT) is a financial security consisting of digital data stored in a blockchain, a form of distributed ledger. The ownership of an NFT is recorded in the blockchain, and can be transferred by the owner, allowing NFTs to be sold and traded.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Htr0iwgEVof96zGaRV7S7",
         "title": "Non-Fungible Token (NFT)",
         "url": "https://www.investopedia.com/non-fungible-tokens-nft-5115211",
         "type": "article"
       },
       {
-        "id": "w9F7lHhtEYEy6SQdGvX9I",
         "title": "NFTs, explained",
         "url": "https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq",
         "type": "article"
       },
       {
-        "id": "hFYqwHciz8GrhySDfY2Qj",
         "title": "Explore top posts about NFT",
         "url": "https://app.daily.dev/tags/nft?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "Lb5n6PSAkELhDjujW5iZ2",
         "title": "NFT Explained In 5 Minutes | What Is NFT? - Non Fungible Token",
         "url": "https://youtu.be/NNQLJcJEzv0",
         "type": "video"
@@ -2064,13 +1804,11 @@
     "description": "Blockchain technology has the ability to eliminate all the tolls exacted by centralized organization when transferring payments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "eC59NGtjMY7ncadaxyjVg",
         "title": "How does blockchain impact global payments and remittances?",
         "url": "https://consensys.net/blockchain-use-cases/finance/#payments",
         "type": "article"
       },
       {
-        "id": "O1aYmwLo3_pQ16W1hKpmh",
         "title": "Smart Contract Use Cases - Payments",
         "url": "https://blog.chain.link/smart-contract-use-cases/#external-payments",
         "type": "article"
@@ -2082,13 +1820,11 @@
     "description": "Blockchain technology has the ability to automate claims functions by verifying real-world data through the use of an oracle. It also automates payments between parties for claims and thus lower administrative costs for insurance companies.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "e01JN-RDGH-0N-InoQDsH",
         "title": "Smart Contract Use Cases - Insurance",
         "url": "https://blog.chain.link/smart-contract-use-cases/#insurance",
         "type": "article"
       },
       {
-        "id": "4I9kyTvwLGM4b8vDBIW1w",
         "title": "Top 7 Use Cases of Blockchain in the Insurance Industry",
         "url": "https://imaginovation.net/blog/blockchain-insurance-industry-examples/",
         "type": "article"
@@ -2100,13 +1836,11 @@
     "description": "Running your own blockchain node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "ZeIri80WKKwRMIaTsAX1V",
         "title": "Blockchain Node Providers and How They Work",
         "url": "https://www.infoq.com/articles/blockchain-as-a-service-get-block/",
         "type": "article"
       },
       {
-        "id": "fHt6GeGypQf83ZbDk7je0",
         "title": "Node as a Service - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/",
         "type": "article"
@@ -2118,7 +1852,6 @@
     "description": "Alchemy is a developer platform that empowers companies to build scalable and reliable decentralized applications without the hassle of managing blockchain infrastructure in-house.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "BSN-gsVAfnxGhILPvGCsE",
         "title": "Alchemy official site",
         "url": "https://www.alchemy.com/",
         "type": "article"
@@ -2130,7 +1863,6 @@
     "description": "Infura provides the tools and infrastructure that allow developers to easily take their blockchain application from testing to scaled deployment - with simple, reliable access to Ethereum and IPFS.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "hxQ8VW42OYibGXpIywAzJ",
         "title": "Infura official site",
         "url": "https://infura.io/",
         "type": "article"
@@ -2142,13 +1874,11 @@
     "description": "Moralis provides a single workflow for building high performance dapps. Fully compatible with your favorite web3 tools and services.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "t50weYnFtBFi-WzJzqyvC",
         "title": "Moralis official site",
         "url": "https://moralis.io/",
         "type": "article"
       },
       {
-        "id": "aPLE1HOOmhfBegSMTHqj5",
         "title": "Explore top posts about Moralis",
         "url": "https://app.daily.dev/tags/moralis?ref=roadmapsh",
         "type": "article"
@@ -2160,7 +1890,6 @@
     "description": "QuickNode is a Web3 developer platform used to build and scale blockchain applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "oE5wxDaz9R1W69WOCRAdR",
         "title": "Quicknode official site",
         "url": "https://www.quicknode.com/",
         "type": "article"
@@ -2177,49 +1906,41 @@
     "description": "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add interactivity to pages e.g. you might have seen sliders, alerts, click interactions, and popups etc on different websites -- all of that is built using JavaScript. Apart from being used in the browser, it is also used in other non-browser environments as well such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "g9kNygq7juf0lP8FJuxaM",
         "title": "You Dont Know JS Yet (book series) ",
         "url": "https://github.com/getify/You-Dont-Know-JS",
         "type": "opensource"
       },
       {
-        "id": "MqpHaveTOcgbMKhO7WJm9",
         "title": "W3Schools – JavaScript Tutorial",
         "url": "https://www.w3schools.com/js/",
         "type": "article"
       },
       {
-        "id": "vSZPTBKocHMiVfDNFqgp3",
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
         "type": "article"
       },
       {
-        "id": "G68hqXnYwn_jmZ4tGojhb",
         "title": "Eloquent Javascript - Book",
         "url": "https://eloquentjavascript.net/",
         "type": "article"
       },
       {
-        "id": "zqmwHo1ZmoYUQAYTeF7rH",
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "PcTY7PmK6ln4h1wEo1Rix",
         "title": "JavaScript Crash Course for Beginners",
         "url": "https://youtu.be/hdI2bqOjy3c",
         "type": "video"
       },
       {
-        "id": "mgsaHF4EguJ_xW0yJyQ-9",
         "title": "Node.js Crash Course",
         "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
         "type": "video"
       },
       {
-        "id": "inxXXqnF_aDDdonXn7hqo",
         "title": "Node.js Tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
         "type": "video"
@@ -2231,43 +1952,36 @@
     "description": "Python is a well known programming language which is both a strongly typed and a dynamically typed language. Being an interpreted language, code is executed as soon as it is written and the Python syntax allows for writing code in functional, procedural or object-oriented programmatic ways.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "OsoC7-zj832_DaDfDjh8M",
         "title": "Visit Dedicated Python Roadmap",
         "url": "/python",
         "type": "article"
       },
       {
-        "id": "iYv0I15EdMjz0qgK3CBc1",
         "title": "Python Website",
         "url": "https://www.python.org/",
         "type": "article"
       },
       {
-        "id": "SjipZyPIeytZpcV97T3Bx",
         "title": "Python Getting Started",
         "url": "https://www.python.org/about/gettingstarted/",
         "type": "article"
       },
       {
-        "id": "qwTCxtY01Cx-rVJJgBDkt",
         "title": "W3Schools - Python Tutorial ",
         "url": "https://www.w3schools.com/python/",
         "type": "article"
       },
       {
-        "id": "YHmoUI0Ha1O3C05-DO6Gg",
         "title": "Python Crash Course",
         "url": "https://ehmatthes.github.io/pcc/",
         "type": "article"
       },
       {
-        "id": "5brFCldk18VVmRgJclT91",
         "title": "Automate the Boring Stuff",
         "url": "https://automatetheboringstuff.com/",
         "type": "article"
       },
       {
-        "id": "tEfveC5DIlPTvxNrlo-5s",
         "title": "Explore top posts about Python",
         "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
         "type": "article"
@@ -2279,37 +1993,31 @@
     "description": "Go is an open source programming language supported by Google. Go can be used to write cloud services, CLI tools, used for API development, and much more.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "imVKIUH2NZuj1m5Fj_1Bx",
         "title": "Visit Dedicated Go Roadmap",
         "url": "/golang",
         "type": "article"
       },
       {
-        "id": "FYT6exdKVTjIldF-uAobp",
         "title": "A Tour of Go – Go Basics",
         "url": "https://go.dev/tour/welcome/1",
         "type": "article"
       },
       {
-        "id": "o-qSUwofiQZ5-sBmLcunX",
         "title": "Go Reference Documentation",
         "url": "https://go.dev/doc/",
         "type": "article"
       },
       {
-        "id": "4555LwzH9AE2tXmzigXCF",
         "title": "Go by Example - annotated example programs",
         "url": "https://gobyexample.com/",
         "type": "article"
       },
       {
-        "id": "781BifcTObpo01E9qNUNd",
         "title": "W3Schools Go Tutorial ",
         "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
       {
-        "id": "D2rkVIcYErPAXWt8-LWMC",
         "title": "Explore top posts about Golang",
         "url": "https://app.daily.dev/tags/golang?ref=roadmapsh",
         "type": "article"
@@ -2321,25 +2029,21 @@
     "description": "Web frameworks are designed to write web applications. Frameworks are collections of libraries that aid in the development of a software product or website. Frameworks for web application development are collections of various tools. Frameworks vary in their capabilities and functions, depending on the tasks set. They define the structure, establish the rules, and provide the development tools required.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "uCOzPGeoeEPOrWvw8BrvO",
         "title": "Web3 Frontend – Everything You Need to Learn About Building Dapp Frontends",
         "url": "https://moralis.io/web3-frontend-everything-you-need-to-learn-about-building-dapp-frontends/",
         "type": "article"
       },
       {
-        "id": "ed86ao6vqAJ1rGyRH2pft",
         "title": "Explore top posts about Frontend Development",
         "url": "https://app.daily.dev/tags/frontend?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "wWUA7Fv8A0ByMFFG6Dvfv",
         "title": "What is the difference between a framework and a library?",
         "url": "https://www.youtube.com/watch?v=D_MO9vIRBcA",
         "type": "video"
       },
       {
-        "id": "EZpYV6M8OiwdM-XAvgAkH",
         "title": "Which JS Framework is best?",
         "url": "https://www.youtube.com/watch?v=cuHDQhDhvPE",
         "type": "video"
@@ -2351,43 +2055,36 @@
     "description": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "k5r3iZ9i0Kh1kAkooO4y1",
         "title": "Visit Dedicated React Roadmap",
         "url": "/react",
         "type": "article"
       },
       {
-        "id": "kKn_B0v_sBw9KYh9ILWCz",
         "title": "React Website",
         "url": "https://reactjs.org/",
         "type": "article"
       },
       {
-        "id": "IkAow6YGNvegimTaZIW0D",
         "title": "Official Getting Started",
         "url": "https://reactjs.org/tutorial/tutorial.html",
         "type": "article"
       },
       {
-        "id": "yZxF_prw2ZZuw6ZfEtF0d",
         "title": "Explore top posts about React",
         "url": "https://app.daily.dev/tags/react?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "KBUvWF7IE4pB8DQedjetS",
         "title": "React JS Course for Beginners",
         "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
         "type": "video"
       },
       {
-        "id": "9LMPDB8hW8wWf6fcMTEHd",
         "title": "React Course - Beginners Tutorial for React JavaScript Library [2022]",
         "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
         "type": "video"
       },
       {
-        "id": "qXtnWGxupmQnLpL9fJ1sv",
         "title": "Understanding Reacts UI Rendering Process",
         "url": "https://www.youtube.com/watch?v=i793Qm6kv3U",
         "type": "video"
@@ -2399,19 +2096,16 @@
     "description": "Angular is a component based front-end development framework built on TypeScript which includes a collection of well-integrated libraries that include features like routing, forms management, client-server communication, and more.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "hjJWWTjW33-F4PZy9z9c8",
         "title": "Visit Dedicated Angular Roadmap",
         "url": "/angular",
         "type": "article"
       },
       {
-        "id": "lRHLrJm00ZVe4sZVb0K2T",
         "title": "Official - Getting started with Angular",
         "url": "https://angular.io/start",
         "type": "article"
       },
       {
-        "id": "R-9SHrvBZuK9DRBy7dqsn",
         "title": "Explore top posts about Angular",
         "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
         "type": "article"
@@ -2423,37 +2117,31 @@
     "description": "Vue.js is an open-source JavaScript framework for building user interfaces and single-page applications. It is mainly focused on front end development.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "TJISD92X4hZ6-DPPPR_YY",
         "title": "Visit Dedicated Vue Roadmap",
         "url": "/vue",
         "type": "article"
       },
       {
-        "id": "0ih6qbbkd1xskjhlnfT7-",
         "title": "Vue.js Website",
         "url": "https://vuejs.org/",
         "type": "article"
       },
       {
-        "id": "o_zXGDB9TH2SKgIzIXjOW",
         "title": "Official Getting Started",
         "url": "https://vuejs.org/v2/guide/",
         "type": "article"
       },
       {
-        "id": "aeeNKFAz-ysjr2zolSKGM",
         "title": "Explore top posts about Vue.js",
         "url": "https://app.daily.dev/tags/vuejs?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "9-ifcvvR1EIlHyYwgRfDh",
         "title": "Vue.js Course for Beginners",
         "url": "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
         "type": "video"
       },
       {
-        "id": "zI-woS1Tr_lKyMH1MBaR9",
         "title": "Vue.js Crash Course",
         "url": "https://www.youtube.com/watch?v=qZXt1Aom3Cs",
         "type": "video"
@@ -2465,25 +2153,21 @@
     "description": "A key to building software that meets requirements without defects is testing. Software testing helps developers know they are building the right software. When tests are run as part of the development process (often with continuous integration tools), they build confidence and prevent regressions in the code.\n\nLike traditional software, testing dApps involves testing the entire stack that makes up the dApp (backend, frontend, db, etc.).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "DKDkGMw4-NKL3Njla3KlP",
         "title": "What is Software Testing?",
         "url": "https://www.guru99.com/software-testing-introduction-importance.html",
         "type": "article"
       },
       {
-        "id": "L2xqkQ5_QuV7FCCP1Dwd_",
         "title": "Testing Pyramid",
         "url": "https://www.browserstack.com/guide/testing-pyramid-for-test-automation",
         "type": "article"
       },
       {
-        "id": "gKNzE0-vdS1cBKiLv37Ai",
         "title": "How to test dApps (decentralized applications)",
         "url": "https://rhian-is.medium.com/how-to-test-dapps-decentralized-applications-4662cf61db90",
         "type": "article"
       },
       {
-        "id": "mjpqzx2q_PS89KOJYoaPJ",
         "title": "Explore top posts about Testing",
         "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
         "type": "article"
@@ -2495,19 +2179,16 @@
     "description": "Deploying a dApp involves deployment of all of its layers, generally through a management framework.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "3IHPBsw_EFfCfIJlxx7Qq",
         "title": "Tutorial for building an Ethereum DApp with Integrated Web3 Monitoring",
         "url": "https://www.moesif.com/blog/blockchain/ethereum/Tutorial-for-building-Ethereum-Dapp-with-Integrated-Error-Monitoring/",
         "type": "article"
       },
       {
-        "id": "Of7nejd6TW9bCo0JyAKs_",
         "title": "Explore top posts about CI/CD",
         "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "WnqMPcd5PVAn2Kkbq_mM7",
         "title": "Build and Deploy a Modern Web 3.0 Blockchain App",
         "url": "https://youtu.be/Wn_Kb3MR_cU",
         "type": "video"
@@ -2524,19 +2205,16 @@
     "description": "Unlike Web2 applications, in Web3 there’s no centralized database that stores the application state or user identity, and there’s no centralized web server where the backend logic resides.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "9t7wNHWGY2ypcAvCLFur1",
         "title": "The Architecture of a Web 3.0 application",
         "url": "https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application",
         "type": "article"
       },
       {
-        "id": "qN49-rX2YqD6XKXcUJh0S",
         "title": "Explore top posts about Architecture",
         "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "baq2MAWPvRjs6jLL61MOs",
         "title": "Blockchain Development: Dapp Architecture",
         "url": "https://youtu.be/KBSq8-LnUDI?t=286",
         "type": "video"
@@ -2548,25 +2226,21 @@
     "description": "dApps face unique security challenges as they run on immutable blockchains. dApps are harder to maintain, and developers cannot modify or update their codes once deployed. Therefore, special consideration must be taken before putting it on the blockchain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "coKFOVI9Ax-zFloUfIL_e",
         "title": "DAPP Security Standards",
         "url": "https://github.com/Dexaran/DAPP-security-standards/blob/master/README.md",
         "type": "opensource"
       },
       {
-        "id": "hgo4WK-ov_kTJ92Uvdqjp",
         "title": "dApp Security Considerations",
         "url": "https://livebook.manning.com/book/building-ethereum-dapps/chapter-14/",
         "type": "article"
       },
       {
-        "id": "1jzWqp0ZracFXAyAy5qa0",
         "title": "dApp Security:All You Need to Know",
         "url": "https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security",
         "type": "article"
       },
       {
-        "id": "JomZklOwn4Sf6REFYUyvs",
         "title": "Explore top posts about Security",
         "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
         "type": "article"
@@ -2578,7 +2252,6 @@
     "description": "You don't need to write every smart contract in your project from scratch. There are many open source smart contract libraries available that provide reusable building blocks for your project that can save you from having to reinvent the wheel.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Mvt5Cc7CTLyUFLHLqw975",
         "title": "Viem library with great TypeScript support",
         "url": "https://viem.sh",
         "type": "article"
@@ -2590,13 +2263,11 @@
     "description": "The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem. It was originally designed for use with [ethers.io](http://ethers.io) and has since expanded into a more general-purpose library.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "C0nY32cN2ymTN6WF5meD2",
         "title": "Ethers.js Documentation",
         "url": "https://docs.ethers.io/",
         "type": "article"
       },
       {
-        "id": "VyMoqcFwgZPxHUNAvXJ18",
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
@@ -2608,13 +2279,11 @@
     "description": "web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "PCo-Upwb2x1HCs1-l9UZg",
         "title": "web3.js Documentation",
         "url": "https://web3js.readthedocs.io/",
         "type": "article"
       },
       {
-        "id": "EJF3-2QPsfky7t5WlEk3h",
         "title": "Explore top posts about Web3",
         "url": "https://app.daily.dev/tags/web3?ref=roadmapsh",
         "type": "article"
@@ -2626,13 +2295,11 @@
     "description": "A library that gives you access to the powerful Moralis Server backend from your JavaScript app.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "0emnlMJET8ENqlvvkv7CI",
         "title": "Moralis SDK",
         "url": "https://github.com/MoralisWeb3/Moralis-JS-SDK/blob/main/README.md",
         "type": "opensource"
       },
       {
-        "id": "U7SuXo9bQu4ScGHfSevv2",
         "title": "Explore top posts about Moralis",
         "url": "https://app.daily.dev/tags/moralis?ref=roadmapsh",
         "type": "article"
@@ -2649,7 +2316,6 @@
     "description": "Go Ethereum (Geth) is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "L31_pqH_QiGDM9Iivp3iW",
         "title": "Geth Documentation",
         "url": "https://geth.ethereum.org/docs/",
         "type": "article"
@@ -2661,7 +2327,6 @@
     "description": "Besu is an Apache 2.0 licensed, MainNet compatible, Ethereum client written in Java.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "mUFrVO47yWcY40LAOSSwT",
         "title": "Besu Ethereum Client",
         "url": "https://github.com/hyperledger/besu",
         "type": "opensource"
@@ -2673,7 +2338,6 @@
     "description": "Nethermind is a high-performance, highly configurable full Ethereum protocol client built on .NET that runs on Linux, Windows, and macOS, and supports Clique, Aura, Ethash, and Proof-of-Stake consensus algorithms.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "IhYEJ3_2M6J0X5XrN3rq-",
         "title": "Nethermind Documentation",
         "url": "https://docs.nethermind.io/nethermind/",
         "type": "article"
@@ -2685,7 +2349,6 @@
     "description": "Substrate is a Software Development Kit (SDK) specifically designed to provide you with all of the fundamental components s blockchain requires so you can focus on crafting the logic that makes your chain unique and innovative.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "qctjZTrZypuRq0Ihn3QN2",
         "title": "Substrate Documentation",
         "url": "https://docs.substrate.io/quick-start/",
         "type": "article"
@@ -2702,13 +2365,11 @@
     "description": "State channels refer to the process in which users transact with one another directly outside of the blockchain, or ‘off-chain,’ and greatly minimize their use of ‘on-chain’ operations.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "n09Si0qjkFzR4SEP5sUNw",
         "title": "The Basics of State Channels",
         "url": "https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/",
         "type": "article"
       },
       {
-        "id": "xgt-O-y0U4rWItErPYO-P",
         "title": "State Channels: An Introduction to Off-chain Transactions",
         "url": "https://www.talentica.com/blogs/state-channels-an-introduction-to-off-chain-transactions/",
         "type": "article"
@@ -2720,7 +2381,6 @@
     "description": "‍Optimistic rollups are a layer 2 (L2) construction that improves throughput and latency on Ethereum’s base layer by moving computation and data storage off-chain. An optimistic rollup processes transactions outside of Ethereum Mainnet, reducing congestion on the base layer and improving scalability.\n\nOptimistic rollups allow anyone to publish blocks without providing proofs of validity. However, to ensure the chain remains safe, optimistic rollups specify a time window during which anyone can dispute a state transition.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "NIwJEbFHqpVG7G_TC2nqe",
         "title": "How Do Optimistic Rollups Work (The Complete Guide)",
         "url": "https://www.alchemy.com/overviews/optimistic-rollups",
         "type": "article"
@@ -2732,19 +2392,16 @@
     "description": "Zero-knowledge rollups (ZK-rollups) are layer 2 scaling solutions that increase the throughput of a blockchain by moving computation and state-storage off-chain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "HjZe61ItiDAvP3A2z4V5G",
         "title": "Zero-Knowledge Rollups - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/zk-rollups",
         "type": "article"
       },
       {
-        "id": "WekH-C3TLG5qwGWmz64bl",
         "title": "Why and How zk-SNARK Works",
         "url": "https://medium.com/@imolfar/why-and-how-zk-snark-works-1-introduction-the-medium-of-a-proof-d946e931160",
         "type": "article"
       },
       {
-        "id": "y56rOkX4LiGJkFYBeZlGg",
         "title": "Introduction to zk-SNARKs",
         "url": "https://vitalik.eth.limo/general/2021/01/26/snarks.html",
         "type": "article"
@@ -2756,7 +2413,6 @@
     "description": "Validium is a scaling solution that enforces integrity of transactions using validity proofs like ZK-rollups, but doesn’t store transaction data on the Ethereum Mainnet. While off-chain data availability introduces trade-offs, it can lead to massive improvements in scalability\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "p-BJ8WIXGlxBaS3ZzYdge",
         "title": "Validium - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/validium/",
         "type": "article"
@@ -2768,7 +2424,6 @@
     "description": "Plasma is a framework that allows the creation of child blockchains that use the main Ethereum chain as a layer of trust and arbitration. In Plasma, child chains can be designed to meet the requirements of specific use cases, specifically those that are not currently feasible on Ethereum.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "1oQ0J1w54codx1QJIpRw4",
         "title": "Plasma Chains - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/plasma/",
         "type": "article"
@@ -2780,13 +2435,11 @@
     "description": "A sidechain is a separate blockchain network that connects to another blockchain – called a parent blockchain or mainnet – via a two-way peg.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "JQIUI6iYKaRLamjnHPAGO",
         "title": "Sidechains - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/sidechains/",
         "type": "article"
       },
       {
-        "id": "t15wk-io-R_RXwHQ4rC3h",
         "title": "An Introduction to Sidechains",
         "url": "https://www.coindesk.com/learn/an-introduction-to-sidechains",
         "type": "article"
@@ -2798,19 +2451,16 @@
     "description": "Ethereum 2.0 marks a long-anticipated upgrade to the Ethereum public mainnet. Designed to accelerate Ethereum’s usage and adoption by improving its performance, Ethereum 2.0 implements Proof of Stake.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "igFVhxjNzJq81STQUI7W9",
         "title": "What Is Ethereum 2.0?",
         "url": "https://consensys.net/blog/blockchain-explained/what-is-ethereum-2/",
         "type": "article"
       },
       {
-        "id": "9BVuPyoHLobUcRHW5wO5R",
         "title": "What Is Ethereum 2.0? Understanding The Merge",
         "url": "https://www.forbes.com/advisor/investing/cryptocurrency/ethereum-2/",
         "type": "article"
       },
       {
-        "id": "cWJ8C7RzCl8MtFcAd7Zar",
         "title": "Explore top posts about Ethereum",
         "url": "https://app.daily.dev/tags/ethereum?ref=roadmapsh",
         "type": "article"
@@ -2822,7 +2472,6 @@
     "description": "On-chain scaling refers to any direct modification made to a blockchain, like data sharding and execution sharding in the incoming version of Ethereum 2.0. Another type of on-chain scaling would be a sidechain with two-way bridge to Ethereum, like Polygon.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "WoMRQrLeDdmYvQhc3aSJv",
         "title": "Scaling - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/",
         "type": "article"
@@ -2834,31 +2483,26 @@
     "description": "The nature of blockchain allows for trustless systems to be built on top of it. Users don’t rely on a centralized group of people, such as a bank, to make decisions and allow transactions to flow through. Because the system is decentralized, users know that transactions will never be denied for non-custodial reasons.\n\nThis decentralization enables use-cases that were previously impossible, such as parametric insurance, decentralized finance, and decentralized organizations (DAOs), among a few. This allows developers to build products that provide immediate value without having to go through a bureaucratic process of applications, approvals, and general red tape.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "RAM1ov6JJXYYtYHtYgsYZ",
         "title": "Why Blockchain?",
         "url": "https://chain.link/education-hub/blockchain",
         "type": "article"
       },
       {
-        "id": "0OLvALwRuXpcbBnNw0I1c",
         "title": "What Is The Blockchain And Why Does It Matter?",
         "url": "https://www.forbes.com/sites/theyec/2020/05/18/what-is-the-blockchain-and-why-does-it-matter/",
         "type": "article"
       },
       {
-        "id": "upHL9xvPw38D7S4PVdDNK",
         "title": "Web3/Crypto: Why Bother?",
         "url": "https://continuations.com/post/671863718643105792/web3crypto-why-bother",
         "type": "article"
       },
       {
-        "id": "EXbNuRNPtKK_gGFtU-IGI",
         "title": "Why is Blockchain Important and Why Does it Matter",
         "url": "https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important",
         "type": "article"
       },
       {
-        "id": "8Q2Wij0fGca7cpgfkDWLI",
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
@@ -2870,25 +2514,21 @@
     "description": "Unlike a centralized server operated by a single company or organization, decentralized storage systems consist of a peer-to-peer network of user-operators who hold a portion of the overall data, creating a resilient file storage sharing system.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "LzJocayvHg74CqBS6jF8_",
         "title": "Blockchain Storage",
         "url": "https://www.techtarget.com/searchstorage/definition/blockchain-storage",
         "type": "article"
       },
       {
-        "id": "UugTlB9kwbaqgS8Ggglwx",
         "title": "Decentralized Storage",
         "url": "https://ethereum.org/en/developers/docs/storage/",
         "type": "article"
       },
       {
-        "id": "2ex8M7ABKHgx1Q7SPExPM",
         "title": "How IPFS works",
         "url": "https://docs.ipfs.tech/concepts/how-ipfs-works/",
         "type": "article"
       },
       {
-        "id": "8syJrogks_2lYXT_BR_Di",
         "title": "Explore top posts about Storage",
         "url": "https://app.daily.dev/tags/storage?ref=roadmapsh",
         "type": "article"

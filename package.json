@@ -25,7 +25,7 @@
     "generate:og": "node ./scripts/generate-og-images.mjs",
     "warm:urls": "sh ./scripts/warm-urls.sh https://roadmap.sh/sitemap-0.xml",
     "compress:images": "tsx ./scripts/compress-images.ts",
-    "generate:content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
+    "generate:roadmap-content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {

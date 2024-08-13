@@ -1,4 +1,4 @@
-name: Update roadmap content
+name: Refreshes roadmap content JSON
 
 on:
   workflow_dispatch: # allow manual run
@@ -19,7 +19,7 @@ jobs:
       - name: Upgrade dependencies
         run: |
           pnpm install
-          npm run generate:content-json
+          npm run generate:roadmap-content-json
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
@@ -33,5 +33,5 @@ jobs:
           commit-message: "chore: update roadmap content json"
           title: "Update roadmap content json"
           body: |
-            Updates the roadmap content json file.
+            Updates the roadmap content JSON files in the `public` folder.
             Please review the changes and merge if everything looks good.

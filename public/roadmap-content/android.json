@@ -9,19 +9,16 @@
     "description": "`Kotlin` is a cross-platform, statically typed general-purpose programming language with type inference. Developed by JetBrains, the makers of the world’s leading IDEs, Kotlin has a syntax, which is more expressive and concise. This allows for more readable and maintainable code. It is fully interoperable with Java and comes with no limitations. It can be used almost everywhere Java is used today, for server-side development, Android apps, and much more. Kotlin introduces several improvements for programmers over Java, which makes it a preferred choice for many developers. With more concise code base and modern programming concept support - it's certainly a future of Android app development.\n\nUse following resources to learn more:",
     "links": [
       {
-        "id": "auN237Wb41CE9BdxOFh1_",
         "title": "Learn Kotlin - w3schools",
         "url": "https://www.w3schools.com/kotlin/",
         "type": "article"
       },
       {
-        "id": "lvT49TdCc14jPJU73Fcvw",
         "title": "Explore top posts about Kotlin",
         "url": "https://app.daily.dev/tags/kotlin?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "9ahUqQ4TqsKoRiA07HRXC",
         "title": "Learn Kotlin Programming for Beginners - Free Code Camp",
         "url": "https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1",
         "type": "video"
@@ -63,25 +60,21 @@
     "description": "**Using Gradle**: Gradle is a powerful build system used in Android development that allows you to define your project and dependencies, and distinguish between different build types and flavors. Gradle uses a domain-specific language (DSL) which gives developers almost complete control over the build process. When you trigger a build in Android Studio, Gradle is the tool working behind the scenes to compile and package your app. It looks at the dependencies you declared in your build.gradle files and create a build script accordingly. Using Gradle in Android development requires continuous editing of the build.gradle files to manage app dependencies, build variants, signing configurations, and other essential aspects related to building your app.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "_vffeylwVeR7TwMhZ2sEC",
         "title": "Get going with Gradle - PDF",
         "url": "https://assets.gradlehero.com/get-going-with-gradle/get-going-with-gradle-book.pdf",
         "type": "article"
       },
       {
-        "id": "oihoPmTbQvFDc9CpCElhm",
         "title": "Explore top posts about Gradle",
         "url": "https://app.daily.dev/tags/gradle?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "kecefTUJXuykZV5R6OPnj",
         "title": "Introduction to Gradle for Complete Beginners - 25minutes",
         "url": "https://youtu.be/-dtcEMLNmn0?si=NuIP-3wNpUrxfTxA",
         "type": "video"
       },
       {
-        "id": "f4duWmvF9HjxwVEi5VDMV",
         "title": "Gradle Course for Beginners - 55minutes",
         "url": "https://www.youtube.com/watch?v=R6Z-Sxb837I",
         "type": "video"
@@ -93,7 +86,6 @@
     "description": "The \"Hello World\" app is a simple project that you can build when you're getting started with Android development. It's often the first program that beginners learn to build in a new system. It's usually considered the simplest form of program that displays a message to the user - \"Hello, World!\" In Android, this involves creating a new project from the Android Studio and setting up the main activity. The main activity file is primarily written in Java or Kotlin where you can code for the display message, while the layout design view can be created in the XML file.\n\nResources:",
     "links": [
       {
-        "id": "KU8REJJSGwAfvOXpR4_ZS",
         "title": "Create your first android app",
         "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app",
         "type": "article"
@@ -215,7 +207,6 @@
     "description": "RecyclerView is the most commonly used and powerful list management tool in Android development. Witch makes it easy to efficiently display large sets of data. You supply the data and define how each item looks, and the RecyclerView library dynamically creates the elements when they're needed.\n\nAs the name implies, RecyclerView recycles those individual elements. When an item scrolls off the screen, RecyclerView doesn't destroy its view. Instead, RecyclerView reuses the view for new items that have scrolled onscreen. RecyclerView improves performance and your app's responsiveness, and it reduces power consumption.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "vnphidg-J7tyhlz8SS1Yv",
         "title": "Android Developers: Create dynamic lists with RecyclerView",
         "url": "https://developer.android.com/develop/ui/views/layout/recyclerview",
         "type": "article"
@@ -287,13 +278,11 @@
     "description": "`Jetpack Compose` is a modern toolkit for building native Android UI. It simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs. `Jetpack Compose` offers a declarative approach to designing UI, where you can simply describe what your UI should look like at any given point of your app’s state, and `Compose` takes care of updating the view hierarchy, making UI development more efficient. It also integrates well with existing Android apps, letting you adopt its benefits at your own pace.",
     "links": [
       {
-        "id": "wF5dwrngZ_ZWdm_AI2xa8",
         "title": "Explore top posts about Jetpack Compose",
         "url": "https://app.daily.dev/tags/jetpack-compose?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "wmP7fm3bbaAAIqhMvSd3B",
         "title": "Jetpack Compose Crash Course",
         "url": "https://www.youtube.com/watch?v=6_wK_Ud8--0",
         "type": "video"

@@ -4,13 +4,11 @@
     "description": "Basic IT skills are the foundation for understanding and navigating the digital world, as well as playing a crucial role in cyber security. Given below are some essential IT skills that will help you enhance your experience with technology and better protect your digital assets.\n\nComputer Navigation\n-------------------\n\nUnderstanding how to navigate a computer's operating system is a vital skill. This includes knowing how to:\n\n*   Power on/off the device\n*   Manage files and folders\n*   Use shortcuts and right-click options\n*   Install and uninstall software\n*   Customize settings\n\nInternet Usage\n--------------\n\nHaving a working knowledge of how to navigate the internet will allow you to access information and resources more efficiently. Key skills include:\n\n*   Web browsing\n*   Internet searching\n*   Bookmark management\n*   Downloading files\n*   Understanding hyperlinks and web addresses\n*   Recognizing secure websites\n\nEmail Management\n----------------\n\nCommunication using email is an essential aspect of the modern digital world. Important email management skills are:\n\n*   Creating and organizing contacts\n*   Composing, sending, and receiving emails\n*   Detecting and avoiding spam and phishing emails\n*   Managing email attachments\n*   Understanding email etiquette\n\nWord Processing\n---------------\n\nWord processing is a basic IT skill that is useful in both personal and professional environments. Skills related to word processing include:\n\n*   Formatting text (font, size, bold, italic, etc.)\n*   Creating and editing documents\n*   Copying and pasting text\n*   Inserting images and tables\n*   Saving and printing documents\n\nSoftware and Application Installation\n-------------------------------------\n\nBeing able to install and manage software can make your experience with technology more efficient and tailored to your needs. Basic software-related skills include:\n\n*   Identifying reliable sources for downloading software\n*   Installing and updating applications\n*   Uninstalling unwanted or unnecessary programs\n*   Configuring applications according to your preferences\n*   Updating software to prevent vulnerabilities\n\nDigital Security Awareness\n--------------------------\n\nAs the digital world is constantly evolving, so too are cyber threats. Therefore, remaining vigilant and familiarizing yourself with common cyber security practices is crucial. Some fundamental digital security skills include:\n\n*   Creating strong, unique passwords\n*   Ensuring a secure and updated Wi-Fi connection\n*   Recognizing and avoiding phishing attempts\n*   Keeping software and operating systems updated\n*   Regularly backing up data\n\nBy honing these basic IT skills, you will be better prepared to navigate and protect your digital life, as well as making the most of the technology at your fingertips.",
     "links": [
       {
-        "id": "cWtux1k0ntGlidq0fqm8n",
         "title": "Explore top posts about Career",
         "url": "https://app.daily.dev/tags/career?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "MO7jFBCf063fYXVu82_9E",
         "title": "IT skills Training for beginners | Complete Course",
         "url": "https://www.youtube.com/watch?v=On6dsIp5yw0",
         "type": "video"
@@ -22,13 +20,11 @@
     "description": "When it comes to understanding basic IT skills, one cannot overlook the importance of familiarizing yourself with the essential computer hardware components. These are the physical parts that make up a computer system, and understanding their functions will help you troubleshoot issues and maintain your device better. Here's a brief overview of some of the primary computer hardware components:\n\nCentral Processing Unit (CPU)\n-----------------------------\n\nThe CPU serves as the heart and brain of a computer. It performs all the processing inside the computer and is responsible for executing instructions, performing calculations, and managing the flow of data.\n\n**Key Points:**\n\n*   Considered the \"brain\" of the computer.\n*   Performs all the major processes and calculations.\n\nMotherboard\n-----------\n\nThe motherboard is the main circuit board that connects all components of the computer. It provides a central hub for communication between the CPU, memory, and other hardware components.\n\n**Key Points:**\n\n*   Connects all other hardware components.\n*   Allows components to communicate with each other.\n\nMemory (RAM)\n------------\n\nRandom Access Memory (RAM) is where data is temporarily stored while the computer is powered on. The data is constantly accessed, written, and rewritten by the CPU. The more RAM a system has, the more tasks it can process simultaneously.\n\n**Key Points:**\n\n*   Temporary storage for data while the computer is on.\n*   More RAM allows for better multitasking.\n\nStorage (Hard Drives)\n---------------------\n\nStorage devices like hard disk drives (HDD) or solid-state drives (SSD) are used to store data permanently on the computer, even when the device is powered off. Operating systems, software, and user files are stored on these drives.\n\n**Key Points:**\n\n*   Permanent storage for data.\n*   Comes in HDD and SSD types, with SSDs being faster but more expensive.\n\nGraphics Processing Unit (GPU)\n------------------------------\n\nThe GPU is responsible for rendering images, videos, and animations on the computer screen. Its main function is to handle and display graphics, making your visuals smooth and responsive.\n\n**Key Points:**\n\n*   Handles and processes graphics and visuals.\n*   Important for gaming, video editing, and graphic design tasks.\n\nPower Supply Unit (PSU)\n-----------------------\n\nThe power supply unit provides the necessary power to all components in the computer. It converts the AC power from the wall socket into the DC power that the computer's components require.\n\n**Key Points:**\n\n*   Provides power to all computer components.\n*   Converts AC power to DC power.\n\nInput/Output Devices\n--------------------\n\nInput devices, such as a mouse, keyboard, or scanner, are used to interact with and input data into the computer. Output devices, like the display monitor and speakers, present information and data in a format we can understand.\n\n**Key Points:**\n\n*   Input devices allow users to interact with the computer.\n*   Output devices present information to the user.\n\nBy understanding these essential computer hardware components, you can enhance your knowledge of how a computer functions and improve your IT troubleshooting and maintenance skills. Happy computing!",
     "links": [
       {
-        "id": "B-e-3r8nPpJreGn_dAfZn",
         "title": "Explore top posts about Hardware",
         "url": "https://app.daily.dev/tags/hardware?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "qaghZSZS3c3oI5WaiP8cZ",
         "title": "What does what in your computer? Computer parts Explained",
         "url": "https://youtu.be/ExxFxD4OSZ0",
         "type": "video"
@@ -40,13 +36,11 @@
     "description": "In the realm of cyber security, understanding various connection types is crucial in maintaining a secure network environment. This section will provide you with an overview of different connection types commonly encountered in IT and their impact on security.\n\nWired Connections\n-----------------\n\nEthernet is the most widespread and commonly used wired connection type. It provides a secure, high-speed data transmission between devices, such as computers, routers, and switches, using Category 5 (Cat5) or higher cables. Ethernet connections are generally considered more reliable and secure compared to wireless connections because they are less vulnerable to interference and unauthorized access.\n\nUSB (Universal Serial Bus)\n--------------------------\n\nUSB is a popular connection type, primarily used for connecting peripheral devices such as keyboards, mice, and storage devices to computers. While USB provides a convenient way of expanding a computer's functionality, it also poses security risks. Using untrusted USB devices can lead to the spread of malware, making it essential to ensure that only trusted devices are connected to your system.\n\nWireless Connections\n--------------------\n\nWi-Fi is the most prevalent wireless connection type, allowing devices to connect to the internet and each other without the need for physical cables. Although Wi-Fi provides greater flexibility and mobility, it introduces additional security risks. To minimize these risks, always use encryption (preferably WPA3 or WPA2), strong passwords, and update your router's firmware regularly.\n\nBluetooth\n---------\n\nBluetooth is another widely used wireless connection type, primarily designed for short-range communication between devices such as smartphones, speakers, and headsets. While Bluetooth offers convenience, it can also be susceptible to attacks, such as Bluesnarfing and Bluejacking. To mitigate these risks, keep your devices updated, use Bluetooth 4.0 or higher, and disable Bluetooth when not in use.\n\nNetwork Connections\n-------------------\n\nA VPN is a secure tunnel that creates a private network connection over a public network (such as the internet) by encrypting data transfers between devices. VPNs help protect sensitive information from being intercepted by unauthorized parties and are especially useful when accessing public Wi-Fi hotspots. Always use trusted VPN providers to ensure your data remains encrypted and private.\n\nPeer-to-Peer (P2P)\n------------------\n\nP2P is a decentralized connection type where devices connect directly with each other, without the need for a central server. P2P is commonly used for file-sharing services and can pose significant security risks if utilized without adequate security measures in place. To minimize risks, avoid using untrusted P2P services and refrain from sharing sensitive information on such networks.\n\nIn summary, understanding and managing different connection types is an essential aspect of cyber security. By using secure connections and taking preventive measures, you can reduce the risk of unauthorized access, data breaches, and other malicious activities.",
     "links": [
       {
-        "id": "-Rx-gFZe1VlzU7fSzVcH7",
         "title": "Connection & Service Types Pt. 1",
         "url": "https://youtu.be/TzEMiD2mc-Q",
         "type": "video"
       },
       {
-        "id": "FTsF_5MszC9ALrPT1lWJs",
         "title": "Connection & Services Types Pt. 2 ",
         "url": "https://youtu.be/4N3M1aKzoyQ",
         "type": "video"
@@ -58,13 +52,11 @@
     "description": "OS-independent troubleshooting techniques are essential for every cybersecurity professional since they allow you to effectively diagnose and resolve issues on any operating system (OS). By using these OS-agnostic skills, you can quickly resolve problems and minimize downtime.\n\nUnderstanding Common Symptoms\n-----------------------------\n\nIn order to troubleshoot effectively, it is important to recognize and understand the common symptoms encountered in IT systems. These can range from hardware-related issues, such as overheating or physical damage, to software-related problems, such as slow performance or unresponsiveness.\n\nBasic Troubleshooting Process\n-----------------------------\n\nFollowing a systematic troubleshooting process is critical, regardless of the operating system. Here are the basic steps you might follow:\n\n*   **Identify the problem**: Gather information on the issue and its symptoms, and attempt to reproduce the problem, if possible. Take note of any error messages or unusual behaviors.\n*   **Research and analyze**: Search for potential causes and remedies on relevant forums, web resources, or vendor documentation.\n*   **Develop a plan**: Formulate a strategy to resolve the issue, considering the least disruptive approach first, where possible.\n*   **Test and implement**: Execute the proposed solution(s) and verify if the problem is resolved. If not, repeat the troubleshooting process with a new plan until the issue is fixed.\n*   **Document the process and findings**: Record the steps taken, solutions implemented, and results to foster learning and improve future troubleshooting efforts.\n\nIsolating the Problem\n---------------------\n\nTo pinpoint the root cause of an issue, it's important to isolate the problem. You can perform this by:\n\n*   **Disabling or isolating hardware components**: Disconnect any peripherals or external devices, then reconnect and test them one by one to identify the defective component(s).\n*   **Checking resource usage**: Utilize built-in or third-party tools to monitor resource usage (e.g., CPU, memory, and disk) to determine whether a bottleneck is causing the problem.\n*   **Verifying software configurations**: Analyze the configuration files or settings for any software or applications that could be contributing to the problem.\n\nNetworking and Connectivity Issues\n----------------------------------\n\nEffective troubleshooting of network-related issues requires an understanding of various protocols, tools, and devices involved in networking. Here are some basic steps you can follow:\n\n*   **Verify physical connectivity**: Inspect cables, connectors, and devices to ensure all components are securely connected and functioning correctly.\n*   **Confirm IP configurations**: Check the system's IP address and related settings to ensure it has a valid IP configuration.\n*   **Test network services**: Use command-line tools, such as `ping` and `traceroute` (or `tracert` in Windows), to test network connections and diagnose potential problems.\n\nLog Analysis\n------------\n\nLogs are records of system events, application behavior, and user activity, which can be invaluable when troubleshooting issues. To effectively analyze logs, you should:\n\n*   **Identify relevant logs**: Determine which log files contain information related to the problem under investigation.\n*   **Analyze log content**: Examine events, error messages, or patterns that might shed light on the root cause of the issue.\n*   **Leverage log-analysis tools**: Utilize specialized tools or scripts to help parse, filter, and analyze large or complex log files.\n\nIn conclusion, developing OS-independent troubleshooting skills allows you to effectively diagnose and resolve issues on any system. By following a structured approach, understanding common symptoms, and utilizing the appropriate tools, you can minimize downtime and maintain the security and efficiency of your organization's IT systems.",
     "links": [
       {
-        "id": "_nxSddepoeRRHpfJQ19qT",
         "title": "How to identify 9 signs of Operating System.",
         "url": "https://bro4u.com/blog/how-to-identify-9-signs-of-operating-system",
         "type": "article"
       },
       {
-        "id": "byyy3nGx6EcXIvX7_r2V6",
         "title": "Trouble shooting guide",
         "url": "https://cdnsm5-ss6.sharpschool.com/userfiles/servers/server_20856499/file/teacher%20pages/lindsay%20dolezal/it%20essentials/5.6.pdf",
         "type": "article"
@@ -81,19 +73,16 @@
     "description": "Computer networking refers to the practice of connecting two or more computing devices, creating an infrastructure in which they can exchange data, resources, and software. It is a fundamental part of cyber security and IT skills. In this chapter, we will cover five aspects of computer networking, including networking devices, network types, network protocols, IP addresses, and the OSI model.\n\nNetworking Devices\n------------------\n\nSeveral devices enable and facilitate communication between different devices. Common networking devices include:\n\n*   **Hubs**: Devices that connect different devices together, transmitting data packets to all devices on the network.\n*   **Switches**: Similar to hubs, but transmit data packets only to specific devices instead of broadcasting to all.\n*   **Routers**: Devices that direct data packets between networks and provide the best path for data packets to reach their destination.\n*   **Firewalls**: Devices or software that monitor and filter incoming and outgoing network traffic, allowing only authorized data to pass through.\n\nNetwork Types\n-------------\n\nThere are various types of networks based on the distance they cover, and the number of devices they connect. A few common network types are:\n\n*   **Personal Area Network (PAN)**: Connects devices within an individual workspace, typically within a range of 10 meters.\n*   **Local Area Network (LAN)**: Covers a small geographical area, such as a home or office, connecting multiple computers and other devices.\n*   **Wide Area Network (WAN)**: Covers a larger geographical area, interconnecting different LANs, often using leased telecommunication lines or wireless links.\n*   **Virtual Private Network (VPN)**: A secure network established over the public internet, encrypting the data transferred and restricting access to authorized users only.\n\nNetwork Protocols\n-----------------\n\nProtocols are sets of rules that govern the communication between devices within a network. Some of the most common protocols include:\n\n*   **Transmission Control Protocol (TCP)**: Ensures the reliable transmission of data and establishes connections between devices.\n*   **Internet Protocol (IP)**: Facilitates the transmission of data packets, assigning unique IP addresses to identify devices.\n*   **User Datagram Protocol (UDP)**: A lightweight, fast, but less reliable protocol compared to TCP, often used for streaming and gaming applications.\n\nIP Addresses\n------------\n\nAn IP address is a unique identifier assigned to every device in a network. There are two types of IP addresses:\n\n*   **IPv4**: Uses a 32-bit addressing system, allowing for approximately 4.3 billion unique IP addresses.\n*   **IPv6**: Uses a 128-bit addressing system, providing a significantly larger number of available IP addresses.\n\nIP addresses can also be categorized as dynamic or static, depending on whether they change over time or remain constant for a device.\n\nOSI Model\n---------\n\nThe Open Systems Interconnection (OSI) model is a conceptual framework used to understand and describe how different network protocols interact. It divides networking functions into seven distinct layers:\n\n*   **Physical Layer**: Deals with the physical connection between devices, including cabling and hardware.\n*   **Data Link Layer**: Handles the communication between adjacent devices on the same network.\n*   **Network Layer**: Identifies the best route for data packets and manages IP addresses.\n*   **Transport Layer**: Ensures the reliable transmission of data, including error checking and flow control.\n*   **Session Layer**: Establishes, maintains, and terminates connections between applications on different devices.\n*   **Presentation Layer**: Translates data into a format that is suitable for transmission between devices.\n*   **Application Layer**: Represents the user interface with which applications interact.\n\nMastering the basics of computer networking is key to understanding and implementing effective cyber security measures. This chapter has covered essential networking concepts, but it is important to continually expand your knowledge in this ever-evolving field.",
     "links": [
       {
-        "id": "sXngByzH4Cuonw9Wshtkm",
         "title": "What is Computer Networking?",
         "url": "https://tryhackme.com/room/whatisnetworking",
         "type": "article"
       },
       {
-        "id": "6FU7rqXoXUWpXwmd-3BC1",
         "title": "Explore top posts about Networking",
         "url": "https://app.daily.dev/tags/networking?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "m2G4rz-i9OtxAop-GFrA5",
         "title": "Learn Networking in 3 hours (basics for cybersecurity and DevOps)",
         "url": "https://www.youtube.com/watch?v=iSOfkw_YyOU&t=1549s",
         "type": "video"
@@ -105,19 +94,16 @@
     "description": "**Near Field Communication**, or **NFC**, is a short-range wireless communication technology that enables devices to interact with each other within a close proximity, typically within a few centimeters. It operates at a frequency of 13.56 MHz and can be used for various applications, such as contactless payment systems, secure access control, and data sharing between devices like smartphones, tablets, and other compatible gadgets.\n\nHow NFC works\n-------------\n\nWhen two NFC-enabled devices are brought close to each other, a connection is established, and they can exchange data with each other. This communication is enabled through _NFC Tags_ and _NFC Readers_. NFC Tags are small integrated circuits that store and transmit data, while NFC Readers are devices capable of reading the data stored in NFC Tags.\n\nNFC Modes\n---------\n\nNFC operates primarily in three modes:\n\n*   **Reader/Writer Mode**: This mode enables the NFC device to read or write data from or to NFC Tags. For example, you can scan an NFC Tag on a poster to access more information about a product or service.\n*   **Peer-to-Peer Mode**: This mode allows two NFC-enabled devices to exchange information directly. Examples include sharing data such as contact information, photos, or connecting devices for multiplayer gaming.\n*   **Card Emulation Mode**: This mode allows an NFC device to act like a smart card or access card, enabling contactless payment and secure access control applications.\n\nSecurity Concerns\n-----------------\n\nWhile NFC brings convenience through its numerous applications, it also poses security risks, and it's essential to be aware of these. Some possible concerns include:\n\n*   **Eavesdropping**: Attackers can potentially intercept data exchange between NFC devices if they manage to get into the communication range.\n*   **Data manipulation**: Attackers might alter or manipulate the data exchanged between the devices.\n*   **Unauthorized access**: An attacker can potentially exploit a vulnerability in your device, and gain unauthorized access to sensitive information.\n\nSecurity Best Practices\n-----------------------\n\nTo minimize the risks associated with NFC, follow these best practices:\n\n*   Keep your device's firmware and applications updated to minimize known vulnerabilities.\n*   Use strong and unique passwords for secure NFC applications and services.\n*   Turn off NFC when not in use to prevent unauthorized access.\n*   Be cautious when scanning unknown NFC Tags and interacting with unfamiliar devices.\n*   Ensure you're using trusted and secure apps to handle your NFC transactions.\n\nIn conclusion, understanding the basics of NFC and adhering to security best practices will help ensure that you can safely and effectively use this innovative technology.",
     "links": [
       {
-        "id": "rXlHHdayhLAkei5rNMPFa",
         "title": "The Beginner's Guide to NFCs",
         "url": "https://www.spiceworks.com/tech/networking/articles/what-is-near-field-communication/",
         "type": "article"
       },
       {
-        "id": "XH1X3rxMoCDtA_jPaqCgN",
         "title": "NFC Guide: All You Need to Know About Near Field Communication",
         "url": "https://squareup.com/us/en/the-bottom-line/managing-your-finances/nfc",
         "type": "article"
       },
       {
-        "id": "dbx_7JG7vRU-0yKKQu07N",
         "title": "NFC Explained: What is NFC? How NFC Works? Applications of NFC",
         "url": "https://youtu.be/eWPtt2hLnJk",
         "type": "video"
@@ -129,13 +115,11 @@
     "description": "**WiFi** stands for \"wireless fidelity\" and is a popular way to connect to the internet without the need for physical cables. It uses radio frequency (RF) technology to communicate between devices, such as routers, computers, tablets, smartphones, and other hardware.\n\nAdvantages of WiFi\n------------------\n\nWiFi has several advantages over wired connections, including:\n\n*   **Convenience**: Users can access the internet from anywhere within the WiFi signal's range, providing flexibility and mobility.\n    \n*   **Easy Setup**: WiFi devices connect to the internet simply by entering a password once, without the need for any additional cables or adapters.\n    \n*   **Scalability**: WiFi networks can easily expand to accommodate additional devices without the need for significant infrastructure changes.\n    \n\nSecurity Risks and WiFi Threats\n-------------------------------\n\nDespite its numerous benefits, WiFi also brings potential security risks. Some common threats include:\n\n*   **Eavesdropping**: Hackers can intercept data transmitted over a WiFi connection, potentially accessing sensitive information such as personal or financial details.\n    \n*   **Rogue access points**: An unauthorized user could set up a fake WiFi network that appears legitimate, tricking users into connecting and providing access to their devices.\n    \n*   **Man-in-the-middle attacks**: An attacker intercepts data transmission between your device and the WiFi network, potentially altering data or injecting malware.\n    \n\nBest Practices for Secure WiFi Connections\n------------------------------------------\n\nTo protect yourself and your devices, follow these best practices:\n\n*   **Use strong encryption**: Ensure your WiFi network uses the latest available encryption standards, such as WPA3 or, at minimum, WPA2.\n    \n*   **Change default credentials**: Change the default username and password for your WiFi router to prevent unauthorized access and configuration.\n    \n*   **Keep your router firmware up to date**: Regularly check for and install any available firmware updates to prevent potential security vulnerabilities.\n    \n*   **Create a guest network**: If you have visitors or clients, set up a separate guest network for them to use. This ensures your primary network remains secure.\n    \n*   **Disable WiFi Protected Setup (WPS)**: Although WPS can simplify the connection process, it may also create security vulnerabilities. Disabling it forces users to connect via the more secure password method.\n    \n*   **Use a Virtual Private Network (VPN)**: Connect to the internet using a VPN, which provides a secure, encrypted tunnel for data transmission.\n    \n\nBy understanding the potential security risks associated with WiFi connections and following these best practices, you can enjoy the convenience, flexibility, and mobility of WiFi while ensuring a secure browsing experience.",
     "links": [
       {
-        "id": "YkeCatz8N5GfQvYbjh7qL",
         "title": "Wireless Networks - Howstuffworks",
         "url": "https://computer.howstuffworks.com/wireless-network.htm",
         "type": "article"
       },
       {
-        "id": "Wzol4N-1veCQ-9VrdS7AJ",
         "title": "That's How Wi-Fi Works",
         "url": "https://youtu.be/hePLDVbULZc",
         "type": "video"
@@ -147,19 +131,16 @@
     "description": "**Bluetooth** is a wireless technology used to transfer data between devices over short distances. It operates in the 2.4 GHz frequency band and offers a reasonably secure means of communication between devices like smartphones, computers, headphones, and more.\n\nBelow are some key points about Bluetooth:\n\n*   **Short-range communication**: Bluetooth typically works within a radius of 10 meters (33 feet), giving it a significant advantage in terms of power consumption when compared to other wireless technologies such as Wi-Fi. The short range also reduces the chances of interference between devices.\n    \n*   **Low power consumption**: Bluetooth devices are designed to use relatively low power compared to other wireless technologies. This aspect contributes to their widespread adoption in battery-powered devices like wearable gadgets and IoT sensors.\n    \n*   **Convenience**: Bluetooth allows for easy, automatic connection between devices once they have been paired. This 'pair and play' functionality ensures users can quickly establish connectivity between their devices with minimal effort.\n    \n*   **Security**: Bluetooth includes security features like encryption and authentication, which ensure secure communication between paired devices. However, users must remain vigilant in terms of keeping their devices up-to-date with the latest Bluetooth security patches and protocols.\n    \n*   **Potential vulnerabilities**: Despite its built-in security measures, Bluetooth is not immune to cyber attacks. Some common risks include \"bluejacking\" (unauthorized sending of messages or files), \"bluesnarfing\" (unauthorized access to device data), and \"BlueBorne\" (an attack vector that exploits Bluetooth connections to infiltrate devices and spread malware). Users should be cautious in their usage of Bluetooth and follow best practices like not accepting unknown connection requests and turning off Bluetooth when not in use.\n    \n\nIn conclusion, Bluetooth offers a convenient means of connecting devices wirelessly. While it provides reasonably secure communication, users must stay informed about potential vulnerabilities and follow good security practices to safeguard their devices.",
     "links": [
       {
-        "id": "IkzmpZwGVoiRhLaadLCwx",
         "title": "Bluetooth security risks to know (and how to avoid them)",
         "url": "https://us.norton.com/blog/mobile/bluetooth-security",
         "type": "article"
       },
       {
-        "id": "ot9a7vjCB2AhW1fiy95PN",
         "title": "Bluetooth security best practices from official website",
         "url": "https://www.bluetooth.com/learn-about-bluetooth/key-attributes/bluetooth-security/",
         "type": "article"
       },
       {
-        "id": "AXhaU7nXSbya1c2GmHGkN",
         "title": "Explore top posts about Bluetooth",
         "url": "https://app.daily.dev/tags/bluetooth?ref=roadmapsh",
         "type": "article"
@@ -176,7 +157,6 @@
     "description": "iCloud is a cloud storage and cloud computing service provided by Apple Inc. It allows users to store data, such as documents, photos, and music, on remote servers and synchronize them across their Apple devices, including iPhones, iPads, and MacBooks.\n\nFeatures and Benefits\n---------------------\n\niCloud offers a range of features and benefits that enhance the user experience and improve security. Here are some key aspects of the service:\n\n*   **iCloud Storage**: Users are provided with 5 GB of free storage space on iCloud, and they can upgrade to higher plans (50 GB, 200 GB, or 2 TB) for an additional cost. This storage can be used for documents, photos, videos, backups, and app data.\n    \n*   **iCloud Backup**: iCloud automatically backs up essential data from iOS devices when they are connected to Wi-Fi and charging. This includes app data, device settings, messages, and much more. In case of device loss or replacement, users can restore the backup to the new device.\n    \n*   **iCloud Photos**: This feature allows users to automatically upload and store their photos and videos on iCloud, making them accessible across all their devices. iCloud also syncs edits, deletions, and album organization, ensuring that the photo library stays updated across all devices.\n    \n*   **Find My**: This service helps users locate their lost Apple devices using their iCloud account on another device. It also offers features like remote device lock and erase, ensuring that user data remains secure even if the device cannot be recovered.\n    \n*   **iCloud Drive**: Users can store documents and files of various types in iCloud Drive, making them accessible from all devices. This feature is built into the Mac Finder and can also be accessed via the Files app on iOS devices or the iCloud website.\n    \n*   **App-specific Data Sync**: Many apps can make use of iCloud to sync their data across devices. This enables a seamless experience, ensuring that users can pick up where they left off regardless of the device they are using.\n    \n\nSecurity\n--------\n\nApple takes the security of iCloud very seriously and has implemented multiple layers of protection to keep user data safe. Some of these measures include:\n\n*   **Encryption**: Data stored on iCloud is encrypted during transit and on the server. Photos, documents, and other data are secured using a minimum of 128-bit AES encryption.\n*   **Two-Factor Authentication (2FA)**: Users can enable 2FA for their Apple ID to add an extra layer of security. This requires an additional verification step (such as entering a code received on a trusted device) when signing into iCloud or any Apple service.\n*   **Secure Tokens**: Apple uses secure tokens for authentication, which means that your iCloud password is not stored on your devices or on Apple's servers.\n\nOverall, iCloud is a convenient and secure way for Apple device users to store and synchronize their data across devices. This cloud-based service offers numerous features to ensure seamless access and enhanced protection for user data.",
     "links": [
       {
-        "id": "hOcSd2MCTlbDrVlNoYOYV",
         "title": "All about iCloud",
         "url": "https://www.intego.com/mac-security-blog/everything-you-can-do-with-icloud-the-complete-guide/",
         "type": "article"
@@ -198,19 +178,16 @@
     "description": "Hack The Box (HTB) is a popular online platform designed for security enthusiasts, penetration testers, and ethical hackers to develop and enhance their skills by engaging in real-world cybersecurity challenges. The platform provides a wide array of virtual machines (VMs), known as \"boxes,\" each with a unique set of security vulnerabilities to exploit.\n\nFeatures of Hack The Box\n------------------------\n\n*   **Lab Environment:** HTB offers a secure and legal environment for hacking challenges. The platform provides a VPN connection to a private network where the vulnerable machines (boxes) are hosted.\n    \n*   **Various Difficulty Levels:** The boxes on HTB come in varying levels of difficulty (easy, medium, hard, and insane), allowing users of different skill levels to participate and learn progressively.\n    \n*   **New Challenges Regularly:** New boxes are added to the platform regularly, ensuring that participants can continuously learn and enhance their cybersecurity skills.\n    \n*   **Community-driven:** The HTB community often collaborates and shares knowledge, techniques, and experiences, fostering a sense of camaraderie among members.\n    \n*   **Competition:** Users can compete against one another by attempting to solve challenges as quickly as possible and get to the top of the leaderboard.\n    \n\nParticipation Process\n---------------------\n\n*   **Registration:** To get started with HTB, you will need to register for an account on the platform. Interestingly, the registration itself is a hacking challenge where you are required to find an invite code using your web application penetration testing skills. This unique invitation process ensures that only interested and skilled individuals join the community.\n    \n*   **Connect to the VPN:** After registration, connect to the HTB private network using the provided VPN configuration file. This allows you to access the lab environment and the boxes.\n    \n*   **Select a Box and Hack it:** Browse the list of available boxes, select one that suits your skill level, and start hacking! Each box has a specific set of objectives like finding particular files, referred to as \"flags,\" that are hidden on the machines. These flags contain proof of your exploit and are used for scoring and ranking purposes.\n    \n*   **Submit Flags and Write-ups:** Upon solving a challenge, submit the flags you found to gain points and secure your spot on the leaderboard. Additionally, once a box is retired from the platform, you can create and share write-ups of your solution technique with the community.\n    \n\nHack The Box is an excellent resource for anyone looking to enhance their cybersecurity skills or explore the ethical hacking domain. Whether you're a beginner or a seasoned expert, HTB offers an engaging and collaborative environment to learn and grow as a cybersecurity professional.",
     "links": [
       {
-        "id": "TNbZ21nfSoenSfr0hfZE-",
         "title": "HackTheBox website",
         "url": "https://www.hackthebox.com/",
         "type": "article"
       },
       {
-        "id": "xotSZqjYm9zjHlmAG5TZy",
         "title": "HTB Academy ",
         "url": "https://academy.hackthebox.com/",
         "type": "article"
       },
       {
-        "id": "Kc7R5qfKVqCsFJ-uTtOHM",
         "title": "Explore top posts about Security",
         "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
         "type": "article"
@@ -237,13 +214,11 @@
     "description": "The **SANs Holiday Hack Challenge** is a popular and engaging annual cybersecurity event that features a unique blend of digital forensics, offensive security, defensive security, and other cybersecurity topics. It is hosted by the SANS Institute, one of the largest and most trusted sources for information security training, certification, and research worldwide.\n\nOverview\n--------\n\nThe SANs Holiday Hack Challenge incorporates a series of challenging and entertaining cybersecurity puzzles, with a festive holiday theme, for participants of all skill levels. The event typically takes place during the December holiday season, and participants have around a month to complete the challenges. It is free to participate, making the event accessible to a wide range of cybersecurity enthusiasts, from beginners to seasoned professionals.\n\nFormat\n------\n\nThe SANs Holiday Hack Challenge presents a compelling storyline where participants assume the role of a security practitioner tasked with solving various security issues and puzzles. Details of the challenges are weaved into the storyline, which may contain videos, images, and other forms of multimedia. Solving the challenges requires creative problem-solving and the application of various cybersecurity skills, including:\n\n*   Digital Forensics\n*   Penetration Testing\n*   Reverse Engineering\n*   Web Application Security\n*   Cryptography\n*   Defensive Security Techniques\n\nEach year, the Holiday Hack Challenge presents a new storyline and set of challenges aimed at providing real-world learning opportunities for those looking to improve their cybersecurity skills.\n\nPrizes\n------\n\nParticipants have a chance to win prestigious recognition for their performance in the challenge. By successfully solving the holiday-themed cybersecurity puzzles, participants may be awarded prizes, SANS training courses, certifications, or other recognition in the cybersecurity community.\n\nWhy Participate\n---------------\n\nThe SANs Holiday Hack Challenge is a valuable experience for people with an interest in cybersecurity, offering an entertaining and educational challenge. Reasons to participate include:\n\n*   **Skill Development**: The challenge provides an opportunity to sharpen your technical skills in various cybersecurity domains.\n*   **Networking**: Work with like-minded security enthusiasts to solve problems, share knowledge, and build connections in the industry.\n*   **Recognition**: Achieve recognition for your skills and contribution to tackling real-world cybersecurity issues.\n*   **Fun**: Experience the thrill of solving complex security problems while enjoying the festive theme and engaging storyline.\n\nIn conclusion, the SANs Holiday Hack Challenge offers a unique opportunity to develop your cybersecurity skills in a fun and challenging environment. Whether you are new to the field or an industry veteran, participating in this event will help you grow professionally and make valuable connections in the cybersecurity community. Don't miss the next SANs Holiday Hack Challenge!",
     "links": [
       {
-        "id": "lLw3o8rXXTo0aN1cKDJPR",
         "title": "SANS Holiday Hack Challenge",
         "url": "https://www.sans.org/holidayhack",
         "type": "article"
       },
       {
-        "id": "Tg_WQ1Rlxpk4aUp39UnVv",
         "title": "Explore top posts about Security",
         "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
         "type": "article"
@@ -255,43 +230,36 @@
     "description": "CompTIA A+ is an entry-level certification for IT professionals that focuses on essential knowledge and skills in computer hardware, software, and troubleshooting. This certification is widely recognized in the IT industry and can serve as a stepping stone for individuals looking to start a career in the field of information technology.\n\nObjectives\n----------\n\nThe CompTIA A+ certification aims to test and validate foundational IT knowledge and skills, including:\n\n*   Installation, configuration, and upgrading of computer hardware, peripherals, and operating systems\n*   Basic networking concepts and maintenance of wired and wireless networks\n*   Troubleshooting and repair of computer hardware, software, and networks\n*   Understanding the basics of mobile device hardware and networking\n*   Familiarity with security concepts, operating system maintenance, and disaster recovery\n\nExams\n-----\n\nTo earn the CompTIA A+ certification, you'll need to pass two exams:\n\n*   **CompTIA A+ 220-1001 (Core 1)**: This exam covers topics like mobile devices, networking technology, hardware, virtualization, and cloud computing.\n*   **CompTIA A+ 220-1002 (Core 2)**: This exam focuses on topics such as operating systems, security, software troubleshooting, and operational procedures.\n\nBoth exams consist of 90 questions each, which you'll need to complete within 90 minutes. The passing score is 675 for Core 1 and 700 for Core 2 (on a scale of 100-900).\n\nRecommended Experience\n----------------------\n\nThough the CompTIA A+ certification is designed for beginners, it's recommended that you have at least 9-12 months of hands-on experience in the lab or field before attempting the exams. If you don't have prior experience, you could consider taking a training course or working through hands-on labs to gain the required knowledge and skills.\n\nBenefits\n--------\n\nAchieving a CompTIA A+ certification can offer several benefits, such as:\n\n*   Establishing your credibility as an IT professional with a strong foundation in hardware, software, and networking\n*   Demonstrating your commitment to continuing education and career growth in the IT industry\n*   Improving your employability and widening your job prospects, especially for entry-level IT roles\n*   Serving as a prerequisite for more advanced certifications, such as CompTIA Network+ and CompTIA Security+\n\nOverall, if you're an aspiring IT professional, the CompTIA A+ certification is a great starting point to kick off your IT career and begin acquiring the skills and knowledge needed to thrive in this ever-evolving industry.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "WU_2sKxWLfaXn48MrAfuD",
         "title": "Total Seminars - CompTIA A+ Core 1 (220-1101)",
         "url": "https://www.udemy.com/course/comptia-aplus-core-1/",
         "type": "course"
       },
       {
-        "id": "gJTspHolFeYg9oXtlBV9n",
         "title": "Total Seminars - CompTIA A+ Core 2 (220-1102)",
         "url": "https://www.udemy.com/course/comptia-aplus-core-2/",
         "type": "course"
       },
       {
-        "id": "TGHTlK3auu0RMUI-n-NLa",
         "title": "Dion Training - CompTIA A+ Core 1 (220-1101)",
         "url": "https://www.udemy.com/course/comptia-a-core-1/",
         "type": "course"
       },
       {
-        "id": "ZvtgK3QqsUz30cl1DnQuR",
         "title": "Dion Training - CompTIA A+ Core 2 (220-1102)",
         "url": "https://www.udemy.com/course/comptia-a-core-2//",
         "type": "course"
       },
       {
-        "id": "t7h8nF6cyMWalVZUjc93N",
         "title": "CompTIA A+ Certification",
         "url": "https://www.comptia.org/certifications/a",
         "type": "article"
       },
       {
-        "id": "hMV6wTe-fvgXht5-FUvVp",
         "title": "CompTIA A+ 220-1101 - Professor Messer's Course FREE",
         "url": "https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-training-course/",
         "type": "article"
       },
       {
-        "id": "_xtbIkDrDAx2IrH9i50fh",
         "title": "CompTIA A+ 220-1102 - Professor Messer's Course FREE",
         "url": "https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video/220-1102-training-course/",
         "type": "article"
@@ -303,10 +271,19 @@
     "description": "The CompTIA Linux+ certification is an entry-level certification aimed at individuals who are seeking to learn and demonstrate their skills and knowledge of the Linux operating system. This certification is widely recognized in the IT industry as an essential qualification for entry-level Linux administrators and helps them gain a strong foundation in Linux system administration tasks.\n\nOverview\n--------\n\n*   **Difficulty Level:** Beginner\n*   **Certification Type:** Professional\n*   **Exam Format:** Multiple-choice and performance-based\n*   **Duration:** 90 minutes\n*   **Number of Questions:** Maximum of 90\n*   **Passing Score:** 720 (on a scale of 100-900)\n\nTopics Covered\n--------------\n\nThe CompTIA Linux+ certification covers various aspects related to Linux, including:\n\n*   **System Architecture:** Hardware settings, boot sequence, kernel modules, and system boot.\n    \n*   **Linux Installation and Package Management:** Designing hard disk layout, installing a boot manager, managing shared libraries, using Debian and RPM package management.\n    \n*   **GNU and Unix Commands:** Bash commands, text processing, redirection and pipes, and managing processes.\n    \n*   **Devices, Linux Filesystems, and Filesystem Hierarchy Standard:** Creating and configuring filesystems, maintaining the integrity of filesystems, managing disk quotas, and using file permissions to control access.\n    \n*   **Shells, Scripting, and Data Management:** Customizing and writing shell scripts, managing SQL data, and using regular expressions.\n    \n*   **User Interfaces and Desktops:** Installing X11, setting up display managers, and managing accessibility settings.\n    \n*   Administrative Tasks: Managing user and group accounts, automating system administration tasks, localization, and system logging.\n    \n*   Essential System Services: Configuring, managing, and troubleshooting network services, time synchronization, and system logging.\n    \n*   Network Fundamentals: Addressing and routing fundamentals, troubleshooting network issues, and configuring DNS clients.\n    \n*   Security: Perform security administration tasks, set up host security, and secure data with encryption.\n    \n\nSkills Gained\n-------------\n\nBy earning the CompTIA Linux+ certification, you will be equipped with the knowledge and skills to:\n\n*   Install, configure, and maintain Linux systems.\n*   Perform essential Linux system administration tasks.\n*   Troubleshoot and resolve issues related to Linux systems.\n*   Implement basic security measures on Linux systems.\n\nExam Preparation\n----------------\n\nCompTIA provides a range of study materials and resources, including:\n\n*   CompTIA Linux+ Study Guide: Thoroughly covers the exam objectives to help you prepare for the certification.\n*   CompTIA Linux+ CertMaster Practice: A comprehensive online practice platform that helps you assess your knowledge and identify areas for improvement.\n*   CompTIA Linux+ CertMaster Learn: Interactive learning experience offering a customizable learning path, flashcards, quizzes, and assessments.\n\nConclusion\n----------\n\nThe CompTIA Linux+ certification is an excellent starting point for aspiring Linux professionals, as it validates essential skills required for entry-level Linux administration roles. By obtaining this certification, you can enhance your career prospects and demonstrate your competence to potential employers. So, buckle up and start your Linux journey with the CompTIA Linux+ certification!",
     "links": [
       {
-        "id": "GF1PSaIITQgwjTSch6CcP",
-        "title": "Linux Basics",
-        "url": "https://linuxjourney.com/",
+        "title": "Dion Training",
+        "url": "https://www.udemy.com/course/comptia-linux/",
+        "type": "course"
+      },
+      {
+        "title": "Official CompTIA Linux+",
+        "url": "https://www.comptia.org/certifications/linux",
         "type": "article"
+      },
+      {
+        "title": "CompTIA Linux+ Exam Prep (XK0-005 revision)",
+        "url": "https://youtube.com/playlist?list=PL78ppT-_wOmuwT9idLvuoKOn6UYurFKCp&si=0OAFuOOsjko8Gg61",
+        "type": "video"
       }
     ]
   },
@@ -315,31 +292,26 @@
     "description": "The CompTIA Network+ is a highly sought-after certification for IT professionals who aim to build a solid foundation in networking concepts and practices. This certification is vendor-neutral, meaning that it covers a broad range of knowledge that can be applied to various network technologies, products, and solutions. The Network+ certification is designed for beginners in the world of IT networking, and it is recommended that you first obtain the [CompTIA A+ certification](#) before moving on to Network+.\n\nTopics Covered\n--------------\n\nThe CompTIA Network+ certification covers several essential networking topics, such as:\n\n*   **Networking Concepts**: This includes understanding network architectures, devices, protocols, and services.\n*   **Infrastructure**: Learn about the various network components such as cabling, network devices, and storage.\n*   **Network Operations**: Gain knowledge on how to monitor, analyze, and optimize network performance, as well as maintain network documentation and policies.\n*   **Network Security**: Understand the fundamentals of securing a network, including access control, encryption, and firewalls.\n*   **Network Troubleshooting and Tools**: Learn how to troubleshoot and resolve network issues using various diagnostic tools and techniques.\n\nExam Details\n------------\n\nTo become Network+ certified, you must pass the [N10-008 exam](https://www.comptia.org/certifications/network) or [N10-009 exam](https://www.comptia.org/certifications/network). The exam consists of:\n\n*   Up to 90 questions, including multiple-choice and performance-based questions\n*   Duration: 90 minutes\n*   Passing Score: 720 out of 900\n*   Exam Cost: $369 USD\n\nBenefits of CompTIA Network+ Certification\n------------------------------------------\n\nBy earning the CompTIA Network+ certification, you can demonstrate your competency in networking fundamentals and start your journey as an IT professional. The benefits of this certification include:\n\n*   **Increased job opportunities**: A Network+ certification showcases your knowledge in networking, which can help you land entry-level positions such as network administrator or network technician.\n*   **Higher salary potential**: Professionals with the Network+ certification typically enjoy higher salaries compared to their non-certified counterparts.\n*   **Professional growth**: Gaining the Network+ certification helps you stay up-to-date with networking technologies and sets the stage for more advanced certifications, such as [CompTIA Security+](#) or [Cisco CCNA](#).\n*   **Vendor-neutral**: Since the Network+ certification covers a broad range of networking topics, it is applicable to many different network environments and technologies.\n\nTo get started with your CompTIA Network+ certification journey, [visit the official CompTIA website](https://www.comptia.org/certifications/network) for more information on the certification, exam preparation, and testing centers.\n\nPreparation Resources\n---------------------\n\n*   **Strengthen Networking Fundamentals:**: The CompTIA Network+ exam emphasizes understanding networking fundamentals. To build a solid foundation, grasp concepts like TCP/IP protocols, subnetting, the OSI model, network devices, and addressing schemes.\n    \n*   **Engage in Hands-on Practice:**: Theory alone won't suffice for excelling in the N10-008 or N10-009 exam. Practical experience is crucial for understanding networking concepts and troubleshooting scenarios. Take practice exams to assess your readiness and get familiar with the exam format. Additionally, work with virtual labs to enhance your practical understanding of network configurations and troubleshooting.\n    \n\nRecommended resources include:",
     "links": [
       {
-        "id": "cT7bMgzyWH40bY-qduXjf",
         "title": "Total Seminars",
         "url": "https://www.udemy.com/course/comptia-networkplus-certification/",
         "type": "course"
       },
       {
-        "id": "kWvC6H9C9mxnUh4eYIo3L",
         "title": "Dion Training",
         "url": "https://www.udemy.com/course/comptia-network-009/",
         "type": "course"
       },
       {
-        "id": "8DLKfBjnuRzgRMxhas8D4",
         "title": "Official CompTIA Network+",
         "url": "https://www.comptia.org/certifications/network",
         "type": "article"
       },
       {
-        "id": "8Soe7EAnjXhUsI5NRFz-H",
         "title": "Professor Messer’s CompTIA N10-008 Network+ Course FREE",
         "url": "https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/",
         "type": "article"
       },
       {
-        "id": "ElUOcg_z6UtvkNCyJjozW",
         "title": "CompTIA Network+ Full Course FREE [23+ Hours]",
         "url": "https://www.youtube.com/watch?v=xmpYfyNmWbw",
         "type": "video"
@@ -351,7 +323,6 @@
     "description": "The Cisco Certified Network Associate (CCNA) certification is an entry-level certification for IT professionals who want to specialize in networking, specifically within the realm of Cisco products. This certification validates an individual's ability to install, configure, operate, and troubleshoot medium-sized routed and switched networks. It also covers the essentials of network security and management.\n\nKey Concepts\n------------\n\nAs a CCNA candidate, you will learn the following concepts:\n\n*   Network fundamentals: understanding the basics of networking technologies, such as how devices communicate and how data is transmitted\n*   LAN switching technologies: understanding how switches work and how to configure them for optimal performance\n*   IPv4 and IPv6 routing technologies: learning how routers process packets and route data between networks\n*   WAN technologies: understanding Wide Area Networks (WANs) and how they are used to connect geographically dispersed networks\n*   Infrastructure services: learning about DHCP, DNS, and other essential network services\n*   Infrastructure security: understanding how to secure network devices and implement basic security measures\n*   Infrastructure management: learning about SNMP, Syslog, and other tools for network monitoring and management\n\nCCNA Exam\n---------\n\nTo obtain the CCNA certification, you will need to pass a single exam, currently the \"200-301 CCNA\" exam. This exam tests your knowledge and skills in the aforementioned key concepts. The exam consists of multiple-choice, drag-and-drop, and simulation questions that assess your understanding of networking theory, as well as your ability to perform practical tasks.\n\nWhy CCNA?\n---------\n\nA CCNA certification can provide you with a solid foundation in networking and open doors to various career opportunities, such as network administrator, network engineer, or security specialist roles. Many employers value CCNA-certified professionals for their validated skills in working with Cisco networking products and their understanding of networking fundamentals. Additionally, attaining a CCNA certification can serve as a stepping stone towards more advanced Cisco certifications, such as the Cisco Certified Network Professional (CCNP) and the Cisco Certified Internetwork Expert (CCIE).",
     "links": [
       {
-        "id": "o7YeEG9qdBe2noVMP057b",
         "title": "Free CCNA 200-301 | Complete Course 2023 by Jeremy's IT Lab",
         "url": "https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ",
         "type": "video"
@@ -363,37 +334,31 @@
     "description": "CompTIA Security+ is a highly recognized and respected certification for individuals seeking to start their careers in the field of cybersecurity. This certification is vendor-neutral, meaning it doesn't focus on any specific technology or platform, and provides a solid foundation in cybersecurity principles, concepts, and best practices.\n\nOverview\n--------\n\nThe CompTIA Security+ certification covers a variety of essential topics, including:\n\n*   Network security\n*   Threat management\n*   Application, data, and host security\n*   Access control and identity management\n*   Cryptography\n*   Compliance and operational security\n\nEarning the Security+ certification can open the door to various entry-level cybersecurity roles such as Security Analyst, Security Engineer, or Network Security Specialist.\n\nExam Details\n------------\n\nTo earn the CompTIA Security+ certification, candidates must pass the SY0-701 exam. The exam consists of 90 questions, which are a mix of multiple-choice and performance-based questions. Candidates are given 90 minutes to complete the exam, and a score of 750 out of 900 is required to pass.\n\nPreparation Resources\n---------------------\n\nPreparation for the CompTIA Security+ exam involves a combination of self-study, instructor-led courses, and hands-on experience in the cybersecurity field. Recommended resources include:\n\nWhile there are no formal prerequisites to take the Security+ exam, CompTIA recommends candidates have two years of experience in IT administration, focusing on security, and a CompTIA Network+ certification.\n\nOverall, the CompTIA Security+ certification is an excellent choice for those looking to begin their journey in cybersecurity. It provides candidates with a strong foundational knowledge, while also serving as a stepping stone for more advanced certifications in the field.",
     "links": [
       {
-        "id": "pPMSZVWcNimthCB_nJxWd",
         "title": "Dion Training",
         "url": "https://www.udemy.com/course/securityplus/",
         "type": "course"
       },
       {
-        "id": "G2JaCSFCSvzVP_opZ0jEL",
         "title": "Total Seminars",
         "url": "https://www.udemy.com/course/total-comptia-security-plus/",
         "type": "course"
       },
       {
-        "id": "Vpq3zAoP5PkyP6qWueDk5",
         "title": "CompTIA Security+ 701 Audio Course Podcast",
         "url": "https://open.spotify.com/show/1Ch1IPQc9V9FULKSBc6UfO?si=994f9ee5a0a24ee6",
         "type": "podcast"
       },
       {
-        "id": "yJoDhSl7U2CILwbMSiwOT",
         "title": "Official CompTIA Security+ Study Guide",
         "url": "https://www.comptia.org/training/books/security-sy0-701-study-guide",
         "type": "article"
       },
       {
-        "id": "VY_hrYw_zY3cNerRcu-r3",
         "title": "CompTIA Security+ Certification Exam Details",
         "url": "https://www.comptia.org/certifications/security#examdetails",
         "type": "article"
       },
       {
-        "id": "e1elZRKOhhLNgsaKXWUD6",
         "title": "Professor Messer's Free Security+ Video Course",
         "url": "https://youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&si=nwydzQ13lug4ymbl",
         "type": "video"
@@ -460,13 +425,11 @@
     "description": "Windows is a popular operating system (OS) developed by Microsoft Corporation. It was first introduced in 1985 and has since evolved to become one of the most widely used OS worldwide. Windows is known for its graphical user interface (GUI), and it supports a wide variety of applications, making it a versatile choice for both personal and professional use.\n\nKey Features\n------------\n\n*   **Ease of use:** Windows is designed with a user-friendly interface, making it easy for users to navigate, manage files, and access applications.\n    \n*   **Compatibility:** Windows is compatible with a vast range of hardware and software, including most peripherals like printers, webcams, and more.\n    \n*   **Regular updates:** Microsoft provides regular updates for Windows, which helps maintain security, fix bugs, and enhance features.\n    \n*   **Large user community:** Due to its widespread use, there is a vast online community of users who provide support, solutions, and information about the platform.\n    \n*   **Versatile application support:** Windows supports a plethora of applications, including office productivity tools, games, multimedia software, and more.\n    \n\nSecurity Features\n-----------------\n\nWindows has made significant strides to improve its security over the years. Some of the security features include:\n\n*   **Windows Defender:** A built-in antivirus software that provides real-time protection against malware, ransomware, and other threats.\n    \n*   **Windows Firewall:** This feature helps protect your device from unauthorized access or intrusion by blocking potentially harmful network connections.\n    \n*   **User Account Control (UAC):** UAC helps prevent unauthorized changes to the system settings by prompting users for administrative permission when making system modifications.\n    \n*   **Windows Update:** Regular updates ensure that your system is up-to-date with the latest security patches, bug fixes, and feature improvements.\n    \n*   **BitLocker:** A disk encryption feature available in certain Windows editions, BitLocker helps secure your data by providing encryption for your hard drive or external storage devices.\n    \n\nEssential Security Tips for Windows Users\n-----------------------------------------\n\nTo improve the security of Windows devices, users should:\n\n*   Ensure that the Windows OS and all installed software are up-to-date.\n    \n*   Regularly update and run antivirus and anti-malware software.\n    \n*   Enable the built-in Windows Firewall to protect the device from unauthorized access.\n    \n*   Use strong and unique passwords for user accounts and enable two-factor authentication wherever possible.\n    \n*   Regularly back up important data to an external storage device or a secure cloud service to avoid data loss.\n    \n\nBy following these security tips and staying informed about potential threats, Windows users can protect their devices and data from various cyber-attacks.",
     "links": [
       {
-        "id": "obHOC0WSmMLuNwMkK4Je1",
         "title": "Windows Security",
         "url": "https://learn.microsoft.com/en-us/windows/security/",
         "type": "article"
       },
       {
-        "id": "e3569JCBGQOf2-4uU1NQt",
         "title": "Explore top posts about Windows",
         "url": "https://app.daily.dev/tags/windows?ref=roadmapsh",
         "type": "article"
@@ -478,25 +441,31 @@
     "description": "Linux is an open-source operating system (OS) that is widely popular due to its flexibility, stability, and security features. As a Unix-based OS, Linux has a command-line interface, which allows users to perform various tasks through text commands. However, graphical user interfaces (GUIs) can also be installed for ease of use.\n\nKey Features\n------------\n\n*   **Open-source**: Anyone can view, modify, and distribute the Linux source code, promoting collaboration and continuous improvement within the OS community.\n*   **Modular design**: Linux can be customized for various computing environments, such as desktops, servers, and embedded systems.\n*   **Stability and performance**: Linux is well-known for its ability to handle heavy loads without crashing, making it an ideal choice for servers.\n*   **Strong Security**: Linux has robust security mechanisms, such as file permissions, a built-in firewall, and an extensive user privilege system.\n*   **Large Community**: Linux has a vast, active user community that offers a wealth of knowledge, user-contributed software, and support forums.\n\nPopular Linux Distributions\n---------------------------\n\nThere are numerous Linux distributions available, catering to specific user needs and preferences. Some popular distributions include:\n\n*   **Ubuntu**: A user-friendly distribution suitable for beginners, often used for desktop environments.\n*   **Fedora**: A cutting-edge distribution with frequent updates and innovative features, ideal for developers and advanced users.\n*   **Debian**: A very stable distribution that prioritizes free software and benefits from a large, active community.\n*   **Arch Linux**: A highly customizable distribution that allows users to build their system from the ground up, suited for experienced users.\n*   **CentOS**: A distribution focused on stability, security, and manageability, making it a popular choice for server environments.\n\nSecurity Best Practices for Linux\n---------------------------------\n\nWhile Linux is inherently secure, there are best practices to enhance your system's security further:\n\n*   Keep your system updated: Regularly update your kernel, OS packages, and installed software to ensure you have the latest security patches.\n*   Enable a firewall: Configure and enable a firewall, such as `iptables`, to control incoming and outgoing network traffic.\n*   Use strong passwords and user accounts: Create separate accounts with strong passwords for different users and grant them only the required privileges.\n*   Disable unused services: Unnecessary services can be potential security risks; ensure only required services are running on your system.\n*   Implement a Security-Enhanced Linux (SELinux) policy: SELinux provides a mandatory access control (MAC) system that restricts user and process access to system resources.\n\nBy understanding Linux's features and best practices, you can leverage its powerful capabilities and robust security features to enhance your computing environment's performance and safety.",
     "links": [
       {
-        "id": "s12zi1ahUPw9e0Byqm43D",
+        "title": "Linux from scratch- Cisco",
+        "url": "https://www.netacad.com/courses/os-it/ndg-linux-unhatched",
+        "type": "course"
+      },
+      {
         "title": "Learn Linux",
         "url": "https://linuxjourney.com/",
         "type": "article"
       },
       {
-        "id": "V5bmjEHOfcIm2ZFH2lWjd",
         "title": "Linux Commands Cheat Sheet",
-        "url": "https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheat-Sheet.pdf?_ga=2.100546909.2114439087.1713515209-1230351550.1713515209",
+        "url": "https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheat-Sheet.pdf",
         "type": "article"
       },
       {
-        "id": "ApTtwjfolFUUAq5mySeL7",
         "title": "Explore top posts about Linux",
         "url": "https://app.daily.dev/tags/linux?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "EdCGrW7_UjZcwoPyKHhcS",
+        "title": "Linux in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=rrB13utjYV4",
+        "type": "video"
+      },
+      {
         "title": "Introduction to Linux",
         "url": "https://youtu.be/sWbUDq4S6Y8",
         "type": "video"
@@ -528,7 +497,6 @@
     "description": "Understanding permissions is crucial for maintaining a secure environment in any system. Permissions determine the level of access and control users have over files, applications, and other system resources. By setting the appropriate permissions, you can effectively limit the potential for unauthorized access and data breaches.\n\nDifferent Types of Permissions\n------------------------------\n\nPermissions can be broadly categorized into three types:\n\n*   **Read (R)**: This permission level allows users to view the content of a file or folder, without the ability to make any changes or execute actions.\n*   **Write (W)**: This permission level grants users the ability to create, modify, or delete files and folders.\n*   **Execute (X)**: This permission level allows users to run a file or application and execute actions within it.\n\nThese permissions can be combined in different ways to form the desired access level. For example, a user may have read and write permissions for a file, allowing them to view and modify its contents, but not execute any actions within it.\n\nSetting and Managing Permissions\n--------------------------------\n\nPermissions can be set and managed using various tools and methods, depending on the operating system being used:\n\n*   **Windows**: Permissions are set through Access Control Lists (ACLs) in the security properties of a file or folder. This allows you to grant or deny specific permissions to users and groups.\n*   **Mac**: Mac uses POSIX permissions to manage access control, which can be set using the \"Get Info\" window for a file or folder, or through Terminal commands.\n*   **Linux**: Permissions on Linux systems are managed using the `chmod` command, along with the `chown` and `chgrp` commands to change the ownership of files and groups.\n\nIt's essential to understand how these tools work and use them effectively to maintain a secure environment.\n\nBest Practices for Implementing Permissions\n-------------------------------------------\n\nTo ensure cyber security with permissions, follow these best practices:\n\n*   **Least Privilege Principle**: Grant users the minimum level of access they need to perform their tasks. People should not have unnecessary access to sensitive information or resources.\n*   **Regularly Review Permissions**: Regularly audit permissions to ensure they are up-to-date and align with the current organizational roles and responsibilities.\n*   **Use Groups and Roles**: Group users based on their job roles and assign permissions to groups instead of individuals. This simplifies the permission management process.\n*   **Implement Security Training**: Educate users about the importance of permissions and their responsibilities to maintain a secure environment.\n\nBy understanding permissions and following best practices, you can enhance cyber security and minimize the risk of unauthorized access and data breaches.",
     "links": [
       {
-        "id": "lSbXMFycLCWPPBJDwJctJ",
         "title": "Linux File Permissions (Linux Journey)",
         "url": "https://linuxjourney.com/lesson/file-permissions",
         "type": "article"
@@ -565,15 +533,18 @@
     "description": "The **Open Systems Interconnection (OSI) model** is a framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. This model is widely used to understand how different networking protocols and technologies work together to enable data transmission and communication.\n\nGiven below are different layers of the OSI model, the primary functions they perform, and their relevance to network security.\n\nPhysical Layer\n--------------\n\nThe **Physical layer** deals with the physical connection between devices, like cables or wireless signals. It is responsible for transmitting raw data (in the form of bits) between devices over a physical medium, such as copper wires or fiber optic cables.\n\nData Link Layer\n---------------\n\nThe **Data Link layer** is responsible for creating a reliable link between two devices on a network. It establishes communication between devices by dividing the data into frames (small data units) and assigning each frame with a unique address. This layer also offers error detection and correction mechanisms to ensure reliable data transfer.\n\nNetwork Layer\n-------------\n\nThe **Network layer** is responsible for routing data packets between different devices on a network, regardless of the physical connection medium. It determines the optimal path to transfer data between the source and destination devices and assigns logical addresses (IP addresses) to devices on the network.\n\nTransport Layer\n---------------\n\nThe **Transport layer** is in charge of ensuring error-free and reliable data transmissions between devices. It achieves this by managing flow control, error checking, and data segmentation. This layer also establishes connections between devices and manages data transfer using protocols like Transmission Control Protocol (TCP) and User Datagram Protocol (UDP).\n\nSession Layer\n-------------\n\nThe **Session layer** manages sessions, which are continuous connections between devices. It establishes, maintains, and terminates connections between devices while ensuring proper synchronization and data exchange between the communication devices.\n\nPresentation Layer\n------------------\n\nThe **Presentation layer** is responsible for translating or converting the data format between different devices, allowing them to understand each other's data. This layer also deals with data encryption and decryption, which is an essential aspect of network security.\n\nApplication Layer\n-----------------\n\nThe **Application layer** is the interface between the user and the communication system. It is responsible for providing networking services for various applications, like email, web browsing, or file sharing.\n\nEach of these layers interacts with the adjacent layers to pass data packets back and forth. Understanding the OSI model is crucial for addressing potential security threats and vulnerabilities that can occur at each layer. By implementing strong network security measures at each layer, you can minimize the risk of cyber attacks and keep your data safe.\n\nIn the next section, we will discuss network protocols and how they play an essential role in network communication and security.",
     "links": [
       {
-        "id": "r2DqHP15B0CDTqHKYhGto",
         "title": "What is OSI Model?",
-        "url": "https://www.youtube.com/watch?v=Ilk7UXzV_Qc&ab_channel=RealPars",
+        "url": "https://www.youtube.com/watch?v=Ilk7UXzV_Qc",
         "type": "video"
       },
       {
-        "id": "XCApiaMwajIbHyySqvxVd",
         "title": "Lecture - OSI Model",
         "url": "https://www.youtube.com/watch?v=0Rb8AkTEASw",
+        "type": "video"
+      },
+      {
+        "title": "OSI Model Animation",
+        "url": "https://www.youtube.com/watch?v=vv4y_uOneC0",
         "type": "video"
       }
     ]
@@ -598,7 +569,6 @@
     "description": "Network Attached Storage (NAS) and Storage Area Network (SAN) technologies play a crucial role in managing data within an organization and serve as the building blocks for a more comprehensive IT infrastructure.\n\nNetwork Attached Storage (NAS)\n------------------------------\n\nNAS is a high-capacity storage solution that operates on a data file level, allowing multiple users and clients to access, store, and retrieve data from a centralized location over a network. NAS devices are generally connected to a local area network (LAN) and use various file-sharing protocols, such as NFS (Network File System), SMB/CIFS (Server Message Block/Common Internet File System), or AFP (Apple Filing Protocol).\n\nSome key features of a NAS system include:\n\n*   **Ease of Deployment**: NAS devices are simple to install and configure, facilitating quick integration into existing network infrastructures.\n*   **Scalability**: NAS systems can be easily expanded to accommodate growing storage needs by adding more drives or units.\n*   **Data Protection**: Most NAS devices offer data protection features such as RAID (Redundant Array of Independent Disks), data backup, and data encryption.\n\nStorage Area Network (SAN)\n--------------------------\n\nSAN is a high-performance, dedicated storage network designed to provide block-level data storage for applications and servers. Unlike NAS, which uses file-sharing protocols, SANs utilize block-based protocols such as Fibre Channel (FC) and iSCSI (Internet Small Computer System Interface) to handle storage requests.\n\nSANs offer several advantages in terms of performance, reliability, and scalability:\n\n*   **Performance**: SANs can handle low-latency, high-speed data transfers, providing optimal performance for mission-critical applications and large-scale virtualization.\n*   **Fault Tolerance**: SANs are designed to provide redundancy and failover capabilities, ensuring continued access to data in the event of hardware failures.\n*   **Scalability**: SANs can be easily scaled by adding more disk arrays, switches, or connections to meet growing storage demands.\n\nNAS vs. SAN: Choosing the Right Solution\n----------------------------------------\n\nWhen it comes to deciding between NAS and SAN, there are several factors to consider:\n\n*   **Cost**: NAS devices are generally more affordable than SANs, making them an attractive option for smaller organizations or environments with limited budgets.\n*   **Infrastructure**: NAS solutions can be more easily integrated into existing network infrastructures, whereas SANs may require dedicated hardware, connections, and management tools.\n*   **Performance Requirements**: If you need high-performance storage for intensive applications, SANs may be a more appropriate choice than NAS.\n*   **Data Management**: While NAS solutions excel in handling file-based storage, SANs provide better support for block-level storage and can deliver improved performance for virtualized environments and database applications.\n\nIt's essential to evaluate your organization's specific needs and requirements to determine which storage solution is the most appropriate fit. As you expand your knowledge in cyber security, a solid understanding of both NAS and SAN technologies will prove invaluable in implementing secure and efficient data storage systems.",
     "links": [
       {
-        "id": "v8Zf33CZoXUQFWVAY4mta",
         "title": "NAS vs SAN",
         "url": "https://youtu.be/3yZDDr0JKVc",
         "type": "video"
@@ -635,7 +605,6 @@
     "description": "A **subnet mask** is a crucial component of Internet Protocol (IP) addressing, acting as a \"mask\" to separate the network portion of an IP address from the host portion. It is a 32-bit number representing a sequence of 1's followed by a sequence of 0's, used to define the boundary of a subnet within a given IP address.\n\nThe primary purpose of a subnet mask is to:\n\n*   Define network boundaries\n*   Facilitate IP routing\n*   Break down large IP networks into smaller, manageable subnetworks (subnets)\n\nFormat\n------\n\nThe subnet mask is written in the same dotted-decimal format as IP addresses (i.e., four octets separated by dots). For instance, the default subnet mask for a Class A IP address is `255.0.0.0`, for Class B is `255.255.0.0`, and for Class C is `255.255.255.0`.\n\nImportance in Cybersecurity\n---------------------------\n\nUnderstanding and configuring subnet masks correctly is crucial in cybersecurity, as they:\n\n*   Help to isolate different segments of your network, leading to greater security control and more efficient usage of resources\n*   Facilitate the division of IP networks into smaller subnets, which can then be assigned to different departments, groups, or functions within an organization\n*   Enhance network efficiency by preventing unnecessary broadcast traffic\n*   Improve the overall network stability and monitoring capabilities\n\nTo determine the appropriate subnet mask for different requirements, you can use various subnetting tools available online. Proper management of subnet masks is crucial for maintaining a secure, efficient, and well-functioning network.",
     "links": [
       {
-        "id": "Kq_XC3U9qiarLjc9JEWOM",
         "title": "Wildcard mask",
         "url": "https://en.wikipedia.org/wiki/Wildcard_mask",
         "type": "article"
@@ -652,7 +621,6 @@
     "description": "A **VLAN** or **Virtual Local Area Network** is a logical grouping of devices or users within a network, based on shared attributes like location, department, or security requirements. VLANs play a crucial role in improving network security, enabling better resource allocation, and simplifying network management.\n\nKey Features of VLANs\n---------------------\n\n*   **Isolation:** VLANs isolate traffic between different groups, helping to minimize the risk of unauthorized access to sensitive data.\n*   **Scalability:** VLANs allow network administrators to grow and change networks with ease, without causing disruptions.\n*   **Cost Effectiveness:** VLANs can reduce the need for additional hardware by reusing existing switches and networks for added functionality.\n*   **Improved Performance:** By narrowing the broadcast domain, VLANs can improve network performance by reducing unnecessary traffic.\n\nTypes of VLANs\n--------------\n\n*   **Port-based VLANs:** In this type, devices are separated based on their physical connection to the switch. Each port is assigned to a specific VLAN.\n*   **Protocol-based VLANs:** Devices are grouped based on the network protocol they use. For example, all IP devices can be assigned to one VLAN, while IPX devices can be assigned to another.\n*   **MAC-based VLANs:** Devices are assigned to VLANs based on their MAC addresses. This approach offers better security and flexibility but requires more administrative effort.\n\nCreating and Managing VLANs\n---------------------------\n\nVLANs are created and managed through network switches that support VLAN configuration. Switches use a VLAN ID (ranging from 1 to 4094) to uniquely identify each VLAN. VLAN Trunking Protocol (VTP) and IEEE 802.1Q standard are typically used to manage VLANs between different switches.\n\nSecurity Considerations\n-----------------------\n\nVLANs play a crucial role in network security; however, they are not foolproof. VLAN hopping and unauthorized access can still occur if proper measures, such as Private VLANs and Access Control Lists (ACLs), are not implemented to secure the network.\n\nIn summary, VLANs offer a flexible and secure way to manage and segment networks based on needs and requirements. By understanding their purpose, types, and security considerations, network administrators can efficiently use VLANs to improve overall network performance and security.",
     "links": [
       {
-        "id": "Mt1n8QCTiY1Mniv_CwTeK",
         "title": "VLAN Explained",
         "url": "https://www.youtube.com/watch?v=jC6MJTh9fRE",
         "type": "video"
@@ -664,7 +632,6 @@
     "description": "A **DMZ**, also known as a **Demilitarized Zone**, is a specific part of a network that functions as a buffer or separation between an organization's internal, trusted network and the external, untrusted networks like the internet. The primary purpose of a DMZ is to isolate critical systems and data from the potentially hostile external environment and provide an extra layer of security.\n\nPurpose of DMZ\n--------------\n\n*   **Security**: By segregating critical systems, a DMZ reduces the risk of unauthorized access and potential damage from external threats. This is achieved by implementing strong access controls, firewalls, and intrusion detection and prevention systems (IDS/IPS) to monitor and filter traffic between the DMZ and internal networks.\n*   **Content Filtering**: It enables organizations to place publicly accessible servers (e.g., web and email servers) within the DMZ without exposing the entire internal network to potential attacks. This ensures that only authorized traffic is allowed to pass through.\n*   **Ease of Management**: DMZ aids in simplifying security management processes as it provides a centralized location for implementing, auditing, and monitoring security policies, rules, and configurations for public-facing resources.\n\nComponents of DMZ\n-----------------\n\nThe key components in a DMZ include:\n\n*   **Firewalls**: These devices are used to control and manage traffic between the DMZ, internal, and external networks. They can be configured to allow, deny, or restrict access based on pre-defined security policies and rules.\n*   **Proxies**: Proxy servers act as intermediaries between the internal network and the internet. They help to screen and filter incoming and outgoing web traffic, providing an additional layer of security.\n*   **Intrusion Detection and Prevention Systems (IDS/IPS)**: These tools continuously monitor and analyze network traffic, looking for signs of unauthorized access or malicious activities, and automatically take appropriate actions to mitigate threats.\n*   **Public-Facing Servers**: These are the servers hosted within the DMZ, designed to serve content and resources to external users. They are typically configured with additional security measures to further reduce the risk of compromise.\n\nAs the author of this guide, I hope this brief summary about DMZ helps you enhance your understanding of cyber security terminologies and their importance in protecting organizations' networks and data. Keep reading for more insights!",
     "links": [
       {
-        "id": "krVzSL5IaImFUWN14XNSg",
         "title": "What is DMZ? (Demilitarized Zone)",
         "url": "https://www.youtube.com/watch?v=dqlzQXo1wqo",
         "type": "video"
@@ -676,7 +643,6 @@
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network.\n\nHow It Works\n------------\n\nWhen a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address.\n\nThe device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nSecurity Concerns\n-----------------\n\nWhile ARP is crucial for the functioning of most networks, it also presents certain security risks. ARP poisoning, for example, occurs when an attacker sends fake ARP messages with the goal to associate their MAC address with the IP address of a target device. This can lead to Man-in-the-Middle (MITM) attacks where the attacker can intercept, modify, or block traffic intended for the target device.\n\nTo mitigate ARP poisoning attacks, organizations can implement security measures such as static ARP entries, dynamic ARP inspection, and ensuring that their network devices are updated with the latest security patches.\n\nBy understanding ARP and the potential security risks it presents, you can help protect your network by incorporating appropriate security solutions and staying vigilant against potential threats.",
     "links": [
       {
-        "id": "nUamsw-DTmEXBnrLm_MtF",
         "title": "ARP Explained - Address Resolution Protocol",
         "url": "https://www.youtube.com/watch?v=cn8Zxh9bPio",
         "type": "video"
@@ -688,13 +654,11 @@
     "description": "A **Virtual Machine (VM)** is a software-based emulation of a computer system that operates on a physical hardware, also known as a host. VMs provide an additional layer of isolation and security as they run independent of the host's operating system. They can execute their own operating system (called the guest OS) and applications, allowing users to run multiple operating systems on the same hardware simultaneously.\n\nVirtual machines are commonly used in cybersecurity for tasks such as:\n\n*   **Testing and analysis**: Security researchers often use VMs to study malware and vulnerabilities in a safe and contained environment without risking their primary system.\n    \n*   **Network segmentation**: VMs can be used to isolate different network segments within an organization, to help prevent the spread of malware or limit the impact of an attack.\n    \n*   **System recovery**: VMs can act as backups for critical systems or applications. In the event of a system failure, a VM can be spun up to provide continuity in business operations.\n    \n*   **Software development and testing**: Developers can use VMs to build and test software in a controlled and reproducible environment, reducing the risks of incompatibilities or unexpected behaviors when the software is deployed on a live system.\n    \n\nKey terminologies associated with VMs include:\n\n*   **Hypervisor**: Also known as Virtual Machine Monitor (VMM), is a software or hardware component that creates, runs, and manages virtual machines. Hypervisors are divided into two types - Type 1 (bare-metal) and Type 2 (hosted).\n    \n*   **Snapshot**: A snapshot is a point-in-time image of a virtual machine that includes the state of the guest OS, applications, and data. Snapshots are useful for quickly reverting a VM back to a previous state if needed.\n    \n*   **Live Migration**: This refers to the process of moving a running virtual machine from one physical host to another with minimal or no disruption to the guest OS and its applications. Live migration enables load balancing and ensures minimal downtime during hardware maintenance.\n    \n\nUnderstanding and effectively utilizing virtual machines plays a significant role in enhancing the security posture of an organization, allowing for agile incident response and proactive threat analysis.",
     "links": [
       {
-        "id": "Mxos-oqeG1A0zX9UdbBK1",
         "title": "Explore top posts about Infrastructure",
         "url": "https://app.daily.dev/tags/infrastructure?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "v5jM3-ySr7LuI9CZfr8u0",
         "title": "Virtualization Explained",
         "url": "https://www.youtube.com/watch?v=UBVVq-xz5i0",
         "type": "video"
@@ -711,19 +675,16 @@
     "description": "**DNS** is a key component in the internet infrastructure that translates human-friendly domain names (e.g., `www.example.com`) into IP addresses (e.g., `192.0.2.44`). This translation process enables us to easily connect to websites and other online resources without having to remember complex numeric IP addresses.\n\nThe DNS operates as a distributed and hierarchical system which involves the following components:\n\n*   **DNS Resolver**: Your device's initial contact point with the DNS infrastructure, often provided by your Internet Service Provider (ISP) or a third-party service like Google Public DNS.\n    \n*   **Root Servers**: The authoritative servers on the top of the DNS hierarchy that guide DNS queries to the appropriate Top-Level Domain (TLD) servers.\n    \n*   **TLD Servers**: These servers manage the allocation of domain names for top-level domains, such as `.com`, `.org`, etc.\n    \n*   **Authoritative Name Servers**: These are the servers responsible for storing the DNS records pertaining to a specific domain (e.g., `example.com`).\n    \n\nSome common DNS record types you might encounter include:\n\n*   **A (Address) Record**: Maps a domain name to an IPv4 address.\n*   **AAAA (Address) Record**: Maps a domain name to an IPv6 address.\n*   **CNAME (Canonical Name) Record**: Maps an alias domain name to a canonical domain name.\n*   **MX (Mail Exchange) Record**: Specifies the mail servers responsible for handling email for the domain.\n*   **TXT (Text) Record**: Contains human-readable or machine-readable text, often used for verification purposes or providing additional information about a domain.\n\nAs an essential part of the internet, the security and integrity of the DNS infrastructure are crucial. However, it's vulnerable to various types of cyber attacks, such as DNS cache poisoning, Distributed Denial of Service (DDoS) attacks, and DNS hijacking. Proper DNS security measures, such as DNSSEC (DNS Security Extensions) and monitoring unusual DNS traffic patterns, can help mitigate risks associated with these attacks.",
     "links": [
       {
-        "id": "s2Twg7Fv2OMEAwplhg5FG",
         "title": "DNS in detail (TryHackMe)",
         "url": "https://tryhackme.com/room/dnsindetail",
         "type": "article"
       },
       {
-        "id": "LksCWBufbW8voym2roTyo",
         "title": "Explore top posts about DNS",
         "url": "https://app.daily.dev/tags/dns?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "onnikeI_zIBlDHXYpsC3U",
         "title": "DNS Explained in 100 Seconds (YouTube)",
         "url": "https://www.youtube.com/watch?v=UVR9lhUGAyU",
         "type": "video"
@@ -785,19 +746,16 @@
     "description": "**DNS** is a key component in the internet infrastructure that translates human-friendly domain names (e.g., `www.example.com`) into IP addresses (e.g., `192.0.2.44`). This translation process enables us to easily connect to websites and other online resources without having to remember complex numeric IP addresses.\n\nThe DNS operates as a distributed and hierarchical system which involves the following components:\n\n*   **DNS Resolver**: Your device's initial contact point with the DNS infrastructure, often provided by your Internet Service Provider (ISP) or a third-party service like Google Public DNS.\n    \n*   **Root Servers**: The authoritative servers on the top of the DNS hierarchy that guide DNS queries to the appropriate Top-Level Domain (TLD) servers.\n    \n*   **TLD Servers**: These servers manage the allocation of domain names for top-level domains, such as `.com`, `.org`, etc.\n    \n*   **Authoritative Name Servers**: These are the servers responsible for storing the DNS records pertaining to a specific domain (e.g., `example.com`).\n    \n\nSome common DNS record types you might encounter include:\n\n*   **A (Address) Record**: Maps a domain name to an IPv4 address.\n*   **AAAA (Address) Record**: Maps a domain name to an IPv6 address.\n*   **CNAME (Canonical Name) Record**: Maps an alias domain name to a canonical domain name.\n*   **MX (Mail Exchange) Record**: Specifies the mail servers responsible for handling email for the domain.\n*   **TXT (Text) Record**: Contains human-readable or machine-readable text, often used for verification purposes or providing additional information about a domain.\n\nAs an essential part of the internet, the security and integrity of the DNS infrastructure are crucial. However, it's vulnerable to various types of cyber attacks, such as DNS cache poisoning, Distributed Denial of Service (DDoS) attacks, and DNS hijacking. Proper DNS security measures, such as DNSSEC (DNS Security Extensions) and monitoring unusual DNS traffic patterns, can help mitigate risks associated with these attacks.",
     "links": [
       {
-        "id": "61M_xFCvTmo8bIm_Vlquq",
         "title": "DNS in detail (TryHackMe)",
         "url": "https://tryhackme.com/room/dnsindetail",
         "type": "article"
       },
       {
-        "id": "e5odKhbrMNbASsVGB-6NY",
         "title": "Explore top posts about DNS",
         "url": "https://app.daily.dev/tags/dns?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "63Y8Wg1GouwNBn5a4fWx-",
         "title": "DNS Explained in 100 Seconds (YouTube)",
         "url": "https://www.youtube.com/watch?v=UVR9lhUGAyU",
         "type": "video"
@@ -849,7 +807,6 @@
     "description": "**File Transfer Protocol (FTP)** is a standard network protocol used to transfer files from one host to another host over a TCP-based network, such as the Internet. Originally developed in the 1970s, it's one of the earliest protocols for transferring files between computers and remains widely used today.\n\nHow FTP Works\n-------------\n\nFTP operates on a client-server model, where one computer acts as the client (the sender or requester) and the other acts as the server (the receiver or provider). The client initiates a connection to the server, usually by providing a username and password for authentication, and then requests a file transfer.\n\nFTP uses two separate channels to carry out its operations:\n\n*   **Control Channel:** This channel is used to establish the connection between the client and the server and send commands, such as specifying the file to be transferred, the transfer mode, and the directory structure.\n*   **Data Channel:** This channel is used to transfer the actual file data between the client and the server.\n\nFTP Modes\n---------\n\nFTP offers two modes of file transfer:\n\n*   **ASCII mode:** This mode is used for transferring text files. It converts the line endings of the files being transferred to match the format used on the destination system. For example, if the file is being transferred from a Unix system to a Windows system, the line endings will be converted from LF (Unix) to CR+LF (Windows).\n*   **Binary mode:** This mode is used for transferring binary files, such as images, audio files, and executables. No conversion of the data is performed during the transfer process.\n\nFTP Security Concerns\n---------------------\n\nFTP has some significant security issues, primarily because it was designed before the widespread use of encryption and authentication mechanisms. Some of these concerns include:\n\n*   Usernames and passwords are transmitted in plain text, allowing anyone who can intercept the data to view them.\n*   Data transferred between the client and server is not encrypted by default, making it vulnerable to eavesdropping.\n*   FTP does not provide a way to validate a server's identity, leaving it vulnerable to man-in-the-middle attacks.\n\nTo mitigate these security risks, several secure alternatives to the FTP protocol have been developed, such as FTPS (FTP Secure) and SFTP (SSH File Transfer Protocol), which encrypt data transfers and provide additional security features.\n\nIn conclusion, FTP is a commonly used protocol for transferring files between computers over a network. While it is easy to use, it has significant security vulnerabilities that make it a less desirable option for secure file transfers. It's essential to use more secure alternatives like FTPS or SFTP for transferring sensitive data.",
     "links": [
       {
-        "id": "sxrdn-OzSpKSPAK_TL5Q2",
         "title": "What Is FTP: FTP Explained for Beginners",
         "url": "https://www.hostinger.com/tutorials/what-is-ftp",
         "type": "article"
@@ -986,13 +943,11 @@
     "description": "Kerberos is a network authentication protocol designed to provide strong authentication for client/server applications. It was developed by MIT in the 1980s and is named after the three-headed dog from Greek mythology that guarded the gates of Hades, symbolizing the protocol's aim to provide secure authentication in a potentially hostile network environment.\n\nHow Kerberos works\n------------------\n\nKerberos relies on a trusted third party called the Key Distribution Center (KDC). The KDC maintains a database of secret keys for each user and service on the network. The protocol uses symmetric key cryptography, meaning that both the client and the server know the same shared encryption key.\n\nThe main goal of Kerberos is to prove the identity of both the client and the server to each other so that they can securely exchange information. To achieve this, the protocol uses tickets - encrypted messages containing information about the client's identity, the server's identity, and a shared session key.\n\nHere is a high-level summary of the Kerberos authentication process:\n\n*   The client requests a ticket from the KDC by providing its username.\n*   The KDC generates a ticket, encrypts it using the client's secret key, and sends it back to the client.\n*   The client decrypts the ticket and obtains a session key that it will use to securely communicate with the server.\n*   To access a specific service, the client requests a service ticket from the KDC. The request includes its ticket and the target server's identifier.\n*   The KDC generates a service ticket, encrypts it using the server's secret key, and sends it back to the client.\n*   The client sends the service ticket to the server along with a message, encrypted using the session key, to establish its identity.\n*   The server decrypts the service ticket, extracts the session key, and uses it to decrypt the client's message.\n*   After verifying the client's identity, the server allows access to the requested service and sends an encrypted message to confirm authentication.\n\nBenefits of Kerberos\n--------------------\n\n*   **Secure**: Kerberos provides strong authentication using encrypted tickets, making it difficult for attackers to intercept and forge.\n*   **Centralized**: The KDC centralizes authentication management, making it easier to control and maintain user access.\n*   **Scalable**: The protocol is designed to support large networks, making it a popular choice for enterprise environments.\n*   **Interoperable**: Kerberos is an open standard supported by many different platforms and vendors.\n\nLimitations\n-----------\n\n*   **KDC reliance**: The KDC is a single point of failure. If it's compromised or goes offline, authentication on the network will be disrupted.\n*   **Time-sensitive**: Kerberos is sensitive to time differences between servers and clients. Synchronized clocks are necessary to maintain accurate ticket lifetimes and prevent replay attacks.\n*   **Complexity**: The protocol can be complex to set up and requires proper management of secret keys.\n\nIn summary, Kerberos is a robust and widely used authentication protocol that helps secure client/server communications. Its centralized management and strong security measures make it an excellent choice for organizations with demanding authentication requirements. However, it also has its limitations and complexities that must be carefully managed to maintain a secure and efficient authentication process.",
     "links": [
       {
-        "id": "B88sDPZ2xM3mp4xsq81_T",
         "title": "Explore top posts about Kerberos",
         "url": "https://app.daily.dev/tags/kerberos?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "mYVoqNgFIyw9larRmwW_d",
         "title": "Kerberos authentication process",
         "url": "https://youtu.be/_44CHD3Vx-0",
         "type": "video"
@@ -1039,7 +994,6 @@
     "description": "Exploit frameworks are essential tools in the cybersecurity landscape, as they provide a systematic and efficient way to test vulnerabilities, develop exploits, and launch attacks. They automate many tasks and help security professionals and ethical hackers to identify weaknesses, simulate attacks, and strengthen defenses. In this section, we will discuss some of the most common exploit frameworks and their features.\n\nMetasploit\n----------\n\n[Metasploit](https://www.metasploit.com/) is probably the most widely used and well-known exploit framework. It is an open-source platform with a large and active user community, which constantly contributes to its development, vulnerability research, and exploit creation.\n\n*   **Key Features:**\n    *   Supports more than 1,500 exploits and over 3,000 modules\n    *   Provides a command-line interface as well as a Graphical User Interface (GUI) called Armitage\n    *   Offers integration with other popular tools, such as Nmap and Nessus\n    *   Enables payload delivery, exploit execution, and post-exploitation tasks\n\nCanvas\n------\n\n[Canvas](https://www.immunityinc.com/products/canvas/) is a commercial exploit framework developed by Immunity Inc. It includes a wide range of modules that target various platforms, networking devices, and vulnerabilities.\n\n*   **Key Features:**\n    *   Contains a collection of more than 450 exploits\n    *   Offers exploit development and fuzzing tools\n    *   Provides intuitive GUI for managing and executing attacks\n    *   Allows customization through Python scripting\n\nExploit Pack\n------------\n\n[Exploit Pack](https://exploitpack.com/) is another commercial exploit framework that focuses on ease of use and extensive exploit modules selection. It is frequently updated to include the latest exploits and vulnerabilities.\n\n*   **Key Features:**\n    *   Offers over 38,000 exploits for Windows, Linux, macOS, and other platforms\n    *   Provides a GUI for managing and executing exploits\n    *   Allows exploit customization and development using JavaScript\n    *   Includes fuzzers, shellcode generators, and other advanced features\n\nSocial-Engineer Toolkit (SET)\n-----------------------------\n\n[SET](https://github.com/trustedsec/social-engineer-toolkit) is an open-source framework designed to perform social engineering attacks, such as phishing and spear-phishing. Developed by TrustedSec, it focuses on human interaction and targets user credentials, software vulnerabilities, and more.\n\n*   **Key Features:**\n    *   Executes email-based attacks, SMS-based attacks, and URL shortening/exploitation\n    *   Provides template-based phishing email creation\n    *   Integrates with Metasploit for payloads and exploits\n    *   Offers USB-based exploitation for human-interface devices\n\nWhen using these exploit frameworks, it is important to remember that they are powerful tools that can cause significant damage if misused. Always ensure that you have explicit permission from the target organization before conducting any penetration testing activities.",
     "links": [
       {
-        "id": "mVlG056MHmKDsqAlmdkWG",
         "title": "Metasploit Primer (TryHackMe)",
         "url": "https://tryhackme.com/room/rpmetasploit",
         "type": "article"
@@ -1061,7 +1015,6 @@
     "description": "**Forensics** is a specialized area within cybersecurity that deals with the investigation of cyber incidents, the collection, preservation, and analysis of digital evidence, and the efforts to tie this evidence to specific cyber actors. The main goal of digital forensics is to identify the cause of an incident, determine the extent of the damage, and provide necessary information to recover and prevent future attacks. This discipline typically involves several key steps:\n\n*   **Preparation**: Developing a forensic strategy, setting up a secure laboratory environment, and ensuring the forensics team has the necessary skills and tools.\n*   **Identification**: Determining the scope of the investigation, locating and identifying the digital evidence, and documenting any relevant information.\n*   **Preservation**: Ensuring the integrity of the digital evidence is maintained by creating backups, securing storage, and applying legal and ethical guidelines.\n*   **Analysis**: Examining the digital evidence using specialized tools and techniques to extract relevant information, identify patterns, and uncover hidden details.\n*   **Reporting**: Compiling the findings of the investigation into a report that provides actionable insights, including the identification of cyber actors, the methods used, and the damage caused.\n\nProfessionals working in digital forensics need a solid understanding of various technologies, as well as the ability to think critically, be detail-oriented, and maintain the integrity and confidentiality of data. Moreover, they should be well-versed in related laws and regulations to ensure compliance and admissibility of evidence in legal proceedings. Some of the key skills to master include:\n\n*   Knowledge of digital evidence collection and preservation techniques\n*   Familiarity with forensic tools and software, such as EnCase, FTK, or Autopsy\n*   Understanding of file systems, operating systems, and network protocols\n*   Knowledge of malware analysis and reverse engineering\n*   Strong analytical and problem-solving skills\n*   Effective communication abilities to convey technical findings to non-technical stakeholders\n\nOverall, digital forensics is a crucial component of cybersecurity as it helps organizations respond effectively to cyber attacks, identify vulnerabilities, and take appropriate steps to safeguard their digital assets.",
     "links": [
       {
-        "id": "2L5GgCUT72E5B7j1XdYsn",
         "title": "Introduction to Digital Forensics (TryHackMe)",
         "url": "https://tryhackme.com/room/introdigitalforensics",
         "type": "article"
@@ -1083,19 +1036,16 @@
     "description": "Reverse engineering is the process of analyzing a system, component, or software to understand how it works and deduce its design, architecture, or functionality. It is a critical skill in cybersecurity, as it helps security professionals uncover the potential attack vectors, hidden vulnerabilities, and underlying intentions of a piece of software or hardware.\n\nIn this section, we will cover the basic concepts and techniques of reverse engineering that every cybersecurity professional should be familiar with.\n\nStatic Analysis Vs. Dynamic Analysis\n------------------------------------\n\nThere are two main approaches to reverse engineering: static analysis and dynamic analysis. Static analysis involves examining the code and structure of a software without executing it. This includes analyzing the source code, if available, or examining the binary executable using disassemblers or decompilers.\n\nDynamic analysis, on the other hand, involves executing the software while observing and monitoring its behaviors and interactions with other components or systems. This analysis is typically performed in controlled environments, such as virtual machines or sandbox environments, to minimize potential risks.\n\nBoth approaches have their merits and limitations, and combining them is often the most effective way to gain a comprehensive understanding of the target system.\n\nDisassemblers and Decompilers\n-----------------------------\n\nDisassemblers and decompilers are essential tools in reverse engineering, as they help transform binary executables into a more human-readable format.\n\n*   **Disassemblers** convert machine code (binary executable) into assembly language, a low-level programming language that is more human-readable than raw machine code. Assembly languages are specific to the CPU architectures, such as x86, ARM, or MIPS.\n*   **Decompilers** attempt to reverse-engineer binary executables into high-level programming languages, such as C or C++, by interpreting the structures and patterns in the assembly code. Decompilation, however, is not always perfect and may generate code that is more difficult to understand than assembly.\n\nSome popular disassemblers and decompilers are:\n\n*   [@article@IDA Pro](https://www.hex-rays.com/products/ida/)\n*   [@article@Ghidra](https://ghidra-sre.org/)\n*   [@article@Hopper](https://www.hopperapp.com/)\n\nDebuggers\n---------\n\nDebuggers are another essential tool for reverse engineering, as they allow you to execute a program and closely monitor its behavior during runtime. Debuggers provide features such as setting breakpoints, stepping through code, and examining memory contents.\n\nSome popular debuggers include:\n\nCommon Reverse Engineering Techniques\n-------------------------------------\n\nHere are some basic reverse engineering techniques:\n\n*   **Control flow analysis:** Understanding the execution flow of a program, such as loops, branches, and conditional statements, to determine how the program behaves under certain conditions.\n*   **Data flow analysis:** Analyzing how data is passed between different parts of a program and tracing the origin and destination of data.\n*   **System call analysis:** Examining system calls made by a program to understand how it interacts with the operating system, hardware, or external resources.\n*   **Cryptographic analysis:** Identifying and analyzing encryption and decryption algorithms used within a program or analyzing any cryptographic keys or certificates that may be present.\n*   **Pattern recognition:** Identifying common patterns, structures, or routines in code that may indicate the use of known algorithms or frameworks.\n\nRemember that mastering the art of reverse engineering takes time and practice. As you delve deeper into the world of reverse engineering, you will develop the ability to recognize patterns, understand complex systems, and ultimately, better defend against cyber threats.",
     "links": [
       {
-        "id": "1cXz6Uoa-102IforWMIZW",
         "title": "OllyDbg",
         "url": "http://www.ollydbg.de/",
         "type": "article"
       },
       {
-        "id": "EvkHYJJHRCUiVoeSuxZbn",
         "title": "GDB",
         "url": "https://www.gnu.org/software/gdb/",
         "type": "article"
       },
       {
-        "id": "VktuuDzt2sPjL5xNkgA71",
         "title": "x64dbg",
         "url": "https://x64dbg.com/",
         "type": "article"
@@ -1167,37 +1117,31 @@
     "description": "Authentication vs Authorization\n-------------------------------\n\n**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:\n\n**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.",
     "links": [
       {
-        "id": "ohG_otK54E6XyNAjD4j-m",
         "title": "Two-factor authentication (2FA)",
         "url": "https://authy.com/what-is-2fa/",
         "type": "article"
       },
       {
-        "id": "fAFYb7f0Jo5VDKI-TZHrY",
         "title": "Biometrics (fingerprint, facial recognition, etc.)",
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5428991/",
         "type": "article"
       },
       {
-        "id": "PrkVfH6CZPDdv2ibWSzxK",
         "title": "Security tokens or certificates",
         "url": "https://www.comodo.com/e-commerce/ssl-certificates/certificate.php",
         "type": "article"
       },
       {
-        "id": "v3blbpHQr2M9rytaMQZQt",
         "title": "Role-based access control (RBAC)",
         "url": "https://en.wikipedia.org/wiki/Role-based_access_control",
         "type": "article"
       },
       {
-        "id": "g4QdHSrOBZnJsghg-X7N8",
         "title": "Access Control Lists (ACLs)",
         "url": "https://en.wikipedia.org/wiki/Access-control_list",
         "type": "article"
       },
       {
-        "id": "a0bJQWxWe6owe74aU5SsH",
         "title": "Attribute-based access control (ABAC)",
         "url": "https://en.wikipedia.org/wiki/Attribute-based_access_control",
         "type": "article"
@@ -1209,7 +1153,6 @@
     "description": "In the context of cybersecurity, Blue Team, Red Team, and Purple Team are terms used to describe different roles and methodologies employed to ensure the security of an organization or system. Let's explore each one in detail.\n\nBlue Team\n---------\n\nThe Blue Team is responsible for defending an organization's information systems, networks, and critical assets from security threats. They are tasked with the ongoing monitoring of systems, detecting and responding to potential security incidents, and implementing protective measures.\n\n**Key activities of the Blue Team:**\n\n*   Develop and implement security policies and procedures\n*   Perform vulnerability assessments and risk assessments\n*   Deploy security tools and technologies (e.g., firewalls, intrusion detection systems, etc.)\n*   Monitor logs and analyze security events for potential threats\n*   Respond to and investigate security incidents\n*   Conduct security awareness and training programs\n\nRed Team\n--------\n\nThe Red Team's primary goal is to simulate real-world attacks, identify vulnerabilities, and test the effectiveness of the Blue Team's defensive strategies. They are external or internal team members that act like adversaries, using creativity, and advanced techniques to test an organization's cybersecurity defenses.\n\n**Key activities of the Red Team:**\n\n*   Perform regular penetration testing and security assessments\n*   Use social engineering techniques to exploit human weaknesses\n*   Analyze and exploit vulnerabilities in systems, networks, and applications\n*   Emulate advanced persistent threats and attack scenarios\n*   Provide actionable insights to improve the organization's security posture\n\nPurple Team\n-----------\n\nThe Purple Team bridges the gap between the Blue Team and Red Team, helping to create a more collaborative environment. They facilitate communication and information sharing between the two teams, ultimately aiming to improve the overall effectiveness of a security program.\n\n**Key activities of the Purple Team:**\n\n*   Coordinate and plan joint exercises between Blue Team and Red Team\n*   Share knowledge, techniques, and findings between the teams\n*   Assist with the implementation of identified security improvements\n*   Evaluate and measure the effectiveness of security controls\n*   Foster a culture of continuous improvement and collaboration\n\nBy investing in Blue, Red, and Purple Team efforts, organizations can achieve a more robust and resilient security posture, capable of withstanding and adapting to ever-evolving threats.",
     "links": [
       {
-        "id": "yr53wP4LA1ReUnkXwWaFw",
         "title": "Red Team Fundamentals (TryHackMe)",
         "url": "https://tryhackme.com/room/redteamfundamentals",
         "type": "article"
@@ -1241,7 +1184,6 @@
     "description": "The **CIA Triad** is a foundational concept in cybersecurity that stands for **Confidentiality, Integrity, and Availability**. These three principles represent the core objectives that should be guaranteed in any secure system.\n\nConfidentiality\n---------------\n\nConfidentiality aims to protect sensitive information from unauthorized users or intruders. This can be achieved through various security mechanisms, such as encryption, authentication, and access control. Maintaining confidentiality ensures that only authorized individuals can access the information and systems.\n\nKey Points:\n-----------\n\n*   Encryption: Converts data into an unreadable format for unauthorized users, but can be decrypted by authorized users.\n*   Authentication: Ensures the identity of the users trying to access your system or data, typically through the use of credentials like a username/password or biometrics.\n*   Access Control: Defines and regulates which resources or data can be accessed by particular users and under which conditions.\n\nIntegrity\n---------\n\nIntegrity ensures that information and systems are protected from modifications or tampering by unauthorized individuals. This aspect of the triad is crucial for maintaining accuracy, consistency, and reliability in your systems and data. Integrity controls include checksums, file permissions, and digital signatures.\n\nKey Points:\n-----------\n\n*   Checksums: Mathematical calculations that can be used to verify the integrity of data by detecting any changes.\n*   File Permissions: Ensure that only authorized users have the ability to modify or delete specific files.\n*   Digital Signatures: A cryptographic technique that can be used to authenticate the source and integrity of data or messages.\n\nAvailability\n------------\n\nAvailability ensures that systems and information are accessible and functional when needed. This can be achieved by implementing redundancy, fault tolerance, and backup solutions. High availability translates to better overall reliability of your systems, which is essential for critical services.\n\nKey Points:\n-----------\n\n*   Redundancy: Duplicate or backup components or systems that can be used in case of failure.\n*   Fault Tolerance: The capacity of a system to continue functioning, even partially, in the presence of faults or failures.\n*   Backups: Regularly saving copies of your data to prevent loss in case of a catastrophe, such as a hardware failure, malware attack, or natural disaster.\n\nIn summary, the CIA Triad is an essential aspect of cybersecurity, providing a clear framework to evaluate and implement security measures. By ensuring confidentiality, integrity, and availability, you create a robust and secure environment for your information and systems.",
     "links": [
       {
-        "id": "C0rpDHYHBd3U-bdRbf0iL",
         "title": "The CIA Triad - Professor Messer",
         "url": "https://www.youtube.com/watch?v=SBcDGb9l6yo",
         "type": "video"
@@ -1298,7 +1240,6 @@
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network.\n\nHow It Works\n------------\n\nWhen a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address.\n\nThe device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nSecurity Concerns\n-----------------\n\nWhile ARP is crucial for the functioning of most networks, it also presents certain security risks. ARP poisoning, for example, occurs when an attacker sends fake ARP messages with the goal to associate their MAC address with the IP address of a target device. This can lead to Man-in-the-Middle (MITM) attacks where the attacker can intercept, modify, or block traffic intended for the target device.\n\nTo mitigate ARP poisoning attacks, organizations can implement security measures such as static ARP entries, dynamic ARP inspection, and ensuring that their network devices are updated with the latest security patches.\n\nBy understanding ARP and the potential security risks it presents, you can help protect your network by incorporating appropriate security solutions and staying vigilant against potential threats.",
     "links": [
       {
-        "id": "5dor3mwuF-oxVRe2A1Ztu",
         "title": "ARP Explained - Address Resolution Protocol",
         "url": "https://www.youtube.com/watch?v=cn8Zxh9bPio",
         "type": "video"
@@ -1397,8 +1338,24 @@
   },
   "auR7fNyd77W2UA-PjXeJS": {
     "title": "ATT&CK",
-    "description": "",
-    "links": []
+    "description": "MITRE ATT&CK® stands for Adversarial Tactics, Techniques & Common Knowledge.\n\nMITRE ATT&CK documents various strategies, methods, and processes employed by adversaries at every stage of a cybersecurity incident, from the reconnaissance and strategizing phase to the final implementation of the attack.\n\nThe insights provided by MITRE ATT&CK can empower security professionals and teams to enhance their defensive strategies and responses against potential threats.\n\nThis framework was created by the non-profit organization MITRE Corporation and is continuously updated with contributions from cybersecurity experts worldwide.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "MITRE ATT&CK®",
+        "url": "https://attack.mitre.org/",
+        "type": "article"
+      },
+      {
+        "title": "MITRE ATT&CK Framework",
+        "url": "https://www.youtube.com/watch?v=Yxv1suJYMI8",
+        "type": "video"
+      },
+      {
+        "title": "Introduction To The MITRE ATT&CK Framework",
+        "url": "https://www.youtube.com/watch?v=LCec9K0aAkM",
+        "type": "video"
+      }
+    ]
   },
   "7Bmp4x6gbvWMuVDdGRUGj": {
     "title": "Kill Chain",
@@ -1437,8 +1394,24 @@
   },
   "c2kY3wZVFKZYxMARhLIwO": {
     "title": "SIEM",
-    "description": "",
-    "links": []
+    "description": "SIEM, short for Security Information and Event Manager, is a term used to describe tools that greatly increases visibility into a network or system. It does this by monitoring, filtering, collecting, normalizing, and correlating vast amounts of data such as logs, and neatly presents it via an interface/dashboard.\n\nOrganizations leverage SIEMs to monitor and thus identify, protect, and respond to potential threats in their environment.\n\nFor hands-on experience, you should consider setting up a SIEM in your own environment. A common stack widely used for various purposes across the industry is the ELK-stack.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Security 101: What is a SIEM? - Microsoft",
+        "url": "https://www.microsoft.com/security/business/security-101/what-is-siem",
+        "type": "article"
+      },
+      {
+        "title": "Using the ELK stack for SIEM",
+        "url": "https://logz.io/blog/elk-siem/",
+        "type": "article"
+      },
+      {
+        "title": "Build a powerful home SIEM",
+        "url": "https://www.youtube.com/watch?v=2XLzMb9oZBI",
+        "type": "video"
+      }
+    ]
   },
   "i0ulrA-GJrNhIVmzdWDrn": {
     "title": "SOAR",
@@ -1460,7 +1433,6 @@
     "description": "**LoLBAS** stands for **Living off the Land Binaries and Scripts**. It is a collection of tools, utilities, and scripts, often built-in within an operating system, that attackers exploit for unintended purposes. These tools can assist the adversaries in achieving their objectives without the need to install any additional software, thus avoiding detection by many security solutions.\n\nIn this section, we will explore the concept and significance of LoLBAS, and the challenges they present in the context of cyber security.\n\nWhat is LoLBAS?\n---------------\n\nLoLBAS are legitimate tools, binaries, and scripts that are already present in a system. These may be default OS utilities, like PowerShell or Command Prompt, or commonly installed applications, such as Java or Python. Adversaries utilize these tools to perform malicious activities, as they blend into the environment and are less likely to raise any alarms.\n\nSome examples of LoLBAS include:\n\n*   PowerShell: Used for executing commands and scripts for various administrative functions.\n*   Cscript and Wscript: Used for executing VBScript and JScript files.\n*   Certutil: Used for updating certificate store but can also be leveraged to download files from the internet.\n\nWhy LoLBAS are popular among adversaries?\n-----------------------------------------\n\nThere are several reasons why adversaries choose to use LoLBAS for their malicious purposes:\n\n*   **No additional software required**: As these tools are already a part of the target system, there is no need to install new software that could potentially be detected.\n*   **Ease of use**: Many LoLBAS provide powerful capabilities without requiring complex coding. As a result, adversaries can swiftly implement and execute tasks using them.\n*   **Masquerading as legitimate actions**: Since LoLBAS are typically used for legitimate purposes, suspicious activities using these tools can blend in with regular traffic, making it difficult to identify and detect.\n\nChallenges posed by LoLBAS\n--------------------------\n\nUtilizing LoLBAS presents unique challenges in cyber security due to the following reasons:\n\n*   **Difficulty in detection**: Identifying and differentiating between malicious and legitimate uses of these tools is a challenging task.\n*   **False positives**: Blocking, limiting, or monitoring the usage of LoLBAS frequently leads to false positives, as legitimate users might also rely on these tools.\n\nSecuring against LoLBAS attacks\n-------------------------------\n\nTo protect against LoLBAS-based attacks, organizations should consider taking the following steps:\n\n*   **Monitor behavior**: Establish baselines of normal system behavior and monitor for deviations, which could suggest malicious use of LoLBAS.\n*   **Least privilege principle**: Apply the principle of least privilege by limiting user permissions, reducing the potential attack surface.\n*   **Harden systems**: Remove or disable unnecessary tools and applications that could be exploited by adversaries.\n*   **Educate users**: Train users on the risks and signs of LoLBAS usage and encourage them to report suspicious activity.\n*   **Employ advanced security solutions**: Use technologies like Endpoint Detection and Response (EDR) and behavioral analytics to detect abnormal patterns that could be associated with LoLBAS abuse.\n\nConclusion\n----------\n\nLoLBAS present a significant challenge to cyber security, as they blend in with legitimate system activities. However, overcoming this challenge is possible through a combination of proactive monitoring, system hardening, and user education.\n\nEnsure you are well prepared to identify and mitigate LoLBAS attacks by following the recommendations provided in this guide. Stay vigilant and stay secure!",
     "links": [
       {
-        "id": "0NFfmtakd5c110bElfLOl",
         "title": "LOLBAS project",
         "url": "https://lolbas-project.github.io/#",
         "type": "article"
@@ -1557,31 +1529,26 @@
     "description": "DNS Security Extensions (DNSSEC) is a protocol designed to address security vulnerabilities in the Domain Name System (DNS). Here are the key points:\n\n*   **Digital Signatures:** DNSSEC protects against attacks by digitally signing DNS data. These signatures ensure data validity and prevent tampering.\n    \n*   **Hierarchical Signing:** DNSSEC signs data at every level of the DNS lookup process. For instance, when looking up ‘[google.com](http://google.com),’ the root DNS server signs a key for the .COM nameserver, which then signs a key for [google.com](http://google.com)’s authoritative nameserver.\n    \n*   **Backwards Compatibility:** DNSSEC doesn’t disrupt traditional DNS lookups; it adds security without breaking existing functionality. It complements other security measures like SSL/TLS.\n    \n*   **Chain of Trust:** DNSSEC establishes a parent-child trust chain from the root zone down to specific domains. Any compromise in this chain exposes requests to on-path attacks.\n    \n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "KBvg_D_mOk9KsoKICzPVJ",
         "title": "DNSSEC: What Is It and Why Is It Important? - ICANN",
         "url": "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en",
         "type": "article"
       },
       {
-        "id": "-P3DP0b5WZ421sWW_N6oj",
         "title": "How DNSSEC Works - Cloudflare",
         "url": "https://www.cloudflare.com/dns/dnssec/how-dnssec-works/",
         "type": "article"
       },
       {
-        "id": "tGdh9crRaQ9YrFfjAxCO-",
         "title": "What is DNS security? - Cloudflare",
         "url": "https://www.cloudflare.com/learning/dns/dns-security/",
         "type": "article"
       },
       {
-        "id": "_mrTLjW6krpZ6kUG94EnP",
         "title": "What is DNSSEC? - IBM",
         "url": "https://www.youtube.com/watch?v=Fk2oejzgSVQ",
         "type": "video"
       },
       {
-        "id": "T1nzorjbLNU6IyiNkILyo",
         "title": "(DNS) 101 Miniseries",
         "url": "https://www.youtube.com/playlist?list=PLTk5ZYSbd9MhMmOiPhfRJNW7bhxHo4q-K",
         "type": "video"
@@ -1629,7 +1596,7 @@
     "links": []
   },
   "tWDo5R3KU5KOjDdtv801x": {
-    "title": "Firwall & Nextgen Firewall",
+    "title": "Firewall & Nextgen Firewall",
     "description": "",
     "links": []
   },
@@ -1649,7 +1616,7 @@
     "links": []
   },
   "jWl1VWkZn3n1G2eHq6EnX": {
-    "title": "Host Based Firwall",
+    "title": "Host Based Firewall",
     "description": "",
     "links": []
   },
@@ -1718,7 +1685,6 @@
     "description": "Advanced Persistent Threats, or APTs, are a class of cyber threats characterized by their persistence over a long period, extensive resources, and high level of sophistication. Often associated with nation-state actors, organized cybercrime groups, and well-funded hackers, APTs are primarily focused on targeting high-value assets, such as critical infrastructure, financial systems, and government agencies.\n\nKey Aspects of APT\n------------------\n\n*   **Persistence**: APTs are designed to maintain a low profile and operate under the radar for extended periods. Hackers use advanced techniques to maintain access and control over their targets, and continually adapt and evolve in order to avoid being discovered.\n    \n*   **Sophistication**: APTs are known for employing a wide range of techniques and tactics to infiltrate and exploit their targets, including zero-day vulnerabilities, spear-phishing, social engineering, and advanced malware. The level of expertise behind APTs is typically higher than your average cybercriminal.\n    \n*   **Motivation**: APTs often have significant resources behind them, which allows for sustained cyber campaigns against specific targets. The motivation can be monetary gain, espionage, or even maintaining a competitive edge in the marketplace. APTs can also be used to sow chaos and destabilize geopolitical rivals.\n    \n\nDetecting and Mitigating APTs\n-----------------------------\n\nDue to the sophisticated and persistent nature of APTs, they can be challenging to detect and protect against. However, implementing several best practices can help organizations mitigate the risk and impact of APTs:\n\n*   Adopt a proactive approach to cyber security, including continuous network monitoring, threat hunting, and regular assessments.\n*   Implement a robust set of defense-in-depth security measures, including intrusion detection systems (IDS), firewalls, and access controls.\n*   Train employees on cybersecurity awareness and how to spot and respond to cyber threats.\n*   Keep systems updated and patched to prevent exploitation of known vulnerabilities.\n*   Employ advanced threat intelligence solutions to identify and anticipate potential APT campaigns.\n\nAPT attacks can be damaging and disruptive to organizations, but understanding the nature of these threats and implementing a comprehensive security strategy can help minimize the risk and protect valuable assets. Remember, APTs are not just a concern for large enterprises and governments; organizations of all sizes can be targeted. Staying vigilant and proactive is key to staying safe from these advanced threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "6pDXZgJcMZsOoO5FNrGMK",
         "title": "What Are Advanced Persistent Threats? - IBM",
         "url": "https://www.ibm.com/topics/advanced-persistent-threats",
         "type": "article"
@@ -1752,8 +1718,19 @@
   },
   "-RnlvUltJ9IDtH0HEnMbN": {
     "title": "WHOIS",
-    "description": "",
-    "links": []
+    "description": "Whois is a protocol that allows querying databases to obtain information about the owner of a domain name, an IP address, or an autonomous system number on the Internet.\n\nIn the field of cyber security, Whois data is one of several components in passive reconnaissance and open-source intelligence(OSINT) gathering.",
+    "links": [
+      {
+        "title": "How to use the whois command on Linux",
+        "url": "https://www.howtogeek.com/680086/how-to-use-the-whois-command-on-linux/",
+        "type": "article"
+      },
+      {
+        "title": "Whois lookup",
+        "url": "https://www.whois.com/whois/",
+        "type": "article"
+      }
+    ]
   },
   "7obusm5UtHwWMcMMEB3lt": {
     "title": "Phishing",
@@ -1762,7 +1739,7 @@
   },
   "M65fCl72qlF0VTbGNT6du": {
     "title": "Whishing",
-    "description": "",
+    "description": "Social engineering attack involving voice, such as a phone call to trick a victim to do something to the benefit of the attacker.\n\nDerived from voice-phishing, or \"vishing\".",
     "links": []
   },
   "KSwl6sX2W47vUmytpm8LH": {
@@ -1772,7 +1749,7 @@
   },
   "d4U6Jq-CUB1nNN2OCFoum": {
     "title": "Smishing",
-    "description": "",
+    "description": "SMS-phishing, or \"smishing\", is a type of social-engineering attack based on SMS, or text messages, to trick a victim into doing something to the benefit of the attacker, such as clicking on a malicious link or providing sensitive information.",
     "links": []
   },
   "cbEMUyg_btIPjdx-XqIM5": {
@@ -1792,7 +1769,7 @@
   },
   "o-keJgF9hmifQ_hUD91iN": {
     "title": "Tailgating",
-    "description": "",
+    "description": "Tailgating is the act of getting access to a restricted area by simply following an authorized person. This is a common social engineering technique used by attackers to gain physical access to a building or a restricted area. The attacker waits for an authorized person to open the door and then follows them inside. This technique is effective because it is based on trust and the assumption that the attacker is an authorized person.",
     "links": []
   },
   "v9njgIxZyabJZ5iND3JGc": {
@@ -2046,7 +2023,7 @@
     "links": []
   },
   "_RnuQ7952N8GWZfPD60sJ": {
-    "title": "Programming Skills (Optional but Recommended)",
+    "title": "Programming Skills",
     "description": "Programming knowledge is a fundamental skill for professionals in the cybersecurity field, as it enables them to build, assess, and defend computer systems, networks, and applications. Having a strong foundation in programming languages, concepts, and techniques is essential for identifying potential security threats, writing secure code, and implementing robust security measures.\n\nKey Programming Languages\n-------------------------\n\nIt's important to learn multiple programming languages relevant to cybersecurity, as different languages cater to different types of tasks and environments. Here are some of the most widely used programming languages in the cybersecurity field:\n\n*   **Python**: As an easy-to-learn high-level language, Python is commonly used for tasks like automation, scripting, and data analysis. It also contains a plethora of libraries and frameworks for cybersecurity, making it highly valuable for security professionals.\n*   **C/C++**: These two languages are foundational for understanding system and application-level vulnerabilities since most operating systems are written in C and C++. Knowledge of these languages allows cybersecurity experts to analyze source code, identify potential exploits, and create secure software.\n*   **Java**: As a popular and versatile programming language, Java is often used in web applications and enterprise environments. Java knowledge equips cybersecurity professionals to understand and mitigate potential security flaws in Java-based applications.\n*   **JavaScript**: With its ubiquity in modern web browsers, JavaScript is crucial for understanding and protecting against web security vulnerabilities, such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks.\n*   **Ruby**: Ruby has a strong foothold in web application development and is utilized for scripting and automation, just like Python. Familiarity with Ruby may give cybersecurity professionals an edge in certain environments.\n\nConcepts and Techniques\n-----------------------\n\nTo apply programming knowledge effectively in cybersecurity, you should ground yourself in key concepts and techniques, such as:\n\n*   **Cryptography**: Learn about encryption, decryption, encoding, and hashing techniques, as well as fundamental cryptographic algorithms and protocols used to secure data transmission and storage.\n*   **Secure coding practices**: Understand concepts like input validation, output encoding, and error handling, which help prevent security vulnerabilities in programs.\n*   **Reverse engineering**: Master the art of deconstructing software and analyzing it without access to the original source code, which is crucial for dissecting malware, identifying vulnerabilities, and developing security patches.\n*   **Scripting and automation**: Develop skills in writing scripts and automating tasks, as it can save time and enhance efficiency in cybersecurity workflows.\n*   **Data analysis**: Learn to analyze and visualize data relevant to cybersecurity, such as network traffic logs, patterns, and trends, to make informed decisions and implement appropriate defense strategies.\n\nAcquiring programming knowledge in cybersecurity can help you stay on top of the latest threats, develop secure software, and implement effective countermeasures. As you progress in your cybersecurity career, you'll find that your programming skills will continually evolve and your understanding of various languages, concepts, and techniques will expand.",
     "links": []
   },
@@ -2055,25 +2032,21 @@
     "description": "Python is a versatile, high-level programming language that is widely used in various fields, such as web development, data analysis, artificial intelligence, and cyber security. It is known for its simplicity, readability, and extensive library support, making it a popular choice for beginners as well as experts.\n\nKey Features:\n-------------\n\n*   **Easy to learn and read**: Python features a clean and simple syntax, which makes it easy for beginners to start coding quickly and minimizes the chance of errors.\n*   **Platform independent**: Python can run on any platform, including Windows, Linux, and macOS, making it suitable for cross-platform development.\n*   **Large ecosystem**: Python has a vast ecosystem of libraries and frameworks, including popular ones like Django, Flask, and Scikit-learn, which can help speed up the development process.\n*   **Strong community support**: Python has a large and active community, which provides a wealth of resources, such as tutorials, sample code, and expert assistance when needed.\n\nPython in Cyber Security:\n-------------------------\n\nPython is particularly valuable in the field of cyber security for several reasons:\n\n*   **Scripting and Automation**: Python is excellent for creating scripts and automating tasks, which is useful for managing security tasks such as log analysis, scanning networks, and penetration testing.\n*   **Exploit Development**: Python's readability and simplicity make it suitable for developing exploits and writing proof-of-concept code, essential tasks in cyber security.\n*   **Analysis and Visualization**: With powerful libraries like Pandas, NumPy, and Matplotlib, Python can help security analysts process, analyze, and visualize large data sets, making it easier to identify patterns and detect security threats.\n\nLearning Python:\n----------------\n\nTo start learning Python, here are some useful resources:\n\nRemember, practice is key, and the more you work with Python, the more you'll appreciate its utility in the world of cyber security.",
     "links": [
       {
-        "id": "Hi8XwfiacGWQgMG8SCyeY",
         "title": "Python.org",
         "url": "https://www.python.org/",
         "type": "article"
       },
       {
-        "id": "Ewsj11O0QUYMQKRrV1sSl",
         "title": "Real Python",
         "url": "https://realpython.com/",
         "type": "article"
       },
       {
-        "id": "Sb3hCruHz9swo-fi6NU3U",
         "title": "Automate the Boring Stuff with Python",
         "url": "https://automatetheboringstuff.com/",
         "type": "article"
       },
       {
-        "id": "6fbPJ0Qs01uOQ0X7odsjU",
         "title": "Explore top posts about Python",
         "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
         "type": "article"
@@ -2085,37 +2058,31 @@
     "description": "Go, also known as Golang, is an open-source programming language created by Google. Launched in 2009, it was designed to overcome issues present in other languages and offer a more secure, robust, and efficient development experience.\n\nKey Features of Go\n------------------\n\n*   **Performance**: Go is a statically-typed compiled language, which means that it offers greater performance compared to interpreted programming languages like Python or JavaScript.\n*   **Concurrency**: One of the strengths of Go is its support for concurrent programming. It uses goroutines to handle multiple tasks simultaneously and efficiently.\n*   **Simplicity & Readability**: The syntax of Go is straightforward and easy to understand, making it an excellent choice for the development of secure applications.\n*   **Static Typing & Strong Type Safety**: Go enforces static typing, which helps to detect errors at the development stage and minimize security risks.\n*   **Standard Library & Collaboration**: Go has a rich standard library, which provides numerous packages for various tasks, such as cryptography, data handling, and communication protocols.\n\nGo In Cyber Security\n--------------------\n\nGo is increasingly becoming popular in the field of cyber security due to its unique features:\n\n*   **Secure Web Development**: Go offers built-in support for handling sensitive data, secure communication protocols like HTTPS, and secure cryptographic methods, which help in developing secure web applications.\n*   **Network Security**: With its efficient concurrency model, Go is suitable for building network security tools like scanners, proxies, intrusion detection systems, and more.\n*   **Malware Analysis**: Go's performance and ease of use make it suitable for developing tools to detect, analyze, and reverse engineer malware.\n*   **Cryptographic Tools & Utility**: Go's standard library covers a wide range of cryptography methods, making it convenient to build secure tools and utilities.\n*   **Open-Source Software Security**: As an open-source language, Go attracts a large community of developers who collaborate and continuously improve its security features.\n\nGo Resources\n------------\n\nTo get started with Go, consider leveraging the following resources:\n\nAs you learn and incorporate Go into your cyber security toolkit, you will find it to be a versatile and valuable language in building secure, efficient, and reliable tools and applications.",
     "links": [
       {
-        "id": "Q4WHss4JDG7cpJlylRiEV",
         "title": "Golang Courses on Udemy, Coursera, and Pluralsight",
         "url": "https://www.udemy.com/topic/go/",
         "type": "course"
       },
       {
-        "id": "b8FrVLCLSw3wpN-P1Fmyi",
         "title": "Official Go Documentation",
         "url": "https://golang.org/doc/",
         "type": "article"
       },
       {
-        "id": "4mOeXVnzMEBZFcKoUJVkR",
         "title": "Go by Example",
         "url": "https://gobyexample.com/",
         "type": "article"
       },
       {
-        "id": "SHppbMaARioE5mdS03LXY",
         "title": "A Tour of Go",
         "url": "https://tour.golang.org/",
         "type": "article"
       },
       {
-        "id": "-OTtvS5oJ2dnL3sVdqqyF",
         "title": "The Go Programming Language book",
         "url": "http://www.gopl.io/",
         "type": "article"
       },
       {
-        "id": "v4qkiTCSMh1xszIsj3HR2",
         "title": "Explore top posts about Golang",
         "url": "https://app.daily.dev/tags/golang?ref=roadmapsh",
         "type": "article"
@@ -2127,25 +2094,21 @@
     "description": "JavaScript (often abbreviated as JS) is a widely-used, high-level programming language. It is predominantly used for creating and enhancing the interactive elements of web pages, making it an integral part of the web development space. JavaScript was initially known as LiveScript and was created by Brendan Eich in 1995, but it later got renamed to JavaScript.\n\nFeatures of JavaScript:\n-----------------------\n\n*   **Interpreted Language:** JavaScript does not need to be compiled before it is run which makes it easier to find errors in the code.\n*   **Object-Oriented Programming:** JavaScript supports object-oriented programming (OOP) concepts, making it easier for developers to work with complex data structures and code.\n*   **Event-driven:** JavaScript supports event-driven programming, allowing developers to create interactive elements and respond to user actions like clicks and keypress events on the web page.\n*   **Cross-platform Compatibility:** JavaScript can be run on any browser, platform, or operating system, making it a highly versatile language.\n\nJavaScript in Web Development\n-----------------------------\n\nJavaScript is an essential part of web development primarily due to its ability to manipulate and interact with HTML and CSS elements on a web page.\n\nSome common uses for JavaScript in web development:\n\n*   **Form Validation:** Validating user inputs in contact forms, registrations forms, and other user input scenarios.\n*   **Image Sliders and Galleries:** Creating dynamic image sliders and galleries on websites to enhance user experience.\n*   **Interactive Maps:** Integrating interactive maps into websites for display or directions.\n*   **Animation:** Adding animations to elements on a webpage for a more engaging experience.\n\nJavaScript Libraries and Frameworks\n-----------------------------------\n\nJavaScript has many libraries and frameworks to help developers work more efficiently and to attain better results. Some popular libraries and frameworks include:\n\n_jQuery:_ A highly popular JavaScript library that simplifies DOM manipulation, event handling, and animations.\n\n_React:_ Developed by Facebook, it is a JavaScript library for building interactive user interfaces (UI).\n\n_Angular:_ A powerful, Google-developed JavaScript framework used for developing dynamic web applications.\n\n_Vue.js:_ A lightweight, easy-to-learn JavaScript framework for building interactive user interfaces.\n\n_Node.js:_ A JavaScript runtime environment built on Chrome's V8 JavaScript engine, allowing developers to run JavaScript on the server-side.\n\nLearning JavaScript\n-------------------\n\nHere are some resources to sharpen your JavaScript programming skills:\n\nBy mastering JavaScript, you'll be better equipped to build more interactive and dynamic web applications, thus enhancing your overall cyber security skills.",
     "links": [
       {
-        "id": "sgODWqcz8BuQDeRTXBXxB",
         "title": "Mozilla Developer Network (MDN) JavaScript Guide",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
         "type": "article"
       },
       {
-        "id": "eVXIAnOLt4C-sERc1nPP6",
         "title": "W3Schools JavaScript Tutorial",
         "url": "https://www.w3schools.com/js/",
         "type": "article"
       },
       {
-        "id": "S_HNlI309tkwQTbLu32WZ",
         "title": "Eloquent JavaScript: A Modern Introduction to Programming",
         "url": "https://eloquentjavascript.net/",
         "type": "article"
       },
       {
-        "id": "JXKre-WfwjnVt2pA0Yswv",
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
@@ -2157,31 +2120,26 @@
     "description": "C++ is a widely-used, high-level programming language that evolved from the earlier C programming language. Developed by Bjarne Stroustrup in 1985 at Bell Labs, C++ provides object-oriented features and low-level memory manipulation, making it an essential language for many fields, including game development, high-performance systems, and cybersecurity.\n\nKey Features of C++:\n--------------------\n\nObject-Oriented Programming (OOP)\n---------------------------------\n\nC++ is one of the first programming languages to support Object-Oriented Programming (OOP). It allows code to be modular and reusable through the use of classes and objects.\n\nPerformance\n-----------\n\nC++ provides high performance, as it allows low-level access to memory and fine-grained control over system resources. This makes C++ suitable for performance-critical applications like network security systems and firewalls.\n\nCompatibility\n-------------\n\nC++ is highly compatible with the C programming language, which makes it easier for programmers to transition from C to C++. Many system-level libraries and applications written in C can be easily extended or integrated with C++ code.\n\nStandard Template Library (STL)\n-------------------------------\n\nC++ comes with a rich library called the Standard Template Library (STL). The STL contains efficient templated data structures and algorithms, which can improve development speed and code quality.\n\nImportance of C++ in Cybersecurity\n----------------------------------\n\nC++ is widely used in the development of cybersecurity tools and applications due to its efficiency, low-level access, and compatibility with existing systems. Some reasons for its importance in cybersecurity include:\n\n*   **Developing Security Software:** C++ is commonly used in developing antivirus software, firewalls, intrusion detection systems, and other security tools due to its strong performance capabilities.\n    \n*   **Reverse Engineering and Exploit Development:** Cybersecurity professionals often use C++ to reverse-engineer malware, study their behavior, and develop countermeasures to stop them.\n    \n*   **Vulnerability Analysis:** Since many applications are developed in C++, understanding the language helps cybersecurity professionals assess the code for vulnerabilities and potential exploits.\n    \n*   **Secure Code Development:** Developing secure applications is vital to prevent security breaches. With its powerful features, C++ enables developers to write efficient, maintainable, and secure code.\n    \n\nResources for Learning C++\n--------------------------\n\nTo advance your programming skills in C++ and leverage its power for cybersecurity tasks, consider the following resources:\n\nBy mastering C++, you'll be well-equipped to develop and secure applications, analyze cybersecurity threats, and effectively contribute to the broader cybersecurity community.",
     "links": [
       {
-        "id": "zr2hWpk_ZSbPin95ndspE",
         "title": "Coursera: C++ For C Programmers",
         "url": "https://www.coursera.org/specializations/c-plus-plus-programming",
         "type": "course"
       },
       {
-        "id": "GXDJhh81u8xKqOMLiIgZP",
         "title": "Cplusplus.com",
         "url": "http://www.cplusplus.com/",
         "type": "article"
       },
       {
-        "id": "OJTfLxLX8ljV_NalMXK6C",
         "title": "CPPReference.com",
         "url": "https://en.cppreference.com/",
         "type": "article"
       },
       {
-        "id": "YUCdqxc6UHMceHauIwcap",
         "title": "A Tour of C++",
         "url": "https://www.amazon.com/Tour-C-Depth/dp/0134997832",
         "type": "article"
       },
       {
-        "id": "uGno6HuevaV07UgBOyJg_",
         "title": "Explore top posts about C++",
         "url": "https://app.daily.dev/tags/c++?ref=roadmapsh",
         "type": "article"
@@ -2193,31 +2151,26 @@
     "description": "Bash (**B**ourne **A**gain **Sh**ell) is a widely-used Unix shell and scripting language that acts as a command-line interface for executing commands and organizing files on your computer. It allows users to interact with the system's operating system by typing text commands, serving as an alternative to the graphical user interface (GUI). Bash, created as a free and improved version of the original Bourne Shell (`sh`), is the default shell in many Unix-based systems, including Linux, macOS, and the Windows Subsystem for Linux (WSL).\n\nBash Scripting\n--------------\n\nBash scripting is an essential skill for anyone engaged in cyber security. It allows you to automate simple tasks, monitor system activities, and manage multiple files and directories with ease. With Bash scripts, you can develop tools, automate repetitive tasks, or even develop security testing tools.\n\nKey Features\n------------\n\n*   **Variables**: Variables can store data in the form of strings or numbers, which can be used and manipulated throughout your script.\n    \n*   **Control Structures**: Bash supports loops (`for`, `while`) and conditional statements (`if`, `case`) to build more robust scripts with decision-making capabilities.\n    \n*   **Functions**: Create reusable code blocks that can be called with specified parameters, making your script more modular and easier to maintain.\n    \n*   **User Input**: Bash scripts allow you to interact with the user by accepting input or choosing options.\n    \n*   **File Management**: Create, modify, or analyze files using built-in commands such as `ls`, `cp`, `mkdir`, and `grep`.\n    \n\nLearning Bash\n-------------\n\nAs a cyber security expert, having a strong foundation in Bash can save you time and help you better understand the inner workings of a system. Invest time in learning Bash essentials, such as basic commands, file manipulation, scripting, and processing text data.\n\n*   Basic Commands: Start by learning some of the most commonly used Bash commands: `cd`, `mv`, `cp`, `rm`, `grep`, `find`, `sort`, etc.\n    \n*   File and Directory Management: Explore the use of commands, like `mkdir`, `rmdir`, `touch`, `chmod`, `chown`, and `ln`, to create, modify, and delete files and directories.\n    \n*   Text Processing: Learn to use commands like `cat`, `less`, `head`, `tail`, and `awk` to analyze and manipulate text data.\n    \n*   Scripting: Start by understanding the syntax and structure of Bash scripts, and learn how to create, debug, and execute scripts.\n    \n\nSome resources to begin your journey with Bash are:\n\nBash scripting is a versatile tool in the cybersecurity toolkit, and mastering it will provide you with greater control over the systems you protect.",
     "links": [
       {
-        "id": "b3sZ9S6ONRu0TVBONEsf4",
         "title": "GNU Bash Manual",
         "url": "https://www.gnu.org/software/bash/manual/bash.html",
         "type": "article"
       },
       {
-        "id": "jGs8xEwYwXt_LhJbYqS3r",
         "title": "Bash Beginner's Guide",
         "url": "http://www.tldp.org/LDP/Bash-Beginners-Guide/html/",
         "type": "article"
       },
       {
-        "id": "wZ9Hv5DMaQ7vjJxqBc1KR",
         "title": "Bash Academy",
         "url": "https://www.bash.academy/",
         "type": "article"
       },
       {
-        "id": "GFx5wWLkM_nzy5Fx5j3Cb",
         "title": "Learn Shell",
         "url": "https://www.learnshell.org/",
         "type": "article"
       },
       {
-        "id": "u0xq5d9UVXf1rbi7KIE0E",
         "title": "Explore top posts about Bash",
         "url": "https://app.daily.dev/tags/bash?ref=roadmapsh",
         "type": "article"
@@ -2229,31 +2182,26 @@
     "description": "PowerShell is a powerful command-line shell and scripting language developed by Microsoft primarily for the purpose of automating tasks and managing system configuration. PowerShell is designed specifically for Windows but has been made available for other platforms as well, such as macOS and Linux.\n\nWhy PowerShell?\n---------------\n\n*   **Automation:** PowerShell scripts allow users to automate tasks, helping to save time and reduce the likelihood of introducing errors during manual processes.\n    \n*   **Command discovery:** PowerShell's built-in `Get-Command` cmdlet allows users to easily find and learn about the commands available to them.\n    \n*   **Consistency:** The consistency of the PowerShell syntax makes it easy to learn and use the scripting language, allowing users to create complex scripts with minimal investment in time and effort.\n    \n*   **Cross-platform compatibility:** PowerShell is now available across various platforms, making it even more valuable to learn and implement in your daily work.\n    \n\nBasic Concepts\n--------------\n\nHere are some essential concepts to understand while working with PowerShell:\n\n*   **Cmdlet:** A cmdlet is a lightweight command that performs a specific action, such as creating a new folder or listing the files in a directory. Cmdlets follow the 'Verb-Noun' syntax (e.g., `Get-Process`, `New-Item`).\n    \n*   **Pipeline:** A pipeline is a method of passing the output of one cmdlet as input to another cmdlet. It's represented using the '|' symbol. (e.g., `Get-Process | Stop-Process`)\n    \n*   **Aliases:** Aliases are alternate names for cmdlets, created to provide a more intuitive, shorthand way to call the original cmdlet (e.g., `ls` is an alias for `Get-ChildItem`).\n    \n*   **Variables:** Variables in PowerShell use the `$` symbol for storing values. (e.g., `$myVariable = \"Hello, World!\"`)\n    \n*   **Operators:** PowerShell supports various operators, such as arithmetic operators, comparison operators, logical operators, etc., for performing calculations, comparisons, and transformations on variables and values.\n    \n*   **Scripting:** PowerShell scripts are saved as `.ps1` files and executed using command line or Integrated Scripting Environment (ISE).\n    \n\nLearning PowerShell\n-------------------\n\nTo get started with PowerShell, begin by learning about the available cmdlets, syntax, and features. Useful resources for learning PowerShell include:\n\nIn conclusion, PowerShell is an essential tool for anyone working with Windows systems and can greatly benefit those in the cybersecurity field. The ability to automate tasks and manage configurations using PowerShell will provide a significant advantage, allowing for more efficient and accurate work.",
     "links": [
       {
-        "id": "IbmQ74sArWtolShv-aZcQ",
         "title": "Learning PowerShell GitHub Repository",
         "url": "https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell",
         "type": "opensource"
       },
       {
-        "id": "yak0MQGNs9wY3rZfYVUXR",
         "title": "Microsoft's Official PowerShell Documentation",
         "url": "https://docs.microsoft.com/en-us/powershell/",
         "type": "article"
       },
       {
-        "id": "Fg8UnPRQD9kiBWI8aVWy4",
         "title": "PowerShell.org",
         "url": "https://powershell.org/",
         "type": "article"
       },
       {
-        "id": "LCl4KkbEuz1StMKKbx6go",
         "title": "Stack Overflow",
         "url": "https://stackoverflow.com/questions/tagged/powershell",
         "type": "article"
       },
       {
-        "id": "DminspOTRenSZF3ZrfOoi",
         "title": "Reddit's r/PowerShell",
         "url": "https://www.reddit.com/r/PowerShell/",
         "type": "article"
@@ -2265,13 +2213,11 @@
     "description": "GTFOBins (GTFOBINS) is a curated list of Unix binaries that can be exploited by attackers to bypass local security restrictions on a misconfigured system. It provides a detailed index of commands and scripts, demonstrating how certain binaries, when used improperly, can enable privilege escalation, file manipulation, and other unauthorized activities, thus serving as a resource for both security professionals to understand potential vulnerabilities and for attackers to identify and exploit weaknesses.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "jibHTSQuYICJyGSuL-WeL",
         "title": "GTFOBins/GTFOBins.github.io",
         "url": "https://gtfobins.github.io/",
         "type": "opensource"
       },
       {
-        "id": "LykdsKqIHBpvdgFfvCnZu",
         "title": "Mastering Privilege Escalation: A Comprehensive Guide on GTFOBins",
         "url": "https://www.youtube.com/watch?v=gx6CTtWohLQ",
         "type": "video"
@@ -2283,13 +2229,11 @@
     "description": "WADcoms (Web Application Dangerous Commands) is a comprehensive database of dangerous web application commands and patterns that can be exploited to compromise web security. It offers a catalog of potentially harmful commands and their contexts, helping security professionals identify and mitigate risks associated with web applications by understanding how these commands can be misused for attacks like SQL injection, cross-site scripting (XSS), and remote code execution (RCE).\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "UhUkdXwcOqLfNTxxRRHJK",
         "title": "WADComs/WADComs.github.io",
         "url": "https://wadcoms.github.io/",
         "type": "opensource"
       },
       {
-        "id": "241LMuWS0A2nYVfx_SeFZ",
         "title": "WADComs: Windows/Active Directory Interactive Cheat Sheet",
         "url": "https://john-woodman.com/research/wadcoms/",
         "type": "article"

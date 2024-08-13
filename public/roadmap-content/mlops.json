@@ -9,25 +9,21 @@
     "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its significant use of indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.\n\nTo start learning Python, here are some useful resources:\n\nRemember, practice is key, and the more you work with Python, the more you'll appreciate its utility in the world of cyber security.",
     "links": [
       {
-        "id": "JyGiCbQioIhKTz-gkmBWk",
         "title": "Python.org",
         "url": "https://www.python.org/",
         "type": "article"
       },
       {
-        "id": "s0UZiViWTKOPELINlHiM4",
         "title": "Real Python",
         "url": "https://realpython.com/",
         "type": "article"
       },
       {
-        "id": "WednKU8oOn4TbgPZeL9px",
         "title": "Automate the Boring Stuff with Python",
         "url": "https://automatetheboringstuff.com/",
         "type": "article"
       },
       {
-        "id": "wUsT7zHHZuWkpKSoVyDu0",
         "title": "Explore top posts about Python",
         "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
         "type": "article"
@@ -39,55 +35,46 @@
     "description": "Go is an open source programming language supported by Google. Go can be used to write cloud services, CLI tools, used for API development, and much more.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "b8NEaMi2OXfCfTM2KzPMz",
         "title": "Visit Dedicated Go Roadmap",
         "url": "/golang",
         "type": "article"
       },
       {
-        "id": "EOG4xDujrPc4wGTglWgNi",
         "title": "A Tour of Go – Go Basics",
         "url": "https://go.dev/tour/welcome/1",
         "type": "article"
       },
       {
-        "id": "qRMPOb6GaXtU_YLVFSDZG",
         "title": "Go Reference Documentation",
         "url": "https://go.dev/doc/",
         "type": "article"
       },
       {
-        "id": "B_9Cd_B7R1TtsEMNffLlj",
         "title": "Go by Example - annotated example programs",
         "url": "https://gobyexample.com/",
         "type": "article"
       },
       {
-        "id": "y4tGe_z3Owy3TeiPGaIsc",
         "title": "W3Schools Go Tutorial ",
         "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
       {
-        "id": "qsPgCD_GBa_cU7Du-r7XW",
         "title": "Making a RESTful JSON API in Go",
         "url": "https://thenewstack.io/make-a-restful-json-api-go/",
         "type": "article"
       },
       {
-        "id": "ovhjHF-wSL2aR7Usj2HCr",
         "title": "Go, the Programming Language of the Cloud",
         "url": "https://thenewstack.io/go-the-programming-language-of-the-cloud/",
         "type": "article"
       },
       {
-        "id": "8dHgq5QM7nLrer9hX6GRs",
         "title": "Explore top posts about Golang",
         "url": "https://app.daily.dev/tags/golang?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "QY7jVbTzjL4pNY9AF1OV7",
         "title": "Go Class by Matt",
         "url": "https://www.youtube.com/playlist?list=PLoILbKo9rG3skRCj37Kn5Zj803hhiuRK6",
         "type": "video"
@@ -104,13 +91,11 @@
     "description": "Version control/source control systems allow developers to track and control changes to code over time. These services often include the ability to make atomic revisions to code, branch/fork off of specific points, and to compare versions of code. They are useful in determining the who, what, when, and why code changes were made.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "yXAHXBbesAnkin8KL_9KC",
         "title": "Git",
         "url": "https://git-scm.com/",
         "type": "article"
       },
       {
-        "id": "Fi-i6r6wRY6gzUuH5mlO5",
         "title": "What is Version Control?",
         "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
         "type": "article"
@@ -122,25 +107,21 @@
     "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "GfgUITesfruNDZMA_tsVU",
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
         "type": "article"
       },
       {
-        "id": "n2Q3H5i4DLcHUn72IY24j",
         "title": "Git Cheat Sheet",
         "url": "https://cs.fyi/guide/git-cheatsheet",
         "type": "article"
       },
       {
-        "id": "I7cWS23ueZqPvLnMIq64U",
         "title": "Explore top posts about Git",
         "url": "https://app.daily.dev/tags/git?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "8nOAXG5VC-DucQG7SuMbh",
         "title": "Git & GitHub Crash Course For Beginners",
         "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
         "type": "video"
@@ -152,55 +133,46 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "h5a87khnErmR0fipU1Dyg",
         "title": "GitHub Website",
         "url": "https://github.com",
         "type": "opensource"
       },
       {
-        "id": "fiG1gu7D6QP_lAdO82_M2",
         "title": "GitHub Documentation",
         "url": "https://docs.github.com/en/get-started/quickstart",
         "type": "article"
       },
       {
-        "id": "ijFYenVNBi4EHr8Jpqnad",
         "title": "How to Use Git in a Professional Dev Team",
         "url": "https://ooloo.io/project/github-flow",
         "type": "article"
       },
       {
-        "id": "t6YvWTxp1KQ4RTCab2VZB",
         "title": "Learn Git Branching",
         "url": "https://learngitbranching.js.org/?locale=en_us",
         "type": "article"
       },
       {
-        "id": "bg5Grvn67f3O6BD0-2Dop",
         "title": "Explore top posts about GitHub",
         "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "JFcYTNd7fdGx-fy8wizov",
         "title": "What is GitHub?",
         "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
         "type": "video"
       },
       {
-        "id": "lFIPmALEZeGGia6IFLp7F",
         "title": "Git vs. GitHub: Whats the difference?",
         "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
         "type": "video"
       },
       {
-        "id": "Pn0jmK76VLpD6_154E-xh",
         "title": "Git and GitHub for Beginners",
         "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
         "type": "video"
       },
       {
-        "id": "WUgoABNgH1-19JGclJv0e",
         "title": "Git and GitHub - CS50 Beyond 2019",
         "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
         "type": "video"
@@ -217,25 +189,21 @@
     "description": "AWS (Amazon Web Services) Azure and GCP (Google Cloud Platform) are three leading providers of cloud computing services. AWS by Amazon is the oldest and the most established among the three, providing a breadth and depth of solutions ranging from infrastructure services like compute, storage, and databases to the machine and deep learning. Azure, by Microsoft, has integrated tools for DevOps, supports a large number of programming languages, and offers seamless integration with on-prem servers and Microsoft’s software. Google's GCP has strength in cost-effectiveness, live migration of virtual machines, and flexible computing options. All three have introduced various MLOps tools and services to boost capabilities for machine learning development and operations.\n\nVisit the following resources to learn more about AWS, Azure, and GCP:",
     "links": [
       {
-        "id": "QXr74egAOW1FmfcS-t2ST",
         "title": "AWS Roadmap",
         "url": "https://roadmap.sh/aws",
         "type": "article"
       },
       {
-        "id": "mQXdLmXWIHqb4TgS706Lw",
         "title": "Azure Tutorials",
         "url": "https://docs.microsoft.com/en-us/learn/azure/",
         "type": "article"
       },
       {
-        "id": "ZGN_vCqz7eShtvpfSIK2J",
         "title": "GCP Learning Resources",
         "url": "https://cloud.google.com/training",
         "type": "article"
       },
       {
-        "id": "hEXGUzuCNI9di8cf18Nz5",
         "title": "Explore top posts about AWS",
         "url": "https://app.daily.dev/tags/aws?ref=roadmapsh",
         "type": "article"
@@ -252,31 +220,26 @@
     "description": "Containers are a construct in which [cgroups](https://en.wikipedia.org/wiki/Cgroups), [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), and [chroot](https://en.wikipedia.org/wiki/Chroot) are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines.\n\nThese images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "Lw6GtBcWgsVJoyPrUde6T",
         "title": "What are Containers?",
         "url": "https://cloud.google.com/learn/what-are-containers",
         "type": "article"
       },
       {
-        "id": "peXTLABUl-VmPd6Ra-Nmn",
         "title": "What is a Container?",
         "url": "https://www.docker.com/resources/what-container/",
         "type": "article"
       },
       {
-        "id": "1L8po4GsfGg_z0yWxs-BW",
         "title": "Articles about Containers - The New Stack",
         "url": "https://thenewstack.io/category/containers/",
         "type": "article"
       },
       {
-        "id": "AWHJWG3pBE5s9V7iEHqEX",
         "title": "Explore top posts about Containers",
         "url": "https://app.daily.dev/tags/containers?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "B964AwmPxk0SFH5cuBSKY",
         "title": "What are Containers?",
         "url": "https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz",
         "type": "video"
@@ -288,25 +251,21 @@
     "description": "Docker is a platform for working with containerized applications. Among its features are a daemon and client for managing and interacting with containers, registries for storing images, and a desktop application to package all these features together.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "0IQKxlXjPIfCLeG5CSlgQ",
         "title": "Docker Documentation",
         "url": "https://docs.docker.com/",
         "type": "article"
       },
       {
-        "id": "7CvrI8MJ27dXIlhAPSVNy",
         "title": "Explore top posts about Docker",
         "url": "https://app.daily.dev/tags/docker?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "PbkLa55vZ32585CjdjVL0",
         "title": "Docker Tutorial",
         "url": "https://www.youtube.com/watch?v=RqTEHSBrYFw",
         "type": "video"
       },
       {
-        "id": "x3muMTDxqgD7QPByCUwOF",
         "title": "Docker simplified in 55 seconds",
         "url": "https://youtu.be/vP_4DlOH1G4",
         "type": "video"
@@ -318,37 +277,31 @@
     "description": "Kubernetes is an [open source](https://github.com/kubernetes/kubernetes) container management platform, and the dominant product in this space. Using Kubernetes, teams can deploy images across multiple underlying hosts, defining their desired availability, deployment logic, and scaling logic in YAML. Kubernetes evolved from Borg, an internal Google platform used to provision and allocate compute resources (similar to the Autopilot and Aquaman systems of Microsoft Azure).\n\nThe popularity of Kubernetes has made it an increasingly important skill for the DevOps Engineer and has triggered the creation of Platform teams across the industry. These Platform engineering teams often exist with the sole purpose of making Kubernetes approachable and usable for their product development colleagues.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "mVoofgfS3wFLDy9Du4Wba",
         "title": "Kubernetes Website",
         "url": "https://kubernetes.io/",
         "type": "article"
       },
       {
-        "id": "-1DwGbJ4h9pIRB6pTz4Fu",
         "title": "Kubernetes Documentation",
         "url": "https://kubernetes.io/docs/home/",
         "type": "article"
       },
       {
-        "id": "razBmTQopHZOhpXvYADyN",
         "title": "Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care",
         "url": "https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/",
         "type": "article"
       },
       {
-        "id": "QSsjaeIn8yuib-tnkqsCe",
         "title": "Kubernetes: An Overview",
         "url": "https://thenewstack.io/kubernetes-an-overview/",
         "type": "article"
       },
       {
-        "id": "MSEzNGKjxGb6ysUQAx2Rg",
         "title": "Explore top posts about Kubernetes",
         "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "KS_2Q7y3-lmpXRqtQsywX",
         "title": "Kubernetes Crash Course for Absolute Beginners",
         "url": "https://www.youtube.com/watch?v=s_o8dwzRlu4",
         "type": "video"
@@ -385,13 +338,11 @@
     "description": "Airflow is a platform to programmatically author, schedule and monitor workflows. Use airflow to author workflows as directed acyclic graphs (DAGs) of tasks. The airflow scheduler executes your tasks on an array of workers while following the specified dependencies. Rich command line utilities make performing complex surgeries on DAGs a snap. The rich user interface makes it easy to visualize pipelines running in production, monitor progress, and troubleshoot issues when needed. When workflows are defined as code, they become more maintainable, versionable, testable, and collaborative.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "OrSKjvpNpfQLcXhKRTsCj",
         "title": "Airflow website",
         "url": "https://airflow.apache.org/",
         "type": "article"
       },
       {
-        "id": "PYQpTlnK0BKk7UKysxEdF",
         "title": "Explore top posts about Apache Airflow",
         "url": "https://app.daily.dev/tags/apache-airflow?ref=roadmapsh",
         "type": "article"
@@ -403,13 +354,11 @@
     "description": "Apache Spark is an open-source distributed computing system used for big data processing and analytics. It provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "oADHDb5Uxr4lyJOVtZBiU",
         "title": "Spark By Examples",
         "url": "https://sparkbyexamples.com",
         "type": "article"
       },
       {
-        "id": "hx4by0GR2xkPN01CJlAww",
         "title": "Explore top posts about Apache Spark",
         "url": "https://app.daily.dev/tags/spark?ref=roadmapsh",
         "type": "article"
@@ -421,19 +370,16 @@
     "description": "Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "mAlZDrh2RQYz0UA6EGVK7",
         "title": "Apache Kafka quickstart",
         "url": "https://kafka.apache.org/quickstart",
         "type": "article"
       },
       {
-        "id": "EEOGi7xibdbCr4I6y7pyx",
         "title": "Explore top posts about Kafka",
         "url": "https://app.daily.dev/tags/kafka?ref=roadmapsh",
         "type": "article"
       },
       {
-        "id": "oZvx_jGX4vudn1gIMm-TC",
         "title": "Apache Kafka Fundamentals",
         "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
         "type": "video"
@@ -445,13 +391,11 @@
     "description": "Apache Flink is a distributed stream processing framework that is used to process large amounts of data in real-time. It is designed to be highly scalable and fault-tolerant. Flink is built on top of the Apache Kafka messaging system and is used to process data streams in real-time.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "h8Eq3DuW-km8JpJ7f4bYy",
         "title": "Apache Flink Documentation",
         "url": "https://flink.apache.org/",
         "type": "article"
       },
       {
-        "id": "iUbK9yqJE6F4a4dkqEBNW",
         "title": "Explore top posts about Apache Flink",
         "url": "https://app.daily.dev/tags/apache-flink?ref=roadmapsh",
         "type": "article"
@@ -473,19 +417,16 @@
     "description": "Version control/source control systems allow developers to track and control changes to code over time. These services often include the ability to make atomic revisions to code, branch/fork off of specific points, and to compare versions of code. They are useful in determining the who, what, when, and why code changes were made.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "id": "CFh4IeMUhJnBubSy1qjgT",
         "title": "Git",
         "url": "https://git-scm.com/",
         "type": "article"
       },
       {
-        "id": "uCHba0471GlKNu4sMJIiD",
         "title": "What is Version Control?",
         "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
         "type": "article"
       },
       {
-        "id": "Xw-pHgpyhW9EMAPjd9kip",
         "title": "Explore top posts about Version Control",
         "url": "https://app.daily.dev/tags/version-control?ref=roadmapsh",
         "type": "article"
@@ -522,25 +463,21 @@
     "description": "**Monitoring** in MLOps primarily involves tracking the performance of machine learning (ML) models in production to ensure that they continually deliver accurate and reliable results. Such monitoring is necessary because the real-world data that these models handle may change over time, a scenario known as data drift. These changes can adversely affect model performance. Monitoring helps to detect any anomalies in the model’s behaviour or performance and such alerts can trigger the retraining of models with new data. From a broader perspective, monitoring also involves tracking resources and workflows to detect and rectify any operational issues in the MLOps pipeline.",
     "links": [
       {
-        "id": "vmKpHv1sec7Mpp1EwoHI4",
         "title": "ML Monitoring vs Observability article",
         "url": "https://marvelousmlops.substack.com/p/ml-monitoring-vs-ml-observability",
         "type": "article"
       },
       {
-        "id": "9pJzslMZYCz6NG_br7LlU",
         "title": "Machine learning monitoring concepts",
         "url": "https://app.datacamp.com/learn/courses/machine-learning-monitoring-concepts",
         "type": "article"
       },
       {
-        "id": "a8qyGZxvmOO3t6ArWiDzo",
         "title": "Monitoring ML in Python",
         "url": "https://app.datacamp.com/learn/courses/monitoring-machine-learning-in-python",
         "type": "article"
       },
       {
-        "id": "Flel8wcZfwngKoGUve9fe",
         "title": "Prometheus, Grafana",
         "url": "https://www.udemy.com/course/mastering-prometheus-and-grafana/",
         "type": "article"

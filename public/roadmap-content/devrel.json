@@ -9,13 +9,11 @@
     "description": "The first Developer Relations teams came about in the lates 80’s during fierce rivalry between Microsoft and Apple. Apple created a team of “Evangelists” and when Microsoft saw the large impact that this team were having on the sales and adoption of Apple products, they created a their own team of “Technical Evangelists” which later became the Microsoft Developer Relations Group.\n\nDevRel has since evolved into multiple roles within itself, including Developer Marketing, Developer Advocate and Developer Engineer.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "HC_PGV2I5z859WI5omFyU",
         "title": "Developer Relations History & Mission Structure",
         "url": "https://lmcdunna.medium.com/developer-relations-history-mission-structure-5fcad869deac",
         "type": "article"
       },
       {
-        "id": "vGKlhRVIga2xnE_ZtwtYM",
         "title": "History of Developer Evangelism",
         "url": "https://www.youtube.com/watch?v=ieiQmyrmakI",
         "type": "video"
@@ -27,13 +25,11 @@
     "description": "Developer Experience (DX) refers to the overall experience developers have while using a software product, tool, or platform. A positive DX is characterized by intuitive and well-documented APIs, robust and clear documentation, seamless integration processes, and responsive support. Good DX ensures that developers can efficiently build, deploy, and manage applications, reducing frustration and increasing productivity.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "RQeGzTIR6OiOT83jZlfjD",
         "title": "What is developer experience?",
         "url": "https://swimm.io/learn/developer-experience/what-is-developer-experience-devx-pillars-and-best-practices",
         "type": "article"
       },
       {
-        "id": "IbrFrthga5fjuhyJDOf7u",
         "title": "Developer Experience: What is it and why should you care? GitHub",
         "url": "https://github.blog/2023-06-08-developer-experience-what-is-it-and-why-should-you-care/",
         "type": "article"
@@ -45,19 +41,16 @@
     "description": "The Developer Journey encompasses the entire process that a developer goes through when interacting with a product or platform, from initial discovery to long-term engagement. This journey includes various stages such as awareness, onboarding, learning, building, deploying, and scaling. Each stage requires thoughtful design and support to ensure a smooth and positive experience. By understanding and optimizing each touchpoint in the Developer Journey, companies can reduce friction, enhance satisfaction, and foster a more loyal and productive developer community.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "knoxHIjAsjdF3WjhJgEuk",
         "title": "The Developer Journey",
         "url": "https://www.devrel.agency/developerjourney",
         "type": "article"
       },
       {
-        "id": "fCn3CtoIArjkS4WOPRJkY",
         "title": "Developer Relations: The Developer Journey Map",
         "url": "https://medium.com/codex/developer-relations-the-developer-journey-map-36bd4619f5f3",
         "type": "article"
       },
       {
-        "id": "i5lDaDbBc6-h4-KvbUTou",
         "title": "Understand the developer journey",
         "url": "https://www.commonroom.io/resources/ultimate-guide-to-developer-experience/",
         "type": "article"
@@ -69,19 +62,16 @@
     "description": "Developer Marketing focuses on strategies and tactics to engage and attract developers to a product, platform, or service. It involves creating targeted content, such as technical blogs, tutorials, and case studies, that addresses developers' needs and pain points. Effective developer marketing also includes hosting events like hackathons, webinars, and conferences to build community and demonstrate value. By leveraging channels that developers trust, such as GitHub, Stack Overflow, and social media, companies can increase visibility and adoption of their offerings.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "6lNI4lfiAlIIigALacceK",
         "title": "What is developer marketing?",
         "url": "https://appsembler.com/glossary/developer-marketing/",
         "type": "article"
       },
       {
-        "id": "rrIY3LLKkyyMYbKdjTLLd",
         "title": "What is developer marketing? IronHorse.io",
         "url": "https://ironhorse.io/blog/what-is-developer-marketing/",
         "type": "article"
       },
       {
-        "id": "xKsAXwJi7hiCizv65cPcE",
         "title": "What is developer marketing (B2D)",
         "url": "https://www.productmarketingalliance.com/what-is-developer-marketing/",
         "type": "article"
@@ -93,13 +83,11 @@
     "description": "Developer Relations (DevRel) is crucial for fostering a vibrant and engaged developer community around a product or platform. It involves creating and maintaining strong relationships with developers through activities like community building, technical support, advocacy, and education. Effective DevRel ensures that developers have the resources and support they need to succeed, which in turn drives product adoption, innovation, and loyalty. By bridging the gap between a company's development teams and external developers, DevRel can also provide valuable feedback for product improvements and help in shaping the future direction of the product or platform.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "U9ATPdqYkMhJZ-C1_kN11",
         "title": "DevRel - Why is it important?",
         "url": "https://developers.onelogin.com/blog/devrel",
         "type": "article"
       },
       {
-        "id": "LEiXf3rw3xPuF4eapen6b",
         "title": "The role of developer advocacy in driving innovation",
         "url": "https://leaddev.com/process/role-developer-advocacy-driving-innovation",
         "type": "article"
@@ -111,13 +99,11 @@
     "description": "Developer Advocacy is the practice of representing and supporting the needs and interests of developers both within a company and in the broader developer community. Developer Advocates act as liaisons between the company’s development team and external developers, ensuring that the developers have the tools, resources, and knowledge to effectively use the company's products or platforms. They create educational content, provide technical support, gather feedback, and participate in community events.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "2jgRNa573EYzIi7dd66qp",
         "title": "What is developer advocacy?",
         "url": "https://appsembler.com/glossary/developer-advocacy/",
         "type": "article"
       },
       {
-        "id": "fKHESd1v3Fwo9y-Fc-oY-",
         "title": "Developer Relations: New Career Path for Developers",
         "url": "https://www.youtube.com/watch?v=iA2SQ4OL4GU",
         "type": "video"
@@ -129,19 +115,16 @@
     "description": "Developer Education focuses on providing developers with the knowledge and skills they need to effectively use a product, platform, or technology. This involves creating and delivering a variety of educational materials such as documentation, tutorials, courses, webinars, and interactive workshops. Effective developer education programs cater to different learning styles and levels of expertise, from beginners to advanced users.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "iGdCjqZ9CDsiWiw5wWnwq",
         "title": "What is developer eduction?",
         "url": "https://appsembler.com/glossary/developer-education/",
         "type": "article"
       },
       {
-        "id": "7Hmv1YOI0VQATYox4Xgsp",
         "title": "What is developer education - Dev.to",
         "url": "https://dev.to/jacobandrewsky/what-is-developer-education-5a01",
         "type": "article"
       },
       {
-        "id": "JtFZI9Tzhg7PO7bCn9G8H",
         "title": "Successful Developer Education: What you need to know",
         "url": "https://www.developermarketing.io/successful-developer-education-what-you-need-to-know/",
         "type": "article"
@@ -153,19 +136,16 @@
     "description": "Community Support in the context of Developer Relations (DevRel) involves actively engaging with and assisting the developer community to foster a collaborative and supportive environment. This includes moderating forums, responding to queries, organizing community events, and facilitating peer-to-peer support. Effective community support ensures that developers feel heard and valued, and have access to timely and accurate assistance, which enhances their overall experience and productivity.",
     "links": [
       {
-        "id": "kNBDaUa3E504w82trMnVc",
         "title": "Community and DevRel",
         "url": "https://developerrelations.com/podcast/community-and-devrel",
         "type": "article"
       },
       {
-        "id": "ZNq5RAnYkjdzS1HDPEJdG",
         "title": "New to DevRel? Talk to your community!",
         "url": "https://dev.to/amandamartindev/new-to-devrel-talk-to-your-community-hmf",
         "type": "article"
       },
       {
-        "id": "JGSlsFmkxP-E6LBPWA8XR",
         "title": "DevRel & Community",
         "url": "https://www.youtube.com/watch?v=CfXkY2m_0dU",
         "type": "video"
@@ -177,19 +157,16 @@
     "description": "Content creation in the context of Developer Relations (DevRel) involves producing a wide range of materials designed to educate, engage, and empower developers. This includes writing technical blogs, creating video tutorials, developing comprehensive documentation, and crafting code samples and demos. The goal is to provide valuable resources that help developers understand and effectively use a product or platform. High-quality content addresses common challenges, showcases best practices, and highlights new features or updates.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "94litD_CEEva0T9E9368h",
         "title": "The secret of content creation for DevRel",
         "url": "https://developerrelations.com/dev-rel/the-secrets-of-content-creation-for-devrels",
         "type": "article"
       },
       {
-        "id": "MRJfcdO_-_oabhJurziNm",
         "title": "Content strategy for DevRel teams",
         "url": "https://www.stephaniemorillo.co/post/content-strategy-for-devrel-teams-a-primer",
         "type": "article"
       },
       {
-        "id": "GncvJgOHe7Pdtsc5dNg3-",
         "title": "DevRel Content Creation with Stephanie Wong from Google Cloud",
         "url": "https://www.youtube.com/watch?v=DQE1hBXVXYA",
         "type": "video"
@@ -201,13 +178,11 @@
     "description": "Feedback loops are a crucial process that involves collecting, analyzing, and acting on feedback from developers to improve products and services. This loop begins with gathering insights through various channels such as forums, surveys, social media, direct interactions at events, and support tickets. The feedback is then communicated to internal teams, including product management, engineering, and marketing, to inform product enhancements, feature requests, and bug fixes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "c0NJFgHGedyO5TekEbTa3",
         "title": "Harnessing the Power of Community Feedback for Product Development",
         "url": "https://draft.dev/learn/devrel-harnessing-the-power-of-community-feedback-for-product-development",
         "type": "article"
       },
       {
-        "id": "_IcJQaMoT4BkxF1WzgDpq",
         "title": "The Developer Advocacy Feedback Loop",
         "url": "https://glaforge.dev/talks/2020/08/06/the-developer-advocacy-feedback-loop/",
         "type": "article"
@@ -224,19 +199,16 @@
     "description": "Good writing skills are crucial for software developers because they enhance communication, documentation, and collaboration. Clear and concise writing ensures that complex technical concepts are easily understood by team members, stakeholders, and end-users. Effective documentation, including comments, user manuals, and technical guides, helps maintain code quality and facilitates future maintenance and updates. Writing also plays a key role in crafting clear commit messages, bug reports, and project proposals, which are essential for smooth project management and collaboration. In an increasingly global and remote work environment, the ability to articulate ideas and solutions in writing becomes even more vital, ensuring that everyone is on the same page and can contribute effectively to the project's success.\n\nLearn more from the following resources:",
     "links": [
       {
-        "id": "pADuwbv22JffjJarpm63u",
         "title": "Putting Ideas into Words",
         "url": "https://www.paulgraham.com/words.html",
         "type": "article"
       },
       {
-        "id": "T7JQtiiIgiu6ZU2370qSL",
         "title": "Patterns in confusing explanations",
         "url": "https://jvns.ca/blog/confusing-explanations/",
         "type": "article"
       },
       {
-        "id": "hgLnfP0UfqlOfWxPjXfDC",
         "title": "Signposting: How to reduce cognitive load for your reader",
         "url": "https://newsletter.weskao.com/p/sign-posting-how-to-reduce-cognitive",
         "type": "article"
