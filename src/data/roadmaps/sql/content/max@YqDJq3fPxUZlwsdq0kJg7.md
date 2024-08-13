@@ -1,37 +1,7 @@
 # MAX
 
-The `MAX()` function in SQL is used to return the maximum value of an expression in a SELECT statement. 
+`MAX` is an aggregate function in SQL that returns the highest value in a set of values. It can be used with numeric, date, or string data types, selecting the maximum value from a specified column. `MAX` is often used in combination with `GROUP` BY to find the highest value within each group. This function is useful for various data analysis tasks, such as finding the highest salary, the most recent date, or the alphabetically last name in a dataset.
 
-It can be used for numeric, character, and datetime column data types. If there are null values, then they are not considered for comparison.
+Learn more from the following resources:
 
-## Syntax
-
-```sql
-SELECT MAX(column_name)
-FROM table_name
-WHERE condition;
-```
-
-In this syntax, the `column_name` argument is the column in the `table_name` that you wish to find the maximum value of.
-
-## Example
-
-Consider the following Employee table:
-
-| ID | NAME     | SALARY |
-|----|----------|--------|
-| 1  | John     | 1000   |
-| 2  | Robert   | 2000   |
-| 3  | Jim      | 3000   |
-| 4  | Jessica  | 2500   |
-
-To find the highest salary amongst all the employees, you would use the `MAX()` function as follows:
-
-```sql
-SELECT MAX(SALARY) AS "Highest Salary"
-FROM Employee;
-```
-
-The above SQL returns `3000` as it’s the highest salary in the Employee table.
-
-Warning: SQL `MAX()` function will only return a single row as a result. If multiple rows hold the highest value and if you want to get all these rows, you should not use `MAX()`. A better option would be sorting the column and then `LIMIT` the result just to the first row.
+- [@article@MAX](https://www.techonthenet.com/sql/max.php)
