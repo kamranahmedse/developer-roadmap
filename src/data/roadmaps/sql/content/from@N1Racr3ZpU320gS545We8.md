@@ -1,3 +1,4 @@
+# FROM
 The `FROM` clause in SQL is used to specify the table from which to retrieve the data. It's a crucial part of a SQL query as it indicates the source of the data to be selected, updated, or deleted.
 
 The `FROM` clause can be used with various SQL statements such as `SELECT`, `UPDATE`, and `DELETE`. When combined with a `SELECT` statement, it identifies the table(s) from which to retrieve the data.
