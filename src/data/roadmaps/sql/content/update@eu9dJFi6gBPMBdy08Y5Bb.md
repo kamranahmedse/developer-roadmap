@@ -1,6 +1,5 @@
 
-
-# The UPDATE Query: Giving Your Data a Makeover
+# UPDATE Query: Giving Your Data a Makeover
 
 Imagine you have a big whiteboard with all your friends' information. What if you need to change something, like a friend's new phone number? That's where the `UPDATE` query comes in handy in SQL. It's like having a magic eraser that can change specific information in your database without messing up the rest!
 
@@ -77,4 +76,4 @@ Now our table looks like:
 3. **Safety**: By using conditions, you make sure you're only changing the right information.
 
 Remember, UPDATE is like a careful painter, touching up your data canvas with precision and care. It's a powerful tool that helps keep your database accurate and up-to-date!
-
+- [@article@More about UPDATE](https://www.javatpoint.com/sql-update)
