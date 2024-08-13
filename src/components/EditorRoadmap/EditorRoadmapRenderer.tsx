@@ -38,6 +38,7 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   const nodeId = targetGroup?.dataset?.nodeId;
   const nodeType = targetGroup?.dataset?.type;
   const title = targetGroup?.dataset?.title;
+
   if (!nodeId || !nodeType) {
     return null;
   }
@@ -53,6 +54,7 @@ const allowedNodeTypes = [
   'resourceButton',
   'todo',
   'todo-checkbox',
+  'checklist-item',
 ];
 
 export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
@@ -153,9 +155,30 @@ export function EditorRoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
+    // for the click on rect of checklist-item
+    if (nodeType === 'checklist-item' && target.tagName === 'rect') {
+      e.preventDefault();
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
+
+      const newStatus = targetGroup?.classList.contains('done')
+        ? 'pending'
+        : 'done';
+      updateTopicStatus(nodeId, newStatus);
+      return;
+    }
+
+    // we don't have the topic popup for checklist-item
+    if (nodeType === 'checklist-item') {
+      return;
+    }
+
     if (!title) {
       return;
     }
+
     const detailsPattern = `${slugify(title)}@${nodeId}`;
     window.dispatchEvent(
       new CustomEvent('roadmap.node.click', {
