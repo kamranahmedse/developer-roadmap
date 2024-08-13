@@ -51,8 +51,8 @@ svg .done text[fill='#ffffff'] {
   fill: black;
 }
 
-svg > g[data-type='subtopic'].done > rect + text,
-svg > g[data-type='subtopic'].learning > rect + text {
+svg > g[data-type='subtipic'].done > rect + text,
+svg > g[data-type='subtipic'].learning > rect + text {
   fill: #cbcbcb;
 }
 
