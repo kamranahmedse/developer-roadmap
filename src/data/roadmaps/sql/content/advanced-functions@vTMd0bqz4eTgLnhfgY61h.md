@@ -1,69 +1,11 @@
 # Advanced SQL Functions
 
-Advanced SQL functions provide complex data manipulation and query capabilities enabling the user to perform tasks that go beyond the capabilities of basic SQL commands. 
+Advanced SQL functions extend beyond basic queries and are used to perform complex calculations, data transformations, and analyses within a database. Some key advanced functions include:
 
-## Window Function 
+	•	Window Functions: Functions like ROW_NUMBER(), RANK(), and LAG() allow you to perform calculations across a set of table rows related to the current row without collapsing the result set.
+	•	CTEs (Common Table Expressions): WITH clauses that enable the creation of temporary result sets, which can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement.
+	•	Aggregate Functions: Advanced usage of GROUP BY with functions like GROUPING SETS, ROLLUP, and CUBE to create more complex aggregations.
+	•	JSON Functions: Functions such as JSON_VALUE() and JSON_QUERY() allow querying and manipulating JSON data stored in SQL tables.
+	•	String Functions: Functions like STRING_AGG() and CONCAT_WS() for advanced string manipulation and aggregation.
 
-Windowing Functions provide the ability to perform calculations across sets of rows related to the current query row.
-
-```sql
-SELECT productName, productLine, buyPrice,
-       AVG(buyPrice) OVER(PARTITION BY productLine) as avg_price
-FROM products
-ORDER BY productLine, buyPrice;
-```
-
-## Aggregate Function
-
-Aggregate functions return a single result row based on groups of rows, rather than on single rows.
-
-```sql
-SELECT COUNT(*) FROM products;
-```
-
-## Analytic Functions
-
-Analytic functions compute an aggregate value based on a group of rows. They differ from aggregate functions in that they return multiple rows for each group.
-
-```sql
-SELECT department_id, last_name, hire_date, 
-       COUNT(*) OVER (PARTITION BY department_id) as dept_count,
-       RANK() OVER (PARTITION BY department_id ORDER BY hire_date) as ranking
-FROM employees;
-```
-
-## Scalar Function
-
-A scalar function returns a single value each time it is invoked. It is based on the input value. 
-
-```sql
-SELECT UPPER(productName) FROM products;
-```
-
-## Stored Procedures
-
-Stored Procedures are a prepared SQL code that you can save so the code can be reused over and over again.
-
-```sql
-CREATE PROCEDURE SelectAllProducts @Product varchar(50)
-AS
-SELECT * FROM products WHERE Product = @Product
-GO;
-```
-
-## String Functions 
-
-Functions that manipulate the string data types. For example, `LEFT()`, `LENGTH()`, `LOWER()`, etc.
-
-```sql
-SELECT LEFT('This is a test', 4);
-```
-
-## Date Functions 
-
-Functions that manipulate the date data types. For example, `GETDATE()`, `DATEADD()`, `DATEDIFF()`, etc.
-
-```sql
-SELECT GETDATE() AS CurrentDateTime;
-```
-Remember, not all types or functions are supported by every SQL distribution but most of them have some sort of equivalent.
+These advanced functions enable more powerful and flexible data retrieval, manipulation, and analysis, making SQL a robust tool for complex database operations.
