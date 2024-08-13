@@ -4,4 +4,4 @@ The `CEILING()` function in SQL returns the smallest integer greater than or equ
 
 Learn more from the following resources:
 
-- [@article@CEILING - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/functions/ceiling-transact-sql?view=sql-server-ver16)
+- [@article@CEILING Function in SQL](https://www.javatpoint.com/ceiling-function-in-sql)

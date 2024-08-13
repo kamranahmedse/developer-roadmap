@@ -8,4 +8,4 @@ In SQL, you can modify a `VIEW` in two ways:
 
 Learn more from the following resources:
 
-- [@article@Modify Views](https://learn.microsoft.com/en-us/sql/relational-databases/views/modify-views?view=sql-server-ver16)
+- [@article@Modify Views in SQL Server](https://www.sqlshack.com/create-view-sql-modifying-views-in-sql-server/)

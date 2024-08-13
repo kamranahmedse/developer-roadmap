@@ -4,4 +4,4 @@ The "INSERT" statement is used to add new rows of data to a table in a database.
 
 Learn more from the following resources:
 
-- [@article@SQL INSERT](https://learn.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16)
+- [@article@SQL INSERT](https://www.w3schools.com/sql/sql_insert.asp)

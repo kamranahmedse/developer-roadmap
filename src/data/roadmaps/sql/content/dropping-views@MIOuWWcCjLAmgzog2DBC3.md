@@ -4,4 +4,4 @@ Dropping views in SQL involves using the `DROP VIEW` statement to remove an exis
 
 Learn more from the following resources:
 
-- [@article@DROP VIEW](https://learn.microsoft.com/en-us/sql/t-sql/statements/drop-view-transact-sql?view=sql-server-ver16)
+- [@article@DROP VIEW](https://study.com/academy/lesson/sql-drop-view-tutorial-overview.html)

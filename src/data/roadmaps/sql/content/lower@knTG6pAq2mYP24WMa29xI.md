@@ -4,4 +4,4 @@ The `LOWER` function in SQL converts all characters in a specified string to low
 
 Learn more from the following resources:
 
-- [@article@LOWER](https://learn.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver16)
+- [@article@How to change text to lowercase in SQL](https://learnsql.com/cookbook/how-to-change-text-to-lowercase-in-sql/)

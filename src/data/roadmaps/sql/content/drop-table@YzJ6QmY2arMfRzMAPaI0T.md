@@ -7,4 +7,3 @@ When you execute the `DROP TABLE` statement, it eliminates both the table and it
 Learn more from the following resources:
 
 - [@article@DROP TABLE](https://www.w3schools.com/sql/sql_drop_table.asp)
-- [@article@SQL DROP TABLE](https://learn.microsoft.com/en-us/sql/t-sql/statements/drop-table-transact-sql?view=sql-server-ver16)

@@ -6,4 +6,4 @@ One important aspect to note is that the `FLOOR` function's argument must be a n
 
 Learn more from the following resources:
 
-- [@article@FLOOR](https://learn.microsoft.com/en-us/sql/t-sql/functions/floor-transact-sql?view=sql-server-ver16)
+- [@article@FLOOR](https://www.w3schools.com/sql/func_sqlserver_floor.asp)

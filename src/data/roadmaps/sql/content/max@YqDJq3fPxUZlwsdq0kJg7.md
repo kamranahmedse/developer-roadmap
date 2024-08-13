@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@MAX](https://learn.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-ver16)
+- [@article@MAX](https://www.techonthenet.com/sql/max.php)

@@ -5,4 +5,4 @@ The CASE statement in SQL is used to create conditional logic within a query, al
 Learn more from the following resources:
 
 - [@article@SQL CASE Expression](https://www.w3schools.com/sql/sql_case.asp)
-- [@article@CASE](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/case-transact-sql?view=sql-server-ver16)
+- [@article@SQL CASE - Intermediate SQL](https://mode.com/sql-tutorial/sql-case)

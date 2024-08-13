@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@CONCAT - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver16)
+- [@article@An overview of the CONCAT function in SQL](https://www.sqlshack.com/an-overview-of-the-concat-function-in-sql-with-examples/)

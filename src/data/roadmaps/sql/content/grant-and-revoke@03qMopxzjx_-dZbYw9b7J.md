@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@article@GRANT](https://learn.microsoft.com/en-us/sql/t-sql/statements/grant-transact-sql?view=sql-server-ver16)
-- [@article@REVOKE](https://learn.microsoft.com/en-us/sql/t-sql/statements/revoke-transact-sql?view=sql-server-ver16)
+- [@article@GRANT](https://www.ibm.com/docs/en/qmf/12.2.0?topic=privileges-sql-grant-statement)
+- [@article@REVOKE](https://www.ibm.com/docs/en/qmf/12.2.0?topic=privileges-sql-revoke-statement)

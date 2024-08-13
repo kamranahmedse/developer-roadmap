@@ -6,5 +6,4 @@ Unlike the `RANK` function, `DENSE_RANK` does not skip any rank (positions in th
 
 Learn more from the following resources:
 
-- [@article@DENSE_RANK](hhttps://learn.microsoft.com/en-us/sql/t-sql/functions/dense-rank-transact-sql?view=sql-server-ver16)
 - [@article@SQL DENSE_RANK](https://www.sqltutorial.org/sql-window-functions/sql-dense_rank/)

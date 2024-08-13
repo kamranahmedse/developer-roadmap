@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@DATEADD](https://learn.microsoft.com/en-us/sql/t-sql/functions/dateadd-transact-sql?view=sql-server-ver16)
+- [@article@DATEADD](https://www.mssqltips.com/sqlservertutorial/9380/sql-dateadd-function/)

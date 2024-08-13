@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@NULLIF](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/nullif-transact-sql?view=sql-server-ver16)
+- [@article@NULLIF](https://www.w3schools.com/sql/func_sqlserver_nullif.asp)

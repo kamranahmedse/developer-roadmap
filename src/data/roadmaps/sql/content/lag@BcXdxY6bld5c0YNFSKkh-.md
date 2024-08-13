@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@SQL LAG](https://learn.microsoft.com/en-us/sql/t-sql/functions/lag-transact-sql?view=sql-server-ver16)
+- [@article@Understanding the LAG function in SQL](https://www.datacamp.com/tutorial/sql-lag)

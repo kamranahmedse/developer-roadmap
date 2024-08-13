@@ -4,5 +4,5 @@ The `AVG()` function in SQL is an aggregate function that calculates the average
 
 Learn more from the following resources:
 
-- [@article@AVG - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/functions/avg-transact-sql?view=sql-server-ver16)
+- [@article@AVG](https://www.sqlshack.com/sql-avg-function-introduction-and-examples/)
 - [@article@SQL AVG() Function](https://www.w3schools.com/sql/sql_avg.asp)

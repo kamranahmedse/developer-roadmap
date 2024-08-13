@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@article@BEGIN - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/begin-transaction-transact-sql?view=sql-server-ver16)
+- [@article@BEGIN...END Statement](https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc00801.1510/html/iqrefso/BABFBJAB.htm)
 - [@article@SQL 'BEGIN' & 'END' Statements](https://reintech.io/blog/understanding-sql-begin-end-statements-guide)

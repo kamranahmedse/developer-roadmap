@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@article@COALESCE - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver16)
+- [@article@How to use the COALESCE function in SQL](https://learnsql.com/blog/coalesce-function-sql/)
 - [@article@COALESCE - PostgreSQL](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-coalesce/)

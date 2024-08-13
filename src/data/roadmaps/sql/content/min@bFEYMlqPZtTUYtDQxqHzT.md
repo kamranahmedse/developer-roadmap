@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@MIN](https://learn.microsoft.com/en-us/sql/t-sql/functions/min-transact-sql?view=sql-server-ver16)
+- [@article@SQL MAX & MIN](https://www.programiz.com/sql/min-and-max)

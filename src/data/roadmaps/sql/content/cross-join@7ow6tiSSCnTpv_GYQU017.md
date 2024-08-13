@@ -6,4 +6,4 @@ The issue with cross join is it returns the Cartesian product of the two tables,
 
 Learn more from the following resources:
 
-- [@article@CROSS JOIN - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/t-sql/queries/from-using-pivot-and-unpivot?view=sql-server-ver16)
+- [@article@CROSS JOIN](https://www.w3schools.com/mysql/mysql_join_cross.asp)

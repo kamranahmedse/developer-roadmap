@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@SQL LEAD](https://learn.microsoft.com/en-us/sql/t-sql/functions/lead-transact-sql?view=sql-server-ver16)
+- [@article@SQL LEAD](https://www.codecademy.com/resources/docs/sql/window-functions/lead)

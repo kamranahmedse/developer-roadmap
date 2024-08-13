@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@CREATE TABLE](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16)
+- [@article@CREATE TABLE](https://www.tutorialspoint.com/sql/sql-create-table.htm)

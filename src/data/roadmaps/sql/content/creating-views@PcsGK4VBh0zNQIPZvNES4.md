@@ -4,5 +4,5 @@ Creating views in SQL involves using the `CREATE VIEW` statement to define a vir
 
 Learn more from the following resources:
 
-- [@article@Creating Views - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver16)
+- [@article@How to create a view in SQL](https://www.sqlshack.com/how-to-create-a-view-in-sql-server/)
 - [@video@SQL Views in 4 minutes](https://www.youtube.com/watch?v=vLLkNI-vkV8)

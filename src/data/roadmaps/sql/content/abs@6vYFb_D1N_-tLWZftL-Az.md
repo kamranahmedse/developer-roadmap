@@ -4,5 +4,5 @@ The `ABS()` function in SQL returns the absolute value of a given numeric expres
 
 Learn more from the following resources:
 
-- [@article@ABS - SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver16)
-- [@article@ABS - PostgreSQL](https://www.w3schools.com/sql/sql_ref_sql.php)
+- [@article@How to compute an absolute value in SQL](https://www.airops.com/sql-guide/how-to-compute-an-absolute-value-in-sql)
+- [@article@ABS](https://www.w3schools.com/sql/func_sqlserver_abs.asp)
