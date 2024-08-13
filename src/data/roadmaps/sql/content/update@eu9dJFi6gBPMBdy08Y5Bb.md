@@ -76,4 +76,5 @@ Now our table looks like:
 3. **Safety**: By using conditions, you make sure you're only changing the right information.
 
 Remember, UPDATE is like a careful painter, touching up your data canvas with precision and care. It's a powerful tool that helps keep your database accurate and up-to-date!
+Visit the following resources to learn more:
 - [@article@More about UPDATE](https://www.javatpoint.com/sql-update)
