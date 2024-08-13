@@ -1,69 +1,7 @@
 # SQL JOIN Queries
 
-JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+SQL `JOIN` queries combine rows from two or more tables based on a related column between them. There are several types of JOINs, including INNER JOIN (returns matching rows), `LEFT JOIN` (returns all rows from the left table and matching rows from the right), `RIGHT JOIN` (opposite of `LEFT JOIN`), and `FULL JOIN` (returns all rows when there's a match in either table). `JOIN`s are fundamental for working with relational databases, allowing users to retrieve data from multiple tables in a single query, establish relationships between tables, and perform complex data analysis across related datasets.
 
-## INNER JOIN:
+Learn more from the following resources:
 
-Inner join returns records that have matching values in both tables. For example:
-
-```sql
-SELECT Orders.OrderID, Customers.CustomerName
-FROM Orders
-INNER JOIN Customers 
-ON Orders.CustomerID = Customers.CustomerID;
-```
-
-## LEFT (OUTER) JOIN:
-
-Returns all records from the left table, and the matched records from the right table. Also returns NULL if there is no match. Example:
-
-```sql
-SELECT Customers.CustomerName, Orders.OrderID
-FROM Customers
-LEFT JOIN Orders 
-ON Customers.CustomerID = Orders.CustomerID;
-```
-
-## RIGHT (OUTER) JOIN:
-
-Returns all records from the right table, and the matched records from the left table. Also returns null if there is no match. Example:
-
-```sql
-SELECT Orders.OrderID, Customers.CustomerName
-FROM Orders
-RIGHT JOIN Customers 
-ON Orders.CustomerID = Customers.CustomerID;
-```
-## FULL (OUTER) JOIN:
-
-Returns all records when there is a match in either left (table1) or right (table2) table records.  Also returns null if there is no match. Example:
-
-```sql
-SELECT Customers.CustomerName, Orders.OrderID
-FROM Customers
-FULL OUTER JOIN Orders 
-ON Customers.CustomerID = Orders.CustomerID;
-```
-## SELF JOIN:
-
-Self join is a regular join, but the table is joined with itself. Example:
-
-```sql
-SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
-FROM Customers A, Customers B
-WHERE A.CustomerID <> B.CustomerID
-AND A.City = B.City;
-```
-
-## NATURAL JOIN:
-
-The natural join is akin to an inner join, automatically linking two columns based on identical names.
-Note: Columns should have same data type in both tables
-
-```sql
-SELECT *
-FROM Customers
-NATURAL JOIN Orders;
-```
-
-**Note**: JOINS can be used with SELECT, UPDATE, and DELETE statements.
+- [@article@7 SQL JOIN Examples With Detailed Explanations](https://learnsql.com/blog/sql-join-examples-with-explanations/)

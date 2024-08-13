@@ -1,6 +1,6 @@
-# Remix
+# react-router
 
-Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.
+There used to be Remix in this list but they announced to merge Remix into react-router after v7.
 
 Visit the following resources to learn more:
 

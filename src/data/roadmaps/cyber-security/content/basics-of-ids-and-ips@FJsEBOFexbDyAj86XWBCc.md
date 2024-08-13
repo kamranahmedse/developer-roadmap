@@ -30,3 +30,8 @@ There are two types of IPS:
 - Regularly updating and configuring IDS/IPS is necessary to continually defend against evolving threats.
 
 By understanding the basics of IDS and IPS, you can better evaluate your security needs and take the right steps to protect your network and hosts from potential intruders.
+
+Learn more from the following resources:
+
+- [@video@Intrusion Prevention System (IPS)](https://www.youtube.com/watch?v=7QuYupuic3Q)
+- [@article@What is an Intrusion Prevention System?](https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips)

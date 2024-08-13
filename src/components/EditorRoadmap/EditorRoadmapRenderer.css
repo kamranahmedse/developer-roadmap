@@ -10,7 +10,8 @@ svg g[data-type='link-item'],
 svg > g[data-type='button'],
 svg > g[data-type='resourceButton'],
 svg > g[data-type='todo-checkbox'],
-svg > g[data-type='todo'] {
+svg > g[data-type='todo'],
+svg > g[data-type='checklist'] > g[data-type='checklist-item'] > rect {
   cursor: pointer;
 }
 
@@ -26,6 +27,10 @@ svg g[data-type='link-item']:hover,
 svg g[data-type='resourceButton']:hover,
 svg g[data-type='todo-checkbox']:hover {
   opacity: 0.8;
+}
+
+svg g[data-type='checklist'] > g[data-type='checklist-item'] > rect:hover {
+  fill: #cbcbcb !important;
 }
 
 svg .done rect {

@@ -94,6 +94,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Git and GitHub',
+        link: '/git-github',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
     ],
   },
   {

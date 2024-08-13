@@ -4,5 +4,6 @@ Developer Relations (DevRel) is crucial for fostering a vibrant and engaged deve
 
 Learn more from the following resources:
 
+- [@article@What is Developer Relations? The Ultimate Guide for DevTool GTM Teams](https://www.doc-e.ai/post/what-is-developer-relations-the-ultimate-guide-for-devtool-gtm-teams)
 - [@article@DevRel - Why is it important?](https://developers.onelogin.com/blog/devrel)
 - [@article@The role of developer advocacy in driving innovation](https://leaddev.com/process/role-developer-advocacy-driving-innovation)
