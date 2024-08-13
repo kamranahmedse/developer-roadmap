@@ -7,7 +7,7 @@ Swift is a multi-paradigm language that has [@article@object-oriented](https://w
 ## Free resources to learn Swift Programming Language from
 
 1. [@course@Swift Programming Tutorial | FULL COURSE | Absolute Beginner](https://www.youtube.com/watch?v=CwA1VWP0Ldw)
-2. [@course@Swift Programming For Beginners - No Programming Experience](https://www.udemy.com/course/swift-programming-for-beginners-no-experience/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_DSA_GammaCatchall_NonP_la.EN_cc.ROW-English&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=DSA&topic=&priority=Gamma&utm_content=deal4584&utm_term=_._ag_169801645584_._ad_700876640599_._kw__._de_c_._dm__._pl__._ti_dsa-1456167871416_._li_1005570_._pd__._&matchtype=&gad_source=1&gbraid=0AAAAADROdO0Chfq6xvRDtlKV5u88C6bJB&gclid=Cj0KCQjw5ea1BhC6ARIsAEOG5pxkS48V0tvew_5Gp314bZhFSCk8zLoN-vQ7a7Gp9j4uJa_frklh-ykaAhG9EALw_wcB)
+2. [@course@Swift Programming For Beginners - No Programming Experience](https://www.udemy.com/course/swift-programming-for-beginners-no-experience/)
 3. [@course@Swift Programming Tutorial – Full Course for Beginners](https://www.youtube.com/watch?v=8Xg7E9shq0U)
 4. [@course@Learn Swift Fast (2020) - Full Course For Beginners](https://www.youtube.com/watch?v=FcsY1YPBwzQ)
 
