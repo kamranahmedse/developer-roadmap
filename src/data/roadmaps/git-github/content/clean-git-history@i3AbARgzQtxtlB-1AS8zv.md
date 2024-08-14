@@ -1,6 +1,7 @@
 # Clean Git History
 
 Cleaning up Git history can make your commit history more readable, concise, and organized. Here are some of the reasons why you'd want to clean your git history: 
+
 - makes it easy to decipher the order of the commits in your repository
 - It facilitates finding commits that might have introduced bugs and enable rollback if necessary
 - To be able to deploy any commit on your development branch using your CI/CD system
