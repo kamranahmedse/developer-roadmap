@@ -20,6 +20,6 @@ findViewById<Button>(R.id.supabutton)
   }
 ```
 
-Visit the following resources to learn more:
+Learn more from the following resources:
 
 - [@official@Android Developers: Button](https://developer.android.com/develop/ui/views/components/button)

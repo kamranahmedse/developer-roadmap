@@ -23,6 +23,6 @@ PurchaseConfirmationDialogFragment().show(
      childFragmentManager, PurchaseConfirmationDialog.TAG)
 ```
 
-Visit the following resources to learn more:
+Learn more from the following resources:
 
 - [@official@Android Developers: Dialogs](https://developer.android.com/guide/fragments/dialogs)
