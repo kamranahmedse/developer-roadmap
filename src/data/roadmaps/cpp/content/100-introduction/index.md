@@ -133,5 +133,6 @@ This basic introduction to C++ should provide you with a good foundation for fur
 
 Learn more from the following resources:
 
+- [@article@Learn C++ (StudyPlan.dev)](https://www.studyplan.dev/cpp)
 - [@article@LearnC++](https://www.learncpp.com/)
 - [@video@C++ Full Course by freeCodeCamp](https://youtu.be/vLnPwxZdW4Y)
