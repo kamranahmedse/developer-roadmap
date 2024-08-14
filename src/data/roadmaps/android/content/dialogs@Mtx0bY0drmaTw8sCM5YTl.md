@@ -2,7 +2,7 @@
 
 A `DialogFragment` is a special fragment subclass that is designed for creating and hosting dialogs. Although you don't need to host your **dialog** within a fragment, doing so lets the `FragmentManager` manage the state of the dialog and automatically restore the dialog when a configuration change occurs.
 
-## Use
+## Usage
 - Create dialog
 ```kotlin
 class PurchaseConfirmationDialogFragment : DialogFragment() {
