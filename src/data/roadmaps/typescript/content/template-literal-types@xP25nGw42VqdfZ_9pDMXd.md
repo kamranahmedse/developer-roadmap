@@ -1,6 +1,6 @@
 # Template Literal Types
 
-Template literal types in TypeScript are a way to manipulate string values as types. They allow you to create a type based on the result of string manipulation or concatenation. Template literal types are created using the backtick (``) character and string manipulation expressions within the type.
+Template literal types in TypeScript are a way to manipulate string values as types. They allow you to create a type based on the result of string manipulation or concatenation. Template literal types are created using the backtick `` ` `` character and string manipulation expressions within the type.
 
 For example, the following is a template literal type that concatenates two strings:
 
