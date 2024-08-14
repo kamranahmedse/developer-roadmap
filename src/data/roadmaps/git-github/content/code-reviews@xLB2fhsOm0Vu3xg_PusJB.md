@@ -1,6 +1,5 @@
 # Code Reviews
 
-A code review is a process where one or more developers review code that another developer wrote. During code review, developers evaluate the code to make sure that it’s ready to merge into the codebase. To help ensure quality, there must be at least one code reviewer who didn’t participate in authoring the code.
 
 The purpose of a code review in software development is to help ensure that the code meets the organization’s standards and requirements, is of high quality, and is maintainable. In addition to identifying errors and bugs, code reviews also promote a culture of learning and collaboration among the development team.
 

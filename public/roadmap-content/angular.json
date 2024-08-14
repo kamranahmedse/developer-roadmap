@@ -1,0 +1,1686 @@
+{
+  "KDd40JOAvZ8O1mfhTYB3K": {
+    "title": "Introduction to Angular",
+    "description": "Angular is a popular open-source front-end web application framework developed by Google. It is written in TypeScript and allows developers to build dynamic, single-page web applications with ease. Angular provides a comprehensive set of features for creating interactive and responsive user interfaces, making it a powerful tool for modern web development.\n\nOne of the key features of Angular is its use of components, which are reusable building blocks for creating web applications. Components encapsulate the HTML, CSS, and TypeScript code needed to define a specific part of a web page, making it easier to manage and maintain complex applications. Angular also includes a powerful dependency injection system, which helps manage the dependencies between different parts of an application and promotes code reusability. Additionally, Angular provides tools for routing, form handling, and state management, making it a versatile framework for building a wide range of web applications.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": " Angular website",
+        "url": "https://angularjs.org/",
+        "type": "article"
+      }
+    ]
+  },
+  "DE3cMpeRYuUPw2ADtfS-3": {
+    "title": "Angular Architecture",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular coding style guide",
+        "url": "https://angular.dev/style-guide",
+        "type": "article"
+      }
+    ]
+  },
+  "EbFRcy4s6yzzIApBqU77Y": {
+    "title": "Setting up a New Project",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Installation",
+        "url": "https://angular.dev/installation",
+        "type": "article"
+      },
+      {
+        "title": "Setting up the local environment and workspace",
+        "url": "https://angular.dev/tools/cli/setup-local",
+        "type": "article"
+      },
+      {
+        "title": "Build your first Angular app",
+        "url": "https://angular.dev/tutorials/first-app",
+        "type": "article"
+      }
+    ]
+  },
+  "hpShWwL0M57ZAzqkB4I8t": {
+    "title": "Angular and History",
+    "description": "Angular is a web framework that empowers developers to build fast, reliable applications.\n\nMaintained by a dedicated team at Google, Angular provides a broad suite of tools, APIs, and libraries to simplify and streamline your development workflow. Angular gives you a solid platform on which to build fast, reliable applications that scale with both the size of your team and the size of your codebase.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Angular?",
+        "url": "https://angular.dev/overview",
+        "type": "article"
+      }
+    ]
+  },
+  "kGnKzCkQCNFEdgCBRtNuW": {
+    "title": "Components",
+    "description": "Components are the main building block for Angular applications. Each component consists of:\n\n*   An HTML template that declares what renders on the page\n*   A TypeScript class that defines the behavior\n*   A CSS selector that defines how the component is used in a template\n*   Optionally, CSS styles applied to the template\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Anatomy of a component",
+        "url": "https://angular.dev/guide/components",
+        "type": "article"
+      },
+      {
+        "title": "Composing with Components in Angular",
+        "url": "https://angular.dev/essentials/components",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Standalone Components in Angular",
+        "url": "https://www.youtube.com/watch?v=x5PZwb4XurU",
+        "type": "video"
+      }
+    ]
+  },
+  "Mp056kNnwsRWeEXuhGPy-": {
+    "title": "Component Anatomy",
+    "description": "Angular components are the foundational building blocks of Angular applications, designed to encapsulate both the UI and the business logic.\n\nEvery component must have:\n\n*   A TypeScript class with behaviors\n*   An HTML template\n*   A CSS selector\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Anatomy of a component",
+        "url": "https://angular.dev/guide/components",
+        "type": "article"
+      }
+    ]
+  },
+  "dOMvz__EQjO-3p-Nzm-7P": {
+    "title": "Provider",
+    "description": "Configure the injector of component with a token that maps to a provider of a dependency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Configuring dependency providers",
+        "url": "https://angular.dev/guide/di/dependency-injection-providers",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#providers",
+        "type": "article"
+      }
+    ]
+  },
+  "uYHy2yhtTm6fQkKpYx3lU": {
+    "title": "changeDetection",
+    "description": "The change-detection strategy to use for this component.\n\nWhen a component is instantiated, Angular creates a change detector, which is responsible for propagating the component's bindings. The strategy is one of:\n\n*   `ChangeDetectionStrategy.OnPush` sets the strategy to CheckOnce (on demand).\n*   `ChangeDetectionStrategy.Default` sets the strategy to CheckAlways.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Advanced component configuration",
+        "url": "https://angular.dev/guide/components/advanced-configuration#changedetectionstrategy",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#changeDetection",
+        "type": "article"
+      }
+    ]
+  },
+  "-gUpm3OLUJl9iAyx6fmHN": {
+    "title": "Template",
+    "description": "`template` metadata is a property defined within the `@Component` decorator that specifies the HTML template for the component. It allows you to define the structure and layout of the component's view.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Template syntax",
+        "url": "https://angular.dev/guide/templates",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#template",
+        "type": "article"
+      }
+    ]
+  },
+  "RcNHEh6kmbBK1PICbhAwr": {
+    "title": "Standalone",
+    "description": "A standalone component is a component that sets `standalone: true` in its component metadata. Standalone components directly import other components, directives, and pipes used in their templates\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Standalone components",
+        "url": "https://angular.dev/guide/components/importing#standalone-components",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#standalone",
+        "type": "article"
+      }
+    ]
+  },
+  "doHDoAgp7T59KGSXPpQzZ": {
+    "title": "viewProvider",
+    "description": "Defines the set of injectable objects that are visible to its view DOM children.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Using the viewProviders array",
+        "url": "https://angular.dev/guide/di/hierarchical-dependency-injection#using-the-viewproviders-array",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#viewProviders",
+        "type": "article"
+      }
+    ]
+  },
+  "ctigvSYeFa77y3v7m11gk": {
+    "title": "Encapsulation",
+    "description": "An encapsulation policy for the component's styling. Possible values:\n\n*   `ViewEncapsulation.Emulated`: Apply modified component styles in order to emulate a native Shadow DOM CSS encapsulation behavior.\n*   `ViewEncapsulation.None`: Apply component styles globally without any sort of encapsulation.\n*   `ViewEncapsulation.ShadowDom`: Use the browser's native Shadow DOM API to encapsulate styles.\n\nIf not supplied, the value is taken from the CompilerOptions which defaults to `ViewEncapsulation.Emulated`.\n\nIf the policy is `ViewEncapsulation.Emulated` and the component has no styles nor {@link Component#styleUrls styleUrls}, the policy is automatically switched to `ViewEncapsulation.None`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Style scoping",
+        "url": "https://angular.dev/guide/components/styling#style-scoping",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#encapsulation",
+        "type": "article"
+      }
+    ]
+  },
+  "cDN0PGo-zkcLmttxCiAI-": {
+    "title": "Selector",
+    "description": "In Angular, the `selector` metadata is a crucial property defined within the `@Component` decorator that specifies how the component can be identified and used in HTML templates. It determines the way the component is rendered in the DOM, allowing developers to create reusable and easily identifiable components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Component selectors",
+        "url": "https://angular.dev/guide/components/selectors",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#selector",
+        "type": "article"
+      }
+    ]
+  },
+  "4XJKEmSrQfPxggHlAP30w": {
+    "title": "Styles",
+    "description": "This metadata allows developers to apply CSS styles directly to a component, enhancing its appearance and ensuring that styles are scoped to that particular component.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Styling components",
+        "url": "https://angular.dev/guide/components/styling",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#styles",
+        "type": "article"
+      }
+    ]
+  },
+  "ghbrJhuGvscnNGCtVLh5_": {
+    "title": "Imports",
+    "description": "The `imports` property specifies the `standalone` component's template dependencies — those directives, components, and pipes that can be used within its template.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Importing and using components",
+        "url": "https://angular.dev/guide/components/importing",
+        "type": "article"
+      },
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component#imports",
+        "type": "article"
+      }
+    ]
+  },
+  "Szgr8dnZNi-z5i6raIJzW": {
+    "title": "Metadata",
+    "description": "Metadata in Angular components refers to the configuration information that is used to define and configure the behavior of a component. It is specified using decorators, which are functions that add metadata to classes, properties, and methods.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Component - API",
+        "url": "https://angular.dev/api/core/Component",
+        "type": "article"
+      }
+    ]
+  },
+  "19c7D-fWIJ3vYFT6h8ZfN": {
+    "title": "Communication",
+    "description": "",
+    "links": []
+  },
+  "TDyFjKrIZJnCjEZsojPNQ": {
+    "title": "Parent-Child Interaction",
+    "description": "",
+    "links": []
+  },
+  "v0XaLNZ-YrRqP-xv8wS43": {
+    "title": "ViewChild",
+    "description": "",
+    "links": []
+  },
+  "oQl9etjoHiU2JgxieUOEH": {
+    "title": "ContentChild",
+    "description": "",
+    "links": []
+  },
+  "nCpfj_35ZvW-NTygg06XZ": {
+    "title": "Component Lifecycle",
+    "description": "A component instance has a lifecycle that starts when Angular instantiates the component class and renders the component view along with its child views. The lifecycle continues with change detection, as Angular checks to see when data-bound properties change, and updates both the view and the component instance as needed. The lifecycle ends when Angular destroys the component instance and removes its rendered template from the DOM. Directives have a similar lifecycle, as Angular creates, updates, and destroys instances in the course of execution.\n\nYour application can use lifecycle hook methods to tap into key events in the lifecycle of a component or directive to initialize new instances, initiate change detection when needed, respond to updates during change detection, and clean up before deletion of instances.\n\nThe following life cycle hooks of angular are :\n\n`OnChanges` , `OnInit` , `DoCheck` , `OnDestroy` , `AfterContentInit` , `AfterContentChecked` , `AfterViewInit` , `AfterViewChecked`\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Component Lifecycle",
+        "url": "https://angular.dev/guide/components/lifecycle",
+        "type": "article"
+      },
+      {
+        "title": "The life cycle hooks of angular - Blog ",
+        "url": "https://blog.logrocket.com/angular-lifecycle-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about React Hooks",
+        "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "tC5ETtOuuUcybj1jI4CuG": {
+    "title": "Dynamic Components",
+    "description": "",
+    "links": []
+  },
+  "b_kdNS9PDupcUftslkf9i": {
+    "title": "Modules",
+    "description": "Modules in Angular act like a container where we can group the components, directives, pipes, and services, related to the application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Importing and using components",
+        "url": "https://angular.dev/guide/components/importing",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Modules",
+        "url": "https://angular.dev/guide/ngmodules",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "BCq5sgWQLiw0f7u7ZSAd2": {
+    "title": "Module Architecture",
+    "description": "",
+    "links": []
+  },
+  "ex8FOKrUlbu4MuEq2czyW": {
+    "title": "Creating Components",
+    "description": "You can either use Angular CLI to create the Angular components or create it manually.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Build your first Angular app",
+        "url": "https://angular.dev/tutorials/first-app",
+        "type": "article"
+      },
+      {
+        "title": "Components",
+        "url": "https://angular.dev/essentials/components",
+        "type": "article"
+      },
+      {
+        "title": "Angular CLI - ng generate components",
+        "url": "https://angular.dev/guide/components",
+        "type": "article"
+      }
+    ]
+  },
+  "9YhTXybJw2gszlqFeBtW3": {
+    "title": "Creating Modules",
+    "description": "",
+    "links": []
+  },
+  "w_BazXvINFyxDCHmlznfy": {
+    "title": "Feature Modules",
+    "description": "",
+    "links": []
+  },
+  "bLERvEERmNI5AgxtEYokZ": {
+    "title": "Lazy Loading Modules",
+    "description": "",
+    "links": []
+  },
+  "5b590c7s-2XJ0rgdCYxLa": {
+    "title": "Dependencies",
+    "description": "",
+    "links": []
+  },
+  "6fhe9xAi_RSVfa-KKbcbV": {
+    "title": "Templates",
+    "description": "A Template is a form of HTML which tells Angular to go towards another component. To create many Angular features, special syntax within the templates is used.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Template Syntax",
+        "url": "https://angular.dev/guide/templates",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "XHpfHRIlFh19FJIE07u7i": {
+    "title": "Interpolation",
+    "description": "Interpolation refers to embedding expressions into marked up text. By default, interpolation uses the double curly braces {{ and }} as delimiters. Angular replaces currentCustomer with the string value of the corresponding component property.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website",
+        "url": "https://angular.dev/guide/templates/interpolation",
+        "type": "article"
+      },
+      {
+        "title": "Displaying values with interpolation",
+        "url": "https://angular.dev/guide/templates/interpolation",
+        "type": "article"
+      }
+    ]
+  },
+  "t2YOeMONlcnKBrVAo0JDc": {
+    "title": "Template Statements",
+    "description": "Template statements are methods or properties that you can use in your HTML to respond to user events. With template statements, your application can engage users through actions such as displaying dynamic content or submitting forms. Enclose the event in `()` which causes Angular to evaluate the right hand side of the assignment as one or more template statements chained together using semicolon `;`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website",
+        "url": "https://angular.dev/guide/templates/template-statements",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Template Statements",
+        "url": "https://angular.dev/guide/templates/template-statements#",
+        "type": "article"
+      }
+    ]
+  },
+  "WH5wlyOtrqFHBJx7RFJwS": {
+    "title": "Understand Binding",
+    "description": "In an Angular template, a binding creates a live connection between view and the model and keeps them both in sync.\n\n*   **property**: helps you set values for properties of HTML elements or directives.\n*   **attributes**: helps you set values for attributes of HTML elements directly.\n*   **event**: lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches.\n*   **data**: It's a combination of property and event binding and helps you share data between components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website",
+        "url": "https://angular.dev/guide/templates/binding",
+        "type": "article"
+      }
+    ]
+  },
+  "5vZkiH7HDwONIABLfNJ06": {
+    "title": "Data Binding",
+    "description": "",
+    "links": []
+  },
+  "TJOZfHtsLfwA0CZ2bd1b2": {
+    "title": "Properties Binding",
+    "description": "Property binding helps you set values for properties of HTML elements or directives. To bind to an element's property, enclose it in square brackets `[]` which causes Angular to evaluate the right-hand side of the assignment as a dynamic expression.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website",
+        "url": "https://angular.dev/guide/templates/property-binding",
+        "type": "article"
+      }
+    ]
+  },
+  "FgsSyM6To7irpbivtOLEE": {
+    "title": "Attributes Binding",
+    "description": "",
+    "links": []
+  },
+  "bKnpirSvex4oE4lAjiSSV": {
+    "title": "Events",
+    "description": "",
+    "links": []
+  },
+  "2UH79nCjgtY1Qz1YjUJYL": {
+    "title": "Two-way Binding",
+    "description": "",
+    "links": []
+  },
+  "VzvB_bads057YtG4ST4a2": {
+    "title": "Control Flow",
+    "description": "",
+    "links": []
+  },
+  "Wc2ybRw43uamEtno0FpDv": {
+    "title": "Template Ref Vars",
+    "description": "",
+    "links": []
+  },
+  "VsU6713jeIjAOEZnF6gWx": {
+    "title": "@Input & @Output",
+    "description": "`@Input()` and `@Output()` give a child component a way to communicate with its parent component. `@Input()` lets a parent component update data in the child component. Conversely, `@Output()` lets the child send data to a parent component.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website - inputs",
+        "url": "https://angular.dev/guide/components/inputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Website - outputs",
+        "url": "https://angular.dev/guide/components/outputs",
+        "type": "article"
+      }
+    ]
+  },
+  "nyDry6ZWyEUuTq4pw-lU3": {
+    "title": "Template Ref Vars",
+    "description": "Template reference variables help you use data from one part of a template in another part of the template. A template variable can refer to a DOM element within a template, component or directive. In the template, use the hash symbol, `#`, to declare a template reference variable.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website",
+        "url": "https://angular.dev/guide/templates/reference-variables",
+        "type": "article"
+      }
+    ]
+  },
+  "VsC7UmE_AumsBP8fC6to1": {
+    "title": "Template Syntax",
+    "description": "",
+    "links": []
+  },
+  "U1Zy2T-2ki9pDkXn9hn-I": {
+    "title": "@if",
+    "description": "The @if block conditionally displays its content when its condition expression is truthy. Content is added and removed from the DOM based on the evaluation of conditional expressions in the @if and @else blocks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @if",
+        "url": "https://angular.dev/api/core/@if",
+        "type": "article"
+      },
+      {
+        "title": "Narrow Down signal value type within an if statement",
+        "url": "https://egghead.io/lessons/angular-narrow-down-angular-s-signal-value-type-within-an-if-statement",
+        "type": "video"
+      }
+    ]
+  },
+  "ORdPDad4HWJAfcZuS-7yM": {
+    "title": "@else",
+    "description": "",
+    "links": []
+  },
+  "ys5untkSppGMFK-VsfuRt": {
+    "title": "@else if",
+    "description": "",
+    "links": []
+  },
+  "2kYS9w1UzQFZ1zhf01m9L": {
+    "title": "@for",
+    "description": "",
+    "links": []
+  },
+  "nZuim4Fjq6jYOXcRTAEay": {
+    "title": "@switch",
+    "description": "",
+    "links": []
+  },
+  "cHC2MH50CbUSMRZV4QGJI": {
+    "title": "@case",
+    "description": "",
+    "links": []
+  },
+  "h4MMn0_qUN3YXEdMUJOyd": {
+    "title": "@default",
+    "description": "",
+    "links": []
+  },
+  "AwOM0ucg6W7TohdUd7KWT": {
+    "title": "@let",
+    "description": "",
+    "links": []
+  },
+  "ONy-0olujU_FGZM7Wvfr2": {
+    "title": "@defer",
+    "description": "",
+    "links": []
+  },
+  "j99WQxuTzGeBBVoReDp_y": {
+    "title": "Pipes",
+    "description": "Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions to use in template expressions to accept an input value and return a transformed value. Pipes are useful because you can use them throughout your application , some common pipes are\n\n`DatePipe` | `UpperCasePipe` | `LowerCasePipe` | `CurrencyPipe` | `DecimalPipe` | `PercentPipe`\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Pipes",
+        "url": "https://angular.dev/guide/pipes",
+        "type": "article"
+      },
+      {
+        "title": "BuiltIn Pipes - examples",
+        "url": "https://codecraft.tv/courses/angular/pipes/built-in-pipes/",
+        "type": "article"
+      }
+    ]
+  },
+  "_-mTs_FMeob-ZGK-bb3j-": {
+    "title": "Change Detection",
+    "description": "Change detection is the process through which Angular checks to see whether your application state has changed, and if any DOM needs to be updated. At a high level, Angular walks your components from top to bottom, looking for changes. Angular runs its change detection mechanism periodically so that changes to the data model are reflected in an application’s view. Change detection can be triggered either manually or through an asynchronous event\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Runtime performance optimization",
+        "url": "https://angular.dev/best-practices/runtime-performance",
+        "type": "article"
+      },
+      {
+        "title": "ChangeDetectionStrategy",
+        "url": "https://angular.dev/guide/components/advanced-configuration#changedetectionstrategy",
+        "type": "article"
+      },
+      {
+        "title": "4 Runtime Performance Optimizations ( Change detection )",
+        "url": "https://www.youtube.com/watch?v=f8sA-i6gkGQ",
+        "type": "video"
+      }
+    ]
+  },
+  "i2taHzQ5KLHjkkpbH4Ytd": {
+    "title": "Common Pipes",
+    "description": "",
+    "links": []
+  },
+  "nZxZnzbQg9dz-SI65UHq9": {
+    "title": "Pipes Precedence",
+    "description": "The pipe operator has a higher precedence than the JavaScript ternary operator.\n\nYou should always use parentheses to be sure Angular evaluates the expression as you intend.\n\n    (condition ? a : b) | pipe\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Precedence",
+        "url": "https://angular.dev/guide/pipes/precedence",
+        "type": "article"
+      },
+      {
+        "title": "What is the precedence between pipe and ternary operators?",
+        "url": "https://iq.js.org/questions/angular/what-is-the-precedence-between-pipe-and-ternary-operators",
+        "type": "article"
+      }
+    ]
+  },
+  "BOYXGfULJRiP-XOo_lNX3": {
+    "title": "Custom Pipes",
+    "description": "Pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions in template expressions to accept an input value and return a transformed value. Pipes are helpful because you can use them throughout your application while only declaring each pipe once. For example, you would use a pipe to show the date as April 15, 1988, rather than the raw string format.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Custom pipes for new transforms",
+        "url": "https://angular.dev/guide/pipes/transform-data",
+        "type": "article"
+      },
+      {
+        "title": "Create a custom pipe video for Beginners",
+        "url": "https://www.youtube.com/watch?v=P2587FN4Y0w",
+        "type": "video"
+      }
+    ]
+  },
+  "mRB-0CRdGwvxPqZbz08yj": {
+    "title": "@else if",
+    "description": "",
+    "links": []
+  },
+  "kGzlumFdZFxTRZ3HnCGFO": {
+    "title": "Directives",
+    "description": "SKDirectives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.\n\n`NgClass` Adds and removes a set of CSS classes. | `NgStyle` Adds and removes a set of HTML styles. | `NgModel` Adds two-way data binding to an HTML form element.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Built-in directives",
+        "url": "https://angular.dev/guide/directives/",
+        "type": "article"
+      },
+      {
+        "title": "BuiltIn Directives Types",
+        "url": "https://thinkster.io/tutorials/angular-2-directives",
+        "type": "article"
+      }
+    ]
+  },
+  "xk3v8p6vf8ntGj5c-IU4U": {
+    "title": "Structural Directives",
+    "description": "",
+    "links": []
+  },
+  "xvwby0FTdIolRrV2j88fY": {
+    "title": "Attribute Directives",
+    "description": "",
+    "links": []
+  },
+  "7GUvTMVzfdVEDBOz-tHUT": {
+    "title": "Custom Directives",
+    "description": "Directives are the functions that will execute whenever the Angular compiler finds them. Angular Directives enhance the capability of HTML elements by attaching custom behaviors to the DOM.\n\nFrom the core concept, Angular directives are categorized into three categories: Attribute Directives, Structural Directives, and Component Directives.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Create a custom directive video for Beginners",
+        "url": "https://www.youtube.com/watch?v=AoN56g6UAsE",
+        "type": "video"
+      }
+    ]
+  },
+  "a74v78SvGtWduZpXs7wSq": {
+    "title": "Routing",
+    "description": "Routing in Angular allows the users to create a single-page application with multiple views and allows navigation between them.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Routing",
+        "url": "https://angular.dev/guide/routing",
+        "type": "article"
+      },
+      {
+        "title": "Common Routing Tasks",
+        "url": "https://angular.dev/guide/routing/common-router-tasks",
+        "type": "article"
+      }
+    ]
+  },
+  "dbAS-hN1hoCsNJhkxXcGq": {
+    "title": "Configuration",
+    "description": "The configuration of routes in an Angular application involves defining route mappings in an array and providing these routes to the Angular router.\n\n### Example routes:\n\n    const appRoutes: Routes = [\n      { path: 'custom-path', component: CustomComponet },\n      { path: 'custom-path/:id', component: CustomDetailComponet, data: { title: 'Details component' } },\n      { path: '', redirectTo: '/heroes', pathMatch: 'full'},\n      { path: '**', component: PageNotFoundComponent }\n    ];\n    \n\n*   `'custom-path'`: defining a new url route.\n*   `'custom-path/:id'` defining _**id**_ parameter.\n*   `''` (empty path): instantiate a component without the need for defining a new url route.\n*   `'**'`: for undefined paths.\n*   The `data` property in the second route is a place to store arbitrary data associated with this specific route.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Router reference - Configuration",
+        "url": "https://angular.dev/guide/routing/router-reference#configuration",
+        "type": "article"
+      }
+    ]
+  },
+  "ewbDdPYv2SJl_jW3RVHQs": {
+    "title": "Lazy Loading",
+    "description": "Lazy loading is a technique in Angular that allows you to load JavaScript components asynchronously when a specific route is activated. It improves the application load time speed by splitting the application into several bundles. The bundles are loaded as required when the user navigates through the app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Lazy-loading feature modules",
+        "url": "https://angular.dev/guide/ngmodules/lazy-loading",
+        "type": "article"
+      },
+      {
+        "title": "Angular Tutorial - Lazy Loading",
+        "url": "https://www.youtube.com/watch?v=JjIQq9lh-Bw",
+        "type": "video"
+      }
+    ]
+  },
+  "1ZwdEL0Gx30Vv_Av3ZTGG": {
+    "title": "Router Outlets",
+    "description": "The router-outlet is a directive that's available from the @angular/router package and is used by the router to mark where in a template, a matched component should be inserted.\n\nThanks to the router outlet, your app will have multiple views/pages and the app template acts like a shell of your application. Any element, you add to the shell will be rendered in each view, only the part marked by the router outlet will be changed between views.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Router reference - Router outlet",
+        "url": "https://angular.dev/guide/routing/router-reference#router-outlet",
+        "type": "article"
+      },
+      {
+        "title": "Router outlet - API",
+        "url": "https://angular.dev/api/router/RouterOutlet",
+        "type": "article"
+      }
+    ]
+  },
+  "8lFyuSx4MUcYRY2L8bZrq": {
+    "title": "Router Links",
+    "description": "In Angular, routerLink when applied to an element in a template, makes that element a link that initiates navigation to a route. Navigation opens one or more routed components in one or more `<router-outlet>` locations on the page.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Router reference - Router links",
+        "url": "https://angular.dev/guide/routing/router-reference#router-links",
+        "type": "article"
+      },
+      {
+        "title": "Router link - API",
+        "url": "https://angular.dev/api/router/RouterLink",
+        "type": "article"
+      },
+      {
+        "title": "Angular Router: Navigation Using RouterLink, Navigate, or NavigateByUrl",
+        "url": "https://www.digitalocean.com/community/tutorials/angular-navigation-routerlink-navigate-navigatebyurl",
+        "type": "article"
+      }
+    ]
+  },
+  "YF_sG292HqawIX0siWhrv": {
+    "title": "Router Events",
+    "description": "The Angular Router raises events when it navigates from one route to another route. It raises several events such as `NavigationStart`, `NavigationEnd`, `NavigationCancel`, `NavigationError`, `ResolveStart`, etc. You can listen to these events and find out when the state of the route changes. Some of the useful events are route change start (NavigationStart) and route change end (NavigationEnd).",
+    "links": [
+      {
+        "title": "Router reference - Router events",
+        "url": "https://angular.dev/guide/routing/router-reference#router-events",
+        "type": "article"
+      },
+      {
+        "title": "Router event - API",
+        "url": "https://angular.dev/api/router/RouterEvent",
+        "type": "article"
+      }
+    ]
+  },
+  "PmC4zeaLpa5LoL4FhYXcG": {
+    "title": "Guards",
+    "description": "Use route guards to prevent users from navigating to parts of an application without authorization.\n\nAngular route guards are interfaces provided by Angular that, when implemented, allow us to control the accessibility of a route based on conditions provided in function implementation of that interface.\n\nSome types of angular guards are `CanActivate`, `CanActivateChild`, `CanDeactivate`, `CanMatch` and `Resolve`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Preventing unauthorized access",
+        "url": "https://angular.dev/guide/routing/common-router-tasks#preventing-unauthorized-access",
+        "type": "article"
+      },
+      {
+        "title": "Resolve",
+        "url": "https://angular.dev/api/router/Resolve",
+        "type": "article"
+      }
+    ]
+  },
+  "CpsoIVoCKaZnM_-BbXbCh": {
+    "title": "Services  & Remote Data",
+    "description": "Services let you define code or functionalities that are then accessible and reusable in many other components in the Angular project. It also helps you with the abstraction of logic and data that is hosted independently but can be shared across other components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Creating an injectable service",
+        "url": "https://angular.dev/guide/di/creating-injectable-service",
+        "type": "article"
+      },
+      {
+        "title": "What is an Angular Service",
+        "url": "https://www.javatpoint.com/what-is-an-angular-service",
+        "type": "article"
+      },
+      {
+        "title": "Service for API Calls",
+        "url": "https://www.knowledgehut.com/blog/web-development/make-api-calls-angular",
+        "type": "article"
+      },
+      {
+        "title": "Service Tutorial with Example",
+        "url": "https://www.positronx.io/angular-service-tutorial-with-example/",
+        "type": "article"
+      }
+    ]
+  },
+  "8u9uHCRt9RU57erBy79PP": {
+    "title": "Dependency Injection",
+    "description": "Dependency Injection is one of the fundamental concepts in Angular. DI is wired into the Angular framework and allows classes with Angular decorators, such as Components, Directives, Pipes, and Injectables, to configure dependencies that they need.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Dependency Injection",
+        "url": "https://angular.dev/guide/di/dependency-injection",
+        "type": "article"
+      },
+      {
+        "title": "DI in Action",
+        "url": "https://angular.dev/guide/di/di-in-action",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Dependency Injection",
+        "url": "https://app.daily.dev/tags/dependency-injection?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "Q36LQds8k_cSjijvXyWOM": {
+    "title": "Forms",
+    "description": "Forms are used to handle user inputs in many applications. It enables users from entering sensitive information to performing several data entry tasks.\n\nAngular provides two approaches to handle user inputs trough forms: reactive and template-driven forms.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Forms in Angular",
+        "url": "https://angular.dev/guide/forms",
+        "type": "article"
+      },
+      {
+        "title": "Angular Forms Tutorial",
+        "url": "https://www.youtube.com/watch?v=-bGgjgx3fGs",
+        "type": "video"
+      },
+      {
+        "title": "Building Forms in Angular Apps",
+        "url": "https://www.youtube.com/watch?v=hAaoPOx_oIw",
+        "type": "video"
+      }
+    ]
+  },
+  "1d3Y4HVnqom8UOok-7EEf": {
+    "title": "Reactive Forms",
+    "description": "Reactive Forms in angular are those which used to handle the inputs coming from the user. We can define controls by using classes such as FormGroup and FormControl.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Reactive forms - Angular",
+        "url": "https://angular.dev/guide/forms/reactive-forms",
+        "type": "article"
+      },
+      {
+        "title": "Angular Reactive Forms",
+        "url": "https://www.javatpoint.com/angular-reactive-forms",
+        "type": "article"
+      },
+      {
+        "title": "How To Use Reactive Forms in Angular",
+        "url": "https://www.digitalocean.com/community/tutorials/angular-reactive-forms-introduction",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Reactive Form in Angular",
+        "url": "https://www.youtube.com/watch?v=8k4ctDmVn7w",
+        "type": "video"
+      }
+    ]
+  },
+  "XC_K1Wahl2ySqOXoym4YU": {
+    "title": "Typed Forms",
+    "description": "",
+    "links": []
+  },
+  "uDx4lPavwsJFBMzdQ70CS": {
+    "title": "Template-driven Forms",
+    "description": "A Template driven form is the simplest form we can build in Angular. It is mainly used for creating simple form application.\n\nIt uses two-way data-binding (ngModel) to create and handle the form components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Building a template-driven form",
+        "url": "https://angular.dev/guide/forms/template-driven-forms",
+        "type": "article"
+      },
+      {
+        "title": "Template-Driven Forms",
+        "url": "https://codecraft.tv/courses/angular/forms/template-driven/",
+        "type": "article"
+      },
+      {
+        "title": "Template driven form",
+        "url": "https://www.youtube.com/watch?v=whr14XxB8-M",
+        "type": "video"
+      },
+      {
+        "title": "Template driven form Validations",
+        "url": "https://www.youtube.com/watch?v=cVd4ZCIXprs",
+        "type": "video"
+      }
+    ]
+  },
+  "CpufN6DAOj5UNab9vnH0k": {
+    "title": "Dynamic Forms",
+    "description": "",
+    "links": []
+  },
+  "kxRtLsB3y_th8j-HjmJgK": {
+    "title": "Custom Validators",
+    "description": "",
+    "links": []
+  },
+  "m5dgKgUR3ZqI9sBAzToev": {
+    "title": "Control Value Accessor",
+    "description": "",
+    "links": []
+  },
+  "8UY0HAvjY7bdbFpt-MM1u": {
+    "title": "HTTP Client",
+    "description": "",
+    "links": []
+  },
+  "AKPhbg10xXjccO7UBh5eJ": {
+    "title": "Setting Up the Client",
+    "description": "",
+    "links": []
+  },
+  "HjGAv3aV-p4ijYJ8XYIw3": {
+    "title": "Making Requests",
+    "description": "",
+    "links": []
+  },
+  "xG7iSVOGcbxJbNv3xbNfc": {
+    "title": "Writing Interceptors",
+    "description": "",
+    "links": []
+  },
+  "lfp7PIjwITU5gBITQdirD": {
+    "title": "RxJS Basics",
+    "description": "Reactive Extensions for JavaScript, or RxJS, is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.\n\nThe reactive paradigm can be used in many different languages through the use of reactive libraries. These libraries are downloaded APIs that provide functionalities for reactive tools like observers and operators. It can be used in your browser or with Node.js.",
+    "links": []
+  },
+  "krXA6ua7E3m4IIpFkgQZe": {
+    "title": "Observable Pattern",
+    "description": "The observer pattern is a software design pattern in which an object, named the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.\n\nAngular uses the Observer pattern which simply means — Observable objects are registered, and other objects observe (in Angular using the subscribe method) them and take action when the observable object is acted on in some way.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular and Observable",
+        "url": "https://medium.com/fuzzycloud/angular-and-observable-4bf890b2a282",
+        "type": "article"
+      }
+    ]
+  },
+  "b06Y5YrqBbHhWkK6Ws_1c": {
+    "title": "Observable Lifecycle",
+    "description": "An observable is a function that acts as a wrapper for a data stream. They support to pass messages inside your application. An observable is useless until an observer subscribes to it. An observer is an object which consumes the data emitted by the observable. An observer keeps receiving data values from the observable until the observable is completed, or the observer unsubscribes from the observable. Otherwise observers can receive data values from the observable continuously and asynchronously. So we can perform various operations such as updating the user interface, or passing the JSON response.\n\nThere are 4 stages for a life cycle of an observable.\n\n*   Creation\n*   Subscription\n*   Execution\n*   Destruction\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Observable LifeCycle",
+        "url": "https://medium.com/analytics-vidhya/understanding-rxjs-observables-ad5b34d9607f",
+        "type": "article"
+      }
+    ]
+  },
+  "e1ZmmxPZuogCNgtbPPWmd": {
+    "title": "RxJS vs Promises",
+    "description": "In a nutshell, the main differences between the Promise and the Observable are as follows:\n\n*   The Promise is eager, whereas the Observable is lazy,\n*   The Promise is always asynchronous, while the Observable can be either asynchronous or synchronous,\n*   The Promise can provide a single value, whereas the Observable is a stream of values (from 0 to multiple values), you can apply RxJS operators to the Observable to get a new tailored stream.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Why RxJS? RxJS vs Promises",
+        "url": "https://javascript.plainenglish.io/why-rxjs-rxjs-vs-promises-b28962771d68",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about RxJS",
+        "url": "https://app.daily.dev/tags/rxjs?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "ihsjIcF0tkhjs56458teE": {
+    "title": "Operators",
+    "description": "RxJS is mostly useful for its operators, even though the Observable is the foundation. Operators are the essential pieces that allow complex asynchronous code to be easily composed in a declarative manner.\n\nOperators are functions. There are two kinds of operators:\n\n**Pipeable Operators** are the kind that can be piped to Observables using the syntax observableInstance.pipe(operator()). These include, filter(...), and mergeMap(...). When called, they do not change the existing Observable instance. Instead, they return a new Observable, whose subscription logic is based on the first Observable.\n\nA Pipeable Operator is essentially a pure function which takes one Observable as input and generates another Observable as output. Subscribing to the output Observable will also subscribe to the input Observable.\n\n**Creation Operators** are the other kind of operator, which can be called as standalone functions to create a new Observable. For example: of(1, 2, 3) creates an observable that will emit 1, 2, and 3, one right after another. Creation operators will be discussed in more detail in a later section.\n\nPiping\n------\n\nPipeable operators are functions, so they could be used like ordinary functions: op()(obs) — but in practice, there tend to be many of them convolved together, and quickly become unreadable: op4()(op3()(op2()(op1()(obs)))). For that reason, Observables have a method called .pipe() that accomplishes the same thing while being much easier to read:\n\n     obs.pipe(op1(), op2(), op3(), op4());\n    \n\nCreation Operators\n------------------\n\n**What are creation operators?** Distinct from pipeable operators, creation operators are functions that can be used to create an Observable with some common predefined behavior or by joining other Observables.\n\nA typical example of a creation operator would be the interval function. It takes a number (not an Observable) as input argument, and produces an Observable as output:\n\n    import { interval } from 'rxjs';\n    \n    const observable = interval(1000 /* number of milliseconds */);\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "List of creation operators",
+        "url": "https://rxjs.dev/guide/operators#creation-operators-list",
+        "type": "article"
+      },
+      {
+        "title": "Full RxJS Operators Documentation",
+        "url": "https://rxjs.dev/guide/operators",
+        "type": "article"
+      }
+    ]
+  },
+  "nxUbl0eu3LsSL-Z8X6nP5": {
+    "title": "Filtering",
+    "description": "RxJS provides a variety of filtering operators that you can use to filter and transform the data in a stream. You can use these operators in combination with other RxJS operators to create powerful and efficient data processing pipelines.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding RxJS Operators",
+        "url": "https://rxjs.dev/api/operators",
+        "type": "article"
+      }
+    ]
+  },
+  "bJbbayFQ9WSJT9-qy0H5l": {
+    "title": "Rate Limiting",
+    "description": "Rate limiting in RxJS refers to the practice of restricting the rate at which events or data can be emitted from an observable. This can be useful in situations where the rate of incoming data is higher than the rate at which it can be processed, or where there are limits on the number of requests that can be made to a server. There are a few different operators in RxJS that can be used for rate limiting, such as throttleTime and sampleTime. These operators can be used to limit the rate of emissions from an observable by discarding emissions that occur too frequently. Another operator is auditTime it emits the last value from the source Observable during periodic time windows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "throttleTime",
+        "url": "https://rxjs.dev/api/operators/throttleTime",
+        "type": "article"
+      },
+      {
+        "title": "sampleTime",
+        "url": "https://rxjs.dev/api/operators/sampleTime",
+        "type": "article"
+      },
+      {
+        "title": "auditTime",
+        "url": "https://rxjs.dev/api/operators/auditTime",
+        "type": "article"
+      },
+      {
+        "title": "Blogs and tutorials on RxJS",
+        "url": "https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/",
+        "type": "article"
+      }
+    ]
+  },
+  "kdMJHljMzGA3oRlh8Zvos": {
+    "title": "Transformation",
+    "description": "In RxJS, \"transformation\" refers to the process of modifying or manipulating the data emitted by an Observable. There are a variety of methods available in RxJS that can be used to transform the data emitted by an Observable, including:\n\n*   map: applies a function to each item emitted by the Observable and emits the resulting value\n*   mergeMap: applies a function to each item emitted by the Observable, and then merges the resulting Observables into a single Observable\n*   switchMap: applies a function to each item emitted by the Observable, and then switches to the latest resulting Observable\n*   concatMap: applies a function to each item emitted by the Observable, and then concatenates the resulting Observables into a single Observable\n*   exhaustMap: applies a function to each item emitted by the Observable, but ignores subsequent emissions until the current Observable completes\n\nThese are just a few examples of the many methods available in RxJS for transforming the data emitted by an Observable. Each method has its own specific use case, and the best method to use will depend on the requirements of your application.\n\nHere are the official documentation links for the RxJS transformation methods:\n\nYou can find more information and examples on these methods in the official RxJS documentation. Additionally, you can find more operators on [https://rxjs.dev/api/operators](https://rxjs.dev/api/operators) and you can also find more information on the library as a whole on [https://rxjs.dev/](https://rxjs.dev/)",
+    "links": [
+      {
+        "title": "map",
+        "url": "https://rxjs.dev/api/operators/map",
+        "type": "article"
+      },
+      {
+        "title": "mergeMap",
+        "url": "https://rxjs.dev/api/operators/mergeMap",
+        "type": "article"
+      },
+      {
+        "title": "switchMap",
+        "url": "https://rxjs.dev/api/operators/switchMap",
+        "type": "article"
+      },
+      {
+        "title": "concatMap",
+        "url": "https://rxjs.dev/api/operators/concatMap",
+        "type": "article"
+      },
+      {
+        "title": "exhaustMap",
+        "url": "https://rxjs.dev/api/operators/exhaustMap",
+        "type": "article"
+      },
+      {
+        "title": "switchMap vs mergeMap vs concatMap vs exhaustMap practical guide",
+        "url": "https://youtu.be/40pC5wHowWw",
+        "type": "video"
+      }
+    ]
+  },
+  "IgUHqfVhiGpwxT9tY8O88": {
+    "title": "Combination",
+    "description": "Combination operators in RxJS are used to combine multiple observables into a single observable. There are several types of combination operators, including:\n\n*   Merge: merges multiple observables into a single observable that emits items from each source observable in a sequence.\n    \n*   Concat: concatenates multiple observables into a single observable that emits the items from each source observable in sequence, one after the other.\n    \n*   Zip: combines the items from multiple observables into a single observable by combining the items from each observable at a corresponding index.\n    \n*   CombineLatest: combines the latest values from multiple observables into a single observable by emitting an item whenever any of the source observables emit an item.\n    \n*   WithLatestFrom: combines the latest value from one observable with the latest values from multiple other observables.\n    \n*   ForkJoin: combines the items from multiple observables into a single observable by emitting an item only after all of the source observables have emitted an item.\n    \n\nFurther documentation can be found in the official RxJS documentation:\n\n*   Merge: [https://rxjs.dev/api/operators/merge](https://rxjs.dev/api/operators/merge)\n    \n*   Concat: [https://rxjs.dev/api/operators/concat](https://rxjs.dev/api/operators/concat)\n    \n*   Zip: [https://rxjs.dev/api/operators/zip](https://rxjs.dev/api/operators/zip)\n    \n*   CombineLatest: [https://rxjs.dev/api/operators/combineLatest](https://rxjs.dev/api/operators/combineLatest)\n    \n*   WithLatestFrom: [https://rxjs.dev/api/operators/withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom)\n    \n*   ForkJoin: [https://rxjs.dev/api/index/function/forkJoin](https://rxjs.dev/api/index/function/forkJoin)",
+    "links": []
+  },
+  "u1TG8i145o0RKhOR_5epf": {
+    "title": "Signals",
+    "description": "",
+    "links": []
+  },
+  "KAdtebWvgvMifIwd52yc4": {
+    "title": "RxJS Interop",
+    "description": "",
+    "links": []
+  },
+  "LcJyAfv9hjyUNXUVyPRP4": {
+    "title": "Inputs as Signals",
+    "description": "",
+    "links": []
+  },
+  "9HS9C3yq9EUcUy0ZUZk_H": {
+    "title": "Queries as Signals",
+    "description": "",
+    "links": []
+  },
+  "IeU6ClS_yp6BYKdkQOJVf": {
+    "title": "Model Inputs",
+    "description": "",
+    "links": []
+  },
+  "Mqe_s-nwBqAL6X7OGRHEN": {
+    "title": "State Management",
+    "description": "Application state management is the process of maintaining knowledge of an application's inputs across multiple related data flows that form a complete business transaction -- or a session -- to understand the condition of the app at any given moment. In computer science, an input is information put into the program by the user and state refers to the condition of an application according to its stored inputs -- saved as variables or constants. State can also be described as the collection of preserved information that forms a complete session.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is State Management?",
+        "url": "https://www.techtarget.com/searchapparchitecture/definition/state-management",
+        "type": "article"
+      },
+      {
+        "title": "Angular state management made simple with NgRx",
+        "url": "https://blog.logrocket.com/angular-state-management-made-simple-with-ngrx/",
+        "type": "article"
+      },
+      {
+        "title": "Angular State Management with NgRx",
+        "url": "https://www.syncfusion.com/blogs/post/angular-state-management-with-ngrx.aspx",
+        "type": "article"
+      }
+    ]
+  },
+  "N9ZCPgFnFIUv4jMv1w5qK": {
+    "title": "NGXS",
+    "description": "Ngxs is a state management pattern for the Angular framework. It acts as a single source of truth for our application. Ngxs is very simple and easily implementable. It reduce lots of boilerplate code . It is a replacement for Ngrx. In Ngrx we are creating state, action, reducer, and effects but in Ngxs, we are creating only state and actions instead of all of this. Like Ngrx, Ngxs is also asynchronous and when we dispatch any action we can get a response back.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is NGXS ? - Ngxs.io ",
+        "url": "https://www.ngxs.io/",
+        "type": "article"
+      },
+      {
+        "title": "Details about NGXS - Medium ",
+        "url": "https://medium.com/@knoldus/introduction-to-ngxs-state-management-pattern-library-for-angular-ec76f681ceba",
+        "type": "article"
+      },
+      {
+        "title": "Practise of NGXS",
+        "url": "https://www.youtube.com/watch?v=SGj11j4hxmg",
+        "type": "video"
+      }
+    ]
+  },
+  "ir94IdkF1tVAA8ZTD9r0N": {
+    "title": "NgRx",
+    "description": "NgRx is a framework for building reactive applications in Angular. NgRx simplifies managing application state by enforcing unidirectional data flow and providing tools like NgRx Store, NgRx Effects, NgRx Router Store, NgRx Signals, NgRx Entity, and NgRx Operators.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is NGRX?",
+        "url": "https://ngrx.io/docs",
+        "type": "article"
+      },
+      {
+        "title": "Angular NgRx Store and Effects Crash Course",
+        "url": "https://blog.angular-university.io/angular-ngrx-store-and-effects-crash-course/",
+        "type": "article"
+      },
+      {
+        "title": "Angular state management with NgRx",
+        "url": "https://www.youtube.com/watch?v=a3_GW3RBqn0",
+        "type": "video"
+      },
+      {
+        "title": "Angular NgRx Signal Store Crash Course (For NgRx Beginners)",
+        "url": "https://www.youtube.com/watch?v=HqxY0JPlh54",
+        "type": "video"
+      },
+      {
+        "title": "NgRx Best Practices",
+        "url": "https://youtu.be/yYiO-kjmLAc?si=7J_JkOdbyocfb5m_",
+        "type": "video"
+      },
+      {
+        "title": "Angular Course with NgRx - Building Angular Project From Scratch",
+        "url": "https://www.youtube.com/watch?v=vcfZ0EQpYTA",
+        "type": "video"
+      }
+    ]
+  },
+  "rgPUcSKxG9DvXicLfC2Ay": {
+    "title": "Elf",
+    "description": "",
+    "links": []
+  },
+  "m4WBnx_9h01Jl6Q1sxi4Y": {
+    "title": "Zones",
+    "description": "Zone.js is a signaling mechanism that Angular uses to detect when an application state might have changed. It captures asynchronous operations like setTimeout, network requests, and event listeners. Angular schedules change detection based on signals from Zone.js.",
+    "links": [
+      {
+        "title": "Resolving zone pollution",
+        "url": "https://angular.dev/best-practices/zone-pollution",
+        "type": "article"
+      },
+      {
+        "title": "Angular without ZoneJS (Zoneless)",
+        "url": "https://angular.dev/guide/experimental/zoneless",
+        "type": "article"
+      },
+      {
+        "title": "NgZone - API",
+        "url": "https://angular.dev/api/core/NgZone",
+        "type": "article"
+      }
+    ]
+  },
+  "1x5pT607aKE-S-NCWB810": {
+    "title": "Zoneless Applications",
+    "description": "",
+    "links": []
+  },
+  "EbJib-XfZFF9bpCtL3aBs": {
+    "title": "Developer Tools",
+    "description": "",
+    "links": []
+  },
+  "4YSk6I63Ew--zoXC3xmrC": {
+    "title": "Angular CLI",
+    "description": "The Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell. we can install angular latest CLI using the following command\n\n`npm install -g @angular/cli`\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "CLI Reference",
+        "url": "https://angular.dev/cli",
+        "type": "article"
+      },
+      {
+        "title": "The Angular CLI",
+        "url": "https://angular.dev/tools/cli",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Angular CLI - setup",
+        "url": "https://www.youtube.com/watch?v=mZnzX3J5XKI",
+        "type": "video"
+      }
+    ]
+  },
+  "FVH0lnbIZ2m5EfF2EJ2DW": {
+    "title": "Local Setup",
+    "description": "",
+    "links": []
+  },
+  "1fVi9AK6aLjt5QgAFbnGX": {
+    "title": "Deployment",
+    "description": "",
+    "links": []
+  },
+  "yhNGhduk__ow8VTLc6inZ": {
+    "title": "End-to-End Testing",
+    "description": "",
+    "links": []
+  },
+  "Uvr0pRk_fOzwRwqn0dQ6N": {
+    "title": "Schematics",
+    "description": "A schematic is a template-based code generator that supports complex logic. It is a set of instructions for transforming a software project by generating or modifying code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Generating code using schematics",
+        "url": "https://angular.dev/tools/cli/schematics",
+        "type": "article"
+      },
+      {
+        "title": "Angular Blog",
+        "url": "https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=ad9571373944",
+        "type": "article"
+      }
+    ]
+  },
+  "Ax-s_xw3FO3Ocv-AnLbQD": {
+    "title": "Build Environments",
+    "description": "",
+    "links": []
+  },
+  "TeWEy9I-hU6SH02Sy2S2S": {
+    "title": "CLI Builders",
+    "description": "",
+    "links": []
+  },
+  "MwtM1UAIfj4FJ-Y4CKDsP": {
+    "title": "AoT Compilation",
+    "description": "Angular applications require a compilation process before they can run in a browser. The Angular ahead-of-time (AOT) compiler converts your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads and runs that code. Compiling your application during the build process provides a faster rendering in the browser.\n\nVisit the following resources to learn to more:",
+    "links": [
+      {
+        "title": "Angular Compiler Output",
+        "url": "https://github.com/JeanMeche/angular-compiler-output",
+        "type": "opensource"
+      },
+      {
+        "title": "Ahead-of-time (AOT) compilation",
+        "url": "https://angular.dev/tools/cli/aot-compiler",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Angular's ahead of time compliation",
+        "url": "https://blog.nashtechglobal.com/understanding-angulars-ahead-of-time-aot-compilation/",
+        "type": "article"
+      }
+    ]
+  },
+  "T3MmS3bvMMgCUbOk3ktU7": {
+    "title": "DevTools",
+    "description": "",
+    "links": []
+  },
+  "ql7SyxrRmjpiXJ9hQeWPq": {
+    "title": "Language Service",
+    "description": "The Angular Language Service provides code editors with a way to get completions, errors, hints, and navigation inside Angular templates (external and in-line). Anytime you open an Angular application for the first time, an installation prompt will occur.\n\nVisit the following links to learn more:",
+    "links": [
+      {
+        "title": "VS Code NG Language Service",
+        "url": "https://github.com/angular/vscode-ng-language-service",
+        "type": "opensource"
+      },
+      {
+        "title": "Language Service Docs",
+        "url": "https://angular.dev/tools/language-service",
+        "type": "article"
+      }
+    ]
+  },
+  "cl89U8atD6gw5rMGUm4Ix": {
+    "title": "Libraries",
+    "description": "Use the Angular CLI and the npm package manager to build and publish your library as an npm package.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Website",
+        "url": "https://angular.dev/tools/libraries/creating-libraries",
+        "type": "article"
+      }
+    ]
+  },
+  "YHV5oFwLwphXf1wJTDZuG": {
+    "title": "Using Libraries",
+    "description": "",
+    "links": []
+  },
+  "A1mYMg7cbcj6p_VkDf-Tz": {
+    "title": "Creating Libraries",
+    "description": "",
+    "links": []
+  },
+  "jfHaS8TqE4tcAo59K8Nkn": {
+    "title": "SSR",
+    "description": "A normal Angular application executes in the browser, rendering pages in the DOM in response to user actions. Angular Universal executes on the server, generating static application pages that later get bootstrapped on the client. This means that the application generally renders more quickly, giving users a chance to view the application layout before it becomes fully interactive.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Server-side rendering",
+        "url": "https://angular.dev/guide/ssr",
+        "type": "article"
+      },
+      {
+        "title": "Rendering on the Web",
+        "url": "https://web.dev/rendering-on-the-web/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "b-0yQ74zHtAxI9aRLBohc": {
+    "title": "SSG",
+    "description": "SSG (Static Site Generator), helps in building the HTML full website, during the process of building and serving that HTML Page. This method helps to generate the HTML website on the client side before its being served on the server side. Therefore, whenever a user requests a HTML Page, firstly HTML page will be rendered and secondly, the angular app will be rendered. The SSG can be used only if your website is static (or) it's content doesn't changes frequently.",
+    "links": []
+  },
+  "kauQofxCmpktXPcnzid17": {
+    "title": "AnalogJS",
+    "description": "AnalogJS is a full-stack meta-framework powered by Vite and Nitro for Angular. Analog supports both Server-Side Rendering (SSR) and Static Site Generation (SSG). Analog uses file-based routing and supports API (server) routes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Analog",
+        "url": "https://analogjs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Robin Goetz - AnalogJS - The Vite powered Angular meta-framework | NG Belgrade Conf 2024",
+        "url": "https://www.youtube.com/watch?v=BSgpvP4eAGk",
+        "type": "video"
+      },
+      {
+        "title": "Full-stack Angular (SSR, file-based routing, + more) with AnalogJS",
+        "url": "https://www.youtube.com/watch?v=VSCXOTCJpiI",
+        "type": "video"
+      },
+      {
+        "title": "Is AnalogJS good enough for my blog site?",
+        "url": "https://www.youtube.com/watch?v=xTzEDQULo6s",
+        "type": "video"
+      }
+    ]
+  },
+  "mm6c7GLQEwoQdAHdAYzGh": {
+    "title": "Security",
+    "description": "",
+    "links": []
+  },
+  "umUX4Hxk7srHlFR_Un-u7": {
+    "title": "Cross-site Scripting",
+    "description": "",
+    "links": []
+  },
+  "cgI9oeUHufA-ky_W1zENe": {
+    "title": "Sanitization",
+    "description": "",
+    "links": []
+  },
+  "XoYSuv1salCCHoI1cJkxv": {
+    "title": "Trusting Safe Values",
+    "description": "",
+    "links": []
+  },
+  "5h7U0spwEUhB-hbjSlaeB": {
+    "title": "Enforce Trusted Types",
+    "description": "",
+    "links": []
+  },
+  "xH3RHPhsaqD9zIMms5OmX": {
+    "title": "HTTP Vulnerabilities",
+    "description": "",
+    "links": []
+  },
+  "Z1DZBbFI4oU6-KQg3wqMm": {
+    "title": "Cross-site Request Forgery",
+    "description": "",
+    "links": []
+  },
+  "m2aw8vb4rz4IjshpoMyNx": {
+    "title": "HttpClient CSRF",
+    "description": "",
+    "links": []
+  },
+  "ni00edsphJd7uBLCn7-Vw": {
+    "title": "XSRF protection",
+    "description": "",
+    "links": []
+  },
+  "zd7YJGlcMFNFbsKUiW_XC": {
+    "title": "Cross-site Script Inclusion",
+    "description": "",
+    "links": []
+  },
+  "VNG9DdXlS6R1OJ6Lrn4Lt": {
+    "title": "Accessibility",
+    "description": "",
+    "links": []
+  },
+  "0FvH7KPs9ag02QkD1HEJ-": {
+    "title": "Attributes",
+    "description": "",
+    "links": []
+  },
+  "CZ1YRyai8Ds-ry4A8jVbr": {
+    "title": "UI Components",
+    "description": "",
+    "links": []
+  },
+  "0s-QhN5aZh2F3tLJFKEyR": {
+    "title": "Containers",
+    "description": "",
+    "links": []
+  },
+  "8i_JD1P4gIhY1rdldwLC2": {
+    "title": "Routing",
+    "description": "",
+    "links": []
+  },
+  "5-RCB8AiDbkdIFYNXKWge": {
+    "title": "Link Identification",
+    "description": "",
+    "links": []
+  },
+  "STEHxJpwBZxFdQl0zUKxo": {
+    "title": "Performance",
+    "description": "Angular’s performance is enhanced through key strategies such as Deferable Views for improved initial load times, Image Optimization techniques to reduce loading overhead, and mitigation of Zone Pollution to streamline change detection. Additionally, addressing Slow Computations enhances runtime efficiency, while Hydration techniques support faster, more interactive server-side rendered applications.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "From Good to Great: Optimizing Angular Performance",
+        "url": "https://www.youtube.com/watch?v=tMxrY7IL-Ac",
+        "type": "video"
+      }
+    ]
+  },
+  "CYjsXIOWtP5DJmYS-qR-s": {
+    "title": "Deferrable Views",
+    "description": "",
+    "links": []
+  },
+  "1WIKjn3nxYDMIhBL17aYQ": {
+    "title": "Image Optimization",
+    "description": "",
+    "links": []
+  },
+  "pRSR5PEbkJXAJ1LPyK-EE": {
+    "title": "Zone Pollution",
+    "description": "",
+    "links": []
+  },
+  "yxUtSBzJPRcS-IuPsyp-W": {
+    "title": "Slow Computations",
+    "description": "",
+    "links": []
+  },
+  "NY_MfBNgNmloiRGcIvfJ1": {
+    "title": "Hydration",
+    "description": "",
+    "links": []
+  },
+  "lLa-OnHV6GzkNFZu29BIT": {
+    "title": "Testing",
+    "description": "In any software development process, Testing the application plays a vital role. If Bugs and crashes are not figured out and solved they can defame the development company as well as hurt the clients too. But, Angular’s architecture comes with built-in testability features. As soon as you create a new project with Angular CLI, two essential testing tools are installed.They are: Jasmine and Karma. Jasmine is the testing library which structures individual tests into specifications (“specs”) and suites. And Karma is the test runner, which enables the different browsers to run the tests mentioned by Jasmine and the browsers will finally report the test results back.",
+    "links": []
+  },
+  "HU1eTYB321C93qh_U7ioF": {
+    "title": "Testing Services",
+    "description": "",
+    "links": []
+  },
+  "rH13NBFG02hnn5eABSNCY": {
+    "title": "Testing Pipes",
+    "description": "An Angular Pipe is a special function that is called from a Component template. Its purpose is to transform a value: You pass a value to the Pipe, the Pipe computes a new value and returns it.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Testing pipes",
+        "url": "https://angular.dev/guide/testing/pipes",
+        "type": "article"
+      },
+      {
+        "title": "Testing pipes examples",
+        "url": "https://testing-angular.com/testing-pipes/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "4xt0m5jkUqB4Z-krcFBuL": {
+    "title": "Testing Requests",
+    "description": "",
+    "links": []
+  },
+  "TGRZBizDy83JKg_MhnRdX": {
+    "title": "Services with Dependencies",
+    "description": "In an Angular application, Services are responsible for fetching, storing and processing data. Services are singletons, meaning there is only one instance of a Service during runtime. They are fit for central data storage, HTTP and WebSocket communication as well as data validation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Website",
+        "url": "https://angular.dev/guide/testing/services",
+        "type": "article"
+      },
+      {
+        "title": "Testing-Angular.com",
+        "url": "https://testing-angular.com/testing-services/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "cXVy1lx2XqY_j8gxz-y60": {
+    "title": "Component Bindings",
+    "description": "Angular processes all data bindings once for each JavaScript event cycle, from the root of the application component tree through all child components. Data binding plays an important role in communication between a template and its component, and is also important for communication between parent and child components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Website",
+        "url": "https://angular.dev/guide/components",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "SGqb5k6OmWit8PA6ZT3js": {
+    "title": "Testing Directives",
+    "description": "Directives are classes that add new behavior or modify the existing behavior to the elements in the template. Basically directives are used to manipulate the DOM, for example adding/removing the element from DOM or changing the appearance of the DOM elements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Website",
+        "url": "https://angular.dev/guide/testing/attribute-directives",
+        "type": "article"
+      },
+      {
+        "title": "tesing-angular Website",
+        "url": "https://testing-angular.com/testing-directives/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "f5v74Uw54LsB4FgdN6eCd": {
+    "title": "Debugging Tests",
+    "description": "",
+    "links": []
+  },
+  "0dYWO_Zvh9J5_6cRjRjvI": {
+    "title": "Component Templates",
+    "description": "With a component template , you can save and reuse component processes and properties and create components from them; template-based components inherit the template's properties and process.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Component testing scenarios",
+        "url": "https://angular.dev/guide/testing/components-scenarios",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "bqA2bxPcZrqQ-6QE-YDK1": {
+    "title": "Code Coverage",
+    "description": "",
+    "links": []
+  },
+  "Xxyx3uzy5TpNhgR1IysMN": {
+    "title": "Internationalization",
+    "description": "",
+    "links": []
+  },
+  "W8OwpEw00xn0GxidlJjdc": {
+    "title": "Localize Package",
+    "description": "",
+    "links": []
+  },
+  "dVKl3Z2Rnf6IB064v19Mi": {
+    "title": "Locales by ID",
+    "description": "",
+    "links": []
+  },
+  "jL5amGV1BAX_V5cyTIH7d": {
+    "title": "Translation Files",
+    "description": "",
+    "links": []
+  },
+  "9ISvaaJ815_cr_KW9vQhT": {
+    "title": "Multiple Locales",
+    "description": "",
+    "links": []
+  },
+  "rYJq59Q0YdfK6n3x740Em": {
+    "title": "Animation",
+    "description": "",
+    "links": []
+  },
+  "Iv2d4sgODqMPzA9gH6RAw": {
+    "title": "Transitions & Triggers",
+    "description": "",
+    "links": []
+  },
+  "Unjknmb4b2LY-nUVvvF7_": {
+    "title": "Complex Sequences",
+    "description": "",
+    "links": []
+  },
+  "M1CU2Yq6dLp4yOuGV0fhF": {
+    "title": "Reusable Animations",
+    "description": "",
+    "links": []
+  },
+  "x91jWP81oCTeVEwzX8FbK": {
+    "title": "Route Transitions",
+    "description": "",
+    "links": []
+  }
+}

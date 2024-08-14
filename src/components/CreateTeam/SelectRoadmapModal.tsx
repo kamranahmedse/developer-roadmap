@@ -60,11 +60,11 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
     setSearchResults(searchResults);
   }, [searchText, allRoadmaps]);
 
-  const roleBasedRoadmaps = searchResults.filter(
-    (roadmap) => roadmap?.metadata?.tags?.includes('role-roadmap'),
+  const roleBasedRoadmaps = searchResults.filter((roadmap) =>
+    roadmap?.metadata?.tags?.includes('role-roadmap'),
   );
-  const skillBasedRoadmaps = searchResults.filter(
-    (roadmap) => roadmap?.metadata?.tags?.includes('skill-roadmap'),
+  const skillBasedRoadmaps = searchResults.filter((roadmap) =>
+    roadmap?.metadata?.tags?.includes('skill-roadmap'),
   );
 
   return (
@@ -146,6 +146,15 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
                 );
               })}
             </div>
+          </div>
+
+          <div className="border-t border-t-yellow-300 text-yellow-900 bg-yellow-100 px-4 py-3 text-sm">
+            <h2 className='font-medium text-base text-yellow-900 mb-1'>More Official Roadmaps Coming Soon</h2>
+            <p>
+              We are currently adding more of our official
+              roadmaps to this list. If you don't see the roadmap you are
+              looking for, please check back later.
+            </p>
           </div>
         </div>
       </div>
