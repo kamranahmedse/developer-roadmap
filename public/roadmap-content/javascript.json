@@ -450,13 +450,35 @@
   },
   "6lUF0neW1piiP1RsaVxEX": {
     "title": "bigint",
-    "description": "",
-    "links": []
+    "description": "BigInt is a built-in JavaScript object that allows you to work with integers of arbitrary size.\n\nUnlike the Number type, which can accurately represent integers only within the range of ±2^53 , BigInt can handle integers far beyond this limit. This makes it particularly useful for applications requiring high precision with very large numbers, such as cryptography or scientific computations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "BigInt",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+        "type": "article"
+      },
+      {
+        "title": "The Whys and Hows Of BigInt",
+        "url": "https://youtu.be/6I650PQfhMg?si=XyVGrmp4KWLRcHVj",
+        "type": "video"
+      }
+    ]
   },
   "b1HvkoWA2t4kt8mS6FySm": {
     "title": "boolean",
-    "description": "",
-    "links": []
+    "description": "In JavaScript, a `boolean` is a simple data type that can hold one of two values: `true` or `false`. These values are used to represent logical states and are essential in controlling the flow of a program.\n\nBooleans are commonly used in conditional statements (`if`, `else`, `while`, etc.) to determine whether a block of code should execute.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "JavaScript Boolean",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+        "type": "article"
+      },
+      {
+        "title": "Booleans in JavaScript",
+        "url": "https://www.youtube.com/watch?v=B4ZCFdrBmbE",
+        "type": "video"
+      }
+    ]
   },
   "CxyNyFMuTLS3owtRMgClD": {
     "title": "null",
@@ -935,8 +957,14 @@
   },
   "ATma3bLKdmWY_WTsPIKxh": {
     "title": "Object.is",
-    "description": "",
-    "links": []
+    "description": "The [Object.is](http://Object.is)() static method determines whether two values are the same value.\n\n    console.log(Object.is('1', 1));\n    // Expected output: false\n    \n    console.log(Object.is(NaN, NaN));\n    // Expected output: true\n    \n    console.log(Object.is(-0, 0));\n    // Expected output: false\n    \n    const obj = {};\n    console.log(Object.is(obj, {}));\n    // Expected output: false\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Object.is() - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is",
+        "type": "article"
+      }
+    ]
   },
   "PLallt_T33W6bUEn0Hc3W": {
     "title": "isLooselyEqual",
@@ -1915,11 +1943,6 @@
     "description": "The callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many }) at the end.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Callback Hell",
-        "url": "http://callbackhell.com/",
-        "type": "article"
-      },
-      {
         "title": "Callbacks in Callbacks - Pyramid of Doom",
         "url": "https://javascript.info/callbacks#pyramid-of-doom",
         "type": "article"
@@ -2179,11 +2202,22 @@
   },
   "bhuGtcyqPFKu-900aESYz": {
     "title": "DOM APIs",
-    "description": "",
-    "links": []
+    "description": "With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming inteface for the web. All browsers have a set og built-in Web APIs to support complex operations, and to help accessing data. Like Geolocation API, Web Storage, Web History and others.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "DOM- MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+        "type": "article"
+      },
+      {
+        "title": "Web APIs- W3schools",
+        "url": "https://www.w3schools.com/js/js_api_intro.asp",
+        "type": "article"
+      }
+    ]
   },
   "KKyX8N4lTgN0w-Khm6Ztq": {
-    "title": "Gabage Collection",
+    "title": "Garbage Collection",
     "description": "Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions… All that takes memory. The main concept of memory management in JavaScript is reachability.\n\nVisit the following resources to learn more:",
     "links": [
       {

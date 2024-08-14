@@ -367,8 +367,34 @@
   },
   "BqvijNoRzSGYLCMP-6hhr": {
     "title": "CISSP",
-    "description": "The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.\n\nWho Should Obtain the CISSP Certification?\n------------------------------------------\n\nThe CISSP certification is ideal for security consultants, managers, IT directors, security auditors, security analysts, and other professionals who are responsible for designing, implementing, and managing security for their organization. This certification is aimed at professionals with at least five years of full-time experience in two or more of the eight CISSP domains:\n\n*   Security and Risk Management\n*   Asset Security\n*   Security Architecture and Engineering\n*   Communication and Network Security\n*   Identity and Access Management (IAM)\n*   Security Assessment and Testing\n*   Security Operations\n*   Software Development Security\n\nCertification Process\n---------------------\n\nTo obtain the CISSP certification, candidates must meet the following requirements:\n\n*   **Experience:** Possess a minimum of five years of cumulative, paid, full-time work experience in two or more of the eight domains of the CISSP Common Body of Knowledge (CBK).\n    \n*   **Exam:** Pass the CISSP examination with a minimum scaled score of 700 out of 1000 points. The exam consists of 100 to 150 multiple-choice and advanced innovative questions that must be completed within three hours.\n    \n*   **Endorsement:** After passing the exam, candidates must submit an endorsement application to be reviewed and endorsed by an (ISC)² CISSP holder within nine months of passing the exam.\n    \n*   **Continuing Professional Education (CPE):** To maintain the CISSP certification, professionals must earn 120 CPE credits every three years, with a minimum of 40 credits earned each year, and pay an annual maintenance fee.\n    \n\nBenefits of CISSP Certification\n-------------------------------\n\nObtaining the CISSP certification comes with numerous benefits, such as:\n\n*   Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.\n*   Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.\n*   Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.\n*   Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.\n*   Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.",
-    "links": []
+    "description": "The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.\n\nWho Should Obtain the CISSP Certification?\n------------------------------------------\n\nThe CISSP certification is ideal for security consultants, managers, IT directors, security auditors, security analysts, and other professionals who are responsible for designing, implementing, and managing security for their organization. This certification is aimed at professionals with at least five years of full-time experience in two or more of the eight CISSP domains:\n\n*   Security and Risk Management\n*   Asset Security\n*   Security Architecture and Engineering\n*   Communication and Network Security\n*   Identity and Access Management (IAM)\n*   Security Assessment and Testing\n*   Security Operations\n*   Software Development Security\n\nCertification Process\n---------------------\n\nTo obtain the CISSP certification, candidates must meet the following requirements:\n\n*   **Experience:** Possess a minimum of five years of cumulative, paid, full-time work experience in two or more of the eight domains of the CISSP Common Body of Knowledge (CBK).\n    \n*   **Exam:** Pass the CISSP examination with a minimum scaled score of 700 out of 1000 points. The exam consists of 100 to 150 multiple-choice and advanced innovative questions that must be completed within three hours.\n    \n*   **Endorsement:** After passing the exam, candidates must submit an endorsement application to be reviewed and endorsed by an (ISC)² CISSP holder within nine months of passing the exam.\n    \n*   **Continuing Professional Education (CPE):** To maintain the CISSP certification, professionals must earn 120 CPE credits every three years, with a minimum of 40 credits earned each year, and pay an annual maintenance fee.\n    \n\nBenefits of CISSP Certification\n-------------------------------\n\nObtaining the CISSP certification comes with numerous benefits, such as:\n\n*   Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.\n*   Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.\n*   Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.\n*   Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.\n*   Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.\n\nLearn more from the following resources",
+    "links": [
+      {
+        "title": "ISC2 CISSP",
+        "url": "https://www.isc2.org/certifications/cissp",
+        "type": "article"
+      },
+      {
+        "title": "ISC2 CISSP - Official Study Guide",
+        "url": "https://www.wiley.com/en-us/ISC2+CISSP+Certified+Information+Systems+Security+Professional+Official+Study+Guide%2C+10th+Edition-p-9781394254699",
+        "type": "article"
+      },
+      {
+        "title": "Destcert - CISSP Free Resources",
+        "url": "https://destcert.com/resources/",
+        "type": "article"
+      },
+      {
+        "title": "CISSP Exam Cram 2024",
+        "url": "https://youtube.com/playlist?list=PL7XJSuT7Dq_XPK_qmYMqfiBjbtHJRWigD&si=_wSeCkvj-1rzv0ZF",
+        "type": "video"
+      },
+      {
+        "title": "CISSP Prep (Coffee Shots)",
+        "url": "https://youtube.com/playlist?list=PL0hT6hgexlYxKzBmiCD6SXW0qO5ucFO-J&si=9ICs373Vl1ce3s0H",
+        "type": "video"
+      }
+    ]
   },
   "lqFp4VLY_S-5tAbhNQTew": {
     "title": "CISA",
@@ -438,10 +464,10 @@
   },
   "4frVcjYI1VlVU9hQgpwcT": {
     "title": "Linux",
-    "description": "Linux is an open-source operating system (OS) that is widely popular due to its flexibility, stability, and security features. As a Unix-based OS, Linux has a command-line interface, which allows users to perform various tasks through text commands. However, graphical user interfaces (GUIs) can also be installed for ease of use.\n\nKey Features\n------------\n\n*   **Open-source**: Anyone can view, modify, and distribute the Linux source code, promoting collaboration and continuous improvement within the OS community.\n*   **Modular design**: Linux can be customized for various computing environments, such as desktops, servers, and embedded systems.\n*   **Stability and performance**: Linux is well-known for its ability to handle heavy loads without crashing, making it an ideal choice for servers.\n*   **Strong Security**: Linux has robust security mechanisms, such as file permissions, a built-in firewall, and an extensive user privilege system.\n*   **Large Community**: Linux has a vast, active user community that offers a wealth of knowledge, user-contributed software, and support forums.\n\nPopular Linux Distributions\n---------------------------\n\nThere are numerous Linux distributions available, catering to specific user needs and preferences. Some popular distributions include:\n\n*   **Ubuntu**: A user-friendly distribution suitable for beginners, often used for desktop environments.\n*   **Fedora**: A cutting-edge distribution with frequent updates and innovative features, ideal for developers and advanced users.\n*   **Debian**: A very stable distribution that prioritizes free software and benefits from a large, active community.\n*   **Arch Linux**: A highly customizable distribution that allows users to build their system from the ground up, suited for experienced users.\n*   **CentOS**: A distribution focused on stability, security, and manageability, making it a popular choice for server environments.\n\nSecurity Best Practices for Linux\n---------------------------------\n\nWhile Linux is inherently secure, there are best practices to enhance your system's security further:\n\n*   Keep your system updated: Regularly update your kernel, OS packages, and installed software to ensure you have the latest security patches.\n*   Enable a firewall: Configure and enable a firewall, such as `iptables`, to control incoming and outgoing network traffic.\n*   Use strong passwords and user accounts: Create separate accounts with strong passwords for different users and grant them only the required privileges.\n*   Disable unused services: Unnecessary services can be potential security risks; ensure only required services are running on your system.\n*   Implement a Security-Enhanced Linux (SELinux) policy: SELinux provides a mandatory access control (MAC) system that restricts user and process access to system resources.\n\nBy understanding Linux's features and best practices, you can leverage its powerful capabilities and robust security features to enhance your computing environment's performance and safety.",
+    "description": "Linux is an open-source operating system (OS) that is widely popular due to its flexibility, stability, and security features. As a Unix-based OS, Linux has a command-line interface, which allows users to perform various tasks through text commands. However, graphical user interfaces (GUIs) can also be installed for ease of use.\n\nKey Features\n------------\n\n*   **Open-source**: Anyone can view, modify, and distribute the Linux source code, promoting collaboration and continuous improvement within the OS community.\n*   **Modular design**: Linux can be customized for various computing environments, such as desktops, servers, and embedded systems.\n*   **Stability and performance**: Linux is well-known for its ability to handle heavy loads without crashing, making it an ideal choice for servers.\n*   **Strong Security**: Linux has robust security mechanisms, such as file permissions, a built-in firewall, and an extensive user privilege system.\n*   **Large Community**: Linux has a vast, active user community that offers a wealth of knowledge, user-contributed software, and support forums.\n\nPopular Linux Distributions\n---------------------------\n\nThere are numerous Linux distributions available, catering to specific user needs and preferences. Some popular distributions include:\n\n*   **Ubuntu**: A user-friendly distribution suitable for beginners, often used for desktop environments.\n*   **Fedora**: A cutting-edge distribution with frequent updates and innovative features, ideal for developers and advanced users.\n*   **Debian**: A very stable distribution that prioritizes free software and benefits from a large, active community.\n*   **Arch Linux**: A highly customizable distribution that allows users to build their system from the ground up, suited for experienced users.\n*   **CentOS**: A distribution focused on stability, security, and manageability, making it a popular choice for server environments.\n\nSecurity Best Practices for Linux\n---------------------------------\n\nWhile Linux is inherently secure, there are best practices to enhance your system's security further:\n\n*   Keep your system updated: Regularly update your kernel, OS packages, and installed software to ensure you have the latest security patches.\n*   Enable a firewall: Configure and enable a firewall, such as `iptables`, to control incoming and outgoing network traffic.\n*   Use strong passwords and user accounts: Create separate accounts with strong passwords for different users and grant them only the required privileges.\n*   Disable unused services: Unnecessary services can be potential security risks; ensure only required services are running on your system.\n*   Implement a Security-Enhanced Linux (SELinux) policy: SELinux provides a mandatory access control (MAC) system that restricts user and process access to system resources.\n\nBy understanding Linux's features and best practices, you can leverage its powerful capabilities and robust security features to enhance your computing environment's performance and safety.\n\nRecommended resources include:",
     "links": [
       {
-        "title": "Linux from scratch- Cisco",
+        "title": "Linux from scratch - Cisco",
         "url": "https://www.netacad.com/courses/os-it/ndg-linux-unhatched",
         "type": "course"
       },
@@ -561,8 +587,14 @@
   },
   "dJ0NUsODFhk52W2zZxoPh": {
     "title": "SSL and TLS Basics",
-    "description": "Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols designed to provide secure communication over a computer network. They play a vital role in protecting sensitive information transmitted online, such as login credentials, financial information, and private user data.\n\nSecure Sockets Layer (SSL)\n--------------------------\n\nSSL is the predecessor to TLS and was first introduced in the 1990s. It creates an encrypted connection between a client (typically a web browser) and a server to ensure that any data transmitted remains private and secure. SSL uses a combination of symmetric and asymmetric encryption methods, as well as digital certificates, to establish and maintain secure communication.\n\nTransport Layer Security (TLS)\n------------------------------\n\nTLS is an improved and more secure version of SSL, with TLS 1.0 being released as an upgrade to SSL 3.0. The current version, as of this guide, is TLS 1.3. TLS provides a more robust and flexible security framework, addressing many of the vulnerabilities present in SSL. While many people still refer to SSL when discussing secure web communication, it's important to note that SSL has been deprecated, and TLS is the best-practice standard for secure communication.\n\nKey Components\n--------------\n\n*   **Encryption**: SSL and TLS use powerful algorithms to protect data through encryption, ensuring it's unreadable by anyone without the proper decryption keys.\n*   **Authentication**: SSL/TLS digital certificates verify the identities of clients and servers, providing trust and authenticity.\n*   **Integrity**: These security protocols use message authentication codes to ensure that the data sent between clients and servers has not been tampered with during transmission.\n\nHandshake Process\n-----------------\n\nSSL and TLS follow a series of steps, known as the \"handshake process,\" to create a secure connection:\n\n*   **Client hello**: The client initiates the handshake process by sending a message with supported cryptographic algorithms, random numbers, and session information.\n*   **Server hello**: The server responds with its chosen cryptographic algorithms, random numbers, and its digital certificate. Optionally, the server can request the client's certificate for mutual authentication.\n*   **Client verification**: The client verifies the server's certificate and may send its own if requested. It then creates a pre-master secret, encrypts it with the server's public key, and sends it to the server.\n*   **Key generation and exchange**: Both the client and server generate the master secret and session keys using the pre-master secret and shared random numbers. These keys are used for encrypting and decrypting the data transmitted.\n*   **Secured connection**: Once the keys are exchanged, the client and server can now communicate securely using the established encryption and keys.\n\nSecure communication is critical for any organization handling sensitive data. SSL and TLS serve as the backbone for protecting data in transit and play a significant role in ensuring the confidentiality, integrity, and authenticity of online communications.",
-    "links": []
+    "description": "Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols designed to provide secure communication over a computer network. They play a vital role in protecting sensitive information transmitted online, such as login credentials, financial information, and private user data.\n\nSecure Sockets Layer (SSL)\n--------------------------\n\nSSL is the predecessor to TLS and was first introduced in the 1990s. It creates an encrypted connection between a client (typically a web browser) and a server to ensure that any data transmitted remains private and secure. SSL uses a combination of symmetric and asymmetric encryption methods, as well as digital certificates, to establish and maintain secure communication.\n\nTransport Layer Security (TLS)\n------------------------------\n\nTLS is an improved and more secure version of SSL, with TLS 1.0 being released as an upgrade to SSL 3.0. The current version, as of this guide, is TLS 1.3. TLS provides a more robust and flexible security framework, addressing many of the vulnerabilities present in SSL. While many people still refer to SSL when discussing secure web communication, it's important to note that SSL has been deprecated, and TLS is the best-practice standard for secure communication.\n\nKey Components\n--------------\n\n*   **Encryption**: SSL and TLS use powerful algorithms to protect data through encryption, ensuring it's unreadable by anyone without the proper decryption keys.\n*   **Authentication**: SSL/TLS digital certificates verify the identities of clients and servers, providing trust and authenticity.\n*   **Integrity**: These security protocols use message authentication codes to ensure that the data sent between clients and servers has not been tampered with during transmission.\n\nHandshake Process\n-----------------\n\nSSL and TLS follow a series of steps, known as the \"handshake process,\" to create a secure connection:\n\n*   **Client hello**: The client initiates the handshake process by sending a message with supported cryptographic algorithms, random numbers, and session information.\n*   **Server hello**: The server responds with its chosen cryptographic algorithms, random numbers, and its digital certificate. Optionally, the server can request the client's certificate for mutual authentication.\n*   **Client verification**: The client verifies the server's certificate and may send its own if requested. It then creates a pre-master secret, encrypts it with the server's public key, and sends it to the server.\n*   **Key generation and exchange**: Both the client and server generate the master secret and session keys using the pre-master secret and shared random numbers. These keys are used for encrypting and decrypting the data transmitted.\n*   **Secured connection**: Once the keys are exchanged, the client and server can now communicate securely using the established encryption and keys.\n\nSecure communication is critical for any organization handling sensitive data. SSL and TLS serve as the backbone for protecting data in transit and play a significant role in ensuring the confidentiality, integrity, and authenticity of online communications.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SSH vs TLS vs SSL",
+        "url": "https://www.youtube.com/watch?v=k3rFFLmQCuY",
+        "type": "video"
+      }
+    ]
   },
   "umbMBQ0yYmB5PgWfY6zfO": {
     "title": "Basics of NAS and SAN",
@@ -825,8 +857,14 @@
   },
   "LKK1A5-xawA7yCIAWHS8P": {
     "title": "SSL / TLS",
-    "description": "**Secure Socket Layer (SSL)** and **Transport Layer Security (TLS)** are cryptographic protocols designed to provide security and data integrity for communications over networks. These protocols are commonly used for securing web traffic and ensuring that sensitive information, such as credit card numbers and login credentials, are transmitted securely between clients (e.g., web browsers) and servers.\n\nSSL\n---\n\nSSL was developed by Netscape in the mid-1990s and has gone through several iterations. The last version, SSLv3, was released in 1996. SSL was deprecated in 2015 due to security concerns, and it is not recommended for use in modern applications.\n\nTLS\n---\n\nTLS is the successor to SSL and is continually evolving with new versions and updates. The most recent version, TLS 1.3, was released in 2018. TLS is widely used and considered the standard for securing web traffic.\n\nHow SSL/TLS Works\n-----------------\n\nSSL/TLS operates by encrypting the data transmitted between a client and a server, ensuring that the data cannot be easily intercepted or tampered with. The encryption is achieved using a combination of cryptographic algorithms, key exchanges, and digital certificates.\n\nHere are the key steps in setting up an SSL/TLS connection:\n\n*   **Handshake:** The client and server will engage in a process called a \"handshake\" to establish a secure connection. During this process, the client and server agree on which version of SSL/TLS to use, and choose the cipher suites and cryptographic algorithms they will use to secure the communication.\n    \n*   **Key Exchange:** The client and server will perform a key exchange, a process by which they generate and securely share encryption keys. These keys will be used to encrypt and decrypt the data being transmitted between them.\n    \n*   **Certificate Verification:** The server will provide a digital certificate, which contains its public key and information about the server. The client checks the validity of the certificate by confirming that it was issued by a trusted Certificate Authority (CA) and has not expired.\n    \n*   **Secure Communication:** Once the handshake, key exchange, and certificate verification are complete, the client and server can begin securely transmitting data using the encryption keys they have shared.\n    \n\nAdvantages of SSL/TLS\n---------------------\n\n*   **Secure communication:** SSL/TLS provides a secure, encrypted tunnel for data to be transmitted between clients and servers, protecting sensitive information from eavesdropping, interception, and tampering.\n    \n*   **Authentication:** SSL/TLS uses digital certificates to authenticate the server and sometimes the client. This helps to ensure that the parties involved in the communication are who they claim to be.\n    \n*   **Data integrity:** SSL/TLS includes mechanisms to confirm that the data received has not been tampered with during transmission, maintaining the integrity of the information being sent.",
-    "links": []
+    "description": "**Secure Socket Layer (SSL)** and **Transport Layer Security (TLS)** are cryptographic protocols designed to provide security and data integrity for communications over networks. These protocols are commonly used for securing web traffic and ensuring that sensitive information, such as credit card numbers and login credentials, are transmitted securely between clients (e.g., web browsers) and servers.\n\nSSL\n---\n\nSSL was developed by Netscape in the mid-1990s and has gone through several iterations. The last version, SSLv3, was released in 1996. SSL was deprecated in 2015 due to security concerns, and it is not recommended for use in modern applications.\n\nTLS\n---\n\nTLS is the successor to SSL and is continually evolving with new versions and updates. The most recent version, TLS 1.3, was released in 2018. TLS is widely used and considered the standard for securing web traffic.\n\nHow SSL/TLS Works\n-----------------\n\nSSL/TLS operates by encrypting the data transmitted between a client and a server, ensuring that the data cannot be easily intercepted or tampered with. The encryption is achieved using a combination of cryptographic algorithms, key exchanges, and digital certificates.\n\nHere are the key steps in setting up an SSL/TLS connection:\n\n*   **Handshake:** The client and server will engage in a process called a \"handshake\" to establish a secure connection. During this process, the client and server agree on which version of SSL/TLS to use, and choose the cipher suites and cryptographic algorithms they will use to secure the communication.\n    \n*   **Key Exchange:** The client and server will perform a key exchange, a process by which they generate and securely share encryption keys. These keys will be used to encrypt and decrypt the data being transmitted between them.\n    \n*   **Certificate Verification:** The server will provide a digital certificate, which contains its public key and information about the server. The client checks the validity of the certificate by confirming that it was issued by a trusted Certificate Authority (CA) and has not expired.\n    \n*   **Secure Communication:** Once the handshake, key exchange, and certificate verification are complete, the client and server can begin securely transmitting data using the encryption keys they have shared.\n    \n\nAdvantages of SSL/TLS\n---------------------\n\n*   **Secure communication:** SSL/TLS provides a secure, encrypted tunnel for data to be transmitted between clients and servers, protecting sensitive information from eavesdropping, interception, and tampering.\n    \n*   **Authentication:** SSL/TLS uses digital certificates to authenticate the server and sometimes the client. This helps to ensure that the parties involved in the communication are who they claim to be.\n    \n*   **Data integrity:** SSL/TLS includes mechanisms to confirm that the data received has not been tampered with during transmission, maintaining the integrity of the information being sent.\n    \n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SSL, TLS, HTTPS Explained",
+        "url": "https://www.youtube.com/watch?v=j9QmMEWmcfo",
+        "type": "video"
+      }
+    ]
   },
   "AjywuCZdBi9atGUbetlUL": {
     "title": "VMWare",
@@ -1104,8 +1142,19 @@
   },
   "FJsEBOFexbDyAj86XWBCc": {
     "title": "Basics of IDS and IPS",
-    "description": "When it comes to cybersecurity, detecting and preventing intrusions is crucial for protecting valuable information systems and networks. In this section, we'll discuss the basics of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) to help you better understand their function and importance in your overall cybersecurity strategy.\n\nWhat is Intrusion Detection System (IDS)?\n-----------------------------------------\n\nAn Intrusion Detection System (IDS) is a critical security tool designed to monitor and analyze network traffic or host activities for any signs of malicious activity, policy violations, or unauthorized access attempts. Once a threat or anomaly is identified, the IDS raises an alert to the security administrator for further investigation and possible actions.\n\nThere are two types of IDS:\n\n*   **Network-Based Intrusion Detection System (NIDS)**: This type of IDS is deployed on network devices such as routers, switches, or firewalls to monitor and analyze the traffic between hosts within the network.\n    \n*   **Host-Based Intrusion Detection System (HIDS)**: This type of IDS is installed on individual hosts, such as servers or workstations, to monitor and analyze the activities on that specific host.\n    \n\nWhat is Intrusion Prevention System (IPS)?\n------------------------------------------\n\nAn Intrusion Prevention System (IPS) is an advanced security solution closely related to IDS. While an IDS mainly focuses on detecting and alerting about intrusions, an IPS takes it a step further and actively works to prevent the attacks. It monitors, analyzes, and takes pre-configured automatic actions based on suspicious activities, such as blocking malicious traffic, reseting connections, or dropping malicious packets.\n\nThere are two types of IPS:\n\n*   **Network-Based Intrusion Prevention System (NIPS)**: This type of IPS is deployed in-line with network devices and closely monitors network traffic, making it possible to take actions in real-time.\n    \n*   **Host-Based Intrusion Prevention System (HIPS)**: This type of IPS is installed on individual hosts and actively prevents attacks by controlling inputs and outputs on the host, restricting access to resources, and making use of application-level controls.\n    \n\nKey Takeaways\n-------------\n\n*   IDS and IPS are essential components of a robust cybersecurity strategy.\n*   IDS focuses on detecting and alerting about potential intrusions, while IPS takes it further by actively preventing and mitigating attacks.\n*   Network-based systems protect networks, while host-based systems protect individual hosts within a network.\n*   Regularly updating and configuring IDS/IPS is necessary to continually defend against evolving threats.\n\nBy understanding the basics of IDS and IPS, you can better evaluate your security needs and take the right steps to protect your network and hosts from potential intruders.",
-    "links": []
+    "description": "When it comes to cybersecurity, detecting and preventing intrusions is crucial for protecting valuable information systems and networks. In this section, we'll discuss the basics of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) to help you better understand their function and importance in your overall cybersecurity strategy.\n\nWhat is Intrusion Detection System (IDS)?\n-----------------------------------------\n\nAn Intrusion Detection System (IDS) is a critical security tool designed to monitor and analyze network traffic or host activities for any signs of malicious activity, policy violations, or unauthorized access attempts. Once a threat or anomaly is identified, the IDS raises an alert to the security administrator for further investigation and possible actions.\n\nThere are two types of IDS:\n\n*   **Network-Based Intrusion Detection System (NIDS)**: This type of IDS is deployed on network devices such as routers, switches, or firewalls to monitor and analyze the traffic between hosts within the network.\n    \n*   **Host-Based Intrusion Detection System (HIDS)**: This type of IDS is installed on individual hosts, such as servers or workstations, to monitor and analyze the activities on that specific host.\n    \n\nWhat is Intrusion Prevention System (IPS)?\n------------------------------------------\n\nAn Intrusion Prevention System (IPS) is an advanced security solution closely related to IDS. While an IDS mainly focuses on detecting and alerting about intrusions, an IPS takes it a step further and actively works to prevent the attacks. It monitors, analyzes, and takes pre-configured automatic actions based on suspicious activities, such as blocking malicious traffic, reseting connections, or dropping malicious packets.\n\nThere are two types of IPS:\n\n*   **Network-Based Intrusion Prevention System (NIPS)**: This type of IPS is deployed in-line with network devices and closely monitors network traffic, making it possible to take actions in real-time.\n    \n*   **Host-Based Intrusion Prevention System (HIPS)**: This type of IPS is installed on individual hosts and actively prevents attacks by controlling inputs and outputs on the host, restricting access to resources, and making use of application-level controls.\n    \n\nKey Takeaways\n-------------\n\n*   IDS and IPS are essential components of a robust cybersecurity strategy.\n*   IDS focuses on detecting and alerting about potential intrusions, while IPS takes it further by actively preventing and mitigating attacks.\n*   Network-based systems protect networks, while host-based systems protect individual hosts within a network.\n*   Regularly updating and configuring IDS/IPS is necessary to continually defend against evolving threats.\n\nBy understanding the basics of IDS and IPS, you can better evaluate your security needs and take the right steps to protect your network and hosts from potential intruders.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is an Intrusion Prevention System?",
+        "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips",
+        "type": "article"
+      },
+      {
+        "title": "Intrusion Prevention System (IPS)",
+        "url": "https://www.youtube.com/watch?v=7QuYupuic3Q",
+        "type": "video"
+      }
+    ]
   },
   "bj5YX8zhlam0yoNckL8e4": {
     "title": "Honeypots",
@@ -1425,8 +1474,14 @@
   },
   "w6wXkoLrv0_d-Ah0txUHd": {
     "title": "Kali Linux",
-    "description": "",
-    "links": []
+    "description": "Kali Linux is a specialized Linux distribution that is designed for penetration testing, security auditing, and related information security tasks. Originating from the Debian distribution, Kali Linux is equipped with a vast array of tools that are used for ethical hacking purposes. It is an open-source project that provides users with the means to test the security of systems and networks by simulating attacks in a controlled environment.\n\nTools\n-----\n\nWith over 600 pre-installed penetration-testing programs, Kali Linux offers tools for various security-related tasks, such as network analysis, vulnerability scanning, and forensic analysis. Its development is overseen by Offensive Security, a company known for their contributions to the field of information security. Kali Linux is highly customizable, allowing users to tailor the system to their specific needs, and supports a wide range of hardware platforms. It is a powerful resource for professionals in the cybersecurity field, as well as for those who are passionate about learning and practicing ethical hacking techniques.",
+    "links": [
+      {
+        "title": "Kali Linux",
+        "url": "https://www.kali.org/",
+        "type": "article"
+      }
+    ]
   },
   "10qbxX8DCrfyH7tgYexxQ": {
     "title": "LOLBAS",
@@ -1506,8 +1561,19 @@
   },
   "LEgJtu1GZKOtoAXyOGWLE": {
     "title": "Endpoint Security",
-    "description": "Endpoint security refers to the practice of protecting individual devices, or \"endpoints\", that connect to your organization's network from potential cyber threats. These devices include desktop computers, laptops, smartphones, tablets, and servers. With the increase in remote working and the widespread use of personal devices in the workplace, endpoint security has become a critical aspect of a strong cybersecurity strategy.\n\nWhy is Endpoint Security Important?\n-----------------------------------\n\nEndpoint devices serve as potential entry points for cybercriminals to access sensitive data and launch attacks against your organization's network. By securing these devices, you can prevent unauthorized access, reduce the risk of data breaches, and maintain the integrity of your network.\n\nKey Components of Endpoint Security\n-----------------------------------\n\nTo effectively secure your endpoints, consider implementing the following measures:\n\n*   **Antivirus and Malware Protection**: Make sure every endpoint device has up-to-date antivirus and anti-malware software installed. This will help to detect and remove malicious files, preventing them from causing harm to your network.\n    \n*   **Patch Management**: Stay up to date with the latest security patches for your operating systems and third-party applications. Regularly updating your software can help protect against vulnerabilities that cybercriminals may exploit.\n    \n*   **Device Management**: Implement a centralized device management solution that allows administrators to monitor, manage, and secure endpoints. This includes enforcing security policies, tracking device inventory, and remote wiping lost or stolen devices.\n    \n*   **Access Control**: Limit access to sensitive data by implementing a strict access control policy. Only grant necessary permissions to those who require it, and use authentication methods such as multi-factor authentication (MFA) to verify the identity of users.\n    \n*   **Encryption**: Encrypt sensitive data stored on endpoint devices to prevent unauthorized access to the data in case of device theft or loss.\n    \n*   **Firewall and Intrusion Prevention**: Deploy firewall and intrusion prevention systems to block external threats and alert administrators of potential attacks.\n    \n*   **User Training**: Educate users about the importance of endpoint security and the best practices for maintaining it. This includes topics like creating strong passwords, avoiding phishing scams, and following safe browsing practices.\n    \n\nBy taking a comprehensive approach to endpoint security, you can protect your organization's network and sensitive data from the growing threat of cyberattacks.",
-    "links": []
+    "description": "Endpoint security refers to the practice of protecting individual devices, or \"endpoints\", that connect to your organization's network from potential cyber threats. These devices include desktop computers, laptops, smartphones, tablets, and servers. With the increase in remote working and the widespread use of personal devices in the workplace, endpoint security has become a critical aspect of a strong cybersecurity strategy.\n\nWhy is Endpoint Security Important?\n-----------------------------------\n\nEndpoint devices serve as potential entry points for cybercriminals to access sensitive data and launch attacks against your organization's network. By securing these devices, you can prevent unauthorized access, reduce the risk of data breaches, and maintain the integrity of your network.\n\nKey Components of Endpoint Security\n-----------------------------------\n\nTo effectively secure your endpoints, consider implementing the following measures:\n\n*   **Antivirus and Malware Protection**: Make sure every endpoint device has up-to-date antivirus and anti-malware software installed. This will help to detect and remove malicious files, preventing them from causing harm to your network.\n    \n*   **Patch Management**: Stay up to date with the latest security patches for your operating systems and third-party applications. Regularly updating your software can help protect against vulnerabilities that cybercriminals may exploit.\n    \n*   **Device Management**: Implement a centralized device management solution that allows administrators to monitor, manage, and secure endpoints. This includes enforcing security policies, tracking device inventory, and remote wiping lost or stolen devices.\n    \n*   **Access Control**: Limit access to sensitive data by implementing a strict access control policy. Only grant necessary permissions to those who require it, and use authentication methods such as multi-factor authentication (MFA) to verify the identity of users.\n    \n*   **Encryption**: Encrypt sensitive data stored on endpoint devices to prevent unauthorized access to the data in case of device theft or loss.\n    \n*   **Firewall and Intrusion Prevention**: Deploy firewall and intrusion prevention systems to block external threats and alert administrators of potential attacks.\n    \n*   **User Training**: Educate users about the importance of endpoint security and the best practices for maintaining it. This includes topics like creating strong passwords, avoiding phishing scams, and following safe browsing practices.\n    \n\nBy taking a comprehensive approach to endpoint security, you can protect your organization's network and sensitive data from the growing threat of cyberattacks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Manage endpoint security - Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-endpoint-security/",
+        "type": "course"
+      },
+      {
+        "title": "Endpoint Security",
+        "url": "https://youtu.be/5d7PCDm_MXs?si=RX3sAdNPLG0tJOaR&t=11",
+        "type": "video"
+      }
+    ]
   },
   "9Z6HPHPj4escSVDWftFEx": {
     "title": "FTP vs SFTP",
@@ -1521,8 +1587,14 @@
   },
   "gNFVtBxSYP5Uw3o3tlJ0M": {
     "title": "IPSEC",
-    "description": "",
-    "links": []
+    "description": "IPSec, which stands for Internet Protocol Security, is a suite of protocols used to secure Internet communications by encrypting and authenticating IP packets. It is commonly utilized in Virtual Private Networks (VPNs) to ensure that data transmitted over public networks is not accessible to unauthorized individuals. IPSec operates by encrypting data at the source and decrypting it at the destination, maintaining the confidentiality and integrity of the data while in transit. Additionally, it provides authentication, ensuring that the data is being sent and received by the intended parties. This protocol suite is versatile as it can be used with both IPv4 and IPv6 networks, making it a fundamental component for secure online communication.",
+    "links": [
+      {
+        "title": "IP Sec VPN Fundamentals",
+        "url": "https://www.youtube.com/watch?v=15amNny_kKI",
+        "type": "video"
+      }
+    ]
   },
   "LLGXONul7JfZGUahnK0AZ": {
     "title": "DNSSEC",
@@ -1582,8 +1654,14 @@
   },
   "QvHWrmMzO8IvNQ234E_wf": {
     "title": "EDR",
-    "description": "",
-    "links": []
+    "description": "Endpoint Detection and Response (EDR) is a cybersecurity technology that provides continuous monitoring and response to threats at the endpoint level. It is designed to detect, investigate, and mitigate suspicious activities on endpoints such as laptops, desktops, and mobile devices. EDR solutions log and analyze behaviors on these devices to identify potential threats, such as malware or ransomware, that have bypassed traditional security measures like antivirus software. This technology equips security teams with the tools to quickly respond to and contain threats, minimizing the risk of a security breach spreading across the network. EDR systems are an essential component of modern cybersecurity strategies, offering advanced protection by utilizing real-time analytics, AI-driven automation, and comprehensive data recording.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Endpoint Detection and Response (EDR)? - IBM",
+        "url": "https://www.youtube.com/watch?v=55GaIolVVqI",
+        "type": "video"
+      }
+    ]
   },
   "iolsTC-63d_1wzKGul-cT": {
     "title": "DLP",
@@ -1734,8 +1812,29 @@
   },
   "7obusm5UtHwWMcMMEB3lt": {
     "title": "Phishing",
-    "description": "",
-    "links": []
+    "description": "The technique where scammers pretend to be trusted organizations like your _bank_, _online retailers_ or a _government office_ in order to trick you into sharing your personal information like bank passcode, credit card number, Paypal password etc.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to Recognize and Avoid Phishing Scams",
+        "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+        "type": "article"
+      },
+      {
+        "title": "phishing - definition",
+        "url": "https://www.techtarget.com/searchsecurity/definition/phishing",
+        "type": "article"
+      },
+      {
+        "title": "Protect yourself from phishing",
+        "url": "https://support.microsoft.com/en-us/windows/protect-yourself-from-phishing-0c7ea947-ba98-3bd9-7184-430e1f860a44",
+        "type": "video"
+      },
+      {
+        "title": "Phishing attacks are SCARY easy to do!! (let me show you!)",
+        "url": "https://www.youtube.com/watch?v=u9dBGWVwMMA",
+        "type": "video"
+      }
+    ]
   },
   "M65fCl72qlF0VTbGNT6du": {
     "title": "Whishing",
@@ -1764,8 +1863,14 @@
   },
   "Iu0Qtk13RjrhHpSlm0uyh": {
     "title": "Dumpster Diving",
-    "description": "",
-    "links": []
+    "description": "Dumpster Diving in the context of cybersecurity refers to the practice of searching through discarded materials in trash or recycling bins to find confidential information. This technique may seem unsophisticated, but it can be extremely effective in obtaining valuable data such as passwords, account information, network diagrams, or any other sensitive information that has not been properly destroyed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Dumpster Diving",
+        "url": "https://powerdmarc.com/dumpster-diving-in-cybersecurity/",
+        "type": "article"
+      }
+    ]
   },
   "o-keJgF9hmifQ_hUD91iN": {
     "title": "Tailgating",
@@ -1784,8 +1889,14 @@
   },
   "UU_inxa8Y2lLP2BRhdLDT": {
     "title": "Reconnaissance",
-    "description": "",
-    "links": []
+    "description": "Reconnaissance is the first phase of a cyberattack, during which attackers gather as much information as possible about a target system, network, or organization. The goal of reconnaissance is to identify potential vulnerabilities, entry points, and other valuable details that can be exploited in subsequent attack phases.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Cyber Reconnaissance",
+        "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/what-is-cyber-reconnaissance/",
+        "type": "article"
+      }
+    ]
   },
   "ZEgxmvjWPp5NofLFz_FTJ": {
     "title": "Impersonation",
@@ -2000,7 +2111,13 @@
   "9OastXVfiG1YRMm68ecnn": {
     "title": "Dropbox",
     "description": "Dropbox is a widely used cloud storage service that allows you to store, access, and share files, documents, and media with ease across various devices. Launched in 2007, Dropbox has become one of the most popular cloud storage solutions, catering to both individual users and businesses. The service is available on multiple platforms, including Windows, macOS, Linux, iOS, and Android.\n\nKey features\n------------\n\n*   **File synchronization**: Sync the same files across all your devices and have instant access to updated files from anywhere.\n*   **File sharing**: Easily share files or folders by sending a link or inviting other users to a shared folder.\n*   **Collaboration**: Dropbox allows real-time collaboration on documents with multiple users using integrations with other tools like Google Workspace and Microsoft Office 365.\n*   **Version history**: Retrieve previous versions of a file for up to 30 days, allowing you to recover deleted files or reverse changes.\n\nPlans and pricing\n-----------------\n\nDropbox offers various plans for individual users and businesses with different storage capacities and features:\n\n*   **Basic**: Free plan with 2 GB storage and core features like file synchronization and sharing.\n*   **Plus**: Priced at $9.99/month for 2 TB storage, additional features like Smart Sync, remote device wipe, and a longer (30-day) version history.\n*   **Professional**: Priced at $19.99/month for 3 TB storage and added features like advanced sharing controls and full-text search.\n*   **Business plans**: Starting from $12.50/user/month for a minimum of 3 users, with 5 TB storage per user, priority support, and additional file controls.\n\nSecurity and privacy\n--------------------\n\nDropbox takes security and privacy seriously, with features like:\n\n*   **Encryption**: Files are encrypted both when they are stored on Dropbox servers and during transmission (using SSL/TLS).\n*   **Two-factor authentication**: You can enable two-factor authentication (2FA) to add an extra layer of security to your account.\n*   **Selective sync**: Choose which files and folders to sync on each device, allowing you to keep sensitive data off certain computers or devices.\n*   **GDPR compliance**: Dropbox is compliant with the General Data Protection Regulation (GDPR), which ensures better data protection and privacy for users.\n\nDrawbacks\n---------\n\nThere are a few downsides to using Dropbox as your cloud storage solution:\n\n*   Limited storage on the free plan.\n*   The need for a third-party app to encrypt files before uploading to add an extra layer of security.\n*   Other alternatives offer additional features like built-in document editing.\n\nConclusion\n----------\n\nDropbox is a simple and user-friendly cloud storage service that offers seamless integration with various platforms and efficient file sharing options. While its free plan may be limited compared to other alternatives, the ease of use and robust feature set make it a popular choice for both personal and professional use.",
-    "links": []
+    "links": [
+      {
+        "title": "Dropbox",
+        "url": "https://www.dropbox.com/",
+        "type": "article"
+      }
+    ]
   },
   "4Man3Bd-ySLFlAdxbLOHw": {
     "title": "Box",

@@ -1,0 +1,1273 @@
+{
+  "HlUUGj3dOZ68t4gIjerXh": {
+    "title": "Learn the Basics",
+    "description": "A Version Control System (VCS) is a tool that helps developers manage changes to their code over time. It allows multiple versions of a project to exist simultaneously, making it easier to collaborate with others and maintain a record of all modifications.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is version control?",
+        "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+        "type": "article"
+      },
+      {
+        "title": "What is Git? - The Complete Guide to Git",
+        "url": "https://www.datacamp.com/blog/all-about-git",
+        "type": "article"
+      },
+      {
+        "title": "GUI Clients",
+        "url": "https://git-scm.com/downloads/guis",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started - Installing Git",
+        "url": "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git",
+        "type": "article"
+      },
+      {
+        "title": "Creating an account on GitHub",
+        "url": "https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github",
+        "type": "article"
+      },
+      {
+        "title": "What is Git? Explained in 2 Minutes!",
+        "url": "https://www.youtube.com/watch?v=2ReR1YJrNOM",
+        "type": "video"
+      }
+    ]
+  },
+  "bY6b1GV2XQQ52NOx8gWFj": {
+    "title": "What is Version Control?",
+    "description": "",
+    "links": []
+  },
+  "dhIx1GnynvbSUriqYLUt0": {
+    "title": "Why use Version Control?",
+    "description": "",
+    "links": []
+  },
+  "_jSTrYN9G8EsGHkbusKPU": {
+    "title": "Git vs Other VCS",
+    "description": "",
+    "links": []
+  },
+  "v7hCNbgPByi3YiLSs46BK": {
+    "title": "Installing Git Locally",
+    "description": "",
+    "links": []
+  },
+  "PtU5Qwfzn3N1i3oRlCGoR": {
+    "title": "What is a Repository",
+    "description": "",
+    "links": []
+  },
+  "1iOkbO5juk2LO-WZHx_W6": {
+    "title": "git init",
+    "description": "The `git init` command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Git - git-init Documentation",
+        "url": "https://git-scm.com/docs/git-init",
+        "type": "article"
+      },
+      {
+        "title": "git init | Atlassian Git Tutorial",
+        "url": "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init#:~:text=The%20git%20init%20command%20creates,run%20in%20a%20new%20project.",
+        "type": "article"
+      }
+    ]
+  },
+  "NMCWgzhhfUvFOMO5GbF_u": {
+    "title": "git config",
+    "description": "The `git config` command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing `git config` will modify a configuration text file.\n\nThe most basic use case for `git config` is to invoke it with a configuration name, which will display the set value at that name. Configuration names are dot delimited strings composed of a 'section' and a 'key' based on their hierarchy. For example: `user.email`\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Git - git-config Documentation",
+        "url": "https://git-scm.com/docs/git-config",
+        "type": "article"
+      },
+      {
+        "title": "git config | Atlassian Git Tutorial",
+        "url": "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config",
+        "type": "article"
+      },
+      {
+        "title": "Setting your username in Git",
+        "url": "https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git",
+        "type": "article"
+      },
+      {
+        "title": "Git config commands | Git tutorial",
+        "url": "https://nulab.com/learn/software-development/git-tutorial/git-commands-settings/git-config-commands/",
+        "type": "article"
+      }
+    ]
+  },
+  "tVvxC5JQgUb_B8kOqYpD8": {
+    "title": "Local vs Global Config",
+    "description": "",
+    "links": []
+  },
+  "Sv36oxTZwlUv-i1K28NeP": {
+    "title": "Working Directory",
+    "description": "",
+    "links": []
+  },
+  "h71Tx3nkfUrnhaqcHlDkQ": {
+    "title": "Staging Area",
+    "description": "",
+    "links": []
+  },
+  "2_z3R7seCvQVj-Na4H1SV": {
+    "title": "Committing Changes",
+    "description": "",
+    "links": []
+  },
+  "oz2oRAhaEQb0Fm3aRJQG8": {
+    "title": ".gitignore",
+    "description": "Ignored files are tracked in a special file named `.gitignore` that is checked in at the root of your repository. There is no explicit git ignore command: instead the `.gitignore` file must be edited and committed by hand when you have new files that you wish to ignore. `.gitignore` files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "gitignore Documentation",
+        "url": "https://git-scm.com/docs/gitignore/en",
+        "type": "article"
+      },
+      {
+        "title": ".gitignore file - ignoring files in Git | Atlassian Git Tutorial",
+        "url": "https://www.atlassian.com/git/tutorials/saving-changes/gitignore",
+        "type": "article"
+      },
+      {
+        "title": "Ignoring files - GitHub Docs",
+        "url": "https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files",
+        "type": "article"
+      }
+    ]
+  },
+  "IfUm5D_zNaUKMd4HX4Fi4": {
+    "title": "Viewing Commit History",
+    "description": "",
+    "links": []
+  },
+  "bXfCUG3h1TIFPgD4WUDph": {
+    "title": "Branching Basics",
+    "description": "",
+    "links": []
+  },
+  "OegitQ5Ngjvd3ZfMpfrkM": {
+    "title": "Creating Branch",
+    "description": "",
+    "links": []
+  },
+  "_dPOVUbxApx0pfKPH8fgr": {
+    "title": "Renaming Branch",
+    "description": "",
+    "links": []
+  },
+  "1uDenoQ6zu7CT69FR2iQB": {
+    "title": "Deleting Branch",
+    "description": "",
+    "links": []
+  },
+  "PtRo-wGiNAagZ6CykfvMr": {
+    "title": "Checkout Branch",
+    "description": "In Git, to \"checkout\" from a branch means to switch your working directory to that branch, making it the active branch. This updates your files to match the state of that branch and allows you to work on it.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "git-checkout",
+        "url": "https://git-scm.com/docs/git-checkout",
+        "type": "article"
+      },
+      {
+        "title": "git-commands-checkout",
+        "url": "https://www.git-tower.com/learn/git/commands/git-checkout",
+        "type": "article"
+      },
+      {
+        "title": "Git Checkout. Different ways of using the checkout command in the Git Project",
+        "url": "https://youtu.be/h_PIHOFUYuw?si=tebKCCb5U3ues0Io",
+        "type": "video"
+      }
+    ]
+  },
+  "sNuy6NMjLOEkJlqdEjFPq": {
+    "title": "Merging Basics",
+    "description": "",
+    "links": []
+  },
+  "NeSvgS2yA5x8qbcJHrV__": {
+    "title": "GitHub Essentials",
+    "description": "",
+    "links": []
+  },
+  "i7fIIHcBEk473te8bniJ5": {
+    "title": "Creating Account",
+    "description": "",
+    "links": []
+  },
+  "qZFtRABvlBbVvsy6T00J2": {
+    "title": "GitHub Interface",
+    "description": "",
+    "links": []
+  },
+  "GS3f1FKFVKT0-GJQrgCm8": {
+    "title": "Setting up Profile",
+    "description": "",
+    "links": []
+  },
+  "c_FO6xMixrrMo6iisfsvl": {
+    "title": "Creating Repositories",
+    "description": "",
+    "links": []
+  },
+  "KbVvFVQ4k77R2_ddsc7WT": {
+    "title": "Profile Readme",
+    "description": "",
+    "links": []
+  },
+  "HEqBbw_A4ZbJI5zEy8ViN": {
+    "title": "Private vs Public",
+    "description": "",
+    "links": []
+  },
+  "aWx9WHUrgofcTr8B-fQYe": {
+    "title": "Git Remotes",
+    "description": "",
+    "links": []
+  },
+  "sBQOInoFBU9XfkPZ-JlyT": {
+    "title": "Managing Remotes",
+    "description": "",
+    "links": []
+  },
+  "ZVMCh9om37ee1qsecFa-N": {
+    "title": "Pushing / Pulling Changes",
+    "description": "",
+    "links": []
+  },
+  "Gybnekbd1rJKTOf4hJ4Sh": {
+    "title": "Fetch without Merge",
+    "description": "",
+    "links": []
+  },
+  "d_GNnB6PBINz1jxGNWAE-": {
+    "title": "Collaboration on GitHub",
+    "description": "Collaboration on GitHub is a powerful way for multiple people to work together on the same project, using Git as the version control system. GitHub provides various tools and workflows that make collaboration efficient and organized.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to collaborate in a GitHub project",
+        "url": "https://gist.github.com/neklaf/9002d3acccf6b6e448db5c4c4e8764c0",
+        "type": "article"
+      },
+      {
+        "title": "Best Practices for collaborating in github",
+        "url": "https://www.gitkraken.com/blog/collaborate-on-github",
+        "type": "article"
+      },
+      {
+        "title": "Working with GitHub in VS Code",
+        "url": "https://code.visualstudio.com/docs/sourcecontrol/github",
+        "type": "article"
+      }
+    ]
+  },
+  "l1Wf7Pe_ah8ycCgslfSK4": {
+    "title": "Forking vs Cloning",
+    "description": "",
+    "links": []
+  },
+  "crdllx5cH_seIpgVPvHg_": {
+    "title": "Issues",
+    "description": "",
+    "links": []
+  },
+  "1Koej79yTv-OAswVZwgGq": {
+    "title": "Cloning Repositories",
+    "description": "Cloning a repository in Git and GitHub involves creating a local copy of a remote repository on your computer. This allows you to work on the project locally, commit changes, and later push those changes back to the remote repository.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Git clone",
+        "url": "https://git-scm.com/docs/git-clone/en",
+        "type": "article"
+      },
+      {
+        "title": "Cloning a repository",
+        "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository",
+        "type": "article"
+      },
+      {
+        "title": "Clone a git respository",
+        "url": "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone",
+        "type": "article"
+      },
+      {
+        "title": "Cloning remote respository into local machine",
+        "url": "https://youtu.be/xeQih8LVtZM?si=djlyTDpLNS0oyqQH",
+        "type": "video"
+      }
+    ]
+  },
+  "x6eILrLCQrVpz4j8uOuy6": {
+    "title": "Pull Requests",
+    "description": "",
+    "links": []
+  },
+  "8lXXVFkgK6n5IHaYkYe3l": {
+    "title": "PR from a Fork",
+    "description": "",
+    "links": []
+  },
+  "r-u1vTpUyuvsB0revOU0C": {
+    "title": "Collaborators",
+    "description": "Collaborators in GitHub are users who have been granted direct access to a repository by the repository owner or organization administrators. Collaborators can perform actions like pushing commits, creating branches, and managing issues or pull requests, depending on the permissions granted to them. They are typically added to private repositories or to public repositories where more control over contributions is needed.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to add collaborators to your personal projects",
+        "url": "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository",
+        "type": "article"
+      },
+      {
+        "title": "Adding outside collaborators to repositories in your organization",
+        "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization",
+        "type": "article"
+      },
+      {
+        "title": "What are github collaborators",
+        "url": "https://www.geeksforgeeks.org/what-are-github-collaborators/",
+        "type": "article"
+      },
+      {
+        "title": "How to Add Collaborators to Your GitHub Repository",
+        "url": "https://www.blinkops.com/blog/how-to-add-collaborators-to-your-github-repository",
+        "type": "article"
+      },
+      {
+        "title": "Using Github for Team collaboration",
+        "url": "https://youtu.be/4nyIS58ORWw?si=yK5LCONNVm9OIUK5",
+        "type": "video"
+      }
+    ]
+  },
+  "y4DkB5NvTh41IeT0G2gr-": {
+    "title": "Labelling Issues / PRs",
+    "description": "",
+    "links": []
+  },
+  "dQS1V0zZxeKhHhUo3STBK": {
+    "title": "Saved Replies",
+    "description": "",
+    "links": []
+  },
+  "oWMaOWU06juoIuzXNe-wt": {
+    "title": "Mentions",
+    "description": "",
+    "links": []
+  },
+  "XstmIysIi_lWo6RzszLBt": {
+    "title": "Reactions",
+    "description": "",
+    "links": []
+  },
+  "0rHDUbAdXqH9zQW2VfJ8v": {
+    "title": "Merge Strategies",
+    "description": "",
+    "links": []
+  },
+  "agtPWS8j6i6wQPk10cy8E": {
+    "title": "Fast-Forward vs Non-FF",
+    "description": "",
+    "links": []
+  },
+  "9Dt4Gyiiq5jteWSKxsRMK": {
+    "title": "Handling Conflicts",
+    "description": "",
+    "links": []
+  },
+  "99FVJ3Zs8n6lr8L95mG6g": {
+    "title": "Rebase",
+    "description": "",
+    "links": []
+  },
+  "Z-srOhYFGVEKDexlJ6cjt": {
+    "title": "Squash",
+    "description": "",
+    "links": []
+  },
+  "eFf2fesrs-1aVM5tH3ORQ": {
+    "title": "Cherry Picking Commits",
+    "description": "Cherry-picking in Git allows you to apply a specific commit from one branch to another, without merging the entire branch. This is useful when you want to bring in a specific feature or fix from one branch to another without incorporating all the changes from the source branch.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "git-cherry-pick-docs",
+        "url": "https://git-scm.com/docs/git-cherry-pick",
+        "type": "article"
+      },
+      {
+        "title": "Git cherry pick",
+        "url": "https://www.atlassian.com/git/tutorials/cherry-pick",
+        "type": "article"
+      },
+      {
+        "title": "Git-CHERRY-PICK-Tutorial",
+        "url": "https://youtu.be/i657Bg_HAWI?si=3jjn2X8Hi1na--F4",
+        "type": "video"
+      }
+    ]
+  },
+  "7lRUYWNSpHvJ-QyIE8RMa": {
+    "title": "Commit Messages",
+    "description": "A Git commit message is a brief explanation of the changes introduced in a particular commit. It helps others (and your future self) understand the purpose of the changes and the context behind them. Writing clear and informative commit messages is an important practice for maintaining a well-organized and easily navigable project history.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to Write Better Git Commit Messages",
+        "url": "https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/",
+        "type": "article"
+      },
+      {
+        "title": "Writing good commit messages",
+        "url": "https://www.theodinproject.com/lessons/foundations-commit-messages",
+        "type": "article"
+      },
+      {
+        "title": "How to Write Good Git Commit Messages like a pro",
+        "url": "https://medium.com/front-end-weekly/how-to-write-good-git-commit-messages-like-a-pro-2c12f01569d9",
+        "type": "article"
+      },
+      {
+        "title": "Write git commit messages like a PRO with Conventional Commits",
+        "url": "https://youtu.be/OJqUWvmf4gg?si=Fgl3isZpP13jYXHP",
+        "type": "video"
+      },
+      {
+        "title": "How to Make Actually Good Commits in Git",
+        "url": "https://youtu.be/Dy5t_H2PRrk?si=0V-JEbqphpJX5OLl",
+        "type": "video"
+      }
+    ]
+  },
+  "ks1Pip-RM-UWD6zuF2j4n": {
+    "title": "Branch Naming",
+    "description": "",
+    "links": []
+  },
+  "GwDNk2HBjASr_NWIL4G3-": {
+    "title": "PR Guidelines",
+    "description": "",
+    "links": []
+  },
+  "xLB2fhsOm0Vu3xg_PusJB": {
+    "title": "Code Reviews",
+    "description": "The purpose of a code review in software development is to help ensure that the code meets the organization’s standards and requirements, is of high quality, and is maintainable. In addition to identifying errors and bugs, code reviews also promote a culture of learning and collaboration among the development team.\n\nSome of the benefits of code reviews include:\n\n*   Increase code quality by identifying defects in the code and issues such as security vulnerabilities and performance problems—before developers merge the code into an upstream branch.\n*   Ensure compliance with organizational standards, regulations, and the team’s code style.\n*   Save time and money by detecting issues earlier in the software development process before they become more complex and expensive to fix.\n*   Boost collaboration, communication, and knowledge sharing among developers by providing a forum to discuss code and ask questions, share ideas and best practices, and learn from each other.\n*   Ensure that the code is maintainable by identifying any software maintenance issues and suggesting improvements.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "A practical guide for better, faster code reviews",
+        "url": "https://github.com/mawrkus/pull-request-review-guide",
+        "type": "article"
+      },
+      {
+        "title": "How to improve code with code reviews",
+        "url": "https://github.com/resources/articles/software-development/how-to-improve-code-with-code-reviews",
+        "type": "article"
+      }
+    ]
+  },
+  "pJ-najh7dXhhYA_0bDiR5": {
+    "title": "Contribution Guidelines",
+    "description": "",
+    "links": []
+  },
+  "D2WIExwfSnkAPIa5O-Hp5": {
+    "title": "Documentation",
+    "description": "",
+    "links": []
+  },
+  "1Ulxl4VUvRSfyCPpi-iv8": {
+    "title": "Markdown",
+    "description": "",
+    "links": []
+  },
+  "WIVr7JxO1AJTNObW8mtY3": {
+    "title": "Project Readme",
+    "description": "",
+    "links": []
+  },
+  "Ddkss13_qDJTquDHbVTVs": {
+    "title": "GitHub Wikis",
+    "description": "",
+    "links": []
+  },
+  "i3AbARgzQtxtlB-1AS8zv": {
+    "title": "Clean Git History",
+    "description": "Cleaning up Git history can make your commit history more readable, concise, and organized. Here are some of the reasons why you'd want to clean your git history:\n\n*   makes it easy to decipher the order of the commits in your repository\n*   It facilitates finding commits that might have introduced bugs and enable rollback if necessary\n*   To be able to deploy any commit on your development branch using your CI/CD system\n*   If you are handling mobile app releases and you are responsible for figuring out what feature is in which release.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Clean GIT history — a Step by Step Guide",
+        "url": "https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d",
+        "type": "article"
+      },
+      {
+        "title": "Git best practice tip: clean commit history",
+        "url": "https://youtu.be/bZpiVijzd2g?si=8lJTlR3LfY9ZUd77",
+        "type": "video"
+      }
+    ]
+  },
+  "yMx3LdadPz4g25CL3N8da": {
+    "title": "Working in a Team",
+    "description": "",
+    "links": []
+  },
+  "RMrxQLhrINO5g4Mhxh5qS": {
+    "title": "GitHub Organizations",
+    "description": "",
+    "links": []
+  },
+  "_ft-uvXt6s_xrcMT3fbSF": {
+    "title": "Collaborators / Members",
+    "description": "",
+    "links": []
+  },
+  "wydgCxR5VnieBpRolXt8i": {
+    "title": "Teams within Organization",
+    "description": "",
+    "links": []
+  },
+  "DzFJDdqnSy5GeGHWOpcVo": {
+    "title": "GitHub Projects",
+    "description": "",
+    "links": []
+  },
+  "q0zy_hXav5iXw8LpGVJVd": {
+    "title": "Project Planning",
+    "description": "",
+    "links": []
+  },
+  "RFJgfuxoVxt22QlwLI5mW": {
+    "title": "Kanban Boards",
+    "description": "",
+    "links": []
+  },
+  "sxvT2hGko2PDRBoBrCGWD": {
+    "title": "Roadmaps",
+    "description": "",
+    "links": []
+  },
+  "TNBz5755PhI6iKxTQTqcS": {
+    "title": "Automations",
+    "description": "",
+    "links": []
+  },
+  "snWQHCQECZyUXHdn6ppIk": {
+    "title": "GitHub Discussions",
+    "description": "",
+    "links": []
+  },
+  "X9K3PBpGsMoXkJsKdJPI7": {
+    "title": "Git Stash Basics",
+    "description": "",
+    "links": []
+  },
+  "zen3RRdK9_nPAYgicRoHk": {
+    "title": "History",
+    "description": "",
+    "links": []
+  },
+  "lXC07j6dOa3rQixY1P-Ob": {
+    "title": "Linear vs Non-Linear",
+    "description": "",
+    "links": []
+  },
+  "V8nLIvddyOKTzEjOJX5GW": {
+    "title": "HEAD",
+    "description": "",
+    "links": []
+  },
+  "0cLf7FiI9CX--UX45sm2f": {
+    "title": "Detached HEAD",
+    "description": "",
+    "links": []
+  },
+  "qFEonbCMLri8iA0yONwuf": {
+    "title": "git log options",
+    "description": "",
+    "links": []
+  },
+  "0Yi4cryT2v2SGBjouOas3": {
+    "title": "Undoing Changes",
+    "description": "",
+    "links": []
+  },
+  "dLr55Om7IOvI53c1DgTKc": {
+    "title": "git revert",
+    "description": "",
+    "links": []
+  },
+  "igrR7LguU1jemg_mf_AD6": {
+    "title": "git reset",
+    "description": "",
+    "links": []
+  },
+  "Uc7FyfAKpDFRGRNHwztFo": {
+    "title": "--soft",
+    "description": "",
+    "links": []
+  },
+  "V_joZNpQsS9G9PI-o-GmC": {
+    "title": "--hard",
+    "description": "",
+    "links": []
+  },
+  "qis7Z5VRxMcOmbesQlegZ": {
+    "title": "--mixed",
+    "description": "",
+    "links": []
+  },
+  "-0zQvCHG8jS_ghSjmTeIx": {
+    "title": "Viewing Diffs",
+    "description": "",
+    "links": []
+  },
+  "Rwpeltygwzcf6hnuZNURE": {
+    "title": "Between Commits",
+    "description": "",
+    "links": []
+  },
+  "O-zoAWkDvyn7B8_TmY257": {
+    "title": "Between Branches",
+    "description": "",
+    "links": []
+  },
+  "mzjtCdpke1ayHcEuS-YUS": {
+    "title": "Staged Changes",
+    "description": "",
+    "links": []
+  },
+  "uxqJzQFRcALqatNRIWR0w": {
+    "title": "Unstaged Changes",
+    "description": "",
+    "links": []
+  },
+  "sOoC-XxEoIvwKct00oKlX": {
+    "title": "Rewriting History",
+    "description": "",
+    "links": []
+  },
+  "NjPnEXLf1Lt9qzgxccogv": {
+    "title": "git commit --amend",
+    "description": "",
+    "links": []
+  },
+  "HMEfUFNu_Wp_Pac7VWHr-": {
+    "title": "git rebase",
+    "description": "",
+    "links": []
+  },
+  "BKVA6Q7DXemAYjyQOA0nh": {
+    "title": "git filter-branch",
+    "description": "",
+    "links": []
+  },
+  "OQOmxg9mCfcjt80hpvXkA": {
+    "title": "git push --force",
+    "description": "",
+    "links": []
+  },
+  "iFJBF-EEnLjQVsFSXjo_i": {
+    "title": "Tagging",
+    "description": "",
+    "links": []
+  },
+  "NeU38WPbEphJuJ_AMkH82": {
+    "title": "Managing Tags",
+    "description": "",
+    "links": []
+  },
+  "E3HAGNM-kXLL4Oci5JzpQ": {
+    "title": "Pushing Tags",
+    "description": "",
+    "links": []
+  },
+  "62E1tDMXB6K74OEN0WsS0": {
+    "title": "Checkout Tags",
+    "description": "Tags in Git are typically used to mark specific points in history, such as a release version. Checking out a tag means switching your working directory to the state of the repository at the point in time when that tag was created.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How To Checkout Git Tags",
+        "url": "https://devconnected.com/how-to-checkout-git-tags/",
+        "type": "article"
+      },
+      {
+        "title": "What is git tag, How to create tags & How to checkout git remote tag(s)",
+        "url": "https://stackoverflow.com/questions/35979642/what-is-git-tag-how-to-create-tags-how-to-checkout-git-remote-tags",
+        "type": "article"
+      },
+      {
+        "title": "Git Tag Tutorial | Create, Checkout, and Delete Git Tags | Learn Git",
+        "url": "https://youtu.be/spkUevg1NqM?si=UXRwJEOI6bpN30nM",
+        "type": "video"
+      }
+    ]
+  },
+  "YmnTrjJtqHPXbEVrP8vd7": {
+    "title": "GitHub Releases",
+    "description": "",
+    "links": []
+  },
+  "pqBV7BMAs0z6qpfZeW2XP": {
+    "title": "Git hooks",
+    "description": "",
+    "links": []
+  },
+  "v7uabKuMQPOD_hBIaHOVT": {
+    "title": "What and Why?",
+    "description": "",
+    "links": []
+  },
+  "zsU6R2zvJKnYNU2ac4o4p": {
+    "title": "Client vs Server Hooks",
+    "description": "Like many other Version Control Systems, Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Git Hooks",
+        "url": "https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks#:~:text=There%20are%20two%20groups%20of,for%20all%20sorts%20of%20reasons.",
+        "type": "article"
+      },
+      {
+        "title": "Git Hooks: The Powerful Tool You're Probably Not Using",
+        "url": "https://dev.to/algodame/git-hooks-the-powerful-tool-youre-probably-not-using-but-should-be-1lec",
+        "type": "article"
+      },
+      {
+        "title": "Client vs Server Hooks",
+        "url": "https://youtu.be/egfuwOe8nXc?si=IkbLCr-3eGE9x6cY",
+        "type": "video"
+      }
+    ]
+  },
+  "jzYjHx-gIKSP8dQUTqWVw": {
+    "title": "commit-msg",
+    "description": "",
+    "links": []
+  },
+  "SANEQI2rgOtsMQyn4qUCq": {
+    "title": "post-checkout",
+    "description": "",
+    "links": []
+  },
+  "buxb5TpzQ-xxn0vqtGdS3": {
+    "title": "post-update",
+    "description": "",
+    "links": []
+  },
+  "HhpAIzYMlMiQ9msrYZyDB": {
+    "title": "pre-commit",
+    "description": "",
+    "links": []
+  },
+  "j5kWEUKwBFg5EMm8-61K9": {
+    "title": "pre-push",
+    "description": "",
+    "links": []
+  },
+  "fjAFNjNNbPOzme9Uk_fDV": {
+    "title": "Submodules",
+    "description": "",
+    "links": []
+  },
+  "x4bnsPVTiX2xOCSyrgWpF": {
+    "title": "Adding / Updating",
+    "description": "",
+    "links": []
+  },
+  "d0-u_-_vtPK8tnUpnj_NB": {
+    "title": "What and Why use?",
+    "description": "",
+    "links": []
+  },
+  "h9cf_dh_pwjialOXOlNW-": {
+    "title": "GitHub CLI",
+    "description": "",
+    "links": []
+  },
+  "vHfpoVbOW0DHNtiy0VN4X": {
+    "title": "Installation and Setup",
+    "description": "",
+    "links": []
+  },
+  "lw4zHuhtxIO4kDvbyiVfq": {
+    "title": "Repository management",
+    "description": "",
+    "links": []
+  },
+  "kGnZifvXbHBf5zXIsfAQw": {
+    "title": "Issue Management",
+    "description": "",
+    "links": []
+  },
+  "s3MzDYFPMASqiS8UnvWzW": {
+    "title": "Pull Requests",
+    "description": "",
+    "links": []
+  },
+  "AmetdCURXXob5TUsikAab": {
+    "title": "GitHub Actions",
+    "description": "GitHub Actions is a very useful tool for automation, allowing developers to automate tasks within the software development lifecycle directly on GitHub.\n\nOne of the best ways to learn about GitHub Actions is through the course offered by Microsoft Learn. This course is well-structured and provides practical examples that are concise and easy to understand.",
+    "links": [
+      {
+        "title": "Microsoft Learn: Introduction to GitHub Actions",
+        "url": "https://learn.microsoft.com/en-us/collections/n5p4a5z7keznp5",
+        "type": "course"
+      },
+      {
+        "title": "YouTube: GitHub Actions Playlist",
+        "url": "https://www.youtube.com/watch?v=-hVG9z0fCac&list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY&pp=iAQB",
+        "type": "course"
+      }
+    ]
+  },
+  "p6rq3lQ9YRrTqwcc31O23": {
+    "title": "YAML Syntax",
+    "description": "",
+    "links": []
+  },
+  "55uHPFNwYPVZx8Cy3c985": {
+    "title": "Workflow Triggers",
+    "description": "",
+    "links": []
+  },
+  "uS1H9KoKGNONvETCuFBbz": {
+    "title": "Scheduled Worfklows",
+    "description": "",
+    "links": []
+  },
+  "6QwlY3dEvjfAOPALcWKXQ": {
+    "title": "Workflow Runners",
+    "description": "",
+    "links": []
+  },
+  "BnPiTu1Jw2kIW560a2A5T": {
+    "title": "Workflow Context",
+    "description": "",
+    "links": []
+  },
+  "aflP7oWsQzAr4YPo2LLiQ": {
+    "title": "Secrets and Env Vars",
+    "description": "",
+    "links": []
+  },
+  "HMNhzzV6ApTKj4I_FOmUB": {
+    "title": "Caching Dependencies",
+    "description": "",
+    "links": []
+  },
+  "alysXC4b1hGi9ZdQ5-40y": {
+    "title": "Storing Artifacts",
+    "description": "",
+    "links": []
+  },
+  "jc4R1zhd1YeCEbVuxwJWy": {
+    "title": "Workflow Status",
+    "description": "",
+    "links": []
+  },
+  "SsogoCgJIbeTD6tk8UhTe": {
+    "title": "Marketplace Actions",
+    "description": "",
+    "links": []
+  },
+  "PUnYNBrAZWoZiopjtNgnA": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "Ni3HKVLanFvSrJ3u8i5I1": {
+    "title": "What are these?",
+    "description": "",
+    "links": []
+  },
+  "Y0EWgPsS4kZxH3y53jNxY": {
+    "title": "Use in Automation",
+    "description": "",
+    "links": []
+  },
+  "sFf1PdFfmEdQxsEntfeFq": {
+    "title": "Git Patch",
+    "description": "",
+    "links": []
+  },
+  "hru0sL1-D4bJSQI1efEyU": {
+    "title": "Git Reflog",
+    "description": "",
+    "links": []
+  },
+  "ExXuwTQSI_lg4SRGW3Iu1": {
+    "title": "Git Bisect",
+    "description": "",
+    "links": []
+  },
+  "4dxVN81rXWn6VZqK99yq0": {
+    "title": "Git Worktree",
+    "description": "",
+    "links": []
+  },
+  "CGj_UX5JMOOCKinedsNRc": {
+    "title": "Git Attributes",
+    "description": "",
+    "links": []
+  },
+  "zdunaucVe8J1tKf_z-NQo": {
+    "title": "Git LFS",
+    "description": "",
+    "links": []
+  },
+  "NV2HAXLEN7tskfgyFrbaf": {
+    "title": "GitHub API",
+    "description": "The GitHub API is a powerful tool that allows developers to interact with the GitHub platform programmatically. It provides access to various GitHub features, such as user data, repository information, and commit history.",
+    "links": []
+  },
+  "lSCnKhmRr6xrKVYxO8idD": {
+    "title": "REST API",
+    "description": "The GitHub REST API is a set of APIs that provide access to various GitHub features, such as user data, repository information, and commit history. It allows developers to interact with the GitHub platform programmatically.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub REST API documentation",
+        "url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
+        "type": "article"
+      },
+      {
+        "title": "Quickstart for GitHub REST API",
+        "url": "https://docs.github.com/en/rest/quickstart?apiVersion=2022-11-28",
+        "type": "article"
+      },
+      {
+        "title": "[Tutorial] - How to use GitHub REST API for Beginners",
+        "url": "https://www.youtube.com/watch?v=OvfLavRD1Os",
+        "type": "video"
+      }
+    ]
+  },
+  "KlXPt-K6br8PtpLgELaCj": {
+    "title": "GraphQL API",
+    "description": "The GitHub GraphQL API is a set of APIs that provides access to various GitHub features, such as user data, repository information, and commit history. It allows developers to interact with the GitHub platform programmatically using GraphQL queries.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub GraphQL API documentation",
+        "url": "https://docs.github.com/en/graphql",
+        "type": "article"
+      },
+      {
+        "title": "Forming calls with GraphQL",
+        "url": "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+        "type": "article"
+      }
+    ]
+  },
+  "5Oax1p7zIZ9HD2hmENPof": {
+    "title": "Creating Apps",
+    "description": "GitHub Apps are a way to integrate with the GitHub platform programmatically, using either the REST API or GraphQL API. They allow developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Creating GitHub Apps",
+        "url": "https://docs.github.com/en/apps/creating-github-apps",
+        "type": "article"
+      }
+    ]
+  },
+  "560GJXFTt7DPdJjKtSDOo": {
+    "title": "GitHub Apps",
+    "description": "A GitHub App is a way to integrate with the GitHub platform programmatically, using either the REST API or GraphQL API. It allows developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub Apps Documentation",
+        "url": "https://docs.github.com/en/apps",
+        "type": "article"
+      }
+    ]
+  },
+  "qrdOARfqGPF9xhF6snbAn": {
+    "title": "OAuth Apps",
+    "description": "GitHub OAuth Apps are a way to integrate with the GitHub platform using OAuth authentication. They allow developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Creating an OAuth app",
+        "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Login With React (GitHub APIs, GitHub OAuth 2.0 Authentication)",
+        "url": "https://www.youtube.com/watch?v=rRn2EisxPl4",
+        "type": "video"
+      }
+    ]
+  },
+  "MoG7D9kqPuA6o52-z_WDN": {
+    "title": "Webhooks",
+    "description": "GitHub Webhooks allow developers to receive real-time notifications about events happening within their repository, such as commits, pull requests, and issues. These webhooks enable users to automate tasks, integrate with other services, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About webhooks",
+        "url": "https://docs.github.com/en/webhooks/about-webhooks",
+        "type": "article"
+      },
+      {
+        "title": "Webhooks documentation",
+        "url": "https://docs.github.com/en/webhooks",
+        "type": "article"
+      },
+      {
+        "title": "How to use GitHub Webhooks with Discord",
+        "url": "https://www.youtube.com/watch?v=-gyEHj0CVx0&",
+        "type": "video"
+      }
+    ]
+  },
+  "vhdGUhMAyre_Xya6IxZ-t": {
+    "title": "GitHub Sponsors",
+    "description": "A GitHub Sponsor is a way to support and fund open-source projects on GitHub. It allows maintainers of public repositories to receive financial support from users who value their work. Sponsors can contribute funds to help with expenses, development time, or other project-related costs. In return, sponsors are recognized as supporters in the repository's README file and on the project's website. This feature promotes transparency, accountability, and appreciation within open-source communities, making it easier for maintainers to focus on their projects.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Sponsoring an open source contributor through GitHub",
+        "url": "https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/sponsoring-an-open-source-contributor-through-github",
+        "type": "article"
+      },
+      {
+        "title": "Receiving sponsorships through GitHub Sponsors",
+        "url": "https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors",
+        "type": "article"
+      }
+    ]
+  },
+  "bnai6R6pOq_L5CPdbVwMW": {
+    "title": "GitHub Pages",
+    "description": "GitHub Pages is a feature that allows users to host and publish web content directly from their GitHub repositories. It provides a simple way to create and deploy websites, blogs, or projects without the need for manual configuration or maintenance. Users can upload custom themes, add plugins, and use various tools to customize their pages.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About GitHub Pages",
+        "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+        "type": "article"
+      },
+      {
+        "title": "Ceating a GitHub Pages site",
+        "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Pages examples",
+        "url": "https://github.com/collections/github-pages-examples",
+        "type": "article"
+      }
+    ]
+  },
+  "M2_hBvXou7cCNqsMnexCt": {
+    "title": "GitHub Gists",
+    "description": "A GitHub Gist is a small code or text snippet that can be shared with others. It is a simple way to share code, configuration files, or other snippets of text without creating a full-fledged repository. Gists are useful for sharing examples, demos, or tutorials, and they can also serve as a starting point for larger projects. Each gist has a unique URL that can be shared with others, allowing them to view and edit the content. Gists support various file types, including code files, text files, and even images. They also provide features like syntax highlighting, line numbers, and commit history.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Creating gists",
+        "url": "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists",
+        "type": "article"
+      },
+      {
+        "title": "REST API endpoints for gists",
+        "url": "https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28",
+        "type": "article"
+      }
+    ]
+  },
+  "rqPCHh25xX_ROMr-ULpaw": {
+    "title": "GitHub Packages",
+    "description": "GitHub Packages is a package repository service that allows developers to store and share packages, containers, and other software artifacts. It provides a central location for sharing packages with teams, organizations, or the wider developer community. GitHub Packages supports popular package managers like npm, Maven, and Gradle, as well as container registries like Docker Hub. This feature enables seamless integration of packages into development workflows, making it easier to share dependencies, libraries, and frameworks within and across projects. By using GitHub Packages, developers can simplify dependency management, reduce errors, and improve overall collaboration.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to GitHub Packages",
+        "url": "https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Packages documentation",
+        "url": "https://docs.github.com/en/packages",
+        "type": "article"
+      }
+    ]
+  },
+  "ZHplGidvhxEIC3HN8KqRa": {
+    "title": "Deploying Static Websites",
+    "description": "Deploying static websites on GitHub Pages involves uploading and serving website content that is generated beforehand, without dynamic functionality. This approach allows for fast deployment, low maintenance, and improved security.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to Deploy a Static Website for Free Using Github Pages",
+        "url": "https://medium.com/flycode/how-to-deploy-a-static-website-for-free-using-github-pages-8eddc194853b",
+        "type": "article"
+      },
+      {
+        "title": "How to Host a Website on GitHub Pages Free (Custom Domain Setup Included)",
+        "url": "https://www.youtube.com/watch?v=e5AwNU3Y2es",
+        "type": "video"
+      }
+    ]
+  },
+  "VdoxEWaU56-QCbHFRw649": {
+    "title": "Custom Domains",
+    "description": "On GitHub Pages, users can customize their site's URL by connecting a custom domain to their repository. This feature allows users to use their own domain name instead of the default [GitHub.io](http://GitHub.io) subdomain, giving their site a more professional and personalized look.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Configuring a custom domain for your GitHub Pages site",
+        "url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
+        "type": "article"
+      },
+      {
+        "title": "How to Host a Website on GitHub Pages Free (Custom Domain Setup Included)",
+        "url": "https://www.youtube.com/watch?v=e5AwNU3Y2es&t=156s",
+        "type": "video"
+      }
+    ]
+  },
+  "iwfNYDlAgbA_rpWYcoHCC": {
+    "title": "Static Site Generators",
+    "description": "GitHub offers a set of static site generators (SSGs) that allow users to create and deploy websites directly from their GitHub repositories. These SSGs include `Jekyll`, `Hugo`, and `Middleman`, among others. They provide a simple way to build websites without the need for manual configuration or maintenance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Static Site Generators",
+        "url": "https://github.com/collections/static-site-generators",
+        "type": "article"
+      },
+      {
+        "title": "About GitHub Pages and Jekyll",
+        "url": "https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+        "type": "article"
+      }
+    ]
+  },
+  "NdfwgwMOewiyEAFyC2l7U": {
+    "title": "GitHub Codespaces",
+    "description": "GitHub Codespaces is a cloud-based development environment that allows developers to create, access, and use pre-configured, ready-to-use environments for coding. It provides a seamless way to develop, test, and debug applications in a virtual machine or container, eliminating the need for local setup and configuration. With GitHub Codespaces, users can spin up a new environment with their desired configuration, tools, and dependencies in just a few clicks. This feature streamlines development workflows, reduces friction, and increases productivity by providing instant access to a tailored coding environment for each project.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub Codespaces Overview",
+        "url": "https://docs.github.com/en/codespaces/overview",
+        "type": "article"
+      },
+      {
+        "title": "How to Deploy a GitHub Codespace",
+        "url": "https://www.youtube.com/watch?v=_01iCF9sO1c",
+        "type": "video"
+      }
+    ]
+  },
+  "pFyMiyNQ16-kP7jKaKKEU": {
+    "title": "GitHub Education",
+    "description": "GitHub Education is a program that provides free and discounted access to GitHub's developer tools, services, and resources for students, teachers, and researchers. This program aims to support education and research in software development, by making it easier for students and educators to learn, collaborate, and build projects on GitHub. By using GitHub Education, students can gain hands-on experience with real-world coding challenges, while educators can create a more engaging and interactive learning environment.",
+    "links": []
+  },
+  "XRSVRl6iHncMmgSXoB7Lq": {
+    "title": "Student Developer Pack",
+    "description": "The GitHub Student Developer Pack is a collection of developer tools and resources that are offered free or at a discounted price to students through the GitHub Education program. This pack includes access to GitHub, GitHub Desktop, GitHub Classroom, GitHub Student Developer Kit, and other benefits. By using the Student Developer Pack, students can gain hands-on experience with professional developer tools, while also getting access to a wide range of educational resources.\n\nVisit the following resource to learn more:",
+    "links": [
+      {
+        "title": "Apply to GitHub Education as a student",
+        "url": "https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student",
+        "type": "article"
+      }
+    ]
+  },
+  "Pg6G4fzYb_RUhANeRKlRX": {
+    "title": "GitHub Classroom",
+    "description": "GitHub Classroom is an integrated feature within GitHub that allows educators to create and assign homework assignments, projects, or quizzes directly to students. This feature streamlines the process of teaching and learning by making it easy for instructors to share code, provide feedback, and track student progress all in one place. By using GitHub Classroom, teachers can focus on high-level instruction and student engagement, while also promoting collaboration and hands-on learning experiences.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About GitHub Classroom",
+        "url": "https://docs.github.com/en/education/manage-coursework-with-github-classroom/get-started-with-github-classroom/about-github-classroom",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Classroom - Getting Started Guide",
+        "url": "https://www.youtube.com/watch?v=xVVeqIDgCvM&list=PLIRjfNq867bewk3ZGV6Z7a16YDNRCpK3u",
+        "type": "video"
+      }
+    ]
+  },
+  "B1KiSOt2b8t8FYD7Jxw2A": {
+    "title": "Campus Program",
+    "description": "The GitHub Campus Program offers GitHub Enterprise Cloud and GitHub Enterprise Server free-of-charge for schools that want to make the most of GitHub for their community. This program provides access to a comprehensive set of developer tools, as well as resources and support to help students and educators build projects, collaborate, and develop skills in software development.\n\nVisit the following resource to learn more:",
+    "links": [
+      {
+        "title": "About GitHub Campus Program",
+        "url": "https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-program",
+        "type": "article"
+      }
+    ]
+  },
+  "R20LXLLEzNn-SpyFDMRXj": {
+    "title": "GitHub Marketplace",
+    "description": "GitHub Marketplace is a platform that allows developers to discover, install, and manage third-party tools and services directly within their GitHub environment. These tools can provide a range of features, such as code analysis, project management, or collaboration, making it easier for developers to work efficiently and effectively. By using the GitHub Marketplace, developers can streamline their workflow, reduce friction, and focus on writing code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub Marketplace",
+        "url": "https://github.com/marketplace",
+        "type": "article"
+      },
+      {
+        "title": "About GitHub Marketplace for apps",
+        "url": "https://docs.github.com/en/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps",
+        "type": "article"
+      }
+    ]
+  },
+  "f2PG4t6iVtfIH8BVe5H7f": {
+    "title": "GitHub Security",
+    "description": "GitHub Security is a suite of features and tools that help developers identify, fix, and prevent security vulnerabilities in their code. It provides a comprehensive approach to secure coding practices by integrating with the developer's workflow. The main components of GitHub Security include: `Code Scanning`, which uses AI-powered analysis to detect potential vulnerabilities; `Dependabot`, which automates dependency updates to prevent attacks via vulnerable dependencies; `Secret scanning`, which detects and flags secrets like API keys or credentials; and `GitHub Advanced Security`, which offers more advanced security features for larger teams. By using these tools, developers can ensure their code is secure, and identify potential issues before they become serious problems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub security features",
+        "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "type": "article"
+      },
+      {
+        "title": "Dependabot quickstart guide",
+        "url": "https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide",
+        "type": "article"
+      },
+      {
+        "title": "About user alerts",
+        "url": "https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/about-alerts#about-user-alerts",
+        "type": "article"
+      }
+    ]
+  },
+  "4slyjdk2Eeg5VYY6gCDG6": {
+    "title": "GitHub Models",
+    "description": "GitHub Models is a feature that allows developers to search, explore, and use pre-trained AI models from various sources. This platform provides a way to discover and experiment with these models, making it easier to integrate AI capabilities into software projects. By using GitHub Models, developers can quickly find and try out different models, without having to train them from scratch.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Prototyping with AI models",
+        "url": "https://docs.github.com/en/github-models/prototyping-with-ai-models",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Models DEMO | AI models for developers on GitHub",
+        "url": "https://www.youtube.com/watch?v=WiBB8Lsgl7I",
+        "type": "video"
+      }
+    ]
+  },
+  "iWn3zDMOfLLjSp6f1jQoE": {
+    "title": "GitHub Copilot",
+    "description": "GitHub Copilot is an AI-powered code-completion tool that helps developers write code faster and with less errors. It uses a combination of machine learning algorithms and access to GitHub's vast repository of open-source code to provide context-aware suggestions for coding tasks. Copilot can generate entire functions, methods, or even entire classes based on the context of the code being written. This feature aims to reduce the time spent on coding by providing immediate and relevant suggestions, allowing developers to focus more on high-level design and problem-solving.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Quickstart for GitHub Copilot",
+        "url": "https://docs.github.com/en/copilot/quickstart",
+        "type": "article"
+      },
+      {
+        "title": "Intro to GitHob Copilot in Visual Studio",
+        "url": "https://www.youtube.com/watch?v=z1ycDvspv8U",
+        "type": "video"
+      },
+      {
+        "title": "GitHub Copilot in VSCode: Top 10 Features Explained",
+        "url": "https://www.youtube.com/watch?v=2nPoiUJpDaU",
+        "type": "video"
+      }
+    ]
+  }
+}

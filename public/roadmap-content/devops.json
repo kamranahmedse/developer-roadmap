@@ -572,7 +572,7 @@
   },
   "Jt8BmtLUH6fHT2pGKoJs3": {
     "title": "Vim / Nano /  Emacs",
-    "description": "Editors are tools that allow you to create or edit files on your file system.\n\nVim\n---\n\nVim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple OS X.\n\nVim ships with `vimtutor` that is a tutor designed to describe enough of the Vim commands that you will be able to easily use Vim as an all-purpose editor.\n\nVisit the following resources to learn more:",
+    "description": "Editors are tools that allow you to create or edit files on your file system.\n\nVim\n---\n\nVim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with macOS X.\n\nVim ships with `vimtutor` that is a tutor designed to describe enough of the Vim commands that you will be able to easily use Vim as an all-purpose editor.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Vim",
