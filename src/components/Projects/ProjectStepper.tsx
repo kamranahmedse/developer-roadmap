@@ -6,6 +6,7 @@ import {
   type LucideIcon,
   Play,
   PlayCircle,
+  Send,
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
@@ -25,7 +26,7 @@ function StepperAction(props: StepperActionProps) {
     return (
       <button className="flex items-center gap-1.5 rounded-xl bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700">
         <DisplayIcon size={13} />
-        <span>Start Building</span>
+        <span>{text}</span>
       </button>
     );
   }
@@ -46,6 +47,22 @@ function StepperAction(props: StepperActionProps) {
       </span>
       <span>{text}</span>
     </span>
+  );
+}
+
+type StepperStepSeparatorProps = {
+  isActive: boolean;
+};
+
+function StepperStepSeparator(props: StepperStepSeparatorProps) {
+  const { isActive } = props;
+
+  return (
+    <hr
+      className={cn('flex-grow border border-gray-300', {
+        'border-green-500': isActive,
+      })}
+    />
   );
 }
 
@@ -95,9 +112,14 @@ export function ProjectStepper() {
           text={'Start Building'}
           number={1}
         />
-        <hr className="flex-grow border border-gray-300" />
-        <StepperAction icon={Blocks} text={'Submit Solution'} number={2} />
-        <hr className="flex-grow border border-gray-300" />
+        <StepperStepSeparator isActive={true} />
+        <StepperAction
+          isActive={true}
+          icon={Send}
+          text={'Submit Solution'}
+          number={2}
+        />
+        <StepperStepSeparator isActive={false} />
         <button className="flex items-center gap-1.5 text-sm text-gray-400">
           <Flag size={14} />
           <span>5 Upvotes</span>
