@@ -252,18 +252,61 @@
   },
   "TDyFjKrIZJnCjEZsojPNQ": {
     "title": "Parent-Child Interaction",
-    "description": "",
-    "links": []
+    "description": "In angular parent-child communication is commonly used to share data between two components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Medium - Parent-Child Communication",
+        "url": "https://jaspritk.medium.com/parent-child-communication-in-angular-888373e0b69e",
+        "type": "article"
+      }
+    ]
   },
   "v0XaLNZ-YrRqP-xv8wS43": {
     "title": "ViewChild",
-    "description": "",
-    "links": []
+    "description": "View queries retrieve results from the elements in the component's view — the elements defined in the component's own template.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "View queries",
+        "url": "https://angular.dev/guide/components/queries#view-queries",
+        "type": "article"
+      },
+      {
+        "title": "viewChild - signal",
+        "url": "https://angular.dev/guide/signals/queries#viewchild",
+        "type": "article"
+      },
+      {
+        "title": "viewChildren - signal",
+        "url": "https://angular.dev/guide/signals/queries#viewchildren",
+        "type": "article"
+      },
+      {
+        "title": "viewChild - API",
+        "url": "https://angular.dev/api/core/viewChild",
+        "type": "article"
+      }
+    ]
   },
   "oQl9etjoHiU2JgxieUOEH": {
     "title": "ContentChild",
-    "description": "",
-    "links": []
+    "description": "Content queries retrieve results from the elements in the component's content— the elements nested inside the component in the template where it's used.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Content queries - signal",
+        "url": "https://angular.dev/guide/signals/queries#content-queries",
+        "type": "article"
+      },
+      {
+        "title": "Content queries",
+        "url": "https://angular.dev/guide/components/queries#content-queries",
+        "type": "article"
+      },
+      {
+        "title": "contentChild - API",
+        "url": "https://angular.dev/api/core/contentChild",
+        "type": "article"
+      }
+    ]
   },
   "nCpfj_35ZvW-NTygg06XZ": {
     "title": "Component Lifecycle",
@@ -340,8 +383,19 @@
   },
   "9YhTXybJw2gszlqFeBtW3": {
     "title": "Creating Modules",
-    "description": "",
-    "links": []
+    "description": "Creating modules in Angular helps organize your application into manageable, cohesive units. Each module can encapsulate related components, directives, pipes, and services. Here's a detailed guide on how to create and use modules in Angular.\n\nCreation Methods:\n\n*       Generate Modules: Use ng generate module module-name.\n        \n    \n*       Define Modules: Use @NgModule decorator to declare components, import other modules, and export components.\n        \n    \n*       Create and Add Components: Generate and add components to the module.\n        \n    \n*       Import Modules: Import your new module into app.module.ts or other feature modules.\n        \n    \n*       Feature Modules: Use feature modules for large applications to manage related functionalities.\n        \n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs (Feature Modules)",
+        "url": "https://angular.dev/guide/ngmodules/feature-modules",
+        "type": "article"
+      },
+      {
+        "title": "How to Create a new module in Angular",
+        "url": "https://www.geeksforgeeks.org/how-to-create-a-new-module-in-angular/",
+        "type": "article"
+      }
+    ]
   },
   "w_BazXvINFyxDCHmlznfy": {
     "title": "Feature Modules",
@@ -350,8 +404,24 @@
   },
   "bLERvEERmNI5AgxtEYokZ": {
     "title": "Lazy Loading Modules",
-    "description": "",
-    "links": []
+    "description": "By default, NgModules are eagerly loaded. This means that as soon as the application loads, so do all the NgModules, whether they are immediately necessary or not. For large applications with lots of routes, consider lazy loading —a design pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Lazy Loading",
+        "url": "https://angular.dev/guide/ngmodules/lazy-loading",
+        "type": "article"
+      },
+      {
+        "title": "Angular Lazy Loading",
+        "url": "https://www.bairesdev.com/blog/angular-lazy-loading/",
+        "type": "article"
+      },
+      {
+        "title": "Lazy Loading in Angular: Improving Performance and User Experience",
+        "url": "https://www.youtube.com/watch?v=mjhi27YfV8Y",
+        "type": "video"
+      }
+    ]
   },
   "5b590c7s-2XJ0rgdCYxLa": {
     "title": "Dependencies",
@@ -419,11 +489,22 @@
   },
   "5vZkiH7HDwONIABLfNJ06": {
     "title": "Data Binding",
-    "description": "",
-    "links": []
+    "description": "In an Angular template, a binding creates a live connection between a part of the UI created from a template (a DOM element, directive, or component) and the model (the component instance to which the template belongs). This connection can be used to synchronize the view with the model, to notify the model when an event or user action takes place in the view, or both. Angular's Change Detection algorithm is responsible for keeping the view and the model in sync. Bindings always have two parts: a target which will receive the bound value, and a template expression which produces a value from the model.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Understand Binding",
+        "url": "https://angular.dev/guide/templates/binding",
+        "type": "article"
+      },
+      {
+        "title": "Data Binding in Angular",
+        "url": "https://www.angularminds.com/blog/data-binding-in-angular",
+        "type": "article"
+      }
+    ]
   },
   "TJOZfHtsLfwA0CZ2bd1b2": {
-    "title": "Properties Binding",
+    "title": "Property Binding",
     "description": "Property binding helps you set values for properties of HTML elements or directives. To bind to an element's property, enclose it in square brackets `[]` which causes Angular to evaluate the right-hand side of the assignment as a dynamic expression.\n\nVisit the following resources to learn more:",
     "links": [
       {
@@ -434,24 +515,63 @@
     ]
   },
   "FgsSyM6To7irpbivtOLEE": {
-    "title": "Attributes Binding",
-    "description": "",
-    "links": []
+    "title": "Attribute Binding",
+    "description": "Attribute binding in Angular helps you set values for attributes directly. With attribute binding, you can improve accessibility, style your application dynamically, and manage multiple CSS classes or styles simultaneously.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Attribute Binding",
+        "url": "https://angular.dev/guide/templates/attribute-binding",
+        "type": "article"
+      },
+      {
+        "title": "What is difference between binding to attribute and binding to property in Angular?",
+        "url": "https://stackoverflow.com/questions/76967327/what-is-difference-between-binding-to-attribute-and-binding-to-property-in-angul",
+        "type": "article"
+      }
+    ]
   },
   "bKnpirSvex4oE4lAjiSSV": {
-    "title": "Events",
-    "description": "",
-    "links": []
+    "title": "Event Binding",
+    "description": "Event binding lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Event Binding",
+        "url": "https://angular.dev/guide/templates/event-binding",
+        "type": "article"
+      },
+      {
+        "title": "Event Binding in Angular",
+        "url": "https://www.knowledgehut.com/blog/web-development/event-binding-in-angular",
+        "type": "article"
+      }
+    ]
   },
   "2UH79nCjgtY1Qz1YjUJYL": {
     "title": "Two-way Binding",
-    "description": "",
-    "links": []
+    "description": "Two-way binding gives components in your application a way to share data. Use two-way binding to listen for events and update values simultaneously between parent and child components. Angular's two-way binding syntax is a combination of square brackets and parentheses, `[()]`, commonly known as `banana in a box`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Two-way binding",
+        "url": "https://angular.dev/guide/templates/two-way-binding",
+        "type": "article"
+      },
+      {
+        "title": "How to implement two-way data binding in Angular",
+        "url": "https://www.angularminds.com/blog/how-to-implement-two-way-data-binding-in-angular",
+        "type": "article"
+      }
+    ]
   },
   "VzvB_bads057YtG4ST4a2": {
     "title": "Control Flow",
-    "description": "",
-    "links": []
+    "description": "Angular templates support control flow blocks that let you conditionally show, hide, and repeat elements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Built-in control flow",
+        "url": "https://angular.dev/guide/templates/control-flow",
+        "type": "article"
+      }
+    ]
   },
   "Wc2ybRw43uamEtno0FpDv": {
     "title": "Template Ref Vars",
@@ -518,8 +638,14 @@
   },
   "2kYS9w1UzQFZ1zhf01m9L": {
     "title": "@for",
-    "description": "",
-    "links": []
+    "description": "The @for block repeatedly renders content of a block for each item in a collection.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @for",
+        "url": "https://angular.dev/api/core/@for",
+        "type": "article"
+      }
+    ]
   },
   "nZuim4Fjq6jYOXcRTAEay": {
     "title": "@switch",
@@ -538,13 +664,40 @@
   },
   "AwOM0ucg6W7TohdUd7KWT": {
     "title": "@let",
-    "description": "",
-    "links": []
+    "description": "@let allows you to define a local variable and re-use it across the template.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @let",
+        "url": "https://angular.dev/api/core/@let",
+        "type": "article"
+      },
+      {
+        "title": "Angular's next feature let syntax",
+        "url": "https://nhannguyendevjs.medium.com/angulars-next-feature-let-syntax-afba6354112b",
+        "type": "article"
+      }
+    ]
   },
   "ONy-0olujU_FGZM7Wvfr2": {
     "title": "@defer",
-    "description": "",
-    "links": []
+    "description": "A type of block that can be used to defer load the JavaScript for components, directives and pipes used inside a component template.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @defer",
+        "url": "https://angular.dev/api/core/@defer",
+        "type": "article"
+      },
+      {
+        "title": "Angular Defer Complete Guide",
+        "url": "https://blog.angular-university.io/angular-defer/",
+        "type": "article"
+      },
+      {
+        "title": "How to use Angular's defer block to improve performance",
+        "url": "https://angular.love/en/how-to-use-angulars-defer-block-to-improve-performance",
+        "type": "article"
+      }
+    ]
   },
   "j99WQxuTzGeBBVoReDp_y": {
     "title": "Pipes",
@@ -585,8 +738,19 @@
   },
   "i2taHzQ5KLHjkkpbH4Ytd": {
     "title": "Common Pipes",
-    "description": "",
-    "links": []
+    "description": "Angular provides built-in pipes for typical data transformations, including transformations for internationalization (i18n), which use locale information to format data. The following are commonly used built-in pipes for data formatting:\n\n*   DatePipe: Formats a date value according to locale rules.\n*   UpperCasePipe: Transforms text to all upper case.\n*   LowerCasePipe: Transforms text to all lower case.\n*   CurrencyPipe: Transforms a number to a currency string, formatted according to locale rules.\n*   DecimalPipe: Transforms a number into a string with a decimal point, formatted according to locale rules.\n*   PercentPipe: Transforms a number to a percentage string, formatted according to locale rules.\n*   AsyncPipe: Subscribe and unsubscribe to an asynchronous source such as an observable.\n*   JsonPipe: Display a component object property to the screen as JSON for debugging.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Pipes",
+        "url": "https://angular.dev/guide/pipes",
+        "type": "article"
+      },
+      {
+        "title": "Pipes in Angular",
+        "url": "https://medium.com/@aqeelabbas3972/pipes-in-angular-6a871589299d",
+        "type": "article"
+      }
+    ]
   },
   "nZxZnzbQg9dz-SI65UHq9": {
     "title": "Pipes Precedence",
@@ -643,13 +807,40 @@
   },
   "xk3v8p6vf8ntGj5c-IU4U": {
     "title": "Structural Directives",
-    "description": "",
-    "links": []
+    "description": "Structural directives are directives applied to an `<ng-template>` element that conditionally or repeatedly renders the content of that `<ng-template>`. If you just wrap elements in an `<ng-template>` without applying a structural directive, those elements will not be rendered.\n\nIn Angular, there are three standard structural directives:\n\n*   `*ngIf` – conditionally includes a template depending on the value of an expression returned by a Boolean.\n*   `*ngFor` – makes it simple to iterate over an array.\n*   `*ngSwitch` – renders each matching view.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Structural Directives",
+        "url": "https://angular.dev/guide/directives/structural-directives",
+        "type": "article"
+      },
+      {
+        "title": "Structural Directives in Angular",
+        "url": "https://medium.com/@eugeniyoz/structural-directives-in-angular-61fe522f3427",
+        "type": "article"
+      },
+      {
+        "title": "Angular Structural Directive Patterns: What they are and how to use them",
+        "url": "https://www.freecodecamp.org/news/angular-structural-directive-patterns-what-they-are-and-how-to-use-them/",
+        "type": "article"
+      }
+    ]
   },
   "xvwby0FTdIolRrV2j88fY": {
     "title": "Attribute Directives",
-    "description": "",
-    "links": []
+    "description": "Change the appearance or behavior of DOM elements and Angular components with attribute directives.\n\nThe most used attribute directives are:\n\n*   ngClass\n*   ngStyle\n*   ngModel\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Attribute Directives",
+        "url": "https://angular.dev/guide/directives/attribute-directives",
+        "type": "article"
+      },
+      {
+        "title": "Angular Attribute Directive",
+        "url": "https://www.scaler.com/topics/angular/angular-attribute-directive/",
+        "type": "article"
+      }
+    ]
   },
   "7GUvTMVzfdVEDBOz-tHUT": {
     "title": "Custom Directives",
@@ -906,38 +1097,130 @@
   },
   "CpufN6DAOj5UNab9vnH0k": {
     "title": "Dynamic Forms",
-    "description": "",
-    "links": []
+    "description": "Dynamic forms in Angular are a flexible way to create forms where the structure (such as form fields and validation rules) is generated at runtime, rather than being hardcoded. By using Angular's `FormBuilder` and `FormGroup`, you can dynamically add, remove, or modify form controls based on user input, data fetched from a server, or other logic. This approach allows for creating complex forms that can adapt to different user scenarios, reducing the need for multiple form templates and making the codebase more maintainable and scalable.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Dynamic Forms Documentation",
+        "url": "https://angular.dev/guide/forms/dynamic-forms",
+        "type": "article"
+      },
+      {
+        "title": "Create a Dynamic Reactive Angular Form with JSON",
+        "url": "https://www.youtube.com/watch?v=ByHw_RMjkKM",
+        "type": "video"
+      }
+    ]
   },
   "kxRtLsB3y_th8j-HjmJgK": {
     "title": "Custom Validators",
-    "description": "",
-    "links": []
+    "description": "Custom validators in Angular are functions that allow you to define your own validation logic for form controls. They are used when the built-in validators (like `required`, `minLength`, etc.) do not meet your specific validation requirements. A custom validator is a function that returns either `null` if the form control is valid, or an object that represents the validation error if it is invalid. This object typically contains a key-value pair where the key is the error name and the value is a boolean or some details about the error.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Defining custom validators",
+        "url": "https://v17.angular.io/guide/form-validation#custom-validators",
+        "type": "article"
+      },
+      {
+        "title": "How to create custom validator in Angular 17",
+        "url": "https://youtu.be/3TwmS0Gdg9I?si=1w4EX-HifJ70-CxT",
+        "type": "video"
+      }
+    ]
   },
   "m5dgKgUR3ZqI9sBAzToev": {
     "title": "Control Value Accessor",
-    "description": "",
-    "links": []
+    "description": "Defines an interface that acts as a bridge between the Angular forms API and a native element in the DOM. Implement this interface to create a custom form control directive that integrates with Angular forms.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - ControlValueAccessor",
+        "url": "https://angular.dev/api/forms/ControlValueAccessor",
+        "type": "article"
+      },
+      {
+        "title": "Mastering Angular Control Value Accessor: A guide for Angular Developer",
+        "url": "https://hackernoon.com/mastering-angular-control-value-accessor-a-guide-for-angular-developer",
+        "type": "article"
+      },
+      {
+        "title": "Angular Custom Form Controls",
+        "url": "https://blog.angular-university.io/angular-custom-form-controls/",
+        "type": "article"
+      }
+    ]
   },
   "8UY0HAvjY7bdbFpt-MM1u": {
     "title": "HTTP Client",
-    "description": "",
-    "links": []
+    "description": "Most front-end applications need to communicate with a server over the HTTP protocol, to download or upload data and access other back-end services. Angular provides a client HTTP API for Angular applications, the `HttpClient` service class in `@angular/common/http`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - HTTP Client",
+        "url": "https://angular.dev/guide/http",
+        "type": "article"
+      },
+      {
+        "title": "Angular HTTP Client - Quickstart Guide",
+        "url": "https://blog.angular-university.io/angular-http/",
+        "type": "article"
+      },
+      {
+        "title": "Using HTTP Client in modern Angular applications",
+        "url": "https://www.thisdot.co/blog/using-httpclient-in-modern-angular-applications",
+        "type": "article"
+      }
+    ]
   },
   "AKPhbg10xXjccO7UBh5eJ": {
     "title": "Setting Up the Client",
-    "description": "",
-    "links": []
+    "description": "Before you can use `HttpClient` in your app, you must configure it using dependency injection. `HttpClient` is provided using the `provideHttpClient` helper function, which most apps include in the application providers in `app.config.ts`. If your app is using NgModule-based bootstrap instead, you can include `provideHttpClient` in the providers of your app's `NgModule`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Setting up HttpClient",
+        "url": "https://angular.dev/guide/http/setup",
+        "type": "article"
+      },
+      {
+        "title": "Setting up HttpClient in Angular (NgModule)",
+        "url": "https://www.youtube.com/watch?v=hBFtim1vO3M",
+        "type": "video"
+      }
+    ]
   },
   "HjGAv3aV-p4ijYJ8XYIw3": {
     "title": "Making Requests",
-    "description": "",
-    "links": []
+    "description": "`HttpClient` has methods corresponding to the different HTTP verbs used to make requests, both to load data and to apply mutations on the server. Each method returns an RxJS `Observable` which, when subscribed, sends the request and then emits the results when the server responds.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Making requests",
+        "url": "https://angular.dev/guide/http/making-requests",
+        "type": "article"
+      },
+      {
+        "title": "How to make HTTP request in Angular 18",
+        "url": "https://www.youtube.com/watch?v=3vQpYKlHmS0",
+        "type": "video"
+      }
+    ]
   },
   "xG7iSVOGcbxJbNv3xbNfc": {
     "title": "Writing Interceptors",
-    "description": "",
-    "links": []
+    "description": "Interceptors are middleware that allows common patterns around retrying, caching, logging, and authentication to be abstracted away from individual requests.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Interceptors",
+        "url": "https://angular.dev/guide/http/interceptors",
+        "type": "article"
+      },
+      {
+        "title": "Angular Interceptor",
+        "url": "https://www.scaler.com/topics/angular/angular-interceptor/",
+        "type": "article"
+      },
+      {
+        "title": "Interceptors in Angular",
+        "url": "https://www.youtube.com/watch?v=w1_AmHv2LmA",
+        "type": "video"
+      }
+    ]
   },
   "lfp7PIjwITU5gBITQdirD": {
     "title": "RxJS Basics",
@@ -1078,28 +1361,113 @@
   },
   "u1TG8i145o0RKhOR_5epf": {
     "title": "Signals",
-    "description": "",
-    "links": []
+    "description": "Angular Signals is a system that granularly tracks how and where your state is used throughout an application, allowing the framework to optimize rendering updates.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Signals",
+        "url": "https://angular.dev/guide/signals",
+        "type": "article"
+      },
+      {
+        "title": "Angular Signals Complete Guide",
+        "url": "https://blog.angular-university.io/angular-signals/",
+        "type": "article"
+      },
+      {
+        "title": "Signals Unleashed: The Full Guide",
+        "url": "https://www.youtube.com/watch?v=6W6gycuhiN0&t=169s",
+        "type": "video"
+      }
+    ]
   },
   "KAdtebWvgvMifIwd52yc4": {
     "title": "RxJS Interop",
-    "description": "",
-    "links": []
+    "description": "Angular's `@angular/core/rxjs-interop` package provides useful utilities to integrate Angular Signals with RxJS Observables. Use a `toSignal` function to create a signal that tracks the value of an Observable. Use the `toObservable` utility to create an Observable which tracks the value of a signal.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - RxJS Interop",
+        "url": "https://angular.dev/guide/signals/rxjs-interop",
+        "type": "article"
+      },
+      {
+        "title": "Angular signals RxJS interop from a practical example",
+        "url": "https://angular.love/en/angular-signals-rxjs-interop-from-a-practical-example",
+        "type": "article"
+      },
+      {
+        "title": "Angular Signals RxJs Interoperability: toObservable() (Guess the Behavior)",
+        "url": "https://www.youtube.com/watch?v=cam39UyVbpI",
+        "type": "video"
+      }
+    ]
   },
   "LcJyAfv9hjyUNXUVyPRP4": {
     "title": "Inputs as Signals",
-    "description": "",
-    "links": []
+    "description": "Signal inputs allow values to be bound from parent components. Those values are exposed using a Signal and can change during the lifecycle of your component. Angular supports two variants of inputs: `Optional` and `Required`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Inputs as Signals",
+        "url": "https://angular.dev/guide/signals/inputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Signal Inputs: Complete Guide to input()",
+        "url": "https://blog.angular-university.io/angular-signal-inputs/",
+        "type": "article"
+      },
+      {
+        "title": "Angular's New Signal Inputs",
+        "url": "https://www.youtube.com/watch?v=yjCeaiWXC0U",
+        "type": "video"
+      }
+    ]
   },
   "9HS9C3yq9EUcUy0ZUZk_H": {
     "title": "Queries as Signals",
-    "description": "",
-    "links": []
+    "description": "A component or directive can define queries that find child elements and read values from their injectors. Developers most commonly use queries to retrieve references to components, directives, DOM elements, and more. There are two categories of query: view queries and content queries.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Queries as Signals",
+        "url": "https://angular.dev/guide/signals/queries",
+        "type": "article"
+      },
+      {
+        "title": "Querying made easy: exploring Angular's query signals",
+        "url": "https://netbasal.com/querying-made-easy-exploring-angulars-query-signals-ca850b5db892",
+        "type": "article"
+      },
+      {
+        "title": "Angular signal queries with the viewChild() and contentChild() functions",
+        "url": "https://www.youtube.com/watch?v=b35ts9OinBc",
+        "type": "video"
+      }
+    ]
   },
   "IeU6ClS_yp6BYKdkQOJVf": {
     "title": "Model Inputs",
-    "description": "",
-    "links": []
+    "description": "Model inputs are a special type of input that enable a component to propagate new values back to another component. Use model inputs in components that exist to modify a value based on user interaction.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Model Inputs",
+        "url": "https://angular.dev/guide/signals/model",
+        "type": "article"
+      },
+      {
+        "title": "Angular Model Inputs: Two-way binding inputs with signals",
+        "url": "https://www.codemotion.com/magazine/frontend/angular-model-inputs-two-way-binding-inputs-with-signals/",
+        "type": "article"
+      },
+      {
+        "title": "Model Inputs: Reactive two-way binding ",
+        "url": "https://dev.to/this-is-angular/model-inputs-reactive-two-way-binding-2538",
+        "type": "article"
+      },
+      {
+        "title": "Angular's New Model Inputs: Two-way Communication with your Child Components",
+        "url": "https://www.youtube.com/watch?v=frXIBKqzTK0",
+        "type": "video"
+      }
+    ]
   },
   "Mqe_s-nwBqAL6X7OGRHEN": {
     "title": "State Management",
@@ -1118,6 +1486,11 @@
       {
         "title": "Angular State Management with NgRx",
         "url": "https://www.syncfusion.com/blogs/post/angular-state-management-with-ngrx.aspx",
+        "type": "article"
+      },
+      {
+        "title": "State Management and the Facade pattern in Angular",
+        "url": "https://thefullstack.engineer/full-stack-development-series-part-10-state-management-and-the-facade-pattern-in-angular",
         "type": "article"
       }
     ]
@@ -1181,8 +1554,29 @@
   },
   "rgPUcSKxG9DvXicLfC2Ay": {
     "title": "Elf",
-    "description": "",
-    "links": []
+    "description": "Elf is a reactive immutable state management solution built on top of RxJS. It uses custom RxJS operators to query the state and pure functions to update it. Elf encourages simplicity. It saves you the hassle of creating boilerplate code and offers powerful tools with a moderate learning curve, suitable for experienced and inexperienced developers alike.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Elf",
+        "url": "https://github.com/ngneat/elf",
+        "type": "opensource"
+      },
+      {
+        "title": "Elf NG Router Store",
+        "url": "https://github.com/ngneat/elf-ng-router-store",
+        "type": "opensource"
+      },
+      {
+        "title": "What is Elf?",
+        "url": "https://ngneat.github.io/elf/",
+        "type": "article"
+      },
+      {
+        "title": "Case Study: Elf",
+        "url": "https://medium.com/@gronichomer/case-study-elf-%EF%B8%8F%EF%B8%8F-part-1-fe5e87c31c89",
+        "type": "article"
+      }
+    ]
   },
   "m4WBnx_9h01Jl6Q1sxi4Y": {
     "title": "Zones",
@@ -1207,8 +1601,39 @@
   },
   "1x5pT607aKE-S-NCWB810": {
     "title": "Zoneless Applications",
-    "description": "",
-    "links": []
+    "description": "Angular 18 introduced an experimental feature called zoneless change detection. This technology removes the need for `Zone.js`, a library that was previously used for change detection in Angular from the beginning. By eliminating `Zone.js`, Angular applications can have faster initial renders, smaller bundle sizes, and simpler debugging.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Zoneless",
+        "url": "https://angular.dev/guide/experimental/zoneless",
+        "type": "article"
+      },
+      {
+        "title": "Zoneless Change Detection Angular 18",
+        "url": "https://blog.logrocket.com/zoneless-change-detection-angular-18/",
+        "type": "article"
+      },
+      {
+        "title": "From Zone JS to Zoneless Angular and back: How it all works",
+        "url": "https://angularindepth.com/posts/1513/from-zone-js-to-zoneless-angular-and-back-how-it-all-works",
+        "type": "article"
+      },
+      {
+        "title": "A New Era for Angular: Zoneless Change Detection",
+        "url": "https://justangular.com/blog/a-new-era-for-angular-zoneless-change-detection",
+        "type": "article"
+      },
+      {
+        "title": "Zoneless Angular Applications in V18",
+        "url": "https://www.youtube.com/watch?v=MZ6s5EL7hKk",
+        "type": "video"
+      },
+      {
+        "title": "I tested Angular 18 Zoneless mode and this is what I found out!",
+        "url": "https://www.youtube.com/watch?v=vHNeAqgNM4o",
+        "type": "video"
+      }
+    ]
   },
   "EbJib-XfZFF9bpCtL3aBs": {
     "title": "Developer Tools",
@@ -1305,8 +1730,29 @@
   },
   "T3MmS3bvMMgCUbOk3ktU7": {
     "title": "DevTools",
-    "description": "",
-    "links": []
+    "description": "Angular DevTools is a browser extension that provides debugging and profiling capabilities for Angular applications. You can view component trees and change detection cycles.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - devtools",
+        "url": "https://angular.dev/tools/devtools",
+        "type": "article"
+      },
+      {
+        "title": "Chrome Web Store",
+        "url": "https://chromewebstore.google.com/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh",
+        "type": "article"
+      },
+      {
+        "title": "Firefox Add-ons",
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/angular-devtools/",
+        "type": "article"
+      },
+      {
+        "title": "Did you try the LATEST Angular developer tools?",
+        "url": "https://www.youtube.com/watch?v=tAfe33fVW4w",
+        "type": "video"
+      }
+    ]
   },
   "ql7SyxrRmjpiXJ9hQeWPq": {
     "title": "Language Service",
@@ -1419,8 +1865,29 @@
   },
   "5h7U0spwEUhB-hbjSlaeB": {
     "title": "Enforce Trusted Types",
-    "description": "",
-    "links": []
+    "description": "It is recommended that you use Trusted Types as a way to help secure your applications from cross-site scripting attacks. Trusted Types is a web platform feature that can help you prevent cross-site scripting attacks by enforcing safer coding practices. Trusted Types can also help simplify the auditing of application code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Enforcing Trusted Types",
+        "url": "https://angular.dev/best-practices/security#enforcing-trusted-types",
+        "type": "article"
+      },
+      {
+        "title": "W3C - Trusted Types",
+        "url": "https://w3c.github.io/trusted-types/dist/spec/",
+        "type": "article"
+      },
+      {
+        "title": "MDN Docs - Trusted Types API",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API",
+        "type": "article"
+      },
+      {
+        "title": "How to use Trusted Types",
+        "url": "https://web.dev/articles/trusted-types#how-to-use-trusted-types",
+        "type": "article"
+      }
+    ]
   },
   "xH3RHPhsaqD9zIMms5OmX": {
     "title": "HTTP Vulnerabilities",
@@ -1449,33 +1916,109 @@
   },
   "VNG9DdXlS6R1OJ6Lrn4Lt": {
     "title": "Accessibility",
-    "description": "",
-    "links": []
+    "description": "The web is used by a wide variety of people, including those who have visual or motor impairments. A variety of assistive technologies are available that make it much easier for these groups to interact with web-based software applications. Also, designing an application to be more accessible generally improves the user experience for all users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Learn Accessibility",
+        "url": "https://web.dev/learn/accessibility/",
+        "type": "course"
+      },
+      {
+        "title": "Angular Official Docs - Accessibility",
+        "url": "https://angular.dev/best-practices/a11y",
+        "type": "article"
+      },
+      {
+        "title": "Angular a11y: 11 tips on how to make your apps more accessible",
+        "url": "https://angularindepth.com/posts/1152/angular-a11y-11-tips-on-how-to-make-your-apps-more-accessible",
+        "type": "article"
+      }
+    ]
   },
   "0FvH7KPs9ag02QkD1HEJ-": {
     "title": "Attributes",
-    "description": "",
-    "links": []
+    "description": "Building accessible web experience often involves setting Accessible Rich Internet Applications (ARIA) attributes to provide semantic meaning where it might otherwise be missing. Use attribute binding template syntax to control the values of accessibility-related attributes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - accessibility attributes",
+        "url": "https://angular.dev/best-practices/a11y#accessibility-attributes",
+        "type": "article"
+      },
+      {
+        "title": "ARIA HTML",
+        "url": "https://web.dev/learn/accessibility/aria-html/",
+        "type": "article"
+      },
+      {
+        "title": "Comprehensive accessibility strayegies for Angular apps leveraging aria-label for dynamic content",
+        "url": "https://yasikahivin.medium.com/comprehensive-accessibility-strategies-for-angular-apps-leveraging-aria-label-for-dynamic-content-fdf114834317",
+        "type": "article"
+      }
+    ]
   },
   "CZ1YRyai8Ds-ry4A8jVbr": {
     "title": "UI Components",
-    "description": "",
-    "links": []
+    "description": "The Angular Material library, which is maintained by the Angular team, is a suite of reusable UI components that aims to be fully accessible. The Component Development Kit (CDK) includes the a11y package that provides tools to support various areas of accessibility.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Angular UI Components",
+        "url": "https://angular.dev/best-practices/a11y#angular-ui-components",
+        "type": "article"
+      },
+      {
+        "title": "Angular a11y overview",
+        "url": "https://material.angular.io/cdk/a11y/overview",
+        "type": "article"
+      }
+    ]
   },
   "0s-QhN5aZh2F3tLJFKEyR": {
     "title": "Containers",
-    "description": "",
-    "links": []
+    "description": "Some Angular Material UI components cannot take children, such as an input, so you need to use container elements to customize the UI component.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Using containers for native elements",
+        "url": "https://angular.dev/best-practices/a11y#using-containers-for-native-elements",
+        "type": "article"
+      }
+    ]
   },
   "8i_JD1P4gIhY1rdldwLC2": {
     "title": "Routing",
-    "description": "",
-    "links": []
+    "description": "Tracking and controlling focus in a UI is an important consideration in designing for accessibility. When using Angular routing, you should decide where page focus goes upon navigation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - a11y routing",
+        "url": "https://angular.dev/best-practices/a11y#routing",
+        "type": "article"
+      },
+      {
+        "title": "Accessibility - Focus",
+        "url": "https://web.dev/learn/accessibility/focus/",
+        "type": "article"
+      },
+      {
+        "title": "Router events in Angular",
+        "url": "https://medium.com/@gurunadhpukkalla/router-events-in-angular-3112a3968660",
+        "type": "article"
+      }
+    ]
   },
   "5-RCB8AiDbkdIFYNXKWge": {
     "title": "Link Identification",
-    "description": "",
-    "links": []
+    "description": "CSS classes applied to active `RouterLink` elements, such as `RouterLinkActive`, provide a visual cue to identify the active link. Unfortunately, a visual cue doesn't help blind or visually impaired users. Applying the `aria-current` attribute to the element can help identify the active link.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Accessibility - Active links identification",
+        "url": "https://angular.dev/best-practices/a11y#active-links-identification",
+        "type": "article"
+      },
+      {
+        "title": "MDN Docs - ARIA Current",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current",
+        "type": "article"
+      }
+    ]
   },
   "STEHxJpwBZxFdQl0zUKxo": {
     "title": "Performance",
@@ -1490,13 +2033,50 @@
   },
   "CYjsXIOWtP5DJmYS-qR-s": {
     "title": "Deferrable Views",
-    "description": "",
-    "links": []
+    "description": "Deferrable views can be used in component template to defer the loading of select dependencies within that template. Those dependencies include components, directives, and pipes, and any associated CSS. To use this feature, you can declaratively wrap a section of your template in a @defer block which specifies the loading conditions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Deferrable Views",
+        "url": "https://angular.dev/guide/defer",
+        "type": "article"
+      },
+      {
+        "title": "Unlocking performance with deferrable views",
+        "url": "https://medium.com/@kashif_khan/exploring-angular-17-unlocking-performance-with-deferrable-views-580b1977f430",
+        "type": "article"
+      },
+      {
+        "title": "Learn how to unit test deferrable views",
+        "url": "https://angular.love/en/learn-how-to-unit-test-the-deferrable-views",
+        "type": "article"
+      },
+      {
+        "title": "Angular 17 Defer Block |Lazy Loading in Angular 17|Angular 17 Deferrable Views |Angular 17 Tutorial",
+        "url": "https://www.youtube.com/watch?v=h2rEGoqwr6o",
+        "type": "video"
+      }
+    ]
   },
   "1WIKjn3nxYDMIhBL17aYQ": {
     "title": "Image Optimization",
-    "description": "",
-    "links": []
+    "description": "The NgOptimizedImage directive makes it easy to adopt performance best practices for loading images.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Image Optimization",
+        "url": "https://angular.dev/guide/image-optimization",
+        "type": "article"
+      },
+      {
+        "title": "Automatic adjustments in Angular's optimized images",
+        "url": "https://medium.com/ngconf/automatic-adjustments-in-angulars-optimized-images-0034335e0374",
+        "type": "article"
+      },
+      {
+        "title": "Boost your application's performance with NgOptimizedImage",
+        "url": "https://angular.love/en/boost-your-applications-performance-with-ngoptimizedimage",
+        "type": "article"
+      }
+    ]
   },
   "pRSR5PEbkJXAJ1LPyK-EE": {
     "title": "Zone Pollution",
@@ -1630,13 +2210,50 @@
   },
   "bqA2bxPcZrqQ-6QE-YDK1": {
     "title": "Code Coverage",
-    "description": "",
-    "links": []
+    "description": "The Angular CLI can run unit tests and create code coverage reports. Code coverage reports show you any parts of your code base that might not be properly tested by your unit tests.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - code coverage",
+        "url": "https://angular.dev/guide/testing/code-coverage",
+        "type": "article"
+      },
+      {
+        "title": "Measuring code coverage",
+        "url": "https://testing-angular.com/measuring-code-coverage/",
+        "type": "article"
+      }
+    ]
   },
   "Xxyx3uzy5TpNhgR1IysMN": {
     "title": "Internationalization",
-    "description": "",
-    "links": []
+    "description": "Internationalization, sometimes referenced as i18n, is the process of designing and preparing your project for use in different locales around the world. Localization is the process of building versions of your project for different locales.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Transloco",
+        "url": "https://github.com/jsverse/transloco",
+        "type": "opensource"
+      },
+      {
+        "title": "Ngx Translate",
+        "url": "https://github.com/ngx-translate/core",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - Internationalization",
+        "url": "https://angular.dev/guide/i18n",
+        "type": "article"
+      },
+      {
+        "title": "Angular i18n",
+        "url": "https://lokalise.com/blog/angular-i18n/",
+        "type": "article"
+      },
+      {
+        "title": "Angular 18 Multi-Language Support",
+        "url": "https://www.youtube.com/watch?v=hIz0OglmT0Q",
+        "type": "video"
+      }
+    ]
   },
   "W8OwpEw00xn0GxidlJjdc": {
     "title": "Localize Package",
@@ -1660,27 +2277,107 @@
   },
   "rYJq59Q0YdfK6n3x740Em": {
     "title": "Animation",
-    "description": "",
-    "links": []
+    "description": "Angular's animation system is built on CSS functionality, which means you can animate any property that the browser considers animatable. This includes positions, sizes, transforms, colors, borders, and more.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Animations Explorer",
+        "url": "https://github.com/williamjuan027/angular-animations-explorer",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - Animation",
+        "url": "https://angular.dev/guide/animations",
+        "type": "article"
+      },
+      {
+        "title": "Angular Animations - A Beginner's Guide",
+        "url": "https://www.angularminds.com/blog/angular-animations-a-beginners-guide",
+        "type": "article"
+      },
+      {
+        "title": "In-Depth guide into animations in Angular",
+        "url": "https://angularindepth.com/posts/1285/in-depth-guide-into-animations-in-angular",
+        "type": "article"
+      }
+    ]
   },
   "Iv2d4sgODqMPzA9gH6RAw": {
     "title": "Transitions & Triggers",
-    "description": "",
-    "links": []
+    "description": "In Angular, transition states can be defined explicitly through the `state()` function, or using the predefined `*` wildcard and `void` states. An asterisk `*` or wildcard matches any animation state. This is useful for defining transitions that apply regardless of the HTML element's start or end state. Use the `void` state to configure transitions for an element that is entering or leaving a page.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Transition and Triggers",
+        "url": "https://angular.dev/guide/animations/transition-and-triggers",
+        "type": "article"
+      },
+      {
+        "title": "Angular Animations: Learn the basics",
+        "url": "https://www.youtube.com/watch?v=CGBcIz1tYec",
+        "type": "video"
+      },
+      {
+        "title": "How to use trigger function in Angular Animations",
+        "url": "https://www.youtube.com/watch?v=3_B4OV5M_Ag",
+        "type": "video"
+      }
+    ]
   },
   "Unjknmb4b2LY-nUVvvF7_": {
     "title": "Complex Sequences",
-    "description": "",
-    "links": []
+    "description": "Angular lets you animate coordinated sequences, such as an entire grid or list of elements as they enter and leave a page. You can choose to run multiple animations in parallel, or run discrete animations sequentially, one following another.\n\nThe functions that control complex animation sequences are:\n\n*   `query()`: Finds one or more inner HTML elements.\n*   `stagger()`: Applies a cascading delay to animations for multiple elements.\n*   `group()`: Runs multiple animation steps in parallel.\n*   `sequence()`: Runs animation steps one after another.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Complex Sequences",
+        "url": "https://angular.dev/guide/animations/complex-sequences",
+        "type": "article"
+      },
+      {
+        "title": "Angular Animations: Animating multiple items in parallel",
+        "url": "https://www.youtube.com/watch?v=RPdR7HzNQIw",
+        "type": "video"
+      }
+    ]
   },
   "M1CU2Yq6dLp4yOuGV0fhF": {
     "title": "Reusable Animations",
-    "description": "",
-    "links": []
+    "description": "To create a reusable animation, use the `animation()` function to define an animation in a separate .ts file and declare this animation definition as a const export variable. You can then import and reuse this animation in any of your application components using the `useAnimation()` function.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Reusable Animations",
+        "url": "https://angular.dev/guide/animations/reusable-animations",
+        "type": "article"
+      },
+      {
+        "title": "Reusable Animations with Angular",
+        "url": "https://catalincodes.com/posts/reusable-animations-with-angular",
+        "type": "article"
+      },
+      {
+        "title": "Angular Animations: Creating reusable animations!",
+        "url": "https://www.youtube.com/watch?v=ObYCutiBOTo",
+        "type": "video"
+      }
+    ]
   },
   "x91jWP81oCTeVEwzX8FbK": {
     "title": "Route Transitions",
-    "description": "",
-    "links": []
+    "description": "When a user navigates from one route to another, the Angular router maps the URL path to a relevant component and displays its view. Animating this route transition can greatly enhance the user experience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Route transition animations",
+        "url": "https://angular.dev/guide/animations/route-animations",
+        "type": "article"
+      },
+      {
+        "title": "Add router animation trnasitions for navigation in Angular 17",
+        "url": "https://dev.to/this-is-angular/add-router-animation-transitions-for-navigation-in-angular-17-2m5a",
+        "type": "article"
+      },
+      {
+        "title": "Angular Animations: Router transitions",
+        "url": "https://www.youtube.com/watch?v=7d8UDEKT1pU",
+        "type": "video"
+      }
+    ]
   }
 }

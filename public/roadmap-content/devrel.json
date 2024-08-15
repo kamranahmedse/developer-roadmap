@@ -83,6 +83,11 @@
     "description": "Developer Relations (DevRel) is crucial for fostering a vibrant and engaged developer community around a product or platform. It involves creating and maintaining strong relationships with developers through activities like community building, technical support, advocacy, and education. Effective DevRel ensures that developers have the resources and support they need to succeed, which in turn drives product adoption, innovation, and loyalty. By bridging the gap between a company's development teams and external developers, DevRel can also provide valuable feedback for product improvements and help in shaping the future direction of the product or platform.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "What is Developer Relations? The Ultimate Guide for DevTool GTM Teams",
+        "url": "https://www.doc-e.ai/post/what-is-developer-relations-the-ultimate-guide-for-devtool-gtm-teams",
+        "type": "article"
+      },
+      {
         "title": "DevRel - Why is it important?",
         "url": "https://developers.onelogin.com/blog/devrel",
         "type": "article"
@@ -101,6 +106,11 @@
       {
         "title": "What is developer advocacy?",
         "url": "https://appsembler.com/glossary/developer-advocacy/",
+        "type": "article"
+      },
+      {
+        "title": "The Developer Advocate Playbook: Your Go-To Guide to Turning Users into Champions 🚀",
+        "url": "https://www.doc-e.ai/post/the-developer-advocate-playbook-your-go-to-guide-to-turning-users-into-champions",
         "type": "article"
       },
       {
@@ -312,8 +322,19 @@
   },
   "yJygbi8cnp3oz2EFl2MR0": {
     "title": "Community Engagement",
-    "description": "",
-    "links": []
+    "description": "Building a positive developer experience through community engagement is an ongoing process that requires dedication, empathy, and a genuine commitment to your users. By investing in a welcoming environment, facilitating knowledge sharing, and leveraging AI-powered tools like [Doc-E.ai](http://Doc-E.ai), you can create a thriving community that not only supports your product but also becomes a source of innovation, loyalty, and growth.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Ultimate Guide to Developer Engagement and Community Building: Unlocking the Power of Developer-Centric Growth",
+        "url": "https://www.doc-e.ai/post/the-ultimate-guide-to-developer-engagement-and-community-building-unlocking-the-power-of-developer-centric-growth",
+        "type": "article"
+      },
+      {
+        "title": "Fostering a Positive Developer Experience Through Community Engagement: A Blueprint for DevTool Success",
+        "url": "https://www.doc-e.ai/post/fostering-a-positive-developer-experience-through-community-engagement-a-blueprint-for-devtool-success",
+        "type": "article"
+      }
+    ]
   },
   "C2w8R4tNy2lOhhWU9l32s": {
     "title": "Event Participation",

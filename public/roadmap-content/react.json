@@ -183,6 +183,11 @@
         "title": "Different techniques for conditional rendering in React",
         "url": "https://www.robinwieruch.de/conditional-rendering-react/",
         "type": "article"
+      },
+      {
+        "title": "Conditional rendering in React",
+        "url": "https://www.youtube.com/watch?v=4oCVDkb_EIs",
+        "type": "video"
       }
     ]
   },
@@ -428,6 +433,11 @@
         "title": "Explore top posts about React Hooks",
         "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Custom Hooks in React",
+        "url": "https://www.youtube.com/watch?v=I2Bgi0Qcdvc",
+        "type": "video"
       }
     ]
   },
@@ -783,19 +793,24 @@
     "description": "Context provides a way to pass data through the component tree without having to pass props down manually at every level.\n\nIn a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Basic useContext Guide",
-        "url": "https://www.w3schools.com/react/react_usecontext.asp",
+        "title": "Passing Data Deeply with Context",
+        "url": "https://react.dev/learn/passing-data-deeply-with-context",
         "type": "article"
       },
       {
-        "title": "Passing Data Deeply with Context",
-        "url": "https://react.dev/learn/passing-data-deeply-with-context",
+        "title": "Basic useContext Guide",
+        "url": "https://www.w3schools.com/react/react_usecontext.asp",
         "type": "article"
       },
       {
         "title": "State with useContext and useState/useReducer",
         "url": "https://www.robinwieruch.de/react-state-usereducer-usestate-usecontext/",
         "type": "article"
+      },
+      {
+        "title": "React Context API Crash Course",
+        "url": "https://www.youtube.com/watch?v=t9WmZFnE6Hg",
+        "type": "video"
       }
     ]
   },
@@ -1093,8 +1108,29 @@
   },
   "kiCTo0U6VgNON8rv_Ktlj": {
     "title": "Ark UI",
-    "description": "",
-    "links": []
+    "description": "It is a modern and versatile user interface framework designed to streamline the development of responsive and accessible web applications. It provides a `comprehensive set` of components and tools that simplify the process of building user interfaces, allowing developers to focus on functionality and design. With a strong emphasis on flexibility and ease of use, Ark UI enables rapid prototyping and `scalable solutions`, ensuring a consistent and polished user experience across various devices and platforms. Its modular architecture and extensive documentation make it an excellent choice for developers looking to enhance productivity and maintain high standards in their UI design.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://ark-ui.com/",
+        "type": "article"
+      },
+      {
+        "title": "Official Website",
+        "url": "https://ark-ui.com/react/docs/overview/introduction",
+        "type": "article"
+      },
+      {
+        "title": "What is ARK UI?",
+        "url": "https://shaxadd.medium.com/enhance-your-user-interfaces-with-ark-ui-a-comprehensive-guide-7e87dd0a79cf",
+        "type": "article"
+      },
+      {
+        "title": "Hands On ARK UI",
+        "url": "https://www.youtube.com/watch?v=zjo-77I0unk",
+        "type": "video"
+      }
+    ]
   },
   "b4AP2OggxFAwsQtUwiUJJ": {
     "title": "API Calls",
@@ -1367,17 +1403,17 @@
   },
   "W-atg_Msa9uPLr6RXAKSb": {
     "title": "Frameworks",
-    "description": "Server-side rendering (SSR) is a technique for rendering a JavaScript application on the server, rather than in the browser. This can improve the performance and user experience of a web application, as the initial render of the application is done on the server and the content is sent to the browser as a fully-rendered HTML page.\n\nThere are several frameworks and libraries available for server-side rendering React applications, most common being:",
+    "description": "Server-side rendering (SSR) is a technique for rendering a JavaScript application on the server, rather than in the browser. This can improve the performance and user experience of a web application, as the initial render of the application is done on the server and the content is sent to the browser as a fully-rendered HTML page.\n\nThere are several frameworks and libraries available for server-side rendering React applications, most common being:\n\nNext.JS\n-------\n\nNext.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.\n\n*   [@article@Next.js](https://nextjs.org/)\n*   [@video@Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)\n\nRemix.JS\n--------\n\nRemix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.",
     "links": [
-      {
-        "title": "Next.js",
-        "url": "https://nextjs.org/",
-        "type": "article"
-      },
       {
         "title": "Remix",
         "url": "https://remix.run/",
         "type": "article"
+      },
+      {
+        "title": "Remix Crash Course",
+        "url": "https://www.youtube.com/watch?v=RBYJTop1e-g",
+        "type": "video"
       }
     ]
   },
@@ -1419,8 +1455,24 @@
   },
   "_HoZkE7FH-v3wI_722ZTF": {
     "title": "Astro",
-    "description": "",
-    "links": []
+    "description": "Astro is the web framework for building content-driven websites like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new frontend architecture to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Astro Website",
+        "url": "https://astro.build/",
+        "type": "article"
+      },
+      {
+        "title": "Astro Crash Course in 60 Minutes",
+        "url": "https://www.youtube.com/watch?v=NniT0vKyn-E",
+        "type": "video"
+      },
+      {
+        "title": "How To: Add/Integrate React.js and TailwindCss into Astro framework",
+        "url": "https://www.youtube.com/watch?v=d6CsWTVa42o",
+        "type": "video"
+      }
+    ]
   },
   "-WjJBYCmRRj08n_9HxohY": {
     "title": "react-router",
@@ -1446,6 +1498,11 @@
         "title": "How to use Forms in React",
         "url": "https://www.robinwieruch.de/react-form/",
         "type": "article"
+      },
+      {
+        "title": "React Forms: the SIMPLEST way",
+        "url": "https://www.youtube.com/watch?v=CT-72lTXdPg",
+        "type": "video"
       }
     ]
   },
@@ -1485,9 +1542,14 @@
         "type": "article"
       },
       {
-        "title": "Getting Started",
-        "url": "https://formik.org/docs/overview",
-        "type": "article"
+        "title": "Formik - Building React Forms easier",
+        "url": "https://www.youtube.com/watch?v=khGypss-RJs",
+        "type": "video"
+      },
+      {
+        "title": "React Formik Tutorial with Yup (React Form Validation)",
+        "url": "https://www.youtube.com/watch?v=7Ophfq0lEAY",
+        "type": "video"
       }
     ]
   },
@@ -1530,8 +1592,24 @@
   },
   "bRpeoo9zXrnZ2IHSI7JX4": {
     "title": "Animation",
-    "description": "",
-    "links": []
+    "description": "Animation in React can be achieved using various methods, such as CSS transitions, keyframes, or libraries like `react-spring`, `framer-motion`, and `GSAP` (GreenSock Animation Platform). CSS transitions are ideal for simple animations, where you can toggle classes or manipulate inline styles to create smooth transitions. For more complex and interactive animations, libraries like `react-spring` provide a declarative approach, allowing you to create animations by defining spring physics or interpolating values. `framer-motion` offers a rich API to handle complex animations, gestures, and even layout transitions with ease. `GSAP` is another powerful library that excels at creating high-performance animations, offering fine-grained control over every aspect of the animation process. These tools integrate seamlessly with React's component-driven architecture, enabling you to create responsive and dynamic user interfaces.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Framer Motion Docs",
+        "url": "https://www.framer.com/motion/",
+        "type": "article"
+      },
+      {
+        "title": "GSAP Docs",
+        "url": "https://gsap.com/docs/v3/",
+        "type": "article"
+      },
+      {
+        "title": "React Spring Docs",
+        "url": "https://www.react-spring.dev/docs/getting-started",
+        "type": "article"
+      }
+    ]
   },
   "SUeXDkmOLipdRP4fSrZOH": {
     "title": "Server APIs",
@@ -1627,7 +1705,18 @@
   "txARr3lgTvy-vJCj5zAb1": {
     "title": "Mobile Applications",
     "description": "React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.",
-    "links": []
+    "links": [
+      {
+        "title": "React Native Official website",
+        "url": "https://reactnative.dev/",
+        "type": "article"
+      },
+      {
+        "title": "React Native Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=ZBCUegTZF7M",
+        "type": "video"
+      }
+    ]
   },
   "NvXAq1vN2wpncdW-yTL4c": {
     "title": "React Native",

@@ -9,14 +9,22 @@ jobs:
   upgrade-deps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 18
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7.13.4
-      - name: Upgrade dependencies
+          cache: 'pnpm'
+
+      - name: Install dependencies and generate content JSON
         run: |
           pnpm install
           npm run generate:roadmap-content-json
