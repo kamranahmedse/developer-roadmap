@@ -24,17 +24,19 @@ Now let's talk about DNS Poisoning.
 **When the cache is poisoned, it misdirects traffic until the incorrect information is fixed. This technique exploits vulnerabilities in the DNS system and can spread to other servers, causing widespread issues.**
 
 
-![image](https://github.com/user-attachments/assets/6b5302ca-e75e-4b43-86c1-4e2a1b97ffbf)
-
 Here’s how it works:
 
 
-- DNS Query: When you type a website name, your computer asks the DNS server for the corresponding IP address.
+1. DNS Query: When you type a website name, your computer asks the DNS server for the corresponding IP address.
 
-* Poisoned Cache: If the DNS server’s cache has been poisoned, it provides a fake IP address.
+2. Poisoned Cache: If the DNS server’s cache has been poisoned, it provides a fake IP address.
 
-+ Redirection: Your browser is then directed to a malicious site, which could look identical to the real one.
+3. Redirection: Your browser is then directed to a malicious site, which could look identical to the real one.
 
-> Source:
-[Cloudflare](https://www.cloudflare.com/learning/dns/dns-cache-poisoning/)
-[Fortinet](https://www.fortinet.com/resources/cyberglossary/dns-poisoning)
+
+Visit the following resources to learn more:
+
+- [Cloudflare](https://www.cloudflare.com/learning/dns/dns-cache-poisoning/)
+* [Fortinet](https://www.fortinet.com/resources/cyberglossary/dns-poisoning)
+  
+* [GeekforGeeks](https://www.geeksforgeeks.org/dns-spoofing-or-dns-cache-poisoning/)
