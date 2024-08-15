@@ -1,1 +1,3 @@
 # Collaborators / Members
+
+In GitHub, collaborators and members refer to individuals who contribute to or have access to your repository. Collaborators are users who have been granted permission to contribute code, make changes, and push updates to your repository, whereas members are the owners of a repository, including organization owners who have full control over their team's repositories. Members can be either individual collaborators or part of an organization team, with varying levels of access and permissions based on their role within the team.

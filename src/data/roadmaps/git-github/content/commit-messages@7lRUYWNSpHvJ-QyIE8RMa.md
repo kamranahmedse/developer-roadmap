@@ -2,7 +2,7 @@
 
 A Git commit message is a brief explanation of the changes introduced in a particular commit. It helps others (and your future self) understand the purpose of the changes and the context behind them. Writing clear and informative commit messages is an important practice for maintaining a well-organized and easily navigable project history.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@How to Write Better Git Commit Messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 - [@article@Writing good commit messages](https://www.theodinproject.com/lessons/foundations-commit-messages)

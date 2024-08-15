@@ -4,7 +4,7 @@ The `git config` command is a convenience function that is used to set Git confi
 
 The most basic use case for `git config` is to invoke it with a configuration name, which will display the set value at that name. Configuration names are dot delimited strings composed of a 'section' and a 'key' based on their hierarchy. For example: `user.email`
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Git - git-config Documentation](https://git-scm.com/docs/git-config)
 - [@article@git config | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
