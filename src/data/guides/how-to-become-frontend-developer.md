@@ -303,4 +303,4 @@ Though it is not required, having a grasp of the basics of backend development c
 
 To become a front-end developer, you need a mix of skills, dedication, and the right guidance. If you follow the steps in this guide, you'll be on track to kickstart an excellent front-end career. Stay on track with a personalized learning plan available on roadmap.sh.
 
-roadmap.sh will keep you focused and help you reach your maximum potential as a front-end developer. It has numerous resources that will help you learn front-end and web development. To get started, sign up, create a [front-end road](https://roadmap.sh/frontend)[map](https://roadmap.sh/frontend) [plan](https://roadmap.sh/frontend), and begin studying. You can also share the roadmap with your study buddies. 
+roadmap.sh will keep you focused and help you reach your maximum potential as a front-end developer. It has numerous resources that will help you learn front-end and web development. To get started, sign up, create a [front-end roadmap plan](https://roadmap.sh/frontend), and begin studying. You can also share the roadmap with your study buddies. 
