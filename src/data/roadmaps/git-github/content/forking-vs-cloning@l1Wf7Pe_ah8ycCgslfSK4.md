@@ -8,6 +8,5 @@ Learn more from the following resources:
 
 - [@official@The difference between forking and cloning a repository](https://github.com/orgs/community/discussions/35849)
 - [@article@Git fork vs. clone: What's the difference?](https://www.theserverside.com/answer/Git-fork-vs-clone-Whats-the-difference)
-- [@article@What is the difference between forking and cloning in Git?](https://www.educative.io/answers/what-is-the-difference-between-forking-and-cloning-in-git)
 - [@video@Git Fork vs. Git Clone: What's the Difference?](https://youtu.be/6YQxkxw8nhE?si=mJNvcaB4lQccsU57)
 - [@video@GitHub Forking vs Cloning: Key Differences Explained](https://youtu.be/yQSjqYs2UBE?si=3BKYtWmkLIMWvA6G)
