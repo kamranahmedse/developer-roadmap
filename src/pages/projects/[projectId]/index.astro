@@ -8,6 +8,7 @@ import {
 } from '../../../lib/project';
 import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectMilestoneStrip } from '../../../components/Projects/ProjectMilestoneStrip';
+import { ProjectStepper } from "../../../components/Projects/ProjectStepper";
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 
 export async function getStaticPaths() {
@@ -49,25 +50,7 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
     <div class='container'>
       <ProjectTabs projectId={projectId} activeTab='details' />
 
-      <div
-        class='my-3 flex flex-row flex-wrap items-center gap-1.5 rounded-md border bg-white px-2 py-2 text-sm'
-      >
-        <AstroIcon icon='map' class='h-4 w-4' />
-        Relevant roadmaps <span class='flex flex-row flex-wrap gap-1'>
-          {
-            project.roadmaps.map((roadmap) => (
-              <a
-                class='rounded bg-gray-500 px-1.5 text-sm text-white transition-colors hover:bg-black'
-                href={`/${roadmap.id}`}
-              >
-                {roadmap.frontmatter?.briefTitle}
-              </a>
-            ))
-          }
-        </span>
-      </div>
-
-      <div class='mb-3 overflow-hidden rounded-lg border bg-white p-5'>
+      <div class='mb-3 rounded-lg border bg-white p-5'>
         <div class='relative -mx-2 -mt-2 mb-5 rounded-lg bg-gray-100/70 p-5'>
           <div class='absolute right-2 top-2'>
             <Badge variant='yellow' text={projectData.difficulty} />
@@ -89,6 +72,7 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
         </div>
 
         <ProjectMilestoneStrip projectId={projectId} client:load />
+        <ProjectStepper client:load />
 
         <div
           class='prose max-w-full prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 [&>ul>li]:my-1'
@@ -97,7 +81,7 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
         </div>
 
         <div
-          class='mt-5 flex flex-wrap items-center justify-center rounded-lg bg-yellow-100 p-2.5 text-sm'
+          class='mt-5 flex flex-wrap items-center justify-center rounded-lg p-2.5 text-sm'
         >
           <AstroIcon class='mr-2 inline-block h-5 w-5' icon='github' />
           Found a mistake?
@@ -106,7 +90,7 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
             href={githubUrl}
             target='_blank'
           >
-            Help us improve this page
+            Help us improve.
           </a>
         </div>
       </div>
