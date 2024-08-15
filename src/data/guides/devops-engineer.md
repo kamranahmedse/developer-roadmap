@@ -279,7 +279,6 @@ Release engineers are responsible for planning, scheduling, and coordinating the
 - Project management and organization skills.
 - Strong communication and coordination skills
 
-
 ### Security engineers 
 
 Security engineers are responsible for integrating security and best practices into the DevOps pipeline. Additionally, they collaborate with development and operations teams to conduct security assessments, vulnerability scans, and compliance checks.
@@ -295,7 +294,6 @@ Security engineers are responsible for integrating security and best practices i
 - Knowledge of security best practices and frameworks
 - Familiarity with identity and access management systems
 
-
 ## Best practices for DevOps teams
 
 To achieve success as a team practicing or intending to adopt DevOps practices, you need a combination of the right tools, best practices, and a cultural shift. Here are some tips and best DevOps practices for teams:
@@ -309,4 +307,3 @@ To achieve success as a team practicing or intending to adopt DevOps practices, 
 - Ensure effective collaboration and shared responsibilities between development, operations, QAs, and other teams.
 
 In summary, DevOps is growing and will continue to expand, bringing about even more DevOps roles and responsibilities for engineers in the ecosystem. The roadmap.sh’s [DevOps roadmap](https://roadmap.sh/devops) is a valuable resource that can help you stay updated on these changes. Additionally, you can track your learning path and connect with a vibrant community by [signing up](https://roadmap.sh/signup) on the roadmap.sh platform.
-
