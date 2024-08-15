@@ -4,5 +4,6 @@ Feedback loops are a crucial process that involves collecting, analyzing, and ac
 
 Learn more from the following resources:
 
+- [@article@Community-Driven Insights for Developers: "Leveraging Community Feedback for Product Development"](https://www.doc-e.ai/post/community-driven-insights-for-developers-leveraging-community-feedback-for-product-development)
 - [@article@Harnessing the Power of Community Feedback for Product Development](https://draft.dev/learn/devrel-harnessing-the-power-of-community-feedback-for-product-development)
 - [@article@The Developer Advocacy Feedback Loop](https://glaforge.dev/talks/2020/08/06/the-developer-advocacy-feedback-loop/)
