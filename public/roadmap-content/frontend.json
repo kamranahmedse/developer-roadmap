@@ -753,7 +753,7 @@
       },
       {
         "title": "A Simple Guide to JavaScript Fetch API",
-        "url": "https://www.javascripttutorial.net/javascript-fetch-api/",
+        "url": "https://www.javascripttutorial.net/web-apis/javascript-fetch-api/",
         "type": "article"
       },
       {
@@ -2305,7 +2305,7 @@
   },
   "KJRkrFZIihCUBrOf579EU": {
     "title": "react-router",
-    "description": "Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.\n\nVisit the following resources to learn more:",
+    "description": "There used to be Remix in this list but they announced to merge Remix into react-router after v7.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Official Website",

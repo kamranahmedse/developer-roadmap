@@ -263,8 +263,14 @@
   },
   "xHj3W9Ig3MVuVlGyXchaP": {
     "title": "v-if",
-    "description": "",
-    "links": []
+    "description": "Conditionally render an element or a template fragment based on the truthy-ness of the expression value.\n\nWhen a `v-if` element is toggled, the element and its contained directives / components are destroyed and re-constructed. If the initial condition is falsy, then the inner content won't be rendered at all.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-if Documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-if",
+        "type": "article"
+      }
+    ]
   },
   "0CtAZQcFJexMiJfZ-mofv": {
     "title": "v-else",

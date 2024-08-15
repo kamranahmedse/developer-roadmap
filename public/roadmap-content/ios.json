@@ -94,6 +94,11 @@
     "description": "Swift is designed to work seamlessly with Objective-C, allowing developers to integrate and use both languages within the same project. This interoperability enables:\n\n**Gradual Migration:** Developers can incrementally migrate their codebase from Objective-C to Swift without needing a complete rewrite.\n\n**Mixed-Language Projects:** Swift and Objective-C files can coexist, and developers can call Objective-C code from Swift and vice versa.\n\n**Access to Existing Libraries:** Swift code can leverage existing Objective-C libraries and frameworks, ensuring continued use of valuable resources and tools.\n\n**Bridging Header:** A bridging header file allows Swift to interface with Objective-C code, facilitating communication between the two languages.\n\n**Compatibility:** Swift supports dynamic libraries, ensuring compatibility with existing Objective-C runtime and APIs.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Swift and Objective-C Interoperability",
+        "url": "https://developer.apple.com/videos/play/wwdc2015/401/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Swift",
         "url": "https://app.daily.dev/tags/swift?ref=roadmapsh",
         "type": "article"
@@ -343,7 +348,7 @@
   },
   "tqbg8mBJfjuXacdMlIB_L": {
     "title": "Memory Management",
-    "description": "Memory management involves allocating memory for objects and freeing it after use. Manual Retain-Release (MRR) requires developers to explicitly manage memory using reference counting, provided by the Foundation class NSObject. Automatic Reference Counting (ARC) automates this process by inserting memory management method calls during compilation, though it still uses reference counting. In contrast, Garbage Collection (GC) automatically tracks object ownership and releases unreferenced objects, using a different mechanism than MRR and ARC, and is supported only in the Mac OS X runtime environment, not on iOS.\n\n> Beginning May 1, 2015, new Mac apps and app updates submitted to the Mac App Store may no longer use garbage collection, which was deprecated in OS X Mountain Lion. Instead, migrate your apps to Automatic Reference Counting, using the migration assistant in Xcode to help with this transition. Apps may continue to use retain/release for manual memory management. For more information, read the [Transitioning to ARC Release Notes](https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).\n\nVisit the following resources to learn more:",
+    "description": "Memory management involves allocating memory for objects and freeing it after use. Manual Retain-Release (MRR) requires developers to explicitly manage memory using reference counting, provided by the Foundation class NSObject. Automatic Reference Counting (ARC) automates this process by inserting memory management method calls during compilation, though it still uses reference counting. In contrast, Garbage Collection (GC) automatically tracks object ownership and releases unreferenced objects, using a different mechanism than MRR and ARC, and is supported only in the macOS X runtime environment, not on iOS.\n\n> Beginning May 1, 2015, new Mac apps and app updates submitted to the Mac App Store may no longer use garbage collection, which was deprecated in OS X Mountain Lion. Instead, migrate your apps to Automatic Reference Counting, using the migration assistant in Xcode to help with this transition. Apps may continue to use retain/release for manual memory management. For more information, read the [Transitioning to ARC Release Notes](https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "WWDC2021: ARC in Swift: Basics and beyond",
@@ -426,8 +431,29 @@
   },
   "MrdIb9F-wSEbUz7KRnH3t": {
     "title": "Pick a Language",
-    "description": "",
-    "links": []
+    "description": "Apple used to use Objective C for the development of apps for iOS and macOS, but since 2014 [Swift](https://www.swift.org/documentation/) has become the primary language for app development. After more than 10 years of growing strong and mature, now it is worth starting your iOS Developer journey by learning the language.\n\nSwift is a multi-paradigm language that has object-oriented, functional, and protocol-oriented flavors to it. For someone with a coding background in C++ and Java, the strange concepts would be Optionals, Closures, and the very fact you can skip writing semicolons when you end your statements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Swift Programming Tutorial | FULL COURSE | Absolute Beginner",
+        "url": "https://www.youtube.com/watch?v=CwA1VWP0Ldw",
+        "type": "course"
+      },
+      {
+        "title": "Swift Programming For Beginners - No Programming Experience",
+        "url": "https://www.udemy.com/course/swift-programming-for-beginners-no-experience/",
+        "type": "course"
+      },
+      {
+        "title": "Swift Programming Tutorial – Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=8Xg7E9shq0U",
+        "type": "course"
+      },
+      {
+        "title": "Learn Swift Fast (2020) - Full Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=FcsY1YPBwzQ",
+        "type": "course"
+      }
+    ]
   },
   "sGnDm2xuJxqfU3pwmlY7H": {
     "title": "Version Control",
