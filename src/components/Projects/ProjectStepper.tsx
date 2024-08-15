@@ -24,7 +24,7 @@ function StepperAction(props: StepperActionProps) {
 
   if (isActive) {
     return (
-      <button className="flex items-center gap-1.5 rounded-xl bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700">
+      <button className="flex items-center gap-1.5 rounded-full bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700">
         <DisplayIcon size={13} />
         <span>{text}</span>
       </button>
@@ -63,6 +63,32 @@ function StepperStepSeparator(props: StepperStepSeparatorProps) {
         'border-green-500': isActive,
       })}
     />
+  );
+}
+
+type MilestoneStepProps = {
+  icon: LucideIcon;
+  text: string;
+  isCompleted?: boolean;
+};
+
+function MilestoneStep(props: MilestoneStepProps) {
+  const { icon: DisplayIcon, text, isCompleted } = props;
+
+  if (isCompleted) {
+    return (
+      <span className="flex cursor-default items-center gap-1.5 text-sm font-medium text-green-600">
+        <Check size={14} strokeWidth={3} />
+        <span>{text}</span>
+      </span>
+    );
+  }
+
+  return (
+    <span className="flex cursor-default items-center gap-1.5 text-sm text-gray-400">
+      <DisplayIcon size={14} />
+      <span>{text}</span>
+    </span>
   );
 }
 
@@ -107,28 +133,22 @@ export function ProjectStepper() {
 
       <div className="flex min-h-[60px] items-center justify-between gap-3 px-4">
         <StepperAction
-          isCompleted={true}
+          isActive={true}
           icon={Play}
           text={'Start Building'}
           number={1}
         />
-        <StepperStepSeparator isActive={true} />
+        <StepperStepSeparator isActive={false} />
         <StepperAction
-          isActive={true}
+          isActive={false}
           icon={Send}
           text={'Submit Solution'}
           number={2}
         />
         <StepperStepSeparator isActive={false} />
-        <button className="flex items-center gap-1.5 text-sm text-gray-400">
-          <Flag size={14} />
-          <span>5 Upvotes</span>
-        </button>
-        <hr className="flex-grow border border-gray-300" />
-        <button className="flex items-center gap-1.5 text-sm text-gray-400">
-          <Flag size={14} />
-          <span>10+ Upvotes</span>
-        </button>
+        <MilestoneStep isCompleted={false} icon={Flag} text={'5 upvotes'} />
+        <StepperStepSeparator isActive={false} />
+        <MilestoneStep isCompleted={false} icon={Flag} text={'10 upvotes'} />
       </div>
     </div>
   );
