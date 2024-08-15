@@ -84,7 +84,7 @@
   },
   "Vrcv5px-3fqmyJnQv3WBK": {
     "title": "History of Node.js",
-    "description": "Node.js was written initially by Ryan Dahl in 2009, about thirteen years after the introduction of the first server-side JavaScript environment, Netscape's LiveWire Pro Web. The initial release supported only Linux and Mac OS X. Its development and maintenance were led by Dahl and later sponsored by Joyent.\n\nVisit the following resources to learn more:",
+    "description": "Node.js was written initially by Ryan Dahl in 2009, about thirteen years after the introduction of the first server-side JavaScript environment, Netscape's LiveWire Pro Web. The initial release supported only Linux and macOS X. Its development and maintenance were led by Dahl and later sponsored by Joyent.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Rising Stack - History of Node.js on a Timeline",
@@ -319,8 +319,19 @@
   },
   "oYeux7PbveYaVwXRzAg5x": {
     "title": "Local Installation",
-    "description": "",
-    "links": []
+    "description": "Locally installed packages are available only to the project where the packages are installed, while the globally installed packages can be used any where without installing them into a project. Another usecase of the global packages is when using CLI tools.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Downloading and installing packages locally",
+        "url": "https://docs.npmjs.com/downloading-and-installing-packages-locally",
+        "type": "article"
+      },
+      {
+        "title": "Downloading and installing packages globally",
+        "url": "https://docs.npmjs.com/downloading-and-installing-packages-globally",
+        "type": "article"
+      }
+    ]
   },
   "bYBz12FUiJ1qLgdQSGyGK": {
     "title": "Updating Packages",

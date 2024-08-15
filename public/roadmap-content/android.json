@@ -220,8 +220,14 @@
   },
   "2iDJrxjXOt7o2fPp2HfRl": {
     "title": "Fragments",
-    "description": "",
-    "links": []
+    "description": "A `Fragment` represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity or another fragment. The fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android Developers: Fragments",
+        "url": "https://developer.android.com/guide/fragments",
+        "type": "article"
+      }
+    ]
   },
   "boMz0HZlMAsLdCZlpUo-H": {
     "title": "EditText",
@@ -230,13 +236,25 @@
   },
   "Mtx0bY0drmaTw8sCM5YTl": {
     "title": "Dialogs",
-    "description": "",
-    "links": []
+    "description": "A `DialogFragment` is a special fragment subclass that is designed for creating and hosting dialogs. Although you don't need to host your **dialog** within a fragment, doing so lets the `FragmentManager` manage the state of the dialog and automatically restore the dialog when a configuration change occurs. Learn more from the following resources:",
+    "links": [
+      {
+        "title": "Android Developers: Dialogs",
+        "url": "https://developer.android.com/guide/fragments/dialogs",
+        "type": "article"
+      }
+    ]
   },
   "WhfzFOUpm0DFEj7Oeq21R": {
     "title": "Buttons",
-    "description": "",
-    "links": []
+    "description": "A `button` consists of text or an icon, or both, that communicates what action occurs when the user taps it.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Android Developers: Button",
+        "url": "https://developer.android.com/develop/ui/views/components/button",
+        "type": "article"
+      }
+    ]
   },
   "BVgO9n7tGlVdiS72-hFSd": {
     "title": "Toast",
@@ -306,18 +324,40 @@
   },
   "pSU-NZtjBh-u0WKTYfjk_": {
     "title": "MVVM",
-    "description": "",
-    "links": []
+    "description": "The `Model-View-ViewModel` (MVVM) pattern is a software architectural pattern commonly used in UI development. It is designed to separate the concerns of an application, making the code more modular, testable, and maintainable.\n\nComponents:\n\n*   `Model`: Refers either to a domain model, which represents real state content (an object-oriented approach), or to the data access layer, which represents content.\n*   `View`: The view is the structure, layout, and appearance of what a user sees on the screen.\n*   `View model`: The view model is an abstraction of the view exposing public properties and commands. The view model has been described as a state of the data in the model.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android Developers: View Model",
+        "url": "https://developer.android.com/topic/libraries/architecture/viewmodel",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
+        "type": "article"
+      }
+    ]
   },
   "aF_xFIqTjQbENtC7pkXvJ": {
     "title": "MVP",
-    "description": "",
+    "description": "The MVP `Model View Presenter` pattern is a derivative of the well-known MVC `Model View Controller` pattern and is one of the most popular patterns for organizing the presentation layer in Android applications.\n\nMVP is divided into three components:\n\n*   `Model`: Responsible for managing the data input to the app. This can often be an Interactor or UseCase, handling the business logic and data operations.\n*   `View`: Takes care of updating the graphical part of the application. It acts as a passive view, only receiving data and requesting actions to be performed.\n*   `Presenter`: Handles all the logic related to the graphical interface that the View requests. It provides the View with the data it needs to display on the screen.\n\nThis structure helps to create a clear separation of concerns, making your codebase more modular and easier to maintain.",
     "links": []
   },
   "w1A6wPKSd3Yh2luuHV-aE": {
     "title": "MVC",
-    "description": "",
-    "links": []
+    "description": "MVC or `Model View Controller` is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected components.\n\nComponents:\n\n*   `Model`: The internal representations of information. This can often be an Interactor or UseCase\n*   `View`: The interface that presents information to and accepts it from the user\n*   `Controller`: The controller contains logic that updates the model and/or view in response to input from the users of the app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MVC",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/MVC",
+        "type": "article"
+      },
+      {
+        "title": "Model–view–controller",
+        "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
+        "type": "article"
+      }
+    ]
   },
   "ZF5XgO7I_J9928bD3CVXo": {
     "title": "Repository Pattern",
