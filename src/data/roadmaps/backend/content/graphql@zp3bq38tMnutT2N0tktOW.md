@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 
 - [@official@GraphQL Official Website](https://graphql.org/)
 - [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)
+- [@video@Tutorial - GraphQL Explained in 100 Seconds](https://www.youtube.com/watch?v=eIQh02xuVw4)
