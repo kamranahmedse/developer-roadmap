@@ -1,8 +1,11 @@
-import { X } from 'lucide-react';
+import { CheckIcon, CircleDashed, X } from 'lucide-react';
 import { Modal } from '../Modal';
-import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent, type ReactNode } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/http';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
+import { cn } from '../../lib/classname.ts';
+import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
@@ -36,6 +39,10 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       setError('');
       setSuccessMessage('');
 
+      if (!repoUrl) {
+        throw new Error('Repository URL is required');
+      }
+
       const repoUrlParts = repoUrl
         .replace(/https?:\/\/(www\.)?github\.com/, '')
         .split('/');
@@ -51,9 +58,10 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       const allContentsUrl = `${mainApiUrl}/contents`;
       const allContentsResponse = await fetch(allContentsUrl);
       if (!allContentsResponse.ok) {
-        const errorData = await allContentsResponse.json();
-        if (errorData?.status === 404) {
-          throw new Error('Repository not found');
+        if (allContentsResponse?.status === 404) {
+          throw new Error(
+            'Repository not found. Make sure it exists and is public.',
+          );
         }
 
         throw new Error('Failed to fetch repository contents');
@@ -108,21 +116,47 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
     }
   };
 
+  const verificationChecks = {
+    valid_url: {
+      status: 'pending',
+      message: 'URL must point to a public GitHub repository',
+    },
+    valid_repo: {
+      status: 'pending',
+      message: 'Repository must contain a readme file',
+    },
+    valid_readme: {
+      status: 'pending',
+      message: 'Readme file must contain the project URL',
+    },
+  };
+
   return (
     <Modal onClose={onClose} bodyClassName="h-auto p-4">
-      <h2 className="mb-0.5 text-xl font-semibold">
-        Submit Link to the GitHub repository
+      <h2 className="mb-2 flex items-center gap-2.5 text-2xl font-semibold">
+        <GitHubIcon className="h-6 w-6 text-black" /> Submit Solution URL
       </h2>
-      <p className="text-balance text-sm text-gray-500">
-        Make sure to have a readme file in your project repository containing
-        the link to this project page.
+      <p className="text-sm text-gray-500">
+        Submit the URL of your GitHub repository with the solution.
       </p>
+
+      <div className="my-4 flex flex-col gap-1">
+        <SubmissionRequirement status="pending">
+          URL must point to a public GitHub repository
+        </SubmissionRequirement>
+        <SubmissionRequirement status="pending">
+          Repository must contain a README file
+        </SubmissionRequirement>
+        <SubmissionRequirement status="pending">
+          README file must contain the project URL
+        </SubmissionRequirement>
+      </div>
 
       <form className="mt-4" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="w-full rounded-lg border border-gray-300 p-2 focus:border-gray-500 focus:outline-none"
-          placeholder="https://github.com/kamranahmedse/developer-roadmap"
+          className="w-full rounded-lg border border-gray-300 p-2 focus:border-gray-500 focus:outline-none text-sm"
+          placeholder="https://github.com/you/solution-repo"
           value={repoUrl}
           onChange={(e) => setRepoUrl(e.target.value)}
         />
@@ -142,7 +176,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
           className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50"
           disabled={isLoading}
         >
-          {isLoading ? 'Verifying...' : 'Verify'}
+          {isLoading ? 'Verifying...' : 'Verify Submission'}
         </button>
       </form>
 

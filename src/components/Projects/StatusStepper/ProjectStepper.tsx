@@ -5,12 +5,12 @@ import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
 import { StepperAction } from './StepperAction.tsx';
 import { StepperStepSeparator } from './StepperStepSeparator.tsx';
 import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet, httpPost } from '../../../lib/http.ts';
+import { httpGet } from '../../../lib/http.ts';
 import { StartProjectModal } from '../StartProjectModal.tsx';
-import { pageProgressMessage } from '../../../stores/page.ts';
 import { getRelativeTimeString } from '../../../lib/date.ts';
 import { isLoggedIn } from '../../../lib/jwt.ts';
 import { showLoginPopup } from '../../../lib/popup.ts';
+import { SubmitProjectModal } from '../SubmitProjectModal.tsx';
 
 type ProjectStatusResponse = {
   id?: string;
@@ -34,6 +34,8 @@ export function ProjectStepper(props: ProjectStepperProps) {
   const isSticky = useStickyStuck(stickyElRef, 8);
 
   const [isStartingProject, setIsStartingProject] = useState(false);
+  const [isSubmittingProject, setIsSubmittingProject] = useState(false);
+
   const [error, setError] = useState<string | null>(null);
   const [activeStep, setActiveStep] = useState<number>(0);
   const [isLoadingStatus, setIsLoadingStatus] = useState(true);
@@ -86,6 +88,24 @@ export function ProjectStepper(props: ProjectStepperProps) {
         },
       )}
     >
+      {isSubmittingProject && (
+        <SubmitProjectModal
+          onClose={() => setIsSubmittingProject(false)}
+          projectId={projectId}
+          onSubmit={(response) => {
+            const { repositoryUrl, submittedAt } = response;
+
+            setProjectStatus({
+              ...projectStatus,
+              repositoryUrl,
+              submittedAt,
+            });
+
+            setActiveStep(2);
+          }}
+          repositoryUrl={projectStatus.repositoryUrl}
+        />
+      )}
       {isStartingProject && (
         <StartProjectModal
           projectId={projectId}
@@ -169,6 +189,14 @@ export function ProjectStepper(props: ProjectStepperProps) {
           isActive={activeStep === 1}
           isCompleted={activeStep > 1}
           icon={Send}
+          onClick={() => {
+            if (!isLoggedIn()) {
+              showLoginPopup();
+              return;
+            }
+
+            setIsSubmittingProject(true);
+          }}
           text={activeStep > 1 ? 'Submitted' : 'Submit Solution'}
           number={2}
         />

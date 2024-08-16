@@ -38,13 +38,6 @@ export function StartProjectModal(props: StartProjectModalProps) {
 
   const projectUrl = `${import.meta.env.PUBLIC_APP_URL}/projects/${projectId}`;
 
-  const projectTips = [
-    'Create a repository on GitHub',
-    'Complete the task and push it to GitHub',
-    'Add a readme file with instructions on how to run the project',
-    'Submit your project once you are done to get feedback from the community',
-  ];
-
   const formattedStartedAt = startedAt ? getRelativeTimeString(startedAt) : '';
 
   async function handleStartProject() {
