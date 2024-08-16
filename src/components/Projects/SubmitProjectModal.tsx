@@ -1,10 +1,8 @@
-import { CheckIcon, CircleDashed, CopyIcon, X } from 'lucide-react';
+import { CheckIcon, CopyIcon, X } from 'lucide-react';
 import { Modal } from '../Modal';
-import { useState, type FormEvent, type ReactNode } from 'react';
-import { useToast } from '../../hooks/use-toast';
+import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { cn } from '../../lib/classname.ts';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 
@@ -165,6 +163,12 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         throw new Error('Add the project page URL to the readme file');
       }
 
+      setVerificationChecks({
+        repositoryExists: 'success',
+        readmeExists: 'success',
+        projectUrlExists: 'success',
+      });
+
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
       const { response: submitResponse, error } =
         await httpPost<SubmitProjectResponse>(submitProjectUrl, {
@@ -172,10 +176,12 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         });
 
       if (error || !submitResponse) {
-        throw new Error(error?.message || 'Failed to submit project');
+        throw new Error(
+          error?.message || 'Error submitting project. Please try again!',
+        );
       }
 
-      setSuccessMessage('Repository verified successfully');
+      setSuccessMessage('Solution submitted successfully!');
       setIsLoading(false);
 
       onSubmit(submitResponse);
@@ -196,13 +202,22 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       </p>
 
       <div className="my-4 flex flex-col gap-1">
-        <SubmissionRequirement status={verificationChecks.repositoryExists}>
+        <SubmissionRequirement
+          isLoading={isLoading}
+          status={verificationChecks.repositoryExists}
+        >
           URL must point to a public GitHub repository
         </SubmissionRequirement>
-        <SubmissionRequirement status={verificationChecks.readmeExists}>
+        <SubmissionRequirement
+          isLoading={isLoading}
+          status={verificationChecks.readmeExists}
+        >
           Repository must contain a README file
         </SubmissionRequirement>
-        <SubmissionRequirement status={verificationChecks.projectUrlExists}>
+        <SubmissionRequirement
+          isLoading={isLoading}
+          status={verificationChecks.projectUrlExists}
+        >
           README file must contain the{' '}
           <button
             className={
@@ -243,6 +258,13 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
           onChange={(e) => setRepoUrl(e.target.value)}
         />
 
+        <button
+          type="submit"
+          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50"
+          disabled={isLoading}
+        >
+          {isLoading ? 'Verifying...' : 'Verify and Submit'}
+        </button>
         {error && (
           <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
         )}
@@ -252,14 +274,6 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
             {successMessage}
           </p>
         )}
-
-        <button
-          type="submit"
-          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50"
-          disabled={isLoading}
-        >
-          {isLoading ? 'Verifying...' : 'Verify Submission'}
-        </button>
       </form>
 
       <button

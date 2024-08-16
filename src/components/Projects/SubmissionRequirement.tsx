@@ -1,14 +1,16 @@
 import type { ReactNode } from 'react';
 import { cn } from '../../lib/classname.ts';
-import {CheckIcon, CircleDashed, X} from 'lucide-react';
+import { CheckIcon, CircleDashed, Loader, Loader2, X } from 'lucide-react';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
 
 type SubmissionRequirementProps = {
   status: 'pending' | 'success' | 'error';
   children: ReactNode;
+  isLoading?: boolean;
 };
 
 export function SubmissionRequirement(props: SubmissionRequirementProps) {
-  const { status, children } = props;
+  const { status, isLoading = false, children } = props;
 
   return (
     <div
@@ -18,12 +20,23 @@ export function SubmissionRequirement(props: SubmissionRequirementProps) {
         'bg-red-200': status === 'error',
       })}
     >
-      {status === 'pending' ? (
-        <CircleDashed className="h-4 w-4 text-gray-400" />
-      ) : status === 'success' ? (
-        <CheckIcon className="h-4 w-4 text-green-800" />
-      ) : (
-        <X className="h-4 w-4 text-yellow-800" />
+      {!isLoading && (
+        <>
+          {status === 'pending' ? (
+            <CircleDashed className="h-4 w-4 text-gray-400" />
+          ) : status === 'success' ? (
+            <CheckIcon className="h-4 w-4 text-green-800" />
+          ) : (
+            <X className="h-4 w-4 text-yellow-800" />
+          )}
+        </>
+      )}
+
+      {isLoading && (
+        <Loader2
+          className={'h-4 w-4 animate-spin text-gray-400'}
+          strokeWidth={3}
+        />
       )}
       <span className="ml-2">{children}</span>
     </div>
