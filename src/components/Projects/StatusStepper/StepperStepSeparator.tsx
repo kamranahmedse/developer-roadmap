@@ -9,7 +9,7 @@ export function StepperStepSeparator(props: StepperStepSeparatorProps) {
 
   return (
     <hr
-      className={cn('flex-grow border border-gray-300', {
+      className={cn('flex-grow hidden sm:flex border border-gray-300', {
         'border-green-500': isActive,
       })}
     />

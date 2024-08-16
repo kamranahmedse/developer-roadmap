@@ -82,9 +82,9 @@ export function ProjectStepper(props: ProjectStepperProps) {
     <div
       ref={stickyElRef}
       className={cn(
-        'sticky top-0 my-5 overflow-hidden rounded-lg border bg-white transition-all',
+        'relative sm:sticky top-0 my-5 -mx-4 sm:mx-0 overflow-hidden rounded-none border-x-0 sm:border-x sm:rounded-lg border bg-white transition-all',
         {
-          '-mx-5 rounded-none border-x-0 border-t-0 bg-gray-50': isSticky,
+          'sm:-mx-5 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-gray-50': isSticky,
         },
       )}
     >
@@ -183,7 +183,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
         )}
       </div>
 
-      <div className="flex min-h-[60px] items-center justify-between gap-3 px-4">
+      <div className="flex flex-col sm:flex-row min-h-[60px] items-start sm:items-center justify-between gap-2 sm:gap-3 px-4 py-4 sm:py-0">
         <StepperAction
           isActive={activeStep === 0}
           isCompleted={activeStep > 0}
