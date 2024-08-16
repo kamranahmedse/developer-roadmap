@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { ChevronDown, Flame, X } from 'lucide-react';
+import { Flame, X } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import { cn } from '../../lib/classname';
+import { StreakDay } from './StreakDay';
 
 type StreakResponse = {
   count: number;
@@ -69,7 +69,9 @@ export function AccountStreak(props: AccountStreakProps) {
   const currentCircleCount = Math.min(currentCount, 5) + 1;
   // Adding one day to show the streak they broke
   const leftCircleCount = Math.min(5 - currentCircleCount, previousCount) + 1;
+  // In the maximum case, we will show 10 circles
   const remainingCount = Math.max(0, 10 - leftCircleCount - currentCircleCount);
+  const totalCircles = leftCircleCount + currentCircleCount + remainingCount;
 
   return (
     <div className="relative z-[90] animate-fade-in">
@@ -86,98 +88,70 @@ export function AccountStreak(props: AccountStreakProps) {
       {showDropdown && (
         <div
           ref={dropdownRef}
-          className="absolute right-0 top-full z-50 w-[280px] translate-y-1 rounded-lg border border-gray-200 bg-white text-black shadow-lg"
+          className="absolute right-0 top-full z-50 w-[320px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
-          <div className="p-2">
+          <div className="px-3 py-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-slate-400">
                 Current Streak
-                <span className="ml-2 font-medium text-black">
+                <span className="ml-2 font-medium text-white">
                   {accountStreak?.count || 0}
                 </span>
               </p>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-slate-400">
                 Longest Streak
-                <span className="ml-2 font-medium text-black">
+                <span className="ml-2 font-medium text-white">
                   {accountStreak?.longestCount || 0}
                 </span>
               </p>
             </div>
 
-            <div className="mt-6">
-              <div className="grid grid-cols-10 gap-2">
-                {[...Array(leftCircleCount)].map((_, index) => {
-                  const isLast = index === leftCircleCount - 1;
-                  const dayCount =
-                    previousCount - leftCircleCount + index + 1 + 1;
+            <div className="mt-8">
+              <div className="grid grid-cols-10 gap-1">
+                {Array.from({ length: totalCircles }).map((_, index) => {
+                  let dayCount,
+                    icon,
+                    isPreviousStreakDay,
+                    isCurrentStreakDay,
+                    isRemainingStreakDay,
+                    isToday;
+
+                  if (index < leftCircleCount) {
+                    // Previous streak days
+                    dayCount = previousCount - leftCircleCount + index + 1 + 1;
+                    isPreviousStreakDay = true;
+                    icon =
+                      index === leftCircleCount - 1 ? (
+                        <X className="size-3.5 text-white" />
+                      ) : (
+                        <Flame className="size-3.5 text-white" />
+                      );
+                  } else if (index < leftCircleCount + currentCircleCount) {
+                    // Current streak days
+                    const currentIndex = index - leftCircleCount;
+                    dayCount =
+                      currentCount - currentCircleCount + currentIndex + 1 + 1;
+                    isCurrentStreakDay = true;
+                    isToday = currentIndex === currentCircleCount - 1;
+                    icon = <Flame className="size-3.5 text-white" />;
+                  } else {
+                    // Remaining streak days
+                    const remainingIndex =
+                      index - leftCircleCount - currentCircleCount;
+                    dayCount = currentCount + remainingIndex + 1 + 1;
+                    isRemainingStreakDay = true;
+                  }
 
                   return (
-                    <div
-                      className="flex flex-col items-center justify-center gap-1.5"
-                      key={`left-${index}`}
-                    >
-                      <div
-                        key={index}
-                        className="flex size-5 items-center justify-center rounded-full bg-red-200"
-                      >
-                        {isLast ? (
-                          <X className="size-3 stroke-[2.5px] text-red-600" />
-                        ) : (
-                          <Flame className="size-3 text-red-600" />
-                        )}
-                      </div>
-                      <span className="text-xs text-red-600">{dayCount}</span>
-                    </div>
-                  );
-                })}
-                {[...Array(currentCircleCount)].map((_, index) => {
-                  const dayCount =
-                    currentCount - currentCircleCount + index + 1 + 1;
-                  const isLast = index === currentCircleCount - 1;
-
-                  return (
-                    <div
-                      className="relative flex flex-col items-center justify-center gap-1.5"
-                      key={`current-${index}`}
-                    >
-                      <div
-                        key={index}
-                        className={cn(
-                          'flex size-5 items-center justify-center rounded-full',
-                          isLast
-                            ? 'border-2 border-dashed border-gray-400'
-                            : 'bg-purple-200',
-                        )}
-                      >
-                        {!isLast && (
-                          <Flame className="size-3 text-purple-500" />
-                        )}
-                      </div>
-                      <span className="text-xs text-gray-600">{dayCount}</span>
-                      {isLast && (
-                        <ChevronDown className="absolute bottom-full left-1/2 h-4 w-4 -translate-x-1/2 transform stroke-[2.5px] text-gray-400" />
-                      )}
-                    </div>
-                  );
-                })}
-
-                {[...Array(remainingCount)].map((_, index) => {
-                  const dayCount = currentCount + index + 1 + 1;
-
-                  return (
-                    <div
-                      className="flex flex-col items-center justify-center gap-1.5"
-                      key={`remaining-${index}`}
-                    >
-                      <div
-                        key={index}
-                        className={cn(
-                          'flex size-5 items-center justify-center rounded-full',
-                          'bg-gray-200',
-                        )}
-                      ></div>
-                      <span className="text-xs text-gray-400">{dayCount}</span>
-                    </div>
+                    <StreakDay
+                      key={`streak-${index}`}
+                      dayCount={dayCount}
+                      icon={icon}
+                      isPreviousStreakDay={isPreviousStreakDay}
+                      isCurrentStreakDay={isCurrentStreakDay}
+                      isRemainingStreakDay={isRemainingStreakDay}
+                      isToday={isToday}
+                    />
                   );
                 })}
               </div>
