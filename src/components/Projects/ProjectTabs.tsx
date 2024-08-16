@@ -31,8 +31,8 @@ export function ProjectTabs(props: ProjectTabsProps) {
                 : `/projects/${projectId}/${tab.value}`
             }
             className={cn('relative flex items-center gap-1 p-2', {
-              'font-medium text-black': isActive,
-              'opacity-50 hover:opacity-90': !isActive,
+              'text-black': isActive,
+              'opacity-40 hover:opacity-90': !isActive,
             })}
           >
             {tab.icon && <tab.icon className="mr-1 inline-block h-4 w-4" />}
