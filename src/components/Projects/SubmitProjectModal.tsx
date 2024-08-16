@@ -206,7 +206,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
   return (
     <Modal onClose={onClose} bodyClassName="h-auto p-4">
-      <h2 className="mb-2 flex items-center gap-2.5 text-2xl font-semibold">
+      <h2 className="mb-2 flex items-center gap-2.5 text-xl font-semibold">
         <GitHubIcon className="h-6 w-6 text-black" /> Submit Solution URL
       </h2>
       <p className="text-sm text-gray-500">
@@ -272,7 +272,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
         <button
           type="submit"
-          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50"
+          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50 text-sm"
           disabled={isLoading}
         >
           {isLoading ? 'Verifying...' : 'Verify and Submit'}

@@ -3,7 +3,13 @@ import { useToast } from '../../hooks/use-toast';
 import { httpGet, httpPost } from '../../lib/http';
 import { LoadingSolutions } from './LoadingSolutions';
 import { EmptySolutions } from './EmptySolutions';
-import { ArrowDown, ArrowUp, CalendarCheck } from 'lucide-react';
+import {
+  ArrowDown,
+  ArrowUp,
+  CalendarCheck,
+  ThumbsDown,
+  ThumbsUp,
+} from 'lucide-react';
 import { getRelativeTimeString } from '../../lib/date';
 import { Pagination } from '../Pagination/Pagination';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
@@ -12,6 +18,9 @@ import { cn } from '../../lib/classname';
 import { LeavingRoadmapWarningModal } from './LeavingRoadmapWarningModal';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { CheckIcon } from '../ReactIcons/CheckIcon.tsx';
+import { VoteButton } from './VoteButton.tsx';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -62,6 +71,30 @@ const VISITED_SOLUTIONS_KEY = 'visited-project-solutions';
 type ListProjectSolutionsProps = {
   projectId: string;
 };
+
+const submittedAlternatives = [
+  'submitted their solution',
+  'got it done',
+  'submitted their take',
+  'finished the project',
+  'submitted their work',
+  'completed the project',
+  'got it done',
+  'delivered their project',
+  'handed in their solution',
+  'provided their deliverables',
+  'submitted their approach',
+  'sent in their project',
+  'presented their take',
+  'shared their completed task',
+  'submitted their approach',
+  'completed it',
+  'finalized their solution',
+  'delivered their approach',
+  'turned in their project',
+  'submitted their final draft',
+  'delivered their solution',
+];
 
 export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   const { projectId } = props;
@@ -220,72 +253,72 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
         }}
       />
 
-      <div className="my-4 flex flex-col gap-2">
-        {solutions?.data.map((solution) => {
-          const repoUrlParts = solution?.repositoryUrl
-            ?.replace(/https?:\/\/(www\.)?github\.com/, '')
-            .split('/');
-          const username = repoUrlParts?.[1];
-          const repoName = repoUrlParts?.[2];
-
+      <div className="my-4 flex flex-col divide-y divide-gray-100">
+        {solutions?.data.map((solution, counter) => {
           const isVisited = alreadyVisitedSolutions[solution._id!];
+          const avatar = solution.user.avatar || '';
 
           return (
             <div
               key={solution._id}
-              className="flex items-center justify-between gap-2 rounded-md bg-gray-100 p-2.5"
+              className="group flex items-center justify-between py-1 text-sm text-gray-500"
             >
-              <div>
+              <div className="flex items-center gap-1.5">
+                <img
+                  src={
+                    avatar
+                      ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+                      : '/images/default-avatar.png'
+                  }
+                  alt={solution.user.name}
+                  className="mr-0.5 h-7 w-7 rounded-full"
+                />
+                <span className="font-medium text-black">
+                  {solution.user.name}
+                </span>
+                {submittedAlternatives[
+                  counter % submittedAlternatives.length
+                ] || 'submitted their solution'}{' '}
+                <span className="font-medium text-black">
+                  {getRelativeTimeString(solution?.submittedAt!)}
+                </span>
+              </div>
+
+              <div className="5 flex items-center gap-1">
+                <span className="flex items-center overflow-hidden rounded-full border">
+                  <VoteButton
+                    icon={ThumbsUp}
+                    isActive={solution?.voteType === 'upvote'}
+                    count={solution.upvotes || 0}
+                    onClick={() => {
+                      handleSubmitVote(solution._id!, 'upvote');
+                    }}
+                  />
+
+                  <VoteButton
+                    icon={ThumbsDown}
+                    isActive={solution?.voteType === 'downvote'}
+                    count={solution.downvotes || 0}
+                    onClick={() => {
+                      handleSubmitVote(solution._id!, 'downvote');
+                    }}
+                  />
+                </span>
+
                 <a
-                  href={solution.repositoryUrl}
-                  target="_blank"
-                  className="font-medium underline underline-offset-2"
+                  className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
                   onClick={(e) => {
                     if (!isVisited) {
                       e.preventDefault();
                       setShowLeavingRoadmapModal(solution);
                     }
                   }}
+                  target="_blank"
+                  href={solution.repositoryUrl}
                 >
-                  {username}/{repoName}
+                  <GitHubIcon className="h-4 w-4 text-current" />
+                  Visit Solution
                 </a>
-
-                <div className="mt-2 flex items-center">
-                  <button
-                    className={cn(
-                      'flex items-center gap-1 text-sm text-gray-500 hover:text-black',
-                      solution?.voteType === 'upvote' &&
-                        'text-orange-600 hover:text-orange-700',
-                    )}
-                    disabled={solution?.voteType === 'upvote'}
-                    onClick={() => {
-                      handleSubmitVote(solution._id!, 'upvote');
-                    }}
-                  >
-                    <ArrowUp className="size-3.5 stroke-[2.5px]" />
-                    {solution.upvotes}
-                  </button>
-                  <span className="mx-2">&middot;</span>
-                  <button
-                    className={cn(
-                      'flex items-center gap-1 text-sm text-gray-500 hover:text-black',
-                      solution?.voteType === 'downvote' &&
-                        'text-orange-600 hover:text-orange-700',
-                    )}
-                    disabled={solution?.voteType === 'downvote'}
-                    onClick={() => {
-                      handleSubmitVote(solution._id!, 'downvote');
-                    }}
-                  >
-                    <ArrowDown className="size-3.5 stroke-[2.5px]" />
-                    {solution.downvotes}
-                  </button>
-                  <span className="mx-2">&middot;</span>
-                  <span className="flex items-center gap-1 text-sm text-gray-500">
-                    <CalendarCheck className="size-3.5 stroke-[2.5px]" />
-                    {getRelativeTimeString(solution?.submittedAt!)}
-                  </span>
-                </div>
               </div>
             </div>
           );

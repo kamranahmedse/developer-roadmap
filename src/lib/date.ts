@@ -33,11 +33,15 @@ export function getRelativeTimeString(
     } else {
       relativeTime = rtf.format(-diffInDays, 'day');
     }
+  } else if (diffInDays < 30) {
+    relativeTime = rtf.format(-Math.round(diffInDays / 7), 'week');
+  } else if (diffInDays < 365) {
+    relativeTime = rtf.format(-Math.round(diffInDays / 30), 'month');
   } else {
     if (isTimed) {
       relativeTime = dayjs(date).format('MMM D, YYYY h:mm A');
     } else {
-      relativeTime = rtf.format(-Math.round(diffInDays / 7), 'week');
+      relativeTime = dayjs(date).format('MMM D, YYYY');
     }
   }
 
