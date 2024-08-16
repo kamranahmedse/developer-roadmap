@@ -389,6 +389,7 @@ export function refreshProgressCounters() {
     '.clickable-group',
     '[data-type="todo"]',
     '[data-type="topic"]',
+    '[data-type="checklist-item"]',
     '[data-type="subtopic"]',
     '.react-flow__node-topic',
     '.react-flow__node-subtopic',

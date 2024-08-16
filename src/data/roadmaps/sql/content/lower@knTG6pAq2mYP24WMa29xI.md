@@ -1,38 +1,7 @@
 # LOWER
 
-`LOWER` is a built-in function in SQL used to return all uppercase character(s) in a string to lowercase. It can be quite useful when performing case-insensitive comparisons or searches in your queries.
+The `LOWER` function in SQL converts all characters in a specified string to lowercase. It's a string manipulation function that takes a single argument (the input string) and returns the same string with all alphabetic characters converted to their lowercase equivalents. `LOWER` is useful for standardizing data, making case-insensitive comparisons, or formatting output. It doesn't affect non-alphabetic characters or numbers in the string. `LOWER` is commonly used in data cleaning, search operations, and ensuring consistent data representation across different systems.
 
-## Syntax:
+Learn more from the following resources:
 
-The basic syntax for `LOWER` in SQL is:
-
-```
-LOWER(string)
-```
-
-Here, 'string' can be a literal string or a column of a table, and the function will return the string with all alphabetic characters converted to lowercase.
-
-## Example:
-
-Let's take a look at a very basic example. Assuming we have the following string "SQL is BAE!" and we want to convert it to lower case.
-
-```sql
-SELECT LOWER('SQL is BAE!') AS LowerCaseString;
-```
-
-Output:
-```sql
-lowercasestring
-----------------
-sql is bae!
-```
-
-If you are using a column from a table, let's say we have a table 'students' with a column 'Name' and we want to convert all the entries in that column to lowercase:
-
-```sql
-SELECT LOWER(Name) AS LowerCaseName FROM students;
-```
-
-Here, the LOWER function will return all the names from the 'Name' column in the 'students' table in their lowercase forms.
-
-Remember, the `LOWER` function doesn't affect the numbers and special characters in the input string, it only converts uppercase alphabetical characters to lowercase.
+- [@article@How to change text to lowercase in SQL](https://learnsql.com/cookbook/how-to-change-text-to-lowercase-in-sql/)

@@ -1,29 +1,7 @@
 # COUNT
 
-`COUNT` is a SQL function that returns the number of rows that match a specified criteria. Essentially, `COUNT` function is used when you need to know the count of a record in a certain table's column.
+`COUNT` is an SQL aggregate function that returns the number of rows that match the specified criteria. It can be used to count all rows in a table, non-null values in a specific column, or rows that meet certain conditions when combined with a `WHERE` clause. `COUNT` is often used in data analysis, reporting, and performance optimization queries to determine the size of datasets or the frequency of particular values.
 
-There are two types of count function; `COUNT(*)` and `COUNT(column)`.
+Learn more from the following resources:
 
-- `COUNT(*)` counts all the rows in the target table whether columns contain null values or not.
-
-```sql
-SELECT COUNT(*) FROM table_name;
-```
-
-- `COUNT(column)` counts the rows in the column of a table excluding null. 
-
-```sql
-SELECT COUNT(column_name) FROM table_name;
-```
-
-You may also use `COUNT()` in conjunction with `GROUP BY` to return the count of rows within each group.
-
-A typical example would be:
-
-```sql
-SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
-```
-
-Here, `column_name` is the name of the column based on which the rows will be grouped. This query will return the count of rows in each group of `column_name`.
-
-By understanding how to use the `COUNT()` function, you can extract more meaningful data from your tables, and perform analytics and generate reports based on the counts of certain attributes in your database.
+- [@article@COUNT](https://www.w3schools.com/sql/sql_count.asp)

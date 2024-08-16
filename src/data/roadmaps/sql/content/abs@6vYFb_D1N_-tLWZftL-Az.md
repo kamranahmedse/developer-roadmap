@@ -1,38 +1,8 @@
 # ABS
 
-The `ABS` function in SQL is used to return the absolute value of a number, i.e., the numeric value without its sign. The function takes a single argument which must be a number (integer, float, etc.) and returns the absolute, non-negative equivalent.
+The `ABS()` function in SQL returns the absolute value of a given numeric expression, meaning it converts any negative number to its positive equivalent while leaving positive numbers unchanged. This function is useful when you need to ensure that the result of a calculation or a value stored in a database column is non-negative, such as when calculating distances, differences, or other metrics where only positive values make sense. For example, `SELECT ABS(-5)` would return `5`.
 
-The general syntax for the ABS function is as follows: 
+Learn more from the following resources:
 
-```sql
-ABS(expression)
-```
-
-In the syntax above, the `expression` is required and can either be a literal number, a column name, the result of another function, or any valid SQL expression that resolves to a numeric value.
-
-## Examples
-
-Consider a database table `Orders`:
-
-| OrderID | Product | Quantity |
-|---------|---------|----------|
-| 1       | Apple   | -5       |
-| 2       | Banana  | 10       |
-| 3       | Cherry  | -15      |
-
-If you want to get the absolute value of the 'Quantity' column, you could use the `ABS`function like this:
-
-```sql
-SELECT OrderID, Product, ABS(Quantity) as 'Absolute Quantity'
-FROM Orders;
-```
-
-The output will be:
-
-| OrderID | Product | Absolute Quantity |
-|---------|---------|-------------------|
-| 1       | Apple   | 5                 |
-| 2       | Banana  | 10                |
-| 3       | Cherry  | 15                |
-
-As you can see, the negative values in the 'Quantity' column have been converted to positive values by the `ABS` function.
+- [@article@How to compute an absolute value in SQL](https://www.airops.com/sql-guide/how-to-compute-an-absolute-value-in-sql)
+- [@article@ABS](https://www.w3schools.com/sql/func_sqlserver_abs.asp)

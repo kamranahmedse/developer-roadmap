@@ -42,4 +42,6 @@ Use a vulnerability scanner to assess the security posture of your SQL.
 
 SQL injection can be reduced by using parameterized queries or prepared statements.
 
-These practices can significantly improve your SQL security posture. However, remember that security is not a one-time effort, but a continuous process. Regular assessment and necessary updates are key.  Remember to keep an eye on security news concerning SQL Server and regularly check for new security risks or vulnerabilities.
+Learn more from the following resources:
+
+- [@article@What is database security?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-database-security)

@@ -1,49 +1,7 @@
 # Data Definition Language (DDL)
 
-Data Definition Language (DDL) is a subset of SQL. Its primary function is to create, modify, and delete database structures but not data. The commands in DDL are:
+Data Definition Language (DDL) is a subset of SQL used to define and manage the structure of database objects. DDL commands include `CREATE`, `ALTER`, `DROP`, and `TRUNCATE`, which are used to create, modify, delete, and empty database structures such as tables, indexes, views, and schemas. These commands allow database administrators and developers to define the database schema, set up relationships between tables, and manage the overall structure of the database. DDL statements typically result in immediate changes to the database structure and can affect existing data.
 
-1. `CREATE`: This command is used to create the database or its objects (like table, index, function, views, store procedure, and triggers).
+Learn more from the following resources:
 
-    ```sql
-    CREATE TABLE table_name (
-    column1 data_type(size),
-    column2 data_type(size),
-    ...
-    );
-    ```
-
-2. `DROP`: This command is used to delete an existing database or table.
-
-    ```sql
-    DROP TABLE table_name;
-    ```
-
-3. `ALTER`: This is used to alter the structure of the database. It is used to add, delete/drop or modify columns in an existing table. 
-
-     ```sql
-     ALTER TABLE table_name ADD column_name datatype;
-     ALTER TABLE table_name DROP COLUMN column_name;
-     ALTER TABLE table_name MODIFY COLUMN column_name datatype(size);
-    ```
-
-4. `TRUNCATE`: This is used to remove all records from a table, including all spaces allocated for the records which are removed.
-
-    ```sql
-    TRUNCATE TABLE table_name;
-    ```
-
-5. `RENAME`: This is used to rename an object in the database.
-
-    ```sql
-    -- To rename a table
-    ALTER TABLE table_name
-    RENAME TO new_table_name;
-    
-    -- To rename a column
-    ALTER TABLE table_name
-    RENAME COLUMN old_column_name TO new_column_name;
-    ```
-
-Remember: In DDL operations, `COMMIT` and `ROLLBACK` statement cannot be performed because the MySQL engine automatically commits the changes.
-
-Remember to replace `table_name`, `column_name`, `datatype(size)`, `old_table_name`, and `new_table_name` in the examples above with your actual table names, column names, data types and sizes, and the old or new table names you want to specify.
+- [@article@Data Definition Language (DDL)](https://docs.getdbt.com/terms/ddl)
