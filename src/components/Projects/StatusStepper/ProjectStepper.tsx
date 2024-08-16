@@ -5,7 +5,12 @@ import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
 import { StepperAction } from './StepperAction.tsx';
 import { StepperStepSeparator } from './StepperStepSeparator.tsx';
 import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet } from '../../../lib/http.ts';
+import { httpGet, httpPost } from '../../../lib/http.ts';
+import { StartProjectModal } from '../StartProjectModal.tsx';
+import { pageProgressMessage } from '../../../stores/page.ts';
+import { getRelativeTimeString } from '../../../lib/date.ts';
+import { isLoggedIn } from '../../../lib/jwt.ts';
+import { showLoginPopup } from '../../../lib/popup.ts';
 
 type ProjectStatusResponse = {
   id?: string;
@@ -28,6 +33,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
   const stickyElRef = useRef<HTMLDivElement>(null);
   const isSticky = useStickyStuck(stickyElRef, 8);
 
+  const [isStartingProject, setIsStartingProject] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [activeStep, setActiveStep] = useState<number>(0);
   const [isLoadingStatus, setIsLoadingStatus] = useState(true);
@@ -80,6 +86,26 @@ export function ProjectStepper(props: ProjectStepperProps) {
         },
       )}
     >
+      {isStartingProject && (
+        <StartProjectModal
+          projectId={projectId}
+          onStarted={(startedAt) => {
+            setProjectStatus({
+              ...projectStatus,
+              startedAt,
+            });
+            setActiveStep(1);
+          }}
+          startedAt={projectStatus?.startedAt}
+          onClose={() => setIsStartingProject(false)}
+        />
+      )}
+
+      {error && (
+        <div className="absolute inset-0 bg-red-100 p-2 text-sm text-red-500">
+          {error}
+        </div>
+      )}
       {isLoadingStatus && (
         <div className={cn('striped-loader absolute inset-0 z-10 bg-white')} />
       )}
@@ -91,7 +117,35 @@ export function ProjectStepper(props: ProjectStepperProps) {
           },
         )}
       >
-        Start building, submit solution and get feedback from the community.
+        {activeStep === 0 && (
+          <>
+            Start building, submit solution and get feedback from the community.
+          </>
+        )}
+        {activeStep === 1 && (
+          <>
+            Started working{' '}
+            <span
+              className={cn('font-medium text-gray-800', {
+                'text-purple-200': isSticky,
+              })}
+            >
+              {getRelativeTimeString(projectStatus.startedAt!)}
+            </span>
+            . Follow{' '}
+            <button
+              className={cn('underline underline-offset-2 hover:text-black', {
+                'text-purple-200 hover:text-white': isSticky,
+              })}
+              onClick={() => {
+                setIsStartingProject(true);
+              }}
+            >
+              these tips
+            </button>{' '}
+            to get most out of it.
+          </>
+        )}
       </div>
 
       <div className="flex min-h-[60px] items-center justify-between gap-3 px-4">
@@ -101,6 +155,14 @@ export function ProjectStepper(props: ProjectStepperProps) {
           icon={Play}
           text={activeStep > 0 ? 'Started Working' : 'Start Working'}
           number={1}
+          onClick={() => {
+            if (!isLoggedIn()) {
+              showLoginPopup();
+              return;
+            }
+
+            setIsStartingProject(true);
+          }}
         />
         <StepperStepSeparator isActive={activeStep > 0} />
         <StepperAction

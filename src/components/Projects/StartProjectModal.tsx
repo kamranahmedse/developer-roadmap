@@ -1,57 +1,175 @@
-import { X } from 'lucide-react';
+import {
+  Check,
+  CheckCircle,
+  CheckCircle2,
+  CopyCheck,
+  CopyIcon,
+  ServerCrash,
+  X,
+} from 'lucide-react';
 import { Modal } from '../Modal';
 import { getRelativeTimeString } from '../../lib/date';
+import { useEffect, useState } from 'react';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { httpPost } from '../../lib/http.ts';
+import { ErrorIcon } from '../ReactIcons/ErrorIcon.tsx';
+import { CheckIcon } from '../ReactIcons/CheckIcon.tsx';
+import { useCopyText } from '../../hooks/use-copy-text.ts';
+
+type StepLabelProps = {
+  label: string;
+};
+
+function StepLabel(props: StepLabelProps) {
+  const { label } = props;
+
+  return (
+    <span className="flex-shrink-0 rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-600">
+      {label}
+    </span>
+  );
+}
 
 type StartProjectModalProps = {
+  projectId: string;
   onClose: () => void;
   startedAt?: Date;
+  onStarted: (startedAt: Date) => void;
 };
 
 export function StartProjectModal(props: StartProjectModalProps) {
-  const { onClose, startedAt } = props;
+  const { onClose, startedAt, onStarted, projectId } = props;
+
+  const [isStartingProject, setIsStartingProject] = useState(true);
+  const [error, setError] = useState<string | null>();
+
+  const { isCopied, copyText } = useCopyText();
+
+  const projectUrl = `${import.meta.env.PUBLIC_APP_URL}/projects/${projectId}`;
 
   const projectTips = [
     'Create a repository on GitHub',
-    'Develop the required functionality',
-    'Add a readme and make sure to link to the project page',
-    'Once you are done, make sure to come back and submit your solution to get feedback from others.',
-    'Feel free to join our discord and ask for help if you get stuck.',
+    'Complete the task and push it to GitHub',
+    'Add a readme file with instructions on how to run the project',
+    'Submit your project once you are done to get feedback from the community',
   ];
 
   const formattedStartedAt = startedAt ? getRelativeTimeString(startedAt) : '';
 
+  async function handleStartProject() {
+    if (!projectId || startedAt) {
+      return;
+    }
+
+    setIsStartingProject(true);
+    const { response, error } = await httpPost<{
+      startedAt: Date;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-start-project/${projectId}`, {});
+
+    if (error || !response) {
+      setError(error?.message || 'Failed to start project');
+      setIsStartingProject(false);
+      return;
+    }
+
+    onStarted(response.startedAt);
+  }
+
+  useEffect(() => {
+    handleStartProject().finally(() => setIsStartingProject(false));
+  }, []);
+
+  if (error) {
+    return (
+      <Modal onClose={onClose} bodyClassName="h-auto text-red-500">
+        <div className="flex flex-col items-center justify-center gap-2 pb-10 pt-12">
+          <ServerCrash className={'h-6 w-6'} />
+          <p className="font-medium">{error}</p>
+        </div>
+      </Modal>
+    );
+  }
+
+  if (isStartingProject) {
+    return (
+      <Modal onClose={onClose} bodyClassName="h-auto">
+        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
+          <Spinner className={'h-6 w-6'} isDualRing={false} />
+          <p className="font-medium">Starting project ..</p>
+        </div>
+      </Modal>
+    );
+  }
+
   return (
-    <Modal onClose={onClose} bodyClassName="h-auto p-4">
-      <h2 className="mb-0.5 text-xl font-semibold">
-        Started working...
-        {formattedStartedAt ? (
-          <span className="ml-1 rounded-md border border-yellow-400 bg-yellow-200 px-1 py-0.5 text-sm font-normal leading-none text-yellow-800">
-            {formattedStartedAt}
-          </span>
-        ) : null}
+    <Modal
+      onClose={onClose}
+      bodyClassName="h-auto p-4 relative overflow-hidden"
+      wrapperClassName={'max-w-md'}
+    >
+      <p className="-mx-4 -mt-4 flex items-center bg-yellow-200 px-3 py-2 text-sm text-yellow-900">
+        <CheckIcon additionalClasses="mr-1.5 w-[15px] text-yellow-800 h-[15px]" />
+        <span className="mr-1.5 font-normal">Project started</span>{' '}
+        <span className="font-bold">{formattedStartedAt}</span>
+      </p>
+      <h2 className="mb-0.5 mt-5 text-2xl font-semibold text-gray-800">
+        Start Building
       </h2>
-      <p className="text-balance text-sm text-gray-500">
-        You have started working on the project. Here are some tips to get most
-        out of it.
+      <p className="text-gray-700">
+        Follow these steps to complete the project.
       </p>
 
-      <ul className="ml-4 mt-4 list-disc space-y-1.5 marker:text-gray-400">
-        {projectTips.map((tip) => {
-          return (
-            <li key={tip} className="text-balance">
-              {tip}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="my-5 space-y-1.5 marker:text-gray-400">
+        <div className="flex flex-row items-start gap-2">
+          <StepLabel label={'1'} />
+          <p className="text-gray-700">Create a repository on GitHub</p>
+        </div>
+        <div className="flex flex-row items-start gap-2">
+          <StepLabel label={'2'} />
+          <p className="text-gray-700">
+            Complete the task and push it to GitHub
+          </p>
+        </div>
+        <div className="flex flex-row items-start gap-2">
+          <StepLabel label={'3'} />
+          <p className="text-gray-700">
+            Add a readme file with instructions on how to run the project. Make
+            sure to include the{' '}
+            <button
+              onClick={() => {
+                copyText(projectUrl);
+              }}
+              className="font-semibold"
+            >
+              project page URL{' '}
+              {!isCopied && (
+                <CopyIcon className="inline-block h-4 w-4" strokeWidth={2.5} />
+              )}
+              {isCopied && (
+                <Check className="inline-block h-4 w-4" strokeWidth={2.5} />
+              )}
+            </button>{' '}
+            in the readme file.
+          </p>
+        </div>
+        <div className="flex flex-row items-start gap-2">
+          <StepLabel label={'4'} />
+          <p className="text-gray-700">
+            Submit your repository URL to help others learn and get feedback
+            from the community.
+          </p>
+        </div>
+      </div>
 
-      <p className="mt-4 font-medium">Happy coding!</p>
+      <div className='mb-5'>
+          <p>If you get stuck, you can always ask for help in the community <a href='https://roadmap.sh/discord' target='_blank' className='underline underline-offset-2 font-medium'>chat on discord</a>.</p>
+      </div>
 
       <button
-        className="absolute right-2.5 top-2.5 text-gray-600 hover:text-black"
+        className="w-full rounded-md bg-blue-600 py-2 text-sm font-medium text-white hover:bg-blue-700"
         onClick={onClose}
       >
-        <X className="h-5 w-5" />
+        Close
       </button>
     </Modal>
   );
