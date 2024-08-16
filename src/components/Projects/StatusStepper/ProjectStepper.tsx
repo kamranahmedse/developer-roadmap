@@ -63,9 +63,9 @@ export function ProjectStepper(props: ProjectStepperProps) {
     if (upvotes >= 10) {
       setActiveStep(4);
     } else if (upvotes >= 5) {
-      setActiveStep(4);
-    } else if (submittedAt) {
       setActiveStep(3);
+    } else if (submittedAt) {
+      setActiveStep(2);
     } else if (startedAt) {
       setActiveStep(1);
     }
@@ -155,7 +155,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
             . Follow{' '}
             <button
               className={cn('underline underline-offset-2 hover:text-black', {
-                'text-purple-200 hover:text-white': isSticky,
+                'text-purple-100 hover:text-white': isSticky,
               })}
               onClick={() => {
                 setIsStartingProject(true);
@@ -164,6 +164,32 @@ export function ProjectStepper(props: ProjectStepperProps) {
               these tips
             </button>{' '}
             to get most out of it.
+          </>
+        )}
+        {activeStep >= 2 && (
+          <>
+            Congrats on submitting your solution.{' '}
+            <a
+              href={projectStatus.repositoryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn('underline underline-offset-2 hover:text-black', {
+                'text-purple-100 hover:text-white': isSticky,
+              })}
+            >
+              View your submission
+            </a>{' '}
+            or{' '}
+            <button
+              className={cn('underline underline-offset-2 hover:text-black', {
+                'text-purple-100 hover:text-white': isSticky,
+              })}
+              onClick={() => {
+                setIsSubmittingProject(true);
+              }}
+            >
+              update your submission
+            </button>
           </>
         )}
       </div>
@@ -202,15 +228,25 @@ export function ProjectStepper(props: ProjectStepperProps) {
         />
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep
+          isActive={activeStep === 2}
           isCompleted={activeStep > 2}
           icon={Flag}
-          text={'5 upvotes'}
+          text={
+            activeStep == 2
+              ? `${projectStatus.upvotes} / 5 upvotes`
+              : `5 upvotes`
+          }
         />
         <StepperStepSeparator isActive={activeStep > 2} />
         <MilestoneStep
+          isActive={activeStep === 3}
           isCompleted={activeStep > 3}
           icon={Flag}
-          text={'10 upvotes'}
+          text={
+            activeStep == 3
+              ? `${projectStatus.upvotes} / 10 upvotes`
+              : `10 upvotes`
+          }
         />
       </div>
     </div>

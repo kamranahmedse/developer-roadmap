@@ -1,4 +1,5 @@
 import { CheckIcon, CopyIcon, X } from 'lucide-react';
+import { CheckIcon as ReactCheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { Modal } from '../Modal';
 import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
@@ -39,9 +40,9 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
   const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
   const [verificationChecks, setVerificationChecks] =
     useState<VerificationChecksType>({
-      repositoryExists: 'pending',
-      readmeExists: 'pending',
-      projectUrlExists: 'pending',
+      repositoryExists: defaultRepositoryUrl ? 'success' : 'pending',
+      readmeExists: defaultRepositoryUrl ? 'success' : 'pending',
+      projectUrlExists: defaultRepositoryUrl ? 'success' : 'pending',
     });
 
   const projectUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/projects/${projectId}`;
@@ -191,6 +192,17 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       setIsLoading(false);
     }
   };
+
+  if (successMessage) {
+    return (
+      <Modal onClose={onClose} bodyClassName="h-auto p-4">
+        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
+          <ReactCheckIcon additionalClasses={'h-12 text-green-500 w-12'} />
+          <p className="text-lg font-medium">{successMessage}</p>
+        </div>
+      </Modal>
+    );
+  }
 
   return (
     <Modal onClose={onClose} bodyClassName="h-auto p-4">

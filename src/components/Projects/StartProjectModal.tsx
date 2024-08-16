@@ -160,7 +160,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
       </div>
 
       <button
-        className="w-full rounded-md bg-blue-600 py-2 text-sm font-medium text-white hover:bg-blue-700"
+        className="w-full rounded-md bg-black py-2 text-sm font-medium text-white hover:bg-gray-900"
         onClick={onClose}
       >
         Close
