@@ -14,17 +14,28 @@ import { cn } from '../../lib/classname.ts';
 type StepperActionProps = {
   isActive?: boolean;
   isCompleted?: boolean;
+  onClick?: () => void;
   icon: LucideIcon;
   text: string;
   number: number;
 };
 
 function StepperAction(props: StepperActionProps) {
-  const { isActive, isCompleted, icon: DisplayIcon, text, number } = props;
+  const {
+    isActive,
+    onClick = () => null,
+    isCompleted,
+    icon: DisplayIcon,
+    text,
+    number,
+  } = props;
 
   if (isActive) {
     return (
-      <button className="flex items-center gap-1.5 rounded-full bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700">
+      <button
+        onClick={onClick}
+        className="flex items-center gap-1.5 rounded-full bg-purple-600 py-1 pl-2 pr-2.5 text-sm text-white hover:bg-purple-700"
+      >
         <DisplayIcon size={13} />
         <span>{text}</span>
       </button>
