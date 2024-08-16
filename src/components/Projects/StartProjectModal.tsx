@@ -1,18 +1,9 @@
-import {
-  Check,
-  CheckCircle,
-  CheckCircle2,
-  CopyCheck,
-  CopyIcon,
-  ServerCrash,
-  X,
-} from 'lucide-react';
+import { Check, CopyIcon, ServerCrash } from 'lucide-react';
 import { Modal } from '../Modal';
 import { getRelativeTimeString } from '../../lib/date';
 import { useEffect, useState } from 'react';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { httpPost } from '../../lib/http.ts';
-import { ErrorIcon } from '../ReactIcons/ErrorIcon.tsx';
 import { CheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 
@@ -161,8 +152,18 @@ export function StartProjectModal(props: StartProjectModalProps) {
         </div>
       </div>
 
-      <div className='mb-5'>
-          <p>If you get stuck, you can always ask for help in the community <a href='https://roadmap.sh/discord' target='_blank' className='underline underline-offset-2 font-medium'>chat on discord</a>.</p>
+      <div className="mb-5">
+        <p>
+          If you get stuck, you can always ask for help in the community{' '}
+          <a
+            href="https://roadmap.sh/discord"
+            target="_blank"
+            className="font-medium underline underline-offset-2"
+          >
+            chat on discord
+          </a>
+          .
+        </p>
       </div>
 
       <button
