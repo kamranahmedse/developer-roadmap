@@ -2,7 +2,7 @@
 
 Cherry-picking in Git allows you to apply a specific commit from one branch to another, without merging the entire branch. This is useful when you want to bring in a specific feature or fix from one branch to another without incorporating all the changes from the source branch.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@git-cherry-pick-docs](https://git-scm.com/docs/git-cherry-pick)
 - [@article@Git cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick)
