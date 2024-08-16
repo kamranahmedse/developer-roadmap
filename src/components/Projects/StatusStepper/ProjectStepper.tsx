@@ -82,7 +82,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
     <div
       ref={stickyElRef}
       className={cn(
-        'sticky top-0 -mx-2 -mt-2 mb-5 overflow-hidden rounded-lg border bg-white transition-all',
+        'sticky top-0 my-5 overflow-hidden rounded-lg border bg-white transition-all',
         {
           '-mx-5 rounded-none border-x-0 border-t-0 bg-gray-50': isSticky,
         },
@@ -131,7 +131,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
       )}
       <div
         className={cn(
-          'border-b bg-gray-100 px-4 py-2 text-sm text-gray-500 transition-colors',
+          'px-4 py-2 text-sm text-gray-500 transition-colors bg-gray-100',
           {
             'bg-purple-600 text-white': isSticky,
           },

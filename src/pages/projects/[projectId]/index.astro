@@ -49,24 +49,21 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
     <div class='container'>
       <ProjectTabs projectId={projectId} activeTab='details' />
 
-      <div class='mb-4 rounded-lg border bg-white p-5'>
-        <div class='relative -mx-2 -mt-2 mb-5 rounded-lg bg-gray-100/70 p-5'>
-          <div class='absolute right-2 top-2'>
-            <Badge variant='yellow' text={projectData.difficulty} />
-          </div>
-          <div class='mb-5'>
-            <h1 class='mb-1.5 text-3xl font-semibold'>{projectData.title}</h1>
-            <p class='text-gray-500'>{projectData.description}</p>
-          </div>
-
-          <div class='mt-4'>
+      <div class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-5'>
+        <div class='relative'>
+          <div class='mb-4 flex items-center justify-between'>
             <div class='flex flex-row flex-wrap gap-1.5'>
               {
                 projectData.skills.map((skill) => (
-                  <Badge variant='green' text={skill} />
+                    <Badge variant='green' text={skill} />
                 ))
               }
             </div>
+            <Badge variant='yellow' text={projectData.difficulty} />
+          </div>
+          <div class="my-7">
+            <h1 class='mb-2 text-3xl font-semibold'>{projectData.title}</h1>
+            <p class='text-sm text-gray-500'>{projectData.description}</p>
           </div>
         </div>
 
