@@ -76,11 +76,11 @@ export function AccountStreak(props: AccountStreakProps) {
   return (
     <div className="relative z-[90] animate-fade-in">
       <button
-        className="flex items-center justify-center rounded-lg bg-purple-100/10 p-1.5 px-2 hover:bg-purple-100/20 focus:outline-none"
+        className="flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-none"
         onClick={() => setShowDropdown(true)}
       >
         <Flame className="size-5" />
-        <span className="ml-2 text-sm font-semibold">
+        <span className="ml-1 text-sm font-semibold">
           {accountStreak?.count}
         </span>
       </button>
