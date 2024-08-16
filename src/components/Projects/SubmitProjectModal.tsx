@@ -1,4 +1,4 @@
-import { CheckIcon, CircleDashed, X } from 'lucide-react';
+import { CheckIcon, CircleDashed, CopyIcon, X } from 'lucide-react';
 import { Modal } from '../Modal';
 import { useState, type FormEvent, type ReactNode } from 'react';
 import { useToast } from '../../hooks/use-toast';
@@ -6,10 +6,17 @@ import { httpPost } from '../../lib/http';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { cn } from '../../lib/classname.ts';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
+import { useCopyText } from '../../hooks/use-copy-text.ts';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
   submittedAt: Date;
+};
+
+type VerificationChecksType = {
+  repositoryExists: 'pending' | 'success' | 'error';
+  readmeExists: 'pending' | 'success' | 'error';
+  projectUrlExists: 'pending' | 'success' | 'error';
 };
 
 type SubmitProjectModalProps = {
@@ -27,19 +34,40 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
     repositoryUrl: defaultRepositoryUrl = '',
   } = props;
 
+  const { isCopied, copyText } = useCopyText();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
+  const [verificationChecks, setVerificationChecks] =
+    useState<VerificationChecksType>({
+      repositoryExists: 'pending',
+      readmeExists: 'pending',
+      projectUrlExists: 'pending',
+    });
+
+  const projectUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/projects/${projectId}`;
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
+      setVerificationChecks({
+        repositoryExists: 'pending',
+        readmeExists: 'pending',
+        projectUrlExists: 'pending',
+      });
+
       setIsLoading(true);
       setError('');
       setSuccessMessage('');
 
       if (!repoUrl) {
+        setVerificationChecks({
+          repositoryExists: 'error',
+          readmeExists: 'pending',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Repository URL is required');
       }
 
@@ -50,6 +78,12 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       const repoName = repoUrlParts[2];
 
       if (!username || !repoName) {
+        setVerificationChecks({
+          repositoryExists: 'error',
+          readmeExists: 'pending',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Invalid GitHub repository URL');
       }
 
@@ -58,6 +92,12 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       const allContentsUrl = `${mainApiUrl}/contents`;
       const allContentsResponse = await fetch(allContentsUrl);
       if (!allContentsResponse.ok) {
+        setVerificationChecks({
+          repositoryExists: 'error',
+          readmeExists: 'pending',
+          projectUrlExists: 'pending',
+        });
+
         if (allContentsResponse?.status === 404) {
           throw new Error(
             'Repository not found. Make sure it exists and is public.',
@@ -69,6 +109,12 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
       const allContentsData = await allContentsResponse.json();
       if (!Array.isArray(allContentsData)) {
+        setVerificationChecks({
+          repositoryExists: 'error',
+          readmeExists: 'pending',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Failed to fetch repository contents');
       }
 
@@ -76,24 +122,47 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         (file) => file.name.toLowerCase() === 'readme.md',
       );
       if (!readmeFile || !readmeFile.url) {
+        setVerificationChecks({
+          repositoryExists: 'success',
+          readmeExists: 'error',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Readme file not found');
       }
 
       const readmeUrl = readmeFile.url;
       const response = await fetch(readmeUrl);
       if (!response.ok || response.status === 404) {
+        setVerificationChecks({
+          repositoryExists: 'success',
+          readmeExists: 'error',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Readme file not found');
       }
 
       const data = await response.json();
       if (!data.content) {
+        setVerificationChecks({
+          repositoryExists: 'success',
+          readmeExists: 'error',
+          projectUrlExists: 'pending',
+        });
+
         throw new Error('Readme file not found');
       }
 
       const readmeContent = window.atob(data.content);
-      const projectUrl = `${window.location.origin}/projects/${projectId}`;
       if (!readmeContent.includes(projectUrl)) {
-        throw new Error('Project URL not found in the readme file');
+        setVerificationChecks({
+          repositoryExists: 'success',
+          readmeExists: 'success',
+          projectUrlExists: 'error',
+        });
+
+        throw new Error('Add the project page URL to the readme file');
       }
 
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
@@ -108,27 +177,13 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
       setSuccessMessage('Repository verified successfully');
       setIsLoading(false);
+
       onSubmit(submitResponse);
     } catch (error: any) {
       console.error(error);
       setError(error?.message || 'Failed to verify repository');
       setIsLoading(false);
     }
-  };
-
-  const verificationChecks = {
-    valid_url: {
-      status: 'pending',
-      message: 'URL must point to a public GitHub repository',
-    },
-    valid_repo: {
-      status: 'pending',
-      message: 'Repository must contain a readme file',
-    },
-    valid_readme: {
-      status: 'pending',
-      message: 'Readme file must contain the project URL',
-    },
   };
 
   return (
@@ -141,21 +196,48 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       </p>
 
       <div className="my-4 flex flex-col gap-1">
-        <SubmissionRequirement status="pending">
+        <SubmissionRequirement status={verificationChecks.repositoryExists}>
           URL must point to a public GitHub repository
         </SubmissionRequirement>
-        <SubmissionRequirement status="pending">
+        <SubmissionRequirement status={verificationChecks.readmeExists}>
           Repository must contain a README file
         </SubmissionRequirement>
-        <SubmissionRequirement status="pending">
-          README file must contain the project URL
+        <SubmissionRequirement status={verificationChecks.projectUrlExists}>
+          README file must contain the{' '}
+          <button
+            className={
+              'font-medium underline underline-offset-2 hover:text-purple-700'
+            }
+            onClick={() => {
+              copyText(projectUrl);
+            }}
+          >
+            {!isCopied && (
+              <>
+                project URL{' '}
+                <CopyIcon
+                  className="relative -top-0.5 inline-block h-3 w-3"
+                  strokeWidth={2.5}
+                />
+              </>
+            )}
+            {isCopied && (
+              <>
+                copied URL{' '}
+                <CheckIcon
+                  className="relative -top-0.5 inline-block h-3 w-3"
+                  strokeWidth={2.5}
+                />
+              </>
+            )}
+          </button>
         </SubmissionRequirement>
       </div>
 
       <form className="mt-4" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="w-full rounded-lg border border-gray-300 p-2 focus:border-gray-500 focus:outline-none text-sm"
+          className="w-full rounded-lg border border-gray-300 p-2 text-sm focus:border-gray-500 focus:outline-none"
           placeholder="https://github.com/you/solution-repo"
           value={repoUrl}
           onChange={(e) => setRepoUrl(e.target.value)}

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { cn } from '../../lib/classname.ts';
-import { CheckIcon, CircleDashed } from 'lucide-react';
+import {CheckIcon, CircleDashed, X} from 'lucide-react';
 
 type SubmissionRequirementProps = {
   status: 'pending' | 'success' | 'error';
@@ -23,7 +23,7 @@ export function SubmissionRequirement(props: SubmissionRequirementProps) {
       ) : status === 'success' ? (
         <CheckIcon className="h-4 w-4 text-green-800" />
       ) : (
-        <CheckIcon className="h-4 w-4 text-yellow-800" />
+        <X className="h-4 w-4 text-yellow-800" />
       )}
       <span className="ml-2">{children}</span>
     </div>
