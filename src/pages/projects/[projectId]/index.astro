@@ -7,8 +7,7 @@ import {
   type ProjectFrontmatter,
 } from '../../../lib/project';
 import AstroIcon from '../../../components/AstroIcon.astro';
-import { ProjectMilestoneStrip } from '../../../components/Projects/ProjectMilestoneStrip';
-import { ProjectStepper } from "../../../components/Projects/StatusStepper/ProjectStepper";
+import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 
 export async function getStaticPaths() {
@@ -71,7 +70,6 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
           </div>
         </div>
 
-        <ProjectMilestoneStrip projectId={projectId} client:load />
         <ProjectStepper projectId={projectId} client:load />
 
         <div

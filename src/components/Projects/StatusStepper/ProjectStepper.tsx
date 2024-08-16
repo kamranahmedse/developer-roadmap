@@ -169,17 +169,6 @@ export function ProjectStepper(props: ProjectStepperProps) {
         {activeStep >= 2 && (
           <>
             Congrats on submitting your solution.{' '}
-            <a
-              href={projectStatus.repositoryUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn('underline underline-offset-2 hover:text-black', {
-                'text-purple-100 hover:text-white': isSticky,
-              })}
-            >
-              View your submission
-            </a>{' '}
-            or{' '}
             <button
               className={cn('underline underline-offset-2 hover:text-black', {
                 'text-purple-100 hover:text-white': isSticky,
@@ -188,7 +177,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
                 setIsSubmittingProject(true);
               }}
             >
-              update your submission
+              View or update your submission.
             </button>
           </>
         )}
@@ -245,7 +234,9 @@ export function ProjectStepper(props: ProjectStepperProps) {
           text={
             activeStep == 3
               ? `${projectStatus.upvotes} / 10 upvotes`
-              : `10 upvotes`
+              : activeStep > 3
+                ? `${projectStatus.upvotes} upvotes`
+                : `10 upvotes`
           }
         />
       </div>
