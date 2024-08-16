@@ -236,7 +236,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   ) : null;
 
   return (
-    <section className="-mx-2">
+    <section>
       {leavingRoadmapModal}
 
       <Pagination
@@ -253,7 +253,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
         }}
       />
 
-      <div className="my-4 flex flex-col divide-y divide-gray-100">
+      <div className="flex flex-col divide-y divide-gray-100">
         {solutions?.data.map((solution, counter) => {
           const isVisited = alreadyVisitedSolutions[solution._id!];
           const avatar = solution.user.avatar || '';
@@ -261,7 +261,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           return (
             <div
               key={solution._id}
-              className="group flex items-center justify-between py-1 text-sm text-gray-500"
+              className="group flex items-center justify-between py-2 text-sm text-gray-500"
             >
               <div className="flex items-center gap-1.5">
                 <img
