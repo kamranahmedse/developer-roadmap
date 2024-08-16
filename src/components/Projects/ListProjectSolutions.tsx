@@ -239,21 +239,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     <section>
       {leavingRoadmapModal}
 
-      <Pagination
-        variant="minimal"
-        totalPages={solutions?.totalPages || 1}
-        currPage={solutions?.currPage || 1}
-        perPage={solutions?.perPage || 21}
-        totalCount={solutions?.totalCount || 0}
-        onPageChange={(page) => {
-          setPageState({
-            ...pageState,
-            currentPage: page,
-          });
-        }}
-      />
-
-      <div className="flex flex-col divide-y divide-gray-100">
+      <div className="flex flex-col divide-y divide-gray-100 min-h-[500px]">
         {solutions?.data.map((solution, counter) => {
           const isVisited = alreadyVisitedSolutions[solution._id!];
           const avatar = solution.user.avatar || '';
@@ -325,18 +311,22 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
         })}
       </div>
 
-      <Pagination
-        totalPages={solutions?.totalPages || 1}
-        currPage={solutions?.currPage || 1}
-        perPage={solutions?.perPage || 21}
-        totalCount={solutions?.totalCount || 0}
-        onPageChange={(page) => {
-          setPageState({
-            ...pageState,
-            currentPage: page,
-          });
-        }}
-      />
+      {(solutions?.totalPages || 0) > 1 && (
+        <div className="mt-4">
+          <Pagination
+            totalPages={solutions?.totalPages || 1}
+            currPage={solutions?.currPage || 1}
+            perPage={solutions?.perPage || 21}
+            totalCount={solutions?.totalCount || 0}
+            onPageChange={(page) => {
+              setPageState({
+                ...pageState,
+                currentPage: page,
+              });
+            }}
+          />
+        </div>
+      )}
     </section>
   );
 }

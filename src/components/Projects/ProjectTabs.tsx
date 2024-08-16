@@ -18,7 +18,7 @@ export function ProjectTabs(props: ProjectTabsProps) {
   ];
 
   return (
-    <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 rounded-md border bg-white px-2 text-sm">
+    <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 rounded-md border bg-white px-2.5 text-sm">
       {tabs.map((tab) => {
         const isActive = tab.value === activeTab;
 
