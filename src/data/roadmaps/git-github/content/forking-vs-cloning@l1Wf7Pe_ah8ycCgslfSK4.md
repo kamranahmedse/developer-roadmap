@@ -4,7 +4,7 @@ Forking and cloning are two fundamental concepts in Git, particularly when worki
 Cloning a repository means creating a local copy of a repository that exists on a remote server (e.g., GitHub) on your local machine. This allows you to work on the project locally, make changes, and then push those changes back to the remote repository if you have the necessary permissions.
 Forking a repository is specific to platforms like GitHub, GitLab, and Bitbucket. When you fork a repository, you create a copy of someone else’s repository in your own account. This forked repository is independent of the original and can be modified without affecting the original project.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@The difference between forking and cloning a repository](https://github.com/orgs/community/discussions/35849)
 - [@article@Git fork vs. clone: What's the difference?](https://www.theserverside.com/answer/Git-fork-vs-clone-Whats-the-difference)
