@@ -2,7 +2,7 @@
 
 Starting with a new project, you'll use `git init` to initialize a repository and then make changes using `git add`. Once ready, commit your work with `git commit`. If mistakes occur, `git reset` can help correct them. You'll also interact with remote repositories, whether private or public, by adding remotes (git remote add) and managing their connections through commands like `git fetch`, `git push`, and `git pull`.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Git Tutorial for Beginners: Learn Git in 1 Hour](https://www.youtube.com/watch?v=8JJ101D3knE&t=1135s)
 - [@article@Git ignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)

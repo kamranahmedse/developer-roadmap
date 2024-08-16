@@ -2,7 +2,7 @@
 
 A Version Control System (VCS) is a tool that helps developers manage changes to their code over time. It allows multiple versions of a project to exist simultaneously, making it easier to collaborate with others and maintain a record of all modifications.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@article@What is Git? - The Complete Guide to Git](https://www.datacamp.com/blog/all-about-git)
