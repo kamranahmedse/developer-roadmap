@@ -22,6 +22,6 @@ Due to the sophisticated and persistent nature of APTs, they can be challenging 
 
 APT attacks can be damaging and disruptive to organizations, but understanding the nature of these threats and implementing a comprehensive security strategy can help minimize the risk and protect valuable assets. Remember, APTs are not just a concern for large enterprises and governments; organizations of all sizes can be targeted. Staying vigilant and proactive is key to staying safe from these advanced threats.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What Are Advanced Persistent Threats? - IBM](https://www.ibm.com/topics/advanced-persistent-threats)

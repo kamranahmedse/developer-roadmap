@@ -28,7 +28,7 @@ Capacity planning is a dynamic process that includes forecasting the infrastruct
 - **Performance Metrics**: Establish key performance indicators (KPIs) to measure performance, detect possible issues, and act accordingly to minimize service degradation.
 - **Testing**: Simulate test scenarios and perform stress tests to identify bottlenecks and inconsistencies to adjust your infrastructure as needed.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Resource Consumption](https://www.postgresql.org/docs/current/runtime-config-resource.html)
 - [@article@5 ways to host PostgreSQL databases](https://www.prisma.io/dataguide/postgresql/5-ways-to-host-postgresql)

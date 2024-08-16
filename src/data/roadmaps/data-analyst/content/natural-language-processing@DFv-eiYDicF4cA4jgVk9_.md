@@ -4,7 +4,7 @@ In the sphere of data analysis, Natural Language Processing (NLP) has emerged as
 
 Deep Learning, a subset of machine learning based on artificial neural networks, is particularly effective for NLP tasks, enabling computers to learn from vast amounts of data. For data analysts, understanding and utilizing the potentials of NLP can greatly improve the efficiency of data processing and extraction of meaningful insights, especially when dealing with large or complex data sets. This knowledge can significantly enhance their ability to make data-driven decisions and predictions tailored to specific business objectives.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is NLP?](https://aws.amazon.com/what-is/nlp/)
 - [@article@Natural Language Processing](https://www.deeplearning.ai/resources/natural-language-processing/)

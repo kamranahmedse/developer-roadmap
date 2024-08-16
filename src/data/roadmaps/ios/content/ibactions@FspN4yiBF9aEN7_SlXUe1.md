@@ -13,7 +13,7 @@ Xcode IBActions are methods that connect user interface elements to code, allowi
 
 IBActions provide a clean way to separate UI logic from business logic, enhancing code organization. They allow developers to centralize the handling of user interactions, making it easier to manage and modify app behavior in response to user input.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@IBOutlet & IBAction](https://www.youtube.com/watch?v=ztPpThdBHT0)
 - [@article@From outlets to actions: creating an IBAction](https://www.hackingwithswift.com/read/2/5/from-outlets-to-actions-creating-an-ibaction)

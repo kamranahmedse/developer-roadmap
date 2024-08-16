@@ -4,7 +4,7 @@ CQRS (Command Query Responsibility Segregation) is an architectural pattern that
 
 The command side is responsible for processing commands and updating the system's state, while the query side is responsible for reading the current state of the system and returning the results to the client. The command and query sides can use different data models, storage mechanisms, and even different technologies.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Get Started with CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 - [@article@CQRS Software Architecture Pattern: The Good, Bad, and the Ugly](https://betterprogramming.pub/cqrs-software-architecture-pattern-the-good-the-bad-and-the-ugly-e9d6e7a34daf)

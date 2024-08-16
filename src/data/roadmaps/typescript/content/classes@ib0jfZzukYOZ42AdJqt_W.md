@@ -22,6 +22,6 @@ dog.makeSound(); // Output: Dog is making a sound
 
 In this example, the `Animal` class has a name field, a constructor that sets the value of the `name` field, and a `makeSound` method. An instance of the `Animal` class can be created using the `new` keyword, and its methods and properties can be accessed using dot notation.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Tutorial - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)

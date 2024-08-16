@@ -4,7 +4,7 @@ Encapsulate what varies is a programming principle that suggests that code shoul
 
 Encapsulating what varies allows for more flexibility in the code. When changes are needed, they can be made to the encapsulated parts without affecting the rest of the code. This makes it easier to understand, test, and maintain the code.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What does it mean when one says “Encapsulate what varies”?](https://softwareengineering.stackexchange.com/questions/337413/what-does-it-mean-when-one-says-encapsulate-what-varies)
 - [@article@Overview of Encapsulate What Varies](https://bootcamp.uxdesign.cc/software-design-principles-every-developers-should-know-23d24735518e)

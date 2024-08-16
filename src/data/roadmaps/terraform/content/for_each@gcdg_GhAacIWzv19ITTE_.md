@@ -4,7 +4,7 @@ The for_each meta-argument in Terraform enables you to create multiple instances
 
 Note: You cannot declare for_each and count in the same resource.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Terraform Docs - for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
 - [@article@Terraform by Example - for_each](https://www.terraformbyexample.com/for_each)

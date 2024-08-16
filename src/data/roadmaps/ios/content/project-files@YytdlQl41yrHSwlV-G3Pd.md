@@ -14,7 +14,7 @@ Xcode project files organize and manage the various components of an iOS, macOS,
 
 These files are typically managed through Xcode's Project Navigator, providing a structured environment for developing and organizing complex applications.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@.XCODEPROJ File Extension](https://fileinfo.com/extension/xcodeproj)
 - [@official@Entitlements](https://developer.apple.com/documentation/bundleresources/entitlements)

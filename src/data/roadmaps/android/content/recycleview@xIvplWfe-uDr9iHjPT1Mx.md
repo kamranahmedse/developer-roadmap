@@ -4,7 +4,7 @@ RecyclerView is the most commonly used and powerful list management tool in Andr
 
 As the name implies, RecyclerView recycles those individual elements. When an item scrolls off the screen, RecyclerView doesn't destroy its view. Instead, RecyclerView reuses the view for new items that have scrolled onscreen. RecyclerView improves performance and your app's responsiveness, and it reduces power consumption.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Android Developers: Create dynamic lists with RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)
 

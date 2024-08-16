@@ -14,7 +14,7 @@ The Xcode Debug Navigator is a powerful tool in the Navigator pane that provides
 
 The Debug Navigator helps developers identify performance bottlenecks, memory leaks, and other runtime issues. It's particularly useful for optimizing app performance and troubleshooting complex multi-threaded scenarios.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Debugging](https://developer.apple.com/documentation/xcode/debugging)
 - [@article@Exploring Xcode's Debugging Tools](https://cocoacasts.com/debugging-applications-with-xcode-exploring-xcode-debugging-tools)

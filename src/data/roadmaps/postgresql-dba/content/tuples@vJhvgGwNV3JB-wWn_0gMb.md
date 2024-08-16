@@ -10,7 +10,7 @@ For example, consider a `users` table with columns `id`, `name`, and `email`. A 
 
 - **Join**: The join operation combines tuples from two or more tables based on a common attribute or condition. For example, if we have another table called `orders` with a `user_id` column, we could use a join operation to retrieve all records from both tables where the `users.id` attribute matches the `orders.user_id`.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Whats the difference between and tuple and a row?](https://stackoverflow.com/questions/19799282/whats-the-difference-between-a-tuple-and-a-row-in-postgres)
 - [@article@How PostgreSQL freezes tuples](https://medium.com/@hnasr/how-postgres-freezes-tuples-4a9931261fc)

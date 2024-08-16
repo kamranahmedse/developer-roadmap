@@ -10,7 +10,7 @@ State management in Flutter refers to the process of managing and updating the d
 
 The choice of state management technique depends on the complexity and size of the project. For smaller projects, Provider or InheritedWidget may be sufficient, while larger projects may require a more robust solution like ScopedModel or Redux.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@State management in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt)
 - [@article@Intro to State Management](https://docs.flutter.dev/development/data-and-backend/state-mgmt/intro)

@@ -2,7 +2,7 @@
 
 Ansible is a widely used open-source configuration management and provisioning tool that helps automate many tasks for managing servers, databases, and applications. It uses a simple, human-readable language called YAML to define automation scripts, known as “playbooks”. By using Ansible playbooks and PostgreSQL modules, you can automate repetitive tasks, ensure consistent configurations, and reduce human error.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Ansible Website](https://www.ansible.com/)
 - [@opensource@ansible/ansible](https://github.com/ansible/ansible)

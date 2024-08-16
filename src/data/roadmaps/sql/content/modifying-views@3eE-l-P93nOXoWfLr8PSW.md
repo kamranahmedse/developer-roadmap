@@ -6,6 +6,6 @@ In SQL, you can modify a `VIEW` in two ways:
 
 - Using the `DROP VIEW` and then `CREATE VIEW`: In this method, you first remove the `VIEW` using the `DROP VIEW` command and then recreate the view using the new definition with the `CREATE VIEW` command.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Modify Views in SQL Server](https://www.sqlshack.com/create-view-sql-modifying-views-in-sql-server/)

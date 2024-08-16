@@ -4,7 +4,7 @@ In PostgreSQL, per-user and per-database settings allow administrators to custom
 
 These commands store the settings in the system catalog and apply them whenever the user connects to the database or the database is accessed. Commonly customized parameters include search_path, work_mem, and maintenance_work_mem, allowing fine-tuned control over query performance and resource usage tailored to specific needs.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html)
 - [@official@ALTER DATABASE](https://www.postgresql.org/docs/current/sql-alterdatabase.html)

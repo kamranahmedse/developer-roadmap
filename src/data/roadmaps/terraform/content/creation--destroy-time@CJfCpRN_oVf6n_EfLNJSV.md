@@ -4,7 +4,7 @@ Creation and destroy-time provisioners in Terraform are used to execute actions 
 
 Creation-time provisioners that fail will cause the resource creation to fail, potentially leaving resources in an incomplete state. Destroy-time provisioners that fail don't prevent resource destruction but may leave external resources in an inconsistent state. Due to their potential impact on Terraform's ability to manage state consistently, both types should be used cautiously and designed to be idempotent and fault-tolerant.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Creation time provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#creation-time-provisioners)
 - [@official@Destroy time provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#destroy-time-provisioners)

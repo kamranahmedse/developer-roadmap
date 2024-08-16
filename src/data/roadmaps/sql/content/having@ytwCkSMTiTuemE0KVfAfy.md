@@ -4,6 +4,6 @@
 
 It’s similar to a `WHERE` clause, but operates on the results of a grouping. The `WHERE` clause places conditions on the selected columns, whereas the `HAVING` clause places conditions on groups created by the `GROUP BY` clause.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL HAVING Clause](https://www.programiz.com/sql/having)

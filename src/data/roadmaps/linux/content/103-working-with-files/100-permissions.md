@@ -16,7 +16,7 @@ The `r` indicates that the file can be read, `w` indicates that the file can be 
 
 The permissions can be changed using the `chmod`, `chown`, and `chgrp` commands.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Linux File Permissions](https://linuxhandbook.com/linux-file-permissions/)
 - [@video@Linux File Permissions in 5 Minutes](https://www.youtube.com/watch?v=LnKoncbQBsM)

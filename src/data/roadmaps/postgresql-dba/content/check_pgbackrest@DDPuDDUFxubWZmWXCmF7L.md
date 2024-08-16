@@ -10,6 +10,6 @@ pgbackrest --stanza=<stanza_name> check
 
 `<stanza_name>` should be replaced with the name of the stanza for which you want to verify the repository and configuration settings.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@pgBackRest Website](https://pgbackrest.org/)

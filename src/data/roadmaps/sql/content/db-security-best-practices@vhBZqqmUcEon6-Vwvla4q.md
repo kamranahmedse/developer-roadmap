@@ -42,6 +42,6 @@ Use a vulnerability scanner to assess the security posture of your SQL.
 
 SQL injection can be reduced by using parameterized queries or prepared statements.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is database security?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-database-security)

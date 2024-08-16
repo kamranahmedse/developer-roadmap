@@ -4,7 +4,7 @@ The `terraform state pull` and `terraform state push` commands are used for mana
 
 The`push` command does the opposite, uploading a local state file to the configured backend, overwriting the existing remote state. This is typically used to restore a backup or to manually reconcile state discrepancies. Both commands should be used with caution, especially push, as they can potentially overwrite important state information.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Command - State pull](https://developer.hashicorp.com/terraform/cli/commands/state/pull)
 - [@official@Command - State push](https://developer.hashicorp.com/terraform/cli/commands/state/push)

@@ -26,7 +26,7 @@ To effectively secure your endpoints, consider implementing the following measur
 
 By taking a comprehensive approach to endpoint security, you can protect your organization's network and sensitive data from the growing threat of cyberattacks.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Endpoint Security](https://youtu.be/5d7PCDm_MXs?si=RX3sAdNPLG0tJOaR&t=11)
 - [@course@Manage endpoint security - Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/manage-endpoint-security/)

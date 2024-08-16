@@ -10,7 +10,7 @@ App Store distribution is the process of preparing and submitting an iOS applica
 
 This process ensures that apps are of high quality, secure, and provide a good user experience before reaching the end users.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Distribute on App Store](https://developer.apple.com/distribute/)
 - [@official@Distributing Custom Apps](https://developer.apple.com/custom-apps/)

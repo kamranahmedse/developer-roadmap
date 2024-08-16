@@ -19,7 +19,7 @@ MyNamespace.doSomething(); // Output: "Doing something..."
 
 In this example, we use the `namespace` keyword in the "myNamespace.ts" file to define a namespace "MyNamespace". Within the namespace, we export a function "doSomething".
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Overview of Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [@article@Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)

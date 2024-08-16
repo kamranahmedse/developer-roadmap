@@ -149,6 +149,6 @@ ss_tax = salary * 0.062
 print("Social Security tax is: $", round(ss_tax, 2))
 ```
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@LLM Coding Assistance](https://learnprompting.org/docs/basic_applications/coding_assistance)

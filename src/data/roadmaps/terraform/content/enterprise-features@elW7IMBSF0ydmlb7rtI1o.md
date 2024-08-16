@@ -20,7 +20,7 @@ HashiCorp Cloud Platform (HCP) offers several enterprise-grade features designed
 
 These features collectively provide a robust, secure, and scalable environment for enterprise-level infrastructure management and DevOps practices.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@HCP Website](https://www.hashicorp.com/cloud)
 - [@article@HCP Terraform Plans and Features](https://developer.hashicorp.com/terraform/cloud-docs/overview)

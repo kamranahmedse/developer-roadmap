@@ -14,7 +14,7 @@ Virtual machines (VMs) are a way to run multiple applications on a single server
 
 Containers are a way to run multiple applications on a single server without the overhead of a hypervisor. Each container runs on top of a container engine, which is a piece of software that emulates the operating system of a computer. The container engine allows you to run multiple applications on a single server, and it also provides isolation between applications running on different containers.
 
-You can learn more from the following resources:
+You can Visit the following resources to learn more:
 
 - [@article@History of Virtualization](https://courses.devopsdirective.com/docker-beginner-to-pro/lessons/01-history-and-motivation/03-history-of-virtualization)
 - [@feed@Explore top posts about Containers](https://app.daily.dev/tags/containers?ref=roadmapsh)

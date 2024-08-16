@@ -4,6 +4,6 @@ In SQL, a subquery is a query that is nested inside a main query. If a subquery 
 
 Nested subqueries can get complicated quickly, but they are essential for performing complex database tasks.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Nested Subqueries](https://www.studysmarter.co.uk/explanations/computer-science/databases/nested-subqueries-in-sql/)

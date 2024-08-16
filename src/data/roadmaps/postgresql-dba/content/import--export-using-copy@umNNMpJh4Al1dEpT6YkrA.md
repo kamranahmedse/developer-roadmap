@@ -4,7 +4,7 @@ In PostgreSQL, one of the fastest and most efficient ways to import and export d
 
 If you can't use the `COPY` command due to lack of privileges, consider using the `\copy` command in the `psql` client instead, which works similarly, but runs as the current user rather than the PostgreSQL server.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@COPY](https://www.postgresql.org/docs/current/sql-copy.html)
 - [@article@Copying data between tables in PostgreSQL](https://www.atlassian.com/data/sql/copying-data-between-tables)

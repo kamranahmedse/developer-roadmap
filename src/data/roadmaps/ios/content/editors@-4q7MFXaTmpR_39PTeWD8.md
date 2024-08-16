@@ -11,7 +11,7 @@ Xcode editors are the central workspace for code creation and modification. The 
 
 The Editor area supports multiple tabs and split views, enabling developers to work on multiple files simultaneously.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Creating a source editor extension](https://developer.apple.com/documentation/xcodekit/creating-a-source-editor-extension)
 - [@official@Source Editor](https://developer.apple.com/documentation/xcode/source-editor)

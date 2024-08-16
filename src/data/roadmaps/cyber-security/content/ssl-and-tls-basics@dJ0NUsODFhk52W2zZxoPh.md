@@ -28,6 +28,6 @@ SSL and TLS follow a series of steps, known as the "handshake process," to creat
 
 Secure communication is critical for any organization handling sensitive data. SSL and TLS serve as the backbone for protecting data in transit and play a significant role in ensuring the confidentiality, integrity, and authenticity of online communications.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@SSH vs TLS vs SSL](https://www.youtube.com/watch?v=k3rFFLmQCuY)

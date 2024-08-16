@@ -34,6 +34,6 @@ animal = new Cat();
 animal.makeSound(); // Output: Meow
 ```
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Inheritance and Polymorphism In TypeScript](https://www.youtube.com/watch?v=Sn6K57YSuwU)

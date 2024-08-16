@@ -4,5 +4,5 @@ A concrete class is a class in object-oriented programming (OOP) that can be ins
 
 Concrete classes are used to provide specific implementation details for a group of related classes that inherit from a common abstract class. They are also used to define unique behavior for a specific class. A concrete class can have its own methods and variables, and can also override the methods of its parent class.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 

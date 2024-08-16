@@ -14,7 +14,7 @@ VIPER (View, Interactor, Presenter, Entity, Router) is an architectural pattern 
 
 VIPER aims to create a clear separation of concerns, improving testability and maintainability. It's particularly useful for large, complex applications where scalability is crucial.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Swift: VIPER Design Pattern](https://www.youtube.com/watch?v=hFLdbWEE3_Y)
 - [@article@Understanding VIPER Architecture](https://medium.com/@pinarkocak/understanding-viper-pattern-619fa9a0b1f1)

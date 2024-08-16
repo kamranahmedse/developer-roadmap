@@ -25,6 +25,6 @@ animal.makeSound(); // Output: Bark
 
 In this example, the `Dog` class overrides the makeSound method defined in the Animal class and provides its own implementation. When the `makeSound` method is called on an instance of the `Dog` class, it will use the implementation in the `Dog` class rather than the implementation in the `Animal` class.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@TypeScript - Overriding Methods](https://www.typescriptlang.org/docs/handbook/2/classes.html#overriding-methods)

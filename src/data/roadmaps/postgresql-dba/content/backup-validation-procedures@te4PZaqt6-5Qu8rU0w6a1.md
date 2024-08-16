@@ -20,7 +20,7 @@ Here are the critical backup validation procedures you should follow:
 
 After validating your backups, it's essential to document the results and address any issues encountered during the validation process. This may involve refining your backup and recovery strategies, fixing any errors or updating your scripts and tools.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@pg_verifybackup](https://www.postgresql.org/docs/current/app-pgverifybackup.html)
 - [@article@PostgreSQL Backup and Restore Validation](https://portal.nutanix.com/page/documents/solutions/details?targetId=NVD-2155-Nutanix-Databases:postgresql-backup-and-restore-validation.html)

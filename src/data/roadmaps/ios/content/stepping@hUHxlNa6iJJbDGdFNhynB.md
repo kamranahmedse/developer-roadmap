@@ -11,7 +11,7 @@ Xcode debugger stepping allows developers to execute code line by line, providin
 
 These controls are accessible via the debug toolbar, keyboard shortcuts, or the Debug menu.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Stepping through code and inspecting variables to isolate bugs](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
 - [@video@Debugging Apps with Xcode 15: Stepping through Code With Breakpoints](https://www.youtube.com/watch?v=u2GoZl7iotg)

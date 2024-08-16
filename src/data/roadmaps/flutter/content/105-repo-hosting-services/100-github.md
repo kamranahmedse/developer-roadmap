@@ -12,7 +12,7 @@ With GitHub, you can:
 
 GitHub also provides a wide range of tools and services for developers, including GitHub Pages for hosting websites, GitHub Actions for automating workflows, and GitHub Marketplace for finding and integrating with third-party tools.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [@article@Get Started with Github](https://docs.github.com/en)

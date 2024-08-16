@@ -6,7 +6,7 @@ Compliance on the other hand, emphasizes on meeting protocol requirements or sta
 
 In essence, Standards and Compliance in API Design contributes towards building more secure, robust, and efficient APIs that are user-friendly and universally understandable.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is API compliance?](https://tyk.io/learning-center/api-compliance/)
 - [@article@What is API compliance and why is it important?](https://www.traceable.ai/blog-post/achieve-api-compliance)

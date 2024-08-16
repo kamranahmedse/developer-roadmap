@@ -14,6 +14,6 @@ There are many software design principles that aim to guide the development of s
 
 By following these design principles, software can be developed in a way that is easy to understand, maintain, and extend, and that is less prone to bugs.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Software Design Principles For Beginners](https://www.youtube.com/watch?v=60EqoRcanpo)

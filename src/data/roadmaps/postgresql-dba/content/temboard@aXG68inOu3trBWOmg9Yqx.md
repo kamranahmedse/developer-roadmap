@@ -9,7 +9,7 @@ temBoard is an open-source monitoring and management tool for PostgreSQL databas
 5.	User Management and Security: Supports user authentication and role-based access control, ensuring secure management of PostgreSQL instances. It also provides an audit log for tracking user activities.
 6.	Plugin System: Extensible through plugins, allowing customization and addition of new features as needed.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@temBoard Documentation](https://temboard.readthedocs.io/en/v8/)
 - [@opensource@dalibo/temboard](https://github.com/dalibo/temboard)

@@ -4,6 +4,6 @@ Angular is a popular open-source front-end web application framework developed b
 
 One of the key features of Angular is its use of components, which are reusable building blocks for creating web applications. Components encapsulate the HTML, CSS, and TypeScript code needed to define a specific part of a web page, making it easier to manage and maintain complex applications. Angular also includes a powerful dependency injection system, which helps manage the dependencies between different parts of an application and promotes code reusability. Additionally, Angular provides tools for routing, form handling, and state management, making it a versatile framework for building a wide range of web applications.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@ Angular website](https://angularjs.org/)

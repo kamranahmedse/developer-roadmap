@@ -13,7 +13,7 @@ output "database_password" {
 
 Sensitive outputs are still accessible programmatically, but their values are hidden in logs and the console to prevent accidental exposure. This feature helps maintain security when sharing Terraform configurations or outputs with team members or in CI/CD pipelines.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@How to output sensitive data in Terraform](https://support.hashicorp.com/hc/en-us/articles/5175257151891-How-to-output-sensitive-data-with-Terraform)
 - [@official@Surpressing values in CLI output](https://developer.hashicorp.com/terraform/language/values/outputs#sensitive-suppressing-values-in-cli-output)

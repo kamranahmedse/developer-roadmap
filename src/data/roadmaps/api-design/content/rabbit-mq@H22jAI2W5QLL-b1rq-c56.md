@@ -4,7 +4,7 @@ RabbitMQ is an open-source message-broker software/system that plays a crucial r
 
 In API design, RabbitMQ comes in handy in decoupling application processes for scalability and robustness, whilst ensuring that data delivery occurs safely and seamlessly. It introduces queuing as a way of handling multiple users or service calls at once hence enhancing responsiveness and performance of APIs. Its queue system elegantly digests API request loads, allowing services to evenly process data while preventing overloading.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@RabbitMQ Website](https://www.rabbitmq.com/)
 - [@video@Intro to RabbitMQ](https://www.youtube.com/watch?v=bfVddTJNiAw)

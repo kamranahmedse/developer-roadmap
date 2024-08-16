@@ -12,6 +12,6 @@ Xcode groups are organizational tools used to structure and manage files within 
 
 Using groups effectively helps maintain clean, organized projects, especially as they grow in size and complexity.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Managing files and folders in your Xcode project](https://developer.apple.com/documentation/xcode/managing-files-and-folders-in-your-xcode-project)

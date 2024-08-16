@@ -22,6 +22,6 @@ loggingIdentity({ length: 10, value: 3 }); // OK
 
 In this example, the `Lengthwise` interface defines a `length` property. The `loggingIdentity` function uses a generic type parameter `T` that is constrained by the `Lengthwise` interface, meaning that the type parameter must extend or implement the `Lengthwise` interface. This constraint ensures that the length property is available on the argument passed to the `loggingIdentity` function.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Generic Constraints - TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints)

@@ -8,6 +8,6 @@ Futures in Flutter are a way of representing a potential value that will be avai
 - Futures can be combined with other Futures using `Future.wait` or `Future.whenComplete` methods
 - Futures are often used with network requests, file I/O operations, and other long-running tasks in Flutter.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Futures and Error handling](https://dart.dev/guides/libraries/futures-error-handling)

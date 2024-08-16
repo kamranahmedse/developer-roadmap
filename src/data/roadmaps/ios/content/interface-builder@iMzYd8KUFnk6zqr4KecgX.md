@@ -14,7 +14,7 @@ Xcode Interface Builder is a visual design tool for creating user interfaces in 
 
 Interface Builder integrates seamlessly with Xcode's coding environment, allowing developers to switch between visual design and code implementation. It supports both .xib files for individual view controllers and .storyboard files for more complex, multi-screen interfaces.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@course@iOS Storyboards: Getting Started](https://www.kodeco.com/5055364-ios-storyboards-getting-started)
 - [@article@A bit about Interface Builder](https://medium.com/swlh/a-bit-about-interface-builder-ceffaf484580)

@@ -8,6 +8,6 @@ In TypeScript, access modifiers are keywords used to control the visibility and 
 
 Access modifiers in TypeScript allow you to define the level of visibility and accessibility of properties and methods in your class, making your code more maintainable and secure.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@TypeScript Access Modifiers](https://www.typescripttutorial.net/typescript-tutorial/typescript-access-modifiers/)

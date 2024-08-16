@@ -4,6 +4,6 @@ In GraphQL, a mutation is a type of query used to make changes to data on the se
 
 A mutation typically includes fields that specify the data to be changed and the operation to be performed (e.g. "create", "update", or "delete"). It can also include arguments to specify the specific data to be affected.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Get started with Mutations](https://graphql.org/learn/queries/#mutations)

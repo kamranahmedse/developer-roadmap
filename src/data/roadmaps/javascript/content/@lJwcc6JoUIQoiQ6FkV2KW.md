@@ -9,6 +9,6 @@ In this case, both the value and the type are the same, so the result is true.
 ```
 Here, although the values might appear similar, the types are different (string and number), so the result is false. The strict equality operator does not perform type coercion; both the value and the type must be identical.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Strict equality - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)

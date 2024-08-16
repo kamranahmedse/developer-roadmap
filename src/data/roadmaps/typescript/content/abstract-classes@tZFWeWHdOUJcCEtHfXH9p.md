@@ -18,6 +18,6 @@ class Dog extends Animal {
 }
 ```
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Abstract Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-classes-and-members)

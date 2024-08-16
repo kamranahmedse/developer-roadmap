@@ -4,6 +4,6 @@ The `NOT NULL` constraint in SQL ensures that a column cannot have a NULL value.
 
 For instance, if you're designing a table for employee data, you might want to ensure that the employee's `id` and `name` are always provided. In this case, you'd use the `NOT NULL` constraint.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL IS NULL and IS NOT NULL](https://www.programiz.com/sql/is-null-not-null)

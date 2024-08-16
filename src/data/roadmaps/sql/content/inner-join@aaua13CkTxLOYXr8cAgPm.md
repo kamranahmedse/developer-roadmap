@@ -8,7 +8,7 @@ Few things to consider in case of `INNER JOIN`:
 - It returns only the matching rows from both the tables.
 - If there is no match, the returned is an empty result.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL INNER JOIN](https://www.w3schools.com/sql/sql_join_inner.asp)
 - [@article@SQL INNER JOIN Clause](https://www.programiz.com/sql/inner-join)

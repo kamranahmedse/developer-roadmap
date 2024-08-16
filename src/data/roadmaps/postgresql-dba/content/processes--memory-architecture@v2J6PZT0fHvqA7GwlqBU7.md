@@ -7,7 +7,7 @@ PostgreSQL’s process memory architecture is designed to efficiently manage res
 - Process-specific Memory: Each process allocates memory dynamically as needed for tasks like query parsing, planning, and execution. Memory contexts within each process ensure efficient memory usage and cleanup.
 - Temporary Files: For operations that exceed available memory, such as large sorts or hash joins, PostgreSQL spills data to temporary files on disk.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Understanding PostgreSQL Shared Memory](https://stackoverflow.com/questions/32930787/understanding-postgresql-shared-memory)
 - [@article@Understanding The Process and Memory Architecture of PostgreSQL](https://dev.to/titoausten/understanding-the-process-and-memory-architecture-of-postgresql-5hhp)

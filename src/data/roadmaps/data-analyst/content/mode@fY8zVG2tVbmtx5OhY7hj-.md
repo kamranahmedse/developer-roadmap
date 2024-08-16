@@ -6,7 +6,7 @@ The mode, in essence, represents the most frequently occurring value in a datase
 
 Beyond these, utilizing the mode along with the other measures of central tendency (mean and median) can provide a more rounded view of your data. This approach personifies the diversity that's often required in data analytic strategies to account for different data distributions and outliers. The mode, therefore, forms an integral part of the data analyst's toolkit for statistical data interpretation.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Mode: What is it and how to calculate it](https://www.investopedia.com/terms/m/mode.asp)
 - [@article@Mean Median Mode Formula](https://www.cuemath.com/mean-median-mode-formula/)

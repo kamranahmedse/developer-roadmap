@@ -4,6 +4,6 @@ The SQL `FLOOR` function is used to round down any specific decimal or numeric v
 
 One important aspect to note is that the `FLOOR` function's argument must be a number and it always returns an integer.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@FLOOR](https://www.w3schools.com/sql/func_sqlserver_floor.asp)

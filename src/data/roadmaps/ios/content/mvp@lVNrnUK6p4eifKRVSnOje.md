@@ -12,7 +12,7 @@ In MVP:
 
 MVP reduces the responsibilities of the View compared to MVC, making the UI layer thinner and more easily testable. The Presenter contains the presentation logic and is usually paired with a specific View, facilitating unit testing of the user interface logic without needing to interact with the UI components directly.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@MVP Wikipedia](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)
 - [@article@]Swift MVP: A Step-by-Step Guide for Clean Code](Swift MVP: A Step-by-Step Guide for Clean Code)

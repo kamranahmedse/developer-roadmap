@@ -8,7 +8,7 @@ Logical replication is an asynchronous feature that allows data modification to 
 - You can create replicas with different database schemas by using a transformation layer between publisher and subscriber.
 - It allows you to perform a live upgrade, avoiding the downtime of your database.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Logical Replication](https://www.postgresql.org/docs/current/logical-replication.html)
 - [@youtube@PostgreSQL Logical Replication Guide](https://www.youtube.com/watch?v=OvSzLjkMmQo)

@@ -6,6 +6,6 @@ It's important to note that where `WHERE` clause introduces conditions on indivi
 
 Also note, `HAVING` applies to summarized group records, whereas `WHERE` applies to individual records.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL HAVING Clause](https://www.programiz.com/sql/having)

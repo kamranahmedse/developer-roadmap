@@ -12,7 +12,7 @@ Terraform state best practices focus on security, consistency, and collaboration
 
 These practices help maintain a secure, efficient, and manageable Terraform workflow, especially in team environments and complex infrastructures.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Managing Terraform State – Best Practices & Examples](https://spacelift.io/blog/terraform-state)
 - [@article@Best Practices for Terraform State File Management](https://www.cloudthat.com/resources/blog/best-practices-for-terraform-state-file-management)

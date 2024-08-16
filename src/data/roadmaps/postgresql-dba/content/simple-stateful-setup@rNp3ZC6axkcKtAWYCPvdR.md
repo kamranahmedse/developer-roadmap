@@ -12,7 +12,7 @@ Here are the key components and steps involved in setting up a simple stateful `
 
 - **Create a StatefulSet**: Define a `StatefulSet` that manages the deployment of your `PostgreSQL` pods. Specify the container image, port, volumes (PVC and ConfigMap), and a startup script. It ensures the unique identifier for each pod and guarantees the order of pod creation/deletion.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@How to Deploy Postgres to Kubernetes Cluster](https://www.digitalocean.com/community/tutorials/how-to-deploy-postgres-to-kubernetes-cluster)
 - [@article@Deploy PostgreSQL on K8's](https://refine.dev/blog/postgres-on-kubernetes/)

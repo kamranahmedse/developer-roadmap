@@ -32,6 +32,6 @@ Here are the key steps in setting up an SSL/TLS connection:
 
 - **Data integrity:** SSL/TLS includes mechanisms to confirm that the data received has not been tampered with during transmission, maintaining the integrity of the information being sent.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@SSL, TLS, HTTPS Explained](https://www.youtube.com/watch?v=j9QmMEWmcfo)

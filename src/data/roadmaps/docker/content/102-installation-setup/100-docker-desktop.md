@@ -26,7 +26,7 @@ To install Docker Desktop on your machine, follow these steps:
 
   If the installation was successful, the command should output the Docker version information.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Docker Desktop Documentation](https://docs.docker.com/desktop/)
 - [@article@Docker Get Started Guide](https://docs.docker.com/get-started/)

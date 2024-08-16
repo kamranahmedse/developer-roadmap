@@ -4,7 +4,7 @@ A schema is a logical collection of database objects within a PostgreSQL databas
 
 By default, every PostgreSQL database has a `public` schema, which is the default search path for any unqualified table or other database object.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@PostgreSQL Schema](https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/)
 - [@official@Schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)

@@ -4,5 +4,5 @@ A Test Plan in iOS development is a comprehensive document that outlines the str
 
 Coverage refers to the measure of how much of the codebase is exercised by the tests. Xcode provides code coverage tools that highlight the portions of code executed during tests, offering insights into untested parts. Higher code coverage typically indicates more comprehensive testing, but it’s essential to focus on meaningful coverage that validates critical functionality rather than aiming for 100% coverage without ensuring test quality. Balancing extensive unit tests, integration tests, and UI tests helps achieve effective coverage and robust application quality.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 

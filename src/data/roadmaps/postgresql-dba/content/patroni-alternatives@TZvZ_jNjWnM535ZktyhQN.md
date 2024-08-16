@@ -10,7 +10,7 @@ Repmgr - Repmgr is an open-source replication management tool for PostgreSQL tha
 
 PAF (PostgreSQL Automatic Failover) - PAF is an HA (high-availability) resource agent for the Pacemaker and Corosync cluster manager, designed for the PostgreSQL's built-in streaming replication. It was developed by the team at Dalibo and is quite lightweight compared to other alternatives. Key features of PAF include:
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@opensources@sorintlab/stolen](https://github.com/sorintlab/stolon)
 - [@official@pgPool Website](https://www.pgpool.net/mediawiki/index.php/Main_Page)

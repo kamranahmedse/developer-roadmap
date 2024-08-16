@@ -4,7 +4,7 @@ Terraform custom provisioners allow developers to extend Terraform's provisionin
 
 Developing custom provisioners requires a deep understanding of Terraform's architecture and Go programming. They're useful for integrating Terraform with proprietary systems or implementing complex, organization-specific provisioning logic. However, custom provisioners should be approached cautiously, as they increase maintenance overhead and can complicate Terraform upgrades. In many cases, it's preferable to use existing provisioners or separate configuration management tools unless there's a compelling need for custom functionality.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Terraform provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
 - [@article@Terraform provisioners - Why you should avoid them](https://spacelift.io/blog/terraform-provisioners)

@@ -31,7 +31,7 @@ There are two types of IPS:
 
 By understanding the basics of IDS and IPS, you can better evaluate your security needs and take the right steps to protect your network and hosts from potential intruders.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Intrusion Prevention System (IPS)](https://www.youtube.com/watch?v=7QuYupuic3Q)
 - [@article@What is an Intrusion Prevention System?](https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips)

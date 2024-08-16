@@ -12,6 +12,6 @@ Object-oriented programming (OOP) is a programming paradigm that is based on the
 - Dynamic binding
 - Message passing
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Overview of Object-Oriented Paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)

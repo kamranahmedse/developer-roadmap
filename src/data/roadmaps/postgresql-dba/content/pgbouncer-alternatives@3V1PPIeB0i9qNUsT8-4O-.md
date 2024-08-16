@@ -24,7 +24,7 @@ Odyssey is an open-source, multithreaded connection pooler for PostgreSQL develo
 - **Advanced Routing** - Odyssey allows you to configure routing rules and load balancing based on client, server, user, and even specific SQL queries.
 - **Transparent SSL** - Odyssey supports transparent SSL connections between clients and PostgreSQL servers, ensuring secure communication.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@opensource@yandex/odyssey](https://github.com/yandex/odyssey)
 - [@official@HAProxy Website](http://www.haproxy.org/)

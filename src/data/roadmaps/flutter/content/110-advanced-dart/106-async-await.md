@@ -7,7 +7,7 @@ It is a programming pattern in Flutter that makes it easier to write asynchronou
 
 With `async`/`await`, you can write asynchronous code that is easy to read, write, and maintain.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Asynchronous programming: async, await](https://dart.dev/codelabs/async-await)
 - [@article@Async widgets](https://docs.flutter.dev/development/ui/widgets/async)

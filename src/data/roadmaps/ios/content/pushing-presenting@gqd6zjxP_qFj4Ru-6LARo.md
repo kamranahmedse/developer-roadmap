@@ -4,7 +4,7 @@ Pushing adds a new view controller to the top of the navigation stack, ideal for
 
 Presenting displays a view controller modally, often covering the entire screen or as a sheet. It's achieved using present(_:animated:completion:), suitable for temporary or standalone content.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Pushing, Popping, Presenting, & Dismissing ViewControllers](https://medium.com/@felicity.johnson.mail/pushing-popping-dismissing-viewcontrollers-a30e98731df5)
 - [@opensource@presentViewController vs pushViewController](https://github.com/russell-archer/ModalStylesDemo)

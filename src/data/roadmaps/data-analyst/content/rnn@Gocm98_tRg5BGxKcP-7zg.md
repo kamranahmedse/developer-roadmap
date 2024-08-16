@@ -4,7 +4,7 @@ Recurrent Neural Networks(RNNs) are a type of Artificial Neural Networks(ANNs) w
 
 A data analyst leveraging RNNs can effectively charter the intrinsic complexity of data sequences, classify them, and make accurate predictions. With the fundamental understanding of deep learning, data analysts can unlock the full potential of RNNs in delivering insightful data analysis that goes beyond traditional statistical methods. Modern research and applications of RNNs extend to multiple domains including natural language processing, speech recognition, and even in the financial sphere for stock price prediction making this a key tool in a data analyst’s arsenal.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is a recurrent neural network (RNN)?](https://www.ibm.com/topics/recurrent-neural-networks)
 - [@article@Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)

@@ -8,7 +8,7 @@ Hierarchical navigation uses push and pop operations on the navigation stack. pu
 
 These can be combined: a modal can contain its own navigation stack, or a screen in the main navigation can present a modal. This flexibility allows developers to create complex navigation patterns that maintain clarity and context for users, adapting to various app structures and user flow requirements.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@animate(withDuration:animations:completion:)](https://developer.apple.com/documentation/uikit/uiview/1622515-animate)
 - [@officialpushViewController](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621887-pushviewcontroller)

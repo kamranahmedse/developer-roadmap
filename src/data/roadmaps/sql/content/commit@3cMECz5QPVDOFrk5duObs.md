@@ -4,6 +4,6 @@ The SQL COMMIT command is used to save all the modifications made by the current
 
 After the SQL COMMIT statement is executed, it can not be rolled back, which means you can't undo the operations. COMMIT command is used when the user is satisfied with the changes made in the transaction, and these changes can now be made permanent in the database.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL COMMIT and ROLLBACK](https://www.digitalocean.com/community/tutorials/sql-commit-sql-rollback)

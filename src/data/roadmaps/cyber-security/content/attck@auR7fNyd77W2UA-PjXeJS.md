@@ -8,7 +8,7 @@ The insights provided by MITRE ATT&CK can empower security professionals and tea
 
 This framework was created by the non-profit organization MITRE Corporation and is continuously updated with contributions from cybersecurity experts worldwide.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@MITRE ATT&CK®](https://attack.mitre.org/)
 - [@video@MITRE ATT&CK Framework](https://www.youtube.com/watch?v=Yxv1suJYMI8)

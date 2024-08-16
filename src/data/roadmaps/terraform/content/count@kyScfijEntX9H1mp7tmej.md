@@ -4,7 +4,7 @@ The count meta-argument in Terraform allows you to specify the number of instanc
 
 Note: You cannot delare count and for_each on the same resource.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Terraform Docs - count](https://developer.hashicorp.com/terraform/language/meta-arguments/count)
 - [@article@Terraform by Example - count](https://www.terraformbyexample.com/count)

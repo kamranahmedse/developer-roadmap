@@ -6,7 +6,7 @@ Checkpoints periodically write all modified data (dirty pages) from the shared b
 
 The background writer, on the other hand, continuously flushes dirty pages to disk, smoothing out the I/O workload and reducing the amount of work needed during a checkpoint. Parameters such as `bgwriter_delay`, `bgwriter_lru_maxpages`, and `bgwriter_lru_multiplier` control its behavior, optimizing the balance between database performance and the frequency of disk writes. Proper configuration of both components ensures efficient disk I/O management, minimizes performance bottlenecks, and enhances overall system stability.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Checkpoints](https://www.postgresql.org/docs/current/sql-checkpoint.html)
 - [@article@What is a checkpoint?](https://www.cybertec-postgresql.com/en/postgresql-what-is-a-checkpoint/)

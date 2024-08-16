@@ -4,7 +4,7 @@ TFLint is a third-party, extensible linter for Terraform code. It performs stati
 
 TFLint is configurable via .tflint.hcl files and supports custom rules. It can be integrated into CI/CD pipelines for automated code quality checks. While not an official Terraform tool, TFLint is widely used in the Terraform community to complement built-in validation tools and improve overall code quality and reliability in infrastructure-as-code projects.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@opensource@TFLint Documentation](https://github.com/terraform-linters/tflint)
 - [@article@What is TFLint and How to Lint Your Terraform Code](https://spacelift.io/blog/what-is-tflint)

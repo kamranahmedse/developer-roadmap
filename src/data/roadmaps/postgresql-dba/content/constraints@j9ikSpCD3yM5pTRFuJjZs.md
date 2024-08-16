@@ -14,7 +14,7 @@ Constraints are an essential part of the relational model, as they define rules 
 
 **Exclusion** - An exclusion constraint is a more advanced form of constraint that allows you to specify conditions that should not exist when comparing multiple rows in a table. It helps maintain data integrity by preventing conflicts in data.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Contraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [@article@PostgreSQL - Contraints](https://www.tutorialspoint.com/postgresql/postgresql_constraints.htm)

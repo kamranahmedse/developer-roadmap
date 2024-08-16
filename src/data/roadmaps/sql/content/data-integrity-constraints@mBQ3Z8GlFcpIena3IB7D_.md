@@ -4,6 +4,6 @@ SQL constraints are used to specify rules for the data in a table. They ensure t
 
 Constraints are classified into two types: column level and table level. Column level constraints apply to individual columns whereas table level constraints apply to the entire table. Each constraint has its own purpose and usage, utilizing them effectively helps maintain the accuracy and integrity of the data.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Integrity Constraints in SQL: A Guide With Examples](https://www.datacamp.com/tutorial/integrity-constraints-sql)

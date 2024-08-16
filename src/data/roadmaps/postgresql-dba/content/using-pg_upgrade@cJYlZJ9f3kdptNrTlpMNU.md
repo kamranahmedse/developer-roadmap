@@ -12,7 +12,7 @@
 
 5. **Finalize**: If everything works correctly, you can start the new cluster and remove the old cluster to free up space.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@pg_upgrade](https://www.postgresql.org/docs/current/pgupgrade.html)
 - [@video@Upgrade PostgreSQL with pg_upgrade](https://www.youtube.com/watch?v=DXHEk4fohcI)

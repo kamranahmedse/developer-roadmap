@@ -4,7 +4,7 @@ terraform state import is a command used to bring existing resources under Terra
 
 In Terraform v1.5.0 and later you can also create `import` blocks in any Terraform configuration file.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Terraform import command](https://developer.hashicorp.com/terraform/cli/import)
 - [@article@Terraform Import: What it is and how to use it](https://terrateam.io/blog/terraform-import)

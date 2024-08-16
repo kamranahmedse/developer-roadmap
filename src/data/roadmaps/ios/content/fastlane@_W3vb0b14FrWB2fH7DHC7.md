@@ -10,7 +10,7 @@ Fastlane is an open-source platform designed to simplify and automate the deploy
 
 Fastlane uses a configuration file (Fastfile) where developers can define lanes for different workflows, making the deployment process more efficient and less error-prone. This tool is highly valuable for teams looking to maintain consistency and save time in their release processes.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@FastLane Website](https://fastlane.tools)
 - [@opensource@fastlane/fastlane](https://github.com/fastlane/fastlane)

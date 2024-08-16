@@ -8,7 +8,7 @@ SOLID is an acronym that stands for five principles of object-oriented software 
 - Interface Segregation Principle (ISP)
 - Dependency Inversion Principle (DIP)
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Get Started with SOLID](https://www.bmc.com/blogs/solid-design-principles/)
 - [@article@SOLID Principles](https://khalilstemmler.com/articles/tags/solid/)

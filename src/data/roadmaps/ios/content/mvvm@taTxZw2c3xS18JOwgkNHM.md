@@ -10,7 +10,7 @@ The Model-View-ViewModel (MVVM) architectural pattern is a design approach that 
 
 MVVM promotes a clear separation of concerns, enhances testability, and facilitates data binding. The ViewModel transforms Model information for View consumption and handles View-related logic, making the View as passive as possible.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@]MVVM In 100 Seconds](https://www.youtube.com/watch?v=-xTqfilaYow)
 - [@article@Understanding MVVM: Model-View-ViewModel Architecture Explained](https://www.ramotion.com/blog/what-is-mvvm/)

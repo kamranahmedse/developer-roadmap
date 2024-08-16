@@ -4,7 +4,7 @@ SwiftUI offers several methods for presenting and dismissing views, providing fl
 
 To dismiss these presented views, SwiftUI uses the @Environment(\.presentationMode) property wrapper, allowing views to dismiss themselves. For navigation-based presentations, NavigationLink handles showing new views, while the .navigationBarItems() modifier can add dismiss functionality. These tools enable developers to create diverse and interactive user interfaces with smooth transitions between different view states.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@sheet(ispresented) Documentation]
 - [@official@dismiss Documentation](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss)

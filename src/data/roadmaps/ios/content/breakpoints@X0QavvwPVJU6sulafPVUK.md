@@ -13,7 +13,7 @@ Xcode debugger breakpoints are powerful tools for pausing program execution at s
 
 Breakpoints can be set by clicking in the gutter of the source editor or through the Breakpoint Navigator.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Setting breakpoints to pause your running app](https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app)
 - [@article@How to add and use a breakpoint in XCode](https://www.delasign.com/blog/xcode-add-use-breakpoint/)

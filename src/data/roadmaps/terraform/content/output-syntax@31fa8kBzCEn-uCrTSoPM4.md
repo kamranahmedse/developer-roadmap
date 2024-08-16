@@ -12,7 +12,7 @@ output "name" {
 
 `name` is a unique identifier for the output. `value` is the expression whose result will be output. `description` is optional and provides context. `sensitive` is a boolean flag to mark sensitive data.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@course@Hashicorp Output Tutorial](https://developer.hashicorp.com/terraform/tutorials/configuration-language/outputs)
 - [@official@Declaring an output value](https://developer.hashicorp.com/terraform/language/values/outputs#declaring-an-output-value)

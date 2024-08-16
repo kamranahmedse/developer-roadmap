@@ -31,6 +31,6 @@ myGenericNumber.add = function (x, y) {
 };
 ```
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)

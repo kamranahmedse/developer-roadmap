@@ -4,7 +4,7 @@ Recursive CTEs are a powerful feature in SQL that allow you to build complex hie
 
 Note that recursive CTEs can be complex, and it's important to ensure a proper termination condition to avoid infinite recursion. Also, be careful with the use of `UNION ALL` or `UNION`, as it may impact the results and the performance of your query.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@PostgreSQL Recursive Query](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-recursive-query/)
 - [@article@PostgreSQL recursive query explained](https://elvisciotti.medium.com/postgresql-recursive-query-the-simplest-example-explained-f9b85e0a371b)
