@@ -49,13 +49,13 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
     <div class='container'>
       <ProjectTabs projectId={projectId} activeTab='solutions' />
 
-      <div class='overflow-hidden rounded-lg border bg-white p-5'>
+      <div class='overflow-hidden rounded-lg border bg-white p-5 mb-4'>
         <div class='relative -mx-2 -mt-2 mb-5 rounded-lg bg-gray-100/70 p-5'>
           <div class='absolute right-2 top-2'>
             <Badge variant='yellow' text={projectData.difficulty} />
           </div>
           <div class='mb-5'>
-            <h1 class='mb-1.5 text-3xl font-semibold'>{projectData.title}</h1>
+            <h1 class='mb-1.5 text-3xl font-semibold'>{projectData.title} Solutions</h1>
             <p class='text-gray-500'>{projectData.description}</p>
           </div>
 

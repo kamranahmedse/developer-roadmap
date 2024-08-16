@@ -94,7 +94,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
       <p className="-mx-4 -mt-4 flex items-center bg-yellow-200 px-3 py-2 text-sm text-yellow-900">
         <CheckIcon additionalClasses="mr-1.5 w-[15px] text-yellow-800 h-[15px]" />
         <span className="mr-1.5 font-normal">Project started</span>{' '}
-        <span className="font-bold">{formattedStartedAt}</span>
+        <span className="font-semibold">{formattedStartedAt}</span>
       </p>
       <h2 className="mb-0.5 mt-5 text-2xl font-semibold text-gray-800">
         Start Building
