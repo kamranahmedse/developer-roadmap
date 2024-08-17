@@ -3,22 +3,14 @@ import { useToast } from '../../hooks/use-toast';
 import { httpGet, httpPost } from '../../lib/http';
 import { LoadingSolutions } from './LoadingSolutions';
 import { EmptySolutions } from './EmptySolutions';
-import {
-  ArrowDown,
-  ArrowUp,
-  CalendarCheck,
-  ThumbsDown,
-  ThumbsUp,
-} from 'lucide-react';
+import { ThumbsDown, ThumbsUp } from 'lucide-react';
 import { getRelativeTimeString } from '../../lib/date';
 import { Pagination } from '../Pagination/Pagination';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
-import { cn } from '../../lib/classname';
 import { LeavingRoadmapWarningModal } from './LeavingRoadmapWarningModal';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
-import { CheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 
@@ -239,7 +231,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     <section>
       {leavingRoadmapModal}
 
-      <div className="flex flex-col divide-y divide-gray-100 min-h-[500px]">
+      <div className="flex min-h-[500px] flex-col divide-y divide-gray-100">
         {solutions?.data.map((solution, counter) => {
           const isVisited = alreadyVisitedSolutions[solution._id!];
           const avatar = solution.user.avatar || '';
@@ -247,7 +239,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           return (
             <div
               key={solution._id}
-              className="group flex items-center justify-between py-2 text-sm text-gray-500"
+              className="flex flex-col justify-between gap-2 py-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0"
             >
               <div className="flex items-center gap-1.5">
                 <img
@@ -262,15 +254,17 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                 <span className="font-medium text-black">
                   {solution.user.name}
                 </span>
-                {submittedAlternatives[
-                  counter % submittedAlternatives.length
-                ] || 'submitted their solution'}{' '}
-                <span className="font-medium text-black">
+                <span className="hidden sm:inline">
+                  {submittedAlternatives[
+                    counter % submittedAlternatives.length
+                  ] || 'submitted their solution'}
+                </span>{' '}
+                <span className="text-gray-400 text-right sm:text-left flex-grow sm:flex-grow-0 sm:font-medium sm:text-black">
                   {getRelativeTimeString(solution?.submittedAt!)}
                 </span>
               </div>
 
-              <div className="5 flex items-center gap-1">
+              <div className="flex items-center justify-center sm:justify-end gap-1">
                 <span className="flex items-center overflow-hidden rounded-full border">
                   <VoteButton
                     icon={ThumbsUp}

@@ -12,7 +12,7 @@ export function VoteButton(props: VoteButtonProps) {
   return (
     <button
       className={cn(
-        'flex items-center gap-1 px-2 py-1 text-sm text-gray-500 hover:bg-gray-100 hover:text-black',
+        'flex items-center gap-1 px-2 py-1 text-sm text-gray-500 hover:bg-gray-100 hover:text-black focus:outline-none',
         {
           'bg-gray-100 text-orange-600 hover:text-orange-700': isActive,
           'bg-transparent text-gray-500 hover:text-black': !isActive,
