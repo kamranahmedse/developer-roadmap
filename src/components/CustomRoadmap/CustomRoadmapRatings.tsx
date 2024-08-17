@@ -3,6 +3,8 @@ import { Rating } from '../Rating/Rating';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { CustomRoadmapRatingsModal } from './CustomRoadmapRatingsModal';
 import { Star } from 'lucide-react';
+import { isLoggedIn } from '../../lib/jwt.ts';
+import { showLoginPopup } from '../../lib/popup.ts';
 
 type CustomRoadmapRatingsProps = {
   roadmapSlug: string;
@@ -40,6 +42,11 @@ export function CustomRoadmapRatings(props: CustomRoadmapRatingsProps) {
             <button
               className="flex h-[34px] items-center gap-2 rounded-md border border-gray-300 bg-white py-1 pl-2 pr-3 text-sm font-medium hover:border-black"
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsDetailsOpen(true);
               }}
             >

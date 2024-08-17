@@ -500,7 +500,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Describes how an application is built including its components, how they interact with eachother, environment in which they operate and so on.",
+        "label": "Describes how an application is built including its components, how they interact with each other, environment in which they operate and so on.",
         "style": {
           "fontSize": 17,
           "borderColor": "transparent",

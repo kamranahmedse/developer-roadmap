@@ -1,0 +1,3 @@
+# Viewing Diffs
+
+Viewing diffs in Git is crucial for understanding the changes made to your code. This is especially important when collaborating with others or reviewing your own work over time. Diffs show you exactly what lines have been added, modified, or removed between different versions of your files. This feature helps in code review processes, troubleshooting issues, and maintaining a clear history of your project's evolution. Git provides various commands and tools to view these differences, making it easier to track and manage changes effectively.

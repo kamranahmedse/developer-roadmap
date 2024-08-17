@@ -7,7 +7,7 @@ seo:
   title: '8 In-Demand Full Stack Developer Skills to Master'
   description: 'Master these 8 in-demand full stack developer skills and become a standout candidate for your next job application.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/full-stack-developer-skills-abb38.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-07-05
 sitemap:

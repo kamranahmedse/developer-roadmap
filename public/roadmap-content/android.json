@@ -1,0 +1,639 @@
+{
+  "Suws-7f_6Z1ChpfcnxX2M": {
+    "title": "Pick a Language",
+    "description": "When developing for Android, one crucial step is picking a programming language to use. There are multiple languages you can choose from, but the three most popular ones are Java, Kotlin, and C++. Java is the original language used for Android development and is widely used, making it a good choice for beginners due to the wealth of resources and developer communities. Kotlin is a newer option that is fully supported by Google and Android Studio, and addressing many of the drawbacks of Java which makes it a popular choice for many developers. Lastly, C++ can be used in Android development through the Android Native Development Kit (NDK), though it comes with more complexities and is usually not recommended for beginners. Your selection might depend on your existing familiarity with these languages, the complexity and specific requirements of your project, and the resources or libraries you wish to use.",
+    "links": []
+  },
+  "qIzUv8-GgQnkqChEdgD50": {
+    "title": "Kotlin",
+    "description": "`Kotlin` is a cross-platform, statically typed general-purpose programming language with type inference. Developed by JetBrains, the makers of the world’s leading IDEs, Kotlin has a syntax, which is more expressive and concise. This allows for more readable and maintainable code. It is fully interoperable with Java and comes with no limitations. It can be used almost everywhere Java is used today, for server-side development, Android apps, and much more. Kotlin introduces several improvements for programmers over Java, which makes it a preferred choice for many developers. With more concise code base and modern programming concept support - it's certainly a future of Android app development.\n\nUse following resources to learn more:",
+    "links": [
+      {
+        "title": "Learn Kotlin - w3schools",
+        "url": "https://www.w3schools.com/kotlin/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kotlin",
+        "url": "https://app.daily.dev/tags/kotlin?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Learn Kotlin Programming for Beginners - Free Code Camp",
+        "url": "https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1",
+        "type": "video"
+      }
+    ]
+  },
+  "RBABbkzD_uNFwEO-hssZO": {
+    "title": "Java",
+    "description": "Java is a popular programming language used for Android development due to its robustness and ease of use. Its object-oriented structure allows developers to create modular programs and reusable code. The language was built with the philosophy of \"write once, run anywhere\" (WORA), meaning compiled Java code can run on all platforms without the need for recompilation. Android’s API and core libraries are primarily written in Java, therefore understanding Java is fundamental in creating diverse and powerful Android apps. Java is a statically-typed language, which can be beneficial for detecting errors at compile-time rather than at runtime. Oracle, who owns Java, provides comprehensive documentation and support for the language.",
+    "links": []
+  },
+  "HlUUGj3dOZ68t4gIjerXh": {
+    "title": "The Fundamentals",
+    "description": "\"The Fundamentals\" of Android primarily concentrate on 5 components; Activities, Services, Broadcast Receivers, Content Providers, and Intents. **Activities** are essentially what you see on your screen; each screen in an app is a separate activity. **Services** run in the background to perform long-running operations or to perform work for remote processes. They do not provide a user interface. **Broadcast Receivers** respond to broadcast messages from other applications or from the system itself. These messages are often in the form of Intents. **Content Providers** manage a shared set of app data that other apps can query or modify, through a structured interface. Finally, **Intents** are messaging objects which facilitate the communication between the aforementioned components. Understanding these five core concepts is key to mastering Android fundamentals.",
+    "links": []
+  },
+  "ZRGsokU313Ky-anWbWK6q": {
+    "title": "Development IDE",
+    "description": "\"Development IDE\" refers to Development Integrated Development Environment that is vital for Android App development. For Android, the primary IDE is **Android Studio**. This official IDE from Google includes everything you need to build an Android app, such as a code editor, code analysis tools, emulators for all of Android's supported OS versions and hardware configurations, and more. Other popular IDEs include **Eclipse** (with an Android Developer Tools plugin), **NetBeans**, and **IntelliJ IDEA**. Each of these IDEs tends to have its own set of specialized features, but all are designed to provide the tools and services needed for Android development. The choice of IDE often depends on the specific needs and preferences of the developer or development team.",
+    "links": []
+  },
+  "jl1FsQ5-WGKeFyaILNt_p": {
+    "title": "Basics of Kotlin",
+    "description": "Kotlin is a statically-typed programming language that runs on the Java Virtual Machine (JVM) and can be used to develop all types of Android apps. It is Google's preferred language for Android app development. Kotlin's syntax is more concise than Java, which means less code to write and read, and fewer opportunities for errors. It provides several high-level features like lambdas, coroutines and higher order functions that help making the code more clean and understandable. Key basics of Kotlin include control flow statements (if, when, for, while), variables (mutable and non-mutable), null safety, classes and objects, inheritance, interfaces, and exception handling. While learning Kotlin, experience with Java will certainly be helpful, but it's not a prerequisite.",
+    "links": []
+  },
+  "j69erqfosSZMDlmKcnnn0": {
+    "title": "Basics of OOP",
+    "description": "In Android development, understanding the `Basics of Object-Oriented Programming (OOP)` is crucial. OOP is a programming paradigm that uses \"Objects\" - entities that contain both data and functions that manipulate the data. Key concepts include `Classes`, which are blueprints from which objects are created; `Objects`, instances of a class; `Inheritance`, where one class acquires properties from another; `Polymorphism`, the ability of an object to take many forms; `Abstraction`, showing only necessary details and hiding implementation from the user; and `Encapsulation`, the concept of wrapping data and the methods that work on data within one unit. By understanding these fundamentals, you can create more efficient and effective Android apps.",
+    "links": []
+  },
+  "cNeT1dJDfgn0ndPzSxhSL": {
+    "title": "Data Structures and Algorithms",
+    "description": "In Android, **data structures** are primarily used to collect, organize and perform operations on the stored data more effectively. They are essential for designing advanced-level Android applications. Examples include Array, Linked List, Stack, Queue, Hash Map, and Tree.\n\nMeanwhile, **algorithms** are a sequence of instructions or rules for performing a particular task. In Android, algorithms can be used for data searching, sorting, or performing complex business logic. Some commonly used algorithms are Binary Search, Bubble Sort, Selection Sort, etc. A deep understanding of data structures and algorithms is crucial in optimizing the performance and the memory consumption of the Android applications.",
+    "links": []
+  },
+  "FVxNjbDBxgf6vkZWw1Awt": {
+    "title": "What is and how to use Gradle?",
+    "description": "**Using Gradle**: Gradle is a powerful build system used in Android development that allows you to define your project and dependencies, and distinguish between different build types and flavors. Gradle uses a domain-specific language (DSL) which gives developers almost complete control over the build process. When you trigger a build in Android Studio, Gradle is the tool working behind the scenes to compile and package your app. It looks at the dependencies you declared in your build.gradle files and create a build script accordingly. Using Gradle in Android development requires continuous editing of the build.gradle files to manage app dependencies, build variants, signing configurations, and other essential aspects related to building your app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Get going with Gradle - PDF",
+        "url": "https://assets.gradlehero.com/get-going-with-gradle/get-going-with-gradle-book.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Gradle",
+        "url": "https://app.daily.dev/tags/gradle?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Gradle for Complete Beginners - 25minutes",
+        "url": "https://youtu.be/-dtcEMLNmn0?si=NuIP-3wNpUrxfTxA",
+        "type": "video"
+      },
+      {
+        "title": "Gradle Course for Beginners - 55minutes",
+        "url": "https://www.youtube.com/watch?v=R6Z-Sxb837I",
+        "type": "video"
+      }
+    ]
+  },
+  "5m_7DvInF8C_4Ml1xVI6L": {
+    "title": "Create a Basic Hello World App",
+    "description": "The \"Hello World\" app is a simple project that you can build when you're getting started with Android development. It's often the first program that beginners learn to build in a new system. It's usually considered the simplest form of program that displays a message to the user - \"Hello, World!\" In Android, this involves creating a new project from the Android Studio and setting up the main activity. The main activity file is primarily written in Java or Kotlin where you can code for the display message, while the layout design view can be created in the XML file.\n\nResources:",
+    "links": [
+      {
+        "title": "Create your first android app",
+        "url": "https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app",
+        "type": "article"
+      }
+    ]
+  },
+  "5s1CqsYCOXjNroDHaGKGa": {
+    "title": "Version Control",
+    "description": "_Version Control_ is a system that records changes to a file or set of files over time so that you can recall specific versions later. An essential tool for software development, it helps to track changes, enhance collaboration, and manage different versions of a project. Two common types of version control systems are Centralized Version Control System (CVCS) and Distributed Version Control System (DVCS). CVCS uses a central server to store all versions of a project, with users getting snapshots from that server. Examples include SVN and Perforce. On the other hand, DVCS allows multiple developers to work on a single project simultaneously. Each user has a complete backup of all versions of the work. Examples include Git and Mercurial.",
+    "links": []
+  },
+  "rqSZ2ATeHbOdIQE9Jlb0B": {
+    "title": "Git",
+    "description": "`Git` is a highly efficient and flexible distributed version control system that was created by Linus Torvalds, the creator of Linux. It allows multiple developers to work on a project concurrently, providing tools for non-linear development and tracking changes in any set of files. Git has a local repository with a complete history and version-tracking capabilities, allowing offline operations, unlike SVN. It ensures data integrity and provides strong support for non-linear development with features such as branching and merging. Yet, Git has a high learning curve and can be complex for beginners to understand the command line interface. Furthermore, Git also allows you to create `tags` to reference certain points in your history for milestone or version releases.",
+    "links": []
+  },
+  "H-2eb8fLwz8IKYXbeSVKK": {
+    "title": "GitHub",
+    "description": "**GitHub** is a cloud-based hosting service for managing software version control using Git. It provides a platform for enabling multiple developers to work together on the same project at the same time. With GitHub, codes can be stored publicly, allowing for collaboration with other developers or privately for individual projects. Key features of GitHub include code sharing, task management, and version control, among others. GitHub also offers functionalities such as bug tracking, feature requests, and task management for the project. For Android development, it supports Gradle-based android projects, plugins for Android Studio and JetBrains IntelliJ IDEA, making version control operations more user-friendly.",
+    "links": []
+  },
+  "5LFZdUiFYYU_1sYsouyan": {
+    "title": "Bitbucket",
+    "description": "Bitbucket is a web-based hosting service that is owned by Atlassian. Bitbucket uses either Mercurial or Git revision control systems, allowing users to manage and maintain their code. This platform is mainly used for code and code review. Bitbucket provides both commercial plans and free accounts. It offers free accounts with an unlimited number of private repositories (which can have up to five users in the case of free accounts) as of September 2010. It originally offered only Mercurial support. Bitbucket integrates with other Atlassian software like JIRA, HipChat, Confluence and Bamboo.",
+    "links": []
+  },
+  "Q47BtQphp59NkkZoeNXmP": {
+    "title": "GitLab",
+    "description": "`Gitlab` is a web-based DevOps lifecycle tool which provides a Git-repository manager, along with continuous integration and deployment pipeline features, using an open-source license, developed by GitLab Inc. Users can manage and create their software projects and repositories, and collaborate on these projects with other members. `Gitlab` also allows users to view analytics and open issues of their project. It stands next to other version control tools like `GitHub` and `Bitbucket`, but comes with its own set of additional features and nuances. For Android development, `Gitlab` can be particularly useful owing to its continuous integration and deployment system which can automate large parts of the app testing and deployment.",
+    "links": []
+  },
+  "5Li8J5iR_ZuyIlxX0LYei": {
+    "title": "App Components",
+    "description": "Android apps are primarily made up of five different types of components:\n\n1.  **Activities**: These are individual screens that a user can interact with. Any UI action like touching a button or swiping a screen will usually take place within an activity.\n    \n2.  **Services**: Unlike activities, services run in the background and don't have a user interface. They’re used for repetitive or long running operations, like playing music or pulling in a feed of data from a server.\n    \n3.  **Broadcast Receivers**: These are event listeners. The Android operating system uses them to respond to system-wide events.\n    \n4.  **Content Providers**: They manage and share app data with other apps installed on the device. For security, data is not generally shared across apps.\n    \n5.  **Intents**: These serve as messages or commands to the Android system. They're used to signal to the Android system that certain events have occurred.\n    \n\nEach app component is designed to serve different purposes and to have a well-defined lifecycle which defines how the component is created and destroyed.",
+    "links": []
+  },
+  "nwuVlPmzwJ17mtVQ8Hi9w": {
+    "title": "Activity",
+    "description": "`Activity` in Android is a crucial component that represents a single screen with a user interface. It is just like a window in a desktop application. Android apps are typically made up of one or more activities, each having its interface which allows user interaction. When an app is launched, an instance of `Activity` is created, starting the lifecycle of that app. Every activity has its own lifecycle (create, start, resume, pause, stop, destroy) that keeps the state of a user's progress, and Android manages these states automatically. Activities can also have `Intent`, which allows them to interact with other components, such as starting another activity or getting a result from that activity.",
+    "links": []
+  },
+  "PcHmU1c9hqKyzSjwlRPHk": {
+    "title": "Services",
+    "description": "**Services**: A service in Android is an app component that performs operations in the background without a user interface. It can be started by an application component, like an activity, and it will continue to run in the background even if the user switches to another application. There are two types of services in Android, namely, `Started Service` and `Bound Service`. A `Started Service` is used to perform a single operation, such as downloading a large file. On the other hand, a `Bound Service` offers a client-server interface that allows components to interact with the service, send requests, receive results, and even perform interprocess communication (IPC).",
+    "links": []
+  },
+  "nkcdjrswv0WCzUs48BAt9": {
+    "title": "Content Provider",
+    "description": "A **Content Provider** in Android is a key component that allows applications to securely share data with other applications. They act as a layer between databases and applications to enhance data security. Content providers manage access to a structured set of data by handling data transactions, implementing data security, and maintaining isolation between applications. They provide an abstracted interface which is used to access data, while the underlying storage method (Like SQLite database, web, or any other method) remains hidden. This mechanism aids in retrieving data from a non-relational source in a structured way. They're used primarily when data needs to be shared between multiple applications, not just within a single application.",
+    "links": []
+  },
+  "tFuAToid1Fkmu96BDtW7K": {
+    "title": "Broadcast Receiver",
+    "description": "**Broadcast Receivers** in Android are components that respond to system-wide broadcast announcements. They can be registered to respond to a specific type of broadcasts or implement a user-defined broadcast. While you can initiate a broadcast from your app, they are generally used for receiving system notifications or communicating with other applications. However, keep in mind that they cannot display a user interface, but they can start activities if necessary, which do have a user interface. A `BroadcastReceiver` class must override the `onReceive()` method where each message is received as an `Intent` object parameter.",
+    "links": []
+  },
+  "hv_9imIQpthxEaMLXEUHI": {
+    "title": "Intent",
+    "description": "\"Intent\" in Android is a software mechanism used for late runtime binding between components, such as activities, content providers, and services. It is essentially a passive data structure holding an abstract description of an operation that the Android system is requested to perform. The Intent can be explicit, in which you specify the component to start or implicit, where you declare a general action to perform, allowing a component from another app to handle it. Implicit intents are often used to request another app's functionality, such as showing a user a location on a map or taking a photo. \"Intent Filters\" are then used by the components to advertise their capabilities to handle different types of intents.",
+    "links": []
+  },
+  "FVg438cVBBzqJFkGWVbQM": {
+    "title": "Activity LifeCycle",
+    "description": "The **Activity Lifecycle** in Android represents a series of states or events that an activity can go through from its creation to its destruction. The primary states or events are `onCreate()`, `onStart()`, `onResume()`, `onPause()`, `onStop()`, `onDestroy()`, and `onRestart()`. The method `onCreate()` is called when the activity is first created, followed by `onStart()` when the activity becomes visible to the user. The `onResume()` method executes when the user starts interacting with the application. `onPause()` and `onStop()` methods are invoked when the application is no longer in the foreground or visible to the user. The `onDestroy()` method is used when the activity is being completely removed from the memory. The `onRestart()` method is called after the system stops the activity and is about to start it again. The proper handling of these states ensures the efficient use of resources and a smooth user experience.",
+    "links": []
+  },
+  "oUjetA2eduvQIeLcQlLcu": {
+    "title": "State Changes",
+    "description": "In Android, an \"Activity\" is a crucial component that represents a single screen with a user interface. One or more active activities make up an Application. These activities can go through different states in their lifecycle, often due to user interaction or system interruption. The primary states of an Activity include `Created`, `Started`, `Resumed`, `Paused`, `Stopped`, `Restarted`, and `Destroyed`. The \"Created\" state occurs when an activity instance is being created. The \"Started\" state is when the activity is visible to the user, while \"Resumed\" is when the activity is interacting with the user. An activity is \"Paused\" when it loses focus but is partly visible, \"Stopped\" when it's not visible, \"Restarted\" when the activity is about to be started, and \"Destroyed\" when the activity is finished or the system is temporarily destroying it.",
+    "links": []
+  },
+  "-O-G9bg36ut8NnZcdOaop": {
+    "title": "Tasks & Backstack",
+    "description": "The **tasks backstack** in Android refers to the way Android manages and arranges tasks in a stack-like structure. Every task has a stack of activities, which is referred to as the task's back stack. The activities are placed in the order they are opened. When a new activity is started, it is placed at the top of the stack and becomes the running activity, while the previous activity is paused and put into the back stack. When you press the back button, the current activity is destroyed and the activity at the top of the back stack becomes active again. Android defines how to navigate between tasks and activities using this back stack concept.",
+    "links": []
+  },
+  "gGdz3j33x0gfrFDp_rw8Z": {
+    "title": "Implicit Intents",
+    "description": "In Android development, **Implicit Intents** do not specify the target component explicitly like Explicit Intents. Instead, they allow the system to find a suitable component matching the Intent description to handle the request. The system will find an activity that can handle this intent by comparing the `<intent-filter>` section in the `AndroidManifest.xml` of all apps installed on the device against the Implicit Intent. An ideal example of an implicit intent is opening a URL. You do not need to know the specific activity that can handle this request, you just declare an intent to view a web page and Android system will select the suitable app that can open the URL.",
+    "links": []
+  },
+  "TmIeCF3xVCe5Sy3ITmM31": {
+    "title": "Explicit Intents",
+    "description": "**Explicit Intents** are primarily used within an application's own boundaries. In explicit intents you specify the component that needs to be responded to the intent. Therefore, the target component must be specified by calling methods such as `setComponent(ComponentName)`, `setClass(Context, Class)`, or `setClassName(String, String)`. This means that explicit intents are typically used for launching activities, broadcasting messages, starting services within the app. Explicit intents are not resolved by the system but are passed to the component identified in the intent.",
+    "links": []
+  },
+  "b-sfh6NoS-APqaNKm5L5S": {
+    "title": "Intent Filters",
+    "description": "`Intent Filters` in Android are essential components of the Android system where you can declare the capabilities of your activities, services, and broadcast receivers. An intent filter is an expression found in your app's manifest file, defined in the XML element. Android uses these filters to determine the appropriate components for incoming intents, which can be either explicit or implicit. Your app's ability to respond to intents depends on the filters you define. The filters are set of conditions comprised of `action`, `category`, and `data` which your activity or service is able to perform. If the incoming `Intent` matches with defined `Intent Filters`, Android system will permit that `Intent` to your Component (Activity, Service, or Broadcast Receiver).",
+    "links": []
+  },
+  "jePGzTejFe4ryA5qFFmjl": {
+    "title": "Design & Architecture",
+    "description": "In Android, **Design Architecture** refers to structuring the code in a way that increases its readability, maintainability, and testability. There are several ways to design architecture like [Model-View-Controller (MVC)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller), [Model-View-Presenter (MVP)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter), [Model-View-ViewModel (MVVM)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel), and [Model-View-Intent (MVI)](https://www.raywenderlich.com/817602-mvi-architecture-for-android-tutorial-getting-started). Each of these define the interaction between the data, the logic, and the UI layers. Google’s recommended architectural pattern is [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) which follow the principles of the MVVM pattern. Bear in mind that an architecture is not a rigid structure that fits all solutions. Rather, it serves as a guideline and can be tweaked as necessary.",
+    "links": []
+  },
+  "Dp2DOX10u2xJUjB8Okhzh": {
+    "title": "Frame",
+    "description": "",
+    "links": []
+  },
+  "U8iMGGOd2EgPxSuwSG39Z": {
+    "title": "Linear",
+    "description": "",
+    "links": []
+  },
+  "yE0qAQZiEC9R8WvCdskpr": {
+    "title": "Relative",
+    "description": "",
+    "links": []
+  },
+  "3fFNMhQIuuh-NRzSXYpXO": {
+    "title": "Constraint",
+    "description": "",
+    "links": []
+  },
+  "xIvplWfe-uDr9iHjPT1Mx": {
+    "title": "RecycleView",
+    "description": "RecyclerView is the most commonly used and powerful list management tool in Android development. Witch makes it easy to efficiently display large sets of data. You supply the data and define how each item looks, and the RecyclerView library dynamically creates the elements when they're needed.\n\nAs the name implies, RecyclerView recycles those individual elements. When an item scrolls off the screen, RecyclerView doesn't destroy its view. Instead, RecyclerView reuses the view for new items that have scrolled onscreen. RecyclerView improves performance and your app's responsiveness, and it reduces power consumption.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Android Developers: Create dynamic lists with RecyclerView",
+        "url": "https://developer.android.com/develop/ui/views/layout/recyclerview",
+        "type": "article"
+      }
+    ]
+  },
+  "znvZp24L-PcQwkSObtixs": {
+    "title": "TextView",
+    "description": "TextView is a widget that is seen in every android application. This widget is used to display simple text within the android application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: TextView",
+        "url": "https://developer.android.com/reference/android/widget/TextView",
+        "type": "article"
+      }
+    ]
+  },
+  "2iDJrxjXOt7o2fPp2HfRl": {
+    "title": "Fragments",
+    "description": "A `Fragment` represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity or another fragment. The fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android Developers: Fragments",
+        "url": "https://developer.android.com/guide/fragments",
+        "type": "article"
+      }
+    ]
+  },
+  "boMz0HZlMAsLdCZlpUo-H": {
+    "title": "EditText",
+    "description": "",
+    "links": []
+  },
+  "Mtx0bY0drmaTw8sCM5YTl": {
+    "title": "Dialogs",
+    "description": "A `DialogFragment` is a special fragment subclass that is designed for creating and hosting dialogs. Although you don't need to host your **dialog** within a fragment, doing so lets the `FragmentManager` manage the state of the dialog and automatically restore the dialog when a configuration change occurs. Learn more from the following resources:",
+    "links": [
+      {
+        "title": "Android Developers: Dialogs",
+        "url": "https://developer.android.com/guide/fragments/dialogs",
+        "type": "article"
+      }
+    ]
+  },
+  "WhfzFOUpm0DFEj7Oeq21R": {
+    "title": "Buttons",
+    "description": "A `button` consists of text or an icon, or both, that communicates what action occurs when the user taps it.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Android Developers: Button",
+        "url": "https://developer.android.com/develop/ui/views/components/button",
+        "type": "article"
+      }
+    ]
+  },
+  "BVgO9n7tGlVdiS72-hFSd": {
+    "title": "Toast",
+    "description": "A `toast` provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Toast",
+        "url": "https://developer.android.com/guide/topics/ui/notifiers/toasts",
+        "type": "article"
+      }
+    ]
+  },
+  "A4rtNULX_MoV93IH1Lgqw": {
+    "title": "ImageView",
+    "description": "",
+    "links": []
+  },
+  "Z4Tbd5ClnqCXGPGG09F-G": {
+    "title": "Bottom Sheet",
+    "description": "",
+    "links": []
+  },
+  "EzLjX4iRT7AxkAOsJYnSU": {
+    "title": "ListView",
+    "description": "",
+    "links": []
+  },
+  "amTxz7mS98lkhOrNMJXG_": {
+    "title": "Drawer",
+    "description": "",
+    "links": []
+  },
+  "pEBpXv3Jf1AzBNHlvVrG8": {
+    "title": "Tabs",
+    "description": "",
+    "links": []
+  },
+  "Xn1VQ-xOT67ZfJJTM4r1p": {
+    "title": "Animations",
+    "description": "",
+    "links": []
+  },
+  "60Vm-77rseUqpMiFvp-dA": {
+    "title": "Jetpack Compose",
+    "description": "`Jetpack Compose` is a modern toolkit for building native Android UI. It simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs. `Jetpack Compose` offers a declarative approach to designing UI, where you can simply describe what your UI should look like at any given point of your app’s state, and `Compose` takes care of updating the view hierarchy, making UI development more efficient. It also integrates well with existing Android apps, letting you adopt its benefits at your own pace.",
+    "links": [
+      {
+        "title": "Explore top posts about Jetpack Compose",
+        "url": "https://app.daily.dev/tags/jetpack-compose?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Jetpack Compose Crash Course",
+        "url": "https://www.youtube.com/watch?v=6_wK_Ud8--0",
+        "type": "video"
+      }
+    ]
+  },
+  "xV475jHTlLuHtpHZeXb7P": {
+    "title": "App Shortcuts",
+    "description": "App shortcuts in Android are designed to provide quick and convenient routes to specific actions or functions within your app from the device home screen. To use them, long-press an app's icon and a pop-up menu will appear with the available shortcuts. Depending on the app, you might be able to send a message, make a booking, navigate home, or perform some other specific task without having to first open the app and navigate to the desired function. These shortcuts can also be moved and placed individually on the home screen for even faster access.",
+    "links": []
+  },
+  "o5rzmnaQeiSh9ocvfJPpK": {
+    "title": "Navigation Components",
+    "description": "The **Navigation Components** are part of Android Jetpack and are designed to simplify the implementation of navigation in your Android app. These components help you follow best practices, handle deep linking, and provide a consistent user experience across deep and conditional navigation. They also automate many common tasks, such as handling Up and Back actions correctly across many different types of devices. The Navigation component consists of three key parts which are Navigation graph, NavHost, and NavController.",
+    "links": []
+  },
+  "Bz-BkfzsDHAbAw3HD7WCd": {
+    "title": "MVI",
+    "description": "",
+    "links": []
+  },
+  "pSU-NZtjBh-u0WKTYfjk_": {
+    "title": "MVVM",
+    "description": "The `Model-View-ViewModel` (MVVM) pattern is a software architectural pattern commonly used in UI development. It is designed to separate the concerns of an application, making the code more modular, testable, and maintainable.\n\nComponents:\n\n*   `Model`: Refers either to a domain model, which represents real state content (an object-oriented approach), or to the data access layer, which represents content.\n*   `View`: The view is the structure, layout, and appearance of what a user sees on the screen.\n*   `View model`: The view model is an abstraction of the view exposing public properties and commands. The view model has been described as a state of the data in the model.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android Developers: View Model",
+        "url": "https://developer.android.com/topic/libraries/architecture/viewmodel",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
+        "type": "article"
+      }
+    ]
+  },
+  "aF_xFIqTjQbENtC7pkXvJ": {
+    "title": "MVP",
+    "description": "The MVP `Model View Presenter` pattern is a derivative of the well-known MVC `Model View Controller` pattern and is one of the most popular patterns for organizing the presentation layer in Android applications.\n\nMVP is divided into three components:\n\n*   `Model`: Responsible for managing the data input to the app. This can often be an Interactor or UseCase, handling the business logic and data operations.\n*   `View`: Takes care of updating the graphical part of the application. It acts as a passive view, only receiving data and requesting actions to be performed.\n*   `Presenter`: Handles all the logic related to the graphical interface that the View requests. It provides the View with the data it needs to display on the screen.\n\nThis structure helps to create a clear separation of concerns, making your codebase more modular and easier to maintain.",
+    "links": []
+  },
+  "w1A6wPKSd3Yh2luuHV-aE": {
+    "title": "MVC",
+    "description": "MVC or `Model View Controller` is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected components.\n\nComponents:\n\n*   `Model`: The internal representations of information. This can often be an Interactor or UseCase\n*   `View`: The interface that presents information to and accepts it from the user\n*   `Controller`: The controller contains logic that updates the model and/or view in response to input from the users of the app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MVC",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/MVC",
+        "type": "article"
+      },
+      {
+        "title": "Model–view–controller",
+        "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
+        "type": "article"
+      }
+    ]
+  },
+  "ZF5XgO7I_J9928bD3CVXo": {
+    "title": "Repository Pattern",
+    "description": "In Android design architecture, the `Repository Pattern` separates the data sources from the rest of the application. It acts as a mediator between different data sources, such as persistent models, web services, or caches. Instead of having the network and database calls spread out throughout your ViewModel, they are encapsulated within a Repository class. This separation will make the code clean, easy to read and testable. It provides a simple API for data access, the rest of the app doesn't need to know where the data is coming from it just asks the repository.",
+    "links": []
+  },
+  "784fiIdKrQDlIm3VIiJQN": {
+    "title": "Builder Pattern",
+    "description": "The **Builder Pattern** in Android is used to construct complex objects step by step. It separates the construction of an object from its representation. The pattern involves a `Builder` class which is used to construct the `Product` class. The Builder class typically has a method for each part that may be used to construct a Product. It also has a method for returning the final product. The Builder pattern is useful in situations where you might have multiple ways to create an object or when an object requires a large number of parameters for its constructor.",
+    "links": []
+  },
+  "DeOxj6RzQBYfEWV-M1Ybm": {
+    "title": "Factory Pattern",
+    "description": "The **Factory Pattern** is part of the Creational Design Patterns. This pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. It introduces an abstraction layer between the client code and the concrete objects. Normally, this is achieved by using a factory method to create objects instead of using constructors. The instance of the class is usually created by a method, referred to as a `factory method`, which is either specified in an interface and implemented in implementing classes or implemented in a base class which may be optionally overridden by derived classes. The Factory Method is used when we want to provide users with a way to create an instance of a class from one of several possible classes that share a common super class.\n\nHere is a basic example of the Factory Pattern:\n\n    public abstract class Animal {\n        public abstract String makeSound();\n    }\n    \n    public class Dog extends Animal {\n        @override\n        public String makeSound() {\n            return \"Woof\";\n        }\n    }\n    \n    public class Cat extends Animal {\n        @override\n        public String makeSound() {\n            return \"Meow\";\n        }\n    }\n    \n    public class AnimalFactory {\n        public Animal createAnimal(String type) {\n            if (\"Dog\".equals(type)) {\n                return new Dog();\n            } else if (\"Cat\".equals(type)) {\n                return new Cat();\n            }\n            return null;\n        }\n    }\n    \n\nIn the code above, `AnimalFactory` is the factory class responsible to create and return instances of `Dog` and `Cat` classes.",
+    "links": []
+  },
+  "N_auRfGKkeIIc-qiHLkR_": {
+    "title": "Observer Pattern",
+    "description": "The **Observer Pattern** is a software design pattern in which an object, known as the subject, maintains a list of its dependants, called observers, and notifies them automatically of any state changes. This is usually done by calling one of their methods. It's mainly used for implementing distributed event handling systems and is viewed as a good practice to follow, making your design more robust, flexible, and scalable. The subject to be observed triggers events and observers react to the change or the event that they are listening to. In Android, observable libraries like `LiveData`, `RxJava`, `Flow`, and other reactive streams allow the implementation of observer pattern.",
+    "links": []
+  },
+  "W-WTIiQml8dLK6i_V69JK": {
+    "title": "Flow",
+    "description": "`Flow` in Android development is part of the Kotlin Coroutines library. It is a type that can emit multiple values sequentially, making it perfect for working with any data streams or any streams of events that aren't instantaneous. Like Observables, `Flow` is also based on the observer pattern, meaning it can emit values and these emissions can be observed and reacted to. However, `Flow` comes with built-in backpressure handling and the ability to transform, filter, or combine these flows in a sequence. Along with Coroutines, `Flow` encourages a more predictable and simplified concurrency design without callback hell problem.",
+    "links": []
+  },
+  "xk0vnWr7uESdzYRxwFjoK": {
+    "title": "RxJava",
+    "description": "RxJava, standing for Reactive Extensions for the JVM, is a library in the Java and Android ecosystem that allows developers to write asynchronous, event-based programs. It is developed according to reactive programming principles and it supports multi-threading operations. One can create data streams from just about anything - variables, data structures, inputs, etc. and these streams could be used with functional programming methods to process the data.\n\nIn Android, RxJava is often used in combination with Retrofit, to handle API calls or with Room, to handle tasks involving the database. This library provides a set of operators such as `map()`, `filter()`, `concat()`, `merge()`, `flatmap()` etc. to handle tasks such as chain asynchronous operations, perform computations, or transform data.\n\nThere are three important entities in RxJava - 'Observable', 'Observer' and 'Subscription'. 'Observable' is a data stream that does some work, 'Observer' watches the 'Observable' and does something when the 'Observable’ changes, and 'Subscription' is what ties an 'Observer' to an 'Observable' - linking their lifecycles and allowing 'Observer’s to unsubscribe (to stop receiving updates) when they’re destroyed. In other words, 'Subscription' is what allows you to manage memory and prevent crashes due to leaks.",
+    "links": []
+  },
+  "7rbsp1o5bzIJP11BRIoeG": {
+    "title": "RxKotlin",
+    "description": "`RxKotlin` is a lightweight library that adds convenient extension functions to `RxJava`. It allows developers to use RxJava with Kotlin in a more idiomatic way, thus making code more readable and understandable. While `RxJava` is a Java-based implementation of Reactive Extensions, `RxKotlin` is essentially a wrapper that includes extension functions and other constructs to take full advantage of Kotlin's features, such as its syntactic simplicity and ease of use.",
+    "links": []
+  },
+  "TiokceMGU9caqiR0lbFYL": {
+    "title": "LiveData",
+    "description": "`LiveData` is a data holder class that can be observed within a given lifecycle. This means that an `Observer` can be added in a pair with a `LifecycleOwner`, and this observer will be notified about modifications of the `LiveData` object only if the associated `LifecycleOwner` is in active state. `LiveData` respects the lifecycle state of app components, such as activities, fragments, or services, and it only updates app-component observers that are in an active lifecycle state. Furthermore, `LiveData` automatically removes the observers when their associated `LifecycleOwner` moves to the `Destroyed` state. This combination of `LiveData` and `LifecycleOwner` helps you to manage appropriate and efficient updates because `LiveData` takes into consideration the lifecycle state of your app components.",
+    "links": []
+  },
+  "qtXM9K7wyjOFuEMlZrB3C": {
+    "title": "Dependency Injection",
+    "description": "`Dependency Injection` is a technique where an object does not need to create its own dependencies; instead, dependencies are provided (or injected) at runtime. This technique is highly beneficial in Android Development. It helps in creating loosely coupled and easily testable code. For example, the `Retrofit` instance that your application requires to make network calls can be created somewhere else and can be injected whenever required using libraries like `Dagger`, `Koin` or `Hilt`. The `ViewModel` instances can also be injected rather than being created in the required classes directly. Through dependency injection, plugins ensure the code becomes easier to change, understand, and maintain, hence, improving the quality of the code.",
+    "links": []
+  },
+  "CK7Ce632fdTgxeFsRUVvd": {
+    "title": "Dagger",
+    "description": "[Dagger](https://dagger.dev/) is a fully static, compile-time dependency injection framework for both Java and Android. It is an adaptation of an earlier version created by Square that's focused on simplicity and speed. Dagger's primary focus is on compile-time analysis of dependencies, code simplicity, and clarity. It uses annotations to define dependencies, thus aiding in easy readability and understanding of the code. Dagger also eliminates the use of reflection to inject dependencies, thus boosting performance. It offers custom scopes to control the lifespan of instances and ensures that dependencies are Singleton across the entire lifespan of certain scopes.",
+    "links": []
+  },
+  "UMqZ-jmXKDXKuu8bzqDH_": {
+    "title": "Koin",
+    "description": "[Koin](https://insert-koin.io) is a lightweight dependency injection framework developed specifically for Kotlin developers. It uses functional resolution only - no proxy, no code generation, no reflection, and offers simplicity by leveraging Kotlin's language features. While Koin is not related to the Android platform, it provides specific extensions enabling an efficient integration into your Android applications, including [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html) and [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html), amongst others.",
+    "links": []
+  },
+  "ooo_k2k_vUBR_jQ7Ke6Et": {
+    "title": "Hilt",
+    "description": "Hilt is a dependency injection library for Android that reduces the boilerplate code that you would normally need to write when setting up manual dependency injection in your project. It is based on the Dagger library, but it simplifies the implementation process and streamlines the use of Dagger in Android apps. To set it up, you must annotate your Android classes and Hilt will automatically generate and provide the necessary dependencies for you. Moreover, Hilt provides predefined set of components tied to the Android lifecycle which helps to handle scoped instances.",
+    "links": []
+  },
+  "dc7k50PjCYZcElHhCk66p": {
+    "title": "Kodein",
+    "description": "`Kodein` is one of the recommended dependency injection frameworks suitable for Android development. This open-source Kotlin library simplifies the DI process by allowing developers to bind various types of dependencies, such as singleton, factory, or provider bindings into containers or `Kodein` modules. It promotes dependency declaration where used, instead of prior declaration. It follows a \"Define in Use\" principle that enables easy-to-use, easy-to-debug and very idiomatic Kotlin code. It's also worth noting that `Kodein` works hand in hand with Android's lifecycle and provides easy integration with popular libraries such as Android Architecture Components, leveraging their functionality.",
+    "links": []
+  },
+  "0fNQWRxst8xRstIfPaPO6": {
+    "title": "Storage",
+    "description": "On Android devices, storage refers to where your data such as apps, photos, videos, and music are saved. It can be categorized into two types: internal and external storage. Internal Storage is where data is stored that's tied directly to your app. This data is private by default and not accessible by other apps. External Storage, on the other hand, is a shared space where all apps can read and write data. It can be further subcategorized into Public and Private directories. Public directories are shared among all apps while private directories are specific to your app but can be accessed by other apps if they have the appropriate permissions. To control the access to these storage types, Android provides a file-based and a Scoped Storage framework. The latter limits apps' access to external storage and gives users more control over their data.",
+    "links": []
+  },
+  "PKql1HY0PLMfp50FRELXL": {
+    "title": "Shared Preferences",
+    "description": "Shared Preferences in Android are used to store data in key-value pairs. It works similar to a tiny database where you can save small pieces of data such as settings or the state of an application. When data is saved to Shared Preferences, it persists across user sessions, even if your application is killed or gets deleted. Data in Shared Preferences is not typically used for large amounts of data. To perform actions such as saving, retrieving, or editing data in Shared Preferences, you use an instance of `SharedPreferences.Editor`.",
+    "links": []
+  },
+  "GWq3s1iTxQOp1BstHscJ9": {
+    "title": "DataStore",
+    "description": "`DataStore` is a new and improved data storage solution by Android, meant to supersede `SharedPreferences`. It is important to understand that it comes in two different implementations: `Preferences DataStore` and `Proto DataStore`. `Preferences DataStore` uses key-value pairs similar to `SharedPreferences`, but it's more robust and handles runtime exceptions more efficiently. On the other hand, `Proto DataStore` uses custom data types to provide type safety. It lets you leverage the power of Protocol Buffers, a language-neutral, platform-neutral mechanism for serializing structured data, as the data storage format. Operating on data in `DataStore` is transactional, meaning that if an error occurs during an operation, all changes are rolled back, so the data remains in a consistent state.",
+    "links": []
+  },
+  "Bfg4So5RlI09zFNcburJd": {
+    "title": "Room Database",
+    "description": "\"Room\" is a persistence library introduced by Google that provides an abstraction layer over SQLite to help with robust database access while harnessing the full power of SQLite. Room supports the creation of databases and defines queries in compile-time-checked SQL strings. These databases belong to the data classes that you create representing your app's data. Room comprises three main components: **Database**, a container that holds your app's data tables; **Entity**, representing a table within the database; and **DAO (Data Access Object)**, containing SQL query methods to interact with the database.",
+    "links": []
+  },
+  "A4kdaj6AFueUgPI7hwKi5": {
+    "title": "File System",
+    "description": "The Android operating system uses a specific File System structure to store and manage files. It’s primarily based on the Linux File system, with some specific Android features. The File System includes several key directories that are used for specific purposes. For instance, directories such as `/system` hold system apps and firmware, while `/data` contains user data, settings and installed applications, and `/sdcard` usually represents an internal or external SD card for additional storage. It's worth mentioning directories like `/proc`, `/dev`, and `/sys` which are virtual file systems and house important system files. As an Android developer, understanding these directories can help you interact with Android's file system more effectively. Note that access to some of these directories may be restricted depending on system permissions.",
+    "links": []
+  },
+  "Yb6aKJMMCxU1QVltWg3Dr": {
+    "title": "Network",
+    "description": "In Android, the `Network` component offers vital capabilities that enable communication and interaction among users, between users and remote servers, and between users and cloud services. Android provides a variety of APIs and services to interact with networks. The primary APIs are the `ConnectivityManager`, `WifiManager`, `TelephonyManager`, and `BluetoothManager` APIs, among others. ConnectivityManager, for example, can tell you about network connectivity changes. The **Network** component also involves tools for network monitoring and testing, which can be useful for optimizing app performance and dealing with connectivity issues. Be aware, some network operations are subject to system imposed restrictions and require specific permissions.",
+    "links": []
+  },
+  "dDMRYiqrKyOBnRRQc8zsp": {
+    "title": "Retro",
+    "description": "Retrofit is a type-safe HTTP client for Android and Java. It's designed to connect your application with an API or a back-end web service. Retrofit uses annotations to encode details about the API's operations and requests, such as the HTTP method (GET, POST, PUT, DELETE, HEAD) and the query parameters. The main advantage of Retrofit over other similar libraries is in its simplicity and intuitiveness, and it efficiently handles all network calls.\n\n    Retrofit retrofit = new Retrofit.Builder()\n                          .baseUrl(\"https://api.example.com\")\n                          .addConverterFactory(GsonConverterFactory.create())\n                          .build();\n    \n    ExampleService service = retrofit.create(ExampleService.class);\n    Call<ExampleResponse> call = service.exampleCall();\n    \n\nThe `baseUrl()` is your API base URL. The `addConverterFactory()` specifies a factory to use for serialization and deserialization. In the example above, the Gson library will handle the conversion of JSON data. The `build()` call finishes the builder and returns the retrofit instance. Finally, `create()` generates an implementation of the `ExampleService` interface.",
+    "links": []
+  },
+  "5pVuwOItAhUxxJX8ysAsn": {
+    "title": "OkHttp",
+    "description": "`OkHttp` is an HTTP client that's extremely efficient, enabling several advanced features in Android app or other platforms that use Java. Developed by Square, it's built for high efficiency and capacity, simplifying many networking tasks, including connection pooling, response caching, and request retries. OkHttp allows seamless recovery from network issues, minimizing the loss of data. The library ensures fewer errors and higher quality of service by using the modern TLS encryption, extensible request and response models, and a fluent API for ease of use and integration.",
+    "links": []
+  },
+  "ww0fTbdXwVr-QIOClU7ng": {
+    "title": "Apollo-Android",
+    "description": "**Apollo Android** is a set of tools for using GraphQL with Android, made by the Apollo community developers. It's fully written in Kotlin and it was designed to seamlessly integrate with any Android app, making fetching data across network and handling data in the client-side a breeze. Apollo Android runs your queries and mutations and returns results as generated Kotlin types. It also normalizes your data and caches your results for further speed enhancements. It operates both on Android and Kotlin/JVM backend environment. It's also coroutines-first making handling concurrency easy and effective. To use Apollo Android, you'll set up the plugin, point it at your GraphQL schema, and write GraphQL queries.",
+    "links": []
+  },
+  "cFYZ2C7yNnY6NHKUNP2Z4": {
+    "title": "Asynchronism",
+    "description": "Asynchronism in Android is a practice that defines operations, which can run independently from the main operation without following the program's linear flow. The Android system uses threads to handle asynchronous processes. These threads function independently, ensuring that complex or time-consuming operations do not interfere with the user interface or other essential parts of the application. Android provides various tools for carrying out asynchronous tasks, such as `Handler`, `ThreadPoolExecutor`, `IntentService`, `AsyncTask`, and `Loader` etc. These tools provide ways to execute tasks on different threads and communicate the results back to the main thread.",
+    "links": []
+  },
+  "i_cKmTnGAYw8xpHwZHjAd": {
+    "title": "Coroutines",
+    "description": "In Android, `coroutines` refer to a concurrency design pattern that you can use on Android to simplify code that executes asynchronously. `Coroutines` provide a way to write asynchronous, non-blocking code in a natural, sequential manner. The fundamental building blocks of `coroutines` are `suspend` functions which are simply functions that can be paused and resumed at later times. They are the key to writing non-blocking asynchronous code and represent a single unit of asynchronous computation. This aspect of `coroutines` makes them useful for managing long-running tasks that might otherwise block the main thread and cause your application to become unresponsive.",
+    "links": []
+  },
+  "BeGrA5BDBMZP1Jy7n-wl-": {
+    "title": "Threads",
+    "description": "In Android, a `Thread` is a concurrent unit of execution. It has its own call stack, but can share its state with other threads in the same process, i.e., they can share the same memory area. They're primarily used in Android to perform operations in the background. One important aspect to note is that Android UI operations are not thread-safe, meaning they should always be done on the UI thread. Operations on `Threads` are typically managed through `Handler`, `Looper` and `MessageQueue` classes. Android also provides high-level constructs like `AsyncTask` and `Loader` for managing threads in relation to the UI.",
+    "links": []
+  },
+  "zXsNEyRbb8UpEOAUv6FpY": {
+    "title": "RxJava",
+    "description": "RxJava (Reactive Extensions for the JVM) is a powerful library for composing asynchronous and event-based programs using observable sequences in Java. If you are an Android developer, you might be familiar with callbacks and async tasks to perform long-running operations in the background. However, handling multiple async tasks and nested callbacks can produce code that's complicated to read and maintain. To alleviate such complexities, RxJava provides tools and methods to create, transform and chain Observable sequences in a clean and declarative manner. In other words, it provides a way to manage asynchronicity and concurrency in your code.",
+    "links": []
+  },
+  "4h37WBpYxRRyw9oH8ge7o": {
+    "title": "RxKotlin",
+    "description": "`RxKotlin` is a lightweight language extension to Java for Android development, enabling Android apps to be built using Kotlin with Reactivex. It brings the power of reactive programming paradigm to Kotlin, extending its capabilities for processing asynchronous streams of data. It allows you to express static (e.g., already known) or dynamic (e.g., future unknown) data streams, and perform various operations on them easily. Key concepts of `RxKotlin` include Observables, Observers and Schedulers. Observables represent the data streams, Observers interact with the data stream, and Schedulers determine on which thread operations are performed. RxKotlin helps manage background tasks, handle asynchronous data streams, and implement complex UIs, among others. It is especially beneficial for mobile development where UI thread and background thread coordination is essential.",
+    "links": []
+  },
+  "OAb_JD64uGm2tPoue7w6t": {
+    "title": "WorkManager",
+    "description": "`WorkManager` is an Android library introduced by Google to execute tasks in a predictable and reliable manner. It's designed for tasks that require guaranteed execution, even if the app has been closed or the device restarts. It is backwards compatible up to API 14 and uses JobScheduler for API 23 and above, whilst using a combination of BroadcastReceiver + AlarmManager for APIs 14 and up. Regardless of the device API level, WorkManager works for all Android devices. Three types of work are supported by WorkManager - OneTimeWorkRequest, PeriodicWorkRequest, and DelayedWorkRequest. You can have constraints too for your work execution like work only when there's Internet or work only when the device is in idle state. It also supports work-chaining where you can create a chain of works to be performed in a specific order.",
+    "links": []
+  },
+  "ZEdn2yy-IwHN3kOYr2ZbC": {
+    "title": "Common Services",
+    "description": "In Android, \"Common Services\" are functional units or components provided by the Android system for use by developers. These services include things such as Location Services (used to determine the device's geographical location), Notification Services (handles the display and management of user notifications), and Sensor Services (interacts with hardware sensors). Other common services are Network and Connectivity Services, Account Manager, and Data Storage Services among others. They simplify the development process by handling complex functionalities behind the scenes, allowing developers to focus on the application's specific needs.",
+    "links": []
+  },
+  "Xv0es_z64vh-QzivMeAT3": {
+    "title": "Authentication",
+    "description": "Firebase Authentication in Android provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, popular federated identity providers like Google, Facebook and Twitter, and more. Firebase also facilitates integration of functionality to sign in, sign up, and reset password. Moreover, it can be used to secure your database by implementing role-based access to data and to provide personalized experience according to the user's unique identity.\n\nFirebase Authentication offers two methods to authenticate. These are using an `email/password` login provided by Firebase Authentication or a `federated identity provider` like Google or Facebook. It also covers token-based authentication by creating custom tokens or verifying ID tokens. In addition to this, Firebase Authentication works with Firebase's client SDKs for practical use and works for long-running server processes for some of your users.\n\nFirebase Authentication provides a full suite of capabilities even beyond authentication to make your life easier, which includes Security Rules for Cloud Storage and Cloud Firestore, Firebase Dynamic Links, and Firebase Invites.\n\nRemember to always keep your development environment and Firebase console synced for smooth development operations. Any changes to the authentication method in the Firebase console should be reflected in your app and vice versa.",
+    "links": []
+  },
+  "xB4evbD07n1VrHOIpowV4": {
+    "title": "Crashlytics",
+    "description": "`Crashlytics` is a lightweight, real-time crash reporter that helps you track, prioritize, and fix stability issues that dismantle your app's quality. It delivers fast and precise information about crashes and helps you gain insights into your app's performance so you can pinpoint the exact line of code your app crashed on. Crashlytics offers a comprehensive suite of features like crash analysis, issue aggregation, and tracking user activities that led to a crash. This tool is now a part of Google's `Firebase` platform but can also be used independently.",
+    "links": []
+  },
+  "1Tz-Shj_Tuz2U8llEAcLr": {
+    "title": "Remote Config",
+    "description": "Firebase Remote Config is a cloud service offered by Firebase. It lets you change the behavior and appearance of your app without requiring a new app release. By using Firebase Remote config, you can customize your app for different user segments, manage the core aspects of your app by modifying parameters externally, and conduct A/B tests to improve your app. It works efficiently by using default values that control the behavior and appearance of your app. When your app needs configuration information, it makes a request to the Firebase Remote Config server. If the server has updated values, these values replace the default ones, hence modifying the app's behavior or appearance according to your needs.",
+    "links": []
+  },
+  "e3vHFaFFMV7kI9q6yf5e9": {
+    "title": "Cloud Messaging",
+    "description": "Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging service that enables you to send messages reliably and securely to your Android applications. It enables you to send two types of messages: \"notification messages\" and \"data messages\". Notification messages are primarily meant for user notifications and will only be delivered when the application is in the foreground. On the other hand, data messages can handle even when the app is in the background or killed and can be used to send custom key-value pairs. FCM also supports various additional features, such as topic messaging to send messages to multiple devices subscribed to a common topic, device group messaging for sending messages to groups of user devices, and upstream messaging for sending messages from the client application to the FCM server.",
+    "links": []
+  },
+  "3EEfKAd-ppIQpdQSEhbA1": {
+    "title": "FireStore",
+    "description": "Firestore, often referred to as Firebase Firestore or Cloud Firestore, is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud. Firestore comes with features like expressive querying, real-time updates, and automatic multi-region data replication. It is designed to offer seamless integration with other Firebase and Google Cloud products. It provides a cloud-based NoSQL database, which means the data is stored as collections of documents. Each document, in turn, contains a set of key-value pairs. Firestore ensures durable networking, so data syncs across client apps in real-time, even when the device is offline, making it easier for you to work with distributed data that can be kept in sync across various clients.",
+    "links": []
+  },
+  "D4ZXQOKJkyFYNZIy-MJ9Y": {
+    "title": "Google Admob",
+    "description": "Google AdMob is a mobile advertising platform designed for app developers to monetize their apps by displaying ads from over 1 million Google advertisers. AdMob supports a wide range of ad formats, such as banner ads, interstitial ads, video ads, and more. It offers a powerful mediator that enables you to display ads from multiple sources, which includes the Google Mobile Ads SDK, third-party ad networks, and house ad campaigns. Furthermore, AdMob provides analytical tools to better understand your users and maximize ad revenue.",
+    "links": []
+  },
+  "m5rumeynEbS8T27pelr0-": {
+    "title": "Google Play Services",
+    "description": "_Google Play Services_ is a proprietary background service and API package for Android devices from Google. Operated by Google, the service provides core functionalities like authentication for Google services, synchronized contacts, access to all the latest user privacy settings, and higher quality, lower-powered location-based services. It also speeds up offline searches, provides more immersive maps, and improves gaming experiences. Google Play Services play a crucial role in the operation of various other applications, including those not developed by Google. Moreover, it improves the overall Android experience by speeding up offline searches, providing more detailed maps, enhancing gaming experiences, and more.",
+    "links": []
+  },
+  "S5FVF9rMgVSSDKXJW2GYb": {
+    "title": "Google Maps",
+    "description": "Google Maps is a crucial service on Android, offering powerful, user-friendly mapping technology and local business information. Google Maps features include street maps, satellite imagery, 360° panoramic views of streets (Street View), real-time traffic conditions (Google Traffic), and route planning for traveling by foot, car, bicycle and air, or public transportation. The service's interface includes a function to overlay various layers such as traffic density, public transit lines, and cycling paths. Google Maps for Android also provides an API, which allows developers to interface with and control certain aspects of the Google Maps service in their applications. This capability subjects to certain usage limits and requirements set by Google.",
+    "links": []
+  },
+  "77F9F3oI5CPgwgM_hxWfa": {
+    "title": "Linting",
+    "description": "`Linting` in Android is a tool that analyzes the source code of your application to identify potential errors, bugs, stylistic errors, and suspicious constructs. The term Linting came from a Unix utility that examined C language source code. In Android, it not only checks for potential Java issues but also for XML layout files and provides alerts for issues it encounters regarding usability, performance, and accessibility. For instance, it may scrutinize a draft of your AndroidManifest.xml file for potential duplication of elements or other anomalies that would cause the app to crash.",
+    "links": []
+  },
+  "zMbXQH17Q52opdbitPzj7": {
+    "title": "Ktlint",
+    "description": "`ktlint` is a static code analysis tool. It enforces a highly consistent style and adheres extensively to the official Kotlin coding conventions. `ktlint` does not have any configuration options (by design). The only exceptions are disabling specific rule(s) and specifying indentation size. `ktlint` can check, as well as automatically fix your code. Its main goal is to bring unified code style to your project. It works on the command line as well, so it can be hooked up into your continuous integration pipeline. It also has Ant, Gradle and Maven wrappers. You can use Ktlint on any Android/Kotlin project, as long as you have Gradle or Maven installed.",
+    "links": []
+  },
+  "RUvuCp_JK5MQQT13SSHUV": {
+    "title": "Detekt",
+    "description": "`Detekt` is a static code analysis tool for the Kotlin programming language. It operates on the abstract syntax tree provided by the Kotlin compiler and can run in the command line or as a task in your Gradle build script. Detekt provides complexity reports that can be used to identify overly complex code and help simplify it. It also checks for a variety of potential bugs and code smells, including issues with formatting, naming conventions, exception handling, and more. Moreover, Detekt is highly configurable, allowing you to enable, disable, or modify the behavior of its checks to suit your project's needs.",
+    "links": []
+  },
+  "6KbSUAoT_jTudFoIbwMpA": {
+    "title": "Debugging",
+    "description": "\"Debugging\" is a critical step in the app development process. In Android development, it includes identifying and fixing errors, or bugs, in your code. You can debug Android apps using several tools and techniques. For example, Android Studio, the primary integrated development environment (IDE) for Android, comes with a built-in debugging tool, the Android Debug Bridge (ADB). This command-line tool allows you to communicate your device and perform various actions like installing and debugging apps. Android Studio also supports step-by-step debugging, where you can set breakpoints in your code and inspect the application state at those points. Additionally, you can use log messages to monitor the behavior of your application, which is especially useful for understanding the state of your app during runtime. Remember that before debugging, you need to build your app in debug mode.",
+    "links": []
+  },
+  "VFOD4JrV8kZ2583G3oT95": {
+    "title": "Timber",
+    "description": "`Timber` is a logging utility tool that has been specifically extended from the `Log` class of Android. It has been built to simplify the logging process while aiming to reduce the amount of boilerplate code the developer has to write. It was designed and is maintained by Jake Wharton, a renowned contributor in the Android Developer community. In Timber, each log message is directed to the next available logger, reducing the redundancy of manually assigning log tags. The simplicity of Timber is highlighted by its ability to log without defining any tag. Most importantly, Timber only logs messages in debug builds by default, avoiding potential data leaks in your production application.",
+    "links": []
+  },
+  "3i4g9ZWgLxKb2UMgRJi4Q": {
+    "title": "Leak Canary",
+    "description": "LeakCanary is a powerful open-source memory leak detection library for Android and Java. It is integrated into your app, and once you run your app, LeakCanary immediately starts watching for memory leaks and captures a memory dump if it detects one. After investigation, it will present a full stack trace to help you pinpoint the exact location of the memory leak. With the LeakCanary's user-friendly interface, you can then analyze the memory leak right in your app. The most recent version of LeakCanary also includes other improvements like automatic detection of leaks in Activity, Fragment, View, ViewModel, LiveData, etc.",
+    "links": []
+  },
+  "7RKN1FNtRE_BE6QeAQrKb": {
+    "title": "Chucker",
+    "description": "`Chucker` is an open-source debugging library created for Android applications. It has been designed to be easy to use and convenient for developers. This library intercepts and records all HTTP requests and responses inside your application, which helps to visualize and share this information in an understandable and easy-to-read format. Using Chucker's distinct features, you can inspect all the HTTP and HTTPS traffic going in and out of your app directly. In addition, it provides other nifty features such as a user-friendly interface to view the server's raw response. It's like having a built-in network inspector in your debugging tool, enabling you to solve network-related issues more efficiently.",
+    "links": []
+  },
+  "ACUJlDDR0jqEohsFzWEoQ": {
+    "title": "Jetpack Benchmark",
+    "description": "Jetpack Benchmark is a library within the Android Jetpack Suite that allows developers to quickly and accurately measure the performance of their apps. This library can help measure CPU, memory, and IO performance of code in Android apps. Developers can define some specific code paths to be benchmarked by wrapping the code in `BenchmarkRule.measureRepeated {}`. In addition, it automatically takes care of warmup, measures your code performance, and outputs benchmarking results to the Android Studio's logcat.",
+    "links": []
+  },
+  "ZOQm5OlzCA-h_yxywwDrW": {
+    "title": "Testing",
+    "description": "_**Android Testing**_ is a crucial part of the app development process. It involves validating the functionality, performance, usability, and consistency of your app before deploying it to the Play Store. There are two types of testing methods notably used: **Unit testing** and **Instrumentation testing**. Unit testing, as the name suggests, tests each unit or segment of your code separately. It doesn't require Android dependencies and hence, runs faster. Instrumentation testing, on another hand, requires Android dependencies and is slower. Instrumentation testing tests the UIs, simulates user interactions and validates the navigation between different parts of your app. Android provides built-in testing frameworks like `JUnit` for unit testing and `Espresso` for Instrumentation testing. These can effectively test different parts of your app, assuring its robustness.",
+    "links": []
+  },
+  "-ONSC-ImGSELbamKmjIlH": {
+    "title": "Espresso",
+    "description": "Espresso is a testing framework provided by Android to create UI tests for Android applications. It automatically synchronizes your test actions with the UI of your application, ensuring that your test will only proceed when the necessary UI activities have been completed. In Espresso, you can programmatically simulate user interactions like clicking buttons, typing text, or swiping screens, and then examine the UI's state to confirm it's as expected. Espresso tests can run on devices running Android 4.3 (API level 18) or higher. It's important to note that Espresso tests are written based on what the user can see on the screen.",
+    "links": []
+  },
+  "gvGAwjk_nhEgxzZ_c3f6b": {
+    "title": "JUnit",
+    "description": "JUnit is a popular testing framework for Java programming. It forms the basis for many other testing libraries and tools in the Android ecosystem, making it important for any Android developer to become familiar with. The basic use of JUnit involves annotations such as `@Test`, indicating methods that represent a single test case. Other useful features include `@Before` and `@After` which allow for setup and teardown processes to be defined clearly. Another powerful feature in JUnit is the ability to create parameterized tests, effectively running the same test multiple times with different inputs.",
+    "links": []
+  },
+  "kc6buUsLAeZeUb4Tk0apM": {
+    "title": "Distribution",
+    "description": "Distribution in Android refers to the methods and channels you can use to get your Android application into the hands of users. You can choose to distribute your app on the Google Play Store, which is the official app store for the Android operating system. This platform makes your app available to users in various countries around the world. Additionally, you can also opt to distribute your app through other third-party app stores or even your own website. Furthermore, Google provides a range of distribution options such as country targeting, device targeting, and staged rollouts, which can be customized according to your distribution strategy. Remember, when you submit your application for distribution, you must adhere to the respective app store's policy and content guidelines.",
+    "links": []
+  },
+  "T7q_quNaIAuGi96OdnDT1": {
+    "title": "Firebase Distribution",
+    "description": "Firebase Distribution is a development tool within the Google Firebase suite that allows you to share pre-release versions of your Android apps with your development team. It enables you to distribute your app binaries to multiple testers and teams to get feedback before the app's official launch. Firebase Distribution supports both Android and iOS applications and works in tandem with other features, like Firebase Crashlytics, to effectively manage the testing and debugging aspects of your application's lifecycle.",
+    "links": []
+  },
+  "HgRdgi2Hu4C8YLG5PXfoo": {
+    "title": "Google Playstore",
+    "description": "**Google Play Store** is the official distribution channel for Android apps and other digital media content. It is a global online software store developed and operated by Google. Developers submit their applications to Google Play through the Play Console where Google Play's automated systems scan for potentially malicious code and content violations, before they are published on the Play Store. Users can then browse, download, and use these applications on their Android devices or via the web. Purchases, downloads, and user feedback can be tracked via the Google Play Console. Owners of Android devices can also configure automatic updates for the applications they have installed from the store. This platform supports multiple languages and multiple forms of payment methods, making it accessible and customer-friendly.",
+    "links": []
+  },
+  "_FSlD_qTz5Xo0x3pB6sZI": {
+    "title": "Signed APK",
+    "description": "A **Signed APK** is a version of your app that you prepare for distribution in the Play Store or other Android markets. When you sign your app using a private key, you authenticate your identity as the developer of the app. It is a required step by the Android system that ensures only updates to the APK that are from the original developer will be accepted. The Android system refuses to install an app if it's not signed appropriately, thereby protecting users from potential security risks. Please make sure that you keep your private key in a safe place for future updates to your app, losing it would imply that you cannot update your app anymore.",
+    "links": []
+  },
+  "4_e76QafrB419S2INOeKd": {
+    "title": "Interface & Navigation",
+    "description": "In Android development, the concepts of \"Interface\" and \"Navigation\" are crucial. The \"Interface\" often refers to the Graphical User Interface (GUI) that users interact with. This includes buttons, text fields, image views, scroll views and other UI elements that the users can interact with to perform certain tasks. Tools like XML and Material Designs are used for interface design in Android. Meanwhile, \"Navigation\" refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within the app, following a clear path, like a map. Android uses the Navigation Component, a suite of libraries, tools, and guidance on constructing in-app navigation. Understanding both these elements, Interface and Navigation, is fundamental to creating an intuitive and user-friendly Android application.",
+    "links": []
+  }
+}

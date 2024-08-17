@@ -1749,7 +1749,7 @@
       "focusable": true
     },
     {
-      "id": "BqvijNoRzSGYLCMP-6hhr",
+      "id": "AAo7DXB7hyBzO6p05gx1i",
       "type": "subtopic",
       "position": {
         "x": -390.0291449445003,
@@ -1757,7 +1757,7 @@
       },
       "selected": false,
       "data": {
-        "label": "CISSP",
+        "label": "CEH",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2045,7 +2045,7 @@
       "selectable": true
     },
     {
-      "id": "AAo7DXB7hyBzO6p05gx1i",
+      "id": "BqvijNoRzSGYLCMP-6hhr",
       "type": "subtopic",
       "position": {
         "x": -389.24003999212795,
@@ -2053,7 +2053,7 @@
       },
       "selected": false,
       "data": {
-        "label": "CEH",
+        "label": "CISSP",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -4014,7 +4014,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Network Topologies",
+        "label": "Network Protocols",
         "href": "",
         "color": "#000000",
         "style": {
