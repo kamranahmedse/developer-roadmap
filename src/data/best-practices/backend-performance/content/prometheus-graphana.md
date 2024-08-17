@@ -1,3 +1,5 @@
 # Backend Monitoring with Prometheus, Grafana, ELK Stack
 
 Efficiency and rate of performance are paramount for the backend processes in web applications. Utilizing performance monitoring tools such as Prometheus, Grafana, and the ELK Stack ensures that any issues impacting performance can be promptly identified and rectified. For example, Prometheus offers robust monitoring capabilities by collecting numeric time series data, presenting a detailed insight into the application's performance metrics. Grafana can visualize this data in an accessible, user-friendly way, helping developers to interpret complex statistics and notice trends or anomalies. Meanwhile, the ELK Stack (Elasticsearch, Logstash, Kibana) provides log management solutions, making it possible to search and analyze logs for indications of backend issues. By using these tools, developers can effectively keep backend performance at optimal levels, ensuring smoother user experiences.
+
+- [@video@Tutorial - Grafana Explained in 3 minutes](https://www.youtube.com/watch?v=X-GLqyMZaJk)
