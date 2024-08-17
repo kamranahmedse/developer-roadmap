@@ -18,5 +18,5 @@ For example, `git log -2 --graph` will display the last two commits in graph for
 
 Visit the following resources to learn more:
 
-- [Git Log (Official)](https://git-scm.com/docs/git-log)
-- [Git Log Cheatsheet (Article)](https://elijahmanor.com/blog/git-log)
+- [@official@Git Log](https://git-scm.com/docs/git-log)
+- [@article@Git Log Cheatsheet](https://elijahmanor.com/blog/git-log)
