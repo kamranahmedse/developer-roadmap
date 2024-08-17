@@ -1,6 +1,6 @@
 # Why React Native?
 
-React Native is a widely popular framework for building native mobile applications using JavaScript(or TypeScript) and React. There are plenty of reasons why you would want to choose React Native for your next mobile app development project:
+React Native is a widely popular framework for building native mobile applications using JavaScript (or TypeScript) and React. There are plenty of reasons why you would want to choose React Native for your next mobile app development project:
 
 - **Code Reusability:** React Native allows you to share a significant amount of your codebase between iOS and Android platforms. This not only reduces the development time but also makes it easier to maintain the app.
 - **Familiar React Concepts:** If you're already familiar with ReactJS, React Native will feel right at home for you. Since it's based on React, the same principles of components and state management apply in React Native too.
