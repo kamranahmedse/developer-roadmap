@@ -357,8 +357,14 @@
   },
   "BCq5sgWQLiw0f7u7ZSAd2": {
     "title": "Module Architecture",
-    "description": "",
-    "links": []
+    "description": "Angular’s module architecture organizes an application into cohesive units called NgModules, each defined by the @NgModule decorator. These modules group related components, directives, pipes, and services to encapsulate functionality and promote modular development. The root module (AppModule) is the entry point, bootstrapping the application and importing essential modules like BrowserModule. Feature modules encapsulate specific functionalities and can be eagerly or lazily loaded to improve performance and manageability. Shared modules group reusable components and services to prevent code duplication. The @NgModule metadata includes properties like imports, declarations, exports, providers, and bootstrap, which help manage dependencies, declarations, visibility, service providers, and the root component. This modular approach enhances code organization, scalability, and maintainability in Angular applications.\n\nVisit following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Architecture",
+        "url": "https://dev.to/digitaldino/angular-architecture-39no",
+        "type": "article"
+      }
+    ]
   },
   "ex8FOKrUlbu4MuEq2czyW": {
     "title": "Creating Components",
@@ -383,16 +389,11 @@
   },
   "9YhTXybJw2gszlqFeBtW3": {
     "title": "Creating Modules",
-    "description": "Creating modules in Angular helps organize your application into manageable, cohesive units. Each module can encapsulate related components, directives, pipes, and services. Here's a detailed guide on how to create and use modules in Angular.\n\nCreation Methods:\n\n*       Generate Modules: Use ng generate module module-name.\n        \n    \n*       Define Modules: Use @NgModule decorator to declare components, import other modules, and export components.\n        \n    \n*       Create and Add Components: Generate and add components to the module.\n        \n    \n*       Import Modules: Import your new module into app.module.ts or other feature modules.\n        \n    \n*       Feature Modules: Use feature modules for large applications to manage related functionalities.\n        \n    \n\nVisit the following resources to learn more:",
+    "description": "Creating modules in Angular helps organize your application into manageable, cohesive units. Each module can encapsulate related components, directives, pipes, and services. Here's a detailed guide on how to create and use modules in Angular.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Angular Official Docs (Feature Modules)",
         "url": "https://angular.dev/guide/ngmodules/feature-modules",
-        "type": "article"
-      },
-      {
-        "title": "How to Create a new module in Angular",
-        "url": "https://www.geeksforgeeks.org/how-to-create-a-new-module-in-angular/",
         "type": "article"
       }
     ]

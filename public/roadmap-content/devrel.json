@@ -433,8 +433,19 @@
   },
   "GvmXdWiwITgWzx_f5_ick": {
     "title": "Building a Community",
-    "description": "",
-    "links": []
+    "description": "Online developer communities have become the heart of successful DevTools (Developer Tools) go-to-market (GTM) strategies. They provide a platform for developers to connect, collaborate, learn, and share their expertise, ultimately fostering loyalty, driving product adoption, and fueling innovation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Building and Nurturing Online Developer Communities: The Ultimate Guide",
+        "url": "https://www.doc-e.ai/post/building-and-nurturing-online-developer-communities-the-ultimate-guide",
+        "type": "article"
+      },
+      {
+        "title": "10 Proven Strategies for Building a Developer Community That Thrives: A Guide to Inclusion & Engagement",
+        "url": "https://dev.to/swati1267/10-proven-strategies-for-building-a-developer-community-that-thrives-a-guide-to-inclusion-engagement-21cm",
+        "type": "article"
+      }
+    ]
   },
   "UKi3waPx2pozvZf2aQ52s": {
     "title": "Identifying Audience",
