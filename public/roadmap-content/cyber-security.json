@@ -1900,18 +1900,36 @@
   },
   "ZEgxmvjWPp5NofLFz_FTJ": {
     "title": "Impersonation",
-    "description": "",
-    "links": []
+    "description": "Impersonation in cybersecurity refers to an attack technique where a threat actor pretends to be a legitimate person or entity to deceive individuals, systems, or organizations. This tactic is commonly used in social engineering attacks to gain unauthorized access to sensitive information, resources, or systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is an Impersonation Attack?",
+        "url": "https://www.upguard.com/blog/impersonation-attack",
+        "type": "article"
+      }
+    ]
   },
   "dcvuKHq0nHgHLcLwtl4IJ": {
     "title": "Watering Hole Attack",
-    "description": "",
-    "links": []
+    "description": "Watering Hole Attack is a type of cyberattack where the attacker targets a specific group of users by compromising a website or online resource that they are known to frequently visit. The name \"watering hole\" comes from the idea of predators waiting by a water source to attack prey, similar to how attackers wait for their targets to visit a compromised site.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a watering hole attack?",
+        "url": "https://www.techtarget.com/searchsecurity/definition/watering-hole-attack",
+        "type": "article"
+      }
+    ]
   },
   "cO70zHvHgBAH29khF-hBW": {
     "title": "Drive by Attack",
-    "description": "",
-    "links": []
+    "description": "Drive-by Attack is a type of cyberattack where malicious code is automatically downloaded and executed on a user's system simply by visiting a compromised or malicious website. The user does not need to click on anything or interact with the page; just loading the website is enough to trigger the attack.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Drive-By Attack?",
+        "url": "https://www.ericom.com/glossary/what-is-a-drive-by-attack/",
+        "type": "article"
+      }
+    ]
   },
   "0LeDwj_tMaXjQBBOUJ5CL": {
     "title": "Typo Squatting",
