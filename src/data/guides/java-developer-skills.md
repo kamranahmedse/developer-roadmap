@@ -182,7 +182,7 @@ Design patterns are proven approaches to solving specific design challenges and 
 
 As the popular saying goes, "a tree cannot make a forest." While it might be tempting to work in isolation and tackle all development tasks alone, it's essential for you to join communities that encourage collaboration, peer learning, and staying updated on the latest developments.
 
-A great community to join is the [r](https://discord.gg/cJpEt5Qbwa)[oadmap.sh](https://discord.gg/cJpEt5Qbwa) [Discord community](https://discord.gg/cJpEt5Qbwa), where you can connect with like-minded individuals who share your passion for development.
+A great community to join is the [r](https://discord.gg/ZrSpJ8zH)[oadmap.sh](https://discord.gg/ZrSpJ8zH) [Discord community](https://discord.gg/ZrSpJ8zH), where you can connect with like-minded individuals who share your passion for development.
 
 ### Soft skills
 

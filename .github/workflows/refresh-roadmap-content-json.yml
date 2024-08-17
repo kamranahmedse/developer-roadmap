@@ -1,0 +1,45 @@
+name: Refreshes roadmap content JSON
+
+on:
+  workflow_dispatch: # allow manual run
+  schedule:
+    - cron: '0 0 * * *' # every day at midnight
+
+jobs:
+  upgrade-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install dependencies and generate content JSON
+        run: |
+          pnpm install
+          npm run generate:roadmap-content-json
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          delete-branch: false
+          branch: "chore/update-content-json"
+          base: "master"
+          labels: |
+            dependencies
+            automated pr
+          reviewers: kamranahmedse,arikchakma
+          commit-message: "chore: update roadmap content json"
+          title: "Update roadmap content json"
+          body: |
+            Updates the roadmap content JSON files in the `public` folder.
+            Please review the changes and merge if everything looks good.

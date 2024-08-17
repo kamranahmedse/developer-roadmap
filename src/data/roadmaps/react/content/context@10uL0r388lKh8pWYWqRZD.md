@@ -6,6 +6,7 @@ In a typical React application, data is passed top-down (parent to child) via pr
 
 Visit the following resources to learn more:
 
-- [@article@Basic useContext Guide](https://www.w3schools.com/react/react_usecontext.asp)
 - [@official@Passing Data Deeply with Context](https://react.dev/learn/passing-data-deeply-with-context)
+- [@video@React Context API Crash Course](https://www.youtube.com/watch?v=t9WmZFnE6Hg)
+- [@article@Basic useContext Guide](https://www.w3schools.com/react/react_usecontext.asp)
 - [@article@State with useContext and useState/useReducer](https://www.robinwieruch.de/react-state-usereducer-usestate-usecontext/)

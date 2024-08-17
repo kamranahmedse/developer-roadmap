@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@official@Conditional Rendering](https://react.dev/learn/conditional-rendering)
 - [@article@Different techniques for conditional rendering in React](https://www.robinwieruch.de/conditional-rendering-react/)
+- [@video@Conditional rendering in React](https://www.youtube.com/watch?v=4oCVDkb_EIs)

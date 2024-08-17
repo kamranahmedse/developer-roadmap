@@ -5,4 +5,4 @@ Breadth first search for a graph is a way to traverse the graph. It starts at th
 Visit the following resources to learn more:
 
 - [@video@Graph Algorithms II - DFS, BFS, Kruskals Algorithm, Union Find Data Structure - Lecture 7](https://www.youtube.com/watch?v=ufj5_bppBsA&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=7)
-- [@video@Breadth-first search in 4 minutes](https://www.youtube.com/watch?v=hz5ytanv5qe)
+- [@video@Breadth-first search in 4 minutes](https://www.youtube.com/watch?v=HZ5YTanv5QE)

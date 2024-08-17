@@ -37,7 +37,15 @@ export function TabLink(props: TabLinkProps) {
   });
 
   const badgeNode = badgeText && (
-    <span className="ml-0.5 hidden items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black transition-colors group-hover:bg-yellow-300 sm:flex">
+    <span
+      className={cn(
+        'ml-0.5 hidden items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black transition-colors sm:flex',
+        {
+          'bg-gray-200 text-black group-hover:bg-gray-300 ': badgeText?.toLowerCase() == 'soon',
+          'bg-yellow-200 text-black group-hover:bg-yellow-300 ': badgeText?.toLowerCase() == 'new',
+        },
+      )}
+    >
       <span className="relative -top-px">{badgeText}</span>
     </span>
   );
