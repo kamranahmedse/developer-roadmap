@@ -18,4 +18,4 @@ The goal is to trick users into entering their credentials, which the attacker c
 
 Visit the following resources to learn more:
 
-- [@article@Common tool - airgeddon](https://www.kali.org/tools/airgeddon/)
+- [@website@Common tool - airgeddon](https://www.kali.org/tools/airgeddon/)
