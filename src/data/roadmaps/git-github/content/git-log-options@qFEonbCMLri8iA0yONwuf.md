@@ -4,12 +4,13 @@
 
 Here are some common git log options:
 
-- -2: Only show the last two commits.
-- --all: Show all branches in the repository.
-- --graph: Display the commit history as a graph.
-- --no-color: Disable colorized output.
-- --stat: Show a statistical summary of changes.
-- **-S`: Only show commits with modified files.
+- `-2`: Only show the last two commits.
+- `--all`: Show all branches in the repository.
+- `--graph`: Display the commit history as a graph.
+- `--pretty`: Enable clean colorized output.
+- `--no-color`: Disable colorized output.
+- `--stat`: Show a statistical summary of changes.
+- `**-S`: Only show commits with modified files.
 
 You can combine these options to tailor your log output to suit your needs.
 
