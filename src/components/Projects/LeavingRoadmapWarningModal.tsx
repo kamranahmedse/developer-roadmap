@@ -1,6 +1,6 @@
 import { ArrowUpRight, X } from 'lucide-react';
 import { Modal } from '../Modal';
-import { getRelativeTimeString } from '../../lib/date';
+import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 
 type LeavingRoadmapWarningModalProps = {
   onClose: () => void;
@@ -12,32 +12,41 @@ export function LeavingRoadmapWarningModal(
 ) {
   const { onClose, onContinue } = props;
 
-  const projectTips = [
-    'Leave an upvote if you liked the project',
-    'Open an issue on the GitHub repository and give the user feedback about their project',
-    'Report if the solution is not relevant',
-  ];
-
   return (
     <Modal onClose={onClose} bodyClassName="h-auto p-4">
-      <h2 className="mb-0.5 text-xl font-semibold">Leaving roadmap.sh</h2>
-      <p className="text-balance text-sm text-gray-500">
-        You are about to visit the project page on GitHub. Once you have
-        reviewed the project, please back and.
+      <h2 className="mb-1.5 text-2xl font-semibold">Leaving roadmap.sh</h2>
+      <p className="text-sm text-gray-500">
+        You are about to visit the project solution on GitHub. We recommend you
+        to follow these tips before you leave.
       </p>
 
-      <ul className="ml-4 mt-4 list-disc space-y-1.5 marker:text-gray-400">
-        {projectTips.map((tip) => {
-          return (
-            <li key={tip} className="text-balance">
-              {tip}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="my-3">
+        <p className="rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          Make sure to come back and{' '}
+          <span className="font-medium text-purple-600">leave an upvote</span>{' '}
+          if you liked the solution. It helps the author and the community.
+        </p>
+
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          If you have feedback on the solution, open an issue or a pull request
+          on the{' '}
+          <span className="font-medium text-purple-600">
+            solution repository
+          </span>
+          .
+        </p>
+
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          Downvote the solution if it is{' '}
+          <span className="font-medium text-purple-600">
+            incorrect or misleading
+          </span>
+          . It helps the community. It helps the community.
+        </p>
+      </div>
 
       <button
-        className="mt-4 inline-flex items-center gap-2 rounded-lg bg-black p-2 px-3 text-white"
+        className="inline-flex w-full items-center gap-2 rounded-lg bg-black px-3 py-2.5 text-sm text-white"
         onClick={onContinue}
       >
         <ArrowUpRight className="h-5 w-5" />

@@ -50,11 +50,11 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
       <ProjectTabs projectId={projectId} activeTab='solutions' />
 
       <div class='mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5'>
-        <div class='relative mb-5'>
+        <div class='relative mb-5 hidden sm:block'>
           <h1 class='mb-1 text-xl font-semibold'>
             {projectData.title} Solutions
           </h1>
-          <p class='hidden text-sm text-gray-500 sm:block'>
+          <p class='text-sm text-gray-500'>
             {projectData.description}
           </p>
         </div>

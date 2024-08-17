@@ -13,6 +13,7 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
+import { cn } from '../../lib/classname.ts';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -239,7 +240,9 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           return (
             <div
               key={solution._id}
-              className="flex flex-col justify-between gap-2 py-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0"
+              className={
+                'flex flex-col justify-between gap-2 py-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0'
+              }
             >
               <div className="flex items-center gap-1.5">
                 <img
@@ -259,12 +262,12 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                     counter % submittedAlternatives.length
                   ] || 'submitted their solution'}
                 </span>{' '}
-                <span className="text-gray-400 text-right sm:text-left flex-grow sm:flex-grow-0 sm:font-medium sm:text-black">
+                <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
                   {getRelativeTimeString(solution?.submittedAt!)}
                 </span>
               </div>
 
-              <div className="flex items-center justify-center sm:justify-end gap-1">
+              <div className="flex items-center justify-end gap-1">
                 <span className="flex items-center overflow-hidden rounded-full border">
                   <VoteButton
                     icon={ThumbsUp}
@@ -288,10 +291,8 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                 <a
                   className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
                   onClick={(e) => {
-                    if (!isVisited) {
-                      e.preventDefault();
-                      setShowLeavingRoadmapModal(solution);
-                    }
+                    e.preventDefault();
+                    setShowLeavingRoadmapModal(solution);
                   }}
                   target="_blank"
                   href={solution.repositoryUrl}
