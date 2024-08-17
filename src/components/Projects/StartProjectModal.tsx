@@ -96,7 +96,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
         <span className="mr-1.5 font-normal">Project started</span>{' '}
         <span className="font-semibold">{formattedStartedAt}</span>
       </p>
-      <h2 className="mb-0.5 mt-5 text-2xl font-semibold text-gray-800">
+      <h2 className="mb-1 mt-5 text-2xl font-semibold text-gray-800">
         Start Building
       </h2>
       <p className="text-gray-700">
@@ -104,49 +104,48 @@ export function StartProjectModal(props: StartProjectModalProps) {
       </p>
 
       <div className="my-5 space-y-1.5 marker:text-gray-400">
-        <div className="flex flex-row items-start gap-2">
-          <StepLabel label={'1'} />
-          <p className="text-gray-700">Create a repository on GitHub</p>
-        </div>
-        <div className="flex flex-row items-start gap-2">
-          <StepLabel label={'2'} />
-          <p className="text-gray-700">
-            Complete the task and push it to GitHub
-          </p>
-        </div>
-        <div className="flex flex-row items-start gap-2">
-          <StepLabel label={'3'} />
-          <p className="text-gray-700">
-            Add a readme file with instructions on how to run the project. Make
-            sure to include the{' '}
-            <button
-              onClick={() => {
-                copyText(projectUrl);
-              }}
-              className="font-semibold"
-            >
-              project page URL{' '}
-              {!isCopied && (
-                <CopyIcon className="inline-block h-4 w-4" strokeWidth={2.5} />
-              )}
-              {isCopied && (
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          1. Create a new public repository on GitHub.
+        </p>
+
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          2. Complete the project according to the requirements and push your code
+          to the GitHub repository.
+        </p>
+
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          3. Add a README file with instructions to run the project and the{' '}
+          <button
+            onClick={() => {
+              copyText(projectUrl);
+            }}
+            className="font-semibold"
+          >
+            {!isCopied && (
+              <span className="text-purple-600">
+                project page URL
+                <CopyIcon
+                  className="relative -top-px ml-1 inline-block h-4 w-4"
+                  strokeWidth={2.5}
+                />
+              </span>
+            )}
+            {isCopied && (
+              <>
+                copied URL
                 <Check className="inline-block h-4 w-4" strokeWidth={2.5} />
-              )}
-            </button>{' '}
-            in the readme file.
-          </p>
-        </div>
-        <div className="flex flex-row items-start gap-2">
-          <StepLabel label={'4'} />
-          <p className="text-gray-700">
-            Submit your repository URL to help others learn and get feedback
-            from the community.
-          </p>
-        </div>
+              </>
+            )}
+          </button>
+        </p>
+        <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
+          4. Once done, submit your solution to help the others learn and get feedback
+          from the community.
+        </p>
       </div>
 
       <div className="mb-5">
-        <p>
+        <p className='text-sm'>
           If you get stuck, you can always ask for help in the community{' '}
           <a
             href="https://roadmap.sh/discord"
