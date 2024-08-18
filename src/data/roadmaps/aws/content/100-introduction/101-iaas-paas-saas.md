@@ -5,4 +5,4 @@ IaaS, PaaS, and SaaS are three types of cloud service models. **IaaS** or Infras
 Learn more from the following resources:
 
 - [@video@IaaS vs PaaS vs SaaS cloud service models](https://youtu.be/9CVBohl6w0Q?si=cEDnXpd1sGkpf0K2)
-- https://aws.amazon.com/types-of-cloud-computing/?nc1=h_ls
+- [@article@Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/?nc1=h_ls)
