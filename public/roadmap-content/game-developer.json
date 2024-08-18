@@ -491,12 +491,12 @@
   },
   "aNhyXWW2b7yKTv8y14zk9": {
     "title": "Point",
-    "description": "",
+    "description": "Point lights are one of the most common types of lights used in computer graphics and games. They resemble real-world light bulbs, emitting light uniformly in all directions.\n\nThese lights are available out of the box in most game engines and offer a range of customizable parameters, such as intensity, falloff, color, and more.\n\nPoint lights are the most straightforward type of light, making them ideal for quickly and intuitively lighting up your scenes.",
     "links": []
   },
   "FetbhcK1RDt4izZ6NEUEP": {
     "title": "Spot",
-    "description": "",
+    "description": "Spotlights are a common type of light in computer graphics and games that mimic the behavior of real-world spotlights. They offer a range of parameters to adjust their behavior, such as radius, cone angle, falloff, and intensity.\n\nSpotlights are readily available out of the box in both Unreal and Unity game engines, making them an accessible and powerful tool for adding realistic and dynamic lighting to your scenes.",
     "links": []
   },
   "sC3omOmL2DOyTSvET5cDa": {
@@ -531,8 +531,14 @@
   },
   "UcLGWYu41Ok2NYdLNIY5C": {
     "title": "Frustum",
-    "description": "",
-    "links": []
+    "description": "Frustum culling is a standard practice in computer graphics, used in virtually all games to optimize performance by not rendering objects outside of your field of view. Think of your field of view as a frustum, a truncated pyramid shape. The farthest side is called the far clip plane, and the closest side is the near clip plane. Any object in the game that doesn't fall within this frustum is culled, meaning it’s not rendered, to improve performance. This feature comes built-in with Unreal Engine.\n\nYou can also adjust the near and far clip planes to fine-tune culling. For example, if an object is too close to the camera, it may disappear because it crosses the near clip plane threshold. Similarly, objects that are too far away might be culled by the far clip plane. In some cases, distant objects are LOD-ed (Level of Detail), an optimization technique that reduces the detail of the mesh the farther you are from it, and increases detail as you get closer.\n\nFrustum culling is a fundamental technique that is implemented in virtually all modern games to ensure efficient rendering and smooth gameplay.",
+    "links": [
+      {
+        "title": "Frustum Culling - Game Optimization 101 - Unreal Engine",
+        "url": "https://www.youtube.com/watch?v=Ql56s1erTMI",
+        "type": "video"
+      }
+    ]
   },
   "_1LkU258hzizSIgXipE0b": {
     "title": "Light",
@@ -572,7 +578,13 @@
   "ffa5-YxRhE3zhWg7KXQ4r": {
     "title": "OpenGL",
     "description": "Open GL, also known as Open Graphics Library, is a cross-language, cross-platform API designed to render 2D and 3D vector graphics. As a software interface for graphics hardware, Open GL provides programmers the ability to create complex graphics visuals in detail. It was first developed by Silicon Graphics Inc. in 1992 and quickly became a highly popular tool in the graphics rendering industry. Open GL is widely used in CAD, virtual reality, scientific visualization, information visualization, and flight simulation. It is also used in video games production where real-time rendering is a requirement. The API is designed to work with a broad range of hardware from different manufacturers. Being open-source, Open GL's code capabilities can be extended by anyone in the software community.",
-    "links": []
+    "links": [
+      {
+        "title": "OpenGL Tutorials",
+        "url": "https://youtube.com/playlist?list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-&si=Mr71bYJMgoDhN9h-",
+        "type": "video"
+      }
+    ]
   },
   "CeydBMwckqKll-2AgOlyd": {
     "title": "WebGL",
@@ -597,7 +609,13 @@
   "oEznLciLxZJaulMlBGgg4": {
     "title": "Metal",
     "description": "Metal is a low-level, high-performance, application programming interface (API) developed by Apple. It debuted in iOS 8 and is dedicated to graphics and data-parallel computations. Essentially, it's designed to exploit modern GPU architecture on Apple devices, optimizing performance and power efficiency. This API applies to various platforms, including iOS, macOS, and tvOS. In contrast to high-level APIs like OpenGL, Metal offers a much lower overhead, allowing more direct control over the GPU. For developers, it means that they can squeeze better performance out of the hardware compared to higher-level APIs. With Metal, developers have a much more detailed view and control on the GPU which results in better graphical output and smoother performance.",
-    "links": []
+    "links": [
+      {
+        "title": "Metal Documentation",
+        "url": "https://developer.apple.com/metal/",
+        "type": "article"
+      }
+    ]
   },
   "yPfhJSTFS7a72UcqF1ROK": {
     "title": "Vulkan",

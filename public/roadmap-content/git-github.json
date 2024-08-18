@@ -181,8 +181,19 @@
   },
   "h71Tx3nkfUrnhaqcHlDkQ": {
     "title": "Staging Area",
-    "description": "",
-    "links": []
+    "description": "In Git, a staging area serves as an intermediate step between your local repository changes and the actual commit.\n\n*   Temporary storage: The staging area holds changes that are intended to be part of the next commit.\n*   Previewing changes: It allows you to preview your changes before committing them.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Getting Started - What is Git? - Staging Area",
+        "url": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F#:~:text=The%20staging%20area%20is%20a,area%E2%80%9D%20works%20just%20as%20well.",
+        "type": "article"
+      },
+      {
+        "title": "What are Staged Changes in Git?",
+        "url": "https://www.youtube.com/watch?v=HyeNfWZBut8",
+        "type": "video"
+      }
+    ]
   },
   "2_z3R7seCvQVj-Na4H1SV": {
     "title": "Committing Changes",
@@ -372,8 +383,19 @@
   },
   "GS3f1FKFVKT0-GJQrgCm8": {
     "title": "Setting up Profile",
-    "description": "",
-    "links": []
+    "description": "On GitHub, creating a profile is an essential step in showcasing yourself as a developer or contributor.\n\n*   Sharing information: Your profile page allows others to find out more about you, including your interests and skills.\n*   Showcasing projects: You can display your notable projects and contributions, giving a glimpse into your work experience.\n*   Expressing identity: The profile also serves as an opportunity for personal expression, allowing you to convey your unique personality and style within the GitHub community.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Setting up your profile",
+        "url": "https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Profile Readme",
+        "url": "https://www.youtube.com/watch?v=KhGWbt1dAKQ",
+        "type": "video"
+      }
+    ]
   },
   "c_FO6xMixrrMo6iisfsvl": {
     "title": "Creating Repositories",
@@ -573,8 +595,24 @@
   },
   "x6eILrLCQrVpz4j8uOuy6": {
     "title": "Pull Requests",
-    "description": "",
-    "links": []
+    "description": "A pull request is a proposal to merge a set of changes from one branch into another. In a pull request, collaborators can review and discuss the proposed set of changes before they integrate the changes into the main codebase. Pull requests display the differences, or diffs, between the content in the source branch and the content in the target branch.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Creating a pull request",
+        "url": "https://docs.github.com/articles/creating-a-pull-request",
+        "type": "article"
+      },
+      {
+        "title": "Pull Requests",
+        "url": "https://www.atlassian.com/git/tutorials/making-a-pull-request#:~:text=In%20their%20simplest%20form%2C%20pull,request%20via%20their%20Bitbucket%20account.",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Pull Request in 100 Seconds ",
+        "url": "https://youtu.be/8lGpZkjnkt4?si=qbCQ8Uvzn9GN2koL",
+        "type": "video"
+      }
+    ]
   },
   "8lXXVFkgK6n5IHaYkYe3l": {
     "title": "PR from a Fork",
@@ -636,8 +674,19 @@
   },
   "dQS1V0zZxeKhHhUo3STBK": {
     "title": "Saved Replies",
-    "description": "",
-    "links": []
+    "description": "GitHub allows you to save frequently used comments and reuse them when discussing issues or pull requests.\n\n*   Saved replies: You can create pre-written comments that can be easily added to conversations.\n*   Customization: Saved replies can be edited to fit specific situations, making it easy to tailor your responses.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Using saved replies",
+        "url": "https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies",
+        "type": "article"
+      },
+      {
+        "title": "Walkthrough: Using Github’s “Saved Replies” to make life consistent and easy",
+        "url": "https://prowe214.medium.com/walkthrough-using-githubs-saved-replies-to-make-life-consistent-and-easy-80f23efe6a0",
+        "type": "article"
+      }
+    ]
   },
   "oWMaOWU06juoIuzXNe-wt": {
     "title": "Mentions",
@@ -973,8 +1022,19 @@
   },
   "wydgCxR5VnieBpRolXt8i": {
     "title": "Teams within Organization",
-    "description": "",
-    "links": []
+    "description": "GitHub Organizations allow you to create teams within your organization, which helps in organizing members based on their roles and responsibilities.\n\n*   Grouping: Team members can be grouped together according to the company or group's structure.\n*   Access permissions: Access permissions can be cascaded from one team member to another.\n*   Mentions: Team mentions allow for easy referencing of specific teams in repository discussions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Organizing members into teams",
+        "url": "https://docs.github.com/en/organizations/organizing-members-into-teams",
+        "type": "article"
+      },
+      {
+        "title": "Best practices for organizations and teams using GitHub Enterprise Cloud",
+        "url": "https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/",
+        "type": "article"
+      }
+    ]
   },
   "DzFJDdqnSy5GeGHWOpcVo": {
     "title": "GitHub Projects",
@@ -1026,8 +1086,19 @@
   },
   "sxvT2hGko2PDRBoBrCGWD": {
     "title": "Roadmaps",
-    "description": "",
-    "links": []
+    "description": "GitHub roadmaps are a feature that helps you visualize and organize plans for your projects, allowing you to create a high-level view of milestones and goals, and collaborate on planning and tracking progress with team members.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Customizing the roadmap layout",
+        "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout",
+        "type": "article"
+      },
+      {
+        "title": "Learn how to use Project Roadmaps - GitHub Checkout",
+        "url": "https://www.youtube.com/watch?v=D80u__nYYWw",
+        "type": "video"
+      }
+    ]
   },
   "TNBz5755PhI6iKxTQTqcS": {
     "title": "Automations",
@@ -1138,7 +1209,7 @@
   },
   "qFEonbCMLri8iA0yONwuf": {
     "title": "git log options",
-    "description": "`git log` is a command in Git that shows the commit history of your repository. It provides a detailed view of all commits, including their hashes, authors, dates, and messages.\n\nHere are some common git log options:\n\n*   \\-2: Only show the last two commits.\n*   \\--all: Show all branches in the repository.\n*   \\--graph: Display the commit history as a graph.\n*   \\--no-color: Disable colorized output.\n*   \\--stat: Show a statistical summary of changes.\n*   \\*\\*-S\\`: Only show commits with modified files.\n\nYou can combine these options to tailor your log output to suit your needs.\n\nFor example, `git log -2 --graph` will display the last two commits in graph form.\n\nVisit the following resources to learn more:",
+    "description": "`git log` is a command in Git that shows the commit history of your repository. It provides a detailed view of all commits, including their hashes, authors, dates, and messages.\n\nHere are some common git log options:\n\n*   `-2`: Only show the last two commits.\n*   `--all`: Show all branches in the repository.\n*   `--graph`: Display the commit history as a graph.\n*   `--pretty`: Enable clean colorized output.\n*   `--no-color`: Disable colorized output.\n*   `--stat`: Show a statistical summary of changes.\n*   `**-S`: Only show commits with modified files.\n\nYou can combine these options to tailor your log output to suit your needs.\n\nFor example, `git log -2 --graph` will display the last two commits in graph form.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Git Log",
@@ -1154,7 +1225,7 @@
   },
   "0Yi4cryT2v2SGBjouOas3": {
     "title": "Undoing Changes",
-    "description": "",
+    "description": "If mistakes or unwanted changes have been committed to your Git repository, there are ways to correct them. Two common methods for reverting changes include:\n\n*   Git Reset: Resets the branch to a previous commit.\n*   Git Revert: Creates a new commit that reverts specified changes.",
     "links": []
   },
   "dLr55Om7IOvI53c1DgTKc": {
@@ -1261,8 +1332,19 @@
   },
   "mzjtCdpke1ayHcEuS-YUS": {
     "title": "Staged Changes",
-    "description": "To view the changes you've staged with `git add`, but not yet committed, use `git diff --cached`. This command compares the staged files against their original versions in the repository. It's a quick way to review what you're about to commit before finalizing it.",
-    "links": []
+    "description": "To view the changes you've staged with `git add`, but not yet committed, use `git diff --cached`. This command compares the staged files against their original versions in the repository. It's a quick way to review what you're about to commit before finalizing it.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What does Staged Changes mean in Git?",
+        "url": "https://dillionmegida.com/p/staged-changes-in-git/",
+        "type": "article"
+      },
+      {
+        "title": "What are Staged Changes in Git?",
+        "url": "https://www.youtube.com/watch?v=HyeNfWZBut8",
+        "type": "video"
+      }
+    ]
   },
   "uxqJzQFRcALqatNRIWR0w": {
     "title": "Unstaged Changes",
@@ -1282,7 +1364,7 @@
   },
   "sOoC-XxEoIvwKct00oKlX": {
     "title": "Rewriting History",
-    "description": "",
+    "description": "In certain situations, you might need to modify or remove commits from your Git repository's history. This can be achieved using various methods:\n\n*   `git commit --amend`: Allows you to edit the most recent commit.\n*   `git rebase`: Replaces one branch with another, preserving the commit history.\n*   `git filter-branch`: Removes specific commits from a branch without altering the original branch.\n*   `git push --force`: Updates the remote repository while respecting existing pull requests.\n\nRewriting history in Git is typically necessary when:\n\n*   Fixing mistakes: Correcting errors or typos in commit messages.\n*   Removing sensitive data: Deleting confidential information from commits, like API keys or database credentials.\n*   Simplifying complex histories: Reorganizing branches to improve clarity and reduce complexity.",
     "links": []
   },
   "NjPnEXLf1Lt9qzgxccogv": {
@@ -1334,7 +1416,7 @@
   },
   "BKVA6Q7DXemAYjyQOA0nh": {
     "title": "git filter-branch",
-    "description": "",
+    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.",
     "links": []
   },
   "OQOmxg9mCfcjt80hpvXkA": {
@@ -1355,8 +1437,14 @@
   },
   "iFJBF-EEnLjQVsFSXjo_i": {
     "title": "Tagging",
-    "description": "",
-    "links": []
+    "description": "In Git, tags are used to identify specific points in a repository's history as being important. This feature allows developers to mark release points or milestones.\n\n*   Marking release points: Tags are typically used to mark release versions (e.g., v1.0, v2.0) of a project.\n*   Types of tags: There are different types of tags, including lightweight and annotated tags.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Basics - Tagging",
+        "url": "https://git-scm.com/book/en/v2/Git-Basics-Tagging",
+        "type": "article"
+      }
+    ]
   },
   "NeU38WPbEphJuJ_AMkH82": {
     "title": "Managing Tags",
@@ -1562,7 +1650,7 @@
   },
   "fjAFNjNNbPOzme9Uk_fDV": {
     "title": "Submodules",
-    "description": "",
+    "description": "In Git, submodules allow you to include another repository within a project. This feature enables the management of external dependencies as part of the main project.\n\n*   Including external repositories: Submodules can be used to include other Git repositories within your project.\n*   Managing dependencies: They provide a way to manage and track changes in external dependencies.",
     "links": []
   },
   "x4bnsPVTiX2xOCSyrgWpF": {
@@ -1636,8 +1724,24 @@
   },
   "lw4zHuhtxIO4kDvbyiVfq": {
     "title": "Repository management",
-    "description": "",
-    "links": []
+    "description": "Using GitHub CLI for repository management allows you to streamline tasks and work more efficiently. ou can use GitHub CLI to manage repositories with the following commands:\n\n*   `gh repo create`: Create a new repository.\n*   `gh repo delete`: Delete an existing repository.\n*   `gh repo visibility`: Change the repository's visibility (public or private).\n*   `gh repo topic`: Manage topic labels for a repository.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "gh repo",
+        "url": "https://cli.github.com/manual/gh_repo",
+        "type": "article"
+      },
+      {
+        "title": "Efficient GitHub Operations: Simplifying Repository Management using Github CLI",
+        "url": "https://dev.to/yutee_okon/efficient-github-operations-simplifying-repository-management-using-github-cli-190l",
+        "type": "article"
+      },
+      {
+        "title": "GitHub CLI (gh) - How to manage repositories more efficiently",
+        "url": "https://www.youtube.com/watch?v=BII6ZY2Rnlc",
+        "type": "video"
+      }
+    ]
   },
   "kGnZifvXbHBf5zXIsfAQw": {
     "title": "Issue Management",
@@ -1657,21 +1761,16 @@
   },
   "s3MzDYFPMASqiS8UnvWzW": {
     "title": "Pull Requests",
-    "description": "A pull request is a proposal to merge a set of changes from one branch into another. In a pull request, collaborators can review and discuss the proposed set of changes before they integrate the changes into the main codebase. Pull requests display the differences, or diffs, between the content in the source branch and the content in the target branch.\n\nVisit the following resources to learn more:",
+    "description": "You can use GitHub CLI to manage pull requests with the following commands:\n\n*   `gh pr create`: Create a new pull request.\n*   `gh pr merge`: Merge a pull request into the target branch.\n*   `gh pr list`: List all pull requests for a repository.\n*   `gh pr view`: View details of a specific pull request.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Creating a pull request",
-        "url": "https://docs.github.com/articles/creating-a-pull-request",
+        "title": "gh pr",
+        "url": "https://cli.github.com/manual/gh_pr",
         "type": "article"
       },
       {
-        "title": "Pull Requests",
-        "url": "https://www.atlassian.com/git/tutorials/making-a-pull-request#:~:text=In%20their%20simplest%20form%2C%20pull,request%20via%20their%20Bitbucket%20account.",
-        "type": "article"
-      },
-      {
-        "title": "GitHub Pull Request in 100 Seconds ",
-        "url": "https://youtu.be/8lGpZkjnkt4?si=qbCQ8Uvzn9GN2koL",
+        "title": "Use GitHub CLI For Command Line Pull Request Management",
+        "url": "https://www.youtube.com/watch?v=Ku9_0Mftiic",
         "type": "video"
       }
     ]
@@ -1726,8 +1825,19 @@
   },
   "uS1H9KoKGNONvETCuFBbz": {
     "title": "Scheduled Worfklows",
-    "description": "",
-    "links": []
+    "description": "GitHub Actions allows you to schedule workflows to run at specific times or intervals. You can set up workflows to automatically run at predetermined times, such as daily or weekly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Events that trigger workflows - Schedule",
+        "url": "https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Actions - How to Schedule workflows in GitHub",
+        "url": "https://www.youtube.com/watch?v=StipNrK__Gk",
+        "type": "video"
+      }
+    ]
   },
   "6QwlY3dEvjfAOPALcWKXQ": {
     "title": "Workflow Runners",
@@ -1763,8 +1873,24 @@
   },
   "aflP7oWsQzAr4YPo2LLiQ": {
     "title": "Secrets and Env Vars",
-    "description": "",
-    "links": []
+    "description": "GitHub provides features to securely store and manage sensitive data, such as secrets and environment variables.\n\n*   Secrets: These are sensitive values that should not be committed to a repository, like API keys or database credentials.\n*   Environment Variables: They can be used to set values for your workflow or application, making it easier to manage dependencies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Using secrets in GitHub Actions",
+        "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions",
+        "type": "article"
+      },
+      {
+        "title": "Store information in variables",
+        "url": "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables",
+        "type": "article"
+      },
+      {
+        "title": "Secrets and Environment Variables in your GitHub Action",
+        "url": "https://www.youtube.com/watch?v=dPLPSaFqJmY",
+        "type": "video"
+      }
+    ]
   },
   "HMNhzzV6ApTKj4I_FOmUB": {
     "title": "Caching Dependencies",
@@ -1784,8 +1910,14 @@
   },
   "alysXC4b1hGi9ZdQ5-40y": {
     "title": "Storing Artifacts",
-    "description": "",
-    "links": []
+    "description": "GitHub provides a feature for storing artifacts, which allows you to upload build outputs or other files as part of your workflow.\n\n*   Artifacts: These are files generated by a job, such as compiled binaries, test reports, or logs. They can be used to validate the results of a build or deployment.\n*   Referenceable storage: Artifacts are stored in a referenceable way, making it easy to access and use them in future builds.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Storing and sharing data from a workflow",
+        "url": "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/storing-and-sharing-data-from-a-workflow",
+        "type": "article"
+      }
+    ]
   },
   "jc4R1zhd1YeCEbVuxwJWy": {
     "title": "Workflow Status",

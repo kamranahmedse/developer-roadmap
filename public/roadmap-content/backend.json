@@ -1197,6 +1197,11 @@
         "title": "Explore top posts about GraphQL",
         "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Tutorial - GraphQL Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
+        "type": "video"
       }
     ]
   },
@@ -2966,7 +2971,7 @@
   },
   "WiAK70I0z-_bzbWNwiHUd": {
     "title": "TimeScale",
-    "description": "",
+    "description": "TimescaleDB is an open-source time-series database built on top of PostgreSQL, designed for efficiently storing and querying time-series data.\n\nIt introduces the concept of hypertables, which automatically partition data by time and space, making it ideal for high-volume data scenarios like monitoring, IoT, and financial analytics.\n\nTimescaleDB combines the power of relational databases with the performance of a specialized time-series solution, offering advanced features like continuous aggregates, real-time analytics, and seamless integration with PostgreSQL's ecosystem.\n\nIt's a robust choice for developers looking to manage time-series data in scalable and efficient ways.",
     "links": []
   },
   "gT6-z2vhdIQDzmR2K1g1U": {
