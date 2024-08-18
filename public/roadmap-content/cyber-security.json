@@ -365,36 +365,10 @@
       }
     ]
   },
-  "BqvijNoRzSGYLCMP-6hhr": {
-    "title": "CISSP",
-    "description": "The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.\n\nWho Should Obtain the CISSP Certification?\n------------------------------------------\n\nThe CISSP certification is ideal for security consultants, managers, IT directors, security auditors, security analysts, and other professionals who are responsible for designing, implementing, and managing security for their organization. This certification is aimed at professionals with at least five years of full-time experience in two or more of the eight CISSP domains:\n\n*   Security and Risk Management\n*   Asset Security\n*   Security Architecture and Engineering\n*   Communication and Network Security\n*   Identity and Access Management (IAM)\n*   Security Assessment and Testing\n*   Security Operations\n*   Software Development Security\n\nCertification Process\n---------------------\n\nTo obtain the CISSP certification, candidates must meet the following requirements:\n\n*   **Experience:** Possess a minimum of five years of cumulative, paid, full-time work experience in two or more of the eight domains of the CISSP Common Body of Knowledge (CBK).\n    \n*   **Exam:** Pass the CISSP examination with a minimum scaled score of 700 out of 1000 points. The exam consists of 100 to 150 multiple-choice and advanced innovative questions that must be completed within three hours.\n    \n*   **Endorsement:** After passing the exam, candidates must submit an endorsement application to be reviewed and endorsed by an (ISC)² CISSP holder within nine months of passing the exam.\n    \n*   **Continuing Professional Education (CPE):** To maintain the CISSP certification, professionals must earn 120 CPE credits every three years, with a minimum of 40 credits earned each year, and pay an annual maintenance fee.\n    \n\nBenefits of CISSP Certification\n-------------------------------\n\nObtaining the CISSP certification comes with numerous benefits, such as:\n\n*   Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.\n*   Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.\n*   Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.\n*   Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.\n*   Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.\n\nLearn more from the following resources",
-    "links": [
-      {
-        "title": "ISC2 CISSP",
-        "url": "https://www.isc2.org/certifications/cissp",
-        "type": "article"
-      },
-      {
-        "title": "ISC2 CISSP - Official Study Guide",
-        "url": "https://www.wiley.com/en-us/ISC2+CISSP+Certified+Information+Systems+Security+Professional+Official+Study+Guide%2C+10th+Edition-p-9781394254699",
-        "type": "article"
-      },
-      {
-        "title": "Destcert - CISSP Free Resources",
-        "url": "https://destcert.com/resources/",
-        "type": "article"
-      },
-      {
-        "title": "CISSP Exam Cram 2024",
-        "url": "https://youtube.com/playlist?list=PL7XJSuT7Dq_XPK_qmYMqfiBjbtHJRWigD&si=_wSeCkvj-1rzv0ZF",
-        "type": "video"
-      },
-      {
-        "title": "CISSP Prep (Coffee Shots)",
-        "url": "https://youtube.com/playlist?list=PL0hT6hgexlYxKzBmiCD6SXW0qO5ucFO-J&si=9ICs373Vl1ce3s0H",
-        "type": "video"
-      }
-    ]
+  "AAo7DXB7hyBzO6p05gx1i": {
+    "title": "CEH",
+    "description": "**Certified Ethical Hacker (CEH)** is an advanced certification focused on equipping cybersecurity professionals with the knowledge and skills required to defend against the continuously evolving landscape of cyber threats. This certification is facilitated by the EC-Council, an internationally recognized organization for information security certifications.\n\nObjectives\n----------\n\nThe CEH certification aims to provide professionals with the following skills:\n\n*   Understand the ethics and legal requirements of ethical hacking\n*   Identify and analyze common cyber threats, including malware, social engineering, and various network attacks\n*   Utilize the latest penetration testing tools and methodologies to uncover vulnerabilities in systems, networks, and applications\n*   Implement defensive countermeasures to protect against cyber attacks\n\nTarget Audience\n---------------\n\nThe CEH certification is ideal for:\n\n*   Cybersecurity professionals seeking to expand their skill set\n*   IT administrators responsible for securing their organization's systems and network\n*   Penetration testers looking to demonstrate their ethical hacking capabilities\n*   Security consultants who want a recognized certification in the IT security field\n\nExam Details\n------------\n\nTo become a Certified Ethical Hacker, you must pass the CEH exam, which consists of the following:\n\n*   Number of Questions: 125\n*   Exam Type: Multiple choice questions\n*   Duration: 4 hours\n*   Passing Score: 70%\n\nPreparation\n-----------\n\nTo prepare for the CEH exam, candidates can follow the EC-Council's official training course or opt for self-study. The recommended resources include:\n\n*   EC-Council's [_CEH v11: Certified Ethical Hacker_](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) training course\n*   Official CEH study guide and practice exams\n*   CEH-related books, articles, and online resources\n\nRecertification\n---------------\n\nCEH holders need to earn 120 ECE (Education Credits) within three years of obtaining their certification to retain their credentials. These credits can be obtained through training, workshops, conferences, and other continuous learning opportunities in the field of information security.",
+    "links": []
   },
   "lqFp4VLY_S-5tAbhNQTew": {
     "title": "CISA",
@@ -436,10 +410,36 @@
     "description": "CREST is a non-profit, accreditation and certification body that represents the technical information security industry. Established in 2008, its mission is to promote the development and professionalization of the cyber security sector. CREST provides certifications for individuals and accreditations for companies, helping customers find knowledgeable and experienced professionals in the field.\n\nCREST Examinations and Certifications\n-------------------------------------\n\nCREST offers various examinations and certifications, including:\n\n*   **CREST Practitioner Security Analyst (CPSA)**: This is an entry-level certification for individuals looking to demonstrate their knowledge and competence in vulnerability assessment and penetration testing. Passing the CPSA exam is a prerequisite for taking other CREST technical examinations.\n    \n*   **CREST Registered Penetration Tester (CRT)**: This certification is aimed at professionals with a solid understanding of infrastructure and web application penetration testing. CRT holders have demonstrated practical skills in identifying and exploiting vulnerabilities in a controlled environment.\n    \n*   **CREST Certified Infrastructure Tester (CCIT)** and **CREST Certified Web Application Tester (CCWAT)**: These advanced certifications require candidates to have a deep technical understanding and practical skills in infrastructure or web application testing, respectively. These certifications are intended for experienced professionals who can perform in-depth technical assessments and identify advanced security vulnerabilities.\n    \n*   **CREST Certified Simulated Attack Manager (CCSAM)** and **CREST Certified Simulated Attack Specialist (CCSAS)**: These certifications focus on the planning, scoping, and management of simulated attack engagements, or red teaming. They require candidates to have experience in both the technical and managerial aspects of coordinated cyber attacks.\n    \n\nBenefits of CREST Certifications\n--------------------------------\n\nObtaining CREST certifications provides several benefits, such as:\n\n*   Increased credibility and recognition within the cyber security industry\n*   Validation of your technical knowledge and expertise\n*   Access to resources and support through the CREST community\n*   Assurance for employers and clients that you're skilled and trustworthy\n\nIn the rapidly evolving field of cyber security, CREST certifications demonstrate a commitment to continuous learning, growth, and professionalism.",
     "links": []
   },
-  "AAo7DXB7hyBzO6p05gx1i": {
-    "title": "CEH",
-    "description": "**Certified Ethical Hacker (CEH)** is an advanced certification focused on equipping cybersecurity professionals with the knowledge and skills required to defend against the continuously evolving landscape of cyber threats. This certification is facilitated by the EC-Council, an internationally recognized organization for information security certifications.\n\nObjectives\n----------\n\nThe CEH certification aims to provide professionals with the following skills:\n\n*   Understand the ethics and legal requirements of ethical hacking\n*   Identify and analyze common cyber threats, including malware, social engineering, and various network attacks\n*   Utilize the latest penetration testing tools and methodologies to uncover vulnerabilities in systems, networks, and applications\n*   Implement defensive countermeasures to protect against cyber attacks\n\nTarget Audience\n---------------\n\nThe CEH certification is ideal for:\n\n*   Cybersecurity professionals seeking to expand their skill set\n*   IT administrators responsible for securing their organization's systems and network\n*   Penetration testers looking to demonstrate their ethical hacking capabilities\n*   Security consultants who want a recognized certification in the IT security field\n\nExam Details\n------------\n\nTo become a Certified Ethical Hacker, you must pass the CEH exam, which consists of the following:\n\n*   Number of Questions: 125\n*   Exam Type: Multiple choice questions\n*   Duration: 4 hours\n*   Passing Score: 70%\n\nPreparation\n-----------\n\nTo prepare for the CEH exam, candidates can follow the EC-Council's official training course or opt for self-study. The recommended resources include:\n\n*   EC-Council's [_CEH v11: Certified Ethical Hacker_](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) training course\n*   Official CEH study guide and practice exams\n*   CEH-related books, articles, and online resources\n\nRecertification\n---------------\n\nCEH holders need to earn 120 ECE (Education Credits) within three years of obtaining their certification to retain their credentials. These credits can be obtained through training, workshops, conferences, and other continuous learning opportunities in the field of information security.",
-    "links": []
+  "BqvijNoRzSGYLCMP-6hhr": {
+    "title": "CISSP",
+    "description": "The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.\n\nWho Should Obtain the CISSP Certification?\n------------------------------------------\n\nThe CISSP certification is ideal for security consultants, managers, IT directors, security auditors, security analysts, and other professionals who are responsible for designing, implementing, and managing security for their organization. This certification is aimed at professionals with at least five years of full-time experience in two or more of the eight CISSP domains:\n\n*   Security and Risk Management\n*   Asset Security\n*   Security Architecture and Engineering\n*   Communication and Network Security\n*   Identity and Access Management (IAM)\n*   Security Assessment and Testing\n*   Security Operations\n*   Software Development Security\n\nCertification Process\n---------------------\n\nTo obtain the CISSP certification, candidates must meet the following requirements:\n\n*   **Experience:** Possess a minimum of five years of cumulative, paid, full-time work experience in two or more of the eight domains of the CISSP Common Body of Knowledge (CBK).\n    \n*   **Exam:** Pass the CISSP examination with a minimum scaled score of 700 out of 1000 points. The exam consists of 100 to 150 multiple-choice and advanced innovative questions that must be completed within three hours.\n    \n*   **Endorsement:** After passing the exam, candidates must submit an endorsement application to be reviewed and endorsed by an (ISC)² CISSP holder within nine months of passing the exam.\n    \n*   **Continuing Professional Education (CPE):** To maintain the CISSP certification, professionals must earn 120 CPE credits every three years, with a minimum of 40 credits earned each year, and pay an annual maintenance fee.\n    \n\nBenefits of CISSP Certification\n-------------------------------\n\nObtaining the CISSP certification comes with numerous benefits, such as:\n\n*   Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.\n*   Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.\n*   Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.\n*   Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.\n*   Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.\n\nLearn more from the following resources",
+    "links": [
+      {
+        "title": "ISC2 CISSP",
+        "url": "https://www.isc2.org/certifications/cissp",
+        "type": "article"
+      },
+      {
+        "title": "ISC2 CISSP - Official Study Guide",
+        "url": "https://www.wiley.com/en-us/ISC2+CISSP+Certified+Information+Systems+Security+Professional+Official+Study+Guide%2C+10th+Edition-p-9781394254699",
+        "type": "article"
+      },
+      {
+        "title": "Destcert - CISSP Free Resources",
+        "url": "https://destcert.com/resources/",
+        "type": "article"
+      },
+      {
+        "title": "CISSP Exam Cram 2024",
+        "url": "https://youtube.com/playlist?list=PL7XJSuT7Dq_XPK_qmYMqfiBjbtHJRWigD&si=_wSeCkvj-1rzv0ZF",
+        "type": "video"
+      },
+      {
+        "title": "CISSP Prep (Coffee Shots)",
+        "url": "https://youtube.com/playlist?list=PL0hT6hgexlYxKzBmiCD6SXW0qO5ucFO-J&si=9ICs373Vl1ce3s0H",
+        "type": "video"
+      }
+    ]
   },
   "UY6xdt_V3YMkZxZ1hZLvW": {
     "title": "Operating Systems",
@@ -1958,8 +1958,14 @@
   },
   "O1fY2n40yjZtJUEeoItKr": {
     "title": "Evil Twin",
-    "description": "",
-    "links": []
+    "description": "An Evil Twin is a type of wireless network attack where an attacker sets up a rogue Wi-Fi access point that mimics a legitimate Wi-Fi network. The rogue access point has the same SSID (network name) as the legitimate network, making it difficult for users to distinguish between the two. The attacker's goal is to trick users into connecting to the rogue access point, allowing them to intercept sensitive information, inject malware, or launch other types of attacks.\n\nTypes of Evil Twin Attacks\n--------------------------\n\n*   **Captive Portal Attack:** The most common evil twin attack scenario is an attack using Captive Portals, this is a common scenario where an attacker creates a fake captive portal that mimics the legitimate network's login page. The goal is to trick users into entering their credentials, which the attacker can then use to gain access to the network.\n*   **Man-in-the-Middle (MitM) Attack:** In this scenario, the attacker intercepts communication between the user's device and the legitimate network. The attacker can then inject malware, steal sensitive information, or modify data in real-time.\n*   **SSL Stripping Attack:** The attacker downgrades the user's connection from HTTPS to HTTP, allowing them to intercept sensitive information, such as login credentials or credit card numbers.\n*   **Malware Injection:** The attacker injects malware into the user's device, which can then spread to other devices on the network.\n\nHow Evil Twin Attacks are Carried Out\n-------------------------------------\n\n*   **Rogue Access Point:** The attacker sets up a rogue access point with the same SSID as the legitimate network. This can be done using a laptop, a portable Wi-Fi router, or even a compromised device on the network.\n*   **Wi-Fi Scanning:** The attacker uses specialized software to scan for nearby Wi-Fi networks and identify potential targets.\n*   **Network Sniffing:** The attacker uses network sniffing tools to capture and analyze network traffic, allowing them to identify vulnerabilities and intercept sensitive information.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Common tool - airgeddon",
+        "url": "https://www.kali.org/tools/airgeddon/",
+        "type": "website"
+      }
+    ]
   },
   "urtsyYWViEzbqYLoNfQAh": {
     "title": "DNS Poisoning",
