@@ -25,7 +25,7 @@ Java has been a popular programming language for the past 28 years and remains i
 
 If you are building web applications, the ability to work on both front-end and back-end development using Java is valuable. Fundamental and advanced Java skills such as multithreading, concurrency, JVM tuning, and object-oriented design are vital in enterprise environments.
 
-To remain competitive as a Java developer, you must continuously improve your skill sets to meet evolving industry demands. 
+To remain competitive as a Java developer, you must continuously improve your skill sets to meet evolving industry demands.
 
 This guide will equip you with the skills required in 2024. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
 
@@ -78,7 +78,7 @@ JavaScript is a programming language used alongside HTML and CSS to enhance the 
 
 ### TypeScript
 
-Typescript is an extension of JavaScript with static typing and other advanced features. [TypeScript](https://roadmap.sh/typescript) code transpiles to JavaScript and can run seamlessly wherever JavaScript runs, making it a highly versatile programming language for front-end development. The knowledge enhances your productivity by allowing you to build robust applications,  detect errors, and catch issues as they happen.
+Typescript is an extension of JavaScript with static typing and other advanced features. [TypeScript](https://roadmap.sh/typescript) code transpiles to JavaScript and can run seamlessly wherever JavaScript runs, making it a highly versatile programming language for front-end development. The knowledge enhances your productivity by allowing you to build robust applications, detect errors, and catch issues as they happen.
 
 ![TypeScript](https://media.licdn.com/dms/image/D4D12AQHLiHtRbPUoAA/article-cover_image-shrink_600_2000/0/1696134741709?e=2147483647&v=beta&t=CajO9eTDp6iKznPn753F6ZUyTgaPf6DOzihN1AMMJew)
 
@@ -102,7 +102,7 @@ Here are the back-end skills you should learn in 2024:
 - Web Security
 - Caching
 
-### Java programming language: 
+### Java programming language:
 
 A deep understanding of Java fundamentals is essential to becoming a full stack developer. Having a strong grasp of Java's core concepts, such as classes, inheritance, abstraction, etc., is crucial for developing full stack applications running on the web or mobile platforms. Java's versatility and robustness make it a popular choice for backend development, and proficiency in Java allows developers to build scalable and secure server-side components for their applications. Some popular database management systems are MySQL, SQL, PostgreSQL, MongoDB, and Oracle.
 
@@ -116,7 +116,7 @@ Frameworks are pre-written and thoroughly tested collections of code, classes, c
 
 While Java has several frameworks for building full stack applications, it's crucial to consider each framework's associated pros and cons, adoption rates, and how effectively they address the intended business requirements. One particularly renowned framework is the Java [Spring](https://roadmap.sh/spring-boot) framework, celebrated for simplifying the web development process for small-scale and enterprise-level Java applications. In addition to its user-friendliness, it boasts a vast ecosystem and a thriving community of developers.
 
-### Version control 
+### Version control
 
 Version control systems facilitates teamwork by allowing you and your team members to collaborate on a project simultaneously. It enables the management of changes to code and files over time without disrupting the workflow.
 
@@ -182,7 +182,7 @@ Design patterns are proven approaches to solving specific design challenges and 
 
 As the popular saying goes, "a tree cannot make a forest." While it might be tempting to work in isolation and tackle all development tasks alone, it's essential for you to join communities that encourage collaboration, peer learning, and staying updated on the latest developments.
 
-A great community to join is the [r](https://discord.gg/ZrSpJ8zH)[oadmap.sh](https://discord.gg/ZrSpJ8zH) [Discord community](https://discord.gg/ZrSpJ8zH), where you can connect with like-minded individuals who share your passion for development.
+A great community to join is the [r](https://roadmap.sh/discord)[oadmap.sh](https://roadmap.sh/discord) [Discord community](https://roadmap.sh/discord), where you can connect with like-minded individuals who share your passion for development.
 
 ### Soft skills
 

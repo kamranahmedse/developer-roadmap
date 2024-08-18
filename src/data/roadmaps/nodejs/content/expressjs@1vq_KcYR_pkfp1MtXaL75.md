@@ -1,6 +1,6 @@
 # Express.js
 
-Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application.
+Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multi-page, and hybrid web application.
 
 Visit the following resources to learn more:
 
