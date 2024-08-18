@@ -1,6 +1,6 @@
 # Local Installation
 
-Locally installed packages are available only to the project where the packages are installed, while the globally installed packages can be used any where without installing them into a project. Another usecase of the global packages is when using CLI tools.
+Locally installed packages are available only to the project where the packages are installed, while the globally installed packages can be used any where without installing them into a project. Another use case of the global packages is when using CLI tools.
 
 Visit the following resources to learn more:
 
