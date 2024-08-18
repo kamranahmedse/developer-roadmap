@@ -12,7 +12,7 @@ def find_repository_rank(repo_fullname):
         repositories = response.json().get("items", [])
         for rank, repo in enumerate(repositories, start=1):
             if repo['full_name'].lower() == repo_fullname.lower():
-                return f"{rank}{get_ordinal_suffix(rank)}"
+                return f"{rank}{get_ordinal_suffix(rank)}" # '7th'
     except requests.RequestException as e:
         print(f"Error: {e}")
     return "Not found"
