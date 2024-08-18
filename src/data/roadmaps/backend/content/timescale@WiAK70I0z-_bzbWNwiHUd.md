@@ -8,4 +8,6 @@ TimescaleDB combines the power of relational databases with the performance of a
 
 It's a robust choice for developers looking to manage time-series data in scalable and efficient ways.
 
-[@video@Tutorial - TimeScaleDB Explained in 100 Seconds](https://www.youtube.com/watch?v=69Tzh_0lHJ8)
+Visit the following resources to learn more:
+
+- [@video@Tutorial - TimeScaleDB Explained in 100 Seconds](https://www.youtube.com/watch?v=69Tzh_0lHJ8)
