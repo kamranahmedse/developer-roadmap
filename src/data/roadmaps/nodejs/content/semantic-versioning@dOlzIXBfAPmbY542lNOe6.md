@@ -19,5 +19,5 @@ A semantic version number consists of three parts separated by dots:
 Visit the following resources to learn more:
 
 - [@official@Semver.org](https://semver.org/)
-- [@article@Understanding Semantic Versioning](https://medium.com/codex/understanding-semantic-versioning-a-guide-for-developers-dad5f2b70583)
-- [@article@Devopedia](https://devopedia.org/semantic-versioning)
+- [@article@Medium - Understanding Semantic Versioning](https://medium.com/codex/understanding-semantic-versioning-a-guide-for-developers-dad5f2b70583)
+- [@article@Devopedia - Semver](https://devopedia.org/semantic-versioning)
