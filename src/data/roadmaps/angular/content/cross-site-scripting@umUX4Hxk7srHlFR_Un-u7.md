@@ -1,4 +1,5 @@
 # Cross-site Scripting
+
 Cross-site scripting (XSS) enables attackers to inject malicious code into web pages. Such code can then, for example, steal user and login data, or perform actions that impersonate the user.
 This has been one of the biggest web security vulnerabilities for over a decade.
 
