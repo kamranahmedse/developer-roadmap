@@ -1,19 +1,17 @@
 ---
-import { ChevronUp } from 'lucide-react';
 import Icon from './AstroIcon.astro';
-import { getRepositoryRank } from '../lib/github';
+
 export interface Props {
+  secondaryValue?: string;
   value: string;
   text: string;
 }
 
-const { value, text } = Astro.props;
+const { value, text, secondaryValue } = Astro.props;
 
 const isGitHubStars = text.toLowerCase() === 'github stars';
 const isRegistered = text.toLowerCase() === 'registered users';
 const isDiscordMembers = text.toLowerCase() === 'discord members';
-
-const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
 ---
 
 <div
@@ -22,7 +20,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
   {
     isGitHubStars && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank {repoRank}</span>
+        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank {secondaryValue}</span>
         &nbsp;out of 28M!
       </p>
     )
@@ -31,7 +29,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
   {
     isRegistered && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+75k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )
@@ -40,7 +38,7 @@ const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
   {
     isDiscordMembers && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+1.5k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )
