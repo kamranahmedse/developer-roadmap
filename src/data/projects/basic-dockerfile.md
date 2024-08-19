@@ -12,7 +12,7 @@ skills:
   - 'devops'
 seo:
   title: 'Basic Dockerfile'
-  description: 'Build a basic Dockerfile to create a Docker image.'
+  description: 'Write a basic Dockerfile to create a Docker image.'
   keywords:
     - 'basic dockerfile'
     - 'dockerfile'
