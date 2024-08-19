@@ -1846,23 +1846,57 @@
   },
   "mm6c7GLQEwoQdAHdAYzGh": {
     "title": "Security",
-    "description": "",
-    "links": []
+    "description": "This topic describes Angular's built-in protections against common web-application vulnerabilities and attacks such as cross-site scripting attacks. It doesn't cover application-level security, such as authentication and authorization.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Security",
+        "url": "https://angular.dev/best-practices/security",
+        "type": "article"
+      },
+      {
+        "title": "Open Web Application Security Project (OWASP)",
+        "url": "https://owasp.org/",
+        "type": "article"
+      }
+    ]
   },
   "umUX4Hxk7srHlFR_Un-u7": {
     "title": "Cross-site Scripting",
-    "description": "",
-    "links": []
+    "description": "Cross-site scripting (XSS) enables attackers to inject malicious code into web pages. Such code can then, for example, steal user and login data, or perform actions that impersonate the user. This has been one of the biggest web security vulnerabilities for over a decade.\n\nTo systematically block XSS bugs, Angular treats all values as untrusted by default. When a value is inserted into the DOM from a template binding, or interpolation, Angular sanitizes and escapes untrusted values.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Preventing cross-site scripting (XSS)",
+        "url": "https://angular.dev/best-practices/security#preventing-cross-site-scripting-xss",
+        "type": "article"
+      },
+      {
+        "title": "Mitigate cross-site scripting (XSS)",
+        "url": "https://web.dev/articles/strict-csp",
+        "type": "article"
+      }
+    ]
   },
   "cgI9oeUHufA-ky_W1zENe": {
     "title": "Sanitization",
-    "description": "",
-    "links": []
+    "description": "Sanitization is the inspection of an untrusted value, turning it into a value that's safe to insert into the DOM. In many cases, sanitization doesn't change a value at all. Sanitization depends on context: A value that's harmless in CSS is potentially dangerous in a URL.\n\nAngular sanitizes untrusted values for HTML and URLs. Sanitizing resource URLs isn't possible because they contain arbitrary code. In development mode, Angular prints a console warning when it has to change a value during sanitization.\n\nInterpolated content is always escaped —the HTML isn't interpreted and the browser displays angle brackets in the element's text content.\n\nFor the HTML to be interpreted, bind it to an HTML property such as `innerHTML`. Be aware that binding a value that an attacker might control into `innerHTML` normally causes an XSS vulnerability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Sanitization and security contexts",
+        "url": "https://angular.dev/best-practices/security#sanitization-and-security-contexts",
+        "type": "article"
+      }
+    ]
   },
   "XoYSuv1salCCHoI1cJkxv": {
     "title": "Trusting Safe Values",
-    "description": "",
-    "links": []
+    "description": "Sometimes applications genuinely need to include executable code, display an `<iframe>` from some URL, or construct potentially dangerous URLs. To prevent automatic sanitization in these situations, tell Angular that you inspected a value, checked how it was created, and made sure it is secure. Do be careful. If you trust a value that might be malicious, you are introducing a security vulnerability into your application. If in doubt, find a professional security reviewer.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Trusting safe values",
+        "url": "https://angular.dev/best-practices/security#trusting-safe-values",
+        "type": "article"
+      }
+    ]
   },
   "5h7U0spwEUhB-hbjSlaeB": {
     "title": "Enforce Trusted Types",

@@ -312,12 +312,39 @@
   "7OffO2mBmfBKqPBTZ9ngI": {
     "title": "Godot",
     "description": "Godot is an open-source, multi-platform game engine that is known for being feature-rich and user-friendly. It is developed by hundreds of contributors from around the world and supports the creation of both 2D and 3D games. Godot uses its own scripting language, GDScript, which is similar to Python, but it also supports C# and visual scripting. It is equipped with a unique scene system and comes with a multitude of tools that can expedite the development process. Godot's design philosophy centers around flexibility, extensibility, and ease of use, providing a handy tool for both beginners and pros in game development.",
-    "links": []
+    "links": [
+      {
+        "title": "Godot in 100 Seconds",
+        "url": "https://m.youtube.com/watch?v=QKgTZWbwD1U",
+        "type": "video"
+      }
+    ]
   },
   "a6H-cZtp3A_fB8jnfMxBR": {
     "title": "Unreal Engine",
     "description": "The **Unreal Engine** is a powerful game development engine created by Epic Games. Used by game developers worldwide, it supports the creation of high-quality games across multiple platforms such as iOS, Android, Windows, Mac, Xbox, and PlayStation. Unreal Engine is renowned for its photo-realistic rendering, dynamic physics and effects, robust multiplayer framework, and its flexible scripting system called Blueprint. The engine is also fully equipped with dedicated tools and functionalities for animation, AI, lighting, cinematography, and post-processing effects. The most recent version, Unreal Engine 5, introduces real-time Global Illumination and makes film-quality real-time graphics achievable.",
-    "links": []
+    "links": [
+      {
+        "title": "Unreal Engine Documentation",
+        "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-4-documentation",
+        "type": "article"
+      },
+      {
+        "title": "Unreal Engine YouTube Channel",
+        "url": "https://m.youtube.com/channel/UCBobmJyzsJ6Ll7UbfhI4iwQ",
+        "type": "article"
+      },
+      {
+        "title": "Unreal Source Discord",
+        "url": "https://discord.gg/unrealsource",
+        "type": "article"
+      },
+      {
+        "title": "Unreal in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=DXDe-2BC4cE",
+        "type": "video"
+      }
+    ]
   },
   "CeAUEN233L4IoFSZtIvvl": {
     "title": "Native",
@@ -327,7 +354,13 @@
   "rNeOti8DDyWTMP9FB9kJ_": {
     "title": "Unity 3D",
     "description": "**Unity 3D** is a versatile, cross-platform game engine that supports the development of both 2D and 3D games. This game engine allows users to create a wide variety of games including AR, VR, Mobile, Consoles, and Computers in C#. It provides a host of powerful features and tools, such as scripting, asset bundling, scene building, and simulation, to assist developers in creating interactive content. Unity 3D also boasts a large, active community that regularly contributes tutorials, scripts, assets, and more, making it a robust platform for all levels of game developers.",
-    "links": []
+    "links": [
+      {
+        "title": "Unity in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=iqlH4okiQqg",
+        "type": "video"
+      }
+    ]
   },
   "4YgbrXLXf5mfaL2tlYkzk": {
     "title": "Programming Languages",
@@ -347,7 +380,13 @@
   "AaRZiItRcn8fYb5R62vfT": {
     "title": "Assembly",
     "description": "**Assembly** is a low-level programming language, often used for direct hardware manipulation, real-time systems, and to write performance-critical code. It provides a strong correspondence between its instructions and the architecture's machine-code instructions, since it directly represents the specific commands of the computer's CPU structure. However, it's closer to machine language (binary code) than to human language, which makes it difficult to read and understand. The syntax varies greatly, which depends upon the CPU architecture for which it's designed, thus Assembly language written for one type of processor can't be used on another. Despite its complexity, time-intensive coding process and machine-specific nature, Assembly language is still utilized for speed optimization and hardware manipulation where high-level languages may not be sufficient.",
-    "links": []
+    "links": [
+      {
+        "title": "Code walkthrough of a game written in x64 assembly",
+        "url": "https://www.youtube.com/watch?v=WUoqlp30M78",
+        "type": "video"
+      }
+    ]
   },
   "ts9pWxUimvFqfNJYCmNNw": {
     "title": "Rust",
@@ -725,7 +764,13 @@
   "rGEHTfdNeBAX3_XqC-vvI": {
     "title": "Reinforcements Learning",
     "description": "`Reinforcement Learning` is a type of Machine Learning which is geared towards making decisions. It involves an agent that learns to behave in an environment, by performing certain actions and observing the results or rewards/results it gets. The main principle of reinforcement learning is to reward good behavior and penalize bad behavior. The agent learns from the consequences of its actions, rather than from being taught explicitly. In the context of game development, reinforcement learning could be used to develop an AI (Artificial Intelligence) which can improve its performance in a game based on reward-driven behavior. The AI gradually learns the optimal strategy, known as policy, to achieve the best result.",
-    "links": []
+    "links": [
+      {
+        "title": "AI Learns to Walk (deep reinforcement learning)",
+        "url": "https://m.youtube.com/watch?v=L_4BPjLBF4E",
+        "type": "video"
+      }
+    ]
   },
   "9_OcZ9rzedDFfwEYxAghh": {
     "title": "Learning",

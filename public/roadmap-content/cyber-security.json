@@ -2004,8 +2004,14 @@
   },
   "P-Am25WJV8cFd_KsX7cdj": {
     "title": "SQL Injection",
-    "description": "",
-    "links": []
+    "description": "**SQL Injection** is a type of web application security vulnerability that allows an attacker to inject malicious SQL code into a web application's database, potentially leading to unauthorized data access, modification, or deletion.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PortSwigger - SQL Injection",
+        "url": "https://portswigger.net/web-security/sql-injection",
+        "type": "article"
+      }
+    ]
   },
   "pK2iRArULlK-B3iSVo4-n": {
     "title": "CSRF",
