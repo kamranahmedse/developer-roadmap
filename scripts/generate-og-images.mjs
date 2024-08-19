@@ -6,6 +6,7 @@ import satori from 'satori';
 import sharp from 'sharp';
 import imageSize from 'image-size';
 import { Resvg } from '@resvg/resvg-js';
+import { getRepositoryRank } from '../src/lib/github';
 
 const ALL_ROADMAP_DIR = path.join(process.cwd(), '/src/data/roadmaps');
 const ALL_BEST_PRACTICE_DIR = path.join(
@@ -27,6 +28,11 @@ const alreadyGeneratedImages = await fs.readdir(
     recursive: true,
   },
 );
+
+async function updateRank() {
+  const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
+  document.getElementById('repo-rank').innerText = `${repoRank} most starred GitHub project`;
+}
 
 async function getAllRoadmaps() {
   const allRoadmapDirNames = await fs.readdir(ALL_ROADMAP_DIR);
@@ -142,6 +148,8 @@ async function getAllBestPracticeImageIds() {
 }
 
 async function generateResourceOpenGraph() {
+  await updateRank();
+
   const allRoadmaps = (await getAllRoadmaps()).filter(
     (roadmap) => !alreadyGeneratedImages.includes(`roadmaps/${roadmap.id}.png`),
   );
@@ -371,8 +379,8 @@ function getRoadmapDefaultTemplate({ title, description }) {
                 />
               </svg>
             </div>
-            <div tw="text-[30px] flex leading-[30px]">
-              6th most starred GitHub project
+            <div tw="text-[30px] flex leading-[30px]" id="repo-rank">
+              Loading...
             </div>
           </div>
           <div tw="flex items-center mt-2.5">

@@ -1,6 +1,7 @@
 ---
 import { ChevronUp } from 'lucide-react';
 import Icon from './AstroIcon.astro';
+import { getRepositoryRank } from '../lib/github';
 export interface Props {
   value: string;
   text: string;
@@ -11,6 +12,8 @@ const { value, text } = Astro.props;
 const isGitHubStars = text.toLowerCase() === 'github stars';
 const isRegistered = text.toLowerCase() === 'registered users';
 const isDiscordMembers = text.toLowerCase() === 'discord members';
+
+const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
 ---
 
 <div
@@ -19,7 +22,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isGitHubStars && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank 6th</span>
+        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank {repoRank}</span>
         &nbsp;out of 28M!
       </p>
     )
