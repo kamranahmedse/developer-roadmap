@@ -1197,6 +1197,11 @@
         "title": "Explore top posts about GraphQL",
         "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Tutorial - GraphQL Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
+        "type": "video"
       }
     ]
   },
@@ -1703,6 +1708,11 @@
       {
         "title": "RabbitMQ Tutorial - Message Queues and Distributed Systems",
         "url": "https://www.youtube.com/watch?v=nFxjaVmFj5E",
+        "type": "video"
+      },
+      {
+        "title": "RabbitMQ in 100 Seconds",
+        "url": "https://m.youtube.com/watch?v=NQ3fZtyXji0",
         "type": "video"
       }
     ]
@@ -2909,7 +2919,7 @@
   },
   "dwfEHInbX2eFiafM-nRMX": {
     "title": "DynamoDB",
-    "description": "",
+    "description": "DynamoDB is a fully managed NoSQL database service provided by AWS, designed for high-performance applications that require low-latency data access at any scale.\n\nIt supports key-value and document data models, allowing developers to store and retrieve any amount of data with predictable performance.\n\nDynamoDB is known for its seamless scalability, automatic data replication across multiple AWS regions, and built-in security features, making it ideal for use cases like real-time analytics, mobile apps, gaming, IoT, and more.\n\nKey features include flexible schema design, powerful query capabilities, and integration with other AWS services.",
     "links": []
   },
   "RyJFLLGieJ8Xjt-DlIayM": {
@@ -2966,8 +2976,14 @@
   },
   "WiAK70I0z-_bzbWNwiHUd": {
     "title": "TimeScale",
-    "description": "",
-    "links": []
+    "description": "TimescaleDB is an open-source time-series database built on top of PostgreSQL, designed for efficiently storing and querying time-series data.\n\nIt introduces the concept of hypertables, which automatically partition data by time and space, making it ideal for high-volume data scenarios like monitoring, IoT, and financial analytics.\n\nTimescaleDB combines the power of relational databases with the performance of a specialized time-series solution, offering advanced features like continuous aggregates, real-time analytics, and seamless integration with PostgreSQL's ecosystem.\n\nIt's a robust choice for developers looking to manage time-series data in scalable and efficient ways.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tutorial - TimeScaleDB Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=69Tzh_0lHJ8",
+        "type": "video"
+      }
+    ]
   },
   "gT6-z2vhdIQDzmR2K1g1U": {
     "title": "Cassandra",
@@ -2997,7 +3013,7 @@
   },
   "5xy66yQrz1P1w7n6PcAFq": {
     "title": "AWS Neptune",
-    "description": "",
+    "description": "AWS Neptune is a fully managed graph database service designed for applications that require highly connected data.\n\nIt supports two popular graph models: Property Graph and RDF (Resource Description Framework), allowing you to build applications that traverse billions of relationships with millisecond latency.\n\nNeptune is optimized for storing and querying graph data, making it ideal for use cases like social networks, recommendation engines, fraud detection, and knowledge graphs.\n\nIt offers high availability, automatic backups, and multi-AZ (Availability Zone) replication, ensuring data durability and fault tolerance.\n\nAdditionally, Neptune integrates seamlessly with other AWS services and supports open standards like Gremlin, SPARQL, and Apache TinkerPop, making it flexible and easy to integrate into existing applications.",
     "links": []
   },
   "Z01E67D6KjrShvQCHjGR7": {

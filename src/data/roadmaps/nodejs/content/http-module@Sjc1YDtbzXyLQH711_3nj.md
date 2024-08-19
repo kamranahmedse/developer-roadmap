@@ -7,6 +7,6 @@ You can make API calls using the `http` module in Node.js as well. Here are the 
 
 Visit the following resources to learn more:
 
-- [@official@Node.js `http.get()` documentaion](https://nodejs.org/docs/latest-v16.x/api/http.html#httpgeturl-options-callback)
-- [@official@Node `http.request()` documentaion](https://nodejs.org/docs/latest-v16.x/api/http.html#httprequesturl-options-callback)
+- [@official@Node.js `http.get()` documentation](https://nodejs.org/docs/latest-v16.x/api/http.html#httpgeturl-options-callback)
+- [@official@Node `http.request()` documentation](https://nodejs.org/docs/latest-v16.x/api/http.html#httprequesturl-options-callback)
 - [@article@How To Create an HTTP Client with Core HTTP in Node.js](https://www.digitalocean.com/community/tutorials/how-to-create-an-http-client-with-core-http-in-node-js)

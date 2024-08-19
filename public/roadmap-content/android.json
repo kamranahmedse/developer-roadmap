@@ -215,8 +215,14 @@
   },
   "znvZp24L-PcQwkSObtixs": {
     "title": "TextView",
-    "description": "",
-    "links": []
+    "description": "TextView is a widget that is seen in every android application. This widget is used to display simple text within the android application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: TextView",
+        "url": "https://developer.android.com/reference/android/widget/TextView",
+        "type": "article"
+      }
+    ]
   },
   "2iDJrxjXOt7o2fPp2HfRl": {
     "title": "Fragments",
@@ -258,8 +264,14 @@
   },
   "BVgO9n7tGlVdiS72-hFSd": {
     "title": "Toast",
-    "description": "",
-    "links": []
+    "description": "A `toast` provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Toast",
+        "url": "https://developer.android.com/guide/topics/ui/notifiers/toasts",
+        "type": "article"
+      }
+    ]
   },
   "A4rtNULX_MoV93IH1Lgqw": {
     "title": "ImageView",

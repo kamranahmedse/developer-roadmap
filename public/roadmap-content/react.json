@@ -1403,12 +1403,22 @@
   },
   "W-atg_Msa9uPLr6RXAKSb": {
     "title": "Frameworks",
-    "description": "Server-side rendering (SSR) is a technique for rendering a JavaScript application on the server, rather than in the browser. This can improve the performance and user experience of a web application, as the initial render of the application is done on the server and the content is sent to the browser as a fully-rendered HTML page.\n\nThere are several frameworks and libraries available for server-side rendering React applications, most common being:\n\nNext.JS\n-------\n\nNext.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.\n\n*   [@article@Next.js](https://nextjs.org/)\n*   [@video@Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)\n\nRemix.JS\n--------\n\nRemix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.",
+    "description": "Server-side rendering (SSR) is a technique for rendering a JavaScript application on the server, rather than in the browser. This can improve the performance and user experience of a web application, as the initial render of the application is done on the server and the content is sent to the browser as a fully-rendered HTML page.\n\nThere are several frameworks and libraries available for server-side rendering React applications, most common being Next.js and Remix:\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Next.js",
+        "url": "https://nextjs.org/",
+        "type": "article"
+      },
       {
         "title": "Remix",
         "url": "https://remix.run/",
         "type": "article"
+      },
+      {
+        "title": "Next.js 14 Full Course 2024",
+        "url": "https://www.youtube.com/watch?v=wm5gMKuwSYk",
+        "type": "video"
       },
       {
         "title": "Remix Crash Course",

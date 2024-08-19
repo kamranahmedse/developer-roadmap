@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { Badge } from '../../../components/Badge';
+import {
+  getAllProjects,
+  getProjectById,
+  type ProjectFrontmatter,
+} from '../../../lib/project';
+import AstroIcon from '../../../components/AstroIcon.astro';
+import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
+import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
+
+export async function getStaticPaths() {
+  const projects = await getAllProjects();
+
+  return projects
+    .map((project) => project.id)
+    .map((projectId) => ({
+      params: { projectId },
+    }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  projectId: string;
+}
+
+const { projectId } = Astro.params as Params;
+
+const project = await getProjectById(projectId);
+const projectData = project.frontmatter as ProjectFrontmatter;
+
+let jsonLdSchema: any[] = [];
+
+const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
+const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
+---
+
+<BaseLayout
+  permalink={`/projects/${projectId}`}
+  title={projectData?.seo?.title}
+  briefTitle={projectData.title}
+  ogImageUrl={ogImageUrl}
+  description={projectData.seo.description}
+  keywords={projectData.seo.keywords}
+  jsonLd={jsonLdSchema}
+  resourceId={projectId}
+>
+  <div class='bg-gray-50'>
+    <div class='container'>
+      <ProjectTabs projectId={projectId} activeTab='solutions' />
+
+      <div class='mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5'>
+        <div class='relative mb-5 hidden sm:block'>
+          <h1 class='mb-1 text-xl font-semibold'>
+            {projectData.title} Solutions
+          </h1>
+          <p class='text-sm text-gray-500'>
+            {projectData.description}
+          </p>
+        </div>
+
+        <ListProjectSolutions projectId={projectId} client:load />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

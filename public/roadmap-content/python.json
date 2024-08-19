@@ -808,8 +808,19 @@
   },
   "KAXF2kUAOvtBZhY8G9rkI": {
     "title": "Context Manager",
-    "description": "",
-    "links": []
+    "description": "Context managers are a contruct in Python that allows you to set up context for a block of code, and then automatically clean up or relase resources when the block is exited. It is most commonly used with the `with` statement.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Context managers in Python",
+        "url": "https://www.freecodecamp.org/news/context-managers-in-python/",
+        "type": "article"
+      },
+      {
+        "title": "Context managers",
+        "url": "https://book.pythontips.com/en/latest/context_managers.html",
+        "type": "article"
+      }
+    ]
   },
   "0-ShORjGnQlAdcwjtxdEB": {
     "title": "Learn a Framework",
