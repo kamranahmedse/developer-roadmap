@@ -1,16 +1,7 @@
-import {
-  BookOpenText,
-  CheckSquare,
-  FileQuestion,
-  FolderKanban,
-  Menu,
-  Shirt,
-  Video,
-  Waypoints,
-} from 'lucide-react';
+import { ChevronDown, Globe, Menu, Sparkles, Waypoints } from 'lucide-react';
 import { useRef, useState } from 'react';
-import { cn } from '../lib/classname.ts';
-import { useOutsideClick } from '../hooks/use-outside-click.ts';
+import { useOutsideClick } from '../../hooks/use-outside-click';
+import { cn } from '../../lib/classname';
 
 const links = [
   {
@@ -20,46 +11,20 @@ const links = [
     Icon: Waypoints,
   },
   {
-    link: '/backend/projects',
-    label: 'Projects',
-    description: 'Learn by building real-world projects',
-    Icon: FolderKanban,
+    link: '/ai/explore',
+    label: 'AI Roadmaps',
+    description: 'AI generated learning paths',
+    Icon: Sparkles,
   },
   {
-    link: '/best-practices',
-    label: 'Best Practices',
-    description: "Do's and don'ts",
-    Icon: CheckSquare,
-  },
-  {
-    link: '/questions',
-    label: 'Questions',
-    description: 'Test and Practice your knowledge',
-    Icon: FileQuestion,
-  },
-  {
-    link: '/guides',
-    label: 'Guides',
-    description: 'In-depth articles and tutorials',
-    Icon: BookOpenText,
-  },
-  {
-    link: 'https://youtube.com/@roadmapsh',
-    label: 'Videos',
-    description: 'Animated and interactive content',
-    Icon: Video,
-    isExternal: true,
-  },
-  {
-    link: 'https://cottonbureau.com/people/roadmapsh',
-    label: 'Shop',
-    description: 'Get some cool swag',
-    Icon: Shirt,
-    isExternal: true,
+    link: '/community',
+    label: 'Community Roadmaps',
+    description: 'Community built learning paths',
+    Icon: Globe,
   },
 ];
 
-export function NavigationDropdown() {
+export function RoadmapDropdownMenu() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -77,7 +42,7 @@ export function NavigationDropdown() {
         onMouseOver={() => setIsOpen(true)}
         aria-label="Open Navigation Dropdown"
       >
-        <Menu className="h-5 w-5" />
+        Roadmaps <ChevronDown className="inline-block h-5 w-5" />
       </button>
       <div
         className={cn(
@@ -91,8 +56,6 @@ export function NavigationDropdown() {
         {links.map((link) => (
           <a
             href={link.link}
-            target={link.isExternal ? '_blank' : undefined}
-            rel={link.isExternal ? 'noopener noreferrer' : undefined}
             key={link.link}
             className="group flex items-center gap-3 px-4 py-2.5 text-gray-400 transition-colors hover:bg-slate-700"
           >

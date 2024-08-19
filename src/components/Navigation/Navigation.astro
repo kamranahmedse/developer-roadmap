@@ -4,6 +4,7 @@ import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
 import { AccountDropdown } from './AccountDropdown';
 import NewIndicator from './NewIndicator.astro';
+import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -42,18 +43,11 @@ import NewIndicator from './NewIndicator.astro';
         </a>
         <a
           href='/teams'
-          class='group relative text-gray-400 hover:text-white'
+          class='group relative !mr-5 text-gray-400 hover:text-white'
         >
           Teams
         </a>
-        <a href='/ai' class='text-gray-400 hover:text-white'> AI</a>
-        <a
-          href='/community'
-          class='group relative !mr-2 text-blue-300 hover:text-white'
-        >
-          Community
-          <NewIndicator />
-        </a>
+        <RoadmapDropdownMenu client:load />
         <!--<button-->
         <!--  data-command-menu-->
         <!--  class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1.5 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 md:flex'-->
