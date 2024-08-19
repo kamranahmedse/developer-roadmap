@@ -15,7 +15,7 @@ import { useOutsideClick } from '../hooks/use-outside-click.ts';
 const links = [
   {
     link: '/roadmaps',
-    label: 'Roadmaps',
+    label: 'Official Roadmaps',
     description: 'Step by step learning paths',
     Icon: Waypoints,
   },
