@@ -66,8 +66,9 @@ export function NavigationDropdown() {
         className={cn('text-gray-400 hover:text-white', {
           'text-white': isOpen,
         })}
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsOpen(!isOpen)}
         onMouseOver={() => setIsOpen(true)}
+        
         aria-label="Open Navigation Dropdown"
       >
         <Menu className="h-5 w-5" />
