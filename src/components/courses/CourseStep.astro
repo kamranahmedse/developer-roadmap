@@ -1,17 +1,21 @@
+---
+import { Swords } from 'lucide-react';
+---
+
 <div class='flex flex-col'>
-  <p
+  <div
     class='-ml-[27.6px] mb-3 flex items-center text-sm leading-none text-gray-400'
   >
     <span class='h-3 w-3 rounded-full bg-black'></span>
     <span class='h-[1px] w-[15px] bg-black'></span>
-    <span class='rounded-md border border-black bg-black px-3 py-2 text-white'>
-      Learn the absolute basics i.e. HTML and CSS
-    </span>
-  </p>
+    <h2 class='rounded-md border border-black bg-black px-3 py-2 text-white'>
+      Step 1 — Learn the absolute basics i.e. HTML and CSS
+    </h2>
+  </div>
 
   <p class='mb-2 text-sm text-gray-500'>
-    Purchase and watch one of the following <span
-      class='font-medium text-black'>premium courses</span
+    Purchase and watch one of the following <span class='font-medium text-black'
+      >premium courses</span
     >
   </p>
 
@@ -20,7 +24,7 @@
       <li>
         <a href='#' class='group font-medium text-gray-800 hover:text-black'>
           <span
-            class='mr-1.5 inline-block rounded bg-green-300 text-black px-1.5 py-0.5 text-xs uppercase no-underline'
+            class='mr-1.5 inline-block rounded bg-green-300 px-1.5 py-0.5 text-xs uppercase text-black no-underline'
           >
             Course
           </span>
@@ -33,7 +37,7 @@
       <li>
         <a href='#' class='group font-medium text-gray-800 hover:text-black'>
           <span
-              class='mr-1.5 inline-block rounded bg-green-300 text-black px-1.5 py-0.5 text-xs uppercase no-underline'
+            class='mr-1.5 inline-block rounded bg-green-300 px-1.5 py-0.5 text-xs uppercase text-black no-underline'
           >
             Course
           </span>
@@ -54,23 +58,26 @@
 
   <div class='mt-3 flex flex-col gap-1'>
     <a
-        href='/projects/task-tracker'
-        class='flex items-center gap-3 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
+      href='/projects/task-tracker'
+      class='flex items-center gap-2 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
     >
+      <Swords size='1.25em' className='text-gray-400' />
       Build a login page for a website.
     </a>
 
     <a
-        href='/projects/task-tracker'
-        class='flex items-center gap-3 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
+      href='/projects/task-tracker'
+      class='flex items-center gap-2 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
     >
+      <Swords size='1.25em' className='text-gray-400' />
       Create a landing page for an e-commerce website.
     </a>
 
     <a
-        href='/projects/task-tracker'
-        class='flex items-center gap-3 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
+      href='/projects/task-tracker'
+      class='flex items-center gap-2 rounded-md bg-zinc-100 px-2 py-1.5 text-sm text-black transition-colors hover:bg-zinc-300'
     >
+      <Swords size='1.25em' className='text-gray-400' />
       Create a responsive website for a restaurant.
     </a>
   </div>
