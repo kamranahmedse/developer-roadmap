@@ -1,0 +1,108 @@
+---
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
+import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import { FolderKanbanIcon } from 'lucide-react';
+import { EmptyProjects } from '../../components/Projects/EmptyProjects';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+} from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import RoadmapNote from '../../components/RoadmapNote.astro';
+import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
+import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import AstroIcon from '../../components/AstroIcon.astro';
+import CourseStep from "../../components/courses/CourseStep.astro";
+
+export async function getStaticPaths() {
+  const roadmapIds = await getRoadmapIds();
+
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
+  }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
+
+// update og for projects
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
+
+const descriptionNoun = {
+  'AI and Data Scientist': 'AI and Data Science',
+  'Game Developer': 'Game Development',
+  'Technical Writer': 'Technical Writing',
+  'Product Manager': 'Product Management',
+};
+
+const title = `${roadmapData.briefTitle} Courses`;
+const description = `Courses and project driven path to help you master ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
+
+const seoTitle = `${roadmapData.briefTitle} Courses`;
+const nounTitle =
+  descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
+const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
+---
+
+<BaseLayout
+  permalink={`/${roadmapId}`}
+  title={seoTitle}
+  description={seoDescription}
+  briefTitle={roadmapData.briefTitle}
+  ogImageUrl={ogImageUrl}
+  keywords={roadmapData.seo.keywords}
+  resourceId={roadmapId}
+  resourceType='roadmap'
+  noIndex={true}
+>
+  <div class='bg-gray-50'>
+    <RoadmapHeader
+      title={title}
+      description={description}
+      note={roadmapData.note}
+      tnsBannerLink={roadmapData.tnsBannerLink}
+      roadmapId={roadmapId}
+      hasTopics={roadmapData.hasTopics}
+      isUpcoming={roadmapData.isUpcoming}
+      isForkable={roadmapData.isForkable}
+      question={roadmapData.question}
+      activeTab='courses'
+    />
+
+    <div class='container'>
+      <div class='relative my-3 rounded-lg border bg-white px-12 py-8'>
+
+        <span class='absolute inset-y-0 left-[26.3px] w-[1px] bg-black'></span>
+
+        <!--Step content curator-->
+        <CourseStep />
+        <div class="mt-8"></div>
+        <CourseStep />
+        <div class="mt-8"></div>
+        <CourseStep />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
