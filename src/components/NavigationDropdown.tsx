@@ -76,6 +76,7 @@ export function NavigationDropdown() {
         onClick={() => setIsOpen(true)}
         onMouseOver={() => setIsOpen(true)}
         aria-label="Open Navigation Dropdown"
+        aria-expanded={isOpen}
       >
         <Menu className="h-5 w-5" />
       </button>
@@ -87,6 +88,7 @@ export function NavigationDropdown() {
           },
         )}
         onMouseLeave={() => setIsOpen(false)}
+        role="menu"
       >
         {links.map((link) => (
           <a
@@ -95,6 +97,7 @@ export function NavigationDropdown() {
             rel={link.isExternal ? 'noopener noreferrer' : undefined}
             key={link.link}
             className="group flex items-center gap-3 px-4 py-2.5 text-gray-400 transition-colors hover:bg-slate-700"
+            role="menuitem"
           >
             <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-slate-600 transition-colors group-hover:bg-slate-500 group-hover:text-slate-100">
               <link.Icon className="inline-block h-5 w-5" />
