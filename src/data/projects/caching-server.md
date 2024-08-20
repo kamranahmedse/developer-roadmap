@@ -1,10 +1,10 @@
 ---
 title: 'Caching Proxy'
-description: 'Build a caching proxy server that caches responses from other servers.'
+description: 'Build a caching server that caches responses from other servers.'
 isNew: false
 sort: 10
 difficulty: 'intermediate'
-nature: 'API'
+nature: 'CLI'
 skills:
   - 'Programming Language'
   - 'Text Processing'
@@ -12,7 +12,7 @@ skills:
   - 'File Uploads'
 seo:
   title: 'Caching Proxy Project Idea'
-  description: 'Build a caching proxy server that caches responses from other servers.'
+  description: 'Build a caching proxy server that caches responses from proxied server.'
   keywords:
     - 'backend project idea'
 roadmapIds:
