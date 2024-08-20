@@ -83,7 +83,7 @@ Here are the sample core microservices that you can implement for your e-commerc
     - **Functionality:** Automates the build, test, and deployment process of each microservice.
     - **Tech Stack:** Jenkins, GitLab CI, or GitHub Actions
 
-#### **Steps to Get Started:**
+## Steps to Get Started:
 
 1. **Set up Docker and Docker Compose:**
     - Create Dockerfiles for each microservice.
