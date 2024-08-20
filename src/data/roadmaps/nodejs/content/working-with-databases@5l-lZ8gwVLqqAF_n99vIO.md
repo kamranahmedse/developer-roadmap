@@ -4,4 +4,4 @@ A database is an organized collection of structured information, or data, typica
 
 Visit the following resources to learn more:
 
-- [@official@Wikipedia](https://en.wikipedia.org/wiki/Database)
+- [@article@Wikipedia - What is Database?](https://en.wikipedia.org/wiki/Database)
