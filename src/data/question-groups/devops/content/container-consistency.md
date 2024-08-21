@@ -1,0 +1,8 @@
+Containers help to add consistency in several ways, here are some examples:
+
+- **Isolation**: Containers encapsulate all the dependencies, libraries, and configurations needed to run an application, isolating it from the host system and other containers. This ensures that the application runs the same way regardless of where the container is deployed.
+- **Portability**: Containers can be run on any environment that supports the container runtime. This means that the same container image can be used on a developer's local machine, a testing environment, or a production server without any kind of modification.
+- **Consistency**: By using the same container image across different environments, you eliminate inconsistencies from differences in configuration, dependencies, and runtime environments. This ensures that if the application works in one environment, it will work in all others.
+- **Version Control**: Container images can be versioned and stored in registries (e.g., Docker Hub, AWS ECR). This allows teams to track and roll back to specific versions of an application if there are problems.
+- **Reproducibility**: Containers make it easier to reproduce the exact environment required for the application. This is especially useful for debugging issues that occur in production but not in development, as developers can recreate the production environment locally.
+- **Automation**: Containers facilitate the use of automated build and deployment pipelines. Automated processes can consistently create, test, and deploy container images.

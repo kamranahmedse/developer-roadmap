@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getRepositoryRank } from '../lib/github.ts';
+
+const repoRank = await getRepositoryRank('kamranahmedse/developer-roadmap');
 ---
 
 <BaseLayout title='About roadmap.sh' permalink={'/about'}>
@@ -73,7 +76,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
               target='_blank'
               class='font-bold underline'
-              >the 6th most starred opensource project on GitHub</a
+              >the {repoRank} most starred opensource project on GitHub</a
             > and gets visited by hundreds of thousands of developers every month.
             We also have newsletter with 150,000+ developers. All the roadmaps are
             created and reviewed by community and several subject matter experts.

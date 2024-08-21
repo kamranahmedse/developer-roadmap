@@ -1,12 +1,13 @@
 ---
-import { ChevronUp } from 'lucide-react';
 import Icon from './AstroIcon.astro';
+
 export interface Props {
+  secondaryValue?: string;
   value: string;
   text: string;
 }
 
-const { value, text } = Astro.props;
+const { value, text, secondaryValue } = Astro.props;
 
 const isGitHubStars = text.toLowerCase() === 'github stars';
 const isRegistered = text.toLowerCase() === 'registered users';
@@ -19,7 +20,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isGitHubStars && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank 6th</span>
+        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank {secondaryValue}</span>
         &nbsp;out of 28M!
       </p>
     )
@@ -28,7 +29,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isRegistered && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+75k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )
@@ -37,7 +38,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isDiscordMembers && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+1.5k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )

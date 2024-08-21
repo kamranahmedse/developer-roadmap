@@ -41,7 +41,7 @@ export function LeavingRoadmapWarningModal(
           <span className="font-medium text-purple-600">
             incorrect or misleading
           </span>
-          . It helps the community. It helps the community.
+          . It helps the community.
         </p>
       </div>
 

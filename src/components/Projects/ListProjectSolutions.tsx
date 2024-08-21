@@ -268,7 +268,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
               </div>
 
               <div className="flex items-center justify-end gap-1">
-                <span className="flex items-center overflow-hidden rounded-full border">
+                <span className="flex overflow-hidden rounded-full border">
                   <VoteButton
                     icon={ThumbsUp}
                     isActive={solution?.voteType === 'upvote'}
@@ -282,6 +282,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                     icon={ThumbsDown}
                     isActive={solution?.voteType === 'downvote'}
                     count={solution.downvotes || 0}
+                    hideCount={true}
                     onClick={() => {
                       handleSubmitVote(solution._id!, 'downvote');
                     }}
