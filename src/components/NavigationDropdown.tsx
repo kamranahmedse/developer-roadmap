@@ -8,9 +8,14 @@ import {
   Video,
   Waypoints,
 } from 'lucide-react';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cn } from '../lib/classname.ts';
 import { useOutsideClick } from '../hooks/use-outside-click.ts';
+import {
+  navigationDropdownOpen,
+  roadmapsDropdownOpen,
+} from '../stores/page.ts';
+import { useStore } from '@nanostores/react';
 
 const links = [
   {
@@ -61,22 +66,30 @@ const links = [
 
 export function NavigationDropdown() {
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
+
+  const $navigationDropdownOpen = useStore(navigationDropdownOpen);
+  const $roadmapsDropdownOpen = useStore(roadmapsDropdownOpen);
 
   useOutsideClick(dropdownRef, () => {
-    setIsOpen(false);
+    navigationDropdownOpen.set(false);
   });
+
+  useEffect(() => {
+    if ($roadmapsDropdownOpen) {
+      navigationDropdownOpen.set(false);
+    }
+  }, [$roadmapsDropdownOpen]);
 
   return (
     <div className="relative flex items-center" ref={dropdownRef}>
       <button
         className={cn('text-gray-400 hover:text-white', {
-          'text-white': isOpen,
+          'text-white': $navigationDropdownOpen,
         })}
-        onClick={() => setIsOpen(true)}
-        onMouseOver={() => setIsOpen(true)}
+        onClick={() => navigationDropdownOpen.set(true)}
+        onMouseOver={() => navigationDropdownOpen.set(true)}
         aria-label="Open Navigation Dropdown"
-        aria-expanded={isOpen}
+        aria-expanded={$navigationDropdownOpen}
       >
         <Menu className="h-5 w-5" />
       </button>
@@ -84,7 +97,8 @@ export function NavigationDropdown() {
         className={cn(
           'pointer-events-none invisible absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
           {
-            'pointer-events-auto visible translate-y-2.5 opacity-100': isOpen,
+            'pointer-events-auto visible translate-y-2.5 opacity-100':
+              $navigationDropdownOpen,
           },
         )}
         role="menu"

@@ -1,7 +1,12 @@
 import { ChevronDown, Globe, Menu, Sparkles, Waypoints } from 'lucide-react';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
+import {
+  navigationDropdownOpen,
+  roadmapsDropdownOpen,
+} from '../../stores/page.ts';
+import { useStore } from '@nanostores/react';
 
 const links = [
   {
@@ -26,30 +31,40 @@ const links = [
 
 export function RoadmapDropdownMenu() {
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
+
+  const $roadmapsDropdownOpen = useStore(roadmapsDropdownOpen);
+  const $navigationDropdownOpen = useStore(navigationDropdownOpen);
 
   useOutsideClick(dropdownRef, () => {
-    setIsOpen(false);
+    roadmapsDropdownOpen.set(false);
   });
+
+  useEffect(() => {
+    if ($navigationDropdownOpen) {
+      roadmapsDropdownOpen.set(false);
+    }
+  }, [$navigationDropdownOpen]);
 
   return (
     <div className="relative flex items-center" ref={dropdownRef}>
       <button
         className={cn('text-gray-400 hover:text-white', {
-          'text-white': isOpen,
+          'text-white': $roadmapsDropdownOpen,
         })}
-        onClick={() => setIsOpen(true)}
-        onMouseOver={() => setIsOpen(true)}
+        onClick={() => roadmapsDropdownOpen.set(true)}
+        onMouseOver={() => roadmapsDropdownOpen.set(true)}
         aria-label="Open Navigation Dropdown"
-        aria-expanded={isOpen}
+        aria-expanded={$roadmapsDropdownOpen}
       >
-        Roadmaps <ChevronDown className="inline-block h-3 w-3" strokeWidth={4} />
+        Roadmaps{' '}
+        <ChevronDown className="inline-block h-3 w-3" strokeWidth={4} />
       </button>
       <div
         className={cn(
           'pointer-events-none invisible absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-2xl transition-all duration-100',
           {
-            'pointer-events-auto visible translate-y-2.5 opacity-100': isOpen,
+            'pointer-events-auto visible translate-y-2.5 opacity-100':
+              $roadmapsDropdownOpen,
           },
         )}
         role="menu"
