@@ -6,4 +6,6 @@ You can use `git filter-branch` to rewrite Git revision history by applying cust
 - Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.
 - Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.
 
+Visit the following resources to learn more: 
+
 - [@official@git filter-branch](https://git-scm.com/docs/git-filter-branch)
