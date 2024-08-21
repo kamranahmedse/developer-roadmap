@@ -7,7 +7,6 @@ Variables declared Globally (outside any function) have Global Scope. Global var
 If you assign a value to a variable  that has not been declared i.e `potato = true` 
 it will automatically become a _GLOBAL_ variable.
 
-
 Visit the following resources to learn more:
 
 - [@article@JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
