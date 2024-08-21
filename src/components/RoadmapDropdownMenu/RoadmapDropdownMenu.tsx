@@ -6,20 +6,20 @@ import { cn } from '../../lib/classname';
 const links = [
   {
     link: '/roadmaps',
-    label: 'Roadmaps',
-    description: 'Step by step learning paths',
+    label: 'Official Roadmaps',
+    description: 'Made by subject matter experts',
     Icon: Waypoints,
   },
   {
     link: '/ai/explore',
     label: 'AI Roadmaps',
-    description: 'AI generated learning paths',
+    description: 'Generate roadmaps with AI',
     Icon: Sparkles,
   },
   {
     link: '/community',
     label: 'Community Roadmaps',
-    description: 'Community built learning paths',
+    description: 'Made by community members',
     Icon: Globe,
   },
 ];
@@ -43,16 +43,15 @@ export function RoadmapDropdownMenu() {
         aria-label="Open Navigation Dropdown"
         aria-expanded={isOpen}
       >
-        Roadmaps <ChevronDown className="inline-block h-5 w-5" />
+        Roadmaps <ChevronDown className="inline-block h-3 w-3" strokeWidth={4} />
       </button>
       <div
         className={cn(
-          'pointer-events-none invisible absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          'pointer-events-none invisible absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-2xl transition-all duration-100',
           {
             'pointer-events-auto visible translate-y-2.5 opacity-100': isOpen,
           },
         )}
-        onMouseLeave={() => setIsOpen(false)}
         role="menu"
       >
         {links.map((link) => (

@@ -16,13 +16,13 @@ const links = [
   {
     link: '/roadmaps',
     label: 'Official Roadmaps',
-    description: 'Step by step learning paths',
+    description: 'Made by subject matter experts',
     Icon: Waypoints,
   },
   {
     link: '/backend/projects',
     label: 'Projects',
-    description: 'Learn by building real-world projects',
+    description: 'Skill-up with real-world projects',
     Icon: FolderKanban,
   },
   {
@@ -87,7 +87,6 @@ export function NavigationDropdown() {
             'pointer-events-auto visible translate-y-2.5 opacity-100': isOpen,
           },
         )}
-        onMouseLeave={() => setIsOpen(false)}
         role="menu"
       >
         {links.map((link) => (
