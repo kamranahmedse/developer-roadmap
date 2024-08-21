@@ -3157,38 +3157,6 @@
       "dragging": false
     },
     {
-      "id": "mRB-0CRdGwvxPqZbz08yj",
-      "type": "subtopic",
-      "position": {
-        "x": -514.5993272119424,
-        "y": 848.2304293708296
-      },
-      "selected": false,
-      "data": {
-        "label": "@else if",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        }
-      },
-      "zIndex": 999,
-      "width": 166,
-      "height": 49,
-      "style": {
-        "width": 166,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": -514.5993272119424,
-        "y": 848.2304293708296
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "resizing": false
-    },
-    {
       "id": "kGzlumFdZFxTRZ3HnCGFO",
       "type": "topic",
       "position": {
