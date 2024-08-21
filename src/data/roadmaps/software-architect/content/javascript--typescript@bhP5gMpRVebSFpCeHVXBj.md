@@ -14,6 +14,6 @@ Visit the following resources to learn more:
 - [@article@Official Docs for Deep Dives](https://www.typescriptlang.org/docs/)
 - [@article@The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@article@TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
-- [@article@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript)
+- [@article@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript?via=roadmap)
 - [@video@TypeScript for Beginners](https://www.youtube.com/watch?v=BwuLxPH8IDs)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -8,7 +8,7 @@ Visit the following resources to learn more:
 - [@article@Official Docs for Deep Dives](https://www.typescriptlang.org/docs/)
 - [@article@The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@article@TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
-- [@course@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript)
+- [@course@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript?via=roadmap)
 - [@video@TypeScript for Beginners](https://www.youtube.com/watch?v=BwuLxPH8IDs)
 - [@article@What Is TypeScript?](https://thenewstack.io/what-is-typescript/)
 - [@article@TypeScript Tutorial: Go beyond ‘Hello, World!’](https://thenewstack.io/typescript-tutorial-go-beyond-hello-world/)
