@@ -4,4 +4,4 @@ When using mixed mode, the HEAD pointer is moved to the specified commit. Howeve
 
 Visit the following resources to learn more:
 
-- [@official@--mixed documentation](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard)
+- [@official@--mixed documentation](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed)

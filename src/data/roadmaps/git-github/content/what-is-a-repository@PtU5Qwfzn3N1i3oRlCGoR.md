@@ -4,5 +4,5 @@ A repository is a storage location for your project's code, documentation, and o
 
 Learn more from the following resources:
 
-- [@article@About repositories](hhttps://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
+- [@article@About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
 - [@article@What is a repository?](https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository)
