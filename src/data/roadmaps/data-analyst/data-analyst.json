@@ -1747,7 +1747,7 @@
         }
       },
       "zIndex": 999,
-      "width": 101,
+      "width": 94,
       "height": 20,
       "positionAbsolute": {
         "x": -420.5,
@@ -1755,7 +1755,7 @@
       },
       "dragging": false,
       "style": {
-        "width": 101,
+        "width": 94,
         "height": 20
       },
       "resizing": false,
@@ -3543,7 +3543,7 @@
       },
       "zIndex": 999,
       "width": 258,
-      "height": 112,
+      "height": 55,
       "positionAbsolute": {
         "x": -407.47806963137555,
         "y": 1262.5718689856715
@@ -4754,8 +4754,8 @@
         "oldId": "dOrnsftQKhJAmOmsSzDI0"
       },
       "zIndex": 999,
-      "width": 434,
-      "height": 62,
+      "width": 402,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -697.4287445047304,
@@ -4787,7 +4787,7 @@
       },
       "zIndex": 999,
       "width": 431,
-      "height": 87,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -697.4287445047304,
@@ -4823,7 +4823,7 @@
       },
       "zIndex": 999,
       "width": 381,
-      "height": 62,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -697.6069342680164,
@@ -4859,7 +4859,7 @@
       },
       "zIndex": 999,
       "width": 438,
-      "height": 87,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -697.6069342680164,
@@ -4895,7 +4895,7 @@
       },
       "zIndex": 999,
       "width": 368,
-      "height": 62,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -697.4287445047304,
@@ -4968,7 +4968,7 @@
       },
       "zIndex": 999,
       "width": 371,
-      "height": 62,
+      "height": 30,
       "dragging": false,
       "positionAbsolute": {
         "x": -698.4287445047304,
@@ -5004,7 +5004,7 @@
       },
       "zIndex": 999,
       "width": 436,
-      "height": 112,
+      "height": 80,
       "dragging": false,
       "positionAbsolute": {
         "x": -698.4287445047304,
