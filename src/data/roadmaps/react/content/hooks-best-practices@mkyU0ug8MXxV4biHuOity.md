@@ -2,7 +2,7 @@
 
 To fully leverage the capabilities of React Hooks, it is crucial to adopt best practices that not only enhance code readability but also optimize performance. By adhering to these practices, developers can create cleaner, more maintainable components that make the most of React's powerful features, leading to a more efficient and enjoyable development experience.
 
-Learn the best practices for using React hooks from the following resources:
+Learn more from the following resources:
 
 - [@official@Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks/)
 - [@article@React Hooks Best Practices: Unlocking Efficiency and Elegance](https://medium.com/womenintechnology/react-hooks-best-practices-unlocking-efficiency-and-elegance-da23f7e1418a)
