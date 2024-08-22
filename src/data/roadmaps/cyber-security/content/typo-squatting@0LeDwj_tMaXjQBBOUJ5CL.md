@@ -4,4 +4,4 @@ Typosquatting is a form of cyberattack that exploits common typing errors made b
 
 Visit the following resources to learn more:
 
--[@article@What is Typosquatting](https://www.mcafee.com/learn/what-is-typosquatting/#:~:text=Typosquatting%2C%20also%20known%20as%20URL,%E2%80%9CGoogle.com%E2%80%9D).)
+- [@article@What is Typosquatting](https://www.mcafee.com/learn/what-is-typosquatting/#:~:text=Typosquatting%2C%20also%20known%20as%20URL,%E2%80%9CGoogle.com%E2%80%9D)
