@@ -32,6 +32,18 @@ import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 
+export const allowedRoadmapResourceTypes = ['course', 'book', 'other'] as const;
+export type AllowedRoadmapResourceType =
+  (typeof allowedRoadmapResourceTypes)[number];
+
+type TopicResource = {
+  _id?: string;
+  title: string;
+  type: AllowedRoadmapResourceType;
+  url: string;
+  topicIds: string[];
+};
+
 type TopicDetailProps = {
   resourceTitle?: string;
   resourceType?: ResourceType;
@@ -50,7 +62,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
   video: 'bg-purple-300',
   website: 'bg-blue-300',
   official: 'bg-blue-600 text-white',
-  feed: "bg-[#ce3df3] text-white"
+  feed: 'bg-[#ce3df3] text-white',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -69,6 +81,8 @@ export function TopicDetail(props: TopicDetailProps) {
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
+  const [topicResources, setTopicResources] = useState<TopicResource[]>([]);
+
   const { secret } = getUrlParams() as { secret: string };
   const isGuest = useMemo(() => !isLoggedIn(), []);
   const topicRef = useRef<HTMLDivElement>(null);
@@ -86,6 +100,20 @@ export function TopicDetail(props: TopicDetailProps) {
   useKeydown('Escape', () => {
     setIsActive(false);
   });
+
+  const loadTopicResources = async (roadmapId: string, topicId: string) => {
+    const sanitizedTopicId = topicId.split('@')?.[1] || topicId;
+    const { response, error } = await httpGet<TopicResource[]>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-list-topic-resources/${roadmapId}?t=${sanitizedTopicId}`,
+    );
+
+    if (error) {
+      toast.error(error?.message || 'Failed to load topic resources');
+      return;
+    }
+
+    setTopicResources(response || []);
+  };
 
   // Toggle topic is available even if the component UI is not active
   // This is used on the best practice screen where we have the checkboxes
@@ -151,114 +179,125 @@ export function TopicDetail(props: TopicDetailProps) {
       }`;
     }
 
-    httpGet<string | RoadmapContentDocument>(
-      topicUrl,
-      {},
-      {
-        ...(!isCustomResource && {
-          headers: {
-            Accept: 'text/html',
-          },
-        }),
-      },
-    )
-      .then(({ response }) => {
-        if (!response) {
-          setError('Topic not found.');
-          setIsLoading(false);
-          return;
-        }
-        let topicHtml = '';
-        if (!isCustomResource) {
-          const topicDom = new DOMParser().parseFromString(
-            response as string,
-            'text/html',
-          );
+    Promise.all([
+      httpGet<string | RoadmapContentDocument>(
+        topicUrl,
+        {},
+        {
+          ...(!isCustomResource && {
+            headers: {
+              Accept: 'text/html',
+            },
+          }),
+        },
+      )
+        .then(({ response }) => {
+          if (!response) {
+            setError('Topic not found.');
+            setIsLoading(false);
+            return;
+          }
+          let topicHtml = '';
+          if (!isCustomResource) {
+            const topicDom = new DOMParser().parseFromString(
+              response as string,
+              'text/html',
+            );
 
-          const links = topicDom.querySelectorAll('a');
-          const urlElem: HTMLElement =
-            topicDom.querySelector('[data-github-url]')!;
-          const contributionUrl = urlElem?.dataset?.githubUrl || '';
+            const links = topicDom.querySelectorAll('a');
+            const urlElem: HTMLElement =
+              topicDom.querySelector('[data-github-url]')!;
+            const contributionUrl = urlElem?.dataset?.githubUrl || '';
 
-          const titleElem: HTMLElement = topicDom.querySelector('h1')!;
-          const otherElems = topicDom.querySelectorAll('body > *:not(h1, div)');
+            const titleElem: HTMLElement = topicDom.querySelector('h1')!;
+            const otherElems = topicDom.querySelectorAll(
+              'body > *:not(h1, div)',
+            );
 
-          let ulWithLinks: HTMLUListElement = document.createElement('ul');
+            let ulWithLinks: HTMLUListElement = document.createElement('ul');
 
-          // we need to remove the `ul` with just links (i.e. resource links)
-          // and show them separately.
-          topicDom.querySelectorAll('ul').forEach((ul) => {
-            const lisWithJustLinks = Array.from(
-              ul.querySelectorAll('li'),
-            ).filter((li) => {
-              return (
-                li.children.length === 1 &&
-                li.children[0].tagName === 'A' &&
-                li.children[0].textContent === li.textContent
-              );
+            // we need to remove the `ul` with just links (i.e. resource links)
+            // and show them separately.
+            topicDom.querySelectorAll('ul').forEach((ul) => {
+              const lisWithJustLinks = Array.from(
+                ul.querySelectorAll('li'),
+              ).filter((li) => {
+                return (
+                  li.children.length === 1 &&
+                  li.children[0].tagName === 'A' &&
+                  li.children[0].textContent === li.textContent
+                );
+              });
+
+              if (lisWithJustLinks.length > 0) {
+                ulWithLinks = ul;
+              }
             });
 
-            if (lisWithJustLinks.length > 0) {
-              ulWithLinks = ul;
+            const listLinks = Array.from(ulWithLinks.querySelectorAll('li > a'))
+              .map((link, counter) => {
+                const typePattern = /@([a-z.]+)@/;
+                let linkText = link.textContent || '';
+                const linkHref = link.getAttribute('href') || '';
+                const linkType = linkText.match(typePattern)?.[1] || 'article';
+
+                linkText = linkText.replace(typePattern, '');
+
+                return {
+                  id: `link-${linkHref}-${counter}`,
+                  title: linkText,
+                  url: linkHref,
+                  type: linkType as AllowedLinkTypes,
+                };
+              })
+              .sort((a, b) => {
+                // official at the top
+                // opensource at second
+                // article at third
+                // videos at fourth
+                // rest at last
+                const order = [
+                  'official',
+                  'opensource',
+                  'article',
+                  'video',
+                  'feed',
+                ];
+                return order.indexOf(a.type) - order.indexOf(b.type);
+              });
+
+            if (ulWithLinks) {
+              ulWithLinks.remove();
             }
-          });
 
-          const listLinks = Array.from(ulWithLinks.querySelectorAll('li > a'))
-            .map((link, counter) => {
-              const typePattern = /@([a-z.]+)@/;
-              let linkText = link.textContent || '';
-              const linkHref = link.getAttribute('href') || '';
-              const linkType = linkText.match(typePattern)?.[1] || 'article';
+            topicHtml = topicDom.body.innerHTML;
 
-              linkText = linkText.replace(typePattern, '');
+            setLinks(listLinks);
+            setHasContent(otherElems.length > 0);
+            setContributionUrl(contributionUrl);
+            setHasEnoughLinks(links.length >= 3);
+            setTopicHtmlTitle(titleElem?.textContent || '');
+          } else {
+            setLinks((response as RoadmapContentDocument)?.links || []);
+            setTopicTitle((response as RoadmapContentDocument)?.title || '');
 
-              return {
-                id: `link-${linkHref}-${counter}`,
-                title: linkText,
-                url: linkHref,
-                type: linkType as AllowedLinkTypes,
-              };
-            })
-            .sort((a, b) => {
-              // official at the top
-              // opensource at second
-              // article at third
-              // videos at fourth
-              // rest at last
-              const order = ['official', 'opensource', 'article', 'video', 'feed'];
-              return order.indexOf(a.type) - order.indexOf(b.type);
-            });
+            const sanitizedMarkdown = sanitizeMarkdown(
+              (response as RoadmapContentDocument).description || '',
+            );
 
-          if (ulWithLinks) {
-            ulWithLinks.remove();
+            setHasContent(sanitizedMarkdown?.length > 0);
+            topicHtml = markdownToHtml(sanitizedMarkdown, false);
           }
 
-          topicHtml = topicDom.body.innerHTML;
-
-          setLinks(listLinks);
-          setHasContent(otherElems.length > 0);
-          setContributionUrl(contributionUrl);
-          setHasEnoughLinks(links.length >= 3);
-          setTopicHtmlTitle(titleElem?.textContent || '');
-        } else {
-          setLinks((response as RoadmapContentDocument)?.links || []);
-          setTopicTitle((response as RoadmapContentDocument)?.title || '');
-
-          const sanitizedMarkdown = sanitizeMarkdown(
-            (response as RoadmapContentDocument).description || '',
-          );
-
-          setHasContent(sanitizedMarkdown?.length > 0);
-          topicHtml = markdownToHtml(sanitizedMarkdown, false);
-        }
-
-        setIsLoading(false);
-        setTopicHtml(topicHtml);
-      })
-      .catch((err) => {
-        setError('Something went wrong. Please try again later.');
-        setIsLoading(false);
-      });
+          setIsLoading(false);
+          setTopicHtml(topicHtml);
+        })
+        .catch((err) => {
+          setError('Something went wrong. Please try again later.');
+          setIsLoading(false);
+        }),
+      loadTopicResources(resourceId, topicId),
+    ]);
   });
 
   useEffect(() => {
@@ -424,47 +463,52 @@ export function TopicDetail(props: TopicDetailProps) {
               )}
 
               {/* Contribution */}
-              {canSubmitContribution && !hasEnoughLinks && contributionUrl && hasContent && (
-                <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
-                  <div className="mb-4 mt-3">
-                    <p className="">
-                      Find more resources using these pre-filled search queries:
-                    </p>
-                    <div className="mt-3 flex gap-2  text-gray-700">
-                      <a
-                        href={googleSearchUrl}
-                        target="_blank"
-                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                      >
-                        <GoogleIcon className={'h-4 w-4'} />
-                        Google
-                      </a>
-                      <a
-                        href={youtubeSearchUrl}
-                        target="_blank"
-                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                      >
-                        <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                        YouTube
-                      </a>
+              {canSubmitContribution &&
+                !hasEnoughLinks &&
+                contributionUrl &&
+                hasContent && (
+                  <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
+                    <div className="mb-4 mt-3">
+                      <p className="">
+                        Find more resources using these pre-filled search
+                        queries:
+                      </p>
+                      <div className="mt-3 flex gap-2 text-gray-700">
+                        <a
+                          href={googleSearchUrl}
+                          target="_blank"
+                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                        >
+                          <GoogleIcon className={'h-4 w-4'} />
+                          Google
+                        </a>
+                        <a
+                          href={youtubeSearchUrl}
+                          target="_blank"
+                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                        >
+                          <YouTubeIcon className={'h-4 w-4 text-red-500'} />
+                          YouTube
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <p className="mb-2 mt-2 leading-relaxed">
-                    This popup should be a brief introductory paragraph for the topic and a few links
-                    to good articles, videos, or any other self-vetted resources. Please consider
-                    submitting a PR to improve this content.
-                  </p>
-                  <a
-                    href={contributionUrl}
-                    target={'_blank'}
-                    className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                  >
-                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                    Help us Improve this Content
-                  </a>
-                </div>
-              )}
+                    <p className="mb-2 mt-2 leading-relaxed">
+                      This popup should be a brief introductory paragraph for
+                      the topic and a few links to good articles, videos, or any
+                      other self-vetted resources. Please consider submitting a
+                      PR to improve this content.
+                    </p>
+                    <a
+                      href={contributionUrl}
+                      target={'_blank'}
+                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                    >
+                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                      Help us Improve this Content
+                    </a>
+                  </div>
+                )}
             </div>
             {resourceId === 'devops' && (
               <div className="mt-4">
