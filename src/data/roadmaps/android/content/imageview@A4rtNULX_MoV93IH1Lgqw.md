@@ -5,4 +5,3 @@ Displays image resources, for example Bitmap or Drawable resources. ImageView is
 Visit the following resources to learn more:
 
 - [@article@Android developers: ImageView](https://developer.android.com/reference/android/widget/ImageView)
-
