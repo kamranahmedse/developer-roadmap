@@ -22,7 +22,7 @@
   },
   "Mp056kNnwsRWeEXuhGPy-": {
     "title": "What is Node.js?",
-    "description": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.\n\nVisit the following resources to learn more:",
+    "description": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request.\n\nNode.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Official Website",
@@ -30,13 +30,13 @@
         "type": "article"
       },
       {
-        "title": "Node.JS Introduction",
-        "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+        "title": "Node.js - Getting Started",
+        "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
         "type": "article"
       },
       {
-        "title": "Official Website",
-        "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+        "title": "Node.js - Introduction",
+        "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
         "type": "article"
       },
       {
@@ -319,7 +319,7 @@
   },
   "oYeux7PbveYaVwXRzAg5x": {
     "title": "Local Installation",
-    "description": "Locally installed packages are available only to the project where the packages are installed, while the globally installed packages can be used any where without installing them into a project. Another usecase of the global packages is when using CLI tools.\n\nVisit the following resources to learn more:",
+    "description": "Locally installed packages are available only to the project where the packages are installed, while the globally installed packages can be used any where without installing them into a project. Another use case of the global packages is when using CLI tools.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Downloading and installing packages locally",
@@ -399,8 +399,24 @@
   },
   "dOlzIXBfAPmbY542lNOe6": {
     "title": "Semantic Versioning",
-    "description": "",
-    "links": []
+    "description": "Semantic Versioning is a standard for versioning software that's widely adopted in the npm ecosystem. It provides a clear and consistent way to communicate changes in a software package to users.\n\nVersion Format\n--------------\n\nA semantic version number consists of three parts separated by dots:\n\n*   MAJOR: Incremented when there are incompatible API changes.\n*   MINOR: Incremented when new functionality is added in a backwards-compatible manner.\n*   PATCH: Incremented when bug fixes are made without affecting the API.\n\n### Example: 1.2.3\n\n*   1 is the major version.\n*   2 is the minor version.\n*   3 is the patch version.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Semver.org",
+        "url": "https://semver.org/",
+        "type": "article"
+      },
+      {
+        "title": "Medium - Understanding Semantic Versioning",
+        "url": "https://medium.com/codex/understanding-semantic-versioning-a-guide-for-developers-dad5f2b70583",
+        "type": "article"
+      },
+      {
+        "title": "Devopedia - Semver",
+        "url": "https://devopedia.org/semantic-versioning",
+        "type": "article"
+      }
+    ]
   },
   "t_kfKdNSKVBPYQ9zF9VqQ": {
     "title": "Error Handling",
@@ -525,8 +541,13 @@
     "description": "Node.js includes a command-line debugging utility. The Node.js debugger client is not a full-featured debugger, but simple stepping and inspection are possible. To use it, start Node.js with the inspect argument followed by the path to the script to debug.\n\nExample - `$ node inspect myscript.js`\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Official Docs",
         "url": "https://nodejs.org/api/debugger.html",
+        "type": "article"
+      },
+      {
+        "title": "Freecodecamp.org - Debugging",
+        "url": "https://www.freecodecamp.org/news/how-to-debug-node-js-applications/",
         "type": "article"
       }
     ]
@@ -812,7 +833,7 @@
   },
   "b1r1X3XCoPSayQjDBcy54": {
     "title": "fs module",
-    "description": "File System or fs module is a built in module in Node that enables interacting with the file system using JavaScript. All file system operations have synchronous, callback, and promise-based forms, and are accessible using both CommonJS syntax and ES6 Modules.\n\nVisit the following resources to learn more:",
+    "description": "File System or `fs` module is a built in module in Node that enables interacting with the file system using JavaScript. All file system operations have synchronous, callback, and promise-based forms, and are accessible using both CommonJS syntax and ES6 Modules.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Official Documentation",
@@ -1153,7 +1174,7 @@
   },
   "1vq_KcYR_pkfp1MtXaL75": {
     "title": "Express.js",
-    "description": "Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application.\n\nVisit the following resources to learn more:",
+    "description": "Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multi-page, and hybrid web application.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Express.js Official Website",
@@ -1255,12 +1276,12 @@
     "description": "You can make API calls using the `http` module in Node.js as well. Here are the two methods that you can use:\n\n*   `http.get()` - Make http GET requests.\n*   `http.request()` - Similar to `http.get()` but enables sending other types of http requests (GET requests inclusive).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Node.js http.get() documentaion",
+        "title": "Node.js http.get() documentation",
         "url": "https://nodejs.org/docs/latest-v16.x/api/http.html#httpgeturl-options-callback",
         "type": "article"
       },
       {
-        "title": "Node http.request() documentaion",
+        "title": "Node http.request() documentation",
         "url": "https://nodejs.org/docs/latest-v16.x/api/http.html#httprequesturl-options-callback",
         "type": "article"
       },
@@ -1276,7 +1297,7 @@
     "description": "Axios is a promise-based HTTP Client for node.js and the browser. Used for making requests to web servers. On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Axios Official Documentations",
+        "title": "Axios Official Documentation",
         "url": "https://axios-http.com/docs/intro",
         "type": "article"
       },
@@ -1294,8 +1315,19 @@
   },
   "-_2letLUta5Ymc5eEOKhn": {
     "title": "ky",
-    "description": "",
-    "links": []
+    "description": "Ky is a tiny and elegant HTTP client based on the browser Fetch API. Ky targets modern browsers and Deno.For older browsers, you will need to transpile and use a fetch polyfill.For Node.js, check out Got.. 1 KB (minified & gzipped), one file, and no dependencies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Ky Official Docs",
+        "url": "https://github.com/sindresorhus/ky",
+        "type": "opensource"
+      },
+      {
+        "title": "npmjs.org",
+        "url": "https://www.npmjs.com/package/ky/v/0.9.0",
+        "type": "article"
+      }
+    ]
   },
   "B_3rTGQxJneMREXoi2gQn": {
     "title": "fetch",
@@ -1393,8 +1425,24 @@
   },
   "812bVEzxwTsYzLG_PmLqN": {
     "title": "--watch",
-    "description": "",
-    "links": []
+    "description": "The `--watch` flag in Node.js is a powerful feature introduced in Node.js version 19 that enables automatic reloading of your Node.js application whenever changes are detected in the specified files.\n\nHow it works\n------------\n\n*   You run your Node.js script with the `--watch` flag: `$ node --watch your_script.js`\n*   Node.js starts watching the specified file (or directory) for changes.\n*   Whenever a change is detected, Node.js automatically restarts the script\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Docs",
+        "url": "https://nodejs.org/api/cli.html",
+        "type": "article"
+      },
+      {
+        "title": "Node.js API Docs",
+        "url": "https://nodejs.org/api/cli.html#--watch",
+        "type": "article"
+      },
+      {
+        "title": "Medium - Watch Mode",
+        "url": "https://medium.com/@khaled.smq/built-in-nodejs-watch-mode-52ffadaec8a8",
+        "type": "article"
+      }
+    ]
   },
   "2Ym2jMvov0lZ79aJFaw29": {
     "title": "nodemon",
@@ -1419,20 +1467,20 @@
   },
   "L-_N7OxxuHCXsdWYBgZGu": {
     "title": "ejs",
-    "description": "EJS is a templating language or engine that allows you to generate HTML markup with pure JavaScript. And this is what makes it perfect for Nodejs applications. In simple words, the EJS template engine helps to easily embed JavaScript into your HTML template.\n\nVisit the following resources to learn more:",
+    "description": "EJS is a template language or engine that allows you to generate HTML markup with pure JavaScript. And this is what makes it perfect for Nodejs applications. In simple words, the EJS template engine helps to easily embed JavaScript into your HTML template.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Ejs website",
+        "title": "EJS Website",
         "url": "https://ejs.co/",
         "type": "article"
       },
       {
-        "title": "Ejs Official Documentations",
+        "title": "EJS Official Documentation",
         "url": "https://ejs.co/#docs",
         "type": "article"
       },
       {
-        "title": "Ejs Official Package",
+        "title": "EJS Official Package",
         "url": "https://www.npmjs.com/package/ejs",
         "type": "article"
       },
@@ -1492,8 +1540,14 @@
   },
   "5l-lZ8gwVLqqAF_n99vIO": {
     "title": "Working with Databases",
-    "description": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).",
-    "links": []
+    "description": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Wikipedia - What is Database?",
+        "url": "https://en.wikipedia.org/wiki/Database",
+        "type": "article"
+      }
+    ]
   },
   "NDf-o-WECK02mVnZ8IFxy": {
     "title": "Mongoose",
@@ -1560,8 +1614,29 @@
   },
   "JXQF9H4_N0rM7ZDKcCZNn": {
     "title": "Drizzle",
-    "description": "",
-    "links": []
+    "description": "Drizzle lets you build your project the way you want, without interfering with your project or structure. Using Drizzle you can define and manage database schemas in TypeScript, access your data in a SQL-like or relational way, and take advantage of opt-in tools to make your developer experience amazing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Drizzle Website",
+        "url": "https://orm.drizzle.team/",
+        "type": "article"
+      },
+      {
+        "title": "Drizzle Documentation",
+        "url": "https://orm.drizzle.team/docs/overview",
+        "type": "article"
+      },
+      {
+        "title": "Drizzle Github",
+        "url": "https://github.com/drizzle-team/drizzle-orm",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Drizzle",
+        "url": "https://dev.to/franciscomendes10866/getting-started-with-drizzle-orm-a-beginners-tutorial-4782",
+        "type": "article"
+      }
+    ]
   },
   "rk5FtAPDi1TpvWd0yBbtl": {
     "title": "TypeORM",
@@ -1645,17 +1720,55 @@
   "90NIFfbWjTbyKZKwyJlfI": {
     "title": "Testing",
     "description": "Software testing is the process of verifying that what we create is doing exactly what we expect it to do. The tests are created to prevent bugs and improve code quality.\n\nThe two most common testing approaches are unit testing and end-to-end testing. In the first, we examine small snippets of code, in the second, we test an entire user flow.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Wikipedia - Software Testing",
+        "url": "https://en.wikipedia.org/wiki/Software_testing",
+        "type": "article"
+      },
+      {
+        "title": "Vitest",
+        "url": "https://vitest.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Jest",
+        "url": "https://jest.io",
+        "type": "article"
+      }
+    ]
   },
   "qjToBaMenW3SDtEfoCbQ6": {
     "title": "Vitest",
-    "description": "",
-    "links": []
+    "description": "Vitest is a Vite-native unit testing framework that's Jest-compatible. Vitest is a powerful testing library built on top of Vite that is growing in popularity. You can use Vitest for a range of testing needs, such as unit, integration, end-to-end (E2E), snapshot, and performance testing of functions and components. ESM, TypeScript, JSX. Out-of-box ESM, TypeScript and JSX support powered by esbuild. Vitest is free and open source.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://vitest.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Vitest Documentation",
+        "url": "https://vitest.dev/guide/",
+        "type": "article"
+      }
+    ]
   },
   "oSLpy31XEcA2nRq9ks_LJ": {
     "title": "node:test",
-    "description": "",
-    "links": []
+    "description": "`node:test` is a built-in module in Node.js that provides a simple, asynchronous test runner. It's designed to make writing tests as straightforward as writing any other code.\n\nKey Features\n------------\n\n*   Simplicity: Easy to use and understand.\n*   Asynchronous Support: Handles asynchronous code gracefully.\n*   Subtests: Allows for organizing tests into hierarchical structures.\n*   Hooks: Provides beforeEach and afterEach hooks for setup and teardown.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Test Runner API Docs",
+        "url": "https://nodejs.org/api/test.html",
+        "type": "article"
+      },
+      {
+        "title": "Node.js Test Runner",
+        "url": "https://nodejs.org/en/learn/test-runner/using-test-runner",
+        "type": "article"
+      }
+    ]
   },
   "5xrbKv2stKPJRv7Vzf9nM": {
     "title": "Jest",
@@ -1680,8 +1793,24 @@
   },
   "Ix-g9pgJjEI04bSfROvlq": {
     "title": "Playwright",
-    "description": "",
-    "links": []
+    "description": "Playwright is an open-source automation library developed by Microsoft for testing and automating web applications. 1 It offers a unified API to control Chromium, Firefox, and WebKit browsers, making it a versatile choice for cross-browser testing.\n\nPlaywright provides a high-level API to interact with web pages. You can write scripts to simulate user actions, such as clicking buttons, filling forms, and navigating through different pages. Playwright handles the underlying browser interactions, making it easy to write and maintain tests.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Playwright Website",
+        "url": "https://playwright.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Playwright Docs",
+        "url": "https://playwright.dev/docs/getting-started-vscode",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Playwright",
+        "url": "https://learn.microsoft.com/en-us/shows/getting-started-with-end-to-end-testing-with-playwright/",
+        "type": "article"
+      }
+    ]
   },
   "3Fh3-V1kCZtlUTvEoloIO": {
     "title": "Cypress",
@@ -1867,7 +1996,18 @@
   "ZLNUuDKhJ03Kw7xMVc7IR": {
     "title": "Debugging",
     "description": "Debugging is a concept to identify and remove errors from software applications. Here, we will learn about the technique to debug a Node.js application.\n\nWhy not to use console.log() for debugging?\n-------------------------------------------\n\nUsing `console.log` to debug the code generally dives into an infinite loop of “stopping the app and adding a console.log, and start the app again” operations. Besides slowing down the development of the app, it also makes the writing dirty and creates unnecessary code. Finally, trying to log out variables alongside with the noise of other potential logging operations, may make the process of debugging difficult when attempting to find the values you are debugging.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Wikipedia - What is Debugging?",
+        "url": "https://en.wikipedia.org/wiki/Debugging",
+        "type": "article"
+      },
+      {
+        "title": "Node.js - Getting Started",
+        "url": "https://nodejs.org/en/learn/getting-started/debugging",
+        "type": "article"
+      }
+    ]
   },
   "oU9I7KBZoTSXXFmYscEIq": {
     "title": "Memory Leaks",
@@ -1911,7 +2051,7 @@
     "description": "As much fun as it is to intercept your container requests with inspect and step through your code, you won’t have this option in production. This is why it makes a lot of sense to try and debug your application locally in the same way as you would in production.\n\nIn production, one of your tools would be to login to your remote server to view the console logs, just as you would on local. But this can be a tedious approach. Luckily, there are tools out there that perform what is called log aggregation, such as Stackify.\n\nThese tools send your logs from your running application into a single location. They often come with high-powered search and query utilities so that you can easily parse your logs and visualize them.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Debugging using APM ",
+        "title": "Debugging using APM",
         "url": "https://stackify.com/node-js-debugging-tips/",
         "type": "article"
       },

@@ -12,7 +12,7 @@ skills:
   - 'File Uploads'
 seo:
   title: 'Markdown Note-taking App Project Idea'
-  description: 'Build an API for an expense tracker application.'
+  description: 'Build a note-taking app that uses markdown for formatting.'
   keywords:
     - 'backend project idea'
 roadmapIds:

@@ -142,6 +142,8 @@ questions:
       - 'Advanced'
 ---
 
+![Popular frontend developer interview questions and answers.](https://assets.roadmap.sh/guest/frontend-developer-interview-questions-ezbj6.jpg)
+
 Preparing for your front end web development interview is key to achieving a successful outcome, but understanding what kind of questions or topics are going to be asked is not easy.
 
 So to help you get ready for your upcoming front end developer interview, here are 30 technical interview questions about web development with a focus on the front end, in other words, about JavaScript, HTML, and CSS.
