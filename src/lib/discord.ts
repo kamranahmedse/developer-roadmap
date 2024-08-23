@@ -29,7 +29,7 @@ export async function getDiscordInfo(): Promise<{
     };
   } catch (e) {
     discordStats = {
-      url: `https://discord.gg/ZrSpJ8zH`,
+      url: `https://roadmap.sh/discord`,
       total: 17000,
       totalFormatted: '17k',
       online: 0,

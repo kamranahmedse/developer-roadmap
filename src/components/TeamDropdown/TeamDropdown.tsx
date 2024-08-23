@@ -32,24 +32,6 @@ export function TeamDropdown() {
   const user = useAuth();
   const { teamId } = useTeamId();
 
-  const [shouldShowTeamsIndicator, setShouldShowTeamsIndicator] =
-    useState(false);
-
-  useEffect(() => {
-    // Show team dropdown "New" indicator to first 3 refreshes
-    const viewedTeamsCount = localStorage.getItem('viewedTeamsCount');
-    const viewedTeamsCountNumber = parseInt(viewedTeamsCount || '0', 10);
-    const shouldShowTeamIndicator = viewedTeamsCountNumber < 5;
-
-    setShouldShowTeamsIndicator(shouldShowTeamIndicator);
-    if (shouldShowTeamIndicator) {
-      localStorage.setItem(
-        'viewedTeamsCount',
-        (viewedTeamsCountNumber + 1).toString(),
-      );
-    }
-  }, []);
-
   const teamList = useStore($teamList);
   const currentTeam = useStore($currentTeam);
 
@@ -102,15 +84,6 @@ export function TeamDropdown() {
       <div className="relative mr-2">
         <span className="mb-2 flex items-center justify-between text-xs uppercase text-gray-400">
           <span>Choose Team</span>
-
-          {shouldShowTeamsIndicator && (
-            <span className="mr-1 inline-flex h-1 w-1 items-center justify-center font-medium text-blue-300">
-              <span className="relative flex items-center">
-                <span className="relative rounded-full bg-gray-200 p-1 text-xs" />
-                <span className="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs" />
-              </span>
-            </span>
-          )}
         </span>
         <button
           className="relative flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"

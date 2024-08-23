@@ -274,8 +274,14 @@
   },
   "0CtAZQcFJexMiJfZ-mofv": {
     "title": "v-else",
-    "description": "",
-    "links": []
+    "description": "The `v-else` conditionally renders an element or a template fragment as a function in case the `v-if` does not fulfil the condition.\n\nVisit the following resources for more information:",
+    "links": [
+      {
+        "title": "v-else documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-else",
+        "type": "article"
+      }
+    ]
   },
   "a9caVhderJaVo0v14w8WB": {
     "title": "v-else-if",

@@ -1,0 +1,131 @@
+---
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
+import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import { FolderKanbanIcon } from 'lucide-react';
+import { EmptyProjects } from '../../components/Projects/EmptyProjects';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+} from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import RoadmapNote from '../../components/RoadmapNote.astro';
+import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
+import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import AstroIcon from '../../components/AstroIcon.astro';
+import CourseStep from '../../components/courses/CourseStep.astro';
+import Milestone from '../../components/courses/Milestone.astro';
+
+export async function getStaticPaths() {
+  const roadmapIds = await getRoadmapIds();
+
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
+  }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
+
+// update og for projects
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
+
+const descriptionNoun = {
+  'AI and Data Scientist': 'AI and Data Science',
+  'Game Developer': 'Game Development',
+  'Technical Writer': 'Technical Writing',
+  'Product Manager': 'Product Management',
+};
+
+const title = `${roadmapData.briefTitle} Courses`;
+const description = `Courses and project driven path to help you master ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
+
+const seoTitle = `${roadmapData.briefTitle} Courses`;
+const nounTitle =
+  descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
+const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
+---
+
+<BaseLayout
+  permalink={`/${roadmapId}`}
+  title={seoTitle}
+  description={seoDescription}
+  briefTitle={roadmapData.briefTitle}
+  ogImageUrl={ogImageUrl}
+  keywords={roadmapData.seo.keywords}
+  resourceId={roadmapId}
+  resourceType='roadmap'
+  noIndex={true}
+>
+  <div class='bg-gray-50'>
+    <RoadmapHeader
+      title={title}
+      description={description}
+      note={roadmapData.note}
+      tnsBannerLink={roadmapData.tnsBannerLink}
+      roadmapId={roadmapId}
+      hasTopics={roadmapData.hasTopics}
+      isUpcoming={roadmapData.isUpcoming}
+      isForkable={roadmapData.isForkable}
+      question={roadmapData.question}
+      activeTab='courses'
+    />
+
+    <div class='container'>
+      <div class='relative my-3 rounded-lg border bg-white px-12 py-8'>
+        <span class='absolute inset-y-0 left-[26.3px] w-[1px] bg-black'></span>
+
+        <div class='mb-8 flex flex-col gap-4 text-sm text-gray-500 leading-normal'>
+          <p>
+            Frontend development is a vast field with a lot of tools and
+            technologies. We have the <a class="font-medium underline underline-offset-2 text-black" href="/frontend">frontend roadmap</a>
+            which is filled with a lot of <span class="font-medium text-black">free and good</span> resources to help you learn. But sometimes it helps to have a minimalistic list of courses
+            and project recommendations to help you get started.
+          </p>
+
+          <p class="bg-yellow-100 text-yellow-900 rounded-md p-2">
+            Below are some of the best courses (paid) and projects to help you learn frontend development. These are handpicked and are a great way to get started.
+          </p>
+
+          <p>
+            Please note that these are paid courses curated from external platforms. We earn a small commission if you purchase the course using the links below. This helps us maintain the website and keep it free for everyone.
+          </p>
+
+          <p>
+            If you are looking for free resources, you can check out the <a class="font-medium underline underline-offset-2 text-black" href="/frontend">frontend roadmap</a>. Also, we have a <a class="font-medium underline underline-offset-2 text-black" href="/frontend/projects">list of projects</a> that you can work on to enhance your skills.
+          </p>
+        </div>
+
+        <!--Step content curator-->
+        <CourseStep />
+        <div class='mt-8'></div>
+        <CourseStep />
+        <div class='mt-8'></div>
+        <Milestone />
+        <div class='mt-8'></div>
+        <CourseStep />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

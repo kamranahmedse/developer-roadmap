@@ -1,12 +1,13 @@
 ---
-import { ChevronUp } from 'lucide-react';
 import Icon from './AstroIcon.astro';
+
 export interface Props {
+  secondaryValue?: string;
   value: string;
   text: string;
 }
 
-const { value, text } = Astro.props;
+const { value, text, secondaryValue } = Astro.props;
 
 const isGitHubStars = text.toLowerCase() === 'github stars';
 const isRegistered = text.toLowerCase() === 'registered users';
@@ -19,7 +20,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isGitHubStars && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank 6th</span>
+        <span class='rounded-md bg-blue-500 px-1 text-white'>Rank {secondaryValue}</span>
         &nbsp;out of 28M!
       </p>
     )
@@ -28,7 +29,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isRegistered && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+75k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )
@@ -37,14 +38,14 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isDiscordMembers && (
       <p class='flex items-center text-sm text-blue-500 sm:flex'>
-        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>+1.5k</span>
+        <span class='mr-1.5 rounded-md bg-blue-500 px-1 text-white'>{secondaryValue}</span>
         every month
       </p>
     )
   }
   <div class="flex flex-row items-center sm:flex-col my-1 sm:my-0">
     <p
-      class='relative my-0 sm:my-4 mr-1 sm:mr-0 text-base font-bold sm:w-auto sm:text-5xl'
+      class='my-0 sm:my-4 mr-1 sm:mr-0 text-base font-bold sm:w-auto sm:text-5xl'
     >
       {value}
     </p>
@@ -88,7 +89,7 @@ const isDiscordMembers = text.toLowerCase() === 'discord members';
   {
     isDiscordMembers && (
       <a
-        href='https://discord.gg/ZrSpJ8zH'
+        href='https://roadmap.sh/discord'
         target='_blank'
         class='group mt-0 flex flex-col items-center rounded-lg border border-black bg-white px-3 py-2 text-sm hover:bg-black hover:text-white'
       >

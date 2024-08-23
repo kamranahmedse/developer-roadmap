@@ -1,6 +1,6 @@
 # Range
 
-`Range` is used with `For Loops` to iterate over each element in arrays, strings and other data structures .
+`range` is used with for loops to iterate over each element in arrays, strings and other data structures.
 
 Visit the following resources to learn more:
 

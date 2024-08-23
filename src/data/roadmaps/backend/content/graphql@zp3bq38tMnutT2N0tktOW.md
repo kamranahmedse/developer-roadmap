@@ -11,4 +11,5 @@ GraphQL is widely used in modern web and mobile applications, and it is supporte
 Visit the following resources to learn more:
 
 - [@official@GraphQL Official Website](https://graphql.org/)
+- [@video@Tutorial - GraphQL Explained in 100 Seconds](https://www.youtube.com/watch?v=eIQh02xuVw4)
 - [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

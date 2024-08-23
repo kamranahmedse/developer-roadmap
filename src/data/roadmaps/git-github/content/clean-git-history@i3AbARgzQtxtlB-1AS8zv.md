@@ -7,7 +7,7 @@ Cleaning up Git history can make your commit history more readable, concise, and
 - To be able to deploy any commit on your development branch using your CI/CD system
 - If you are handling mobile app releases and you are responsible for figuring out what feature is in which release.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Clean GIT history — a Step by Step Guide](https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d)
 - [@video@Git best practice tip: clean commit history](https://youtu.be/bZpiVijzd2g?si=8lJTlR3LfY9ZUd77)

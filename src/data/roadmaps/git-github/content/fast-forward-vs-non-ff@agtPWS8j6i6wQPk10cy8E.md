@@ -7,7 +7,7 @@ No new merge commit is created; the history is linear.
 
 A Non-Fast-Forward (No-FF) merge happens when the target branch has diverged from the branch being merged or when you explicitly choose to create a merge commit. In this case, Git creates a new commit that represents the merging of the two branches. Git creates a new merge commit that has two parent commits: one from the target branch and one from the branch being merged. The merge commit is a snapshot of the merged work, preserving the history of both branches.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Git Fast-Forward VS Non-Fast-Forward](https://leimao.github.io/blog/Git-Fast-Forward-VS-Non-Fast-Forward/)
 - [@article@Git Merge: To Squash Or Fast-Forward?](https://dev.to/trpricesoftware/git-merge-to-squash-or-fast-forward-3791)

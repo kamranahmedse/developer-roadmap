@@ -27,6 +27,24 @@ For the existing roadmaps, please follow the details listed for the nature of co
 
 If you have a project idea that you think we should add to the roadmap, feel free to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
 
+The detailed format for issue should be as follows:
+
+```
+## What is this project about?
+
+(Add introduction to the project)
+
+## Skills this Project Covers
+
+(Comma separated list of skills e.g. Programming Knowledge, Database,)
+
+## Requirements
+
+( Detailed list of requirements, i.e. input, output, an hints to help build this etc)
+```
+
+Have a look at this project to get an idea of [what we are looking for](https://roadmap.sh/projects/github-user-activity).
+
 ## Adding Content
 
 Find [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps). Please keep the following guidelines in mind when submitting content:

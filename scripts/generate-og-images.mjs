@@ -372,7 +372,7 @@ function getRoadmapDefaultTemplate({ title, description }) {
               </svg>
             </div>
             <div tw="text-[30px] flex leading-[30px]">
-              6th most starred GitHub project
+              7th most starred GitHub project
             </div>
           </div>
           <div tw="flex items-center mt-2.5">

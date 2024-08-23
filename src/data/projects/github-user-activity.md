@@ -7,6 +7,7 @@ difficulty: 'beginner'
 nature: 'CLI'
 skills:
   - 'Programming Language'
+  - 'CLI'
   - 'API Consumption'
 seo:
   title: 'GitHub User Activity CLI'

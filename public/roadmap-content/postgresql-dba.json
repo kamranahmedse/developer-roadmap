@@ -2297,6 +2297,11 @@
         "title": "Awk command in Linux/Unix",
         "url": "https://www.digitalocean.com/community/tutorials/awk-command-linux-unix",
         "type": "article"
+      },
+      {
+        "title": "Tutorial - AWK in 300 Seconds",
+        "url": "https://www.youtube.com/watch?v=15DvGiWVNj0",
+        "type": "video"
       }
     ]
   },
@@ -2313,6 +2318,11 @@
         "title": "Use the Grep Command",
         "url": "https://docs.rackspace.com/docs/use-the-linux-grep-command",
         "type": "article"
+      },
+      {
+        "title": "Tutorial - grep: A Practical Guide",
+        "url": "https://www.youtube.com/watch?v=crFZOrqlqao",
+        "type": "video"
       }
     ]
   },

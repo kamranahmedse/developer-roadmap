@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@grep command in Linux/Unix](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
 - [@article@Use the Grep Command](https://docs.rackspace.com/docs/use-the-linux-grep-command)
+- [@video@Tutorial - grep: A Practical Guide](https://www.youtube.com/watch?v=crFZOrqlqao)

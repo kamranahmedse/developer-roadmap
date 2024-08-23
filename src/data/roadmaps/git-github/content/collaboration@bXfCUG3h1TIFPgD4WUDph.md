@@ -2,7 +2,7 @@
 
 When working on projects with others, Git provides tools to facilitate collaboration through forking repositories using `git clone` or `git fork`, cloning them locally with git clone, managing pull requests with `git request-pull`, and resolving merge conflicts. To contribute effectively, follow established contributing guides and respect open-source licences that govern how contributors' work may be used by others.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Git Fork and Git Clone: The difference and why it's important!](https://dev.to/danielasaboro/git-fork-and-clone-whats-the-difference-190c)
 - [@article@About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
