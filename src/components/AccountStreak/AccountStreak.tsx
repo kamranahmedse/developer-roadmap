@@ -5,6 +5,12 @@ import { useToast } from '../../hooks/use-toast';
 import { Flame, X } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { StreakDay } from './StreakDay';
+import {
+  navigationDropdownOpen,
+  roadmapsDropdownOpen,
+} from '../../stores/page.ts';
+import { useStore } from '@nanostores/react';
+import { cn } from '../../lib/classname.ts';
 
 type StreakResponse = {
   count: number;
@@ -28,6 +34,15 @@ export function AccountStreak(props: AccountStreakProps) {
     lastVisitAt: new Date(),
   });
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const $roadmapsDropdownOpen = useStore(roadmapsDropdownOpen);
+  const $navigationDropdownOpen = useStore(navigationDropdownOpen);
+
+  useEffect(() => {
+    if ($roadmapsDropdownOpen || $navigationDropdownOpen) {
+      setShowDropdown(false);
+    }
+  }, [$roadmapsDropdownOpen, $navigationDropdownOpen]);
 
   const loadAccountStreak = async () => {
     if (!isLoggedIn()) {
@@ -76,7 +91,12 @@ export function AccountStreak(props: AccountStreakProps) {
   return (
     <div className="relative z-[90] animate-fade-in">
       <button
-        className="flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-none"
+        className={cn(
+          'flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-none',
+          {
+            'bg-purple-100/10': showDropdown,
+          },
+        )}
         onClick={() => setShowDropdown(true)}
       >
         <Flame className="size-5" />
@@ -90,15 +110,15 @@ export function AccountStreak(props: AccountStreakProps) {
           ref={dropdownRef}
           className="absolute right-0 top-full z-50 w-[320px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
-          <div className="px-3 py-2">
-            <div className="flex items-center justify-between gap-2">
-              <p className="text-sm text-slate-400">
+          <div className="px-4 py-2.5">
+            <div className="flex items-center justify-between gap-2 text-sm text-slate-500">
+              <p>
                 Current Streak
                 <span className="ml-2 font-medium text-white">
                   {accountStreak?.count || 0}
                 </span>
               </p>
-              <p className="text-sm text-slate-400">
+              <p>
                 Longest Streak
                 <span className="ml-2 font-medium text-white">
                   {accountStreak?.longestCount || 0}
@@ -106,12 +126,13 @@ export function AccountStreak(props: AccountStreakProps) {
               </p>
             </div>
 
-            <div className="mt-8">
+            <div className="mb-5 mt-8">
               <div className="grid grid-cols-10 gap-1">
                 {Array.from({ length: totalCircles }).map((_, index) => {
                   let dayCount,
                     icon,
                     isPreviousStreakDay,
+                    isBrokenStreakDay,
                     isCurrentStreakDay,
                     isRemainingStreakDay,
                     isToday;
@@ -120,12 +141,13 @@ export function AccountStreak(props: AccountStreakProps) {
                     // Previous streak days
                     dayCount = previousCount - leftCircleCount + index + 1 + 1;
                     isPreviousStreakDay = true;
-                    icon =
-                      index === leftCircleCount - 1 ? (
-                        <X className="size-3.5 text-white" />
-                      ) : (
-                        <Flame className="size-3.5 text-white" />
-                      );
+                    isBrokenStreakDay = index === leftCircleCount - 1;
+
+                    icon = isBrokenStreakDay ? (
+                      <X className="opacit size-3.5 text-white" />
+                    ) : (
+                      <Flame className="size-3.5 text-white" />
+                    );
                   } else if (index < leftCircleCount + currentCircleCount) {
                     // Current streak days
                     const currentIndex = index - leftCircleCount;
@@ -147,6 +169,7 @@ export function AccountStreak(props: AccountStreakProps) {
                       key={`streak-${index}`}
                       dayCount={dayCount}
                       icon={icon}
+                      isBrokenStreakDay={isBrokenStreakDay}
                       isPreviousStreakDay={isPreviousStreakDay}
                       isCurrentStreakDay={isCurrentStreakDay}
                       isRemainingStreakDay={isRemainingStreakDay}
@@ -156,6 +179,10 @@ export function AccountStreak(props: AccountStreakProps) {
                 })}
               </div>
             </div>
+
+            <p className="text-center text-xs text-slate-500">
+              Visit every day to keep your streak alive!
+            </p>
           </div>
         </div>
       )}

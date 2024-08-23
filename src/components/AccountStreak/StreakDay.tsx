@@ -6,6 +6,7 @@ type StreakDayProps = {
   isToday?: boolean;
   isCurrentStreakDay?: boolean;
   isPreviousStreakDay?: boolean;
+  isBrokenStreakDay?: boolean;
   isRemainingStreakDay?: boolean;
   dayCount: number;
   icon?: ReactNode;
@@ -15,6 +16,7 @@ export function StreakDay(props: StreakDayProps) {
   const {
     isCurrentStreakDay,
     isPreviousStreakDay,
+    isBrokenStreakDay,
     isRemainingStreakDay,
     dayCount,
     icon,
@@ -29,22 +31,20 @@ export function StreakDay(props: StreakDayProps) {
       )}
     >
       <div
-        className={cn(
-          'flex size-6 items-center justify-center rounded-full',
-          isPreviousStreakDay && 'bg-red-500',
-          isCurrentStreakDay && 'bg-purple-500',
-          isRemainingStreakDay && 'bg-slate-700',
-          isToday && 'border-2 border-dashed border-slate-500 bg-transparent',
-        )}
+        className={cn('flex size-6 items-center justify-center rounded-full', {
+          'bg-red-500': isPreviousStreakDay,
+          'bg-purple-500': isCurrentStreakDay,
+          'bg-slate-700': isRemainingStreakDay,
+          'border-2 border-dashed border-slate-500 bg-transparent': isToday,
+        })}
       >
         {isToday ? null : icon}
       </div>
       <span
-        className={cn(
-          'text-sm',
-          isPreviousStreakDay && 'text-slate-400',
-          (isCurrentStreakDay || isRemainingStreakDay) && 'text-slate-100',
-        )}
+        className={cn('text-sm', {
+          'text-slate-500': isPreviousStreakDay,
+          'text-slate-100': isCurrentStreakDay || isRemainingStreakDay,
+        })}
       >
         {dayCount}
       </span>
