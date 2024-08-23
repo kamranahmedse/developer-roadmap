@@ -27,7 +27,7 @@ In this project, you will build a simple Astro website and setup a GitHub Action
 ## Requirements
 
 - Create a simple Astro website (the content of the website is up to you)
-- Create a GitHub Actions workflow that will test, build & deploy the website to GitHub Pages.
+- Create a GitHub Actions workflow that will test, build & deploy the website to [GitHub Pages](https://pages.github.com/).
 - Failures in the workflow should be clearly indicated and failures will halt the workflow
 - The workflow should be in the `.github/workflows` directory
 - The workflow file should be named `main.yml`
