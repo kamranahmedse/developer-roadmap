@@ -132,3 +132,92 @@ union Data {
 Data myData;
 myData.num = 42;
 ```
+complete C++ program to run on IDE or MSVC with examples to understand.
+// helloworld.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+//User defined data type 
+// Class are similar to structures, but the accessibility of the member data and function are governed by access specifiers.
+ // By default access to members of a class is private.
+
+class Persons {
+public:
+    string names;
+    int ages;
+    float heights;
+    void printinfo() {
+        cout << "Name is " << names << ", age is " << ages << ", height is " << heights << endl;
+    };
+};
+int main()
+{
+    // Fundamental Data Types
+    int num_i = 67;
+    float num_f = 3.14;
+    double num_d = 3.156473839221;
+    char letter = 'N';
+    bool yes_no = true;
+    // Derived Data types
+    //Array consective memory location
+    int array[2] = { 1,2 }; 
+    // Pointers are used to store the memory address of a variable.
+    int num = 43;
+    int* pNum = &num;
+    //References are an alternative way to share memory locations between variables,
+    int& numRef = num;
+    // User Defined Variables
+    // Structures are used to store different data types under a single variable and 
+    // accessibility of member variables and methods are public.
+    struct person {
+        string name;
+        int age;
+        float height;
+    };
+    person p1 = { "Namra", 23, 5.3 };
+    // Unions are used to store different data types in the same memory location.
+    union Data {
+        int number;
+        char letter;
+        float decimal;
+    };
+    // Output the values
+    cout << "Integer is: " << num_i << endl;
+    cout << "Floating point is: " << num_f << endl;
+    cout << "Double is: " << num_d << endl;
+    cout << "Character is: " << letter << endl;
+    cout << "Boolean is: " << (yes_no ? "true" : "false") << endl;
+    //array printing
+    cout << "Array is ";
+    for (int i= 0; i < 2; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+    cout << "Number for Pointer is " << num << endl;
+    cout << "Memory address of number is " << pNum << endl;
+    cout << "Reference of number is " << numRef << endl;
+    cout << "Structure of person1 is " << endl;
+    cout<<"Name is " << p1.name << endl;
+    cout<<"Age is "<< p1.age << endl;
+    cout<<"Height is " << p1.height << endl;
+    Persons per1;
+    per1.names = "Namra Mustafa";
+    per1.ages = 24;
+    per1.heights = 5.3;
+    cout << "Class of Person is: " << endl;
+    per1.printinfo();
+    Data myData;
+    myData.number = 43;
+    myData.letter = 'N';
+    myData.decimal = 3.14;
+    cout << "Union Number is  " << myData.number << endl;
+    cout << "Union character is  " << myData.letter << endl;
+    cout << "Union floating point is  " << myData.decimal << endl;
+
+
+}
+
+
+
