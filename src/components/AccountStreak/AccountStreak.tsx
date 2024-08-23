@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { Flame, X } from 'lucide-react';
+import {Flame, X, Zap, ZapOff} from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { StreakDay } from './StreakDay';
 import {
@@ -99,8 +99,8 @@ export function AccountStreak(props: AccountStreakProps) {
         )}
         onClick={() => setShowDropdown(true)}
       >
-        <Flame className="size-5" />
-        <span className="ml-1 text-sm font-semibold">
+        <Zap strokeWidth={1} className="size-5 fill-current" />
+        <span className="ml-1.5 text-sm font-semibold">
           {accountStreak?.count}
         </span>
       </button>
@@ -144,9 +144,9 @@ export function AccountStreak(props: AccountStreakProps) {
                     isBrokenStreakDay = index === leftCircleCount - 1;
 
                     icon = isBrokenStreakDay ? (
-                      <X className="opacit size-3.5 text-white" />
+                      <ZapOff className="size-5 fill-current" />
                     ) : (
-                      <Flame className="size-3.5 text-white" />
+                      <Zap className="size-5 fill-current" />
                     );
                   } else if (index < leftCircleCount + currentCircleCount) {
                     // Current streak days
@@ -155,7 +155,7 @@ export function AccountStreak(props: AccountStreakProps) {
                       currentCount - currentCircleCount + currentIndex + 1 + 1;
                     isCurrentStreakDay = true;
                     isToday = currentIndex === currentCircleCount - 1;
-                    icon = <Flame className="size-3.5 text-white" />;
+                    icon = <Zap className="size-5 fill-current" />;
                   } else {
                     // Remaining streak days
                     const remainingIndex =
@@ -180,7 +180,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </div>
             </div>
 
-            <p className="text-center text-xs text-slate-600 tracking-wide mb-[2px] -mt-[3px]">
+            <p className="text-center text-xs text-slate-500 tracking-wide mb-[1.75px] -mt-[2px]">
               Visit every day to keep your streak alive!
             </p>
           </div>
