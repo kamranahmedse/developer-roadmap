@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@article@Android developers: EditText](https://developer.android.com/reference/android/widget/EditText)
+- [@official@Android developers: EditText](https://developer.android.com/reference/android/widget/EditText)
