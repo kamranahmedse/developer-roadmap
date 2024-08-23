@@ -4,13 +4,13 @@ import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 
 type LeavingRoadmapWarningModalProps = {
   onClose: () => void;
-  onContinue: () => void;
+  repositoryUrl: string;
 };
 
 export function LeavingRoadmapWarningModal(
   props: LeavingRoadmapWarningModalProps,
 ) {
-  const { onClose, onContinue } = props;
+  const { onClose, repositoryUrl } = props;
 
   return (
     <Modal onClose={onClose} bodyClassName="h-auto p-4">
@@ -45,13 +45,14 @@ export function LeavingRoadmapWarningModal(
         </p>
       </div>
 
-      <button
+      <a
         className="inline-flex w-full items-center gap-2 rounded-lg bg-black px-3 py-2.5 text-sm text-white"
-        onClick={onContinue}
+        href={repositoryUrl}
+        target="_blank"
       >
         <ArrowUpRight className="h-5 w-5" />
         Continue to Solution
-      </button>
+      </a>
 
       <button
         className="absolute right-2.5 top-2.5 text-gray-600 hover:text-black"
