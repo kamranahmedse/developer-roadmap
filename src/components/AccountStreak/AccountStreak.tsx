@@ -108,7 +108,7 @@ export function AccountStreak(props: AccountStreakProps) {
       {showDropdown && (
         <div
           ref={dropdownRef}
-          className="absolute right-0 top-full z-50 w-[360px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
+          className="absolute right-0 top-full z-50 w-[335px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
           <div className="pl-4 pr-5 py-3">
             <div className="flex items-center justify-between gap-2 text-sm text-slate-500">
@@ -180,7 +180,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </div>
             </div>
 
-            <p className="text-center text-xs text-slate-500 tracking-wide mb-[1.75px] -mt-[0px]">
+            <p className="text-center text-xs text-slate-600 tracking-wide mb-[1.75px] -mt-[0px]">
               Visit every day to keep your streak alive!
             </p>
           </div>
