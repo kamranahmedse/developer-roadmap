@@ -180,7 +180,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </div>
             </div>
 
-            <p className="text-center text-xs text-slate-600 tracking-wide">
+            <p className="text-center text-xs text-slate-600 tracking-wide mb-[2px] -mt-[3px]">
               Visit every day to keep your streak alive!
             </p>
           </div>
