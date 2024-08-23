@@ -400,8 +400,14 @@
   },
   "lIb5MeDoqVj6HycveOgTS": {
     "title": "Computer Graphics",
-    "description": "Computer Graphics is a subfield of computer science that studies methods for digitally synthesizing and manipulating visual content. It involves creating and manipulating visual content using specialized computer software and hardware. This field is primarily used in the creation of digital and video games, CGI in films, and also in visual effects for commercials. The field is divided into two major categories: **Raster graphics** and **Vector graphics**. Raster graphics, also known as bitmap, involve the representation of images through a dot matrix data structure, while Vector graphics involve the use of polygons to represent images in computer graphics. Both of these methods have their unique usage scenarios. Other concepts integral to the study of computer graphics include rendering (including both real-time rendering and offline rendering), animation, and 3D modeling. Generally, computer graphics skills are essential for game developers and animation experts.",
-    "links": []
+    "description": "Computer Graphics is a subfield of computer science that studies methods for digitally synthesizing and manipulating visual content. It involves creating and manipulating visual content using specialized computer software and hardware. This field is primarily used in the creation of digital and video games, CGI in films, and also in visual effects for commercials. The field is divided into two major categories: **Raster graphics** and **Vector graphics**. Raster graphics, also known as bitmap, involve the representation of images through a dot matrix data structure, while Vector graphics involve the use of polygons to represent images in computer graphics. Both of these methods have their unique usage scenarios. Other concepts integral to the study of computer graphics include rendering (including both real-time rendering and offline rendering), animation, and 3D modeling. Generally, computer graphics skills are essential for game developers and animation experts.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How do Video Game Graphics Work?",
+        "url": "https://www.youtube.com/watch?v=C8YtdC8mxTU",
+        "type": "video"
+      }
+    ]
   },
   "JW5c_0JEtO-OiBoXUia6A": {
     "title": "Ray Tracing",
@@ -430,8 +436,14 @@
   },
   "WVgozaQPFbYthZLWMbNUg": {
     "title": "Rendering Equation",
-    "description": "The **Render Equation**, also known as the **Rendering Equation**, is a fundamental principle in computer graphics that serves as the basis for most advanced lighting algorithms today. First introduced by James Kajiya in 1986, it defines how light interacts with physical objects in a given environment. The equation tries to simulate light's behavior, taking into account aspects such as transmission, absorption, scattering, and emission. The equation can be computationally intensive to solve accurately. It's worth mentioning, however, that many methods have been developed to approximate and solve it, allowing the production of highly realistic images in computer graphics.",
-    "links": []
+    "description": "The **Render Equation**, also known as the **Rendering Equation**, is a fundamental principle in computer graphics that serves as the basis for most advanced lighting algorithms today. First introduced by James Kajiya in 1986, it defines how light interacts with physical objects in a given environment. The equation tries to simulate light's behavior, taking into account aspects such as transmission, absorption, scattering, and emission. The equation can be computationally intensive to solve accurately. It's worth mentioning, however, that many methods have been developed to approximate and solve it, allowing the production of highly realistic images in computer graphics.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Interactive Graphics 12 - The Rendering Equation",
+        "url": "https://www.youtube.com/watch?v=wawf7Am6xy0",
+        "type": "video"
+      }
+    ]
   },
   "eI2jym4AAz3ani-lreSKE": {
     "title": "Reflection",
@@ -480,8 +492,14 @@
   },
   "WK6fLWJq9Vh2ySVrSqd-U": {
     "title": "Color",
-    "description": "In the realm of computer graphics, color plays an integral role. It can be defined in various color models such as RGB (Red, Green, Blue), CYMK (Cyan, Yellow, Magenta, Black), and others. RGB is a color model that combines the primary colors (red, green, blue) in different amounts to produce a spectrum of colors. This model is often used in digital displays. In contrast, CMYK is a color model used in color printing. It uses cyan, magyenta, yellow, and black as the primary colors. HSL (Hue, Saturation, Lightness) and HSV (Hue, Saturation, Value) are other useful models that represent colors based on human perceptions. Another important element of color in computer graphics is the color depth, also known as bit depth, which determines the number of colors that can be displayed at once.",
-    "links": []
+    "description": "In the realm of computer graphics, color plays an integral role. It can be defined in various color models such as RGB (Red, Green, Blue), CYMK (Cyan, Yellow, Magenta, Black), and others. RGB is a color model that combines the primary colors (red, green, blue) in different amounts to produce a spectrum of colors. This model is often used in digital displays. In contrast, CMYK is a color model used in color printing. It uses cyan, magyenta, yellow, and black as the primary colors. HSL (Hue, Saturation, Lightness) and HSV (Hue, Saturation, Value) are other useful models that represent colors based on human perceptions. Another important element of color in computer graphics is the color depth, also known as bit depth, which determines the number of colors that can be displayed at once.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Pixar in a Box - Color",
+        "url": "https://www.khanacademy.org/computing/pixar/animate/ball/v/intro-animation",
+        "type": "video"
+      }
+    ]
   },
   "1S1qPogijW2SQCiF7KLZe": {
     "title": "Visual Perception",
@@ -688,8 +706,14 @@
   },
   "ztoW8fBY73Es624A_tjd7": {
     "title": "Behavior Tree",
-    "description": "The **Behavior Tree** is a decision-making system used in game development, primarily for AI character behavior. These trees help define the actions an AI character will take, based on predefined tasks and conditions. The tree structure starts from a single root, branching out to nodes that represent these decisions or tasks. The tasks can be simple, such as moving from one point to another, or can be complex decisions like whether to attack or retreat. This kind of structure is advantageous because it is easy to add, remove, or modify tasks without breaking the tree or affecting other tasks. This makes it highly flexible and easy to manage, irrespective of the complexity of the tasks.",
-    "links": []
+    "description": "The **Behavior Tree** is a decision-making system used in game development, primarily for AI character behavior. These trees help define the actions an AI character will take, based on predefined tasks and conditions. The tree structure starts from a single root, branching out to nodes that represent these decisions or tasks. The tasks can be simple, such as moving from one point to another, or can be complex decisions like whether to attack or retreat. This kind of structure is advantageous because it is easy to add, remove, or modify tasks without breaking the tree or affecting other tasks. This makes it highly flexible and easy to manage, irrespective of the complexity of the tasks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Unreal Engine 5 Tutorial - AI Part 2: Behavior Tree",
+        "url": "https://www.youtube.com/watch?v=hbHqv9ov8IM&list=PL4G2bSPE_8uklDwraUCMKHRk2ZiW29R6e&index=3&t=16s",
+        "type": "video"
+      }
+    ]
   },
   "4ZCVUpYrCT14d_JULulLe": {
     "title": "Fuzzy Logic",
@@ -809,8 +833,14 @@
   },
   "PuhXaRZ-Ql5PCqzMyz3en": {
     "title": "Translucency & Transparency",
-    "description": "In the realm of physically-based rendering, **translucency** and **transparency** act as key aspects in creating visually authentic and compelling images. Transparency refers to the property of an object that allows light to pass through it unhindered, hence making the object clear or invisible. This is commonly seen in materials such as glass, clear plastic, and water. On the other hand, translucency describes how light interacts with a semi-transparent object. Instead of passing directly through, light enters the object, travels within for some distance and then exits at a different location. Common examples of such surfaces include human skin, marble, milk, or wax, which exhibit a soft, diffused lighting effect when light rays pass through them. The technique to achieve this effect in graphics involves subsurface scattering, where incoming light is scattered beneath the object's surface, illuminated it in a way that showcases the material's internal structure.",
-    "links": []
+    "description": "In the realm of physically-based rendering, **translucency** and **transparency** act as key aspects in creating visually authentic and compelling images. Transparency refers to the property of an object that allows light to pass through it unhindered, hence making the object clear or invisible. This is commonly seen in materials such as glass, clear plastic, and water. On the other hand, translucency describes how light interacts with a semi-transparent object. Instead of passing directly through, light enters the object, travels within for some distance and then exits at a different location. Common examples of such surfaces include human skin, marble, milk, or wax, which exhibit a soft, diffused lighting effect when light rays pass through them. The technique to achieve this effect in graphics involves subsurface scattering, where incoming light is scattered beneath the object's surface, illuminated it in a way that showcases the material's internal structure.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Learn OpenGL - Blending",
+        "url": "https://learnopengl.com/Advanced-OpenGL/Blending",
+        "type": "article"
+      }
+    ]
   },
   "H3hkafXO9zqEnWuwHa38P": {
     "title": "Conservation of Energy",
