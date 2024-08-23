@@ -100,7 +100,7 @@
     "links": [
       {
         "title": "About repositories",
-        "url": "hhttps://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+        "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
         "type": "article"
       },
       {
@@ -1266,7 +1266,7 @@
     "links": [
       {
         "title": "--soft documentation",
-        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard",
+        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---soft",
         "type": "article"
       }
     ]
@@ -1288,7 +1288,7 @@
     "links": [
       {
         "title": "--mixed documentation",
-        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard",
+        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed",
         "type": "article"
       }
     ]
@@ -1416,8 +1416,14 @@
   },
   "BKVA6Q7DXemAYjyQOA0nh": {
     "title": "git filter-branch",
-    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.",
-    "links": []
+    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.\n\n*   Filter types: You can modify trees (e.g., removing a file or running a Perl script) or information about each commit.\n*   Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.\n*   Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "git filter-branch",
+        "url": "https://git-scm.com/docs/git-filter-branch",
+        "type": "article"
+      }
+    ]
   },
   "OQOmxg9mCfcjt80hpvXkA": {
     "title": "git push --force",
