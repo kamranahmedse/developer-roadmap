@@ -15,6 +15,40 @@ import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { cn } from '../../lib/classname.ts';
 
+const languageColors = new Map([
+  ['JavaScript', 'bg-[#f1e05a]'],
+  ['Python', 'bg-[#3572A5]'],
+  ['Java', 'bg-[#b07219]'],
+  ['HTML', 'bg-[#e34c26]'],
+  ['CSS', 'bg-[#563d7c]'],
+  ['C++', 'bg-[#f34b7d]'],
+  ['C', 'bg-[#555555]'],
+  ['Go', 'bg-[#00ADD8]'],
+  ['TypeScript', 'bg-[#2b7489]'],
+  ['Shell', 'bg-[#89e051]'],
+  ['Ruby', 'bg-[#701516]'],
+  ['PHP', 'bg-[#4F5D95]'],
+  ['Rust', 'bg-[#dea584]'],
+  ['Swift', 'bg-[#ffac45]'],
+  ['Kotlin', 'bg-[#A97BFF]'],
+  ['Dart', 'bg-[#00B4AB]'],
+  ['Scala', 'bg-[#c22d40]'],
+  ['Objective-C', 'bg-[#438eff]'],
+  ['Vue', 'bg-[#41b883]'],
+  ['R', 'bg-[#198CE7]'],
+  ['Perl', 'bg-[#0298c3]'],
+  ['Haskell', 'bg-[#5e5086]'],
+  ['Lua', 'bg-[#000080]'],
+  ['Matlab', 'bg-[#e16737]'],
+  ['Vim script', 'bg-[#199f4b]'],
+  ['Elixir', 'bg-[#6e4a7e]'],
+  ['Erlang', 'bg-[#B83998]'],
+  ['Clojure', 'bg-[#db5855]'],
+  ['Markdown', 'bg-[#083fa1]'],
+  ['TeX', 'bg-[#3D6117]'],
+  ['SQL', 'bg-[#e38c00]'],
+]);
+
 export interface ProjectStatusDocument {
   _id?: string;
 
@@ -24,6 +58,7 @@ export interface ProjectStatusDocument {
   startedAt?: Date;
   submittedAt?: Date;
   repositoryUrl?: string;
+  languages?: string[];
 
   upvotes: number;
   downvotes: number;
@@ -234,73 +269,90 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
 
       <div className="flex min-h-[500px] flex-col divide-y divide-gray-100">
         {solutions?.data.map((solution, counter) => {
-          const isVisited = alreadyVisitedSolutions[solution._id!];
           const avatar = solution.user.avatar || '';
+          const languages = solution?.languages || [];
 
           return (
             <div
               key={solution._id}
-              className={
-                'flex flex-col justify-between gap-2 py-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0'
-              }
+              className="flex flex-col gap-2 py-2 text-sm text-gray-500"
             >
-              <div className="flex items-center gap-1.5">
-                <img
-                  src={
-                    avatar
-                      ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-                      : '/images/default-avatar.png'
-                  }
-                  alt={solution.user.name}
-                  className="mr-0.5 h-7 w-7 rounded-full"
-                />
-                <span className="font-medium text-black">
-                  {solution.user.name}
-                </span>
-                <span className="hidden sm:inline">
-                  {submittedAlternatives[
-                    counter % submittedAlternatives.length
-                  ] || 'submitted their solution'}
-                </span>{' '}
-                <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
-                  {getRelativeTimeString(solution?.submittedAt!)}
-                </span>
+              <div className="flex flex-col justify-between gap-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0">
+                <div className="flex items-center gap-1.5">
+                  <img
+                    src={
+                      avatar
+                        ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+                        : '/images/default-avatar.png'
+                    }
+                    alt={solution.user.name}
+                    className="mr-0.5 h-7 w-7 rounded-full"
+                  />
+                  <span className="font-medium text-black">
+                    {solution.user.name}
+                  </span>
+                  <span className="hidden sm:inline">
+                    {submittedAlternatives[
+                      counter % submittedAlternatives.length
+                    ] || 'submitted their solution'}
+                  </span>{' '}
+                  <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
+                    {getRelativeTimeString(solution?.submittedAt!)}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-end gap-1">
+                  <span className="flex overflow-hidden rounded-full border">
+                    <VoteButton
+                      icon={ThumbsUp}
+                      isActive={solution?.voteType === 'upvote'}
+                      count={solution.upvotes || 0}
+                      onClick={() => {
+                        handleSubmitVote(solution._id!, 'upvote');
+                      }}
+                    />
+
+                    <VoteButton
+                      icon={ThumbsDown}
+                      isActive={solution?.voteType === 'downvote'}
+                      count={solution.downvotes || 0}
+                      hideCount={true}
+                      onClick={() => {
+                        handleSubmitVote(solution._id!, 'downvote');
+                      }}
+                    />
+                  </span>
+
+                  <a
+                    className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setShowLeavingRoadmapModal(solution);
+                    }}
+                    target="_blank"
+                    href={solution.repositoryUrl}
+                  >
+                    <GitHubIcon className="h-4 w-4 text-current" />
+                    Visit Solution
+                  </a>
+                </div>
               </div>
 
-              <div className="flex items-center justify-end gap-1">
-                <span className="flex overflow-hidden rounded-full border">
-                  <VoteButton
-                    icon={ThumbsUp}
-                    isActive={solution?.voteType === 'upvote'}
-                    count={solution.upvotes || 0}
-                    onClick={() => {
-                      handleSubmitVote(solution._id!, 'upvote');
-                    }}
-                  />
-
-                  <VoteButton
-                    icon={ThumbsDown}
-                    isActive={solution?.voteType === 'downvote'}
-                    count={solution.downvotes || 0}
-                    hideCount={true}
-                    onClick={() => {
-                      handleSubmitVote(solution._id!, 'downvote');
-                    }}
-                  />
-                </span>
-
-                <a
-                  className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setShowLeavingRoadmapModal(solution);
-                  }}
-                  target="_blank"
-                  href={solution.repositoryUrl}
-                >
-                  <GitHubIcon className="h-4 w-4 text-current" />
-                  Visit Solution
-                </a>
+              <div className="flex justify-end gap-2.5">
+                {languages.map((language) => (
+                  <span
+                    key={language}
+                    className="flex items-center gap-2 text-sm"
+                  >
+                    <span
+                      className={cn(
+                        'h-2 w-2 rounded-full',
+                        languageColors.get(language) || 'bg-gray-400',
+                      )}
+                    />
+                    {language}
+                  </span>
+                ))}
               </div>
             </div>
           );
