@@ -14,6 +14,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
+import type { ProjectFileType, ProjectFrontmatter } from '../../lib/project.ts';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -59,12 +60,11 @@ type QueryParams = {
 
 type PageState = {
   currentPage: number;
-  languages: string[];
+  language: string;
 };
 
-const VISITED_SOLUTIONS_KEY = 'visited-project-solutions';
-
 type ListProjectSolutionsProps = {
+  project: ProjectFrontmatter;
   projectId: string;
 };
 
@@ -93,12 +93,12 @@ const submittedAlternatives = [
 ];
 
 export function ListProjectSolutions(props: ListProjectSolutionsProps) {
-  const { projectId } = props;
+  const { projectId, project: projectData } = props;
 
   const toast = useToast();
   const [pageState, setPageState] = useState<PageState>({
     currentPage: 0,
-    languages: [],
+    language: '',
   });
 
   const [isLoading, setIsLoading] = useState(true);
@@ -106,14 +106,13 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   const [showLeavingRoadmapModal, setShowLeavingRoadmapModal] = useState<
     ListProjectSolutionsResponse['data'][number] | null
   >(null);
-  const [distinctLanguages, setDistinctLanguages] = useState<string[]>([]);
 
-  const loadSolutions = async (page = 1, languages: string[] = []) => {
+  const loadSolutions = async (page = 1, language: string = '') => {
     const { response, error } = await httpGet<ListProjectSolutionsResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-project-solutions/${projectId}`,
       {
         currPage: page,
-        ...(languages.length > 0 ? { languages: languages.join(',') } : {}),
+        ...(language ? { languages: language } : {}),
       },
     );
 
@@ -124,19 +123,6 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     }
 
     setSolutions(response);
-  };
-
-  const loadDistinctLanguages = async () => {
-    const { response, error } = await httpGet<string[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-list-project-languages/${projectId}`,
-    );
-
-    if (error || !response) {
-      toast.error(error?.message || 'Failed to load project languages');
-      return;
-    }
-
-    setDistinctLanguages(response);
   };
 
   const handleSubmitVote = async (
@@ -190,7 +176,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     const queryParams = getUrlParams() as QueryParams;
     setPageState({
       currentPage: +(queryParams.p || '1'),
-      languages: (queryParams.l || '').split(',').filter(Boolean),
+      language: queryParams.l || '',
     });
   }, []);
 
@@ -200,24 +186,20 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       return;
     }
 
-    if (pageState.currentPage !== 1 || pageState.languages.length > 0) {
+    if (pageState.currentPage !== 1 || pageState.language !== '') {
       setUrlParams({
         p: String(pageState.currentPage),
-        l: pageState.languages.join(','),
+        l: pageState.language,
       });
     } else {
       deleteUrlParam('p');
       deleteUrlParam('l');
     }
 
-    loadSolutions(pageState.currentPage, pageState.languages).finally(() => {
+    loadSolutions(pageState.currentPage, pageState.language).finally(() => {
       setIsLoading(false);
     });
   }, [pageState]);
-
-  useEffect(() => {
-    loadDistinctLanguages().finally(() => {});
-  }, []);
 
   const isEmpty = solutions?.data.length === 0;
   if (isEmpty) {
@@ -231,26 +213,29 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     />
   ) : null;
 
-  const selectedLanguages = pageState.languages;
+  const selectedLanguage = pageState.language;
 
   return (
-    <section>
+    <div className="mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5">
       {leavingRoadmapModal}
-      <SelectLanguages
-        languages={distinctLanguages}
-        selectedLanguages={pageState.languages}
-        onSelectLanguage={(language) => {
-          const isAlreadySelected = selectedLanguages.includes(language);
-          const newLanguages = isAlreadySelected
-            ? selectedLanguages.filter((l) => l !== language)
-            : [...selectedLanguages, language];
-
-          setPageState({
-            ...pageState,
-            languages: newLanguages,
-          });
-        }}
-      />
+      <div className="relative mb-5 hidden sm:block">
+        <div className="flex items-center justify-between gap-2">
+          <h1 className="mb-1 text-xl font-semibold">
+            {projectData.title} Solutions
+          </h1>
+          <SelectLanguages
+            projectId={projectId}
+            selectedLanguage={selectedLanguage}
+            onSelectLanguage={(language) => {
+              setPageState((prev) => ({
+                ...prev,
+                language: prev.language === language ? '' : language,
+              }));
+            }}
+          />
+        </div>
+        <p className="text-sm text-gray-500">{projectData.description}</p>
+      </div>
 
       {isLoading ? (
         <LoadingSolutions />
@@ -344,6 +329,6 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           )}
         </>
       )}
-    </section>
+    </div>
   );
 }
