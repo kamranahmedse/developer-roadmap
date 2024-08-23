@@ -5,3 +5,4 @@ Understanding distribution shapes is an integral part of a Data Analyst's daily 
 Visit the following resources to learn more:
 
 - [@article@Kurtosis: Definition, Types, and Importance](https://www.investopedia.com/terms/k/kurtosis.asp)
+- [@video@What is Kurtosis?](https://www.youtube.com/watch?v=AsxEDBhESJg)

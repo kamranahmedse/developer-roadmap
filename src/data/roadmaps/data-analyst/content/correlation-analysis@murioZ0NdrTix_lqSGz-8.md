@@ -5,3 +5,4 @@ Correlation Analysis is a quantitative method that data analysts widely employ t
 Visit the following resources to learn more:
 
 - [@article@Correlation](https://www.mathsisfun.com/data/correlation.html)
+- [@article@What is correlation analysis?](https://blog.flexmr.net/correlation-analysis-definition-exploration)
