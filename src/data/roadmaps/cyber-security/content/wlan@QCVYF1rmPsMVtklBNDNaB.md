@@ -32,3 +32,10 @@ As WLANs use wireless signals to transmit data, they can be susceptible to vario
 - **Wi-Fi Protected Access 3 (WPA3)**: WPA3 is the latest security standard with enhanced encryption and authentication features. It addresses the vulnerabilities in WPA2 and provides even stronger security for WLANs.
 
 To maintain a secure WLAN, it's essential to use the appropriate security standard, change default settings, and regularly update firmware to address any security vulnerabilities.
+
+Visit the following resources to learn more:
+
+- [@video@Wireless Technologies](https://www.youtube.com/watch?v=_VwpcLiBkAQ)
+- [@video@Wireless Networking](https://www.youtube.com/watch?v=NeTwL-040ds)
+- [@video@Wireless Encryption](https://www.youtube.com/watch?v=YNcobcHXnnY&)
+- [@video@Wireless Attacks](https://www.youtube.com/watch?v=tSLqrKhUvts)

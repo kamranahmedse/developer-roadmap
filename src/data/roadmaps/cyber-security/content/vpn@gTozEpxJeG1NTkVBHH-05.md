@@ -13,3 +13,8 @@ When you connect to a VPN, your device's IP address is replaced with the VPN ser
 Using a reliable VPN service is an essential part of maintaining good cyber security, especially when using public Wi-Fi networks or accessing sensitive information online.
 
 Keep in mind, however, that not all VPNs are created equal. Make sure to do your research and choose a reputable VPN provider with a strong focus on privacy and security. Some popular and trusted VPN services include ExpressVPN, NordVPN, and CyberGhost.
+
+Visit the following resources to learn more:
+
+- [@video@VPN (Virtual Private Network) Explained](https://www.youtube.com/watch?v=R-JUOpCgTZc)
+- [@video@Virtual Private Networks - Professor Messer](https://www.youtube.com/watch?v=YFyt8aY8PfI)
