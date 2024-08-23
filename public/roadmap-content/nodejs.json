@@ -1942,6 +1942,11 @@
         "title": "Child Process Docs",
         "url": "https://nodejs.org/api/child_process.html#child-process",
         "type": "article"
+      },
+      {
+        "title": "Securing Node.js Against Command Injection",
+        "url": "https://www.nodejs-security.com/blog/securing-your-nodejs-apps-by-analyzing-real-world-command-injection-examples",
+        "type": "article"
       }
     ]
   },
