@@ -2,7 +2,7 @@
 
 **SWC** (Speedy Web Compiler) is a JavaScript and TypeScript compiler and bundler built in Rust. Unlike Babel, which is JavaScript-based, SWC leverages Rust for blazing-fast performance, making it an ideal choice for large-scale projects. It focuses on speed while offering modern features like tree shaking, JSX transformation, and module bundling, catering to frontend development and build optimization.
 
-## Resources
+Visit the following resources to learn more:
 
 - [@official@SWC Website](https://swc.rs/)
 - [@official@SWC Documentation](https://swc.rs/docs/)
