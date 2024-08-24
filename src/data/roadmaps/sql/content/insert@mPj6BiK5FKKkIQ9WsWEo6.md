@@ -8,7 +8,7 @@ INSERT INTO table (column1, column2...)
 VALUES (value1, value2...);
 ``` 
 
-If -for whatever reason- all columns of a table require data insertion, <br/> it can be done so with ommiting the `column` assignment in the query:
+If -for whatever reason- all columns of a table require data insertion, <br/> it can be done so by ommiting the `column` assignment in the query:
 
 ```
 INSERT INTO table_name VALUES (value1, value2, value3, ...);
@@ -19,4 +19,4 @@ This query ⬆️ will insert the provided values within every column of the new
 
 Visit the following resources to learn more:
 
-- [@article@w3schools SQL INSERT INTO Statement Doc](https://www.w3schools.com/sql/sql_insert.asp)
+- [@article@W3Schools SQL INSERT INTO Statement Doc](https://www.w3schools.com/sql/sql_insert.asp)
