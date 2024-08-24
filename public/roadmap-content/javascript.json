@@ -360,7 +360,7 @@
   },
   "oC4o6GLEES_nUgCJu9Q6I": {
     "title": "Global",
-    "description": "Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.\n\nVisit the following resources to learn more:",
+    "description": "Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.\n\n### Note:\n\nIf you assign a value to a variable that has not been declared i.e `potato = true` it will automatically become a _GLOBAL_ variable.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "JavaScript Scope",
@@ -1779,8 +1779,14 @@
   },
   "gsyY3Oa3Jf0W5K_lyqBYO": {
     "title": "call",
-    "description": "",
-    "links": []
+    "description": "The `call()` method allows you to invoke a function with a given `this` value, and arguments provided individually.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Explicit Binding in JavaScript: Call, Bind, and Apply Methods",
+        "url": "https://medium.com/@amitsharma_24072/understanding-explicit-binding-in-javascript-call-bind-and-apply-methods-7b6ed0107628",
+        "type": "article"
+      }
+    ]
   },
   "-BtF34cEzI6J8sZCDRlRE": {
     "title": "apply",

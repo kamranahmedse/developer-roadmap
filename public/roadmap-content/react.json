@@ -675,8 +675,23 @@
   },
   "mkyU0ug8MXxV4biHuOity": {
     "title": "Hooks Best Practices",
-    "description": "Learn the best practices for using React hooks from the following resources:",
+    "description": "To fully leverage the capabilities of React Hooks, it is crucial to adopt best practices that not only enhance code readability but also optimize performance. By adhering to these practices, developers can create cleaner, more maintainable components that make the most of React's powerful features, leading to a more efficient and enjoyable development experience.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Rules of Hooks",
+        "url": "https://react.dev/reference/rules/rules-of-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "React Hooks Best Practices: Unlocking Efficiency and Elegance",
+        "url": "https://medium.com/womenintechnology/react-hooks-best-practices-unlocking-efficiency-and-elegance-da23f7e1418a",
+        "type": "article"
+      },
+      {
+        "title": "Mastering React Hooks: Best Practices and Common Pitfalls",
+        "url": "https://dev.to/codesensei/mastering-react-hooks-best-practices-and-common-pitfalls-3d9i",
+        "type": "article"
+      },
       {
         "title": "React Hooks Cheat Sheet: Best Practices with Examples",
         "url": "https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/",
@@ -1671,8 +1686,24 @@
   },
   "y2dI1DVLWKAkv6VRpgaQa": {
     "title": "GSock",
-    "description": "",
-    "links": []
+    "description": "`GSAP` (GreenSock Animation Platform) is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch!\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GSAP: Homepage",
+        "url": "https://gsap.com/docs/v3/",
+        "type": "article"
+      },
+      {
+        "title": "The Beginner's Guide to the GreenSock Animation Platform",
+        "url": "https://www.freecodecamp.org/news/the-beginners-guide-to-the-greensock-animation-platform-7dc9fd9eb826/",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Greensock Web Animation",
+        "url": "https://www.youtube.com/watch?v=EOa7ccPWvXg",
+        "type": "video"
+      }
+    ]
   },
   "_F3WMxhzaK9F8_-zHDDMF": {
     "title": "Suspense",
