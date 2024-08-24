@@ -2,8 +2,9 @@
 
 The `Number` data type in JavaScript represents floating-point numbers, such as 37 or -9.25. The `Number` constructor provides constants and methods to work with numbers, and values of other types can be converted to numbers using the `Number()` function.
 
-### Example
-```JS
+## Example
+
+```js
 let num1 = 255; // integer
 let num2 = 255.0; // floating-point number with no fractional part
 let num3 = 0xff; // hexadecimal notation

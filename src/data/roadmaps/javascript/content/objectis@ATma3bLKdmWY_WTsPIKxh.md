@@ -16,6 +16,7 @@ const obj = {};
 console.log(Object.is(obj, {}));
 // Expected output: false
 ```
+
 Visit the following resources to learn more:
 
 - [@article@Object.is() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
