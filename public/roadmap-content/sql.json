@@ -179,7 +179,7 @@
   },
   "YzJ6QmY2arMfRzMAPaI0T": {
     "title": "Drop Table",
-    "description": "The `DROP TABLE` statement is a Data Definition Language (DDL) operation that is used to completely remove a table from the database. This operation deletes the table structure along with all the data in it, effectively removing the table from the database system.\n\nWhen you execute the `DROP TABLE` statement, it eliminates both the table and its data, as well as any associated indexes, constraints, and triggers. Unlike the `TRUNCATE TABLE` statement, which only removes data but keeps the table structure, `DROP TABLE` removes everything associated with the table.\n\nLearn more from the following resources:",
+    "description": "The `DROP TABLE` statement is a Data Definition Language (DDL) operation that is used to **completely remove** a table from the database. This operation deletes the table structure along with **all the data in** it, effectively removing the table from the database system.\n\nWhen you execute the `DROP TABLE` statement, it eliminates both the table and its data, as well as any associated indexes, constraints, and triggers. Unlike the `TRUNCATE TABLE` statement, which only removes data but keeps the table structure, `DROP TABLE` removes everything associated with the table.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "DROP TABLE",
@@ -190,8 +190,24 @@
   },
   "WMSXi-eez_hHGDM8kUdWz": {
     "title": "Data Manipulation Language (DML)",
-    "description": "Data Manipulation Language (DML) is a subset of SQL used to manage data within database objects. It includes commands like `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, which allow users to retrieve, add, modify, and remove data from tables. DML statements operate on the data itself rather than the database structure, enabling users to interact with the stored information. These commands are essential for day-to-day database operations, data analysis, and maintaining the accuracy and relevance of the data within a database system.",
-    "links": []
+    "description": "Data Manipulation Language (DML) is a subset of SQL used to manage data within database objects. It includes commands like `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, which allow users to retrieve, add, modify, and remove data from tables. DML statements operate on the data itself rather than the database structure, enabling users to interact with the stored information. These commands are essential for day-to-day database operations, data analysis, and maintaining the accuracy and relevance of the data within a database system.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is DML?",
+        "url": "https://satoricyber.com/glossary/dml-data-manipulation-language",
+        "type": "article"
+      },
+      {
+        "title": "What is DML?(Wiki)",
+        "url": "https://en.wikipedia.org/wiki/Data_manipulation_language",
+        "type": "article"
+      },
+      {
+        "title": "Difference Between DMS & DML",
+        "url": "https://appmaster.io/blog/difference-between-ddl-and-dml",
+        "type": "article"
+      }
+    ]
   },
   "i8u8E_sne6XiKJo2FXDog": {
     "title": "Select",

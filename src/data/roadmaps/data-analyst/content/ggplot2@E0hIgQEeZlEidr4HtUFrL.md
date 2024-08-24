@@ -4,5 +4,5 @@ When it comes to data visualization in R programming, ggplot2 stands tall as one
 
 Learn more from the following resources:
 
-- [@article@ggplot2 website]
+- [@article@ggplot2 website](https://ggplot2.tidyverse.org/)
 - [@video@Make beautiful graphs in R](https://www.youtube.com/watch?v=qnw1xDnt_Ec)

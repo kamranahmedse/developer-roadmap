@@ -1,6 +1,6 @@
 # Types & Validation
 
-**Typescript** provides a static type system that helps you in avoiding mistakes during the development and provides other features (e.g. IDE support) that help you improve your productivity. 
+**Typescript** provides a static type system that helps you in avoiding mistakes during the development and provides other features (e.g. IDE support) that help you improve your productivity.
 
 One thing you should note is that TypeScript can only help you avoid mistakes during the development. We can't rely on it to validate a client's input. **Zod** is a powerful validation library that allows us to validate: form input, local storage, API contracts and much more using their typesafe implementation.
 

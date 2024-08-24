@@ -4,4 +4,5 @@ Dispersion in descriptive analysis, specifically for a data analyst, offers a cr
 
 Visit the following resources to learn more:
 
-- [@article@Standard Deviation and Variance](https://www.mathsisfun.com/data/standard-deviation.html)
+- [@article@What is dispersion?](https://www.investopedia.com/terms/d/dispersion.asp)
+- [@video@Statistics 101 - Measures of Dispersion](https://www.youtube.com/watch?v=goXdWMZxlqM)

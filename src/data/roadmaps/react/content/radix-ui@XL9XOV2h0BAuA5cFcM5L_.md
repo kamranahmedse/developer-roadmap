@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Official Website](https://www.radix-ui.com/)
 - [@video@Radix UI Course](https://www.youtube.com/playlist?list=PLlNdnoKwDZdwANQoaakE8-kYMyKFOETlo)
 - [@article@What is Radix UI?](https://medium.com/@olivier.trinh/what-is-radix-ui-ff535bbb52d5)
-
