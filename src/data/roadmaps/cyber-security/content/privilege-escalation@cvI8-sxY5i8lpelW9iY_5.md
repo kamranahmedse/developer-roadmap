@@ -19,3 +19,7 @@ To protect your systems and data from privilege escalation attacks, consider imp
 - **Monitor and Log System Activities**: Implement logging and monitoring systems to detect suspicious account activities or changes in user privileges that may indicate a privilege escalation attack.
 
 By understanding the types of privilege escalation attacks and following these best practices, you can create a more secure environment for your data and systems, and reduce the risk of unauthorized users gaining unrestricted access.
+
+Visit the following resources to learn more:
+
+- [@video@Privilege Escalation](https://www.youtube.com/watch?v=ksjU3Iu195Q)

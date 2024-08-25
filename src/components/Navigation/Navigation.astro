@@ -4,6 +4,7 @@ import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
 import { AccountDropdown } from './AccountDropdown';
 import NewIndicator from './NewIndicator.astro';
+import { AccountStreak } from '../AccountStreak/AccountStreak';
 import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
 ---
 
@@ -42,10 +43,7 @@ import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu'
           Start Here
         </a>
         <RoadmapDropdownMenu client:load />
-        <a
-          href='/teams'
-          class='group relative !mr-5 text-gray-400 hover:text-white'
-        >
+        <a href='/teams' class='group relative text-gray-400 hover:text-white'>
           Teams
         </a>
       </div>
@@ -55,7 +53,8 @@ import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu'
       <li data-guest-required class='hidden'>
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
-      <li>
+      <li class='flex items-center gap-2'>
+        <AccountStreak client:only='react' />
         <AccountDropdown client:only='react' />
 
         <a

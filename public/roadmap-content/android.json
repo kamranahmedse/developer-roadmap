@@ -237,8 +237,14 @@
   },
   "boMz0HZlMAsLdCZlpUo-H": {
     "title": "EditText",
-    "description": "",
-    "links": []
+    "description": "`EditText` is a fundamental UI element in Android Studio, used for allowing users to input and edit text within an application. It is a subclass of `TextView` that provides additional features to handle user input.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: EditText",
+        "url": "https://developer.android.com/reference/android/widget/EditText",
+        "type": "article"
+      }
+    ]
   },
   "Mtx0bY0drmaTw8sCM5YTl": {
     "title": "Dialogs",
@@ -307,8 +313,14 @@
   },
   "pEBpXv3Jf1AzBNHlvVrG8": {
     "title": "Tabs",
-    "description": "",
-    "links": []
+    "description": "Tabs in Android Studio are a UI component used to organize content into multiple sections, allowing users to navigate between them by selecting the corresponding tab. This component is commonly used when there is a need to present different types of content in a single screen, like different categories, settings, or pages within an app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Material Tabs",
+        "url": "https://developer.android.com/reference/com/google/android/material/tabs/package-summary",
+        "type": "article"
+      }
+    ]
   },
   "Xn1VQ-xOT67ZfJJTM4r1p": {
     "title": "Animations",

@@ -25,3 +25,8 @@ The OWASP Top 10 is updated periodically, with the most recent version released 
 - **Insufficient Logging & Monitoring**: Insufficient logging and monitoring, coupled with inadequate integration with incident response, allow attackers to maintain their presence within a system, move laterally, and exfiltrate or tamper with data.
 
 To mitigate these risks, the OWASP Top 10 project provides detailed information, including how to test for each risk, code examples for various programming languages, and specific steps to prevent or remediate the issues. By understanding and implementing the recommended practices, organizations can improve their web application security and protect their users' data.
+
+Visit the following resources to learn more:
+
+- [@official@OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+- [@video@OWASP Top Ten](https://youtube.com/playlist?list=PLyqga7AXMtPOguwtCCXGZUKvd2CDCmUgQ&si=ZYRbcDSRvqTOnDOo)
