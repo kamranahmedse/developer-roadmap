@@ -595,7 +595,7 @@
     "links": [
       {
         "title": "Learn CSS Grid for free",
-        "url": "https://scrimba.com/learn/cssgrid",
+        "url": "https://scrimba.com/learn/cssgrid?via=roadmap",
         "type": "course"
       },
       {
@@ -2088,7 +2088,7 @@
     "links": [
       {
         "title": "Scrimba — TypeScript Basics",
-        "url": "https://scrimba.com/learn/typescript",
+        "url": "https://scrimba.com/learn/typescript?via=roadmap",
         "type": "course"
       },
       {

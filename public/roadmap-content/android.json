@@ -275,13 +275,25 @@
   },
   "A4rtNULX_MoV93IH1Lgqw": {
     "title": "ImageView",
-    "description": "",
-    "links": []
+    "description": "Displays image resources, for example Bitmap or Drawable resources. ImageView is also commonly used to apply tints to an image and handle image scaling.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ImageView",
+        "url": "https://developer.android.com/reference/android/widget/ImageView",
+        "type": "article"
+      }
+    ]
   },
   "Z4Tbd5ClnqCXGPGG09F-G": {
     "title": "Bottom Sheet",
-    "description": "",
-    "links": []
+    "description": "`Bottom sheets` are surfaces containing supplementary content that are anchored to the bottom of the screen.\n\nThere are several attributes that can be used to adjust the behavior of both standard and modal bottom sheets. Behavior attributes can be applied to standard bottom sheets in xml by setting them on a child View set to `app:layout_behavior` or programmatically.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Bottom sheets",
+        "url": "https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialog",
+        "type": "article"
+      }
+    ]
   },
   "EzLjX4iRT7AxkAOsJYnSU": {
     "title": "ListView",

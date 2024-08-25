@@ -1858,8 +1858,29 @@
   },
   "FD0bkmxNpPXiUB_NevEUf": {
     "title": "Shoulder Surfing",
-    "description": "",
-    "links": []
+    "description": "In a Shoulder Surfing Attack, an attacker tries to get information when you are unaware of where the attacker looks over your shoulder or from your back to see what you're doing on your device and obtain sensitive information. Shoulder Surfing attacks are accomplished by observing the content \"over the victim's shoulder\". It is a social engineering attack where the attackers physically view the device screen and keypad to obtain personal information. This attack is mostly done when you are in a public place or crowded area. Sometimes attackers attack when you are busy on your device and the attacker could be your friend, someone you know or it may be some stranger.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Shoulder Surfing",
+        "url": "https://www.geeksforgeeks.org/what-is-shoulder-surfing-in-cyber-security/",
+        "type": "article"
+      },
+      {
+        "title": "What is shoulder surfing, and how can you avoid it?",
+        "url": "https://nordvpn.com/blog/shoulder-surfing/?srsltid=AfmBOorl5NPpW_Tnhas9gB2HiblorqwXyK0NJae7uaketrnDwbjJmiYV",
+        "type": "article"
+      },
+      {
+        "title": "What is Shoulder Surfing?",
+        "url": "https://www.mcafee.com/learn/what-is-shoulder-surfing/",
+        "type": "article"
+      },
+      {
+        "title": "What is Shoulder Surfing? 9 ways to protect yourself",
+        "url": "https://www.bigrock.in/blog/products/security/what-is-shoulder-surfing-9-ways-to-protect-yourself-from-shoulder-surfing/",
+        "type": "article"
+      }
+    ]
   },
   "Iu0Qtk13RjrhHpSlm0uyh": {
     "title": "Dumpster Diving",
@@ -1884,8 +1905,14 @@
   },
   "O1VceThdxRlgQ6DcGyY7Y": {
     "title": "Social Engineering",
-    "description": "",
-    "links": []
+    "description": "Social Engineering is a manipulation technique that exploits human psychology to gain access to confidential information, systems, or physical locations. Unlike traditional hacking methods that rely on technical skills, social engineering primarily focuses on deceiving or tricking individuals into revealing sensitive information or performing actions that compromise security.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Social Engineering?",
+        "url": "https://www.cisco.com/c/en/us/products/security/what-is-social-engineering.html",
+        "type": "article"
+      }
+    ]
   },
   "UU_inxa8Y2lLP2BRhdLDT": {
     "title": "Reconnaissance",
@@ -1933,13 +1960,25 @@
   },
   "0LeDwj_tMaXjQBBOUJ5CL": {
     "title": "Typo Squatting",
-    "description": "",
-    "links": []
+    "description": "Typosquatting is a form of cyberattack that exploits common typing errors made by users when entering website URLs into their browsers. Attackers create malicious websites with URLs that are very similar to legitimate ones, often differing by just a single letter, number, or symbol. When a user accidentally mistypes a URL, they may be redirected to the malicious site, where they can be subjected to phishing attacks, malware downloads, or other forms of cyber exploitation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Typosquatting",
+        "url": "https://www.mcafee.com/learn/what-is-typosquatting/#:~:text=Typosquatting%2C%20also%20known%20as%20URL,%E2%80%9CGoogle.com%E2%80%9D",
+        "type": "article"
+      }
+    ]
   },
   "Q0i-plPQkb_NIvOQBVaDd": {
     "title": "Brute Force vs Password Spray",
-    "description": "",
-    "links": []
+    "description": "What is Brute Force?\n--------------------\n\nBrute Force is a method of password cracking where an attacker systematically tries all possible combinations of characters until the correct password is found. This method is highly resource-intensive, as it involves attempting numerous password variations in a relatively short period of time.\n\nWhat is Password Spray?\n-----------------------\n\nPassword Spray is a more targeted and stealthy method of password cracking where an attacker tries a small number of common passwords across many different accounts. Instead of bombarding a single account with numerous password attempts (as in brute force), password spraying involves using one or a few passwords against multiple accounts.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Brute force vs. Password Spray attack",
+        "url": "https://www.inspark.nl/brute-force-vs-password-spray-attack-in-azure-sentinel/",
+        "type": "article"
+      }
+    ]
   },
   "IF5H0ZJ72XnqXti3jRWYF": {
     "title": "DoS vs DDoS",
@@ -1969,7 +2008,7 @@
   },
   "urtsyYWViEzbqYLoNfQAh": {
     "title": "DNS Poisoning",
-    "description": "",
+    "description": "DNS spoofing or DNS cache poisoning, occurs when fake information is inserted into a DNS server’s cache.This causes DNS queries to return incorrect IP addresses, directing users to the wrong websites. Hackers exploit this to reroute traffic to malicious sites. The issue persists until the cached information is corrected.When the cache is poisoned, it misdirects traffic until the incorrect information is fixed. This technique exploits vulnerabilities in the DNS system and can spread to other servers, causing widespread issues.\n\nVisit the following resources to learn more:",
     "links": []
   },
   "LfWJJaT3fv0p6fUeS8b84": {

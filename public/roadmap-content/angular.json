@@ -5,7 +5,7 @@
     "links": [
       {
         "title": " Angular website",
-        "url": "https://angularjs.org/",
+        "url": "https://angular.dev/",
         "type": "article"
       }
     ]
@@ -400,8 +400,24 @@
   },
   "w_BazXvINFyxDCHmlznfy": {
     "title": "Feature Modules",
-    "description": "",
-    "links": []
+    "description": "Feature modules are `NgModules` for the purpose of organizing code. With feature modules, you can keep code related to a specific functionality or feature separate from other code. Delineating areas of your application helps with collaboration between developers and teams, separating directives, and managing the size of the root module.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Feature Modules",
+        "url": "https://angular.dev/guide/ngmodules/feature-modules#how-to-make-a-feature-module",
+        "type": "article"
+      },
+      {
+        "title": "Feature module with lazy loading in Angular 15",
+        "url": "https://medium.com/@jaydeepvpatil225/feature-module-with-lazy-loading-in-angular-15-53bb8e15d193",
+        "type": "article"
+      },
+      {
+        "title": "Creating a Feature Module | Understanding Angular Modules",
+        "url": "https://www.youtube.com/watch?v=VaPhaexVa1U",
+        "type": "video"
+      }
+    ]
   },
   "bLERvEERmNI5AgxtEYokZ": {
     "title": "Lazy Loading Modules",
@@ -426,8 +442,24 @@
   },
   "5b590c7s-2XJ0rgdCYxLa": {
     "title": "Dependencies",
-    "description": "",
-    "links": []
+    "description": "A provider is an instruction to the Dependency Injection system on how to obtain a value for a dependency. Most of the time, these dependencies are services that you create and provide.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Providing dependencies in modules",
+        "url": "https://angular.dev/guide/ngmodules/providers",
+        "type": "article"
+      },
+      {
+        "title": "Providers in Angular",
+        "url": "https://www.scaler.com/topics/angular/providers-in-angular/",
+        "type": "article"
+      },
+      {
+        "title": "Working with providers in Angular",
+        "url": "https://sergeygultyayev.medium.com/working-with-providers-in-angular-eeb493151446",
+        "type": "article"
+      }
+    ]
   },
   "6fhe9xAi_RSVfa-KKbcbV": {
     "title": "Templates",
@@ -629,8 +661,19 @@
   },
   "ORdPDad4HWJAfcZuS-7yM": {
     "title": "@else",
-    "description": "",
-    "links": []
+    "description": "While the `@if` block can be helpful in many situations, it's common to also show fallback UI when the condition is not met. When you need a fallback, similar to JavaScript's else clause, add an `@else` block to accomplish the same effect.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @else block",
+        "url": "https://angular.dev/essentials/conditionals-and-loops#else-block",
+        "type": "article"
+      },
+      {
+        "title": "Angular If Else Control Flow Blocks Explained",
+        "url": "https://ultimatecourses.com/blog/angular-if-else-control-flow-blocks-explained",
+        "type": "article"
+      }
+    ]
   },
   "ys5untkSppGMFK-VsfuRt": {
     "title": "@else if",
