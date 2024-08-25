@@ -1,6 +1,6 @@
 # DOM APIs
 
-With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming interface for the web. All browsers have a set og built-in Web APIs to support complex operations, and to help accessing data. Like Geo-location API, Web Storage, Web History and others.
+With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming interface for the web. All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data. Like Geo-location API, Web Storage, Web History and others.
 
 Visit the following resources to learn more:
 
