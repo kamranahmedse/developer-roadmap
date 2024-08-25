@@ -95,11 +95,27 @@
         "title": "Type Conversion and Casting",
         "url": "https://www.programiz.com/python-programming/type-conversion-and-casting",
         "type": "article"
-      },
+      }
+    ]
+  },
+  "fNTb9y3zs1HPYclAmu_Wv": {
+    "title": "Exceptions",
+    "description": "Python exceptions are events that occur during the execution of a program and disrupt the normal flow of the program's instructions. When an exception is raised, it indicates that an error has occurred. Python provides a way to handle these exceptions using try-except blocks, allowing developers to manage errors gracefully and ensure the program can continue or exit smoothly.",
+    "links": [
       {
         "title": "Python Exceptions: An Introduction",
         "url": "https://realpython.com/python-exceptions/",
         "type": "article"
+      },
+      {
+        "title": "Exceptions Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html#exceptions",
+        "type": "article"
+      },
+      {
+        "title": "Exception Handling in Python",
+        "url": "https://www.youtube.com/watch?v=V_NXT2-QIlE",
+        "type": "video"
       },
       {
         "title": "Errors and Exceptions",
@@ -115,22 +131,6 @@
         "title": "Python Try Except",
         "url": "https://www.w3schools.com/python/python_try_except.asp",
         "type": "article"
-      }
-    ]
-  },
-  "fNTb9y3zs1HPYclAmu_Wv": {
-    "title": "Exceptions",
-    "description": "Python exceptions are events that occur during the execution of a program and disrupt the normal flow of the program's instructions. When an exception is raised, it indicates that an error has occurred. Python provides a way to handle these exceptions using try-except blocks, allowing developers to manage errors gracefully and ensure the program can continue or exit smoothly.",
-    "links": [
-      {
-        "title": "Exceptions Documentation",
-        "url": "https://docs.python.org/3/tutorial/errors.html#exceptions",
-        "type": "article"
-      },
-      {
-        "title": "Exception Handling in Python",
-        "url": "https://www.youtube.com/watch?v=V_NXT2-QIlE",
-        "type": "video"
       }
     ]
   },
