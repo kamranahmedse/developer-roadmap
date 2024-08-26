@@ -6,11 +6,14 @@ import { httpPost } from '../../lib/http';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
+import { getTopGitHubLanguages } from '../../lib/github.ts';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
   submittedAt: Date;
 };
+
+type GitHubApiLanguagesResponse = Record<string, number>;
 
 type VerificationChecksType = {
   repositoryExists: 'pending' | 'success' | 'error';
@@ -170,12 +173,16 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         projectUrlExists: 'success',
       });
 
-      const languagesUrl = `${mainApiUrl}/languages`;
-      const languagesResponse = await fetch(languagesUrl);
+      const languagesResponse = await fetch(`${mainApiUrl}/languages`);
       let languages: string[] = [];
       if (languagesResponse.ok) {
-        const languagesData = await languagesResponse.json();
-        languages = Object.keys(languagesData || {})?.slice(0, 4);
+        const languagesData =
+          (await languagesResponse.json()) as GitHubApiLanguagesResponse;
+
+        languages = getTopGitHubLanguages(languagesData);
+        if (languages?.length === 0) {
+          languages = Object.keys(languagesData || {})?.slice(0, 4);
+        }
       }
 
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
