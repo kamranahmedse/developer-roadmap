@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
+import { decimalIfNeeded } from '../../lib/number.ts';
 
 type RatingProps = {
   rating?: number;
@@ -40,7 +41,7 @@ export function Rating(props: RatingProps) {
               if (readOnly) {
                 return;
               }
-              
+
               setStars(counter);
               onRatingChange?.(counter);
             }}
@@ -49,7 +50,12 @@ export function Rating(props: RatingProps) {
         );
       })}
       {(props.total || 0) > 0 && (
-        <span className="ml-1.5 text-xs text-gray-400">
+        <span className="ml-1.5 text-xs font-medium text-gray-400">
+          {decimalIfNeeded(Number(props.rating!))}
+        </span>
+      )}
+      {(props.total || 0) > 0 && (
+        <span className="ml-1 text-xs text-gray-400">
           ({Intl.NumberFormat('en-US').format(props.total!)})
         </span>
       )}
