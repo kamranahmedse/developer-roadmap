@@ -1,8 +1,10 @@
 import { cn } from '../../lib/classname';
 import {
+  ArrowLeft,
   Blocks,
   BoxSelect,
   type LucideIcon,
+  StepBackIcon,
   StickyNote,
   Text,
 } from 'lucide-react';
@@ -34,7 +36,7 @@ function TabButton(props: TabButtonProps) {
       {smText && <span className="sm:hidden">{smText}</span>}
 
       {isActive && (
-        <span className="absolute bottom-0 left-0 right-0 h-0.5 translate-y-1/2 bg-black rounded-t-md"></span>
+        <span className="absolute bottom-0 left-0 right-0 h-0.5 translate-y-1/2 rounded-t-md bg-black"></span>
       )}
     </a>
   );
@@ -43,13 +45,23 @@ function TabButton(props: TabButtonProps) {
 type ProjectTabsProps = {
   activeTab: AllowedProjectTab;
   projectId: string;
+  parentRoadmapId?: string;
 };
 
 export function ProjectTabs(props: ProjectTabsProps) {
-  const { activeTab, projectId } = props;
+  const { activeTab, parentRoadmapId, projectId } = props;
 
   return (
-    <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 rounded-md border bg-white px-2.5 text-sm">
+    <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 overflow-hidden rounded-md border bg-white px-2.5 text-sm">
+      <a
+        href={`/${parentRoadmapId}/projects`}
+        className={
+          '-ml-1.5 flex items-center rounded-md bg-gray-300 px-2 py-1.5 text-xs tracking-wide text-black hover:bg-gray-400/60'
+        }
+      >
+        <ArrowLeft className="mr-1 inline-block h-3.5 w-3.5" strokeWidth={2} />
+        <span className="hidden sm:inline">Back to Projects</span>
+      </a>
       <TabButton
         text={'Project Detail'}
         icon={Text}
