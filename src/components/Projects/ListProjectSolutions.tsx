@@ -14,7 +14,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
-import type { ProjectFileType, ProjectFrontmatter } from '../../lib/project.ts';
+import type { ProjectFrontmatter } from '../../lib/project.ts';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -134,7 +134,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       return;
     }
 
-    pageProgressMessage.set('Submitting vote...');
+    pageProgressMessage.set('Submitting vote');
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-vote-project/${solutionId}`,
       {
@@ -218,11 +218,14 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   return (
     <div className="mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5">
       {leavingRoadmapModal}
-      <div className="relative mb-5 hidden sm:block">
-        <div className="flex items-center justify-between gap-2">
+      <div className="relative mb-5 hidden items-center justify-between sm:flex">
+        <div>
           <h1 className="mb-1 text-xl font-semibold">
             {projectData.title} Solutions
           </h1>
+          <p className="text-sm text-gray-500">{projectData.description}</p>
+        </div>
+        {!isLoading && (
           <SelectLanguages
             projectId={projectId}
             selectedLanguage={selectedLanguage}
@@ -233,8 +236,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
               }));
             }}
           />
-        </div>
-        <p className="text-sm text-gray-500">{projectData.description}</p>
+        )}
       </div>
 
       {isLoading ? (

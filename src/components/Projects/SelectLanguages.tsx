@@ -1,42 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { cn } from '../../lib/classname';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-
-const languageColors = new Map([
-  ['JavaScript', 'bg-[#f1e05a]'],
-  ['Python', 'bg-[#3572A5]'],
-  ['Java', 'bg-[#b07219]'],
-  ['HTML', 'bg-[#e34c26]'],
-  ['CSS', 'bg-[#563d7c]'],
-  ['C++', 'bg-[#f34b7d]'],
-  ['C', 'bg-[#555555]'],
-  ['Go', 'bg-[#00ADD8]'],
-  ['TypeScript', 'bg-[#2b7489]'],
-  ['Shell', 'bg-[#89e051]'],
-  ['Ruby', 'bg-[#701516]'],
-  ['PHP', 'bg-[#4F5D95]'],
-  ['Rust', 'bg-[#dea584]'],
-  ['Swift', 'bg-[#ffac45]'],
-  ['Kotlin', 'bg-[#A97BFF]'],
-  ['Dart', 'bg-[#00B4AB]'],
-  ['Scala', 'bg-[#c22d40]'],
-  ['Objective-C', 'bg-[#438eff]'],
-  ['Vue', 'bg-[#41b883]'],
-  ['R', 'bg-[#198CE7]'],
-  ['Perl', 'bg-[#0298c3]'],
-  ['Haskell', 'bg-[#5e5086]'],
-  ['Lua', 'bg-[#000080]'],
-  ['Matlab', 'bg-[#e16737]'],
-  ['Vim script', 'bg-[#199f4b]'],
-  ['Elixir', 'bg-[#6e4a7e]'],
-  ['Erlang', 'bg-[#B83998]'],
-  ['Clojure', 'bg-[#db5855]'],
-  ['Markdown', 'bg-[#083fa1]'],
-  ['TeX', 'bg-[#3D6117]'],
-  ['SQL', 'bg-[#e38c00]'],
-]);
+import { ChevronDown, X } from 'lucide-react';
 
 type SelectLanguagesProps = {
   projectId: string;
@@ -77,11 +43,21 @@ export function SelectLanguages(props: SelectLanguagesProps) {
   return (
     <div className="relative flex">
       <button
-        className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-900"
+        className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pl-3 pr-2 text-xs font-medium text-gray-900"
         onClick={() => setIsOpen(!isOpen)}
       >
         {selectedLanguage || 'Select Language'}
+
+        <ChevronDown className="ml-1 h-4 w-4" />
       </button>
+      {selectedLanguage && (
+        <button
+          className="ml-1 text-red-500 text-xs border border-red-500 rounded-md px-2 py-1"
+          onClick={() => onSelectLanguage('')}
+        >
+          Clear
+        </button>
+      )}
 
       {isOpen && (
         <div
