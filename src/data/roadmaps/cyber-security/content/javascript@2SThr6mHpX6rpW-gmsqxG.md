@@ -40,7 +40,6 @@ Here are some resources to sharpen your JavaScript programming skills:
 
 - [@article@Mozilla Developer Network (MDN) JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [@article@W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
-- [@article@freeCodeCamp's JavaScript Curriculum](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 - [@article@Eloquent JavaScript: A Modern Introduction to Programming](https://eloquentjavascript.net/) (book)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
 

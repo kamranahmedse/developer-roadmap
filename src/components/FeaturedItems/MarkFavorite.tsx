@@ -103,7 +103,7 @@ export function MarkFavorite({
         className || 'absolute right-1.5 top-1.5 z-30 focus:outline-0'
       }`}
     >
-      {isLoading ? <Spinner /> : <FavoriteIcon isFavorite={isFavorite} />}
+      {isLoading ? <Spinner isDualRing={false} /> : <FavoriteIcon isFavorite={isFavorite} />}
     </button>
   );
 }

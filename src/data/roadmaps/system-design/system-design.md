@@ -8,6 +8,14 @@ title: 'System Design'
 description: 'Everything you need to know about designing large scale systems.'
 isNew: false
 hasTopics: true
+question:
+  title: 'What is System Design?'
+  description: |
+    System design involves creating a detailed blueprint of a system's architecture, components, modules, interfaces, and data to fulfill specific requirements. It includes outlining a structured plan for building, implementing, and maintaining the system, ensuring it meets functional, technical, and business needs. This process addresses considerations of scalability, performance, security, and usability, aiming to develop an efficient and effective solution.
+    
+    ## What are the components of System Design?
+    Some of the the major components that play a crucial role in designing a system include Programming language choice, Databases, CDNs, Load Balancers, Caches, Proxies, Queues, Web Servers, Application Servers, Search Engines, Logging and Monitoring Systems, Scaling, and more. Key considerations include scalability, architectural patterns, and security measures to safeguard the system. These elements collectively contribute to building a robust, efficient, and secure system, though this list represents just a subset of the comprehensive factors involved in system design.
+
 dimensions:
   width: 968
   height: 2848.5

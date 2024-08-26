@@ -18,7 +18,6 @@ There are several skills that are generally considered to be important for worki
 
 For more information, visit the following links:
 
-- [@article@A Step-by-Step Approach to Learn OOP](https://www.geeksforgeeks.org/a-step-by-step-approach-to-learn-object-oriented-programming/)
 - [@video@Asp.net - Complete Tutorial](https://www.youtube.com/watch?v=kdPtNMb8tPw)
 - [@video@Learn Cloud Computing](https://www.youtube.com/watch?v=eWwK2FKWp0g)
 - [@video@DevOps Course for Beginners](https://www.youtube.com/watch?v=hQcFE0RD0cQ)

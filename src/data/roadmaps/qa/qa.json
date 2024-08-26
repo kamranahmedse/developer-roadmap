@@ -1386,7 +1386,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Tester Mindset",
+        "label": "QA Mindset",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

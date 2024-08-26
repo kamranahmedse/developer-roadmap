@@ -25,7 +25,7 @@ function linkGroupPathToId(filePath: string): string {
  * @returns Promisifed linkGroup files
  */
 export async function getAllLinkGroups(): Promise<LinkGroupFileType[]> {
-  const linkGroups = await import.meta.glob<LinkGroupFileType>(
+  const linkGroups = import.meta.glob<LinkGroupFileType>(
     '/src/data/link-groups/*.md',
     {
       eager: true,

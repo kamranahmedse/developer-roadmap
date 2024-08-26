@@ -4,7 +4,7 @@ export function LoadingRoadmaps() {
       {new Array(21).fill(0).map((_, index) => (
         <li
           key={index}
-          className="h-[95px] animate-pulse rounded-md border bg-gray-100"
+          className="h-[175px] animate-pulse rounded-md border bg-gray-200"
         />
       ))}
     </ul>

@@ -44,7 +44,7 @@ export interface TeamMemberItem extends TeamMemberDocument {
   hasProgress: boolean;
 }
 
-const MAX_MEMBER_COUNT = 100;
+const MAX_MEMBER_COUNT = 200;
 
 export function TeamMembersPage() {
   const { t: teamId } = getUrlParams();

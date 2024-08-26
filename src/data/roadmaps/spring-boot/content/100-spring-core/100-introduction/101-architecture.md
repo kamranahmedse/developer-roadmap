@@ -11,5 +11,4 @@ For more information, visit the following links:
 
 - [@article@Spring Boot Architecture](https://www.javatpoint.com/spring-boot-architecture)
 - [@article@Spring Boot Architecture – Detailed Explanation](https://www.interviewbit.com/blog/spring-boot-architecture)
-- [@article@Spring Boot – Architecture](https://www.geeksforgeeks.org/spring-boot-architecture/)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

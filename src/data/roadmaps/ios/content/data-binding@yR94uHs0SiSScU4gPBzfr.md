@@ -5,5 +5,6 @@ SwiftUI data binding is a mechanism that creates a two-way connection between a 
 Learn more from the following resources:
 
 - [@official@Binding](https://developer.apple.com/documentation/swiftui/binding)
+- [@official@Apple Tutorials: Passing data with bindings](https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings)
 - [@video@How to use @Binding property wrapper in SwiftUI](https://www.youtube.com/watch?v=btDMzB5x2Gs)
 - [@video@SwiftUI - @Binding Property Wrapper Explained](https://www.youtube.com/watch?v=lgtB3WLEOYg)

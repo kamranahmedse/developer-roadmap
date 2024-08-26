@@ -5,6 +5,5 @@ Hamiltonian paths are paths that visit every node in a graph exactly once. They 
 Visit the following resources to learn more:
 
 - [@article@Hamiltonian Path](https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/tutorial/)
-- [@article@Hamiltonian Cycle | Backtracking-6](https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/)
 - [@article@Hamiltonian Paths and Cycles](https://medium.com/stamatics-iit-kanpur/hamiltonian-paths-and-cycles-4f233bfbc53a)
 - [@article@Hamiltonian Paths - Lecture 7](https://people.csail.mit.edu/virgi/6.s078/lecture17.pdf)

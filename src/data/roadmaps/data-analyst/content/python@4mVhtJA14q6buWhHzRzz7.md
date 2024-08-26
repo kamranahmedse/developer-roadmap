@@ -1,3 +1,0 @@
-# Python as a Programming Language
-
-Python is a powerful, flexible, open-source programming language that is incredibly impactful in the realm of data analysis. As a data analyst, you are typically required to clean, interpret, visualize and present data, and Python, being versatile and well-supported, has libraries and frameworks like Pandas, Numpy, Matplotlib, and Seaborn which make these tasks easier and efficient. It is a favorite language among data analysts and data scientists due to its simplicity to learn and readability. Understanding Python can greatly enhance the capabilities and effectiveness of a data analyst.

@@ -52,7 +52,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
   return (
     <button
       className={cn(
-        'flex items-center gap-1 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-70',
+        'flex items-center gap-1 text-xs sm:text-sm font-medium disabled:cursor-not-allowed disabled:opacity-70',
         isCopied ? 'text-green-500' : 'text-gray-500 hover:text-black',
         className
       )}

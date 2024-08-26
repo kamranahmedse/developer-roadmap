@@ -7,7 +7,7 @@ import { MapIcon, Users2 } from 'lucide-react';
 import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { type ReactNode, useState } from 'react';
-import { AIAnnouncement } from '../AIAnnouncement.tsx';
+import { FeatureAnnouncement } from '../FeatureAnnouncement.tsx';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -97,7 +97,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
       <p className="mb-7 mt-2 text-sm">
-        <AIAnnouncement />
+        <FeatureAnnouncement />
       </p>
       {isCreatingRoadmap && (
         <CreateRoadmapModal

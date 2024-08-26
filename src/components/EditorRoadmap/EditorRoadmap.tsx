@@ -68,14 +68,13 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
             : undefined
         }
         className={
-          'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+          'mt-5 flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
         }
       >
         <div className="flex w-full justify-center">
           <Spinner
-            innerFill="#2563eb"
-            outerFill="#E5E7EB"
             className="h-6 w-6 animate-spin sm:h-12 sm:w-12"
+            isDualRing={false}
           />
         </div>
       </div>
@@ -92,7 +91,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
           : undefined
       }
       className={
-        'flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
+        'mt-5 flex aspect-[var(--aspect-ratio)] w-full flex-col justify-center'
       }
     >
       <EditorRoadmapRenderer

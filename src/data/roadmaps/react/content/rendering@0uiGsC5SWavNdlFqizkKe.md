@@ -13,4 +13,5 @@ This process is known as reconciliation, and it is an important aspect of how Re
 
 Visit the following resources to learn more:
 
-- [@article@React.js under the Hood](https://www.freecodecamp.org/news/react-under-the-hood/)
+- [@official@Rendering - Official Docs](https://legacy.reactjs.org/docs/rendering-elements.html)
+- [@article@Rendering in React - ui.dev](https://ui.dev/why-react-renders)

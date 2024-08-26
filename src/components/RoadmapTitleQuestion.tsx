@@ -1,4 +1,10 @@
-import { ChevronDown, ChevronUp, GraduationCap } from 'lucide-react';
+import {
+  ChevronDown,
+  ChevronUp,
+  CircleHelp,
+  GraduationCap,
+  Info,
+} from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click';
 import { markdownToHtml } from '../lib/markdown';
@@ -19,23 +25,23 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
   });
 
   return (
-    <div className="relative hidden border-t text-sm font-medium sm:block">
+    <div className="relative hidden rounded-b-[5px] border-t bg-white text-sm font-medium hover:bg-gray-50 sm:block">
       {isAnswerVisible && (
         <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"></div>
       )}
       <h2
-        className="z-50 flex cursor-pointer items-center px-2 py-2.5 text-base font-medium"
+        className="z-50 flex cursor-pointer select-none items-center px-2 py-2 text-sm font-medium"
         aria-expanded={isAnswerVisible ? 'true' : 'false'}
         onClick={(e) => {
           e.preventDefault();
           setIsAnswerVisible(!isAnswerVisible);
         }}
       >
-        <span className="flex flex-grow items-center">
-          <GraduationCap className="mr-2 inline-block h-6 w-6" />
+        <span className="flex flex-grow select-none items-center">
+          <Info className="mr-1.5 inline-block h-4 w-4" strokeWidth={2.5} />
           {question}
         </span>
-        <span className="flex-shrink-0 text-gray-400">
+        <span className="relative -top-px flex-shrink-0 text-gray-400">
           <ChevronDown className={`inline-block h-5 w-5`} />
         </span>
       </h2>
@@ -48,14 +54,14 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
       >
         {isAnswerVisible && (
           <h2
-            className="flex cursor-pointer items-center border-b px-[7px] py-[9px] text-base font-medium"
+            className="flex cursor-pointer select-none items-center border-b px-[7px] py-[9px] text-base font-medium"
             onClick={() => setIsAnswerVisible(false)}
           >
             <span className="flex flex-grow items-center">
-              <GraduationCap className="mr-2 inline-block h-6 w-6" />
+              <Info className="mr-2 inline-block h-4 w-4" strokeWidth={2.5} />
               {question}
             </span>
-            <span className="flex-shrink-0 text-gray-400">
+            <span className="relative -top-px flex-shrink-0 text-gray-400">
               <ChevronUp className={`inline-block h-5 w-5`} />
             </span>
           </h2>

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@video@Learning Functional Programming](https://youtube.com/watch?v=e-5obm1G_FY)
 - [@article@Functional Programming with JavaScript](https://www.telerik.com/blogs/functional-programming-javascript)
-- [@article@What is Functional Programming?](https://www.freecodecamp.org/news/functional-programming-in-javascript/)

@@ -4,4 +4,3 @@ The SQL commands that deals with the manipulation of data present in the databas
 
 Visit the following resources to learn more:
 
-- [@article@SQL | DDL, DQL, DML, DCL and TCL Commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)

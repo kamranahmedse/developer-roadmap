@@ -10,4 +10,3 @@ Visit the following resources to learn more:
 
 - [@article@What is the difference between lock, mutex and semaphore?](https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore)
 - [@article@What is a Semaphore](https://stackoverflow.com/questions/34519/what-is-a-semaphore/40238#40238)
-- [@article@Mutex vs Semaphore](https://www.geeksforgeeks.org/mutex-vs-semaphore/)

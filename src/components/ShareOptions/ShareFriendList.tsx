@@ -206,11 +206,11 @@ export function ShareFriendList(props: ShareFriendListProps) {
       {friends.length === 0 && !isLoading && (
         <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
           <Users2 className="mb-3 h-10 w-10 text-gray-300" />
-          <p className="font-semibold text-gray-500">
+          <p className="font-medium text-gray-500">
             You do not have any friends yet. <br />{' '}
             <a
               target="_blank"
-              className="underline underline-offset-2"
+              className="underline underline-offset-2 text-sm"
               href={`/account/friends`}
             >
               Invite your friends to share roadmaps with.

@@ -5,5 +5,4 @@ Hibernate is a Java framework that provides an object-relational mapping to an o
 For more resources, visit the following links:
 
 - [@article@Difference Between Spring vs Hibernate](https://www.educba.com/spring-vs-hibernate/)
-- [@article@Spring Boot – Integrating Hibernate and JPA](https://www.geeksforgeeks.org/spring-boot-integrating-hibernate-and-jpa/)
 - [@article@Spring Hibernate Integration Example](https://www.digitalocean.com/community/tutorials/spring-hibernate-integration-example-tutorial)

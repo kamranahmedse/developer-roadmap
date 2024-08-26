@@ -25,3 +25,7 @@ _Zero Trust_ is a modern security framework that addresses the ever-evolving thr
 - **Adaptability**: A Zero Trust approach can be applied to a wide range of environments and can be tailored to meet the specific security needs and objectives of an organization.
 
 By implementing a Zero Trust framework, an organization can strengthen its security posture, safeguard against internal and external threats, and maintain control over their critical assets in an increasingly interconnected world.
+
+Visit the following resources to learn more:
+
+- [@video@Zero Trust - Professor Messer](https://www.youtube.com/watch?v=zC_Pndpg8-c)

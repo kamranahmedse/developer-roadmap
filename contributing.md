@@ -4,6 +4,7 @@ First of all thank you for considering to contribute. Please look at the details
 
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
+- [Adding Projects](#adding-projects)
 - [Adding Content](#adding-content)
 - [Guidelines](#guidelines)
 
@@ -21,6 +22,28 @@ For the existing roadmaps, please follow the details listed for the nature of co
 - **Adding or Removing Nodes** — Please open an [issue](https://github.com/kamranahmedse/developer-roadmap/issues) with your suggestion.
 
 **Note:** Please note that our goal is <strong>not to have the biggest list of items</strong>. Our goal is to list items or skills most relevant today.
+
+## Adding Projects
+
+If you have a project idea that you think we should add to the roadmap, feel free to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
+
+The detailed format for issue should be as follows:
+
+```
+## What is this project about?
+
+(Add introduction to the project)
+
+## Skills this Project Covers
+
+(Comma separated list of skills e.g. Programming Knowledge, Database,)
+
+## Requirements
+
+( Detailed list of requirements, i.e. input, output, an hints to help build this etc)
+```
+
+Have a look at this project to get an idea of [what we are looking for](https://roadmap.sh/projects/github-user-activity).
 
 ## Adding Content
 
@@ -76,8 +99,6 @@ It's important to add a valid type, this will help us categorize the content and
 - <p><strong>Write meaningful commit messages</strong><br >
 
   Meaningful commit messages help speed up the review process as well as help other contributors in gaining a good overview of the repositories commit history without having to dive into every commit.
-  
-  (See the following guide on how to write good [commit messages](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)).
 
   </p>
 - <p><strong>Look at the existing issues/pull requests before opening new ones</strong></p>

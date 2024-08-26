@@ -1,6 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/nodejs.json'
 pdfUrl: '/pdfs/roadmaps/nodejs.pdf'
+renderer: 'editor'
 order: 6
 briefTitle: 'Node.js'
 briefDescription: 'Step by step guide to becoming a Node.js developer in 2024'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2474.06
+  height: 2380
 schema:
   headline: 'Node.js Roadmap'
   description: 'Learn Node.js with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

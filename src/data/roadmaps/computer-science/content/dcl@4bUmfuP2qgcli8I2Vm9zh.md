@@ -4,4 +4,3 @@ DCL includes commands such as GRANT and REVOKE which mainly deal with the rights
 
 Visit the following resources to learn more:
 
-- [@article@SQL | DDL, DQL, DML, DCL and TCL Commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)

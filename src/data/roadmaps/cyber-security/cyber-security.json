@@ -1749,7 +1749,7 @@
       "focusable": true
     },
     {
-      "id": "BqvijNoRzSGYLCMP-6hhr",
+      "id": "AAo7DXB7hyBzO6p05gx1i",
       "type": "subtopic",
       "position": {
         "x": -390.0291449445003,
@@ -1757,7 +1757,7 @@
       },
       "selected": false,
       "data": {
-        "label": "CISSP",
+        "label": "CEH",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2045,7 +2045,7 @@
       "selectable": true
     },
     {
-      "id": "AAo7DXB7hyBzO6p05gx1i",
+      "id": "BqvijNoRzSGYLCMP-6hhr",
       "type": "subtopic",
       "position": {
         "x": -389.24003999212795,
@@ -2053,7 +2053,7 @@
       },
       "selected": false,
       "data": {
-        "label": "CEH",
+        "label": "CISSP",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -4014,7 +4014,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Network Topologies",
+        "label": "Network Protocols",
         "href": "",
         "color": "#000000",
         "style": {
@@ -4203,7 +4203,7 @@
       },
       "selected": false,
       "data": {
-        "label": "proxmax",
+        "label": "proxmox",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -7461,7 +7461,7 @@
       "id": "10qbxX8DCrfyH7tgYexxQ",
       "type": "subtopic",
       "position": {
-        "x": -388.85457362646355,
+        "x": -385.24003999212795,
         "y": 2743.5549352589032
       },
       "selected": false,
@@ -7474,14 +7474,14 @@
         }
       },
       "zIndex": 999,
-      "width": 317,
+      "width": 100,
       "height": 49,
       "style": {
-        "width": 317,
+        "width": 100,
         "height": 49
       },
       "positionAbsolute": {
-        "x": -388.85457362646355,
+        "x": -385.24003999212795,
         "y": 2743.5549352589032
       },
       "dragging": false,
@@ -8053,10 +8053,10 @@
         }
       },
       "zIndex": 999,
-      "width": 143,
+      "width": 145,
       "height": 49,
       "style": {
-        "width": 143,
+        "width": 145,
         "height": 49
       },
       "positionAbsolute": {
@@ -8447,7 +8447,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Firwall & Nextgen Firewall",
+        "label": "Firewall & Nextgen Firewall",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -8455,22 +8455,26 @@
         }
       },
       "zIndex": 999,
-      "width": 242,
+      "width": 254,
       "height": 49,
-      "style": {},
+      "style": {
+        "width": 254,
+        "height": 49
+      },
       "positionAbsolute": {
         "x": -42.979485449910044,
         "y": 3036.404798051745
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "resizing": false
     },
     {
       "id": "l5EnhOCnkN-RKvgrS9ylH",
       "type": "subtopic",
       "position": {
-        "x": 203.02051455009007,
+        "x": 217.02051455009007,
         "y": 3036.404798051745
       },
       "selected": false,
@@ -8483,14 +8487,14 @@
         }
       },
       "zIndex": 999,
-      "width": 65,
+      "width": 60,
       "height": 49,
       "style": {
-        "width": 65,
+        "width": 60,
         "height": 49
       },
       "positionAbsolute": {
-        "x": 203.02051455009007,
+        "x": 217.02051455009007,
         "y": 3036.404798051745
       },
       "dragging": false,
@@ -8501,7 +8505,7 @@
       "id": "LIPtxl_oKZRcbvXT4EdNf",
       "type": "subtopic",
       "position": {
-        "x": 272.02051455009007,
+        "x": 280.02051455009007,
         "y": 3036.404798051745
       },
       "selected": false,
@@ -8514,14 +8518,14 @@
         }
       },
       "zIndex": 999,
-      "width": 70,
+      "width": 60,
       "height": 49,
       "style": {
-        "width": 70,
+        "width": 60,
         "height": 49
       },
       "positionAbsolute": {
-        "x": 272.02051455009007,
+        "x": 280.02051455009007,
         "y": 3036.404798051745
       },
       "dragging": false,
@@ -8546,10 +8550,10 @@
         }
       },
       "zIndex": 999,
-      "width": 70,
+      "width": 60,
       "height": 49,
       "style": {
-        "width": 70,
+        "width": 60,
         "height": 49
       },
       "positionAbsolute": {
@@ -8564,12 +8568,12 @@
       "id": "jWl1VWkZn3n1G2eHq6EnX",
       "type": "subtopic",
       "position": {
-        "x": 31.02051455009007,
+        "x": 21.02051455009007,
         "y": 3089.404798051745
       },
       "selected": false,
       "data": {
-        "label": "Host Based Firwall",
+        "label": "Host Based Firewall",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -8577,11 +8581,11 @@
         }
       },
       "zIndex": 999,
-      "width": 188,
+      "width": 198,
       "height": 49,
       "style": {},
       "positionAbsolute": {
-        "x": 31.02051455009007,
+        "x": 21.02051455009007,
         "y": 3089.404798051745
       },
       "dragging": false,
@@ -11280,12 +11284,12 @@
       "id": "_RnuQ7952N8GWZfPD60sJ",
       "type": "topic",
       "position": {
-        "x": -372.36545692599566,
+        "x": -278.8699925629752,
         "y": 4027.724035563796
       },
       "selected": false,
       "data": {
-        "label": "Programming Skills (Optional but Recommended)",
+        "label": "Programming Skills",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -11293,22 +11297,26 @@
         }
       },
       "zIndex": 999,
-      "width": 424,
+      "width": 233,
       "height": 49,
-      "style": {},
+      "style": {
+        "width": 233,
+        "height": 49
+      },
       "positionAbsolute": {
-        "x": -372.36545692599566,
+        "x": -278.8699925629752,
         "y": 4027.724035563796
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "resizing": false
     },
     {
       "id": "XiHvGy--OkPFfJeKA6-LP",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 3925.724035563796
       },
       "selected": false,
@@ -11327,7 +11335,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 3925.724035563796
       },
       "dragging": false,
@@ -11338,7 +11346,7 @@
       "id": "jehVvdz8BnruKjqHMKu5v",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 3978.724035563796
       },
       "selected": false,
@@ -11357,7 +11365,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 3978.724035563796
       },
       "dragging": false,
@@ -11368,7 +11376,7 @@
       "id": "2SThr6mHpX6rpW-gmsqxG",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4031.724035563796
       },
       "selected": false,
@@ -11387,7 +11395,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4031.724035563796
       },
       "dragging": false,
@@ -11398,7 +11406,7 @@
       "id": "8jj9hpe9jQIgCc8Txyw3O",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4084.724035563796
       },
       "selected": false,
@@ -11417,7 +11425,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4084.724035563796
       },
       "dragging": false,
@@ -11428,7 +11436,7 @@
       "id": "tao0Bb_JR0Ubl62HO8plp",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4137.724035563796
       },
       "selected": false,
@@ -11447,7 +11455,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4137.724035563796
       },
       "dragging": false,
@@ -11458,7 +11466,7 @@
       "id": "paY9x2VJA98FNGBFGRXp2",
       "type": "subtopic",
       "position": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4190.724035563796
       },
       "selected": false,
@@ -11477,7 +11485,7 @@
         "width": 134
       },
       "positionAbsolute": {
-        "x": 164.32253339825286,
+        "x": 104.32253339825286,
         "y": 4190.724035563796
       },
       "dragging": false,
@@ -11586,6 +11594,66 @@
       },
       "selectable": true,
       "focusable": true
+    },
+    {
+      "id": "Jd9t8e9r29dHRsN40dDOk",
+      "type": "subtopic",
+      "position": {
+        "x": -281.24003999212795,
+        "y": 2743.5549352589032
+      },
+      "selected": false,
+      "data": {
+        "label": "GTFOBINS",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -281.24003999212795,
+        "y": 2743.5549352589032
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false
+    },
+    {
+      "id": "Rnpx7VkhrBkSQTni6UuTR",
+      "type": "subtopic",
+      "position": {
+        "x": -177.24003999212795,
+        "y": 2743.5549352589032
+      },
+      "selected": false,
+      "data": {
+        "label": "WADCOMS",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 100,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -177.24003999212795,
+        "y": 2743.5549352589032
+      },
+      "dragging": false,
+      "style": {
+        "width": 100,
+        "height": 49
+      },
+      "resizing": false
     }
   ],
   "edges": [

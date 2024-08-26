@@ -7,6 +7,10 @@
     @apply mx-auto !max-w-[830px] px-4;
   }
 
+  .container-lg {
+    @apply mx-auto !max-w-[968px] px-4;
+  }
+
   .badge {
     @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white;
   }
@@ -70,6 +74,16 @@ a > code:before {
     )
     hsla(203, 11%, 95%, 0.4);
 }
+.striped-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(0, 0%, 0%, 0.025) 5px,
+    hsla(0, 0%, 0%, 0.025) 10px
+  );
+  background-size: 200% 200%;
+}
 
 .striped-loader {
   background-image: repeating-linear-gradient(
@@ -88,8 +102,8 @@ a > code:before {
     -45deg,
     transparent,
     transparent 5px,
-    hsla(0, 0%, 0%, 0.20) 5px,
-    hsla(0, 0%, 0%, 0.20) 10px
+    hsla(0, 0%, 0%, 0.2) 5px,
+    hsla(0, 0%, 0%, 0.2) 10px
   );
   background-size: 200% 200%;
   animation: barberpole 15s linear infinite;

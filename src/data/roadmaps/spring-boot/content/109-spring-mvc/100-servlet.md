@@ -6,4 +6,3 @@ For more information, visit the following links:
 
 - [@article@DispatcherServlet and web.xml in Spring Boot](https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml)
 - [@article@The DispatcherServlet](https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html)
-- [@article@What is Dispatcher Servlet in Spring?](https://www.geeksforgeeks.org/what-is-dispatcher-servlet-in-spring)

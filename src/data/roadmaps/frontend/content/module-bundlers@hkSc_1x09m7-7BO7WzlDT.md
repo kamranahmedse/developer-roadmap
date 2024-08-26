@@ -6,5 +6,4 @@ It usually starts with an entry file, and from there it bundles up all of the co
 
 Visit the following resources to learn more:
 
-- [@article@Let’s learn how module bundlers work](https://www.freecodecamp.org/news/lets-learn-how-module-bundlers-work-and-then-write-one-ourselves-b2e3fe6c88ae/)
 - [@video@Module Bundlers Explained](https://www.youtube.com/watch?v=5IG4UmULyoA)

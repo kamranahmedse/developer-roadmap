@@ -4,4 +4,3 @@ DQL statements are used for performing queries on the data within schema objects
 
 Visit the following resources to learn more:
 
-- [@article@SQL | DDL, DQL, DML, DCL and TCL Commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)

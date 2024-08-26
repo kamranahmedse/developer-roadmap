@@ -30,6 +30,7 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
+import { lockBodyScroll } from '../../lib/dom.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
@@ -262,6 +263,8 @@ export function TopicDetail(props: TopicDetailProps) {
 
   useEffect(() => {
     if (isActive) topicRef?.current?.focus();
+
+    lockBodyScroll(isActive);
   }, [isActive]);
 
   if (!isActive) {
@@ -366,7 +369,7 @@ export function TopicDetail(props: TopicDetailProps) {
                         className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                       >
                         <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                        Help us Improve this Content
+                        Help us Write this Content
                       </a>
                     </div>
                   )}

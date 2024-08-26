@@ -6,6 +6,5 @@ In a Spring MVC application that uses JSPs, the view component of the MVC patter
 
 Visit the following links for more resources:
 
-- [@article@Spring MVC with JSP View](https://www.geeksforgeeks.org/spring-mvc-with-jsp-view/)
 - [@article@Spring Boot With JavaServer Pages (JSP)](https://www.baeldung.com/spring-boot-jsp)
 - [@official@Spring MVC: from JSP and Tiles to Thymeleaf](https://spring.io/blog/2012/10/30/spring-mvc-from-jsp-and-tiles-to-thymeleaf/)

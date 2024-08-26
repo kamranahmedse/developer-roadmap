@@ -9,5 +9,4 @@ NOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or
 Visit the following resources to learn more:
 
 - [@article@Official Docs](https://developer.chrome.com/docs/devtools/overview/)
-- [@article@Mastering Chrome Dev Tools](https://www.freecodecamp.org/news/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3/)
 - [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)

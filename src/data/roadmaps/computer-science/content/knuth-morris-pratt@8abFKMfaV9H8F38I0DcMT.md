@@ -9,7 +9,6 @@ Knuth morris pratt is a string searching algorithm that uses a precomputed array
 
 Visit the following resources to learn more:
 
-- [@article@KMP Algorithm for Pattern Searching](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 - [@article@The Knuth-Morris-Pratt (KMP)Algorithm](https://www.javatpoint.com/daa-knuth-morris-pratt-algorithm)
 - [@video@9.1 Knuth-Morris-Pratt KMP String Matching Algorithm](https://www.youtube.com/watch?v=V5-7GzOfADQ)
 - [@course@Knuth-Morris Pratt](https://www.coursera.org/learn/algorithms-part2/lecture/TAtDr/knuth-morris-pratt)

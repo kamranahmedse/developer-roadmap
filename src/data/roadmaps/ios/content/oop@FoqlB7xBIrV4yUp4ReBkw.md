@@ -5,4 +5,3 @@ Object-Oriented Programming **(OOP)** is a style where code is organized around 
 Learn more from the following resources:
 
 - [@video@Object-oriented Programming in 7 minutes](https://www.youtube.com/watch?v=pTB0EiLXUC8)
-- [@article@What is Object-Oriented Programming?](https://www.freecodecamp.org/news/what-is-object-oriented-programming/)

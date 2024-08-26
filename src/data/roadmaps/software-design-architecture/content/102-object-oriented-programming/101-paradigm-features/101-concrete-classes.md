@@ -6,4 +6,3 @@ Concrete classes are used to provide specific implementation details for a group
 
 Learn more from the following resources:
 
-- [@article@Concrete class in Java](https://www.geeksforgeeks.org/concrete-class-in-java/)

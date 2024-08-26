@@ -1,0 +1,6 @@
+While the specifics will depend on the cloud provider you decide to go with, the generic steps would be the following:
+
+1. **Set up an auto-scaling group**. Create what is usually known as an auto-scaling group, where you configure the minimum and maximum number of instances you can have and their types. Your scaling policies will interact with this group to automate the actions later on.
+2. **Define the scaling policies**. What makes your platform want to scale? Is it traffic? Is it resource allocation? Find the right metric, and configure the policies that will trigger a scale-up or scale-down event on the auto-scaling group you already configured.
+3. **Balance your load**. Now it’s time to set up a load balancer to distribute the traffic amongst all your nodes. 
+4. **Monitor**. Keep a constant monitor over your cluster to understand if your policies are correctly configured, or if you need to adapt and tweak them. Once you’re done with the first 3 steps, this is where you’ll constantly be, as the triggering conditions might change quite often.

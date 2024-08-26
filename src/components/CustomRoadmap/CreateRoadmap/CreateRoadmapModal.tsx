@@ -23,24 +23,44 @@ export const allowedCustomRoadmapType = ['role', 'skill'] as const;
 export type AllowedCustomRoadmapType =
   (typeof allowedCustomRoadmapType)[number];
 
+export const allowedShowcaseStatus = ['visible', 'hidden'] as const;
+export type AllowedShowcaseStatus = (typeof allowedShowcaseStatus)[number];
+
 export interface RoadmapDocument {
   _id?: string;
   title: string;
   description?: string;
   slug?: string;
   creatorId: string;
+  aiRoadmapId?: string;
   teamId?: string;
-  isDiscoverable: boolean;
-  type: AllowedCustomRoadmapType;
+  topicCount: number;
   visibility: AllowedRoadmapVisibility;
   sharedFriendIds?: string[];
   sharedTeamMemberIds?: string[];
+  feedbacks?: {
+    userId: string;
+    email: string;
+    feedback: string;
+  }[];
+  metadata?: {
+    originalRoadmapId?: string;
+    defaultRoadmapId?: string;
+  };
   nodes: any[];
   edges: any[];
+
+  isDiscoverable?: boolean;
+  showcaseStatus?: AllowedShowcaseStatus;
+  ratings: {
+    average: number;
+    breakdown: {
+      [key: number]: number;
+    };
+  };
+
   createdAt: Date;
   updatedAt: Date;
-  canManage: boolean;
-  isCustomResource: boolean;
 }
 
 interface CreateRoadmapModalProps {

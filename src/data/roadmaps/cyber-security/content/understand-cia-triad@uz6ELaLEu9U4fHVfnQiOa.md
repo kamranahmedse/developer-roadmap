@@ -34,4 +34,4 @@ Availability ensures that systems and information are accessible and functional 
 
 In summary, the CIA Triad is an essential aspect of cybersecurity, providing a clear framework to evaluate and implement security measures. By ensuring confidentiality, integrity, and availability, you create a robust and secure environment for your information and systems.
 
-- [@article@What is the CIA Triad (Varonis)?](https://www.varonis.com/blog/cia-triad)
+- [@video@The CIA Triad - Professor Messer](https://www.youtube.com/watch?v=SBcDGb9l6yo)

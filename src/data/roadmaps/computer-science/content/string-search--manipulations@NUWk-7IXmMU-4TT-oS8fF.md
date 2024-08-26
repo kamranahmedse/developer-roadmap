@@ -5,5 +5,3 @@ String search and manipulation is a very important topic in computer science. It
 Visit the following resources to learn more:
 
 - [@article@String-searching algorithm](https://en.wikipedia.org/wiki/String-searching_algorithm)
-- [@article@Pattern Searching](https://www.geeksforgeeks.org/algorithms-gq/pattern-searching/)
-- [@article@Applications of String Matching Algorithms](https://www.geeksforgeeks.org/applications-of-string-matching-algorithms/)

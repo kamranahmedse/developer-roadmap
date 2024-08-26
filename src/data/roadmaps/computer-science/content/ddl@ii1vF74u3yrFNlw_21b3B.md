@@ -4,4 +4,3 @@ DDL or Data Definition Language actually consists of the SQL commands that can b
 
 Visit the following resources to learn more:
 
-- [@article@SQL | DDL, DQL, DML, DCL and TCL Commands](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/)

@@ -5,7 +5,6 @@ Heap sort is a comparison based sorting algorithm. It is similar to selection so
 Visit the following resources to learn more:
 
 - [@article@Heap Sort Algorithm](https://www.programiz.com/dsa/heap-sort)
-- [@article@Heap Sort Algorithm - Geeks for Geeks](https://www.geeksforgeeks.org/heap-sort/)
 - [@video@Heap Sort in 4 Minutes](https://www.youtube.com/watch?v=2DmK_H7IdTo)
 - [@video@Heap Sort Algorithm - MIT](https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s)
 - [@course@Heap Sort Algorithm](https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO)

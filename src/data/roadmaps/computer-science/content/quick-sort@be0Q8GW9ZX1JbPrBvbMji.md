@@ -5,7 +5,6 @@ Quick Sort is a divide and conquer algorithm. It picks an element as pivot and p
 Visit the following resources to learn more:
 
 - [@article@Quick Sort Algorithm](https://www.programiz.com/dsa/quick-sort)
-- [@article@Quick Sort Algorithm - Geeks for Geeks](https://www.geeksforgeeks.org/quick-sort/)
 - [@video@Quick Sort in 4 Minutes](https://www.youtube.com/watch?v=Hoixgm4-P4M&feature=youtu.be)
 - [@article@Quick Sort Implementation in C](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c)
 - [@opensource@Quick Sort Implementation in Python](https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py)

@@ -4,5 +4,4 @@ A tree is non-linear and a hierarchical data structure consisting of a collectio
 
 Visit the following resources to learn more:
 
-- [@article@Tree Data Structure - Geeks for Geeks](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
 - [@video@Tree | Illustrated Data Structures](https://www.youtube.com/watch?v=S2W3SXGPVyU)

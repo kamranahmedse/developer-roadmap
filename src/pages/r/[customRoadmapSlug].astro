@@ -4,13 +4,19 @@ import { CustomRoadmap } from '../../components/CustomRoadmap/CustomRoadmap';
 import { SkeletonRoadmapHeader } from '../../components/CustomRoadmap/SkeletonRoadmapHeader';
 import Loader from '../../components/Loader.astro';
 import ProgressHelpPopup from '../../components/ProgressHelpPopup.astro';
+import { roadmapApi } from '../../api/roadmap';
 
 export const prerender = false;
 
 const { customRoadmapSlug } = Astro.params;
+
+const roadmapClient = roadmapApi(Astro);
+const { response, error } = await roadmapClient.isShowcaseRoadmap(
+  customRoadmapSlug!,
+);
 ---
 
-<BaseLayout title='Roadmaps'>
+<BaseLayout title='Roadmaps' noIndex={!response?.isShowcase}>
   <ProgressHelpPopup />
   <div>
     <div class='flex min-h-[550px] flex-col'>

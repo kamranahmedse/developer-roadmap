@@ -106,6 +106,12 @@ export function clearMigratedRoadmapProgress(
     'computer-science',
     'react',
     'vue',
+    'javascript',
+    'angular',
+    'nodejs',
+    'typescript',
+    'python',
+    'sql',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
@@ -383,6 +389,7 @@ export function refreshProgressCounters() {
     '.clickable-group',
     '[data-type="todo"]',
     '[data-type="topic"]',
+    '[data-type="checklist-item"]',
     '[data-type="subtopic"]',
     '.react-flow__node-topic',
     '.react-flow__node-subtopic',
@@ -446,9 +453,9 @@ export function refreshProgressCounters() {
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {
-    doneCountEls.forEach(
-      (doneCountEl) => (doneCountEl.innerHTML = `${totalDone}`),
-    );
+    doneCountEls.forEach((doneCountEl) => {
+      doneCountEl.innerHTML = `${totalDone + totalSkipped}`;
+    });
   }
 
   const learningCountEls = document.querySelectorAll(

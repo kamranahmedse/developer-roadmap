@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { DiscoverRoadmaps } from '../components/DiscoverRoadmaps/DiscoverRoadmaps';
+
+const title = 'Discover Custom Roadmaps';
+const description =
+  'Explore the community-created roadmaps to learn new skills, tools, and technologies. You can also create your own roadmap and share it with the world.';
+---
+
+<BaseLayout title={title} description={description}>
+  <DiscoverRoadmaps client:load />
+</BaseLayout>

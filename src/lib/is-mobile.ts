@@ -25,3 +25,9 @@ export function isIOS(): boolean {
 export function isMobile(): boolean {
   return isAndroid() || isIOS();
 }
+
+export function isMobileScreen(): boolean {
+  return (
+    typeof window !== 'undefined' && (window.innerWidth < 640 || isMobile())
+  );
+}

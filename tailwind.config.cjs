@@ -7,6 +7,7 @@ module.exports = {
   future: {
     hoverOnlyWhenSupported: true,
   },
+  safelist: ['overflow-hidden'],
   theme: {
     extend: {
       typography: {

@@ -6,6 +6,5 @@ An Incentive is basically a reward given to a Blockchain Miner for speeding up t
 
 Visit the following resources to learn more:
 
-- [@article@Blockchain Incentives to Miners](https://www.geeksforgeeks.org/blockchain-incentives-to-miners/)
 - [@article@Ethereum Consensus Mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
 - [@article@Solana Staking Rewards](https://docs.solana.com/implemented-proposals/staking-rewards)

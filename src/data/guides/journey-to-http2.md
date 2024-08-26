@@ -159,7 +159,7 @@ By now, you must be convinced that why we needed another revision of the HTTP pr
 
 ##### Frames and Streams
 
-HTTP messages are now composed of one or more frames. There is a `HEADERS` frame for the meta data and `DATA` frame for the payload and there exist several other types of frames (`HEADERS`, `DATA`, `RST_STREAM`, `SETTINGS`, `PRIORITY` etc) that you can check through [the `HTTP/2` specs](https:/http2.github.iohttp2-spec/#FrameTypes).
+HTTP messages are now composed of one or more frames. There is a `HEADERS` frame for the meta data and `DATA` frame for the payload and there exist several other types of frames (`HEADERS`, `DATA`, `RST_STREAM`, `SETTINGS`, `PRIORITY` etc) that you can check through [the `HTTP/2` specs](https://httpwg.org/specs/rfc7540.html#iana-frames).
 
 Every `HTTP/2` request and response is given a unique stream ID and it is divided into frames. Frames are nothing but binary pieces of data. A collection of frames is called a Stream. Each frame has a stream id that identifies the stream to which it belongs and each frame has a common header. Also, apart from stream ID being unique, it is worth mentioning that, any request initiated by client uses odd numbers and the response from server has even numbers stream IDs.
 
@@ -197,6 +197,6 @@ There was extensive discussion on whether security (through `TLS`) should be mad
 
 `HTTP/2` is here and it has already [surpassed SPDY in adaption](https://caniuse.com/#search=http2) which is gradually increasing. `HTTP/2` has alot to offer in terms of performance gain and it is about time we should start using it.
 
-For anyone interested in further details here is the [link to specs](https:/http2.github.iohttp2-spec) and a link [demonstrating the performance benefits of `HTTP/2`](https://www.http2demo.io/).
+For anyone interested in further details here is the [link to specs](https://httpwg.org/specs/rfc9113.html) and a link [demonstrating the performance benefits of `HTTP/2`](https://www.http2demo.io/).
 
 And that about wraps it up. Until next time! stay tuned.

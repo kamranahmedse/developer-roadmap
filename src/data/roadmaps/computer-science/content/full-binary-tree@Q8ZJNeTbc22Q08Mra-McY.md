@@ -5,4 +5,3 @@ A full Binary tree is a special type of binary tree in which every parent node/i
 Visit the following resources to learn more:
 
 - [@article@Full Binary Tree](https://www.programiz.com/dsa/full-binary-tree)
-- [@article@Types of Binary Tree](https://www.geeksforgeeks.org/types-of-binary-tree/)

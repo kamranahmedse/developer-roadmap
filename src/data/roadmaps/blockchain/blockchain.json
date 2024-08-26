@@ -1504,7 +1504,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Ehereum",
+        "label": "Ethereum",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2864,7 +2864,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Centralized Storage",
+        "label": "Decentralized Storage",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -5463,7 +5463,7 @@
       "selected": false,
       "data": {
         "label": "Rust",
-        "href": "https://roadmap.sh/python",
+        "href": "https://roadmap.sh/rust",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {
@@ -5498,7 +5498,7 @@
       "selected": false,
       "data": {
         "label": "Backend",
-        "href": "https://roadmap.sh/javascript",
+        "href": "https://roadmap.sh/backend",
         "color": "#FFFFFf",
         "backgroundColor": "#4136D4",
         "style": {

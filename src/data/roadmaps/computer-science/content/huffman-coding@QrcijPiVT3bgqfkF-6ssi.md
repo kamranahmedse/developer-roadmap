@@ -5,5 +5,4 @@ Huffman coding is a lossless data compression algorithm. The idea is to assign v
 Visit the following resources to learn more:
 
 - [@article@Huffman Coding](https://www.programiz.com/dsa/huffman-coding)
-- [@article@Huffman Coding | Greedy Algo-3](https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/)
 - [@video@Huffman Coding - Greedy Method](https://www.youtube.com/watch?v=co4_ahEDCho)

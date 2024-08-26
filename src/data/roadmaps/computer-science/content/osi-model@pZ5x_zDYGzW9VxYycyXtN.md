@@ -5,6 +5,4 @@ The OSI and TCP/IP model is used to help the developer to design their system fo
 Visit the following resources to learn more:
 
 - [@article@Cloudflare - What is the OSI model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
-- [@article@Geeksforgeeks - Layers of OSI model](https://www.geeksforgeeks.org/layers-of-osi-model/)
-- [@article@Geeksforgeeks - TCP/IP model](https://www.geeksforgeeks.org/tcp-ip-model/)
 - [@video@TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)

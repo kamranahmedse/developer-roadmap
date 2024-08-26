@@ -7,7 +7,6 @@ Visit the following resources to learn more:
 - [@article@Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html)
 - [@article@W3Schools: Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [@article@How To Write Semantic HTML](https://hackernoon.com/how-to-write-semantic-html-dkq3ulo)
-- [@article@HTML Best Practices – How to Build a Better HTML-Based Website](https://www.freecodecamp.org/news/html-best-practices/)
 - [@article@Semantic HTML: What It Is and How It Improves Your Site](https://blog.hubspot.com/website/semantic-html)
 - [@article@Semantic Markup](https://html.com/semantic-markup)
 - [@article@Semantic HTML - web.dev](https://web.dev/learn/html/semantic-html/)

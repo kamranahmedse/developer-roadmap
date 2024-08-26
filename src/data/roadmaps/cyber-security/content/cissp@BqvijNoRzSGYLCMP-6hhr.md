@@ -36,3 +36,11 @@ Obtaining the CISSP certification comes with numerous benefits, such as:
 - Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.
 - Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.
 - Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.
+
+Learn more from the following resources
+
+- [@official@ISC2 CISSP](https://www.isc2.org/certifications/cissp)
+- [@official@ISC2 CISSP - Official Study Guide](https://www.wiley.com/en-us/ISC2+CISSP+Certified+Information+Systems+Security+Professional+Official+Study+Guide%2C+10th+Edition-p-9781394254699)
+- [@article@Destcert - CISSP Free Resources](https://destcert.com/resources/)
+- [@video@CISSP Exam Cram 2024](https://youtube.com/playlist?list=PL7XJSuT7Dq_XPK_qmYMqfiBjbtHJRWigD&si=_wSeCkvj-1rzv0ZF)
+- [@video@CISSP Prep (Coffee Shots)](https://youtube.com/playlist?list=PL0hT6hgexlYxKzBmiCD6SXW0qO5ucFO-J&si=9ICs373Vl1ce3s0H)

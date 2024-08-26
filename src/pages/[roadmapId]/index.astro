@@ -6,7 +6,6 @@ import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
-import UpcomingForm from '../../components/UpcomingForm.astro';
 import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
@@ -15,6 +14,10 @@ import {
 } from '../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import RoadmapNote from '../../components/RoadmapNote.astro';
+import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
+import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -63,6 +66,10 @@ const ogImageUrl =
     group: 'roadmap',
     resourceId: roadmapId,
   });
+
+const question = roadmapData?.question;
+const note = roadmapData.note;
+const projects = await getProjectsByRoadmapId(roadmapId);
 ---
 
 <BaseLayout
@@ -87,52 +94,66 @@ const ogImageUrl =
     slot='after-header'
   />
 
-  <RoadmapHeader
-    title={roadmapData.title}
-    description={roadmapData.description}
-    note={roadmapData.note}
-    tnsBannerLink={roadmapData.tnsBannerLink}
-    roadmapId={roadmapId}
-    hasTopics={roadmapData.hasTopics}
-    isUpcoming={roadmapData.isUpcoming}
-    isForkable={roadmapData.isForkable}
-    question={roadmapData.question}
+  <TopicDetail
+    resourceTitle={roadmapData.title}
+    resourceType='roadmap'
+    client:idle
+    canSubmitContribution={true}
   />
 
-  <div class='bg-gray-50 pt-4 sm:pt-12'>
-    {
-      !roadmapData.isUpcoming && (
-        <div class='container relative !max-w-[1000px]'>
-          <ShareIcons
-            description={roadmapData.briefDescription}
-            pageUrl={`https://roadmap.sh/${roadmapId}`}
-          />
-          <TopicDetail
-            resourceTitle={roadmapData.title}
-            resourceType='roadmap'
-            client:idle
-            canSubmitContribution={true}
-          />
+  <div class='bg-gray-50'>
+    <RoadmapHeader
+      title={roadmapData.title}
+      description={roadmapData.description}
+      note={roadmapData.note}
+      tnsBannerLink={roadmapData.tnsBannerLink}
+      roadmapId={roadmapId}
+      hasTopics={roadmapData.hasTopics}
+      isUpcoming={roadmapData.isUpcoming}
+      isForkable={roadmapData.isForkable}
+      question={roadmapData.question}
+      projectCount={projects.length}
+    />
 
-          {roadmapData?.renderer === 'editor' ? (
-            <EditorRoadmap
-              resourceId={roadmapId}
-              resourceType='roadmap'
-              dimensions={roadmapData.dimensions!}
+    <div class='container mt-2.5'>
+      <div class='rounded-md border bg-white'>
+        <ResourceProgressStats resourceId={roadmapId} resourceType='roadmap' />
+        {
+          question?.title && (
+            <RoadmapTitleQuestion
               client:load
+              question={question?.title}
+              answer={question?.description}
             />
-          ) : (
-            <FrameRenderer
-              resourceType={'roadmap'}
-              resourceId={roadmapId}
-              dimensions={roadmapData.dimensions}
-            />
-          )}
-        </div>
-      )
-    }
+          )
+        }
+      </div>
+    </div>
 
-    {roadmapData.isUpcoming && <UpcomingForm />}
+    <div class='container relative !max-w-[1000px]'>
+      <ShareIcons
+        description={roadmapData.briefDescription}
+        pageUrl={`https://roadmap.sh/${roadmapId}`}
+      />
+
+      {
+        roadmapData?.renderer === 'editor' ? (
+          <EditorRoadmap
+            resourceId={roadmapId}
+            resourceType='roadmap'
+            dimensions={roadmapData.dimensions!}
+            client:load
+          />
+        ) : (
+          <FrameRenderer
+            resourceType={'roadmap'}
+            resourceId={roadmapId}
+            dimensions={roadmapData.dimensions}
+          />
+        )
+      }
+    </div>
+
     <UserProgressModal
       resourceId={roadmapId}
       resourceType='roadmap'

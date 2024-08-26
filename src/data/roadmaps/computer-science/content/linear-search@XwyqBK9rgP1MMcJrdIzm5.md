@@ -4,4 +4,3 @@ Linear search is a very simple algorithm that is used to search for a value in a
 
 Visit the following resources to learn more:
 
-- [@article@Linear Search Algorithm](https://www.geeksforgeeks.org/linear-search/)

@@ -8,5 +8,4 @@ For more information, visit the following links:
 
 - [@article@Introduction to Cassandra](https://www.tutorialspoint.com/cassandra/cassandra_introduction.htm)
 - [@article@Overview of Cassandra in ASP.NET](https://www.spiceworks.com/tech/big-data/articles/what-is-cassandra/)
-- [@article@Introduction to Apache Cassandra](https://www.geeksforgeeks.org/introduction-to-apache-cassandra/)
 - [@feed@Explore top posts about Apache Cassandra](https://app.daily.dev/tags/apache-cassandra?ref=roadmapsh)

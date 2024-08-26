@@ -1,0 +1,895 @@
+{
+  "SiYUdtYMDImRPmV2_XPkH": {
+    "title": "What is DevRel?",
+    "description": "DevRel, or Developer Relations, is a field that connects a company's technical products or services with the developer community. It encompasses community engagement, technical advocacy, feedback collection, content creation, event participation, and product evangelism.\n\nDevRel professionals build relationships with developers, educate them about company tools and APIs, gather insights for product improvement, produce technical content, represent the company at industry events, and promote technology adoption.\n\nThey typically possess both technical expertise and strong communication skills, serving as a vital link between external developers and internal engineering and product teams. DevRel aims to foster a positive ecosystem around a company's technology, driving adoption and user satisfaction.",
+    "links": []
+  },
+  "KP28dl1I9hxM130gIPxSZ": {
+    "title": "History and Evolution",
+    "description": "The first Developer Relations teams came about in the lates 80’s during fierce rivalry between Microsoft and Apple. Apple created a team of “Evangelists” and when Microsoft saw the large impact that this team were having on the sales and adoption of Apple products, they created a their own team of “Technical Evangelists” which later became the Microsoft Developer Relations Group.\n\nDevRel has since evolved into multiple roles within itself, including Developer Marketing, Developer Advocate and Developer Engineer.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Developer Relations History & Mission Structure",
+        "url": "https://lmcdunna.medium.com/developer-relations-history-mission-structure-5fcad869deac",
+        "type": "article"
+      },
+      {
+        "title": "History of Developer Evangelism",
+        "url": "https://www.youtube.com/watch?v=ieiQmyrmakI",
+        "type": "video"
+      }
+    ]
+  },
+  "No-UnhdGmtLW9uFGLy-ca": {
+    "title": "Developer Experience",
+    "description": "Developer Experience (DX) refers to the overall experience developers have while using a software product, tool, or platform. A positive DX is characterized by intuitive and well-documented APIs, robust and clear documentation, seamless integration processes, and responsive support. Good DX ensures that developers can efficiently build, deploy, and manage applications, reducing frustration and increasing productivity.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is developer experience?",
+        "url": "https://swimm.io/learn/developer-experience/what-is-developer-experience-devx-pillars-and-best-practices",
+        "type": "article"
+      },
+      {
+        "title": "Developer Experience: What is it and why should you care? GitHub",
+        "url": "https://github.blog/2023-06-08-developer-experience-what-is-it-and-why-should-you-care/",
+        "type": "article"
+      }
+    ]
+  },
+  "BooGiYTMoS0N5eobwjPHY": {
+    "title": "Developer Journey",
+    "description": "The Developer Journey encompasses the entire process that a developer goes through when interacting with a product or platform, from initial discovery to long-term engagement. This journey includes various stages such as awareness, onboarding, learning, building, deploying, and scaling. Each stage requires thoughtful design and support to ensure a smooth and positive experience. By understanding and optimizing each touchpoint in the Developer Journey, companies can reduce friction, enhance satisfaction, and foster a more loyal and productive developer community.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Developer Journey",
+        "url": "https://www.devrel.agency/developerjourney",
+        "type": "article"
+      },
+      {
+        "title": "Developer Relations: The Developer Journey Map",
+        "url": "https://medium.com/codex/developer-relations-the-developer-journey-map-36bd4619f5f3",
+        "type": "article"
+      },
+      {
+        "title": "Understand the developer journey",
+        "url": "https://www.commonroom.io/resources/ultimate-guide-to-developer-experience/",
+        "type": "article"
+      }
+    ]
+  },
+  "UhMk8g5MMhvi3kWLLI6B1": {
+    "title": "Developer Marketing",
+    "description": "Developer Marketing focuses on strategies and tactics to engage and attract developers to a product, platform, or service. It involves creating targeted content, such as technical blogs, tutorials, and case studies, that addresses developers' needs and pain points. Effective developer marketing also includes hosting events like hackathons, webinars, and conferences to build community and demonstrate value. By leveraging channels that developers trust, such as GitHub, Stack Overflow, and social media, companies can increase visibility and adoption of their offerings.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is developer marketing?",
+        "url": "https://appsembler.com/glossary/developer-marketing/",
+        "type": "article"
+      },
+      {
+        "title": "What is developer marketing? IronHorse.io",
+        "url": "https://ironhorse.io/blog/what-is-developer-marketing/",
+        "type": "article"
+      },
+      {
+        "title": "What is developer marketing (B2D)",
+        "url": "https://www.productmarketingalliance.com/what-is-developer-marketing/",
+        "type": "article"
+      }
+    ]
+  },
+  "N9HXTCQq2wfC-QurSofE_": {
+    "title": "Importance of DevRel",
+    "description": "Developer Relations (DevRel) is crucial for fostering a vibrant and engaged developer community around a product or platform. It involves creating and maintaining strong relationships with developers through activities like community building, technical support, advocacy, and education. Effective DevRel ensures that developers have the resources and support they need to succeed, which in turn drives product adoption, innovation, and loyalty. By bridging the gap between a company's development teams and external developers, DevRel can also provide valuable feedback for product improvements and help in shaping the future direction of the product or platform.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Developer Relations? The Ultimate Guide for DevTool GTM Teams",
+        "url": "https://www.doc-e.ai/post/what-is-developer-relations-the-ultimate-guide-for-devtool-gtm-teams",
+        "type": "article"
+      },
+      {
+        "title": "DevRel - Why is it important?",
+        "url": "https://developers.onelogin.com/blog/devrel",
+        "type": "article"
+      },
+      {
+        "title": "The role of developer advocacy in driving innovation",
+        "url": "https://leaddev.com/process/role-developer-advocacy-driving-innovation",
+        "type": "article"
+      }
+    ]
+  },
+  "7MCmY1bABGPfmzjErADvg": {
+    "title": "Advocacy",
+    "description": "Developer Advocacy is the practice of representing and supporting the needs and interests of developers both within a company and in the broader developer community. Developer Advocates act as liaisons between the company’s development team and external developers, ensuring that the developers have the tools, resources, and knowledge to effectively use the company's products or platforms. They create educational content, provide technical support, gather feedback, and participate in community events.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is developer advocacy?",
+        "url": "https://appsembler.com/glossary/developer-advocacy/",
+        "type": "article"
+      },
+      {
+        "title": "The Developer Advocate Playbook: Your Go-To Guide to Turning Users into Champions 🚀",
+        "url": "https://www.doc-e.ai/post/the-developer-advocate-playbook-your-go-to-guide-to-turning-users-into-champions",
+        "type": "article"
+      },
+      {
+        "title": "Developer Relations: New Career Path for Developers",
+        "url": "https://www.youtube.com/watch?v=iA2SQ4OL4GU",
+        "type": "video"
+      }
+    ]
+  },
+  "EjqJkyojhO7f1uFHIoyGY": {
+    "title": "Education",
+    "description": "Developer Education focuses on providing developers with the knowledge and skills they need to effectively use a product, platform, or technology. This involves creating and delivering a variety of educational materials such as documentation, tutorials, courses, webinars, and interactive workshops. Effective developer education programs cater to different learning styles and levels of expertise, from beginners to advanced users.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is developer eduction?",
+        "url": "https://appsembler.com/glossary/developer-education/",
+        "type": "article"
+      },
+      {
+        "title": "What is developer education - Dev.to",
+        "url": "https://dev.to/jacobandrewsky/what-is-developer-education-5a01",
+        "type": "article"
+      },
+      {
+        "title": "Successful Developer Education: What you need to know",
+        "url": "https://www.developermarketing.io/successful-developer-education-what-you-need-to-know/",
+        "type": "article"
+      }
+    ]
+  },
+  "1NFcpGzCJylRPbFYdD9bB": {
+    "title": "Community Support",
+    "description": "Community Support in the context of Developer Relations (DevRel) involves actively engaging with and assisting the developer community to foster a collaborative and supportive environment. This includes moderating forums, responding to queries, organizing community events, and facilitating peer-to-peer support. Effective community support ensures that developers feel heard and valued, and have access to timely and accurate assistance, which enhances their overall experience and productivity.",
+    "links": [
+      {
+        "title": "Community and DevRel",
+        "url": "https://developerrelations.com/podcast/community-and-devrel",
+        "type": "article"
+      },
+      {
+        "title": "New to DevRel? Talk to your community!",
+        "url": "https://dev.to/amandamartindev/new-to-devrel-talk-to-your-community-hmf",
+        "type": "article"
+      },
+      {
+        "title": "DevRel & Community",
+        "url": "https://www.youtube.com/watch?v=CfXkY2m_0dU",
+        "type": "video"
+      }
+    ]
+  },
+  "_3ZnPUl4kzzuM0bKQ8IAq": {
+    "title": "Content Creation",
+    "description": "Content creation in the context of Developer Relations (DevRel) involves producing a wide range of materials designed to educate, engage, and empower developers. This includes writing technical blogs, creating video tutorials, developing comprehensive documentation, and crafting code samples and demos. The goal is to provide valuable resources that help developers understand and effectively use a product or platform. High-quality content addresses common challenges, showcases best practices, and highlights new features or updates.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The secret of content creation for DevRel",
+        "url": "https://developerrelations.com/dev-rel/the-secrets-of-content-creation-for-devrels",
+        "type": "article"
+      },
+      {
+        "title": "Content strategy for DevRel teams",
+        "url": "https://www.stephaniemorillo.co/post/content-strategy-for-devrel-teams-a-primer",
+        "type": "article"
+      },
+      {
+        "title": "DevRel Content Creation with Stephanie Wong from Google Cloud",
+        "url": "https://www.youtube.com/watch?v=DQE1hBXVXYA",
+        "type": "video"
+      }
+    ]
+  },
+  "IxRvVvX9Fax08YUbVob4s": {
+    "title": "Feedback Loop",
+    "description": "Feedback loops are a crucial process that involves collecting, analyzing, and acting on feedback from developers to improve products and services. This loop begins with gathering insights through various channels such as forums, surveys, social media, direct interactions at events, and support tickets. The feedback is then communicated to internal teams, including product management, engineering, and marketing, to inform product enhancements, feature requests, and bug fixes.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Harnessing the Power of Community Feedback for Product Development",
+        "url": "https://draft.dev/learn/devrel-harnessing-the-power-of-community-feedback-for-product-development",
+        "type": "article"
+      },
+      {
+        "title": "The Developer Advocacy Feedback Loop",
+        "url": "https://glaforge.dev/talks/2020/08/06/the-developer-advocacy-feedback-loop/",
+        "type": "article"
+      }
+    ]
+  },
+  "LRZ8yxTfEGCXsYp4N1_uD": {
+    "title": "Public Speaking",
+    "description": "",
+    "links": []
+  },
+  "0ntOE6PSdMl_EXB9gdgIv": {
+    "title": "Writing Skills",
+    "description": "Good writing skills are crucial for software developers because they enhance communication, documentation, and collaboration. Clear and concise writing ensures that complex technical concepts are easily understood by team members, stakeholders, and end-users. Effective documentation, including comments, user manuals, and technical guides, helps maintain code quality and facilitates future maintenance and updates. Writing also plays a key role in crafting clear commit messages, bug reports, and project proposals, which are essential for smooth project management and collaboration. In an increasingly global and remote work environment, the ability to articulate ideas and solutions in writing becomes even more vital, ensuring that everyone is on the same page and can contribute effectively to the project's success.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Putting Ideas into Words",
+        "url": "https://www.paulgraham.com/words.html",
+        "type": "article"
+      },
+      {
+        "title": "Patterns in confusing explanations",
+        "url": "https://jvns.ca/blog/confusing-explanations/",
+        "type": "article"
+      },
+      {
+        "title": "Signposting: How to reduce cognitive load for your reader",
+        "url": "https://newsletter.weskao.com/p/sign-posting-how-to-reduce-cognitive",
+        "type": "article"
+      }
+    ]
+  },
+  "c0w241EL0Kh4ek76IgsEs": {
+    "title": "Blog Posts",
+    "description": "",
+    "links": []
+  },
+  "X0xUzEP0S6SyspvqyoDDk": {
+    "title": "Technical Documentation",
+    "description": "",
+    "links": []
+  },
+  "urbtoZtuJryK-6TJ3lmRN": {
+    "title": "Social Media",
+    "description": "",
+    "links": []
+  },
+  "PFjF2PnYpSbvd24jb_D2G": {
+    "title": "Presentation Techniques",
+    "description": "",
+    "links": []
+  },
+  "vH_ECVYSQ3Fg-DASO1EgK": {
+    "title": "Rules of Three",
+    "description": "",
+    "links": []
+  },
+  "_FZNqUKgPkzbgOPoiSLSU": {
+    "title": "PechaKucha",
+    "description": "",
+    "links": []
+  },
+  "Y0GUZynSXjITDOA-TP6LH": {
+    "title": "Storytelling",
+    "description": "",
+    "links": []
+  },
+  "uwvvWmcZnFqLoHRDFXFyW": {
+    "title": "Mind Mapping",
+    "description": "",
+    "links": []
+  },
+  "SNhrYZsmyDHN_JWh0eZy2": {
+    "title": "Visualization",
+    "description": "",
+    "links": []
+  },
+  "iKYmUvWFT_C0wnO0iB6gM": {
+    "title": "Engaging Audience",
+    "description": "",
+    "links": []
+  },
+  "VTGsmk3p4RVXiNhDmx2l8": {
+    "title": "The Hook",
+    "description": "",
+    "links": []
+  },
+  "LixiZj3-QcmQgGAqaaDr6": {
+    "title": "Contrast Principle",
+    "description": "",
+    "links": []
+  },
+  "tbIAEStaoVWnEWbdk7EGc": {
+    "title": "Handouts",
+    "description": "",
+    "links": []
+  },
+  "2iRt9E42i_ej4woKCW_s2": {
+    "title": "Repetition & Reinforcement",
+    "description": "",
+    "links": []
+  },
+  "Xf-Lxi1cKReo4yDLylBbL": {
+    "title": "Handling Q&A",
+    "description": "",
+    "links": []
+  },
+  "UdUDngq425NYSvIuOd7St": {
+    "title": "Active Listening",
+    "description": "",
+    "links": []
+  },
+  "jyScVS-sYMcZcH3hOwbMK": {
+    "title": "Anticipate Questions",
+    "description": "",
+    "links": []
+  },
+  "rhs6QwxZ7PZthLfi38FJn": {
+    "title": "Be Concise",
+    "description": "",
+    "links": []
+  },
+  "VSOdD9KKF_Qz8nbRdHNo3": {
+    "title": "Managing Difficult Questions",
+    "description": "",
+    "links": []
+  },
+  "yJygbi8cnp3oz2EFl2MR0": {
+    "title": "Community Engagement",
+    "description": "Building a positive developer experience through community engagement is an ongoing process that requires dedication, empathy, and a genuine commitment to your users. By investing in a welcoming environment, facilitating knowledge sharing, and leveraging AI-powered tools like [Doc-E.ai](http://Doc-E.ai), you can create a thriving community that not only supports your product but also becomes a source of innovation, loyalty, and growth.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Ultimate Guide to Developer Engagement and Community Building: Unlocking the Power of Developer-Centric Growth",
+        "url": "https://www.doc-e.ai/post/the-ultimate-guide-to-developer-engagement-and-community-building-unlocking-the-power-of-developer-centric-growth",
+        "type": "article"
+      },
+      {
+        "title": "Fostering a Positive Developer Experience Through Community Engagement: A Blueprint for DevTool Success",
+        "url": "https://www.doc-e.ai/post/fostering-a-positive-developer-experience-through-community-engagement-a-blueprint-for-devtool-success",
+        "type": "article"
+      }
+    ]
+  },
+  "C2w8R4tNy2lOhhWU9l32s": {
+    "title": "Event Participation",
+    "description": "",
+    "links": []
+  },
+  "gvMbo22eRxqOzszc_w4Gz": {
+    "title": "Online Communities",
+    "description": "",
+    "links": []
+  },
+  "SJf9e7SQnzYVHoRWl0i6P": {
+    "title": "Networking",
+    "description": "",
+    "links": []
+  },
+  "aSYXa25_0O2qQl1O-N3xl": {
+    "title": "Basic Programming Skills",
+    "description": "",
+    "links": []
+  },
+  "KdFYmj36M2jrGfsYkukpo": {
+    "title": "IDEs",
+    "description": "",
+    "links": []
+  },
+  "j5nNSYI8s-cH8EA6G1EWY": {
+    "title": "VS Code",
+    "description": "",
+    "links": []
+  },
+  "NCnKS435DCl-8vilr1_XE": {
+    "title": "JetBrains IDEs",
+    "description": "",
+    "links": []
+  },
+  "sUEZHmKxtjO9gXKJoOdbF": {
+    "title": "APIs & SDKs",
+    "description": "",
+    "links": []
+  },
+  "pqp9FLRJRDDEnni72KHmv": {
+    "title": "Writing Documentation",
+    "description": "",
+    "links": []
+  },
+  "h6R3Vyq0U8t8WL3G5xC2l": {
+    "title": "Building SDKs",
+    "description": "",
+    "links": []
+  },
+  "7Q6_tdRaeb8BgreG8Mw-a": {
+    "title": "Understanding APIs",
+    "description": "",
+    "links": []
+  },
+  "x6KFf4akYuUYkNhrUwj1r": {
+    "title": "Version Control",
+    "description": "",
+    "links": []
+  },
+  "a-i1mgF3VAxbbpA1gMWyK": {
+    "title": "Git",
+    "description": "",
+    "links": []
+  },
+  "8O1AgUKXe35kdiYD02dyt": {
+    "title": "GitHub",
+    "description": "",
+    "links": []
+  },
+  "J2WunUJBzYw_D5cQH_pnH": {
+    "title": "Managing Discussions",
+    "description": "",
+    "links": []
+  },
+  "vCoEJyS4qMWTTiL17PmWr": {
+    "title": "Issues & Pull Requests",
+    "description": "",
+    "links": []
+  },
+  "x3qTqhR1uA5CXqULIJqL8": {
+    "title": "Labelling and Cleanup",
+    "description": "",
+    "links": []
+  },
+  "v_lDqjtxjRK67GsbtxXgT": {
+    "title": "Milestones & Releases",
+    "description": "",
+    "links": []
+  },
+  "7ZFTmlQHYQKNjKprwV8zk": {
+    "title": "Public Backlog",
+    "description": "",
+    "links": []
+  },
+  "GvmXdWiwITgWzx_f5_ick": {
+    "title": "Building a Community",
+    "description": "Online developer communities have become the heart of successful DevTools (Developer Tools) go-to-market (GTM) strategies. They provide a platform for developers to connect, collaborate, learn, and share their expertise, ultimately fostering loyalty, driving product adoption, and fueling innovation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Building and Nurturing Online Developer Communities: The Ultimate Guide",
+        "url": "https://www.doc-e.ai/post/building-and-nurturing-online-developer-communities-the-ultimate-guide",
+        "type": "article"
+      },
+      {
+        "title": "10 Proven Strategies for Building a Developer Community That Thrives: A Guide to Inclusion & Engagement",
+        "url": "https://dev.to/swati1267/10-proven-strategies-for-building-a-developer-community-that-thrives-a-guide-to-inclusion-engagement-21cm",
+        "type": "article"
+      }
+    ]
+  },
+  "UKi3waPx2pozvZf2aQ52s": {
+    "title": "Identifying Audience",
+    "description": "",
+    "links": []
+  },
+  "WItTQ1QboHoRkqeHJzCM9": {
+    "title": "Platform Selection",
+    "description": "",
+    "links": []
+  },
+  "hPJM4QXxeqTxPlvJ2_D3_": {
+    "title": "Initial Outreach",
+    "description": "",
+    "links": []
+  },
+  "4ZvzY_xGO5BZOmfqj0TTq": {
+    "title": "Community Guidelines",
+    "description": "",
+    "links": []
+  },
+  "er9ukuBvY-F4F8S1qbbjU": {
+    "title": "Code of Conduct",
+    "description": "",
+    "links": []
+  },
+  "8I59U-nnkhQv8ldRuqQlb": {
+    "title": "Rules and Policies",
+    "description": "",
+    "links": []
+  },
+  "-6cf3RT4-cbwvLYIkCosF": {
+    "title": "Community Management",
+    "description": "",
+    "links": []
+  },
+  "d_dKF87OnRWoWj3Bf1uFf": {
+    "title": "Moderation",
+    "description": "",
+    "links": []
+  },
+  "8ls5kQvDgvwLbIrwYg1OL": {
+    "title": "Conflict Resolution",
+    "description": "",
+    "links": []
+  },
+  "6yLt4Ia52Jke9i5kJQvAC": {
+    "title": "Encouraging Participation",
+    "description": "",
+    "links": []
+  },
+  "Nta8pUncwNQxJlqF6h1AT": {
+    "title": "Recognition Programs",
+    "description": "",
+    "links": []
+  },
+  "usorG1GkkvGAZ0h_AGHVk": {
+    "title": "Event Management",
+    "description": "",
+    "links": []
+  },
+  "RQk3uOikjQYRyTu7vuAG7": {
+    "title": "Planning",
+    "description": "",
+    "links": []
+  },
+  "C9--J8gGZENQKn-QcZK4M": {
+    "title": "Promotion",
+    "description": "",
+    "links": []
+  },
+  "1m1keusP-PTjEwy0dCJJL": {
+    "title": "Execution",
+    "description": "",
+    "links": []
+  },
+  "kmcOYDvu1vq7AQPllZvv0": {
+    "title": "Post Event Followup",
+    "description": "",
+    "links": []
+  },
+  "_Qe_0RksYpX7Spzgc6Fw3": {
+    "title": "Surveys",
+    "description": "",
+    "links": []
+  },
+  "oWXfov-mOF47d7Vffyp3t": {
+    "title": "Feedback Collection",
+    "description": "",
+    "links": []
+  },
+  "B1IdobUaGeBLI2CgsFg8H": {
+    "title": "Blogging",
+    "description": "",
+    "links": []
+  },
+  "uzMfR6Yd9Jvjn8i5RpC1Q": {
+    "title": "Topic Selection",
+    "description": "",
+    "links": []
+  },
+  "l6-mzgDTXg2EPkyZyZ6TC": {
+    "title": "Writing Process",
+    "description": "",
+    "links": []
+  },
+  "zVBy8o66FdZueg-2v3gaw": {
+    "title": "SEO Basics",
+    "description": "",
+    "links": []
+  },
+  "2QiQW9tygpeaES8Wp1Kw6": {
+    "title": "Guest Blogging",
+    "description": "",
+    "links": []
+  },
+  "nlzI2fG3SwC5Q42qXcXPX": {
+    "title": "Cross-Promotion",
+    "description": "",
+    "links": []
+  },
+  "w1ZooDCDOkbL1EAa5Hx3d": {
+    "title": "Collaborations",
+    "description": "",
+    "links": []
+  },
+  "bRzzc137OlmivEGdhv5Ew": {
+    "title": "Video Production",
+    "description": "",
+    "links": []
+  },
+  "6zK9EJDKBC89UArY7sfgs": {
+    "title": "Editing",
+    "description": "",
+    "links": []
+  },
+  "_QHUpFW4kZ5SBaP7stXY2": {
+    "title": "Recording",
+    "description": "",
+    "links": []
+  },
+  "rLDRkUht9K1m4noMAIgKU": {
+    "title": "Scripting",
+    "description": "",
+    "links": []
+  },
+  "OUWVqJImrmsZpAtRrUYNH": {
+    "title": "Animations & Graphics",
+    "description": "",
+    "links": []
+  },
+  "pEMNcm_wJNmOkWm57L1pA": {
+    "title": "Video Production",
+    "description": "",
+    "links": []
+  },
+  "iPaFjacZ7hSWriSEqUmHc": {
+    "title": "Live Streaming",
+    "description": "",
+    "links": []
+  },
+  "Mdp4bBlhVbGohJkVlsDar": {
+    "title": "X",
+    "description": "",
+    "links": []
+  },
+  "OY5rn3XTbmz4LzSLRcNmw": {
+    "title": "YouTube",
+    "description": "",
+    "links": []
+  },
+  "QlWam-kHv8G_-yx3ClP9s": {
+    "title": "Twitch",
+    "description": "",
+    "links": []
+  },
+  "meZDgDJMy4aH5VqS-NJL4": {
+    "title": "Streamyard",
+    "description": "",
+    "links": []
+  },
+  "D7_iNPEKxFv0gw-fsNNrZ": {
+    "title": "Animations & Graphics",
+    "description": "",
+    "links": []
+  },
+  "8aiLVG4clveX1Luiehvxr": {
+    "title": "Technical Setup",
+    "description": "",
+    "links": []
+  },
+  "tRywPj_2VyjSLjxYJtYZd": {
+    "title": "Video",
+    "description": "",
+    "links": []
+  },
+  "7y4vHk_jgNTW6Q1WoqYDc": {
+    "title": "Audio",
+    "description": "",
+    "links": []
+  },
+  "71BBFjaON1NJi4rOHKW6K": {
+    "title": "Social Media",
+    "description": "",
+    "links": []
+  },
+  "6BqkO4XOspJg0-9GNLtUp": {
+    "title": "X",
+    "description": "",
+    "links": []
+  },
+  "6UR59TigEZ0NaixbaUIqn": {
+    "title": "LinkedIn",
+    "description": "",
+    "links": []
+  },
+  "ZMManUnO-9EQqi-xmLt5r": {
+    "title": "Facebook",
+    "description": "",
+    "links": []
+  },
+  "UAkGV9_I6qiKZMr1aqQCm": {
+    "title": "Instagram",
+    "description": "",
+    "links": []
+  },
+  "TGXPxTFv9EhsfS5uWR5gS": {
+    "title": "Content Strategy",
+    "description": "",
+    "links": []
+  },
+  "lG1FH7Q-YX5pG-7mMtbSR": {
+    "title": "Analytics and Optimization",
+    "description": "",
+    "links": []
+  },
+  "l2P44pL9eF8xarBwC_CVO": {
+    "title": "Consistent Posting",
+    "description": "",
+    "links": []
+  },
+  "WIH216mHg2OiSebzQYI-f": {
+    "title": "Engaging Content",
+    "description": "",
+    "links": []
+  },
+  "ZWkpgvXIzjN3_fOyhVEv0": {
+    "title": "Creating Brand Voice",
+    "description": "",
+    "links": []
+  },
+  "NWxAxiDgvlGpvqdkzqnOH": {
+    "title": "Tracking Engagement",
+    "description": "",
+    "links": []
+  },
+  "46iMfYgC7fCZLCy-qzl1B": {
+    "title": "Data-Driven Strategy Shift",
+    "description": "",
+    "links": []
+  },
+  "g3M6nfLr0DMcn-NCFF7nZ": {
+    "title": "Documentation",
+    "description": "",
+    "links": []
+  },
+  "RLf08xKMjlt6S9-MFiTo-": {
+    "title": "User Guides",
+    "description": "",
+    "links": []
+  },
+  "7IJO_jDpZUdlr_n5rBJ6O": {
+    "title": "API References",
+    "description": "",
+    "links": []
+  },
+  "6ubk20TBIL3_VrrRMe8tO": {
+    "title": "Tutorials",
+    "description": "",
+    "links": []
+  },
+  "xy9Kqtwrh5IhYHaqEhvl_": {
+    "title": "Sample Projects",
+    "description": "",
+    "links": []
+  },
+  "pGJrCyYhLLGUnv6LxpYUe": {
+    "title": "Code Samples",
+    "description": "",
+    "links": []
+  },
+  "mWcMSKnUQamUykBxND-Ju": {
+    "title": "Example Apps",
+    "description": "",
+    "links": []
+  },
+  "omnUSgUHZg2DmnOUJ0Xo1": {
+    "title": "Use Case Based",
+    "description": "",
+    "links": []
+  },
+  "LwNa3u9Lf88ju5w7CvSN5": {
+    "title": "Support",
+    "description": "",
+    "links": []
+  },
+  "oGTIvAY3zYgoiC63FQRSd": {
+    "title": "Forums",
+    "description": "",
+    "links": []
+  },
+  "j6tr3mAaKqTuEFTRSCsrK": {
+    "title": "Issue Tracking",
+    "description": "",
+    "links": []
+  },
+  "4GCQ3stXxW1HrlAVC0qDl": {
+    "title": "FAQs",
+    "description": "",
+    "links": []
+  },
+  "weyCcboaekqf5NuVAOxfU": {
+    "title": "Office Hours",
+    "description": "",
+    "links": []
+  },
+  "1fc0iWwOkheUJ7d0np86L": {
+    "title": "Webinars",
+    "description": "",
+    "links": []
+  },
+  "DCj1teu8Hp82EKnakFRPn": {
+    "title": "Key Metrics",
+    "description": "",
+    "links": []
+  },
+  "afR1VviBs2w0k8UmP38vn": {
+    "title": "Community Growth",
+    "description": "",
+    "links": []
+  },
+  "RXj0yB7KsIOM5whwtyBBU": {
+    "title": "Engagement Rates",
+    "description": "",
+    "links": []
+  },
+  "yhDBZfUAjumFHpUZtmLg3": {
+    "title": "Content Performance",
+    "description": "",
+    "links": []
+  },
+  "AwMwMU9hg_gCKPP4tykHb": {
+    "title": "Developer Satisfaction",
+    "description": "",
+    "links": []
+  },
+  "psk3bo-nSskboAoVTjlpz": {
+    "title": "Tools",
+    "description": "",
+    "links": []
+  },
+  "8xrhjG9qmbsoBC3F8zS-b": {
+    "title": "Google Analytics",
+    "description": "",
+    "links": []
+  },
+  "x8RIrK2VB-LBFbt6hAcQb": {
+    "title": "Social Media Analytics",
+    "description": "",
+    "links": []
+  },
+  "AL3-UzREwTpsADTU0YtRW": {
+    "title": "Platform Specific Analytics",
+    "description": "",
+    "links": []
+  },
+  "N1uh7dVKfSPT7w0MlKzWO": {
+    "title": "Reporting",
+    "description": "",
+    "links": []
+  },
+  "U2QKCu6TvDuxSNRfdM74n": {
+    "title": "Regular Reports",
+    "description": "",
+    "links": []
+  },
+  "0dRnUlgze87eq2FVU_mWp": {
+    "title": "Data Visualization",
+    "description": "",
+    "links": []
+  },
+  "mh1BZDVkc-VwA8aQAmDhO": {
+    "title": "Insights & Recommendations",
+    "description": "",
+    "links": []
+  },
+  "wcfrXA9zWZ4Taey7mR2yG": {
+    "title": "Thought Leadership",
+    "description": "",
+    "links": []
+  },
+  "I7RBMfoD30OstVLeTrMs9": {
+    "title": "Publishing",
+    "description": "",
+    "links": []
+  },
+  "QrDqUGWC2t9r6p4aR8I5g": {
+    "title": "Media Appearances",
+    "description": "",
+    "links": []
+  },
+  "ue0NaNnNpF7UhvJ8j0Yuo": {
+    "title": "Conference Speaking",
+    "description": "",
+    "links": []
+  },
+  "HN2gNsYYRLVOOdy_r8FKJ": {
+    "title": "Building a Personal Brand",
+    "description": "",
+    "links": []
+  },
+  "4ygpqUK70hI5r1AmmfMZq": {
+    "title": "Networking Strategies",
+    "description": "",
+    "links": []
+  },
+  "HIIqlnZ4Vad_1o4F0lkv-": {
+    "title": "Meetups",
+    "description": "",
+    "links": []
+  },
+  "lMbj0WdoEia_tdpO5rXph": {
+    "title": "Online Communities",
+    "description": "",
+    "links": []
+  },
+  "NhQUDVA9q1hnV44EKapbU": {
+    "title": "Open-Source",
+    "description": "",
+    "links": []
+  },
+  "bwwk6ESNyEJa3fCAIKPwh": {
+    "title": "Continuous Learning",
+    "description": "",
+    "links": []
+  }
+}

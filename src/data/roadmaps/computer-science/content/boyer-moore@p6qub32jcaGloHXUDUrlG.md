@@ -4,6 +4,5 @@ Boyer Moore algorithm is a string searching algorithm that is used to find the i
 
 Visit the following resources to learn more:
 
-- [@article@Boyer Moore Algorithm for Pattern Searching](https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/)
 - [@article@The Boyer-Moore Algorithm](https://www.javatpoint.com/daa-boyer-moore-algorithm)
 - [@course@Boyer Moore Algorithm](https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore)

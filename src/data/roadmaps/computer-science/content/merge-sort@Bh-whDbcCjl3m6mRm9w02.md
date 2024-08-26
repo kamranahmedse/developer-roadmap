@@ -4,7 +4,5 @@ Merge sort is a divide and conquer algorithm. It divides the input array into tw
 
 Visit the following resources to learn more:
 
-- [@article@Merge Sort - Geeks for Geeks](https://www.geeksforgeeks.org/merge-sort/)
 - [@article@Merge Sort Algorithm](https://www.programiz.com/dsa/merge-sort)
-- [@article@Merge Sort for Linked Lists](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 - [@video@Merge Sort in 3 Minutes](https://www.youtube.com/watch?v=4VqmGXwpLqc)

@@ -13,7 +13,6 @@ Visit the following resources to learn more:
 - [@article@W3Schools — Learn CSS](https://www.w3schools.com/css/)
 - [@article@cssreference.io: All CSS properties at a glance](https://cssreference.io/)
 - [@article@Web.dev by Google — Learn CSS](https://web.dev/learn/css/)
-- [@article@freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/)
 - [@article@Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
 - [@article@Joshw Comeaus CSS Hack Blog Posts](https://www.joshwcomeau.com/)
 - [@article@100 Days CSS Challenge](https://100dayscss.com)

@@ -1,6 +1,6 @@
 # Verify the Change in Production.
 
-Veryfing the change is a crucial step in the code review process that ensures the recently merged changes work correctly and do not cause any unexpected disruptions when deployed to the live production environment. Rigorous testing before deployment helps minimize the risks, but having an additional layer of validation post-deployment provides you with the confidence that your code changes are working as intended while interacting with real users and production data. To make sure of this, consider the following tips:
+Verifying the change is a crucial step in the code review process that ensures the recently merged changes work correctly and do not cause any unexpected disruptions when deployed to the live production environment. Rigorous testing before deployment helps minimize the risks, but having an additional layer of validation post-deployment provides you with the confidence that your code changes are working as intended while interacting with real users and production data. To make sure of this, consider the following tips:
 
 - Implement automated monitoring and alerting systems to keep track of your application's key performance indicators (KPIs) and notify you in case of a significant change in the metrics.
 
