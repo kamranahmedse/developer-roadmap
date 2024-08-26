@@ -50,14 +50,14 @@ export function Rating(props: RatingProps) {
         );
       })}
       {(props.total || 0) > 0 && (
-        <span className="ml-1.5 text-xs font-medium text-gray-400">
-          {decimalIfNeeded(Number(props.rating!))}
-        </span>
-      )}
-      {(props.total || 0) > 0 && (
-        <span className="ml-1 text-xs text-gray-400">
-          ({Intl.NumberFormat('en-US').format(props.total!)})
-        </span>
+        <>
+          <span className="ml-1.5 text-xs font-medium text-gray-400">
+            {decimalIfNeeded(Number(props.rating!))}
+          </span>
+          <span className="ml-1 text-xs text-gray-400">
+            ({Intl.NumberFormat('en-US').format(props.total!)})
+          </span>
+        </>
       )}
     </div>
   );
