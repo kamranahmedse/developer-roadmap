@@ -170,10 +170,19 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         projectUrlExists: 'success',
       });
 
+      const languagesUrl = `${mainApiUrl}/languages`;
+      const languagesResponse = await fetch(languagesUrl);
+      let languages: string[] = [];
+      if (languagesResponse.ok) {
+        const languagesData = await languagesResponse.json();
+        languages = Object.keys(languagesData || {})?.slice(0, 4);
+      }
+
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
       const { response: submitResponse, error } =
         await httpPost<SubmitProjectResponse>(submitProjectUrl, {
           repositoryUrl: repoUrl,
+          languages,
         });
 
       if (error || !submitResponse) {
@@ -272,7 +281,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
         <button
           type="submit"
-          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50 text-sm"
+          className="mt-2 w-full rounded-lg bg-black p-2 text-sm font-medium text-white disabled:opacity-50"
           disabled={isLoading}
         >
           {isLoading ? 'Verifying...' : 'Verify and Submit'}
