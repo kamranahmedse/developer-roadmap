@@ -1503,7 +1503,7 @@
   },
   "c2kY3wZVFKZYxMARhLIwO": {
     "title": "SIEM",
-    "description": "SIEM, short for Security Information and Event Manager, is a term used to describe tools that greatly increases visibility into a network or system. It does this by monitoring, filtering, collecting, normalizing, and correlating vast amounts of data such as logs, and neatly presents it via an interface/dashboard.\n\nOrganizations leverage SIEMs to monitor and thus identify, protect, and respond to potential threats in their environment.\n\nFor hands-on experience, you should consider setting up a SIEM in your own environment. A common stack widely used for various purposes across the industry is the ELK-stack.\n\nVisit the following resources to learn more:",
+    "description": "SIEM, short for Security Information and Event Manager, is a term used to describe tools that greatly increases visibility into a network or system. It does this by monitoring, filtering, collecting, normalizing, and correlating vast amounts of data such as logs, and neatly presents it via an interface/dashboard.\n\nOrganizations leverage SIEMs to monitor and thus identify, protect, and respond to potential threats in their environment.\n\nFor hands-on experience, you should consider setting up a SIEM in your own environment. There are some commercial tools that you can try out for free, and there are also open source alternatives, such as Wazuh or LevelBlue OSSIM (AlienVault).\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Security 101: What is a SIEM? - Microsoft",
@@ -1511,12 +1511,22 @@
         "type": "article"
       },
       {
-        "title": "Using the ELK stack for SIEM",
-        "url": "https://logz.io/blog/elk-siem/",
-        "type": "article"
+        "title": "SIEM Explained - Professor Messer",
+        "url": "https://www.youtube.com/watch?v=JEcETdy5WxU",
+        "type": "video"
       },
       {
-        "title": "Build a powerful home SIEM",
+        "title": "Wazuh | Open source SIEM",
+        "url": "https://www.youtube.com/watch?v=3CaG2GI1kn0",
+        "type": "video"
+      },
+      {
+        "title": "Splunk | The Complete Beginner Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLY2f3p7xyMiTUbUo0A_lBFEwj6KdH0nFy",
+        "type": "video"
+      },
+      {
+        "title": "Elastic Security | Build a powerful home SIEM",
         "url": "https://www.youtube.com/watch?v=2XLzMb9oZBI",
         "type": "video"
       }
@@ -1699,7 +1709,7 @@
   },
   "9rmDvycXFcsGOq3v-_ziD": {
     "title": "S/MIME",
-    "description": "",
+    "description": "**S/MIME** stands for Secure/Multipurpose Internet Mail Extensions, and it is a cryptographic protocol that enhances the security of business emails through encryption and digital signatures. It allows users to encrypt emails and digitally sign them to verify the sender’s identity.\n\nAdvantages of S/MIME\n--------------------\n\n*   **Verification**: Confirms the sender’s identity.\n    \n*   **Confidentiality**: Protects the content from unauthorized access.\n    \n*   **Integrity**: Ensures the message has not been altered.\n    \n*   **Secure Data Transfer**: Safely transmits files like images, audio, videos, and documents.\n    \n*   **Non-repudiation**: Prevents the sender from denying the origin of the message.\n    \n\nHow S/MIME Works\n----------------\n\nS/MIME enables the transmission of non-ASCII data via the Secure Mail Transfer Protocol (SMTP). It securely sends various data files, including music, video, and images, using encryption. Data encrypted with a public key can only be decrypted by the recipient’s private key, ensuring secure end-to-end communication.",
     "links": []
   },
   "3140n5prZYySsuBHjqGOJ": {
