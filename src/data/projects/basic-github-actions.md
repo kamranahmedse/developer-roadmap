@@ -1,6 +1,6 @@
 ---
 title: 'Github Actions Workflow'
-description: 'Write a basic GitHub Actions workflow to deploy an Astro GitHub Pages site.'
+description: 'Write  GitHub Actions workflow to deploy a simple GitHub Pages site.'
 isNew: true
 sort: 3
 difficulty: 'beginner'
@@ -9,10 +9,9 @@ skills:
   - 'devops'
   - 'github actions'
   - 'ci/cd'
-  - 'astro'
 seo:
   title: 'Github Actions Workflow'
-  description: 'Write a basic GitHub Actions workflow to deploy an Astro GitHub Pages site.'
+  description: 'Write GitHub Actions workflow to deploy a simple GitHub Pages site.'
   keywords:
     - 'basic ci/cd'
     - 'devops'
@@ -22,17 +21,16 @@ roadmapIds:
   - 'devops'
 ---
 
-In this project, you will build a simple Astro website and setup a GitHub Actions workflow to test, build & deploy it to GitHub Pages.
+In this project, you will write a basic HTML file and setup a GitHub Actions workflow to test, build & deploy it to GitHub Pages.
 
 ## Requirements
 
-- Create a simple Astro website (the content of the website is up to you)
+- Create a simple HTML file (the content is up to you)
 - Create a GitHub Actions workflow that will test, build & deploy the website to [GitHub Pages](https://pages.github.com/).
 - Failures in the workflow should be clearly indicated and failures will halt the workflow
 - The workflow should be in the `.github/workflows` directory
 - The workflow file should be named `main.yml`
 
-You can learn more about creating an Astro project [here](https://docs.astro.build/en/getting-started/).
 
 <hr />
 
