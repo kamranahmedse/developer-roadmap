@@ -7,6 +7,7 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 import { getTopGitHubLanguages } from '../../lib/github.ts';
+import { SubmitSuccessModal } from './SubmitSuccessModal.tsx';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
@@ -211,12 +212,11 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
   if (successMessage) {
     return (
-      <Modal onClose={onClose} bodyClassName="h-auto p-4">
-        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
-          <ReactCheckIcon additionalClasses={'h-12 text-green-500 w-12'} />
-          <p className="text-lg font-medium">{successMessage}</p>
-        </div>
-      </Modal>
+      <SubmitSuccessModal
+        projectId={projectId}
+        onClose={onClose}
+        successMessage={successMessage}
+      />
     );
   }
 
