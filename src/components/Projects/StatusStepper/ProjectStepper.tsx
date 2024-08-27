@@ -189,7 +189,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
           </>
         )}
 
-        {activeStep >= 1 && (
+        {activeStep >= 2 && (
           <button
             className={cn(
               'ml-auto flex items-center gap-1 text-sm',
