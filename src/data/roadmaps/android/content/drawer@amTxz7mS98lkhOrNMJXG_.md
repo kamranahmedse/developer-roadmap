@@ -5,4 +5,4 @@ The **Navigation Drawer** in Android is a sliding menu from the left that simpli
 Visit the following resources to learn more:
 
 - [@official@Android developers: DrawerLayout](https://developer.android.com/reference/androidx/drawerlayout/widget/DrawerLayout)
-- [@article@Tutorial](https://www.digitalocean.com/community/tutorials/android-navigation-drawer-example-tutorial)
+- [@article@Navigate Drawer Tutorial](https://www.digitalocean.com/community/tutorials/android-navigation-drawer-example-tutorial)
