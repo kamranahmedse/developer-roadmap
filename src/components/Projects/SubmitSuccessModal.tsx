@@ -23,7 +23,7 @@ export function SubmitSuccessModal(props: SubmitSuccessModalProps) {
   const user = getUser();
 
   const description = 'Check out my solution to this project on Roadmap.sh';
-  const projectSolutionUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/projects/${projectId}?u=${user?.id}`;
+  const projectSolutionUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/projects/${projectId}/solutions?u=${user?.id}`;
 
   const { isCopied, copyText } = useCopyText();
 
@@ -49,10 +49,7 @@ export function SubmitSuccessModal(props: SubmitSuccessModalProps) {
     <Modal onClose={onClose} bodyClassName="h-auto p-4">
       <div className="flex flex-col items-center justify-center pb-5 pt-12">
         <ReactCheckIcon additionalClasses="h-12 text-green-500 w-12" />
-        {/* <p className="text-lg font-medium">{successMessage}</p> */}
-        <p className="mt-4 text-lg font-medium">
-          Solution submitted successfully!
-        </p>
+        <p className="mt-4 text-lg font-medium">{successMessage}</p>
         <p className="mt-0.5 text-center text-sm text-gray-500">
           You can use the link to share your solution with others.
         </p>
