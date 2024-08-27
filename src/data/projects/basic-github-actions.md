@@ -31,7 +31,6 @@ In this project, you will write a basic HTML file and setup a GitHub Actions wor
 - The workflow should be in the `.github/workflows` directory
 - The workflow file should be named `main.yml`
 
-
 <hr />
 
 If you are looking to build a more advanced version of this project, you can either create a more advanced Astro website or you can build a more advanced GitHub Actions workflow.
