@@ -15,8 +15,9 @@ seo:
   description: 'Create a Web Server using Docker & NGINX'
   keywords:
     - 'docker web server'
-    - 'web server'
     - 'docker'
+    - 'system administration'
+    - 'web server'
 roadmapIds:
   - 'devops'
   - 'docker'
@@ -30,7 +31,6 @@ In this project, you will create an NGINX web server that will serve a simple HT
 - The Dockerfile should be in the root directory of the project.
 - The build process will add a local HTML file to the container, which will be accessible to NGINX.
 - The simple HTML page will be accessible to you from `localhost:8080`
-
 
 You can learn more about writing a Dockerfile [here](https://docs.docker.com/engine/reference/builder/).
 
