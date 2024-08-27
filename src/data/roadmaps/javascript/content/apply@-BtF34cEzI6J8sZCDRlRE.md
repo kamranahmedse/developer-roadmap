@@ -1,7 +1,7 @@
-# apply()
+# apply
 
-`apply()` invokes a function immediately, setting the this value to a specified object and passing arguments as an array.
+The apply() method of Function instances calls this function with a given this value, and arguments provided as an array (or an array-like object).
 
 Visit the following resources to learn more:
 
-- [@article@Apply Method - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+- [@official@apply() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
