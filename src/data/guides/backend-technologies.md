@@ -1,6 +1,6 @@
 ---
 title: 'Top 10+ Backend Technologies to Use in @currentYear@: Expert Advice'
-description: 'Looking for the best backend technologies in (@currentYear@)? Check out our expert list of top tools for developers.'
+description: 'Looking for the best backend technologies in @currentYear@? Check out our expert list of top tools for developers.'
 authorId: fernando
 excludedBySlug: '/backend/technologies'
 seo:
