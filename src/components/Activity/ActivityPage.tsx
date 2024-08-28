@@ -5,6 +5,10 @@ import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
 import { ActivityStream, type UserStreamActivity } from './ActivityStream';
+import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
+import type { PageType } from '../CommandMenu/CommandMenu';
+import { useToast } from '../../hooks/use-toast';
+import { ProjectProgress } from './ProjectProgress';
 
 type ProgressResponse = {
   updatedAt: string;
@@ -47,11 +51,14 @@ export type ActivityResponse = {
     };
   }[];
   activities: UserStreamActivity[];
+  projects: ProjectStatusDocument[];
 };
 
 export function ActivityPage() {
+  const toast = useToast();
   const [activity, setActivity] = useState<ActivityResponse>();
   const [isLoading, setIsLoading] = useState(true);
+  const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
 
   async function loadActivity() {
     const { error, response } = await httpGet<ActivityResponse>(
@@ -68,11 +75,30 @@ export function ActivityPage() {
     setActivity(response);
   }
 
+  async function loadAllProjectDetails() {
+    const { error, response } = await httpGet<PageType[]>(`/pages.json`);
+
+    if (error) {
+      toast.error(error.message || 'Something went wrong');
+      return;
+    }
+
+    if (!response) {
+      return [];
+    }
+
+    const allProjects = response.filter((page) => page.group === 'Projects');
+    console.log(allProjects);
+    setProjectDetails(allProjects);
+  }
+
   useEffect(() => {
-    loadActivity().finally(() => {
-      pageProgressMessage.set('');
-      setIsLoading(false);
-    });
+    Promise.allSettled([loadActivity(), loadAllProjectDetails()]).finally(
+      () => {
+        pageProgressMessage.set('');
+        setIsLoading(false);
+      },
+    );
   }, []);
 
   const learningRoadmaps = activity?.learning.roadmaps || [];
@@ -105,6 +131,17 @@ export function ActivityPage() {
   const hasProgress =
     learningRoadmapsToShow.length !== 0 ||
     learningBestPracticesToShow.length !== 0;
+
+  const enrichedProjects = activity?.projects.map((project) => {
+    const projectDetail = projectDetails.find(
+      (page) => page.id === project.projectId,
+    );
+
+    return {
+      ...project,
+      title: projectDetail?.title || 'N/A',
+    };
+  });
 
   return (
     <>
@@ -200,6 +237,19 @@ export function ActivityPage() {
           </>
         )}
       </div>
+
+      {enrichedProjects && enrichedProjects?.length > 0 && (
+        <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
+          <h2 className="mb-3 text-xs uppercase text-gray-400">
+            Your Projects
+          </h2>
+          <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+            {enrichedProjects.map((project) => (
+              <ProjectProgress key={project._id} projectStatus={project} />
+            ))}
+          </div>
+        </div>
+      )}
 
       {hasProgress && (
         <ActivityStream activities={activity?.activities || []} />
