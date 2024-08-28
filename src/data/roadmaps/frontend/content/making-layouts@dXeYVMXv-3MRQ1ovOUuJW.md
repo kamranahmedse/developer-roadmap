@@ -12,5 +12,4 @@ Visit the following resources to learn more:
 - [@article@A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 - [@article@A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid)
 - [@article@Learn CSS Grid - Course](https://cssgrid.io/)
-- [@course@Learn CSS Grid for free](https://scrimba.com/learn/cssgrid?via=roadmap)
 - [@article@Get on the Grid at Last with the CSS Grid Layout Module](https://thenewstack.io/get-grid-last-css-grid-template-markup/)
