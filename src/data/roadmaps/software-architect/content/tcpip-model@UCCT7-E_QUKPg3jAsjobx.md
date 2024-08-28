@@ -2,13 +2,13 @@
 
 The `TCP/IP model` defines how devices should transmit data between them and enables communication over networks and large distances. The model represents how data is exchanged and organized over networks. It is split into four layers, which set the standards for data exchange and represent how data is handled and packaged when being delivered between applications, devices, and servers.
 
-- **Datalink layer**: The datalink layer defines how data should be sent, handles the physical act of sending and receiving data, and is responsible for transmitting data between applications or devices on a network. 
+- **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.
 
-- **Internet layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination. 
+- **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination. 
 
-- **Transport layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination. 
+- **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination. 
 
-- **Application layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other. 
+- **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other. 
 
 Visit the following resources to learn more:
 
