@@ -33,6 +33,8 @@ let jsonLdSchema: any[] = [];
 
 const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
 const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
+
+const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
 ---
 
 <BaseLayout
@@ -47,23 +49,29 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
 >
   <div class='bg-gray-50'>
     <div class='container'>
-      <ProjectTabs projectId={projectId} activeTab='details' />
+      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='details' />
 
-      <div class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% py-2 p-4 sm:p-5'>
+      <div
+        class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
+      >
         <div class='relative'>
-          <div class='mb-4 hidden sm:flex items-center justify-between'>
+          <div class='mb-4 hidden items-center justify-between sm:flex'>
             <div class='flex flex-row flex-wrap gap-1.5'>
               {
                 projectData.skills.map((skill) => (
-                    <Badge variant='green' text={skill} />
+                  <Badge variant='green' text={skill} />
                 ))
               }
             </div>
             <Badge variant='yellow' text={projectData.difficulty} />
           </div>
-          <div class="my-2 sm:my-7">
-            <h1 class='mb-1 sm:mb-2 text-xl sm:text-3xl font-semibold'>{projectData.title}</h1>
-            <p class='text-balance text-sm text-gray-500'>{projectData.description}</p>
+          <div class='my-2 sm:my-7'>
+            <h1 class='mb-1 text-xl font-semibold sm:mb-2 sm:text-3xl'>
+              {projectData.title}
+            </h1>
+            <p class='text-balance text-sm text-gray-500'>
+              {projectData.description}
+            </p>
           </div>
         </div>
 

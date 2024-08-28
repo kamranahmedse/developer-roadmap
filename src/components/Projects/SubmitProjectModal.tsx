@@ -6,11 +6,14 @@ import { httpPost } from '../../lib/http';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
+import { getTopGitHubLanguages } from '../../lib/github.ts';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
   submittedAt: Date;
 };
+
+type GitHubApiLanguagesResponse = Record<string, number>;
 
 type VerificationChecksType = {
   repositoryExists: 'pending' | 'success' | 'error';
@@ -170,10 +173,23 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         projectUrlExists: 'success',
       });
 
+      const languagesResponse = await fetch(`${mainApiUrl}/languages`);
+      let languages: string[] = [];
+      if (languagesResponse.ok) {
+        const languagesData =
+          (await languagesResponse.json()) as GitHubApiLanguagesResponse;
+
+        languages = getTopGitHubLanguages(languagesData);
+        if (languages?.length === 0) {
+          languages = Object.keys(languagesData || {})?.slice(0, 4);
+        }
+      }
+
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
       const { response: submitResponse, error } =
         await httpPost<SubmitProjectResponse>(submitProjectUrl, {
           repositoryUrl: repoUrl,
+          languages,
         });
 
       if (error || !submitResponse) {
@@ -272,7 +288,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
         <button
           type="submit"
-          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50 text-sm"
+          className="mt-2 w-full rounded-lg bg-black p-2 text-sm font-medium text-white disabled:opacity-50"
           disabled={isLoading}
         >
           {isLoading ? 'Verifying...' : 'Verify and Submit'}
