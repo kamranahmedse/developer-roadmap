@@ -1,4 +1,4 @@
-name: Clears Cloudfront Cache
+name: Clears API Cloudfront Cache
 on:
   workflow_dispatch:
 jobs:
@@ -13,4 +13,4 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/roadmapsh/infra-ansible/actions/workflows/playbook.yml/dispatches \
-            -d '{ "ref":"master", "inputs": { "playbook": "roadmap_web.yml", "tags": "cloudfront", "is_verbose": false } }'
+            -d '{ "ref":"master", "inputs": { "playbook": "roadmap_web.yml", "tags": "cloudfront-api", "is_verbose": false } }'
