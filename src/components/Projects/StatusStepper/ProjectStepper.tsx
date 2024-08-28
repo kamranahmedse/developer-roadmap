@@ -138,7 +138,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
       )}
       <div
         className={cn(
-          'flex items-center bg-gray-100 px-4 py-2 text-sm text-gray-500 transition-colors',
+          'bg-gray-100 px-4 py-2 text-sm text-gray-500 transition-colors sm:flex sm:items-center',
           {
             'bg-purple-600 text-white': isSticky,
           },
@@ -170,7 +170,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
             >
               these tips
             </button>
-            &nbsp; to get most out of it.
+            &nbsp;to get most out of it.
           </>
         )}
         {activeStep >= 2 && (
@@ -192,7 +192,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
         {activeStep >= 2 && (
           <button
             className={cn(
-              'ml-auto flex items-center gap-1 text-sm',
+              'ml-auto hidden items-center gap-1 text-sm sm:flex',
               isCopied ? 'text-green-500' : '',
             )}
             onClick={() => {
@@ -207,7 +207,8 @@ export function ProjectStepper(props: ProjectStepperProps) {
             ) : (
               <>
                 <Share className="h-3 w-3 stroke-[2.5px]" />
-                Share Solution
+                <span className="hidden md:inline">Share Solution</span>
+                <span className="md:hidden">Share</span>
               </>
             )}
           </button>
@@ -231,21 +232,46 @@ export function ProjectStepper(props: ProjectStepperProps) {
           }}
         />
         <StepperStepSeparator isActive={activeStep > 0} />
-        <StepperAction
-          isActive={activeStep === 1}
-          isCompleted={activeStep > 1}
-          icon={Send}
-          onClick={() => {
-            if (!isLoggedIn()) {
-              showLoginPopup();
-              return;
-            }
+        <div className="flex items-center gap-2">
+          <StepperAction
+            isActive={activeStep === 1}
+            isCompleted={activeStep > 1}
+            icon={Send}
+            onClick={() => {
+              if (!isLoggedIn()) {
+                showLoginPopup();
+                return;
+              }
 
-            setIsSubmittingProject(true);
-          }}
-          text={activeStep > 1 ? 'Submitted' : 'Submit Solution'}
-          number={2}
-        />
+              setIsSubmittingProject(true);
+            }}
+            text={activeStep > 1 ? 'Submitted' : 'Submit Solution'}
+            number={2}
+          />
+
+          <span className="text-gray-600 sm:hidden">&middot;</span>
+          <button
+            className={cn(
+              'flex items-center gap-2 text-sm sm:hidden',
+              isCopied ? 'text-green-500' : 'text-gray-600',
+            )}
+            onClick={() => {
+              copyText(projectSolutionUrl);
+            }}
+          >
+            {isCopied ? (
+              <>
+                <CheckIcon additionalClasses="h-3 w-3" />
+                Copied
+              </>
+            ) : (
+              <>
+                <Share className="h-3 w-3 stroke-[2.5px]" />
+                Share Solution
+              </>
+            )}
+          </button>
+        </div>
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep
           isActive={activeStep === 2}
