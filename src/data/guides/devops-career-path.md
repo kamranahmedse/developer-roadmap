@@ -132,7 +132,7 @@ As a DevOps professional, you can decide to go for any of these following DevOps
 - Automation expert
 - General DevOps engineer
 - System engineer
-- DevOps erchitect
+- DevOps architect
 - DevOps release manager
 - DevSecOps engineer
 - DevOps test engineer
