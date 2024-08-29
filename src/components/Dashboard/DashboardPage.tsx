@@ -1,11 +1,9 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useState } from 'react';
 import { httpGet } from '../../lib/http';
-import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/react';
 import { $teamList } from '../../stores/team';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
-import { cn } from '../../lib/classname';
 import { DashboardTab } from './DashboardTab';
 import { PersonalDashboard } from './PersonalDashboard';
 
@@ -39,7 +37,7 @@ export function DashboardPage(props: DashboardPageProps) {
   }, []);
 
   return (
-    <div className="container py-6 pb-14">
+    <div className="container pb-20 pt-8">
       <div className="flex flex-wrap items-center gap-1">
         <DashboardTab
           label="Personal"
