@@ -1,4 +1,4 @@
-import { CheckCircle2, Clipboard } from 'lucide-react';
+import { CheckCircle, CheckCircle2, Clipboard, Copy } from 'lucide-react';
 import { getUser } from '../../lib/jwt.ts';
 import { Modal } from '../Modal';
 import { CheckIcon as ReactCheckIcon } from '../ReactIcons/CheckIcon.tsx';
@@ -52,12 +52,12 @@ export function SubmitSuccessModal(props: SubmitSuccessModalProps) {
           >
             {isCopied ? (
               <>
-                <CheckCircle2 className="size-4 stroke-[2.5px]" />
-                Copied
+                <CheckCircle className="size-4 stroke-[2.5px]" />
+                URL Copied
               </>
             ) : (
               <>
-                <Clipboard className="size-4 stroke-[2.5px]" />
+                <Copy className="size-4 stroke-[2.5px]" />
                 Copy Shareable Link
               </>
             )}
