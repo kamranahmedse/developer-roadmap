@@ -8,7 +8,7 @@ import {
   type AllowedVoteType,
 } from './ListProjectSolutions';
 import { getRelativeTimeString } from '../../lib/date';
-import { ArrowUpRight, ThumbsDown, ThumbsUp } from 'lucide-react';
+import { ArrowUpRight, ThumbsDown, ThumbsUp, Trophy } from 'lucide-react';
 import { VoteButton } from './VoteButton';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon';
 import { isLoggedIn } from '../../lib/jwt';
@@ -132,63 +132,58 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
         window.location.reload();
       }}
     >
-      <div className="relative p-4">
-        <h1 className="text-xl font-semibold">{projectTitle}</h1>
-        <p className="mt-1 max-w-xs text-sm text-gray-500">
-          {projectDescription}
-        </p>
+      <div className="relative p-6">
+        <div className="mb-6 flex items-center justify-between">
+          <h1 className="text-2xl font-bold text-gray-900">{projectTitle}</h1>
+          <Trophy className="h-6 w-6 text-yellow-500" />
+        </div>
+        <p className="mb-6 text-sm text-gray-600">{projectDescription}</p>
 
-        <hr className="-mx-4 my-4 border-gray-300" />
-
-        <div className="flex items-center gap-1.5">
-          <img
-            src={
-              avatar
-                ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-                : '/images/default-avatar.png'
-            }
-            alt={solution?.user?.name}
-            className="mr-0.5 h-7 w-7 rounded-full"
-          />
-          <span className="font-medium text-black">{solution?.user.name}</span>
-          <span className="hidden sm:inline">
-            {submittedAlternatives[
-              Math.floor(Math.random() * submittedAlternatives.length)
-            ] || 'submitted their solution'}
-          </span>{' '}
-          <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
-            {getRelativeTimeString(solution?.submittedAt!)}
-          </span>
+        <div className="mb-6 rounded-lg bg-gray-100 p-4">
+          <div className="flex items-center gap-3">
+            <img
+              src={
+                avatar
+                  ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+                  : '/images/default-avatar.png'
+              }
+              alt={solution?.user?.name}
+              className="h-12 w-12 rounded-full border-2 border-white shadow-md"
+            />
+            <div>
+              <h2 className="text-lg font-semibold text-gray-900">{solution?.user.name}'s Solution</h2>
+              <p className="text-sm text-gray-600">
+                {submittedAlternatives[Math.floor(Math.random() * submittedAlternatives.length)] || 'Submitted'}{' '}
+                {getRelativeTimeString(solution?.submittedAt!)}
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="mt-4 flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between">
           <a
-            className="flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+            className="flex items-center gap-2 rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
             href={solution?.repositoryUrl}
             target="_blank"
           >
-            <GitHubIcon className="h-4 w-4 text-current" />
-            View Solution
+            <GitHubIcon className="h-5 w-5 text-current" />
+            View Solution on GitHub
+            <ArrowUpRight className="h-4 w-4" />
           </a>
 
-          <div className="flex shrink-0 overflow-hidden rounded-full border">
+          <div className="flex overflow-hidden rounded-md border">
             <VoteButton
               icon={ThumbsUp}
               isActive={solution?.voteType === 'upvote'}
               count={solution?.upvotes || 0}
-              onClick={() => {
-                handleSubmitVote(solution?.id!, 'upvote');
-              }}
+              onClick={() => handleSubmitVote(solution?.id!, 'upvote')}
             />
-
             <VoteButton
               icon={ThumbsDown}
               isActive={solution?.voteType === 'downvote'}
               count={solution?.downvotes || 0}
-              hideCount={true}
-              onClick={() => {
-                handleSubmitVote(solution?.id!, 'downvote');
-              }}
+              hideCount={false}
+              onClick={() => handleSubmitVote(solution?.id!, 'downvote')}
             />
           </div>
         </div>
