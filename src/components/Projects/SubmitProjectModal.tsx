@@ -1,5 +1,4 @@
 import { CheckIcon, CopyIcon, X } from 'lucide-react';
-import { CheckIcon as ReactCheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { Modal } from '../Modal';
 import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
@@ -40,7 +39,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
   const { isCopied, copyText } = useCopyText();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
   const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
   const [verificationChecks, setVerificationChecks] =
     useState<VerificationChecksType>({
@@ -62,7 +61,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
       setIsLoading(true);
       setError('');
-      setSuccessMessage('');
+      setIsSuccess(false);
 
       if (!repoUrl) {
         setVerificationChecks({
@@ -199,7 +198,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         );
       }
 
-      setSuccessMessage('Solution submitted successfully!');
+      setIsSuccess(true);
       setIsLoading(false);
 
       onSubmit(submitResponse);
@@ -210,14 +209,8 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
     }
   };
 
-  if (successMessage) {
-    return (
-      <SubmitSuccessModal
-        projectId={projectId}
-        onClose={onClose}
-        successMessage={successMessage}
-      />
-    );
+  if (isSuccess) {
+    return <SubmitSuccessModal projectId={projectId} onClose={onClose} />;
   }
 
   return (
@@ -295,12 +288,6 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         </button>
         {error && (
           <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
-        )}
-
-        {successMessage && (
-          <p className="mt-2 text-sm font-medium text-green-500">
-            {successMessage}
-          </p>
         )}
       </form>
 
