@@ -1415,7 +1415,7 @@
     ]
   },
   "k9rSR-YQ8B_iRcXNm2btP": {
-    "title": "Unary Opeartors",
+    "title": "Unary Operators",
     "description": "JavaScript Unary Operators are the special operators that consider a single operand and perform all the types of operations on that single operand. These operators include unary plus, unary minus, prefix increments, postfix increments, prefix decrements, and postfix decrements.\n\nVisit the following resources to learn more:",
     "links": [
       {
@@ -1790,8 +1790,14 @@
   },
   "-BtF34cEzI6J8sZCDRlRE": {
     "title": "apply",
-    "description": "",
-    "links": []
+    "description": "The apply() method of Function instances calls this function with a given this value, and arguments provided as an array (or an array-like object).\n\n    const numbers = [5, 6, 2, 3, 7];\n    \n    const max = Math.max.apply(null, numbers);\n    \n    console.log(max);\n    // Expected output: 7\n    \n    const min = Math.min.apply(null, numbers);\n    \n    console.log(min);\n    // Expected output: 2\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "apply() - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply",
+        "type": "article"
+      }
+    ]
   },
   "dbercnxXVTJXMpYSDNGb2": {
     "title": "bind",
