@@ -116,8 +116,14 @@
   },
   "rmqXH29n1oXtZ8tvmcRFn": {
     "title": "SELECT",
-    "description": "",
-    "links": []
+    "description": "The SELECT statement in SQL is used to retrieve data from a database. It allows you to specify the columns you want to fetch from a particular table or a combination of tables. Here’s a basic syntax of a SELECT statement:\n\n'''sql SELECT \\* FROM employees; '''\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL_Select",
+        "url": "https://www.w3schools.com/sql/sql_select.asp",
+        "type": "article"
+      }
+    ]
   },
   "mPj6BiK5FKKkIQ9WsWEo6": {
     "title": "INSERT",
