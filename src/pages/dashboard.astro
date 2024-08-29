@@ -1,0 +1,8 @@
+---
+import { DashboardPage } from '../components/Dashboard/DashboardPage';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='Dashboard' noIndex={true}>
+  <DashboardPage client:load />
+</BaseLayout>
