@@ -5,7 +5,6 @@ import { useToast } from '../../hooks/use-toast';
 import { getUser } from '../../lib/jwt';
 import { LoadingProgress } from './LoadingProgress';
 import { ResourceProgress } from '../Activity/ResourceProgress';
-import { Plus, Minus } from 'lucide-react';
 import { TeamActivityPage } from '../TeamActivity/TeamActivityPage';
 import { cn } from '../../lib/classname';
 
@@ -21,7 +20,6 @@ export function TeamDashboard(props: TeamDashboardProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
-  const [showAllMembers, setShowAllMembers] = useState(false);
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(
@@ -65,19 +63,17 @@ export function TeamDashboard(props: TeamDashboardProps) {
       (progress) => progress.resourceType === 'roadmap',
     ) || [];
 
-  const allMembersWithoutCurrentUser = teamMembers
-    .sort((a, b) => {
-      if (a.email === currentUser.email) {
-        return -1;
-      }
+  const allMembersWithoutCurrentUser = teamMembers.sort((a, b) => {
+    if (a.email === currentUser.email) {
+      return -1;
+    }
 
-      if (b.email === currentUser.email) {
-        return 1;
-      }
+    if (b.email === currentUser.email) {
+      return 1;
+    }
 
-      return 0;
-    })
-    .slice(0, showAllMembers ? teamMembers.length : 15);
+    return 0;
+  });
 
   return (
     <section className="mt-8">
@@ -137,18 +133,6 @@ export function TeamDashboard(props: TeamDashboardProps) {
               </figure>
             );
           })}
-          {teamMembers.length > 0 && (
-            <button
-              onClick={() => setShowAllMembers((prev) => !prev)}
-              className="flex aspect-square size-8 items-center justify-center rounded-md bg-gray-200 text-gray-600 hover:text-black"
-            >
-              {showAllMembers ? (
-                <Minus className="size-5" />
-              ) : (
-                <Plus className="size-5" />
-              )}
-            </button>
-          )}
         </div>
       )}
 
@@ -166,7 +150,7 @@ function TeamMemberLoading(props: TeamMemberLoadingProps) {
 
   return (
     <div className={cn('flex flex-wrap gap-2', className)}>
-      {Array.from({ length: 8 }).map((_, index) => (
+      {Array.from({ length: 15 }).map((_, index) => (
         <div
           key={index}
           className="size-8 animate-pulse rounded-md bg-gray-200"

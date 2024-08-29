@@ -7,15 +7,31 @@ import { ProjectProgress } from '../Activity/ProjectProgress';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import { useToast } from '../../hooks/use-toast';
 import { LoadingProgress } from './LoadingProgress';
+import { ArrowUpRight, Pencil } from 'lucide-react';
 
 type UserDashboardResponse = {
+  name: string;
+  email: string;
+  avatar: string;
+  headline: string;
+  username: string;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
 };
 
-type PersonalDashboardProps = {};
+export type BuiltInRoadmap = {
+  id: string;
+  title: string;
+  description: string;
+};
+
+type PersonalDashboardProps = {
+  builtInRoadmaps?: BuiltInRoadmap[];
+  builtInBestPractices?: BuiltInRoadmap[];
+};
 
 export function PersonalDashboard(props: PersonalDashboardProps) {
+  const { builtInRoadmaps = [], builtInBestPractices = [] } = props;
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -79,19 +95,81 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   });
 
   const enrichedProjects =
-    personalDashboardDetails?.projects?.map((project) => {
-      const projectDetail = projectDetails.find(
-        (page) => page.id === project.projectId,
-      );
+    personalDashboardDetails?.projects
+      ?.map((project) => {
+        const projectDetail = projectDetails.find(
+          (page) => page.id === project.projectId,
+        );
 
-      return {
-        ...project,
-        title: projectDetail?.title || 'N/A',
-      };
-    }) || [];
+        return {
+          ...project,
+          title: projectDetail?.title || 'N/A',
+        };
+      })
+      ?.sort((a, b) => {
+        const isPendingA = !a.repositoryUrl && !a.submittedAt;
+        const isPendingB = !b.repositoryUrl && !b.submittedAt;
+
+        if (isPendingA && !isPendingB) {
+          return -1;
+        }
+
+        if (!isPendingA && isPendingB) {
+          return 1;
+        }
+
+        return 0;
+      }) || [];
+
+  const { avatar, name, headline, email, username } =
+    personalDashboardDetails || {};
+  const avatarLink = avatar
+    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+    : '/images/default-avatar.png';
 
   return (
     <section className="mt-8">
+      {isLoading && (
+        <div className="mb-6 h-[91px] animate-pulse rounded-md border bg-gray-100" />
+      )}
+      {!isLoading && (
+        <div className="mb-6 flex items-center justify-between gap-2 overflow-hidden rounded-md border bg-gray-50">
+          <div className="flex items-center gap-3 pl-4">
+            <figure className="shrink-0">
+              <img
+                src={avatarLink}
+                alt={name}
+                className="h-14 w-14 rounded-full object-cover"
+              />
+            </figure>
+            <div>
+              <h2 className="text-xl font-bold">{name}</h2>
+              <p className="text-sm text-gray-500">{headline || email}</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-start divide-y border-l">
+            <a
+              className="flex items-center gap-2 bg-white px-3 py-3 text-sm font-medium text-gray-500 hover:text-black"
+              href={`/account/update-profile`}
+              target="_blank"
+            >
+              <Pencil className="size-4" />
+              Edit Profile
+            </a>
+            <a
+              className="flex items-center gap-2 bg-white px-3 py-3 text-sm font-medium text-gray-500 hover:text-black aria-disabled:cursor-not-allowed"
+              {...(username ? { href: `/u/${username}` } : {})}
+              target="_blank"
+              aria-disabled={!username}
+            >
+              <ArrowUpRight className="size-4" />
+              View Profile
+            </a>
+          </div>
+        </div>
+      )}
+
       <h2 className="mb-3 text-xs uppercase text-gray-400">
         Progress and Bookmarks
       </h2>
@@ -141,6 +219,59 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           })}
         </div>
       )}
+
+      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+        All Roadmaps
+      </h2>
+      <ListRoadmaps roadmaps={builtInRoadmaps} />
+
+      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+        Best Practices
+      </h2>
+      <ListRoadmaps roadmaps={builtInBestPractices} />
     </section>
+  );
+}
+
+type ListRoadmapsProps = {
+  roadmaps: BuiltInRoadmap[];
+};
+export function ListRoadmaps(props: ListRoadmapsProps) {
+  const { roadmaps } = props;
+
+  const [showAll, setShowAll] = useState(roadmaps.length <= 12);
+  const roadmapsToShow = showAll ? roadmaps : roadmaps.slice(0, 12);
+
+  return (
+    <div className="relative">
+      <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
+        {roadmapsToShow.map((roadmap) => (
+          <a
+            key={roadmap.id}
+            className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+            href={`/${roadmap.id}`}
+          >
+            {roadmap.title}
+          </a>
+        ))}
+      </div>
+
+      {!showAll && (
+        <div
+          className="absolute bottom-0 left-0 right-0 -m-1 flex h-full items-end justify-center bg-gradient-to-t from-white to-transparent p-2"
+          style={{
+            background:
+              'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%)',
+          }}
+        >
+          <button
+            className="text-sm font-medium text-gray-600 hover:text-black focus:outline-none"
+            onClick={() => setShowAll(true)}
+          >
+            + Show all
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

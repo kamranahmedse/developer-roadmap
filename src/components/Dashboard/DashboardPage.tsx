@@ -5,12 +5,19 @@ import { useStore } from '@nanostores/react';
 import { $teamList } from '../../stores/team';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
 import { DashboardTab } from './DashboardTab';
-import { PersonalDashboard } from './PersonalDashboard';
+import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
+import { getUser } from '../../lib/jwt';
 
-type DashboardPageProps = {};
+type DashboardPageProps = {
+  builtInRoadmaps?: BuiltInRoadmap[];
+  builtInBestPractices?: BuiltInRoadmap[];
+};
 
 export function DashboardPage(props: DashboardPageProps) {
+  const { builtInRoadmaps, builtInBestPractices } = props;
+
+  const currentUser = getUser();
   const toast = useToast();
   const teamList = useStore($teamList);
 
@@ -37,13 +44,18 @@ export function DashboardPage(props: DashboardPageProps) {
     getAllTeams().finally(() => setIsLoading(false));
   }, []);
 
+  const userAvatar = currentUser?.avatar
+    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${currentUser.avatar}`
+    : '/images/default-avatar.png';
+
   return (
-    <div className="container pb-20 pt-8">
+    <div className="container min-h-screen pb-20 pt-8">
       <div className="flex flex-wrap items-center gap-1">
         <DashboardTab
           label="Personal"
           isActive={!selectedTeamId}
           onClick={() => setSelectedTeamId(undefined)}
+          avatar={userAvatar}
         />
         {isLoading && (
           <>
@@ -55,14 +67,21 @@ export function DashboardPage(props: DashboardPageProps) {
 
         {!isLoading && (
           <>
-            {teamList.map((team) => (
-              <DashboardTab
-                key={team._id}
-                label={team.name}
-                isActive={team._id === selectedTeamId}
-                onClick={() => setSelectedTeamId(team._id)}
-              />
-            ))}
+            {teamList.map((team) => {
+              const { avatar } = team;
+              const avatarUrl = avatar
+                ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+                : '/images/default-avatar.png';
+              return (
+                <DashboardTab
+                  key={team._id}
+                  label={team.name}
+                  isActive={team._id === selectedTeamId}
+                  onClick={() => setSelectedTeamId(team._id)}
+                  avatar={avatarUrl}
+                />
+              );
+            })}
             <DashboardTab
               label="+ Create Team"
               isActive={false}
@@ -73,7 +92,12 @@ export function DashboardPage(props: DashboardPageProps) {
         )}
       </div>
 
-      {!selectedTeamId && <PersonalDashboard />}
+      {!selectedTeamId && (
+        <PersonalDashboard
+          builtInRoadmaps={builtInRoadmaps}
+          builtInBestPractices={builtInBestPractices}
+        />
+      )}
       {selectedTeamId && <TeamDashboard teamId={selectedTeamId} />}
     </div>
   );
@@ -81,6 +105,6 @@ export function DashboardPage(props: DashboardPageProps) {
 
 function DashboardTabLoading() {
   return (
-    <div className="h-7 w-20 animate-pulse rounded-md border bg-gray-100"></div>
+    <div className="h-[30px] w-20 animate-pulse rounded-md border bg-gray-100"></div>
   );
 }
