@@ -49,8 +49,13 @@ type GetTeamActivityResponse = {
   perPage: number;
 };
 
-export function TeamActivityPage() {
-  const { t: teamId } = getUrlParams();
+type TeamActivityPageProps = {
+  teamId?: string;
+};
+
+export function TeamActivityPage(props: TeamActivityPageProps) {
+  const { teamId: defaultTeamId } = props;
+  const { t: teamId = defaultTeamId } = getUrlParams();
 
   const toast = useToast();
 

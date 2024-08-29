@@ -119,6 +119,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
                 updatedAt={roadmap.updatedAt}
                 title={roadmap.resourceTitle}
                 showActions={false}
+                roadmapSlug={roadmap.roadmapSlug}
               />
             );
           })}

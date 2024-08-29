@@ -6,6 +6,7 @@ import { $teamList } from '../../stores/team';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
 import { DashboardTab } from './DashboardTab';
 import { PersonalDashboard } from './PersonalDashboard';
+import { TeamDashboard } from './TeamDashboard';
 
 type DashboardPageProps = {};
 
@@ -73,6 +74,7 @@ export function DashboardPage(props: DashboardPageProps) {
       </div>
 
       {!selectedTeamId && <PersonalDashboard />}
+      {selectedTeamId && <TeamDashboard teamId={selectedTeamId} />}
     </div>
   );
 }
