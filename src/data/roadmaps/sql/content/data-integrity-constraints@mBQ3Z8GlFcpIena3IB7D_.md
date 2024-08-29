@@ -7,3 +7,4 @@ Constraints are classified into two types: column level and table level. Column 
 Learn more from the following resources:
 
 - [@article@Integrity Constraints in SQL: A Guide With Examples](https://www.datacamp.com/tutorial/integrity-constraints-sql)
+- [@article@Integrity Constraints](https://dataheadhunters.com/academy/integrity-constraints-ensuring-accuracy-and-consistency-in-your-data/)

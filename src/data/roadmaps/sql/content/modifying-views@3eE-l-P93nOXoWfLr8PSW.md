@@ -9,3 +9,4 @@ In SQL, you can modify a `VIEW` in two ways:
 Learn more from the following resources:
 
 - [@article@Modify Views in SQL Server](https://www.sqlshack.com/create-view-sql-modifying-views-in-sql-server/)
+- [@video@SQL VIEWs in 4 Minutes](https://www.youtube.com/watch?v=vLLkNI-vkV8)

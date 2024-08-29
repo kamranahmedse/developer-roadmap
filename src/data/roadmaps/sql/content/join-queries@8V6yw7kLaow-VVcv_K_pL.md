@@ -5,3 +5,4 @@ SQL `JOIN` queries combine rows from two or more tables based on a related colum
 Learn more from the following resources:
 
 - [@article@7 SQL JOIN Examples With Detailed Explanations](https://learnsql.com/blog/sql-join-examples-with-explanations/)
+- [@video@Joins are easy](https://www.youtube.com/watch?v=G3lJAxg1cy8)

@@ -5,3 +5,4 @@ SQL `JOINs` are clauses used to combine rows from two or more tables based on a 
 Learn more from the following resources:
 
 - [@article@SQL JOINs Cheat Sheet](https://www.datacamp.com/cheat-sheet/sql-joins-cheat-sheet)
+- [@video@SQL JOINs Tutorial for beginners](https://www.youtube.com/watch?v=0OQJDd3QqQM)

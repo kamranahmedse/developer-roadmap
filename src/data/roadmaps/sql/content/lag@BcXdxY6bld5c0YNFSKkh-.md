@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@Understanding the LAG function in SQL](https://www.datacamp.com/tutorial/sql-lag)
+- [@video@LAG and LEAD functions](https://www.youtube.com/watch?v=j2u52RQ0qlw)

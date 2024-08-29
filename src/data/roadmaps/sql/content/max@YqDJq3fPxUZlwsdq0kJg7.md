@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@MAX](https://www.techonthenet.com/sql/max.php)
+- [@video@Basic Aggregate Functions](https://www.youtube.com/watch?v=jcoJuc5e3RE)
