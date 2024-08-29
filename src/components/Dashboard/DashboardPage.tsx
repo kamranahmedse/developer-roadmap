@@ -46,23 +46,41 @@ export function DashboardPage(props: DashboardPageProps) {
           isActive={!selectedTeamId}
           onClick={() => setSelectedTeamId(undefined)}
         />
-        {teamList.map((team) => (
-          <DashboardTab
-            key={team._id}
-            label={team.name}
-            isActive={team._id === selectedTeamId}
-            onClick={() => setSelectedTeamId(team._id)}
-          />
-        ))}
-        <DashboardTab
-          label="+ Create Team"
-          isActive={false}
-          href="/team/new"
-          className="border-black bg-black text-white"
-        />
+        {isLoading && (
+          <>
+            <DashboardTabLoading />
+            <DashboardTabLoading />
+            <DashboardTabLoading />
+          </>
+        )}
+
+        {!isLoading && (
+          <>
+            {teamList.map((team) => (
+              <DashboardTab
+                key={team._id}
+                label={team.name}
+                isActive={team._id === selectedTeamId}
+                onClick={() => setSelectedTeamId(team._id)}
+              />
+            ))}
+            <DashboardTab
+              label="+ Create Team"
+              isActive={false}
+              href="/team/new"
+              className="border-black bg-black text-white"
+            />
+          </>
+        )}
       </div>
 
       {!selectedTeamId && <PersonalDashboard />}
     </div>
+  );
+}
+
+function DashboardTabLoading() {
+  return (
+    <div className="h-7 w-20 animate-pulse rounded-md border bg-gray-100"></div>
   );
 }

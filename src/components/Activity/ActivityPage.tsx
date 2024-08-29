@@ -88,7 +88,6 @@ export function ActivityPage() {
     }
 
     const allProjects = response.filter((page) => page.group === 'Projects');
-    console.log(allProjects);
     setProjectDetails(allProjects);
   }
 

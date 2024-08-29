@@ -10,14 +10,17 @@ type ProjectProgressType = {
   projectStatus: ProjectStatusDocument & {
     title: string;
   };
+  showActions?: boolean;
 };
 
 export function ProjectProgress(props: ProjectProgressType) {
-  const { projectStatus } = props;
+  const { projectStatus, showActions = true } = props;
   const userId = getUser()?.id;
 
   const shouldShowActions =
-    projectStatus.submittedAt && projectStatus.submittedAt !== null;
+    projectStatus.submittedAt &&
+    projectStatus.submittedAt !== null &&
+    showActions;
 
   return (
     <div className="relative">
