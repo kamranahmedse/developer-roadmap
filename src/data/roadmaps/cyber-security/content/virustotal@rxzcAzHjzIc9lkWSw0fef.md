@@ -8,7 +8,8 @@ Additionally, VirusTotal offers services to search by file hash, IP address, and
 
 Visit the following resources to learn more:
 
-- [@article@**Recommended** article about VirusTotal](https://isecjobs.com/insights/virustotal-explained/)
+- [@article@VirusTotal Explained](https://isecjobs.com/insights/virustotal-explained/)
+
 - [@official@VirusTotal's Docs on how VirusTotal Works](https://docs.virustotal.com/docs/how-it-works)
 - [@official@VirusTotal's website](https://www.virustotal.com)
 - [@article@Wikipedia Page on VirusTotal](https://en.wikipedia.org/wiki/VirusTotal)
