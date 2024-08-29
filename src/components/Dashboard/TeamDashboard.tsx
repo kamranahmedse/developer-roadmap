@@ -7,6 +7,7 @@ import { LoadingProgress } from './LoadingProgress';
 import { ResourceProgress } from '../Activity/ResourceProgress';
 import { TeamActivityPage } from '../TeamActivity/TeamActivityPage';
 import { cn } from '../../lib/classname';
+import { Tooltip } from '../Tooltip';
 
 type TeamDashboardProps = {
   teamId: string;
@@ -120,17 +121,18 @@ export function TeamDashboard(props: TeamDashboardProps) {
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
               : '/images/default-avatar.png';
             return (
-              <figure
-                key={member.email}
-                className="relative aspect-square size-8 overflow-hidden rounded-md bg-gray-100"
-              >
-                <img
-                  src={avatar}
-                  alt={member.name || ''}
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-                <figcaption className="sr-only">{member.name}</figcaption>
-              </figure>
+              <span className="group relative" key={member.email}>
+                <figure className="relative aspect-square size-8 overflow-hidden rounded-md bg-gray-100">
+                  <img
+                    src={avatar}
+                    alt={member.name || ''}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </figure>
+                <Tooltip position="top-center" additionalClass="text-sm">
+                  {member.name}
+                </Tooltip>
+              </span>
             );
           })}
         </div>

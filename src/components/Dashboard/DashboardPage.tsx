@@ -44,9 +44,10 @@ export function DashboardPage(props: DashboardPageProps) {
     getAllTeams().finally(() => setIsLoading(false));
   }, []);
 
-  const userAvatar = currentUser?.avatar
-    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${currentUser.avatar}`
-    : '/images/default-avatar.png';
+  const userAvatar =
+    currentUser?.avatar && !isLoading
+      ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${currentUser.avatar}`
+      : '/images/default-avatar.png';
 
   return (
     <div className="container min-h-screen pb-20 pt-8">
