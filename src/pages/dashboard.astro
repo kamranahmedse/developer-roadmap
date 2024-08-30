@@ -4,23 +4,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
 import { getRoadmapsByTag } from '../lib/roadmap';
 
-const roadmaps = await getRoadmapsByTag('roadmap');
+const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
+const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const bestPractices = await getAllBestPractices();
 
-const enrichedRoadmaps = roadmaps.map((roadmap) => {
-  const { frontmatter } = roadmap;
+const enrichedRoleRoadmaps = roleRoadmaps
+  .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+  .map((roadmap) => {
+    const { frontmatter } = roadmap;
 
-  return {
-    id: roadmap.id,
-    title: frontmatter.briefTitle,
-    description: frontmatter.briefDescription,
-  };
-});
+    return {
+      id: roadmap.id,
+      url: `/${roadmap.id}`,
+      title: frontmatter.briefTitle,
+      description: frontmatter.briefDescription,
+    };
+  });
+const enrichedSkillRoadmaps = skillRoadmaps
+  .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+  .map((roadmap) => {
+    const { frontmatter } = roadmap;
+
+    return {
+      id: roadmap.id,
+      url: `/${roadmap.id}`,
+      title:
+        frontmatter.briefTitle === 'Go' ? 'Go Roadmap' : frontmatter.briefTitle,
+      description: frontmatter.briefDescription,
+    };
+  });
+
 const enrichedBestPractices = bestPractices.map((bestPractice) => {
   const { frontmatter } = bestPractice;
 
   return {
     id: bestPractice.id,
+    url: `/best-practices/${bestPractice.id}`,
     title: frontmatter.briefTitle,
     description: frontmatter.briefDescription,
   };
@@ -29,7 +48,8 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
 
 <BaseLayout title='Dashboard' noIndex={true}>
   <DashboardPage
-    builtInRoadmaps={enrichedRoadmaps}
+    builtInRoleRoadmaps={enrichedRoleRoadmaps}
+    builtInSkillRoadmaps={enrichedSkillRoadmaps}
     builtInBestPractices={enrichedBestPractices}
     client:load
   />

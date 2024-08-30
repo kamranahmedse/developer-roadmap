@@ -10,12 +10,14 @@ import { TeamDashboard } from './TeamDashboard';
 import { getUser } from '../../lib/jwt';
 
 type DashboardPageProps = {
-  builtInRoadmaps?: BuiltInRoadmap[];
+  builtInRoleRoadmaps?: BuiltInRoadmap[];
+  builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
 };
 
 export function DashboardPage(props: DashboardPageProps) {
-  const { builtInRoadmaps, builtInBestPractices } = props;
+  const { builtInRoleRoadmaps, builtInBestPractices, builtInSkillRoadmaps } =
+    props;
 
   const currentUser = getUser();
   const toast = useToast();
@@ -95,7 +97,8 @@ export function DashboardPage(props: DashboardPageProps) {
 
       {!selectedTeamId && (
         <PersonalDashboard
-          builtInRoadmaps={builtInRoadmaps}
+          builtInRoleRoadmaps={builtInRoleRoadmaps}
+          builtInSkillRoadmaps={builtInSkillRoadmaps}
           builtInBestPractices={builtInBestPractices}
         />
       )}

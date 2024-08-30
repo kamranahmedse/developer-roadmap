@@ -8,6 +8,7 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import { useToast } from '../../hooks/use-toast';
 import { LoadingProgress } from './LoadingProgress';
 import { ArrowUpRight, Pencil } from 'lucide-react';
+import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 
 type UserDashboardResponse = {
   name: string;
@@ -21,17 +22,24 @@ type UserDashboardResponse = {
 
 export type BuiltInRoadmap = {
   id: string;
+  url: string;
   title: string;
   description: string;
+  isFavorite?: boolean;
 };
 
 type PersonalDashboardProps = {
-  builtInRoadmaps?: BuiltInRoadmap[];
+  builtInRoleRoadmaps?: BuiltInRoadmap[];
+  builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
 };
 
 export function PersonalDashboard(props: PersonalDashboardProps) {
-  const { builtInRoadmaps = [], builtInBestPractices = [] } = props;
+  const {
+    builtInRoleRoadmaps = [],
+    builtInBestPractices = [],
+    builtInSkillRoadmaps = [],
+  } = props;
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +57,17 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return;
     }
 
+    progressList?.progresses?.forEach((progress) => {
+      window.dispatchEvent(
+        new CustomEvent('mark-favorite', {
+          detail: {
+            resourceId: progress.resourceId,
+            resourceType: progress.resourceType,
+            isFavorite: progress.isFavorite,
+          },
+        }),
+      );
+    });
     setPersonalDashboardDetails(progressList);
   }
 
@@ -74,12 +93,14 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     );
   }, []);
 
-  const learningRoadmaps =
-    personalDashboardDetails?.progresses?.filter(
-      (progress) => progress.resourceType === 'roadmap',
-    ) || [];
+  useEffect(() => {
+    window.addEventListener('refresh-favorites', loadProgress);
+    return () => window.removeEventListener('refresh-favorites', loadProgress);
+  }, []);
 
-  const learningRoadmapsToShow = learningRoadmaps.sort((a, b) => {
+  const learningRoadmapsToShow = (
+    personalDashboardDetails?.progresses || []
+  ).sort((a, b) => {
     const updatedAtA = new Date(a.updatedAt);
     const updatedAtB = new Date(b.updatedAt);
 
@@ -193,10 +214,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
                 totalCount={totalCount}
                 skippedCount={skippedCount}
                 resourceId={roadmap.resourceId}
-                resourceType="roadmap"
+                resourceType={roadmap.resourceType}
                 updatedAt={roadmap.updatedAt}
                 title={roadmap.resourceTitle}
-                showActions={false}
+                showActions={true}
                 roadmapSlug={roadmap.roadmapSlug}
               />
             );
@@ -213,7 +234,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
               <ProjectProgress
                 key={project.projectId}
                 projectStatus={project}
-                showActions={false}
+                showActions={true}
               />
             );
           })}
@@ -221,9 +242,14 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       )}
 
       <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
-        All Roadmaps
+        Role Based Roadmaps
       </h2>
-      <ListRoadmaps roadmaps={builtInRoadmaps} />
+      <ListRoadmaps roadmaps={builtInRoleRoadmaps} />
+
+      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+        Skill Based Roadmaps
+      </h2>
+      <ListRoadmaps roadmaps={builtInSkillRoadmaps} />
 
       <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
         Best Practices
@@ -242,23 +268,41 @@ export function ListRoadmaps(props: ListRoadmapsProps) {
   const [showAll, setShowAll] = useState(roadmaps.length <= 12);
   const roadmapsToShow = showAll ? roadmaps : roadmaps.slice(0, 12);
 
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <div className="relative">
       <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
         {roadmapsToShow.map((roadmap) => (
-          <a
-            key={roadmap.id}
-            className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
-            href={`/${roadmap.id}`}
-          >
-            {roadmap.title}
-          </a>
+          <div className="relative w-full" key={roadmap.id}>
+            <a
+              key={roadmap.id}
+              className="block rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+              href={roadmap.url}
+            >
+              {roadmap.title}
+            </a>
+
+            {isMounted && (
+              <MarkFavorite
+                resourceId={roadmap.id}
+                resourceType={
+                  roadmap.url.includes('best-practices')
+                    ? 'best-practice'
+                    : 'roadmap'
+                }
+              />
+            )}
+          </div>
         ))}
       </div>
 
       {!showAll && (
         <div
-          className="absolute bottom-0 left-0 right-0 -m-1 flex h-full items-end justify-center bg-gradient-to-t from-white to-transparent p-2"
+          className="absolute inset-0 z-50 -m-1 flex items-end justify-center bg-gradient-to-t from-white to-transparent"
           style={{
             background:
               'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%)',

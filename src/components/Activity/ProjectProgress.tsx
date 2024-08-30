@@ -11,11 +11,15 @@ type ProjectProgressType = {
     title: string;
   };
   showActions?: boolean;
+  userId?: string;
 };
 
 export function ProjectProgress(props: ProjectProgressType) {
-  const { projectStatus, showActions = true } = props;
-  const userId = getUser()?.id;
+  const {
+    projectStatus,
+    showActions = true,
+    userId: defaultUserId = getUser()?.id,
+  } = props;
 
   const shouldShowActions =
     projectStatus.submittedAt &&
@@ -43,7 +47,7 @@ export function ProjectProgress(props: ProjectProgressType) {
       {shouldShowActions && (
         <div className="absolute right-2 top-0 flex h-full items-center">
           <ProjectProgressActions
-            userId={userId!}
+            userId={defaultUserId!}
             projectId={projectStatus.projectId}
           />
         </div>
