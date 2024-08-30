@@ -4,3 +4,5 @@ The UPDATE statement in SQL is used to modify existing records in a table. It al
 
 Learn more from the following resources:
 
+- [@article@SQL UPDATE Statement](https://www.w3schools.com/sql/sql_update.asp)
+- [@article@Efficient column updates in SQL](https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column)

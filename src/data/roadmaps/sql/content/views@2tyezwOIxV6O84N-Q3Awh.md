@@ -10,3 +10,5 @@ Views can be simple (based on a single table) or complex (involving multiple tab
 
 Learn more from the following resources:
 
+- [@video@SQL Views Tutorial](https://www.youtube.com/watch?v=cLSxasHg9WY)
+- [@article@Views in SQL](https://www.datacamp.com/tutorial/views-in-sql)

@@ -4,3 +4,5 @@ In SQL, a row (also called a record or tuple) represents a single, implicitly st
 
 Learn more from the following resources:
 
+- [@article@Row - Database](https://en.wikipedia.org/wiki/Row_(database))
+- [@article@Database Row: Definition, Examples](https://www.devx.com/terms/database-row/)

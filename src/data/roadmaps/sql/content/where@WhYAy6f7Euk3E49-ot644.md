@@ -6,3 +6,5 @@ The WHERE clause is not only used in SELECT statement, but it is also used in UP
 
 Learn more from the following resources:
 
+- [@video@How to filter with the WHERE clause in SQL](https://www.youtube.com/watch?v=4Uv0o8IBqw0)
+- [@article@WHERE Clause](https://www.w3schools.com/sql/sql_where.asp)

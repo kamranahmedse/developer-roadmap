@@ -6,3 +6,5 @@ These are termed so because they perform a calculation across a set of rows whic
 
 Learn more from the following resources:
 
+- [@article@SQL Window Functions](https://mode.com/sql-tutorial/sql-window-functions)
+- [@video@SQL Window Functions in 10 Minutes](https://www.youtube.com/watch?v=y1KCM8vbYe4)

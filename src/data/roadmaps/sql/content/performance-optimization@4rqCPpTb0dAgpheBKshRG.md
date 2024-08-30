@@ -4,3 +4,5 @@ Performance optimization in SQL involves a set of practices aimed at improving t
 
 Learn more from the following resources:
 
+- [@article@Performance Tuning SQL Queries](https://mode.com/sql-tutorial/sql-performance-tuning)
+- [@article@SQL performance tuning](https://stackify.com/performance-tuning-in-sql-server-find-slow-queries/)

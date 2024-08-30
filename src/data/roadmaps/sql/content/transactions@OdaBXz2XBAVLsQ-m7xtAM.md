@@ -4,3 +4,5 @@ Transactions in SQL are units of work that group one or more database operations
 
 Learn more from the following resources:
 
+- [@articles@Transactions](https://www.tutorialspoint.com/sql/sql-transactions.htm)
+- [@article@A Guide to ACID Properties in Database Management Systems](https://www.mongodb.com/resources/basics/databases/acid-transactions)

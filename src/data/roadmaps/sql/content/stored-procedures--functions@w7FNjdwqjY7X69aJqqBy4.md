@@ -4,3 +4,4 @@ Stored procedures and functions are precompiled database objects that encapsulat
 
 Learn more from the following resources:
 
+- [@article@Stored Procedure vs Functions](https://www.shiksha.com/online-courses/articles/stored-procedure-vs-function-what-are-the-differences/)

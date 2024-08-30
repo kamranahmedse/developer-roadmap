@@ -4,3 +4,5 @@ The `RANK` function in SQL is a window function that assigns a rank to each row 
 
 Learn more from the following resources:
 
+- [@article@Overview of SQL RANK Functions](https://www.sqlshack.com/overview-of-sql-rank-functions/)
+- [@video@RANK, DENSE_RANK, ROW_NUMBER SQL Analytical Functions Simplified](https://www.youtube.com/watch?v=xMWEVFC4FOk)

@@ -1,5 +1,8 @@
 # REPLACE
 
-Reducing subqueries in SQL involves optimizing query performance by minimizing or eliminating the use of nested queries. This process often includes rewriting subqueries as joins, using derived tables, or employing common table expressions (CTEs). By reducing subqueries, developers can improve query execution time, reduce resource consumption, and enhance overall database performance. This optimization technique is particularly important for complex queries or when dealing with large datasets, as it can significantly impact the efficiency of data retrieval and manipulation operations.
+The `REPLACE` function in SQL is used to substitute all occurrences of a specified substring within a string with a new substring. It takes three arguments: the original string, the substring to be replaced, and the substring to replace it with. If the specified substring is found in the original string, `REPLACE` returns the modified string with all instances of the old substring replaced by the new one. If the substring is not found, the original string is returned unchanged. This function is particularly useful for data cleaning tasks, such as correcting typos, standardizing formats, or replacing obsolete data.
 
 Learn more from the following resources:
+
+- [@article@SQL REPLACE Function](https://www.w3schools.com/sql/func_sqlserver_replace.asp)
+- [@article@How to use the SQL REPLACE Function](https://www.datacamp.com/tutorial/sql-replace)

@@ -4,3 +4,5 @@ Transaction isolation levels in SQL define the degree to which the operations in
 
 Learn more from the following resources:
 
+- [@article@Everything you always wanted to know about SQL isolation levels](https://www.cockroachlabs.com/blog/sql-isolation-levels-explained/)
+- [@article@Isolation Levels in SQL Server](https://www.sqlservercentral.com/articles/isolation-levels-in-sql-server)

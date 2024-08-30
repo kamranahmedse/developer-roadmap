@@ -6,3 +6,5 @@ It's important to note that, since it's a join operation on the same table, alia
 
 Learn more from the following resources:
 
+- [@article@Understanding the Self Joins in SQL](https://www.dbvis.com/thetable/understanding-self-joins-in-sql/)
+- [@article@SQL self joins](https://www.w3schools.com/sql/sql_join_self.asp)

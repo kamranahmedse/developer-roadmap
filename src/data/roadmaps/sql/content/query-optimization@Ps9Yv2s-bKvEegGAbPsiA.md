@@ -4,3 +4,5 @@ Query optimization in SQL involves refining queries to enhance their execution s
 
 Learn more from the following resources:
 
+- [@video@SQL Query Optimization](https://www.youtube.com/watch?v=GA8SaXDLdsY)
+- [@article@12 Ways to Optimize SQL Queries](https://www.developernation.net/blog/12-ways-to-optimize-sql-queries-in-database-management/)

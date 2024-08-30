@@ -6,3 +6,5 @@ It effectively eliminates all records in a table, but not the table itself. Unli
 
 Learn more from the following resources:
 
+- [@article@TRUNCATE TABLE](https://www.tutorialspoint.com/sql/sql-truncate-table.htm)
+- [@video@SQL Tutorial - TRUNCATE TABLE](https://www.youtube.com/watch?v=zJidbjOQlJM)

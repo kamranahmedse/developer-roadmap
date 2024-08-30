@@ -4,3 +4,5 @@ ROW_NUMBER() is a SQL window function that assigns a unique, sequential integer 
 
 Learn more from the following resources:
 
+- [@article@SQL ROW_NUMBER](https://www.sqltutorial.org/sql-window-functions/sql-row_number/)
+- [@article@How to Use ROW_NUMBER OVER() in SQL to Rank Data](https://learnsql.com/blog/row-number-over-in-sql/)

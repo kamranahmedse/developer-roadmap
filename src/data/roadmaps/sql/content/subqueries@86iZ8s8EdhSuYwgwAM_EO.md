@@ -4,3 +4,5 @@ Subqueries, also known as nested queries or inner queries, are SQL queries embed
 
 Learn more from the following resources:
 
+- [@article@SQL Sub Queries](https://www.tutorialspoint.com/sql/sql-sub-queries.htm)
+- [@video@Advanced SQL Tutorial | Subqueries](https://www.youtube.com/watch?v=m1KcNV-Zhmc)

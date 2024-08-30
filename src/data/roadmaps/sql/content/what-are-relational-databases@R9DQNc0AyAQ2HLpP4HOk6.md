@@ -11,3 +11,6 @@ Relational databases are a type of database management system (DBMS) that stores
 Examples of popular relational database systems include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. They are widely used in various applications, from small-scale projects to large enterprise systems, due to their reliability, consistency, and powerful querying capabilities.
 
 Learn more from the following resources:
+
+- [@video@What is a relational database?](https://www.youtube.com/watch?v=OqjJjpjDRLc)
+- [@article@What is a relational database - AWS](https://aws.amazon.com/relational-database/)

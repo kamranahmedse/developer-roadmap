@@ -4,3 +4,5 @@ Query analysis techniques in SQL involve examining and optimizing queries to imp
 
 Learn more from the following resources:
 
+- [@article@EXPLAIN](https://docs.snowflake.com/en/sql-reference/sql/explain)
+- [@article@EXPLAIN PLAN](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/EXPLAIN-PLAN.html)

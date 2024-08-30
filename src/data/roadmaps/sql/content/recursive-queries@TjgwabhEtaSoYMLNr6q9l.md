@@ -4,3 +4,5 @@ Recursive queries in SQL allow for the repeated execution of a query within itse
 
 Learn more from the following resources:
 
+- [@article@Recursive Queries in SQL](https://codedamn.com/news/sql/recursive-queries-in-sql)
+- [@article@Recursive SQL Expression Visually Explained](https://builtin.com/data-science/recursive-sql)

@@ -4,3 +4,5 @@ SQL (relational) and NoSQL (non-relational) databases represent two different ap
 
 Learn more from the following resources:
 
+- [@article@Understanding SQL vs NoSQL Databases](https://www.mongodb.com/resources/basics/databases/nosql-explained/nosql-vs-sql)
+- [@video@SQL vs NoSQL Databases in 4 mins](https://www.youtube.com/watch?v=_Ss42Vb1SU4)
