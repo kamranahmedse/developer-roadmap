@@ -37,3 +37,8 @@ Successful threat hunters should possess a strong combination of technical skill
 - **Critical thinking and problem-solving**: Ability to analyze complex scenarios and think creatively to identify potential threats and vulnerabilities.
 
 By developing a strong foundation in threat hunting concepts and techniques, security professionals are better equipped to proactively identify and mitigate potential attacks, thereby strengthening their organization's overall cybersecurity posture.
+
+Visit the following resources to learn more:
+
+- [@video@Threat Hunting Explained - IBM](https://www.youtube.com/watch?v=VNp35Uw_bSM)
+- [@video@Threat Hunting](https://www.youtube.com/watch?v=M-Q3c6xboa4)
