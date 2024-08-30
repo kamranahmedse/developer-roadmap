@@ -1416,8 +1416,24 @@
   },
   "O7H6dt3Z7EKohxfJzwbPM": {
     "title": "Kanban",
-    "description": "",
-    "links": []
+    "description": "`Kanban` is a popular agile methodology that focuses on visualizing workflow and continuously improving that flow. It's a more flexible approach than Scrum, without the rigid framework.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Kanban? A Simple Guide to Improve Efficiency.",
+        "url": "https://businessmap.io/kanban-resources/getting-started/what-is-kanban",
+        "type": "article"
+      },
+      {
+        "title": "Kanban Methodology: The Simplest Agile Framework ",
+        "url": "https://kissflow.com/project/agile/kanban-methodology/",
+        "type": "article"
+      },
+      {
+        "title": "What is Kanban Methodology? The Ultimate Guide",
+        "url": "https://www.wrike.com/kanban-guide/what-is-kanban/",
+        "type": "article"
+      }
+    ]
   },
   "PKqwKvoffm0unwcFwpojk": {
     "title": "Scrum",
@@ -1426,8 +1442,24 @@
   },
   "7fL9lSu4BD1wRjnZy9tM9": {
     "title": "XP",
-    "description": "",
-    "links": []
+    "description": "`Extreme Programming (XP)` is a popular agile software development framework that emphasizes speed, simplicity, and quality. It was developed by Kent Beck in the late 1990s and is based on five values:\n\n*   **Communication**: Open and honest communication among team members and stakeholders is essential.\n*   **Simplicity**: The simplest solution that works is always preferred.\n*   **Feedback**: Continuous feedback from customers and team members is used to improve the product.\n*   **Courage**: Team members must be willing to make changes and take risks.\n*   **Respect**: Everyone on the team is treated with respect.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Extreme Programming (XP)?",
+        "url": "https://www.agilealliance.org/glossary/xp/",
+        "type": "article"
+      },
+      {
+        "title": "It's Values, Principles, And Practices",
+        "url": "https://www.nimblework.com/agile/extreme-programming-xp/",
+        "type": "article"
+      },
+      {
+        "title": "Extreme Programming (XP)",
+        "url": "https://scrum-master.org/en/extreme-programming-xp-a-beginners-guide-to-the-agile-method/",
+        "type": "article"
+      }
+    ]
   },
   "cBWJ6Duw99tSKr7U6OW3A": {
     "title": "Networks",

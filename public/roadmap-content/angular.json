@@ -703,8 +703,19 @@
   },
   "h4MMn0_qUN3YXEdMUJOyd": {
     "title": "@default",
-    "description": "",
-    "links": []
+    "description": "The `@default` clause is used to render a template when none of the `@case` blocks matches the value of the `@switch` conditional. `@default` is optional and can be omitted.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @switch",
+        "url": "https://angular.dev/guide/templates/control-flow#switch-block---selection",
+        "type": "article"
+      },
+      {
+        "title": "Angular @switch: Complete Guide",
+        "url": "https://blog.angular-university.io/angular-switch/",
+        "type": "article"
+      }
+    ]
   },
   "AwOM0ucg6W7TohdUd7KWT": {
     "title": "@let",
