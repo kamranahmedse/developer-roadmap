@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@W3Schools - JavaScript Tutorials](https://www.w3schools.com/js/js_type_conversion.asp)
 - [@article@TutorialsPoint - JavaScript Tutorials](https://www.tutorialspoint.com/explain-typecasting-in-javascript)
-- [@article@What you need to know about Javascripts Implicit Coercion](https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23)
+- [@article@What you need to know about JavaScript Implicit Coercion](https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23)
