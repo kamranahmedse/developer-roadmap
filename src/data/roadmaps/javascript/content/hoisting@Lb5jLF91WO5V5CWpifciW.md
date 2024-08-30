@@ -5,5 +5,5 @@ JavaScript Hoisting refers to the process whereby the interpreter appears to mov
 Visit the following resources to learn more:
 
 - [@article@What is Hoisting - MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
-- [@article@Understanding hoisting ](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)
+- [@article@Understanding Hoisting](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)
 - [@video@Learn JavaScript Hoisting In 5 Minutes](https://www.youtube.com/watch?v=EvfRXyKa_GI)

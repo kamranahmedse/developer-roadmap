@@ -1,6 +1,6 @@
-import type { JSX } from "preact/jsx-runtime";
+import type { SVGAttributes } from 'react';
 
-type ShareIconProps = JSX.SVGAttributes<SVGSVGElement>
+type ShareIconProps = SVGAttributes<SVGSVGElement>;
 
 export function ShareIcon(props: ShareIconProps) {
   return (

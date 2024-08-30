@@ -1,49 +1,29 @@
-type LinkedInIconProps = {
+interface LinkedInIconProps {
   className?: string;
-};
+}
 
 export function LinkedInIcon(props: LinkedInIconProps) {
   const { className } = props;
-
   return (
     <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      x="0px"
-      y="0px"
-      width="100"
-      height="100"
-      viewBox="0,0,256,256"
     >
-      <g transform="translate(-26.66667,-26.66667) scale(1.20833,1.20833)">
-        <g
-          fill="none"
-          fillRule="nonzero"
-          stroke="none"
-          strokeWidth="1"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeMiterlimit="10"
-          strokeDasharray=""
-          strokeDashoffset="0"
-          fontFamily="none"
-          fontWeight="none"
-          fontSize="none"
-          textAnchor="none"
-          style={{ mixBlendMode: 'normal' }}
-        >
-          <g transform="scale(5.33333,5.33333)">
-            <path
-              d="M42,37c0,2.762 -2.238,5 -5,5h-26c-2.761,0 -5,-2.238 -5,-5v-26c0,-2.762 2.239,-5 5,-5h26c2.762,0 5,2.238 5,5z"
-              fill="#0288d1"
-            ></path>
-            <path
-              d="M12,19h5v17h-5zM14.485,17h-0.028c-1.492,0 -2.457,-1.112 -2.457,-2.501c0,-1.419 0.995,-2.499 2.514,-2.499c1.521,0 2.458,1.08 2.486,2.499c0,1.388 -0.965,2.501 -2.515,2.501zM36,36h-5v-9.099c0,-2.198 -1.225,-3.698 -3.192,-3.698c-1.501,0 -2.313,1.012 -2.707,1.99c-0.144,0.35 -0.101,1.318 -0.101,1.807v9h-5v-17h5v2.616c0.721,-1.116 1.85,-2.616 4.738,-2.616c3.578,0 6.261,2.25 6.261,7.274l0.001,9.726z"
-              fill="#ffffff"
-            ></path>
-          </g>
-        </g>
+      <g clipPath="url(#clip0_2344_20)">
+        <path
+          d="M0 0V24H24V0H0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.397 7.179 20 6.988 20 12.241V19Z"
+          fill="currentColor"
+        />
       </g>
+      <defs>
+        <clipPath id="clip0_2344_20">
+          <rect width="24" height="24" rx="2" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 }
