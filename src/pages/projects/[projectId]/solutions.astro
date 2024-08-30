@@ -1,14 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { Badge } from '../../../components/Badge';
 import {
   getAllProjects,
   getProjectById,
   type ProjectFrontmatter,
 } from '../../../lib/project';
-import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
+import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
 
 export async function getStaticPaths() {
   const projects = await getAllProjects();
@@ -49,12 +48,23 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
 >
   <div class='bg-gray-50'>
     <div class='container'>
-      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='solutions' />
+      <ProjectTabs
+        parentRoadmapId={parentRoadmapId}
+        projectId={projectId}
+        activeTab='solutions'
+      />
 
       <ListProjectSolutions
         project={projectData}
         projectId={projectId}
         client:load
+      />
+
+      <ProjectSolutionModal
+        projectId={projectId}
+        projectTitle={projectData.title}
+        projectDescription={projectData.description}
+        client:only='react'
       />
     </div>
   </div>

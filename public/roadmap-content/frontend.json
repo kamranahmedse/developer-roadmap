@@ -594,11 +594,6 @@
     "description": "Float, grid, flexbox, positioning, display and box model are some of the key topics that are used for making layouts. Use the resources below to learn about these topics:\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn CSS Grid for free",
-        "url": "https://scrimba.com/learn/cssgrid?via=roadmap",
-        "type": "course"
-      },
-      {
         "title": "Learn and Practice Flexbox",
         "url": "https://flexboxfroggy.com/",
         "type": "article"
@@ -2086,11 +2081,6 @@
     "title": "TypeScript",
     "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Scrimba — TypeScript Basics",
-        "url": "https://scrimba.com/learn/typescript?via=roadmap",
-        "type": "course"
-      },
       {
         "title": "Official Website",
         "url": "https://www.typescriptlang.org/",
