@@ -199,8 +199,19 @@
   },
   "3fFNMhQIuuh-NRzSXYpXO": {
     "title": "Constraint",
-    "description": "",
-    "links": []
+    "description": "Lets you create large, complex layouts with a flat view hierarchy—no nested view groups. It's similar to `RelativeLayout` in that all views are laid out according to relationships between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use. Its available on xml and jetpack compose.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ConstraintLayout in xml",
+        "url": "https://developer.android.com/develop/ui/views/layout/constraint-layout",
+        "type": "article"
+      },
+      {
+        "title": "Android developers: ContraintLayout in compose",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/constraintlayout",
+        "type": "article"
+      }
+    ]
   },
   "xIvplWfe-uDr9iHjPT1Mx": {
     "title": "RecycleView",
@@ -303,13 +314,30 @@
   },
   "EzLjX4iRT7AxkAOsJYnSU": {
     "title": "ListView",
-    "description": "",
-    "links": []
+    "description": "Displays a vertically-scrollable collection of views, where each view is positioned immediatelybelow the previous view in the list.\n\nFor a more modern, flexible, and performant approach to displaying lists, use `RecyclerView`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ListView",
+        "url": "https://developer.android.com/reference/android/widget/ListView",
+        "type": "article"
+      }
+    ]
   },
   "amTxz7mS98lkhOrNMJXG_": {
     "title": "Drawer",
-    "description": "",
-    "links": []
+    "description": "The **Navigation Drawer** in Android is a sliding menu from the left that simplifies navigation between important app links. It opens by sliding or via an icon in the `ActionBar`. It’s an overlay panel that replaces a screen dedicated to displaying options.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: DrawerLayout",
+        "url": "https://developer.android.com/reference/androidx/drawerlayout/widget/DrawerLayout",
+        "type": "article"
+      },
+      {
+        "title": "Navigate Drawer Tutorial",
+        "url": "https://www.digitalocean.com/community/tutorials/android-navigation-drawer-example-tutorial",
+        "type": "article"
+      }
+    ]
   },
   "pEBpXv3Jf1AzBNHlvVrG8": {
     "title": "Tabs",
@@ -324,8 +352,19 @@
   },
   "Xn1VQ-xOT67ZfJJTM4r1p": {
     "title": "Animations",
-    "description": "",
-    "links": []
+    "description": "`Animations` can add visual cues that notify users about what's going on in your app. They are especially useful when the UI changes state, such as when new content loads or new actions become available. Animations also add a polished look to your app, which gives it a higher quality look and feel.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Google developers: Animations",
+        "url": "https://developer.android.com/develop/ui/views/animations/overview",
+        "type": "article"
+      },
+      {
+        "title": "Google developers: Animations",
+        "url": "https://www.youtube.com/watch?v=N_x7SV3I3P0",
+        "type": "video"
+      }
+    ]
   },
   "60Vm-77rseUqpMiFvp-dA": {
     "title": "Jetpack Compose",

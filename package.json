@@ -29,8 +29,8 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/node": "^8.3.2",
-    "@astrojs/react": "^3.6.1",
+    "@astrojs/node": "^8.3.3",
+    "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@fingerprintjs/fingerprintjs": "^4.4.3",
@@ -39,7 +39,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.13.0",
+    "astro": "^4.14.6",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.12",
     "dom-to-image": "^2.6.0",
