@@ -131,15 +131,14 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
         deleteUrlParam('u');
         window.location.reload();
       }}
+      wrapperClassName={'max-w-lg'}
+      bodyClassName={'h-auto'}
     >
       <div className="relative p-6">
-        <div className="mb-6 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-gray-900">{projectTitle}</h1>
-          <Trophy className="h-6 w-6 text-yellow-500" />
-        </div>
-        <p className="mb-6 text-sm text-gray-600">{projectDescription}</p>
+          <h1 className="text-2xl text-balance mb-1 font-bold text-gray-900">{projectTitle}</h1>
+          <p className="text-sm text-balance text-gray-600">{projectDescription}</p>
 
-        <div className="mb-6 rounded-lg bg-gray-100 p-4">
+        <div className="my-5 rounded-lg bg-gray-100 p-4">
           <div className="flex items-center gap-3">
             <img
               src={
@@ -153,7 +152,7 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
             <div>
               <h2 className="text-lg font-semibold text-gray-900">{solution?.user.name}'s Solution</h2>
               <p className="text-sm text-gray-600">
-                {submittedAlternatives[Math.floor(Math.random() * submittedAlternatives.length)] || 'Submitted'}{' '}
+                Submitted their solution{' '}
                 {getRelativeTimeString(solution?.submittedAt!)}
               </p>
             </div>
@@ -162,7 +161,7 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
 
         <div className="flex items-center justify-between">
           <a
-            className="flex items-center gap-2 rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+            className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
             href={solution?.repositoryUrl}
             target="_blank"
           >
@@ -171,7 +170,7 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
             <ArrowUpRight className="h-4 w-4" />
           </a>
 
-          <div className="flex overflow-hidden rounded-md border">
+          <div className="flex overflow-hidden rounded-full border">
             <VoteButton
               icon={ThumbsUp}
               isActive={solution?.voteType === 'upvote'}
@@ -182,7 +181,7 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
               icon={ThumbsDown}
               isActive={solution?.voteType === 'downvote'}
               count={solution?.downvotes || 0}
-              hideCount={false}
+              hideCount={true}
               onClick={() => handleSubmitVote(solution?.id!, 'downvote')}
             />
           </div>
