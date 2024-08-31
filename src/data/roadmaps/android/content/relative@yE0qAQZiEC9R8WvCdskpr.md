@@ -4,6 +4,6 @@ A **RelativeLayout** in Android is a type of ViewGroup that allows you to positi
 
 **RelativeLayout** was commonly used in earlier Android development, but with the introduction of `ConstraintLayout`, it's less frequently used in modern apps. 
 
-    Visit the following resources to learn more:
+Visit the following resources to learn more:
 
 - [@official@Android developers: Relative Layout](https://developer.android.com/develop/ui/views/layout/relative)
