@@ -14,5 +14,5 @@ These advanced types allow for more complex and expressive type systems, and ena
 
 Learn more from the following links:
 
-- [@article@Advanced Topics](https://www.typescriptlang.org/docs/handbook/type-compatibility.html#advanced-topics)
+- [@official@Advanced Topics](https://www.typescriptlang.org/docs/handbook/type-compatibility.html#advanced-topics)
 - [@video@Tutorial of Typescript - Advanced Types](https://www.youtube.com/playlist?list=PLw5h0DiJ-9PBIgIyd2ZA1CVnJf0BLFJg2)
