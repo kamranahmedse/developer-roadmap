@@ -677,8 +677,19 @@
   },
   "ys5untkSppGMFK-VsfuRt": {
     "title": "@else if",
-    "description": "",
-    "links": []
+    "description": "With the new control flow syntax, you gain `@else if` conditional blocks, something that is not possible with `@ngIf`. This addition makes the control flow syntax close to what we would write with just plain JavaScript.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @if",
+        "url": "https://angular.dev/api/core/@if",
+        "type": "article"
+      },
+      {
+        "title": "Angular @if: Complete Guide",
+        "url": "https://blog.angular-university.io/angular-if/",
+        "type": "article"
+      }
+    ]
   },
   "2kYS9w1UzQFZ1zhf01m9L": {
     "title": "@for",
@@ -693,18 +704,51 @@
   },
   "nZuim4Fjq6jYOXcRTAEay": {
     "title": "@switch",
-    "description": "",
-    "links": []
+    "description": "The `@switch` blocks displays content selected by one of the cases matching against the conditional expression. The value of the conditional expression is compared to the case expression using the `===` operator. `@switch` does not have fallthrough, so you do not need an equivalent to a break or return statement.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @switch",
+        "url": "https://angular.dev/guide/templates/control-flow#switch-block---selection",
+        "type": "article"
+      },
+      {
+        "title": "Angular @switch: Complete Guide",
+        "url": "https://blog.angular-university.io/angular-switch/",
+        "type": "article"
+      }
+    ]
   },
   "cHC2MH50CbUSMRZV4QGJI": {
     "title": "@case",
-    "description": "",
-    "links": []
+    "description": "If no `@case` matches the `@switch` condition and there is no `@default` block, nothing is shown. Otherwise, the content inside the `@case` that matches the condition will be displayed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @switch",
+        "url": "https://angular.dev/guide/templates/control-flow#switch-block---selection",
+        "type": "article"
+      },
+      {
+        "title": "Angular @switch: Complete Guide",
+        "url": "https://blog.angular-university.io/angular-switch/",
+        "type": "article"
+      }
+    ]
   },
   "h4MMn0_qUN3YXEdMUJOyd": {
     "title": "@default",
-    "description": "",
-    "links": []
+    "description": "The `@default` clause is used to render a template when none of the `@case` blocks matches the value of the `@switch` conditional. `@default` is optional and can be omitted.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @switch",
+        "url": "https://angular.dev/guide/templates/control-flow#switch-block---selection",
+        "type": "article"
+      },
+      {
+        "title": "Angular @switch: Complete Guide",
+        "url": "https://blog.angular-university.io/angular-switch/",
+        "type": "article"
+      }
+    ]
   },
   "AwOM0ucg6W7TohdUd7KWT": {
     "title": "@let",
@@ -1738,8 +1782,19 @@
   },
   "Ax-s_xw3FO3Ocv-AnLbQD": {
     "title": "Build Environments",
-    "description": "",
-    "links": []
+    "description": "You can define different named build configurations for your project, such as `development` and `production`, with different defaults. Each named configuration can have defaults for any of the options that apply to the various builder targets, such as `build`, `serve`, and `test`. The Angular CLI can replace files for each environment if you pass a `--configuration` flag with the named configuration when running a CLI command.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Build environments",
+        "url": "https://angular.dev/tools/cli/environments#using-environment-specific-variables-in-your-app",
+        "type": "article"
+      },
+      {
+        "title": "Building an Angular application in various environments using Angular CLI and server",
+        "url": "https://medium.com/yavar/building-an-angular-application-in-various-environments-using-angular-cli-and-server-18f94067154b",
+        "type": "article"
+      }
+    ]
   },
   "TeWEy9I-hU6SH02Sy2S2S": {
     "title": "CLI Builders",

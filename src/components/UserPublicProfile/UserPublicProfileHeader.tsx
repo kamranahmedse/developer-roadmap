@@ -27,7 +27,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
             : '/images/default-avatar.png'
         }
         alt={name}
-        className="h-32 w-32 rounded-full"
+        className="h-32 w-32 object-cover rounded-full"
       />
 
       <div>

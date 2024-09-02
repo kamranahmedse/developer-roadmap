@@ -207,7 +207,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
             ) : (
               <>
                 <Share className="h-3 w-3 stroke-[2.5px]" />
-                <span className="hidden md:inline">Share Solution</span>
+                <span className="hidden md:inline">Share your Solution</span>
                 <span className="md:hidden">Share</span>
               </>
             )}
@@ -262,12 +262,12 @@ export function ProjectStepper(props: ProjectStepperProps) {
             {isCopied ? (
               <>
                 <CheckIcon additionalClasses="h-3 w-3" />
-                Copied
+                URL Copied
               </>
             ) : (
               <>
                 <Share className="h-3 w-3 stroke-[2.5px]" />
-                Share Solution
+                Share your Solution
               </>
             )}
           </button>

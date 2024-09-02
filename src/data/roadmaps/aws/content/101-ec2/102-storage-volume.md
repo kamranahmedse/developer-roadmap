@@ -4,4 +4,4 @@ In AWS, an `Amazon EBS` (Elastic Block Store) is the storage volume used by EC2 
 
 Visit the following resources to learn more:
 
-- [@official@Elastic Block Store](https://docs.aws.amazon.com/pt_br/ebs/latest/userguide/what-is-ebs.html)
+- [@official@Elastic Block Store](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html)

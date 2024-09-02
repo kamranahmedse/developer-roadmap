@@ -96,6 +96,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
 
   <TopicDetail
     resourceTitle={roadmapData.title}
+    resourceId={roadmapId}
     resourceType='roadmap'
     client:idle
     canSubmitContribution={true}

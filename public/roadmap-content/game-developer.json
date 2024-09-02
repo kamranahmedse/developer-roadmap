@@ -772,13 +772,25 @@
   },
   "sz1047M8_kScjth84yPwU": {
     "title": "Decision Tree Learning",
-    "description": "`Decision Tree Learning` is an important concept in game development, particularly in the development of artificial intelligence for game characters. It is a kind of machine learning method that is based on using decision tree models to predict or classify information. A decision tree is a flowchart-like model, where each internal node denotes a test on an attribute, each branch represents an outcome of that test, and each leaf node holds a class label (decision made after testing all attributes). By applying decision tree learning models, computer-controlled characters can make decisions based on different conditions or states. They play a key role in creating complex and interactive gameplay experiences, by enabling game characters to adapt to the player's actions and the ever-changing game environment.",
-    "links": []
+    "description": "`Decision Tree Learning` is an important concept in game development, particularly in the development of artificial intelligence for game characters. It is a kind of machine learning method that is based on using decision tree models to predict or classify information. A decision tree is a flowchart-like model, where each internal node denotes a test on an attribute, each branch represents an outcome of that test, and each leaf node holds a class label (decision made after testing all attributes). By applying decision tree learning models, computer-controlled characters can make decisions based on different conditions or states. They play a key role in creating complex and interactive gameplay experiences, by enabling game characters to adapt to the player's actions and the ever-changing game environment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Decision trees - A friendly introduction",
+        "url": "https://www.youtube.com/watch?v=HkyWAhr9v8g",
+        "type": "video"
+      }
+    ]
   },
   "ltkEyfuDxExs7knqs79ya": {
     "title": "Deep Learning",
-    "description": "Deep Learning is a sub-field of machine learning, inspired by the structure and function of the human brain, specifically designed to process complex input/output transformations. It uses artificial neural networks with many layers (hence the term 'deep' learning) to model complex, non-linear hypotheses and discover hidden patterns within large datasets. Deep learning techniques are crucial in game development, primarily in creating intelligent behaviors and features in gaming agents, procedural content generation, and player profiling. You might have heard about the uses of deep learning technologies in popular, cutting-edge games like Google DeepMind's AlphaGo. Coding languages like Python, R, and frameworks like TensorFlow, Keras, and PyTorch are commonly used for deep learning tasks. Learning Deep Learning can be a prominent game-changer in your game development journey.",
-    "links": []
+    "description": "Deep Learning is a sub-field of machine learning, inspired by the structure and function of the human brain, specifically designed to process complex input/output transformations. It uses artificial neural networks with many layers (hence the term 'deep' learning) to model complex, non-linear hypotheses and discover hidden patterns within large datasets. Deep learning techniques are crucial in game development, primarily in creating intelligent behaviors and features in gaming agents, procedural content generation, and player profiling. You might have heard about the uses of deep learning technologies in popular, cutting-edge games like Google DeepMind's AlphaGo. Coding languages like Python, R, and frameworks like TensorFlow, Keras, and PyTorch are commonly used for deep learning tasks. Learning Deep Learning can be a prominent game-changer in your game development journey.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "But what is a neural network? | Chapter 1, Deep learning",
+        "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+        "type": "video"
+      }
+    ]
   },
   "AoH2r4EOHyZd8YaV24rBk": {
     "title": "Artificial Neural Network",
@@ -854,7 +866,13 @@
   },
   "YrQgfjsdLCIUxrwflpEHO": {
     "title": "Microsurface Scattering",
-    "description": "Microsurface scattering, also known as sub-surface scattering, is an important phenomenon in Physically Based Rendering (PBR). This process involves the penetration of light into the surface of a material, where it is scattered by interacting with the material. In other words, when light strikes an object, rather than simply bouncing off the surface, some of it goes into the object and gets scattered around inside before getting re-emitted. It is key to achieving more realistic rendering of translucent materials like skin, marble, milk, and more. Consider it essential for replicating how light interacts with real-world materials in a convincing manner in your game.",
-    "links": []
+    "description": "Microsurface scattering, also known as sub-surface scattering, is an important phenomenon in Physically Based Rendering (PBR). This process involves the penetration of light into the surface of a material, where it is scattered by interacting with the material. In other words, when light strikes an object, rather than simply bouncing off the surface, some of it goes into the object and gets scattered around inside before getting re-emitted. It is key to achieving more realistic rendering of translucent materials like skin, marble, milk, and more. Consider it essential for replicating how light interacts with real-world materials in a convincing manner in your game.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The 4 main types of subsurface scattering",
+        "url": "https://www.youtube.com/watch?v=GkjvYSbGHg4",
+        "type": "video"
+      }
+    ]
   }
 }

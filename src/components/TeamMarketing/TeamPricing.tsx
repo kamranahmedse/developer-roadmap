@@ -91,6 +91,7 @@ export function TeamPricing() {
                     {
                       'top-full': !isCopied,
                       'top-0': isCopied,
+                      'opacity-0': !isCopied,
                     },
                   )}
                 >

@@ -116,8 +116,14 @@
   },
   "rmqXH29n1oXtZ8tvmcRFn": {
     "title": "SELECT",
-    "description": "",
-    "links": []
+    "description": "The SELECT statement in SQL is used to retrieve data from a database. It allows you to specify the columns you want to fetch from a particular table or a combination of tables. Here’s a basic syntax of a SELECT statement:\n\n'''sql SELECT \\* FROM employees; '''\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL_Select",
+        "url": "https://www.w3schools.com/sql/sql_select.asp",
+        "type": "article"
+      }
+    ]
   },
   "mPj6BiK5FKKkIQ9WsWEo6": {
     "title": "INSERT",
@@ -126,8 +132,14 @@
   },
   "eu9dJFi6gBPMBdy08Y5Bb": {
     "title": "UPDATE",
-    "description": "",
-    "links": []
+    "description": "The `UPDATE` statement is used to modify existing data in a given table.  \nIt can be done so with the query\n\n    UPDATE table_name\n    SET column1 = value1, column2 = value2, ...\n    WHERE condition;\n    \n\n*   _Keep in mind that **SET** and **WHERE** are also commands to assign a new value(SET) only if the condition is met(WHERE)_\n\nOmitting the `WHERE` clause will update **all** rows in the table.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "W3Schools SQL UPDATE Statement Doc",
+        "url": "https://www.w3schools.com/sql/sql_update.asp",
+        "type": "article"
+      }
+    ]
   },
   "ddtVaA4Ls6qRj-7OtTSIH": {
     "title": "DELETE",
@@ -259,7 +271,7 @@
   },
   "4UQQYbjzwVxZOAxBuXKQS": {
     "title": "JOINs",
-    "description": "SQL `JOINs` are clauses used to combine rows from two or more tables based on a related column between them. They allow retrieval of data from multiple tables in a single query, enabling complex data analysis and reporting. The main types of `JOINs` include `INNER JOIN` (returns matching rows from both tables), `LEFT JOIN` (returns all rows from the left table and matching rows from the right), `RIGHT JOIN` (opposite of `LEFT JOIN`), and `FULL JOIN` (returns all rows when there's a match in either table). `JOINs` are fundamental to relational database operations, facilitating data integration and exploration across related datasets.\n\nLearn more from the following resources:",
+    "description": "SQL `JOINs` are clauses used to combine rows from two or more tables based on a related column between them. They allow retrieval of data from multiple tables in a single query, enabling complex data analysis and reporting. The main types of `JOINs` include:\n\n*   `INNER JOIN` (returns matching rows from both tables)\n*   `LEFT JOIN` (returns all rows from the left table and matching rows from the right)\n*   `RIGHT JOIN` (opposite of `LEFT JOIN`)\n*   `FULL JOIN` (returns all rows when there's a match in either table)\n\n`JOINs` are fundamental to relational database operations, facilitating data integration and exploration across related datasets.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "SQL JOINs Cheat Sheet",

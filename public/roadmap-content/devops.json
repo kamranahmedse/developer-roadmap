@@ -1038,6 +1038,11 @@
     "description": "Docker is a platform for working with containerized applications. Among its features are a daemon and client for managing and interacting with containers, registries for storing images, and a desktop application to package all these features together.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated Docker Roadmap",
+        "url": "https://roadmap.sh/docker",
+        "type": "article"
+      },
+      {
         "title": "Docker Documentation",
         "url": "https://docs.docker.com/",
         "type": "article"
