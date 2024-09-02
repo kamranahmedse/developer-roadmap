@@ -80,7 +80,14 @@ export function DashboardPage(props: DashboardPageProps) {
                   key={team._id}
                   label={team.name}
                   isActive={team._id === selectedTeamId}
-                  onClick={() => setSelectedTeamId(team._id)}
+                  onClick={() => {
+                    if (team.status === 'invited') {
+                      window.location.href = `/respond-invite?i=${team.memberId}`;
+                      return;
+                    }
+
+                    setSelectedTeamId(team._id);
+                  }}
                   avatar={avatarUrl}
                 />
               );
