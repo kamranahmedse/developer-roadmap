@@ -7,8 +7,9 @@ import { ProjectProgress } from '../Activity/ProjectProgress';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import { useToast } from '../../hooks/use-toast';
 import { LoadingProgress } from './LoadingProgress';
-import { ArrowUpRight, Pencil } from 'lucide-react';
+import { ArrowUpRight, Pencil, Plus } from 'lucide-react';
 import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 type UserDashboardResponse = {
   name: string;
@@ -43,6 +44,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
   const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
@@ -98,22 +100,30 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     return () => window.removeEventListener('refresh-favorites', loadProgress);
   }, []);
 
-  const learningRoadmapsToShow = (
-    personalDashboardDetails?.progresses || []
-  ).sort((a, b) => {
-    const updatedAtA = new Date(a.updatedAt);
-    const updatedAtB = new Date(b.updatedAt);
+  const learningRoadmapsToShow = (personalDashboardDetails?.progresses || [])
+    .filter((progress) => !progress.isCustomResource)
+    .sort((a, b) => {
+      const updatedAtA = new Date(a.updatedAt);
+      const updatedAtB = new Date(b.updatedAt);
 
-    if (a.isFavorite && !b.isFavorite) {
-      return -1;
-    }
+      if (a.isFavorite && !b.isFavorite) {
+        return -1;
+      }
 
-    if (!a.isFavorite && b.isFavorite) {
-      return 1;
-    }
+      if (!a.isFavorite && b.isFavorite) {
+        return 1;
+      }
 
-    return updatedAtB.getTime() - updatedAtA.getTime();
-  });
+      return updatedAtB.getTime() - updatedAtA.getTime();
+    });
+
+  const customRoadmaps = (personalDashboardDetails?.progresses || [])
+    .filter((progress) => progress.isCustomResource)
+    .sort((a, b) => {
+      const updatedAtA = new Date(a.updatedAt);
+      const updatedAtB = new Date(b.updatedAt);
+      return updatedAtB.getTime() - updatedAtA.getTime();
+    });
 
   const enrichedProjects =
     personalDashboardDetails?.projects
@@ -150,6 +160,14 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
   return (
     <section className="mt-8">
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal
+          onClose={() => {
+            setIsCreatingRoadmap(false);
+          }}
+        />
+      )}
+
       {isLoading && (
         <div className="mb-10 h-[188px] animate-pulse rounded-md border bg-gray-100 sm:h-[91px]" />
       )}
@@ -224,6 +242,68 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           })}
         </div>
       )}
+
+      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
+        Custom Roadmaps
+      </h2>
+      {isLoading && <LoadingProgress />}
+      {!isLoading && customRoadmaps.length > 0 && (
+        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
+          {customRoadmaps.map((roadmap) => {
+            const learningCount = roadmap.learning || 0;
+            const doneCount = roadmap.done || 0;
+            const totalCount = roadmap.total || 0;
+            const skippedCount = roadmap.skipped || 0;
+
+            return (
+              <ResourceProgress
+                key={roadmap.resourceId}
+                isCustomResource={roadmap?.isCustomResource || false}
+                doneCount={doneCount > totalCount ? totalCount : doneCount}
+                learningCount={
+                  learningCount > totalCount ? totalCount : learningCount
+                }
+                totalCount={totalCount}
+                skippedCount={skippedCount}
+                resourceId={roadmap.resourceId}
+                resourceType={roadmap.resourceType}
+                updatedAt={roadmap.updatedAt}
+                title={roadmap.resourceTitle}
+                showActions={true}
+                roadmapSlug={roadmap.roadmapSlug}
+              />
+            );
+          })}
+
+          <button
+            className="flex w-full items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-300 text-sm text-gray-600 hover:border-gray-800 hover:text-black"
+            onClick={() => {
+              setIsCreatingRoadmap(true);
+            }}
+          >
+            <Plus className="size-4" />
+            Create your own Roadmap
+          </button>
+        </div>
+      )}
+{!isLoading && customRoadmaps.length === 0 && (
+        <div className="flex min-h-[82px] flex-col items-center justify-center rounded-md border text-sm text-gray-500">
+          <span>No custom roadmaps found.</span>
+          <span>
+            Start&nbsp;
+            <button
+              className="underline underline-offset-2 hover:no-underline"
+              onClick={() => {
+                setIsCreatingRoadmap(true);
+              }}
+            >
+              creating your own roadmap
+            </button>
+            .
+          </span>
+        </div>
+      )}
+      
 
       <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">My Projects</h2>
       {isLoading && <LoadingProgress />}
