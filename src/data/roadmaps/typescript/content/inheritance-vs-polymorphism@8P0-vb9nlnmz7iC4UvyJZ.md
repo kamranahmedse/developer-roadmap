@@ -36,4 +36,5 @@ animal.makeSound(); // Output: Meow
 
 Learn more from the following resources:
 
+- [@article@Dev.to - Mastering OOP in TypeScript](https://dev.to/rajrathod/mastering-object-oriented-programming-with-typescript-encapsulation-abstraction-inheritance-and-polymorphism-explained-c6p)
 - [@video@Inheritance and Polymorphism In TypeScript](https://www.youtube.com/watch?v=Sn6K57YSuwU)

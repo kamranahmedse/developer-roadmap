@@ -16,4 +16,4 @@ printCoord({ x: 3, y: 7 });
 
 Learn more from the following links:
 
-- [@article@Object Types in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types)
+- [@official@Object Types in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types)

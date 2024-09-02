@@ -24,4 +24,4 @@ In this example, we declare a new namespace "NodeJS" and add an interface "Globa
 
 Learn more from the following links:
 
-- [@article@Global augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#global-augmentation)
+- [@official@Global augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#global-augmentation)

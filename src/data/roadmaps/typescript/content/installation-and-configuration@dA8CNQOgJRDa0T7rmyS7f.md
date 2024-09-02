@@ -45,5 +45,5 @@ And you're all set! You can now start writing TypeScript code in your project.
 
 Learn more from the following links:
 
-- [@article@Install and Configure TypeScript](https://www.typescriptlang.org/download)
+- [@official@Install and Configure TypeScript](https://www.typescriptlang.org/download)
 - [@article@TypeScript Getting Started](https://thenewstack.io/typescript-tutorial-a-guide-to-using-the-programming-language/)

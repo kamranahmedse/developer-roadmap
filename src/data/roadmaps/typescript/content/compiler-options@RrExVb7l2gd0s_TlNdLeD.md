@@ -8,4 +8,4 @@ tsc --target ES5 --module commonjs
 
 Learn more from the following links:
 
-- [@article@Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+- [@official@Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
