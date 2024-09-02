@@ -1,45 +1,8 @@
 # REPLACE
 
-You can use the `REPLACE()` function in SQL to substitute all occurrences of a specified string.
+The `REPLACE` function in SQL is used to substitute all occurrences of a specified substring within a string with a new substring. It takes three arguments: the original string, the substring to be replaced, and the substring to replace it with. If the specified substring is found in the original string, `REPLACE` returns the modified string with all instances of the old substring replaced by the new one. If the substring is not found, the original string is returned unchanged. This function is particularly useful for data cleaning tasks, such as correcting typos, standardizing formats, or replacing obsolete data.
 
-**Synopsis**
+Learn more from the following resources:
 
-`REPLACE(input_string, string_to_replace, replacement_string)`
-
-**Parameters**
-
-- `input_string`: This is the original string where you want to replace some characters.
-- `string_to_replace`: This is the string that will be searched for in the original string.
-- `replacement_string`: This is the string that will replace the `string_to_replace` in the original string.
-
-The `REPLACE()` function is handy when it comes to manipulating and modifying data in various ways, particularly when used in combination with other SQL data-manipulation functions.
-
-**Examples**
-
-Suppose we have the following table, `Employees`:
-
-| EmpId | EmpName             |
-|-------|---------------------|
-| 1     | John Doe            |
-| 2     | Jane Doe            |
-| 3     | Jim Smith Doe       |
-| 4     | Jennifer Doe Smith  |
-
-Here's how you can use the `REPLACE()` function:
-
-```sql
-SELECT EmpId, EmpName,
-REPLACE(EmpName, 'Doe', 'Roe') as ModifiedName
-FROM Employees;
-```
-
-After the execution of the above SQL, we will receive:
-
-| EmpId | EmpName            | ModifiedName        |
-|-------|--------------------|---------------------|
-| 1     | John Doe           | John Roe            |
-| 2     | Jane Doe           | Jane Roe            |
-| 3     | Jim Smith Doe      | Jim Smith Roe       |
-| 4     | Jennifer Doe Smith | Jennifer Roe Smith  |
-
-You can see that all occurrences of 'Doe' are replaced with 'Roe'.
+- [@article@SQL REPLACE Function](https://www.w3schools.com/sql/func_sqlserver_replace.asp)
+- [@article@How to use the SQL REPLACE Function](https://www.datacamp.com/tutorial/sql-replace)

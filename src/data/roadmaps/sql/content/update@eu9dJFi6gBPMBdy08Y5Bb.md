@@ -1,18 +1,8 @@
 # UPDATE
 
-The `UPDATE` statement is used to modify existing data in a given table. <br/>
-It can be done so with the query
+The UPDATE statement in SQL is used to modify existing records in a table. It allows you to change the values of one or more columns based on specified conditions. The basic syntax includes specifying the table name, the columns to be updated with their new values, and optionally, a WHERE clause to filter which rows should be affected. UPDATE can be used in conjunction with subqueries, joins, and CTEs (Common Table Expressions) for more complex data modifications. It's important to use UPDATE carefully, especially with the WHERE clause, to avoid unintended changes to data. In transactional databases, UPDATE operations can be rolled back if they're part of a transaction that hasn't been committed.
 
-```
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-```
+Learn more from the following resources:
 
-- _Keep in mind that **SET** and **WHERE** are also commands to assign a new value(SET) only if the condition is met(WHERE)_
-
-Omitting the `WHERE` clause will update **all** rows in the table.
-
-Visit the following resources to learn more:
-
-- [@article@W3Schools SQL UPDATE Statement Doc](https://www.w3schools.com/sql/sql_update.asp)
+- [@article@SQL UPDATE Statement](https://www.w3schools.com/sql/sql_update.asp)
+- [@article@Efficient column updates in SQL](https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column)

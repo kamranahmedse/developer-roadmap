@@ -5,3 +5,4 @@ SQL data types define the kind of values that can be stored in a column and dete
 Learn more from the following resources:
 
 - [@article@SQL Data Types](https://www.digitalocean.com/community/tutorials/sql-data-types)
+- [@video@MySQL 101 - Data Types](https://www.youtube.com/watch?v=vAiBa69YCnk)

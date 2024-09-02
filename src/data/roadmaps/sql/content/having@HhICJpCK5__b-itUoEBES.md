@@ -9,3 +9,4 @@ Also note, `HAVING` applies to summarized group records, whereas `WHERE` applies
 Learn more from the following resources:
 
 - [@article@SQL HAVING Clause](https://www.programiz.com/sql/having)
+- [@video@HAVING Clause](https://www.youtube.com/watch?v=tYBOMw7Ob8E)
