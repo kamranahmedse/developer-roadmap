@@ -17,4 +17,4 @@ In this example, `UserKeys` is a type that represents the union of keys from the
 
 Learn more from the following links:
 
-- [@article@Keyof Type Operator](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content)
+- [@official@keyof Type Operator](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content)

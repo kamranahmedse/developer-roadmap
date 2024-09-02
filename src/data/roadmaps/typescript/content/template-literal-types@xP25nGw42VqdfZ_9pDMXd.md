@@ -15,4 +15,4 @@ In this example, the `Name` template literal type is created by concatenating th
 
 Learn more from the following links:
 
-- [@article@Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#handbook-content)
+- [@official@Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#handbook-content)

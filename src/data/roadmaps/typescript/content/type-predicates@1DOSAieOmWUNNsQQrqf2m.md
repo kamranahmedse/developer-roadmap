@@ -19,4 +19,4 @@ function example(x: unknown) {
 
 Learn more from the following links:
 
-- [@article@Type Guards and Differentiating Types](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
+- [@official@Type Guards and Differentiating Types](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
