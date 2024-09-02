@@ -240,6 +240,22 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           })}
         </div>
       )}
+      {!isLoading && enrichedProjects.length === 0 && (
+        <div className="flex min-h-[82px] flex-col items-center justify-center rounded-md border text-sm text-gray-500">
+          <span>No projects found.</span>
+          <span>
+            Start&nbsp;
+            <a
+              href="/backend/projects"
+              target="_blank"
+              className="underline underline-offset-2 hover:no-underline"
+            >
+              Backend Projects
+            </a>
+            .
+          </span>
+        </div>
+      )}
 
       <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
         Role Based Roadmaps
