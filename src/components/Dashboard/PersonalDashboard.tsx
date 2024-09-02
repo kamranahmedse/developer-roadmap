@@ -151,11 +151,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   return (
     <section className="mt-8">
       {isLoading && (
-        <div className="mb-6 h-[91px] animate-pulse rounded-md border bg-gray-100" />
+        <div className="mb-10 h-[188px] animate-pulse rounded-md border bg-gray-100 sm:h-[91px]" />
       )}
       {!isLoading && (
-        <div className="mb-6 flex items-center justify-between gap-2 overflow-hidden rounded-md border bg-gray-50">
-          <div className="flex items-center gap-3 pl-4">
+        <div className="mb-10 flex flex-col gap-2 overflow-hidden rounded-md border bg-gray-50 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-3 p-4 sm:p-0 sm:pl-4">
             <figure className="shrink-0">
               <img
                 src={avatarLink}
@@ -169,7 +169,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             </div>
           </div>
 
-          <div className="flex flex-col justify-start divide-y border-l">
+          <div className="flex flex-col justify-start divide-y border-t sm:border-l sm:border-t-0">
             <a
               className="flex items-center gap-2 bg-white px-3 py-3 text-sm font-medium text-gray-500 hover:text-black"
               href={`/account/update-profile`}
@@ -225,7 +225,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         </div>
       )}
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">My Projects</h2>
+      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">My Projects</h2>
       {isLoading && <LoadingProgress />}
       {!isLoading && enrichedProjects.length > 0 && (
         <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
@@ -257,17 +257,17 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         </div>
       )}
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
         Role Based Roadmaps
       </h2>
       <ListRoadmaps roadmaps={builtInRoleRoadmaps} />
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
         Skill Based Roadmaps
       </h2>
       <ListRoadmaps roadmaps={builtInSkillRoadmaps} />
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
         Best Practices
       </h2>
       <ListRoadmaps roadmaps={builtInBestPractices} />
@@ -310,6 +310,7 @@ export function ListRoadmaps(props: ListRoadmapsProps) {
                     ? 'best-practice'
                     : 'roadmap'
                 }
+                className='data-[is-favorite="true"]:text-gray-400'
               />
             )}
           </div>

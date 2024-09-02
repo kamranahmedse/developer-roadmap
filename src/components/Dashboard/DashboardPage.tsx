@@ -97,7 +97,7 @@ export function DashboardPage(props: DashboardPageProps) {
               label="+ Create Team"
               isActive={false}
               href="/team/new"
-              className="border-black bg-black text-white"
+              className="border border-dashed text-gray-600 hover:border-gray-600 hover:text-black"
             />
           </>
         )}
