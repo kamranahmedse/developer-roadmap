@@ -2,7 +2,7 @@
 title: 'Basic HTML Website'
 description: 'Create simple HTML only website with multiple pages.'
 isNew: false
-sort: 1
+sort: 2
 difficulty: 'beginner'
 nature: 'HTML'
 skills:
