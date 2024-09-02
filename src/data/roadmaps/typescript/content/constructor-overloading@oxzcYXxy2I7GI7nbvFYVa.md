@@ -17,4 +17,4 @@ Note that, similar to function overloading, we only have one implementation of t
 
 Learn more from the following resources:
 
-- [@article@Constructors - TypeScript](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)
+- [@official@Constructors - TypeScript](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)
