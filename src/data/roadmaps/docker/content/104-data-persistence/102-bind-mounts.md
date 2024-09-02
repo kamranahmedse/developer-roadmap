@@ -6,4 +6,4 @@ The file or directory does not need to exist on the Docker host already. It is c
 
 Learn more about bind mounts here:
 
-- [@article@Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/).
+- [@article@Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/)
