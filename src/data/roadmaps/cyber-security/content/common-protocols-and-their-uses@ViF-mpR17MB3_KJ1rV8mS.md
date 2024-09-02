@@ -33,3 +33,7 @@ File Transfer Protocol (FTP) is a standard network protocol used for transferrin
 Simple Mail Transfer Protocol (SMTP) is the standard protocol for sending email messages across a network. It defines how email messages should be formatted, encrypted, and relayed between email clients, servers, and other email systems.
 
 Understanding these common protocols and their roles in network communication is vital for ensuring the proper implementation of cyber security measures. It will help you better identify potential vulnerabilities and make informed decisions on network defense strategies.
+
+Visit the following resources to learn more:
+
+- [@video@Common Network Ports and Protocols](https://www.youtube.com/watch?v=bwqM7XjqBBg)

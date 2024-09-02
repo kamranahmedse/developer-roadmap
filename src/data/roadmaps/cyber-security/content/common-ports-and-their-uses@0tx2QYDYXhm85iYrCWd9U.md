@@ -37,3 +37,7 @@ Ports are crucial in networking, as they facilitate communication between device
 - **NTP (Network Time Protocol) - Port 123**: NTP is a standard protocol used to synchronize time across network devices.
 
 Understanding these common ports and their functions is essential for network administrators and cyber security professionals. Proper knowledge of these ports will help you identify and assess potential security risks, as well as implement robust network defense measures.
+
+Visit the following resources to learn more:
+
+- [@video@Common Ports | Professor Messer](https://www.youtube.com/watch?v=fgC8hk4IfDk)

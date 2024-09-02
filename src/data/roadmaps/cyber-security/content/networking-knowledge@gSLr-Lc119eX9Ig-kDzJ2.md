@@ -19,3 +19,8 @@ In the world of cyber security, having a strong foundation in networking knowled
 - **Network Troubleshooting**: Understand common network issues and how to resolve them, using various network troubleshooting tools and methodologies like ping, traceroute, and Wireshark.
 
 By developing a strong foundation in networking knowledge, you will be well-equipped to tackle various cyber security challenges and protect your digital assets from potential threats. Remember, the ever-evolving landscape of cyber security demands continuous learning and updating of skills to stay ahead in the game.
+
+Visit the following resources to learn more:
+
+- [@video@Networking Course | freeCodeCamp](https://www.youtube.com/watch?v=qiQR5rTSshw)
+- [@video@Internet Networks & Network Security | Google](https://www.youtube.com/watch?v=NIRXtMg-0z8)

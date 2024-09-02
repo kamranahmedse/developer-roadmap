@@ -38,3 +38,7 @@ Digital certificates offer various benefits in the realm of cybersecurity, such 
 ## Conclusion
 
 Digital certificates provide a crucial layer of security and trust for online communications. Understanding their role in cybersecurity, the different types of certificates, and the importance of acquiring certificates from trusted CAs can greatly enhance your organization's online security posture and reputation.
+
+Visit the following resources to learn more:
+
+- [@video@Certificates - Professor Messer](https://www.youtube.com/watch?v=cLa94BZH_9s)

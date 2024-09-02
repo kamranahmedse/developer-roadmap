@@ -42,6 +42,6 @@ Recommended resources include:
 
 - [@official@Official CompTIA Network+](https://www.comptia.org/certifications/network)
 - [@video@CompTIA Network+ Full Course FREE [23+ Hours]](https://www.youtube.com/watch?v=xmpYfyNmWbw)
-- [@article@Professor Messer’s CompTIA N10-008 Network+ Course FREE](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/)
+- [@article@Professor Messer’s CompTIA N10-009 Network+ Course FREE](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/)
 - [@course@Total Seminars](https://www.udemy.com/course/comptia-networkplus-certification/)
 - [@course@Dion Training](https://www.udemy.com/course/comptia-network-009/)
