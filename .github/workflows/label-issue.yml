@@ -1,13 +1,15 @@
 name: Label Issue
+
 on:
   issues:
     types: [ opened, edited ]
+  
 jobs:
   label-topic-change-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Add roadmap slug to issue as label
-        uses: actions/github-script@v3
+      - name: Add Labels To Issue
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
