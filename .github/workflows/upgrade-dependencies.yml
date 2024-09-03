@@ -36,7 +36,7 @@ jobs:
           labels: |
             dependencies
             automated pr
-          reviewers: offensive-vk
+          reviewers: kamranahmedse
           commit-message: "chore: update dependencies to latest"
           title: "Upgrade Dependencies To Latest - Automated"
           body: |

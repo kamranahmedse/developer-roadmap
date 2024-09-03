@@ -37,7 +37,7 @@ jobs:
           labels: |
             dependencies
             automated pr
-          reviewers: offensive-vk
+          reviewers: kamranahmedse
           commit-message: "chore: update roadmap content json"
           title: "Updated Roadmap Content JSON - Automated"
           body: |
