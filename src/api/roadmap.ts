@@ -1,6 +1,7 @@
 import { type APIContext } from 'astro';
 import { api } from './api.ts';
 import type { RoadmapDocument } from '../components/CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
+import type { PageType } from '../components/CommandMenu/CommandMenu.tsx';
 
 export type ListShowcaseRoadmapResponse = {
   data: Pick<
@@ -36,4 +37,31 @@ export function roadmapApi(context: APIContext) {
       }>(`${import.meta.env.PUBLIC_API_URL}/v1-is-showcase-roadmap/${slug}`);
     },
   };
+}
+
+export type ProjectPageType = {
+  id: string;
+  title: string;
+  url: string;
+};
+
+export async function getProjectList() {
+  const baseUrl = import.meta.env.DEV
+    ? 'http://localhost:3000'
+    : 'https://roadmap.sh';
+  const pages = await fetch(`${baseUrl}/pages.json`).catch((err) => {
+    console.error(err);
+    return [];
+  });
+
+  const pagesJson = await (pages as any).json();
+  const projects: ProjectPageType[] = pagesJson
+    .filter((page: any) => page?.group?.toLowerCase() === 'projects')
+    .map((page: any) => ({
+      id: page.id,
+      title: page.title,
+      url: page.url,
+    }));
+
+  return projects;
 }
