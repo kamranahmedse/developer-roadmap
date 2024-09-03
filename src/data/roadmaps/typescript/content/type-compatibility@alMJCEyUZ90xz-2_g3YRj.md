@@ -20,4 +20,4 @@ In this example, `p1` has the type `Point`, while `p2` has the type `{ x: number
 
 Learn more from the following links:
 
-- [@article@Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)
+- [@official@Type Compatibility](https://www.typescriptlang.org/docs/handbook/type-compatibility.html)

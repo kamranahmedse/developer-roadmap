@@ -247,8 +247,34 @@
   },
   "19c7D-fWIJ3vYFT6h8ZfN": {
     "title": "Communication",
-    "description": "",
-    "links": []
+    "description": "Angular components can communicate with each other using `@Input()` and `@Output()` decorators. These decorators facilitate data exchange between parent and child components.\n\n*   **@Input()**: This decorator allows a parent component to pass data to a child component, enabling the child to receive and use the data.\n*   **@Output()**: This decorator allows a child component to emit events to a parent component, enabling the parent to respond to changes or actions within the child component.\n\nAdditionally, **model inputs** are a special type of input that enable two-way data binding. This means that changes in the child component can be propagated back to the parent component, ensuring synchronization between the two. Model inputs automatically create a corresponding output, typically named by appending “Change” to the input’s name, to facilitate this two-way communication.\n\nTo facilitate communication between unrelated components, it’s most effective to trigger events using `EventEmitter` and have the components listen for these events. This approach ensures a decoupled and flexible architecture, allowing components to interact seamlessly without direct dependencies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website - Inputs",
+        "url": "https://angular.dev/guide/components/inputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Website - Outputs",
+        "url": "https://angular.dev/guide/components/outputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - Model Inputs",
+        "url": "https://angular.dev/guide/signals/model",
+        "type": "article"
+      },
+      {
+        "title": "Custom events with outputs",
+        "url": "https://angular.dev/guide/components/outputs",
+        "type": "article"
+      },
+      {
+        "title": "Non-Related Component Communication | Angular Component & Directives",
+        "url": "https://www.youtube.com/watch?v=aIkGXMJFTzM",
+        "type": "video"
+      }
+    ]
   },
   "TDyFjKrIZJnCjEZsojPNQ": {
     "title": "Parent-Child Interaction",
@@ -331,8 +357,34 @@
   },
   "tC5ETtOuuUcybj1jI4CuG": {
     "title": "Dynamic Components",
-    "description": "",
-    "links": []
+    "description": "In addition to using a component directly in a template, you can also dynamically render components. There are two main ways to dynamically render a component: in a template with `NgComponentOutlet`, or in your TypeScript code with `ViewContainerRef`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Programmatically rendering components",
+        "url": "https://angular.dev/guide/components/programmatic-rendering",
+        "type": "article"
+      },
+      {
+        "title": "New Input Binding for NgComponentOutlet",
+        "url": "https://medium.com/ngconf/new-input-binding-for-ngcomponentoutlet-cb18a86a739d",
+        "type": "article"
+      },
+      {
+        "title": "Render dynamic components in Angular using ViewContainerRef",
+        "url": "https://dev.to/railsstudent/render-dynamic-components-in-angular-using-viewcontainerref-160h",
+        "type": "article"
+      },
+      {
+        "title": "Dynamic Component in Angular (2024)",
+        "url": "https://www.youtube.com/watch?v=ncbftt3NWVo",
+        "type": "video"
+      },
+      {
+        "title": "Mastering ViewContainerRef for dynamic component loading in Angular17",
+        "url": "https://www.youtube.com/watch?v=Ra4PITCt8m0",
+        "type": "video"
+      }
+    ]
   },
   "b_kdNS9PDupcUftslkf9i": {
     "title": "Modules",
@@ -606,11 +658,6 @@
       }
     ]
   },
-  "Wc2ybRw43uamEtno0FpDv": {
-    "title": "Template Ref Vars",
-    "description": "",
-    "links": []
-  },
   "VsU6713jeIjAOEZnF6gWx": {
     "title": "@Input & @Output",
     "description": "`@Input()` and `@Output()` give a child component a way to communicate with its parent component. `@Input()` lets a parent component update data in the child component. Conversely, `@Output()` lets the child send data to a parent component.\n\nVisit the following resources to learn more:",
@@ -640,8 +687,24 @@
   },
   "VsC7UmE_AumsBP8fC6to1": {
     "title": "Template Syntax",
-    "description": "",
-    "links": []
+    "description": "In Angular, a _template_ is a chunk of HTML. Use special syntax within a template to build on many of Angular's features. Extend the HTML vocabulary of your applications with special Angular syntax in your templates. For example, Angular helps you get and set DOM (Document Object Model) values dynamically with features such as built-in template functions, variables, event listening, and data binding.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Template Syntax",
+        "url": "https://angular.dev/guide/templates",
+        "type": "article"
+      },
+      {
+        "title": "An Introduction to Angular Template Syntax",
+        "url": "https://angularstart.com/modules/basic-angular-concepts/3/",
+        "type": "article"
+      },
+      {
+        "title": "Craft Dynamic Templates with Angular's Template Syntax",
+        "url": "https://www.youtube.com/watch?v=uSnUTcf8adI",
+        "type": "video"
+      }
+    ]
   },
   "U1Zy2T-2ki9pDkXn9hn-I": {
     "title": "@if",
@@ -1018,7 +1081,7 @@
   },
   "YF_sG292HqawIX0siWhrv": {
     "title": "Router Events",
-    "description": "The Angular Router raises events when it navigates from one route to another route. It raises several events such as `NavigationStart`, `NavigationEnd`, `NavigationCancel`, `NavigationError`, `ResolveStart`, etc. You can listen to these events and find out when the state of the route changes. Some of the useful events are route change start (NavigationStart) and route change end (NavigationEnd).",
+    "description": "The Angular Router raises events when it navigates from one route to another route. It raises several events such as `NavigationStart`, `NavigationEnd`, `NavigationCancel`, `NavigationError`, `ResolveStart`, etc. You can listen to these events and find out when the state of the route changes. Some of the useful events are route change start (NavigationStart) and route change end (NavigationEnd).\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Router reference - Router events",
@@ -1028,6 +1091,11 @@
       {
         "title": "Router event - API",
         "url": "https://angular.dev/api/router/RouterEvent",
+        "type": "article"
+      },
+      {
+        "title": "Router events in Angular",
+        "url": "https://medium.com/@gurunadhpukkalla/router-events-in-angular-3112a3968660",
         "type": "article"
       }
     ]
@@ -1307,8 +1375,29 @@
   },
   "lfp7PIjwITU5gBITQdirD": {
     "title": "RxJS Basics",
-    "description": "Reactive Extensions for JavaScript, or RxJS, is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.\n\nThe reactive paradigm can be used in many different languages through the use of reactive libraries. These libraries are downloaded APIs that provide functionalities for reactive tools like observers and operators. It can be used in your browser or with Node.js.",
-    "links": []
+    "description": "Reactive Extensions for JavaScript, or RxJS, is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.\n\nThe reactive paradigm can be used in many different languages through the use of reactive libraries. These libraries are downloaded APIs that provide functionalities for reactive tools like observers and operators. It can be used in your browser or with Node.js.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "RxJS Docs",
+        "url": "https://rxjs.dev/guide/overview",
+        "type": "article"
+      },
+      {
+        "title": "Learn RxJS",
+        "url": "https://www.learnrxjs.io/",
+        "type": "article"
+      },
+      {
+        "title": "RxJs and Observables for Beginners: A Beginner Friendly Introduction",
+        "url": "https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/",
+        "type": "article"
+      },
+      {
+        "title": "Beginner's RxJS Tutorial: Dive Deep with RxJS Crash Course!",
+        "url": "https://www.youtube.com/watch?v=yJdh1_FbtjU",
+        "type": "video"
+      }
+    ]
   },
   "krXA6ua7E3m4IIpFkgQZe": {
     "title": "Observable Pattern",
@@ -1663,7 +1752,7 @@
   },
   "m4WBnx_9h01Jl6Q1sxi4Y": {
     "title": "Zones",
-    "description": "Zone.js is a signaling mechanism that Angular uses to detect when an application state might have changed. It captures asynchronous operations like setTimeout, network requests, and event listeners. Angular schedules change detection based on signals from Zone.js.",
+    "description": "Zone.js is a signaling mechanism that Angular uses to detect when an application state might have changed. It captures asynchronous operations like setTimeout, network requests, and event listeners. Angular schedules change detection based on signals from Zone.js.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Resolving zone pollution",
@@ -1679,6 +1768,11 @@
         "title": "NgZone - API",
         "url": "https://angular.dev/api/core/NgZone",
         "type": "article"
+      },
+      {
+        "title": "WTF is \"Zone.js\" and is it making your app slow?",
+        "url": "https://www.youtube.com/watch?v=lmrf_gPIOZU",
+        "type": "video"
       }
     ]
   },
@@ -1751,18 +1845,106 @@
   },
   "FVH0lnbIZ2m5EfF2EJ2DW": {
     "title": "Local Setup",
-    "description": "",
-    "links": []
+    "description": "To install Angular CLI on your local system, you need to install `Node.js`. Angular requires an active LTS or maintenance LTS version of Node. Angular CLI uses Node and its associated package manager, npm, to install and run JavaScript tools outside the browser. Once you have Node installed, you can run `npm install -g @angular/cli` to install the Angular CLI.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Local set-up",
+        "url": "https://angular.dev/tools/cli/setup-local",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - Version compatibility guide",
+        "url": "https://angular.dev/reference/versions",
+        "type": "article"
+      },
+      {
+        "title": "How To Install Angular CLI In Windows 10 | In Under 2 Minutes!",
+        "url": "https://www.youtube.com/watch?v=vjgACKkPENg",
+        "type": "video"
+      },
+      {
+        "title": "How to Install Multiple Versions of Angular in Your Development Environment",
+        "url": "https://www.youtube.com/watch?v=LYNG3kcKRQ8",
+        "type": "video"
+      }
+    ]
   },
   "1fVi9AK6aLjt5QgAFbnGX": {
     "title": "Deployment",
-    "description": "",
-    "links": []
+    "description": "The Angular CLI command `ng deploy` executes the deploy CLI builder associated with your project. A number of third-party builders implement deployment capabilities to different platforms. You can add any of them to your project with `ng add`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "NGX AWS Deploy",
+        "url": "https://github.com/Jefiozie/ngx-aws-deploy",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular CLI GitHub Pages",
+        "url": "https://github.com/angular-schule/angular-cli-ghpages",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - Deployment",
+        "url": "https://angular.dev/tools/cli/deployment",
+        "type": "article"
+      },
+      {
+        "title": "Firebase Hosting",
+        "url": "https://firebase.google.com/docs/hosting",
+        "type": "article"
+      },
+      {
+        "title": "Vercel: Angular Solutions",
+        "url": "https://vercel.com/solutions/angular",
+        "type": "article"
+      },
+      {
+        "title": "Netlify",
+        "url": "https://docs.netlify.com/frameworks/angular/",
+        "type": "article"
+      },
+      {
+        "title": "Cloudflare Pages",
+        "url": "https://developers.cloudflare.com/pages/framework-guides/deploy-an-angular-site/#create-a-new-project-using-the-create-cloudflare-cli-c3",
+        "type": "article"
+      },
+      {
+        "title": "AWS Amplify",
+        "url": "https://docs.amplify.aws/angular/",
+        "type": "article"
+      }
+    ]
   },
   "yhNGhduk__ow8VTLc6inZ": {
     "title": "End-to-End Testing",
-    "description": "",
-    "links": []
+    "description": "End-to-end or (E2E) testing is a form of testing used to assert your entire application works as expected from start to finish or \"end-to-end\". E2E testing differs from unit testing in that it is completely decoupled from the underlying implementation details of your code. It is typically used to validate an application in a way that mimics the way a user would interact with it. The `ng e2e` command will first check your project for the \"e2e\" target. If it can't locate it, the CLI will then prompt you which e2e package you would like to use and walk you through the setup.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - End to End Testing",
+        "url": "https://angular.dev/tools/cli/end-to-end",
+        "type": "article"
+      },
+      {
+        "title": "Cypress Official Docs - Your First Test with Cypress",
+        "url": "https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test",
+        "type": "article"
+      },
+      {
+        "title": "Nightwatch Official Docs - Writing Tests: Introduction",
+        "url": "https://nightwatchjs.org/guide/writing-tests/introduction.html",
+        "type": "article"
+      },
+      {
+        "title": "Webdriver Official Docs - Getting Started",
+        "url": "https://webdriver.io/docs/gettingstarted/",
+        "type": "article"
+      },
+      {
+        "title": "Puppeteer Angular Schematic",
+        "url": "https://pptr.dev/guides/ng-schematics/#getting-started",
+        "type": "article"
+      }
+    ]
   },
   "Uvr0pRk_fOzwRwqn0dQ6N": {
     "title": "Schematics",
@@ -1798,8 +1980,24 @@
   },
   "TeWEy9I-hU6SH02Sy2S2S": {
     "title": "CLI Builders",
-    "description": "",
-    "links": []
+    "description": "A number of Angular CLI commands run a complex process on your code, such as building, testing, or serving your application. The commands use an internal tool called `Architect` to run CLI builders, which invoke another tool (bundler, test runner, server) to accomplish the desired task. Custom builders can perform an entirely new task or to change which third-party tool is used by an existing command.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Builders",
+        "url": "https://github.com/just-jeb/angular-builders",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - CLI Builders",
+        "url": "https://angular.dev/tools/cli/cli-builder",
+        "type": "article"
+      },
+      {
+        "title": "Angular Builders – Creating Custom Builder from Scratch",
+        "url": "https://www.youtube.com/watch?v=QbDkDLnXAZE",
+        "type": "video"
+      }
+    ]
   },
   "MwtM1UAIfj4FJ-Y4CKDsP": {
     "title": "AoT Compilation",
@@ -1882,8 +2080,24 @@
   },
   "A1mYMg7cbcj6p_VkDf-Tz": {
     "title": "Creating Libraries",
-    "description": "",
-    "links": []
+    "description": "If you have developed features that are suitable for reuse, you can create your own libraries. These libraries can be used locally in your workspace, or you can publish them as npm packages to share with other projects or other Angular developers. Putting code into a separate library is more complex than simply putting everything in one application. It requires more of an investment in time and thought for managing, maintaining, and updating the library. This complexity can pay off when the library is being used in multiple applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "NG Packagr",
+        "url": "https://github.com/ng-packagr/ng-packagr",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - Creating Libraries",
+        "url": "https://angular.dev/tools/libraries/creating-libraries",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - File Structure: Library project files",
+        "url": "https://angular.dev/reference/configs/file-structure#library-project-files",
+        "type": "article"
+      }
+    ]
   },
   "jfHaS8TqE4tcAo59K8Nkn": {
     "title": "SSR",
@@ -1908,8 +2122,24 @@
   },
   "b-0yQ74zHtAxI9aRLBohc": {
     "title": "SSG",
-    "description": "SSG (Static Site Generator), helps in building the HTML full website, during the process of building and serving that HTML Page. This method helps to generate the HTML website on the client side before its being served on the server side. Therefore, whenever a user requests a HTML Page, firstly HTML page will be rendered and secondly, the angular app will be rendered. The SSG can be used only if your website is static (or) it's content doesn't changes frequently.",
-    "links": []
+    "description": "SSG (Static Site Generator) helps in building the HTML full website during the process of building and serving that HTML page. This method helps to generate the HTML website on the client side before it's served on the server side. Therefore, whenever a user requests a HTML page, the HTML page will be rendered, and secondly, the Angular app will be rendered. The SSG can be used only if your website is static or its content doesn't change frequently.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Air with Alyssa Nicoll - SSR, SSG, ISR, & SOS",
+        "url": "https://www.youtube.com/watch?v=b0pUU7RJbBQ",
+        "type": "podcast"
+      },
+      {
+        "title": "Angular Official Docs - Prerendering (SSG)",
+        "url": "https://angular.dev/guide/prerendering",
+        "type": "article"
+      },
+      {
+        "title": "Angular 16 Pre Rendering Static Pages - Static Site Generation SSG",
+        "url": "https://www.youtube.com/watch?v=vmOWJvm3apA",
+        "type": "video"
+      }
+    ]
   },
   "kauQofxCmpktXPcnzid17": {
     "title": "AnalogJS",
@@ -2019,18 +2249,66 @@
   },
   "xH3RHPhsaqD9zIMms5OmX": {
     "title": "HTTP Vulnerabilities",
-    "description": "",
-    "links": []
+    "description": "Angular has built-in support to help prevent two common HTTP vulnerabilities, cross-site request forgery (CSRF or XSRF) and cross-site script inclusion (XSSI). Both of these must be mitigated primarily on the server side, but Angular provides helpers to make integration on the client side easier.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Security",
+        "url": "https://angular.dev/best-practices/security",
+        "type": "article"
+      },
+      {
+        "title": "Angular | HackTricks",
+        "url": "https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/angular",
+        "type": "article"
+      }
+    ]
   },
   "Z1DZBbFI4oU6-KQg3wqMm": {
     "title": "Cross-site Request Forgery",
-    "description": "",
-    "links": []
+    "description": "Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF or XSRF, is a type of malicious exploit of a website or web application where unauthorized commands are submitted from a user that the web application trusts. There are many ways in which a malicious website can transmit such commands; specially-crafted image tags, hidden forms, and JavaScript fetch or XMLHttpRequests, for example, can all work without the user's interaction or knowledge. Unlike cross-site scripting (XSS), which exploits the trust a user has for a particular site, CSRF exploits the trust that a site has in a user's browser. In a CSRF attack, an innocent end user is tricked by an attacker into submitting a web request that they did not intend. This may cause actions to be performed on the website that can include inadvertent client or server data leakage, change of session state, or manipulation of an end user's account. Angular provides built-in protection against CSRF attacks through the `HttpClientXsrfModule` module. This module automatically adds a token to outgoing requests and validates it on the server side.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Cross Site Request Forgery",
+        "url": "https://angular.dev/best-practices/security#cross-site-request-forgery",
+        "type": "article"
+      },
+      {
+        "title": "HttpClientXsrfModule",
+        "url": "https://angular.dev/api/common/http/HttpClientXsrfModule",
+        "type": "article"
+      },
+      {
+        "title": "Configure the CSRF Protection With Spring Security 6 and Angular",
+        "url": "https://www.youtube.com/watch?v=tgjLsEmxcuY",
+        "type": "video"
+      },
+      {
+        "title": "Angular security - CSRF prevention using Double Submit Cookie",
+        "url": "https://www.youtube.com/watch?v=lZfF4MOTeNM",
+        "type": "video"
+      }
+    ]
   },
   "m2aw8vb4rz4IjshpoMyNx": {
     "title": "HttpClient CSRF",
-    "description": "",
-    "links": []
+    "description": "HttpClient includes a built-in mechanism to prevent XSRF attacks. When making HTTP requests, an interceptor reads a token from a cookie (default name: XSRF-TOKEN) and sets it as an HTTP header (X-XSRF-TOKEN). Since only code running on your domain can read this cookie, the backend can verify that the HTTP request originates from your client application and not from an attacker.\n\nHowever, HttpClient only handles the client-side aspect of XSRF protection. Your backend service must be configured to set the cookie for your page and verify that the header is present on all relevant requests. Without this backend configuration, Angular’s default XSRF protection will not be effective.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Security",
+        "url": "https://angular.dev/best-practices/security#httpclient-xsrf-csrf-security",
+        "type": "article"
+      },
+      {
+        "title": "How can you protect Angular Web app from cross site request forgery?",
+        "url": "https://www.linkedin.com/advice/3/how-can-you-protect-angular-web-app-from-cross-site-pyqwc",
+        "type": "article"
+      },
+      {
+        "title": "Cross Site Request Forgery: XSRF protection in Angular",
+        "url": "https://borstch.com/blog/development/cross-site-request-forgery-xsrf-protection-in-angular",
+        "type": "article"
+      }
+    ]
   },
   "ni00edsphJd7uBLCn7-Vw": {
     "title": "XSRF protection",
@@ -2039,8 +2317,24 @@
   },
   "zd7YJGlcMFNFbsKUiW_XC": {
     "title": "Cross-site Script Inclusion",
-    "description": "",
-    "links": []
+    "description": "Cross-site script inclusion, also known as JSON vulnerability, can allow an attacker's website to read data from a JSON API. The attack works on older browsers by overriding built-in JavaScript object constructors, and then including an API URL using a `<script>` tag. Angular's HttpClient library recognizes this convention and automatically strips the string \")\\]}',\\\\n\" from all responses before further parsing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Cross Site Script Inclusion",
+        "url": "https://angular.dev/best-practices/security#cross-site-script-inclusion-xssi",
+        "type": "article"
+      },
+      {
+        "title": "XSSI Cross Site Script Inclusion",
+        "url": "https://book.hacktricks.xyz/pentesting-web/xssi-cross-site-script-inclusion",
+        "type": "article"
+      },
+      {
+        "title": "Testing for Cross Site Script Inclusion",
+        "url": "https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion",
+        "type": "article"
+      }
+    ]
   },
   "VNG9DdXlS6R1OJ6Lrn4Lt": {
     "title": "Accessibility",
@@ -2208,18 +2502,71 @@
   },
   "pRSR5PEbkJXAJ1LPyK-EE": {
     "title": "Zone Pollution",
-    "description": "",
-    "links": []
+    "description": "`Zone.js` is a signaling mechanism that Angular uses to detect when an application state might have changed. In some cases, scheduled tasks or microtasks don’t make any changes in the data model, which makes running change detection unnecessary. Common examples are `requestAnimationFrame`, `setTimeout` and `setInterval`. You can identify change detection with Angular DevTools, and you can run code outside the Angular zone to avoid unnecessary change detection calls.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Zone Pollution",
+        "url": "https://angular.dev/best-practices/zone-pollution",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - DevTools",
+        "url": "https://angular.dev/tools/devtools",
+        "type": "article"
+      },
+      {
+        "title": "NgZone in Angular - Improve Performance by Running Code Outside Angular",
+        "url": "https://www.youtube.com/watch?v=7duYY9IFIuw",
+        "type": "video"
+      },
+      {
+        "title": "4 Runtime Performance Optimizations",
+        "url": "https://www.youtube.com/watch?v=f8sA-i6gkGQ",
+        "type": "video"
+      }
+    ]
   },
   "yxUtSBzJPRcS-IuPsyp-W": {
     "title": "Slow Computations",
-    "description": "",
-    "links": []
+    "description": "On every change detection cycle, Angular synchronously evaluates all template expressions in components based on their detection strategy and executes the `ngDoCheck`, `ngAfterContentChecked`, `ngAfterViewChecked`, and `ngOnChanges` lifecycle hooks. To remove slow computations, you can optimize algorithms, cache data with pure pipes or memoization, and limit lifecycle hook usage.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Slow Computations",
+        "url": "https://angular.dev/best-practices/slow-computations",
+        "type": "article"
+      },
+      {
+        "title": "Angular Performance Optimization",
+        "url": "https://davembush.medium.com/angular-performance-optimization-5ec630d2b8f1",
+        "type": "article"
+      }
+    ]
   },
   "NY_MfBNgNmloiRGcIvfJ1": {
     "title": "Hydration",
-    "description": "",
-    "links": []
+    "description": "Hydration is the process that restores the server-side rendered application on the client. This includes things like reusing the server rendered DOM structures, persisting the application state, transferring application data that was retrieved already by the server, and other processes. Hydration can be enabled for server-side rendered (SSR) applications only. You can enable hydration manually by visiting your main application component or module and importing `provideClientHydration` from `@angular/platform-browser`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Hydration",
+        "url": "https://angular.dev/guide/hydration",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - provideClientHydration",
+        "url": "https://angular.dev/api/platform-browser/provideClientHydration",
+        "type": "article"
+      },
+      {
+        "title": "Angular Hydration",
+        "url": "https://www.bacancytechnology.com/blog/angular-hydration",
+        "type": "article"
+      },
+      {
+        "title": "Angular SSR Deep Dive (With Client HYDRATION)",
+        "url": "https://www.youtube.com/watch?v=U1MP4uCuUVI",
+        "type": "video"
+      }
+    ]
   },
   "lLa-OnHV6GzkNFZu29BIT": {
     "title": "Testing",
@@ -2228,8 +2575,19 @@
   },
   "HU1eTYB321C93qh_U7ioF": {
     "title": "Testing Services",
-    "description": "",
-    "links": []
+    "description": "To ensure your services function as expected, you can write dedicated tests for them. Services are typically the easiest files to unit test. You can instantiate the service within a `beforeEach` block, invoke its methods, and assert the results.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Testing Services",
+        "url": "https://angular.dev/guide/testing/services",
+        "type": "article"
+      },
+      {
+        "title": "Step by Step implementation of the Calculator Service with Jasmine Specification",
+        "url": "https://www.youtube.com/watch?v=yoJDYEq8vSs",
+        "type": "video"
+      }
+    ]
   },
   "rH13NBFG02hnn5eABSNCY": {
     "title": "Testing Pipes",
@@ -2254,12 +2612,28 @@
   },
   "4xt0m5jkUqB4Z-krcFBuL": {
     "title": "Testing Requests",
-    "description": "",
-    "links": []
+    "description": "As for any external dependency, you must mock the HTTP backend so your tests can simulate interaction with a remote server. The `@angular/common/http/testing` library provides tools to capture requests made by the application, make assertions about them, and mock the responses to emulate your backend's behavior.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Testing Requests",
+        "url": "https://angular.dev/guide/http/testing",
+        "type": "article"
+      },
+      {
+        "title": "Import Http Client Testing Module and make Test call with the HttpClient",
+        "url": "https://www.youtube.com/watch?v=Sgy_RRXC9As",
+        "type": "video"
+      },
+      {
+        "title": "HTTP | Angular Unit Testing Made Easy: Comprehensive Guide to HTTP Testing",
+        "url": "https://www.youtube.com/watch?v=7rlwryYhGzs",
+        "type": "video"
+      }
+    ]
   },
   "TGRZBizDy83JKg_MhnRdX": {
     "title": "Services with Dependencies",
-    "description": "In an Angular application, Services are responsible for fetching, storing and processing data. Services are singletons, meaning there is only one instance of a Service during runtime. They are fit for central data storage, HTTP and WebSocket communication as well as data validation.\n\nVisit the following resources to learn more:",
+    "description": "When you add a dependency to your service, you must also include it in your tests. For isolated tests, pass an instance of the injectable dependency class into the service’s constructor. Using the `inject` function can add complexity. Injecting the real service is often impractical because dependent services can be difficult to create and control. Instead, mock the dependency, use a dummy value, or create a spy on the relevant service method. By using the TestBed testing utility, you can let Angular’s dependency injection handle service creation and manage constructor argument order.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Angular Website",
@@ -2272,9 +2646,19 @@
         "type": "article"
       },
       {
-        "title": "Explore top posts about Testing",
-        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
-        "type": "article"
+        "title": "Testing the Service which has another service injected through Dependency Injection",
+        "url": "https://www.youtube.com/watch?v=ACb8wqwgOV4",
+        "type": "video"
+      },
+      {
+        "title": "Testing Services which has HttpClient as dependency by using Jasmine Spy",
+        "url": "https://www.youtube.com/watch?v=15othucRXcI",
+        "type": "video"
+      },
+      {
+        "title": "Angular Unit Tests with the inject() function",
+        "url": "https://www.youtube.com/watch?v=Tvsa4OMUGXs",
+        "type": "video"
       }
     ]
   },
@@ -2317,8 +2701,29 @@
   },
   "f5v74Uw54LsB4FgdN6eCd": {
     "title": "Debugging Tests",
-    "description": "",
-    "links": []
+    "description": "If your tests aren't working as you expect them to, you can inspect and debug them in the browser. Be sure to set breakpoints to track your application's execution.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Debugging tests",
+        "url": "https://angular.dev/guide/testing/debugging",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - Devtools",
+        "url": "https://angular.dev/tools/devtools",
+        "type": "article"
+      },
+      {
+        "title": "Debug Like a Pro: Essential Breakpoint Techniques in Angular",
+        "url": "https://www.youtube.com/watch?v=Be9Q1cchurQ",
+        "type": "video"
+      },
+      {
+        "title": "Debug Angular 17 Code in VS Code with Break Points and Extensions",
+        "url": "https://www.youtube.com/watch?v=r50UXhT9hc0",
+        "type": "video"
+      }
+    ]
   },
   "0dYWO_Zvh9J5_6cRjRjvI": {
     "title": "Component Templates",
@@ -2400,8 +2805,19 @@
   },
   "9ISvaaJ815_cr_KW9vQhT": {
     "title": "Multiple Locales",
-    "description": "",
-    "links": []
+    "description": "To deploy an Angular application with multiple locales, follow these steps:\n\n1.  Place different versions of your app in locale-specific directories\n2.  Use the HTML `<base>` tag with the `href` attribute to set the base URL for relative links.\n3.  Deploy each language version in a different subdirectory. Redirect users to their preferred language based on the `Accept-Language` HTTP header.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Deploy Multiple Locales",
+        "url": "https://angular.dev/guide/i18n/deploy",
+        "type": "article"
+      },
+      {
+        "title": "How Make Multi-Language Angular Websites - Full Guidance On Angular Localization",
+        "url": "https://www.youtube.com/watch?v=vSwYuyH4kMA",
+        "type": "video"
+      }
+    ]
   },
   "rYJq59Q0YdfK6n3x740Em": {
     "title": "Animation",

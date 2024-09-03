@@ -22,7 +22,7 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
+import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -32,6 +32,7 @@ import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
+import { PaidResourceDisclaimer } from './PaidResourceDisclaimer.tsx';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -71,6 +72,8 @@ async function fetchRoadmapPaidResources(roadmapId: string) {
   return response;
 }
 
+const PAID_RESOURCE_DISCLAIMER_HIDDEN = 'paid-resource-disclaimer-hidden';
+
 export function TopicDetail(props: TopicDetailProps) {
   const {
     canSubmitContribution,
@@ -91,6 +94,9 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
+
+  const [showPaidResourceDisclaimer, setShowPaidResourceDisclaimer] =
+    useState(false);
 
   const { secret } = getUrlParams() as { secret: string };
   const isGuest = useMemo(() => !isLoggedIn(), []);
@@ -115,6 +121,10 @@ export function TopicDetail(props: TopicDetailProps) {
     if (resourceType !== 'roadmap' || !defaultResourceId) {
       return;
     }
+
+    setShowPaidResourceDisclaimer(
+      localStorage.getItem(PAID_RESOURCE_DISCLAIMER_HIDDEN) !== 'true',
+    );
 
     fetchRoadmapPaidResources(defaultResourceId).then((resources) => {
       setPaidResources(resources);
@@ -475,6 +485,18 @@ export function TopicDetail(props: TopicDetailProps) {
                       );
                     })}
                   </ul>
+
+                  {showPaidResourceDisclaimer && (
+                    <PaidResourceDisclaimer
+                      onClose={() => {
+                        localStorage.setItem(
+                          PAID_RESOURCE_DISCLAIMER_HIDDEN,
+                          'true',
+                        );
+                        setShowPaidResourceDisclaimer(false);
+                      }}
+                    />
+                  )}
                 </>
               )}
 

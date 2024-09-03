@@ -17,3 +17,7 @@ let list: LinkedList<number> = {
 ```
 
 In this example, the `LinkedList` type is defined as a type that extends `T` and contains a property `next` of the same type `LinkedList<T>`. This allows us to create a linked list where each node contains a value of type `T` and a reference to the next node in the list.
+
+Learn more from the following links:
+
+- [@official@Recursive Types in TypeScript](https://www.typescriptlang.org/play/3-7/types-and-code-flow/recursive-type-references.ts.html)

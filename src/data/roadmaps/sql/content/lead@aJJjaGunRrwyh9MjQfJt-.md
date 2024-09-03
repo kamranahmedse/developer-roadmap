@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@SQL LEAD](https://www.codecademy.com/resources/docs/sql/window-functions/lead)
+- [@video@LAG and LEAD Window Functions in SQL](https://www.youtube.com/watch?v=nHEEyX_yDvo)

@@ -19,4 +19,4 @@ If we left off the initializer for `Up`, it would have the value `0` and the res
 
 Learn more from the following links:
 
-- [@article@TypeScript - Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
+- [@official@TypeScript - Enums](https://www.typescriptlang.org/docs/handbook/enums.html)

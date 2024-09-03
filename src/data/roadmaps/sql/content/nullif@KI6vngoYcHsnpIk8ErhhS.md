@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@NULLIF](https://www.w3schools.com/sql/func_sqlserver_nullif.asp)
+- [@video@What is NULLIF in SQL?](https://www.youtube.com/watch?v=Jaw53T__RRY)

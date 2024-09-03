@@ -56,4 +56,4 @@ const greenNormalized = palette.green.toUpperCase();
 
 Learn more from the following resources:
 
-- [@article@Satisfies Keyword](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator)
+- [@official@satisfies Keyword](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator)
