@@ -29,8 +29,6 @@ The goal of this project is to help you understand how to use CSS for dynamic UI
 
 [![Tooltip Mockup](https://assets.roadmap.sh/guest/tooltip-zh8gm.png)](https://assets.roadmap.sh/guest/tooltip-zh8gm.png)
 
+Bonus points for different animations for the tooltip, such as fade-in, slide-in, or scale-in effects.
 
-
----
-
-After completing this project, you will be able to create interactive and visually appealing tooltips using only CSS. These skills can be further applied to enhance user interfaces in various web projects.
+After completing this project, you will have a better understanding of CSS positioning, hover effects, and creating interactive UI elements without JavaScript.
