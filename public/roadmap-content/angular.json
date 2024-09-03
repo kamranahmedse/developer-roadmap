@@ -247,8 +247,34 @@
   },
   "19c7D-fWIJ3vYFT6h8ZfN": {
     "title": "Communication",
-    "description": "",
-    "links": []
+    "description": "Angular components can communicate with each other using `@Input()` and `@Output()` decorators. These decorators facilitate data exchange between parent and child components.\n\n*   **@Input()**: This decorator allows a parent component to pass data to a child component, enabling the child to receive and use the data.\n*   **@Output()**: This decorator allows a child component to emit events to a parent component, enabling the parent to respond to changes or actions within the child component.\n\nAdditionally, **model inputs** are a special type of input that enable two-way data binding. This means that changes in the child component can be propagated back to the parent component, ensuring synchronization between the two. Model inputs automatically create a corresponding output, typically named by appending “Change” to the input’s name, to facilitate this two-way communication.\n\nTo facilitate communication between unrelated components, it’s most effective to trigger events using `EventEmitter` and have the components listen for these events. This approach ensures a decoupled and flexible architecture, allowing components to interact seamlessly without direct dependencies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Website - Inputs",
+        "url": "https://angular.dev/guide/components/inputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Website - Outputs",
+        "url": "https://angular.dev/guide/components/outputs",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - Model Inputs",
+        "url": "https://angular.dev/guide/signals/model",
+        "type": "article"
+      },
+      {
+        "title": "Custom events with outputs",
+        "url": "https://angular.dev/guide/components/outputs",
+        "type": "article"
+      },
+      {
+        "title": "Non-Related Component Communication | Angular Component & Directives",
+        "url": "https://www.youtube.com/watch?v=aIkGXMJFTzM",
+        "type": "video"
+      }
+    ]
   },
   "TDyFjKrIZJnCjEZsojPNQ": {
     "title": "Parent-Child Interaction",

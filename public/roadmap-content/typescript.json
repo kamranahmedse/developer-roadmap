@@ -9,7 +9,7 @@
         "type": "article"
       },
       {
-        "title": "TypeScript Handbook",
+        "title": "TypeScript Official Handbook",
         "url": "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html",
         "type": "article"
       },
@@ -163,7 +163,7 @@
     "description": "The TypeScript Playground is a great tool to learn TypeScript. It allows you to write TypeScript code and see the JavaScript output. It also allows you to share your code with others.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "TypeScript - Playground",
+        "title": "TypeScript Official - Playground",
         "url": "https://www.typescriptlang.org/play",
         "type": "article"
       },
@@ -349,7 +349,7 @@
     "description": "The `never` type represents the type of values that never occur. For instance, `never` is the return type for a function expression or an arrow function expression that always throws an exception or one that never returns. Variables also acquire the type never when narrowed by any type guards that can never be `true`.\n\nThe never type is a subtype of, and assignable to, every type; however, no type is a subtype of, or assignable to, `never` (except `never` itself). Even any isn’t assignable to `never`.\n\nExamples of functions returning never:\n\n    // Function returning never must not have a reachable end point\n    function error(message: string): never {\n      throw new Error(message);\n    }\n    \n    // Inferred return type is never\n    function fail() {\n      return error('Something failed');\n    }\n    \n    // Function returning never must not have a reachable end point\n    function infiniteLoop(): never {\n      while (true) {}\n    }\n    \n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Never",
+        "title": "Never Type",
         "url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type",
         "type": "article"
       }
@@ -379,8 +379,14 @@
   },
   "afTNr36VqeXoJpHxm2IoS": {
     "title": "as any",
-    "description": "`any` is a special type in TypeScript that represents a value of any type. When a value is declared with the any type, the compiler will not perform any type checks or type inference on that value.\n\nFor example:\n\n    let anyValue: any = 42;\n    \n    // we can assign any value to anyValue, regardless of its type\n    anyValue = 'Hello, world!';\n    anyValue = true;",
-    "links": []
+    "description": "`any` is a special type in TypeScript that represents a value of any type. When a value is declared with the any type, the compiler will not perform any type checks or type inference on that value.\n\nFor example:\n\n    let anyValue: any = 42;\n    \n    // we can assign any value to anyValue, regardless of its type\n    anyValue = 'Hello, world!';\n    anyValue = true;\n    \n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Arrays",
+        "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any",
+        "type": "article"
+      }
+    ]
   },
   "mjaL5ocLnM8VQlhUxW6KU": {
     "title": "Non-null Assertion",
@@ -398,7 +404,7 @@
     "description": "TypeScript developers are often faced with a dilemma: we want to ensure that some expression matches some type, but also want to keep the most specific type of that expression for inference purposes.\n\nFor example:\n\n    // Each property can be a string or an RGB tuple.\n    const palette = {\n      red: [255, 0, 0],\n      green: '#00ff00',\n      bleu: [0, 0, 255],\n      //  ^^^^ sacrebleu - we've made a typo!\n    };\n    \n    // We want to be able to use array methods on 'red'...\n    const redComponent = palette.red.at(0);\n    \n    // or string methods on 'green'...\n    const greenNormalized = palette.green.toUpperCase();\n    \n\nNotice that we’ve written `bleu`, whereas we probably should have written `blue`. We could try to catch that `bleu` typo by using a type annotation on palette, but we’d lose the information about each property.\n\n    type Colors = 'red' | 'green' | 'blue';\n    type RGB = [red: number, green: number, blue: number];\n    \n    const palette: Record<Colors, string | RGB> = {\n      red: [255, 0, 0],\n      green: '#00ff00',\n      bleu: [0, 0, 255],\n      //  ~~~~ The typo is now correctly detected\n    };\n    // But we now have an undesirable error here - 'palette.red' \"could\" be a string.\n    const redComponent = palette.red.at(0);\n    \n\nThe `satisfies` operator lets us validate that the type of an expression matches some type, without changing the resulting type of that expression. As an example, we could use `satisfies` to validate that all the properties of palette are compatible with `string | number[]`:\n\n    type Colors = 'red' | 'green' | 'blue';\n    type RGB = [red: number, green: number, blue: number];\n    \n    const palette = {\n      red: [255, 0, 0],\n      green: '#00ff00',\n      bleu: [0, 0, 255],\n      //  ~~~~ The typo is now caught!\n    } satisfies Record<Colors, string | RGB>;\n    \n    // Both of these methods are still accessible!\n    const redComponent = palette.red.at(0);\n    const greenNormalized = palette.green.toUpperCase();\n    \n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Satisfies Keyword",
+        "title": "satisfies Keyword",
         "url": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator",
         "type": "article"
       }
@@ -428,7 +434,7 @@
   },
   "qefnsugcveizVq2TORRgn": {
     "title": "Combining Types",
-    "description": "In TypeScript, you can combine types using type union and type intersection.\n\n### Type Union:\n\nThe union operator `|` is used to combine two or more types into a single type that represents all the possible types. For example:\n\n    type stringOrNumber = string | number;\n    let value: stringOrNumber = 'hello';\n    \n    value = 42;\n    \n\n### Type Intersection:\n\nThe intersection operator `&` is used to intersect two or more types into a single type that represents the properties of all the types. For example:\n\n    interface A {\n      a: string;\n    }\n    \n    interface B {\n      b: number;\n    }\n    \n    type AB = A & B;\n    let value: AB = { a: 'hello', b: 42 };\n    \n\nLearn more from the following links:",
+    "description": "In TypeScript, you can combine types using type union and type intersection.\n\nType Union\n----------\n\nThe union operator `|` is used to combine two or more types into a single type that represents all the possible types. For example:\n\n    type stringOrNumber = string | number;\n    let value: stringOrNumber = 'hello';\n    \n    value = 42;\n    \n\nType Intersection\n-----------------\n\nThe intersection operator `&` is used to intersect two or more types into a single type that represents the properties of all the types. For example:\n\n    interface A {\n      a: string;\n    }\n    \n    interface B {\n      b: number;\n    }\n    \n    type AB = A & B;\n    let value: AB = { a: 'hello', b: 42 };\n    \n\nLearn more from the following links:",
     "links": [
       {
         "title": "Union Types in TypeScript",
@@ -490,7 +496,7 @@
     "description": "The `keyof` operator in TypeScript is used to get the union of keys from an object type. Here's an example of how it can be used:\n\n    interface User {\n      name: string;\n      age: number;\n      location: string;\n    }\n    \n    type UserKeys = keyof User; // \"name\" | \"age\" | \"location\"\n    const key: UserKeys = 'name';\n    \n\nIn this example, `UserKeys` is a type that represents the union of keys from the `User` interface, which is `\"name\"` | `\"age\"` | `\"location\"`. And a constant named `key` with the type `UserKeys` is declared with the value `\"name\"`.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Keyof Type Operator",
+        "title": "keyof Type Operator",
         "url": "https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content",
         "type": "article"
       }
@@ -646,8 +652,14 @@
   },
   "lvtTSHH9yBTCiLng8btnI": {
     "title": "Hybrid Types",
-    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };",
-    "links": []
+    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };\n    \n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Geeksforgeeks.org - Hybrid Types",
+        "url": "https://www.geeksforgeeks.org/what-are-hybrid-types-in-typescript/#:~:text=Hybrid%20types%20are%20a%20combination,properties%20like%20a%20regular%20object.",
+        "type": "article"
+      }
+    ]
   },
   "ib0jfZzukYOZ42AdJqt_W": {
     "title": "Classes",
@@ -708,6 +720,11 @@
     "title": "Inheritance vs Polymorphism",
     "description": "Inheritance and polymorphism are two fundamental concepts in object-oriented programming, and they are supported in TypeScript as well.\n\nInheritance refers to a mechanism where a subclass inherits properties and methods from its parent class. This allows a subclass to reuse the code and behavior of its parent class while also adding or modifying its own behavior. In TypeScript, inheritance is achieved using the extends keyword.\n\nPolymorphism refers to the ability of an object to take on many forms. This allows objects of different classes to be treated as objects of a common class, as long as they share a common interface or inheritance hierarchy. In TypeScript, polymorphism is achieved through method overriding and method overloading.\n\n    class Animal {\n      makeSound(): void {\n        console.log('Making animal sound');\n      }\n    }\n    \n    class Dog extends Animal {\n      makeSound(): void {\n        console.log('Bark');\n      }\n    }\n    \n    class Cat extends Animal {\n      makeSound(): void {\n        console.log('Meow');\n      }\n    }\n    \n    let animal: Animal;\n    \n    animal = new Dog();\n    animal.makeSound(); // Output: Bark\n    \n    animal = new Cat();\n    animal.makeSound(); // Output: Meow\n    \n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Dev.to - Mastering OOP in TypeScript",
+        "url": "https://dev.to/rajrathod/mastering-object-oriented-programming-with-typescript-encapsulation-abstraction-inheritance-and-polymorphism-explained-c6p",
+        "type": "article"
+      },
       {
         "title": "Inheritance and Polymorphism In TypeScript",
         "url": "https://www.youtube.com/watch?v=Sn6K57YSuwU",
@@ -793,7 +810,7 @@
   },
   "gBTem9Dp3IQLAkqGX4fOF": {
     "title": "Partial",
-    "description": "The Partial type in TypeScript allows you to make all properties of a type optional. This is useful when you need to create an object with only a subset of the properties of an existing type.\n\nHere's an example of using the Partial type in TypeScript:\n\n    interface User {\n      name: string;\n      age: number;\n      email: string;\n    }\n    \n    function createUser(user: Partial<User>): User {\n      return {\n        name: 'John Doe',\n        age: 30,\n        email: 'john.doe@example.com',\n        ...user,\n      };\n    }\n    \n    const newUser = createUser({ name: 'Jane Doe' });\n    \n    console.log(newUser);\n    // Output: { name: 'Jane Doe', age: 30, email: 'john.doe@example.com' }\n    \n\nLearn more from the following links:\n\n@article@Partial",
+    "description": "The Partial type in TypeScript allows you to make all properties of a type optional. This is useful when you need to create an object with only a subset of the properties of an existing type.\n\nHere's an example of using the Partial type in TypeScript:\n\n    interface User {\n      name: string;\n      age: number;\n      email: string;\n    }\n    \n    function createUser(user: Partial<User>): User {\n      return {\n        name: 'John Doe',\n        age: 30,\n        email: 'john.doe@example.com',\n        ...user,\n      };\n    }\n    \n    const newUser = createUser({ name: 'Jane Doe' });\n    \n    console.log(newUser);\n    // Output: { name: 'Jane Doe', age: 30, email: 'john.doe@example.com' }\n    \n\nLearn more from the following links:\n\n@official@Partial",
     "links": []
   },
   "E88tHQvARkHURZwGaO02l": {
@@ -820,7 +837,7 @@
   },
   "IuO9-O_DQdDYuAbdGWdgb": {
     "title": "Readonly",
-    "description": "Readonly constructs a type with all properties of Type set to readonly, meaning the properties of the constructed type cannot be reassigned.\n\n    interface Todo {\n      title: string;\n    }\n    \n    const todo: Readonly<Todo> = {\n      title: 'Delete inactive users',\n    };\n    \n    // Cannot assign to 'title' because it is a read-only property.\n    todo.title = 'Hello';\n    \n\nLearn more from the following links:\n\n@article@Readonly",
+    "description": "Readonly constructs a type with all properties of Type set to readonly, meaning the properties of the constructed type cannot be reassigned.\n\n    interface Todo {\n      title: string;\n    }\n    \n    const todo: Readonly<Todo> = {\n      title: 'Delete inactive users',\n    };\n    \n    // Cannot assign to 'title' because it is a read-only property.\n    todo.title = 'Hello';\n    \n\nLearn more from the following links:\n\n@official@Readonly",
     "links": []
   },
   "DRdBmF5Dt_r09LoPOxOuq": {
@@ -858,28 +875,40 @@
   },
   "_BAZlBEzE7ddr315OeHvl": {
     "title": "NonNullable",
-    "description": "Non-Nullable constructs a type by excluding `null` and `undefined` from Type.\n\n    type T0 = NonNullable<string | number | undefined>;\n    // type T0 = string | number\n    \n    type T1 = NonNullable<string[] | null | undefined>;\n    // type T1 = string[]\n    \n\nLearn more from the following links:\n\n@article@NonNullable",
+    "description": "Non-Nullable constructs a type by excluding `null` and `undefined` from Type.\n\n    type T0 = NonNullable<string | number | undefined>;\n    // type T0 = string | number\n    \n    type T1 = NonNullable<string[] | null | undefined>;\n    // type T1 = string[]\n    \n\nLearn more from the following links:\n\n@official@NonNullable",
     "links": []
   },
   "a7hl0iMZ-jcUACxqIYVqv": {
     "title": "Parameters",
-    "description": "Parameters constructs a tuple type from the types used in the parameters of a function type Type.\n\n    type T0 = Parameters<() => string>;\n    // type T0 = []\n    \n    type T1 = Parameters<(s: string) => void>;\n    // type T1 = [s: string]\n    \n    type T2 = Parameters<<T>(arg: T) => T>;\n    // type T2 = [arg: unknown]\n    \n    declare function f1(arg: { a: number; b: string }): void;\n    type T3 = Parameters<typeof f1>;\n    // type T3 = [arg: {\n    //     a: number;\n    //     b: string;\n    // }]\n    \n    type T4 = Parameters<any>;\n    // type T4 = unknown[]\n    \n    type T5 = Parameters<never>;\n    // type T5 = never\n    \n    type T6 = Parameters<string>;\n    // ^ Type 'string' does not satisfy the constraint '(...args: any) => any'.\n    \n    type T7 = Parameters<Function>;\n    // ^ Type 'Function' does not satisfy the constraint '(...args: any) => any'.\n    \n\nLearn more from the following links:\n\n@article@Parameters",
+    "description": "Parameters constructs a tuple type from the types used in the parameters of a function type Type.\n\n    type T0 = Parameters<() => string>;\n    // type T0 = []\n    \n    type T1 = Parameters<(s: string) => void>;\n    // type T1 = [s: string]\n    \n    type T2 = Parameters<<T>(arg: T) => T>;\n    // type T2 = [arg: unknown]\n    \n    declare function f1(arg: { a: number; b: string }): void;\n    type T3 = Parameters<typeof f1>;\n    // type T3 = [arg: {\n    //     a: number;\n    //     b: string;\n    // }]\n    \n    type T4 = Parameters<any>;\n    // type T4 = unknown[]\n    \n    type T5 = Parameters<never>;\n    // type T5 = never\n    \n    type T6 = Parameters<string>;\n    // ^ Type 'string' does not satisfy the constraint '(...args: any) => any'.\n    \n    type T7 = Parameters<Function>;\n    // ^ Type 'Function' does not satisfy the constraint '(...args: any) => any'.\n    \n\nLearn more from the following links:\n\n@official@Parameters",
     "links": []
   },
   "On75JR_UkiIlha0_qaSeu": {
     "title": "ReturnType",
-    "description": "Return type constructs a type consisting of the return type of function Type.\n\n    type T0 = ReturnType<() => string>;\n    // type T0 = string\n    \n    type T1 = ReturnType<(s: string) => void>;\n    // type T1 = void\n    \n    type T2 = ReturnType<<T>() => T>;\n    // type T2 = unknown\n    \n    type T3 = ReturnType<<T extends U, U extends number[]>() => T>;\n    // type T3 = number[]\n    \n    declare function f1(): { a: number; b: string };\n    type T4 = ReturnType<typeof f1>;\n    // type T4 = {\n    //     a: number;\n    //     b: string;\n    // }\n    \n    type T5 = ReturnType<any>;\n    // type T5 = any\n    \n    type T6 = ReturnType<never>;\n    // type T6 = never\n    \n    type T7 = ReturnType<string>;\n    // ^ Type 'string' does not satisfy the constraint '(...args: any) => any'.\n    \n    type T8 = ReturnType<Function>;\n    // ^ Type 'Function' does not satisfy the constraint '(...args: any) => any'.\n    \n\nLearn more from the following links:\n\n@article@ReturnType",
+    "description": "Return type constructs a type consisting of the return type of function Type.\n\n    type T0 = ReturnType<() => string>;\n    // type T0 = string\n    \n    type T1 = ReturnType<(s: string) => void>;\n    // type T1 = void\n    \n    type T2 = ReturnType<<T>() => T>;\n    // type T2 = unknown\n    \n    type T3 = ReturnType<<T extends U, U extends number[]>() => T>;\n    // type T3 = number[]\n    \n    declare function f1(): { a: number; b: string };\n    type T4 = ReturnType<typeof f1>;\n    // type T4 = {\n    //     a: number;\n    //     b: string;\n    // }\n    \n    type T5 = ReturnType<any>;\n    // type T5 = any\n    \n    type T6 = ReturnType<never>;\n    // type T6 = never\n    \n    type T7 = ReturnType<string>;\n    // ^ Type 'string' does not satisfy the constraint '(...args: any) => any'.\n    \n    type T8 = ReturnType<Function>;\n    // ^ Type 'Function' does not satisfy the constraint '(...args: any) => any'.\n    \n\nLearn more from the following links:\n\n@official@ReturnType",
     "links": []
   },
   "izGAjNtrh3BzQt3KiZX0W": {
     "title": "InstanceType",
-    "description": "This type constructs a type consisting of the instance type of a constructor function in Type.\n\n    class C {\n      x = 0;\n      y = 0;\n    }\n    \n    type T0 = InstanceType<typeof C>;\n    // type T0 = C\n    \n    type T1 = InstanceType<any>;\n    // type T1 = any\n    \n    type T2 = InstanceType<never>;\n    // type T2 = never\n    \n    type T3 = InstanceType<string>;\n    // ^ Type 'string' does not satisfy the constraint 'abstract new (...args: any) => any'.\n    \n    type T4 = InstanceType<Function>;\n    // ^ Type 'Function' does not satisfy the constraint 'abstract new (...args: any) => any'.\n    \n\nLearn more from the following links:\n\n@article@InstanceType",
-    "links": []
+    "description": "This type constructs a type consisting of the instance type of a constructor function in Type.\n\n    class C {\n      x = 0;\n      y = 0;\n    }\n    \n    type T0 = InstanceType<typeof C>;\n    // type T0 = C\n    \n    type T1 = InstanceType<any>;\n    // type T1 = any\n    \n    type T2 = InstanceType<never>;\n    // type T2 = never\n    \n    type T3 = InstanceType<string>;\n    // ^ Type 'string' does not satisfy the constraint 'abstract new (...args: any) => any'.\n    \n    type T4 = InstanceType<Function>;\n    // ^ Type 'Function' does not satisfy the constraint 'abstract new (...args: any) => any'.\n    \n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "InstanceType<Type>",
+        "url": "https://www.typescriptlang.org/docs/handbook/utility-types.html#instancetypetype",
+        "type": "article"
+      }
+    ]
   },
   "aEhI_9mFWXRIZh1ZxTuzu": {
     "title": "Awaited",
-    "description": "This type is meant to model operations like await in async functions, or the `.then()` method on Promises - specifically, the way that they recursively unwrap Promises.\n\n    type A = Awaited<Promise<string>>;\n    // type A = string\n    \n    type B = Awaited<Promise<Promise<number>>>;\n    // type B = number\n    \n    type C = Awaited<boolean | Promise<number>>;\n    // type C = number | boolean\n    \n\nLearn more from the following links:\n\n@article@Awaited",
-    "links": []
+    "description": "This type is meant to model operations like await in async functions, or the `.then()` method on Promises - specifically, the way that they recursively unwrap Promises.\n\n    type A = Awaited<Promise<string>>;\n    // type A = string\n    \n    type B = Awaited<Promise<Promise<number>>>;\n    // type B = number\n    \n    type C = Awaited<boolean | Promise<number>>;\n    // type C = number | boolean\n    \n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Awaited<Type>",
+        "url": "https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype",
+        "type": "article"
+      }
+    ]
   },
   "2F7vOL__v9dLBohA263aj": {
     "title": "Advanced Types",
@@ -948,8 +977,14 @@
   },
   "N8xBTJ74xv1E5hSLYZtze": {
     "title": "Recursive Types",
-    "description": "Recursive types in TypeScript are a way to define a type that references itself. Recursive types are used to define complex data structures, such as trees or linked lists, where a value can contain one or more values of the same type.\n\nFor example, the following is a recursive type that represents a linked list:\n\n    type LinkedList<T> = {\n      value: T;\n      next: LinkedList<T> | null;\n    };\n    \n    let list: LinkedList<number> = {\n      value: 1,\n      next: { value: 2, next: { value: 3, next: null } },\n    };\n    \n\nIn this example, the `LinkedList` type is defined as a type that extends `T` and contains a property `next` of the same type `LinkedList<T>`. This allows us to create a linked list where each node contains a value of type `T` and a reference to the next node in the list.",
-    "links": []
+    "description": "Recursive types in TypeScript are a way to define a type that references itself. Recursive types are used to define complex data structures, such as trees or linked lists, where a value can contain one or more values of the same type.\n\nFor example, the following is a recursive type that represents a linked list:\n\n    type LinkedList<T> = {\n      value: T;\n      next: LinkedList<T> | null;\n    };\n    \n    let list: LinkedList<number> = {\n      value: 1,\n      next: { value: 2, next: { value: 3, next: null } },\n    };\n    \n\nIn this example, the `LinkedList` type is defined as a type that extends `T` and contains a property `next` of the same type `LinkedList<T>`. This allows us to create a linked list where each node contains a value of type `T` and a reference to the next node in the list.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Recursive Types in TypeScript",
+        "url": "https://www.typescriptlang.org/play/3-7/types-and-code-flow/recursive-type-references.ts.html",
+        "type": "article"
+      }
+    ]
   },
   "sE9lqkkqwnsVJxTJv37YZ": {
     "title": "TypeScript Modules",
