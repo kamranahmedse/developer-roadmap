@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@COUNT](https://www.w3schools.com/sql/sql_count.asp)
+- [@article@COUNT SQL Function](https://www.datacamp.com/tutorial/count-sql-function)

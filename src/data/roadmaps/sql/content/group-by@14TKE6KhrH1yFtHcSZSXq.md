@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@SQL GROUP BY](https://www.programiz.com/sql/group-by)
+- [@video@Advanced Aggregate Functions in SQL](https://www.youtube.com/watch?v=nNrgRVIzeHg)

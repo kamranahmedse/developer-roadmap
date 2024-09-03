@@ -4,5 +4,5 @@ The visualization of data is an essential skill in the toolkit of every data ana
 
 Learn more from the following resources:
 
-- [@video@Data Visualisation in 2024](https://www.youtube.com/watch?v=loYuxWSsLNc)
-- [@article@Data visualisation beginner's guide](https://www.tableau.com/en-gb/learn/articles/data-visualization)
+- [@video@Data Visualization in 2024](https://www.youtube.com/watch?v=loYuxWSsLNc)
+- [@article@Data visualization beginner's guide](https://www.tableau.com/en-gb/learn/articles/data-visualization)

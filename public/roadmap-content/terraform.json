@@ -535,7 +535,7 @@
         "type": "article"
       },
       {
-        "title": "Surpressing values in CLI output",
+        "title": "Suppressing values in CLI output",
         "url": "https://developer.hashicorp.com/terraform/language/values/outputs#sensitive-suppressing-values-in-cli-output",
         "type": "article"
       }

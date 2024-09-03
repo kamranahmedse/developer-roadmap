@@ -18,4 +18,4 @@ const n: number = obj;
 
 Learn more from the following links:
 
-- [@article@any type in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)
+- [@official@any type in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)

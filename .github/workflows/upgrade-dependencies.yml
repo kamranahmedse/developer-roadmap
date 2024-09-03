@@ -1,0 +1,51 @@
+name: Upgrade Dependencies
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  upgrade-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js Version 20 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install & Upgrade Dependencies
+        run: |
+          pnpm install
+          npm run upgrade
+          pnpm install --lockfile-only
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          delete-branch: false
+          branch: "update-deps"
+          base: "master"
+          labels: |
+            dependencies
+            automated pr
+          reviewers: kamranahmedse
+          commit-message: "chore: update dependencies to latest"
+          title: "Upgrade Dependencies To Latest - Automated"
+          body: |
+            ## Updated all Dependencies to Latest Versions.
+
+            > [!IMPORTANT]
+            > This PR Upgrades the Dependencies to the Latest Their Versions.
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
+
+            **Please Review the Changes and Merge the PR if everything is fine.**

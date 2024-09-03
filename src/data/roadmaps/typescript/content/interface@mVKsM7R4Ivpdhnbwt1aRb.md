@@ -15,4 +15,4 @@ function greet(person: Person) {
 
 Learn more from the following links:
 
-- [@article@Object Types - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- [@official@Object Types - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

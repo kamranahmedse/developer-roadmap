@@ -12,4 +12,4 @@ type T1 = NonNullable<string[] | null | undefined>;
 
 Learn more from the following links:
 
-- [@article@NonNullable<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)
+- [@official@NonNullable<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)

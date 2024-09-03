@@ -1,5 +1,4 @@
 import { CheckIcon, CopyIcon, X } from 'lucide-react';
-import { CheckIcon as ReactCheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { Modal } from '../Modal';
 import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
@@ -7,6 +6,7 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 import { getTopGitHubLanguages } from '../../lib/github.ts';
+import { SubmitSuccessModal } from './SubmitSuccessModal.tsx';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
@@ -39,7 +39,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
   const { isCopied, copyText } = useCopyText();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
   const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
   const [verificationChecks, setVerificationChecks] =
     useState<VerificationChecksType>({
@@ -61,7 +61,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
       setIsLoading(true);
       setError('');
-      setSuccessMessage('');
+      setIsSuccess(false);
 
       if (!repoUrl) {
         setVerificationChecks({
@@ -198,7 +198,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         );
       }
 
-      setSuccessMessage('Solution submitted successfully!');
+      setIsSuccess(true);
       setIsLoading(false);
 
       onSubmit(submitResponse);
@@ -209,15 +209,8 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
     }
   };
 
-  if (successMessage) {
-    return (
-      <Modal onClose={onClose} bodyClassName="h-auto p-4">
-        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
-          <ReactCheckIcon additionalClasses={'h-12 text-green-500 w-12'} />
-          <p className="text-lg font-medium">{successMessage}</p>
-        </div>
-      </Modal>
-    );
+  if (isSuccess) {
+    return <SubmitSuccessModal projectId={projectId} onClose={onClose} />;
   }
 
   return (
@@ -295,12 +288,6 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         </button>
         {error && (
           <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
-        )}
-
-        {successMessage && (
-          <p className="mt-2 text-sm font-medium text-green-500">
-            {successMessage}
-          </p>
         )}
       </form>
 

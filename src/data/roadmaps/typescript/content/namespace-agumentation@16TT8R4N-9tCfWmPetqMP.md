@@ -30,4 +30,4 @@ In this example, we use namespace augmentation to add a new function "newFunctio
 
 Learn more from the following links:
 
-- [@article@Module Augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)
+- [@official@Module Augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)

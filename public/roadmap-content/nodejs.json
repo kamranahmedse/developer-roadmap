@@ -1617,6 +1617,11 @@
     "description": "Drizzle lets you build your project the way you want, without interfering with your project or structure. Using Drizzle you can define and manage database schemas in TypeScript, access your data in a SQL-like or relational way, and take advantage of opt-in tools to make your developer experience amazing.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Drizzle Github",
+        "url": "https://github.com/drizzle-team/drizzle-orm",
+        "type": "opensource"
+      },
+      {
         "title": "Drizzle Website",
         "url": "https://orm.drizzle.team/",
         "type": "article"
@@ -1624,11 +1629,6 @@
       {
         "title": "Drizzle Documentation",
         "url": "https://orm.drizzle.team/docs/overview",
-        "type": "article"
-      },
-      {
-        "title": "Drizzle Github",
-        "url": "https://github.com/drizzle-team/drizzle-orm",
         "type": "article"
       },
       {

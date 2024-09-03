@@ -5,3 +5,4 @@ In SQL, a correlated subquery is a subquery that uses values from the outer quer
 Learn more from the following resources:
 
 - [@official@Correlated Subqueries](https://dev.mysql.com/doc/refman/8.4/en/correlated-subqueries.html)
+- [@video@Intro To Subqueries](https://www.youtube.com/watch?v=TUxadt94L0M)

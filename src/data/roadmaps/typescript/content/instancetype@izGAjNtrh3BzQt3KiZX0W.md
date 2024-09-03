@@ -26,4 +26,4 @@ type T4 = InstanceType<Function>;
 
 Learn more from the following links:
 
-- [@article@InstanceType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#instancetypetype)
+- [@official@InstanceType`<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#instancetypetype)

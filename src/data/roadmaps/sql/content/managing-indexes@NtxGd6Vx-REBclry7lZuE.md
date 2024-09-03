@@ -5,3 +5,4 @@ Managing indexes in SQL involves creating, modifying, and dropping indexes to op
 Learn more from the following resources:
 
 - [@article@SQL Server Indexes](https://www.sqlservercentral.com/articles/sql-server-indexes)
+- [@article@Optimize index maintenance](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver16)

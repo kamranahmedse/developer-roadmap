@@ -15,6 +15,7 @@ import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
 import type { ProjectFrontmatter } from '../../lib/project.ts';
+import { ProjectSolutionModal } from './ProjectSolutionModal.tsx';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -68,7 +69,7 @@ type ListProjectSolutionsProps = {
   projectId: string;
 };
 
-const submittedAlternatives = [
+export const submittedAlternatives = [
   'submitted their solution',
   'got it done',
   'submitted their take',
