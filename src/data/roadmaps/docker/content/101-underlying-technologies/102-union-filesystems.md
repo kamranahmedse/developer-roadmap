@@ -16,7 +16,7 @@ These are some of the essential features of union filesystems:
 
 Docker supports multiple union filesystems that facilitate building and managing containers. Some of the popular options include:
 
-- [@article@**AUFS (Advanced Multi-Layered Unification Filesystem)**](http://aufs.sourceforge.net/): AUFS is widely used as a Docker storage driver, enabling efficient management of multiple layers
-- [@article@**OverlayFS (Overlay Filesystem)**](https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html): OverlayFS is another union filesystem supported by Docker. It uses a simplified approach compared to AUFS to create and manage overlayed directories
-- [@article@**Btrfs (B-Tree Filesystem)**](https://btrfs.wiki.kernel.org/index.php/Main_Page): Btrfs, a modern file system, offers compatibility with union filesystems in addition to advanced storage features like snapshots and checksumming
-- [@article@**ZFS (Z File System)**](https://zfsonlinux.org/): ZFS is a high-capacity and robust storage platform that provides union filesystem features along with data protection, compression, and deduplication
+- [@article@**AUFS (Advanced Multi-Layered Unification Filesystem)**](http://aufs.sourceforge.net/)
+- [@article@**OverlayFS (Overlay Filesystem)**](https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html)
+- [@article@**Btrfs (B-Tree Filesystem)**](https://btrfs.wiki.kernel.org/index.php/Main_Page)
+- [@article@**ZFS (Z File System)**](https://zfsonlinux.org/)
