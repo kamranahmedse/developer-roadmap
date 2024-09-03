@@ -2,8 +2,8 @@
 title: 'Custom Dropdown'  
 description: 'Create a custom dropdown using HTML, CSS, and JavaScript.'  
 isNew: false  
-sort: 18  
-difficulty: 'beginner'  
+sort: 19
+difficulty: 'intermediate'  
 nature: 'JavaScript'  
 skills:  
   - 'HTML'  
