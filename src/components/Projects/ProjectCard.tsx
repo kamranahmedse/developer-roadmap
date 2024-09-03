@@ -6,6 +6,7 @@ import type {
 
 type ProjectCardProps = {
   project: ProjectFileType;
+  userCount?: number;
 };
 
 const badgeVariants: Record<ProjectDifficultyType, string> = {
@@ -15,7 +16,7 @@ const badgeVariants: Record<ProjectDifficultyType, string> = {
 };
 
 export function ProjectCard(props: ProjectCardProps) {
-  const { project } = props;
+  const { project, userCount = 0 } = props;
 
   const { frontmatter, id } = project;
 
@@ -33,6 +34,13 @@ export function ProjectCard(props: ProjectCardProps) {
       </span>
       <span className="mb-1 mt-2.5 font-medium">{frontmatter.title}</span>
       <span className="text-sm text-gray-500">{frontmatter.description}</span>
+      <span className="mt-2.5 text-xs text-gray-500">
+        {userCount === 0 ? (
+          <span>Be the first to start this project</span>
+        ) : (
+          <span>{userCount} user(s) have started this project</span>
+        )}
+      </span>
     </a>
   );
 }
