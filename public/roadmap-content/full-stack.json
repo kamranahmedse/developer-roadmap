@@ -4,11 +4,6 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Interactive HTML Course",
-        "url": "https://github.com/denysdovhan/learnyouhtml",
-        "type": "opensource"
-      },
-      {
         "title": "W3Schools: Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
         "type": "article"
@@ -19,18 +14,13 @@
         "type": "article"
       },
       {
+        "title": "HTML Full Course for Beginners",
+        "url": "https://youtu.be/mJgBOIoGihA",
+        "type": "video"
+      },
+      {
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
-        "type": "video"
-      },
-      {
-        "title": "HTML Tutorial for Beginners: HTML Crash Course",
-        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
-        "type": "video"
-      },
-      {
-        "title": "HTML and CSS Full Course - Beginner To Pro",
-        "url": "https://youtu.be/a_iQb1lnAEQ",
         "type": "video"
       }
     ]
@@ -45,13 +35,8 @@
         "type": "article"
       },
       {
-        "title": "Learn to Code HTML & CSS",
-        "url": "https://learn.shayhowe.com/html-css/building-your-first-web-page/",
-        "type": "article"
-      },
-      {
-        "title": "What The Flexbox!",
-        "url": "https://flexbox.io/",
+        "title": "Web.dev by Google — Learn CSS",
+        "url": "https://web.dev/learn/css/",
         "type": "article"
       },
       {
@@ -60,29 +45,24 @@
         "type": "article"
       },
       {
-        "title": "CSS Crash Course For Absolute Beginners",
-        "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+        "title": "CSS Complete Course",
+        "url": "https://youtu.be/n4R2E7O-Ngo",
         "type": "video"
       },
       {
         "title": "HTML and CSS Tutorial",
         "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w",
         "type": "video"
-      },
-      {
-        "title": "CSS Masterclass - Tutorial & Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA",
-        "type": "video"
       }
     ]
   },
   "T9PB6WQf-Fa9NXKKvVOy_": {
     "title": "JavaScript",
-    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:\n\nWe also have this [JavaScript roadmap](/javascript). You don't need to follow it right now, just learn from some courses and revisit the roadmap later in your journey.",
+    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
+        "title": "Visit Dedicated JavaScript Roadmap",
+        "url": "/javascript",
         "type": "article"
       },
       {
@@ -91,8 +71,8 @@
         "type": "article"
       },
       {
-        "title": "Exploring JS: JavaScript books for programmers",
-        "url": "https://exploringjs.com/",
+        "title": "Build 30 Javascript projects in 30 days",
+        "url": "https://javascript30.com/",
         "type": "article"
       },
       {
@@ -103,11 +83,6 @@
       {
         "title": "JavaScript Crash Course for Beginners",
         "url": "https://youtu.be/hdI2bqOjy3c?t=2",
-        "type": "video"
-      },
-      {
-        "title": "Build a Netflix Landing Page Clone with HTML, CSS & JS",
-        "url": "https://youtu.be/P7t13SGytRk",
         "type": "video"
       }
     ]
