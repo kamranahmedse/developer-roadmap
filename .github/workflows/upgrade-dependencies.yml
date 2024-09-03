@@ -1,50 +1,49 @@
-name: Refresh Roadmap Content JSON
+name: Upgrade Dependencies
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 0'
 
 jobs:
-  refresh-content:
+  upgrade-deps:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup pnpm@v9
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false
 
       - name: Setup Node.js Version 20 (LTS)
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
-      - name: Install Dependencies and Generate Content JSON
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install & Upgrade Dependencies
         run: |
           pnpm install
-          npm run generate:roadmap-content-json
-      
-      - name: Create PR
+          npm run upgrade
+          pnpm install --lockfile-only
+
+      - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
           delete-branch: false
-          branch: "chore/update-content-json"
+          branch: "update-deps"
           base: "master"
           labels: |
             dependencies
             automated pr
           reviewers: kamranahmedse
-          commit-message: "chore: update roadmap content json"
-          title: "Updated Roadmap Content JSON - Automated"
+          commit-message: "chore: update dependencies to latest"
+          title: "Upgrade Dependencies To Latest - Automated"
           body: |
-            ## Updated Roadmap Content JSON
-            
+            ## Updated all Dependencies to Latest Versions.
+
             > [!IMPORTANT]
-            > This PR Updates the Roadmap Content JSON files stored in the `public` directory.
+            > This PR Upgrades the Dependencies to the Latest Their Versions.
             >
             > Commit: ${{ github.sha }}
             > Workflow Path: ${{ github.workflow_ref }}
