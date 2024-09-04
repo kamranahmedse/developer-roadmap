@@ -33,9 +33,11 @@ export function ProjectCard(props: ProjectCardProps) {
         />
         <Badge variant={'grey'} text={frontmatter.nature} />
       </span>
-      <span className="mb-1 mt-2.5 font-medium">{frontmatter.title}</span>
-      <span className="text-sm text-gray-500">{frontmatter.description}</span>
-      <span className="mt-2.5 flex items-center gap-2 text-xs text-gray-500">
+      <span className="my-3 flex flex-col">
+        <span className="mb-1 font-medium">{frontmatter.title}</span>
+        <span className="text-sm text-gray-500">{frontmatter.description}</span>
+      </span>
+      <span className="flex items-center gap-2 text-xs text-gray-400">
         <Users className="inline-block size-3.5" />
         {userCount > 0 ? <>{userCount} Started</> : <>Be the first to solve!</>}
       </span>
