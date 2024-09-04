@@ -8077,7 +8077,7 @@
       },
       "selected": false,
       "data": {
-        "label": "HTTP vs HTTPS",
+        "label": "SSL vs TLS",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
