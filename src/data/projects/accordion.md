@@ -28,5 +28,3 @@ Given below is the mockup showing the accordion in its default and expanded stat
 [![Accordion](https://assets.roadmap.sh/guest/accordion-rbvpo.png)](https://assets.roadmap.sh/guest/accordion-rbvpo.png)
 
 This project will help you practice DOM manipulation, event handling, and implementing responsive design patterns using JavaScript.
-
----
