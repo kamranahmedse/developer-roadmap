@@ -3,6 +3,7 @@ import type {
   ProjectDifficultyType,
   ProjectFileType,
 } from '../../lib/project.ts';
+import { Users } from 'lucide-react';
 
 type ProjectCardProps = {
   project: ProjectFileType;
@@ -34,13 +35,12 @@ export function ProjectCard(props: ProjectCardProps) {
       </span>
       <span className="mb-1 mt-2.5 font-medium">{frontmatter.title}</span>
       <span className="text-sm text-gray-500">{frontmatter.description}</span>
-      <span className="mt-2.5 text-xs text-gray-500">
-        {userCount === 0 ? (
-          <span>Be the first to start this project</span>
-        ) : (
-          <span>{userCount} user(s) have started this project</span>
-        )}
-      </span>
+      {userCount > 0 && (
+        <span className="mt-2.5 flex items-center gap-2 text-xs text-gray-500">
+          <Users className="inline-block size-3.5" />
+          {userCount} Started
+        </span>
+      )}
     </a>
   );
 }
