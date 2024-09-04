@@ -40,10 +40,11 @@ function DifficultyButton(props: DifficultyButtonProps) {
 
 type ProjectsListProps = {
   projects: ProjectFileType[];
+  userCounts: Record<string, number>;
 };
 
 export function ProjectsList(props: ProjectsListProps) {
-  const { projects } = props;
+  const { projects, userCounts } = props;
 
   const { difficulty: urlDifficulty } = getUrlParams();
   const [difficulty, setDifficulty] = useState<
@@ -127,9 +128,10 @@ export function ProjectsList(props: ProjectsListProps) {
           .sort((a, b) => {
             return a.frontmatter.sort - b.frontmatter.sort;
           })
-          .map((matchingProject) => (
-            <ProjectCard project={matchingProject} />
-          ))}
+          .map((matchingProject) => {
+            const count = userCounts[matchingProject?.id] || 0;
+            return <ProjectCard project={matchingProject} userCount={count} />;
+          })}
       </div>
     </div>
   );
