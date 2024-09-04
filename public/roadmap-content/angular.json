@@ -1217,8 +1217,34 @@
   },
   "XC_K1Wahl2ySqOXoym4YU": {
     "title": "Typed Forms",
-    "description": "",
-    "links": []
+    "description": "Since Angular 14, reactive forms are strictly typed by default. You don't have to define extra custom types or add a ton of type annotations to your form declarations to benefit from this extra type safety, as Angular will infer types from the default value of a form control. Non-typed forms are still supported. To use them, you must import the `Untyped` symbols from `@angular/forms`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - @let",
+        "url": "https://angular.dev/api/core/@let",
+        "type": "article"
+      },
+      {
+        "title": "Angular Strictly Typed Forms (Complete Guide)",
+        "url": "https://blog.angular-university.io/angular-typed-forms/",
+        "type": "article"
+      },
+      {
+        "title": "Getting started with typed reactive forms in Angular",
+        "url": "https://www.youtube.com/watch?v=mT3UR0TdDnU",
+        "type": "video"
+      },
+      {
+        "title": "Angular TYPED Forms: Are You Using Them Correctly?",
+        "url": "https://www.youtube.com/watch?v=it2BZoIvBPc",
+        "type": "video"
+      },
+      {
+        "title": "Knowing this makes Angular typed forms WAY less awkward",
+        "url": "https://www.youtube.com/watch?v=xpRlijg6spo",
+        "type": "video"
+      }
+    ]
   },
   "uDx4lPavwsJFBMzdQ70CS": {
     "title": "Template-driven Forms",
@@ -1492,8 +1518,13 @@
   },
   "kdMJHljMzGA3oRlh8Zvos": {
     "title": "Transformation",
-    "description": "In RxJS, \"transformation\" refers to the process of modifying or manipulating the data emitted by an Observable. There are a variety of methods available in RxJS that can be used to transform the data emitted by an Observable, including:\n\n*   map: applies a function to each item emitted by the Observable and emits the resulting value\n*   mergeMap: applies a function to each item emitted by the Observable, and then merges the resulting Observables into a single Observable\n*   switchMap: applies a function to each item emitted by the Observable, and then switches to the latest resulting Observable\n*   concatMap: applies a function to each item emitted by the Observable, and then concatenates the resulting Observables into a single Observable\n*   exhaustMap: applies a function to each item emitted by the Observable, but ignores subsequent emissions until the current Observable completes\n\nThese are just a few examples of the many methods available in RxJS for transforming the data emitted by an Observable. Each method has its own specific use case, and the best method to use will depend on the requirements of your application.\n\nHere are the official documentation links for the RxJS transformation methods:\n\nYou can find more information and examples on these methods in the official RxJS documentation. Additionally, you can find more operators on [https://rxjs.dev/api/operators](https://rxjs.dev/api/operators) and you can also find more information on the library as a whole on [https://rxjs.dev/](https://rxjs.dev/)",
+    "description": "In RxJS, \"transformation\" refers to the process of modifying or manipulating the data emitted by an Observable. There are a variety of methods available in RxJS that can be used to transform the data emitted by an Observable, including:\n\n*   **map**: applies a function to each item emitted by the Observable and emits the resulting value\n*   **mergeMap**: applies a function to each item emitted by the Observable, and then merges the resulting Observables into a single Observable\n*   **switchMap**: applies a function to each item emitted by the Observable, and then switches to the latest resulting Observable\n*   **concatMap**: applies a function to each item emitted by the Observable, and then concatenates the resulting Observables into a single Observable\n*   **exhaustMap**: applies a function to each item emitted by the Observable, but ignores subsequent emissions until the current Observable completes\n\nThese are just a few examples of the many methods available in RxJS for transforming the data emitted by an Observable. Each method has its own specific use case, and the best method to use will depend on the requirements of your application.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "RxJs Docs - Operators",
+        "url": "https://rxjs.dev/api/operators",
+        "type": "article"
+      },
       {
         "title": "map",
         "url": "https://rxjs.dev/api/operators/map",
@@ -1814,8 +1845,29 @@
   },
   "EbJib-XfZFF9bpCtL3aBs": {
     "title": "Developer Tools",
-    "description": "",
-    "links": []
+    "description": "Angular offers a suite of powerful developer tools designed to streamline and enhance the development process. These include the Angular CLI for efficient project setup and management, the Angular DevTools extension for advanced debugging and profiling, and the Angular Language Service for improved code editing and completion. Leveraging these tools will significantly improve your ability to write high-quality Angular code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "VS Code NG Language Service",
+        "url": "https://github.com/angular/vscode-ng-language-service",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - devtools",
+        "url": "https://angular.dev/tools/devtools",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - CLI",
+        "url": "https://angular.dev/tools/cli",
+        "type": "article"
+      },
+      {
+        "title": "Language Service Docs",
+        "url": "https://angular.dev/tools/language-service",
+        "type": "article"
+      }
+    ]
   },
   "4YSk6I63Ew--zoXC3xmrC": {
     "title": "Angular CLI",
@@ -2075,8 +2127,19 @@
   },
   "YHV5oFwLwphXf1wJTDZuG": {
     "title": "Using Libraries",
-    "description": "",
-    "links": []
+    "description": "Libraries are published as `npm packages`, usually together with schematics that integrate them with the Angular CLI. To integrate reusable library code into an application, you need to install the package and import the provided functionality in the location you use it. For most published Angular libraries, use the `ng add <lib_name>` Angular CLI command. A published library typically provides a `README` file or other documentation on how to add that library to your application. A library is able to be updated by the publisher, and also has individual dependencies which need to be kept current. To check for updates to your installed libraries, use the `ng update` Angular CLI command.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Using Libraries",
+        "url": "https://angular.dev/tools/libraries/using-libraries",
+        "type": "article"
+      },
+      {
+        "title": "npm",
+        "url": "https://www.npmjs.com/",
+        "type": "article"
+      }
+    ]
   },
   "A1mYMg7cbcj6p_VkDf-Tz": {
     "title": "Creating Libraries",
@@ -2570,8 +2633,34 @@
   },
   "lLa-OnHV6GzkNFZu29BIT": {
     "title": "Testing",
-    "description": "In any software development process, Testing the application plays a vital role. If Bugs and crashes are not figured out and solved they can defame the development company as well as hurt the clients too. But, Angular’s architecture comes with built-in testability features. As soon as you create a new project with Angular CLI, two essential testing tools are installed.They are: Jasmine and Karma. Jasmine is the testing library which structures individual tests into specifications (“specs”) and suites. And Karma is the test runner, which enables the different browsers to run the tests mentioned by Jasmine and the browsers will finally report the test results back.",
-    "links": []
+    "description": "In any software development process, testing the application plays a vital role. If bugs and crashes are not figured out and solved they can defame the development company as well as hurt the clients too. But, Angular’s architecture comes with built-in testability features. As soon as you create a new project with Angular CLI, two essential testing tools are installed. They are: Jasmine and Karma. Jasmine is the testing library which structures individual tests into specifications (“specs”) and suites. And Karma is the test runner, which enables the different browsers to run the tests mentioned by Jasmine and the browsers will finally report the test results back.\n\nYou can also unit test an Angular application with other testing libraries and test runners. Each library and runner has its own distinctive installation procedures, configuration, and syntax.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Testing",
+        "url": "https://angular.dev/guide/testing",
+        "type": "article"
+      },
+      {
+        "title": "Jasmine Official Docs",
+        "url": "https://jasmine.github.io/",
+        "type": "article"
+      },
+      {
+        "title": "Karma Official Docs",
+        "url": "https://karma-runner.github.io/latest/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Testing Angular - A Guide to Robust Angular Applications",
+        "url": "https://testing-angular.com/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction | Angular Unit Testing Made Easy: A Comprehensive Introduction",
+        "url": "https://www.youtube.com/watch?v=emnwsVy8wRs",
+        "type": "video"
+      }
+    ]
   },
   "HU1eTYB321C93qh_U7ioF": {
     "title": "Testing Services",
@@ -2790,18 +2879,71 @@
   },
   "W8OwpEw00xn0GxidlJjdc": {
     "title": "Localize Package",
-    "description": "",
-    "links": []
+    "description": "To take advantage of the localization features of Angular, use the Angular CLI to add the `@angular/localize` package to your project. If `@angular/localize` is not installed and you try to build a localized version of your project (for example, while using the i18n attributes in templates), the Angular CLI will generate an error, which would contain the steps that you can take to enable i18n for your project.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Add the localize package",
+        "url": "https://angular.dev/guide/i18n/add-package",
+        "type": "article"
+      },
+      {
+        "title": "Learn to Internationalize Your Angular Apps with @angular/localize",
+        "url": "https://www.youtube.com/watch?v=5h7HPY1OMfU",
+        "type": "video"
+      },
+      {
+        "title": "Multi-Language Support in Angular: A Guide to Localization and Internationalization",
+        "url": "https://www.youtube.com/watch?v=ouI21AyJ9tE",
+        "type": "video"
+      }
+    ]
   },
   "dVKl3Z2Rnf6IB064v19Mi": {
     "title": "Locales by ID",
-    "description": "",
-    "links": []
+    "description": "Angular uses the Unicode locale identifier (Unicode locale ID) to find the correct locale data for internationalization of text strings. A locale ID specifies the language, country, and an optional code for further variants or subdivisions. A locale ID consists of the language identifier, a hyphen (-) character, and the locale extension. By default, Angular uses `en-US` as the source locale of your project.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular locales",
+        "url": "https://github.com/angular/angular/tree/main/packages/common/locales",
+        "type": "opensource"
+      },
+      {
+        "title": "Angular Official Docs - Refer to locales by ID",
+        "url": "https://angular.dev/guide/i18n/locale-id",
+        "type": "article"
+      },
+      {
+        "title": "Codes arranged alphabetically by alpha-3/ISO 639-2 Code",
+        "url": "https://www.loc.gov/standards/iso639-2/php/code_list.php",
+        "type": "article"
+      },
+      {
+        "title": "Unicode CLDR Specifications",
+        "url": "https://cldr.unicode.org/index/cldr-spec",
+        "type": "article"
+      }
+    ]
   },
   "jL5amGV1BAX_V5cyTIH7d": {
     "title": "Translation Files",
-    "description": "",
-    "links": []
+    "description": "After you prepare a component for translation, use the `extract-i18n` Angular CLI command to extract the marked text in the component into a source language file. The marked text includes text marked with `i18n`, attributes marked with `i18n`\\-attribute, and text tagged with `$localize`. The `extract-i18n` command creates a source language file named `messages.xlf` in the root directory of your project. If you have multiple language files, add the locale to the file name, like `messages.{locale}.xlf`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Angular Official Docs - Translation Files",
+        "url": "https://angular.dev/guide/i18n/translation-files",
+        "type": "article"
+      },
+      {
+        "title": "Angular Official Docs - Extract i18n",
+        "url": "https://angular.dev/cli/extract-i18n",
+        "type": "article"
+      },
+      {
+        "title": "Angular i18n: internationalization & localization with examples",
+        "url": "https://lokalise.com/blog/angular-i18n/",
+        "type": "article"
+      }
+    ]
   },
   "9ISvaaJ815_cr_KW9vQhT": {
     "title": "Multiple Locales",

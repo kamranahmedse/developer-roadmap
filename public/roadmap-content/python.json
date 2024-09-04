@@ -227,6 +227,16 @@
         "title": "Loops in Python",
         "url": "https://www.geeksforgeeks.org/loops-in-python/",
         "type": "article"
+      },
+      {
+        "title": "Python \"while\" Loops (Indefinite Iteration)",
+        "url": "https://realpython.com/python-while-loop/",
+        "type": "article"
+      },
+      {
+        "title": "Python \"for\" Loops (Definite Iteration)",
+        "url": "https://realpython.com/python-for-loop/#the-guts-of-the-python-for-loop",
+        "type": "article"
       }
     ]
   },
