@@ -4,6 +4,7 @@ import type {
   ProjectFileType,
 } from '../../lib/project.ts';
 import { Users } from 'lucide-react';
+import { formatCommaNumber } from '../../lib/number.ts';
 
 type ProjectCardProps = {
   project: ProjectFileType;
@@ -39,7 +40,11 @@ export function ProjectCard(props: ProjectCardProps) {
       </span>
       <span className="flex items-center gap-2 text-xs text-gray-400">
         <Users className="inline-block size-3.5" />
-        {userCount > 0 ? <>{userCount} Started</> : <>Be the first to solve!</>}
+        {userCount > 0 ? (
+          <>{formatCommaNumber(userCount)} Started</>
+        ) : (
+          <>Be the first to solve!</>
+        )}
       </span>
     </a>
   );
