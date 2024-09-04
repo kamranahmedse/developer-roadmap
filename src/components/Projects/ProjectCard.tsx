@@ -35,12 +35,10 @@ export function ProjectCard(props: ProjectCardProps) {
       </span>
       <span className="mb-1 mt-2.5 font-medium">{frontmatter.title}</span>
       <span className="text-sm text-gray-500">{frontmatter.description}</span>
-      {userCount > 0 && (
-        <span className="mt-2.5 flex items-center gap-2 text-xs text-gray-500">
-          <Users className="inline-block size-3.5" />
-          {userCount} Started
-        </span>
-      )}
+      <span className="mt-2.5 flex items-center gap-2 text-xs text-gray-500">
+        <Users className="inline-block size-3.5" />
+        {userCount > 0 ? <>{userCount} Started</> : <>Be the first to solve!</>}
+      </span>
     </a>
   );
 }
