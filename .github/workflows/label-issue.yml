@@ -20,7 +20,7 @@ jobs:
             if (issue.labels.some(label => label.name === 'topic-change')) {
               if (roadmapUrl) {
                 const roadmapSlug = new URL(roadmapUrl[0]).pathname.replace(/\//, '');
-                github.issues.addLabels({
+                github.rest.issues.addLabels({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
@@ -30,7 +30,7 @@ jobs:
             
               // Close the issue if it has no roadmap URL
               if (!roadmapUrl) {
-                github.issues.update({
+                github.rest.issues.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
