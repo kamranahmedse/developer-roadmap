@@ -21,8 +21,8 @@ jobs:
       with:
         name: labeler
         path: labeler.yml
-        repository: <public-repo-owner>/<public-repo-name>
-        ref: main
+        repository: offensive-vk/developer-roadmap
+        ref: master
 
     - name: Label Pull Requests
       uses: actions/labeler@v5
