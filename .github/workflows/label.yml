@@ -1,16 +1,13 @@
 name: Create Labels
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 jobs:
   create-labels:
     runs-on: ubuntu-latest
     env:
-      github-token: ${{ secrets.MY_TOKEN || secrets.GITHUB_TOKEN }}
+      github-token: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Create labels
         run: |
@@ -36,7 +33,6 @@ jobs:
             "link-groups:d2691e:Grouped links and resources."
             "question-groups:ff4500:Grouped questions and FAQs."
             "videos:8a2be2:Video resources and links."
-            "roadmap:ff7f50:roadmap"
             "directives:00ced1:Directive definitions and logic."
             "helper-functions:8fbc8f:Helper functions and utilities."
             "hooks:20b2aa:React hooks and custom logic."

@@ -19,4 +19,4 @@ jobs:
     - name: Label Pull Requests
       uses: actions/labeler@v4
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN || secrets.BOT_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
