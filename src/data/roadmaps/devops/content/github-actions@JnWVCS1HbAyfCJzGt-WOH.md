@@ -4,8 +4,9 @@ Automate, customize, and execute your software development workflows right in yo
 
 Visit the following resources to learn more:
 
-- [@article@GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [@article@Learn GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
+- [@official@Github Actions](https://github.com/features/actions)
+- [@official@GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [@official@Learn GitHub Actions](https://docs.github.com/en/actions/learn-github-actions)
 - [@video@GitHub Actions - Supercharge your GitHub Flow](https://youtu.be/cP0I9w2coGU)
 - [@video@Automate your Workflow with GitHub Actions](https://www.youtube.com/watch?v=nyKZTKQS_EQ)
 - [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)
