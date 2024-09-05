@@ -1,5 +1,5 @@
 ##################################
-# Basic Configuation Based Labels
+# Basic Configuration Based Labels
 ##################################
 configuration:
   - '.astro/*'
@@ -8,10 +8,9 @@ configuration:
   - 'playwright.config.ts'
   - 'package.json'
   - 'package-lock.json'
-  - '*.lock'
   - 'src/env.d.ts'
   - 'astro.config.mjs'
-  - 'sitmap.mjs'
+  - 'sitemap.mjs'
   - 'tailwind.config.cjs'
 
 ci/cd:
@@ -277,5 +276,5 @@ vue:
   - 'src/data/roadmaps/vue/**/*'
 
 ##################################
-## Add Future Labels Below Here #
+## Add Future Labels Below Here ##
 ##################################
