@@ -1,0 +1,111 @@
+name: Create Labels
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  create-labels:
+    runs-on: ubuntu-latest
+    env:
+      github-token: ${{ secrets.MY_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Create labels
+        run: |
+          labels=(
+            "configuration:#bada55:Configuration files and settings."
+            "ci/cd:#ff4500:Continuous Integration and Deployment."
+            "editor:#00ff7f:Editor-specific configurations."
+            "static-content:#ffd700:Static assets in the project."
+            "renderer:#1e90ff:Rendering logic and components."
+            "scripts:#ff6347:Scripts for automation and tooling."
+            "tests:#9acd32:Testing files and specs."
+            "roadmap-docs:#ba55d3:Documentation and guidelines."
+            "api:#4682b4:API related files and endpoints."
+            "components:#00fa9a:Reusable UI components."
+            "authors:#ff1493:Author data and information."
+            "best-practices/api-security:#8b0000:Best practices in API security."
+            "best-practices/aws:#7fffd4:Best practices in AWS."
+            "best-practices/frontend-performance:#daa520:Frontend performance best practices."
+            "best-practices/backend-performance:#32cd32:Backend performance best practices."
+            "best-practices/code-review:#4682b4:Best practices for code reviews."
+            "guides:#dc143c:Guides and tutorials."
+            "projects:#00bfff:Project files and documentation."
+            "link-groups:#d2691e:Grouped links and resources."
+            "question-groups:#ff4500:Grouped questions and FAQs."
+            "videos:#8a2be2:Video resources and links."
+            "roadmap:#ff7f50:roadmap"
+            "directives:#00ced1:Directive definitions and logic."
+            "helper-functions:#8fbc8f:Helper functions and utilities."
+            "hooks:#20b2aa:React hooks and custom logic."
+            "icons:#ff00ff:Icon files and assets."
+            "layouts:#2e8b57:Layout components and templates."
+            "libraries:#ffa500:Library files and dependencies."
+            "pages:#1e90ff:Page components and routing."
+            "stores:#8b008b:State management stores."
+            "styles:#5f9ea0:Stylesheets and style definitions."
+            "android:#008000:android roadmap"
+            "angular:#ff4500:angular roadmap"
+            "api-design:#b22222:api-design roadmap"
+            "aspnet-core:#4169e1:aspnet-core roadmap"
+            "aws:#daa520:aws roadmap"
+            "backend:#00008b:backend roadmap"
+            "blockchain:#6a5acd:blockchain roadmap"
+            "code-review:#d2b48c:code-review roadmap"
+            "computer-science:#b0c4de:computer-science roadmap"
+            "cpp:#ff6347:cpp roadmap"
+            "cyber-security:#2f4f4f:cyber-security roadmap"
+            "data-analyst:#008b8b:data-analyst roadmap"
+            "datastructures-and-algorithms:#9932cc:datastructures-and-algorithms roadmap"
+            "design-system:#8b4513:design-system roadmap"
+            "devops:#708090:devops roadmap"
+            "dotnet:#ff69b4:dotnet roadmap"
+            "docker:#2e8b57:docker roadmap"
+            "devrel:#f4a460:devrel roadmap"
+            "flutter:#6495ed:flutter roadmap"
+            "full-stack:#ff4500:full-stack roadmap"
+            "frontend:#ff8c00:frontend roadmap"
+            "git-github:#1e90ff:git-github roadmap"
+            "golang:#dc143c:golang roadmap"
+            "graphql:#4682b4:graphql roadmap"
+            "ios:#dda0dd:ios roadmap"
+            "java:#800080:java roadmap"
+            "javascript:#f08080:javascript roadmap"
+            "kubernetes:#5f9ea0:kubernetes roadmap"
+            "linux:#00fa9a:linux roadmap"
+            "mlops:#a0522d:mlops roadmap"
+            "mongodb:#87ceeb:mongodb roadmap"
+            "mysql:#dda0dd:mysql roadmap"
+            "nodejs:#7b68ee:nodejs roadmap"
+            "postgresql-dba:#800000:postgresql-dba roadmap"
+            "product-manager:#00ff7f:product-manager roadmap"
+            "prompt-engineering:#bdb76b:prompt-engineering roadmap"
+            "python:#ffe4b5:python roadmap"
+            "qa:#4682b4:qa roadmap"
+            "react:#ffb6c1:react roadmap"
+            "react-native:#ff6347:react-native roadmap"
+            "rust:#afeeee:rust roadmap"
+            "server-side-game-developer:#dda0dd:server-side-game-developer roadmap"
+            "software-architect:#98fb98:software-architect roadmap"
+            "software-design-architecture:#dda0dd:software-design-architecture roadmap"
+            "spring-boot:#dda0dd:spring-boot roadmap"
+            "swift:#ff4500:swift roadmap"
+            "sql:#add8e6:sql roadmap"
+            "system-design:#dda0dd:system-design roadmap"
+            "typescript:#daa520:typescript roadmap"
+            "technical-writer:#bc8f8f:technical-writer roadmap"
+            "terraform:#ff6347:terraform roadmap"
+            "ux-design:#8b008b:ux-design roadmap"
+            "vue:#3cb371:vue roadmap"
+          )
+          for label in "${labels[@]}"; do
+            IFS=":" read -r name color description <<< "$label"
+            echo "Creating label: $name"
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: token ${{ env.github-token }}" \
+              -d "{\"name\": \"$name\", \"description\": \"$description\", \"color\": \"$color\"}" \
+              https://api.github.com/repos/offensive-vk/developer-roadmap/labels
+          done
