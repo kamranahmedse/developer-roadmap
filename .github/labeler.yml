@@ -1,0 +1,276 @@
+##################################
+## Basic Repository Based Labels #
+##################################
+configuration:
+  - '.astro/*'
+  - '.vscode/*'
+  - 'tsconfig.json'
+  - 'playwright.config.ts'
+  - 'package.json'
+  - 'package-lock.json'
+  - '*.lock'
+  - 'src/env.d.ts'
+
+ci/cd:
+  - '.github/*'
+  - '.github/workflows/*.yml'
+
+editor:
+  - 'editor/*'
+
+static-content:
+  - 'public/*'
+
+renderer:
+  - 'renderer/*'
+
+scripts:
+  - 'scripts/*.*'
+
+tests:
+  - '**/*.spec.ts'
+  - 'tests/*'
+  - 'tests/*.spec.ts'
+
+roadmap-docs:
+  - 'license'
+  - 'contributing.md'
+  - 'security.md'
+  - 'code_of_conduct.md'
+  - 'readme.md'
+
+api:
+  - 'src/api/*'
+
+components:
+  - 'src/components/**/*'
+
+authors:
+  - 'src/data/authors/**/*'
+
+best-practices/api-security:
+  - 'src/data/best-practices/api-security/**/*'
+
+best-practices/aws:
+  - 'src/data/best-practices/aws/**/*'
+
+best-practices/frontend-performance:
+  - 'src/data/best-practices/frontend-performance/**/*'
+
+best-practices/backend-performance:
+  - 'src/data/best-practices/backend-performance/**/*'
+
+best-practices/code-review:
+  - 'src/data/best-practices/code-review/**/*'
+
+guides:
+  - 'src/data/guides/**/*'
+
+projects:
+  - 'src/data/projects/**/*'
+
+link-groups:
+  - 'src/data/link-groups/**/*'
+
+question-groups:
+  - 'src/data/questions/**/*'
+
+videos:
+  - 'src/data/videos/**/*'
+
+roadmap:
+  - 'src/data/roadmap/**/*'
+
+directives:
+  - 'src/directives/**/*'
+
+helper-functions:
+  - 'src/helpers/**/*'
+
+hooks:
+  - 'src/hooks/**/*'
+
+icons:
+  - 'src/icons/**/*'
+
+layouts:
+  - 'src/layouts/**/*'
+
+libraries:
+  - 'src/lib/**/*'
+
+pages:
+  - 'src/pages/**/*'
+
+stores:
+  - 'src/stores/**/*'
+
+styles:
+  - 'src/styles/**/*.css'
+  - 'src/styles/**/*.scss'
+
+##################################
+##  All Roadmap Based Labels  ####
+##################################
+android:
+  - 'src/data/roadmaps/android/**/*'
+
+angular:
+  - 'src/data/roadmaps/angular/**/*'
+
+api-design:
+  - 'src/data/roadmaps/api-design/**/*'
+
+aspnet-core:
+  - 'src/data/roadmaps/aspnet-core/**/*'
+
+aws:
+  - 'src/data/roadmaps/aws/**/*'
+
+backend:
+  - 'src/data/roadmaps/back-end/**/*'
+
+blockchain:
+  - 'src/data/roadmaps/blockchain/**/*'
+
+code-review:
+  - 'src/data/roadmaps/code-review/**/*'
+
+computer-science:
+  - 'src/data/roadmaps/computer-science/**/*'
+
+cpp:
+  - 'src/data/roadmaps/cpp/**/*'
+
+cyber-security:
+  - 'src/data/roadmaps/cyber-security/**/*'
+
+data-analyst:
+  - 'src/data/roadmaps/data-analyst/**/*'
+
+datastructures-and-algorithms:
+  - 'src/data/roadmaps/datastructures-and-algorithms/**/*'
+
+design-system:
+  - 'src/data/roadmaps/design-system/**/*'
+
+devops:
+  - 'src/data/roadmaps/devops/**/*'
+
+dotnet:
+  - 'src/data/roadmaps/dotnet/**/*'
+
+docker:
+  - 'src/data/roadmaps/docker/**/*'
+
+devrel: 
+  - 'src/data/roadmaps/devrel/**/*'
+
+flutter:
+  - 'src/data/roadmaps/flutter/**/*'
+
+full-stack:
+  - 'src/data/roadmaps/full-stack/**/*'
+
+frontend:
+  - 'src/data/roadmaps/front-end/**/*'
+
+git-github:
+  - 'src/data/roadmaps/git-github/**/*'
+
+golang:
+  - 'src/data/roadmaps/golang/**/*'
+
+graphql:
+  - 'src/data/roadmaps/graphql/**/*'
+
+ios:
+  - 'src/data/roadmaps/ios/**/*'
+
+java:
+  - 'src/data/roadmaps/java/**/*'
+
+javascript:
+  - 'src/data/roadmaps/javascript/**/*'
+
+kubernetes:
+  - 'src/data/roadmaps/kubernetes/**/*'
+
+linux:
+  - 'src/data/roadmaps/linux/**/*'
+
+mlops:
+  - 'src/data/roadmaps/mlops/**/*'
+
+mongodb:
+  - 'src/data/roadmaps/mongodb/**/*'
+
+mysql:
+  - 'src/data/roadmaps/mysql/**/*'
+
+nodejs:
+  - 'src/data/roadmaps/nodejs/**/*'
+
+postgresql-dba:
+  - 'src/data/roadmaps/postgresql-dba/**/*'
+
+product-manager:
+  - 'src/data/roadmaps/product-manager/**/*'
+
+prompt-engineering:
+  - 'src/data/roadmaps/prompt-engineering/**/*'
+
+python:
+  - 'src/data/roadmaps/python/**/*'
+
+qa:
+  - 'src/data/roadmaps/qa/**/*'
+
+react:
+  - 'src/data/roadmaps/react/**/*'
+
+react-native:
+  - 'src/data/roadmaps/react-native/**/*'
+
+rust:
+  - 'src/data/roadmaps/rust/**/*'
+
+server-side-game-developer:
+  - 'src/data/roadmaps/server-side-game-developer/**/*'
+
+software-architect:
+  - 'src/data/roadmaps/software-architect/**/*'
+
+software-design-architecture:
+  - 'src/data/roadmaps/software-design-architecture/**/*'
+
+spring-boot:
+  - 'src/data/roadmaps/spring-boot/**/*'
+
+swift:
+  - 'src/data/roadmaps/swift/**/*'
+
+sql:
+  - 'src/data/roadmaps/sql/**/*'
+
+system-design:
+  - 'src/data/roadmaps/system-design/**/*'
+
+typescript:
+  - 'src/data/roadmaps/typescript/**/*'
+
+technical-writer:
+  - 'src/data/roadmaps/technical-writer/**/*'
+
+terraform:
+  - 'src/data/roadmaps/terraform/**/*'
+
+ux-design:
+  - 'src/data/roadmaps/ux-design/**/*'
+
+vue:
+  - 'src/data/roadmaps/vue/**/*'
+
+##################################
+## Add Future Labels Below Here #
+##################################
