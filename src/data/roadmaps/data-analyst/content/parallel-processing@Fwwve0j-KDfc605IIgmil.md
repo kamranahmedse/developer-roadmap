@@ -5,4 +5,4 @@ Parallel processing is an efficient form of data processing that allows Data Ana
 Learn more from the following resources:
 
 - [@article@What is parallel processing?](https://www.spiceworks.com/tech/iot/articles/what-is-parallel-processing/)
-- [@article@How parallel computing works?](https://computer.howstuffworks.com/parallel-processing.htm)
+- [@article@How does parallel computing work?](https://computer.howstuffworks.com/parallel-processing.htm)
