@@ -24,7 +24,5 @@ To implement a DMZ in your network, you can use devices such as firewalls, route
 - Implementing proper network segmentation and security policies can significantly reduce the risk of data breaches and other security threats.
 
 ## Segmentation cheat sheets
-- [Best-practice-for-network-segmentation](https://github.com/sergiomarotco/Network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines 4 levels of segmentation from basic to advanced. Example of level 4 (advanced):
-![Level 4](https://raw.githubusercontent.com/sergiomarotco/Network-segmentation-cheat-sheet/main/Network%20segmentation%20Level%204.jpg)
-- [OWASP Network segmentation Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Network_Segmentation_Cheat_Sheet.md#network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines the basics of web service segmentation:
-![owasp](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/assets/Network_Segmentation_Cheat_Sheet_interservice.drawio.png)
+- [Best-practice-for-network-segmentation](https://github.com/sergiomarotco/Network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines 4 levels of segmentation from basic to advanced.
+- [OWASP Network segmentation Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Network_Segmentation_Cheat_Sheet.md#network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines the basics of web service segmentation.
