@@ -4,3 +4,4 @@ Networking protocols are essential for facilitating communication between device
 
 Learn more from the following resources:
 
+- [@video@Networking For Hackers! (Common Network Protocols)](https://www.youtube.com/watch?v=p3vaaD9pn9I)

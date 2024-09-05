@@ -4,3 +4,5 @@ Advanced Persistent Threats, or APTs, are a class of cyber threats characterized
 
 Learn more from the following resources:
 
+- [@video@What is an Advanced Persistent Threat?](https://www.youtube.com/watch?v=sGthMsDlqew)
+- [@article@Advanced Persistent Threat (APT)](https://www.crowdstrike.com/cybersecurity-101/advanced-persistent-threat-apt/)

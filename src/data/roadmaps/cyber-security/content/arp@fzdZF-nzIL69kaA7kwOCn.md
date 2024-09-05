@@ -7,3 +7,6 @@ When a device wants to communicate with another device on the same LAN, it needs
 The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.
 
 Learn more from the following resources: 
+
+- [@video@ARP Explained](https://www.youtube.com/watch?v=cn8Zxh9bPio)
+- [@article@What is Address Resolution Protocol?](https://www.fortinet.com/resources/cyberglossary/what-is-arp)

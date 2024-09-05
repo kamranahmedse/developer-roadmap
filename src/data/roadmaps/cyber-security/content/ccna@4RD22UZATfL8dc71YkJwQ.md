@@ -4,3 +4,4 @@ The Cisco Certified Network Associate (CCNA) certification is an entry-level cer
 
 Learn more from the following resources:
 
+- [@Network Chuck Free CCNA Course](https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P)

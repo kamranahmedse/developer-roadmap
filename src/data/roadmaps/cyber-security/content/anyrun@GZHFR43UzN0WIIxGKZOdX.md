@@ -4,3 +4,5 @@ ANY.RUN is an interactive online malware analysis platform that allows users to 
 
 Learn more from the following resources:
 
+- [@official@ANY.RUN Website](https://any.run/)
+- [@video@Malware analysis with ANY.RUN](https://www.youtube.com/watch?v=QH_u7DHKzzI)
