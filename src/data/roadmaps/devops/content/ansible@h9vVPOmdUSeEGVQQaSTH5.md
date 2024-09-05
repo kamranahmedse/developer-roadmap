@@ -1,6 +1,6 @@
 # Ansible
 
-Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agent-less, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function
+Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function
 
 Visit the following resources to learn more:
 

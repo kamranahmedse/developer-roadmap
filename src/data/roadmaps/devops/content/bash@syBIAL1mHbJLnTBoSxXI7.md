@@ -6,14 +6,6 @@ A Bash script is a text file that contains a series of commands that are execute
 
 Bash scripts usually have a .sh extension and are executable files. To run a Bash script, you need to give it execute permissions using the chmod command, and then you can run it by typing `./script_name.sh` in the terminal.
 
-## Shell Scripts are literally everywhere in DevOps
-
-- Automating system backups
-- Creating and managing user accounts
-- Configuring system settings
-- Running complex commands with a single command
-- Automating tasks that need to be performed on a regular basis
-
 Visit the following resources to learn more:
 
 - [@article@Interactive Shell Scripting Tutorial](https://www.learnshell.org/en/Welcome)
