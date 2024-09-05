@@ -20,9 +20,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: labeler
-        path: labeler.yml
-        repository: offensive-vk/developer-roadmap
-        ref: master
+        path: offensive-vk/developer-roadmap/tree/master/.github/labeler.yml
 
     - name: Label Pull Requests
       uses: actions/labeler@v5
