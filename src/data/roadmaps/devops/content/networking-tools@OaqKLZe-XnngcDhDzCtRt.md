@@ -63,5 +63,7 @@ IPtables is a command-line firewall utility that uses policy chains to allow or 
 
 `SCP` is an acronym for Secure Copy Protocol.It is a command line utility that allows the user to securely copy files and directories between two locations usually between unix or linux systems.The protocol ensures the transmission of files is encrypted to prevent anyone with suspicious intentions from getting sensitive information.`SCP` uses encryption over an `SSH` (Secure Shell) connection, this ensures that the data being transferred is protected from suspicious attacks.
 
+Here are some of the resources to learn more:
+
 - [10 SCP command examples](https://www.tecmint.com/scp-commands-examples/)
 - [SCP command explained](https://phoenixnap.com/kb/linux-scp-command)

@@ -4,6 +4,6 @@ Tomcat is an open source implementation of the Jakarta Servlet, Jakarta Server P
 
 Visit the following resources to learn more:
 
-- [@article@Tomcat Website](https://tomcat.apache.org/)
+- [@official@Tomcat Website](https://tomcat.apache.org/)
 - [@article@Official Documentation(Tomcat 10.0)](https://tomcat.apache.org/tomcat-10.0-doc/index.html)
 - [@video@Apache Tomcat](https://www.youtube.com/c/ApacheTomcatOfficial)

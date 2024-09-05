@@ -10,12 +10,12 @@ Vim ships with `vimtutor` that is a tutor designed to describe enough of the Vim
 
 Visit the following resources to learn more:
 
-- [@article@Vim](https://www.vim.org)
-- [@article@Vim help files](https://vimhelp.org/)
+- [@official@Vim](https://www.vim.org)
+- [@official@Vim help files](https://vimhelp.org/)
 - [@article@Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 - [@article@Vim Adventures](https://vim-adventures.com/)
-- [@article@GNU Nano](https://www.nano-editor.org/)
+- [@official@GNU Nano](https://www.nano-editor.org/)
 - [@article@GNU Nano Manual](https://www.nano-editor.org/dist/latest/nano.html)
 - [@article@PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
-- [@article@GNU Emacs](https://www.gnu.org/software/emacs/)
+- [@official@GNU Emacs](https://www.gnu.org/software/emacs/)
 - [@article@GNU Emacs Documentation](https://www.gnu.org/software/emacs/documentation.html)

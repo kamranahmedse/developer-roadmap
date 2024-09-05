@@ -5,7 +5,7 @@ GitHub is a provider of Internet hosting for software development and version co
 Visit the following resources to learn more:
 
 - [@opensource@GitHub Website](https://github.com)
-- [@article@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
+- [@official@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
 - [@article@How to Use Git in a Professional Dev Team](https://ooloo.io/project/github-flow)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@video@Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)
