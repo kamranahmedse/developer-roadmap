@@ -16,7 +16,16 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
+    - name: Fetch labeler.yml from public repo
+      uses: actions/download-artifact@v3
+      with:
+        name: labeler
+        path: labeler.yml
+        repository: <public-repo-owner>/<public-repo-name>
+        ref: main
+
     - name: Label Pull Requests
-      uses: actions/labeler@v4
+      uses: actions/labeler@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        config: labeler.yml
