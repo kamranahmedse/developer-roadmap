@@ -18,6 +18,7 @@ const enrichedRoleRoadmaps = roleRoadmaps
       url: `/${roadmap.id}`,
       title: frontmatter.briefTitle,
       description: frontmatter.briefDescription,
+      relatedRoadmapIds: frontmatter.relatedRoadmaps,
     };
   });
 const enrichedSkillRoadmaps = skillRoadmaps
@@ -31,6 +32,7 @@ const enrichedSkillRoadmaps = skillRoadmaps
       title:
         frontmatter.briefTitle === 'Go' ? 'Go Roadmap' : frontmatter.briefTitle,
       description: frontmatter.briefDescription,
+      relatedRoadmapIds: frontmatter.relatedRoadmaps,
     };
   });
 

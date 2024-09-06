@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { httpGet } from '../../lib/http';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
@@ -10,6 +10,11 @@ import { LoadingProgress } from './LoadingProgress';
 import { ArrowUpRight, Pencil, Plus } from 'lucide-react';
 import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { getCurrentPeriod } from '../../lib/date';
+import { ListDashboardProgress } from './ListDashboardProgress';
+import { ListDashboardCustomProgress } from './ListDashboardCustomProgress';
+import { DashboardCardLink } from './DashboardCardLink';
+import { RecommendedRoadmaps } from './RecommendedRoadmaps';
 
 type UserDashboardResponse = {
   name: string;
@@ -27,6 +32,7 @@ export type BuiltInRoadmap = {
   title: string;
   description: string;
   isFavorite?: boolean;
+  relatedRoadmapIds?: string[];
 };
 
 type PersonalDashboardProps = {
@@ -44,8 +50,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
-  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
-  const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
 
@@ -73,26 +77,8 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     setPersonalDashboardDetails(progressList);
   }
 
-  async function loadAllProjectDetails() {
-    const { error, response } = await httpGet<PageType[]>(`/pages.json`);
-
-    if (error) {
-      toast.error(error.message || 'Something went wrong');
-      return;
-    }
-
-    if (!response) {
-      return [];
-    }
-
-    const allProjects = response.filter((page) => page.group === 'Projects');
-    setProjectDetails(allProjects);
-  }
-
   useEffect(() => {
-    Promise.allSettled([loadProgress(), loadAllProjectDetails()]).finally(() =>
-      setIsLoading(false),
-    );
+    loadProgress().finally(() => setIsLoading(false));
   }, []);
 
   useEffect(() => {
@@ -125,294 +111,136 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return updatedAtB.getTime() - updatedAtA.getTime();
     });
 
-  const enrichedProjects =
-    personalDashboardDetails?.projects
-      ?.map((project) => {
-        const projectDetail = projectDetails.find(
-          (page) => page.id === project.projectId,
-        );
-
-        return {
-          ...project,
-          title: projectDetail?.title || 'N/A',
-        };
-      })
-      ?.sort((a, b) => {
-        const isPendingA = !a.repositoryUrl && !a.submittedAt;
-        const isPendingB = !b.repositoryUrl && !b.submittedAt;
-
-        if (isPendingA && !isPendingB) {
-          return -1;
-        }
-
-        if (!isPendingA && isPendingB) {
-          return 1;
-        }
-
-        return 0;
-      }) || [];
-
   const { avatar, name, headline, email, username } =
     personalDashboardDetails || {};
   const avatarLink = avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
     : '/images/default-avatar.png';
 
+  const currentPeriod = getCurrentPeriod();
+
+  const relatedRoadmapIds = [...builtInRoleRoadmaps, ...builtInSkillRoadmaps]
+    .filter((roadmap) =>
+      learningRoadmapsToShow?.some(
+        (learningRoadmap) => learningRoadmap.resourceId === roadmap.id,
+      ),
+    )
+    .flatMap((roadmap) => roadmap.relatedRoadmapIds)
+    .filter(Boolean);
+
+  const recommendedRoadmapIds = new Set(
+    relatedRoadmapIds.length === 0
+      ? ['frontend', 'backend', 'devops', 'ai-data-scientist', 'full-stack']
+      : relatedRoadmapIds,
+  );
+
+  const recommendedRoadmaps = [
+    ...builtInRoleRoadmaps,
+    ...builtInSkillRoadmaps,
+  ].filter((roadmap) => recommendedRoadmapIds.has(roadmap.id));
+
   return (
-    <section className="mt-8">
-      {isCreatingRoadmap && (
-        <CreateRoadmapModal
-          onClose={() => {
-            setIsCreatingRoadmap(false);
-          }}
-        />
+    <section>
+      {isLoading ? (
+        <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
+      ) : (
+        <h2 className="text-lg font-medium">
+          Hi {name}, good {currentPeriod}!
+        </h2>
       )}
 
-      {isLoading && (
-        <div className="mb-10 h-[188px] animate-pulse rounded-md border bg-gray-100 sm:h-[91px]" />
-      )}
-      {!isLoading && (
-        <div className="mb-10 flex flex-col gap-2 overflow-hidden rounded-md border bg-gray-50 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-3 p-4 sm:p-0 sm:pl-4">
-            <figure className="shrink-0">
+      <div className="mt-8 grid grid-cols-4 gap-2">
+        {isLoading ? (
+          <div className="h-[129px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
+        ) : (
+          <a
+            className="overflow-hidden rounded-lg border border-gray-300 bg-white"
+            href="/account/update-profile"
+          >
+            <div className="px-4 py-2.5">
               <img
                 src={avatarLink}
                 alt={name}
-                className="h-14 w-14 rounded-full object-cover"
+                className="size-8 rounded-full"
               />
-            </figure>
-            <div>
-              <h2 className="text-xl font-bold">{name}</h2>
-              <p className="text-sm text-gray-500">{headline || email}</p>
             </div>
-          </div>
 
-          <div className="flex flex-col justify-start divide-y border-t sm:border-l sm:border-t-0">
-            <a
-              className="flex items-center gap-2 bg-white px-3 py-3 text-sm font-medium text-gray-500 hover:text-black"
-              href={`/account/update-profile`}
-              target="_blank"
-            >
-              <Pencil className="size-4" />
-              Edit Profile
-            </a>
-            <a
-              className="flex items-center gap-2 bg-white px-3 py-3 text-sm font-medium text-gray-500 hover:text-black aria-disabled:cursor-not-allowed"
-              {...(username ? { href: `/u/${username}` } : {})}
-              target="_blank"
-              aria-disabled={!username}
-            >
-              <ArrowUpRight className="size-4" />
-              View Profile
-            </a>
-          </div>
-        </div>
-      )}
+            <div className="flex flex-col gap-0.5 p-4">
+              <h3 className="font-medium">{name}</h3>
+              <p className="text-xs">Setup your profile</p>
+            </div>
+          </a>
+        )}
 
-      <h2 className="mb-3 text-xs uppercase text-gray-400">
-        Progress and Bookmarks
-      </h2>
-      {isLoading && <LoadingProgress />}
-      {!isLoading && learningRoadmapsToShow.length > 0 && (
-        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
-          {learningRoadmapsToShow.map((roadmap) => {
-            const learningCount = roadmap.learning || 0;
-            const doneCount = roadmap.done || 0;
-            const totalCount = roadmap.total || 0;
-            const skippedCount = roadmap.skipped || 0;
+        <DashboardCard
+          icon={'💡'}
+          title="Learn a new Skill"
+          description="Visit our Roadmaps"
+          href="/roadmaps"
+        />
+        <DashboardCard
+          icon={'🏗️'}
+          title="Practice your skills"
+          description="Visit Projects"
+          href="/backend/projects"
+        />
+        <DashboardCard
+          icon={'📚'}
+          title="Do things right way"
+          description="Visit Best Practices"
+          href="/best-practices"
+        />
+      </div>
 
-            return (
-              <ResourceProgress
-                key={roadmap.resourceId}
-                isCustomResource={roadmap?.isCustomResource || false}
-                doneCount={doneCount > totalCount ? totalCount : doneCount}
-                learningCount={
-                  learningCount > totalCount ? totalCount : learningCount
-                }
-                totalCount={totalCount}
-                skippedCount={skippedCount}
-                resourceId={roadmap.resourceId}
-                resourceType={roadmap.resourceType}
-                updatedAt={roadmap.updatedAt}
-                title={roadmap.resourceTitle}
-                showActions={true}
-                roadmapSlug={roadmap.roadmapSlug}
-              />
-            );
-          })}
-        </div>
-      )}
+      <ListDashboardProgress
+        progresses={learningRoadmapsToShow}
+        isLoading={isLoading}
+      />
 
-      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
-        Custom Roadmaps
-      </h2>
-      {isLoading && <LoadingProgress />}
-      {!isLoading && customRoadmaps.length > 0 && (
-        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
-          {customRoadmaps.map((roadmap) => {
-            const learningCount = roadmap.learning || 0;
-            const doneCount = roadmap.done || 0;
-            const totalCount = roadmap.total || 0;
-            const skippedCount = roadmap.skipped || 0;
+      <RecommendedRoadmaps
+        roadmaps={recommendedRoadmaps}
+        isLoading={isLoading}
+      />
 
-            return (
-              <ResourceProgress
-                key={roadmap.resourceId}
-                isCustomResource={roadmap?.isCustomResource || false}
-                doneCount={doneCount > totalCount ? totalCount : doneCount}
-                learningCount={
-                  learningCount > totalCount ? totalCount : learningCount
-                }
-                totalCount={totalCount}
-                skippedCount={skippedCount}
-                resourceId={roadmap.resourceId}
-                resourceType={roadmap.resourceType}
-                updatedAt={roadmap.updatedAt}
-                title={roadmap.resourceTitle}
-                showActions={true}
-                roadmapSlug={roadmap.roadmapSlug}
-              />
-            );
-          })}
-
-          <button
-            className="flex w-full items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-300 text-sm text-gray-600 hover:border-gray-800 hover:text-black"
-            onClick={() => {
-              setIsCreatingRoadmap(true);
-            }}
-          >
-            <Plus className="size-4" />
-            Create your own Roadmap
-          </button>
-        </div>
-      )}
-{!isLoading && customRoadmaps.length === 0 && (
-        <div className="flex min-h-[82px] flex-col items-center justify-center rounded-md border text-sm text-gray-500">
-          <span>No custom roadmaps found.</span>
-          <span>
-            Start&nbsp;
-            <button
-              className="underline underline-offset-2 hover:no-underline"
-              onClick={() => {
-                setIsCreatingRoadmap(true);
-              }}
-            >
-              creating your own roadmap
-            </button>
-            .
-          </span>
-        </div>
-      )}
-      
-
-      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">My Projects</h2>
-      {isLoading && <LoadingProgress />}
-      {!isLoading && enrichedProjects.length > 0 && (
-        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
-          {enrichedProjects.map((project) => {
-            return (
-              <ProjectProgress
-                key={project.projectId}
-                projectStatus={project}
-                showActions={true}
-              />
-            );
-          })}
-        </div>
-      )}
-      {!isLoading && enrichedProjects.length === 0 && (
-        <div className="flex min-h-[82px] flex-col items-center justify-center rounded-md border text-sm text-gray-500">
-          <span>No projects found.</span>
-          <span>
-            Start&nbsp;
-            <a
-              href="/backend/projects"
-              target="_blank"
-              className="underline underline-offset-2 hover:no-underline"
-            >
-              Backend Projects
-            </a>
-            .
-          </span>
-        </div>
-      )}
-
-      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
-        Role Based Roadmaps
-      </h2>
-      <ListRoadmaps roadmaps={builtInRoleRoadmaps} />
-
-      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
-        Skill Based Roadmaps
-      </h2>
-      <ListRoadmaps roadmaps={builtInSkillRoadmaps} />
-
-      <h2 className="mb-3 mt-7 text-xs uppercase text-gray-400">
-        Best Practices
-      </h2>
-      <ListRoadmaps roadmaps={builtInBestPractices} />
+      <ListDashboardCustomProgress
+        progresses={customRoadmaps}
+        isLoading={isLoading}
+      />
+      <DashboardCardLink
+        href="/ai"
+        title="Generate Roadmaps with AI"
+        description="You can generate your own roadmap with AI"
+      />
     </section>
   );
 }
 
-type ListRoadmapsProps = {
-  roadmaps: BuiltInRoadmap[];
+type DashboardCardProps = {
+  icon: string | ReactNode;
+  title: string;
+  description: string;
+  href: string;
 };
-export function ListRoadmaps(props: ListRoadmapsProps) {
-  const { roadmaps } = props;
 
-  const [showAll, setShowAll] = useState(roadmaps.length <= 12);
-  const roadmapsToShow = showAll ? roadmaps : roadmaps.slice(0, 12);
-
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+function DashboardCard(props: DashboardCardProps) {
+  const { icon, title, description, href } = props;
 
   return (
-    <div className="relative">
-      <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
-        {roadmapsToShow.map((roadmap) => (
-          <div className="relative w-full" key={roadmap.id}>
-            <a
-              key={roadmap.id}
-              className="block rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
-              href={roadmap.url}
-            >
-              {roadmap.title}
-            </a>
-
-            {isMounted && (
-              <MarkFavorite
-                resourceId={roadmap.id}
-                resourceType={
-                  roadmap.url.includes('best-practices')
-                    ? 'best-practice'
-                    : 'roadmap'
-                }
-                className='data-[is-favorite="true"]:text-gray-400'
-              />
-            )}
-          </div>
-        ))}
+    <a
+      href={href}
+      target="_blank"
+      className="flex flex-col overflow-hidden rounded-lg border border-gray-300"
+    >
+      <div className="border-b border-gray-300 bg-gray-100 px-4 py-2.5">
+        <span className="flex size-8 items-center justify-center text-xl">
+          {icon}
+        </span>
       </div>
 
-      {!showAll && (
-        <div
-          className="absolute inset-0 z-50 -m-1 flex items-end justify-center bg-gradient-to-t from-white to-transparent"
-          style={{
-            background:
-              'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 100%)',
-          }}
-        >
-          <button
-            className="text-sm font-medium text-gray-600 hover:text-black focus:outline-none"
-            onClick={() => setShowAll(true)}
-          >
-            + Show all
-          </button>
-        </div>
-      )}
-    </div>
+      <div className="flex grow flex-col justify-center gap-0.5 bg-white p-4">
+        <h3 className="font-medium text-black">{title}</h3>
+        <p className="text-xs text-black">{description}</p>
+      </div>
+    </a>
   );
 }
