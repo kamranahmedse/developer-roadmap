@@ -4,3 +4,5 @@ Curl is a versatile command-line tool primarily used for transferring data using
 
 Learn more from the following resources:
 
+- [@article@What is the cURL command?](https://blog.hubspot.com/website/curl-command)
+- [@video@You need to know how to use cURL](https://www.youtube.com/watch?v=q2sqkvXzsw8)

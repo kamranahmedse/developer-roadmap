@@ -4,3 +4,5 @@ The Certified Information Systems Security Professional (CISSP) is a globally re
 
 Learn more from the following resources:
 
+- [@official@CISSP Certification Website](https://www.isc2.org/certifications/cissp)
+- [@course@CISSP Certification course](https://www.youtube.com/watch?v=M1_v5HBVHWo)

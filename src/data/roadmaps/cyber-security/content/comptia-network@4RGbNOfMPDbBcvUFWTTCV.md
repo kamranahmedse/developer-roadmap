@@ -4,3 +4,5 @@ The CompTIA Network+ is a highly sought-after certification for IT professionals
 
 Learn more from the following resources:
 
+- [@official@CompTIA Network+ Website](https://www.comptia.org/certifications/network)
+- [@course@CompTIA Network+ Course](https://www.youtube.com/watch?v=xmpYfyNmWbw)

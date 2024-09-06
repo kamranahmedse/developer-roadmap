@@ -8,3 +8,5 @@ A CIDR notation looks like this: `192.168.1.0/24`. Here, `192.168.1.0` is the IP
 
 Learn more from the following resources:
 
+- [@article@What is CIDR?](https://aws.amazon.com/what-is/cidr/)
+- [@video@What is Network CIDR Notation?](https://www.youtube.com/watch?v=tpa9QSiiiUo)

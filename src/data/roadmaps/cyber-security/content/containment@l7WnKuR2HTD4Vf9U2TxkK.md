@@ -4,3 +4,5 @@ Containment in cybersecurity refers to the process of limiting the impact of a s
 
 Learn more from the following resources:
 
+- [@article@Microsoft security incident management: Containment, eradication, and recovery](https://learn.microsoft.com/en-us/compliance/assurance/assurance-sim-containment-eradication-recovery)
+- [@article@Containment - AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html)

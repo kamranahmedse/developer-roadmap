@@ -4,3 +4,5 @@ CREST is a non-profit, accreditation and certification body that represents the 
 
 Learn more from the following resources:
 
+- [@official@CREST Certifications Website](https://www.crest-approved.org/skills-certifications-careers/crest-certifications/)
+- [@video@A brief overview of CREST](https://www.youtube.com/watch?v=Cci5qrv8fHY)

@@ -4,3 +4,5 @@ The CompTIA Linux+ certification is an entry-level certification aimed at indivi
 
 Learn more from the following resources:
 
+- [@official@Linux+ Website](https://www.comptia.org/certifications/linux)
+- [@video@Linux+ Exam Prep](https://www.youtube.com/watch?v=niPWk7tgD2Q&list=PL78ppT-_wOmuwT9idLvuoKOn6UYurFKCp)

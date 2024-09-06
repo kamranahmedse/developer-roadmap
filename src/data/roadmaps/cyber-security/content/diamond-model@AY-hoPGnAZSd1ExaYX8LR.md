@@ -4,3 +4,5 @@ The Diamond Model is a cybersecurity framework used for analyzing and understand
 
 Learn more from the following resources:
 
+- [@article@The Diamond Model: Simple Intelligence-Driven Intrusion Analysis](https://kravensecurity.com/diamond-model-analysis/)
+- [@video@The Diamond Model for Intrusion Detection](https://www.youtube.com/watch?v=3AOKomsmeUY)

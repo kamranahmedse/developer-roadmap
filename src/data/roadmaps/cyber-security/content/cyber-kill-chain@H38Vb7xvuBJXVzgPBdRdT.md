@@ -14,3 +14,5 @@ The concept is based on a military model, where the term "kill chain" represents
 
 Learn more from the following resources:
 
+- [@official@Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+- [@video@Learn the Cyber Kill Chain](https://www.youtube.com/watch?v=oCUrkc_0tmw)

@@ -4,3 +4,5 @@ Common ports are standardized communication endpoints used by various network pr
 
 Learn more from the following resources:
 
+- [@video@Common network ports](https://www.youtube.com/watch?v=dh8h-4u7Wak)
+- [@article@Common network ports you should know](https://opensource.com/article/18/10/common-network-ports)

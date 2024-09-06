@@ -4,3 +4,5 @@ CompTIA A+ is an entry-level certification for IT professionals that focuses on 
 
 Learn more from the following resources:
 
+- [@official@Comptia A+ Website](https://www.comptia.org/certifications/a)
+- [@course@Comptia A+ Course](https://www.youtube.com/watch?v=1CZXXNKAY5o)

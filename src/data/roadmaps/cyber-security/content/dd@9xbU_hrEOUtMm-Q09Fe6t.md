@@ -6,3 +6,5 @@ This command-line utility is available on Unix-based systems such as Linux, BSD,
 
 Learn more from the following resources:
 
+- [@video@How to use the dd command in Linux](https://www.youtube.com/watch?v=hsDxcJhCRLI)
+- [@article@When and how to use the dd command](https://www.baeldung.com/linux/dd-command)

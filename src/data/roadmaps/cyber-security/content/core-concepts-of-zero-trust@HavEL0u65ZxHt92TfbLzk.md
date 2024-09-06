@@ -4,3 +4,5 @@ The core concepts of Zero Trust revolve around the principle of "never trust, al
 
 Learn more from the following resources:
 
+- [@article@What is a zero trust network?](https://www.cloudflare.com/en-gb/learning/security/glossary/what-is-zero-trust/)
+- [@video@Zero trust explained in 4 minutes](https://www.youtube.com/watch?v=yn6CPQ9RioA)

@@ -4,3 +4,5 @@ The Cybersecurity Framework (CSF) is a set of guidelines aimed at helping organi
 
 Learn more from the following resources:
 
+- [@official@NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [@video@NIST Cybersecurity Framework Explained](https://www.youtube.com/watch?v=_KXqDNVmpu8)

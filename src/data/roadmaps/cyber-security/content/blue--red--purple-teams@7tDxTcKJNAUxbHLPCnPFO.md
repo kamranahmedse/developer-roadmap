@@ -6,3 +6,6 @@ In cybersecurity, Blue Team and Red Team refer to opposing groups that work toge
 
 Learn more from the following resources:
 
+- [@article@What is a blue team?](https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-blue-team/)
+- [@article@What is red teaming?](https://www.ibm.com/think/topics/red-teaming)
+- [@article@Purple teaming explained](https://www.crowdstrike.com/cybersecurity-101/purple-teaming/)

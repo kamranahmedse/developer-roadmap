@@ -4,3 +4,5 @@ C++ is a widely-used, high-level programming language that evolved from the earl
 
 Learn more form the following resources:
 
+- [@course@C++ Full Course - BroCode](https://www.youtube.com/watch?v=-TkoO8Z07hI)
+- [@article@C++ Introduction](https://www.w3schools.com/cpp/cpp_intro.asp)

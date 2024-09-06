@@ -4,3 +4,5 @@ The **Center for Internet Security (CIS)** is a non-profit organization that foc
 
 Learn more from the following resources:
 
+- [@video@CIS Overview](https://www.youtube.com/watch?v=f-Z7h5dI6uQ)
+- [@official@CIS Website](https://www.cisecurity.org/)

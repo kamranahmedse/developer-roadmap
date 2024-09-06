@@ -4,3 +4,5 @@ CompTIA Security+ is a highly recognized and respected certification for individ
 
 Learn more from the following resources:
 
+- [@official@CompTIA Security+ Website](https://www.comptia.org/certifications/security)
+- [@course@CompTIA Security+ Course](https://www.youtube.com/watch?v=yLf2jRY39Rc&list=PLIhvC56v63IIyU0aBUed4qwP0nSCORAdB)

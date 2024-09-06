@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@article@Linux cat command](https://phoenixnap.com/kb/linux-cat-command)
+- [@video@The cat command](https://www.youtube.com/shorts/lTOje2weu_o?app=desktop)

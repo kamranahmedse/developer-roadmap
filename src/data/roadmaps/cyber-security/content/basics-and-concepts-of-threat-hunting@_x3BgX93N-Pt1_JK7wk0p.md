@@ -1,39 +1,12 @@
 # Basics and Concepts of Threat Hunting
 
-Threat hunting is the proactive process of identifying and mitigating potential threats and vulnerabilities within a network, before they can be exploited by an attacker. To perform effective threat hunting, security professionals must use their knowledge, skills, and the latest threat intelligence to actively search for previously undetected adversaries and suspicious activities within a network.
+Threat hunting is a proactive approach to cybersecurity where security professionals actively search for hidden threats or adversaries that may have bypassed traditional security measures, such as firewalls and intrusion detection systems. Rather than waiting for automated tools to flag suspicious activity, threat hunters use a combination of human intuition, threat intelligence, and advanced analysis techniques to identify indicators of compromise (IoCs) and potential threats within a network or system.
 
-## Key Objectives of Threat Hunting
+The process involves several key concepts, starting with a **hypothesis**, where a hunter develops a theory about potential vulnerabilities or attack vectors that could be exploited. They then conduct a **search** through logs, traffic data, or endpoint activity to look for anomalies or patterns that may indicate malicious behavior. **Data analysis** is central to threat hunting, as hunters analyze vast amounts of network and system data to uncover subtle signs of attacks or compromises. If threats are found, the findings lead to **detection and mitigation**, allowing the security team to contain the threat, remove malicious entities, and prevent similar incidents in the future.
 
-- **Detect**: Identify unknown threats and suspicious behavior that traditional security tools may miss.
-- **Contain**: Quickly isolate and remediate threats before they can cause significant damage.
-- **Learn**: Gather valuable insights about the adversary, their techniques, and the effectiveness of existing security measures.
+Threat hunting also involves **continuous learning** and adapting, as hunters refine their techniques based on evolving attack methods and the latest threat intelligence. This approach improves an organization’s overall security posture by identifying sophisticated or previously unknown threats that might evade conventional security measures.
 
-## Threat Hunting Techniques
+Learn more from the following resources:
 
-There are several practical approaches to threat hunting, such as:
-
-- **Hypothesis-driven hunting**: Develop hypotheses about potential threats and validate them through data analysis and investigation.
-- **Indicator of Compromise (IoC) hunting**: Leverage existing threat intelligence and IoCs to search for matches within your environment.
-- **Machine learning-driven hunting**: Utilize algorithms and advanced analytics tools to automatically detect anomalies and other suspicious patterns of behavior.
-- **Situational awareness hunting**: Understand the normal behavior and baseline of the environment and look for deviations that may indicate malicious activity.
-
-## Tools & Technologies for Threat Hunting
-
-Some common tools and technologies used for threat hunting include:
-
-- **Security information and event management (SIEM) systems**: Provide a centralized platform for detecting, alerting, and investigating security incidents and events.
-- **Endpoint detection and response (EDR) solutions**: Deliver real-time monitoring, analysis, and remediation capabilities for endpoints.
-- **Threat intelligence platforms (TIPs)**: Aggregate and analyze global threat data and indicators of compromise (IoC) to provide actionable intelligence.
-- **User and entity behavior analytics (UEBA) tools**: Apply advanced analytics algorithms to detect potential threats by analyzing the behavior of users, devices, and applications.
-
-## Essential Skills for Threat Hunters
-
-Successful threat hunters should possess a strong combination of technical skills, critical thinking, and situational awareness. Some essential skills include:
-
-- **Understanding of networks and protocols**: Deep knowledge of network architecture, protocols, and communication patterns.
-- **Familiarity with operating systems**: Ability to navigate, investigate, and analyze various operating systems, including Windows, Linux, and macOS.
-- **Scripting and programming**: Proficiency in scripting languages (e.g., Python, PowerShell) and automation tools to streamline the threat hunting process.
-- **Knowledge of common attacker tactics, techniques, and procedures (TTPs)**: Awareness of the latest TTPs, ensuring that you stay ahead of potential threats.
-- **Critical thinking and problem-solving**: Ability to analyze complex scenarios and think creatively to identify potential threats and vulnerabilities.
-
-By developing a strong foundation in threat hunting concepts and techniques, security professionals are better equipped to proactively identify and mitigate potential attacks, thereby strengthening their organization's overall cybersecurity posture.
+- [@article@What is Threat Hunting](https://www.ibm.com/topics/threat-hunting)
+- [@video@Cyber Security Threat Hunting explained](https://www.youtube.com/watch?v=VNp35Uw_bSM)
