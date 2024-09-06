@@ -307,6 +307,7 @@ export function TeamRoadmaps() {
         {pickRoadmapOptionModal}
         {addRoadmapModal}
         {createRoadmapModal}
+        {confirmationContentIdModal}
 
         <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
 
