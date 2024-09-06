@@ -97,6 +97,18 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
       return;
     }
 
+    setIsLoading(true);
+    setTeamActivities({
+      data: {
+        users: [],
+        activities: [],
+      },
+      totalCount: 0,
+      totalPages: 0,
+      currPage: 1,
+      perPage: 21,
+    });
+    setCurrPage(1);
     getTeamProgress().then(() => {
       pageProgressMessage.set('');
       setIsLoading(false);

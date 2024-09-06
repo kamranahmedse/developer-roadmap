@@ -49,6 +49,8 @@ export function TeamDashboard(props: TeamDashboardProps) {
       return;
     }
 
+    setIsLoading(true);
+    setTeamMembers([]);
     getTeamProgress().finally(() => setIsLoading(false));
   }, [teamId]);
 
