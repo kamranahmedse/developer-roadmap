@@ -22,22 +22,24 @@ export function ListDashboardProgress(props: ListDashboardProgressProps) {
         Progress and Bookmarks
       </h2>
 
-      {isLoading ? (
-        <div className="grid grid-cols-4 gap-2">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <DashboardProgressCardSkeleton key={index} />
-          ))}
-        </div>
-      ) : (
-        <div className="grid grid-cols-4 gap-2">
-          {progresses.map((progress) => (
-            <DashboardProgressCard
-              key={progress.resourceId}
-              progress={progress}
-            />
-          ))}
-        </div>
-      )}
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
+        {isLoading ? (
+          <>
+            {Array.from({ length: 8 }).map((_, index) => (
+              <DashboardProgressCardSkeleton key={index} />
+            ))}
+          </>
+        ) : (
+          <>
+            {progresses.map((progress) => (
+              <DashboardProgressCard
+                key={progress.resourceId}
+                progress={progress}
+              />
+            ))}
+          </>
+        )}
+      </div>
     </>
   );
 }
@@ -48,6 +50,6 @@ export function DashboardProgressCardSkeleton(
   props: DashboardProgressCardSkeletonProps,
 ) {
   return (
-    <div className="h-[80px] w-full animate-pulse rounded-md bg-gray-200" />
+    <div className="h-[106px] w-full animate-pulse rounded-md bg-gray-200" />
   );
 }

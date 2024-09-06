@@ -47,7 +47,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     builtInBestPractices = [],
     builtInSkillRoadmaps = [],
   } = props;
-  const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
@@ -111,22 +110,37 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return updatedAtB.getTime() - updatedAtA.getTime();
     });
 
-  const { avatar, name, headline, email, username } =
-    personalDashboardDetails || {};
+  const aiGeneratedRoadmaps = customRoadmaps.filter(
+    (progress) => progress?.aiRoadmapId,
+  );
+  const customRoadmapsToShow = customRoadmaps.filter(
+    (progress) => !progress?.aiRoadmapId,
+  );
+
+  const { avatar, name } = personalDashboardDetails || {};
   const avatarLink = avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
     : '/images/default-avatar.png';
 
   const currentPeriod = getCurrentPeriod();
 
-  const relatedRoadmapIds = [...builtInRoleRoadmaps, ...builtInSkillRoadmaps]
+  const allRoadmapsAndBestPractices = [
+    ...builtInRoleRoadmaps,
+    ...builtInSkillRoadmaps,
+    ...builtInBestPractices,
+  ];
+
+  const relatedRoadmapIds = allRoadmapsAndBestPractices
     .filter((roadmap) =>
       learningRoadmapsToShow?.some(
         (learningRoadmap) => learningRoadmap.resourceId === roadmap.id,
       ),
     )
     .flatMap((roadmap) => roadmap.relatedRoadmapIds)
-    .filter(Boolean);
+    .filter(
+      (roadmapId) =>
+        !learningRoadmapsToShow.some((lr) => lr.resourceId === roadmapId),
+    );
 
   const recommendedRoadmapIds = new Set(
     relatedRoadmapIds.length === 0
@@ -134,10 +148,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       : relatedRoadmapIds,
   );
 
-  const recommendedRoadmaps = [
-    ...builtInRoleRoadmaps,
-    ...builtInSkillRoadmaps,
-  ].filter((roadmap) => recommendedRoadmapIds.has(roadmap.id));
+  const recommendedRoadmaps = allRoadmapsAndBestPractices.filter((roadmap) =>
+    recommendedRoadmapIds.has(roadmap.id),
+  );
 
   return (
     <section>
@@ -149,47 +162,54 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         </h2>
       )}
 
-      <div className="mt-8 grid grid-cols-4 gap-2">
+      <div className="mt-8 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
         {isLoading ? (
-          <div className="h-[129px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
+          <>
+            <DashboardCardSkeleton />
+            <DashboardCardSkeleton />
+            <DashboardCardSkeleton />
+            <DashboardCardSkeleton />
+          </>
         ) : (
-          <a
-            className="overflow-hidden rounded-lg border border-gray-300 bg-white"
-            href="/account/update-profile"
-          >
-            <div className="px-4 py-2.5">
-              <img
-                src={avatarLink}
-                alt={name}
-                className="size-8 rounded-full"
-              />
-            </div>
+          <>
+            <a
+              className="overflow-hidden rounded-lg border border-gray-300 bg-white"
+              href="/account/update-profile"
+            >
+              <div className="px-4 py-2.5">
+                <img
+                  src={avatarLink}
+                  alt={name}
+                  className="size-8 rounded-full"
+                />
+              </div>
 
-            <div className="flex flex-col gap-0.5 p-4">
-              <h3 className="font-medium">{name}</h3>
-              <p className="text-xs">Setup your profile</p>
-            </div>
-          </a>
+              <div className="flex flex-col gap-0.5 p-4">
+                <h3 className="truncate font-medium">{name}</h3>
+                <p className="text-xs">Setup your profile</p>
+              </div>
+            </a>
+
+            <DashboardCard
+              icon={'💡'}
+              title="Learn a new Skill"
+              description="Visit our Roadmaps"
+              href="/roadmaps"
+            />
+            <DashboardCard
+              icon={'🏗️'}
+              title="Practice your skills"
+              description="Visit Projects"
+              href="/backend/projects"
+            />
+            <DashboardCard
+              icon={'📚'}
+              title="Do things right way"
+              description="Visit Best Practices"
+              href="/best-practices"
+            />
+          </>
         )}
-
-        <DashboardCard
-          icon={'💡'}
-          title="Learn a new Skill"
-          description="Visit our Roadmaps"
-          href="/roadmaps"
-        />
-        <DashboardCard
-          icon={'🏗️'}
-          title="Practice your skills"
-          description="Visit Projects"
-          href="/backend/projects"
-        />
-        <DashboardCard
-          icon={'📚'}
-          title="Do things right way"
-          description="Visit Best Practices"
-          href="/best-practices"
-        />
       </div>
 
       <ListDashboardProgress
@@ -203,13 +223,13 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       />
 
       <ListDashboardCustomProgress
-        progresses={customRoadmaps}
+        progresses={customRoadmapsToShow}
         isLoading={isLoading}
       />
-      <DashboardCardLink
-        href="/ai"
-        title="Generate Roadmaps with AI"
-        description="You can generate your own roadmap with AI"
+      <ListDashboardCustomProgress
+        progresses={aiGeneratedRoadmaps}
+        isLoading={isLoading}
+        isAIGeneratedRoadmaps={true}
       />
     </section>
   );
@@ -238,9 +258,15 @@ function DashboardCard(props: DashboardCardProps) {
       </div>
 
       <div className="flex grow flex-col justify-center gap-0.5 bg-white p-4">
-        <h3 className="font-medium text-black">{title}</h3>
+        <h3 className="truncate font-medium text-black">{title}</h3>
         <p className="text-xs text-black">{description}</p>
       </div>
     </a>
+  );
+}
+
+function DashboardCardSkeleton() {
+  return (
+    <div className="h-[129px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
   );
 }

@@ -23,6 +23,7 @@ export type UserProgress = {
   updatedAt: string;
   isCustomResource?: boolean;
   roadmapSlug?: string;
+  aiRoadmapId?: string;
 };
 
 export type TeamMember = {
@@ -191,7 +192,7 @@ export function TeamProgressPage() {
             key={grouping.value}
             className={`rounded-md border p-1 px-2 text-sm ${
               selectedGrouping === grouping.value
-                ? ' border-gray-400 bg-gray-200 '
+                ? 'border-gray-400 bg-gray-200'
                 : ''
             }`}
             onClick={() => setSelectedGrouping(grouping.value)}

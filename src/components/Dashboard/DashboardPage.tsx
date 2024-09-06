@@ -46,9 +46,10 @@ export function DashboardPage(props: DashboardPageProps) {
     getAllTeams().finally(() => setIsLoading(false));
   }, []);
 
-  const userAvatar = currentUser?.avatar
-    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${currentUser.avatar}`
-    : '/images/default-avatar.png';
+  const userAvatar =
+    currentUser?.avatar && !isLoading
+      ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${currentUser.avatar}`
+      : '/images/default-avatar.png';
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20 pt-8">
@@ -118,6 +119,6 @@ export function DashboardPage(props: DashboardPageProps) {
 
 function DashboardTabSkeleton() {
   return (
-    <div className="h-[30px] w-20 animate-pulse rounded-md border bg-gray-100"></div>
+    <div className="h-[30px] w-20 animate-pulse rounded-md border bg-white"></div>
   );
 }

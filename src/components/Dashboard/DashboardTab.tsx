@@ -20,7 +20,7 @@ export function DashboardTab(props: DashboardTabProps) {
     <Slot
       onClick={onClick}
       className={cn(
-        'flex shrink-0 items-center h-[30px] gap-1 rounded-md border p-1.5 px-2 text-sm leading-none text-gray-600',
+        'flex h-[30px] shrink-0 items-center gap-1 rounded-md border bg-white p-1.5 px-2 text-sm leading-none text-gray-600',
         isActive ? 'border-gray-500 bg-gray-200 text-gray-900' : '',
         className,
       )}
