@@ -11,5 +11,7 @@ Astro is an all-in-one web framework for building fast, content-focused websites
 
 Visit the following resources to learn more:
 
-- [@official@Official Astro Website](https://astro.build/)
-- [@article@Official Astro Docs](https://docs.astro.build/)
+- [@official@Astro Website](https://astro.build/)
+- [@article@What is Astro?](https://www.contentful.com/blog/what-is-astro/)
+- [@video@Astro Explained](https://www.youtube.com/watch?v=rRxuVOutmFQ)
+

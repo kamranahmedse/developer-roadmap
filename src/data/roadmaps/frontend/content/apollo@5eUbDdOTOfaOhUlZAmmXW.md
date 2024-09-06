@@ -6,6 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Apollo Website](https://www.apollographql.com)
 - [@article@Official Docs](https://www.apollographql.com/docs/)
-- [@video@Official YouTube Channel](https://www.youtube.com/c/ApolloGraphQL/)
 - [@video@GraphQL With React Tutorial - Apollo Client](https://www.youtube.com/watch?v=YyUWW04HwKY)
 - [@feed@Explore top posts about Apollo](https://app.daily.dev/tags/apollo?ref=roadmapsh)
