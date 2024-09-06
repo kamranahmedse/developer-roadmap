@@ -4,3 +4,5 @@ HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are fundamental proto
 
 Learn more from the following resources:
 
+- [@article@An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+- [@article@What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)

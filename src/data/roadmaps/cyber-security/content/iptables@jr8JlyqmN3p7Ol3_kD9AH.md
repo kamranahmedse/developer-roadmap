@@ -4,3 +4,5 @@ IPTables is a command-line utility for configuring and managing packet filtering
 
 Learn more from the following resources:
 
+- [@article@iptables man page](https://linux.die.net/man/8/iptables)
+- [@video@iptables complete guide](https://www.youtube.com/watch?v=6Ra17Qpj68c)

@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@article@ipconfig command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)
+- [@article@Understanding ipconfig](https://www.whatismyip.com/ipconfig/)

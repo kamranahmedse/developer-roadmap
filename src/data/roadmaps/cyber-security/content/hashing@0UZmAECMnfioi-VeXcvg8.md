@@ -4,3 +4,5 @@ Hashing is a cryptographic process that converts input data of any size into a f
 
 Learn more from the following resources:
 
+- [@video@Hashing Explained](https://www.youtube.com/watch?v=EOe1XUykdP4)
+- [@article@What is hashing and how does it work?](https://www.techtarget.com/searchdatamanagement/definition/hashing)

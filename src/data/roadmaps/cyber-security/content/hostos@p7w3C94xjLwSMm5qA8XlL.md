@@ -4,3 +4,5 @@ A Host Operating System (Host OS) refers to the primary operating system install
 
 Learn more from the following resources:
 
+- [@article@Host Operating System Definition](https://nordvpn.com/cybersecurity/glossary/host-operating-system/)
+- [@article@Host vs Guest OS](https://www.datto.com/blog/whats-the-difference-host-vs-guest-os/)

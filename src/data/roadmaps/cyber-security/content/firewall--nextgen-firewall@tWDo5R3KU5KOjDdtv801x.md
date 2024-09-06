@@ -6,3 +6,5 @@ Next-generation firewalls (NGFWs) build upon this foundation, offering more adva
 
 Learn more from the following resources:
 
+- [@article@What is a firewall?](https://www.kaspersky.com/resource-center/definitions/firewall)
+- [@article@What is a next-generation firewall (NGFW)?](https://www.cloudflare.com/en-gb/learning/security/what-is-next-generation-firewall-ngfw/)

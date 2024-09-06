@@ -4,3 +4,5 @@ DNS Security Extensions (DNSSEC) is a suite of protocols designed to add a layer
 
 Learn more from the following resources:
 
+- [@article@How DNSSEC works](https://www.cloudflare.com/en-gb/dns/dnssec/how-dnssec-works/)
+- [@video@What is DNSSEC?](https://www.youtube.com/watch?v=Fk2oejzgSVQ)

@@ -1,6 +1,7 @@
 # iCloud
 
-https://www.icloud.com/ is a cloud storage service offered by Apple Inc. that provides secure and seamless storage, backup, and synchronization of data across all of your Apple devices. It allows you to store documents, photos, music, contacts, calendars, and more, enabling you to access this information from your iPhone, iPad, iPod touch, Mac, or PC.
+iCloud is a cloud storage and cloud computing service provided by Apple Inc. It allows users to store data, such as documents, photos, and music, on remote servers and synchronize them across their Apple devices, including iPhones, iPads, and MacBooks.
 
 Learn more from the following resources:
 
+- [@official@iCloud Website](https://www.icloud.com/)

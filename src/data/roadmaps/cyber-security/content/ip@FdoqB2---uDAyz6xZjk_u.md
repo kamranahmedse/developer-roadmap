@@ -6,4 +6,5 @@ An IP address is a unique identifier assigned to each device connected to a netw
 
 Learn more from the following resources:
 
+- [@article@What is an IP address and what does it mean?](https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address)
 - [@video@Whats an IP address?](https://www.youtube.com/watch?v=6is6Gulh7qE)

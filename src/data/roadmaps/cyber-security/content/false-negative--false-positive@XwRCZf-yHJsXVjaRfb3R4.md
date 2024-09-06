@@ -8,3 +8,5 @@ To have an effective cybersecurity system, security professionals aim to maximiz
 
 Learn more from the following resources:
 
+- [@video@What is a false positive virus?](https://www.youtube.com/watch?v=WrcAGBvIT14)
+- [@video@False positives and false negatives](https://www.youtube.com/watch?v=bUNBzMnfHLw)

@@ -4,3 +4,5 @@ Honeypots are decoy systems or networks designed to attract and detect unauthori
 
 Learn more from the following resources:
 
+- [@video@What is a Honeypot?](https://www.youtube.com/watch?v=FtR9sFJlkSA)
+- [@article@How Honeypots help security](https://www.kaspersky.com/resource-center/threats/what-is-a-honeypot)

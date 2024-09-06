@@ -4,3 +4,5 @@
 
 Learn more from the following resources:
 
+- [@video@Head and Tail commands](https://www.youtube.com/watch?v=5EqL6Fc7NNw)
+- [@article@The Head and Tail commands in Linux](https://www.baeldung.com/linux/head-tail-commands)

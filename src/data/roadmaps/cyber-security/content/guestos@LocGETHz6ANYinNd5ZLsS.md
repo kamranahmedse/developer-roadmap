@@ -4,3 +4,5 @@ A Guest Operating System (Guest OS) refers to an operating system that runs with
 
 Learn more from the following resources:
 
+- [@article@What is a Guest Operating System?](https://www.techtarget.com/searchitoperations/definition/guest-OS-guest-operating-system)
+- [@article@Guest Operating System](https://nordvpn.com/cybersecurity/glossary/guest-operating-system/?srsltid=AfmBOop0L-VFCtuYvEBQgHy7dCIa3sfzNVa-Zn6l0SniAYDpftfOgH7N)

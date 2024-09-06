@@ -4,3 +4,5 @@ Grep is a powerful command-line tool used for searching and filtering text, prim
 
 Learn more from the following resources:
 
+- [@article@grep command in Linux](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+- [@video@The grep command](https://www.youtube.com/watch?v=Tc_jntovCM0)

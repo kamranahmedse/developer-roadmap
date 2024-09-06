@@ -4,3 +4,5 @@ IP Address Management (IPAM) is a critical aspect of cyber security, as it helps
 
 Learn more from the following resources:
 
+- [@article@What is IPAM?](https://www.infoblox.com/glossary/ipam-ip-address-management/)
+- [@article@IP Address Management](https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top)

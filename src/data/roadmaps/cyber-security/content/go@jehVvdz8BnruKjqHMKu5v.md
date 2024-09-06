@@ -4,3 +4,6 @@ Go, also known as Golang, is an open-source programming language created by Goog
 
 Learn more from the following resources:
 
+- [@roadmap@Go Roadmap](https://roadmap.sh/golang)
+- [@video@Go in 100 seconds](https://www.youtube.com/watch?v=446E-r0rXHI)
+- [@course@Go tutorial for beginners](https://www.youtube.com/watch?v=yyUHQIec83I)

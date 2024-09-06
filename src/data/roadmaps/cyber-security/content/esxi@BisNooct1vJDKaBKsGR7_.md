@@ -4,3 +4,5 @@ VMware ESXi is a Type 1 hypervisor and the core building block for VMware's virt
 
 Learn more from the following resources:
 
+- [@official@What is ESXi?](https://www.vmware.com/products/cloud-infrastructure/esxi-and-esx)
+- [@article@What is VMWare ESXi?](https://www.liquidweb.com/blog/what-is-vmware-esxi/)

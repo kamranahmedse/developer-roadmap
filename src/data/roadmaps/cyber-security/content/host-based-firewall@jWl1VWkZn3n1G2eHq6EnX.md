@@ -4,3 +4,5 @@ A host-based firewall is a software application that runs directly on individual
 
 Learn more from the following resources:
 
+- [@article@What is a host-based firewall?](https://www.paloaltonetworks.com/cyberpedia/what-is-a-host-based-firewall)
+- [@video@Host-based Firewalls](https://www.youtube.com/watch?v=aRHhm980oaE)

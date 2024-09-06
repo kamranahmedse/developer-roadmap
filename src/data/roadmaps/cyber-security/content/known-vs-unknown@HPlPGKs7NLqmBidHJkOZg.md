@@ -8,3 +8,5 @@
 
 Learn more from the following resources:
 
+- [@video@Detecting known threats](https://www.youtube.com/watch?v=hOaHDVMQ9_s)
+- [@video@How to deal with unknown threats](https://www.youtube.com/watch?v=CH4tX_MVLh0)

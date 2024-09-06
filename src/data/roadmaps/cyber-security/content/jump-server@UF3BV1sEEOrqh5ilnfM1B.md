@@ -4,3 +4,5 @@ A **jump server**, also known as a **bastion host** or **jump host**, is a criti
 
 Learn more from the following resources:
 
+- [@article@What is a jump server?](https://www.ssh.com/academy/iam/jump-server)
+- [@video@What is a bastion host and why is it so important?](https://www.youtube.com/watch?v=pI6glWVEkcY)

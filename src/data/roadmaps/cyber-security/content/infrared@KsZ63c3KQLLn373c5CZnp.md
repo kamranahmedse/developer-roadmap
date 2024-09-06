@@ -4,3 +4,5 @@ Infrared (IR) is a type of wireless communication technology that utilizes light
 
 Learn more from the following resources:
 
+- [@article@Infrared Definition](https://nordvpn.com/cybersecurity/glossary/infrared/?srsltid=AfmBOop7r5E41gRA5itc1NmwrS9qpjfiFnW6UKBwVLuu_MifaKdLHoTe)
+- [@article@Infrared](https://www.larksuite.com/en_us/topics/cybersecurity-glossary/infrared)

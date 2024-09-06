@@ -6,3 +6,5 @@ PEAP, on the other hand, is a version of EAP designed to enhance security by enc
 
 Learn more from the following resources:
 
+- [@article@Extensible Authentication Protocol (EAP) for network access](https://learn.microsoft.com/en-us/windows-server/networking/technologies/extensible-authentication-protocol/network-access?tabs=eap-tls%2Cserveruserprompt-eap-tls%2Ceap-sim)
+- [@article@What is Protected Extensible Authentication Protocol (PEAP)](https://www.techtarget.com/searchsecurity/definition/PEAP-Protected-Extensible-Authentication-Protocol)

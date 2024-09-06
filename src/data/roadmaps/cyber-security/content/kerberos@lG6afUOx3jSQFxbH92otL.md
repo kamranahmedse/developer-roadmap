@@ -4,3 +4,5 @@ Kerberos is a network authentication protocol designed to provide strong authent
 
 Learn more from the following resources:
 
+- [@video@Kerberos Authentication Explained](https://www.youtube.com/watch?v=5N242XcKAsM)
+- [@article@What is Kerberos?](https://www.fortinet.com/resources/cyberglossary/kerberos-authentication)

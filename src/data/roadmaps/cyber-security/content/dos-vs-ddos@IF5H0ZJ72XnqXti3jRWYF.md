@@ -4,3 +4,6 @@ Denial of Service (DoS) and Distributed Denial of Service (DDoS) are both types 
 
 Learn more from the following resources:
 
+- [@video@What is Denial-of-Service attack?](https://www.youtube.com/watch?v=Z7xG3b0aL_I)
+- [@video@What is a DDoS attack?](https://www.youtube.com/watch?v=z503nLsfe5s)
+- [@article@DoS vs DDoS](https://www.fortinet.com/resources/cyberglossary/dos-vs-ddos)

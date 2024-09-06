@@ -4,3 +4,5 @@ Identification refers to the process of detecting and recognizing that a securit
 
 Learn more from the following resources:
 
+- [@article@How to identify Cybersecurity vulnerabilities](https://fieldeffect.com/blog/how-to-identify-cybersecurity-vulnerabilities)
+- [@article@What is an Intrusion Detection System](https://www.ibm.com/topics/intrusion-detection-system)

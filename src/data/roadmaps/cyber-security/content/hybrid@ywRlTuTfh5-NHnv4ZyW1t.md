@@ -4,3 +4,5 @@ Hybrid cloud architecture combines elements of both public and private cloud env
 
 Learn more from the following resources:
 
+- [@video@What is Hybrid cloud?](https://www.youtube.com/watch?v=3kGFBBy3Lyg)
+- [@article@What is a Hybrid Cloud?](https://cloud.google.com/learn/what-is-hybrid-cloud)

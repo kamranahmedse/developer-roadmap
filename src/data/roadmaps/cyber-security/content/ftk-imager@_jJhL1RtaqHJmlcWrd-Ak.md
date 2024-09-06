@@ -4,3 +4,5 @@ FTK Imager is a popular and widely used free imaging tool developed by AccessDat
 
 Learn more from the following resources:
 
+- [@official@Create Forensic Images with Exterro FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager)
+- [@video@Imaging a Directory Using FTK Imager](https://www.youtube.com/watch?v=trWDlPif84o)

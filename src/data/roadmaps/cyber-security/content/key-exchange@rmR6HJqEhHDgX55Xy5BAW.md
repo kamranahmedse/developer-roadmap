@@ -4,3 +4,5 @@ Key exchange is a cryptographic process through which two parties securely share
 
 Learn more from the following resources:
 
+- [@article@Key Exchange](https://nordvpn.com/cybersecurity/glossary/key-exchange/?srsltid=AfmBOoocoykou-7M3OHUQq7APIsGDVjOR8P6wIcIvNA2fgOt1620RZwG)
+- [@video@Secret Key Exchange](https://www.youtube.com/watch?v=NmM9HA2MQGI)

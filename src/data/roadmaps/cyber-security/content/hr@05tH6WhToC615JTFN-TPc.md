@@ -4,3 +4,5 @@ Human Resources (HR) plays a crucial role in an organization's cybersecurity eff
 
 Learn more from the following resources:
 
+- [@article@What is HR?](https://www.investopedia.com/terms/h/humanresources.asp)
+- [@article@What does HR actually do?](https://www.lucidchart.com/blog/what-does-hr-do)

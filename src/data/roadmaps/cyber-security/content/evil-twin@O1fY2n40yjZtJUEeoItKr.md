@@ -4,3 +4,5 @@ An Evil Twin is a type of wireless network attack where an attacker sets up a ro
 
 Learn more from the following resources:
 
+- [@article@What is an Evil Twin attack?](https://www.techtarget.com/searchsecurity/definition/evil-twin)
+- [@video@How Hackers Can Grab Your Passwords Over Wi-Fi with Evil Twin Attacks](https://www.youtube.com/watch?v=HyxQqDq3qs4)

@@ -5,3 +5,4 @@ Endpoint Detection and Response (EDR) is a cybersecurity technology that provide
 Learn more from the following resources:
 
 - [@video@What is Endpoint Detection and Response (EDR)? - IBM](https://www.youtube.com/watch?v=55GaIolVVqI)
+- [@article@What is Endpoint Detection and Response?](https://www.crowdstrike.com/cybersecurity-101/endpoint-security/endpoint-detection-and-response-edr/)

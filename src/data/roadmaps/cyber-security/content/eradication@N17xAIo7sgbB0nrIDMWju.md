@@ -4,3 +4,5 @@ Eradication in cybersecurity refers to the critical phase of incident response t
 
 Learn more from the following resources:
 
+- [@article@Eradication - AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/eradication.html)
+- [@article@What is eradication in Cybersecurity?](https://heimdalsecurity.com/blog/what-is-eradication-in-cybersecurity/)

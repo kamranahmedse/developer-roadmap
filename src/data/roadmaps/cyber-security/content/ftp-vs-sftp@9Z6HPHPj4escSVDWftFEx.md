@@ -4,3 +4,5 @@ File Transfer Protocol (FTP) and Secure File Transfer Protocol (SFTP) are both u
 
 Learn more from the following resources:
 
+- [@article@FTP defined and explained](https://www.fortinet.com/resources/cyberglossary/file-transfer-protocol-ftp-meaning)
+- [@video@How to use SFTP commands](https://www.youtube.com/watch?v=22lBJIfO9qQ)

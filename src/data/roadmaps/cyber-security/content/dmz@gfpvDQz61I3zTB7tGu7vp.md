@@ -4,3 +4,5 @@ A **DMZ**, also known as a **Demilitarized Zone**, is a specific part of a netwo
 
 Learn more from the following resources:
 
+- [@article@What is a DMZ network?](https://www.fortinet.com/resources/cyberglossary/what-is-dmz)
+- [@video@DMZ explained](https://www.youtube.com/watch?v=48QZfBeU4ps)

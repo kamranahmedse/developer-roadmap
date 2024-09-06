@@ -7,3 +7,6 @@ Group Policy works by maintaining a hierarchy of _Group Policy Objects_ (GPOs), 
 When a user logs in or a computer starts up, the relevant GPOs from the AD structure get evaluated to determine the final policy settings. GPOs are processed in a specific order — local, site, domain, and OUs, with the latter having the highest priority. This order ensures that you can have a baseline set of policies at the domain level, with more specific policies applied at the OU level, as needed.
 
 Learn more from the following resources:
+
+- [@official@Group Policy overview](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11))
+- [@video@Learn Windows Group Policy the easy way!](https://www.youtube.com/watch?v=rEhTzP-ScBo)
