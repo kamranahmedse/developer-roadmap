@@ -352,7 +352,7 @@
     "description": "The lifecycle meta-argument in Terraform customizes the behavior of resources during creation, update, and deletion. It includes settings such as create\\_before\\_destroy, which ensures a new resource is created before the old one is destroyed, preventing downtime. prevent\\_destroy protects resources from accidental deletion, and ignore\\_changes specifies attributes to ignore during updates, allowing external modifications without triggering Terraform changes. These options provide fine-grained control over resource management, ensuring that the desired state of infrastructure is maintained with minimal disruption and precise handling of resource lifecycles.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Terraform Docs - for_each",
+        "title": "Terraform Docs - lifecycle",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle",
         "type": "article"
       },

@@ -1,13 +1,35 @@
 {
   "R9DQNc0AyAQ2HLpP4HOk6": {
     "title": "What are Relational Databases?",
-    "description": "A **relational database** is a type of database that stores and organizes data in a structured way. It uses a structure that allows data to be identified and accessed in relation to other data in the database. Data in a relational database is stored in various data tables, each of which has a unique key identifying every row.\n\nRelational databases are made up of a set of tables with data that fits into a predefined category. Each table has at least one data category in a column, and each row contains a certain data instance for the categories defined in the columns.\n\nFor example, consider an 'Employees' table:\n\nEmployeeId\n\nFirstName\n\nLastName\n\nEmail\n\n1\n\nJohn\n\nDoe\n\n[john.doe@example.com](mailto:john.doe@example.com)\n\n2\n\nJane\n\nDoe\n\n[jane.doe@example.com](mailto:jane.doe@example.com)\n\n3\n\nBob\n\nSmith\n\n[bob.smith@example.com](mailto:bob.smith@example.com)\n\nIn this table, 'EmployeeId', 'FirstName', 'LastName' and 'Email' are categories, and each row represents a specific employee.\n\nRelationships\n-------------\n\nThe term \"relational database\" comes from the concept of a relation—a set of tuples that the database organizes into rows and columns. Each row in a table represents a relationship among a set of values.\n\nRelational databases use `keys` to create links between tables. A `primary key` is a unique identifier for a row of data. A `foreign key` is a column or combination of columns used to establish and enforce a link between the data in two tables.\n\nConsider an additional 'Orders' table:\n\nOrderId\n\nEmployeeId\n\nProduct\n\n1\n\n3\n\nApples\n\n2\n\n1\n\nBananas\n\n3\n\n2\n\nCherries\n\nIn the 'Orders' table, 'EmployeeId' serves as the foreign key creating a relationship between 'Orders' and 'Employees'. This allows queries that involve data in both tables, like \"Find all orders placed by John Doe\".\n\n    SELECT Orders.OrderId, Orders.Product, Employees.FirstName, Employees.LastName\n    FROM Orders\n    INNER JOIN Employees ON Orders.EmployeeId = Employees.EmployeeId;\n    \n\nThe above SQL code is an example of how to retrieve data from a relational database using a `JOIN` clause to combine rows from two or more tables.\n\nOverall, relational databases provide a powerful mechanism for defining relationships within data and enabling efficient data retrieval.",
-    "links": []
+    "description": "Relational databases are a type of database management system (DBMS) that stores and provides access to data points that are related to one another. Based on the relational model introduced by E.F. Codd in 1970, they use a structure that allows data to be organized into tables with rows and columns. Key features include:\n\n*   Use of SQL (Structured Query Language) for querying and managing data\n*   Support for ACID transactions (Atomicity, Consistency, Isolation, Durability)\n*   Enforcement of data integrity through constraints (e.g., primary keys, foreign keys)\n*   bility to establish relationships between tables, enabling complex queries and data retrieval\n*   Scalability and support for multi-user environments\n\nExamples of popular relational database systems include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. They are widely used in various applications, from small-scale projects to large enterprise systems, due to their reliability, consistency, and powerful querying capabilities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is a relational database - AWS",
+        "url": "https://aws.amazon.com/relational-database/",
+        "type": "article"
+      },
+      {
+        "title": "What is a relational database?",
+        "url": "https://www.youtube.com/watch?v=OqjJjpjDRLc",
+        "type": "video"
+      }
+    ]
   },
   "fNTb9y3zs1HPYclAmu_Wv": {
     "title": "RDBMS Benefits and Limitations",
-    "description": "Here are some of the benefits of using an RDBMS:\n\n*   **Structured Data**: RDBMS allows data storage in a structured way, using rows and columns in tables. This makes it easy to manipulate the data using SQL (Structured Query Language), ensuring efficient and flexible usage.\n    \n*   **ACID Properties**: ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable and safe data manipulation in a RDBMS, making it suitable for mission-critical applications.\n    \n*   **Normalization**: RDBMS supports data normalization, a process that organizes data in a way that reduces data redundancy and improves data integrity.\n    \n*   **Scalability**: RDBMSs generally provide good scalability options, allowing for the addition of more storage or computational resources as the data and workload grow.\n    \n*   **Data Integrity**: RDBMS provides mechanisms like constraints, primary keys, and foreign keys to enforce data integrity and consistency, ensuring that the data is accurate and reliable.\n    \n*   **Security**: RDBMSs offer various security features such as user authentication, access control, and data encryption to protect sensitive data.\n    \n\nHere are some of the limitations of using an RDBMS:\n\n*   **Complexity**: Setting up and managing an RDBMS can be complex, especially for large applications. It requires technical knowledge and skills to manage, tune, and optimize the database.\n    \n*   **Cost**: RDBMSs can be expensive, both in terms of licensing fees and the computational and storage resources they require.\n    \n*   **Fixed Schema**: RDBMS follows a rigid schema for data organization, which means any changes to the schema can be time-consuming and complicated.\n    \n*   **Handling of Unstructured Data**: RDBMSs are not suitable for handling unstructured data like multimedia files, social media posts, and sensor data, as their relational structure is optimized for structured data.\n    \n*   **Horizontal Scalability**: RDBMSs are not as easily horizontally scalable as NoSQL databases. Scaling horizontally, which involves adding more machines to the system, can be challenging in terms of cost and complexity.",
-    "links": []
+    "description": "Here are some of the benefits of using an RDBMS:\n\n*   **Structured Data**: RDBMS allows data storage in a structured way, using rows and columns in tables. This makes it easy to manipulate the data using SQL (Structured Query Language), ensuring efficient and flexible usage.\n    \n*   **ACID Properties**: ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure reliable and safe data manipulation in a RDBMS, making it suitable for mission-critical applications.\n    \n*   **Normalization**: RDBMS supports data normalization, a process that organizes data in a way that reduces data redundancy and improves data integrity.\n    \n*   **Scalability**: RDBMSs generally provide good scalability options, allowing for the addition of more storage or computational resources as the data and workload grow.\n    \n*   **Data Integrity**: RDBMS provides mechanisms like constraints, primary keys, and foreign keys to enforce data integrity and consistency, ensuring that the data is accurate and reliable.\n    \n*   **Security**: RDBMSs offer various security features such as user authentication, access control, and data encryption to protect sensitive data.\n    \n\nHere are some of the limitations of using an RDBMS:\n\n*   **Complexity**: Setting up and managing an RDBMS can be complex, especially for large applications. It requires technical knowledge and skills to manage, tune, and optimize the database.\n    \n*   **Cost**: RDBMSs can be expensive, both in terms of licensing fees and the computational and storage resources they require.\n    \n*   **Fixed Schema**: RDBMS follows a rigid schema for data organization, which means any changes to the schema can be time-consuming and complicated.\n    \n*   **Handling of Unstructured Data**: RDBMSs are not suitable for handling unstructured data like multimedia files, social media posts, and sensor data, as their relational structure is optimized for structured data.\n    \n*   **Horizontal Scalability**: RDBMSs are not as easily horizontally scalable as NoSQL databases. Scaling horizontally, which involves adding more machines to the system, can be challenging in terms of cost and complexity.\n    \n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Advantages and Disadvantages of DBMS",
+        "url": "https://www.javatpoint.com/advantages-and-disadvantages-of-dbms",
+        "type": "article"
+      },
+      {
+        "title": "ACID Transactions in Databases",
+        "url": "https://www.databricks.com/glossary/acid-transactions",
+        "type": "article"
+      }
+    ]
   },
   "nhUKKWyBH80nyKfGT8ErC": {
     "title": "Learn the Basics",
@@ -32,27 +54,17 @@
   },
   "gx4KaFqKgJX9n9_ZGMqlZ": {
     "title": "SQL vs NoSQL Databases",
-    "description": "When discussing databases, it's essential to understand the difference between SQL and NoSQL databases, as each has its own set of advantages and limitations. In this section, we'll briefly compare and contrast the two, so you can determine which one suits your needs better.\n\nSQL Databases\n-------------\n\nSQL (Structured Query Language) databases are also known as relational databases. They have a predefined schema, and data is stored in tables consisting of rows and columns. SQL databases follow the ACID (Atomicity, Consistency, Isolation, Durability) properties to ensure reliable transactions. Some popular SQL databases include MySQL, PostgreSQL, and Microsoft SQL Server.\n\n**Advantages of SQL databases:**\n\n*   **Predefined schema**: Ideal for applications with a fixed structure.\n*   **ACID transactions**: Ensures data consistency and reliability.\n*   **Support for complex queries**: Rich SQL queries can handle complex data relationships and aggregation operations.\n*   **Scalability**: Vertical scaling by adding more resources to the server (e.g., RAM, CPU).\n\n**Limitations of SQL databases:**\n\n*   **Rigid schema**: Data structure updates are time-consuming and can lead to downtime.\n*   **Scaling**: Difficulties in horizontal scaling and sharding of data across multiple servers.\n*   **Not well-suited for hierarchical data**: Requires multiple tables and JOINs to model tree-like structures.\n\nNoSQL Databases\n---------------\n\nNoSQL (Not only SQL) databases refer to non-relational databases, which don't follow a fixed schema for data storage. Instead, they use a flexible and semi-structured format like JSON documents, key-value pairs, or graphs. MongoDB, Cassandra, Redis, and Couchbase are some popular NoSQL databases.\n\n**Advantages of NoSQL databases:**\n\n*   **Flexible schema**: Easily adapts to changes without disrupting the application.\n*   **Scalability**: Horizontal scaling by partitioning data across multiple servers (sharding).\n*   **Fast**: Designed for faster read and writes, often with a simpler query language.\n*   **Handling large volumes of data**: Better suited to managing big data and real-time applications.\n*   **Support for various data structures**: Different NoSQL databases cater to various needs, like document, graph, or key-value stores.\n\n**Limitations of NoSQL databases:**\n\n*   **Limited query capabilities**: Some NoSQL databases lack complex query and aggregation support or use specific query languages.\n*   **Weaker consistency**: Many NoSQL databases follow the BASE (Basically Available, Soft state, Eventual consistency) properties that provide weaker consistency guarantees than ACID-compliant databases.\n\nMongoDB: A NoSQL Database\n-------------------------\n\nThis guide focuses on MongoDB, a popular NoSQL database that uses a document-based data model. MongoDB has been designed with flexibility, performance, and scalability in mind. With its JSON-like data format (BSON) and powerful querying capabilities, MongoDB is an excellent choice for modern applications dealing with diverse and large-scale data.",
+    "description": "SQL (relational) and NoSQL (non-relational) databases represent two different approaches to data storage and retrieval. SQL databases use structured schemas and tables, emphasizing data integrity and complex queries through joins. NoSQL databases offer more flexibility in data structures, often sacrificing some consistency for scalability and performance. The choice between SQL and NoSQL depends on factors like data structure, scalability needs, consistency requirements, and the nature of the application.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL vs NoSQL: The Differences",
-        "url": "https://www.sitepoint.com/sql-vs-nosql-differences/",
+        "title": "Understanding SQL vs NoSQL Databases",
+        "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained/nosql-vs-sql",
         "type": "article"
       },
       {
-        "title": "SQL vs. NoSQL Databases: What’s the Difference?",
-        "url": "https://www.ibm.com/blog/sql-vs-nosql/",
-        "type": "article"
-      },
-      {
-        "title": "NoSQL vs. SQL Databases",
-        "url": "https://www.mongodb.com/nosql-explained/nosql-vs-sql",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about NoSQL",
-        "url": "https://app.daily.dev/tags/nosql?ref=roadmapsh",
-        "type": "article"
+        "title": "SQL vs NoSQL Databases in 4 mins",
+        "url": "https://www.youtube.com/watch?v=_Ss42Vb1SU4",
+        "type": "video"
       }
     ]
   },
@@ -79,21 +91,16 @@
   },
   "6yoo7qC6X2jYDIjd3HIm7": {
     "title": "SQL Keywords",
-    "description": "SQL employs a number of standard command keywords that are integral to interact with databases. Keywords in SQL provide instructions as to what action should be performed.\n\nHere are some of the primary SQL keywords:\n\n**SELECT**: This keyword retrieves data from a database. For example,\n\n    SELECT * FROM Customers;\n    \n\nIn the above statement `*` indicates that all records should be retrieved from the `Customers` table.\n\n**FROM**: Used in conjunction with `SELECT` to specify the table from which to fetch data.\n\n**WHERE**: Used to filter records. Incorporating a WHERE clause, you might specify conditions that must be met. For example,\n\n    SELECT * FROM Customers WHERE Country='Germany';\n    \n\n**INSERT INTO**: This command is used to insert new data into a database.\n\n    INSERT INTO Customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country)\n    VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');\n    \n\n**UPDATE**: This keyword updates existing data within a table. For example,\n\n    UPDATE Customers SET ContactName='Alfred Schmidt', City='Frankfurt' WHERE CustomerID=1;\n    \n\n**DELETE**: This command removes one or more records from a table. For example,\n\n    DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';\n    \n\n**CREATE DATABASE**: As implied by its name, this keyword creates a new database.\n\n    CREATE DATABASE mydatabase;\n    \n\n**ALTER DATABASE**, **DROP DATABASE**, **CREATE TABLE**, **ALTER TABLE**, **DROP TABLE**: These keywords are used to modify databases and tables.\n\nRemember that SQL is not case sensitive, meaning keywords can be written in lower case. The convention is to write them in ALL CAPS for readability. There are many more keywords in SQL, but these are some of the most common.\n\nLearn more about SQL from the following resources:",
+    "description": "SQL keywords are reserved words that have special meanings within SQL statements. These include commands (like `SELECT`, `INSERT`, `UPDATE`), clauses (such as `WHERE`, `GROUP BY`, `HAVING`), and other syntax elements that form the structure of SQL queries. Understanding SQL keywords is fundamental to writing correct and effective database queries. Keywords are typically case-insensitive but are often written in uppercase by convention for better readability.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL Tutorial - Mode",
-        "url": "https://mode.com/sql-tutorial/",
+        "title": "SQL Keywords Reference",
+        "url": "https://www.w3schools.com/sql/sql_ref_keywords.asp",
         "type": "article"
       },
       {
-        "title": "SQL Tutorial",
-        "url": "https://www.sqltutorial.org/",
-        "type": "article"
-      },
-      {
-        "title": "SQL Tutorial - W3Schools",
-        "url": "https://www.w3schools.com/sql/default.asp",
+        "title": "SQL Keywords, Operators and Statements",
+        "url": "https://blog.hubspot.com/website/sql-keywords-operators-statements",
         "type": "article"
       }
     ]
@@ -106,17 +113,33 @@
         "title": "SQL Data Types",
         "url": "https://www.digitalocean.com/community/tutorials/sql-data-types",
         "type": "article"
+      },
+      {
+        "title": "MySQL 101 - Data Types",
+        "url": "https://www.youtube.com/watch?v=vAiBa69YCnk",
+        "type": "video"
       }
     ]
   },
   "ffwniprGJHZzJ7t3lQcXz": {
     "title": "Operators",
-    "description": "SQL operators are used to perform operations like comparisons and arithmetic calculations. They are very crucial in forming queries. SQL operators are divided into the following types:\n\n1.  **Arithmetic Operators**: These are used to perform mathematical operations. Here is a list of these operators:\n    \n    *   `+` : Addition\n    *   `-` : Subtraction\n    *   `*` : Multiplication\n    *   `/` : Division\n    *   `%` : Modulus\n    \n    Example:\n    \n        SELECT product, price, (price * 0.18) as tax\n        FROM products;\n        \n    \n2.  **Comparison Operators**: These are used in the where clause to compare one expression with another. Some of these operators are:\n    \n    *   `=` : Equal\n    *   `!=` or `<>` : Not equal\n    *   `>` : Greater than\n    *   `<` : Less than\n    *   `>=`: Greater than or equal\n    *   `<=`: Less than or equal\n    \n    Example:\n    \n        SELECT name, age\n        FROM students\n        WHERE age > 18;\n        \n    \n3.  **Logical Operators**: They are used to combine the result set of two different component conditions. These include:\n    \n    *   `AND`: Returns true if both components are true.\n    *   `OR` : Returns true if any one of the component is true.\n    *   `NOT`: Returns the opposite boolean value of the condition.\n    \n    Example:\n    \n        SELECT * \n        FROM employees\n        WHERE salary > 50000 AND age < 30;\n        \n    \n4.  **Bitwise Operators**: These perform bit-level operations on the inputs. Here is a list of these operators:\n    \n    *   `&` : Bitwise AND\n    *   `|` : Bitwise OR\n    *   `^` : Bitwise XOR\n    \n    Bitwise operators are much less commonly used in SQL than the other types of operators.\n    \n\nRemember, the datatype of the result is dependent on the types of the operands.",
-    "links": []
+    "description": "SQL operators are symbols or keywords used to perform operations on data within a database. They are essential for constructing queries that filter, compare, and manipulate data. Common types of operators include arithmetic operators (e.g., `+`, `-`, `*`, `/`), which perform mathematical calculations; comparison operators (e.g., `=`, `!=`, `<`, `>`), used to compare values; logical operators (e.g., `AND`, `OR`, `NOT`), which combine multiple conditions in a query; and set operators (e.g., `UNION`, `INTERSECT`, `EXCEPT`), which combine results from multiple queries. These operators enable precise control over data retrieval and modification.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL Operators",
+        "url": "https://www.w3schools.com/sql/sql_operators.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL Operators: 6 Different Types",
+        "url": "https://www.dataquest.io/blog/sql-operators/",
+        "type": "article"
+      }
+    ]
   },
   "rmqXH29n1oXtZ8tvmcRFn": {
     "title": "SELECT",
-    "description": "The SELECT statement in SQL is used to retrieve data from a database. It allows you to specify the columns you want to fetch from a particular table or a combination of tables. Here’s a basic syntax of a SELECT statement:\n\n'''sql SELECT \\* FROM employees; '''\n\nLearn more from the following resources:",
+    "description": "SELECT is one of the most fundamental SQL commands, used to retrieve data from one or more tables in a database. It allows you to specify which columns to fetch, apply filtering conditions, sort results, and perform various operations on the data. The SELECT statement is versatile, supporting joins, subqueries, aggregations, and more, making it essential for data querying and analysis in relational databases.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "SQL_Select",
@@ -127,24 +150,46 @@
   },
   "mPj6BiK5FKKkIQ9WsWEo6": {
     "title": "INSERT",
-    "description": "",
-    "links": []
+    "description": "The \"INSERT\" statement is used to add new rows of data to a table in a database. There are two main forms of the INSERT command: `INSERT INTO` which, if columns are not named, expects a full set of columns, and `INSERT INTO table_name (column1, column2, ...)` where only named columns will be filled with data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL INSERT",
+        "url": "https://www.w3schools.com/sql/sql_insert.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL INSERT Statement",
+        "url": "https://www.youtube.com/watch?v=Yp1MKeIG-M4",
+        "type": "video"
+      }
+    ]
   },
   "eu9dJFi6gBPMBdy08Y5Bb": {
     "title": "UPDATE",
-    "description": "The `UPDATE` statement is used to modify existing data in a given table.  \nIt can be done so with the query\n\n    UPDATE table_name\n    SET column1 = value1, column2 = value2, ...\n    WHERE condition;\n    \n\n*   _Keep in mind that **SET** and **WHERE** are also commands to assign a new value(SET) only if the condition is met(WHERE)_\n\nOmitting the `WHERE` clause will update **all** rows in the table.\n\nVisit the following resources to learn more:",
+    "description": "The UPDATE statement in SQL is used to modify existing records in a table. It allows you to change the values of one or more columns based on specified conditions. The basic syntax includes specifying the table name, the columns to be updated with their new values, and optionally, a WHERE clause to filter which rows should be affected. UPDATE can be used in conjunction with subqueries, joins, and CTEs (Common Table Expressions) for more complex data modifications. It's important to use UPDATE carefully, especially with the WHERE clause, to avoid unintended changes to data. In transactional databases, UPDATE operations can be rolled back if they're part of a transaction that hasn't been committed.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "W3Schools SQL UPDATE Statement Doc",
+        "title": "SQL UPDATE Statement",
         "url": "https://www.w3schools.com/sql/sql_update.asp",
+        "type": "article"
+      },
+      {
+        "title": "Efficient column updates in SQL",
+        "url": "https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column",
         "type": "article"
       }
     ]
   },
   "ddtVaA4Ls6qRj-7OtTSIH": {
     "title": "DELETE",
-    "description": "",
-    "links": []
+    "description": "DELETE is an SQL statement used to remove one or more rows from a table. It allows you to specify which rows to delete using a WHERE clause, or delete all rows if no condition is provided. DELETE is part of the Data Manipulation Language (DML) and is used for data maintenance, removing outdated or incorrect information, or implementing business logic that requires data removal. When used without a WHERE clause, it empties the entire table while preserving its structure, unlike the TRUNCATE command.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "DELETE",
+        "url": "https://www.w3schools.com/sql/sql_delete.asp",
+        "type": "article"
+      }
+    ]
   },
   "xPOeXK1EPBNG56vgfG-VV": {
     "title": "Data Definition Language (DDL)",
@@ -154,13 +199,29 @@
         "title": "Data Definition Language (DDL)",
         "url": "https://docs.getdbt.com/terms/ddl",
         "type": "article"
+      },
+      {
+        "title": "The Definitive Guide on Data Definition Language",
+        "url": "https://www.dbvis.com/thetable/sql-ddl-the-definitive-guide-on-data-definition-language/",
+        "type": "article"
       }
     ]
   },
   "K5vhqTJrdPK08Txv8zaEj": {
     "title": "Truncate Table",
-    "description": "The `TRUNCATE TABLE` statement is a Data Definition Language (DDL) operation that is used to mark the extents of a table for deallocation (empty for reuse). The result of this operation quickly removes all data from a table, typically bypassing a number of integrity enforcing mechanisms intended to protect data (like triggers).\n\nIt effectively eliminates all records in a table, but not the table itself. Unlike the `DELETE` statement, `TRUNCATE TABLE` does not generate individual row delete statements, so the usual overhead for logging or locking does not apply.\n\nSyntax\n------\n\nIn SQL, the `TRUNCATE TABLE` statement is quite simple:\n\n    TRUNCATE TABLE table_name;\n    \n\nIn this command, \"table\\_name\" refers to the name of the table you wish to clear.\n\nExample\n-------\n\nIf you have a table named `Orders` and you want to delete all its records, you would use:\n\n    TRUNCATE TABLE Orders;\n    \n\nAfter executing this statement, the `Orders` table would still exist, but it would be empty.\n\nRemember, while `TRUNCATE TABLE` is faster and uses fewer system and transaction log resources than `DELETE`, it does not invoke triggers and cannot be rolled back, so use with caution.\n\nLimitations\n-----------\n\nTruncate preserves the structure of the table for future use. But you can't truncate a table that:\n\n*   Is referenced by a FOREIGN KEY constraint. (You can truncate a table that has a foreign key that references itself.)\n*   Participates in an indexed view.\n*   Is published by using transactional replication or merge replication.\n\nIf you try to truncate a table with a foreign key constraint, SQL Server will prevent you from doing so and you will have to use the `DELETE` statement instead.\n\nFor partitioned tables, `TRUNCATE TABLE` removes all rows from all partitions. The operation is not allowed if the table contains any LOB columns - `varchar(max), nvarchar(max), varbinary(max), text, ntext, image, xml`, or if the table contains any filestream columns or spatial geo, geography, geometry, and hierarchyid data type columns, or any columns of CLR user-defined data types.",
-    "links": []
+    "description": "The `TRUNCATE TABLE` statement is a Data Definition Language (DDL) operation that is used to mark the extents of a table for deallocation (empty for reuse). The result of this operation quickly removes all data from a table, typically bypassing a number of integrity enforcing mechanisms intended to protect data (like triggers).\n\nIt effectively eliminates all records in a table, but not the table itself. Unlike the `DELETE` statement, `TRUNCATE TABLE` does not generate individual row delete statements, so the usual overhead for logging or locking does not apply.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "TRUNCATE TABLE",
+        "url": "https://www.tutorialspoint.com/sql/sql-truncate-table.htm",
+        "type": "article"
+      },
+      {
+        "title": "SQL Tutorial - TRUNCATE TABLE",
+        "url": "https://www.youtube.com/watch?v=zJidbjOQlJM",
+        "type": "video"
+      }
+    ]
   },
   "WjXlO42WL9saDS7RIGapt": {
     "title": "Alter Table",
@@ -186,6 +247,11 @@
         "title": "CREATE TABLE",
         "url": "https://www.tutorialspoint.com/sql/sql-create-table.htm",
         "type": "article"
+      },
+      {
+        "title": "SQL CREATE TABLE",
+        "url": "https://www.programiz.com/sql/create-table",
+        "type": "article"
       }
     ]
   },
@@ -196,6 +262,11 @@
       {
         "title": "DROP TABLE",
         "url": "https://www.w3schools.com/sql/sql_drop_table.asp",
+        "type": "article"
+      },
+      {
+        "title": "Drop a Table",
+        "url": "https://www.coginiti.co/tutorials/beginner/drop-a-table/",
         "type": "article"
       }
     ]
@@ -223,8 +294,14 @@
   },
   "i8u8E_sne6XiKJo2FXDog": {
     "title": "Select",
-    "description": "The `SELECT` statement in SQL is majorly used for fetching data from the database. It is one of the most essential elements of SQL.\n\nSyntax\n------\n\nHere's how your `SELECT` command will look like:\n\n    SELECT column1, column2, ...\n    FROM table_name;\n    \n\nIf you want to select all the columns of a table, you can use `*` like this:\n\n    SELECT * FROM table_name;\n    \n\nExample\n-------\n\nFor instance, consider we have a table `EMPLOYEES` with columns `name`, `designation`, and `salary`. We can use `SELECT` in the following way:\n\n    SELECT name, designation FROM EMPLOYEES;\n    \n\nThis will retrieve all the names and designations of all employees from the table `EMPLOYEES`.\n\nSELECT DISTINCT\n---------------\n\nThe `SELECT DISTINCT` statement is used to return only distinct (different) values. The DISTINCT keyword eliminates duplicate records from the results.\n\nHere's how you can use it:\n\n    SELECT DISTINCT column1, column2, ...\n    FROM table_name;\n    \n\nFor example, if we want to select all unique designations from the `EMPLOYEES` table, the query will look like this:\n\n    SELECT DISTINCT designation FROM EMPLOYEES;\n    \n\nSELECT WHERE\n------------\n\n`SELECT` statement combined with `WHERE` gives us the ability to filter records based on a condition.\n\nSyntax:\n\n    SELECT column1, column2, ...\n    FROM table_name\n    WHERE condition;\n    \n\nFor example, to select employees with salary more than 50000, you can use this query:\n\n    SELECT * FROM EMPLOYEES WHERE salary > 50000;\n    \n\nSELECT ORDER BY\n---------------\n\nUsing `SELECT` statement in conjunction with `ORDER BY`, we can sort the result-set in ascending or descending order.\n\nSyntax:\n\n    SELECT column1, column2, ...\n    FROM table_name\n    ORDER BY column ASC|DESC;\n    \n\nFor example, to select all employees and order them by their name in ascending fashion:\n\n    SELECT * FROM EMPLOYEES ORDER BY name ASC;\n    \n\nRemember that the default sort order is ascending if the ASC|DESC parameter is not defined.",
-    "links": []
+    "description": "SELECT is one of the most fundamental SQL commands, used to retrieve data from one or more tables in a database. It allows you to specify which columns to fetch, apply filtering conditions, sort results, and perform various operations on the data. The SELECT statement is versatile, supporting joins, subqueries, aggregations, and more, making it essential for data querying and analysis in relational databases.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL_Select",
+        "url": "https://www.w3schools.com/sql/sql_select.asp",
+        "type": "article"
+      }
+    ]
   },
   "N1Racr3ZpU320gS545We8": {
     "title": "FROM",
@@ -234,18 +311,45 @@
         "title": "SQL FROM Keyword",
         "url": "https://www.w3schools.com/sql/sql_ref_from.asp",
         "type": "article"
+      },
+      {
+        "title": "How to write basic SQL",
+        "url": "https://www.youtube.com/watch?v=YfTDBA45PHk",
+        "type": "video"
       }
     ]
   },
   "WhYAy6f7Euk3E49-ot644": {
     "title": "WHERE",
-    "description": "SQL provides a WHERE clause that is basically used to filter the records. If the condition specified in the WHERE clause satisfies, then only it returns the specific value from the table. You should use the WHERE clause to filter the records and fetching only the necessary records.\n\nThe WHERE clause is not only used in SELECT statement, but it is also used in UPDATE, DELETE statement, etc., which we will learn in subsequent chapters.\n\nAn example of its implementation is:\n\n    SELECT * FROM Students WHERE Age>10;\n    \n\nIn this example, the statement selects all fields from the 'Students' table where the 'Age' field value is greater than 10.\n\nWHERE clause can be combined with AND, OR, and NOT operators. Here's an example:\n\n    SELECT * FROM Students WHERE Age > 10 AND Gender = 'Female';\n    \n\nIn this example, the statement selects all fields from 'Students' table where the 'Age' field value is greater than 10 and the 'Gender' is Female.\n\nThe syntax generally looks like this:\n\n    SELECT column1, column2, ...\n    FROM table_name\n    WHERE condition;",
-    "links": []
+    "description": "SQL provides a WHERE clause that is basically used to filter the records. If the condition specified in the WHERE clause satisfies, then only it returns the specific value from the table. You should use the WHERE clause to filter the records and fetching only the necessary records.\n\nThe WHERE clause is not only used in SELECT statement, but it is also used in UPDATE, DELETE statement, etc., which we will learn in subsequent chapters.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "WHERE Clause",
+        "url": "https://www.w3schools.com/sql/sql_where.asp",
+        "type": "article"
+      },
+      {
+        "title": "How to filter with the WHERE clause in SQL",
+        "url": "https://www.youtube.com/watch?v=4Uv0o8IBqw0",
+        "type": "video"
+      }
+    ]
   },
   "NfCiSPrL4upMssukcw3Kh": {
     "title": "ORDER BY",
-    "description": "The `ORDER BY` clause in SQL is used to sort the result-set from a SELECT statement in ascending or descending order. It sorts the records in ascending order by default. If you want to sort the records in descending order, you have to use the `DESC` keyword.\n\nSyntax for Ascending Order:\n---------------------------\n\n    SELECT column1, column2, ...\n    FROM table_name\n    ORDER BY column1, column2, ... ASC;\n    \n\nHere, `ASC` is used for ascending order. If you use `ORDER BY` without `ASC` or `DESC`, `ASC` is used by default.\n\nSyntax for Descending Order:\n----------------------------\n\n    SELECT column1, column2, ...\n    FROM table_name\n    ORDER BY column1, column2, ... DESC;\n    \n\nHere, `DESC` is used for descending order.\n\nUsage Example\n-------------\n\nConsider the following `Customers` table:\n\nID\n\nNAME\n\nAGE\n\nADDRESS\n\nSALARY\n\n1\n\nRamesh\n\n32\n\nAhmedabad\n\n2000.0\n\n2\n\nKhilan\n\n25\n\nDelhi\n\n1500.0\n\n3\n\nkaushik\n\n23\n\nKota\n\n2000.0\n\n4\n\nChaitali\n\n25\n\nMumbai\n\n6500.0\n\n5\n\nHardik\n\n27\n\nBhopal\n\n8500.0\n\n6\n\nKomal\n\n22\n\nMP\n\n4500.0\n\n**Example 1 - Ascending Order:**\n\nSort the table by the `NAME` column in ascending order:\n\n    SELECT * FROM Customers\n    ORDER BY NAME ASC;\n    \n\n**Example 2 - Descending Order:**\n\nSort the table by the `SALARY` column in descending order:\n\n    SELECT * FROM Customers\n    ORDER BY SALARY DESC;\n    \n\n**Example 3 - Multiple Columns:**\n\nYou can also sort by multiple columns. Sort the table by the `AGE` column in ascending order and then `SALARY` in descending order:\n\n    SELECT * FROM Customers\n    ORDER BY AGE ASC, SALARY DESC;\n    \n\nIn this instance, the `ORDER BY` clause first sorts the `Customers` table by the `AGE` column and then sorts the sorted result further by the `SALARY` column.",
-    "links": []
+    "description": "The `ORDER BY` clause in SQL is used to sort the result set of a query by one or more columns. By default, the sorting is in ascending order, but you can specify descending order using the `DESC` keyword. The clause can sort by numeric, date, or text values, and multiple columns can be sorted by listing them in the `ORDER BY` clause, each with its own sorting direction. This clause is crucial for organizing data in a meaningful sequence, such as ordering by a timestamp to show the most recent records first, or alphabetically by name.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL ORDER BY Keyword",
+        "url": "https://www.w3schools.com/sql/sql_orderby.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL ORDER BY Sorting Clause",
+        "url": "https://www.youtube.com/watch?v=h_HHTNjAgS8",
+        "type": "video"
+      }
+    ]
   },
   "14TKE6KhrH1yFtHcSZSXq": {
     "title": "GROUP BY",
@@ -255,17 +359,27 @@
         "title": "SQL GROUP BY",
         "url": "https://www.programiz.com/sql/group-by",
         "type": "article"
+      },
+      {
+        "title": "Advanced Aggregate Functions in SQL",
+        "url": "https://www.youtube.com/watch?v=nNrgRVIzeHg",
+        "type": "video"
       }
     ]
   },
   "ytwCkSMTiTuemE0KVfAfy": {
     "title": "HAVING",
-    "description": "`HAVING` is a clause in SQL that allows you to filter result sets in a `GROUP BY` clause. It is used to mention conditions on the groups being selected. In other words, `HAVING` is mainly used with the `GROUP BY` clause to filter the results that a `GROUP BY` returns.\n\nIt’s similar to a `WHERE` clause, but operates on the results of a grouping. The `WHERE` clause places conditions on the selected columns, whereas the `HAVING` clause places conditions on groups created by the `GROUP BY` clause.\n\nLearn more from the following resources:",
+    "description": "The `HAVING` clause is used in combination with the `GROUP BY` clause to filter the results of `GROUP BY`. It is used to mention conditions on the group functions, like `SUM`, `COUNT`, `AVG`, `MAX` or `MIN`.\n\nIt's important to note that where `WHERE` clause introduces conditions on individual rows, `HAVING` introduces conditions on groups created by the `GROUP BY` clause.\n\nAlso note, `HAVING` applies to summarized group records, whereas `WHERE` applies to individual records.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "SQL HAVING Clause",
         "url": "https://www.programiz.com/sql/having",
         "type": "article"
+      },
+      {
+        "title": "HAVING Clause",
+        "url": "https://www.youtube.com/watch?v=tYBOMw7Ob8E",
+        "type": "video"
       }
     ]
   },
@@ -277,6 +391,11 @@
         "title": "SQL JOINs Cheat Sheet",
         "url": "https://www.datacamp.com/cheat-sheet/sql-joins-cheat-sheet",
         "type": "article"
+      },
+      {
+        "title": "SQL JOINs Tutorial for beginners",
+        "url": "https://www.youtube.com/watch?v=0OQJDd3QqQM",
+        "type": "video"
       }
     ]
   },
@@ -288,13 +407,29 @@
         "title": "SQL INSERT",
         "url": "https://www.w3schools.com/sql/sql_insert.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL INSERT Statement",
+        "url": "https://www.youtube.com/watch?v=Yp1MKeIG-M4",
+        "type": "video"
       }
     ]
   },
   "KJJ6PYjTnr_3yU2mNPL9v": {
     "title": "UPDATE",
-    "description": "The `UPDATE` command in SQL is used to modify the existing records in a table. This command is useful when you need to update existing data within a database.\n\nHere are important points to remember before updating records in SQL:\n\n*   The `WHERE` clause in the `UPDATE` statement specifies which records to modify. If you omit the `WHERE` clause, all records in the table will be updated!\n    \n*   Be careful when updating records in SQL. If you inadvertently run an `UPDATE` statement without a `WHERE` clause, you will rewrite all the data in the table.\n    \n\nSQL UPDATE Syntax\n-----------------\n\nHere is a basic syntax of SQL UPDATE command:\n\n    UPDATE table_name\n    SET column1 = value1, column2 = value2...., columnN = valueN\n    WHERE [condition];\n    \n\nIn this syntax:\n\n*   `table_name`: Specifies the table where you want to update records.\n*   `SET`: This keyword is used to set the column values.\n*   `column1, column2... columnN`: These are the columns of the table that you want to change.\n*   `value1, value2... valueN`: These are the new values that you want to assign for your columns.\n*   `WHERE`: This clause specifies which records need to be updated. It selects records based on one or more conditions.\n\nSQL UPDATE Example\n------------------\n\nLet's assume we have the following `Students` table:\n\nStudentID\n\nFirstName\n\nLastName\n\nAge\n\n1\n\nJohn\n\nDoe\n\n20\n\n2\n\nJane\n\nSmith\n\n22\n\n3\n\nBob\n\nJohnson\n\n23\n\nAnd we want to update the `Age` of the student with `StudentID` as 2. We can use the `UPDATE` command as follows:\n\n    UPDATE Students\n    SET Age = 23\n    WHERE StudentID = 2;\n    \n\nAfter executing the above SQL command, the `Age` of the student with `StudentID` 2 will be updated to 23.\n\nStudentID\n\nFirstName\n\nLastName\n\nAge\n\n1\n\nJohn\n\nDoe\n\n20\n\n2\n\nJane\n\nSmith\n\n23\n\n3\n\nBob\n\nJohnson\n\n23",
-    "links": []
+    "description": "The UPDATE statement in SQL is used to modify existing records in a table. It allows you to change the values of one or more columns based on specified conditions. The basic syntax includes specifying the table name, the columns to be updated with their new values, and optionally, a WHERE clause to filter which rows should be affected. UPDATE can be used in conjunction with subqueries, joins, and CTEs (Common Table Expressions) for more complex data modifications. It's important to use UPDATE carefully, especially with the WHERE clause, to avoid unintended changes to data. In transactional databases, UPDATE operations can be rolled back if they're part of a transaction that hasn't been committed.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL UPDATE Statement",
+        "url": "https://www.w3schools.com/sql/sql_update.asp",
+        "type": "article"
+      },
+      {
+        "title": "Efficient column updates in SQL",
+        "url": "https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column",
+        "type": "article"
+      }
+    ]
   },
   "zWnvuHJLHr03PWkrW1wZZ": {
     "title": "DELETE",
@@ -314,8 +449,19 @@
   },
   "w4T3jFb0ilf1KNw-AvRXG": {
     "title": "SUM",
-    "description": "The `SUM()` function in SQL is used to calculate the sum of a column. This function allows you to add up a column of numbers in an SQL table.\n\nThe syntax for SUM is as follows:\n\n    SELECT SUM(column_name) FROM table_name;\n    \n\nWhere `column_name` is the name of the column you want to calculate the sum of, and `table_name` is the name of the table where the column is.\n\nFor example, consider the following `ORDER` table:\n\n    |   OrderID  | Company | Quantity |\n    |------------|---------|----------|\n    |     1      |     A   |    30    |\n    |     2      |     B   |    15    |\n    |     3      |     A   |    20    |\n    \n\nIf you want to find the total quantity, you can use `SUM()`:\n\n    SELECT SUM(Quantity) AS TotalQuantity FROM Order;\n    \n\nOutput will be:\n\n    | TotalQuantity |\n    |---------------|\n    |       65      |\n    \n\n**Note:** The `SUM()` function skips NULL values.\n\nOne of the common use cases of `SUM()` function is in conjunction with `GROUP BY` to get the sum for each group of rows.\n\nExample:\n\n    SELECT Company, SUM(Quantity) AS TotalQuantity \n    FROM Order \n    GROUP BY Company;\n    \n\nThis will give us the sum of `Quantity` for each `Company` in the `Order` table.\n\n    | Company | TotalQuantity |\n    |-----------|----------------|\n    |     A     |           50     |\n    |     B     |           15     |\n    \n\nNotably, in all databases, including MySQL, PostgreSQL, and SQLite, the `SUM()` function operates the same way.",
-    "links": []
+    "description": "SUM is an aggregate function in SQL used to calculate the total of a set of values. It's commonly used with numeric columns in combination with GROUP BY clauses to compute totals for different categories or groups within the data. SUM is essential for financial calculations, statistical analysis, and generating summary reports from database tables. It ignores NULL values and can be used in conjunction with other aggregate functions for complex data analysis.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL SUM Function",
+        "url": "https://www.w3schools.com/sql/sql_sum.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL SUM",
+        "url": "https://www.studysmarter.co.uk/explanations/computer-science/databases/sql-sum/",
+        "type": "article"
+      }
+    ]
   },
   "9aHYrOQDkA84tlxcVK5aD": {
     "title": "COUNT",
@@ -324,6 +470,11 @@
       {
         "title": "COUNT",
         "url": "https://www.w3schools.com/sql/sql_count.asp",
+        "type": "article"
+      },
+      {
+        "title": "COUNT SQL Function",
+        "url": "https://www.datacamp.com/tutorial/count-sql-function",
         "type": "article"
       }
     ]
@@ -352,28 +503,43 @@
         "title": "SQL MAX & MIN",
         "url": "https://www.programiz.com/sql/min-and-max",
         "type": "article"
+      },
+      {
+        "title": "COUNT, SUM, AVG, MIN, MAX (SQL) - Aggregating Data",
+        "url": "https://www.youtube.com/watch?v=muwEdPsx534",
+        "type": "video"
       }
     ]
   },
   "YqDJq3fPxUZlwsdq0kJg7": {
     "title": "MAX",
-    "description": "`MAX` is an aggregate function in SQL that returns the highest value in a set of values. It can be used with numeric, date, or string data types, selecting the maximum value from a specified column. `MAX` is often used in combination with `GROUP` BY to find the highest value within each group. This function is useful for various data analysis tasks, such as finding the highest salary, the most recent date, or the alphabetically last name in a dataset.\n\nLearn more from the following resources:",
+    "description": "`MAX` is an aggregate function in SQL that returns the highest value in a set of values. It can be used with numeric, date, or string data types, selecting the maximum value from a specified column. `MAX` is often used in combination with `GROUP BY` to find the highest value within each group. This function is useful for various data analysis tasks, such as finding the highest salary, the most recent date, or the alphabetically last name in a dataset.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "MAX",
         "url": "https://www.techonthenet.com/sql/max.php",
         "type": "article"
+      },
+      {
+        "title": "Basic Aggregate Functions",
+        "url": "https://www.youtube.com/watch?v=jcoJuc5e3RE",
+        "type": "video"
       }
     ]
   },
   "Zw8IHfCCMSxmVjx5Ho5ff": {
     "title": "GROUP BY",
-    "description": "GROUP BY is an SQL clause used in SELECT statements to arrange identical data into groups. It's typically used with aggregate functions (like COUNT, SUM, AVG) to perform calculations on each group of rows. GROUP BY collects data across multiple records and groups the results by one or more columns, allowing for analysis of data at a higher level of granularity. This clause is fundamental for generating summary reports, performing data analysis, and creating meaningful aggregations of data in relational databases.\n\nLearn more from the following resources:",
+    "description": "`GROUP BY` is an SQL clause used in `SELECT` statements to arrange identical data into groups. It's typically used with aggregate functions (like `COUNT`, `SUM`, `AVG`) to perform calculations on each group of rows. `GROUP BY` collects data across multiple records and groups the results by one or more columns, allowing for analysis of data at a higher level of granularity. This clause is fundamental for generating summary reports, performing data analysis, and creating meaningful aggregations of data in relational databases.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "SQL GROUP BY",
         "url": "https://www.programiz.com/sql/group-by",
         "type": "article"
+      },
+      {
+        "title": "Advanced Aggregate Functions in SQL",
+        "url": "https://www.youtube.com/watch?v=nNrgRVIzeHg",
+        "type": "video"
       }
     ]
   },
@@ -385,6 +551,11 @@
         "title": "SQL HAVING Clause",
         "url": "https://www.programiz.com/sql/having",
         "type": "article"
+      },
+      {
+        "title": "HAVING Clause",
+        "url": "https://www.youtube.com/watch?v=tYBOMw7Ob8E",
+        "type": "video"
       }
     ]
   },
@@ -396,13 +567,29 @@
         "title": "Data Constraints",
         "url": "https://www.w3schools.com/sql/sql_constraints.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL Contraints",
+        "url": "https://www.programiz.com/sql/constraints",
+        "type": "article"
       }
     ]
   },
   "Jlwmyq6CUQeDAlL4dazOP": {
     "title": "Primary Key",
-    "description": "A primary key is a special relational database table field (or combination of fields) designated to uniquely identify all table records.\n\nA primary key's main features are:\n\n*   It must contain a unique value for each row of data.\n*   It cannot contain null values.\n\nUsage of Primary Key\n--------------------\n\nYou define a primary key for a table using the `PRIMARY KEY` constraint. A table can have only one primary key. You can define a primary key in SQL when you create or modify a table.\n\nCreate Table With Primary Key\n-----------------------------\n\nIn SQL, you can create a table with a primary key by using `CREATE TABLE` syntax.\n\n    CREATE TABLE Employees (\n        ID INT PRIMARY KEY,\n        NAME TEXT,\n        AGE INT,\n        ADDRESS CHAR(50)\n    );\n    \n\nIn this example, `ID` is the primary key which must consist of unique values and can't be null.\n\nModify Table to Add Primary Key\n-------------------------------\n\nIf you want to add a primary key to an existing table, you can use `ALTER TABLE` syntax.\n\n    ALTER TABLE Employees\n    ADD PRIMARY KEY (ID);\n    \n\nThis will add a primary key to `ID` column in the `Employees` table.\n\nComposite Primary Key\n---------------------\n\nWe can also use multiple columns to define a primary key. Such key is known as composite key.\n\n    CREATE TABLE Customers (\n        CustomerID INT,\n        StoreID INT,\n        CONSTRAINT pk_CustomerID_StoreID PRIMARY KEY (CustomerID,StoreID)\n    );\n    \n\nIn this case, each combination of `CustomerID` and `StoreID` must be unique across the whole table.",
-    "links": []
+    "description": "A primary key in SQL is a unique identifier for each record in a database table. It ensures that each row in the table is uniquely identifiable, meaning no two rows can have the same primary key value. A primary key is composed of one or more columns, and it must contain unique values without any `NULL` entries. The primary key enforces entity integrity by preventing duplicate records and ensuring that each record can be precisely located and referenced, often through foreign key relationships in other tables. Using a primary key is fundamental for establishing relationships between tables and maintaining the integrity of the data model.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL PRIMARY KEY Constraint",
+        "url": "https://www.w3schools.com/sql/sql_primarykey.ASP",
+        "type": "article"
+      },
+      {
+        "title": "SQL Primary Key",
+        "url": "https://www.tutorialspoint.com/sql/sql-primary-key.htm",
+        "type": "article"
+      }
+    ]
   },
   "DHz6sRLYhFeCbAcNJS8hm": {
     "title": "Foreign Key",
@@ -412,13 +599,24 @@
         "title": "What is a foreign key?",
         "url": "https://www.cockroachlabs.com/blog/what-is-a-foreign-key/",
         "type": "article"
+      },
+      {
+        "title": "Foreign Keys are easy (kind of)",
+        "url": "https://www.youtube.com/watch?v=rFssfx37UJw",
+        "type": "video"
       }
     ]
   },
   "5yGo8i7eplxtXOD_qfzOs": {
     "title": "Unique",
-    "description": "The `UNIQUE` constraint ensures that all values in a column are different; that is, each value in the column should occur only once.\n\nBoth the `UNIQUE` and `PRIMARY KEY` constraints provide a guarantee for uniqueness for a column or set of columns. However, a primary key cannot contain `NULL` since it uniquely identifies each row, and each table can have only one primary key. On the other hand, a `UNIQUE` constraint allows for one `NULL` value, and a table can have multiple `UNIQUE` constraints.\n\nSyntax\n------\n\n    CREATE TABLE table_name (\n        column1 data_type UNIQUE,\n        column2 data_type,\n        column3 data_type,\n       ....\n    );\n    \n\nHere, `UNIQUE` is the constraint's name, whereas `column1` and `data_type` refer to the column and data type for which we're setting the constraint, respectively.\n\nExample\n-------\n\nSuppose, for instance, we are creating a table named \"Employees\". We want the \"Email\" column to contain only unique values to avoid any duplication in email addresses.\n\nHere's how we can impose a `UNIQUE` constraint on the \"Email\" column:\n\n    CREATE TABLE Employees (\n        ID int NOT NULL,\n        Name varchar (255) NOT NULL,\n        Email varchar (255) UNIQUE\n    );\n    \n\nIn this SQL command, we are telling the SQL server that the \"Email\" column cannot have the same value in two or more rows.\n\nAdding a Unique Constraint to an Existing Table\n-----------------------------------------------\n\nTo add a `UNIQUE` constraint to an existing table, you would use the `ALTER TABLE` command. Here is the syntax:\n\n    ALTER TABLE table_name\n    ADD UNIQUE (column1, column2, ...);\n    \n\nHere, `table_name` is the name of the table on which we're defining the constraint, and `column1`, `column2`, etc., are the names of the columns included in the constraint.\n\nDropping a Unique Constraint\n----------------------------\n\nThe `ALTER TABLE` command is also used to drop a `UNIQUE` constraint. The syntax to drop a `UNIQUE` constraint is:\n\n    ALTER TABLE table_name\n    DROP CONSTRAINT constraint_name;\n    \n\nHere, `constraint_name` is the name of the `UNIQUE` constraint that you want to drop.",
-    "links": []
+    "description": "`UNIQUE` is a constraint in SQL used to ensure that all values in a column or a set of columns are distinct. When applied to a column or a combination of columns, it prevents duplicate values from being inserted into the table. This constraint is crucial for maintaining data integrity, especially for fields like email addresses, usernames, or product codes where uniqueness is required. `UNIQUE` constraints can be applied during table creation or added later, and they automatically create an index on the specified column(s) for improved query performance. Unlike `PRIMARY KEY` constraints, `UNIQUE` columns can contain `NULL` values (unless explicitly disallowed), and a table can have multiple `UNIQUE` constraints.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL UNIQUE Constraint",
+        "url": "https://www.w3schools.com/sql/sql_unique.asp",
+        "type": "article"
+      }
+    ]
   },
   "M4M_-vjM9GNy0NmXZneDA": {
     "title": "NOT NULL",
@@ -428,6 +626,11 @@
         "title": "SQL IS NULL and IS NOT NULL",
         "url": "https://www.programiz.com/sql/is-null-not-null",
         "type": "article"
+      },
+      {
+        "title": "NOT NULL Constraint",
+        "url": "https://www.youtube.com/watch?v=unzHhq82mKU",
+        "type": "video"
       }
     ]
   },
@@ -438,6 +641,11 @@
       {
         "title": "CHECK - PostgreSQL",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-check/",
+        "type": "article"
+      },
+      {
+        "title": "SQL CHECK Constraint",
+        "url": "https://www.w3schools.com/sql/sql_check.asp",
         "type": "article"
       }
     ]
@@ -450,6 +658,11 @@
         "title": "7 SQL JOIN Examples With Detailed Explanations",
         "url": "https://learnsql.com/blog/sql-join-examples-with-explanations/",
         "type": "article"
+      },
+      {
+        "title": "Joins are easy",
+        "url": "https://www.youtube.com/watch?v=G3lJAxg1cy8",
+        "type": "video"
       }
     ]
   },
@@ -477,13 +690,29 @@
         "title": "SQL LEFT JOIN",
         "url": "https://www.w3schools.com/sql/sql_join_left.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL LEFT JOIN - SQL Tutorial",
+        "url": "https://www.youtube.com/watch?v=giKwmtsz1U8",
+        "type": "video"
       }
     ]
   },
   "shpgZkh1CLqUwjOaRtAFy": {
     "title": "RIGHT JOIN",
-    "description": "The `RIGHT JOIN` keyword returns all records from the right table (table2), and the matched records from the left table (table1). If there is no match, the result is `NULL` on the left side.\n\nSyntax\n------\n\nBelow is the common syntax used for writing a `RIGHT JOIN`:\n\n    SELECT column_name(s)\n    FROM table1\n    RIGHT JOIN table2\n    ON table1.column_name = table2.column_name;\n    \n\nExample\n-------\n\nConsider two tables:\n\n**Table \"Orders\":**\n\nOrderID\n\nCustomerID\n\nOrderDate\n\n1\n\n3\n\n2017/11/11\n\n2\n\n1\n\n2017/10/23\n\n3\n\n2\n\n2017/9/15\n\n4\n\n4\n\n2017/9/03\n\n**Table \"Customers\":**\n\nCustomerID\n\nCustomerName\n\nContactName\n\nCountry\n\n1\n\nAlfreds Futterkiste\n\nMaria Anders\n\nGermany\n\n2\n\nAna Trujillo Emparedados y helados\n\nAna Trujillo\n\nMexico\n\n3\n\nAntonio Moreno Taquería\n\nAntonio Moreno\n\nMexico\n\n5\n\nBerglunds snabbköp\n\nChristina Berglund\n\nSweden\n\nNow, we want to select all customers and any matching records in orders table. If there is no match, the result is null in order table:\n\n    SELECT \n      Customers.CustomerName, \n      Orders.OrderID\n    FROM \n      Orders\n    RIGHT JOIN \n      Customers \n    ON \n      Orders.CustomerID = Customers.CustomerID;\n    \n\n**Result:**\n\nCustomerName\n\nOrderID\n\nAlfreds Futterkiste\n\n2\n\nAna Trujillo Emparedados y helados\n\n3\n\nAntonio Moreno Taquería\n\n1\n\nBerglunds snabbköp\n\nNULL\n\nAround the Horn\n\nNULL\n\nBottom-Dollar Markets\n\nNULL\n\nAs you can see, the `RIGHT JOIN` keyword returned all the records from the Customers table and all matched records from the Orders table. For those customers who have no orders (like \"Berglunds snabbköp\"), the result is `NULL`.",
-    "links": []
+    "description": "A `RIGHT JOIN` in SQL is a type of outer join that returns all rows from the right (second) table and the matching rows from the left (first) table. If there's no match in the left table, `NULL` values are returned for the left table's columns. This join type is less commonly used than LEFT JOIN but is particularly useful when you want to ensure all records from the second table are included in the result set, regardless of whether they have corresponding matches in the first table. `RIGHT JOIN` is often used to identify missing relationships or to include all possible values from a lookup table.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL RIGHT JOIN",
+        "url": "https://www.w3schools.com/sql/sql_join_right.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL RIGHT JOIN With Examples",
+        "url": "https://www.programiz.com/sql/right-join",
+        "type": "article"
+      }
+    ]
   },
   "aS5zCyJRA779yHF0G2pje": {
     "title": "FULL OUTER JOIN",
@@ -493,13 +722,29 @@
         "title": "FULL OUTER JOIN",
         "url": "https://www.w3schools.com/sql/sql_join_full.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL FULL OUTER JOIN",
+        "url": "https://www.youtube.com/watch?v=XpBkXo3DCEg",
+        "type": "video"
       }
     ]
   },
   "6qG0AVYd6Y1B8LOSDoMX9": {
     "title": "Self Join",
-    "description": "A `SELF JOIN` is a standard SQL operation where a table is joined to itself. This might sound counter-intuitive, but it's actually quite useful in scenarios where comparison operations need to be made within a table. Essentially, it is used to combine rows with other rows in the same table when there's a match based on the condition provided.\n\nIt's important to note that, since it's a join operation on the same table, alias(es) for table(s) must be used to avoid confusion during the join operation.\n\nSyntax of a Self Join\n---------------------\n\nHere is the basic syntax for a `SELF JOIN` statement:\n\n    SELECT a.column_name, b.column_name\n    FROM table_name AS a, table_name AS b\n    WHERE a.common_field = b.common_field;\n    \n\nIn this query:\n\n*   `table_name`: is the name of the table to join to itself.\n*   `a` and `b`: are different aliases for the same table.\n*   `column_name`: specify the columns that should be returned as a result of the SQL `SELF JOIN` statement.\n*   `WHERE a.common_field = b.common_field`: is the condition for the join.\n\nExample of a Self Join\n----------------------\n\nLet us consider a `EMPLOYEES` table with the following structure:\n\nEmployeeID\n\nName\n\nManagerID\n\n1\n\nSam\n\nNULL\n\n2\n\nAlex\n\n1\n\n3\n\nJohn\n\n1\n\n4\n\nSophia\n\n2\n\n5\n\nEmma\n\n2\n\nIf you want to find out all the employees and who their manager is, you can do so using a `SELF JOIN`:\n\n    SELECT a.Name AS Employee, b.Name AS Manager\n    FROM EMPLOYEES a, EMPLOYEES b\n    WHERE a.ManagerID = b.EmployeeID;\n    \n\nThis query will return the name of each employee along with the name of their respective manager.",
-    "links": []
+    "description": "A `SELF JOIN` is a standard SQL operation where a table is joined to itself. This might sound counter-intuitive, but it's actually quite useful in scenarios where comparison operations need to be made within a table. Essentially, it is used to combine rows with other rows in the same table when there's a match based on the condition provided.\n\nIt's important to note that, since it's a join operation on the same table, alias(es) for table(s) must be used to avoid confusion during the join operation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Understanding the Self Joins in SQL",
+        "url": "https://www.dbvis.com/thetable/understanding-self-joins-in-sql/",
+        "type": "article"
+      },
+      {
+        "title": "SQL self joins",
+        "url": "https://www.w3schools.com/sql/sql_join_self.asp",
+        "type": "article"
+      }
+    ]
   },
   "7ow6tiSSCnTpv_GYQU017": {
     "title": "Cross Join",
@@ -509,18 +754,45 @@
         "title": "CROSS JOIN",
         "url": "https://www.w3schools.com/mysql/mysql_join_cross.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL CROSS JOIN With Examples",
+        "url": "https://www.sqlshack.com/sql-cross-join-with-examples/",
+        "type": "article"
       }
     ]
   },
   "86iZ8s8EdhSuYwgwAM_EO": {
     "title": "Subqueries",
-    "description": "In SQL, a subquery is a query embedded within another SQL query. You can alternately call it a nested or an inner query. The containing query is often referred to as the outer query. Subqueries are utilized to retrieve data that will be used in the main query as a condition to further restrict the data to be retrieved.\n\nSubqueries can be used in various parts of a query, including:\n\n*   **SELECT** statement\n*   **FROM** clause\n*   **WHERE** clause\n*   **GROUP BY** clause\n*   **HAVING** clause\n\nSyntax\n------\n\nIn general, the syntax can be written as:\n\n    SELECT column_name [, column_name]\n    FROM   table1 [, table2 ]\n    WHERE  column_name OPERATOR\n       (SELECT column_name [, column_name]\n       FROM table1 [, table2 ]\n       [WHERE])\n    \n\nTypes of Subqueries\n-------------------\n\n1.  **Scalar Subquery**: It returns single value.\n    \n        SELECT name \n        FROM student \n        WHERE roll_id = (SELECT roll_id FROM student WHERE name='John');\n        \n    \n2.  **Row subquery**: It returns a single row or multiple rows of two or more values.\n    \n        SELECT * FROM student \n        WHERE (roll_id, age)=(SELECT MIN(roll_id),MIN(age) FROM student);\n        \n    \n3.  **Column subquery**: It returns single column value with multiple rows and one column.\n    \n        SELECT name, age FROM student \n        WHERE name in (SELECT name FROM student);\n        \n    \n4.  **Table subquery**: It returns more than one row and more than one column.\n    \n        SELECT name, age \n        FROM student \n        WHERE (name, age) IN (SELECT name, age FROM student);\n        \n    \n\nGeneral Note\n------------\n\nSubqueries can be either correlated or uncorrelated. A correlated subquery is a subquery that uses values from the outer query. Conversely, an uncorrelated subquery is a subquery that can be run independently of the outer query.",
-    "links": []
+    "description": "Subqueries, also known as nested queries or inner queries, are SQL queries embedded within another query. They can be used in various parts of SQL statements, such as SELECT, FROM, WHERE, and HAVING clauses. Subqueries allow for complex data retrieval and manipulation by breaking down complex queries into more manageable parts. They're particularly useful for creating dynamic criteria, performing calculations, or comparing sets of results.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL Sub Queries",
+        "url": "https://www.tutorialspoint.com/sql/sql-sub-queries.htm",
+        "type": "article"
+      },
+      {
+        "title": "Advanced SQL Tutorial | Subqueries",
+        "url": "https://www.youtube.com/watch?v=m1KcNV-Zhmc",
+        "type": "video"
+      }
+    ]
   },
   "eXQ-TrTlqL5p2AdGnozkL": {
     "title": "Scalar",
-    "description": "In SQL, a scalar type is a type that holds a single value as opposed to composite types that hold multiple values. In simpler terms, scalar types represent a single unit of data.\n\nSome common examples of scalar types in SQL include:\n\n*   Integers (`INT`)\n*   Floating-point numbers (`FLOAT`)\n*   Strings (`VARCHAR`, `CHAR`)\n*   Date and Time (`DATE`, `TIME`)\n*   Boolean (`BOOL`)\n\nExamples\n--------\n\nHere is how you can define different scalar types in SQL:\n\nIntegers\n--------\n\nAn integer can be defined using the INT type. Here is an example of how to declare an integer:\n\n    CREATE TABLE Employees (\n        EmployeeID INT,\n        FirstName VARCHAR(50),\n        LastName VARCHAR(50)\n    );\n    \n\nFloating-Point Numbers\n----------------------\n\nFloating-point numbers can be defined using the FLOAT or REAL type. Here is an example of how to declare a floating-point number:\n\n    CREATE TABLE Products (\n        ProductID INT,\n        Price FLOAT\n    );\n    \n\nStrings\n-------\n\nStrings can be defined using the CHAR, VARCHAR, or TEXT type. Here is an example of how to declare a string:\n\n    CREATE TABLE Employees (\n        EmployeeID INT,\n        FirstName VARCHAR(50), \n        LastName VARCHAR(50) \n    );\n    \n\nDate and Time\n-------------\n\nThe DATE, TIME or DATETIME type can be used to define dates and times:\n\n    CREATE TABLE Orders (\n        OrderID INT,\n        OrderDate DATE\n    );\n    \n\nBoolean\n-------\n\nBooleans can be declared using the BOOL or BOOLEAN type. They hold either `TRUE` or `FALSE`.\n\n    CREATE TABLE Employees (\n        EmployeeID INT,\n        IsActive BOOL\n    );\n    \n\nRemember, the way these types are declared might slightly differ based on the SQL dialect you are using. It's crucial to refer to the specific documentation of the SQL flavor you're working with for the precise syntax and behavior.",
-    "links": []
+    "description": "A scalar value is a single data item, as opposed to a set or array of values. Scalar subqueries are queries that return exactly one column and one row, often used in `SELECT` statements, `WHERE` clauses, or as part of expressions. Scalar functions in SQL return a single value based on input parameters. Understanding scalar concepts is crucial for writing efficient and precise SQL queries.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Creating SQL Scalar Functions",
+        "url": "https://www.ibm.com/docs/en/db2/11.5?topic=functions-creating-sql-scalar",
+        "type": "article"
+      },
+      {
+        "title": "Using Scalar SQL to boost performance",
+        "url": "https://www.youtube.com/watch?v=v8X5FGzzc9A",
+        "type": "video"
+      }
+    ]
   },
   "wmtt-3auWLdQWuVdwZLPd": {
     "title": "Column",
@@ -540,13 +812,35 @@
   },
   "aLDl75i8gtLRA2Ud-fMmQ": {
     "title": "Row",
-    "description": "In SQL, a \"row\" refers to a record in a table. Each row in a table represents a set of related data, and every row in the table has the same structure.\n\nFor instance, in a table named \"customers\", a row may represent one customer, with columns containing information like ID, name, address, email, etc.\n\nHere is a conceptual SQL table:\n\nID\n\nNAME\n\nADDRESS\n\nEMAIL\n\n1\n\nJohn\n\nNY\n\n[john@example.com](mailto:john@example.com)\n\n2\n\nJane\n\nLA\n\n[jane@example.com](mailto:jane@example.com)\n\n3\n\nJim\n\nChicago\n\n[jim@example.com](mailto:jim@example.com)\n\nEach of these line of data is referred to as a 'row' in the SQL table.\n\nTo select a row, you would use a `SELECT` statement. Here's an example of how you might select a row:\n\n    SELECT * \n    FROM customers \n    WHERE ID = 1;\n    \n\nThis would output:\n\nID\n\nName\n\nADDRESS\n\nEmail\n\n1\n\nJohn\n\nNY\n\n[john@example.com](mailto:john@example.com)\n\nThe `*` in the statement refers to all columns. If you want to only select specific columns, you can replace `*` with the column name(s):\n\n    SELECT NAME, EMAIL\n    FROM customers \n    WHERE ID = 1;\n    \n\nIn this case, the output would be:\n\nName\n\nEmail\n\nJohn\n\n[john@example.com](mailto:john@example.com)",
-    "links": []
+    "description": "In SQL, a row (also called a record or tuple) represents a single, implicitly structured data item in a table. Each row contains a set of related data elements corresponding to the table's columns. Rows are fundamental to the relational database model, allowing for the organized storage and retrieval of information. Operations like INSERT, UPDATE, and DELETE typically work at the row level.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Row - Database",
+        "url": "https://en.wikipedia.org/wiki/Row_(database)",
+        "type": "article"
+      },
+      {
+        "title": "Database Row: Definition, Examples",
+        "url": "https://www.devx.com/terms/database-row/",
+        "type": "article"
+      }
+    ]
   },
   "R9WDMRd-3wxsKH97-sT3n": {
     "title": "Table",
-    "description": "In SQL, a table is a collection of related data held in a structured format within a database. It consists of rows (records) and columns (fields).\n\nA table is defined by its name and the nature of data it will hold, i.e., each field has a name and a specific data type.\n\nTable Creation\n--------------\n\nYou can create a table using the `CREATE TABLE` SQL statement. The syntax is as follows:\n\n    CREATE TABLE table_name (\n        column1 datatype,\n        column2 datatype,\n        column3 datatype,\n       ....\n    );  \n    \n\nHere, `table_name` is the name of the table, `column1`, `column2`... are the names of the columns, and `datatype` specifies the type of data the column can hold (e.g., varchar, integer, date, etc.).\n\nTable Manipulation\n------------------\n\nOnce a table has been created, the `INSERT INTO` statement is used to insert new rows of data into the table.\n\n    INSERT INTO table_name (column1, column2, column3,...)\n    VALUES (value1, value2, value3,...); \n    \n\nThe `SELECT` statement is used to select data from the table.\n\n    SELECT column1, column2,...\n    FROM table_name;\n    \n\nThe `UPDATE` statement is used to modify existing records.\n\n    UPDATE table_name\n    SET column1 = value1, column2 = value2,...\n    WHERE condition;\n    \n\nAnd, finally, the `DELETE` statement is used to delete existing records.\n\n    DELETE FROM table_name WHERE condition;\n    \n\nThese basic operations allow for full manipulation of tables in SQL, letting users to manage their data effectively.",
-    "links": []
+    "description": "A table is a fundamental structure for organizing data in a relational database. It consists of rows (records) and columns (fields), representing a collection of related data entries. Tables define the schema of the data, including data types and constraints. They are the primary objects for storing and retrieving data in SQL databases, and understanding table structure is crucial for effective database design and querying.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Table (Database)",
+        "url": "https://en.wikipedia.org/wiki/Table_(database)",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Tables",
+        "url": "https://support.microsoft.com/en-gb/office/introduction-to-tables-78ff21ea-2f76-4fb0-8af6-c318d1ee0ea7",
+        "type": "article"
+      }
+    ]
   },
   "xkPJ2MYiXmzC4yqQWyB_7": {
     "title": "Nested Subqueries",
@@ -556,6 +850,11 @@
         "title": "Nested Subqueries",
         "url": "https://www.studysmarter.co.uk/explanations/computer-science/databases/nested-subqueries-in-sql/",
         "type": "article"
+      },
+      {
+        "title": "MySQL Subqueries",
+        "url": "https://www.youtube.com/watch?v=i5acg3Hvu6g",
+        "type": "video"
       }
     ]
   },
@@ -567,6 +866,11 @@
         "title": "Correlated Subqueries",
         "url": "https://dev.mysql.com/doc/refman/8.4/en/correlated-subqueries.html",
         "type": "article"
+      },
+      {
+        "title": "Intro To Subqueries",
+        "url": "https://www.youtube.com/watch?v=TUxadt94L0M",
+        "type": "video"
       }
     ]
   },
@@ -583,6 +887,11 @@
         "title": "FLOOR",
         "url": "https://www.w3schools.com/sql/func_sqlserver_floor.asp",
         "type": "article"
+      },
+      {
+        "title": "How to Round in SQL",
+        "url": "https://www.youtube.com/watch?v=AUXw2JRwCFY",
+        "type": "video"
       }
     ]
   },
@@ -610,13 +919,29 @@
         "title": "MOD",
         "url": "https://www.w3schools.com/sql/func_mysql_mod.asp",
         "type": "article"
+      },
+      {
+        "title": "MOD Function in SQL",
+        "url": "https://www.youtube.com/watch?v=f1Rqf7CwjE0",
+        "type": "video"
       }
     ]
   },
   "9DntFiZV1AyaRPhYP5q6u": {
     "title": "ROUND",
-    "description": "The `ROUND` function in SQL is used to round a numeric field to the nearest specified decimal or integer.\n\nMost usually, `ROUND` accepts two arguments. The first one is the value that needs to be rounded, and the second is the number of decimal places to which the first argument will be rounded off. When dealing with decimals, SQL will round up when the number after the decimal point is 5 or higher, whereas it will round down if it's less than 5.\n\nSyntax\n------\n\nThe basic syntax for `ROUND` can be described as follows:\n\n    ROUND ( numeric_expression, length [ , function ] )\n    \n\n*   `numeric_expression`: A floating point number to round.\n*   `length`: The precision to which `numeric_expression` is to be rounded. When `length` is a positive number, rounding affects the right side of the decimal point. If `length` is negative, rounding affects the left side of the decimal point.\n*   `function`: Optional parameter to determine the operation to perform. If this is omitted or 0, the `numeric_expression` is rounded. If this is 1, the `numeric_expression` is truncated.\n\nExample 1:\n----------\n\nRound off a decimal to the nearest whole number.\n\n    SELECT ROUND(125.215);\n    \n\nThis will result in `125`.\n\nExample 2:\n----------\n\nRound off a number to a specified decimal place.\n\n    SELECT ROUND(125.215, 1);\n    \n\nThis will result in `125.2` as the second decimal place (5) is less than 5.\n\nExample 3:\n----------\n\nRound off the left side of the decimal.\n\n    SELECT ROUND(125.215, -2);\n    \n\nThis will result in `100` as rounding now affects digits before the decimal point.\n\nWhenever you need to round off numeric data in SQL, the `ROUND` function is a valuable tool to have in your kit. It proficiently handles both positive and negative rounding, and its simple syntax makes it extremely user-friendly.",
-    "links": []
+    "description": "The `ROUND` function in SQL is used to round a numeric value to a specified number of decimal places. It takes two arguments: the number to be rounded and the number of decimal places to round to. If the second argument is omitted, the function rounds the number to the nearest whole number. For positive values of the second argument, the number is rounded to the specified decimal places; for negative values, it rounds to the nearest ten, hundred, thousand, etc. The `ROUND` function is useful for formatting numerical data for reporting or ensuring consistent precision in calculations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL ROUND",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_round.asp",
+        "type": "article"
+      },
+      {
+        "title": "What is the SQL ROUND Function and how does it work?",
+        "url": "https://www.datacamp.com/tutorial/mastering-sql-round",
+        "type": "article"
+      }
+    ]
   },
   "BAqJQvcguhIhzyII5LRH6": {
     "title": "CEILING",
@@ -625,6 +950,11 @@
       {
         "title": "CEILING Function in SQL",
         "url": "https://www.javatpoint.com/ceiling-function-in-sql",
+        "type": "article"
+      },
+      {
+        "title": "SQL CEILING",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_ceiling.asp",
         "type": "article"
       }
     ]
@@ -637,6 +967,11 @@
         "title": "An overview of the CONCAT function in SQL",
         "url": "https://www.sqlshack.com/an-overview-of-the-concat-function-in-sql-with-examples/",
         "type": "article"
+      },
+      {
+        "title": "SQL Server CONCAT",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_concat.asp",
+        "type": "article"
       }
     ]
   },
@@ -648,23 +983,61 @@
         "title": "How to Check the Length of a String in SQL",
         "url": "https://learnsql.com/cookbook/how-to-check-the-length-of-a-string-in-sql/",
         "type": "article"
+      },
+      {
+        "title": "MySQL Length Function",
+        "url": "https://www.w3schools.com/sql/func_mysql_length.asp",
+        "type": "article"
       }
     ]
   },
   "PnG_5D6q66NAKxXVOwA6N": {
     "title": "SUBSTRING",
-    "description": "The SQL `SUBSTRING` function is used to extract a part of a string, where you can specify the start position and the length of the text. This function can be very beneficial when you only need a specific part of a string.\n\nSyntax\n------\n\nThe standardized SQL syntax for `SUBSTRING` is as follows:\n\n    SUBSTRING(string, start, length)\n    \n\nWhere:\n\n*   `string` is the source string from which you want to extract.\n*   `start` is the position to start extraction from. The first position in the string is always 1.\n*   `length` is the number of characters to extract.\n\nUsage\n-----\n\nFor instance, if you want to extract the first 5 characters from the string 'Hello World':\n\n    SELECT SUBSTRING('Hello World', 1, 5) as ExtractedString;\n    \n\nResult:\n\n    | ExtractedString |\n    | --------------- |\n    | Hello           |\n    \n\nYou can also use `SUBSTRING` on table columns, like so:\n\n    SELECT SUBSTRING(column_name, start, length) FROM table_name;\n    \n\nSUBSTRING with FROM and FOR\n---------------------------\n\nIn some database systems (like PostgreSQL and SQL Server), the `SUBSTRING` function uses a different syntax:\n\n    SUBSTRING(string FROM start FOR length)\n    \n\nThis format functions the same way as the previously mentioned syntax.\n\nFor example:\n\n    SELECT SUBSTRING('Hello World' FROM 1 FOR 5) as ExtractedString;\n    \n\nThis would yield the same result as the previous example - 'Hello'.\n\nNote\n----\n\nSQL is case-insensitive, meaning `SUBSTRING`, `substring`, and `Substring` will all function the same way.",
-    "links": []
+    "description": "SUBSTRING is a SQL function used to extract a portion of a string. It allows you to specify the starting position and length of the substring you want to extract. This function is valuable for data manipulation, parsing, and formatting tasks. The exact syntax may vary slightly between database systems, but the core functionality remains consistent, making it a versatile tool for working with string data in databases.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL SUBSTRING",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_substring.asp",
+        "type": "article"
+      },
+      {
+        "title": "Advanced SQL Tutorial | String Functions + Use Cases",
+        "url": "https://www.youtube.com/watch?v=GQj6_6V_jVA",
+        "type": "video"
+      }
+    ]
   },
   "VNbb3YPc0FtrROylRns8h": {
     "title": "REPLACE",
-    "description": "You can use the `REPLACE()` function in SQL to substitute all occurrences of a specified string.\n\n**Synopsis**\n\n`REPLACE(input_string, string_to_replace, replacement_string)`\n\n**Parameters**\n\n*   `input_string`: This is the original string where you want to replace some characters.\n*   `string_to_replace`: This is the string that will be searched for in the original string.\n*   `replacement_string`: This is the string that will replace the `string_to_replace` in the original string.\n\nThe `REPLACE()` function is handy when it comes to manipulating and modifying data in various ways, particularly when used in combination with other SQL data-manipulation functions.\n\n**Examples**\n\nSuppose we have the following table, `Employees`:\n\nEmpId\n\nEmpName\n\n1\n\nJohn Doe\n\n2\n\nJane Doe\n\n3\n\nJim Smith Doe\n\n4\n\nJennifer Doe Smith\n\nHere's how you can use the `REPLACE()` function:\n\n    SELECT EmpId, EmpName,\n    REPLACE(EmpName, 'Doe', 'Roe') as ModifiedName\n    FROM Employees;\n    \n\nAfter the execution of the above SQL, we will receive:\n\nEmpId\n\nEmpName\n\nModifiedName\n\n1\n\nJohn Doe\n\nJohn Roe\n\n2\n\nJane Doe\n\nJane Roe\n\n3\n\nJim Smith Doe\n\nJim Smith Roe\n\n4\n\nJennifer Doe Smith\n\nJennifer Roe Smith\n\nYou can see that all occurrences of 'Doe' are replaced with 'Roe'.",
-    "links": []
+    "description": "The `REPLACE` function in SQL is used to substitute all occurrences of a specified substring within a string with a new substring. It takes three arguments: the original string, the substring to be replaced, and the substring to replace it with. If the specified substring is found in the original string, `REPLACE` returns the modified string with all instances of the old substring replaced by the new one. If the substring is not found, the original string is returned unchanged. This function is particularly useful for data cleaning tasks, such as correcting typos, standardizing formats, or replacing obsolete data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL REPLACE Function",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_replace.asp",
+        "type": "article"
+      },
+      {
+        "title": "How to use the SQL REPLACE Function",
+        "url": "https://www.datacamp.com/tutorial/sql-replace",
+        "type": "article"
+      }
+    ]
   },
   "Othfo7NvTVzfyL906PLM1": {
     "title": "UPPER",
-    "description": "`UPPER()` is a built-in string function in SQL. As the name suggests, it is used to convert all letters in a specified string to uppercase. If the string already consists of all uppercase characters, the function will return the original string.\n\nSyntax for this function is:\n\n    UPPER(string)\n    \n\nHere 'string' can be a string value or a column of a table of string(s) type.\n\nLet's assume a table 'students' with column 'name' as below:\n\nname\n\nJohn Doe\n\nJane Smith\n\nKelly Will\n\nIf we want all the names in uppercase, we'll use `UPPER()` function as:\n\n    SELECT UPPER(name) as 'Upper Case Name' FROM students;\n    \n\nAnd we will get:\n\nUpper Case Name\n\nJOHN DOE\n\nJANE SMITH\n\nKELLY WILL\n\nSo, `UPPER()` function helps us to bring an entire string to uppercase for easier comparison and sorting.",
-    "links": []
+    "description": "UPPER() is a string function in SQL used to convert all characters in a specified string to uppercase. This function is particularly useful for data normalization, case-insensitive comparisons, or formatting output. UPPER() typically works on alphabetic characters and leaves non-alphabetic characters unchanged. It's often used in SELECT statements to display data, in WHERE clauses for case-insensitive searches, or in data manipulation operations. Most SQL databases also provide a complementary LOWER() function for converting to lowercase. When working with international character sets, it's important to be aware of potential locale-specific behavior of UPPER().\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL Server UPPER Function",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_upper.asp",
+        "type": "article"
+      },
+      {
+        "title": "How to Convert a String to Uppercase in SQL",
+        "url": "https://learnsql.com/cookbook/how-to-convert-a-string-to-uppercase-in-sql/",
+        "type": "article"
+      }
+    ]
   },
   "knTG6pAq2mYP24WMa29xI": {
     "title": "LOWER",
@@ -673,6 +1046,11 @@
       {
         "title": "How to change text to lowercase in SQL",
         "url": "https://learnsql.com/cookbook/how-to-change-text-to-lowercase-in-sql/",
+        "type": "article"
+      },
+      {
+        "title": "LOWER Function",
+        "url": "https://www.w3schools.com/sql/func_sqlserver_lower.asp",
         "type": "article"
       }
     ]
@@ -701,6 +1079,11 @@
         "title": "NULLIF",
         "url": "https://www.w3schools.com/sql/func_sqlserver_nullif.asp",
         "type": "article"
+      },
+      {
+        "title": "What is NULLIF in SQL?",
+        "url": "https://www.youtube.com/watch?v=Jaw53T__RRY",
+        "type": "video"
       }
     ]
   },
@@ -728,18 +1111,34 @@
         "title": "SQL DATE",
         "url": "https://www.w3schools.com/sql/sql_dates.asp",
         "type": "article"
+      },
+      {
+        "title": "Working with Dates",
+        "url": "https://www.youtube.com/watch?v=XyZ9HwXoR7o",
+        "type": "video"
       }
     ]
   },
   "88KlrMqSza9_YaD7Dv61p": {
     "title": "TIME",
-    "description": "In SQL, TIME data type is used to store time values in the database. It allows you to store hours, minutes, and seconds. The format of a TIME is 'HH:MI:SS'.\n\nSyntax\n------\n\nHere is the basic syntax to create a field with TIME data type in SQL:\n\n    CREATE TABLE table_name (\n        column_name TIME\n    );\n    \n\nYou can store data using the following syntax:\n\n    INSERT INTO table_name (column_name) values ('17:34:20');\n    \n\nRange\n-----\n\nThe time range in SQL is '00:00:00' to '23:59:59'.\n\nFetching Data\n-------------\n\nTo fetch the data you can use the SELECT statement. For example:\n\n    SELECT column_name FROM table_name;\n    \n\nIt will return the time values from the table.\n\nFunctions\n---------\n\nSQL provides several functions to work with the TIME data type. Some of them include:\n\nCURTIME()\n---------\n\nReturn the current time.\n\n    SELECT CURTIME();\n    \n\nADDTIME()\n---------\n\nAdd time values.\n\n    SELECT ADDTIME('2007-12-31 23:59:59','1 1:1:1');\n    \n\nTIMEDIFF()\n----------\n\nSubtract time values.\n\n    SELECT TIMEDIFF('2000:01:01 00:00:00', '2000:01:01 00:01:01');\n    \n\nConversion\n----------\n\nConversion of TIME data type is also possible in SQL. It can be converted into other data types, like INT, and vice versa. Here is a conversion example of TIME to INT:\n\n    SELECT TIME_TO_SEC('22:23:00');\n    \n\nThis was a brief summary about \"TIME\" in SQL.",
+    "description": "The TIME data type in SQL is used to store time values, typically in the format of hours, minutes, and seconds. It's useful for recording specific times of day without date information. SQL provides various functions for manipulating and comparing TIME values, allowing for time-based calculations and queries. The exact range and precision of TIME can vary between different database management systems.\n\nLearn more from the following resources:",
     "links": []
   },
   "7hEqkoxkdAWmakGZsMJx-": {
     "title": "TIMESTAMP",
-    "description": "SQL `TIMESTAMP` is a data type that allows you to store both date and time. It is typically used to track updates and changes made to a record, providing a chronological time of happenings.\n\nDepending on the SQL platform, the format and storage size can slightly vary. For instance, MySQL uses the 'YYYY-MM-DD HH:MI:SS' format and in PostgreSQL, it's stored as a 'YYYY-MM-DD HH:MI:SS' format but it additionally can store microseconds.\n\nHere is how you can define a column with a `TIMESTAMP` type in an SQL table:\n\n    CREATE TABLE table_name (\n       column1 TIMESTAMP,\n       column2 VARCHAR(100),\n       ...\n    );\n    \n\nA common use-case of `TIMESTAMP` is to have an automatically updated timestamp each time the row is updated. This can be achieved by setting the `DEFAULT` constraint to `CURRENT_TIMESTAMP`:\n\n    CREATE TABLE table_name (\n       column1 TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n       column2 VARCHAR(100),\n       ...\n    );\n    \n\nIn MySQL, `ON UPDATE CURRENT_TIMESTAMP` can be used to automatically update the `TIMESTAMP` field to the current date and time whenever there is any change in other fields of the row.\n\n    CREATE TABLE table_name (\n       column1 TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n       column2 VARCHAR(100),\n       ...\n    );\n    \n\nYou can also insert or update records with a specific timestamp:\n\n    INSERT INTO table_name (column1, column2) VALUES ('2019-06-10 10:20:30', 'example data');\n    \n    UPDATE table_name SET column1 = '2020-07-20 15:30:45' WHERE column2 = 'example data';\n    \n\nRemember that the format of the date and time you enter must correspond to the format used by the SQL platform you are using.",
-    "links": []
+    "description": "SQL `TIMESTAMP` is a data type that allows you to store both date and time. It is typically used to track updates and changes made to a record, providing a chronological time of happenings.\n\nDepending on the SQL platform, the format and storage size can slightly vary. For instance, MySQL uses the 'YYYY-MM-DD HH:MI:SS' format and in PostgreSQL, it's stored as a 'YYYY-MM-DD HH:MI:SS' format but it additionally can store microseconds.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "MYSQL TIMESTAMP function",
+        "url": "https://www.w3schools.com/mysql/func_mysql_timestamp.asp",
+        "type": "article"
+      },
+      {
+        "title": "Different SQL TimeStamp functions in SQL Server",
+        "url": "https://www.sqlshack.com/different-sql-timestamp-functions-in-sql-server/",
+        "type": "article"
+      }
+    ]
   },
   "BJ4fQvagTO0B5UtXblyx8": {
     "title": "DATEPART",
@@ -748,6 +1147,11 @@
       {
         "title": "DATEPART",
         "url": "https://www.w3schools.com/sql/func_sqlserver_datepart.asp",
+        "type": "article"
+      },
+      {
+        "title": "SQL DATEPART",
+        "url": "https://hightouch.com/sql-dictionary/sql-datepart",
         "type": "article"
       }
     ]
@@ -760,13 +1164,29 @@
         "title": "DATEADD",
         "url": "https://www.mssqltips.com/sqlservertutorial/9380/sql-dateadd-function/",
         "type": "article"
+      },
+      {
+        "title": "DATEADD Function",
+        "url": "https://www.youtube.com/watch?v=DYCWOzzOycU",
+        "type": "video"
       }
     ]
   },
   "2tyezwOIxV6O84N-Q3Awh": {
     "title": "Views",
-    "description": "SQL views are virtual tables that do not store data directly. They are essentially a saved SQL query and can pull data from multiple tables or just present the data from one table in a different way.\n\nCreating Views\n--------------\n\nYou can create a view using the `CREATE VIEW` statement. In the following example, a new view named `CustomerView` is created which contains customer's ID, name, and address from the `Customers` table:\n\n    CREATE VIEW CustomerView AS\n    SELECT CustomerID, Name, Address\n    FROM Customers;\n    \n\nQuerying Views\n--------------\n\nAfter a view has been created, it can be used in the `FROM` clause of a `SELECT` statement, as if it's an actual table. For instance, to select all from `CustomerView`:\n\n    SELECT *\n    FROM CustomerView;\n    \n\nUpdating Views\n--------------\n\nThe `CREATE OR REPLACE VIEW` statement is used to update a view. Consider the `CustomerView` we created earlier. If we want to include the customer's phone, we can update it as follows:\n\n    CREATE OR REPLACE VIEW CustomerView AS\n    SELECT CustomerID, Name, Address, Phone\n    FROM Customers;\n    \n\nDropping Views\n--------------\n\nTo delete a view, use the `DROP VIEW` statement:\n\n    DROP VIEW CustomerView;\n    \n\nKeep in mind that not all database systems support the `CREATE OR REPLACE VIEW` statement. Also, the updatability of a view depends on whether it includes functions, expressions, or multiple tables. Some databases might not let you update a view at all.\n\nRestrictions\n------------\n\nThere are a few restrictions to bear in mind when working with views. SQL views can't:\n\n*   Contain a `ORDER BY` clause in the view definition\n*   Be indexed\n*   Have triggers or default values\n\nEach database may have its own specific limitations and capabilities with using views, so always refer to the official documentation for more information.\n\nNote: The above examples use a hypothetical `Customers` table. Replace this with your actual table name when trying these in your environment.",
-    "links": []
+    "description": "Views in SQL are virtual tables based on the result set of an SQL statement. They act as a saved query that can be treated like a table, offering several benefits:\n\n*   Simplifying complex queries by encapsulating joins and subqueries\n*   Providing an additional security layer by restricting access to underlying tables\n*   Presenting data in a more relevant format for specific users or applications\n\nViews can be simple (based on a single table) or complex (involving multiple tables, subqueries, or functions). Some databases support updatable views, allowing modifications to the underlying data through the view. Materialized views, available in some systems, store the query results, improving performance for frequently accessed data at the cost of additional storage and maintenance overhead.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Views in SQL",
+        "url": "https://www.datacamp.com/tutorial/views-in-sql",
+        "type": "article"
+      },
+      {
+        "title": "SQL Views Tutorial",
+        "url": "https://www.youtube.com/watch?v=cLSxasHg9WY",
+        "type": "video"
+      }
+    ]
   },
   "PcsGK4VBh0zNQIPZvNES4": {
     "title": "Creating Views",
@@ -792,6 +1212,11 @@
         "title": "Modify Views in SQL Server",
         "url": "https://www.sqlshack.com/create-view-sql-modifying-views-in-sql-server/",
         "type": "article"
+      },
+      {
+        "title": "SQL VIEWs in 4 Minutes",
+        "url": "https://www.youtube.com/watch?v=vLLkNI-vkV8",
+        "type": "video"
       }
     ]
   },
@@ -802,6 +1227,11 @@
       {
         "title": "DROP VIEW",
         "url": "https://study.com/academy/lesson/sql-drop-view-tutorial-overview.html",
+        "type": "article"
+      },
+      {
+        "title": "DROP or DELETE a View",
+        "url": "https://www.tutorialspoint.com/sql/sql-drop-view.htm",
         "type": "article"
       }
     ]
@@ -814,6 +1244,11 @@
         "title": "Create SQL Index Statement",
         "url": "https://www.w3schools.com/sql/sql_create_index.asp",
         "type": "article"
+      },
+      {
+        "title": "SQL Indexing Best Practices",
+        "url": "https://www.youtube.com/watch?v=BIlFTFrEFOI",
+        "type": "video"
       }
     ]
   },
@@ -825,18 +1260,45 @@
         "title": "SQL Server Indexes",
         "url": "https://www.sqlservercentral.com/articles/sql-server-indexes",
         "type": "article"
+      },
+      {
+        "title": "Optimize index maintenance",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver16",
+        "type": "article"
       }
     ]
   },
   "Ps9Yv2s-bKvEegGAbPsiA": {
     "title": "Query Optimization",
-    "description": "Query optimization is a function of SQL that involves tuning and optimizing a SQL statement so that the system executes it in the fastest and most efficient way possible. It includes optimizing the costs of computation, communication, and disk I/O.\n\nThe primary approaches of query optimization involve the following:\n\nRewriting Queries\n-----------------\n\nThis means changing the original SQL query to an equivalent one which requires fewer system resources. It's usually done automatically by the database system.\n\nFor instance, let's say we have a query as follows:\n\n    SELECT * \n    FROM Customers \n    WHERE state = 'New York' AND city = 'New York';\n    \n\nThe above query can be rewritten using a subquery for better optimization:\n\n    SELECT * \n    FROM Customers \n    WHERE state = 'New York' \n    AND city IN (SELECT city \n                  FROM Customers \n                  WHERE city = 'New York');\n    \n\nChoosing the right index\n------------------------\n\nIndexes are used to find rows with specific column values quickly. Without an index, SQL has to begin with the first row and then read through the entire table to find the appropriate rows. The larger the table, the more costly the operation. Choosing a right and efficient index greatly influence on query performance.\n\nFor example,\n\n    CREATE INDEX index_name\n    ON table_name (column1, column2, ...);\n    \n\nFine-tuning Database Design\n---------------------------\n\nImproper database schema designs could result in poor query performances. While not strictly a part of query optimization, tuning the database design can speed up the query execution time drastically.\n\nChanges such as the separation of specific data to different tables (Normalization), combining redundant data (Denormalization), or changing the way how tables are linked (Optimized Join Operations), can be implemented to optimize the schema.\n\nUse of SQL Clauses wisely\n-------------------------\n\nThe usage of certain SQL clauses can help in query optimization like LIMIT, BETWEEN etc.\n\nExample,\n\n    SELECT column1, column2\n    FROM table_name\n    WHERE condition\n    LIMIT 10;\n    \n\nSystem Configuration\n--------------------\n\nMany database systems allow you to configure system parameters that control its behavior during query execution. For instance, in MySQL, you can set parameters like `sort_buffer_size` or `join_buffer_size` to tweak how MySQL would use memory during sorting and joining operations.\n\nIn PostgreSQL, you can set `work_mem` to control how much memory is utilized during operations such as sorting and hashing.\n\nAlways remember the goal of query optimization is to lessen the system resources usage in terms of memory, CPU time, and thus improve the query performance.",
-    "links": []
+    "description": "Query optimization in SQL involves refining queries to enhance their execution speed and reduce resource consumption. Key strategies include indexing columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses to accelerate data retrieval, minimizing data processed by limiting the number of columns selected and filtering rows early in the query. Using appropriate join types and arranging joins in the most efficient order are crucial. Avoiding inefficient patterns like `SELECT`, replacing subqueries with joins or common table expressions (CTEs), and leveraging query hints or execution plan analysis can also improve performance. Regularly updating statistics and ensuring that queries are structured to take advantage of database-specific optimizations are essential practices for maintaining optimal performance.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "12 Ways to Optimize SQL Queries",
+        "url": "https://www.developernation.net/blog/12-ways-to-optimize-sql-queries-in-database-management/",
+        "type": "article"
+      },
+      {
+        "title": "SQL Query Optimization",
+        "url": "https://www.youtube.com/watch?v=GA8SaXDLdsY",
+        "type": "video"
+      }
+    ]
   },
   "OdaBXz2XBAVLsQ-m7xtAM": {
     "title": "Transactions",
-    "description": "A `transaction` in SQL is a unit of work that is performed against a database. Transactions are units or sequences of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.\n\nTransactions are used to ensure data integrity and to handle database errors while processing. SQL transactions are controlled by the following commands:\n\n*   `BEGIN TRANSACTION`\n*   `COMMIT`\n*   `ROLLBACK`\n\nBEGIN TRANSACTION\n-----------------\n\nThis command is used to start a new transaction.\n\n    BEGIN TRANSACTION; \n    \n\nCOMMIT\n------\n\nThe `COMMIT` command is the transactional command used to save changes invoked by a transaction to the database.\n\n    COMMIT;\n    \n\nWhen you commit the transaction, the changes are permanently saved in the database.\n\nROLLBACK\n--------\n\nThe `ROLLBACK` command is the transactional command used to undo transactions that have not already been saved to the database.\n\n    ROLLBACK;\n    \n\nWhen you roll back a transaction, all changes made since the last commit in the database are undone, and the database is rolled back to the state it was in at the last commit.\n\nTransaction Example\n-------------------\n\n    BEGIN TRANSACTION;\n    \n    UPDATE Accounts SET Balance = Balance - 100 WHERE id = 1;\n    UPDATE Accounts SET Balance = Balance + 100 WHERE id = 2;\n    \n    IF @@ERROR = 0\n       COMMIT;\n    ELSE\n       ROLLBACK;\n    \n\nIn this example, we are transferring 100 units from account 1 to account 2 inside a transaction. If any errors occurred during any of the update statements (captured by `@@ERROR`), the transaction is rolled back, otherwise, it is committed.\n\nRemember that for the transaction to be successful, all commands must execute successfully. If any command fails, the transaction fails, the database state is left unchanged and an error is returned.",
-    "links": []
+    "description": "Transactions in SQL are units of work that group one or more database operations into a single, atomic unit. They ensure data integrity by following the ACID properties: Atomicity (all or nothing), Consistency (database remains in a valid state), Isolation (transactions don't interfere with each other), and Durability (committed changes are permanent). Transactions are essential for maintaining data consistency in complex operations and handling concurrent access to the database.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Transactions",
+        "url": "https://www.tutorialspoint.com/sql/sql-transactions.htm",
+        "type": "article"
+      },
+      {
+        "title": "A Guide to ACID Properties in Database Management Systems",
+        "url": "https://www.mongodb.com/resources/basics/databases/acid-transactions",
+        "type": "article"
+      }
+    ]
   },
   "7sTW1vwUhCFOMXYjScVEt": {
     "title": "BEGIN",
@@ -867,13 +1329,35 @@
   },
   "xbD67KVlt3UhHpKh8HLx8": {
     "title": "ROLLBACK",
-    "description": "The `ROLLBACK` command is a transactional control language (TCL) instruction that undoes an unsuccessful or unsatisfactory running transaction. This process also applies to SQL Server where all individual statements in SQL Server are treated as a single atomic transaction.\n\nWhen a `ROLLBACK` command is issued, all the operations (such as Insert, Delete, Update, etc.) are undone and the database is restored to its initial state before the transaction started.\n\nWhen to use `ROLLBACK`\n----------------------\n\n1.  If the transaction is unacceptable or unsuccessful.\n2.  If you want to revert the unwanted changes.\n\nHere is a basic example:\n\n    BEGIN TRANSACTION;  \n    \n    -- This would delete all rows from the table.\n    DELETE FROM Employee;\n    \n    -- Oh no! That's not what I wanted. Let's roll that back.\n    ROLLBACK;\n    \n\nIn this example, the `ROLLBACK` command would restore all deleted data into the `Employee` table.\n\nSQL also allows the usage of `SAVEPOINT`s along with the `ROLLBACK` command, which allows rolling back to a specific point in a transaction, instead of rolling back the entire transaction.\n\nHere is an example of using `SAVEPOINT`s:\n\n    BEGIN TRANSACTION;\n    \n    -- Adding new employee.\n    INSERT INTO Employee(ID, Name) VALUES(1, 'John');\n    \n    -- Create a savepoint to be able to roll back to this point.\n    SAVEPOINT SP1;\n    \n    -- Oh no! I made a mistake creating this employee. Let's roll back to the savepoint.\n    ROLLBACK TO SAVEPOINT SP1;\n    \n    -- Now I can try again.\n    INSERT INTO Employee(ID, Name) VALUES(1, 'Jack');\n    \n    -- Commit the changes.\n    COMMIT;\n    \n\nIn this example, `ROLLBACK TO SAVEPOINT SP1` would undo the first insert into the `Employee` table while preserving the state of the database as it was at the savepoint `SP1`. So, the second insert command would properly add 'Jack' in place of 'John'.",
-    "links": []
+    "description": "`ROLLBACK` is a SQL command used to undo transactions that have not yet been committed to the database. It reverses all changes made within the current transaction, restoring the database to its state before the transaction began. This command is crucial for maintaining data integrity, especially when errors occur during a transaction or when implementing conditional logic in database operations. `ROLLBACK` is an essential part of the ACID (Atomicity, Consistency, Isolation, Durability) properties of database transactions, ensuring that either all changes in a transaction are applied, or none are, thus preserving data consistency.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Difference between COMMIT and ROLLBACK in SQL",
+        "url": "https://byjus.com/gate/difference-between-commit-and-rollback-in-sql/",
+        "type": "article"
+      },
+      {
+        "title": "How to undo a mistake a in SQL: Rollback and Commit",
+        "url": "https://www.youtube.com/watch?v=jomsdMLiIZM",
+        "type": "video"
+      }
+    ]
   },
   "pJtYvXUo81aZfPuRjIbMq": {
     "title": "SAVEPOINT",
-    "description": "A savepoint is a way of implementing subtransactions (nested transactions) within a relational database management system by indicating a particular point within a transaction that a user can \"roll back\" to in case of failure. The main property of a savepoint is that it enables you to create a rollback segment within a transaction. This allows you to revert the changes made to the database after the Savepoint without having to discard the entire transaction.\n\nA Savepoint might be used in instances where if a particular operation fails, you would like to revert the database to the state it was in before the operation was attempted, but you do not want to give up on the entire transaction.\n\nSavepoint Syntax\n----------------\n\nThe general syntax for `SAVEPOINT`:\n\n    SAVEPOINT savepoint_name;\n    \n\nUse of Savepoint\n----------------\n\nHere is the basic usage of savepoint:\n\n    START TRANSACTION;\n    INSERT INTO Table1 (Column1) VALUES ('Value1');\n    \n    SAVEPOINT SP1;\n    \n    INSERT INTO Table1 (Column1) VALUES ('Value2');\n    \n    ROLLBACK TO SP1;\n    \n    COMMIT;\n    \n\nIn this example, an initial `INSERT` statement is performed before a Savepoint named `SP1` is created. Another `INSERT` statement is called and then `ROLLBACK TO SP1` is executed. This means all changes between the creation of `SP1` and `ROLLBACK TO SP1` are reverted. After that, 'COMMIT' is used to permanently store the changes made by the first `INSERT` statement.\n\nRelease Savepoint\n-----------------\n\nThe `RELEASE SAVEPOINT` deletes a savepoint within a transaction.\n\nHere’s the syntax:\n\n    RELEASE SAVEPOINT savepoint_name;\n    \n\nThe action of releasing a savepoint removes the named savepoint from the set of savepoints of the current transaction. No changes are undone.\n\nRemove Savepoint\n----------------\n\nThe `ROLLBACK TO SAVEPOINT` removes a savepoint within a transaction.\n\nHere’s the syntax:\n\n    ROLLBACK TRANSACTION TO savepoint_name;\n    \n\nThis statement rolls back a transaction to the named savepoint without terminating the transaction.\n\nPlease note, savepoint names are not case sensitive and must obey the syntax rules of the server.",
-    "links": []
+    "description": "A `SAVEPOINT` in SQL is a point within a transaction that can be referenced later. It allows for more granular control over transactions by creating intermediate points to which you can roll back without affecting the entire transaction. This is particularly useful in complex transactions where you might want to undo part of the work without discarding all changes. `SAVEPOINT` enhances transaction management flexibility.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL SAVEPOINT",
+        "url": "https://www.ibm.com/docs/pl/informix-servers/12.10?topic=statements-savepoint-statement",
+        "type": "article"
+      },
+      {
+        "title": "DBMS - Save Point",
+        "url": "https://www.youtube.com/watch?v=30ldSUkswGM",
+        "type": "video"
+      }
+    ]
   },
   "igg34gLPl3HYVAmRNFGcV": {
     "title": "ACID",
@@ -898,8 +1382,19 @@
   },
   "ujeq8EIFcrqkBjoFizsJM": {
     "title": "Transaction Isolation Levels",
-    "description": "SQL supports four transaction isolation levels, each differing in how it deals with concurrency and locks to protect the integrity of the data. Each level makes different trade-offs between consistency and performance. Here is a brief of these isolation levels with relevant SQL statements.\n\n1.  **READ UNCOMMITTED** This is the lowest level of isolation. One transaction may read not yet committed changes made by other transaction, also known as \"Dirty Reads\". Here's an example of how to set this level:\n    \n        SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;\n        BEGIN TRANSACTION;\n        -- Execute your SQL commands here\n        COMMIT;\n        \n    \n2.  **READ COMMITTED** A transaction only sees data changes committed before it started, averting \"Dirty Reads\". However, it may experience \"Non-repeatable Reads\", i.e. if a transaction reads the same row multiple times, it might get a different result each time. Here's how to set this level:\n    \n        SET TRANSACTION ISOLATION LEVEL READ COMMITTED;\n        BEGIN TRANSACTION;\n        -- Execute your SQL commands here\n        COMMIT;\n        \n    \n3.  **REPEATABLE READ** Here, once a transaction reads a row, any other transaction's writes (changes) onto those rows are blocked until the first transaction is finished, preventing \"Non-repeatable Reads\". However, \"Phantom Reads\" may still occur. Here's how to set this level:\n    \n        SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;\n        BEGIN TRANSACTION;\n        -- Execute your SQL commands here\n        COMMIT;\n        \n    \n4.  **SERIALIZABLE** This is the highest level of isolation. It avoids \"Dirty Reads\", \"Non-repeatable Reads\" and \"Phantom Reads\". This is done by fully isolating one transaction from others: read and write locks are acquired on data that are used in a query, preventing other transactions from accessing the respective data. Here's how to set this level:\n    \n        SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;\n        BEGIN TRANSACTION;\n        -- Execute your SQL commands here\n        COMMIT;\n        \n    \n\nRemember, higher levels of isolation usually provide more consistency but can potentially decrease performance due to increased waiting times for locks.",
-    "links": []
+    "description": "Transaction isolation levels in SQL define the degree to which the operations in one transaction are visible to other concurrent transactions. There are typically four standard levels: Read Uncommitted, Read Committed, Repeatable Read, and Serializable. Each level provides different trade-offs between data consistency and concurrency. Understanding and correctly setting isolation levels is crucial for maintaining data integrity and optimizing performance in multi-user database environments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Everything you always wanted to know about SQL isolation levels",
+        "url": "https://www.cockroachlabs.com/blog/sql-isolation-levels-explained/",
+        "type": "article"
+      },
+      {
+        "title": "Isolation Levels in SQL Server",
+        "url": "https://www.sqlservercentral.com/articles/isolation-levels-in-sql-server",
+        "type": "article"
+      }
+    ]
   },
   "R1ktDJpXOz0PTllAcBrdu": {
     "title": "Data Integrity & Security",
@@ -913,6 +1408,11 @@
       {
         "title": "Integrity Constraints in SQL: A Guide With Examples",
         "url": "https://www.datacamp.com/tutorial/integrity-constraints-sql",
+        "type": "article"
+      },
+      {
+        "title": "Integrity Constraints",
+        "url": "https://dataheadhunters.com/academy/integrity-constraints-ensuring-accuracy-and-consistency-in-your-data/",
         "type": "article"
       }
     ]
@@ -946,38 +1446,88 @@
   },
   "w7FNjdwqjY7X69aJqqBy4": {
     "title": "Stored Procedures & Functions",
-    "description": "A SQL stored procedure is a set of SQL code that can be saved and reused. In other words, it's a precompiled object because it's compiled at a time when it's created on the database. Stored procedures can take parameters, process the tasks or query the database, and return a result.\n\nHere's a basic example:\n\n    CREATE PROCEDURE getEmployeesBySalary\n      @minSalary int\n    AS\n    BEGIN\n      SELECT firstName, lastName\n      FROM Employees\n      WHERE salary > @minSalary\n    END\n    GO\n    \n\nTo call this stored procedure, we would use:\n\n    EXEC getEmployeesBySalary 50000\n    \n\nFunctions\n---------\n\nA SQL function is a set of SQL statements that perform a specific task. Functions must return a value or result. We can use these functions in SELECT, INSERT, DELETE, UPDATE statements.\n\nThere are two types of functions in SQL:\n\n*   **Scalar functions**, which return a single value and can be used where single expressions are used. For instance:\n\n    CREATE FUNCTION addNumbers(@a int, @b int)\n    RETURNS int \n    AS \n    BEGIN\n       RETURN @a + @b\n    END\n    \n\n*   **Table-valued functions**, which return a table. They can be used in JOIN clauses as if they were a normal table. For example:\n\n    CREATE FUNCTION getBooks (@authorID INT)\n    RETURNS TABLE\n    AS \n    RETURN (\n       SELECT books.title, books.publicationYear \n       FROM books \n       WHERE books.authorID = @authorID\n    )\n    \n\nTo call this function:\n\n    SELECT title, publicationYear \n    FROM getBooks(3)",
-    "links": []
+    "description": "Stored procedures and functions are precompiled database objects that encapsulate a set of SQL statements and logic. Stored procedures can perform complex operations and are typically used for data manipulation, while functions are designed to compute and return values. Both improve performance by reducing network traffic and allowing code reuse. They also enhance security by providing a layer of abstraction between the application and the database.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Stored Procedure vs Functions",
+        "url": "https://www.shiksha.com/online-courses/articles/stored-procedure-vs-function-what-are-the-differences/",
+        "type": "article"
+      }
+    ]
   },
   "4rqCPpTb0dAgpheBKshRG": {
     "title": "Performance Optimization",
-    "description": "SQL performance optimization is crucial for accelerating SQL queries and improving overall database performance. Most importantly, it ensures smooth and efficient execution of SQL statements, which can result in better application performance and user experience.\n\n1\\. Indexes\n-----------\n\nCreating indexes is one of the prominent ways to optimize SQL performance. They accelerate lookup and retrieval of data from a database.\n\n    CREATE INDEX index_name\n    ON table_name (column1, column2, ...);\n    \n\nRemember, though indexes speed up data retrieval, they can slow down data modification such as `INSERT`, `UPDATE`, and `DELETE`.\n\n2\\. Avoid SELECT \\*\n-------------------\n\nGet only the required columns instead of fetching all columns using `SELECT *`. It reduces the amount of data that needs to be read from the disk.\n\n    SELECT required_column FROM table_name;\n    \n\n3\\. Use Join Instead of Multiple Queries\n----------------------------------------\n\nUsing join clauses can combine rows from two or more tables in a single query based on a related column between them. This reduces the number of queries hitting the database, improving performance.\n\n    SELECT Orders.OrderID, Customers.CustomerName\n    FROM Orders\n    INNER JOIN Customers\n    ON Orders.CustomerID=Customers.CustomerID;\n    \n\n4\\. Use LIMIT\n-------------\n\nIf only a certain number of rows are necessary, use the LIMIT keyword to restrict the number of rows returned by the query.\n\n    SELECT column FROM table LIMIT 10;\n    \n\n5\\. Avoid using LIKE Operator with Wildcards at the Start\n---------------------------------------------------------\n\nUsing wildcard at the start of a query (`LIKE '%search_term'`) can lead to full table scans.\n\n    SELECT column FROM table WHERE column LIKE 'search_term%';\n    \n\n6\\. Optimize Database Schema\n----------------------------\n\nDatabase schema involves how data is organized and should be optimized for better performance.\n\n7\\. Use EXPLAIN\n---------------\n\nMany databases have 'explain plan' functionality that shows the plan of the database engine to execute the query.\n\n    EXPLAIN SELECT * FROM table_name WHERE column = 'value';\n    \n\nThis can give insight into performance bottlenecks like full table scans, missing indices, etc.\n\n8\\. Denormalization\n-------------------\n\nIn some cases, it might be beneficial to denormalize the database to a certain extent to reduce complex joins and queries. Keep in mind that this is usually the last resort and may not always yield the desired results.\n\nRemember, each query and database is unique, so what might work in one scenario might not work in another. It is always crucial to test the queries in a controlled and isolated environment before pushing them into production.",
-    "links": []
+    "description": "Performance optimization in SQL involves a set of practices aimed at improving the efficiency and speed of database queries and overall system performance. Key strategies include indexing critical columns to speed up data retrieval, optimizing query structure by simplifying or refactoring complex queries, and using techniques like query caching to reduce redundant database calls. Other practices include reducing the use of resource-intensive operations like `JOINs` and `GROUP BY`, selecting only necessary columns (`SELECT *` should be avoided), and leveraging database-specific features such as partitioning, query hints, and execution plan analysis. Regularly monitoring and analyzing query performance, along with maintaining database health through routine tasks like updating statistics and managing indexes, are also vital to sustaining high performance.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Performance Tuning SQL Queries",
+        "url": "https://mode.com/sql-tutorial/sql-performance-tuning",
+        "type": "article"
+      },
+      {
+        "title": "SQL performance tuning",
+        "url": "https://stackify.com/performance-tuning-in-sql-server-find-slow-queries/",
+        "type": "article"
+      }
+    ]
   },
   "9wOgP0i9G4HSeZGn2Gm7r": {
     "title": "Using Indexes",
-    "description": "Indexes in SQL are used as a way to quicken the rate of retrieval operations on a database table. Much like the index in a book, SQL indexes allow the database program to find the data without needing to go through every row in a table and thus improves performance.\n\nTypes of Indexes:\n-----------------\n\n1.  **Single-Column Indexes:**\n\nThese are created based on only one table column. The syntax for creating a single column index is as follows:\n\n    CREATE INDEX index_name\n    ON table_name (column1);\n    \n\n2.  **Unique Indexes:**\n\nThey ensure the data contained in a column or a combination of two or more columns is unique. Syntax to create unique index is as follows:\n\n    CREATE UNIQUE INDEX index_name\n    ON table_name (column1, column2...);\n    \n\n3.  **Composite Indexes:**\n\nThese are based on two or more columns of a table. It's important to note that, the order of columns in the definition of an index is important. Syntax to create a Composite Indexes is as follows:\n\n    CREATE INDEX index_name\n    ON table_name (column1, column2);\n    \n\n4.  **Implicit Indexes:**\n\nThese are indexes that are automatically created by the database server when an object is defined. For example, when a primary key is defined.\n\nHow Indexes Work\n----------------\n\nSQL indexes work by storing a part of a table's data in a place where it can be accessed extremely swiftly. The index holds the column value, and the location of the record itself. This is similar to how an index in a book stores the word, and the page number on which the word can be found.\n\nConsiderations\n--------------\n\nWhile they do provide a significant advantage, they also require additional storage and can slow down the rate of updates and inserts into a database. As such, indexes should be used judiciously, taking into consideration the nature of the data in the table and the kinds of queries that will be used.",
-    "links": []
+    "description": "Indexes in SQL are database objects that improve the speed of data retrieval operations on database tables. They work similarly to an index in a book, allowing the database engine to quickly locate data without scanning the entire table. Proper use of indexes can significantly enhance query performance, especially for large tables. However, they come with trade-offs: while they speed up reads, they can slow down write operations (INSERT, UPDATE, DELETE) as the index also needs to be updated. Common types include B-tree indexes (default in most systems), bitmap indexes, and full-text indexes. Understanding when and how to create indexes is crucial for database optimization. This involves analyzing query patterns, understanding the data distribution, and balancing the needs of different types of operations on the database.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is an index in SQL?",
+        "url": "https://stackoverflow.com/questions/2955459/what-is-an-index-in-sql",
+        "type": "article"
+      },
+      {
+        "title": "SQL Indexes - Definition, Examples, and Tips",
+        "url": "https://www.youtube.com/watch?v=NZgfYbAmge8",
+        "type": "video"
+      }
+    ]
   },
   "C0dhS6uLf4TUSfvcWyXhv": {
     "title": "Optimizing Joins",
-    "description": "Query optimization for joins is an essential aspect in improving the execution speed of your SQL commands and reduce the response time. Joins, particularly the ones involving multiple tables, can be quite costly in terms of database performance. Here are some methods to optimize joins in SQL:\n\n1\\. Minimize the Number of Tables in the Join\n---------------------------------------------\n\nTry to keep the number of tables in each join operation as low as possible. Remove any tables which are not necessary to retrieve the requested data.\n\n    SELECT Customers.CustomerName, Orders.OrderID\n    FROM Customers\n    JOIN Orders\n    ON Customers.CustomerID = Orders.CustomerID\n    ORDER BY Customers.CustomerName;\n    \n\n2\\. Check the Order of Tables in the Join\n-----------------------------------------\n\nThe order in which tables are joined can have a considerable impact on the execution time. As a general rule, join the tables that have the most rows last. If you are joining more than two tables, and aren’t certain of the best order, you can try different orders to see which gives the best performance.\n\n    SELECT *\n    FROM Table1 -- smallest table\n    JOIN Table2 ON Table1.ID = Table2.ID -- larger table\n    JOIN Table3 ON Table1.ID = Table3.ID -- largest table\n    \n\n3\\. Always Use Indexes\n----------------------\n\nUsing indexes helps improve the speed at which SQL can execute a join. Indexes are particularly useful if your join involves columns that are often involved in where clauses or sort operations. SQL can utilize indexes to quickly locate the rows it needs, and this can drastically improve performance.\n\n    CREATE INDEX idx_columnname\n    ON table_name (column_name);\n    \n\n4\\. Use Subqueries\n------------------\n\nSometimes, it would be faster to retrieve the data in multiple steps using subqueries. In the below example, instead of joining, we are retrieving IDs using a subquery and then fetching the data using those IDs.\n\n    SELECT column_name(s)\n    FROM table1\n    WHERE column_name IN (SELECT column_name FROM table2);\n    \n\n5\\. Use Explicit JOIN Syntax\n----------------------------\n\nUse of explicit syntax helps in better understanding of the relations between the tables, thus enabling the SQL execution engine to get optimized plans.\n\n    SELECT Orders.OrderID, Customers.CustomerName\n    FROM Orders\n    INNER JOIN Customers\n    ON Orders.CustomerID = Customers.CustomerID;\n    \n\nIn conclusion, the optimization of joins is an art that requires some level of knowledge about database design and how SQL works under the hood. A performance-efficient SQL code needs thorough testing and trial-n-run for different scenarios.",
-    "links": []
+    "description": "Optimizing joins in SQL involves techniques to improve the performance of queries that combine data from multiple tables. Key strategies include using appropriate join types (e.g., `INNER JOIN` for matching rows only, `LEFT JOIN` for all rows from one table), indexing the columns used in join conditions to speed up lookups, and minimizing the data processed by filtering results with `WHERE` clauses before the join. Additionally, reducing the number of joins, avoiding unnecessary columns in the `SELECT` statement, and ensuring that the join conditions are based on indexed and selective columns can significantly enhance query efficiency. Proper join order and using database-specific optimization hints are also important for performance tuning.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to Optimize a SQL Query with Multiple Joins",
+        "url": "https://dezbor.com/blog/optimize-sql-query-with-multiple-joins",
+        "type": "article"
+      },
+      {
+        "title": "Secret to optimizing SQL queries",
+        "url": "https://www.youtube.com/watch?v=BHwzDmr6d7s",
+        "type": "video"
+      }
+    ]
   },
   "UVTgbZrqpbYl1bQvQejcF": {
     "title": "Reducing Subqueries",
-    "description": "SQL subqueries allow you to nest a SELECT statement inside another query. However, while this can sometimes simplify the code, the drawback is they can result in long-running queries and reduced performance. Therefore, optimizing queries often involves reducing subqueries. Two common ways to achieve this include using JOINS and 'EXISTS' clause.\n\n1.  **JOIN:** A JOIN clause combines rows from two or more tables based on a related column. In many cases, a JOIN can replace a subquery with equivalent logic, but with improved performance.\n\nAn example would be a scenario where you have two tables `Orders` and `Customers`, and you want to find orders made by a specific customer:\n\nSubquery could be:\n\n    SELECT OrderNumber \n    FROM Orders \n    WHERE CustomerID IN (\n      SELECT CustomerID \n      FROM Customers \n      WHERE CustomerName = 'John Doe'\n      );\n    \n\nEquivalent JOIN:\n\n    SELECT o.OrderNumber \n    FROM Orders o \n    JOIN Customers c ON o.CustomerID = c.CustomerID \n    WHERE c.CustomerName = 'John Doe';\n    \n\n2.  **EXISTS:** The EXISTS operator checks for the existence of rows returned by the subquery. Many times, a subquery can be replaced with an EXISTS clause which would greatly increase performance as EXISTS will stop processing once it hits a true condition and does not need to check all results like IN would.\n\nConsider you want to find all customers who have placed at least one order:\n\nSubquery might be:\n\n    SELECT * \n    FROM Customers \n    WHERE CustomerID IN (\n      SELECT CustomerID \n      FROM Orders\n      );\n    \n\nEquivalent EXISTS use case:\n\n    SELECT *\n    FROM Customers c\n    WHERE EXISTS (\n      SELECT 1\n      FROM Orders o\n      WHERE c.CustomerID = o.CustomerID\n      );\n    \n\nWhile it's important to minimize subqueries whenever possible, there may be cases where you cannot replace a subquery, especially when dealing with correlated subqueries or complex queries where rewriting might be nontrivial or not feasible.",
+    "description": "Recursive queries in SQL allow for iterative processing of hierarchical or tree-structured data within a single query. They consist of an anchor member (the base case) and a recursive member that references the query itself, enabling the exploration of parent-child relationships, traversal of graphs, or generation of series data. This powerful feature is particularly useful for tasks like querying organizational hierarchies, bill of materials structures, or navigating complex relationships in data that would otherwise require multiple separate queries or procedural code.\n\nLearn more from the following resources:",
     "links": []
   },
   "w53CSY53nAAN0ux-XeJ4c": {
     "title": "Selective Projection",
-    "description": "Selective projection in SQL is a concept related to retrieving only specific columns from a table rather than retrieving all columns. It's one of the most basic ways to optimize your queries in SQL and make them more efficient.\n\nIn SQL, a projection refers to the operation in which we choose certain columns (instead of all columns) from the table for our query results. If a table has numerous columns, and we only need data from a few of them, it's more efficient to only select those specific columns in the SQL query. This reduces the amount of data that needs to be scanned and fetched from the database, thereby improving performance.\n\nExamples\n--------\n\nLet's take an example where you have a \"students\" table with the following columns: Id, Name, Age, Gender, Department, and City. If you only need Name and Department information, you should use a selective projection to specify only these columns in your SELECT statement:\n\n    SELECT Name, Department \n    FROM students\n    \n\nThis query returns just the Name and Department columns, rather than all fields in the students table.\n\nIn contrast, if you used a `SELECT *` statement:\n\n    SELECT * \n    FROM students\n    \n\nThis would return all columns from the \"students\" table which can be inefficient if you don't need all that data.\n\nSelective projection can greatly optimize your SQL queries by minimizing the amount of data handled. It's especially beneficial when tables have large amounts of data and many columns, but only a subset of information is required.",
+    "description": "Selective projection in SQL refers to the practice of choosing only specific columns (attributes) from a table or query result, rather than selecting all available columns. This technique is crucial for optimizing query performance and reducing unnecessary data transfer. By using SELECT with explicitly named columns instead of `SELECT *`, developers can improve query efficiency and clarity, especially when dealing with large tables or complex joins.",
     "links": []
   },
   "C6P69YiFdS-ioPXMNfX07": {
     "title": "Query Analysis Techniques",
-    "description": "Query analysis is a critical part of performance optimization in SQL. It involves critically examining your SQL queries to determine potential bottlenecks, unnecessary computations or data fetch operations, and areas where you can implement performance optimization techniques.\n\nExplain Plan\n------------\n\nSQL provides an \"EXPLAIN PLAN\" statement that can be utilized to understand the execution plan of a query. This is used to analyze the performance of SQL commands before actually executing them.\n\nWhen running the command, the output shows the steps involved in executing the query and an estimation of the cost involved with each step. The cost is a unitless value representing the resources required to perform the operation.\n\n    EXPLAIN PLAN FOR SELECT * FROM table_name;\n    \n\nIndex Usage\n-----------\n\nUsing appropriate indexes is crucial for query performance. Unnecessary full table scans can be avoided if the correct indexes are present. Even though SQL will automatically determine the appropriate index to use, it can be helpful to manually specify which index to use for complex queries.\n\n    CREATE INDEX idx_column ON table_name(column_name);\n    \n\nJoin Optimization\n-----------------\n\nThe order in which tables are joined can have a large impact on query performance. In general, you should join tables in a way that results in the smallest result set as early as possible.\n\nLook out for \"Nested Loops\" in your explain plan. These can be a cause of slow performance if a large number of rows are being processed.\n\n    SELECT *\n    FROM table1\n    INNER JOIN table2 ON table1.id = table2.id;\n    \n\nRegular Performance Tests\n-------------------------\n\nRegular query performance testing can catch slow queries before they become a problem. Utilizing tools that can monitor and report query performance can help you keep an eye on your database's performance.\n\nAlso, continual analysis of the query performance should be done as your data grows. A query that performs well with a small dataset may not do so when the dataset grows.",
-    "links": []
+    "description": "Query analysis techniques in SQL involve examining and optimizing queries to improve performance and efficiency. Key techniques include using `EXPLAIN` or `EXPLAIN PLAN` commands to understand the query execution plan, which reveals how the database processes the query, including join methods, index usage, and data retrieval strategies. Analyzing `execution plans` helps identify bottlenecks such as full table scans or inefficient joins. Other techniques include `profiling queries` to measure execution time, `examining indexes` to ensure they are effectively supporting query operations, and `refactoring queries` by breaking down complex queries into simpler, more efficient components. Additionally, monitoring `database performance metrics` like CPU, memory usage, and disk I/O can provide insights into how queries impact overall system performance. Regularly applying these techniques allows for the identification and resolution of performance issues, leading to faster and more efficient database operations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "EXPLAIN",
+        "url": "https://docs.snowflake.com/en/sql-reference/sql/explain",
+        "type": "article"
+      },
+      {
+        "title": "EXPLAIN PLAN",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/EXPLAIN-PLAN.html",
+        "type": "article"
+      }
+    ]
   },
   "UDqbT1y-YzBrljfKSz_RG": {
     "title": "Advanced SQL",
@@ -986,18 +1536,51 @@
   },
   "TjgwabhEtaSoYMLNr6q9l": {
     "title": "Recursive Queries",
-    "description": "Recursive queries are advanced SQL queries used for data analysis, especially when working with hierarchical or tree-structured data. These queries are implemented using Common Table Expressions (CTEs). CTEs have the same structure as a standard SELECT statement but are prefixed with `WITH`, followed by the CTE name and an optional list of columns.\n\nCTEs can be recursive and non-recursive. The non-recursive CTE is a query that is executed once and then goes out of scope.\n\nRecursive CTE\n-------------\n\nA recursive CTE is a CTE that references itself. Recursive CTEs have a minimum of two queries, an anchor member (runs only once), and a recursive member (runs repeatedly). Include a UNION ALL statement between these queries.\n\nHere's a sample of a recursive CTE:\n\n    WITH RECURSIVE ancestors AS (\n      SELECT employee_id, manager_id, full_name\n      FROM employees\n      WHERE manager_id IS NULL\n      \n      UNION ALL\n    \n      SELECT e.employee_id, e.manager_id, e.full_name\n      FROM employees e\n      INNER JOIN ancestors a ON a.employee_id = e.manager_id\n    )\n    SELECT * FROM ancestors;\n    \n\nIn this code snippet, the first query is the anchor member that fetches the employees with no manager. The second part is the recursive member, continuously fetching managers until none are left.\n\nSyntax of Recursive CTE\n-----------------------\n\nHere's the general structure of a recursive CTE:\n\n    WITH RECURSIVE cte_name (column_list) AS (\n      \n      -- Anchor member\n      SELECT column_list\n      FROM table_name\n      WHERE condition\n      \n      UNION ALL\n      \n      -- Recursive member\n      SELECT column_list\n      FROM table_name\n      INNER JOIN cte_name ON condition\n    )\n    SELECT * FROM cte_name;\n    \n\nNote: some database systems such as MySQL, PostgreSQL, and SQLite use `WITH RECURSIVE` for recursive CTEs. Others like SQL Server, Oracle, and DB2 use just `WITH`.\n\nRemember to be careful when setting the conditions for your recursive query to avoid infinite loops.",
-    "links": []
+    "description": "Recursive queries in SQL allow for the repeated execution of a query within itself, enabling the traversal of hierarchical or tree-like data structures. This powerful feature is particularly useful for handling nested relationships, such as organizational hierarchies, bill of materials, or network topologies. By using a combination of an anchor member (initial query) and a recursive member (the part that refers to itself), recursive queries can iterate through multiple levels of data, retrieving information that would be difficult or impossible to obtain with standard SQL constructs. This technique simplifies complex queries and improves performance when dealing with self-referential data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Recursive Queries in SQL",
+        "url": "https://codedamn.com/news/sql/recursive-queries-in-sql",
+        "type": "article"
+      },
+      {
+        "title": "Recursive SQL Expression Visually Explained",
+        "url": "https://builtin.com/data-science/recursive-sql",
+        "type": "article"
+      }
+    ]
   },
   "nwFaz9i-1s0WVrVaFsoqb": {
     "title": "Pivot / Unpivot Operations",
-    "description": "PIVOT\n-----\n\nThe PIVOT operator is used in SQL to rotate the table data from rows to columns, essentially transforming the data into a matrix format. This operator allows you to create a crosstab view of the data, with selected columns as rows and others as columns, providing a summary view.\n\nHere is a general example of the syntax:\n\n    SELECT ...\n    FROM ...\n    PIVOT (aggregate_function(column_to_aggregate)\n        FOR column_to_pivot \n        IN (list_of_values))\n    \n\n**Example**: Let's assume we have a 'Sales' table with 'Year', 'Quarter' and 'Amount' columns. If we want to turn 'Quarter' values into columns, we might use:\n\n    SELECT * FROM \n    (\n      SELECT Year, Quarter, Amount\n      FROM Sales\n    ) \n    PIVOT \n    (\n      SUM(Amount)\n      FOR Quarter IN ('Q1' 'Q2' 'Q3' 'Q4')\n    )\n    \n\nThis would give us each year as a row and each quarter as a column, with the total sales for each quarter in the cells.\n\nUNPIVOT\n-------\n\nThe UNPIVOT operator performs the reverse operation to PIVOT, rotating columns into rows. If the columns you're converting have a certain relationship, this can be factored into a single column instead.\n\nHere is a general example of the syntax:\n\n    SELECT ...\n    FROM ...\n    UNPIVOT (column_for_values \n        FOR column_for_names IN (list_of_columns))\n    \n\n**Example**: Conversely, if we want to transform the quarter columns back into rows from the previous 'Sales' pivot table, we would use:\n\n    SELECT * FROM \n    (\n      SELECT Year, Q1, Q2, Q3, Q4\n      FROM Sales\n    ) \n    UNPIVOT \n    (\n      Amount\n      FOR Quarter IN (Q1, Q2, Q3, Q4)\n    )\n    \n\nThis would result in each combination of year and quarter as a row, with the amount sold in that quarter as the 'Amount' column. Keep in mind, the UNPIVOTed data isn't equivalent to the original data as the original data might have had multiple rows for each year/quarter.",
-    "links": []
+    "description": "Pivot and Unpivot operations in SQL are used to transform and reorganize data, making it easier to analyze in different formats. The `PIVOT` operation converts rows into columns, allowing you to summarize data and present it in a more readable, table-like format. For example, it can take sales data by month and convert the months into individual columns. Conversely, the `UNPIVOT` operation does the opposite—it converts columns back into rows, which is useful for normalizing data that was previously pivoted or to prepare data for certain types of analysis. These operations are particularly useful in reporting and data visualization scenarios, where different perspectives on the same data set are required.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL PIVOT",
+        "url": "https://builtin.com/articles/sql-pivot",
+        "type": "article"
+      },
+      {
+        "title": "SQL UNPIVOT",
+        "url": "https://duckdb.org/docs/sql/statements/unpivot.html",
+        "type": "article"
+      }
+    ]
   },
   "tBvXLLp5FKeSSN35Kj1X4": {
     "title": "Window Functions",
-    "description": "SQL Window functions enable you perform calculations on a set of rows related to the current row. This set of rows is known as a 'window', hence 'Window Functions'.\n\nThese are termed so because they perform a calculation across a set of rows which are related to the current row - somewhat like a sliding window.\n\nThere are four types of window functions in SQL:\n\n*   **Aggregate functions:** These functions compute a single output value for a group of input values (like averages, sums).\n\n    SELECT department, salary,\n    AVG(salary) OVER (PARTITION BY department) as avg_departmental_salary\n    FROM employee;\n    \n\n*   **Ranking functions:** These functions allocate a unique rank to each row within each window partition.\n\n    SELECT department, salary,\n    RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank\n    FROM employee;\n    \n\n*   **Value functions:** These functions provide information about the window partition or the row's position within it, for example - `FIRST_VALUE`, `LAST_VALUE`, `NTH_VALUE`.\n\n    SELECT department, salary,\n    FIRST_VALUE(salary) OVER (PARTITION BY department ORDER BY salary DESC) as highest_salary\n    FROM employee;\n    \n\n*   **Offset functions:** The offset functions provide a way of accessing data from another row in the same result set without joining the table to itself. They can answer questions concerning the value on the row before or after the current row, for example - `LEAD`, `LAG`.\n\n    SELECT department, salary,\n    LAG(salary) OVER (PARTITION BY department ORDER BY salary) as previous_salary,\n    LEAD(salary) OVER (PARTITION BY department ORDER BY salary) as next_salary\n    FROM employee;\n    \n\nIn using window functions, the `OVER` clause defines the windows or group of rows for function to consider, `PARTITION BY` breaks up the window by a specific column(s), and `ORDER BY` orders rows within the window.\n\nIt's important to note that SQL window functions do not cause rows to become grouped into a single output row like aggregate methods do. Therefore, they do not reduce the number of rows returned by the query, each row maintains its individual identity.",
-    "links": []
+    "description": "SQL Window functions enable you perform calculations on a set of rows related to the current row. This set of rows is known as a 'window', hence 'Window Functions'.\n\nThese are termed so because they perform a calculation across a set of rows which are related to the current row - somewhat like a sliding window.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL Window Functions",
+        "url": "https://mode.com/sql-tutorial/sql-window-functions",
+        "type": "article"
+      },
+      {
+        "title": "SQL Window Functions in 10 Minutes",
+        "url": "https://www.youtube.com/watch?v=y1KCM8vbYe4",
+        "type": "video"
+      }
+    ]
   },
   "tedQynR0xicVKhuR1oahw": {
     "title": "Common Table Expressions",
@@ -1006,6 +1589,11 @@
       {
         "title": "Common Table Expressions (CTEs)",
         "url": "https://hightouch.com/sql-dictionary/sql-common-table-expression-cte",
+        "type": "article"
+      },
+      {
+        "title": "What is a Common Table Expression?",
+        "url": "https://learnsql.com/blog/what-is-common-table-expression/",
         "type": "article"
       }
     ]
@@ -1018,18 +1606,45 @@
         "title": "Dynamic SQL in SQL Server",
         "url": "https://www.sqlshack.com/dynamic-sql-in-sql-server/",
         "type": "article"
+      },
+      {
+        "title": "Dynamic SQL",
+        "url": "https://www.youtube.com/watch?v=01LZMCotcpY",
+        "type": "video"
       }
     ]
   },
   "zW27ZHdLwQY-85iqbBKQZ": {
     "title": "Row_number",
-    "description": "**ROW\\_NUMBER()** is a SQL window function that assigns a unique number to each row in the result set.\n\nSyntax:\n\n    ROW_NUMBER() OVER (\n    [ORDER BY column_name]\n    )\n    \n\nFeatures:\n---------\n\n*   Numbers are assigned based on the `ORDER BY` clause of `ROW_NUMBER()`.\n*   In case of identical values in the `ORDER BY` clause, the function assigns numbers arbitrarily.\n*   In other words, the sequence of numbers generated by `ROW_NUMBER()` is not guaranteed to be the same for the same set of data.\n\nExamples:\n---------\n\n**Example 1:** Basic usage of ROW\\_NUMBER() on a single column\n\n    SELECT \n        name, \n        ROW_NUMBER() OVER (ORDER BY name) row_number\n    FROM \n        employees;\n    \n\nIn this example, `ROW_NUMBER()` is used to assign a unique number to each row in the employees table, ordered by the employee names alphabetically.\n\n**Example 2:** Using ROW\\_NUMBER() to rank rows in each partition\n\n    SELECT \n        department_id, \n        first_name, \n        salary, \n        ROW_NUMBER() OVER (\n            PARTITION BY department_id \n            ORDER BY salary DESC) row_number\n    FROM \n        employees;\n    \n\nIn this example, `ROW_NUMBER()` is used to rank employee salaries within each department (i.e., partitioned by `department_id`). In each department, employees with higher salaries are assigned lower row numbers.",
-    "links": []
+    "description": "ROW\\_NUMBER() is a SQL window function that assigns a unique, sequential integer to each row within a partition of a result set. It's useful for creating row identifiers, implementing pagination, or finding the nth highest/lowest value in a group. The numbering starts at 1 for each partition and continues sequentially, allowing for versatile data analysis and manipulation tasks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL ROW_NUMBER",
+        "url": "https://www.sqltutorial.org/sql-window-functions/sql-row_number/",
+        "type": "article"
+      },
+      {
+        "title": "How to Use ROW_NUMBER OVER() in SQL to Rank Data",
+        "url": "https://learnsql.com/blog/row-number-over-in-sql/",
+        "type": "article"
+      }
+    ]
   },
   "cucCPw3KfetAP2OMFUs0X": {
     "title": "rank",
-    "description": "`RANK()` is a window function in SQL that assigns a unique rank to each distinct row within a partition of a result set. The rank of the first row within each partition is one. The `RANK()` function adds the number of tied rows to the tied rank to calculate the next rank. So the ranks may not be consecutive numbers.\n\nParameters of RANK Function\n---------------------------\n\nThere are no arguments for the `RANK()` function. However, since it's a window function, the function operates on a set of rows (window) defined by the `OVER` clause, which is mandatory.\n\nSyntax\n------\n\nThe syntax of `RANK` function is:\n\n    RANK () OVER (\n        [PARTITION BY column_1, column_2,…]\n        ORDER BY column_3,column_4,… \n    )\n    \n\n`PARTITION BY`: This clause divides the rows into multiple groups or partitions upon which the `RANK()` function is applied.\n\n`ORDER BY`: This clause sorts the rows in each partition.\n\nIf `PARTITION BY` is not specified, the function treats all rows in the result set as a single partition.\n\nExamples\n--------\n\nHere's an example query using the `RANK()` function:\n\n    SELECT\n        product_name, \n        brand, \n        RANK () OVER (\n        PARTITION BY brand\n        ORDER BY product_name ASC\n    ) Product_rank\n    FROM\n        products;\n    \n\nIn this example, it generates a list of products, grouped by brand, and ranked by product\\_name within each brand. The `product_name` with the smallest value (alphabetically first when sorting ASC) gets a rank of 1 within its partition.\n\nImportant Notes\n---------------\n\n*   `RANK()` function may return duplicate rankings if the column on which the function is applied contains duplicate values.\n*   The `RANK()` function will leave a gap and create a non-consecutive ranking if there are equal rankings (ties).\n*   `RANK()` function offers a very efficient way to solve top-N problems.\n\nYou might also be interested in looking at other similar ranking functions in SQL like `DENSE_RANK()`, `ROW_NUMBER()`, etc.",
-    "links": []
+    "description": "The `RANK` function in SQL is a window function that assigns a rank to each row within a partition of a result set, based on the order specified by the `ORDER BY` clause. Unlike the `ROW_NUMBER` function, `RANK` allows for the possibility of ties—rows with equal values in the ordering column(s) receive the same rank, and the next rank is skipped accordingly. For example, if two rows share the same rank of 1, the next rank will be 3. This function is useful for scenarios where you need to identify relative positions within groups, such as ranking employees by salary within each department.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of SQL RANK Functions",
+        "url": "https://www.sqlshack.com/overview-of-sql-rank-functions/",
+        "type": "article"
+      },
+      {
+        "title": "RANK, DENSE_RANK, ROW_NUMBER SQL Analytical Functions Simplified",
+        "url": "https://www.youtube.com/watch?v=xMWEVFC4FOk",
+        "type": "video"
+      }
+    ]
   },
   "QM0ltgPu8lLLYc2MsTLj-": {
     "title": "dense_rank",
@@ -1038,6 +1653,11 @@
       {
         "title": "SQL DENSE_RANK",
         "url": "https://www.sqltutorial.org/sql-window-functions/sql-dense_rank/",
+        "type": "article"
+      },
+      {
+        "title": "Breaking Down DENSE_RANK",
+        "url": "https://www.kdnuggets.com/breaking-down-denserank-a-step-by-step-guide-for-sql-enthusiasts",
         "type": "article"
       }
     ]
@@ -1050,6 +1670,11 @@
         "title": "SQL LEAD",
         "url": "https://www.codecademy.com/resources/docs/sql/window-functions/lead",
         "type": "article"
+      },
+      {
+        "title": "LAG and LEAD Window Functions in SQL",
+        "url": "https://www.youtube.com/watch?v=nHEEyX_yDvo",
+        "type": "video"
       }
     ]
   },
@@ -1061,6 +1686,11 @@
         "title": "Understanding the LAG function in SQL",
         "url": "https://www.datacamp.com/tutorial/sql-lag",
         "type": "article"
+      },
+      {
+        "title": "LAG and LEAD functions",
+        "url": "https://www.youtube.com/watch?v=j2u52RQ0qlw",
+        "type": "video"
       }
     ]
   }

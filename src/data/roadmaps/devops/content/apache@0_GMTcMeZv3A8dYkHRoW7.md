@@ -4,6 +4,6 @@ Apache is a free, open-source HTTP server, available on many operating systems, 
 
 Visit the following resources to learn more:
 
-- [@article@Apache Server Website](https://httpd.apache.org/)
+- [@official@Apache Server Website](https://httpd.apache.org/)
 - [@video@What is Apache Web Server?](https://www.youtube.com/watch?v=kaaenHXO4t4)
 - [@feed@Explore top posts about Apache](https://app.daily.dev/tags/apache?ref=roadmapsh)

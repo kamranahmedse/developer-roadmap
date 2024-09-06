@@ -1,35 +1,35 @@
-name: Refreshes roadmap content JSON
+name: Refresh Roadmap Content JSON
 
 on:
-  workflow_dispatch: # allow manual run
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # every day at midnight
+    - cron: '0 0 * * *'
 
 jobs:
-  upgrade-deps:
+  refresh-content:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup pnpm
+      - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
         with:
           version: 9
           run_install: false
 
-      - name: Setup Node.js
+      - name: Setup Node.js Version 20 (LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
 
-      - name: Install dependencies and generate content JSON
+      - name: Install Dependencies and Generate Content JSON
         run: |
           pnpm install
           npm run generate:roadmap-content-json
+      
       - name: Create PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v7
         with:
           delete-branch: false
           branch: "chore/update-content-json"
@@ -37,9 +37,16 @@ jobs:
           labels: |
             dependencies
             automated pr
-          reviewers: kamranahmedse,arikchakma
+          reviewers: kamranahmedse
           commit-message: "chore: update roadmap content json"
-          title: "Update roadmap content json"
+          title: "Updated Roadmap Content JSON - Automated"
           body: |
-            Updates the roadmap content JSON files in the `public` folder.
-            Please review the changes and merge if everything looks good.
+            ## Updated Roadmap Content JSON
+            
+            > [!IMPORTANT]
+            > This PR Updates the Roadmap Content JSON files stored in the `public` directory.
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
+
+            **Please Review the Changes and Merge the PR if everything is fine.**

@@ -43,7 +43,6 @@ The uniq utility reads the specified input_file comparing adjacent lines, and wr
 
 - [@article@uniq Documentation](https://man7.org/linux/man-pages/man1/uniq.1.html)
 
-
 `cat` (concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output. It helps us to create, view, and concatenate files.
 
 - [@article@Cat Command with examples](https://www.tecmint.com/13-basic-cat-command-examples-in-linux/)

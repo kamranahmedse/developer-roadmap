@@ -3,6 +3,11 @@ import { cn } from '../../lib/classname.ts';
 import { Filter, X } from 'lucide-react';
 import { CategoryFilterButton } from './CategoryFilterButton.tsx';
 import { useOutsideClick } from '../../hooks/use-outside-click.ts';
+import {
+  deleteUrlParam,
+  getUrlParams,
+  setUrlParams,
+} from '../../lib/browser.ts';
 
 const groupNames = [
   'Absolute Beginners',
@@ -468,6 +473,15 @@ export function RoadmapsPage() {
     ]);
   }, [activeGroup]);
 
+  useEffect(() => {
+    const { g } = getUrlParams() as { g: AllowGroupNames };
+    if (!g) {
+      return;
+    }
+
+    setActiveGroup(g);
+  }, []);
+
   return (
     <div className="border-t bg-gray-100">
       <button
@@ -502,6 +516,7 @@ export function RoadmapsPage() {
                 onClick={() => {
                   setActiveGroup('');
                   setIsFilterOpen(false);
+                  deleteUrlParam('g');
                 }}
                 category={'All Roadmaps'}
                 selected={activeGroup === ''}
@@ -514,6 +529,7 @@ export function RoadmapsPage() {
                     setActiveGroup(group.group);
                     setIsFilterOpen(false);
                     document?.getElementById('filter-button')?.scrollIntoView();
+                    setUrlParams({ g: group.group });
                   }}
                   category={group.group}
                   selected={activeGroup === group.group}

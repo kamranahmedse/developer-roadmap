@@ -59,6 +59,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
         Email address
       </label>
       <input
+        id="email"
         name="email"
         type="email"
         autoComplete="email"
@@ -72,6 +73,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
         Password
       </label>
       <input
+        id="password"
         name="password"
         type="password"
         autoComplete="current-password"

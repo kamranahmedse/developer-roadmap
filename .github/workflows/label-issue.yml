@@ -1,13 +1,15 @@
 name: Label Issue
+
 on:
   issues:
     types: [ opened, edited ]
+  
 jobs:
   label-topic-change-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Add roadmap slug to issue as label
-        uses: actions/github-script@v3
+      - name: Add Labels To Issue
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -18,7 +20,7 @@ jobs:
             if (issue.labels.some(label => label.name === 'topic-change')) {
               if (roadmapUrl) {
                 const roadmapSlug = new URL(roadmapUrl[0]).pathname.replace(/\//, '');
-                github.issues.addLabels({
+                github.rest.issues.addLabels({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
@@ -28,7 +30,7 @@ jobs:
             
               // Close the issue if it has no roadmap URL
               if (!roadmapUrl) {
-                github.issues.update({
+                github.rest.issues.update({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,

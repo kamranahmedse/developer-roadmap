@@ -5,5 +5,5 @@ Drone is a CI/CD service offering by [Harness](https://harness.io/). Each build 
 Visit the following resources to learn more:
 
 - [@official@Drone Website](https://www.drone.io/)
-- [@article@Official Documentation](https://docs.drone.io/)
+- [@official@Official Documentation](https://docs.drone.io/)
 - [@article@Drone Getting Started Guide](https://docs.drone.io/server/overview/)
