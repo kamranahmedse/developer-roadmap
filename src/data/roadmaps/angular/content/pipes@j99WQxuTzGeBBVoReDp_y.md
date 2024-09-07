@@ -6,5 +6,5 @@ Use pipes to transform strings, currency amounts, dates, and other data for disp
 
 Visit the following resources to learn more:
 
-- [@official@Understanding Pipes](https://angular.dev/guide/pipes)
+- [@official@Understanding Pipes](https://angular.dev/tutorials/learn-angular/22-pipes)
 - [@article@BuiltIn Pipes - examples](https://codecraft.tv/courses/angular/pipes/built-in-pipes/)
