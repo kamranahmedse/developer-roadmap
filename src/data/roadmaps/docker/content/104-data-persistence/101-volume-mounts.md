@@ -34,8 +34,7 @@ docker run -d --mount source=my-volume,destination=/data your-image
 
 In both examples above, `my-volume` is the name of the volume we created earlier, and `/data` is the path inside the container where the volume will be mounted.
 
-> For an in-depth exploration of the `-v` and `--mount` flags, consult Docker's official guide on [Choose the -v or --mount flag](https://docs.docker.com/storage/bind-mounts/#choose-the--v-or---mount-flag).
-
+> For an in-depth exploration of the `-v` and `--mount` flags, consult Docker's official guide on .
 
 ## Sharing Volumes Between Containers
 
@@ -56,6 +55,7 @@ To remove a volume, you can use the `docker volume rm` command followed by the v
 docker volume rm my-volume
 ```
 
-That's it! Now you have a basic understanding of volume mounts in Docker. You can use them to persist and share data between your containers efficiently and securely.
+Visit the following resources to learn more:
 
-- [@article@Docker Volumes](https://docs.docker.com/storage/volumes/).
+- [@official@Docker Volumes](https://docs.docker.com/storage/volumes/).
+- [@official@Docker Volume Flags](https://docs.docker.com/storage/bind-mounts/#choose-the--v-or---mount-flag)
