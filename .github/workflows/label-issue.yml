@@ -3,7 +3,7 @@ name: Label Issue
 on:
   issues:
     types: [ opened, edited ]
-  
+  workflow_dispatch:
 jobs:
   label-topic-change-issue:
     runs-on: ubuntu-latest

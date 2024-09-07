@@ -46,7 +46,7 @@ jobs:
             > [!IMPORTANT]
             > This PR Updates the Roadmap Content JSON files stored in the `public` directory.
             >
-            > Commit: ${{ github.sha }}
+            > Details of Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
             > Workflow Path: ${{ github.workflow_ref }}
 
             **Please Review the Changes and Merge the PR if everything is fine.**
