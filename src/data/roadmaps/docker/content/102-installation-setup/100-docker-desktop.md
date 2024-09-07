@@ -2,16 +2,7 @@
 
 Docker Desktop is an easy-to-install application that enables developers to quickly set up a Docker environment on their desktop machines. It is available for both Windows and macOS operating systems. Docker Desktop is designed to simplify the process of managing and running Docker containers, providing a user-friendly interface and seamless integration with the host operating system.
 
-### Features
-
-- **Ease of installation**: Docker Desktop provides a straightforward installation process, allowing users to quickly set up Docker on their machines.
-- **Automatic updates**: The application will automatically update to the latest version of Docker, ensuring that your environment stays up-to-date and secure.
-- **Docker Hub integration**: The Docker Desktop interface allows for easy access to Docker Hub, enabling users to find, share and manage Docker images.
-- **Containers and Services management**: Docker Desktop simplifies container and service management with a user-friendly GUI that allows users to monitor, start, stop and delete containers and services.
-- **Kubernetes integration**: Docker Desktop comes with built-in Kubernetes support, which can be enabled with just a click. This makes it easier to develop, test and run Kubernetes applications locally.
-- **Resource allocation**: Docker Desktop allows users to configure the amount of resources (CPU, memory, and storage) allocated to containers and services.
-
-### Installation
+## Installation
 
 To install Docker Desktop on your machine, follow these steps:
 
@@ -28,7 +19,7 @@ To install Docker Desktop on your machine, follow these steps:
 
 Learn more from the following resources:
 
-- [@article@Docker Desktop Documentation](https://docs.docker.com/desktop/)
-- [@article@Docker Get Started Guide](https://docs.docker.com/get-started/)
-- [@article@Docker Hub](https://hub.docker.com/)
+- [@official@Docker Desktop Documentation](https://docs.docker.com/desktop/)
+- [@official@Docker Get Started Guide](https://docs.docker.com/get-started/)
+- [@official@Docker Hub](https://hub.docker.com/)
 - [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)
