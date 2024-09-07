@@ -797,11 +797,6 @@
         "type": "article"
       },
       {
-        "title": "What is an ORM and how should I use it?",
-        "url": "https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one",
-        "type": "article"
-      },
-      {
         "title": "What is an ORM, how does it work, and how should I use one?",
         "url": "https://stackoverflow.com/a/1279678",
         "type": "article"
@@ -927,6 +922,11 @@
     "title": "Database Indexes",
     "description": "An index is a data structure that you build and assign on top of an existing table that basically looks through your table and tries to analyze and summarize so that it can create shortcuts.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Database index - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Database_index",
+        "type": "article"
+      },
       {
         "title": "Explore top posts about Database",
         "url": "https://app.daily.dev/tags/database?ref=roadmapsh",

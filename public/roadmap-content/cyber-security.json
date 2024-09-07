@@ -1735,8 +1735,19 @@
   },
   "iolsTC-63d_1wzKGul-cT": {
     "title": "DLP",
-    "description": "",
-    "links": []
+    "description": "Data Loss Prevention (DLP) refers to a set of strategies, tools, and processes used by organizations to ensure that sensitive data is not lost, accessed, or misused by unauthorized users. DLP solutions monitor, detect, and block the movement of critical information outside an organization’s network, helping to prevent data breaches, leaks, and other security incidents.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is data loss prevention (DLP)?",
+        "url": "https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP",
+        "type": "article"
+      },
+      {
+        "title": "What is DLP (data loss prevention)?",
+        "url": "https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/",
+        "type": "article"
+      }
+    ]
   },
   "35oCRzhzpVfitQPL4K9KC": {
     "title": "ACL",
@@ -1750,13 +1761,35 @@
   },
   "l5EnhOCnkN-RKvgrS9ylH": {
     "title": "HIPS",
-    "description": "",
-    "links": []
+    "description": "A Host Intrusion Prevention System (HIPS) is a security solution designed to monitor and protect individual host devices, such as servers, workstations, or laptops, from malicious activities and security threats. HIPS actively monitors system activities and can detect, prevent, and respond to unauthorized or anomalous behavior by employing a combination of signature-based, behavior-based, and heuristic detection methods.\n\nHIPS operates at the host level, providing a last line of defense by securing the individual endpoints within a network. It is capable of preventing a wide range of attacks, including zero-day exploits, malware infections, unauthorized access attempts, and policy violations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is an Intrusion Prevention System?",
+        "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips",
+        "type": "article"
+      },
+      {
+        "title": "What is Host intrusion prevention system (HIPS)?",
+        "url": "https://cyberpedia.reasonlabs.com/EN/host%20intrusion%20prevention%20system%20(hips).html",
+        "type": "article"
+      }
+    ]
   },
   "LIPtxl_oKZRcbvXT4EdNf": {
     "title": "NIDS",
-    "description": "",
-    "links": []
+    "description": "A Network Intrusion Detection System (NIDS) is a security solution designed to monitor and analyze network traffic for signs of suspicious activity or potential threats. NIDS operates by inspecting the data packets that flow through a network, looking for patterns that match known attack signatures or anomalies that could indicate malicious behavior. Unlike a Host Intrusion Detection System (HIDS), which focuses on individual host devices, NIDS provides a broader view by monitoring network traffic across multiple systems and devices.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is an Intrusion Detection System?",
+        "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-detection-system-ids",
+        "type": "article"
+      },
+      {
+        "title": "What is a Network Intrusion Detection system (NIDS)?",
+        "url": "https://bunny.net/academy/security/what-is-network-intrusion-detection-nids/",
+        "type": "article"
+      }
+    ]
   },
   "7w9qj16OD4pUzq-ItdxeK": {
     "title": "NIPS",
@@ -2149,7 +2182,7 @@
   },
   "nOND14t7ISgSH3zNpV3F8": {
     "title": "Memory Leak",
-    "description": "",
+    "description": "A Memory Leak occurs when a computer program consumes memory but fails to release it back to the operating system after it is no longer needed. Over time, this can lead to reduced system performance, increased memory usage, and, in severe cases, the program or system may crash due to the exhaustion of available memory.",
     "links": []
   },
   "2jo1r9O_rCnDwRv1_4Wo-": {
@@ -2202,8 +2235,19 @@
   },
   "sMuKqf27y4iG0GrCdF5DN": {
     "title": "Pass the Hash",
-    "description": "",
-    "links": []
+    "description": "Pass the Hash (PtH) is a hacking technique that allows an attacker to authenticate to a remote server or service using the hashed value of a user's password, without needing to know the actual plaintext password. This method exploits weaknesses in the way some authentication protocols handle hashed credentials, particularly in Windows-based systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a pass-the-hash attack?",
+        "url": "https://www.crowdstrike.com/cybersecurity-101/pass-the-hash/",
+        "type": "article"
+      },
+      {
+        "title": "Pass the Hash Attack",
+        "url": "https://www.netwrix.com/pass_the_hash_attack_explained.html",
+        "type": "article"
+      }
+    ]
   },
   "L0ROYh2DNlkybNDO2ezJY": {
     "title": "Directory Traversal",
