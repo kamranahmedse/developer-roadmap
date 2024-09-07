@@ -5,3 +5,4 @@ Data Definition Language (DDL) is a subset of SQL used to define and manage the 
 Learn more from the following resources:
 
 - [@article@Data Definition Language (DDL)](https://docs.getdbt.com/terms/ddl)
+- [@article@The Definitive Guide on Data Definition Language](https://www.dbvis.com/thetable/sql-ddl-the-definitive-guide-on-data-definition-language/)

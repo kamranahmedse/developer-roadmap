@@ -37,4 +37,4 @@ In this example, we use the `@log` decorator to modify the behavior of the `add`
 
 Learn more from the following links:
 
-- [@article@Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#handbook-content)
+- [@official@Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#handbook-content)

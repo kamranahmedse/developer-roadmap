@@ -5,4 +5,5 @@ A foreign key in SQL is a column or group of columns in one table that refers to
 Learn more from the following resources:
 
 - [@article@What is a foreign key?](https://www.cockroachlabs.com/blog/what-is-a-foreign-key/)
+- [@video@Foreign Keys are easy (kind of)](https://www.youtube.com/watch?v=rFssfx37UJw)
 

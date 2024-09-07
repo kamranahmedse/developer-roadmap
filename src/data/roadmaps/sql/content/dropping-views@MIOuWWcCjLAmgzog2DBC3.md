@@ -5,3 +5,4 @@ Dropping views in SQL involves using the `DROP VIEW` statement to remove an exis
 Learn more from the following resources:
 
 - [@article@DROP VIEW](https://study.com/academy/lesson/sql-drop-view-tutorial-overview.html)
+- [@article@DROP or DELETE a View](https://www.tutorialspoint.com/sql/sql-drop-view.htm)

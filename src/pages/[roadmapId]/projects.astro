@@ -1,26 +1,12 @@
 ---
-import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
-import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
-import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
-import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
-import { FolderKanbanIcon } from 'lucide-react';
 import { EmptyProjects } from '../../components/Projects/EmptyProjects';
 import { ProjectsList } from '../../components/Projects/ProjectsList';
-import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
-import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
-import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
-import {
-  generateArticleSchema,
-  generateFAQSchema,
-} from '../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
-import RoadmapNote from '../../components/RoadmapNote.astro';
-import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
-import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import { projectApi } from '../../api/project';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -49,7 +35,7 @@ const ogImageUrl =
     resourceId: roadmapId,
   });
 
-const descriptionNoun = {
+const descriptionNoun: Record<string, string> = {
   'AI and Data Scientist': 'AI and Data Science',
   'Game Developer': 'Game Development',
   'Technical Writer': 'Technical Writing',
@@ -62,10 +48,15 @@ const description = `Project ideas to take you from beginner to advanced in ${de
 // `Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`
 const seoTitle = `${roadmapData.briefTitle} Projects`;
 const nounTitle =
-  descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
+  descriptionNoun[roadmapData?.briefTitle] || roadmapData.briefTitle;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
 
 const projects = await getProjectsByRoadmapId(roadmapId);
+const projectIds = projects.map((project) => project.id);
+
+const projectApiClient = projectApi(Astro);
+const { response: userCounts } =
+  await projectApiClient.listProjectsUserCount(projectIds);
 ---
 
 <BaseLayout
@@ -96,7 +87,15 @@ const projects = await getProjectsByRoadmapId(roadmapId);
 
     <div class='container'>
       {projects.length === 0 && <EmptyProjects client:load />}
-      {projects.length > 0 && <ProjectsList projects={projects} client:load />}
+      {
+        projects.length > 0 && (
+          <ProjectsList
+            projects={projects}
+            userCounts={userCounts || {}}
+            client:load
+          />
+        )
+      }
     </div>
   </div>
 </BaseLayout>

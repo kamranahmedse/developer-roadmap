@@ -62,6 +62,12 @@ const links = [
     Icon: Shirt,
     isExternal: true,
   },
+  {
+    link: '/advertise',
+    label: 'Advertise',
+    description: 'Promote your product or service',
+    Icon: Menu,
+  },
 ];
 
 export function NavigationDropdown() {

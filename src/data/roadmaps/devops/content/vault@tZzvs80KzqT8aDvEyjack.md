@@ -13,4 +13,4 @@ Vault is commonly used in DevOps environments to securely store and manage secre
 
 Visit the following resources to learn more:
 
-- [@article@Vault - Official Website](https://www.vaultproject.io/)
+- [@official@Vault - Official Website](https://www.vaultproject.io/)

@@ -5,3 +5,4 @@ A `FULL OUTER JOIN` in SQL combines the results of both `LEFT` and `RIGHT OUTER 
 Learn more from the following resources:
 
 - [@article@FULL OUTER JOIN](https://www.w3schools.com/sql/sql_join_full.asp)
+- [@video@SQL FULL OUTER JOIN](https://www.youtube.com/watch?v=XpBkXo3DCEg)

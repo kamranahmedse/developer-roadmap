@@ -16,4 +16,4 @@ function getUsersOnlineMessage(numUsersOnline: number) {
 
 Learn more from the following links:
 
-- [@article@Truthiness Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#truthiness-narrowing)
+- [@official@Truthiness Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#truthiness-narrowing)

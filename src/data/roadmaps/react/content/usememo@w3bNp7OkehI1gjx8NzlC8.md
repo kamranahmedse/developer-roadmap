@@ -1,6 +1,6 @@
 # useMemo
 
-`useMemo` is a React hook that memorizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.
+`useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.
 
 Learn more from the following resources:
 

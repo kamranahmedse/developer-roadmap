@@ -28,4 +28,4 @@ Given below is the sample `tsconfig.json` file:
 
 Learn more from the following links:
 
-- [@article@What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)
+- [@official@What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)

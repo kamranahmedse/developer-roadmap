@@ -236,33 +236,8 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Interactive HTML Course",
-        "url": "https://github.com/denysdovhan/learnyouhtml",
-        "type": "opensource"
-      },
-      {
         "title": "W3Schools: Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
-        "type": "article"
-      },
-      {
-        "title": "htmlreference.io: All HTML elements at a glance",
-        "url": "https://htmlreference.io/",
-        "type": "article"
-      },
-      {
-        "title": "HTML For Beginners The Easy Way",
-        "url": "https://html.com",
-        "type": "article"
-      },
-      {
-        "title": "Web Development Basics",
-        "url": "https://internetingishard.netlify.app/html-and-css/index.html",
-        "type": "article"
-      },
-      {
-        "title": "You don't need JavaScript for that",
-        "url": "https://www.htmhell.dev/adventcalendar/2023/2/",
         "type": "article"
       },
       {
@@ -279,11 +254,6 @@
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
         "type": "video"
-      },
-      {
-        "title": "HTML Tutorial for Beginners: HTML Crash Course",
-        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
-        "type": "video"
       }
     ]
   },
@@ -297,28 +267,13 @@
         "type": "article"
       },
       {
-        "title": "MDN Docs: Getting Started with HTML ",
-        "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
-        "type": "article"
-      },
-      {
         "title": "web.dev: Learn HTML",
         "url": "https://web.dev/learn/html",
         "type": "article"
       },
       {
-        "title": "HTML Cheatsheet",
-        "url": "https://htmlcheatsheet.com",
-        "type": "article"
-      },
-      {
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
-        "type": "video"
-      },
-      {
-        "title": "HTML Tutorial for Beginners: HTML Crash Course",
-        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
         "type": "video"
       }
     ]
@@ -338,16 +293,6 @@
         "type": "article"
       },
       {
-        "title": "How To Write Semantic HTML",
-        "url": "https://hackernoon.com/how-to-write-semantic-html-dkq3ulo",
-        "type": "article"
-      },
-      {
-        "title": "Semantic HTML: What It Is and How It Improves Your Site",
-        "url": "https://blog.hubspot.com/website/semantic-html",
-        "type": "article"
-      },
-      {
         "title": "Semantic Markup",
         "url": "https://html.com/semantic-markup",
         "type": "article"
@@ -355,11 +300,6 @@
       {
         "title": "Semantic HTML - web.dev",
         "url": "https://web.dev/learn/html/semantic-html/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about HTML",
-        "url": "https://app.daily.dev/tags/html?ref=roadmapsh",
         "type": "article"
       }
     ]
@@ -400,28 +340,8 @@
         "type": "article"
       },
       {
-        "title": "A Complete Guide To Accessible Front-End Components",
-        "url": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
-        "type": "article"
-      },
-      {
-        "title": "MDN Accessibility",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-        "type": "article"
-      },
-      {
         "title": "Accessibility for Developers by Google",
         "url": "https://web.dev/accessibility",
-        "type": "article"
-      },
-      {
-        "title": "Web Accessibility by Udacity",
-        "url": "https://www.udacity.com/course/web-accessibility--ud891",
-        "type": "article"
-      },
-      {
-        "title": "Accessibility as an Essential Part of the Inclusive Developer Experience",
-        "url": "https://thenewstack.io/accessibility-as-an-essential-part-of-the-inclusive-developer-experience/",
         "type": "article"
       },
       {
@@ -441,28 +361,8 @@
     "description": "SEO or Search Engine Optimization is the technique used to optimize your website for better rankings on search engines such as Google, Bing etc.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SEO Guide",
-        "url": "https://github.com/seo/guide",
-        "type": "opensource"
-      },
-      {
         "title": "Google Search Central — SEO Docs",
         "url": "https://developers.google.com/search/docs",
-        "type": "article"
-      },
-      {
-        "title": "8 Must-Know SEO Best Practices For Developers",
-        "url": "https://neilpatel.com/blog/seo-developers/",
-        "type": "article"
-      },
-      {
-        "title": "SEO for Developers",
-        "url": "https://medium.com/welldone-software/seo-for-developers-a-quick-overview-5b5b7ce34679",
-        "type": "article"
-      },
-      {
-        "title": "Learning SEO",
-        "url": "https://learningseo.io/",
         "type": "article"
       },
       {
@@ -487,43 +387,13 @@
     "description": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The Odin Project",
-        "url": "https://www.theodinproject.com//",
-        "type": "article"
-      },
-      {
-        "title": "What The Flexbox!",
-        "url": "https://flexbox.io/",
-        "type": "article"
-      },
-      {
         "title": "W3Schools — Learn CSS",
         "url": "https://www.w3schools.com/css/",
         "type": "article"
       },
       {
-        "title": "cssreference.io: All CSS properties at a glance",
-        "url": "https://cssreference.io/",
-        "type": "article"
-      },
-      {
         "title": "Web.dev by Google — Learn CSS",
         "url": "https://web.dev/learn/css/",
-        "type": "article"
-      },
-      {
-        "title": "Learn to Code HTML & CSS",
-        "url": "https://learn.shayhowe.com/html-css/building-your-first-web-page/",
-        "type": "article"
-      },
-      {
-        "title": "Joshw Comeaus CSS Hack Blog Posts",
-        "url": "https://www.joshwcomeau.com/",
-        "type": "article"
-      },
-      {
-        "title": "100 Days CSS Challenge",
-        "url": "https://100dayscss.com",
         "type": "article"
       },
       {
@@ -537,18 +407,8 @@
         "type": "video"
       },
       {
-        "title": "CSS Crash Course For Absolute Beginners",
-        "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
-        "type": "video"
-      },
-      {
         "title": "HTML and CSS Tutorial",
         "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w",
-        "type": "video"
-      },
-      {
-        "title": "CSS Masterclass - Tutorial & Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA",
         "type": "video"
       }
     ]
@@ -593,11 +453,6 @@
     "title": "Making Layouts",
     "description": "Float, grid, flexbox, positioning, display and box model are some of the key topics that are used for making layouts. Use the resources below to learn about these topics:\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Learn CSS Grid for free",
-        "url": "https://scrimba.com/learn/cssgrid?via=roadmap",
-        "type": "course"
-      },
       {
         "title": "Learn and Practice Flexbox",
         "url": "https://flexboxfroggy.com/",
@@ -686,38 +541,13 @@
     "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "You Dont Know JS Yet (book series) ",
-        "url": "https://github.com/getify/You-Dont-Know-JS",
-        "type": "opensource"
-      },
-      {
-        "title": "Learn the basics of JavaScript",
-        "url": "https://github.com/workshopper/javascripting",
-        "type": "opensource"
-      },
-      {
         "title": "Visit Dedicated JavaScript Roadmap",
         "url": "/javascript",
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
-      {
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
-        "type": "article"
-      },
-      {
-        "title": "Learn JavaScript: Covered many topics",
-        "url": "https://www.javascripttutorial.net/",
-        "type": "article"
-      },
-      {
-        "title": "Eloquent JavaScript textbook",
-        "url": "https://eloquentjavascript.net/",
         "type": "article"
       },
       {
@@ -733,11 +563,6 @@
       {
         "title": "JavaScript Crash Course for Beginners",
         "url": "https://youtu.be/hdI2bqOjy3c?t=2",
-        "type": "video"
-      },
-      {
-        "title": "Build a Netflix Landing Page Clone with HTML, CSS & JS",
-        "url": "https://youtu.be/P7t13SGytRk?t=22",
         "type": "video"
       }
     ]
@@ -2087,43 +1912,13 @@
     "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Scrimba — TypeScript Basics",
-        "url": "https://scrimba.com/learn/typescript?via=roadmap",
-        "type": "course"
-      },
-      {
         "title": "Official Website",
         "url": "https://www.typescriptlang.org/",
         "type": "article"
       },
       {
-        "title": "Official Docs for Deep Dives",
-        "url": "https://www.typescriptlang.org/docs/",
-        "type": "article"
-      },
-      {
         "title": "The TypeScript Handbook",
         "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Tutorial",
-        "url": "https://www.tutorialspoint.com/typescript/index.htm",
-        "type": "article"
-      },
-      {
-        "title": "What Is TypeScript?",
-        "url": "https://thenewstack.io/what-is-typescript/",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Tutorial: Go beyond ‘Hello, World!’",
-        "url": "https://thenewstack.io/typescript-tutorial-go-beyond-hello-world/",
-        "type": "article"
-      },
-      {
-        "title": "A Guide to Using the Programming Language",
-        "url": "https://thenewstack.io/typescript-tutorial-a-guide-to-using-the-programming-language/",
         "type": "article"
       },
       {
