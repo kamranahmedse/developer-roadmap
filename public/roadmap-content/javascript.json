@@ -429,6 +429,11 @@
         "title": "String",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
         "type": "article"
+      },
+      {
+        "title": "JavaScript Strings",
+        "url": "https://javascript.info/string",
+        "type": "article"
       }
     ]
   },
