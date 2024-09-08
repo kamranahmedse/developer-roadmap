@@ -4,5 +4,5 @@ Multi-Version Concurrency Control (MVCC) is a technique used by PostgreSQL to al
 
 Learn more from the following resources:
 
-- [@article@](https://en.wikipedia.org/wiki/Multiversion_concurrency_control)
+- [@article@Multiversion concurrency control - Wikipedia](https://en.wikipedia.org/wiki/Multiversion_concurrency_control)
 - [@article@What is MVVC?](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-MVCC-How-does-Multiversion-Concurrencty-Control-work)

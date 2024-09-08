@@ -184,18 +184,36 @@
   },
   "Dp2DOX10u2xJUjB8Okhzh": {
     "title": "Frame",
-    "description": "",
-    "links": []
+    "description": "**FrameLayout** is a simple ViewGroup subclass in Android that is designed to hold a single child view or a stack of overlapping child views. It positions each child in the top-left corner by default and allows them to overlap on top of each other, which makes it useful for situations where you need to layer views on top of one another.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Frame Layout",
+        "url": "https://developer.android.com/reference/android/widget/FrameLayout",
+        "type": "article"
+      }
+    ]
   },
   "U8iMGGOd2EgPxSuwSG39Z": {
     "title": "Linear",
-    "description": "",
-    "links": []
+    "description": "**LinearLayout** is a view group that aligns all children in a single directioni, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Linear Layout",
+        "url": "https://developer.android.com/develop/ui/views/layout/linear",
+        "type": "article"
+      }
+    ]
   },
   "yE0qAQZiEC9R8WvCdskpr": {
     "title": "Relative",
-    "description": "",
-    "links": []
+    "description": "A **RelativeLayout** in Android is a type of ViewGroup that allows you to position child views relative to each other or relative to the parent layout. It's a flexible layout where you can arrange the child views in relation to one another based on certain rules, making it suitable for creating complex UI designs.\n\n**RelativeLayout** was commonly used in earlier Android development, but with the introduction of `ConstraintLayout`, it's less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Relative Layout",
+        "url": "https://developer.android.com/develop/ui/views/layout/relative",
+        "type": "article"
+      }
+    ]
   },
   "3fFNMhQIuuh-NRzSXYpXO": {
     "title": "Constraint",
