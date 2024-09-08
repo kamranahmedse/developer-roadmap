@@ -16,6 +16,7 @@ type ProgressStackProps = {
   })[];
   accountStreak?: StreakResponse;
   isLoading: boolean;
+  topicDoneToday: number;
 };
 
 const MAX_PROGRESS_TO_SHOW = 5;
@@ -23,7 +24,8 @@ const MAX_PROJECTS_TO_SHOW = 8;
 const MAX_BOOKMARKS_TO_SHOW = 8;
 
 export function ProgressStack(props: ProgressStackProps) {
-  const { progresses, projects, isLoading, accountStreak } = props;
+  const { progresses, projects, isLoading, accountStreak, topicDoneToday } =
+    props;
 
   const bookmarkedProgresses = progresses.filter(
     (progress) =>
@@ -60,6 +62,11 @@ export function ProgressStack(props: ProgressStackProps) {
         <StatsCard
           title="Current Streak"
           value={accountStreak?.count || 0}
+          isLoading={isLoading}
+        />
+        <StatsCard
+          title="Topics Done Today"
+          value={topicDoneToday}
           isLoading={isLoading}
         />
         <StatsCard

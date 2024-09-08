@@ -19,6 +19,7 @@ type UserDashboardResponse = {
   username: string;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
+  topicDoneToday: number;
 };
 
 export type BuiltInRoadmap = {
@@ -276,6 +277,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         projects={enrichedProjects || []}
         isLoading={isLoading}
         accountStreak={accountStreak}
+        topicDoneToday={personalDashboardDetails?.topicDoneToday || 0}
       />
 
       <ListDashboardCustomProgress
