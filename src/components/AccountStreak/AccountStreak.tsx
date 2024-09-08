@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import {Flame, X, Zap, ZapOff} from 'lucide-react';
+import { Flame, X, Zap, ZapOff } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { StreakDay } from './StreakDay';
 import {
@@ -11,6 +11,7 @@ import {
 } from '../../stores/page.ts';
 import { useStore } from '@nanostores/react';
 import { cn } from '../../lib/classname.ts';
+import { $accountStreak } from '../../stores/streak.ts';
 
 type StreakResponse = {
   count: number;
@@ -27,12 +28,7 @@ export function AccountStreak(props: AccountStreakProps) {
   const dropdownRef = useRef(null);
 
   const [isLoading, setIsLoading] = useState(true);
-  const [accountStreak, setAccountStreak] = useState<StreakResponse>({
-    count: 0,
-    longestCount: 0,
-    firstVisitAt: new Date(),
-    lastVisitAt: new Date(),
-  });
+  const accountStreak = useStore($accountStreak);
   const [showDropdown, setShowDropdown] = useState(false);
 
   const $roadmapsDropdownOpen = useStore(roadmapsDropdownOpen);
@@ -49,6 +45,11 @@ export function AccountStreak(props: AccountStreakProps) {
       return;
     }
 
+    if (accountStreak) {
+      setIsLoading(false);
+      return;
+    }
+
     setIsLoading(true);
     const { response, error } = await httpGet<StreakResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-streak`,
@@ -60,7 +61,7 @@ export function AccountStreak(props: AccountStreakProps) {
       return;
     }
 
-    setAccountStreak(response);
+    $accountStreak.set(response);
     setIsLoading(false);
   };
 
@@ -76,7 +77,7 @@ export function AccountStreak(props: AccountStreakProps) {
     return null;
   }
 
-  let { count: currentCount } = accountStreak;
+  let { count: currentCount = 0 } = accountStreak || {};
   const previousCount =
     accountStreak?.previousCount || accountStreak?.count || 0;
 
@@ -110,7 +111,7 @@ export function AccountStreak(props: AccountStreakProps) {
           ref={dropdownRef}
           className="absolute right-0 top-full z-50 w-[335px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
-          <div className="pl-4 pr-5 py-3">
+          <div className="py-3 pl-4 pr-5">
             <div className="flex items-center justify-between gap-2 text-sm text-slate-500">
               <p>
                 Current Streak
@@ -180,7 +181,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </div>
             </div>
 
-            <p className="text-center text-xs text-slate-600 tracking-wide mb-[1.75px] -mt-[0px]">
+            <p className="-mt-[0px] mb-[1.75px] text-center text-xs tracking-wide text-slate-600">
               Visit every day to keep your streak alive!
             </p>
           </div>

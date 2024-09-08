@@ -1,27 +1,20 @@
-import {
-  ArrowUpRight,
-  Bookmark,
-  Check,
-  CheckCircle,
-  CheckIcon,
-  CircleCheck,
-  CircleDashed,
-} from 'lucide-react';
-import { ResourceProgress } from '../Activity/ResourceProgress';
+import { ArrowUpRight } from 'lucide-react';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { getPercentage } from '../../helper/number';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import { DashboardBookmarkCard } from './DashboardBookmarkCard';
 import { DashboardProjectCard } from './DashboardProjectCard';
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { DashboardProgressCard } from './DashboardProgressCard';
+import { useStore } from '@nanostores/react';
+import { $accountStreak, type StreakResponse } from '../../stores/streak';
 
 type ProgressStackProps = {
   progresses: UserProgress[];
   projects: (ProjectStatusDocument & {
     title: string;
   })[];
+  accountStreak?: StreakResponse;
   isLoading: boolean;
 };
 
@@ -30,7 +23,7 @@ const MAX_PROJECTS_TO_SHOW = 8;
 const MAX_BOOKMARKS_TO_SHOW = 8;
 
 export function ProgressStack(props: ProgressStackProps) {
-  const { progresses, projects, isLoading } = props;
+  const { progresses, projects, isLoading, accountStreak } = props;
 
   const bookmarkedProgresses = progresses.filter(
     (progress) =>
@@ -57,135 +50,154 @@ export function ProgressStack(props: ProgressStackProps) {
     ? bookmarkedProgresses
     : bookmarkedProgresses.slice(0, MAX_BOOKMARKS_TO_SHOW);
 
+  const totalProjectFinished = projects.filter(
+    (project) => project.repositoryUrl,
+  ).length;
+
   return (
-    <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-      <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-        <h3 className="text-xs uppercase text-gray-500">Your Progress</h3>
+    <>
+      <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+        <StatsCard
+          title="Current Streak"
+          value={accountStreak?.count || 0}
+          isLoading={isLoading}
+        />
+        <StatsCard
+          title="Projects Finished"
+          value={totalProjectFinished}
+          isLoading={isLoading}
+        />
+      </div>
 
-        <div className="mt-4 flex flex-col gap-2">
-          {isLoading ? (
-            <>
-              <CardSkeleton />
-              <CardSkeleton />
-              <CardSkeleton />
-              <CardSkeleton />
-              <CardSkeleton />
-            </>
-          ) : (
-            <>
-              {userProgressesToShow.map((progress) => {
-                return (
-                  <DashboardProgressCard
-                    key={progress.resourceId}
-                    progress={progress}
-                  />
-                );
-              })}
-            </>
+      <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
+          <h3 className="text-xs uppercase text-gray-500">Your Progress</h3>
+
+          <div className="mt-4 flex flex-col gap-2">
+            {isLoading ? (
+              <>
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+                <CardSkeleton />
+              </>
+            ) : (
+              <>
+                {userProgressesToShow.map((progress) => {
+                  return (
+                    <DashboardProgressCard
+                      key={progress.resourceId}
+                      progress={progress}
+                    />
+                  );
+                })}
+              </>
+            )}
+          </div>
+
+          {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
+            <ShowAllButton
+              showAll={showAllProgresses}
+              setShowAll={setShowAllProgresses}
+              count={userProgresses.length}
+              maxCount={MAX_PROGRESS_TO_SHOW}
+              className="mt-3"
+            />
           )}
         </div>
 
-        {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
-          <ShowAllButton
-            showAll={showAllProgresses}
-            setShowAll={setShowAllProgresses}
-            count={userProgresses.length}
-            maxCount={MAX_PROGRESS_TO_SHOW}
-            className="mt-3"
-          />
-        )}
-      </div>
+        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
+          <h3 className="text-xs uppercase text-gray-500">Projects</h3>
 
-      <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-        <h3 className="text-xs uppercase text-gray-500">Projects</h3>
+          <div className="mt-4 flex flex-col gap-2.5">
+            {isLoading ? (
+              <>
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+              </>
+            ) : (
+              <>
+                {projectsToShow.map((project) => {
+                  return (
+                    <DashboardProjectCard
+                      key={project.projectId}
+                      project={project}
+                    />
+                  );
+                })}
+              </>
+            )}
+          </div>
 
-        <div className="mt-4 flex flex-col gap-2.5">
-          {isLoading ? (
-            <>
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-            </>
-          ) : (
-            <>
-              {projectsToShow.map((project) => {
-                return (
-                  <DashboardProjectCard
-                    key={project.projectId}
-                    project={project}
-                  />
-                );
-              })}
-            </>
+          {projects.length > MAX_PROJECTS_TO_SHOW && (
+            <ShowAllButton
+              showAll={showAllProjects}
+              setShowAll={setShowAllProjects}
+              count={projects.length}
+              maxCount={MAX_PROJECTS_TO_SHOW}
+              className="mt-3"
+            />
           )}
         </div>
 
-        {projects.length > MAX_PROJECTS_TO_SHOW && (
-          <ShowAllButton
-            showAll={showAllProjects}
-            setShowAll={setShowAllProjects}
-            count={projects.length}
-            maxCount={MAX_PROJECTS_TO_SHOW}
-            className="mt-3"
-          />
-        )}
-      </div>
+        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-xs uppercase text-gray-500">Bookmarks</h3>
 
-      <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-        <div className="flex items-center justify-between gap-2">
-          <h3 className="text-xs uppercase text-gray-500">Bookmarks</h3>
+            <a
+              href="/roadmaps"
+              className="flex items-center gap-1 text-xs text-gray-500"
+            >
+              <ArrowUpRight size={12} />
+              Explore
+            </a>
+          </div>
 
-          <a
-            href="/roadmaps"
-            className="flex items-center gap-1 text-xs text-gray-500"
-          >
-            <ArrowUpRight size={12} />
-            Explore
-          </a>
-        </div>
+          <div className="mt-4 flex flex-col gap-2.5">
+            {isLoading ? (
+              <>
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+                <CardSkeleton className="h-5" />
+              </>
+            ) : (
+              <>
+                {bookmarksToShow.map((progress) => {
+                  return (
+                    <DashboardBookmarkCard
+                      key={progress.resourceId}
+                      bookmark={progress}
+                    />
+                  );
+                })}
+              </>
+            )}
+          </div>
 
-        <div className="mt-4 flex flex-col gap-2.5">
-          {isLoading ? (
-            <>
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-              <CardSkeleton className="h-5" />
-            </>
-          ) : (
-            <>
-              {bookmarksToShow.map((progress) => {
-                return (
-                  <DashboardBookmarkCard
-                    key={progress.resourceId}
-                    bookmark={progress}
-                  />
-                );
-              })}
-            </>
+          {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
+            <ShowAllButton
+              showAll={showAllBookmarks}
+              setShowAll={setShowAllBookmarks}
+              count={bookmarkedProgresses.length}
+              maxCount={MAX_BOOKMARKS_TO_SHOW}
+              className="mt-3"
+            />
           )}
         </div>
-
-        {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
-          <ShowAllButton
-            showAll={showAllBookmarks}
-            setShowAll={setShowAllBookmarks}
-            count={bookmarkedProgresses.length}
-            maxCount={MAX_BOOKMARKS_TO_SHOW}
-            className="mt-3"
-          />
-        )}
       </div>
-    </div>
+    </>
   );
 }
 
@@ -227,5 +239,26 @@ function CardSkeleton(props: CardSkeletonProps) {
         className,
       )}
     />
+  );
+}
+
+type StatsCardProps = {
+  title: string;
+  value: number;
+  isLoading?: boolean;
+};
+
+function StatsCard(props: StatsCardProps) {
+  const { title, value, isLoading = false } = props;
+
+  return (
+    <div className="flex flex-col gap-1 rounded-md border bg-white p-4 shadow-sm">
+      <h3 className="text-xs uppercase text-gray-500">{title}</h3>
+      {isLoading ? (
+        <CardSkeleton className="h-8" />
+      ) : (
+        <span className="text-2xl font-medium text-black">{value}</span>
+      )}
+    </div>
   );
 }

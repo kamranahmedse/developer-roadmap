@@ -8,6 +8,8 @@ import { getCurrentPeriod } from '../../lib/date';
 import { ListDashboardCustomProgress } from './ListDashboardCustomProgress';
 import { RecommendedRoadmaps } from './RecommendedRoadmaps';
 import { ProgressStack } from './ProgressStack';
+import { useStore } from '@nanostores/react';
+import { $accountStreak, type StreakResponse } from '../../stores/streak';
 
 type UserDashboardResponse = {
   name: string;
@@ -46,6 +48,25 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
   const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
+  const accountStreak = useStore($accountStreak);
+
+  const loadAccountStreak = async () => {
+    if (accountStreak) {
+      return;
+    }
+
+    setIsLoading(true);
+    const { response, error } = await httpGet<StreakResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-streak`,
+    );
+
+    if (error || !response) {
+      toast.error(error?.message || 'Failed to load account streak');
+      return;
+    }
+
+    $accountStreak.set(response);
+  };
 
   async function loadProgress() {
     const { response: progressList, error } =
@@ -88,9 +109,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   }
 
   useEffect(() => {
-    Promise.allSettled([loadProgress(), loadAllProjectDetails()]).finally(() =>
-      setIsLoading(false),
-    );
+    Promise.allSettled([
+      loadProgress(),
+      loadAllProjectDetails(),
+      loadAccountStreak(),
+    ]).finally(() => setIsLoading(false));
   }, []);
 
   useEffect(() => {
@@ -252,6 +275,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         progresses={learningRoadmapsToShow}
         projects={enrichedProjects || []}
         isLoading={isLoading}
+        accountStreak={accountStreak}
       />
 
       <ListDashboardCustomProgress
