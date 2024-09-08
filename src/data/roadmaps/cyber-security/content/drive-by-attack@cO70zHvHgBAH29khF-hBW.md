@@ -5,3 +5,4 @@ Drive-by Attack is a type of cyberattack where malicious code is automatically d
 Visit the following resources to learn more:
 
 - [@article@What is a Drive-By Attack?](https://www.ericom.com/glossary/what-is-a-drive-by-attack/)
+- [@video@Drive-By Download attack](https://www.youtube.com/watch?v=xL4DyblbnKg)
