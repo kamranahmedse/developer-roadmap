@@ -2,19 +2,12 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { httpGet } from '../../lib/http';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
-import { ResourceProgress } from '../Activity/ResourceProgress';
-import { ProjectProgress } from '../Activity/ProjectProgress';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import { useToast } from '../../hooks/use-toast';
-import { LoadingProgress } from './LoadingProgress';
-import { ArrowUpRight, Pencil, Plus } from 'lucide-react';
-import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
-import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { getCurrentPeriod } from '../../lib/date';
-import { ListDashboardProgress } from './ListDashboardProgress';
 import { ListDashboardCustomProgress } from './ListDashboardCustomProgress';
-import { DashboardCardLink } from './DashboardCardLink';
 import { RecommendedRoadmaps } from './RecommendedRoadmaps';
+import { ProgressStack } from './ProgressStack';
 
 type UserDashboardResponse = {
   name: string;
@@ -48,9 +41,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     builtInSkillRoadmaps = [],
   } = props;
 
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
+  const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
 
   async function loadProgress() {
     const { response: progressList, error } =
@@ -76,8 +71,26 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     setPersonalDashboardDetails(progressList);
   }
 
+  async function loadAllProjectDetails() {
+    const { error, response } = await httpGet<PageType[]>(`/pages.json`);
+
+    if (error) {
+      toast.error(error.message || 'Something went wrong');
+      return;
+    }
+
+    if (!response) {
+      return [];
+    }
+
+    const allProjects = response.filter((page) => page.group === 'Projects');
+    setProjectDetails(allProjects);
+  }
+
   useEffect(() => {
-    loadProgress().finally(() => setIsLoading(false));
+    Promise.allSettled([loadProgress(), loadAllProjectDetails()]).finally(() =>
+      setIsLoading(false),
+    );
   }, []);
 
   useEffect(() => {
@@ -152,6 +165,29 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     recommendedRoadmapIds.has(roadmap.id),
   );
 
+  const enrichedProjects = personalDashboardDetails?.projects
+    .map((project) => {
+      const projectDetail = projectDetails.find(
+        (page) => page.id === project.projectId,
+      );
+
+      return {
+        ...project,
+        title: projectDetail?.title || 'N/A',
+      };
+    })
+    .sort((a, b) => {
+      if (a.repositoryUrl && !b.repositoryUrl) {
+        return 1;
+      }
+
+      if (!a.repositoryUrl && b.repositoryUrl) {
+        return -1;
+      }
+
+      return 0;
+    });
+
   return (
     <section>
       {isLoading ? (
@@ -212,13 +248,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         )}
       </div>
 
-      <ListDashboardProgress
+      <ProgressStack
         progresses={learningRoadmapsToShow}
-        isLoading={isLoading}
-      />
-
-      <RecommendedRoadmaps
-        roadmaps={recommendedRoadmaps}
+        projects={enrichedProjects || []}
         isLoading={isLoading}
       />
 
@@ -230,6 +262,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         progresses={aiGeneratedRoadmaps}
         isLoading={isLoading}
         isAIGeneratedRoadmaps={true}
+      />
+
+      <RecommendedRoadmaps
+        roadmaps={recommendedRoadmaps}
+        isLoading={isLoading}
       />
     </section>
   );

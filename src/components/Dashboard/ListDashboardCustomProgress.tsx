@@ -1,6 +1,5 @@
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { DashboardProgressCard } from './DashboardProgressCard';
-import { DashboardProgressCardSkeleton } from './ListDashboardProgress';
+import { DashboardCustomProgressCard } from './DashboardCustomProgressCard';
 import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
@@ -67,13 +66,13 @@ export function ListDashboardCustomProgress(
         {isLoading ? (
           <>
             {Array.from({ length: 8 }).map((_, index) => (
-              <DashboardProgressCardSkeleton key={index} />
+              <CustomProgressCardSkeleton key={index} />
             ))}
           </>
         ) : (
           <>
             {progresses.map((progress) => (
-              <DashboardProgressCard
+              <DashboardCustomProgressCard
                 key={progress.resourceId}
                 progress={progress}
               />
@@ -95,5 +94,15 @@ export function ListDashboardCustomProgress(
         )}
       </div>
     </>
+  );
+}
+
+type CustomProgressCardSkeletonProps = {};
+
+export function CustomProgressCardSkeleton(
+  props: CustomProgressCardSkeletonProps,
+) {
+  return (
+    <div className="h-[106px] w-full animate-pulse rounded-md bg-gray-200" />
   );
 }

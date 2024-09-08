@@ -11,9 +11,19 @@ export function RecommendedRoadmaps(props: RecommendedRoadmapsProps) {
 
   return (
     <>
-      <h2 className="mb-3 mt-8 text-xs uppercase text-gray-400">
-        Recommended Roadmaps
-      </h2>
+      <div className="mb-3 mt-8 flex items-center justify-between gap-2">
+        <h2 className="text-xs uppercase text-gray-400">
+          Recommended Roadmaps
+        </h2>
+
+        <a
+          href="/roadmaps"
+          className="flex items-center gap-1 text-xs text-gray-500"
+        >
+          <ArrowUpRight size={12} />
+          All Roadmaps
+        </a>
+      </div>
 
       {isLoading ? (
         <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
