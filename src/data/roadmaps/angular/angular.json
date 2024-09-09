@@ -210,10 +210,10 @@
         "y": 2260.93042937083
       },
       "width": 277,
-      "height": 249,
+      "height": 196,
       "style": {
         "width": 277,
-        "height": 249
+        "height": 196
       },
       "selected": false,
       "data": {
@@ -257,7 +257,8 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "resizing": false
     },
     {
       "id": "nyJvnCmX-pC35SbkRPXko",
@@ -5281,42 +5282,11 @@
       "focusable": true
     },
     {
-      "id": "ni00edsphJd7uBLCn7-Vw",
-      "type": "subtopic",
-      "position": {
-        "x": -56.13327447982533,
-        "y": 2399.43042937083
-      },
-      "selected": false,
-      "data": {
-        "label": "XSRF protection",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        }
-      },
-      "zIndex": 999,
-      "width": 257,
-      "height": 49,
-      "style": {
-        "width": 257,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": -56.13327447982533,
-        "y": 2399.43042937083
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
       "id": "zd7YJGlcMFNFbsKUiW_XC",
       "type": "subtopic",
       "position": {
         "x": -56.13327447982533,
-        "y": 2452.43042937083
+        "y": 2399.43042937083
       },
       "selected": false,
       "data": {
@@ -5336,7 +5306,7 @@
       },
       "positionAbsolute": {
         "x": -56.13327447982533,
-        "y": 2452.43042937083
+        "y": 2399.43042937083
       },
       "dragging": false,
       "selectable": true,
