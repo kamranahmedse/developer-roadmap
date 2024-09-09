@@ -1,3 +1,0 @@
-# druid
-
-`Druid` is an open-source, data-oriented Rust GUI framework. It is focused on giving users a seamless and robust way of creating GUI interfaces in Rust while also providing them with a high level of control. `Druid` uses a reactive-model similar to `React` but it has its own distinguishing features, as well. `Druid` includes features such as flexbox styling, data binding, and event handling. It provides platform-native look-and-feel by utilizing the platform's own widget. Currently, `Druid` supports various platforms such as Windows, macOS, Linux, and Redox.
