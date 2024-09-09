@@ -6,4 +6,3 @@ Learn more from the following resources:
 
 - [@video@How Nintendo textures work](https://www.youtube.com/watch?v=WrCMzHngLxI)
 - [@video@How Pixar textures work](https://www.youtube.com/watch?v=o_I6jxlN-Ck)
-
