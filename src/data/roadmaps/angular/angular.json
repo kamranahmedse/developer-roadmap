@@ -257,8 +257,7 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true,
-      "resizing": false
+      "focusable": true
     },
     {
       "id": "nyJvnCmX-pC35SbkRPXko",
