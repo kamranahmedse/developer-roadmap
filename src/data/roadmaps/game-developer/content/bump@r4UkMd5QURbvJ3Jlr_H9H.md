@@ -8,4 +8,3 @@ Learn more from the following resources:
 
 - [@video@Normals, Normal maps and Bump maps](https://www.youtube.com/watch?v=l5PYyzsZED8)
 - [@video@Bump, normal and displacement](https://www.youtube.com/watch?v=43Ilra6fNGc)
-
