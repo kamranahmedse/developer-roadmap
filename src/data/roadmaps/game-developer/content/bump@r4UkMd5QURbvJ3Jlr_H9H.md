@@ -4,7 +4,8 @@
 
 There is also something known as a normal map, and displacement maps.
 
-Here are some videos to help you out.
+Learn more from the following resources:
 
-- [Normals, Normal maps and Bump maps](https://www.youtube.com/watch?v=l5PYyzsZED8)
-- [Bump, normal and displacement](https://www.youtube.com/watch?v=43Ilra6fNGc)
+- [@video@Normals, Normal maps and Bump maps](https://www.youtube.com/watch?v=l5PYyzsZED8)
+- [@video@Bump, normal and displacement](https://www.youtube.com/watch?v=43Ilra6fNGc)
+
