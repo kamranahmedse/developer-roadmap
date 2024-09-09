@@ -14,4 +14,3 @@ Visit the following resources to learn more:
 - [@official@Astro Website](https://astro.build/)
 - [@article@What is Astro?](https://www.contentful.com/blog/what-is-astro/)
 - [@video@Astro Explained](https://www.youtube.com/watch?v=rRxuVOutmFQ)
-
