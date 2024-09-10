@@ -1,5 +1,6 @@
 import { getPercentage } from '../../helper/number';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
+import { ArrowUpRight, ExternalLink } from 'lucide-react';
 
 type DashboardProgressCardProps = {
   progress: UserProgress;
@@ -35,23 +36,19 @@ export function DashboardProgressCard(props: DashboardProgressCardProps) {
     <a
       href={url}
       key={resourceId}
-      className="group relative flex w-full flex-col justify-between overflow-hidden text-left text-sm"
+      className="group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400"
     >
-      <h4 className="truncate font-medium text-gray-900 group-hover:text-gray-500">
-        {resourceTitle}
-      </h4>
+      <span className="flex-grow truncate">{resourceTitle}</span>
+      <span className="text-xs text-gray-400">
+        {parseInt(progressPercentage, 10)}%
+      </span>
 
-      <div className="mt-1 flex items-center gap-2">
-        <div className="h-1.5 w-full overflow-hidden rounded-md bg-black/10">
-          <div
-            className="h-full bg-black/20"
-            style={{ width: `${progressPercentage}%` }}
-          ></div>
-        </div>
-        <span className="min-w-7 text-xs text-gray-500">
-          {Math.floor(+progressPercentage)}%
-        </span>
-      </div>
+      <span
+        className="absolute left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
+        style={{
+          width: `${progressPercentage}%`,
+        }}
+      />
     </a>
   );
 }

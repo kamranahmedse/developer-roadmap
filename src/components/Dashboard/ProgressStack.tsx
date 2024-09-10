@@ -64,7 +64,7 @@ function ProgressLane(props: ProgressLaneProps) {
     <div className="flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-sm">
       {isLoading && (
         <div className={'flex flex-row justify-between'}>
-          <div className="w-[75px] h-[16px] bg-gray-100 rounded-md animate-pulse"></div>
+          <div className="h-[16px] w-[75px] animate-pulse rounded-md bg-gray-100"></div>
         </div>
       )}
       {!isLoading && !isEmpty && (
@@ -83,7 +83,7 @@ function ProgressLane(props: ProgressLaneProps) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-grow flex-col gap-2.5">
+      <div className="mt-4 flex flex-grow flex-col gap-2">
         {isLoading && (
           <>
             {Array.from({ length: loadingSkeletonCount }).map((_, index) => (
@@ -126,7 +126,9 @@ export function ProgressStack(props: ProgressStackProps) {
       progress?.skipped === 0,
   );
 
-  const userProgresses = progresses.filter((progress) => !progress?.isFavorite);
+  const userProgresses = progresses.filter(
+    (progress) => !progress?.isFavorite || progress?.done > 0,
+  );
 
   const [showAllProgresses, setShowAllProgresses] = useState(false);
   const userProgressesToShow = showAllProgresses
@@ -169,11 +171,11 @@ export function ProgressStack(props: ProgressStackProps) {
 
       <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
         <ProgressLane
-          title={'Expertise'}
+          title={'Your Progress'}
           isLoading={isLoading}
           loadingSkeletonCount={5}
           isEmpty={userProgressesToShow.length === 0}
-          emptyMessage={'Update your expertise'}
+          emptyMessage={'Update your Progress'}
           emptyIcon={Map}
           emptyLinkText={'Explore Roadmaps'}
         >
@@ -196,7 +198,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllProgresses}
               count={userProgresses.length}
               maxCount={MAX_PROGRESS_TO_SHOW}
-              className="mt-3"
+              className="mt-3 mb-0.5"
             />
           )}
         </ProgressLane>
@@ -224,7 +226,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllProjects}
               count={projects.length}
               maxCount={MAX_PROJECTS_TO_SHOW}
-              className="mt-3"
+              className="mt-3 mb-0.5"
             />
           )}
         </ProgressLane>
@@ -256,7 +258,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllBookmarks}
               count={bookmarkedProgresses.length}
               maxCount={MAX_BOOKMARKS_TO_SHOW}
-              className="mt-3"
+              className="mt-3 mb-0.5"
             />
           )}
         </ProgressLane>
@@ -277,15 +279,17 @@ function ShowAllButton(props: ShowAllButtonProps) {
   const { showAll, setShowAll, count, maxCount, className } = props;
 
   return (
-    <button
-      className={cn(
-        'flex w-full items-center justify-center text-sm text-gray-500 hover:text-gray-700',
-        className,
-      )}
-      onClick={() => setShowAll(!showAll)}
-    >
-      {!showAll ? <>+ show {count - maxCount} more</> : <>- show less</>}
-    </button>
+    <span className="flex flex-grow items-end">
+      <button
+        className={cn(
+          'flex w-full items-center justify-center text-sm text-gray-500 hover:text-gray-700',
+          className,
+        )}
+        onClick={() => setShowAll(!showAll)}
+      >
+        {!showAll ? <>+ show {count - maxCount} more</> : <>- show less</>}
+      </button>
+    </span>
   );
 }
 
