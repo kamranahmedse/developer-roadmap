@@ -162,8 +162,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
     : '/images/default-avatar.png';
 
-  const currentPeriod = getCurrentPeriod();
-
   const allRoadmapsAndBestPractices = [
     ...builtInRoleRoadmaps,
     ...builtInSkillRoadmaps,
@@ -221,7 +219,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
       ) : (
         <h2 className="text-lg font-medium">
-          Hi {name}, good {currentPeriod}!
+          Hi {name}, good {getCurrentPeriod()}!
         </h2>
       )}
 
@@ -235,23 +233,12 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           </>
         ) : (
           <>
-            <a
-              className="overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
+            <DashboardCard
+              imgUrl={avatarLink}
+              title={name!}
+              description="Setup your profile"
               href="/account/update-profile"
-            >
-              <div className="px-4 pb-1.5 pt-3.5">
-                <img
-                  src={avatarLink}
-                  alt={name}
-                  className="size-8 rounded-full"
-                />
-              </div>
-
-              <div className="flex flex-col gap-0.5 p-4">
-                <h3 className="truncate font-medium">{name}</h3>
-                <p className="text-xs">Setup your profile</p>
-              </div>
-            </a>
+            />
 
             <DashboardCard
               icon={BookEmoji}
@@ -259,6 +246,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
               description="Visit our Roadmaps"
               href="/roadmaps"
             />
+
             <DashboardCard
               icon={ConstructionEmoji}
               title="Practice your skills"
@@ -302,14 +290,15 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 }
 
 type DashboardCardProps = {
-  icon: JSXElementConstructor<any>;
+  icon?: JSXElementConstructor<any>;
+  imgUrl?: string;
   title: string;
   description: string;
   href: string;
 };
 
 function DashboardCard(props: DashboardCardProps) {
-  const { icon: Icon, title, description, href } = props;
+  const { icon: Icon, imgUrl, title, description, href } = props;
 
   return (
     <a
@@ -317,9 +306,17 @@ function DashboardCard(props: DashboardCardProps) {
       target="_blank"
       className="flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
     >
-      <div className="px-4 pb-3 pt-4">
-        <Icon className="size-6" />
-      </div>
+      {Icon && (
+        <div className="px-4 pb-3 pt-4">
+          <Icon className="size-6" />
+        </div>
+      )}
+
+      {imgUrl && (
+        <div className="px-4 pb-1.5 pt-3.5">
+          <img src={imgUrl} alt={title} className="size-8 rounded-full" />
+        </div>
+      )}
 
       <div className="flex grow flex-col justify-center gap-0.5 p-4">
         <h3 className="truncate font-medium text-black">{title}</h3>

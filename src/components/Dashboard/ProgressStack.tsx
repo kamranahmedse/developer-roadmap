@@ -23,6 +23,57 @@ const MAX_PROGRESS_TO_SHOW = 5;
 const MAX_PROJECTS_TO_SHOW = 8;
 const MAX_BOOKMARKS_TO_SHOW = 8;
 
+type ProgressLaneProps = {
+  title: string;
+  linkText?: string;
+  linkHref?: string;
+  isLoading?: boolean;
+  loadingSkeletonCount?: number;
+  loadingSkeletonClassName?: string;
+  children: React.ReactNode;
+};
+
+function ProgressLane(props: ProgressLaneProps) {
+  const {
+    title,
+    linkText,
+    linkHref,
+    isLoading = false,
+    loadingSkeletonCount = 4,
+    loadingSkeletonClassName = '',
+    children,
+  } = props;
+
+  return (
+    <div className="h-full rounded-md border bg-white p-4 shadow-sm">
+      <div className="flex items-center justify-between gap-2">
+        <h3 className="text-xs uppercase text-gray-500">{title}</h3>
+
+        {linkText && linkHref && (
+          <a
+            href={linkHref}
+            className="flex items-center gap-1 text-xs text-gray-500"
+          >
+            <ArrowUpRight size={12} />
+            {linkText}
+          </a>
+        )}
+      </div>
+
+      <div className="mt-4 flex flex-col gap-2.5">
+        {isLoading && (
+          <>
+            {Array.from({ length: loadingSkeletonCount }).map((_, index) => (
+              <CardSkeleton key={index} className={loadingSkeletonClassName} />
+            ))}
+          </>
+        )}
+        {!isLoading && children}
+      </div>
+    </div>
+  );
+}
+
 export function ProgressStack(props: ProgressStackProps) {
   const { progresses, projects, isLoading, accountStreak, topicDoneToday } =
     props;
@@ -77,31 +128,23 @@ export function ProgressStack(props: ProgressStackProps) {
       </div>
 
       <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-          <h3 className="text-xs uppercase text-gray-500">Your Progress</h3>
-
-          <div className="mt-4 flex flex-col gap-2">
-            {isLoading ? (
-              <>
-                <CardSkeleton />
-                <CardSkeleton />
-                <CardSkeleton />
-                <CardSkeleton />
-                <CardSkeleton />
-              </>
-            ) : (
-              <>
-                {userProgressesToShow.map((progress) => {
-                  return (
-                    <DashboardProgressCard
-                      key={progress.resourceId}
-                      progress={progress}
-                    />
-                  );
-                })}
-              </>
-            )}
-          </div>
+        <ProgressLane
+          title={'Your Expertise'}
+          isLoading={isLoading}
+          loadingSkeletonCount={5}
+        >
+          {userProgressesToShow.length > 0 && (
+            <>
+              {userProgressesToShow.map((progress) => {
+                return (
+                  <DashboardProgressCard
+                    key={progress.resourceId}
+                    progress={progress}
+                  />
+                );
+              })}
+            </>
+          )}
 
           {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
             <ShowAllButton
@@ -112,36 +155,19 @@ export function ProgressStack(props: ProgressStackProps) {
               className="mt-3"
             />
           )}
-        </div>
+        </ProgressLane>
 
-        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-          <h3 className="text-xs uppercase text-gray-500">Projects</h3>
-
-          <div className="mt-4 flex flex-col gap-2.5">
-            {isLoading ? (
-              <>
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-              </>
-            ) : (
-              <>
-                {projectsToShow.map((project) => {
-                  return (
-                    <DashboardProjectCard
-                      key={project.projectId}
-                      project={project}
-                    />
-                  );
-                })}
-              </>
-            )}
-          </div>
+        <ProgressLane
+          title={'Projects'}
+          isLoading={isLoading}
+          loadingSkeletonClassName={'h-5'}
+          loadingSkeletonCount={8}
+        >
+          {projectsToShow.map((project) => {
+            return (
+              <DashboardProjectCard key={project.projectId} project={project} />
+            );
+          })}
 
           {projects.length > MAX_PROJECTS_TO_SHOW && (
             <ShowAllButton
@@ -152,47 +178,24 @@ export function ProgressStack(props: ProgressStackProps) {
               className="mt-3"
             />
           )}
-        </div>
+        </ProgressLane>
 
-        <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-          <div className="flex items-center justify-between gap-2">
-            <h3 className="text-xs uppercase text-gray-500">Bookmarks</h3>
-
-            <a
-              href="/roadmaps"
-              className="flex items-center gap-1 text-xs text-gray-500"
-            >
-              <ArrowUpRight size={12} />
-              Explore
-            </a>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-2.5">
-            {isLoading ? (
-              <>
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-                <CardSkeleton className="h-5" />
-              </>
-            ) : (
-              <>
-                {bookmarksToShow.map((progress) => {
-                  return (
-                    <DashboardBookmarkCard
-                      key={progress.resourceId}
-                      bookmark={progress}
-                    />
-                  );
-                })}
-              </>
-            )}
-          </div>
-
+        <ProgressLane
+          title={'Bookmarks'}
+          isLoading={isLoading}
+          loadingSkeletonClassName={'h-5'}
+          loadingSkeletonCount={8}
+          linkHref={'/roadmaps'}
+          linkText={'Explore'}
+        >
+          {bookmarksToShow.map((progress) => {
+            return (
+              <DashboardBookmarkCard
+                key={progress.resourceId}
+                bookmark={progress}
+              />
+            );
+          })}
           {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
             <ShowAllButton
               showAll={showAllBookmarks}
@@ -202,7 +205,7 @@ export function ProgressStack(props: ProgressStackProps) {
               className="mt-3"
             />
           )}
-        </div>
+        </ProgressLane>
       </div>
     </>
   );
@@ -260,7 +263,7 @@ function StatsCard(props: StatsCardProps) {
 
   return (
     <div className="flex flex-col gap-1 rounded-md border bg-white p-4 shadow-sm">
-      <h3 className="text-xs uppercase text-gray-500">{title}</h3>
+      <h3 className="mb-1 text-xs uppercase text-gray-500">{title}</h3>
       {isLoading ? (
         <CardSkeleton className="h-8" />
       ) : (
