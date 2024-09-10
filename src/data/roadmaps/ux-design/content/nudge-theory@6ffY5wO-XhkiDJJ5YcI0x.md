@@ -11,6 +11,5 @@ In the context of UX design, nudge theory can be applied in various ways to infl
 
 When applying nudge theory in UX design, it's crucial to maintain a balance between encouraging positive behaviors and respecting user autonomy. Designers should aim to empower users with meaningful choices and useful information, rather than manipulating or deceiving them.
 
-- [@video@Nudge Theory Explained with Examples (on YouTube)](https://www.youtube.com/watch?v=u3yxxteiyya&ab_channel=epm)
 - [@video@Nudge Theory Explained in less than 10 minutes](https://youtu.be/fA5eGIMZTRQ)
 - [@article@Nudge Theory overview with examples](https://www.businessballs.com/improving-workplace-performance/nudge-theory/)

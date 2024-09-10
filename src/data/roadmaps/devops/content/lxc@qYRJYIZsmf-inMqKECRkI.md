@@ -4,6 +4,6 @@ LXC is a well-known Linux container runtime that consists of tools, templates, a
 
 Visit the following resources to learn more:
 
-- [@article@LXC Website](https://linuxcontainers.org/)
-- [@article@LXC Documentation](https://linuxcontainers.org/lxc/documentation/)
+- [@official@LXC Website](https://linuxcontainers.org/)
+- [@official@LXC Documentation](https://linuxcontainers.org/lxc/documentation/)
 - [@video@Getting started with LXC containers](https://www.youtube.com/watch?v=CWmkSj_B-wo)

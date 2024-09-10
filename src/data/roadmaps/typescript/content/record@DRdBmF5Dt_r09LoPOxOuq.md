@@ -19,4 +19,4 @@ const cats: Record<CatName, CatInfo> = {
 
 Learn more from the following links:
 
-- [@article@Record<Keys, Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
+- [@official@Record<Keys, Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)

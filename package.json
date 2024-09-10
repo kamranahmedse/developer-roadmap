@@ -39,7 +39,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.14.6",
+    "astro": "^4.15.4",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.12",
     "dom-to-image": "^2.6.0",

@@ -23,4 +23,4 @@ In this example, the `Square` interface extends the `Shape` interface and adds a
 
 Learn more from the following links:
 
-- [@article@Extending Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- [@official@Extending Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

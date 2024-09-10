@@ -7,3 +7,4 @@ Unlike the `RANK` function, `DENSE_RANK` does not skip any rank (positions in th
 Learn more from the following resources:
 
 - [@article@SQL DENSE_RANK](https://www.sqltutorial.org/sql-window-functions/sql-dense_rank/)
+- [@article@Breaking Down DENSE_RANK](https://www.kdnuggets.com/breaking-down-denserank-a-step-by-step-guide-for-sql-enthusiasts)

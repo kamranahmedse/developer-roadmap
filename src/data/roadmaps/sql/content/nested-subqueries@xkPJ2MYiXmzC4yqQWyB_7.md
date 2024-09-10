@@ -7,3 +7,4 @@ Nested subqueries can get complicated quickly, but they are essential for perfor
 Learn more from the following resources:
 
 - [@article@Nested Subqueries](https://www.studysmarter.co.uk/explanations/computer-science/databases/nested-subqueries-in-sql/)
+- [@video@MySQL Subqueries](https://www.youtube.com/watch?v=i5acg3Hvu6g)

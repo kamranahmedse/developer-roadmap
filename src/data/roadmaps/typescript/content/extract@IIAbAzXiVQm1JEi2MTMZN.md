@@ -9,4 +9,4 @@ type T0 = Extract<'a' | 'b' | 'c', 'a' | 'f'>;
 
 Learn more from the following links:
 
-- [@article@Extract<Type, Union>](https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union)
+- [@official@Extract<Type, Union>](https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union)

@@ -1,35 +1,8 @@
 # UPPER
 
-`UPPER()` is a built-in string function in SQL. As the name suggests, it is used to convert all letters in a specified string to uppercase. If the string already consists of all uppercase characters, the function will return the original string.
+UPPER() is a string function in SQL used to convert all characters in a specified string to uppercase. This function is particularly useful for data normalization, case-insensitive comparisons, or formatting output. UPPER() typically works on alphabetic characters and leaves non-alphabetic characters unchanged. It's often used in SELECT statements to display data, in WHERE clauses for case-insensitive searches, or in data manipulation operations. Most SQL databases also provide a complementary LOWER() function for converting to lowercase. When working with international character sets, it's important to be aware of potential locale-specific behavior of UPPER().
 
-Syntax for this function is:
+Learn more from the following resources:
 
-```sql
-UPPER(string)
-```
-
-Here 'string' can be a string value or a column of a table of string(s) type.
-
-Let's assume a table 'students' with column 'name' as below:
-
-| name       |
-|------------|
-| John Doe   |
-| Jane Smith |
-| Kelly Will |
-
-If we want all the names in uppercase, we'll use `UPPER()` function as:
-
-```sql
-SELECT UPPER(name) as 'Upper Case Name' FROM students;
-```
-
-And we will get:
-
-| Upper Case Name |
-|----------------|
-| JOHN DOE       |
-| JANE SMITH     |
-| KELLY WILL     |
-
-So, `UPPER()` function helps us to bring an entire string to uppercase for easier comparison and sorting.
+- [@article@SQL Server UPPER Function](https://www.w3schools.com/sql/func_sqlserver_upper.asp)
+- [@article@How to Convert a String to Uppercase in SQL](https://learnsql.com/cookbook/how-to-convert-a-string-to-uppercase-in-sql/)

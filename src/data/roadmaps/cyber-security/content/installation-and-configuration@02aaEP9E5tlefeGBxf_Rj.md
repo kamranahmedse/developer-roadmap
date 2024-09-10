@@ -32,4 +32,5 @@ While software configurations will vary depending on the specific application or
 
 - **Disable Unnecessary Services**: Disable any unused or unnecessary services on your systems. Unnecessary services can contribute to an increased attack surface and potential vulnerabilities.
 
-By following these guidelines, you can establish a robust foundation for system security through proper installation and configuration. Remember that maintaining strong cybersecurity is an ongoing process that requires continuous learning and adaptation to stay ahead of evolving threats.
+Learn more from the following resources
+

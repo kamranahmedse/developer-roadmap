@@ -4,5 +4,5 @@ The TypeScript Playground is a great tool to learn TypeScript. It allows you to 
 
 Learn more from the following links:
 
-- [@article@TypeScript - Playground](https://www.typescriptlang.org/play)
+- [@official@TypeScript Official - Playground](https://www.typescriptlang.org/play)
 - [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

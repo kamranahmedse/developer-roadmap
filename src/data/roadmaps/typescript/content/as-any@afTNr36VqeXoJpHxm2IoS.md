@@ -11,3 +11,7 @@ let anyValue: any = 42;
 anyValue = 'Hello, world!';
 anyValue = true;
 ```
+
+Learn more from the following links:
+
+- [@official@Arrays](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)

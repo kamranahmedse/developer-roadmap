@@ -5,3 +5,4 @@ A `LEFT JOIN` in SQL returns all rows from the left (first) table and the matchi
 Learn more from the following resources:
 
 - [@article@SQL LEFT JOIN](https://www.w3schools.com/sql/sql_join_left.asp)
+- [@video@SQL LEFT JOIN - SQL Tutorial](https://www.youtube.com/watch?v=giKwmtsz1U8)

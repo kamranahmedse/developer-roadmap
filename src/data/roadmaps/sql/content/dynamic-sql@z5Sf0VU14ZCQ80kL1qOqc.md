@@ -7,3 +7,4 @@ Consider an application where a user can choose multiple search conditions from 
 Learn more from the following resources:
 
 - [@article@Dynamic SQL in SQL Server](https://www.sqlshack.com/dynamic-sql-in-sql-server/)
+- [@video@Dynamic SQL](https://www.youtube.com/watch?v=01LZMCotcpY)

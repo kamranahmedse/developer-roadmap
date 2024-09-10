@@ -25,3 +25,8 @@ Here are some of the limitations of using an RDBMS:
 - **Handling of Unstructured Data**: RDBMSs are not suitable for handling unstructured data like multimedia files, social media posts, and sensor data, as their relational structure is optimized for structured data.
 
 - **Horizontal Scalability**: RDBMSs are not as easily horizontally scalable as NoSQL databases. Scaling horizontally, which involves adding more machines to the system, can be challenging in terms of cost and complexity.
+
+Learn more from the following resources:
+
+- [@article@Advantages and Disadvantages of DBMS](https://www.javatpoint.com/advantages-and-disadvantages-of-dbms)
+- [@article@ACID Transactions in Databases](https://www.databricks.com/glossary/acid-transactions)

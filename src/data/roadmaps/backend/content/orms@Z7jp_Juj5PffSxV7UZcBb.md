@@ -5,6 +5,5 @@ Object-Relational Mapping (ORM) is a technique that lets you query and manipulat
 Visit the following resources to learn more:
 
 - [@article@Object Relational Mapping - Wikipedia](https://en.wikipedia.org/wiki/Object–relational_mapping)
-- [@article@What is an ORM and how should I use it?](https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one)
 - [@article@What is an ORM, how does it work, and how should I use one?](https://stackoverflow.com/a/1279678)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

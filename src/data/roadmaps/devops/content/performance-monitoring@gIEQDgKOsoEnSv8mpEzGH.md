@@ -23,6 +23,8 @@ Short for **S**ystem **A**ctivity **R**eport, `sar` is a command line tool for U
 
 Short for **V**irtual **m**emory **stat**istic reporter, `vmstat` is a command line tool for Unix and Unix-like operating systems that reports various information about the operating system such as memory, paging, processes, I/O, CPU and disk usage.
 
+Learn more from the following resources:
+
 - [@article@Linux commands: exploring virtual memory with vmstat](https://www.redhat.com/sysadmin/linux-commands-vmstat)
 - [@article@VMstat Man Page](https://man7.org/linux/man-pages/man8/vmstat.8.html)
 - [@article@vmstat tutorial](https://phoenixnap.com/kb/vmstat-command)

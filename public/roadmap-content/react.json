@@ -586,7 +586,7 @@
   },
   "w3bNp7OkehI1gjx8NzlC8": {
     "title": "useMemo",
-    "description": "`useMemo` is a React hook that memorizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
+    "description": "`useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "useMemo Docs",
@@ -1618,21 +1618,26 @@
   },
   "ElgRwv5LSVg5FXGx-2K2s": {
     "title": "TypeScript",
-    "description": "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript. Because TypeScript is a superset of JavaScript, all JavaScript programs are syntactically valid TypeScript, but they can fail to type-check for safety reasons.\n\nTypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js library modules are also available, allowing development of Node.js programs within TypeScript.\n\nVisit the following resources to learn more:",
+    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TypeScript Website",
-        "url": "https://typescriptlang.org/",
+        "title": "Official Website",
+        "url": "https://www.typescriptlang.org/",
         "type": "article"
       },
       {
-        "title": "TypeScript Docs",
-        "url": "https://typescriptlang.org/docs",
+        "title": "The TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
         "type": "article"
       },
       {
-        "title": "Learn Typescript Basics in 12 Minutes",
-        "url": "https://www.youtube.com/watch?v=ahCwqrYpIuM&pp=ygULdHlwZXNjcnJpcHQ%3D",
+        "title": "Explore top posts about TypeScript",
+        "url": "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "TypeScript for Beginners",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
         "type": "video"
       }
     ]
