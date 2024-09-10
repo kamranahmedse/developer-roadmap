@@ -5,6 +5,7 @@ import type {
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
 import { FolderKanban, Zap } from 'lucide-react';
+import { RankBadeIcon } from '../ReactIcons/RankBadgeIcon';
 
 type LeaderboardPageProps = {
   stats: ListLeaderboardStatsResponse;
@@ -25,7 +26,7 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
 
         <div className="mt-8 grid gap-2 md:grid-cols-2">
           <LeaderboardLane
-            title="Most Streaks"
+            title="Longest Visit Streak"
             tabs={[
               {
                 title: 'All Time',
@@ -36,7 +37,7 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
             ]}
           />
           <LeaderboardLane
-            title="Projects"
+            title="Projects Completed"
             tabs={[
               {
                 title: 'This Month',
@@ -124,11 +125,25 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                 <div className="flex min-w-0 items-center gap-2">
                   <span
                     className={cn(
-                      'flex size-7 shrink-0 items-center justify-center font-medium tabular-nums',
-                      rank <= 3 ? 'text-black' : 'text-gray-400',
+                      'relative flex size-7 shrink-0 items-center justify-center rounded-full font-medium tabular-nums',
+                      rank === 1 && 'bg-yellow-500 text-white',
+                      rank === 2 && 'bg-gray-500 text-white',
+                      rank === 3 && 'bg-yellow-800 text-white',
+                      rank > 3 && 'text-gray-400',
                     )}
                   >
-                    {rank}
+                    <span className="relative z-10">{rank}</span>
+
+                    {rank <= 3 && (
+                      <RankBadeIcon
+                        className={cn(
+                          'absolute left-1/2 top-5 size-4 -translate-x-1/2',
+                          rank === 1 && 'text-yellow-500',
+                          rank === 2 && 'text-gray-500',
+                          rank === 3 && 'text-yellow-800',
+                        )}
+                      />
+                    )}
                   </span>
 
                   <img
