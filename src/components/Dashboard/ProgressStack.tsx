@@ -1,4 +1,10 @@
-import { ArrowUpRight } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Bookmark,
+  FolderKanban,
+  type LucideIcon,
+  Map,
+} from 'lucide-react';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import { DashboardBookmarkCard } from './DashboardBookmarkCard';
@@ -28,9 +34,14 @@ type ProgressLaneProps = {
   linkText?: string;
   linkHref?: string;
   isLoading?: boolean;
+  isEmpty?: boolean;
   loadingSkeletonCount?: number;
   loadingSkeletonClassName?: string;
   children: React.ReactNode;
+  emptyMessage?: string;
+  emptyIcon?: LucideIcon;
+  emptyLinkText?: string;
+  emptyLinkHref?: string;
 };
 
 function ProgressLane(props: ProgressLaneProps) {
@@ -42,25 +53,37 @@ function ProgressLane(props: ProgressLaneProps) {
     loadingSkeletonCount = 4,
     loadingSkeletonClassName = '',
     children,
+    isEmpty = false,
+    emptyIcon: EmptyIcon = Map,
+    emptyMessage = `No ${title.toLowerCase()} to show`,
+    emptyLinkHref = '/roadmaps',
+    emptyLinkText = 'Explore',
   } = props;
 
   return (
-    <div className="h-full rounded-md border bg-white p-4 shadow-sm">
-      <div className="flex items-center justify-between gap-2">
-        <h3 className="text-xs uppercase text-gray-500">{title}</h3>
+    <div className="flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-sm">
+      {isLoading && (
+        <div className={'flex flex-row justify-between'}>
+          <div className="w-[75px] h-[16px] bg-gray-100 rounded-md animate-pulse"></div>
+        </div>
+      )}
+      {!isLoading && !isEmpty && (
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-xs uppercase text-gray-500">{title}</h3>
 
-        {linkText && linkHref && (
-          <a
-            href={linkHref}
-            className="flex items-center gap-1 text-xs text-gray-500"
-          >
-            <ArrowUpRight size={12} />
-            {linkText}
-          </a>
-        )}
-      </div>
+          {linkText && linkHref && (
+            <a
+              href={linkHref}
+              className="flex items-center gap-1 text-xs text-gray-500"
+            >
+              <ArrowUpRight size={12} />
+              {linkText}
+            </a>
+          )}
+        </div>
+      )}
 
-      <div className="mt-4 flex flex-col gap-2.5">
+      <div className="mt-4 flex flex-grow flex-col gap-2.5">
         {isLoading && (
           <>
             {Array.from({ length: loadingSkeletonCount }).map((_, index) => (
@@ -69,6 +92,23 @@ function ProgressLane(props: ProgressLaneProps) {
           </>
         )}
         {!isLoading && children}
+
+        {!isLoading && isEmpty && (
+          <div className="flex flex-grow flex-col items-center justify-center text-gray-500">
+            <EmptyIcon
+              size={37}
+              strokeWidth={1.5}
+              className={'mb-3 text-gray-200'}
+            />
+            <span className="mb-0.5 text-sm">{emptyMessage}</span>
+            <a
+              href={emptyLinkHref}
+              className="text-xs font-medium text-gray-600 underline-offset-2 hover:underline"
+            >
+              {emptyLinkText}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -129,9 +169,13 @@ export function ProgressStack(props: ProgressStackProps) {
 
       <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
         <ProgressLane
-          title={'Your Expertise'}
+          title={'Expertise'}
           isLoading={isLoading}
           loadingSkeletonCount={5}
+          isEmpty={userProgressesToShow.length === 0}
+          emptyMessage={'Update your expertise'}
+          emptyIcon={Map}
+          emptyLinkText={'Explore Roadmaps'}
         >
           {userProgressesToShow.length > 0 && (
             <>
@@ -162,6 +206,11 @@ export function ProgressStack(props: ProgressStackProps) {
           isLoading={isLoading}
           loadingSkeletonClassName={'h-5'}
           loadingSkeletonCount={8}
+          isEmpty={projectsToShow.length === 0}
+          emptyMessage={'No projects started'}
+          emptyIcon={FolderKanban}
+          emptyLinkText={'Explore Projects'}
+          emptyLinkHref={'/backend/projects'}
         >
           {projectsToShow.map((project) => {
             return (
@@ -187,6 +236,11 @@ export function ProgressStack(props: ProgressStackProps) {
           loadingSkeletonCount={8}
           linkHref={'/roadmaps'}
           linkText={'Explore'}
+          isEmpty={bookmarksToShow.length === 0}
+          emptyIcon={Bookmark}
+          emptyMessage={'No bookmarks to show'}
+          emptyLinkHref={'/roadmaps'}
+          emptyLinkText={'Explore Roadmaps'}
         >
           {bookmarksToShow.map((progress) => {
             return (
