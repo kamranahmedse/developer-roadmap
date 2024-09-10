@@ -54,7 +54,7 @@ export function DashboardPage(props: DashboardPageProps) {
   return (
     <div className="min-h-screen bg-gray-50 pb-20 pt-8">
       <div className="container">
-        <div className="mb-8 flex flex-wrap items-center gap-1">
+        <div className="mb-8 flex flex-wrap items-center gap-1.5">
           <DashboardTab
             label="Personal"
             isActive={!selectedTeamId}
@@ -63,8 +63,6 @@ export function DashboardPage(props: DashboardPageProps) {
           />
           {isLoading && (
             <>
-              <DashboardTabSkeleton />
-              <DashboardTabSkeleton />
               <DashboardTabSkeleton />
             </>
           )}
@@ -98,7 +96,7 @@ export function DashboardPage(props: DashboardPageProps) {
                 label="+ Create Team"
                 isActive={false}
                 href="/team/new"
-                className="border border-dashed text-gray-600 hover:border-gray-600 hover:text-black"
+                className="border bg-transparent border-dashed text-gray-500 border-gray-300 text-sm px-3 hover:border-gray-600 hover:text-black"
               />
             </>
           )}
@@ -119,6 +117,6 @@ export function DashboardPage(props: DashboardPageProps) {
 
 function DashboardTabSkeleton() {
   return (
-    <div className="h-[30px] w-20 animate-pulse rounded-md border bg-white"></div>
+    <div className="h-[30px] w-[120px] animate-pulse rounded-md border bg-white"></div>
   );
 }

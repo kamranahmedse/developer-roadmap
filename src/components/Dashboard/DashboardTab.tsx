@@ -30,7 +30,7 @@ export function DashboardTab(props: DashboardTabProps) {
         <img
           src={avatar}
           alt="avatar"
-          className="h-4 w-4 rounded-full object-cover"
+          className="h-4 w-4 mr-0.5 rounded-full object-cover"
         />
       )}
       {icon}

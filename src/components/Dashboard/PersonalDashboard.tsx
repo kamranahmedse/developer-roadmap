@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { type JSXElementConstructor, useEffect, useState } from 'react';
 import { httpGet } from '../../lib/http';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
@@ -10,6 +10,9 @@ import { RecommendedRoadmaps } from './RecommendedRoadmaps';
 import { ProgressStack } from './ProgressStack';
 import { useStore } from '@nanostores/react';
 import { $accountStreak, type StreakResponse } from '../../stores/streak';
+import { CheckEmoji } from '../ReactIcons/CheckEmoji.tsx';
+import { ConstructionEmoji } from '../ReactIcons/ConstructionEmoji.tsx';
+import { BookEmoji } from '../ReactIcons/BookEmoji.tsx';
 
 type UserDashboardResponse = {
   name: string;
@@ -222,7 +225,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         </h2>
       )}
 
-      <div className="mt-8 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
+      <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
         {isLoading ? (
           <>
             <DashboardCardSkeleton />
@@ -233,10 +236,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         ) : (
           <>
             <a
-              className="overflow-hidden rounded-lg border border-gray-300 bg-white"
+              className="overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
               href="/account/update-profile"
             >
-              <div className="px-4 py-2.5">
+              <div className="px-4 pb-1.5 pt-3.5">
                 <img
                   src={avatarLink}
                   alt={name}
@@ -251,19 +254,19 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             </a>
 
             <DashboardCard
-              icon={'💡'}
+              icon={BookEmoji}
               title="Learn a new Skill"
               description="Visit our Roadmaps"
               href="/roadmaps"
             />
             <DashboardCard
-              icon={'🏗️'}
+              icon={ConstructionEmoji}
               title="Practice your skills"
               description="Visit Projects"
               href="/backend/projects"
             />
             <DashboardCard
-              icon={'📚'}
+              icon={CheckEmoji}
               title="Do things right way"
               description="Visit Best Practices"
               href="/best-practices"
@@ -299,28 +302,26 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 }
 
 type DashboardCardProps = {
-  icon: string | ReactNode;
+  icon: JSXElementConstructor<any>;
   title: string;
   description: string;
   href: string;
 };
 
 function DashboardCard(props: DashboardCardProps) {
-  const { icon, title, description, href } = props;
+  const { icon: Icon, title, description, href } = props;
 
   return (
     <a
       href={href}
       target="_blank"
-      className="flex flex-col overflow-hidden rounded-lg border border-gray-300"
+      className="flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
     >
-      <div className="border-b border-gray-300 bg-gray-100 px-4 py-2.5">
-        <span className="flex size-8 items-center justify-center text-xl">
-          {icon}
-        </span>
+      <div className="px-4 pb-3 pt-4">
+        <Icon className="size-6" />
       </div>
 
-      <div className="flex grow flex-col justify-center gap-0.5 bg-white p-4">
+      <div className="flex grow flex-col justify-center gap-0.5 p-4">
         <h3 className="truncate font-medium text-black">{title}</h3>
         <p className="text-xs text-black">{description}</p>
       </div>
@@ -330,6 +331,6 @@ function DashboardCard(props: DashboardCardProps) {
 
 function DashboardCardSkeleton() {
   return (
-    <div className="h-[129px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
+    <div className="h-[128px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
   );
 }
