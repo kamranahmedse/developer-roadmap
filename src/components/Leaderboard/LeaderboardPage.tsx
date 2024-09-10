@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import type {
   LeadeboardUserDetails,
   ListLeaderboardStatsResponse,
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
+import { FolderKanban, Zap } from 'lucide-react';
 
 type LeaderboardPageProps = {
   stats: ListLeaderboardStatsResponse;
@@ -22,18 +23,32 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
           Top users based on their activity on roadmap.sh
         </p>
 
-        <div className="mt-8 grid grid-cols-2 gap-2">
+        <div className="mt-8 grid gap-2 md:grid-cols-2">
           <LeaderboardLane
             title="Most Streaks"
-            tabs={[{ title: 'All Time', users: stats.longestStreaks }]}
+            tabs={[
+              {
+                title: 'All Time',
+                users: stats.longestStreaks,
+                emptyIcon: <Zap className="size-16 text-gray-300" />,
+                emptyText: 'No users with streaks yet',
+              },
+            ]}
           />
           <LeaderboardLane
             title="Projects"
             tabs={[
-              { title: 'Lifetime', users: stats.projectSubmissions.lifetime },
               {
                 title: 'This Month',
                 users: stats.projectSubmissions.currentMonth,
+                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                emptyText: 'No projects submitted this month',
+              },
+              {
+                title: 'Lifetime',
+                users: stats.projectSubmissions.lifetime,
+                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                emptyText: 'No projects submitted yet',
               },
             ]}
           />
@@ -48,6 +63,8 @@ type LeaderboardLaneProps = {
   tabs: {
     title: string;
     users: LeadeboardUserDetails[];
+    emptyIcon?: ReactNode;
+    emptyText?: string;
   }[];
 };
 
@@ -55,7 +72,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   const { title, tabs } = props;
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
-  const usersToShow = activeTab.users;
+  const { users: usersToShow, emptyIcon, emptyText } = activeTab;
 
   return (
     <div className="rounded-md border bg-white shadow-sm">
@@ -84,35 +101,50 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
         )}
       </div>
 
-      <ul className="divide-y">
-        {usersToShow.map((user, counter) => {
-          const avatar = user?.avatar
-            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
-            : '/images/default-avatar.png';
+      {usersToShow.length === 0 && emptyText && (
+        <div className="flex flex-col items-center justify-center p-8">
+          {emptyIcon}
+          <p className="mt-4 text-sm text-gray-500">{emptyText}</p>
+        </div>
+      )}
 
-          return (
-            <li
-              key={user.id}
-              className="flex items-center justify-between gap-1 p-2 px-4"
-            >
-              <div className="flex min-w-0 items-center gap-2">
-                <span className="flex size-7 shrink-0 items-center justify-center tabular-nums">
-                  {counter + 1}
-                </span>
+      {usersToShow.length > 0 && (
+        <ul className="divide-y">
+          {usersToShow.map((user, counter) => {
+            const avatar = user?.avatar
+              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
+              : '/images/default-avatar.png';
+            const rank = counter + 1;
 
-                <img
-                  src={avatar}
-                  alt={user.name}
-                  className="size-8 shrink-0 rounded-full"
-                />
-                <span className="truncate">{user.name}</span>
-              </div>
+            return (
+              <li
+                key={user.id}
+                className="flex items-center justify-between gap-1 p-2 px-4"
+              >
+                <div className="flex min-w-0 items-center gap-2">
+                  <span
+                    className={cn(
+                      'flex size-7 shrink-0 items-center justify-center font-medium tabular-nums',
+                      rank <= 3 ? 'text-black' : 'text-gray-400',
+                    )}
+                  >
+                    {rank}
+                  </span>
 
-              <span className="text-sm text-gray-500">{user.count}</span>
-            </li>
-          );
-        })}
-      </ul>
+                  <img
+                    src={avatar}
+                    alt={user.name}
+                    className="size-8 shrink-0 rounded-full"
+                  />
+                  <span className="truncate">{user.name}</span>
+                </div>
+
+                <span className="text-sm text-gray-500">{user.count}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
