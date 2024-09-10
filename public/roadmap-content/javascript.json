@@ -2077,6 +2077,11 @@
         "title": "Network request - Fetch",
         "url": "https://javascript.info/fetch",
         "type": "article"
+      },
+      {
+        "title": "Abort a fetch request manually in JavaScript",
+        "url": "https://www.amitmerchant.com/abort-fetch-request-manually-in-javascript/",
+        "type": "article"
       }
     ]
   },
