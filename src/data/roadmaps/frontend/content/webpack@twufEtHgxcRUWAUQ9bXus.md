@@ -4,7 +4,6 @@ Webpack is a popular open-source JavaScript module bundler that transforms, bund
 
 Visit the following resources to learn more:
 
-- [@article@Webpack Official Website](https://webpack.js.org/)
-- [@article@Webpack Documentation](https://webpack.js.org/concepts/)
+- [@official@Webpack Official Website](https://webpack.js.org/)
 - [@article@A Complete Guide to Webpack 5](https://www.valentinog.com/blog/webpack)
 - [@feed@Explore top posts about Webpack](https://app.daily.dev/tags/webpack?ref=roadmapsh)
