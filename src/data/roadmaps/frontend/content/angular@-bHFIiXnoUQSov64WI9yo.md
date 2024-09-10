@@ -5,5 +5,5 @@ Angular is a popular open-source web application framework developed and maintai
 Visit the following resources to learn more:
 
 - [@roadmap@Angular Roadmap](https://roadmap.sh/angular)
-- [@official@Angular Website](https://angular.io/start)
+- [@official@Angular Website](https://angular.dev)
 - [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)
