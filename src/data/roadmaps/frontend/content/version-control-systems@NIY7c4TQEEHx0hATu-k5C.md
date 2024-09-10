@@ -1,11 +1,10 @@
 # Version Control Systems
 
-Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code – if you’ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control systems allow you to get rid of this issue.
+Version Control Systems (VCS) are tools that help developers track and manage changes to code over time. They allow multiple people to work on a project simultaneously, maintaining a history of modifications. Git is the most popular VCS, known for its distributed nature and branching model. Other systems include Subversion (SVN) and Mercurial. VCS enables features like branching for parallel development, merging to combine changes, and reverting to previous states. They facilitate collaboration through remote repositories, pull requests, and code reviews. VCS also provides backup and recovery capabilities, conflict resolution, and the ability to tag specific points in history. By maintaining a detailed record of changes and supporting non-linear development, VCS has become an essential tool in modern software development, enhancing productivity, code quality, and team collaboration.
 
 Visit the following resources to learn more:
 
-- [@video@Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)
-- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
-- [@video@Learn Git in 20 Minutes](https://youtu.be/Y9XZQO1n_7c?t=21)
-- [@article@Git Documentation](https://git-scm.com/docs)
+- [@roadmap@Learn Git and GitHub](/git-github)
+- [@video@What is a Version Control System and why you should always use it](https://www.youtube.com/watch?v=IeXhYROClZk)
+- [@official@Git Documentation](https://git-scm.com/docs)
 - [@article@Learn Git by Atlassian](https://www.atlassian.com/git)

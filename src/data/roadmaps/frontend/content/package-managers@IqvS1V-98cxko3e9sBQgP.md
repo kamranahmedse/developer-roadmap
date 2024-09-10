@@ -1,12 +1,10 @@
 # Package Managers
 
-Package managers allow you to manage the dependencies (external code written by you or someone else) that your project needs to work correctly.
+Package managers are tools that automate the process of installing, updating, configuring, and removing software packages in a consistent manner. They handle dependency resolution, version management, and package distribution for programming languages and operating systems. Popular package managers include npm for JavaScript, pip for Python, and apt for Debian-based Linux distributions. These tools maintain a centralized repository of packages, allowing developers to easily share and reuse code. Package managers simplify project setup, ensure consistency across development environments, and help manage complex dependency trees. They play a crucial role in modern software development by streamlining workflow, enhancing collaboration, and improving code reusability.
 
 Visit the following resources to learn more:
 
-- [@article@Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 - [@article@An Absolute Beginners Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
-- [@article@Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)
-- [@video@NPM tutorial for Beginners](https://www.youtube.com/watch?v=2V1UUhBJ62Y)
+- [@official@Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)
 - [@video@NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
 - [@video@Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
