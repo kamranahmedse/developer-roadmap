@@ -85,9 +85,10 @@ export function DashboardPage(props: DashboardPageProps) {
                           href: `/respond-invite?i=${team.memberId}`,
                         }
                       : {
-                          onClick: () => {
-                            setSelectedTeamId(team._id);
-                          },
+                          href: `/team/activity?t=${team._id}`,
+                          // onClick: () => {
+                          //   setSelectedTeamId(team._id);
+                          // },
                         })}
                     avatar={avatarUrl}
                   />
@@ -97,7 +98,7 @@ export function DashboardPage(props: DashboardPageProps) {
                 label="+ Create Team"
                 isActive={false}
                 href="/team/new"
-                className="border bg-transparent border-dashed text-gray-500 border-gray-300 text-sm px-3 hover:border-gray-600 hover:text-black text-[13px]"
+                className="border border-dashed border-gray-300 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-gray-600 hover:text-black"
               />
             </>
           )}
