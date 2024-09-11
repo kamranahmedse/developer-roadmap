@@ -1,11 +1,11 @@
-import { Flag, Play, Send, Share } from 'lucide-react';
+import { Flag, Play, Send, Share, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../../lib/classname.ts';
 import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
 import { StepperAction } from './StepperAction.tsx';
 import { StepperStepSeparator } from './StepperStepSeparator.tsx';
 import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet } from '../../../lib/http.ts';
+import { httpGet, httpPost } from '../../../lib/http.ts';
 import { StartProjectModal } from '../StartProjectModal.tsx';
 import { getRelativeTimeString } from '../../../lib/date.ts';
 import { getUser, isLoggedIn } from '../../../lib/jwt.ts';
@@ -39,6 +39,8 @@ export function ProjectStepper(props: ProjectStepperProps) {
   const [isStartingProject, setIsStartingProject] = useState(false);
   const [isSubmittingProject, setIsSubmittingProject] = useState(false);
   const { copyText, isCopied } = useCopyText();
+
+  const [isStoppingProject, setIsStoppingProject] = useState(false);
 
   const [error, setError] = useState<string | null>(null);
   const [activeStep, setActiveStep] = useState<number>(0);
@@ -77,6 +79,22 @@ export function ProjectStepper(props: ProjectStepperProps) {
     setProjectStatus(response);
     setIsLoadingStatus(false);
   }
+
+  const stopProject = async () => {
+    setIsStoppingProject(true);
+    const { response, error } = await httpPost(
+      `${import.meta.env.PUBLIC_API_URL}/v1-stop-project/${projectId}`,
+      {},
+    );
+
+    if (error || !response) {
+      setIsStoppingProject(false);
+      setError(error?.message || 'Error stopping project');
+      return;
+    }
+
+    window.location.reload();
+  };
 
   useEffect(() => {
     loadProjectStatus().finally(() => {});
@@ -187,6 +205,20 @@ export function ProjectStepper(props: ProjectStepperProps) {
               View or update your submission.
             </button>
           </>
+        )}
+
+        {projectStatus.startedAt && !projectStatus.submittedAt && (
+          <button
+            className={cn(
+              'ml-auto hidden items-center gap-1 text-sm disabled:opacity-50 sm:flex',
+            )}
+            onClick={stopProject}
+            disabled={isStoppingProject}
+          >
+            <X className="h-3.5 w-3.5 stroke-[2.5px]" />
+            <span className="hidden md:inline">Stop Project</span>
+            <span className="md:hidden">Stop</span>
+          </button>
         )}
 
         {activeStep >= 2 && (
