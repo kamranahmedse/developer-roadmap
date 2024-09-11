@@ -1,9 +1,10 @@
 # Web sockets
 
-Web sockets are defined as a two-way communication between the servers and the clients, which mean both the parties, communicate and exchange data at the same time. This protocol defines a full duplex communication from the ground up. Web sockets take a step forward in bringing desktop rich functionalities to the web browsers.
+WebSockets provide a protocol for full-duplex, real-time communication between a client (usually a web browser) and a server over a single, long-lived connection. Unlike traditional HTTP, which requires multiple request-response cycles to exchange data, WebSockets establish a persistent connection that allows for continuous data exchange in both directions. This enables efficient real-time interactions, such as live chat, online gaming, and real-time updates on web pages. WebSocket connections start with an HTTP handshake, then upgrade to a WebSocket protocol, facilitating low-latency communication and reducing overhead compared to HTTP polling or long polling.
 
 Visit the following resources to learn more:
 
 - [@article@Introduction to WebSockets](https://www.tutorialspoint.com/websockets/index.htm)
 - [@video@A Beginners Guide to WebSockets](https://www.youtube.com/watch?v=8ARodQ4Wlf4)
+- [@video@How Web Sockets Work](https://www.youtube.com/watch?v=G0_e02DdH7I)
 - [@official@Socket.io Library Bidirectional and low-latency communication for every platform](https://socket.io/)
