@@ -962,10 +962,21 @@
       }
     ]
   },
-  "github-wikis@lONqOqD-4slxa9B5i9ADX.md": {
+  "lONqOqD-4slxa9B5i9ADX": {
     "title": "GitHub Wikis",
-    "description": "",
-    "links": []
+    "description": "GitHub Wikis are collaborative documentation spaces integrated directly into GitHub repositories. They provide a platform for teams to create, edit, and organize project-related information, such as documentation, guidelines, and FAQs. Wikis support Markdown formatting, making it easy to structure content and include images or links. With version control and the ability to clone wiki repositories, teams can collaboratively maintain up-to-date documentation alongside their code, enhancing project understanding and facilitating knowledge sharing among contributors and users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis",
+        "type": "article"
+      },
+      {
+        "title": "Documenting your project with Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis",
+        "type": "article"
+      }
+    ]
   },
   "i3AbARgzQtxtlB-1AS8zv": {
     "title": "Clean Git History",
