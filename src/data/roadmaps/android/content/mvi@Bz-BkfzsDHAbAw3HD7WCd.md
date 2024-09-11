@@ -1,4 +1,4 @@
-# MVI - Model View Intent
+# MVI
 
 The **MVI** `Model-View-Intent` pattern is a reactive architectural pattern, similar to **MVVM** and **MVP**, but with a focus on immutability and handling states in unidirectional cycles. In MVI:
 
@@ -7,3 +7,7 @@ The **MVI** `Model-View-Intent` pattern is a reactive architectural pattern, sim
 - Intent: These are the user's intentions that trigger state updates, managed by the `ViewModel`.
 
 The data flow is unidirectional: Intents update the Model's state through the `ViewModel`, and then the View reacts to the new state. This ensures a clear and predictable cycle between logic and the interface.
+
+Visit the following resources to learn more:
+
+- [@article@MVI with Kotlin](https://proandroiddev.com/mvi-architecture-with-kotlin-flows-and-channels-d36820b2028d)
