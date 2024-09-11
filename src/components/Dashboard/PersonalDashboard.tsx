@@ -275,6 +275,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         progresses={customRoadmapsToShow}
         isLoading={isLoading}
       />
+
       <ListDashboardCustomProgress
         progresses={aiGeneratedRoadmaps}
         isLoading={isLoading}
