@@ -24,6 +24,7 @@ export type UserProgress = {
   updatedAt: string;
   isCustomResource?: boolean;
   roadmapSlug?: string;
+  aiRoadmapId?: string;
 };
 
 export type TeamMember = {
