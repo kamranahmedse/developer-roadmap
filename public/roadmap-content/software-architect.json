@@ -1155,10 +1155,21 @@
     "description": "",
     "links": []
   },
-  "functional-programming@6FDGecsHbqY-cm32yTZJa.md": {
+  "6FDGecsHbqY-cm32yTZJa": {
     "title": "Functional Programming",
-    "description": "",
-    "links": []
+    "description": "Functional programming is a programming paradigm designed to handle pure mathematical functions. This paradigm is totally focused on writing more compounded and pure functions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Functional Programming with JavaScript",
+        "url": "https://www.telerik.com/blogs/functional-programming-javascript",
+        "type": "article"
+      },
+      {
+        "title": "Learning Functional Programming",
+        "url": "https://youtube.com/watch?v=e-5obm1G_FY",
+        "type": "video"
+      }
+    ]
   },
   "mCiYCbKIOVU34qil_q7Hg": {
     "title": "React, Vue, Angular",
