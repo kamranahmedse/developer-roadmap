@@ -61,7 +61,7 @@ export function TeamMembersPage() {
 
   async function loadTeam() {
     const { response, error } = await httpGet<TeamDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -75,7 +75,7 @@ export function TeamMembersPage() {
 
   async function getTeamMemberList() {
     const { response, error } = await httpGet<TeamMemberItem[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to load team member list');
@@ -100,7 +100,7 @@ export function TeamMembersPage() {
       `${
         import.meta.env.PUBLIC_API_URL
       }/v1-delete-member/${teamId}/${memberId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -118,7 +118,7 @@ export function TeamMembersPage() {
       `${
         import.meta.env.PUBLIC_API_URL
       }/v1-resend-invite/${teamId}/${memberId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -135,7 +135,7 @@ export function TeamMembersPage() {
       `${
         import.meta.env.PUBLIC_API_URL
       }/v1-send-progress-reminder/${teamId}/${memberId}`,
-      {}
+      {},
     );
 
     if (error || !response) {
@@ -146,14 +146,26 @@ export function TeamMembersPage() {
     toast.success('Reminder has been sent');
   }
 
-  const joinedMembers = teamMembers.filter(
-    (member) => member.status === 'joined'
+  const enrichedMembers = teamMembers.map((member) => {
+    const shouldNotShowProgressWarning =
+      team?.personalProgressOnly &&
+      !canManageCurrentTeam &&
+      member.userId !== user?.id;
+
+    return {
+      ...member,
+      ...(shouldNotShowProgressWarning ? { hasProgress: true } : {}),
+    };
+  });
+
+  const joinedMembers = enrichedMembers.filter(
+    (member) => member.status === 'joined',
   );
-  const invitedMembers = teamMembers.filter(
-    (member) => member.status === 'invited'
+  const invitedMembers = enrichedMembers.filter(
+    (member) => member.status === 'invited',
   );
-  const rejectedMembers = teamMembers.filter(
-    (member) => member.status === 'rejected'
+  const rejectedMembers = enrichedMembers.filter(
+    (member) => member.status === 'rejected',
   );
 
   return (
@@ -269,7 +281,9 @@ export function TeamMembersPage() {
 
         {rejectedMembers.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-xs uppercase text-gray-400">Rejected Invites</h3>
+            <h3 className="text-xs uppercase text-gray-400">
+              Rejected Invites
+            </h3>
             <div className="mt-2 rounded-b-sm rounded-t-md border">
               {rejectedMembers.map((member, index) => {
                 return (

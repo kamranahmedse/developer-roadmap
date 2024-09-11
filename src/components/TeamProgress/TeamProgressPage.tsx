@@ -81,15 +81,28 @@ export function TeamProgressPage() {
     }
 
     setTeamMembers(
-      response.sort((a, b) => {
-        if (a.email === user?.email) {
-          return -1;
-        }
-        if (b.email === user?.email) {
-          return 1;
-        }
-        return 0;
-      }),
+      response
+        .filter((member) => {
+          // If personal progress only is enabled, only show the current user's progress
+          // and only if the user is a member
+          if (
+            currentTeam?.personalProgressOnly &&
+            currentTeam?.role === 'member'
+          ) {
+            return member.email === user?.email;
+          }
+
+          return true;
+        })
+        .sort((a, b) => {
+          if (a.email === user?.email) {
+            return -1;
+          }
+          if (b.email === user?.email) {
+            return 1;
+          }
+          return 0;
+        }),
     );
   }
 
@@ -191,7 +204,7 @@ export function TeamProgressPage() {
             key={grouping.value}
             className={`rounded-md border p-1 px-2 text-sm ${
               selectedGrouping === grouping.value
-                ? ' border-gray-400 bg-gray-200 '
+                ? 'border-gray-400 bg-gray-200'
                 : ''
             }`}
             onClick={() => setSelectedGrouping(grouping.value)}
