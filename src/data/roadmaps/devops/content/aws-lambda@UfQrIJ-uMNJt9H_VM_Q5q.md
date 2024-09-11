@@ -4,6 +4,6 @@ AWS Lambda is an event-driven, serverless Function as a Service provided by Amaz
 
 Visit the following resources to learn more:
 
-- [@official@AWS Lambda](https://aws.amazon.com/lambda/)
 - [@official@AWS Lambda Introduction](https://docs.aws.amazon.com/lambda/latest/operatorguide/intro.html)
+- [@video@AWS Lambda Tutorial: Getting Started with Serverless Computing](https://www.youtube.com/watch?v=RtiWU1DrMaM)
 - [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
