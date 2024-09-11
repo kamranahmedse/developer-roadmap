@@ -1,19 +1,8 @@
 # Building for Scale
 
-Speaking in general terms, scalability is the ability of a system to handle a growing amount of work by adding resources to it.
+Speaking in general terms, scalability is the ability of a system to handle a growing amount of work by adding resources to it.A software that was conceived with a scalable architecture in mind, is a system that will support higher workloads without any fundamental changes to it, but don't be fooled, this isn't magic. You'll only get so far with smart thinking without adding more sources to it. When you think about the infrastructure of a scalable system, you have two main ways of building it: using on-premises resources or leveraging all the tools a cloud provider can give you.
 
-A software that was conceived with a scalable architecture in mind, is a system that will support higher workloads without any fundamental changes to it, but don't be fooled, this isn't magic. You'll only get so far with smart thinking without adding more sources to it.
-
-For a system to be scalable, there are certain things you must pay attention to, like:
-
-- Coupling
-- Observability
-- Evolvability
-- Infrastructure
-
-When you think about the infrastructure of a scalable system, you have two main ways of building it: using on-premises resources or leveraging all the tools a cloud provider can give you.
-
-The main difference between on-premises and cloud resources will be FLEXIBILITY, on cloud providers you don't really need to plan ahead, you can upgrade your infrastructure with a couple of clicks, while with on-premises resources you will need a certain level of planning.
+The main difference between on-premises and cloud resources will be **flexibility**, on cloud providers you don't really need to plan ahead, you can upgrade your infrastructure with a couple of clicks, while with on-premises resources you will need a certain level of planning.
 
 Visit the following resources to learn more:
 
