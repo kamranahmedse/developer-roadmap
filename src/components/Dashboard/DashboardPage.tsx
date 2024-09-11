@@ -64,6 +64,7 @@ export function DashboardPage(props: DashboardPageProps) {
           {isLoading && (
             <>
               <DashboardTabSkeleton />
+              <DashboardTabSkeleton />
             </>
           )}
 
@@ -96,7 +97,7 @@ export function DashboardPage(props: DashboardPageProps) {
                 label="+ Create Team"
                 isActive={false}
                 href="/team/new"
-                className="border bg-transparent border-dashed text-gray-500 border-gray-300 text-sm px-3 hover:border-gray-600 hover:text-black"
+                className="border bg-transparent border-dashed text-gray-500 border-gray-300 text-sm px-3 hover:border-gray-600 hover:text-black text-[13px]"
               />
             </>
           )}
@@ -117,6 +118,6 @@ export function DashboardPage(props: DashboardPageProps) {
 
 function DashboardTabSkeleton() {
   return (
-    <div className="h-[30px] w-[120px] animate-pulse rounded-md border bg-white"></div>
+    <div className="h-[30px] w-[114px] animate-pulse rounded-md border bg-white"></div>
   );
 }

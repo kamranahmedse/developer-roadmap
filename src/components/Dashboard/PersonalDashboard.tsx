@@ -182,7 +182,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
   const recommendedRoadmapIds = new Set(
     relatedRoadmapIds.length === 0
-      ? ['frontend', 'backend', 'devops', 'ai-data-scientist', 'full-stack']
+      ? ['frontend', 'backend', 'devops', 'ai-data-scientist', 'full-stack', 'api-design']
       : relatedRoadmapIds,
   );
 
@@ -242,21 +242,21 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
             <DashboardCard
               icon={BookEmoji}
-              title="Learn a new Skill"
-              description="Visit our Roadmaps"
+              title="Visit Roadmaps"
+              description="Learn new skills"
               href="/roadmaps"
             />
 
             <DashboardCard
               icon={ConstructionEmoji}
-              title="Practice your skills"
-              description="Visit Projects"
+              title="Build Projects"
+              description="Practice what you learn"
               href="/backend/projects"
             />
             <DashboardCard
               icon={CheckEmoji}
-              title="Do things right way"
-              description="Visit Best Practices"
+              title="Best Practices"
+              description="Do things right way"
               href="/best-practices"
             />
           </>
