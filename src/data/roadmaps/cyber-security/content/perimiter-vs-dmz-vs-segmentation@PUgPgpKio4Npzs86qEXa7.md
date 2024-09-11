@@ -23,6 +23,7 @@ To implement a DMZ in your network, you can use devices such as firewalls, route
 - DMZ segmentation involves creating a separate, secure area within the network for hosting public-facing services that need to be accessible to external users while maintaining additional security for internal assets.
 - Implementing proper network segmentation and security policies can significantly reduce the risk of data breaches and other security threats.
 
-## Segmentation cheat sheets
-- [Best-practice-for-network-segmentation](https://github.com/sergiomarotco/Network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines 4 levels of segmentation from basic to advanced.
-- [OWASP Network segmentation Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Network_Segmentation_Cheat_Sheet.md#network-segmentation-cheat-sheet) by [Sergiomarotco](https://github.com/sergiomarotco) defines the basics of web service segmentation.
+Learn more from the following resources:
+
+- [@opensource@Best practice for network segmentation](https://github.com/sergiomarotco/Network-segmentation-cheat-sheet)
+- [@opensource@OWASP Network segmentation Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Network_Segmentation_Cheat_Sheet.md#network-segmentation-cheat-sheet)
