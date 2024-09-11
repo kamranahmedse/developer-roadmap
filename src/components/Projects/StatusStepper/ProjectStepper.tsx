@@ -207,7 +207,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
           </>
         )}
 
-        {projectStatus.startedAt && !projectStatus.submittedAt && (
+        {projectStatus?.startedAt && !projectStatus?.submittedAt && (
           <button
             className={cn(
               'ml-auto hidden items-center gap-1 text-sm disabled:opacity-50 sm:flex',
