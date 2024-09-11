@@ -36,7 +36,7 @@ export function DashboardCustomProgressCard(props: DashboardCustomProgressCardPr
   return (
     <a
       href={url}
-      className="group relative flex min-h-[80px] w-full flex-col justify-between overflow-hidden rounded-md border bg-white p-3 text-left text-sm shadow-sm transition-all hover:border-gray-300"
+      className="group relative flex min-h-[80px] w-full flex-col justify-between overflow-hidden rounded-md border bg-white p-3 text-left text-sm shadow-sm transition-all hover:border-gray-400 hover:bg-gray-50"
     >
       <h4 className="truncate font-medium text-gray-900">{resourceTitle}</h4>
 

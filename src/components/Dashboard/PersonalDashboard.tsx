@@ -13,6 +13,7 @@ import { $accountStreak, type StreakResponse } from '../../stores/streak';
 import { CheckEmoji } from '../ReactIcons/CheckEmoji.tsx';
 import { ConstructionEmoji } from '../ReactIcons/ConstructionEmoji.tsx';
 import { BookEmoji } from '../ReactIcons/BookEmoji.tsx';
+import { DashboardAiRoadmaps } from './DashboardAiRoadmaps.tsx';
 
 type UserDashboardResponse = {
   name: string;
@@ -22,6 +23,11 @@ type UserDashboardResponse = {
   username: string;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
+  aiRoadmaps: {
+    id: string;
+    title: string;
+    slug: string;
+  }[];
   topicDoneToday: number;
 };
 
@@ -142,6 +148,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return updatedAtB.getTime() - updatedAtA.getTime();
     });
 
+  const aiGeneratedRoadmaps = personalDashboardDetails?.aiRoadmaps || [];
   const customRoadmaps = (personalDashboardDetails?.progresses || [])
     .filter((progress) => progress.isCustomResource)
     .sort((a, b) => {
@@ -149,13 +156,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       const updatedAtB = new Date(b.updatedAt);
       return updatedAtB.getTime() - updatedAtA.getTime();
     });
-
-  const aiGeneratedRoadmaps = customRoadmaps.filter(
-    (progress) => progress?.aiRoadmapId,
-  );
-  const customRoadmapsToShow = customRoadmaps.filter(
-    (progress) => !progress?.aiRoadmapId,
-  );
 
   const { avatar, name } = personalDashboardDetails || {};
   const avatarLink = avatar
@@ -182,7 +182,14 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
   const recommendedRoadmapIds = new Set(
     relatedRoadmapIds.length === 0
-      ? ['frontend', 'backend', 'devops', 'ai-data-scientist', 'full-stack', 'api-design']
+      ? [
+          'frontend',
+          'backend',
+          'devops',
+          'ai-data-scientist',
+          'full-stack',
+          'api-design',
+        ]
       : relatedRoadmapIds,
   );
 
@@ -272,14 +279,13 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       />
 
       <ListDashboardCustomProgress
-        progresses={customRoadmapsToShow}
+        progresses={customRoadmaps}
         isLoading={isLoading}
       />
 
-      <ListDashboardCustomProgress
-        progresses={aiGeneratedRoadmaps}
+      <DashboardAiRoadmaps
+        roadmaps={aiGeneratedRoadmaps}
         isLoading={isLoading}
-        isAIGeneratedRoadmaps={true}
       />
 
       <RecommendedRoadmaps

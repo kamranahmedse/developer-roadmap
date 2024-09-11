@@ -58,7 +58,7 @@ export function RecommendedRoadmapCard(props: RecommendedRoadmapCardProps) {
   return (
     <a
       href={url}
-      className="font-regular text-sm sm:text-base group relative block rounded-lg border border-gray-200 bg-white px-2.5 py-2 text-black no-underline hover:border-gray-400 hover:bg-gray-50"
+      className="font-regular text-sm sm:text-sm group relative block rounded-lg border border-gray-200 bg-white px-2.5 py-2 text-black no-underline hover:border-gray-400 hover:bg-gray-50"
     >
       <MarkFavorite className={'opacity-30'} resourceType={'roadmap'} resourceId={roadmap.id} />
       {title}
