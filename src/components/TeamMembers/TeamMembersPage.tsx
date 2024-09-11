@@ -146,25 +146,13 @@ export function TeamMembersPage() {
     toast.success('Reminder has been sent');
   }
 
-  const enrichedMembers = teamMembers.map((member) => {
-    const shouldNotShowProgressWarning =
-      team?.personalProgressOnly &&
-      !canManageCurrentTeam &&
-      member.userId !== user?.id;
-
-    return {
-      ...member,
-      ...(shouldNotShowProgressWarning ? { hasProgress: true } : {}),
-    };
-  });
-
-  const joinedMembers = enrichedMembers.filter(
+  const joinedMembers = teamMembers.filter(
     (member) => member.status === 'joined',
   );
-  const invitedMembers = enrichedMembers.filter(
+  const invitedMembers = teamMembers.filter(
     (member) => member.status === 'invited',
   );
-  const rejectedMembers = enrichedMembers.filter(
+  const rejectedMembers = teamMembers.filter(
     (member) => member.status === 'rejected',
   );
 
@@ -217,6 +205,11 @@ export function TeamMembersPage() {
                 index={index}
                 teamId={teamId}
                 userId={user?.id!}
+                canViewProgress={
+                  canManageCurrentTeam ||
+                  !team?.personalProgressOnly ||
+                  String(member.userId) === user?.id
+                }
                 onResendInvite={() => {
                   resendInvite(teamId, member._id!).finally(() => {
                     pageProgressMessage.set('');
@@ -253,6 +246,7 @@ export function TeamMembersPage() {
                     index={index}
                     teamId={teamId}
                     userId={user?.id!}
+                    canViewProgress={false}
                     onResendInvite={() => {
                       resendInvite(teamId, member._id!).finally(() => {
                         pageProgressMessage.set('');
@@ -292,6 +286,7 @@ export function TeamMembersPage() {
                     member={member}
                     index={index}
                     teamId={teamId}
+                    canViewProgress={false}
                     userId={user?.id!}
                     onResendInvite={() => {
                       resendInvite(teamId, member._id!).finally(() => {

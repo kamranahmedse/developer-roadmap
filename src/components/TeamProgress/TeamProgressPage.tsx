@@ -10,6 +10,7 @@ import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { MemberProgressModal } from './MemberProgressModal';
 import { MemberCustomProgressModal } from './MemberCustomProgressModal';
+import { canManageCurrentRoadmap } from '../../stores/roadmap.ts';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -81,28 +82,15 @@ export function TeamProgressPage() {
     }
 
     setTeamMembers(
-      response
-        .filter((member) => {
-          // If personal progress only is enabled, only show the current user's progress
-          // and only if the user is a member
-          if (
-            currentTeam?.personalProgressOnly &&
-            currentTeam?.role === 'member'
-          ) {
-            return member.email === user?.email;
-          }
-
-          return true;
-        })
-        .sort((a, b) => {
-          if (a.email === user?.email) {
-            return -1;
-          }
-          if (b.email === user?.email) {
-            return 1;
-          }
-          return 0;
-        }),
+      response.sort((a, b) => {
+        if (a.email === user?.email) {
+          return -1;
+        }
+        if (b.email === user?.email) {
+          return 1;
+        }
+        return 0;
+      }),
     );
   }
 
@@ -236,21 +224,32 @@ export function TeamProgressPage() {
         )}
         {selectedGrouping === 'member' && (
           <div className="grid gap-4 sm:grid-cols-2">
-            {teamMembers.map((member) => (
-              <MemberProgressItem
-                key={member._id}
-                member={member}
-                teamId={teamId}
-                isMyProgress={member?.email === user?.email}
-                onShowResourceProgress={(resourceId, isCustomResource) => {
-                  setShowMemberProgress({
-                    resourceId,
-                    member,
-                    isCustomResource,
-                  });
-                }}
-              />
-            ))}
+            {teamMembers.map((member) => {
+              const canViewMemberProgress =
+                currentTeam?.role !== 'member' ||
+                !currentTeam?.personalProgressOnly ||
+                member.email === user?.email;
+
+              if (!canViewMemberProgress) {
+                return null;
+              }
+
+              return (
+                <MemberProgressItem
+                  key={member._id}
+                  member={member}
+                  teamId={teamId}
+                  isMyProgress={member?.email === user?.email}
+                  onShowResourceProgress={(resourceId, isCustomResource) => {
+                    setShowMemberProgress({
+                      resourceId,
+                      member,
+                      isCustomResource,
+                    });
+                  }}
+                />
+              );
+            })}
           </div>
         )}
       </div>
