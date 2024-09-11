@@ -27,12 +27,10 @@ export function DashboardBookmarkCard(props: DashboardBookmarkCardProps) {
     <a
       href={url}
       key={resourceId}
-      className="group relative flex w-full items-center gap-2 text-left text-sm"
+      className="group relative flex w-full items-center gap-2 text-left text-sm hover:text-black hover:underline"
     >
-      <Bookmark className="size-4 fill-current text-gray-500 group-hover:text-gray-600" />
-      <h4 className="truncate font-medium text-gray-900 group-hover:text-gray-600">
-        {resourceTitle}
-      </h4>
+      <Bookmark className="size-4 fill-current text-gray-400" />
+      <h4 className="truncate font-medium text-gray-900">{resourceTitle}</h4>
     </a>
   );
 }

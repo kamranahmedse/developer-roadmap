@@ -119,11 +119,7 @@ export function ProgressStack(props: ProgressStackProps) {
     props;
 
   const bookmarkedProgresses = progresses.filter(
-    (progress) =>
-      progress?.isFavorite &&
-      progress?.done === 0 &&
-      progress?.learning === 0 &&
-      progress?.skipped === 0,
+    (progress) => progress?.isFavorite,
   );
 
   const userProgresses = progresses.filter(
@@ -198,7 +194,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllProgresses}
               count={userProgresses.length}
               maxCount={MAX_PROGRESS_TO_SHOW}
-              className="mt-3 mb-0.5"
+              className="mb-0.5 mt-3"
             />
           )}
         </ProgressLane>
@@ -226,7 +222,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllProjects}
               count={projects.length}
               maxCount={MAX_PROJECTS_TO_SHOW}
-              className="mt-3 mb-0.5"
+              className="mb-0.5 mt-3"
             />
           )}
         </ProgressLane>
@@ -258,7 +254,7 @@ export function ProgressStack(props: ProgressStackProps) {
               setShowAll={setShowAllBookmarks}
               count={bookmarkedProgresses.length}
               maxCount={MAX_BOOKMARKS_TO_SHOW}
-              className="mt-3 mb-0.5"
+              className="mb-0.5 mt-3"
             />
           )}
         </ProgressLane>
