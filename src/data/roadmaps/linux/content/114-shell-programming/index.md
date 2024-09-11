@@ -12,3 +12,7 @@ A simple example of a bash shell script:
 echo "Hello, World!"
 ```
 The 'echo' command prints its argument, in this case "Hello, World!", to the terminal.
+
+Visit the following resources to learn more:
+
+- [@article@Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
