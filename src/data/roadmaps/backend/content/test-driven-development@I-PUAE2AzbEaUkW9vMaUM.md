@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@What is Test Driven Development (TDD)?](https://www.guru99.com/test-driven-development.html)
 - [@article@Test-driven development](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/)
-- [@video@Agile in Practice: Test Driven Development](https://youtu.be/uGaNkTahrIw)
+- [@video@Test-Driven Development](https://www.youtube.com/watch?v=Jv2uxzhPFl4)
 - [@feed@Explore top posts about TDD](https://app.daily.dev/tags/tdd?ref=roadmapsh)

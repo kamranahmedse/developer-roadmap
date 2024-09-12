@@ -1,7 +1,9 @@
 # Transactions
 
-In short, a database transaction is a sequence of multiple operations performed on a database, and all served as a single logical unit of work — taking place wholly or not at all. In other words, there's never a case where only half of the operations are performed and the results saved.
+In database systems, a transaction is a series of operations that are executed as a single, atomic unit to ensure data integrity and consistency. Transactions adhere to the ACID properties: Atomicity ensures all operations complete successfully or none are applied; Consistency maintains the database's valid state; Isolation prevents transactions from interfering with each other; and Durability guarantees that once a transaction is committed, its changes are permanent. These properties collectively ensure that databases handle concurrent operations reliably and maintain accurate and consistent data even in the face of failures.
 
 Visit the following resources to learn more:
 
 - [@article@What are Transactions?](https://fauna.com/blog/database-transaction)
+- [@video@What is a Database transaction?](https://www.youtube.com/watch?v=wHUOeXbZCYA)
+- [@video@ACID Properties in Databases With Examples](https://www.youtube.com/watch?v=GAe5oB742dw)
