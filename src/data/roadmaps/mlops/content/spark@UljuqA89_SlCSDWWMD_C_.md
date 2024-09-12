@@ -4,6 +4,6 @@ Apache Spark is an open-source distributed computing system designed for big dat
 
 Visit the following resources to learn more:
 
-- [@OfficialApacheSpark](https://spark.apache.org/documentation.html)
+- [@official@ApacheSpark](https://spark.apache.org/documentation.html)
 - [@article@Spark By Examples](https://sparkbyexamples.com)
 - [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)
