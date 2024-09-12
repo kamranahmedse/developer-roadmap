@@ -68,6 +68,6 @@ export function RecommendedRoadmapCard(props: RecommendedRoadmapCardProps) {
 
 function RecommendedCardSkeleton() {
   return (
-    <div className="h-[42px] w-full animate-pulse rounded-md bg-gray-200" />
+    <div className="h-[38px] w-full animate-pulse rounded-md bg-gray-200" />
   );
 }
