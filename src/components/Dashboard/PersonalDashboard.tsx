@@ -169,12 +169,14 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   ];
 
   const relatedRoadmapIds = allRoadmapsAndBestPractices
+    // take the ones that user is learning
     .filter((roadmap) =>
       learningRoadmapsToShow?.some(
         (learningRoadmap) => learningRoadmap.resourceId === roadmap.id,
       ),
     )
     .flatMap((roadmap) => roadmap.relatedRoadmapIds)
+    // remove the ones that user is already learning or has bookmarked
     .filter(
       (roadmapId) =>
         !learningRoadmapsToShow.some((lr) => lr.resourceId === roadmapId),
