@@ -1,4 +1,4 @@
-import { Flag, Play, Send, Share, X } from 'lucide-react';
+import { Flag, Play, Send, Share, Square, StopCircle, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../../lib/classname.ts';
 import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
@@ -13,6 +13,7 @@ import { showLoginPopup } from '../../../lib/popup.ts';
 import { SubmitProjectModal } from '../SubmitProjectModal.tsx';
 import { useCopyText } from '../../../hooks/use-copy-text.ts';
 import { CheckIcon } from '../../ReactIcons/CheckIcon.tsx';
+import { pageProgressMessage } from '../../../stores/page.ts';
 
 type ProjectStatusResponse = {
   id?: string;
@@ -93,7 +94,12 @@ export function ProjectStepper(props: ProjectStepperProps) {
       return;
     }
 
-    window.location.reload();
+    pageProgressMessage.set('Update project status');
+    setActiveStep(0);
+    loadProjectStatus().finally(() => {
+      pageProgressMessage.set('');
+      setIsStoppingProject(false);
+    });
   };
 
   useEffect(() => {
@@ -210,13 +216,13 @@ export function ProjectStepper(props: ProjectStepperProps) {
         {projectStatus?.startedAt && !projectStatus?.submittedAt && (
           <button
             className={cn(
-              'ml-auto hidden items-center gap-1 text-sm disabled:opacity-50 sm:flex',
+              'ml-auto hidden items-center gap-1.5 text-sm hover:text-black disabled:opacity-50 sm:flex',
             )}
             onClick={stopProject}
             disabled={isStoppingProject}
           >
-            <X className="h-3.5 w-3.5 stroke-[2.5px]" />
-            <span className="hidden md:inline">Stop Project</span>
+            <Square className="h-3 w-3 fill-current stroke-[2.5px]" />
+            <span className="hidden md:inline">Stop Working</span>
             <span className="md:hidden">Stop</span>
           </button>
         )}
