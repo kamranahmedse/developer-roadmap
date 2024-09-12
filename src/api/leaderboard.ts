@@ -9,7 +9,10 @@ export type LeadeboardUserDetails = {
 };
 
 export type ListLeaderboardStatsResponse = {
-  longestStreaks: LeadeboardUserDetails[];
+  streaks: {
+    active: LeadeboardUserDetails[];
+    lifetime: LeadeboardUserDetails[];
+  };
   projectSubmissions: {
     currentMonth: LeadeboardUserDetails[];
     lifetime: LeadeboardUserDetails[];

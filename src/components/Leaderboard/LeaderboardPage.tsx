@@ -34,8 +34,14 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
               title="Longest Visit Streak"
               tabs={[
                 {
-                  title: 'All Time',
-                  users: stats.longestStreaks,
+                  title: 'Active',
+                  users: stats.streaks?.active || [],
+                  emptyIcon: <Zap className="size-16 text-gray-300" />,
+                  emptyText: 'No users with streaks yet',
+                },
+                {
+                  title: 'Lifetime',
+                  users: stats.streaks?.lifetime || [],
                   emptyIcon: <Zap className="size-16 text-gray-300" />,
                   emptyText: 'No users with streaks yet',
                 },
