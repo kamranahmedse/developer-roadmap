@@ -30,7 +30,7 @@ export function DashboardBookmarkCard(props: DashboardBookmarkCardProps) {
       className="group relative flex flex-row items-center gap-2 rounded-md border border-gray-300 bg-white px-1.5 py-2 text-left text-sm transition-all hover:border-gray-400"
     >
       <Bookmark className="size-4 fill-current text-gray-300" />
-      <h4 className="truncate font-medium text-gray-900">{resourceTitle}</h4>
+      <h4 className="truncate text-gray-900">{resourceTitle}</h4>
     </a>
   );
 }
