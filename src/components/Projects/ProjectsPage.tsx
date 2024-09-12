@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
-import {Box, Filter, Group, X} from 'lucide-react';
+import { Box, Filter, Group, X } from 'lucide-react';
 import {
   deleteUrlParam,
   getUrlParams,
@@ -81,6 +81,18 @@ export function ProjectsPage(props: ProjectsPageProps) {
     (group) => group.id === activeGroup,
   );
 
+  const requiredSortOrder = [
+    'Frontend',
+    'Backend',
+    'DevOps',
+    'Full-stack',
+    'JavaScript',
+    'Go',
+    'Python',
+    'Node.js',
+    'Java',
+  ];
+
   return (
     <div className="border-t bg-gray-100">
       <button
@@ -122,20 +134,40 @@ export function ProjectsPage(props: ProjectsPageProps) {
                 selected={activeGroup === ''}
               />
 
-              {roadmapsProjects.map((group) => (
-                <CategoryFilterButton
-                  key={group.id}
-                  onClick={() => {
-                    setActiveGroup(group.id);
-                    setIsFilterOpen(false);
-                    document?.getElementById('filter-button')?.scrollIntoView();
-                    setVisibleProjects(group.projects);
-                    setUrlParams({ g: group.id });
-                  }}
-                  category={group.title}
-                  selected={activeGroup === group.id}
-                />
-              ))}
+              {roadmapsProjects
+                .sort((a, b) => {
+                  const aIndex = requiredSortOrder.indexOf(a.title);
+                  const bIndex = requiredSortOrder.indexOf(b.title);
+
+                  if (aIndex === -1 && bIndex === -1) {
+                    return a.title.localeCompare(b.title);
+                  }
+
+                  if (aIndex === -1) {
+                    return 1;
+                  }
+
+                  if (bIndex === -1) {
+                    return -1;
+                  }
+                  return aIndex - bIndex;
+                })
+                .map((group) => (
+                  <CategoryFilterButton
+                    key={group.id}
+                    onClick={() => {
+                      setActiveGroup(group.id);
+                      setIsFilterOpen(false);
+                      document
+                        ?.getElementById('filter-button')
+                        ?.scrollIntoView();
+                      setVisibleProjects(group.projects);
+                      setUrlParams({ g: group.id });
+                    }}
+                    category={group.title}
+                    selected={activeGroup === group.id}
+                  />
+                ))}
             </div>
           </div>
         </div>

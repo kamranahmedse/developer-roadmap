@@ -11,7 +11,10 @@ const allRoadmapIds = Object.keys(roadmapProjects);
 
 const allRoadmaps = await getRoadmapsByIds(allRoadmapIds);
 const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
-  const projects = roadmapProjects[roadmap.id];
+  const projects = (roadmapProjects[roadmap.id] || []).sort((a, b) => {
+    return a.frontmatter.sort - b.frontmatter.sort;
+  });
+
   return {
     id: roadmap.id,
     title: roadmap.frontmatter.briefTitle,
