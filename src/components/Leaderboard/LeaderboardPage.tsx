@@ -4,8 +4,11 @@ import type {
   ListLeaderboardStatsResponse,
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
-import { FolderKanban, Zap } from 'lucide-react';
-import { RankBadeIcon } from '../ReactIcons/RankBadgeIcon';
+import { FolderKanban, Zap, Trophy } from 'lucide-react';
+import { RankBadgeIcon } from '../ReactIcons/RankBadgeIcon';
+import { TrophyEmoji } from '../ReactIcons/TrophyEmoji';
+import { SecondPlaceMedalEmoji } from '../ReactIcons/SecondPlaceMedalEmoji';
+import { ThirdPlaceMedalEmoji } from '../ReactIcons/ThirdPlaceMedalEmoji';
 
 type LeaderboardPageProps = {
   stats: ListLeaderboardStatsResponse;
@@ -17,42 +20,45 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container py-10">
-        <h2 className="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-3xl">
-          Leaderboard
-        </h2>
-        <p className="text-balance text-sm text-gray-500 sm:text-base">
-          Top users based on their activity on roadmap.sh
-        </p>
+        <div className="mb-8 text-center">
+          <div className="mb-2 flex items-center justify-center gap-3">
+            <Trophy className="size-8 text-yellow-500" />
+            <h2 className="text-2xl font-bold sm:text-3xl">Leaderboard</h2>
+          </div>
+          <p className="mx-auto max-w-2xl text-balance text-sm text-gray-500 sm:text-base">
+            Top users based on their activity on roadmap.sh
+          </p>
 
-        <div className="mt-8 grid gap-2 md:grid-cols-2">
-          <LeaderboardLane
-            title="Longest Visit Streak"
-            tabs={[
-              {
-                title: 'All Time',
-                users: stats.longestStreaks,
-                emptyIcon: <Zap className="size-16 text-gray-300" />,
-                emptyText: 'No users with streaks yet',
-              },
-            ]}
-          />
-          <LeaderboardLane
-            title="Projects Completed"
-            tabs={[
-              {
-                title: 'This Month',
-                users: stats.projectSubmissions.currentMonth,
-                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                emptyText: 'No projects submitted this month',
-              },
-              {
-                title: 'Lifetime',
-                users: stats.projectSubmissions.lifetime,
-                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                emptyText: 'No projects submitted yet',
-              },
-            ]}
-          />
+          <div className="mt-8 grid gap-2 md:grid-cols-2">
+            <LeaderboardLane
+              title="Longest Visit Streak"
+              tabs={[
+                {
+                  title: 'All Time',
+                  users: stats.longestStreaks,
+                  emptyIcon: <Zap className="size-16 text-gray-300" />,
+                  emptyText: 'No users with streaks yet',
+                },
+              ]}
+            />
+            <LeaderboardLane
+              title="Projects Completed"
+              tabs={[
+                {
+                  title: 'This Month',
+                  users: stats.projectSubmissions.currentMonth,
+                  emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                  emptyText: 'No projects submitted this month',
+                },
+                {
+                  title: 'Lifetime',
+                  users: stats.projectSubmissions.lifetime,
+                  emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                  emptyText: 'No projects submitted yet',
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -76,12 +82,12 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   const { users: usersToShow, emptyIcon, emptyText } = activeTab;
 
   return (
-    <div className="rounded-md border bg-white shadow-sm">
-      <div className="flex items-center justify-between gap-2 border-b px-4 py-2">
-        <h2 className="text-lg font-medium">{title}</h2>
+    <div className="overflow-hidden rounded-md border bg-white shadow-sm">
+      <div className="flex items-center justify-between gap-2 bg-gray-100 px-3 py-2 mb-3">
+        <h3 className="text-base text-sm font-medium">{title}</h3>
 
         {tabs.length > 1 && (
-          <div className="flex items-center overflow-hidden rounded-md border">
+          <div className="flex items-center gap-2">
             {tabs.map((tab) => {
               const isActive = tab === activeTab;
 
@@ -90,8 +96,11 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   key={tab.title}
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'px-2 py-0.5 text-sm text-gray-500 hover:bg-gray-100',
-                    isActive ? 'bg-gray-200 text-black' : 'bg-white',
+                    'text-xs font-medium underline-offset-2 transition-colors',
+                    {
+                      'text-black underline': isActive,
+                      'text-gray-400 hover:text-gray-600': !isActive,
+                    },
                   )}
                 >
                   {tab.title}
@@ -110,7 +119,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
       )}
 
       {usersToShow.length > 0 && (
-        <ul className="divide-y">
+        <ul className="divide-y divide-gray-100">
           {usersToShow.map((user, counter) => {
             const avatar = user?.avatar
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
@@ -120,38 +129,36 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
             return (
               <li
                 key={user.id}
-                className="flex items-center justify-between gap-1 p-2 px-4"
+                className="flex items-center justify-between gap-1 pl-2 pr-5 py-2.5 hover:bg-gray-50"
               >
                 <div className="flex min-w-0 items-center gap-2">
                   <span
                     className={cn(
-                      'relative flex size-7 shrink-0 items-center justify-center rounded-full font-medium tabular-nums',
-                      rank === 1 && 'bg-yellow-500 text-white',
-                      rank === 2 && 'bg-gray-500 text-white',
-                      rank === 3 && 'bg-yellow-800 text-white',
-                      rank > 3 && 'text-gray-400',
+                      'relative text-xs mr-1 flex size-6 shrink-0 items-center justify-center rounded-full tabular-nums',
+                      {
+                        'text-black': rank <= 3,
+                        'text-gray-400': rank > 3,
+                      },
                     )}
                   >
-                    <span className="relative z-10">{rank}</span>
-
-                    {rank <= 3 && (
-                      <RankBadeIcon
-                        className={cn(
-                          'absolute left-1/2 top-5 size-4 -translate-x-1/2',
-                          rank === 1 && 'text-yellow-500',
-                          rank === 2 && 'text-gray-500',
-                          rank === 3 && 'text-yellow-800',
-                        )}
-                      />
-                    )}
+                    {rank}
                   </span>
 
                   <img
                     src={avatar}
                     alt={user.name}
-                    className="size-8 shrink-0 rounded-full"
+                    className="size-7 shrink-0 rounded-full"
                   />
                   <span className="truncate">{user.name}</span>
+                  {rank === 1 ? (
+                    <TrophyEmoji className="size-5" />
+                  ) : rank === 2 ? (
+                    <SecondPlaceMedalEmoji className="size-5" />
+                  ) : rank === 3 ? (
+                    <ThirdPlaceMedalEmoji className="size-5" />
+                  ) : (
+                    ''
+                  )}
                 </div>
 
                 <span className="text-sm text-gray-500">{user.count}</span>

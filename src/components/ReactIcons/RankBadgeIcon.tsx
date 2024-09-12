@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react';
 
-export function RankBadeIcon(props: SVGProps<SVGSVGElement>) {
+export function RankBadgeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="11"
