@@ -182,7 +182,12 @@ export function AccountStreak(props: AccountStreakProps) {
             </div>
 
             <p className="-mt-[0px] mb-[1.75px] text-center text-xs tracking-wide text-slate-600">
-              Visit every day to keep your streak alive!
+              Visit every day to keep your streak going!
+            </p>
+            <p className='text-xs mt-1.5 text-center'>
+              <a href="/leaderboard" className="text-purple-400 hover:underline underline-offset-2">
+                See how you compare to others
+              </a>
             </p>
           </div>
         </div>
