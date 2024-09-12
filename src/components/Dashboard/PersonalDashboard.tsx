@@ -258,7 +258,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
               icon={ConstructionEmoji}
               title="Build Projects"
               description="Practice what you learn"
-              href="/backend/projects"
+              href="/projects"
             />
             <DashboardCard
               icon={CheckEmoji}

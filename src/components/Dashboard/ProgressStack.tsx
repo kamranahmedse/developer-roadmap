@@ -208,7 +208,7 @@ export function ProgressStack(props: ProgressStackProps) {
           emptyMessage={'No projects started'}
           emptyIcon={FolderKanban}
           emptyLinkText={'Explore Projects'}
-          emptyLinkHref={'/backend/projects'}
+          emptyLinkHref={'/projects'}
         >
           {projectsToShow.map((project) => {
             return (

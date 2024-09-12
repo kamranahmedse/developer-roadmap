@@ -25,7 +25,7 @@ const links = [
     Icon: Waypoints,
   },
   {
-    link: '/backend/projects',
+    link: '/projects',
     label: 'Projects',
     description: 'Skill-up with real-world projects',
     Icon: FolderKanban,

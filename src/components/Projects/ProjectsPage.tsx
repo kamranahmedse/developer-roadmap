@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
-import { Filter, X } from 'lucide-react';
+import {Box, Filter, Group, X} from 'lucide-react';
 import {
   deleteUrlParam,
   getUrlParams,
@@ -13,12 +13,14 @@ import {
 } from '../../lib/project.ts';
 import { ProjectCard } from './ProjectCard.tsx';
 
+type ProjectGroup = {
+  id: string;
+  title: string;
+  projects: ProjectFileType[];
+};
+
 type ProjectsPageProps = {
-  roadmapsProjects: {
-    id: string;
-    title: string;
-    projects: ProjectFileType[];
-  }[];
+  roadmapsProjects: ProjectGroup[];
   userCounts: Record<string, number>;
 };
 
@@ -73,6 +75,10 @@ export function ProjectsPage(props: ProjectsPageProps) {
         );
       }),
     [visibleProjects],
+  );
+
+  const activeGroupDetail = roadmapsProjects.find(
+    (group) => group.id === activeGroup,
   );
 
   return (
@@ -133,7 +139,19 @@ export function ProjectsPage(props: ProjectsPageProps) {
             </div>
           </div>
         </div>
-        <div className="flex flex-grow flex-col gap-6 pb-20 pt-2 sm:pt-6">
+        <div className="flex flex-grow flex-col pb-20 pt-2 sm:pt-6">
+          <div className="mb-4 flex items-center justify-between text-sm text-gray-500">
+            <h3 className={'flex items-center'}>
+              <Box size={15} className="mr-1" strokeWidth={2} />
+              {activeGroupDetail
+                ? `Projects in ${activeGroupDetail?.title}`
+                : 'All Projects'}
+            </h3>
+            <p className="text-left">
+              Matches found ({sortedVisibleProjects.length})
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
             {sortedVisibleProjects.map((project) => (
               <ProjectCard
