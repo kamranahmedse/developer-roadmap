@@ -47,7 +47,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
           <>
             {roadmaps.map((roadmap) => (
               <a
-                href={`/r/${roadmap.slug}`}
+                href={`/ai/${roadmap.slug}`}
                 className="relative rounded-md border bg-white p-2.5 text-left text-sm shadow-sm truncate hover:border-gray-400 hover:bg-gray-50"
               >
                 {roadmap.title}
