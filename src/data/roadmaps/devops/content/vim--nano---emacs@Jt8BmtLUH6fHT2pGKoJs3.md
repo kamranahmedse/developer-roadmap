@@ -1,21 +1,20 @@
 # Editors
 
-Editors are tools that allow you to create or edit files on your file system.
+Text editors are software tools used for creating, editing, and managing text files. They range from simple editors with basic features to complex Integrated Development Environments (IDEs). Popular text editors include:
 
-## Vim
+- **Notepad**: A basic editor for Windows, suitable for simple text files.
+- **Vim**: A highly configurable and powerful editor known for its efficiency and modal interface.
+- **Emacs**: A versatile editor with extensive customization options and a wide range of plugins.
+- **Sublime Text**: A feature-rich editor with a focus on speed and a user-friendly interface.
+- **Visual Studio Code**: A modern, open-source editor with built-in support for debugging, extensions, and integration with various development tools.
 
-Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with macOS X.
-
-Vim ships with `vimtutor` that is a tutor designed to describe enough of the Vim commands that you will be able to easily use Vim as an all-purpose editor.
-
+Each editor offers different features, such as syntax highlighting, code completion, and version control integration, catering to diverse needs in programming and text processing.
 Visit the following resources to learn more:
 
 - [@official@Vim](https://www.vim.org)
-- [@official@Vim help files](https://vimhelp.org/)
-- [@article@Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 - [@article@Vim Adventures](https://vim-adventures.com/)
 - [@official@GNU Nano](https://www.nano-editor.org/)
-- [@article@GNU Nano Manual](https://www.nano-editor.org/dist/latest/nano.html)
-- [@article@PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
 - [@official@GNU Emacs](https://www.gnu.org/software/emacs/)
-- [@article@GNU Emacs Documentation](https://www.gnu.org/software/emacs/documentation.html)
+- [@video@Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc)
+- [@video@Linux Crash Course - nano](https://www.youtube.com/watch?v=DLeATFgGM-A)
+- [@video@The Absolute Beginner's Guide to Emacs](https://www.youtube.com/watch?v=48JlgiBpw_I)

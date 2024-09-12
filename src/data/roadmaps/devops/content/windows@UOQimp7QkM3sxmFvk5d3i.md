@@ -1,6 +1,6 @@
 # Windows
 
-Windows is a graphical user interface (GUI) based operating system developed by Microsoft. It is a hybrid kernel-based proprietary operating system. According to a survey, till April 2022, windows is the most popular operating system in the world with a 75% market share.
+Windows is a series of operating systems developed by Microsoft, widely used across personal, business, and server environments. It provides a graphical user interface (GUI) that simplifies interaction with the computer, featuring a desktop environment with icons, windows, and menus. Key versions include Windows 10, known for its user-friendly interface and support for modern applications, and Windows 11, which introduces a refreshed design and new features like improved virtual desktops and enhanced security. Windows supports a wide range of software applications and hardware devices, making it a versatile and popular choice for many users and organizations.
 
 Visit the following resources to learn more:
 
