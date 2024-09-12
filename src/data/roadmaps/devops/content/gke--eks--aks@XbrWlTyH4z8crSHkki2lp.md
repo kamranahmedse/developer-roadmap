@@ -17,3 +17,6 @@ Visit the following resources to learn more:
 - [@official@GKE](https://cloud.google.com/kubernetes-engine)
 - [@official@EKS](https://aws.amazon.com/eks/)
 - [@official@AKS](https://azure.microsoft.com/en-us/products/kubernetes-service/)
+- [@video@AWS EKS Tutorial](https://www.youtube.com/watch?v=CukYk43agA4)
+- [@video@What is Google Kubernetes Engine (GKE)?](https://www.youtube.com/watch?v=Rl5M1CzgEH4)
+- [@video@AWS EKS Tutorial](https://www.youtube.com/watch?v=CukYk43agA4)
