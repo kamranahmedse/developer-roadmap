@@ -1,0 +1,29 @@
+---
+import SimplePageHeader from '../components/SimplePageHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllChangelogs } from '../lib/changelog';
+import ChangelogItem from '../components/Changelog/ChangelogItem.astro';
+
+const allChangelogs = await getAllChangelogs();
+---
+
+<BaseLayout
+  title='Changelogs'
+  description='Changelogs for the updates and changes in the website'
+  permalink='/changelogs'
+>
+  <SimplePageHeader
+    title='Changelogs'
+    description='Changelogs for the updates and changes in the website'
+  />
+
+  <div class='bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>
+    <div class='container divide-y divide-gray-300'>
+      {
+        allChangelogs.map((changelog) => (
+          <ChangelogItem changelog={changelog} />
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

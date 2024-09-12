@@ -71,6 +71,9 @@ importers:
       lucide-react:
         specifier: ^0.419.0
         version: 0.419.0(react@18.3.1)
+      luxon:
+        specifier: ^3.5.0
+        version: 3.5.0
       nanoid:
         specifier: ^5.0.7
         version: 5.0.7
@@ -156,6 +159,9 @@ importers:
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6
+      '@types/luxon':
+        specifier: ^3.4.2
+        version: 3.4.2
       '@types/prismjs':
         specifier: ^1.26.4
         version: 1.26.4
@@ -1114,6 +1120,9 @@ packages:
   '@types/js-cookie@3.0.6':
     resolution: {integrity: sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==}
 
+  '@types/luxon@3.4.2':
+    resolution: {integrity: sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==}
+
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
@@ -2054,6 +2063,10 @@ packages:
     resolution: {integrity: sha512-YkOHuc1uGH2A4G0NRZyeCW6mMFGb8z3amep0fARuKIri68nveAT5C8OuXOPJXpb/iIgSfsjdMjjII7bnEtGkvw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  luxon@3.5.0:
+    resolution: {integrity: sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==}
+    engines: {node: '>=12'}
 
   magic-string@0.30.11:
     resolution: {integrity: sha512-+Wri9p0QHMy+545hKww7YAu5NyzF8iomPL/RQazugQ9+Ez4Ic3mERMd8ZTX5rfK944j+560ZJi8iAwgak1Ac7A==}
@@ -4070,6 +4083,8 @@ snapshots:
 
   '@types/js-cookie@3.0.6': {}
 
+  '@types/luxon@3.4.2': {}
+
   '@types/mdast@4.0.4':
     dependencies:
       '@types/unist': 3.0.2
@@ -5073,6 +5088,8 @@ snapshots:
   lucide-react@0.419.0(react@18.3.1):
     dependencies:
       react: 18.3.1
+
+  luxon@3.5.0: {}
 
   magic-string@0.30.11:
     dependencies:

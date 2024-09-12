@@ -1,0 +1,34 @@
+---
+import type { ChangelogFileType } from '../../lib/changelog';
+import { DateTime } from 'luxon';
+import MarkdownFile from '../MarkdownFile.astro';
+
+interface Props {
+  changelog: ChangelogFileType;
+}
+
+const { changelog } = Astro.props;
+const { frontmatter } = changelog;
+
+const formattedDate = DateTime.fromISO(frontmatter.date).toFormat(
+  'dd LLLL, yyyy',
+);
+---
+
+<div class='grid gap-4 py-10 sm:grid-cols-4'>
+  <div class='sticky top-8 col-span-1 mt-1.5 hidden self-start sm:block'>
+    <span class='text-sm text-gray-600'>{formattedDate}</span>
+  </div>
+  <div class='col-span-3'>
+    <h2 class='text-3xl font-bold text-gray-900 sm:mb-4'>
+      {changelog.frontmatter.title}
+    </h2>
+    <span class='mb-6 mt-3 block text-sm text-gray-600 sm:hidden'
+      >{formattedDate}</span
+    >
+
+    <MarkdownFile class='p-0'>
+      <changelog.Content />
+    </MarkdownFile>
+  </div>
+</div>
