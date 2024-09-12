@@ -83,8 +83,8 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
 
   return (
     <div className="overflow-hidden rounded-md border bg-white shadow-sm">
-      <div className="flex items-center justify-between gap-2 bg-gray-100 px-3 py-2 mb-3">
-        <h3 className="text-base text-sm font-medium">{title}</h3>
+      <div className="flex items-center justify-between gap-2 bg-gray-100 px-3 py-3 mb-3">
+        <h3 className="text-base font-medium">{title}</h3>
 
         {tabs.length > 1 && (
           <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   key={tab.title}
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'text-xs font-medium underline-offset-2 transition-colors',
+                    'text-sm font-medium underline-offset-2 transition-colors',
                     {
                       'text-black underline': isActive,
                       'text-gray-400 hover:text-gray-600': !isActive,
@@ -119,7 +119,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
       )}
 
       {usersToShow.length > 0 && (
-        <ul className="divide-y divide-gray-100">
+        <ul className="divide-y divide-gray-100 pb-4">
           {usersToShow.map((user, counter) => {
             const avatar = user?.avatar
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
