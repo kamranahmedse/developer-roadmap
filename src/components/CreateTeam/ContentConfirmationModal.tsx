@@ -20,7 +20,7 @@ export function ContentConfirmationModal(props: ContentConfirmationModalProps) {
         </p>
         <div className="mt-4 grid grid-cols-2 gap-2">
           <button
-            className="rounded-lg border p-2.5 font-medium"
+            className="rounded-lg border p-2.5 font-normal"
             onClick={() => {
               onClick(false);
             }}
@@ -28,7 +28,7 @@ export function ContentConfirmationModal(props: ContentConfirmationModalProps) {
             No, copy roadmap only
           </button>
           <button
-            className="rounded-lg border bg-black p-2.5 font-medium text-white hover:opacity-80"
+            className="rounded-lg border bg-black p-2.5 font-normal text-white hover:opacity-80"
             onClick={() => {
               onClick(true);
             }}
