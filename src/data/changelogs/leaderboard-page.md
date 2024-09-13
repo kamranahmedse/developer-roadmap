@@ -1,19 +1,25 @@
 ---
-title: 'Leaderboard Page'
-description: 'New leaderbaord page showing the most active users'
+title: 'New Dashboard, Leaderboards and Projects'
+description: 'New leaderboard page showing the most active users'
 seo:
   title: 'Leaderboard Page - roadmap.sh'
   description: ''
 date: 2024-09-13
 ---
 
-![Leaderboard Page](https://assets.roadmap.sh/guest/accordion-rbvpo.png)
+TL;DR: new dashboard, leaderboard page and projects page.
 
-We are introducing a new leaderboard page that will show the most active users on the platform. This will help users to see who is contributing the most to the community and motivate them to participate more.
+- New dashboard for logged-in users
+- New leaderboard page
+- Projects page listing all projects
+- Ability to stop a started project
+- Frontend and backend content improvements
+- Bug fixes
 
-- Top users will be shown based on the number of contributions they have made.
-- Users will be able to see their own rank on the leaderboard.
-- Users will be able to see the rank of other users on the leaderboard.
-- Top performers will be highlighted on the leaderboard.
+![Leaderboard Page](https://assets.roadmap.sh/guest/personal-dashboard.png)
 
-You can check out the leaderboard page [here](/leaderboard).
+We just launched a dedicated dashboard for logged-in users to showing progress, projects, bookmarks and more. You can still access the old homepage by visiting [this page](https://roadmap.sh/home).
+
+We also launched a new [leaderboard page](/leaderboard) showing the most active users, users who completed most projects and more.
+
+There is also a [new projects page](/projects) where you can see all the projects you have been working on. You can also now stop a started project.

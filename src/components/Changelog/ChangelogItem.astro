@@ -11,24 +11,27 @@ const { changelog } = Astro.props;
 const { frontmatter } = changelog;
 
 const formattedDate = DateTime.fromISO(frontmatter.date).toFormat(
-  'dd LLLL, yyyy',
+  'dd LLL, yyyy',
 );
 ---
 
-<div class='grid gap-4 py-10 sm:grid-cols-4'>
-  <div class='sticky top-8 col-span-1 mt-1.5 hidden self-start sm:block'>
-    <span class='text-sm text-gray-600'>{formattedDate}</span>
-  </div>
-  <div class='col-span-3'>
-    <h2 class='text-3xl font-bold text-gray-900 sm:mb-4'>
-      {changelog.frontmatter.title}
-    </h2>
-    <span class='mb-6 mt-3 block text-sm text-gray-600 sm:hidden'
-      >{formattedDate}</span
-    >
+<div class='relative'>
+  <span class='h-2 w-2 flex-shrink-0 rounded-full bg-gray-300 absolute top-2 -left-6'></span>
 
-    <MarkdownFile class='p-0'>
+  <div class='mb-3 flex items-center gap-2'>
+    <span class='flex-shrink-0 text-xs tracking-wide text-gray-400'>
+      {formattedDate}
+    </span>
+    <span class='truncate text-base font-medium'>
+      {changelog.frontmatter.title}
+    </span>
+  </div>
+
+  <div class='rounded-xl border bg-white p-6'>
+    <div
+      class='prose prose-h2:text-lg prose-h2:font-medium prose-h2:mt-3 prose-sm prose-p:mb-0 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-ul:my-0 prose-img:mt-0 prose-img:rounded-lg [&>blockquote>p]:mt-0 prose-ul:bg-gray-100 prose-ul:rounded-lg prose-ul:px-4 prose-ul:py-4 prose-ul:pl-7 [&>ul>li]:my-0 [&>ul>li]:mb-1 [&>ul]:mt-3'
+    >
       <changelog.Content />
-    </MarkdownFile>
+    </div>
   </div>
 </div>
