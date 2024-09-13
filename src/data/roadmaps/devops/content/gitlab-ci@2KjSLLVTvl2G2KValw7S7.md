@@ -1,6 +1,6 @@
 # GitLab CI
 
-GitLab offers a CI/CD service that can be used as a SaaS offering or self-managed using your own resources. You can use GitLab CI with any GitLab hosted repository, or any BitBucket Cloud or GitHub repository in the GitLab Premium self-managed, GitLab Premium SaaS and higher tiers.
+GitLab CI is an integrated continuous integration and delivery platform within the GitLab ecosystem. It automates the process of building, testing, and deploying code changes through pipelines defined in YAML files. GitLab CI offers features like parallel execution, container registry integration, and auto-DevOps, enabling teams to implement robust CI/CD workflows directly from their GitLab repositories without additional tools or infrastructure.
 
 Visit the following resources to learn more:
 
