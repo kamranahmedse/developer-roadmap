@@ -64,7 +64,7 @@ export function RoadmapAlert(props: RoadmapAlertProps) {
         </a>
       </p>
 
-      <FloatingIcon className="absolute bottom-2 right-2 hidden h-12 w-12 text-yellow-500 opacity-50 sm:block" />
+      <FloatingIcon className="pointer-events-none absolute right-2 top-2 hidden h-12 w-12 text-yellow-500 opacity-50 sm:block md:bottom-2 md:top-auto" />
     </div>
   );
 }
