@@ -9,11 +9,14 @@ export function ContentConfirmationModal(props: ContentConfirmationModalProps) {
   const { onClose, onClick } = props;
 
   return (
-    <Modal onClose={onClose}>
+    <Modal onClose={onClose} wrapperClassName="max-w-lg">
       <div className="p-4">
-        <h2 className="text-lg font-semibold">Roadmap Content</h2>
+        <h2 className="text-lg font-semibold">
+          Copy Node Details and Resources?
+        </h2>
         <p className="balanc text-gray-600">
-          Do you want to copy the content of this roadmap?
+          This will just copy the roadmap in your team. Would you like to copy
+          the resource links and node details as well?
         </p>
         <div className="mt-4 grid grid-cols-2 gap-2">
           <button
@@ -22,7 +25,7 @@ export function ContentConfirmationModal(props: ContentConfirmationModalProps) {
               onClick(false);
             }}
           >
-            No
+            No, copy roadmap only
           </button>
           <button
             className="rounded-lg border bg-black p-2.5 font-medium text-white hover:opacity-80"
@@ -30,7 +33,7 @@ export function ContentConfirmationModal(props: ContentConfirmationModalProps) {
               onClick(true);
             }}
           >
-            Yes
+            Yes, also copy resources
           </button>
         </div>
       </div>
