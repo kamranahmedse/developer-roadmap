@@ -233,7 +233,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           </h2>
           <a
             href="/home"
-            className="text-xs text-purple-600 underline underline-offset-2"
+            className="text-xs text-purple-600 underline underline-offset-2 hover:text-purple-700"
           >
             Looking for old homepage? Click here
           </a>
