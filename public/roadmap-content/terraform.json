@@ -449,8 +449,14 @@
   },
   "fm8oUyNvfdGWTgLsYANUr": {
     "title": "Environment Variables",
-    "description": "",
-    "links": []
+    "description": "Environment variables can be used to customize various aspects of Terraform. You can set these variables to change the default behaviour of terraform such as increase verbosity, update log file path, set workspace, etc. Envrionment variables are optional and terraform does not need them by default.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Environment Variables",
+        "url": "https://developer.hashicorp.com/terraform/cli/config/environment-variables",
+        "type": "article"
+      }
+    ]
   },
   "rdphcVd-Vq972y4H8CxIj": {
     "title": "Variable Definition File",
@@ -470,8 +476,14 @@
   },
   "U2n2BtyUrOFLnw9SZYV_w": {
     "title": "Validation Rules",
-    "description": "",
-    "links": []
+    "description": "Validation rules can be used to specify custom validations to a variable. The motive of adding validation rules is to make the variable comply with the rules. The validation rules can be added using a `validation` block.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Custom Validation Rules",
+        "url": "https://developer.hashicorp.com/terraform/language/values/variables#custom-validation-rules",
+        "type": "article"
+      }
+    ]
   },
   "1mFih8uFs3Lc-1PLgwiAU": {
     "title": "Local Values",
