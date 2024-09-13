@@ -2,11 +2,7 @@
 
 The [Open Container Initiative (OCI)](https://opencontainers.org/) is a Linux Foundation project which aims at creating industry standards for container formats and runtimes. Its primary goal is to ensure the compatibility and interoperability of container environments through defined technical specifications.
 
-## Docker's role in OCI
-
-[Docker](https://www.docker.com/) is one of the founding members of the OCI, and it has played a pivotal role in shaping the standards for container formats and runtime(s). Docker initially developed the container runtime (Docker Engine) and image format (Docker Image) that serve as the basis for OCI specifications.
-
-### OCI Specifications
+## OCI Specifications
 
 OCI has three main specifications:
 

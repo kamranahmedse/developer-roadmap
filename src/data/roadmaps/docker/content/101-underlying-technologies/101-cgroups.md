@@ -4,10 +4,6 @@
 
 Docker utilizes cgroups to enforce resource constraints on containers, allowing them to have a consistent and predictable behavior. Below are some of the key features and benefits of cgroups in the context of Docker containers:
 
-## Resource Isolation
-
-cgroups helps to confine each container to a specific set of resources, ensuring fair sharing of system resources among multiple containers. This enables better isolation between different containers, so that a misbehaving container does not consume all available resources, thereby negatively affecting other containers.
-
 Visit the following resources to learn more:
 
 - [@official@Control Groups](https://www.docker.com/resources/what-container/#control-groups)

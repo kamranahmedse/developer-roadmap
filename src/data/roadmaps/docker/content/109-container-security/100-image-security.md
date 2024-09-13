@@ -14,8 +14,6 @@ Regularly scan your images for known vulnerabilities using tools like Clair or A
 
 To ensure the integrity and authenticity of your images, always sign them using Docker Content Trust (DCT). DCT uses digital signatures to guarantee that the images you pull or push are the ones you expect and haven't been tampered with in transit.
 
-Enable DCT for your Docker environment by setting the following environment variable:
-
 Visit the following resources to learn more:
 
 - [@official@Docker Content Trust](https://docs.docker.com/engine/security/trust/content_trust/)

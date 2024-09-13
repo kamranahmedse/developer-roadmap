@@ -31,18 +31,6 @@
   npm-debug.log
   ```
 
-## Enhancing Security
-
-- **Keep base images updated:** Regularly update the base images you're using in your Dockerfile to ensure they include the latest security patches.
-
-- **Avoid running containers as root:** Always use a non-root user when running your containers to minimize potential risks. Create a user and switch to it before running your application.
-
-  ```dockerfile
-  RUN addgroup -g 1000 appuser && \
-      adduser -u 1000 -G appuser -D appuser
-  USER appuser
-  ```
-
 Visit the following resources to learn more:
 
 - [@official@Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)

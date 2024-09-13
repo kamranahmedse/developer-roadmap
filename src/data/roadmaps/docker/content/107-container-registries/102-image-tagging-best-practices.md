@@ -14,10 +14,6 @@ Docker allows you to tag an image as 'latest' in addition to a version number. I
 docker build -t your-username/app-name:latest .
 ```
 
-## Use Environment and Architecture-Specific Tags
-
-If your application is deployed in different environments (production, staging, development) or has multiple architectures (amd64, arm64), you can use tags that specify these variations. Example: `your-username/app-name:1.2.3-production-amd64`.
-
 ## Use Automated Build and Tagging Tools
 
 Consider using CI/CD tools (Jenkins, GitLab CI, Travis-CI) to automate image builds and tagging based on commits, branches, or other rules. This ensures consistency and reduces the likelihood of errors caused by manual intervention.

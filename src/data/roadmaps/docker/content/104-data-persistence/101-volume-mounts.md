@@ -34,8 +34,6 @@ docker run -d --mount source=my-volume,destination=/data your-image
 
 In both examples above, `my-volume` is the name of the volume we created earlier, and `/data` is the path inside the container where the volume will be mounted.
 
-> For an in-depth exploration of the `-v` and `--mount` flags, consult Docker's official guide on .
-
 ## Sharing Volumes Between Containers
 
 To share a volume between multiple containers, simply mount the same volume on multiple containers. Here's how to share `my-volume` between two containers running different images:

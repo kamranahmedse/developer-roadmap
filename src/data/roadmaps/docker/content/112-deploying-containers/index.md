@@ -9,12 +9,6 @@ Deploying containers is a crucial step in using Docker and containerization to m
 - **Scalability**: Easily scale applications by running multiple instances and distributing the workload.
 - **Version Control**: Manage different versions and roll back to previous versions if needed.
 
-## Key Concepts
-
-- **Image**: A lightweight package containing code, runtime, and all dependencies needed to run an application.
-- **Container**: A running instance of a Docker image, operating independently.
-- **Docker Registry**: Stores and retrieves Docker images (e.g., Docker Hub or a private registry).
-
 ## Steps to Deploy Containers
 
 - **Create a Dockerfile**: Script that defines the image with base image, code, dependencies, and configurations.

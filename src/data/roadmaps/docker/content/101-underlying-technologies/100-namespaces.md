@@ -1,8 +1,4 @@
-# Namespaces
-
-Namespaces are one of the core technologies that Docker uses to provide isolation between containers. In this section, we'll briefly discuss what namespaces are and how they work.
-
-## What are Namespaces?
+# What are Namespaces?
 
 In the Linux kernel, namespaces are a feature that allows the isolation of various system resources, making it possible for a process and its children to have a view of a subset of the system that is separate from other processes. Namespaces help to create an abstraction layer to keep containerized processes separate from one another and from the host system.
 

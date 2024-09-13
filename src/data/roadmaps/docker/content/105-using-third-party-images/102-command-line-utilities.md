@@ -20,15 +20,7 @@ docker pull curlimages/curl
 docker run --rm curlimages/curl https://example.com
 ```
 
-In this example, the `--rm` flag is used to remove the container after the command has finished running. 
-
-### Other Command Line Utilities
-
-There are numerous command line utilities available in Docker images, including but not limited to:
-
-- `wget`: A free utility for non-interactive download of files from the Web.
-- `imagemagick`: A powerful software suite for image manipulation and conversion.
-- `jq`: A lightweight and flexible command-line JSON processor.
+In this example, the `--rm` flag is used to remove the container after the command has finished running.
 
 Visit the following resources to learn more:
 
