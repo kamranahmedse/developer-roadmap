@@ -6,14 +6,14 @@ First of all, thank you for considering to contribute.
 
 Before sending your pull requests, make sure you do the following:
 
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
-- [Contributor License Agreement (CLA)](https://cla.developers.google.com/)
-- [New Roadmaps](#new-roadmaps)
-- [Existing Roadmaps](#existing-roadmaps)
-- [Adding Projects](#adding-projects)
-- [Adding Content](#adding-content)
-- [Guidelines](#guidelines)
+- Read the [Contributing Guidelines](CONTRIBUTING.md).
+- Read the [Code of Conduct](CODE_OF_CONDUCT.md).
+- Read the [Contributor License Agreement (CLA)](https://cla.developers.google.com/).
+- Read the [New Roadmaps](#new-roadmaps).
+- Read the [Existing Roadmaps](#existing-roadmaps).
+- Read the [Adding Projects](#adding-projects).
+- Read the [Adding Content](#adding-content).
+- Read the [Guidelines](#guidelines).
 
 ## How to become a contributor and submit your own code
 
