@@ -10,6 +10,7 @@ import { showLoginPopup } from '../../lib/popup.ts';
 import { isLoggedIn } from '../../lib/jwt.ts';
 import { useState } from 'react';
 import { CreateRoadmapModal } from './CreateRoadmap/CreateRoadmapModal.tsx';
+import { RoadmapAlert } from '../RoadmapAlert.tsx';
 
 export function CustomRoadmapAlert() {
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
@@ -23,7 +24,20 @@ export function CustomRoadmapAlert() {
           }}
         />
       )}
-      <div className="relative mb-5 mt-0 rounded-md border border-yellow-500 bg-yellow-100 p-2 sm:-mt-6 sm:mb-7 sm:p-2.5">
+
+      <RoadmapAlert
+        title="Community Roadmaps"
+        description={
+          <>
+            This is a custom roadmap made by a community member and is not
+            verified by <span className="font-semibold">roadmap.sh</span>
+          </>
+        }
+        floatingIcon={MessageCircleHeart}
+        className="mb-5 mt-0 sm:-mt-6 sm:mb-7"
+      />
+
+      {/* <div className="relative mb-5 mt-0 rounded-md border border-yellow-500 bg-yellow-100 p-2 sm:-mt-6 sm:mb-7 sm:p-2.5">
         <p className="mb-2.5 mt-2 text-sm text-yellow-800 sm:mb-1.5 sm:mt-1 sm:text-base">
           This is a custom roadmap made by a community member and is not
           verified by <span className="font-semibold">roadmap.sh</span>
@@ -49,7 +63,7 @@ export function CustomRoadmapAlert() {
         </div>
 
         <MessageCircleHeart className="absolute bottom-2 right-2 hidden h-12 w-12 text-yellow-500 opacity-50 sm:block" />
-      </div>
+      </div> */}
     </>
   );
 }
