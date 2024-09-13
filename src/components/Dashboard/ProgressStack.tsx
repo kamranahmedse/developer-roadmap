@@ -14,6 +14,7 @@ import { cn } from '../../lib/classname';
 import { DashboardProgressCard } from './DashboardProgressCard';
 import { useStore } from '@nanostores/react';
 import { $accountStreak, type StreakResponse } from '../../stores/streak';
+import { EmptyStackMessage } from './EmptyStackMessage.tsx';
 
 type ProgressStackProps = {
   progresses: UserProgress[];
@@ -26,8 +27,8 @@ type ProgressStackProps = {
 };
 
 const MAX_PROGRESS_TO_SHOW = 5;
+const MAX_BOOKMARKS_TO_SHOW = 5;
 const MAX_PROJECTS_TO_SHOW = 8;
-const MAX_BOOKMARKS_TO_SHOW = 8;
 
 type ProgressLaneProps = {
   title: string;
@@ -74,7 +75,7 @@ function ProgressLane(props: ProgressLaneProps) {
           {linkText && linkHref && (
             <a
               href={linkHref}
-              className="flex items-center gap-1 text-xs text-gray-500"
+              className="flex items-center gap-1 text-xs text-gray-500 hover:text-black"
             >
               <ArrowUpRight size={12} />
               {linkText}
@@ -83,7 +84,7 @@ function ProgressLane(props: ProgressLaneProps) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-grow flex-col gap-2">
+      <div className="mt-4 flex flex-grow flex-col gap-1.5">
         {isLoading && (
           <>
             {Array.from({ length: loadingSkeletonCount }).map((_, index) => (
@@ -166,98 +167,139 @@ export function ProgressStack(props: ProgressStackProps) {
       </div>
 
       <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-        <ProgressLane
-          title={'Your Progress'}
-          isLoading={isLoading}
-          loadingSkeletonCount={5}
-          isEmpty={userProgressesToShow.length === 0}
-          emptyMessage={'Update your Progress'}
-          emptyIcon={Map}
-          emptyLinkText={'Explore Roadmaps'}
-        >
-          {userProgressesToShow.length > 0 && (
-            <>
-              {userProgressesToShow.map((progress) => {
-                return (
-                  <DashboardProgressCard
-                    key={progress.resourceId}
-                    progress={progress}
-                  />
-                );
-              })}
-            </>
-          )}
-
-          {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
-            <ShowAllButton
-              showAll={showAllProgresses}
-              setShowAll={setShowAllProgresses}
-              count={userProgresses.length}
-              maxCount={MAX_PROGRESS_TO_SHOW}
-              className="mb-0.5 mt-3"
+        <div className="relative">
+          {!isLoading && bookmarksToShow.length === 0 && (
+            <EmptyStackMessage
+              number={1}
+              title={'Bookmark Roadmaps'}
+              description={'Bookmark some roadmaps to access them quickly'}
+              buttonText={'Explore Roadmaps'}
+              buttonLink={'/roadmaps'}
             />
           )}
-        </ProgressLane>
 
-        <ProgressLane
-          title={'Projects'}
-          isLoading={isLoading}
-          loadingSkeletonClassName={'h-5'}
-          loadingSkeletonCount={8}
-          isEmpty={projectsToShow.length === 0}
-          emptyMessage={'No projects started'}
-          emptyIcon={FolderKanban}
-          emptyLinkText={'Explore Projects'}
-          emptyLinkHref={'/projects'}
-        >
-          {projectsToShow.map((project) => {
-            return (
-              <DashboardProjectCard key={project.projectId} project={project} />
-            );
-          })}
-
-          {projects.length > MAX_PROJECTS_TO_SHOW && (
-            <ShowAllButton
-              showAll={showAllProjects}
-              setShowAll={setShowAllProjects}
-              count={projects.length}
-              maxCount={MAX_PROJECTS_TO_SHOW}
-              className="mb-0.5 mt-3"
-            />
-          )}
-        </ProgressLane>
-
-        <ProgressLane
-          title={'Bookmarks'}
-          isLoading={isLoading}
-          loadingSkeletonClassName={'h-5'}
-          loadingSkeletonCount={8}
-          linkHref={'/roadmaps'}
-          linkText={'Explore'}
-          isEmpty={bookmarksToShow.length === 0}
-          emptyIcon={Bookmark}
-          emptyMessage={'No bookmarks to show'}
-          emptyLinkHref={'/roadmaps'}
-          emptyLinkText={'Explore Roadmaps'}
-        >
-          {bookmarksToShow.map((progress) => {
-            return (
-              <DashboardBookmarkCard
-                key={progress.resourceId}
-                bookmark={progress}
+          <ProgressLane
+            title={'Bookmarks'}
+            isLoading={isLoading}
+            loadingSkeletonCount={5}
+            linkHref={'/roadmaps'}
+            linkText={'Roadmaps'}
+            isEmpty={bookmarksToShow.length === 0}
+            emptyIcon={Bookmark}
+            emptyMessage={'No bookmarks to show'}
+            emptyLinkHref={'/roadmaps'}
+            emptyLinkText={'Explore Roadmaps'}
+          >
+            {bookmarksToShow.map((progress) => {
+              return (
+                <DashboardBookmarkCard
+                  key={progress.resourceId}
+                  bookmark={progress}
+                />
+              );
+            })}
+            {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
+              <ShowAllButton
+                showAll={showAllBookmarks}
+                setShowAll={setShowAllBookmarks}
+                count={bookmarkedProgresses.length}
+                maxCount={MAX_BOOKMARKS_TO_SHOW}
+                className="mb-0.5 mt-3"
               />
-            );
-          })}
-          {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
-            <ShowAllButton
-              showAll={showAllBookmarks}
-              setShowAll={setShowAllBookmarks}
-              count={bookmarkedProgresses.length}
-              maxCount={MAX_BOOKMARKS_TO_SHOW}
-              className="mb-0.5 mt-3"
+            )}
+          </ProgressLane>
+        </div>
+
+        <div className="relative">
+          {!isLoading && userProgressesToShow.length === 0 && (
+            <EmptyStackMessage
+              number={2}
+              title={'Track Progress'}
+              description={'Pick your first roadmap and start learning'}
+              buttonText={'Explore roadmaps'}
+              buttonLink={'/roadmaps'}
             />
           )}
-        </ProgressLane>
+          <ProgressLane
+            title={'Progress'}
+            linkHref={'/roadmaps'}
+            linkText={'Roadmaps'}
+            isLoading={isLoading}
+            loadingSkeletonCount={5}
+            isEmpty={userProgressesToShow.length === 0}
+            emptyMessage={'Update your Progress'}
+            emptyIcon={Map}
+            emptyLinkText={'Explore Roadmaps'}
+          >
+            {userProgressesToShow.length > 0 && (
+              <>
+                {userProgressesToShow.map((progress) => {
+                  return (
+                    <DashboardProgressCard
+                      key={progress.resourceId}
+                      progress={progress}
+                    />
+                  );
+                })}
+              </>
+            )}
+
+            {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
+              <ShowAllButton
+                showAll={showAllProgresses}
+                setShowAll={setShowAllProgresses}
+                count={userProgresses.length}
+                maxCount={MAX_PROGRESS_TO_SHOW}
+                className="mb-0.5 mt-3"
+              />
+            )}
+          </ProgressLane>
+        </div>
+
+        <div className="relative">
+          <ProgressLane
+            title={'Projects'}
+            linkHref={'/projects'}
+            linkText={'Projects'}
+            isLoading={isLoading}
+            loadingSkeletonClassName={'h-5'}
+            loadingSkeletonCount={8}
+            isEmpty={projectsToShow.length === 0}
+            emptyMessage={'No projects started'}
+            emptyIcon={FolderKanban}
+            emptyLinkText={'Explore Projects'}
+            emptyLinkHref={'/projects'}
+          >
+            {!isLoading && projectsToShow.length === 0 && (
+              <EmptyStackMessage
+                number={3}
+                title={'Build your first project'}
+                description={'Pick a project to practice and start building'}
+                buttonText={'Explore Projects'}
+                buttonLink={'/projects'}
+              />
+            )}
+
+            {projectsToShow.map((project) => {
+              return (
+                <DashboardProjectCard
+                  key={project.projectId}
+                  project={project}
+                />
+              );
+            })}
+
+            {projects.length > MAX_PROJECTS_TO_SHOW && (
+              <ShowAllButton
+                showAll={showAllProjects}
+                setShowAll={setShowAllProjects}
+                count={projects.length}
+                maxCount={MAX_PROJECTS_TO_SHOW}
+                className="mb-0.5 mt-3"
+              />
+            )}
+          </ProgressLane>
+        </div>
       </div>
     </>
   );
