@@ -14,6 +14,11 @@
         "type": "article"
       },
       {
+        "title": "Version Control (Git) - The Missing Semester of Your CS Education",
+        "url": "https://missing.csail.mit.edu/2020/version-control/",
+        "type": "article"
+      },
+      {
         "title": "GUI Clients",
         "url": "https://git-scm.com/downloads/guis",
         "type": "article"
@@ -215,6 +220,11 @@
     "title": ".gitignore",
     "description": "Ignored files are tracked in a special file named `.gitignore` that is checked in at the root of your repository. There is no explicit git ignore command: instead the `.gitignore` file must be edited and committed by hand when you have new files that you wish to ignore. `.gitignore` files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "gitignore - A collection of useful .gitignore templates",
+        "url": "https://github.com/github/gitignore",
+        "type": "opensource"
+      },
       {
         "title": "gitignore Documentation",
         "url": "https://git-scm.com/docs/gitignore/en",
