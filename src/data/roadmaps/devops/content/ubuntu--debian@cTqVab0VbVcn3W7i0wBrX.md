@@ -15,3 +15,4 @@ Visit the following resources to learn more:
 - [@video@Introduction to Linux - Full Course for Beginners](https://www.youtube.com/watch?v=sWbUDq4S6Y8\&pp=ygUTVWJ1bnR1IGNyYXNoIGNvdXJzZQ%3D%3D)
 - [@article@Linux Fundamentals](https://academy.hackthebox.com/course/preview/linux-fundamentals)
 - [@feed@Explore top posts about Ubuntu](https://app.daily.dev/tags/ubuntu?ref=roadmapsh)
+- [@course@Practice Linux Commands with Hands-on Labs"](https://labex.io/courses/linux-basic-commands-practice-online)
