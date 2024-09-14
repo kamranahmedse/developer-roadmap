@@ -15,3 +15,4 @@ Visit the following resources to learn more:
 - [@video@Solidity Course by Dapp University](https://www.youtube.com/watch?v=EhPeHeoKF88)
 - [@video@Learn Blockchain, Solidity, and Full Stack Web3 Development](https://youtu.be/gyMwXuJrbJQ)
 - [@feed@Explore top posts about Solidity](https://app.daily.dev/tags/solidity?ref=roadmapsh)
+- [CryptoZombies - Learn Solidity by Building Games](https://cryptozombies.io?ref=roadmapsh)
