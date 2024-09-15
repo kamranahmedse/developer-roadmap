@@ -227,9 +227,17 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       {isLoading ? (
         <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
       ) : (
-        <h2 className="text-lg font-medium">
-          Hi {name}, good {getCurrentPeriod()}!
-        </h2>
+        <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row gap-1">
+          <h2 className="text-lg font-medium">
+            Hi {name}, good {getCurrentPeriod()}!
+          </h2>
+          <a
+            href="/home"
+            className="text-xs text-purple-600 underline underline-offset-2 hover:text-purple-700"
+          >
+            Looking for old homepage? Click here
+          </a>
+        </div>
       )}
 
       <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
