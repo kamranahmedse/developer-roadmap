@@ -1,14 +1,6 @@
 # Angular Architecture
 
-Angular follows a modular architecture pattern, dividing the application into distinct modules, components, services, and other elements. This approach enhances code organization and maintainability.
-
-## Key Building Blocks
-
-- Modules: Containers grouping related components, services, directives, and other elements. They ensure proper encapsulation and reusability.
-- Components: The building blocks of Angular applications, representing parts of the user interface with associated logic. They consist of templates, styles, and a class defining behavior.
-- Services: Encapsulate reusable business logic, data manipulation, and API communication. They enable data and functionality sharing across components.
-- Directives: HTML attributes or elements extending HTML functionality, allowing reusable behaviors across the application.
-- Pipes: Transform data before displaying it in templates, providing convenient ways to format, filter, and sort data.
+Angular follows a modular architecture pattern, dividing the application into distinct modules, components, services, and other elements, which enhances code organization and maintainability. The key building blocks include modules, which are containers grouping related components, services, directives, and other elements to ensure proper encapsulation and reusability. Components are the building blocks of Angular applications, representing parts of the user interface with associated logic, consisting of templates, styles, and a class defining behavior. Services encapsulate reusable business logic, data manipulation, and API communication, enabling data and functionality sharing across components. Directives are HTML attributes or elements that extend HTML functionality, allowing reusable behaviors across the application. Lastly, pipes transform data before displaying it in templates, providing convenient ways to format, filter, and sort data.
 
 Visit the following resources to learn more:
 
