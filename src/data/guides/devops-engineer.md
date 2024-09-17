@@ -21,13 +21,13 @@ tags:
 
 ![What is a DevOps engineer and what are their responsibilities?](https://assets.roadmap.sh/guest/what-is-devops-engineer-jort4.jpg)
 
-Are you a developer monitoring recent changes in the ecosystem, looking to change careers or pick up new skills in 2024? If your choice is DevOps, you might be wondering what it entails, what it will take to become one in 2024, and how it is affected by the recent changes in the tech ecosystem.
+Are you a developer monitoring recent changes in the ecosystem, looking to change careers or pick up new skills in 2024? If your choice is [DevOps](https://roadmap.sh/devops), you might be wondering what it entails, what it will take to become one in 2024, and how it is affected by the recent changes in the tech ecosystem.
 
 In recent years, the technology ecosystem has experienced a constant shift in the way hiring managers reach out, companies hire, and the roles and responsibilities described in job postings. Particularly, 2023 proved to be a challenging year as layoffs in the technology sector grew significantly, with more than [262,000 employees laid off across 1,180 firms](https://www.statista.com/statistics/199999/worldwide-tech-layoffs-covid-19/).
 
 Despite this change, DevOps, a field within the same ecosystem, has experienced continuous growth. In fact, the DevOps market size is expected to grow to [25.5 billion USD by 2028](https://www.marketsandmarkets.com/Market-Reports/devops-market-824.html#:~:text=The%20global%20DevOps%20market%20size,USD%2010.4%20billion%20in%202023.). This indicates that the roles and responsibilities of a DevOps engineer in the modern technology environment will evolve alongside this increasing demand.
 
-In this guide, we'll discuss the roles and responsibilities of a [DevOps engineer](https://roadmap.sh/devops), the importance of DevOps in teams, common roles within a DevOps team, and best practices for DevOps teams. Finally, the guide will offer roadmaps for your DevOps journey.
+In this guide, we'll discuss the roles and responsibilities of a DevOps engineer, the importance of DevOps in teams, common roles within a DevOps team, and best practices for DevOps teams. Finally, the guide will offer roadmaps for your DevOps journey.
 
 A DevOps engineer's roles and responsibilities include:
 
