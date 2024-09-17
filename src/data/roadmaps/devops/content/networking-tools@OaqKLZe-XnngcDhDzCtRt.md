@@ -17,7 +17,7 @@ Networking tools are used to troubleshoot network issues. They are also used to 
 
 - [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)
 
-`ping` (**P**acket **In**ternet **G**roper) command is used to check the network connectivity between host and server/host. This command takes as input the IP address or the URL and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is recorded which is called latency.
+`ping` (**P**acket **In**ternet **G**roper) command is used to check the network connectivity between host and server/host. This command takes as input the IP address or hostname and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is recorded which is called latency.
 
 - [What is ping command?](https://linuxize.com/post/linux-ping-command/)
 
