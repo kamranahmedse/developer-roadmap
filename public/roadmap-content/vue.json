@@ -242,13 +242,25 @@
   },
   "NCIzs3jbQTv1xXhAaGfZN": {
     "title": "v-text",
-    "description": "",
-    "links": []
+    "description": "The `v-text` directive is used to set the textContent property of an element. It's important to note that when using this directive it will overwrite the HTML content inside the element. The expected input is a string, so it's important to wrap any text in single quotes.\n\nExample:\n\n    <template>\n      <p v-text=\"'I am some text'\"></p>\n    </template>\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-text documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-text",
+        "type": "article"
+      }
+    ]
   },
   "bZxtIBeIfeUcR32LZWrPW": {
     "title": "v-html",
-    "description": "",
-    "links": []
+    "description": "The `v-thml` directive is similar to the `v-text` directive, but the difference is that `v-html` renders its content as HTML. This means that if you pass an HTML element it will be rendered as an element and not plain text. Since the content is render as HTMl, it can pose a security risk if the content contains malicius JavaScript code. For this reason you should never use this directive in combination with user input, unless the input is first properly sanitized.\n\nExample:\n\n    <template>\n      <p v-html=\"'<h1>Text</h1>'\"></p>\n    </template>\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-html documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-html",
+        "type": "article"
+      }
+    ]
   },
   "_TlbGTKFCMO0wdLbC6xHX": {
     "title": "v-show",
@@ -285,13 +297,25 @@
   },
   "a9caVhderJaVo0v14w8WB": {
     "title": "v-else-if",
-    "description": "",
-    "links": []
+    "description": "This directive is used to add additional conditions to a v-if and v-else block.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-else-if Documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-else-if",
+        "type": "article"
+      }
+    ]
   },
   "3ftwRjQ9e1-qDT9BV53zr": {
     "title": "v-for",
-    "description": "",
-    "links": []
+    "description": "The `v-for` directive is used to render an HTML element, a block of elements, or even a component based on an array, an object, or a set number of times. When using this directive it is important to assign a unique key to each item to avoid issues and improve perfomance. This directive follows the `item in items` syntax.\n\nExample:\n\n    <script setup>\n      import { ref } from 'vue';\n      const foods = ref([\n        {id: 1, name: \"apple\"},\n        {id: 2, name: \"pear\"},\n        {id: 3, name: \"pizza\"}\n      ]);\n    </script>\n    \n    <template>\n      <p v-for=\"food in foods\" :key=\"food.id\">{{ food.name }}</p>\n    </template>\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-for documentation",
+        "url": "https://vuejs.org/guide/essentials/list#v-for",
+        "type": "article"
+      }
+    ]
   },
   "hVuRmhXVP65IPtuHTORjJ": {
     "title": "v-on",
@@ -300,8 +324,14 @@
   },
   "cuM9q9vYy8JpZPGeBffd1": {
     "title": "v-bind",
-    "description": "",
-    "links": []
+    "description": "The `v-bind` directive dynamically binds an HTML attribute to data.\n\nThe shorthand for this directive is `:`\n\nExample:\n\n    <script setup>\n      import { ref } from 'vue';\n      const image_url = ref(\"path/to/image.png\")\n    </script>\n    \n    <template>\n      <img :src=\"image_url\" />\n    </template>\n    \n\nVisit the following resources for more information:",
+    "links": [
+      {
+        "title": "v-bind documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-bind",
+        "type": "article"
+      }
+    ]
   },
   "cxu2Wbt306SxM4JKQQqnL": {
     "title": "v-model",
@@ -321,13 +351,25 @@
   },
   "5k9CrbzhNy9iiS6ez2UE6": {
     "title": "v-once",
-    "description": "",
-    "links": []
+    "description": "The `v-once` directive makes an HTML element render only once, skipping every future update.\n\nExample:\n\n    <script setup>\n      import { ref } from 'vue';\n      const input = ref(\"Some Text\");\n    </script>\n    \n    <template>\n      <input v-model=\"input\">\n      <p v-once>{{ input }}</p>\n    </template>\n    \n\nIn this example the **p** element will not change its text even if the input variable is changed through the **input** element.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-once documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-once",
+        "type": "article"
+      }
+    ]
   },
   "mlsrhioiEkqnRIL6O3hNa": {
     "title": "v-pre",
-    "description": "",
-    "links": []
+    "description": "The `v-pre` directive makes an element render its content as-is, skipping its compilation. The most common use case is when displaying raw mustache syntax.\n\nExample:\n\n    <script setup>\n      import { ref } from 'vue';\n      const text = ref(\"Some Text\")\n    </script>\n    \n    <template>\n      <p v-pre >{{ text }}</p>\n    </template>\n    \n\nThe **p** element will display: `{{ text }}` and not `Some Text` because the compilation is skipped.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-pre Documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-pre",
+        "type": "article"
+      }
+    ]
   },
   "RrSekP8Ub01coegMwLP6a": {
     "title": "v-cloak",
