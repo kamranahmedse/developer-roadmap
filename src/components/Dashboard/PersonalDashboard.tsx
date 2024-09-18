@@ -233,9 +233,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           </h2>
           <a
             href="/home"
-            className="text-xs text-purple-600 underline underline-offset-2 hover:text-purple-700"
+            className="text-xs font-medium bg-gray-200 hover:bg-gray-300 px-2.5 py-1 rounded-full text-gray-700 hover:text-black"
           >
-            Looking for old homepage? Click here
+            Visit Homepage
           </a>
         </div>
       )}
@@ -320,7 +320,6 @@ function DashboardCard(props: DashboardCardProps) {
   return (
     <a
       href={href}
-      target="_blank"
       className="flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
     >
       {Icon && (

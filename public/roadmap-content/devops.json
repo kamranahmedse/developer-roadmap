@@ -246,6 +246,11 @@
     "description": "Debian is a free and open-source Linux distribution developed by the Debian Project, an all volunteer software community organization. Debian is the upstream distribution of Ubuntu.\n\nUbuntu is a free and open-source Linux distribution based on Debian. Ubuntu is available in three versions Desktop, Server and Core.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Practice Linux Commands with Hands-on Labs\"",
+        "url": "https://labex.io/courses/linux-basic-commands-practice-online",
+        "type": "course"
+      },
+      {
         "title": "Debian Website",
         "url": "https://www.debian.org/",
         "type": "article"
