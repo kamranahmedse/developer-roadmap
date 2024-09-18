@@ -4,7 +4,7 @@ Vue.js is an open-source JavaScript framework for building user interfaces and s
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Vue Roadmap](/vue)
+- [@roadmap@Visit Dedicated Vue Roadmap](https://roadmap.sh/vue)
 - [@official@Vue.js Website](https://vuejs.org/)
 - [@official@Official Getting Started](https://vuejs.org/v2/guide/)
 - [@video@Vue.js Course for Beginners](https://www.youtube.com/watch?v=FXpIoQ_rT_c)

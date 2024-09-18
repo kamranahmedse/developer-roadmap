@@ -4,7 +4,7 @@ Java is a high-level, object-oriented programming language known for its portabi
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Java Roadmap](/java)
+- [@roadmap@Visit Dedicated Java Roadmap](https://roadmap.sh/java)
 - [@official@Java Website](https://www.java.com/)
 - [@article@W3 Schools Tutorials](https://www.w3schools.com/java/)
 - [@video@Complete Java course](https://www.youtube.com/watch?v=xk4_1vDrzzo)
