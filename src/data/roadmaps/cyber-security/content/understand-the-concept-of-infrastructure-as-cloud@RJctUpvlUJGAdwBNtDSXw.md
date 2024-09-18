@@ -4,4 +4,4 @@ Infrastructure as Code (IaC) is a practice of managing and provisioning computin
 
 Learn more from the following resources:
 
-- [@roadmap@Terraform Roadmap](/terraform)
+- [@roadmap@Terraform Roadmap](https://roadmap.sh/terraform)
