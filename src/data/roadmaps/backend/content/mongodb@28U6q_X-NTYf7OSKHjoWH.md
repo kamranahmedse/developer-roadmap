@@ -4,7 +4,7 @@ MongoDB is a NoSQL, open-source database designed for storing and managing large
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated MongoDB Roadmap](/mongodb)
+- [@roadmap@Visit Dedicated MongoDB Roadmap](https://roadmap.sh/mongodb)
 - [@official@MongoDB Website](https://www.mongodb.com/)
 - [@official@Learning Path for MongoDB Developers](https://learn.mongodb.com/catalog)
 - [@article@MongoDB Online Sandbox](https://mongoplayground.net/)
