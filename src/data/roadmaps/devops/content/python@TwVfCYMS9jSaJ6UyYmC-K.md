@@ -4,7 +4,7 @@ Python is a high-level, interpreted programming language known for its simplicit
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Python Roadmap](/python)
+- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@official@Python Website](https://www.python.org/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)

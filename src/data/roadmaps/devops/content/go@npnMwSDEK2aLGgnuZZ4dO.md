@@ -4,7 +4,7 @@ Go, also known as Golang, is a statically typed, compiled programming language d
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Go Roadmap](/golang)
+- [@roadmap@Visit Dedicated Go Roadmap](https://roadmap.sh/golang)
 - [@official@Go Reference Documentation](https://go.dev/doc/)
 - [@article@Go by Example - annotated example programs](https://gobyexample.com/)
 - [@article@Making a RESTful JSON API in Go](https://thenewstack.io/make-a-restful-json-api-go/)

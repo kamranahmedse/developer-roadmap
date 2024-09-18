@@ -4,7 +4,7 @@ Docker is an open-source platform that automates the deployment, scaling, and ma
 
 Visit the following resources to learn more:
 
-- [@official@Visit Dedicated Docker Roadmap](/docker)
+- [@official@Visit Dedicated Docker Roadmap](https://roadmap.sh/docker)
 - [@official@Docker Documentation](https://docs.docker.com/)
 - [@video@Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [@video@Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)
