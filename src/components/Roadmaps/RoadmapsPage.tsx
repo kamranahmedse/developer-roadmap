@@ -8,6 +8,7 @@ import {
   getUrlParams,
   setUrlParams,
 } from '../../lib/browser.ts';
+import { RoadmapCard } from './RoadmapCard.tsx';
 
 const groupNames = [
   'Absolute Beginners',
@@ -27,7 +28,7 @@ const groupNames = [
 
 type AllowGroupNames = (typeof groupNames)[number];
 
-type GroupType = {
+export type GroupType = {
   group: AllowGroupNames;
   roadmaps: {
     title: string;
@@ -547,13 +548,7 @@ export function RoadmapsPage() {
 
               <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
                 {group.roadmaps.map((roadmap) => (
-                  <a
-                    key={roadmap.link}
-                    className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
-                    href={roadmap.link}
-                  >
-                    {roadmap.title}
-                  </a>
+                  <RoadmapCard roadmap={roadmap} key={roadmap.link} />
                 ))}
               </div>
             </div>
