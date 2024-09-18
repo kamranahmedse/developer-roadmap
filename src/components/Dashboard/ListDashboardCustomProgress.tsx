@@ -4,7 +4,13 @@ import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { Simulate } from 'react-dom/test-utils';
-import {Bot, BrainCircuit, Map, PencilRuler} from 'lucide-react';
+import {
+  ArrowUpRight,
+  Bot,
+  BrainCircuit,
+  Map,
+  PencilRuler,
+} from 'lucide-react';
 
 type ListDashboardCustomProgressProps = {
   progresses: UserProgress[];
@@ -40,9 +46,21 @@ export function ListDashboardCustomProgress(
     <>
       {customRoadmapModal}
 
-      <h2 className="mb-2 mt-6 text-xs uppercase text-gray-400">
-        {isAIGeneratedRoadmaps ? 'AI Generated Roadmaps' : 'Custom Roadmaps'}
-      </h2>
+      <div className="mb-2 mt-6 flex items-center justify-between gap-2">
+        <h2 className="text-xs uppercase text-gray-400">
+          {isAIGeneratedRoadmaps ? 'AI Generated Roadmaps' : 'Custom Roadmaps'}
+        </h2>
+
+        {!isLoading && progresses.length !== 0 && (
+          <a
+            href="/ai/explore"
+            className="flex items-center gap-1 text-xs text-gray-500 hover:text-black"
+          >
+            <ArrowUpRight size={12} />
+            Community Roadmaps
+          </a>
+        )}
+      </div>
 
       {!isLoading && progresses.length === 0 && isAIGeneratedRoadmaps && (
         <DashboardCardLink
