@@ -65,3 +65,15 @@ export function formatActivityDate(date: string): string {
     day: 'numeric',
   });
 }
+
+export function getCurrentPeriod() {
+  const now = new Date();
+  const hour = now.getHours();
+  if (hour < 12) {
+    return 'morning';
+  } else if (hour < 18) {
+    return 'afternoon';
+  } else {
+    return 'evening';
+  }
+}

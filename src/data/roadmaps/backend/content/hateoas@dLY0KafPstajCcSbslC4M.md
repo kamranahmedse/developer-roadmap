@@ -1,5 +1,8 @@
 # Hateoas
 
-HATEOAS is an acronym for <b>H</b>ypermedia <b>A</b>s <b>T</b>he <b>E</b>ngine <b>O</b>f <b>A</b>pplication <b>S</b>tate, it's the concept that when sending information over a RESTful API the document received should contain everything the client needs in order to parse and use the data i.e they don't have to contact any other endpoint not explicitly mentioned within the Document.
+HATEOAS (Hypermedia As The Engine Of Application State) is a constraint of RESTful architecture that allows clients to navigate an API dynamically through hypermedia links provided in responses. Instead of hard-coding URLs or endpoints, the client discovers available actions through these links, much like a web browser following links on a webpage. This enables greater flexibility and decouples clients from server-side changes, making the system more adaptable and scalable without breaking existing clients. It's a key element of REST's principle of statelessness and self-descriptive messages.
+
+Learn more from the following resources:
 
 - [@article@What is HATEOAS and why is it important for my REST API?](https://restcookbook.com/Basics/hateoas/)
+- [@video@What happened to HATEOAS](https://www.youtube.com/watch?v=HNTSrytKCoQ)

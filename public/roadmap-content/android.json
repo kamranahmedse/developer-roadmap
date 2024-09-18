@@ -412,8 +412,14 @@
   },
   "Bz-BkfzsDHAbAw3HD7WCd": {
     "title": "MVI",
-    "description": "",
-    "links": []
+    "description": "The **MVI** `Model-View-Intent` pattern is a reactive architectural pattern, similar to **MVVM** and **MVP**, focusing on immutability and handling states in unidirectional cycles. The data flow is unidirectional: Intents update the Model's state through the `ViewModel`, and then the View reacts to the new state. This ensures a clear and predictable cycle between logic and the interface.\n\n*   Model: Represents the UI state. It is immutable and contains all the necessary information to represent a screen.\n*   View: Displays the UI state and receives the user's intentions.\n*   Intent: The user's intentions trigger state updates, managed by the `ViewModel`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MVI with Kotlin",
+        "url": "https://proandroiddev.com/mvi-architecture-with-kotlin-flows-and-channels-d36820b2028d",
+        "type": "article"
+      }
+    ]
   },
   "pSU-NZtjBh-u0WKTYfjk_": {
     "title": "MVVM",
@@ -614,8 +620,19 @@
   },
   "e3vHFaFFMV7kI9q6yf5e9": {
     "title": "Cloud Messaging",
-    "description": "Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging service that enables you to send messages reliably and securely to your Android applications. It enables you to send two types of messages: \"notification messages\" and \"data messages\". Notification messages are primarily meant for user notifications and will only be delivered when the application is in the foreground. On the other hand, data messages can handle even when the app is in the background or killed and can be used to send custom key-value pairs. FCM also supports various additional features, such as topic messaging to send messages to multiple devices subscribed to a common topic, device group messaging for sending messages to groups of user devices, and upstream messaging for sending messages from the client application to the FCM server.",
-    "links": []
+    "description": "Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging service that enables you to send messages reliably and securely to your Android applications. It enables you to send two types of messages: \"notification messages\" and \"data messages\". Notification messages are primarily meant for user notifications and will only be delivered when the application is in the foreground. On the other hand, data messages can handle even when the app is in the background or killed and can be used to send custom key-value pairs. FCM also supports various additional features, such as topic messaging to send messages to multiple devices subscribed to a common topic, device group messaging for sending messages to groups of user devices, and upstream messaging for sending messages from the client application to the FCM server.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://firebase.google.com/docs/cloud-messaging/android/client",
+        "type": "article"
+      },
+      {
+        "title": "Firebase Cloud Messaging",
+        "url": "https://www.youtube.com/watch?v=sioEY4tWmLI&list=PLl-K7zZEsYLkuHRCtHTpi6JYHka8oHLft",
+        "type": "video"
+      }
+    ]
   },
   "3EEfKAd-ppIQpdQSEhbA1": {
     "title": "FireStore",

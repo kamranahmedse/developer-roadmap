@@ -4,7 +4,7 @@ React is the most popular front-end JavaScript library for building user interfa
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated React Roadmap](/react)
+- [@roadmap@Visit Dedicated React Roadmap](https://roadmap.sh/react)
 - [@article@React Website](https://reactjs.org/)
 - [@article@Official Getting Started](https://reactjs.org/tutorial/tutorial.html)
 - [@article@Beta React Docs](https://reactjs.org/)

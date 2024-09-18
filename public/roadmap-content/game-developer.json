@@ -378,12 +378,17 @@
     "links": []
   },
   "AaRZiItRcn8fYb5R62vfT": {
-    "title": "Assembly",
-    "description": "**Assembly** is a low-level programming language, often used for direct hardware manipulation, real-time systems, and to write performance-critical code. It provides a strong correspondence between its instructions and the architecture's machine-code instructions, since it directly represents the specific commands of the computer's CPU structure. However, it's closer to machine language (binary code) than to human language, which makes it difficult to read and understand. The syntax varies greatly, which depends upon the CPU architecture for which it's designed, thus Assembly language written for one type of processor can't be used on another. Despite its complexity, time-intensive coding process and machine-specific nature, Assembly language is still utilized for speed optimization and hardware manipulation where high-level languages may not be sufficient.",
+    "title": "GDScript",
+    "description": "GDScript is a high-level, dynamically-typed programming language designed specifically for the Godot Engine, an open-source game development platform. It is tailored for ease of use and rapid development of game logic and functionality. GDScript features a syntax similar to Python, which simplifies learning and coding for developers familiar with Python, while providing direct access to Godot's rich set of built-in functions and game-specific APIs. The language integrates closely with Godot's scene system and scripting environment, enabling developers to create and manipulate game objects, handle input, and control game behavior efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Code walkthrough of a game written in x64 assembly",
-        "url": "https://www.youtube.com/watch?v=WUoqlp30M78",
+        "title": "GDScript Website",
+        "url": "https://gdscript.com/",
+        "type": "article"
+      },
+      {
+        "title": "How to program in Godot - GDScript Tutorial",
+        "url": "https://www.youtube.com/watch?v=e1zJS31tr88",
         "type": "video"
       }
     ]

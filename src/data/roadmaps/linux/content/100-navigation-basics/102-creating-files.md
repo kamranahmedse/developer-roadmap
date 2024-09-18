@@ -29,7 +29,12 @@ rm example.txt
 # Ask for confirmation
 rm -i [filename]
 ```
+
 ```bash
 # Removes an empty directory
 rmdir [directory] 
-```    
+```
+
+Learn more from the following resources:
+
+- [@article@Linux rm Command: File Removing](https://labex.io/tutorials/linux-linux-rm-command-file-removing-209741)

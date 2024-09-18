@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { MouseEvent } from "react";
+import type { MouseEvent } from 'react';
 import { httpPatch } from '../../lib/http';
 import type { ResourceType } from '../../lib/resource-progress';
 import { isLoggedIn } from '../../lib/jwt';
@@ -7,6 +7,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { FavoriteIcon } from './FavoriteIcon';
 import { Spinner } from '../ReactIcons/Spinner';
 import { useToast } from '../../hooks/use-toast';
+import { cn } from '../../lib/classname';
 
 type MarkFavoriteType = {
   resourceType: ResourceType;
@@ -27,7 +28,9 @@ export function MarkFavorite({
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isFavorite, setIsFavorite] = useState(
-      isAuthenticated ? (favorite ?? localStorage.getItem(localStorageKey) === '1') : false
+    isAuthenticated
+      ? (favorite ?? localStorage.getItem(localStorageKey) === '1')
+      : false,
   );
 
   async function toggleFavoriteHandler(e: MouseEvent<HTMLButtonElement>) {
@@ -48,7 +51,7 @@ export function MarkFavorite({
       {
         resourceType,
         resourceId,
-      }
+      },
     );
 
     if (error) {
@@ -68,7 +71,7 @@ export function MarkFavorite({
           resourceType,
           isFavorite: !isFavorite,
         },
-      })
+      }),
     );
 
     window.dispatchEvent(new CustomEvent('refresh-favorites', {}));
@@ -99,11 +102,18 @@ export function MarkFavorite({
       aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
       onClick={toggleFavoriteHandler}
       tabIndex={-1}
-      className={`${isFavorite ? '' : 'opacity-30 hover:opacity-100'} ${
-        className || 'absolute right-1.5 top-1.5 z-30 focus:outline-0'
-      }`}
+      className={cn(
+        'absolute right-1.5 top-1.5 z-30 focus:outline-0',
+        isFavorite ? '' : 'opacity-30 hover:opacity-100',
+        className,
+      )}
+      data-is-favorite={isFavorite}
     >
-      {isLoading ? <Spinner isDualRing={false} /> : <FavoriteIcon isFavorite={isFavorite} />}
+      {isLoading ? (
+        <Spinner isDualRing={false} />
+      ) : (
+        <FavoriteIcon isFavorite={isFavorite} />
+      )}
     </button>
   );
 }
