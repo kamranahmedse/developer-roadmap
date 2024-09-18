@@ -11,3 +11,7 @@ join file1.txt file2.txt
 
 Please note that `join` command works properly only when the files are sorted.
 It's crucial to understand all the provided options and flags to use `join` effectively in text processing tasks.
+
+Learn more from the following resources:
+
+- [@article@Linux join Command: File Joining](https://labex.io/tutorials/linux-linux-join-command-file-joining-219193)
