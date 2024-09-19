@@ -1,6 +1,6 @@
 # DockerHub
 
-[DockerHub](https://hub.docker.com/) is a cloud-based registry service provided by Docker Inc. It is the default public container registry where you can store, manage, and distribute your Docker images.
+DockerHub is a cloud-based registry service provided by Docker Inc. It is the default public container registry where you can store, manage, and distribute your Docker images.
 
 ## Features of DockerHub
 
