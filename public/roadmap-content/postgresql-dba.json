@@ -550,7 +550,7 @@
     "description": "PostgreSQL offers a comprehensive set of data types to cater to diverse data needs, including numeric types like `INTEGER`, `FLOAT`, and `SERIAL` for auto-incrementing fields; character types such as `VARCHAR` and `TEXT` for variable-length text; and temporal types like `DATE`, `TIME`, and `TIMESTAMP` for handling date and time data. Additionally, PostgreSQL supports `BOOLEAN` for true/false values, `ENUM` for enumerated lists, and composite types for complex structures. It also excels with `JSON` and `JSONB` for storing and querying semi-structured data, arrays for storing multiple values in a single field, and geometric types for spatial data. These data types ensure flexibility and robust data management for various applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "PostgreSQL® Data Types: Mappings to SQL, JDBC, and Java Data Types",
         "url": "https://www.instaclustr.com/blog/postgresql-data-types-mappings-to-sql-jdbc-and-java-data-types/",
         "type": "article"
       },
@@ -2089,6 +2089,16 @@
       {
         "title": "Triggers",
         "url": "https://www.postgresql.org/docs/8.1/triggers.html",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Triggers",
+        "url": "https://www.postgresqltutorial.com/postgresql-triggers/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding PostgreSQL Triggers",
+        "url": "https://hevodata.com/learn/postgresql-triggers/",
         "type": "article"
       },
       {
