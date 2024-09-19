@@ -6,7 +6,6 @@ When one device on a LAN wants to communicate with another, it needs to know the
 
 Once the requesting device receives the MAC address, it updates its ARP cache—a table that stores IP-to-MAC address mappings—allowing it to send data directly to the correct hardware address.
 
-For more in-depth information, check out the following resources:
 
 Learn more from the following resources: 
 
