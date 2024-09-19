@@ -71,6 +71,7 @@ export function UpdatePublicProfileForm() {
   const [profileRoadmaps, setProfileRoadmaps] = useState<RoadmapType[]>([]);
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isProfileUpdated, setIsProfileUpdated] = useState(false);
 
   const { isCopied, copyText } = useCopyText();
 
@@ -109,6 +110,7 @@ export function UpdatePublicProfileForm() {
 
     await loadProfileSettings();
     toast.success('Profile updated successfully');
+    setIsProfileUpdated(true);
   };
 
   const loadProfileSettings = async () => {
@@ -593,6 +595,37 @@ export function UpdatePublicProfileForm() {
         >
           {isLoading ? 'Please wait..' : 'Save Profile'}
         </button>
+        {isProfileUpdated && publicProfileUrl && (
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              className={cn(
+                'flex items-center justify-center gap-2 text-gray-500 underline underline-offset-2 hover:text-black hover:no-underline',
+                isCopied
+                  ? 'text-green-500 hover:text-green-600'
+                  : 'text-gray-500',
+              )}
+              onClick={() => {
+                copyText(`${window.location.origin}${publicProfileUrl}`);
+              }}
+            >
+              {isCopied ? (
+                <CheckCircle className="size-4" />
+              ) : (
+                <Copy className="size-4" />
+              )}
+              Copy Profile URL
+            </button>
+            <a
+              className="flex items-center justify-center gap-2 text-gray-500 underline underline-offset-2 hover:text-black hover:no-underline"
+              href={publicProfileUrl}
+              target="_blank"
+            >
+              <ArrowUpRight className="size-4" />
+              View Profile
+            </a>
+          </div>
+        )}
       </form>
     </div>
   );

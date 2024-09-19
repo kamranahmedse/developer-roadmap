@@ -14,6 +14,9 @@ import { CheckEmoji } from '../ReactIcons/CheckEmoji.tsx';
 import { ConstructionEmoji } from '../ReactIcons/ConstructionEmoji.tsx';
 import { BookEmoji } from '../ReactIcons/BookEmoji.tsx';
 import { DashboardAiRoadmaps } from './DashboardAiRoadmaps.tsx';
+import type { AllowedProfileVisibility } from '../../api/user.ts';
+import { PencilIcon, type LucideIcon } from 'lucide-react';
+import { cn } from '../../lib/classname.ts';
 
 type UserDashboardResponse = {
   name: string;
@@ -21,6 +24,7 @@ type UserDashboardResponse = {
   avatar: string;
   headline: string;
   username: string;
+  profileVisibility: AllowedProfileVisibility;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
   aiRoadmaps: {
@@ -222,18 +226,20 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return 0;
     });
 
+  const { username } = personalDashboardDetails || {};
+
   return (
     <section>
       {isLoading ? (
         <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
       ) : (
-        <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row gap-1">
+        <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center">
           <h2 className="text-lg font-medium">
             Hi {name}, good {getCurrentPeriod()}!
           </h2>
           <a
             href="/home"
-            className="text-xs font-medium bg-gray-200 hover:bg-gray-300 px-2.5 py-1 rounded-full text-gray-700 hover:text-black"
+            className="rounded-full bg-gray-200 px-2.5 py-1 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
           >
             Visit Homepage
           </a>
@@ -253,8 +259,16 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             <DashboardCard
               imgUrl={avatarLink}
               title={name!}
-              description="Setup your profile"
-              href="/account/update-profile"
+              description={
+                username ? 'View your profile' : 'Setup your profile'
+              }
+              href={username ? `/u/${username}` : '/account/update-profile'}
+              {...(username && {
+                externalLinkIcon: PencilIcon,
+                externalLinkHref: '/account/update-profile',
+                externalLinkText: 'Edit',
+              })}
+              className={username ? 'border-dashed' : ''}
             />
 
             <DashboardCard
@@ -312,33 +326,61 @@ type DashboardCardProps = {
   title: string;
   description: string;
   href: string;
+  externalLinkIcon?: LucideIcon;
+  externalLinkText?: string;
+  externalLinkHref?: string;
+  className?: string;
 };
 
 function DashboardCard(props: DashboardCardProps) {
-  const { icon: Icon, imgUrl, title, description, href } = props;
+  const {
+    icon: Icon,
+    imgUrl,
+    title,
+    description,
+    href,
+    externalLinkHref,
+    externalLinkIcon: ExternalLinkIcon,
+    externalLinkText,
+    className,
+  } = props;
 
   return (
-    <a
-      href={href}
-      className="flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
+    <div
+      className={cn(
+        'relative overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50',
+        className,
+      )}
     >
-      {Icon && (
-        <div className="px-4 pb-3 pt-4">
-          <Icon className="size-6" />
-        </div>
-      )}
+      <a href={href} className="flex flex-col">
+        {Icon && (
+          <div className="px-4 pb-3 pt-4">
+            <Icon className="size-6" />
+          </div>
+        )}
 
-      {imgUrl && (
-        <div className="px-4 pb-1.5 pt-3.5">
-          <img src={imgUrl} alt={title} className="size-8 rounded-full" />
-        </div>
-      )}
+        {imgUrl && (
+          <div className="px-4 pb-1.5 pt-3.5">
+            <img src={imgUrl} alt={title} className="size-8 rounded-full" />
+          </div>
+        )}
 
-      <div className="flex grow flex-col justify-center gap-0.5 p-4">
-        <h3 className="truncate font-medium text-black">{title}</h3>
-        <p className="text-xs text-black">{description}</p>
-      </div>
-    </a>
+        <div className="flex grow flex-col justify-center gap-0.5 p-4">
+          <h3 className="truncate font-medium text-black">{title}</h3>
+          <p className="text-xs text-black">{description}</p>
+        </div>
+      </a>
+
+      {externalLinkHref && (
+        <a
+          href={externalLinkHref}
+          className="absolute right-0 top-0 flex items-center gap-1.5 rounded-bl-md bg-gray-200 p-1 px-2 text-sm text-gray-600 hover:bg-gray-300 hover:text-black"
+        >
+          {ExternalLinkIcon && <ExternalLinkIcon className="size-3" />}
+          {externalLinkText}
+        </a>
+      )}
+    </div>
   );
 }
 
