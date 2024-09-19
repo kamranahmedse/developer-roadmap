@@ -4,7 +4,7 @@ Properly tagging your Docker images is crucial for efficient container managemen
 
 ## Use Semantic Versioning
 
-When tagging your image, it is recommended to follow [Semantic Versioning guidelines](https://semver.org/). Semantic versioning is a widely recognized method that can help better maintain your application. Docker image tags should have the following structure `<major_version>.<minor_version>.<patch>`. Example: `3.2.1`.
+When tagging your image, it is recommended to follow Semantic Versioning guidelines. Semantic versioning is a widely recognized method that can help better maintain your application. Docker image tags should have the following structure `<major_version>.<minor_version>.<patch>`. Example: `3.2.1`.
 
 ## Tag the Latest Version
 

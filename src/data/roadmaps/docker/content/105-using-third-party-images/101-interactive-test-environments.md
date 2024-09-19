@@ -4,7 +4,7 @@ Docker allows you to create isolated, disposable environments that can be delete
 
 ## Creating an Interactive Test Environment with Docker
 
-To demonstrate how to setup an interactive test environment, let's use the Python programming language as an example. We will use a public Python image available on [Docker Hub](https://hub.docker.com/_/python).
+To demonstrate how to setup an interactive test environment, let's use the Python programming language as an example. We will use a public Python image available on Docker Hub.
 
 - To start an interactive test environment using the Python image, simply run the following command:
 
