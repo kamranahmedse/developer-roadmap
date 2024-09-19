@@ -6,4 +6,4 @@ Bitrise provides a comprehensive suite of tools for automating the build, test, 
 
 Learn more from the following links:
 
-- [@article@Adding a Flutter app to Bitrise](https://devcenter.bitrise.io/en/getting-started/getting-started-with-flutter-apps)
+- [@article@Adding a Flutter app to Bitrise](https://devcenter.bitrise.io/en/getting-started/quick-start-guides/getting-started-with-flutter-apps.html)
