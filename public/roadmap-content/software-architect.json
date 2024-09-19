@@ -148,7 +148,7 @@
     "links": [
       {
         "title": "Visit Dedicated Java Roadmap",
-        "url": "/java",
+        "url": "https://roadmap.sh/java",
         "type": "article"
       },
       {
@@ -184,7 +184,7 @@
     "links": [
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -246,7 +246,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -282,7 +282,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -1177,7 +1177,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
