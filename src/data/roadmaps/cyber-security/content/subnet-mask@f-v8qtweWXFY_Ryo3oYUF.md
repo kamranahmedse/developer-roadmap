@@ -1,26 +1,8 @@
 # subnet mask
 
-A **subnet mask** is a crucial component of Internet Protocol (IP) addressing, acting as a "mask" to separate the network portion of an IP address from the host portion. It is a 32-bit number representing a sequence of 1's followed by a sequence of 0's, used to define the boundary of a subnet within a given IP address.
+A subnet mask is a 32-bit number used in IP networking to divide an IP address into network and host portions. It determines which part of an IP address refers to the network and which part refers to the host. Subnet masks enable network administrators to create subnetworks, improving network efficiency and security by controlling traffic flow between subnets. Common subnet masks include 255.255.255.0 (for a /24 network) and 255.255.0.0 (for a /16 network). Subnetting helps in efficient IP address allocation, reduces broadcast traffic, and enhances network performance. Understanding subnet masks is crucial for network configuration, troubleshooting, and implementing effective network segmentation strategies.
 
-The primary purpose of a subnet mask is to:
+Learn more from the following resources:
 
-- Define network boundaries
-- Facilitate IP routing
-- Break down large IP networks into smaller, manageable subnetworks (subnets)
-
-## Format
-
-The subnet mask is written in the same dotted-decimal format as IP addresses (i.e., four octets separated by dots). For instance, the default subnet mask for a Class A IP address is `255.0.0.0`, for Class B is `255.255.0.0`, and for Class C is `255.255.255.0`.
-
-## Importance in Cybersecurity
-
-Understanding and configuring subnet masks correctly is crucial in cybersecurity, as they:
-
-- Help to isolate different segments of your network, leading to greater security control and more efficient usage of resources
-- Facilitate the division of IP networks into smaller subnets, which can then be assigned to different departments, groups, or functions within an organization
-- Enhance network efficiency by preventing unnecessary broadcast traffic
-- Improve the overall network stability and monitoring capabilities
-
-To determine the appropriate subnet mask for different requirements, you can use various subnetting tools available online. Proper management of subnet masks is crucial for maintaining a secure, efficient, and well-functioning network.
-
-- [@article@Wildcard mask](https://en.wikipedia.org/wiki/Wildcard_mask)
+- [@article@What Is a Subnet Mask?](https://www.spiceworks.com/tech/networking/articles/what-is-subnet-mask/)
+- [@video@What is a subnet mask?](https://www.youtube.com/watch?v=s_Ntt6eTn94)
