@@ -12,6 +12,7 @@ type TeamMemberProps = {
   userId: string;
   index: number;
   teamId: string;
+  canViewProgress: boolean;
   canManageCurrentTeam: boolean;
   onDeleteMember: () => void;
   onUpdateMember: () => void;
@@ -29,11 +30,12 @@ export function TeamMemberItem(props: TeamMemberProps) {
     userId,
     onDeleteMember,
     onSendProgressReminder,
+    canViewProgress = true,
   } = props;
 
   const currentTeam = useStore($currentTeam);
   const canManageTeam = useStore($canManageCurrentTeam);
-  const showNoProgressBadge = !member.hasProgress && member.status === 'joined';
+  const showNoProgressBadge = canViewProgress && !member.hasProgress && member.status === 'joined';
   const allowProgressReminder =
     canManageTeam &&
     !member.hasProgress &&

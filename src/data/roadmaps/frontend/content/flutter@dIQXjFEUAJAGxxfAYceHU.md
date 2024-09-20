@@ -4,7 +4,7 @@ Flutter is an open-source UI software development kit created by Google for buil
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Flutter Roadmap](/flutter)
+- [@roadmap@Visit Dedicated Flutter Roadmap](https://roadmap.sh/flutter)
 - [@official@Flutter Website](https://flutter.dev)
 - [@official@Flutter for Desktop](https://flutter.dev/multi-platform/desktop)
 - [@course@Flutter course for beginners](https://www.youtube.com/watch?v=VPvVD8t02U8)

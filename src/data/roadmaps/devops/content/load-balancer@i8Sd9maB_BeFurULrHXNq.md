@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is Load Balancing?](https://www.nginx.com/resources/glossary/load-balancing/)
 - [@article@Load Balancing concepts and algorithms](https://www.cloudflare.com/en-gb/learning/performance/what-is-load-balancing/)
+- [@video@What is a Load Balancer?](https://www.youtube.com/watch?v=sCR3SAVdyCc)

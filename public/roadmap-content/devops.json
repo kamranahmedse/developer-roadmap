@@ -16,7 +16,7 @@
     "links": [
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -35,7 +35,7 @@
         "type": "article"
       },
       {
-        "title": "W3Schools - Python Tutorial ",
+        "title": "W3Schools - Python Tutorial",
         "url": "https://www.w3schools.com/python/",
         "type": "article"
       },
@@ -78,7 +78,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -97,7 +97,7 @@
         "type": "article"
       },
       {
-        "title": "W3Schools Go Tutorial ",
+        "title": "W3Schools Go Tutorial",
         "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
@@ -165,7 +165,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -245,6 +245,11 @@
     "title": "Ubuntu / Debian",
     "description": "Debian is a free and open-source Linux distribution developed by the Debian Project, an all volunteer software community organization. Debian is the upstream distribution of Ubuntu.\n\nUbuntu is a free and open-source Linux distribution based on Debian. Ubuntu is available in three versions Desktop, Server and Core.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Practice Linux Commands with Hands-on Labs\"",
+        "url": "https://labex.io/courses/linux-basic-commands-practice-online",
+        "type": "course"
+      },
       {
         "title": "Debian Website",
         "url": "https://www.debian.org/",
@@ -369,7 +374,7 @@
         "type": "article"
       },
       {
-        "title": "FreeBSD Resources for Newbies ",
+        "title": "FreeBSD Resources for Newbies",
         "url": "https://www.freebsd.org/projects/newbies/",
         "type": "article"
       }
@@ -427,7 +432,7 @@
     "description": "Windows is a graphical user interface (GUI) based operating system developed by Microsoft. It is a hybrid kernel-based proprietary operating system. According to a survey, till April 2022, windows is the most popular operating system in the world with a 75% market share.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Windows Official Site",
+        "title": "Microsoft Windows",
         "url": "http://microsoft.com/windows",
         "type": "article"
       },
@@ -482,7 +487,7 @@
   },
   "gIEQDgKOsoEnSv8mpEzGH": {
     "title": "Performance Monitoring",
-    "description": "There are many tools available to monitor the performance of your application. Some of the most popular are:\n\n*   `nmon` - A system monitor tool for Linux and AIX systems.\n*   `iostat` - A tool that reports CPU statistics and input/output statistics for devices, partitions and network filesystems.\n*   `sar` - A system monitor command used to report on various system loads, including CPU activity, memory/paging, device load, network.\n*   `vmstat` - A tool that reports virtual memory statistics.\n\nNmon is a fully interactive performance monitoring command-line utility tool for Linux. It is a benchmark tool that displays performance about the cpu, memory, network, disks, file system, nfs, top processes, resources, and power micro-partition.\n\n*   [@article@nmon Documentation](https://www.ibm.com/docs/en/aix/7.2?topic=n-nmon-command)\n\nThe iostat command in Linux is used for monitoring system input/output statistics for devices and partitions. It monitors system input/output by observing the time the devices are active in relation to their average transfer rates. The iostat produce reports may be used to change the system configuration to raised balance the input/output between the physical disks.\n\n*   [@article@iostat Documentation](https://man7.org/linux/man-pages/man1/iostat.1.html)\n\nShort for **S**ystem **A**ctivity **R**eport, `sar` is a command line tool for Unix and Unix-like operating systems that shows a report of different information about the usage and activity of resources in the operating system.\n\n*   [@article@SAR Man Page](https://man7.org/linux/man-pages/man1/sar.1.html)\n*   [@article@SAR Man Page 2](https://linux.die.net/man/1/sar)\n*   [@article@Sar tutorial for beginners](https://linuxhint.com/sar_linux_tutorial/)\n\nShort for **V**irtual **m**emory **stat**istic reporter, `vmstat` is a command line tool for Unix and Unix-like operating systems that reports various information about the operating system such as memory, paging, processes, I/O, CPU and disk usage.",
+    "description": "There are many tools available to monitor the performance of your application. Some of the most popular are:\n\n*   `nmon` - A system monitor tool for Linux and AIX systems.\n*   `iostat` - A tool that reports CPU statistics and input/output statistics for devices, partitions and network filesystems.\n*   `sar` - A system monitor command used to report on various system loads, including CPU activity, memory/paging, device load, network.\n*   `vmstat` - A tool that reports virtual memory statistics.\n\nNmon is a fully interactive performance monitoring command-line utility tool for Linux. It is a benchmark tool that displays performance about the cpu, memory, network, disks, file system, nfs, top processes, resources, and power micro-partition.\n\n*   [@article@nmon Documentation](https://www.ibm.com/docs/en/aix/7.2?topic=n-nmon-command)\n\nThe iostat command in Linux is used for monitoring system input/output statistics for devices and partitions. It monitors system input/output by observing the time the devices are active in relation to their average transfer rates. The iostat produce reports may be used to change the system configuration to raised balance the input/output between the physical disks.\n\n*   [@article@iostat Documentation](https://man7.org/linux/man-pages/man1/iostat.1.html)\n\nShort for **S**ystem **A**ctivity **R**eport, `sar` is a command line tool for Unix and Unix-like operating systems that shows a report of different information about the usage and activity of resources in the operating system.\n\n*   [@article@SAR Man Page](https://man7.org/linux/man-pages/man1/sar.1.html)\n*   [@article@SAR Man Page 2](https://linux.die.net/man/1/sar)\n*   [@article@Sar tutorial for beginners](https://linuxhint.com/sar_linux_tutorial/)\n\nShort for **V**irtual **m**emory **stat**istic reporter, `vmstat` is a command line tool for Unix and Unix-like operating systems that reports various information about the operating system such as memory, paging, processes, I/O, CPU and disk usage.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Linux commands: exploring virtual memory with vmstat",
@@ -508,7 +513,7 @@
   },
   "OaqKLZe-XnngcDhDzCtRt": {
     "title": "Networking Tools",
-    "description": "Networking tools are used to troubleshoot network issues. They are also used to monitor network traffic and to test network connectivity. Some of the most common networking tools are:\n\n*   `traceroute` - Traces the route taken by packets over an IP network.\n*   `ping` - sends echo request packets to a host to test the Internet connection.\n*   `mtr` - Combines the functionality of `traceroute` and `ping` into a single diagnostic tool.\n*   `nmap` - Scans hosts for open ports.\n*   `netstat` - Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.\n*   `ufw` and `firewalld` - Firewall management tools.\n*   `iptables` and `nftables` - Firewall management tools.\n*   `tcpdump` - Dumps traffic on a network.\n*   `dig` - DNS lookup utility.\n*   `scp` - Secure copy.\n\n`traceroute` command is a command in Linux that prints the route a network packet takes from its source (e.g. your computer) to the destination host (e.g., [roadmap.sh](http://roadmap.sh)). It is quite valuable in investigating slow network connections as it can help us spot the slow leg of the network packet journey through the internet.\n\n*   [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)\n\n`ping` (**P**acket **In**ternet **G**roper) command is used to check the network connectivity between host and server/host. This command takes as input the IP address or the URL and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is recorded which is called latency.\n\n*   [What is ping command?](https://linuxize.com/post/linux-ping-command/)\n\n`mtr` combines the functionality of the traceroute and ping programs in a single network diagnostic tool.\n\n*   [Javatpoint: Linux mtr Command](https://www.javatpoint.com/linux-mtr)\n*   [mtr Linux command](https://www.tutorialspoint.com/unix_commands/mtr.htm)\n*   [How to traceroute use mtr command in Linux](https://www.devopsroles.com/how-to-traceroute-use-mtr-command-in-linux/)\n\nNMAP stands for Network Mapper and is an open-source tool used to explore and audit the network's security, such as checking firewalls and scanning ports.\n\n*   [NMAP Official Manual Book](https://nmap.org/book/man.html)\n\nNetstat is a command line utility to display all the network connections on a system. It displays all the tcp, udp and unix socket connections. Apart from connected sockets it also displays listening sockets that are waiting for incoming connections.\n\n*   [netstat command in Linux with Examples](https://www.tutorialspoint.com/unix_commands/netstat.htm)\n*   [Netstat Tutorial](http://www.c-jump.com/CIS24/Slides/Networking/html_utils/netstat.html)\n*   [Netstat Commands - Network Administration Tutorial](https://www.youtube.com/watch?v=bxFwpm4IobU)\n*   [Linux Command Line Tutorial For Beginners - netstat command](https://www.youtube.com/watch?v=zGNcvBaN5wE)\n\nUFW, or _uncomplicated firewall_, is command-line based utility for managing firewall rules in Arch Linux, Debian and Ubuntu. It's aim is to make firewall configuration as simple as possible. It is a frontend for the `iptables` firewalling tool.\n\n*   [ufw Documentation](https://manpages.ubuntu.com/manpages/trusty/man8/ufw.8.html)\n*   [Basic Introduction to UFW](https://www.linux.com/training-tutorials/introduction-uncomplicated-firewall-ufw/)\n*   [UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)\n\nIPtables is a command-line firewall utility that uses policy chains to allow or block traffic that will be enforced by the linux kernel’s netfilter framework. Iptables packet filtering mechanism is organized into three different kinds of structures: tables, chains and targets.\n\n*   [Iptables tutorial](https://www.hostinger.in/tutorials/iptables-tutorial)\n*   [Beginners to Advanced Guide Iptables](https://erravindrapawadia.medium.com/iptables-tutorial-beginners-to-advanced-guide-to-linux-firewall-839e10501759)\n\n`tcpdump` is a command line tool used for analysing network traffic passing through your system. It can be used to capture and filter packets and display them in a human-readable format. The captured information can be analysed at a later date as well.\n\n*   [tcpdump Documentation](https://www.tcpdump.org/manpages/tcpdump.1.html)\n*   [Basic Introduction to Tcpdump](https://opensource.com/article/18/10/introduction-tcpdump)\n*   [50 ways to isolate traffic with Tcpdump](https://danielmiessler.com/study/tcpdump/)\n*   [Interpreting Tcpdump output and data](https://www.youtube.com/watch?v=7bsQP9sKHrs)\n\n`dig` command stands for **D**omain **I**nformation **G**roper. It is used for retrieving information about DNS name servers. It is mostly used by network administrators for verifying and troubleshooting DNS problems and to perform DNS lookups. It replaces older tools such as `nslookup` and the `host`.\n\n*   [More on dig](https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux/)\n*   [What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)\n\n`SCP` is an acronym for Secure Copy [Protocol.It](http://Protocol.It) is a command line utility that allows the user to securely copy files and directories between two locations usually between unix or linux systems.The protocol ensures the transmission of files is encrypted to prevent anyone with suspicious intentions from getting sensitive information.`SCP` uses encryption over an `SSH` (Secure Shell) connection, this ensures that the data being transferred is protected from suspicious attacks.",
+    "description": "Networking tools are used to troubleshoot network issues. They are also used to monitor network traffic and to test network connectivity. Some of the most common networking tools are:\n\n*   `traceroute` - Traces the route taken by packets over an IP network.\n*   `ping` - sends echo request packets to a host to test the Internet connection.\n*   `mtr` - Combines the functionality of `traceroute` and `ping` into a single diagnostic tool.\n*   `nmap` - Scans hosts for open ports.\n*   `netstat` - Displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.\n*   `ufw` and `firewalld` - Firewall management tools.\n*   `iptables` and `nftables` - Firewall management tools.\n*   `tcpdump` - Dumps traffic on a network.\n*   `dig` - DNS lookup utility.\n*   `scp` - Secure copy.\n\n`traceroute` command is a command in Linux that prints the route a network packet takes from its source (e.g. your computer) to the destination host (e.g., [roadmap.sh](http://roadmap.sh)). It is quite valuable in investigating slow network connections as it can help us spot the slow leg of the network packet journey through the internet.\n\n*   [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)\n\n`ping` (**P**acket **In**ternet **G**roper) command is used to check the network connectivity between host and server/host. This command takes as input the IP address or hostname and sends a data packet to the specified address with the message “PING” and get a response from the server/host this time is recorded which is called latency.\n\n*   [What is ping command?](https://linuxize.com/post/linux-ping-command/)\n\n`mtr` combines the functionality of the traceroute and ping programs in a single network diagnostic tool.\n\n*   [Javatpoint: Linux mtr Command](https://www.javatpoint.com/linux-mtr)\n*   [mtr Linux command](https://www.tutorialspoint.com/unix_commands/mtr.htm)\n*   [How to traceroute use mtr command in Linux](https://www.devopsroles.com/how-to-traceroute-use-mtr-command-in-linux/)\n\nNMAP stands for Network Mapper and is an open-source tool used to explore and audit the network's security, such as checking firewalls and scanning ports.\n\n*   [NMAP Official Manual Book](https://nmap.org/book/man.html)\n\nNetstat is a command line utility to display all the network connections on a system. It displays all the tcp, udp and unix socket connections. Apart from connected sockets it also displays listening sockets that are waiting for incoming connections.\n\n*   [netstat command in Linux with Examples](https://www.tutorialspoint.com/unix_commands/netstat.htm)\n*   [Netstat Tutorial](http://www.c-jump.com/CIS24/Slides/Networking/html_utils/netstat.html)\n*   [Netstat Commands - Network Administration Tutorial](https://www.youtube.com/watch?v=bxFwpm4IobU)\n*   [Linux Command Line Tutorial For Beginners - netstat command](https://www.youtube.com/watch?v=zGNcvBaN5wE)\n\nUFW, or _uncomplicated firewall_, is command-line based utility for managing firewall rules in Arch Linux, Debian and Ubuntu. It's aim is to make firewall configuration as simple as possible. It is a frontend for the `iptables` firewalling tool.\n\n*   [ufw Documentation](https://manpages.ubuntu.com/manpages/trusty/man8/ufw.8.html)\n*   [Basic Introduction to UFW](https://www.linux.com/training-tutorials/introduction-uncomplicated-firewall-ufw/)\n*   [UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)\n\nIPtables is a command-line firewall utility that uses policy chains to allow or block traffic that will be enforced by the linux kernel’s netfilter framework. Iptables packet filtering mechanism is organized into three different kinds of structures: tables, chains and targets.\n\n*   [Iptables tutorial](https://www.hostinger.in/tutorials/iptables-tutorial)\n*   [Beginners to Advanced Guide Iptables](https://erravindrapawadia.medium.com/iptables-tutorial-beginners-to-advanced-guide-to-linux-firewall-839e10501759)\n\n`tcpdump` is a command line tool used for analysing network traffic passing through your system. It can be used to capture and filter packets and display them in a human-readable format. The captured information can be analysed at a later date as well.\n\n*   [tcpdump Documentation](https://www.tcpdump.org/manpages/tcpdump.1.html)\n*   [Basic Introduction to Tcpdump](https://opensource.com/article/18/10/introduction-tcpdump)\n*   [50 ways to isolate traffic with Tcpdump](https://danielmiessler.com/study/tcpdump/)\n*   [Interpreting Tcpdump output and data](https://www.youtube.com/watch?v=7bsQP9sKHrs)\n\n`dig` command stands for **D**omain **I**nformation **G**roper. It is used for retrieving information about DNS name servers. It is mostly used by network administrators for verifying and troubleshooting DNS problems and to perform DNS lookups. It replaces older tools such as `nslookup` and the `host`.\n\n*   [More on dig](https://linuxize.com/post/how-to-use-dig-command-to-query-dns-in-linux/)\n*   [What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)\n\n`SCP` is an acronym for Secure Copy [Protocol.It](http://Protocol.It) is a command line utility that allows the user to securely copy files and directories between two locations usually between unix or linux systems.The protocol ensures the transmission of files is encrypted to prevent anyone with suspicious intentions from getting sensitive information.`SCP` uses encryption over an `SSH` (Secure Shell) connection, this ensures that the data being transferred is protected from suspicious attacks.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "10 SCP command examples",
@@ -540,7 +545,7 @@
   },
   "syBIAL1mHbJLnTBoSxXI7": {
     "title": "Bash",
-    "description": "",
+    "description": "Bash scripts are a type of shell script that uses the Bash shell command language. Bash, which stands for \"Bourne-Again SHell\", is a Unix shell and command-line interpreter written by Brian Fox for the GNU Project.\n\nA Bash script is a text file that contains a series of commands that are executed in order when the script is run. These commands can be a combination of Bash built-in commands, external commands, and shell functions. Bash scripts are typically used to automate repetitive tasks, simplify complex commands, and perform system administration tasks.\n\nBash scripts usually have a .sh extension and are executable files. To run a Bash script, you need to give it execute permissions using the chmod command, and then you can run it by typing `./script_name.sh` in the terminal.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Interactive Shell Scripting Tutorial",
@@ -561,7 +566,7 @@
   },
   "z6IBekR8Xl-6f8WEb05Nw": {
     "title": "Power Shell",
-    "description": "Windows PowerShell is a command-line shell and scripting language designed specifically for system administration. Its counterpart in Linux is called Bash Scripting. Built on the .NET Framework, Windows PowerShell enables IT professionals to control and automate the administration of the Windows operating system and applications that run in a Windows Server environment.",
+    "description": "Windows PowerShell is a command-line shell and scripting language designed specifically for system administration. Its counterpart in Linux is called Bash Scripting. Built on the .NET Framework, Windows PowerShell enables IT professionals to control and automate the administration of the Windows operating system and applications that run in a Windows Server environment.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "PowerShell Documentation",
@@ -919,7 +924,7 @@
   },
   "54UZNO2q8M5FiA_XbcU_D": {
     "title": "Caddy",
-    "description": "Caddy is an open-source web server with automatic HTTPS written in Go. It is easy to configure and use, and it is a great choice for small to medium-sized projects.",
+    "description": "Caddy is an open-source web server with automatic HTTPS written in Go. It is easy to configure and use, and it is a great choice for small to medium-sized projects.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Caddy Website",
@@ -1035,7 +1040,7 @@
   },
   "P0acFNZ413MSKElHqCxr3": {
     "title": "Docker",
-    "description": "Docker is a platform for working with containerized applications. Among its features are a daemon and client for managing and interacting with containers, registries for storing images, and a desktop application to package all these features together.\n\nVisit the following resources to learn more:",
+    "description": "Docker is a platform for working with containerized applications. Among its features are a daemon and client for managing and interacting with containers, registries for storing images, and a desktop application to package all these features together. Containers are lightweight and portable, providing a consistent and reliable way to deploy applications across different environments.\n\nHistory\n-------\n\nDocker was founded in 2010 by _Solomon Hykes_, and the first version of Docker was released in 2013. Docker became an open-source project in 2014, and since then, it has gained massive popularity in the software development industry.\n\nKey Features\n------------\n\nDocker provides several key features that make it an attractive choice for developers:\n\n*   **Lightweight**: Containers are much lighter than virtual machines, making them faster to spin up and down.\n*   **Portable**: Containers are portable across different environments, including Windows, Linux, and macOS.\n*   **Isolated**: Containers provide a high level of isolation between applications, ensuring that each application runs independently without interfering with others.\n*   **Efficient**: Containers use fewer resources than virtual machines, making them more efficient.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Visit Dedicated Docker Roadmap",
@@ -1090,7 +1095,7 @@
     "description": "Cloud providers provide a layer of APIs to abstract infrastructure and provision it based on security and billing boundaries. The cloud runs on servers in data centers, but the abstractions cleverly give the appearance of interacting with a single “platform” or large application. The ability to quickly provision, configure, and secure resources with cloud providers has been key to both the tremendous success and complexity of modern DevOps.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Cloud service provider",
+        "title": "Cloud Service Provider",
         "url": "https://www.techtarget.com/searchitchannel/definition/cloud-service-provider-cloud-provider",
         "type": "article"
       },
@@ -1116,7 +1121,7 @@
         "type": "course"
       },
       {
-        "title": "DevOps on AWS Course ",
+        "title": "DevOps on AWS Course",
         "url": "https://www.coursera.org/specializations/aws-devops?#courses",
         "type": "course"
       },
@@ -1176,7 +1181,7 @@
         "type": "video"
       },
       {
-        "title": "AWS Practitioner ",
+        "title": "AWS Practitioner",
         "url": "https://youtu.be/SOTamWNgDKc",
         "type": "video"
       }
@@ -1218,7 +1223,7 @@
     "description": "Google Cloud is Google's cloud computing service offering, providing over 150 products/services to choose from. It consists of a set of physical assets, such as computers and hard disk drives, and virtual resources, such as virtual machines(VMs), that are contained in Google's data centers. It runs on the same infrastructure that Google uses internally for its end-user products, such as Search, Gmail, Google Drive, and YouTube.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Coursera Complete Course for Google Cloud ",
+        "title": "Coursera Complete Course for Google Cloud",
         "url": "https://www.coursera.org/professional-certificates/cloud-engineering-gcp#courses",
         "type": "course"
       },
@@ -1345,7 +1350,7 @@
   },
   "eJZdjheptmiwKsVokt7Io": {
     "title": "Contabo",
-    "description": "Contabo offers a wide range of hosting services, from VPS to dedicated servers. They are known for their low prices and high performance.\n\nVisit the following link to learn more about Contabo:",
+    "description": "Contabo offers a wide range of hosting services, from VPS to dedicated servers. They are known for their low prices and high performance.\n\nVisit the following link to learn more:",
     "links": [
       {
         "title": "Contabo - Official Website",
@@ -1367,7 +1372,7 @@
   },
   "Vu955vdsYerCG8G6suqml": {
     "title": "DNS",
-    "description": "DNS (**D**omain **N**ame **S**ystem) is the phonebook of the Internet. Humans access information online through domain names, like [nytimes.com](http://nytimes.com) or [espn.com](http://espn.com). Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.\n\nVisit the following resources to learn more:",
+    "description": "DNS (Domain Name System) is the phonebook of the Internet. Humans access information online through domain names, like `nytimes.com` or `espn.com.` Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is DNS?",
@@ -1523,8 +1528,24 @@
   },
   "zJy9dOynWgLTDKI1iBluG": {
     "title": "SMTP",
-    "description": "Email is emerging as one of the most valuable services on the internet today. Most internet systems use SMTP as a method to transfer mail from one user to another. SMTP is a push protocol and is used to send the mail whereas POP (post office protocol) or IMAP (internet message access protocol) are used to retrieve those emails at the receiver’s side.\n\nSMTP is an application layer protocol. The client who wants to send the mail opens a TCP connection to the SMTP server and then sends the mail across the connection. The SMTP server is an always-on listening mode. As soon as it listens for a TCP connection from any client, the SMTP process initiates a connection through port 25. After successfully establishing a TCP connection the client process sends the mail instantly.",
-    "links": []
+    "description": "Email is emerging as one of the most valuable services on the internet today. Most internet systems use SMTP as a method to transfer mail from one user to another. SMTP is a push protocol and is used to send the mail whereas POP (post office protocol) or IMAP (internet message access protocol) are used to retrieve those emails at the receiver’s side.\n\nSMTP is an application layer protocol. The client who wants to send the mail opens a TCP connection to the SMTP server and then sends the mail across the connection. The SMTP server is an always-on listening mode. As soon as it listens for a TCP connection from any client, the SMTP process initiates a connection through port 25. After successfully establishing a TCP connection the client process sends the mail instantly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is SMTP? - Cloudflare",
+        "url": "https://www.cloudflare.com/learning/email-security/what-is-smtp/#:~:text=The%20Simple%20Mail%20Transfer%20Protocol%20(SMTP)%20is%20a%20technical%20standard,their%20underlying%20hardware%20or%20software.",
+        "type": "article"
+      },
+      {
+        "title": "SMTP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Serverless",
+        "url": "https://app.daily.dev/tags/serverless?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
   },
   "5vUKHuItQfkarp7LtACvX": {
     "title": "DMARC",
@@ -1675,7 +1696,7 @@
   },
   "9p_ufPj6QH9gHbWBQUmGw": {
     "title": "Serverless",
-    "description": "",
+    "description": "Serverless computing, also known as Function-as-a-Service (FaaS), is a cloud computing model in which a cloud provider manages the infrastructure and dynamically allocates computing resources as needed. This allows developers to write and deploy code without worrying about the underlying infrastructure.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is Serverless?",
@@ -1709,7 +1730,7 @@
         "type": "article"
       },
       {
-        "title": "Vercel: Product Walkthrough ",
+        "title": "Vercel: Product Walkthrough",
         "url": "https://www.youtube.com/watch?v=sPmat30SE4k",
         "type": "video"
       }
@@ -1717,8 +1738,13 @@
   },
   "l8VAewSEXzoyqYFhoplJj": {
     "title": "Cloudflare",
-    "description": "",
+    "description": "Cloudflare is a company that provides a range of services to help protect and accelerate websites and applications. At its core, Cloudflare is a content delivery network (CDN) and a reverse proxy cloud provider. This means that it acts as an intermediary between a website's origin server and its visitors, caching content and filtering out malicious traffic.\n\nCloudflare was founded in July 2009 by Matthew Prince, Lee Holloway, and Michelle Zatlyn. The company was venture-capital funded and submitted its S-1 filing for IPO on the New York Stock Exchange in August 2019. It opened for public trading on September 13, 2019, at $15 per share.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cloudflare",
+        "url": "https://cloudflare.com/",
+        "type": "article"
+      },
       {
         "title": "Cloudflare Documentation",
         "url": "https://developers.cloudflare.com/",
@@ -1733,8 +1759,13 @@
   },
   "mlrlf2McMI7IBhyEdq0Nf": {
     "title": "Azure Functions",
-    "description": "",
+    "description": "Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Azure Functions - Serverless Computing",
+        "url": "https://azure.microsoft.com/en-in/products/functions",
+        "type": "article"
+      },
       {
         "title": "Azure Functions Overview",
         "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
@@ -1749,8 +1780,13 @@
   },
   "UfQrIJ-uMNJt9H_VM_Q5q": {
     "title": "AWS Lambda",
-    "description": "",
+    "description": "AWS Lambda is an event-driven, serverless Function as a Service provided by Amazon as a part of Amazon Web Services. It is designed to enable developers to run code without provisioning or managing servers. It executes code in response to events and automatically manages the computing resources required by that code.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "AWS Lambda",
+        "url": "https://aws.amazon.com/lambda/",
+        "type": "article"
+      },
       {
         "title": "AWS Lambda Introduction",
         "url": "https://docs.aws.amazon.com/lambda/latest/operatorguide/intro.html",
@@ -1781,8 +1817,19 @@
   },
   "1oYvpFG8LKT1JD6a_9J0m": {
     "title": "Provisioning",
-    "description": "Tools in this category are used to provision infrastructure in cloud providers. This includes DNS, networking, security policies, servers, containers, and a whole host of vendor-specific constructs. In this category, the use of cloud provider-agnostic tooling is strongly encouraged. These skills can be applied across most cloud providers, and the more specific domain-specific languages tend to have less reach.",
-    "links": []
+    "description": "Tools in this category are used to provision infrastructure in cloud providers. This includes DNS, networking, security policies, servers, containers, and a whole host of vendor-specific constructs. In this category, the use of cloud provider-agnostic tooling is strongly encouraged. These skills can be applied across most cloud providers, and the more specific domain-specific languages tend to have less reach.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Terraform Website",
+        "url": "https://www.terraform.io/",
+        "type": "article"
+      },
+      {
+        "title": "Azure Resource Manager Documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+        "type": "article"
+      }
+    ]
   },
   "XA__697KgofsH28coQ-ma": {
     "title": "AWS CDK",
@@ -1938,7 +1985,7 @@
     "description": "Configuration management is a systems engineering process for establishing consistency of a product’s attributes throughout its life. In the technology world, configuration management is an IT management process that tracks individual configuration items of an IT system. IT systems are composed of IT assets that vary in granularity. An IT asset may represent a piece of software, or a server, or a cluster of servers. The following focuses on configuration management as it directly applies to IT software assets and software asset CI/CD.\n\nSoftware configuration management is a systems engineering process that tracks and monitors changes to a software systems configuration metadata. In software development, configuration management is commonly used alongside version control and CI/CD infrastructure. This post focuses on its modern application and use in agile CI/CD software environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is configuration management?",
+        "title": "What is Configuration Management?",
         "url": "https://www.atlassian.com/microservices/microservices-architecture/configuration-management",
         "type": "article"
       }
@@ -2057,6 +2104,11 @@
     "title": "GitHub Actions",
     "description": "Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Github Actions",
+        "url": "https://github.com/features/actions",
+        "type": "article"
+      },
       {
         "title": "GitHub Actions Documentation",
         "url": "https://docs.github.com/en/actions",
@@ -2603,13 +2655,40 @@
   },
   "XbrWlTyH4z8crSHkki2lp": {
     "title": "GKE / EKS / AKS",
-    "description": "GKE - Google Kubernetes Engine\n------------------------------\n\nGKE is a managed Kubernetes service that lets you deploy, manage, and scale containerized applications on Google Cloud.\n\nEKS - Amazon Elastic Kubernetes Service\n---------------------------------------\n\nAmazon Elastic Kubernetes Service (Amazon EKS) is a fully managed Kubernetes service from AWS.\n\nAKS - Azure Kubernetes Service\n------------------------------\n\nAzure Kubernetes Service (AKS) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise.",
-    "links": []
+    "description": "GKE - Google Kubernetes Engine\n------------------------------\n\nGKE is a managed Kubernetes service that lets you deploy, manage, and scale containerized applications on Google Cloud.\n\nEKS - Amazon Elastic Kubernetes Service\n---------------------------------------\n\nAmazon Elastic Kubernetes Service (Amazon EKS) is a fully managed Kubernetes service from AWS.\n\nAKS - Azure Kubernetes Service\n------------------------------\n\nAzure Kubernetes Service (AKS) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GKE",
+        "url": "https://cloud.google.com/kubernetes-engine",
+        "type": "article"
+      },
+      {
+        "title": "EKS",
+        "url": "https://aws.amazon.com/eks/",
+        "type": "article"
+      },
+      {
+        "title": "AKS",
+        "url": "https://azure.microsoft.com/en-us/products/kubernetes-service/",
+        "type": "article"
+      }
+    ]
   },
   "FE2h-uQy6qli3rKERci1j": {
     "title": "AWS ECS / Fargate",
-    "description": "ECS is a container orchestration service that allows you to run Docker containers on a cluster of EC2 instances. ECS is a good choice if you want to run Docker containers on EC2 instances and have full control over the underlying infrastructure.\n\nFargate is a serverless container orchestration service that allows you to run Docker containers without having to manage servers, clusters, or any other infrastructure. Fargate is a good choice if you want to run Docker containers without having to manage servers or clusters.",
-    "links": []
+    "description": "ECS is a container orchestration service that allows you to run Docker containers on a cluster of EC2 instances. ECS is a good choice if you want to run Docker containers on EC2 instances and have full control over the underlying infrastructure.\n\nFargate is a serverless container orchestration service that allows you to run Docker containers without having to manage servers, clusters, or any other infrastructure. Fargate is a good choice if you want to run Docker containers without having to manage servers or clusters.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AWS - Fargate",
+        "url": "https://aws.amazon.com/fargate/",
+        "type": "article"
+      },
+      {
+        "title": "AWS - Fargate Docs",
+        "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+        "type": "article"
+      }
+    ]
   },
   "VD24HC9qJOC42lbpJ-swC": {
     "title": "Docker Swarm",
@@ -2649,16 +2728,32 @@
   },
   "zuBAjrqQPjj-0DHGjCaqT": {
     "title": "Artifact Management",
-    "description": "",
-    "links": []
+    "description": "Artifacts refer to the output of a build process, typically generated by a Continuous Integration (CI) tool. These outputs can be executable files, libraries, documents, or any other type of file that is produced as a result of building, compiling, or packaging code.\n\nArtifacts can include\n---------------------\n\n*   Compiled binaries (e.g., .exe, .dll, .jar)\n*   Libraries (e.g., .so, .dll)\n*   Packages (e.g., .zip, .tar.gz, .rpm)\n*   Documents (e.g., .pdf, .docx)\n*   Configuration files (e.g., .properties, .yaml)\n*   Images (e.g., Docker images)\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What are Artifacts - Oracle",
+        "url": "https://docs.oracle.com/en-us/iaas/Content/devops/using/artifacts.htm",
+        "type": "article"
+      },
+      {
+        "title": "What is an Artifact - Atlassian",
+        "url": "https://support.atlassian.com/bitbucket-cloud/docs/use-artifacts-in-steps/#:~:text=Artifacts%20are%20files%20that%20are,in%20a%20later%20deployment%20step.",
+        "type": "article"
+      }
+    ]
   },
   "C_sFyIsIIpriZlovvcbSE": {
     "title": "Artifactory",
-    "description": "",
+    "description": "Artifactory is a universal DevOps solution for hosting, managing, and distributing binaries and artifacts. Any type of software in binary form – such as application installers, container images, libraries, configuration files, etc. – can be curated, secured, stored, and delivered using Artifactory.\n\nThe name “Artifactory” reflects the fact that it can host any type of “artifact” needed in your software development “factory.” In software development, an artifact is any object produced during the software development and delivery process. Artifacts include the files used to install and run applications, as well as any complementary information necessary to configure or manage software.\n\nArtifactory serves as the central hub for your DevOps processes. All artifacts, dependencies, packages, etc. ultimately get put into and pulled from Artifactory.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Artifactory Website",
         "url": "https://jfrog.com/artifactory/",
+        "type": "article"
+      },
+      {
+        "title": "About - Artifactory",
+        "url": "https://jfrog.com/blog/what-is-artifactory-jfrog/",
         "type": "article"
       },
       {
@@ -2696,8 +2791,19 @@
   },
   "vsmE6EpCc2DFGk1YTbkHS": {
     "title": "Cloud Smith",
-    "description": "",
-    "links": []
+    "description": "Cloudsmith is a cloud-native package management platform that enables organizations to manage and distribute software packages across their infrastructure. It provides a centralized repository for storing, managing, and deploying packages, making it easier to manage complex software dependencies and ensure consistency across environments.\n\nCloudsmith supports a wide range of package formats, including Docker, Helm, npm, pip, and more. It also integrates with popular development tools like Jenkins, GitLab, and CircleCI, making it easy to automate package management and deployment workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cloud Smith",
+        "url": "https://cloudsmith.com/",
+        "type": "article"
+      },
+      {
+        "title": "Cloud Smith Product Overview",
+        "url": "https://cloudsmith.com/product/",
+        "type": "article"
+      }
+    ]
   },
   "-INN1qTMLimrZgaSPCcHj": {
     "title": "GitOps",
@@ -2859,8 +2965,19 @@
   },
   "Qc0MGR5bMG9eeM5Zb9PMk": {
     "title": "Cloud Design Patterns",
-    "description": "",
-    "links": []
+    "description": "Cloud Design Patterns are a set of reusable, proven solutions to common problems that arise when designing and building applications for the cloud. These patterns provide guidance on how to design and implement cloud-based systems that are scalable, resilient, and efficient.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+        "type": "article"
+      },
+      {
+        "title": "What is CI/CD?",
+        "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
+        "type": "article"
+      }
+    ]
   },
   "JCe3fcOf-sokTJURyX1oI": {
     "title": "Availability",
@@ -2899,7 +3016,7 @@
     "description": "Good design encompasses factors such as consistency and coherence in component design and deployment, maintainability to simplify administration and development, and reusability to allow components and subsystems to be used in other applications and in other scenarios. Decisions made during the design and implementation phase have a huge impact on the quality and the total cost of ownership of cloud hosted applications and services.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Design and implementation patterns",
+        "title": "Design and Implementation Patterns",
         "url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation",
         "type": "article"
       }
@@ -3062,7 +3179,7 @@
       }
     ]
   },
-  "BHny2Emf96suhAlltiEro": {
+  "datadog@BHny2Emf96suhAlltiEro.md": {
     "title": "Datadog",
     "description": "",
     "links": []

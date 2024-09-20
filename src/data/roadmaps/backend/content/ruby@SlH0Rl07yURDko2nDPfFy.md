@@ -1,6 +1,6 @@
 # Ruby
 
-Ruby is a high-level, interpreted programming language that blends Perl, Smalltalk, Eiffel, Ada, and Lisp. Ruby focuses on simplicity and productivity along with a syntax that reads and writes naturally. Ruby supports procedural, object-oriented and functional programming and is dynamically typed.
+Ruby is a high-level, object-oriented programming language known for its simplicity, productivity, and elegant syntax. Designed to be intuitive and easy to read, Ruby emphasizes developer happiness and quick development cycles. It supports multiple programming paradigms, including procedural, functional, and object-oriented programming. Ruby is particularly famous for its web framework, Ruby on Rails, which facilitates rapid application development by providing conventions and tools for building web applications efficiently. The language's flexibility, combined with its rich ecosystem of libraries and a strong community, makes it popular for web development, scripting, and prototyping.
 
 Visit the following resources to learn more:
 

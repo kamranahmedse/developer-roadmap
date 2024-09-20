@@ -1,33 +1,7 @@
-# Google Suite
+# Google Workspace (Formerly G Suite)
 
-Google Suite, also known as G Suite or Google Workspace, is a collection of cloud-based productivity and collaboration tools developed by Google. These tools are designed to help individuals and businesses collaborate more efficiently and effectively. Here is a summary of some of the most popular tools in Google Suite:
+Google Workspace, formerly known as G Suite, is a collection of cloud-based productivity and collaboration tools developed by Google. It includes popular applications such as Gmail for email, Google Drive for file storage and sharing, Google Docs for document creation and editing, Google Sheets for spreadsheets, and Google Meet for video conferencing. From a cybersecurity perspective, Google Workspace presents both advantages and challenges. It offers robust built-in security features like two-factor authentication, encryption of data in transit and at rest, and advanced threat protection. However, its cloud-based nature means organizations must carefully manage access controls, data sharing policies, and compliance with various regulations. Security professionals must be vigilant about potential phishing attacks targeting Google accounts, data leakage through improper sharing settings, and the risks associated with third-party app integrations. Understanding how to properly configure and monitor Google Workspace is crucial for maintaining the security of an organization's collaborative environment and protecting sensitive information stored within these widely-used tools.
 
-## Google Drive
+Learn more from the following resources:
 
-Google Drive is a cloud storage service that allows users to store files, sync them across devices, and easily share them with others. With Google Drive, users get 15 GB of free storage, while more storage can be purchased as needed.
-
-## Google Docs, Sheets, and Slides
-
-These are the office suite tools that include a word processor (Docs), a spreadsheet program (Sheets), and a presentation program (Slides). All of these applications are web-based, allowing users to create, edit, and share documents in real-time with colleagues or collaborators. They also come with a variety of built-in templates, making it easier for users to quickly create and format their documents.
-
-## Google Forms
-
-Google Forms is a tool for creating custom online forms and surveys. Users can design forms with various question types, including multiple-choice, dropdown, and text-based questions. The data collected from the forms can be automatically organized and analyzed in Google Sheets.
-
-## Google Calendar
-
-A powerful scheduling tool, Google Calendar allows users to create and manage individual or shared calendars. Users can create events, invite attendees, and set reminders for themselves or others. Google Calendar also integrates with Gmail, allowing users to create and update events directly from their email.
-
-## Gmail
-
-Gmail is a widely-used email service that provides a clean and user-friendly interface, powerful search capabilities, and excellent spam filtering. Gmail also integrates with other Google tools, making it a seamless part of the overall suite.
-
-## Google Meet
-
-Google Meet is a video conferencing tool that allows users to host and join secure video meetings. With a G Suite account, users can schedule and join meetings directly from Google Calendar. Google Meet also supports screen sharing, breakout rooms, and live captioning during meetings.
-
-## Google Chat
-
-Google Chat is a communication platform for teams that provides direct messaging, group conversations, and virtual meeting spaces. Users can create chat rooms for specific projects or topics, collaborate on documents in real-time, and make use of Google Meet for video chats.
-
-These are just some of the many tools offered by Google Suite. This platform is a popular choice for individuals, teams, and organizations looking for a comprehensive and efficient way to manage their work and communication needs.
+- [@official@Google Workspace Website](https://workspace.google.com/intl/en_uk/)

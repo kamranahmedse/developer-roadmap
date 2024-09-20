@@ -62,7 +62,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -257,7 +257,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -650,7 +650,7 @@
     "links": [
       {
         "title": "Visit Dedicated PostgreSQL DBA Roadmap",
-        "url": "/postgresql-dba",
+        "url": "https://roadmap.sh/postgresql-dba",
         "type": "article"
       },
       {

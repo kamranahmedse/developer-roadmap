@@ -1,8 +1,10 @@
 # Cloud Design Patterns
 
-Cloud Design Patterns are a set of reusable, proven solutions to common problems that arise when designing and building applications for the cloud. These patterns provide guidance on how to design and implement cloud-based systems that are scalable, resilient, and efficient.
+Cloud design patterns are reusable solutions to common problems encountered in cloud computing architectures. These patterns address challenges related to scalability, reliability, security, and performance in distributed systems. They provide best practices for designing and implementing cloud-native applications, covering aspects such as data management, messaging, resiliency, and deployment. Examples include the Circuit Breaker pattern for handling faults, the CQRS pattern for separating read and write operations, and the Sidecar pattern for deploying components of an application into a separate process or container. By leveraging these patterns, developers can create more robust, efficient, and maintainable cloud applications that better utilize the benefits of cloud platforms.
 
 Visit the following resources to learn more:
 
 - [@official@](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
-- [@article@What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+- [@article@Cloud design patterns, architectures, and implementations](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/introduction.html)
+- [@course@30 Cloud Design Patterns in depth](https://www.youtube.com/watch?v=cxYHugyNTP0)
+

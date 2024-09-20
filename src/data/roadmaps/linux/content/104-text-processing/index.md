@@ -15,3 +15,7 @@ grep 'Linux' sample.txt
 This command will display all the lines in the sample.txt file which contain the word "Linux". 
 
 Overall, the proficiency in text processing is crucial for Linux users as it allows them to automate tasks, parse files, and mine data efficiently.
+
+Visit the following resources to learn more:
+
+- [@article@Linux Filters](https://ryanstutorials.net/linuxtutorial/filters.php)

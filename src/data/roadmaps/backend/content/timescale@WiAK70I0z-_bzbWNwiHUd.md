@@ -1,13 +1,9 @@
 # TimeScale
 
-TimescaleDB is an open-source time-series database built on top of PostgreSQL, designed for efficiently storing and querying time-series data. 
-
-It introduces the concept of hypertables, which automatically partition data by time and space, making it ideal for high-volume data scenarios like monitoring, IoT, and financial analytics. 
-
-TimescaleDB combines the power of relational databases with the performance of a specialized time-series solution, offering advanced features like continuous aggregates, real-time analytics, and seamless integration with PostgreSQL's ecosystem.
-
-It's a robust choice for developers looking to manage time-series data in scalable and efficient ways.
+TimescaleDB is an open-source, time-series database built as an extension to PostgreSQL. It is designed to handle large volumes of time-stamped data efficiently, making it suitable for applications that require high-performance analytics on time-series data, such as monitoring systems, IoT applications, and financial services. TimescaleDB leverages PostgreSQL’s features while providing additional capabilities for time-series data, including efficient data ingestion, advanced time-based queries, and automatic data partitioning (hypertables). It supports complex queries and aggregations, making it a powerful tool for analyzing trends and patterns in time-series data.
 
 Visit the following resources to learn more:
 
+- [@official@Timescale Website](https://www.timescale.com/)
 - [@video@Tutorial - TimeScaleDB Explained in 100 Seconds](https://www.youtube.com/watch?v=69Tzh_0lHJ8)
+- [@video@What is time series data?](https://www.youtube.com/watch?v=Se5ipte9DMY)

@@ -5,3 +5,4 @@ Dumpster Diving in the context of cybersecurity refers to the practice of search
 Visit the following resources to learn more:
 
 - [@article@What is Dumpster Diving](https://powerdmarc.com/dumpster-diving-in-cybersecurity/)
+- [@video@Dumpster diving for sensitive information](https://www.youtube.com/watch?v=Pom86gq4mk4)

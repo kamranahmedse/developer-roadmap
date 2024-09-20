@@ -1,83 +1,30 @@
 # Common Commands
 
-In this guide, we will cover essential common commands you need to know when starting your journey in cyber security. By becoming proficient in these commands, you will be able to navigate, analyze, and manage different aspects of systems and networks. The list will cover command prompts, shell commands, and other tools.
+Common operating system (OS) commands are essential for interacting with a system's shell or command-line interface (CLI). These commands allow users to perform a wide range of tasks, such as navigating the file system, managing files and directories, checking system status, and administering processes. Below are some commonly used commands across Unix/Linux and Windows operating systems:
 
-_Please note this guide assumes you already have basic knowledge of command line interfaces (CLI)_
+1. **Navigating the File System:**
+   - Unix/Linux: `ls` (list files), `cd` (change directory), `pwd` (print working directory)
+   - Windows: `dir` (list files), `cd` (change directory), `echo %cd%` (print working directory)
 
-## Operating System Commands
+2. **File and Directory Management:**
+   - Unix/Linux: `cp` (copy files), `mv` (move/rename files), `rm` (remove files), `mkdir` (create directory)
+   - Windows: `copy` (copy files), `move` (move/rename files), `del` (delete files), `mkdir` (create directory)
 
-These commands are useful for managing and understanding your operating system and its components.
+3. **System Information and Processes:**
+   - Unix/Linux: `top` or `htop` (view running processes), `ps` (list processes), `df` (disk usage), `uname` (system info)
+   - Windows: `tasklist` (list processes), `taskkill` (kill process), `systeminfo` (system details)
 
-## Windows
+4. **File Permissions and Ownership:**
+   - Unix/Linux: `chmod` (change file permissions), `chown` (change file ownership)
+   - Windows: `icacls` (modify access control lists), `attrib` (change file attributes)
 
-- `ipconfig`: Display the IP configuration for all network interfaces on the device.
+5. **Network Commands:**
+   - Unix/Linux: `ping` (test network connection), `ifconfig` or `ip` (network interface configuration), `netstat` (network statistics)
+   - Windows: `ping` (test network connection), `ipconfig` (network configuration), `netstat` (network statistics)
 
-- `netstat`: Display active network connections, listening ports, and routing tables.
+These commands form the foundation of interacting with and managing an OS via the command line, providing greater control over system operations compared to graphical interfaces.
 
-- `systeminfo`: Display detailed information about the computer's hardware and software configuration.
+Learn more from the following resources:
 
-- `nslookup`: Look up the IP address of a domain or host.
-
-- `ping`: Send a series of network packets to test network connectivity.
-
-## Linux/Unix/MacOS
-
-- `ifconfig`: Display the IP configuration for all network interfaces on the device.
-
-- `netstat`: Display active network connections, listening ports, and routing tables.
-
-- `uname -a`: Display detailed information about the operating system.
-
-- `dig`: Look up the IP address of a domain or host.
-
-- `ping`: Send a series of network packets to test network connectivity.
-
-## File System Commands
-
-These commands are useful for navigating and managing file systems on your device.
-
-## Windows
-
-- `dir`: List files and directories in the current directory.
-
-- `cd`: Change the current directory.
-
-- `copy`: Copy files from one location to another.
-
-- `move`: Move files from one location to another.
-
-- `del`: Delete specified files.
-
-## Linux/Unix/MacOS
-
-- `ls`: List files and directories in the current directory.
-
-- `cd`: Change the current directory.
-
-- `cp`: Copy files from one location to another.
-
-- `mv`: Move files from one location to another.
-
-- `rm`: Delete specified files.
-
-## Network Analysis Commands
-
-These commands are useful for analyzing and troubleshooting network connections.
-
-- `traceroute` (Linux/Unix/MacOS) / `tracert` (Windows): Display the route and transit delay of packets across a network.
-
-- `tcpdump` (Linux/Unix/MacOS) / `Wireshark` (Windows): Capture and analyze network traffic.
-
-## Cyber Security Tools
-
-- `nmap`: Scan networks and hosts for open ports and network services.
-
-- `Metasploit`: A penetration testing framework that simplifies the discovery and exploitation of vulnerabilities.
-
-- `John the Ripper`: A password-cracking tool that automatically detects and cracks multiple password formats.
-
-- `Wireshark`: A network protocol analyzer that captures and analyzes network traffic.
-
-- `Aircrack-ng`: A suite of tools for auditing wireless networks.
-
-By familiarizing yourself with these common commands and tools, you'll have a solid foundation to build upon in your cyber security journey. As you progress, you will encounter more advanced tools and techniques, so keep learning and stay curious!
+- [@video@60 Linux commands you must know](https://www.youtube.com/watch?v=gd7BXuUQ91w)
+- [@video@Top 40 Windows commands to know](https://www.youtube.com/watch?v=Jfvg3CS1X3A)

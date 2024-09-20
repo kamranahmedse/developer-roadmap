@@ -1,7 +1,5 @@
 # Navigating using GUI and CLI
 
-Graphical User Interface (GUI) and Command Line Interface (CLI) are the two essential methods to navigate through a computer system or a network device. Both these interfaces are crucial for understanding and managing cyber security.
-
 ## Graphical User Interface (GUI)
 
 A Graphical User Interface (GUI) is a type of user interface that allows users to interact with a software program, computer, or network device using images, icons, and visual indicators. The GUI is designed to make the user experience more intuitive, as it enables users to perform tasks using a mouse and a keyboard without having to delve into complex commands. Most modern operating systems (Windows, macOS, and Linux) offer GUIs as the primary means of interaction.
@@ -34,4 +32,3 @@ A Command Line Interface (CLI) is a text-based interface that allows users to in
 
 By understanding how to navigate and use both GUI and CLI, you will be better equipped to manage and secure your computer systems and network devices, as well as perform various cyber security tasks that may require a combination of these interfaces. It is essential to be familiar with both methods, as some tasks may require the precision and control offered by CLI, while others may be more efficiently performed using a GUI.
 
-In the following sections, we will discuss some common CLI tools and their usage, along with how to secure and manage your computer systems and network devices using these interfaces. Stay tuned!

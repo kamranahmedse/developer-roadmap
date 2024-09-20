@@ -1,18 +1,8 @@
 # Sealed Secrets
 
-Sealed Secrets is a tool for securely storing and managing secrets in a Kubernetes environment. It is developed and maintained by Bitnami and is available as open-source software.
-
-In a Sealed Secrets workflow, secrets are encrypted using a public key and stored as sealed secrets in a Git repository. The sealed secrets can then be deployed to a Kubernetes cluster, where they are decrypted using a private key and made available to the applications and infrastructure that need them.
-
-Sealed Secrets is designed to be highly secure and easy to use, with a range of features for managing secrets, including:
-
-- Encryption: Sealed Secrets uses encryption algorithms and protocols, such as RSA, to securely store secrets.
-- Access controls: Sealed Secrets supports role-based access controls and multi-factor authentication to ensure that only authorized users or systems can access secrets.
-- Secret rotation: Sealed Secrets supports automatic secret rotation, allowing secrets to be regularly rotated to reduce the risk of unauthorized access.
-- Auditing: Sealed Secrets provides auditing capabilities, allowing administrators to track and monitor access to secrets.
-
-Sealed Secrets is commonly used in Kubernetes environments to securely store and manage secrets, and it is often used in conjunction with other tools, such as Helm, to automate the deployment and management of cloud-native applications.
+Sealed Secrets is a Kubernetes controller and tool that allows users to encrypt their Kubernetes Secrets into encrypted "SealedSecrets" that can be safely stored in public repositories or insecure environments. Developed by Bitnami, it addresses the challenge of managing sensitive information in Git-based workflows and cluster management. The controller running in the cluster decrypts SealedSecrets into regular Secrets, ensuring that the original, sensitive data never leaves the cluster. This approach enables secure, declarative management of secrets in Kubernetes environments, aligning with GitOps practices. Sealed Secrets uses asymmetric cryptography, where only the controller in the cluster has the private key to decrypt the secrets. This tool enhances security in Kubernetes deployments by allowing secrets to be version-controlled and managed alongside other Kubernetes resources without exposing sensitive data.
 
 Visit the following resources to learn more:
 
-- [@opensource@Sealed Secrets - Bitnami](https://github.com/bitnami-labs/sealed-secrets)
+- [@opensource@bitname/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
+- [@article@Sealed Secrets](https://fluxcd.io/flux/guides/sealed-secrets/)

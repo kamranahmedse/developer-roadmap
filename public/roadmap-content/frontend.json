@@ -542,7 +542,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -972,7 +972,7 @@
     "links": [
       {
         "title": "Visit Dedicated Angular Roadmap",
-        "url": "/angular",
+        "url": "https://roadmap.sh/angular",
         "type": "article"
       },
       {
@@ -998,7 +998,7 @@
     "links": [
       {
         "title": "Visit Dedicated Vue Roadmap",
-        "url": "/vue",
+        "url": "https://roadmap.sh/vue",
         "type": "article"
       },
       {
@@ -1039,7 +1039,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -2063,7 +2063,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -2471,6 +2471,11 @@
         "type": "article"
       },
       {
+        "title": "Building a simple offline-capable Notepad app ",
+        "url": "https://www.amitmerchant.com/Building-Simple-Offline-Notepad-Using-Service-Worker/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Web Development",
         "url": "https://app.daily.dev/tags/webdev?ref=roadmapsh",
         "type": "article"
@@ -2540,7 +2545,7 @@
     "links": [
       {
         "title": "Visit Dedicated Flutter Roadmap",
-        "url": "/flutter",
+        "url": "https://roadmap.sh/flutter",
         "type": "article"
       },
       {
@@ -2675,7 +2680,7 @@
     "links": [
       {
         "title": "Visit Dedicated Flutter Roadmap",
-        "url": "/flutter",
+        "url": "https://roadmap.sh/flutter",
         "type": "article"
       },
       {

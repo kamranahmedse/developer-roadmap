@@ -4,7 +4,7 @@ Vue.js is a progressive JavaScript framework for building user interfaces. It's 
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit Dedicated Vue Roadmap](https://roadmap.sh/vue)
 - [@official@Vue.js Website](https://vuejs.org/)
 - [@video@Vue.js Course for Beginners](https://www.youtube.com/watch?v=VeNfHj6MhgA)
-- [@article@Meet Vue.js, the Flexible JavaScript Framework](https://thenewstack.io/meet-vue-js-flexible-javascript-framework/)
 - [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)

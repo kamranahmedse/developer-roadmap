@@ -4,7 +4,7 @@ React is an open-source JavaScript library for building user interfaces, primari
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated React Roadmap](/react)
+- [@roadmap@Visit Dedicated React Roadmap](https://roadmap.sh/react)
 - [@official@React Website](https://react.dev)
 - [@course@Full Stack React Developer Course](https://www.youtube.com/watch?v=Bvwq_S0n2pk)
 - [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

@@ -1,15 +1,10 @@
 # OAuth
 
-OAuth stands for **O**pen **Auth**orization and is an open standard for authorization. It works to authorize devices, APIs, servers and applications using access tokens rather than user credentials, known as "secure delegated access".
-
-In its most simplest form, OAuth delegates authentication to services like Facebook, Amazon, Twitter and authorizes third-party applications to access the user account **without** having to enter their login and password.
-
-It is mostly utilized for REST/APIs and only provides a limited scope of a user's data.
+OAuth is an open standard for authorization that allows third-party applications to access a user's resources without exposing their credentials. It works by issuing access tokens after users grant permission, which applications then use to interact with resource servers on behalf of the user. This process involves a resource owner (the user), a resource server (which holds the data), and an authorization server (which issues tokens). OAuth enables secure, token-based access management, commonly used for granting applications permissions to interact with services like social media accounts or cloud storage.
 
 Visit the following resources to learn more:
 
 - [@article@Okta - What the Heck is OAuth](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
 - [@article@DigitalOcean - An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
-- [@video@What is OAuth really all about](https://www.youtube.com/watch?v=t4-416mg6iU)
-- [@video@OAuth 2.0: An Overview](https://www.youtube.com/watch?v=CPbvxxslDTU)
+- [@video@OAuth 2 Explained In Simple Terms](https://www.youtube.com/watch?v=ZV5yTm4pT8g)
 - [@feed@Explore top posts about OAuth](https://app.daily.dev/tags/oauth?ref=roadmapsh)

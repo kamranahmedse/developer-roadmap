@@ -1,8 +1,6 @@
 # Containers
 
-Containers are a construct in which [cgroups](https://en.wikipedia.org/wiki/Cgroups), [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), and [chroot](https://en.wikipedia.org/wiki/Chroot) are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines.
-
-These images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.
+Containers are lightweight, portable, and isolated environments that package applications and their dependencies, enabling consistent deployment across different computing environments. They encapsulate software code, runtime, system tools, libraries, and settings, ensuring that the application runs the same regardless of where it's deployed. Containers share the host operating system's kernel, making them more efficient than traditional virtual machines. Popular containerization platforms like Docker provide tools for creating, distributing, and running containers. This technology supports microservices architectures, simplifies application deployment, improves scalability, and enhances DevOps practices by streamlining the development-to-production pipeline and enabling more efficient resource utilization.
 
 Visit the following resources to learn more:
 
