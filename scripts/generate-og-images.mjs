@@ -12,8 +12,8 @@ const ALL_BEST_PRACTICE_DIR = path.join(
   process.cwd(),
   '/src/data/best-practices',
 );
-const ALL_GUIDE_DIR = path.join(process.cwd(), '/src/data/guides');
-const ALl_AUTHOR_DIR = path.join(process.cwd(), '/src/data/authors');
+const ALL_GUIDE_DIR = path.join(process.cwd(), '/src/content/guides');
+const ALl_AUTHOR_DIR = path.join(process.cwd(), '/src/content/authors');
 const ALL_ROADMAP_IMAGE_DIR = path.join(process.cwd(), '/public/roadmaps');
 const ALL_BEST_PRACTICE_IMAGE_DIR = path.join(
   process.cwd(),

@@ -1,7 +1,7 @@
 ---
 import type { GuideFileType } from '../lib/guide';
 import GuideListItem from './GuideListItem.astro';
-import { QuestionGroupType } from '../lib/question-group';
+import type { QuestionGroupType } from '../lib/question-group';
 
 export interface Props {
   heading: string;
@@ -15,8 +15,8 @@ const sortedGuides: (QuestionGroupType | GuideFileType)[] = [
   ...guides,
   ...questions,
 ].sort((a, b) => {
-  const aDate = new Date(a.frontmatter.date);
-  const bDate = new Date(b.frontmatter.date);
+  const aDate = new Date(a.data.date!);
+  const bDate = new Date(b.data.date!);
 
   return bDate.getTime() - aDate.getTime();
 });

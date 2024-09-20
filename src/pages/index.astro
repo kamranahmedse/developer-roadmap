@@ -23,11 +23,11 @@ const projectGroups = [
     title: 'Backend',
     id: 'backend',
   },
-]
+];
 
 const guides = await getAllGuides();
 const questionGuides = (await getAllQuestionGroups()).filter(
-  (questionGroup) => questionGroup.frontmatter.authorId,
+  (questionGroup) => questionGroup.data.authorId,
 );
 const videos = await getAllVideos();
 ---
@@ -92,9 +92,9 @@ const videos = await getAllVideos();
       heading='Questions'
       allowBookmark={false}
       featuredItems={questionGroups.map((questionGroup) => ({
-        text: questionGroup.frontmatter.briefTitle,
+        text: questionGroup.data.briefTitle,
         url: `/questions/${questionGroup.id}`,
-        isNew: questionGroup.frontmatter.isNew,
+        isNew: questionGroup.data.isNew,
       }))}
     />
 

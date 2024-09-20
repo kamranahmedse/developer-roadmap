@@ -1,5 +1,5 @@
 import slugify from 'slugify';
-import { getAllAuthors } from './author.ts';
+import { getAllAuthors, type AuthorFileType } from './author.ts';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 type RawQuestionGroupFileType = CollectionEntry<'question-groups'>;
@@ -15,6 +15,7 @@ export type QuestionType = {
 export type QuestionGroupType = RawQuestionGroupFileType & {
   questions: QuestionType[];
   allTopics: string[];
+  author?: AuthorFileType;
 };
 
 /**

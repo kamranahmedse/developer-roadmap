@@ -1,13 +1,9 @@
 ---
-import {
-  getGuideTableOfContent,
-  type GuideFileType,
-  HeadingGroupType,
-} from '../../lib/guide';
+import { getGuideTableOfContent, type HeadingGroupType } from '../../lib/guide';
 import MarkdownFile from '../MarkdownFile.astro';
 import { TableOfContent } from '../TableOfContent/TableOfContent';
 import { markdownToHtml, replaceVariables } from '../../lib/markdown';
-import { QuestionGroupType } from '../../lib/question-group';
+import type { QuestionGroupType } from '../../lib/question-group';
 import { QuestionsList } from './QuestionsList';
 
 interface Props {
@@ -16,19 +12,17 @@ interface Props {
 
 const { questionGroup } = Astro.props;
 
-const allHeadings = questionGroup.getHeadings();
+const { headings: allHeadings, Content } = await questionGroup.render();
 const tableOfContent: HeadingGroupType[] = [
   ...getGuideTableOfContent(allHeadings),
   {
     depth: 2,
-    title: 'Test with Flashcards',
+    text: 'Test yourself with Flashcards',
     children: [],
     slug: 'test-with-flashcards',
-    text: 'Test yourself with Flashcards',
   },
   {
     depth: 2,
-    title: 'Questions List',
     children: [
       {
         depth: 2,
@@ -58,7 +52,7 @@ const tableOfContent: HeadingGroupType[] = [
 ];
 
 const showTableOfContent = tableOfContent.length > 0;
-const { frontmatter: guideFrontmatter, author } = questionGroup;
+const { data: guideFrontmatter, author } = questionGroup;
 ---
 
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
@@ -90,11 +84,11 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
               class='inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline'
             >
               <img
-                alt={author.frontmatter.name}
-                src={author.frontmatter.imageUrl}
+                alt={author.data.name}
+                src={author.data.imageUrl}
                 class='mb-0 mr-2 inline h-5 w-5 rounded-full'
               />
-              {author.frontmatter.name}
+              {author.data.name}
             </a>
             <span class='mx-2 hidden sm:inline'>&middot;</span>
             <a
@@ -107,7 +101,7 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
           </p>
         )
       }
-      <questionGroup.Content />
+      <Content />
 
       <h2 id='test-with-flashcards'>Test yourself with Flashcards</h2>
       <p>
@@ -136,8 +130,8 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
             </h3>
             {questionGroup.questions
               .filter((q) => {
-                return q.topics
-                  .map((t) => t.toLowerCase())
+                return q?.topics
+                  ?.map((t) => t.toLowerCase())
                   .includes(questionLevel);
               })
               .map((q) => (
