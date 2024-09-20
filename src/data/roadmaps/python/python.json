@@ -2927,7 +2927,7 @@
       },
       "selected": false,
       "data": {
-        "label": "virutalenv",
+        "label": "virtualenv",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
