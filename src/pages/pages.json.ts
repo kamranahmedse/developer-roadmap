@@ -36,17 +36,17 @@ export async function GET() {
       ...questionGroups.map((questionGroup) => ({
         id: questionGroup.id,
         url: `/questions/${questionGroup.id}`,
-        title: questionGroup.frontmatter.briefTitle,
+        title: questionGroup.data.briefTitle,
         group: 'Questions',
       })),
       ...guides.map((guide) => ({
         id: guide.id,
-        url: guide.frontmatter.excludedBySlug
-          ? guide.frontmatter.excludedBySlug
+        url: guide.data.excludedBySlug
+          ? guide.data.excludedBySlug
           : `/guides/${guide.id}`,
-        title: guide.frontmatter.title,
-        description: guide.frontmatter.description,
-        authorId: guide.frontmatter.authorId,
+        title: guide.data.title,
+        description: guide.data.description,
+        authorId: guide.data.authorId,
         group: 'Guides',
       })),
       ...videos.map((video) => ({

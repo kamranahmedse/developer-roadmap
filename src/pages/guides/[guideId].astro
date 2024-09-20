@@ -12,18 +12,18 @@ export interface Props {
 
 export async function getStaticPaths() {
   const guides = (await getAllGuides()).filter(
-    (guide) => !guide.frontmatter.excludedBySlug,
+    (guide) => !guide.data.excludedBySlug,
   );
 
   return guides.map((guide) => ({
-    params: { guideId: guide.id },
+    params: { guideId: guide.slug },
     props: { guide },
   }));
 }
 
 const { guideId } = Astro.params;
 const { guide } = Astro.props;
-const { frontmatter: guideData, author } = guide;
+const { data: guideData, author } = guide;
 
 const ogImageUrl =
   guideData.seo.ogImageUrl ||

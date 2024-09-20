@@ -10,7 +10,7 @@ export const questionGroupCollection = defineCollection({
     description: z.string(),
     isNew: z.boolean(),
     authorId: z.string().optional(),
-    date: z.string().optional(),
+    date: z.date().optional(),
     seo: z.object({
       title: z.string(),
       description: z.string(),

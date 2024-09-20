@@ -1,9 +1,6 @@
 ---
-import GridItem from '../../components/GridItem.astro';
-import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Footer from '../../components/Footer.astro';
-import AstroIcon from '../../components/AstroIcon.astro';
 import { QuestionsList } from '../../components/Questions/QuestionsList';
 
 import {
@@ -22,14 +19,14 @@ export async function getStaticPaths() {
 
   return questionGroups.map((questionGroup) => {
     return {
-      params: { questionGroupId: questionGroup.id },
+      params: { questionGroupId: questionGroup.slug },
       props: { questionGroup },
     };
   });
 }
 
 const { questionGroup } = Astro.props;
-const { frontmatter } = questionGroup;
+const { data: frontmatter } = questionGroup;
 ---
 
 <BaseLayout
@@ -40,7 +37,7 @@ const { frontmatter } = questionGroup;
   permalink={`/questions/${questionGroup.id}`}
 >
   {
-    !questionGroup.frontmatter.authorId && (
+    !frontmatter.authorId && (
       <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
         <div class='container !max-w-[740px]'>
           <div class='mb-3 mt-2 text-left sm:mb-5 sm:mt-8 sm:text-center'>
@@ -64,7 +61,7 @@ const { frontmatter } = questionGroup;
           </div>
 
           <QuestionsList
-            groupId={questionGroup.id}
+            groupId={questionGroup.slug}
             questions={questionGroup.questions}
             client:load
           />
@@ -73,11 +70,7 @@ const { frontmatter } = questionGroup;
     )
   }
 
-  {
-    questionGroup.frontmatter.authorId && (
-      <QuestionGuide questionGroup={questionGroup} />
-    )
-  }
+  {frontmatter?.authorId && <QuestionGuide questionGroup={questionGroup} />}
 
   <div slot='page-footer'>
     <Footer />

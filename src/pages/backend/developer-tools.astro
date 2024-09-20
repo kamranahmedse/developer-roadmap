@@ -9,7 +9,7 @@ import { replaceVariables } from '../../lib/markdown';
 const guideId = 'backend-developer-tools';
 const guide = await getGuideById(guideId);
 
-const { frontmatter: guideData } = guide!;
+const { data: guideData } = guide!;
 
 const ogImageUrl =
   guideData.seo.ogImageUrl ||

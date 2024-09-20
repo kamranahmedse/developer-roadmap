@@ -12,7 +12,7 @@ if (!guide) {
   return Astro.redirect('/404');
 }
 
-const { frontmatter: guideData } = guide!;
+const { data: guideData } = guide!;
 
 const ogImageUrl =
   guideData.seo.ogImageUrl ||

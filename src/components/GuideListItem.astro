@@ -1,7 +1,7 @@
 ---
-import type { GuideFileType, GuideFrontmatter } from '../lib/guide';
+import type { GuideFileType } from '../lib/guide';
 import { replaceVariables } from '../lib/markdown';
-import { QuestionGroupType } from '../lib/question-group';
+import type { QuestionGroupType } from '../lib/question-group';
 
 export interface Props {
   guide: GuideFileType | QuestionGroupType;
@@ -14,7 +14,7 @@ function isQuestionGroupType(
 }
 
 const { guide } = Astro.props;
-const { data, id } = guide;
+const { data: frontmatter, slug: id } = guide;
 
 let pageUrl = '';
 let guideType = '';
@@ -23,9 +23,9 @@ if (isQuestionGroupType(guide)) {
   pageUrl = `/questions/${id}`;
   guideType = 'Questions';
 } else {
-  const excludedBySlug = (frontmatter as GuideFrontmatter).excludedBySlug;
+  const excludedBySlug = (frontmatter as GuideFileType['data']).excludedBySlug;
   pageUrl = excludedBySlug ? excludedBySlug : `/guides/${id}`;
-  guideType = (frontmatter as GuideFrontmatter).type;
+  guideType = (frontmatter as GuideFileType['data']).type;
 }
 ---
 
@@ -46,7 +46,7 @@ if (isQuestionGroupType(guide)) {
           New
           <span class='hidden sm:inline'>
             &middot;
-            {new Date(frontmatter.date).toLocaleString('default', {
+            {new Date(frontmatter.date!).toLocaleString('default', {
               month: 'long',
             })}
           </span>

@@ -57,7 +57,7 @@ export async function getGuideById(
 ): Promise<GuideFileType | undefined> {
   const allGuides = await getAllGuides();
 
-  return allGuides.find((guide) => guide.id === id);
+  return allGuides.find((guide) => guide.slug === id);
 }
 
 type HeadingType = ReturnType<MarkdownFileType['getHeadings']>[number];

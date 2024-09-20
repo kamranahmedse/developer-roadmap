@@ -1,7 +1,6 @@
-import type { MarkdownFileType } from './file';
 import slugify from 'slugify';
 import { getAllAuthors } from './author.ts';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
 type RawQuestionGroupFileType = CollectionEntry<'question-groups'>;
 
@@ -24,14 +23,9 @@ export type QuestionGroupType = RawQuestionGroupFileType & {
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
-  const questionGroupFilesMap = import.meta.glob<RawQuestionGroupFileType>(
-    `/src/data/question-groups/*/*.md`,
-    {
-      eager: true,
-    },
-  );
-
-  const answerFilesMap = import.meta.glob<string>(
+  const questionGroupEntries = await getCollection('question-groups');
+  const allAuthors = await getAllAuthors();
+  const answerFilesMap = import.meta.glob(
     // get the files inside /src/data/question-groups/[ignore]/content/*.md
     `/src/data/question-groups/*/content/*.md`,
     {
@@ -40,25 +34,19 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
     },
   );
 
-  const allAuthors = await getAllAuthors();
-
-  return Object.values(questionGroupFilesMap)
-    .map((questionGroupFile) => {
-      const fileParts = questionGroupFile?.file?.split('/');
-      const [questionGroupDir, questionGroupFileName] = fileParts?.slice(-2);
-
-      const questionGroupFileId = questionGroupFileName?.replace('.md', '');
+  return questionGroupEntries
+    .map((questionGroupEntry) => {
       const formattedAnswers: QuestionType[] =
-        questionGroupFile.frontmatter.questions.map((qa) => {
+        questionGroupEntry.data.questions.map((qa) => {
           const questionText = qa.question;
           let answerText = qa.answer;
           let isLongAnswer = false;
 
           if (answerText.endsWith('.md')) {
-            const answerFilePath = `/src/data/question-groups/${questionGroupDir}/content/${answerText}`;
+            const answerFilePath = `/src/data/question-groups/${questionGroupEntry.slug}/content/${answerText}`;
             answerText =
-              (answerFilesMap[answerFilePath] as any)?.default ||
-              answerFilesMap[answerFilePath] ||
+              // @ts-ignore
+              answerFilesMap[answerFilePath]?.default ||
               `File missing: ${answerFilePath}`;
 
             isLongAnswer = true;
@@ -84,23 +72,24 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           return acc;
         }, [] as string[]);
 
+      const author = allAuthors.find(
+        (author) => author.slug === questionGroupEntry.data.authorId,
+      );
+
       return {
-        ...questionGroupFile,
-        id: questionGroupFileId,
+        ...questionGroupEntry,
         questions: formattedAnswers,
         allTopics: uniqueTopics,
-        author: allAuthors.find(
-          (author) => author.id === questionGroupFile.frontmatter.authorId,
-        )!,
+        author,
       };
     })
-    .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+    .sort((a, b) => a.data.order - b.data.order);
 }
 
-export async function getQuestionGroupById(id: string) {
+export async function getQuestionGroupById(slug: string) {
   const questionGroups = await getAllQuestionGroups();
 
-  return questionGroups.find((group) => group.id === id);
+  return questionGroups.find((group) => group.slug === slug);
 }
 
 export async function getQuestionGroupsByIds(
@@ -110,24 +99,14 @@ export async function getQuestionGroupsByIds(
     return [];
   }
 
-  const questionGroupFilesMap = import.meta.glob<
-    MarkdownFileType<RawQuestionGroupFrontmatter>
-  >(`/src/data/question-groups/*/*.md`, {
-    eager: true,
-  });
-
-  return Object.values(questionGroupFilesMap)
+  const questionGroups = await getAllQuestionGroups();
+  return questionGroups
+    .filter((group) => ids.includes(group.slug))
     .map((group) => {
-      const fileId = group?.file?.split('/')?.pop()?.replace('.md', '');
-      const frontmatter = group.frontmatter;
-
       return {
-        id: fileId!,
-        title: frontmatter.briefTitle,
-        description: `${frontmatter.questions.length} Questions`,
+        id: group.id,
+        title: group.data.title,
+        description: `${group.questions.length} Questions`,
       };
-    })
-    .filter((group) => {
-      return ids.includes(group.id);
     });
 }

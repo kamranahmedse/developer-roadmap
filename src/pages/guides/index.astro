@@ -7,13 +7,13 @@ import { getAllQuestionGroups } from '../../lib/question-group';
 
 const guides = await getAllGuides();
 const questionGuides = (await getAllQuestionGroups()).filter(
-  (questionGroup) => questionGroup.frontmatter.authorId,
+  (questionGroup) => questionGroup.data.authorId,
 );
 
 const allGuides = [...guides, ...questionGuides];
 const sortedGuides = allGuides.sort((a, b) => {
-  const aDate = new Date(a.frontmatter.date);
-  const bDate = new Date(b.frontmatter.date);
+  const aDate = new Date(a.data.date!);
+  const bDate = new Date(b.data.date!);
 
   return bDate.getTime() - aDate.getTime();
 });

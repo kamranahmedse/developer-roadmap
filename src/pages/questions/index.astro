@@ -24,9 +24,9 @@ const questionGroups = await getAllQuestionGroups();
         {
           questionGroups.map((questionGroup) => (
             <GridItem
-              url={`/questions/${questionGroup.id}`}
-              isNew={questionGroup.frontmatter.isNew}
-              title={questionGroup.frontmatter.briefTitle}
+              url={`/questions/${questionGroup.slug}`}
+              isNew={questionGroup.data.isNew}
+              title={questionGroup.data.briefTitle}
               description={`${questionGroup.questions.length} Questions &middot; ${questionGroup.allTopics.length} topics`}
             />
           ))

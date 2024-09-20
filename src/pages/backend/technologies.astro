@@ -12,7 +12,7 @@ if (!guide) {
   return Astro.redirect('/404');
 }
 
-const { frontmatter: guideData } = guide!;
+const { data: guideData } = guide!;
 
 const ogImageUrl =
   guideData.seo.ogImageUrl ||
@@ -25,7 +25,7 @@ const ogImageUrl =
 <BaseLayout
   title={replaceVariables(guideData.seo.title)}
   description={replaceVariables(guideData.seo.description)}
-  permalink={guide.frontmatter.excludedBySlug}
+  permalink={guide?.data.excludedBySlug}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >

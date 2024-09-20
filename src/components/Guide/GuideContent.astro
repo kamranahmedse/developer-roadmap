@@ -10,11 +10,11 @@ interface Props {
 
 const { guide } = Astro.props;
 
-const allHeadings = guide.getHeadings();
+const { headings: allHeadings, Content } = await guide.render();
 const tableOfContent = getGuideTableOfContent(allHeadings);
 
 const showTableOfContent = tableOfContent.length > 0;
-const { frontmatter: guideFrontmatter, author } = guide;
+const { data: guideFrontmatter, author } = guide;
 ---
 
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
@@ -44,11 +44,11 @@ const { frontmatter: guideFrontmatter, author } = guide;
           class='inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline'
         >
           <img
-            alt={author.frontmatter.name}
-            src={author.frontmatter.imageUrl}
+            alt={author.data.name}
+            src={author.data.imageUrl}
             class='mb-0 mr-2 inline h-5 w-5 rounded-full'
           />
-          {author.frontmatter.name}
+          {author.data.name}
         </a>
         <span class='mx-2 hidden sm:inline'>&middot;</span>
         <a
@@ -59,7 +59,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
           Improve this Guide
         </a>
       </p>
-      <guide.Content />
+      <Content />
     </MarkdownFile>
   </div>
 </article>

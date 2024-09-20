@@ -9,7 +9,7 @@ import { replaceVariables } from '../../lib/markdown';
 const guideId = 'devops-career-path';
 const guide = await getGuideById(guideId);
 
-const { frontmatter: guideData } = guide!;
+const { data: guideData } = guide!;
 
 const ogImageUrl =
   guideData.seo.ogImageUrl ||
@@ -22,7 +22,7 @@ const ogImageUrl =
 <BaseLayout
   title={replaceVariables(guideData.seo.title)}
   description={replaceVariables(guideData.seo.description)}
-  permalink={guide.frontmatter.excludedBySlug}
+  permalink={guide?.data.excludedBySlug}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >
