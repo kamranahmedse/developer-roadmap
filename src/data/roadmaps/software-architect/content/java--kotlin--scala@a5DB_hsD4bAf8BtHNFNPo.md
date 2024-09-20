@@ -2,7 +2,7 @@
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Java Roadmap](/java)
+- [@roadmap@Visit Dedicated Java Roadmap](https://roadmap.sh/java)
 - [@article@Java Basics](https://www.w3schools.com/java/)
 - [@article@Learn the basics of Kotlin](https://blog.teamtreehouse.com/absolute-beginners-guide-kotlin)
 - [@article@Kotlin Docs](https://kotlinlang.org/docs/reference/basic-syntax.html)

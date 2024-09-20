@@ -273,7 +273,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             <DashboardCard
               icon={CheckEmoji}
               title="Best Practices"
-              description="Do things right way"
+              description="Do things the right way"
               href="/best-practices"
             />
           </>

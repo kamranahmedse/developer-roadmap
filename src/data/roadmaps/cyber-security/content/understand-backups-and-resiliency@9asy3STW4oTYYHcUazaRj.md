@@ -1,35 +1,9 @@
 # Understand Backups and Resiliency
 
-Backups and resiliency are crucial components of an effective cyber security strategy. They help organizations maintain their operations and data integrity, even in the face of various threats such as data breaches, hardware failures, or natural disasters. In this section, we will discuss the importance of creating and maintaining regular data backups and developing a resilient infrastructure.
+Backups and resiliency are critical components of data protection and business continuity strategies. Backups involve regularly copying data to secure storage locations, ensuring data can be recovered in case of loss, corruption, or disaster. Resiliency refers to a system's ability to maintain operations and recover quickly from disruptions. This includes implementing redundant systems, distributing resources across multiple locations, and designing fault-tolerant architectures. Effective backup and resiliency strategies incorporate diverse backup methods (full, incremental, differential), off-site storage, regular testing of recovery procedures, and automated failover mechanisms. These practices are essential for minimizing downtime, protecting against data loss, and maintaining business operations in the face of various threats, from hardware failures to cyberattacks.
 
-## Data Backups
+Learn more from the following resources:
 
-Data backups are simply copies of your valuable data that are stored in a secure location, separate from your primary storage. They provide a means to recover your data in case of any data loss incidents, such as accidental deletion, hardware failure, or cyber attacks like ransomware.
-
-**Best practices for data backups include:**
-
-- **Frequent and scheduled backups**: Schedule regular backups and automate the process to ensure consistency and reduce the risk of human error.
-
-- **Multiple copies**: Maintain multiple copies of your backups, preferably on different types of storage media (e.g., external hard drives, cloud storage, or tapes).
-
-- **Offsite storage**: Store at least one copy of your backups offsite. This will help protect against data loss due to onsite physical disasters or theft.
-
-- **Encryption**: Encrypt your backups to protect sensitive data from unauthorized access.
-
-- **Testing and verification**: Regularly test your backups to ensure they are functioning properly and can be restored when needed.
-
-## Infrastructure Resiliency
-
-Infrastructure resiliency refers to the ability of your organization's IT systems to maintain availability and functionality in the face of unexpected disruptions, such as power outages, hardware failures, or cyber attacks. A resilient infrastructure helps minimize downtime and data loss, ensuring that your organization can continue its operations during and after an incident.
-
-**Key components of a resilient infrastructure include:**
-
-- **Redundancy**: Design your infrastructure in a way that it includes redundant components (e.g., servers, power supplies, or network connections) to ensure uninterrupted operations in case of a failure.
-
-- **Disaster recovery planning**: Develop a comprehensive disaster recovery plan that outlines the steps and resources to restore your systems and data after an incident. This plan should include provisions for regular testing and updating.
-
-- **Incident response planning**: Establish a clear incident response process that defines roles, responsibilities, and procedures for identifying, investigating, and mitigating security incidents.
-
-- **Regular monitoring and maintenance**: Proactively monitor your infrastructure for signs of potential issues, and perform routine maintenance to minimize vulnerabilities and reduce the likelihood of failures.
-
-By investing in robust data backups and building a resilient infrastructure, you will ensure that your organization is well-prepared to handle any unexpected disruptions and maintain the continuity of essential operations.
+- [@article@Backup & Restore](https://aws.amazon.com/solutions/resilience/backup-restore/)
+- [@video@Why backup should be a part of your cyber resilience plan?](https://www.youtube.com/watch?v=S8BIkoHlU_0)
+- [@video@AWS re:Invent 2023 - Backup and disaster recovery strategies for increased resilience](https://www.youtube.com/watch?v=E073XISxrSU)

@@ -4,7 +4,7 @@ GitHub is a web-based platform for version control and collaboration using Git. 
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](/git-github)
+- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
 - [@official@GitHub Website](https://github.com)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@video@Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)

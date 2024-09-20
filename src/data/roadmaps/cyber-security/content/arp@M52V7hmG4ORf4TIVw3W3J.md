@@ -1,10 +1,11 @@
 # ARP
 
-ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network.
+Address Resolution Protocol (ARP) is a crucial mechanism used in networking that allows the Internet Protocol (IP) to map an IP address to a corresponding physical address, commonly known as a Media Access Control (MAC) address. This protocol is essential for enabling devices within a Local Area Network (LAN) to communicate by translating IP addresses into specific hardware addresses.
 
-When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address.
+When one device on a LAN wants to communicate with another, it needs to know the MAC address associated with the target device’s IP address. ARP facilitates this by sending out an ARP request, which broadcasts the target IP to all devices in the network. Each device checks the requested IP against its own. The device that recognizes the IP as its own responds with an ARP reply, which includes its MAC address.
 
-The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.
+Once the requesting device receives the MAC address, it updates its ARP cache—a table that stores IP-to-MAC address mappings—allowing it to send data directly to the correct hardware address.
+
 
 Learn more from the following resources: 
 
