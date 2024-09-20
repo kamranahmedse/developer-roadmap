@@ -1,12 +1,9 @@
 # GitOps
 
-GitOps is a methodology for managing cloud-native applications and infrastructure using Git as the source of truth. It is based on the idea that all changes to the system, whether they are related to code, configuration, or infrastructure, should be made using Git and that Git should be used to automate the deployment and management of those changes.
-
-In a GitOps workflow, changes to the system are made by committing code or configuration changes to a Git repository. These changes are then automatically deployed to the production environment using a continuous delivery pipeline. The pipeline is triggered by changes to the Git repository and is responsible for building, testing, and deploying the changes to the production environment.
-
-GitOps is designed to be a more efficient and agile way of managing cloud-native environments, as it allows developers to make changes to the system using familiar tools and processes and it provides a clear and auditable history of all changes to the system. It is often used in conjunction with tools such as Kubernetes and Helm to automate the deployment and management of cloud-native applications.
+GitOps is a paradigm for managing infrastructure and application deployments using Git as the single source of truth. It extends DevOps practices by using Git repositories to store declarative descriptions of infrastructure and applications. Changes to the desired state are made through pull requests, which trigger automated processes to align the actual state with the desired state. GitOps relies on continuous deployment tools that automatically reconcile the live system with the desired state defined in Git. This approach provides benefits such as version control for infrastructure, improved auditability, easier rollbacks, and enhanced collaboration. GitOps is particularly well-suited for cloud-native applications and Kubernetes environments, offering a streamlined method for managing complex, distributed systems.
 
 Visit the following resources to learn more:
 
 - [@article@Guide to GitOps](https://www.weave.works/technologies/gitops/)
+- [@video@What is GitOps, How GitOps works and Why it's so useful](https://www.youtube.com/watch?v=f5EpcWp0THw)
 - [@feed@Explore top posts about GitOps](https://app.daily.dev/tags/gitops?ref=roadmapsh)
