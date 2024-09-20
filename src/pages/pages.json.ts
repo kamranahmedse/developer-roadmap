@@ -50,9 +50,9 @@ export async function GET() {
         group: 'Guides',
       })),
       ...videos.map((video) => ({
-        id: video.id,
-        url: `/videos/${video.id}`,
-        title: video.frontmatter.title,
+        id: video.slug,
+        url: `/videos/${video.slug}`,
+        title: video.data.title,
         group: 'Videos',
       })),
       ...projects.map((project) => ({

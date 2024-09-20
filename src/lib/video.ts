@@ -1,43 +1,11 @@
 import type { MarkdownFileType } from './file';
 import type { AuthorFileType } from './author.ts';
 import { getAllAuthors } from './author.ts';
-import type { GuideFileType } from './guide.ts';
-import { getAllGuides } from './guide.ts';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-export interface VideoFrontmatter {
-  title: string;
-  description: string;
-  authorId: string;
-  seo: {
-    title: string;
-    description: string;
-  };
-  isNew: boolean;
-  duration: string;
-  date: string;
-  sitemap: {
-    priority: number;
-    changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly';
-  };
-  tags: string[];
-}
-
-export type VideoFileType = MarkdownFileType<VideoFrontmatter> & {
-  id: string;
+export type VideoFileType = CollectionEntry<'videos'> & {
   author: AuthorFileType;
 };
-
-/**
- * Generates id from the given video file
- * @param filePath Markdown file path
- *
- * @returns unique video identifier
- */
-function videoPathToId(filePath: string): string {
-  const fileName = filePath.split('/').pop() || '';
-
-  return fileName.replace('.md', '');
-}
 
 export async function getVideosByAuthor(
   authorId: string,
@@ -52,43 +20,38 @@ export async function getVideosByAuthor(
  * @returns Promisifed video files
  */
 export async function getAllVideos(): Promise<VideoFileType[]> {
-  const videos = import.meta.glob<VideoFileType>('/src/data/videos/*.md', {
-    eager: true,
-  });
-
+  const videoEntries = await getCollection('videos');
   const allAuthors = await getAllAuthors();
 
-  const videoFiles = Object.values(videos);
-  const enrichedVideos = videoFiles.map((videoFile) => ({
-    ...videoFile,
-    id: videoPathToId(videoFile.file),
-    author: allAuthors.find(
-      (author) => author.slug === videoFile.frontmatter.authorId,
-    )!,
-  }));
+  const enrichedVideos = videoEntries.map((videoFile) => {
+    const author = allAuthors.find(
+      (author) => author.slug === videoFile.data.authorId,
+    );
+
+    if (!author) {
+      throw new Error(
+        `Author with ID ${videoFile.data.authorId} not found for video ${videoFile.data.title}`,
+      );
+    }
+
+    return {
+      ...videoFile,
+      author,
+    };
+  });
 
   return enrichedVideos.sort(
-    (a, b) =>
-      new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf(),
+    (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
   );
 }
 
 export async function getVideoById(id: string): Promise<VideoFileType> {
-  const videoFilesMap: Record<string, VideoFileType> =
-    import.meta.glob<VideoFileType>('../data/videos/*.md', {
-      eager: true,
-    });
+  const allVideos = await getAllVideos();
+  const videoFile = allVideos.find((video) => video.slug === id);
 
-  const videoFile = Object.values(videoFilesMap).find((videoFile) => {
-    return videoPathToId(videoFile.file) === id;
-  });
   if (!videoFile) {
     throw new Error(`Video with ID ${id} not found`);
   }
 
-  return {
-    ...videoFile,
-    id: videoPathToId(videoFile.file),
-  };
+  return videoFile;
 }

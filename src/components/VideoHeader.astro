@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const { video } = Astro.props;
-const { frontmatter, author } = video;
+const { data: frontmatter, author } = video;
 ---
 
 <div class='border-b bg-white py-5 sm:py-12'>

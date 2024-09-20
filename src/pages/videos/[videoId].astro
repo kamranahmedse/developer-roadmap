@@ -1,7 +1,7 @@
 ---
 import VideoHeader from '../../components/VideoHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAllVideos, VideoFileType } from '../../lib/video';
+import { getAllVideos, type VideoFileType } from '../../lib/video';
 
 export interface Props {
   video: VideoFileType;
@@ -11,18 +11,19 @@ export async function getStaticPaths() {
   const videos = await getAllVideos();
 
   return videos.map((video) => ({
-    params: { videoId: video.id },
+    params: { videoId: video.slug },
     props: { video },
   }));
 }
 
 const { videoId } = Astro.params;
 const { video } = Astro.props;
+const { Content } = await video.render();
 ---
 
 <BaseLayout
-  title={video.frontmatter.title}
-  description={video.frontmatter.description}
+  title={video.data.title}
+  description={video.data.description}
   permalink={`/videos/${videoId}`}
 >
   <VideoHeader video={video} />
@@ -31,7 +32,7 @@ const { video } = Astro.props;
     <div
       class='container prose prose-h2:mb-2 prose-h2:mt-4 prose-h2:text-3xl prose-h3:mt-2 prose-code:bg-transparent prose-img:mt-1'
     >
-      <video.Content />
+      <Content />
     </div>
   </div>
 </BaseLayout>
