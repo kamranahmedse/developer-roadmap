@@ -21,7 +21,8 @@ export async function getStaticPaths() {
 const { authorId } = Astro.params;
 
 const author = await getAuthorById(authorId);
-const authorFrontmatter = author.frontmatter;
+const authorFrontmatter = author.data;
+const { Content } = await author.render();
 
 const guides = await getGuidesByAuthor(authorId);
 const questionGuides = (await getAllQuestionGroups()).filter(
@@ -32,10 +33,10 @@ const videos = await getVideosByAuthor(authorId);
 
 <BaseLayout
   permalink={`/authors/${author.id}`}
-  title={`${author.frontmatter.name} - Author at roadmap.sh`}
-  briefTitle={author.frontmatter.name}
+  title={`${authorFrontmatter.name} - Author at roadmap.sh`}
+  briefTitle={authorFrontmatter.name}
   ogImageUrl={`https://roadmap.sh/${authorFrontmatter.imageUrl}`}
-  description={`${author.frontmatter.name} has written ${guides.length} articles on roadmap.sh on a variety of topics.`}
+  description={`${authorFrontmatter.name} has written ${guides.length} articles on roadmap.sh on a variety of topics.`}
   noIndex={false}
   jsonLd={[
     {
@@ -69,7 +70,7 @@ const videos = await getVideosByAuthor(authorId);
           <div
             class='mb-4 mt-1 flex flex-col gap-3 leading-normal text-gray-800 md:mb-6 md:mt-4 [&>p>a]:font-semibold [&>p>a]:underline'
           >
-            <author.Content />
+            <Content />
           </div>
 
           <div class='flex items-center justify-between'>
@@ -86,7 +87,7 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                authorFrontmatter.social.twitter && (
+                authorFrontmatter?.social?.twitter && (
                   <a
                     href={authorFrontmatter.social.twitter}
                     target='_blank'
@@ -97,9 +98,9 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                authorFrontmatter.social.linkedin && (
+                authorFrontmatter?.social?.linkedin && (
                   <a
-                    href={authorFrontmatter.social.linkedin}
+                    href={authorFrontmatter?.social?.linkedin}
                     target='_blank'
                     class='text-gray-500 transition-colors hover:text-gray-800'
                   >
@@ -108,7 +109,7 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                authorFrontmatter.social.website && (
+                authorFrontmatter?.social?.website && (
                   <a
                     href={authorFrontmatter.social.website}
                     target='_blank'
@@ -134,11 +135,13 @@ const videos = await getVideosByAuthor(authorId);
       class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
     >
       {
-        [...guides, ...questionGuides]
+        [...guides]
           .sort((a, b) => {
-            const aDate = a.frontmatter.date || a.frontmatter.publishedAt;
-            const bDate = b.frontmatter.date || b.frontmatter.publishedAt;
-            return new Date(bDate) - new Date(aDate);
+            const aDate = a.data.date;
+            // const aDate = a.data.date || a.data.publishedAt;
+            const bDate = b.data.date;
+            // const bDate = b.data.date || b.data.publishedAt;
+            return new Date(bDate).getTime() - new Date(aDate).getTime();
           })
           .map((guide) => <GuideListItem guide={guide} />)
       }

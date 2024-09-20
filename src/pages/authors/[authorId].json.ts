@@ -11,7 +11,7 @@ export async function getStaticPaths() {
       return {
         params: { authorId },
         props: {
-          authorDetails: authorDetails?.frontmatter || {},
+          authorDetails: authorDetails?.data || {},
         },
       };
     }),

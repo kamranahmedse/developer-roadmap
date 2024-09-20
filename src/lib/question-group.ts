@@ -1,37 +1,9 @@
 import type { MarkdownFileType } from './file';
 import slugify from 'slugify';
 import { getAllAuthors } from './author.ts';
+import type { CollectionEntry } from 'astro:content';
 
-interface RawQuestionGroupFrontmatter {
-  order: number;
-  briefTitle: string;
-  briefDescription: string;
-  title: string;
-  description: string;
-  isNew: boolean;
-  authorId?: string;
-  date?: string;
-  seo: {
-    title: string;
-    description: string;
-    ogImageUrl?: string;
-    keywords: string[];
-  };
-  sitemap: {
-    priority: number;
-    changefreq: string;
-  };
-  questions: {
-    question: string;
-    answer: string;
-    topics: string[];
-  }[];
-}
-
-type RawQuestionGroupFileType =
-  MarkdownFileType<RawQuestionGroupFrontmatter> & {
-    id: string;
-  };
+type RawQuestionGroupFileType = CollectionEntry<'question-groups'>;
 
 export type QuestionType = {
   id: string;
