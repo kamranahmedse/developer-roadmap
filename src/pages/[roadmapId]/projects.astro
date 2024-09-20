@@ -52,7 +52,7 @@ const nounTitle =
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
 
 const projects = await getProjectsByRoadmapId(roadmapId);
-const projectIds = projects.map((project) => project.id);
+const projectIds = projects.map((project) => project.slug);
 
 const projectApiClient = projectApi(Astro);
 const { response: userCounts } =

@@ -7,11 +7,9 @@ import {
   setUrlParams,
 } from '../../lib/browser.ts';
 import { CategoryFilterButton } from '../Roadmaps/CategoryFilterButton.tsx';
-import {
-  projectDifficulties,
-  type ProjectFileType,
-} from '../../lib/project.ts';
+import { type ProjectFileType } from '../../lib/project.ts';
 import { ProjectCard } from './ProjectCard.tsx';
+import { projectDifficulties } from '../../content/project.ts';
 
 type ProjectGroup = {
   id: string;
@@ -28,7 +26,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
   const { roadmapsProjects, userCounts } = props;
   const allUniqueProjectIds = new Set<string>(
     roadmapsProjects.flatMap((group) =>
-      group.projects.map((project) => project.id),
+      group.projects.map((project) => project.slug),
     ),
   );
   const allUniqueProjects = useMemo(
@@ -37,7 +35,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
         .map((id) =>
           roadmapsProjects
             .flatMap((group) => group.projects)
-            .find((project) => project.id === id),
+            .find((project) => project.slug === id),
         )
         .filter(Boolean) as ProjectFileType[],
     [allUniqueProjectIds],
@@ -67,8 +65,8 @@ export function ProjectsPage(props: ProjectsPageProps) {
   const sortedVisibleProjects = useMemo(
     () =>
       visibleProjects.sort((a, b) => {
-        const projectADifficulty = a?.frontmatter.difficulty || 'beginner';
-        const projectBDifficulty = b?.frontmatter.difficulty || 'beginner';
+        const projectADifficulty = a?.data.difficulty || 'beginner';
+        const projectBDifficulty = b?.data.difficulty || 'beginner';
         return (
           projectDifficulties.indexOf(projectADifficulty) -
           projectDifficulties.indexOf(projectBDifficulty)
@@ -189,7 +187,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
               <ProjectCard
                 key={project.id}
                 project={project}
-                userCount={userCounts[project.id] || 0}
+                userCount={userCounts[project.slug] || 0}
               />
             ))}
           </div>

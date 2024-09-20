@@ -14,8 +14,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { VoteButton } from './VoteButton.tsx';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
-import type { ProjectFrontmatter } from '../../lib/project.ts';
-import { ProjectSolutionModal } from './ProjectSolutionModal.tsx';
+import type { ProjectFileType } from '../../lib/project.ts';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -65,7 +64,7 @@ type PageState = {
 };
 
 type ListProjectSolutionsProps = {
-  project: ProjectFrontmatter;
+  project: ProjectFileType['data'];
   projectId: string;
 };
 

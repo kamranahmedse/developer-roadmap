@@ -1,46 +1,9 @@
-import type { MarkdownFileType } from './file';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import { getRoadmapById, type RoadmapFileType } from './roadmap.ts';
 
-export const projectDifficulties = [
-  'beginner',
-  'intermediate',
-  'advanced',
-] as const;
-export type ProjectDifficultyType = (typeof projectDifficulties)[number];
-
-export interface ProjectFrontmatter {
-  title: string;
-  description: string;
-  isNew: boolean;
-  sort: number;
-  difficulty: ProjectDifficultyType;
-  nature: string;
-  skills: string[];
-  seo: {
-    title: string;
-    description: string;
-    keywords: string[];
-    ogImageUrl: string;
-  };
-  roadmapIds: string[];
-}
-
-export type ProjectFileType = MarkdownFileType<ProjectFrontmatter> & {
-  id: string;
+export type ProjectFileType = CollectionEntry<'projects'> & {
   roadmaps: RoadmapFileType[];
 };
-
-/**
- * Generates id from the given project file
- * @param filePath Markdown file path
- *
- * @returns unique project identifier
- */
-function projectPathToId(filePath: string): string {
-  const fileName = filePath.split('/').pop() || '';
-
-  return fileName.replace('.md', '');
-}
 
 export async function getProjectsByRoadmapId(
   roadmapId: string,
@@ -48,7 +11,7 @@ export async function getProjectsByRoadmapId(
   const projects = await getAllProjects();
 
   return projects.filter((project) =>
-    project.frontmatter?.roadmapIds?.includes(roadmapId),
+    project.data?.roadmapIds?.includes(roadmapId),
   );
 }
 
@@ -63,26 +26,20 @@ export async function getAllProjects(): Promise<ProjectFileType[]> {
     return tempProjects;
   }
 
-  const projects = import.meta.glob<ProjectFileType>(
-    '/src/data/projects/*.md',
-    {
-      eager: true,
-    },
-  );
-
-  tempProjects = Object.values(projects).map((projectFile) => ({
-    ...projectFile,
-    id: projectPathToId(projectFile.file),
-  }));
-
+  tempProjects = await getCollection('projects');
   return tempProjects;
 }
 
 export async function getProjectById(
   groupId: string,
 ): Promise<ProjectFileType> {
-  const project = await import(`../data/projects/${groupId}.md`);
-  const roadmapIds = project.frontmatter.roadmapIds || [];
+  const projects = await getAllProjects();
+  const project = projects.find((project) => project.slug === groupId);
+  if (!project) {
+    throw new Error(`Project not found with id: ${groupId}`);
+  }
+
+  const roadmapIds = project.data.roadmapIds || [];
   const roadmaps = await Promise.all(
     roadmapIds.map((roadmapId: string) => getRoadmapById(roadmapId)),
   );
@@ -90,7 +47,6 @@ export async function getProjectById(
   return {
     ...project,
     roadmaps: roadmaps,
-    id: projectPathToId(project.file),
   };
 }
 
@@ -101,7 +57,7 @@ export async function getRoadmapsProjects(): Promise<
   const roadmapsProjects: Record<string, ProjectFileType[]> = {};
 
   projects.forEach((project) => {
-    project.frontmatter.roadmapIds.forEach((roadmapId) => {
+    project.data.roadmapIds.forEach((roadmapId) => {
       if (!roadmapsProjects[roadmapId]) {
         roadmapsProjects[roadmapId] = [];
       }

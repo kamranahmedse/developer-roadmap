@@ -1,11 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { Badge } from '../../../components/Badge';
-import {
-  getAllProjects,
-  getProjectById,
-  type ProjectFrontmatter,
-} from '../../../lib/project';
+import { getAllProjects, getProjectById } from '../../../lib/project';
 import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
@@ -14,7 +10,7 @@ export async function getStaticPaths() {
   const projects = await getAllProjects();
 
   return projects
-    .map((project) => project.id)
+    .map((project) => project.slug)
     .map((projectId) => ({
       params: { projectId },
     }));
@@ -27,7 +23,8 @@ interface Params extends Record<string, string | undefined> {
 const { projectId } = Astro.params as Params;
 
 const project = await getProjectById(projectId);
-const projectData = project.frontmatter as ProjectFrontmatter;
+const projectData = project.data;
+const { Content } = await project.render();
 
 let jsonLdSchema: any[] = [];
 
@@ -49,7 +46,11 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
 >
   <div class='bg-gray-50'>
     <div class='container'>
-      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='details' />
+      <ProjectTabs
+        parentRoadmapId={parentRoadmapId}
+        projectId={projectId}
+        activeTab='details'
+      />
 
       <div
         class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
@@ -80,7 +81,7 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
         <div
           class='prose max-w-full prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 [&>ul>li]:my-1'
         >
-          <project.Content />
+          <Content />
         </div>
 
         <div

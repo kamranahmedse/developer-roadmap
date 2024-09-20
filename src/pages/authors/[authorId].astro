@@ -32,7 +32,7 @@ const videos = await getVideosByAuthor(authorId);
 ---
 
 <BaseLayout
-  permalink={`/authors/${author.id}`}
+  permalink={`/authors/${author.slug}`}
   title={`${authorFrontmatter.name} - Author at roadmap.sh`}
   briefTitle={authorFrontmatter.name}
   ogImageUrl={`https://roadmap.sh/${authorFrontmatter.imageUrl}`}

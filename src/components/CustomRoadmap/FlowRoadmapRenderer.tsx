@@ -159,7 +159,8 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       {hideRenderer && (
         <EmptyRoadmap
           roadmapId={roadmapId}
-          canManage={roadmap.canManage}
+          // @ts-ignore
+          canManage={roadmap?.canManage}
           className="grow"
         />
       )}

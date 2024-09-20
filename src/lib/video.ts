@@ -44,7 +44,7 @@ export async function getVideosByAuthor(
 ): Promise<VideoFileType[]> {
   const allVideos = await getAllVideos();
 
-  return allVideos.filter((video) => video.author?.id === authorId);
+  return allVideos.filter((video) => video.author?.slug === authorId);
 }
 
 /**
@@ -63,7 +63,7 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
     ...videoFile,
     id: videoPathToId(videoFile.file),
     author: allAuthors.find(
-      (author) => author.id === videoFile.frontmatter.authorId,
+      (author) => author.slug === videoFile.frontmatter.authorId,
     )!,
   }));
 

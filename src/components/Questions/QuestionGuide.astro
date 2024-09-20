@@ -80,7 +80,7 @@ const { data: guideFrontmatter, author } = questionGroup;
         author && (
           <p class='my-0 flex items-center justify-start text-sm text-gray-400'>
             <a
-              href={`/authors/${author?.id}`}
+              href={`/authors/${author?.slug}`}
               class='inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline'
             >
               <img
@@ -93,7 +93,7 @@ const { data: guideFrontmatter, author } = questionGroup;
             <span class='mx-2 hidden sm:inline'>&middot;</span>
             <a
               class='hidden underline-offset-2 hover:text-gray-600 sm:inline'
-              href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/question-groups/${questionGroup.id}`}
+              href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/question-groups/${questionGroup.slug}`}
               target='_blank'
             >
               Improve this Guide
@@ -110,7 +110,7 @@ const { data: guideFrontmatter, author } = questionGroup;
       </p>
       <div class='mx-0 sm:-mb-32'>
         <QuestionsList
-          groupId={questionGroup.id}
+          groupId={questionGroup.slug}
           questions={questionGroup.questions}
           client:load
         />

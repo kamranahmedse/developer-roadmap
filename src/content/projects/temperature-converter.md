@@ -11,14 +11,14 @@ skills:
   - JavaScript
   - DOM Manipulation
 seo:
-  - title: Build a Temperature Converter with JavaScript
-  - description: Learn how to create an interactive temperature converter that converts between Celsius, Fahrenheit, and Kelvin using JavaScript.
-  - keywords:
+  title: Build a Temperature Converter with JavaScript
+  description: Learn how to create an interactive temperature converter that converts between Celsius, Fahrenheit, and Kelvin using JavaScript.
+  keywords:
     - 'temperature converter'
     - 'javascript project'
     - 'unit conversion'
     - 'html and css'
-roadmapIds:  
+roadmapIds:
   - 'frontend'
 ---
 

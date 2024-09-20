@@ -1,10 +1,8 @@
 import { Badge } from '../Badge.tsx';
-import type {
-  ProjectDifficultyType,
-  ProjectFileType,
-} from '../../lib/project.ts';
+import type { ProjectFileType } from '../../lib/project.ts';
 import { Users } from 'lucide-react';
 import { formatCommaNumber } from '../../lib/number.ts';
+import type { ProjectDifficultyType } from '../../content/project.ts';
 
 type ProjectCardProps = {
   project: ProjectFileType;
@@ -20,7 +18,7 @@ const badgeVariants: Record<ProjectDifficultyType, string> = {
 export function ProjectCard(props: ProjectCardProps) {
   const { project, userCount = 0 } = props;
 
-  const { frontmatter, id } = project;
+  const { data: frontmatter, slug: id } = project;
 
   return (
     <a

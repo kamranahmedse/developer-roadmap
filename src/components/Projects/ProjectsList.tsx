@@ -2,16 +2,16 @@ import { ProjectCard } from './ProjectCard.tsx';
 import { HeartHandshake, Trash2 } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
 import { useMemo, useState } from 'react';
-import {
-  projectDifficulties,
-  type ProjectDifficultyType,
-  type ProjectFileType,
-} from '../../lib/project.ts';
+import { type ProjectFileType } from '../../lib/project.ts';
 import {
   deleteUrlParam,
   getUrlParams,
   setUrlParams,
 } from '../../lib/browser.ts';
+import {
+  projectDifficulties,
+  type ProjectDifficultyType,
+} from '../../content/project.ts';
 
 type DifficultyButtonProps = {
   difficulty: ProjectDifficultyType;
@@ -56,7 +56,7 @@ export function ProjectsList(props: ProjectsListProps) {
       const result = new Map<ProjectDifficultyType, ProjectFileType[]>();
 
       for (const project of projects) {
-        const difficulty = project.frontmatter.difficulty;
+        const difficulty = project.data.difficulty;
 
         if (!result.has(difficulty)) {
           result.set(difficulty, []);
@@ -78,6 +78,7 @@ export function ProjectsList(props: ProjectsListProps) {
         <div className="flex flex-wrap gap-1">
           {projectDifficulties.map((projectDifficulty) => (
             <DifficultyButton
+              key={projectDifficulty}
               onClick={() => {
                 setDifficulty(projectDifficulty);
                 setUrlParams({ difficulty: projectDifficulty });
@@ -119,18 +120,24 @@ export function ProjectsList(props: ProjectsListProps) {
 
         {matchingProjects
           .sort((project) => {
-            return project.frontmatter.difficulty === 'beginner'
+            return project.data.difficulty === 'beginner'
               ? -1
-              : project.frontmatter.difficulty === 'intermediate'
+              : project.data.difficulty === 'intermediate'
                 ? 0
                 : 1;
           })
           .sort((a, b) => {
-            return a.frontmatter.sort - b.frontmatter.sort;
+            return a.data.sort - b.data.sort;
           })
           .map((matchingProject) => {
-            const count = userCounts[matchingProject?.id] || 0;
-            return <ProjectCard project={matchingProject} userCount={count} />;
+            const count = userCounts[matchingProject?.slug] || 0;
+            return (
+              <ProjectCard
+                key={matchingProject.slug}
+                project={matchingProject}
+                userCount={count}
+              />
+            );
           })}
       </div>
     </div>

@@ -12,7 +12,7 @@ const allRoadmapIds = Object.keys(roadmapProjects);
 const allRoadmaps = await getRoadmapsByIds(allRoadmapIds);
 const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
   const projects = (roadmapProjects[roadmap.id] || []).sort((a, b) => {
-    return a.frontmatter.sort - b.frontmatter.sort;
+    return a.data.sort - b.data.sort;
   });
 
   return {
@@ -25,7 +25,7 @@ const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
 const projectIds = allRoadmapIds
   .map((id) => roadmapProjects[id])
   .flat()
-  .map((project) => project.id);
+  .map((project) => project.slug);
 const projectApiClient = projectApi(Astro);
 const { response: userCounts } =
   await projectApiClient.listProjectsUserCount(projectIds);

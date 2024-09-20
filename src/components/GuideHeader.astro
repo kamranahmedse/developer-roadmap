@@ -7,7 +7,7 @@ export interface Props {
 }
 
 const { guide } = Astro.props;
-const { frontmatter, author } = guide;
+const { data: frontmatter, author } = guide;
 
 return undefined;
 ---
@@ -18,18 +18,18 @@ return undefined;
       class='hidden items-center justify-start text-gray-400 sm:flex sm:justify-center'
     >
       {
-        author?.frontmatter && (
+        author?.data && (
           <>
             <a
-              href={`/authors/${author.id}`}
+              href={`/authors/${author.slug}`}
               class='inline-flex items-center font-medium hover:text-gray-600 hover:underline'
             >
               <img
-                alt={author.frontmatter.name}
-                src={author.frontmatter.imageUrl}
+                alt={author.data.name}
+                src={author.data.imageUrl}
                 class='mr-2 inline h-5 w-5 rounded-full'
               />
-              {author.frontmatter.name}
+              {author.data.name}
             </a>
             <span class='mx-1.5'>&middot;</span>
           </>
@@ -39,7 +39,7 @@ return undefined;
       <span class='mx-1.5'>&middot;</span>
       <a
         class='text-blue-400 hover:text-blue-500 hover:underline'
-        href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/guides/${guide.id}.md`}
+        href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/guides/${guide.slug}.md`}
         target='_blank'>Improve this Guide</a
       >
     </p>

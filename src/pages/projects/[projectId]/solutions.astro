@@ -1,10 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import {
-  getAllProjects,
-  getProjectById,
-  type ProjectFrontmatter,
-} from '../../../lib/project';
+import { getAllProjects, getProjectById } from '../../../lib/project';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
 import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
@@ -13,7 +9,7 @@ export async function getStaticPaths() {
   const projects = await getAllProjects();
 
   return projects
-    .map((project) => project.id)
+    .map((project) => project.slug)
     .map((projectId) => ({
       params: { projectId },
     }));
@@ -26,7 +22,7 @@ interface Params extends Record<string, string | undefined> {
 const { projectId } = Astro.params as Params;
 
 const project = await getProjectById(projectId);
-const projectData = project.frontmatter as ProjectFrontmatter;
+const projectData = project.data;
 
 let jsonLdSchema: any[] = [];
 

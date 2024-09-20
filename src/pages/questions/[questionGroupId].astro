@@ -34,7 +34,7 @@ const { data: frontmatter } = questionGroup;
   briefTitle={frontmatter.briefTitle}
   description={frontmatter.seo.description}
   keywords={frontmatter.seo.keywords}
-  permalink={`/questions/${questionGroup.id}`}
+  permalink={`/questions/${questionGroup.slug}`}
 >
   {
     !frontmatter.authorId && (

@@ -34,16 +34,16 @@ export async function GET() {
         group: 'Best Practices',
       })),
       ...questionGroups.map((questionGroup) => ({
-        id: questionGroup.id,
-        url: `/questions/${questionGroup.id}`,
+        id: questionGroup.slug,
+        url: `/questions/${questionGroup.slug}`,
         title: questionGroup.data.briefTitle,
         group: 'Questions',
       })),
       ...guides.map((guide) => ({
-        id: guide.id,
+        id: guide.slug,
         url: guide.data.excludedBySlug
           ? guide.data.excludedBySlug
-          : `/guides/${guide.id}`,
+          : `/guides/${guide.slug}`,
         title: guide.data.title,
         description: guide.data.description,
         authorId: guide.data.authorId,
@@ -56,10 +56,10 @@ export async function GET() {
         group: 'Videos',
       })),
       ...projects.map((project) => ({
-        id: project.id,
-        url: `/projects/${project.id}`,
-        title: project.frontmatter.title,
-        description: project.frontmatter.description,
+        id: project.slug,
+        url: `/projects/${project.slug}`,
+        title: project.data.title,
+        description: project.data.description,
         group: 'Projects',
       })),
     ]),

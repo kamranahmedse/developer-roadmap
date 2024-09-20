@@ -93,7 +93,7 @@ const videos = await getAllVideos();
       allowBookmark={false}
       featuredItems={questionGroups.map((questionGroup) => ({
         text: questionGroup.data.briefTitle,
-        url: `/questions/${questionGroup.id}`,
+        url: `/questions/${questionGroup.slug}`,
         isNew: questionGroup.data.isNew,
       }))}
     />

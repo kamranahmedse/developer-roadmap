@@ -1,6 +1,5 @@
 ---
 import type { VideoFileType } from '../lib/video';
-import YouTubeAlert from './YouTubeAlert.astro';
 
 export interface Props {
   video: VideoFileType;
@@ -16,15 +15,15 @@ const { frontmatter, author } = video;
       class='hidden items-center justify-start text-gray-400 sm:flex sm:justify-center'
     >
       <a
-        href={`/authors/${author.id}`}
+        href={`/authors/${author.slug}`}
         class='inline-flex items-center font-medium hover:text-gray-600 hover:underline'
       >
         <img
-          alt={author.frontmatter.name}
-          src={author.frontmatter.imageUrl}
+          alt={author.data.name}
+          src={author.data.imageUrl}
           class='mr-2 inline h-5 w-5 rounded-full'
         />
-        {author.frontmatter.name}
+        {author.data.name}
       </a>
       <span class='mx-1.5'>&middot;</span>
       <span class='capitalize'>Illustrated Video</span>
