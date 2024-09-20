@@ -1,16 +1,12 @@
 # JavaScript
 
-JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Apart from being used on the frontend in browsers, there is Node.js which is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+JavaScript is a high-level, interpreted programming language primarily used for client-side web development. It enables interactive and dynamic content on web pages, allowing developers to create responsive user interfaces and complex web applications. JavaScript is a core technology of the World Wide Web, alongside HTML and CSS. It supports object-oriented, imperative, and functional programming paradigms. With the advent of Node.js, JavaScript has also become popular for server-side development. The language features dynamic typing, first-class functions, and prototype-based object-orientation. JavaScript's ubiquity in web browsers, extensive ecosystem of libraries and frameworks (like React, Angular, and Vue.js), and its versatility across front-end and back-end development have made it one of the most widely used programming languages in modern software development.
 
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
-- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
-- [@video@Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
-- [@video@Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
-- [@article@W3Schools – Node.js Tutorial](https://www.w3schools.com/nodejs/)
 - [@article@What is NPM?](https://www.w3schools.com/nodejs/nodejs_npm.asp)
-- [@article@Official Documentation](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

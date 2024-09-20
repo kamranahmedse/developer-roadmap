@@ -5,9 +5,6 @@ Google Cloud is Google's cloud computing service offering, providing over 150 pr
 Visit the following resources to learn more:
 
 - [@official@Google Cloud Website](https://cloud.google.com/)
-- [@official@Official Documentation](https://cloud.google.com/docs)
-- [@official@Google Cloud Get Started Guide](https://cloud.google.com/docs/get-started/)
-- [@course@Coursera Complete Course for Google Cloud](https://www.coursera.org/professional-certificates/cloud-engineering-gcp#courses)
-- [@video@Google Cloud by Edureka on You-Tube](https://www.youtube.com/watch?v=IUU6OR8yHCc)
+- [@video@Google Cloud Platform Full Course 2023](https://www.youtube.com/watch?v=fZOz13joN0o)
 - [@article@5 Tips to Become a Google Cloud Certified Professional Architect](https://thenewstack.io/5-tips-to-become-a-google-cloud-certified-professional-architect/)
 - [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)
