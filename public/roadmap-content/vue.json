@@ -346,8 +346,14 @@
   },
   "m9pQ3daR3KiwRATcQysHA": {
     "title": "v-slot",
-    "description": "",
-    "links": []
+    "description": "The v-slot directive to define slots in components, allowing you to pass and render content dynamically inside a component.\n\nFor named slots, you use v-slot with a specific slot name. This lets you pass different content to different parts of a component:\n\n    <template>\n      <custom-component>\n        <template v-slot:header>\n          <h1>Header Content</h1>\n        </template>\n        <template v-slot:footer>\n          <p>Footer Content</p>\n        </template>\n      </custom-component>\n    </template>\n    \n\nThe shorthand for `v-slot` is `#`, for example `v-slot:header` becomes `#header`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-slot documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-slot",
+        "type": "article"
+      }
+    ]
   },
   "5k9CrbzhNy9iiS6ez2UE6": {
     "title": "v-once",
@@ -373,8 +379,14 @@
   },
   "RrSekP8Ub01coegMwLP6a": {
     "title": "v-cloak",
-    "description": "",
-    "links": []
+    "description": "The v-cloak directive is used to prevent the uncompiled Vue template from being visible while the Vue instance is still loading. It temporarily hides the content until Vue has finished compiling the template\n\nThe v-cloak directive remains until the component instance is mounted.\n\n    <div v-cloak>\n      {{ message }}\n    </div>\n    \n\nCombined with CSS, you can hide elements with v-cloak until they are ready.\n\n    [v-cloak] {\n      display: none;\n    }\n    \n\nThe `<div>` will not be visible until the compilation is done.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "v-cloak documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-cloak",
+        "type": "article"
+      }
+    ]
   },
   "RRPhAxIqvAcjZIcLe_N8-": {
     "title": "Optimizing Renders",
