@@ -5,3 +5,4 @@ WEP (Wired Equivalent Privacy) is an outdated and insecure wireless encryption s
 Visit the following resources to learn more:
 
 - [@article@What Is Wi-Fi Security? WEP, WPA, WPA2 & WPA3 Differences](https://nilesecure.com/network-security/what-is-wi-fi-security-wep-wpa-wpa2-wpa3-differences)
+- [@video@WiFi Security: What is WEP, WPA, and WPA2](https://www.youtube.com/watch?v=jErjdGfbgoE)

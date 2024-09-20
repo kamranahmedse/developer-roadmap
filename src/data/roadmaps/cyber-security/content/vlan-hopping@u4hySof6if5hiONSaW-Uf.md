@@ -5,3 +5,4 @@ VLAN hopping is a network attack where an attacker exploits vulnerabilities in t
 Visit the following resources to learn more:
 
 - [@article@What is VLAN Hopping?](https://www.packetlabs.net/posts/what-is-vlan-hopping/)
+- [@video@VLAN Hopping](https://www.youtube.com/watch?v=pDumMKDK4Wc)
