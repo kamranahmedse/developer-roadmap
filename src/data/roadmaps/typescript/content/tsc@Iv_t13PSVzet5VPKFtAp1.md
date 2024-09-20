@@ -20,5 +20,5 @@ You can run `tsc --help` to see a list of all the available options and flags.
 
 Learn more from the following links:
 
-- [@article@tsc CLI Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html#using-the-cli)
+- [@official@tsc CLI Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html#using-the-cli)
 - [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

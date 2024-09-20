@@ -58,11 +58,6 @@
         "title": "Python for Beginners: Data Types",
         "url": "https://thenewstack.io/python-for-beginners-data-types/",
         "type": "article"
-      },
-      {
-        "title": "Python Variables - Python Tutorial for Beginners with Examples | Mosh",
-        "url": "https://www.youtube.com/watch?v=cQT33yu9pY8",
-        "type": "video"
       }
     ]
   },
@@ -100,6 +95,17 @@
         "title": "Type Conversion and Casting",
         "url": "https://www.programiz.com/python-programming/type-conversion-and-casting",
         "type": "article"
+      }
+    ]
+  },
+  "fNTb9y3zs1HPYclAmu_Wv": {
+    "title": "Exceptions",
+    "description": "Python exceptions are events that occur during the execution of a program and disrupt the normal flow of the program's instructions. When an exception is raised, it indicates that an error has occurred. Python provides a way to handle these exceptions using try-except blocks, allowing developers to manage errors gracefully and ensure the program can continue or exit smoothly.",
+    "links": [
+      {
+        "title": "Exceptions Documentation",
+        "url": "https://docs.python.org/3/tutorial/errors.html#exceptions",
+        "type": "article"
       },
       {
         "title": "Python Exceptions: An Introduction",
@@ -119,17 +125,6 @@
       {
         "title": "Python Try Except",
         "url": "https://www.w3schools.com/python/python_try_except.asp",
-        "type": "article"
-      }
-    ]
-  },
-  "fNTb9y3zs1HPYclAmu_Wv": {
-    "title": "Exceptions",
-    "description": "Python exceptions are events that occur during the execution of a program and disrupt the normal flow of the program's instructions. When an exception is raised, it indicates that an error has occurred. Python provides a way to handle these exceptions using try-except blocks, allowing developers to manage errors gracefully and ensure the program can continue or exit smoothly.",
-    "links": [
-      {
-        "title": "Exceptions Documentation",
-        "url": "https://docs.python.org/3/tutorial/errors.html#exceptions",
         "type": "article"
       },
       {
@@ -232,6 +227,16 @@
         "title": "Loops in Python",
         "url": "https://www.geeksforgeeks.org/loops-in-python/",
         "type": "article"
+      },
+      {
+        "title": "Python \"while\" Loops (Indefinite Iteration)",
+        "url": "https://realpython.com/python-while-loop/",
+        "type": "article"
+      },
+      {
+        "title": "Python \"for\" Loops (Definite Iteration)",
+        "url": "https://realpython.com/python-for-loop/#the-guts-of-the-python-for-loop",
+        "type": "article"
       }
     ]
   },
@@ -329,11 +334,6 @@
       {
         "title": "Learn DS & Algorithms",
         "url": "https://www.programiz.com/dsa",
-        "type": "article"
-      },
-      {
-        "title": "DSA Course by Google",
-        "url": "https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513",
         "type": "article"
       },
       {
@@ -1212,10 +1212,16 @@
       }
     ]
   },
-  "black@DS6nuAUhUYcqiJDmQisKM.md": {
+  "DS6nuAUhUYcqiJDmQisKM": {
     "title": "black",
-    "description": "",
-    "links": []
+    "description": "black is a code formatter for Python. It is a tool that automatically formats Python code to adhere to the PEP 8 style guide. It is a great tool to use in your Python projects to ensure that your code is formatted consistently and correctly.",
+    "links": [
+      {
+        "title": "black documentation",
+        "url": "https://black.readthedocs.io/en/stable/",
+        "type": "article"
+      }
+    ]
   },
   "tsh_vbhzKz1-H9Vh69tsK": {
     "title": "yapf",

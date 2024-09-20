@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@DATEADD](https://www.mssqltips.com/sqlservertutorial/9380/sql-dateadd-function/)
+- [@video@DATEADD Function](https://www.youtube.com/watch?v=DYCWOzzOycU)

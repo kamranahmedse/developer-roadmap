@@ -1,31 +1,8 @@
 # WAN
 
-A **Wide Area Network (WAN)** is a telecommunication network that extends over a large geographical area, such as interconnecting multiple local area networks (LANs). WANs commonly use leased lines, circuit switching, or packet switching to transmit data between LANs, allowing them to share resources and communicate with one another. A WAN can be privately owned and managed, or leased from telecommunication service providers.
+A Wide Area Network (WAN) is a telecommunications network that extends over a large geographical area, connecting multiple smaller networks like LANs across cities, countries, or continents. WANs use technologies such as leased lines, satellites, cellular networks, or the internet to facilitate long-distance communication. They enable organizations to share data and resources across dispersed locations, supporting remote offices and global operations. WANs typically involve slower transmission speeds compared to LANs due to longer distances and varied connection types. Key considerations for WANs include bandwidth management, security protocols like VPNs, and optimizing performance across diverse network conditions.
 
-## Characteristics of WANs
+Learn more from the following resources:
 
-- **Large geographic coverage**: WANs can span across cities, states, and even countries, making them suitable for businesses with multiple locations requiring connectivity.
-
-- **Communication technologies**: WANs rely on multiple technologies for communication, such as fiber optic cables, leased line connections, satellite links, and even cellular networks.
-
-- **Data transmission rates**: WANs generally offer lower data transfer rates as compared to LANs, primarily due to the longer distances and increased complexity.
-
-- **Higher latency**: WANs can suffer from higher latency (delay in data transmission) due to the physical distance involved and routing of traffic through various devices and service providers.
-
-- **Security concerns**: Given the broad scope and involvement of third-party service providers, securing WAN connections is crucial to protect sensitive data transmission and maintain privacy.
-
-## Common WAN Technologies
-
-Here are a few widely-used WAN technologies:
-
-- **Leased Line**: A dedicated, point-to-point communication link provided by telecommunication service providers. It offers a fixed bandwidth and guaranteed quality of service (QoS), making it suitable for businesses requiring high-speed and consistent connectivity.
-
-- **Multiprotocol Label Switching (MPLS)**: A protocol for high-speed data transfer between network nodes. MPLS enables traffic engineering, Quality of Service (QoS), and efficient use of bandwidth by labeling data packets and directing them over a predetermined path.
-
-- **Virtual Private Network (VPN)**: A VPN works by creating an encrypted tunnel over the internet between the two communicating sites, effectively creating a private and secure connection over a public network.
-
-- **Software-Defined WAN (SD-WAN)**: A technology that simplifies the management and operation of WANs by decoupling the networking hardware from its control mechanism. It allows businesses to use a combination of transport resources, optimize network traffic, and improve application performance.
-
-## Conclusion
-
-Understanding the concept of WAN is essential in the context of cyber security, as it forms the backbone of connectivity between remote LANs. Ensuring security measures are taken to protect data transmission over WANs is crucial to maintaining the overall protection of businesses and their sensitive information.
+- [@article@What is a WAN?](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-wan/)
+- [@video@WAN...it's not the internet!](https://www.youtube.com/watch?v=xPi4uZu4uF0)

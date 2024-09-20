@@ -1,7 +1,7 @@
 {
   "3xp2fogAVmwXQhdzhZDWR": {
     "title": "Introduction",
-    "description": "Data Analysis plays a crucial role in today's data-centric world. It involves the practice of inspecting, cleansing, transforming, and modeling data to extract valuable insights for decision-making. A **Data Analyst** is a professional primarily tasked with collecting, processing, and performing statistical analysis on large datasets. They discover how data can be used to answer questions and solve problems. With the rapid expansion of data in modern firms, the role of a data analyst has been evolving greatly, making them a significant asset in business strategy and decision-making processes.\n\nLearn more from the following resources:",
+    "description": "Data Analysis plays a crucial role in today's data-centric world. It involves the practice of inspecting, cleansing, transforming, and modeling data to extract valuable insights for decision-making. A **Data Analyst** is a professional primarily tasked with collecting, processing, and performing statistical analysis on large datasets. They discover how data can be used to answer questions and solve problems. With the rapid expansion of data in modern firms, the role of a data analyst has been evolving greatly, making them a significant asset in business strategy and decision-making processes.",
     "links": []
   },
   "yCnn-NfSxIybUQ2iTuUGq": {
@@ -11,8 +11,29 @@
   },
   "Lsapbmg-eMIYJAHpV97nO": {
     "title": "Types of Data Analytics",
-    "description": "Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.\n\nData Analysts, as ambassadors of this domain, employ these types, which are namely Descriptive Analytics, Diagnostic Analytics, Predictive Analytics and Prescriptive Analytics, to answer various questions — What happened? Why did it happen? What could happen? And what should we do next? Understanding these types gives data analysts the power to transform raw datasets into strategic insights.",
-    "links": []
+    "description": "Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.\n\nData Analysts, as ambassadors of this domain, employ these types, to answer various questions:\n\n*   Descriptive Analytics _(what happened in the past?)_\n*   Diagnostic Analytics _(why did it happened in the past?)_\n*   Predictive Analytics _(what will happen in the future?)_\n*   Prescriptive Analytics _(how can we make it happen?)_\n\nUnderstanding these types gives data analysts the power to transform raw datasets into strategic insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Analytics and its type",
+        "url": "https://www.geeksforgeeks.org/data-analytics-and-its-type/",
+        "type": "article"
+      },
+      {
+        "title": "The 4 Types of Data Analysis: Ultimate Guide",
+        "url": "https://careerfoundry.com/en/blog/data-analytics/different-types-of-data-analysis/",
+        "type": "article"
+      },
+      {
+        "title": "Descriptive vs Diagnostic vs Predictive vs Prescriptive Analytics: What's the Difference?",
+        "url": "https://www.youtube.com/watch?v=QoEpC7jUb9k",
+        "type": "video"
+      },
+      {
+        "title": "Types of Data Analytics",
+        "url": "https://www.youtube.com/watch?v=lsZnSgxMwBA",
+        "type": "video"
+      }
+    ]
   },
   "hWDh0ooidbqZb000ENVok": {
     "title": "Descriptive Analytics",
@@ -63,7 +84,7 @@
     ]
   },
   "DFMR-0MbmVCCrJu0I9JWG": {
-    "title": "Prespective Analytics",
+    "title": "Prescriptive Analytics",
     "description": "Prescriptive analytics, a crucial type of data analytics, is essential for making data-driven decisions in business and organizational contexts. As a data analyst, the goal of prescriptive analytics is to recommend various actions using predictions on the basis of known parameters to help decision makers understand likely outcomes. Prescriptive analytics employs a blend of techniques and tools such as algorithms, machine learning, computational modelling procedures, and decision-tree structures to enable automated decision making. Therefore, prescriptive analytics not only anticipates what will happen and when it will happen, but also explains why it will happen, contributing to the significance of a data analyst’s role in an organization.\n\nLearn more from the following resources:",
     "links": [
       {
@@ -136,12 +157,12 @@
     "description": "The visualization of data is an essential skill in the toolkit of every data analyst. This practice is about transforming complex raw data into a graphical format that allows for an easier understanding of large data sets, trends, outliers, and important patterns. Whether pie charts, line graphs, bar graphs, or heat maps, data visualization techniques not only streamline data analysis, but also facilitate a more effective communication of the findings to others. This key concept underscores the importance of presenting data in a digestible and visually appealing manner to drive data-informed decision making in an organization.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Data visualisation beginner's guide",
+        "title": "Data visualization beginner's guide",
         "url": "https://www.tableau.com/en-gb/learn/articles/data-visualization",
         "type": "article"
       },
       {
-        "title": "Data Visualisation in 2024",
+        "title": "Data Visualization in 2024",
         "url": "https://www.youtube.com/watch?v=loYuxWSsLNc",
         "type": "video"
       }
@@ -184,6 +205,11 @@
     "description": "Excel is a powerful tool utilized by data analysts worldwide to store, manipulate, and analyze data. It offers a vast array of features such as pivot tables, graphs and a powerful suite of formulas and functions to help sift through large sets of data. A data analyst uses Excel to perform a wide range of tasks, from simple data entry and cleaning, to more complex statistical analysis and predictive modeling. Proficiency in Excel is often a key requirement for a data analyst, as its versatility and ubiquity make it an indispensable tool in the field of data analysis.",
     "links": [
       {
+        "title": "Microsoft Excel Course",
+        "url": "https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb",
+        "type": "course"
+      },
+      {
         "title": "W3Schools - Excel",
         "url": "https://www.w3schools.com/excel/index.php",
         "type": "article"
@@ -213,6 +239,11 @@
       {
         "title": "DATEDIF function",
         "url": "https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c",
+        "type": "article"
+      },
+      {
+        "title": "How to use DATEDIF in Excel",
+        "url": "https://www.excel-easy.com/examples/datedif.html",
         "type": "article"
       }
     ]
@@ -403,15 +434,16 @@
       }
     ]
   },
-  "i4VCwFm-wc9cqE73i-BIb": {
-    "title": "Learn SQL",
-    "description": "Structured Query Language, or SQL, is an essential tool for every data analyst. As a domain-specific language used in programming and designed for managing data held in relational database management systems, SQL allows analysts to manipulate and analyse large volumes of data efficiently. Understanding SQL allows a data analyst to extract insights from data stored in databases, conduct complex queries, and create elaborate data reports. SQL is recognized for its effectiveness in data manipulation and its compatibility with other coding languages, making it a fundamental competency in the data analytics field.",
-    "links": []
-  },
   "i2uEcaO4bJhcZ5ayRs2CQ": {
     "title": "Learn a Programming Lang.",
-    "description": "We have two main programming languages when it comes to data analysis: Python and R. Both have extensive libraries to help with decision-making processes in various situations, assisting in manipulating, modeling, and visualizing data. Python is a versatile language, used not only for data analysis but also for web development, automation, artificial intelligence, and more. R, on the other hand, was specifically created for statistical analysis and data visualization, making it an excellent choice for statisticians and researchers. It is known for its advanced visualization capabilities, allowing the creation of highly customizable and sophisticated graphs and plots.\n\nWith potential doubts about which language to choose to advance in a data career, it is ideal to consider your goals and/or the current market needs and choose which language to learn. If you are more interested in a career that combines data analysis with software development, automation, or artificial intelligence, Python may be the best choice. If your focus is purely on statistics and data visualization, R might be more suitable.",
-    "links": []
+    "description": "We have two main programming languages when it comes to data analysis: Python and R. Both have extensive libraries to help with decision-making processes in various situations, assisting in manipulating, modeling, and visualizing data. Python is a versatile language, used not only for data analysis but also for web development, automation, artificial intelligence, and more. R, on the other hand, was specifically created for statistical analysis and data visualization, making it an excellent choice for statisticians and researchers. It is known for its advanced visualization capabilities, allowing the creation of highly customizable and sophisticated graphs and plots.\n\nWith potential doubts about which language to choose to advance in a data career, it is ideal to consider your goals and/or the current market needs and choose which language to learn. If you are more interested in a career that combines data analysis with software development, automation, or artificial intelligence, Python may be the best choice. If your focus is purely on statistics and data visualization, R might be more suitable.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Python Data Science Handbook",
+        "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+        "type": "article"
+      }
+    ]
   },
   "g_EBQizZsIe-vn8ir6FTv": {
     "title": "R",
@@ -491,6 +523,11 @@
     "title": "Ggplot2",
     "description": "When it comes to data visualization in R programming, ggplot2 stands tall as one of the primary tools for data analysts. This data visualization library, which forms part of the tidyverse suite of packages, facilitates the creation of complex and sophisticated visual narratives. With its grammar of graphics philosophy, ggplot2 enables analysts to build graphs and charts layer by layer, thereby offering detailed control over graphical features and design. Its versatility in creating tailored and aesthetically pleasing graphics is a vital asset for any data analyst tackling exploratory data analysis, reporting, or dashboard building.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "ggplot2 website",
+        "url": "https://ggplot2.tidyverse.org/",
+        "type": "article"
+      },
       {
         "title": "Make beautiful graphs in R",
         "url": "https://www.youtube.com/watch?v=qnw1xDnt_Ec",
@@ -620,6 +657,11 @@
     "description": "Data Transformation, also known as Data Wrangling, is an essential part of a Data Analyst's role. This process involves the conversion of data from a raw format into another format to make it more appropriate and valuable for a variety of downstream purposes such as analytics. Data Analysts transform data to make the data more suitable for analysis, ensure accuracy, and to improve data quality. The right transformation techniques can give the data a structure, multiply its value, and enhance the accuracy of the analytics performed by serving meaningful results.",
     "links": [
       {
+        "title": "What is data transformation?",
+        "url": "https://www.qlik.com/us/data-management/data-transformation",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Data Analysis",
         "url": "https://app.daily.dev/tags/data-analysis?ref=roadmapsh",
         "type": "article"
@@ -679,9 +721,14 @@
     "description": "Dispersion in descriptive analysis, specifically for a data analyst, offers a crucial way to understand the variability or spread in a set of data. Descriptive analysis focus on describing and summarizing data to find patterns, relationships, or trends. Distinct measures of dispersion such as range, variance, standard deviation, and interquartile range gives data analysts insight into how spread out data points are, and how reliable any patterns detected may be. This understanding of dispersion helps data analysts in identifying outliers, drawing meaningful conclusions, and making informed predictions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Standard Deviation and Variance",
-        "url": "https://www.mathsisfun.com/data/standard-deviation.html",
+        "title": "What is dispersion?",
+        "url": "https://www.investopedia.com/terms/d/dispersion.asp",
         "type": "article"
+      },
+      {
+        "title": "Statistics 101 - Measures of Dispersion",
+        "url": "https://www.youtube.com/watch?v=goXdWMZxlqM",
+        "type": "video"
       }
     ]
   },
@@ -751,8 +798,19 @@
   },
   "yn1sstYMO9du3rpfQqNs9": {
     "title": "Average",
-    "description": "When focusing on data analysis, understanding key statistical concepts is crucial. Amongst these, central tendency is a foundational element. Central Tendency refers to the measure that determines the center of a distribution. The average is a commonly used statistical tool by which data analysts discern trends and patterns. As one of the most recognized forms of central tendency, figuring out the \"average\" involves summing all values in a data set and dividing by the number of values. This provides analysts with a 'typical' value, around which the remaining data tends to cluster, facilitating better decision-making based on existing data.",
-    "links": []
+    "description": "When focusing on data analysis, understanding key statistical concepts is crucial. Amongst these, central tendency is a foundational element. Central Tendency refers to the measure that determines the center of a distribution. The average is a commonly used statistical tool by which data analysts discern trends and patterns. As one of the most recognized forms of central tendency, figuring out the \"average\" involves summing all values in a data set and dividing by the number of values. This provides analysts with a 'typical' value, around which the remaining data tends to cluster, facilitating better decision-making based on existing data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to calculate the average",
+        "url": "https://support.microsoft.com/en-gb/office/calculate-the-average-of-a-group-of-numbers-e158ef61-421c-4839-8290-34d7b1e68283#:~:text=Average%20This%20is%20the%20arithmetic,by%206%2C%20which%20is%205.",
+        "type": "article"
+      },
+      {
+        "title": "Average Formula",
+        "url": "https://www.cuemath.com/average-formula/",
+        "type": "article"
+      }
+    ]
   },
   "tSxtyJhL5wjU0XJcjsJmm": {
     "title": "Range",
@@ -770,12 +828,12 @@
     "description": "Data analysts heavily rely on statistical concepts to analyze and interpret data, and one such fundamental concept is variance. Variance, an essential measure of dispersion, quantifies the spread of data, providing insight into the level of variability within the dataset. Understanding variance is crucial for data analysts as the reliability of many statistical models depends on the assumption of constant variance across observations. In other words, it helps analysts determine how much data points diverge from the expected value or mean, which can be pivotal in identifying outliers, understanding data distribution, and driving decision-making processes. However, variance can't be interpreted in the original units of measurement due to its squared nature, which is why it is often used in conjunction with its square root, the standard deviation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "What is variance?",
         "url": "https://www.investopedia.com/terms/v/variance.asp",
         "type": "article"
       },
       {
-        "title": "https://www.scribbr.co.uk/stats/variance-meaning/",
+        "title": "How to calculate variance",
         "url": "https://www.scribbr.co.uk/stats/variance-meaning/",
         "type": "article"
       }
@@ -816,6 +874,11 @@
         "title": "Kurtosis: Definition, Types, and Importance",
         "url": "https://www.investopedia.com/terms/k/kurtosis.asp",
         "type": "article"
+      },
+      {
+        "title": "What is Kurtosis?",
+        "url": "https://www.youtube.com/watch?v=AsxEDBhESJg",
+        "type": "video"
       }
     ]
   },
@@ -869,8 +932,19 @@
   },
   "tvDdXwaRPsUSTqJGaLS3P": {
     "title": "Matplotlib",
-    "description": "For a Data Analyst, understanding data and being able to represent it in a visually insightful form is a crucial part of effective decision-making in any organization. Matplotlib, a plotting library for the Python programming language, is an extremely useful tool for this purpose. It presents a versatile framework for generating line plots, scatter plots, histogram, bar charts and much more in a very straightforward manner. This library also allows for comprehensive customizations, offering a high level of control over the look and feel of the graphics it produces, which ultimately enhances the quality of data interpretation and communication.",
-    "links": []
+    "description": "For a Data Analyst, understanding data and being able to represent it in a visually insightful form is a crucial part of effective decision-making in any organization. Matplotlib, a plotting library for the Python programming language, is an extremely useful tool for this purpose. It presents a versatile framework for generating line plots, scatter plots, histogram, bar charts and much more in a very straightforward manner. This library also allows for comprehensive customizations, offering a high level of control over the look and feel of the graphics it produces, which ultimately enhances the quality of data interpretation and communication.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Matplotlib Website",
+        "url": "https://matplotlib.org/",
+        "type": "article"
+      },
+      {
+        "title": "Learn Matplotlib in 6 minutes",
+        "url": "https://www.youtube.com/watch?v=nzKy9GY12yo",
+        "type": "video"
+      }
+    ]
   },
   "-cJb8gEBvdVFf7FlgG3Ud": {
     "title": "Seaborn",
@@ -890,8 +964,19 @@
   },
   "n3M49lgNPn28hm7kzki-a": {
     "title": "ggplot2",
-    "description": "ggplot2 is an important and powerful tool in the data analyst's toolkit, especially for visualizing and understanding complex datasets. Built within the R programming language, it provides a flexible, cohesive environment for creating graphs. The main strength of ggplot2 lies in its ability to produce sophisticated and tailored visualizations. This allows data analysts to communicate data-driven findings in an efficient and effective manner, enabling clear communication to stakeholders about relevant insights and patterns identified within the data.",
-    "links": []
+    "description": "ggplot2 is an important and powerful tool in the data analyst's toolkit, especially for visualizing and understanding complex datasets. Built within the R programming language, it provides a flexible, cohesive environment for creating graphs. The main strength of ggplot2 lies in its ability to produce sophisticated and tailored visualizations. This allows data analysts to communicate data-driven findings in an efficient and effective manner, enabling clear communication to stakeholders about relevant insights and patterns identified within the data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "ggplot2 website",
+        "url": "https://ggplot2.tidyverse.org/",
+        "type": "article"
+      },
+      {
+        "title": "Make beautiful graphs in R",
+        "url": "https://www.youtube.com/watch?v=qnw1xDnt_Ec",
+        "type": "video"
+      }
+    ]
   },
   "EVk1H-QLtTlpG7lVEenDt": {
     "title": "Bar Charts",
@@ -1054,6 +1139,11 @@
       {
         "title": "Correlation",
         "url": "https://www.mathsisfun.com/data/correlation.html",
+        "type": "article"
+      },
+      {
+        "title": "What is correlation analysis?",
+        "url": "https://blog.flexmr.net/correlation-analysis-definition-exploration",
         "type": "article"
       }
     ]
@@ -1233,8 +1323,8 @@
     "description": "K-Nearest Neighbors (KNN) is a simple yet powerful algorithm used in the field of machine learning, which a Data Analyst might employ for tasks such as classification or regression. It works based on the principle of proximity, where the prediction of new instance's category depends upon the category of its nearest neighbors. For a Data Analyst working with complex data sets, it's crucial to understand how the KNN algorithm operates, its applicability, pros, and cons. This will facilitate making well-informed decisions about when to utilize it for the best possible outcome in data analysis.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "https://www.ibm.com/topics/knn#:~:text=The k-nearest neighbors (KNN,used in machine learning today.)",
-        "url": "https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20(KNN,used%20in%20machine%20learning%20today.)",
+        "title": "What is the k-nearest neighbors (KNN) algorithm?",
+        "url": "https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20KNN,used%20in%20machine%20learning%20today.",
         "type": "article"
       },
       {
@@ -1265,12 +1355,12 @@
     "description": "Parallel processing is an efficient form of data processing that allows Data Analysts to deal with larger volumes of data at a faster pace. It is a computational method that allows multiple tasks to be performed concurrently, instead of sequentially, thus, speeding up data processing. Parallel processing proves to be invaluable for Data Analysts, as they are often tasked with analyzing huge data sets and compiling reports in real-time. As the demand for rapid data processing and quick analytics is on the rise, the technique of parallel processing forms a critical element in the versatile toolkit of a Data Analyst.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is parallel processing?",
+        "title": "What Is Parallel Processing?",
         "url": "https://www.spiceworks.com/tech/iot/articles/what-is-parallel-processing/",
         "type": "article"
       },
       {
-        "title": "How parallel computing works?",
+        "title": "How Parallel Computing Works",
         "url": "https://computer.howstuffworks.com/parallel-processing.htm",
         "type": "article"
       }
@@ -1459,7 +1549,18 @@
   },
   "iTmtpXe7dR4XKslgpsk2q": {
     "title": "Data Storage Solutions",
-    "description": "As a business enterprise expands, so does its data. For data analysts, the surge in information means they need efficient and scalable data storage solutions to manage vast volumes of structured and unstructured data, collectively referred to as Big Data. Big Data storage solutions are critical in preserving the integrity of data while also providing quick and easy access to the data when needed. These solutions use software and hardware components to securely store massive amounts of information across numerous servers, allowing data analysts to perform robust data extraction, data processing and complex data analyses. There are several options, from the traditional Relational Database Management Systems (RDBMS) to the more recent NoSQL databases, Hadoop ecosystems, and Cloud storage solutions, each offering unique capabilities and benefits to cater for different big data needs.",
-    "links": []
+    "description": "As a business enterprise expands, so does its data. For data analysts, the surge in information means they need efficient and scalable data storage solutions to manage vast volumes of structured and unstructured data, collectively referred to as Big Data. Big Data storage solutions are critical in preserving the integrity of data while also providing quick and easy access to the data when needed. These solutions use software and hardware components to securely store massive amounts of information across numerous servers, allowing data analysts to perform robust data extraction, data processing and complex data analyses. There are several options, from the traditional Relational Database Management Systems (RDBMS) to the more recent NoSQL databases, Hadoop ecosystems, and Cloud storage solutions, each offering unique capabilities and benefits to cater for different big data needs.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Roadmap",
+        "url": "https://roadmap.sh/postgresql-dba",
+        "type": "article"
+      }
+    ]
   }
 }

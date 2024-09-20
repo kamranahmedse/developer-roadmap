@@ -1,36 +1,11 @@
 # Basics of NAS and SAN
 
-Network Attached Storage (NAS) and Storage Area Network (SAN) technologies play a crucial role in managing data within an organization and serve as the building blocks for a more comprehensive IT infrastructure.
+Network Attached Storage (NAS) and Storage Area Network (SAN) are both technologies used for storing and managing data, but they operate in different ways and serve different purposes. NAS is a dedicated file storage device that connects to a network, allowing multiple users and devices to access files over a shared network. It operates at the file level and uses standard networking protocols such as NFS or SMB/CIFS, making it easy to set up and manage, especially for small to medium-sized businesses. NAS devices are ideal for sharing files, providing backups, and enabling centralized data access across multiple users in a local network.
 
-## Network Attached Storage (NAS)
+SAN, on the other hand, is a high-performance, specialized network designed to provide block-level storage, which means it acts as a direct-attached storage device to servers. SAN uses protocols such as Fibre Channel or iSCSI and is typically employed in large enterprise environments where fast, high-capacity, and low-latency storage is critical for applications like databases and virtualized systems. While NAS focuses on file sharing across a network, SAN is designed for more complex, high-speed data management, enabling servers to access storage as if it were directly connected to them. Both NAS and SAN are vital components of modern data storage infrastructure but are chosen based on the specific performance, scalability, and management needs of the organization.
 
-NAS is a high-capacity storage solution that operates on a data file level, allowing multiple users and clients to access, store, and retrieve data from a centralized location over a network. NAS devices are generally connected to a local area network (LAN) and use various file-sharing protocols, such as NFS (Network File System), SMB/CIFS (Server Message Block/Common Internet File System), or AFP (Apple Filing Protocol).
+Learn more from the following resources:
 
-Some key features of a NAS system include:
-
-- **Ease of Deployment**: NAS devices are simple to install and configure, facilitating quick integration into existing network infrastructures.
-- **Scalability**: NAS systems can be easily expanded to accommodate growing storage needs by adding more drives or units.
-- **Data Protection**: Most NAS devices offer data protection features such as RAID (Redundant Array of Independent Disks), data backup, and data encryption.
-
-## Storage Area Network (SAN)
-
-SAN is a high-performance, dedicated storage network designed to provide block-level data storage for applications and servers. Unlike NAS, which uses file-sharing protocols, SANs utilize block-based protocols such as Fibre Channel (FC) and iSCSI (Internet Small Computer System Interface) to handle storage requests.
-
-SANs offer several advantages in terms of performance, reliability, and scalability:
-
-- **Performance**: SANs can handle low-latency, high-speed data transfers, providing optimal performance for mission-critical applications and large-scale virtualization.
-- **Fault Tolerance**: SANs are designed to provide redundancy and failover capabilities, ensuring continued access to data in the event of hardware failures.
-- **Scalability**: SANs can be easily scaled by adding more disk arrays, switches, or connections to meet growing storage demands.
-
-## NAS vs. SAN: Choosing the Right Solution
-
-When it comes to deciding between NAS and SAN, there are several factors to consider:
-
-- **Cost**: NAS devices are generally more affordable than SANs, making them an attractive option for smaller organizations or environments with limited budgets.
-- **Infrastructure**: NAS solutions can be more easily integrated into existing network infrastructures, whereas SANs may require dedicated hardware, connections, and management tools.
-- **Performance Requirements**: If you need high-performance storage for intensive applications, SANs may be a more appropriate choice than NAS.
-- **Data Management**: While NAS solutions excel in handling file-based storage, SANs provide better support for block-level storage and can deliver improved performance for virtualized environments and database applications.
-
-It's essential to evaluate your organization's specific needs and requirements to determine which storage solution is the most appropriate fit. As you expand your knowledge in cyber security, a solid understanding of both NAS and SAN technologies will prove invaluable in implementing secure and efficient data storage systems.
-
-- [@video@NAS vs SAN](https://youtu.be/3yZDDr0JKVc)
+- [@video@What is a NAS](https://www.youtube.com/watch?v=ZwhT-KI16jo)
+- [@video@What is a Storage Area Network](https://www.youtube.com/watch?v=7eGw4vhyeTA)
+- [@article@NAS vs SAN - What are the differences?](https://www.backblaze.com/blog/whats-the-diff-nas-vs-san/)

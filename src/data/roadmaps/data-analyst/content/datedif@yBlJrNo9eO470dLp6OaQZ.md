@@ -7,3 +7,4 @@ The `DATEDIF` function is an incredibly valuable tool for a Data Analyst in Exce
 Learn more from the following resources:
 
 - [@article@DATEDIF function](https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
+- [@article@How to use DATEDIF in Excel](https://www.excel-easy.com/examples/datedif.html)

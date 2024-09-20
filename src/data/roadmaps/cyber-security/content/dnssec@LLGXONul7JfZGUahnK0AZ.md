@@ -1,24 +1,8 @@
-# DNSSEC
+# DNS Security Extensions (DNSSEC)
 
-DNS Security Extensions (DNSSEC) is a protocol designed to address security vulnerabilities in the Domain Name System (DNS). Here are the key points:
-
-- **Digital Signatures:**
-DNSSEC protects against attacks by digitally signing DNS data. These signatures ensure data validity and prevent tampering.
-
-- **Hierarchical Signing:**
-DNSSEC signs data at every level of the DNS lookup process. For instance, when looking up ‘google.com,’ the root DNS server signs a key for the .COM nameserver, which then signs a key for google.com’s authoritative nameserver.
-
-- **Backwards Compatibility:**
-DNSSEC doesn’t disrupt traditional DNS lookups; it adds security without breaking existing functionality. It complements other security measures like SSL/TLS.
-
-- **Chain of Trust:**
-DNSSEC establishes a parent-child trust chain from the root zone down to specific domains.
-Any compromise in this chain exposes requests to on-path attacks.
+DNS Security Extensions (DNSSEC) is a suite of protocols designed to add a layer of security to the Domain Name System (DNS) by enabling DNS responses to be authenticated. While DNS itself resolves domain names into IP addresses, it does not inherently verify the authenticity of the responses, leaving it vulnerable to attacks like cache poisoning, where an attacker injects malicious data into a DNS resolver’s cache. DNSSEC addresses this by using digital signatures to ensure that the data received is exactly what was intended by the domain owner and has not been tampered with during transit. When a DNS resolver requests information, DNSSEC-enabled servers respond with both the requested data and a corresponding digital signature. The resolver can then verify this signature using a chain of trust, ensuring the integrity and authenticity of the DNS response. By protecting against forged DNS data, DNSSEC plays a critical role in enhancing the security of internet communications.
 
 Learn more from the following resources:
 
-- [@article@DNSSEC: What Is It and Why Is It Important? - ICANN](https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en)
-- [@article@How DNSSEC Works - Cloudflare](https://www.cloudflare.com/dns/dnssec/how-dnssec-works/)
-- [@article@What is DNS security? - Cloudflare](https://www.cloudflare.com/learning/dns/dns-security/)
-- [@video@What is DNSSEC? - IBM](https://www.youtube.com/watch?v=Fk2oejzgSVQ)
-- [@video@(DNS) 101 Miniseries](https://www.youtube.com/playlist?list=PLTk5ZYSbd9MhMmOiPhfRJNW7bhxHo4q-K)
+- [@article@How DNSSEC works](https://www.cloudflare.com/en-gb/dns/dnssec/how-dnssec-works/)
+- [@video@What is DNSSEC?](https://www.youtube.com/watch?v=Fk2oejzgSVQ)

@@ -4,5 +4,5 @@ K-Nearest Neighbors (KNN) is a simple yet powerful algorithm used in the field o
 
 Learn more from the following resources:
 
-- [@article@What is the k-nearest neighbors (KNN) algorithm?](https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20(KNN,used%20in%20machine%20learning%20today.)
+- [@article@What is the k-nearest neighbors (KNN) algorithm?](https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20KNN,used%20in%20machine%20learning%20today.)
 - [@article@Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html)

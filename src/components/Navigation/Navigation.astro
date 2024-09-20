@@ -4,6 +4,8 @@ import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
 import { AccountDropdown } from './AccountDropdown';
 import NewIndicator from './NewIndicator.astro';
+import { AccountStreak } from '../AccountStreak/AccountStreak';
+import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -19,7 +21,7 @@ import NewIndicator from './NewIndicator.astro';
 
       <a
         href='/teams'
-        class='group relative !mr-2 inline text-blue-300 hover:text-white sm:hidden'
+        class='group relative inline text-blue-300 hover:text-white sm:hidden'
       >
         Teams
 
@@ -35,32 +37,15 @@ import NewIndicator from './NewIndicator.astro';
       </a>
 
       <!-- Desktop navigation items -->
-      <div class='hidden space-x-5 sm:flex sm:items-center'>
+      <div class='hidden gap-5 sm:flex sm:items-center'>
         <NavigationDropdown client:load />
         <a href='/get-started' class='text-gray-400 hover:text-white'>
           Start Here
         </a>
-        <a
-          href='/teams'
-          class='group relative text-gray-400 hover:text-white'
-        >
+        <RoadmapDropdownMenu client:load />
+        <a href='/teams' class='group relative text-gray-400 hover:text-white'>
           Teams
         </a>
-        <a href='/ai' class='text-gray-400 hover:text-white'> AI</a>
-        <a
-          href='/community'
-          class='group relative !mr-2 text-blue-300 hover:text-white'
-        >
-          Community
-          <NewIndicator />
-        </a>
-        <!--<button-->
-        <!--  data-command-menu-->
-        <!--  class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1.5 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 md:flex'-->
-        <!--&gt;-->
-        <!--  <Icon icon='search' class='h-3 w-3' />-->
-        <!--  <span class='ml-2'>Search</span>-->
-        <!--</button>-->
       </div>
     </div>
 
@@ -68,7 +53,8 @@ import NewIndicator from './NewIndicator.astro';
       <li data-guest-required class='hidden'>
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
-      <li>
+      <li class='flex items-center gap-2'>
+        <AccountStreak client:only='react' />
         <AccountDropdown client:only='react' />
 
         <a

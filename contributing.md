@@ -1,6 +1,6 @@
 # Contribution
 
-First of all thank you for considering to contribute. Please look at the details below:
+First of all, thank you for considering to contribute. Please look at the details below:
 
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
@@ -25,7 +25,25 @@ For the existing roadmaps, please follow the details listed for the nature of co
 
 ## Adding Projects
 
-If you have a project idea that you think we should add to the roadmap, feel free to open an issue with as much details about the project as possible and the roadmap you think it should be added to.
+If you have a project idea that you think we should add to the roadmap, feel free to open an issue with as many details about the project as possible and the roadmap you think it should be added to.
+
+The detailed format for the issue should be as follows:
+
+```
+## What is this project about?
+
+(Add an introduction to the project.)
+
+## Skills this Project Covers
+
+(Comma separated list of skills, e.g. Programming Knowledge, Database, etc.)
+
+## Requirements
+
+( Detailed list of requirements, i.e. input, output, hints to help build this, etc.)
+```
+
+Have a look at this project to get an idea of [what we are looking for](https://roadmap.sh/projects/github-user-activity).
 
 ## Adding Content
 
@@ -49,7 +67,7 @@ Visit the following resources to learn more:
 - [@type@Description of link](Link)
 ```
 
-`@type@` must be one of the following and describes the type of content you are adding:
+`@type@` must be one of the following and describe the type of content you are adding:
 
 - `@official@`
 - `@opensource@`
@@ -64,11 +82,11 @@ It's important to add a valid type, this will help us categorize the content and
 
 - <p><strong>Please don't use the project for self-promotion!</strong><br />
 
-  We believe this project is a valuable asset to the developer community and it includes numerous helpful resources. We kindly ask you to avoid submitting pull requests for the sole purpose of self-promotion. We appreciate contributions that genuinely add value, such as guides from maintainers of well-known frameworks, and will consider accepting these even if they're self authored. Thank you for your understanding and cooperation!
+  We believe this project is a valuable asset to the developer community, and it includes numerous helpful resources. We kindly ask you to avoid submitting pull requests for the sole purpose of self-promotion. We appreciate contributions that genuinely add value, such as guides from maintainers of well-known frameworks, and will consider accepting these even if they're self authored. Thank you for your understanding and cooperation!
 
 - <p><strong>Adding everything available out there is not the goal!</strong><br />
 
-  The roadmaps represent the skillset most valuable today, i.e., if you were to enter any of the listed fields today, what would you learn? There might be things that are of-course being used today but prioritize the things that are most in demand today, e.g., agreed that lots of people are using angular.js today but you wouldn't want to learn that instead of React, Angular, or Vue. Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included.</p>
+  The roadmaps represent the skillset most valuable today, i.e., if you were to enter any of the listed fields today, what would you learn? There might be things that are of-course being used today, but prioritize the things that are most in demand today, e.g., agree that lots of people are using angular.js today, but you wouldn't want to learn that instead of React, Angular, or Vue. Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included.</p>
 
 - <p><strong>Do not add things you have not evaluated personally!</strong><br />
 
@@ -80,12 +98,12 @@ It's important to add a valid type, this will help us categorize the content and
 
 - <p><strong>Write meaningful commit messages</strong><br >
 
-  Meaningful commit messages help speed up the review process as well as help other contributors in gaining a good overview of the repositories commit history without having to dive into every commit.
+  Meaningful commit messages help speed up the review process as well as help other contributors gain a good overview of the repositories commit history without having to dive into every commit.
 
   </p>
 - <p><strong>Look at the existing issues/pull requests before opening new ones</strong></p>
 
-### Good vs Not So Good Contributions
+### Good vs. Not So Good Contributions
 
 <strong>Good</strong>
 
@@ -99,5 +117,5 @@ It's important to add a valid type, this will help us categorize the content and
   - Adding whitespace that doesn't add to the readability of the content.
   - Rewriting content in a way that doesn't add any value.
   - Non-English content.
-  - PR's that don't follow our style guide, have no description and a default title.
+  - PR's that don't follow our style guide, have no description, and a default title.
   - Links to your own blog articles.

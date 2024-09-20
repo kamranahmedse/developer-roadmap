@@ -2580,39 +2580,6 @@
       "resizing": false
     },
     {
-      "id": "Wc2ybRw43uamEtno0FpDv",
-      "type": "subtopic",
-      "position": {
-        "x": -99.73327447982547,
-        "y": 957.2304293708296
-      },
-      "selected": false,
-      "data": {
-        "label": "Template Ref Vars",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        },
-        "oldId": "nyDry6ZWyEUuTq4pw-lU3"
-      },
-      "zIndex": 999,
-      "width": 225,
-      "height": 49,
-      "style": {
-        "width": 225,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": -99.73327447982547,
-        "y": 957.2304293708296
-      },
-      "dragging": false,
-      "resizing": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
       "id": "VsU6713jeIjAOEZnF6gWx",
       "type": "subtopic",
       "position": {
@@ -3155,38 +3122,6 @@
       "selectable": true,
       "focusable": true,
       "dragging": false
-    },
-    {
-      "id": "mRB-0CRdGwvxPqZbz08yj",
-      "type": "subtopic",
-      "position": {
-        "x": -514.5993272119424,
-        "y": 848.2304293708296
-      },
-      "selected": false,
-      "data": {
-        "label": "@else if",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        }
-      },
-      "zIndex": 999,
-      "width": 166,
-      "height": 49,
-      "style": {
-        "width": 166,
-        "height": 49
-      },
-      "positionAbsolute": {
-        "x": -514.5993272119424,
-        "y": 848.2304293708296
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "resizing": false
     },
     {
       "id": "kGzlumFdZFxTRZ3HnCGFO",

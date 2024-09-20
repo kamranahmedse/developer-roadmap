@@ -1,6 +1,6 @@
 # RabbitMQ
 
-With tens of thousands of users, RabbitMQ is one of the most popular open-source message brokers. RabbitMQ is lightweight and easy to deploy on-premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
+RabbitMQ is an open-source message broker that facilitates the exchange of messages between distributed systems using the Advanced Message Queuing Protocol (AMQP). It enables asynchronous communication by queuing and routing messages between producers and consumers, which helps decouple application components and improve scalability and reliability. RabbitMQ supports features such as message durability, acknowledgments, and flexible routing through exchanges and queues. It is highly configurable, allowing for various messaging patterns, including publish/subscribe, request/reply, and point-to-point communication. RabbitMQ is widely used in enterprise environments for handling high-throughput messaging and integrating heterogeneous systems.
 
 Visit the following resources to learn more:
 

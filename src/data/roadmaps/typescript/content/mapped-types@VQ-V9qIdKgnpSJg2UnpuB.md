@@ -17,4 +17,4 @@ In this example, the `Readonly` mapped type takes an object type `T` and creates
 
 Learn more from the following links:
 
-- [@article@Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html#handbook-content)
+- [@official@Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html#handbook-content)

@@ -1,10 +1,8 @@
-# Imaps
+# IMAP
 
-IMAP (port 143) or IMAPS (port 993) allows you to access your email wherever you are, from any device. When you read an email message using IMAP, you aren't actually downloading or storing it on your computer; instead, you're reading it from the email service. As a result, you can check your email from different devices, anywhere in the world: your phone, a computer, a friend's computer.
-
-IMAP only downloads a message when you click on it, and attachments aren't automatically downloaded. This way you're able to check your messages a lot more quickly than POP.
+IMAP (Internet Message Access Protocol) is a standard email protocol that allows email clients to access messages stored on a mail server. Unlike POP3, IMAP keeps emails on the server, enabling access from multiple devices while maintaining synchronization. It supports folder structures, message flagging, and partial message retrieval, making it efficient for managing large volumes of emails. IMAP allows users to search server-side, reducing bandwidth usage. It's designed for long-term mail storage on the server, ideal for users who need to access their email from various devices or locations. IMAP's synchronization capabilities and server-side management features make it the preferred protocol for most modern email systems, especially in mobile and multi-device environments.
 
 Visit the following resources to learn more:
 
 - [@article@Wikipedia: Internet Message Access Protocol](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)
-- [@video@What is IMAP and How To Use It | Email Tutorial](https://www.youtube.com/watch?v=cfXabGOA2s8)
+- [@video@What are POP3, IMAP, and SMTP?](https://www.youtube.com/watch?v=gLNOVbcyWbI)

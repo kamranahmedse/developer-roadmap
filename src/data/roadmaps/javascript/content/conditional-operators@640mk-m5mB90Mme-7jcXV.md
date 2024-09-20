@@ -6,7 +6,7 @@ The operator can have one of two values based on a condition.
 
 Syntax:
 
-`condition ? val_for_true : val_for_false `
+`condition ? val_for_true : val_for_false`
 
 Visit the following resources to learn more:
 

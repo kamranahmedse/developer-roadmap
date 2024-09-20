@@ -1,0 +1,21 @@
+---
+import { LeaderboardPage } from '../components/Leaderboard/LeaderboardPage';
+import { ErrorPage } from '../components/Leaderboard/ErrorPage';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { leaderboardApi } from '../api/leaderboard';
+
+export const prerender = false;
+
+const leaderboardClient = leaderboardApi(Astro);
+const { response: leaderboardStats, error: leaderboardError } =
+  await leaderboardClient.listLeaderboardStats();
+---
+
+<BaseLayout title='Leaderboard'>
+  {leaderboardError && <ErrorPage error={leaderboardError} />}
+  {
+    leaderboardStats && (
+      <LeaderboardPage stats={leaderboardStats!} client:load />
+    )
+  }
+</BaseLayout>

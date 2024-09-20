@@ -22,8 +22,7 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { cn } from '../../lib/classname';
-import { Ban, FileText, HeartHandshake, X } from 'lucide-react';
+import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -31,8 +30,12 @@ import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
+import { TopicDetailLink } from './TopicDetailLink.tsx';
+import { ResourceListSeparator } from './ResourceListSeparator.tsx';
+import { PaidResourceDisclaimer } from './PaidResourceDisclaimer.tsx';
 
 type TopicDetailProps = {
+  resourceId?: string;
   resourceTitle?: string;
   resourceType?: ResourceType;
 
@@ -40,21 +43,44 @@ type TopicDetailProps = {
   canSubmitContribution: boolean;
 };
 
-const linkTypes: Record<AllowedLinkTypes, string> = {
-  article: 'bg-yellow-300',
-  course: 'bg-green-400',
-  opensource: 'bg-black text-white',
-  'roadmap.sh': 'bg-black text-white',
-  roadmap: 'bg-black text-white',
-  podcast: 'bg-purple-300',
-  video: 'bg-purple-300',
-  website: 'bg-blue-300',
-  official: 'bg-blue-600 text-white',
-  feed: "bg-[#ce3df3] text-white"
+type PaidResourceType = {
+  _id?: string;
+  title: string;
+  type: 'course' | 'book' | 'other';
+  url: string;
+  topicIds: string[];
 };
 
+const paidResourcesCache: Record<string, PaidResourceType[]> = {};
+
+async function fetchRoadmapPaidResources(roadmapId: string) {
+  if (paidResourcesCache[roadmapId]) {
+    return paidResourcesCache[roadmapId];
+  }
+
+  const { response, error } = await httpGet<PaidResourceType[]>(
+    `${import.meta.env.PUBLIC_API_URL}/v1-list-roadmap-paid-resources/${roadmapId}`,
+  );
+
+  if (!response || error) {
+    console.error(error);
+    return [];
+  }
+
+  paidResourcesCache[roadmapId] = response;
+
+  return response;
+}
+
+const PAID_RESOURCE_DISCLAIMER_HIDDEN = 'paid-resource-disclaimer-hidden';
+
 export function TopicDetail(props: TopicDetailProps) {
-  const { canSubmitContribution, isEmbed = false, resourceTitle } = props;
+  const {
+    canSubmitContribution,
+    resourceId: defaultResourceId,
+    isEmbed = false,
+    resourceTitle,
+  } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
   const [contributionUrl, setContributionUrl] = useState('');
@@ -69,6 +95,9 @@ export function TopicDetail(props: TopicDetailProps) {
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
+  const [showPaidResourceDisclaimer, setShowPaidResourceDisclaimer] =
+    useState(false);
+
   const { secret } = getUrlParams() as { secret: string };
   const isGuest = useMemo(() => !isLoggedIn(), []);
   const topicRef = useRef<HTMLDivElement>(null);
@@ -77,6 +106,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicId, setTopicId] = useState('');
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
+  const [paidResources, setPaidResources] = useState<PaidResourceType[]>([]);
 
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
@@ -86,6 +116,20 @@ export function TopicDetail(props: TopicDetailProps) {
   useKeydown('Escape', () => {
     setIsActive(false);
   });
+
+  useEffect(() => {
+    if (resourceType !== 'roadmap' || !defaultResourceId) {
+      return;
+    }
+
+    setShowPaidResourceDisclaimer(
+      localStorage.getItem(PAID_RESOURCE_DISCLAIMER_HIDDEN) !== 'true',
+    );
+
+    fetchRoadmapPaidResources(defaultResourceId).then((resources) => {
+      setPaidResources(resources);
+    });
+  }, [defaultResourceId]);
 
   // Toggle topic is available even if the component UI is not active
   // This is used on the best practice screen where we have the checkboxes
@@ -225,7 +269,13 @@ export function TopicDetail(props: TopicDetailProps) {
               // article at third
               // videos at fourth
               // rest at last
-              const order = ['official', 'opensource', 'article', 'video', 'feed'];
+              const order = [
+                'official',
+                'opensource',
+                'article',
+                'video',
+                'feed',
+              ];
               return order.indexOf(a.type) - order.indexOf(b.type);
             });
 
@@ -279,6 +329,12 @@ export function TopicDetail(props: TopicDetailProps) {
 
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
+
+  const paidResourcesForTopic = paidResources.filter((resource) => {
+    const normalizedTopicId =
+      topicId.indexOf('@') !== -1 ? topicId.split('@')[1] : topicId;
+    return resource.topicIds.includes(normalizedTopicId);
+  });
 
   return (
     <div className={'relative z-[90]'}>
@@ -377,94 +433,120 @@ export function TopicDetail(props: TopicDetailProps) {
               )}
 
               {links.length > 0 && (
-                <ul className="mt-6 space-y-1">
-                  {links.map((link) => {
-                    return (
-                      <li key={link.id}>
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          className="group font-medium text-gray-800 underline underline-offset-1 hover:text-black"
-                          onClick={() => {
-                            // if it is one of our roadmaps, we want to track the click
-                            if (canSubmitContribution) {
-                              const parsedUrl = parseUrl(link.url);
+                <>
+                  <ResourceListSeparator
+                    text="Free Resources"
+                    className="text-green-600"
+                    icon={HeartHandshake}
+                  />
+                  <ul className="ml-3 mt-4 space-y-1">
+                    {links.map((link) => {
+                      return (
+                        <li key={link.id}>
+                          <TopicDetailLink
+                            url={link.url}
+                            type={link.type}
+                            title={link.title}
+                            onClick={() => {
+                              // if it is one of our roadmaps, we want to track the click
+                              if (canSubmitContribution) {
+                                const parsedUrl = parseUrl(link.url);
 
-                              window.fireEvent({
-                                category: 'TopicResourceClick',
-                                action: `Click: ${parsedUrl.hostname}`,
-                                label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
-                              });
-                            }
-                          }}
-                        >
-                          <span
-                            className={cn(
-                              'mr-2 inline-block rounded px-1.5 py-0.5 text-xs uppercase no-underline',
-                              link.type in linkTypes
-                                ? linkTypes[link.type]
-                                : 'bg-gray-200',
-                            )}
-                          >
-                            {link.type === 'opensource' ? (
-                              <>
-                                {link.url.includes('github') && 'GitHub'}
-                                {link.url.includes('gitlab') && 'GitLab'}
-                              </>
-                            ) : (
-                              link.type
-                            )}
-                          </span>
-                          {link.title}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
+                                window.fireEvent({
+                                  category: 'TopicResourceClick',
+                                  action: `Click: ${parsedUrl.hostname}`,
+                                  label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
+                                });
+                              }
+                            }}
+                          />
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </>
+              )}
+
+              {paidResourcesForTopic.length > 0 && (
+                <>
+                  <ResourceListSeparator text="Premium Resources" icon={Star} />
+
+                  <ul className="ml-3 mt-3 space-y-1">
+                    {paidResourcesForTopic.map((resource) => {
+                      return (
+                        <li key={resource._id}>
+                          <TopicDetailLink
+                            url={resource.url}
+                            type={resource.type as any}
+                            title={resource.title}
+                            isPaid={true}
+                          />
+                        </li>
+                      );
+                    })}
+                  </ul>
+
+                  {showPaidResourceDisclaimer && (
+                    <PaidResourceDisclaimer
+                      onClose={() => {
+                        localStorage.setItem(
+                          PAID_RESOURCE_DISCLAIMER_HIDDEN,
+                          'true',
+                        );
+                        setShowPaidResourceDisclaimer(false);
+                      }}
+                    />
+                  )}
+                </>
               )}
 
               {/* Contribution */}
-              {canSubmitContribution && !hasEnoughLinks && contributionUrl && hasContent && (
-                <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
-                  <div className="mb-4 mt-3">
-                    <p className="">
-                      Find more resources using these pre-filled search queries:
-                    </p>
-                    <div className="mt-3 flex gap-2  text-gray-700">
-                      <a
-                        href={googleSearchUrl}
-                        target="_blank"
-                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                      >
-                        <GoogleIcon className={'h-4 w-4'} />
-                        Google
-                      </a>
-                      <a
-                        href={youtubeSearchUrl}
-                        target="_blank"
-                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                      >
-                        <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                        YouTube
-                      </a>
+              {canSubmitContribution &&
+                !hasEnoughLinks &&
+                contributionUrl &&
+                hasContent && (
+                  <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
+                    <div className="mb-4 mt-3">
+                      <p className="">
+                        Find more resources using these pre-filled search
+                        queries:
+                      </p>
+                      <div className="mt-3 flex gap-2 text-gray-700">
+                        <a
+                          href={googleSearchUrl}
+                          target="_blank"
+                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                        >
+                          <GoogleIcon className={'h-4 w-4'} />
+                          Google
+                        </a>
+                        <a
+                          href={youtubeSearchUrl}
+                          target="_blank"
+                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                        >
+                          <YouTubeIcon className={'h-4 w-4 text-red-500'} />
+                          YouTube
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <p className="mb-2 mt-2 leading-relaxed">
-                    This popup should be a brief introductory paragraph for the topic and a few links
-                    to good articles, videos, or any other self-vetted resources. Please consider
-                    submitting a PR to improve this content.
-                  </p>
-                  <a
-                    href={contributionUrl}
-                    target={'_blank'}
-                    className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                  >
-                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                    Help us Improve this Content
-                  </a>
-                </div>
-              )}
+                    <p className="mb-2 mt-2 leading-relaxed">
+                      This popup should be a brief introductory paragraph for
+                      the topic and a few links to good articles, videos, or any
+                      other self-vetted resources. Please consider submitting a
+                      PR to improve this content.
+                    </p>
+                    <a
+                      href={contributionUrl}
+                      target={'_blank'}
+                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                    >
+                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                      Help us Improve this Content
+                    </a>
+                  </div>
+                )}
             </div>
             {resourceId === 'devops' && (
               <div className="mt-4">

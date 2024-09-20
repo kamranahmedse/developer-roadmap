@@ -24,5 +24,5 @@ function add(a, b) {
 
 Learn more from the following links:
 
-- [@article@Type Checking JavaScript Files](https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html)
+- [@official@Type Checking JavaScript Files](https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html)
 - [@video@Using JavaScript in TypeScript](https://youtu.be/AZhZlEbBaB4)

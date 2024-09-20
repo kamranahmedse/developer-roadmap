@@ -6,6 +6,6 @@ The two most common testing approaches are unit testing and end-to-end testing. 
 
 Visit the following resources to learn more:
 
-- [@article@Wikipedia](https://en.wikipedia.org/wiki/Software_testing)
+- [@article@Wikipedia - Software Testing](https://en.wikipedia.org/wiki/Software_testing)
 - [@official@Vitest](https://vitest.dev/)
 - [@official@Jest](https://jest.io)

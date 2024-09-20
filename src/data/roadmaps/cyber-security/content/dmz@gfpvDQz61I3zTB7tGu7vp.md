@@ -2,21 +2,7 @@
 
 A **DMZ**, also known as a **Demilitarized Zone**, is a specific part of a network that functions as a buffer or separation between an organization's internal, trusted network and the external, untrusted networks like the internet. The primary purpose of a DMZ is to isolate critical systems and data from the potentially hostile external environment and provide an extra layer of security.
 
-## Purpose of DMZ
+Learn more from the following resources:
 
-- **Security**: By segregating critical systems, a DMZ reduces the risk of unauthorized access and potential damage from external threats. This is achieved by implementing strong access controls, firewalls, and intrusion detection and prevention systems (IDS/IPS) to monitor and filter traffic between the DMZ and internal networks.
-- **Content Filtering**: It enables organizations to place publicly accessible servers (e.g., web and email servers) within the DMZ without exposing the entire internal network to potential attacks. This ensures that only authorized traffic is allowed to pass through.
-- **Ease of Management**: DMZ aids in simplifying security management processes as it provides a centralized location for implementing, auditing, and monitoring security policies, rules, and configurations for public-facing resources.
-
-## Components of DMZ
-
-The key components in a DMZ include:
-
-- **Firewalls**: These devices are used to control and manage traffic between the DMZ, internal, and external networks. They can be configured to allow, deny, or restrict access based on pre-defined security policies and rules.
-- **Proxies**: Proxy servers act as intermediaries between the internal network and the internet. They help to screen and filter incoming and outgoing web traffic, providing an additional layer of security.
-- **Intrusion Detection and Prevention Systems (IDS/IPS)**: These tools continuously monitor and analyze network traffic, looking for signs of unauthorized access or malicious activities, and automatically take appropriate actions to mitigate threats.
-- **Public-Facing Servers**: These are the servers hosted within the DMZ, designed to serve content and resources to external users. They are typically configured with additional security measures to further reduce the risk of compromise.
-
-As the author of this guide, I hope this brief summary about DMZ helps you enhance your understanding of cyber security terminologies and their importance in protecting organizations' networks and data. Keep reading for more insights!
-
-- [@video@What is DMZ? (Demilitarized Zone)](https://www.youtube.com/watch?v=dqlzQXo1wqo)
+- [@article@What is a DMZ network?](https://www.fortinet.com/resources/cyberglossary/what-is-dmz)
+- [@video@DMZ explained](https://www.youtube.com/watch?v=48QZfBeU4ps)

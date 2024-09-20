@@ -1,22 +1,24 @@
-type TwitterIconProps = {
+interface TwitterIconProps {
   className?: string;
-};
+  boxColor?: string;
+}
 
 export function TwitterIcon(props: TwitterIconProps) {
-  const { className } = props;
+  const { className, boxColor = 'transparent' } = props;
 
   return (
     <svg
-      width="15"
-      height="15"
-      viewBox="0 0 15 15"
+      width="23"
+      height="23"
+      viewBox="0 0 23 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
+      <rect width="23" height="23" rx="3" fill={boxColor} />
       <path
-        d="M8.9285 6.35221L14.5135 0H13.1905L8.339 5.5144L4.467 0H0L5.8565 8.33955L0 15H1.323L6.443 9.17535L10.533 15H15M1.8005 0.976187H3.833L13.1895 14.0718H11.1565"
-        fill="currentColor"
+        d="M12.9285 10.3522L18.5135 4H17.1905L12.339 9.5144L8.467 4H4L9.8565 12.3395L4 19H5.323L10.443 13.1754L14.533 19H19M5.8005 4.97619H7.833L17.1895 18.0718H15.1565"
+        fill='currentColor'
       />
     </svg>
   );

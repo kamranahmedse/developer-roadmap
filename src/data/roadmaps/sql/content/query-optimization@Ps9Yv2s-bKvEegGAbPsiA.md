@@ -1,66 +1,8 @@
 # Query Optimization
 
-Query optimization is a function of SQL that involves tuning and optimizing a SQL statement so that the system executes it in the fastest and most efficient way possible. It includes optimizing the costs of computation, communication, and disk I/O.
+Query optimization in SQL involves refining queries to enhance their execution speed and reduce resource consumption. Key strategies include indexing columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses to accelerate data retrieval, minimizing data processed by limiting the number of columns selected and filtering rows early in the query. Using appropriate join types and arranging joins in the most efficient order are crucial. Avoiding inefficient patterns like `SELECT`, replacing subqueries with joins or common table expressions (CTEs), and leveraging query hints or execution plan analysis can also improve performance. Regularly updating statistics and ensuring that queries are structured to take advantage of database-specific optimizations are essential practices for maintaining optimal performance.
 
-The primary approaches of query optimization involve the following:
+Learn more from the following resources:
 
-## Rewriting Queries
-
-This means changing the original SQL query to an equivalent one which requires fewer system resources. It's usually done automatically by the database system.
-
-For instance, let's say we have a query as follows:
-
-```sql
-SELECT * 
-FROM Customers 
-WHERE state = 'New York' AND city = 'New York';
-```
-
-The above query can be rewritten using a subquery for better optimization:
-
-```sql
-SELECT * 
-FROM Customers 
-WHERE state = 'New York' 
-AND city IN (SELECT city 
-              FROM Customers 
-              WHERE city = 'New York');
-```
-
-## Choosing the right index
-
-Indexes are used to find rows with specific column values quickly. Without an index, SQL has to begin with the first row and then read through the entire table to find the appropriate rows. The larger the table, the more costly the operation. Choosing a right and efficient index greatly influence on query performance.
-
-For example,
-
-```sql
-CREATE INDEX index_name
-ON table_name (column1, column2, ...);
-```
-
-## Fine-tuning Database Design
-
-Improper database schema designs could result in poor query performances. While not strictly a part of query optimization, tuning the database design can speed up the query execution time drastically. 
-
-Changes such as the separation of specific data to different tables (Normalization), combining redundant data (Denormalization), or changing the way how tables are linked (Optimized Join Operations), can be implemented to optimize the schema.
-
-## Use of SQL Clauses wisely
-
-The usage of certain SQL clauses can help in query optimization like LIMIT, BETWEEN etc.
-
-Example,
-
-```sql
-SELECT column1, column2
-FROM table_name
-WHERE condition
-LIMIT 10;
-```
-
-## System Configuration
-
-Many database systems allow you to configure system parameters that control its behavior during query execution. For instance, in MySQL, you can set parameters like `sort_buffer_size` or `join_buffer_size` to tweak how MySQL would use memory during sorting and joining operations.
-
-In PostgreSQL, you can set `work_mem` to control how much memory is utilized during operations such as sorting and hashing.
-
-Always remember the goal of query optimization is to lessen the system resources usage in terms of memory, CPU time, and thus improve the query performance.
+- [@video@SQL Query Optimization](https://www.youtube.com/watch?v=GA8SaXDLdsY)
+- [@article@12 Ways to Optimize SQL Queries](https://www.developernation.net/blog/12-ways-to-optimize-sql-queries-in-database-management/)

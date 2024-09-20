@@ -184,23 +184,52 @@
   },
   "Dp2DOX10u2xJUjB8Okhzh": {
     "title": "Frame",
-    "description": "",
-    "links": []
+    "description": "**FrameLayout** is a simple ViewGroup subclass in Android that is designed to hold a single child view or a stack of overlapping child views. It positions each child in the top-left corner by default and allows them to overlap on top of each other, which makes it useful for situations where you need to layer views on top of one another.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Frame Layout",
+        "url": "https://developer.android.com/reference/android/widget/FrameLayout",
+        "type": "article"
+      }
+    ]
   },
   "U8iMGGOd2EgPxSuwSG39Z": {
     "title": "Linear",
-    "description": "",
-    "links": []
+    "description": "**LinearLayout** is a view group that aligns all children in a single directioni, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Linear Layout",
+        "url": "https://developer.android.com/develop/ui/views/layout/linear",
+        "type": "article"
+      }
+    ]
   },
   "yE0qAQZiEC9R8WvCdskpr": {
     "title": "Relative",
-    "description": "",
-    "links": []
+    "description": "A **RelativeLayout** in Android is a type of ViewGroup that allows you to position child views relative to each other or relative to the parent layout. It's a flexible layout where you can arrange the child views in relation to one another based on certain rules, making it suitable for creating complex UI designs.\n\n**RelativeLayout** was commonly used in earlier Android development, but with the introduction of `ConstraintLayout`, it's less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Relative Layout",
+        "url": "https://developer.android.com/develop/ui/views/layout/relative",
+        "type": "article"
+      }
+    ]
   },
   "3fFNMhQIuuh-NRzSXYpXO": {
     "title": "Constraint",
-    "description": "",
-    "links": []
+    "description": "Lets you create large, complex layouts with a flat view hierarchy—no nested view groups. It's similar to `RelativeLayout` in that all views are laid out according to relationships between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use. Its available on xml and jetpack compose.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ConstraintLayout in xml",
+        "url": "https://developer.android.com/develop/ui/views/layout/constraint-layout",
+        "type": "article"
+      },
+      {
+        "title": "Android developers: ContraintLayout in compose",
+        "url": "https://developer.android.com/develop/ui/compose/layouts/constraintlayout",
+        "type": "article"
+      }
+    ]
   },
   "xIvplWfe-uDr9iHjPT1Mx": {
     "title": "RecycleView",
@@ -237,8 +266,14 @@
   },
   "boMz0HZlMAsLdCZlpUo-H": {
     "title": "EditText",
-    "description": "",
-    "links": []
+    "description": "`EditText` is a fundamental UI element in Android Studio, used for allowing users to input and edit text within an application. It is a subclass of `TextView` that provides additional features to handle user input.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: EditText",
+        "url": "https://developer.android.com/reference/android/widget/EditText",
+        "type": "article"
+      }
+    ]
   },
   "Mtx0bY0drmaTw8sCM5YTl": {
     "title": "Dialogs",
@@ -275,33 +310,79 @@
   },
   "A4rtNULX_MoV93IH1Lgqw": {
     "title": "ImageView",
-    "description": "",
-    "links": []
+    "description": "Displays image resources, for example Bitmap or Drawable resources. ImageView is also commonly used to apply tints to an image and handle image scaling.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ImageView",
+        "url": "https://developer.android.com/reference/android/widget/ImageView",
+        "type": "article"
+      }
+    ]
   },
   "Z4Tbd5ClnqCXGPGG09F-G": {
     "title": "Bottom Sheet",
-    "description": "",
-    "links": []
+    "description": "`Bottom sheets` are surfaces containing supplementary content that are anchored to the bottom of the screen.\n\nThere are several attributes that can be used to adjust the behavior of both standard and modal bottom sheets. Behavior attributes can be applied to standard bottom sheets in xml by setting them on a child View set to `app:layout_behavior` or programmatically.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Bottom sheets",
+        "url": "https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialog",
+        "type": "article"
+      }
+    ]
   },
   "EzLjX4iRT7AxkAOsJYnSU": {
     "title": "ListView",
-    "description": "",
-    "links": []
+    "description": "Displays a vertically-scrollable collection of views, where each view is positioned immediatelybelow the previous view in the list.\n\nFor a more modern, flexible, and performant approach to displaying lists, use `RecyclerView`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: ListView",
+        "url": "https://developer.android.com/reference/android/widget/ListView",
+        "type": "article"
+      }
+    ]
   },
   "amTxz7mS98lkhOrNMJXG_": {
     "title": "Drawer",
-    "description": "",
-    "links": []
+    "description": "The **Navigation Drawer** in Android is a sliding menu from the left that simplifies navigation between important app links. It opens by sliding or via an icon in the `ActionBar`. It’s an overlay panel that replaces a screen dedicated to displaying options.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: DrawerLayout",
+        "url": "https://developer.android.com/reference/androidx/drawerlayout/widget/DrawerLayout",
+        "type": "article"
+      },
+      {
+        "title": "Navigate Drawer Tutorial",
+        "url": "https://www.digitalocean.com/community/tutorials/android-navigation-drawer-example-tutorial",
+        "type": "article"
+      }
+    ]
   },
   "pEBpXv3Jf1AzBNHlvVrG8": {
     "title": "Tabs",
-    "description": "",
-    "links": []
+    "description": "Tabs in Android Studio are a UI component used to organize content into multiple sections, allowing users to navigate between them by selecting the corresponding tab. This component is commonly used when there is a need to present different types of content in a single screen, like different categories, settings, or pages within an app.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Android developers: Material Tabs",
+        "url": "https://developer.android.com/reference/com/google/android/material/tabs/package-summary",
+        "type": "article"
+      }
+    ]
   },
   "Xn1VQ-xOT67ZfJJTM4r1p": {
     "title": "Animations",
-    "description": "",
-    "links": []
+    "description": "`Animations` can add visual cues that notify users about what's going on in your app. They are especially useful when the UI changes state, such as when new content loads or new actions become available. Animations also add a polished look to your app, which gives it a higher quality look and feel.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Google developers: Animations",
+        "url": "https://developer.android.com/develop/ui/views/animations/overview",
+        "type": "article"
+      },
+      {
+        "title": "Google developers: Animations",
+        "url": "https://www.youtube.com/watch?v=N_x7SV3I3P0",
+        "type": "video"
+      }
+    ]
   },
   "60Vm-77rseUqpMiFvp-dA": {
     "title": "Jetpack Compose",
@@ -331,8 +412,14 @@
   },
   "Bz-BkfzsDHAbAw3HD7WCd": {
     "title": "MVI",
-    "description": "",
-    "links": []
+    "description": "The **MVI** `Model-View-Intent` pattern is a reactive architectural pattern, similar to **MVVM** and **MVP**, focusing on immutability and handling states in unidirectional cycles. The data flow is unidirectional: Intents update the Model's state through the `ViewModel`, and then the View reacts to the new state. This ensures a clear and predictable cycle between logic and the interface.\n\n*   Model: Represents the UI state. It is immutable and contains all the necessary information to represent a screen.\n*   View: Displays the UI state and receives the user's intentions.\n*   Intent: The user's intentions trigger state updates, managed by the `ViewModel`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MVI with Kotlin",
+        "url": "https://proandroiddev.com/mvi-architecture-with-kotlin-flows-and-channels-d36820b2028d",
+        "type": "article"
+      }
+    ]
   },
   "pSU-NZtjBh-u0WKTYfjk_": {
     "title": "MVVM",
@@ -533,8 +620,19 @@
   },
   "e3vHFaFFMV7kI9q6yf5e9": {
     "title": "Cloud Messaging",
-    "description": "Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging service that enables you to send messages reliably and securely to your Android applications. It enables you to send two types of messages: \"notification messages\" and \"data messages\". Notification messages are primarily meant for user notifications and will only be delivered when the application is in the foreground. On the other hand, data messages can handle even when the app is in the background or killed and can be used to send custom key-value pairs. FCM also supports various additional features, such as topic messaging to send messages to multiple devices subscribed to a common topic, device group messaging for sending messages to groups of user devices, and upstream messaging for sending messages from the client application to the FCM server.",
-    "links": []
+    "description": "Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging service that enables you to send messages reliably and securely to your Android applications. It enables you to send two types of messages: \"notification messages\" and \"data messages\". Notification messages are primarily meant for user notifications and will only be delivered when the application is in the foreground. On the other hand, data messages can handle even when the app is in the background or killed and can be used to send custom key-value pairs. FCM also supports various additional features, such as topic messaging to send messages to multiple devices subscribed to a common topic, device group messaging for sending messages to groups of user devices, and upstream messaging for sending messages from the client application to the FCM server.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://firebase.google.com/docs/cloud-messaging/android/client",
+        "type": "article"
+      },
+      {
+        "title": "Firebase Cloud Messaging",
+        "url": "https://www.youtube.com/watch?v=sioEY4tWmLI&list=PLl-K7zZEsYLkuHRCtHTpi6JYHka8oHLft",
+        "type": "video"
+      }
+    ]
   },
   "3EEfKAd-ppIQpdQSEhbA1": {
     "title": "FireStore",

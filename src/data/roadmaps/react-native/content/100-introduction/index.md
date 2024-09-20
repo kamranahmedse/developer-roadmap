@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Official Website](https://reactnative.dev/)
 - [@article@Official Getting Started to React Native](https://reactnative.dev/docs/getting-started)
-- [@video@Build a React Native App by Mosh](https://www.youtube.com/watch?v=0-S5a0eXPoc)
-- - [@video@React Native Course for Beginners in 2024 | Build a Full Stack React Native App](https://www.youtube.com/watch?v=ZBCUegTZF7M)
+- [@video@React Native Course for Beginners in 2024 | Build a Full Stack React Native App](https://www.youtube.com/watch?v=ZBCUegTZF7M)

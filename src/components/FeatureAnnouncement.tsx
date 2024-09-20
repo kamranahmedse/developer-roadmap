@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal } from './Modal.tsx';
-import { PartyPopper } from 'lucide-react';
+import {PartyPopper, Play, PlayCircle} from 'lucide-react';
 import { isMobileScreen } from '../lib/is-mobile.ts';
 
 type FeatureAnnouncementProps = {};
@@ -23,7 +23,7 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
         </span>
         Projects are live on the{' '}
         <a
-          href={'/backend/projects'}
+          href={'/projects'}
           className="font-medium text-blue-500 underline underline-offset-2"
         >
           backend roadmap
@@ -41,13 +41,11 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
           paddingBottom: '56.25%',
           height: 0,
           overflow: 'hidden',
-          width: '300%',
-          left: '-100%',
         }}
       >
         {/*https://www.youtube.com/embed/?playsinline=1&disablekb=1&&iv_load_policy=3&cc_load_policy=0&controls=0&rel=0&autoplay=1&mute=1&origin=https%3A%2F%2Fytch.xyz&widgetid=1*/}
         <iframe
-          src="https://www.youtube.com/embed/9lS3slfJ0x0?start=31&autoplay=1&disablekb=1&rel=0&cc_load_policy=0&controls=0&rel=0&autoplay=1&origin=https%3A%2F%2Froadmap.sh&widgetid=1&showinfo=0"
+          src="https://www.youtube.com/embed/9lS3slfJ0x0?start=31&autoplay=1&disablekb=1&rel=0&cc_load_policy=0&rel=0&autoplay=1&origin=https%3A%2F%2Froadmap.sh&widgetid=1&showinfo=0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           style={{
@@ -68,19 +66,12 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
       <button
         className="rounded-md border border-dashed border-purple-600 px-3 py-1.5 text-purple-400 transition-colors hover:border-purple-400 hover:text-purple-200"
         onClick={() => {
-          if (isMobileScreen()) {
-            window.open(
-              'https://www.youtube.com/watch?v=9lS3slfJ0x0',
-              '_blank',
-            );
-            return;
-          }
-
           setIsPlaying(true);
         }}
       >
-        <span className="relative -top-[1px] mr-1 text-xs font-semibold uppercase text-white">
-          New
+        <span className="relative sm:-top-[1px] mr-1 text-xs font-semibold uppercase text-white">
+          <PlayCircle className="inline-block h-4 w-4 relative -top-[2px] mr-1" />
+          Watch
         </span>{' '}
         <span className={'hidden sm:inline'}>
           Practice your skills with projects

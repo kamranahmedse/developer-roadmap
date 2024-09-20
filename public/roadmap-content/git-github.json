@@ -14,6 +14,11 @@
         "type": "article"
       },
       {
+        "title": "Version Control (Git) - The Missing Semester of Your CS Education",
+        "url": "https://missing.csail.mit.edu/2020/version-control/",
+        "type": "article"
+      },
+      {
         "title": "GUI Clients",
         "url": "https://git-scm.com/downloads/guis",
         "type": "article"
@@ -100,7 +105,7 @@
     "links": [
       {
         "title": "About repositories",
-        "url": "hhttps://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+        "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
         "type": "article"
       },
       {
@@ -215,6 +220,11 @@
     "title": ".gitignore",
     "description": "Ignored files are tracked in a special file named `.gitignore` that is checked in at the root of your repository. There is no explicit git ignore command: instead the `.gitignore` file must be edited and committed by hand when you have new files that you wish to ignore. `.gitignore` files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "gitignore - A collection of useful .gitignore templates",
+        "url": "https://github.com/github/gitignore",
+        "type": "opensource"
+      },
       {
         "title": "gitignore Documentation",
         "url": "https://git-scm.com/docs/gitignore/en",
@@ -962,10 +972,21 @@
       }
     ]
   },
-  "github-wikis@lONqOqD-4slxa9B5i9ADX.md": {
+  "lONqOqD-4slxa9B5i9ADX": {
     "title": "GitHub Wikis",
-    "description": "",
-    "links": []
+    "description": "GitHub Wikis are collaborative documentation spaces integrated directly into GitHub repositories. They provide a platform for teams to create, edit, and organize project-related information, such as documentation, guidelines, and FAQs. Wikis support Markdown formatting, making it easy to structure content and include images or links. With version control and the ability to clone wiki repositories, teams can collaboratively maintain up-to-date documentation alongside their code, enhancing project understanding and facilitating knowledge sharing among contributors and users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis",
+        "type": "article"
+      },
+      {
+        "title": "Documenting your project with Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis",
+        "type": "article"
+      }
+    ]
   },
   "i3AbARgzQtxtlB-1AS8zv": {
     "title": "Clean Git History",
@@ -1266,7 +1287,7 @@
     "links": [
       {
         "title": "--soft documentation",
-        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard",
+        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---soft",
         "type": "article"
       }
     ]
@@ -1288,7 +1309,7 @@
     "links": [
       {
         "title": "--mixed documentation",
-        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard",
+        "url": "https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed",
         "type": "article"
       }
     ]
@@ -1416,8 +1437,24 @@
   },
   "BKVA6Q7DXemAYjyQOA0nh": {
     "title": "git filter-branch",
-    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.",
-    "links": []
+    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.\n\n*   Filter types: You can modify trees (e.g., removing a file or running a Perl script) or information about each commit.\n*   Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.\n*   Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.\n\nNotably, there exists a simpler, safer, and more powerful alternative: `git filter-repo`. This tool is actively promoted by Git and offers a streamlined approach to filtering revisions, making it a preferred choice for rewriting your Git history, especially when managing large repositories.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "git filter-branch",
+        "url": "https://git-scm.com/docs/git-filter-branch",
+        "type": "article"
+      },
+      {
+        "title": "git filter-repo",
+        "url": "https://github.com/newren/git-filter-repo",
+        "type": "article"
+      },
+      {
+        "title": "Removing sensitive data from a repository",
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
+        "type": "article"
+      }
+    ]
   },
   "OQOmxg9mCfcjt80hpvXkA": {
     "title": "git push --force",
@@ -2182,7 +2219,7 @@
   },
   "qrdOARfqGPF9xhF6snbAn": {
     "title": "OAuth Apps",
-    "description": "GitHub OAuth Apps are a way to integrate with the GitHub platform using OAuth authentication. They allow developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "description": "GitHub OAuth Apps allow developers to integrate with GitHub using OAuth 2.0 authentication. They enable secure, token-based access to specific GitHub resources like repositories, issues, and pull requests. OAuth Apps can automate tasks, personalize interactions, and provide real-time notifications through webhooks, all while allowing users to approve only the necessary permissions without sharing their credentials.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Creating an OAuth app",

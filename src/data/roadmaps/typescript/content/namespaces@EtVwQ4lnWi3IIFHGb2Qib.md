@@ -21,6 +21,6 @@ In this example, we use the `namespace` keyword in the "myNamespace.ts" file to 
 
 Learn more from the following resources:
 
-- [@article@Overview of Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
-- [@article@Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)
-- [@article@TypeScript - Using Namespaces](https://typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-namespaces)
+- [@official@Overview of Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+- [@official@Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)
+- [@official@TypeScript - Using Namespaces](https://typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-namespaces)

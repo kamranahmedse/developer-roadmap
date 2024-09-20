@@ -8,7 +8,7 @@ export function EmptySolutions(props: EmptySolutionsProps) {
   const { projectId } = props;
 
   return (
-    <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl px-5 py-3 sm:px-0 sm:py-20">
+    <div className="flex min-h-[250px] flex-col items-center justify-center rounded-xl px-5 py-3 sm:px-0 sm:py-20 bg-white border mb-5">
       <Blocks className="mb-4 opacity-10 h-14 w-14" />
       <h2 className="mb-1 text-lg font-semibold sm:text-xl">
         No solutions submitted yet

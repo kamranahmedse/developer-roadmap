@@ -220,7 +220,18 @@
   "0uiGsC5SWavNdlFqizkKe": {
     "title": "Rendering",
     "description": "React follows a declarative approach to rendering components, which means that developers specify what a component should look like, and React takes care of rendering the component to the screen. This is in contrast to an imperative approach, where developers would write code to manually manipulate the DOM (Document Object Model) to update the UI.\n\nThe virtual DOM (VDOM) is an important aspect of how React works. It is a lightweight in-memory representation of the DOM (Document Object Model), and it is used to optimize the rendering of components in a React application.\n\n*   Components are written as JavaScript classes or functions that define a render method. The render method returns a description of what the component should look like, using JSX syntax.\n*   When a component is rendered, React creates a virtual DOM (VDOM) representation of the component. The VDOM is a lightweight in-memory representation of the DOM, and it is used to optimize the rendering of components.\n*   React compares the VDOM representation of the component with the previous VDOM representation (if it exists). If there are differences between the two VDOMs, React calculates the minimum number of DOM updates needed to bring the actual DOM into line with the new VDOM.\n*   React updates the actual DOM with the minimum number of DOM updates needed to reflect the changes in the VDOM.\n\nThis process is known as reconciliation, and it is an important aspect of how React works. By using a declarative approach and a VDOM, React is able to optimize the rendering of components and improve the performance of web applications.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Rendering - Official Docs",
+        "url": "https://legacy.reactjs.org/docs/rendering-elements.html",
+        "type": "article"
+      },
+      {
+        "title": "Rendering in React - ui.dev",
+        "url": "https://ui.dev/why-react-renders",
+        "type": "article"
+      }
+    ]
   },
   "8OBlgDRUg-CTgDXY-QHyO": {
     "title": "Component Lifecycle",
@@ -554,7 +565,7 @@
   },
   "t_laNdMmdLApYszqXRdWg": {
     "title": "useRef",
-    "description": "useRef is a React hook that provides a way to create a mutable reference that persists across component re-renders. It stores a value that doesn't cause re-renders when it changes.\n\nVisit the following resources to learn more:",
+    "description": "`useRef` is a React hook that provides a way to create a mutable reference that persists across component re-renders. It stores a value that doesn't cause re-renders when it changes.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "useRef",
@@ -575,7 +586,7 @@
   },
   "w3bNp7OkehI1gjx8NzlC8": {
     "title": "useMemo",
-    "description": "useMemo is a React hook that memorizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
+    "description": "`useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "useMemo Docs",
@@ -591,7 +602,7 @@
   },
   "v48Mv0wQqjXbvy8x6gDjQ": {
     "title": "useReducer",
-    "description": "useReducer: An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)\n\nLearn more from the following resources:",
+    "description": "`useReducer`: An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "useReducer Docs",
@@ -675,8 +686,23 @@
   },
   "mkyU0ug8MXxV4biHuOity": {
     "title": "Hooks Best Practices",
-    "description": "Learn the best practices for using React hooks from the following resources:",
+    "description": "To fully leverage the capabilities of React Hooks, it is crucial to adopt best practices that not only enhance code readability but also optimize performance. By adhering to these practices, developers can create cleaner, more maintainable components that make the most of React's powerful features, leading to a more efficient and enjoyable development experience.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Rules of Hooks",
+        "url": "https://react.dev/reference/rules/rules-of-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "React Hooks Best Practices: Unlocking Efficiency and Elegance",
+        "url": "https://medium.com/womenintechnology/react-hooks-best-practices-unlocking-efficiency-and-elegance-da23f7e1418a",
+        "type": "article"
+      },
+      {
+        "title": "Mastering React Hooks: Best Practices and Common Pitfalls",
+        "url": "https://dev.to/codesensei/mastering-react-hooks-best-practices-and-common-pitfalls-3d9i",
+        "type": "article"
+      },
       {
         "title": "React Hooks Cheat Sheet: Best Practices with Examples",
         "url": "https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/",
@@ -694,12 +720,12 @@
     "description": "Routing is an essential concept in Single Page Applications (SPA). When your application is divided into separated logical sections, and all of them are under their own URL, your users can easily share links among each other.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How to use Routing in React JS: A Comprehensive Guide. ",
+        "title": "How to use Routing in React JS: A Comprehensive Guide.",
         "url": "https://blog.logrocket.com/react-router-v6-guide/",
         "type": "article"
       },
       {
-        "title": "React Router 6 – Tutorial for Beginners. ",
+        "title": "React Router 6 – Tutorial for Beginners.",
         "url": "https://www.youtube.com/watch?v=59IXY5IDrBA",
         "type": "video"
       }
@@ -936,8 +962,19 @@
   },
   "thfnymb_UIiKxakKfiua5": {
     "title": "Component / Libraries",
-    "description": "",
-    "links": []
+    "description": "React component libraries are collections of pre-built, reusable components that can be used to speed up the development process. They can be styled using CSS in various ways, including traditional CSS files, CSS modules, and CSS-in-JS solutions like styled-components.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MUI: React Component Library",
+        "url": "https://mui.com/",
+        "type": "article"
+      },
+      {
+        "title": "NextUI.org",
+        "url": "https://nextui.org/",
+        "type": "article"
+      }
+    ]
   },
   "akVNUPOqaTXaSHoQFlkP_": {
     "title": "Panda CSS",
@@ -1581,12 +1618,33 @@
   },
   "ElgRwv5LSVg5FXGx-2K2s": {
     "title": "TypeScript",
-    "description": "",
-    "links": []
+    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://www.typescriptlang.org/",
+        "type": "article"
+      },
+      {
+        "title": "The TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about TypeScript",
+        "url": "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "TypeScript for Beginners",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
+        "type": "video"
+      }
+    ]
   },
   "K3RZ8ESxWCpLKHePF87Hy": {
     "title": "Zod",
-    "description": "Zod is a TypeScript-first schema declaration and validation library. I'm using the term \"schema\" to broadly refer to any data type, from a simple string to a complex nested object.\n\nZod is designed to be as developer-friendly as possible. The goal is to eliminate duplicative type declarations. With Zod, you declare a validator once and Zod will automatically infer the static TypeScript type. It's easy to compose simpler types into complex data structures.\n\nVisit the following resources to learn more:",
+    "description": "Zod is a TypeScript-first schema declaration and validation library. I'm using the term \"schema\" to broadly refer to any data type, from a simple string to a complex nested object.\n\nZod is designed to be as developer-friendly as possible. The goal is to eliminate duplicate type declarations. With Zod, you declare a validator once and Zod will automatically infer the static TypeScript type. It's easy to compose simpler types into complex data structures.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Zod Website",
@@ -1671,8 +1729,24 @@
   },
   "y2dI1DVLWKAkv6VRpgaQa": {
     "title": "GSock",
-    "description": "",
-    "links": []
+    "description": "`GSAP` (GreenSock Animation Platform) is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch!\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GSAP: Homepage",
+        "url": "https://gsap.com/docs/v3/",
+        "type": "article"
+      },
+      {
+        "title": "The Beginner's Guide to the GreenSock Animation Platform",
+        "url": "https://www.freecodecamp.org/news/the-beginners-guide-to-the-greensock-animation-platform-7dc9fd9eb826/",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Greensock Web Animation",
+        "url": "https://www.youtube.com/watch?v=EOa7ccPWvXg",
+        "type": "video"
+      }
+    ]
   },
   "_F3WMxhzaK9F8_-zHDDMF": {
     "title": "Suspense",

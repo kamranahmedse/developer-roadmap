@@ -5,3 +5,4 @@ Data constraints in SQL are rules applied to columns or tables to enforce data i
 Learn more from the following resources:
 
 - [@article@Data Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
+- [@article@SQL Contraints](https://www.programiz.com/sql/constraints)

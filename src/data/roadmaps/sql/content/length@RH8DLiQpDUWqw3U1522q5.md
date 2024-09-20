@@ -5,3 +5,4 @@ The `LENGTH` function in SQL returns the number of characters in a string. It's 
 Learn more from the following resources:
 
 - [@article@How to Check the Length of a String in SQL](https://learnsql.com/cookbook/how-to-check-the-length-of-a-string-in-sql/)
+- [@article@MySQL Length Function](https://www.w3schools.com/sql/func_mysql_length.asp)

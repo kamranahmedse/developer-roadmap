@@ -7,3 +7,4 @@ For instance, if you're designing a table for employee data, you might want to e
 Learn more from the following resources:
 
 - [@article@SQL IS NULL and IS NOT NULL](https://www.programiz.com/sql/is-null-not-null)
+- [@video@NOT NULL Constraint](https://www.youtube.com/watch?v=unzHhq82mKU)
