@@ -138,6 +138,11 @@
     "description": "Web hosting is an online service that allows you to publish your website files onto the internet. So, anyone who has access to the internet has access to your website.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Web Hosting Explained for Beginners",
+        "url": "https://www.hostinger.com/tutorials/what-is-web-hosting/",
+        "type": "article"
+      },
+      {
         "title": "What Is Web Hosting? Explained",
         "url": "https://www.youtube.com/watch?v=htbY9-yggB0",
         "type": "video"
