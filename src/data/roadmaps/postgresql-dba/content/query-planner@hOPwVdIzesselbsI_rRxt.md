@@ -5,4 +5,4 @@ The PostgreSQL query planner is an essential component of the system that's resp
 Learn more from the following resources:
 
 - [@official@Planner/Optimizer](https://www.postgresql.org/docs/current/planner-optimizer.html)
-- [@official@Query Planning@](https://www.postgresql.org/docs/current/runtime-config-query.html)
+- [@official@Query Planning](https://www.postgresql.org/docs/current/runtime-config-query.html)

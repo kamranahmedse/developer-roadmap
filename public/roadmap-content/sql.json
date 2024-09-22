@@ -1,7 +1,7 @@
 {
   "R9DQNc0AyAQ2HLpP4HOk6": {
     "title": "What are Relational Databases?",
-    "description": "Relational databases are a type of database management system (DBMS) that stores and provides access to data points that are related to one another. Based on the relational model introduced by E.F. Codd in 1970, they use a structure that allows data to be organized into tables with rows and columns. Key features include:\n\n*   Use of SQL (Structured Query Language) for querying and managing data\n*   Support for ACID transactions (Atomicity, Consistency, Isolation, Durability)\n*   Enforcement of data integrity through constraints (e.g., primary keys, foreign keys)\n*   bility to establish relationships between tables, enabling complex queries and data retrieval\n*   Scalability and support for multi-user environments\n\nExamples of popular relational database systems include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. They are widely used in various applications, from small-scale projects to large enterprise systems, due to their reliability, consistency, and powerful querying capabilities.\n\nLearn more from the following resources:",
+    "description": "Relational databases are a type of database management system (DBMS) that stores and provides access to data points that are related to one another. Based on the relational model introduced by E.F. Codd in 1970, they use a structure that allows data to be organized into tables with rows and columns. Key features include:\n\n*   Use of SQL (Structured Query Language) for querying and managing data\n*   Support for ACID transactions (Atomicity, Consistency, Isolation, Durability)\n*   Enforcement of data integrity through constraints (e.g., primary keys, foreign keys)\n*   Ability to establish relationships between tables, enabling complex queries and data retrieval\n*   Scalability and support for multi-user environments\n\nExamples of popular relational database systems include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. They are widely used in various applications, from small-scale projects to large enterprise systems, due to their reliability, consistency, and powerful querying capabilities.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is a relational database - AWS",
@@ -1258,7 +1258,7 @@
     "links": [
       {
         "title": "SQL Server Indexes",
-        "url": "https://www.sqlservercentral.com/articles/sql-server-indexes",
+        "url": "https://www.sqlservercentral.com/articles/introduction-to-indexes",
         "type": "article"
       },
       {

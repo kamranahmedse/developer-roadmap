@@ -12,11 +12,41 @@
   },
   "DE3cMpeRYuUPw2ADtfS-3": {
     "title": "Angular Architecture",
-    "description": "Visit the following resources to learn more:",
+    "description": "Angular follows a modular architecture pattern, dividing the application into distinct modules, components, services, and other elements, which enhances code organization and maintainability. The key building blocks include modules, which are containers grouping related components, services, directives, and other elements to ensure proper encapsulation and reusability. Components are the building blocks of Angular applications, representing parts of the user interface with associated logic, consisting of templates, styles, and a class defining behavior. Services encapsulate reusable business logic, data manipulation, and API communication, enabling data and functionality sharing across components. Directives are HTML attributes or elements that extend HTML functionality, allowing reusable behaviors across the application. Lastly, pipes transform data before displaying it in templates, providing convenient ways to format, filter, and sort data.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Angular coding style guide",
         "url": "https://angular.dev/style-guide",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to Angular Architecture: Best Practices for efficient coding with Angular Framework",
+        "url": "https://angulardive.com/blog/the-ultimate-guide-to-angular-architecture-best-practices-for-efficient-coding-with-angular-framework/",
+        "type": "article"
+      },
+      {
+        "title": "Modern Architectures with Angular Part 1: Strategic design with Sheriff and Standalone Components",
+        "url": "https://www.angulararchitects.io/en/blog/modern-architectures-with-angular-part-1-strategic-design-with-sheriff-and-standalone-components/",
+        "type": "article"
+      },
+      {
+        "title": "Optimizing the architecture of large web applications with Angular",
+        "url": "https://albertobasalo.medium.com/optimizing-the-architecture-of-large-web-applications-with-angular-79d03b01a92b",
+        "type": "article"
+      },
+      {
+        "title": "Angular Architecture Concepts and Patterns",
+        "url": "https://www.bigscal.com/blogs/frontend/angular-architecture-concepts-and-patterns/",
+        "type": "article"
+      },
+      {
+        "title": "Top 10 Angular Architecture Mistakes",
+        "url": "https://angularexperts.io/blog/top-10-angular-architecture-mistakes",
+        "type": "article"
+      },
+      {
+        "title": "Architecting Angular: A Guide to effective project structure",
+        "url": "https://medium.com/@nile.bits/architecting-angular-a-guide-to-effective-project-structure-9756bae92262",
         "type": "article"
       }
     ]
@@ -856,7 +886,7 @@
     "links": [
       {
         "title": "Understanding Pipes",
-        "url": "https://angular.dev/guide/pipes",
+        "url": "https://angular.dev/tutorials/learn-angular/22-pipes",
         "type": "article"
       },
       {

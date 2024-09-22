@@ -4,8 +4,6 @@ Apache CouchDB is an open-source document-oriented NoSQL database. It uses JSON 
 
 Visit the following resources to learn more:
 
-- [@article@CouchDB Website](https://couchdb.apache.org/)
-- [@article@CouchDB Documentation](https://docs.couchdb.org/)
-- [@article@The big NoSQL databases comparison](https://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis/)
-- [@article@pouchdb - a JavaScript database inspired by CouchDB](https://pouchdb.com/)
+- [@official@CouchDB Website](https://couchdb.apache.org/)
+- [@video@What is CouchDB?](https://www.youtube.com/watch?v=Mru4sHzIfSA)
 - [@feed@Explore top posts about CouchDB](https://app.daily.dev/tags/couchdb?ref=roadmapsh)

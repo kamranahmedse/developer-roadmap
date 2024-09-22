@@ -1,25 +1,8 @@
 # netstat
 
-Netstat, short for 'network statistics', is a command-line tool that provides valuable information about the network connections, routing tables, and network interface statistics on a computer system. Netstat can help in diagnosing and troubleshooting network-related issues by displaying real-time data about network traffic, connections, routes, and more.
+**netstat** (network statistics) is a command-line tool used to display network connections, routing tables, and network interface statistics. It provides information about active TCP and UDP connections, listening ports, and the status of network interfaces. By using **netstat**, users can monitor network activity, diagnose connectivity issues, and identify open ports and services running on a system. The tool is available on various operating systems, including Windows, macOS, and Linux, and is often employed for network troubleshooting and security assessments.
 
-## Key Features
+Learn more from the following resources:
 
-- **Network Connections:** Netstat can show open and active network connections, including inbound and outbound, as well as display the ports on which your system is currently listening.
-- **Routing Tables:** Netstat provides information about your system's routing tables, which can help you identify the path a packet takes to reach its destination.
-- **Network Interface Statistics:** Netstat displays statistics for network interfaces, covering details such as packets transmitted, packets received, errors, and more.
-
-## Common Netstat Commands
-
-- `netstat -a`: Displays all active connections and listening ports
-- `netstat -n`: Displays active connections without resolving hostnames (faster)
-- `netstat -r`: Displays the routing table
-- `netstat -i`: Displays network interfaces and their statistics
-- `netstat -s`: Displays network protocol statistics (TCP, UDP, ICMP)
-
-## Example Use Cases
-
-- **Identify Open Ports:** You can use netstat to determine which ports are open and listening on your system, helping you identify potential security vulnerabilities.
-- **Monitor Network Connections:** Netstat allows you to monitor active connections to ensure that nothing unauthorized or suspicious is connecting to your system.
-- **Troubleshoot Network Issues:** By displaying routing table information, netstat can help you understand the pathways your system takes to reach various destinations, which can be crucial when diagnosing network problems.
-
-Netstat is a versatile and powerful tool for gaining insights into your system's network behavior. Armed with this knowledge, you'll be better equipped to address potential vulnerabilities and monitor your system's health in the context of cyber security.
+- [@article@netstat command](https://docs.oracle.com/cd/E19504-01/802-5753/6i9g71m3i/index.html)
+- [@video@netstat Command Explained](https://www.youtube.com/watch?v=8UZFpCQeXnM)

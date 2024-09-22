@@ -1,20 +1,9 @@
 # Authentication
 
-The API authentication process validates the identity of the client attempting to make a connection by using an authentication protocol. The protocol sends the credentials from the remote client requesting the connection to the remote access server in either plain text or encrypted form. The server then knows whether it can grant access to that remote client or not.
-
-Here is the list of common ways of authentication:
-
-- JWT Authentication
-- Token based Authentication
-- Session based Authentication
-- Basic Authentication
-- OAuth - Open Authorization
-- SSO - Single Sign On
+API authentication is the process of verifying the identity of clients attempting to access an API, ensuring that only authorized users or applications can interact with the API's resources. Common methods include API keys, OAuth 2.0, JSON Web Tokens (JWT), basic authentication, and OpenID Connect. These techniques vary in complexity and security level, from simple token-based approaches to more sophisticated protocols that handle both authentication and authorization. API authentication protects sensitive data, prevents unauthorized access, enables usage tracking, and can provide granular control over resource access. The choice of authentication method depends on factors such as security requirements, types of clients, ease of implementation, and scalability needs. Implementing robust API authentication is crucial for maintaining the integrity, security, and controlled usage of web services and applications in modern, interconnected software ecosystems.
 
 Visit the following resources to learn more:
 
-- [@article@User Authentication: Understanding the Basics & Top Tips](https://swoopnow.com/user-authentication/)
-- [@article@An overview about authentication methods](https://betterprogramming.pub/how-do-you-authenticate-mate-f2b70904cc3a)
 - [@roadmap.sh@SSO - Single Sign On](https://roadmap.sh/guides/sso)
 - [@roadmap.sh@OAuth - Open Authorization](https://roadmap.sh/guides/oauth)
 - [@roadmap.sh@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)

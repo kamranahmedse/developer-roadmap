@@ -70,7 +70,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute right-0 z-[999] mt-1 w-40 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute right-0 z-[999] mt-1 w-40 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5 w-[175px]">
           <div className="flex flex-col px-1 py-1">
             <button
               onClick={() => {
@@ -103,7 +103,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
               target={'_blank'}
               className="mt-1 flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
-              <div className="flex w-[20px] items-center justify-center">
+              <div className="flex w-[20px] flex-shrink-0 items-center justify-center">
                 <TwitterIcon className="h-[16px] text-slate-400" />
               </div>
               Twitter

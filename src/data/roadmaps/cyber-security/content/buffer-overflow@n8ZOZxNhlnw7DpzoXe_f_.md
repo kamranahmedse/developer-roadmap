@@ -5,5 +5,4 @@ A Buffer Overflow is a type of vulnerability that occurs when a program or proce
 Visit the following resources to learn more:
 
 - [@article@What Is Buffer Overflow?](https://www.fortinet.com/resources/cyberglossary/buffer-overflow)
-
 - [@article@Buffer Overflow Attack](https://www.imperva.com/learn/application-security/buffer-overflow/)

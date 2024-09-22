@@ -49,8 +49,13 @@ type GetTeamActivityResponse = {
   perPage: number;
 };
 
-export function TeamActivityPage() {
-  const { t: teamId } = getUrlParams();
+type TeamActivityPageProps = {
+  teamId?: string;
+};
+
+export function TeamActivityPage(props: TeamActivityPageProps) {
+  const { teamId: defaultTeamId } = props;
+  const { t: teamId = defaultTeamId } = getUrlParams();
 
   const toast = useToast();
 
@@ -92,6 +97,18 @@ export function TeamActivityPage() {
       return;
     }
 
+    setIsLoading(true);
+    setTeamActivities({
+      data: {
+        users: [],
+        activities: [],
+      },
+      totalCount: 0,
+      totalPages: 0,
+      currPage: 1,
+      perPage: 21,
+    });
+    setCurrPage(1);
     getTeamProgress().then(() => {
       pageProgressMessage.set('');
       setIsLoading(false);

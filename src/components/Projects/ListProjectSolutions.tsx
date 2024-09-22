@@ -33,7 +33,7 @@ export interface ProjectStatusDocument {
 
   isVisible?: boolean;
 
-  updated1t: Date;
+  updatedAt: Date;
 }
 
 const allowedVoteType = ['upvote', 'downvote'] as const;

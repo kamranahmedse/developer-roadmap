@@ -1953,7 +1953,7 @@
     "links": [
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -1994,7 +1994,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -2056,7 +2056,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -2097,7 +2097,7 @@
     "links": [
       {
         "title": "Visit Dedicated Angular Roadmap",
-        "url": "/angular",
+        "url": "https://roadmap.sh/angular",
         "type": "article"
       },
       {
@@ -2118,7 +2118,7 @@
     "links": [
       {
         "title": "Visit Dedicated Vue Roadmap",
-        "url": "/vue",
+        "url": "https://roadmap.sh/vue",
         "type": "article"
       },
       {

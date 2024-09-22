@@ -429,6 +429,11 @@
         "title": "String",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
         "type": "article"
+      },
+      {
+        "title": "JavaScript Strings",
+        "url": "https://javascript.info/string",
+        "type": "article"
       }
     ]
   },
@@ -498,7 +503,7 @@
   },
   "R6ICrk6vjoBxx5nRGo4Jg": {
     "title": "Symbol",
-    "description": "Symbols are a unique and immutable primitive data type in JavaScript, introduced in ECMAScript 6 (ES6). They are often used to create unique property keys for objects, ensuring that no property key collisions occur. Each Symbol value is unique, even if created with the same description. Symbols can be created using the Symbol() function, and their primary use case is to add hidden or special properties to objects that won’t interfere with other properties or methods.\n\nLearn more from the following resources:",
+    "description": "Symbols are a unique and immutable primitive data type in JavaScript, introduced in ECMAScript 6 (ES6). They are often used to create unique property keys for objects, ensuring no property key collisions occur. Each Symbol value is distinct, even when multiple are created with the same description. Symbols can be created using the Symbol() function, and their primary use case is to add hidden or special properties to objects that won’t interfere with other properties or methods.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Symbol data type in JavaScript",
@@ -509,6 +514,16 @@
         "title": "Symbol type",
         "url": "https://javascript.info/symbol",
         "type": "article"
+      },
+      {
+        "title": "Symbol",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+        "type": "article"
+      },
+      {
+        "title": "Symbols in Javascript",
+        "url": "https://www.youtube.com/watch?v=E5Bblr-SFbA",
+        "type": "video"
       }
     ]
   },
@@ -2071,6 +2086,11 @@
       {
         "title": "Network request - Fetch",
         "url": "https://javascript.info/fetch",
+        "type": "article"
+      },
+      {
+        "title": "Abort a fetch request manually in JavaScript",
+        "url": "https://www.amitmerchant.com/abort-fetch-request-manually-in-javascript/",
         "type": "article"
       }
     ]

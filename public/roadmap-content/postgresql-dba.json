@@ -2,7 +2,13 @@
   "lDIy56RyC1XM7IfORsSLD": {
     "title": "Introduction",
     "description": "PostgreSQL is a powerful, open-source Object-Relational Database Management System (ORDBMS) that is known for its robustness, extensibility, and SQL compliance. It was initially developed at the University of California, Berkeley, in the 1980s and has since become one of the most popular open-source databases in the world.",
-    "links": []
+    "links": [
+      {
+        "title": "History of POSTGRES to PostgreSQL",
+        "url": "https://www.postgresql.org/docs/current/history.html",
+        "type": "article"
+      }
+    ]
   },
   "soar-NBWCr4xVKj7ttfnc": {
     "title": "What are Relational Databases?",
@@ -306,7 +312,12 @@
     "description": "Multi-Version Concurrency Control (MVCC) is a technique used by PostgreSQL to allow multiple transactions to access the same data concurrently without conflicts or delays. It ensures that each transaction has a consistent snapshot of the database and can operate on its own version of the data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "Intro to MVCC",
+        "url": "https://www.postgresql.org/docs/current/mvcc-intro.html",
+        "type": "article"
+      },
+      {
+        "title": "Multiversion concurrency control - Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Multiversion_concurrency_control",
         "type": "article"
       },
@@ -539,7 +550,7 @@
     "description": "PostgreSQL offers a comprehensive set of data types to cater to diverse data needs, including numeric types like `INTEGER`, `FLOAT`, and `SERIAL` for auto-incrementing fields; character types such as `VARCHAR` and `TEXT` for variable-length text; and temporal types like `DATE`, `TIME`, and `TIMESTAMP` for handling date and time data. Additionally, PostgreSQL supports `BOOLEAN` for true/false values, `ENUM` for enumerated lists, and composite types for complex structures. It also excels with `JSON` and `JSONB` for storing and querying semi-structured data, arrays for storing multiple values in a single field, and geometric types for spatial data. These data types ensure flexibility and robust data management for various applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "PostgreSQL® Data Types: Mappings to SQL, JDBC, and Java Data Types",
         "url": "https://www.instaclustr.com/blog/postgresql-data-types-mappings-to-sql-jdbc-and-java-data-types/",
         "type": "article"
       },
@@ -758,6 +769,11 @@
         "title": "PostgreSQL INTERSECT Operator",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-intersect/",
         "type": "article"
+      },
+      {
+        "title": "PostgreSQL EXCEPT Operator",
+        "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/",
+        "type": "article"
       }
     ]
   },
@@ -850,7 +866,7 @@
         "type": "article"
       },
       {
-        "title": "Query Planning@",
+        "title": "Query Planning",
         "url": "https://www.postgresql.org/docs/current/runtime-config-query.html",
         "type": "article"
       }
@@ -2073,6 +2089,16 @@
       {
         "title": "Triggers",
         "url": "https://www.postgresql.org/docs/8.1/triggers.html",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Triggers",
+        "url": "https://www.postgresqltutorial.com/postgresql-triggers/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding PostgreSQL Triggers",
+        "url": "https://hevodata.com/learn/postgresql-triggers/",
         "type": "article"
       },
       {
