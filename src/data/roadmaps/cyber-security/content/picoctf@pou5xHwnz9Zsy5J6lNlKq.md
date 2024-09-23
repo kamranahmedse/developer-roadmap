@@ -1,17 +1,8 @@
 # picoCTF
 
-[PicoCTF](https://picoctf.org/) is a popular online Capture The Flag (CTF) competition designed for beginners and experienced cyber security enthusiasts alike. It is organized annually by the [Plaid Parliament of Pwning (PPP)](https://ppp.cylab.cmu.edu/) team, a group of cyber security researchers and students from Carnegie Mellon University.
+**picoCTF** is an online cybersecurity competition designed to help students and beginners learn and practice hacking skills through capture-the-flag (CTF) challenges. Developed by Carnegie Mellon University, picoCTF features a series of progressively difficult puzzles that teach concepts such as reverse engineering, cryptography, web exploitation, forensics, and binary exploitation. It's an educational platform that offers hands-on experience in solving real-world cybersecurity problems, making it popular among both students and aspiring cybersecurity professionals for learning and improving their skills in a practical, interactive environment.
 
-## Features
+Learn more from the following resources:
 
-- **Level-based Challenges**: PicoCTF offers a wide range of challenges sorted by difficulty levels. You will find challenges in topics like cryptography, web exploitation, forensics, reverse engineering, binary exploitation, and much more. These challenges are designed to build practical cybersecurity skills and engage in real-world problem-solving.
-
-- **Learning Resources**: The platform includes a collection of learning resources to help participants better understand the topics they are tackling. This allows you to quickly learn the necessary background information to excel in each challenge.
-
-- **Collaborative Environment**: Users can collaborate with a team or join a group to work together and share ideas. Working with others allows for hands-on practice in communication, organization, and critical thinking skills that are vital in the cybersecurity field.
-
-- **Leaderboard and Competitive Spirit**: PicoCTF maintains a growing leaderboard where participants can see their ranking, adding an exciting competitive aspect to the learning experience.
-
-- **Open for All Ages**: The competition is open to individuals of all ages, with a focus on students in middle and high school in order to cultivate the next generation of cybersecurity professionals.
-
-In conclusion, PicoCTF is an excellent platform for beginners to start learning about cybersecurity, as well as for experienced individuals looking to improve their skills and compete. By participating in PicoCTF, you can enhance your knowledge, engage with the cyber security community, and hone your skills in this ever-growing field.
+- [@official@picoCTF Website](https://picoctf.org/)
+- [@video@BEGINNER Capture The Flag - PicoCTF 2021 001 "Obedient Cat"](https://www.youtube.com/watch?v=P07NH5F-t3s)

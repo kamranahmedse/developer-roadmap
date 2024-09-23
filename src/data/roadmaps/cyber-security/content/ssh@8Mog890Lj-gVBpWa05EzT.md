@@ -1,33 +1,8 @@
 # SSH
 
-SSH, or Secure Shell, is a cryptographic network protocol that provides a secure and encrypted method for managing network devices and accessing remote servers. SSH is widely used by administrators and developers to enable secure remote access, file transfers, and remote command execution over unsecured networks, such as the internet.
+SSH (Secure Shell) is a cryptographic network protocol used for secure remote login and other secure network services over an unsecured network. It provides a secure channel over an unsecured network by using strong encryption to protect the connection against eavesdropping, tampering, and man-in-the-middle attacks. SSH is commonly used for remote command-line login, remote command execution, and secure file transfers. It typically runs on TCP port 22 and replaces older, less secure protocols like Telnet. SSH uses public-key cryptography for authentication and supports various authentication methods, including passwords and key-based authentication. It's a fundamental tool for system administrators, developers, and anyone requiring secure remote access to systems.
 
-## Key Features
+Learn more from the following resources:
 
-- **Encryption**: SSH uses a variety of encryption algorithms to ensure the confidentiality and integrity of data transmitted between the client and server.
-
-- **Authentication**: SSH supports multiple authentication methods, including password-based, public key, and host-based authentication, providing flexibility in securely verifying the identities of communicating parties.
-
-- **Port Forwarding**: SSH allows forwarding of network ports, enabling users to tunnel other protocols securely, such as HTTP or FTP, through an encrypted connection.
-
-- **Secure File Transfer**: SSH provides two file transfer protocols, SCP (Secure Copy Protocol) and SFTP (SSH File Transfer Protocol), to securely transfer files between a local client and remote server.
-
-## Common Use Cases
-
-- **Remote System Administration**: Administrators can securely access and manage remote systems, such as servers and network devices, using SSH to execute commands and configure settings.
-
-- **Secure File Transfers**: Developers and administrators can transfer files securely between systems using SCP or SFTP, protecting sensitive data from eavesdropping.
-
-- **Remote Application Access**: Users can securely access remote applications by creating an SSH tunnel, allowing them to connect to services that would otherwise be inaccessible due to firewalls or other network restrictions.
-
-## Tips for Secure SSH Usage
-
-- **Disable root login**: To reduce the risk of unauthorized access, it is recommended to disable direct root login and use a standard user account with sudo privileges for administration tasks.
-
-- **Use Key-Based Authentication**: To further enhance security, disallow password-based authentication and use public key authentication instead, making it more difficult for attackers to gain access through brute-force attacks.
-
-- **Limit SSH Access**: Restrict SSH access to specific IP addresses or networks, minimizing the potential attack surface.
-
-- **Keep SSH Software Updated**: Regularly update your SSH client and server software to ensure you have the latest security patches and features.
-
-In summary, SSH is a vital protocol for ensuring secure communication, remote access, and file transfers. By understanding its key features, use cases, and best practices, users can leverage the security benefits of SSH to protect their sensitive data and systems.
+- [@article@What is SSH? | Secure Shell (SSH) protocol](https://www.cloudflare.com/en-gb/learning/access-management/what-is-ssh/)
+- [@video@How does SSH work](https://www.youtube.com/watch?v=5JvLV2-ngCI)

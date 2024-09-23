@@ -1,17 +1,9 @@
 # Secret Management
 
-Secret management is an important aspect of DevOps, as it involves securely storing and managing sensitive information, such as passwords, API keys, and other secrets, that are used by applications and infrastructure.
-
-There are several ways to manage secrets in a cloud environment:
-
-- Secret stores: A secret store is a specialized database or service that is designed to securely store and manage secrets. Examples of secret stores include Hashicorp Vault, AWS Secrets Manager, and Google Cloud Secret Manager.
-- Encryption: Secrets can be encrypted using a variety of encryption algorithms and protocols, such as AES, RSA, and PGP. Encrypted secrets can be stored in a variety of locations, such as a file system, a database, or a cloud storage service.
-- Access controls: Access to secrets should be restricted to only those users or systems that need them, using techniques such as role-based access controls, multi-factor authentication, and least privilege principles.
-
-Effective secret management is essential for maintaining the security and integrity of a DevOps environment. It is important to regularly review and update secret management practices to ensure that secrets are being stored and managed securely.
+Secret management refers to the secure handling, storage, and distribution of sensitive information such as passwords, API keys, and certificates within an organization's IT infrastructure. It involves using specialized tools and practices to protect secrets from unauthorized access while ensuring they are available to authorized systems and users when needed. Secret management solutions typically offer features like encryption at rest and in transit, access controls, auditing, rotation policies, and integration with various platforms and services. These systems aim to centralize secret storage, reduce the risk of exposure, automate secret lifecycle management, and provide seamless integration with applications and DevOps workflows. Effective secret management is crucial for maintaining security, compliance, and operational efficiency in modern, complex IT environments.
 
 Visit the following resources to learn more:
 
 - [@article@How to Manage Secrets in Web Applications?](https://cs.fyi/guide/secret-management-best-practices)
-- [@article@Secrets management guide — approaches, open source tools, commercial products, challenges and questions](https://medium.com/@burshteyn/secrets-management-guide-approaches-open-source-tools-commercial-products-challenges-db560fd0584d)
-- [@article@Secret Management Architectures: Finding the balance between security and complexity](https://medium.com/slalom-technology/secret-management-architectures-finding-the-balance-between-security-and-complexity-9e56f2078e54)
+- [@article@Why DevSecOps Teams Need Secrets Management](https://www.keepersecurity.com/blog/2023/01/26/why-devsecops-teams-need-secrets-management/)
+- [@video@DevOps Tricks for Managing Secrets in Production](https://www.youtube.com/watch?v=u_L-f7Th_7o)
