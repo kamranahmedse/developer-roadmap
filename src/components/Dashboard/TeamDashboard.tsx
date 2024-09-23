@@ -12,6 +12,7 @@ import { DashboardCardLink } from './DashboardCardLink';
 import { PencilRuler } from 'lucide-react';
 import { DashboardTeamRoadmaps } from './DashboardTeamRoadmaps';
 import type { BuiltInRoadmap } from './PersonalDashboard';
+import { InviteMemberPopup } from '../TeamMembers/InviteMemberPopup';
 
 type TeamDashboardProps = {
   builtInRoleRoadmaps: BuiltInRoadmap[];
@@ -27,6 +28,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [isInvitingMember, setIsInvitingMember] = useState(false);
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(
@@ -90,6 +92,19 @@ export function TeamDashboard(props: TeamDashboardProps) {
 
   return (
     <section className="mt-8">
+      {isInvitingMember && (
+        <InviteMemberPopup
+          onInvited={() => {
+            toast.success('Invite sent');
+            getTeamProgress().finally(() => null);
+            setIsInvitingMember(false);
+          }}
+          onClose={() => {
+            setIsInvitingMember(false);
+          }}
+        />
+      )}
+
       <DashboardTeamRoadmaps
         isLoading={isLoading}
         teamId={teamId}
@@ -125,6 +140,20 @@ export function TeamDashboard(props: TeamDashboardProps) {
               </span>
             );
           })}
+
+          {canManageCurrentTeam && (
+            <button
+              className="group relative"
+              onClick={() => setIsInvitingMember(true)}
+            >
+              <span className="relative flex aspect-square size-8 items-center justify-center overflow-hidden rounded-md border border-dashed bg-gray-100">
+                +
+              </span>
+              <Tooltip position="top-center" additionalClass="text-sm">
+                Add Member
+              </Tooltip>
+            </button>
+          )}
         </div>
       )}
 
