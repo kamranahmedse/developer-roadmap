@@ -5,6 +5,7 @@ images:
   "Redis Roadmap": "https://assets.roadmap.sh/guest/redis-roadmap.png"
   "Bookmarks": "https://assets.roadmap.sh/guest/bookmark-roadmaps.png"
   "Dashboard": "https://assets.roadmap.sh/guest/dashboard-profile.png"
+  "Cyber Security Content": "https://assets.roadmap.sh/guest/cyber-security-content.png"
 seo:
   title: 'Redis Roadmap, Dashboard, Bookmarks - roadmap.sh'
   description: ''
