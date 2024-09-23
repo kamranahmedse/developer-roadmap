@@ -165,8 +165,10 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <slot name='open-source-banner'>
+      <slot name='changelog-banner'>
         <ChangelogBanner />
+      </slot>
+      <slot name='open-source-banner'>
         <OpenSourceBanner />
       </slot>
       <Footer />
