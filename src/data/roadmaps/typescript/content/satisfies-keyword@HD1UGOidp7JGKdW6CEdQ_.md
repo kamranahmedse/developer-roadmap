@@ -32,8 +32,9 @@ const palette: Record<Colors, string | RGB> = {
   bleu: [0, 0, 255],
   //  ~~~~ The typo is now correctly detected
 };
-// But we now have an undesirable error here - 'palette.red' "could" be a string.
-const redComponent = palette.red.at(0);
+// But we now have an undesirable error here 
+// error TS2339: Property 'toUpperCase' does not exist on type 'string | RGB'
+const greenComponent = palette.green.toUpperCase();
 ```
 
 The `satisfies` operator lets us validate that the type of an expression matches some type, without changing the resulting type of that expression. As an example, we could use `satisfies` to validate that all the properties of palette are compatible with `string | number[]`:
