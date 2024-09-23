@@ -54,13 +54,14 @@ export function DashboardPage(props: DashboardPageProps) {
   return (
     <div className="min-h-screen bg-gray-50 pb-20 pt-8">
       <div className="container">
-        <div className="mb-6 sm:mb-8 flex flex-wrap items-center gap-1.5">
+        <div className="mb-6 flex flex-wrap items-center gap-1.5 sm:mb-8">
           <DashboardTab
             label="Personal"
             isActive={!selectedTeamId}
             onClick={() => setSelectedTeamId(undefined)}
             avatar={userAvatar}
           />
+
           {isLoading && (
             <>
               <DashboardTabSkeleton />
