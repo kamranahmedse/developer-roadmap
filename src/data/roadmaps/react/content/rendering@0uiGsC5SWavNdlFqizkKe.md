@@ -15,4 +15,4 @@ Visit the following resources to learn more:
 
 - [@official@Render and Commit - Official Docs](https://react.dev/learn/render-and-commit)
 - [@article@Rendering in React - ui.dev](https://ui.dev/why-react-renders)
-- [@article@RFix the slow render before you fix the re-render - kentcdodds.com](https://kentcdodds.com/blog/fix-the-slow-render-before-you-fix-the-re-render)
+- [@article@Fix the slow render before you fix the re-render](https://kentcdodds.com/blog/fix-the-slow-render-before-you-fix-the-re-render)
