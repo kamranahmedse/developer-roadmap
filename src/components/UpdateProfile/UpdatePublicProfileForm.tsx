@@ -51,8 +51,7 @@ export function UpdatePublicProfileForm() {
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
-  const [roadmapVisibility, setRoadmapVisibility] =
-    useState<AllowedRoadmapVisibility>('all');
+  const [roadmapVisibility, setRoadmapVisibility] = useState<AllowedRoadmapVisibility>('all');
   const [customRoadmapVisibility, setCustomRoadmapVisibility] =
     useState<AllowedCustomRoadmapVisibility>('all');
   const [roadmaps, setRoadmaps] = useState<string[]>([]);

@@ -268,7 +268,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
                 externalLinkHref: '/account/update-profile',
                 externalLinkText: 'Edit',
               })}
-              className={username ? 'border-dashed' : ''}
+              className={
+                !username
+                  ? 'border-dashed border-gray-500 bg-gray-100 hover:border-gray-500 hover:bg-gray-200'
+                  : ''
+              }
             />
 
             <DashboardCard
