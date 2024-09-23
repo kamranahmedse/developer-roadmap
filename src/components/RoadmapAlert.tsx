@@ -53,14 +53,14 @@ export function RoadmapAlert(props: RoadmapAlertProps) {
           className="flex items-center gap-1.5 rounded-md border border-yellow-600 px-2 py-1 text-yellow-700 transition-colors hover:bg-yellow-300 hover:text-yellow-800"
         >
           <HeartHandshake size={15} />
-          Explore Community Roadmaps
+          Community Roadmaps
         </a>
         <a
           href="/ai/explore"
           className="flex items-center gap-1.5 rounded-md border border-yellow-600 px-2 py-1 text-yellow-700 transition-colors hover:bg-yellow-300 hover:text-yellow-800"
         >
           <Telescope size={15} />
-          Explore other AI Roadmaps
+          AI Generated Roadmaps
         </a>
       </p>
 
