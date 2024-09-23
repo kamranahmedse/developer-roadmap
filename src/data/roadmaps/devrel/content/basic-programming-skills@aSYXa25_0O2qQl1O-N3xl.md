@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@TheNewStack.io - Devrel](https://thenewstack.io/devrel-for-beginners-how-to-get-started/)
 - [@article@Getting Started With Devrel- Dev.to](https://dev.to/rejoice/getting-started-with-devrel-22n3)
-- [@article@Pluratsight](https://www.pluralsight.com/resources/blog/tech-operations/developer-relations-getting-a-devrel-job)
+- [@article@How to become a DevRel](https://www.pluralsight.com/resources/blog/tech-operations/developer-relations-getting-a-devrel-job)
