@@ -1,37 +1,8 @@
 # Public vs Private IP Addresses
 
-When it comes to IP addresses, they are categorized in two major types: Public IP Addresses and Private IP Addresses. Both play a key role in network communication; however, they serve different purposes. Let's examine them more closely:
+Public addresses are IP addresses assigned to devices directly accessible over the internet, allowing them to communicate with external networks and services. In contrast, private addresses are used within local networks and are not routable over the internet, providing a way for devices within a private network to communicate with each other while conserving public IP address space. Public addresses are unique across the internet, whereas private addresses are reused across different local networks and are typically managed by network address translation (NAT) to interface with public networks.
 
-## Public IP Addresses
+Learn more from the following resources:
 
-A public IP address is a globally unique IP address that is assigned to a device or a network. This type of IP address is reachable over the Internet and enables devices to communicate with other devices, servers, and networks located anywhere in the world.
-
-Here are some key features of public IP addresses:
-
-- Routable over the Internet.
-- Assigned by the Internet Assigned Numbers Authority (IANA).
-- Usually assigned to an organization or Internet Service Provider (ISP).
-- Can be either static (permanent) or dynamic (changes periodically).
-
-Example: `72.14.207.99`
-
-## Private IP Addresses
-
-Private IP addresses, on the other hand, are used within local area networks (LANs) and are not visible on the Internet. These addresses are reserved for internal use within an organization, home, or local network. They are often assigned by a router or a network administrator for devices within the same network, such as your computer, printer, or smartphone.
-
-Here are some key features of private IP addresses:
-
-- Not routable over the Internet (requires Network Address Translator (NAT) to communicate with public IP addresses).
-- Assigned by local network devices, such as routers or network administrators.
-- Reusable in different private networks (as they are not globally unique).
-- Static or dynamic (depending on the network's configuration).
-
-Private IP address ranges:
-
-- `10.0.0.0` to `10.255.255.255` (Class A)
-- `172.16.0.0` to `172.31.255.255` (Class B)
-- `192.168.0.0` to `192.168.255.255` (Class C)
-
-Example: `192.168.1.100`
-
-In summary, public IP addresses are used for communication over the Internet, whereas private IP addresses are used within local networks. Understanding the difference between these two types of IP addresses is essential for grasping the basics of network connectivity and cyber security.
+- [@article@Public vs Private IP Addresses](https://www.avast.com/c-ip-address-public-vs-private)
+- [@video@What is the difference between public and private ip?](https://www.youtube.com/watch?v=R6Czae6Iow4&t=1s)

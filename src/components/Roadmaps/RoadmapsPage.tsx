@@ -8,6 +8,10 @@ import {
   getUrlParams,
   setUrlParams,
 } from '../../lib/browser.ts';
+import { RoadmapCard } from './RoadmapCard.tsx';
+import { httpGet } from '../../lib/http.ts';
+import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps.tsx';
+import { isLoggedIn } from '../../lib/jwt.ts';
 
 const groupNames = [
   'Absolute Beginners',
@@ -27,7 +31,7 @@ const groupNames = [
 
 type AllowGroupNames = (typeof groupNames)[number];
 
-type GroupType = {
+export type GroupType = {
   group: AllowGroupNames;
   roadmaps: {
     title: string;
@@ -281,6 +285,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Redis',
+        link: '/redis',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
@@ -473,6 +483,37 @@ export function RoadmapsPage() {
     ]);
   }, [activeGroup]);
 
+  async function loadProgress() {
+    const { response: progressList, error } =
+      await httpGet<UserProgressResponse>(
+        `${import.meta.env.PUBLIC_API_URL}/v1-get-hero-roadmaps`,
+      );
+
+    if (error || !progressList) {
+      return;
+    }
+
+    progressList?.forEach((progress) => {
+      window.dispatchEvent(
+        new CustomEvent('mark-favorite', {
+          detail: {
+            resourceId: progress.resourceId,
+            resourceType: progress.resourceType,
+            isFavorite: progress.isFavorite,
+          },
+        }),
+      );
+    });
+  }
+
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      return;
+    }
+
+    loadProgress().finally(() => {});
+  }, []);
+
   useEffect(() => {
     const { g } = getUrlParams() as { g: AllowGroupNames };
     if (!g) {
@@ -547,13 +588,7 @@ export function RoadmapsPage() {
 
               <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
                 {group.roadmaps.map((roadmap) => (
-                  <a
-                    key={roadmap.link}
-                    className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
-                    href={roadmap.link}
-                  >
-                    {roadmap.title}
-                  </a>
+                  <RoadmapCard roadmap={roadmap} key={roadmap.link} />
                 ))}
               </div>
             </div>

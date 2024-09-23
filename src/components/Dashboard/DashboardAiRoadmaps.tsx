@@ -4,7 +4,13 @@ import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { Simulate } from 'react-dom/test-utils';
-import { Bot, BrainCircuit, Map, PencilRuler } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Bot,
+  BrainCircuit,
+  Map,
+  PencilRuler,
+} from 'lucide-react';
 
 type DashboardAiRoadmapsProps = {
   roadmaps: {
@@ -20,9 +26,18 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
 
   return (
     <>
-      <h2 className="mb-2 mt-6 text-xs uppercase text-gray-400">
-        AI Generated Roadmaps
-      </h2>
+      <div className="mb-2 mt-6 flex items-center justify-between gap-2">
+        <h2 className="text-xs uppercase text-gray-400">
+          My AI Roadmaps
+        </h2>
+
+        <a
+          href="/ai/explore"
+          className="rounded-full bg-gray-200 px-2.5 py-0.5 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
+        >
+          AI Generated Roadmaps
+        </a>
+      </div>
 
       {!isLoading && roadmaps.length === 0 && (
         <DashboardCardLink
@@ -47,8 +62,8 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
           <>
             {roadmaps.map((roadmap) => (
               <a
-                href={`/r/${roadmap.slug}`}
-                className="relative rounded-md border bg-white p-2.5 text-left text-sm shadow-sm truncate hover:border-gray-400 hover:bg-gray-50"
+                href={`/ai/${roadmap.slug}`}
+                className="relative truncate rounded-md border bg-white p-2.5 text-left text-sm shadow-sm hover:border-gray-400 hover:bg-gray-50"
               >
                 {roadmap.title}
               </a>
@@ -69,9 +84,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
 
 type CustomProgressCardSkeletonProps = {};
 
-function RoadmapCardSkeleton(
-  props: CustomProgressCardSkeletonProps,
-) {
+function RoadmapCardSkeleton(props: CustomProgressCardSkeletonProps) {
   return (
     <div className="h-[42px] w-full animate-pulse rounded-md bg-gray-200" />
   );

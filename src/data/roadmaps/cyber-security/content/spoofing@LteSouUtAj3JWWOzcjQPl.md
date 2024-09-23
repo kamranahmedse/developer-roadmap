@@ -5,3 +5,4 @@ Spoofing is a form of deception where someone or something pretends to be anothe
 Visit the following resources to learn more:
 
 - [@article@Definition and Explanation of Spoofing](https://www.kaspersky.com/resource-center/definitions/spoofing)
+- [@video@What is spoofing?](https://www.youtube.com/watch?v=jIS9XUC4TB4)

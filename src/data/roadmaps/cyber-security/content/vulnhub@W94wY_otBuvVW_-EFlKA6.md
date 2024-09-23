@@ -1,19 +1,8 @@
 # VulnHub
 
-[VulnHub](https://www.vulnhub.com/) is a platform that provides a wide range of vulnerable virtual machines for you to practice your cybersecurity skills in a safe and legal environment. These machines, also known as virtual labs or boot-to-root (B2R), often mimic real-world scenarios, and are designed to train and challenge security enthusiasts, researchers, and students who want to learn how to find and exploit vulnerabilities.
+VulnHub is an online platform that provides a collection of intentionally vulnerable virtual machines for cybersecurity enthusiasts, penetration testers, and ethical hackers to practice their skills. These virtual machines simulate various real-world scenarios with different vulnerabilities and security misconfigurations. Users can download and run these VMs in their own environments, attempting to exploit vulnerabilities and gain root access. VulnHub offers a hands-on approach to learning about cybersecurity, allowing users to explore different attack vectors, practice exploitation techniques, and understand common security flaws in a safe, legal environment. It's a valuable resource for both beginners and experienced professionals to enhance their offensive security skills and prepare for certifications.
 
-## How does VulnHub work?
+Learn more from the following resources:
 
-- **Download**: You can download a variety of virtual machines (VMs) from the VulnHub website. These VMs are usually available in `.ova`, `.vmx`, or `.vmdk` formats, which can be imported into virtualization platforms like VMware or VirtualBox.
-- **Configure**: After importing the VM, you'll need to configure the networking settings to ensure the host machine and the VM can communicate with each other.
-- **Attack**: You can now start exploring the VM, searching for vulnerabilities, and trying to exploit them. The ultimate goal is often to gain root or administrative access on the target machine.
-
-## Learning Resources
-
-VulnHub also provides learning resources like walkthroughs and hints from its community. These resources can be very helpful if you're a beginner and feeling stuck or just curious about another approach to solve a challenge. Remember that it's essential to experiment, learn from your mistakes, and improve your understanding of various cybersecurity concepts.
-
-## CTF Integration
-
-VulnHub can also be a great resource to practice for Capture The Flag (CTF) challenges. Many of the virtual machines and challenges available on VulnHub mirror the type of challenges you might encounter in a CTF competition. By practicing with these VMs, you will gain valuable experience that can be applied in a competitive CTF environment.
-
-In summary, VulnHub is an excellent platform for anyone looking to improve their cybersecurity skills and gain hands-on experience by exploiting vulnerabilities in a safe and legal environment. The range of challenge difficulty ensures that both beginners and experienced security professionals can benefit from the platform while preparing for real-world scenarios and CTF competitions.
+- [@official@Vulnhub Website](https://www.vulnhub.com/)
+- [@article@A Beginners Guide to Vulnhub](https://medium.com/@gavinloughridge/a-beginners-guide-to-vulnhub-part-1-52b06466635d)

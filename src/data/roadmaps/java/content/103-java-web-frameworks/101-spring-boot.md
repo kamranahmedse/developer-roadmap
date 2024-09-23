@@ -4,7 +4,7 @@ Spring Boot is an open source, microservice-based Java web framework. The Spring
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Spring Boot Roadmap](/spring-boot)
+- [@roadmap@Visit Dedicated Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 - [@official@Spring Boot](https://spring.io/projects/spring-boot/)
 - [@article@What is Spring Boot?](https://www.ibm.com/cloud/learn/java-spring-boot)
 - [@article@Spring Boot Tutorial](https://www.javaguides.net/2021/07/spring-boot-tutorial-for-beginners.html)

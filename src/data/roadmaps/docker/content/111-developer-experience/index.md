@@ -13,3 +13,4 @@ So far we have only discussed using docker for deploying applications. However, 
 For more details and practical examples:
 
 - [@article@Developer Experience Wishlist - Docker](https://courses.devopsdirective.com/docker-beginner-to-pro/lessons/11-development-workflow/00-devx-wishlist#key-devx-features)
+- [@official@Docker Developer Experience](https://www.docker.com/blog/cto-chat-overcoming-the-developer-experience-gap-feat-redmonk-flow-io/)

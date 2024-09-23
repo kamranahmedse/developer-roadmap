@@ -1,4 +1,4 @@
-# Copying and Renaming Files 
+# Copying and Renaming Files
 
 In Linux, working with files is a daily operation. Whether you are a system administrator, a developer or a regular user, there are tasks where you need to copy, rename, or perform similar actions with files and directories.
 
@@ -15,3 +15,8 @@ mv /path/to/original/file /path/to/new/file
 ```
 
 Remember that Linux commands are case sensitive so make sure to enter the commands exactly as they are.
+
+Learn more from the following resources:
+
+- [@article@Linux cp Command: File Copying](https://labex.io/tutorials/linux-linux-cp-command-file-copying-209744)
+- [@article@Linux mv Command: File Moving and Renaming](https://labex.io/tutorials/linux-linux-mv-command-file-moving-and-renaming-209743)

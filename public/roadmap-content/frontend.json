@@ -138,6 +138,11 @@
     "description": "Web hosting is an online service that allows you to publish your website files onto the internet. So, anyone who has access to the internet has access to your website.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Web Hosting Explained for Beginners",
+        "url": "https://www.hostinger.com/tutorials/what-is-web-hosting/",
+        "type": "article"
+      },
+      {
         "title": "What Is Web Hosting? Explained",
         "url": "https://www.youtube.com/watch?v=htbY9-yggB0",
         "type": "video"
@@ -542,7 +547,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -972,7 +977,7 @@
     "links": [
       {
         "title": "Visit Dedicated Angular Roadmap",
-        "url": "/angular",
+        "url": "https://roadmap.sh/angular",
         "type": "article"
       },
       {
@@ -998,7 +1003,7 @@
     "links": [
       {
         "title": "Visit Dedicated Vue Roadmap",
-        "url": "/vue",
+        "url": "https://roadmap.sh/vue",
         "type": "article"
       },
       {
@@ -1039,7 +1044,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -2063,7 +2068,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -2545,7 +2550,7 @@
     "links": [
       {
         "title": "Visit Dedicated Flutter Roadmap",
-        "url": "/flutter",
+        "url": "https://roadmap.sh/flutter",
         "type": "article"
       },
       {
@@ -2680,7 +2685,7 @@
     "links": [
       {
         "title": "Visit Dedicated Flutter Roadmap",
-        "url": "/flutter",
+        "url": "https://roadmap.sh/flutter",
         "type": "article"
       },
       {

@@ -1,6 +1,6 @@
 # OAuth Apps
 
-GitHub OAuth Apps are a way to integrate with the GitHub platform using OAuth authentication. They allow developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.
+GitHub OAuth Apps allow developers to integrate with GitHub using OAuth 2.0 authentication. They enable secure, token-based access to specific GitHub resources like repositories, issues, and pull requests. OAuth Apps can automate tasks, personalize interactions, and provide real-time notifications through webhooks, all while allowing users to approve only the necessary permissions without sharing their credentials.
 
 Visit the following resources to learn more:
 

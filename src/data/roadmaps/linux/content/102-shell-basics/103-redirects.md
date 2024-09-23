@@ -15,3 +15,7 @@ ls -al > file_list.txt
 ```
 
 This command will write the output of 'ls -al' into 'file_list.txt', whether or not the file initially existed. It will be created if necessary, and if it already exists – it will be overwritten.
+
+Learn more from the following resources:
+
+- [@article@Logical Commands and Redirection](https://labex.io/tutorials/linux-logical-commands-and-redirection-387332)

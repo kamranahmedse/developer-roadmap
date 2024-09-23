@@ -19,7 +19,6 @@ export function DashboardCardLink(props: DashboardCardLinkProps) {
         className,
       )}
       href={href}
-      target="_blank"
     >
       <Icon className="mb-4 size-10 text-gray-300" strokeWidth={1.25} />
       <h4 className="text-xl font-semibold tracking-wide">{title}</h4>
