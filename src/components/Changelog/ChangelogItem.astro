@@ -15,23 +15,23 @@ const formattedDate = DateTime.fromISO(frontmatter.date).toFormat(
 );
 ---
 
-<div class='relative'>
+<div class='relative mb-6'>
   <span
     class='absolute -left-6 top-2 h-2 w-2 flex-shrink-0 rounded-full bg-gray-300'
   ></span>
 
-  <div class='mb-3 flex items-center gap-2'>
+  <div class='mb-3 flex flex-col sm:flex-row items-start sm:items-center gap-0.5 sm:gap-2'>
     <span class='flex-shrink-0 text-xs tracking-wide text-gray-400'>
       {formattedDate}
     </span>
-    <span class='truncate text-base font-medium'>
+    <span class='truncate text-base font-medium text-balance'>
       {changelog.frontmatter.title}
     </span>
   </div>
 
   <div class='rounded-xl border bg-white p-6'>
     {frontmatter.images && (
-      <div class='mb-5 -mx-6'>
+      <div class='mb-5 hidden sm:block -mx-6'>
         <ChangelogImages images={frontmatter.images} client:load />
       </div>
     )}

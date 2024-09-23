@@ -14,26 +14,30 @@ const allChangelogs = await getAllChangelogs();
   noIndex={true}
 >
   <div class='bg-gray-100 px-4'>
-    <div class='border-b bg-white text-left -mx-4'>
-      <div class='mx-auto max-w-[500px] py-5 sm:pb-10 sm:pt-12 text-left px-4 sm:text-center'>
-        <h1 class='mb-0.5 sm:mb-3 text-2xl sm:text-4xl font-semibold'>Changelog</h1>
-        <p>We are constantly improving and updating roadmap.sh</p>
+    <div class='-mx-4 border-b bg-white text-left'>
+      <div
+        class='mx-auto max-w-[500px] px-4 py-5 text-left sm:pb-10 sm:pt-12 sm:text-center'
+      >
+        <h1 class='mb-0.5 text-2xl font-semibold sm:mb-3 sm:text-4xl'>
+          Changelog
+        </h1>
+        <p class='text-balance text-sm sm:text-base'>
+          We are constantly improving and updating roadmap.sh
+        </p>
       </div>
     </div>
 
-    <div class='relative mx-auto max-w-[600px] pb-8 pt-4'>
-      <div class='space-y-6'>
-        <div
-          class='absolute sm:block hidden inset-y-0 -left-5 w-px -translate-x-[0.5px] bg-gray-300'
-        >
-        </div>
-
-        {
-          allChangelogs.map((changelog) => (
-            <ChangelogItem changelog={changelog} />
-          ))
-        }
+    <div class='relative mx-auto max-w-[600px] pb-8 pt-8'>
+      <div
+        class='absolute inset-y-0 -left-5 hidden w-px -translate-x-[0.5px] bg-gray-300 sm:block'
+      >
       </div>
+
+      {
+        allChangelogs.map((changelog) => (
+          <ChangelogItem changelog={changelog} />
+        ))
+      }
     </div>
   </div>
 </BaseLayout>
