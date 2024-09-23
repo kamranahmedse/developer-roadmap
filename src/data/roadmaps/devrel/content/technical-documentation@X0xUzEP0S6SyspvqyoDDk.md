@@ -4,5 +4,6 @@ Technical documentation refers to the process of creating and maintaining writte
 
 Learn more from the following resources:
 
+- [@roadmap@Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 - [@article@Technical Writing - MDN Docs](https://developer.mozilla.org/en-US/blog/technical-writing/)
 - [@article@Technical Documentation - Wikipedia](https://en.wikipedia.org/wiki/Technical_documentation)
