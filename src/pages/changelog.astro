@@ -3,6 +3,7 @@ import SimplePageHeader from '../components/SimplePageHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllChangelogs } from '../lib/changelog';
 import ChangelogItem from '../components/Changelog/ChangelogItem.astro';
+import ChangelogLaunch from '../components/Changelog/ChangelogLaunch.astro';
 
 const allChangelogs = await getAllChangelogs();
 ---
@@ -38,6 +39,8 @@ const allChangelogs = await getAllChangelogs();
           <ChangelogItem changelog={changelog} />
         ))
       }
+
+      <ChangelogLaunch />
     </div>
   </div>
 </BaseLayout>

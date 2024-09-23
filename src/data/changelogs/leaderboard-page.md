@@ -8,10 +8,10 @@ images:
 seo:
   title: 'Leaderboard Page - roadmap.sh'
   description: ''
-date: 2024-09-13
+date: 2024-09-17
 ---
 
-TL;DR: new dashboard, leaderboard page and projects page.
+Focus for this week was improving the user experience and adding new features to the platform. Here are the highlights:
 
 - New dashboard for logged-in users
 - New leaderboard page
@@ -20,7 +20,7 @@ TL;DR: new dashboard, leaderboard page and projects page.
 - Frontend and backend content improvements
 - Bug fixes
 
-We just launched a dedicated dashboard for logged-in users to showing progress, projects, bookmarks and more. You can still access the old homepage by visiting [this page](https://roadmap.sh/home).
+[Dashboard](/) would allow logged-in users to keep track of their bookmarks, learning progress, project and more. You can still visit the [old homepage](https://roadmap.sh/home) once you login.
 
 We also launched a new [leaderboard page](/leaderboard) showing the most active users, users who completed most projects and more.
 
