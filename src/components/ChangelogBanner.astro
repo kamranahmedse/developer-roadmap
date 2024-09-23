@@ -1,0 +1,65 @@
+---
+import { getAllChangelogs } from '../lib/changelog';
+import { DateTime } from 'luxon';
+
+const allChangelogs = await getAllChangelogs();
+const top10Changelogs = allChangelogs.slice(0, 10);
+---
+
+<div class='border-b border-t bg-white py-6 text-left sm:py-16 sm:text-center'>
+  <div class='container !max-w-[650px]'>
+    <p class='text-2xl font-bold sm:text-5xl'>
+      <img
+        src='/images/rocket.gif'
+        alt='Rocket'
+        class='mr-2 inline h-12 w-12'
+      />
+      Actively Maintained
+    </p>
+    <p class='my-2 text-sm leading-relaxed text-gray-600 sm:my-5 sm:text-lg'>
+      We are always improving our content, adding new resources and adding
+      features to enhance your learning experience.
+    </p>
+
+    <!-- here -->
+    <div class='relative mt-8 text-left'>
+      <div
+        class='absolute inset-y-0 left-[120px] hidden w-px -translate-x-[0.5px] translate-x-[5.75px] bg-gray-300 sm:block'
+      >
+      </div>
+      <ul class='relative flex flex-col gap-4 py-4'>
+        {
+          top10Changelogs.map((changelog) => {
+            const formattedDate = DateTime.fromISO(
+              changelog.frontmatter.date,
+            ).toFormat('dd LLL, yyyy');
+            return (
+              <li class='relative'>
+                <a
+                  href={`/changelog#${changelog.id}`}
+                  class='flex items-center'
+                >
+                  <span class='w-[120px] flex-shrink-0 pr-4 text-right text-sm tracking-wide text-gray-400'>
+                    {formattedDate}
+                  </span>
+                  <span class='h-3 w-3 flex-shrink-0 rounded-full bg-gray-300' />
+                  <span class='text-balance pl-8 text-base font-medium text-gray-900'>
+                    {changelog.frontmatter.title}
+                  </span>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+    <div class='mt-8 text-center'>
+      <a
+        href='/changelog'
+        class='inline-block rounded-full bg-gray-800 px-6 py-2 text-base text-white transition-colors hover:bg-gray-700'
+      >
+        View Full Changelog
+      </a>
+    </div>
+  </div>
+</div>
