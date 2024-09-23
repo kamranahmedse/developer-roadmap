@@ -1,6 +1,6 @@
 # Serverless
 
-Serverless is an architecture in which a developer builds and runs applications without provisioning or managing servers. With cloud computing/serverless, servers exist but are managed by the cloud provider. Resources are used as they are needed, on demand and often using auto scaling.
+Serverless computing is a cloud computing model where developers build and run applications without managing server infrastructure. In this model, cloud providers handle the server management, scaling, and maintenance tasks. Developers deploy code in the form of functions, which are executed in response to events or triggers, and are billed based on the actual usage rather than reserved capacity. This approach simplifies development by abstracting infrastructure concerns, enabling automatic scaling, and reducing operational overhead. Common serverless platforms include AWS Lambda, Google Cloud Functions, and Azure Functions, which support a range of event-driven applications and microservices.
 
 Visit the following resources to learn more:
 

@@ -1,14 +1,8 @@
 # SHA family
 
-SHA (Secure Hash Algorithms) is a family of cryptographic hash functions created by the NIST (National Institute of Standards and Technology). The family includes:
-
-- SHA-0: Published in 1993, this is the first algorithm in the family. Shortly after its release, it was discontinued for an undisclosed significant flaw.
-- SHA-1: Created to replace SHA-0 and which resembles MD5, this algorithm has been considered insecure since 2010.
-- SHA-2: This isn't an algorithm, but a set of them, with SHA-256 and SHA-512 being the most popular. SHA-2 is still secure and widely used.
-- SHA-3: Born in a competition, this is the newest member of the family. SHA-3 is very secure and doesn't carry the same design flaws as its brethren.
+SHA (Secure Hash Algorithm) is a family of cryptographic hash functions designed to generate a fixed-size hash value from variable-sized input data, ensuring data integrity and security. SHA functions are used for tasks such as verifying data integrity, storing passwords securely, and creating digital signatures. The SHA family includes several versions, such as SHA-1, SHA-2, and SHA-3. SHA-1 produces a 160-bit hash value but is now considered weak due to vulnerabilities, while SHA-2, with hash sizes of 224, 256, 384, and 512 bits, offers stronger security. SHA-3 is the latest member, providing additional security features and flexibility.
 
 Visit the following resources to learn more:
 
-- [@article@Wikipedia - SHA-1](https://en.wikipedia.org/wiki/SHA-1)
-- [@article@Wikipedia - SHA-2](https://en.wikipedia.org/wiki/SHA-2)
-- [@article@Wikipedia - SHA-3](https://en.wikipedia.org/wiki/SHA-3)
+- [@article@What is SHA?](https://www.encryptionconsulting.com/education-center/what-is-sha/)
+- [@video@SHA: Secure Hashing Algorithm](https://www.youtube.com/watch?v=DMtFhACPnTY)

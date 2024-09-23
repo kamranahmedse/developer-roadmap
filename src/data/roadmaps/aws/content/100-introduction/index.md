@@ -4,6 +4,7 @@ AWS (Amazon Web Services) offers a broad set of global cloud-based products incl
 
 Learn more from the following links:
 
+- [@article@How to create an AWS Account](https://grapplingdev.com/tutorials/how-to-create-aws-account)
 - [@article@AWS Documentation](https://docs.aws.amazon.com/)
 - [@article@Introduction of AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 - [@video@AWS Tutorial for Beginners](https://www.youtube.com/watch?v=zA8guDqfv40)

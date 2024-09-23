@@ -5,7 +5,7 @@ Relational databases are a type of database management system (DBMS) that stores
 - Use of SQL (Structured Query Language) for querying and managing data
 - Support for ACID transactions (Atomicity, Consistency, Isolation, Durability)
 - Enforcement of data integrity through constraints (e.g., primary keys, foreign keys)
-- bility to establish relationships between tables, enabling complex queries and data retrieval
+- Ability to establish relationships between tables, enabling complex queries and data retrieval
 - Scalability and support for multi-user environments
 
 Examples of popular relational database systems include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. They are widely used in various applications, from small-scale projects to large enterprise systems, due to their reliability, consistency, and powerful querying capabilities.

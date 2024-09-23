@@ -1,24 +1,18 @@
 # RMF
 
-The **Risk Management Framework (RMF)** is a comprehensive, flexible approach for managing cybersecurity risks in an organization. It provides a structured process to identify, assess, and manage risks associated with IT systems, networks, and data. Developed by the National Institute of Standards and Technology (NIST), the RMF is widely adopted by various government and private sector organizations.
+A **Risk Management Framework (RMF)** is a structured approach that organizations use to identify, assess, manage, and mitigate risks. It provides a systematic process to ensure that risks are effectively controlled and aligned with the organization's objectives. Key components include:
 
-## Key Components
+1. **Risk Identification:** Identifying potential internal and external risks that could impact the organization.
+2. **Risk Assessment:** Evaluating the likelihood and impact of identified risks.
+3. **Risk Mitigation:** Developing strategies to reduce or eliminate risks, such as controls, policies, and contingency plans.
+4. **Risk Monitoring:** Continuously tracking risks and the effectiveness of mitigation measures.
+5. **Communication and Reporting:** Regularly updating stakeholders on the risk status and actions taken.
+6. **Review and Improvement:** Periodically reassessing the framework and adapting to changes in the business or regulatory environment.
 
-The RMF consists of six steps, which are continuously repeated to ensure the continuous monitoring and improvement of an organization's cybersecurity posture:
+The RMF ensures that risks are managed proactively and consistently across the organization, helping to safeguard assets and support strategic decision-making.
 
-- **Categorize** - Classify the information system and its information based on their impact levels (e.g., low, moderate, or high).
-- **Select** - Choose appropriate security controls from the NIST SP 800-53 catalog based on the system's categorization.
-- **Implement** - Apply the chosen security controls to the IT system and document the configuration settings and implementation methods.
-- **Assess** - Determine the effectiveness of the implemented security controls by testing and reviewing their performance against established baselines.
-- **Authorize** - Grant authorization to operate the IT system, based on the residual risks identified during the assessment phase, and document the accepted risks.
-- **Monitor** - Regularly review and update the security controls to address any changes in the IT system or environment or to respond to newly identified threats.
+Learn more from the following resources:
 
-## Benefits of RMF
+- [@article@What is the Risk Management Framework?](https://www.techtarget.com/searchcio/definition/Risk-Management-Framework-RMF)
+- [@video@RMF explained in 5 minutes](https://www.youtube.com/watch?v=X5yqPFp__rc)
 
-- **Clear and consistent process**: RMF provides a systematic and repeatable process for managing cybersecurity risks.
-- **Flexibility**: It can be tailored to an organization's unique requirements and risk tolerance levels.
-- **Standardization**: RMF facilitates the adoption of standardized security controls and risk management practices across the organization.
-- **Accountability**: It promotes transparency and clear assignment of responsibilities for managing risks.
-- **Continuous improvement**: By monitoring and revisiting the risks and security controls, organizations can ensure that their cybersecurity posture remains effective and up-to-date.
-
-In summary, the Risk Management Framework (RMF) is a vital component of an organization's cybersecurity strategy. By following the structured and continuous process outlined in the RMF, organizations can effectively manage the cybersecurity risks they face and maintain a robust and resilient cybersecurity posture.

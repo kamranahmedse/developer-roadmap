@@ -23,7 +23,7 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
         </span>
         Projects are live on the{' '}
         <a
-          href={'/backend/projects'}
+          href={'/projects'}
           className="font-medium text-blue-500 underline underline-offset-2"
         >
           backend roadmap

@@ -37,54 +37,11 @@ Here are some essential Docker CLI commands to familiarize yourself with:
 
 A Dockerfile is a script containing instructions to build a Docker image. You can use the Docker CLI to build, update, and manage Docker images using a Dockerfile.
 
-Here is a simple example of a Dockerfile:
-
-```dockerfile
-# Set the base image to use
-FROM alpine:3.7
-
-# Update the system and install packages
-RUN apk update && apk add curl
-
-# Set the working directory
-WORKDIR /app
-
-# Copy the application file
-COPY app.sh .
-
-# Set the entry point
-ENTRYPOINT ["./app.sh"]
-```
-
-To build the image, use the command:
-
-```bash
-docker build -t my-image .
-```
-
 ## 5. Docker Compose
 
 Docker Compose is a CLI tool for defining and managing multi-container Docker applications using YAML files. It works together with the Docker CLI, offering a consistent way to manage multiple containers and their dependencies.
 
-Install Docker Compose using the official [installation guide](https://docs.docker.com/compose/install/), and then you can create a `docker-compose.yml` file to define and run multi-container applications:
+Visit the following resources to learn more:
 
-```yaml
-version: '3'
-services:
-  web:
-    image: webapp-image
-    ports:
-      - "80:80"
-  database:
-    image: mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=my-secret-pw
-```
-
-Run the application using the command:
-
-```bash
-docker-compose up
-```
-
-In conclusion, the Docker CLI is a robust and versatile tool for managing all aspects of Docker containers and resources. Once familiar with its commands and capabilities, you'll be well-equipped to develop, maintain and deploy applications using Docker with ease.
+- [@official@Docker CLI](https://docs.docker.com/reference/cli/docker/)
+- [@official@Docker Compose](https://docs.docker.com/compose/)

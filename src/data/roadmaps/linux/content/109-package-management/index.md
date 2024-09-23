@@ -1,4 +1,4 @@
-# Package Management 
+# Package Management
 
 Package Management is a crucial concept in Linux that aids in the handling of packages (collections of files). It not only allows the user to install new software with single commands but also helps manage existing ones. This includes installing, updating, configuring, and removing software packages. Package management incorporates a standardized system that keeps track of every software's prerequisites and takes care of installation, updates and removal.
 
@@ -11,3 +11,7 @@ sudo apt-get install <package-name>
 ```
 
 Such vital features have made package management systems an integral part of Linux distributions, allowing users to handle applications efficiently.
+
+Learn more from the following resources:
+
+- [@article@Software Installation on Linux](https://labex.io/tutorials/linux-software-installation-on-linux-18005)

@@ -1,11 +1,10 @@
 # TeamCity
 
-TeamCity is a CI/CD service provided by JetBrains. TeamCity can be used as a SaaS offering or self-managed using your own resources.
+TeamCity is a continuous integration (CI) and continuous delivery (CD) server developed by JetBrains, designed to automate the build, test, and deployment processes in software development. It supports multiple languages and frameworks, offering a flexible and scalable environment for managing pipelines. TeamCity provides powerful features like version control integration, build chaining, parallel execution, and detailed reporting. It also offers a user-friendly web interface, customizable build configurations, and extensive plugin support, making it a popular choice for teams aiming to streamline their CI/CD workflows.
 
 Visit the following resources to learn more:
 
-- [@article@TeamCity Website](https://www.jetbrains.com/teamcity/)
-- [@article@Official Documentation](https://www.jetbrains.com/help/teamcity/teamcity-documentation.html)
+- [@official@Official Documentation](https://www.jetbrains.com/help/teamcity/teamcity-documentation.html)
 - [@article@TeamCity Tutorials](https://www.jetbrains.com/teamcity/tutorials/)
-- [@article@TeamCity Learning Portal](https://www.jetbrains.com/teamcity/learn/)
+- [@video@CI/CD with JetBrains TeamCity](https://www.youtube.com/watch?v=zqi4fDF-S60)
 - [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

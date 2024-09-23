@@ -1,13 +1,19 @@
-# SCRUM
+# Scrum
 
-SCRUM is an agile framework designed to help teams work together more effectively, particularly in software development. It focuses on iterative progress, where work is completed in small, time-boxed iterations known as sprints. Each sprint typically lasts between two to four weeks and includes activities like sprint planning, daily stand-ups, sprint reviews, and retrospectives.
+`Scrum` is a popular agile framework used for project management, particularly in software development. It emphasizes iterative development, collaboration, and flexibility to deliver high-quality products.
 
-The Scrum framework is built around key roles: the **Product Owner**, who is responsible for managing the product backlog and ensuring that the team is working on the most valuable tasks; the **Scrum Master**, who facilitates the Scrum process and helps the team improve continuously; and the **Development Team**, which is responsible for delivering the product increment at the end of each sprint.
+Key elements of Scrum:
 
-Scrum emphasizes transparency, inspection, and adaptation, allowing teams to quickly respond to changing requirements and continuously improve their processes and the product itself. This flexibility and focus on continuous improvement are what make Scrum so effective in managing complex projects.
+- **Sprints**: Time-boxed iterations (usually 2-4 weeks) where teams work on specific goals.
+- **Product Backlog**: Prioritized list of features or requirements for the product.
+- **Sprint Backlog**: Selected items from the Product Backlog to be completed during a Sprint.
+- **Daily Scrum (Stand-up)**: Brief daily meeting where team members share progress, challenges, and plans for the day.
+- **Sprint Review**: Meeting at the end of a Sprint to demonstrate completed work and gather feedback.
+- **Sprint Retrospective**: Meeting to reflect on the Sprint, identify improvements, and adjust processes for the next Sprint.
 
-For further reading and a deeper understanding of Scrum, you can check out these resources:
+Visit the following resources to learn more:
 
-- [@article@Atlassian's Introduction to Scrum](https://www.atlassian.com/agile/scrum)
-- [@article@The Official Scrum Guide](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf)
-- [@article@Adobe's Overview on Scrum](https://business.adobe.com/blog/basics/scrum-agile-project-management)
+- [@article@What is scrum and how to get started](https://www.atlassian.com/agile/scrum.)
+- [@article@Scrum Methodology: The Complete Guide & Best Practices](https://thedigitalprojectmanager.com/projects/pm-methodology/scrum-methodology-complete-guide/)
+- [@article@Essential Topics for the Scrum Product Owner](https://www.scrum.org/resources/blog/essential-topics-scrum-product-owner)
+- [@article@Scrum • Topics - Thriving Technologist](https://thrivingtechnologist.com/topics/scrum/)

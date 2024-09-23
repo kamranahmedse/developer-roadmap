@@ -148,7 +148,7 @@
     "links": [
       {
         "title": "Visit Dedicated Java Roadmap",
-        "url": "/java",
+        "url": "https://roadmap.sh/java",
         "type": "article"
       },
       {
@@ -184,7 +184,7 @@
     "links": [
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -246,7 +246,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -282,7 +282,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -1155,10 +1155,21 @@
     "description": "",
     "links": []
   },
-  "functional-programming@6FDGecsHbqY-cm32yTZJa.md": {
+  "6FDGecsHbqY-cm32yTZJa": {
     "title": "Functional Programming",
-    "description": "",
-    "links": []
+    "description": "Functional programming is a programming paradigm designed to handle pure mathematical functions. This paradigm is totally focused on writing more compounded and pure functions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Functional Programming with JavaScript",
+        "url": "https://www.telerik.com/blogs/functional-programming-javascript",
+        "type": "article"
+      },
+      {
+        "title": "Learning Functional Programming",
+        "url": "https://youtube.com/watch?v=e-5obm1G_FY",
+        "type": "video"
+      }
+    ]
   },
   "mCiYCbKIOVU34qil_q7Hg": {
     "title": "React, Vue, Angular",
@@ -1166,7 +1177,7 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
@@ -1437,8 +1448,29 @@
   },
   "PKqwKvoffm0unwcFwpojk": {
     "title": "Scrum",
-    "description": "",
-    "links": []
+    "description": "`Scrum` is a popular agile framework used for project management, particularly in software development. It emphasizes iterative development, collaboration, and flexibility to deliver high-quality products.\n\nKey elements of Scrum:\n\n*   **Sprints**: Time-boxed iterations (usually 2-4 weeks) where teams work on specific goals.\n*   **Product Backlog**: Prioritized list of features or requirements for the product.\n*   **Sprint Backlog**: Selected items from the Product Backlog to be completed during a Sprint.\n*   **Daily Scrum (Stand-up)**: Brief daily meeting where team members share progress, challenges, and plans for the day.\n*   **Sprint Review**: Meeting at the end of a Sprint to demonstrate completed work and gather feedback.\n*   **Sprint Retrospective**: Meeting to reflect on the Sprint, identify improvements, and adjust processes for the next Sprint.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is scrum and how to get started",
+        "url": "https://www.atlassian.com/agile/scrum.",
+        "type": "article"
+      },
+      {
+        "title": "Scrum Methodology: The Complete Guide & Best Practices",
+        "url": "https://thedigitalprojectmanager.com/projects/pm-methodology/scrum-methodology-complete-guide/",
+        "type": "article"
+      },
+      {
+        "title": "Essential Topics for the Scrum Product Owner",
+        "url": "https://www.scrum.org/resources/blog/essential-topics-scrum-product-owner",
+        "type": "article"
+      },
+      {
+        "title": "Scrum • Topics - Thriving Technologist",
+        "url": "https://thrivingtechnologist.com/topics/scrum/",
+        "type": "article"
+      }
+    ]
   },
   "7fL9lSu4BD1wRjnZy9tM9": {
     "title": "XP",
@@ -1479,8 +1511,24 @@
   },
   "UCCT7-E_QUKPg3jAsjobx": {
     "title": "TCP/IP Model",
-    "description": "",
-    "links": []
+    "description": "The `TCP/IP model` defines how devices should transmit data between them and enables communication over networks and large distances. The model represents how data is exchanged and organized over networks. It is split into four layers, which set the standards for data exchange and represent how data is handled and packaged when being delivered between applications, devices, and servers.\n\n*   **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.\n    \n*   **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination.\n    \n*   **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination.\n    \n*   **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other.\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Transmission Control Protocol TCP/IP? - Fortinet",
+        "url": "https://www.fortinet.com/resources/cyberglossary/tcp-ip#:~:text=The%20TCP%2FIP%20model%20defines,exchanged%20and%20organized%20over%20networks.",
+        "type": "article"
+      },
+      {
+        "title": "TCP/IP Model",
+        "url": "https://www.geeksforgeeks.org/tcp-ip-model/",
+        "type": "article"
+      },
+      {
+        "title": "What is TCP/IP and How Does it Work?",
+        "url": "https://www.techtarget.com/searchnetworking/definition/TCP-IP",
+        "type": "article"
+      }
+    ]
   },
   "Nq6o6Ty8VyNRsvg-UWp7D": {
     "title": "HTTP, HTTPS",

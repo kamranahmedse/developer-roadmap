@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getRoadmapsProjects } from '../../lib/project';
+import { getRoadmapsByIds } from '../../lib/roadmap';
+import { ProjectsPageHeader } from '../../components/Projects/ProjectsPageHeader';
+import { ProjectsPage } from '../../components/Projects/ProjectsPage';
+import { projectApi } from '../../api/project';
+
+const roadmapProjects = await getRoadmapsProjects();
+const allRoadmapIds = Object.keys(roadmapProjects);
+
+const allRoadmaps = await getRoadmapsByIds(allRoadmapIds);
+const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
+  const projects = (roadmapProjects[roadmap.id] || []).sort((a, b) => {
+    return a.frontmatter.sort - b.frontmatter.sort;
+  });
+
+  return {
+    id: roadmap.id,
+    title: roadmap.frontmatter.briefTitle,
+    projects,
+  };
+});
+
+const projectIds = allRoadmapIds
+  .map((id) => roadmapProjects[id])
+  .flat()
+  .map((project) => project.id);
+const projectApiClient = projectApi(Astro);
+const { response: userCounts } =
+  await projectApiClient.listProjectsUserCount(projectIds);
+---
+
+<BaseLayout
+  title='Project Ideas'
+  description='Explore project ideas to take you from beginner to advanced in different technologies'
+  permalink='/projects'
+>
+  <ProjectsPageHeader client:load />
+  <ProjectsPage
+    roadmapsProjects={enrichedRoadmaps}
+    userCounts={userCounts || {}}
+    client:load
+  />
+</BaseLayout>

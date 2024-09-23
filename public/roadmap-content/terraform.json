@@ -352,7 +352,7 @@
     "description": "The lifecycle meta-argument in Terraform customizes the behavior of resources during creation, update, and deletion. It includes settings such as create\\_before\\_destroy, which ensures a new resource is created before the old one is destroyed, preventing downtime. prevent\\_destroy protects resources from accidental deletion, and ignore\\_changes specifies attributes to ignore during updates, allowing external modifications without triggering Terraform changes. These options provide fine-grained control over resource management, ensuring that the desired state of infrastructure is maintained with minimal disruption and precise handling of resource lifecycles.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Terraform Docs - for_each",
+        "title": "Terraform Docs - lifecycle",
         "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle",
         "type": "article"
       },
@@ -449,8 +449,14 @@
   },
   "fm8oUyNvfdGWTgLsYANUr": {
     "title": "Environment Variables",
-    "description": "",
-    "links": []
+    "description": "Environment variables can be used to customize various aspects of Terraform. You can set these variables to change the default behaviour of terraform such as increase verbosity, update log file path, set workspace, etc. Envrionment variables are optional and terraform does not need them by default.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Environment Variables",
+        "url": "https://developer.hashicorp.com/terraform/cli/config/environment-variables",
+        "type": "article"
+      }
+    ]
   },
   "rdphcVd-Vq972y4H8CxIj": {
     "title": "Variable Definition File",
@@ -470,13 +476,30 @@
   },
   "U2n2BtyUrOFLnw9SZYV_w": {
     "title": "Validation Rules",
-    "description": "",
-    "links": []
+    "description": "Validation rules can be used to specify custom validations to a variable. The motive of adding validation rules is to make the variable comply with the rules. The validation rules can be added using a `validation` block.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Custom Validation Rules",
+        "url": "https://developer.hashicorp.com/terraform/language/values/variables#custom-validation-rules",
+        "type": "article"
+      }
+    ]
   },
   "1mFih8uFs3Lc-1PLgwiAU": {
     "title": "Local Values",
-    "description": "",
-    "links": []
+    "description": "Local values can be understood as a name assigned to any expression to use it multiple times directly by the name in your terraform module. Local values are referred to as locals and can be declared using the `locals` block. Local values can be a literal constants, resource attributes, variables, or other local values. Local values are helpful to define expressions or values that you need to use multiple times in the module as it allows the value to be updated easily just by updating the local value. A local value can be accessed using the `local` argument like `local.<value_name>`.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Local Values",
+        "url": "https://developer.hashicorp.com/terraform/language/values/locals",
+        "type": "article"
+      },
+      {
+        "title": "@Article@Terraform Locals",
+        "url": "https://spacelift.io/blog/terraform-locals",
+        "type": "article"
+      }
+    ]
   },
   "7GK4fQf1FRKrZgZkxNahj": {
     "title": "Outputs",

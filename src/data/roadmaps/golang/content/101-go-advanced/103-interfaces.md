@@ -8,5 +8,4 @@ Visit the following resources to learn more:
 - [@official@Effective Go: Interfaces](https://go.dev/doc/effective_go#interfaces)
 - [@article@Go by Example: Interfaces](https://gobyexample.com/interfaces)
 - [@video@Golang Tutorial #22 - Interfaces (by Tech With Tim on YouTube)](https://www.youtube.com/watch?v=lh_Uv2imp14)
-- [@video@Learn Go Interfaces](https://www.youtube.com/watch?v=KB3ysH8cupY)
 - [@video@Understanding Go Interfaces](https://www.youtube.com/watch?v=qJKQZKGZgf0)

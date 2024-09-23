@@ -1,26 +1,8 @@
 # TryHackMe
 
-[TryHackMe](https://tryhackme.com/) is an online platform for learning and practicing cyber security skills. It offers a wide range of cybersecurity challenges, known as "rooms", which are designed to teach various aspects of cybersecurity, such as ethical hacking, penetration testing, and digital forensics.
+TryHackMe is an online platform designed for cybersecurity training and learning through hands-on experience. It offers a wide range of virtual rooms and challenges covering various security topics, from basic to advanced levels. Users can access vulnerable machines, engage in capture-the-flag (CTF) style exercises, and learn practical skills in areas like penetration testing, web security, and network security. TryHackMe uses browser-based tools and virtual machines, making it accessible without requiring powerful hardware. The platform caters to beginners and experienced professionals alike, providing guided learning paths, real-world scenarios, and a supportive community. It's widely used for both individual skill development and corporate cybersecurity training.
 
-## Key Features:
+Learn more from the following resources:
 
-- **Rooms**: Rooms are tasks and challenges that cover a wide range of topics and difficulty levels. Each room has specific learning objectives, resources, and guidance to help you learn and apply cybersecurity concepts.
-
-- **Hands-on Learning**: TryHackMe focuses on providing practical, hands-on experience by giving participants access to virtual machines to put their knowledge to the test.
-
-- **Gamification**: TryHackMe incorporates gamification elements such as points, badges, and leaderboards to engage users and encourage friendly competition.
-
-- **Community Collaboration**: The platform has a strong and supportive community, where users can share knowledge, ask questions, and collaborate on challenges.
-
-- **Educational Pathways**: TryHackMe offers learning pathways to guide users through a series of related rooms, helping them develop specific skills and knowledge in a structured way.
-
-## Getting Started:
-
-To get started with TryHackMe, follow these steps:
-
-- Sign up for a free account at [tryhackme.com](https://tryhackme.com/).
-- Join a room based on your interests or skill level.
-- Follow the instructions and resources provided in the room to learn new concepts and complete the challenges.
-- Progress through various rooms and pathways to enhance your cybersecurity skills and knowledge.
-
-By using TryHackMe, you'll have access to a constantly growing repository of cybersecurity challenges, tools, and resources, ensuring that you stay up-to-date with the latest developments in the field.
+- [@official@TryHackMe Website](https://tryhackme.com/)
+- [@video@Start Your Cybersecurity Career with TryHackMe](https://www.youtube.com/watch?v=HPF8y_gDP7w)

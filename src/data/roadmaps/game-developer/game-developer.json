@@ -2525,7 +2525,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Assembly",
+        "label": "GDScript",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
