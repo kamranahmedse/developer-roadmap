@@ -48,18 +48,15 @@ export function ListDashboardCustomProgress(
 
       <div className="mb-2 mt-6 flex items-center justify-between gap-2">
         <h2 className="text-xs uppercase text-gray-400">
-          {isAIGeneratedRoadmaps ? 'AI Generated Roadmaps' : 'Custom Roadmaps'}
+          {isAIGeneratedRoadmaps ? 'My AI Roadmaps' : 'My Custom Roadmaps'}
         </h2>
 
-        {!isLoading && progresses.length !== 0 && (
-          <a
-            href="/ai/explore"
-            className="flex items-center gap-1 text-xs text-gray-500 hover:text-black"
-          >
-            <ArrowUpRight size={12} />
-            Community Roadmaps
-          </a>
-        )}
+        <a
+          href="/community"
+          className="rounded-full bg-gray-200 px-2.5 py-0.5 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
+        >
+          Community Roadmaps
+        </a>
       </div>
 
       {!isLoading && progresses.length === 0 && isAIGeneratedRoadmaps && (
