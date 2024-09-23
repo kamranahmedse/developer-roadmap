@@ -168,6 +168,9 @@ importers:
       '@types/react-calendar-heatmap':
         specifier: ^1.6.7
         version: 1.6.7
+      '@types/react-slick':
+        specifier: ^0.23.13
+        version: 0.23.13
       '@types/turndown':
         specifier: ^5.0.5
         version: 5.0.5
@@ -1284,6 +1287,9 @@ packages:
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+
+  '@types/react-slick@0.23.13':
+    resolution: {integrity: sha512-bNZfDhe/L8t5OQzIyhrRhBr/61pfBcWaYJoq6UDqFtv5LMwfg4NsVDD2J8N01JqdAdxLjOt66OZEp6PX+dGs/A==}
 
   '@types/react@18.3.8':
     resolution: {integrity: sha512-syBUrW3/XpnW4WJ41Pft+I+aPoDVbrBVQGEnbD7NijDGlVC+8gV/XKRY+7vMDlfPpbwYt0l1vd/Sj8bJGMbs9Q==}
@@ -4283,6 +4289,10 @@ snapshots:
       '@types/react': 18.3.8
 
   '@types/react-dom@18.3.0':
+    dependencies:
+      '@types/react': 18.3.8
+
+  '@types/react-slick@0.23.13':
     dependencies:
       '@types/react': 18.3.8
 

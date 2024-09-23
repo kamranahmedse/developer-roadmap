@@ -1,6 +1,10 @@
 ---
 title: 'New Dashboard, Leaderboards and Projects'
 description: 'New leaderboard page showing the most active users'
+images:
+  "Personal Dashboard": "https://assets.roadmap.sh/guest/personal-dashboard.png"
+  "Projects Page": "https://assets.roadmap.sh/guest/projects-page.png"
+  "Leaderboard": "https://assets.roadmap.sh/guest/leaderboard.png"
 seo:
   title: 'Leaderboard Page - roadmap.sh'
   description: ''
@@ -15,8 +19,6 @@ TL;DR: new dashboard, leaderboard page and projects page.
 - Ability to stop a started project
 - Frontend and backend content improvements
 - Bug fixes
-
-![Leaderboard Page](https://assets.roadmap.sh/guest/personal-dashboard.png)
 
 We just launched a dedicated dashboard for logged-in users to showing progress, projects, bookmarks and more. You can still access the old homepage by visiting [this page](https://roadmap.sh/home).
 

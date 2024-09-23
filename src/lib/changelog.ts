@@ -3,6 +3,7 @@ import type { MarkdownFileType } from './file';
 export interface ChangelogFrontmatter {
   title: string;
   description: string;
+  images: Record<string, string>;
   seo: {
     title: string;
     description: string;
