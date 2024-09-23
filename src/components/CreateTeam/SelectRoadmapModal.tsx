@@ -10,7 +10,7 @@ export type SelectRoadmapModalProps = {
   teamId: string;
   allRoadmaps: PageType[];
   onClose: () => void;
-  teamResourceConfig: TeamResourceConfig;
+  teamResourceConfig: string[];
   onRoadmapAdd: (roadmapId: string) => void;
   onRoadmapRemove: (roadmapId: string) => void;
 };
@@ -25,6 +25,10 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
   } = props;
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const searchInputEl = useRef<HTMLInputElement>(null);
+
+  console.log('-'.repeat(20));
+  console.log(allRoadmaps);
+  console.log('-'.repeat(20));
 
   const [searchResults, setSearchResults] = useState<PageType[]>(allRoadmaps);
   const [searchText, setSearchText] = useState('');
@@ -100,9 +104,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             {roleBasedRoadmaps.length > 0 && (
               <div className="mb-5 flex flex-wrap items-center gap-2">
                 {roleBasedRoadmaps.map((roadmap) => {
-                  const isSelected = !!teamResourceConfig?.find(
-                    (r) => r.resourceId === roadmap.id,
-                  );
+                  const isSelected = teamResourceConfig.includes(roadmap.id);
 
                   return (
                     <SelectRoadmapModalItem
@@ -126,9 +128,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             </span>
             <div className="flex flex-wrap items-center gap-2">
               {skillBasedRoadmaps.map((roadmap) => {
-                const isSelected = !!teamResourceConfig.find(
-                  (r) => r.resourceId === roadmap.id,
-                );
+                const isSelected = teamResourceConfig.includes(roadmap.id);
 
                 return (
                   <SelectRoadmapModalItem
@@ -148,12 +148,14 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             </div>
           </div>
 
-          <div className="border-t border-t-yellow-300 text-yellow-900 bg-yellow-100 px-4 py-3 text-sm">
-            <h2 className='font-medium text-base text-yellow-900 mb-1'>More Official Roadmaps Coming Soon</h2>
+          <div className="border-t border-t-yellow-300 bg-yellow-100 px-4 py-3 text-sm text-yellow-900">
+            <h2 className="mb-1 text-base font-medium text-yellow-900">
+              More Official Roadmaps Coming Soon
+            </h2>
             <p>
-              We are currently adding more of our official
-              roadmaps to this list. If you don't see the roadmap you are
-              looking for, please check back later.
+              We are currently adding more of our official roadmaps to this
+              list. If you don't see the roadmap you are looking for, please
+              check back later.
             </p>
           </div>
         </div>

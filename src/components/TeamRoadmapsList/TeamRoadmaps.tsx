@@ -233,7 +233,7 @@ export function TeamRoadmaps() {
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
-      teamResourceConfig={teamResources}
+      teamResourceConfig={teamResources.map((c) => c.resourceId)}
       allRoadmaps={filteredAllRoadmaps.filter((r) => r.renderer === 'editor')}
       teamId={teamId}
       onRoadmapAdd={(roadmapId: string) => {

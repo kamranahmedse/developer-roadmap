@@ -8,13 +8,19 @@ import { ResourceProgress } from '../Activity/ResourceProgress';
 import { TeamActivityPage } from '../TeamActivity/TeamActivityPage';
 import { cn } from '../../lib/classname';
 import { Tooltip } from '../Tooltip';
+import { DashboardCardLink } from './DashboardCardLink';
+import { PencilRuler } from 'lucide-react';
+import { DashboardTeamRoadmaps } from './DashboardTeamRoadmaps';
+import type { BuiltInRoadmap } from './PersonalDashboard';
 
 type TeamDashboardProps = {
+  builtInRoleRoadmaps: BuiltInRoadmap[];
+  builtInSkillRoadmaps: BuiltInRoadmap[];
   teamId: string;
 };
 
 export function TeamDashboard(props: TeamDashboardProps) {
-  const { teamId } = props;
+  const { teamId, builtInRoleRoadmaps, builtInSkillRoadmaps } = props;
 
   const toast = useToast();
   const currentUser = getUser();
@@ -78,39 +84,21 @@ export function TeamDashboard(props: TeamDashboardProps) {
     return 0;
   });
 
+  const canManageCurrentTeam = ['admin', 'manager'].includes(
+    currentMember?.role!,
+  );
+
   return (
     <section className="mt-8">
-      <h2 className="mb-3 text-xs uppercase text-gray-400">Roadmaps</h2>
-      {isLoading && <LoadingProgress />}
-      {!isLoading && learningRoadmapsToShow.length > 0 && (
-        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
-          {learningRoadmapsToShow.map((roadmap) => {
-            const learningCount = roadmap.learning || 0;
-            const doneCount = roadmap.done || 0;
-            const totalCount = roadmap.total || 0;
-            const skippedCount = roadmap.skipped || 0;
-
-            return (
-              <ResourceProgress
-                key={roadmap.resourceId}
-                isCustomResource={roadmap?.isCustomResource || false}
-                doneCount={doneCount > totalCount ? totalCount : doneCount}
-                learningCount={
-                  learningCount > totalCount ? totalCount : learningCount
-                }
-                totalCount={totalCount}
-                skippedCount={skippedCount}
-                resourceId={roadmap.resourceId}
-                resourceType="roadmap"
-                updatedAt={roadmap.updatedAt}
-                title={roadmap.resourceTitle}
-                showActions={false}
-                roadmapSlug={roadmap.roadmapSlug}
-              />
-            );
-          })}
-        </div>
-      )}
+      <DashboardTeamRoadmaps
+        isLoading={isLoading}
+        teamId={teamId}
+        learningRoadmapsToShow={learningRoadmapsToShow}
+        canManageCurrentTeam={canManageCurrentTeam}
+        onUpdate={getTeamProgress}
+        builtInRoleRoadmaps={builtInRoleRoadmaps}
+        builtInSkillRoadmaps={builtInSkillRoadmaps}
+      />
 
       <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
         Team Members

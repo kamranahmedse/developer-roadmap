@@ -8,6 +8,8 @@ import { DashboardTab } from './DashboardTab';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
 import { getUser } from '../../lib/jwt';
+import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
+import { useParams } from '../../hooks/use-params';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
@@ -22,6 +24,8 @@ export function DashboardPage(props: DashboardPageProps) {
   const currentUser = getUser();
   const toast = useToast();
   const teamList = useStore($teamList);
+
+  const { t: currTeamId } = useParams();
 
   const [isLoading, setIsLoading] = useState(true);
   const [selectedTeamId, setSelectedTeamId] = useState<string>();
@@ -43,8 +47,14 @@ export function DashboardPage(props: DashboardPageProps) {
   }
 
   useEffect(() => {
-    getAllTeams().finally(() => setIsLoading(false));
-  }, []);
+    getAllTeams().finally(() => {
+      if (currTeamId) {
+        setSelectedTeamId(currTeamId);
+      }
+
+      setIsLoading(false);
+    });
+  }, [currTeamId]);
 
   const userAvatar =
     currentUser?.avatar && !isLoading
@@ -58,7 +68,10 @@ export function DashboardPage(props: DashboardPageProps) {
           <DashboardTab
             label="Personal"
             isActive={!selectedTeamId}
-            onClick={() => setSelectedTeamId(undefined)}
+            onClick={() => {
+              setSelectedTeamId(undefined);
+              deleteUrlParam('t');
+            }}
             avatar={userAvatar}
           />
 
@@ -86,10 +99,10 @@ export function DashboardPage(props: DashboardPageProps) {
                           href: `/respond-invite?i=${team.memberId}`,
                         }
                       : {
-                          href: `/team/activity?t=${team._id}`,
-                          // onClick: () => {
-                          //   setSelectedTeamId(team._id);
-                          // },
+                          onClick: () => {
+                            setSelectedTeamId(team._id);
+                            setUrlParams({ t: team._id });
+                          },
                         })}
                     avatar={avatarUrl}
                   />
@@ -112,7 +125,13 @@ export function DashboardPage(props: DashboardPageProps) {
             builtInBestPractices={builtInBestPractices}
           />
         )}
-        {selectedTeamId && <TeamDashboard teamId={selectedTeamId} />}
+        {selectedTeamId && (
+          <TeamDashboard
+            builtInRoleRoadmaps={builtInRoleRoadmaps!}
+            builtInSkillRoadmaps={builtInSkillRoadmaps!}
+            teamId={selectedTeamId}
+          />
+        )}
       </div>
     </div>
   );
