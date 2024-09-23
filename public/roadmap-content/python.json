@@ -1120,7 +1120,7 @@
     ]
   },
   "_IXXTSwQOgYzYIUuKVWNE": {
-    "title": "virutalenv",
+    "title": "virtualenv",
     "description": "`virtualenv` is a tool to create isolated Python environments. It creates a folder which contains all the necessary executables to use the packages that a Python project would need.\n\nLearn more about `virtualenv` by visiting the following resources:",
     "links": [
       {
