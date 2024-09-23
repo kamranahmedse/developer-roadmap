@@ -7,5 +7,5 @@ Learn more from the following resources:
 - [@official@Visual Studio Code](https://code.visualstudio.com/)
 - [@official@Docs - Visual Studio Code](https://code.visualstudio.com/docs)
 - [@video@FreeCodeCamp Crash Course](https://www.youtube.com/watch?v=WPqXP_kLzpo)
-- [@video@VS Code Basics](https://www.youtube.com/watch?v=B-s71n0dHUk)
-- [@video@VS Code in 100 Seconds](https://www.youtube.com/watch?v=KMxo3T_MTvY&pp=ygUSdnNjb2RlIDEwMCBzZWNvbmRz)
+- [@video@VSCode Basics](https://www.youtube.com/watch?v=B-s71n0dHUk)
+- [@video@VSCode in 100 Seconds](https://www.youtube.com/watch?v=KMxo3T_MTvY)
