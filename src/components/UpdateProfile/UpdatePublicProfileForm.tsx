@@ -51,7 +51,8 @@ export function UpdatePublicProfileForm() {
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
-  const [roadmapVisibility, setRoadmapVisibility] = useState<AllowedRoadmapVisibility>('all');
+  const [roadmapVisibility, setRoadmapVisibility] =
+    useState<AllowedRoadmapVisibility>('all');
   const [customRoadmapVisibility, setCustomRoadmapVisibility] =
     useState<AllowedCustomRoadmapVisibility>('all');
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
@@ -595,28 +596,33 @@ export function UpdatePublicProfileForm() {
           {isLoading ? 'Please wait..' : 'Save Profile'}
         </button>
         {isProfileUpdated && publicProfileUrl && (
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <button
               type="button"
               className={cn(
-                'flex items-center justify-center gap-2 text-gray-500 underline underline-offset-2 hover:text-black hover:no-underline',
+                'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white',
                 isCopied
-                  ? 'text-green-500 hover:text-green-600'
-                  : 'text-gray-500',
+                  ? 'border-green-600 bg-green-600 text-white hover:bg-green-600 hover:text-white'
+                  : '',
               )}
               onClick={() => {
                 copyText(`${window.location.origin}${publicProfileUrl}`);
               }}
             >
               {isCopied ? (
-                <CheckCircle className="size-4" />
+                <>
+                  <CheckCircle className="size-4" />
+                  Copied Profile URL
+                </>
               ) : (
-                <Copy className="size-4" />
+                <>
+                  <Copy className="size-4" />
+                  Copy Profile URL
+                </>
               )}
-              Copy Profile URL
             </button>
             <a
-              className="flex items-center justify-center gap-2 text-gray-500 underline underline-offset-2 hover:text-black hover:no-underline"
+              className='flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white'
               href={publicProfileUrl}
               target="_blank"
             >

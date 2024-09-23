@@ -352,11 +352,11 @@ function DashboardCard(props: DashboardCardProps) {
   return (
     <div
       className={cn(
-        'relative overflow-hidden rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50',
+        'relative overflow-hidden',
         className,
       )}
     >
-      <a href={href} className="flex flex-col">
+      <a href={href} className="flex flex-col rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50">
         {Icon && (
           <div className="px-4 pb-3 pt-4">
             <Icon className="size-6" />
@@ -378,7 +378,7 @@ function DashboardCard(props: DashboardCardProps) {
       {externalLinkHref && (
         <a
           href={externalLinkHref}
-          className="absolute right-0 top-0 flex items-center gap-1.5 rounded-bl-md bg-gray-200 p-1 px-2 text-sm text-gray-600 hover:bg-gray-300 hover:text-black"
+          className="absolute right-1 top-1 flex items-center gap-1.5 rounded-md bg-gray-200 p-1 px-2 text-xs text-gray-600 hover:bg-gray-300 hover:text-black"
         >
           {ExternalLinkIcon && <ExternalLinkIcon className="size-3" />}
           {externalLinkText}
