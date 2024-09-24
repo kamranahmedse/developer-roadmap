@@ -4,5 +4,5 @@ A GitHub Profile README is a special repository that allows users to showcase th
 
 Visit the following resources to learn more:
 
-- [@official@Managing your Profile Readme](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
+- [@official@Managing your Profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
 - [@video@GitHub Profile README](https://www.youtube.com/watch?v=KhGWbt1dAKQ)
