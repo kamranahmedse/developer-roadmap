@@ -62,12 +62,8 @@ export function TeamDashboard(props: TeamDashboardProps) {
     getTeamProgress().finally(() => setIsLoading(false));
   }, [teamId]);
 
-  if (!currentUser) {
-    return null;
-  }
-
   const currentMember = teamMembers.find(
-    (member) => member.email === currentUser.email,
+    (member) => member.email === currentUser?.email,
   );
   const learningRoadmapsToShow =
     currentMember?.progress?.filter(
@@ -75,11 +71,11 @@ export function TeamDashboard(props: TeamDashboardProps) {
     ) || [];
 
   const allMembersWithoutCurrentUser = teamMembers.sort((a, b) => {
-    if (a.email === currentUser.email) {
+    if (a.email === currentUser?.email) {
       return -1;
     }
 
-    if (b.email === currentUser.email) {
+    if (b.email === currentUser?.email) {
       return 1;
     }
 
@@ -126,7 +122,11 @@ export function TeamDashboard(props: TeamDashboardProps) {
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
               : '/images/default-avatar.png';
             return (
-              <span className="group relative" key={member.email}>
+              <a
+                className="group relative"
+                key={member.email}
+                href={`/team/member?t=${teamId}&m=${member._id}`}
+              >
                 <figure className="relative aspect-square size-8 overflow-hidden rounded-md bg-gray-100">
                   <img
                     src={avatar}
@@ -137,7 +137,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
                 <Tooltip position="top-center" additionalClass="text-sm">
                   {member.name}
                 </Tooltip>
-              </span>
+              </a>
             );
           })}
 
@@ -157,7 +157,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
         </div>
       )}
 
-      <TeamActivityPage teamId={teamId} />
+      {!isLoading && <TeamActivityPage teamId={teamId} />}
     </section>
   );
 }

@@ -8,18 +8,22 @@ import { DashboardTab } from './DashboardTab';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
 import { getUser } from '../../lib/jwt';
-import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
+  isTeamPage?: boolean;
 };
 
 export function DashboardPage(props: DashboardPageProps) {
-  const { builtInRoleRoadmaps, builtInBestPractices, builtInSkillRoadmaps } =
-    props;
+  const {
+    builtInRoleRoadmaps,
+    builtInBestPractices,
+    builtInSkillRoadmaps,
+    isTeamPage = false,
+  } = props;
 
   const currentUser = getUser();
   const toast = useToast();
@@ -67,11 +71,8 @@ export function DashboardPage(props: DashboardPageProps) {
         <div className="mb-6 flex flex-wrap items-center gap-1.5 sm:mb-8">
           <DashboardTab
             label="Personal"
-            isActive={!selectedTeamId}
-            onClick={() => {
-              setSelectedTeamId(undefined);
-              deleteUrlParam('t');
-            }}
+            isActive={!selectedTeamId && !isTeamPage}
+            href="/dashboard"
             avatar={userAvatar}
           />
 
@@ -99,10 +100,7 @@ export function DashboardPage(props: DashboardPageProps) {
                           href: `/respond-invite?i=${team.memberId}`,
                         }
                       : {
-                          onClick: () => {
-                            setSelectedTeamId(team._id);
-                            setUrlParams({ t: team._id });
-                          },
+                          href: `/team?t=${team._id}`,
                         })}
                     avatar={avatarUrl}
                   />
@@ -118,18 +116,19 @@ export function DashboardPage(props: DashboardPageProps) {
           )}
         </div>
 
-        {!selectedTeamId && (
+        {!selectedTeamId && !isTeamPage && (
           <PersonalDashboard
             builtInRoleRoadmaps={builtInRoleRoadmaps}
             builtInSkillRoadmaps={builtInSkillRoadmaps}
             builtInBestPractices={builtInBestPractices}
           />
         )}
-        {selectedTeamId && (
+
+        {(selectedTeamId || isTeamPage) && (
           <TeamDashboard
             builtInRoleRoadmaps={builtInRoleRoadmaps!}
             builtInSkillRoadmaps={builtInSkillRoadmaps!}
-            teamId={selectedTeamId}
+            teamId={selectedTeamId!}
           />
         )}
       </div>

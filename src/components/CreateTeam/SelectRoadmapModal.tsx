@@ -26,10 +26,6 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const searchInputEl = useRef<HTMLInputElement>(null);
 
-  console.log('-'.repeat(20));
-  console.log(allRoadmaps);
-  console.log('-'.repeat(20));
-
   const [searchResults, setSearchResults] = useState<PageType[]>(allRoadmaps);
   const [searchText, setSearchText] = useState('');
 

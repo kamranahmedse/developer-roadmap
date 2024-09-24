@@ -60,8 +60,6 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
     [builtInRoleRoadmaps, builtInSkillRoadmaps],
   );
 
-  console.log(allRoadmaps);
-
   async function onAdd(roadmapId: string, shouldCopyContent = false) {
     if (!teamId) {
       return;
@@ -272,7 +270,7 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
 
           {canManageCurrentTeam && (
             <button
-              onClick={() => setIsAddingRoadmap(true)}
+              onClick={() => setIsPickingOptions(true)}
               className="group relative flex w-full items-center justify-center overflow-hidden rounded-md border border-dashed border-gray-300 bg-white px-3 py-2 text-center text-sm text-gray-500 transition-all hover:border-gray-400 hover:text-black"
             >
               + Add Roadmap
