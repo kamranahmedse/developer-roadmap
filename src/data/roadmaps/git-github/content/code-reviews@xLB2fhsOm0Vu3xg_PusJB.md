@@ -3,6 +3,7 @@
 The purpose of a code review in software development is to help ensure that the code meets the organization’s standards and requirements, is of high quality, and is maintainable. In addition to identifying errors and bugs, code reviews also promote a culture of learning and collaboration among the development team.
 
 Some of the benefits of code reviews include:
+
 - Increase code quality by identifying defects in the code and issues such as security vulnerabilities and performance problems—before developers merge the code into an upstream branch.
 - Ensure compliance with organizational standards, regulations, and the team’s code style.
 - Save time and money by detecting issues earlier in the software development process before they become more complex and expensive to fix.

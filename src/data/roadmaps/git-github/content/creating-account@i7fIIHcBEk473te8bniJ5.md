@@ -4,4 +4,5 @@ To get started with GitHub, you'll need to create a free personal account on Git
 
 Visit the following resources to learn more:
 
-- [@official@Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+- [@official@Creating an Account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+- [@official@Your Github Account](https://github.com/login)
