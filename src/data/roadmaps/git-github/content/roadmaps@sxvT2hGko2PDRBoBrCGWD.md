@@ -1,6 +1,6 @@
-# Roadmap(s)
+# Roadmaps
 
-GitHub Roadmap(s) are a feature that helps you visualize and organize plans for your projects, allowing you to create a high-level view of milestones and goals, and collaborate on planning and tracking progress with team members.
+GitHub Roadmaps are a feature that helps you visualize and organize plans for your projects, allowing you to create a high-level view of milestones and goals, and collaborate on planning and tracking progress with team members.
 
 Visit the following resources to learn more:
 
