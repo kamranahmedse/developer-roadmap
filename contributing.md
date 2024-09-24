@@ -28,6 +28,8 @@ These are as follows:
 
 Whilst single file contributions, such as adding one link to a single topic, is perfectly fine outside of hacktoberfest, this can (and probably will) result it an easy 4 pull requests for everyone and we will just become a Hacktoberfest farming project.
 
+***Note: If you contribute the entire contents of a topic i.e. the topic has 0 copy and 0 links, this will count.***
+
 2. Typo fixes will not count (by themselves).
 
 Whilst fixing typos is a great thing to do, lets bundle them in with actual contributions if we see them!
