@@ -4,5 +4,5 @@ Pull Request (PR) guidelines are essential for maintaining a smooth and efficien
 
 Visit the following resources to learn more:
 
-- [@official@Best practices for pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests)
+- [@official@Best Practices for Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests)
 - [@article@Pull Request Guidelines](https://opensource.creativecommons.org/contributing-code/pr-guidelines/)

@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Pushing commits to a remote repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
 - [@article@A Comprehensive Guide to git pull and git push](https://dev.to/alexmercedcoder/mastering-git-a-comprehensive-guide-to-git-pull-and-git-push-2eo3)
-- [@article@GIT Push and Pull Tutorial](https://www.datacamp.com/tutorial/git-push-pull)
+- [@article@Git Push and Pull Tutorial](https://www.datacamp.com/tutorial/git-push-pull)

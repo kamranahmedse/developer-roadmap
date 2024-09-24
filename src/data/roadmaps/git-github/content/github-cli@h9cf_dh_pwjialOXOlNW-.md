@@ -4,5 +4,5 @@ GitHub CLI is a command-line interface tool that brings GitHub functionality to 
 
 Visit the following resources to learn more:
 
-- [@official@official GitHub CLI Docs](https://cli.github.com/)
+- [@official@GitHub CLI Docs](https://cli.github.com/)
 - [@video@What is the GitHub CLI?](https://www.youtube.com/watch?v=uy_PEGgUF4U)
