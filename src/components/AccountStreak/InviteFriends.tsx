@@ -63,18 +63,25 @@ export function InviteFriends(props: InviteFriendsProps) {
       </div>
 
       <p className="mt-2.5 text-center text-xs">
-        🥳 You have invited{' '}
-        <span className="font-medium underline underline-offset-2">
-          {refByUserCount} users so far
-        </span>
+        {refByUserCount > 0 && (
+          <>
+            🥳 You have invited{' '}
+            <span className="font-medium underline underline-offset-2">
+              {refByUserCount} user{refByUserCount > 1 ? 's' : ''} so far
+            </span>
+          </>
+        )}
+        {refByUserCount === 0 && <>🤔 You haven't invited anyone yet</>}
       </p>
 
-      <a
-        href="/leaderboard"
-        className="mt-4 flex justify-center text-center text-sm font-medium text-purple-500 underline-offset-2 hover:underline"
-      >
-        See how you are compare to others
-      </a>
+      <p className="mt-2.5 text-center text-xs">
+        <a
+          href="/leaderboard"
+          className="text-purple-400 underline-offset-2 hover:underline"
+        >
+          See how you compare to others
+        </a>
+      </p>
     </div>
   );
 }

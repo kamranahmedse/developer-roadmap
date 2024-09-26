@@ -177,14 +177,6 @@ export function AccountStreak(props: AccountStreakProps) {
             <p className="-mt-[0px] mb-[1.5px] text-center text-xs tracking-wide text-slate-500">
               Visit every day to keep your streak going!
             </p>
-            <p className="mt-1.5 text-center text-xs">
-              <a
-                href="/leaderboard"
-                className="text-purple-400 underline-offset-2 hover:underline"
-              >
-                See how you compare to others
-              </a>
-            </p>
 
             <InviteFriends
               refByUserCount={accountStreak?.refByUserCount || 0}
