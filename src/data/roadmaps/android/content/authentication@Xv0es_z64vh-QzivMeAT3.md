@@ -6,4 +6,7 @@ Firebase Authentication offers two methods to authenticate. These are using an `
 
 Firebase Authentication provides a full suite of capabilities even beyond authentication to make your life easier, which includes Security Rules for Cloud Storage and Cloud Firestore, Firebase Dynamic Links, and Firebase Invites.
 
-Remember to always keep your development environment and Firebase console synced for smooth development operations. Any changes to the authentication method in the Firebase console should be reflected in your app and vice versa.
+Visit the following resources to learn more:
+
+- [@official@Firebase Authentication](https://firebase.google.com/docs/auth)
+- [@official@Firebase Authentication: Android](https://firebase.google.com/docs/auth/android/start)
