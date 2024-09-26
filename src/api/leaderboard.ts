@@ -17,6 +17,10 @@ export type ListLeaderboardStatsResponse = {
     currentMonth: LeadeboardUserDetails[];
     lifetime: LeadeboardUserDetails[];
   };
+  referrals: {
+    currentMonth: LeadeboardUserDetails[];
+    lifetime: LeadeboardUserDetails[];
+  };
 };
 
 export function leaderboardApi(context: APIContext) {

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { Flame, UserPlus, X, Zap, ZapOff } from 'lucide-react';
+import { Zap, ZapOff } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { StreakDay } from './StreakDay';
 import {
@@ -12,8 +12,7 @@ import {
 import { useStore } from '@nanostores/react';
 import { cn } from '../../lib/classname.ts';
 import { $accountStreak, type StreakResponse } from '../../stores/streak.ts';
-import { useCopyText } from '../../hooks/use-copy-text.ts';
-import { useAuth } from '../../hooks/use-auth.ts';
+import { InviteFriends } from './InviteFriends.tsx';
 
 type AccountStreakProps = {};
 
@@ -21,8 +20,6 @@ export function AccountStreak(props: AccountStreakProps) {
   const toast = useToast();
   const dropdownRef = useRef(null);
 
-  const user = useAuth();
-  const { copyText } = useCopyText();
   const [isLoading, setIsLoading] = useState(true);
   const accountStreak = useStore($accountStreak);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -72,16 +69,6 @@ export function AccountStreak(props: AccountStreakProps) {
   if (!isLoggedIn() || isLoading) {
     return null;
   }
-
-  const shareReferralLink = () => {
-    const referralLink = new URL(
-      `/signup?rc=${user?.id}`,
-      import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh',
-    ).toString();
-
-    copyText(referralLink);
-    toast.success('Referral link copied to clipboard');
-  };
 
   let { count: currentCount = 0 } = accountStreak || {};
   const previousCount =
@@ -199,43 +186,9 @@ export function AccountStreak(props: AccountStreakProps) {
               </a>
             </p>
 
-            {accountStreak?.refByUserCount ? (
-              <div className="mt-5">
-                <div className="flex items-center gap-2 text-sm text-slate-500">
-                  <UserPlus className="size-4" />
-                  <p>
-                    <span className="text-slate-200">
-                      {accountStreak?.refByUserCount || 0}
-                    </span>{' '}
-                    user(s) joined through{' '}
-                    <button
-                      className="text-slate-200 no-underline underline-offset-2 hover:underline"
-                      onClick={shareReferralLink}
-                    >
-                      your referral
-                    </button>
-                    .
-                  </p>
-                </div>
-              </div>
-            ) : null}
-
-            {!accountStreak?.refByUserCount && (
-              <div className="mt-5">
-                <div className="flex items-center gap-2 text-sm text-slate-500">
-                  <UserPlus className="size-4" />
-                  <p>
-                    <button
-                      className="text-slate-200 no-underline underline-offset-2 hover:underline"
-                      onClick={shareReferralLink}
-                    >
-                      Share your referral
-                    </button>{' '}
-                    link with your friends.
-                  </p>
-                </div>
-              </div>
-            )}
+            <InviteFriends
+              refByUserCount={accountStreak?.refByUserCount || 0}
+            />
           </div>
         </div>
       )}
