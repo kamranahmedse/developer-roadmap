@@ -5,5 +5,5 @@ GitHub Pages is a feature that allows users to host and publish web content dire
 Visit the following resources to learn more:
 
 - [@official@About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
-- [@official@Ceating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+- [@official@Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 - [@official@GitHub Pages examples](https://github.com/collections/github-pages-examples)

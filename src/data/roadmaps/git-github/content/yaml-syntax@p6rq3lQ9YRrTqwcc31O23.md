@@ -21,5 +21,7 @@ Understanding YAML syntax is crucial for working with modern development tools, 
 
 Learn more from the following resources:
 
+- [@official@YAML](https://yaml.org/)
+- [@article@YAML Cheatsheet](https://cheatsheets.zip/yaml)
 - [@article@What is YAML?](https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/)
 - [@article@YAML Tutorial : A Complete Language Guide with Examples](https://spacelift.io/blog/yaml)

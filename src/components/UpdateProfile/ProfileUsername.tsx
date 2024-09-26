@@ -87,15 +87,13 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             {currentUsername !== username && username && isUnique && (
               <span className="text-xs text-green-600">
                 URL after update{' '}
-                <a
-                  href={`${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/u/${username}`}
-                  target="_blank"
+                <span
                   className={
-                    'ml-0.5 rounded-md border border-purple-500 px-1.5 py-0.5 text-xs font-medium text-purple-700 transition-colors hover:bg-purple-500 hover:text-white'
+                    'ml-0.5 rounded-md border border-purple-500 px-1.5 py-0.5 text-xs font-medium text-purple-700 transition-colors'
                   }
                 >
                   roadmap.sh/u/{username}
-                </a>
+                </span>
               </span>
             )}
           </span>

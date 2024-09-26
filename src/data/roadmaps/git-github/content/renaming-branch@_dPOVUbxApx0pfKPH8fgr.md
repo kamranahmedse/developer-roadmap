@@ -4,5 +4,5 @@ Renaming a branch in Git means changing the name of a branch to something differ
 
 Visit the following resources to learn more:
 
-- [@official@Renaming a branch - GitHub Docs](https://docs.github.com/github/administering-a-repository/renaming-a-branch)
+- [@official@Renaming a Branch - GitHub Docs](https://docs.github.com/github/administering-a-repository/renaming-a-branch)
 - [@article@Git Rename Branch – How to Change a Local Branch Name](https://www.freecodecamp.org/news/git-rename-branch-how-to-change-a-local-branch-name/)

@@ -156,7 +156,7 @@ export function PageSponsor(props: PageSponsorProps) {
       <span>
         <img
           src={imageUrl}
-          className="block h-[106px] object-cover sm:h-[169px] sm:w-[118.18px]"
+          className="block h-[106px] object-cover sm:h-[153px] sm:w-[118.18px]"
           alt="Sponsor Banner"
         />
       </span>

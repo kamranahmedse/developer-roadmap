@@ -4,5 +4,5 @@ GitHub Discussions is a collaborative communication feature within GitHub reposi
 
 Visit the following resources to learn more:
 
+- [@official@GitHub Discussions Docs](https://docs.github.com/en/discussions)
 - [@video@What is GitHub Discussions?](https://www.youtube.com/watch?v=bErGYN3Ljz8)
-- [@official@official GitHub Discussions Docs](https://docs.github.com/en/discussions)

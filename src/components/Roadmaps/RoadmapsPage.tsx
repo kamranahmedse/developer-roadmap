@@ -285,6 +285,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Redis',
+        link: '/redis',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {

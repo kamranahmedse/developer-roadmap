@@ -4,6 +4,6 @@ Cherry-picking in Git allows you to apply a specific commit from one branch to a
 
 Visit the following resources to learn more:
 
-- [@official@git-cherry-pick-docs](https://git-scm.com/docs/git-cherry-pick)
-- [@article@Git cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick)
-- [@video@Git-CHERRY-PICK-Tutorial](https://youtu.be/i657Bg_HAWI?si=3jjn2X8Hi1na--F4)
+- [@official@git-cherry-pick docs](https://git-scm.com/docs/git-cherry-pick)
+- [@article@Git Cherry Pick](https://www.atlassian.com/git/tutorials/cherry-pick)
+- [@video@Git Cherry Pick - Tutorial](https://youtu.be/i657Bg_HAWI?si=3jjn2X8Hi1na--F4)
