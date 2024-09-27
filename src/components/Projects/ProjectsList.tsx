@@ -1,7 +1,7 @@
 import { ProjectCard } from './ProjectCard.tsx';
 import { HeartHandshake, Trash2 } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   projectDifficulties,
   type ProjectDifficultyType,
@@ -12,6 +12,8 @@ import {
   getUrlParams,
   setUrlParams,
 } from '../../lib/browser.ts';
+import { httpPost } from '../../lib/http.ts';
+import { isLoggedIn } from '../../lib/jwt.ts';
 
 type DifficultyButtonProps = {
   difficulty: ProjectDifficultyType;
@@ -38,6 +40,11 @@ function DifficultyButton(props: DifficultyButtonProps) {
   );
 }
 
+export type ListProjectStatusesResponse = Record<
+  string,
+  'completed' | 'started'
+>;
+
 type ProjectsListProps = {
   projects: ProjectFileType[];
   userCounts: Record<string, number>;
@@ -50,6 +57,25 @@ export function ProjectsList(props: ProjectsListProps) {
   const [difficulty, setDifficulty] = useState<
     ProjectDifficultyType | undefined
   >(urlDifficulty);
+  const [projectStatuses, setProjectStatuses] =
+    useState<ListProjectStatusesResponse>({});
+
+  const loadProjectStatuses = async () => {
+    const projectIds = projects.map((project) => project.id);
+    const { response, error } = await httpPost(
+      `${import.meta.env.PUBLIC_API_URL}/v1-list-project-statuses`,
+      {
+        projectIds,
+      },
+    );
+
+    if (error || !response) {
+      console.error(error);
+      return;
+    }
+
+    setProjectStatuses(response);
+  };
 
   const projectsByDifficulty: Map<ProjectDifficultyType, ProjectFileType[]> =
     useMemo(() => {
@@ -71,6 +97,14 @@ export function ProjectsList(props: ProjectsListProps) {
   const matchingProjects = difficulty
     ? projectsByDifficulty.get(difficulty) || []
     : projects;
+
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      return;
+    }
+
+    loadProjectStatuses().finally();
+  }, []);
 
   return (
     <div className="flex flex-col">
@@ -130,7 +164,13 @@ export function ProjectsList(props: ProjectsListProps) {
           })
           .map((matchingProject) => {
             const count = userCounts[matchingProject?.id] || 0;
-            return <ProjectCard project={matchingProject} userCount={count} />;
+            return (
+              <ProjectCard
+                project={matchingProject}
+                userCount={count}
+                status={projectStatuses?.[matchingProject.id] ?? 'none'}
+              />
+            );
           })}
       </div>
     </div>

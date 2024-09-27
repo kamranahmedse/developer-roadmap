@@ -5,10 +5,12 @@ import type {
 } from '../../lib/project.ts';
 import { Users } from 'lucide-react';
 import { formatCommaNumber } from '../../lib/number.ts';
+import { cn } from '../../lib/classname.ts';
 
 type ProjectCardProps = {
   project: ProjectFileType;
   userCount?: number;
+  status?: 'completed' | 'started' | 'none';
 };
 
 const badgeVariants: Record<ProjectDifficultyType, string> = {
@@ -18,7 +20,7 @@ const badgeVariants: Record<ProjectDifficultyType, string> = {
 };
 
 export function ProjectCard(props: ProjectCardProps) {
-  const { project, userCount = 0 } = props;
+  const { project, userCount = 0, status } = props;
 
   const { frontmatter, id } = project;
 
@@ -44,6 +46,21 @@ export function ProjectCard(props: ProjectCardProps) {
           <>{formatCommaNumber(userCount)} Started</>
         ) : (
           <>Be the first to solve!</>
+        )}
+
+        {status !== 'none' && (
+          <>
+            <span>&middot;</span>
+            <span
+              className={cn(
+                'capitalize',
+                status === 'completed' && 'text-green-500',
+                status === 'started' && 'text-yellow-500',
+              )}
+            >
+              {status}
+            </span>
+          </>
         )}
       </span>
     </a>
