@@ -90,9 +90,6 @@ const COMPRESS_CONFIG = {
       case '.avif':
         imageBuffer = await sharp(image).avif(COMPRESS_CONFIG.avif).toBuffer();
         break;
-      case '.gif':
-        imageBuffer = await sharp(image).gif(COMPRESS_CONFIG.gif).toBuffer();
-        break;
       case '.heif':
         imageBuffer = await sharp(image).heif().toBuffer();
         break;
@@ -111,6 +108,8 @@ const COMPRESS_CONFIG = {
       case '.webp':
         imageBuffer = await sharp(image).webp(COMPRESS_CONFIG.webp).toBuffer();
         break;
+      case '.gif':
+        continue;
     }
 
     if (!imageBuffer) {

@@ -38,6 +38,10 @@ export function UserPublicProjects(props: UserPublicProjectsProps) {
         return 0;
       }) || [];
 
+  if (!enrichedProjects.length) {
+    return null;
+  }
+
   return (
     <div className="mt-5">
       <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">

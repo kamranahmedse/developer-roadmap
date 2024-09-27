@@ -26,8 +26,7 @@ type ProgressStackProps = {
   topicDoneToday: number;
 };
 
-const MAX_PROGRESS_TO_SHOW = 5;
-const MAX_BOOKMARKS_TO_SHOW = 5;
+const MAX_PROGRESS_TO_SHOW = 11;
 const MAX_PROJECTS_TO_SHOW = 8;
 
 type ProgressLaneProps = {
@@ -36,6 +35,7 @@ type ProgressLaneProps = {
   linkHref?: string;
   isLoading?: boolean;
   isEmpty?: boolean;
+  loadingWrapperClassName?: string;
   loadingSkeletonCount?: number;
   loadingSkeletonClassName?: string;
   children: React.ReactNode;
@@ -43,6 +43,7 @@ type ProgressLaneProps = {
   emptyIcon?: LucideIcon;
   emptyLinkText?: string;
   emptyLinkHref?: string;
+  className?: string;
 };
 
 function ProgressLane(props: ProgressLaneProps) {
@@ -51,6 +52,7 @@ function ProgressLane(props: ProgressLaneProps) {
     linkText,
     linkHref,
     isLoading = false,
+    loadingWrapperClassName = '',
     loadingSkeletonCount = 4,
     loadingSkeletonClassName = '',
     children,
@@ -59,10 +61,16 @@ function ProgressLane(props: ProgressLaneProps) {
     emptyMessage = `No ${title.toLowerCase()} to show`,
     emptyLinkHref = '/roadmaps',
     emptyLinkText = 'Explore',
+    className,
   } = props;
 
   return (
-    <div className="flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-sm">
+    <div
+      className={cn(
+        'flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-sm',
+        className,
+      )}
+    >
       {isLoading && (
         <div className={'flex flex-row justify-between'}>
           <div className="h-[16px] w-[75px] animate-pulse rounded-md bg-gray-100"></div>
@@ -86,11 +94,13 @@ function ProgressLane(props: ProgressLaneProps) {
 
       <div className="mt-4 flex flex-grow flex-col gap-1.5">
         {isLoading && (
-          <>
+          <div
+            className={cn('grid grid-cols-2 gap-2', loadingWrapperClassName)}
+          >
             {Array.from({ length: loadingSkeletonCount }).map((_, index) => (
               <CardSkeleton key={index} className={loadingSkeletonClassName} />
             ))}
-          </>
+          </div>
         )}
         {!isLoading && children}
 
@@ -119,28 +129,26 @@ export function ProgressStack(props: ProgressStackProps) {
   const { progresses, projects, isLoading, accountStreak, topicDoneToday } =
     props;
 
-  const bookmarkedProgresses = progresses.filter(
-    (progress) => progress?.isFavorite,
-  );
-
-  const userProgresses = progresses.filter(
-    (progress) => !progress?.isFavorite || progress?.done > 0,
-  );
-
   const [showAllProgresses, setShowAllProgresses] = useState(false);
+  const sortedProgresses = progresses.sort((a, b) => {
+    if (a.isFavorite && !b.isFavorite) {
+      return 1;
+    }
+
+    if (!a.isFavorite && b.isFavorite) {
+      return -1;
+    }
+
+    return 0;
+  });
   const userProgressesToShow = showAllProgresses
-    ? userProgresses
-    : userProgresses.slice(0, MAX_PROGRESS_TO_SHOW);
+    ? sortedProgresses
+    : sortedProgresses.slice(0, MAX_PROGRESS_TO_SHOW);
 
   const [showAllProjects, setShowAllProjects] = useState(false);
   const projectsToShow = showAllProjects
     ? projects
     : projects.slice(0, MAX_PROJECTS_TO_SHOW);
-
-  const [showAllBookmarks, setShowAllBookmarks] = useState(false);
-  const bookmarksToShow = showAllBookmarks
-    ? bookmarkedProgresses
-    : bookmarkedProgresses.slice(0, MAX_BOOKMARKS_TO_SHOW);
 
   const totalProjectFinished = projects.filter(
     (project) => project.repositoryUrl,
@@ -167,92 +175,70 @@ export function ProgressStack(props: ProgressStackProps) {
       </div>
 
       <div className="mt-2 grid min-h-[330px] grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-        <div className="relative">
-          {!isLoading && bookmarksToShow.length === 0 && (
+        <div className="relative col-span-2">
+          {!isLoading && userProgressesToShow.length === 0 && (
             <EmptyStackMessage
               number={1}
-              title={'Bookmark Roadmaps'}
-              description={'Bookmark some roadmaps to access them quickly'}
+              title={'Bookmark some Roadmaps'}
+              description={
+                'Bookmark some roadmaps to access them quickly and start updating your progress'
+              }
               buttonText={'Explore Roadmaps'}
               buttonLink={'/roadmaps'}
+              bodyClassName="max-w-[280px]"
             />
           )}
 
           <ProgressLane
-            title={'Bookmarks'}
+            title="Progress & Bookmarks"
             isLoading={isLoading}
-            loadingSkeletonCount={5}
-            linkHref={'/roadmaps'}
-            linkText={'Roadmaps'}
-            isEmpty={bookmarksToShow.length === 0}
+            loadingSkeletonCount={MAX_PROGRESS_TO_SHOW}
+            linkHref="/roadmaps"
+            linkText="Roadmaps"
+            isEmpty={userProgressesToShow.length === 0}
             emptyIcon={Bookmark}
             emptyMessage={'No bookmarks to show'}
             emptyLinkHref={'/roadmaps'}
             emptyLinkText={'Explore Roadmaps'}
           >
-            {bookmarksToShow.map((progress) => {
-              return (
-                <DashboardBookmarkCard
-                  key={progress.resourceId}
-                  bookmark={progress}
+            <div className="grid grid-cols-2 gap-2">
+              {userProgressesToShow.length > 0 && (
+                <>
+                  {userProgressesToShow.map((progress) => {
+                    const isFavorite =
+                      progress.isFavorite &&
+                      !progress.done &&
+                      !progress.skipped;
+
+                    if (isFavorite) {
+                      return (
+                        <DashboardBookmarkCard
+                          key={progress.resourceId}
+                          bookmark={progress}
+                        />
+                      );
+                    }
+
+                    return (
+                      <DashboardProgressCard
+                        key={progress.resourceId}
+                        progress={progress}
+                      />
+                    );
+                  })}
+                </>
+              )}
+
+              {sortedProgresses.length > MAX_PROGRESS_TO_SHOW && (
+                <ShowAllButton
+                  showAll={showAllProgresses}
+                  setShowAll={setShowAllProgresses}
+                  count={sortedProgresses.length}
+                  maxCount={MAX_PROGRESS_TO_SHOW}
+                  className="min-h-[38px] rounded-md border border-dashed leading-none"
                 />
-              );
-            })}
-            {bookmarkedProgresses.length > MAX_BOOKMARKS_TO_SHOW && (
-              <ShowAllButton
-                showAll={showAllBookmarks}
-                setShowAll={setShowAllBookmarks}
-                count={bookmarkedProgresses.length}
-                maxCount={MAX_BOOKMARKS_TO_SHOW}
-                className="mb-0.5 mt-3"
-              />
-            )}
-          </ProgressLane>
-        </div>
-
-        <div className="relative">
-          {!isLoading && userProgressesToShow.length === 0 && (
-            <EmptyStackMessage
-              number={2}
-              title={'Track Progress'}
-              description={'Pick your first roadmap and start learning'}
-              buttonText={'Explore roadmaps'}
-              buttonLink={'/roadmaps'}
-            />
-          )}
-          <ProgressLane
-            title={'Progress'}
-            linkHref={'/roadmaps'}
-            linkText={'Roadmaps'}
-            isLoading={isLoading}
-            loadingSkeletonCount={5}
-            isEmpty={userProgressesToShow.length === 0}
-            emptyMessage={'Update your Progress'}
-            emptyIcon={Map}
-            emptyLinkText={'Explore Roadmaps'}
-          >
-            {userProgressesToShow.length > 0 && (
-              <>
-                {userProgressesToShow.map((progress) => {
-                  return (
-                    <DashboardProgressCard
-                      key={progress.resourceId}
-                      progress={progress}
-                    />
-                  );
-                })}
-              </>
-            )}
-
-            {userProgresses.length > MAX_PROGRESS_TO_SHOW && (
-              <ShowAllButton
-                showAll={showAllProgresses}
-                setShowAll={setShowAllProgresses}
-                count={userProgresses.length}
-                maxCount={MAX_PROGRESS_TO_SHOW}
-                className="mb-0.5 mt-3"
-              />
-            )}
+              )}
+            </div>
           </ProgressLane>
         </div>
 
@@ -262,6 +248,7 @@ export function ProgressStack(props: ProgressStackProps) {
             linkHref={'/projects'}
             linkText={'Projects'}
             isLoading={isLoading}
+            loadingWrapperClassName="grid-cols-1"
             loadingSkeletonClassName={'h-5'}
             loadingSkeletonCount={8}
             isEmpty={projectsToShow.length === 0}
@@ -272,7 +259,7 @@ export function ProgressStack(props: ProgressStackProps) {
           >
             {!isLoading && projectsToShow.length === 0 && (
               <EmptyStackMessage
-                number={3}
+                number={2}
                 title={'Build your first project'}
                 description={'Pick a project to practice and start building'}
                 buttonText={'Explore Projects'}
@@ -317,17 +304,15 @@ function ShowAllButton(props: ShowAllButtonProps) {
   const { showAll, setShowAll, count, maxCount, className } = props;
 
   return (
-    <span className="flex flex-grow items-end">
-      <button
-        className={cn(
-          'flex w-full items-center justify-center text-sm text-gray-500 hover:text-gray-700',
-          className,
-        )}
-        onClick={() => setShowAll(!showAll)}
-      >
-        {!showAll ? <>+ show {count - maxCount} more</> : <>- show less</>}
-      </button>
-    </span>
+    <button
+      className={cn(
+        'flex w-full items-center justify-center text-sm text-gray-500 hover:text-gray-700',
+        className,
+      )}
+      onClick={() => setShowAll(!showAll)}
+    >
+      {!showAll ? <>+ show {count - maxCount} more</> : <>- show less</>}
+    </button>
   );
 }
 
@@ -341,7 +326,7 @@ function CardSkeleton(props: CardSkeletonProps) {
   return (
     <div
       className={cn(
-        'h-10 w-full animate-pulse rounded-md bg-gray-100',
+        'h-[38px] w-full animate-pulse rounded-md bg-gray-100',
         className,
       )}
     />

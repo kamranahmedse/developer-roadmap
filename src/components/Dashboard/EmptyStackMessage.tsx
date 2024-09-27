@@ -1,17 +1,26 @@
+import { cn } from '../../lib/classname';
+
 type EmptyStackMessageProps = {
-  number: number;
+  number: number | string;
   title: string;
   description: string;
   buttonText: string;
   buttonLink: string;
+  bodyClassName?: string;
 };
 
 export function EmptyStackMessage(props: EmptyStackMessageProps) {
-  const { number, title, description, buttonText, buttonLink } = props;
+  const { number, title, description, buttonText, buttonLink, bodyClassName } =
+    props;
 
   return (
     <div className="absolute inset-0 flex items-center justify-center rounded-md bg-black/50">
-      <div className="flex max-w-[200px] flex-col items-center justify-center rounded-md bg-white p-4 shadow-sm">
+      <div
+        className={cn(
+          'flex max-w-[200px] flex-col items-center justify-center rounded-md bg-white p-4 shadow-sm',
+          bodyClassName,
+        )}
+      >
         <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-300 text-white">
           {number}
         </span>

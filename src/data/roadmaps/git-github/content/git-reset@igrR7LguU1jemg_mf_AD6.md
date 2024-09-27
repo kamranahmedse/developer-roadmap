@@ -4,5 +4,5 @@ Git reset is a command that allows you to "undo" or reset your current branch to
 
 Visit the following resources to learn more:
 
-- [@article@Git reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+- [@article@git reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 - [@video@Git Reset | How to Use Git Reset | Learn Git](https://www.youtube.com/watch?v=s1idhUiCk38)

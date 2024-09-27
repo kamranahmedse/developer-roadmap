@@ -19,9 +19,8 @@ export function RecommendedRoadmaps(props: RecommendedRoadmapsProps) {
 
         <a
           href="/roadmaps"
-          className="flex items-center gap-1 rounded-full bg-gray-500 px-2 py-0.5 text-xs font-medium text-white transition-colors hover:bg-black"
+          className="rounded-full bg-gray-200 px-2.5 py-0.5 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
         >
-          <ArrowUpRight size={12} strokeWidth={2.5} />
           All Roadmaps
         </a>
       </div>

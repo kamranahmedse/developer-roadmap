@@ -1,8 +1,14 @@
 {
   "-3pADOHMDQ0H6ZKNjURyn": {
     "title": "What is Redis?",
-    "description": "",
-    "links": []
+    "description": "Redis is an open-source, in-memory data structure store, primarily used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and sorted sets, making it highly versatile. Redis operates with extremely low latency due to its in-memory nature, enabling fast access to data. It is often used in real-time applications such as session management, leaderboards, or caching mechanisms, where quick data retrieval is critical. Additionally, Redis supports data persistence by periodically writing the dataset to disk, balancing memory speed with data reliability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is redis?",
+        "url": "https://redis.io/docs/latest/get-started/",
+        "type": "article"
+      }
+    ]
   },
   "M-EXrTDeAEMz_IkEi-ab4": {
     "title": "In-memory Data Structure Store",
@@ -101,8 +107,24 @@
   },
   "NhcZM4nUQoSBBf_1qXi6l": {
     "title": "Basic Commands / SET, GET",
-    "description": "",
-    "links": []
+    "description": "In Redis, the SET and GET commands are fundamental operations used to store and retrieve key-value pairs. Redis is an in-memory key-value store, and these commands form the basis for working with data in Redis.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SET Docs",
+        "url": "https://redis.io/docs/latest/commands/set/",
+        "type": "article"
+      },
+      {
+        "title": "GET Docs",
+        "url": "https://redis.io/docs/latest/commands/get/",
+        "type": "article"
+      },
+      {
+        "title": "Redis command cheat sheet",
+        "url": "https://redis.io/learn/howtos/quick-start/cheat-sheet",
+        "type": "article"
+      }
+    ]
   },
   "DOdNkTY1yIMipWA2CD9xH": {
     "title": "Settings and Getting Keys",
@@ -141,8 +163,19 @@
   },
   "cPWd53BO6tm-uy4gqLdtZ": {
     "title": "APPEND",
-    "description": "",
-    "links": []
+    "description": "Redis APPEND command is used to add some value in a key. If the key already exists and is a string, this command appends the value at the end of the string. If key does not exist it is created and set as an empty string,\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "APPEND Docs",
+        "url": "https://redis.io/docs/latest/commands/append/",
+        "type": "article"
+      },
+      {
+        "title": "Redis - String Append Command",
+        "url": "https://www.tutorialspoint.com/redis/strings_append.htm",
+        "type": "article"
+      }
+    ]
   },
   "eJQW986HM4Wf1o1i2FnXs": {
     "title": "STRLEN",
@@ -396,7 +429,7 @@
   },
   "jrgaoDnt_RxTu79hk4hCD": {
     "title": "Atomicity in Redis",
-    "description": "",
+    "description": "Atomicity in Redis refers to the property that ensures a set of operations is executed as a single, indivisible unit. This means that either all the operations are executed successfully or none of them are. Atomicity is crucial in Redis to maintain consistency, especially when multiple operations need to be performed together.\n\nLearn more from the following resources:\n\n*   [@official@Atomicity with Lua](https://redis.io/learn/develop/java/spring/rate-limiting/fixed-window/reactive-lua) -[@article@Atomicity in Redis operations](https://lucaspin.medium.com/atomicity-in-redis-operations-a1d7bc9f4a90)",
     "links": []
   },
   "LHlwjN3WHYUBUafzzwsWQ": {
@@ -406,13 +439,30 @@
   },
   "7JzeyTrkZ_1_yxMVrqvZU": {
     "title": "Batch Operations",
-    "description": "",
-    "links": []
+    "description": "Batch operations in Redis allow you to execute multiple commands efficiently in a single network round-trip. While Redis does not have true batching like some databases (where a set of operations are sent together and processed atomically), it provides ways to send multiple commands together to reduce the overhead of individual network requests. These include Pipelining, Transactions (MULTI/EXEC), and Lua Scripting.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Using pipelining to batch issue commands",
+        "url": "https://www.alibabacloud.com/help/en/redis/use-cases/use-pipelining-to-batch-issue-commands#:~:text=You%20can%20use%20the%20Redis,network%20latency%20and%20improving%20performance.",
+        "type": "article"
+      }
+    ]
   },
   "0Q3AkE8leWAyYsww3-BHX": {
     "title": "Bitmaps",
-    "description": "",
-    "links": []
+    "description": "In Redis, Bitmaps are a data structure that allows you to manipulate individual bits within a string value. While Redis doesn't have a native \"bitmap\" data type, it uses strings to represent bitmaps. The power of bitmaps comes from their ability to perform operations on binary data at the bit level, making them extremely memory-efficient for certain types of applications, like tracking the presence/absence of elements (such as daily active users, features, etc.).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Redis Bitmap docs",
+        "url": "https://redis.io/docs/latest/develop/data-types/bitmaps/",
+        "type": "article"
+      },
+      {
+        "title": "Redis bitmap explained",
+        "url": "https://youtu.be/oj8LdJQjhJo?si=jem54LfPbZtrpnEP",
+        "type": "video"
+      }
+    ]
   },
   "B-YUFhPQNdr1KZNupmR5N": {
     "title": "SETBIT",
@@ -426,8 +476,19 @@
   },
   "jpcyXSSib7q4WBPmpgnXA": {
     "title": "BITCOUNT",
-    "description": "",
-    "links": []
+    "description": "The BITCOUNT command in Redis is used to count the number of bits set to 1 (i.e., the number of binary 1s) in the value stored at a specific key. Since Redis allows string values to be stored as binary data, the BITCOUNT command becomes useful for operations involving bits, like efficiently tracking and counting bits in binary-encoded data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "BITCOUNT - Docs",
+        "url": "https://redis.io/docs/latest/commands/bitcount/",
+        "type": "article"
+      },
+      {
+        "title": "BITCOUNT",
+        "url": "https://upstash.com/docs/redis/sdks/ts/commands/bitmap/bitcount",
+        "type": "article"
+      }
+    ]
   },
   "tkrxArg_oYH0aQfM8NkD2": {
     "title": "BITOP",
@@ -631,8 +692,19 @@
   },
   "ibaZ34-laQtUyxAsERi7o": {
     "title": "AOF rewrite & compaction",
-    "description": "",
-    "links": []
+    "description": "Persistence refers to the writing of data to durable storage, such as a solid-state disk (SSD). Redis provides a range of persistence options of which AOF (Append Only File) is one of the options. AOF persistence logs every write operation received by the server. These operations can then be replayed again at server startup, reconstructing the original dataset.The rewrite will create a small optimized version of the current Append Only File.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Persistence in redis",
+        "url": "https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/",
+        "type": "article"
+      },
+      {
+        "title": "Enabling redis persistence",
+        "url": "https://youtu.be/qBKnUeR0p10?si=TPvcFtpFMcTZB-Be",
+        "type": "video"
+      }
+    ]
   },
   "9ToKTUqbi-NV5Wcwb21PT": {
     "title": "Truncation / Corruption",
@@ -681,8 +753,14 @@
   },
   "Qy42paiTUsO8HIwbWTMui": {
     "title": "Authentication",
-    "description": "",
-    "links": []
+    "description": "Authentication in Redis is a security feature used to restrict access to the server by requiring clients to authenticate themselves with a password before performing any commands. This helps prevent unauthorized users from connecting to your Redis instance and performing operations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AUTH",
+        "url": "https://redis.io/docs/latest/commands/auth/",
+        "type": "article"
+      }
+    ]
   },
   "wsuKH7YwGDV6GYQbdhA4o": {
     "title": "Network Security",
@@ -771,8 +849,19 @@
   },
   "wXRDsNGFckXV_CSiit5sN": {
     "title": "Backup and Recovery",
-    "description": "",
-    "links": []
+    "description": "Backing up and recovering Redis data is crucial for ensuring data persistence and reliability. Redis, by default, stores its data in memory for fast access, but it provides mechanisms to persist data to disk to allow for recovery in case of failure or system restarts. The primary methods for backup and recovery in Redis are RDB snapshots and AOF (Append-Only File). These methods can be used individually or in combination, depending on the specific use case.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Backup and recovery",
+        "url": "https://redis.io/redis-enterprise/technology/backup-disaster-recovery/",
+        "type": "article"
+      },
+      {
+        "title": "Backup & Restore Redis Cluster with Stash",
+        "url": "https://youtu.be/Py_Ivv-2dcQ?si=z8gAAmhlpUBce4jY",
+        "type": "video"
+      }
+    ]
   },
   "Cb-KazR4PuR86VX5oT0zi": {
     "title": "Upgrading Redis",
@@ -791,8 +880,19 @@
   },
   "cybF72wlJyJbHLUjitLvn": {
     "title": "Active-Active geo Distribution",
-    "description": "",
-    "links": []
+    "description": "An Active-Active architecture is a data resiliency architecture that distributes the database information over multiple data centers via independent and geographically distributed clusters and nodes. It is a network of separate processing nodes, each having access to a common replicated database such that all nodes can participate in a common application ensuring local low latency with each region being able to run in isolation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Active-Active geo-distribution",
+        "url": "https://redis.io/active-active/",
+        "type": "article"
+      },
+      {
+        "title": "What is active active geo-distribution",
+        "url": "https://youtu.be/x5iHPPZIlQg?si=ZZCwU-tDCIVDboXc",
+        "type": "video"
+      }
+    ]
   },
   "sWOFnbh2EyaHRzquz1UeF": {
     "title": "Redis on Flash",
