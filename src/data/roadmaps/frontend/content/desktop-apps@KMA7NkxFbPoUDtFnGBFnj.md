@@ -1,8 +1,3 @@
 # Desktop Applications in JavaScript
 
-A while back, developing a desktop app using JavaScript was impossible. But now JavaScript developers can create desktop applications using their knowledge for web development. Here is the list of options to create desktop applications in JavaScript.
-
-- [@article@Electron](https://www.electronjs.org/)
-- [@article@NodeGUI](https://docs.nodegui.org/)
-- [@article@NW.js](https://nwjs.io/)
-- [@article@Meteor](https://www.meteor.com/)
+Desktop applications applications typically use frameworks like Electron, NW.js (Node-WebKit), or Tauri, which combine a JavaScript runtime with a native GUI toolkit. This approach allows developers to use their web development skills to create cross-platform desktop apps. Electron, developed by GitHub, is particularly popular, powering applications like Visual Studio Code, Atom, and Discord. These frameworks provide APIs to access native system features, enabling JavaScript to interact with the file system, system tray, and other OS-specific functionalities. While offering rapid development and cross-platform compatibility, JavaScript desktop apps can face challenges in terms of performance and resource usage compared to traditional native applications. However, they benefit from the vast ecosystem of JavaScript libraries and tools, making them an attractive option for many developers and businesses.

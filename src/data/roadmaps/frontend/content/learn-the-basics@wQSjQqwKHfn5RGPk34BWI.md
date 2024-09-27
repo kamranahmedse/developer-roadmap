@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
-- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
-- [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
+- [@video@JavaScript Tutorial Full Course - Beginner to Pro (2024)](https://www.youtube.com/watch?v=EerdGm-ehJQ)
