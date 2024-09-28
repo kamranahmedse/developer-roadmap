@@ -5,5 +5,5 @@ Back pressure is a flow control mechanism in systems processing asynchronous dat
 Visit the following resources to learn more:
 
 - [@article@Awesome Architecture: Backpressure](https://awesome-architecture.com/back-pressure/)
-- [@article@Backpressure explained — the resisted flow of data through software](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7)
+- [@article@Backpressure explained — The Resisted Flow of Data through Software](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7)
 - [@video@What is Back Pressure](https://www.youtube.com/watch?v=viTGm_cV7lE)
