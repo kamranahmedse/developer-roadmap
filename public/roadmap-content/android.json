@@ -530,8 +530,19 @@
   },
   "PKql1HY0PLMfp50FRELXL": {
     "title": "Shared Preferences",
-    "description": "Shared Preferences in Android are used to store data in key-value pairs. It works similar to a tiny database where you can save small pieces of data such as settings or the state of an application. When data is saved to Shared Preferences, it persists across user sessions, even if your application is killed or gets deleted. Data in Shared Preferences is not typically used for large amounts of data. To perform actions such as saving, retrieving, or editing data in Shared Preferences, you use an instance of `SharedPreferences.Editor`.",
-    "links": []
+    "description": "Shared Preferences in Android are used to store data in **key-value** pairs. It works similar to a tiny database where you can save small pieces of data such as settings or the state of an application. When data is saved to Shared Preferences, it persists across user sessions, even if your application is killed or gets deleted. Data in Shared Preferences is not typically used for large amounts of data. To perform actions such as saving, retrieving, or editing data in Shared Preferences, you use an instance of `SharedPreferences.Editor`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://developer.android.com/training/data-storage/shared-preferences",
+        "type": "article"
+      },
+      {
+        "title": "SharedPreferences in Android",
+        "url": "https://www.youtube.com/watch?v=rJ3uwqko9Ew",
+        "type": "video"
+      }
+    ]
   },
   "GWq3s1iTxQOp1BstHscJ9": {
     "title": "DataStore",
@@ -750,8 +761,19 @@
   },
   "gvGAwjk_nhEgxzZ_c3f6b": {
     "title": "JUnit",
-    "description": "JUnit is a popular testing framework for Java programming. It forms the basis for many other testing libraries and tools in the Android ecosystem, making it important for any Android developer to become familiar with. The basic use of JUnit involves annotations such as `@Test`, indicating methods that represent a single test case. Other useful features include `@Before` and `@After` which allow for setup and teardown processes to be defined clearly. Another powerful feature in JUnit is the ability to create parameterized tests, effectively running the same test multiple times with different inputs.",
-    "links": []
+    "description": "**JUnit** is a popular testing framework for Java programming. It forms the basis for many other testing libraries and tools in the Android ecosystem, making it important for any Android developer to become familiar with. The basic use of JUnit involves annotations such as `@Test`, indicating methods that represent a single test case. Other useful features include `@Before` and `@After` which allow for setup and teardown processes to be defined clearly. Another powerful feature in JUnit is the ability to create parameterized tests, effectively running the same test multiple times with different inputs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://developer.android.com/training/testing/local-tests",
+        "type": "article"
+      },
+      {
+        "title": "Junit for android",
+        "url": "https://www.youtube.com/watch?v=jE1vQGVHaQA",
+        "type": "video"
+      }
+    ]
   },
   "kc6buUsLAeZeUb4Tk0apM": {
     "title": "Distribution",
