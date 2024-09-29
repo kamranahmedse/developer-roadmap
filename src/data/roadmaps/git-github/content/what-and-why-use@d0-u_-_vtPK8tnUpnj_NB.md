@@ -2,14 +2,16 @@
 
 Git submodules are a feature that allows you to include one Git repository within another. They are useful for managing external dependencies or shared components across projects.
 
-Key points:
+## Key points
+
 1. Separate repositories with independent histories
 2. Parent repository tracks specific submodule commits
 3. Enables code reuse and modular project structure
 4. Helps manage dependencies and keep main repository focused
 5. Facilitates collaboration on complex projects
 
-Benefits:
+## Benefits
+
 - Including third-party libraries
 - Sharing common code
 - Managing multi-component projects

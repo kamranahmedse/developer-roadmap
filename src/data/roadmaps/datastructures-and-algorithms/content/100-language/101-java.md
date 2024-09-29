@@ -5,7 +5,7 @@ It was created in 1995 by James Gosling at Sun Microsystems and is one of the mo
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Java Roadmap](/java)
+- [@roadmap@Visit Dedicated Java Roadmap](https://roadmap.sh/java)
 - [@official@Java Website](https://www.java.com/)
 - [@article@W3 Schools Tutorials](https://www.w3schools.com/java/)
 - [@video@Java Crash Course](https://www.youtube.com/watch?v=eIrMbAQSU34)

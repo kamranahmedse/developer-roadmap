@@ -1,13 +1,18 @@
 {
   "_7uvOebQUI4xaSwtMjpEd": {
     "title": "Programming Fundamentals",
-    "description": "Programming is the key requirement for MLOps. You need to be proficient in atleast one programming language. Python is the most popular language for MLOps.",
+    "description": "ML programming fundamentals encompass the essential skills and concepts needed to develop machine learning models effectively. Key aspects include understanding data structures and algorithms, as well as proficiency in programming languages commonly used in ML, such as Python and R. Familiarity with libraries and frameworks like TensorFlow, PyTorch, and scikit-learn is crucial for implementing machine learning algorithms and building models. Additionally, concepts such as data preprocessing, feature engineering, model evaluation, and hyperparameter tuning are vital for optimizing performance. A solid grasp of statistics and linear algebra is also important, as these mathematical foundations underpin many ML techniques, enabling practitioners to analyze data and interpret model results accurately.",
     "links": []
   },
   "Vh81GnOUOZvDOlOyI5PwT": {
     "title": "Python",
-    "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its significant use of indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.\n\nTo start learning Python, here are some useful resources:\n\nRemember, practice is key, and the more you work with Python, the more you'll appreciate its utility in the world of cyber security.",
+    "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its significant use of indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a \"batteries included\" language due to its comprehensive standard library.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Python Roadmap",
+        "url": "https://roadmap.sh/python",
+        "type": "article"
+      },
       {
         "title": "Python.org",
         "url": "https://www.python.org/",
@@ -32,11 +37,11 @@
   },
   "vdVq3RQvQF3mF8PQc6DMg": {
     "title": "Go",
-    "description": "Go is an open source programming language supported by Google. Go can be used to write cloud services, CLI tools, used for API development, and much more.\n\nVisit the following resources to learn more:",
+    "description": "Go, also known as Golang, is an open-source programming language developed by Google that emphasizes simplicity, efficiency, and strong concurrency support. Designed for modern software development, Go features a clean syntax, garbage collection, and built-in support for concurrent programming through goroutines and channels, making it well-suited for building scalable, high-performance applications, especially in cloud computing and microservices architectures. Go's robust standard library and tooling ecosystem, including a powerful package manager and testing framework, further streamline development processes, promoting rapid application development and deployment. Visit the following resources to learn more:",
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -47,16 +52,6 @@
       {
         "title": "Go Reference Documentation",
         "url": "https://go.dev/doc/",
-        "type": "article"
-      },
-      {
-        "title": "Go by Example - annotated example programs",
-        "url": "https://gobyexample.com/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools Go Tutorial ",
-        "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
       {
@@ -75,16 +70,27 @@
         "type": "article"
       },
       {
-        "title": "Go Class by Matt",
-        "url": "https://www.youtube.com/playlist?list=PLoILbKo9rG3skRCj37Kn5Zj803hhiuRK6",
+        "title": "Go Programming Course",
+        "url": "https://www.youtube.com/watch?v=un6ZyFkqFKo",
         "type": "video"
       }
     ]
   },
   "mMzqJF2KQ49TDEk5F3VAI": {
     "title": "Bash",
-    "description": "Understanding bash is essential for MLOps tasks.\n\n*   **Book Suggestion:** _The Linux Command Line, 2nd Edition_ by William E. Shotts",
-    "links": []
+    "description": "Bash (Bourne Again Shell) is a Unix shell and command language used for interacting with the operating system through a terminal. It allows users to execute commands, automate tasks via scripting, and manage system operations. As the default shell for many Linux distributions, it supports command-line utilities, file manipulation, process control, and text processing. Bash scripts can include loops, conditionals, and functions, making it a powerful tool for system administration, automation, and task scheduling.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "bash-guide",
+        "url": "https://github.com/Idnan/bash-guide",
+        "type": "opensource"
+      },
+      {
+        "title": "Bash Scripting Course",
+        "url": "https://www.youtube.com/watch?v=tK9Oc6AEnR4",
+        "type": "video"
+      }
+    ]
   },
   "oUhlUoWQQ1txx_sepD5ev": {
     "title": "Version Control Systems",
@@ -104,8 +110,13 @@
   },
   "06T5CbZAGJU6fJhCmqCC8": {
     "title": "Git",
-    "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
+    "description": "Git is a distributed version control system used to track changes in source code during software development. It enables multiple developers to collaborate on a project by managing versions of code, allowing for branching, merging, and tracking of revisions. Git ensures that changes are recorded with a complete history, enabling rollback to previous versions if necessary. It supports distributed workflows, meaning each developer has a complete local copy of the project’s history, facilitating seamless collaboration, conflict resolution, and efficient management of code across different teams or environments.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Learn Git & GitHub",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
       {
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
@@ -130,26 +141,21 @@
   },
   "7t7jSb3YgyWlhgCe8Se1I": {
     "title": "GitHub",
-    "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
+    "description": "GitHub is a web-based platform built on top of Git that provides version control, collaboration tools, and project management features for software development. It enables developers to host Git repositories, collaborate on code through pull requests, and review and track changes. GitHub also offers additional features like issue tracking, continuous integration, automated workflows, and documentation hosting. With its social coding environment, GitHub fosters open-source contributions and team collaboration, making it a central hub for many software development projects.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Learn Git & GitHub",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
       {
         "title": "GitHub Website",
         "url": "https://github.com",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitHub Documentation",
         "url": "https://docs.github.com/en/get-started/quickstart",
-        "type": "article"
-      },
-      {
-        "title": "How to Use Git in a Professional Dev Team",
-        "url": "https://ooloo.io/project/github-flow",
-        "type": "article"
-      },
-      {
-        "title": "Learn Git Branching",
-        "url": "https://learngitbranching.js.org/?locale=en_us",
         "type": "article"
       },
       {
@@ -161,28 +167,24 @@
         "title": "What is GitHub?",
         "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
         "type": "video"
-      },
-      {
-        "title": "Git vs. GitHub: Whats the difference?",
-        "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
-        "type": "video"
-      },
-      {
-        "title": "Git and GitHub for Beginners",
-        "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
-        "type": "video"
-      },
-      {
-        "title": "Git and GitHub - CS50 Beyond 2019",
-        "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
-        "type": "video"
       }
     ]
   },
   "00GZcwe25QYi7rDzaOoMt": {
     "title": "Cloud Computing",
-    "description": "**Cloud Computing** refers to the delivery of computing services over the internet rather than using local servers or personal devices. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud Computing enables faster innovation, flexible resources, and economies of scale. There are various types of cloud computing such as public clouds, private clouds, and hybrids clouds. Furthermore, it's divided into different services like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). These services differ mainly in the level of control an organization has over their data and infrastructures.",
-    "links": []
+    "description": "**Cloud Computing** refers to the delivery of computing services over the internet rather than using local servers or personal devices. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud Computing enables faster innovation, flexible resources, and economies of scale. There are various types of cloud computing such as public clouds, private clouds, and hybrids clouds. Furthermore, it's divided into different services like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). These services differ mainly in the level of control an organization has over their data and infrastructures.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is cloud computing?",
+        "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing",
+        "type": "article"
+      },
+      {
+        "title": "What is Cloud Computing? | Amazon Web Services",
+        "url": "https://www.youtube.com/watch?v=mxT233EdY5c",
+        "type": "video"
+      }
+    ]
   },
   "u3E7FGW4Iwdsu61KYFxCX": {
     "title": "AWS / Azure / GCP",
@@ -212,12 +214,28 @@
   },
   "kbfucfIO5KCsuv3jKbHTa": {
     "title": "Cloud-native ML Services",
-    "description": "Most of the cloud providers offer managed services for machine learning. These services are designed to help data scientists and machine learning engineers to build, train, and deploy machine learning models at scale. These services are designed to be cloud-native, meaning they are designed to work with other cloud services and are optimized for the cloud environment.\n\nHere are the services offered by the major cloud providers:\n\n*   **Amazon Web Services (AWS)**: SageMaker\n*   **Google Cloud Platform (GCP)**: AI Platform\n*   **Microsoft Azure**: Azure Machine Learning",
-    "links": []
+    "description": "Most of the cloud providers offer managed services for machine learning. These services are designed to help data scientists and machine learning engineers to build, train, and deploy machine learning models at scale. These services are designed to be cloud-native, meaning they are designed to work with other cloud services and are optimized for the cloud environment.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AWS Sage Maker",
+        "url": "https://aws.amazon.com/sagemaker/",
+        "type": "article"
+      },
+      {
+        "title": "Azure ML",
+        "url": "https://azure.microsoft.com/en-gb/products/machine-learning",
+        "type": "article"
+      },
+      {
+        "title": "What is Cloud Native?",
+        "url": "https://www.youtube.com/watch?v=fp9_ubiKqFU",
+        "type": "video"
+      }
+    ]
   },
   "tKeejLv8Q7QX40UtOjpav": {
     "title": "Containerization",
-    "description": "Containers are a construct in which [cgroups](https://en.wikipedia.org/wiki/Cgroups), [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), and [chroot](https://en.wikipedia.org/wiki/Chroot) are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines.\n\nThese images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.\n\nVisit the following resources to learn more:",
+    "description": "Containers are a construct in which cgroups, namespaces, and chroot are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines.\n\nThese images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What are Containers?",
@@ -274,8 +292,13 @@
   },
   "XQoK9l-xtN2J8ZV8dw53X": {
     "title": "Kubernetes",
-    "description": "Kubernetes is an [open source](https://github.com/kubernetes/kubernetes) container management platform, and the dominant product in this space. Using Kubernetes, teams can deploy images across multiple underlying hosts, defining their desired availability, deployment logic, and scaling logic in YAML. Kubernetes evolved from Borg, an internal Google platform used to provision and allocate compute resources (similar to the Autopilot and Aquaman systems of Microsoft Azure).\n\nThe popularity of Kubernetes has made it an increasingly important skill for the DevOps Engineer and has triggered the creation of Platform teams across the industry. These Platform engineering teams often exist with the sole purpose of making Kubernetes approachable and usable for their product development colleagues.\n\nVisit the following resources to learn more:",
+    "description": "Kubernetes is an open source container management platform, and the dominant product in this space. Using Kubernetes, teams can deploy images across multiple underlying hosts, defining their desired availability, deployment logic, and scaling logic in YAML. Kubernetes evolved from Borg, an internal Google platform used to provision and allocate compute resources (similar to the Autopilot and Aquaman systems of Microsoft Azure). The popularity of Kubernetes has made it an increasingly important skill for the DevOps Engineer and has triggered the creation of Platform teams across the industry. These Platform engineering teams often exist with the sole purpose of making Kubernetes approachable and usable for their product development colleagues.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Kubernetes Roadmap",
+        "url": "https://roadmap.sh/kubernetes",
+        "type": "article"
+      },
       {
         "title": "Kubernetes Website",
         "url": "https://kubernetes.io/",
@@ -284,11 +307,6 @@
       {
         "title": "Kubernetes Documentation",
         "url": "https://kubernetes.io/docs/home/",
-        "type": "article"
-      },
-      {
-        "title": "Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care",
-        "url": "https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/",
         "type": "article"
       },
       {
@@ -310,28 +328,93 @@
   },
   "ulka7VEVjz6ls5SnI6a6z": {
     "title": "Machine Learning Fundamentals",
-    "description": "An MLOps engineer should have a basic understanding of machine learning models.\n\n*   **Courses:** [MLCourse.ai](https://mlcourse.ai/), [Fast.ai](https://course.fast.ai)\n*   **Book Suggestion:** _Applied Machine Learning and AI for Engineers_ by Jeff Prosise",
-    "links": []
+    "description": "Machine learning fundamentals encompass the key concepts and techniques that enable systems to learn from data and make predictions or decisions without being explicitly programmed. At its core, machine learning involves algorithms that can identify patterns in data and improve over time with experience. Key areas include supervised learning (where models are trained on labeled data), unsupervised learning (where models identify patterns in unlabeled data), and reinforcement learning (where agents learn to make decisions based on feedback from their actions). Essential components also include data preprocessing, feature selection, model training, evaluation metrics, and the importance of avoiding overfitting. Understanding these fundamentals is crucial for developing effective machine learning applications across various domains. Learn more from the following resources:",
+    "links": [
+      {
+        "title": "Fundamentals of Machine Learning - Microsoft",
+        "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+        "type": "course"
+      },
+      {
+        "title": "MLCourse.ai",
+        "url": "https://mlcourse.ai/",
+        "type": "course"
+      },
+      {
+        "title": "Fast.ai",
+        "url": "https://course.fast.ai",
+        "type": "course"
+      }
+    ]
   },
   "VykbCu7LWIx8fQpqKzoA7": {
     "title": "Data Engineering Fundamentals",
-    "description": "Data Engineering is essentially dealing with the collection, validation, storage, transformation, and processing of data. The objective is to provide reliable, efficient, and scalable data pipelines and infrastructure that allow data scientists to convert data into actionable insights. It involves steps like data ingestion, data storage, data processing, and data provisioning. Important concepts include designing, building, and maintaining data architecture, databases, processing systems, and large-scale processing systems. It is crucial to have extensive technical knowledge in various tools and programming languages like SQL, Python, Hadoop, and more.",
-    "links": []
+    "description": "Data Engineering is essentially dealing with the collection, validation, storage, transformation, and processing of data. The objective is to provide reliable, efficient, and scalable data pipelines and infrastructure that allow data scientists to convert data into actionable insights. It involves steps like data ingestion, data storage, data processing, and data provisioning. Important concepts include designing, building, and maintaining data architecture, databases, processing systems, and large-scale processing systems. It is crucial to have extensive technical knowledge in various tools and programming languages like SQL, Python, Hadoop, and more.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Data Engineering 101",
+        "url": "https://www.redpanda.com/guides/fundamentals-of-data-engineering",
+        "type": "article"
+      },
+      {
+        "title": "Fundamentals of Data Engineering",
+        "url": "https://www.youtube.com/watch?v=mPSzL8Lurs0",
+        "type": "video"
+      }
+    ]
   },
   "cOg3ejZRYE-u-M0c89IjM": {
     "title": "Data Pipelines",
-    "description": "Data pipelines refer to a set of processes that involve moving data from one system to another, for purposes such as data integration, data migration, data transformation, or data synchronization. These processes can involve a variety of data sources and destinations, and may often require data to be cleaned, enriched, or otherwise transformed along the way. It's a key concept in data engineering to ensure that data is appropriately processed from its source to the location where it will be used, typically a data warehouse, data mart, or a data lake. As such, data pipelines play a crucial part in building an effective and efficient data analytics setup, enabling the flow of data to be processed for insights.\n\nIt is important to understand the difference between ELT and ETL pipelines. ELT stands for Extract, Load, Transform, and refers to a process where data is first extracted from source systems, then loaded into a target system, and finally transformed within the target system. ETL, on the other hand, stands for Extract, Transform, Load, and refers to a process where data is first extracted from source systems, then transformed, and finally loaded into a target system. The choice between ELT and ETL pipelines depends on the specific requirements of the data processing tasks at hand, and the capabilities of the systems involved.",
-    "links": []
+    "description": "Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is a data pipeline?",
+        "url": "https://www.ibm.com/topics/data-pipeline",
+        "type": "article"
+      },
+      {
+        "title": "What are data pipelines?",
+        "url": "https://www.youtube.com/watch?v=oKixNpz6jNo",
+        "type": "video"
+      }
+    ]
   },
   "wOogVDV4FIDLXVPwFqJ8C": {
     "title": "Data Lakes & Warehouses",
-    "description": "\"**Data Lakes** are large-scale data repository systems that store raw, untransformed data, in various formats, from multiple sources. They're often used for big data and real-time analytics requirements. Data lakes preserve the original data format and schema which can be modified as necessary. On the other hand, **Data Warehouses** are data storage systems which are designed for analyzing, reporting and integrating with transactional systems. The data in a warehouse is clean, consistent, and often transformed to meet wide-range of business requirements. Hence, data warehouses provide structured data but require more processing and management compared to data lakes.\"",
-    "links": []
+    "description": "\"**Data Lakes** are large-scale data repository systems that store raw, untransformed data, in various formats, from multiple sources. They're often used for big data and real-time analytics requirements. Data lakes preserve the original data format and schema which can be modified as necessary. On the other hand, **Data Warehouses** are data storage systems which are designed for analyzing, reporting and integrating with transactional systems. The data in a warehouse is clean, consistent, and often transformed to meet wide-range of business requirements. Hence, data warehouses provide structured data but require more processing and management compared to data lakes.\"\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Data lake definition",
+        "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-a-data-lake",
+        "type": "article"
+      },
+      {
+        "title": "What is a data lake?",
+        "url": "https://www.youtube.com/watch?v=LxcH6z8TFpI",
+        "type": "video"
+      },
+      {
+        "title": "@hat is a data warehouse?",
+        "url": "https://www.youtube.com/watch?v=k4tK2ttdSDg",
+        "type": "video"
+      }
+    ]
   },
   "Berd78HvnulNEGOsHCf8n": {
     "title": "Data Ingestion Architecture",
-    "description": "Data ingestion is the process of collecting, transferring, and loading data from various sources to a destination where it can be stored and analyzed. There are several data ingestion architectures that can be used to collect data from different sources and load it into a data warehouse, data lake, or other storage systems. These architectures can be broadly classified into two categories: batch processing and real-time processing. How you choose to ingest data will depend on the volume, velocity, and variety of data you are working with, as well as the latency requirements of your use case.\n\nLambda and Kappa architectures are two popular data ingestion architectures that combine batch and real-time processing to handle large volumes of data efficiently.",
-    "links": []
+    "description": "Data ingestion is the process of collecting, transferring, and loading data from various sources to a destination where it can be stored and analyzed. There are several data ingestion architectures that can be used to collect data from different sources and load it into a data warehouse, data lake, or other storage systems. These architectures can be broadly classified into two categories: batch processing and real-time processing. How you choose to ingest data will depend on the volume, velocity, and variety of data you are working with, as well as the latency requirements of your use case.\n\nLambda and Kappa architectures are two popular data ingestion architectures that combine batch and real-time processing to handle large volumes of data efficiently.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Data Ingestion Patterns",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingestion-patterns-practices/data-ingestion-patterns.html",
+        "type": "article"
+      },
+      {
+        "title": "What is a data pipeline?",
+        "url": "https://www.youtube.com/watch?v=kGT4PcTEPP8",
+        "type": "video"
+      }
+    ]
   },
   "pVSlVHXIap0unFxLGM-lQ": {
     "title": "Airflow",
@@ -414,7 +497,7 @@
   },
   "iTsEHVCo6KGq7H2HMgy5S": {
     "title": "MLOps Principles",
-    "description": "Awareness of MLOps principles and maturity factors is required.\n\n*   **Books:**\n    *   _Designing Machine Learning Systems_ by Chip Huyen\n    *   _Introducing MLOps_ by Mark Treveil and Dataiku\n*   **Assessment:** [MLOps maturity assessment](https://marvelousmlops.substack.com/p/mlops-maturity-assessment)\n*   **Great resource on MLOps:** [ml-ops.org](https://ml-ops.org)",
+    "description": "MLOps (Machine Learning Operations) principles focus on streamlining the deployment, monitoring, and management of machine learning models in production environments. Key principles include:\n\n1.  **Collaboration**: Foster collaboration between data scientists, developers, and operations teams to ensure alignment on model goals, performance, and lifecycle management.\n    \n2.  **Automation**: Automate workflows for model training, testing, deployment, and monitoring to enhance efficiency, reduce errors, and speed up the development lifecycle.\n    \n3.  **Version Control**: Implement version control for both code and data to track changes, reproduce experiments, and maintain model lineage.\n    \n4.  **Continuous Integration and Deployment (CI/CD)**: Establish CI/CD pipelines tailored for machine learning to facilitate rapid model iteration and deployment.\n    \n5.  **Monitoring and Governance**: Continuously monitor model performance and data drift in production to ensure models remain effective and compliant with regulatory requirements.\n    \n6.  **Scalability**: Design systems that can scale to handle varying workloads and accommodate changes in data volume and complexity.\n    \n7.  **Reproducibility**: Ensure that experiments can be reliably reproduced by standardizing environments and workflows, making it easier to validate and iterate on models.\n    \n\nThese principles help organizations efficiently manage the lifecycle of machine learning models, from development to deployment and beyond.",
     "links": []
   },
   "l1xasxQy2vAY34NWaqKEe": {
@@ -445,23 +528,62 @@
   },
   "a6vawajw7BpL6plH_nuAz": {
     "title": "CI/CD",
-    "description": "Critical for traceable and reproducible ML model deployments.\n\n*   **Books:**\n    *   _Learning GitHub Actions_ by Brent Laster\n    *   _Learning Git_ by Anna Skoulikari\n*   **Tutorials & Courses:** [Git & GitHub for beginners](https://www.youtube.com/watch?v=RGOj5yH7evk), [Python to Production guide](https://www.udemy.com/course/setting-up-the-linux-terminal-for-software-development/), [Version Control Missing Semester](https://missing.csail.mit.edu/2020/version-control/), [https://learngitbranching.js.org/](https://learngitbranching.js.org/)\n*   **Tool:** [Pre-commit hooks](https://marvelousmlops.substack.com/p/welcome-to-pre-commit-heaven)",
-    "links": []
+    "description": "CI/CD (Continuous Integration and Continuous Deployment/Delivery) is a software development practice that automates the process of integrating code changes, running tests, and deploying updates. Continuous Integration focuses on regularly merging code changes into a shared repository, followed by automated testing to ensure code quality. Continuous Deployment extends this by automatically releasing every validated change to production, while Continuous Delivery ensures code is always in a deployable state, but requires manual approval for production releases. CI/CD pipelines improve code reliability, reduce integration risks, and speed up the development lifecycle.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is CI/CD?",
+        "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
+        "type": "article"
+      },
+      {
+        "title": "CI/CD In 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=42UP1fxi2SY",
+        "type": "video"
+      }
+    ]
   },
   "fes7M--Y8i08_zeP98tVV": {
     "title": "Orchestration",
-    "description": "Systems like Airflow and Mage are important in ML engineering.\n\n*   **Course:** [Introduction to Airflow in Python](https://app.datacamp.com/learn/courses/introduction-to-airflow-in-python)\n*   **Note:** Airflow is also featured in the _ML Engineering with Python_ book and [_The Full Stack 7-Steps MLOps Framework_](https://www.pauliusztin.me/courses/the-full-stack-7-steps-mlops-framework).",
-    "links": []
+    "description": "ML orchestration refers to the process of managing and coordinating the various tasks and workflows involved in the machine learning lifecycle, from data preparation and model training to deployment and monitoring. It involves integrating multiple tools and platforms to streamline operations, automate repetitive tasks, and ensure seamless collaboration among data scientists, engineers, and operations teams. By using orchestration frameworks, organizations can enhance reproducibility, scalability, and efficiency, enabling them to manage complex machine learning pipelines and improve the overall quality of models in production. This ensures that models are consistently updated and maintained, facilitating rapid iteration and adaptation to changing data and business needs.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "ML Observability: what, why, how",
+        "url": "https://ubuntu.com/blog/ml-observability",
+        "type": "article"
+      }
+    ]
   },
   "fGGWKmAJ50Ke6wWJBEgby": {
     "title": "Experiment Tracking & Model Registry",
-    "description": "**Experiment Tracking** is an essential part of MLOps, providing a system to monitor and record the different experiments conducted during the machine learning model development process. This involves capturing, organizing and visualizing the metadata associated with each experiment, such as hyperparameters used, models produced, metrics like accuracy or loss, and other information about the computational environment. This tracking allows for reproducibility of experiments, comparison across different experiment runs, and helps in identifying the best models.\n\nLogging metadata, parameters, and artifacts of training runs.\n\n*   **Tool:** MLflow\n*   **Courses:** [MLflow Udemy course](https://www.udemy.com/course/mlflow-course/), [End-to-end machine learning (MLflow piece)](https://www.udemy.com/course/sustainable-and-scalable-machine-learning-project-development/)",
-    "links": []
+    "description": "**Experiment Tracking** is an essential part of MLOps, providing a system to monitor and record the different experiments conducted during the machine learning model development process. This involves capturing, organizing and visualizing the metadata associated with each experiment, such as hyperparameters used, models produced, metrics like accuracy or loss, and other information about the computational environment. This tracking allows for reproducibility of experiments, comparison across different experiment runs, and helps in identifying the best models.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Experiment Tracking",
+        "url": "https://madewithml.com/courses/mlops/experiment-tracking/#dashboard",
+        "type": "article"
+      },
+      {
+        "title": "ML Flow Model Registry",
+        "url": "https://mlflow.org/docs/latest/model-registry.html",
+        "type": "article"
+      }
+    ]
   },
   "6XgP_2NLuiw654zvTyueT": {
     "title": "Data Lineage & Feature Stores",
-    "description": "**Data Lineage** refers to the life-cycle of data, including its origins, movements, characteristics and quality. It's a critical component in MLOps for tracking the journey of data through every process in a pipeline, from raw input to model output. Data lineage helps in maintaining transparency, ensuring compliance, and facilitating data debugging or tracing data related bugs. It provides a clear representation of data sources, transformations, and dependencies thereby aiding in audits, governance, or reproduction of machine learning models.\n\nFeature stores are a crucial component of MLOps infrastructure.\n\n*   **Tutorial:** Creating a feature store with Feast [Part 1](https://kedion.medium.com/creating-a-feature-store-with-feast-part-1-37c380223e2f) [Part 2](https://kedion.medium.com/feature-storage-for-ml-with-feast-part-2-34df1971a8d3) [Part 3](https://kedion.medium.com/feature-storage-for-ml-with-feast-a061899fc4a2)\n*   **Tool:** DVC for data tracking\n*   **Course:** [End-to-end machine learning (DVC piece)](https://www.udemy.com/course/sustainable-and-scalable-machine-learning-project-development/)",
-    "links": []
+    "description": "**Data Lineage** refers to the life-cycle of data, including its origins, movements, characteristics and quality. It's a critical component in MLOps for tracking the journey of data through every process in a pipeline, from raw input to model output. Data lineage helps in maintaining transparency, ensuring compliance, and facilitating data debugging or tracing data related bugs. It provides a clear representation of data sources, transformations, and dependencies thereby aiding in audits, governance, or reproduction of machine learning models.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Data Lineage?",
+        "url": "https://www.ibm.com/topics/data-lineage",
+        "type": "article"
+      },
+      {
+        "title": "What is a feature store",
+        "url": "https://www.snowflake.com/guides/what-feature-store-machine-learning/",
+        "type": "article"
+      }
+    ]
   },
   "zsW1NRb0dMgS-KzWsI0QU": {
     "title": "Model Training & Serving",
@@ -470,33 +592,39 @@
   },
   "r4fbUwD83uYumEO1X8f09": {
     "title": "Monitoring & Observability",
-    "description": "**Monitoring** in MLOps primarily involves tracking the performance of machine learning (ML) models in production to ensure that they continually deliver accurate and reliable results. Such monitoring is necessary because the real-world data that these models handle may change over time, a scenario known as data drift. These changes can adversely affect model performance. Monitoring helps to detect any anomalies in the model’s behaviour or performance and such alerts can trigger the retraining of models with new data. From a broader perspective, monitoring also involves tracking resources and workflows to detect and rectify any operational issues in the MLOps pipeline.",
+    "description": "**Monitoring** in MLOps primarily involves tracking the performance of machine learning (ML) models in production to ensure that they continually deliver accurate and reliable results. Such monitoring is necessary because the real-world data that these models handle may change over time, a scenario known as data drift. These changes can adversely affect model performance. Monitoring helps to detect any anomalies in the model’s behaviour or performance and such alerts can trigger the retraining of models with new data. From a broader perspective, monitoring also involves tracking resources and workflows to detect and rectify any operational issues in the MLOps pipeline.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "ML Monitoring vs Observability article",
-        "url": "https://marvelousmlops.substack.com/p/ml-monitoring-vs-ml-observability",
+        "title": "ML Monitoring vs ML Observability",
+        "url": "https://medium.com/marvelous-mlops/ml-monitoring-vs-ml-observability-understanding-the-differences-fff574a8974f",
         "type": "article"
       },
       {
-        "title": "Machine learning monitoring concepts",
-        "url": "https://app.datacamp.com/learn/courses/machine-learning-monitoring-concepts",
-        "type": "article"
-      },
-      {
-        "title": "Monitoring ML in Python",
-        "url": "https://app.datacamp.com/learn/courses/monitoring-machine-learning-in-python",
-        "type": "article"
-      },
-      {
-        "title": "Prometheus, Grafana",
-        "url": "https://www.udemy.com/course/mastering-prometheus-and-grafana/",
-        "type": "article"
+        "title": "ML Observability vs ML Monitoring: What's the difference?",
+        "url": "https://www.youtube.com/watch?v=k1Reed3QIYE",
+        "type": "video"
       }
     ]
   },
   "sf67bSL7HAx6iN7S6MYKs": {
     "title": "Infrastructure as Code",
-    "description": "Essential for a reproducible MLOps framework.\n\n*   **Course:** [Terraform course for beginners](https://www.youtube.com/watch?v=SLB_c_ayRMo)\n*   **Video:** [8 Terraform best practices by Techworld by Nana](https://www.youtube.com/watch?v=gxPykhPxRW0)\n*   **Book Suggestion:** _Terraform: Up and Running, 3rd Edition_ by Yevgeniy Brikman",
-    "links": []
+    "description": "Infrastructure as Code (IaC) is a modern approach to managing and provisioning IT infrastructure through machine-readable configuration files, rather than manual processes. It enables developers and operations teams to define and manage infrastructure resources—such as servers, networks, and databases—using code, which can be versioned, tested, and deployed like application code. IaC tools, like Terraform and AWS CloudFormation, allow for automated, repeatable deployments, reducing human error and increasing consistency across environments. This practice facilitates agile development, enhances collaboration between teams, and supports scalable and efficient infrastructure management.",
+    "links": [
+      {
+        "title": "What is Infrastructure as Code?",
+        "url": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+        "type": "article"
+      },
+      {
+        "title": "Terraform course for beginners",
+        "url": "https://www.youtube.com/watch?v=SLB_c_ayRMo",
+        "type": "video"
+      },
+      {
+        "title": "8 Terraform best practices",
+        "url": "https://www.youtube.com/watch?v=gxPykhPxRW0",
+        "type": "video"
+      }
+    ]
   }
 }

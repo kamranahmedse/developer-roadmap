@@ -1,7 +1,7 @@
 # Infrastructure as Code
 
-Essential for a reproducible MLOps framework.
+Infrastructure as Code (IaC) is a modern approach to managing and provisioning IT infrastructure through machine-readable configuration files, rather than manual processes. It enables developers and operations teams to define and manage infrastructure resources—such as servers, networks, and databases—using code, which can be versioned, tested, and deployed like application code. IaC tools, like Terraform and AWS CloudFormation, allow for automated, repeatable deployments, reducing human error and increasing consistency across environments. This practice facilitates agile development, enhances collaboration between teams, and supports scalable and efficient infrastructure management.
 
-- **Course:** [Terraform course for beginners](https://www.youtube.com/watch?v=SLB_c_ayRMo)
-- **Video:** [8 Terraform best practices by Techworld by Nana](https://www.youtube.com/watch?v=gxPykhPxRW0)
-- **Book Suggestion:** _Terraform: Up and Running, 3rd Edition_ by Yevgeniy Brikman
+- [@article@What is Infrastructure as Code?](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)
+- [@video@Terraform course for beginners](https://www.youtube.com/watch?v=SLB_c_ayRMo)
+- [@video@8 Terraform best practices](https://www.youtube.com/watch?v=gxPykhPxRW0)

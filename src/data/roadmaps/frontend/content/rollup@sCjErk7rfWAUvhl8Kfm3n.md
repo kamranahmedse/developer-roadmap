@@ -1,6 +1,6 @@
 # Rollup
 
-Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
+Rollup is a module bundler for JavaScript that compiles small pieces of code into larger, more complex structures. It specializes in producing smaller, more efficient bundles for ES modules. Rollup excels at tree-shaking, eliminating unused code for leaner outputs. It's particularly well-suited for libraries and applications using the ES module format. Rollup supports various output formats, including UMD and CommonJS, making it versatile for different deployment scenarios. While it may require more configuration than some alternatives, Rollup's focus on ES modules and its efficient bundling make it popular for projects prioritizing small bundle sizes and modern JavaScript practices.
 
 Visit the following resources to learn more:
 

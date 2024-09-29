@@ -1244,8 +1244,8 @@
         "type": "article"
       },
       {
-        "title": "Explore top posts about JavaScript",
-        "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+        "title": "Explore top posts about NestJS",
+        "url": "https://app.daily.dev/tags/nestjs?ref=roadmapsh",
         "type": "article"
       },
       {
@@ -2085,7 +2085,58 @@
   },
   "M62lAWBOrTe99TfpFOQ-Y": {
     "title": "Common Built-in Modules",
-    "description": "These are the common modules that come with `Node.js` out of the box. This module provides tools or APIs for performing out certain standard `Node.js` operations. like interacting with the file system, url parsing, or logging information to the console.",
-    "links": []
+    "description": "These are the core modules that come with `Node.js` out of the box. This module provides tools or APIs for performing out certain standard `Node.js` operations. like interacting with the file system, url parsing, or logging information to the console.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Nodejs fs module",
+        "url": "https://nodejs.org/api/fs.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs url module",
+        "url": "https://nodejs.org/api/url.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs console module",
+        "url": "https://nodejs.org/api/console.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs util module",
+        "url": "https://nodejs.org/api/util.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs events module",
+        "url": "https://nodejs.org/api/events.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs os module",
+        "url": "https://nodejs.org/api/os.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs worker threads module",
+        "url": "https://nodejs.org/api/worker_threads.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs child process module",
+        "url": "https://nodejs.org/api/child_process.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs process object",
+        "url": "https://nodejs.org/api/process.html",
+        "type": "article"
+      },
+      {
+        "title": "Nodejs crypto module",
+        "url": "https://nodejs.org/api/crypto.html",
+        "type": "article"
+      }
+    ]
   }
 }

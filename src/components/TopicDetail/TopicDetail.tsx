@@ -336,6 +336,10 @@ export function TopicDetail(props: TopicDetailProps) {
     return resource.topicIds.includes(normalizedTopicId);
   });
 
+  const hasPaidScrimbaLinks = paidResourcesForTopic.some(
+    (resource) => resource?.url?.toLowerCase().indexOf('scrimba') !== -1,
+  );
+
   return (
     <div className={'relative z-[90]'}>
       <div
@@ -485,6 +489,19 @@ export function TopicDetail(props: TopicDetailProps) {
                       );
                     })}
                   </ul>
+
+                  {hasPaidScrimbaLinks && (
+                    <div className="relative -mb-1 ml-3 mt-4 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800">
+                      <div className="flex items-center gap-2">
+                        <Coins className="h-4 w-4 text-yellow-700" />
+                        <span>
+                          Scrimba is offering{' '}
+                          <span className={'font-semibold'}>20% off</span> on
+                          all courses for roadmap.sh users.
+                        </span>
+                      </div>
+                    </div>
+                  )}
 
                   {showPaidResourceDisclaimer && (
                     <PaidResourceDisclaimer

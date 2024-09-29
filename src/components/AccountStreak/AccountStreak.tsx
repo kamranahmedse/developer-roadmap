@@ -111,7 +111,7 @@ export function AccountStreak(props: AccountStreakProps) {
           ref={dropdownRef}
           className="absolute right-0 top-full z-50 w-[335px] translate-y-1 rounded-lg bg-slate-800 shadow-xl"
         >
-          <div className="py-3 pl-4 pr-5">
+          <div className="py-5 pl-4 pr-5">
             <div className="flex items-center justify-between gap-2 text-sm text-slate-500">
               <p>
                 Current Streak
@@ -127,7 +127,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </p>
             </div>
 
-            <div className="mb-5 mt-8">
+            <div className="mb-6 mt-9">
               <div className="grid grid-cols-10 gap-1">
                 {Array.from({ length: totalCircles }).map((_, index) => {
                   let dayCount,
@@ -181,7 +181,7 @@ export function AccountStreak(props: AccountStreakProps) {
               </div>
             </div>
 
-            <p className="-mt-[0px] mb-[1.75px] text-center text-xs tracking-wide text-slate-600">
+            <p className="-mt-[0px] mb-[1.5px] text-center text-xs tracking-wide text-slate-500">
               Visit every day to keep your streak going!
             </p>
             <p className='text-xs mt-1.5 text-center'>

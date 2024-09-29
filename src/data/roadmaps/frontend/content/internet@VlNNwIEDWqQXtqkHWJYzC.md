@@ -1,13 +1,3 @@
 # Internet
 
-The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
-
-Visit the following resources to learn more:
-
-- [@article@How does the Internet Work?](https://cs.fyi/guide/how-does-internet-work)
-- [@article@The Internet Explained](https://www.vox.com/2014/6/16/18076282/the-internet)
-- [@article@How Does the Internet Work?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-- [@article@Introduction to Internet](/guides/what-is-internet)
-- [@website@Learn How the Web Works](https://internetfundamentals.com)
-- [@video@How does the Internet work?](https://www.youtube.com/watch?v=x3c1ih2NJEg)
-- [@video@How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+The Internet is a global network of interconnected computer networks that use the Internet Protocol Suite (TCP/IP) to communicate. It enables the exchange of data, information, and services across the world, connecting billions of devices and users. The Internet has revolutionized communication, commerce, education, and entertainment, becoming an integral part of modern society. It supports various applications and services, from web browsing and instant messaging to streaming media and online gaming. While offering unprecedented access to information and connectivity, the Internet also raises concerns about privacy, security, and digital divide issues.

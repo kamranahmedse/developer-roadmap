@@ -8,7 +8,7 @@ You can use `git filter-branch` to rewrite Git revision history by applying cust
 
 Notably, there exists a simpler, safer, and more powerful alternative: `git filter-repo`. This tool is actively promoted by Git and offers a streamlined approach to filtering revisions, making it a preferred choice for rewriting your Git history, especially when managing large repositories.
 
-Visit the following resources to learn more: 
+Visit the following resources to learn more:
 
 - [@official@git filter-branch](https://git-scm.com/docs/git-filter-branch)
 - [@official@git filter-repo](https://github.com/newren/git-filter-repo)

@@ -1,13 +1,11 @@
 # Bash Scripts
 
-Bash scripts are a type of shell script that uses the Bash shell command language. Bash, which stands for "Bourne-Again SHell", is a Unix shell and command-line interpreter written by Brian Fox for the GNU Project.
-
-A Bash script is a text file that contains a series of commands that are executed in order when the script is run. These commands can be a combination of Bash built-in commands, external commands, and shell functions. Bash scripts are typically used to automate repetitive tasks, simplify complex commands, and perform system administration tasks.
-
-Bash scripts usually have a .sh extension and are executable files. To run a Bash script, you need to give it execute permissions using the chmod command, and then you can run it by typing `./script_name.sh` in the terminal.
+Bash (Bourne Again Shell) is a powerful Unix shell and command language interpreter, serving as the default shell for most Linux distributions and macOS. It provides a command-line interface for interacting with the operating system, executing commands, and automating tasks through shell scripts. Bash supports variables, control structures, functions, and command substitution, making it versatile for system administration, DevOps tasks, and general-purpose scripting. Its ability to pipe commands, redirect input/output, and utilize a vast array of built-in commands and utilities makes it an essential tool for developers and system administrators in managing and automating workflows in Unix-like environments.
 
 Visit the following resources to learn more:
 
 - [@article@Interactive Shell Scripting Tutorial](https://www.learnshell.org/en/Welcome)
 - [@article@Bash Scripting Tutorial](https://www.javatpoint.com/bash)
+- [@video@Bash in 100 Seconds](https://www.youtube.com/watch?v=I4EWvMFj37g)
+- [@course@Bash Scripting Tutorial for Beginners](https://www.youtube.com/watch?v=tK9Oc6AEnR4)
 - [@feed@Explore top posts about Bash](https://app.daily.dev/tags/bash?ref=roadmapsh)

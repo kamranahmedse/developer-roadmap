@@ -5,3 +5,4 @@ Sandboxing is a security technique where a program or code is isolated in a cont
 Visit the following resources to learn more:
 
 - [@article@What is Sandboxing?](https://www.checkpoint.com/cyber-hub/threat-prevention/what-is-sandboxing/)
+- [@video@Sandboxing in under 4 minutes](https://www.youtube.com/watch?v=kn32PHG2wcU)

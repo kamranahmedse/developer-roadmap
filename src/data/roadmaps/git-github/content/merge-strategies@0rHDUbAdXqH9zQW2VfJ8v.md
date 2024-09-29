@@ -7,3 +7,8 @@ When combining changes from one branch into another, Git provides various merge 
 - Rebase
 - Squash
 - Cherry Picking
+
+Visit the following resources to learn more:
+
+- [@official@Git Merge Strategies](https://git-scm.com/docs/merge-strategies)
+- [@article@Git Merge Options](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy)

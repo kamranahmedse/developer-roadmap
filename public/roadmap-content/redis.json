@@ -1,0 +1,912 @@
+{
+  "-3pADOHMDQ0H6ZKNjURyn": {
+    "title": "What is Redis?",
+    "description": "Redis is an open-source, in-memory data structure store, primarily used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and sorted sets, making it highly versatile. Redis operates with extremely low latency due to its in-memory nature, enabling fast access to data. It is often used in real-time applications such as session management, leaderboards, or caching mechanisms, where quick data retrieval is critical. Additionally, Redis supports data persistence by periodically writing the dataset to disk, balancing memory speed with data reliability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is redis?",
+        "url": "https://redis.io/docs/latest/get-started/",
+        "type": "article"
+      }
+    ]
+  },
+  "M-EXrTDeAEMz_IkEi-ab4": {
+    "title": "In-memory Data Structure Store",
+    "description": "",
+    "links": []
+  },
+  "l2aXyO3STnhbFjvUXPpm2": {
+    "title": "Key-value Database",
+    "description": "",
+    "links": []
+  },
+  "eHuBz_zSZK3rubn7nkd7g": {
+    "title": "Cache",
+    "description": "",
+    "links": []
+  },
+  "mgGJTBU8ofvOzl9gYWhnG": {
+    "title": "Message Broker",
+    "description": "",
+    "links": []
+  },
+  "-TjnSOY8txYrhhxRV1OIl": {
+    "title": "Caching",
+    "description": "",
+    "links": []
+  },
+  "bVJASI7bfSYqYnNhX83ng": {
+    "title": "Real-time Analytics",
+    "description": "",
+    "links": []
+  },
+  "URxGmhZHr0Y8nyrYj0gJl": {
+    "title": "Session Management",
+    "description": "",
+    "links": []
+  },
+  "ZCyId3aIoLv3duxoJdk2P": {
+    "title": "Pub/Sub Messaging",
+    "description": "",
+    "links": []
+  },
+  "Fv1iGX22sApIEifM2IpJz": {
+    "title": "Leaderboards and Counters",
+    "description": "",
+    "links": []
+  },
+  "8uRpPJ0iD4XnQPKruQc8P": {
+    "title": "Data Persistence Options",
+    "description": "",
+    "links": []
+  },
+  "uVewcyaFi1Pt2Gs0KrkfA": {
+    "title": "Rich Data Structures",
+    "description": "",
+    "links": []
+  },
+  "5-3pd4rLDqRzMzSRVLdXh": {
+    "title": "High Performance and Scalability",
+    "description": "",
+    "links": []
+  },
+  "EvWiEx_AoxAht6sKxzW2l": {
+    "title": "Redis vs SQL/NoSQL DBs",
+    "description": "",
+    "links": []
+  },
+  "1Af5H0BgdAsRdBCNdHz5v": {
+    "title": "When to choose Redis?",
+    "description": "",
+    "links": []
+  },
+  "Bf_kLfmy7_uflqC9N0-jt": {
+    "title": "Using Package Managers",
+    "description": "",
+    "links": []
+  },
+  "yBZ79s6mzGdj5AnX2H_Hy": {
+    "title": "Pre-compiled Binaries",
+    "description": "",
+    "links": []
+  },
+  "TDxv0q7jlZ26uZYYlneem": {
+    "title": "Using Docker",
+    "description": "",
+    "links": []
+  },
+  "43LvShQhmoWQ8Nye7fLkz": {
+    "title": "Starting the Server",
+    "description": "",
+    "links": []
+  },
+  "BOGXTjmCLo6WI6mYDsqRu": {
+    "title": "Connecting using Redis CLI",
+    "description": "",
+    "links": []
+  },
+  "NhcZM4nUQoSBBf_1qXi6l": {
+    "title": "Basic Commands / SET, GET",
+    "description": "In Redis, the SET and GET commands are fundamental operations used to store and retrieve key-value pairs. Redis is an in-memory key-value store, and these commands form the basis for working with data in Redis.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SET Docs",
+        "url": "https://redis.io/docs/latest/commands/set/",
+        "type": "article"
+      },
+      {
+        "title": "GET Docs",
+        "url": "https://redis.io/docs/latest/commands/get/",
+        "type": "article"
+      },
+      {
+        "title": "Redis command cheat sheet",
+        "url": "https://redis.io/learn/howtos/quick-start/cheat-sheet",
+        "type": "article"
+      }
+    ]
+  },
+  "DOdNkTY1yIMipWA2CD9xH": {
+    "title": "Settings and Getting Keys",
+    "description": "",
+    "links": []
+  },
+  "lV_MnUNTB2h925idX0YWk": {
+    "title": "DEL",
+    "description": "",
+    "links": []
+  },
+  "U84XgBFPyIbY0W5afH4cx": {
+    "title": "Overview of Data Types",
+    "description": "",
+    "links": []
+  },
+  "ltF4vCT9ZA2XuUuHnuGnN": {
+    "title": "SET",
+    "description": "",
+    "links": []
+  },
+  "mQc4H2ZMMSVjh33LJY8mK": {
+    "title": "GET",
+    "description": "",
+    "links": []
+  },
+  "5K9qyC4mrhXYWOC8WSq8C": {
+    "title": "INCR",
+    "description": "",
+    "links": []
+  },
+  "t4BXPofF8OCqH5KHwdYVh": {
+    "title": "DECR",
+    "description": "",
+    "links": []
+  },
+  "cPWd53BO6tm-uy4gqLdtZ": {
+    "title": "APPEND",
+    "description": "Redis APPEND command is used to add some value in a key. If the key already exists and is a string, this command appends the value at the end of the string. If key does not exist it is created and set as an empty string,\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "APPEND Docs",
+        "url": "https://redis.io/docs/latest/commands/append/",
+        "type": "article"
+      },
+      {
+        "title": "Redis - String Append Command",
+        "url": "https://www.tutorialspoint.com/redis/strings_append.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "eJQW986HM4Wf1o1i2FnXs": {
+    "title": "STRLEN",
+    "description": "",
+    "links": []
+  },
+  "0v8uLWRCbAqEmKKdYaRQW": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "2_E2VwbjTgk4xxTFWfHuV": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "nS0DHhfy4wxHItgOFhulA": {
+    "title": "EXPR",
+    "description": "",
+    "links": []
+  },
+  "Vll7VMmGWSI5XGZ9JpHyl": {
+    "title": "TTL",
+    "description": "",
+    "links": []
+  },
+  "Kq7G89KaZZMFkrH-9WZoS": {
+    "title": "LPUSH",
+    "description": "",
+    "links": []
+  },
+  "jC8G1o7yFj7D_PGmOIgcD": {
+    "title": "RPUSH",
+    "description": "",
+    "links": []
+  },
+  "voa61RTWMJD3Sk8DNJoVQ": {
+    "title": "LPOP",
+    "description": "",
+    "links": []
+  },
+  "brUGqWZ287EWtvl9uUbNt": {
+    "title": "RPOP",
+    "description": "",
+    "links": []
+  },
+  "8JTtBy6oD2wFYDizVkcVa": {
+    "title": "LRANGE",
+    "description": "",
+    "links": []
+  },
+  "hBFEUXtuzUTzWZKp2qWaZ": {
+    "title": "LINDEX",
+    "description": "",
+    "links": []
+  },
+  "4oCcP9FxDJSDMHCEVBCNa": {
+    "title": "LLEN",
+    "description": "",
+    "links": []
+  },
+  "9KvHcS5F4Jj5ZXgIAdOQY": {
+    "title": "LMOVE",
+    "description": "",
+    "links": []
+  },
+  "eBeEUYY-IL_CMkcm31lUL": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "XTwNCCtzXvZMdaex4gZEh": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "Qgkpr9vf9d6-vUg1o8XFj": {
+    "title": "Sets",
+    "description": "",
+    "links": []
+  },
+  "xUKoQps69FFQrJeuhD1pz": {
+    "title": "SADD",
+    "description": "",
+    "links": []
+  },
+  "mQ0ILns53n1By0Tq6xSZI": {
+    "title": "SMEMBERS",
+    "description": "",
+    "links": []
+  },
+  "WQWVL5GT_scHdgfCtI7WT": {
+    "title": "SREM",
+    "description": "",
+    "links": []
+  },
+  "Ji5ghlcGJtlmErHFqVf3d": {
+    "title": "SISMEMBER",
+    "description": "",
+    "links": []
+  },
+  "5aLfNBewK4Dx017qVNO3T": {
+    "title": "SINTER",
+    "description": "",
+    "links": []
+  },
+  "2gZL4a9aWGKWLa89iyHTc": {
+    "title": "SCARD",
+    "description": "",
+    "links": []
+  },
+  "6QoYa-N2BKNBaRtvNeVNm": {
+    "title": "SUNION",
+    "description": "",
+    "links": []
+  },
+  "JX5ajmcUmkshTO-mLF8lH": {
+    "title": "SDIFF",
+    "description": "",
+    "links": []
+  },
+  "2SG4Hr9Tuv6cxmGkrKjYZ": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "3hayYoSZepw7pppBubotg": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "b48EUyFGUeSjtT5fOa_m6": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "Wl23Jh-ASJOQ850yjaTIU": {
+    "title": "Strings",
+    "description": "",
+    "links": []
+  },
+  "4-C4XqACUp4nvcMIj6djF": {
+    "title": "Lists",
+    "description": "",
+    "links": []
+  },
+  "wY46Qj5Inw_ClBNI9PB_2": {
+    "title": "Hashes",
+    "description": "",
+    "links": []
+  },
+  "BOJzn9SWad9oRRdY_ub01": {
+    "title": "HSET",
+    "description": "",
+    "links": []
+  },
+  "MsKg9m5jFwHM2Bzjf-vdu": {
+    "title": "HGET",
+    "description": "",
+    "links": []
+  },
+  "TpR33sJ-tAjeG3jpGTvYR": {
+    "title": "HGETALL",
+    "description": "",
+    "links": []
+  },
+  "E7xFZkqqbzokD5KGTn9zJ": {
+    "title": "HDEL",
+    "description": "",
+    "links": []
+  },
+  "adhLMuSmfYMRyWTwIgnyE": {
+    "title": "HEXISTS",
+    "description": "",
+    "links": []
+  },
+  "jtVnUD-na-WffMaS8qYfu": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "QTbkWZ7BpqYmBhUivccPu": {
+    "title": "Sorted Sets",
+    "description": "",
+    "links": []
+  },
+  "0swsBD0sOY-o5lzibT999": {
+    "title": "ZADD",
+    "description": "",
+    "links": []
+  },
+  "3pFChX6YIItrBz9lxu4XM": {
+    "title": "ZRANGE",
+    "description": "",
+    "links": []
+  },
+  "OlbixGa5RmdqEt7snY04j": {
+    "title": "ZRANGEBYSCORE",
+    "description": "",
+    "links": []
+  },
+  "m0FZDPwNE71zcwM_gUwz0": {
+    "title": "ZREM",
+    "description": "",
+    "links": []
+  },
+  "W4v7FIQr2k-Vbm-HdfKog": {
+    "title": "ZINCRBY",
+    "description": "",
+    "links": []
+  },
+  "AF_kWM4V8n5Ux06IgEVTl": {
+    "title": "ZRANK",
+    "description": "",
+    "links": []
+  },
+  "O-fZM_U-tW0pYtNzN_8Ax": {
+    "title": "ZCOUNT",
+    "description": "",
+    "links": []
+  },
+  "P6TDUCroLlEI7qePBFHIH": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "lxevY15ZyP43s_JrEqMX7": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "o6e_CwxfPoU6qkfWkwKwj": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "jCaVx5wvsvuyqtwh6m8si": {
+    "title": "Naming Conventions",
+    "description": "",
+    "links": []
+  },
+  "UlQHqw1dbxZnAKbsWsOgU": {
+    "title": "Retrieval by Pattern",
+    "description": "",
+    "links": []
+  },
+  "OSIYDYPGz8Vgo9SU9GGH9": {
+    "title": "Expiration",
+    "description": "",
+    "links": []
+  },
+  "jrgaoDnt_RxTu79hk4hCD": {
+    "title": "Atomicity in Redis",
+    "description": "Atomicity in Redis refers to the property that ensures a set of operations is executed as a single, indivisible unit. This means that either all the operations are executed successfully or none of them are. Atomicity is crucial in Redis to maintain consistency, especially when multiple operations need to be performed together.\n\nLearn more from the following resources:\n\n*   [@official@Atomicity with Lua](https://redis.io/learn/develop/java/spring/rate-limiting/fixed-window/reactive-lua) -[@article@Atomicity in Redis operations](https://lucaspin.medium.com/atomicity-in-redis-operations-a1d7bc9f4a90)",
+    "links": []
+  },
+  "LHlwjN3WHYUBUafzzwsWQ": {
+    "title": "Pipelining",
+    "description": "",
+    "links": []
+  },
+  "7JzeyTrkZ_1_yxMVrqvZU": {
+    "title": "Batch Operations",
+    "description": "Batch operations in Redis allow you to execute multiple commands efficiently in a single network round-trip. While Redis does not have true batching like some databases (where a set of operations are sent together and processed atomically), it provides ways to send multiple commands together to reduce the overhead of individual network requests. These include Pipelining, Transactions (MULTI/EXEC), and Lua Scripting.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Using pipelining to batch issue commands",
+        "url": "https://www.alibabacloud.com/help/en/redis/use-cases/use-pipelining-to-batch-issue-commands#:~:text=You%20can%20use%20the%20Redis,network%20latency%20and%20improving%20performance.",
+        "type": "article"
+      }
+    ]
+  },
+  "0Q3AkE8leWAyYsww3-BHX": {
+    "title": "Bitmaps",
+    "description": "In Redis, Bitmaps are a data structure that allows you to manipulate individual bits within a string value. While Redis doesn't have a native \"bitmap\" data type, it uses strings to represent bitmaps. The power of bitmaps comes from their ability to perform operations on binary data at the bit level, making them extremely memory-efficient for certain types of applications, like tracking the presence/absence of elements (such as daily active users, features, etc.).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Redis Bitmap docs",
+        "url": "https://redis.io/docs/latest/develop/data-types/bitmaps/",
+        "type": "article"
+      },
+      {
+        "title": "Redis bitmap explained",
+        "url": "https://youtu.be/oj8LdJQjhJo?si=jem54LfPbZtrpnEP",
+        "type": "video"
+      }
+    ]
+  },
+  "B-YUFhPQNdr1KZNupmR5N": {
+    "title": "SETBIT",
+    "description": "",
+    "links": []
+  },
+  "0HFLJfcrcSnAVTecG3P8W": {
+    "title": "GETBIT",
+    "description": "",
+    "links": []
+  },
+  "jpcyXSSib7q4WBPmpgnXA": {
+    "title": "BITCOUNT",
+    "description": "The BITCOUNT command in Redis is used to count the number of bits set to 1 (i.e., the number of binary 1s) in the value stored at a specific key. Since Redis allows string values to be stored as binary data, the BITCOUNT command becomes useful for operations involving bits, like efficiently tracking and counting bits in binary-encoded data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "BITCOUNT - Docs",
+        "url": "https://redis.io/docs/latest/commands/bitcount/",
+        "type": "article"
+      },
+      {
+        "title": "BITCOUNT",
+        "url": "https://upstash.com/docs/redis/sdks/ts/commands/bitmap/bitcount",
+        "type": "article"
+      }
+    ]
+  },
+  "tkrxArg_oYH0aQfM8NkD2": {
+    "title": "BITOP",
+    "description": "",
+    "links": []
+  },
+  "Df1Eu7CuA-ARYii9JVvnm": {
+    "title": "BITPOS",
+    "description": "",
+    "links": []
+  },
+  "s7PEr-5TAm5EGJm0RSjPJ": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "cszjT3YK8oyhGpqLTQzwX": {
+    "title": "HyperLogLog",
+    "description": "",
+    "links": []
+  },
+  "8a4DmPZrX2xGZ7zdWxS63": {
+    "title": "PFADD",
+    "description": "",
+    "links": []
+  },
+  "JWT30KIJQHVw0MXI5sGR6": {
+    "title": "PFCOUNT",
+    "description": "",
+    "links": []
+  },
+  "s50jr_XOUcxh65-tGCKf5": {
+    "title": "PFMERGE",
+    "description": "",
+    "links": []
+  },
+  "XPeCvikPuu6EJ8UcOLGPh": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "zXs_9n2yEb_eVi0WuOQKH": {
+    "title": "Streams",
+    "description": "",
+    "links": []
+  },
+  "7isWhgrUA6M5IGM2U2tm4": {
+    "title": "XADD",
+    "description": "",
+    "links": []
+  },
+  "4sKiAtX5aIL4NDsQkilNC": {
+    "title": "XREAD",
+    "description": "",
+    "links": []
+  },
+  "CiYFuYE8XudZkR6AW2NQ7": {
+    "title": "XRANGE",
+    "description": "",
+    "links": []
+  },
+  "DQJCMEw13lELcw_AwLfrT": {
+    "title": "XLEN",
+    "description": "",
+    "links": []
+  },
+  "zXlSBfa-Gi9_GhSYEzre3": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "4-z4hDKm86qQatYnmE21R": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "_NiUdVQ85qnvryI38k_vQ": {
+    "title": "Geospatial Indexes",
+    "description": "",
+    "links": []
+  },
+  "U3N1EgHFs1-YUaB_VrJfw": {
+    "title": "GEOADD",
+    "description": "",
+    "links": []
+  },
+  "OWWDLuGTbdNwME7v2jxVP": {
+    "title": "GEOSEARCH",
+    "description": "",
+    "links": []
+  },
+  "GNMjrLPkpTphneoQ0GoZF": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "FCbdKnkI1ZHGekT6yiGua": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "9W_jaK1DSEZHRKdPcUM7h": {
+    "title": "Pub/Sub",
+    "description": "",
+    "links": []
+  },
+  "55BCntuWlaQiLPqNtb-2i": {
+    "title": "SUBSCRIBE",
+    "description": "",
+    "links": []
+  },
+  "5gkZzm2F4vu6IxUoJLYbK": {
+    "title": "UNSUBSCRIBE",
+    "description": "",
+    "links": []
+  },
+  "gIPo-2CNqE1BsOaDzmkCU": {
+    "title": "PUBLISH",
+    "description": "",
+    "links": []
+  },
+  "V-d6q-3Sf0dl5v8xiCQwl": {
+    "title": "More Commands",
+    "description": "",
+    "links": []
+  },
+  "MvyE_JUJej0UB9xe8Anfj": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "YHbWlKrQqptUDbaQVy0_A": {
+    "title": "Transactions",
+    "description": "",
+    "links": []
+  },
+  "c-y5Eck8VtSyIf8RAW9p7": {
+    "title": "WATCH",
+    "description": "",
+    "links": []
+  },
+  "Ljy-Mc0EBBX4_vXfYZ5-4": {
+    "title": "EXEC",
+    "description": "",
+    "links": []
+  },
+  "U6hST1MkS16T2CHV3-Ise": {
+    "title": "MULTI",
+    "description": "",
+    "links": []
+  },
+  "msW0Wd2H-6FFNDnjC64t-": {
+    "title": "Optimistic Locking",
+    "description": "",
+    "links": []
+  },
+  "Veb30QrPYNjUn13dtGbUr": {
+    "title": "Lua Scripting",
+    "description": "",
+    "links": []
+  },
+  "rjeq3i9oX8IGyQzo--L3c": {
+    "title": "EVAL",
+    "description": "",
+    "links": []
+  },
+  "3X0x_PcJGWBVPL-LSVAln": {
+    "title": "EVALSHA",
+    "description": "",
+    "links": []
+  },
+  "kF_nGo845XDwLkwcQt008": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "bQaek7f3dAaZfSUhwovm1": {
+    "title": "Persistence Options",
+    "description": "",
+    "links": []
+  },
+  "D3pZdAjwPFMRxX1-iyu5-": {
+    "title": "How RDB Works?",
+    "description": "",
+    "links": []
+  },
+  "_pb2DPrFUUZabKxWsuFUo": {
+    "title": "Configuring Save Interval",
+    "description": "",
+    "links": []
+  },
+  "Z6yJwUkcDX08HoMyf1LwX": {
+    "title": "Usecases / Best Practices",
+    "description": "",
+    "links": []
+  },
+  "PTj6oxvpw8vP295WvAI80": {
+    "title": "How AOF Works?",
+    "description": "",
+    "links": []
+  },
+  "ibaZ34-laQtUyxAsERi7o": {
+    "title": "AOF rewrite & compaction",
+    "description": "Persistence refers to the writing of data to durable storage, such as a solid-state disk (SSD). Redis provides a range of persistence options of which AOF (Append Only File) is one of the options. AOF persistence logs every write operation received by the server. These operations can then be replayed again at server startup, reconstructing the original dataset.The rewrite will create a small optimized version of the current Append Only File.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Persistence in redis",
+        "url": "https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/",
+        "type": "article"
+      },
+      {
+        "title": "Enabling redis persistence",
+        "url": "https://youtu.be/qBKnUeR0p10?si=TPvcFtpFMcTZB-Be",
+        "type": "video"
+      }
+    ]
+  },
+  "9ToKTUqbi-NV5Wcwb21PT": {
+    "title": "Truncation / Corruption",
+    "description": "",
+    "links": []
+  },
+  "VvOQUO22ZF8VvDSqHENNU": {
+    "title": "Usecases",
+    "description": "",
+    "links": []
+  },
+  "vzp7DUpjklzIA0E9WxJQA": {
+    "title": "Usecases / Best Practices",
+    "description": "",
+    "links": []
+  },
+  "80035BzcB-fKCvD_3N8zE": {
+    "title": "No Persistence Option",
+    "description": "",
+    "links": []
+  },
+  "3S-qqOlfr60HR4VvDr4He": {
+    "title": "RDB vs AOF Tradeoffs",
+    "description": "",
+    "links": []
+  },
+  "S5Y26m1oHCQpB-oLCdtac": {
+    "title": "Hybrid Persistence",
+    "description": "",
+    "links": []
+  },
+  "rSD8nJ-uNpHJVe5Hn66h7": {
+    "title": "Replication Basics",
+    "description": "",
+    "links": []
+  },
+  "nci3OB1NE1zJHUPfZCOpT": {
+    "title": "Redis Sentinel",
+    "description": "",
+    "links": []
+  },
+  "AQiCcHS6dBAAAPloxiXub": {
+    "title": "Clustering",
+    "description": "",
+    "links": []
+  },
+  "Qy42paiTUsO8HIwbWTMui": {
+    "title": "Authentication",
+    "description": "Authentication in Redis is a security feature used to restrict access to the server by requiring clients to authenticate themselves with a password before performing any commands. This helps prevent unauthorized users from connecting to your Redis instance and performing operations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AUTH",
+        "url": "https://redis.io/docs/latest/commands/auth/",
+        "type": "article"
+      }
+    ]
+  },
+  "wsuKH7YwGDV6GYQbdhA4o": {
+    "title": "Network Security",
+    "description": "",
+    "links": []
+  },
+  "gdiWwTQg6A-BFHdQBmgmH": {
+    "title": "SSL/TLS Encryption",
+    "description": "",
+    "links": []
+  },
+  "q2Jw49QUWCUGIfcEC1bZI": {
+    "title": "INFO",
+    "description": "",
+    "links": []
+  },
+  "jBtEiylcedtaE6E20Uk4V": {
+    "title": "MONITOR",
+    "description": "",
+    "links": []
+  },
+  "XBPwHgIsXupMsyoOFkJZ0": {
+    "title": "RedisInsight",
+    "description": "",
+    "links": []
+  },
+  "y5FPSAi6T-5X9SUfR58_-": {
+    "title": "RedisCommander",
+    "description": "",
+    "links": []
+  },
+  "xF0wQYmtwXYkrzvWg5gOO": {
+    "title": "Memory Management",
+    "description": "",
+    "links": []
+  },
+  "Sd1ENOXSFCz1YqccXjr2A": {
+    "title": "Max Memory Policy",
+    "description": "",
+    "links": []
+  },
+  "yaCWw2KjX58SaPajUAb0d": {
+    "title": "Slow Log Analysis",
+    "description": "",
+    "links": []
+  },
+  "kgHwK4N-sfh6dHjd_D_me": {
+    "title": "redis-benchmark",
+    "description": "",
+    "links": []
+  },
+  "2p5RF4lVYfRvYTo1Ofm-a": {
+    "title": "Monitoring",
+    "description": "",
+    "links": []
+  },
+  "hLIT00Iz7rV56ZBIUhWYn": {
+    "title": "Redis Modules",
+    "description": "",
+    "links": []
+  },
+  "jicsfYw56VrbRUt7M8c85": {
+    "title": "RedisJSON",
+    "description": "",
+    "links": []
+  },
+  "_GdTXcJO8uJlhPdfrmeXG": {
+    "title": "Search",
+    "description": "",
+    "links": []
+  },
+  "RBr8opWSh2TKXC8Fmdg0j": {
+    "title": "RedisTimeSeries",
+    "description": "",
+    "links": []
+  },
+  "GwVL5CvbnHsiWb1hVh7lK": {
+    "title": "RedisBloom",
+    "description": "",
+    "links": []
+  },
+  "giyKPtQ-pziA064P8OQD-": {
+    "title": "redis.conf",
+    "description": "",
+    "links": []
+  },
+  "wXRDsNGFckXV_CSiit5sN": {
+    "title": "Backup and Recovery",
+    "description": "Backing up and recovering Redis data is crucial for ensuring data persistence and reliability. Redis, by default, stores its data in memory for fast access, but it provides mechanisms to persist data to disk to allow for recovery in case of failure or system restarts. The primary methods for backup and recovery in Redis are RDB snapshots and AOF (Append-Only File). These methods can be used individually or in combination, depending on the specific use case.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Backup and recovery",
+        "url": "https://redis.io/redis-enterprise/technology/backup-disaster-recovery/",
+        "type": "article"
+      },
+      {
+        "title": "Backup & Restore Redis Cluster with Stash",
+        "url": "https://youtu.be/Py_Ivv-2dcQ?si=z8gAAmhlpUBce4jY",
+        "type": "video"
+      }
+    ]
+  },
+  "Cb-KazR4PuR86VX5oT0zi": {
+    "title": "Upgrading Redis",
+    "description": "",
+    "links": []
+  },
+  "nUIfTkgm3PlSiqgun1BS7": {
+    "title": "Disaster Recovery",
+    "description": "",
+    "links": []
+  },
+  "8lyXDuZJ-KHl4v2_8Ew1h": {
+    "title": "Redis Enterprise",
+    "description": "",
+    "links": []
+  },
+  "cybF72wlJyJbHLUjitLvn": {
+    "title": "Active-Active geo Distribution",
+    "description": "An Active-Active architecture is a data resiliency architecture that distributes the database information over multiple data centers via independent and geographically distributed clusters and nodes. It is a network of separate processing nodes, each having access to a common replicated database such that all nodes can participate in a common application ensuring local low latency with each region being able to run in isolation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Active-Active geo-distribution",
+        "url": "https://redis.io/active-active/",
+        "type": "article"
+      },
+      {
+        "title": "What is active active geo-distribution",
+        "url": "https://youtu.be/x5iHPPZIlQg?si=ZZCwU-tDCIVDboXc",
+        "type": "video"
+      }
+    ]
+  },
+  "sWOFnbh2EyaHRzquz1UeF": {
+    "title": "Redis on Flash",
+    "description": "",
+    "links": []
+  },
+  "ujs77bV8g8-FOm5hBtZFd": {
+    "title": "Security and Compliance",
+    "description": "",
+    "links": []
+  },
+  "JlLwy69eQ1bPHAOOJNqjo": {
+    "title": "When to consider enterprise?",
+    "description": "",
+    "links": []
+  }
+}

@@ -134,7 +134,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -170,7 +170,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -201,7 +201,7 @@
     "links": [
       {
         "title": "Visit Dedicated Java Roadmap",
-        "url": "/java",
+        "url": "https://roadmap.sh/java",
         "type": "article"
       },
       {
@@ -237,7 +237,7 @@
       },
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -330,7 +330,7 @@
     "links": [
       {
         "title": "Learn Git & GitHub",
-        "url": "/git-github",
+        "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
@@ -366,7 +366,7 @@
     "links": [
       {
         "title": "Learn Git & GitHub",
-        "url": "/git-github",
+        "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
@@ -392,7 +392,7 @@
     "links": [
       {
         "title": "Learn Git & GitHub",
-        "url": "/git-github",
+        "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
@@ -506,7 +506,7 @@
     "links": [
       {
         "title": "Visit Dedicated PostgreSQL DBA Roadmap",
-        "url": "/postgresql-dba",
+        "url": "https://roadmap.sh/postgresql-dba",
         "type": "article"
       },
       {
@@ -542,7 +542,7 @@
     "links": [
       {
         "title": "SQL Roadmap",
-        "url": "/sql",
+        "url": "https://roadmap.sh/sql",
         "type": "article"
       },
       {
@@ -1105,7 +1105,7 @@
     "links": [
       {
         "title": "GraphQL Roadmap",
-        "url": "/graphql",
+        "url": "https://roadmap.sh/graphql",
         "type": "article"
       },
       {
@@ -1967,7 +1967,7 @@
     "links": [
       {
         "title": "Visit Dedicated MongoDB Roadmap",
-        "url": "/mongodb",
+        "url": "https://roadmap.sh/mongodb",
         "type": "article"
       },
       {
@@ -3200,6 +3200,22 @@
       {
         "title": "What is observability?",
         "url": "https://www.youtube.com/watch?v=--17See0KHs",
+        "type": "video"
+      }
+    ]
+  },
+  "ZsZvStCvKwFhlBYe9HGhl": {
+    "title": "Migrations",
+    "description": "Database migrations are a version-controlled way to manage and apply incremental changes to a database schema over time, allowing developers to modify the database structure (e.g., adding tables, altering columns) without affecting existing data. They ensure that the database evolves alongside application code in a consistent, repeatable manner across environments (e.g., development, testing, production), while maintaining compatibility with older versions of the schema. Migrations are typically written in SQL or a database-agnostic language, and are executed using migration tools like Liquibase, Flyway, or built-in ORM features such as Django or Rails migrations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What are database migrations?",
+        "url": "https://www.prisma.io/dataguide/types/relational/what-are-database-migrations",
+        "type": "article"
+      },
+      {
+        "title": "Database Migrations for Beginners",
+        "url": "https://www.youtube.com/watch?v=dJDBP7pPA-o",
         "type": "video"
       }
     ]

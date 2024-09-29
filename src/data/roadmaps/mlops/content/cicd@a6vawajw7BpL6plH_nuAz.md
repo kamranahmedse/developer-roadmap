@@ -1,9 +1,8 @@
 # CI / CD
 
-Critical for traceable and reproducible ML model deployments.
+CI/CD (Continuous Integration and Continuous Deployment/Delivery) is a software development practice that automates the process of integrating code changes, running tests, and deploying updates. Continuous Integration focuses on regularly merging code changes into a shared repository, followed by automated testing to ensure code quality. Continuous Deployment extends this by automatically releasing every validated change to production, while Continuous Delivery ensures code is always in a deployable state, but requires manual approval for production releases. CI/CD pipelines improve code reliability, reduce integration risks, and speed up the development lifecycle.
 
-- **Books:**
-    - _Learning GitHub Actions_ by Brent Laster
-    - _Learning Git_ by Anna Skoulikari
-- **Tutorials & Courses:** [Git & GitHub for beginners](https://www.youtube.com/watch?v=RGOj5yH7evk), [Python to Production guide](https://www.udemy.com/course/setting-up-the-linux-terminal-for-software-development/), [Version Control Missing Semester](https://missing.csail.mit.edu/2020/version-control/), https://learngitbranching.js.org/
-- **Tool:** [Pre-commit hooks](https://marvelousmlops.substack.com/p/welcome-to-pre-commit-heaven)
+Learn more from the following resources:
+
+- [@article@What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+- [@video@CI/CD In 5 Minutes](https://www.youtube.com/watch?v=42UP1fxi2SY)

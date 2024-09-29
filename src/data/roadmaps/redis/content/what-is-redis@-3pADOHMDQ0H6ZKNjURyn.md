@@ -1,0 +1,7 @@
+# What is Redis?
+
+Redis is an open-source, in-memory data structure store, primarily used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and sorted sets, making it highly versatile. Redis operates with extremely low latency due to its in-memory nature, enabling fast access to data. It is often used in real-time applications such as session management, leaderboards, or caching mechanisms, where quick data retrieval is critical. Additionally, Redis supports data persistence by periodically writing the dataset to disk, balancing memory speed with data reliability.
+
+Visit the following resources to learn more:
+
+- [@official@What is redis?](https://redis.io/docs/latest/get-started/)

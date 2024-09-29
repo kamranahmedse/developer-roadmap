@@ -6,7 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@AWS CDK Website](https://aws.amazon.com/cdk/)
 - [@official@Official Documentation](https://docs.aws.amazon.com/cdk/index.html)
-- [@official@What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
-- [@official@AWS SDK Getting Started Guide](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
+- [@course@AWS CDK Crash Course for Beginners](https://www.youtube.com/watch?v=D4Asp5g4fp8)
 - [@opensource@AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
 - [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
