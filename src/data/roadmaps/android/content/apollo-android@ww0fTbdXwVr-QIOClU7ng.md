@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Apollo Android](https://www.apollographql.com/docs/kotlin/v2/)
 - [@official@Apollo Docs](https://www.apollographql.com/docs/kotlin/)
-- [@opensource@GraphQL for Android](https://github.com/apollographql/apollo-kotlin)
+- [@opensource@apollographql/apollo-kotlin - GraphQL for Android](https://github.com/apollographql/apollo-kotlin)
