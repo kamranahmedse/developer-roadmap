@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@opensource@Chucker](https://github.com/ChuckerTeam/chucker)
+- [@opensource@ChuckerTeam/chucker - Chucker On GitHub](https://github.com/ChuckerTeam/chucker)
 - [@article@Network Traffic Inspection with Chucker](https://medium.com/tech-takeaways/simple-android-network-traffic-inspection-with-chucker-and-seismic-1e6162c51f64)
