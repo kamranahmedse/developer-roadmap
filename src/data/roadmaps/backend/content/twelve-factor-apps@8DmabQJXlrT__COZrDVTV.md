@@ -12,6 +12,8 @@ The Twelve-Factor App methodology is a set of principles for building modern, sc
 8. **Concurrency**: Scale out via the process model.
 9. **Disposability**: Maximize robustness with fast startup and graceful shutdown.
 10. **Dev/Prod Parity**: Keep development, staging, and production environments as similar as possible.
+11. **Logs**: Treat logs as streams of events.
+12. **Admin Processes**: Run administrative or management tasks as one-off processes.
 
 Visit the following resources to learn more:
 
