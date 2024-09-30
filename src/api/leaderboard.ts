@@ -17,6 +17,9 @@ export type ListLeaderboardStatsResponse = {
     currentMonth: LeadeboardUserDetails[];
     lifetime: LeadeboardUserDetails[];
   };
+  githubContributors: {
+    currentMonth: LeadeboardUserDetails[];
+  };
 };
 
 export function leaderboardApi(context: APIContext) {
