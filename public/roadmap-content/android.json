@@ -588,13 +588,30 @@
   },
   "dDMRYiqrKyOBnRRQc8zsp": {
     "title": "Retro",
-    "description": "Retrofit is a type-safe HTTP client for Android and Java. It's designed to connect your application with an API or a back-end web service. Retrofit uses annotations to encode details about the API's operations and requests, such as the HTTP method (GET, POST, PUT, DELETE, HEAD) and the query parameters. The main advantage of Retrofit over other similar libraries is in its simplicity and intuitiveness, and it efficiently handles all network calls.\n\n    Retrofit retrofit = new Retrofit.Builder()\n                          .baseUrl(\"https://api.example.com\")\n                          .addConverterFactory(GsonConverterFactory.create())\n                          .build();\n    \n    ExampleService service = retrofit.create(ExampleService.class);\n    Call<ExampleResponse> call = service.exampleCall();\n    \n\nThe `baseUrl()` is your API base URL. The `addConverterFactory()` specifies a factory to use for serialization and deserialization. In the example above, the Gson library will handle the conversion of JSON data. The `build()` call finishes the builder and returns the retrofit instance. Finally, `create()` generates an implementation of the `ExampleService` interface.",
-    "links": []
+    "description": "**Retrofit** is a type-safe HTTP client for Android. It's designed to connect your application with an API or a back-end web service. Retrofit uses annotations to encode details about the API's operations and requests, such as the HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`) and the query parameters. The main advantage of **Retrofit** over other similar libraries is in its simplicity and intuitiveness, and it efficiently handles all network calls.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://square.github.io/retrofit/",
+        "type": "article"
+      },
+      {
+        "title": "Retrofit in Android Studio",
+        "url": "https://www.youtube.com/watch?v=KJSBsRKqNwU",
+        "type": "video"
+      }
+    ]
   },
   "5pVuwOItAhUxxJX8ysAsn": {
     "title": "OkHttp",
-    "description": "`OkHttp` is an HTTP client that's extremely efficient, enabling several advanced features in Android app or other platforms that use Java. Developed by Square, it's built for high efficiency and capacity, simplifying many networking tasks, including connection pooling, response caching, and request retries. OkHttp allows seamless recovery from network issues, minimizing the loss of data. The library ensures fewer errors and higher quality of service by using the modern TLS encryption, extensible request and response models, and a fluent API for ease of use and integration.",
-    "links": []
+    "description": "`OkHttp` is an HTTP client that's extremely efficient, enabling several advanced features in Android app or other platforms that use Java. Developed by Square, it's built for high efficiency and capacity, simplifying many networking tasks, including connection pooling, response caching, and request retries. OkHttp allows seamless recovery from network issues, minimizing the loss of data. The library ensures fewer errors and higher quality of service by using the modern TLS encryption, extensible request and response models, and a fluent API for ease of use and integration.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://github.com/square/okhttp",
+        "type": "article"
+      }
+    ]
   },
   "ww0fTbdXwVr-QIOClU7ng": {
     "title": "Apollo-Android",
