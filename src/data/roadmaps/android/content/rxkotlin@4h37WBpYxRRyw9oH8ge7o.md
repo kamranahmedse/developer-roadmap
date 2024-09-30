@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@opensource@RxKotlin](https://github.com/ReactiveX/RxKotlin)
+- [@opensource@ReactiveX/RxKotlin - RxKotlin on GitHub](https://github.com/ReactiveX/RxKotlin)
