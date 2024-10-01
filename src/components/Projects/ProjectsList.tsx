@@ -58,7 +58,7 @@ export function ProjectsList(props: ProjectsListProps) {
     ProjectDifficultyType | undefined
   >(urlDifficulty);
   const [projectStatuses, setProjectStatuses] =
-    useState<ListProjectStatusesResponse>({});
+    useState<ListProjectStatusesResponse>();
 
   const loadProjectStatuses = async () => {
     const projectIds = projects.map((project) => project.id);
@@ -112,6 +112,7 @@ export function ProjectsList(props: ProjectsListProps) {
         <div className="flex flex-wrap gap-1">
           {projectDifficulties.map((projectDifficulty) => (
             <DifficultyButton
+              key={projectDifficulty}
               onClick={() => {
                 setDifficulty(projectDifficulty);
                 setUrlParams({ difficulty: projectDifficulty });
@@ -166,9 +167,14 @@ export function ProjectsList(props: ProjectsListProps) {
             const count = userCounts[matchingProject?.id] || 0;
             return (
               <ProjectCard
+                key={matchingProject.id}
                 project={matchingProject}
                 userCount={count}
-                status={projectStatuses?.[matchingProject.id] ?? 'none'}
+                status={
+                  projectStatuses
+                    ? (projectStatuses?.[matchingProject.id] ?? 'none')
+                    : undefined
+                }
               />
             );
           })}
