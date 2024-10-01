@@ -6,6 +6,7 @@ import type {
 import { Users } from 'lucide-react';
 import { formatCommaNumber } from '../../lib/number.ts';
 import { cn } from '../../lib/classname.ts';
+import { isLoggedIn } from '../../lib/jwt.ts';
 
 type ProjectCardProps = {
   project: ProjectFileType;
@@ -23,7 +24,8 @@ export function ProjectCard(props: ProjectCardProps) {
   const { project, userCount = 0, status } = props;
   const { frontmatter, id } = project;
 
-  const isLoadingStatus = status === undefined;
+  const isAuthed = isLoggedIn();
+  const isLoadingStatus = isAuthed && status === undefined;
   const userStartedCount =
     status && status !== 'none' ? userCount + 1 : userCount;
 
@@ -53,14 +55,14 @@ export function ProjectCard(props: ProjectCardProps) {
           <>
             <span className="flex items-center gap-1.5">
               <Users className="size-3.5" />
-              {userCount > 0 ? (
-                <>{formatCommaNumber(userCount)} Started</>
+              {userStartedCount > 0 ? (
+                <>{formatCommaNumber(userStartedCount)} Started</>
               ) : (
                 <>Be the first to solve!</>
               )}
             </span>
 
-            {status !== 'none' && (
+            {status !== 'none' && isAuthed && (
               <span
                 className={cn(
                   'flex items-center gap-1.5 rounded-full border border-current px-2 py-0.5 capitalize',
