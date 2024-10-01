@@ -43,7 +43,7 @@
   },
   "mwPJh33MEUQ4Co_LiVEOb": {
     "title": "Differential Calculus",
-    "description": "",
+    "description": "Differential calculus is a branch of mathematics that deals with the study of rates of change and slopes of curves, focusing on the behavior of functions at a single point, and is used to find the maximum and minimum values of functions, as well as their critical points",
     "links": [
       {
         "title": "Algebra and Differential Calculus for Data Science",
@@ -54,7 +54,7 @@
   },
   "Y9YJdARIRqqCBCy3GVYdA": {
     "title": "Statistics, CLT",
-    "description": "",
+    "description": "Statistics is the study of data collection and analysis, and the Central Limit Theorem (CLT) is a fundamental concept that states that the average of a large enough random sample will be approximately normally distributed, regardless of the underlying distribution",
     "links": [
       {
         "title": "Introduction to Statistics",
@@ -65,7 +65,7 @@
   },
   "XJXIkWVDIrPJ-bVIvX0ZO": {
     "title": "Hypothesis Testing",
-    "description": "",
+    "description": "Hypothesis testing is a statistical method that involves formulating a null hypothesis and an alternative hypothesis, collecting data, and then using statistical tests to determine whether the data provides sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis",
     "links": [
       {
         "title": "Introduction to Statistical Analysis: Hypothesis Testing",
@@ -81,7 +81,7 @@
   },
   "jxJtwbiCvxHqmkWkE7zdx": {
     "title": "Probability and Sampling",
-    "description": "",
+    "description": "Probability is the study of chance events and their likelihood of occurrence, while sampling is the process of selecting a subset of individuals or data points from a larger population to make inferences about the population, with the goal of estimating population parameters or testing hypotheses",
     "links": [
       {
         "title": "Probability and Statistics: To p or not to p?",
