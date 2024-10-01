@@ -40,6 +40,7 @@ svg .done rect {
 svg .done text,
 svg .skipped text {
   text-decoration: line-through;
+  text-decoration-thickness: 1px;
 }
 
 svg > g[data-type='topic'].learning > rect + text,
