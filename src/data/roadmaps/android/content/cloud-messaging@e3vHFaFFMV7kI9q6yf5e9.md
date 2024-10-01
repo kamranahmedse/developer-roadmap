@@ -5,4 +5,4 @@ Firebase Cloud Messaging (FCM) is a powerful, battery-efficient messaging servic
 Visit the following resources to learn more:
 
 - [@official@Documentation](https://firebase.google.com/docs/cloud-messaging/android/client)
-- [@video@Firebase Cloud Messaging](https://www.youtube.com/watch?v=sioEY4tWmLI&list=PLl-K7zZEsYLkuHRCtHTpi6JYHka8oHLft) 
+- [@video@Firebase Cloud Messaging](https://www.youtube.com/watch?v=sioEY4tWmLI&list=PLl-K7zZEsYLkuHRCtHTpi6JYHka8oHLft)

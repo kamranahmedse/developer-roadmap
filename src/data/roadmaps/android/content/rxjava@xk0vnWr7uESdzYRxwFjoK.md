@@ -1,7 +1,7 @@
 # RxJava
 
-RxJava, standing for Reactive Extensions for the JVM, is a library in the Java and Android ecosystem that allows developers to write asynchronous, event-based programs. It is developed according to reactive programming principles and it supports multi-threading operations. One can create data streams from just about anything - variables, data structures, inputs, etc. and these streams could be used with functional programming methods to process the data. 
+RxJava, standing for Reactive Extensions for the JVM, is a library in the Java and Android ecosystem that allows developers to write asynchronous, event-based programs. It is developed according to reactive programming principles and it supports multi-threading operations. One can create data streams from just about anything - variables, data structures, inputs, etc. and these streams could be used with functional programming methods to process the data.
 
-In Android, RxJava is often used in combination with Retrofit, to handle API calls or with Room, to handle tasks involving the database. This library provides a set of operators such as `map()`, `filter()`, `concat()`, `merge()`, `flatmap()` etc. to handle tasks such as chain asynchronous operations, perform computations, or transform data. 
+Visit the following resources to learn more:
 
-There are three important entities in RxJava - 'Observable', 'Observer' and 'Subscription'. 'Observable' is a data stream that does some work, 'Observer' watches the 'Observable' and does something when the 'Observable’ changes, and 'Subscription' is what ties an 'Observer' to an 'Observable' - linking their lifecycles and allowing 'Observer’s to unsubscribe (to stop receiving updates) when they’re destroyed. In other words, 'Subscription' is what allows you to manage memory and prevent crashes due to leaks.
+- [@opensource@RxJava on GitHub](https://github.com/ReactiveX/RxJava)

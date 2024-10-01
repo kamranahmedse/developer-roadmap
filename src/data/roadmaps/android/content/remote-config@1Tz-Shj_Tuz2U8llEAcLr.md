@@ -4,5 +4,5 @@ Firebase Remote Config is a cloud service offered by Firebase. It lets you chang
 
 Visit the following resources to learn more:
 
-- [@official@Documentation](https://firebase.google.com/docs/remote-config/get-started?platform=android)
-- [@video@Firebase: Remote config](https://www.youtube.com/watch?v=pcnnbjAAIkI)
+- [@official@Remote Config](https://firebase.google.com/docs/remote-config/get-started?platform=android)
+- [@video@Getting Started with Remote Config](https://www.youtube.com/watch?v=pcnnbjAAIkI)

@@ -34,4 +34,7 @@ public class AnimalFactory {
     }
 }
 ```
-In the code above, `AnimalFactory` is the factory class responsible to create and return instances of `Dog` and `Cat` classes.
+
+Visit the following resources to learn more:
+
+- [@official@Android: Factory Pattern](https://developer.android.com/guide/components/intents-filters#factory)

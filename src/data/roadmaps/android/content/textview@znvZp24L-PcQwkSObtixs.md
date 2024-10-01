@@ -4,4 +4,4 @@ TextView is a widget that is seen in every android application. This widget is u
 
 Visit the following resources to learn more:
 
-- [@article@Android developers: TextView](https://developer.android.com/reference/android/widget/TextView)
+- [@article@TextView](https://developer.android.com/reference/android/widget/TextView)
