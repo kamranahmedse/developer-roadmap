@@ -24,10 +24,8 @@ export function ProjectCard(props: ProjectCardProps) {
   const { project, userCount = 0, status } = props;
   const { frontmatter, id } = project;
 
-  const isAuthed = isLoggedIn();
-  const isLoadingStatus = isAuthed && status === undefined;
-  const userStartedCount =
-    status && status !== 'none' ? userCount + 1 : userCount;
+  const isLoadingStatus = status === undefined;
+  const userStartedCount = status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
 
   return (
     <a
@@ -62,7 +60,7 @@ export function ProjectCard(props: ProjectCardProps) {
               )}
             </span>
 
-            {status !== 'none' && isAuthed && (
+            {status !== 'none' && (
               <span
                 className={cn(
                   'flex items-center gap-1.5 rounded-full border border-current px-2 py-0.5 capitalize',

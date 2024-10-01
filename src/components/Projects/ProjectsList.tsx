@@ -61,6 +61,11 @@ export function ProjectsList(props: ProjectsListProps) {
     useState<ListProjectStatusesResponse>();
 
   const loadProjectStatuses = async () => {
+    if (!isLoggedIn()) {
+      setProjectStatuses({});
+      return;
+    }
+
     const projectIds = projects.map((project) => project.id);
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-project-statuses`,
@@ -99,10 +104,6 @@ export function ProjectsList(props: ProjectsListProps) {
     : projects;
 
   useEffect(() => {
-    if (!isLoggedIn()) {
-      return;
-    }
-
     loadProjectStatuses().finally();
   }, []);
 
@@ -172,7 +173,7 @@ export function ProjectsList(props: ProjectsListProps) {
                 userCount={count}
                 status={
                   projectStatuses
-                    ? (projectStatuses?.[matchingProject.id] ?? 'none')
+                    ? (projectStatuses?.[matchingProject.id] || 'none')
                     : undefined
                 }
               />

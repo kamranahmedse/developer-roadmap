@@ -190,6 +190,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
                 key={project.id}
                 project={project}
                 userCount={userCounts[project.id] || 0}
+                status={'none'}
               />
             ))}
           </div>
