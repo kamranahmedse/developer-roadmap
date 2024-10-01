@@ -1,7 +1,7 @@
 import { type APIContext } from 'astro';
 import { api } from './api.ts';
 
-export type LeadeboardUserDetails = {
+export type LeaderboardUserDetails = {
   id: string;
   name: string;
   avatar?: string;
@@ -10,15 +10,15 @@ export type LeadeboardUserDetails = {
 
 export type ListLeaderboardStatsResponse = {
   streaks: {
-    active: LeadeboardUserDetails[];
-    lifetime: LeadeboardUserDetails[];
+    active: LeaderboardUserDetails[];
+    lifetime: LeaderboardUserDetails[];
   };
   projectSubmissions: {
-    currentMonth: LeadeboardUserDetails[];
-    lifetime: LeadeboardUserDetails[];
+    currentMonth: LeaderboardUserDetails[];
+    lifetime: LeaderboardUserDetails[];
   };
   githubContributors: {
-    currentMonth: LeadeboardUserDetails[];
+    currentMonth: LeaderboardUserDetails[];
   };
 };
 

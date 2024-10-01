@@ -1,10 +1,10 @@
 import { type ReactNode, useState } from 'react';
 import type {
-  LeadeboardUserDetails,
+  LeaderboardUserDetails,
   ListLeaderboardStatsResponse,
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
-import { FolderKanban, GitPullRequest, Trophy, Zap } from 'lucide-react';
+import { FolderKanban, GitPullRequest, Users2, Zap } from 'lucide-react';
 import { TrophyEmoji } from '../ReactIcons/TrophyEmoji';
 import { SecondPlaceMedalEmoji } from '../ReactIcons/SecondPlaceMedalEmoji';
 import { ThirdPlaceMedalEmoji } from '../ReactIcons/ThirdPlaceMedalEmoji';
@@ -17,74 +17,60 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
   const { stats } = props;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container py-5 sm:py-10">
-        <div className="mb-8 text-center">
-          <div className="flex flex-col items-start sm:items-center justify-center">
-            <img
-              src={'/images/gifs/star.gif'}
-              alt="party-popper"
-              className="mb-4 mt-0 sm:mt-3 h-14 w-14 hidden sm:block"
-            />
-            <div className="mb-0 sm:mb-4 flex flex-col items-start sm:items-center justify-start sm:justify-center">
-              <h2 className="mb-1.5 sm:mb-2 text-2xl font-semibold sm:text-4xl">
-                Leaderboard
-              </h2>
-              <p className="max-w-2xl text-left sm:text-center text-balance text-sm text-gray-500 sm:text-base">
-                Top users based on their activity on roadmap.sh
-              </p>
-            </div>
-          </div>
+    <div className="min-h-screen bg-white">
+      <div className="container pb-5 sm:pb-8">
+        <h1 className="my-5 flex items-center text-lg font-medium text-black sm:mb-4 sm:mt-8">
+          <Users2 className="mr-2 size-5 text-black" />
+          Leaderboard
+        </h1>
 
-          <div className="mt-5 sm:mt-8 grid gap-2 md:grid-cols-2">
-            <LeaderboardLane
-              title="Longest Visit Streak"
-              tabs={[
-                {
-                  title: 'Active',
-                  users: stats.streaks?.active || [],
-                  emptyIcon: <Zap className="size-16 text-gray-300" />,
-                  emptyText: 'No users with streaks yet',
-                },
-                {
-                  title: 'Lifetime',
-                  users: stats.streaks?.lifetime || [],
-                  emptyIcon: <Zap className="size-16 text-gray-300" />,
-                  emptyText: 'No users with streaks yet',
-                },
-              ]}
-            />
-            <LeaderboardLane
-              title="Projects Completed"
-              tabs={[
-                {
-                  title: 'This Month',
-                  users: stats.projectSubmissions.currentMonth,
-                  emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                  emptyText: 'No projects submitted this month',
-                },
-                {
-                  title: 'Lifetime',
-                  users: stats.projectSubmissions.lifetime,
-                  emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                  emptyText: 'No projects submitted yet',
-                },
-              ]}
-            />
-            <LeaderboardLane
-              title="Top Contributors"
-              tabs={[
-                {
-                  title: 'This Month',
-                  users: stats.githubContributors.currentMonth,
-                  emptyIcon: (
-                    <GitPullRequest className="size-16 text-gray-300" />
-                  ),
-                  emptyText: 'No contributors this month',
-                },
-              ]}
-            />
-          </div>
+        <div className="grid gap-2 sm:gap-3 md:grid-cols-2">
+          <LeaderboardLane
+            title="Longest Visit Streak"
+            tabs={[
+              {
+                title: 'Active',
+                users: stats.streaks?.active || [],
+                emptyIcon: <Zap className="size-16 text-gray-300" />,
+                emptyText: 'No users with streaks yet',
+              },
+              {
+                title: 'Lifetime',
+                users: stats.streaks?.lifetime || [],
+                emptyIcon: <Zap className="size-16 text-gray-300" />,
+                emptyText: 'No users with streaks yet',
+              },
+            ]}
+          />
+          <LeaderboardLane
+            title="Projects Completed"
+            tabs={[
+              {
+                title: 'This Month',
+                users: stats.projectSubmissions.currentMonth,
+                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                emptyText: 'No projects submitted this month',
+              },
+              {
+                title: 'Lifetime',
+                users: stats.projectSubmissions.lifetime,
+                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
+                emptyText: 'No projects submitted yet',
+              },
+            ]}
+          />
+          <LeaderboardLane
+            title="Top Contributors"
+            subtitle="Past 2 weeks"
+            tabs={[
+              {
+                title: 'This Month',
+                users: stats.githubContributors.currentMonth,
+                emptyIcon: <GitPullRequest className="size-16 text-gray-300" />,
+                emptyText: 'No contributors this month',
+              },
+            ]}
+          />
         </div>
       </div>
     </div>
@@ -93,24 +79,30 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
 
 type LeaderboardLaneProps = {
   title: string;
+  subtitle?: string;
   tabs: {
     title: string;
-    users: LeadeboardUserDetails[];
+    users: LeaderboardUserDetails[];
     emptyIcon?: ReactNode;
     emptyText?: string;
   }[];
 };
 
 function LeaderboardLane(props: LeaderboardLaneProps) {
-  const { title, tabs } = props;
+  const { title, subtitle, tabs } = props;
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const { users: usersToShow, emptyIcon, emptyText } = activeTab;
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-xl border bg-white min-h-[450px] ">
-      <div className="mb-3 flex items-center justify-between gap-2 px-3 py-3">
-        <h3 className="text-base font-medium">{title}</h3>
+    <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white">
+      <div className="mb-3 flex items-center justify-between gap-2 bg-gray-100 px-3 py-3">
+        <h3 className="text-base font-medium">
+          {title}{' '}
+          {subtitle && (
+            <span className="text-sm font-normal text-gray-400 ml-1">{subtitle}</span>
+          )}
+        </h3>
 
         {tabs.length > 1 && (
           <div className="flex items-center gap-2">
@@ -181,7 +173,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   />
                   {isGitHubUser ? (
                     <a
-                      href={`https://github.com/${user.name}`}
+                      href={`https://github.com/kamranahmedse/developer-roadmap/pulls?q=is%3Apr+is%3Aclosed+author%3A${user.name}`}
                       target="_blank"
                       className="truncate font-medium underline underline-offset-2"
                     >
@@ -201,17 +193,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   )}
                 </div>
 
-                {isGitHubUser ? (
-                  <a
-                    target={'_blank'}
-                    href={`https://github.com/kamranahmedse/developer-roadmap/pulls/${user.name}`}
-                    className="text-sm text-gray-500"
-                  >
-                    {user.count}
-                  </a>
-                ) : (
-                  <span className="text-sm text-gray-500">{user.count}</span>
-                )}
+                <span className="text-sm text-gray-500">{user.count}</span>
               </li>
             );
           })}
