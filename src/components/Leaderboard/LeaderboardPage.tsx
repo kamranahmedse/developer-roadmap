@@ -17,7 +17,7 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
   const { stats } = props;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-100">
       <div className="container pb-5 sm:pb-8">
         <h1 className="my-5 flex items-center text-lg font-medium text-black sm:mb-4 sm:mt-8">
           <Users2 className="mr-2 size-5 text-black" />
@@ -95,8 +95,8 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   const { users: usersToShow, emptyIcon, emptyText } = activeTab;
 
   return (
-    <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white">
-      <div className="mb-3 flex items-center justify-between gap-2 bg-gray-100 px-3 py-3">
+    <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
+      <div className="mb-3 flex items-center justify-between gap-2 px-3 py-3">
         <h3 className="text-base font-medium">
           {title}{' '}
           {subtitle && (
