@@ -8,4 +8,6 @@ Search engines like Elasticsearch are specialized tools designed for fast, scala
 4. **Powerful Query DSL**: A domain-specific language for constructing and executing sophisticated queries.
 5. **Analytics**: Capabilities for aggregating and analyzing data, often used for log and event data analysis.
 
-Elasticsearch is commonly used in applications requiring advanced search functionality, such as search engines, data analytics platforms, and real-time monitoring systems.
+Visit the following resources to learn more:
+
+- [@official@Elasticsearch](https://www.elastic.co/elasticsearch/)

@@ -4,5 +4,5 @@ Server-Sent Events (SSE) is a technology for sending real-time updates from a se
 
 Visit the following resources to learn more:
 
-- [@article@Server-Sent Events - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
+- [@article@Server Sent Events - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
 - [@video@Server-Sent Events | Postman Level Up](https://www.youtube.com/watch?v=KrE044J8jEQ&t=1s)
