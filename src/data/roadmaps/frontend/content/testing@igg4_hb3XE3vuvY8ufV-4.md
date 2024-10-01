@@ -1,10 +1,21 @@
 # Testing your apps
 
-Before delivering your application to users, you need to be sure that your app meets the requirements it was designed for, and that it doesn't do any weird, unintended things (called 'bugs'). To accomplish this, we 'test' our applications in different ways.
+Testing apps involves systematically evaluating software to ensure it meets requirements, functions correctly, and maintains quality. Key testing types include:
+
+1. Unit testing: Verifying individual components or functions
+2. Integration testing: Checking interactions between different parts of the app
+3. Functional testing: Ensuring the app meets specified requirements
+4. UI/UX testing: Evaluating the user interface and experience
+5. Performance testing: Assessing app speed, responsiveness, and stability
+6. Security testing: Identifying vulnerabilities and ensuring data protection
+7. Accessibility testing: Verifying usability for people with disabilities
+8. Compatibility testing: Checking functionality across different devices and platforms
+
+Modern testing often incorporates automated testing tools and continuous integration/continuous deployment (CI/CD) pipelines. Test-driven development (TDD) and behavior-driven development (BDD) are popular methodologies that emphasize writing tests before or alongside code. Effective testing strategies help identify bugs early, improve code quality, and ensure a reliable user experience.
 
 Visit the following resources to learn more:
 
 - [@article@A comprehensive dive into software testing.](https://www.softwaretestingmaterial.com/software-testing/)
 - [@article@The different types of software tests](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)
-- [@article@Testing React apps with Jest](https://jestjs.io/docs/tutorial-react)
+- [@video@How to test web applications - dotJS 2024](https://www.youtube.com/watch?v=l3qjQpYBR8c)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

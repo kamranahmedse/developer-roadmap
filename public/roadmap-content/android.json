@@ -530,18 +530,51 @@
   },
   "PKql1HY0PLMfp50FRELXL": {
     "title": "Shared Preferences",
-    "description": "Shared Preferences in Android are used to store data in key-value pairs. It works similar to a tiny database where you can save small pieces of data such as settings or the state of an application. When data is saved to Shared Preferences, it persists across user sessions, even if your application is killed or gets deleted. Data in Shared Preferences is not typically used for large amounts of data. To perform actions such as saving, retrieving, or editing data in Shared Preferences, you use an instance of `SharedPreferences.Editor`.",
-    "links": []
+    "description": "Shared Preferences in Android are used to store data in **key-value** pairs. It works similar to a tiny database where you can save small pieces of data such as settings or the state of an application. When data is saved to Shared Preferences, it persists across user sessions, even if your application is killed or gets deleted. Data in Shared Preferences is not typically used for large amounts of data. To perform actions such as saving, retrieving, or editing data in Shared Preferences, you use an instance of `SharedPreferences.Editor`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://developer.android.com/training/data-storage/shared-preferences",
+        "type": "article"
+      },
+      {
+        "title": "SharedPreferences in Android",
+        "url": "https://www.youtube.com/watch?v=rJ3uwqko9Ew",
+        "type": "video"
+      }
+    ]
   },
   "GWq3s1iTxQOp1BstHscJ9": {
     "title": "DataStore",
-    "description": "`DataStore` is a new and improved data storage solution by Android, meant to supersede `SharedPreferences`. It is important to understand that it comes in two different implementations: `Preferences DataStore` and `Proto DataStore`. `Preferences DataStore` uses key-value pairs similar to `SharedPreferences`, but it's more robust and handles runtime exceptions more efficiently. On the other hand, `Proto DataStore` uses custom data types to provide type safety. It lets you leverage the power of Protocol Buffers, a language-neutral, platform-neutral mechanism for serializing structured data, as the data storage format. Operating on data in `DataStore` is transactional, meaning that if an error occurs during an operation, all changes are rolled back, so the data remains in a consistent state.",
-    "links": []
+    "description": "`DataStore` is a new and improved data storage solution by Android, meant to supersede `SharedPreferences`. It is important to understand that it comes in two different implementations: `Preferences DataStore` and `Proto DataStore`. `Preferences DataStore` uses key-value pairs similar to `SharedPreferences`, but it's more robust and handles runtime exceptions more efficiently. On the other hand, `Proto DataStore` uses custom data types to provide type safety. It lets you leverage the power of Protocol Buffers, a language-neutral, platform-neutral mechanism for serializing structured data, as the data storage format. Operating on data in `DataStore` is transactional, meaning that if an error occurs during an operation, all changes are rolled back, so the data remains in a consistent state.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://developer.android.com/topic/libraries/architecture/datastore",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to DataStore",
+        "url": "https://www.youtube.com/watch?v=9ws-cJzlJkU&list=PLWz5rJ2EKKc8to3Ere-ePuco69yBUmQ9C",
+        "type": "video"
+      }
+    ]
   },
   "Bfg4So5RlI09zFNcburJd": {
     "title": "Room Database",
-    "description": "\"Room\" is a persistence library introduced by Google that provides an abstraction layer over SQLite to help with robust database access while harnessing the full power of SQLite. Room supports the creation of databases and defines queries in compile-time-checked SQL strings. These databases belong to the data classes that you create representing your app's data. Room comprises three main components: **Database**, a container that holds your app's data tables; **Entity**, representing a table within the database; and **DAO (Data Access Object)**, containing SQL query methods to interact with the database.",
-    "links": []
+    "description": "\"Room\" is a persistence library introduced by Google that provides an abstraction layer over SQLite to help with robust database access while harnessing the full power of SQLite. Room supports the creation of databases and defines queries in compile-time-checked SQL strings. These databases belong to the data classes that you create representing your app's data. Room comprises three main components: **Database**, a container that holds your app's data tables; **Entity**, representing a table within the database; and **DAO (Data Access Object)**, containing SQL query methods to interact with the database.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Save data in a local database using Room",
+        "url": "https://developer.android.com/training/data-storage/room",
+        "type": "article"
+      },
+      {
+        "title": "The full beginner guide for Room in Android",
+        "url": "https://www.youtube.com/watch?v=bOd3wO0uFr8&t=10s",
+        "type": "video"
+      }
+    ]
   },
   "A4kdaj6AFueUgPI7hwKi5": {
     "title": "File System",
@@ -555,13 +588,30 @@
   },
   "dDMRYiqrKyOBnRRQc8zsp": {
     "title": "Retro",
-    "description": "Retrofit is a type-safe HTTP client for Android and Java. It's designed to connect your application with an API or a back-end web service. Retrofit uses annotations to encode details about the API's operations and requests, such as the HTTP method (GET, POST, PUT, DELETE, HEAD) and the query parameters. The main advantage of Retrofit over other similar libraries is in its simplicity and intuitiveness, and it efficiently handles all network calls.\n\n    Retrofit retrofit = new Retrofit.Builder()\n                          .baseUrl(\"https://api.example.com\")\n                          .addConverterFactory(GsonConverterFactory.create())\n                          .build();\n    \n    ExampleService service = retrofit.create(ExampleService.class);\n    Call<ExampleResponse> call = service.exampleCall();\n    \n\nThe `baseUrl()` is your API base URL. The `addConverterFactory()` specifies a factory to use for serialization and deserialization. In the example above, the Gson library will handle the conversion of JSON data. The `build()` call finishes the builder and returns the retrofit instance. Finally, `create()` generates an implementation of the `ExampleService` interface.",
-    "links": []
+    "description": "**Retrofit** is a type-safe HTTP client for Android. It's designed to connect your application with an API or a back-end web service. Retrofit uses annotations to encode details about the API's operations and requests, such as the HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`) and the query parameters. The main advantage of **Retrofit** over other similar libraries is in its simplicity and intuitiveness, and it efficiently handles all network calls.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://square.github.io/retrofit/",
+        "type": "article"
+      },
+      {
+        "title": "Retrofit in Android Studio",
+        "url": "https://www.youtube.com/watch?v=KJSBsRKqNwU",
+        "type": "video"
+      }
+    ]
   },
   "5pVuwOItAhUxxJX8ysAsn": {
     "title": "OkHttp",
-    "description": "`OkHttp` is an HTTP client that's extremely efficient, enabling several advanced features in Android app or other platforms that use Java. Developed by Square, it's built for high efficiency and capacity, simplifying many networking tasks, including connection pooling, response caching, and request retries. OkHttp allows seamless recovery from network issues, minimizing the loss of data. The library ensures fewer errors and higher quality of service by using the modern TLS encryption, extensible request and response models, and a fluent API for ease of use and integration.",
-    "links": []
+    "description": "`OkHttp` is an HTTP client that's extremely efficient, enabling several advanced features in Android app or other platforms that use Java. Developed by Square, it's built for high efficiency and capacity, simplifying many networking tasks, including connection pooling, response caching, and request retries. OkHttp allows seamless recovery from network issues, minimizing the loss of data. The library ensures fewer errors and higher quality of service by using the modern TLS encryption, extensible request and response models, and a fluent API for ease of use and integration.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://github.com/square/okhttp",
+        "type": "article"
+      }
+    ]
   },
   "ww0fTbdXwVr-QIOClU7ng": {
     "title": "Apollo-Android",
@@ -728,8 +778,19 @@
   },
   "gvGAwjk_nhEgxzZ_c3f6b": {
     "title": "JUnit",
-    "description": "JUnit is a popular testing framework for Java programming. It forms the basis for many other testing libraries and tools in the Android ecosystem, making it important for any Android developer to become familiar with. The basic use of JUnit involves annotations such as `@Test`, indicating methods that represent a single test case. Other useful features include `@Before` and `@After` which allow for setup and teardown processes to be defined clearly. Another powerful feature in JUnit is the ability to create parameterized tests, effectively running the same test multiple times with different inputs.",
-    "links": []
+    "description": "**JUnit** is a popular testing framework for Java programming. It forms the basis for many other testing libraries and tools in the Android ecosystem, making it important for any Android developer to become familiar with. The basic use of JUnit involves annotations such as `@Test`, indicating methods that represent a single test case. Other useful features include `@Before` and `@After` which allow for setup and teardown processes to be defined clearly. Another powerful feature in JUnit is the ability to create parameterized tests, effectively running the same test multiple times with different inputs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://developer.android.com/training/testing/local-tests",
+        "type": "article"
+      },
+      {
+        "title": "Junit for android",
+        "url": "https://www.youtube.com/watch?v=jE1vQGVHaQA",
+        "type": "video"
+      }
+    ]
   },
   "kc6buUsLAeZeUb4Tk0apM": {
     "title": "Distribution",

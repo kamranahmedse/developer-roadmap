@@ -4,5 +4,5 @@ JUnit is a popular testing framework for Java programming. It forms the basis fo
 
 Visit the following resources to learn more:
 
-- [@official@JUnit](https://junit.org/junit5/)
-- [@official@JUnit Documentation](https://junit.org/junit5/docs/current/user-guide/)
+- [@official@Documentation](https://developer.android.com/training/testing/local-tests)
+- [@video@Junit for android](https://www.youtube.com/watch?v=jE1vQGVHaQA)

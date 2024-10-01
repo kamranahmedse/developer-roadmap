@@ -4,6 +4,6 @@ Eleventy (11ty) is a simple to use, easy to customize, highly performant and pow
 
 Visit the following resources to learn more:
 
-- [@article@Official Website](https://www.11ty.dev/)
-- [@article@A collection of 11ty starters, projects, plugins, and resources](https://11ty.rocks/)
+- [@official@Official Website](https://www.11ty.dev/)
+- [@official@A collection of 11ty starters, projects, plugins, and resources](https://11ty.rocks/)
 - [@video@Introduction to Eleventy](https://www.youtube.com/watch?v=-dM6AmNmMFA)

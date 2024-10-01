@@ -13,6 +13,6 @@ There are many tools and techniques available for measuring web performance metr
 Visit the following resources to learn more:
 
 - [@article@Web Performance Metrics - Google Developers](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)
-- [@article@Measuring performance and user experience - Google Developers](https://web.dev/metrics/)
+- [@article@Measuring web performance in 2024](https://requestmetrics.com/web-performance/measure-web-performance/)
 - [@article@Measuring performance and user experience - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance)
 - [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)
