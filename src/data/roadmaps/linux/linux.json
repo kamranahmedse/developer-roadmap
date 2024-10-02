@@ -4806,6 +4806,53 @@
           }
         },
         {
+          "ID": "2182",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "82",
+          "measuredH": "50",
+          "w": "82",
+          "h": "50",
+          "x": "539",
+          "y": "901",
+          "properties": {
+            "controlName": "118-text-processing:sed"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "82",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "30",
+                  "measuredH": "25",
+                  "x": "26",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "sed"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
           "ID": "2183",
           "typeID": "__group__",
           "zOrder": "95",
@@ -7319,3 +7366,4 @@
   "dependencies": [],
   "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
 }
+
