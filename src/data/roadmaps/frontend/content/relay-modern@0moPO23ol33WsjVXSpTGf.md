@@ -4,6 +4,6 @@ Relay is a JavaScript framework developed by Facebook for building data-driven R
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://relay.dev/)
+- [@official@Relay Website](https://relay.dev/)
 - [@video@ELI5 - Relay](https://www.youtube.com/watch?v=A4POd93GI_I)
 - [@opensource@facebook/relay](https://github.com/facebook/relay)

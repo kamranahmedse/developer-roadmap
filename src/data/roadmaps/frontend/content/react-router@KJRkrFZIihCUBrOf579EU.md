@@ -4,6 +4,6 @@ React Router is a popular routing library for React applications that enables dy
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://reactrouter.com/en/main)
-- [@article@A complete guide to routing in react](https://hygraph.com/blog/routing-in-react)
-- [@video@React router - Complete tutorial](https://www.youtube.com/watch?v=oTIJunBa6MA)
+- [@official@React Router Website](https://reactrouter.com/en/main)
+- [@article@A Complete Guide to Routing in React](https://hygraph.com/blog/routing-in-react)
+- [@video@React Router - Complete tutorial](https://www.youtube.com/watch?v=oTIJunBa6MA)

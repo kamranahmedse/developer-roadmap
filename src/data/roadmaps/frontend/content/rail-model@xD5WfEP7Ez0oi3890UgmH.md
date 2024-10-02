@@ -4,5 +4,5 @@ The RAIL Model is a user-centric performance model developed by Google that focu
 
 Visit the following resources to learn more:
 
-- [@article@RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)
+- [@official@RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)
 - [@article@An Overview of the RAIL performance model](https://www.keycdn.com/blog/rail-performance-model)

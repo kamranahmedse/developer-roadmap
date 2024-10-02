@@ -4,6 +4,6 @@ React Native is an open-source mobile application development framework created 
 
 Visit the following resources to learn more:
 
-- [@roadmap@React Native Roadmap](/react-native)
-- [@official@Official Website](https://reactnative.dev/)
+- [@roadmap@Visit Dedicated React Roadmap](https://roadmap.sh/react-native)
+- [@official@React Native Website](https://reactnative.dev/)
 - [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)
