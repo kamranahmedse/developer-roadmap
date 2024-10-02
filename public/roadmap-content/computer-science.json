@@ -373,16 +373,6 @@
         "type": "course"
       },
       {
-        "title": "CS 61B Lecture 7: Linked Lists I",
-        "url": "https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0",
-        "type": "article"
-      },
-      {
-        "title": "CS 61B Lecture 7: Linked Lists II",
-        "url": "https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w",
-        "type": "article"
-      },
-      {
         "title": "Linked List Data Structure | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=odW9FU8jPRQ",
         "type": "video"
@@ -390,6 +380,16 @@
       {
         "title": "Linked Lists in 4 minutes",
         "url": "https://www.youtube.com/watch?v=F8AbOfQwl1c",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 7: Linked Lists I",
+        "url": "https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 7: Linked Lists II",
+        "url": "https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w",
         "type": "video"
       },
       {
@@ -512,13 +512,13 @@
         "type": "course"
       },
       {
-        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
-        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
-        "type": "article"
-      },
-      {
         "title": "Array Data Structure | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=QJNwK2uJyGs",
+        "type": "video"
+      },
+      {
+        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
+        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
         "type": "video"
       },
       {
