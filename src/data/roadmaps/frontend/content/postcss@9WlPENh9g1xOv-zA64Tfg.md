@@ -4,6 +4,6 @@ PostCSS is a tool for transforming CSS with JavaScript plugins. It allows develo
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://postcss.org/)
+- [@official@PostCSS Website](https://postcss.org/)
 - [@video@Learn PostCSS in 15 minutes](https://www.youtube.com/watch?v=Kn2SKUOaoT4)
 - [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)

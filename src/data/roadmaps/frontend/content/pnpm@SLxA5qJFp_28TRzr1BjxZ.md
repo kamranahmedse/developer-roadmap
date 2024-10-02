@@ -4,6 +4,6 @@ pnpm (performant npm) is a fast, disk-space efficient package manager for JavaSc
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://pnpm.io)
+- [@official@PNPM Website](https://pnpm.io)
 - [@article@Meet PNPM: The Faster, More Performant NPM](https://blog.bitsrc.io/pnpm-javascript-package-manager-4b5abd59dc9)
 - [@video@Get started with pnpm](https://www.youtube.com/watch?v=MvbReZDSKHI)

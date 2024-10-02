@@ -5,4 +5,4 @@ Qwik is an open-source front-end framework designed for optimal performance and 
 Learn more from the following resources:
 
 - [@official@Qwik Website](https://qwik.dev)
-- [@video@Qwik… the world's first O(1) JavaScript framework?](https://www.youtube.com/watch?v=x2eF3YLiNhY)
+- [@video@Qwik - The world's first O(1) JavaScript Framework?](https://www.youtube.com/watch?v=x2eF3YLiNhY)

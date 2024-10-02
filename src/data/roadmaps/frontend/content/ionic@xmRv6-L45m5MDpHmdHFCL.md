@@ -4,7 +4,7 @@ Ionic is an open-source UI toolkit for building high-quality, cross-platform mob
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://ionicframework.com/)
-- [@article@Ionic 8 Announcment](https://ionic.io/blog/ionic-8-is-here)
+- [@official@Ionic Framework Website](https://ionicframework.com/)
+- [@article@Ionic 8 Announcement](https://ionic.io/blog/ionic-8-is-here)
 - [@opensource@ionic-team/ionic-framework](https://github.com/ionic-team/ionic-framework)
 - [@feed@Explore top posts about Ionic](https://app.daily.dev/tags/ionic?ref=roadmapsh)
