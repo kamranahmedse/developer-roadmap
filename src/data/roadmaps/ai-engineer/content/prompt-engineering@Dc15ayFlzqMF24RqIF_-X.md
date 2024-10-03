@@ -1,1 +1,3 @@
 # Prompt Engineering
+
+Prompt Engineering refers to the process of carefully designing and shaping queries or prompts to extract specific responses or behaviors from artificial intelligence models. These prompts are often thought of as the gateway to exploiting these AI models and essential tools for machine testing and performance evaluations. They can affect the model's response, making it invaluable to AI Engineers who are developing AI systems and need to test model's reaction and adaptability with diverse prompts.

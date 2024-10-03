@@ -1,1 +1,3 @@
 # Open AI Assistant API
+
+OpenAI Assistant API is a tool provided by OpenAI that allows developers to integrate the same AI used in ChatGPT into their own applications, products or services. This AI conducts dynamic, interactive and context-aware conversations useful for building AI assistants in various applications. In the AI Engineer Roadmap, mastering the use of APIs like the Open AI Assistant API is a crucial skill, as it allows engineers to harness the power and versatility of pre-trained algorithms and use them for their desired tasks. AI Engineers can offload the intricacies of model training and maintenance, focusing more on product development and innovation.

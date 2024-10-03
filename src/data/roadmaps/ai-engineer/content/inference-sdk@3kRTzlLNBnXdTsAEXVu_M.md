@@ -1,1 +1,3 @@
 # Inference SDK
+
+Inference SDK, also known as Software Development Kit, is a collection of software tools and libraries that aid in the development of AI applications, particularly focusing on inference tasks. These tasks involve using a previously trained AI model to predict the output for a new data input. Essential for AI Engineers, the Inference SDK provides pre-compiled libraries, optimized functions, and graphical interfaces that help in running the AI algorithms efficiently. It also allows AI Engineers to focus more on developing and deploying the AI application rather than getting bogged down with manual optimization procedures.

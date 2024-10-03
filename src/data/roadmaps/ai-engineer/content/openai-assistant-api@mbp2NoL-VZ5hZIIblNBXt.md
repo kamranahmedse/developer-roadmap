@@ -1,1 +1,3 @@
 # OpenAI Assistant API
+
+OpenAI Assistant API is a tool developed by OpenAI which allows developers to establish interaction between their applications, products or services and state-of-the-art AI models. By integrating this API in their software architecture, artificial intelligence engineers can leverage the power of advanced language models developed by the OpenAI community. These integrated models can accomplish a multitude of tasks, like writing emails, generating code, answering questions, tutoring in different subjects and even creating conversational agents. For an AI engineer, mastery over such APIs means they can deploy and control highly sophisticated AI models with just a few lines of code.

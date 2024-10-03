@@ -1,1 +1,3 @@
 # OpenAI Models
+
+OpenAI is an artificial intelligence research lab that is known for its cutting-edge models. These models, like GPT-3, are pre-trained on vast amounts of data and perform remarkably well on tasks like language translation, question-answering, and more without needing any specific task training. Using these pre-trained models can give a massive head-start in building AI applications, as it saves the substantial time and resources that are required for training models from scratch. For an AI Engineer, understanding and leveraging these pre-trained models can greatly accelerate development and lead to superior AI systems.

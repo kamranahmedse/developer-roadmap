@@ -1,1 +1,3 @@
 # What is an AI Engineer?
+
+An AI Engineer is a technical professional who specialises in the development and maintenance of systems and platforms that utilise artificial intelligence. Utilizing the advances in machine learning and data science, the AI Engineers are primarily responsible for creating, testing and implementing AI models. Their work revolves around developing solutions and algorithms that enable machines to mimic human intelligence. In the roadmap of becoming an AI Engineer, understanding their role, duties, and skills required is of paramount importance, as it creates a foundational understanding of the journey ahead.

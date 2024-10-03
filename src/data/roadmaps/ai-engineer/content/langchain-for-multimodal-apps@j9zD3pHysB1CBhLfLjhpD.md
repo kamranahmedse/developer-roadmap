@@ -1,1 +1,3 @@
 # LangChain for Multimodal Apps
+
+LangChain is an application development platform that enables the design and implementation of multimodal applications - applications that use a combination of different modes to interact with users, such as text, voice, visual content, and more. As an AI Engineer, understanding how to leverage LangChain in constructing multimodal applications is crucial, given the varied and complex nature of human-computer interaction. The knowledge of LangChain and its utilization can facilitate AI engineers to build sophisticated multimodal apps and empower them to take the user experience to the next level.

@@ -1,1 +1,3 @@
 # Purpose and Functionality
+
+The Purpose and Functionality are fundamental concepts in the AI Engineer Roadmap. To put simply, 'Purpose' refers to the intended goal or desired result that an AI engineer wants to achieve in an AI project. These goals can range from building neural networks to creating self-driving cars. 'Functionality', on the other hand, pertains to the behaviors and actions that an AI program can perform to fulfill its purpose. This could involve machine learning algorithms, language processing techniques, or data analysis methods among others. Understanding the purpose and functionality of an AI project allows an AI engineer to strategically plan, develop, and manage AI systems effectively.

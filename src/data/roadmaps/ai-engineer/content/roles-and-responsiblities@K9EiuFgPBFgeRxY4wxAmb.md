@@ -1,1 +1,3 @@
-# Roles and Responsiblities
+# Roles and Responsbilities of an AI Engineer
+
+An AI Engineer is entrusted with the task of designing and implementing AI models. This involves working closely with Data Scientists to transform machine learning models into APIs, ensuring that the models are equipped to interact with software applications. AI Engineers are proficient in a variety of programming languages, work with vast datasets, and utilize AI-related applications. Additionally, they often handle tasks such as data preprocessing, data analysis, and machine learning algorithm deployment. They also troubleshoot any issues that might emerge during the AI lifecycle, while maintaining a high level of knowledge about the latest industry trends and technological advancements.

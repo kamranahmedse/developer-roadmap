@@ -1,1 +1,3 @@
 # MongoDB Atlas
+
+MongoDB Atlas is a cloud-based database service that's fully managed by MongoDB. As a NoSQL database program, it uses JSON-like documents with optional schemas and offers the benefits of an elastic, on-demand infrastructure platform that simplifies data as a service. MongoDB Atlas is used in the AI Engineer roadmap to manage, process and analyze big and complex data. It provides scalability, geographic distribution and data recovery, essential capabilities for AI engineers when dealing with significant volumes of information needed for machine learning models and AI applications.

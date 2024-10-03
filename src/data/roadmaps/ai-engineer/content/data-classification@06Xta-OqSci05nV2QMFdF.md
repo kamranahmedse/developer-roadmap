@@ -1,1 +1,3 @@
 # Data Classification
+
+Embeddings are used in data classification by converting data (like text or images) into numerical vectors that capture underlying patterns and relationships. These vector representations make it easier for machine learning models to distinguish between different classes based on the similarity or distance between vectors in high-dimensional space. By training a classifier on these embeddings, tasks like sentiment analysis, document categorization, and image classification can be performed more accurately and efficiently. Embeddings simplify complex data and enhance classification by highlighting key features relevant to each class.

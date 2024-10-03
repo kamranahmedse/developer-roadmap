@@ -1,1 +1,3 @@
 # Sentence Transformers
+
+Sentence Transformers refer to a variant of the popular Transformers model that is specifically designed and optimized for creating meaningful and effective sentence embeddings. It enables developers to easily convert paragraphs and sentences into dense vector representations that can be compared for semantic similarity. In the AI engineer's journey, getting familiar with Sentence Transformers is important because it allows the modelling of natural language in AI systems to provide richer, more nuanced interactions. This can be especially valuable in designing and implementing AI applications such as chatbots, sentiment analysis tools, and more.

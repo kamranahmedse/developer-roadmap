@@ -1,1 +1,3 @@
 # Open AI Playground
+
+Open AI Playground is an interactive platform, provided by OpenAI, that enables developers to experiment with and understand the capabilities of OpenAI's offerings. Here, you can try out several cutting-edge language models like GPT-3 or Codex. This tool is crucial in the journey of becoming an AI Engineer, because it provides a hands-on experience in implementing and testing language models. Manipulating models directly helps you get a good grasp on how AI models can influence the results based on input parameters. Therefore, Open AI Playground holds significance on the AI Engineer's roadmap not only as a learning tool, but also as a vital platform for rapid prototyping and debugging.

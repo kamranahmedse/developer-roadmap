@@ -1,1 +1,3 @@
 # Introduction
+
+The emergence of Artificial Intelligence (AI) and its related fields has been rapid and far-reaching, spanning across numerous industries and sectors. Becoming an AI engineer entails a comprehensive understanding and ability to apply various concepts, algorithms, and technologies that are fundamental to AI. This includes programming, mathematics, machine learning, deep learning, neural networks, natural language processing and many more. A roadmap for an AI engineer is a detailed plan that depicts the requisite skills, knowledge, and steps to be followed in order to effectively navigate this exciting field. Exploring different sections will provide insight into these key areas that need to be learnt and mastered for becoming a successful AI engineer.

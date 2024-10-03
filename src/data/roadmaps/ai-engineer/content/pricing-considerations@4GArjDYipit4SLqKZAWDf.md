@@ -1,1 +1,3 @@
-# Pricing Considerations
+# Pricing Considerations in OpenAI Embeddings API 
+
+OpenAI Embeddings API allows users to compute and extract textual embeddings from large-scale models that OpenAI trains. The pricing for this API can vary based on multiple factors like the number of requests, number of tokens in the text, total computation time, throughput, and others. Understanding the pricing model for the OpenAI Embeddings API is vital for AI Engineers to effectively manage costs while using the API. They should be aware of any limitations or additional costs associated with high volume requests, speed of processing, or special features they plan to use. This knowledge helps the engineers to optimize costs, which is important for the budgeting of AI projects and the overall roadmap of an AI Engineer.

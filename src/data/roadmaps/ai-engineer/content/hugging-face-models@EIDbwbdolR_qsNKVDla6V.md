@@ -1,1 +1,3 @@
 # Hugging Face Models
+
+Hugging Face is a company that created a highly modular and efficient set of models primarily designed to work with AI tasks involving Natural Language Processing (NLP). These models provide pre-trained solutions that handle complex tasks such as translation, summarization, and conversation, to name a few. AI engineers can utilize these Hugging Face models in their projects to efficiently manage challenging NLP functions. Along the AI engineer roadmap, mastering and integrating such tools becomes indispensable, as NLP is an important pillar of many AI systems, especially those involved in semantic analysis and human-computer interaction.

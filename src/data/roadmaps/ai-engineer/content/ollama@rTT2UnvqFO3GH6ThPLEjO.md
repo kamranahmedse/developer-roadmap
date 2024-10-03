@@ -1,1 +1,3 @@
 # Ollama
+
+Ollama is not a recognizable term in the world of AI engineering. It could potentially be a typo or a misunderstood term. In accordance with the context provided, if we are referring to Llama - it is an open-source Python Machine Learning Library constructed to simplify complex routines, but it really doesn't fall in the roadmap of an AI engineer. Instead, algorithms - such as linear regression, decision trees and more established libraries like Tensorflow, PyTorch, and Keras are more commonly identified in an AI engineer's path. However, a better understanding of the term 'Ollama' in this context is necessary to offer a precise definition or introduction.

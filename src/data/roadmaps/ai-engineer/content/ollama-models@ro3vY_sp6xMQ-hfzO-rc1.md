@@ -1,1 +1,3 @@
 # Ollama Models
+
+Ollama Models refer to a statistical model designed for analyzing and predicting event data. These models can capture relationships in the sequence of events and determine whether one event influences the occurrence of another. Primarily used in social science, they've found considerable application in the field of artificial intelligence. In the AI Engineer's Roadmap, understanding and implementing Ollama Models can help build robust machine learning systems. They can be used to generate probable future events based on an existing sequence, playing an instrumental role in areas like predictive analytics and recommendation systems.

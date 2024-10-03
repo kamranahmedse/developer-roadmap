@@ -1,1 +1,3 @@
 # Using SDKs Directly
+
+Software Development Kits, often referred to as SDKs, are a collection of development tools bundled together. These tools assist in creating innovative applications for specific software frameworks or hardware platforms. In the AI Engineer Roadmap, using SDKs directly implies that AI engineers leverage these kits to interact directly with AI-related services or platforms. This approach provides a lower level control, allowing engineers to customize applications according to their unique requirements. Therefore, acquiring skill in using SDKs directly forms an instrumental part of the AI Engineer Roadmap, enabling practitioners to build and enhance AI applications effectively and efficiently.

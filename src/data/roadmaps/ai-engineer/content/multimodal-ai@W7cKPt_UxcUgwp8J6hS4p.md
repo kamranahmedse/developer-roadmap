@@ -1,1 +1,3 @@
-# Multimodal AI
+# Multimodal AI 
+
+Multimodal AI is a subset of artificial intelligence that combines data from different sources or modes — such as text, image, and sound — to make more accurate predictions. For instance, a multimodal AI system could use a combination of text and image data to generate a description of a scene. The multimodal approach to AI brings an extra level of sophistication to machine learning models. As an aspiring AI engineer, understanding multimodal AI can enhance your data processing skills, equip you to design more complex AI systems, and offer more versatile solutions. Eventually, the ability to integrate and interpret data from multiple sources opens up a plethora of opportunities and greatly broadens the AI application spectrum.

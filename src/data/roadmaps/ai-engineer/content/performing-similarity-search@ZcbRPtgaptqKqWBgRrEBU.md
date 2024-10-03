@@ -1,1 +1,3 @@
 # Performing Similarity Search
+
+Performing similarity search is a technique often utilized in information retrieval and machine learning. Essentially, this process involves identifying and retrieving the data points that most closely match a given query. Often, this is implemented using distance or other mathematical metrics. In the roadmap to becoming an AI engineer, mastering similarity search becomes crucial as it's a key methodology in recommendation systems, image or speech recognition, and natural language processing - all important aspects of AI and machine learning. This understanding will equip AI engineers to create sophisticated AI models capable of creating associations and understanding nuances in the data.

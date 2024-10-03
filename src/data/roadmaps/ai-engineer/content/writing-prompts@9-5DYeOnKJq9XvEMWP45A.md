@@ -1,1 +1,3 @@
-# Writing Prompts
+# Writing Prompts under OpenAI API
+
+Writing Prompts are specific instructions or guides provided to OpenAI API to produce desired texts. They can range from simple, straight sentences intended for generating specific outputs to more complex, creative ones aiming for more open-ended, artificial intelligent responses. While the OpenAI API is capable of executing an extensive variety of tasks, how it performs is strongly influenced by how these writing prompts are crafted and constructed. During the journey to become an AI Engineer, understanding and designing effective prompts becomes vital for proper system training and interaction.

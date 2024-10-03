@@ -1,1 +1,3 @@
-# Vector Databases
+# Vector Databases 
+
+Vector databases are a type of database system specifically designed to handle vector space model data, typically used for high-dimensional data sets. With the explosion of data in AI applications, these databases have become an integral part of the infrastructure, providing an efficient and scalable way to manage and query large volumes of vector data. For AI engineers, understanding how to use and optimize vector databases can significantly improve the performance of AI models which use vector-based data, such as natural language processing (NLP) and image recognition models. Proficiency in vector databases is hence a crucial skill in the AI Engineer Roadmap.

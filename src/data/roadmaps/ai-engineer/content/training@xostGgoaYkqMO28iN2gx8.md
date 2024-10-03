@@ -1,1 +1,3 @@
-# Training
+# Training 
+
+Training in the field of AI involves feeding an algorithm or a neural network with data, and allowing it to adjust its parameters in order to improve its predictions over time. The main objective is to design the system to accurately recognize the patterns within the data set and make accurate predictions or decisions when confronted with new data. In the roadmap to becoming an AI engineer, understanding and implementing various training methodologies is a critical step. AI engineers require this skill to develop accurate and efficient algorithms that can learn from and make decisions based on data.

@@ -1,1 +1,3 @@
 # Vector Databases
+
+Vector databases are specialized databases that are capable of handling and processing data in the form of vectors. Unlike traditional relational databases, which store data in tables, vector databases work with data that can be represented as mathematical vectors. This makes them particularly well-suited for dealing with large, multi-dimensional datasets, which are commonplace in the field of artificial intelligence. As an AI Engineer, understanding and utilizing vector databases can come in handy for numerous tasks such as similarity search, image recognition, and other machine learning applications where large-scale vector data needs to be quickly queried.

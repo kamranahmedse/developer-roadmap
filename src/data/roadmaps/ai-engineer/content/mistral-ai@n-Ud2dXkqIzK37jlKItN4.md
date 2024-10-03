@@ -1,1 +1,3 @@
 # Mistral AI
+
+Mistral AI is a creative software solution that uses state-of-the-art artificial intelligence algorithms for automating performance analysis tasks. It's primarily used for simulation data analysis and model calibration by integrating into existing codes and tools. It enables AI Engineers to extract useful insights from large and varied data sets, a critical skill needed to build and improve AI systems. Its key advantage lies in enabling efficient processing and interpretation of complex data sets, reducing the time taken for data analysis and thereby accelerating the AI development process.
