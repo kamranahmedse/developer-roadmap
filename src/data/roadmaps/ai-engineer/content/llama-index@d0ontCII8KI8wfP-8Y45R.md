@@ -1,3 +1,7 @@
 # Llama Index
 
-Llama Index is a customizable barcode indexing system commonly used in bioinformatics, and particularly in DNA sequencing. It operates on the FASTQ format for raw sequence data, creating a sample identification index that enables easy tracking of the origin of each file. In AI engineer's journey, the knowledge of Llama Index is relevant to those operating in AI applications focused in genomics or biological research. Mastering this topic can help in architecting AI systems for these specific domains due to its efficiency in managing large raw DNA sequence files, which is essential in training machine learning models for tasks such as DNA sequence analysis, prediction and other relevant computational biology tasks.
+LlamaIndex is a simple, flexible data framework for connecting custom data sources to large language models.
+
+Visit the following resources to learn more:
+
+- [@official@LlamaIndex Official Website](https://llamaindex.ai/)

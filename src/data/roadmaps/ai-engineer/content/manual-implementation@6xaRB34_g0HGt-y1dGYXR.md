@@ -1,3 +1,3 @@
 # Manual Implementation
 
-Manual Implementation in the field of Artificial Intelligence (AI) involves coding algorithms, data structures, and mechanisms from scratch without the help of pre-built functions or libraries. It provides a deeper understanding of how AI algorithms work, how data structures are built, and how mechanisms execute. Although frameworks, libraries, and tools simplify and speed up AI development, knowing how to implement AI models manually helps an AI engineer to customize and optimize models to achieve specific project results.
+You can build the AI agents manually by coding the logic from scratch without using any frameworks or libraries. For example, you can use the OpenAI API and write the looping logic yourself to keep the agent running until it has the answer.

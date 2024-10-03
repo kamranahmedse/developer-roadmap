@@ -1,3 +1,7 @@
-# LlamaIndex for Multimodal Apps
+# Llama Index
 
-LlamaIndex is an open source database solution that allows multimodal applications to efficiently access information. Multimodal applications utilize different modes of input and output to provide a more interactive and user-friendly experience. These modes can include text, images, audio, and more. In these applications, LlamaIndex's role comes into play, as it is designed to handle complex, heterogeneous data including multi-format information. The understanding, utilization and efficient handling of such database solutions can contribute to the toolset of an AI Engineer, furthering analyzation, application and system-building capabilities.
+LlamaIndex is a simple, flexible data framework for connecting custom data sources to large language models.
+
+Visit the following resources to learn more:
+
+- [@official@LlamaIndex Official Website](https://llamaindex.ai/)

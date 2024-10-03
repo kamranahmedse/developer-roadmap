@@ -1,3 +1,7 @@
-# Models on Hugging Face
+# Hugging Face Models
 
-Hugging Face is a company that developed a platform for natural language processing (NLP) tasks. It primarily hosts a vast array of pre-trained models that are designed to understand and generate human-like text. Within the context of an AI Engineer's path, learning how to navigate the Hugging Face model repository is critical. It provides access to state-of-the-art models like BERT, GPT-2, GPT-3, and their own invention - DistilBERT, which can be fine-tuned for custom tasks. Understanding how these models work and how to implement them can substantially boost the capabilities of any AI solution you're working on, expedite project turnaround, and improve overall performance.
+Hugging Face has a wide range of pre-trained models that can be used for a variety of tasks, including language understanding and generation, translation, chatbots, and more. Anyone can create an account and use their models, and the models are organized by task, provider, and other criteria.
+
+Visit the following resources to learn more:
+
+- [@official@Hugging Face](https://huggingface.co/models)

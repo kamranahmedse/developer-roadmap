@@ -1,3 +1,9 @@
 # Maximum Tokens
 
-Maximum Tokens refer to the highest possible number that a machine learning model or program can process in a single training example. This limit directly influences the complexity of the data the model can manage. As an AI engineer, understanding the implications and limitations of maximum tokens is part of being able to effectively design and manage deep learning architectures. For linguistics-based AI efforts, like Natural Language Processing (NLP), maximum tokens can dictate the length of text that can be effectively processed by the model, and thus informs how the input data needs to be prepared.
+Number of Maximum tokens in OpenAI API depends on the model you are using.
+
+For example, the `gpt-4o` model has a maximum of 128,000 tokens.
+
+Visit the following resources to learn more:
+
+- [@official@OpenAI API Documentation](https://platform.openai.com/docs/api-reference/completions/create)

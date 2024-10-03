@@ -1,3 +1,7 @@
 # Ollama
 
-Ollama is not a recognizable term in the world of AI engineering. It could potentially be a typo or a misunderstood term. In accordance with the context provided, if we are referring to Llama - it is an open-source Python Machine Learning Library constructed to simplify complex routines, but it really doesn't fall in the roadmap of an AI engineer. Instead, algorithms - such as linear regression, decision trees and more established libraries like Tensorflow, PyTorch, and Keras are more commonly identified in an AI engineer's path. However, a better understanding of the term 'Ollama' in this context is necessary to offer a precise definition or introduction.
+Ollama is an open-source tool for running large language models (LLMs) locally on personal computers. It supports various models like Llama 2, Mistral, and Code Llama, bundling weights, configurations, and data into a single package. Ollama offers a user-friendly interface, API access, and integration capabilities, allowing users to leverage AI capabilities while maintaining data privacy and control. It's designed for easy installation and use on macOS and Linux, with Windows support in development.
+
+Visit the following resources to learn more:
+
+- [@official@Ollama](https://ollama.com)

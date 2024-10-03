@@ -1,3 +1,3 @@
 # Google's Gemini
 
-Google's Gemini is a machine learning infrastructural initiative designed by Google to automate the design and optimization of machine learning models. By streamlining the process of model selection and hyper-parameter tuning, Gemini reduces the time and computational resources required to create effective machine learning solutions. For an aspiring AI engineer, mastering tools like Gemini is essential as it automates much of the grunt work and allows engineers to focus on more complex and high-level tasks. Hence, Gemini is a significant tool in the AI Engineer's roadmap to proficiency in machine learning and artificial intelligence.
+Gemini, formerly known as Bard, is a generative artificial intelligence chatbot developed by Google. Based on the large language model of the same name, it was launched in 2023 after being developed as a direct response to the rise of OpenAI's ChatGPT

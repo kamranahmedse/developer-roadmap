@@ -1,3 +1,7 @@
 # Ollama SDK
 
-Ollama SDK is a software development kit specifically designed to create powerful and efficient machine learning applications. It provides developers with access to cutting-edge tools, libraries, programming languages, APIs, and other resources that can help them create, test, and deploy artificial intelligence (AI) models. As a part of the AI Engineer Roadmap, understanding and learning to work with Ollama SDK can be instrumental in developing robust AI solutions, assisting both in model training and the conversion of models into a format that can be used in different applications.
+Ollama SDK can be used to develop applications locally.
+
+Visit the following resources to learn more:
+
+- [@official@Ollama SDK](https://ollama.com)

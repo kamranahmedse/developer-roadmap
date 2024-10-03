@@ -1,3 +1,3 @@
 # Langchain
 
-Langchain is a tool designed to leverage blockchain technologies in the field of linguistics, language processing and machine learning. It's basically a language processing chain, essentially a system that deals with input in the form of a natural language and then performs various transformations on it. As part of the AI Engineer Roadmap, Langchain is essential as it brings a new angle to how artificial intelligence can be used to understand and process human languages. This tool allows the creation of language models which can be an integral part of developing AI systems with ability of natural language understanding and processing.
+LangChain is a software framework that helps facilitate the integration of large language models into applications. As a language model integration framework, LangChain's use-cases largely overlap with those of language models in general, including document analysis and summarization, chatbots, and code analysis.

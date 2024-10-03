@@ -1,3 +1,3 @@
 # LLMs
 
-LLMs, or Logic and Learning Models, are a facet of artificial intelligence that focuses on both logical representation of data and machinery and statistical learning. They exploit logic's structure and expressiveness along with learning's ability to handle uncertainty and noise. LLMs allow AI engineers to create complex models that can learn from data while integrating a wide range of prior knowledge in the form of logical constraints. These models can predict outcomes or behaviors based on the input data, paving the way for more robust and flexible AI solutions.
+LLM or Large Language Models are AI models that are trained on a large amount of text data to understand and generate human language. They are the core of applications like ChatGPT, and are used for a variety of tasks, including language translation, question answering, and more.
