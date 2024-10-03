@@ -1,0 +1,3 @@
+# ReAct Prompting
+
+ReAct prompting is a tactical approach employed in Conversational AI to generate textual responses. It is essentially utilized in scenarios where a chatbot or an AI-generated persona is required to carry on a conversation. This strategy adds a layer of intelligence to the conversation, maneuvering the AI to generate responses that are contextually sensitive and relevant. In an AI Engineer's Roadmap, an understanding of React Prompting becomes significant during the design of AI interaction models. Using this technique, AI Engineers are capable of creating more intuitive, engaging, and user-friendly conversational AI agents.

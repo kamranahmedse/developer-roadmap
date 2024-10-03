@@ -1,0 +1,3 @@
+# Pinecone
+
+Pinecone is a vector database designed specifically for machine learning applications. It facilitates the process of transforming data into a vector and indexing it for quick retrieval. As a cloud-based service, it allows AI Engineers to easily handle high-dimensional data and utilize it for building models. As part of an AI Engineer's Roadmap, understanding and using vector databases like Pinecone can help streamline the development and deployment of AI and ML applications. This is particularly useful in building recommendation systems, personalized search and similarity search which are important components of an AI-based service.

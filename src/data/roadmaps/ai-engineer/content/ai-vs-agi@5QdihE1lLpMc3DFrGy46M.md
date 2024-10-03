@@ -1,0 +1,3 @@
+# AI vs AGI
+
+AI (Artificial Intelligence) refers to systems designed to perform specific tasks, like image recognition or language translation, often excelling in those narrow areas. In contrast, AGI (Artificial General Intelligence) would be a system capable of understanding, learning, and applying intelligence across a wide range of tasks, much like a human, and could adapt to new situations without specific programming.

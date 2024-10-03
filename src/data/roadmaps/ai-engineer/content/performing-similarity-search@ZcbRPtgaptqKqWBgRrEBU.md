@@ -1,0 +1,3 @@
+# Performing Similarity Search
+
+This step involves querying the vector database to find the most similar embeddings to a given input vector. When a query is made, the system computes the distance between the input vector and stored embeddings using metrics like cosine similarity or Euclidean distance. The closest matches—those with the smallest distances—are retrieved as results, allowing for accurate semantic search, recommendations, or content retrieval based on similarity in the embedded space. This process enables highly efficient and relevant searches across large datasets.

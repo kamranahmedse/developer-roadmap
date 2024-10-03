@@ -1,0 +1,3 @@
+# Token Counting
+
+Token counting refers to the process of quantifying the occurrence of tokens—unique instances of meaningful words, symbols, or other atomic units in a dataset. In artificial intelligence (AI), specifically in natural language processing (NLP), token counting serves as a foundational building block to understand and analyze text data. It helps in performing tasks such as text classification, sentiment analysis, and other language modeling tasks. It also forms the basis of techniques like Bag of Words, Term Frequency-Inverse Document Frequency (TF-IDF), and word embeddings, which are crucial in developing effective AI models.

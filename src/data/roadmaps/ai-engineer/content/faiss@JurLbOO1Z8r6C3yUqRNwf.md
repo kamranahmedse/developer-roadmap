@@ -1,0 +1,3 @@
+# FAISS
+
+FAISS stands for Facebook AI Similarity Search, it is a database management library developed by Facebook's AI team. Primarily used for efficient similarity search and clustering of dense vectors, it allows users to search through billions of feature vectors swiftly and efficiently. As an AI engineer, learning FAISS is beneficial because these vectors represent objects that are typically used in machine learning or AI applications. For instance, in an image recognition task, a dense vector might be a list of pixels from an image, and FAISS allows a quick search of similar images in a large database.

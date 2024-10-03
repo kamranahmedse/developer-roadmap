@@ -1,0 +1,3 @@
+# RAG & Implementation
+
+RAG (Relation and Graph) is a mechanism used in artificial intelligence that represents the structured relationships existing between different data entities. Programming languages such as Python provide libraries for RAG implementation, making it simpler for AI engineers. In the AI Engineer roadmap, understanding and implementing RAG models can prove beneficial especially while working with AI algorithms that extensively deal with relational and structured data, such as graph-based Deep Learning algorithms, or while creating knowledge graphs in contexts like Natural Language Processing (NLP). Implementing RAG efficiently can lead to more accurate, efficient, and interpretable AI models.
