@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { Flame, X, Zap, ZapOff } from 'lucide-react';
+import { Zap, ZapOff } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { StreakDay } from './StreakDay';
 import {
@@ -11,15 +11,8 @@ import {
 } from '../../stores/page.ts';
 import { useStore } from '@nanostores/react';
 import { cn } from '../../lib/classname.ts';
-import { $accountStreak } from '../../stores/streak.ts';
-
-type StreakResponse = {
-  count: number;
-  longestCount: number;
-  previousCount?: number | null;
-  firstVisitAt: Date;
-  lastVisitAt: Date;
-};
+import { $accountStreak, type StreakResponse } from '../../stores/streak.ts';
+import { InviteFriends } from './InviteFriends.tsx';
 
 type AccountStreakProps = {};
 
@@ -184,11 +177,10 @@ export function AccountStreak(props: AccountStreakProps) {
             <p className="-mt-[0px] mb-[1.5px] text-center text-xs tracking-wide text-slate-500">
               Visit every day to keep your streak going!
             </p>
-            <p className='text-xs mt-1.5 text-center'>
-              <a href="/leaderboard" className="text-purple-400 hover:underline underline-offset-2">
-                See how you compare to others
-              </a>
-            </p>
+
+            <InviteFriends
+              refByUserCount={accountStreak?.refByUserCount || 0}
+            />
           </div>
         </div>
       )}

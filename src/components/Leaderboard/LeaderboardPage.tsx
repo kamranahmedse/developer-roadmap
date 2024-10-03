@@ -4,7 +4,7 @@ import type {
   ListLeaderboardStatsResponse,
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
-import { FolderKanban, GitPullRequest, Users2, Zap } from 'lucide-react';
+import { FolderKanban, GitPullRequest, Users, Users2, Zap } from 'lucide-react';
 import { TrophyEmoji } from '../ReactIcons/TrophyEmoji';
 import { SecondPlaceMedalEmoji } from '../ReactIcons/SecondPlaceMedalEmoji';
 import { ThirdPlaceMedalEmoji } from '../ReactIcons/ThirdPlaceMedalEmoji';
@@ -60,6 +60,23 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
             ]}
           />
           <LeaderboardLane
+            title="Most Referrals"
+            tabs={[
+              {
+                title: 'This Month',
+                users: stats.referrals.currentMonth,
+                emptyIcon: <Users className="size-16 text-gray-300" />,
+                emptyText: 'No referrals this month',
+              },
+              {
+                title: 'Lifetime',
+                users: stats.referrals.lifetime,
+                emptyIcon: <Users className="size-16 text-gray-300" />,
+                emptyText: 'No referrals yet',
+              },
+            ]}
+          />
+          <LeaderboardLane
             title="Top Contributors"
             subtitle="Past 2 weeks"
             tabs={[
@@ -97,15 +114,17 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   return (
     <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
       <div className="mb-3 flex items-center justify-between gap-2 px-3 py-3">
-        <h3 className="text-base font-medium">
+        <h3 className="text-sm font-medium">
           {title}{' '}
           {subtitle && (
-            <span className="text-sm font-normal text-gray-400 ml-1">{subtitle}</span>
+            <span className="ml-1 text-sm font-normal text-gray-400">
+              {subtitle}
+            </span>
           )}
         </h3>
 
         {tabs.length > 1 && (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             {tabs.map((tab) => {
               const isActive = tab === activeTab;
 
@@ -114,10 +133,10 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   key={tab.title}
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'text-sm font-medium underline-offset-2 transition-colors',
+                    'text-xs transition-colors py-0.5 px-2 rounded-full',
                     {
-                      'text-black underline': isActive,
-                      'text-gray-400 hover:text-gray-600': !isActive,
+                      'text-white bg-black': isActive,
+                      'hover:bg-gray-200': !isActive,
                     },
                   )}
                 >

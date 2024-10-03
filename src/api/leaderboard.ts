@@ -20,6 +20,10 @@ export type ListLeaderboardStatsResponse = {
   githubContributors: {
     currentMonth: LeaderboardUserDetails[];
   };
+  referrals: {
+    currentMonth: LeaderboardUserDetails[];
+    lifetime: LeaderboardUserDetails[];
+  };
 };
 
 export function leaderboardApi(context: APIContext) {
