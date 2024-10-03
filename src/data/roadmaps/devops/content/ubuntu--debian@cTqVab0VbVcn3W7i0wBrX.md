@@ -9,4 +9,4 @@ Visit the following resources to learn more:
 - [@video@How to use Ubuntu](https://www.youtube.com/watch?v=lmeDvSgN6zY)
 - [@video@Debian 12 Tutorial for Beginners](https://www.youtube.com/watch?v=zOZEkzwhThc)
 - [@feed@Explore top posts about Ubuntu](https://app.daily.dev/tags/ubuntu?ref=roadmapsh)
-- [@course@Practice Linux Commands with Hands-on Labs"](https://labex.io/courses/linux-basic-commands-practice-online)
+- [@course@Practice Linux Commands with Hands-on Labs](https://labex.io/courses/linux-basic-commands-practice-online)
