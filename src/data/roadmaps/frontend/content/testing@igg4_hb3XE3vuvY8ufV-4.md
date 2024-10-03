@@ -15,7 +15,6 @@ Modern testing often incorporates automated testing tools and continuous integra
 
 Visit the following resources to learn more:
 
-- [@article@A comprehensive dive into software testing.](https://www.softwaretestingmaterial.com/software-testing/)
-- [@article@The different types of software tests](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)
-- [@video@How to test web applications - dotJS 2024](https://www.youtube.com/watch?v=l3qjQpYBR8c)
+- [@article@The Different Types of Software Tests](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)
+- [@video@How to Test Web Applications - dotJS 2024](https://www.youtube.com/watch?v=l3qjQpYBR8c)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

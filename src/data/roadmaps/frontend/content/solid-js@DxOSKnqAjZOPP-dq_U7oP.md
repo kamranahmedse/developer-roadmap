@@ -4,7 +4,7 @@ SolidJS is a declarative, efficient, and flexible JavaScript library for buildin
 
 Visit the following resources to learn more:
 
-- [@official@Official Website - SolidJS](https://www.solidjs.com/)
+- [@official@SolidJS Website](https://www.solidjs.com/)
 - [@official@SolidJS Tutorial](https://www.solidjs.com/tutorial/introduction_basics)
 - [@video@SolidJS in 100 Seconds](https://www.youtube.com/watch?v=hw3Bx5vxKl0)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

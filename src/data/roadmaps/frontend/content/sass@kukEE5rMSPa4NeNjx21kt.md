@@ -4,6 +4,6 @@ Sass (Syntactically Awesome Style Sheets) is a mature, stable, and powerful prof
 
 Visit the following resources to learn more:
 
-- [@article@Sass Website](https://sass-lang.com/)
+- [@official@Sass Website](https://sass-lang.com/)
 - [@video@Sass Tutorial for Beginners](https://www.youtube.com/watch?v=_a5j7KoflTs)
 - [@video@Sass, BEM, & Responsive Design](https://www.youtube.com/watch?v=jfMHA8SqUL4)

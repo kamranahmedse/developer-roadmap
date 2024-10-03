@@ -4,7 +4,7 @@ SvelteKit is a framework for building web applications using Svelte, a component
 
 Visit the following resources to learn more:
 
-- [@article@Svelte Kit Official Website](https://kit.svelte.dev/)
+- [@article@Svelte Kit Website](https://kit.svelte.dev/)
 - [@article@Official Svelte Kit Docs](https://kit.svelte.dev/docs/introduction)
 - [@video@Sveltekit in 100 Seconds](https://www.youtube.com/watch?v=H1eEFfAkIik)
 - [@feed@Explore top posts about Svelte](https://app.daily.dev/tags/svelte?ref=roadmapsh)
