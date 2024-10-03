@@ -1,0 +1,3 @@
+# Speech-to-Text
+
+Speech-to-Text is a type of technology that converts spoken language into written text. This technology is often incorporated in virtual assistants, transcription services and many other applications where transforming voice into text can facilitate better user interaction or communication. For an AI engineer, this falls under the wider ambit of Natural Language Processing (NLP), making it an important skill to understand and comprehend. The ability to design and implement speech-to-text models can allow AI engineers to create more interactive and adaptive machine learning systems, improve accessibility, and expand the scope of potential AI applications.

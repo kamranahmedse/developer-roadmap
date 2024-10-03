@@ -1,0 +1,3 @@
+# Prompt Injection Attacks
+
+Prompt Injection Attacks refer to a cyber threat where nefarious actors manipulate or inject malicious codes into the system using various techniques like SQL injection, Cross-Site Scripting (XSS), or Command Injection. This practice aims to exploit a software system's vulnerabilities, allowing unauthorized access to sensitive information. In the AI Engineer Roadmap, understanding these attack types is essential. Knowledge about such attacks can help developers in AI to build robust and secure AI systems that can resist potential threats and ensure system integrity. Better understanding of threat landscape can guide engineers toward implementing additional security measures during the design and development process of AI applications.

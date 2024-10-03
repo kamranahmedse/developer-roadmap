@@ -8,4 +8,6 @@ MVP is divided into three components:
 - `View`: Takes care of updating the graphical part of the application. It acts as a passive view, only receiving data and requesting actions to be performed.
 - `Presenter`: Handles all the logic related to the graphical interface that the View requests. It provides the View with the data it needs to display on the screen.
 
-This structure helps to create a clear separation of concerns, making your codebase more modular and easier to maintain.
+Visit the following resources to learn more:
+
+- [@article@Model View Presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)

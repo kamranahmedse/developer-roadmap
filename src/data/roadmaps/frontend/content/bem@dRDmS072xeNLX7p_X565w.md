@@ -4,7 +4,6 @@ The Block, Element, Modifier methodology (commonly referred to as BEM) is a popu
 
 Visit the following resources to learn more:
 
-- [@article@BEM Official Website](https://en.bem.info)
-- [@article@BEM Documentation](https://en.bem.info/methodology/quick-start)
-- [@article@BEM 101](https://css-tricks.com/bem-101)
-- [@article@BEM Tutorials](https://en.bem.info/tutorials/)
+- [@official@BEM Official Website](https://en.bem.info)
+- [@official@BEM Documentation](https://en.bem.info/methodology/quick-start)
+- [@article@5 Reasons To Use BEM Notation](https://www.elpassion.com/blog/5-reasons-to-use-bem-a)

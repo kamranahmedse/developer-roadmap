@@ -1,6 +1,6 @@
 # Fetch API
 
-Ajax is the technique that lets us send and receive the data asynchronously from the servers e.g. updating the user profile or asynchronously fetching the list of searched products without reloading the page.
+The Fetch API is a modern JavaScript interface for making HTTP requests in web browsers. It provides a more powerful and flexible way to send and receive data compared to older methods like XMLHttpRequest. Fetch uses Promises, allowing for cleaner asynchronous code. It supports various data formats, custom headers, and different types of requests (GET, POST, etc.). The API is designed to be extensible and integrates well with other web technologies. While simpler for basic use cases, Fetch also handles complex scenarios like request cancellation and reading streamed responses. It's widely supported in modern browsers and has become the standard for network requests in client-side JavaScript applications.
 
 Visit the following resources to learn more:
 

@@ -1,0 +1,3 @@
+# Whisper API
+
+Whisper API is an interface primarily used for interacting with OpenAI's Whisper ASR system. It's a system designed to convert spoken language into written text, a technique that is commonly known as Automatic Speech Recognition (ASR). As an AI engineer, understanding and using Whisper API in the roadmap is key as it fuses with several other machine learning principles to improve an application's ability to understand and transcribe spoken language, which is becoming increasingly significant in domains like virtual assistants, transcription services, voice biometrics and more.

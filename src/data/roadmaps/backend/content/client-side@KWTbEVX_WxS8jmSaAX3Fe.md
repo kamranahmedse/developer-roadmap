@@ -4,5 +4,5 @@ Client-side caching is a technique where web browsers or applications store data
 
 Visit the following resources to learn more:
 
+- [@article@Client Side Caching](https://redis.io/docs/latest/develop/use/client-side-caching/)
 - [@video@Everything you need to know about HTTP Caching](https://www.youtube.com/watch?v=HiBDZgTNpXY)
-- [@article@Client-side Caching](https://redis.io/docs/latest/develop/use/client-side-caching/)

@@ -1,0 +1,3 @@
+# Semantic Search
+
+Semantic Search is an information retrieval approach which leverages not just the keywords in a search query, but also the intent and contextual meaning behind them to produce highly relevant results. In other words, it makes search engines more intelligent and precise, understanding user intent and making connections like a human brain would. It's an important technique that an AI Engineer might utilize, especially when dealing with large amounts of data or if they're involved in creating intelligent search systems. From natural language processing to relationship mapping, semantic search plays a key role in advancing artificial intelligence search capabilities.

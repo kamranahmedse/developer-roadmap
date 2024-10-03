@@ -1,13 +1,25 @@
 {
   "-3pADOHMDQ0H6ZKNjURyn": {
     "title": "What is Redis?",
-    "description": "",
-    "links": []
+    "description": "Redis is an open-source, in-memory data structure store, primarily used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, and sorted sets, making it highly versatile. Redis operates with extremely low latency due to its in-memory nature, enabling fast access to data. It is often used in real-time applications such as session management, leaderboards, or caching mechanisms, where quick data retrieval is critical. Additionally, Redis supports data persistence by periodically writing the dataset to disk, balancing memory speed with data reliability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is redis?",
+        "url": "https://redis.io/docs/latest/get-started/",
+        "type": "article"
+      }
+    ]
   },
   "M-EXrTDeAEMz_IkEi-ab4": {
     "title": "In-memory Data Structure Store",
-    "description": "",
-    "links": []
+    "description": "An in-memory database is a purpose-built database that relies primarily on internal memory for data storage. It enables minimal response times by eliminating the need to access standard disk drives (SSDs). In-memory databases are ideal for applications that require microsecond response times or have large spikes in traffic, such as gaming leaderboards, session stores, and real-time data analytics. The terms main memory database (MMDB), in-memory database system (IMDS), and real-time database system (RTDB) also refer to in-memory databases.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Amazon MemoryDB",
+        "url": "https://aws.amazon.com/memorydb/",
+        "type": "article"
+      }
+    ]
   },
   "l2aXyO3STnhbFjvUXPpm2": {
     "title": "Key-value Database",

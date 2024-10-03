@@ -9,7 +9,7 @@ title: 'Developer Relations'
 description: 'Step by step guide to becoming a Developer Advocate in 2024'
 hasTopics: true
 isForkable: false
-isNew: true
+isNew: false
 question:
   title: 'What is DevRel/Developer Relations?'
   description: |

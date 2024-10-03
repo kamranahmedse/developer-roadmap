@@ -8,7 +8,7 @@ briefDescription: 'Step by step guide to learn Git and GitHub in 2024'
 title: 'Learn Git and GitHub'
 description: 'Step by step guide to learn Git and GitHub in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 3330

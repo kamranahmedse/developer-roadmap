@@ -1,3 +1,7 @@
 # Intent
 
-"Intent" in Android is a software mechanism used for late runtime binding between components, such as activities, content providers, and services. It is essentially a passive data structure holding an abstract description of an operation that the Android system is requested to perform. The Intent can be explicit, in which you specify the component to start or  implicit, where you declare a general action to perform, allowing a component from another app to handle it. Implicit intents are often used to request another app's functionality, such as showing a user a location on a map or taking a photo. "Intent Filters" are then used by the components to advertise their capabilities to handle different types of intents.
+Intent in Android is a software mechanism used for late runtime binding between components, such as activities, content providers, and services. It is essentially a passive data structure holding an abstract description of an operation that the Android system is requested to perform.
+
+Visit the following resources to learn more:
+
+- [@official@Intent](https://developer.android.com/reference/android/content/Intent)

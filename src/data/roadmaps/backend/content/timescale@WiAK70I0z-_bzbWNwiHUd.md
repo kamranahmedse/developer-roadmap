@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Timescale Website](https://www.timescale.com/)
 - [@video@Tutorial - TimeScaleDB Explained in 100 Seconds](https://www.youtube.com/watch?v=69Tzh_0lHJ8)
-- [@video@What is time series data?](https://www.youtube.com/watch?v=Se5ipte9DMY)
+- [@video@What is Time Series Data?](https://www.youtube.com/watch?v=Se5ipte9DMY)

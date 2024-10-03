@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@Save data in a local database using Room](https://developer.android.com/training/data-storage/room)
-- [@video@The full beginner guide for Room in Android](https://www.youtube.com/watch?v=bOd3wO0uFr8&t=10s)
+- [@official@Room Database](https://developer.android.com/training/data-storage/room)
+- [@video@The Full Beginner's Guide for Room in Android](https://www.youtube.com/watch?v=bOd3wO0uFr8&t=10s)

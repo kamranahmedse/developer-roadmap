@@ -1,0 +1,3 @@
+# RAG vs Fine-tuning 
+
+RAG (Retrieval-Augmented Generation) and Fine-tuning are two distinct techniques utilized in Natural Language Processing (NLP). RAG introduces an approach where the model retrieves documents and faqs from a database to enhance the content generation process. It enables more factual accuracy and relevant context in the outputs. On the other hand, Fine-tuning involves modifying a pre-trained Neural Network model on a new or different task. Adjustments are made to the model's parameters to enhance performance on the new task. Typically, an AI engineer might use RAG for tasks requiring contextual understanding and factual accuracy, while implementing fine-tuning techniques to leverage existing pre-trained models for optimizing new tasks and projects.

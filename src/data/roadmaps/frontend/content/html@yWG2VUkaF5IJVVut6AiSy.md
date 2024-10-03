@@ -1,6 +1,6 @@
 # HTML
 
-HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.
+HTML (Hypertext Markup Language) is the standard markup language used to create web pages and web applications. It provides a structure for content on the World Wide Web, using a system of elements and attributes to define the layout and content of a document. HTML elements are represented by tags, which browsers interpret to render the visual and auditory elements of a web page. The language has evolved through several versions, with HTML5 being the current standard, introducing semantic elements, improved multimedia support, and enhanced form controls. HTML works in conjunction with CSS for styling and JavaScript for interactivity, forming the foundation of modern web development.
 
 Visit the following resources to learn more:
 

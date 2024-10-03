@@ -1,0 +1,3 @@
+# Image Generation
+
+Image Generation often refers to the process of creating new images from an existing dataset or completely from scratch. For an AI Engineer, understanding image generation is crucial as it is one of the key aspects of machine learning and deep learning related to computer vision. It often involves techniques like convolutional neural networks (CNN), generative adversarial networks (GANs), and autoencoders. These technologies are used to generate artificial images that closely resemble original input, and can be applied in various fields such as healthcare, entertainment, security and more.
