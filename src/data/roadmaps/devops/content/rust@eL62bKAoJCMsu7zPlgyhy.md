@@ -7,6 +7,7 @@ Visit the following resources to learn more:
 - [@official@The Rust Programming Language - online book](https://doc.rust-lang.org/book/)
 - [@article@Comprehensive Rust by Google - Learn Rust in 4 Days](https://google.github.io/comprehensive-rust/)
 - [@article@Rust Katas - Small, interactive Rust exercises](https://rustlings.cool/)
+- [@course@Rust by Practice - Interactive Rust Course](https://practice.course.rs/)
 - [@video@The Rust Programming Book - Video Version](https://youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8)
 - [@video@Full Crash Rust Tutorial for Beginners](https://www.youtube.com/watch?v=R33h77nrMqc&list=PLPoSdR46FgI412aItyJhj2bF66cudB6Qs)
 - [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)
