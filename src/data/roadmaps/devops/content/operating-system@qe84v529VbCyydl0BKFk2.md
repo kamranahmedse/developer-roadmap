@@ -4,7 +4,8 @@ Operating systems (OS) are fundamental software that manage computer hardware an
 
 Visit the following resources to learn more:
 
-- [@article@All you need to know about OS.](https://www.javatpoint.com/os-tutorial)
+- [@article@Operating Systems - Wiki](https://en.wikipedia.org/wiki/Operating_system)
+- [@article@All you need to know about OS.](https://www.javatpoint.com/operating-system)
 - [@article@Learn Operating Systems](https://www.tutorialspoint.com/operating_system/os_overview.htm)
 - [@video@What are Operating Systems?](https://www.youtube.com/watch?v=pVzRTmdd9j0)
-- [@video@Operating Systems!](https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O)
+- [@video@Operating Systems](https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O)
