@@ -5,6 +5,6 @@ Apollo GraphQL is a comprehensive platform for building and managing GraphQL-bas
 Visit the following resources to learn more:
 
 - [@official@Apollo Website](https://www.apollographql.com)
-- [@article@Official Docs](https://www.apollographql.com/docs/)
-- [@roadmap@](https://roadmap.sh/graphql)
+- [@official@Apollo Docs](https://www.apollographql.com/docs/)
+- [@roadmap@Visit Dedicated GraphQL Roadmap](https://roadmap.sh/graphql)
 - [@feed@Explore top posts about Apollo](https://app.daily.dev/tags/apollo?ref=roadmapsh)

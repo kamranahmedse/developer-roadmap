@@ -4,4 +4,8 @@ CSS preprocessors are scripting languages that extend the capabilities of standa
 
 Visit the following resources to learn more:
 
+- [@official@Sass Website](https://sass-lang.com/)
+- [@official@Less Website](https://lesscss.org/)
+- [@official@Stylus Website](https://stylus-lang.com/)
+- [@official@PostCSS Website](https://postcss.org/)
 - [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)

@@ -4,5 +4,6 @@ Vitest is a fast and lightweight testing framework for JavaScript and TypeScript
 
 Visit the following resources to learn more:
 
-- [@official@Vitest Website](https://vitest.dev/)
-- [@video@Vitets simplified](https://www.youtube.com/watch?v=snCLQmINqCU)
+- [@official@Vitest - Next Generation Testing Framework](https://vitest.dev/)
+- [@official@Vitest Documentation](https://vitest.dev/guide/)
+- [@video@Vitest Simplified](https://www.youtube.com/watch?v=snCLQmINqCU)

@@ -4,7 +4,7 @@ ESLint is a popular open-source static code analysis tool for identifying and fi
 
 Visit the following resources to learn more:
 
-- [@official@ESLint Official Website](https://eslint.org/)
+- [@official@ESLint Website](https://eslint.org/)
 - [@article@What is ESLint and How to Use ESLint to Detect and Fix Code for JavaScript Projects](https://2coffee.dev/en/articles/what-is-eslint-and-how-to-use-eslint-to-detect-fix-code-for-javascript-projects)
 - [@video@ESLint Quickstart - find errors automatically](https://www.youtube.com/watch?v=qhuFviJn-es)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

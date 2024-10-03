@@ -4,7 +4,8 @@ Vite is a modern build tool and development server designed for fast and lean de
 
 Visit the following resources to learn more:
 
-- [@article@Vite Website](https://vitejs.dev)
+- [@official@Vite - The Build Tool for the Web](https://vitejs.dev)
+- [@official@Vite Documentation](https://vitejs.dev/guide/)
 - [@video@Vite Crash Course](https://youtu.be/LQQ3CR2JTX8)
 - [@video@Vite Tutorial Video](https://www.youtube.com/watch?v=VAeRhmpcWEQ)
 - [@feed@Explore top posts about Vite](https://app.daily.dev/tags/vite?ref=roadmapsh)

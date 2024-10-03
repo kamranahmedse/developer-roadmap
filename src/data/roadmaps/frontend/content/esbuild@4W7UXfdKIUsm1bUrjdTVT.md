@@ -4,7 +4,7 @@ esbuild is a high-performance JavaScript bundler and minifier designed for speed
 
 Visit the following resources to learn more:
 
-- [@official@Esbuild Official Website](https://esbuild.github.io/)
+- [@official@Esbuild Website](https://esbuild.github.io/)
 - [@course@Let's Learn esbuild! (with Sunil Pai) — Learn With Jason](https://www.youtube.com/watch?v=KLdF1yu_bmI)
 - [@video@What Is ESBuild?](https://www.youtube.com/watch?v=ZY8Vu8cbWF0)
 - [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

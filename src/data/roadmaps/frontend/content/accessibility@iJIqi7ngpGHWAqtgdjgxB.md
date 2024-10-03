@@ -4,6 +4,6 @@ Website accessibility is the practice of designing and developing websites that 
 
 Visit the following resources to learn more:
 
-- [@video@Complete Playlist on Accessibility](https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 - [@article@Accessibility for Developers by Google](https://web.dev/accessibility)
+- [@video@Complete Playlist on Accessibility](https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 - [@feed@Explore top posts about Accessibility](https://app.daily.dev/tags/accessibility?ref=roadmapsh)

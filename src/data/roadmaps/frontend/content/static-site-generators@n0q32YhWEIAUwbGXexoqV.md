@@ -4,7 +4,7 @@ Static site generators (SSGs) are tools that create HTML websites from raw data 
 
 Visit the following resources to learn more:
 
-- [@article@What is a static site generator?](https://www.cloudflare.com/learning/performance/static-site-generator/)
+- [@article@What is a Static Site Generator?](https://www.cloudflare.com/learning/performance/static-site-generator/)
 - [@article@Get Back to Basics With Static Website Generators](https://thenewstack.io/get-back-basics-static-website-generators/)
 - [@video@What is a static site generator](https://www.youtube.com/watch?v=Qms4k6y7OgI)
 - [@feed@Explore top posts about Web Development](https://app.daily.dev/tags/webdev?ref=roadmapsh)

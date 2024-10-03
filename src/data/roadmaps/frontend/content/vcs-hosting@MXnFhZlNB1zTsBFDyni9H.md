@@ -4,8 +4,8 @@ Repo hosting services provide platforms for storing, managing, and collaborating
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & Github](/git-github)
+- [@roadmap@Learn Git & Github](https://roadmap.sh/git-github)
 - [@official@Codeberg Website](https://codeberg.org/)
 - [@official@GitHub Website](https://github.com)
-- [@official@GitLab Website](https://gitlab.com)
+- [@official@GitLab Website](https://about.gitlab.com)
 - [@article@BitBucket Website](https://bitbucket.com)
