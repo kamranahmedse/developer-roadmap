@@ -1,1 +1,3 @@
 # Cut-off Dates / Knowledge
+
+OpenAI models have a knowledge cutoff date, meaning they only have access to information available up until a specific time. For example, my knowledge is up to date until September 2023. As a result, I may not be aware of recent developments, events, or newly released technology. Additionally, these models don’t have real-time internet access, so they can't retrieve or update information beyond their training data. This can limit the ability to provide the latest details or react to rapidly changing topics.

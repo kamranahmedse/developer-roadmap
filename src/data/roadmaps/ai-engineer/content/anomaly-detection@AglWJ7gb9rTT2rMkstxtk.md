@@ -1,1 +1,3 @@
 # Anomaly Detection
+
+Embeddings transform complex data (like text or behavior) into numerical vectors, capturing relationships between data points. These vectors are stored in a vector database, which allows for efficient similarity searches. Anomalies can be detected by measuring the distance between a data point's vector and its nearest neighbors—if a point is significantly distant, it's likely anomalous. This approach is scalable, adaptable to various data types, and effective for tasks like fraud detection, predictive maintenance, and cybersecurity.

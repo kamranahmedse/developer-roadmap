@@ -1,1 +1,3 @@
 # Bias and Fareness
+
+Bias and fairness in AI arise when models produce skewed or unequal outcomes for different groups, often reflecting imbalances in the training data. This can lead to discriminatory effects in critical areas like hiring, lending, and law enforcement. Addressing these concerns involves ensuring diverse and representative data, implementing fairness metrics, and ongoing monitoring to prevent biased outcomes. Techniques like debiasing algorithms and transparency in model development help mitigate bias and promote fairness in AI systems.
