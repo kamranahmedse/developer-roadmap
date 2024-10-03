@@ -21,8 +21,8 @@ export type ListLeaderboardStatsResponse = {
     currentMonth: LeaderboardUserDetails[];
   };
   referrals: {
-    currentMonth: LeadeboardUserDetails[];
-    lifetime: LeadeboardUserDetails[];
+    currentMonth: LeaderboardUserDetails[];
+    lifetime: LeaderboardUserDetails[];
   };
 };
 

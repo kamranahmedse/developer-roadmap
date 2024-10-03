@@ -24,7 +24,7 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
           Leaderboard
         </h1>
 
-        <div className="mt-8 grid gap-2 md:grid-cols-2">
+        <div className="grid gap-2 sm:gap-3 md:grid-cols-2">
           <LeaderboardLane
             title="Longest Visit Streak"
             tabs={[
@@ -76,42 +76,6 @@ export function LeaderboardPage(props: LeaderboardPageProps) {
               },
             ]}
           />
-        </div>
-        <div className="grid gap-2 sm:gap-3 md:grid-cols-2">
-          <LeaderboardLane
-            title="Longest Visit Streak"
-            tabs={[
-              {
-                title: 'Active',
-                users: stats.streaks?.active || [],
-                emptyIcon: <Zap className="size-16 text-gray-300" />,
-                emptyText: 'No users with streaks yet',
-              },
-              {
-                title: 'Lifetime',
-                users: stats.streaks?.lifetime || [],
-                emptyIcon: <Zap className="size-16 text-gray-300" />,
-                emptyText: 'No users with streaks yet',
-              },
-            ]}
-          />
-          <LeaderboardLane
-            title="Projects Completed"
-            tabs={[
-              {
-                title: 'This Month',
-                users: stats.projectSubmissions.currentMonth,
-                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                emptyText: 'No projects submitted this month',
-              },
-              {
-                title: 'Lifetime',
-                users: stats.projectSubmissions.lifetime,
-                emptyIcon: <FolderKanban className="size-16 text-gray-300" />,
-                emptyText: 'No projects submitted yet',
-              },
-            ]}
-          />
           <LeaderboardLane
             title="Top Contributors"
             subtitle="Past 2 weeks"
@@ -150,7 +114,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   return (
     <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
       <div className="mb-3 flex items-center justify-between gap-2 px-3 py-3">
-        <h3 className="text-base font-medium">
+        <h3 className="text-sm font-medium">
           {title}{' '}
           {subtitle && (
             <span className="ml-1 text-sm font-normal text-gray-400">
