@@ -1,8 +1,10 @@
-# Evaluating Available Memory
+# Monitoring System Memory Usage in Linux
 
-When running several applications in a Linux environment, constant tracking of system health is crucial for smooth operations. Evaluating available memory as part of a server review is a common practice for system administrators. This involves using various command-line tools provided by Linux, such as `free`, `vmstat`, and `top`. These can assist in monitoring memory usage and performance metrics, ensuring systems are not overloaded, and adequate resources are available for important applications.
+Maintaining optimal system performance is crucial when running multiple applications in a Linux environment. Evaluating available memory is a common practice for system administrators to ensure their servers are not overloaded and have adequate resources for critical applications.
 
-The `free` command, for instance, gives a summary of the overall memory usage including total used and free memory, swap memory and buffer/cache memory. Here's an example:
+Linux provides several command-line tools to help monitor memory usage and performance metrics, such as `free`, `vmstat`, and `top`. These utilities can provide valuable insights into the overall memory usage, including total used and free memory, swap memory, and buffer/cache memory.
+
+For example, the `free` command offers a summary of the current memory usage on your system. Here's an example output on an Ubuntu Linux system:
 
 ```bash
 $ free -h
@@ -11,4 +13,4 @@ Mem:           15Gi       10Gi       256Mi       690Mi       5.3Gi       4.2Gi
 Swap:         8.0Gi       1.3Gi       6.7Gi
 ```
 
-In this output, the '-h' option is used to present the results in a human-readable format. Understanding the state of memory usage in your Linux server can help maintain optimal server performance and troubleshoot any potential issues.
+In this output, the `-h` option is used to display the results in a human-readable format. The `total` column shows the total amount of memory available, while the `used` and `free` columns indicate the current usage and available memory, respectively. The `shared`, `buff/cache`, and `available` columns provide additional details about memory usage.

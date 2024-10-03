@@ -1,23 +1,24 @@
-# Environment Variables Under Shell Basics
+# Environment Variables in Linux
 
-In Linux, environment variables are dynamic named values that can affect the behavior of running processes in a shell. They exist in every shell session. A shell session's environment includes, but is not limited to, the user's home directory, command search path, terminal type, and program preferences.
+In Linux, environment variables are dynamic named values that can affect the behavior of running processes in a shell. They exist in every shell session and provide a simple way to share configuration settings between multiple applications and processes.
 
-Environment variables help to contribute to the fantastic and customizable flexibility you see in Unix systems. They provide a simple way to share configuration settings between multiple applications and processes in Linux.
+Environment variables help to contribute to the flexibility and customization you see in Linux systems. They allow you to store and access important system settings, user preferences, and other configuration data.
 
-You can use the 'env' command to list all the environment variables in a shell session. If you want to print a particular variable, such as the PATH variable, you can use the 'echo $PATH' command.
+To list all the environment variables in a shell session, you can use the `env` command. To print the value of a specific variable, such as the `PATH` variable, you can use the `echo $VARIABLE_NAME` command.
 
-Here's an example of how you would do that:
+Here's an example on Ubuntu Linux:
 
 ```bash
 # List all environment variables
 $ env
 
-# Print a particular variable like PATH
+# Print the value of the PATH variable
 $ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
-Remember, every shell, such as Bourne shell, C shell, or Korn shell in Unix or Linux has different syntax and semantics to define and use environment variables.
+Remember, different shells (e.g., Bash, Zsh, Fish) may have slightly different syntax and semantics for defining and using environment variables.
 
-Learn more from the following resources:
+To learn more, check out the following resources:
 
 - [@article@Environment Variables in Linux](https://labex.io/tutorials/linux-environment-variables-in-linux-385274)

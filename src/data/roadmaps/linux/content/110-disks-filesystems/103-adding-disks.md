@@ -1,22 +1,22 @@
-# Adding Disks
+# Adding Disks in Linux
 
-In Linux, hard disks and portable drives are managed and controlled through a series of directories and files, commonly referred to as the Linux Filesystem. When you add new disks in Linux, you need to prepare them before they can be used.
+In Linux, hard disks and portable drives are managed and controlled through the Linux Filesystem, a series of directories and files. When you add new disks in Linux, you need to prepare them before they can be used.
 
-The process involves creating partitions on the disk, creating filesystem on the partitions, and then mounting the filesystems to directories in your system’s directory tree. This becomes important especially when working with multiple disk drives or large data storage units in order to create a seamless user experience.
+The process involves creating partitions on the disk, creating a filesystem on the partitions, and then mounting the filesystems to directories in your system's directory tree. This is particularly important when working with multiple disk drives or large data storage units to create a seamless user experience.
 
-The following are common commands to manage disks:
+Here are the common commands to manage disks in Ubuntu Linux:
 
-- Use `lsblk` to list all block devices (disk and partitions).
-- Use `fdisk /dev/sdX` to create a new partition on a disk.
-- Use `mkfs.ext4 /dev/sdX1` to create a new filesystem on a partition.
-- Use `mount /dev/sdX1 /mount/point` to mount a filesystem to a directory.
+- Use `lsblk` to list all block devices (disks and partitions).
+- Use `sudo fdisk /dev/sdb` to create a new partition on a disk (replace `/dev/sdb` with your disk identifier).
+- Use `sudo mkfs.ext4 /dev/sdb1` to create a new ext4 filesystem on a partition (replace `/dev/sdb1` with your partition identifier).
+- Use `sudo mount /dev/sdb1 /roadmap/mnt` to mount a filesystem to a directory (replace `/roadmap/mnt` with your preferred mount point).
 
 ```shell
-# example commands to add new disk
-lsblk                     # list all disks and partitions
-sudo fdisk /dev/sdb       # let's suppose new disk is /dev/sdb
-sudo mkfs.ext4 /dev/sdb1  # make filesystem(e.g., ext4) on partition 1
-sudo mount /dev/sdb1 /mnt # mount new filesystem to /mnt directory
-``` 
+# Example commands to add a new disk
+lsblk                         # List all disks and partitions
+sudo fdisk /dev/sdb           # Create a new partition on /dev/sdb
+sudo mkfs.ext4 /dev/sdb1      # Create an ext4 filesystem on /dev/sdb1
+sudo mount /dev/sdb1 /roadmap/mnt  # Mount the new filesystem to /roadmap/mnt
+```
 
-Remember to replace `/dev/sdb` and `/dev/sdb1` with your actual disk and partition identifiers. The mount point `/mnt` may also be replaced with any other directory as per your system's structure and preference.
+Remember to replace the disk and partition identifiers (`/dev/sdb` and `/dev/sdb1`) with your actual disk and partition names. The mount point `/roadmap/mnt` can be replaced with any other directory as per your system's structure and preference.

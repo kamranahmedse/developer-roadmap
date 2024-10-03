@@ -1,13 +1,21 @@
-# Linux File Transfer under Networking
+# Linux File Transfer over Networks
 
-In Linux, file transfer is an act of copying or moving a file from one computer to another over a network connection. This concept is essential for system administrators and end-users who require the ability to share files between systems or networks.
+In the Linux operating system, file transfer refers to the process of copying or moving files from one computer to another over a network connection. This capability is essential for system administrators and end-users who need to share files between systems or networks.
 
-Linux provides several command-line tools and applications for network-based file transfers. These tools support various standard protocols such as FTP, HTTP, SCP, SFTP, and NFS. Some of the most well-known commands for file transfer include `scp`, `rsync`, and `wget`.
+Linux offers several command-line tools and applications for network-based file transfers, supporting various standard protocols such as FTP, HTTP, SCP, SFTP, and NFS. Some of the most commonly used commands for file transfer include `scp`, `rsync`, and `wget`.
 
-For instance, when transferring a file from a local machine to a remote server, the `scp` command can be utilized as follows:
+For example, to transfer a file from a local machine to a remote server using the `scp` (Secure Copy) command on Ubuntu Linux, you can run the following command:
+
 ```bash
-scp /path/to/local/file username@remote:/path/to/destination
+scp /path/to/local/file roadmap@example.com:/path/to/destination
 ```
-This command would copy the file to the designated remote system.
 
-Understanding and efficiently using these tools can make the task of file sharing over networks streamlined, easier, and more secure.
+This command will securely copy the specified local file to the designated remote system.
+
+The `rsync` command is another powerful tool for efficient file transfers, as it can perform incremental updates and minimize the amount of data transferred. To use `rsync` to copy a directory from a local machine to a remote server, you can run:
+
+```bash
+rsync -avz /path/to/local/directory roadmap@example.com:/path/to/remote/directory
+```
+
+The `-avz` options ensure that the transfer is recursive, preserves file attributes, and compresses the data for faster transfer.

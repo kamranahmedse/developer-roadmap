@@ -1,13 +1,13 @@
-# Containerization 
+# Containerization
 
-Containerization is a virtualization method that involves encapsulating an application in a container with its own isolated operating environment. This advanced method allows apps to run reliably and quickly when moved from one computing environment to another. In Linux, this technology can be utilized using various open-source platforms like Docker and Kubernetes.
+Containerization is a virtualization technique that encapsulates an application and its dependencies within a self-contained, isolated environment. This approach allows applications to run consistently and efficiently across different computing environments. In the Linux ecosystem, popular open-source platforms like Docker and Kubernetes are used to leverage containerization.
 
-Containers are often compared with virtual machines (VMs). However, unlike VMs which need an entire operating system to run an application, a container shares the host system’s user space. That’s why they are lightweight and faster. 
+Containers are often contrasted with virtual machines (VMs). Unlike VMs, which require a complete operating system to run an application, containers share the host system's user space, making them lightweight and faster to start up.
 
-In Linux, Docker is a popular tool used for containerization. Below is a basic example of how you would run a container in Docker:
+In Linux, Docker is a widely-used tool for containerization. Here's a basic example of how to run a container in Docker on Ubuntu Linux:
 
 ```bash
-docker run -it ubuntu bash
+docker run -it ubuntu:24.04 bash
 ```
 
-This command pulls the Ubuntu image from Docker Hub and runs it as a container on your system, providing you with an interactive terminal (`-it`) inside the container. This is just a simple use case, and Docker can be used for managing complex applications involving many containers.
+This command pulls the Ubuntu Linux image from Docker Hub and runs it as a container on your system, providing you with an interactive terminal (`-it`) inside the container. This is a simple use case, but Docker can be used to manage complex applications involving multiple containers.

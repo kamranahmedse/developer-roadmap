@@ -1,10 +1,19 @@
-# Traceroute 
+# Traceroute
 
-Traceroute is a network diagnostic tool used widely in Linux systems for troubleshooting. It is designed to display the path that packets take from the system where traceroute is run to a specified destination system or website. It's used to identify routing problems, offer latency measurement, and figure out the network structure as packets journey across the internet.
+Traceroute is a powerful network diagnostic tool widely used in Linux systems for troubleshooting network connectivity issues. It helps identify the path that network packets take from the local system to a specified destination, such as a website or remote server.
 
-Each jump along the route is tested multiple times (the default is 3 but this can be changed), and the round-trip time for each packet is displayed. If certain packets are failing to reach their destination, traceroute can help diagnose where the failure is occurring.
+Traceroute is particularly useful for:
 
-Tracing route in Linux can be achieved by executing the `traceroute` command which allows you to discover the routes that internet protocol packets follow when traveling to their destination.
+1. **Routing Troubleshooting**: It can help identify where in the network path a problem is occurring, such as a slow or unresponsive hop.
+2. **Latency Measurement**: Traceroute displays the round-trip time (RTT) for each hop along the network path, allowing you to measure the latency between your system and the destination.
+3. **Network Structure Visualization**: By tracing the route, you can gain insights into the network topology and the number of intermediate hops between your system and the destination.
+
+To use traceroute on a Ubuntu Linux system, simply run the following command in the terminal:
+
 ```bash
-$ traceroute www.example.com
+traceroute www.roadmap.sh
 ```
+
+This will display the network path and the round-trip time for each hop along the way to the `www.roadmap.sh` website.
+
+Traceroute works by sending a series of UDP packets with incrementing Time-to-Live (TTL) values. As the packets traverse the network, each router along the path decrements the TTL value and, when the TTL reaches 0, the router sends an ICMP "time exceeded" message back to the source. Traceroute uses these ICMP messages to determine the network path and measure the latency.

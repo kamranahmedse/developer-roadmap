@@ -1,21 +1,21 @@
-# Redirects In Shell Basics
+# Redirects in Shell Basics
 
-The shell in Linux provides a robust way of managing input and output streams of a command or program, this mechanism is known as Redirection. Linux being a multi-user and multi-tasking operating system, every process typically has 3 streams opened:
+Linux shell provides a powerful mechanism for managing input and output streams of commands or programs, known as Redirection. As a multi-user and multi-tasking operating system, every process in Linux typically has three open streams:
 
-- Standard Input (stdin) - This is where the process reads its input from. The default is the keyboard.
-- Standard Output (stdout) - The process writes its output to stdout. By default, this means the terminal.
-- Standard Error (stderr) - The process writes error messages to stderr. This also goes to the terminal by default.
+- Standard Input (stdin) - The default source of input for a process, usually the keyboard.
+- Standard Output (stdout) - The default destination for a process's output, usually the terminal.
+- Standard Error (stderr) - The default destination for a process's error messages, also usually the terminal.
 
-Redirection in Linux allows us to manipulate these streams, advancing the flexibility with which commands or programs are run. Besides the default devices (keyboard for input and terminal for output), the I/O streams can be redirected to files or other devices.
+Redirection in Linux allows you to manipulate these streams, enhancing the flexibility of running commands or programs. You can redirect the I/O streams to files or other devices, instead of the default devices (keyboard for input, terminal for output).
 
-For example, if you want to store the output of a command into a file instead of printing it to the console, we can use the '>' operator.
+For example, to store the output of a command in a file instead of printing it to the console, you can use the '>' operator:
 
 ```bash
-ls -al > file_list.txt
+roadmap@ubuntu:~$ ls -al > file_list.txt
 ```
 
-This command will write the output of 'ls -al' into 'file_list.txt', whether or not the file initially existed. It will be created if necessary, and if it already exists – it will be overwritten.
+This command will write the output of 'ls -al' into the 'file_list.txt' file. If the file doesn't exist, it will be created; if it does exist, it will be overwritten.
 
-Learn more from the following resources:
+Learn more about redirection in Linux from the following resource:
 
 - [@article@Logical Commands and Redirection](https://labex.io/tutorials/linux-logical-commands-and-redirection-387332)

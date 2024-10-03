@@ -1,18 +1,20 @@
-# Server Review 
+# Server Review
 
-The process of reviewing a server in Linux involves assessing the server's performance, security, and configuration to identify areas of improvement or any potential issues. The scope of the review can include checking security enhancements, examining log files, reviewing user accounts, analyzing the server’s network configuration, and checking its software versions.
+Conducting a comprehensive server review is a crucial task for System Administrators and DevOps professionals to ensure optimal performance, security, and reliability of Linux-based servers. This process involves assessing the server's configuration, security, and overall health to identify areas for improvement.
 
-Linux, known for its stability and security, has become a staple on the back-end of many networks and servers worldwide. Depending on the distribution you are using, Linux offers multiple tools and commands to perform comprehensive server reviews.
+In the Linux ecosystem, various tools and commands are available to facilitate the server review process. Depending on the Linux distribution, these tools may vary, but the core functionality remains consistent.
+
+For instance, on Ubuntu Linux, you can use the following commands to gather essential information about your server:
 
 ```bash
-# A command often used for showing memory information
-free -m
+# Display memory usage information
+roadmap@server:~$ free -m
 
-# A command for showing disk usage
-df -h
+# Show disk usage
+roadmap@server:~$ df -h
 
-# A command for showing CPU load
-uptime
+# Display CPU load and system uptime
+roadmap@server:~$ uptime
 ```
 
-It is a critical task for System Administrators and DevOps professionals to routinely conduct server reviews to ensure the server's optimal performance, security, and reliability.
+These commands provide valuable insights into the server's resource utilization, allowing you to identify potential bottlenecks or areas that require optimization.

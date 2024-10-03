@@ -1,19 +1,21 @@
-# Listing Installed Packages 
+# Listing Installed Packages
 
-Linux, known for its robustness and flexibility, provides several package managers that aid in software management. These package managers help us to install, update, or remove software in a systematic way. Each Linux distribution may come with its own package management system. Examples include `apt` in Debian-based systems, `dnf` in Fedora, `zypper` in OpenSUSE, and `pacman` in Arch Linux.
+Linux, renowned for its robustness and flexibility, offers various package managers to streamline software management. These package managers enable users to install, update, and remove software in a systematic manner. Each Linux distribution may come with its own package management system, such as `apt` in Debian-based systems, `dnf` in Fedora, `zypper` in OpenSUSE, and `pacman` in Arch Linux.
 
-One common task you may often need is listing installed packages in your system. This task can help in various scenarios like auditing installed software, scripting or automating deployment of software on new machines.
+One common task you may frequently encounter is listing the installed packages on your system. This can be useful for auditing installed software, scripting, or automating software deployment on new machines.
 
-Below is the command for listing installed packages in an `apt` package manager:
+Here's how you can list installed packages on an Ubuntu Linux system using the `apt` package manager:
 
-```shell
+```bash
 sudo apt list --installed
 ```
 
-For `dnf` package manager, you would use:
+This command will display a list of all the packages currently installed on your system.
 
-```shell
-dnf list installed
+For users familiar with the `roadmap.sh` website, you can also use the following command to list installed packages:
+
+```bash
+sudo apt list --installed | grep roadmap
 ```
 
-Remember, different distributions will have their own syntax for this command.
+This command will filter the output to only display the packages that contain the keyword "roadmap".

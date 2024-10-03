@@ -1,8 +1,10 @@
-# Command Help
+# Command Help in Linux
 
-Command help in Linux is an essential feature that enables users to navigate through Linux shell commands with ease. This feature displays brief information on how to use these commands. For instance, typing 'man' before any command brings up the manual entry for that command which explains what the command does, its syntax and the available options. Another popular command is 'help' which is more suited for shell built-in functions, giving a brief description about each. These command line services are extremely beneficial for beginners trying to learn how to use the Linux shell, as well as seasoned users who may need to look up the specifics of seldom used commands. You can also get a TLDR of a command with example usage by using the TLDR package.
+Linux command help is a crucial feature that enables users to navigate the shell commands with ease. This feature provides brief information on how to use these commands. Typing `man` before any command displays the manual entry for that command, explaining its functionality, syntax, and available options. Another popular command is `help`, which is more suitable for shell built-in functions, offering a concise description of each.
 
-To view the manual entry for any command, use:
+These command-line services are extremely beneficial for both beginners learning to use the Linux shell and seasoned users who need to look up the specifics of rarely used commands. You can also get a quick overview of a command's usage with examples by using the `tldr` package.
+
+To view the manual entry for a command, use:
 
 ```bash
 man [command]
@@ -14,7 +16,7 @@ For built-in shell functions, use:
 help [command]
 ```
 
-To view examples with TLDR, use:
+To view examples with `tldr`, use:
 
 ```bash
 tldr [command]

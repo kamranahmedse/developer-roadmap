@@ -1,15 +1,17 @@
-# Pipe Commands 
+# Pipe Commands
 
-The pipe (`|`) is a powerful feature in Linux used to connect two or more commands together. This mechanism allows output of one command to be "piped" as input to another. With regards to text processing, using pipe is especially helpful since it allows you to manipulate, analyze, and transform text data without the need to create intermediary files or programs.
+Pipes (`|`) are a powerful feature in Linux that allow you to connect multiple commands together. This mechanism enables the output of one command to be used as the input for another command. When it comes to text processing, using pipes is particularly helpful as it allows you to manipulate, analyze, and transform text data without the need to create intermediate files or programs.
 
-Here is a simple example of piping two commands, `ls` and `grep`, to list all the text files in the current directory:
+Here's a simple example of using pipes to list all the text files in the current directory on a Ubuntu Linux system:
 
 ```bash
-ls | grep .txt
+roadmap@ubuntu:~$ ls | grep .txt
+example.txt
+document.txt
 ```
 
-In this example, `ls` lists the files in the current directory and `grep .txt` filters out any files that don't end with `.txt`. The pipe command, `|`, takes the output from `ls` and uses it as the input to `grep .txt`. The output of the entire command is the list of text files in the current directory.
+In this example, the `ls` command lists all the files in the current directory, and the `grep .txt` command filters the output to only include files that end with `.txt`. The pipe `|` takes the output from `ls` and uses it as the input to `grep .txt`. The final output is the list of text files in the current directory.
 
-Visit the following resources to learn more:
+To learn more about pipes and redirection in Linux, please refer to the following resource:
 
 - [@article@Piping and Redirection](https://ryanstutorials.net/linuxtutorial/piping.php#piping)

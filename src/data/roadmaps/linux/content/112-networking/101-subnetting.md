@@ -1,15 +1,15 @@
-# Subnetting 
+# Subnetting in Linux
 
-Subnetting is a critical process in Linux networking. This practice involves dividing a network into two or more networks, known as subnets. Subnetting helps improve network performance and security. In Linux, subnetting can be managed within the context of the Internet Protocol (IP) addressing scheme, where it's crucial in organizing and managing IP addresses within a network, preventing IP conflicts and efficiently utilizing IP address ranges. This technique is invaluable in large complex Linux networking environments where IP address management can become overwhelmingly intricate.
+Subnetting is a fundamental concept in Linux networking. It involves dividing a network into smaller subnetworks, known as subnets, to improve network performance and security. In Linux, subnetting is managed within the context of the Internet Protocol (IP) addressing scheme, where it's crucial for organizing and managing IP addresses within a network, preventing IP conflicts, and efficiently utilizing IP address ranges. This technique is invaluable in large, complex Linux networking environments where IP address management can become increasingly intricate.
 
-Generally, the following commands are used in Linux for subnetting:
+Here's how you can work with subnetting in Linux, using Ubuntu Linux as an example:
 
-```shell
-# Display current routing table
-$ route -n 
+```bash
+# Display the current routing table
+$ route -n
 
 # Add a new subnet
-$ route add -net xxx.xxx.xxx.x/xx gw yyy.yyy.yyy.y
+$ sudo route add -net 192.168.2.0/24 gw 192.168.1.1
 ```
 
-Please replace the `xxx.xxx.xxx.x/xx` with your desired subnet address and network mask and replace `yyy.yyy.yyy.y` with the intended default gateway for the subnet.
+In the above example, replace `192.168.2.0/24` with your desired subnet address and network mask, and `192.168.1.1` with the intended default gateway for the subnet.

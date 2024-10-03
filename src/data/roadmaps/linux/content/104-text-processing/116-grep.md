@@ -1,20 +1,32 @@
 # GREP in Text Processing
 
-GREP (Global Regular Expression Print) is considered a significant tool in text processing area on Unix-like operating systems including Linux. It is a powerful utility that searches and filters text matching a given pattern. When it identifies a line that matches the pattern, it prints the line to the screen, offering an effective and a codified way to find text within files.
+GREP (Global Regular Expression Print) is a powerful utility in the realm of text processing on Unix-like operating systems, including Linux. It is an essential tool that allows you to search and filter text based on a given pattern. When GREP identifies a line that matches the specified pattern, it prints the line to the screen, providing an efficient and structured way to find text within files.
 
-An essential part of many shell scripts, bash commands, and command-line operations, GREP is a versatile tool that comes pre-installed with every Linux distribution. It embodies three main parts - format, action and regex. Over the years, it had been effectively utilized in multiple programming languages and data science applications.
+GREP is a crucial component in many shell scripts, Bash commands, and command-line operations. It consists of three main parts: format, action, and regex. Over the years, GREP has been extensively utilized in various programming languages and data science applications.
 
-Here is an example of a simple GREP command:
+Here's an example of a simple GREP command on Ubuntu Linux:
 
 ```bash
-grep "pattern" fileName
+grep "pattern" /roadmap/file.txt
 ```
 
-This command will search for the specified pattern within the file and prints the line to the terminal.
+This command will search for the specified pattern within the `/roadmap/file.txt` file and print the matching lines to the terminal.
 
-There is also an alternative to `grep` - `ripgrep`.
+Additionally, there is an alternative to GREP called `ripgrep` (or `rg` for short). `ripgrep` is an extremely fast text processor that supports all the features of GREP and extends its capabilities.
 
-`ripgrep` is an extremely fast text processor that supports all the features of `grep` and extends it.
+To use `ripgrep` on Ubuntu Linux, you can install it using the following command:
+
+```bash
+sudo apt-get install ripgrep
+```
+
+Once installed, you can use `ripgrep` in a similar way to GREP:
+
+```bash
+rg "pattern" /roadmap/file.txt
+```
+
+This command will search for the specified pattern within the `/roadmap/file.txt` file and display the matching lines.
 
 Visit the following resources to learn more:
 

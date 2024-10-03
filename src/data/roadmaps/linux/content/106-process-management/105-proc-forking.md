@@ -1,30 +1,31 @@
 # Process Forking in Process Management
 
-Process forking is a fundamental concept under process management in Linux systems. The term refers to the mechanism where a running process (parent process) can generate a copy of itself (child process), enabling concurrent execution of both processes. This is facilitated by the 'fork' system call. It is a prominent aspect in understanding the creation and control of processes in a Linux environment.
+Process forking is a fundamental concept in process management on Linux systems. It refers to the mechanism where a running process (parent process) can create a copy of itself (child process), enabling concurrent execution of both processes. This is facilitated by the `fork()` system call, which is a crucial aspect in understanding the creation and control of processes in a Linux environment.
 
-The child process created by fork is a nearly perfect copy of the parent process with exception to just a few values including the process ID and parent process ID. Any changes made in the child process does not affect the parent process, and vice versa.
+When a child process is created using `fork()`, it is a nearly identical copy of the parent process, with a few exceptions. The child process has a unique process ID (PID) and a different parent process ID (PPID) compared to the parent process. Any changes made in the child process do not affect the parent process, and vice versa.
 
-Here's a basic code snippet of proc forking in C:
+Here's a basic code example of process forking in C, using Ubuntu Linux as the target system:
 
 ```c
-#include<sys/types.h>
-#include<unistd.h>
-#include<stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
 
-int main()
-{
+int main() {
     pid_t child_pid;
 
-    // Try creating a child process
+    // Create a child process
     child_pid = fork();
 
-    // If a child is successfully created
-    if(child_pid >= 0)
-    printf("Child created with PID: %d\n", child_pid);
-    else
-    printf("Fork failed\n");
+    // Check if the child process was created successfully
+    if (child_pid >= 0) {
+        printf("Child process created with PID: %d\n", child_pid);
+    } else {
+        printf("Fork failed\n");
+    }
+
     return 0;
 }
 ```
 
-In this snippet, `fork()` is used to created a new child process. If the process creation is successful, fork() returns the process ID of the child process. If unsuccessful, it returns a negative value.
+In this example, the `fork()` system call is used to create a new child process. If the process creation is successful, `fork()` returns the process ID of the child process. If the operation fails, it returns a negative value.

@@ -1,24 +1,32 @@
-# Linux Swap under Disks Filesystems
+# Linux Swap: Optimizing Disk and Filesystem Performance
 
-Swap space in Linux is used when the amount of physical memory (RAM) is full. If the system needs more memory resources and the physical memory is full, inactive pages in memory are moved to the swap space. Swap space is a portion of a hard disk drive (HDD) that is used for virtual memory. 
+In Linux, swap space is a crucial component that enhances system performance when physical memory (RAM) is exhausted. Swap space is a designated area on a hard disk drive (HDD) or solid-state drive (SSD) that acts as an extension of the system's memory, allowing the operating system to move inactive pages from RAM to the swap space, freeing up valuable memory resources.
 
-Having swap space ensures that whenever your system runs low on physical memory, it can move some of the data to the swap, freeing up RAM space, but this comes with performance implications as disk-based storage is slower than RAM. 
+The decision of where to place your swap space, how much swap space to allocate, and how to utilize swap space are all important considerations in optimizing your system's performance. In the context of disks and filesystems, the swap space can be configured in two ways:
 
-In the context of disks and filesystems, the swap space can live in two places:
+1. **Dedicated Swap Partition**: You can create a dedicated partition on your disk specifically for swap usage. This approach offers better performance but requires pre-planning and disk partitioning.
 
-1. In its own dedicated partition.
-2. In a regular file within an existing filesystem.
+2. **Swap File**: Alternatively, you can create a swap file within an existing filesystem. This method is more flexible and easier to manage, but may have slightly lower performance compared to a dedicated partition.
 
-For instance, to add a swap file, we might use the fallocate command to create a certain sized file for swap and the mkswap command to make it suitable for swap usage.
+To create a swap file on an Ubuntu Linux system, follow these steps:
 
+```bash
+# Create a 1GB swap file
+sudo fallocate -l 1G /roadmap/swapfile
+
+# Secure the swap file
+sudo chmod 600 /roadmap/swapfile
+
+# Initialize the swap file
+sudo mkswap /roadmap/swapfile
+
+# Enable the swap file
+sudo swapon /roadmap/swapfile
 ```
-fallocate -l 1G /swapfile # creates a swap file
-chmod 600 /swapfile # secures the swap file by preventing regular users from reading it
-mkswap /swapfile # sets up the Linux swap area
-swapon /swapfile # enables the file for swapping
-```
 
-Remember that the decision of where to place your swap space, how much swap space to have, and how to utilize swap space are all important considerations in optimizing your system's performance.
+Remember that the optimal size of the swap space depends on your system's memory usage and workload. As a general guideline, the swap space should be 1.5 to 2 times the amount of physical RAM. However, this can vary depending on your specific requirements.
 
-- [@article@Swap - Arch Wiki](https://wiki.archlinux.org/title/Swap)
-- [@article@zram (alternative) - Arch Wiki](https://wiki.archlinux.org/title/Zram)
+For more information, refer to the following resources:
+
+- [Swap - Arch Wiki](https://wiki.archlinux.org/title/Swap)
+- [zram (alternative) - Arch Wiki](https://wiki.archlinux.org/title/Zram)

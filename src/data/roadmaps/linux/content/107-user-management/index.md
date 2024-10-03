@@ -1,23 +1,45 @@
-# User Management
+# User Management in Linux
 
-Linux operating system offers a structured user management system, allowing multiple users to interact with the same system in an isolated manner. This includes defining user roles, assigning permissions, groups, ownership and other related aspects, which are crucial tasks for Linux administrators.
+The Linux operating system offers a structured user management system, allowing multiple users to interact with the same system in an isolated manner. This includes defining user roles, assigning permissions, groups, ownership, and other related aspects, which are crucial tasks for Linux administrators.
 
-For smoother and controlled operation, user management in Linux includes tasks such as creating, deleting, modifying users and groups. It also involves assigning permissions and ownership of files and directories to users/groups.
+For smoother and controlled operation, user management in Linux involves tasks such as creating, deleting, and modifying users and groups. It also involves assigning permissions and ownership of files and directories to users/groups.
 
-Basic shell commands are a fundamental part of user management in Linux. For example, `adduser` or `useradd` is used to create a new user on a system:
+In Ubuntu Linux, you can use the following commands for user management:
 
-```bash
-sudo adduser newuser
-```
+- Create a new user:
 
-Similarly, `deluser` or `userdel` is used to remove a user:
+  ```bash
+  sudo adduser roadmap
+  ```
 
-```bash
-sudo deluser newuser
-```
+  This command will prompt you to enter a password and additional user information.
 
-The entire concept of user management circles around providing proper accessibility, and maintaining the security of the Linux operating system. Other commands such as `passwd` for password management or `su` for switching users further emphasize the depth and importance of user management in Linux.
+- Delete a user:
 
-Learn more from the following resources:
+  ```bash
+  sudo deluser roadmap
+  ```
+
+  This command will remove the user account and their home directory.
+
+- Change a user's password:
+
+  ```bash
+  sudo passwd roadmap
+  ```
+
+  This command will allow you to change the password for the specified user.
+
+- Switch to a different user:
+
+  ```bash
+  su - roadmap
+  ```
+
+  This command will switch to the specified user account.
+
+The entire concept of user management circles around providing proper accessibility and maintaining the security of the Linux operating system. Understanding and effectively managing users is a crucial aspect of Linux administration.
+
+For more information, refer to the following resource:
 
 - [@article@User Account Management](https://labex.io/tutorials/linux-user-account-management-49)

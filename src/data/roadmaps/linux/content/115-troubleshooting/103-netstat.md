@@ -1,12 +1,24 @@
-# Netstat 
+# Netstat
 
-Netstat, short for network statistics, is a built-in command-line tool used in Linux systems for network troubleshooting and performance measurement.  It provides statistics for protocols, a list of open ports, routing table information, and other important network details. Administrators and developers work with netstat to examine network issues and understand how a system communicates with others.
+Netstat is a powerful command-line tool in Linux systems that provides valuable insights into network activity and troubleshooting. It offers a comprehensive view of network statistics, including open ports, active connections, and routing table information.
 
-Its functionality is extended owing to various command-line options it supports, which could be used singularly or combinedly to fine-tune the output. These might include displaying numerical addresses instead of names (`-n`), continuous monitoring (`-c`), or spotting connections on a specific protocol (`-t`, `-u`). 
+As a system administrator or developer, you can leverage Netstat to investigate network issues and understand how your system communicates with others. The tool's versatility is enhanced by the various command-line options it supports, allowing you to fine-tune the output and focus on specific aspects of the network.
 
-Here is a brief snippet of how netstat may typically be used:
+Here's an example of how you can use Netstat on an Ubuntu Linux system:
 
 ```bash
-# List all connections with numerical values.
-netstat -n
+# List all active network connections with numerical addresses
+netstat -an
+
+# Display listening ports and the processes associated with them
+netstat -lntp
+
+# Monitor network activity in real-time
+netstat -c
+
+# Show connections based on a specific protocol (TCP or UDP)
+netstat -t  # TCP connections
+netstat -u  # UDP connections
 ```
+
+By using these Netstat commands, you can quickly gather valuable information about your system's network configuration and troubleshoot any connectivity or performance-related issues. The numerical addresses (`-n`) option is particularly useful when you need to analyze the network without relying on DNS resolution.

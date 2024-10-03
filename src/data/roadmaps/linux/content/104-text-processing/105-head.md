@@ -1,16 +1,16 @@
 # Head Command
 
-The `head` command in Linux is a text processing utility that allows a user to output the first part (or the "head") of files. It is commonly used for previewing the start of a file without loading the entire document into memory, which can act as an efficient way of quickly examining the data in very large files. By default, the `head` command prints the first 10 lines of each file to standard output, which is the terminal in most systems.
+The `head` command in Linux is a powerful tool for quickly previewing the start of a file without loading the entire document into memory. It is particularly useful for examining the contents of large files.
+
+By default, the `head` command prints the first 10 lines of a file to the terminal. However, you can customize the number of output lines using the `-n` option followed by the desired number of lines.
+
+For example, to display the first 5 lines of the file `roadmap.txt` on your Ubuntu Linux system, you can use the following command:
 
 ```bash
-head file.txt
+head -n 5 ~/roadmap.txt
 ```
 
-The number of output lines can be customized using an option. For example, to display first 5 lines, we use `-n` option followed by the number of lines:
-
-```bash
-head -n 5 file.txt
-```
+This will output the first 5 lines of the `roadmap.txt` file located in your home directory.
 
 Learn more from the following resources:
 

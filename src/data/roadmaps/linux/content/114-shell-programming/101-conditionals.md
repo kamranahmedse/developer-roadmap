@@ -1,25 +1,26 @@
-# Conditionals in Shell Programming
+# Conditional Statements in Linux Shell Scripting
 
-Conditional statements in Linux Shell Programming allow scripts to make decisions based on conditions. These are integral part of any programming language and just like other languages such as C, Python, JavaScript, Linux Shell also provides conditional statements. A conditional statement can be defined as an integral part of the shell script which guides the interpreter into the correct path of execution depending on the given conditions.
+Conditional statements in Linux shell scripting allow scripts to make decisions based on specific conditions. These are fundamental constructs in any programming language, and the Linux shell is no exception. The shell provides conditional statements such as `if`, `elif` (else if), and `else` to control the flow of execution based on the results of conditional tests.
 
-In shell, the main commands that are used for conditionals statements are `if`, `elif` (else if), and `else`. These commands are used for process control based on the results of conditional tests which can evaluate the value of string variables, arithmetic tests, or the status of a process.
-
-Here's a simple illustration of how they work:
+These conditional tests can evaluate the value of string variables, perform arithmetic operations, or check the status of a process. Here's a simple example using the `if-elif-else` construct in a Bash script on Ubuntu Linux:
 
 ```bash
-#!/bin/sh
+#!/bin/bash
+
 a=10
 b=20
 
-if [ $a -lt 20 ]
-then
-   echo "a is less than b"
-elif [ $a -gt 20 ]
-then
-   echo "a is greater than b"
+if [ $a -lt $b ]; then
+    echo "Variable 'a' is less than variable 'b'"
+elif [ $a -gt $b ]; then
+    echo "Variable 'a' is greater than variable 'b'"
 else
-   echo "a is equal to b"
+    echo "Variable 'a' is equal to variable 'b'"
 fi
 ```
 
-In the above script, the condition inside the `if` statement is being checked. If the condition is `true`, then the code block inside the `if` statement gets executed, otherwise, it moves to the `elif` condition and so on. If none of those conditions is satisfied, then the code block inside the `else` statement will be executed.
+In this script, the first `if` condition checks if the value of `a` is less than the value of `b`. If this condition is true, the code block inside the `if` statement is executed, and the script prints "Variable 'a' is less than variable 'b'".
+
+If the first condition is false, the script moves to the `elif` condition, which checks if the value of `a` is greater than the value of `b`. If this condition is true, the code block inside the `elif` statement is executed, and the script prints "Variable 'a' is greater than variable 'b'".
+
+If both the `if` and `elif` conditions are false, the script executes the code block inside the `else` statement, and the script prints "Variable 'a' is equal to variable 'b'".
