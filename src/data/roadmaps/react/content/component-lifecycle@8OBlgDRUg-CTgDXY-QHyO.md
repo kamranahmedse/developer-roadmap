@@ -10,4 +10,4 @@ Visit the following resources to learn more:
 - [@article@The React lifecycle: methods and hooks explained](https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle)
 - [@article@React Lifecycle: Methods & Hooks In Detail](https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/)
 - [@official@Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effectsv)
-- [@official@ClassComponent](https://react.dev/reference/react/Component)
+- [@official@Class Component](https://react.dev/reference/react/Component)
