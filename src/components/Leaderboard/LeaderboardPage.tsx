@@ -124,7 +124,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
         </h3>
 
         {tabs.length > 1 && (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             {tabs.map((tab) => {
               const isActive = tab === activeTab;
 
@@ -133,10 +133,10 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   key={tab.title}
                   onClick={() => setActiveTab(tab)}
                   className={cn(
-                    'text-sm font-medium underline-offset-2 transition-colors',
+                    'text-xs transition-colors py-0.5 px-2 rounded-full',
                     {
-                      'text-black underline': isActive,
-                      'text-gray-400 hover:text-gray-600': !isActive,
+                      'text-white bg-black': isActive,
+                      'hover:bg-gray-200': !isActive,
                     },
                   )}
                 >
