@@ -4,6 +4,6 @@ VuePress is a static site generator powered by Vue.js, primarily designed for cr
 
 Visit the following resources to learn more:
 
-- [@article@Official Website](https://vuepress.vuejs.org/)
+- [@official@Official Website](https://vuepress.vuejs.org/)
 - [@video@Whats VuePress?](https://www.youtube.com/watch?v=iRhRdY7SQJg)
 - [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)
