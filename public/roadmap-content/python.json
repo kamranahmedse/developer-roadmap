@@ -58,6 +58,11 @@
         "title": "Python for Beginners: Data Types",
         "url": "https://thenewstack.io/python-for-beginners-data-types/",
         "type": "article"
+      },
+      {
+        "title": "Python Variables and Data Types",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn",
+        "type": "video"
       }
     ]
   },
@@ -237,6 +242,11 @@
         "title": "Python \"for\" Loops (Definite Iteration)",
         "url": "https://realpython.com/python-for-loop/#the-guts-of-the-python-for-loop",
         "type": "article"
+      },
+      {
+        "title": "Python For Loops",
+        "url": "https://www.youtube.com/watch?v=KWgYha0clzw",
+        "type": "video"
       }
     ]
   },
@@ -617,6 +627,11 @@
       {
         "title": "OOP in Python One Shot",
         "url": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+        "type": "video"
+      },
+      {
+        "title": "Python OOP Tutorial",
+        "url": "https://www.youtube.com/watch?v=IbMDCwVm63M",
         "type": "video"
       }
     ]

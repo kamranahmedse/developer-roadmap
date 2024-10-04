@@ -118,6 +118,11 @@
     "description": "Rust is a systems programming language that focuses on safety, concurrency, and performance. Developed by Mozilla Research, Rust combines low-level control over system resources with high-level abstractions, preventing common programming errors like null or dangling pointer references at compile-time. It features a borrow checker for managing memory and preventing data races, making it ideal for building reliable and efficient software. Rust's zero-cost abstractions, pattern matching, and trait-based generics offer powerful tools for expressing complex ideas clearly. While primarily used for systems programming, web assembly, and game development, Rust's growing ecosystem supports various domains. Its emphasis on memory safety without sacrificing performance makes it increasingly popular for developing secure, high-performance applications in fields ranging from operating systems to web services.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Rust by Practice - Interactive Rust Course",
+        "url": "https://practice.course.rs/",
+        "type": "course"
+      },
+      {
         "title": "The Rust Programming Language - online book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
@@ -190,8 +195,13 @@
     "description": "Operating systems (OS) are fundamental software that manage computer hardware and software resources, providing common services for computer programs. They act as an intermediary between applications and hardware, handling tasks like memory management, process scheduling, file system management, and device control. Common desktop operating systems include Microsoft Windows, macOS, and various Linux distributions. Mobile devices typically run iOS or Android. Server environments often use Linux distributions like Ubuntu Server, Red Hat Enterprise Linux, or Windows Server. Each OS type offers distinct features, user interfaces, and compatibility with different software and hardware. Operating systems play a crucial role in system security, performance optimization, and providing a consistent user experience across diverse computing devices and environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Operating Systems - Wiki",
+        "url": "https://en.wikipedia.org/wiki/Operating_system",
+        "type": "article"
+      },
+      {
         "title": "All you need to know about OS.",
-        "url": "https://www.javatpoint.com/os-tutorial",
+        "url": "https://www.javatpoint.com/operating-system",
         "type": "article"
       },
       {
@@ -205,7 +215,7 @@
         "type": "video"
       },
       {
-        "title": "Operating Systems!",
+        "title": "Operating Systems",
         "url": "https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O",
         "type": "video"
       }
@@ -636,6 +646,11 @@
     "title": "Git",
     "description": "Git is a distributed version control system designed to track changes in source code during software development. It allows multiple developers to work on the same project simultaneously, maintaining a complete history of modifications. Git features local repositories on each developer's machine, enabling offline work and fast operations. It supports non-linear development through branching and merging, facilitating parallel work streams. Git's distributed nature enhances collaboration, backup, and experimentation. Key concepts include commits, branches, merges, and remote repositories. With its speed, flexibility, and robust branching and merging capabilities, Git has become the standard for version control in modern software development, powering platforms like GitHub and GitLab.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Git by Example - Learn Version Control with Bite-sized Lessons",
+        "url": "https://antonz.org/git-by-example/",
+        "type": "course"
+      },
       {
         "title": "Learn Git & GitHub",
         "url": "https://roadmap.sh/git-github",
