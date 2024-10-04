@@ -1,8 +1,7 @@
 # Redis Sentinel
 
-Redis Sentinel is a high-availability solution for Redis that provides monitoring, notification, and automatic failover capabilities. It enables Redis deployments to maintain availability and resilience by managing multiple Redis instances. Sentinel continuously monitors master and replica Redis servers to ensure they are functioning properly. If a master instance fails, Sentinel automatically promotes one of the replicas to be the new master, updating the configuration of other replicas to point to the new master and ensuring minimal downtime.
-
-In addition to failover, Redis Sentinel provides mechanisms for notifying system administrators about changes in the state of the Redis servers, allowing for proactive management. It also supports clients in obtaining the current master’s address, enabling seamless connection management in applications. Overall, Redis Sentinel is essential for building robust, production-grade Redis environments that require high availability and automatic recovery from failures.
+Redis Sentinel serves as a robust high-availability solution for Redis deployments, offering a comprehensive suite of monitoring, notification, and automatic failover capabilities. By continuously overseeing master and replica Redis servers, Sentinel ensures system integrity and swift response to failures. In the event of a master instance failure, it seamlessly promotes a replica to master status, reconfiguring the system to maintain service continuity with minimal downtime.
 
 Learn more from the following resources:
 
+- [@official@High Availability with Redis Sentinal](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)

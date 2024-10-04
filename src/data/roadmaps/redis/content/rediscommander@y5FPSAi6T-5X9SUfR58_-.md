@@ -4,3 +4,4 @@ RedisCommander is a web-based GUI management tool for Redis that simplifies the 
 
 Learn more from the following resources:
 
+- [@opensource@joeferner/redis-commander - RedisCommander Module on GitHub](https://github.com/joeferner/redis-commander)

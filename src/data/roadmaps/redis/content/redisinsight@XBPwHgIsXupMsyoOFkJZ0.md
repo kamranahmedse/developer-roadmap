@@ -4,3 +4,5 @@ RedisInsight is an advanced graphical user interface (GUI) tool developed by Red
 
 Learn more from the following resources:
 
+- [@official@RedisInsight](https://redis.io/insight/)
+- [@opensource@RedisInsight/RedisInsight - RedisInsight Module on GitHub](https://github.com/RedisInsight/RedisInsight)

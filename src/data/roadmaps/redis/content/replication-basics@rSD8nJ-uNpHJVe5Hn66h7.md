@@ -4,3 +4,4 @@ Replication in Redis is a process that allows data from one Redis instance (the 
 
 Learn more from the following resources:
 
+- [@official@Redis Replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/)
