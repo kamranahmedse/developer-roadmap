@@ -17,7 +17,7 @@ const { question, isActive = false } = Astro.props;
     class='flex flex-row justify-between items-center p-2 sm:p-3 w-full'
   >
     <span class='text-sm sm:text-base text-left font-medium'>{question}</span>
-    <Icon icon='down' class='h-6 hidden sm:block text-gray-400' />
+    <Icon icon='down' class='h-6 text-gray-400 transition-transform duration-300' />
   </button>
   <div class:list={['answer', { hidden: !isActive }]} faq-answer>
     <slot />
@@ -27,16 +27,23 @@ const { question, isActive = false } = Astro.props;
 <script>
   document.querySelectorAll('[faq-question]').forEach((el) => {
     el.addEventListener('click', () => {
-      // Hide any other visible answers
-      document.querySelectorAll('[faq-answer]').forEach((element) => {
-        element.classList.add('hidden');
-      });
-
-      // Show the current answer
       const answer = el.nextElementSibling;
-      if (answer) {
+      const icon = el.querySelector('.h-6');
+      const isHidden = answer.classList.contains('hidden');
+
+      if (isHidden) {
         answer.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        answer.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
       }
     });
   });
 </script>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
