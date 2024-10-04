@@ -12,3 +12,8 @@ Rewriting history in Git is typically necessary when:
 - Fixing mistakes: Correcting errors or typos in commit messages.
 - Removing sensitive data: Deleting confidential information from commits, like API keys or database credentials.
 - Simplifying complex histories: Reorganizing branches to improve clarity and reduce complexity.
+
+Visit the following resources to learn more:
+
+- [@official@Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+- [@article@Methods of Rewriting History in Git](https://www.atlassian.com/git/tutorials/rewriting-history)

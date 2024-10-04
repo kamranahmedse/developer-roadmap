@@ -1,9 +1,9 @@
 # Tomcat
 
-Tomcat is an open source implementation of the Jakarta Servlet, Jakarta Server Pages, Jakarta Expression Language, Jakarta WebSocket, Jakarta Annotations and Jakarta Authentication specifications. These specifications are part of the Jakarta EE platform.
+Apache Tomcat is an open-source web server and servlet container that implements Java Servlet, JavaServer Pages (JSP), and Java Expression Language (EL) specifications. It is widely used to deploy and manage Java-based web applications. Tomcat provides a robust platform for running Java web applications with features like request handling, session management, and resource pooling. It is known for its performance, scalability, and ease of integration with other Java technologies, making it a popular choice for developers seeking to run Java applications in a production environment.
 
 Visit the following resources to learn more:
 
 - [@official@Tomcat Website](https://tomcat.apache.org/)
 - [@article@Official Documentation(Tomcat 10.0)](https://tomcat.apache.org/tomcat-10.0-doc/index.html)
-- [@video@Apache Tomcat](https://www.youtube.com/c/ApacheTomcatOfficial)
+- [@video@Apache Tomcat Full Tutorial](https://www.youtube.com/watch?v=rElJIPRw5iM)

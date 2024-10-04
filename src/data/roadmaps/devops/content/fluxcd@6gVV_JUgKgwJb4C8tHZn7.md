@@ -1,12 +1,9 @@
 # Flux CD
 
-Flux CD is a continuous delivery tool for Kubernetes that is based on the GitOps methodology. It is used to automate the deployment and management of cloud-native applications by continuously synchronizing the desired application state with the actual application state in the production environment.
-
-In a Flux CD workflow, changes to the application are made by committing code or configuration changes to a Git repository. Flux CD monitors the repository and automatically deploys the changes to the production environment using a continuous delivery pipeline. The pipeline is triggered by changes to the Git repository and is responsible for building, testing, and deploying the changes to the production environment.
-
-Flux CD is designed to be a simple and efficient way to manage cloud-native applications, as it allows developers to make changes to the system using familiar tools and processes and it provides a clear and auditable history of all changes to the system. It is often used in conjunction with tools such as Helm to automate the deployment and management of cloud-native applications.
+FluxCD is a GitOps-based continuous delivery tool for Kubernetes. It automates the deployment of applications by using Git repositories as the source of truth for defining the desired state of a system. FluxCD continuously monitors these repositories and automatically applies changes to the cluster when differences are detected. It supports multi-tenancy, Helm releases, and provides features like automated image updates and notifications. FluxCD enables declarative, version-controlled infrastructure and application management, promoting consistency across environments and simplifying the deployment process. Its integration with Kubernetes makes it particularly useful for cloud-native applications, allowing teams to implement efficient, automated, and auditable deployment workflows.
 
 Visit the following resources to learn more:
 
 - [@official@Flux CD Docs](https://docs.fluxcd.io/)
+- [@video@Introduction to Flux CD on Kubernetes](https://www.youtube.com/watch?v=X5W_706-jSY)
 - [@feed@Explore top posts about Flux](https://app.daily.dev/tags/flux?ref=roadmapsh)

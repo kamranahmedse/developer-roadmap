@@ -6,5 +6,4 @@ As the name implies, RecyclerView recycles those individual elements. When an it
 
 Learn more from the following resources:
 
-- [@article@Android Developers: Create dynamic lists with RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)
-
+- [@official@Create Dynamic Lists with RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)

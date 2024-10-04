@@ -1,6 +1,7 @@
 # Caching Dependencies
 
 GitHub Actions provides a caching feature that allows you to store and reuse dependencies between workflows, reducing the time it takes to run your actions. By caching dependencies, you can:
+
 - Reuse compiled code
 - Store database connections
 - Reduce network traffic

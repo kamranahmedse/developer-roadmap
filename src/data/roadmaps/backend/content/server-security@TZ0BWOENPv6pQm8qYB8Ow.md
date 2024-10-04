@@ -10,8 +10,6 @@ Server security involves protecting servers from threats and vulnerabilities to 
 6. **Regular Backups**: Performing regular backups to ensure data can be restored in case of loss or corruption.
 7. **Monitoring and Logging**: Continuously monitoring server activity and maintaining logs for auditing and detecting potential security incidents.
 
-Effective server security is crucial for safeguarding against attacks, maintaining system stability, and protecting sensitive data.
-
 Learn more from the following resources:
 
 - [@video@10 Tips for Hardening your Linux Servers](https://www.youtube.com/watch?v=Jnxx_IAC0G4)

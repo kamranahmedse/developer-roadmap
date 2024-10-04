@@ -6,4 +6,4 @@
 
 Visit the following resources to learn more:
 
-- [@official@Android developers: Linear Layout](https://developer.android.com/develop/ui/views/layout/linear)
+- [@official@Linear Layout](https://developer.android.com/develop/ui/views/layout/linear)

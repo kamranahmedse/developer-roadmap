@@ -10,7 +10,7 @@
     "links": [
       {
         "title": "What is Software Architecture in Software Engineering?",
-        "url": "https://webcache.googleusercontent.com/search?q=cache:ya4xvYaEckQJ:https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/&cd=1&hl=es-419&ct=clnk&gl=ar",
+        "url": "https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/",
         "type": "article"
       },
       {
@@ -1402,8 +1402,19 @@
   },
   "Rq1Wi-cHjS54SYo-Btp-e": {
     "title": "ITIL",
-    "description": "",
-    "links": []
+    "description": "**ITIL (Information Technology Infrastructure Library)** is a set of best practices for IT service management, designed to align IT services with business needs. Its primary focus is the efficient and effective delivery of value through managing the IT service lifecycle, which includes five phases: `Strategy`, `Design`, `Transition`, `Operation`, and `Continual Service Improvement`. ITIL includes key processes such as incident management, problem management, change management, configuration management, and service level agreements (SLAs). These practices aim to optimize performance, service quality, and customer satisfaction. Adopting ITIL helps organizations improve operational efficiency, reduce risks, and maintain clear control over IT services over time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation",
+        "type": "article"
+      },
+      {
+        "title": "What is ITIL?",
+        "url": "https://www.youtube.com/watch?v=wgnpfMK8vDk",
+        "type": "video"
+      }
+    ]
   },
   "SJ5lrlvyXgtAwOx4wvT2W": {
     "title": "Prince2",

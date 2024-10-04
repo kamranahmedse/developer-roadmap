@@ -4,6 +4,6 @@ Amazon DynamoDB is a fully managed, serverless NoSQL database service provided b
 
 Learn more from the following resources:
 
-- [@official@AWS DynamoDB Website](https://aws.amazon.com/dynamodb/)
+- [@official@AWS DynamoDB](https://aws.amazon.com/dynamodb/)
 - [@video@AWS DynamoDB Tutorial For Beginners](https://www.youtube.com/watch?v=2k2GINpO308)
 - [@feed@daily.dev AWS DynamoDB Feed](https://app.daily.dev/tags/aws-dynamodb)

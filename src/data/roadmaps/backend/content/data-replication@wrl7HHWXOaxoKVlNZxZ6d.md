@@ -4,5 +4,5 @@ Data replication is the process of creating and maintaining multiple copies of t
 
 Visit the following resources to learn more:
 
-- [@article@What is data replication?](https://www.ibm.com/topics/data-replication)
+- [@article@Data Replication? - IBM](https://www.ibm.com/topics/data-replication)
 - [@video@What is Data Replication?](https://www.youtube.com/watch?v=iO8a1nMbL1o)

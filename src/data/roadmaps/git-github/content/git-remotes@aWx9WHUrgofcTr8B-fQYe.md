@@ -4,5 +4,5 @@ In Git, a remote is a reference to a repository that exists on another server or
 
 Visit the following resources to learn more:
 
-- [@article@About remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
+- [@official@About Remote Repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
 - [@video@What is a Remote Repository? [Beginner Git Tutorial]](https://www.youtube.com/watch?v=Lb4yvfrX_7I)

@@ -1,5 +1,7 @@
 # In-memory Data Structure Store
 
-Redis is an in-memory data structure store that offers high-speed data access by keeping the entire dataset in RAM, enabling extremely low latency for read and write operations. It supports various data structures such as strings, hashes, lists, sets, sorted sets, and more, making it versatile for use cases like caching, session management, real-time analytics, and messaging. Being in-memory, Redis achieves superior performance compared to disk-based databases, but it can be configured to persist data to disk using RDB or AOF, ensuring durability and reliability alongside its high throughput.
+An in-memory database is a purpose-built database that relies primarily on internal memory for data storage. It enables minimal response times by eliminating the need to access standard disk drives (SSDs). In-memory databases are ideal for applications that require microsecond response times or have large spikes in traffic, such as gaming leaderboards, session stores, and real-time data analytics. The terms main memory database (MMDB), in-memory database system (IMDS), and real-time database system (RTDB) also refer to in-memory databases.
 
-Learn more from the following resources:
+Learn more from the following resources: 
+
+- [@article@Amazon MemoryDB](https://aws.amazon.com/memorydb/)

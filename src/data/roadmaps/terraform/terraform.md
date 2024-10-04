@@ -6,7 +6,7 @@ briefTitle: 'Terraform'
 briefDescription: 'Step by step guide to learning Terraform in 2024'
 title: 'Terraform Roadmap'
 description: 'Step by step guide to learning Terraform in 2024'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

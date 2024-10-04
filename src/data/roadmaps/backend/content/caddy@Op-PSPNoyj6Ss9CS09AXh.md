@@ -5,5 +5,5 @@ Caddy is a modern, open-source web server written in Go. It's known for its simp
 Visit the following resources to learn more:
 
 - [@official@Official Website](https://caddyserver.com/)
-- [@opensource@caddyserver/caddy](https://github.com/caddyserver/caddy)
+- [@opensource@caddyserver/caddy - Caddy on GitHub](https://github.com/caddyserver/caddy)
 - [@video@How to Make a Simple Caddy 2 Website](https://www.youtube.com/watch?v=WgUV_BlHvj0)

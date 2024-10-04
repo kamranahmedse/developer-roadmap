@@ -4,5 +4,5 @@ A GitHub Gist is a small code or text snippet that can be shared with others. It
 
 Visit the following resources to learn more:
 
-- [@official@Creating gists](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
-- [@official@REST API endpoints for gists](https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28)
+- [@official@Creating Gists](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
+- [@official@REST API endpoints for Gists](https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28)

@@ -5,4 +5,4 @@ Sender Policy Framework (SPF) is used to authenticate the sender of an email. Wi
 Visit the following resources to learn more:
 
 - [@article@What is a DNS SPF record?](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)
-- [@video@SPF Overview](https://www.youtube.com/watch?v=WFPYrAr1boU)
+- [@video@What is SPF? Sender Policy Framework Explained](https://www.youtube.com/watch?v=5HG8xJ2lWuc)

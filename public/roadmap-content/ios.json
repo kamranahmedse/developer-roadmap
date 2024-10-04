@@ -112,8 +112,29 @@
   },
   "IduGSdUa2Fi7VFMLKgmsS": {
     "title": "iOS Architecture",
-    "description": "",
-    "links": []
+    "description": "iOS architecture refers to the design principles and patterns used to build iOS applications. It focuses on how to structure code, manage data, and ensure a smooth user experience. These architectural patterns help developers create maintainable, scalable, and testable applications while following best practices specific to iOS development. Use cases of these architectures may vary according to the requirements of the application. For example, MVC is used for simple apps, while MVVM is considered when the app is large and complex.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Model-View-Controller Pattern in swift (MVC) for Beginners",
+        "url": "https://ahmedaminhassanismail.medium.com/model-view-controller-pattern-in-swift-mvc-for-beginners-35db8d479832",
+        "type": "article"
+      },
+      {
+        "title": "MVVM in iOS Swift",
+        "url": "https://medium.com/@zebayasmeen76/mvvm-in-ios-swift-6afb150458fd",
+        "type": "article"
+      },
+      {
+        "title": "MVC Design Pattern Explained with Example",
+        "url": "https://youtu.be/sbYaWJEAYIY?t=2",
+        "type": "video"
+      },
+      {
+        "title": "MVVM Design Pattern Explained with Example",
+        "url": "https://www.youtube.com/watch?v=sLHVxnRS75w",
+        "type": "video"
+      }
+    ]
   },
   "IdGdLNgJI3WmONEFsMq-d": {
     "title": "Core OS",

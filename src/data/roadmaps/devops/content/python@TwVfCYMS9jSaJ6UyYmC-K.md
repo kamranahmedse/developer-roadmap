@@ -1,13 +1,12 @@
 # Python
 
-Python is a multi-paradigm language. Being an interpreted language, code is executed as soon as it is written and the Python syntax allows for writing code in functional, procedural or object-oriented programmatic ways. Python is frequently recommended as the first language new coders should learn, because of its focus on readability, consistency, and ease of use. This comes with some downsides, as the language is not especially performant in most production tasks.
+Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python's extensive standard library and vast ecosystem of third-party packages make it suitable for a wide range of applications, from web development and data analysis to artificial intelligence and scientific computing. Its clean syntax and dynamic typing allow for rapid development and prototyping. Python's "batteries included" philosophy provides rich built-in functionalities, while its cross-platform compatibility ensures code portability. With strong community support and continuous development, Python has become one of the most popular programming languages, widely used in academia, industry, and open-source projects for tasks ranging from simple scripting to complex software development.
 
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@official@Python Website](https://www.python.org/)
-- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [@article@W3Schools - Python Tutorial](https://www.w3schools.com/python/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@video@Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

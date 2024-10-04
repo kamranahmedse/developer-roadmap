@@ -58,6 +58,11 @@
         "title": "Python for Beginners: Data Types",
         "url": "https://thenewstack.io/python-for-beginners-data-types/",
         "type": "article"
+      },
+      {
+        "title": "Python Variables and Data Types",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn",
+        "type": "video"
       }
     ]
   },
@@ -237,6 +242,11 @@
         "title": "Python \"for\" Loops (Definite Iteration)",
         "url": "https://realpython.com/python-for-loop/#the-guts-of-the-python-for-loop",
         "type": "article"
+      },
+      {
+        "title": "Python For Loops",
+        "url": "https://www.youtube.com/watch?v=KWgYha0clzw",
+        "type": "video"
       }
     ]
   },
@@ -617,6 +627,11 @@
       {
         "title": "OOP in Python One Shot",
         "url": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+        "type": "video"
+      },
+      {
+        "title": "Python OOP Tutorial",
+        "url": "https://www.youtube.com/watch?v=IbMDCwVm63M",
         "type": "video"
       }
     ]
@@ -1119,16 +1134,10 @@
       }
     ]
   },
-  "_IXXTSwQOgYzYIUuKVWNE": {
-    "title": "virutalenv",
-    "description": "`virtualenv` is a tool to create isolated Python environments. It creates a folder which contains all the necessary executables to use the packages that a Python project would need.\n\nLearn more about `virtualenv` by visiting the following resources:",
-    "links": [
-      {
-        "title": "Virtual Environments",
-        "url": "https://virtualenv.pypa.io/en/latest/",
-        "type": "article"
-      }
-    ]
+  "virtualenv@_IXXTSwQOgYzYIUuKVWNE.md": {
+    "title": "virtualenv",
+    "description": "",
+    "links": []
   },
   "N5VaKMbgQ0V_BC5tadV65": {
     "title": "pyenv",
