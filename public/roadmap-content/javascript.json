@@ -1555,6 +1555,25 @@
       }
     ]
   },
+
+  "higherOrderFunction": {
+    "title": "Higher Order Functions",
+    "description": "Higher Order Functions are functions that take another function as an argument, return a function, or both. They enable more abstraction and flexibility in your code.\n\nExample\n-------\n\n    const add = (a, b) => a + b;\n    const applyOperation = (operation, x, y) => operation(x, y);\n    console.log(applyOperation(add, 5, 3)); // Output: 8\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MDN - Functions",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+        "type": "article"
+      },
+      {
+        "title": "Higher-Order Functions in JavaScript",
+        "url": "https://www.freecodecamp.org/news/higher-order-functions-in-javascript/",
+        "type": "article"
+      }
+    ]
+  },
+
+
   "QLC7bW-qHskLH2HOA-Sko": {
     "title": "arguments object",
     "description": "The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function, available within all non-arrow functions. You can refer to a function's arguments inside that function by using its arguments object. It has entries for each argument the function was called with, with the first entry's index at 0. But, in modern code, rest parameters should be preferred.\n\nVisit the following resources to learn more:",
