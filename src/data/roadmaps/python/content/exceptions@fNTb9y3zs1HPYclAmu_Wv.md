@@ -6,5 +6,4 @@ Python exceptions are events that occur during the execution of a program and di
 - [@article@Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
 - [@article@Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 - [@article@Python Exception Handling](https://www.programiz.com/python-programming/exception-handling)
-- [@article@Python Try Except](https://www.w3schools.com/python/python_try_except.asp)
 - [@video@Exception Handling in Python](https://www.youtube.com/watch?v=V_NXT2-QIlE)

@@ -4,6 +4,6 @@ Hash Table, Map, HashMap, Dictionary or Associative are all the names of the sam
 
 Visit the following resources to learn more:
 
-- [@video@Hash Table Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=jalSiaIi8j4)
-- [@article@Hash Tables and Hashmaps in Python](https://www.edureka.co/blog/hash-tables-and-hashmaps-in-python/)
 - [@article@Build a Hash Table in Python](https://realpython.com/python-hash-table/)
+- [@article@Hash Tables and Hashmaps in Python](https://www.edureka.co/blog/hash-tables-and-hashmaps-in-python/)
+- [@video@Hash Table Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=jalSiaIi8j4)

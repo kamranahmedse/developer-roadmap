@@ -4,6 +4,6 @@ Multiprocessing utilizes multiple processes, each with its own GIL. This allows 
 
 Learn more about multiprocessing with the following resources:
 
-- [@official@Official Documentation](https://docs.python.org/3/library/multiprocessing.html)
+- [@official@Python Documentation](https://docs.python.org/3/library/multiprocessing.html)
 - [@article@Multiprocessing in Python with Example](https://www.digitalocean.com/community/tutorials/python-multiprocessing-example)
 - [@article@Multiprocessing in Python](https://realpython.com/python-multiprocessing/)
