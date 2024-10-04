@@ -4,3 +4,5 @@ Redis provides two main persistence options: **RDB (Redis Database Backup)** and
 
 Learn more from the following resources:
 
+- [@official@Data Persistence](https://redis.io/docs/latest/operate/rc/databases/configuration/data-persistence/)
+- [@official@Redis Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)

@@ -4,3 +4,4 @@
 
 Learn more from the following resources:
 
+- [@official@HSET Documentation](https://redis.io/docs/latest/commands/hset/)

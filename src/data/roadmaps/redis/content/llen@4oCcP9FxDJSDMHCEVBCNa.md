@@ -4,3 +4,4 @@
 
 Learn more from the following resources:
 
+- [@official@LLEN Documentation](https://redis.io/docs/latest/commands/llen/)

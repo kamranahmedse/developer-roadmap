@@ -4,3 +4,4 @@ Hybrid persistence in Redis combines both RDB (Redis Database Backup) and AOF (A
 
 Learn more from the following resources:
 
+- [@official@Redis Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)

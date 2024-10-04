@@ -4,3 +4,6 @@ Optimistic locking in Redis is implemented using the `WATCH` command in combinat
 
 Learn more from the following resources:
 
+- [@official@Optimistic Locking using CHECK & SET](https://redis.io/docs/latest/develop/interact/transactions/#optimistic-locking-using-check-and-set)
+- [@official@WATCH Command](https://redis.io/docs/latest/commands/watch/)
+- [@official@MULTI Command](https://redis.io/docs/latest/commands/multi/)

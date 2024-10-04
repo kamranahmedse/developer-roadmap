@@ -4,3 +4,4 @@ High performance and scalability in Redis are achieved through its in-memory dat
 
 Learn more from the following resources:
 
+- [@article@Optimizing Redis for High Performance](https://loadforge.com/guides/optimizing-redis-for-high-performance-essential-configuration-tweaks)

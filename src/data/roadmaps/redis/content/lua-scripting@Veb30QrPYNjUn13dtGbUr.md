@@ -4,3 +4,6 @@ Lua scripting in Redis allows users to execute custom scripts atomically on the 
 
 Learn more from the following resources:
 
+- [@official@Lua Programming Language](https://www.lua.org/)
+- [@video@Lua in 100 Seconds](https://www.youtube.com/watch?v=jUuqBZwwkQw)
+- [@video@Full Lua Programming Crash Course](https://www.youtube.com/watch?v=1srFmjt1Ib0)

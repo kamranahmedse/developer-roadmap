@@ -4,3 +4,4 @@ The Append-Only File (AOF) in Redis is a persistence mechanism that logs every w
 
 Learn more from the following resources:
 
+- [@article@About AOF Persistence - Google](https://cloud.google.com/memorystore/docs/cluster/about-aof-persistence)

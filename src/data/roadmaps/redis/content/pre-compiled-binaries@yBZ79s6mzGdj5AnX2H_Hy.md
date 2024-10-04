@@ -1,6 +1,8 @@
 # Pre-compiled Binaries
 
-Pre-compiled binaries for Redis provide a convenient way to install the software without the need for manual compilation from source code. These binaries are pre-packaged and optimized for various operating systems, allowing users to quickly set up Redis by simply downloading and executing the binary file. This method simplifies the installation process, ensuring that users can start using Redis immediately without dealing with dependencies or compilation errors. Pre-compiled binaries are particularly useful for production environments, development setups, or users who want to avoid the complexities of building from source, enabling a faster and more straightforward deployment of Redis instances.
+Redis can be compiled and installed on a variety of platofrm and operating systems including Linux and macOS, the Redis binaries have no dependencies other than a C compiler and libc
 
 Learn more from the following resources:
 
+- [@official@Installing Redis from Source](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-from-source/)
+- [@article@How to install Redis from source on Ubuntu and CentOS](https://docs.vultr.com/how-to-install-redis-from-source-on-ubuntu-and-centos)

@@ -4,3 +4,4 @@
 
 Learn more from the following resources:
 
+- [@official@LRANGE Documentation](https://redis.io/docs/latest/commands/lrange/)

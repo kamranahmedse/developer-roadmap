@@ -4,3 +4,4 @@ Redis Lists include operations like LTRIM to trim the list to a specified range,
 
 Learn more from the following resources:
 
+- [@official@All Redis List Commands](https://redis.io/docs/latest/commands/?group=list)

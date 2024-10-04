@@ -4,3 +4,7 @@ Pub/Sub messaging in Redis is a messaging pattern that allows clients to communi
 
 Learn more from the following resources:
 
+- [@official@Redis Pub/Sub](https://redis.io/docs/latest/develop/interact/pubsub/)
+- [@official@PUBLISH Documentation](https://redis.io/docs/latest/commands/publish/)
+- [@official@SUBSCRIBE Documentation](https://redis.io/docs/latest/commands/subscribe/)
+- [@official@UNSUBSCRIBE Documentation](https://redis.io/docs/latest/commands/unsubscribe/)
