@@ -4,8 +4,8 @@ Django is a free and open-source, Python-based web framework that follows the mo
 
 Visit the following resources to learn more:
 
-- [@article@Django Official Website](https://www.djangoproject.com/)
-- [@article@Official Getting Started Guide](https://www.djangoproject.com/start/)
+- [@official@Django Website](https://www.djangoproject.com/)
+- [@official@Getting Started](https://www.djangoproject.com/start/)
+- [@article@Is Django Synchronous or Asynchronous?](https://stackoverflow.com/questions/58548089/django-is-synchronous-or-asynchronous)
 - [@video@Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-- [@article@Is Django synchronous or asynchronous?](https://stackoverflow.com/questions/58548089/django-is-synchronous-or-asynchronous)
 - [@feed@Explore top posts about Django](https://app.daily.dev/tags/django?ref=roadmapsh)

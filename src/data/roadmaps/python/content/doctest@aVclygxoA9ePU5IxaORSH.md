@@ -4,5 +4,5 @@ Python’s standard library comes equipped with a test framework module called d
 
 Visit the following resources to learn more:
 
-- [@article@Doctest module reference](https://docs.python.org/3/library/doctest.html)
+- [@official@Doctest Module](https://docs.python.org/3/library/doctest.html)
 - [@article@How To Write Doctests in Python](https://www.digitalocean.com/community/tutorials/how-to-write-doctests-in-python)
