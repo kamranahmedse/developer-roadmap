@@ -12,3 +12,5 @@ These modules enable users to leverage Redis for a wide variety of use cases, fr
 
 Learn more from the following resources:
 
+- [@official@Redis Modules API](https://redis.io/docs/latest/develop/reference/modules/)
+- [@official@Turn Redis into a Multi-Model Database](https://redis.io/resources/modules-redis-labs-turns-redis-multi-model-database/)

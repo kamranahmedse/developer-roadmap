@@ -4,6 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@Monitoring with metrics and alerts](https://redis.io/docs/latest/operate/rs/clusters/monitoring/)
 - [@official@MONITOR Documentation](https://redis.io/docs/latest/commands/monitor/)
 - [@official@SLOWLOG Documentation](https://redis.io/docs/latest/commands/slowlog/)
