@@ -1,3 +1,1 @@
 # Chunking
-
-In Retrieval-Augmented Generation (RAG), **chunking** refers to breaking large documents or data into smaller, manageable pieces (chunks) to improve retrieval and generation efficiency. This process helps the system retrieve relevant information more accurately by indexing these chunks in a vector database. During a query, the model retrieves relevant chunks instead of entire documents, which enhances the precision of the generated responses and allows better handling of long-form content within the context length limits.

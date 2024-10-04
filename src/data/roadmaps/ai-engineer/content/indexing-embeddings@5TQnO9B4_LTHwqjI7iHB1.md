@@ -1,3 +1,1 @@
 # Indexing Embeddings
-
-This step involves converting data (such as text, images, or other content) into numerical vectors (embeddings) using a pre-trained model. These embeddings capture the semantic relationships between data points. Once generated, the embeddings are stored in a vector database, which organizes them in a way that enables efficient retrieval based on similarity. This indexed structure allows fast querying and comparison of vectors, facilitating tasks like semantic search, recommendation systems, and anomaly detection.

@@ -1,3 +1,1 @@
 # Text-to-Speech
-
-Text-to-Speech (TTS) is a type of assistive technology that reads digital text out loud. It is a technology widely used in various programming fields, including AI Engineering. Traditionally, TTS has been employed in accessibility applications, but with the advent of AI, it's now being used to develop voice assistants, audio book narrators, and many more intelligent applications. For AI engineers, knowledge of TTS techniques opens up new possibilities for user interaction and can form an essential part of any AI application which interacts with its users primarily through spoken language.

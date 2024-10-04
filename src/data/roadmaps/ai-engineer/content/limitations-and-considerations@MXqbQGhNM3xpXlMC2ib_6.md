@@ -1,3 +1,1 @@
-# Limitations and Considerations under Pre-trained Models
-
-Pre-trained Models are AI models that are previously trained on a large benchmark dataset and provide a starting point for AI developers. They help in saving training time and computational resources. However, they also come with certain limitations and considerations. These models can sometimes fail to generalize well to tasks outside of their original context due to issues like dataset bias or overfitting. Furthermore, using them without understanding their internal working can lead to problematic consequences. Finally, transfer learning, which is the mechanism to deploy these pre-trained models, might not always be the optimum solution for every AI project. Thus, an AI Engineer must be aware of these factors while working with pre-trained models.
+# Limitations and Considerations

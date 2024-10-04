@@ -1,3 +1,1 @@
 # Pre-trained Models
-
-Pre-trained models are simply models created by some machine learning engineers to solve a problem. Such models are often shared and other machine learning engineers use these models for similar problems. These models are called pre-trained models because they have been previously trained by using large datasets. These pre-trained models can be used as the starting point for a variety of AI tasks, often as part of transfer learning, to save on the resources that would be needed to start a learning process from scratch. This hastens the journey of becoming an AI engineer as one gets to understand how to improve and fine-tune pre-existing models to specific tasks, making them an essential part of an AI engineer's development plan. 

@@ -1,3 +1,1 @@
 # Supabase
-
-Supabase is an open-source Firebase alternative that offers a suite of tools for database management, realtime subscriptions, and automating tasks. As an AI Engineer, you'll often have to manage and work with data to develop and test AI models. With Supabase, you can build databases more efficiently and interact with your data in real-time. It also supports user authentication and provides serverless functions which can be crucial in AI development workflows.

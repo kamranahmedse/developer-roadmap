@@ -1,3 +1,1 @@
 # Qdrant
-
-Qdrant is a high-performance vector similarity search engine with extensive restful API and distributed support, written in Rust. It allows efficiently storing, handling, and retrieving large amounts of vector data. Integrating Qdrant as a part of the AI Engineer's toolkit can drastically improve functionality and efficiency for AI Engineers, as they often work with vectors during data preprocessing, feature extraction, and modeling. Qdrant's flexibility and control over data indexing and query processing make it particularly handy when dealing with large datasets prevalent in AI projects.

@@ -1,3 +1,1 @@
 # Video Understanding
-
-Video Understanding is the process of analyzing videos to comprehend its content and context. Leveraging Machine Learning and AI technologies, this branch is responsible for extracting valuable information from video data. In the AI Engineer's Roadmap, video understanding comes into play when building AI models that can interpret video inputs. These engines need to recognize patterns and actions within the video, can track object's movements, and may also infer the future actions from the video stream. Training an AI model in video understanding requires knowledge of convolutional neural networks (CNN), recurring neural networks (RNN), and preferably some experience with Long Short-Term Memory (LSTM) networks.

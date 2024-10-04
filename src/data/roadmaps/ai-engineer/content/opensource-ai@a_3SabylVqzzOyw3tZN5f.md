@@ -1,3 +1,1 @@
-# OpenSource AI 
-
-OpenSource AI refers to artificial intelligence tools, software, libraries and platforms that are freely available to the public, allowing individuals and organizations to use, modify and distribute them as per their requirements. The OpenSource AI initiatives provide an ecosystem for AI developers to innovate, collaborate and mutually learn by sharing their codebase and datasets. Specifically, in the AI engineer's roadmap, OpenSource AI aids in accelerating the AI application development process, provides access to pre-trained models, and promotes the understanding of AI technology through transparency.
+# OpenSource AI

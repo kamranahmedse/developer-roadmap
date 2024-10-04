@@ -1,3 +1,1 @@
 # Open AI Embeddings API
-
-Open AI Embeddings API is a powerful system that is used to generate high-quality word and sentence embeddings. With this API, it becomes a breeze to convert textual data into a numerical format that Machine Learning models can process. This conversion of text into numerical data is crucial for Natural Language Processing (NLP) tasks that an AI Engineer often encounters. Understanding and harnessing the capabilities of the Open AI Embeddings API, therefore, forms an essential part of the AI Engineer's roadmap.

@@ -1,3 +1,1 @@
 # DALL-E API
-
-The DALL-E API allows developers to integrate OpenAI's image generation model into their applications. Using text-based prompts, the API generates unique images that match the descriptions provided by users. This makes it useful for tasks like creative design, marketing, product prototyping, and content creation. The API is highly customizable, enabling developers to adjust parameters such as image size and style. DALL-E excels at creating visually rich content from textual descriptions, expanding the possibilities for AI-driven creative workflows.

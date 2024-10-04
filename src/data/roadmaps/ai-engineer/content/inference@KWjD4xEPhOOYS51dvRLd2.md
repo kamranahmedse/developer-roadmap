@@ -1,3 +1,1 @@
 # Inference
-
-Inference involves using models developed through machine learning to make predictions or decisions. As part of the AI Engineer Roadmap, an AI engineer might create an inference engine, which uses rules and logic to infer new information based on existing data. Often used in natural language processing, image recognition, and similar tasks, inference can help AI systems provide useful outputs based on their training. Working with inference involves understanding different models, how they work, and how to apply them to new data to achieve reliable results.

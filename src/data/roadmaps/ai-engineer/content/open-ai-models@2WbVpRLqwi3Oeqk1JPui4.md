@@ -1,3 +1,1 @@
 # Open AI Models
-
-Open AI Models are a set of pre-designed, predefined models provided by OpenAI. These models are trained using Machine Learning algorithms to perform artificial intelligence tasks without any need of explicit programming. OpenAI's models are suited for various applications such as text generation, classification and extraction, allowing AI engineers to leverage them for effective implementations. Therefore, understanding and utilizing these models becomes an essential aspect in the roadmap for an AI engineer to develop AI-powered solutions with more efficiency and quality.

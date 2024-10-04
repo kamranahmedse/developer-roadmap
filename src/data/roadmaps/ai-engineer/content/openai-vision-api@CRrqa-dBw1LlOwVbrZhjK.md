@@ -1,3 +1,1 @@
 # OpenAI Vision API
-
-OpenAI Vision API is an API provided by OpenAI that is designed to analyze and generate insights from images. By feeding it an image, the Vision API can provide information about the objects and activities present in the image. For AI Engineers, this tool can be particularly useful for conducting Computer Vision tasks effortlessly. Using this API can support in creating applications that need image recognition, object detection and similar functionality, saving AI Engineers from having to create complex image processing algorithms from scratch. Understanding how to work with APIs, especially ones as advanced as the OpenAI Vision API, is an essential skill in the AI Engineer's roadmap.
