@@ -12,7 +12,7 @@ skills:
   - 'DOM Manipulation'
   - 'Package Management'
 seo:
-  title: Age Calculator
+  title: Build an Age Calculator App with JavaScript
   description: Create an age calculator using HTML, CSS, and JavaScript.
   keywords:
     - 'age calculator'
