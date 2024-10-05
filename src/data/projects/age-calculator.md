@@ -1,7 +1,7 @@
 ---
 title: Age Calculator
 description: Create an age calculator using HTML, CSS, and JavaScript.
-isNew: false
+isNew: true
 sort: 19
 difficulty: 'beginner'
 nature: 'Frontend'

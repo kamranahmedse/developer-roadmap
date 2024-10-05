@@ -1,8 +1,8 @@
 ---
 title: Flash Cards
 description: Create a flash card app using JavaScript frameworks.
-isNew: false
-sort: 19
+isNew: true
+sort: 20
 difficulty: 'beginner'
 nature: 'Frontend'
 skills:
