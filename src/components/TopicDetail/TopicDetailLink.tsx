@@ -29,16 +29,7 @@ type TopicDetailLinkProps = {
 export function TopicDetailLink(props: TopicDetailLinkProps) {
   const { url, onClick, type, title, isPaid = false } = props;
 
-  const linkType =
-    type === 'opensource'
-      ? url.includes('github')
-        ? 'github'
-        : url.includes('gitlab')
-          ? 'gitlab'
-          : url.includes('bitbucket')
-            ? 'bitbucket'
-            : 'Open Source'
-      : type;
+  const linkType = type === 'opensource' ? 'OpenSource' : type;
 
   return (
     <a
@@ -49,7 +40,7 @@ export function TopicDetailLink(props: TopicDetailLinkProps) {
     >
       <span
         className={cn(
-          'mr-2 inline-block rounded px-1.5 py-0.5 text-xs uppercase no-underline',
+          'mr-2 inline-block rounded px-1.5 py-0.5 text-xs capitalize no-underline',
           (isPaid ? paidLinkTypes[type] : linkTypes[type]) || 'bg-gray-200',
         )}
       >
