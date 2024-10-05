@@ -526,25 +526,43 @@ export function TopicDetail(props: TopicDetailProps) {
 
               {paidResourcesForTopic.length > 0 && (
                 <>
-                  <ResourceListSeparator text="Premium Resources" icon={Star} />
+                  <ResourceListSeparator
+                    text="Premium Resources"
+                    icon={Star}
+                    className={cn(
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
+                  />
 
-                  <ul className="ml-3 mt-3 space-y-1">
-                    {paidResourcesForTopic.map((resource) => {
-                      return (
-                        <li key={resource._id}>
-                          <TopicDetailLink
-                            url={resource.url}
-                            type={resource.type as any}
-                            title={resource.title}
-                            isPaid={true}
-                          />
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <div
+                    className={cn(
+                      'ml-3 mt-3',
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
+                  >
+                    <ul className="space-y-1">
+                      {paidResourcesForTopic.map((resource) => {
+                        return (
+                          <li key={resource._id}>
+                            <TopicDetailLink
+                              url={resource.url}
+                              type={resource.type as any}
+                              title={resource.title}
+                              isPaid={true}
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
 
                   {hasPaidScrimbaLinks && (
-                    <div className="relative -mb-1 ml-3 mt-4 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800">
+                    <div
+                      className={cn(
+                        'relative -mb-1 ml-3 mt-4 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800',
+                        isFullScreen && 'container mx-auto max-w-7xl',
+                      )}
+                    >
                       <div className="flex items-center gap-2">
                         <Coins className="h-4 w-4 text-yellow-700" />
                         <span>
@@ -575,7 +593,12 @@ export function TopicDetail(props: TopicDetailProps) {
                 !hasEnoughLinks &&
                 contributionUrl &&
                 hasContent && (
-                  <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
+                  <div
+                    className={cn(
+                      'mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12',
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
+                  >
                     <div className="mb-4 mt-3">
                       <p className="">
                         Find more resources using these pre-filled search
@@ -619,7 +642,12 @@ export function TopicDetail(props: TopicDetailProps) {
                 )}
             </div>
             {resourceId === 'devops' && (
-              <div className="mt-4">
+              <div
+                className={cn(
+                  'mt-4',
+                  isFullScreen && 'container mx-auto max-w-7xl',
+                )}
+              >
                 <a
                   href={tnsLink}
                   target="_blank"
