@@ -1,7 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/ai-data-scientist.json'
 pdfUrl: '/pdfs/roadmaps/ai-data-scientist.pdf'
-order: 4
+order: 5
 renderer: 'editor'
 briefTitle: 'AI and Data Scientist'
 briefDescription: 'Step by step guide to becoming an AI and Data Scientist in 2024'

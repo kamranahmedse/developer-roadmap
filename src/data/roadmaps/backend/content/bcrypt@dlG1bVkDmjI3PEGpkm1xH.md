@@ -4,6 +4,6 @@ Bcrypt is a password-hashing function designed to securely hash passwords for st
 
 Visit the following resources to learn more:
 
-- [@article@bcrypts npm package](https://www.npmjs.com/package/bcrypt)
+- [@opensource@bcrypt](https://github.com/kelektiv/node.bcrypt.js)
 - [@article@Understanding bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
 - [@video@bcrypt explained](https://www.youtube.com/watch?v=AzA_LTDoFqY)

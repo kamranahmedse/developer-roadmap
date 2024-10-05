@@ -4,8 +4,6 @@ Horizontal scaling (scaling out/in) involves adding or removing instances of res
 
 Vertical scaling (scaling up/down) involves increasing or decreasing the resources (CPU, memory, storage) of a single instance or server to handle more load or reduce capacity. This method improves performance by upgrading the existing hardware or virtual machine but has limits based on the maximum capacity of the individual resource.
 
-Both approaches have their advantages: horizontal scaling offers better fault tolerance and flexibility, while vertical scaling is often simpler to implement but can be limited by the hardware constraints of a single machine.
-
 Visit the following resources to learn more:
 
 - [@article@Horizontal vs Vertical Scaling](https://touchstonesecurity.com/horizontal-vs-vertical-scaling-what-you-need-to-know/)

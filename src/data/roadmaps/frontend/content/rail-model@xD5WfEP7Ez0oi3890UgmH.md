@@ -1,14 +1,8 @@
 # RAIL Model
 
-The RAIL model is a performance optimization model for web applications that focuses on improving the perceived performance of a web page. It stands for Response, Animation, Idle, and Load, and it involves the following four performance goals:
-
-- Response: The time it takes for the web page to respond to user input should be under 100 milliseconds.
-- Animation: The time it takes for an animation to run should be under 10 milliseconds.
-- Idle: The web page should take advantage of idle time to perform non-critical tasks.
-- Load: The time it takes for the web page to fully load should be under 1 second.
-
-The RAIL model is designed to provide a framework for optimizing the performance of a web page by focusing on the four key areas that impact the user's perception of performance. It is particularly useful for applications that require high levels of interactivity, such as games and social media applications.
+The RAIL Model is a user-centric performance model developed by Google that focuses on improving web application responsiveness and user experience. RAIL stands for Response, Animation, Idle, and Load. It provides specific performance goals: Responses to user input should occur within 100ms; Animations should run at 60 frames per second (16ms per frame); Idle time should be used to complete deferred work; and Load time for interactive content should be under 5 seconds. The model emphasizes the importance of perceived performance, encouraging developers to prioritize user interactions and break up long tasks. By adhering to RAIL guidelines, developers can create web applications that feel fast and responsive, enhancing user satisfaction and engagement.
 
 Visit the following resources to learn more:
 
-- [@article@RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)
+- [@official@RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)
+- [@article@An Overview of the RAIL performance model](https://www.keycdn.com/blog/rail-performance-model)

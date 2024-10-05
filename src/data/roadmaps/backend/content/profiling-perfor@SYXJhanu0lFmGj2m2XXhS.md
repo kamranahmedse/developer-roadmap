@@ -4,5 +4,5 @@ Profiling performance involves analyzing a system or application's behavior to i
 
 Learn more from the following resources:
 
-- [@video@Performance Profiling](https://www.youtube.com/watch?v=MaauQTeGg2k)
 - [@article@How to Profile SQL Queries for Better Performance](https://servebolt.com/articles/profiling-sql-queries/)
+- [@video@Performance Profiling](https://www.youtube.com/watch?v=MaauQTeGg2k)

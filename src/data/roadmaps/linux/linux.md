@@ -6,7 +6,7 @@ briefTitle: 'Linux'
 briefDescription: 'Step by step guide to learning Linux in 2024'
 title: 'Linux Roadmap'
 description: 'Step by step guide to learning Linux in 2024'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

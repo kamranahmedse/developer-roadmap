@@ -4,5 +4,5 @@ Lets you create large, complex layouts with a flat view hierarchy—no nested vi
 
 Visit the following resources to learn more:
 
-- [@official@Android developers: ConstraintLayout in xml](https://developer.android.com/develop/ui/views/layout/constraint-layout)
-- [@official@Android developers: ContraintLayout in compose](https://developer.android.com/develop/ui/compose/layouts/constraintlayout)
+- [@official@Android: ConstraintLayout in XML](https://developer.android.com/develop/ui/views/layout/constraint-layout)
+- [@official@Android: ConstraintLayout in Compose](https://developer.android.com/develop/ui/compose/layouts/constraintlayout)

@@ -15,8 +15,6 @@ The Twelve-Factor App methodology is a set of principles for building modern, sc
 11. **Logs**: Treat logs as streams of events.
 12. **Admin Processes**: Run administrative or management tasks as one-off processes.
 
-These principles help create applications that are easy to deploy, manage, and scale in cloud environments, promoting operational simplicity and consistency.
-
 Visit the following resources to learn more:
 
 - [@article@The Twelve-Factor App](https://12factor.net/)

@@ -1,13 +1,30 @@
 {
   "gKTSe9yQFVbPVlLzWB0hC": {
     "title": "Search Engines",
-    "description": "Search engines like Elasticsearch are specialized tools designed for fast, scalable, and flexible searching and analyzing of large volumes of data. Elasticsearch is an open-source, distributed search and analytics engine built on Apache Lucene, offering full-text search capabilities, real-time indexing, and advanced querying features. Key characteristics of search engines like Elasticsearch include:\n\n1.  **Full-Text Search**: Support for complex search queries, including relevance scoring and text analysis.\n2.  **Distributed Architecture**: Scalability through horizontal distribution across multiple nodes or servers.\n3.  **Real-Time Indexing**: Ability to index and search data almost instantaneously.\n4.  **Powerful Query DSL**: A domain-specific language for constructing and executing sophisticated queries.\n5.  **Analytics**: Capabilities for aggregating and analyzing data, often used for log and event data analysis.\n\nElasticsearch is commonly used in applications requiring advanced search functionality, such as search engines, data analytics platforms, and real-time monitoring systems.",
-    "links": []
+    "description": "Search engines like Elasticsearch are specialized tools designed for fast, scalable, and flexible searching and analyzing of large volumes of data. Elasticsearch is an open-source, distributed search and analytics engine built on Apache Lucene, offering full-text search capabilities, real-time indexing, and advanced querying features. Key characteristics of search engines like Elasticsearch include:\n\n1.  **Full-Text Search**: Support for complex search queries, including relevance scoring and text analysis.\n2.  **Distributed Architecture**: Scalability through horizontal distribution across multiple nodes or servers.\n3.  **Real-Time Indexing**: Ability to index and search data almost instantaneously.\n4.  **Powerful Query DSL**: A domain-specific language for constructing and executing sophisticated queries.\n5.  **Analytics**: Capabilities for aggregating and analyzing data, often used for log and event data analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Elasticsearch",
+        "url": "https://www.elastic.co/elasticsearch/",
+        "type": "article"
+      }
+    ]
   },
   "9Fpoor-Os_9lvrwu5Zjh-": {
     "title": "Design and Development Principles",
-    "description": "Design and Development Principles are fundamental guidelines that inform the creation of software systems. Key principles include:\n\n1.  SOLID (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)\n2.  DRY (Don't Repeat Yourself)\n3.  KISS (Keep It Simple, Stupid)\n4.  YAGNI (You Aren't Gonna Need It)\n5.  Separation of Concerns\n6.  Modularity\n7.  Encapsulation\n8.  Composition over Inheritance\n9.  Loose Coupling and High Cohesion\n10.  Principle of Least Astonishment\n\nThese principles aim to create more maintainable, scalable, and robust software. They encourage clean code, promote reusability, reduce complexity, and enhance flexibility. While not rigid rules, these principles guide developers in making design decisions that lead to better software architecture and easier long-term maintenance. Applying these principles helps in creating systems that are easier to understand, modify, and extend over time.",
-    "links": []
+    "description": "Design and Development Principles are fundamental guidelines that inform the creation of software systems. Key principles include:\n\n*   SOLID (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)\n*   DRY (Don't Repeat Yourself)\n*   KISS (Keep It Simple, Stupid)\n*   YAGNI (You Aren't Gonna Need It)\n*   Separation of Concerns\n*   Modularity\n*   Encapsulation\n*   Composition over Inheritance\n*   Loose Coupling and High Cohesion\n*   Principle of Least Astonishment\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Design Principles - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Design_principles",
+        "type": "article"
+      },
+      {
+        "title": "Design Principles - Microsoft",
+        "url": "https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/index",
+        "type": "article"
+      }
+    ]
   },
   "EwvLPSI6AlZ4TnNIJTZA4": {
     "title": "Learn about APIs",
@@ -71,7 +88,7 @@
     "description": "Rust is a systems programming language known for its focus on safety, performance, and concurrency. It provides fine-grained control over system resources while ensuring memory safety without needing a garbage collector. Rust's ownership model enforces strict rules on how data is accessed and managed, preventing common issues like null pointer dereferences and data races. Its strong type system and modern features, such as pattern matching and concurrency support, make it suitable for a wide range of applications, from low-level systems programming to high-performance web servers and tools. Rust is gaining traction in both industry and open source for its reliability and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The Rust Programming Language - online book",
+        "title": "The Rust Programming Language - Book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
       },
@@ -334,8 +351,8 @@
         "type": "article"
       },
       {
-        "title": "Learn Git with Tutorials, News and Tips - Atlassian",
-        "url": "https://www.atlassian.com/git",
+        "title": "Git Documentation",
+        "url": "https://git-scm.com/doc",
         "type": "article"
       },
       {
@@ -370,8 +387,8 @@
         "type": "article"
       },
       {
-        "title": "Git",
-        "url": "https://git-scm.com/",
+        "title": "Git Documentation",
+        "url": "https://git-scm.com/doc",
         "type": "article"
       },
       {
@@ -396,7 +413,7 @@
         "type": "article"
       },
       {
-        "title": "GitHub Website",
+        "title": "GitHub",
         "url": "https://github.com",
         "type": "article"
       },
@@ -424,7 +441,7 @@
   },
   "Ry_5Y-BK7HrkIc6X0JG1m": {
     "title": "Bitbucket",
-    "description": "Bitbucket is a web-based version control repository hosting service owned by Atlassian. It primarily uses Git version control systems, offering both cloud-hosted and self-hosted options. Bitbucket provides features such as pull requests for code review, branch permissions, and inline commenting on code. It integrates seamlessly with other Atlassian products like Jira and Trello, making it popular among teams already using Atlassian tools. Bitbucket supports continuous integration and deployment through Bitbucket Pipelines. It offers unlimited private repositories for small teams, making it cost-effective for smaller organizations. While similar to GitHub in many aspects, Bitbucket's integration with Atlassian's ecosystem and its pricing model for private repositories are key differentiators. It's widely used for collaborative software development, particularly in enterprise environments already invested in Atlassian's suite of products.\n\nVisit the following resources to learn more:",
+    "description": "Bitbucket is a web-based version control repository hosting service owned by Atlassian. It primarily uses Git version control systems, offering both cloud-hosted and self-hosted options. Bitbucket provides features such as pull requests for code review, branch permissions, and inline commenting on code. It integrates seamlessly with other Atlassian products like Jira and Trello, making it popular among teams already using Atlassian tools. Bitbucket supports continuous integration and deployment through Bitbucket Pipelines. It offers unlimited private repositories for small teams, making it cost-effective for smaller organizations.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Bitbucket Website",
@@ -453,9 +470,9 @@
     "description": "GitLab is a web-based DevOps platform that provides a complete solution for the software development lifecycle. It offers source code management, continuous integration/continuous deployment (CI/CD), issue tracking, and more, all integrated into a single application. GitLab supports Git repositories and includes features like merge requests (similar to GitHub's pull requests), wiki pages, and issue boards. It emphasizes DevOps practices, providing built-in CI/CD pipelines, container registry, and Kubernetes integration. GitLab offers both cloud-hosted and self-hosted options, giving organizations flexibility in deployment. Its all-in-one approach differentiates it from competitors, as it includes features that might require multiple tools in other ecosystems. GitLab's focus on the entire DevOps lifecycle, from planning to monitoring, makes it popular among enterprises and teams seeking a unified platform for their development workflows.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GitLab Website",
+        "title": "GitLab",
         "url": "https://gitlab.com/",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitLab Documentation",
@@ -546,7 +563,7 @@
         "type": "article"
       },
       {
-        "title": "MS SQL website",
+        "title": "MS SQL",
         "url": "https://www.microsoft.com/en-ca/sql-server/",
         "type": "article"
       },
@@ -567,12 +584,12 @@
     "description": "MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "MySQL website",
+        "title": "MySQL",
         "url": "https://www.mysql.com/",
         "type": "article"
       },
       {
-        "title": "W3Schools - MySQL tutorial ",
+        "title": "W3Schools - MySQL Tutorial",
         "url": "https://www.w3schools.com/mySQl/default.asp",
         "type": "article"
       },
@@ -603,12 +620,12 @@
     "description": "Oracle Database is a highly robust, enterprise-grade relational database management system (RDBMS) developed by Oracle Corporation. Known for its scalability, reliability, and comprehensive features, Oracle Database supports complex data management tasks and mission-critical applications. It provides advanced functionalities like SQL querying, transaction management, high availability through clustering, and data warehousing. Oracle's database solutions include support for various data models, such as relational, spatial, and graph, and offer tools for security, performance optimization, and data integration. It is widely used in industries requiring large-scale, secure, and high-performance data processing.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Oracle Website",
         "url": "https://www.oracle.com/database/",
         "type": "article"
       },
       {
-        "title": "Official Docs",
+        "title": "Oracle Docs",
         "url": "https://docs.oracle.com/en/database/index.html",
         "type": "article"
       },
@@ -626,10 +643,10 @@
   },
   "tD3i-8gBpMKCHB-ITyDiU": {
     "title": "MariaDB",
-    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL\n\nVisit the following resources to learn more:",
+    "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most feature rich, stable, and sanely licensed open SQL server in the industry. MariaDB was created with the intention of being a more versatile, drop-in replacement version of MySQL\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "MariaDB website",
+        "title": "MariaDB",
         "url": "https://mariadb.org/",
         "type": "article"
       },
@@ -782,8 +799,14 @@
   },
   "GwApfL4Yx-b5Y8dB9Vy__": {
     "title": "Failure Modes",
-    "description": "Database failure modes refer to the various ways in which a database system can malfunction or cease to operate correctly. These include hardware failures (like disk crashes or network outages), software bugs, data corruption, performance degradation due to overload, and inconsistencies in distributed systems. Common failure modes involve data loss, system unavailability, replication lag in distributed databases, and deadlocks. To mitigate these, databases employ strategies such as redundancy, regular backups, transaction logging, and failover mechanisms. Understanding potential failure modes is crucial for designing robust database systems with high availability and data integrity. It informs the implementation of fault tolerance measures, recovery procedures, and monitoring systems to ensure database reliability and minimize downtime in critical applications.",
-    "links": []
+    "description": "Database failure modes refer to the various ways in which a database system can malfunction or cease to operate correctly. These include hardware failures (like disk crashes or network outages), software bugs, data corruption, performance degradation due to overload, and inconsistencies in distributed systems. Common failure modes involve data loss, system unavailability, replication lag in distributed databases, and deadlocks. To mitigate these, databases employ strategies such as redundancy, regular backups, transaction logging, and failover mechanisms. Understanding potential failure modes is crucial for designing robust database systems with high availability and data integrity. It informs the implementation of fault tolerance measures, recovery procedures, and monitoring systems to ensure database reliability and minimize downtime in critical applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Database Failure Modes",
+        "url": "https://ieeexplore.ieee.org/document/7107294/",
+        "type": "article"
+      }
+    ]
   },
   "rq_y_OBMD9AH_4aoecvAi": {
     "title": "Transactions",
@@ -921,7 +944,7 @@
     "description": "Data replication is the process of creating and maintaining multiple copies of the same data across different locations or nodes in a distributed system. It enhances data availability, reliability, and performance by ensuring that data remains accessible even if one or more nodes fail. Replication can be synchronous (changes are applied to all copies simultaneously) or asynchronous (changes are propagated after being applied to the primary copy). It's widely used in database systems, content delivery networks, and distributed file systems. Replication strategies include master-slave, multi-master, and peer-to-peer models. While improving fault tolerance and read performance, replication introduces challenges in maintaining data consistency across copies and managing potential conflicts. Effective replication strategies must balance consistency, availability, and partition tolerance, often in line with the principles of the CAP theorem.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is data replication?",
+        "title": "Data Replication? - IBM",
         "url": "https://www.ibm.com/topics/data-replication",
         "type": "article"
       },
@@ -984,7 +1007,7 @@
     "description": "JSON or JavaScript Object Notation is an encoding scheme that is designed to eliminate the need for an ad-hoc code for each application to communicate with servers that communicate in a defined way. JSON API module exposes an implementation for data stores and data structures, such as entity types, bundles, and fields.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "JSON API",
         "url": "https://jsonapi.org/",
         "type": "article"
       },
@@ -1015,13 +1038,13 @@
         "type": "article"
       },
       {
-        "title": " REST API and OpenAPI: It’s Not an Either/Or Question ",
-        "url": "https://www.youtube.com/watch?v=pRS9LRBgjYg",
-        "type": "article"
-      },
-      {
         "title": "OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0",
         "url": "https://www.youtube.com/watch?v=6kwmW_p_Tig",
+        "type": "video"
+      },
+      {
+        "title": " REST API and OpenAPI: It’s Not an Either/Or Question",
+        "url": "https://www.youtube.com/watch?v=pRS9LRBgjYg",
         "type": "video"
       }
     ]
@@ -1109,7 +1132,7 @@
         "type": "article"
       },
       {
-        "title": "GraphQL Official Website",
+        "title": "GraphQL",
         "url": "https://graphql.org/",
         "type": "article"
       },
@@ -1130,7 +1153,7 @@
     "description": "Client-side caching is a technique where web browsers or applications store data locally on the user's device to improve performance and reduce server load. It involves saving copies of web pages, images, scripts, and other resources on the client's system for faster access on subsequent visits. Modern browsers implement various caching mechanisms, including HTTP caching (using headers like Cache-Control and ETag), service workers for offline functionality, and local storage APIs. Client-side caching significantly reduces network traffic and load times, enhancing user experience, especially on slower connections. However, it requires careful management to balance improved performance with the need for up-to-date content. Developers must implement appropriate cache invalidation strategies and consider cache-busting techniques for critical updates. Effective client-side caching is crucial for creating responsive, efficient web applications while minimizing server resource usage.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Client-side Caching",
+        "title": "Client Side Caching",
         "url": "https://redis.io/docs/latest/develop/use/client-side-caching/",
         "type": "article"
       },
@@ -1143,11 +1166,16 @@
   },
   "Nq2BO53bHJdFT1rGZPjYx": {
     "title": "CDN",
-    "description": "A Content Delivery Network (CDN) service aims to provide high availability and performance improvements of websites. This is achieved with fast delivery of website assets and content typically via geographically closer endpoints to the client requests. Traditional commercial CDNs (Amazon CloudFront, Akamai, CloudFlare and Fastly) provide servers across the globe which can be used for this purpose. Serving assets and contents via a CDN reduces bandwidth on website hosting, provides an extra layer of caching to reduce potential outages and can improve website security as well\n\nVisit the following resources to learn more:",
+    "description": "A Content Delivery Network (CDN) service aims to provide high availability and performance improvements of websites. This is achieved with fast delivery of website assets and content typically via geographically closer endpoints to the client requests.\n\nTraditional commercial CDNs (Amazon CloudFront, Akamai, CloudFlare and Fastly) provide servers across the globe which can be used for this purpose. Serving assets and contents via a CDN reduces bandwidth on website hosting, provides an extra layer of caching to reduce potential outages and can improve website security as well\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "CloudFlare - What is a CDN? | How do CDNs work?",
         "url": "https://www.cloudflare.com/en-ca/learning/cdn/what-is-a-cdn/",
+        "type": "article"
+      },
+      {
+        "title": "AWS - CDN",
+        "url": "https://aws.amazon.com/what-is/cdn/",
         "type": "article"
       },
       {
@@ -1190,8 +1218,19 @@
   },
   "ELj8af7Mi38kUbaPJfCUR": {
     "title": "Caching",
-    "description": "Caching is a technique used in computing to store and retrieve frequently accessed data quickly, reducing the need to fetch it from the original, slower source repeatedly. It involves keeping a copy of data in a location that's faster to access than its primary storage. Caching can occur at various levels, including browser caching, application-level caching, and database caching. It significantly improves performance by reducing latency, decreasing network traffic, and lowering the load on servers or databases. Common caching strategies include time-based expiration, least recently used (LRU) algorithms, and write-through or write-back policies. While caching enhances speed and efficiency, it also introduces challenges in maintaining data consistency and freshness. Effective cache management is crucial in balancing performance gains with the need for up-to-date information in dynamic systems.",
-    "links": []
+    "description": "Caching is a technique used in computing to store and retrieve frequently accessed data quickly, reducing the need to fetch it from the original, slower source repeatedly. It involves keeping a copy of data in a location that's faster to access than its primary storage. Caching can occur at various levels, including browser caching, application-level caching, and database caching. It significantly improves performance by reducing latency, decreasing network traffic, and lowering the load on servers or databases. Common caching strategies include time-based expiration, least recently used (LRU) algorithms, and write-through or write-back policies. While caching enhances speed and efficiency, it also introduces challenges in maintaining data consistency and freshness. Effective cache management is crucial in balancing performance gains with the need for up-to-date information in dynamic systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Caching - AWS",
+        "url": "https://aws.amazon.com/caching/",
+        "type": "article"
+      },
+      {
+        "title": "Caching - Cloudflare",
+        "url": "https://www.cloudflare.com/learning/cdn/what-is-caching/",
+        "type": "article"
+      }
+    ]
   },
   "RBrIP5KbVQ2F0ly7kMfTo": {
     "title": "Web Security",
@@ -1333,7 +1372,7 @@
         "type": "article"
       },
       {
-        "title": "DevOps CI/CD Explained in 100 Seconds by Fireship",
+        "title": "DevOps CI/CD Explained in 100 Seconds",
         "url": "https://www.youtube.com/watch?v=scEDHsr3APg",
         "type": "video"
       },
@@ -1581,7 +1620,7 @@
   },
   "8DmabQJXlrT__COZrDVTV": {
     "title": "Twelve Factor Apps",
-    "description": "The Twelve-Factor App methodology is a set of principles for building modern, scalable, and maintainable web applications, particularly suited for cloud environments. It emphasizes best practices for developing applications in a way that facilitates portability, scalability, and ease of deployment. Key principles include:\n\n1.  **Codebase**: One codebase tracked in version control, with many deploys.\n2.  **Dependencies**: Explicitly declare and isolate dependencies.\n3.  **Config**: Store configuration in the environment.\n4.  **Backing Services**: Treat backing services as attached resources.\n5.  **Build, Release, Run**: Separate build and run stages.\n6.  **Processes**: Execute the app as one or more stateless processes.\n7.  **Port Binding**: Export services via port binding.\n8.  **Concurrency**: Scale out via the process model.\n9.  **Disposability**: Maximize robustness with fast startup and graceful shutdown.\n10.  **Dev/Prod Parity**: Keep development, staging, and production environments as similar as possible.\n11.  **Logs**: Treat logs as streams of events.\n12.  **Admin Processes**: Run administrative or management tasks as one-off processes.\n\nThese principles help create applications that are easy to deploy, manage, and scale in cloud environments, promoting operational simplicity and consistency.\n\nVisit the following resources to learn more:",
+    "description": "The Twelve-Factor App methodology is a set of principles for building modern, scalable, and maintainable web applications, particularly suited for cloud environments. It emphasizes best practices for developing applications in a way that facilitates portability, scalability, and ease of deployment. Key principles include:\n\n1.  **Codebase**: One codebase tracked in version control, with many deploys.\n2.  **Dependencies**: Explicitly declare and isolate dependencies.\n3.  **Config**: Store configuration in the environment.\n4.  **Backing Services**: Treat backing services as attached resources.\n5.  **Build, Release, Run**: Separate build and run stages.\n6.  **Processes**: Execute the app as one or more stateless processes.\n7.  **Port Binding**: Export services via port binding.\n8.  **Concurrency**: Scale out via the process model.\n9.  **Disposability**: Maximize robustness with fast startup and graceful shutdown.\n10.  **Dev/Prod Parity**: Keep development, staging, and production environments as similar as possible.\n11.  **Logs**: Treat logs as streams of events.\n12.  **Admin Processes**: Run administrative or management tasks as one-off processes.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "The Twelve-Factor App",
@@ -1647,7 +1686,7 @@
     "description": "Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant data processing. It acts as a message broker, allowing systems to publish and subscribe to streams of records, similar to a distributed commit log. Kafka is highly scalable and can handle large volumes of data with low latency, making it ideal for real-time analytics, log aggregation, and data integration. It features topics for organizing data streams, partitions for parallel processing, and replication for fault tolerance, enabling reliable and efficient handling of large-scale data flows across distributed systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Apache Kafka quickstart",
+        "title": "Apache Kafka",
         "url": "https://kafka.apache.org/quickstart",
         "type": "article"
       },
@@ -1704,12 +1743,12 @@
         "type": "article"
       },
       {
-        "title": "Getting started with LXD Containerization",
+        "title": "Getting Started with LXD Containerization",
         "url": "https://www.youtube.com/watch?v=aIwgPKkVj8s",
         "type": "video"
       },
       {
-        "title": "Getting started with LXC containers",
+        "title": "Getting Started with LXC containers",
         "url": "https://youtu.be/CWmkSj_B-wo",
         "type": "video"
       }
@@ -1767,7 +1806,7 @@
     "description": "Server-Sent Events (SSE) is a technology for sending real-time updates from a server to a web client over a single, persistent HTTP connection. It enables servers to push updates to clients efficiently and automatically reconnects if the connection is lost. SSE is ideal for applications needing one-way communication, such as live notifications or real-time data feeds, and uses a simple text-based format for transmitting event data, which can be easily handled by clients using the `EventSource` API in JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Server-Sent Events - MDN",
+        "title": "Server Sent Events - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
         "type": "article"
       },
@@ -1783,7 +1822,7 @@
     "description": "Nginx is a high-performance, open-source web server and reverse proxy server known for its efficiency, scalability, and low resource consumption. Originally developed as a web server, Nginx is also commonly used as a load balancer, HTTP cache, and mail proxy. It excels at handling a large number of concurrent connections due to its asynchronous, event-driven architecture. Nginx's features include support for serving static content, handling dynamic content through proxying to application servers, and providing SSL/TLS termination. Its modular design allows for extensive customization and integration with various applications and services, making it a popular choice for modern web infrastructures.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Nginx Website",
         "url": "https://nginx.org/",
         "type": "article"
       },
@@ -1809,7 +1848,7 @@
     "description": "Caddy is a modern, open-source web server written in Go. It's known for its simplicity, automatic HTTPS encryption, and HTTP/2 support out of the box. Caddy stands out for its ease of use, with a simple configuration syntax and the ability to serve static files with zero configuration. It automatically obtains and renews SSL/TLS certificates from Let's Encrypt, making secure deployments straightforward. Caddy supports various plugins and modules for extended functionality, including reverse proxying, load balancing, and dynamic virtual hosting. It's designed with security in mind, implementing modern web standards by default. While it may not match the raw performance of servers like Nginx in extremely high-load scenarios, Caddy's simplicity, built-in security features, and low resource usage make it an attractive choice for many web hosting needs, particularly for smaller to medium-sized projects or developers seeking a hassle-free server setup.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "caddyserver/caddy",
+        "title": "caddyserver/caddy - Caddy on GitHub",
         "url": "https://github.com/caddyserver/caddy",
         "type": "opensource"
       },
@@ -1856,7 +1895,7 @@
     "description": "Microsoft Internet Information Services (IIS) is a flexible, secure, and high-performance web server developed by Microsoft for hosting and managing web applications and services on Windows Server. IIS supports a variety of web technologies, including [ASP.NET](http://ASP.NET), PHP, and static content. It provides features such as request handling, authentication, SSL/TLS encryption, and URL rewriting. IIS also offers robust management tools, including a graphical user interface and command-line options, for configuring and monitoring web sites and applications. It is commonly used for deploying enterprise web applications and services in a Windows-based environment, offering integration with other Microsoft technologies and services.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Microsoft -IIS",
         "url": "https://www.iis.net/",
         "type": "article"
       },
@@ -1942,7 +1981,7 @@
   },
   "xPvVwGQw28uMeLYIWn8yn": {
     "title": "Memcached",
-    "description": "Memcached (pronounced variously mem-cash-dee or mem-cashed) is a general-purpose distributed memory-caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read. Memcached is free and open-source software, licensed under the Revised BSD license. Memcached runs on Unix-like operating systems (Linux and macOS) and on Microsoft Windows. It depends on the `libevent` library. Memcached's APIs provide a very large hash table distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in the least recently used (LRU) order. Applications using Memcached typically layer requests and additions into RAM before falling back on a slower backing store, such as a database.\n\nMemcached has no internal mechanism to track misses which may happen. However, some third-party utilities provide this functionality.\n\nVisit the following resources to learn more:",
+    "description": "Memcached (pronounced variously mem-cash-dee or mem-cashed) is a general-purpose distributed memory-caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read. Memcached is free and open-source software, licensed under the Revised BSD license. Memcached runs on Unix-like operating systems (Linux and macOS) and on Microsoft Windows. It depends on the `libevent` library. Memcached's APIs provide a very large hash table distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in the least recently used (LRU) order. Applications using Memcached typically layer requests and additions into RAM before falling back on a slower backing store, such as a database.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "memcached/memcached",
@@ -2091,7 +2130,7 @@
         "type": "article"
       },
       {
-        "title": "Backpressure explained — the resisted flow of data through software",
+        "title": "Backpressure explained — The Resisted Flow of Data through Software",
         "url": "https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7",
         "type": "article"
       },
@@ -2136,7 +2175,7 @@
   },
   "f7iWBkC0X7yyCoP_YubVd": {
     "title": "Migration Strategies",
-    "description": "Migration strategies involve planning and executing the transition of applications, data, or infrastructure from one environment to another, such as from on-premises systems to the cloud or between different cloud providers. Key strategies include:\n\n1.  **Rehost (Lift and Shift)**: Moving applications as-is to the new environment with minimal changes, which is often the quickest but may not fully leverage new platform benefits.\n2.  **Replatform**: Making some optimizations or changes to adapt applications for the new environment, enhancing performance or scalability while retaining most of the existing architecture.\n3.  **Refactor**: Redesigning and modifying applications to optimize for the new environment, often taking advantage of new features and improving functionality or performance.\n4.  **Repurchase**: Replacing existing applications with new, often cloud-based, solutions that better meet current needs.\n5.  **Retain**: Keeping certain applications or systems in their current environment due to specific constraints or requirements.\n6.  **Retire**: Decommissioning applications that are no longer needed or are redundant.\n\nEach strategy has its own trade-offs in terms of cost, complexity, and benefits, and the choice depends on factors like the application’s architecture, business needs, and resource availability.\n\nVisit the following resources to learn more:",
+    "description": "Migration strategies involve planning and executing the transition of applications, data, or infrastructure from one environment to another, such as from on-premises systems to the cloud or between different cloud providers. Key strategies include:\n\n1.  **Rehost (Lift and Shift)**: Moving applications as-is to the new environment with minimal changes, which is often the quickest but may not fully leverage new platform benefits.\n2.  **Replatform**: Making some optimizations or changes to adapt applications for the new environment, enhancing performance or scalability while retaining most of the existing architecture.\n3.  **Refactor**: Redesigning and modifying applications to optimize for the new environment, often taking advantage of new features and improving functionality or performance.\n4.  **Repurchase**: Replacing existing applications with new, often cloud-based, solutions that better meet current needs.\n5.  **Retain**: Keeping certain applications or systems in their current environment due to specific constraints or requirements.\n6.  **Retire**: Decommissioning applications that are no longer needed or are redundant.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Databases as a Challenge for Continuous Delivery",
@@ -2152,7 +2191,7 @@
   },
   "osQlGGy38xMcKLtgZtWaZ": {
     "title": "Types of Scaling",
-    "description": "Horizontal scaling (scaling out/in) involves adding or removing instances of resources, such as servers or containers, to handle increased or decreased loads. It distributes the workload across multiple instances to improve performance and redundancy. This method enhances the system's capacity by expanding the number of nodes in a distributed system.\n\nVertical scaling (scaling up/down) involves increasing or decreasing the resources (CPU, memory, storage) of a single instance or server to handle more load or reduce capacity. This method improves performance by upgrading the existing hardware or virtual machine but has limits based on the maximum capacity of the individual resource.\n\nBoth approaches have their advantages: horizontal scaling offers better fault tolerance and flexibility, while vertical scaling is often simpler to implement but can be limited by the hardware constraints of a single machine.\n\nVisit the following resources to learn more:",
+    "description": "Horizontal scaling (scaling out/in) involves adding or removing instances of resources, such as servers or containers, to handle increased or decreased loads. It distributes the workload across multiple instances to improve performance and redundancy. This method enhances the system's capacity by expanding the number of nodes in a distributed system.\n\nVertical scaling (scaling up/down) involves increasing or decreasing the resources (CPU, memory, storage) of a single instance or server to handle more load or reduce capacity. This method improves performance by upgrading the existing hardware or virtual machine but has limits based on the maximum capacity of the individual resource.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Horizontal vs Vertical Scaling",
@@ -2207,7 +2246,7 @@
     "description": "Monitoring involves continuously observing and tracking the performance, availability, and health of systems, applications, and infrastructure. It typically includes collecting and analyzing metrics, logs, and events to ensure systems are operating within desired parameters. Monitoring helps detect anomalies, identify potential issues before they escalate, and provides insights into system behavior. It often involves tools and platforms that offer dashboards, alerts, and reporting features to facilitate real-time visibility and proactive management. Effective monitoring is crucial for maintaining system reliability, performance, and for supporting incident response and troubleshooting.\n\nA few popular tools are Grafana, Sentry, Mixpanel, NewRelic.",
     "links": [
       {
-        "title": "Top monitoring tools 2024",
+        "title": "Top Monitoring Tools",
         "url": "https://thectoclub.com/tools/best-application-monitoring-software/",
         "type": "article"
       },
@@ -2307,9 +2346,9 @@
     "description": "Bcrypt is a password-hashing function designed to securely hash passwords for storage in databases. Created by Niels Provos and David Mazières, it's based on the Blowfish cipher and incorporates a salt to protect against rainbow table attacks. Bcrypt's key feature is its adaptive nature, allowing for the adjustment of its cost factor to make it slower as computational power increases, thus maintaining resistance against brute-force attacks over time. It produces a fixed-size hash output, typically 60 characters long, which includes the salt and cost factor. Bcrypt is widely used in many programming languages and frameworks due to its security strength and relative ease of implementation. Its deliberate slowness in processing makes it particularly effective for password storage, where speed is not a priority but security is paramount.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "bcrypts npm package",
+        "title": "bcrypt",
         "url": "https://www.npmjs.com/package/bcrypt",
-        "type": "article"
+        "type": "opensource"
       },
       {
         "title": "Understanding bcrypt",
@@ -2429,7 +2468,7 @@
   },
   "TZ0BWOENPv6pQm8qYB8Ow": {
     "title": "Server Security",
-    "description": "Server security involves protecting servers from threats and vulnerabilities to ensure the confidentiality, integrity, and availability of the data and services they manage. Key practices include:\n\n1.  **Patch Management**: Regularly updating software and operating systems to fix vulnerabilities.\n2.  **Access Control**: Implementing strong authentication mechanisms and restricting access to authorized users only.\n3.  **Firewalls and Intrusion Detection**: Using firewalls to block unauthorized access and intrusion detection systems to monitor and respond to suspicious activities.\n4.  **Encryption**: Encrypting data both in transit and at rest to protect sensitive information from unauthorized access.\n5.  **Security Hardening**: Configuring servers with minimal services and features, applying security best practices to reduce the attack surface.\n6.  **Regular Backups**: Performing regular backups to ensure data can be restored in case of loss or corruption.\n7.  **Monitoring and Logging**: Continuously monitoring server activity and maintaining logs for auditing and detecting potential security incidents.\n\nEffective server security is crucial for safeguarding against attacks, maintaining system stability, and protecting sensitive data.\n\nLearn more from the following resources:",
+    "description": "Server security involves protecting servers from threats and vulnerabilities to ensure the confidentiality, integrity, and availability of the data and services they manage. Key practices include:\n\n1.  **Patch Management**: Regularly updating software and operating systems to fix vulnerabilities.\n2.  **Access Control**: Implementing strong authentication mechanisms and restricting access to authorized users only.\n3.  **Firewalls and Intrusion Detection**: Using firewalls to block unauthorized access and intrusion detection systems to monitor and respond to suspicious activities.\n4.  **Encryption**: Encrypting data both in transit and at rest to protect sensitive information from unauthorized access.\n5.  **Security Hardening**: Configuring servers with minimal services and features, applying security best practices to reduce the attack surface.\n6.  **Regular Backups**: Performing regular backups to ensure data can be restored in case of loss or corruption.\n7.  **Monitoring and Logging**: Continuously monitoring server activity and maintaining logs for auditing and detecting potential security incidents.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is a hardened server?",
@@ -2600,7 +2639,7 @@
   },
   "hkxw9jPGYphmjhTjw8766": {
     "title": "DNS and how it works?",
-    "description": "DNS (Domain Name System) is a hierarchical, decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates human-readable domain names (like [www.example.com](http://www.example.com)) into IP addresses (like 192.0.2.1) that computers use to identify each other. DNS servers distributed worldwide work together to resolve these queries, forming a global directory service. The system uses a tree-like structure with root servers at the top, followed by top-level domain servers (.com, .org, etc.), authoritative name servers for specific domains, and local DNS servers. DNS is crucial for the functioning of the Internet, enabling users to access websites and services using memorable names instead of numerical IP addresses. It also supports email routing, service discovery, and other network protocols.\n\nVisit the following resources to learn more:",
+    "description": "DNS (Domain Name System) is a hierarchical, decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates human-readable domain names (like `www.example.com`) into IP addresses (like 192.0.2.1) that computers use to identify each other. DNS servers distributed worldwide work together to resolve these queries, forming a global directory service. The system uses a tree-like structure with root servers at the top, followed by top-level domain servers (.com, .org, etc.), authoritative name servers for specific domains, and local DNS servers. DNS is crucial for the functioning of the Internet, enabling users to access websites and services using memorable names instead of numerical IP addresses. It also supports email routing, service discovery, and other network protocols.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is DNS?",
@@ -2811,7 +2850,7 @@
     "description": "OpenID is an open standard for decentralized authentication that allows users to log in to multiple websites and applications using a single set of credentials, managed by an identity provider (IdP). It enables users to authenticate their identity through an external service, simplifying the login process and reducing the need for multiple usernames and passwords. OpenID typically works in conjunction with OAuth 2.0 for authorization, allowing users to grant access to their data while maintaining security. This approach enhances user convenience and streamlines identity management across various platforms.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "OpenID Website",
         "url": "https://openid.net/",
         "type": "article"
       },
@@ -2839,7 +2878,7 @@
   },
   "UCHtaePVxS-0kpqlYxbfC": {
     "title": "SAML",
-    "description": "Security Assertion Markup Language (SAML)\n-----------------------------------------\n\nSecurity Assertion Markup Language (SAML) is an XML-based framework used for single sign-on (SSO) and identity federation, enabling users to authenticate once and gain access to multiple applications or services. It allows for the exchange of authentication and authorization data between an identity provider (IdP) and a service provider (SP). SAML assertions are XML documents that contain user identity information and attributes, and are used to convey authentication credentials and permissions. By implementing SAML, organizations can streamline user management, enhance security through centralized authentication, and simplify the user experience by reducing the need for multiple logins across different systems.\n\nLearn more from the following resources:",
+    "description": "Security Assertion Markup Language (SAML) is an XML-based framework used for single sign-on (SSO) and identity federation, enabling users to authenticate once and gain access to multiple applications or services. It allows for the exchange of authentication and authorization data between an identity provider (IdP) and a service provider (SP). SAML assertions are XML documents that contain user identity information and attributes, and are used to convey authentication credentials and permissions. By implementing SAML, organizations can streamline user management, enhance security through centralized authentication, and simplify the user experience by reducing the need for multiple logins across different systems.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "SAML Explained in Plain English",
@@ -2884,17 +2923,17 @@
     "description": "Solr is an open-source, highly scalable search platform built on Apache Lucene, designed for full-text search, faceted search, and real-time indexing. It provides powerful features for indexing and querying large volumes of data with high performance and relevance. Solr supports complex queries, distributed searching, and advanced text analysis, including tokenization and stemming. It offers features such as faceted search, highlighting, and geographic search, and is commonly used for building search engines and data retrieval systems in various applications, from e-commerce to content management.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "apache/solr",
+        "title": "Solr on Github",
         "url": "https://github.com/apache/solr",
         "type": "opensource"
       },
       {
-        "title": "Official Website",
+        "title": "Solr Website",
         "url": "https://solr.apache.org/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Solr Documentation",
         "url": "https://solr.apache.org/resources.html#documentation",
         "type": "article"
       },
@@ -2910,7 +2949,7 @@
     "description": "Real-time data refers to information that is processed and made available immediately or with minimal delay, allowing users or systems to react promptly to current conditions. This type of data is essential in applications requiring immediate updates and responses, such as financial trading platforms, online gaming, real-time analytics, and monitoring systems. Real-time data processing involves capturing, analyzing, and delivering information as it is generated, often using technologies like stream processing frameworks (e.g., Apache Kafka, Apache Flink) and low-latency databases. Effective real-time data systems can handle high-speed data flows, ensuring timely and accurate decision-making.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Real-time data - Wiki",
+        "title": "Real-time Data - Wiki",
         "url": "https://en.wikipedia.org/wiki/Real-time_data",
         "type": "article"
       },
@@ -2942,7 +2981,7 @@
     "description": "Short polling is a technique where a client periodically sends requests to a server at regular intervals to check for updates or new data. The server responds with the current state or any changes since the last request. While simple to implement and compatible with most HTTP infrastructures, short polling can be inefficient due to the frequent network requests and potential for increased latency in delivering updates. It contrasts with long polling and WebSockets, which offer more efficient mechanisms for real-time communication. Short polling is often used when real-time requirements are less stringent and ease of implementation is a priority.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Amazon SQS short and long polling",
+        "title": "Amazon SQS Short and Long Polling",
         "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html",
         "type": "article"
       },
@@ -2984,7 +3023,7 @@
     "description": "Amazon DynamoDB is a fully managed, serverless NoSQL database service provided by Amazon Web Services (AWS). It offers high-performance, scalable, and flexible data storage for applications of any scale. DynamoDB supports both key-value and document data models, providing fast and predictable performance with seamless scalability. It features automatic scaling, built-in security, backup and restore options, and global tables for multi-region deployment. DynamoDB excels in handling high-traffic web applications, gaming backends, mobile apps, and IoT solutions. It offers consistent single-digit millisecond latency at any scale and supports both strongly consistent and eventually consistent read models. With its integration into the AWS ecosystem, on-demand capacity mode, and support for transactions, DynamoDB is widely used for building highly responsive and scalable applications, particularly those with unpredictable workloads or requiring low-latency data access.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "AWS DynamoDB Website",
+        "title": "AWS DynamoDB",
         "url": "https://aws.amazon.com/dynamodb/",
         "type": "article"
       },
@@ -3002,10 +3041,10 @@
   },
   "RyJFLLGieJ8Xjt-DlIayM": {
     "title": "Firebase",
-    "description": "Firebase is a comprehensive mobile and web application development platform owned by Google. It provides a suite of cloud-based services that simplify app development, hosting, and scaling. Key features include real-time database, cloud storage, authentication, hosting, cloud functions, and analytics. Firebase offers real-time synchronization, allowing data to be updated across clients instantly. Its authentication service supports multiple providers, including email/password, social media logins, and phone authentication. The platform's serverless architecture enables developers to focus on front-end development without managing backend infrastructure. Firebase also provides tools for app testing, crash reporting, and performance monitoring. While it excels in rapid prototyping and building real-time applications, its proprietary nature and potential for vendor lock-in are considerations for large-scale or complex applications. Firebase's ease of use and integration with Google Cloud Platform make it popular for startups and projects requiring quick deployment.\n\nLearn more from the following resources:",
+    "description": "Firebase is a comprehensive mobile and web application development platform owned by Google. It provides a suite of cloud-based services that simplify app development, hosting, and scaling. Key features include real-time database, cloud storage, authentication, hosting, cloud functions, and analytics. Firebase offers real-time synchronization, allowing data to be updated across clients instantly. Its authentication service supports multiple providers, including email/password, social media logins, and phone authentication. The platform's serverless architecture enables developers to focus on front-end development without managing backend infrastructure. Firebase also provides tools for app testing, crash reporting, and performance monitoring.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "The ultimate guide to Firebase",
+        "title": "The Ultimate Guide to Firebase",
         "url": "https://fireship.io/lessons/the-ultimate-beginners-guide-to-firebase/",
         "type": "course"
       },
@@ -3042,7 +3081,7 @@
     "description": "SQLite is a lightweight, serverless, self-contained SQL database engine that is designed for simplicity and efficiency. It is widely used in embedded systems and applications where a full-featured database server is not required, such as mobile apps, desktop applications, and small to medium-sized websites. SQLite stores data in a single file, which makes it easy to deploy and manage. It supports standard SQL queries and provides ACID (Atomicity, Consistency, Isolation, Durability) compliance to ensure data integrity. SQLite’s small footprint, minimal configuration, and ease of use make it a popular choice for applications needing a compact, high-performance database solution.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SQLite website",
+        "title": "SQLite",
         "url": "https://www.sqlite.org/index.html",
         "type": "article"
       },
@@ -3104,7 +3143,7 @@
         "type": "video"
       },
       {
-        "title": "What is time series data?",
+        "title": "What is Time Series Data?",
         "url": "https://www.youtube.com/watch?v=Se5ipte9DMY",
         "type": "video"
       }
@@ -3200,6 +3239,22 @@
       {
         "title": "What is observability?",
         "url": "https://www.youtube.com/watch?v=--17See0KHs",
+        "type": "video"
+      }
+    ]
+  },
+  "ZsZvStCvKwFhlBYe9HGhl": {
+    "title": "Migrations",
+    "description": "Database migrations are a version-controlled way to manage and apply incremental changes to a database schema over time, allowing developers to modify the database structure (e.g., adding tables, altering columns) without affecting existing data. They ensure that the database evolves alongside application code in a consistent, repeatable manner across environments (e.g., development, testing, production), while maintaining compatibility with older versions of the schema. Migrations are typically written in SQL or a database-agnostic language, and are executed using migration tools like Liquibase, Flyway, or built-in ORM features such as Django or Rails migrations.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What are Database Migrations?",
+        "url": "https://www.prisma.io/dataguide/types/relational/what-are-database-migrations",
+        "type": "article"
+      },
+      {
+        "title": "Database Migrations for Beginners",
+        "url": "https://www.youtube.com/watch?v=dJDBP7pPA-o",
         "type": "video"
       }
     ]

@@ -1,9 +1,9 @@
-# Prometheus
+# Provisioning
 
-Prometheus is an open-source systems monitoring and alerting toolkit designed for reliability and scalability. It features a multi-dimensional data model, a flexible query language (PromQL), and an efficient time series database. Prometheus collects metrics from configured targets at given intervals, evaluates rule expressions, displays results, and can trigger alerts when specified conditions are observed. It operates on a pull model, scraping metrics from HTTP endpoints, and supports service discovery for dynamic environments. Prometheus is particularly well-suited for monitoring microservices and containerized environments, integrating seamlessly with systems like Kubernetes. Its ecosystem includes various exporters for third-party systems and a built-in alert manager. Widely adopted in cloud-native architectures, Prometheus is a core component of modern observability stacks, often used alongside tools like Grafana for visualization.
+Provisioning refers to the process of setting up and configuring the necessary IT infrastructure to support an application or service. This includes allocating and preparing resources such as servers, storage, networking, and software environments. Provisioning can be done manually, but in modern DevOps practices, it's typically automated using tools like Terraform, Pulumi, or CloudFormation. These tools allow for infrastructure-as-code, where the entire provisioning process is defined in version-controlled scripts or templates. This approach enables consistent, repeatable deployments across different environments, reduces human error, and facilitates rapid scaling and disaster recovery.
 
-Visit the following resources to learn more:
+Learn more from the following resources:
 
-- [@official@Prometheus Website](https://prometheus.io/)
-- [@video@Introduction to the Prometheus Monitoring System | Key Concepts and Features](https://www.youtube.com/watch?v=STVMGrYIlfg)
-- [@feed@Explore top posts about Prometheus](https://app.daily.dev/tags/prometheus?ref=roadmapsh)
+- [@article@What is provisioning? - RedHat](https://www.redhat.com/en/topics/automation/what-is-provisioning)
+- [@article@What is provisioning? - IBM](https://www.ibm.com/topics/provisioning)
+- [@video@Open Answers: What is provisioning?](https://www.youtube.com/watch?v=hWvDlmhASpk)

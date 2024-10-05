@@ -373,16 +373,6 @@
         "type": "course"
       },
       {
-        "title": "CS 61B Lecture 7: Linked Lists I",
-        "url": "https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0",
-        "type": "article"
-      },
-      {
-        "title": "CS 61B Lecture 7: Linked Lists II",
-        "url": "https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w",
-        "type": "article"
-      },
-      {
         "title": "Linked List Data Structure | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=odW9FU8jPRQ",
         "type": "video"
@@ -390,6 +380,16 @@
       {
         "title": "Linked Lists in 4 minutes",
         "url": "https://www.youtube.com/watch?v=F8AbOfQwl1c",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 7: Linked Lists I",
+        "url": "https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 7: Linked Lists II",
+        "url": "https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w",
         "type": "video"
       },
       {
@@ -512,13 +512,13 @@
         "type": "course"
       },
       {
-        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
-        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
-        "type": "article"
-      },
-      {
         "title": "Array Data Structure | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=QJNwK2uJyGs",
+        "type": "video"
+      },
+      {
+        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
+        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
         "type": "video"
       },
       {
@@ -3786,7 +3786,7 @@
   },
   "7r7o8pYhFHVAJIv0wNT6X": {
     "title": "Hashing / Encryption / Encoding",
-    "description": "Hashing is a one-way function that takes an input and produces a fixed-length output. The output is called a hash. The hash is a unique representation of the input. The hash is deterministic, meaning that the same input will always produce the same hash. The hash is irreversible, meaning that it is impossible to go from the hash back to the original input. The hash is collision-resistant, meaning that it is impossible to find two different inputs that produce the same hash.\n\nEncryption is a two-way function that takes an input and produces an output. The output is called ciphertext. The ciphertext is a unique representation of the input. The ciphertext is deterministic, meaning that the same input will always produce the same ciphertext. The ciphertext is reversible, meaning that it is possible to go from the ciphertext back to the original input. The ciphertext is collision-resistant, meaning that it is impossible to find two different inputs that produce the same ciphertext.\n\nEncoding is a two-way function that takes an input and produces an output. The output is called encoded text. The encoded text is a unique representation of the input. The encoded text is deterministic, meaning that the same input will always produce the same encoded text. The encoded text is reversible, meaning that it is possible to go from the encoded text back to the original input. The encoded text is not collision-resistant, meaning that it is possible to find two different inputs that produce the same encoded text.\n\nVisit the following resources to learn more:",
+    "description": "Hashing is a one-way function that takes an input and produces a fixed-length output. The output is called a hash. The hash is a unique representation of the input. The hash is deterministic, meaning that the same input will always produce the same hash. The hash is irreversible, meaning that it is impossible to go from the hash back to the original input. The hash is not collision-resistant, meaning that it is possible to find two different inputs that produce the same hash.\n\nEncryption is a two-way function that takes an input and produces an output. The output is called ciphertext. The ciphertext is a unique representation of the input. The ciphertext is deterministic, meaning that the same input will always produce the same ciphertext. The ciphertext is reversible, meaning that it is possible to go from the ciphertext back to the original input. The ciphertext is collision-resistant, meaning that it is impossible to find two different inputs that produce the same ciphertext.\n\nEncoding is a two-way function that takes an input and produces an output. The output is called encoded text. The encoded text is a unique representation of the input. The encoded text is deterministic, meaning that the same input will always produce the same encoded text. The encoded text is reversible, meaning that it is possible to go from the encoded text back to the original input. The encoded text is collision-resistant, meaning that it is impossible to find two different inputs that produce the same encoded text.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Explore top posts about Encryption",

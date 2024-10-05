@@ -285,6 +285,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Redis',
+        link: '/redis',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
@@ -349,6 +355,11 @@ const groups: GroupType[] = [
       {
         title: 'AI and Data Scientist',
         link: '/ai-data-scientist',
+        type: 'role',
+      },
+      {
+        title: 'AI Engineer',
+        link: '/ai-engineer',
         type: 'role',
       },
       {

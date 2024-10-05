@@ -4,4 +4,4 @@ Tabs in Android Studio are a UI component used to organize content into multiple
 
 Visit the following resources to learn more:
 
-- [@official@Android developers: Material Tabs](https://developer.android.com/reference/com/google/android/material/tabs/package-summary)
+- [@official@Material Tabs](https://developer.android.com/reference/com/google/android/material/tabs/package-summary)

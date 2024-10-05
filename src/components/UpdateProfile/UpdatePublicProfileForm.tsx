@@ -71,6 +71,7 @@ export function UpdatePublicProfileForm() {
   const [profileRoadmaps, setProfileRoadmaps] = useState<RoadmapType[]>([]);
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isProfileUpdated, setIsProfileUpdated] = useState(false);
 
   const { isCopied, copyText } = useCopyText();
 
@@ -109,6 +110,7 @@ export function UpdatePublicProfileForm() {
 
     await loadProfileSettings();
     toast.success('Profile updated successfully');
+    setIsProfileUpdated(true);
   };
 
   const loadProfileSettings = async () => {
@@ -593,6 +595,42 @@ export function UpdatePublicProfileForm() {
         >
           {isLoading ? 'Please wait..' : 'Save Profile'}
         </button>
+        {isProfileUpdated && publicProfileUrl && (
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              className={cn(
+                'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white',
+                isCopied
+                  ? 'border-green-600 bg-green-600 text-white hover:bg-green-600 hover:text-white'
+                  : '',
+              )}
+              onClick={() => {
+                copyText(`${window.location.origin}${publicProfileUrl}`);
+              }}
+            >
+              {isCopied ? (
+                <>
+                  <CheckCircle className="size-4" />
+                  Copied Profile URL
+                </>
+              ) : (
+                <>
+                  <Copy className="size-4" />
+                  Copy Profile URL
+                </>
+              )}
+            </button>
+            <a
+              className='flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white'
+              href={publicProfileUrl}
+              target="_blank"
+            >
+              <ArrowUpRight className="size-4" />
+              View Profile
+            </a>
+          </div>
+        )}
       </form>
     </div>
   );

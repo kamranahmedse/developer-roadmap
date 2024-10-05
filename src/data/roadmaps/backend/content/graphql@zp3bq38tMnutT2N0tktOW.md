@@ -5,6 +5,6 @@ GraphQL is a query language for APIs and a runtime for executing those queries, 
 Visit the following resources to learn more:
 
 - [@roadmap@GraphQL Roadmap](https://roadmap.sh/graphql)
-- [@official@GraphQL Official Website](https://graphql.org/)
+- [@official@GraphQL](https://graphql.org/)
 - [@video@Tutorial - GraphQL Explained in 100 Seconds](https://www.youtube.com/watch?v=eIQh02xuVw4)
 - [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

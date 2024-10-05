@@ -866,7 +866,7 @@
         "type": "article"
       },
       {
-        "title": "Query Planning@",
+        "title": "Query Planning",
         "url": "https://www.postgresql.org/docs/current/runtime-config-query.html",
         "type": "article"
       }
