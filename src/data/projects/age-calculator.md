@@ -1,8 +1,8 @@
 ---
-title: 'Age Calculator'
-description: Build a simple application to calculate a person's age based on their birthdate using the Luxon library and a JavaScript datepicker.
+title: Age Calculator
+description: Create an age calculator using HTML, CSS, and JavaScript.
 isNew: false
-sort: 1
+sort: 19
 difficulty: 'beginner'
 nature: 'Frontend'
 skills:
@@ -12,8 +12,8 @@ skills:
   - 'DOM Manipulation'
   - 'Package Management'
 seo:
-  title: 'Age Calculator using Luxon Project Idea'
-  description: Build a simple application to calculate a person's age based on their birthdate using the Luxon library and a JavaScript datepicker.
+  title: Age Calculator
+  description: Create an age calculator using HTML, CSS, and JavaScript.
   keywords:
     - 'age calculator'
     - 'frontend project idea'
