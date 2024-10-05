@@ -1,802 +1,582 @@
 {
   "_hYN0gEi9BL24nptEtXWU": {
     "title": "Introduction",
-    "description": "An AI Engineer uses pre-trained models and existing AI tools to improve user experiences. They focus on applying AI in practical ways, without building models from scratch. This is different from AI Researchers and ML Engineers, who focus more on creating new models or developing AI theory.",
+    "description": "",
     "links": []
   },
   "GN6SnI7RXIeW8JeD-qORW": {
     "title": "What is an AI Engineer?",
-    "description": "An AI Engineer uses pre-trained models and existing AI tools to improve user experiences. They focus on applying AI in practical ways, without building models from scratch. This is different from AI Researchers and ML Engineers, who focus more on creating new models or developing AI theory.",
+    "description": "",
     "links": []
   },
   "jSZ1LhPdhlkW-9QJhIvFs": {
     "title": "AI Engineer vs ML Engineer",
-    "description": "AI Engineer differs from an AI Researcher or ML Engineer. AI Engineers focus on leveraging pre-trained models and existing AI technologies to enhance user experiences without the need to train models from scratch.",
+    "description": "",
     "links": []
   },
   "wf2BSyUekr1S1q6l8kyq6": {
     "title": "LLMs",
-    "description": "LLM or Large Language Models are AI models that are trained on a large amount of text data to understand and generate human language. They are the core of applications like ChatGPT, and are used for a variety of tasks, including language translation, question answering, and more.",
+    "description": "",
     "links": []
   },
   "KWjD4xEPhOOYS51dvRLd2": {
     "title": "Inference",
-    "description": "Inference involves using models developed through machine learning to make predictions or decisions. As part of the AI Engineer Roadmap, an AI engineer might create an inference engine, which uses rules and logic to infer new information based on existing data. Often used in natural language processing, image recognition, and similar tasks, inference can help AI systems provide useful outputs based on their training. Working with inference involves understanding different models, how they work, and how to apply them to new data to achieve reliable results.",
+    "description": "",
     "links": []
   },
   "xostGgoaYkqMO28iN2gx8": {
     "title": "Training",
-    "description": "Training in the field of AI involves feeding an algorithm or a neural network with data, and allowing it to adjust its parameters in order to improve its predictions over time. The main objective is to design the system to accurately recognize the patterns within the data set and make accurate predictions or decisions when confronted with new data. In the roadmap to becoming an AI engineer, understanding and implementing various training methodologies is a critical step. AI engineers require this skill to develop accurate and efficient algorithms that can learn from and make decisions based on data.",
+    "description": "",
     "links": []
   },
   "XyEp6jnBSpCxMGwALnYfT": {
     "title": "Embeddings",
-    "description": "Embedding refers to the conversion or mapping of discrete objects such as words, phrases, or even entire sentences into vectors of real numbers. It's an essential part of data preprocessing where high-dimensional data is transformed into a lower-dimensional equivalent. This dimensional reduction helps to preserve the semantic relationships between objects. In AI engineering, embedding techniques are often used in language-orientated tasks like sentiment analysis, text classification, and Natural Language Processing (NLP) to provide an understanding of the vast linguistic inputs AI models receive.",
+    "description": "",
     "links": []
   },
   "LnQ2AatMWpExUHcZhDIPd": {
     "title": "Vector Databases",
-    "description": "Vector databases are specialized databases that are capable of handling and processing data in the form of vectors. Unlike traditional relational databases, which store data in tables, vector databases work with data that can be represented as mathematical vectors. This makes them particularly well-suited for dealing with large, multi-dimensional datasets, which are commonplace in the field of artificial intelligence. As an AI Engineer, understanding and utilizing vector databases can come in handy for numerous tasks such as similarity search, image recognition, and other machine learning applications where large-scale vector data needs to be quickly queried.",
+    "description": "",
     "links": []
   },
   "9JwWIK0Z2MK8-6EQQJsCO": {
     "title": "RAG",
-    "description": "RAG is a paradigm for applying transformer-based generative models in Natural Language Processing tasks. It leverages a hybrid approach, i.e. it combines the capabilities of pre-trained language models and powerful retrieval methods to generate responses. For an AI Engineer, RAG forms an essential part of the NLP (Natural Language Processing) toolkit. This model operates by first retrieving relevant context from a large corpus, and then utilizing this context to generate detailed and contextually rich responses. Its successful application spans across a multitude of NLP tasks including machine translation, dialogue systems, QnA systems, and more. Therefore, RAG is a significant stop on the route to becoming an accomplished AI engineer as it equips them with skills to deal with complex NLP tasks efficiently.",
+    "description": "",
     "links": []
   },
   "Dc15ayFlzqMF24RqIF_-X": {
     "title": "Prompt Engineering",
-    "description": "Prompt Engineering refers to the process of carefully designing and shaping queries or prompts to extract specific responses or behaviors from artificial intelligence models. These prompts are often thought of as the gateway to exploiting these AI models and essential tools for machine testing and performance evaluations. They can affect the model's response, making it invaluable to AI Engineers who are developing AI systems and need to test model's reaction and adaptability with diverse prompts.",
+    "description": "",
     "links": []
   },
   "9XCxilAQ7FRet7lHQr1gE": {
     "title": "AI Agents",
-    "description": "AI Agents are a type of LLM that can be used to automate complex workflows that involve multiple steps and decisions.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What are AI Agents?",
-        "url": "https://aws.amazon.com/what-is/ai-agents/",
-        "type": "article"
-      },
-      {
-        "title": "What are AI Agents?",
-        "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "5QdihE1lLpMc3DFrGy46M": {
     "title": "AI vs AGI",
-    "description": "AI (Artificial Intelligence) refers to systems designed to perform specific tasks, like image recognition or language translation, often excelling in those narrow areas. In contrast, AGI (Artificial General Intelligence) would be a system capable of understanding, learning, and applying intelligence across a wide range of tasks, much like a human, and could adapt to new situations without specific programming.",
+    "description": "",
     "links": []
   },
   "qJVgKe9uBvXc-YPfvX_Y7": {
     "title": "Impact on Product Development",
-    "description": "Incorporating Artificial Intelligence (AI) can transform the process of creating, testing, and delivering products. This could range from utilizing AI for enhanced data analysis to inform product design, use of AI-powered automation in production processes, or even AI as a core feature of the product itself.",
+    "description": "",
     "links": []
   },
   "K9EiuFgPBFgeRxY4wxAmb": {
     "title": "Roles and Responsiblities",
-    "description": "An AI Engineer is entrusted with the task of designing and implementing AI models. This involves working closely with Data Scientists to transform machine learning models into APIs, ensuring that the models are equipped to interact with software applications. AI Engineers are proficient in a variety of programming languages, work with vast datasets, and utilize AI-related applications. Additionally, they often handle tasks such as data preprocessing, data analysis, and machine learning algorithm deployment. They also troubleshoot any issues that might emerge during the AI lifecycle, while maintaining a high level of knowledge about the latest industry trends and technological advancements.",
+    "description": "",
     "links": []
   },
   "d7fzv_ft12EopsQdmEsel": {
     "title": "Pre-trained Models",
-    "description": "Pre-trained models are simply models created by some machine learning engineers to solve a problem. Such models are often shared and other machine learning engineers use these models for similar problems. These models are called pre-trained models because they have been previously trained by using large datasets. These pre-trained models can be used as the starting point for a variety of AI tasks, often as part of transfer learning, to save on the resources that would be needed to start a learning process from scratch. This hastens the journey of becoming an AI engineer as one gets to understand how to improve and fine-tune pre-existing models to specific tasks, making them an essential part of an AI engineer's development plan.",
+    "description": "",
     "links": []
   },
   "1Ga6DbOPc6Crz7ilsZMYy": {
     "title": "Benefits of Pre-trained Models",
-    "description": "LLM models are not only difficult to train, but they are also expensive. Pre-trained models are a cost-effective solution for developers and organizations looking to leverage the power of AI without the need to train models from scratch.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Why you should use Pre-trained Models",
-        "url": "https://cohere.com/blog/pre-trained-vs-in-house-nlp-models",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "MXqbQGhNM3xpXlMC2ib_6": {
     "title": "Limitations and Considerations",
-    "description": "Pre-trained Models are AI models that are previously trained on a large benchmark dataset and provide a starting point for AI developers. They help in saving training time and computational resources. However, they also come with certain limitations and considerations. These models can sometimes fail to generalize well to tasks outside of their original context due to issues like dataset bias or overfitting. Furthermore, using them without understanding their internal working can lead to problematic consequences. Finally, transfer learning, which is the mechanism to deploy these pre-trained models, might not always be the optimum solution for every AI project. Thus, an AI Engineer must be aware of these factors while working with pre-trained models.",
+    "description": "",
     "links": []
   },
   "2WbVpRLqwi3Oeqk1JPui4": {
     "title": "Open AI Models",
-    "description": "Open AI Models are a set of pre-designed, predefined models provided by OpenAI. These models are trained using Machine Learning algorithms to perform artificial intelligence tasks without any need of explicit programming. OpenAI's models are suited for various applications such as text generation, classification and extraction, allowing AI engineers to leverage them for effective implementations. Therefore, understanding and utilizing these models becomes an essential aspect in the roadmap for an AI engineer to develop AI-powered solutions with more efficiency and quality.",
+    "description": "",
     "links": []
   },
   "vvpYkmycH0_W030E-L12f": {
     "title": "Capabilities / Context Length",
-    "description": "OpenAI's capabilities include processing complex tasks like language understanding, code generation, and problem-solving. However, context length limits how much information the model can retain and reference during a session, affecting long conversations or documents. Advances aim to increase this context window for more coherent and detailed outputs over extended interactions.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAI Website",
-        "url": "https://platform.openai.com/docs/guides/fine-tuning/token-limits",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "LbB2PeytxRSuU07Bk0KlJ": {
     "title": "Cut-off Dates / Knowledge",
-    "description": "OpenAI models have a knowledge cutoff date, meaning they only have access to information available up until a specific time. For example, my knowledge is up to date until September 2023. As a result, I may not be aware of recent developments, events, or newly released technology. Additionally, these models don’t have real-time internet access, so they can't retrieve or update information beyond their training data. This can limit the ability to provide the latest details or react to rapidly changing topics.",
+    "description": "",
     "links": []
   },
   "hy6EyKiNxk1x84J63dhez": {
     "title": "Anthropic's Claude",
-    "description": "Claude is a family of large language models developed by Anthropic. Claude 3.5 Sonnet is the latest model (at the time of this writing) in the series, known for its advanced reasoning and multi-modality capabilities.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Clause Website",
-        "url": "https://claude.ai/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "oe8E6ZIQWuYvHVbYJHUc1": {
     "title": "Google's Gemini",
-    "description": "Gemini, formerly known as Bard, is a generative artificial intelligence chatbot developed by Google. Based on the large language model of the same name, it was launched in 2023 after being developed as a direct response to the rise of OpenAI's ChatGPT",
+    "description": "",
     "links": []
   },
   "3PQVZbcr4neNMRr6CuNzS": {
     "title": "Azure AI",
-    "description": "Azure AI is a comprehensive set of AI services and tools provided by Microsoft. It includes a range of capabilities such as natural language processing, computer vision, speech recognition, and more. Azure AI is designed to help developers and organizations build, deploy, and scale AI solutions quickly and easily.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Azure Website",
-        "url": "https://azure.microsoft.com/en-us/products/ai-services/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "OkYO-aSPiuVYuLXHswBCn": {
     "title": "AWS Sagemaker",
-    "description": "AWS Sagemaker is a fully managed platform that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. Sagemaker takes care of the underlying infrastructure, allowing developers to focus on building and improving their models.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "AWS Website",
-        "url": "https://aws.amazon.com/sagemaker/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "8XjkRqHOdyH-DbXHYiBEt": {
     "title": "Hugging Face Models",
-    "description": "Hugging Face has a wide range of pre-trained models that can be used for a variety of tasks, including language understanding and generation, translation, chatbots, and more. Anyone can create an account and use their models, and the models are organized by task, provider, and other criteria.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/models",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "n-Ud2dXkqIzK37jlKItN4": {
     "title": "Mistral AI",
-    "description": "Mistral AI is a French startup founded in 2023, specializing in open-source large language models (LLMs). Created by former Meta and Google DeepMind researchers, it focuses on efficient, customizable AI solutions that promote transparency. Its flagship models, Mistral Large and Mixtral, offer state-of-the-art performance with lower resource requirements, gaining significant attention in the AI field.",
+    "description": "",
     "links": []
   },
   "a7qsvoauFe5u953I699ps": {
     "title": "Cohere",
-    "description": "Cohere is an AI platform that provides natural language processing (NLP) models and tools, enabling developers to integrate powerful language understanding capabilities into their applications. It offers features like text generation, semantic search, classification, and embeddings. Cohere focuses on scalability and ease of use, making it popular for tasks such as content creation, customer support automation, and building search engines with advanced semantic understanding. It also provides a user-friendly API for custom NLP applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Cohere",
-        "url": "https://cohere.com/",
-        "type": "website"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "5ShWZl1QUqPwO-NRGN85V": {
     "title": "OpenAI Models",
-    "description": "OpenAI is an artificial intelligence research lab that is known for its cutting-edge models. These models, like GPT-3, are pre-trained on vast amounts of data and perform remarkably well on tasks like language translation, question-answering, and more without needing any specific task training. Using these pre-trained models can give a massive head-start in building AI applications, as it saves the substantial time and resources that are required for training models from scratch. For an AI Engineer, understanding and leveraging these pre-trained models can greatly accelerate development and lead to superior AI systems.",
+    "description": "",
     "links": []
   },
   "zdeuA4GbdBl2DwKgiOA4G": {
     "title": "OpenAI API",
-    "description": "OpenAI API is a powerful language model developed by OpenAI, a non-profit artificial intelligence research organization. It uses machine learning to generate text from a given set of keywords or sentences, presenting the capability to learn, understand, and generate human-friendly content. As an AI Engineering aspirant, familiarity with tools like the OpenAI API positions you on the right track. It can help with creating AI applications that can analyze and generate text, which is particularly useful in AI tasks such as data extraction, summarization, translation, and natural language processing.",
+    "description": "",
     "links": []
   },
   "_bPTciEA1GT1JwfXim19z": {
     "title": "Chat Completions API",
-    "description": "The Chat Completions API allows developers to create conversational agents by sending user inputs (prompts) and receiving model-generated responses. It supports multiple-turn dialogues, maintaining context across exchanges to deliver relevant responses. This API is often used for chatbots, customer support, and interactive applications where maintaining conversation flow is essential.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAI Website",
-        "url": "https://platform.openai.com/docs/api-reference/chat/completions",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "9-5DYeOnKJq9XvEMWP45A": {
     "title": "Writing Prompts",
-    "description": "Writing Prompts are specific instructions or guides provided to OpenAI API to produce desired texts. They can range from simple, straight sentences intended for generating specific outputs to more complex, creative ones aiming for more open-ended, artificial intelligent responses. While the OpenAI API is capable of executing an extensive variety of tasks, how it performs is strongly influenced by how these writing prompts are crafted and constructed. During the journey to become an AI Engineer, understanding and designing effective prompts becomes vital for proper system training and interaction.",
+    "description": "",
     "links": []
   },
   "nyBgEHvUhwF-NANMwkRJW": {
     "title": "Open AI Playground",
-    "description": "Open AI Playground is an interactive platform, provided by OpenAI, that enables developers to experiment with and understand the capabilities of OpenAI's offerings. Here, you can try out several cutting-edge language models like GPT-3 or Codex. This tool is crucial in the journey of becoming an AI Engineer, because it provides a hands-on experience in implementing and testing language models. Manipulating models directly helps you get a good grasp on how AI models can influence the results based on input parameters. Therefore, Open AI Playground holds significance on the AI Engineer's roadmap not only as a learning tool, but also as a vital platform for rapid prototyping and debugging.",
+    "description": "",
     "links": []
   },
   "15XOFdVp0IC-kLYPXUJWh": {
     "title": "Fine-tuning",
-    "description": "OpenAI API allows you to fine-tune and adapt pre-trained models to specific tasks or datasets, improving performance on domain-specific problems. By providing custom training data, the model learns from examples relevant to the intended application, such as specialized customer support, unique content generation, or industry-specific tasks.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAI Docs",
-        "url": "https://platform.openai.com/docs/guides/fine-tuning",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "qzvp6YxWDiGakA2mtspfh": {
     "title": "Maximum Tokens",
-    "description": "Number of Maximum tokens in OpenAI API depends on the model you are using.\n\nFor example, the `gpt-4o` model has a maximum of 128,000 tokens.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAI API Documentation",
-        "url": "https://platform.openai.com/docs/api-reference/completions/create",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "FjV3oD7G2Ocq5HhUC17iH": {
     "title": "Token Counting",
-    "description": "Token counting refers to the process of quantifying the occurrence of tokens—unique instances of meaningful words, symbols, or other atomic units in a dataset. In artificial intelligence (AI), specifically in natural language processing (NLP), token counting serves as a foundational building block to understand and analyze text data. It helps in performing tasks such as text classification, sentiment analysis, and other language modeling tasks. It also forms the basis of techniques like Bag of Words, Term Frequency-Inverse Document Frequency (TF-IDF), and word embeddings, which are crucial in developing effective AI models.",
+    "description": "",
     "links": []
   },
   "DZPM9zjCbYYWBPLmQImxQ": {
     "title": "Pricing Considerations",
-    "description": "Pricing Considerations refer to the factors and elements that need to be taken into account when setting the price for a product or service. It includes aspects such as cost of production, market demand, competition, and perceived value. In the AI Engineer Roadmap, it can denote the determination of the cost involved in AI model development, implementation, maintenance, and upgrades. Various factors such as the complexity of models, the resources required, timeline, expertise needed, and the value provided to the user play a significant role in pricing considerations.",
+    "description": "",
     "links": []
   },
   "8ndKHDJgL_gYwaXC7XMer": {
     "title": "AI Safety and Ethics",
-    "description": "Learn about the principles and guidelines for building safe and ethical AI systems.",
+    "description": "",
     "links": []
   },
   "cUyLT6ctYQ1pgmodCKREq": {
     "title": "Prompt Injection Attacks",
-    "description": "Prompt Injection Attacks refer to a cyber threat where nefarious actors manipulate or inject malicious codes into the system using various techniques like SQL injection, Cross-Site Scripting (XSS), or Command Injection. This practice aims to exploit a software system's vulnerabilities, allowing unauthorized access to sensitive information. In the AI Engineer Roadmap, understanding these attack types is essential. Knowledge about such attacks can help developers in AI to build robust and secure AI systems that can resist potential threats and ensure system integrity. Better understanding of threat landscape can guide engineers toward implementing additional security measures during the design and development process of AI applications.",
+    "description": "",
     "links": []
   },
   "lhIU0ulpvDAn1Xc3ooYz_": {
     "title": "Bias and Fareness",
-    "description": "Bias and fairness in AI arise when models produce skewed or unequal outcomes for different groups, often reflecting imbalances in the training data. This can lead to discriminatory effects in critical areas like hiring, lending, and law enforcement. Addressing these concerns involves ensuring diverse and representative data, implementing fairness metrics, and ongoing monitoring to prevent biased outcomes. Techniques like debiasing algorithms and transparency in model development help mitigate bias and promote fairness in AI systems.",
+    "description": "",
     "links": []
   },
   "sWBT-j2cRuFqRFYtV_5TK": {
     "title": "Security and Privacy Concerns",
-    "description": "Security and Privacy Concerns encapsulates the understanding and addressing of potential risks associated with AI systems. These include, but are not limited to, data protection, access control, regulatory compliance, and the ethically complex area of how AI impacts individual privacy. As an aspiring AI Engineer, it is essential to acknowledge these concerns alongside technical skills as they influence the design, implementation, and application of AI technologies. Familiarity with this area helps in designing AI solutions that align with standards of security and privacy while effectively addressing the needs of the user.",
+    "description": "",
     "links": []
   },
   "Pt-AJmSJrOxKvolb5_HEv": {
     "title": "Conducting adversarial testing",
-    "description": "Adversarial testing involves creating malicious inputs to test the robustness of AI models. This includes testing for prompt injection, evasion, and other adversarial attacks.",
+    "description": "",
     "links": []
   },
   "ljZLa3yjQpegiZWwtnn_q": {
     "title": "OpenAI Moderation API",
-    "description": "OpenAI Moderation API is a feature or service provided by OpenAI that helps in controlling or filtering the output generated by an AI model. It is highly useful in identifying and preventing content that violates OpenAI’s usage policies from being shown. As an AI engineer, learning to work with this API helps implement a layer of security to ensure that the AI models developed are producing content that aligns with the ethical and moral guidelines set in place. Thus, it becomes a fundamental aspect of the AI Engineer Roadmap when dealing with user-generated content or creating AI-based services that interact with people.",
+    "description": "",
     "links": []
   },
   "4Q5x2VCXedAWISBXUIyin": {
     "title": "Adding end-user IDs in prompts",
-    "description": "Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide you with more actionable feedback in the event that they may detect any policy violations in applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAI Documentation",
-        "url": "https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "qmx6OHqx4_0JXVIv8dASp": {
     "title": "Robust prompt engineering",
-    "description": "Robust prompt engineering refers to designing, refining, and optimizing the instructions or queries given to an AI model to execute specific tasks. Originally, AI models were trained on a wide range of internet text without any specific commands. However, it can be more effective to provide these models with explicit prompts to guide their responses or actions. Prompt engineering aids in shaping the output of an AI model, significantly improving the accuracy of its responses. This becomes particularly valuable for AI engineers when working on state-of-the-art models like GPT-3, where the output's quality and relevance can be heavily influenced by innovative and well-structured prompts. With robust prompt engineering, AI practitioners can better channel the model's raw capabilities into desired outcomes, marking a crucial skill in an AI Engineer's journey.",
+    "description": "",
     "links": []
   },
   "t1SObMWkDZ1cKqNNlcd9L": {
     "title": "Know your Customers / Usecases",
-    "description": "Understanding your target customers and use-cases helps making informed decisions during the development to ensure that the final AI solution appropriately meets the relevant needs of the users. You can use this knowledge to choose the right tools, frameworks, technologies, design the right architecture, and even prevent abuse.",
+    "description": "",
     "links": []
   },
   "ONLDyczNacGVZGojYyJrU": {
     "title": "Constraining outputs and inputs",
-    "description": "Constraining outputs and inputs is important for controlling the behavior of AI models. This includes techniques like output filtering, input validation, and rate limiting.",
+    "description": "",
     "links": []
   },
   "a_3SabylVqzzOyw3tZN5f": {
     "title": "OpenSource AI",
-    "description": "OpenSource AI refers to artificial intelligence tools, software, libraries and platforms that are freely available to the public, allowing individuals and organizations to use, modify and distribute them as per their requirements. The OpenSource AI initiatives provide an ecosystem for AI developers to innovate, collaborate and mutually learn by sharing their codebase and datasets. Specifically, in the AI engineer's roadmap, OpenSource AI aids in accelerating the AI application development process, provides access to pre-trained models, and promotes the understanding of AI technology through transparency.",
+    "description": "",
     "links": []
   },
   "RBwGsq9DngUsl8PrrCbqx": {
     "title": "Open vs Closed Source Models",
-    "description": "Open source models are types of software whose source code is available for the public to view, modify, and distribute. They encourage collaboration and transparency, often resulting in rapid improvements and innovations. Closed source models, on the other hand, do not make their source code available and are typically developed and maintained by specific companies or teams. They often provide more stability, support, and consistency. Within the AI Engineer Roadmap, both open and closed source models play a unique role. While open source models allow for customization, experimentation and a broader understanding of underlying algorithms, closed source models might offer proprietary algorithms and structures that could lead to more efficient or unique solutions. Therefore, understanding the differences, advantages, and drawbacks of both models is essential for an aspiring AI engineer.",
+    "description": "",
     "links": []
   },
   "97eu-XxYUH9pYbD_KjAtA": {
     "title": "Popular Open Source Models",
-    "description": "Open-source models consist of pre-made algorithms and mathematical models that are freely available for anyone to use, modify, and distribute. In the realm of Artificial Intelligence, these models often include frameworks for machine learning, deep learning, natural language processing, and other AI methodologies. Thanks to their openly accessible nature, AI engineers often utilize these open-source models during project execution, fostering increased efficiency by reducing the need to create complex models from scratch. They serve as a valuable resource, often speeding up the development phase and promoting collaboration among the global AI community. Popular examples include TensorFlow, PyTorch, and Keras, each offering unique strengths and capabilities for different areas of AI engineering.",
+    "description": "",
     "links": []
   },
   "v99C5Bml2a6148LCJ9gy9": {
     "title": "Hugging Face",
-    "description": "Hugging Face is the platform where the machine learning community collaborates on models, datasets, and applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "YLOdOvLXa5Fa7_mmuvKEi": {
     "title": "Hugging Face Hub",
-    "description": "Hugging Face Hub is a platform where you can share, access and collaborate upon a wide array of machine learning models, primarily focused on Natural Language Processing (NLP) tasks. It is a central repository that facilitates storage and sharing of models, reducing the time and overhead usually associated with these tasks. For an AI Engineer, leveraging Hugging Face Hub can accelerate model development and deployment, effectively allowing them to work on structuring efficient AI solutions instead of worrying about model storage and accessibility issues.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "YKIPOiSj_FNtg0h8uaSMq": {
     "title": "Hugging Face Tasks",
-    "description": "Hugging face has a section where they have a list of tasks with the popular models for that task.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/tasks",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "3kRTzlLNBnXdTsAEXVu_M": {
     "title": "Inference SDK",
-    "description": "Inference is the process of using a trained model to make predictions on new data. As this process can be compute-intensive, running on a dedicated server can be an interesting option. The huggingface\\_hub library provides an easy way to call a service that runs inference for hosted models. There are several services you can connect to:\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face Inference Client",
-        "url": "https://huggingface.co/docs/huggingface_hub/en/package_reference/inference_client",
-        "type": "article"
-      },
-      {
-        "title": "Hugging Face Inference API",
-        "url": "https://huggingface.co/docs/api-inference/en/index",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "bGLrbpxKgENe2xS1eQtdh": {
     "title": "Transformers.js",
-    "description": "Transformers.js is a JavaScript library providing the ability to use machine learning transformers in applications. It is based on the concept of attention mechanism - \"transformers\" in artificial intelligence, which allows the model to focus on different words in a sentence during translation or text generation tasks. The benefits of using such transformers are their capacity to handle long sequences of data and their parallelization abilities which offer faster computational time. In the AI Engineer's learning pathway, understanding and working with transformers can be pivotal as they form a fundamental part of natural language processing tasks, often used within AI solutions. With JavaScript being a language of choice for many web applications, having an understanding of Transformers.js provides an AI engineer with the knowledge necessary to integrate powerful language models directly within web-applications.",
+    "description": "",
     "links": []
   },
   "rTT2UnvqFO3GH6ThPLEjO": {
     "title": "Ollama",
-    "description": "Ollama is an open-source tool for running large language models (LLMs) locally on personal computers. It supports various models like Llama 2, Mistral, and Code Llama, bundling weights, configurations, and data into a single package. Ollama offers a user-friendly interface, API access, and integration capabilities, allowing users to leverage AI capabilities while maintaining data privacy and control. It's designed for easy installation and use on macOS and Linux, with Windows support in development.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Ollama",
-        "url": "https://ollama.com",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "ro3vY_sp6xMQ-hfzO-rc1": {
     "title": "Ollama Models",
-    "description": "Ollama supports a wide range of language models, including but not limited to Llama, Phi, Mistral, Gemma and more.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Ollama Models",
-        "url": "https://ollama.com/library",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "TsG_I7FL-cOCSw8gvZH3r": {
     "title": "Ollama SDK",
-    "description": "Ollama SDK can be used to develop applications locally.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Ollama SDK",
-        "url": "https://ollama.com",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "--ig0Ume_BnXb9K2U7HJN": {
     "title": "What are Embeddings",
-    "description": "Embeddings are a way of representing complex and high-dimensional data in a low-dimensional space, typically a vector. For example, words in a language can be represented as multi-dimensional vectors through word embedding techniques, such as Word2Vec or GloVe. These representations capture semantic relationships among words that machines can understand and process. In the roadmap of becoming an AI Engineer, handling and understanding embeddings is vital because they are essential to natural language processing, recommendation systems and any AI component that deals with complex data in a compact, meaningful manner.",
+    "description": "",
     "links": []
   },
   "eMfcyBxnMY_l_5-8eg6sD": {
     "title": "Semantic Search",
-    "description": "Semantic Search is an information retrieval approach which leverages not just the keywords in a search query, but also the intent and contextual meaning behind them to produce highly relevant results. In other words, it makes search engines more intelligent and precise, understanding user intent and making connections like a human brain would. It's an important technique that an AI Engineer might utilize, especially when dealing with large amounts of data or if they're involved in creating intelligent search systems. From natural language processing to relationship mapping, semantic search plays a key role in advancing artificial intelligence search capabilities.",
+    "description": "",
     "links": []
   },
   "HQe9GKy3p0kTUPxojIfSF": {
     "title": "Recommendation Systems",
-    "description": "Recommendation systems are a subclass of information filtering systems that are meant to predict the preferences or ratings that a user would give to a particular item. Broadly speaking, these systems are primarily used in applications where a user receives suggestions for the products or services they might be interested in, such as Netflix's movie recommendations or Amazon's product suggestions. In terms of an AI Engineer Roadmap, building recommendation systems is a fundamental skill, as these systems typically utilize concepts of machine learning and data mining, and their purpose primarily revolves around making predictions based on large volumes of data. These skills make an integral part of AI-related fields like natural language processing, robotics, and deep learning.",
+    "description": "",
     "links": []
   },
   "AglWJ7gb9rTT2rMkstxtk": {
     "title": "Anomaly Detection",
-    "description": "Embeddings transform complex data (like text or behavior) into numerical vectors, capturing relationships between data points. These vectors are stored in a vector database, which allows for efficient similarity searches. Anomalies can be detected by measuring the distance between a data point's vector and its nearest neighbors—if a point is significantly distant, it's likely anomalous. This approach is scalable, adaptable to various data types, and effective for tasks like fraud detection, predictive maintenance, and cybersecurity.",
+    "description": "",
     "links": []
   },
   "06Xta-OqSci05nV2QMFdF": {
     "title": "Data Classification",
-    "description": "Embeddings are used in data classification by converting data (like text or images) into numerical vectors that capture underlying patterns and relationships. These vector representations make it easier for machine learning models to distinguish between different classes based on the similarity or distance between vectors in high-dimensional space. By training a classifier on these embeddings, tasks like sentiment analysis, document categorization, and image classification can be performed more accurately and efficiently. Embeddings simplify complex data and enhance classification by highlighting key features relevant to each class.",
+    "description": "",
     "links": []
   },
   "l6priWeJhbdUD5tJ7uHyG": {
     "title": "Open AI Embeddings API",
-    "description": "Open AI Embeddings API is a powerful system that is used to generate high-quality word and sentence embeddings. With this API, it becomes a breeze to convert textual data into a numerical format that Machine Learning models can process. This conversion of text into numerical data is crucial for Natural Language Processing (NLP) tasks that an AI Engineer often encounters. Understanding and harnessing the capabilities of the Open AI Embeddings API, therefore, forms an essential part of the AI Engineer's roadmap.",
+    "description": "",
     "links": []
   },
   "y0qD5Kb4Pf-ymIwW-tvhX": {
     "title": "Open AI Embedding Models",
-    "description": "Open AI embedding models refer to the artificial intelligence variants designed to reformat or transcribe input data into compact, dense numerical vectors. These models simplify and reduce the input data from its original complex nature, creating a digital representation that is easier to manipulate. This data reduction technique is critical in the AI Engineer Roadmap because it paves the way for natural language processing tasks. It helps in making precise predictions, clustering similar data, and producing accurate search results based on contextual relevance.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Open AI Embedding Models",
-        "url": "https://platform.openai.com/docs/guides/embeddings",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "4GArjDYipit4SLqKZAWDf": {
     "title": "Pricing Considerations",
-    "description": "OpenAI Embeddings API allows users to compute and extract textual embeddings from large-scale models that OpenAI trains. The pricing for this API can vary based on multiple factors like the number of requests, number of tokens in the text, total computation time, throughput, and others. Understanding the pricing model for the OpenAI Embeddings API is vital for AI Engineers to effectively manage costs while using the API. They should be aware of any limitations or additional costs associated with high volume requests, speed of processing, or special features they plan to use. This knowledge helps the engineers to optimize costs, which is important for the budgeting of AI projects and the overall roadmap of an AI Engineer.",
+    "description": "",
     "links": []
   },
   "apVYIV4EyejPft25oAvdI": {
     "title": "Open-Source Embeddings",
-    "description": "Open-source embeddings, such as Word2Vec, GloVe, and FastText, are essentially vector representations of words or phrases. These representations capture the semantic relationships between words and their surrounding context in a multi-dimensional space, making it easier for machine learning models to understand and process textual data. In the AI Engineer Roadmap, gaining knowledge of open-source embeddings is critical. These embeddings serve as a foundation for natural language processing tasks, ranging from sentiment analysis to chatbot development, and are widely used in the AI field for their ability to enhance the performance of machine learning models dealing with text data.",
+    "description": "",
     "links": []
   },
   "ZV_V6sqOnRodgaw4mzokC": {
     "title": "Sentence Transformers",
-    "description": "Sentence Transformers refer to a variant of the popular Transformers model that is specifically designed and optimized for creating meaningful and effective sentence embeddings. It enables developers to easily convert paragraphs and sentences into dense vector representations that can be compared for semantic similarity. In the AI engineer's journey, getting familiar with Sentence Transformers is important because it allows the modelling of natural language in AI systems to provide richer, more nuanced interactions. This can be especially valuable in designing and implementing AI applications such as chatbots, sentiment analysis tools, and more.",
+    "description": "",
     "links": []
   },
   "dLEg4IA3F5jgc44Bst9if": {
     "title": "Models on Hugging Face",
-    "description": "Hugging Face has a wide range of pre-trained models that can be used for a variety of tasks, including language understanding and generation, translation, chatbots, and more. Anyone can create an account and use their models, and the models are organized by task, provider, and other criteria.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/models",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "tt9u3oFlsjEMfPyojuqpc": {
     "title": "Vector Databases",
-    "description": "Vector databases are a type of database system specifically designed to handle vector space model data, typically used for high-dimensional data sets. With the explosion of data in AI applications, these databases have become an integral part of the infrastructure, providing an efficient and scalable way to manage and query large volumes of vector data. For AI engineers, understanding how to use and optimize vector databases can significantly improve the performance of AI models which use vector-based data, such as natural language processing (NLP) and image recognition models. Proficiency in vector databases is hence a crucial skill in the AI Engineer Roadmap.",
+    "description": "",
     "links": []
   },
   "WcjX6p-V-Rdd77EL8Ega9": {
     "title": "Purpose and Functionality",
-    "description": "The Purpose and Functionality are fundamental concepts in the AI Engineer Roadmap. To put simply, 'Purpose' refers to the intended goal or desired result that an AI engineer wants to achieve in an AI project. These goals can range from building neural networks to creating self-driving cars. 'Functionality', on the other hand, pertains to the behaviors and actions that an AI program can perform to fulfill its purpose. This could involve machine learning algorithms, language processing techniques, or data analysis methods among others. Understanding the purpose and functionality of an AI project allows an AI engineer to strategically plan, develop, and manage AI systems effectively.",
+    "description": "",
     "links": []
   },
   "dSd2C9lNl-ymmCRT9_ZC3": {
     "title": "Chroma",
-    "description": "Chroma is a vector database designed to efficiently store, index, and query high-dimensional embeddings. It’s optimized for AI applications like semantic search, recommendation systems, and anomaly detection by allowing fast retrieval of similar vectors based on distance metrics (e.g., cosine similarity). Chroma enables scalable and real-time processing, making it a popular choice for projects involving embeddings from text, images, or other data types.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Chroma Website",
-        "url": "https://docs.trychroma.com/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "_Cf7S1DCvX7p1_3-tP3C3": {
     "title": "Pinecone",
-    "description": "Pinecone is a vector database designed specifically for machine learning applications. It facilitates the process of transforming data into a vector and indexing it for quick retrieval. As a cloud-based service, it allows AI Engineers to easily handle high-dimensional data and utilize it for building models. As part of an AI Engineer's Roadmap, understanding and using vector databases like Pinecone can help streamline the development and deployment of AI and ML applications. This is particularly useful in building recommendation systems, personalized search and similarity search which are important components of an AI-based service.",
+    "description": "",
     "links": []
   },
   "VgUnrZGKVjAAO4n_llq5-": {
     "title": "Weaviate",
-    "description": "Weaviate is an open-source, GraphQL and RESTful API-based, knowledge graph that allows you to store, search, and retrieve data. One of its core features is machine learning algorithms that enhance information handling. For an AI Engineer, mastering Weaviate becomes relevant as it bridges the gap between unstructured data and structured data, which is a common challenge when working with AI and machine learning models. By understanding this, an AI engineer can leverage these abilities to manipulate structured data more effectively, optimize data searchability, and improve the efficiency of data-dependent processes in AI projects.",
+    "description": "",
     "links": []
   },
   "JurLbOO1Z8r6C3yUqRNwf": {
     "title": "FAISS",
-    "description": "FAISS stands for Facebook AI Similarity Search, it is a database management library developed by Facebook's AI team. Primarily used for efficient similarity search and clustering of dense vectors, it allows users to search through billions of feature vectors swiftly and efficiently. As an AI engineer, learning FAISS is beneficial because these vectors represent objects that are typically used in machine learning or AI applications. For instance, in an image recognition task, a dense vector might be a list of pixels from an image, and FAISS allows a quick search of similar images in a large database.",
+    "description": "",
     "links": []
   },
   "rjaCNT3Li45kwu2gXckke": {
     "title": "LanceDB",
-    "description": "LanceDB is a relatively new, multithreaded, high-speed data warehouse optimized for AI and machine learning data processing. It's designed to handle massive amounts of data, enables quick storage and retrieval, and supports lossless data compression. For an AI engineer, learning LanceDB could be beneficial as it can be integrated with machine learning frameworks for collecting, processing and analyzing large datasets. These functionalities can help to streamline the process for AI model training, which requires extensive data testing and validation.",
+    "description": "",
     "links": []
   },
   "DwOAL5mOBgBiw-EQpAzQl": {
     "title": "Qdrant",
-    "description": "Qdrant is a high-performance vector similarity search engine with extensive restful API and distributed support, written in Rust. It allows efficiently storing, handling, and retrieving large amounts of vector data. Integrating Qdrant as a part of the AI Engineer's toolkit can drastically improve functionality and efficiency for AI Engineers, as they often work with vectors during data preprocessing, feature extraction, and modeling. Qdrant's flexibility and control over data indexing and query processing make it particularly handy when dealing with large datasets prevalent in AI projects.",
+    "description": "",
     "links": []
   },
   "9kT7EEQsbeD2WDdN9ADx7": {
     "title": "Supabase",
-    "description": "Supabase is an open-source Firebase alternative that offers a suite of tools for database management, realtime subscriptions, and automating tasks. As an AI Engineer, you'll often have to manage and work with data to develop and test AI models. With Supabase, you can build databases more efficiently and interact with your data in real-time. It also supports user authentication and provides serverless functions which can be crucial in AI development workflows.",
+    "description": "",
     "links": []
   },
   "j6bkm0VUgLkHdMDDJFiMC": {
     "title": "MongoDB Atlas",
-    "description": "MongoDB Atlas is a fully managed cloud-based NoSQL database service by MongoDB. It simplifies database deployment and management across platforms like AWS, Azure, and Google Cloud. Using a flexible document model, Atlas automates tasks such as scaling, backups, and security, allowing developers to focus on building applications. With features like real-time analytics and global clusters, it offers a powerful solution for scalable and resilient app development.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "MongoDB Atlas Vector Search",
-        "url": "https://www.mongodb.com/products/platform/atlas-vector-search",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "5TQnO9B4_LTHwqjI7iHB1": {
     "title": "Indexing Embeddings",
-    "description": "This step involves converting data (such as text, images, or other content) into numerical vectors (embeddings) using a pre-trained model. These embeddings capture the semantic relationships between data points. Once generated, the embeddings are stored in a vector database, which organizes them in a way that enables efficient retrieval based on similarity. This indexed structure allows fast querying and comparison of vectors, facilitating tasks like semantic search, recommendation systems, and anomaly detection.",
+    "description": "",
     "links": []
   },
   "ZcbRPtgaptqKqWBgRrEBU": {
     "title": "Performing Similarity Search",
-    "description": "This step involves querying the vector database to find the most similar embeddings to a given input vector. When a query is made, the system computes the distance between the input vector and stored embeddings using metrics like cosine similarity or Euclidean distance. The closest matches—those with the smallest distances—are retrieved as results, allowing for accurate semantic search, recommendations, or content retrieval based on similarity in the embedded space. This process enables highly efficient and relevant searches across large datasets.",
+    "description": "",
     "links": []
   },
   "lVhWhZGR558O-ljHobxIi": {
     "title": "RAG & Implementation",
-    "description": "RAG (Relation and Graph) is a mechanism used in artificial intelligence that represents the structured relationships existing between different data entities. Programming languages such as Python provide libraries for RAG implementation, making it simpler for AI engineers. In the AI Engineer roadmap, understanding and implementing RAG models can prove beneficial especially while working with AI algorithms that extensively deal with relational and structured data, such as graph-based Deep Learning algorithms, or while creating knowledge graphs in contexts like Natural Language Processing (NLP). Implementing RAG efficiently can lead to more accurate, efficient, and interpretable AI models.",
+    "description": "",
     "links": []
   },
   "GCn4LGNEtPI0NWYAZCRE-": {
     "title": "RAG Usecases",
-    "description": "Retrieval-Augmented Generation (RAG) is a type of sequence-to-sequence model with documents retrievers in their architecture. This method integrates the power of pre-trained language models and extractive question answering methods to answer any queries with high precision. In the AI Engineer Roadmap, this tool has practical applications, such as enabling machines to provide detailed responses based on large-scale databases instead of generating responses only from a fixed context. This feature is highly beneficial in developing advanced AI systems with extensive knowledge recall capabilities. RAG's use-cases cover areas like customer service chatbots, automated legal assistance, healthcare advice systems, and other areas where comprehensive information retrieval is crucial.",
+    "description": "",
     "links": []
   },
   "qlBEXrbV88e_wAGRwO9hW": {
     "title": "RAG vs Fine-tuning",
-    "description": "RAG (Retrieval-Augmented Generation) and Fine-tuning are two distinct techniques utilized in Natural Language Processing (NLP). RAG introduces an approach where the model retrieves documents and faqs from a database to enhance the content generation process. It enables more factual accuracy and relevant context in the outputs. On the other hand, Fine-tuning involves modifying a pre-trained Neural Network model on a new or different task. Adjustments are made to the model's parameters to enhance performance on the new task. Typically, an AI engineer might use RAG for tasks requiring contextual understanding and factual accuracy, while implementing fine-tuning techniques to leverage existing pre-trained models for optimizing new tasks and projects.",
+    "description": "",
     "links": []
   },
   "mX987wiZF7p3V_gExrPeX": {
     "title": "Chunking",
-    "description": "In Retrieval-Augmented Generation (RAG), **chunking** refers to breaking large documents or data into smaller, manageable pieces (chunks) to improve retrieval and generation efficiency. This process helps the system retrieve relevant information more accurately by indexing these chunks in a vector database. During a query, the model retrieves relevant chunks instead of entire documents, which enhances the precision of the generated responses and allows better handling of long-form content within the context length limits.",
+    "description": "",
     "links": []
   },
   "grTcbzT7jKk_sIUwOTZTD": {
     "title": "Embedding",
-    "description": "Embedding refers to the conversion or mapping of discrete objects such as words, phrases, or even entire sentences into vectors of real numbers. It's an essential part of data preprocessing where high-dimensional data is transformed into a lower-dimensional equivalent. This dimensional reduction helps to preserve the semantic relationships between objects. In AI engineering, embedding techniques are often used in language-orientated tasks like sentiment analysis, text classification, and Natural Language Processing (NLP) to provide an understanding of the vast linguistic inputs AI models receive.",
+    "description": "",
     "links": []
   },
   "zZA1FBhf1y4kCoUZ-hM4H": {
     "title": "Vector Database",
-    "description": "A Vector Database is a tool that specializes in storing and efficiently retrieving vector representations (or embeddings). These vectors often represent embeddings of items or entities in high-dimensional space. This indexation process enables search and clustering algorithms. In this step of implementing RAG, we use a Vector Database to store the embeddings of the documents.",
+    "description": "",
     "links": []
   },
   "OCGCzHQM2LQyUWmiqe6E0": {
     "title": "Retrieval Process",
-    "description": "In this step of implementing RAG, we clean up the user's query by removing any extra information, we then generate an embedding for the query and look for the most similar embeddings in the vector database.",
+    "description": "",
     "links": []
   },
   "2jJnS9vRYhaS69d6OxrMh": {
     "title": "Generation",
-    "description": "In this step of implementing RAG, we use the found chunks to generate a response to the user's query using an LLM.",
+    "description": "",
     "links": []
   },
   "WZVW8FQu6LyspSKm1C_sl": {
     "title": "Using SDKs Directly",
-    "description": "Software Development Kits, often referred to as SDKs, are a collection of development tools bundled together. These tools assist in creating innovative applications for specific software frameworks or hardware platforms. In the AI Engineer Roadmap, using SDKs directly implies that AI engineers leverage these kits to interact directly with AI-related services or platforms. This approach provides a lower level control, allowing engineers to customize applications according to their unique requirements. Therefore, acquiring skill in using SDKs directly forms an instrumental part of the AI Engineer Roadmap, enabling practitioners to build and enhance AI applications effectively and efficiently.",
+    "description": "",
     "links": []
   },
   "ebXXEhNRROjbbof-Gym4p": {
     "title": "Langchain",
-    "description": "LangChain is a software framework that helps facilitate the integration of large language models into applications. As a language model integration framework, LangChain's use-cases largely overlap with those of language models in general, including document analysis and summarization, chatbots, and code analysis.",
+    "description": "",
     "links": []
   },
   "d0ontCII8KI8wfP-8Y45R": {
     "title": "Llama Index",
-    "description": "LlamaIndex is a simple, flexible data framework for connecting custom data sources to large language models.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "LlamaIndex Official Website",
-        "url": "https://llamaindex.ai/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "eOqCBgBTKM8CmY3nsWjre": {
     "title": "Open AI Assistant API",
-    "description": "OpenAI Assistant API is a tool provided by OpenAI that allows developers to integrate the same AI used in ChatGPT into their own applications, products or services. This AI conducts dynamic, interactive and context-aware conversations useful for building AI assistants in various applications. In the AI Engineer Roadmap, mastering the use of APIs like the Open AI Assistant API is a crucial skill, as it allows engineers to harness the power and versatility of pre-trained algorithms and use them for their desired tasks. AI Engineers can offload the intricacies of model training and maintenance, focusing more on product development and innovation.",
+    "description": "",
     "links": []
   },
   "c0RPhpD00VIUgF4HJgN2T": {
     "title": "Replicate",
-    "description": "Replicate is a version-control tool specifically designed for machine learning. It enables effective tracking of experiments, facilitating the comparison of different models and parameters. As an AI Engineer, knowing how to use Replicate provides you with the ability to save versions of data and model files, thereby preventing loss of work and confusion. It also contributes to smoother teamwork and collaborations by allowing effective sharing and reproduction of experiments, which is crucial in an AI project life cycle.",
+    "description": "",
     "links": []
   },
   "AeHkNU-uJ_gBdo5-xdpEu": {
     "title": "AI Agents",
-    "description": "AI Agents are a type of LLM that can be used to automate complex workflows that involve multiple steps and decisions.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What are AI Agents?",
-        "url": "https://aws.amazon.com/what-is/ai-agents/",
-        "type": "article"
-      },
-      {
-        "title": "What are AI Agents?",
-        "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "778HsQzTuJ_3c9OSn5DmH": {
     "title": "Agents Usecases",
-    "description": "AI Agents allow you to automate complex workflows that involve multiple steps and decisions.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What are AI Agents?",
-        "url": "https://aws.amazon.com/what-is/ai-agents/",
-        "type": "article"
-      },
-      {
-        "title": "What are AI Agents?",
-        "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "voDKcKvXtyLzeZdx2g3Qn": {
     "title": "ReAct Prompting",
-    "description": "ReAct prompting is a tactical approach employed in Conversational AI to generate textual responses. It is essentially utilized in scenarios where a chatbot or an AI-generated persona is required to carry on a conversation. This strategy adds a layer of intelligence to the conversation, maneuvering the AI to generate responses that are contextually sensitive and relevant. In an AI Engineer's Roadmap, an understanding of React Prompting becomes significant during the design of AI interaction models. Using this technique, AI Engineers are capable of creating more intuitive, engaging, and user-friendly conversational AI agents.",
+    "description": "",
     "links": []
   },
   "6xaRB34_g0HGt-y1dGYXR": {
     "title": "Manual Implementation",
-    "description": "You can build the AI agents manually by coding the logic from scratch without using any frameworks or libraries. For example, you can use the OpenAI API and write the looping logic yourself to keep the agent running until it has the answer.",
+    "description": "",
     "links": []
   },
   "Sm0Ne5Nx72hcZCdAcC0C2": {
     "title": "OpenAI Functions / Tools",
-    "description": "OpenAI, a leading organization in the field of artificial intelligence, provides a suite of functions and tools to enable developers and AI engineers to design, test, and deploy AI models. These tools include robust APIs for tasks like natural language processing, vision, and reinforcement learning, and platforms like GPT-3, CLIP, and Codex that provide pre-trained models. Utilization of these OpenAI components allows AI engineers to get a head-start in application development, simplifying the process of integration and reducing the time required for model training and tuning. Understanding and being adept at these tools forms a crucial part of the AI Engineer's roadmap to build impactful AI-driven applications.",
+    "description": "",
     "links": []
   },
   "mbp2NoL-VZ5hZIIblNBXt": {
     "title": "OpenAI Assistant API",
-    "description": "OpenAI Assistant API is a tool developed by OpenAI which allows developers to establish interaction between their applications, products or services and state-of-the-art AI models. By integrating this API in their software architecture, artificial intelligence engineers can leverage the power of advanced language models developed by the OpenAI community. These integrated models can accomplish a multitude of tasks, like writing emails, generating code, answering questions, tutoring in different subjects and even creating conversational agents. For an AI engineer, mastery over such APIs means they can deploy and control highly sophisticated AI models with just a few lines of code.",
+    "description": "",
     "links": []
   },
   "W7cKPt_UxcUgwp8J6hS4p": {
     "title": "Multimodal AI",
-    "description": "Multimodal AI refers to artificial intelligence systems capable of processing and integrating multiple types of data inputs simultaneously, such as text, images, audio, and video. Unlike traditional AI models that focus on a single data type, multimodal AI combines various inputs to achieve a more comprehensive understanding and generate more robust outputs. This approach mimics human cognition, which naturally integrates information from multiple senses to form a complete perception of the world. By leveraging diverse data sources, multimodal AI can perform complex tasks like image captioning, visual question answering, and cross-modal content generation.",
+    "description": "",
     "links": []
   },
   "sGR9qcro68KrzM8qWxcH8": {
     "title": "Multimodal AI Usecases",
-    "description": "Multimodal AI integrates various data types for diverse applications. In human-computer interaction, it enhances interfaces using speech, gestures, and facial expressions. In healthcare, it combines medical scans and records for accurate diagnoses. For autonomous vehicles, it processes data from sensors for real-time navigation. Additionally, it generates images from text and summarizes videos in content creation, while also analyzing satellite and sensor data for climate insights.",
+    "description": "",
     "links": []
   },
   "fzVq4hGoa2gdbIzoyY1Zp": {
     "title": "Image Understanding",
-    "description": "Image Understanding involves extracting meaningful information from images, such as photos or videos. This process includes tasks like image recognition, where an AI system is trained to recognize certain objects within an image, and image segmentation, where an image is divided into multiple regions according to some criteria. For an AI engineer, mastering techniques in Image Understanding is crucial because it forms the basis for more complex tasks such as object detection, facial recognition, or even whole scene understanding, all of which play significant roles in various AI applications. As AI technologies continue evolving, the ability to analyze and interpret visual data becomes increasingly important in fields ranging from healthcare to autonomous vehicles.",
+    "description": "",
     "links": []
   },
   "49BWxYVFpIgZCCqsikH7l": {
     "title": "Image Generation",
-    "description": "Image Generation often refers to the process of creating new images from an existing dataset or completely from scratch. For an AI Engineer, understanding image generation is crucial as it is one of the key aspects of machine learning and deep learning related to computer vision. It often involves techniques like convolutional neural networks (CNN), generative adversarial networks (GANs), and autoencoders. These technologies are used to generate artificial images that closely resemble original input, and can be applied in various fields such as healthcare, entertainment, security and more.",
+    "description": "",
     "links": []
   },
   "TxaZCtTCTUfwCxAJ2pmND": {
     "title": "Video Understanding",
-    "description": "Video Understanding is the process of analyzing videos to comprehend its content and context. Leveraging Machine Learning and AI technologies, this branch is responsible for extracting valuable information from video data. In the AI Engineer's Roadmap, video understanding comes into play when building AI models that can interpret video inputs. These engines need to recognize patterns and actions within the video, can track object's movements, and may also infer the future actions from the video stream. Training an AI model in video understanding requires knowledge of convolutional neural networks (CNN), recurring neural networks (RNN), and preferably some experience with Long Short-Term Memory (LSTM) networks.",
+    "description": "",
     "links": []
   },
   "mxQYB820447DC6kogyZIL": {
     "title": "Audio Processing",
-    "description": "Using Multimodal AI, audio data can be processed with other types of data, such as text, images, or video, to enhance understanding and analysis. For example, it can synchronize audio with corresponding visual inputs, like lip movements in video, to improve speech recognition or emotion detection. This fusion of modalities enables more accurate transcription, better sentiment analysis, and enriched context understanding in applications such as virtual assistants, multimedia content analysis, and real-time communication systems.",
+    "description": "",
     "links": []
   },
   "GCERpLz5BcRtWPpv-asUz": {
     "title": "Text-to-Speech",
-    "description": "Text-to-Speech (TTS) is a type of assistive technology that reads digital text out loud. It is a technology widely used in various programming fields, including AI Engineering. Traditionally, TTS has been employed in accessibility applications, but with the advent of AI, it's now being used to develop voice assistants, audio book narrators, and many more intelligent applications. For AI engineers, knowledge of TTS techniques opens up new possibilities for user interaction and can form an essential part of any AI application which interacts with its users primarily through spoken language.",
+    "description": "",
     "links": []
   },
   "jQX10XKd_QM5wdQweEkVJ": {
     "title": "Speech-to-Text",
-    "description": "Speech-to-Text is a type of technology that converts spoken language into written text. This technology is often incorporated in virtual assistants, transcription services and many other applications where transforming voice into text can facilitate better user interaction or communication. For an AI engineer, this falls under the wider ambit of Natural Language Processing (NLP), making it an important skill to understand and comprehend. The ability to design and implement speech-to-text models can allow AI engineers to create more interactive and adaptive machine learning systems, improve accessibility, and expand the scope of potential AI applications.",
+    "description": "",
     "links": []
   },
   "CRrqa-dBw1LlOwVbrZhjK": {
     "title": "OpenAI Vision API",
-    "description": "OpenAI Vision API is an API provided by OpenAI that is designed to analyze and generate insights from images. By feeding it an image, the Vision API can provide information about the objects and activities present in the image. For AI Engineers, this tool can be particularly useful for conducting Computer Vision tasks effortlessly. Using this API can support in creating applications that need image recognition, object detection and similar functionality, saving AI Engineers from having to create complex image processing algorithms from scratch. Understanding how to work with APIs, especially ones as advanced as the OpenAI Vision API, is an essential skill in the AI Engineer's roadmap.",
+    "description": "",
     "links": []
   },
   "LKFwwjtcawJ4Z12X102Cb": {
     "title": "DALL-E API",
-    "description": "The DALL-E API allows developers to integrate OpenAI's image generation model into their applications. Using text-based prompts, the API generates unique images that match the descriptions provided by users. This makes it useful for tasks like creative design, marketing, product prototyping, and content creation. The API is highly customizable, enabling developers to adjust parameters such as image size and style. DALL-E excels at creating visually rich content from textual descriptions, expanding the possibilities for AI-driven creative workflows.",
+    "description": "",
     "links": []
   },
   "OTBd6cPUayKaAM-fLWdSt": {
     "title": "Whisper API",
-    "description": "Whisper API is an interface primarily used for interacting with OpenAI's Whisper ASR system. It's a system designed to convert spoken language into written text, a technique that is commonly known as Automatic Speech Recognition (ASR). As an AI engineer, understanding and using Whisper API in the roadmap is key as it fuses with several other machine learning principles to improve an application's ability to understand and transcribe spoken language, which is becoming increasingly significant in domains like virtual assistants, transcription services, voice biometrics and more.",
+    "description": "",
     "links": []
   },
   "EIDbwbdolR_qsNKVDla6V": {
     "title": "Hugging Face Models",
-    "description": "Hugging Face has a wide range of pre-trained models that can be used for a variety of tasks, including language understanding and generation, translation, chatbots, and more. Anyone can create an account and use their models, and the models are organized by task, provider, and other criteria.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Hugging Face",
-        "url": "https://huggingface.co/models",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "j9zD3pHysB1CBhLfLjhpD": {
     "title": "LangChain for Multimodal Apps",
-    "description": "LangChain is a software framework that helps facilitate the integration of large language models into applications. As a language model integration framework, LangChain's use-cases largely overlap with those of language models in general, including document analysis and summarization, chatbots, and code analysis.",
+    "description": "",
     "links": []
   },
   "akQTCKuPRRelj2GORqvsh": {
     "title": "LlamaIndex for Multimodal Apps",
-    "description": "LlamaIndex is a simple, flexible data framework for connecting custom data sources to large language models.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "LlamaIndex Official Website",
-        "url": "https://llamaindex.ai/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "NYge7PNtfI-y6QWefXJ4d": {
     "title": "Development Tools",
-    "description": "A lot of developer related tools have popped up since the AI revolution. It's being used in the coding editors, in the terminal, in the CI/CD pipelines, and more.",
+    "description": "",
     "links": []
   },
   "XcKeQfpTA5ITgdX51I4y-": {
     "title": "AI Code Editors",
-    "description": "AI code editors have the first-class support for AI in the editor. You can use AI to generate code, fix bugs, chat with your code, and more.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Cursor",
-        "url": "https://cursor.com/",
-        "type": "website"
-      },
-      {
-        "title": "Zed AI",
-        "url": "https://zed.dev/ai",
-        "type": "website"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "TifVhqFm1zXNssA8QR3SM": {
     "title": "Code Completion Tools",
-    "description": "AI Code Completion Tools are software tools that use AI models to assist with code generation and editing. These tools help developers write code more quickly and efficiently by providing suggestions, completing code snippets, and suggesting improvements. AI Code Completion Tools can also be used to generate documentation, comments, and other code-related content.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "GitHub Copilot",
-        "url": "https://copilot.github.com/",
-        "type": "website"
-      },
-      {
-        "title": "Codeium",
-        "url": "https://codeium.com/",
-        "type": "website"
-      },
-      {
-        "title": "Supermaven",
-        "url": "https://supermaven.com/",
-        "type": "website"
-      },
-      {
-        "title": "TabNine",
-        "url": "https://www.tabnine.com/",
-        "type": "website"
-      }
-    ]
+    "description": "",
+    "links": []
   }
 }
