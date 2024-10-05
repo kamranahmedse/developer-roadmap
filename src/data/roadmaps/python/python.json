@@ -2981,11 +2981,42 @@
       "focusable": true
     },
     {
+      "id": "vu1fvZ3363p4ejEb8whE",
+      "type": "subtopic",
+      "position": {
+        "x": 77.79817070787664,
+        "y": 922.1504012205187
+      },
+      "selected": false,
+      "data": {
+        "label": "uv venv",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 46,
+      "style": {
+        "width": 145,
+        "height": 46
+      },
+      "positionAbsolute": {
+        "x": 77.79817070787664,
+        "y": 922.1504012205187
+      },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true
+    },
+    {
       "id": "lkST4ErYyBfrCcpsuptzh",
       "type": "label",
       "position": {
         "x": 77.79817070787664,
-        "y": 926.1504012205187
+        "y": 979.1504012205187
       },
       "selected": false,
       "data": {
@@ -3005,7 +3036,7 @@
       },
       "positionAbsolute": {
         "x": 77.79817070787664,
-        "y": 926.1504012205187
+        "y": 979.1504012205187
       },
       "dragging": false,
       "selectable": true,
@@ -4281,3 +4312,4 @@
     }
   ]
 }
+
