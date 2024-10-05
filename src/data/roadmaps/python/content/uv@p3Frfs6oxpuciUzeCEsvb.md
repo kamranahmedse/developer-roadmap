@@ -2,6 +2,6 @@
 
 uv is an "extremely fast" python package installer and resolver.
 
-Learn more about it using the following resources:
+Learn more from the following resources:
 
-- [@official@uv GitHub Repository](https://github.com/astral-sh/uv)
+- [@opensource@astral-sh/uv](https://github.com/astral-sh/uv)
