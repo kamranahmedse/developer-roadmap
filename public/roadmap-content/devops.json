@@ -828,6 +828,11 @@
         "type": "article"
       },
       {
+        "title": "Uncomplicated Firewall (UFW)",
+        "url": "https://dev.to/coder7475/uncomplicated-firewall-ufw-1638",
+        "type": "article"
+      },
+      {
         "title": "Why do we need Firewalls?",
         "url": "https://www.tutorialspoint.com/what-is-a-firewall-and-why-do-you-need-one",
         "type": "article"
@@ -995,6 +1000,11 @@
         "type": "article"
       },
       {
+        "title": "NGINX Reverse Proxy and Load Balancing",
+        "url": "https://dzone.com/articles/nginx-reverse-proxy-and-load-balancing",
+        "type": "article"
+      },
+      {
         "title": "What is a Load Balancer?",
         "url": "https://www.youtube.com/watch?v=sCR3SAVdyCc",
         "type": "video"
@@ -1013,6 +1023,11 @@
       {
         "title": "NGINX documentation",
         "url": "https://www.nginx.com/resources/glossary/reverse-proxy-server/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding NGINX as a Reverse Proxy",
+        "url": "https://medium.com/globant/understanding-nginx-as-a-reverse-proxy-564f76e856b2",
         "type": "article"
       },
       {
