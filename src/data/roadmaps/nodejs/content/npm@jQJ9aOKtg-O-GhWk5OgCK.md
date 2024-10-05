@@ -12,3 +12,5 @@ Visit the following resources to learn more:
 - [@official@Official Documentation](https://docs.npmjs.com/)
 - [@video@NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
 - [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)
+- [@article@How to use npm audit](https://www.nodejs-security.com/blog/how-to-use-npm-audit)
+- [@article@How to use yarn audit](https://www.nodejs-security.com/blog/how-to-use-yarn-audit)
