@@ -22,7 +22,16 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
+import {
+  Ban,
+  Coins,
+  FileText,
+  HeartHandshake,
+  Maximize,
+  Minimize,
+  Star,
+  X,
+} from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -33,6 +42,7 @@ import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
 import { PaidResourceDisclaimer } from './PaidResourceDisclaimer.tsx';
+import { cn } from '../../lib/classname.ts';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -82,6 +92,7 @@ export function TopicDetail(props: TopicDetailProps) {
     resourceTitle,
   } = props;
 
+  const [isFullScreen, setIsFullScreen] = useState(false);
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
   const [contributionUrl, setContributionUrl] = useState('');
   const [isActive, setIsActive] = useState(false);
@@ -344,7 +355,10 @@ export function TopicDetail(props: TopicDetailProps) {
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed right-0 top-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className={cn(
+          'fixed right-0 top-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6',
+          isFullScreen && 'sm:max-w-screen',
+        )}
       >
         {isLoading && (
           <div className="flex h-full w-full items-center justify-center">
@@ -379,6 +393,21 @@ export function TopicDetail(props: TopicDetailProps) {
 
                 <button
                   type="button"
+                  id="minimize-maximize-topic"
+                  className="absolute right-11 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                  onClick={() => {
+                    setIsFullScreen((prev) => !prev);
+                  }}
+                >
+                  {isFullScreen ? (
+                    <Minimize className="h-5 w-5" />
+                  ) : (
+                    <Maximize className="h-5 w-5" />
+                  )}
+                </button>
+
+                <button
+                  type="button"
                   id="close-topic"
                   className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
                   onClick={() => {
@@ -392,7 +421,12 @@ export function TopicDetail(props: TopicDetailProps) {
               {/* Topic Content */}
               {hasContent ? (
                 <>
-                  <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
+                  <div
+                    className={cn(
+                      'prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5',
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
+                  >
                     {topicTitle && <h1>{topicTitle}</h1>}
                     <div
                       id="topic-content"
@@ -403,7 +437,12 @@ export function TopicDetail(props: TopicDetailProps) {
               ) : (
                 <>
                   {!canSubmitContribution && (
-                    <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
+                    <div
+                      className={cn(
+                        'flex h-[calc(100%-38px)] flex-col items-center justify-center',
+                        isFullScreen && 'container mx-auto max-w-7xl',
+                      )}
+                    >
                       <FileText className="h-16 w-16 text-gray-300" />
                       <p className="mt-2 text-lg font-medium text-gray-500">
                         Empty Content
@@ -411,7 +450,12 @@ export function TopicDetail(props: TopicDetailProps) {
                     </div>
                   )}
                   {canSubmitContribution && (
-                    <div className="mx-auto flex h-[calc(100%-38px)] max-w-[400px] flex-col items-center justify-center text-center">
+                    <div
+                      className={cn(
+                        'mx-auto flex h-[calc(100%-38px)] max-w-[400px] flex-col items-center justify-center text-center',
+                        isFullScreen && 'container mx-auto max-w-7xl',
+                      )}
+                    >
                       <HeartHandshake className="mb-2 h-16 w-16 text-gray-300" />
                       <p className="text-lg font-semibold text-gray-900">
                         Help us write this content
@@ -439,34 +483,44 @@ export function TopicDetail(props: TopicDetailProps) {
                 <>
                   <ResourceListSeparator
                     text="Free Resources"
-                    className="text-green-600"
+                    className={cn(
+                      'text-green-600',
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
                     icon={HeartHandshake}
                   />
-                  <ul className="ml-3 mt-4 space-y-1">
-                    {links.map((link) => {
-                      return (
-                        <li key={link.id}>
-                          <TopicDetailLink
-                            url={link.url}
-                            type={link.type}
-                            title={link.title}
-                            onClick={() => {
-                              // if it is one of our roadmaps, we want to track the click
-                              if (canSubmitContribution) {
-                                const parsedUrl = parseUrl(link.url);
+                  <div
+                    className={cn(
+                      'ml-3 mt-4',
+                      isFullScreen && 'container mx-auto max-w-7xl',
+                    )}
+                  >
+                    <ul className="space-y-1">
+                      {links.map((link) => {
+                        return (
+                          <li key={link.id}>
+                            <TopicDetailLink
+                              url={link.url}
+                              type={link.type}
+                              title={link.title}
+                              onClick={() => {
+                                // if it is one of our roadmaps, we want to track the click
+                                if (canSubmitContribution) {
+                                  const parsedUrl = parseUrl(link.url);
 
-                                window.fireEvent({
-                                  category: 'TopicResourceClick',
-                                  action: `Click: ${parsedUrl.hostname}`,
-                                  label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
-                                });
-                              }
-                            }}
-                          />
-                        </li>
-                      );
-                    })}
-                  </ul>
+                                  window.fireEvent({
+                                    category: 'TopicResourceClick',
+                                    action: `Click: ${parsedUrl.hostname}`,
+                                    label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
+                                  });
+                                }
+                              }}
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </>
               )}
 
