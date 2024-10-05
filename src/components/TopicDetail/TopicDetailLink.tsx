@@ -29,6 +29,17 @@ type TopicDetailLinkProps = {
 export function TopicDetailLink(props: TopicDetailLinkProps) {
   const { url, onClick, type, title, isPaid = false } = props;
 
+  const linkType =
+    type === 'opensource'
+      ? url.includes('github')
+        ? 'github'
+        : url.includes('gitlab')
+          ? 'gitlab'
+          : url.includes('bitbucket')
+            ? 'bitbucket'
+            : 'Open Source'
+      : type;
+
   return (
     <a
       href={url}
@@ -42,14 +53,7 @@ export function TopicDetailLink(props: TopicDetailLinkProps) {
           (isPaid ? paidLinkTypes[type] : linkTypes[type]) || 'bg-gray-200',
         )}
       >
-        {type === 'opensource' ? (
-          <>
-            {url.includes('github') && 'GitHub'}
-            {url.includes('gitlab') && 'GitLab'}
-          </>
-        ) : (
-          type
-        )}
+        {linkType}
       </span>
       {title}
     </a>
