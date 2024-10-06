@@ -2347,7 +2347,7 @@
     "links": [
       {
         "title": "bcrypt",
-        "url": "https://www.npmjs.com/package/bcrypt",
+        "url": "https://github.com/kelektiv/node.bcrypt.js",
         "type": "opensource"
       },
       {
