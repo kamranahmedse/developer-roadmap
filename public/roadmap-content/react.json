@@ -658,7 +658,7 @@
     "links": [
       {
         "title": "React Documentation on useCallback",
-        "url": "https://reactjs.org/docs/hooks-reference.html#usecallback",
+        "url": "https://react.dev/reference/react/useCallback",
         "type": "article"
       },
       {
