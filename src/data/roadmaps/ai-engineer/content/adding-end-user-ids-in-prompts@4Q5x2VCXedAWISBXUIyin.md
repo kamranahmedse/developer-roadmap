@@ -1,9 +1,25 @@
 # Adding end-user IDs in prompts
 
-Adding end-user IDs in AI engineering typically refers to using unique identifiers to personalize prompts or interactions for individual users. This technique allows AI models to tailor responses based on specific user data, preferences, and history, which can enhance personalization and user experience.
+Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide your team with more actionable feedback in the event that we detect any policy violations in your application.
+
+The IDs should be a string that uniquely identifies each user. We recommend hashing their username or email address, in order to avoid sending us any identifying information. If you offer a preview of your product to non-logged in users, you can send a session ID instead.
+
+You can include end-user IDs in your API requests via the user parameter as follows:
+
+```python
+from openai import OpenAI
+client = OpenAI()
+
+response = client.chat.completions.create(
+  model="gpt-4o-mini",
+  messages=[
+    {"role": "user", "content": "This is a test"}
+  ],
+  max_tokens=5,
+  user="user_123456"
+)
+```
 
 Visit the following resources to learn more:
 
-- [@article@Ai prompt Engineering](https://www.glideapps.com/blog/ai-prompt-engineering)
-- [@article@Supercharge your prompt with these tips! — A Prompt Engineering Guide](https://devloper-hs.medium.com/supercharge-your-prompt-with-these-tips-a-prompt-engineering-guide-18713b530412)
-- [@video@Prompt Management 101 - Full Guide for AI Engineers](https://youtu.be/Qddc_DNo9qY?si=l4_BlFDmOs7Ibgid)
+-[@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)
