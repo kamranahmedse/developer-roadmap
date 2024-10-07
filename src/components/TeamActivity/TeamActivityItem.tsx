@@ -102,7 +102,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm bg-white"
       >
         {actionType === 'in_progress' && (
           <>
@@ -158,7 +158,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const activityLimit = showAll ? activities.length : 5;
 
   return (
-    <li key={user._id} className="overflow-hidden rounded-md border">
+    <li key={user._id} className="overflow-hidden bg-white rounded-md border">
       <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
         {username} has {activities.length} updates in {uniqueResourcesCount}
         &nbsp;resource(s)
