@@ -9,6 +9,7 @@ import { Tooltip } from '../Tooltip';
 import { DashboardTeamRoadmaps } from './DashboardTeamRoadmaps';
 import type { BuiltInRoadmap } from './PersonalDashboard';
 import { InviteMemberPopup } from '../TeamMembers/InviteMemberPopup';
+import { Users, Users2 } from 'lucide-react';
 
 type TeamDashboardProps = {
   builtInRoleRoadmaps: BuiltInRoadmap[];
@@ -110,12 +111,14 @@ export function TeamDashboard(props: TeamDashboardProps) {
 
       <h2 className="mb-3 mt-6 flex h-[20px] items-center justify-between text-xs uppercase text-gray-400">
         Team Members
+        <span className="flex-grow h-[1px] bg-gray-200 mx-3" />
         {canManageCurrentTeam && (
           <a
             href={`/team/members?t=${teamId}`}
-            className="rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+            className="flex flex-row items-center rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
           >
-            Manage Members
+            <Users2 className="mr-1.5 size-3" strokeWidth={2.5} />
+            Members
           </a>
         )}
       </h2>
@@ -162,7 +165,10 @@ export function TeamDashboard(props: TeamDashboardProps) {
         </div>
       )}
 
-      <TeamActivityPage teamId={teamId} />
+      <TeamActivityPage
+        teamId={teamId}
+        canManageCurrentTeam={canManageCurrentTeam}
+      />
     </section>
   );
 }

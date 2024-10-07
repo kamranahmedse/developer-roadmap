@@ -13,6 +13,7 @@ import { useToast } from '../../hooks/use-toast';
 import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { pageProgressMessage } from '../../stores/page';
 import type { BuiltInRoadmap } from './PersonalDashboard';
+import { MapIcon, Users2 } from 'lucide-react';
 
 type DashboardTeamRoadmapsProps = {
   isLoading: boolean;
@@ -205,12 +206,14 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
   const roadmapHeading = (
     <div className="mb-3 flex h-[20px] items-center justify-between gap-2 text-xs">
       <h2 className="uppercase text-gray-400">Roadmaps</h2>
+      <span className="mx-3 h-[1px] flex-grow bg-gray-200" />
       {canManageCurrentTeam && (
         <a
           href={`/team/roadmaps?t=${teamId}`}
-          className="rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+          className="flex flex-row items-center rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
         >
-          Manage Roadmaps
+          <MapIcon className="mr-1.5 size-3" strokeWidth={2.5} />
+          Roadmaps
         </a>
       )}
     </div>
