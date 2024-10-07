@@ -9,8 +9,3 @@ Redis Modules are extensions that enhance the core functionality of Redis by add
 5. **RedisAI**: Integrates artificial intelligence capabilities, allowing for the execution of machine learning models directly within Redis.
 
 These modules enable users to leverage Redis for a wide variety of use cases, from real-time analytics and search functionalities to complex data relationships and machine learning, while maintaining the performance and simplicity of Redis as an in-memory database.
-
-Learn more from the following resources:
-
-- [@official@Redis Modules API](https://redis.io/docs/latest/develop/reference/modules/)
-- [@official@Turn Redis into a Multi-Model Database](https://redis.io/resources/modules-redis-labs-turns-redis-multi-model-database/)
