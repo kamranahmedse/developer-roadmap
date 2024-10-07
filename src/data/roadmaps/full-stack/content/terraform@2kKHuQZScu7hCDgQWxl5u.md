@@ -4,6 +4,7 @@ Terraform is an extremely popular open source Infrastructure as Code (IaC) tool 
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
 - [@official@Terraform Website](https://www.terraform.io/)
 - [@official@Terraform Documentation](https://www.terraform.io/docs)
 - [@article@Terraform Tutorials](https://learn.hashicorp.com/terraform)
