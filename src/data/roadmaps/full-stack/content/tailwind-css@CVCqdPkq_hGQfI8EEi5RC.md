@@ -4,7 +4,7 @@ CSS Framework that provides atomic CSS classes to help you style components e.g.
 
 Visit the following resources to learn more:
 
-- [@article@Tailwind Website](https://tailwindcss.com)
+- [@official@Tailwind Website](https://tailwindcss.com)
 - [@video@Tailwind CSS Full Course for Beginners](https://www.youtube.com/watch?v=lCxcTsOHrjo)
 - [@video@Tailwind CSS Crash Course](https://www.youtube.com/watch?v=UBOj6rqRUME)
 - [@video@Should You Use Tailwind CSS?](https://www.youtube.com/watch?v=hdGsFpZ0J2E)
