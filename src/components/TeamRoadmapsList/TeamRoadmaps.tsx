@@ -309,9 +309,9 @@ export function TeamRoadmaps() {
         {createRoadmapModal}
         {confirmationContentIdModal}
 
-        <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
+        <RoadmapIcon className="mb-3 h-14 w-14 opacity-10" />
 
-        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
+        <h3 className="mb-1 text-xl font-bold text-gray-900">No roadmaps</h3>
         <p className="text-base text-gray-500">
           {canManageCurrentTeam
             ? 'Add a roadmap to start tracking your team'
@@ -320,7 +320,7 @@ export function TeamRoadmaps() {
 
         {canManageCurrentTeam && (
           <button
-            className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
+            className="mt-3 rounded-md bg-black px-3 py-1.5 font-medium text-white hover:bg-gray-900 text-sm"
             onClick={() => setIsPickingOptions(true)}
           >
             Add roadmap

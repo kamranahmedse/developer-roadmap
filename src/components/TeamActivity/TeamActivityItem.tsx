@@ -102,7 +102,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm bg-white"
       >
         {actionType === 'in_progress' && (
           <>

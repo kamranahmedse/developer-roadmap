@@ -3,13 +3,9 @@ import type { TeamMember } from '../TeamProgress/TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { getUser } from '../../lib/jwt';
-import { LoadingProgress } from './LoadingProgress';
-import { ResourceProgress } from '../Activity/ResourceProgress';
 import { TeamActivityPage } from '../TeamActivity/TeamActivityPage';
 import { cn } from '../../lib/classname';
 import { Tooltip } from '../Tooltip';
-import { DashboardCardLink } from './DashboardCardLink';
-import { PencilRuler } from 'lucide-react';
 import { DashboardTeamRoadmaps } from './DashboardTeamRoadmaps';
 import type { BuiltInRoadmap } from './PersonalDashboard';
 import { InviteMemberPopup } from '../TeamMembers/InviteMemberPopup';
@@ -34,6 +30,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
     const { response, error } = await httpGet<TeamMember[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`,
     );
+
     if (error || !response) {
       toast.error(error?.message || 'Failed to get team progress');
       return;
@@ -111,8 +108,16 @@ export function TeamDashboard(props: TeamDashboardProps) {
         builtInSkillRoadmaps={builtInSkillRoadmaps}
       />
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+      <h2 className="mb-3 mt-6 flex h-[20px] items-center justify-between text-xs uppercase text-gray-400">
         Team Members
+        {canManageCurrentTeam && (
+          <a
+            href={`/team/members?t=${teamId}`}
+            className="rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+          >
+            Manage Members
+          </a>
+        )}
       </h2>
       {isLoading && <TeamMemberLoading className="mb-6" />}
       {!isLoading && (
@@ -157,7 +162,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
         </div>
       )}
 
-      {!isLoading && <TeamActivityPage teamId={teamId} />}
+      <TeamActivityPage teamId={teamId} />
     </section>
   );
 }

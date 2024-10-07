@@ -202,32 +202,49 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
     />
   );
 
+  const roadmapHeading = (
+    <div className="mb-3 flex h-[20px] items-center justify-between gap-2 text-xs">
+      <h2 className="uppercase text-gray-400">Roadmaps</h2>
+      {canManageCurrentTeam && (
+        <a
+          href={`/team/roadmaps?t=${teamId}`}
+          className="rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+        >
+          Manage Roadmaps
+        </a>
+      )}
+    </div>
+  );
+
   if (!isLoading && learningRoadmapsToShow.length === 0) {
     return (
-      <div className="flex flex-col items-center p-4 py-10">
-        {pickRoadmapOptionModal}
-        {addRoadmapModal}
-        {createRoadmapModal}
-        {confirmationContentIdModal}
+      <>
+        {roadmapHeading}
+        <div className="flex flex-col items-center rounded-md border bg-white p-4 py-10">
+          {pickRoadmapOptionModal}
+          {addRoadmapModal}
+          {createRoadmapModal}
+          {confirmationContentIdModal}
 
-        <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
+          <RoadmapIcon className="mb-4 h-14 w-14 opacity-10" />
 
-        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
-        <p className="text-base text-gray-500">
-          {canManageCurrentTeam
-            ? 'Add a roadmap to start tracking your team'
-            : 'Ask your team admin to add some roadmaps'}
-        </p>
+          <h2 className="text-lg font-semibold sm:text-lg">No roadmaps</h2>
+          <p className="my-1 max-w-[400px] text-balance text-sm text-gray-500 sm:my-2 sm:text-base">
+            {canManageCurrentTeam
+              ? 'Add a roadmap to start tracking your team'
+              : 'Ask your team admin to add some roadmaps'}
+          </p>
 
-        {canManageCurrentTeam && (
-          <button
-            className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
-            onClick={() => setIsPickingOptions(true)}
-          >
-            Add roadmap
-          </button>
-        )}
-      </div>
+          {canManageCurrentTeam && (
+            <button
+              className="mt-1 rounded-lg bg-black px-3 py-1 text-sm font-medium text-white hover:bg-gray-900"
+              onClick={() => setIsPickingOptions(true)}
+            >
+              Add roadmap
+            </button>
+          )}
+        </div>
+      </>
     );
   }
 
@@ -238,7 +255,7 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
       {createRoadmapModal}
       {confirmationContentIdModal}
 
-      <h2 className="mb-3 text-xs uppercase text-gray-400">Roadmaps</h2>
+      {roadmapHeading}
       {isLoading && <LoadingProgress />}
       {!isLoading && learningRoadmapsToShow.length > 0 && (
         <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">

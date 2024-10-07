@@ -183,8 +183,11 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
   }, [users, activities]);
 
   if (!teamId) {
-    window.location.href = '/';
-    return;
+    if (typeof window !== 'undefined') {
+      window.location.href = '/';
+    } else {
+      return null;
+    }
   }
 
   if (isLoading) {
@@ -233,7 +236,14 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
           />
         </>
       ) : (
-        <TeamEmptyStream teamId={teamId} />
+        <>
+          <h3 className="mb-4 flex w-full items-center justify-between text-xs uppercase text-gray-400">
+            Team Activity
+          </h3>
+          <div className="rounded-lg border bg-white p-4">
+            <TeamEmptyStream teamId={teamId} />
+          </div>
+        </>
       )}
     </>
   );
