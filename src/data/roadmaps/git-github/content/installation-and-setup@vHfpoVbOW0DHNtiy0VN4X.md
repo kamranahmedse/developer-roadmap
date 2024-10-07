@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 
 - [@official@GitHub CLI - Installation](https://github.com/cli/cli?tab=readme-ov-file#installation)
 - [@official@GitHub CLI - Release](https://github.com/cli/cli/releases/)
-- [@official@GitHub CLI quickstart](https://docs.github.com/en/github-cli/github-cli/quickstart)
+- [@official@GitHub CLI Quickstart](https://docs.github.com/en/github-cli/github-cli/quickstart)

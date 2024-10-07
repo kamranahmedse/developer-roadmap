@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@Documentation](https://firebase.google.com/docs/crashlytics/get-started?platform=android)
+- [@official@Crashlytics Documentation](https://firebase.google.com/docs/crashlytics/get-started?platform=android)
 - [@video@Firebase: Crashlytics](https://www.youtube.com/watch?v=LhjTAkifr6g)

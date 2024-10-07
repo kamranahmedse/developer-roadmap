@@ -5,6 +5,7 @@
 Here are some common git log options:
 
 - `-2`: Only show the last two commits.
+- `-- <file-name>`: Show the commits that modified a specific file.
 - `--all`: Show all branches in the repository.
 - `--graph`: Display the commit history as a graph.
 - `--pretty`: Enable clean colorized output.

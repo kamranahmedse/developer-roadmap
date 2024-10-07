@@ -8,11 +8,9 @@ Web performance metrics are quantitative measures of the performance of a web pa
 - First input delay (FID): The time it takes for the page to respond to the first user input.
 - Total blocking time (TBT): The time it takes for the page to become fully interactive, taking into account the time spent blocking the main thread.
 
-There are many tools and techniques available for measuring web performance metrics, including browser dev tools, performance monitoring tools, and web performance APIs. By tracking these metrics and analyzing the results, web developers can identify areas for improvement and optimize the performance of their web pages.
-
 Visit the following resources to learn more:
 
 - [@article@Web Performance Metrics - Google Developers](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)
-- [@article@Measuring performance and user experience - Google Developers](https://web.dev/metrics/)
+- [@article@Measuring web performance in 2024](https://requestmetrics.com/web-performance/measure-web-performance/)
 - [@article@Measuring performance and user experience - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance)
 - [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)

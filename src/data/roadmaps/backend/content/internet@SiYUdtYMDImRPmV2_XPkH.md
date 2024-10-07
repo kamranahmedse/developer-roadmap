@@ -10,4 +10,3 @@ Visit the following resources to learn more:
 - [@roadmap.sh@Introduction to Internet](/guides/what-is-internet)
 - [@video@How does the Internet work?](https://www.youtube.com/watch?v=x3c1ih2NJEg)
 - [@video@How does the internet work? (Full Course)](https://www.youtube.com/watch?v=zN8YNNHcaZc)
-

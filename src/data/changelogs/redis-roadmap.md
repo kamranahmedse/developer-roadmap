@@ -22,4 +22,4 @@ We have a new roadmap, some improvements to dashboard, bookmarks and more.
 - [Cyber Security roadmap](/cyber-security) is now filled with new content and resources.
 - Buf fixes and improvements to some team features.
 
-Next up, we are working on a new Data Engineering roadmap and teams dashboards.
+Next up, we are working on a new AI Engineer roadmap and teams dashboards.

@@ -118,6 +118,11 @@
     "description": "Rust is a systems programming language that focuses on safety, concurrency, and performance. Developed by Mozilla Research, Rust combines low-level control over system resources with high-level abstractions, preventing common programming errors like null or dangling pointer references at compile-time. It features a borrow checker for managing memory and preventing data races, making it ideal for building reliable and efficient software. Rust's zero-cost abstractions, pattern matching, and trait-based generics offer powerful tools for expressing complex ideas clearly. While primarily used for systems programming, web assembly, and game development, Rust's growing ecosystem supports various domains. Its emphasis on memory safety without sacrificing performance makes it increasingly popular for developing secure, high-performance applications in fields ranging from operating systems to web services.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Rust by Practice - Interactive Rust Course",
+        "url": "https://practice.course.rs/",
+        "type": "course"
+      },
+      {
         "title": "The Rust Programming Language - online book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
@@ -190,8 +195,13 @@
     "description": "Operating systems (OS) are fundamental software that manage computer hardware and software resources, providing common services for computer programs. They act as an intermediary between applications and hardware, handling tasks like memory management, process scheduling, file system management, and device control. Common desktop operating systems include Microsoft Windows, macOS, and various Linux distributions. Mobile devices typically run iOS or Android. Server environments often use Linux distributions like Ubuntu Server, Red Hat Enterprise Linux, or Windows Server. Each OS type offers distinct features, user interfaces, and compatibility with different software and hardware. Operating systems play a crucial role in system security, performance optimization, and providing a consistent user experience across diverse computing devices and environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Operating Systems - Wiki",
+        "url": "https://en.wikipedia.org/wiki/Operating_system",
+        "type": "article"
+      },
+      {
         "title": "All you need to know about OS.",
-        "url": "https://www.javatpoint.com/os-tutorial",
+        "url": "https://www.javatpoint.com/operating-system",
         "type": "article"
       },
       {
@@ -205,7 +215,7 @@
         "type": "video"
       },
       {
-        "title": "Operating Systems!",
+        "title": "Operating Systems",
         "url": "https://www.youtube.com/watch?v=vBURTt97EkA&list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O",
         "type": "video"
       }
@@ -637,6 +647,11 @@
     "description": "Git is a distributed version control system designed to track changes in source code during software development. It allows multiple developers to work on the same project simultaneously, maintaining a complete history of modifications. Git features local repositories on each developer's machine, enabling offline work and fast operations. It supports non-linear development through branching and merging, facilitating parallel work streams. Git's distributed nature enhances collaboration, backup, and experimentation. Key concepts include commits, branches, merges, and remote repositories. With its speed, flexibility, and robust branching and merging capabilities, Git has become the standard for version control in modern software development, powering platforms like GitHub and GitLab.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Git by Example - Learn Version Control with Bite-sized Lessons",
+        "url": "https://antonz.org/git-by-example/",
+        "type": "course"
+      },
+      {
         "title": "Learn Git & GitHub",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
@@ -813,6 +828,11 @@
         "type": "article"
       },
       {
+        "title": "Uncomplicated Firewall (UFW)",
+        "url": "https://dev.to/coder7475/uncomplicated-firewall-ufw-1638",
+        "type": "article"
+      },
+      {
         "title": "Why do we need Firewalls?",
         "url": "https://www.tutorialspoint.com/what-is-a-firewall-and-why-do-you-need-one",
         "type": "article"
@@ -980,6 +1000,11 @@
         "type": "article"
       },
       {
+        "title": "NGINX Reverse Proxy and Load Balancing",
+        "url": "https://dzone.com/articles/nginx-reverse-proxy-and-load-balancing",
+        "type": "article"
+      },
+      {
         "title": "What is a Load Balancer?",
         "url": "https://www.youtube.com/watch?v=sCR3SAVdyCc",
         "type": "video"
@@ -998,6 +1023,11 @@
       {
         "title": "NGINX documentation",
         "url": "https://www.nginx.com/resources/glossary/reverse-proxy-server/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding NGINX as a Reverse Proxy",
+        "url": "https://medium.com/globant/understanding-nginx-as-a-reverse-proxy-564f76e856b2",
         "type": "article"
       },
       {
@@ -1827,21 +1857,21 @@
   },
   "1oYvpFG8LKT1JD6a_9J0m": {
     "title": "Provisioning",
-    "description": "Prometheus is an open-source systems monitoring and alerting toolkit designed for reliability and scalability. It features a multi-dimensional data model, a flexible query language (PromQL), and an efficient time series database. Prometheus collects metrics from configured targets at given intervals, evaluates rule expressions, displays results, and can trigger alerts when specified conditions are observed. It operates on a pull model, scraping metrics from HTTP endpoints, and supports service discovery for dynamic environments. Prometheus is particularly well-suited for monitoring microservices and containerized environments, integrating seamlessly with systems like Kubernetes. Its ecosystem includes various exporters for third-party systems and a built-in alert manager. Widely adopted in cloud-native architectures, Prometheus is a core component of modern observability stacks, often used alongside tools like Grafana for visualization.\n\nVisit the following resources to learn more:",
+    "description": "Provisioning refers to the process of setting up and configuring the necessary IT infrastructure to support an application or service. This includes allocating and preparing resources such as servers, storage, networking, and software environments. Provisioning can be done manually, but in modern DevOps practices, it's typically automated using tools like Terraform, Pulumi, or CloudFormation. These tools allow for infrastructure-as-code, where the entire provisioning process is defined in version-controlled scripts or templates. This approach enables consistent, repeatable deployments across different environments, reduces human error, and facilitates rapid scaling and disaster recovery.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Prometheus Website",
-        "url": "https://prometheus.io/",
+        "title": "What is provisioning? - RedHat",
+        "url": "https://www.redhat.com/en/topics/automation/what-is-provisioning",
         "type": "article"
       },
       {
-        "title": "Explore top posts about Prometheus",
-        "url": "https://app.daily.dev/tags/prometheus?ref=roadmapsh",
+        "title": "What is provisioning? - IBM",
+        "url": "https://www.ibm.com/topics/provisioning",
         "type": "article"
       },
       {
-        "title": "Introduction to the Prometheus Monitoring System | Key Concepts and Features",
-        "url": "https://www.youtube.com/watch?v=STVMGrYIlfg",
+        "title": "Open Answers: What is provisioning?",
+        "url": "https://www.youtube.com/watch?v=hWvDlmhASpk",
         "type": "video"
       }
     ]
