@@ -4,6 +4,7 @@ export class Popup {
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
     this.handleClosePopup = this.handleClosePopup.bind(this);
     this.handleKeydown = this.handleKeydown.bind(this);
+    this.lastFocusedElement = null;
   }
 
   /**
@@ -20,6 +21,8 @@ export class Popup {
     }
 
     e.preventDefault();
+    this.lastFocusedElement = e.target;
+
     popupEl.classList.remove('hidden');
     popupEl.classList.add('flex');
     const focusEl = popupEl.querySelector('[autofocus]');
@@ -30,6 +33,7 @@ export class Popup {
 
   handleClosePopup(e) {
     const target = e.target;
+
     const popupBody = target.closest('.popup-body');
     const closestPopup = target.closest('.popup');
     const closeBtn = target.closest('.popup-close');
@@ -41,6 +45,8 @@ export class Popup {
     if (closestPopup) {
       closestPopup.classList.add('hidden');
       closestPopup.classList.remove('flex');
+
+      this.lastFocusedElement && this.lastFocusedElement.focus();
     }
   }
 
@@ -53,6 +59,8 @@ export class Popup {
     if (popup) {
       popup.classList.add('hidden');
       popup.classList.remove('flex');
+
+      this.lastFocusedElement && this.lastFocusedElement.focus();
     }
   }
 
