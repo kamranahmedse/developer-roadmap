@@ -2,7 +2,7 @@
 title: 'Basic Dockerfile'
 description: 'Build a basic Dockerfile to create a Docker image.'
 isNew: false
-sort: 7
+sort: 8
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -19,7 +19,6 @@ seo:
     - 'docker'
 roadmapIds:
   - 'devops'
-  - 'docker'
 ---
 
 In this project, you will write a basic Dockerfile to create a Docker image. When this Docker image is run, it should print "Hello, Captain!" to the console before exiting.
