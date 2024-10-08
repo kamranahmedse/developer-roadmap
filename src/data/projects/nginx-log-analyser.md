@@ -2,7 +2,7 @@
 title: 'Nginx Log Analyser'
 description: 'Write a simple tool to analyze logs from the command line.'
 isNew: true
-sort: 3
+sort: 1
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
