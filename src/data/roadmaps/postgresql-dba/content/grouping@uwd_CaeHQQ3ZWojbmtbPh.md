@@ -8,4 +8,4 @@ Learn more from the following resources:
 - [@article@PostgreSQL GROUP BY](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-group-by/)
 - [@article@PostgreSQL - GROUP BY](https://www.tutorialspoint.com/postgresql/postgresql_group_by.htm)
 - [@article@PostgreSQL - HAVING](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-having/)
-- [@video@Youtube - PostgreSQL Group BY](https://www.youtube.com/watch?v=SI-bPx4jaGc)
+- [@video@PostgreSQL Group BY](https://www.youtube.com/watch?v=SI-bPx4jaGc)
