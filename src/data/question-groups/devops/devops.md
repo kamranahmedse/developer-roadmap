@@ -5,7 +5,7 @@ briefDescription: 'Get ready for your DevOps interview with 50 popular questions
 title: 'Top 50 Popular DevOps Interview Questions (and Answers)'
 description: 'Get ready for your DevOps interview with 50 popular questions and answers that cover tools, pipelines, and key practices.'
 authorId: 'fernando'
-isNew: true
+isNew: false
 date: 2024-08-20
 seo:
   title: 'Top 50 Popular DevOps Interview Questions (and Answers)'

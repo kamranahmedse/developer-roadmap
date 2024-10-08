@@ -7,7 +7,7 @@ seo:
   title: '11 DevOps Principles and Practices to Master: Pro Advice'
   description: 'Elevate your game by understanding this set of key DevOps principles and practices. Gain pro insights for a more efficient, collaborative workflow!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-09-24
 sitemap:

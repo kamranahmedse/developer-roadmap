@@ -7,7 +7,7 @@ seo:
   title: '10+ In-Demand DevOps Engineer Skills to Master'
   description: 'Find out exactly what it takes to be a successful DevOps engineer with my recommendations for essential DevOps skills'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-09-12
 sitemap:

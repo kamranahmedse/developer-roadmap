@@ -7,7 +7,7 @@ seo:
   title: 'Top 7 Backend Frameworks to Use in 2024: Pro Advice'
   description: 'Get expert advice on backend frameworks for 2024. Learn about the top 7 frameworks that can elevate your development process.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/top-backend-frameworks-jfpux.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-09-27
 sitemap:
