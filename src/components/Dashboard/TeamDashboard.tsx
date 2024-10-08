@@ -3,29 +3,35 @@ import type { TeamMember } from '../TeamProgress/TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { getUser } from '../../lib/jwt';
-import { LoadingProgress } from './LoadingProgress';
-import { ResourceProgress } from '../Activity/ResourceProgress';
 import { TeamActivityPage } from '../TeamActivity/TeamActivityPage';
 import { cn } from '../../lib/classname';
 import { Tooltip } from '../Tooltip';
+import { DashboardTeamRoadmaps } from './DashboardTeamRoadmaps';
+import type { BuiltInRoadmap } from './PersonalDashboard';
+import { InviteMemberPopup } from '../TeamMembers/InviteMemberPopup';
+import { Users, Users2 } from 'lucide-react';
 
 type TeamDashboardProps = {
+  builtInRoleRoadmaps: BuiltInRoadmap[];
+  builtInSkillRoadmaps: BuiltInRoadmap[];
   teamId: string;
 };
 
 export function TeamDashboard(props: TeamDashboardProps) {
-  const { teamId } = props;
+  const { teamId, builtInRoleRoadmaps, builtInSkillRoadmaps } = props;
 
   const toast = useToast();
   const currentUser = getUser();
 
   const [isLoading, setIsLoading] = useState(true);
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [isInvitingMember, setIsInvitingMember] = useState(false);
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`,
     );
+
     if (error || !response) {
       toast.error(error?.message || 'Failed to get team progress');
       return;
@@ -54,12 +60,8 @@ export function TeamDashboard(props: TeamDashboardProps) {
     getTeamProgress().finally(() => setIsLoading(false));
   }, [teamId]);
 
-  if (!currentUser) {
-    return null;
-  }
-
   const currentMember = teamMembers.find(
-    (member) => member.email === currentUser.email,
+    (member) => member.email === currentUser?.email,
   );
   const learningRoadmapsToShow =
     currentMember?.progress?.filter(
@@ -67,53 +69,58 @@ export function TeamDashboard(props: TeamDashboardProps) {
     ) || [];
 
   const allMembersWithoutCurrentUser = teamMembers.sort((a, b) => {
-    if (a.email === currentUser.email) {
+    if (a.email === currentUser?.email) {
       return -1;
     }
 
-    if (b.email === currentUser.email) {
+    if (b.email === currentUser?.email) {
       return 1;
     }
 
     return 0;
   });
 
+  const canManageCurrentTeam = ['admin', 'manager'].includes(
+    currentMember?.role!,
+  );
+
   return (
     <section className="mt-8">
-      <h2 className="mb-3 text-xs uppercase text-gray-400">Roadmaps</h2>
-      {isLoading && <LoadingProgress />}
-      {!isLoading && learningRoadmapsToShow.length > 0 && (
-        <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
-          {learningRoadmapsToShow.map((roadmap) => {
-            const learningCount = roadmap.learning || 0;
-            const doneCount = roadmap.done || 0;
-            const totalCount = roadmap.total || 0;
-            const skippedCount = roadmap.skipped || 0;
-
-            return (
-              <ResourceProgress
-                key={roadmap.resourceId}
-                isCustomResource={roadmap?.isCustomResource || false}
-                doneCount={doneCount > totalCount ? totalCount : doneCount}
-                learningCount={
-                  learningCount > totalCount ? totalCount : learningCount
-                }
-                totalCount={totalCount}
-                skippedCount={skippedCount}
-                resourceId={roadmap.resourceId}
-                resourceType="roadmap"
-                updatedAt={roadmap.updatedAt}
-                title={roadmap.resourceTitle}
-                showActions={false}
-                roadmapSlug={roadmap.roadmapSlug}
-              />
-            );
-          })}
-        </div>
+      {isInvitingMember && (
+        <InviteMemberPopup
+          onInvited={() => {
+            toast.success('Invite sent');
+            getTeamProgress().finally(() => null);
+            setIsInvitingMember(false);
+          }}
+          onClose={() => {
+            setIsInvitingMember(false);
+          }}
+        />
       )}
 
-      <h2 className="mb-3 mt-6 text-xs uppercase text-gray-400">
+      <DashboardTeamRoadmaps
+        isLoading={isLoading}
+        teamId={teamId}
+        learningRoadmapsToShow={learningRoadmapsToShow}
+        canManageCurrentTeam={canManageCurrentTeam}
+        onUpdate={getTeamProgress}
+        builtInRoleRoadmaps={builtInRoleRoadmaps}
+        builtInSkillRoadmaps={builtInSkillRoadmaps}
+      />
+
+      <h2 className="mb-3 mt-6 flex h-[20px] items-center justify-between text-xs uppercase text-gray-400">
         Team Members
+        <span className="flex-grow h-[1px] bg-gray-200 mx-3" />
+        {canManageCurrentTeam && (
+          <a
+            href={`/team/members?t=${teamId}`}
+            className="flex flex-row items-center rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+          >
+            <Users2 className="mr-1.5 size-3" strokeWidth={2.5} />
+            Members
+          </a>
+        )}
       </h2>
       {isLoading && <TeamMemberLoading className="mb-6" />}
       {!isLoading && (
@@ -123,7 +130,11 @@ export function TeamDashboard(props: TeamDashboardProps) {
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
               : '/images/default-avatar.png';
             return (
-              <span className="group relative" key={member.email}>
+              <a
+                className="group relative"
+                key={member.email}
+                href={`/team/member?t=${teamId}&m=${member._id}`}
+              >
                 <figure className="relative aspect-square size-8 overflow-hidden rounded-md bg-gray-100">
                   <img
                     src={avatar}
@@ -134,13 +145,30 @@ export function TeamDashboard(props: TeamDashboardProps) {
                 <Tooltip position="top-center" additionalClass="text-sm">
                   {member.name}
                 </Tooltip>
-              </span>
+              </a>
             );
           })}
+
+          {canManageCurrentTeam && (
+            <button
+              className="group relative"
+              onClick={() => setIsInvitingMember(true)}
+            >
+              <span className="relative flex aspect-square size-8 items-center justify-center overflow-hidden rounded-md border border-dashed bg-gray-100">
+                +
+              </span>
+              <Tooltip position="top-center" additionalClass="text-sm">
+                Add Member
+              </Tooltip>
+            </button>
+          )}
         </div>
       )}
 
-      <TeamActivityPage teamId={teamId} />
+      <TeamActivityPage
+        teamId={teamId}
+        canManageCurrentTeam={canManageCurrentTeam}
+      />
     </section>
   );
 }

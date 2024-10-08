@@ -166,8 +166,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       {showSelectRoadmapModal && (
         <SelectRoadmapModal
           onClose={() => setShowSelectRoadmapModal(false)}
-          teamResourceConfig={teamResources}
-          allRoadmaps={allRoadmaps.filter(r => r.renderer === 'editor')}
+          teamResourceConfig={teamResources.map((r) => r.resourceId)}
+          allRoadmaps={allRoadmaps.filter((r) => r.renderer === 'editor')}
           teamId={teamId}
           onRoadmapAdd={(roadmapId) => {
             addTeamResource(roadmapId).finally(() => {

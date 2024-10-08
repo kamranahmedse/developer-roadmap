@@ -7,10 +7,11 @@ import { type AllowedRoles, RoleDropdown } from '../CreateTeam/RoleDropdown';
 type InviteMemberPopupProps = {
   onInvited: () => void;
   onClose: () => void;
+  teamId?: string;
 };
 
 export function InviteMemberPopup(props: InviteMemberPopupProps) {
-  const { onClose, onInvited } = props;
+  const { onClose, onInvited, teamId: defaultTeamId } = props;
 
   const popupBodyRef = useRef<HTMLDivElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
@@ -18,7 +19,7 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const { teamId } = useTeamId();
+  const { teamId = defaultTeamId } = useTeamId();
 
   useEffect(() => {
     emailRef?.current?.focus();
@@ -31,7 +32,7 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
 
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-invite-member/${teamId}`,
-      { email, role: selectedRole }
+      { email, role: selectedRole },
     );
 
     if (error || !response) {
@@ -92,7 +93,7 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
               </div>
 
               {error && (
-                <p className=" rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-700">
+                <p className="rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-700">
                   {error}
                 </p>
               )}
