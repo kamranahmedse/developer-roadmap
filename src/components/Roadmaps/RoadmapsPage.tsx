@@ -453,7 +453,6 @@ const allGroups = [
 export function RoadmapsPage() {
   const [activeGroup, setActiveGroup] = useState<AllowGroupNames>('');
   const [visibleGroups, setVisibleGroups] = useState<GroupType[]>(allGroups);
-
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   useEffect(() => {
@@ -516,7 +515,7 @@ export function RoadmapsPage() {
       return;
     }
 
-    loadProgress().finally(() => {});
+    loadProgress().finally(() => { });
   }, []);
 
   useEffect(() => {

@@ -1,0 +1,52 @@
+<button data-scroll-to-top>↑ Back to Top</button>
+
+<style>
+  button[data-scroll-to-top] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1D4ED8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none; /* Initially hidden */
+  }
+
+  button[data-scroll-to-top]:hover {
+    background-color: #2563EB;
+  }
+</style>
+
+<script>
+  // Find the scroll button in the DOM.
+  const scrollButton = document.querySelector('[data-scroll-to-top]');
+
+  // Show or hide the button based on scroll position.
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      scrollButton.style.display = 'block';
+    } else {
+      scrollButton.style.display = 'none';
+    }
+  };
+
+  // Scroll smoothly to the top of the page when the button is clicked.
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  // Add event listeners when the page loads.
+  document.addEventListener('DOMContentLoaded', () => {
+    // Listen for the scroll event.
+    window.addEventListener('scroll', toggleVisibility);
+
+    // Add click event to scroll to top.
+    scrollButton.addEventListener('click', scrollToTop);
+  });
+</script>

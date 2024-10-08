@@ -14,6 +14,8 @@ import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
 import ChangelogBanner from "../components/ChangelogBanner.astro";
+import ScrollToTopButton from "../components/ScrollToTopButton.tsx";
+import ScrollToTopButton from "../components/ScrollToTopButton.astro";
 
 export interface Props {
   title: string;
@@ -188,7 +190,7 @@ const gaPageIdentifier = Astro.url.pathname
     />
 
     <slot name='after-footer' />
-
+    <ScrollToTopButton />
     <Analytics />
     <PageVisit
       resourceId={resourceId}
