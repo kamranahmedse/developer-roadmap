@@ -1,6 +1,6 @@
 ---
 title: 'Log Archive Tool'
-description: 'Build a tool to archive logs from the CLI.'
+description: 'Build a tool to archive logs from the CLI with the date and time.'
 isNew: false
 sort: 2
 difficulty: 'beginner'
@@ -11,7 +11,7 @@ skills:
   - 'shell scripting'
 seo:
   title: 'Log Archive Tool'
-  description: 'Build a tool to archive logs from the CLI.'
+  description: 'Build a tool to archive logs from the CLI with the date and time.'
   keywords:
     - 'log archive tool'
     - 'devops project idea'

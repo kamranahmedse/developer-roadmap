@@ -33,7 +33,7 @@ Here are the steps to get you started:
 - Every push to the `main` branch that changes the `index.html` file should trigger the workflow to run and deploy the website to [GitHub Pages](https://docs.github.com/en/pages).
 - Website and any changes you make should be accessible at the GitHub pages URL for the repository e.g. `https://<username>.github.io/gh-deployment-workflow/`.
 
-Stretch goal: create your personal portfolio and deploy it to GitHub Pages. Also, set up a custom domain for your portfolio.
+Stretch goal: You can also make this project more practical e.g. use some sort of a static site generator such as [Hugo](https://gohugo.io/), [Jekyll](https://jekyllrb.com/), [Astro](https://astro.build/) or similar generator to create a more complex website e.g. your own personal portfolio.
 
 <hr />
 
