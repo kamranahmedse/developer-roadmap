@@ -7,4 +7,4 @@ Learn more from the following resources:
 - [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
 - [@article@Introduction to DNS](https://aws.amazon.com/route53/what-is-dns/)
 - [@video@DNS explained in 100 seconds](https://www.youtube.com/watch?v=UVR9lhUGAyU)
-- [@article@DNS Record Crash Course for Web Developers](https://dev.to/chrisachard/dns-record-crash-course-for-web-developers-35hn?ref=dailydev)
+- [@article@DNS Record Crash Course for Web Developers](https://dev.to/chrisachard/dns-record-crash-course-for-web-developers-35hn)
