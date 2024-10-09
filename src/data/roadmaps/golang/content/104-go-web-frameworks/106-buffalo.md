@@ -4,5 +4,5 @@ Buffalo helps you to generate a web project that already has everything from fro
 
 Visit the following resources to learn more:
 
-- [@opensource@Github Repository](https://github.com/gobuffalo/buffalo)
-- [@article@Official Website Docs](https://gobuffalo.io/)
+- [@opensource@Gobuffalo](https://github.com/gobuffalo/buffalo)
+- [@official@Official Docs](https://gobuffalo.io/)

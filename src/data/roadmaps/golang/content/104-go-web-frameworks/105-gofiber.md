@@ -4,5 +4,5 @@ Go Fiber is an Express-inspired framework for Golang. Go Fiber is a web framewor
 
 Visit the following resources to learn more:
 
-- [@opensource@Github Repository](https://github.com/gofiber/fiber)
-- [@article@Official Website Docs](https://docs.gofiber.io/)
+- [@opensource@Fiber](https://github.com/gofiber/fiber)
+- [@official@Official Docs](https://docs.gofiber.io/)
