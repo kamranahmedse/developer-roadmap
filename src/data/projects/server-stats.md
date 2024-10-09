@@ -4,7 +4,7 @@ description: 'Write a script to analyse basic server performance stats.'
 isNew: true
 sort: 0
 difficulty: 'beginner'
-nature: 'Server Stats'
+nature: 'CLI'
 skills:
   - 'linux'
   - 'bash'
