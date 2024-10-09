@@ -56,7 +56,7 @@ Use the `ansible-playbook` command to run the playbook and deploy the applicatio
 
 #### Option #2: Use SSH to connect and deploy the application
 
-Use SSH to connect and deploy the application. Look into [rsync](https://linux.die.net/man/1/rsync) and these GitHub Actions to accomplish this: [ssh-agent](https://github.com/webfactory/ssh-agent), [appleboy/ssh-action](https://github.com/appleboy/ssh-action).
+Use SSH to connect and deploy the application. Look into [rsync](https://linux.die.net/man/1/rsync) and these GitHub Actions to accomplish this: [web-factory/ssh-agent](https://github.com/webfactory/ssh-agent), [appleboy/ssh-action](https://github.com/appleboy/ssh-action).
 
 <hr />
 
