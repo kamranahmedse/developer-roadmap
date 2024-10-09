@@ -1,1 +1,4 @@
-# Public Speaking
+# Public Speaking 
+Public speaking is a crucial skill for DevRel (Developer Relations) engineers as it helps them effectively communicate complex technical concepts to diverse audiences, from developers to stakeholders. Whether presenting at conferences, hosting workshops, or creating educational content, mastering public speaking allows DevRel engineers to build relationships, foster community engagement, and promote their company's technologies. Confidence, clarity, and the ability to break down intricate topics into digestible information are key elements of impactful public speaking in DevRel roles.
+
+A great resource that offers insights into public speaking for developers is this article on Medium by Eleanor Stribling: ["5 Ways to Make Your Tech Talk Awesome"](https://medium.com/agatha-codes/5-ways-to-make-your-tech-talk-awesome-885d4eb4a3b6). It provides tips on preparing presentations, engaging the audience, and delivering compelling messages that resonate with both technical and non-technical listeners.
