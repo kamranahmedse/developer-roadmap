@@ -4,4 +4,4 @@ In Amazon DynamoDB, tables are a collection of items. An item is a group of attr
 
 Visit the following resources to learn more:
 
-- [@official@Amazon RDS](https://aws.amazon.com/rds/)
+- [@official@Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html)
