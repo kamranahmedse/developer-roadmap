@@ -2,7 +2,7 @@
 title: 'IaC on DigitalOcean'
 description: 'Write Terraform code to create a Droplet on DigitalOcean'
 isNew: false
-sort: 10
+sort: 11
 difficulty: 'intermediate'
 nature: 'Terraform'
 skills:

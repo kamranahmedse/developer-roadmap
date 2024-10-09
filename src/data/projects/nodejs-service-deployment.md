@@ -2,7 +2,7 @@
 title: 'Node.js Service Deployment'
 description: 'Use GitHub Actions to Deploy a Node.js Service to a remote server'
 isNew: false
-sort: 10
+sort: 12
 difficulty: 'intermediate'
 nature: 'CI/CD'
 skills:
