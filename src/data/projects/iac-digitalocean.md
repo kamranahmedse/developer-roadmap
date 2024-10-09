@@ -37,4 +37,3 @@ Write Ansible playbook that will configure the server. You can use the same play
 <hr />
 
 Once you are done with the project, you should have a good understanding of setting up a basic infrastructure on DigitalOcean using Terraform and configuring it using Ansible.
-
