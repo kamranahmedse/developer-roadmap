@@ -1,6 +1,6 @@
 # v-html
 
-The `v-thml` directive is similar to the `v-text` directive, but the difference is that `v-html` renders its content as HTML. This means that if you pass an HTML element it will be rendered as an element and not plain text. Since the content is render as HTMl, it can pose a security risk if the content contains malicius JavaScript code. For this reason you should never use this directive in combination with user input, unless the input is first properly sanitized.
+The `v-html` directive is similar to the `v-text` directive, but the difference is that `v-html` renders its content as HTML. This means that if you pass an HTML element it will be rendered as an element and not plain text. Since the content is render as HTML, it can pose a security risk if the content contains malicius JavaScript code. For this reason you should never use this directive in combination with user input, unless the input is first properly sanitized.
 
 Example:
 ```vue
