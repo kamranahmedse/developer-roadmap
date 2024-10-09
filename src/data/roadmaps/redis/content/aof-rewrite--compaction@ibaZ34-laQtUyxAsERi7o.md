@@ -4,5 +4,5 @@ Persistence refers to the writing of data to durable storage, such as a solid-st
 
 Learn more from the following resources:
 
-- [@official@Persistence in redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
-- [@video@Enabling redis persistence](https://youtu.be/qBKnUeR0p10?si=TPvcFtpFMcTZB-Be)
+- [@official@Persistence in Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
+- [@video@Enabling Redis persistence](https://youtu.be/qBKnUeR0p10?si=TPvcFtpFMcTZB-Be)
