@@ -240,16 +240,36 @@
   },
   "8OBlgDRUg-CTgDXY-QHyO": {
     "title": "Component Lifecycle",
-    "description": "React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process. You can use this [lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) as a cheat sheet.\n\nIt is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.\n\nVisit the following resources to learn more:",
+    "description": "React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process.\n\nIt is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Lifecycle of Reactive Effects",
+        "url": "https://react.dev/learn/lifecycle-of-reactive-effectsv",
+        "type": "article"
+      },
       {
         "title": "Class Component",
         "url": "https://react.dev/reference/react/Component",
         "type": "article"
       },
       {
-        "title": "Lifecycle of Reactive Effects",
-        "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
+        "title": "React component lifecycle: React lifecycle methods & hooks",
+        "url": "https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "The React lifecycle: methods and hooks explained",
+        "url": "https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle",
+        "type": "article"
+      },
+      {
+        "title": "React Lifecycle: Methods & Hooks In Detail",
+        "url": "https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "lifecycle diagram",
+        "url": "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/",
         "type": "article"
       }
     ]

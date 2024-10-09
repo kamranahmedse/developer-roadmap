@@ -71,8 +71,14 @@
   },
   "d7fzv_ft12EopsQdmEsel": {
     "title": "Pre-trained Models",
-    "description": "",
-    "links": []
+    "description": "Pre-trained models are Machine Learning (ML) models that have been previously trained on a large dataset to solve a specific task or set of tasks. These models learn patterns, features, and representations from the training data, which can then be fine-tuned or adapted for other related tasks. Pre-training provides a good starting point, reducing the amount of data and computation required to train a new model from scratch.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Pre-trained models: Past, present and future",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231",
+        "type": "article"
+      }
+    ]
   },
   "1Ga6DbOPc6Crz7ilsZMYy": {
     "title": "Benefits of Pre-trained Models",
