@@ -1,8 +1,10 @@
 ---
 import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
----
+import { CiCircleChevUp } from "react-icons/ci";
 
+---
+<body id='top'>
 <div class='bg-slate-900 py-6 pb-10 text-white sm:py-16'>
   <div class='container'>
     <p
@@ -137,4 +139,22 @@ import Icon from './AstroIcon.astro';
       </div>
     </div>
   </div>
+  <a
+      class='scroll-to-top fixed bottom-4 right-4 bg-slate-900 rounded-full px-2 py-1.5 text-white transition hover:bg-slate-700'
+      href='#top'
+    >
+     <CiCircleChevUp size={32} />
+    </a>
 </div>
+  <script>
+    const scrollToTopLink = document.querySelector('a[href="#top"]');
+    scrollToTopLink.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+</body>
