@@ -245,6 +245,11 @@
         "type": "article"
       },
       {
+        "title": "DNS Record Crash Course for Web Developers",
+        "url": "https://dev.to/chrisachard/dns-record-crash-course-for-web-developers-35hn",
+        "type": "article"
+      },
+      {
         "title": "DNS explained in 100 seconds",
         "url": "https://www.youtube.com/watch?v=UVR9lhUGAyU",
         "type": "video"
@@ -269,6 +274,11 @@
         "title": "What is a RESTul API?",
         "url": "https://aws.amazon.com/what-is/restful-api/",
         "type": "article"
+      },
+      {
+        "title": "Understanding RESTful APIs",
+        "url": "https://www.youtube.com/watch?v=lsMQRaeKNDk",
+        "type": "video"
       }
     ]
   },

@@ -1392,8 +1392,14 @@
   },
   "hRug9yJKYacB9X_2cUalR": {
     "title": "PMI",
-    "description": "",
-    "links": []
+    "description": "The PMI certification (Project Management Institute) is an internationally recognized credential in project management. The most well-known is the PMP® (Project Management Professional), which validates the skills and knowledge of professionals to manage projects effectively by applying best practices and standards defined in the PMBOK® (Project Management Body of Knowledge) guide.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Project Managment Institute",
+        "url": "https://www.pmi.org/",
+        "type": "article"
+      }
+    ]
   },
   "Rq1Wi-cHjS54SYo-Btp-e": {
     "title": "ITIL",
@@ -1418,8 +1424,14 @@
   },
   "7rudOREGG-TTkCosU0hNw": {
     "title": "RUP",
-    "description": "",
-    "links": []
+    "description": "The RUP (**Rational Unified Process**) is not a widely recognized certification like PMP or Scrum, but rather a software development framework created by Rational Software (now IBM). It follows an iterative and incremental approach to project development, based on best practices for delivering high-quality software on time and within budget.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "IBM certified solution designer RUP",
+        "url": "https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003",
+        "type": "article"
+      }
+    ]
   },
   "qwpsGRFgzAYstM7bJA2ZJ": {
     "title": "LeSS",

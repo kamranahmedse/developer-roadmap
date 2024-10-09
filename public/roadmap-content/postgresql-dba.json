@@ -20,8 +20,8 @@
         "type": "article"
       },
       {
-        "title": "Explore top posts about Backend Development",
-        "url": "https://app.daily.dev/tags/backend?ref=roadmapsh",
+        "title": "Explore top posts about Relational Databases",
+        "url": "https://app.daily.dev/tags/relational-databases?ref=roadmapsh",
         "type": "article"
       }
     ]
@@ -505,8 +505,14 @@
   },
   "ANUgfkADLI_du7iRvnUdi": {
     "title": "Learn SQL",
-    "description": "SQL stands for Structured Query Language. It is a standardized programming language designed to manage and interact with relational database management systems (RDBMS). SQL allows you to create, read, edit, and delete data stored in database tables by writing specific queries.",
-    "links": []
+    "description": "SQL stands for Structured Query Language. It is a standardized programming language designed to manage and interact with relational database management systems (RDBMS). SQL allows you to create, read, edit, and delete data stored in database tables by writing specific queries.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "KMdF9efNGULualk5o1W0_": {
     "title": "For Schemas",
@@ -703,6 +709,11 @@
     "description": "Grouping is a powerful technique in SQL that allows you to organize and aggregate data based on common values in one or more columns. The `GROUP BY` clause is used to create groups, and the `HAVING` clause is used to filter the group based on certain conditions.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "PostgreSQL GROUP BY CLAUSE",
+        "url": "https://www.postgresql.org/docs/current/sql-select.html#SQL-GROUPBY",
+        "type": "article"
+      },
+      {
         "title": "PostgreSQL GROUP BY",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-group-by/",
         "type": "article"
@@ -716,6 +727,11 @@
         "title": "PostgreSQL - HAVING",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-having/",
         "type": "article"
+      },
+      {
+        "title": "PostgreSQL Group BY",
+        "url": "https://www.youtube.com/watch?v=SI-bPx4jaGc",
+        "type": "video"
       }
     ]
   },
