@@ -5,3 +5,4 @@ pdf-rs is a crate that allows the developer to parse and manipulate data and met
 Learn more from the following resources:
 
 - [@official@PDF Documentation](https://docs.rs/pdf/latest/pdf/)
+- [@opensource@pdf-rs](https://github.com/pdf-rs/pdf)

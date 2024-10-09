@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@official@Swagger API](https://github.com/swagger-api/swagger-ui)
 - [@official@Poem](https://docs.rs/poem/latest/poem/)
+- [@opensource@Poem](https://github.com/poem-web/poem)
