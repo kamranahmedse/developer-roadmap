@@ -4,7 +4,7 @@ description: 'Setup a basic linux server and configure it to serve a static site
 isNew: false
 sort: 5
 difficulty: 'beginner'
-nature: 'CLI'
+nature: 'Nginx'
 skills:
   - 'nginx'
   - 'SSH'
