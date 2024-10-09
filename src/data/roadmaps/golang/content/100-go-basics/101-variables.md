@@ -1,6 +1,6 @@
 # Variables in Go
 
-Variable is the name given to a memory location to store a value of a specific [type](https://golangbot.com/types/). Go provides multiple ways to declare and use variables.
+Variable is the name given to a memory location to store a value of a specific type. Go provides multiple ways to declare and use variables.
 
 Visit the following resources to learn more:
 

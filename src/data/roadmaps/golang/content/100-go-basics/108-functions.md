@@ -1,14 +1,9 @@
 # Functions
 
-Discover how functions work in Go, the list of resources below will cover:
-
-- How to define and call functions in Go?
-- Named returns in Go?
-- Handle multiple return types.
-- Different function types in Go.
+A function is a block of code that performs a specific task. It's a reusable unit of code that can be called from other parts of your program. Functions help you organize your code, make it more modular, and improve readability.
 
 Visit the following resources to learn more:
 
-- [@article@Go by Example: Functions](https://gobyexample.com/functions)
-- [@article@Functions in go](https://www.golangprograms.com/go-language/functions.html)
 - [@official@Effective Go: Functions](https://go.dev/doc/effective_go#functions)
+- [@article@Go by Example: Functions](https://gobyexample.com/functions)
+- [@article@Functions in Go](https://www.golangprograms.com/go-language/functions.html)

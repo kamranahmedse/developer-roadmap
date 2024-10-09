@@ -4,5 +4,5 @@ Echo is a performance-focused, extensible, open-source Go web application framew
 
 Visit the following resources to learn more:
 
-- [@opensource@Github Repository](https://github.com/labstack/echo)
-- [@article@Official Website](https://echo.labstack.com/)
+- [@opensource@Echo](https://github.com/labstack/echo)
+- [@official@Echo Website](https://echo.labstack.com/)

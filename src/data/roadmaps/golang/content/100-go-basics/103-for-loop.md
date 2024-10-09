@@ -11,4 +11,4 @@ Visit the following resources to learn more:
 - [@official@For Loop in Golang](https://go.dev/tour/flowcontrol/1)
 - [@official@Effective Go: For loop](https://go.dev/doc/effective_go#for)
 - [@article@Go by Example: For loop](https://gobyexample.com/for)
-- [@article@5 basic for loop patterns](https://yourbasic.org/golang/for-loop/)
+- [@article@5 Basic for Loop Patterns](https://yourbasic.org/golang/for-loop/)
