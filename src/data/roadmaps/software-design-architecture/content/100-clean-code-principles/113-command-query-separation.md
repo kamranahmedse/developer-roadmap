@@ -4,4 +4,4 @@ Command-Query Separation (CQS) is a software design principle that separates the
 
 Learn more from the following links:
 
-- [@article@CQS Pattern](https://martinfowler.com/bliki/CommandQuerySeparation.html))
+- [@article@CQS Pattern](https://martinfowler.com/bliki/CommandQuerySeparation.html)
