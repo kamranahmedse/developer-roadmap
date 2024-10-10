@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@article@React Documentation on useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
+- [@article@React Documentation on useCallback](https://react.dev/reference/react/useCallback)
 - [@article@useCallback Explained in Depth](https://kentcdodds.com/blog/usememo-and-usecallback)
 - [@article@useCallback Hook: An Introductory Guide](https://dmitripavlutin.com/dont-overuse-react-usecallback/)

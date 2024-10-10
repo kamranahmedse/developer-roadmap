@@ -5,3 +5,4 @@
 Visit the following resources to learn more:
 
 - [@article@PortSwigger - SQL Injection](https://portswigger.net/web-security/sql-injection)
+- [@video@SQL Injections are scary](https://www.youtube.com/watch?v=2OPVViV-GQk)

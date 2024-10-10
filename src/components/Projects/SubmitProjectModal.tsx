@@ -1,16 +1,19 @@
 import { CheckIcon, CopyIcon, X } from 'lucide-react';
-import { CheckIcon as ReactCheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { Modal } from '../Modal';
 import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SubmissionRequirement } from './SubmissionRequirement.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
+import { getTopGitHubLanguages } from '../../lib/github.ts';
+import { SubmitSuccessModal } from './SubmitSuccessModal.tsx';
 
 type SubmitProjectResponse = {
   repositoryUrl: string;
   submittedAt: Date;
 };
+
+type GitHubApiLanguagesResponse = Record<string, number>;
 
 type VerificationChecksType = {
   repositoryExists: 'pending' | 'success' | 'error';
@@ -36,7 +39,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
   const { isCopied, copyText } = useCopyText();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
   const [repoUrl, setRepoUrl] = useState(defaultRepositoryUrl);
   const [verificationChecks, setVerificationChecks] =
     useState<VerificationChecksType>({
@@ -58,7 +61,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
       setIsLoading(true);
       setError('');
-      setSuccessMessage('');
+      setIsSuccess(false);
 
       if (!repoUrl) {
         setVerificationChecks({
@@ -170,10 +173,23 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         projectUrlExists: 'success',
       });
 
+      const languagesResponse = await fetch(`${mainApiUrl}/languages`);
+      let languages: string[] = [];
+      if (languagesResponse.ok) {
+        const languagesData =
+          (await languagesResponse.json()) as GitHubApiLanguagesResponse;
+
+        languages = getTopGitHubLanguages(languagesData);
+        if (languages?.length === 0) {
+          languages = Object.keys(languagesData || {})?.slice(0, 4);
+        }
+      }
+
       const submitProjectUrl = `${import.meta.env.PUBLIC_API_URL}/v1-submit-project/${projectId}`;
       const { response: submitResponse, error } =
         await httpPost<SubmitProjectResponse>(submitProjectUrl, {
           repositoryUrl: repoUrl,
+          languages,
         });
 
       if (error || !submitResponse) {
@@ -182,7 +198,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
         );
       }
 
-      setSuccessMessage('Solution submitted successfully!');
+      setIsSuccess(true);
       setIsLoading(false);
 
       onSubmit(submitResponse);
@@ -193,15 +209,8 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
     }
   };
 
-  if (successMessage) {
-    return (
-      <Modal onClose={onClose} bodyClassName="h-auto p-4">
-        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
-          <ReactCheckIcon additionalClasses={'h-12 text-green-500 w-12'} />
-          <p className="text-lg font-medium">{successMessage}</p>
-        </div>
-      </Modal>
-    );
+  if (isSuccess) {
+    return <SubmitSuccessModal projectId={projectId} onClose={onClose} />;
   }
 
   return (
@@ -272,19 +281,13 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
 
         <button
           type="submit"
-          className="mt-2 w-full rounded-lg bg-black p-2 font-medium text-white disabled:opacity-50 text-sm"
+          className="mt-2 w-full rounded-lg bg-black p-2 text-sm font-medium text-white disabled:opacity-50"
           disabled={isLoading}
         >
           {isLoading ? 'Verifying...' : 'Verify and Submit'}
         </button>
         {error && (
           <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
-        )}
-
-        {successMessage && (
-          <p className="mt-2 text-sm font-medium text-green-500">
-            {successMessage}
-          </p>
         )}
       </form>
 

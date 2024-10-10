@@ -1,26 +1,8 @@
 # Containment
 
-In the Incident Response Process, containment is the step where the identified threat is controlled to prevent any further damage to the system and organization, while maintaining the integrity of the collected incident data. The primary goal of containment is to limit the attack's scope and prevent any further compromises.
+Containment in cybersecurity refers to the process of limiting the impact of a security incident by isolating affected systems, networks, or data to prevent further spread or damage. When a breach or malware infection is detected, containment strategies are quickly implemented to halt the attack's progress, often by disconnecting compromised systems from the network, blocking malicious traffic, or restricting user access. Containment is a critical step in incident response, allowing security teams to control the situation while they investigate the root cause, assess the extent of the breach, and prepare for remediation. Effective containment minimizes the potential harm to the organization, preserving the integrity of unaffected systems and data.
 
-## Short-term and Long-term Containment
+Learn more from the following resources:
 
-There are two main types of containment measures that need to be applied depending on the nature of the incident: short-term and long-term containment.
-
-## Short-term Containment
-
-These measures are focused on stopping the immediate threat by disconnecting affected systems, blocking harmful IP addresses, or temporarily disabling the vulnerable service. However, these steps might result in the loss of valuable incident data, so it is essential to balance these actions against preserving evidence necessary for further investigation.
-
-## Long-term Containment
-
-Long-term containment focuses on implementing more sustainable solutions to address the root cause of the incident, such as updating security patches, configuring firewalls, and implementing access control measures. These actions are taken to prevent reoccurrence and must be performed in parallel with the recovery phase to ensure a comprehensive Incident Response Process.
-
-## Key Steps in Containment
-
-The following are some key steps that you should follow during the containment phase:
-
-- **Isolate** - Segregate the affected systems from the rest of the network to stop the spread of the threat.
-- **Preserve Evidence** - Securely capture relevant logs and data for future analysis and investigation.
-- **Implement Temporary Measures** - Take immediate actions to block the attacker and secure the environment while minimizing disruption.
-- **Update Containment Strategy** - Integrate lessons learned from previous incidents and external resources to continuously improve your containment process.
-
-By properly executing the containment phase of the Incident Response Process, you will be well-prepared to eradicate the root cause of the cyber security threat and recover your affected systems with minimal damage to your organization.
+- [@article@Microsoft security incident management: Containment, eradication, and recovery](https://learn.microsoft.com/en-us/compliance/assurance/assurance-sim-containment-eradication-recovery)
+- [@article@Containment - AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html)

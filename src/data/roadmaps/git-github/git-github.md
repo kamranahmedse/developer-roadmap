@@ -5,26 +5,26 @@ renderer: 'editor'
 order: 19
 briefTitle: 'Git and GitHub'
 briefDescription: 'Step by step guide to learn Git and GitHub in 2024'
-title: 'Git and GitHub Roadmap'
+title: 'Learn Git and GitHub'
 description: 'Step by step guide to learn Git and GitHub in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 3330
 schema:
-  headline: 'Git and GitHub Roadmap'
+  headline: 'Learn Git and GitHub'
   description: 'Learn about Git and GitHub with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/git-github.png'
   datePublished: '2024-08-12'
   dateModified: '2024-08-12'
 seo:
-  title: 'Git and GitHub Roadmap'
+  title: 'Learn Git and GitHub'
   description: 'Learn about Git and GitHub using this roadmap. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
-    - 'git and github roadmap 2024'
+    - 'learn git and github 2024'
     - 'git roadmap'
-    - 'github roadmap'
+    - 'learn github'
 relatedRoadmaps:
   - 'computer-science'
   - 'frontend'

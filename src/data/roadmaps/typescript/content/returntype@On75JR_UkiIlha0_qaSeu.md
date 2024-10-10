@@ -37,4 +37,4 @@ type T8 = ReturnType<Function>;
 
 Learn more from the following links:
 
-- [@article@ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)
+- [@official@ReturnType<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype)

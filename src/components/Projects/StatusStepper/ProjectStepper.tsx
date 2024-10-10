@@ -1,16 +1,19 @@
-import { Flag, Play, Send } from 'lucide-react';
+import { Flag, Play, Send, Share, Square, StopCircle, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../../lib/classname.ts';
 import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
 import { StepperAction } from './StepperAction.tsx';
 import { StepperStepSeparator } from './StepperStepSeparator.tsx';
 import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet } from '../../../lib/http.ts';
+import { httpGet, httpPost } from '../../../lib/http.ts';
 import { StartProjectModal } from '../StartProjectModal.tsx';
 import { getRelativeTimeString } from '../../../lib/date.ts';
-import { isLoggedIn } from '../../../lib/jwt.ts';
+import { getUser, isLoggedIn } from '../../../lib/jwt.ts';
 import { showLoginPopup } from '../../../lib/popup.ts';
 import { SubmitProjectModal } from '../SubmitProjectModal.tsx';
+import { useCopyText } from '../../../hooks/use-copy-text.ts';
+import { CheckIcon } from '../../ReactIcons/CheckIcon.tsx';
+import { pageProgressMessage } from '../../../stores/page.ts';
 
 type ProjectStatusResponse = {
   id?: string;
@@ -32,9 +35,13 @@ export function ProjectStepper(props: ProjectStepperProps) {
 
   const stickyElRef = useRef<HTMLDivElement>(null);
   const isSticky = useStickyStuck(stickyElRef, 8);
+  const currentUser = getUser();
 
   const [isStartingProject, setIsStartingProject] = useState(false);
   const [isSubmittingProject, setIsSubmittingProject] = useState(false);
+  const { copyText, isCopied } = useCopyText();
+
+  const [isStoppingProject, setIsStoppingProject] = useState(false);
 
   const [error, setError] = useState<string | null>(null);
   const [activeStep, setActiveStep] = useState<number>(0);
@@ -74,17 +81,41 @@ export function ProjectStepper(props: ProjectStepperProps) {
     setIsLoadingStatus(false);
   }
 
+  const stopProject = async () => {
+    setIsStoppingProject(true);
+    const { response, error } = await httpPost(
+      `${import.meta.env.PUBLIC_API_URL}/v1-stop-project/${projectId}`,
+      {},
+    );
+
+    if (error || !response) {
+      setIsStoppingProject(false);
+      setError(error?.message || 'Error stopping project');
+      return;
+    }
+
+    pageProgressMessage.set('Update project status');
+    setActiveStep(0);
+    loadProjectStatus().finally(() => {
+      pageProgressMessage.set('');
+      setIsStoppingProject(false);
+    });
+  };
+
   useEffect(() => {
     loadProjectStatus().finally(() => {});
   }, []);
+
+  const projectSolutionUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/projects/${projectId}/solutions?u=${currentUser?.id}`;
 
   return (
     <div
       ref={stickyElRef}
       className={cn(
-        'relative sm:sticky top-0 my-5 -mx-4 sm:mx-0 overflow-hidden rounded-none border-x-0 sm:border-x sm:rounded-lg border bg-white transition-all',
+        'relative top-0 -mx-4 my-5 overflow-hidden rounded-none border border-x-0 bg-white transition-all sm:sticky sm:mx-0 sm:rounded-lg sm:border-x',
         {
-          'sm:-mx-5 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-gray-50': isSticky,
+          'sm:-mx-5 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-gray-50':
+            isSticky,
         },
       )}
     >
@@ -131,7 +162,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
       )}
       <div
         className={cn(
-          'px-4 py-2 text-sm text-gray-500 transition-colors bg-gray-100',
+          'bg-gray-100 px-4 py-2 text-sm text-gray-500 transition-colors sm:flex sm:items-center',
           {
             'bg-purple-600 text-white': isSticky,
           },
@@ -144,7 +175,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
         )}
         {activeStep === 1 && (
           <>
-            Started working{' '}
+            Started working&nbsp;
             <span
               className={cn('font-medium text-gray-800', {
                 'text-purple-200': isSticky,
@@ -152,7 +183,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
             >
               {getRelativeTimeString(projectStatus.startedAt!)}
             </span>
-            . Follow{' '}
+            . Follow&nbsp;
             <button
               className={cn('underline underline-offset-2 hover:text-black', {
                 'text-purple-100 hover:text-white': isSticky,
@@ -162,13 +193,13 @@ export function ProjectStepper(props: ProjectStepperProps) {
               }}
             >
               these tips
-            </button>{' '}
-            to get most out of it.
+            </button>
+            &nbsp;to get most out of it.
           </>
         )}
         {activeStep >= 2 && (
           <>
-            Congrats on submitting your solution.{' '}
+            Congrats on submitting your solution.&nbsp;
             <button
               className={cn('underline underline-offset-2 hover:text-black', {
                 'text-purple-100 hover:text-white': isSticky,
@@ -181,9 +212,48 @@ export function ProjectStepper(props: ProjectStepperProps) {
             </button>
           </>
         )}
+
+        {projectStatus?.startedAt && !projectStatus?.submittedAt && (
+          <button
+            className={cn(
+              'ml-auto hidden items-center gap-1.5 text-sm hover:text-black disabled:opacity-50 sm:flex',
+            )}
+            onClick={stopProject}
+            disabled={isStoppingProject}
+          >
+            <Square className="h-3 w-3 fill-current stroke-[2.5px]" />
+            <span className="hidden md:inline">Stop Working</span>
+            <span className="md:hidden">Stop</span>
+          </button>
+        )}
+
+        {activeStep >= 2 && (
+          <button
+            className={cn(
+              'ml-auto hidden items-center gap-1 text-sm sm:flex',
+              isCopied ? 'text-green-500' : '',
+            )}
+            onClick={() => {
+              copyText(projectSolutionUrl);
+            }}
+          >
+            {isCopied ? (
+              <>
+                <CheckIcon additionalClasses="h-3 w-3" />
+                Copied
+              </>
+            ) : (
+              <>
+                <Share className="h-3 w-3 stroke-[2.5px]" />
+                <span className="hidden md:inline">Share your Solution</span>
+                <span className="md:hidden">Share</span>
+              </>
+            )}
+          </button>
+        )}
       </div>
 
-      <div className="flex flex-col sm:flex-row min-h-[60px] items-start sm:items-center justify-between gap-2 sm:gap-3 px-4 py-4 sm:py-0">
+      <div className="flex min-h-[60px] flex-col items-start justify-between gap-2 px-4 py-4 sm:flex-row sm:items-center sm:gap-3 sm:py-0">
         <StepperAction
           isActive={activeStep === 0}
           isCompleted={activeStep > 0}
@@ -200,21 +270,46 @@ export function ProjectStepper(props: ProjectStepperProps) {
           }}
         />
         <StepperStepSeparator isActive={activeStep > 0} />
-        <StepperAction
-          isActive={activeStep === 1}
-          isCompleted={activeStep > 1}
-          icon={Send}
-          onClick={() => {
-            if (!isLoggedIn()) {
-              showLoginPopup();
-              return;
-            }
+        <div className="flex items-center gap-2">
+          <StepperAction
+            isActive={activeStep === 1}
+            isCompleted={activeStep > 1}
+            icon={Send}
+            onClick={() => {
+              if (!isLoggedIn()) {
+                showLoginPopup();
+                return;
+              }
 
-            setIsSubmittingProject(true);
-          }}
-          text={activeStep > 1 ? 'Submitted' : 'Submit Solution'}
-          number={2}
-        />
+              setIsSubmittingProject(true);
+            }}
+            text={activeStep > 1 ? 'Submitted' : 'Submit Solution'}
+            number={2}
+          />
+
+          <span className="text-gray-600 sm:hidden">&middot;</span>
+          <button
+            className={cn(
+              'flex items-center gap-2 text-sm sm:hidden',
+              isCopied ? 'text-green-500' : 'text-gray-600',
+            )}
+            onClick={() => {
+              copyText(projectSolutionUrl);
+            }}
+          >
+            {isCopied ? (
+              <>
+                <CheckIcon additionalClasses="h-3 w-3" />
+                URL Copied
+              </>
+            ) : (
+              <>
+                <Share className="h-3 w-3 stroke-[2.5px]" />
+                Share your Solution
+              </>
+            )}
+          </button>
+        </div>
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep
           isActive={activeStep === 2}

@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import type { FormEvent } from 'react';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 
@@ -53,12 +53,16 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
     setError(error?.message || 'Something went wrong. Please try again later.');
   };
 
+  const emailFieldId = `form:${useId()}`;
+  const passwordFieldId = `form:${useId()}`;
+
   return (
     <form className="w-full" onSubmit={handleFormSubmit}>
-      <label htmlFor="email" className="sr-only">
+      <label htmlFor={emailFieldId} className="sr-only">
         Email address
       </label>
       <input
+        id={emailFieldId}
         name="email"
         type="email"
         autoComplete="email"
@@ -68,10 +72,11 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
         value={email}
         onInput={(e) => setEmail(String((e.target as any).value))}
       />
-      <label htmlFor="password" className="sr-only">
+      <label htmlFor={passwordFieldId} className="sr-only">
         Password
       </label>
       <input
+        id={passwordFieldId}
         name="password"
         type="password"
         autoComplete="current-password"

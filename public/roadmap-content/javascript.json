@@ -4,7 +4,7 @@
     "description": "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add interactivity to pages e.g. you might have seen sliders, alerts, click interactions, popups, etc on different websites -- all of that is built using JavaScript. Apart from being used in the browser, it is also used in other non-browser environments as well such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications, and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "You Dont Know JS Yet (book series)",
+        "title": "You Don't Know JS Yet (book series)",
         "url": "https://github.com/getify/You-Dont-Know-JS",
         "type": "opensource"
       },
@@ -200,7 +200,7 @@
         "type": "article"
       },
       {
-        "title": "Understanding hoisting ",
+        "title": "Understanding Hoisting",
         "url": "https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript",
         "type": "article"
       },
@@ -307,7 +307,7 @@
   },
   "q85z6x1Lc-yLWepwtIT2_": {
     "title": "const",
-    "description": "Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.\n\nVisit the following resources to learn more:",
+    "description": "Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be re-declared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "JavaScript Constants - CodeGuage",
@@ -360,7 +360,7 @@
   },
   "oC4o6GLEES_nUgCJu9Q6I": {
     "title": "Global",
-    "description": "Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.\n\n### Note:\n\nIf you assign a value to a variable that has not been declared i.e `potato = true` it will automatically become a _GLOBAL_ variable.\n\nVisit the following resources to learn more:",
+    "description": "Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.\n\nNote\n----\n\nIf you assign a value to a variable that has not been declared i.e `potato = true` it will automatically become a _GLOBAL_ variable.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "JavaScript Scope",
@@ -429,6 +429,11 @@
         "title": "String",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
         "type": "article"
+      },
+      {
+        "title": "JavaScript Strings",
+        "url": "https://javascript.info/string",
+        "type": "article"
       }
     ]
   },
@@ -445,7 +450,7 @@
   },
   "GZ_SXsWmP7AsXRTc4WUMw": {
     "title": "number",
-    "description": "The `Number` data type in JavaScript represents floating-point numbers, such as 37 or -9.25. The `Number` constructor provides constants and methods to work with numbers, and values of other types can be converted to numbers using the `Number()` function.\n\n### Example\n\n    let num1 = 255; // integer\n    let num2 = 255.0; // floating-point number with no fractional part\n    let num3 = 0xff; // hexadecimal notation\n    let num4 = 0b11111111; // binary notation\n    let num5 = 0.255e3; // exponential notation\n    \n    console.log(num1 === num2); // true\n    console.log(num1 === num3); // true\n    console.log(num1 === num4); // true\n    console.log(num1 === num5); // true\n    \n\nIn this example:\n\n*   `255` and `255.0` are equivalent, as JavaScript treats both as the same number.\n*   `0xff` represents `255` in hexadecimal notation.\n*   `0b11111111` represents `255` in binary notation.\n*   `0.255e3` is `255` in exponential notation.\n*   All these different representations are equal to `255` in JavaScript.",
+    "description": "The `Number` data type in JavaScript represents floating-point numbers, such as 37 or -9.25. The `Number` constructor provides constants and methods to work with numbers, and values of other types can be converted to numbers using the `Number()` function.\n\nExample\n-------\n\n    let num1 = 255; // integer\n    let num2 = 255.0; // floating-point number with no fractional part\n    let num3 = 0xff; // hexadecimal notation\n    let num4 = 0b11111111; // binary notation\n    let num5 = 0.255e3; // exponential notation\n    \n    console.log(num1 === num2); // true\n    console.log(num1 === num3); // true\n    console.log(num1 === num4); // true\n    console.log(num1 === num5); // true\n    \n\nIn this example:\n\n*   `255` and `255.0` are equivalent, as JavaScript treats both as the same number.\n*   `0xff` represents `255` in hexadecimal notation.\n*   `0b11111111` represents `255` in binary notation.\n*   `0.255e3` is `255` in exponential notation.\n*   All these different representations are equal to `255` in JavaScript.",
     "links": []
   },
   "6lUF0neW1piiP1RsaVxEX": {
@@ -498,7 +503,7 @@
   },
   "R6ICrk6vjoBxx5nRGo4Jg": {
     "title": "Symbol",
-    "description": "Symbols are a unique and immutable primitive data type in JavaScript, introduced in ECMAScript 6 (ES6). They are often used to create unique property keys for objects, ensuring that no property key collisions occur. Each Symbol value is unique, even if created with the same description. Symbols can be created using the Symbol() function, and their primary use case is to add hidden or special properties to objects that won’t interfere with other properties or methods.\n\nLearn more from the following resources:",
+    "description": "Symbols are a unique and immutable primitive data type in JavaScript, introduced in ECMAScript 6 (ES6). They are often used to create unique property keys for objects, ensuring no property key collisions occur. Each Symbol value is distinct, even when multiple are created with the same description. Symbols can be created using the Symbol() function, and their primary use case is to add hidden or special properties to objects that won’t interfere with other properties or methods.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Symbol data type in JavaScript",
@@ -509,6 +514,16 @@
         "title": "Symbol type",
         "url": "https://javascript.info/symbol",
         "type": "article"
+      },
+      {
+        "title": "Symbol",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+        "type": "article"
+      },
+      {
+        "title": "Symbols in Javascript",
+        "url": "https://www.youtube.com/watch?v=E5Bblr-SFbA",
+        "type": "video"
       }
     ]
   },
@@ -580,12 +595,12 @@
     "description": "You can use the typeOf operator to find the data type of a JavaScript variable. It returns a string indicating the type of provided operand's value.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Typeof Reference",
+        "title": "typeof Reference",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
         "type": "article"
       },
       {
-        "title": "Typeof Live Examples",
+        "title": "typeof Live Examples",
         "url": "https://www.w3schools.com/js/tryit.asp?filename=tryjs_typeof_all",
         "type": "article"
       }
@@ -695,7 +710,7 @@
         "type": "article"
       },
       {
-        "title": "What you need to know about Javascripts Implicit Coercion",
+        "title": "What you need to know about JavaScript Implicit Coercion",
         "url": "https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23",
         "type": "article"
       }
@@ -1245,7 +1260,7 @@
   },
   "-z-4VTaC3tOThqChgyoMs": {
     "title": "Error Objects",
-    "description": "When a runtime error occurs, a new `Error` object is created and thrown. With this `Error` object, we can determine the type of the Error and handle it according to its type.\n\nTypes of Errors:\n----------------\n\nBesides error constructors, Javascript also has other core Error constructors.\n\n*   [@article@AggregateError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError)\n*   [@article@EvalError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError)\n*   [@article@InternalError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError)\n*   [@article@RangeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError)\n*   [@article@ReferenceError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)\n*   [@article@SyntaxError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError)\n\nExample\n-------\n\n    try {\n      willGiveErrorSometime();\n    } catch (error) {\n      if (error instanceof RangeError) {\n        rangeErrorHandler(error);\n      } else if (error instanceof ReferenceError) {\n        referenceErrorHandle(error);\n      } else {\n        errorHandler(error);\n      }\n    }\n    \n\nVisit the following resources to learn more:",
+    "description": "When a runtime error occurs, a new `Error` object is created and thrown. With this `Error` object, we can determine the type of the Error and handle it according to its type.\n\nTypes of Errors\n---------------\n\nBesides error constructors, Javascript also has other core Error constructors. Like\n\n*   AggregateError - A collection of errors thrown simultaneously.\n*   EvalError - An error occurred during the evaluation of a JavaScript expression.\n*   InternalError - An internal JavaScript error, often indicating a bug in the engine.\n*   RangeError - A value is outside the allowed range for a given operation.\n*   ReferenceError - A variable or object is referenced before it's declared or doesn't exist.\n*   SyntaxError - The code contains incorrect syntax, preventing it from being parsed.\n\nExample\n-------\n\n    try {\n      willGiveErrorSometime();\n    } catch (error) {\n      if (error instanceof RangeError) {\n        rangeErrorHandler(error);\n      } else if (error instanceof ReferenceError) {\n        referenceErrorHandle(error);\n      } else {\n        errorHandler(error);\n      }\n    }\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Error Object - MDN",
@@ -1255,6 +1270,36 @@
       {
         "title": "Control flow & Error handling - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling",
+        "type": "article"
+      },
+      {
+        "title": "AggregateError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
+        "type": "article"
+      },
+      {
+        "title": "EvalError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+        "type": "article"
+      },
+      {
+        "title": "InternalError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+        "type": "article"
+      },
+      {
+        "title": "RangeError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+        "type": "article"
+      },
+      {
+        "title": "ReferenceError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+        "type": "article"
+      },
+      {
+        "title": "SyntaxError",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
         "type": "article"
       }
     ]
@@ -1480,7 +1525,7 @@
   },
   "fr0NChxMXLpJizyMhXcXS": {
     "title": "Arrow Functions",
-    "description": "Arrow Function is a new way of creating functions with the '=>' operator with a shorter syntax.\n\nVisit the following resources to learn more:",
+    "description": "Arrow Function is a new way of creating functions with the '=>' operator with a shorter syntax.\n\nExample\n-------\n\n    const sayHello = () => {\n        console.log(`Hello from Arrow Function !`);\n    }\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "MDN - Arrow Function Expressions",
@@ -1496,7 +1541,7 @@
   },
   "YZlCoPvZuX5MmpLOTj5d4": {
     "title": "IIFEs",
-    "description": "Immediately-Invoked Function Expression is a function that is executed immediately after it is created.\n\nVisit the following resources to learn more:",
+    "description": "Immediately-Invoked Function Expression is a function that is executed immediately after it is created.\n\nExample\n-------\n\n    // An Async IIFE\n    ( async() => {\n        \n        const x = 1;\n        const y = 9;\n    \n        console.log(`Hello, The Answer is ${x+y}`);\n    \n    })();\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "IIFE — MDN Docs",
@@ -1782,21 +1827,43 @@
     "description": "The `call()` method allows you to invoke a function with a given `this` value, and arguments provided individually.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Understanding Explicit Binding in JavaScript: Call, Bind, and Apply Methods",
-        "url": "https://medium.com/@amitsharma_24072/understanding-explicit-binding-in-javascript-call-bind-and-apply-methods-7b6ed0107628",
+        "title": "Call Method - MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call",
         "type": "article"
       }
     ]
   },
   "-BtF34cEzI6J8sZCDRlRE": {
     "title": "apply",
-    "description": "",
-    "links": []
+    "description": "The apply() method of Function instances calls this function with a given this value, and arguments provided as an array (or an array-like object).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "apply() - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply",
+        "type": "article"
+      }
+    ]
   },
   "dbercnxXVTJXMpYSDNGb2": {
     "title": "bind",
-    "description": "",
-    "links": []
+    "description": "The `bind()` method in JavaScript allows you to create a new function with a specific context and optionally preset arguments. Unlike `call()` or `apply()`, `bind()` does not immediately invoke the function. Instead, it returns a new function that can be called later, either as a regular function or with additional arguments. This is particularly useful when you want to ensure that a function retains a specific context, regardless of how or when it's invoked.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "bind()",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind",
+        "type": "article"
+      },
+      {
+        "title": "Function binding",
+        "url": "https://javascript.info/bind",
+        "type": "article"
+      },
+      {
+        "title": "Javascript Function Bind()",
+        "url": "https://www.w3schools.com/js/js_function_bind.asp",
+        "type": "article"
+      }
+    ]
   },
   "sFOqx6_7poVIVuXhJVY0E": {
     "title": "Asynchronous JavaScript",
@@ -1941,7 +2008,7 @@
   },
   "PJSdqvh5OBwPCNpn3q_S5": {
     "title": "Callback Hell",
-    "description": "The callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many }) at the end.\n\nVisit the following resources to learn more:",
+    "description": "The callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many **})** at the end.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Callbacks in Callbacks - Pyramid of Doom",
@@ -2004,7 +2071,7 @@
   },
   "kL5rfWxXe4J44ENru1uJS": {
     "title": "Fetch",
-    "description": "The fetch() method in JavaScript is used to request to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON or XML. This method returns a promise.\n\nVisit the following resources to learn more:",
+    "description": "The `fetch()` method in JavaScript is used to request to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON or XML. This method returns a promise.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Fetch MDN Docs",
@@ -2019,6 +2086,11 @@
       {
         "title": "Network request - Fetch",
         "url": "https://javascript.info/fetch",
+        "type": "article"
+      },
+      {
+        "title": "Abort a fetch request manually in JavaScript",
+        "url": "https://www.amitmerchant.com/abort-fetch-request-manually-in-javascript/",
         "type": "article"
       }
     ]
@@ -2119,7 +2191,7 @@
   },
   "4EXeGkOpfAViB9Uo4zL6O": {
     "title": "CommonJS",
-    "description": "CommonJS modules are the original way to package JavaScript code for Node.js. Node.js also supports the ESModules standard used by browsers and other JavaScript runtimes, but CJS is still widely used in backend Node.js applications. Sometimes these modules will be written with a .cjs extension.\n\nVisit the following resources to learn more:",
+    "description": "CommonJS modules are the original way to package JavaScript code for Node.js. Node.js also supports the ESModules standard used by browsers and other JavaScript run-times, but CJS is still widely used in backend Node.js applications. Sometimes these modules will be written with a .cjs extension.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "How the CJS Module System Works",
@@ -2203,7 +2275,7 @@
   },
   "bhuGtcyqPFKu-900aESYz": {
     "title": "DOM APIs",
-    "description": "With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming inteface for the web. All browsers have a set og built-in Web APIs to support complex operations, and to help accessing data. Like Geolocation API, Web Storage, Web History and others.\n\nVisit the following resources to learn more:",
+    "description": "With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming interface for the web. All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data. Like Geo-location API, Web Storage, Web History and others.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "DOM- MDN Docs",
@@ -2235,11 +2307,16 @@
   },
   "rc5WzBBOm2cus-rQl8EOE": {
     "title": "Using Browser DevTools",
-    "description": "These are a set of tools built into the browser to aid frontend developers diagnose and solve various issues in their applications — such as JavaScript and logical bugs, CSS styling issues or even just making quick temporary alterations to the DOM.\n\nTo enter the dev tools, right click and click **Inspect** (or press `ctrl+shift+c`/`cmd+opt+c`) to enter the Elements panel. Here you can debug CSS and HTML issues. If you want to see logged messages or interact with javascript, enter the **Console** tab from the tabs above (or press `ctrl+shift+j` or `F12` /`cmd+opt+j` to enter it directly). Another very useful feature in the Chrome dev tools is the Lighthouse (for checking performance).\n\nNOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or otherwise) will have their own, largely-similar set of devtools.\n\nVisit the following resources to learn more:",
+    "description": "These are a set of tools built into the browser to aid frontend developers diagnose and solve various issues in their applications — such as JavaScript and logical bugs, CSS styling issues or even just making quick temporary alterations to the DOM.\n\nTo enter the dev tools, right click and click **Inspect** (or press `ctrl+shift+c`/`cmd+opt+c`) to enter the Elements panel. Here you can debug CSS and HTML issues. If you want to see logged messages or interact with javascript, enter the **Console** tab from the tabs above (or press `ctrl+shift+j` or `F12` / `cmd+opt+j` to enter it directly). Another very useful feature in the Chrome dev tools is the Lighthouse (for checking performance).\n\nNOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or otherwise) will have their own, largely-similar set of devtools.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Official Docs",
-        "url": "https://developer.chrome.com/docs/devtools/overview/",
+        "url": "https://developer.chrome.com/docs/devtools/",
+        "type": "article"
+      },
+      {
+        "title": "Debug JavaScript with Chrome Dev Tools",
+        "url": "https://developer.chrome.com/docs/devtools/javascript/",
         "type": "article"
       },
       {
@@ -2270,7 +2347,7 @@
         "type": "article"
       },
       {
-        "title": "Effective Javascript Debugging ",
+        "title": "Effective Javascript Debugging",
         "url": "https://medium.com/swlh/effective-javascript-debugging-memory-leaks-75059b2436f6",
         "type": "article"
       },
@@ -2293,7 +2370,7 @@
   },
   "ECxISKUAU7js_JsfSHzud": {
     "title": "Debugging Performance",
-    "description": "Enter the dev tools and check out the Lighthouse tab. This is essentially a series of tests which analyses the currently open website on a bunch of metrics related to performance, page speed, accessibility, etc. Feel free to run the tests by clicking the **Analyse Page Load** button (you might want to do this in an incognito tab to avoid errors arising from extensions you're using). Once you have the results, take your time and read through them (and do click through to the reference pages mentioned alongside each test result to know more about it!)\n\nVisit the following resources to learn more:",
+    "description": "Enter the dev tools and check out the Lighthouse tab. This is essentially a series of tests which analyses the currently open website on a bunch of metrics related to performance, page speed, accessibility, etc. Feel free to run the tests by clicking the **Analyze Page Load** button (you might want to do this in an incognito tab to avoid errors arising from extensions you're using). Once you have the results, take your time and read through them (and do click through to the reference pages mentioned alongside each test result to know more about it!)\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Analyze runtime performance",

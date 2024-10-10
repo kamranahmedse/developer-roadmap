@@ -11,3 +11,5 @@ Password Spray is a more targeted and stealthy method of password cracking where
 Visit the following resources to learn more:
 
 - [@article@Brute force vs. Password Spray attack](https://www.inspark.nl/brute-force-vs-password-spray-attack-in-azure-sentinel/)
+- [@article@What is password praying?](https://www.techtarget.com/whatis/definition/password-spraying)
+- [@article@What is a brute force attack?](https://www.fortinet.com/resources/cyberglossary/brute-force-attack)

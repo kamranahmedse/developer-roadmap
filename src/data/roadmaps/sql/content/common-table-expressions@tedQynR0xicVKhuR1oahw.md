@@ -5,3 +5,4 @@ Common Table Expressions (CTEs) in SQL are named temporary result sets that exis
 Learn more from the following resources:
 
 - [@article@Common Table Expressions (CTEs)](https://hightouch.com/sql-dictionary/sql-common-table-expression-cte)
+- [@article@What is a Common Table Expression?](https://learnsql.com/blog/what-is-common-table-expression/)

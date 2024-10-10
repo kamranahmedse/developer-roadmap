@@ -5,5 +5,5 @@ GitHub Security is a suite of features and tools that help developers identify, 
 Visit the following resources to learn more:
 
 - [@official@GitHub security features](https://docs.github.com/en/code-security/getting-started/github-security-features)
-- [@official@Dependabot quickstart guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
+- [@official@Dependabot Quick-start Guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
 - [@official@About user alerts](https://docs.github.com/en/code-security/secret-scanning/managing-alerts-from-secret-scanning/about-alerts#about-user-alerts)

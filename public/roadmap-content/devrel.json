@@ -232,8 +232,24 @@
   },
   "X0xUzEP0S6SyspvqyoDDk": {
     "title": "Technical Documentation",
-    "description": "",
-    "links": []
+    "description": "Technical documentation refers to the process of creating and maintaining written descriptions of software, hardware, and other technical products or systems. It involves communicating complex information in a clear, concise, and organized manner to help users understand, operate, and maintain the product or system. Effective technical documentation can take many forms, including user manuals, guides, tutorials, release notes, and API documentation, and is typically created by technical writers, developers, and subject matter experts. The goal of technical documentation is to provide accurate, up-to-date, and easily accessible information that enables users to get the most out of a product or system, while also reducing support queries and improving overall user experience.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Technical Writer Roadmap",
+        "url": "https://roadmap.sh/technical-writer",
+        "type": "article"
+      },
+      {
+        "title": "Technical Writing - MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/blog/technical-writing/",
+        "type": "article"
+      },
+      {
+        "title": "Technical Documentation - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Technical_documentation",
+        "type": "article"
+      }
+    ]
   },
   "urbtoZtuJryK-6TJ3lmRN": {
     "title": "Social Media",
@@ -353,18 +369,76 @@
   },
   "aSYXa25_0O2qQl1O-N3xl": {
     "title": "Basic Programming Skills",
-    "description": "",
-    "links": []
+    "description": "Basic programming skills are essential for Developer Relations professionals to effectively communicate with developers, understand their needs, and provide technical support. These skills include proficiency in at least one programming language, understanding of data structures and algorithms, and familiarity with development tools and technologies. Having basic programming skills enables Developer Relations professionals to create educational content, provide technical guidance, and participate in code reviews.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "TheNewStack.io - Devrel",
+        "url": "https://thenewstack.io/devrel-for-beginners-how-to-get-started/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started With Devrel- Dev.to",
+        "url": "https://dev.to/rejoice/getting-started-with-devrel-22n3",
+        "type": "article"
+      },
+      {
+        "title": "How to become a DevRel",
+        "url": "https://www.pluralsight.com/resources/blog/tech-operations/developer-relations-getting-a-devrel-job",
+        "type": "article"
+      }
+    ]
   },
   "KdFYmj36M2jrGfsYkukpo": {
     "title": "IDEs",
-    "description": "",
-    "links": []
+    "description": "The concept of Integrated Development Environments (IDEs) traces its roots back to the 1960s and 1970s when basic text editors and simple programming tools were used in early computing. The first notable IDEs emerged with the rise of Unix systems in the 1970s, such as the EMACS text editor, which included features like code editing and debugging. Today, IDEs have become essential for developers, supporting multiple programming languages and integrating cloud-based tools, continuous integration, and real-time collaboration. IDEs like Visual Studio Code, IntelliJ IDEA, and Eclipse are widely adopted by developers across industries.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "History of IDEs",
+        "url": "https://multiqos.com/blogs/guide-to-integrated-development-environment/#:~:text=While%20TurboPascal%20may%20have%20popularized,significant%20popularity%20in%20the%201980s.",
+        "type": "article"
+      },
+      {
+        "title": "Visual Studio Code",
+        "url": "https://code.visualstudio.com/",
+        "type": "article"
+      },
+      {
+        "title": "JetBrains IDEs",
+        "url": "https://www.jetbrains.com/",
+        "type": "article"
+      }
+    ]
   },
   "j5nNSYI8s-cH8EA6G1EWY": {
     "title": "VS Code",
-    "description": "",
-    "links": []
+    "description": "Visual Studio Code (VSCode) was first announced by Microsoft in 2015 and quickly became one of the most popular and widely used Integrated Development Environments (IDEs). Built on Electron, a framework that allows web technologies like JavaScript, HTML, and CSS to create desktop applications, VSCode offers a lightweight and highly extensible platform for developers. VSCode focuses on being a streamlined code editor with the ability to install extensions that add features such as debugging, version control, and language-specific tooling. Microsoft's vision was to create a flexible environment that could cater to all types of developers, from beginners to seasoned professionals.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Visual Studio Code",
+        "url": "https://code.visualstudio.com/",
+        "type": "article"
+      },
+      {
+        "title": "Docs - Visual Studio Code",
+        "url": "https://code.visualstudio.com/docs",
+        "type": "article"
+      },
+      {
+        "title": "FreeCodeCamp Crash Course",
+        "url": "https://www.youtube.com/watch?v=WPqXP_kLzpo",
+        "type": "video"
+      },
+      {
+        "title": "VSCode Basics",
+        "url": "https://www.youtube.com/watch?v=B-s71n0dHUk",
+        "type": "video"
+      },
+      {
+        "title": "VSCode in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=KMxo3T_MTvY",
+        "type": "video"
+      }
+    ]
   },
   "NCnKS435DCl-8vilr1_XE": {
     "title": "JetBrains IDEs",

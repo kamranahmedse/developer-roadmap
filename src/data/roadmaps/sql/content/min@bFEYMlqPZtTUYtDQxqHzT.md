@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@SQL MAX & MIN](https://www.programiz.com/sql/min-and-max)
+- [@video@COUNT, SUM, AVG, MIN, MAX (SQL) - Aggregating Data](https://www.youtube.com/watch?v=muwEdPsx534)

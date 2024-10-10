@@ -1,13 +1,10 @@
 # What is HTTP?
 
-HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. HTTP follows a classical "Client-Server model" with a client opening a connection request, then waiting until it receives a response. HTTP is a stateless protocol, that means that the server does not keep any data (state) between two requests.
+HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the World Wide Web. It's an application-layer protocol that defines how messages are formatted and transmitted between web browsers and servers. HTTP operates on a request-response model: clients (usually web browsers) send requests to servers, which then respond with the requested data. The protocol is stateless, meaning each request is independent of any previous requests. HTTP supports various methods (GET, POST, PUT, DELETE, etc.) for different types of interactions with resources. HTTPS is the secure version of HTTP, using encryption to protect data in transit. HTTP/2 and HTTP/3 are more recent versions, offering improved performance through features like multiplexing and header compression. Understanding HTTP is crucial for web development, as it underpins how web applications communicate and function.
 
 Visit the following resources to learn more:
 
 - [@article@Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
 - [@article@What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
-- [@article@How HTTPS Works ...in a comic!](https://howhttps.works)
-- [@article@An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [@article@HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
+- [@article@How HTTPS Works](https://howhttps.works)
 - [@article@HTTP/3 Is Now a Standard: Why Use It and How to Get Started](https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/)
-- [@video@HTTP Crash Course & Exploration](https://www.youtube.com/watch?v=iYM2zFP3Zn0)

@@ -14,6 +14,11 @@
         "type": "article"
       },
       {
+        "title": "Version Control (Git) - The Missing Semester of Your CS Education",
+        "url": "https://missing.csail.mit.edu/2020/version-control/",
+        "type": "article"
+      },
+      {
         "title": "GUI Clients",
         "url": "https://git-scm.com/downloads/guis",
         "type": "article"
@@ -216,6 +221,11 @@
     "description": "Ignored files are tracked in a special file named `.gitignore` that is checked in at the root of your repository. There is no explicit git ignore command: instead the `.gitignore` file must be edited and committed by hand when you have new files that you wish to ignore. `.gitignore` files contain patterns that are matched against file names in your repository to determine whether or not they should be ignored.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "gitignore - A collection of useful .gitignore templates",
+        "url": "https://github.com/github/gitignore",
+        "type": "opensource"
+      },
+      {
         "title": "gitignore Documentation",
         "url": "https://git-scm.com/docs/gitignore/en",
         "type": "article"
@@ -258,6 +268,11 @@
         "type": "article"
       },
       {
+        "title": "Learn Git Branching",
+        "url": "https://learngitbranching.js.org/",
+        "type": "article"
+      },
+      {
         "title": "Git Branches Tutorial",
         "url": "https://www.youtube.com/watch?v=e2IbNHi4uCI",
         "type": "video"
@@ -285,7 +300,7 @@
     "description": "Renaming a branch in Git means changing the name of a branch to something different while preserving its history and the commits it contains. The branch itself remains the same in terms of the code and history it tracks, but the reference (the name by which you refer to it) is updated\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Renaming a branch - GitHub Docs",
+        "title": "Renaming a Branch - GitHub Docs",
         "url": "https://docs.github.com/github/administering-a-repository/renaming-a-branch",
         "type": "article"
       },
@@ -351,15 +366,26 @@
   },
   "NeSvgS2yA5x8qbcJHrV__": {
     "title": "GitHub Essentials",
-    "description": "GitHub Essentials refers to the core features and functionalities that form the foundation of GitHub's version control and collaboration platform. These essentials include repositories for storing and managing code, branches for parallel development, pull requests for code review and merging, issues for tracking tasks and bugs, and collaborative tools like project boards and wikis. Understanding and mastering these fundamental components allows developers to effectively manage their projects, collaborate with team members, and contribute to open-source initiatives, making GitHub an indispensable tool in modern software development workflows.",
-    "links": []
+    "description": "GitHub Essentials refers to the core features and functionalities that form the foundation of GitHub's version control and collaboration platform. These essentials include repositories for storing and managing code, branches for parallel development, pull requests for code review and merging, issues for tracking tasks and bugs, and collaborative tools like project boards and wikis. Understanding and mastering these fundamental components allows developers to effectively manage their projects, collaborate with team members, and contribute to open-source initiatives, making GitHub an indispensable tool in modern software development workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Github Essentials - Microsoft",
+        "url": "https://learn.microsoft.com/en-us/contribute/content/git-github-fundamentals",
+        "type": "article"
+      },
+      {
+        "title": "Hello World",
+        "url": "https://docs.github.com/en/get-started/start-your-journey/hello-world",
+        "type": "article"
+      }
+    ]
   },
   "i7fIIHcBEk473te8bniJ5": {
     "title": "Creating Account",
     "description": "To get started with GitHub, you'll need to create a free personal account on [GitHub.com](http://GitHub.com) and verify your email address. Every person who uses [GitHub.com](http://GitHub.com) signs in to a personal account. Your personal account is your identity on [GitHub.com](http://GitHub.com) and has a username and profile.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Creating an account on GitHub",
+        "title": "Creating an Account on GitHub",
         "url": "https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github",
         "type": "article"
       }
@@ -413,7 +439,7 @@
     "description": "A GitHub Profile README is a special repository that allows users to showcase their skills, projects, and personality directly on their GitHub profile. To create one, you need to make a new repository with the same name as your GitHub username. This repository should contain a [README.md](http://README.md) file, which GitHub will automatically display on your profile page. The README can be customized with Markdown formatting, allowing you to add text, images, links, and even dynamic content like GitHub stats or recent blog posts. This feature provides a unique opportunity to make your GitHub profile more engaging and informative for visitors, effectively serving as a personalized landing page for your GitHub presence.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Managing your profile README",
+        "title": "Managing your Profile README",
         "url": "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme",
         "type": "article"
       },
@@ -440,7 +466,7 @@
     "description": "In Git, a remote is a reference to a repository that exists on another server or system. Remotes allow you to access and interact with a copy of your repository that is stored elsewhere, making it possible to collaborate with others, share your work, and maintain multiple copies of your repository for backup and disaster recovery purposes. When you add a remote to your local repository, Git creates a reference to the remote repository, enabling you to push changes from your local repository to the remote one, pull changes from the remote to your local one, or fetch changes from the remote without updating your local copy. This enables distributed development and helps maintain a centralized version of your project's history, making it easier to track changes, manage conflicts, and ensure that everyone has access to the most up-to-date code.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "About remote repositories",
+        "title": "About Remote Repositories",
         "url": "https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories",
         "type": "article"
       },
@@ -477,7 +503,7 @@
         "type": "article"
       },
       {
-        "title": "GIT Push and Pull Tutorial",
+        "title": "Git Push and Pull Tutorial",
         "url": "https://www.datacamp.com/tutorial/git-push-pull",
         "type": "article"
       }
@@ -572,22 +598,22 @@
     "description": "Cloning a repository in Git and GitHub involves creating a local copy of a remote repository on your computer. This allows you to work on the project locally, commit changes, and later push those changes back to the remote repository.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Git clone",
+        "title": "git clone",
         "url": "https://git-scm.com/docs/git-clone/en",
         "type": "article"
       },
       {
-        "title": "Cloning a repository",
+        "title": "Cloning a Repository",
         "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository",
         "type": "article"
       },
       {
-        "title": "Clone a git respository",
+        "title": "Clone a Git Repository",
         "url": "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone",
         "type": "article"
       },
       {
-        "title": "Cloning remote respository into local machine",
+        "title": "Cloning Remote Repository into local machine",
         "url": "https://youtu.be/xeQih8LVtZM?si=djlyTDpLNS0oyqQH",
         "type": "video"
       }
@@ -690,8 +716,14 @@
   },
   "oWMaOWU06juoIuzXNe-wt": {
     "title": "Mentions",
-    "description": "Mentions on GitHub allow you to notify specific users or teams about comments, issues, pull requests, or other activities. This feature improves collaboration by encouraging participation and discussion among team members, increasing visibility of important topics, and streamlining communication within your repository. To use mentions, simply type `@username` or `@teamname` in a comment, and GitHub will auto-complete the mention as you type, automatically linking their username to the comment and notifying them about the discussion.",
-    "links": []
+    "description": "Mentions on GitHub allow you to notify specific users or teams about comments, issues, pull requests, or other activities. This feature improves collaboration by encouraging participation and discussion among team members, increasing visibility of important topics, and streamlining communication within your repository. To use mentions, simply type `@username` or `@teamname` in a comment, and GitHub will auto-complete the mention as you type, automatically linking their username to the comment and notifying them about the discussion.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Mention Somebody",
+        "url": "https://github.blog/news-insights/mention-somebody-they-re-notified/",
+        "type": "article"
+      }
+    ]
   },
   "XstmIysIi_lWo6RzszLBt": {
     "title": "Reactions",
@@ -706,8 +738,19 @@
   },
   "0rHDUbAdXqH9zQW2VfJ8v": {
     "title": "Merge Strategies",
-    "description": "When combining changes from one branch into another, Git provides various merge strategies to choose from. These methods allow for flexibility and customization in integrating code updates into your main branch. The available options include:\n\n*   Fast Forward (FF)\n*   Non-Fast Forward\n*   Rebase\n*   Squash\n*   Cherry Picking",
-    "links": []
+    "description": "When combining changes from one branch into another, Git provides various merge strategies to choose from. These methods allow for flexibility and customization in integrating code updates into your main branch. The available options include:\n\n*   Fast Forward (FF)\n*   Non-Fast Forward\n*   Rebase\n*   Squash\n*   Cherry Picking\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Merge Strategies",
+        "url": "https://git-scm.com/docs/merge-strategies",
+        "type": "article"
+      },
+      {
+        "title": "Git Merge Options",
+        "url": "https://www.atlassian.com/git/tutorials/using-branches/merge-strategy",
+        "type": "article"
+      }
+    ]
   },
   "agtPWS8j6i6wQPk10cy8E": {
     "title": "Fast-Forward vs Non-FF",
@@ -798,17 +841,17 @@
     "description": "Cherry-picking in Git allows you to apply a specific commit from one branch to another, without merging the entire branch. This is useful when you want to bring in a specific feature or fix from one branch to another without incorporating all the changes from the source branch.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "git-cherry-pick-docs",
+        "title": "git-cherry-pick docs",
         "url": "https://git-scm.com/docs/git-cherry-pick",
         "type": "article"
       },
       {
-        "title": "Git cherry pick",
+        "title": "Git Cherry Pick",
         "url": "https://www.atlassian.com/git/tutorials/cherry-pick",
         "type": "article"
       },
       {
-        "title": "Git-CHERRY-PICK-Tutorial",
+        "title": "Git Cherry Pick - Tutorial",
         "url": "https://youtu.be/i657Bg_HAWI?si=3jjn2X8Hi1na--F4",
         "type": "video"
       }
@@ -866,7 +909,7 @@
     "description": "Pull Request (PR) guidelines are essential for maintaining a smooth and efficient code review process in collaborative development environments. These guidelines typically outline best practices for creating, formatting, and submitting PRs, ensuring that changes are well-documented, easy to review, and align with the project's standards. They may cover aspects such as PR size, commit message formatting, documentation requirements, and testing expectations. By establishing clear PR guidelines, teams can streamline their workflow, improve code quality, and facilitate effective communication among contributors.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Best practices for pull requests",
+        "title": "Best Practices for Pull Requests",
         "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests",
         "type": "article"
       },
@@ -898,7 +941,7 @@
     "description": "Contribution guidelines are essential for collaborative projects on GitHub as they help streamline collaboration, set expectations for contributions, and maintain the project's quality and consistency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Setting guidelines for respository contributors",
+        "title": "Setting Guidelines for Repository Contributors",
         "url": "https://docs.github.com/articles/setting-guidelines-for-repository-contributors",
         "type": "article"
       },
@@ -962,10 +1005,21 @@
       }
     ]
   },
-  "github-wikis@lONqOqD-4slxa9B5i9ADX.md": {
+  "lONqOqD-4slxa9B5i9ADX": {
     "title": "GitHub Wikis",
-    "description": "",
-    "links": []
+    "description": "GitHub Wikis are collaborative documentation spaces integrated directly into GitHub repositories. They provide a platform for teams to create, edit, and organize project-related information, such as documentation, guidelines, and FAQs. Wikis support Markdown formatting, making it easy to structure content and include images or links. With version control and the ability to clone wiki repositories, teams can collaboratively maintain up-to-date documentation alongside their code, enhancing project understanding and facilitating knowledge sharing among contributors and users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "About Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis",
+        "type": "article"
+      },
+      {
+        "title": "Documenting your project with Wikis",
+        "url": "https://docs.github.com/en/communities/documenting-your-project-with-wikis",
+        "type": "article"
+      }
+    ]
   },
   "i3AbARgzQtxtlB-1AS8zv": {
     "title": "Clean Git History",
@@ -977,7 +1031,7 @@
         "type": "article"
       },
       {
-        "title": "Git best practice tip: clean commit history",
+        "title": "Git Best Practice Tip: Clean Commit History",
         "url": "https://youtu.be/bZpiVijzd2g?si=8lJTlR3LfY9ZUd77",
         "type": "video"
       }
@@ -985,8 +1039,19 @@
   },
   "yMx3LdadPz4g25CL3N8da": {
     "title": "Working in a Team",
-    "description": "Working in a team on GitHub involves collaborative development using Git's distributed version control system. Team members can work on separate branches, create pull requests for code reviews, and merge changes into the main codebase. GitHub's features like issues, projects, and discussions facilitate communication and project management. Effective teamwork on GitHub requires clear communication, adherence to agreed-upon workflows, and proper use of Git commands to manage code changes and resolve conflicts. This collaborative approach enables teams to work efficiently on complex projects, maintain code quality, and track progress effectively.\n\nGitHub also offers an organization and team management interface, allowing teams to manage projects, members, and collaboration settings.",
-    "links": []
+    "description": "Working in a team on GitHub involves collaborative development using Git's distributed version control system. Team members can work on separate branches, create pull requests for code reviews, and merge changes into the main codebase. GitHub's features like issues, projects, and discussions facilitate communication and project management. Effective teamwork on GitHub requires clear communication, adherence to agreed-upon workflows, and proper use of Git commands to manage code changes and resolve conflicts. This collaborative approach enables teams to work efficiently on complex projects, maintain code quality, and track progress effectively.\n\nGitHub also offers an organization and team management interface, allowing teams to manage projects, members, and collaboration settings.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Getting Started with Teams",
+        "url": "https://docs.github.com/en/get-started/onboarding/getting-started-with-github-team",
+        "type": "article"
+      },
+      {
+        "title": "Github Team Docs",
+        "url": "https://docs.github.com/organizations/organizing-members-into-teams/about-teams",
+        "type": "article"
+      }
+    ]
   },
   "RMrxQLhrINO5g4Mhxh5qS": {
     "title": "GitHub Organizations",
@@ -1025,12 +1090,12 @@
     "description": "GitHub Organizations allow you to create teams within your organization, which helps in organizing members based on their roles and responsibilities.\n\n*   Grouping: Team members can be grouped together according to the company or group's structure.\n*   Access permissions: Access permissions can be cascaded from one team member to another.\n*   Mentions: Team mentions allow for easy referencing of specific teams in repository discussions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Organizing members into teams",
+        "title": "Organizing Members into Teams",
         "url": "https://docs.github.com/en/organizations/organizing-members-into-teams",
         "type": "article"
       },
       {
-        "title": "Best practices for organizations and teams using GitHub Enterprise Cloud",
+        "title": "Best Practices for Organizations and Teams using GitHub Enterprise Cloud",
         "url": "https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/",
         "type": "article"
       }
@@ -1086,10 +1151,10 @@
   },
   "sxvT2hGko2PDRBoBrCGWD": {
     "title": "Roadmaps",
-    "description": "GitHub roadmaps are a feature that helps you visualize and organize plans for your projects, allowing you to create a high-level view of milestones and goals, and collaborate on planning and tracking progress with team members.\n\nVisit the following resources to learn more:",
+    "description": "GitHub Roadmaps are a feature that helps you visualize and organize plans for your projects, allowing you to create a high-level view of milestones and goals, and collaborate on planning and tracking progress with team members.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Customizing the roadmap layout",
+        "title": "Customizing the Roadmap Layout",
         "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout",
         "type": "article"
       },
@@ -1121,7 +1186,7 @@
     "description": "GitHub Discussions is a collaborative communication feature within GitHub repositories that provides a dedicated space for community conversations, questions, and knowledge sharing. It allows team members, contributors, and users to engage in threaded discussions, share ideas, ask for help, and make announcements outside of specific code changes or issues. This feature enhances project collaboration by centralizing important conversations, reducing noise in the issue tracker, and fostering a sense of community around open-source projects or team initiatives.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "official GitHub Discussions Docs",
+        "title": "GitHub Discussions Docs",
         "url": "https://docs.github.com/en/discussions",
         "type": "article"
       },
@@ -1209,7 +1274,7 @@
   },
   "qFEonbCMLri8iA0yONwuf": {
     "title": "git log options",
-    "description": "`git log` is a command in Git that shows the commit history of your repository. It provides a detailed view of all commits, including their hashes, authors, dates, and messages.\n\nHere are some common git log options:\n\n*   `-2`: Only show the last two commits.\n*   `--all`: Show all branches in the repository.\n*   `--graph`: Display the commit history as a graph.\n*   `--pretty`: Enable clean colorized output.\n*   `--no-color`: Disable colorized output.\n*   `--stat`: Show a statistical summary of changes.\n*   `**-S`: Only show commits with modified files.\n\nYou can combine these options to tailor your log output to suit your needs.\n\nFor example, `git log -2 --graph` will display the last two commits in graph form.\n\nVisit the following resources to learn more:",
+    "description": "`git log` is a command in Git that shows the commit history of your repository. It provides a detailed view of all commits, including their hashes, authors, dates, and messages.\n\nHere are some common git log options:\n\n*   `-2`: Only show the last two commits.\n*   `-- <file-name>`: Show the commits that modified a specific file.\n*   `--all`: Show all branches in the repository.\n*   `--graph`: Display the commit history as a graph.\n*   `--pretty`: Enable clean colorized output.\n*   `--no-color`: Disable colorized output.\n*   `--stat`: Show a statistical summary of changes.\n*   `**-S`: Only show commits with modified files.\n\nYou can combine these options to tailor your log output to suit your needs.\n\nFor example, `git log -2 --graph` will display the last two commits in graph form.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Git Log",
@@ -1225,8 +1290,24 @@
   },
   "0Yi4cryT2v2SGBjouOas3": {
     "title": "Undoing Changes",
-    "description": "If mistakes or unwanted changes have been committed to your Git repository, there are ways to correct them. Two common methods for reverting changes include:\n\n*   Git Reset: Resets the branch to a previous commit.\n*   Git Revert: Creates a new commit that reverts specified changes.",
-    "links": []
+    "description": "If mistakes or unwanted changes have been committed to your Git repository, there are ways to correct them. Two common methods for reverting changes include:\n\n*   Git Reset: Resets the branch to a previous commit.\n*   Git Revert: Creates a new commit that reverts specified changes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Undoing Changes",
+        "url": "https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified",
+        "type": "article"
+      },
+      {
+        "title": "Undo Anything in Git",
+        "url": "https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/",
+        "type": "article"
+      },
+      {
+        "title": "Undoing Changes in Git",
+        "url": "https://www.atlassian.com/git/tutorials/undoing-changes",
+        "type": "article"
+      }
+    ]
   },
   "dLr55Om7IOvI53c1DgTKc": {
     "title": "git revert",
@@ -1249,7 +1330,7 @@
     "description": "Git reset is a command that allows you to \"undo\" or reset your current branch to a previous state by moving its HEAD pointer, effectively discarding changes made since then. When using git reset, it's essential to specify one of the three modes: soft, hard, or mixed. The mode you choose will determine how Git interacts with files in your working directory and staging area.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Git reset",
+        "title": "git reset",
         "url": "https://www.atlassian.com/git/tutorials/undoing-changes/git-reset",
         "type": "article"
       },
@@ -1295,8 +1376,19 @@
   },
   "-0zQvCHG8jS_ghSjmTeIx": {
     "title": "Viewing Diffs",
-    "description": "Viewing diffs in Git is crucial for understanding the changes made to your code. This is especially important when collaborating with others or reviewing your own work over time. Diffs show you exactly what lines have been added, modified, or removed between different versions of your files. This feature helps in code review processes, troubleshooting issues, and maintaining a clear history of your project's evolution. Git provides various commands and tools to view these differences, making it easier to track and manage changes effectively.",
-    "links": []
+    "description": "Viewing diffs in Git is crucial for understanding the changes made to your code. This is especially important when collaborating with others or reviewing your own work over time. Diffs show you exactly what lines have been added, modified, or removed between different versions of your files. This feature helps in code review processes, troubleshooting issues, and maintaining a clear history of your project's evolution. Git provides various commands and tools to view these differences, making it easier to track and manage changes effectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Diff Documentation",
+        "url": "https://git-scm.com/docs/git-diff",
+        "type": "article"
+      },
+      {
+        "title": "Git Diff",
+        "url": "https://www.atlassian.com/git/tutorials/saving-changes/git-diff",
+        "type": "article"
+      }
+    ]
   },
   "Rwpeltygwzcf6hnuZNURE": {
     "title": "Between Commits",
@@ -1364,8 +1456,19 @@
   },
   "sOoC-XxEoIvwKct00oKlX": {
     "title": "Rewriting History",
-    "description": "In certain situations, you might need to modify or remove commits from your Git repository's history. This can be achieved using various methods:\n\n*   `git commit --amend`: Allows you to edit the most recent commit.\n*   `git rebase`: Replaces one branch with another, preserving the commit history.\n*   `git filter-branch`: Removes specific commits from a branch without altering the original branch.\n*   `git push --force`: Updates the remote repository while respecting existing pull requests.\n\nRewriting history in Git is typically necessary when:\n\n*   Fixing mistakes: Correcting errors or typos in commit messages.\n*   Removing sensitive data: Deleting confidential information from commits, like API keys or database credentials.\n*   Simplifying complex histories: Reorganizing branches to improve clarity and reduce complexity.",
-    "links": []
+    "description": "In certain situations, you might need to modify or remove commits from your Git repository's history. This can be achieved using various methods:\n\n*   `git commit --amend`: Allows you to edit the most recent commit.\n*   `git rebase`: Replaces one branch with another, preserving the commit history.\n*   `git filter-branch`: Removes specific commits from a branch without altering the original branch.\n*   `git push --force`: Updates the remote repository while respecting existing pull requests.\n\nRewriting history in Git is typically necessary when:\n\n*   Fixing mistakes: Correcting errors or typos in commit messages.\n*   Removing sensitive data: Deleting confidential information from commits, like API keys or database credentials.\n*   Simplifying complex histories: Reorganizing branches to improve clarity and reduce complexity.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Tools - Rewriting History",
+        "url": "https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History",
+        "type": "article"
+      },
+      {
+        "title": "Methods of Rewriting History in Git",
+        "url": "https://www.atlassian.com/git/tutorials/rewriting-history",
+        "type": "article"
+      }
+    ]
   },
   "NjPnEXLf1Lt9qzgxccogv": {
     "title": "git commit --amend",
@@ -1398,7 +1501,7 @@
         "type": "article"
       },
       {
-        "title": "git rebase ",
+        "title": "git rebase",
         "url": "https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase",
         "type": "article"
       },
@@ -1416,11 +1519,21 @@
   },
   "BKVA6Q7DXemAYjyQOA0nh": {
     "title": "git filter-branch",
-    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.\n\n*   Filter types: You can modify trees (e.g., removing a file or running a Perl script) or information about each commit.\n*   Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.\n*   Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.\n\nVisit the following resources to learn more:",
+    "description": "You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.\n\n*   Filter types: You can modify trees (e.g., removing a file or running a Perl script) or information about each commit.\n*   Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.\n*   Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.\n\nNotably, there exists a simpler, safer, and more powerful alternative: `git filter-repo`. This tool is actively promoted by Git and offers a streamlined approach to filtering revisions, making it a preferred choice for rewriting your Git history, especially when managing large repositories.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "git filter-branch",
         "url": "https://git-scm.com/docs/git-filter-branch",
+        "type": "article"
+      },
+      {
+        "title": "git filter-repo",
+        "url": "https://github.com/newren/git-filter-repo",
+        "type": "article"
+      },
+      {
+        "title": "Removing sensitive data from a repository",
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository",
         "type": "article"
       }
     ]
@@ -1656,8 +1769,19 @@
   },
   "fjAFNjNNbPOzme9Uk_fDV": {
     "title": "Submodules",
-    "description": "In Git, submodules allow you to include another repository within a project. This feature enables the management of external dependencies as part of the main project.\n\n*   Including external repositories: Submodules can be used to include other Git repositories within your project.\n*   Managing dependencies: They provide a way to manage and track changes in external dependencies.",
-    "links": []
+    "description": "In Git, submodules allow you to include another repository within a project. This feature enables the management of external dependencies as part of the main project.\n\n*   Including external repositories: Submodules can be used to include other Git repositories within your project.\n*   Managing dependencies: They provide a way to manage and track changes in external dependencies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Submodules",
+        "url": "https://git-scm.com/book/en/v2/Git-Tools-Submodules",
+        "type": "article"
+      },
+      {
+        "title": "Git Submodules Tutorial",
+        "url": "https://www.atlassian.com/git/tutorials/git-submodule",
+        "type": "article"
+      }
+    ]
   },
   "x4bnsPVTiX2xOCSyrgWpF": {
     "title": "Adding / Updating",
@@ -1677,7 +1801,7 @@
   },
   "d0-u_-_vtPK8tnUpnj_NB": {
     "title": "What and Why use?",
-    "description": "Git submodules are a feature that allows you to include one Git repository within another. They are useful for managing external dependencies or shared components across projects.\n\nKey points:\n\n1.  Separate repositories with independent histories\n2.  Parent repository tracks specific submodule commits\n3.  Enables code reuse and modular project structure\n4.  Helps manage dependencies and keep main repository focused\n5.  Facilitates collaboration on complex projects\n\nBenefits:\n\n*   Including third-party libraries\n*   Sharing common code\n*   Managing multi-component projects\n*   Keeping main repository lightweight\n\nNote: While powerful, submodules can add complexity to your workflow, so careful consideration is needed before implementation.\n\nLearn more from the following resources:",
+    "description": "Git submodules are a feature that allows you to include one Git repository within another. They are useful for managing external dependencies or shared components across projects.\n\nKey points\n----------\n\n1.  Separate repositories with independent histories\n2.  Parent repository tracks specific submodule commits\n3.  Enables code reuse and modular project structure\n4.  Helps manage dependencies and keep main repository focused\n5.  Facilitates collaboration on complex projects\n\nBenefits\n--------\n\n*   Including third-party libraries\n*   Sharing common code\n*   Managing multi-component projects\n*   Keeping main repository lightweight\n\nNote: While powerful, submodules can add complexity to your workflow, so careful consideration is needed before implementation.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Git Submodules: Core Concept, Workflows, and Tips",
@@ -1696,7 +1820,7 @@
     "description": "GitHub CLI is a command-line interface tool that brings GitHub functionality to your terminal. It allows developers to interact with GitHub directly from the command line, enabling them to manage repositories, create issues, pull requests, and perform various GitHub operations without leaving their terminal environment. This powerful tool streamlines workflows, enhances productivity, and provides a seamless integration between local development and GitHub's collaborative features, making it easier for developers to incorporate GitHub into their daily coding routines.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "official GitHub CLI Docs",
+        "title": "GitHub CLI Docs",
         "url": "https://cli.github.com/",
         "type": "article"
       },
@@ -1722,7 +1846,7 @@
         "type": "article"
       },
       {
-        "title": "GitHub CLI quickstart",
+        "title": "GitHub CLI Quickstart",
         "url": "https://docs.github.com/en/github-cli/github-cli/quickstart",
         "type": "article"
       }
@@ -1794,6 +1918,16 @@
         "title": "YouTube: GitHub Actions Playlist",
         "url": "https://www.youtube.com/watch?v=-hVG9z0fCac&list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY&pp=iAQB",
         "type": "course"
+      },
+      {
+        "title": "Github Actions",
+        "url": "https://docs.github.com/en/actions",
+        "type": "article"
+      },
+      {
+        "title": "What are Github Actions",
+        "url": "https://www.youtube.com/watch?v=URmeTqglS58",
+        "type": "video"
       }
     ]
   },
@@ -1801,6 +1935,16 @@
     "title": "YAML Syntax",
     "description": "YAML (YAML Ain't Markup Language) is a human-readable data serialization standard for all programming languages. It is designed to be easily readable by humans while also being machine-parsable. Key features of YAML include:\n\n1.  Simplicity: YAML uses a minimalist syntax with significant whitespace and indentation.\n    \n2.  Versatility: It can represent various data types, including scalars, lists, and associative arrays.\n    \n3.  Readability: Its clear, concise format makes it easy for both humans and machines to understand.\n    \n4.  Language-independent: YAML can be used with any programming language that has a YAML parser.\n    \n\nYAML is commonly used for:\n\n*   Configuration files: Many applications and tools use YAML for their configuration settings.\n*   Data exchange: It serves as a lightweight alternative to XML or JSON for data transfer between systems.\n*   Data storage: YAML can be used to store structured data in a human-readable format.\n*   DevOps and CI/CD: It's widely used in tools like Docker, Kubernetes, and various CI/CD platforms for defining workflows and configurations.\n\nUnderstanding YAML syntax is crucial for working with modern development tools, especially in the realms of DevOps, cloud computing, and containerization.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "YAML",
+        "url": "https://yaml.org/",
+        "type": "article"
+      },
+      {
+        "title": "YAML Cheatsheet",
+        "url": "https://cheatsheets.zip/yaml",
+        "type": "article"
+      },
       {
         "title": "What is YAML?",
         "url": "https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/",
@@ -1949,7 +2093,7 @@
   },
   "PUnYNBrAZWoZiopjtNgnA": {
     "title": "Usecases",
-    "description": "GitHub Actions offer a wide range of automation possibilities for your development workflow. Here are some common use cases:\n\n1.  Continuous Integration (CI): Automatically build and test your code on every push or pull request.\n2.  Continuous Deployment (CD): Automatically deploy your application to various environments after successful builds.\n3.  Code Quality Checks: Run linters, formatters, and other code quality tools automatically.\n4.  Dependency Updates: Automatically create pull requests for outdated dependencies.\n5.  Issue and PR Management: Automatically label, assign, or close issues and pull requests based on certain conditions.\n6.  Scheduled Tasks: Run periodic maintenance tasks, backups, or data processing jobs.\n7.  Security Scanning: Perform automated security checks on your codebase and dependencies.\n8.  Documentation Generation: Automatically generate and publish documentation for your project.\n9.  Cross-platform Testing: Test your code on multiple operating systems and environments simultaneously.\n10.  Release Management: Automate the creation of release notes and asset uploads for new versions.\n\nThese use cases demonstrate how GitHub Actions can streamline your development process, improve code quality, and increase productivity.\n\nLearn more from the following resources:",
+    "description": "GitHub Actions offer a wide range of automation possibilities for your development workflow. Here are some common use cases:\n\n1.  Continuous Integration (CI): Automatically build and test your code on every push or pull request.\n2.  Continuous Deployment (CD): Automatically deploy your application to various environments after successful builds.\n3.  Code Quality Checks: Run linters, formatters, and other code quality tools automatically.\n4.  Dependency Updates: Automatically create pull requests for outdated dependencies.\n5.  Issue and PR Management: Automatically label, assign, or close issues and pull requests based on certain conditions.\n6.  Scheduled Tasks: Run periodic maintenance tasks, backups, or data processing jobs.\n7.  Security Scanning: Perform automated security checks on your codebase and dependencies.\n8.  Documentation Generation: Automatically generate and publish documentation for your project.\n9.  Cross-platform Testing: Test your code on multiple operating systems and environments simultaneously.\n10.  Release Management: Automate the creation of release notes and asset uploads for new versions.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "GitHub Actions Documentation",
@@ -2116,12 +2260,12 @@
     "description": "The GitHub API is a powerful tool that allows developers to interact with the GitHub platform programmatically. It provides access to various GitHub features, such as user data, repository information, and commit history, through both REST and GraphQL interfaces. The API supports authentication, implements rate limiting, and offers webhooks for real-time notifications, enabling developers to automate tasks, create custom integrations, and build applications that leverage GitHub's functionality.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "official API Docs",
+        "title": "Github API Docs",
         "url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
         "type": "article"
       },
       {
-        "title": "Getting started",
+        "title": "Getting Started",
         "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28",
         "type": "article"
       }
@@ -2188,7 +2332,7 @@
   },
   "qrdOARfqGPF9xhF6snbAn": {
     "title": "OAuth Apps",
-    "description": "GitHub OAuth Apps are a way to integrate with the GitHub platform using OAuth authentication. They allow developers to create custom integrations that can automate tasks, provide real-time notifications, and build custom workflows.\n\nVisit the following resources to learn more:",
+    "description": "GitHub OAuth Apps allow developers to integrate with GitHub using OAuth 2.0 authentication. They enable secure, token-based access to specific GitHub resources like repositories, issues, and pull requests. OAuth Apps can automate tasks, personalize interactions, and provide real-time notifications through webhooks, all while allowing users to approve only the necessary permissions without sharing their credentials.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Creating an OAuth app",
@@ -2249,7 +2393,7 @@
         "type": "article"
       },
       {
-        "title": "Ceating a GitHub Pages site",
+        "title": "Creating a GitHub Pages site",
         "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
         "type": "article"
       },
@@ -2265,12 +2409,12 @@
     "description": "A GitHub Gist is a small code or text snippet that can be shared with others. It is a simple way to share code, configuration files, or other snippets of text without creating a full-fledged repository. Gists are useful for sharing examples, demos, or tutorials, and they can also serve as a starting point for larger projects. Each gist has a unique URL that can be shared with others, allowing them to view and edit the content. Gists support various file types, including code files, text files, and even images. They also provide features like syntax highlighting, line numbers, and commit history.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Creating gists",
+        "title": "Creating Gists",
         "url": "https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists",
         "type": "article"
       },
       {
-        "title": "REST API endpoints for gists",
+        "title": "REST API endpoints for Gists",
         "url": "https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28",
         "type": "article"
       }
@@ -2313,7 +2457,7 @@
     "description": "On GitHub Pages, users can customize their site's URL by connecting a custom domain to their repository. This feature allows users to use their own domain name instead of the default [GitHub.io](http://GitHub.io) subdomain, giving their site a more professional and personalized look.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Configuring a custom domain for your GitHub Pages site",
+        "title": "Configuring a Custom Domain for Your GitHub Pages Site",
         "url": "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site",
         "type": "article"
       },
@@ -2436,7 +2580,7 @@
         "type": "article"
       },
       {
-        "title": "Dependabot quickstart guide",
+        "title": "Dependabot Quick-start Guide",
         "url": "https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide",
         "type": "article"
       },

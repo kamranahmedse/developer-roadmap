@@ -1,5 +1,7 @@
-import { type FormEvent, useState } from 'react';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
+import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import { isLoggedIn, setAIReferralCode } from '../../lib/jwt';
 
 type EmailSignupFormProps = {
   isDisabled?: boolean;
@@ -9,6 +11,9 @@ type EmailSignupFormProps = {
 export function EmailSignupForm(props: EmailSignupFormProps) {
   const { isDisabled, setIsDisabled } = props;
 
+  const { rc: referralCode } = getUrlParams() as {
+    rc?: string;
+  };
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -47,6 +52,16 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
     )}`;
   };
 
+  useEffect(() => {
+    if (!referralCode || isLoggedIn()) {
+      deleteUrlParam('rc');
+      return;
+    }
+
+    setAIReferralCode(referralCode);
+    deleteUrlParam('rc');
+  }, []);
+
   return (
     <form className="flex w-full flex-col gap-2" onSubmit={onSubmit}>
       <label htmlFor="name" className="sr-only">
@@ -72,7 +87,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         type="email"
         autoComplete="email"
         required
-        className="block w-full rounded-lg border border-gray-300 px-3 py-2  outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         placeholder="Email Address"
         value={email}
         onInput={(e) => setEmail(String((e.target as any).value))}

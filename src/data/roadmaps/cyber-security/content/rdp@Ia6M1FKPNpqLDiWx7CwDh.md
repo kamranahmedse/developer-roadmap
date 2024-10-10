@@ -1,32 +1,8 @@
 # RDP
 
-**Remote Desktop Protocol (RDP)**, developed by Microsoft, is a proprietary protocol that enables users to connect to a remote computer over a network, and access and control its resources, as if they were using the computer locally. This is useful for users who need to work remotely, manage servers or troubleshoot issues on another computer.
+**Remote Desktop Protocol (RDP)** is a Microsoft-developed protocol that enables users to remotely access and control a computer over a network. It allows users to interact with a remote desktop environment as if they were sitting in front of the computer, providing access to applications, files, and network resources. RDP is commonly used for remote administration, technical support, and remote work. It operates over TCP port 3389 and supports encryption for secure data transmission, though proper security measures, like strong passwords and multi-factor authentication, are essential to prevent unauthorized access.
 
-## How RDP Works
+Learn more from the following resources:
 
-RDP uses a client-server architecture, where the remote computer being accessed acts as the server and the user's computer acts as the client. The client establishes a connection with the server to access its resources, such as display, keyboard, mouse, and other peripherals.
-
-The protocol primarily operates on standard Transmission Control Protocol (TCP) port 3389 (although it can be customized) and uses the User Datagram Protocol (UDP) to provide a more robust and fault-tolerant communication channel.
-
-## Features of RDP
-
-- **Multi-platform support:** Although developed by Microsoft, RDP clients are available for various platforms, including Windows, macOS, Linux, and even mobile devices like Android and iOS.
-- **Secure connection:** RDP can provide encryption and authentication to secure the connection between client and server, ensuring that data transmitted over the network remains confidential and protected from unauthorized access.
-- **Dynamic resolution adjustment:** RDP can adapt the remote computer's screen resolution to fit the client's screen, providing a better user experience.
-- **Clipboard sharing:** RDP allows users to copy and paste content between the local and remote computers.
-- **Printer and file sharing:** Users can access and print files from their local computer to the remote one, and vice versa.
-
-## Security Considerations
-
-Though RDP is popular and useful, it does come with its share of security concerns. Some common risks include:
-
-- Unauthorized access: If an attacker successfully gains access to an RDP session, they may be able to compromise and control the remote computer.
-- Brute force attacks: Attackers may use brute force techniques to guess login credentials, especially if the server has a weak password policy.
-- Vulnerabilities: As a proprietary protocol, RDP can be susceptible to vulnerabilities that could lead to system breaches.
-
-To mitigate these risks, you should:
-
-- Use strong, unique passwords for RDP accounts and consider implementing two-factor authentication.
-- Limit RDP access to specific IP addresses or Virtual Private Networks (VPNs) to reduce exposure.
-- Apply security patches regularly to keep RDP up-to-date and minimize the risk of exploits.
-- Employ network-level authentication (NLA) to offer an additional layer of security.
+- [@video@What is RDP and how to use it?](https://www.youtube.com/watch?v=flPnBSz-lqw)
+- [@article@What is the Remote Desktop Protocol (RDP)?](https://www.cloudflare.com/en-gb/learning/access-management/what-is-the-remote-desktop-protocol/)

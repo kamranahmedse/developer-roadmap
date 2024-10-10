@@ -13,6 +13,7 @@ import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
+import ChangelogBanner from "../components/ChangelogBanner.astro";
 
 export interface Props {
   title: string;
@@ -164,7 +165,12 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <OpenSourceBanner />
+      <slot name='changelog-banner'>
+        <ChangelogBanner />
+      </slot>
+      <slot name='open-source-banner'>
+        <OpenSourceBanner />
+      </slot>
       <Footer />
     </slot>
 

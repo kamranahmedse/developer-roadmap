@@ -1,15 +1,19 @@
-# Stephen Wendell's CREATE Action Funnel
+# Stephen Wendel's CREATE Action Funnel
 
-Stephen Wendell's Create Action Funnel is a UX design framework focused on converting website visitors into active customers through a systematic and engaging process. The approach emphasizes on understanding user behavior, catering to their needs, and directing them towards specific actions. The Action Funnel consists of four major steps:
+Stephen Wendel's CREATE Action Funnel is a behavioral design framework aimed at helping individuals or organizations encourage specific behaviors in others, especially in the context of product design. It breaks down the process of motivating action into six key stages. Each stage helps identify where users might drop off or face barriers, allowing designers or strategists to address these pain points effectively. These stages are:
 
-- **Establish the Objectives:** Before diving into the design, clearly define the goals you want to achieve through the website or app. Determine what actions you want the users to take (e.g., sign up, make a purchase, share content) and what constitutes a successful conversion.
+- **CUE:** The user must notice a cue or prompt that tells them to act. This could be a notification, a visual element, or any kind of reminder.
 
-- **Understand User Mindsets:** Identify your target audience and recognize their needs, preferences, emotions, and pain points. Accomplishing this requires user research, creating personas, storyboarding, and empathy mapping, among other methods.
+- **REACTION:** The user must react positively to the cue. This stage involves emotional and cognitive processing, where the individual decides if the action is relevant or attractive.
 
-- **Design the Optimal User Flow:** Craft a seamless and intuitive user journey by designing a clear path from the landing page to the desired action. Prioritize simplicity, usability, and efficiency. Make sure to include meaningful touchpoints and interactions to engage the users and make it easy for them to complete the intended action.
+- **EVALUATION:** The user evaluates whether the action is worth their time, energy, or resources. They assess the benefits versus the effort required.
 
-- **Refine and Test the Experience:** Use wireframes and prototypes to test and iteratively refine the user experience. Employ user testing, A/B testing, and analytics to gather insight on user behavior, preferences, and engagement. Continuously use feedback to make improvements, ensuring that the design effectively leads visitors down the action funnel.
+- **ABILITY:** The user must feel capable of taking the action. This involves ensuring that the action is easy enough to do and aligns with their skills and resources.
 
-By implementing Stephen Wendell's `Create Action Funnel`, you can effectively guide users through an engaging journey that motivates them to become active customers, ultimately increasing conversion rates and overall satisfaction.
+- **TIMING:** The action needs to happen at the right time. Users need to have the opportunity and be in the right context to act.
+
+- **EXECUTION:** Finally, the action must be carried out successfully. This is the stage where the behavior is completed.
+
+The CREATE Action Funnel is helpful for product designers, marketers, or behavior change professionals, as it provides a structured way to understand user actions and design interventions to improve completion rates. It identifies and solves the gaps that occur between intention and action.
 
 - [@article@Behavioral Science Crash Course: Steve Wendel's CREATE Action Funnel](https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel)

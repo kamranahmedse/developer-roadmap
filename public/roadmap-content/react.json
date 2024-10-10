@@ -222,29 +222,54 @@
     "description": "React follows a declarative approach to rendering components, which means that developers specify what a component should look like, and React takes care of rendering the component to the screen. This is in contrast to an imperative approach, where developers would write code to manually manipulate the DOM (Document Object Model) to update the UI.\n\nThe virtual DOM (VDOM) is an important aspect of how React works. It is a lightweight in-memory representation of the DOM (Document Object Model), and it is used to optimize the rendering of components in a React application.\n\n*   Components are written as JavaScript classes or functions that define a render method. The render method returns a description of what the component should look like, using JSX syntax.\n*   When a component is rendered, React creates a virtual DOM (VDOM) representation of the component. The VDOM is a lightweight in-memory representation of the DOM, and it is used to optimize the rendering of components.\n*   React compares the VDOM representation of the component with the previous VDOM representation (if it exists). If there are differences between the two VDOMs, React calculates the minimum number of DOM updates needed to bring the actual DOM into line with the new VDOM.\n*   React updates the actual DOM with the minimum number of DOM updates needed to reflect the changes in the VDOM.\n\nThis process is known as reconciliation, and it is an important aspect of how React works. By using a declarative approach and a VDOM, React is able to optimize the rendering of components and improve the performance of web applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rendering - Official Docs",
-        "url": "https://legacy.reactjs.org/docs/rendering-elements.html",
+        "title": "Render and Commit - Official Docs",
+        "url": "https://react.dev/learn/render-and-commit",
         "type": "article"
       },
       {
         "title": "Rendering in React - ui.dev",
         "url": "https://ui.dev/why-react-renders",
         "type": "article"
+      },
+      {
+        "title": "Fix the slow render before you fix the re-render",
+        "url": "https://kentcdodds.com/blog/fix-the-slow-render-before-you-fix-the-re-render",
+        "type": "article"
       }
     ]
   },
   "8OBlgDRUg-CTgDXY-QHyO": {
     "title": "Component Lifecycle",
-    "description": "React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process. You can use this [lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) as a cheat sheet.\n\nIt is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.\n\nVisit the following resources to learn more:",
+    "description": "React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process.\n\nIt is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Lifecycle of Reactive Effects",
+        "url": "https://react.dev/learn/lifecycle-of-reactive-effectsv",
+        "type": "article"
+      },
       {
         "title": "Class Component",
         "url": "https://react.dev/reference/react/Component",
         "type": "article"
       },
       {
-        "title": "Lifecycle of Reactive Effects",
-        "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
+        "title": "React component lifecycle: React lifecycle methods & hooks",
+        "url": "https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "The React lifecycle: methods and hooks explained",
+        "url": "https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle",
+        "type": "article"
+      },
+      {
+        "title": "React Lifecycle: Methods & Hooks In Detail",
+        "url": "https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/",
+        "type": "article"
+      },
+      {
+        "title": "lifecycle diagram",
+        "url": "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/",
         "type": "article"
       }
     ]
@@ -586,7 +611,7 @@
   },
   "w3bNp7OkehI1gjx8NzlC8": {
     "title": "useMemo",
-    "description": "`useMemo` is a React hook that memorizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
+    "description": "`useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "useMemo Docs",
@@ -653,7 +678,7 @@
     "links": [
       {
         "title": "React Documentation on useCallback",
-        "url": "https://reactjs.org/docs/hooks-reference.html#usecallback",
+        "url": "https://react.dev/reference/react/useCallback",
         "type": "article"
       },
       {
@@ -1618,21 +1643,26 @@
   },
   "ElgRwv5LSVg5FXGx-2K2s": {
     "title": "TypeScript",
-    "description": "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript. Because TypeScript is a superset of JavaScript, all JavaScript programs are syntactically valid TypeScript, but they can fail to type-check for safety reasons.\n\nTypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js library modules are also available, allowing development of Node.js programs within TypeScript.\n\nVisit the following resources to learn more:",
+    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TypeScript Website",
-        "url": "https://typescriptlang.org/",
+        "title": "Official Website",
+        "url": "https://www.typescriptlang.org/",
         "type": "article"
       },
       {
-        "title": "TypeScript Docs",
-        "url": "https://typescriptlang.org/docs",
+        "title": "The TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
         "type": "article"
       },
       {
-        "title": "Learn Typescript Basics in 12 Minutes",
-        "url": "https://www.youtube.com/watch?v=ahCwqrYpIuM&pp=ygULdHlwZXNjcnJpcHQ%3D",
+        "title": "Explore top posts about TypeScript",
+        "url": "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "TypeScript for Beginners",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
         "type": "video"
       }
     ]

@@ -4,11 +4,6 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Interactive HTML Course",
-        "url": "https://github.com/denysdovhan/learnyouhtml",
-        "type": "opensource"
-      },
-      {
         "title": "W3Schools: Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
         "type": "article"
@@ -19,18 +14,13 @@
         "type": "article"
       },
       {
+        "title": "HTML Full Course for Beginners",
+        "url": "https://youtu.be/mJgBOIoGihA",
+        "type": "video"
+      },
+      {
         "title": "HTML Full Course - Build a Website Tutorial",
         "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
-        "type": "video"
-      },
-      {
-        "title": "HTML Tutorial for Beginners: HTML Crash Course",
-        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
-        "type": "video"
-      },
-      {
-        "title": "HTML and CSS Full Course - Beginner To Pro",
-        "url": "https://youtu.be/a_iQb1lnAEQ",
         "type": "video"
       }
     ]
@@ -45,13 +35,8 @@
         "type": "article"
       },
       {
-        "title": "Learn to Code HTML & CSS",
-        "url": "https://learn.shayhowe.com/html-css/building-your-first-web-page/",
-        "type": "article"
-      },
-      {
-        "title": "What The Flexbox!",
-        "url": "https://flexbox.io/",
+        "title": "Web.dev by Google — Learn CSS",
+        "url": "https://web.dev/learn/css/",
         "type": "article"
       },
       {
@@ -60,29 +45,24 @@
         "type": "article"
       },
       {
-        "title": "CSS Crash Course For Absolute Beginners",
-        "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+        "title": "CSS Complete Course",
+        "url": "https://youtu.be/n4R2E7O-Ngo",
         "type": "video"
       },
       {
         "title": "HTML and CSS Tutorial",
         "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w",
         "type": "video"
-      },
-      {
-        "title": "CSS Masterclass - Tutorial & Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA",
-        "type": "video"
       }
     ]
   },
   "T9PB6WQf-Fa9NXKKvVOy_": {
     "title": "JavaScript",
-    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:\n\nWe also have this [JavaScript roadmap](/javascript). You don't need to follow it right now, just learn from some courses and revisit the roadmap later in your journey.",
+    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
+        "title": "Visit Dedicated JavaScript Roadmap",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -91,8 +71,8 @@
         "type": "article"
       },
       {
-        "title": "Exploring JS: JavaScript books for programmers",
-        "url": "https://exploringjs.com/",
+        "title": "Build 30 Javascript projects in 30 days",
+        "url": "https://javascript30.com/",
         "type": "article"
       },
       {
@@ -103,11 +83,6 @@
       {
         "title": "JavaScript Crash Course for Beginners",
         "url": "https://youtu.be/hdI2bqOjy3c?t=2",
-        "type": "video"
-      },
-      {
-        "title": "Build a Netflix Landing Page Clone with HTML, CSS & JS",
-        "url": "https://youtu.be/P7t13SGytRk",
         "type": "video"
       }
     ]
@@ -162,6 +137,11 @@
     "title": "Git",
     "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Visit Dedicated Git & Github Roadmap",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
       {
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
@@ -245,7 +225,7 @@
     "description": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Tailwind Website",
+        "title": "Tailwind CSS Website",
         "url": "https://tailwindcss.com",
         "type": "article"
       },
@@ -282,17 +262,17 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
         "title": "React Website",
-        "url": "https://reactjs.org/",
+        "url": "https://react.dev/",
         "type": "article"
       },
       {
         "title": "Official Getting Started",
-        "url": "https://reactjs.org/tutorial/tutorial.html",
+        "url": "https://react.dev/learn/tutorial-tic-tac-toe",
         "type": "article"
       },
       {
@@ -332,7 +312,12 @@
     "description": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Visit Dedicated Node.js Roadmap",
+        "url": "https://roadmap.sh/nodejs",
+        "type": "article"
+      },
+      {
+        "title": "Node.js Website",
         "url": "https://nodejs.org/en/about/",
         "type": "article"
       },
@@ -381,6 +366,11 @@
         "title": "Learn REST: A RESTful Tutorial",
         "url": "https://restapitutorial.com/",
         "type": "article"
+      },
+      {
+        "title": "What Is A RESTful API? Explanation of REST & HTTP",
+        "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+        "type": "video"
       }
     ]
   },
@@ -435,8 +425,18 @@
     "description": "Redis is an open source (BSD licensed), in-memory **data structure store** used as a database, cache, message broker, and streaming engine. Redis provides data structures such as [strings](https://redis.io/topics/data-types-intro#strings), [hashes](https://redis.io/topics/data-types-intro#hashes), [lists](https://redis.io/topics/data-types-intro#lists), [sets](https://redis.io/topics/data-types-intro#sets), [sorted sets](https://redis.io/topics/data-types-intro#sorted-sets) with range queries, [bitmaps](https://redis.io/topics/data-types-intro#bitmaps), [hyperloglogs](https://redis.io/topics/data-types-intro#hyperloglogs), [geospatial indexes](https://redis.io/commands/geoadd), and [streams](https://redis.io/topics/streams-intro). Redis has built-in [replication](https://redis.io/topics/replication), [Lua scripting](https://redis.io/commands/eval), [LRU eviction](https://redis.io/topics/lru-cache), [transactions](https://redis.io/topics/transactions), and different levels of [on-disk persistence](https://redis.io/topics/persistence), and provides high availability via [Redis Sentinel](https://redis.io/topics/sentinel) and automatic partitioning with [Redis Cluster](https://redis.io/topics/cluster-tutorial).\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated Redis Roadmap",
+        "url": "https://roadmap.sh/redis",
+        "type": "article"
+      },
+      {
         "title": "Redis Website",
         "url": "https://redis.io/",
+        "type": "article"
+      },
+      {
+        "title": "Redis Documentation",
+        "url": "https://redis.io/docs/latest/",
         "type": "article"
       },
       {
@@ -658,6 +658,11 @@
     "description": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.\n\nSome of the key features of Monit are:\n\n*   **Automatic Recovery:** Monit can automatically restart a service or process if it fails, making your application more resistant to unexpected issues.\n*   **Alert Notifications:** Monit can send email notifications when a problem is detected or when a certain condition is met, keeping you informed about the health of your application.\n*   **Event Logging:** All events detected by Monit are stored in a log for easy troubleshooting and analysis.\n*   **Resource Limit Monitoring:** Monit can monitor the resource utilization (CPU, memory, network, etc.) of a process or service and take action if a specific limit is exceeded.\n*   **Flexible Configuration:** Monit uses a simple, human-readable configuration syntax that allows you to tailor its behavior to your needs.\n*   **Web Interface:** Monit provides a built-in web interface for remotely monitoring your application's status and manage services.\n\nHave a look at the following resources to learn more about Monit:",
     "links": [
       {
+        "title": "Monit Website",
+        "url": "https://mmonit.com/monit/",
+        "type": "article"
+      },
+      {
         "title": "Monit documentation",
         "url": "https://mmonit.com/monit/documentation/",
         "type": "article"
@@ -675,11 +680,11 @@
     "links": [
       {
         "title": "Visit Dedicated PostgreSQL DBA Roadmap",
-        "url": "/postgresql-dba",
+        "url": "https://roadmap.sh/postgresql-dba",
         "type": "article"
       },
       {
-        "title": "Official Website",
+        "title": "PostgreSQL Website",
         "url": "https://www.postgresql.org/",
         "type": "article"
       },
@@ -731,13 +736,18 @@
         "type": "opensource"
       },
       {
+        "title": "Visit Dedicated Git & Github Roadmap",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
         "title": "Github Actions Documentation",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
       },
       {
         "title": "Explore top posts about GitHub",
-        "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
+        "url": "https://app.daily.dev/tags/github-actions?ref=roadmapsh",
         "type": "article"
       },
       {
@@ -797,6 +807,11 @@
     "title": "Terraform",
     "description": "Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Visit Dedicated Terraform Roadmap",
+        "url": "https://roadmap.sh/terraform",
+        "type": "article"
+      },
       {
         "title": "Terraform Website",
         "url": "https://www.terraform.io/",

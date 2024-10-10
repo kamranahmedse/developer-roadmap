@@ -1,32 +1,19 @@
 # Connection Types and their function
 
-In the realm of cyber security, understanding various connection types is crucial in maintaining a secure network environment. This section will provide you with an overview of different connection types commonly encountered in IT and their impact on security.
+There are several types of network connections that enable communication between devices, each serving different functions based on speed, reliability, and purpose. **Ethernet** is a wired connection type commonly used in local area networks (LANs), providing high-speed, stable, and secure data transfer. Ethernet is ideal for businesses and environments where reliability is crucial, offering speeds from 100 Mbps to several Gbps.
 
-## Wired Connections
+**Wi-Fi**, a wireless connection, enables devices to connect to a network without physical cables. It provides flexibility and mobility, making it popular in homes, offices, and public spaces. While Wi-Fi offers convenience, it can be less reliable and slower than Ethernet due to signal interference or distance from the access point.
 
-Ethernet is the most widespread and commonly used wired connection type. It provides a secure, high-speed data transmission between devices, such as computers, routers, and switches, using Category 5 (Cat5) or higher cables. Ethernet connections are generally considered more reliable and secure compared to wireless connections because they are less vulnerable to interference and unauthorized access.
+**Bluetooth** is a short-range wireless technology primarily used for connecting peripherals like headphones, keyboards, and other devices. It operates over shorter distances, typically up to 10 meters, and is useful for personal device communication rather than networking larger systems.
 
-## USB (Universal Serial Bus)
+**Fiber-optic connections** use light signals through glass or plastic fibers to transmit data at very high speeds over long distances, making them ideal for internet backbones or connecting data centers. Fiber is faster and more reliable than traditional copper cables, but it is also more expensive to implement.
 
-USB is a popular connection type, primarily used for connecting peripheral devices such as keyboards, mice, and storage devices to computers. While USB provides a convenient way of expanding a computer's functionality, it also poses security risks. Using untrusted USB devices can lead to the spread of malware, making it essential to ensure that only trusted devices are connected to your system.
+**Cellular connections**, such as 4G and 5G, allow mobile devices to connect to the internet via wireless cellular networks. These connections offer mobility, enabling internet access from almost anywhere, but their speeds and reliability can vary depending on network coverage.
 
-## Wireless Connections
+Each connection type plays a specific role, balancing factors like speed, distance, and convenience to meet the varying needs of users and organizations.
 
-Wi-Fi is the most prevalent wireless connection type, allowing devices to connect to the internet and each other without the need for physical cables. Although Wi-Fi provides greater flexibility and mobility, it introduces additional security risks. To minimize these risks, always use encryption (preferably WPA3 or WPA2), strong passwords, and update your router's firmware regularly.
+Learn more from the following resources:
 
-## Bluetooth
-
-Bluetooth is another widely used wireless connection type, primarily designed for short-range communication between devices such as smartphones, speakers, and headsets. While Bluetooth offers convenience, it can also be susceptible to attacks, such as Bluesnarfing and Bluejacking. To mitigate these risks, keep your devices updated, use Bluetooth 4.0 or higher, and disable Bluetooth when not in use.
-
-## Network Connections
-
-A VPN is a secure tunnel that creates a private network connection over a public network (such as the internet) by encrypting data transfers between devices. VPNs help protect sensitive information from being intercepted by unauthorized parties and are especially useful when accessing public Wi-Fi hotspots. Always use trusted VPN providers to ensure your data remains encrypted and private.
-
-## Peer-to-Peer (P2P)
-
-P2P is a decentralized connection type where devices connect directly with each other, without the need for a central server. P2P is commonly used for file-sharing services and can pose significant security risks if utilized without adequate security measures in place. To minimize risks, avoid using untrusted P2P services and refrain from sharing sensitive information on such networks.
-
-In summary, understanding and managing different connection types is an essential aspect of cyber security. By using secure connections and taking preventive measures, you can reduce the risk of unauthorized access, data breaches, and other malicious activities.
-
-- [@video@Connection & Service Types Pt. 1](https://youtu.be/TzEMiD2mc-Q)
-- [@video@Connection & Services Types Pt. 2 ](https://youtu.be/4N3M1aKzoyQ)
+- [@article@What is ethernet?](https://www.techtarget.com/searchnetworking/definition/Ethernet)
+- [@article@What is WiFi and how does it work?](https://computer.howstuffworks.com/wireless-network.htm)
+- [@article@How bluetooth works](https://electronics.howstuffworks.com/bluetooth.htm)

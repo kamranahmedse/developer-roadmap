@@ -10,5 +10,5 @@ Components:
 
 Visit the following resources to learn more:
 
-- [@article@Android Developers: View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [@official@Android Developers: View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [@article@Wikipedia](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)

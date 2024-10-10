@@ -1,25 +1,8 @@
 # default gateway
 
-In our journey through IP terminology, we now arrive at the topic of **Default Gateway**. Understanding the role and importance of the default gateway in a network is crucial for grasping the fundamentals of cyber security and data routing.
+A default gateway is a network node, typically a router or a firewall, that serves as the access point or intermediary between a local network and external networks, such as the internet. When a device on a local network needs to communicate with a device outside its own subnet—such as accessing a website or sending an email—it sends the data to the default gateway, which then routes it to the appropriate external destination. The default gateway acts as a traffic director, ensuring that data packets are correctly forwarded between the internal network and external networks, making it a crucial component for enabling communication beyond the local network's boundaries.
 
-## Overview
+Learn more from the following resources:
 
-The default gateway is basically a device (usually a router) on a network which serves as an access point for data traffic to travel from the local network to other networks, such as the internet. This device acts as a "middleman" between your computer and external networks, and is often set up by your internet service provider (ISP) or during the configuration of your own router.
-
-## Role in Networks
-
-In a nutshell, the default gateway plays the following roles:
-
-- **Packet Routing**: It directs the network packets from your local computer or device to their ultimate destination. When a packet with a destination IP address is not on the same network as the source device, the default gateway routes the packet to the appropriate external network.
-
-- **Address Resolution Protocol (ARP)**: The default gateway obtains the physical address (MAC address) of a computer that is located on another network by using ARP.
-
-- **Protection**: In many cases, the default gateway also serves as a layer of network protection by restricting access to certain external networks, as well as regulating traffic from the internet.
-
-## Configuration
-
-To benefit from the services of a default gateway, your device needs to be properly configured. Most devices and operating systems obtain their network settings (including the default gateway address) automatically using DHCP. But you can also configure network settings manually if needed.
-
-**Note**: Each device connected to a network must have a unique IP address. Also, remember that devices on the same network should use the same default gateway address.
-
-In conclusion, recognizing the significance of the default gateway and having a working knowledge of how it functions is an essential part of IP terminology, affecting both cyber security and efficient data routing. Continuing your education on the subject will better equip you to take advantage of your devices' networking features, as well as protect your valuable data from potential cyber threats.
+- [@article@What is a default gateway?](https://nordvpn.com/blog/what-is-a-default-gateway/?srsltid=AfmBOoosi5g4acnT9Gv_B86FMGr72hWDhk8J-4jr1HvxPCSu96FikCyw)
+- [@video@Routers and Default Gateways](https://www.youtube.com/watch?v=JOomC1wFrbU)

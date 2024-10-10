@@ -5,3 +5,4 @@
 Learn more from the following resources:
 
 - [@article@CREATE TABLE](https://www.tutorialspoint.com/sql/sql-create-table.htm)
+- [@article@SQL CREATE TABLE](https://www.programiz.com/sql/create-table)

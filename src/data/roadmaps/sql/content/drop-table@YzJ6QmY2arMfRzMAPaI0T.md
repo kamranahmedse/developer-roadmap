@@ -7,3 +7,4 @@ When you execute the `DROP TABLE` statement, it eliminates both the table and it
 Learn more from the following resources:
 
 - [@article@DROP TABLE](https://www.w3schools.com/sql/sql_drop_table.asp)
+- [@article@Drop a Table](https://www.coginiti.co/tutorials/beginner/drop-a-table/)

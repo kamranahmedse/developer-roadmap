@@ -1,8 +1,10 @@
-# Graph databases
+# NEO4J
 
-A graph database stores nodes and relationships instead of tables, or documents. Data is stored just like you might sketch ideas on a whiteboard. Your data is stored without restricting it to a pre-defined model, allowing a very flexible way of thinking about and using it.
+Neo4j is a highly popular open-source graph database designed to store, manage, and query data as interconnected nodes and relationships. Unlike traditional relational databases that use tables and rows, Neo4j uses a graph model where data is represented as nodes (entities) and edges (relationships), allowing for highly efficient querying of complex, interconnected data. It supports Cypher, a declarative query language specifically designed for graph querying, which simplifies operations like traversing relationships and pattern matching. Neo4j is well-suited for applications involving complex relationships, such as social networks, recommendation engines, and fraud detection, where understanding and leveraging connections between data points is crucial.
 
 Visit the following resources to learn more:
 
-- [@article@What is a Graph Database?](https://neo4j.com/developer/graph-database/)
+- [@official@Neo4j Website](https://neo4j.com)
+- [@video@Neo4j in 100 Seconds](https://www.youtube.com/watch?v=T6L9EoBy8Zk)
+- [@video@Neo4j Course for Beginners](https://www.youtube.com/watch?v=_IgbB24scLI)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

@@ -34,6 +34,10 @@ blockquote p:before {
   display: none;
 }
 
+blockquote p {
+  font-style: normal;
+}
+
 .prose ul li > code,
 .prose ol li > code,
 p code,

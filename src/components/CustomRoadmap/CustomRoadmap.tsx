@@ -122,6 +122,7 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
       {!isEmbed && <RoadmapHeader />}
       <FlowRoadmapRenderer isEmbed={isEmbed} roadmap={roadmap!} />
       <TopicDetail
+        resourceId={roadmap!._id}
         resourceTitle={roadmap!.title}
         resourceType="roadmap"
         isEmbed={isEmbed}

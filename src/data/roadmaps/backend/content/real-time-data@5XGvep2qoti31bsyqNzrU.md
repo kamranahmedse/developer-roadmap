@@ -1,11 +1,8 @@
 # Real Time Data
 
-There are many ways to get real time data from the backend. Some of them are:
+Real-time data refers to information that is processed and made available immediately or with minimal delay, allowing users or systems to react promptly to current conditions. This type of data is essential in applications requiring immediate updates and responses, such as financial trading platforms, online gaming, real-time analytics, and monitoring systems. Real-time data processing involves capturing, analyzing, and delivering information as it is generated, often using technologies like stream processing frameworks (e.g., Apache Kafka, Apache Flink) and low-latency databases. Effective real-time data systems can handle high-speed data flows, ensuring timely and accurate decision-making.
 
-- Websockets
-- Server Sent Events
-- Long Polling
-- Short Polling
+Learn more from the following resources:
 
-- [@video@Introduction to HTTP Polling and Web Sockets](https://www.youtube.com/watch?v=OsgrJDMPl58)
-- [@article@Introduction to Long Polling](https://www.pubnub.com/guides/long-polling/)
+- [@article@Real-time Data - Wiki](https://en.wikipedia.org/wiki/Real-time_data)
+- [@article@What is Real-time Data?](https://www.qlik.com/us/streaming-data/real-time-data)

@@ -4,5 +4,5 @@ PostgreSQL offers a comprehensive set of data types to cater to diverse data nee
 
 Learn more from the following resources:
 
-- [@article@](https://www.instaclustr.com/blog/postgresql-data-types-mappings-to-sql-jdbc-and-java-data-types/)
+- [@article@PostgreSQL® Data Types: Mappings to SQL, JDBC, and Java Data Types](https://www.instaclustr.com/blog/postgresql-data-types-mappings-to-sql-jdbc-and-java-data-types/)
 - [@official@Data Types](https://www.postgresql.org/docs/current/datatype.html)

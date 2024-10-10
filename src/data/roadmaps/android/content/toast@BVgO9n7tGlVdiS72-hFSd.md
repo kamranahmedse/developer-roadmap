@@ -4,4 +4,4 @@ A `toast` provides simple feedback about an operation in a small popup. It only 
 
 Visit the following resources to learn more:
 
-- [@article@Android developers: Toast](https://developer.android.com/guide/topics/ui/notifiers/toasts)
+- [@official@Toast](https://developer.android.com/guide/topics/ui/notifiers/toasts)

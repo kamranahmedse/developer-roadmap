@@ -11,8 +11,29 @@
   },
   "Lsapbmg-eMIYJAHpV97nO": {
     "title": "Types of Data Analytics",
-    "description": "Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.\n\nData Analysts, as ambassadors of this domain, employ these types, which are namely Descriptive Analytics, Diagnostic Analytics, Predictive Analytics and Prescriptive Analytics, to answer various questions — What happened? Why did it happen? What could happen? And what should we do next? Understanding these types gives data analysts the power to transform raw datasets into strategic insights.",
-    "links": []
+    "description": "Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.\n\nData Analysts, as ambassadors of this domain, employ these types, to answer various questions:\n\n*   Descriptive Analytics _(what happened in the past?)_\n*   Diagnostic Analytics _(why did it happened in the past?)_\n*   Predictive Analytics _(what will happen in the future?)_\n*   Prescriptive Analytics _(how can we make it happen?)_\n\nUnderstanding these types gives data analysts the power to transform raw datasets into strategic insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Analytics and its type",
+        "url": "https://www.geeksforgeeks.org/data-analytics-and-its-type/",
+        "type": "article"
+      },
+      {
+        "title": "The 4 Types of Data Analysis: Ultimate Guide",
+        "url": "https://careerfoundry.com/en/blog/data-analytics/different-types-of-data-analysis/",
+        "type": "article"
+      },
+      {
+        "title": "Descriptive vs Diagnostic vs Predictive vs Prescriptive Analytics: What's the Difference?",
+        "url": "https://www.youtube.com/watch?v=QoEpC7jUb9k",
+        "type": "video"
+      },
+      {
+        "title": "Types of Data Analytics",
+        "url": "https://www.youtube.com/watch?v=lsZnSgxMwBA",
+        "type": "video"
+      }
+    ]
   },
   "hWDh0ooidbqZb000ENVok": {
     "title": "Descriptive Analytics",
@@ -63,7 +84,7 @@
     ]
   },
   "DFMR-0MbmVCCrJu0I9JWG": {
-    "title": "Prespective Analytics",
+    "title": "Prescriptive Analytics",
     "description": "Prescriptive analytics, a crucial type of data analytics, is essential for making data-driven decisions in business and organizational contexts. As a data analyst, the goal of prescriptive analytics is to recommend various actions using predictions on the basis of known parameters to help decision makers understand likely outcomes. Prescriptive analytics employs a blend of techniques and tools such as algorithms, machine learning, computational modelling procedures, and decision-tree structures to enable automated decision making. Therefore, prescriptive analytics not only anticipates what will happen and when it will happen, but also explains why it will happen, contributing to the significance of a data analyst’s role in an organization.\n\nLearn more from the following resources:",
     "links": [
       {
@@ -136,12 +157,12 @@
     "description": "The visualization of data is an essential skill in the toolkit of every data analyst. This practice is about transforming complex raw data into a graphical format that allows for an easier understanding of large data sets, trends, outliers, and important patterns. Whether pie charts, line graphs, bar graphs, or heat maps, data visualization techniques not only streamline data analysis, but also facilitate a more effective communication of the findings to others. This key concept underscores the importance of presenting data in a digestible and visually appealing manner to drive data-informed decision making in an organization.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Data visualisation beginner's guide",
+        "title": "Data visualization beginner's guide",
         "url": "https://www.tableau.com/en-gb/learn/articles/data-visualization",
         "type": "article"
       },
       {
-        "title": "Data Visualisation in 2024",
+        "title": "Data Visualization in 2024",
         "url": "https://www.youtube.com/watch?v=loYuxWSsLNc",
         "type": "video"
       }
@@ -1334,12 +1355,12 @@
     "description": "Parallel processing is an efficient form of data processing that allows Data Analysts to deal with larger volumes of data at a faster pace. It is a computational method that allows multiple tasks to be performed concurrently, instead of sequentially, thus, speeding up data processing. Parallel processing proves to be invaluable for Data Analysts, as they are often tasked with analyzing huge data sets and compiling reports in real-time. As the demand for rapid data processing and quick analytics is on the rise, the technique of parallel processing forms a critical element in the versatile toolkit of a Data Analyst.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is parallel processing?",
+        "title": "What Is Parallel Processing?",
         "url": "https://www.spiceworks.com/tech/iot/articles/what-is-parallel-processing/",
         "type": "article"
       },
       {
-        "title": "How parallel computing works?",
+        "title": "How Parallel Computing Works",
         "url": "https://computer.howstuffworks.com/parallel-processing.htm",
         "type": "article"
       }

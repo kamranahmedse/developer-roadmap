@@ -10,7 +10,7 @@
     "links": [
       {
         "title": "What is Software Architecture in Software Engineering?",
-        "url": "https://webcache.googleusercontent.com/search?q=cache:ya4xvYaEckQJ:https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/&cd=1&hl=es-419&ct=clnk&gl=ar",
+        "url": "https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/",
         "type": "article"
       },
       {
@@ -148,7 +148,7 @@
     "links": [
       {
         "title": "Visit Dedicated Java Roadmap",
-        "url": "/java",
+        "url": "https://roadmap.sh/java",
         "type": "article"
       },
       {
@@ -184,7 +184,7 @@
     "links": [
       {
         "title": "Visit Dedicated Python Roadmap",
-        "url": "/python",
+        "url": "https://roadmap.sh/python",
         "type": "article"
       },
       {
@@ -246,7 +246,7 @@
     "links": [
       {
         "title": "Visit Dedicated Go Roadmap",
-        "url": "/golang",
+        "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
@@ -282,7 +282,7 @@
     "links": [
       {
         "title": "Visit Dedicated JavaScript Roadmap",
-        "url": "/javascript",
+        "url": "https://roadmap.sh/javascript",
         "type": "article"
       },
       {
@@ -313,11 +313,6 @@
       {
         "title": "TypeScript Tutorial",
         "url": "https://www.tutorialspoint.com/typescript/index.htm",
-        "type": "article"
-      },
-      {
-        "title": "Scrimba — TypeScript Basics",
-        "url": "https://scrimba.com/learn/typescript?via=roadmap",
         "type": "article"
       },
       {
@@ -1160,10 +1155,21 @@
     "description": "",
     "links": []
   },
-  "functional-programming@6FDGecsHbqY-cm32yTZJa.md": {
+  "6FDGecsHbqY-cm32yTZJa": {
     "title": "Functional Programming",
-    "description": "",
-    "links": []
+    "description": "Functional programming is a programming paradigm designed to handle pure mathematical functions. This paradigm is totally focused on writing more compounded and pure functions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Functional Programming with JavaScript",
+        "url": "https://www.telerik.com/blogs/functional-programming-javascript",
+        "type": "article"
+      },
+      {
+        "title": "Learning Functional Programming",
+        "url": "https://youtube.com/watch?v=e-5obm1G_FY",
+        "type": "video"
+      }
+    ]
   },
   "mCiYCbKIOVU34qil_q7Hg": {
     "title": "React, Vue, Angular",
@@ -1171,22 +1177,17 @@
     "links": [
       {
         "title": "Visit Dedicated React Roadmap",
-        "url": "/react",
+        "url": "https://roadmap.sh/react",
         "type": "article"
       },
       {
         "title": "React Website",
-        "url": "https://reactjs.org/",
+        "url": "https://react.dev/",
         "type": "article"
       },
       {
         "title": "Official Getting Started",
-        "url": "https://reactjs.org/tutorial/tutorial.html",
-        "type": "article"
-      },
-      {
-        "title": "Beta React Docs",
-        "url": "https://reactjs.org/",
+        "url": "https://react.dev/learn/tutorial-tic-tac-toe",
         "type": "article"
       },
       {
@@ -1391,13 +1392,30 @@
   },
   "hRug9yJKYacB9X_2cUalR": {
     "title": "PMI",
-    "description": "",
-    "links": []
+    "description": "The PMI certification (Project Management Institute) is an internationally recognized credential in project management. The most well-known is the PMP® (Project Management Professional), which validates the skills and knowledge of professionals to manage projects effectively by applying best practices and standards defined in the PMBOK® (Project Management Body of Knowledge) guide.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Project Managment Institute",
+        "url": "https://www.pmi.org/",
+        "type": "article"
+      }
+    ]
   },
   "Rq1Wi-cHjS54SYo-Btp-e": {
     "title": "ITIL",
-    "description": "",
-    "links": []
+    "description": "**ITIL (Information Technology Infrastructure Library)** is a set of best practices for IT service management, designed to align IT services with business needs. Its primary focus is the efficient and effective delivery of value through managing the IT service lifecycle, which includes five phases: `Strategy`, `Design`, `Transition`, `Operation`, and `Continual Service Improvement`. ITIL includes key processes such as incident management, problem management, change management, configuration management, and service level agreements (SLAs). These practices aim to optimize performance, service quality, and customer satisfaction. Adopting ITIL helps organizations improve operational efficiency, reduce risks, and maintain clear control over IT services over time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation",
+        "type": "article"
+      },
+      {
+        "title": "What is ITIL?",
+        "url": "https://www.youtube.com/watch?v=wgnpfMK8vDk",
+        "type": "video"
+      }
+    ]
   },
   "SJ5lrlvyXgtAwOx4wvT2W": {
     "title": "Prince2",
@@ -1406,8 +1424,14 @@
   },
   "7rudOREGG-TTkCosU0hNw": {
     "title": "RUP",
-    "description": "",
-    "links": []
+    "description": "The RUP (**Rational Unified Process**) is not a widely recognized certification like PMP or Scrum, but rather a software development framework created by Rational Software (now IBM). It follows an iterative and incremental approach to project development, based on best practices for delivering high-quality software on time and within budget.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "IBM certified solution designer RUP",
+        "url": "https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003",
+        "type": "article"
+      }
+    ]
   },
   "qwpsGRFgzAYstM7bJA2ZJ": {
     "title": "LeSS",
@@ -1421,18 +1445,71 @@
   },
   "O7H6dt3Z7EKohxfJzwbPM": {
     "title": "Kanban",
-    "description": "",
-    "links": []
+    "description": "`Kanban` is a popular agile methodology that focuses on visualizing workflow and continuously improving that flow. It's a more flexible approach than Scrum, without the rigid framework.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Kanban? A Simple Guide to Improve Efficiency.",
+        "url": "https://businessmap.io/kanban-resources/getting-started/what-is-kanban",
+        "type": "article"
+      },
+      {
+        "title": "Kanban Methodology: The Simplest Agile Framework ",
+        "url": "https://kissflow.com/project/agile/kanban-methodology/",
+        "type": "article"
+      },
+      {
+        "title": "What is Kanban Methodology? The Ultimate Guide",
+        "url": "https://www.wrike.com/kanban-guide/what-is-kanban/",
+        "type": "article"
+      }
+    ]
   },
   "PKqwKvoffm0unwcFwpojk": {
     "title": "Scrum",
-    "description": "",
-    "links": []
+    "description": "`Scrum` is a popular agile framework used for project management, particularly in software development. It emphasizes iterative development, collaboration, and flexibility to deliver high-quality products.\n\nKey elements of Scrum:\n\n*   **Sprints**: Time-boxed iterations (usually 2-4 weeks) where teams work on specific goals.\n*   **Product Backlog**: Prioritized list of features or requirements for the product.\n*   **Sprint Backlog**: Selected items from the Product Backlog to be completed during a Sprint.\n*   **Daily Scrum (Stand-up)**: Brief daily meeting where team members share progress, challenges, and plans for the day.\n*   **Sprint Review**: Meeting at the end of a Sprint to demonstrate completed work and gather feedback.\n*   **Sprint Retrospective**: Meeting to reflect on the Sprint, identify improvements, and adjust processes for the next Sprint.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is scrum and how to get started",
+        "url": "https://www.atlassian.com/agile/scrum.",
+        "type": "article"
+      },
+      {
+        "title": "Scrum Methodology: The Complete Guide & Best Practices",
+        "url": "https://thedigitalprojectmanager.com/projects/pm-methodology/scrum-methodology-complete-guide/",
+        "type": "article"
+      },
+      {
+        "title": "Essential Topics for the Scrum Product Owner",
+        "url": "https://www.scrum.org/resources/blog/essential-topics-scrum-product-owner",
+        "type": "article"
+      },
+      {
+        "title": "Scrum • Topics - Thriving Technologist",
+        "url": "https://thrivingtechnologist.com/topics/scrum/",
+        "type": "article"
+      }
+    ]
   },
   "7fL9lSu4BD1wRjnZy9tM9": {
     "title": "XP",
-    "description": "",
-    "links": []
+    "description": "`Extreme Programming (XP)` is a popular agile software development framework that emphasizes speed, simplicity, and quality. It was developed by Kent Beck in the late 1990s and is based on five values:\n\n*   **Communication**: Open and honest communication among team members and stakeholders is essential.\n*   **Simplicity**: The simplest solution that works is always preferred.\n*   **Feedback**: Continuous feedback from customers and team members is used to improve the product.\n*   **Courage**: Team members must be willing to make changes and take risks.\n*   **Respect**: Everyone on the team is treated with respect.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Extreme Programming (XP)?",
+        "url": "https://www.agilealliance.org/glossary/xp/",
+        "type": "article"
+      },
+      {
+        "title": "It's Values, Principles, And Practices",
+        "url": "https://www.nimblework.com/agile/extreme-programming-xp/",
+        "type": "article"
+      },
+      {
+        "title": "Extreme Programming (XP)",
+        "url": "https://scrum-master.org/en/extreme-programming-xp-a-beginners-guide-to-the-agile-method/",
+        "type": "article"
+      }
+    ]
   },
   "cBWJ6Duw99tSKr7U6OW3A": {
     "title": "Networks",
@@ -1452,8 +1529,24 @@
   },
   "UCCT7-E_QUKPg3jAsjobx": {
     "title": "TCP/IP Model",
-    "description": "",
-    "links": []
+    "description": "The `TCP/IP model` defines how devices should transmit data between them and enables communication over networks and large distances. The model represents how data is exchanged and organized over networks. It is split into four layers, which set the standards for data exchange and represent how data is handled and packaged when being delivered between applications, devices, and servers.\n\n*   **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.\n    \n*   **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination.\n    \n*   **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination.\n    \n*   **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other.\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Transmission Control Protocol TCP/IP? - Fortinet",
+        "url": "https://www.fortinet.com/resources/cyberglossary/tcp-ip#:~:text=The%20TCP%2FIP%20model%20defines,exchanged%20and%20organized%20over%20networks.",
+        "type": "article"
+      },
+      {
+        "title": "TCP/IP Model",
+        "url": "https://www.geeksforgeeks.org/tcp-ip-model/",
+        "type": "article"
+      },
+      {
+        "title": "What is TCP/IP and How Does it Work?",
+        "url": "https://www.techtarget.com/searchnetworking/definition/TCP-IP",
+        "type": "article"
+      }
+    ]
   },
   "Nq6o6Ty8VyNRsvg-UWp7D": {
     "title": "HTTP, HTTPS",

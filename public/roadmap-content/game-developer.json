@@ -378,12 +378,17 @@
     "links": []
   },
   "AaRZiItRcn8fYb5R62vfT": {
-    "title": "Assembly",
-    "description": "**Assembly** is a low-level programming language, often used for direct hardware manipulation, real-time systems, and to write performance-critical code. It provides a strong correspondence between its instructions and the architecture's machine-code instructions, since it directly represents the specific commands of the computer's CPU structure. However, it's closer to machine language (binary code) than to human language, which makes it difficult to read and understand. The syntax varies greatly, which depends upon the CPU architecture for which it's designed, thus Assembly language written for one type of processor can't be used on another. Despite its complexity, time-intensive coding process and machine-specific nature, Assembly language is still utilized for speed optimization and hardware manipulation where high-level languages may not be sufficient.",
+    "title": "GDScript",
+    "description": "GDScript is a high-level, dynamically-typed programming language designed specifically for the Godot Engine, an open-source game development platform. It is tailored for ease of use and rapid development of game logic and functionality. GDScript features a syntax similar to Python, which simplifies learning and coding for developers familiar with Python, while providing direct access to Godot's rich set of built-in functions and game-specific APIs. The language integrates closely with Godot's scene system and scripting environment, enabling developers to create and manipulate game objects, handle input, and control game behavior efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Code walkthrough of a game written in x64 assembly",
-        "url": "https://www.youtube.com/watch?v=WUoqlp30M78",
+        "title": "GDScript Website",
+        "url": "https://gdscript.com/",
+        "type": "article"
+      },
+      {
+        "title": "How to program in Godot - GDScript Tutorial",
+        "url": "https://www.youtube.com/watch?v=e1zJS31tr88",
         "type": "video"
       }
     ]
@@ -457,7 +462,7 @@
   },
   "odfZWKtPbb-lC35oeTCNV": {
     "title": "Specular",
-    "description": "",
+    "description": "`Specular` reflections are mirror-like reflections. In these cases, the rays of light are reflected, more than they are absorbed. The angle of incidence is equal to the angle of reflection, that is to say that the angle at which the light enters the medium and then bounces off, the angle of the beam that bounced off would be the same.\n\nLearn more from the following resources:\n\n\\-[@video@Specular reflection](https://www.youtube.com/watch?v=2cFvJkc4pQk)",
     "links": []
   },
   "THMmnx8p_P0X-dSPoHvst": {
@@ -467,13 +472,35 @@
   },
   "iBZ1JsEWI0xuLgUvfWfl-": {
     "title": "Texture",
-    "description": "",
-    "links": []
+    "description": "`Texture` is the visual quality of an object. Where the `mesh` determines the shape or `topology` of an object, the texture describes the quality of said object. For instance, if there is a spherical mesh, is it supposed to be shiny? is it supposed to be rough? is it supposed to be of rock or of wood? questions of this ilk are often resolved using textures. Textures are often just 2D images that are wrapped onto 3D meshes. The 3D mesh is first divided into segments and unfurled; the 3D meshes are converted into 2D chunks, this process is known as `UV Unwrapping`. Once a mesh has been unwrapped, the textures in the form of an image are applied to the 2D chunks of the 3D mesh, this way the texture knows how to properly wrap around the mesh and avoid any conflicts. Textures determine the visual feel and aesthetics of the game.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How Nintendo textures work",
+        "url": "https://www.youtube.com/watch?v=WrCMzHngLxI",
+        "type": "video"
+      },
+      {
+        "title": "How Pixar textures work",
+        "url": "https://www.youtube.com/watch?v=o_I6jxlN-Ck",
+        "type": "video"
+      }
+    ]
   },
   "r4UkMd5QURbvJ3Jlr_H9H": {
     "title": "Bump",
-    "description": "",
-    "links": []
+    "description": "`Bump` is very similar to texture. It is, as a matter of fact, a type of texture itself. If you take the texture of a bricked wall, it will becoming increasingly obvious that the amount of detail present inside the wall, if geometrically processed would be incredibly demanding and wasteful. In order to combat this ineffeciency, the `bump` maps were created. Traditionally, a flat texture would just be an image of something called a `color map`, that is to say, where does each individual color of the pixel should be to represent a texture. When you take the picture of your floor, wall, or any object, that image in essence is the color map. The bump map is different as it informs the texture about it's `normal` values. So, if you take a flat 2D mesh and apply a bump map on it, it will render the same 2D mesh with all the normal values baked into the flat 2D mesh, creating a graphically effect mimicking 3-dimensionality.\n\nThere is also something known as a normal map, and displacement maps.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Normals, Normal maps and Bump maps",
+        "url": "https://www.youtube.com/watch?v=l5PYyzsZED8",
+        "type": "video"
+      },
+      {
+        "title": "Bump, normal and displacement",
+        "url": "https://www.youtube.com/watch?v=43Ilra6fNGc",
+        "type": "video"
+      }
+    ]
   },
   "YGeGleEN203nokiZIYJN8": {
     "title": "Parallax",
@@ -772,13 +799,25 @@
   },
   "sz1047M8_kScjth84yPwU": {
     "title": "Decision Tree Learning",
-    "description": "`Decision Tree Learning` is an important concept in game development, particularly in the development of artificial intelligence for game characters. It is a kind of machine learning method that is based on using decision tree models to predict or classify information. A decision tree is a flowchart-like model, where each internal node denotes a test on an attribute, each branch represents an outcome of that test, and each leaf node holds a class label (decision made after testing all attributes). By applying decision tree learning models, computer-controlled characters can make decisions based on different conditions or states. They play a key role in creating complex and interactive gameplay experiences, by enabling game characters to adapt to the player's actions and the ever-changing game environment.",
-    "links": []
+    "description": "`Decision Tree Learning` is an important concept in game development, particularly in the development of artificial intelligence for game characters. It is a kind of machine learning method that is based on using decision tree models to predict or classify information. A decision tree is a flowchart-like model, where each internal node denotes a test on an attribute, each branch represents an outcome of that test, and each leaf node holds a class label (decision made after testing all attributes). By applying decision tree learning models, computer-controlled characters can make decisions based on different conditions or states. They play a key role in creating complex and interactive gameplay experiences, by enabling game characters to adapt to the player's actions and the ever-changing game environment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Decision trees - A friendly introduction",
+        "url": "https://www.youtube.com/watch?v=HkyWAhr9v8g",
+        "type": "video"
+      }
+    ]
   },
   "ltkEyfuDxExs7knqs79ya": {
     "title": "Deep Learning",
-    "description": "Deep Learning is a sub-field of machine learning, inspired by the structure and function of the human brain, specifically designed to process complex input/output transformations. It uses artificial neural networks with many layers (hence the term 'deep' learning) to model complex, non-linear hypotheses and discover hidden patterns within large datasets. Deep learning techniques are crucial in game development, primarily in creating intelligent behaviors and features in gaming agents, procedural content generation, and player profiling. You might have heard about the uses of deep learning technologies in popular, cutting-edge games like Google DeepMind's AlphaGo. Coding languages like Python, R, and frameworks like TensorFlow, Keras, and PyTorch are commonly used for deep learning tasks. Learning Deep Learning can be a prominent game-changer in your game development journey.",
-    "links": []
+    "description": "Deep Learning is a sub-field of machine learning, inspired by the structure and function of the human brain, specifically designed to process complex input/output transformations. It uses artificial neural networks with many layers (hence the term 'deep' learning) to model complex, non-linear hypotheses and discover hidden patterns within large datasets. Deep learning techniques are crucial in game development, primarily in creating intelligent behaviors and features in gaming agents, procedural content generation, and player profiling. You might have heard about the uses of deep learning technologies in popular, cutting-edge games like Google DeepMind's AlphaGo. Coding languages like Python, R, and frameworks like TensorFlow, Keras, and PyTorch are commonly used for deep learning tasks. Learning Deep Learning can be a prominent game-changer in your game development journey.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "But what is a neural network? | Chapter 1, Deep learning",
+        "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+        "type": "video"
+      }
+    ]
   },
   "AoH2r4EOHyZd8YaV24rBk": {
     "title": "Artificial Neural Network",
@@ -854,7 +893,13 @@
   },
   "YrQgfjsdLCIUxrwflpEHO": {
     "title": "Microsurface Scattering",
-    "description": "Microsurface scattering, also known as sub-surface scattering, is an important phenomenon in Physically Based Rendering (PBR). This process involves the penetration of light into the surface of a material, where it is scattered by interacting with the material. In other words, when light strikes an object, rather than simply bouncing off the surface, some of it goes into the object and gets scattered around inside before getting re-emitted. It is key to achieving more realistic rendering of translucent materials like skin, marble, milk, and more. Consider it essential for replicating how light interacts with real-world materials in a convincing manner in your game.",
-    "links": []
+    "description": "Microsurface scattering, also known as sub-surface scattering, is an important phenomenon in Physically Based Rendering (PBR). This process involves the penetration of light into the surface of a material, where it is scattered by interacting with the material. In other words, when light strikes an object, rather than simply bouncing off the surface, some of it goes into the object and gets scattered around inside before getting re-emitted. It is key to achieving more realistic rendering of translucent materials like skin, marble, milk, and more. Consider it essential for replicating how light interacts with real-world materials in a convincing manner in your game.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The 4 main types of subsurface scattering",
+        "url": "https://www.youtube.com/watch?v=GkjvYSbGHg4",
+        "type": "video"
+      }
+    ]
   }
 }

@@ -1,5 +1,8 @@
 # Data Pipelines
 
-Data pipelines refer to a set of processes that involve moving data from one system to another, for purposes such as data integration, data migration, data transformation, or data synchronization. These processes can involve a variety of data sources and destinations, and may often require data to be cleaned, enriched, or otherwise transformed along the way. It's a key concept in data engineering to ensure that data is appropriately processed from its source to the location where it will be used, typically a data warehouse, data mart, or a data lake. As such, data pipelines play a crucial part in building an effective and efficient data analytics setup, enabling the flow of data to be processed for insights.
+Data pipelines are a series of automated processes that transport and transform data from various sources to a destination for analysis or storage. They typically involve steps like data extraction, cleaning, transformation, and loading (ETL) into databases, data lakes, or warehouses. Pipelines can handle batch or real-time data, ensuring that large-scale datasets are processed efficiently and consistently. They play a crucial role in ensuring data integrity and enabling businesses to derive insights from raw data for reporting, analytics, or machine learning.
 
-It is important to understand the difference between ELT and ETL pipelines. ELT stands for Extract, Load, Transform, and refers to a process where data is first extracted from source systems, then loaded into a target system, and finally transformed within the target system. ETL, on the other hand, stands for Extract, Transform, Load, and refers to a process where data is first extracted from source systems, then transformed, and finally loaded into a target system. The choice between ELT and ETL pipelines depends on the specific requirements of the data processing tasks at hand, and the capabilities of the systems involved.
+Learn more from the following resources:
+
+- [@article@What is a data pipeline?](https://www.ibm.com/topics/data-pipeline)
+- [@video@What are data pipelines?](https://www.youtube.com/watch?v=oKixNpz6jNo)

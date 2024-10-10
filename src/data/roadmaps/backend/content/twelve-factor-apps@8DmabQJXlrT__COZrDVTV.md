@@ -1,24 +1,22 @@
 # Twelve-Factor Apps
 
-The Twelve-Factor App is a methodology for building scalable and maintainable software-as-a-service (SaaS) applications. It is based on a set of best practices that were identified by the authors of the methodology as being essential for building modern, cloud-native applications.
+The Twelve-Factor App methodology is a set of principles for building modern, scalable, and maintainable web applications, particularly suited for cloud environments. It emphasizes best practices for developing applications in a way that facilitates portability, scalability, and ease of deployment. Key principles include:
 
-The Twelve-Factor App methodology consists of the following principles:
-
-- Codebase: There should be a single codebase for the application, with multiple deployments.
-- Dependencies: The application should explicitly declare and isolate its dependencies.
-- Config: The application should store configuration in the environment.
-- Backing services: The application should treat backing services as attached resources.
-- Build, release, run: The application should be built, released, and run as an isolated unit.
-- Processes: The application should be executed as one or more stateless processes.
-- Port binding: The application should expose its services through port binding.
-- Concurrency: The application should scale out by adding more processes, not by adding threads.
-- Disposability: The application should be designed to start and stop quickly.
-- Dev/prod parity: The development, staging, and production environments should be as similar as possible.
-- Logs: The application should treat logs as event streams.
-- Admin processes: The application should run admin/maintenance tasks as one-off processes.
-
-The Twelve-Factor App methodology is widely adopted by developers of SaaS applications, and it is seen as a best practice for building cloud-native applications that are scalable, maintainable, and easy to deploy.
+1. **Codebase**: One codebase tracked in version control, with many deploys.
+2. **Dependencies**: Explicitly declare and isolate dependencies.
+3. **Config**: Store configuration in the environment.
+4. **Backing Services**: Treat backing services as attached resources.
+5. **Build, Release, Run**: Separate build and run stages.
+6. **Processes**: Execute the app as one or more stateless processes.
+7. **Port Binding**: Export services via port binding.
+8. **Concurrency**: Scale out via the process model.
+9. **Disposability**: Maximize robustness with fast startup and graceful shutdown.
+10. **Dev/Prod Parity**: Keep development, staging, and production environments as similar as possible.
+11. **Logs**: Treat logs as streams of events.
+12. **Admin Processes**: Run administrative or management tasks as one-off processes.
 
 Visit the following resources to learn more:
 
 - [@article@The Twelve-Factor App](https://12factor.net/)
+- [@article@An illustrated guide to 12 Factor Apps](https://www.redhat.com/architect/12-factor-app)
+- [@video@Every Developer NEEDS To Know 12-Factor App Principles](https://www.youtube.com/watch?v=FryJt0Tbt9Q)

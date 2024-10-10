@@ -4,7 +4,7 @@ LXC is an abbreviation used for Linux Containers which is an operating system th
 
 Visit the following resources to learn more:
 
-- [@article@LXC Documentation](https://linuxcontainers.org/lxc/documentation/)
+- [@official@LXC Documentation](https://linuxcontainers.org/lxc/documentation/)
 - [@article@What is LXC?](https://linuxcontainers.org/lxc/introduction/)
-- [@video@Linux Container (LXC) Introduction](https://youtu.be/_KnmRdK69qM)
-- [@video@Getting started with LXC containers](https://youtu.be/CWmkSj_B-wo)
+- [@video@Getting Started with LXD Containerization](https://www.youtube.com/watch?v=aIwgPKkVj8s)
+- [@video@Getting Started with LXC containers](https://youtu.be/CWmkSj_B-wo)

@@ -1,3 +1,8 @@
 # Interface and Navigation
 
-In Android development, the concepts of "Interface" and "Navigation" are crucial. The "Interface" often refers to the Graphical User Interface (GUI) that users interact with. This includes buttons, text fields, image views, scroll views and other UI elements that the users can interact with to perform certain tasks. Tools like XML and Material Designs are used for interface design in Android. Meanwhile, "Navigation" refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within the app, following a clear path, like a map. Android uses the Navigation Component, a suite of libraries, tools, and guidance on constructing in-app navigation. Understanding both these elements, Interface and Navigation, is fundamental to creating an intuitive and user-friendly Android application.
+In Android development, the concepts of "Interface" and "Navigation" are crucial. The "Interface" often refers to the Graphical User Interface (GUI) that users interact with. This includes buttons, text fields, image views, scroll views and other UI elements that the users can interact with to perform certain tasks. Tools like XML and Material Designs are used for interface design in Android.
+
+Visit the following resources to learn more:
+
+- [@official@Android Developers: Interface](https://developer.android.com/guide/topics/ui/declaring-layout.html)
+- [@official@Android Developers: Navigation](https://developer.android.com/guide/navigation)

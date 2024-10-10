@@ -11,8 +11,8 @@ The main benefits of using TypeScript include:
 
 Learn more from the following links:
 
-- [@article@Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
-- [@article@TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [@official@Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [@official@TypeScript Official Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@article@What Is TypeScript?](https://thenewstack.io/what-is-typescript/)
 - [@video@Video: Where TypeScript Excels](https://youtu.be/BUo7B6UuoJ4)
 - [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

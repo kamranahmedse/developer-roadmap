@@ -93,3 +93,22 @@ export async function getProjectById(
     id: projectPathToId(project.file),
   };
 }
+
+export async function getRoadmapsProjects(): Promise<
+  Record<string, ProjectFileType[]>
+> {
+  const projects = await getAllProjects();
+  const roadmapsProjects: Record<string, ProjectFileType[]> = {};
+
+  projects.forEach((project) => {
+    project.frontmatter.roadmapIds.forEach((roadmapId) => {
+      if (!roadmapsProjects[roadmapId]) {
+        roadmapsProjects[roadmapId] = [];
+      }
+
+      roadmapsProjects[roadmapId].push(project);
+    });
+  });
+
+  return roadmapsProjects;
+}
