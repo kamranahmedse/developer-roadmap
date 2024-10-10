@@ -2,7 +2,7 @@
 title: 'Configuration Management'
 description: 'Write an Ansible playbook to configure a Linux server.'
 isNew: false
-sort: 10
+sort: 1100
 difficulty: 'intermediate'
 nature: 'Ansible'
 skills:

@@ -2,7 +2,7 @@
 title: 'Automated DB Backups'
 description: 'Setup a scheduled workflow to backup a Database every 12 hours'
 isNew: false
-sort: 15
+sort: 1600
 difficulty: 'intermediate'
 nature: 'Backups'
 skills:

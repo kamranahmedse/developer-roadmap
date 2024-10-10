@@ -2,7 +2,7 @@
 title: 'Service Discovery'
 description: 'Setup service discovery with dummy services and Consul'
 isNew: false
-sort: 21
+sort: 2000
 difficulty: 'advanced'
 nature: 'DevOps'
 skills:

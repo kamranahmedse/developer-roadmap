@@ -2,7 +2,7 @@
 title: 'GitHub Pages Deployment'
 description: 'Write a simple GitHub Actions workflow to deploy a static website to GitHub Pages.'
 isNew: true
-sort: 3
+sort: 400
 difficulty: 'beginner'
 nature: 'CI / CD'
 skills:

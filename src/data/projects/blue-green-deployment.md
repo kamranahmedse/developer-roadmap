@@ -2,7 +2,7 @@
 title: 'Blue-Green Deployment'
 description: 'Setup a blue-green deployment strategy for your application.'
 isNew: false
-sort: 20
+sort: 1700
 difficulty: 'advanced'
 nature: 'DevOps'
 skills:

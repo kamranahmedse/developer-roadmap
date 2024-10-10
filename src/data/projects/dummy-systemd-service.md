@@ -2,7 +2,7 @@
 title: 'Dummy Systemd Service'
 description: 'Create a long-running systemd service that logs to a file.'
 isNew: false
-sort: 8
+sort: 900
 difficulty: 'beginner'
 nature: 'Systemd'
 skills:

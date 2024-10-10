@@ -2,7 +2,7 @@
 title: 'SSH Remote Server Setup'
 description: 'Setup a basic remote linux server and configure it to allow SSH.'
 isNew: false
-sort: 4
+sort: 500
 difficulty: 'beginner'
 nature: 'SSH'
 skills:

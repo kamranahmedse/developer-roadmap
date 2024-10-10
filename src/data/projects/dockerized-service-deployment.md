@@ -2,7 +2,7 @@
 title: 'Dockerized Service'
 description: 'Use GitHub Actions to Deploy a Dockerized Node.js Service'
 isNew: false
-sort: 13
+sort: 1400
 difficulty: 'intermediate'
 nature: 'Docker'
 skills:
