@@ -4,6 +4,6 @@ Describes how an application is built including its components, how they interac
 
 Visit the following resources to learn more:
 
-- [@article@What is Software Architecture in Software Engineering?](https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/)
+- [@article@What is Software Architecture in Software Engineering?](https://www.computer.org/resources/software-architecture)
 - [@article@Software Architecture: It might not be what you think it is](https://www.infoq.com/articles/what-software-architecture/)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)
