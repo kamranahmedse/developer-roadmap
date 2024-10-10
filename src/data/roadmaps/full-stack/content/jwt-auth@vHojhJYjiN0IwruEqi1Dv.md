@@ -1,6 +1,6 @@
 # JWT
 
-JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWT tokens are designed to be compact, safe to use within URLs, and ideal for SSO contexts.
+JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWTs are designed to be compact, safe to use within URLs, and ideal for SSO contexts.
 
 Visit the following resources to learn more:
 

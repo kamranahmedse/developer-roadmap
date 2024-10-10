@@ -1368,7 +1368,7 @@
                                     "y": "0",
                                     "properties": {
                                         "size": "20",
-                                        "text": "Keep the payload small to reduce the size of the JWT token"
+                                        "text": "Keep the payload small to reduce the size of the JWT"
                                     }
                                 }
                             ]

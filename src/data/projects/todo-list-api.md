@@ -77,7 +77,7 @@ This will validate the given details, make sure the email is unique and store th
 }
 ```
 
-The token can either be a JWT token or a random string that can be used for authentication. We leave it up to you to decide the implementation details.
+The token can either be a JWT or a random string that can be used for authentication. We leave it up to you to decide the implementation details.
 
 ### User Login
 

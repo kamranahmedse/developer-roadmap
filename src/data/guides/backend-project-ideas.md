@@ -104,7 +104,7 @@ At the same time, when you “set” the value in the cache, you can also give i
 For the last of our “easy” backend projects, let’s cover one more API, an expense tracker API. This API should let you:
 
 - Sign up as a new user.
-- Generate and validate JWT tokens for handling authentication and user session.
+- Generate and validate JWTs for handling authentication and user session.
 - List and filter your past expenses. You can add the following filters:
     - Past week.
     - Last month.
@@ -205,7 +205,7 @@ For this one, you’ll have to keep in mind everything we’ve been covering so 
 
 With that in mind, let’s take a look at the responsibilities of this system:
 
-- JWT token creation and validation to handle authorization.
+- JWT creation and validation to handle authorization.
 - Ability to create new users.
 - Shopping cart management, which involves payment gateway integration as well.
 - Product listings.
