@@ -4,4 +4,4 @@ Atomic operations in Rust are low-level types that support lock-free concurrent 
 
 Learn more from the following links:
 
-- [@opensource@Rust Atomics and Locks - Low-Level Concurrency in Practice](https://marabos.nl/atomics/)
+- [@article@Rust Atomics and Locks - Low-Level Concurrency in Practice](https://marabos.nl/atomics/)
