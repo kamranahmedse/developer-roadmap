@@ -1,0 +1,58 @@
+import turtle
+import time
+
+# Setup turtle
+screen = turtle.Screen()
+screen.title("Developer-Roadmap Animation")
+t = turtle.Turtle()
+t.speed(1)
+t.color("blue")
+t.pensize(5)
+
+# Function to draw individual letters
+def draw_D():
+    t.penup()
+    t.goto(-300, 0)
+    t.pendown()
+    t.left(90)
+    t.forward(100)
+    t.right(90)
+    t.circle(-50, 180)
+    t.penup()
+
+def draw_E():
+    t.penup()
+    t.goto(-200, 0)
+    t.pendown()
+    t.left(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(50)
+    t.penup()
+    t.goto(-200, 50)
+    t.pendown()
+    t.forward(50)
+    t.penup()
+    t.goto(-200, 0)
+    t.pendown()
+    t.forward(50)
+
+def draw_V():
+    t.penup()
+    t.goto(-100, 100)
+    t.pendown()
+    t.right(120)
+    t.forward(100)
+    t.left(60)
+    t.forward(100)
+
+def draw_E_2():
+    t.penup()
+    t.goto(0, 100)
+    t.pendown()
+    draw_E()
+
+def draw_L():
+    t.penup()
+    t.goto(100, 100)
+    t
