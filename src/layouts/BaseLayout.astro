@@ -14,6 +14,7 @@ import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
 import ChangelogBanner from "../components/ChangelogBanner.astro";
+import ScrollToTop from '../components/ScrollToTop';
 
 export interface Props {
   title: string;
@@ -195,5 +196,6 @@ const gaPageIdentifier = Astro.url.pathname
       resourceType={resourceType}
       client:load
     />
+    <ScrollToTop client:load />
   </body>
 </html>
