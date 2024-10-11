@@ -859,6 +859,11 @@
         "type": "article"
       },
       {
+        "title": "Basic NGINX Setup on Ubuntu: Guide to a Functional and Secure Website Serving",
+        "url": "https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Nginx",
         "url": "https://app.daily.dev/tags/nginx?ref=roadmapsh",
         "type": "article"
@@ -2114,6 +2119,11 @@
     "title": "GitHub Actions",
     "description": "GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform integrated directly into GitHub repositories. It allows developers to automate software workflows, including building, testing, and deploying applications. Actions are defined in YAML files and triggered by various GitHub events such as pushes, pull requests, or scheduled tasks. The platform provides a marketplace of pre-built actions and supports custom actions. GitHub Actions offers matrix builds, parallel job execution, and supports multiple operating systems and languages. It integrates seamlessly with GitHub's ecosystem, facilitating automated code review, issue tracking, and project management. This tool enables developers to implement DevOps practices efficiently within their GitHub workflow, enhancing productivity and code quality.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "GitHub Actions Certification – Full Course to PASS the Exam",
+        "url": "https://www.youtube.com/watch?v=Tz7FsunBbfQ",
+        "type": "course"
+      },
       {
         "title": "Learn Git & GitHub",
         "url": "https://roadmap.sh/git-github",

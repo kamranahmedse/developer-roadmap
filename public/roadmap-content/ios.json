@@ -4,6 +4,16 @@
     "description": "Swift is a powerful and intuitive programming language developed by Apple for building iOS, macOS, watchOS, and tvOS applications. It combines modern language features like type safety, concise syntax, and performance optimizations, making it easy to write and maintain.\n\nSwift is designed to be safe, fast, and interactive, offering a more productive coding experience compared to Objective-C.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Programiz - Swift Programming Tutorials",
+        "url": "https://www.programiz.com/swift-programming",
+        "type": "course"
+      },
+      {
+        "title": "HackingWithSwift - 100 Days of Swift",
+        "url": "https://www.hackingwithswift.com/100",
+        "type": "course"
+      },
+      {
         "title": "Swift Documentation",
         "url": "https://www.swift.org/documentation/",
         "type": "article"
