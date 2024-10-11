@@ -6,4 +6,6 @@ Rust is a system programming language that runs blazingly fast, prevents segfaul
 
 Zero-cost abstraction is another key concept Rust implements. In general, abstractions in programming languages allow code to be written at a high level (like in Python), while being able to run at a low level (like in C). However, these abstractions often come with a runtime cost. In contrast, Rust aims to provide many useful abstractions, such as iterators and closures, that don't sacrifice runtime performance. This means you can write high-level code in Rust, and the Rust compiler will optimize it to run as fast as manually written low-level code.
 
+Learn more from the following resources:
+
 - [@video@This Is How Rust Stops Memory Leaks](https://www.youtube.com/watch?v=DJdUjjOmyx8)
