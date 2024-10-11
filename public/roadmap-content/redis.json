@@ -670,7 +670,7 @@
     "description": "`SCARD` is a Redis command used to get the number of members in a set, it returns the cardinality of the specified set, which is the total count of unique elements it contains. If the set does not exist, `SCARD` returns `0`. This command is useful for quickly determining the size of a set, allowing applications to make decisions based on the number of unique items, such as checking user participation in a campaign or the count of unique tags in a system.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "SCARD Documentation",
         "url": "https://redis.io/docs/latest/commands/scard/",
         "type": "article"
       }
@@ -829,7 +829,7 @@
   },
   "3pFChX6YIItrBz9lxu4XM": {
     "title": "ZRANGE",
-    "description": "The ZRANGE command can perform multiple range queries including by rank, by score or by lexiographical order. The order of elements returned are always from lowest to highest and any score ties are resolved using reverse lexiographical ordering.\n\nLearn more from the following resourceS:",
+    "description": "The ZRANGE command can perform multiple range queries including by rank, by score or by lexiographical order. The order of elements returned are always from lowest to highest and any score ties are resolved using reverse lexiographical ordering.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "ZRANGE Documentation",
@@ -1349,8 +1349,8 @@
     "description": "The `EXEC` command in Redis is used to execute a transaction that has been initiated with the `MULTI` command. When a transaction is started with `MULTI`, subsequent commands are queued but not executed immediately. Calling `EXEC` will execute all the commands in the transaction atomically, ensuring that either all commands succeed or none are applied. If any command in the transaction fails, the entire transaction is aborted. This command is essential for maintaining data integrity when performing a series of operations that should be treated as a single unit of work.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
-        "url": "https://redis.io/docs/latest/commands/eval/",
+        "title": "EXEC Documentation",
+        "url": "https://redis.io/docs/latest/commands/exec/",
         "type": "article"
       },
       {
@@ -1514,12 +1514,12 @@
     "description": "Persistence refers to the writing of data to durable storage, such as a solid-state disk (SSD). Redis provides a range of persistence options of which AOF (Append Only File) is one of the options. AOF persistence logs every write operation received by the server. These operations can then be replayed again at server startup, reconstructing the original dataset.The rewrite will create a small optimized version of the current Append Only File.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Persistence in redis",
+        "title": "Persistence in Redis",
         "url": "https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/",
         "type": "article"
       },
       {
-        "title": "Enabling redis persistence",
+        "title": "Enabling Redis persistence",
         "url": "https://youtu.be/qBKnUeR0p10?si=TPvcFtpFMcTZB-Be",
         "type": "video"
       }
