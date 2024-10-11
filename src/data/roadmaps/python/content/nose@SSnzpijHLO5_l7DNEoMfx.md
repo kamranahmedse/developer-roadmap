@@ -1,6 +1,8 @@
 # Nose
 
 Nose is another opensource testing framework that extends `unittest` to provide a more flexible testing framework.
+Presently deprecated not actively maintained.
+Pytest is considered as replacement.
 
 Visit the following resources to learn more:
 
