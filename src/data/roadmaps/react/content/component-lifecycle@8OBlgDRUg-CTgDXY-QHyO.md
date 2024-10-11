@@ -6,7 +6,7 @@ It is not recommended to use lifecycle methods manually. Instead, use the useEff
 
 Visit the following resources to learn more:
 
-- [@official@Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effectsv)
+- [@official@Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)
 - [@official@Class Component](https://react.dev/reference/react/Component)
 - [@article@React component lifecycle: React lifecycle methods & hooks](https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/)
 - [@article@The React lifecycle: methods and hooks explained](https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle)
