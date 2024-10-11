@@ -6,7 +6,7 @@ Visit the following resources to learn more:
 
 - [@opensource@GitHub Website](https://github.com)
 - [@article@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
-- [@opensource@Github Actions](https://github.com/features/actions)
+- [@opensource@Github Actions Website](https://github.com/features/actions)
 - [@article@Github Actions Documentation](https://docs.github.com/en/actions)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@video@What is GitHub Actions?](https://youtu.be/URmeTqglS58?si=a_Lgh1S272z7jqv3)
