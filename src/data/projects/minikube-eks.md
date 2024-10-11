@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a Scalable Application on MiniKube and EKS'
 description: 'Deploy and scale a Kubernetes application using both MiniKube locally and EKS on AWS.'
-isNew: false
+isNew: true
 sort: 1000
 difficulty: 'advanced'
 nature: 'Kubernetes'
