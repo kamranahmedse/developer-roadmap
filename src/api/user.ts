@@ -115,7 +115,18 @@ export type GetUserProfileRoadmapResponse = {
   nodes: any[];
   edges: any[];
 };
+window.addEventListener("calculatorLoaded", () => {
+  const icInstance = ic.getInstance("CALCULATOR_ID");
 
+  // Perform calculations using the InteractiveCalculator API
+  icInstance.on("interaction", function(event) {
+    console.log(event);
+  });
+
+  icInstance.on("submit", function(event) {
+    console.log(event);
+  });
+});
 export function userApi(context: APIContext) {
   return {
     getPublicProfile: async function (username: string) {
