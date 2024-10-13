@@ -4,5 +4,5 @@ API Testing refers to the process of checking the functionality, reliability, pe
 
 Learn more from the following resources:
 
-- [@article@What is API testing?](https://www.postman.com/api-platform/api-testing/)
+- [@article@What is API Testing?](https://www.postman.com/api-platform/api-testing/)
 - [@article@API Testing : What It is, How to Test & Best Practices](https://testsigma.com/guides/api-testing/)

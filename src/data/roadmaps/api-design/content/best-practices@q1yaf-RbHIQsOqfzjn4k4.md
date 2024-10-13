@@ -4,5 +4,5 @@ API design has rapidly emerged as a vital component of software development. Whe
 
 Learn more from the following resources:
 
-- [@article@Best practices for REST API design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
-- [@article@Best practices in API design](https://swagger.io/resources/articles/best-practices-in-api-design/)
+- [@article@Best Practices for REST API Design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
+- [@article@Best Practices in API Design](https://swagger.io/resources/articles/best-practices-in-api-design/)

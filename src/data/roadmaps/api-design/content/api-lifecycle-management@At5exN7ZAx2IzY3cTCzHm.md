@@ -4,6 +4,6 @@ API Lifecycle Management is a crucial aspect in API design that oversees the pro
 
 Learn more from the following resources:
 
-- [@article@What is the API lifecycle?](https://www.postman.com/api-platform/api-lifecycle/)
-- [@article@What is API lifescycle management?](https://swagger.io/blog/api-strategy/what-is-api-lifecycle-management/)
-- [@video@Day in the lifecycle of an API](https://www.youtube.com/watch?v=VxY_cz0VQXE)
+- [@article@What is the API Lifecycle?](https://www.postman.com/api-platform/api-lifecycle/)
+- [@article@What is API Lifecycle Management?](https://swagger.io/blog/api-strategy/what-is-api-lifecycle-management/)
+- [@video@Day in the Lifecycle of an API](https://www.youtube.com/watch?v=VxY_cz0VQXE)

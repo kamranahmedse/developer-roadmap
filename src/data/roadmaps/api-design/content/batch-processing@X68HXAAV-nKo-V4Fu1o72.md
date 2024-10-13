@@ -4,5 +4,5 @@ Batch Processing refers to the method of handling bulk data requests in API desi
 
 Learn more from the following resources:
 
-- [@article@API design guidance: bulk vs batch import](https://tyk.io/blog/api-design-guidance-bulk-and-batch-import/)
-- [@video@Stream vs Batch processing explained with examples](https://www.youtube.com/watch?v=1xgBQTF24mU)
+- [@article@API Design Guidance: Bulk vs Batch Import](https://tyk.io/blog/api-design-guidance-bulk-and-batch-import/)
+- [@video@Stream vs Batch Processing Explained with Examples](https://www.youtube.com/watch?v=1xgBQTF24mU)
