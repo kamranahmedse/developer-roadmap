@@ -4,6 +4,6 @@ Event-driven architecture (EDA) is a software design concept that revolves aroun
 
 Learn more form the following resources:
 
-- [@article@Event-driven architecture style](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
-- [@article@Event-driven architecture](https://aws.amazon.com/event-driven-architecture/)
+- [@article@Event Driven Architecture Style](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
+- [@article@Event-driven Architecture](https://aws.amazon.com/event-driven-architecture/)
 - [@video@Event-Driven Architecture: Explained in 7 Minutes!](https://www.youtube.com/watch?v=gOuAqRaDdHA)

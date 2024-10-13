@@ -4,6 +4,6 @@ Contract Testing is a critical aspect of maintaining a robust and reliable API i
 
 Learn more from the following resources:
 
-- [@article@A complete guide to Contract Testing](https://testsigma.com/blog/api-contract-testing/)
-- [@article@Get started with API Contract Testing](https://saucelabs.com/resources/blog/getting-started-with-api-contract-testing)
+- [@article@Complete Guide to Contract Testing](https://testsigma.com/blog/api-contract-testing/)
+- [@article@Geting Started with API Contract Testing](https://saucelabs.com/resources/blog/getting-started-with-api-contract-testing)
 - [@article@Contract Testing](https://www.postman.com/templates/42247877-8529-429d-acba-4de20c3b5b3b/Contract-testing/)
