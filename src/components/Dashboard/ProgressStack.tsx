@@ -201,7 +201,7 @@ export function ProgressStack(props: ProgressStackProps) {
             emptyLinkHref={'/roadmaps'}
             emptyLinkText={'Explore Roadmaps'}
           >
-            <div className="grid flex-grow grid-cols-2 items-start gap-2">
+            <div className="grid flex-grow auto-rows-min grid-cols-2 items-start gap-2">
               {userProgressesToShow.length > 0 && (
                 <>
                   {userProgressesToShow.map((progress) => {
