@@ -5,5 +5,5 @@ OAuth 2.0 is an authorization framework that allows applications to obtain limit
 Learn more from the following resources:
 
 - [@official@OAuth Website](https://oauth.net/2/)
-- [@article@What is OAuth 2.0?](https://auth0.com/intro-to-iam/what-is-oauth-2)
+- [@official@What is OAuth 2.0?](https://auth0.com/intro-to-iam/what-is-oauth-2)
 - [@video@OAuth 2 Explained In Simple Terms](https://www.youtube.com/watch?v=ZV5yTm4pT8g)
