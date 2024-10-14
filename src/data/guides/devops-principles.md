@@ -7,7 +7,7 @@ seo:
   title: '11 DevOps Principles and Practices to Master: Pro Advice'
   description: 'Elevate your game by understanding this set of key DevOps principles and practices. Gain pro insights for a more efficient, collaborative workflow!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-09-24
 sitemap:
@@ -147,7 +147,7 @@ So to keep up, DevOps engineers and teams need to be committed to learning and i
 
 Encouraging a culture of continuous learning within your team can help keep everyone up-to-date with the latest DevOps trends and tools. This can include participating in conferences, attending workshops, and enrolling in online courses. Reading books like "The Phoenix Project," "The Unicorn Project," and "The DevOps Handbook" can provide valuable insights and inspiration.
 
-If you’re not into books, then websites like [12factor.net](http://12factor.net), [OpenGitOps.dev](http://OpenGitOps.dev), and [CNCF.](http://CNCF.)io are also great resources for staying current with industry best practices.
+If you’re not into books, then websites like [12factor.net](http://12factor.net), [OpenGitOps.dev](http://OpenGitOps.dev), and [CNCF.io](http://CNCF.io) are also great resources for staying current with industry best practices.
 
 Continuous improvement goes hand-in-hand with continuous learning. It's about regularly reviewing and refining your processes, identifying areas for improvement after failing and experimenting with new approaches. This iterative approach helps you optimize the development process, improve collaboration between devs and operations, and deliver better software.
 

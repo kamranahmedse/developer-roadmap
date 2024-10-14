@@ -9,8 +9,6 @@ Migration strategies involve planning and executing the transition of applicatio
 5. **Retain**: Keeping certain applications or systems in their current environment due to specific constraints or requirements.
 6. **Retire**: Decommissioning applications that are no longer needed or are redundant.
 
-Each strategy has its own trade-offs in terms of cost, complexity, and benefits, and the choice depends on factors like the application’s architecture, business needs, and resource availability.
-
 Visit the following resources to learn more:
 
 - [@article@Databases as a Challenge for Continuous Delivery](https://phauer.com/2015/databases-challenge-continuous-delivery/)

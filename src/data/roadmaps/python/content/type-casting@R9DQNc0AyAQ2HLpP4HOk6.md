@@ -1,4 +1,4 @@
-## Typecasting
+# Typecasting
 
 The process of converting the value of one data type (integer, string, float, etc.) to another data type is called type conversion. Python has two types of type conversion: Implicit and Explicit.
 

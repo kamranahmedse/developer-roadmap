@@ -4,6 +4,6 @@ Web hosting is a service that allows individuals and organizations to make their
 
 Visit the following resources to learn more:
 
-- [@article@What is web hosting?](https://www.namecheap.com/hosting/what-is-web-hosting-definition/)
+- [@article@What is Web Hosting?](https://www.namecheap.com/hosting/what-is-web-hosting-definition/)
 - [@video@Different Types of Web Hosting Explained](https://www.youtube.com/watch?v=AXVZYzw8geg)
 - [@video@Where to Host a Fullstack Project on a Budget](https://www.youtube.com/watch?v=Kx_1NYYJS7Q)

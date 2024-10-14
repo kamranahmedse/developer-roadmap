@@ -7,7 +7,7 @@ seo:
   title: 'Is DevOps engineering a good career path in @currentYear@?'
   description: 'Learn why a DevOps career path is a smart choice in 2024. Get insights into demand, growth, and earning potential in DevOps.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-career-path-2h4r7.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-08-20
 sitemap:

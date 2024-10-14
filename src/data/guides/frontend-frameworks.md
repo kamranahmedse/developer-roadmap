@@ -7,7 +7,7 @@ seo:
   title: 'Top 7 Frontend Frameworks to Use in 2024: Pro Advice'
   description: 'Get expert advice on frontend frameworks for 2024. Elevate your web development process with these top picks.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/top-frontend-frameworks-wmqwc.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-09-26
 sitemap:

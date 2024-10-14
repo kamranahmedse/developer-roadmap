@@ -4,4 +4,4 @@ Beego is used for rapid development of enterprise application in Go, including R
 
 Visit the following resources to learn more:
 
-- [@opensource@Github Repository](https://github.com/beego/beego)
+- [@opensource@Beego/Beego](https://github.com/beego/beego)

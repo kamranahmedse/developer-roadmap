@@ -6,6 +6,7 @@ export type StreakResponse = {
   previousCount?: number | null;
   firstVisitAt: Date;
   lastVisitAt: Date;
+  refByUserCount: number;
 };
 
 export const $accountStreak = atom<StreakResponse | undefined>();

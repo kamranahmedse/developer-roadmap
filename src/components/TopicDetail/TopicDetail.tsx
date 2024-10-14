@@ -175,7 +175,6 @@ export function TopicDetail(props: TopicDetailProps) {
     setError('');
     setIsLoading(true);
     setIsActive(true);
-    sponsorHidden.set(true);
 
     setTopicId(topicId);
     setResourceType(resourceType);

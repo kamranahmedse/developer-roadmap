@@ -4,7 +4,7 @@ Solr is an open-source, highly scalable search platform built on Apache Lucene, 
 
 Visit the following resources to learn more:
 
-- [@article@Official Website](https://solr.apache.org/)
-- [@article@Official Documentation](https://solr.apache.org/resources.html#documentation)
-- [@opensource@apache/solr](https://github.com/apache/solr)
+- [@article@Solr Website](https://solr.apache.org/)
+- [@article@Solr Documentation](https://solr.apache.org/resources.html#documentation)
+- [@opensource@Solr on Github](https://github.com/apache/solr)
 - [@video@Apache Solr vs Elasticsearch Differences](https://www.youtube.com/watch?v=MMWBdSdbu5k)

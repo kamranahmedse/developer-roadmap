@@ -6,7 +6,7 @@ briefDescription: 'Step by step guide to becoming an iOS Developer in 2024'
 title: 'iOS Developer'
 description: 'Step by step guide to becoming an iOS developer in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 3990

@@ -17,6 +17,7 @@ import { DashboardAiRoadmaps } from './DashboardAiRoadmaps.tsx';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { PencilIcon, type LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
+import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
 
 type UserDashboardResponse = {
   name: string;
@@ -42,6 +43,8 @@ export type BuiltInRoadmap = {
   description: string;
   isFavorite?: boolean;
   relatedRoadmapIds?: string[];
+  renderer?: AllowedRoadmapRenderer;
+  metadata?: Record<string, any>;
 };
 
 type PersonalDashboardProps = {
@@ -350,13 +353,11 @@ function DashboardCard(props: DashboardCardProps) {
   } = props;
 
   return (
-    <div
-      className={cn(
-        'relative overflow-hidden',
-        className,
-      )}
-    >
-      <a href={href} className="flex flex-col rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50">
+    <div className={cn('relative overflow-hidden', className)}>
+      <a
+        href={href}
+        className="flex flex-col rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
+      >
         {Icon && (
           <div className="px-4 pb-3 pt-4">
             <Icon className="size-6" />

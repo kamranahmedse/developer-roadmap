@@ -1,0 +1,609 @@
+{
+  "_hYN0gEi9BL24nptEtXWU": {
+    "title": "Introduction",
+    "description": "",
+    "links": []
+  },
+  "GN6SnI7RXIeW8JeD-qORW": {
+    "title": "What is an AI Engineer?",
+    "description": "",
+    "links": []
+  },
+  "jSZ1LhPdhlkW-9QJhIvFs": {
+    "title": "AI Engineer vs ML Engineer",
+    "description": "",
+    "links": []
+  },
+  "wf2BSyUekr1S1q6l8kyq6": {
+    "title": "LLMs",
+    "description": "",
+    "links": []
+  },
+  "KWjD4xEPhOOYS51dvRLd2": {
+    "title": "Inference",
+    "description": "",
+    "links": []
+  },
+  "xostGgoaYkqMO28iN2gx8": {
+    "title": "Training",
+    "description": "",
+    "links": []
+  },
+  "XyEp6jnBSpCxMGwALnYfT": {
+    "title": "Embeddings",
+    "description": "",
+    "links": []
+  },
+  "LnQ2AatMWpExUHcZhDIPd": {
+    "title": "Vector Databases",
+    "description": "",
+    "links": []
+  },
+  "9JwWIK0Z2MK8-6EQQJsCO": {
+    "title": "RAG",
+    "description": "",
+    "links": []
+  },
+  "Dc15ayFlzqMF24RqIF_-X": {
+    "title": "Prompt Engineering",
+    "description": "",
+    "links": []
+  },
+  "9XCxilAQ7FRet7lHQr1gE": {
+    "title": "AI Agents",
+    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:\n\n\\-[@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/) -[@article@Ai agents and their types](https://play.ht/blog/ai-agents-use-cases/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
+    "links": []
+  },
+  "5QdihE1lLpMc3DFrGy46M": {
+    "title": "AI vs AGI",
+    "description": "",
+    "links": []
+  },
+  "qJVgKe9uBvXc-YPfvX_Y7": {
+    "title": "Impact on Product Development",
+    "description": "",
+    "links": []
+  },
+  "K9EiuFgPBFgeRxY4wxAmb": {
+    "title": "Roles and Responsiblities",
+    "description": "",
+    "links": []
+  },
+  "d7fzv_ft12EopsQdmEsel": {
+    "title": "Pre-trained Models",
+    "description": "Pre-trained models are Machine Learning (ML) models that have been previously trained on a large dataset to solve a specific task or set of tasks. These models learn patterns, features, and representations from the training data, which can then be fine-tuned or adapted for other related tasks. Pre-training provides a good starting point, reducing the amount of data and computation required to train a new model from scratch.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Pre-trained models: Past, present and future",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231",
+        "type": "article"
+      }
+    ]
+  },
+  "1Ga6DbOPc6Crz7ilsZMYy": {
+    "title": "Benefits of Pre-trained Models",
+    "description": "",
+    "links": []
+  },
+  "MXqbQGhNM3xpXlMC2ib_6": {
+    "title": "Limitations and Considerations",
+    "description": "",
+    "links": []
+  },
+  "2WbVpRLqwi3Oeqk1JPui4": {
+    "title": "Open AI Models",
+    "description": "",
+    "links": []
+  },
+  "vvpYkmycH0_W030E-L12f": {
+    "title": "Capabilities / Context Length",
+    "description": "",
+    "links": []
+  },
+  "LbB2PeytxRSuU07Bk0KlJ": {
+    "title": "Cut-off Dates / Knowledge",
+    "description": "",
+    "links": []
+  },
+  "hy6EyKiNxk1x84J63dhez": {
+    "title": "Anthropic's Claude",
+    "description": "",
+    "links": []
+  },
+  "oe8E6ZIQWuYvHVbYJHUc1": {
+    "title": "Google's Gemini",
+    "description": "",
+    "links": []
+  },
+  "3PQVZbcr4neNMRr6CuNzS": {
+    "title": "Azure AI",
+    "description": "",
+    "links": []
+  },
+  "OkYO-aSPiuVYuLXHswBCn": {
+    "title": "AWS Sagemaker",
+    "description": "",
+    "links": []
+  },
+  "8XjkRqHOdyH-DbXHYiBEt": {
+    "title": "Hugging Face Models",
+    "description": "",
+    "links": []
+  },
+  "n-Ud2dXkqIzK37jlKItN4": {
+    "title": "Mistral AI",
+    "description": "",
+    "links": []
+  },
+  "a7qsvoauFe5u953I699ps": {
+    "title": "Cohere",
+    "description": "",
+    "links": []
+  },
+  "5ShWZl1QUqPwO-NRGN85V": {
+    "title": "OpenAI Models",
+    "description": "",
+    "links": []
+  },
+  "zdeuA4GbdBl2DwKgiOA4G": {
+    "title": "OpenAI API",
+    "description": "",
+    "links": []
+  },
+  "_bPTciEA1GT1JwfXim19z": {
+    "title": "Chat Completions API",
+    "description": "",
+    "links": []
+  },
+  "9-5DYeOnKJq9XvEMWP45A": {
+    "title": "Writing Prompts",
+    "description": "",
+    "links": []
+  },
+  "nyBgEHvUhwF-NANMwkRJW": {
+    "title": "Open AI Playground",
+    "description": "",
+    "links": []
+  },
+  "15XOFdVp0IC-kLYPXUJWh": {
+    "title": "Fine-tuning",
+    "description": "",
+    "links": []
+  },
+  "qzvp6YxWDiGakA2mtspfh": {
+    "title": "Maximum Tokens",
+    "description": "",
+    "links": []
+  },
+  "FjV3oD7G2Ocq5HhUC17iH": {
+    "title": "Token Counting",
+    "description": "",
+    "links": []
+  },
+  "DZPM9zjCbYYWBPLmQImxQ": {
+    "title": "Pricing Considerations",
+    "description": "",
+    "links": []
+  },
+  "8ndKHDJgL_gYwaXC7XMer": {
+    "title": "AI Safety and Ethics",
+    "description": "",
+    "links": []
+  },
+  "cUyLT6ctYQ1pgmodCKREq": {
+    "title": "Prompt Injection Attacks",
+    "description": "",
+    "links": []
+  },
+  "lhIU0ulpvDAn1Xc3ooYz_": {
+    "title": "Bias and Fareness",
+    "description": "",
+    "links": []
+  },
+  "sWBT-j2cRuFqRFYtV_5TK": {
+    "title": "Security and Privacy Concerns",
+    "description": "",
+    "links": []
+  },
+  "Pt-AJmSJrOxKvolb5_HEv": {
+    "title": "Conducting adversarial testing",
+    "description": "",
+    "links": []
+  },
+  "ljZLa3yjQpegiZWwtnn_q": {
+    "title": "OpenAI Moderation API",
+    "description": "",
+    "links": []
+  },
+  "4Q5x2VCXedAWISBXUIyin": {
+    "title": "Adding end-user IDs in prompts",
+    "description": "Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide your team with more actionable feedback in the event that we detect any policy violations in your application.\n\nVisit the following resources to learn more:\n\n\\-[@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)",
+    "links": []
+  },
+  "qmx6OHqx4_0JXVIv8dASp": {
+    "title": "Robust prompt engineering",
+    "description": "",
+    "links": []
+  },
+  "t1SObMWkDZ1cKqNNlcd9L": {
+    "title": "Know your Customers / Usecases",
+    "description": "",
+    "links": []
+  },
+  "ONLDyczNacGVZGojYyJrU": {
+    "title": "Constraining outputs and inputs",
+    "description": "",
+    "links": []
+  },
+  "a_3SabylVqzzOyw3tZN5f": {
+    "title": "OpenSource AI",
+    "description": "",
+    "links": []
+  },
+  "RBwGsq9DngUsl8PrrCbqx": {
+    "title": "Open vs Closed Source Models",
+    "description": "",
+    "links": []
+  },
+  "97eu-XxYUH9pYbD_KjAtA": {
+    "title": "Popular Open Source Models",
+    "description": "",
+    "links": []
+  },
+  "v99C5Bml2a6148LCJ9gy9": {
+    "title": "Hugging Face",
+    "description": "",
+    "links": []
+  },
+  "YLOdOvLXa5Fa7_mmuvKEi": {
+    "title": "Hugging Face Hub",
+    "description": "",
+    "links": []
+  },
+  "YKIPOiSj_FNtg0h8uaSMq": {
+    "title": "Hugging Face Tasks",
+    "description": "",
+    "links": []
+  },
+  "3kRTzlLNBnXdTsAEXVu_M": {
+    "title": "Inference SDK",
+    "description": "",
+    "links": []
+  },
+  "bGLrbpxKgENe2xS1eQtdh": {
+    "title": "Transformers.js",
+    "description": "",
+    "links": []
+  },
+  "rTT2UnvqFO3GH6ThPLEjO": {
+    "title": "Ollama",
+    "description": "",
+    "links": []
+  },
+  "ro3vY_sp6xMQ-hfzO-rc1": {
+    "title": "Ollama Models",
+    "description": "",
+    "links": []
+  },
+  "TsG_I7FL-cOCSw8gvZH3r": {
+    "title": "Ollama SDK",
+    "description": "",
+    "links": []
+  },
+  "--ig0Ume_BnXb9K2U7HJN": {
+    "title": "What are Embeddings",
+    "description": "",
+    "links": []
+  },
+  "eMfcyBxnMY_l_5-8eg6sD": {
+    "title": "Semantic Search",
+    "description": "",
+    "links": []
+  },
+  "HQe9GKy3p0kTUPxojIfSF": {
+    "title": "Recommendation Systems",
+    "description": "",
+    "links": []
+  },
+  "AglWJ7gb9rTT2rMkstxtk": {
+    "title": "Anomaly Detection",
+    "description": "",
+    "links": []
+  },
+  "06Xta-OqSci05nV2QMFdF": {
+    "title": "Data Classification",
+    "description": "",
+    "links": []
+  },
+  "l6priWeJhbdUD5tJ7uHyG": {
+    "title": "Open AI Embeddings API",
+    "description": "",
+    "links": []
+  },
+  "y0qD5Kb4Pf-ymIwW-tvhX": {
+    "title": "Open AI Embedding Models",
+    "description": "",
+    "links": []
+  },
+  "4GArjDYipit4SLqKZAWDf": {
+    "title": "Pricing Considerations",
+    "description": "",
+    "links": []
+  },
+  "apVYIV4EyejPft25oAvdI": {
+    "title": "Open-Source Embeddings",
+    "description": "",
+    "links": []
+  },
+  "ZV_V6sqOnRodgaw4mzokC": {
+    "title": "Sentence Transformers",
+    "description": "",
+    "links": []
+  },
+  "dLEg4IA3F5jgc44Bst9if": {
+    "title": "Models on Hugging Face",
+    "description": "",
+    "links": []
+  },
+  "tt9u3oFlsjEMfPyojuqpc": {
+    "title": "Vector Databases",
+    "description": "",
+    "links": []
+  },
+  "WcjX6p-V-Rdd77EL8Ega9": {
+    "title": "Purpose and Functionality",
+    "description": "",
+    "links": []
+  },
+  "dSd2C9lNl-ymmCRT9_ZC3": {
+    "title": "Chroma",
+    "description": "Chroma is an open-source vector database and AI-native embedding database designed to handle and store large-scale embeddings and semantic vectors. It is used in applications that require fast, efficient similarity searches, such as natural language processing (NLP), machine learning (ML), and AI systems dealing with text, images, and other high-dimensional data.\n\nVisit the following resources to learn more:\n\n\\-[@official@Chroma](https://www.trychroma.com/) -[@article@Chroma Tutorials](https://lablab.ai/tech/chroma) -[@video@Chroma - Chroma - Vector Database for LLM Applications](https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW)",
+    "links": []
+  },
+  "_Cf7S1DCvX7p1_3-tP3C3": {
+    "title": "Pinecone",
+    "description": "",
+    "links": []
+  },
+  "VgUnrZGKVjAAO4n_llq5-": {
+    "title": "Weaviate",
+    "description": "",
+    "links": []
+  },
+  "JurLbOO1Z8r6C3yUqRNwf": {
+    "title": "FAISS",
+    "description": "",
+    "links": []
+  },
+  "rjaCNT3Li45kwu2gXckke": {
+    "title": "LanceDB",
+    "description": "",
+    "links": []
+  },
+  "DwOAL5mOBgBiw-EQpAzQl": {
+    "title": "Qdrant",
+    "description": "",
+    "links": []
+  },
+  "9kT7EEQsbeD2WDdN9ADx7": {
+    "title": "Supabase",
+    "description": "",
+    "links": []
+  },
+  "j6bkm0VUgLkHdMDDJFiMC": {
+    "title": "MongoDB Atlas",
+    "description": "",
+    "links": []
+  },
+  "5TQnO9B4_LTHwqjI7iHB1": {
+    "title": "Indexing Embeddings",
+    "description": "",
+    "links": []
+  },
+  "ZcbRPtgaptqKqWBgRrEBU": {
+    "title": "Performing Similarity Search",
+    "description": "",
+    "links": []
+  },
+  "lVhWhZGR558O-ljHobxIi": {
+    "title": "RAG & Implementation",
+    "description": "",
+    "links": []
+  },
+  "GCn4LGNEtPI0NWYAZCRE-": {
+    "title": "RAG Usecases",
+    "description": "",
+    "links": []
+  },
+  "qlBEXrbV88e_wAGRwO9hW": {
+    "title": "RAG vs Fine-tuning",
+    "description": "",
+    "links": []
+  },
+  "mX987wiZF7p3V_gExrPeX": {
+    "title": "Chunking",
+    "description": "",
+    "links": []
+  },
+  "grTcbzT7jKk_sIUwOTZTD": {
+    "title": "Embedding",
+    "description": "",
+    "links": []
+  },
+  "zZA1FBhf1y4kCoUZ-hM4H": {
+    "title": "Vector Database",
+    "description": "",
+    "links": []
+  },
+  "OCGCzHQM2LQyUWmiqe6E0": {
+    "title": "Retrieval Process",
+    "description": "",
+    "links": []
+  },
+  "2jJnS9vRYhaS69d6OxrMh": {
+    "title": "Generation",
+    "description": "",
+    "links": []
+  },
+  "WZVW8FQu6LyspSKm1C_sl": {
+    "title": "Using SDKs Directly",
+    "description": "",
+    "links": []
+  },
+  "ebXXEhNRROjbbof-Gym4p": {
+    "title": "Langchain",
+    "description": "",
+    "links": []
+  },
+  "d0ontCII8KI8wfP-8Y45R": {
+    "title": "Llama Index",
+    "description": "",
+    "links": []
+  },
+  "eOqCBgBTKM8CmY3nsWjre": {
+    "title": "Open AI Assistant API",
+    "description": "",
+    "links": []
+  },
+  "c0RPhpD00VIUgF4HJgN2T": {
+    "title": "Replicate",
+    "description": "",
+    "links": []
+  },
+  "AeHkNU-uJ_gBdo5-xdpEu": {
+    "title": "AI Agents",
+    "description": "",
+    "links": []
+  },
+  "778HsQzTuJ_3c9OSn5DmH": {
+    "title": "Agents Usecases",
+    "description": "AI Agents have a variety of usecases ranging from customer support, workflow automation, cybersecurity, finance, marketing and sales, and more.\n\nVisit the following resources to learn more:\n\n*   [@article@Top 15 Use Cases Of AI Agents In Business](https://www.ampcome.com/post/15-use-cases-of-ai-agents-in-business) -[@article@A Brief Guide on AI Agents: Benefits and Use Cases](https://www.codica.com/blog/brief-guide-on-ai-agents/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
+    "links": []
+  },
+  "voDKcKvXtyLzeZdx2g3Qn": {
+    "title": "ReAct Prompting",
+    "description": "",
+    "links": []
+  },
+  "6xaRB34_g0HGt-y1dGYXR": {
+    "title": "Manual Implementation",
+    "description": "",
+    "links": []
+  },
+  "Sm0Ne5Nx72hcZCdAcC0C2": {
+    "title": "OpenAI Functions / Tools",
+    "description": "",
+    "links": []
+  },
+  "mbp2NoL-VZ5hZIIblNBXt": {
+    "title": "OpenAI Assistant API",
+    "description": "",
+    "links": []
+  },
+  "W7cKPt_UxcUgwp8J6hS4p": {
+    "title": "Multimodal AI",
+    "description": "",
+    "links": []
+  },
+  "sGR9qcro68KrzM8qWxcH8": {
+    "title": "Multimodal AI Usecases",
+    "description": "",
+    "links": []
+  },
+  "fzVq4hGoa2gdbIzoyY1Zp": {
+    "title": "Image Understanding",
+    "description": "",
+    "links": []
+  },
+  "49BWxYVFpIgZCCqsikH7l": {
+    "title": "Image Generation",
+    "description": "",
+    "links": []
+  },
+  "TxaZCtTCTUfwCxAJ2pmND": {
+    "title": "Video Understanding",
+    "description": "",
+    "links": []
+  },
+  "mxQYB820447DC6kogyZIL": {
+    "title": "Audio Processing",
+    "description": "",
+    "links": []
+  },
+  "GCERpLz5BcRtWPpv-asUz": {
+    "title": "Text-to-Speech",
+    "description": "",
+    "links": []
+  },
+  "jQX10XKd_QM5wdQweEkVJ": {
+    "title": "Speech-to-Text",
+    "description": "",
+    "links": []
+  },
+  "CRrqa-dBw1LlOwVbrZhjK": {
+    "title": "OpenAI Vision API",
+    "description": "",
+    "links": []
+  },
+  "LKFwwjtcawJ4Z12X102Cb": {
+    "title": "DALL-E API",
+    "description": "",
+    "links": []
+  },
+  "OTBd6cPUayKaAM-fLWdSt": {
+    "title": "Whisper API",
+    "description": "",
+    "links": []
+  },
+  "EIDbwbdolR_qsNKVDla6V": {
+    "title": "Hugging Face Models",
+    "description": "",
+    "links": []
+  },
+  "j9zD3pHysB1CBhLfLjhpD": {
+    "title": "LangChain for Multimodal Apps",
+    "description": "",
+    "links": []
+  },
+  "akQTCKuPRRelj2GORqvsh": {
+    "title": "LlamaIndex for Multimodal Apps",
+    "description": "",
+    "links": []
+  },
+  "NYge7PNtfI-y6QWefXJ4d": {
+    "title": "Development Tools",
+    "description": "",
+    "links": []
+  },
+  "XcKeQfpTA5ITgdX51I4y-": {
+    "title": "AI Code Editors",
+    "description": "AI code editors are development tools that leverage artificial intelligence to assist software developers in writing, debugging, and optimizing code. These editors go beyond traditional syntax highlighting and code completion by incorporating machine learning models, natural language processing, and data analysis to understand code context, generate suggestions, and even automate portions of the software development process.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cursor - The AI Code Editor",
+        "url": "https://www.cursor.com/",
+        "type": "website"
+      },
+      {
+        "title": "Bolt - Prompt, run, edit, and deploy full-stack web apps",
+        "url": "https://bolt.new",
+        "type": "website"
+      },
+      {
+        "title": "Replit - Build Apps using AI",
+        "url": "https://replit.com/ai",
+        "type": "website"
+      },
+      {
+        "title": "v0 - Build Apps with AI",
+        "url": "https://v0.dev",
+        "type": "website"
+      }
+    ]
+  },
+  "TifVhqFm1zXNssA8QR3SM": {
+    "title": "Code Completion Tools",
+    "description": "",
+    "links": []
+  }
+}

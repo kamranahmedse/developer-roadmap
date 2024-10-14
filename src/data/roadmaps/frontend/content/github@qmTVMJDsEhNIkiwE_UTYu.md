@@ -4,7 +4,7 @@ GitHub has become a central hub for open-source projects and is widely used by d
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](/git-github)
+- [@roadmap@Visit Dedicated Git & Github Roadmap](https://roadmap.sh/git-github)
 - [@official@GitHub: Quickstart](https://docs.github.com/en/get-started/quickstart/hello-world)
 - [@official@Learn GitHub by doing](https://skills.github.com/)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)

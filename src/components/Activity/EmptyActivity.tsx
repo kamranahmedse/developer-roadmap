@@ -4,7 +4,7 @@ export function EmptyActivity() {
   return (
     <div className="rounded-md">
       <div className="flex flex-col items-center p-7 text-center">
-        <RoadmapIcon className="mb-2 w-[60px] h-[60px] sm:h-[120px] sm:w-[120px] opacity-10" />
+        <RoadmapIcon className="mb-2  h-14 w-14 opacity-10" />
 
         <h2 className="text-lg sm:text-xl font-bold">No Progress</h2>
         <p className="my-1 sm:my-2 max-w-[400px] text-gray-500 text-sm sm:text-base">

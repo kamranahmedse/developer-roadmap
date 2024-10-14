@@ -4,6 +4,7 @@ npm (Node Package Manager) is the default package manager for Node.js, providing
 
 Visit the following resources to learn more:
 
+- [@official@NPM Website](https://www.npmjs.com/https://www.npmjs.com/)
 - [@article@Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 - [@opensource@How to NPM](https://github.com/workshopper/how-to-npm)
 - [@video@NPM tutorial for Beginners](https://www.youtube.com/watch?v=2V1UUhBJ62Y)

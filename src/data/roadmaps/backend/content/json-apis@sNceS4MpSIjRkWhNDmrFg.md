@@ -4,6 +4,6 @@ JSON or JavaScript Object Notation is an encoding scheme that is designed to eli
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://jsonapi.org/)
+- [@official@JSON API](https://jsonapi.org/)
 - [@article@What is JSON API?](https://medium.com/@niranjan.cs/what-is-json-api-3b824fba2788)
 - [@video@JSON API: Explained in 4 minutes](https://www.youtube.com/watch?v=N-4prIh7t38)

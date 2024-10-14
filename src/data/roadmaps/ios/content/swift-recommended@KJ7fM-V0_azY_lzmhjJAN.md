@@ -9,3 +9,5 @@ Visit the following resources to learn more:
 - [@official@Swift Documentation](https://www.swift.org/documentation/)
 - [@video@Swift in 100 Seconds](https://www.youtube.com/watch?v=nAchMctX4YA)
 - [@feed@Explore top posts about Swift](https://app.daily.dev/tags/swift?ref=roadmapsh)
+- [@course@Programiz - Swift Programming Tutorials](https://www.programiz.com/swift-programming)
+- [@course@HackingWithSwift - 100 Days of Swift](https://www.hackingwithswift.com/100)

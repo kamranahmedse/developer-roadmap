@@ -10,7 +10,7 @@
     "links": [
       {
         "title": "What is Software Architecture in Software Engineering?",
-        "url": "https://webcache.googleusercontent.com/search?q=cache:ya4xvYaEckQJ:https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/&cd=1&hl=es-419&ct=clnk&gl=ar",
+        "url": "https://www.computer.org/resources/software-architecture",
         "type": "article"
       },
       {
@@ -1182,17 +1182,12 @@
       },
       {
         "title": "React Website",
-        "url": "https://reactjs.org/",
+        "url": "https://react.dev/",
         "type": "article"
       },
       {
         "title": "Official Getting Started",
-        "url": "https://reactjs.org/tutorial/tutorial.html",
-        "type": "article"
-      },
-      {
-        "title": "Beta React Docs",
-        "url": "https://reactjs.org/",
+        "url": "https://react.dev/learn/tutorial-tic-tac-toe",
         "type": "article"
       },
       {
@@ -1397,8 +1392,14 @@
   },
   "hRug9yJKYacB9X_2cUalR": {
     "title": "PMI",
-    "description": "",
-    "links": []
+    "description": "The PMI certification (Project Management Institute) is an internationally recognized credential in project management. The most well-known is the PMP® (Project Management Professional), which validates the skills and knowledge of professionals to manage projects effectively by applying best practices and standards defined in the PMBOK® (Project Management Body of Knowledge) guide.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Project Managment Institute",
+        "url": "https://www.pmi.org/",
+        "type": "article"
+      }
+    ]
   },
   "Rq1Wi-cHjS54SYo-Btp-e": {
     "title": "ITIL",
@@ -1423,18 +1424,46 @@
   },
   "7rudOREGG-TTkCosU0hNw": {
     "title": "RUP",
-    "description": "",
-    "links": []
+    "description": "The RUP (**Rational Unified Process**) is not a widely recognized certification like PMP or Scrum, but rather a software development framework created by Rational Software (now IBM). It follows an iterative and incremental approach to project development, based on best practices for delivering high-quality software on time and within budget.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "IBM certified solution designer RUP",
+        "url": "https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003",
+        "type": "article"
+      }
+    ]
   },
   "qwpsGRFgzAYstM7bJA2ZJ": {
     "title": "LeSS",
-    "description": "",
-    "links": []
+    "description": "**LeSS** (Large-Scale-Scrum) is an agile framework designed to scale Scrum across multiple teams working on a single product. It adheres to Scrum's principles, emphasizing simplicity and continuous improvement. LeSS encourages coordination between teams by using a single backlog and a common Product Owner. Each team is responsible for parts of the product, but they collaborate in its joint development, with frequent feedback loops to adjust project direction. Its goal is to minimize bureaucracy and maximize value delivery in an agile and efficient way.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "LeSS Framework",
+        "url": "https://less.works/less/framework",
+        "type": "article"
+      },
+      {
+        "title": "Introductio to LeSS",
+        "url": "https://www.youtube.com/watch?v=1BZf_Oa7W94",
+        "type": "video"
+      }
+    ]
   },
   "Bg7ru1q1j6pNB43HGxnHT": {
     "title": "SaFE",
-    "description": "",
-    "links": []
+    "description": "**SAFe** is an agile framework designed to scale agile practices in large and complex organizations. Unlike LeSS, SAFe is more structured and provides a formal approach to coordinating multiple teams, programs, and portfolios. It incorporates elements of `Lean`, `DevOps`, and `agile principles`, and defines additional roles, ceremonies, and artifacts to align teams' goals with the business strategy. SAFe enables **large-scale planning**, **continuous delivery**, and **improvement of organizational efficiency**, offering a comprehensive framework for agile transformation at the corporate level.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SAFe 6.0",
+        "url": "https://scaledagileframework.com/SAFE",
+        "type": "article"
+      },
+      {
+        "title": "SAFe explained in five minutes",
+        "url": "https://www.youtube.com/watch?v=aW2m-BtCJyE&t=2s",
+        "type": "video"
+      }
+    ]
   },
   "O7H6dt3Z7EKohxfJzwbPM": {
     "title": "Kanban",

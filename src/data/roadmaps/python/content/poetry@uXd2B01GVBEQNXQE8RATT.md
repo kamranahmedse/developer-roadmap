@@ -6,4 +6,4 @@ Poetry as a package manager helps you find and install packages. If you need a s
 
 Visit the following resources to learn more:
 
-- [@article@Poetry Docs](https://python-poetry.org/docs/)
+- [@official@Poetry Docs](https://python-poetry.org/docs/)

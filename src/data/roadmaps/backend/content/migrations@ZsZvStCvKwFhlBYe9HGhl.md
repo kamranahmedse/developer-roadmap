@@ -4,5 +4,5 @@ Database migrations are a version-controlled way to manage and apply incremental
 
 Learn more from the following resources:
 
-- [@article@What are database migrations?](https://www.prisma.io/dataguide/types/relational/what-are-database-migrations)
+- [@article@What are Database Migrations?](https://www.prisma.io/dataguide/types/relational/what-are-database-migrations)
 - [@video@Database Migrations for Beginners](https://www.youtube.com/watch?v=dJDBP7pPA-o)

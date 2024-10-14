@@ -4,7 +4,7 @@ GraphQL is a query language and runtime for APIs, developed by Facebook. GraphQL
 
 Visit the following resources to learn more:
 
-- [@roadmap@GraphQL Roadmap](/graphql)
+- [@roadmap@visit Dedicated GraphQL Roadmap](https://roadmap.sh/graphql)
 - [@official@Introduction to GraphQL](https://graphql.org/learn/)
 - [@video@GraphQL Course for Beginners](https://www.youtube.com/watch?v=ed8SzALpx1Q)
 - [@article@Introduction to GraphQL](https://thenewstack.io/introduction-to-graphql/)

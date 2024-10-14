@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
 - [@article@How HTTPS Works](https://howhttps.works)
 - [@article@HTTP/3 Is Now a Standard: Why Use It and How to Get Started](https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/)
-- [@course@HTTP Crash Course](https://www.youtube.com/watch?v=qgZiUvV41TI)

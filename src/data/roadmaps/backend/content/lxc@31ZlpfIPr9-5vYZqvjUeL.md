@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@LXC Documentation](https://linuxcontainers.org/lxc/documentation/)
 - [@article@What is LXC?](https://linuxcontainers.org/lxc/introduction/)
-- [@video@Getting started with LXD Containerization](https://www.youtube.com/watch?v=aIwgPKkVj8s)
-- [@video@Getting started with LXC containers](https://youtu.be/CWmkSj_B-wo)
+- [@video@Getting Started with LXD Containerization](https://www.youtube.com/watch?v=aIwgPKkVj8s)
+- [@video@Getting Started with LXC containers](https://youtu.be/CWmkSj_B-wo)
