@@ -201,7 +201,7 @@ export function ProgressStack(props: ProgressStackProps) {
             emptyLinkHref={'/roadmaps'}
             emptyLinkText={'Explore Roadmaps'}
           >
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid flex-grow grid-cols-2 items-start gap-2">
               {userProgressesToShow.length > 0 && (
                 <>
                   {userProgressesToShow.map((progress) => {
@@ -239,6 +239,14 @@ export function ProgressStack(props: ProgressStackProps) {
                 />
               )}
             </div>
+
+            <a
+              href={'/home'}
+              className="flex w-full flex-row items-center justify-center gap-2 rounded-md bg-gray-200 py-2 text-sm text-gray-700 hover:bg-gray-300 hover:text-black transition-colors"
+            >
+              <Map size={16} />
+              View All Roadmaps
+            </a>
           </ProgressLane>
         </div>
 
