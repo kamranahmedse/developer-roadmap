@@ -4,6 +4,7 @@ JSON Web Tokens, or JWT, are a popular and secure method of transferring informa
 
 Learn more from the following resources:
 
+- [@roadmap@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
 - [@official@Introduction to JSON Web Tokens](https://jwt.io/introduction)
 - [@article@JSON Web Tokens](https://auth0.com/docs/secure/tokens/json-web-tokens)
 - [@video@Why is JWT popular?](https://www.youtube.com/watch?v=P2CPd9ynFLg)
