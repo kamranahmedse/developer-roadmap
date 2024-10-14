@@ -4,7 +4,6 @@ Whitelisting involves creating a list of trusted entities (such as IP addresses,
 
 Visit the following resources to learn more:
 
-- [@article@Basic Introduction to whitelisting](https://www.cblohm.com/blog/education-marketing-trends/what-is-email-whitelisting/)
 - [@article@Detailed Introduction to greylisting](https://en.wikipedia.org/wiki/Greylisting_(email))
 - [@video@Greylisting](https://www.youtube.com/watch?v=ljtU6I0sIiw)
 - [@video@How to Whitelist an Email Address?](https://www.youtube.com/watch?v=NqQIBtY7ySw)
