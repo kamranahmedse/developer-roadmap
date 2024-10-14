@@ -4,5 +4,5 @@ Messaging Queues play a fundamental role in API design, particularly in creating
 
 Learn more from the following resources:
 
-- [@article@What is a message queue?](https://aws.amazon.com/message-queue/)
-- [@video@REST API message queues explained](https://www.youtube.com/watch?v=2idPgA6IN_Q)
+- [@article@What is a Message Queue?](https://aws.amazon.com/message-queue/)
+- [@video@REST API Message Queues Explained](https://www.youtube.com/watch?v=2idPgA6IN_Q)

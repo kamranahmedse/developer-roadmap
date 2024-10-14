@@ -5,5 +5,5 @@ Role-Based Access Control (RBAC) is a method of managing authorization in API de
 Learn more from the following resources:
 
 - [@article@Role-Based Access Control](https://auth0.com/docs/manage-users/access-control/rbac)
-- [@article@What is role-based access control (RBAC)?](https://www.redhat.com/en/topics/security/what-is-role-based-access-control)
-- [@video@Role-based access control (RBAC) vs. Attribute-based access control (ABAC)](https://www.youtube.com/watch?v=rvZ35YW4t5k)
+- [@article@What is Role-based Access Control (RBAC)?](https://www.redhat.com/en/topics/security/what-is-role-based-access-control)
+- [@video@Role-based Access Control (RBAC) vs. Attribute-based Access Control (ABAC)](https://www.youtube.com/watch?v=rvZ35YW4t5k)

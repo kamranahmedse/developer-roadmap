@@ -5,4 +5,4 @@ API Design performance metrics play a critical role in ensuring APIs are efficie
 Learn more from the following resources:
 
 - [@article@API Performance Monitoring](https://www.catchpoint.com/api-monitoring-tools/api-performance-monitoring)
-- [@article@How does API monitoring improve API performance?](https://tyk.io/blog/api-product-metrics-what-you-need-to-know/)
+- [@article@How does API Monitoring Improves API Performance?](https://tyk.io/blog/api-product-metrics-what-you-need-to-know/)

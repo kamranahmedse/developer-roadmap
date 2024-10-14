@@ -4,5 +4,5 @@ URI (Uniform Resource Identifier) is a string of characters used to identify a n
 
 Learn more from the following resources:
 
-- [@article@Guidelines for URI design](https://css-tricks.com/guidelines-for-uri-design/)
+- [@article@Guidelines for URI Design](https://css-tricks.com/guidelines-for-uri-design/)
 - [@article@Designing URIs](https://www.oreilly.com/library/view/restful-web-services/9780596809140/ch04.html)

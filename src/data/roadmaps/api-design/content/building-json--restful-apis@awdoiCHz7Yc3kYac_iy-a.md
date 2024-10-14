@@ -4,6 +4,6 @@ Building JSON/RESTful APIs involves designing and implementing APIs that adhere 
 
 Learn more from the following resources:
 
-- [@article@A specification for building APIs in JSON](https://jsonapi.org/)
-- [@article@How to make a REST API](https://www.integrate.io/blog/how-to-make-a-rest-api/)
+- [@official@Specification for Building APIs in JSON](https://jsonapi.org/)
+- [@article@How to Make a RESTful API](https://www.integrate.io/blog/how-to-make-a-rest-api/)
 - [@video@What is a REST API?](https://www.youtube.com/watch?v=lsMQRaeKNDk&t=170s)

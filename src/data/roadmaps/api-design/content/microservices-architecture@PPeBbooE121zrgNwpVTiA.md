@@ -4,6 +4,6 @@ When it comes to API Design, Microservices Architecture plays a crucial role. It
 
 Learn more from the following resources:
 
-- [@video@Microservices explained in 5 minutes](https://www.youtube.com/watch?v=lL_j7ilk7rc)
+- [@video@Microservices Explained in 5 Minutes](https://www.youtube.com/watch?v=lL_j7ilk7rc)
 - [@article@What is Microservices Architecture?](https://cloud.google.com/learn/what-is-microservices-architecture)
 - [@article@Microservice Architecture Style](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices)
