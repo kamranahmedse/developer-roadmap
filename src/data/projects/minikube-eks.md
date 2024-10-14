@@ -29,12 +29,12 @@ In this project, you will deploy and scale a Kubernetes application on both a lo
 ## Requirements
 
 - Install and configure MiniKube on your local machine.
-- Create a Kubernetes cluster on AWS using EKS.
+- Create a Kubernetes cluster on AWS using EKS using **Terraform**
 - Develop a simple, scalable application (e.g., a web server) and package it into a container.
 - Deploy the application to MiniKube for local testing.
-- Create a Helm Chart for the application.
+- **Create a Helm Chart** for the application.
 - Deploy the same Helm Chart to your EKS cluster.
-- Configure CI/CD pipelines using GitHub Actions to automate deployments.
+- **Configure CI/CD pipelines** using GitHub Actions to automate deployments.
 
 ## Optional Enhancements
 
