@@ -6,5 +6,5 @@ Learn more from the following resources:
 
 - [@article@What is a Router](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-router/)
 - [@video@What is a router and how does it work?](https://www.youtube.com/watch?v=UIJzHLpG9bM)
-- [@video@Everything Routers do - Part 1 - Networking Fundamentals - Lesson 5](https://youtu.be/AzXys5kxpAM?si=nEsCH6jG2Lj6Ua8N)
-- [@video@Everything Routers do - Part 2 - How Routers forward Packets - Networking Fundamentals - Lesson 5](https://youtu.be/Ep-x_6kggKA?si=II5xBPoXjYEjLvWX)
+- [@video@Everything Routers do](https://youtu.be/AzXys5kxpAM?si=nEsCH6jG2Lj6Ua8N)
+- [@video@How Routers forward Packets?](https://youtu.be/Ep-x_6kggKA?si=II5xBPoXjYEjLvWX)
