@@ -1,39 +1,21 @@
 import { Check } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import type {
+  ChallengeFileType,
+  ChapterFileType,
+  LessonFileType,
+  QuizFileType,
+} from '../../lib/course';
 
-export type Lesson = {
-  slug: string;
+type ChapterProps = ChapterFileType & {
   index: number;
-  title: string;
-};
-
-export type Quiz = {
-  slug: string;
-  index: number;
-  title: string;
-};
-
-export type Challenge = {
-  slug: string;
-  index: number;
-  title: string;
-};
-
-export type Chapter = {
-  index: number;
-  slug: string;
-  title: string;
-  lessons: Lesson[];
-  exercises: (Quiz | Challenge)[];
-};
-
-type ChapterProps = Chapter & {
   isActive?: boolean;
   isCompleted?: boolean;
 };
 
 export function Chapter(props: ChapterProps) {
-  const { index, title, lessons, exercises, isActive = false } = props;
+  const { index, frontmatter, lessons, exercises, isActive = false } = props;
+  const { title } = frontmatter;
 
   return (
     <div>
@@ -53,7 +35,7 @@ export function Chapter(props: ChapterProps) {
         <div className="flex flex-col border-b border-zinc-800">
           <div>
             {lessons.map((lesson) => (
-              <Lesson key={lesson.slug} {...lesson} isCompleted={false} />
+              <Lesson key={lesson.id} {...lesson} isCompleted={false} />
             ))}
           </div>
 
@@ -67,7 +49,7 @@ export function Chapter(props: ChapterProps) {
 
           <div>
             {exercises.map((exercise) => (
-              <Lesson key={exercise.slug} {...exercise} isCompleted={false} />
+              <Lesson key={exercise.id} {...exercise} isCompleted={false} />
             ))}
           </div>
         </div>
@@ -76,13 +58,14 @@ export function Chapter(props: ChapterProps) {
   );
 }
 
-type LessonProps = (Lesson | Quiz | Challenge) & {
+type LessonProps = (LessonFileType | QuizFileType | ChallengeFileType) & {
   isActive?: boolean;
   isCompleted?: boolean;
 };
 
 export function Lesson(props: LessonProps) {
-  const { title, isCompleted, isActive } = props;
+  const { frontmatter, isCompleted, isActive } = props;
+  const { title } = frontmatter;
 
   return (
     <a

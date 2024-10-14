@@ -4,6 +4,7 @@ import type { ChallengeFileType } from '../../lib/course';
 import { getCourseById, getCourseExerciseById } from '../../lib/course';
 
 const course = await getCourseById('sql');
+
 const exercise = (await getCourseExerciseById(
   'sql',
   'introduction',
@@ -12,6 +13,9 @@ const exercise = (await getCourseExerciseById(
 ---
 
 <ChallengeView
+  title={exercise.frontmatter.title}
+  chapters={course.chapters}
+  completedPercentage={0}
   defaultValue={exercise.frontmatter.defaultValue}
   expectedResults={exercise.frontmatter.expectedResults}
   initSteps={exercise.frontmatter.initSteps}

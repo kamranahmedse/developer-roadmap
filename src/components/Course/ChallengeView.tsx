@@ -3,7 +3,7 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from '../Resizable';
-import { CourseSidebar } from './CourseSidebar';
+import { CourseSidebar, type CourseSidebarProps } from './CourseSidebar';
 import { CourseLayout } from './CourseLayout';
 import {
   SqlCodeEditor,
@@ -11,16 +11,27 @@ import {
 } from '../SqlCodeEditor/SqlCodeEditor';
 import type { ReactNode } from 'react';
 
-type ChallengeViewProps = SqlCodeEditorProps & {
-  children: ReactNode;
-};
+type ChallengeViewProps = SqlCodeEditorProps &
+  CourseSidebarProps & {
+    children: ReactNode;
+  };
 
 export function ChallengeView(props: ChallengeViewProps) {
-  const { children, ...sqlCodeEditorProps } = props;
+  const {
+    children,
+    title,
+    chapters,
+    completedPercentage,
+    ...sqlCodeEditorProps
+  } = props;
 
   return (
     <CourseLayout>
-      <CourseSidebar />
+      <CourseSidebar
+        title={title}
+        chapters={chapters}
+        completedPercentage={completedPercentage}
+      />
 
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel defaultSize={60} minSize={20}>
