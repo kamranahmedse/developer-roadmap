@@ -5,5 +5,5 @@ HTTP Headers play a crucial role in API Design as they provide essential informa
 Learn more from the following resources:
 
 - [@article@HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
-- [@article@What are HTTP headers?](https://blog.postman.com/what-are-http-headers/)
-- [@article@What are HTTP Headers & Understand different types of HTTP headers](https://requestly.com/blog/what-are-http-headers-understand-different-types-of-http-headers/)
+- [@article@What are HTTP Headers?](https://blog.postman.com/what-are-http-headers/)
+- [@article@What are HTTP Headers & Types of HTTP headers](https://requestly.com/blog/what-are-http-headers-understand-different-types-of-http-headers/)
