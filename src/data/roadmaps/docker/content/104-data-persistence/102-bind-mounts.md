@@ -5,3 +5,4 @@ Bind mounts have limited functionality compared to volumes. When you use a bind 
 Visit the following resources to learn more:
 
 - [@official@Docker Bind Mounts](https://docs.docker.com/storage/bind-mounts/)
+- [@article@How to Use Bind Mount in Docker?](https://www.geeksforgeeks.org/how-to-use-bind-mount-in-docker/)
