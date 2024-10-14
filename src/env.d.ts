@@ -7,6 +7,7 @@ interface ImportMetaEnv {
   PUBLIC_APP_URL: string;
   PUBLIC_AVATAR_BASE_URL: string;
   PUBLIC_EDITOR_APP_URL: string;
+  DEV: boolean;
 }
 
 interface ImportMeta {

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev --port 3000",
+    "dev": "astro dev --host 0.0.0.0 --port 3000",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

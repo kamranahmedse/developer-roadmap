@@ -1,0 +1,15 @@
+#git files 
+.git
+.gitignore
+.github
+
+test
+node_modules
+
+.vscode
+Dockerfile
+code_of_conduct.md
+contributing.md
+license
+readme.md
+*.log

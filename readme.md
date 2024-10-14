@@ -123,6 +123,13 @@ npm install
 npm run dev
 ```
 
+To run using Docker
+```
+docker build . -t roadmap.sh:v1
+
+docker run -p 3000:3000 --name=rmap -t roadmap.sh:v1
+```
+
 Note: use the `depth` parameter to reduce the clone size and speed up the clone.
 
 ```sh
