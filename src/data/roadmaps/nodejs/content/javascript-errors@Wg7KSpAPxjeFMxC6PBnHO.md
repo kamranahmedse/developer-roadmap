@@ -14,4 +14,5 @@ JavaScript has six types of errors that may occur during the execution of the sc
 Visit the following resources to learn more:
 
 - [@article@Error Types in JavaScript](https://blog.bitsrc.io/types-of-native-errors-in-javascript-you-must-know-b8238d40e492)
+- [@reference@JavaScript error reference - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
