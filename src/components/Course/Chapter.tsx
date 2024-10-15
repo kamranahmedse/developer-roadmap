@@ -11,10 +11,19 @@ type ChapterProps = ChapterFileType & {
   index: number;
   isActive?: boolean;
   isCompleted?: boolean;
+
+  onChapterClick?: () => void;
 };
 
 export function Chapter(props: ChapterProps) {
-  const { index, frontmatter, lessons, exercises, isActive = false } = props;
+  const {
+    index,
+    frontmatter,
+    lessons,
+    exercises,
+    isActive = false,
+    onChapterClick,
+  } = props;
   const { title } = frontmatter;
 
   return (
@@ -24,6 +33,7 @@ export function Chapter(props: ChapterProps) {
           'flex w-full items-center gap-2 border-b border-zinc-800 p-2 text-sm',
           isActive && 'bg-zinc-300 text-zinc-900',
         )}
+        onClick={onChapterClick}
       >
         <div className="flex size-5 items-center justify-center rounded-full bg-zinc-700 text-xs text-white">
           {index}
