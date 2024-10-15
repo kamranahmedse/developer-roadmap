@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Career Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Developer Career Roadmap</h1>
+    </header>
+
+    <main>
+        <div class="roadmap">
+            <div class="stage" id="frontend">
+                <h2>Front-End Development</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript Basics</li>
+                    <li>React.js / Vue.js</li>
+                </ul>
+                <button onclick="navigateTo('backend')">Next: Back-End</button>
+            </div>
+
+            <div class="stage" id="backend" style="display:none;">
+                <h2>Back-End Development</h2>
+                <ul>
+                    <li>Node.js / Python / Java</li>
+                    <li>Database Management (SQL/NoSQL)</li>
+                    <li>API Design</li>
+                </ul>
+                <button onclick="navigateTo('ml')">Next: Machine Learning</button>
+            </div>
+
+            <div class="stage" id="ml" style="display:none;">
+                <h2>Machine Learning</h2>
+                <ul>
+                    <li>Python Basics</li>
+                    <li>Data Science</li>
+                    <li>Model Building (TensorFlow/PyTorch)</li>
+                </ul>
+                <button onclick="navigateTo('frontend')">Start Over</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contribute on <a href="https://github.com/yourusername/yourrepo" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
