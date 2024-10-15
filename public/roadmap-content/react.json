@@ -1265,6 +1265,11 @@
         "title": "Explore top posts about Jest",
         "url": "https://app.daily.dev/tags/jest?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Testing JavaScript with Jest on Vultr",
+        "url": "https://developer.mozilla.org/en-US/blog/test-javascript-with-jest-on-vultr/",
+        "type": "article"
       }
     ]
   },
