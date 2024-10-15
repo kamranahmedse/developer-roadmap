@@ -4,5 +4,5 @@ Profiling and monitoring are critical aspects of API design and implementation. 
 
 Learn more from the following resources:
 
-- [@article@Monitor health and performance of your APIs](https://learning.postman.com/docs/monitoring-your-api/intro-monitors/)
+- [@article@Monitor Health and Performance of your APIs](https://learning.postman.com/docs/monitoring-your-api/intro-monitors/)
 - [@article@API profiling at Pintrest](https://medium.com/pinterest-engineering/api-profiling-at-pinterest-6fa9333b4961)

@@ -4,6 +4,7 @@ GraphQL is an open-source data query and manipulation language for APIs, and a r
 
 Learn more from the following resources:
 
+- [@roadmap@Visit Dedicated GraphQL Roadmap](https://roadmap.sh/graphql)
 - [@official@GraphQL Website](https://graphql.org/)
 - [@opensource@Public GraphQL APIs](https://github.com/graphql-kit/graphql-apis)
-- [@video@GraphQL explained in 100 seconds](https://www.youtube.com/watch?v=eIQh02xuVw4)
+- [@video@GraphQL Explained in 100 Seconds](https://www.youtube.com/watch?v=eIQh02xuVw4)

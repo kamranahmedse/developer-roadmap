@@ -4,6 +4,6 @@ Load testing is a crucial aspect of API design that ensures reliability, efficie
 
 Learn more from the following resources:
 
-- [@article@API load testing - a beginners guide](https://grafana.com/blog/2024/01/30/api-load-testing/)
-- [@article@Test your API’s performance by simulating real-world traffic](https://blog.postman.com/postman-api-performance-testing/)
-- [@video@Load testing your API's](https://www.youtube.com/watch?v=a5hWE4hMOoY)
+- [@article@API Load Testing - Beginners Guide](https://grafana.com/blog/2024/01/30/api-load-testing/)
+- [@article@Test Your API’s Performance by Simulating Real-world Traffic](https://blog.postman.com/postman-api-performance-testing/)
+- [@video@Load Testing API's](https://www.youtube.com/watch?v=a5hWE4hMOoY)

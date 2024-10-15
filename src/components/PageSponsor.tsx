@@ -59,7 +59,7 @@ export function PageSponsor(props: PageSponsorProps) {
       currentPath.startsWith('/guides') ||
       currentPath.startsWith('/videos') ||
       currentPath.startsWith('/account') ||
-      currentPath.startsWith('/team')
+      currentPath.startsWith('/team/')
     ) {
       return;
     }
@@ -127,6 +127,8 @@ export function PageSponsor(props: PageSponsorProps) {
 
   const { url, title, imageUrl, description, company, gaLabel } = sponsor;
 
+  const isRoadmapAd = title.toLowerCase() === 'advertise with us!';
+
   return (
     <a
       href={url}
@@ -165,10 +167,16 @@ export function PageSponsor(props: PageSponsorProps) {
           <span className="mb-0.5 block font-semibold">{title}</span>
           <span className="block text-gray-500">{description}</span>
         </span>
-        <span className="sponsor-footer hidden sm:block">Partner Content</span>
-        <span className="block pb-1 text-center text-[10px] uppercase text-gray-400 sm:hidden">
-          Partner Content
-        </span>
+        {!isRoadmapAd && (
+          <>
+            <span className="sponsor-footer hidden sm:block">
+              Partner Content
+            </span>
+            <span className="block pb-1 text-center text-[10px] uppercase text-gray-400 sm:hidden">
+              Partner Content
+            </span>
+          </>
+        )}
       </span>
     </a>
   );

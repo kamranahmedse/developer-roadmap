@@ -1,14 +1,6 @@
 # Container Registries
 
-A **Container Registry** is a centralized storage and distribution system for Docker container images. It allows developers to easily share and deploy applications in the form of these images. Container registries play a crucial role in the deployment of containerized applications, as they provide a fast, reliable, and secure way to distribute container images across various production environments.
-
-Below is a list of popular container registries available today:
-
-- **Docker Hub**: Docker Hub is the default registry for public Docker images and serves as a platform for sharing and distributing images among developers.
-
-- **Artifact Registry**: Artifact Registry is a managed container registry provided by Google Cloud Platform (GCP), offering private storage and distribution of container images.
-
-- **Amazon Elastic Container Registry (ECR)**: Amazon ECR is a fully-managed Docker container registry provided by Amazon Web Services, offering high scalability and performance for storing, managing, and deploying container images.
+A Container Registry is a centralized storage and distribution system for Docker container images. It allows developers to easily share and deploy applications in the form of these images. Container registries play a crucial role in the deployment of containerized applications, as they provide a fast, reliable, and secure way to distribute container images across various production environments.
 
 Visit the following resources to learn more:
 

@@ -1,22 +1,6 @@
 # DockerHub Alternatives
 
-These alternatives provide a different set of features and functionalities that may suit your container registry needs.
-
-## Artifact Registry
-
-Artifact Registry is a container registry service provided by Google Cloud Platform (GCP). It offers a fully managed, private Docker container registry that integrates with other GCP services like Cloud Build, Cloud Run, and Kubernetes Engine.
-
-### Amazon Elastic Container Registry (ECR)
-
-Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry by Amazon Web Services (AWS) that simplifies the process of storing, managing, and deploying Docker images.
-
-### Azure Container Registry (ACR)
-
-Azure Container Registry (ACR) is Microsoft Azure's container registry offering. It provides a wide range of functionalities, including geo-replication for high availability.
-
-### GitHub Container Registry (GHCR)
-
-GitHub Container Registry (GHCR) is the container registry service provided by GitHub. It enhances the support for Docker in GitHub Packages by providing a more streamlined experience for managing and deploying Docker images.
+Container images can be stored in many different registries, not just Dockerhub. Most major cloud platforms now provide container registries such as "Artifact Registry" on Google Cloud Platform, Elastic Container Registry on AWS and Azure Container Registry on Microsoft Azure. GitHub also provides it's own resistry which is useful when container builds are included in your GitHub Actions workflow.
 
 Visit the following resources to learn more:
 

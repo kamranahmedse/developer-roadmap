@@ -4,5 +4,7 @@ APIs, or Application Programming Interfaces, provide a manner in which software 
 
 Visit the following resources to learn more:
 
-- [@article@What is an API?](https://aws.amazon.com/what-is/api/)
+- [@article@Getting Started with APIs - Postman](https://www.postman.com/what-is-an-api/)
+- [@article@API - IBM](https://www.ibm.com/topics/api)
+- [@article@What is an API? - AWS](https://aws.amazon.com/what-is/api/)
 - [@video@What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
