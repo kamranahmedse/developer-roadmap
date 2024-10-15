@@ -14,15 +14,11 @@ question:
   description: |
     Frontend development is the development of visual and interactive elements of a website that users interact with directly. It's a combination of HTML, CSS, and JavaScript, where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behavior and interactivity.
 
-    <br/>
-
-    **What does a Frontend Developer do?**
+    ## What does a Frontend Developer do?
 
     While this is not a complete frontend developer job description, the following can be considered as a great introduction to the role of a frontend developer: you'll be responsible for creating the user interface of a website to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.
 
-    <br/>
-
-    **Which languages are used for Frontend Development?**
+    ## Which languages are used for Frontend Development?
 
     The best part about the frontend development role is that there aren’t that many options to pick from when it comes to technologies (unlike with backend development).
 
@@ -32,9 +28,7 @@ question:
     - **CSS**: The Cascading Style Sheet language allows you to adjust the way in which the HTML elements are rendered, improving the visuals of your webpage.
     - **JavaScript**: This is the de facto programming language for frontend development, and it allows you to add dynamism to your websites/web apps. There is an alternative known as TypeScript, which is a strongly typed superset of JavaScript that you can use instead. However, in that scenario, you’d have to set up a transpiler to translate your code into JavaScript before being able to run it in the browser.
 
-    <br/>
-
-    **What skills are required for a Frontend developer?**
+    ## What skills are required for a Frontend developer?
 
     The main skills required to become a frontend developer are HTML, CSS, and JavaScript. The rest are also important, but without those three basic ones, you can’t apply any of the others.
 
@@ -52,8 +46,6 @@ question:
     **10. Frameworks**: Having a go-to frontend framework (like React or Vue) and understanding others at a high level.  
     **11. Web performance**: Understanding web performance optimizations and core web vitals.  
     **12. TypeScript**: Understanding how TypeScript works and when to use it.
-
-    <br/>
 
     Covering these basic skills will prepare you for any type of [frontend developer interview questions](https://roadmap.sh/questions/frontend) you might encounter in the future and will enhance your current role.
 
