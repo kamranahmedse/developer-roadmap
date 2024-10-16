@@ -2,11 +2,66 @@
 
 First of all, thank you for considering to contribute. Please look at the details below:
 
+- [Hacktoberfest Contributions](#hacktoberfest-contributions)
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
 - [Adding Projects](#adding-projects)
 - [Adding Content](#adding-content)
 - [Guidelines](#guidelines)
+
+## Hacktoberfest Contributions
+
+We are taking part in [Hacktoberfest 11](https://hacktoberfest.com/)!
+
+Before you start to contribute to our project in order to satisfy [Hacktoberfest requirements](https://hacktoberfest.com/participation/#contributors), please bare in mind the following:
+
+* There is not a Hacktoberfest t-shirt this year [(see their FAQ)](https://hacktoberfest.com/participation/#faq).
+* There is not an infinite opportunity to contribute to the roadmap.sh project.
+
+### Hacktoberfest Specific Contribution rules
+
+As Hacktoberfest attracts a lot of contributors (which is awesome), it does require a more rigid and strictly enforced set of guidelines than the average contribution.
+
+These are as follows:
+
+1. No single file contributions, please contribute to a minimum of two.
+
+Whilst single file contributions, such as adding one link to a single topic, is perfectly fine outside of hacktoberfest, this can (and probably will) result it an easy 4 pull requests for everyone and we will just become a Hacktoberfest farming project.
+
+***Note: If you contribute the entire contents of a topic i.e. the topic has 0 copy and 0 links, this will count.***
+
+2. Typo fixes will not count (by themselves).
+
+Whilst fixing typos is a great thing to do, lets bundle them in with actual contributions if we see them!
+
+3. The same basic rules apply.
+
+- Content must be in English.
+- Maximum of 8 links per topic.
+- Follow the below style guide for content.
+
+Here is an example of a **fully complete** topic:
+
+```markdown
+# Redis
+
+Redis is an open-source, in-memory data structure store known for its speed and versatility. It supports various data types, including strings, lists, sets, hashes, and sorted sets, and provides functionalities such as caching, session management, real-time analytics, and message brokering. Redis operates as a key-value store, allowing for rapid read and write operations, and is often used to enhance performance and scalability in applications. It supports persistence options to save data to disk, replication for high availability, and clustering for horizontal scaling. Redis is widely used for scenarios requiring low-latency access to data and high-throughput performance.
+
+Learn more from the following resources:
+
+[@official@Link 1](https:/google.com)
+[@article@Link 2](https:/google.com)
+[@article@Link 3](https:/google.com)
+[@course@Link 4](https:/google.com)
+[@course@Link 5](https:/google.com)
+[@video@Link 6](https:/google.com)
+[@video@Link 7](https:/google.com)
+[@video@Link 8](https:/google.com)
+```
+
+Contributions to the project that meet these requirements will be given the label `hacktoberfest-accepted` and merged, contributions that do not meet the requirements will simply be closed.
+
+Any attempts at spam PRs will be given the `spam` tag. If you recieve 2 `spam` tags against you, you will be [disqualified from Hacktoberfest](https://hacktoberfest.com/participation/#spam).
 
 ## New Roadmaps
 
