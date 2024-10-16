@@ -6,18 +6,66 @@
   },
   "GN6SnI7RXIeW8JeD-qORW": {
     "title": "What is an AI Engineer?",
-    "description": "",
-    "links": []
+    "description": "AI engineers are professionals who specialize in designing, developing, and implementing artificial intelligence (AI) systems. Their work is essential in various industries, as they create applications that enable machines to perform tasks that typically require human intelligence, such as problem-solving, learning, and decision-making.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI For Everyone",
+        "url": "https://www.coursera.org/learn/ai-for-everyone",
+        "type": "course"
+      },
+      {
+        "title": "How to Become an AI Engineer: Duties, Skills, and Salary",
+        "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI engineers: What they do and how to become one",
+        "url": "https://www.techtarget.com/whatis/feature/How-to-become-an-artificial-intelligence-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI Engineers- What Do They Do?",
+        "url": "https://www.youtube.com/watch?v=y8qRq9PMCh8&t=1s",
+        "type": "video"
+      }
+    ]
   },
   "jSZ1LhPdhlkW-9QJhIvFs": {
     "title": "AI Engineer vs ML Engineer",
-    "description": "",
-    "links": []
+    "description": "An AI Engineer develops broad AI solutions, such as chatbots, NLP, and intelligent automation, focusing on integrating AI technologies into large applications. In contrast, an ML Engineer is more focused on building and deploying machine learning models, handling data processing, model training, and optimization in production environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI Engineer vs. ML Engineer: Duties, Skills, and Qualifications",
+        "url": "https://www.upwork.com/resources/ai-engineer-vs-ml-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI Developer vs ML Engineer: What’s the difference?",
+        "url": "https://www.youtube.com/watch?v=yU87V2-XisA&t=2s",
+        "type": "video"
+      }
+    ]
   },
   "wf2BSyUekr1S1q6l8kyq6": {
     "title": "LLMs",
-    "description": "",
-    "links": []
+    "description": "Large Language Models (LLMs) are advanced artificial intelligence programs designed to comprehend and generate human language text.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a large language model (LLM)?",
+        "url": "https://www.cloudflare.com/learning/ai/what-is-large-language-model/",
+        "type": "article"
+      },
+      {
+        "title": "Large language model",
+        "url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "type": "article"
+      },
+      {
+        "title": "How Large Language Models Work",
+        "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ&t=1s",
+        "type": "video"
+      }
+    ]
   },
   "KWjD4xEPhOOYS51dvRLd2": {
     "title": "Inference",
