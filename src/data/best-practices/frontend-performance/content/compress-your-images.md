@@ -16,4 +16,4 @@ Optimized images load faster in your browser and consume less data.
 - [Cloudinary - Image Analysis Tool](https://webspeedtest.cloudinary.com)
 - [ImageEngine - Image Webpage Loading Test](https://demo.imgeng.in)
 - [SVGOMG - Optimize SVG vector graphics files](https://jakearchibald.github.io/svgomg/)
-- [Minipic - convert images super fast](https://minipic.app/)
+- [Minipic - Convert Images Super Fast](https://minipic.app/)
