@@ -6,6 +6,7 @@ import { X } from 'lucide-react';
 import { setViewSponsorCookie } from '../lib/jwt';
 import { isMobile } from '../lib/is-mobile';
 import Cookies from 'js-cookie';
+import { getUrlUtmParams } from '../lib/browser.ts';
 
 export type PageSponsorType = {
   company: string;
@@ -49,6 +50,16 @@ export function PageSponsor(props: PageSponsorProps) {
 
   const [sponsorId, setSponsorId] = useState<string | null>(null);
   const [sponsor, setSponsor] = useState<PageSponsorType>();
+
+  useEffect(() => {
+    const foundUtmParams = getUrlUtmParams();
+
+    if (!foundUtmParams.utmSource) {
+      return;
+    }
+
+    localStorage.setItem('utm_params', JSON.stringify(foundUtmParams));
+  }, []);
 
   const loadSponsor = async () => {
     const currentPath = window.location.pathname;

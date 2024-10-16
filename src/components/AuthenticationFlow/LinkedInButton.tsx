@@ -4,6 +4,7 @@ import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
+import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -44,6 +45,8 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         let redirectUrl = '/';
         const linkedInRedirectAt = localStorage.getItem(LINKEDIN_REDIRECT_AT);
@@ -97,9 +100,12 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
-          const pagePath = ['/respond-invite', '/befriend', '/r', '/ai'].includes(
-            window.location.pathname,
-          )
+          const pagePath = [
+            '/respond-invite',
+            '/befriend',
+            '/r',
+            '/ai',
+          ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;
 
