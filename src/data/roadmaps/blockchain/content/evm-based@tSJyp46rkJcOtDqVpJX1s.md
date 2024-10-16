@@ -6,6 +6,6 @@ Many blockchains have forked the Ethereum blockchain and added functionality on 
 
 Visit the following resources to learn more:
 
-- [@article@What is Ethereum Virtual Machine?](https://moralis.io/evm-explained-what-is-ethereum-virtual-machine/)
+- [@article@What is Ethereum Virtual Machine?](https://astrodev.hashnode.dev/blockchain-ethereum-evm)
 - [@video@Understanding the Ethereum Virtual Machine (EVM): Concepts and Architecture](https://www.youtube.com/watch?v=kCswGz9naZg)
 - [@feed@Explore top posts about EVM](https://app.daily.dev/tags/evm?ref=roadmapsh)
