@@ -10,6 +10,7 @@ skills:
   - 'networking'
   - 'ec2'
   - 'devops'
+  - 'terraform' 
 seo:
   title: 'Setup a Bastion Host on AWS'
   description: 'Create a secure Bastion Host on AWS to manage private resources.'
@@ -22,13 +23,13 @@ roadmapIds:
   - 'devops'
 ---
 
-In this project, you will create a Bastion Host on AWS and use it to securely connect to a private EC2 instance.
+In this project, you will use Terraform to create a Bastion Host on AWS and use it to securely connect to a private EC2 instance.
 
 ## Requirements
 
-- Create a VPC with both public and private subnets.
-- Create a Bastion Host EC2 instance in the public subnet.
-- Create a private EC2 instance in the private subnet.
+- Using Terraform, create a VPC with both public and private subnets.
+- Using Terraform, create a Bastion Host EC2 instance in the public subnet.
+- Using Terraform, create a private EC2 instance in the private subnet.
 - The Bastion Host should:
   - Have a security group that allows SSH access **only from your IP address**.
   - Have a public IP address.
