@@ -4,3 +4,5 @@ Anomaly detection is the process of identifying data points, events, or behavior
 
 Learn more from the following resources:
 
+- [@article@https://www.ibm.com/topics/anomaly-detection]
+- [@video@Anomoly 101](https://www.youtube.com/watch?v=mhSFyXbCaPM)

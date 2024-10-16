@@ -4,3 +4,4 @@ Hugging Face models are a collection of pre-trained machine learning models avai
 
 Learn more from the following resources:
 
+- [@official@Hugging Face Models](https://huggingface.co/models)

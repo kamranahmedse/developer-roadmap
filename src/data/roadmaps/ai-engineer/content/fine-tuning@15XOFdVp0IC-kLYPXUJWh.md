@@ -4,3 +4,5 @@ Fine-tuning the OpenAI API involves adapting pre-trained models, such as GPT, to
 
 Learn more from the following resources:
 
+- [@official@Fine-tuning Documentation](https://platform.openai.com/docs/guides/fine-tuning)
+- [@video@Fine-tuning ChatGPT with OpenAI Tutorial](https://www.youtube.com/watch?v=VVKcSf6r3CM)

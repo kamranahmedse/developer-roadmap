@@ -4,3 +4,5 @@ Azure AI is a suite of AI services and tools provided by Microsoft through its A
 
 Learn more from the following resources:
 
+- [@official@Azure AI](https://azure.microsoft.com/en-gb/solutions/ai)
+- [@video@How to Choose the Right Models for Your Apps](https://www.youtube.com/watch?v=sx_uGylH8eg)

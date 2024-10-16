@@ -4,3 +4,5 @@ Adversarial testing involves intentionally exposing machine learning models to d
 
 Learn more from the following resources:
 
+- [@article@Adversarial Testing for Generative AI](https://developers.google.com/machine-learning/resources/adv-testing)
+- [@article@Adversarial Testing: Definition, Examples and Resources](https://www.leapwork.com/blog/adversarial-testing)

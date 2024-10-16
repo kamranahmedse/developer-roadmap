@@ -4,3 +4,5 @@ Cohere is an AI platform that specializes in natural language processing (NLP) b
 
 Learn more from the following resources:
 
+- [@official@](https://cohere.com/)
+- [@article@](https://medium.com/geekculture/what-does-cohere-do-cdadf6d70435)

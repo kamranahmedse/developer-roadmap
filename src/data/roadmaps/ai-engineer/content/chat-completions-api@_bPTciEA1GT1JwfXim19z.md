@@ -4,3 +4,5 @@ The OpenAI Chat Completions API is a powerful interface that allows developers t
 
 Learn more from the following resources:
 
+- [@official@Create Chat Completions](https://platform.openai.com/docs/api-reference/chat/create)
+- [@article@](https://medium.com/the-ai-archives/getting-started-with-openais-chat-completions-api-in-2024-462aae00bf0a)

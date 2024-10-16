@@ -4,3 +4,5 @@ Constraining outputs and inputs in AI models refers to implementing limits or ru
 
 Learn more from the following resources:
 
+- [@article@How to Encode Constraints to the Output of Neural Networks](https://towardsdatascience.com/how-to-encode-constraints-to-the-output-of-neural-networks-9bce302b9687)
+- [@article@Introducing Structured Outputs in the API - OpenAI](https://openai.com/index/introducing-structured-outputs-in-the-api/)

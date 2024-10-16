@@ -4,3 +4,6 @@ Chunking in AI and machine learning refers to the process of breaking down large
 
 Learn more from the following resources:
 
+- [@article@Chunk large documents for vector search solutions in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
+- [@article@Chunking Strategies for LLM Applications](https://www.pinecone.io/learn/chunking-strategies/)
+- [@article@Demystifying Content Chunking In Artificial Intelligence](https://shelf.io/blog/demystifying-content-chunking-in-ai-and-enterprise-knowledge-management/)

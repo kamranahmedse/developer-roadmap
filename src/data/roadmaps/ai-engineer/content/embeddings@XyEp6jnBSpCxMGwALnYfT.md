@@ -4,3 +4,6 @@ Embeddings are dense, continuous vector representations of data, such as words, 
 
 Learn more from the following resources:
 
+- [@article@What are embeddings in machine learning?](https://www.cloudflare.com/en-gb/learning/ai/what-are-embeddings/)
+- [@article@What is embedding?](https://www.ibm.com/topics/embedding)
+- [@video@What are Word Embeddings](https://www.youtube.com/watch?v=wgfSDrqYMJ4)

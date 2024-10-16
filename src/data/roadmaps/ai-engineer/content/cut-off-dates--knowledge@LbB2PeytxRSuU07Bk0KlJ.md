@@ -4,3 +4,4 @@ OpenAI models, such as GPT-3.5 and GPT-4, have a knowledge cutoff date, which re
 
 Learn more from the following resources:
 
+- [@article@Knowledge Cutoff Dates of all LLMs explained](https://otterly.ai/blog/knowledge-cutoff/)

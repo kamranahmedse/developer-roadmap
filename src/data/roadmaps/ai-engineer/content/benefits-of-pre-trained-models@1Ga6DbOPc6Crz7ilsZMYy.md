@@ -4,3 +4,5 @@ Pre-trained models offer several benefits in AI engineering by significantly red
 
 Learn more from the following resources:
 
+- [@article@Why Pre-Trained Models Matter For Machine Learning](https://www.ahead.com/resources/why-pre-trained-models-matter-for-machine-learning/)
+- [@article@Why You Should Use Pre-Trained Models Versus Building Your Own](https://cohere.com/blog/pre-trained-vs-in-house-nlp-models)

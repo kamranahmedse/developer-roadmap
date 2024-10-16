@@ -4,3 +4,5 @@ Generation refers to the process where a generative language model, such as GPT,
 
 Learn more from the following resources:
 
+- [@article@What is RAG (Retrieval-Augmented Generation)?](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
+- [@video@Retrieval Augmented Generation (RAG) Explained in 8 Minutes!](https://www.youtube.com/watch?v=HREbdmOSQ18)

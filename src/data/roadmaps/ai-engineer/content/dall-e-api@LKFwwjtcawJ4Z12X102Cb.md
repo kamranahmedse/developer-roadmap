@@ -4,3 +4,5 @@ The DALL-E API is a tool provided by OpenAI that allows developers to integrate 
 
 Learn more from the following resources:
 
+- [@official@OpenAI Image Generation](https://platform.openai.com/docs/guides/images)
+- [@video@DALL E API - Introduction (Generative AI Pictures from OpenAI)](https://www.youtube.com/watch?v=Zr6vAWwjHN0)

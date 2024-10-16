@@ -5,3 +5,4 @@ On Hugging Face, the models provided are split into "tasks" such as Image Recogn
 Learn more from the following resources:
 
 - [@official@Hugging Face Tasks](https://huggingface.co/tasks)
+- [@official@Hugging Face Tasks NPM Package](https://www.npmjs.com/package/@huggingface/tasks)

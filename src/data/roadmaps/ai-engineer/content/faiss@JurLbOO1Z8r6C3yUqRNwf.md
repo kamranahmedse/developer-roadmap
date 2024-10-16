@@ -4,3 +4,6 @@ FAISS (Facebook AI Similarity Search) is a library developed by Facebook AI for 
 
 Learn more from the following resources:
 
+- [@official@FAISS](https://ai.meta.com/tools/faiss/)
+- [@video@FAISS Vector Library with LangChain and OpenAI](https://www.youtube.com/watch?v=ZCSsIkyCZk4)
+- [@article@What Is Faiss (Facebook AI Similarity Search)?](https://www.datacamp.com/blog/faiss-facebook-ai-similarity-search)
