@@ -3,69 +3,31 @@ import { CourseSidebar } from './CourseSidebar';
 import { CourseLayout } from './CourseLayout';
 import { Circle, CircleCheck, CircleX } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import type {
+  ChapterFileType,
+  CourseFileType,
+  LessonFileType,
+} from '../../lib/course';
 
-const questions = [
-  {
-    id: 1,
-    title:
-      'Which of the following SQL clauses is used to filter results after the GROUP BY clause?',
-    options: [
-      { id: 1, text: 'WHERE' },
-      { id: 2, text: 'HAVING', isCorrectOption: true },
-      { id: 3, text: 'GROUP BY' },
-      { id: 4, text: 'ORDER BY' },
-    ],
-  },
-  {
-    id: 2,
-    title:
-      'Which SQL function is used to return the first non-null expression?',
-    options: [
-      { id: 1, text: 'COALESCE', isCorrectOption: true },
-      { id: 2, text: 'IFNULL' },
-      { id: 3, text: 'NULLIF' },
-      { id: 4, text: 'NVL' },
-    ],
-  },
-  {
-    id: 3,
-    title: 'What is the purpose of an SQL CTE (Common Table Expression)?',
-    options: [
-      {
-        id: 1,
-        text: 'To create temporary tables that last for the duration of a query',
-        isCorrectOption: true,
-      },
-      { id: 2, text: 'To define reusable views' },
-      { id: 3, text: 'To encapsulate subqueries' },
-      { id: 4, text: 'To optimize the execution of queries' },
-    ],
-  },
-  {
-    id: 4,
-    title:
-      'In an SQL window function, which clause defines the subset of rows to apply the function on?',
-    options: [
-      { id: 1, text: 'ORDER BY' },
-      { id: 2, text: 'PARTITION BY', isCorrectOption: true },
-      { id: 3, text: 'GROUP BY' },
-      { id: 4, text: 'DISTINCT' },
-    ],
-  },
-  {
-    id: 5,
-    title:
-      'Which SQL join returns all rows when there is a match in either of the tables?',
-    options: [
-      { id: 1, text: 'INNER JOIN' },
-      { id: 2, text: 'LEFT JOIN' },
-      { id: 3, text: 'RIGHT JOIN' },
-      { id: 4, text: 'FULL OUTER JOIN', isCorrectOption: true },
-    ],
-  },
-];
+type QuizViewProps = {
+  courseId: string;
+  chapterId: string;
+  lessonId: string;
 
-export function QuizView() {
+  title: string;
+  course: CourseFileType & {
+    chapters: ChapterFileType[];
+  };
+  lesson: LessonFileType;
+};
+
+export function QuizView(props: QuizViewProps) {
+  const { title, course, lesson, courseId, lessonId, chapterId } = props;
+  const { chapters } = course;
+
+  const { frontmatter } = lesson;
+  const { questions = [] } = frontmatter;
+
   const [selectedOptions, setSelectedOptions] = useState<
     Record<number, number | undefined>
   >({});
@@ -84,9 +46,14 @@ export function QuizView() {
   }).length;
 
   return (
-    <CourseLayout>
-      <CourseSidebar />
-
+    <CourseLayout
+      courseId={courseId}
+      chapterId={chapterId}
+      lessonId={lesson.id}
+      title={title}
+      chapters={chapters}
+      completedPercentage={0}
+    >
       <div className="relative h-full">
         <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
           <div className="mx-auto max-w-xl p-4 py-10">
@@ -101,7 +68,7 @@ export function QuizView() {
                     key={question.id}
                     id={question.id}
                     title={question.title}
-                    disabled={status === 'submitted'}
+                    disabled={isSubmitted}
                     options={question.options.map((option) => {
                       const selectedOptionId = selectedOptions?.[question.id];
 

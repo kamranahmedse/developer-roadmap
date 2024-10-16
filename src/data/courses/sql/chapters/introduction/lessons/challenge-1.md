@@ -1,7 +1,7 @@
 ---
 title: Challenge 1
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 200
+order: 300
 type: challenge
 defaultValue: SELECT * FROM orders;
 initSteps:
@@ -23,8 +23,6 @@ expectedResults:
     values:
       - [5]
 ---
-
-<!-- /sql/:chapterId/:(lessonId/challengeId/quizId) -->
 
 ## Instructions
 

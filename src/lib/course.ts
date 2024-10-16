@@ -18,6 +18,16 @@ export type LessonFrontmatter = {
     columns: string[];
     values: string[][];
   }[];
+
+  questions?: {
+    id: number;
+    title: string;
+    options: {
+      id: number;
+      text: string;
+      isCorrectOption?: boolean;
+    }[];
+  }[];
 };
 
 export type LessonFileType = MarkdownFileType<LessonFrontmatter> & {

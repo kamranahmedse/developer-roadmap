@@ -3,36 +3,46 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from '../Resizable';
-import { CourseSidebar, type CourseSidebarProps } from './CourseSidebar';
+import { CourseSidebar } from './CourseSidebar';
 import { CourseLayout } from './CourseLayout';
-import {
-  SqlCodeEditor,
-  type SqlCodeEditorProps,
-} from '../SqlCodeEditor/SqlCodeEditor';
+import { SqlCodeEditor } from '../SqlCodeEditor/SqlCodeEditor';
 import type { ReactNode } from 'react';
+import type {
+  ChapterFileType,
+  CourseFileType,
+  LessonFileType,
+} from '../../lib/course';
 
-type ChallengeViewProps = SqlCodeEditorProps &
-  CourseSidebarProps & {
-    children: ReactNode;
+type ChallengeViewProps = {
+  courseId: string;
+  chapterId: string;
+  lessonId: string;
+
+  title: string;
+  course: CourseFileType & {
+    chapters: ChapterFileType[];
   };
+  lesson: LessonFileType;
+  children: ReactNode;
+};
 
 export function ChallengeView(props: ChallengeViewProps) {
-  const {
-    children,
-    title,
-    chapters,
-    completedPercentage,
-    ...sqlCodeEditorProps
-  } = props;
+  const { children, title, course, lesson, courseId, lessonId, chapterId } =
+    props;
+  const { chapters } = course;
+
+  const { frontmatter } = lesson;
+  const { defaultValue, initSteps, expectedResults } = frontmatter;
 
   return (
-    <CourseLayout>
-      <CourseSidebar
-        title={title}
-        chapters={chapters}
-        completedPercentage={completedPercentage}
-      />
-
+    <CourseLayout
+      courseId={courseId}
+      chapterId={chapterId}
+      lessonId={lesson.id}
+      title={title}
+      chapters={chapters}
+      completedPercentage={0}
+    >
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel defaultSize={60} minSize={20}>
           <div className="relative h-full">
@@ -45,7 +55,11 @@ export function ChallengeView(props: ChallengeViewProps) {
         <ResizableHandle withHandle={true} />
 
         <ResizablePanel defaultSize={40} minSize={20}>
-          <SqlCodeEditor {...sqlCodeEditorProps} />
+          <SqlCodeEditor
+            defaultValue={defaultValue}
+            initSteps={initSteps}
+            expectedResults={expectedResults}
+          />
         </ResizablePanel>
       </ResizablePanelGroup>
     </CourseLayout>

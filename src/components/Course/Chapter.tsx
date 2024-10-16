@@ -1,17 +1,16 @@
 import { Check } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import type {
-  ChallengeFileType,
-  ChapterFileType,
-  LessonFileType,
-  QuizFileType,
-} from '../../lib/course';
+import type { ChapterFileType, LessonFileType } from '../../lib/course';
+import { useMemo } from 'react';
 
 type ChapterProps = ChapterFileType & {
   index: number;
   isActive?: boolean;
   isCompleted?: boolean;
 
+  courseId: string;
+  chapterId: string;
+  lessonId?: string;
   onChapterClick?: () => void;
 };
 
@@ -20,11 +19,34 @@ export function Chapter(props: ChapterProps) {
     index,
     frontmatter,
     lessons,
-    exercises,
     isActive = false,
     onChapterClick,
+
+    courseId,
+    chapterId,
+    lessonId,
   } = props;
   const { title } = frontmatter;
+
+  const exercises = useMemo(
+    () =>
+      lessons
+        ?.filter(
+          (lesson) =>
+            lesson.frontmatter.type === 'quiz' ||
+            lesson.frontmatter.type === 'challenge',
+        )
+        ?.sort((a, b) => a.frontmatter.order - b.frontmatter.order) || [],
+    [lessons],
+  );
+
+  const filteredLessons = useMemo(
+    () =>
+      lessons
+        ?.filter((lesson) => lesson.frontmatter.type === 'lesson')
+        ?.sort((a, b) => a.frontmatter.order - b.frontmatter.order) || [],
+    [lessons],
+  );
 
   return (
     <div>
@@ -44,9 +66,20 @@ export function Chapter(props: ChapterProps) {
       {isActive && (
         <div className="flex flex-col border-b border-zinc-800">
           <div>
-            {lessons.map((lesson) => (
-              <Lesson key={lesson.id} {...lesson} isCompleted={false} />
-            ))}
+            {filteredLessons?.map((lesson) => {
+              const isActive = lessonId === lesson.id;
+
+              return (
+                <Lesson
+                  key={lesson.id}
+                  {...lesson}
+                  courseId={courseId}
+                  chapterId={chapterId}
+                  isActive={isActive}
+                  isCompleted={false}
+                />
+              );
+            })}
           </div>
 
           <div className="relative">
@@ -58,9 +91,20 @@ export function Chapter(props: ChapterProps) {
           </div>
 
           <div>
-            {exercises.map((exercise) => (
-              <Lesson key={exercise.id} {...exercise} isCompleted={false} />
-            ))}
+            {exercises?.map((exercise) => {
+              const isActive = lessonId === exercise.id;
+
+              return (
+                <Lesson
+                  key={exercise.id}
+                  {...exercise}
+                  courseId={courseId}
+                  chapterId={chapterId}
+                  isActive={isActive}
+                  isCompleted={false}
+                />
+              );
+            })}
           </div>
         </div>
       )}
@@ -68,14 +112,26 @@ export function Chapter(props: ChapterProps) {
   );
 }
 
-type LessonProps = (LessonFileType | QuizFileType | ChallengeFileType) & {
+type LessonProps = LessonFileType & {
+  courseId: string;
+  chapterId: string;
+
   isActive?: boolean;
   isCompleted?: boolean;
 };
 
 export function Lesson(props: LessonProps) {
-  const { frontmatter, isCompleted, isActive } = props;
+  const {
+    frontmatter,
+    isCompleted,
+    isActive,
+    courseId,
+    chapterId,
+    id: lessonId,
+  } = props;
   const { title } = frontmatter;
+
+  const href = `/courses/${courseId}/${chapterId}/${lessonId}`;
 
   return (
     <a
@@ -83,6 +139,7 @@ export function Lesson(props: LessonProps) {
         'relative flex w-full items-center gap-2 p-2 text-sm text-zinc-600',
         isActive && 'bg-zinc-800 text-white',
       )}
+      href={href}
     >
       <div className="relative z-10 flex size-5 items-center justify-center rounded-full bg-zinc-700 text-xs text-white">
         {isCompleted && <Check className="h-4 w-4" />}

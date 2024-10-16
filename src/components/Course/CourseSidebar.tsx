@@ -3,6 +3,10 @@ import type { ChapterFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
 
 export type CourseSidebarProps = {
+  courseId: string;
+  chapterId: string;
+  lessonId: string;
+
   title: string;
   chapters: ChapterFileType[];
 
@@ -10,9 +14,16 @@ export type CourseSidebarProps = {
 };
 
 export function CourseSidebar(props: CourseSidebarProps) {
-  const { title, chapters, completedPercentage } = props;
+  const {
+    title,
+    chapters,
+    completedPercentage,
+    chapterId,
+    lessonId,
+    courseId,
+  } = props;
 
-  const [activeChapterId, setActiveChapterId] = useState('');
+  const [activeChapterId, setActiveChapterId] = useState(chapterId);
 
   return (
     <aside className="border-r border-zinc-800">
@@ -27,7 +38,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
       <div className="relative h-full">
         <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
-          {chapters.map((chapter, index) => {
+          {chapters?.map((chapter, index) => {
             const isActive = activeChapterId === chapter.id;
 
             return (
@@ -43,6 +54,9 @@ export function CourseSidebar(props: CourseSidebarProps) {
                 }}
                 index={index + 1}
                 {...chapter}
+                courseId={courseId}
+                chapterId={chapterId}
+                lessonId={lessonId}
               />
             );
           })}

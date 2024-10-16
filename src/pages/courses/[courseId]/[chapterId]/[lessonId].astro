@@ -1,4 +1,8 @@
 ---
+import { ChallengeView } from '../../../../components/Course/ChallengeView';
+import { LessonView } from '../../../../components/Course/LessonView';
+import { QuizView } from '../../../../components/Course/QuizView';
+import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
 import {
   getAllCourses,
   getChaptersByCourseId,
@@ -14,7 +18,7 @@ interface Params extends Record<string, string | undefined> {
 }
 
 interface Props {
-  course: CourseFileType;
+  course: CourseFileType & { chapters: ChapterFileType[] };
   chapter: ChapterFileType;
   lesson: LessonFileType;
 }
@@ -65,6 +69,50 @@ const { courseId, chapterId } = Astro.params;
 const { course, chapter, lesson } = Astro.props;
 ---
 
-<pre>
-  {JSON.stringify(lesson, null, 2)}
-</pre>
+<SkeletonLayout title={course.frontmatter.title}>
+  {
+    lesson.frontmatter.type === 'challenge' && (
+      <ChallengeView
+        courseId={courseId}
+        chapterId={chapterId}
+        lessonId={lesson.id}
+        title={course.frontmatter.title}
+        course={course}
+        lesson={lesson}
+        client:load
+      >
+        <lesson.Content />
+      </ChallengeView>
+    )
+  }
+
+  {
+    lesson.frontmatter.type === 'lesson' && (
+      <LessonView
+        courseId={courseId}
+        chapterId={chapterId}
+        lessonId={lesson.id}
+        title={course.frontmatter.title}
+        course={course}
+        lesson={lesson}
+        client:load
+      >
+        <lesson.Content />
+      </LessonView>
+    )
+  }
+
+  {
+    lesson.frontmatter.type === 'quiz' && (
+      <QuizView
+        courseId={courseId}
+        chapterId={chapterId}
+        lessonId={lesson.id}
+        title={course.frontmatter.title}
+        course={course}
+        lesson={lesson}
+        client:load
+      ></QuizView>
+    )
+  }
+</SkeletonLayout>
