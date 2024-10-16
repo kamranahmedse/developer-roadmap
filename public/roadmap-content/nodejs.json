@@ -463,6 +463,11 @@
         "title": "Node.js Errors - Official Docs",
         "url": "https://nodejs.org/api/errors.html#errors_class_systemerror",
         "type": "article"
+      },
+      {
+        "title": "@Article@16 Common Errors in Node.js and How to Fix Them",
+        "url": "https://betterstack.com/community/guides/scaling-nodejs/nodejs-errors/",
+        "type": "article"
       }
     ]
   },
