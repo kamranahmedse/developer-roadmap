@@ -4,3 +4,5 @@ Prompt engineering is the process of crafting effective inputs (prompts) to guid
 
 Learn more from the following resources:
 
+- [@roadmap@Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [@video@What is Prompt Engineering?](https://www.youtube.com/watch?v=nf1e-55KKbg)

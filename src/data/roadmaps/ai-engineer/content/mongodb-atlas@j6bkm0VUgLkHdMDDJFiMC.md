@@ -4,4 +4,6 @@ MongoDB Atlas is a fully managed cloud database service that offers automated de
 
 Learn more from the following resources:
 
+- [@roadmap@MongoDB Roadmap](https://roadmap.sh/mongodb)
 - [@official@MongoDB Atlas Website](https://www.mongodb.com/products/platform/atlas-database)
+- [@video@What is MongoDB Atlas?](https://www.youtube.com/watch?v=1EaOihoxyoE)

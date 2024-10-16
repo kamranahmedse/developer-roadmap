@@ -4,3 +4,5 @@ Open-source models are freely available for customization and collaboration, pro
 
 Learn more from the following resources:
 
+- [@article@OpenAI vs. open-source LLM](https://ubiops.com/openai-vs-open-source-llm/)
+- [@video@AI360 | Open-Source vs Closed-Source LLMs](https://www.youtube.com/watch?v=710PDpuLwOc)

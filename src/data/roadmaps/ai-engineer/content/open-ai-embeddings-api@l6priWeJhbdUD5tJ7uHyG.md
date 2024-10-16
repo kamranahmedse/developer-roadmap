@@ -4,3 +4,4 @@ The OpenAI Embeddings API allows developers to generate dense vector representat
 Learn more from the following resources:
 
 - [@offical@OpenAI Embeddings API](https://platform.openai.com/docs/api-reference/embeddings/create)
+- [@video@Master OpenAI EMBEDDING API](https://www.youtube.com/watch?v=9oCS-VQupoc)

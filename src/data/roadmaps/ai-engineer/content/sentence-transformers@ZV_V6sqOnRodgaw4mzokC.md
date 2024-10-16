@@ -1,1 +1,3 @@
 # Sentence Transformers
+
+Sentence Transformers are a type of model designed to generate high-quality embeddings for sentences, allowing them to capture the semantic meaning of text. Unlike traditional word embeddings, which represent individual words, Sentence Transformers understand the context of entire sentences, making them ideal for tasks that require semantic similarity, such as sentence clustering, semantic search, and paraphrase detection. Built on top of transformer models like BERT and RoBERTa, they convert sentences into dense vectors, where similar sentences are placed closer together in vector space.

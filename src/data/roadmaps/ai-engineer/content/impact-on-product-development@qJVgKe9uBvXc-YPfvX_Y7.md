@@ -4,3 +4,5 @@ AI engineering transforms product development by automating tasks, enhancing dat
 
 Learn more from the following resources:
 
+- [@article@AI in Product Development: Netflix, BMW, and PepsiCo](https://www.virtasant.com/ai-today/ai-in-product-development-netflix-bmw#:~:text=AI%20can%20help%20make%20product,and%20gain%20a%20competitive%20edge.)
+- [@article@AI Product Development: Why Are Founders So Fascinated By The Potential?](https://www.techmagic.co/blog/ai-product-development/)

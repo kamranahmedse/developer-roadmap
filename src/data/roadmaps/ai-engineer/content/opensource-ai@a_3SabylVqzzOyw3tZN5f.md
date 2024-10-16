@@ -5,3 +5,4 @@ Open-source AI refers to AI models, tools, and frameworks that are freely availa
 Learn more from the following resources:
 
 - [@article@Open Source AI Is the Path Forward](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
+- [@video@Should You Use Open Source Large Language Models?](https://www.youtube.com/watch?v=y9k-U9AuDeM)

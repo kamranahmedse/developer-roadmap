@@ -5,3 +5,4 @@ OpenAI provides a variety of models designed for diverse tasks. GPT models like 
 Learn more from the following resources:
 
 - [@official@OpenAI Models Overview](https://platform.openai.com/docs/models)
+- [@video@OpenAI’s new “deep-thinking” o1 model crushes coding benchmarks](https://www.youtube.com/watch?v=6xlPJiNpCVw)

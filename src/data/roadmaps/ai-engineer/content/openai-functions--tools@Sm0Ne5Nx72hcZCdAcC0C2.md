@@ -4,3 +4,5 @@ OpenAI Functions, also known as tools, enable developers to extend the capabilit
 
 Learn more from the following resources:
 
+- [@official@Function Calling](https://platform.openai.com/docs/guides/function-calling)
+- [@video@How does OpenAI Function Calling work?](https://www.youtube.com/watch?v=Qor2VZoBib0)

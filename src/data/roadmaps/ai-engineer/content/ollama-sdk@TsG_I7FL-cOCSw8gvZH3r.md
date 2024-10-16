@@ -5,3 +5,4 @@ The Ollama SDK is a toolkit that enables developers to integrate and run large l
 Learn more from the following resources:
 
 - [@official@Ollama Python & JS Libraries](https://ollama.com/blog/python-javascript-libraries)
+- [@video@Unlocking The Power Of AI: Creating Python Apps With Ollama!](https://www.youtube.com/watch?v=_4K20tOsXK8)

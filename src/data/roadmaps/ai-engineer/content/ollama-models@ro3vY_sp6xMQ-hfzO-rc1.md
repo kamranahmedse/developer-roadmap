@@ -4,3 +4,5 @@ Ollama provides a collection of large language models (LLMs) designed to run loc
 
 Learn more from the following resources:
 
+- [@official@Ollama Model Library](https://ollama.com/library)
+- [@video@What are the different types of models? Ollama Course](https://www.youtube.com/watch?v=f4tXwCNP1Ac)

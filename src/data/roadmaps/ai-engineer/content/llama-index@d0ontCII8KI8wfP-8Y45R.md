@@ -4,3 +4,5 @@ LlamaIndex, formerly known as GPT Index, is a tool designed to facilitate the in
 
 Learn more from the following resources:
 
+- [@official@llamaindex Website](https://docs.llamaindex.ai/en/stable/)
+- [@video@Introduction to LlamaIndex with Python (2024)](https://www.youtube.com/watch?v=cCyYGYyCka4)

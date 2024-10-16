@@ -5,3 +5,4 @@ OpenAI's embedding models convert text into dense vector representations that ca
 Learn more from the following resources:
 
 - [@official@OpenAI Embedding Models](https://platform.openai.com/docs/guides/embeddings/embedding-models)
+- [@video@OpenAI Embeddings Explained in 5 Minutes](https://www.youtube.com/watch?v=8kJStTRuMcs)

@@ -5,3 +5,4 @@ The Hugging Face Serverless Inference API offers a fast and free way to explore 
 Learn more from the following resources:
 
 - [@official@API Inference](https://huggingface.co/docs/api-inference/en/index)
+- [@video@How to Use Hugging Face Inference API](https://www.youtube.com/watch?app=desktop&v=85FVwWPg63Q)

@@ -4,3 +4,5 @@ Inference in AI Engineering refers to the process of using a trained machine lea
 
 Learn more from the following resources:
 
+- [@article@What is Machine Learning Inference?](https://hazelcast.com/glossary/machine-learning-inference/)
+- [@article@What is Machine Learning Inference? An Introduction to Inference Approaches](https://www.datacamp.com/blog/what-is-machine-learning-inference)

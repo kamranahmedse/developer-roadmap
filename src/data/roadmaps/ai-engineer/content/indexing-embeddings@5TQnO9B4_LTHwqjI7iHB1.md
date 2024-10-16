@@ -4,3 +4,5 @@ Indexing embeddings for vector search involves organizing dense vector represent
 
 Learn more from the following resources:
 
+- [@article@Indexing & Embeddings](https://docs.llamaindex.ai/en/stable/understanding/indexing/indexing/)
+- [@video@Vector Databases simply explained! (Embeddings & Indexes)](https://www.youtube.com/watch?v=dN0lsF2cvm4)

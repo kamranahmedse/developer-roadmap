@@ -5,3 +5,4 @@ The OpenAI Assistant API enables developers to create advanced conversational sy
 Learn more from the following resources:
 
 - [@official@Assistants API](https://platform.openai.com/docs/assistants/overview)
+- [@course@OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms)

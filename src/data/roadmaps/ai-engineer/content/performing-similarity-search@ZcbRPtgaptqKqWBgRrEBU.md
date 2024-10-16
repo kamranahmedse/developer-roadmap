@@ -4,3 +4,5 @@ Performing a similarity search involves comparing data points (such as text, ima
 
 Learn more from the following resources:
 
+- [@article@What is Similarity Search?](https://www.pinecone.io/learn/what-is-similarity-search/)
+- [@article@What is Similarity Search & How Does it work?](https://www.truefoundry.com/blog/similarity-search)

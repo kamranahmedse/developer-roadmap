@@ -5,3 +5,4 @@ The OpenAI Playground is an interactive web interface that allows users to exper
 Learn more from the following resources:
 
 - [@official@OpenAI Playground](https://platform.openai.com/playground/chat)
+- [@video@How to Use OpenAi Playground Like a Pro](https://www.youtube.com/watch?v=PLxpvtODiqs)

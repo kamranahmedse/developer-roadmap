@@ -4,3 +4,5 @@ Pre-trained models, while powerful, come with several limitations and considerat
 
 Learn more from the following resources:
 
+- [@article@Pretrained Topic Models: Advantages and Limitation](https://www.kaggle.com/code/amalsalilan/pretrained-topic-models-advantages-and-limitation)
+- [@video@Should You Use Open Source Large Language Models?](https://www.youtube.com/watch?v=y9k-U9AuDeM)
