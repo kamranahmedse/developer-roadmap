@@ -1,0 +1,70 @@
+---
+import {
+  getAllCourses,
+  getChaptersByCourseId,
+  type CourseFileType,
+  type ChapterFileType,
+  type LessonFileType,
+} from '../../../../lib/course';
+
+interface Params extends Record<string, string | undefined> {
+  courseId: string;
+  chapterId: string;
+  lessonId: string;
+}
+
+interface Props {
+  course: CourseFileType;
+  chapter: ChapterFileType;
+  lesson: LessonFileType;
+}
+
+export async function getStaticPaths() {
+  const courses = await getAllCourses();
+  const coursesWithChapters = await Promise.all(
+    courses.map(async (course) => {
+      const chapters = await getChaptersByCourseId(course.id);
+      return {
+        ...course,
+        chapters,
+      };
+    }),
+  );
+
+  const paths: {
+    params: Params;
+    props: Props;
+  }[] = [];
+
+  for (const course of coursesWithChapters) {
+    const courseId = course.id;
+    const courseChapters = course.chapters;
+
+    for (const chapter of courseChapters) {
+      for (const lesson of chapter.lessons) {
+        paths.push({
+          params: {
+            courseId,
+            chapterId: chapter.id,
+            lessonId: lesson.id,
+          },
+          props: {
+            course,
+            chapter,
+            lesson,
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { courseId, chapterId } = Astro.params;
+const { course, chapter, lesson } = Astro.props;
+---
+
+<pre>
+  {JSON.stringify(lesson, null, 2)}
+</pre>

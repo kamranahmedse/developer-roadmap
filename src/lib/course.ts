@@ -10,26 +10,7 @@ export type LessonFrontmatter = {
   title: string;
   description: string;
   order: number;
-};
-
-export type LessonFileType = MarkdownFileType<LessonFrontmatter> & {
-  id: string;
-};
-
-export type QuizFrontmatter = {
-  id: string;
-  order: number;
-  title: string;
-};
-
-export type QuizFileType = MarkdownFileType<QuizFrontmatter> & {
-  id: string;
-};
-
-export type ChallengeFrontmatter = {
-  title: string;
-  desctiption: string;
-  order: number;
+  type: 'lesson' | 'challenge' | 'quiz';
 
   defaultValue?: string;
   initSteps?: string[];
@@ -39,7 +20,7 @@ export type ChallengeFrontmatter = {
   }[];
 };
 
-export type ChallengeFileType = MarkdownFileType<ChallengeFrontmatter> & {
+export type LessonFileType = MarkdownFileType<LessonFrontmatter> & {
   id: string;
 };
 
@@ -52,12 +33,10 @@ export type ChapterFrontmatter = {
 export type ChapterFileType = MarkdownFileType<ChapterFrontmatter> & {
   id: string;
   lessons: LessonFileType[];
-  exercises: (QuizFileType | ChallengeFileType)[];
 };
 
 export type CourseFileType = MarkdownFileType<CourseFrontmatter> & {
   id: string;
-  chapters: ChapterFileType[];
 };
 
 function coursePathToId(filePath: string): string {
@@ -70,7 +49,7 @@ function coursePathToId(filePath: string): string {
  *
  * @returns string[] Array of course IDs
  */
-export async function getCourseIds() {
+export async function getAllCourseIds() {
   const courseFiles = import.meta.glob<CourseFileType>(
     '/src/data/courses/*/*.md',
     {
@@ -79,6 +58,18 @@ export async function getCourseIds() {
   );
 
   return Object.keys(courseFiles).map(coursePathToId);
+}
+
+export async function getAllCourses() {
+  const allCourseIds = await getAllCourseIds();
+
+  const courses = await Promise.all(
+    allCourseIds.map(async (courseId) => {
+      return getCourseById(courseId);
+    }),
+  );
+
+  return courses.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 }
 
 export async function getCourseById(id: string): Promise<CourseFileType> {
@@ -95,12 +86,9 @@ export async function getCourseById(id: string): Promise<CourseFileType> {
     throw new Error(`Course with ID ${id} not found`);
   }
 
-  const chapters = await getChaptersByCourseId(id);
-
   return {
     ...courseFile,
     id: coursePathToId(courseFile.file),
-    chapters,
   };
 }
 
@@ -127,13 +115,11 @@ export async function getChaptersByCourseId(courseId: string) {
   for (const chapterFile of chapterFiles) {
     const chapterId = chapterPathToId(chapterFile.file);
     const lessons = await getLessonsByCourseId(courseId, chapterId);
-    const exercises = await getExercisesByCourseId(courseId, chapterId);
 
     enrichedChapters.push({
       ...chapterFile,
       id: chapterId,
       lessons,
-      exercises,
     });
   }
 
@@ -172,71 +158,4 @@ export async function getLessonsByCourseId(
       id: lessonPathToId(lessonFile.file),
     }))
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
-}
-
-export function exercisePathToId(filePath: string): string {
-  const fileName = filePath.split('/').pop() || '';
-  return fileName.replace('.md', '');
-}
-
-export async function getExercisesByCourseId(
-  courseId: string,
-  chapterId: string,
-): Promise<(QuizFileType | ChallengeFileType)[]> {
-  const exerciseFilesMap = import.meta.glob<QuizFileType | ChallengeFileType>(
-    `/src/data/courses/*/chapters/*/exercises/*.md`,
-    {
-      eager: true,
-    },
-  );
-
-  return Object.values(exerciseFilesMap)
-    .filter((exerciseFile) => {
-      const [, currentCourseId, currentChapterId] =
-        exerciseFile.file.match(
-          /\/courses\/([^/]+)\/chapters\/([^/]+)\/exercises/,
-        ) || [];
-
-      return currentCourseId === courseId && currentChapterId === chapterId;
-    })
-    .map((exerciseFile) => ({
-      ...exerciseFile,
-      id: exercisePathToId(exerciseFile.file),
-    }))
-    .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
-}
-
-export async function getCourseExerciseById(
-  courseId: string,
-  chapterId: string,
-  exerciseId: string,
-) {
-  const exerciseFilesMap = import.meta.glob<QuizFileType | ChallengeFileType>(
-    `/src/data/courses/*/chapters/*/exercises/*.md`,
-    {
-      eager: true,
-    },
-  );
-
-  const exerciseFile = Object.values(exerciseFilesMap).find((exerciseFile) => {
-    const [, currentCourseId, currentChapterId, currentExerciseId] =
-      exerciseFile.file.match(
-        /\/courses\/([^/]+)\/chapters\/([^/]+)\/exercises\/([^/]+)\.md/,
-      ) || [];
-
-    return (
-      currentCourseId === courseId &&
-      currentChapterId === chapterId &&
-      currentExerciseId === exerciseId
-    );
-  });
-
-  if (!exerciseFile) {
-    throw new Error(`Exercise with ID ${exerciseId} not found`);
-  }
-
-  return {
-    ...exerciseFile,
-    id: exercisePathToId(exerciseFile.file),
-  };
 }

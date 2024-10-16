@@ -1,0 +1,31 @@
+---
+import {
+  getAllCourses,
+  getCourseById,
+  type CourseFileType,
+} from '../../../lib/course';
+
+export async function getStaticPaths() {
+  const courses = await getAllCourses();
+
+  return courses.map((course) => ({
+    params: { courseId: course.id },
+    props: { course },
+  }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  courseId: string;
+}
+
+interface Props {
+  course: CourseFileType;
+}
+
+const { courseId } = Astro.params;
+const { course } = Astro.props;
+---
+
+<pre>
+  {JSON.stringify(course, null, 2)}
+</pre>

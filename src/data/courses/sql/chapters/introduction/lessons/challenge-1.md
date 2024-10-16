@@ -1,7 +1,8 @@
 ---
 title: Challenge 1
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 100
+order: 200
+type: challenge
 defaultValue: SELECT * FROM orders;
 initSteps:
   - CREATE TABLE orders (
