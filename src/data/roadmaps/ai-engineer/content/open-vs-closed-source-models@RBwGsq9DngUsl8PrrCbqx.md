@@ -4,5 +4,5 @@ Open-source AI refers to models and software with publicly accessible source cod
 
 Learn more from the following resources:
 
-[@article@Open AI vs Closed AI](https://formtek.com/blog/open-ai-vs-closed-ai-whats-the-difference-and-why-does-it-matter/)
-[@article@Open vs Closed Source Model](https://www.techtarget.com/searchEnterpriseAI/feature/Attributes-of-open-vs-closed-AI-explained)
+- [@article@Open AI vs Closed AI](https://formtek.com/blog/open-ai-vs-closed-ai-whats-the-difference-and-why-does-it-matter/)
+- [@article@Open vs Closed Source Model](https://www.techtarget.com/searchEnterpriseAI/feature/Attributes-of-open-vs-closed-AI-explained)
