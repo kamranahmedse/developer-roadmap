@@ -31,3 +31,8 @@ The tool should:
 - Allow the user to add, delete and view passwords.
 - Suggest strong passwords.
 - Use GPG to encrypt the password storage file.
+
+## Stretch Goals
+
+- Make the CLI interactive with navigation options rather than CLI arguments.
+- Allow the user to share passwords with other (local) users.
