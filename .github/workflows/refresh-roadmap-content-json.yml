@@ -8,6 +8,7 @@ on:
 jobs:
   refresh-content:
     runs-on: ubuntu-latest
+    name: Refresh Content
     steps:
       - uses: actions/checkout@v4
 

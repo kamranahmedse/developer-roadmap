@@ -6,9 +6,10 @@ on:
 jobs:
   close-pr:
     runs-on: ubuntu-latest
+    name: Close Pull Requests
     steps:
       - name: Close PR if it has label "feedback left" and no changes in 7 days
-        uses: actions/github-script@v3
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

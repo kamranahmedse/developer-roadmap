@@ -1,13 +1,15 @@
 name: Sends Daily AWS Costs to Slack
+
 on:
-  # Allow manual Run
   workflow_dispatch:
   # Run at 7:00 UTC every day
   schedule:
     - cron: "0 7 * * *"
+
 jobs:
   aws_costs:
     runs-on: ubuntu-latest
+    name: Send AWS Costs to Slack
     steps:
       - name: Get Costs
         env:

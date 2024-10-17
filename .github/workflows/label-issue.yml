@@ -7,6 +7,7 @@ on:
 jobs:
   label-topic-change-issue:
     runs-on: ubuntu-latest
+    name: Label Topic Change Issue
     steps:
       - name: Add Labels To Issue
         uses: actions/github-script@v7
