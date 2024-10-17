@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@article@TransitionGroup Component](https://vuejs.org/guide/built-ins/transition-group.html)
+- [@official@TransitionGroup Component](https://vuejs.org/guide/built-ins/transition-group.html)
