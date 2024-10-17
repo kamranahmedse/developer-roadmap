@@ -320,33 +320,18 @@
     ]
   },
   "Wwd-0PjrtViMFWxRGaQey": {
-    "title": "gRPC APIs",
-    "description": "gRPC is a platform agnostic serialization protocol that is used to communicate between services. Designed by Google in 2015, it is a modern alternative to REST APIs. It is a binary protocol that uses HTTP/2 as a transport layer. It is a high performance, open source, general-purpose RPC framework that puts mobile and HTTP/2 first. It's main use case is for communication between two different languages within the same application. You can use Python to communicate with Go, or Java to communicate with C#.\n\nVisit the following resources to learn more:",
+    "title": "SOAP APIs",
+    "description": "SOAP (Simple Object Access Protocol) APIs are a standard communication protocol system that permits programs that run on different operating systems (like Linux and Windows) to communicate using Hypertext Transfer Protocol (HTTP) and its Extensible Markup Language (XML). In the context of API Design, SOAP APIs offer a robust and well-defined process for interaction between various software applications, mostly over a network. They are highly extensible, versatile and support a wide range of communications protocols. Despite being more complex compared to other API types like REST, SOAP APIs ensure high reliability and security, making them the choice for certain business-focused, high-transaction applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "gRPC Website",
-        "url": "https://grpc.io/",
+        "title": "What are SOAP APIs?",
+        "url": "https://www.indeed.com/career-advice/career-development/what-is-soap-api",
         "type": "article"
       },
       {
-        "title": "gRPC Introduction",
-        "url": "https://grpc.io/docs/what-is-grpc/introduction/",
+        "title": "SOAP vs REST 101: Understand The Differences",
+        "url": "https://www.soapui.org/learn/api/soap-vs-rest-api/",
         "type": "article"
-      },
-      {
-        "title": "gRPC Core Concepts",
-        "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about gRPC",
-        "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Stephane Maarek - gRPC Introduction",
-        "url": "https://youtu.be/XRXTsQwyZSU",
-        "type": "video"
       }
     ]
   },
@@ -1554,5 +1539,10 @@
         "type": "article"
       }
     ]
+  },
+  "grpc-apis@1DrqtOwxCuFtWQXQ6ZALp.md": {
+    "title": "gRPC APIs",
+    "description": "",
+    "links": []
   }
 }
