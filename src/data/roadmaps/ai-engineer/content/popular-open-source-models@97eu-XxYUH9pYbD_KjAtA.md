@@ -1,8 +1,7 @@
 # Popular Open Source Models
 
-Notable open-source examples are `BERT`, developed by Google, which has become a foundational model for natural language processing tasks; `BLOOM`, a multilingual model with 176 billion parameters created through a collaborative project by Hugging Face; and `Falcon 180B`, known for its impressive performance in NLP tasks.
+Popular open-source models include BERT for NLP tasks like text classification and question answering, GPT-Neo and GPT-J as alternatives to GPT-3 for text generation, and Stable Diffusion for creating images from text descriptions. CLIP connects text and images, enabling tasks like image search, while Whisper handles speech recognition for transcription and translation. FastText offers efficient text classification, especially for low-resource languages. These models provide versatile, flexible solutions for a range of applications across natural language processing, computer vision, and speech recognition.
 
-Learn more from the following resources:
-
-- [@article@Top Open Source Models](https://www.datacamp.com/blog/top-open-source-llms)
-- [@article@Mark on Open Source AI](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
+- [@official@GPT-NEO](https://huggingface.co/docs/transformers/en/model_doc/gpt_neo)
+- [@opensource@OpenAI CLIP](https://github.com/openai/CLIP)
+- [@opensource@OpenAI Whisper](https://github.com/openai/whisper)
