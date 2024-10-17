@@ -4,3 +4,5 @@ Building a personal brand in developer relations is about establishing a unique 
 
 Learn more from the following resources:
 
+- [@article@A New Approach to Building Your Personal Brand](https://hbr.org/2023/05/a-new-approach-to-building-your-personal-brand)
+- [@video@5 Steps to Building a Personal Brand You Feel Good About](https://www.youtube.com/watch?v=ozMCb0wOnMU)

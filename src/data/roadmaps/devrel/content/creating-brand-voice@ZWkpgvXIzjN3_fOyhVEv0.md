@@ -4,3 +4,6 @@ Creating a brand voice involves defining a consistent tone and style that reflec
 
 Learn more from the following resources:
 
+- [@article@Creating Your Brand Voice: A Complete Guide](https://blog.hubspot.com/marketing/brand-voice)
+- [@article@How to Define Your Brand’s Tone of Voice](https://www.semrush.com/blog/how-to-define-your-tone-of-voice)
+- [@video@Branding 101: How To Build Customer Loyalty With Brand Voice](https://www.youtube.com/watch?v=et-a39drCsU)

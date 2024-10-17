@@ -4,3 +4,5 @@ Writing a code of conduct for developer communities involves setting clear guide
 
 Learn more from the following resources:
 
+- [@article@Guide to writing a Code of Conduct](https://projectinclude.org/writing_cocs)
+- [@article@Code of Conduct meaning and template](https://humaans.io/hr-glossary/code-of-conduct)

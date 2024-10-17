@@ -4,3 +4,5 @@ A data-driven strategy for social media involves using analytics and insights to
 
 Learn more from the following resources:
 
+- [@article@What Does a Data-Driven Digital Marketing Strategy Look Like](https://medium.com/@vantageplusmarketing/implementing-data-driven-strategies-in-seo-and-content-marketing-6104a91afba0)
+- [@video@Analytics vs Reporting: How to make Data-driven Business Decisions](https://www.youtube.com/watch?v=kyNa3SdKU84)

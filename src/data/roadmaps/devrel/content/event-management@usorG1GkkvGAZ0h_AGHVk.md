@@ -4,3 +4,5 @@ Event management involves planning, organizing, and executing events, whether vi
 
 Learn more from the following resources:
 
+- [@article@A step-by-step guide to organising unforgettable professional events for developers](https://weezevent.com/en-gb/blog/organising-events-for-developers/)
+- [@article@Anatomy of a Developer Conference](https://shiloh-events.com/anatomy-of-a-developer-conference/)

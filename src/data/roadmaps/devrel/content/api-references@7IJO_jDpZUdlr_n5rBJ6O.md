@@ -4,3 +4,5 @@ Adding API References to your products documentation is a key component and the 
 
 Learn more from the following resources:
 
+- [@article@What Is API Documentation?](https://blog.hubspot.com/website/api-documentation)
+- [@video@API Documentation and Why it Matters](https://www.youtube.com/watch?v=39Tt1IkLiQQ)

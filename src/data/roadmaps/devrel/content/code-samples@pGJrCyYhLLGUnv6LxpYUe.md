@@ -4,3 +4,4 @@ Code samples are essential in sample projects as they provide concrete, practica
 
 Learn more from the following resources:
 
+- [@article@Code Documentation Best Practices and Standards: A Complete Guide](https://blog.codacy.com/code-documentation)

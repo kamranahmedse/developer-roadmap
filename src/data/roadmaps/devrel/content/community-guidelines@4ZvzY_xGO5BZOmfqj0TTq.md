@@ -4,3 +4,5 @@ Community guidelines serve as the cornerstone of a thriving developer community,
 
 Learn more from the following resources:
 
+- [@article@Community Guidelines: How to Write and Enforce Them](https://www.commsor.com/post/community-guidelines)
+- [@article@Community Guidelines Mastery: From Creation to Enforcement](https://bettermode.com/blog/community-guidelines)

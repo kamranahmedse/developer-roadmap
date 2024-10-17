@@ -4,3 +4,5 @@ Consistent posting on social media platforms is a cornerstone of effective Devel
 
 Learn more from the following resources:
 
+- [@article@Why Posting Consistently is Key to Social Media](https://forty8creates.com/why-posting-consistently-is-key-to-social-media/)
+- [@video@How to Create Consistent Content on Social Media](https://www.youtube.com/watch?v=-bQpsCMgCkA)

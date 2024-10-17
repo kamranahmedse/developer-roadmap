@@ -4,3 +4,5 @@ Developer satisfaction refers to how content and engaged developers feel when us
 
 Learn more from the following resources:
 
+- [@article@What are developer experience metrics?](https://www.cortex.io/post/developer-experience-metrics-for-software-development-success)
+- [@article@How to measure developer experience with metrics](https://www.opslevel.com/resources/measuring-developer-experience-with-metrics)

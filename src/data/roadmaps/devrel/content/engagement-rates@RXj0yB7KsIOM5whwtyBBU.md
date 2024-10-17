@@ -4,3 +4,5 @@ Engagement rates are key metrics that measure how actively an audience interacts
 
 Learn more from the following resources:
 
+- [@article@What is Engagement Rate](https://sproutsocial.com/glossary/engagement-rate/)
+- [@video@Introduction to Engagement Rate](https://www.youtube.com/watch?v=SCTbIwADCo4)

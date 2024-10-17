@@ -4,3 +4,5 @@ Encouraging participation involves creating an environment where members feel we
 
 Learn more from the following resources:
 
+- [@article@12 tips to encourage activity in an online community](https://www.yunits.com/en/blogs/12-tips-to-encourage-activity-in-an-online-community/)
+- [@article@How To Increase Community Engagement](https://www.aluminati.net/how-to-increase-community-engagement/)

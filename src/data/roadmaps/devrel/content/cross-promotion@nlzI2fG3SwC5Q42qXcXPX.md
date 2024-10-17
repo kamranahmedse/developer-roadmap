@@ -4,3 +4,5 @@ Cross-promotion in the context of guest blogging involves leveraging both the ho
 
 Learn more from the following resources:
 
+- [@article@What Is Cross-Promotion + 8 Cross-Promotion Strategies](https://optinmonster.com/cross-promotion-ideas-triple-customers/)
+- [@article@How to cross promote on Social Media](https://www.sprinklr.com/blog/cross-promote-social-media/)

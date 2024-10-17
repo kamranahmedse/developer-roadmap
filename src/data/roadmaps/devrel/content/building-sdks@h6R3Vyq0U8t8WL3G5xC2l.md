@@ -4,3 +4,6 @@ Building SDKs (Software Development Kits) involves creating a set of tools, libr
 
 Learn more from the following resources:
 
+- [@article@How to build an SDK from scratch: Tutorial & best practices](https://liblab.com/blog/how-to-build-an-sdk/)
+- [@article@Guiding Principles for Building SDKs](https://auth0.com/blog/guiding-principles-for-building-sdks/)
+- [@video@API vs SDK](https://www.youtube.com/watch?v=kG-fLp9BTRo)

@@ -4,3 +4,5 @@ Having good quality audio when live streaming or creating video content is a mus
 
 Learn more from the following resources:
 
+- [@article@How to Improve Your Live Stream Audio](https://www.soundproofcow.com/improve-live-stream-audio/)
+- [@video@How to improve your live stream audio quality!](https://www.youtube.com/watch?app=desktop&v=_bTb0YqJX9w)

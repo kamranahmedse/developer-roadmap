@@ -4,3 +4,5 @@ Blogging collaborations involve partnering with other experts, influencers, or o
 
 Learn more from the following resources:
 
+- [@article@How to collaborate with bloggers](https://www.create.net/blog/how-to-collaborate-with-bloggers)
+- [@article@The Power of Collaborative Blogging: Building Relationships and Connecting with Others](https://aicontentfy.com/en/blog/power-of-collaborative-blogging-building-relationships-and-connecting-with-others)

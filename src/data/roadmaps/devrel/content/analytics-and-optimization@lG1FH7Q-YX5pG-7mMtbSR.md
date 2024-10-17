@@ -4,3 +4,5 @@ When engaging with developer communities on social media, it's important to moni
 
 Learn more from the following resources:
 
+- [@article@What is social media analytics?](https://blog.hootsuite.com/social-media-analytics/)
+- [@article@2024 Guide to X (Twitter) Analytics](https://blog.hootsuite.com/twitter-analytics-guide/)

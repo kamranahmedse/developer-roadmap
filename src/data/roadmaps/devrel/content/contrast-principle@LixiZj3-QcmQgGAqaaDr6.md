@@ -4,3 +4,5 @@ The contrast principle is a psychological concept where the perception of someth
 
 Learn more from the following resources:
 
+- [@article@How to have influence](https://www.ethosdebate.com/influence-part-2-contrast-principle/)
+- [@article@Psychology of perceptual contrast](https://www.linkedin.com/pulse/psychology-perceptual-contrast-devender-kumar/)

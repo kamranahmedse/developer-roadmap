@@ -4,3 +4,5 @@ Community management is a critical aspect of developer relations that involves n
 
 Learn more from the following resources:
 
+- [@article@The Ultimate Guide to Community Management](https://blog.hubspot.com/marketing/community-management-expert-advice)
+- [@article@Online Community Management Tactics](https://www.higherlogic.com/blog/online-community-management-guide/)

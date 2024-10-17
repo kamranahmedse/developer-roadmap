@@ -4,3 +4,5 @@ Data visualization involves using charts, graphs, and other visual tools to pres
 
 Learn more from the following resources:
 
+- [@article@What is Data Visualization?](https://www.ibm.com/topics/data-visualization)
+- [@video@Data Visualization in 2024](https://www.youtube.com/watch?v=loYuxWSsLNc)

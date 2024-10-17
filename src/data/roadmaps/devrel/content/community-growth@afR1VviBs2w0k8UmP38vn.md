@@ -4,3 +4,4 @@ Growing a community is a multifaceted process that requires strategic planning, 
 
 Learn more from the following resources:
 
+- [@video@ecrets to Building the Most Engaging Community Ever](https://www.youtube.com/watch?v=6ZVpufakwfk)

@@ -4,4 +4,5 @@ Conference speaking is a pivotal aspect of Developer Relations, offering a power
 
 Learn more from the following resources:
 
-
+- [@article@How to speak at a conference](https://www.eventible.com/learning/how-to-speak-at-a-conference/)
+- [@video@Secrets of Great Conference Talks](https://www.youtube.com/watch?v=rOf5sPSBLjg)

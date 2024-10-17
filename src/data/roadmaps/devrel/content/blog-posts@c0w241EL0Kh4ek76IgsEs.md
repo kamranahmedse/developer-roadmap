@@ -4,3 +4,6 @@ Writing blog posts is about creating valuable, informative content that resonate
 
 Learn more from the following resources:
 
+- [@article@How to Write an SEO Blog Post: 11 Key Tips](https://www.semrush.com/blog/seo-blog-post/)
+- [@article@How to Write an Awesome Blog Post in 5 Steps](https://www.wordstream.com/blog/ws/2015/02/09/how-to-write-a-blog-post)
+- [@video@How to Write a PERFECT Blog Post in 2024](https://www.youtube.com/watch?v=HoT9naGLgNk)

@@ -4,3 +4,5 @@ A social media content strategy is a plan to use platforms effectively to engage
 
 Learn more from the following resources:
 
+- [@article@The Ultimate Guide to Creating a Content Marketing Strategy](https://www.semrush.com/blog/content-marketing-strategy-guide/)
+- [@article@How to craft an effective social media content strategy](https://sproutsocial.com/insights/social-media-content-strategy/)

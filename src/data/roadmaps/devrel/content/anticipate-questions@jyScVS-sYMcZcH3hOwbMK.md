@@ -4,3 +4,4 @@ When giving talks, especially at developer conferences or events, its important 
 
 Learn more from the following resources:
 
+- [@article@How to handle questions during a presentation](https://www.secondnature.com.au/blog/how-to-handle-questions-during-a-presentation)

@@ -4,3 +4,5 @@ Active listening in developer relations is about genuinely engaging with the dev
 
 Learn more from the following resources:
 
+- [@article@What is active listening?](https://hbr.org/2024/01/what-is-active-listening)
+- [@article@7 Active Listening Techniques For Better Communication](https://www.verywellmind.com/what-is-active-listening-3024343)

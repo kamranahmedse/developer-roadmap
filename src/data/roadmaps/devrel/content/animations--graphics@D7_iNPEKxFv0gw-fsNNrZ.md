@@ -4,3 +4,5 @@ Animations and graphics can be a great addition to your live streaming setup, es
 
 Learn more from the following resources:
 
+- [@video@How to Create Animated Overlays For Your Live Streams](https://www.youtube.com/watch?v=y6BykyZGUlE)
+- [@video@How to Install & Use Overlays in OBS](https://www.youtube.com/watch?v=pxB9ET8gZH0)
