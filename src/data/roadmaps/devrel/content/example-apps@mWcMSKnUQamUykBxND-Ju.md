@@ -1,1 +1,6 @@
 # Example Apps
+
+Example apps are pre-built applications that demonstrate how to use a platform, framework, or set of tools in a practical, real-world scenario. These apps provide developers with hands-on examples of best practices, showing how different components work together and offering a solid starting point for building their projects. Effective example apps are well-documented, easy to set up, and cover common use cases, helping developers quickly understand core concepts and features. By providing clear, functional code, they reduce the learning curve, making it easier for developers to explore, experiment, and adopt new technologies.
+
+Learn more from the following resources:
+
