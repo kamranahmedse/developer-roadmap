@@ -4,4 +4,4 @@ In-template expressions are very convenient, but they are meant for simple opera
 
 Visit the following resources to learn more:
 
-- [@article@Computed Properties](https://vuejs.org/guide/essentials/computed.html#computed-properties)
+- [@official@Computed Properties](https://vuejs.org/guide/essentials/computed.html#computed-properties)

@@ -2,7 +2,6 @@
 
 Axios is a client HTTP API based on the XMLHttpRequest interface provided by browsers. The most common way for frontend programs to communicate with servers is through the HTTP protocol. You are probably familiar with the Fetch API and the XMLHttpRequest interface, which allows you to fetch resources and make HTTP requests.
 
-
 Visit the following resources to learn more:
 
 - [@official@Getting Started with Axios](https://axios-http.com/docs/intro)
