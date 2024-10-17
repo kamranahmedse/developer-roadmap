@@ -23,6 +23,7 @@ seo:
     - 'quiz'
 roadmapIds:
   - 'frontend'
+  - 'javascript'
 ---
 
 In this project, we will be making a browser based quizz. The app will present users with a series of multiple-choice questions and after each question, the app will provide immediate feedback on whether the selected answer is correct or incorrect.
