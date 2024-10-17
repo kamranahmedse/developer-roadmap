@@ -4,6 +4,6 @@ Each Vue component instance goes through a series of initialization steps when i
 
 Visit the following resources to learn more:
 
-- [@article@Life Cycle Hooks](https://vuejs.org/guide/essentials/lifecycle.html)
+- [@official@Life Cycle Hooks](https://vuejs.org/guide/essentials/lifecycle.html)
 - [@article@The Lifecycles of Vue.js](https://dev.to/amolikvivian/the-lifecycles-of-vue-js-lhh)
 - [@feed@Explore top posts about React Hooks](https://app.daily.dev/tags/react-hooks?ref=roadmapsh)

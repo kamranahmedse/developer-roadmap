@@ -4,4 +4,4 @@ A Vue component needs to be "registered" so that Vue knows where to locate its i
 
 Visit the following resources to learn more:
 
-- [@article@Component Registration](https://vuejs.org/guide/components/registration.html)
+- [@official@Component Registration](https://vuejs.org/guide/components/registration.html)

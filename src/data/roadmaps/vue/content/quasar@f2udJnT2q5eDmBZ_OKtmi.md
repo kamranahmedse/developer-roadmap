@@ -4,6 +4,6 @@ Quasar Framework is an open-source Vue.js based framework for building apps, wit
 
 Visit the following resources to learn more:
 
-- [@official@Official Website: Quasar](https://quasar.dev/)
+- [@official@Quasar](https://quasar.dev/)
 - [@video@Quasar Framework: Vue.js Cross Platform App](https://www.youtube.com/watch?v=opmng7llVJ0&list=PLAiDzIdBfy8iu_MZrq3IPuSFcRgCQ0iL0)
 - [@video@How to Build an App using Quasar Framework](https://www.youtube.com/watch?v=czJIuHyPPXo)

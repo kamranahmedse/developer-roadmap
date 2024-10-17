@@ -4,4 +4,4 @@ Vitepress is a static site generator that is built on top of Vite. It is a light
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://vitepress.dev/)
+- [@official@Vitepress Website](https://vitepress.dev/)

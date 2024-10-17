@@ -2,8 +2,9 @@
 
 The `v-once` directive makes an HTML element render only once, skipping every future update.
 
-Example:
-```vue
+## Example
+
+```html
 <script setup>
   import { ref } from 'vue';
   const input = ref("Some Text");
@@ -14,8 +15,9 @@ Example:
   <p v-once>{{ input }}</p>
 </template>
 ```
+
 In this example the **p** element will not change its text even if the input variable is changed through the **input** element.
 
 Visit the following resources to learn more:
 
-- [@official@v-once documentation](https://vuejs.org/api/built-in-directives.html#v-once)
+- [@official@v-once Documentation](https://vuejs.org/api/built-in-directives.html#v-once)
