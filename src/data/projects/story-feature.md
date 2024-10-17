@@ -1,6 +1,6 @@
 ---
 title: '24hr Story Feature'  
-description: 'Create a client-side instagram story clone'  
+description: 'Create a client-side instagram story clone.'  
 isNew: false  
 sort: 1
 difficulty: 'advanced'  
@@ -11,7 +11,7 @@ skills:
   - 'Timeouts'  
 seo:  
   title: 'Build an Instagram Story Clone'  
-  description: 'Learn how to build a Client-side Instagram Story Clone'  
+  description: 'Learn how to build a Client-side Instagram Story Clone.'  
   keywords:  
     - 'html'
     - 'css'
