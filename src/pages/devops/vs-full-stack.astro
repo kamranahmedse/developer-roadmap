@@ -1,0 +1,31 @@
+---
+import GuideContent from '../../components/Guide/GuideContent.astro';
+import GuideHeader from '../../components/GuideHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getGuideById } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { replaceVariables } from '../../lib/markdown';
+
+const guideId = 'devops-vs-full-stack';
+const guide = await getGuideById(guideId);
+
+const { frontmatter: guideData } = guide!;
+
+const ogImageUrl =
+  guideData.seo.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'guide',
+    resourceId: guideId,
+  });
+---
+
+<BaseLayout
+  title={replaceVariables(guideData.seo.title)}
+  description={replaceVariables(guideData.seo.description)}
+  permalink={guide.frontmatter.excludedBySlug}
+  canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
+>
+  <GuideHeader guide={guide!} />
+  <GuideContent guide={guide!} />
+</BaseLayout>
