@@ -81,7 +81,9 @@ const { course, chapter, lesson } = Astro.props;
         lesson={lesson}
         client:load
       >
-        <lesson.Content />
+        <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
+          <lesson.Content />
+        </div>
       </ChallengeView>
     )
   }
@@ -97,7 +99,9 @@ const { course, chapter, lesson } = Astro.props;
         lesson={lesson}
         client:load
       >
-        <lesson.Content />
+        <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
+          <lesson.Content />
+        </div>
       </LessonView>
     )
   }
@@ -112,7 +116,7 @@ const { course, chapter, lesson } = Astro.props;
         course={course}
         lesson={lesson}
         client:load
-      ></QuizView>
+      />
     )
   }
 </SkeletonLayout>

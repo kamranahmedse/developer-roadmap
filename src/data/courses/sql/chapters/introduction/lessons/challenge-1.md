@@ -3,7 +3,10 @@ title: Challenge 1
 description: Write a SQL query to find the total number of orders in the `orders` table.
 order: 300
 type: challenge
-defaultValue: SELECT * FROM orders;
+defaultValue: |
+  SELECT * FROM orders;
+  
+  SELECT COUNT(*) FROM orders;
 initSteps:
   - CREATE TABLE orders (
     id INTEGER PRIMARY KEY,
@@ -31,3 +34,7 @@ Write a SQL query to find the total number of orders in the `orders` table.
 ## Result
 
 Your query should return a single column with the total number of orders in the `orders` table.
+
+- The column name should be `total_orders`.
+- The value should be the total number of orders in the `orders` table.
+- The query should return a single row with the total number of orders in the `orders` table.

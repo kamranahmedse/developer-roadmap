@@ -62,6 +62,29 @@ a > code:before {
   content: '' !important;
 }
 
+.course-content.prose ul li > code,
+.course-content.prose ol li > code,
+.course-content p code,
+.course-content a > code,
+.course-content strong > code,
+.course-content em > code,
+.course-content h1 > code,
+.course-content h2 > code,
+.course-content h3 > code {
+  background: transparent !important;
+  color: #f4f4f5 !important;
+  font-size: inherit !important;
+}
+
+.course-content.prose ul li > code:before,
+.course-content p > code:before,
+.course-content.prose ul li > code:after,
+.course-content p > code:after,
+.course-content a > code:after,
+.course-content a > code:before {
+  content: '`' !important;
+}
+
 .sponsor-footer {
   text-align: center;
   font-weight: 600;

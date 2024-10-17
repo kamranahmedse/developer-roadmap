@@ -38,7 +38,7 @@ export function LessonView(props: LessonViewProps) {
     >
       <div className="relative h-full">
         <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
-          <div className="mx-auto max-w-xl p-4 py-10">{children}</div>
+          <div className="mx-auto max-w-xl p-4">{children}</div>
         </div>
       </div>
     </CourseLayout>
