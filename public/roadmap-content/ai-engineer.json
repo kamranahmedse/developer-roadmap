@@ -6,18 +6,66 @@
   },
   "GN6SnI7RXIeW8JeD-qORW": {
     "title": "What is an AI Engineer?",
-    "description": "",
-    "links": []
+    "description": "AI engineers are professionals who specialize in designing, developing, and implementing artificial intelligence (AI) systems. Their work is essential in various industries, as they create applications that enable machines to perform tasks that typically require human intelligence, such as problem-solving, learning, and decision-making.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI For Everyone",
+        "url": "https://www.coursera.org/learn/ai-for-everyone",
+        "type": "course"
+      },
+      {
+        "title": "How to Become an AI Engineer: Duties, Skills, and Salary",
+        "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI engineers: What they do and how to become one",
+        "url": "https://www.techtarget.com/whatis/feature/How-to-become-an-artificial-intelligence-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI Engineers- What Do They Do?",
+        "url": "https://www.youtube.com/watch?v=y8qRq9PMCh8&t=1s",
+        "type": "video"
+      }
+    ]
   },
   "jSZ1LhPdhlkW-9QJhIvFs": {
     "title": "AI Engineer vs ML Engineer",
-    "description": "",
-    "links": []
+    "description": "An AI Engineer develops broad AI solutions, such as chatbots, NLP, and intelligent automation, focusing on integrating AI technologies into large applications. In contrast, an ML Engineer is more focused on building and deploying machine learning models, handling data processing, model training, and optimization in production environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI Engineer vs. ML Engineer: Duties, Skills, and Qualifications",
+        "url": "https://www.upwork.com/resources/ai-engineer-vs-ml-engineer",
+        "type": "article"
+      },
+      {
+        "title": "AI Developer vs ML Engineer: What’s the difference?",
+        "url": "https://www.youtube.com/watch?v=yU87V2-XisA&t=2s",
+        "type": "video"
+      }
+    ]
   },
   "wf2BSyUekr1S1q6l8kyq6": {
     "title": "LLMs",
-    "description": "",
-    "links": []
+    "description": "Large Language Models (LLMs) are advanced artificial intelligence programs designed to comprehend and generate human language text.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a large language model (LLM)?",
+        "url": "https://www.cloudflare.com/learning/ai/what-is-large-language-model/",
+        "type": "article"
+      },
+      {
+        "title": "Large language model",
+        "url": "https://en.wikipedia.org/wiki/Large_language_model",
+        "type": "article"
+      },
+      {
+        "title": "How Large Language Models Work",
+        "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ&t=1s",
+        "type": "video"
+      }
+    ]
   },
   "KWjD4xEPhOOYS51dvRLd2": {
     "title": "Inference",
@@ -51,7 +99,7 @@
   },
   "9XCxilAQ7FRet7lHQr1gE": {
     "title": "AI Agents",
-    "description": "",
+    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:\n\n\\-[@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/) -[@article@Ai agents and their types](https://play.ht/blog/ai-agents-use-cases/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
     "links": []
   },
   "5QdihE1lLpMc3DFrGy46M": {
@@ -217,7 +265,7 @@
   },
   "4Q5x2VCXedAWISBXUIyin": {
     "title": "Adding end-user IDs in prompts",
-    "description": "",
+    "description": "Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide your team with more actionable feedback in the event that we detect any policy violations in your application.\n\nVisit the following resources to learn more:\n\n\\-[@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)",
     "links": []
   },
   "qmx6OHqx4_0JXVIv8dASp": {
@@ -237,58 +285,184 @@
   },
   "a_3SabylVqzzOyw3tZN5f": {
     "title": "OpenSource AI",
-    "description": "",
-    "links": []
+    "description": "Open-source AI refers to the development and deployment of artificial intelligence technologies using open-source practices. This means that the source code is freely accessible, allowing developers to inspect, modify, and distribute AI systems without restrictions.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Open Source AI Definition",
+        "url": "https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-3",
+        "type": "article"
+      },
+      {
+        "title": "Defining Open Source AI",
+        "url": "https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/",
+        "type": "article"
+      }
+    ]
   },
   "RBwGsq9DngUsl8PrrCbqx": {
     "title": "Open vs Closed Source Models",
-    "description": "",
-    "links": []
+    "description": "Open-source AI refers to models and software with publicly accessible source code, promoting collaboration, transparency, and cost-effectiveness, but it can face challenges like quality control and security risks. In contrast, closed-source AI involves proprietary models that are not publicly available, offering higher quality, performance, and security due to significant corporate investment, but lacking transparency and community collaboration. Some of them were `Llama` for Open Source Model and `Open AI` for Closed Source Model.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Open AI vs Closed AI",
+        "url": "https://formtek.com/blog/open-ai-vs-closed-ai-whats-the-difference-and-why-does-it-matter/",
+        "type": "article"
+      },
+      {
+        "title": "Open vs Closed Source Model",
+        "url": "https://www.techtarget.com/searchEnterpriseAI/feature/Attributes-of-open-vs-closed-AI-explained",
+        "type": "article"
+      }
+    ]
   },
   "97eu-XxYUH9pYbD_KjAtA": {
     "title": "Popular Open Source Models",
-    "description": "",
-    "links": []
+    "description": "Notable open-source examples are `BERT`, developed by Google, which has become a foundational model for natural language processing tasks; `BLOOM`, a multilingual model with 176 billion parameters created through a collaborative project by Hugging Face; and `Falcon 180B`, known for its impressive performance in NLP tasks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Top Open Source Models",
+        "url": "https://www.datacamp.com/blog/top-open-source-llms",
+        "type": "article"
+      },
+      {
+        "title": "Mark on Open Source AI",
+        "url": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
+        "type": "article"
+      }
+    ]
   },
   "v99C5Bml2a6148LCJ9gy9": {
     "title": "Hugging Face",
-    "description": "",
-    "links": []
+    "description": "Hugging Face is often called the GitHub of machine learning because it lets developers share and test their work openly. Hugging Face is known for its `Transformers Python library`, which simplifies the process of `downloading and training ML models`. It promotes collaboration within the AI community by enabling users to `share models` and `datasets`, thus advancing the democratization of artificial intelligence through open-source practices.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Hugging Face",
+        "url": "https://huggingface.co/",
+        "type": "article"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/huggingface",
+        "type": "article"
+      }
+    ]
   },
   "YLOdOvLXa5Fa7_mmuvKEi": {
     "title": "Hugging Face Hub",
-    "description": "",
-    "links": []
+    "description": "The Hugging Face Hub is a comprehensive platform that hosts over 900,000 machine learning models, 200,000 datasets, and 300,000 demo applications, facilitating collaboration and sharing within the AI community. It serves as a central repository where users can discover, upload, and experiment with various models and datasets across multiple domains, including natural language processing, computer vision, and audio tasks. It also supports version control.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "nlp-official",
+        "url": "https://huggingface.co/learn/nlp-course/en/chapter4/1",
+        "type": "course"
+      },
+      {
+        "title": "Documentation",
+        "url": "https://huggingface.co/docs/hub/en/index",
+        "type": "article"
+      }
+    ]
   },
   "YKIPOiSj_FNtg0h8uaSMq": {
     "title": "Hugging Face Tasks",
-    "description": "",
-    "links": []
+    "description": "Hugging Face supports text classification, named entity recognition, question answering, summarization, and translation. It also extends to multimodal tasks that involve both text and images, such as visual question answering (VQA) and image-text matching. Each task is done by various pre-trained models that can be easily accessed and fine-tuned through the Hugging Face library.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Task and Model",
+        "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/tasks-models-part1",
+        "type": "article"
+      },
+      {
+        "title": "Task Summary",
+        "url": "https://huggingface.co/docs/transformers/v4.14.1/en/task_summary",
+        "type": "article"
+      },
+      {
+        "title": "Task Manager",
+        "url": "https://huggingface.co/docs/optimum/en/exporters/task_manager",
+        "type": "article"
+      }
+    ]
   },
   "3kRTzlLNBnXdTsAEXVu_M": {
     "title": "Inference SDK",
-    "description": "",
-    "links": []
+    "description": "The Hugging Face Inference SDK is a powerful tool that allows developers to easily integrate and run inference on large language models hosted on the Hugging Face Hub. By using the `InferenceClient`, users can make API calls to various models for tasks such as text generation, image creation, and more. The SDK supports both synchronous and asynchronous operations thus compatible with existing workflows.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Inference",
+        "url": "https://huggingface.co/docs/huggingface_hub/en/package_reference/inference_client",
+        "type": "article"
+      },
+      {
+        "title": "Endpoint Setup",
+        "url": "https://www.npmjs.com/package/@huggingface/inference",
+        "type": "article"
+      }
+    ]
   },
   "bGLrbpxKgENe2xS1eQtdh": {
     "title": "Transformers.js",
-    "description": "",
-    "links": []
+    "description": "Hugging Face Transformers.js is a JavaScript library that enables developers to run transformer models directly in the browser without requiring a server. It offers a similar API to the original Python library, allowing tasks like sentiment analysis, text generation, and image processing using pre-trained models. By supporting the `pipeline API`, it simplifies the integration of models with preprocessing and postprocessing functionalities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Transformers.js",
+        "url": "https://huggingface.co/docs/hub/en/transformers-js",
+        "type": "article"
+      }
+    ]
   },
   "rTT2UnvqFO3GH6ThPLEjO": {
     "title": "Ollama",
-    "description": "",
-    "links": []
+    "description": "Ollama is a powerful open-source tool designed to run large language models (LLMs) locally on users' machines, It exposes a `local API`, allowing developers to seamlessly integrate LLMs into their applications and workflows. This API facilitates efficient communication between your application and the LLM, enabling you to send prompts, receive responses, and leverage the full potential of these **powerful AI models**.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Ollama",
+        "url": "https://ollama.com/",
+        "type": "article"
+      },
+      {
+        "title": "Ollama Explained",
+        "url": "https://www.geeksforgeeks.org/ollama-explained-transforming-ai-accessibility-and-language-processing/",
+        "type": "article"
+      }
+    ]
   },
   "ro3vY_sp6xMQ-hfzO-rc1": {
     "title": "Ollama Models",
-    "description": "",
-    "links": []
+    "description": "Ollama includes popular options like `Llama 2, Mistral, and Code Llama`. It simplifies the deployment process by bundling model weights, configurations, and datasets into a single package managed by a `Modelfile`, allowing users to easily manage and interact with these models. The platform's extensive library allows users to choose models tailored to their specific needs, and reduces reliance in cloud. Ollama Models could be of `text/base`, `chat/instruct` or `multi modal`.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Ollama Free Course",
+        "url": "https://youtu.be/f4tXwCNP1Ac?si=0RRKIfw2XAsWNNBo",
+        "type": "course"
+      },
+      {
+        "title": "Ollama Model Library",
+        "url": "https://ollama.com/library",
+        "type": "article"
+      }
+    ]
   },
   "TsG_I7FL-cOCSw8gvZH3r": {
     "title": "Ollama SDK",
-    "description": "",
-    "links": []
+    "description": "The Ollama SDK is a community-driven tool that allows developers to integrate and run large language models (LLMs) locally through a simple API. Enabling users to easily import the Ollama provider and create customized instances for various models, such as Llama 2 and Mistral. The SDK supports functionalities like `text generation` and `embeddings`, making it versatile for applications ranging from `chatbots` to `content generation`. Also Ollama SDK enhances privacy and control over data while offering seamless integration with existing workflows.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SDK Provider",
+        "url": "https://sdk.vercel.ai/providers/community-providers/ollama",
+        "type": "article"
+      },
+      {
+        "title": "Beginner's Guide",
+        "url": "https://dev.to/jayantaadhikary/using-the-ollama-api-to-run-llms-and-generate-responses-locally-18b7",
+        "type": "article"
+      },
+      {
+        "title": "Setup",
+        "url": "https://klu.ai/glossary/ollama",
+        "type": "article"
+      }
+    ]
   },
   "--ig0Ume_BnXb9K2U7HJN": {
     "title": "What are Embeddings",
@@ -357,7 +531,7 @@
   },
   "dSd2C9lNl-ymmCRT9_ZC3": {
     "title": "Chroma",
-    "description": "",
+    "description": "Chroma is an open-source vector database and AI-native embedding database designed to handle and store large-scale embeddings and semantic vectors. It is used in applications that require fast, efficient similarity searches, such as natural language processing (NLP), machine learning (ML), and AI systems dealing with text, images, and other high-dimensional data.\n\nVisit the following resources to learn more:\n\n\\-[@official@Chroma](https://www.trychroma.com/) -[@article@Chroma Tutorials](https://lablab.ai/tech/chroma) -[@video@Chroma - Chroma - Vector Database for LLM Applications](https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW)",
     "links": []
   },
   "_Cf7S1DCvX7p1_3-tP3C3": {
@@ -477,7 +651,7 @@
   },
   "778HsQzTuJ_3c9OSn5DmH": {
     "title": "Agents Usecases",
-    "description": "",
+    "description": "AI Agents have a variety of usecases ranging from customer support, workflow automation, cybersecurity, finance, marketing and sales, and more.\n\nVisit the following resources to learn more:\n\n*   [@article@Top 15 Use Cases Of AI Agents In Business](https://www.ampcome.com/post/15-use-cases-of-ai-agents-in-business) -[@article@A Brief Guide on AI Agents: Benefits and Use Cases](https://www.codica.com/blog/brief-guide-on-ai-agents/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
     "links": []
   },
   "voDKcKvXtyLzeZdx2g3Qn": {
@@ -577,8 +751,29 @@
   },
   "XcKeQfpTA5ITgdX51I4y-": {
     "title": "AI Code Editors",
-    "description": "",
-    "links": []
+    "description": "AI code editors are development tools that leverage artificial intelligence to assist software developers in writing, debugging, and optimizing code. These editors go beyond traditional syntax highlighting and code completion by incorporating machine learning models, natural language processing, and data analysis to understand code context, generate suggestions, and even automate portions of the software development process.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cursor - The AI Code Editor",
+        "url": "https://www.cursor.com/",
+        "type": "website"
+      },
+      {
+        "title": "Bolt - Prompt, run, edit, and deploy full-stack web apps",
+        "url": "https://bolt.new",
+        "type": "website"
+      },
+      {
+        "title": "Replit - Build Apps using AI",
+        "url": "https://replit.com/ai",
+        "type": "website"
+      },
+      {
+        "title": "v0 - Build Apps with AI",
+        "url": "https://v0.dev",
+        "type": "website"
+      }
+    ]
   },
   "TifVhqFm1zXNssA8QR3SM": {
     "title": "Code Completion Tools",

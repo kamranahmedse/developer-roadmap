@@ -5,5 +5,5 @@ Web Sockets provide a long-lived connection between a client and a server over w
 Learn more from the following resources:
 
 - [@article@The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-- [@article@What are websockets?](https://www.pubnub.com/guides/websockets/)
-- [@video@How web sockets work](https://www.youtube.com/watch?v=pnj3Jbho5Ck)
+- [@article@What are Web Sockets?](https://www.pubnub.com/guides/websockets/)
+- [@video@How Web Sockets Work](https://www.youtube.com/watch?v=pnj3Jbho5Ck)

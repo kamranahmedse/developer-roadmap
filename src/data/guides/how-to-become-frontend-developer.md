@@ -7,7 +7,7 @@ seo:
   title: 'How to become a Front-End Developer in 7 Steps'
   description: 'Learn how to become a front-end developer in 7 clear steps. Start your coding journey with practical tips and resources today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/how-to-become-frontend-developer-i23nx.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-08-15
 sitemap:

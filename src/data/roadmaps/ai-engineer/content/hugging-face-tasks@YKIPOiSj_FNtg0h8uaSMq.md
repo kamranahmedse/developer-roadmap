@@ -1,8 +1,9 @@
 # Hugging Face Tasks
 
-On Hugging Face, the models provided are split into "tasks" such as Image Recognition, Text to Video and Keypoint Detection. Hugging Face provides easy-to-integrate models for these tasks, enabling developers to build, fine-tune, and deploy solutions across different domains.
+Hugging Face supports text classification, named entity recognition, question answering, summarization, and translation. It also extends to multimodal tasks that involve both text and images, such as visual question answering (VQA) and image-text matching. Each task is done by various pre-trained models that can be easily accessed and fine-tuned through the Hugging Face library. 
 
 Learn more from the following resources:
 
-- [@official@Hugging Face Tasks](https://huggingface.co/tasks)
-- [@official@Hugging Face Tasks NPM Package](https://www.npmjs.com/package/@huggingface/tasks)
+- [@official@Task and Model](https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/tasks-models-part1)
+- [@official@Task Summary](https://huggingface.co/docs/transformers/v4.14.1/en/task_summary)
+- [@official@Task Manager](https://huggingface.co/docs/optimum/en/exporters/task_manager)

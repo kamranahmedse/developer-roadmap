@@ -4,6 +4,6 @@ Token-based authentication is a crucial aspect of API design. It involves provid
 
 Learn more from the following resources:
 
+- [@roadmap@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
 - [@article@What Is Token-Based Authentication?](https://www.okta.com/uk/identity-101/what-is-token-based-authentication/)
 - [@video@Session vs Token Authentication in 100 Seconds](https://www.youtube.com/watch?v=UBUNrFtufWo)
-- [@video@Token based auth](https://www.youtube.com/watch?v=woNZJMSNbuo)

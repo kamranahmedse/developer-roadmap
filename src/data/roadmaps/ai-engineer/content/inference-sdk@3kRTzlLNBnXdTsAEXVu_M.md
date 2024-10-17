@@ -1,8 +1,8 @@
 # Inference SDK
 
-The Hugging Face Serverless Inference API offers a fast and free way to explore thousands of models for a variety of tasks. It supports quick integration of Hugging Face models into applications, enabling low-latency, scalable inference for tasks like text generation, sentiment analysis, and image classification. The SDK can be used locally or with cloud services, including Hugging Face's own Inference API and AWS SageMaker, simplifying the deployment process across various platforms.
+The Hugging Face Inference SDK is a powerful tool that allows developers to easily integrate and run inference on large language models hosted on the Hugging Face Hub. By using the `InferenceClient`, users can make API calls to various models for tasks such as text generation, image creation, and more. The SDK supports both synchronous and asynchronous operations thus compatible with existing workflows. 
 
 Learn more from the following resources:
 
-- [@official@API Inference](https://huggingface.co/docs/api-inference/en/index)
-- [@video@How to Use Hugging Face Inference API](https://www.youtube.com/watch?app=desktop&v=85FVwWPg63Q)
+- [@official@Inference](https://huggingface.co/docs/huggingface_hub/en/package_reference/inference_client)
+- [@article@Endpoint Setup](https://www.npmjs.com/package/@huggingface/inference)

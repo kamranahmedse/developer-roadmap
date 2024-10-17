@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -45,6 +46,8 @@ export function GitHubButton(props: GitHubButtonProps) {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         let redirectUrl = '/';
         const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);

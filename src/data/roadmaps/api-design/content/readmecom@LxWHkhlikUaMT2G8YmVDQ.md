@@ -4,5 +4,5 @@ Readme.com is an invaluable tool in the realm of API Design, renowned for provid
 
 Learn more from the following resources:
 
-- [@official@readme.com](https://readme.com)
-- [@opensource@readmeio](https://github.com/readmeio)
+- [@official@ReadMe Website](https://readme.com)
+- [@opensource@ReadMe](https://github.com/orgs/readmeio/repositories?type=source)

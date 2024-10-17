@@ -16,4 +16,4 @@ Learn more from the following resources:
 
 - [@official@Microsoft Office](https://www.office.com/)
 - [@official@Google Workspace](https://workspace.google.com)
-- [@official@Libra Office](https://www.libreoffice.org/)
+- [@official@LibreOffice](https://www.libreoffice.org/)

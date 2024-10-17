@@ -449,6 +449,11 @@
         "type": "article"
       },
       {
+        "title": "JavaScript error reference - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
@@ -462,6 +467,11 @@
       {
         "title": "Node.js Errors - Official Docs",
         "url": "https://nodejs.org/api/errors.html#errors_class_systemerror",
+        "type": "article"
+      },
+      {
+        "title": "@Article@16 Common Errors in Node.js and How to Fix Them",
+        "url": "https://betterstack.com/community/guides/scaling-nodejs/nodejs-errors/",
         "type": "article"
       }
     ]

@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/node':
         specifier: ^8.3.4
-        version: 8.3.4(astro@4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))
+        version: 8.3.4(astro@4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))
       '@astrojs/react':
         specifier: ^3.6.2
-        version: 3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8(@types/node@18.19.50))
+        version: 3.6.2(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8(@types/node@18.19.50))
       '@astrojs/sitemap':
         specifier: ^3.2.0
         version: 3.2.0
       '@astrojs/tailwind':
         specifier: ^5.1.2
-        version: 5.1.2(astro@4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))(tailwindcss@3.4.13)
+        version: 5.1.2(astro@4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))(tailwindcss@3.4.13)
       '@fingerprintjs/fingerprintjs':
         specifier: ^4.5.0
         version: 4.5.0
@@ -36,11 +36,11 @@ importers:
         specifier: ^18.3.11
         version: 18.3.11
       '@types/react-dom':
-        specifier: ^18.3.0
-        version: 18.3.0
+        specifier: ^18.3.1
+        version: 18.3.1
       astro:
-        specifier: ^4.16.0
-        version: 4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
+        specifier: ^4.16.1
+        version: 4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -63,14 +63,14 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       jose:
-        specifier: ^5.9.3
-        version: 5.9.3
+        specifier: ^5.9.4
+        version: 5.9.4
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
       lucide-react:
-        specifier: ^0.451.0
-        version: 0.451.0(react@18.3.1)
+        specifier: ^0.452.0
+        version: 0.452.0(react@18.3.1)
       luxon:
         specifier: ^3.5.0
         version: 3.5.0
@@ -1360,8 +1360,8 @@ packages:
   '@types/react-calendar-heatmap@1.6.7':
     resolution: {integrity: sha512-xWBS9iOvw+aCidPk8QwCH69OCO7jnj6/9TjooqGQ9W+rA5m1aw36GjQMlSYKAg86otDeg9dzA+hSAIcvw/y9Rg==}
 
-  '@types/react-dom@18.3.0':
-    resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+  '@types/react-dom@18.3.1':
+    resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
 
   '@types/react-slick@0.23.13':
     resolution: {integrity: sha512-bNZfDhe/L8t5OQzIyhrRhBr/61pfBcWaYJoq6UDqFtv5LMwfg4NsVDD2J8N01JqdAdxLjOt66OZEp6PX+dGs/A==}
@@ -1450,8 +1450,8 @@ packages:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
 
-  astro@4.16.0:
-    resolution: {integrity: sha512-R5voBFy0yOg57uFnW24WV+RvqPerp9eOoDQoT0pQYqECuGuyV1PsZaSb9Nm0ec+KMLrfO9jvvESFw9LIN6XiUw==}
+  astro@4.16.1:
+    resolution: {integrity: sha512-ZeZd+L147HHgHmvoSkve7KM3EutV+hY0mOCa4PwARHEFAAh+omo4MUNoTWsFkfq7ozTgR0PCXQwslrZduoWHNg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2164,8 +2164,8 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
-  jose@5.9.3:
-    resolution: {integrity: sha512-egLIoYSpcd+QUF+UHgobt5YzI2Pkw/H39ou9suW687MY6PmCwPmkNV/4TNjn1p2tX5xO3j0d0sq5hiYE24bSlg==}
+  jose@5.9.4:
+    resolution: {integrity: sha512-WBBl6au1qg6OHj67yCffCgFR3BADJBXN8MdRvCgJDuMv3driV2nHr7jdGvaKX9IolosAsn+M0XRArqLXUhyJHQ==}
 
   js-cookie@3.0.5:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
@@ -2263,8 +2263,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@0.451.0:
-    resolution: {integrity: sha512-OwQ3uljZLp2cerj8sboy5rnhtGTCl9UCJIhT1J85/yOuGVlEH+xaUPR7tvNdddPvmV5M5VLdr7cQuWE3hzA4jw==}
+  lucide-react@0.452.0:
+    resolution: {integrity: sha512-kNefjOUOGm+Mu3KDiryONyPba9r+nhcrz5oJs3N6JDzGboQNEXw5GB3yB8rnV9/FA4bPyggNU6CRSihZm9MvSw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
@@ -2845,9 +2845,6 @@ packages:
   rehype-raw@7.0.0:
     resolution: {integrity: sha512-/aE8hCfKlQeA8LmyeyQvQF3eBiLRGNlfBJEvWH7ivp9sBqs7TNqBL5X3v157rM4IFETqDnIOO+z5M/biZbo9Ww==}
 
-  rehype-stringify@10.0.0:
-    resolution: {integrity: sha512-1TX1i048LooI9QoecrXy7nGFFbFSufxVRAfc6Y9YMRAi56l+oB0zP51mLSV312uRuvVLPV1opSlJmslozR1XHQ==}
-
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
 
@@ -3385,9 +3382,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@8.3.4(astro@4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))':
+  '@astrojs/node@8.3.4(astro@4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))':
     dependencies:
-      astro: 4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
+      astro: 4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
       send: 0.19.0
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -3397,10 +3394,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8(@types/node@18.19.50))':
+  '@astrojs/react@3.6.2(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8(@types/node@18.19.50))':
     dependencies:
       '@types/react': 18.3.11
-      '@types/react-dom': 18.3.0
+      '@types/react-dom': 18.3.1
       '@vitejs/plugin-react': 4.3.1(vite@5.4.8(@types/node@18.19.50))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -3415,9 +3412,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))(tailwindcss@3.4.13)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2))(tailwindcss@3.4.13)':
     dependencies:
-      astro: 4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
+      astro: 4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -4475,7 +4472,7 @@ snapshots:
     dependencies:
       '@types/react': 18.3.11
 
-  '@types/react-dom@18.3.0':
+  '@types/react-dom@18.3.1':
     dependencies:
       '@types/react': 18.3.11
 
@@ -4558,7 +4555,7 @@ snapshots:
 
   array-union@2.1.0: {}
 
-  astro@4.16.0(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2):
+  astro@4.16.1(@types/node@18.19.50)(rollup@4.22.4)(typescript@5.6.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -4590,7 +4587,6 @@ snapshots:
       esbuild: 0.21.5
       estree-walker: 3.0.3
       fast-glob: 3.3.2
-      fastq: 1.17.1
       flattie: 1.1.1
       github-slugger: 2.0.0
       gray-matter: 4.0.3
@@ -4611,7 +4607,6 @@ snapshots:
       rehype: 13.0.2
       semver: 7.6.3
       shiki: 1.22.0
-      string-width: 7.2.0
       tinyexec: 0.3.0
       tsconfck: 3.1.3(typescript@5.6.2)
       unist-util-visit: 5.0.0
@@ -4645,7 +4640,7 @@ snapshots:
 
   autoprefixer@10.4.20(postcss@8.4.47):
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.24.0
       caniuse-lite: 1.0.30001663
       fraction.js: 4.3.7
       normalize-range: 0.1.2
@@ -5355,7 +5350,7 @@ snapshots:
 
   jiti@1.21.6: {}
 
-  jose@5.9.3: {}
+  jose@5.9.4: {}
 
   js-cookie@3.0.5: {}
 
@@ -5437,7 +5432,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.451.0(react@18.3.1):
+  lucide-react@0.452.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -5449,7 +5444,7 @@ snapshots:
 
   magicast@0.3.5:
     dependencies:
-      '@babel/parser': 7.25.6
+      '@babel/parser': 7.25.8
       '@babel/types': 7.25.8
       source-map-js: 1.2.1
 
@@ -6138,12 +6133,6 @@ snapshots:
       hast-util-raw: 9.0.4
       vfile: 6.0.3
 
-  rehype-stringify@10.0.0:
-    dependencies:
-      '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.3
-      unified: 11.0.5
-
   rehype-stringify@10.0.1:
     dependencies:
       '@types/hast': 3.0.4
@@ -6154,7 +6143,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       rehype-parse: 9.0.0
-      rehype-stringify: 10.0.0
+      rehype-stringify: 10.0.1
       unified: 11.0.5
 
   remark-gfm@4.0.0:

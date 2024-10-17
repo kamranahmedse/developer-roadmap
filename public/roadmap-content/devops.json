@@ -859,6 +859,11 @@
         "type": "article"
       },
       {
+        "title": "Basic NGINX Setup on Ubuntu: Guide to a Functional and Secure Website Serving",
+        "url": "https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Nginx",
         "url": "https://app.daily.dev/tags/nginx?ref=roadmapsh",
         "type": "article"
@@ -1505,11 +1510,6 @@
     "description": "Whitelisting involves creating a list of trusted entities (such as IP addresses, email addresses, or applications) that are explicitly allowed to access a system or send messages. Anything not on the whitelist is denied by default. Whitelisting offers a high level of security by limiting access to only known and approved entities, but it can be inflexible and require frequent updates to accommodate legitimate changes. Greylisting is a more flexible approach used primarily in email filtering. When an email is received from an unknown sender, the server temporarily rejects it with a \"try again later\" response. Legitimate mail servers will retry sending the email after a short delay, while spammers, which often do not retry, are blocked. This method reduces spam by taking advantage of the fact that spammers usually do not follow retry mechanisms. Greylisting can be less intrusive than whitelisting, but it may introduce slight delays in email delivery for first-time senders.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Basic Introduction to whitelisting",
-        "url": "https://www.cblohm.com/blog/education-marketing-trends/what-is-email-whitelisting/",
-        "type": "article"
-      },
-      {
         "title": "Detailed Introduction to greylisting",
         "url": "https://en.wikipedia.org/wiki/Greylisting_(email)",
         "type": "article"
@@ -2114,6 +2114,11 @@
     "title": "GitHub Actions",
     "description": "GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform integrated directly into GitHub repositories. It allows developers to automate software workflows, including building, testing, and deploying applications. Actions are defined in YAML files and triggered by various GitHub events such as pushes, pull requests, or scheduled tasks. The platform provides a marketplace of pre-built actions and supports custom actions. GitHub Actions offers matrix builds, parallel job execution, and supports multiple operating systems and languages. It integrates seamlessly with GitHub's ecosystem, facilitating automated code review, issue tracking, and project management. This tool enables developers to implement DevOps practices efficiently within their GitHub workflow, enhancing productivity and code quality.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "GitHub Actions Certification – Full Course to PASS the Exam",
+        "url": "https://www.youtube.com/watch?v=Tz7FsunBbfQ",
+        "type": "course"
+      },
       {
         "title": "Learn Git & GitHub",
         "url": "https://roadmap.sh/git-github",

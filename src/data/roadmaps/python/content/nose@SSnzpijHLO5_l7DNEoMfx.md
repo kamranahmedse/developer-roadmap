@@ -1,6 +1,6 @@
 # Nose
 
-Nose is another opensource testing framework that extends `unittest` to provide a more flexible testing framework.
+Nose is another opensource testing framework that extends `unittest` to provide a more flexible testing framework. Note that Nose is no longer maintained and `pytest` is considered the replacement.
 
 Visit the following resources to learn more:
 

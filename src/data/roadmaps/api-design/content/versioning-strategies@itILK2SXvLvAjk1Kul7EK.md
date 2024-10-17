@@ -4,6 +4,6 @@ API Versioning is a critical component of API Design and Management. As the APIs
 
 Learn more from the following resources:
 
-- [@article@What is API versioning?](https://www.postman.com/api-platform/api-versioning/)
-- [@article@4 API versioning best practices](https://kodekloud.com/blog/api-versioning-best-practices/)
+- [@article@What is API Versioning?](https://www.postman.com/api-platform/api-versioning/)
+- [@article@API Versioning Best Practices](https://kodekloud.com/blog/api-versioning-best-practices/)
 - [@video@Versioning your APIs](https://www.youtube.com/watch?v=Np_Jr6AvCOc)

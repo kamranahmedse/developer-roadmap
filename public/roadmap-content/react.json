@@ -244,7 +244,7 @@
     "links": [
       {
         "title": "Lifecycle of Reactive Effects",
-        "url": "https://react.dev/learn/lifecycle-of-reactive-effectsv",
+        "url": "https://react.dev/learn/lifecycle-of-reactive-effects",
         "type": "article"
       },
       {
@@ -479,112 +479,22 @@
   },
   "dgoDNDtW2_q9R9yhkXrcz": {
     "title": "useCallback",
-    "description": "React also has a lot of hooks that allow you to write more efficient React code.\n\nVisit the following resources to learn more:",
+    "description": "`useCallback` is a React hook that returns a memoized version of a callback function. It's used to optimize performance by preventing unnecessary re-renders. Specifically, it helps avoid recreating functions when their dependencies haven't changed, which can be useful when passing callbacks to child components that rely on referential equality to prevent re-rendering.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "useCallback",
+        "title": "React Documentation on useCallback",
         "url": "https://react.dev/reference/react/useCallback",
         "type": "article"
       },
       {
-        "title": "useContext",
-        "url": "https://react.dev/reference/react/useContext",
+        "title": "useCallback Explained in Depth",
+        "url": "https://kentcdodds.com/blog/usememo-and-usecallback",
         "type": "article"
       },
       {
-        "title": "useDebugValue",
-        "url": "https://react.dev/reference/react/useDebugValue",
+        "title": "useCallback Hook: An Introductory Guide",
+        "url": "https://dmitripavlutin.com/dont-overuse-react-usecallback/",
         "type": "article"
-      },
-      {
-        "title": "useDeferredValue",
-        "url": "https://react.dev/reference/react/useDeferredValue",
-        "type": "article"
-      },
-      {
-        "title": "useEffect",
-        "url": "https://react.dev/reference/react/useEffect",
-        "type": "article"
-      },
-      {
-        "title": "useId",
-        "url": "https://react.dev/reference/react/useId",
-        "type": "article"
-      },
-      {
-        "title": "useImperativeHandle",
-        "url": "https://react.dev/reference/react/useImperativeHandle",
-        "type": "article"
-      },
-      {
-        "title": "useInsertionEffect",
-        "url": "https://react.dev/reference/react/useInsertionEffect",
-        "type": "article"
-      },
-      {
-        "title": "useLayoutEffect",
-        "url": "https://react.dev/reference/react/useLayoutEffect",
-        "type": "article"
-      },
-      {
-        "title": "useReducer",
-        "url": "https://react.dev/reference/react/useReducer",
-        "type": "article"
-      },
-      {
-        "title": "useRef",
-        "url": "https://react.dev/reference/react/useRef",
-        "type": "article"
-      },
-      {
-        "title": "useState",
-        "url": "https://react.dev/reference/react/useState",
-        "type": "article"
-      },
-      {
-        "title": "useSyncExternalStore",
-        "url": "https://react.dev/reference/react/useSyncExternalStore",
-        "type": "article"
-      },
-      {
-        "title": "useTransition",
-        "url": "https://react.dev/reference/react/useTransition",
-        "type": "article"
-      },
-      {
-        "title": "useCallback Hook by Example",
-        "url": "https://www.robinwieruch.de/react-usecallback-hook/",
-        "type": "article"
-      },
-      {
-        "title": "useMemo Hook by Example",
-        "url": "https://www.robinwieruch.de/react-usememo-hook/",
-        "type": "article"
-      },
-      {
-        "title": "useContext Hook by Example",
-        "url": "https://www.robinwieruch.de/react-usecontext-hook/",
-        "type": "article"
-      },
-      {
-        "title": "useReducer Hook by Example",
-        "url": "https://www.robinwieruch.de/react-usereducer-hook/",
-        "type": "article"
-      },
-      {
-        "title": "useReducer vs useState Hook",
-        "url": "https://www.robinwieruch.de/react-usereducer-vs-usestate/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about React Hooks",
-        "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "useDefferedValue Hook video",
-        "url": "https://www.youtube.com/watch?v=jCGMedd6IWA",
-        "type": "video"
       }
     ]
   },
@@ -669,27 +579,6 @@
         "title": "Learn useContext In 13 Minutes",
         "url": "https://www.youtube.com/watch?v=5LrDIWkK_Bc",
         "type": "video"
-      }
-    ]
-  },
-  "2zrN65JZhCyNimi33g78f": {
-    "title": "useCallback",
-    "description": "`useCallback` is a React hook that returns a memoized version of a callback function. It's used to optimize performance by preventing unnecessary re-renders. Specifically, it helps avoid recreating functions when their dependencies haven't changed, which can be useful when passing callbacks to child components that rely on referential equality to prevent re-rendering.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "React Documentation on useCallback",
-        "url": "https://react.dev/reference/react/useCallback",
-        "type": "article"
-      },
-      {
-        "title": "useCallback Explained in Depth",
-        "url": "https://kentcdodds.com/blog/usememo-and-usecallback",
-        "type": "article"
-      },
-      {
-        "title": "useCallback Hook: An Introductory Guide",
-        "url": "https://dmitripavlutin.com/dont-overuse-react-usecallback/",
-        "type": "article"
       }
     ]
   },
@@ -1375,6 +1264,11 @@
       {
         "title": "Explore top posts about Jest",
         "url": "https://app.daily.dev/tags/jest?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Testing JavaScript with Jest on Vultr",
+        "url": "https://developer.mozilla.org/en-US/blog/test-javascript-with-jest-on-vultr/",
         "type": "article"
       }
     ]
