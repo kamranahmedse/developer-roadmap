@@ -5,3 +5,4 @@ The Hugging Face Hub is a platform with over 900k models, 200k datasets and over
 Learn more from the following resources:
 
 - [@official@Hugging Face Hub Documentation](https://huggingface.co/docs/hub/en/index)
+- [@official@Hugging Face Quick Start](https://huggingface.co/docs/huggingface_hub/quick-start)

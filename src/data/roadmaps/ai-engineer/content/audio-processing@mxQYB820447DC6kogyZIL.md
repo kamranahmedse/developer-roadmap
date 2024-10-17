@@ -4,4 +4,5 @@ Audio processing refers to the analysis, manipulation, and transformation of aud
 
 Learn more from the following resources:
 
+- [@article@The State of Audio Processing](https://appwrite.io/blog/post/state-of-audio-processing)
 - [@video@Audio Signal Processing for Machine Learning](https://www.youtube.com/watch?v=iCwMQJnKk2c)
