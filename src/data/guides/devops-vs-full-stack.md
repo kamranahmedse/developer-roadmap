@@ -33,14 +33,14 @@ This guide explains what each role entails, addresses the motivations behind cho
 
 The key differences between DevOps engineers and full stack developers are summarized in the table below.
 
-| **DevOps engineer**                                                                                                                     | **Full stack developer**                                                                                    |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Responsible for the smooth flow of code changes from development to production.                                                         | Focuses on end-to-end application development (both frontend and backend)                                   |
+| DevOps engineer | Full stack developer |
+|-----------------|----------------------|
+| Responsible for the smooth flow of code changes from development to production. | Focuses on end-to-end application development (both frontend and backend) |
 | Uses monitoring tools to track the performance of deployed software and also identify issues and bottlenecks in the deployment process. | Writes unit, integration, and end-to-end tests for the application code and fixes bugs related to the code. |
-| Focuses on automating processes and ensuring a software application runs reliably and flawlessly.                                       | Handles the development of web applications or a software program (frontend and backend)                    |
-| Familiar with tools that aid task automation, code testing and deployments.                                                             | Has expertise in various frontend and backend programming languages                                         |
-| Focuses more on the infrastructure management side of the whole development life-cycle, which includes managing networks and servers.   | Could either focus on the frontend and backend web architectures.                                           |
-| Has an in-depth understanding of operations to ensure optimal software delivery.                                                        | Possess a basic knowledge of operations.                                                                    |
+| Focuses on automating processes and ensuring a software application runs reliably and flawlessly. | Handles the development of web applications or a software program (frontend and backend) |
+| Familiar with tools that aid task automation, code testing and deployments. | Has expertise in various frontend and backend programming languages |
+| Focuses more on the infrastructure management side of the whole development life-cycle, which includes managing networks and servers. | Could either focus on the frontend and backend web architectures. |
+| Has an in-depth understanding of operations to ensure optimal software delivery. | Possess a basic knowledge of operations. |
 
 ## DevOps engineer or full stack developer
 
