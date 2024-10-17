@@ -285,58 +285,184 @@
   },
   "a_3SabylVqzzOyw3tZN5f": {
     "title": "OpenSource AI",
-    "description": "",
-    "links": []
+    "description": "Open-source AI refers to the development and deployment of artificial intelligence technologies using open-source practices. This means that the source code is freely accessible, allowing developers to inspect, modify, and distribute AI systems without restrictions.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Open Source AI Definition",
+        "url": "https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-3",
+        "type": "article"
+      },
+      {
+        "title": "Defining Open Source AI",
+        "url": "https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/",
+        "type": "article"
+      }
+    ]
   },
   "RBwGsq9DngUsl8PrrCbqx": {
     "title": "Open vs Closed Source Models",
-    "description": "",
-    "links": []
+    "description": "Open-source AI refers to models and software with publicly accessible source code, promoting collaboration, transparency, and cost-effectiveness, but it can face challenges like quality control and security risks. In contrast, closed-source AI involves proprietary models that are not publicly available, offering higher quality, performance, and security due to significant corporate investment, but lacking transparency and community collaboration. Some of them were `Llama` for Open Source Model and `Open AI` for Closed Source Model.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Open AI vs Closed AI",
+        "url": "https://formtek.com/blog/open-ai-vs-closed-ai-whats-the-difference-and-why-does-it-matter/",
+        "type": "article"
+      },
+      {
+        "title": "Open vs Closed Source Model",
+        "url": "https://www.techtarget.com/searchEnterpriseAI/feature/Attributes-of-open-vs-closed-AI-explained",
+        "type": "article"
+      }
+    ]
   },
   "97eu-XxYUH9pYbD_KjAtA": {
     "title": "Popular Open Source Models",
-    "description": "",
-    "links": []
+    "description": "Notable open-source examples are `BERT`, developed by Google, which has become a foundational model for natural language processing tasks; `BLOOM`, a multilingual model with 176 billion parameters created through a collaborative project by Hugging Face; and `Falcon 180B`, known for its impressive performance in NLP tasks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Top Open Source Models",
+        "url": "https://www.datacamp.com/blog/top-open-source-llms",
+        "type": "article"
+      },
+      {
+        "title": "Mark on Open Source AI",
+        "url": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
+        "type": "article"
+      }
+    ]
   },
   "v99C5Bml2a6148LCJ9gy9": {
     "title": "Hugging Face",
-    "description": "",
-    "links": []
+    "description": "Hugging Face is often called the GitHub of machine learning because it lets developers share and test their work openly. Hugging Face is known for its `Transformers Python library`, which simplifies the process of `downloading and training ML models`. It promotes collaboration within the AI community by enabling users to `share models` and `datasets`, thus advancing the democratization of artificial intelligence through open-source practices.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Hugging Face",
+        "url": "https://huggingface.co/",
+        "type": "article"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/huggingface",
+        "type": "article"
+      }
+    ]
   },
   "YLOdOvLXa5Fa7_mmuvKEi": {
     "title": "Hugging Face Hub",
-    "description": "",
-    "links": []
+    "description": "The Hugging Face Hub is a comprehensive platform that hosts over 900,000 machine learning models, 200,000 datasets, and 300,000 demo applications, facilitating collaboration and sharing within the AI community. It serves as a central repository where users can discover, upload, and experiment with various models and datasets across multiple domains, including natural language processing, computer vision, and audio tasks. It also supports version control.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "nlp-official",
+        "url": "https://huggingface.co/learn/nlp-course/en/chapter4/1",
+        "type": "course"
+      },
+      {
+        "title": "Documentation",
+        "url": "https://huggingface.co/docs/hub/en/index",
+        "type": "article"
+      }
+    ]
   },
   "YKIPOiSj_FNtg0h8uaSMq": {
     "title": "Hugging Face Tasks",
-    "description": "",
-    "links": []
+    "description": "Hugging Face supports text classification, named entity recognition, question answering, summarization, and translation. It also extends to multimodal tasks that involve both text and images, such as visual question answering (VQA) and image-text matching. Each task is done by various pre-trained models that can be easily accessed and fine-tuned through the Hugging Face library.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Task and Model",
+        "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/tasks-models-part1",
+        "type": "article"
+      },
+      {
+        "title": "Task Summary",
+        "url": "https://huggingface.co/docs/transformers/v4.14.1/en/task_summary",
+        "type": "article"
+      },
+      {
+        "title": "Task Manager",
+        "url": "https://huggingface.co/docs/optimum/en/exporters/task_manager",
+        "type": "article"
+      }
+    ]
   },
   "3kRTzlLNBnXdTsAEXVu_M": {
     "title": "Inference SDK",
-    "description": "",
-    "links": []
+    "description": "The Hugging Face Inference SDK is a powerful tool that allows developers to easily integrate and run inference on large language models hosted on the Hugging Face Hub. By using the `InferenceClient`, users can make API calls to various models for tasks such as text generation, image creation, and more. The SDK supports both synchronous and asynchronous operations thus compatible with existing workflows.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Inference",
+        "url": "https://huggingface.co/docs/huggingface_hub/en/package_reference/inference_client",
+        "type": "article"
+      },
+      {
+        "title": "Endpoint Setup",
+        "url": "https://www.npmjs.com/package/@huggingface/inference",
+        "type": "article"
+      }
+    ]
   },
   "bGLrbpxKgENe2xS1eQtdh": {
     "title": "Transformers.js",
-    "description": "",
-    "links": []
+    "description": "Hugging Face Transformers.js is a JavaScript library that enables developers to run transformer models directly in the browser without requiring a server. It offers a similar API to the original Python library, allowing tasks like sentiment analysis, text generation, and image processing using pre-trained models. By supporting the `pipeline API`, it simplifies the integration of models with preprocessing and postprocessing functionalities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Transformers.js",
+        "url": "https://huggingface.co/docs/hub/en/transformers-js",
+        "type": "article"
+      }
+    ]
   },
   "rTT2UnvqFO3GH6ThPLEjO": {
     "title": "Ollama",
-    "description": "",
-    "links": []
+    "description": "Ollama is a powerful open-source tool designed to run large language models (LLMs) locally on users' machines, It exposes a `local API`, allowing developers to seamlessly integrate LLMs into their applications and workflows. This API facilitates efficient communication between your application and the LLM, enabling you to send prompts, receive responses, and leverage the full potential of these **powerful AI models**.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Ollama",
+        "url": "https://ollama.com/",
+        "type": "article"
+      },
+      {
+        "title": "Ollama Explained",
+        "url": "https://www.geeksforgeeks.org/ollama-explained-transforming-ai-accessibility-and-language-processing/",
+        "type": "article"
+      }
+    ]
   },
   "ro3vY_sp6xMQ-hfzO-rc1": {
     "title": "Ollama Models",
-    "description": "",
-    "links": []
+    "description": "Ollama includes popular options like `Llama 2, Mistral, and Code Llama`. It simplifies the deployment process by bundling model weights, configurations, and datasets into a single package managed by a `Modelfile`, allowing users to easily manage and interact with these models. The platform's extensive library allows users to choose models tailored to their specific needs, and reduces reliance in cloud. Ollama Models could be of `text/base`, `chat/instruct` or `multi modal`.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Ollama Free Course",
+        "url": "https://youtu.be/f4tXwCNP1Ac?si=0RRKIfw2XAsWNNBo",
+        "type": "course"
+      },
+      {
+        "title": "Ollama Model Library",
+        "url": "https://ollama.com/library",
+        "type": "article"
+      }
+    ]
   },
   "TsG_I7FL-cOCSw8gvZH3r": {
     "title": "Ollama SDK",
-    "description": "",
-    "links": []
+    "description": "The Ollama SDK is a community-driven tool that allows developers to integrate and run large language models (LLMs) locally through a simple API. Enabling users to easily import the Ollama provider and create customized instances for various models, such as Llama 2 and Mistral. The SDK supports functionalities like `text generation` and `embeddings`, making it versatile for applications ranging from `chatbots` to `content generation`. Also Ollama SDK enhances privacy and control over data while offering seamless integration with existing workflows.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "SDK Provider",
+        "url": "https://sdk.vercel.ai/providers/community-providers/ollama",
+        "type": "article"
+      },
+      {
+        "title": "Beginner's Guide",
+        "url": "https://dev.to/jayantaadhikary/using-the-ollama-api-to-run-llms-and-generate-responses-locally-18b7",
+        "type": "article"
+      },
+      {
+        "title": "Setup",
+        "url": "https://klu.ai/glossary/ollama",
+        "type": "article"
+      }
+    ]
   },
   "--ig0Ume_BnXb9K2U7HJN": {
     "title": "What are Embeddings",
