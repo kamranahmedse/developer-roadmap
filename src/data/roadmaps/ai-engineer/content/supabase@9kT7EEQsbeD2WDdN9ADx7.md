@@ -5,3 +5,5 @@ Supabase is an open-source backend-as-a-service (BaaS) platform that provides de
 Learn more from the following resources:
 
 - [@official@Supabase website](https://supabase.com/)
+- [@article@Exploring Supabase - The Open Source Firebase Alternative](https://www.linkedin.com/pulse/exploring-supabase-open-source-firebase-alternative-wnjrc/)
+- [@video@Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns)

@@ -4,3 +4,5 @@ In the context of embeddings, recommendation systems use vector representations 
 
 Learn more from the following resources:
 
+- [@article@What role does AI play in recommendation systems and engines?](https://www.algolia.com/blog/ai/what-role-does-ai-play-in-recommendation-systems-and-engines/)
+- [@article@What is a recommendation engine?](https://www.ibm.com/think/topics/recommendation-engine)

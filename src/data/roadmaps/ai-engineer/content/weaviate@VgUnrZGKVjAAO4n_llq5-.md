@@ -5,3 +5,4 @@ Weaviate is an open-source vector database that allows users to store, search, a
 Learn more from the following resources:
 
 - [@official@Weaviate Website](https://weaviate.io/)
+- [@video@Advanced AI Agents with RAG](https://www.youtube.com/watch?v=UoowC-hsaf0&list=PLTL2JUbrY6tVmVxY12e6vRDmY-maAXzR1)

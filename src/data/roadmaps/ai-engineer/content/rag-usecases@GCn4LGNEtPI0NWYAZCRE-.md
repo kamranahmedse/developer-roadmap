@@ -4,3 +4,6 @@ Retrieval-Augmented Generation (RAG) enhances applications like chatbots, custom
 
 Learn more from the following resources:
 
+- [@article@Retrieval augmented generation use cases: Transforming data into insights](https://www.glean.com/blog/retrieval-augmented-generation-use-cases)
+- [@article@Retrieval Augmented Generation (RAG) – 5 Use Cases](https://theblue.ai/blog/rag-news/)
+- [@video@Introduction to RAG](https://www.youtube.com/watch?v=LmiFeXH-kq8&list=PL-pTHQz4RcBbz78Z5QXsZhe9rHuCs1Jw-)

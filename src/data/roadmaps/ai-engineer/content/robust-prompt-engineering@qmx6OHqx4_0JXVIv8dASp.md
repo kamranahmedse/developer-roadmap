@@ -4,3 +4,5 @@ Robust prompt engineering involves carefully crafting inputs to guide AI models 
 
 Learn more from the following resources:
 
+- [@article@Building Robust Prompt Engineering Capability](https://aimresearch.co/product/building-robust-prompt-engineering-capability)
+- [@article@Effective Prompt Engineering: A Comprehensive Guide](https://medium.com/@nmurugs/effective-prompt-engineering-a-comprehensive-guide-803160c571ed)

@@ -4,3 +4,5 @@ A vector database is designed to store, manage, and retrieve high-dimensional ve
 
 Learn more from the following resources:
 
+- [@article@What is a Vector Database? Top 12 Use Cases](https://lakefs.io/blog/what-is-vector-databases/)
+- [@article@Vector Databases: Intro, Use Cases](https://www.v7labs.com/blog/vector-databases)
