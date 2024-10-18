@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@How to Become an AI Engineer: Duties, Skills, and Salary](https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer)
 - [@article@AI engineers: What they do and how to become one](https://www.techtarget.com/whatis/feature/How-to-become-an-artificial-intelligence-engineer)
 - [@course@AI For Everyone](https://www.coursera.org/learn/ai-for-everyone)
-- [@video@AI Engineers- What Do They Do?](https://www.youtube.com/watch?v=y8qRq9PMCh8&t=1s)
