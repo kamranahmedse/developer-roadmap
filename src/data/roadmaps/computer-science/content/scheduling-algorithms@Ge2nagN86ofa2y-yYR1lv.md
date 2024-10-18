@@ -15,7 +15,7 @@ Here is the list of some of the most commonly used scheduling algorithms:
 - **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.
 
 Visit the following resources to learn more : 
-- [@video@ Introduction to CPU Scheduling](https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL)
-- [@article@ CPU Scheduling in Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/)
-- [@article@ Lottery Scheduling for Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/)
-- [@article@ Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks](https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/)
+- [@video@Introduction to CPU Scheduling](https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL)
+- [@article@CPU Scheduling in Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/)
+- [@article@Lottery Scheduling for Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/)
+- [@article@Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks](https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/)
