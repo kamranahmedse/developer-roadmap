@@ -5,4 +5,6 @@ Code completion tools are AI-powered development assistants designed to enhance 
 Learn more from the following resources:
 
 - [@official@GitHub Copilot](https://github.com/features/copilot)
+- [@official@Codeium](https://codeium.com/)
+- [@official@Supermaven](https://supermaven.com/)
 - [@official@Tabnine](https://www.tabnine.com/)
