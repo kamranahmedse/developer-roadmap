@@ -4,5 +4,4 @@ Multimodal AI enhances image understanding by integrating visual data with other
 
 Learn more from the following resources:
 
-- [@course@Introduction to Image Understanding](https://www.cs.utoronto.ca/~fidler/teaching/2019/CSC420.html)
 - [@article@Low or high fidelity image understanding - OpenAI](https://platform.openai.com/docs/guides/vision/low-or-high-fidelity-image-understanding)
