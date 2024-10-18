@@ -4,6 +4,6 @@ In artificial intelligence (AI), inference refers to the process where a trained
 
 Learn more from the following resources:
 
+- [@article@Inference vs Training](https://www.cloudflare.com/learning/ai/inference-vs-training/)
 - [@article@What is Machine Learning Inference?](https://hazelcast.com/glossary/machine-learning-inference/)
 - [@article@What is Machine Learning Inference? An Introduction to Inference Approaches](https://www.datacamp.com/blog/what-is-machine-learning-inference)
-- [@article@Inference vs Training](https://www.cloudflare.com/learning/ai/inference-vs-training/)
