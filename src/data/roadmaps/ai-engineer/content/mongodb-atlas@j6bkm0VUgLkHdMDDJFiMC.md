@@ -4,5 +4,4 @@ MongoDB Atlas, traditionally known for its document database capabilities, now i
 
 Learn more from the following resources:
 
-- [@official@MongoDB Atlas Website](https://www.mongodb.com/products/platform/atlas-database)
-- [@video@What is MongoDB Atlas?](https://www.youtube.com/watch?v=1EaOihoxyoE)
+- [@official@Vector Search in MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search)
