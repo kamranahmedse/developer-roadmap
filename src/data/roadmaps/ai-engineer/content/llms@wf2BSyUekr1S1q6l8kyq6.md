@@ -1,9 +1,9 @@
 # LLMs
 
-Large Language Models (LLMs) are advanced artificial intelligence programs designed to comprehend and generate human language text.
+LLMs, or Large Language Models, are advanced AI models trained on vast datasets to understand and generate human-like text. They can perform a wide range of natural language processing tasks, such as text generation, translation, summarization, and question answering. Examples include GPT-4, BERT, and T5. LLMs are capable of understanding context, handling complex queries, and generating coherent responses, making them useful for applications like chatbots, content creation, and automated support. However, they require significant computational resources and may carry biases from their training data.
 
-Visit the following resources to learn more:
+Learn more from the following resources:
 
-- [@article@What is a large language model (LLM)?](https://www.cloudflare.com/learning/ai/what-is-large-language-model/)
-- [@article@Large language model](https://en.wikipedia.org/wiki/Large_language_model)
-- [@video@How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ&t=1s)
+- [@article@What is a large language model (LLM)?](https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/)
+- [@video@How Large Langauge Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ)
+- [@video@Large Language Models (LLMs) - Everything You NEED To Know](https://www.youtube.com/watch?v=osKyvYJ3PRM)

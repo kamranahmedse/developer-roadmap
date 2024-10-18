@@ -1,8 +1,8 @@
 # Popular Open Source Models
 
-Notable open-source examples are `BERT`, developed by Google, which has become a foundational model for natural language processing tasks; `BLOOM`, a multilingual model with 176 billion parameters created through a collaborative project by Hugging Face; and `Falcon 180B`, known for its impressive performance in NLP tasks.
+Open-source large language models (LLMs) are models whose source code and architecture are publicly available for use, modification, and distribution. They are built using machine learning algorithms that process and generate human-like text, and being open-source, they promote transparency, innovation, and community collaboration in their development and application.
 
 Learn more from the following resources:
 
-- [@article@Top Open Source Models](https://www.datacamp.com/blog/top-open-source-llms)
-- [@article@Mark on Open Source AI](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
+- [@article@The best large language models (LLMs) in 2024](https://zapier.com/blog/best-llm/)
+- [@article@8 Top Open-Source LLMs for 2024 and Their Uses](https://www.datacamp.com/blog/top-open-source-llms)

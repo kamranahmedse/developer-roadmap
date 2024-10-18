@@ -1,8 +1,8 @@
 # OpenSource AI
 
-Open-source AI refers to the development and deployment of artificial intelligence technologies using open-source practices. This means that the source code is freely accessible, allowing developers to inspect, modify, and distribute AI systems without restrictions.
+Open-source AI refers to AI models, tools, and frameworks that are freely available for anyone to use, modify, and distribute. Examples include TensorFlow, PyTorch, and models like BERT and Stable Diffusion. Open-source AI fosters transparency, collaboration, and innovation by allowing developers to inspect code, adapt models for specific needs, and contribute improvements. This approach accelerates the development of AI technologies, enabling faster experimentation and reducing dependency on proprietary solutions.
 
 Learn more from the following resources:
 
-- [@article@The Open Source AI Definition](https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-3)
-- [@article@Defining Open Source AI](https://www.technologyreview.com/2024/08/22/1097224/we-finally-have-a-definition-for-open-source-ai/)
+- [@article@Open Source AI Is the Path Forward](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
+- [@video@Should You Use Open Source Large Language Models?](https://www.youtube.com/watch?v=y9k-U9AuDeM)

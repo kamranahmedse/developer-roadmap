@@ -1,8 +1,8 @@
 # Ollama Models
 
-Ollama includes popular options like `Llama 2, Mistral, and Code Llama`. It simplifies the deployment process by bundling model weights, configurations, and datasets into a single package managed by a `Modelfile`, allowing users to easily manage and interact with these models. The platform's extensive library allows users to choose models tailored to their specific needs, and reduces reliance in cloud. Ollama Models could be of `text/base`, `chat/instruct` or `multi modal`.
+Ollama provides a collection of large language models (LLMs) designed to run locally on personal devices, enabling privacy-focused and efficient AI applications without relying on cloud services. These models can perform tasks like text generation, translation, summarization, and question answering, similar to popular models like GPT. Ollama emphasizes ease of use, offering models that are optimized for lower resource consumption, making it possible to deploy AI capabilities directly on laptops or edge devices.
 
 Learn more from the following resources:
 
 - [@official@Ollama Model Library](https://ollama.com/library)
-- [@course@Ollama Free Course](https://youtu.be/f4tXwCNP1Ac?si=0RRKIfw2XAsWNNBo)
+- [@video@What are the different types of models? Ollama Course](https://www.youtube.com/watch?v=f4tXwCNP1Ac)

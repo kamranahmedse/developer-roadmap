@@ -1,8 +1,9 @@
 # AI Engineer vs ML Engineer
 
-An AI Engineer develops broad AI solutions, such as chatbots, NLP, and intelligent automation, focusing on integrating AI technologies into large applications. In contrast, an ML Engineer is more focused on building and deploying machine learning models, handling data processing, model training, and optimization in production environments.
+An AI Engineer uses pre-trained models and existing AI tools to improve user experiences. They focus on applying AI in practical ways, without building models from scratch. This is different from AI Researchers and ML Engineers, who focus more on creating new models or developing AI theory.
 
-Visit the following resources to learn more:
+Learn more from the following resources:
 
-- [@article@AI Engineer vs. ML Engineer: Duties, Skills, and Qualifications](https://www.upwork.com/resources/ai-engineer-vs-ml-engineer)
-- [@video@AI Developer vs ML Engineer: What’s the difference?](https://www.youtube.com/watch?v=yU87V2-XisA&t=2s)
+- [@article@What does an AI Engineer do?](https://www.codecademy.com/resources/blog/what-does-an-ai-engineer-do/)
+- [@article@What is an ML Engineer?](https://www.coursera.org/articles/what-is-machine-learning-engineer)
+- [@video@AI vs ML](https://www.youtube.com/watch?v=4RixMPF4xis)
