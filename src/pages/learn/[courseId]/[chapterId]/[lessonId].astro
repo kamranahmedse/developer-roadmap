@@ -2,6 +2,7 @@
 import { ChallengeView } from '../../../../components/Course/ChallengeView';
 import { LessonView } from '../../../../components/Course/LessonView';
 import { QuizView } from '../../../../components/Course/QuizView';
+import { CourseLayout } from '../../../../components/Course/CourseLayout';
 import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
 import {
   getAllCourses,
@@ -70,53 +71,40 @@ const { course, chapter, lesson } = Astro.props;
 ---
 
 <SkeletonLayout title={course.frontmatter.title}>
-  {
-    lesson.frontmatter.type === 'challenge' && (
-      <ChallengeView
-        courseId={courseId}
-        chapterId={chapterId}
-        lessonId={lesson.id}
-        title={course.frontmatter.title}
-        course={course}
-        lesson={lesson}
-        client:load
-      >
-        <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
-          <lesson.Content />
-        </div>
-      </ChallengeView>
-    )
-  }
+  <CourseLayout
+    courseId={courseId}
+    chapterId={chapterId}
+    lessonId={lesson.id}
+    lesson={lesson}
+    title={course.frontmatter.title}
+    chapters={course.chapters}
+    completedPercentage={0}
+    client:load
+  >
+    {
+      lesson.frontmatter.type === 'challenge' && (
+        <ChallengeView lesson={lesson} client:load>
+          <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
+            <lesson.Content />
+          </div>
+        </ChallengeView>
+      )
+    }
 
-  {
-    lesson.frontmatter.type === 'lesson' && (
-      <LessonView
-        courseId={courseId}
-        chapterId={chapterId}
-        lessonId={lesson.id}
-        title={course.frontmatter.title}
-        course={course}
-        lesson={lesson}
-        client:load
-      >
-        <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
-          <lesson.Content />
-        </div>
-      </LessonView>
-    )
-  }
+    {
+      lesson.frontmatter.type === 'lesson' && (
+        <LessonView client:load>
+          <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
+            <lesson.Content />
+          </div>
+        </LessonView>
+      )
+    }
 
-  {
-    lesson.frontmatter.type === 'quiz' && (
-      <QuizView
-        courseId={courseId}
-        chapterId={chapterId}
-        lessonId={lesson.id}
-        title={course.frontmatter.title}
-        course={course}
-        lesson={lesson}
-        client:load
-      />
-    )
-  }
+    {
+      lesson.frontmatter.type === 'quiz' && (
+        <QuizView lesson={lesson} client:load />
+      )
+    }
+  </CourseLayout>
 </SkeletonLayout>

@@ -14,8 +14,8 @@ export const editorDarkTheme = EditorView.theme(
     '.cm-content': {},
     // Line number styles
     '.cm-lineNumbers .cm-gutterElement': {
-      color: '#757575', // Text color for line numbers
-      paddingRight: '1em',
+      color: '#757575',
+      minWidth: '24px',
     },
     // Scrollbar styles
     '.cm-scroller': {
@@ -25,7 +25,7 @@ export const editorDarkTheme = EditorView.theme(
     '.cm-scroller::-webkit-scrollbar': {},
     // Highlight active line
     '.cm-activeLine': {
-      backgroundColor: '#27272a', // Active line background color
+      backgroundColor: '#27272a',
     },
     // Cursor styles
     '.cm-cursor': {
@@ -55,6 +55,9 @@ export const editorDarkTheme = EditorView.theme(
     '.cm-foldPlaceholder': {
       border: 'none',
       backgroundColor: 'transparent',
+    },
+    '& .cm-foldGutter .cm-gutterElement': {
+      paddingLeft: '4px',
     },
   },
   {

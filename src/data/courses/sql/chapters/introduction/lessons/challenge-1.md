@@ -4,9 +4,15 @@ description: Write a SQL query to find the total number of orders in the `orders
 order: 300
 type: challenge
 defaultValue: |
-  SELECT * FROM orders;
-  
-  SELECT COUNT(*) FROM orders;
+  SELECT
+    *
+  FROM
+    orders;
+
+  SELECT
+    COUNT(*)
+  FROM
+    orders;
 initSteps:
   - CREATE TABLE orders (
     id INTEGER PRIMARY KEY,

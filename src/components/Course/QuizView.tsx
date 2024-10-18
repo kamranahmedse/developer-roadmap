@@ -1,28 +1,14 @@
 import { useState } from 'react';
-import { CourseLayout } from './CourseLayout';
 import { Circle, CircleCheck, CircleX } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import type {
-  ChapterFileType,
-  CourseFileType,
-  LessonFileType,
-} from '../../lib/course';
+import type { LessonFileType } from '../../lib/course';
 
 type QuizViewProps = {
-  courseId: string;
-  chapterId: string;
-  lessonId: string;
-
-  title: string;
-  course: CourseFileType & {
-    chapters: ChapterFileType[];
-  };
   lesson: LessonFileType;
 };
 
 export function QuizView(props: QuizViewProps) {
-  const { title, course, lesson, courseId, lessonId, chapterId } = props;
-  const { chapters } = course;
+  const { lesson } = props;
 
   const { frontmatter } = lesson;
   const { questions = [] } = frontmatter;
@@ -45,85 +31,75 @@ export function QuizView(props: QuizViewProps) {
   }).length;
 
   return (
-    <CourseLayout
-      courseId={courseId}
-      chapterId={chapterId}
-      lessonId={lesson.id}
-      lesson={lesson}
-      title={title}
-      chapters={chapters}
-      completedPercentage={0}
-    >
-      <div className="relative h-full">
-        <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
-          <div className="mx-auto max-w-xl p-4 py-10">
-            <h3 className="mb-10 text-lg font-semibold">
-              SQL Quiz: Intermediate
-            </h3>
+    <div className="relative h-full">
+      <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
+        <div className="mx-auto max-w-xl p-4 py-10">
+          <h3 className="mb-10 text-lg font-semibold">
+            SQL Quiz: Intermediate
+          </h3>
 
-            <div className="flex flex-col gap-3">
-              {questions.map((question) => {
-                return (
-                  <QuizItem
-                    key={question.id}
-                    id={question.id}
-                    title={question.title}
-                    disabled={isSubmitted}
-                    options={question.options.map((option) => {
-                      const selectedOptionId = selectedOptions?.[question.id];
+          <div className="flex flex-col gap-3">
+            {questions.map((question) => {
+              return (
+                <QuizItem
+                  key={question.id}
+                  id={question.id}
+                  title={question.title}
+                  disabled={isSubmitted}
+                  options={question.options.map((option) => {
+                    const selectedOptionId = selectedOptions?.[question.id];
 
-                      let optionStatus: QuizOptionStatus = 'default';
-                      if (option.isCorrectOption && isSubmitted) {
-                        optionStatus = 'correct';
-                      } else if (selectedOptionId === option.id) {
-                        optionStatus = isSubmitted ? 'wrong' : 'selected';
-                      }
+                    let optionStatus: QuizOptionStatus = 'default';
+                    if (option.isCorrectOption && isSubmitted) {
+                      optionStatus = 'correct';
+                    } else if (selectedOptionId === option.id) {
+                      optionStatus = isSubmitted ? 'wrong' : 'selected';
+                    }
 
-                      return {
-                        ...option,
-                        status: optionStatus,
-                      };
-                    })}
-                    onOptionSelectChange={(id, optionId) => {
-                      setSelectedOptions((prev) => ({
-                        ...prev,
-                        [id]: optionId,
-                      }));
-                    }}
-                    selectedOptionId={selectedOptions?.[question.id]}
-                  />
-                );
-              })}
-            </div>
-
-            <div className="mt-8 flex items-center justify-end">
-              <button
-                className="rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
-                disabled={isSubmitted || !isAllAnswered}
-                onClick={() => {
-                  setIsSubmitted(true);
-                }}
-              >
-                Submit my Answers
-              </button>
-            </div>
-
-            {isSubmitted && (
-              <div className="mt-8 flex items-center justify-between gap-2 rounded-xl border border-zinc-800 p-4">
-                <span>
-                  You got {correctAnswerCount} out of {questions.length}{' '}
-                  questions right
-                </span>
-
-                <a className="disabled:cusror-not-allowed rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none">
-                  Move to Next Lesson
-                </a>
-              </div>
-            )}
+                    return {
+                      ...option,
+                      status: optionStatus,
+                    };
+                  })}
+                  onOptionSelectChange={(id, optionId) => {
+                    setSelectedOptions((prev) => ({
+                      ...prev,
+                      [id]: optionId,
+                    }));
+                  }}
+                  selectedOptionId={selectedOptions?.[question.id]}
+                />
+              );
+            })}
           </div>
+
+          <div className="mt-8 flex items-center justify-end">
+            <button
+              className="rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={isSubmitted || !isAllAnswered}
+              onClick={() => {
+                setIsSubmitted(true);
+              }}
+            >
+              Submit my Answers
+            </button>
+          </div>
+
+          {isSubmitted && (
+            <div className="mt-8 flex items-center justify-between gap-2 rounded-xl border border-zinc-800 p-4">
+              <span>
+                You got {correctAnswerCount} out of {questions.length} questions
+                right
+              </span>
+
+              <a className="disabled:cusror-not-allowed rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none">
+                Move to Next Lesson
+              </a>
+            </div>
+          )}
         </div>
       </div>
-    </CourseLayout>
+    </div>
   );
 }
 
