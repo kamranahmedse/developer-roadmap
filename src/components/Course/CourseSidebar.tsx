@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { ChapterFileType } from '../../lib/course';
+import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
 
 export type CourseSidebarProps = {
@@ -9,6 +9,7 @@ export type CourseSidebarProps = {
 
   title: string;
   chapters: ChapterFileType[];
+  lesson: LessonFileType;
 
   completedPercentage: number;
 };

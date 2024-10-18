@@ -19,10 +19,17 @@ export type SqlCodeEditorProps = {
 
   initSteps?: string[];
   expectedResults?: QueryExecResult[];
+
+  onQuerySubmit?: () => void;
 };
 
 export function SqlCodeEditor(props: SqlCodeEditorProps) {
-  const { defaultValue, initSteps = [], expectedResults } = props;
+  const {
+    defaultValue,
+    initSteps = [],
+    expectedResults,
+    onQuerySubmit,
+  } = props;
 
   const editorRef = useRef<HTMLDivElement>(null);
   const [queryResult, setQueryResult] = useState<QueryExecResult[] | null>(
@@ -144,24 +151,10 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
               const { results, error } = handleQuery(query);
               setQueryResult(results);
               setQueryError(error);
-              setIsSubmitted(false);
-            }}
-          />
-
-          <DatabaseActionButton
-            label="Submit"
-            onClick={() => {
-              const query = editor?.state?.doc.toString();
-              if (!query) {
-                return;
-              }
-
-              const { results, error } = handleQuery(query);
-              setQueryResult(results);
-              setQueryError(error);
               setIsSubmitted(true);
+
+              onQuerySubmit?.();
             }}
-            className="bg-zinc-800 px-3 text-white"
           />
         </div>
       </ResizablePanel>

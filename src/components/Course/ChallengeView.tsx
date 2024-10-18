@@ -27,8 +27,7 @@ type ChallengeViewProps = {
 };
 
 export function ChallengeView(props: ChallengeViewProps) {
-  const { children, title, course, lesson, courseId, lessonId, chapterId } =
-    props;
+  const { children, title, course, lesson, courseId, chapterId } = props;
   const { chapters } = course;
 
   const { frontmatter } = lesson;
@@ -39,6 +38,7 @@ export function ChallengeView(props: ChallengeViewProps) {
       courseId={courseId}
       chapterId={chapterId}
       lessonId={lesson.id}
+      lesson={lesson}
       title={title}
       chapters={chapters}
       completedPercentage={0}

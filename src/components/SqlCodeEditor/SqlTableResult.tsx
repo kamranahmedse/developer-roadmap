@@ -6,7 +6,6 @@ type SqlTableResultProps = {
   error?: string;
 
   onTryAgain?: () => void;
-  onNext?: () => void;
 
   matchAnswers?: boolean;
   expectedResults?: QueryExecResult[] | null;
@@ -16,7 +15,6 @@ export function SqlTableResult(props: SqlTableResultProps) {
   const {
     results,
     error,
-    onNext,
     onTryAgain,
     expectedResults,
     matchAnswers = false,
@@ -52,12 +50,6 @@ export function SqlTableResult(props: SqlTableResultProps) {
                 onClick={onTryAgain}
               >
                 Yes, I want to try again
-              </button>
-              <button
-                className="rounded-md bg-zinc-800 px-2 py-0.5 outline-none focus:outline-none"
-                onClick={onNext}
-              >
-                No, move to next
               </button>
             </div>
           </div>

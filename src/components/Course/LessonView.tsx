@@ -23,8 +23,7 @@ type LessonViewProps = {
 };
 
 export function LessonView(props: LessonViewProps) {
-  const { children, title, course, lesson, courseId, lessonId, chapterId } =
-    props;
+  const { children, title, course, lesson, courseId, chapterId } = props;
   const { chapters } = course;
 
   return (
@@ -32,6 +31,7 @@ export function LessonView(props: LessonViewProps) {
       courseId={courseId}
       chapterId={chapterId}
       lessonId={lesson.id}
+      lesson={lesson}
       title={title}
       chapters={chapters}
       completedPercentage={0}

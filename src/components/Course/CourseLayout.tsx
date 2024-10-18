@@ -3,12 +3,13 @@ import { CourseSidebar, type CourseSidebarProps } from './CourseSidebar';
 import { useMemo } from 'react';
 
 type CourseLayoutProps = {
+  isSubmitted?: boolean;
   children: React.ReactNode;
 } & CourseSidebarProps;
 
 export function CourseLayout(props: CourseLayoutProps) {
-  const { children, ...sidebarProps } = props;
-  const { chapters, courseId, chapterId, lessonId } = sidebarProps;
+  const { children, isSubmitted, ...sidebarProps } = props;
+  const { chapters, courseId, chapterId, lessonId, lesson } = sidebarProps;
 
   const allLessonLinks = useMemo(() => {
     const lessons: string[] = [];
@@ -51,6 +52,14 @@ export function CourseLayout(props: CourseLayoutProps) {
           <button
             className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
             onClick={() => {
+              if (!isSubmitted && lesson?.frontmatter?.type !== 'lesson') {
+                // show a warning modal
+                window.alert(
+                  'Please submit your answer before moving to the next lesson.',
+                );
+                return;
+              }
+
               window.location.href = nextLessonLink;
             }}
             disabled={!nextLessonLink}

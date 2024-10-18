@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { CourseSidebar } from './CourseSidebar';
 import { CourseLayout } from './CourseLayout';
 import { Circle, CircleCheck, CircleX } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -50,6 +49,7 @@ export function QuizView(props: QuizViewProps) {
       courseId={courseId}
       chapterId={chapterId}
       lessonId={lesson.id}
+      lesson={lesson}
       title={title}
       chapters={chapters}
       completedPercentage={0}
