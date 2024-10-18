@@ -4,6 +4,6 @@ The chunking step in Retrieval-Augmented Generation (RAG) involves breaking down
 
 Learn more from the following resources:
 
-- [@article@Chunk large documents for vector search solutions in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
+- [@article@Understanding LangChain's RecursiveCharacterTextSplitter](https://dev.to/eteimz/understanding-langchains-recursivecharactertextsplitter-2846)
 - [@article@Chunking Strategies for LLM Applications](https://www.pinecone.io/learn/chunking-strategies/)
 - [@article@A Guide to Chunking Strategies for Retrieval Augmented Generation](https://zilliz.com/learn/guide-to-chunking-strategies-for-rag)
