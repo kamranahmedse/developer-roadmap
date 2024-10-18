@@ -1,9 +1,8 @@
 # Supabase
 
-Supabase is an open-source backend-as-a-service (BaaS) platform that provides developers with a suite of tools to build scalable web and mobile applications quickly. It offers features like a managed PostgreSQL database, real-time data synchronization, authentication, and storage, making it easy to set up and manage backend infrastructure without extensive coding. Supabase also includes APIs for interacting with the database, enabling developers to focus on building front-end features while relying on a robust, scalable backend. Its simplicity, open-source nature, and integration with modern development frameworks make it an attractive alternative to services like Firebase, especially for projects that prioritize control over data and flexibility.
+Supabase Vector is an extension of the Supabase platform, specifically designed for AI and machine learning applications that require vector operations. It leverages PostgreSQL's pgvector extension to provide efficient vector storage and similarity search capabilities. This makes Supabase Vector particularly useful for applications involving embeddings, semantic search, and recommendation systems. With Supabase Vector, developers can store and query high-dimensional vector data alongside regular relational data, all within the same PostgreSQL database.
 
 Learn more from the following resources:
 
-- [@official@Supabase website](https://supabase.com/)
-- [@article@Exploring Supabase - The Open Source Firebase Alternative](https://www.linkedin.com/pulse/exploring-supabase-open-source-firebase-alternative-wnjrc/)
-- [@video@Supabase in 100 Seconds](https://www.youtube.com/watch?v=zBZgdTb-dns)
+- [@official@Supabase Vector website](https://supabase.com/vector)
+- [@video@Supabase Vector: The Postgres Vector database](https://www.youtube.com/watch?v=MDxEXKkxf2Q)

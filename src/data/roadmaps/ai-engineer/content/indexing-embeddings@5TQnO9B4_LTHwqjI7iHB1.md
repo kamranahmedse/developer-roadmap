@@ -1,6 +1,6 @@
 # Indexing Embeddings
 
-Indexing embeddings for vector search involves organizing dense vector representations of data (like text or images) into a searchable structure that allows efficient retrieval based on similarity. In vector search, embeddings are indexed using techniques like clustering or tree-based methods, enabling fast, approximate nearest neighbor (ANN) searches. This allows systems to quickly find and retrieve items that are semantically similar to a query, even in large datasets.
+Embeddings are stored in a vector database by first converting data, such as text, images, or audio, into high-dimensional vectors using machine learning models. These vectors, also called embeddings, capture the semantic relationships and patterns within the data. Once generated, each embedding is indexed in the vector database along with its associated metadata, such as the original data (e.g., text or image) or an identifier. The vector database then organizes these embeddings to support efficient similarity searches, typically using techniques like approximate nearest neighbor (ANN) search.
 
 Learn more from the following resources:
 

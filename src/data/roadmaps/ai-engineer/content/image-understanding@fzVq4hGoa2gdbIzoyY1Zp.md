@@ -1,8 +1,8 @@
 # Image Understanding
 
-Image understanding is the ability of AI models to analyze and interpret visual content, recognizing objects, scenes, and patterns within images. It involves tasks like object detection, classification, and segmentation, using techniques such as CNNs and Vision Transformers. Applications include autonomous driving, medical imaging, and content moderation, where accurate visual perception is essential.
+Multimodal AI enhances image understanding by integrating visual data with other types of information, such as text or audio. By combining these inputs, AI models can interpret images more comprehensively, recognizing objects, scenes, and actions, while also understanding context and related concepts. For example, an AI system could analyze an image and generate descriptive captions, or provide explanations based on both visual content and accompanying text.
 
 Learn more from the following resources:
 
 - [@course@Introduction to Image Understanding](https://www.cs.utoronto.ca/~fidler/teaching/2019/CSC420.html)
-- [@article@Image Detection, Recognition, And Classification With Machine Learning](https://azati.ai/image-detection-recognition-and-classification-with-machine-learning/)
+- [@article@Low or high fidelity image understanding - OpenAI](https://platform.openai.com/docs/guides/vision/low-or-high-fidelity-image-understanding)

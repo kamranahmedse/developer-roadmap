@@ -1,3 +1,8 @@
 # Manual Implementation
 
-Manual intervention refers to the process where human input is needed to guide, correct, or supervise the actions of the AI. This can include tasks like fine-tuning model outputs, handling exceptions the AI can't address, or setting rules to ensure safe and reliable behavior. Manual intervention is essential when building AI agents to maintain control over critical decisions, address edge cases, and ensure ethical and accurate performance, especially in complex or sensitive applications where full autonomy is not yet feasible or advisable.
+Manual implementation often involves using tools and functions that allow developers to define specific functions or actions that an AI model can invoke, providing a structured way to extend the model's capabilities. For example, OpenAI's Function Calling enables developers to describe functions to the model, allowing it to generate JSON inputs for these functions based on user queries. This approach helps in guiding the AI's responses, handling specific tasks, and ensuring more controlled and reliable outputs. Similarly, Vercel's AI SDK offers a set of tools for building AI-powered applications, allowing for seamless integration of AI capabilities into web applications.
+
+Learn more from the following resources:
+
+- [@official@OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling)
+- [@official@Vercel AI SDK](https://sdk.vercel.ai/docs/foundations/tools)

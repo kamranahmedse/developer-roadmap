@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Mastering AI Data Classification](https://www.datamation.com/big-data/ai-data-classification/)
 - [@article@Simplifying Data Classification for Businesses Using AI](https://www.one-beyond.com/simplifying-data-classification-for-businesses-using-ai/)
+- [@video@Text Embeddings, Classification, and Semantic Search (w/ Python Code)](https://www.youtube.com/watch?v=sNa_uiqSlJo)

@@ -1,6 +1,6 @@
 # Video Understanding
 
-Video understanding in AI is the ability to analyze and interpret content within videos, including objects, actions, scenes, and speech. It combines visual and audio processing to extract meaningful information, enabling tasks like video summarization, content moderation, and activity recognition. This approach is used in applications such as surveillance, streaming platforms, and video analytics, providing a comprehensive understanding of video content.
+Video understanding with multimodal AI involves analyzing and interpreting both visual and audio content to provide a more comprehensive understanding of videos. Common use cases include video summarization, where AI extracts key scenes and generates summaries; content moderation, where the system detects inappropriate visuals or audio; and video indexing for easier search and retrieval of specific moments within a video. Other applications include enhancing video-based recommendations, security surveillance, and interactive entertainment, where video and audio are processed together for real-time user interaction.
 
 Learn more from the following resources:
 

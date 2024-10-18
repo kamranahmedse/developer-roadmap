@@ -1,8 +1,7 @@
 # Know your Customers / Usecases
 
-By having a clear understanding of the target users and the scenarios in which the AI will operate, developers can design systems that align better with user expectations, avoid misuse, and address ethical concerns. This awareness helps in configuring models to minimize risks, setting appropriate safety measures, and ensuring that the AI's outputs are relevant, reliable, and safe for the intended audience.
+To know your customer means deeply understanding the needs, behaviors, and expectations of your target users. This ensures the tools you create are tailored precisely for their intended purpose, while also being designed to prevent misuse or unintended applications. By clearly defining the tool’s functionality and boundaries, you can align its features with the users’ goals while incorporating safeguards that limit its use in contexts it wasn’t designed for. This approach enhances both the tool’s effectiveness and safety, reducing the risk of improper use.
 
 Learn more from the following resources:
 
-- [@article@What is Know Your Customer (KYC)?](https://c3.ai/glossary/artificial-intelligence/know-your-customer-kyc/)
-- [@article@How fraudsters bypass customer identity verification using deepfakes](https://www.kaspersky.com/blog/how-deepfakes-threaten-kyc/51987/)
+- [@article@Assigning Roles](https://learnprompting.org/docs/basics/roles)

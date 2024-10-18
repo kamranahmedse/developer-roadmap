@@ -1,6 +1,6 @@
 # Semantic Search
 
-Semantic search is an AI-driven approach that focuses on understanding the meaning and context behind search queries to deliver more accurate and relevant results. Unlike traditional keyword-based search, which matches exact words, semantic search uses techniques like embeddings to capture the relationships between words and concepts. This allows it to find results that are contextually similar, even if they don't contain the exact query terms. By analyzing the intent and context behind a user's input, semantic search improves the quality of information retrieval, making it especially useful for applications like knowledge bases, recommendation systems, and content discovery platforms.
+Embeddings are used for semantic search by converting text, such as queries and documents, into high-dimensional vectors that capture the underlying meaning and context, rather than just exact words. These embeddings represent the semantic relationships between words or phrases, allowing the system to understand the query’s intent and retrieve relevant information, even if the exact terms don’t match.
 
 Learn more from the following resources:
 

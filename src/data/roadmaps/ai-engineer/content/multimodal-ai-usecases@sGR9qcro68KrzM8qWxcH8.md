@@ -4,5 +4,4 @@ Multimodal AI powers applications like visual question answering, content modera
 
 Learn more from the following resources:
 
-- [@article@What is Multimodal AI?](https://www.techtarget.com/searchenterpriseai/definition/multimodal-AI)
-- [@video@Unlocking innovative generative AI use cases with text and multimodal embeddings](https://www.youtube.com/watch?v=2M43pIOo77Y)
+- [@official@Hugging Face Multimodal Models](https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/a_multimodal_world)

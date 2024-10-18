@@ -1,8 +1,9 @@
 # Anomaly Detection
 
-Anomaly detection is the process of identifying data points, events, or behaviors that significantly deviate from the norm or expected patterns within a dataset. In AI engineering, it involves using statistical, machine learning, or deep learning techniques to detect outliers, fraud, network intrusions, or equipment failures. Common methods include clustering, statistical models, and neural networks, which can be applied in real-time or on historical data across various industries such as finance, healthcare, and cybersecurity.
+Anomaly detection with embeddings works by transforming data, such as text, images, or time-series data, into vector representations that capture their patterns and relationships. In this high-dimensional space, similar data points are positioned close together, while anomalies stand out as those that deviate significantly from the typical distribution. This approach is highly effective for detecting outliers in tasks like fraud detection, network security, and quality control.
 
 Learn more from the following resources:
 
 - [@article@Anomoly Detection](https://www.ibm.com/topics/anomaly-detection)
+- [@article@Anomoly in Embeddings](https://ai.google.dev/gemini-api/tutorials/anomaly_detection)
 - [@video@Anomoly 101](https://www.youtube.com/watch?v=mhSFyXbCaPM)
