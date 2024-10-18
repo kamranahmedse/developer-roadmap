@@ -532,6 +532,11 @@
         "title": "Async Errors",
         "url": "https://www.mariokandut.com/handling-errors-in-asynchronous-functions-node-js/",
         "type": "article"
+      },
+      {
+        "title": "The best way to handle errors in asynchronous javascript",
+        "url": "https://dev.to/m__mdy__m/the-best-way-to-handle-errors-in-asynchronous-javascript-16bb",
+        "type": "article"
       }
     ]
   },
