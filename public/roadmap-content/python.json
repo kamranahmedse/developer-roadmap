@@ -319,6 +319,11 @@
         "title": "Explore top posts about Python",
         "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Learn Python - Full Course",
+        "url": "https://www.youtube.com/watch?v=4M87qBgpafk",
+        "type": "video"
       }
     ]
   },
