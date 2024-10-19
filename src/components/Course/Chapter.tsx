@@ -43,7 +43,11 @@ export function Chapter(props: ChapterProps) {
   const filteredLessons = useMemo(
     () =>
       lessons
-        ?.filter((lesson) => lesson.frontmatter.type === 'lesson')
+        ?.filter((lesson) =>
+          ['lesson', 'lesson-challenge', 'lesson-quiz'].includes(
+            lesson.frontmatter.type,
+          ),
+        )
         ?.sort((a, b) => a.frontmatter.order - b.frontmatter.order) || [],
     [lessons],
   );

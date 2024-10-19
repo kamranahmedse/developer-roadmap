@@ -35,7 +35,7 @@ export function QuizView(props: QuizViewProps) {
       <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
         <div className="mx-auto max-w-xl p-4 py-10">
           <h3 className="mb-10 text-lg font-semibold">
-            SQL Quiz: Intermediate
+            {lesson.frontmatter.title}
           </h3>
 
           <div className="flex flex-col gap-3">

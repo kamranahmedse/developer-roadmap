@@ -2,6 +2,7 @@
 import { ChallengeView } from '../../../../components/Course/ChallengeView';
 import { LessonView } from '../../../../components/Course/LessonView';
 import { QuizView } from '../../../../components/Course/QuizView';
+import { LessonQuizView } from '../../../../components/Course/LessonQuizView';
 import { CourseLayout } from '../../../../components/Course/CourseLayout';
 import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
 import {
@@ -82,11 +83,10 @@ const { course, chapter, lesson } = Astro.props;
     client:load
   >
     {
-      lesson.frontmatter.type === 'challenge' && (
+      (lesson.frontmatter.type === 'challenge' ||
+        lesson.frontmatter.type === 'lesson-challenge') && (
         <ChallengeView lesson={lesson} client:load>
-          <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
-            <lesson.Content />
-          </div>
+          <lesson.Content />
         </ChallengeView>
       )
     }
@@ -94,9 +94,7 @@ const { course, chapter, lesson } = Astro.props;
     {
       lesson.frontmatter.type === 'lesson' && (
         <LessonView client:load>
-          <div class='course-content prose prose-lg prose-invert mt-8 text-zinc-300 prose-headings:mb-3 prose-headings:mt-8 prose-code:text-zinc-100 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800'>
-            <lesson.Content />
-          </div>
+          <lesson.Content />
         </LessonView>
       )
     }
@@ -104,6 +102,14 @@ const { course, chapter, lesson } = Astro.props;
     {
       lesson.frontmatter.type === 'quiz' && (
         <QuizView lesson={lesson} client:load />
+      )
+    }
+
+    {
+      lesson.frontmatter.type === 'lesson-quiz' && (
+        <LessonQuizView lesson={lesson} client:load>
+          <lesson.Content />
+        </LessonQuizView>
       )
     }
   </CourseLayout>

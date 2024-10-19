@@ -10,7 +10,7 @@ export type LessonFrontmatter = {
   title: string;
   description: string;
   order: number;
-  type: 'lesson' | 'challenge' | 'quiz';
+  type: 'lesson' | 'challenge' | 'quiz' | 'lesson-challenge' | 'lesson-quiz';
 
   defaultValue?: string;
   initSteps?: string[];
