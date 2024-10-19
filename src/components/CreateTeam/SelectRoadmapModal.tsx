@@ -92,7 +92,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
           />
           <div className="min-h-[200px] p-4">
             <span className="block pb-3 text-xs uppercase text-gray-400">
-              Role-Based Roadmaps
+              Role Based Roadmaps
             </span>
             {roleBasedRoadmaps.length === 0 && (
               <p className="mb-1 flex h-full items-start text-sm italic text-gray-400"></p>
@@ -120,7 +120,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
               </div>
             )}
             <span className="block pb-3 text-xs uppercase text-gray-400">
-              Skill-Based Roadmaps
+              Skill Based Roadmaps
             </span>
             <div className="flex flex-wrap items-center gap-2">
               {skillBasedRoadmaps.map((roadmap) => {
