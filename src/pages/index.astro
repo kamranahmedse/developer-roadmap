@@ -41,7 +41,7 @@ const videos = await getAllVideos();
     <HeroSection />
 
     <FeaturedItems
-      heading='Role based Roadmaps'
+      heading='Role-based Roadmaps'
       featuredItems={roleRoadmaps
         .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
         .map((roadmapItem) => ({
@@ -54,7 +54,7 @@ const videos = await getAllVideos();
     />
 
     <FeaturedItems
-      heading='Skill based Roadmaps'
+      heading='Skill-based Roadmaps'
       featuredItems={skillRoadmaps
         .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
         .map((roadmapItem) => ({
