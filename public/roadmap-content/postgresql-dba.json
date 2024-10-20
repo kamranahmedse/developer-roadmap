@@ -1514,12 +1514,12 @@
     "description": "PgBouncer is a lightweight connection pooler for PostgreSQL, designed to reduce the overhead associated with establishing new database connections. It sits between the client and the PostgreSQL server, maintaining a pool of active connections that clients can reuse, thus improving performance and resource utilization. PgBouncer supports multiple pooling modes, including session pooling, transaction pooling, and statement pooling, catering to different use cases and workloads. It is highly configurable, allowing for fine-tuning of connection limits, authentication methods, and other parameters to optimize database access and performance.",
     "links": [
       {
-        "title": "pgbouncer/pgbouncer",
+        "title": "pgbounder/pgbouncer",
         "url": "https://github.com/pgbouncer/pgbouncer",
         "type": "opensource"
       },
       {
-        "title": "PgBouncer Website",
+        "title": "PgBounder Website",
         "url": "https://www.pgbouncer.org/",
         "type": "article"
       }
