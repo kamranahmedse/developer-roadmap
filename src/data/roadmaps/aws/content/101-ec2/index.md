@@ -5,4 +5,4 @@ Amazon Elastic Compute Cloud (EC2) is a web service that provides secure, resiza
 Visit the following resources to learn more:
 
 - [@official@EC2 - User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
-- [@video@Introduction to Amazon EC2](https://www.youtube.com/watch?v=TsRBftzZsQo)
+- [@video@Introduction to Amazon EC2](https://www.youtube.com/watch?v=eaicwmnSdCs)
