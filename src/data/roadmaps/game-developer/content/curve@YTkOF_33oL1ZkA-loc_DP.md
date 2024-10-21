@@ -1,3 +1,8 @@
 ## Curve
 
-A `curve` in game development is a mathematical tool used to create smooth, flowing lines or paths in digital environments. It's a fundamental concept that finds applications across various aspects of game creation, from character animation and 3D modeling to user interface design and level layouts. Curves allow developers to define `complex shapes` and movements with relatively simple mathematical expressions, enabling more natural and visually appealing results compared to linear or angular alternatives. They're particularly useful for creating lifelike animations, designing organic shapes in 3D models, implementing `realistic physics` for object trajectories, and crafting smooth `camera movements`. Understanding curves is essential for game developers aiming to create polished, professional-looking games with fluid motion and organic aesthetics.
+A `curve` in game development is a mathematical tool for creating smooth lines or paths, used in areas like animation, 3D modeling, UI design, and level layouts. Curves simplify complex shapes and movements, enabling more natural results compared to linear approaches. They're key for `lifelike animations`, organic shapes, `realistic physics`, and smooth camera movements, essential for polished, fluid game design.
+
+Learn more from the following resources:
+
+- [@article@Curves wikipedia](https://en.wikipedia.org/wiki/Curve)
+- [@article@Curves basics](https://byjus.com/maths/curve/)
