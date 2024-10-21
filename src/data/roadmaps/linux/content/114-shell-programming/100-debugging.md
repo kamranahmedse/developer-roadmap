@@ -16,8 +16,6 @@ Or, you can run a script in debug mode directly from the command line.
 bash -x script.sh
 ```
 
-Or You can use dedicated Bash Debuggers Available such as - [Bashdb](https://bashdb.sourceforge.net/). Bahsdb follows the gdb command syntax.
-
 These debugging tools and options can drastically help you in making your scripts more error-proof and efficient.
 
 Visit the following sources to learn more: 

@@ -9,15 +9,6 @@ Typically, the two most commonly used boot loaders in Linux are LILO (Linux Load
 sudo update-grub
 ```
 
-## Example Command of Installing GRUB Bootloader on a *NEW* Operating System 
-> [!WARNING]
-> Don't run this command unless instructed to! Running this command _**incorrectly**_ can make your system unbootable.
-> This command is typically used after installing a new operating system or making significant changes to the boot configuration.
-```bash
-# This command installs the GRUB bootloader on a 64-bit EFI(Extensible Firmware Interface) system, placing it in the /boot directory and setting the bootloader ID to "GRUB".
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-```
-
 Irrespective of the type of Boot Loader used, understanding and configuring them properly is essential for maintaining an efficient, stable and secure operating system. Boot loaders also allow users to switch between different operating systems on the same machine, if required.
 
 Visit the following resources to learn more:

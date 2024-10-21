@@ -13,12 +13,6 @@ echo "Hello, World!"
 ```
 The 'echo' command prints its argument, in this case "Hello, World!", to the terminal.
 
-Run -
-```bash
-info bash
-```
-to read the official bash documentation installed in your linux operating system.
-
 Visit the following resources to learn more:
 
 - [@article@Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
