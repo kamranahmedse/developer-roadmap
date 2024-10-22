@@ -1675,6 +1675,11 @@
         "title": "React Suspense",
         "url": "https://react.dev/reference/react/Suspense",
         "type": "article"
+      },
+      {
+        "title": "React Suspense - A complete guide",
+        "url": "https://hygraph.com/blog/react-suspense",
+        "type": "article"
       }
     ]
   },
