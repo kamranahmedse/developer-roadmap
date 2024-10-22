@@ -15,3 +15,8 @@ mount /dev/sdb1 /mnt
 The above command will mount the filesystem (assuming it's a valid one) on the second partition of a second hard drive at the `/mnt` directory. After the partition is mounted, you can access the files using the `/mnt` directory.
 
 Understanding and managing mounts is crucial for effective Linux disk and filesystem management.
+
+Visit the following resources to learn more:
+- [@article@Mounting, unmounting and the /mnt directory - The Linux Documentation Project](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/mnt.html)
+- [@article@Linux `mount` command with Examples](https://phoenixnap.com/kb/linux-mount-command)
+- [@official@The `mount` command manual page](https://man7.org/linux/man-pages/man8/mount.8.html)

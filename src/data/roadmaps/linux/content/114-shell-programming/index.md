@@ -15,4 +15,4 @@ The 'echo' command prints its argument, in this case "Hello, World!", to the ter
 
 Visit the following resources to learn more:
 
-- [@article@Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
+- [@video@Bash Scripting on Linux - YT Playlist](https://youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w&si=MSehStqnhSqgoMSj)
