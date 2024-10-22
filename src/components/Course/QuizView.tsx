@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Circle, CircleCheck, CircleX } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { LessonFileType } from '../../lib/course';
-import { lessonSubmitStatus } from '../../stores/course';
+import { currentLesson } from '../../stores/course';
+import { useStore } from '@nanostores/react';
 
 type QuizViewProps = {
   lesson: LessonFileType;
@@ -18,6 +19,7 @@ export function QuizView(props: QuizViewProps) {
     Record<number, number | undefined>
   >({});
 
+  const $currentLesson = useStore(currentLesson);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const isAllAnswered =
@@ -80,7 +82,15 @@ export function QuizView(props: QuizViewProps) {
               disabled={isSubmitted || !isAllAnswered}
               onClick={() => {
                 setIsSubmitted(true);
-                lessonSubmitStatus.set('submitted');
+                if (!$currentLesson) {
+                  console.error('FIX: update current lesson');
+                  return;
+                }
+
+                currentLesson.set({
+                  ...$currentLesson,
+                  quizStatus: 'correct',
+                });
               }}
             >
               Submit my Answers

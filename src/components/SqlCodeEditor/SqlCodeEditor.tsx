@@ -13,7 +13,8 @@ import { keymap } from '@codemirror/view';
 import { Check, type LucideIcon, Play, WandSparkles, X } from 'lucide-react';
 import { useSqlite } from './use-sqlite';
 import { cn } from '../../lib/classname';
-import { lessonSubmitStatus } from '../../stores/course';
+import { currentLesson } from '../../stores/course';
+import { useStore } from '@nanostores/react';
 
 export type SqlCodeEditorProps = {
   defaultValue?: string;
@@ -25,6 +26,7 @@ export type SqlCodeEditorProps = {
 export function SqlCodeEditor(props: SqlCodeEditorProps) {
   const { defaultValue, initSteps = [], expectedResults } = props;
 
+  const $currentLesson = useStore(currentLesson);
   const editorRef = useRef<HTMLDivElement>(null);
   const [queryResults, setQueryResults] = useState<QueryExecResult[] | null>(
     null,
@@ -181,7 +183,16 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
                 setQueryResults(results);
                 setQueryError(error);
                 setIsSubmitted(true);
-                lessonSubmitStatus.set(error ? 'wrong' : 'submitted');
+
+                if (!$currentLesson) {
+                  console.error('FIX: update current lesson');
+                  return;
+                }
+
+                currentLesson.set({
+                  ...$currentLesson,
+                  challengeStatus: error ? 'wrong' : 'correct',
+                });
               }}
             />
           </div>

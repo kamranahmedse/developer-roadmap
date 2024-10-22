@@ -1,13 +1,13 @@
 import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
 import { CourseSidebar, type CourseSidebarProps } from './CourseSidebar';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   useCompleteLessonMutation,
   useCourseProgress,
 } from '../../hooks/use-course';
 import { NextLessonAlertModal } from './NextLessonAlertModal';
 import { useStore } from '@nanostores/react';
-import { lessonSubmitStatus } from '../../stores/course';
+import { currentLesson } from '../../stores/course';
 import { getPercentage } from '../../helper/number';
 
 type CourseLayoutProps = {
@@ -18,7 +18,7 @@ export function CourseLayout(props: CourseLayoutProps) {
   const { children, ...sidebarProps } = props;
   const { chapters, courseId, chapterId, lessonId, lesson } = sidebarProps;
 
-  const $lessonSubmitStatus = useStore(lessonSubmitStatus);
+  const $currentLesson = useStore(currentLesson);
   const [showNextWarning, setShowNextWarning] = useState(false);
 
   const { data: courseProgress } = useCourseProgress(courseId);
@@ -85,6 +85,21 @@ export function CourseLayout(props: CourseLayoutProps) {
     );
   };
 
+  useEffect(() => {
+    if ($currentLesson) {
+      return;
+    }
+
+    currentLesson.set({
+      courseId,
+      chapterId,
+      lessonId,
+      lessonType: lesson.frontmatter.type,
+      challengeStatus: 'pending',
+      quizStatus: 'pending',
+    });
+  }, [$currentLesson]);
+
   return (
     <>
       {showNextWarning && (
@@ -123,9 +138,18 @@ export function CourseLayout(props: CourseLayoutProps) {
             <button
               className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
               onClick={() => {
+                const isQuizPending =
+                  ($currentLesson?.lessonType === 'lesson-quiz' ||
+                    $currentLesson?.lessonType === 'quiz') &&
+                  $currentLesson?.quizStatus === 'pending';
+
+                const isChallengePending =
+                  ($currentLesson?.lessonType === 'lesson-challenge' ||
+                    $currentLesson?.lessonType === 'challenge') &&
+                  $currentLesson?.challengeStatus === 'pending';
+
                 if (
-                  $lessonSubmitStatus === 'idle' &&
-                  lesson?.frontmatter?.type !== 'lesson' &&
+                  (isQuizPending || isChallengePending) &&
                   !isCurrentLessonCompleted
                 ) {
                   setShowNextWarning(true);
