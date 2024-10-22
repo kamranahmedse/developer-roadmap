@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Circle, CircleCheck, CircleX } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { LessonFileType } from '../../lib/course';
+import { lessonSubmitStatus } from '../../stores/course';
 
 type QuizViewProps = {
   lesson: LessonFileType;
@@ -79,6 +80,7 @@ export function QuizView(props: QuizViewProps) {
               disabled={isSubmitted || !isAllAnswered}
               onClick={() => {
                 setIsSubmitted(true);
+                lessonSubmitStatus.set('submitted');
               }}
             >
               Submit my Answers
@@ -91,10 +93,6 @@ export function QuizView(props: QuizViewProps) {
                 You got {correctAnswerCount} out of {questions.length} questions
                 right
               </span>
-
-              <a className="disabled:cusror-not-allowed rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none">
-                Move to Next Lesson
-              </a>
             </div>
           )}
         </div>

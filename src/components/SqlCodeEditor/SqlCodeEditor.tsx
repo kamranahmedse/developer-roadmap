@@ -10,29 +10,23 @@ import { useSqlEditor } from './use-sql-editor';
 import { sql } from '@codemirror/lang-sql';
 import { Prec } from '@codemirror/state';
 import { keymap } from '@codemirror/view';
-import { type LucideIcon, Play, WandSparkles } from 'lucide-react';
+import { Check, type LucideIcon, Play, WandSparkles, X } from 'lucide-react';
 import { useSqlite } from './use-sqlite';
 import { cn } from '../../lib/classname';
+import { lessonSubmitStatus } from '../../stores/course';
 
 export type SqlCodeEditorProps = {
   defaultValue?: string;
 
   initSteps?: string[];
   expectedResults?: QueryExecResult[];
-
-  onQuerySubmit?: () => void;
 };
 
 export function SqlCodeEditor(props: SqlCodeEditorProps) {
-  const {
-    defaultValue,
-    initSteps = [],
-    expectedResults,
-    onQuerySubmit,
-  } = props;
+  const { defaultValue, initSteps = [], expectedResults } = props;
 
   const editorRef = useRef<HTMLDivElement>(null);
-  const [queryResult, setQueryResult] = useState<QueryExecResult[] | null>(
+  const [queryResults, setQueryResults] = useState<QueryExecResult[] | null>(
     null,
   );
   const [queryError, setQueryError] = useState<string | undefined>();
@@ -108,6 +102,21 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
     }
   };
 
+  const isCorrectAnswer =
+    queryResults &&
+    expectedResults &&
+    queryResults.every((result, index) => {
+      const expected = expectedResults[index];
+      return (
+        result.columns.length === expected.columns.length &&
+        result.values.length === expected.values.length &&
+        result.columns.every((column, i) => column === expected.columns[i]) &&
+        result.values.every((row, i) =>
+          row.every((cell, j) => cell === expected.values[i][j]),
+        )
+      );
+    });
+
   return (
     <ResizablePanelGroup direction="vertical">
       <ResizablePanel defaultSize={65} className="flex flex-col">
@@ -120,59 +129,69 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
           ></div>
         </div>
 
-        <div className="flex items-center justify-end gap-1 border-t border-zinc-800 p-2">
-          <DatabaseActionButton
-            icon={WandSparkles}
-            onClick={async () => {
-              const query = editor?.state?.doc.toString();
-              if (!query) {
-                return;
-              }
+        <div
+          className={cn(
+            'flex items-center justify-end gap-1 border-t border-zinc-800 p-2',
+            isSubmitted && 'justify-between',
+          )}
+        >
+          {isSubmitted && isCorrectAnswer && (
+            <div className="flex items-center gap-1 text-sm text-green-500">
+              <Check className="h-4 w-4" />
+              <span>Correct</span>
+            </div>
+          )}
 
-              const formatted = await formatQuery(query);
-              editor?.dispatch({
-                changes: {
-                  from: 0,
-                  to: editor?.state?.doc.length,
-                  insert: formatted,
-                },
-              });
-            }}
-          />
+          {isSubmitted && !isCorrectAnswer && (
+            <div className="flex items-center gap-1 text-sm text-red-500">
+              <X className="h-4 w-4" />
+              <span>Incorrect</span>
+            </div>
+          )}
 
-          <DatabaseActionButton
-            icon={Play}
-            onClick={() => {
-              const query = editor?.state?.doc.toString();
-              if (!query) {
-                return;
-              }
+          <div className="flex items-center gap-1">
+            <DatabaseActionButton
+              icon={WandSparkles}
+              onClick={async () => {
+                const query = editor?.state?.doc.toString();
+                if (!query) {
+                  return;
+                }
 
-              const { results, error } = handleQuery(query);
-              setQueryResult(results);
-              setQueryError(error);
-              setIsSubmitted(true);
+                const formatted = await formatQuery(query);
+                editor?.dispatch({
+                  changes: {
+                    from: 0,
+                    to: editor?.state?.doc.length,
+                    insert: formatted,
+                  },
+                });
+              }}
+            />
 
-              onQuerySubmit?.();
-            }}
-          />
+            <DatabaseActionButton
+              icon={Play}
+              onClick={() => {
+                const query = editor?.state?.doc.toString();
+                if (!query) {
+                  return;
+                }
+
+                const { results, error } = handleQuery(query);
+                setQueryResults(results);
+                setQueryError(error);
+                setIsSubmitted(true);
+                lessonSubmitStatus.set(error ? 'wrong' : 'submitted');
+              }}
+            />
+          </div>
         </div>
       </ResizablePanel>
 
       <ResizableHandle withHandle={true} />
 
       <ResizablePanel defaultSize={35}>
-        <SqlTableResult
-          results={queryResult}
-          error={queryError}
-          matchAnswers={isSubmitted}
-          expectedResults={expectedResults}
-          onTryAgain={() => {
-            setQueryResult(null);
-            setQueryError(undefined);
-            setIsSubmitted(false);
-          }}
-        />
+        <SqlTableResult results={queryResults} error={queryError} />
       </ResizablePanel>
     </ResizablePanelGroup>
   );

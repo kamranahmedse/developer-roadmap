@@ -1,7 +1,11 @@
-import { Check } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ChapterFileType, LessonFileType } from '../../lib/course';
-import { useMemo } from 'react';
+import { useMemo, type CSSProperties } from 'react';
+import { useCourseProgress } from '../../hooks/use-course';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { getPercentage } from '../../helper/number';
+import { useIsMounted } from '../../hooks/use-is-mounted';
 
 type ChapterProps = ChapterFileType & {
   index: number;
@@ -28,36 +32,50 @@ export function Chapter(props: ChapterProps) {
   } = props;
   const { title } = frontmatter;
 
-  const exercises = useMemo(
+  const { data: courseProgress } = useCourseProgress(courseId);
+
+  const completeLessonSet = useMemo(
     () =>
-      lessons
-        ?.filter(
-          (lesson) =>
-            lesson.frontmatter.type === 'quiz' ||
-            lesson.frontmatter.type === 'challenge',
-        )
-        ?.sort((a, b) => a.frontmatter.order - b.frontmatter.order) || [],
-    [lessons],
+      new Set(
+        (courseProgress?.completed || [])
+          .filter((l) => l.chapterId === chapterId)
+          .map((l) => `${l.chapterId}/${l.lessonId}`),
+      ),
+    [courseProgress],
+  );
+  const isChapterCompleted = lessons.every((lesson) =>
+    completeLessonSet.has(`${chapterId}/${lesson.id}`),
   );
 
-  const filteredLessons = useMemo(
-    () =>
-      lessons
-        ?.filter((lesson) =>
-          ['lesson', 'lesson-challenge', 'lesson-quiz'].includes(
-            lesson.frontmatter.type,
-          ),
-        )
-        ?.sort((a, b) => a.frontmatter.order - b.frontmatter.order) || [],
-    [lessons],
-  );
+  const completedPercentage = useMemo(() => {
+    const completedCount = lessons.filter((lesson) =>
+      completeLessonSet.has(`${chapterId}/${lesson.id}`),
+    ).length;
+
+    return getPercentage(completedCount, lessons.length);
+  }, [lessons, completeLessonSet]);
+
+  const [filteredLessons, exercises] = useMemo(() => {
+    const sortedLessons = lessons.sort(
+      (a, b) => a.frontmatter.order - b.frontmatter.order,
+    );
+
+    return [
+      sortedLessons.filter(
+        (lesson) => !['quiz', 'challenge'].includes(lesson.frontmatter.type),
+      ),
+      sortedLessons.filter((lesson) =>
+        ['quiz', 'challenge'].includes(lesson.frontmatter.type),
+      ),
+    ];
+  }, [lessons]);
 
   return (
     <div>
       <button
         className={cn(
-          'flex w-full items-center gap-2 border-b border-zinc-800 p-2 text-sm',
-          isActive && 'bg-zinc-300 text-zinc-900',
+          'relative z-10 flex w-full items-center gap-2 border-b border-zinc-800 p-2 text-sm',
+          isActive && 'text-white',
         )}
         onClick={onChapterClick}
       >
@@ -65,6 +83,18 @@ export function Chapter(props: ChapterProps) {
           {index}
         </div>
         <span className="truncate text-left">{title}</span>
+        {isChapterCompleted && lessons.length > 0 && (
+          <CheckIcon additionalClasses="h-4 w-4 ml-auto" />
+        )}
+
+        <div
+          className="absolute inset-0 -z-10 w-[var(--completed-percentage)] bg-zinc-800 transition-[width] duration-150 will-change-[width]"
+          style={
+            {
+              '--completed-percentage': `${completedPercentage}%`,
+            } as CSSProperties
+          }
+        />
       </button>
 
       {isActive && (
@@ -74,6 +104,9 @@ export function Chapter(props: ChapterProps) {
               <div>
                 {filteredLessons?.map((lesson) => {
                   const isActive = lessonId === lesson.id;
+                  const isCompleted = completeLessonSet.has(
+                    `${chapterId}/${lesson.id}`,
+                  );
 
                   return (
                     <Lesson
@@ -82,7 +115,7 @@ export function Chapter(props: ChapterProps) {
                       courseId={courseId}
                       chapterId={chapterId}
                       isActive={isActive}
-                      isCompleted={false}
+                      isCompleted={isCompleted}
                     />
                   );
                 })}
@@ -99,6 +132,9 @@ export function Chapter(props: ChapterProps) {
               <div>
                 {exercises?.map((exercise) => {
                   const isActive = lessonId === exercise.id;
+                  const isCompleted = completeLessonSet.has(
+                    `${chapterId}/${exercise.id}`,
+                  );
 
                   return (
                     <Lesson
@@ -107,7 +143,7 @@ export function Chapter(props: ChapterProps) {
                       courseId={courseId}
                       chapterId={chapterId}
                       isActive={isActive}
-                      isCompleted={false}
+                      isCompleted={isCompleted}
                     />
                   );
                 })}
@@ -135,26 +171,31 @@ type LessonProps = LessonFileType & {
 export function Lesson(props: LessonProps) {
   const {
     frontmatter,
-    isCompleted,
     isActive,
     courseId,
     chapterId,
     id: lessonId,
+    isCompleted,
   } = props;
   const { title } = frontmatter;
 
+  const isMounted = useIsMounted();
+  const { isLoading } = useCourseProgress(courseId);
   const href = `/learn/${courseId}/${chapterId}/${lessonId}`;
 
   return (
     <a
       className={cn(
         'relative flex w-full items-center gap-2 p-2 text-sm text-zinc-600',
-        isActive && 'bg-zinc-800 text-white',
+        isActive && 'bg-zinc-800/50 text-white',
       )}
       href={href}
     >
       <div className="relative z-10 flex size-5 items-center justify-center rounded-full bg-zinc-700 text-xs text-white">
-        {isCompleted && <Check className="h-4 w-4" />}
+        {isCompleted && <Check className="h-3 w-3 stroke-[3]" />}
+        {isLoading && isMounted && (
+          <Loader2 className="h-3 w-3 animate-spin stroke-[3] opacity-60" />
+        )}
       </div>
       <span className="truncate text-left">{title}</span>
 

@@ -33,7 +33,12 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
         <div className="mt-4">
           <span>{completedPercentage}% Completed</span>
-          <div className="mt-2 h-1 w-full bg-zinc-800"></div>
+          <div className="relative mt-2 h-1 w-full overflow-hidden rounded-md bg-zinc-800">
+            <div
+              className="absolute inset-0 rounded-md bg-zinc-500 transition-[width] duration-150 will-change-[width]"
+              style={{ width: `${completedPercentage}%` }}
+            />
+          </div>
         </div>
       </div>
 
