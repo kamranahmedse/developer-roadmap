@@ -14,7 +14,5 @@ echo "Hello, World!"
 The 'echo' command prints its argument, in this case "Hello, World!", to the terminal.
 
 Visit the following resources to learn more:
-- [@article@Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
-- [@feed@Explore Top Posts About Bash](https://app.daily.dev/tags/bash)
+
 - [@video@Bash Scripting on Linux - YT Playlist](https://youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w&si=MSehStqnhSqgoMSj)
-- [@article@9 Evil Bash Commands Explained](https://dev.to/devmount/9-evil-bash-commands-explained-4k5e)
