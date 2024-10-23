@@ -1045,6 +1045,11 @@
         "title": "Official Documentation",
         "url": "https://nodejs.org/api/process.html#processstdin",
         "type": "article"
+      },
+      {
+        "title": "Node.js Process stdin & stdout",
+        "url": "https://nodecli.com/node-stdin-stdout",
+        "type": "article"
       }
     ]
   },
