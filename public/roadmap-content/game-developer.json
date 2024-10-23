@@ -100,8 +100,19 @@
   },
   "YTkOF_33oL1ZkA-loc_DP": {
     "title": "Curve",
-    "description": "Curve\n-----",
-    "links": []
+    "description": "Curve\n-----\n\nA `curve` in game development is a mathematical tool for creating smooth lines or paths, used in areas like animation, 3D modeling, UI design, and level layouts. Curves simplify complex shapes and movements, enabling more natural results compared to linear approaches. They're key for `lifelike animations`, organic shapes, `realistic physics`, and smooth camera movements, essential for polished, fluid game design.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Curves wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Curve",
+        "type": "article"
+      },
+      {
+        "title": "Curves basics",
+        "url": "https://byjus.com/maths/curve/",
+        "type": "article"
+      }
+    ]
   },
   "nTiHZXRh2j3_FsBotmlGf": {
     "title": "Spline",
@@ -121,8 +132,14 @@
   },
   "DUEEm9sAaZqSI-W-PFZ8f": {
     "title": "Bezier",
-    "description": "`Bezier curves` are named after Pierre Bezier, a French engineer working at Renault, who used them in the 1960s for designing car bodies. A Bezier curve is defined by a set of control points with a minimum of two but no upper limit. The curve is calculated between the first and the last control point and does not pass through the controlling points, which only influence the direction of the curve. There are linear, quadratic, and cubic Bezier curves, but curves with more control points are also possible. They are widely used in computer graphics, animations, and are extensively used in vector images and tools to create shapes, texts, and objects.",
-    "links": []
+    "description": "`Bezier curves` are named after Pierre Bezier, a French engineer working at Renault, who used them in the 1960s for designing car bodies. A Bezier curve is defined by a set of control points with a minimum of two but no upper limit. The curve is calculated between the first and the last control point and does not pass through the controlling points, which only influence the direction of the curve. There are linear, quadratic, and cubic Bezier curves, but curves with more control points are also possible. They are widely used in computer graphics, animations, and are extensively used in vector images and tools to create shapes, texts, and objects.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Bezier Curves Explained",
+        "url": "https://www.youtube.com/watch?v=pnYccz1Ha34",
+        "type": "video"
+      }
+    ]
   },
   "N9GoA3YvOaKwYjljj6NZv": {
     "title": "Catmull-Rom",
