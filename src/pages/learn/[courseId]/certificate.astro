@@ -1,0 +1,65 @@
+---
+import { CourseLayout } from '../../../components/Course/CourseLayout';
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+import {
+  getAllCourses,
+  getChaptersByCourseId,
+  type CourseFileType,
+  type ChapterFileType,
+} from '../../../lib/course';
+
+interface Params extends Record<string, string | undefined> {
+  courseId: string;
+}
+
+interface Props {
+  course: CourseFileType & { chapters: ChapterFileType[] };
+}
+
+export async function getStaticPaths() {
+  const courses = await getAllCourses();
+  const coursesWithChapters = await Promise.all(
+    courses.map(async (course) => {
+      const chapters = await getChaptersByCourseId(course.id);
+      return {
+        ...course,
+        chapters,
+      };
+    }),
+  );
+
+  const paths: {
+    params: Params;
+    props: Props;
+  }[] = [];
+
+  for (const course of coursesWithChapters) {
+    const courseId = course.id;
+
+    paths.push({
+      params: {
+        courseId,
+      },
+      props: {
+        course,
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { courseId } = Astro.params;
+const { course } = Astro.props;
+---
+
+<SkeletonLayout title={course.frontmatter.title}>
+  <CourseLayout
+    currentCourseId={courseId}
+    title={course.frontmatter.title}
+    chapters={course.chapters}
+    client:load
+  >
+    Hello
+  </CourseLayout>
+</SkeletonLayout>

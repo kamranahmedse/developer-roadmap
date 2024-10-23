@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
+import { StickyNote } from 'lucide-react';
 
 export type CourseSidebarProps = {
-  courseId: string;
-  chapterId: string;
-  lessonId: string;
+  currentCourseId: string;
+  currentChapterId?: string;
+  currentLessonId?: string;
 
   title: string;
   chapters: ChapterFileType[];
-  lesson: LessonFileType;
+  lesson?: LessonFileType;
 
   completedPercentage: number;
 };
@@ -19,12 +20,14 @@ export function CourseSidebar(props: CourseSidebarProps) {
     title,
     chapters,
     completedPercentage,
-    chapterId,
-    lessonId,
-    courseId,
+    currentCourseId,
+    currentChapterId,
+    currentLessonId,
   } = props;
 
-  const [activeChapterId, setActiveChapterId] = useState(chapterId);
+  const [activeChapterId, setActiveChapterId] = useState(currentChapterId);
+
+  const ceritificateUrl = `/learn/${currentCourseId}/certificate`;
 
   return (
     <aside className="border-r border-zinc-800">
@@ -60,12 +63,20 @@ export function CourseSidebar(props: CourseSidebarProps) {
                 }}
                 index={index + 1}
                 {...chapter}
-                courseId={courseId}
-                chapterId={chapterId}
-                lessonId={lessonId}
+                currentCourseId={currentCourseId}
+                currentChapterId={currentChapterId}
+                currentLessonId={currentLessonId}
               />
             );
           })}
+
+          <a
+            className="flex items-center gap-2 p-2 text-sm text-zinc-500 hover:bg-zinc-800 hover:text-white"
+            href={ceritificateUrl}
+          >
+            <StickyNote className="h-4 w-4 stroke-[2.5]" />
+            Certificate
+          </a>
         </div>
       </div>
     </aside>

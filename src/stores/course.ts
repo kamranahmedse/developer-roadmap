@@ -3,9 +3,9 @@ import type { AllowedLessonType } from '../lib/course';
 
 export type CurrentLessonType = {
   courseId: string;
-  chapterId: string;
-  lessonId: string;
-  lessonType: AllowedLessonType;
+  chapterId?: string;
+  lessonId?: string;
+  lessonType?: AllowedLessonType;
   challengeStatus?: 'pending' | 'wrong' | 'correct';
   quizStatus?: 'pending' | 'wrong' | 'correct';
 };

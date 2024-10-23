@@ -12,9 +12,9 @@ type ChapterProps = ChapterFileType & {
   isActive?: boolean;
   isCompleted?: boolean;
 
-  courseId: string;
-  chapterId: string;
-  lessonId?: string;
+  currentCourseId: string;
+  currentChapterId?: string;
+  currentLessonId?: string;
   onChapterClick?: () => void;
 };
 
@@ -26,30 +26,30 @@ export function Chapter(props: ChapterProps) {
     isActive = false,
     onChapterClick,
 
-    courseId,
-    chapterId,
-    lessonId,
+    currentCourseId,
+    currentChapterId,
+    currentLessonId,
   } = props;
   const { title } = frontmatter;
 
-  const { data: courseProgress } = useCourseProgress(courseId);
+  const { data: courseProgress } = useCourseProgress(currentCourseId);
 
   const completeLessonSet = useMemo(
     () =>
       new Set(
         (courseProgress?.completed || [])
-          .filter((l) => l.chapterId === chapterId)
+          .filter((l) => l.chapterId === currentChapterId)
           .map((l) => `${l.chapterId}/${l.lessonId}`),
       ),
     [courseProgress],
   );
   const isChapterCompleted = lessons.every((lesson) =>
-    completeLessonSet.has(`${chapterId}/${lesson.id}`),
+    completeLessonSet.has(`${currentChapterId}/${lesson.id}`),
   );
 
   const completedPercentage = useMemo(() => {
     const completedCount = lessons.filter((lesson) =>
-      completeLessonSet.has(`${chapterId}/${lesson.id}`),
+      completeLessonSet.has(`${currentChapterId}/${lesson.id}`),
     ).length;
 
     return getPercentage(completedCount, lessons.length);
@@ -103,17 +103,17 @@ export function Chapter(props: ChapterProps) {
             <>
               <div>
                 {filteredLessons?.map((lesson) => {
-                  const isActive = lessonId === lesson.id;
+                  const isActive = currentLessonId === lesson.id;
                   const isCompleted = completeLessonSet.has(
-                    `${chapterId}/${lesson.id}`,
+                    `${currentChapterId}/${lesson.id}`,
                   );
 
                   return (
                     <Lesson
                       key={lesson.id}
                       {...lesson}
-                      courseId={courseId}
-                      chapterId={chapterId}
+                      currentCourseId={currentCourseId}
+                      currentChapterId={currentChapterId}
                       isActive={isActive}
                       isCompleted={isCompleted}
                     />
@@ -131,17 +131,17 @@ export function Chapter(props: ChapterProps) {
 
               <div>
                 {exercises?.map((exercise) => {
-                  const isActive = lessonId === exercise.id;
+                  const isActive = currentLessonId === exercise.id;
                   const isCompleted = completeLessonSet.has(
-                    `${chapterId}/${exercise.id}`,
+                    `${currentChapterId}/${exercise.id}`,
                   );
 
                   return (
                     <Lesson
                       key={exercise.id}
                       {...exercise}
-                      courseId={courseId}
-                      chapterId={chapterId}
+                      currentCourseId={currentCourseId}
+                      currentChapterId={currentChapterId}
                       isActive={isActive}
                       isCompleted={isCompleted}
                     />
@@ -161,8 +161,8 @@ export function Chapter(props: ChapterProps) {
 }
 
 type LessonProps = LessonFileType & {
-  courseId: string;
-  chapterId: string;
+  currentCourseId: string;
+  currentChapterId?: string;
 
   isActive?: boolean;
   isCompleted?: boolean;
@@ -172,16 +172,16 @@ export function Lesson(props: LessonProps) {
   const {
     frontmatter,
     isActive,
-    courseId,
-    chapterId,
+    currentCourseId,
+    currentChapterId,
     id: lessonId,
     isCompleted,
   } = props;
   const { title } = frontmatter;
 
   const isMounted = useIsMounted();
-  const { isLoading } = useCourseProgress(courseId);
-  const href = `/learn/${courseId}/${chapterId}/${lessonId}`;
+  const { isLoading } = useCourseProgress(currentCourseId);
+  const href = `/learn/${currentCourseId}/${currentChapterId}/${lessonId}`;
 
   return (
     <a

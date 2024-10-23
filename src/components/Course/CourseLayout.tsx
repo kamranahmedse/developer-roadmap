@@ -9,26 +9,33 @@ import { NextLessonAlertModal } from './NextLessonAlertModal';
 import { useStore } from '@nanostores/react';
 import { currentLesson } from '../../stores/course';
 import { getPercentage } from '../../helper/number';
+import { cn } from '../../lib/classname';
 
 type CourseLayoutProps = {
   children: React.ReactNode;
-} & CourseSidebarProps;
+} & Omit<CourseSidebarProps, 'completedPercentage'>;
 
 export function CourseLayout(props: CourseLayoutProps) {
   const { children, ...sidebarProps } = props;
-  const { chapters, courseId, chapterId, lessonId, lesson } = sidebarProps;
+  const {
+    chapters,
+    currentCourseId,
+    currentChapterId,
+    currentLessonId,
+    lesson,
+  } = sidebarProps;
 
   const $currentLesson = useStore(currentLesson);
   const [showNextWarning, setShowNextWarning] = useState(false);
 
-  const { data: courseProgress } = useCourseProgress(courseId);
-  const completeLesson = useCompleteLessonMutation(courseId);
+  const { data: courseProgress } = useCourseProgress(currentCourseId);
+  const completeLesson = useCompleteLessonMutation(currentCourseId);
 
   const completeLessonSet = useMemo(
     () =>
       new Set(
         (courseProgress?.completed || []).map(
-          (l) => `/learn/${courseId}/${l.chapterId}/${l.lessonId}`,
+          (l) => `/learn/${currentCourseId}/${l.chapterId}/${l.lessonId}`,
         ),
       ),
     [courseProgress],
@@ -38,7 +45,7 @@ export function CourseLayout(props: CourseLayoutProps) {
     const lessons: string[] = [];
     for (const chapter of chapters) {
       for (const lesson of chapter.lessons) {
-        lessons.push(`/learn/${courseId}/${chapter.id}/${lesson.id}`);
+        lessons.push(`/learn/${currentCourseId}/${chapter.id}/${lesson.id}`);
       }
     }
 
@@ -53,7 +60,7 @@ export function CourseLayout(props: CourseLayoutProps) {
     return getPercentage(completedCount, allLessonLinks.length);
   }, [allLessonLinks, completeLessonSet]);
 
-  const currentLessonUrl = `/learn/${courseId}/${chapterId}/${lessonId}`;
+  const currentLessonUrl = `/learn/${currentCourseId}/${currentChapterId}/${currentLessonId}`;
   const isCurrentLessonCompleted = completeLessonSet.has(currentLessonUrl);
 
   const currentLessonIndex = allLessonLinks.indexOf(currentLessonUrl);
@@ -68,10 +75,14 @@ export function CourseLayout(props: CourseLayoutProps) {
       return;
     }
 
+    if (!currentChapterId || !currentLessonId) {
+      return;
+    }
+
     completeLesson.mutate(
       {
-        chapterId,
-        lessonId,
+        chapterId: currentChapterId,
+        lessonId: currentLessonId,
       },
       {
         onSuccess: () => {
@@ -91,10 +102,10 @@ export function CourseLayout(props: CourseLayoutProps) {
     }
 
     currentLesson.set({
-      courseId,
-      chapterId,
-      lessonId,
-      lessonType: lesson.frontmatter.type,
+      courseId: currentCourseId,
+      chapterId: currentChapterId,
+      lessonId: currentLessonId,
+      lessonType: lesson?.frontmatter?.type,
       challengeStatus: 'pending',
       quizStatus: 'pending',
     });
@@ -112,7 +123,14 @@ export function CourseLayout(props: CourseLayoutProps) {
         />
       )}
 
-      <section className="grid h-screen grid-rows-[1fr_60px] overflow-hidden bg-zinc-900 text-zinc-50">
+      <section
+        className={cn(
+          'grid h-screen grid-rows-[1fr_60px] overflow-hidden bg-zinc-900 text-zinc-50',
+          currentChapterId && currentLessonId
+            ? 'grid-rows-[1fr_60px]'
+            : 'grid-rows-1',
+        )}
+      >
         <div className="grid grid-cols-[240px_1fr] overflow-hidden">
           <CourseSidebar
             {...sidebarProps}
@@ -122,53 +140,55 @@ export function CourseLayout(props: CourseLayoutProps) {
           {children}
         </div>
 
-        <footer className="flex items-center justify-end border-t border-zinc-800 px-4">
-          <div className="flex items-center gap-2">
-            <button
-              className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
-              onClick={() => {
-                window.location.href = prevLessonLink;
-              }}
-              disabled={!prevLessonLink || completeLesson.isPending}
-            >
-              <ChevronLeft className="size-4 stroke-[3]" />
-              Prev
-            </button>
+        {currentChapterId && currentLessonId && (
+          <footer className="flex items-center justify-end border-t border-zinc-800 px-4">
+            <div className="flex items-center gap-2">
+              <button
+                className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
+                onClick={() => {
+                  window.location.href = prevLessonLink;
+                }}
+                disabled={!prevLessonLink || completeLesson.isPending}
+              >
+                <ChevronLeft className="size-4 stroke-[3]" />
+                Prev
+              </button>
 
-            <button
-              className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
-              onClick={() => {
-                const isQuizPending =
-                  ($currentLesson?.lessonType === 'lesson-quiz' ||
-                    $currentLesson?.lessonType === 'quiz') &&
-                  $currentLesson?.quizStatus === 'pending';
+              <button
+                className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
+                onClick={() => {
+                  const isQuizPending =
+                    ($currentLesson?.lessonType === 'lesson-quiz' ||
+                      $currentLesson?.lessonType === 'quiz') &&
+                    $currentLesson?.quizStatus === 'pending';
 
-                const isChallengePending =
-                  ($currentLesson?.lessonType === 'lesson-challenge' ||
-                    $currentLesson?.lessonType === 'challenge') &&
-                  $currentLesson?.challengeStatus === 'pending';
+                  const isChallengePending =
+                    ($currentLesson?.lessonType === 'lesson-challenge' ||
+                      $currentLesson?.lessonType === 'challenge') &&
+                    $currentLesson?.challengeStatus === 'pending';
 
-                if (
-                  (isQuizPending || isChallengePending) &&
-                  !isCurrentLessonCompleted
-                ) {
-                  setShowNextWarning(true);
-                  return;
-                }
+                  if (
+                    (isQuizPending || isChallengePending) &&
+                    !isCurrentLessonCompleted
+                  ) {
+                    setShowNextWarning(true);
+                    return;
+                  }
 
-                handleCompleteLesson();
-              }}
-              disabled={completeLesson.isPending}
-            >
-              Next
-              {completeLesson.isPending ? (
-                <Loader2 className="size-4 animate-spin stroke-[3]" />
-              ) : (
-                <ChevronRight className="size-4 stroke-[3]" />
-              )}
-            </button>
-          </div>
-        </footer>
+                  handleCompleteLesson();
+                }}
+                disabled={completeLesson.isPending}
+              >
+                Next
+                {completeLesson.isPending ? (
+                  <Loader2 className="size-4 animate-spin stroke-[3]" />
+                ) : (
+                  <ChevronRight className="size-4 stroke-[3]" />
+                )}
+              </button>
+            </div>
+          </footer>
+        )}
       </section>
     </>
   );
