@@ -78,7 +78,7 @@ If this role excites you, please submit your resume and cover letter to **[conta
 
 **Note**: From my experience hiring frontend developers, I have seen that a bachelor's degree in computer science is often preferred, but it is not always necessary. A lot of frontend developers are self-taught or go through coding boot camps. Therefore, hands-on experience and a solid portfolio can be as valuable as a formal degree.
 
-## **Key** frontend developer responsibilities
+## Key frontend developer responsibilities
 
 Frontend developers are essential in the development process of web applications and websites. They ensure that the final product meets the users' and business needs from start to finish. 
 
