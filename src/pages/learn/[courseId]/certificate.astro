@@ -1,4 +1,5 @@
 ---
+import { CertificateView } from '../../../components/Course/CertificateView';
 import { CourseLayout } from '../../../components/Course/CourseLayout';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 import {
@@ -60,6 +61,6 @@ const { course } = Astro.props;
     chapters={course.chapters}
     client:load
   >
-    Hello
+    <CertificateView currentCourseId={courseId} client:load />
   </CourseLayout>
 </SkeletonLayout>
