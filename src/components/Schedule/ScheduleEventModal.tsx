@@ -66,7 +66,7 @@ Learn ${roadmapTitle} on roadmap.sh
 For more details, visit: https://roadmap.sh/${roadmapId}
   `.trim();
 
-  const downloadICS = () => {
+  const handleDownloadICS = () => {
     setIsLoading(true);
 
     const startDate = DateTime.now().minus({
@@ -114,7 +114,7 @@ For more details, visit: https://roadmap.sh/${roadmapId}
     window.open(`${baseURL}&${eventDetails}`, '_blank');
   };
 
-  const steps = {
+  const stepDetails = {
     apple: {
       title: 'Add to Apple Calendar',
       steps: [
@@ -157,9 +157,9 @@ For more details, visit: https://roadmap.sh/${roadmapId}
       <div className="flex flex-col items-center p-4 py-6 text-center">
         {selectedCalendar && (
           <CalendarSteps
-            title={steps[selectedCalendar].title}
-            steps={steps[selectedCalendar].steps}
-            onDownloadICS={downloadICS}
+            title={stepDetails[selectedCalendar].title}
+            steps={stepDetails[selectedCalendar].steps}
+            onDownloadICS={handleDownloadICS}
             onCancel={() => {
               setSelectedCalendar(null);
             }}
@@ -203,7 +203,7 @@ For more details, visit: https://roadmap.sh/${roadmapId}
               <CalendarButton
                 icon={FileIcon}
                 label="Download File (.ics)"
-                onClick={downloadICS}
+                onClick={handleDownloadICS}
               />
             </div>
           </>
