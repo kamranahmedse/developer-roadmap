@@ -4,13 +4,14 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { ScheduleEventModal } from './ScheduleEventModal';
 import { useState } from 'react';
 
-type ConnectCalendarButtonProps = {
+type ScheduleButtonProps = {
   resourceId: string;
   resourceType: ResourceType;
+  resourceTitle: string;
 };
 
-export function ConnectCalendarButton(props: ConnectCalendarButtonProps) {
-  const { resourceId, resourceType } = props;
+export function ScheduleButton(props: ScheduleButtonProps) {
+  const { resourceId, resourceType, resourceTitle } = props;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -21,6 +22,8 @@ export function ConnectCalendarButton(props: ConnectCalendarButtonProps) {
           onClose={() => {
             setIsModalOpen(false);
           }}
+          roadmapId={resourceId}
+          roadmapTitle={resourceTitle}
         />
       )}
 
@@ -33,7 +36,7 @@ export function ConnectCalendarButton(props: ConnectCalendarButtonProps) {
         }}
       >
         <Calendar className="h-4 w-4 flex-shrink-0" />
-        Schedule Learning
+        <span className="hidden sm:inline">Schedule</span>
       </button>
     </>
   );
