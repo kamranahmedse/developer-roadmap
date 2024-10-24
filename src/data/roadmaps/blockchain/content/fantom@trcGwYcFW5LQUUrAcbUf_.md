@@ -4,5 +4,5 @@ Fantom is a decentralized, open-source smart contract platform that supports dec
 
 Visit the following resources to learn more:
 
-- [@article@Fantom whitepaper](https://arxiv.org/pdf/1810.10360.pdf)
-- [@article@Fantom overview](https://docs.fantom.foundation/)
+- [@official@Fantom Overview](https://docs.fantom.foundation/)
+- [@article@Fantom Whitepaper](https://arxiv.org/pdf/1810.10360.pdf)

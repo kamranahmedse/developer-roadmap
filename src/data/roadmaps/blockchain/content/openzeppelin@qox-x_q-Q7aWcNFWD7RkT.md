@@ -4,4 +4,4 @@ OpenZeppelin Contracts helps you minimize risk by using battle-tested libraries 
 
 Visit the following resources to learn more:
 
-- [@article@OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
+- [@official@OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
