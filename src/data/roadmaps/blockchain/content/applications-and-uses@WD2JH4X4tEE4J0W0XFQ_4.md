@@ -1,4 +1,4 @@
-# Application and Uses of Blockchain technology
+# Application and Uses of Blockchain Technology
 
 Blockchain applications go far beyond cryptocurrency and bitcoin. With its ability to create more transparency and fairness while also saving businesses time and money, the technology is impacting a variety of sectors in ways that range from how contracts are enforced to making government work more efficiently.
 
