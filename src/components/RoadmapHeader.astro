@@ -12,6 +12,7 @@ import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
+import { ConnectCalendarButton } from './Schedule/ConnectCalendarButton';
 
 export interface Props {
   title: string;
@@ -127,6 +128,11 @@ const hasTnsBanner = !!tnsBannerLink;
           isActive={activeTab === 'projects'}
           badgeText={projectCount > 0 ? 'new' : 'soon'}
         />
+        <ConnectCalendarButton
+          resourceId={roadmapId}
+          resourceType='roadmap'
+          client:load
+        />
       </div>
 
       <TabLink
@@ -135,6 +141,7 @@ const hasTnsBanner = !!tnsBannerLink;
         text='Suggest Changes'
         isExternal={true}
         hideTextOnMobile={true}
+        isActive={false}
       />
     </div>
   </div>
