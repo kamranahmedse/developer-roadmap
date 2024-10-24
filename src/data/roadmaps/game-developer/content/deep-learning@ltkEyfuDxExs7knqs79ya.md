@@ -4,4 +4,7 @@ Deep Learning is a sub-field of machine learning, inspired by the structure and 
 
 Visit the following resources to learn more:
 
-- [@video@But what is a neural network? | Chapter 1, Deep learning](https://www.youtube.com/watch?v=aircAruvnKk)
+- [@article@Deep Learning](https://en.wikipedia.org/wiki/Deep_learning)
+- [@article@Deep Learning Book](https://www.deeplearningbook.org/)
+- [@article@Introduction to Deep Learning](https://www.ibm.com/topics/deep-learning)
+- [@video@What is a Neural Network?](https://www.youtube.com/watch?v=aircAruvnKk)

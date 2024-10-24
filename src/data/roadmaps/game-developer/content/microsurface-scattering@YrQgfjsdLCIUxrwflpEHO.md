@@ -4,4 +4,6 @@ Microsurface scattering, also known as sub-surface scattering, is an important p
 
 Visit the following resources to learn more:
 
-- [@video@The 4 main types of subsurface scattering](https://www.youtube.com/watch?v=GkjvYSbGHg4)
+- [@article@Subsurface Rendering](https://gamedev.net/forums/topic/600708-subsurface-scattering/)
+- [@article@Real Time Sub Surface Rendering](https://therealmjp.github.io/posts/sss-intro/)
+- [@video@Types of Subsurface Scattering](https://www.youtube.com/watch?v=GkjvYSbGHg4)
