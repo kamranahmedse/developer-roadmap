@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@official@User Data Scripts EC2](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/user-data.html)
+- [@official@User Data Scripts EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)

@@ -4,6 +4,6 @@ Creating local modules in Terraform involves organizing a set of related resourc
 
 Learn more from the following resources:
 
-- [@official@Build and use a local moduke](https://developer.hashicorp.com/terraform/tutorials/modules/module-create)
+- [@official@Build and use a local module](https://developer.hashicorp.com/terraform/tutorials/modules/module-create)
 - [@article@How to create reusable infrastructure with Terraform modules](https://blog.gruntwork.io/how-to-create-reusable-infrastructure-with-terraform-modules-25526d65f73d)
 - [@video@Creating a module in Terraform](https://www.youtube.com/watch?v=OeL2AlsdNaQ)
