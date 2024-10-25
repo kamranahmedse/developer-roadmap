@@ -156,6 +156,8 @@ const gaPageIdentifier = Astro.url.pathname
         />
       )
     }
+
+    <Analytics />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -189,7 +191,6 @@ const gaPageIdentifier = Astro.url.pathname
 
     <slot name='after-footer' />
 
-    <Analytics />
     <PageVisit
       resourceId={resourceId}
       resourceType={resourceType}
