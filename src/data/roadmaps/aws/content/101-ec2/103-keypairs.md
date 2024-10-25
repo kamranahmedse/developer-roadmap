@@ -4,4 +4,4 @@ Key pairs are part of Amazon EC2 and are used to securely log into your instance
 
 Visit the following resources to learn more:
 
-- [@official@EC2 - Keypairs](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+- [@official@EC2 - Keypairs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
