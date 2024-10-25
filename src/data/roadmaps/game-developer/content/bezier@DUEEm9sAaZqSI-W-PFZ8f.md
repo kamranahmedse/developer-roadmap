@@ -4,4 +4,5 @@
 
 Learn more from the following resources:
 
+- [@article@Bezier Curves for Your Games](http://devmag.org.za/2011/04/05/bzier-curves-a-tutorial/)
 - [@video@Bezier Curves Explained](https://www.youtube.com/watch?v=pnYccz1Ha34)
