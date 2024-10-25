@@ -4,4 +4,5 @@ The **Render Equation**, also known as the **Rendering Equation**, is a fundamen
 
 Visit the following resources to learn more:
 
+- [@article@Rendering Equation](https://en.wikipedia.org/wiki/Rendering_equation)
 - [@video@Interactive Graphics 12 - The Rendering Equation](https://www.youtube.com/watch?v=wawf7Am6xy0)
