@@ -4,16 +4,23 @@ import { RateCourseForm } from './RateCourseForm';
 import type { ChapterFileType } from '../../lib/course';
 import { useCourseProgress } from '../../hooks/use-course';
 import { Loader2 } from 'lucide-react';
+import { CertificateModal } from './Certificate';
+import { useAuth } from '../../hooks/use-auth';
 
 type CertificateViewProps = {
+  courseTitle: string;
   chapters: ChapterFileType[];
   currentCourseId: string;
 };
 
 export function CertificateView(props: CertificateViewProps) {
-  const { currentCourseId, chapters } = props;
+  const { currentCourseId, chapters, courseTitle } = props;
 
+  const user = useAuth();
   const [isLoading, setIsLoading] = useState(true);
+  const [showCertificateModal, setShowCertificateModal] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [showRatingForm, setShowRatingForm] = useState(false);
 
   const { data: courseProgress, status } = useCourseProgress(currentCourseId);
 
@@ -44,8 +51,45 @@ export function CertificateView(props: CertificateViewProps) {
     );
   }, [allLessonLinks, completeLessonSet]);
 
-  const [rating, setRating] = useState(0);
-  const [showRatingForm, setShowRatingForm] = useState(false);
+  const {
+    chapters: chaptersCount,
+    lessons: lessonsCount,
+    quizzes: quizCount,
+    challenges: challengeCount,
+  } = useMemo(() => {
+    const counts = {
+      chapters: 0,
+      lessons: 0,
+      quizzes: 0,
+      challenges: 0,
+    };
+
+    for (const chapter of chapters.filter(
+      (chapter) => chapter.lessons.length > 0,
+    )) {
+      counts.chapters += 1;
+
+      for (const lesson of chapter.lessons) {
+        if (lesson.frontmatter.type === 'quiz') {
+          counts.quizzes += 1;
+        }
+
+        if (lesson.frontmatter.type === 'challenge') {
+          counts.challenges += 1;
+        }
+
+        if (
+          ['lesson', 'lesson-challenge', 'lesson-quiz'].includes(
+            lesson.frontmatter.type,
+          )
+        ) {
+          counts.lessons += 1;
+        }
+      }
+    }
+
+    return counts;
+  }, chapters);
 
   useEffect(() => {
     if (!courseProgress) {
@@ -67,6 +111,21 @@ export function CertificateView(props: CertificateViewProps) {
         />
       )}
 
+      {showCertificateModal && (
+        <CertificateModal
+          userName={user?.name || 'N/A'}
+          courseName={courseTitle}
+          lessonsCount={lessonsCount}
+          quizzesCount={quizCount}
+          challengesCount={challengeCount}
+          onClose={() => {
+            setShowCertificateModal(false);
+          }}
+          // FIXME: This should be the actual date of course completion
+          issuedDate={new Date().toISOString()}
+        />
+      )}
+
       <div className="mx-auto flex max-w-md flex-col items-center justify-center">
         {isLoading && (
           <Loader2 className="size-8 animate-spin stroke-[2.5] text-zinc-200" />
@@ -80,14 +139,11 @@ export function CertificateView(props: CertificateViewProps) {
                 You finished the course. Download the completion certificate
                 below and share it with the world.
               </p>
-              <button>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-8 block rounded-full bg-zinc-700 px-6 py-2.5 font-medium text-white"
-                >
-                  Download Certificate
-                </a>
+              <button
+                className="mt-8 block rounded-full bg-zinc-700 px-6 py-2.5 font-medium text-white"
+                onClick={() => setShowCertificateModal(true)}
+              >
+                View Certificate
               </button>
             </div>
 

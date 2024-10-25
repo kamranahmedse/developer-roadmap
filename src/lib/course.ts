@@ -6,12 +6,12 @@ export interface CourseFrontmatter {
   description: string;
 }
 
-export type AllowedLessonType = 
-  | 'lesson' 
-  | 'challenge' 
-  | 'quiz' 
-  | 'lesson-challenge' 
-  | 'lesson-quiz';
+export type AllowedLessonType =
+  | 'lesson'
+  | 'lesson-challenge'
+  | 'lesson-quiz'
+  | 'challenge'
+  | 'quiz';
 
 export type LessonFrontmatter = {
   title: string;

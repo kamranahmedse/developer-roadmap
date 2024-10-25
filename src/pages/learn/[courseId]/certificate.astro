@@ -1,7 +1,7 @@
 ---
 import { CertificateView } from '../../../components/Course/CertificateView';
 import { CourseLayout } from '../../../components/Course/CourseLayout';
-import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 import {
   getAllCourses,
   getChaptersByCourseId,
@@ -54,7 +54,17 @@ const { courseId } = Astro.params;
 const { course } = Astro.props;
 ---
 
-<SkeletonLayout title={course.frontmatter.title}>
+<BaseLayout title={course.frontmatter.title}>
+  <link
+    rel='preload'
+    href='/fonts/balsamiq.woff2'
+    as='font'
+    type='font/woff2'
+    crossorigin
+    slot='after-header'
+  />
+
+  <div slot='page-header'></div>
   <CourseLayout
     activeCourseId={courseId}
     title={course.frontmatter.title}
@@ -62,9 +72,20 @@ const { course } = Astro.props;
     client:load
   >
     <CertificateView
+      courseTitle={course.frontmatter.title}
       chapters={course.chapters}
       currentCourseId={courseId}
       client:load
     />
   </CourseLayout>
-</SkeletonLayout>
+  <div slot='page-footer'></div>
+</BaseLayout>
+
+<style>
+  @font-face {
+    font-family: 'balsamiq';
+    src: url('/fonts/balsamiq.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
