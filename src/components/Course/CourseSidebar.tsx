@@ -4,9 +4,9 @@ import { Chapter } from './Chapter';
 import { StickyNote } from 'lucide-react';
 
 export type CourseSidebarProps = {
-  currentCourseId: string;
-  currentChapterId?: string;
-  currentLessonId?: string;
+  activeCourseId: string;
+  activeChapterId?: string;
+  activeLessonId?: string;
 
   title: string;
   chapters: ChapterFileType[];
@@ -20,14 +20,14 @@ export function CourseSidebar(props: CourseSidebarProps) {
     title,
     chapters,
     completedPercentage,
-    currentCourseId,
-    currentChapterId,
-    currentLessonId,
+    activeCourseId,
+    activeChapterId,
+    activeLessonId,
   } = props;
 
-  const [activeChapterId, setActiveChapterId] = useState(currentChapterId);
+  const [openedChapterId, setOpenedChapterId] = useState(activeChapterId);
 
-  const ceritificateUrl = `/learn/${currentCourseId}/certificate`;
+  const ceritificateUrl = `/learn/${activeCourseId}/certificate`;
 
   return (
     <aside className="border-r border-zinc-800">
@@ -48,7 +48,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
       <div className="relative h-full">
         <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
           {chapters?.map((chapter, index) => {
-            const isActive = activeChapterId === chapter.id;
+            const isActive = openedChapterId === chapter.id;
 
             return (
               <Chapter
@@ -56,16 +56,16 @@ export function CourseSidebar(props: CourseSidebarProps) {
                 isActive={isActive}
                 onChapterClick={() => {
                   if (isActive) {
-                    setActiveChapterId('');
+                    setOpenedChapterId('');
                   } else {
-                    setActiveChapterId(chapter.id);
+                    setOpenedChapterId(chapter.id);
                   }
                 }}
                 index={index + 1}
                 {...chapter}
-                currentCourseId={currentCourseId}
-                currentChapterId={currentChapterId}
-                currentLessonId={currentLessonId}
+                activeCourseId={activeCourseId}
+                activeChapterId={activeChapterId}
+                activeLessonId={activeLessonId}
               />
             );
           })}

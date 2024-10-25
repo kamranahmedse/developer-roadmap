@@ -17,25 +17,20 @@ type CourseLayoutProps = {
 
 export function CourseLayout(props: CourseLayoutProps) {
   const { children, ...sidebarProps } = props;
-  const {
-    chapters,
-    currentCourseId,
-    currentChapterId,
-    currentLessonId,
-    lesson,
-  } = sidebarProps;
+  const { chapters, activeCourseId, activeChapterId, activeLessonId, lesson } =
+    sidebarProps;
 
   const $currentLesson = useStore(currentLesson);
   const [showNextWarning, setShowNextWarning] = useState(false);
 
-  const { data: courseProgress } = useCourseProgress(currentCourseId);
-  const completeLesson = useCompleteLessonMutation(currentCourseId);
+  const { data: courseProgress } = useCourseProgress(activeCourseId);
+  const completeLesson = useCompleteLessonMutation(activeCourseId);
 
   const completeLessonSet = useMemo(
     () =>
       new Set(
         (courseProgress?.completed || []).map(
-          (l) => `/learn/${currentCourseId}/${l.chapterId}/${l.lessonId}`,
+          (l) => `/learn/${activeCourseId}/${l.chapterId}/${l.lessonId}`,
         ),
       ),
     [courseProgress],
@@ -45,7 +40,7 @@ export function CourseLayout(props: CourseLayoutProps) {
     const lessons: string[] = [];
     for (const chapter of chapters) {
       for (const lesson of chapter.lessons) {
-        lessons.push(`/learn/${currentCourseId}/${chapter.id}/${lesson.id}`);
+        lessons.push(`/learn/${activeCourseId}/${chapter.id}/${lesson.id}`);
       }
     }
 
@@ -60,7 +55,7 @@ export function CourseLayout(props: CourseLayoutProps) {
     return getPercentage(completedCount, allLessonLinks.length);
   }, [allLessonLinks, completeLessonSet]);
 
-  const currentLessonUrl = `/learn/${currentCourseId}/${currentChapterId}/${currentLessonId}`;
+  const currentLessonUrl = `/learn/${activeCourseId}/${activeChapterId}/${activeLessonId}`;
   const isCurrentLessonCompleted = completeLessonSet.has(currentLessonUrl);
 
   const currentLessonIndex = allLessonLinks.indexOf(currentLessonUrl);
@@ -75,14 +70,14 @@ export function CourseLayout(props: CourseLayoutProps) {
       return;
     }
 
-    if (!currentChapterId || !currentLessonId) {
+    if (!activeChapterId || !activeLessonId) {
       return;
     }
 
     completeLesson.mutate(
       {
-        chapterId: currentChapterId,
-        lessonId: currentLessonId,
+        chapterId: activeChapterId,
+        lessonId: activeLessonId,
       },
       {
         onSuccess: () => {
@@ -102,9 +97,9 @@ export function CourseLayout(props: CourseLayoutProps) {
     }
 
     currentLesson.set({
-      courseId: currentCourseId,
-      chapterId: currentChapterId,
-      lessonId: currentLessonId,
+      courseId: activeCourseId,
+      chapterId: activeChapterId,
+      lessonId: activeLessonId,
       lessonType: lesson?.frontmatter?.type,
       challengeStatus: 'pending',
       quizStatus: 'pending',
@@ -126,7 +121,7 @@ export function CourseLayout(props: CourseLayoutProps) {
       <section
         className={cn(
           'grid h-screen grid-rows-[1fr_60px] overflow-hidden bg-zinc-900 text-zinc-50',
-          currentChapterId && currentLessonId
+          activeChapterId && activeLessonId
             ? 'grid-rows-[1fr_60px]'
             : 'grid-rows-1',
         )}
@@ -140,7 +135,7 @@ export function CourseLayout(props: CourseLayoutProps) {
           {children}
         </div>
 
-        {currentChapterId && currentLessonId && (
+        {activeChapterId && activeLessonId && (
           <footer className="flex items-center justify-end border-t border-zinc-800 px-4">
             <div className="flex items-center gap-2">
               <button

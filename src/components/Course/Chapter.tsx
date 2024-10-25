@@ -12,44 +12,46 @@ type ChapterProps = ChapterFileType & {
   isActive?: boolean;
   isCompleted?: boolean;
 
-  currentCourseId: string;
-  currentChapterId?: string;
-  currentLessonId?: string;
+  activeCourseId: string;
+  activeChapterId?: string;
+  activeLessonId?: string;
   onChapterClick?: () => void;
 };
 
 export function Chapter(props: ChapterProps) {
   const {
+    id: chapterId,
     index,
     frontmatter,
     lessons,
     isActive = false,
     onChapterClick,
 
-    currentCourseId,
-    currentChapterId,
-    currentLessonId,
+    activeCourseId,
+    activeChapterId,
+    activeLessonId,
   } = props;
   const { title } = frontmatter;
 
-  const { data: courseProgress } = useCourseProgress(currentCourseId);
+  const { data: courseProgress } = useCourseProgress(activeCourseId);
 
   const completeLessonSet = useMemo(
     () =>
       new Set(
         (courseProgress?.completed || [])
-          .filter((l) => l.chapterId === currentChapterId)
+          .filter((l) => l.chapterId === chapterId)
           .map((l) => `${l.chapterId}/${l.lessonId}`),
       ),
     [courseProgress],
   );
+
   const isChapterCompleted = lessons.every((lesson) =>
-    completeLessonSet.has(`${currentChapterId}/${lesson.id}`),
+    completeLessonSet.has(`${chapterId}/${lesson.id}`),
   );
 
   const completedPercentage = useMemo(() => {
     const completedCount = lessons.filter((lesson) =>
-      completeLessonSet.has(`${currentChapterId}/${lesson.id}`),
+      completeLessonSet.has(`${chapterId}/${lesson.id}`),
     ).length;
 
     return getPercentage(completedCount, lessons.length);
@@ -101,25 +103,14 @@ export function Chapter(props: ChapterProps) {
         <div className="flex flex-col border-b border-zinc-800">
           {lessons.length > 0 && (
             <>
-              <div>
-                {filteredLessons?.map((lesson) => {
-                  const isActive = currentLessonId === lesson.id;
-                  const isCompleted = completeLessonSet.has(
-                    `${currentChapterId}/${lesson.id}`,
-                  );
-
-                  return (
-                    <Lesson
-                      key={lesson.id}
-                      {...lesson}
-                      currentCourseId={currentCourseId}
-                      currentChapterId={currentChapterId}
-                      isActive={isActive}
-                      isCompleted={isCompleted}
-                    />
-                  );
-                })}
-              </div>
+              <LessonList
+                activeCourseId={activeCourseId}
+                activeChapterId={activeChapterId}
+                activeLessonId={activeLessonId}
+                chapterId={chapterId}
+                lessons={filteredLessons}
+                completedLessonSet={completeLessonSet}
+              />
 
               <div className="relative">
                 <label className="relative z-10 my-2 ml-2 block max-w-max rounded-md bg-zinc-800 p-1 px-2 text-xs">
@@ -129,25 +120,14 @@ export function Chapter(props: ChapterProps) {
                 <span className="absolute left-[17px] top-0 h-full w-0.5 bg-zinc-700"></span>
               </div>
 
-              <div>
-                {exercises?.map((exercise) => {
-                  const isActive = currentLessonId === exercise.id;
-                  const isCompleted = completeLessonSet.has(
-                    `${currentChapterId}/${exercise.id}`,
-                  );
-
-                  return (
-                    <Lesson
-                      key={exercise.id}
-                      {...exercise}
-                      currentCourseId={currentCourseId}
-                      currentChapterId={currentChapterId}
-                      isActive={isActive}
-                      isCompleted={isCompleted}
-                    />
-                  );
-                })}
-              </div>
+              <LessonList
+                activeCourseId={activeCourseId}
+                activeChapterId={activeChapterId}
+                activeLessonId={activeLessonId}
+                chapterId={chapterId}
+                lessons={exercises}
+                completedLessonSet={completeLessonSet}
+              />
             </>
           )}
 
@@ -160,28 +140,69 @@ export function Chapter(props: ChapterProps) {
   );
 }
 
-type LessonProps = LessonFileType & {
-  currentCourseId: string;
-  currentChapterId?: string;
+type LessonListProps = {
+  activeCourseId: string;
+  activeChapterId?: string;
+  activeLessonId?: string;
 
+  chapterId: string;
+  lessons: LessonFileType[];
+  completedLessonSet: Set<string>;
+};
+
+function LessonList(props: LessonListProps) {
+  const {
+    activeCourseId,
+    activeChapterId,
+    activeLessonId,
+    chapterId,
+    lessons,
+    completedLessonSet,
+  } = props;
+
+  return (
+    <div>
+      {lessons.map((lesson) => {
+        const isActive =
+          activeLessonId === lesson.id && chapterId === activeChapterId;
+        const isCompleted = completedLessonSet.has(`${chapterId}/${lesson.id}`);
+
+        return (
+          <Lesson
+            key={lesson.id}
+            {...lesson}
+            courseId={activeCourseId}
+            chapterId={chapterId}
+            isActive={isActive}
+            isCompleted={isCompleted}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+type LessonProps = LessonFileType & {
   isActive?: boolean;
   isCompleted?: boolean;
+  courseId: string;
+  chapterId: string;
 };
 
 export function Lesson(props: LessonProps) {
   const {
     frontmatter,
     isActive,
-    currentCourseId,
-    currentChapterId,
+    courseId,
+    chapterId,
     id: lessonId,
     isCompleted,
   } = props;
   const { title } = frontmatter;
 
   const isMounted = useIsMounted();
-  const { isLoading } = useCourseProgress(currentCourseId);
-  const href = `/learn/${currentCourseId}/${currentChapterId}/${lessonId}`;
+  const { isLoading } = useCourseProgress(courseId);
+  const href = `/learn/${courseId}/${chapterId}/${lessonId}`;
 
   return (
     <a

@@ -56,11 +56,15 @@ const { course } = Astro.props;
 
 <SkeletonLayout title={course.frontmatter.title}>
   <CourseLayout
-    currentCourseId={courseId}
+    activeCourseId={courseId}
     title={course.frontmatter.title}
     chapters={course.chapters}
     client:load
   >
-    <CertificateView currentCourseId={courseId} client:load />
+    <CertificateView
+      chapters={course.chapters}
+      currentCourseId={courseId}
+      client:load
+    />
   </CourseLayout>
 </SkeletonLayout>
