@@ -4,4 +4,4 @@ Sending end-user IDs in your requests can be a useful tool to help OpenAI monito
 
 Visit the following resources to learn more:
 
--[@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)
+- [@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)
