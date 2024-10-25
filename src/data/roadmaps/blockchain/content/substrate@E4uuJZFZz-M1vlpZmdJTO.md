@@ -4,4 +4,4 @@ Substrate is a Software Development Kit (SDK) specifically designed to provide y
 
 Visit the following resources to learn more:
 
-- [@article@Substrate Documentation](https://docs.substrate.io/quick-start/)
+- [@official@Substrate Documentation](https://docs.substrate.io/quick-start/)

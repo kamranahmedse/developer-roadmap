@@ -147,10 +147,13 @@ export function PageSponsor(props: PageSponsorProps) {
       rel="noopener sponsored nofollow"
       className="fixed bottom-0 left-0 right-0 z-50 flex bg-white shadow-lg outline-0 outline-transparent sm:bottom-[15px] sm:left-auto sm:right-[15px] sm:max-w-[350px]"
       onClick={async () => {
+        const labelValue = gaLabel || `${gaPageIdentifier} / ${company} Link`;
+
         window.fireEvent({
           category: 'SponsorClick',
           action: `${company} Redirect`,
-          label: gaLabel || `${gaPageIdentifier} / ${company} Link`,
+          label: labelValue,
+          value: labelValue,
         });
         await clickSponsor(sponsorId || '');
       }}
