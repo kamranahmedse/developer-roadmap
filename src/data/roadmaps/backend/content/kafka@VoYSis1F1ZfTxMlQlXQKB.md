@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@video@Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
 - [@video@Kafka in 100 Seconds](https://www.youtube.com/watch?v=uvb00oaa3k8)
 - [@feed@Explore top posts about Kafka](https://app.daily.dev/tags/kafka?ref=roadmapsh)
+- [@offical@Kafka Streams Confluent](https://docs.confluent.io/platform/current/streams/concepts.html)
