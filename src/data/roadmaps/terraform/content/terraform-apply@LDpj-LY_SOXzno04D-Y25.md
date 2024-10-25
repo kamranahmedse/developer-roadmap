@@ -4,6 +4,6 @@
 
 Learn more from the following resoureces:
 
-- [@official@Terraform Apply Documentation](https://developer.hashicorp.com/terraform/cli/commands/plan)
+- [@official@Terraform Apply Documentation](https://developer.hashicorp.com/terraform/cli/commands/apply)
 - [@course@Apply Terraform configuration](https://developer.hashicorp.com/terraform/tutorials/cli/apply)
 - [@article@Terraform Apply Command: Options, Examples and Best Practices](https://www.env0.com/blog/terraform-apply-guide-command-options-and-examples)
