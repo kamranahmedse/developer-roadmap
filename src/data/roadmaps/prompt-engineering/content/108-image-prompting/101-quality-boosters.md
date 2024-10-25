@@ -1,26 +1,9 @@
 # Quality Boosters
 
-In AI image generation, quality boosters are essential for enhancing the visual output of generated images. 
+Quality boosters in AI image generation are techniques and tools used to enhance the visual output of generated images. These include advanced model architectures, use of natural and descriptive language in prompts, resolution specifications, AI image enhancers, style modifiers, iterative feedback, and experimentation with prompt lengths. Advanced models like Stable Diffusion 3.5 offer improved customization, while incorporating descriptive terms and specifying high resolutions can enhance detail and appeal. Currennt AI image tools as can upscale and refine images. Adding style-related terms and implementing feedback loops for refinement can lead to more personalized results. By employing these strategies, users can significantly improve the quality of AI-generated images, achieving more detailed, aesthetically pleasing, and tailored outputs.
 
-## Techniques:
+Learn more from the following resources:
 
-There are several techniques and examples have been identified to improve image quality effectively:
-
-• **Advanced Model Architectures**: Newer models like Stable Diffusion 3.5 offer improved customization and versatility, allowing for more diverse and detailed outputs without extensive prompting.
-
-• **Use of Natural and Descriptive Language**: Incorporating descriptive terms such as "beautiful," "majestic," and "incredible" in prompts can significantly enhance the visual appeal and detail of generated images1.
-
-• **Resolution Enhancements**: Specifying high resolutions like "4K" or "8K" in prompts can lead to more detailed and sharper images. This is particularly useful when aiming for high-quality outputs.
-
-• **Incorporation of AI Image Enhancers**: Tools like Aiarty Image Enhancer and Topaz Photo AI use advanced AI algorithms to upscale images and enhance details, making them ideal for improving low-resolution images to high-quality standards.
-
-• **Style Modifiers**: Adding style-related terms such as "masterpiece" or "art station" can further refine the aesthetic quality of the image, blending artistic styles with technical enhancements.
-
-• **Iterative Feedback and Refinement**: Implementing feedback loops where users can iteratively refine images based on additional inputs or preferences can lead to more personalized and higher-quality results.
-
-• **Experimentation with Prompt Lengths**: Testing various prompt lengths, from concise to detailed, can help determine the most effective approach for different AI tools.
-
-These strategies demonstrate how specific prompt modifications and the use of AI tools can drastically improve the quality of AI-generated images.
-
-
-- [@article@Quality Boosters - learnprompting.org](https://learnprompting.org/docs/image_prompting/quality_boosters)
+- [@guide@Quality Boosters | Learnprompting.org]( https://learnprompting.org/docs/image_prompting/quality_boosters)
+- [@article@A Beginner’s Guide to Prompt Design for Text-to-Image Generative Models |Medium.com](https://towardsdatascience.com/a-beginners-guide-to-prompt-design-for-text-to-image-generative-models-8242e1361580) 
+- [@guide@Enhancing Text-to-Image Prompts: Techniques and Best Practices - Steh Blog]( https://steh.github.io/informationsecurity/text-image-prompts/ )
