@@ -1683,7 +1683,7 @@
   },
   "VoYSis1F1ZfTxMlQlXQKB": {
     "title": "Kafka",
-    "description": "Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant data processing. It acts as a message broker, allowing systems to publish and subscribe to streams of records, similar to a distributed commit log. Kafka is highly scalable and can handle large volumes of data with low latency, making it ideal for real-time analytics, log aggregation, and data integration. It features topics for organizing data streams, partitions for parallel processing, and replication for fault tolerance, enabling reliable and efficient handling of large-scale data flows across distributed systems. \nVisit the following resources to learn more:",
+    "description": "Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant data processing. It acts as a message broker, allowing systems to publish and subscribe to streams of records, similar to a distributed commit log. Kafka is highly scalable and can handle large volumes of data with low latency, making it ideal for real-time analytics, log aggregation, and data integration. It features topics for organizing data streams, partitions for parallel processing, and replication for fault tolerance, enabling reliable and efficient handling of large-scale data flows across distributed systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Apache Kafka",
