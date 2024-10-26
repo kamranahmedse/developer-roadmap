@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { httpGet, httpPatch } from '../../lib/http';
 import { sponsorHidden } from '../../stores/page';
 import { useStore } from '@nanostores/react';
-import { X } from 'lucide-react';
 import { setViewSponsorCookie } from '../../lib/jwt';
 import { isMobile } from '../../lib/is-mobile';
 import Cookies from 'js-cookie';
@@ -21,12 +20,21 @@ type PageSponsorType = {
   id: string;
 };
 
-export type StickyTopSponsorType = PageSponsorType & {};
+export type StickyTopSponsorType = PageSponsorType & {
+  buttonText: string;
+  style?: {
+    fromColor?: string;
+    toColor?: string;
+    textColor?: string;
+    buttonBackgroundColor?: string;
+    buttonTextColor?: string;
+  };
+};
 export type BottomRightSponsorType = PageSponsorType;
 
 type V1GetSponsorResponse = {
-  bottomRightAd?: PageSponsorType;
-  stickyTopAd?: PageSponsorType;
+  bottomRightAd?: BottomRightSponsorType;
+  stickyTopAd?: StickyTopSponsorType;
 };
 
 type PageSponsorsProps = {
@@ -55,9 +63,9 @@ export function PageSponsors(props: PageSponsorsProps) {
   const $isSponsorHidden = useStore(sponsorHidden);
 
   const [stickyTopSponsor, setStickyTopSponsor] =
-    useState<StickyTopSponsorType>();
+    useState<StickyTopSponsorType | null>();
   const [bottomRightSponsor, setBottomRightSponsor] =
-    useState<BottomRightSponsorType>();
+    useState<BottomRightSponsorType | null>();
 
   useEffect(() => {
     const foundUtmParams = getUrlUtmParams();

@@ -68,6 +68,8 @@ export function BottomRightSponsor(props: BottomRightSponsorProps) {
         aria-label="Close"
         onClick={(e) => {
           e.preventDefault();
+          e.stopPropagation();
+
           setIsHidden(true);
           onSponsorHidden();
         }}
