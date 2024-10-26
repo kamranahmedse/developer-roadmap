@@ -28,8 +28,9 @@ Roadmaps are now interactive, you can click the nodes to read more about the top
 
 ![](https://i.imgur.com/waxVImv.png)
 
-Here is the list of available roadmaps with more being actively worked upon.
+**Here is the list of currently available roadmaps, with additional ones in development.**
 
+> [!TIP]
 > Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
 
 - [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
@@ -85,7 +86,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 - [DevRel Engineer Roadmap](https://roadmap.sh/devrel)
 
-There are also interactive best practices:
+**Additionally, there are interactive best practices available:**
 
 - [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
@@ -93,7 +94,7 @@ There are also interactive best practices:
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
-..and questions to help you test, rate and improve your knowledge
+**..along with questions to help you test, rate and improve your knowledge.**
 
 - [JavaScript Questions](https://roadmap.sh/questions/javascript)
 - [Node.js Questions](https://roadmap.sh/questions/nodejs)
@@ -105,17 +106,30 @@ There are also interactive best practices:
 
 ## Share with the community
 
-Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
+**Please consider sharing a post** about [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
 
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-reddit-red?logo=reddit)](https://reddit.com/submit?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-hacker%20news-orange?logo=ycombinator)](https://news.ycombinator.com/submitlink?u=https://roadmap.sh)
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://roadmap.sh&text=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://roadmap.sh)
-[![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
+<p align="center">
+    <a href="https://reddit.com/submit?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers">
+    	<img src="https://img.shields.io/badge/Reddit-FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" />
+    </a>
+    <a href="https://news.ycombinator.com/submitlink?u=https://roadmap.sh">
+    	<img src="https://img.shields.io/badge/Y%20Combinator-F0652F.svg?style=for-the-badge&logo=Y-Combinator&logoColor=white" alt="ycombinator" />
+    </a>
+    <a href="https://twitter.com/share?url=https://roadmap.sh&text=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers">
+    	<img src="https://img.shields.io/badge/TWITTER-black?style=for-the-badge&logo=x&logoColor=white" alt="twitter"/>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://roadmap.sh">
+    	<img src="https://img.shields.io/badge/Facebook-0866FF.svg?style=for-the-badge&logo=Facebook&logoColor=white" alt="facebook" />
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers">
+    	<img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="linkedin" />
+    </a>
+  </p>
+
 
 ## Development
 
-Clone the repository, install the dependencies and start the application
+Clone the repository, install the dependencies and start the application.
 
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git
@@ -124,7 +138,7 @@ npm install
 npm run dev
 ```
 
-Note: use the `depth` parameter to reduce the clone size and speed up the clone.
+**Note:** use the `depth` parameter to reduce the clone size and speed up the clone.
 
 ```sh
 git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
@@ -132,7 +146,7 @@ git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
 
 ## Contribution
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+> Your contributions are valuable! 🙂 Please refer to the contribution docs for guidance on updating the roadmaps.
 
 - Add content to roadmaps
 - Add new roadmaps
@@ -140,12 +154,12 @@ git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
 - Discuss ideas in issues
 - Spread the word
 
-## Thanks to all contributors ❤
+## Thanks to all contributors ❤️
 
- <a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap"/>
- </a>
+ <p align="center"><a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap" alt="contributors"/>
+ </a></p>
 
 ## License
 
-Have a look at the [license file](./license) for details
+Have a look at the [license file](./license) for details.
