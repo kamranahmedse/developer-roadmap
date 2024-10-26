@@ -163,6 +163,8 @@ export function PageSponsor(props: PageSponsorProps) {
         aria-label="Close"
         onClick={(e) => {
           e.preventDefault();
+          e.stopPropagation();
+
           markSponsorHidden(sponsorId || '');
           sponsorHidden.set(true);
         }}
