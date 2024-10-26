@@ -1011,7 +1011,7 @@
     "links": [
       {
         "title": "Node.js Learn environment variables",
-        "url": "https://www.digitalocean.com/community/tutorials/nodejs-command-line-arguments-node-scripts",
+        "url": "https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs",
         "type": "article"
       },
       {
