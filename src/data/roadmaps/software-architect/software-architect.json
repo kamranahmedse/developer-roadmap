@@ -1944,36 +1944,6 @@
       "focusable": true
     },
     {
-      "id": "a6joS9WXg-rbw29_KfBd9",
-      "type": "subtopic",
-      "position": {
-        "x": 282.63182479290697,
-        "y": 1021.01163847671
-      },
-      "selected": false,
-      "data": {
-        "label": "Trello",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        }
-      },
-      "zIndex": 999,
-      "width": 158,
-      "height": 49,
-      "style": {
-        "width": 158
-      },
-      "positionAbsolute": {
-        "x": 282.63182479290697,
-        "y": 1021.01163847671
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
       "id": "3bpd0iZTd3G-H8A7yrExY",
       "type": "subtopic",
       "position": {
