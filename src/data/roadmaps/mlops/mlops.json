@@ -197,75 +197,6 @@
       "focusable": true
     },
     {
-      "id": "xwpc_KxehAruFM0pCQnie",
-      "type": "vertical",
-      "position": {
-        "x": 16.051288453857865,
-        "y": 2891.946022458241
-      },
-      "selected": false,
-      "data": {
-        "label": "vertical node",
-        "style": {
-          "strokeDasharray": "0.8 8",
-          "strokeLinecap": "round",
-          "strokeWidth": 3.5,
-          "stroke": "#4136D4"
-        },
-        "oldId": "Ju00mr0KLGN2BV6yEQGPt"
-      },
-      "zIndex": 999,
-      "width": 20,
-      "height": 104,
-      "positionAbsolute": {
-        "x": 16.051288453857865,
-        "y": 2891.946022458241
-      },
-      "dragging": false,
-      "style": {
-        "width": 20,
-        "height": 104
-      },
-      "resizing": false,
-      "focusable": true,
-      "selectable": true
-    },
-    {
-      "width": 443,
-      "height": 119,
-      "id": "GV_zWF6rSWg5bqgiXhOEf",
-      "type": "paragraph",
-      "position": {
-        "x": -195.44871154614214,
-        "y": 2801.355271941364
-      },
-      "selected": false,
-      "data": {
-        "label": "Visit the following relevant roadmaps",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center",
-          "borderColor": "#000000",
-          "backgroundColor": "#ffffff"
-        },
-        "oldId": "sVXZrBCsiSzWBBYWTm-nQ"
-      },
-      "zIndex": 999,
-      "positionAbsolute": {
-        "x": -195.44871154614214,
-        "y": 2801.355271941364
-      },
-      "dragging": false,
-      "style": {
-        "width": 443,
-        "height": 119
-      },
-      "resizing": false,
-      "focusable": true,
-      "selectable": true
-    },
-    {
       "id": "_7uvOebQUI4xaSwtMjpEd",
       "type": "topic",
       "position": {
@@ -368,41 +299,6 @@
       "focusable": true
     },
     {
-      "width": 134,
-      "height": 49,
-      "id": "ZSrQoNGKiR484uALMWO9F",
-      "type": "button",
-      "position": {
-        "x": 101.89840193478477,
-        "y": 2859.0445538530157
-      },
-      "selected": false,
-      "data": {
-        "label": "API Design",
-        "href": "https://roadmap.sh/api-design",
-        "color": "#FFFFFf",
-        "backgroundColor": "#4136D4",
-        "style": {
-          "fontSize": 17
-        },
-        "borderColor": "#4136D4",
-        "oldId": "dlGf3ZdFXYx0Z6Viu2x-l"
-      },
-      "zIndex": 999,
-      "dragging": false,
-      "positionAbsolute": {
-        "x": 101.89840193478477,
-        "y": 2859.0445538530157
-      },
-      "style": {
-        "width": 134,
-        "height": 49
-      },
-      "focusable": true,
-      "resizing": false,
-      "selectable": true
-    },
-    {
       "id": "Vh81GnOUOZvDOlOyI5PwT",
       "type": "subtopic",
       "position": {
@@ -433,38 +329,6 @@
       "focusable": true,
       "selectable": true,
       "resizing": false
-    },
-    {
-      "width": 283,
-      "height": 49,
-      "id": "P5IZjP0g1_fnvHy3YTR4q",
-      "type": "button",
-      "position": {
-        "x": -185.10159806521517,
-        "y": 2859.0445538530157
-      },
-      "selected": false,
-      "data": {
-        "label": "Client-side game Development",
-        "href": "https://roadmap.sh/backend",
-        "color": "#FFFFFf",
-        "backgroundColor": "#4136D4",
-        "style": {
-          "fontSize": 17
-        },
-        "borderColor": "#4136D4",
-        "oldId": "dlGf3ZdFXYx0Z6Viu2x-l"
-      },
-      "zIndex": 999,
-      "dragging": false,
-      "positionAbsolute": {
-        "x": -185.10159806521517,
-        "y": 2859.0445538530157
-      },
-      "style": {},
-      "focusable": true,
-      "resizing": false,
-      "selectable": true
     },
     {
       "id": "vdVq3RQvQF3mF8PQc6DMg",
