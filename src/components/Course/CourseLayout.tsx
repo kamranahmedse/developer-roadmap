@@ -10,6 +10,7 @@ import { useStore } from '@nanostores/react';
 import { currentLesson } from '../../stores/course';
 import { getPercentage } from '../../helper/number';
 import { cn } from '../../lib/classname';
+import { CourseNotes } from '../CourseNotes/CourseNotes';
 
 type CourseLayoutProps = {
   children: React.ReactNode;
@@ -136,7 +137,10 @@ export function CourseLayout(props: CourseLayoutProps) {
         </div>
 
         {activeChapterId && activeLessonId && (
-          <footer className="flex items-center justify-end border-t border-zinc-800 px-4">
+          <footer className="flex items-center justify-between border-t border-zinc-800 px-4">
+            <div className="flex items-center gap-2">
+              <CourseNotes />
+            </div>
             <div className="flex items-center gap-2">
               <button
                 className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
