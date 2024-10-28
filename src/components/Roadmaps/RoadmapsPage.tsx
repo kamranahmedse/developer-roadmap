@@ -276,7 +276,7 @@ const groups: GroupType[] = [
       {
         title: 'PostgreSQL',
         link: '/postgresql-dba',
-        type: 'role',
+        type: 'skill',
         otherGroups: ['Web Development'],
       },
       {
