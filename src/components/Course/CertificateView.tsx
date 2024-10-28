@@ -6,6 +6,7 @@ import { useCourseProgress } from '../../hooks/use-course';
 import { Loader2 } from 'lucide-react';
 import { CertificateModal } from './Certificate';
 import { useAuth } from '../../hooks/use-auth';
+import { DateTime } from 'luxon';
 
 type CertificateViewProps = {
   courseTitle: string;
@@ -46,10 +47,11 @@ export function CertificateView(props: CertificateViewProps) {
   }, [chapters]);
 
   const isCourseCompleted = useMemo(() => {
-    return allLessonLinks.every((lessonLink) =>
-      completeLessonSet.has(lessonLink),
+    return (
+      allLessonLinks.every((lessonLink) => completeLessonSet.has(lessonLink)) &&
+      courseProgress?.completedAt !== null
     );
-  }, [allLessonLinks, completeLessonSet]);
+  }, [allLessonLinks, completeLessonSet, courseProgress]);
 
   const {
     chapters: chaptersCount,
@@ -99,19 +101,29 @@ export function CertificateView(props: CertificateViewProps) {
     setIsLoading(false);
   }, [courseProgress]);
 
+  useEffect(() => {
+    if (!courseProgress) {
+      return;
+    }
+
+    setRating(courseProgress?.review?.rating || 0);
+  }, [courseProgress]);
+
   return (
     <>
       {showRatingForm && (
         <RateCourseForm
-          defaultRating={rating}
+          courseId={currentCourseId}
+          rating={rating}
+          feedback={courseProgress?.review?.feedback || ''}
           onClose={() => {
-            setRating(0);
+            setRating(courseProgress?.review?.rating || 0);
             setShowRatingForm(false);
           }}
         />
       )}
 
-      {showCertificateModal && (
+      {showCertificateModal && courseProgress?.completedAt !== null && (
         <CertificateModal
           userName={user?.name || 'N/A'}
           courseName={courseTitle}
@@ -121,8 +133,7 @@ export function CertificateView(props: CertificateViewProps) {
           onClose={() => {
             setShowCertificateModal(false);
           }}
-          // FIXME: This should be the actual date of course completion
-          issuedDate={new Date().toISOString()}
+          issuedDate={DateTime.now().toFormat('yyyy-MM-dd')}
         />
       )}
 

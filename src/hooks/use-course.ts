@@ -12,13 +12,19 @@ export interface CourseProgressDocument {
     lessonId: string;
     completedAt: Date;
   }[];
+  review?: {
+    rating: number;
+    feedback?: string;
+  };
+  completedAt?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
 
-export type CourseProgressResponse = {
-  completed: CourseProgressDocument['completed'];
-};
+export type CourseProgressResponse = Pick<
+  CourseProgressDocument,
+  'completed' | 'completedAt' | 'review'
+>;
 
 export function useCourseProgress(courseId: string) {
   return useQuery(
