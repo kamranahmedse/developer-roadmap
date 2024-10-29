@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+
+        header {
+            background: linear-gradient(to right, #f5f5dc, #e0d8b0);
+; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+     
+
+        
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color:#4b3d3d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+            
+            background: linear-gradient(to right, #f5f5dc, #e0d8b0)
+        }
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 10px; /* Max width for the search bar */
+            
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #4b3d3d;;
+            border-radius: 25px; /* Rounded corners */
+            background: linear-gradient(to right, #f5f5dc, #e0d8b0); /* Beige gradient */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            outline: none; /* Remove default outline */
+            transition: box-shadow 0.3s ease; /* Transition for shadow */
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on focus */
+        }
+
+        .search-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4b3d3d; /* Dark brown button */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 15px
+            ;
+            cursor: pointer;
+            font-size:.5em;
+            transition: background 0.3s ease; /* Transition for button */
+        }
+
+        .search-button:hover {
+            background: #a0522d; /* Darker brown on hover */
+        }
+        
+        
+        nav ul li a:hover {
+            color: #a0522d;; /* Gold color on hover */
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .item-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .item {
+            background: #ffffff; /* White background for items */
+            border: 2px solid #ff6347; /* Border color */
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .item img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .item img:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .item-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-button">🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#men">Shop Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="men">
+            <h2>Men's Clothing</h2>
+            <div class="item-container">
+                <div class="item">
+                    <img src="path_to_image" alt="Men's Item 1">
+                    <h3>Men's Shirt</h3>
+                    <p>$20</p>
+                </div>
+                <div class="item">
+                    <img src="path_to_image" alt="Men's Item 2">
+                    <h3>Men's Jacket</h3>
+                    <p>$35</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+
+        <section id="women">
+            <h2>Women's Clothing</h2>
+            <div class="item-container">
+                <div class="item">
+                    <img src="path_to_image" alt="Women's Item 1">
+                    <h3>Women's Dress</h3>
+                    <p>$25</p>
+                </div>
+                <div class="item">
+                    <img src="path_to_image" alt="Women's Item 2">
+                    <h3>Women's Top</h3>
+                    <p>$15</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+
+        <section id="others">
+            <h2>Other Clothing</h2>
+            <div class="item-container">
+                <div class="item">
+                    <img src="path_to_image" alt="Other Item 1">
+                    <h3>Accessories</h3>
+                    <p>$10</p>
+                </div>
+                <div class="item">
+                    <img src="path_to_image" alt="Other Item 2">
+                    <h3>Footwear</h3>
+                    <p>$30</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Thrift Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example: Alert when an item is clicked
+        document.querySelectorAll('.item').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`You clicked on ${item.querySelector('h3').innerText}`);
+            });
+        });
+    </script>
+</body>
+</html>
