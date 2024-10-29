@@ -139,7 +139,12 @@ export function CourseLayout(props: CourseLayoutProps) {
         {activeChapterId && activeLessonId && (
           <footer className="flex items-center justify-between border-t border-zinc-800 px-4">
             <div className="flex items-center gap-2">
-              <CourseNotes />
+              <CourseNotes
+                courseId={activeCourseId}
+                chapters={chapters}
+                currentChapterId={activeChapterId}
+                currentLessonId={activeLessonId}
+              />
             </div>
             <div className="flex items-center gap-2">
               <button

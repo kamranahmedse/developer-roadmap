@@ -85,6 +85,12 @@ a > code:before {
   content: '`' !important;
 }
 
+.note-content-editor[contenteditable] ~ grammarly-extension,
+.note-content-editor input ~ grammarly-extension,
+.note-content-editor textarea ~ grammarly-extension {
+  display: none;
+}
+
 .sponsor-footer {
   text-align: center;
   font-weight: 600;
