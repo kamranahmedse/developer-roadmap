@@ -4,6 +4,6 @@ Chroma is an open-source vector database and AI-native embedding database design
 
 Visit the following resources to learn more:
 
--[@official@Chroma](https://www.trychroma.com/)
--[@article@Chroma Tutorials](https://lablab.ai/tech/chroma)
--[@video@Chroma - Chroma - Vector Database for LLM Applications](https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW)
+- [@official@Chroma](https://www.trychroma.com/)
+- [@article@Chroma Tutorials](https://lablab.ai/tech/chroma)
+- [@video@Chroma - Chroma - Vector Database for LLM Applications](https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW)

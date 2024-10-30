@@ -4,4 +4,4 @@ A _Route Table_ in AWS VPC is a set of rules, called routes, that are used to de
 
 Visit the following resources to learn more:
 
-- [@official@Route Tables](https://docs.aws.amazon.com/pt_br/quicksight/latest/user/vpc-route-table.html)
+- [@official@Route Tables](https://docs.aws.amazon.com/quicksight/latest/user/vpc-route-table.html)

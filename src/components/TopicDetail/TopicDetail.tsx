@@ -340,7 +340,7 @@ export function TopicDetail(props: TopicDetailProps) {
   );
 
   return (
-    <div className={'relative z-[90]'}>
+    <div className={'relative z-[92]'}>
       <div
         ref={topicRef}
         tabIndex={0}

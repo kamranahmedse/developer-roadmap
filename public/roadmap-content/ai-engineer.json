@@ -185,8 +185,24 @@
   },
   "9XCxilAQ7FRet7lHQr1gE": {
     "title": "AI Agents",
-    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:\n\n\\-[@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/) -[@article@Ai agents and their types](https://play.ht/blog/ai-agents-use-cases/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
-    "links": []
+    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Building an AI Agent Tutorial - LangChain",
+        "url": "https://python.langchain.com/docs/tutorials/agents/",
+        "type": "article"
+      },
+      {
+        "title": "Ai agents and their types",
+        "url": "https://play.ht/blog/ai-agents-use-cases/",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX",
+        "type": "video"
+      }
+    ]
   },
   "5QdihE1lLpMc3DFrGy46M": {
     "title": "AI vs AGI",
@@ -665,8 +681,14 @@
   },
   "4Q5x2VCXedAWISBXUIyin": {
     "title": "Adding end-user IDs in prompts",
-    "description": "Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide your team with more actionable feedback in the event that we detect any policy violations in your application.\n\nVisit the following resources to learn more:\n\n\\-[@official@Sending end-user IDs - OpenAi](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids)",
-    "links": []
+    "description": "Sending end-user IDs in your requests can be a useful tool to help OpenAI monitor and detect abuse. This allows OpenAI to provide your team with more actionable feedback in the event that we detect any policy violations in your application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Sending end-user IDs - OpenAi",
+        "url": "https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids",
+        "type": "article"
+      }
+    ]
   },
   "qmx6OHqx4_0JXVIv8dASp": {
     "title": "Robust prompt engineering",
@@ -1058,8 +1080,24 @@
   },
   "dSd2C9lNl-ymmCRT9_ZC3": {
     "title": "Chroma",
-    "description": "Chroma is an open-source vector database and AI-native embedding database designed to handle and store large-scale embeddings and semantic vectors. It is used in applications that require fast, efficient similarity searches, such as natural language processing (NLP), machine learning (ML), and AI systems dealing with text, images, and other high-dimensional data.\n\nVisit the following resources to learn more:\n\n\\-[@official@Chroma](https://www.trychroma.com/) -[@article@Chroma Tutorials](https://lablab.ai/tech/chroma) -[@video@Chroma - Chroma - Vector Database for LLM Applications](https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW)",
-    "links": []
+    "description": "Chroma is an open-source vector database and AI-native embedding database designed to handle and store large-scale embeddings and semantic vectors. It is used in applications that require fast, efficient similarity searches, such as natural language processing (NLP), machine learning (ML), and AI systems dealing with text, images, and other high-dimensional data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Chroma",
+        "url": "https://www.trychroma.com/",
+        "type": "article"
+      },
+      {
+        "title": "Chroma Tutorials",
+        "url": "https://lablab.ai/tech/chroma",
+        "type": "article"
+      },
+      {
+        "title": "Chroma - Chroma - Vector Database for LLM Applications",
+        "url": "https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW",
+        "type": "video"
+      }
+    ]
   },
   "_Cf7S1DCvX7p1_3-tP3C3": {
     "title": "Pinecone",
@@ -1423,13 +1461,45 @@
   },
   "AeHkNU-uJ_gBdo5-xdpEu": {
     "title": "AI Agents",
-    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:\n\n\\-[@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/) -[@article@Ai agents and their types](https://play.ht/blog/ai-agents-use-cases/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
-    "links": []
+    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Building an AI Agent Tutorial - LangChain",
+        "url": "https://python.langchain.com/docs/tutorials/agents/",
+        "type": "article"
+      },
+      {
+        "title": "Ai agents and their types",
+        "url": "https://play.ht/blog/ai-agents-use-cases/",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX",
+        "type": "video"
+      }
+    ]
   },
   "778HsQzTuJ_3c9OSn5DmH": {
     "title": "Agents Usecases",
-    "description": "AI Agents have a variety of usecases ranging from customer support, workflow automation, cybersecurity, finance, marketing and sales, and more.\n\nVisit the following resources to learn more:\n\n\\-[@article@Top 15 Use Cases Of AI Agents In Business](https://www.ampcome.com/post/15-use-cases-of-ai-agents-in-business) -[@article@A Brief Guide on AI Agents: Benefits and Use Cases](https://www.codica.com/blog/brief-guide-on-ai-agents/) -[@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)",
-    "links": []
+    "description": "AI Agents have a variety of usecases ranging from customer support, workflow automation, cybersecurity, finance, marketing and sales, and more.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Top 15 Use Cases Of AI Agents In Business",
+        "url": "https://www.ampcome.com/post/15-use-cases-of-ai-agents-in-business",
+        "type": "article"
+      },
+      {
+        "title": "A Brief Guide on AI Agents: Benefits and Use Cases",
+        "url": "https://www.codica.com/blog/brief-guide-on-ai-agents/",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX",
+        "type": "video"
+      }
+    ]
   },
   "voDKcKvXtyLzeZdx2g3Qn": {
     "title": "ReAct Prompting",
