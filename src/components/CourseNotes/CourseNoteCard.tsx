@@ -34,24 +34,30 @@ export function CourseNoteCard(props: CourseNoteCardProps) {
   }, [content]);
 
   return (
-    <div className="relative flex flex-col gap-3 p-4">
+    <button
+      className="relative flex flex-col gap-3 p-4 text-left"
+      onClick={onLearnMoreClick}
+    >
       <div className="flex items-center justify-between gap-2">
         <div className="flex max-w-max items-center gap-1 rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-200">
-          <a className="underline-offset-2 hover:text-white hover:underline">
+          <a
+            className="underline-offset-2 hover:text-white hover:underline"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
             {chapterTitle}
           </a>
           <span className="text-zinc-400">/</span>
-          <a className="underline-offset-2 hover:text-white hover:underline">
+          <a
+            className="underline-offset-2 hover:text-white hover:underline"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
             {lessonTitle}
           </a>
         </div>
-
-        <button
-          className="flex items-center gap-1 text-sm text-zinc-400 hover:text-white"
-          onClick={onLearnMoreClick}
-        >
-          Learn More <ArrowRight className="size-4" />
-        </button>
       </div>
 
       <div
@@ -59,6 +65,6 @@ export function CourseNoteCard(props: CourseNoteCardProps) {
         // FIXME: Sanitize content before rendering
         dangerouslySetInnerHTML={{ __html: markdownHTML }}
       ></div>
-    </div>
+    </button>
   );
 }
