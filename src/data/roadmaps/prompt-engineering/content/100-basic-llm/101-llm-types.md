@@ -17,3 +17,9 @@ Instruction Tuned LLMs = Base LLMs + Further Tuning + RLHF
 ```
 
 To build an Instruction Tuned LLM, a Base LLM is taken and is further trained using a large dataset covering sample "Instructions" and how the model should perform as a result of those instructions. The model is then fine-tuned using a technique called "Reinforcement Learning with Human Feedback" (RLHF) which allows the model to learn from human feedback and improve its performance over time.
+
+Learn more from the following resources:
+
+- [@article@Understanding AI Models: Base Language Learning Models vs. Instruction Tuned Language Learning Models - Olivier Mills](https://oliviermills.com/articles/understanding-ai-models-base-language-learning-models-vs-instruction-tuned-language-learning-models)
+- [@video@Why Are There So Many Foundation Models?](https://www.youtube.com/watch?v=QPQy7jUpmyA)
+- [@video@How to Pick the Right AI Foundation Model](https://www.youtube.com/watch?v=pePAAGfh-IU)
