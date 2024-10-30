@@ -5,3 +5,4 @@ Amazon VPC (Virtual Private Cloud) is a service that lets you launch AWS resourc
 Visit the following resources to learn more:
 
 - [@official@VPC](https://aws.amazon.com/vpc/)
+- [@video@AWS VPC Beginner to Advanced uses](https://www.youtube.com/watch?v=g2JOHLHh4rI)

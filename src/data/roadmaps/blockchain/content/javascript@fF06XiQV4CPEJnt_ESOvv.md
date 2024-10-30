@@ -4,11 +4,9 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 
 Visit the following resources to learn more:
 
-- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
+- [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
 - [@article@Eloquent Javascript - Book](https://eloquentjavascript.net/)
-- [@opensource@You Dont Know JS Yet (book series) ](https://github.com/getify/You-Dont-Know-JS)
-- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
-- [@video@Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
-- [@video@Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+- [@opensource@You Dont Know JS Yet](https://github.com/getify/You-Dont-Know-JS)
+- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)- [@video@Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

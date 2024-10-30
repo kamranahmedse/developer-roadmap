@@ -1,4 +1,4 @@
-# Blockchain forking
+# Blockchain Forking
 
 A fork happens whenever a community makes a change to the blockchain’s protocol, or basic set of rules.
 

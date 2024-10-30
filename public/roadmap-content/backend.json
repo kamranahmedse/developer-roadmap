@@ -1696,6 +1696,16 @@
         "type": "article"
       },
       {
+        "title": "Apache Kafka Streams",
+        "url": "https://docs.confluent.io/platform/current/streams/concepts.html",
+        "type": "article"
+      },
+      {
+        "title": "Kafka Streams Confluent",
+        "url": "https://kafka.apache.org/documentation/streams/",
+        "type": "article"
+      },
+      {
         "title": "Apache Kafka Fundamentals",
         "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4",
         "type": "video"
