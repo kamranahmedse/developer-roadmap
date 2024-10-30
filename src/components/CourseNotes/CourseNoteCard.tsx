@@ -35,7 +35,7 @@ export function CourseNoteCard(props: CourseNoteCardProps) {
 
   return (
     <button
-      className="relative flex flex-col gap-3 p-4 text-left"
+      className="relative flex flex-col gap-3 p-4 text-left transition-colors duration-150 hover:bg-zinc-900/50"
       onClick={onLearnMoreClick}
     >
       <div className="flex items-center justify-between gap-2">
