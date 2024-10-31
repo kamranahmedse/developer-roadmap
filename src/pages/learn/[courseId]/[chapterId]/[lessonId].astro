@@ -1,9 +1,5 @@
 ---
-import { ChallengeView } from '../../../../components/Course/ChallengeView';
-import { LessonView } from '../../../../components/Course/LessonView';
-import { QuizView } from '../../../../components/Course/QuizView';
-import { LessonQuizView } from '../../../../components/Course/LessonQuizView';
-import { CourseLayout } from '../../../../components/Course/CourseLayout';
+import { CourseView } from '../../../../components/Course/CourseView';
 import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
 import {
   getAllCourses,
@@ -72,7 +68,7 @@ const { course, chapter, lesson } = Astro.props;
 ---
 
 <SkeletonLayout title={course.frontmatter.title}>
-  <CourseLayout
+  <CourseView
     activeCourseId={courseId}
     activeChapterId={chapterId}
     activeLessonId={lesson.id}
@@ -81,35 +77,6 @@ const { course, chapter, lesson } = Astro.props;
     chapters={course.chapters}
     client:load
   >
-    {
-      (lesson.frontmatter.type === 'challenge' ||
-        lesson.frontmatter.type === 'lesson-challenge') && (
-        <ChallengeView lesson={lesson} client:load>
-          <lesson.Content />
-        </ChallengeView>
-      )
-    }
-
-    {
-      lesson.frontmatter.type === 'lesson' && (
-        <LessonView client:load>
-          <lesson.Content />
-        </LessonView>
-      )
-    }
-
-    {
-      lesson.frontmatter.type === 'quiz' && (
-        <QuizView lesson={lesson} client:load />
-      )
-    }
-
-    {
-      lesson.frontmatter.type === 'lesson-quiz' && (
-        <LessonQuizView lesson={lesson} client:load>
-          <lesson.Content />
-        </LessonQuizView>
-      )
-    }
-  </CourseLayout>
+    <lesson.Content />
+  </CourseView>
 </SkeletonLayout>

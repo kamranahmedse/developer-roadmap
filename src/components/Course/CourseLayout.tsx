@@ -12,7 +12,7 @@ import { getPercentage } from '../../helper/number';
 import { cn } from '../../lib/classname';
 import { CourseNotes } from '../CourseNotes/CourseNotes';
 
-type CourseLayoutProps = {
+export type CourseLayoutProps = {
   children: React.ReactNode;
 } & Omit<CourseSidebarProps, 'completedPercentage'>;
 
@@ -67,7 +67,8 @@ export function CourseLayout(props: CourseLayoutProps) {
 
   const handleCompleteLesson = () => {
     if (isCurrentLessonCompleted) {
-      window.location.href = nextLessonLink;
+      window.location.href =
+        nextLessonLink || `/learn/${activeCourseId}/certificate`;
       return;
     }
 
