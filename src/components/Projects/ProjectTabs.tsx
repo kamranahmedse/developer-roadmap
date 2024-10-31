@@ -1,13 +1,5 @@
 import { cn } from '../../lib/classname';
-import {
-  ArrowLeft,
-  Blocks,
-  BoxSelect,
-  type LucideIcon,
-  StepBackIcon,
-  StickyNote,
-  Text,
-} from 'lucide-react';
+import { ArrowLeft, Blocks, type LucideIcon, Text } from 'lucide-react';
 
 export const allowedProjectTabs = ['details', 'solutions'] as const;
 export type AllowedProjectTab = (typeof allowedProjectTabs)[number];
@@ -53,15 +45,20 @@ export function ProjectTabs(props: ProjectTabsProps) {
 
   return (
     <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 overflow-hidden rounded-md border bg-white px-2.5 text-sm">
-      <a
-        href={`/${parentRoadmapId}/projects`}
-        className={
-          '-ml-1.5 flex items-center rounded-md bg-gray-300 px-2 py-1.5 text-xs tracking-wide text-black hover:bg-gray-400/60'
-        }
+      <button
+        onClick={(e) => {
+          if (window.history.length > 1) {
+            window.history.back();
+            return;
+          }
+
+          window.location.href = `/${parentRoadmapId}/projects`;
+        }}
+        className="-ml-1.5 flex items-center rounded-md bg-gray-300 px-2 py-1.5 text-xs tracking-wide text-black hover:bg-gray-400/60"
       >
         <ArrowLeft className="mr-1 inline-block h-3.5 w-3.5" strokeWidth={2} />
         <span className="hidden sm:inline">Back to Projects</span>
-      </a>
+      </button>
       <TabButton
         text={'Project Detail'}
         icon={Text}

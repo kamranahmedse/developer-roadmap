@@ -49,7 +49,12 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
 >
   <div class='bg-gray-50'>
     <div class='container'>
-      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='details' />
+      <ProjectTabs
+        parentRoadmapId={parentRoadmapId}
+        projectId={projectId}
+        activeTab='details'
+        client:load
+      />
 
       <div
         class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
