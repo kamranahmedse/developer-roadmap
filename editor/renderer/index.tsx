@@ -1,14 +1,16 @@
-export function Renderer(props: any) {
+export function Renderer(props: {}) {
   return (
-    <div className="fixed bottom-0 left-0 right-0 top-0 z-[9999] border bg-white p-5 text-black">
-      <h2 className="mb-2 text-xl font-semibold">Private Component</h2>
-      <p className="mb-4">
-        Renderer is a private component. If you are a collaborator and have
-        access to it. Run the following command:
-      </p>
-      <code className="mt-5 rounded-md bg-gray-800 p-2 text-white">
-        npm run generate-renderer
-      </code>
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90 text-black">
+      <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+        <h2 className="mb-4 text-xl font-semibold text-center">Private Component</h2>
+        <p className="mb-5 text-center">
+          Renderer is a private component. If you are a collaborator and have
+          access to it, run the following command:
+        </p>
+        <code className="block bg-gray-800 text-white p-3 rounded-md text-center font-mono">
+          npm run generate-renderer
+        </code>
+      </div>
     </div>
   );
 }
