@@ -1,0 +1,12 @@
+**Database Name: etmsh**
+**Works on both PHP Version 5.6.3 and 7.4.12**
+
+**Admin Login Details**
+
+Username: admin
+Password: admin123
+
+
+NOTE: after creating new account for the employees, you'll get a random generated
+temporary password which is provided inside "Manage User" section of the application.
+Copy that Temp Password and use it for the employee's login.
