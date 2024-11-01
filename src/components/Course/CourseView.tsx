@@ -59,7 +59,7 @@ export function CourseView(props: CourseViewProps) {
 
         {lessonType !== 'lesson' && (
           <>
-            <ResizableHandle withHandle={true} />
+            {lessonType !== 'quiz' && <ResizableHandle withHandle={true} />}
 
             <ResizablePanel
               defaultSize={lessonType === 'quiz' ? 100 : 40}
