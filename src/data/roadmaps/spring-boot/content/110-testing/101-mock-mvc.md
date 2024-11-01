@@ -4,6 +4,5 @@ Spring's MockMvc is a class that allows you to test Spring MVC controllers witho
 
 For more information, visit the following link:
 
-- [@article@Spring MockMVC tutorial](https://zetcode.com/spring/mockmvc/)
 - [@article@Spring Boot MockMVC Example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
 - [@article@Integration Testing in Spring](https://baeldung.com/integration-testing-in-spring)
