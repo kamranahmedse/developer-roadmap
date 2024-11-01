@@ -30,3 +30,9 @@ The book was hard to put down. - {sentiment_label}
 This prompt structure assists the model in grasping the sentiment analysis task and increases the likelihood of getting the correct output (i.e., "Positive").
 
 Remember to experiment with the number of examples and their content to find the optimal balance for your specific task. Additionally, you can use inline instructions to guide the model further, such as asking it to classify the sentiment of a given sentence.
+
+Learn more from the following resources:
+
+- [@article@Few-Shot Prompting | Prompt Engineering Guide](https://www.promptingguide.ai/techniques/fewshot)
+- [@article@Shot-Based Prompting: Zero-Shot, One-Shot, and Few-Shot Prompting](https://learnprompting.org/docs/basics/few_shot)
+- [@guides@Introduction to Advanced Few-Shot Prompting Techniques](https://learnprompting.org/docs/advanced/few_shot/introduction)
