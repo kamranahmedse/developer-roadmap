@@ -811,13 +811,8 @@
         "type": "article"
       },
       {
-        "title": "Lets subnet your home network!",
-        "url": "https://www.youtube.com/watch?v=mJ_5qeqGOaI&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&index=6",
-        "type": "video"
-      },
-      {
-        "title": "Subnetting for hackers",
-        "url": "https://www.youtube.com/watch?v=o0dZFcIFIAw",
+        "title": "Subnetting",
+        "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF",
         "type": "video"
       }
     ]
