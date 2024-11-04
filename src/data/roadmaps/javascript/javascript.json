@@ -3988,7 +3988,7 @@
       "type": "subtopic",
       "position": {
         "x": -521.6276397705078,
-        "y": 930.3694458007812
+        "y": 982.6210062954669
       },
       "selected": false,
       "data": {
@@ -4013,7 +4013,7 @@
       },
       "positionAbsolute": {
         "x": -521.6276397705078,
-        "y": 930.3694458007812
+        "y": 982.6210062954669
       },
       "dragging": false,
       "selectable": true,
@@ -4024,7 +4024,7 @@
       "type": "subtopic",
       "position": {
         "x": -521.6276397705078,
-        "y": 983.3694458007812
+        "y": 1035.621006295467
       },
       "selected": false,
       "data": {
@@ -4049,7 +4049,7 @@
       },
       "positionAbsolute": {
         "x": -521.6276397705078,
-        "y": 983.3694458007812
+        "y": 1035.621006295467
       },
       "dragging": false,
       "selectable": true,
@@ -4060,7 +4060,7 @@
       "type": "subtopic",
       "position": {
         "x": -521.6276397705078,
-        "y": 1036.3694458007812
+        "y": 1088.621006295467
       },
       "selected": false,
       "data": {
@@ -4085,43 +4085,7 @@
       },
       "positionAbsolute": {
         "x": -521.6276397705078,
-        "y": 1036.3694458007812
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "id": "BbrrliATuH9beTypRaFey",
-      "type": "subtopic",
-      "position": {
-        "x": -521.6276397705078,
-        "y": 1089.3694458007812
-      },
-      "selected": false,
-      "data": {
-        "label": "Relational Operators",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        },
-        "legend": {
-          "id": "bcE9YSY2vLzRyJQSceY9M",
-          "label": "Intermediate Topics / pick these next",
-          "color": "#9900ff",
-          "position": "left-center"
-        }
-      },
-      "zIndex": 999,
-      "width": 223,
-      "height": 49,
-      "style": {
-        "width": 223
-      },
-      "positionAbsolute": {
-        "x": -521.6276397705078,
-        "y": 1089.3694458007812
+        "y": 1088.621006295467
       },
       "dragging": false,
       "selectable": true,
@@ -6756,25 +6720,6 @@
         "edgeStyle": "dashed"
       },
       "id": "reactflow__edge-_6vZa43gWjxO2OcD1iCCQy2-k9rSR-YQ8B_iRcXNm2btPz2",
-      "selected": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "style": {
-        "strokeDasharray": "0.8 8",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
-      "source": "_6vZa43gWjxO2OcD1iCCQ",
-      "sourceHandle": "y2",
-      "target": "BbrrliATuH9beTypRaFey",
-      "targetHandle": "z1",
-      "data": {
-        "edgeStyle": "dashed"
-      },
-      "id": "reactflow__edge-_6vZa43gWjxO2OcD1iCCQy2-BbrrliATuH9beTypRaFeyz1",
       "selected": false,
       "selectable": true,
       "focusable": true
