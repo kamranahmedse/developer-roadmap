@@ -1892,6 +1892,11 @@
         "title": "winston Website",
         "url": "https://github.com/winstonjs/winston",
         "type": "opensource"
+      },
+      {
+        "title": "A Complete Guide to Winston Logging in Node.js",
+        "url": "https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/",
+        "type": "article"
       }
     ]
   },

@@ -27,3 +27,8 @@ Or you could also combine these prompts into a single prompt as follows:
 ```
 I am writing a guide about SEO. Take the 10 key topics about SEO and write a detailed introduction to each.
 ```
+
+Learn more from the following resources:
+
+- [@article@Generated Knowledge in Prompts: Boosting AI Accuracy and Reliability](https://learnprompting.org/docs/intermediate/generated_knowledge#dual-prompt-approach)
+- [@article@Recitation-augmented and Dual Prompting](https://aimlapi.com/academy-articles/recitation-augmented-and-dual-prompting)

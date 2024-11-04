@@ -15,3 +15,10 @@ When constructing a prompt, it's essential to understand the different parts tha
    *Example: To further clarify the email-writing task, you might provide a brief example of the tone or structure you want, such as "Dear [Recipient], Thank you for taking the time to meet with me yesterday. We discussed [topic 1], [topic 2], and [topic 3]. I look forward to our future collaboration."*
 
 By considering these three parts of a prompt — context, instruction, and example — you can create effective and well-formed prompts that produce targeted and accurate responses from the AI.
+
+Learn more from the following resources:
+
+- [@guides@Understanding Prompt Structure: Key Elements of a Prompt](https://learnprompting.org/docs/basics/formalizing)
+- [@guides@Elements of a Prompt | Prompt Engineering Guide](https://www.promptingguide.ai/introduction/elements)
+- [@video@Building with Anthropic Claude: Prompt Workshop ](https://youtu.be/hkhDdcM5V94?si=mW-GLSvi7TMg33wx)
+- [@guides@General Tips for Designing Prompts | Prompt Engineering Guide](https://www.promptingguide.ai/introduction/tips)

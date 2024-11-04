@@ -15,3 +15,8 @@ Role prompting is a technique used in prompt engineering to encourage the AI to 
 Imagine you want to explore solutions to an environmental problem. You can use role prompting to elicit diverse perspectives and insights. Here's an example prompt with role prompting:
 
 _As a climate scientist, how would you approach the problem of deforestation to minimize its impact on the environment?_
+
+Learn more from the following resources:
+
+- [@article@Assigning Roles to Chatbots](https://learnprompting.org/docs/basics/roles)
+- [@article@Revisiting Roles in Prompting](https://learnprompting.org/docs/intermediate/revisiting_roles)
