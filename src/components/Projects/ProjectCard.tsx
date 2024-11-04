@@ -12,6 +12,7 @@ type ProjectCardProps = {
   project: ProjectFileType;
   userCount?: number;
   status?: 'completed' | 'started' | 'none';
+  avatar?: string;
 };
 
 const badgeVariants: Record<ProjectDifficultyType, string> = {
@@ -21,8 +22,9 @@ const badgeVariants: Record<ProjectDifficultyType, string> = {
 };
 
 export function ProjectCard(props: ProjectCardProps) {
-  const { project, userCount = 0, status } = props;
+  const { project, userCount = 0, status, avatar } = props;
   const { frontmatter, id } = project;
+  const partnerAvatar = frontmatter.partner?.avatar;
 
   const isLoadingStatus = status === undefined;
   const userStartedCount = status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
@@ -46,8 +48,8 @@ export function ProjectCard(props: ProjectCardProps) {
       <span className="flex min-h-[22px] items-center justify-between gap-2 text-xs text-gray-400">
         {isLoadingStatus ? (
           <>
-            <span className="h-5 w-24 animate-pulse rounded bg-gray-200" />{' '}
-            <span className="h-5 w-20 animate-pulse rounded bg-gray-200" />{' '}
+            <span className="h-5 w-24 animate-pulse rounded bg-gray-200" />
+            <span className="h-5 w-20 animate-pulse rounded bg-gray-200" />
           </>
         ) : (
           <>
@@ -59,24 +61,41 @@ export function ProjectCard(props: ProjectCardProps) {
                 <>Be the first to solve!</>
               )}
             </span>
-
-            {status !== 'none' && (
-              <span
-                className={cn(
-                  'flex items-center gap-1.5 rounded-full border border-current px-2 py-0.5 capitalize',
-                  status === 'completed' && 'text-green-500',
-                  status === 'started' && 'text-yellow-500',
-                )}
-              >
+            <span className="flex items-center gap-2">
+              {status !== 'none' && (
                 <span
-                  className={cn('inline-block h-2 w-2 rounded-full', {
-                    'bg-green-500': status === 'completed',
-                    'bg-yellow-500': status === 'started',
-                  })}
-                />
-                {status}
-              </span>
-            )}
+                  className={cn(
+                    'flex items-center gap-1.5 rounded-full border border-current px-2 py-0.5 capitalize',
+                    status === 'completed' && 'text-green-500',
+                    status === 'started' && 'text-yellow-500',
+                  )}
+                >
+                  <span
+                    className={cn('inline-block h-2 w-2 rounded-full', {
+                      'bg-green-500': status === 'completed',
+                      'bg-yellow-500': status === 'started',
+                    })}
+                  />
+                  {status}
+                </span>
+              )}
+              {partnerAvatar && frontmatter.partner?.url && (
+                <a
+                  href={frontmatter.partner.url}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex-shrink-0"
+                  title={frontmatter.partner.name}
+                >
+                  <img
+                    src={partnerAvatar}
+                    alt={`${frontmatter.partner.name} avatar`}
+                    className="h-6 w-6 rounded-full object-cover"
+                  />
+                </a>
+              )}
+            </span>
           </>
         )}
       </span>

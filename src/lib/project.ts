@@ -23,6 +23,11 @@ export interface ProjectFrontmatter {
     ogImageUrl: string;
   };
   roadmapIds: string[];
+  partner?: {
+    name: string;
+    avatar: string;
+    url: string;
+  };
 }
 
 export type ProjectFileType = MarkdownFileType<ProjectFrontmatter> & {
