@@ -1,6 +1,6 @@
 # Study Buddy
 
-One of our favorite ways to use LLMs is as a study tool! In particular, it is useful for explaining confusing terms as well as quizzing you on test content.
+LLMs have become powerful study & tutoring tools, offering various applications in education. They can explain complex terms, generate quizzes, and provide personalized learning experiences adapted to individual needs, including neurodivergent learning styles. Recent developments have expanded their capabilities to include multilingual support, automated grading and feedback, content creation for diverse educational materials, and improved accessibility for all students. These advancements enable LLMs to enhance comprehension, retention, and overall educational outcomes while allowing educators to focus on more complex tasks.
 
 ## Explaining Terms
 
@@ -46,4 +46,7 @@ And the model will generate 5 questions for you to answer.
 
 There are probably other ways to use LLMs to study. Many learning companies like Duolingo and Quizlet are implementing LLMs into their products.
 
+Learn more from the following resources:
+
 - [@article@LLMs as a Study Buddy](https://learnprompting.org/docs/basic_applications/study_tool)
+-
