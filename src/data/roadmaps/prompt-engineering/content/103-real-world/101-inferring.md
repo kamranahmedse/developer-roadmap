@@ -1,6 +1,6 @@
 # Inferring
 
-Making use of LLMs to infer information from text, i.e. text analysis, is another common use case. A common use case is sentiment analysis, such as grouping e-commerce reviews by sentiment.Beyond this, LLMs have diverse real-world applications, including customer service automation, market research, fraud detection, compliance monitoring, speech-to-text transcription, and anomaly detection. These applications demonstrate the versatility of LLMs in extracting valuable insights from text data, automating processes, and enhancing decision-making across different sectors. By leveraging LLMs, businesses can improve operational efficiency, gain deeper customer insights, and tackle complex challenges in areas such as cybersecurity and regulatory compliance
+Making use of LLMs to infer information from text, i.e. text analysis, is another common use case. A common use case is sentiment analysis, such as grouping e-commerce reviews by sentiment. Beyond this, LLMs have diverse real-world applications, including customer service automation, market research, fraud detection, compliance monitoring, speech-to-text transcription, and anomaly detection. These applications demonstrate the versatility of LLMs in extracting valuable insights from text data, automating processes, and enhancing decision-making across different sectors. By leveraging LLMs, businesses can improve operational efficiency, gain deeper customer insights, and tackle complex challenges in areas such as cybersecurity and regulatory compliance
 
 ### Example
 
