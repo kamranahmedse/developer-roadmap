@@ -188,4 +188,4 @@ Look for their approach to troubleshooting, ability to remain calm under pressur
 
 The possibilities offered by the web will continue to evolve, and the role of software engineers building for it will also change. While the internet is filled with resources such as courses, articles, and blogs on front-end, back-end, and full stack engineering skills and job descriptions, these often become outdated quickly. Therefore, a reliable source of truth is needed. [The full stack developer roadmap](https://roadmap.sh/full-stack) is a source of truth for hiring managers looking for full stack engineers.
 
-Additionally, roadmap.sh has a [supportive community](https://discord.gg/cJpEt5Qbwa), a goldmine for connecting with full stack engineers and spotting potential employees.
+Additionally, roadmap.sh has a [supportive community](https://roadmap.sh/discord), a goldmine for connecting with full stack engineers and spotting potential employees.
