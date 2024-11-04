@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-shift-left-testing-16zah.jpg'
 isNew: true
 type: 'textual'
-date: 2024-10-28
+date: 2024-11-04
 sitemap:
   priority: 0.7
   changefreq: 'weekly'
