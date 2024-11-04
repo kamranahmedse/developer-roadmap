@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-job-description-5fwzy.jpg'
 isNew: true
 type: 'textual'
-date: 2024-10-24
+date: 2024-11-04
 sitemap:
   priority: 0.7
   changefreq: 'weekly'
