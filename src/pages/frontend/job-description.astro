@@ -12,7 +12,7 @@ const guide = await getGuideById(guideId);
 const { frontmatter: guideData } = guide!;
 
 const ogImageUrl =
-  guideData.seo.ogImageUrl ||
+  guideData.seo?.ogImageUrl ||
   getOpenGraphImageUrl({
     group: 'guide',
     resourceId: guideId,
@@ -20,9 +20,9 @@ const ogImageUrl =
 ---
 
 <BaseLayout
-  title={replaceVariables(guideData.seo.title)}
-  description={replaceVariables(guideData.seo.description)}
-  permalink={guide.frontmatter.excludedBySlug}
+  title={replaceVariables(guideData?.seo?.title)}
+  description={replaceVariables(guideData?.seo?.description)}
+  permalink={guideData.excludedBySlug}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >

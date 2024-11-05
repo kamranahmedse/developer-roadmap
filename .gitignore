@@ -1,5 +1,6 @@
 .idea
 .temp
+.astro
 
 # build output
 dist/
