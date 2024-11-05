@@ -170,7 +170,7 @@ Ethereal is a portfolio template crafted with creative developers in mind. It fe
 Here’s why you should consider Ethereal as a template for your portfolio:
 
 - The horizontal layout makes the portfolio stand out.
-- Dedicated sections to showcase various projects, case studies, personal stories, and other front end development skills.
+- Dedicated sections to showcase various projects, case studies, personal stories, and other [front end development skills](https://roadmap.sh/frontend/developer-skills).
 - Designed to be easily customized and extended.
 
 [Live demo link](https://html5up.net/ethereal)
@@ -238,7 +238,7 @@ A well-crafted developer’s portfolio is important for showcasing your technica
 
 - **Introductory and About Me section**: This section should include a brief introduction about yourself, your background, and your expertise. It’s also a great place to include your name, location, and any other interesting details about yourself.
 
-- **Skills and technologies section**: This section shows the different skills and proficiencies, such as crafting responsive designs, enhancing user experience, building APIs, and managing databases. It can also include programming languages, frameworks, databases, and other specialized skills.
+- **Skills and technologies section**: This section shows the different skills and proficiencies, such as crafting responsive designs, enhancing user experience, building APIs, and managing databases. It can also include [front end programming languages](https://roadmap.sh/frontend/languages), [frameworks](https://roadmap.sh/frontend/frameworks), databases, and other specialized skills.
 
 - **Project section**: This section highlights your best work and can include demo links, GitHub links, screenshots, project overview, technologies used, and any other essential details.
 
@@ -295,4 +295,4 @@ The template should be well-structured with a good sitemap, excellent informatio
 
 Your personal portfolio usually crafts the first impression for potential employers and clients. Investing time in creating a well-designed, structured, and user-friendly portfolio that captures your experience is important.
 
-Additionally, web developer portfolios are not a one-time effort. They require constant updates on your latest projects. The [roadmap.sh](https://roadmap.sh)’s [frontend development](https://roadmap.sh/frontend) and [backend development](https://roadmap.sh/backend) roadmaps are valuable resources to keep your skills up to date, whether as a frontend developer, backend developer, or full stack developer. Additionally, you can track your learning paths and connect with a vibrant community by [signing up](https://roadmap.sh/signup) on the [roadmap.sh](http://roadmap.sh) platform.
+Additionally, web developer portfolios are not a one-time effort. They require constant updates on your latest projects. The [roadmap.sh](https://roadmap.sh)’s [frontend development roadmap](https://roadmap.sh/frontend) is a valuable resource to keep your skills up to date, and our [frontend developer questions](https://roadmap.sh/questions/frontend) guide can help you to ace your next interview. Additionally, you can track your learning paths and connect with a vibrant community by [signing up](https://roadmap.sh/signup) on the roadmap.sh platform.
