@@ -67,10 +67,6 @@ export function CourseNoteForm(props: CourseNoteFormProps) {
                 },
                 {
                   onSuccess: () => {
-                    if (defaultNote?._id) {
-                      return;
-                    }
-
                     onCancelClick?.();
                   },
                 },
