@@ -37,7 +37,7 @@ However, becoming a front-end developer isn't just about jumping straight into c
 - **Step 6:** Join online communities and attend events.
 - **Step 7**: Build a portfolio and apply for jobs.
 
-The above steps will give you the skills to become a proficient front-end developer. This guide will provide a deep dive into the steps and benefits of working in a front-end position.
+The above steps will give you the [skills](https://roadmap.sh/frontend/developer-skills) to become a proficient front-end developer. This guide will provide a deep dive into the steps and benefits of working in a front-end position.
 
 ## Benefits of pursuing a career in front-end development
 
@@ -129,7 +129,7 @@ When you become skilled at using Git, you'll work and deploy projects faster. Th
 
 ### Step 4: Learn front-end frameworks and libraries
 
-Learning front-end frameworks and libraries is essential for a front-end developer. It will make your job easier and help you build faster websites and applications.
+Learning [front-end frameworks](https://roadmap.sh/frontend/frameworks) and libraries is essential for a front-end developer. It will make your job easier and help you build faster websites and applications.
 
 ![Front-end frameworks and libraries](https://assets.roadmap.sh/guest/frontend-frameworks-and-libraries-8vplh.jpeg)
 
@@ -250,7 +250,7 @@ Nope, you don't need a Computer Science degree. Many front-end developers are se
 
 ### Which languages should I study to learn front-end development?
 
-The following are the main coding languages used in front-end development:
+The following are the main coding [languages used in front-end development](https://roadmap.sh/frontend/languages):
 
 - **HTML (Hypertext Markup Language)**: For structuring the content on a webpage.
 - **CSS (Cascading Style Sheets)**: For styling the content on a webpage.
@@ -258,7 +258,7 @@ The following are the main coding languages used in front-end development:
 
 ### How skilled in these coding languages must I be to land my first job?
 
-To secure your first job as a front-end developer, you must be proficient in HTML, CSS, and JavaScript. It will allow you to create a portfolio site that shows your coding skills to employers.
+To secure your first job as a front-end developer, you must be proficient in HTML, CSS, and JavaScript. It will allow you to create a [web developer portfolio](https://roadmap.sh/frontend/web-developer-portfolio) site that shows your coding skills to employers.
 
 ### Is HTML, CSS, and JavaScript enough for a front-end developer?
 
