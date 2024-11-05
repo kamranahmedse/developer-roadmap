@@ -25,7 +25,7 @@ Just starting out in web or mobile development? You may feel swamped by all the 
 
 As someone who's been through this process for over a decade, I’ve made this post to make your learning journey smoother.
 
-I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right [skills](https://roadmap.sh/frontend/developer-skills), and help you build a rewarding career in [front](https://roadmap.sh/frontend)[-](https://roadmap.sh/frontend)[end](https://roadmap.sh/frontend) [development](https://roadmap.sh/frontend).
+I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right [skills](https://roadmap.sh/frontend/developer-skills), and help you build a rewarding career in [front-end development](https://roadmap.sh/frontend).
 
 ## What are Languages, Libraries, and Frameworks?
 
