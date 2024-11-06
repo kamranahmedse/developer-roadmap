@@ -25,7 +25,9 @@ export function CourseNoteForm(props: CourseNoteFormProps) {
     currentLessonId,
   } = props;
 
+  const [isDeleting, setIsDeleting] = useState(false);
   const [content, setContent] = useState<string>(defaultNote?.content || '');
+
   const upsertNote = useUpsertCourseNoteMutation(courseId);
   const deleteNote = useDeleteCourseNoteMutation(courseId);
 
@@ -40,21 +42,45 @@ export function CourseNoteForm(props: CourseNoteFormProps) {
           Cancel
         </button>
         <div className="flex items-center gap-2">
-          {defaultNote?._id && (
+          {defaultNote?._id && !isDeleting && (
             <button
               className="flex items-center gap-1 text-red-400 underline-offset-2 hover:text-red-500 hover:underline"
               disabled={upsertNote.isPending || deleteNote.isPending}
               onClick={() => {
-                deleteNote.mutate(defaultNote?._id, {
-                  onSuccess: () => {
-                    onCancelClick?.();
-                  },
-                });
+                setIsDeleting(true);
               }}
             >
               Delete
             </button>
           )}
+
+          {defaultNote?._id && isDeleting && (
+            <p className="text-sm text-gray-400">
+              Are you sure?{' '}
+              <button
+                className="text-red-400 underline underline-offset-2 hover:text-red-500 hover:no-underline"
+                onClick={() => {
+                  deleteNote.mutate(defaultNote?._id, {
+                    onSuccess: () => {
+                      onCancelClick?.();
+                    },
+                  });
+                }}
+              >
+                Yes
+              </button>{' '}
+              /{' '}
+              <button
+                className="underline underline-offset-2 hover:no-underline"
+                onClick={() => {
+                  setIsDeleting(false);
+                }}
+              >
+                No
+              </button>
+            </p>
+          )}
+
           <button
             className="flex items-center gap-1 text-zinc-400 underline-offset-2 hover:text-white hover:underline disabled:opacity-60"
             onClick={() => {
