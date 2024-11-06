@@ -19,10 +19,14 @@ export function RelatedGuides(props: RelatedGuidesProps) {
     }),
   );
 
+  if (relatedGuidesArray.length === 0) {
+    return null;
+  }
+
   return (
     <div
       className={cn(
-        'relative min-w-[250px] px-5 pt-0 max-lg:mb-0.5 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-10',
+        'relative -mb-5 min-w-[250px] px-5 pt-0 max-lg:hidden lg:pt-10',
       )}
     >
       <h4 className="text-lg font-medium max-lg:hidden">{relatedTitle}</h4>
