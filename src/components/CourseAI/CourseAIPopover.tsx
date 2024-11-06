@@ -1,10 +1,16 @@
-import { useMemo, useRef, useState } from 'react';
-import { useListCourseNote } from '../../hooks/use-course-note';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import type { ChapterFileType } from '../../lib/course';
-import { Bot, Loader2 } from 'lucide-react';
+import { Bot, Send } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import { markdownToHtml } from '../../lib/markdown';
+import { sanitizeHtml } from '../../lib/sanitize-html';
+import {
+  roadmapAIChatHistory,
+  type AllowedAIChatType,
+} from '../../stores/course';
+import { useStore } from '@nanostores/react';
+import { flushSync } from 'react-dom';
 
 type CourseAIPopoverProps = {
   courseId: string;
@@ -26,8 +32,43 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
   } = props;
 
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const scrollareaRef = useRef<HTMLDivElement | null>(null);
+  const [message, setMessage] = useState('');
+
+  const $roadmapAIChatHistory = useStore(roadmapAIChatHistory);
 
   useOutsideClick(containerRef, onOutsideClick);
+
+  const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!message) {
+      return;
+    }
+
+    flushSync(() => {
+      roadmapAIChatHistory.set([
+        ...$roadmapAIChatHistory,
+        {
+          type: 'user',
+          message,
+        },
+      ]);
+      setMessage('');
+    });
+
+    scrollToBottom();
+  };
+
+  const scrollToBottom = () => {
+    scrollareaRef.current?.scrollTo({
+      top: scrollareaRef.current.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, []);
 
   return (
     <div
@@ -38,67 +79,50 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
         <h4 className="text-base font-medium">Roadmap AI</h4>
       </div>
 
-      <div className="relative grow overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
+      <div
+        className="relative grow overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]"
+        ref={scrollareaRef}
+      >
         <div className="absolute inset-0 flex flex-col">
-          <div className="flex flex-col justify-end gap-2 p-2">
-            <AIChatCard
-              type="system"
-              message="Hey, how can I help you today? 🤖"
-            />
-            <AIChatCard
-              type="user"
-              message={`What's wrong with this query?
-
-\`\`\`sql
-SELECT *
-FROM users
-WHERE id = 1
-\`\`\``}
-            />
-            <AIChatCard
-              type="system"
-              message={`Looks like you're missing a semicolon at the end of the query. Try this:
-
-\`\`\`sql
-SELECT *
-FROM users
-WHERE id = 1;
-\`\`\``}
-            />
-            <AIChatCard type="user" message={`Got it! Thanks! 🙏`} />
-            <AIChatCard
-              type="system"
-              message={`You're welcome! If you have any other questions, feel free to ask. 🤖`}
-            />
-            <AIChatCard
-              type="system"
-              message={`Looks like you're missing a semicolon at the end of the query. Try this:
-
-\`\`\`sql
-SELECT *
-FROM users
-WHERE id = 1;
-\`\`\``}
-            />
-            <AIChatCard type="user" message={`Got it! Thanks! 🙏`} />
-            <AIChatCard
-              type="system"
-              message={`You're welcome! If you have any other questions, feel free to ask. 🤖`}
-            />
+          <div className="flex grow flex-col justify-end">
+            <div className="flex flex-col justify-end gap-2 p-2">
+              {$roadmapAIChatHistory.map((chat, index) => {
+                return (
+                  <AIChatCard
+                    key={index}
+                    type={chat.type}
+                    message={chat.message}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
 
-      <input
-        className="h-[41px] w-full border-t border-zinc-700 bg-zinc-800 px-4 py-2 text-sm text-white focus:outline-none"
-        placeholder="Ask AI anything about the course..."
-      />
+      <form
+        className="flex h-[41px] items-center border-t border-zinc-700 bg-zinc-800 text-sm text-white"
+        onSubmit={handleChatSubmit}
+      >
+        <input
+          className="h-full grow bg-transparent px-4 py-2 focus:outline-none"
+          placeholder="Ask AI anything about the course..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <button
+          type="submit"
+          className="flex aspect-square h-full items-center justify-center text-zinc-500 hover:text-zinc-50"
+        >
+          <Send className="size-4 stroke-[2.5]" />
+        </button>
+      </form>
     </div>
   );
 }
 
 type AIChatCardProps = {
-  type: 'user' | 'system';
+  type: AllowedAIChatType;
   message: string;
 };
 
@@ -106,9 +130,7 @@ function AIChatCard(props: AIChatCardProps) {
   const { type, message } = props;
 
   const html = useMemo(() => {
-    const html = markdownToHtml(message, false);
-    // FIXME: Sanitize HTML
-    return html;
+    return sanitizeHtml(markdownToHtml(message, false));
   }, [message]);
 
   return (
@@ -129,7 +151,7 @@ function AIChatCard(props: AIChatCardProps) {
         <Bot className="size-4 stroke-[2.5]" />
       </div>
       <div
-        className="course-content prose prose-sm prose-invert w-full text-sm text-white"
+        className="course-content prose prose-sm prose-invert mt-0.5 w-full text-sm text-white"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>

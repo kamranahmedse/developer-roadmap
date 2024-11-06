@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { markdownToHtml } from '../../lib/markdown';
 import { ArrowRight } from 'lucide-react';
+import { sanitizeHtml } from '../../lib/sanitize-html';
 
 type CourseNoteCardProps = {
   courseId: string;
@@ -27,10 +28,7 @@ export function CourseNoteCard(props: CourseNoteCardProps) {
   } = props;
 
   const markdownHTML = useMemo(() => {
-    const html = markdownToHtml(content, false);
-    // FIXME: Sanitize html before returning
-
-    return html;
+    return sanitizeHtml(markdownToHtml(content, false));
   }, [content]);
 
   return (
