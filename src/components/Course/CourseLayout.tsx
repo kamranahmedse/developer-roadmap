@@ -11,6 +11,7 @@ import { currentLesson } from '../../stores/course';
 import { getPercentage } from '../../helper/number';
 import { cn } from '../../lib/classname';
 import { CourseNotes } from '../CourseNotes/CourseNotes';
+import { CourseAI } from '../CourseAI/CourseAI';
 
 export type CourseLayoutProps = {
   children: React.ReactNode;
@@ -140,6 +141,12 @@ export function CourseLayout(props: CourseLayoutProps) {
         {activeChapterId && activeLessonId && (
           <footer className="flex items-center justify-between border-t border-zinc-800 px-4">
             <div className="flex items-center gap-2">
+              <CourseAI
+                courseId={activeCourseId}
+                currentChapterId={activeChapterId}
+                currentLessonId={activeLessonId}
+                chapters={chapters}
+              />
               <CourseNotes
                 courseId={activeCourseId}
                 chapters={chapters}
