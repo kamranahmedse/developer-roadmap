@@ -25,8 +25,9 @@ type CourseViewProps = Omit<CourseLayoutProps, 'children'> & {
 };
 
 export function CourseView(props: CourseViewProps) {
-  const { lesson, children, ...courseLayoutProps } = props;
+  const { children, ...courseLayoutProps } = props;
 
+  const { lesson } = courseLayoutProps;
   const { frontmatter } = lesson;
   const lessonType = frontmatter.type;
 
