@@ -20,6 +20,8 @@ export interface GuideFrontmatter {
     priority: number;
     changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly';
   };
+  relatedTitle?: string;
+  relatedGuides?: Record<string, string>;
   tags: string[];
 }
 
@@ -115,6 +117,12 @@ export function getGuideTableOfContent(headings: HeadingType[]) {
         });
       }
     });
+
+  if (tableOfContents.length > 5) {
+    tableOfContents.forEach((group) => {
+      group.children = [];
+    });
+  }
 
   return tableOfContents;
 }
