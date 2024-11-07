@@ -8,8 +8,6 @@ import { InfoIcon } from './ReactIcons/InfoIcon';
 import { Spinner } from './ReactIcons/Spinner';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../lib/browser';
 
-export interface Props {}
-
 const messageCodes: Record<string, string> = {
   tl: 'Successfully left the team',
   fs: 'Friend request sent',
