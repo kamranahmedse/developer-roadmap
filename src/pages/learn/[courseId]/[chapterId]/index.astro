@@ -1,0 +1,63 @@
+---
+import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
+import {
+  getAllCourses,
+  getChaptersByCourseId,
+  type ChapterFileType,
+  type CourseFileType,
+} from '../../../../lib/course';
+
+export async function getStaticPaths() {
+  const courses = await getAllCourses();
+  const coursesWithChapters = await Promise.all(
+    courses.map(async (course) => {
+      const chapters = await getChaptersByCourseId(course.id);
+
+      return chapters.map((chapter) => {
+        return {
+          params: {
+            courseId: course.id,
+            chapterId: chapter.id,
+          },
+          props: {
+            course,
+            chapter,
+          },
+        };
+      });
+    }),
+  );
+
+  return coursesWithChapters.flat();
+}
+
+interface Params extends Record<string, string | undefined> {
+  courseId: string;
+  chapterId: string;
+}
+
+interface Props {
+  course: CourseFileType;
+  chapter: ChapterFileType;
+}
+
+const { courseId, chapterId } = Astro.params;
+const { chapter } = Astro.props;
+
+const firstLesson = chapter.lessons?.sort(
+  (a, b) => a.frontmatter.order - b.frontmatter.order,
+)?.[0];
+
+const fullUrl = firstLesson
+  ? `/learn/${courseId}/${chapterId}/${firstLesson?.id}`
+  : `/learn/${courseId}`;
+---
+
+<SkeletonLayout title='Redirecting..' noIndex={true} redirectUrl={fullUrl}>
+  <div class='p-8'>
+    <h2 class='text-xl font-bold'>Redirecting ..</h2>
+    <p>Click the link below if you are not redirected automatically.</p>
+
+    <p><a href={fullUrl} class='text-blue-700 underline'>{fullUrl}</a></p>
+  </div>
+</SkeletonLayout>

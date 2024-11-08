@@ -1,13 +1,13 @@
 ---
-import { CourseView } from '../../../../components/Course/CourseView';
-import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
+import { CourseView } from '../../../../../components/Course/CourseView';
+import SkeletonLayout from '../../../../../layouts/SkeletonLayout.astro';
 import {
   getAllCourses,
   getChaptersByCourseId,
   type CourseFileType,
   type ChapterFileType,
   type LessonFileType,
-} from '../../../../lib/course';
+} from '../../../../../lib/course';
 
 interface Params extends Record<string, string | undefined> {
   courseId: string;
