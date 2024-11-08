@@ -45,13 +45,40 @@ END:VCALENDAR
 }
 
 type ScheduleEventModalProps = {
-  roadmapTitle: string;
   roadmapId: string;
   onClose: () => void;
 };
 
 export function ScheduleEventModal(props: ScheduleEventModalProps) {
-  const { onClose, roadmapId, roadmapTitle } = props;
+  const { onClose, roadmapId } = props;
+
+  let roadmapTitle = '';
+
+  if (roadmapId === 'devops') {
+    roadmapTitle = 'DevOps';
+  } else if (roadmapId === 'ios') {
+    roadmapTitle = 'iOS';
+  } else if (roadmapId === 'postgresql-dba') {
+    roadmapTitle = 'PostgreSQL';
+  } else if (roadmapId === 'devrel') {
+    roadmapTitle = 'DevRel';
+  } else if (roadmapId === 'qa') {
+    roadmapTitle = 'QA';
+  } else if (roadmapId === 'api-design') {
+    roadmapTitle = 'API Design';
+  } else if (roadmapId === 'ai-data-scientist') {
+    roadmapTitle = 'AI/Data Scientist';
+  } else if (roadmapId === 'technical-writer') {
+  } else if (roadmapId === 'software-architect') {
+    roadmapTitle = 'Software Architecture';
+  } else if (roadmapId === 'ai-engineer') {
+    roadmapTitle = 'AI Engineer';
+  } else {
+    roadmapTitle = roadmapId
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
   const [selectedCalendar, setSelectedCalendar] = useState<
     'apple' | 'outlook' | null
@@ -59,11 +86,11 @@ export function ScheduleEventModal(props: ScheduleEventModalProps) {
   const [isLoading, setIsLoading] = useState(false);
 
   const location = `https://roadmap.sh/${roadmapId}`;
-  const title = `Learn ${roadmapTitle}`;
+  const title = `Learn from ${roadmapTitle} Roadmap - roadmap.sh`;
   const details = `
-Learn ${roadmapTitle} on roadmap.sh
+Learn from the ${roadmapTitle} roadmap on roadmap.sh
 
-For more details, visit: https://roadmap.sh/${roadmapId}
+Visit the roadmap at https://roadmap.sh/${roadmapId}
   `.trim();
 
   const handleDownloadICS = () => {
@@ -146,68 +173,75 @@ For more details, visit: https://roadmap.sh/${roadmapId}
   };
 
   return (
-    <Modal onClose={onClose} wrapperClassName="max-w-lg">
-      <button
-        className="absolute right-4 top-4 text-gray-400 hover:text-black"
-        onClick={onClose}
-      >
-        <X className="h-4 w-4 stroke-[2.5]" />
-      </button>
+    <Modal
+      onClose={onClose}
+      bodyClassName="bg-transparent shadow-none"
+      wrapperClassName="h-auto max-w-lg"
+      overlayClassName="items-start md:items-center"
+    >
+      <div className="rounded-xl bg-white px-3">
+        <button
+          className="absolute right-4 top-4 text-gray-400 hover:text-black"
+          onClick={onClose}
+        >
+          <X className="h-4 w-4 stroke-[2.5]" />
+        </button>
 
-      <div className="flex flex-col items-center p-4 py-6 text-center">
-        {selectedCalendar && (
-          <CalendarSteps
-            title={stepDetails[selectedCalendar].title}
-            steps={stepDetails[selectedCalendar].steps}
-            onDownloadICS={handleDownloadICS}
-            onCancel={() => {
-              setSelectedCalendar(null);
-            }}
-            isLoading={isLoading}
-          />
-        )}
+        <div className="flex flex-col items-center p-4 py-6 text-center">
+          {selectedCalendar && (
+            <CalendarSteps
+              title={stepDetails[selectedCalendar].title}
+              steps={stepDetails[selectedCalendar].steps}
+              onDownloadICS={handleDownloadICS}
+              onCancel={() => {
+                setSelectedCalendar(null);
+              }}
+              isLoading={isLoading}
+            />
+          )}
 
-        {!selectedCalendar && (
-          <>
-            <h2 className="text-2xl font-medium tracking-wide">
-              Add to Your Calendar
-            </h2>
-            <p className="mt-1 text-balance text-sm text-gray-600">
-              Export the event to your calendar of choice. Future changes to
-              either the original or the copy will not be reflected in the
-              other.
-            </p>
+          {!selectedCalendar && (
+            <>
+              <h2 className="text-3xl font-semibold">Schedule Learning Time</h2>
+              <p className="mt-1.5 text-balance text-base text-gray-600">
+                Block some time on your calendar to stay consistent
+              </p>
 
-            <div className="mt-6 flex w-full flex-col gap-1">
-              <CalendarButton
-                icon={GoogleCalendarIcon}
-                label="Google Calendar"
-                onClick={handleGoogleCalendar}
-                isLoading={isLoading}
-              />
-              <CalendarButton
-                icon={AppleCalendarIcon}
-                label="Apple Calendar"
-                onClick={() => {
-                  setSelectedCalendar('apple');
-                }}
-              />
-              <CalendarButton
-                icon={OutlookCalendarIcon}
-                label="Outlook Calendar"
-                onClick={() => {
-                  setSelectedCalendar('outlook');
-                }}
-              />
+              <div className="mt-6 flex w-full flex-col gap-1">
+                <CalendarButton
+                  icon={GoogleCalendarIcon}
+                  label="Google Calendar"
+                  onClick={handleGoogleCalendar}
+                  isLoading={isLoading}
+                />
+                <CalendarButton
+                  icon={AppleCalendarIcon}
+                  label="Apple Calendar"
+                  onClick={() => {
+                    setSelectedCalendar('apple');
+                  }}
+                />
+                <CalendarButton
+                  icon={OutlookCalendarIcon}
+                  label="Outlook Calendar"
+                  onClick={() => {
+                    setSelectedCalendar('outlook');
+                  }}
+                />
 
-              <CalendarButton
-                icon={FileIcon}
-                label="Download File (.ics)"
-                onClick={handleDownloadICS}
-              />
-            </div>
-          </>
-        )}
+                <div className="mx-auto my-4 text-base text-gray-600">
+                  or download the iCS file and import it to your calendar app
+                </div>
+
+                <CalendarButton
+                  icon={FileIcon}
+                  label="Download File (.ics)"
+                  onClick={handleDownloadICS}
+                />
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </Modal>
   );
@@ -233,7 +267,7 @@ function CalendarButton(props: CalendarButtonProps) {
       onClick={onClick}
     >
       <div className="flex items-center gap-2">
-        <Icon className="h-4 w-4 shrink-0 stroke-[2.5]" />
+        <Icon className="h-5 w-5 shrink-0 stroke-[2.5]" />
         {label}
       </div>
       <ChevronRight className="h-4 w-4 stroke-[2.5]" />
@@ -254,16 +288,16 @@ export function CalendarSteps(props: CalendarStepsProps) {
 
   return (
     <div className="flex flex-col">
-      <h2 className="text-2xl font-medium tracking-wide">{title}</h2>
+      <h2 className="text-3xl font-semibold">{title}</h2>
 
       <div className="mt-6 flex flex-col gap-2">
         {steps.map((step, index) => (
-          <div key={index} className="flex items-center gap-3">
-            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-200 text-gray-600">
+          <div key={index} className="flex items-baseline gap-3">
+            <div className="flex h-6 w-6 relative top-px text-sm shrink-0 items-center justify-center rounded-full bg-gray-200 text-gray-600">
               {index + 1}
             </div>
             <div className="flex flex-col gap-1">
-              <p className="text-left text-sm text-gray-800">{step}</p>
+              <p className="text-left text-base text-gray-800">{step}</p>
             </div>
           </div>
         ))}
@@ -271,14 +305,14 @@ export function CalendarSteps(props: CalendarStepsProps) {
 
       <div className="mt-6 flex gap-2">
         <button
-          className="flex-1 rounded-lg border border-gray-300 py-2 text-sm text-gray-600 hover:bg-gray-50 disabled:opacity-60 data-[loading='true']:cursor-progress"
+          className="flex-1 rounded-md border hover:bg-gray-100 border-gray-300 py-2 text-sm text-gray-600 disabled:opacity-60 data-[loading='true']:cursor-progress"
           onClick={onCancel}
           disabled={isLoading}
         >
-          Cancel
+          Go back
         </button>
         <button
-          className="flex-1 rounded-lg bg-blue-600 py-2 text-sm text-white hover:bg-blue-700 disabled:opacity-60 data-[loading='true']:cursor-progress"
+          className="flex-1 rounded-md bg-black py-2 text-sm text-white hover:bg-blue-700 disabled:opacity-60 data-[loading='true']:cursor-progress"
           onClick={onDownloadICS}
           disabled={isLoading}
           data-loading={isLoading}

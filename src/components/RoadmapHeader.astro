@@ -7,12 +7,12 @@ import {
 } from 'lucide-react';
 import { TabLink } from './TabLink';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
+import { ScheduleButton } from './Schedule/ScheduleButton';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
-import { ScheduleButton } from './Schedule/ScheduleButton';
 
 export interface Props {
   title: string;
@@ -46,8 +46,6 @@ const roadmapTitle =
   roadmapId === 'devops'
     ? 'DevOps'
     : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
-
-const hasTnsBanner = !!tnsBannerLink;
 ---
 
 <LoginPopup />
@@ -96,6 +94,12 @@ const hasTnsBanner = !!tnsBannerLink;
           className='relative top-px mr-2 text-gray-500 !opacity-100 hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] hover:[&>svg]:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
           client:only='react'
         />
+        <ScheduleButton
+          resourceId={roadmapId}
+          resourceType='roadmap'
+          resourceTitle={title}
+          client:load
+        />
         <DownloadRoadmapButton roadmapId={roadmapId} client:idle />
         <ShareRoadmapButton
           description={description}
@@ -104,11 +108,11 @@ const hasTnsBanner = !!tnsBannerLink;
         />
       </div>
     </div>
-    <div class='mb-5 mt-5 sm:mb-8 sm:mt-5'>
-      <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-3xl'>
+    <div class='mb-5 mt-5 sm:mb-12 sm:mt-12'>
+      <h1 class='mb-0.5 text-2xl font-bold sm:mb-3.5 sm:text-5xl'>
         {title}
       </h1>
-      <p class='text-balance text-sm text-gray-500 sm:text-base'>
+      <p class='text-balance text-sm text-gray-500 sm:text-lg'>
         {description}
       </p>
     </div>
@@ -127,12 +131,6 @@ const hasTnsBanner = !!tnsBannerLink;
           text='Projects'
           isActive={activeTab === 'projects'}
           badgeText={projectCount > 0 ? 'new' : 'soon'}
-        />
-        <ScheduleButton
-          resourceId={roadmapId}
-          resourceType='roadmap'
-          resourceTitle={title}
-          client:load
         />
       </div>
 
