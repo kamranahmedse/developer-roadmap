@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/roadmaps/datastructures-and-algorithms.pdf'
 order: 18
 briefTitle: 'Data Structures & Algorithms'
 briefDescription: 'Step by step guide to learn Data Structures and Algorithms in 2024'
-title: 'Data Structures & Algorithms Roadmap'
+title: 'Data Structures & Algorithms'
 description: 'Step by step guide to learn Data Structures and Algorithms in 2024'
 hasTopics: true
 isNew: false

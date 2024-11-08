@@ -5,7 +5,7 @@ order: 4
 renderer: 'editor'
 briefTitle: 'AI Engineer'
 briefDescription: 'Step by step guide to becoming an AI Engineer in 2024'
-title: 'AI Engineer Roadmap'
+title: 'AI Engineer'
 description: 'Step by step guide to becoming an AI Engineer in 2024'
 hasTopics: true
 isNew: true

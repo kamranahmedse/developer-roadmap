@@ -33,8 +33,6 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
     setIsDropdownOpen(false);
   });
 
-  const embedHtml = `<iframe src="https://roadmap.sh/r/embed?id=${roadmapId}" width="100%" height="500px" frameBorder="0"\n></iframe>`;
-
   return (
     <div className="relative" ref={containerRef}>
       {isEmbedModalOpen && (
