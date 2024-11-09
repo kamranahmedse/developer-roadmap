@@ -96,6 +96,12 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
   const handleDownloadICS = () => {
     setIsLoading(true);
 
+    const calendarTitle = selectedCalendar || 'ICS';
+
+    triggerScheduleEvent(
+      `${calendarTitle.charAt(0).toUpperCase()}${calendarTitle.slice(1)}`,
+    );
+
     const startDate = DateTime.now().minus({
       minutes: DateTime.now().minute % 30,
     });
@@ -119,8 +125,19 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
     URL.revokeObjectURL(url);
   };
 
+  const triggerScheduleEvent = function (type: string) {
+    window.fireEvent({
+      category: 'ScheduleTimeClick',
+      action: `Schedule Learning Time`,
+      label: `Schedule Learning Time / ${type}`,
+      value: `Schedule Learning Time / ${type}`,
+    });
+  };
+
   const handleGoogleCalendar = () => {
     setIsLoading(true);
+    triggerScheduleEvent('Google');
+
     const baseURL =
       'https://calendar.google.com/calendar/render?action=TEMPLATE';
 
@@ -293,7 +310,7 @@ export function CalendarSteps(props: CalendarStepsProps) {
       <div className="mt-6 flex flex-col gap-2">
         {steps.map((step, index) => (
           <div key={index} className="flex items-baseline gap-3">
-            <div className="flex h-6 w-6 relative top-px text-sm shrink-0 items-center justify-center rounded-full bg-gray-200 text-gray-600">
+            <div className="relative top-px flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm text-gray-600">
               {index + 1}
             </div>
             <div className="flex flex-col gap-1">
@@ -305,7 +322,7 @@ export function CalendarSteps(props: CalendarStepsProps) {
 
       <div className="mt-6 flex gap-2">
         <button
-          className="flex-1 rounded-md border hover:bg-gray-100 border-gray-300 py-2 text-sm text-gray-600 disabled:opacity-60 data-[loading='true']:cursor-progress"
+          className="flex-1 rounded-md border border-gray-300 py-2 text-sm text-gray-600 hover:bg-gray-100 disabled:opacity-60 data-[loading='true']:cursor-progress"
           onClick={onCancel}
           disabled={isLoading}
         >
