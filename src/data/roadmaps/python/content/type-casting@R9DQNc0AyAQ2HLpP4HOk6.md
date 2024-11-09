@@ -5,3 +5,5 @@ The process of converting the value of one data type (integer, string, float, et
 Visit the following resources to learn more:
 
 - [@article@Type Conversion and Casting](https://www.programiz.com/python-programming/type-conversion-and-casting)
+
+- [@article@Type Casting in Python](https://www.geeksforgeeks.org/type-casting-in-python/)
