@@ -14,4 +14,5 @@ Visit the following resources to learn more:
 - [@opensource@Protobuf](https://github.com/protocolbuffers/protobuf/)
 - [@article@Protobuf Doc](https://developers.google.com/protocol-buffers/)
 - [@article@Protobuf with Go](https://developers.google.com/protocol-buffers/docs/gotutorial/)
+- [@video@Buffers in Golang](https://www.youtube.com/watch?v=NoDRq6Twkts)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)
