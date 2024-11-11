@@ -8,4 +8,3 @@ To manage local and global configuration settings, you can use the git config co
 Visit the following resources to learn more:
 
 - [@official@Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
-- [@article@A step-by-step guide to setting up global Git config properties](https://medium.com/geekculture/a-step-by-step-guide-to-setting-up-git-config-global-properties-db6dbce30fa8)
