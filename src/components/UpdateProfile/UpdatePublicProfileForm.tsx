@@ -372,7 +372,7 @@ export function UpdatePublicProfileForm() {
           </h3>
           {publicRoadmaps.length > 0 ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              {publicRoadmaps.map((r) => (
+              {publicRoadmaps.filter(r => r.id && r.title).map((r) => (
                 <SelectionButton
                   type="button"
                   key={r.id}
@@ -383,7 +383,6 @@ export function UpdatePublicProfileForm() {
                     if (roadmapVisibility !== 'selected') {
                       setRoadmapVisibility('selected');
                     }
-
                     if (roadmaps.includes(r.id)) {
                       setRoadmaps(roadmaps.filter((id) => id !== r.id));
                     } else {

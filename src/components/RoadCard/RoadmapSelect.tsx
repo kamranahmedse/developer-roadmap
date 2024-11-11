@@ -16,7 +16,7 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
 
   const fetchProgress = async () => {
     const { response, error } = await httpGet<UserProgressResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`,
     );
 
     if (error || !response) {
@@ -44,30 +44,35 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
           No progress tracked so far.
         </p>
       )}
-      {allProgress?.map((progress) => {
-        const isSelected = selectedRoadmaps.includes(progress.resourceId);
-        const canSelect = isSelected || canSelectMore;
+      {allProgress
+        ?.filter((progress) => progress.resourceId && progress.resourceTitle)
+        ?.map((progress) => {
+          const isSelected = selectedRoadmaps.includes(progress.resourceId);
+          const canSelect = isSelected || canSelectMore;
 
-        return (
-          <SelectionButton
-            key={progress.resourceId}
-            text={progress.resourceTitle}
-            isDisabled={!canSelect}
-            isSelected={isSelected}
-            onClick={() => {
-              if (isSelected) {
-                setSelectedRoadmaps(
-                  selectedRoadmaps.filter(
-                    (roadmap) => roadmap !== progress.resourceId
-                  )
-                );
-              } else if (selectedRoadmaps.length < 4) {
-                setSelectedRoadmaps([...selectedRoadmaps, progress.resourceId]);
-              }
-            }}
-          />
-        );
-      })}
+          return (
+            <SelectionButton
+              key={progress.resourceId}
+              text={progress.resourceTitle}
+              isDisabled={!canSelect}
+              isSelected={isSelected}
+              onClick={() => {
+                if (isSelected) {
+                  setSelectedRoadmaps(
+                    selectedRoadmaps.filter(
+                      (roadmap) => roadmap !== progress.resourceId,
+                    ),
+                  );
+                } else if (selectedRoadmaps.length < 4) {
+                  setSelectedRoadmaps([
+                    ...selectedRoadmaps,
+                    progress.resourceId,
+                  ]);
+                }
+              }}
+            />
+          );
+        })}
     </div>
   );
 }
