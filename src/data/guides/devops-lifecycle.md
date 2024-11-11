@@ -7,7 +7,7 @@ seo:
   title: 'What Are the 7 Key Phases of the DevOps Lifecycle?'
   description: 'Master the DevOps lifecycle by exploring its 7 phases, designed to enhance collaboration, streamline processes, and deliver software with agility.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/key-phases-of-devops-lifecycle-788fa.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-01
 sitemap:

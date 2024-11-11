@@ -7,7 +7,7 @@ seo:
   title: 'DevOps engineer vs Full stack developer: Which is best?'
   description: 'DevOps engineer vs Full stack developer: Compare the roles, required skills, and future prospects to make an informed career choice.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-vs-full-stack-developer-jccsq.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-10-17
 sitemap:

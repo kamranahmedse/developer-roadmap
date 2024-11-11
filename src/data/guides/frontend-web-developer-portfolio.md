@@ -7,7 +7,7 @@ seo:
   title: "Top 10 Web Developer Portfolio Templates - A Pro’s Pick"
   description: 'Build an impressive online presence with these 10 handpicked web developer portfolio templates.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/roammap-18-xvyn0.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-10-18
 sitemap:
