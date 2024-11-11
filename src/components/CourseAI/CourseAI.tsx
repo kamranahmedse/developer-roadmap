@@ -3,6 +3,13 @@ import type { ChapterFileType } from '../../lib/course';
 import { useState } from 'react';
 import { CourseAIPopover } from './CourseAIPopover';
 
+export type AllowedAIChatRole = 'user' | 'assistant';
+export type AIChatHistoryType = {
+  role: AllowedAIChatRole;
+  content: string;
+  isDefault?: boolean;
+};
+
 type CourseAIProps = {
   courseId: string;
   currentChapterId: string;
@@ -13,6 +20,15 @@ type CourseAIProps = {
 
 export function CourseAI(props: CourseAIProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [courseAIChatHistory, setCourseAIChatHistory] = useState<
+    AIChatHistoryType[]
+  >([
+    {
+      role: 'assistant',
+      content: 'Hey, how can I help you today? 🤖',
+      isDefault: true,
+    },
+  ]);
 
   return (
     <div className="relative">
@@ -25,7 +41,12 @@ export function CourseAI(props: CourseAIProps) {
       </button>
 
       {isOpen && (
-        <CourseAIPopover {...props} onOutsideClick={() => setIsOpen(false)} />
+        <CourseAIPopover
+          {...props}
+          onOutsideClick={() => setIsOpen(false)}
+          courseAIChatHistory={courseAIChatHistory}
+          setCourseAIChatHistory={setCourseAIChatHistory}
+        />
       )}
     </div>
   );
