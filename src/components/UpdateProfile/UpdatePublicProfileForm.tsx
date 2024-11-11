@@ -186,9 +186,11 @@ export function UpdatePublicProfileForm() {
   }, []);
 
   const publicCustomRoadmaps = profileRoadmaps.filter(
-    (r) => r.isCustomResource,
+    (r) => r.isCustomResource && r.id && r.title,
   );
-  const publicRoadmaps = profileRoadmaps.filter((r) => !r.isCustomResource);
+  const publicRoadmaps = profileRoadmaps.filter(
+    (r) => !r.isCustomResource && r.id && r.title,
+  );
 
   return (
     <div>
@@ -622,7 +624,7 @@ export function UpdatePublicProfileForm() {
               )}
             </button>
             <a
-              className='flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white'
+              className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-1.5 pl-2.5 pr-3.5 text-xs uppercase text-black transition-colors hover:bg-black hover:text-white"
               href={publicProfileUrl}
               target="_blank"
             >

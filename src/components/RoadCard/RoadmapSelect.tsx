@@ -16,7 +16,7 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
 
   const fetchProgress = async () => {
     const { response, error } = await httpGet<UserProgressResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`,
     );
 
     if (error || !response) {
@@ -34,16 +34,21 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
 
   const canSelectMore = selectedRoadmaps.length < 4;
   const allProgress =
-    progressList?.filter((progress) => progress.resourceType === 'roadmap') ||
-    [];
+    progressList?.filter(
+      (progress) =>
+        progress.resourceType === 'roadmap' &&
+        progress.resourceId &&
+        progress.resourceTitle,
+    ) || [];
 
   return (
     <div className="flex flex-wrap gap-1">
       {allProgress?.length === 0 && (
-        <p className={'text-sm italic text-gray-400'}>
+        <p className="text-sm italic text-gray-400">
           No progress tracked so far.
         </p>
       )}
+
       {allProgress?.map((progress) => {
         const isSelected = selectedRoadmaps.includes(progress.resourceId);
         const canSelect = isSelected || canSelectMore;
@@ -58,8 +63,8 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
               if (isSelected) {
                 setSelectedRoadmaps(
                   selectedRoadmaps.filter(
-                    (roadmap) => roadmap !== progress.resourceId
-                  )
+                    (roadmap) => roadmap !== progress.resourceId,
+                  ),
                 );
               } else if (selectedRoadmaps.length < 4) {
                 setSelectedRoadmaps([...selectedRoadmaps, progress.resourceId]);
