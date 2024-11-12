@@ -28,6 +28,7 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
+import { ChatGPTIcon } from '../ReactIcons/ChatGPTIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
@@ -325,6 +326,7 @@ export function TopicDetail(props: TopicDetailProps) {
     ?.replace(/\s+?roadmap/gi, '');
   const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
   const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitleForSearch}`;
+  const chatgptSearchUrl = `https://www.chatgpt.com/?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
 
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
@@ -543,6 +545,14 @@ export function TopicDetail(props: TopicDetailProps) {
                         >
                           <YouTubeIcon className={'h-4 w-4 text-red-500'} />
                           YouTube
+                        </a>
+                        <a
+                          href={chatgptSearchUrl}
+                          target="_blank"
+                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                        >
+                          <ChatGPTIcon className={'h-4 w-4'} />
+                          ChatGPT
                         </a>
                       </div>
                     </div>
