@@ -28,7 +28,7 @@ tags:
   - 'guide-sitemap'
 ---
 
-![](https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png)
+![Backend developer job description example and template.](https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png)
 
 Hiring the right candidate for a [backend engineering](https://roadmap.sh/backend) role requires identifying individuals who possess the necessary technical and soft skills and align with your organization's values. Selecting the right candidate can be challenging with a high volume of applications.
 
