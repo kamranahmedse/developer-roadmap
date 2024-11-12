@@ -15,6 +15,7 @@ relatedGuides:
   "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
   "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
   "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
+  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-05-09
