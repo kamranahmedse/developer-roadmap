@@ -16,7 +16,7 @@ relatedGuides:
   "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
   "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
   "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-10-17
 sitemap:

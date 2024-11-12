@@ -7,7 +7,7 @@ seo:
   title: 'Full stack vs Back end: What are the differences?'
   description: 'Full-stack vs Back-end: Learn the key differences in skills, roles, and technologies and find the right development path for you.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/full-stack-vs-backend-y0i1g.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-10-17
 sitemap:
