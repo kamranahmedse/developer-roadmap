@@ -9,6 +9,7 @@ import { TableOfContent } from '../TableOfContent/TableOfContent';
 import { markdownToHtml, replaceVariables } from '../../lib/markdown';
 import { QuestionGroupType } from '../../lib/question-group';
 import { QuestionsList } from './QuestionsList';
+import { RelatedGuides } from '../Guide/RelatedGuides';
 
 interface Props {
   questionGroup: QuestionGroupType;
@@ -65,6 +66,11 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
   {
     showTableOfContent && (
       <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+        <RelatedGuides
+          relatedTitle={guideFrontmatter?.relatedTitle}
+          relatedGuides={guideFrontmatter?.relatedGuides || {}}
+          client:load
+        />
         <TableOfContent toc={tableOfContent} client:load />
       </div>
     )

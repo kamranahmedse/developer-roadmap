@@ -26,7 +26,7 @@ export function RelatedGuides(props: RelatedGuidesProps) {
   return (
     <div
       className={cn(
-        'relative -mb-5 min-w-[250px] px-5 pt-0 max-lg:hidden lg:pt-10',
+        'relative min-w-[250px] px-5 pt-0 max-lg:hidden lg:pt-10',
       )}
     >
       <h4 className="text-lg font-medium max-lg:hidden">{relatedTitle}</h4>

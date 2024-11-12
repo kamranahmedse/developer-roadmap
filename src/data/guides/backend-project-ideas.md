@@ -7,6 +7,14 @@ seo:
   title: '20 Backend Project Ideas to take you from Beginner to Pro'
   description: 'Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
+  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
+  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
+  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
+  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
+  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
 isNew: false
 type: 'textual'
 date: 2024-05-09
