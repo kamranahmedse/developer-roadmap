@@ -69,6 +69,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
       setMessage('');
     });
 
+    scrollToBottom();
     completeCourseAIChat(newMessages);
   };
 
@@ -181,6 +182,10 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
                 );
               })}
 
+              {isLoading && !streamedMessage && (
+                <AIChatCard role="assistant" content="Thinking..." />
+              )}
+
               {streamedMessage && (
                 <AIChatCard role="assistant" content={streamedMessage} />
               )}
@@ -198,6 +203,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
           placeholder="Ask AI anything about the course..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          autoFocus={true}
         />
         <button
           type="submit"
