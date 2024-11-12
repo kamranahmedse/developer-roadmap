@@ -7,6 +7,15 @@ seo:
   title: 'Why Does DevOps Recommend Shift-Left Testing Principles?'
   description: 'Understand why DevOps emphasizes shift-left testing to boost early bug detection, reduce costs, and improve release cycles.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-shift-left-testing-16zah.jpg'
+relatedGuidesTitle: 'Other Guides'
+relatedGuides:
+  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
+  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
+  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
+  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
+  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
+  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
+  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
 isNew: true
 type: 'textual'
 date: 2024-11-04
