@@ -7,6 +7,15 @@ seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-gzngm.png'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
+  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
+  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
+  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
+  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
+  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-05-02

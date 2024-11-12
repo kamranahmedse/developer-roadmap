@@ -7,6 +7,15 @@ seo:
   title: "Top 10 Web Developer Portfolio Templates - A Pro’s Pick"
   description: 'Build an impressive online presence with these 10 handpicked web developer portfolio templates.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/roammap-18-xvyn0.jpg'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
+  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
+  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
+  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
+  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
+  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-10-18

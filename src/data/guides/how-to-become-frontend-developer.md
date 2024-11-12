@@ -7,6 +7,15 @@ seo:
   title: 'How to become a Front-End Developer in 7 Steps'
   description: 'Learn how to become a front-end developer in 7 clear steps. Start your coding journey with practical tips and resources today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/how-to-become-frontend-developer-i23nx.jpg'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
+  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
+  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
+  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
+  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
+  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-08-15
