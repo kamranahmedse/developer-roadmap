@@ -70,7 +70,7 @@ export interface RoadmapDocument {
   };
 
   featuredListStatus?: AllowedRoadmapFeaturedListStatus;
-  featuredListReason?: string;
+  featuredListRejectedReason?: string;
   featuredListSubmittedAt?: Date;
   featuredListApprovedAt?: Date;
 

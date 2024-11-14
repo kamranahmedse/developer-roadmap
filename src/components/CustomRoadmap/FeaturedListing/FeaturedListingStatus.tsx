@@ -12,38 +12,36 @@ export function FeaturedListingStatus(props: FeaturedListingStatusProps) {
   const { featuredListStatus = 'idle' } = currentRoadmap;
   const [showSubmitWarning, setShowSubmitWarning] = useState(false);
 
+  const currentLabel = {
+    idle: 'Submit for Featured Listing',
+    submitted: 'Submitted',
+    approved: 'Approved',
+    rejected: 'Rejected',
+    rejected_with_reason: 'Rejected with Reason',
+  }[featuredListStatus];
+
   return (
     <>
-      {featuredListStatus === 'idle' && (
-        <>
-          {showSubmitWarning && (
-            <SubmitFeaturedListingWarning
-              onClose={() => setShowSubmitWarning(false)}
-            />
-          )}
-
-          <button
-            className="text-sm"
-            onClick={() => setShowSubmitWarning(true)}
-          >
-            Submit for Featured Listing
-          </button>
-        </>
+      {showSubmitWarning && (
+        <SubmitFeaturedListingWarning
+          onClose={() => {
+            setShowSubmitWarning(false);
+          }}
+        />
       )}
 
-      {featuredListStatus === 'submitted' && (
-        <span className="text-sm">Submitted</span>
-      )}
+      <button
+        className="text-sm"
+        onClick={() => {
+          if (!['idle', 'rejected'].includes(featuredListStatus)) {
+            return;
+          }
 
-      {featuredListStatus === 'approved' && (
-        <span className="text-sm">Approved</span>
-      )}
-
-      {featuredListStatus === 'rejected' && (
-        <span className="text-sm">Rejected</span>
-      )}
-
-      {featuredListStatus === 'rejected_with_reason' && <></>}
+          setShowSubmitWarning(true);
+        }}
+      >
+        {currentLabel}
+      </button>
     </>
   );
 }

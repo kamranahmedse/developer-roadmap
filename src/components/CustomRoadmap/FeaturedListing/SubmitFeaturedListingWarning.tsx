@@ -40,14 +40,27 @@ export function SubmitFeaturedListingWarning(
     queryClient,
   );
 
+  const { featuredListStatus = 'idle', featuredListRejectedReason } =
+    $currentRoadmap || {};
+
   return (
     <Modal onClose={onClose}>
       <div className="p-4">
-        <h2 className="text-lg font-semibold">Featured Listing</h2>
+        <h2 className="text-lg font-semibold">
+          {featuredListStatus === 'rejected_with_reason'
+            ? 'Rejected Reason'
+            : 'Featured Listing'}
+        </h2>
         <p className="mt-2 text-sm">
-          Submitting your roadmap for a featured listing will make it visible to
-          everyone on the platform.{' '}
-          <span className="font-medium">Are you sure?</span>
+          {featuredListStatus === 'rejected_with_reason' &&
+            featuredListRejectedReason}
+          {featuredListStatus === 'idle' && (
+            <>
+              Submitting your roadmap for a featured listing will make it
+              visible to everyone on the platform.{' '}
+              <span className="font-medium">Are you sure?</span>
+            </>
+          )}
         </p>
 
         <div className="mt-4 grid grid-cols-2 gap-2">
@@ -63,7 +76,11 @@ export function SubmitFeaturedListingWarning(
             disabled={submit.isPending}
             onClick={() => submit.mutate()}
           >
-            {submit.isPending ? 'Submitting...' : 'Submit'}
+            {submit.isPending
+              ? 'Submitting...'
+              : featuredListStatus === 'rejected_with_reason'
+                ? 'Resubmit'
+                : 'Submit'}
           </button>
         </div>
       </div>
