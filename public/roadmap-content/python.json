@@ -137,6 +137,11 @@
         "title": "Python Functions - W3Schools",
         "url": "https://www.w3schools.com/python/python_functions.asp",
         "type": "article"
+      },
+      {
+        "title": "Defining Python Functions",
+        "url": "https://realpython.com/defining-your-own-python-function/",
+        "type": "article"
       }
     ]
   },
@@ -1171,10 +1176,16 @@
       }
     ]
   },
-  "virtualenv@_IXXTSwQOgYzYIUuKVWNE.md": {
+  "_IXXTSwQOgYzYIUuKVWNE": {
     "title": "virtualenv",
-    "description": "",
-    "links": []
+    "description": "`virtualenv` is a tool to create isolated Python environments. It creates a folder which contains all the necessary executables to use the packages that a Python project would need.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Virtual Environments",
+        "url": "https://virtualenv.pypa.io/en/latest/",
+        "type": "article"
+      }
+    ]
   },
   "N5VaKMbgQ0V_BC5tadV65": {
     "title": "pyenv",
