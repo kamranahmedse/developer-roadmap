@@ -11,6 +11,7 @@ import { RoadmapActionButton } from './RoadmapActionButton';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
+import { FeaturedListingStatus } from './FeaturedListing/FeaturedListingStatus.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -148,6 +149,10 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                       });
                     }}
                   />
+                )}
+
+                {$currentRoadmap && (
+                  <FeaturedListingStatus currentRoadmap={$currentRoadmap} />
                 )}
 
                 <RoadmapActionButton

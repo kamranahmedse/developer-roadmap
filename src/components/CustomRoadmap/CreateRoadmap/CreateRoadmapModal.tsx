@@ -26,6 +26,16 @@ export type AllowedCustomRoadmapType =
 export const allowedShowcaseStatus = ['visible', 'hidden'] as const;
 export type AllowedShowcaseStatus = (typeof allowedShowcaseStatus)[number];
 
+export const allowedRoadmapFeaturedListStatus = [
+  'idle',
+  'submitted',
+  'approved',
+  'rejected',
+  'rejected_with_reason',
+] as const;
+export type AllowedRoadmapFeaturedListStatus =
+  (typeof allowedRoadmapFeaturedListStatus)[number];
+
 export interface RoadmapDocument {
   _id?: string;
   title: string;
@@ -58,6 +68,11 @@ export interface RoadmapDocument {
       [key: number]: number;
     };
   };
+
+  featuredListStatus?: AllowedRoadmapFeaturedListStatus;
+  featuredListReason?: string;
+  featuredListSubmittedAt?: Date;
+  featuredListApprovedAt?: Date;
 
   createdAt: Date;
   updatedAt: Date;
