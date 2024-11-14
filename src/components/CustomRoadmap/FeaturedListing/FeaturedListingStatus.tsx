@@ -33,7 +33,7 @@ export function FeaturedListingStatus(props: FeaturedListingStatusProps) {
       <button
         className="text-sm"
         onClick={() => {
-          if (!['idle', 'rejected'].includes(featuredListStatus)) {
+          if (!['idle', 'rejected_with_reason'].includes(featuredListStatus)) {
             return;
           }
 
