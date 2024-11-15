@@ -1,3 +1,5 @@
+import { siteConfig } from './config.ts';
+
 const formatter = Intl.NumberFormat('en-US', {
   notation: 'compact',
 });
@@ -12,6 +14,16 @@ export async function getDiscordInfo(): Promise<{
 }> {
   if (discordStats) {
     return discordStats;
+  }
+
+  if (import.meta.env.DEV) {
+    return {
+      url: 'https://roadmap.sh/discord',
+      total: 27000,
+      totalFormatted: '27k',
+      online: 49,
+      onlineFormatted: '3.44k',
+    };
   }
 
   const response = await fetch(
