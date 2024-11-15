@@ -28,6 +28,10 @@ export function StickyTopSponsor(props: StickyTopSponsorProps) {
       return;
     }
 
+    // preload the image so that we don't see a flicker
+    const img = new Image();
+    img.src = sponsor.imageUrl;
+
     // hide the onboarding strip when the sponsor is visible
     isOnboardingStripHidden.set(true);
   }, [sponsor]);
