@@ -7,6 +7,12 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { getPercentage } from '../../helper/number';
 import { useIsMounted } from '../../hooks/use-is-mounted';
 
+function LeftBorder() {
+  return (
+    <span className="absolute left-[17px] top-0 h-full w-0.5 bg-gray-200"></span>
+  );
+}
+
 type ChapterProps = ChapterFileType & {
   index: number;
   isActive?: boolean;
@@ -76,31 +82,33 @@ export function Chapter(props: ChapterProps) {
     <div>
       <button
         className={cn(
-          'relative z-10 flex w-full items-center gap-2 border-b border-zinc-800 p-2 text-sm',
-          isActive && 'text-white',
+          'relative z-10 flex w-full items-center gap-2 border-b px-2 py-4 text-base',
+          {
+            'text-black': true,
+          },
         )}
         onClick={onChapterClick}
       >
-        <div className="flex size-5 items-center justify-center rounded-full bg-zinc-700 text-xs text-white">
+        <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
           {index}
         </div>
         <span className="truncate text-left">{title}</span>
+        {/*Right check of completion*/}
         {isChapterCompleted && lessons.length > 0 && (
-          <CheckIcon additionalClasses="h-4 w-4 ml-auto" />
+          <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
         )}
 
+        {/* active background indicator */}
         <div
-          className="absolute inset-0 -z-10 w-[var(--completed-percentage)] bg-zinc-800 transition-[width] duration-150 will-change-[width]"
-          style={
-            {
-              '--completed-percentage': `${completedPercentage}%`,
-            } as CSSProperties
-          }
+          className="absolute inset-0 -z-10 bg-gray-100"
+          style={{
+            width: `${completedPercentage}%`,
+          }}
         />
       </button>
 
       {isActive && (
-        <div className="flex flex-col border-b border-zinc-800">
+        <div className="flex flex-col border-b">
           {lessons.length > 0 && (
             <>
               <LessonList
@@ -113,11 +121,11 @@ export function Chapter(props: ChapterProps) {
               />
 
               <div className="relative">
-                <label className="relative z-10 my-2 ml-2 block max-w-max rounded-md bg-zinc-800 p-1 px-2 text-xs">
+                <label className="relative z-10 my-2 ml-2 block max-w-max rounded-md bg-gray-200 p-1 px-2 text-xs">
                   Exercises
                 </label>
 
-                <span className="absolute left-[17px] top-0 h-full w-0.5 bg-zinc-700"></span>
+                <LeftBorder />
               </div>
 
               <LessonList
@@ -162,13 +170,14 @@ function LessonList(props: LessonListProps) {
 
   return (
     <div>
-      {lessons.map((lesson) => {
+      {lessons.map((lesson, counter) => {
         const isActive =
           activeLessonId === lesson.id && chapterId === activeChapterId;
         const isCompleted = completedLessonSet.has(`${chapterId}/${lesson.id}`);
 
         return (
           <Lesson
+            counter={counter + 1}
             key={lesson.id}
             {...lesson}
             courseId={activeCourseId}
@@ -186,6 +195,7 @@ type LessonProps = LessonFileType & {
   isActive?: boolean;
   isCompleted?: boolean;
   courseId: string;
+  counter: number;
   chapterId: string;
 };
 
@@ -196,6 +206,7 @@ export function Lesson(props: LessonProps) {
     courseId,
     chapterId,
     id: lessonId,
+    counter,
     isCompleted,
   } = props;
   const { title } = frontmatter;
@@ -207,20 +218,36 @@ export function Lesson(props: LessonProps) {
   return (
     <a
       className={cn(
-        'relative flex w-full items-center gap-2 p-2 text-sm text-zinc-600',
-        isActive && 'bg-zinc-800/50 text-white',
+        'relative flex w-full items-center gap-2 p-2 text-sm hover:bg-gray-100',
+        {
+          'bg-gray-100': isActive,
+        },
       )}
       href={href}
     >
-      <div className="relative z-10 flex size-5 items-center justify-center rounded-full bg-zinc-700 text-xs text-white">
-        {isCompleted && <Check className="h-3 w-3 stroke-[3]" />}
-        {isLoading && isMounted && (
-          <Loader2 className="h-3 w-3 animate-spin stroke-[3] opacity-60" />
+      <div
+        className={cn(
+          'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white',
         )}
+      >
+        {counter}
       </div>
-      <span className="truncate text-left">{title}</span>
+      <span className="flex-grow truncate text-left">{title}</span>
 
-      <span className="absolute left-[17px] top-0 h-full w-0.5 bg-zinc-700"></span>
+      {isCompleted && (
+        <div
+          className={cn(
+            'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full text-xs text-white',
+            {
+              'bg-black': isCompleted,
+            },
+          )}
+        >
+          <Check className="h-3 w-3 stroke-[3] text-white" />
+        </div>
+      )}
+
+      {!isActive && <LeftBorder />}
     </a>
   );
 }

@@ -71,9 +71,10 @@ a > code:before {
 .course-content h1 > code,
 .course-content h2 > code,
 .course-content h3 > code {
-  background: transparent !important;
+  background: #282A36 !important;
   color: #f4f4f5 !important;
-  font-size: inherit !important;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
 
 .course-content.prose ul li > code:before,
@@ -82,7 +83,7 @@ a > code:before {
 .course-content p > code:after,
 .course-content a > code:after,
 .course-content a > code:before {
-  content: '`' !important;
+  content: '' !important;
 }
 
 .note-content-editor[contenteditable] ~ grammarly-extension,

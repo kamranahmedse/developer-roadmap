@@ -27,21 +27,17 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
   const [openedChapterId, setOpenedChapterId] = useState(activeChapterId);
 
-  const ceritificateUrl = `/learn/${activeCourseId}/certificate`;
+  const certificateUrl = `/learn/${activeCourseId}/certificate`;
 
   return (
-    <aside className="border-r border-zinc-800">
-      <div className="border-b border-zinc-800 p-4">
-        <h2 className="text-lg font-semibold">{title}</h2>
-
-        <div className="mt-4">
-          <span>{completedPercentage}% Completed</span>
-          <div className="relative mt-2 h-1 w-full overflow-hidden rounded-md bg-zinc-800">
-            <div
-              className="absolute inset-0 rounded-md bg-zinc-500 transition-[width] duration-150 will-change-[width]"
-              style={{ width: `${completedPercentage}%` }}
-            />
-          </div>
+    <aside className="border-r">
+      <div className="border-b p-4">
+        <h2 className="mb-1.5 text-2xl font-semibold">{title}</h2>
+        <div className="text-sm">
+          <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
+            {completedPercentage}%
+          </span>{' '}
+          Completed
         </div>
       </div>
 
@@ -72,7 +68,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
           <a
             className="flex items-center gap-2 p-2 text-sm text-zinc-500 hover:bg-zinc-800 hover:text-white"
-            href={ceritificateUrl}
+            href={certificateUrl}
           >
             <StickyNote className="h-4 w-4 stroke-[2.5]" />
             Certificate
