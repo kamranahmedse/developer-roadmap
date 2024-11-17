@@ -134,8 +134,6 @@ export function QuizItem(props: QuizItemProps) {
     isAttempted && options.some((item) => item.status === 'wrong');
   const hasCorrectAnswer = isAttempted && !hasWrongAnswer;
 
-  console.log(options);
-
   return (
     <div
       className={cn('relative rounded-2xl border px-5 py-7 text-black', {
