@@ -1,4 +1,4 @@
-import { Check, Loader2 } from 'lucide-react';
+import { Check, Loader2, Play } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { useMemo, type CSSProperties } from 'react';
@@ -7,9 +7,13 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { getPercentage } from '../../helper/number';
 import { useIsMounted } from '../../hooks/use-is-mounted';
 
-function LeftBorder() {
+function LeftBorder({ hasCompleted }: { hasCompleted?: boolean }) {
   return (
-    <span className="absolute left-[17px] top-0 h-full w-0.5 bg-gray-200"></span>
+    <span
+      className={cn('absolute left-[17px] top-0 h-full w-0.5 bg-gray-200', {
+        'bg-green-600': hasCompleted,
+      })}
+    ></span>
   );
 }
 
@@ -82,24 +86,21 @@ export function Chapter(props: ChapterProps) {
     <div>
       <button
         className={cn(
-          'relative z-10 flex flex-col w-full items-center gap-2 border-y px-2 py-4 text-base',
+          'relative z-10 flex w-full flex-row items-center gap-2 border-b px-2 py-4 text-base',
           {
             'text-black': true,
           },
         )}
         onClick={onChapterClick}
       >
-        <div className="flex w-full items-center gap-2">
-          <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
-            {index}
-          </div>
-          <span className="truncate text-left">{title}</span>
-          {/*Right check of completion*/}
-          {isChapterCompleted && lessons.length > 0 && (
-            <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
-          )}
+        <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
+          {index}
         </div>
-
+        <span className="truncate text-left">{title}</span>
+        {/*Right check of completion*/}
+        {isChapterCompleted && lessons.length > 0 && (
+          <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
+        )}
         {/*/!* active background indicator *!/*/}
         {/*<div*/}
         {/*  className="absolute inset-0 -z-10 bg-gray-100"*/}
@@ -110,7 +111,7 @@ export function Chapter(props: ChapterProps) {
       </button>
 
       {isActive && (
-        <div className="flex flex-col">
+        <div className="flex flex-col border-b bg-gray-100">
           {lessons.length > 0 && (
             <>
               <LessonList
@@ -219,37 +220,32 @@ export function Lesson(props: LessonProps) {
 
   return (
     <a
-      className={cn(
-        'relative flex w-full items-center gap-2 p-2 text-sm hover:bg-gray-100',
-        {
-          'bg-gray-100': isActive,
-        },
-      )}
+      className={
+        'group relative flex w-full items-center gap-2 p-2 text-sm hover:bg-gray-100'
+      }
       href={href}
     >
       <div
         className={cn(
-          'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white',
+          'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white group-hover:bg-gray-400',
+          {
+            'bg-black group-hover:bg-black': isActive,
+            'bg-green-600 group-hover:bg-green-600': !isActive && isCompleted,
+          },
         )}
       >
-        {counter}
+        {!isCompleted && counter}
+        {isCompleted && <Check className={'h-3 w-3 stroke-[3] text-white'} />}
       </div>
-      <span className="flex-grow truncate text-left">{title}</span>
+      <span
+        className={cn('flex-grow truncate text-left text-gray-600', {
+          'font-medium text-black': isActive,
+        })}
+      >
+        {title}
+      </span>
 
-      {isCompleted && (
-        <div
-          className={cn(
-            'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full text-xs text-white',
-            {
-              'bg-black': isCompleted,
-            },
-          )}
-        >
-          <Check className="h-3 w-3 stroke-[3] text-white" />
-        </div>
-      )}
-
-      {!isActive && <LeftBorder />}
+      <LeftBorder />
     </a>
   );
 }

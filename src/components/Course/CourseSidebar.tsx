@@ -31,7 +31,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
   return (
     <aside className="border-r">
-      <div className="p-4">
+      <div className="border-b p-4">
         <h2 className="mb-1.5 text-2xl font-semibold">{title}</h2>
         <div className="text-sm">
           <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
