@@ -23,7 +23,14 @@ export const editorLightTheme = EditorView.theme(
     '.cm-scroller::-webkit-scrollbar': {},
     // Highlight active line
     '.cm-activeLine': {
-      backgroundColor: '#f3f4f6',
+      color: '#18181b',
+    },
+    // Selection styles
+    '&.cm-focused .cm-selectionBackground, .cm-selectionBackground': {
+      backgroundColor: '#60a5fa40', // Light blue with some transparency
+    },
+    '&.cm-focused .cm-selectionMatch': {
+      backgroundColor: '#60a5fa40',
     },
     // Cursor styles
     '.cm-cursor': {
