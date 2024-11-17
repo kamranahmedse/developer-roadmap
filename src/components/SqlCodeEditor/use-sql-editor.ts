@@ -10,8 +10,8 @@ import {
 } from '@codemirror/commands';
 import { syntaxHighlighting } from '@codemirror/language';
 import {
-  editorDarkHightlightStyle,
-  editorDarkTheme,
+  editorLightHightlightStyle,
+  editorLightTheme,
 } from './sql-code-editor-theme';
 
 const External = Annotation.define<boolean>();
@@ -68,8 +68,8 @@ export function useSqlEditor(props: UseSqlEditorProps) {
         history(),
         keymap.of([indentWithTab, ...defaultKeymap, ...historyKeymap]),
         updateListener,
-        editorDarkTheme,
-        syntaxHighlighting(editorDarkHightlightStyle),
+        editorLightTheme,
+        syntaxHighlighting(editorLightHightlightStyle),
         EditorView.contentAttributes.of({
           'data-enable-grammarly': 'false',
         }),

@@ -142,7 +142,7 @@ export function CourseLayout(props: CourseLayoutProps) {
         </div>
 
         {activeChapterId && activeLessonId && (
-          <footer className="flex items-center justify-between border-t border-zinc-800 px-4">
+          <footer className="flex items-center justify-between border-t px-4">
             <div className="flex items-center gap-2">
               <CourseAI
                 courseId={activeCourseId}
@@ -159,18 +159,18 @@ export function CourseLayout(props: CourseLayoutProps) {
             </div>
             <div className="flex items-center gap-2">
               <button
-                className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
+                className="flex items-center gap-1 rounded-lg border border-black pl-3 pr-4 py-2 text-sm leading-none disabled:opacity-60 hover:bg-black hover:text-white transition-colors disabled:pointer-events-none"
                 onClick={() => {
                   window.location.href = prevLessonLink;
                 }}
                 disabled={!prevLessonLink || completeLesson.isPending}
               >
                 <ChevronLeft className="size-4 stroke-[3]" />
-                Prev
+                Previous Lesson
               </button>
 
               <button
-                className="flex items-center gap-1 rounded-lg border border-zinc-800 px-2 py-1.5 text-sm leading-none disabled:opacity-60"
+                className="flex items-center gap-1 rounded-lg border border-black pr-3 pl-4 py-2 text-sm leading-none disabled:opacity-60 hover:bg-black hover:text-white transition-colors"
                 onClick={() => {
                   const isQuizPending =
                     ($currentLesson?.lessonType === 'lesson-quiz' ||
@@ -194,7 +194,7 @@ export function CourseLayout(props: CourseLayoutProps) {
                 }}
                 disabled={completeLesson.isPending}
               >
-                Next
+                Next Lesson
                 {completeLesson.isPending ? (
                   <Loader2 className="size-4 animate-spin stroke-[3]" />
                 ) : (

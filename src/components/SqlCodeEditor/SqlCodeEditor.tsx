@@ -127,13 +127,13 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
             id="editor"
             ref={editorRef}
             data-enable-grammarly={false}
-            className="absolute inset-x-0 inset-y-2 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;] [&>div]:h-full"
+            className="absolute inset-x-0 inset-y-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;] [&>div]:h-full"
           ></div>
         </div>
 
         <div
           className={cn(
-            'flex items-center justify-end gap-1 border-t border-zinc-800 p-2',
+            'flex items-center justify-end gap-1 border-t p-2',
             isSubmitted && 'justify-between',
           )}
         >
