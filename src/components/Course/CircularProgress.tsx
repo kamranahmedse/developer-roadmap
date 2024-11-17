@@ -1,11 +1,15 @@
+import { cn } from '../../lib/classname';
+
 export function CircularProgress({
   percentage,
   children,
   isVisible = true,
+  isActive = false,
 }: {
   percentage: number;
   children: React.ReactNode;
   isVisible?: boolean;
+  isActive?: boolean;
 }) {
   const circumference = 2 * Math.PI * 13;
   const strokeDasharray = `${circumference}`;
@@ -22,7 +26,9 @@ export function CircularProgress({
             stroke="currentColor"
             strokeWidth="1.75"
             fill="none"
-            className="text-green-600"
+            className={cn('text-gray-400/70', {
+              'text-black': isActive,
+            })}
             style={{
               strokeDasharray,
               strokeDashoffset,

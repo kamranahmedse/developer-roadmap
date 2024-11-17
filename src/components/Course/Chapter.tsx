@@ -89,15 +89,16 @@ export function Chapter(props: ChapterProps) {
     <div>
       <button
         className={cn(
-          'relative z-10 flex w-full flex-row items-center gap-2 border-b px-2 py-4 text-base',
+          'relative z-10 flex w-full flex-row items-center gap-2 border-b px-2 py-4 text-base text-gray-600',
           {
-            'text-black': true,
+            'text-black': isActive,
           },
         )}
         onClick={onChapterClick}
       >
         <CircularProgress
           isVisible={!isChapterCompleted}
+          isActive={isActive}
           percentage={Number(completedPercentage) || 5}
         >
           <div
