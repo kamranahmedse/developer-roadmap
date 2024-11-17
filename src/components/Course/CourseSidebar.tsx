@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
-import { StickyNote } from 'lucide-react';
+import { StickyNote, ChevronLeft } from 'lucide-react';
+import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 
 export type CourseSidebarProps = {
   activeCourseId: string;
@@ -31,13 +32,23 @@ export function CourseSidebar(props: CourseSidebarProps) {
 
   return (
     <aside className="border-r">
-      <div className="border-b p-4">
-        <h2 className="mb-1.5 text-2xl font-semibold">{title}</h2>
-        <div className="text-sm">
-          <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
-            {completedPercentage}%
-          </span>{' '}
-          Completed
+      <a
+        href="/roadmaps"
+        className="flex items-center gap-1 border-b bg-gray-100 px-3 py-2 text-sm hover:bg-gray-200"
+      >
+        <ChevronLeft className="size-4" />
+        Back to All Courses
+      </a>
+
+      <div className="border-b">
+        <div className="px-4 pb-5 pt-7">
+          <h2 className="mb-1.5 text-2xl font-semibold">{title}</h2>
+          <div className="text-sm">
+            <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
+              {completedPercentage}%
+            </span>{' '}
+            Completed
+          </div>
         </div>
       </div>
 

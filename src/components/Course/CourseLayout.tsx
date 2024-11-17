@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
 import { CourseSidebar, type CourseSidebarProps } from './CourseSidebar';
-import {type ReactNode, useEffect, useMemo, useState} from 'react';
+import { type ReactNode, useEffect, useMemo, useState } from 'react';
 import {
   useCompleteLessonMutation,
   useCourseProgress,
@@ -12,6 +12,8 @@ import { getPercentage } from '../../helper/number';
 import { cn } from '../../lib/classname';
 import { CourseNotes } from '../CourseNotes/CourseNotes';
 import { CourseAI } from '../CourseAI/CourseAI';
+import { RoadmapIcon } from '../ReactIcons/RoadmapIcon';
+import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 
 export type CourseLayoutProps = {
   children: ReactNode;
@@ -123,7 +125,7 @@ export function CourseLayout(props: CourseLayoutProps) {
 
       <section
         className={cn(
-          'grid h-screen grid-rows-[1fr_60px] overflow-hidden bg-white text-black',
+          'grid h-screen overflow-hidden bg-white text-black',
           activeChapterId && activeLessonId
             ? 'grid-rows-[1fr_60px]'
             : 'grid-rows-1',
