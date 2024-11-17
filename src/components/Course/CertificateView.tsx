@@ -175,10 +175,10 @@ export function CertificateView(props: CertificateViewProps) {
 
         {!isCourseCompleted && !isLoading && (
           <div className="flex flex-col items-center">
-            <h1 className="text-4xl font-semibold">Almost there!</h1>
-            <p className="mt-3 text-center text-lg text-zinc-200">
-              Complete the course to download the certificate and rate your
-              experience.
+            <h1 className="text-4xl font-semibold">Pending completion!</h1>
+            <p className="mt-3 text-center text-lg text-gray-600">
+              Please complete all the lessons and challenges in the course to
+              issue the certificate.
             </p>
           </div>
         )}

@@ -3,6 +3,7 @@ import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
 import { StickyNote, ChevronLeft } from 'lucide-react';
 import { ProgressPercentageSkeleton } from './CourseSkeletons';
+import { cn } from '../../lib/classname';
 
 export type CourseSidebarProps = {
   isLoading: boolean;
@@ -87,7 +88,9 @@ export function CourseSidebar(props: CourseSidebarProps) {
           })}
 
           <a
-            className="flex items-center gap-2 p-2 text-sm text-zinc-500 hover:bg-zinc-800 hover:text-white"
+            className={cn("flex items-center py-4 px-4 gap-2 text-base text-zinc-500 hover:bg-gray-200 hover:text-black", {
+              "bg-gray-200": false,
+            })}
             href={certificateUrl}
           >
             <StickyNote className="h-4 w-4 stroke-[2.5]" />

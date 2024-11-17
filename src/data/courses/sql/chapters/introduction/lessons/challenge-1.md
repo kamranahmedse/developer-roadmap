@@ -33,8 +33,6 @@ expectedResults:
       - [5]
 ---
 
-## Instructions
-
 Write a SQL query to find the total number of orders in the `orders` table.
 
 ## Result

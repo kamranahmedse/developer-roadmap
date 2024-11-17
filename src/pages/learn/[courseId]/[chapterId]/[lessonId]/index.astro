@@ -2,11 +2,11 @@
 import { CourseView } from '../../../../../components/Course/CourseView';
 import SkeletonLayout from '../../../../../layouts/SkeletonLayout.astro';
 import {
-  getAllCourses,
-  getChaptersByCourseId,
-  type CourseFileType,
-  type ChapterFileType,
-  type LessonFileType,
+getAllCourses,
+getChaptersByCourseId,
+type ChapterFileType,
+type CourseFileType,
+type LessonFileType,
 } from '../../../../../lib/course';
 
 interface Params extends Record<string, string | undefined> {
@@ -64,7 +64,7 @@ export async function getStaticPaths() {
 }
 
 const { courseId, chapterId } = Astro.params;
-const { course, chapter, lesson } = Astro.props;
+const { course, lesson } = Astro.props;
 ---
 
 <SkeletonLayout title={course.frontmatter.title}>
@@ -75,6 +75,7 @@ const { course, chapter, lesson } = Astro.props;
     lesson={lesson}
     title={course.frontmatter.title}
     chapters={course.chapters}
+    isLoading={false}
     client:load
   >
     <lesson.Content />

@@ -94,9 +94,9 @@ export function Chapter(props: ChapterProps) {
     <div>
       <button
         className={cn(
-          'relative z-10 flex w-full flex-row items-center gap-2 border-b px-2 py-4 text-base text-gray-600',
+          'relative z-10 flex w-full flex-row items-center gap-2 border-b px-2 py-4 text-base text-gray-600 hover:bg-gray-100',
           {
-            'text-black': isActive,
+            'text-black hover:bg-gray-50': isActive,
           },
         )}
         onClick={onChapterClick}
