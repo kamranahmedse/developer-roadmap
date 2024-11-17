@@ -82,33 +82,35 @@ export function Chapter(props: ChapterProps) {
     <div>
       <button
         className={cn(
-          'relative z-10 flex w-full items-center gap-2 border-b px-2 py-4 text-base',
+          'relative z-10 flex flex-col w-full items-center gap-2 border-y px-2 py-4 text-base',
           {
             'text-black': true,
           },
         )}
         onClick={onChapterClick}
       >
-        <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
-          {index}
+        <div className="flex w-full items-center gap-2">
+          <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
+            {index}
+          </div>
+          <span className="truncate text-left">{title}</span>
+          {/*Right check of completion*/}
+          {isChapterCompleted && lessons.length > 0 && (
+            <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
+          )}
         </div>
-        <span className="truncate text-left">{title}</span>
-        {/*Right check of completion*/}
-        {isChapterCompleted && lessons.length > 0 && (
-          <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
-        )}
 
-        {/* active background indicator */}
-        <div
-          className="absolute inset-0 -z-10 bg-gray-100"
-          style={{
-            width: `${completedPercentage}%`,
-          }}
-        />
+        {/*/!* active background indicator *!/*/}
+        {/*<div*/}
+        {/*  className="absolute inset-0 -z-10 bg-gray-100"*/}
+        {/*  style={{*/}
+        {/*    width: `${completedPercentage}%`,*/}
+        {/*  }}*/}
+        {/*/>*/}
       </button>
 
       {isActive && (
-        <div className="flex flex-col border-b">
+        <div className="flex flex-col">
           {lessons.length > 0 && (
             <>
               <LessonList

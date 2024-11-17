@@ -37,11 +37,11 @@ export function QuizView(props: QuizViewProps) {
     <div className="relative h-full">
       <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
         <div className="mx-auto max-w-xl p-4 py-10">
-          <h3 className="mb-10 text-lg font-semibold">
+          <h3 className="mb-10 text-3xl font-semibold">
             {lesson.frontmatter.title}
           </h3>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-7">
             {questions.map((question) => {
               return (
                 <QuizItem
@@ -76,7 +76,7 @@ export function QuizView(props: QuizViewProps) {
             })}
           </div>
 
-          <div className="mt-8 flex items-center justify-end">
+          <div className="mt-8 flex justify-end">
             <button
               className="rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
               disabled={isSubmitted || !isAllAnswered}
@@ -124,9 +124,27 @@ type QuizItemProps = {
 export function QuizItem(props: QuizItemProps) {
   const { id, title, options, onOptionSelectChange, disabled } = props;
 
+  const hasWrongAnswer = options.some((item) => item.status === 'wrong');
+  const hasCorrectAnswer = options.some((item) => item.status === 'correct');
+
   return (
-    <div className="rounded-2xl bg-zinc-800 p-4">
-      <h3 className="mx-2 text-balance text-lg font-medium">{title}</h3>
+    <div
+      className={cn('relative rounded-2xl border p-4 text-black', {
+        'border-red-400': hasWrongAnswer,
+        'border-green-500': hasCorrectAnswer,
+      })}
+    >
+      {(hasWrongAnswer || hasCorrectAnswer) && (
+        <span
+          className={
+            'absolute -top-3.5 left-4 rounded-lg bg-green-300/70 px-2 py-1 text-xs font-medium uppercase tracking-wide text-green-800'
+          }
+        >
+          Correct
+        </span>
+      )}
+
+      <h3 className="mx-2 text-lg font-medium">{title}</h3>
 
       <div className="mt-4 flex flex-col gap-1">
         {options.map((option, index) => {
@@ -166,21 +184,21 @@ export function QuizOption(props: QuizOptionProps) {
       onClick={onSelect}
       className={cn(
         'flex items-start gap-2 rounded-xl p-2 text-sm disabled:cursor-not-allowed',
-        status === 'selected' && 'ring-1 ring-zinc-500',
+        status === 'selected' && 'ring-1 ring-black',
         status === 'wrong' && 'text-red-500 ring-1 ring-red-500',
         status === 'correct' && 'text-green-500 ring-1 ring-green-500',
-        status === 'default' && 'hover:bg-zinc-700',
+        status === 'default' && 'hover:bg-gray-100',
       )}
       disabled={disabled}
     >
-      <span className="mt-0.5">
-        {status === 'wrong' && <CircleX className="size-4" />}
-        {status === 'correct' && <CircleCheck className="size-4" />}
+      <span className="mt-[1px]">
+        {status === 'wrong' && <CircleX className="size-5" />}
+        {status === 'correct' && <CircleCheck className="size-5" />}
         {(status === 'selected' || status === 'default') && (
-          <Circle className="size-4" />
+          <Circle className="size-5" />
         )}
       </span>
-      <p>{text}</p>
+      <p className="text-left">{text}</p>
     </button>
   );
 }
