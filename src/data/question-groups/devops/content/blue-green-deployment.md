@@ -6,7 +6,7 @@ At a high level, the way this process works is as follows:
 
 - **Setup Two Environments**: Prepare two identical environments: blue (current live environment) and green (new version environment).
 - **Deploy to Green**: Deploy the new version of the application to the green environment through your normal CI/CD pipelines.
-- **Testing green**: Perform testing and validation in the green environment to ensure the new version works as expected.
+- **Test green**: Perform testing and validation in the green environment to ensure the new version works as expected.
 - **Switch Traffic**: Once the green environment is verified, switch the production traffic from blue to green. Optionally, the traffic switch can be done gradually to avoid potential problems from affecting all users immediately.
 - **Monitor**: Monitor the green environment to ensure it operates correctly with live traffic. Take your time, and make sure you’ve monitored every single major event before issuing the “green light”.
 - **Fallback Plan**: Keep the blue environment intact as a fallback. If any issues arise in the green environment, you can quickly switch traffic back to the blue environment. This is one of the fastest rollbacks you’ll experience in deployment and release management.
