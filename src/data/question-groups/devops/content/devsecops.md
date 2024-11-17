@@ -1,4 +1,4 @@
-To implement security in a DevOps pipeline (DevSecOps), you should integrate security practices throughout the development and deployment process. This is not just about securing the app once it’s in production, this is about securing the entire app-creation process.
+To implement security in a DevOps pipeline (DevSecOps), you should integrate security practices throughout the development and deployment process. This is not just about securing the app once it’s in production, this is about securing the entire application-creation process.
 
 That includes:
 
@@ -7,5 +7,5 @@ That includes:
 3. **Continuous Monitoring**: Monitor the pipeline and the deployed applications for security incidents using tools like Prometheus, Grafana, and specialized security monitoring tools.
 4. **Infrastructure as Code - Security**: Ensure that infrastructure configurations defined in code are secure by scanning IaC templates (like Terraform) for misconfigurations and vulnerabilities (like hardcoded passwords).
 5. **Access Control**: Implement strict access controls, using something like role-based access control (RBAC) or ABAC (attribute-based access control) and enforcing the principle of least privilege across the pipeline.
-6. **Compliance Checks**: Figure out the compliance and regulations of your industry and integrate those checks to ensure the pipeline adheres to industry standards and regulatory requirements.
+6. **Compliance Checks**: Figure out the compliance requirements and regulations of your industry and integrate those checks to ensure the pipeline adheres to industry standards and regulatory requirements.
 7. **Incident Response**: Figure out a clear incident response plan and integrate security alerts into the pipeline to quickly address potential security breaches.
