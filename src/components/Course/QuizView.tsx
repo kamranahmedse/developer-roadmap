@@ -76,9 +76,21 @@ export function QuizView(props: QuizViewProps) {
             })}
           </div>
 
-          <div className="mt-8 flex justify-end">
+          <div className="mt-8 flex justify-between">
+            <div className="text-gray-500">
+              {isSubmitted && (
+                <span>
+                  {correctAnswerCount} out of {questions.length} questions{' '}
+                  {correctAnswerCount > 1 ? 'were' : 'was'} correct
+                </span>
+              )}
+
+              {!isAllAnswered && (
+                <span>Answer all questions to submit</span>
+              )}
+            </div>
             <button
-              className="rounded-xl border border-zinc-700 bg-zinc-800 p-2 px-4 text-sm font-medium text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-lg border border-zinc-700 bg-zinc-800 p-2 px-4 text-base text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
               disabled={isSubmitted || !isAllAnswered}
               onClick={() => {
                 setIsSubmitted(true);
@@ -96,15 +108,6 @@ export function QuizView(props: QuizViewProps) {
               Submit my Answers
             </button>
           </div>
-
-          {isSubmitted && (
-            <div className="mt-8 flex items-center justify-between gap-2 rounded-xl border border-zinc-800 p-4">
-              <span>
-                You got {correctAnswerCount} out of {questions.length} questions
-                right
-              </span>
-            </div>
-          )}
         </div>
       </div>
     </div>
@@ -154,7 +157,7 @@ export function QuizItem(props: QuizItemProps) {
         </span>
       )}
 
-      <h3 className="mx-2 text-lg font-medium">{title}</h3>
+      <h3 className="mx-2 text-balance text-lg font-medium">{title}</h3>
 
       <div className="mt-4 flex flex-col gap-1">
         {options.map((option, index) => {
@@ -195,8 +198,8 @@ export function QuizOption(props: QuizOptionProps) {
       className={cn(
         'flex items-start gap-2 rounded-xl p-2 text-base disabled:cursor-not-allowed',
         status === 'selected' && 'bg-gray-600 text-white',
-        status === 'wrong' && 'text-black bg-red-200',
-        status === 'correct' && 'text-black bg-green-200',
+        status === 'wrong' && 'bg-red-200 text-black',
+        status === 'correct' && 'bg-green-200 text-black',
         status === 'default' && 'hover:bg-gray-100',
       )}
       disabled={disabled}
