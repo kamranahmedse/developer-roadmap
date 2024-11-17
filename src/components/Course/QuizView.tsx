@@ -37,7 +37,7 @@ export function QuizView(props: QuizViewProps) {
     <div className="relative h-full">
       <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
         <div className="mx-auto max-w-xl p-4 py-10">
-          <h3 className="mb-10 text-3xl font-semibold">
+          <h3 className="mb-7 text-3xl font-semibold">
             {lesson.frontmatter.title}
           </h3>
 
@@ -124,23 +124,33 @@ type QuizItemProps = {
 export function QuizItem(props: QuizItemProps) {
   const { id, title, options, onOptionSelectChange, disabled } = props;
 
-  const hasWrongAnswer = options.some((item) => item.status === 'wrong');
-  const hasCorrectAnswer = options.some((item) => item.status === 'correct');
+  const isAttempted = options.some((item) =>
+    ['correct', 'wrong'].includes(item.status ?? ''),
+  );
+  const hasWrongAnswer =
+    isAttempted && options.some((item) => item.status === 'wrong');
+  const hasCorrectAnswer = isAttempted && !hasWrongAnswer;
+
+  console.log(options);
 
   return (
     <div
-      className={cn('relative rounded-2xl border p-4 text-black', {
+      className={cn('relative rounded-2xl border px-5 py-7 text-black', {
         'border-red-400': hasWrongAnswer,
         'border-green-500': hasCorrectAnswer,
       })}
     >
       {(hasWrongAnswer || hasCorrectAnswer) && (
         <span
-          className={
-            'absolute -top-3.5 left-4 rounded-lg bg-green-300/70 px-2 py-1 text-xs font-medium uppercase tracking-wide text-green-800'
-          }
+          className={cn(
+            'absolute -top-3.5 left-4 rounded-lg bg-green-300 px-2 py-1 text-xs font-medium uppercase tracking-wide text-green-800',
+            {
+              'bg-red-300': hasWrongAnswer,
+              'bg-green-300': hasCorrectAnswer,
+            },
+          )}
         >
-          Correct
+          {hasCorrectAnswer ? 'Correct' : 'Wrong'}
         </span>
       )}
 
@@ -183,10 +193,10 @@ export function QuizOption(props: QuizOptionProps) {
     <button
       onClick={onSelect}
       className={cn(
-        'flex items-start gap-2 rounded-xl p-2 text-sm disabled:cursor-not-allowed',
-        status === 'selected' && 'ring-1 ring-black',
-        status === 'wrong' && 'text-red-500 ring-1 ring-red-500',
-        status === 'correct' && 'text-green-500 ring-1 ring-green-500',
+        'flex items-start gap-2 rounded-xl p-2 text-base disabled:cursor-not-allowed',
+        status === 'selected' && 'bg-gray-600 text-white',
+        status === 'wrong' && 'text-black bg-red-200',
+        status === 'correct' && 'text-black bg-green-200',
         status === 'default' && 'hover:bg-gray-100',
       )}
       disabled={disabled}
