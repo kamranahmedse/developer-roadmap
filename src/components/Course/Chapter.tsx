@@ -6,6 +6,7 @@ import { useCourseProgress } from '../../hooks/use-course';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { getPercentage } from '../../helper/number';
 import { useIsMounted } from '../../hooks/use-is-mounted';
+import { CircularProgress } from './CircularProgress';
 
 function LeftBorder({ hasCompleted }: { hasCompleted?: boolean }) {
   return (
@@ -55,9 +56,11 @@ export function Chapter(props: ChapterProps) {
     [courseProgress],
   );
 
-  const isChapterCompleted = lessons.every((lesson) =>
-    completeLessonSet.has(`${chapterId}/${lesson.id}`),
-  );
+  const isChapterCompleted =
+    lessons.length > 0 &&
+    lessons.every((lesson) =>
+      completeLessonSet.has(`${chapterId}/${lesson.id}`),
+    );
 
   const completedPercentage = useMemo(() => {
     const completedCount = lessons.filter((lesson) =>
@@ -93,25 +96,30 @@ export function Chapter(props: ChapterProps) {
         )}
         onClick={onChapterClick}
       >
-        <div className="text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white">
-          {index}
-        </div>
+        <CircularProgress
+          isVisible={!isChapterCompleted}
+          percentage={Number(completedPercentage) || 5}
+        >
+          <div
+            className={cn(
+              'text-400 flex h-[21px] w-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white',
+              {
+                'bg-black': isActive,
+                'bg-green-600': isChapterCompleted,
+              },
+            )}
+          >
+            {!isChapterCompleted && index}
+            {isChapterCompleted && (
+              <Check className="h-3 w-3 stroke-[3] text-white" />
+            )}
+          </div>
+        </CircularProgress>
         <span className="truncate text-left">{title}</span>
-        {/*Right check of completion*/}
-        {isChapterCompleted && lessons.length > 0 && (
-          <CheckIcon additionalClasses="h-4 w-4 ml-auto flex-shrink-0" />
-        )}
-        {/*/!* active background indicator *!/*/}
-        {/*<div*/}
-        {/*  className="absolute inset-0 -z-10 bg-gray-100"*/}
-        {/*  style={{*/}
-        {/*    width: `${completedPercentage}%`,*/}
-        {/*  }}*/}
-        {/*/>*/}
       </button>
 
       {isActive && (
-        <div className="flex flex-col border-b bg-gray-100">
+        <div className="flex flex-col border-b bg-gray-100 pl-[5px]">
           {lessons.length > 0 && (
             <>
               <LessonList
