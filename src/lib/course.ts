@@ -176,3 +176,33 @@ export async function getLessonsByCourseId(
     }))
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 }
+
+export async function readCourseAIContentStream(
+  reader: ReadableStreamDefaultReader<Uint8Array>,
+  {
+    onStream,
+    onStreamEnd,
+  }: {
+    onStream?: (content: string) => void;
+    onStreamEnd?: (content: string) => void;
+  },
+) {
+  const decoder = new TextDecoder('utf-8');
+  let result = '';
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) {
+      break;
+    }
+
+    if (value) {
+      result += decoder.decode(value);
+      onStream?.(result);
+    }
+  }
+
+  onStream?.(result);
+  onStreamEnd?.(result);
+  reader.releaseLock();
+}

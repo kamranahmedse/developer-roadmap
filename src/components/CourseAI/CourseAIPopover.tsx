@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
-import type { ChapterFileType } from '../../lib/course';
+import {
+  readCourseAIContentStream,
+  type ChapterFileType,
+} from '../../lib/course';
 import { Bot, Send } from 'lucide-react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import { markdownToHtml } from '../../lib/markdown';
 import { sanitizeHtml } from '../../lib/sanitize-html';
-import {
-  roadmapAIChatHistory,
-  type AllowedAIChatType,
-} from '../../stores/course';
-import { useStore } from '@nanostores/react';
 import { flushSync } from 'react-dom';
+import type { AIChatHistoryType, AllowedAIChatRole } from './CourseAI';
+import { useToast } from '../../hooks/use-toast';
+import { removeAuthToken } from '../../lib/jwt';
 
 type CourseAIPopoverProps = {
   courseId: string;
@@ -18,6 +19,9 @@ type CourseAIPopoverProps = {
   currentLessonId: string;
 
   chapters: ChapterFileType[];
+
+  courseAIChatHistory: AIChatHistoryType[];
+  setCourseAIChatHistory: (value: AIChatHistoryType[]) => void;
 
   onOutsideClick?: () => void;
 };
@@ -29,34 +33,44 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
     currentChapterId,
     currentLessonId,
     onOutsideClick,
+
+    courseAIChatHistory,
+    setCourseAIChatHistory,
   } = props;
 
+  const toast = useToast();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
-  const [message, setMessage] = useState('');
 
-  const $roadmapAIChatHistory = useStore(roadmapAIChatHistory);
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState('');
+  const [streamedMessage, setStreamedMessage] = useState('');
 
   useOutsideClick(containerRef, onOutsideClick);
 
   const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!message) {
+
+    const trimmedMessage = message.trim();
+    if (!trimmedMessage || isLoading) {
       return;
     }
 
+    const newMessages: AIChatHistoryType[] = [
+      ...courseAIChatHistory,
+      {
+        role: 'user',
+        content: trimmedMessage,
+      },
+    ];
+
     flushSync(() => {
-      roadmapAIChatHistory.set([
-        ...$roadmapAIChatHistory,
-        {
-          type: 'user',
-          message,
-        },
-      ]);
+      setCourseAIChatHistory(newMessages);
       setMessage('');
     });
 
     scrollToBottom();
+    completeCourseAIChat(newMessages);
   };
 
   const scrollToBottom = () => {
@@ -64,6 +78,78 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
       top: scrollareaRef.current.scrollHeight,
       behavior: 'smooth',
     });
+  };
+
+  const completeCourseAIChat = async (messages: AIChatHistoryType[]) => {
+    setIsLoading(true);
+
+    const response = await fetch(
+      `${import.meta.env.PUBLIC_API_URL}/v1-course-ai/${courseId}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({
+          chapterId: currentChapterId,
+          lessonId: currentLessonId,
+
+          messages,
+        }),
+      },
+    );
+
+    if (!response.ok) {
+      const data = await response.json();
+
+      toast.error(data?.message || 'Something went wrong');
+      setCourseAIChatHistory([...messages].slice(0, messages.length - 1));
+      setIsLoading(false);
+
+      // Logout user if token is invalid
+      if (data.status === 401) {
+        removeAuthToken();
+        window.location.reload();
+      }
+    }
+
+    const reader = response.body?.getReader();
+
+    if (!reader) {
+      setIsLoading(false);
+      toast.error('Something went wrong');
+      return;
+    }
+
+    await readCourseAIContentStream(reader, {
+      onStream: async (content) => {
+        flushSync(() => {
+          setStreamedMessage(content);
+        });
+
+        scrollToBottom();
+      },
+      onStreamEnd: async (content) => {
+        const newMessages: AIChatHistoryType[] = [
+          ...messages,
+          {
+            role: 'assistant',
+            content,
+          },
+        ];
+
+        flushSync(() => {
+          setStreamedMessage('');
+          setIsLoading(false);
+          setCourseAIChatHistory(newMessages);
+        });
+
+        scrollToBottom();
+      },
+    });
+
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -86,15 +172,23 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
         <div className="absolute inset-0 flex flex-col">
           <div className="flex grow flex-col justify-end">
             <div className="flex flex-col justify-end gap-2 p-2">
-              {$roadmapAIChatHistory.map((chat, index) => {
+              {courseAIChatHistory.map((chat, index) => {
                 return (
                   <AIChatCard
                     key={index}
-                    type={chat.type}
-                    message={chat.message}
+                    role={chat.role}
+                    content={chat.content}
                   />
                 );
               })}
+
+              {isLoading && !streamedMessage && (
+                <AIChatCard role="assistant" content="Thinking..." />
+              )}
+
+              {streamedMessage && (
+                <AIChatCard role="assistant" content={streamedMessage} />
+              )}
             </div>
           </div>
         </div>
@@ -109,9 +203,11 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
           placeholder="Ask AI anything about the course..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          autoFocus={true}
         />
         <button
           type="submit"
+          disabled={isLoading}
           className="flex aspect-square h-full items-center justify-center text-zinc-500 hover:text-zinc-50"
         >
           <Send className="size-4 stroke-[2.5]" />
@@ -122,28 +218,28 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
 }
 
 type AIChatCardProps = {
-  type: AllowedAIChatType;
-  message: string;
+  role: AllowedAIChatRole;
+  content: string;
 };
 
 function AIChatCard(props: AIChatCardProps) {
-  const { type, message } = props;
+  const { role, content } = props;
 
   const html = useMemo(() => {
-    return sanitizeHtml(markdownToHtml(message, false));
-  }, [message]);
+    return sanitizeHtml(markdownToHtml(content, false));
+  }, [content]);
 
   return (
     <div
       className={cn(
         'flex items-start gap-2.5 rounded-xl p-3',
-        type === 'user' ? 'bg-zinc-500/30' : 'bg-yellow-500/30',
+        role === 'user' ? 'bg-zinc-500/30' : 'bg-yellow-500/30',
       )}
     >
       <div
         className={cn(
           'flex size-6 shrink-0 items-center justify-center rounded-full',
-          type === 'user'
+          role === 'user'
             ? 'bg-zinc-500 text-zinc-50'
             : 'bg-yellow-500 text-zinc-950',
         )}
