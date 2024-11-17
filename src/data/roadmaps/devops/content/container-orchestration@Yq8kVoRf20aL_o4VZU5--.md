@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@article@What is Container Orchestration?](https://www.redhat.com/en/topics/containers/what-is-container-orchestration)  
 - [@article@What is Kubernetes?](https://kubernetes.io/docs/tutorials/kubernetes-basics/)  
 - [@video@Introduction to Kubernetes](https://www.youtube.com/watch?v=PH-2FfFD2PU)  
-- [@feed@Explore Top Posts About Container Orchestration](https://www.containerjournal.com/)
