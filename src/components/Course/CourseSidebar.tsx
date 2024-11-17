@@ -2,9 +2,11 @@ import { useState } from 'react';
 import type { ChapterFileType, LessonFileType } from '../../lib/course';
 import { Chapter } from './Chapter';
 import { StickyNote, ChevronLeft } from 'lucide-react';
-import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
+import { ProgressPercentageSkeleton } from './CourseSkeletons';
 
 export type CourseSidebarProps = {
+  isLoading: boolean;
+
   activeCourseId: string;
   activeChapterId?: string;
   activeLessonId?: string;
@@ -24,6 +26,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
     activeCourseId,
     activeChapterId,
     activeLessonId,
+    isLoading: isProgressLoading,
   } = props;
 
   const [openedChapterId, setOpenedChapterId] = useState(activeChapterId);
@@ -43,12 +46,17 @@ export function CourseSidebar(props: CourseSidebarProps) {
       <div className="border-b">
         <div className="px-4 pb-5 pt-7">
           <h2 className="mb-1.5 text-2xl font-semibold">{title}</h2>
-          <div className="text-sm">
-            <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
-              {completedPercentage}%
-            </span>{' '}
-            Completed
-          </div>
+
+          {!isProgressLoading && (
+            <div className="text-sm">
+              <span className="rounded-lg bg-yellow-300 px-1.5 py-0.5 text-black">
+                {completedPercentage}%
+              </span>{' '}
+              Completed
+            </div>
+          )}
+
+          {isProgressLoading && <ProgressPercentageSkeleton />}
         </div>
       </div>
 
@@ -61,6 +69,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
               <Chapter
                 key={chapter.id}
                 isActive={isActive}
+                isLoading={isProgressLoading}
                 onChapterClick={() => {
                   if (isActive) {
                     setOpenedChapterId('');

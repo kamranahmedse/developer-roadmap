@@ -146,7 +146,7 @@ export function CertificateView(props: CertificateViewProps) {
           <>
             <div className="flex flex-col items-center">
               <h1 className="text-4xl font-semibold">Congratulations!</h1>
-              <p className="mt-3 text-center text-lg text-zinc-200">
+              <p className="mt-3 text-center text-lg text-gray-600">
                 You finished the course. Download the completion certificate
                 below and share it with the world.
               </p>

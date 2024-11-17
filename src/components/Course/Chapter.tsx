@@ -7,6 +7,7 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { getPercentage } from '../../helper/number';
 import { useIsMounted } from '../../hooks/use-is-mounted';
 import { CircularProgress } from './CircularProgress';
+import { ChapterNumberSkeleton, LessonNumberSkeleton } from './CourseSkeletons';
 
 function LeftBorder({ hasCompleted }: { hasCompleted?: boolean }) {
   return (
@@ -23,6 +24,8 @@ type ChapterProps = ChapterFileType & {
   isActive?: boolean;
   isCompleted?: boolean;
 
+  isLoading?: boolean;
+
   activeCourseId: string;
   activeChapterId?: string;
   activeLessonId?: string;
@@ -37,6 +40,8 @@ export function Chapter(props: ChapterProps) {
     lessons,
     isActive = false,
     onChapterClick,
+
+    isLoading = false,
 
     activeCourseId,
     activeChapterId,
@@ -99,7 +104,8 @@ export function Chapter(props: ChapterProps) {
         <CircularProgress
           isVisible={!isChapterCompleted}
           isActive={isActive}
-          percentage={Number(completedPercentage) || 5}
+          isLoading={isLoading}
+          percentage={Number(completedPercentage) || 0}
         >
           <div
             className={cn(
@@ -130,6 +136,7 @@ export function Chapter(props: ChapterProps) {
                 chapterId={chapterId}
                 lessons={filteredLessons}
                 completedLessonSet={completeLessonSet}
+                isLoading={isLoading}
               />
 
               <div className="relative">
@@ -147,6 +154,7 @@ export function Chapter(props: ChapterProps) {
                 chapterId={chapterId}
                 lessons={exercises}
                 completedLessonSet={completeLessonSet}
+                isLoading={isLoading}
               />
             </>
           )}
@@ -168,6 +176,7 @@ type LessonListProps = {
   chapterId: string;
   lessons: LessonFileType[];
   completedLessonSet: Set<string>;
+  isLoading?: boolean;
 };
 
 function LessonList(props: LessonListProps) {
@@ -178,6 +187,7 @@ function LessonList(props: LessonListProps) {
     chapterId,
     lessons,
     completedLessonSet,
+    isLoading = false,
   } = props;
 
   return (
@@ -196,6 +206,7 @@ function LessonList(props: LessonListProps) {
             chapterId={chapterId}
             isActive={isActive}
             isCompleted={isCompleted}
+            isLoading={isLoading}
           />
         );
       })}
@@ -209,6 +220,7 @@ type LessonProps = LessonFileType & {
   courseId: string;
   counter: number;
   chapterId: string;
+  isLoading?: boolean;
 };
 
 export function Lesson(props: LessonProps) {
@@ -220,11 +232,10 @@ export function Lesson(props: LessonProps) {
     id: lessonId,
     counter,
     isCompleted,
+    isLoading = false,
   } = props;
   const { title } = frontmatter;
 
-  const isMounted = useIsMounted();
-  const { isLoading } = useCourseProgress(courseId);
   const href = `/learn/${courseId}/${chapterId}/${lessonId}`;
 
   return (
@@ -234,18 +245,21 @@ export function Lesson(props: LessonProps) {
       }
       href={href}
     >
-      <div
-        className={cn(
-          'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white group-hover:bg-gray-400',
-          {
-            'bg-black group-hover:bg-black': isActive,
-            'bg-green-600 group-hover:bg-green-600': !isActive && isCompleted,
-          },
-        )}
-      >
-        {!isCompleted && counter}
-        {isCompleted && <Check className={'h-3 w-3 stroke-[3] text-white'} />}
-      </div>
+      {!isLoading && (
+        <div
+          className={cn(
+            'relative z-10 flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs text-white group-hover:bg-gray-400',
+            {
+              'bg-black group-hover:bg-black': isActive,
+              'bg-green-600 group-hover:bg-green-600': !isActive && isCompleted,
+            },
+          )}
+        >
+          {!isCompleted && counter}
+          {isCompleted && <Check className={'h-3 w-3 stroke-[3] text-white'} />}
+        </div>
+      )}
+      {isLoading && <LessonNumberSkeleton />}
       <span
         className={cn('flex-grow truncate text-left text-gray-600', {
           'font-medium text-black': isActive,

@@ -27,7 +27,7 @@ export function CourseLayout(props: CourseLayoutProps) {
   const $currentLesson = useStore(currentLesson);
   const [showNextWarning, setShowNextWarning] = useState(false);
 
-  const { data: courseProgress } = useCourseProgress(activeCourseId);
+  const { data: courseProgress, isPending: isCourseProgressPending } = useCourseProgress(activeCourseId);
   const completeLesson = useCompleteLessonMutation(activeCourseId);
 
   const completeLessonSet = useMemo(
@@ -135,6 +135,7 @@ export function CourseLayout(props: CourseLayoutProps) {
           <CourseSidebar
             {...sidebarProps}
             completedPercentage={Number(courseProgressPercentage)}
+            isLoading={isCourseProgressPending}
           />
 
           {children}
