@@ -1310,7 +1310,12 @@
     "description": "Unit testing is a software testing method where individual components or units of a program are tested in isolation to ensure they function correctly. This approach focuses on verifying the smallest testable parts of an application, such as functions or methods, by executing them with predefined inputs and comparing the results to expected outcomes. Unit tests are typically automated and written by developers during the coding phase to catch bugs early, facilitate code refactoring, and ensure that each unit of code performs as intended. By isolating and testing each component, unit testing helps improve code reliability and maintainability.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Unit Testing Tutorial",
+        "title": "Unit testing",
+        "url": "https://en.wikipedia.org/wiki/Unit_testing",
+        "type": "article"
+      },
+      {
+        "title": "What is Unit Testing?",
         "url": "https://www.guru99.com/unit-testing-guide.html",
         "type": "article"
       },
