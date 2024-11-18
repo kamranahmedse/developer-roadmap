@@ -154,6 +154,7 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
           <div className="flex items-center gap-1">
             <DatabaseActionButton
               icon={WandSparkles}
+              label="Format"
               onClick={async () => {
                 const query = editor?.state?.doc.toString();
                 if (!query) {
@@ -173,6 +174,7 @@ export function SqlCodeEditor(props: SqlCodeEditorProps) {
 
             <DatabaseActionButton
               icon={Play}
+              label="Run"
               onClick={() => {
                 const query = editor?.state?.doc.toString();
                 if (!query) {
@@ -221,7 +223,7 @@ function DatabaseActionButton(props: DatabaseActionButtonProps) {
   return (
     <button
       className={cn(
-        'flex h-[30px] min-w-[30px] items-center justify-center gap-1.5 rounded-md p-1 text-sm text-zinc-200 outline-none hover:bg-zinc-800 hover:text-white focus:outline-none',
+        'flex h-[30px] min-w-[30px] items-center justify-center gap-1.5 rounded-md pl-2 pr-2.5 text-sm text-black outline-none hover:bg-zinc-800 hover:text-white focus:outline-none border border-black',
         className,
       )}
       onClick={onClick}

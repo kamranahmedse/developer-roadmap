@@ -52,7 +52,7 @@ export function CourseView(props: CourseViewProps) {
                   <h3 className="text-4xl font-semibold mt-10">
                     {lesson.frontmatter.title}
                   </h3>
-                  <div className="course-content prose prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800">
+                  <div className="course-content prose prose-pre:text-lg prose-pre:rounded-2xl prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800">
                     {children}
                   </div>
                 </div>

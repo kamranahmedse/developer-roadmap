@@ -75,6 +75,7 @@ a > code:before {
   color: #f4f4f5 !important;
   padding: 2px 4px;
   border-radius: 5px;
+  font-size: 17px !important;
 }
 
 .course-content.prose ul li > code:before,
