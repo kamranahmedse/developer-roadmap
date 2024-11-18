@@ -2654,31 +2654,21 @@
   },
   "Yq8kVoRf20aL_o4VZU5--": {
     "title": "Container Orchestration",
-    "description": "Containers are a construct in which cgroups, namespaces, and chroot are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines, These images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.\n\nVisit the following resources to learn more:",
+    "description": "Container orchestration is the process of managing and automating the lifecycle of containers, including their deployment, scaling, and networking across multiple hosts. It is a critical technology for running complex containerized applications in production environments.\n\nBy leveraging tools like Kubernetes, Docker Swarm, and Apache Mesos, organizations can ensure high availability, scalability, and reliability for their applications. Container orchestration simplifies operations by automating routine tasks and providing a robust foundation for microservices, cloud-native development, and DevOps practices.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What are Containers?",
-        "url": "https://cloud.google.com/learn/what-are-containers",
+        "title": "What is Container Orchestration?",
+        "url": "https://www.redhat.com/en/topics/containers/what-is-container-orchestration",
         "type": "article"
       },
       {
-        "title": "What is a Container?",
-        "url": "https://www.docker.com/resources/what-container/",
+        "title": "What is Kubernetes?",
+        "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
         "type": "article"
       },
       {
-        "title": "Articles about Containers - The New Stack",
-        "url": "https://thenewstack.io/category/containers/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Containers",
-        "url": "https://app.daily.dev/tags/containers?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "What are Containers?",
-        "url": "https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz",
+        "title": "Introduction to Kubernetes",
+        "url": "https://www.youtube.com/watch?v=PH-2FfFD2PU",
         "type": "video"
       }
     ]
