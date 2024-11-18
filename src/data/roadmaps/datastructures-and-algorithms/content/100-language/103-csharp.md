@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 - [@article@C# on W3 schools](https://www.w3schools.com/cs/index.php)
 - [@article@Introduction to C#](https://docs.microsoft.com/en-us/shows/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha)
 - [@video@C# tutorials](https://www.youtube.com/watch?v=gfkTfcpWqAY\&list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef)
-- [@feed@Explore top posts about C#](https://app.daily.dev/tags/c#?ref=roadmapsh)
+- [@feed@Explore top posts about C#](https://app.daily.dev/tags/csharp?ref=roadmapsh)
