@@ -17,6 +17,8 @@ interface RawQuestionGroupFrontmatter {
     ogImageUrl?: string;
     keywords: string[];
   };
+  relatedTitle?: string;
+  relatedGuides?: Record<string, string>;
   sitemap: {
     priority: number;
     changefreq: string;

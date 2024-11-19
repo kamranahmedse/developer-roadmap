@@ -4,4 +4,5 @@ Nethermind is a high-performance, highly configurable full Ethereum protocol cli
 
 Visit the following resources to learn more:
 
-- [@article@Nethermind Documentation](https://docs.nethermind.io/nethermind/)
+- [@official@Nethermind](https://www.nethermind.io/)
+- [@official@Nethermind Documentation](https://docs.nethermind.io/)

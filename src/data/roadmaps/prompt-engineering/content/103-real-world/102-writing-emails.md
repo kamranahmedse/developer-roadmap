@@ -26,3 +26,9 @@ We value your business and are committed to ensuring your complete satisfaction.
 Best regards,
 AI Customer Service
 ```
+
+Learn more from the following resources:
+
+- [@article@Write Emails Faster Using AI: Sick Days, Cold Outreach, and More](https://learnprompting.org/docs/basic_applications/writing_emails)
+- [@guides@AI Tools for Business Writing](https://communicationprogram.wharton.upenn.edu/library/ai-tools/)
+- [@article@Everyday Prompt Engineering -Emails](https://www.ikangai.com/everyday-prompt-engineering-part-one-emails/)

@@ -8,6 +8,7 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
   title='Update Profile'
   noIndex={true}
   initialLoadingMessage={'Loading profile'}
+  permalink="/account/update-profile"
 >
   <AccountSidebar activePageId='profile' activePageTitle='Profile'>
     <UpdatePublicProfileForm client:load />

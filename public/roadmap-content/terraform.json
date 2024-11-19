@@ -265,8 +265,19 @@
   },
   "76kp98rvph_8UOXZR-PBC": {
     "title": "Resource Lifecycle",
-    "description": "",
-    "links": []
+    "description": "Each Terraform resource is subject to the lifecycle: Create, Update or Recreate, Destroy. When executing `terraform apply`, each resource:\n\n*   which exists in configuration but not in state is created\n*   which exists in configuration and state and has changed is updated\n*   which exists in configuration and state and has changed, but cannot updated due to API limitation is destroyed and recreated\n*   which exists in state, but not (anymore) in configuration is destroyed\n\nThe lifecycle behaviour can be modified to some extend using the `lifecycle` meta argument.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How Terraform Applies a Configuration",
+        "url": "https://developer.hashicorp.com/terraform/language/resources/behavior#how-terraform-applies-a-configuration",
+        "type": "article"
+      },
+      {
+        "title": "The lifecycle Meta-Argument",
+        "url": "https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle",
+        "type": "article"
+      }
+    ]
   },
   "EIsex6gNHDRYHn0o2spzi": {
     "title": "depends_on",
@@ -495,7 +506,7 @@
         "type": "article"
       },
       {
-        "title": "@Article@Terraform Locals",
+        "title": "Terraform Locals",
         "url": "https://spacelift.io/blog/terraform-locals",
         "type": "article"
       }
@@ -550,7 +561,7 @@
   },
   "8giL6H5944M2L0rwxjPso": {
     "title": "Sensitive Outputs",
-    "description": "Terraform sensitive outputs are a feature used to protect sensitive information in Terraform configurations. When an output is marked as sensitive, Terraform obscures its value in the console output and state files, displaying it as \"\" instead of the actual value. This is crucial for protecting sensitive data like passwords or API keys.\n\nTo mark an output as sensitive, use the sensitive argument in the output block:\n\n    output \"database_password\" {\n      value     = aws_db_instance.example.password\n      sensitive = true\n    }\n    \n\nSensitive outputs are still accessible programmatically, but their values are hidden in logs and the console to prevent accidental exposure. This feature helps maintain security when sharing Terraform configurations or outputs with team members or in CI/CD pipelines.\n\nLearn more from the following resources:",
+    "description": "Terraform sensitive outputs are a feature used to protect sensitive information in Terraform configurations. When an output is marked as sensitive, Terraform obscures its value in the console output, displaying it as `<sensitive>` instead of the actual value. This is crucial for protecting sensitive data like passwords or API keys.\n\nTo mark an output as sensitive, use the sensitive argument in the output block:\n\n    output \"database_password\" {\n      value     = aws_db_instance.example.password\n      sensitive = true\n    }\n    \n\nSensitive outputs are still accessible programmatically and are written to the state in clear text, but their values are hidden in logs and the console to prevent accidental exposure. This feature helps maintain security when sharing Terraform configurations or outputs with team members or in CI/CD pipelines.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "How to output sensitive data in Terraform",
@@ -680,6 +691,11 @@
         "type": "course"
       },
       {
+        "title": "Terraform Plan Documentation",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "type": "article"
+      },
+      {
         "title": "Terraform plan command and how it works",
         "url": "https://spacelift.io/blog/terraform-plan",
         "type": "article"
@@ -702,7 +718,7 @@
       },
       {
         "title": "Terraform Apply Documentation",
-        "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/apply",
         "type": "article"
       },
       {
@@ -1091,7 +1107,7 @@
     "description": "Creating local modules in Terraform involves organizing a set of related resources into a reusable package within your project. To create a local module, you typically create a new directory within your project structure and place Terraform configuration files (`.tf`) inside it. These files define the resources, variables, and outputs for the module. The module can then be called from your root configuration using a module block, specifying the local path to the module directory. Local modules are useful for encapsulating and reusing common infrastructure patterns within a project, improving code organization and maintainability. They can accept input variables for customization and provide outputs for use in the calling configuration. Local modules are particularly beneficial for breaking down complex infrastructures into manageable, logical components and for standardizing resource configurations across a project.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Build and use a local moduke",
+        "title": "Build and use a local module",
         "url": "https://developer.hashicorp.com/terraform/tutorials/modules/module-create",
         "type": "article"
       },
@@ -1299,7 +1315,7 @@
   },
   "wSh7bbPswcFAzOicX8VPx": {
     "title": "state pull / push",
-    "description": "The `terraform state pull` and `terraform state push` commands are used for managing Terraform state in remote backends. The `pull` command retrieves the current state from the configured backend and outputs it to stdout, allowing for inspection or backup of the remote state. It's useful for debugging or for performing manual state manipulations.\n\nThe`push` command does the opposite, uploading a local state file to the configured backend, overwriting the existing remote state. This is typically used to restore a backup or to manually reconcile state discrepancies. Both commands should be used with caution, especially push, as they can potentially overwrite important state information.\n\nLearn more from the following resources:",
+    "description": "The `terraform state pull` and `terraform state push` commands are used for managing Terraform state in remote backends. The `pull` command retrieves the current state from the configured backend and outputs it to stdout, allowing for inspection or backup of the remote state. It's useful for debugging or for performing manual state manipulations.\n\nThe `push` command does the opposite, uploading a local state file to the configured backend, overwriting the existing remote state. This is typically used to restore a backup or to manually reconcile state discrepancies. Both commands should be used with caution, especially push, as they can potentially overwrite important state information.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Command - State pull",

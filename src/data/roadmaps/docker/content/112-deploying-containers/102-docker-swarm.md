@@ -1,16 +1,6 @@
 # Docker Swarm
 
-Docker Swarm is a container orchestration tool that enables users to manage multiple Docker nodes and deploy services across them. It is a native clustering and orchestration feature built into the Docker Engine, which allows you to create and manage a swarm of Docker nodes, referred to as a _Swarm_.
-
-## Advantages
-
-- **Scalability**: Docker Swarm allows you to scale services horizontally by easily increasing or decreasing the number of replicas.
-
-- **Load balancing**: Swarm ensures that the nodes within the swarm evenly handle container workloads by providing internal load balancing.
-
-- **Service discovery**: Docker Swarm allows you to automatically discover other services in the swarm by assigning a unique DNS entry to each service.
-
-- **Rolling updates**: Swarm enables you to perform rolling updates with near-zero downtime, easing the process of deploying new versions of your applications.
+Docker Swarm is Docker’s native container orchestration tool that allows users to deploy, manage, and scale containers across a cluster of Docker hosts. By transforming a group of Docker nodes into a single, unified cluster, Swarm provides high availability, load balancing, and automated container scheduling using simple declarative commands. With features like service discovery, rolling updates, and integrated security through TLS encryption, Docker Swarm offers an approachable alternative to more complex orchestrators like Kubernetes. Its tight integration with the Docker CLI and ease of setup make it a suitable choice for small to medium-sized deployments where simplicity and straightforward management are priorities.
 
 Visit the following resources to learn more:
 

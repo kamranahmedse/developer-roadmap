@@ -7,6 +7,15 @@ seo:
   title: 'Is DevOps engineering a good career path in @currentYear@?'
   description: 'Learn why a DevOps career path is a smart choice in 2024. Get insights into demand, growth, and earning potential in DevOps.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-career-path-2h4r7.jpg'
+relatedGuidesTitle: 'Other Guides'
+relatedGuides:
+  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
+  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
+  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
+  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
+  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
+  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
+  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
 isNew: false
 type: 'textual'
 date: 2024-08-20

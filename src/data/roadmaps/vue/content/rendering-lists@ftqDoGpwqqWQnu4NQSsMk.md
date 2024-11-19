@@ -4,4 +4,4 @@ We can use the `v-for` directive to render a list of items based on an array. Th
 
 Visit the following resources to learn more:
 
-- [@article@Rendering Lists in Vue.js](https://vuejs.org/guide/essentials/list.html)
+- [@official@Rendering Lists in Vue.js](https://vuejs.org/guide/essentials/list.html)

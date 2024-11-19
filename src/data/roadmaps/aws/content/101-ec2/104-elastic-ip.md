@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@official@Elastic IP Addresses](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+- [@official@Elastic IP Addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)

@@ -6,5 +6,5 @@ Props are custom attributes you can register on a component.
 
 Visit the following resources to learn more:
 
-- [@article@Props Basics](https://vuejs.org/guide/essentials/component-basics.html#passing-props)
-- [@article@Props in Depth](https://vuejs.org/guide/components/props.html)
+- [@official@Props Basics](https://vuejs.org/guide/essentials/component-basics.html#passing-props)
+- [@official@Props in Depth](https://vuejs.org/guide/components/props.html)

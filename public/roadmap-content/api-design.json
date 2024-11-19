@@ -9,7 +9,17 @@
     "description": "APIs, or Application Programming Interfaces, provide a manner in which software applications communicate with each other. They abstract the complexity of applications to allow developers to use only the essentials of the software they are working with. They define the methods and data formats an application should use in order to perform tasks, like sending, retrieving, or modifying data. Understanding APIs is integral to mastering modern software development, primarily because they allow applications to exchange data and functionality with ease, thus enabling integration and convergence of technological services. Therefore, a solid understanding of what APIs are forms the basic cornerstone of API design.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is an API?",
+        "title": "Getting Started with APIs - Postman",
+        "url": "https://www.postman.com/what-is-an-api/",
+        "type": "article"
+      },
+      {
+        "title": "API - IBM",
+        "url": "https://www.ibm.com/topics/api",
+        "type": "article"
+      },
+      {
+        "title": "What is an API? - AWS",
         "url": "https://aws.amazon.com/what-is/api/",
         "type": "article"
       },
@@ -61,7 +71,7 @@
         "type": "article"
       },
       {
-        "title": "HTTP: 1.0 vs. 1.1 vs 2.0 vs. 3.0",
+        "title": "HTTP: 1.0 vs 1.1 vs 2.0 vs 3.0",
         "url": "https://www.baeldung.com/cs/http-versions",
         "type": "article"
       }
@@ -72,7 +82,7 @@
     "description": "HTTP (Hypertext Transfer Protocol) Methods play a significant role in API design. They define the type of request a client can make to a server, providing the framework for interaction between client and server. Understanding HTTP methods is paramount to creating a robust and effective API. Some of the common HTTP methods used in API design include GET, POST, PUT, DELETE, and PATCH. Each of these methods signifies a different type of request, allowing for various interactions with your API endpoints. This in turn creates a more dynamic, functional, and user-friendly API.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "HTTP request methods",
+        "title": "HTTP Methods - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods",
         "type": "article"
       },
@@ -82,7 +92,7 @@
         "type": "article"
       },
       {
-        "title": "What are HTTP Methods?",
+        "title": "What are HTTP Methods? - Postman",
         "url": "https://blog.postman.com/what-are-http-methods/",
         "type": "article"
       }
@@ -124,12 +134,12 @@
         "type": "article"
       },
       {
-        "title": "What are HTTP headers?",
+        "title": "What are HTTP Headers?",
         "url": "https://blog.postman.com/what-are-http-headers/",
         "type": "article"
       },
       {
-        "title": "What are HTTP Headers & Understand different types of HTTP headers",
+        "title": "What are HTTP Headers & Types of HTTP headers",
         "url": "https://requestly.com/blog/what-are-http-headers-understand-different-types-of-http-headers/",
         "type": "article"
       }
@@ -150,7 +160,7 @@
         "type": "article"
       },
       {
-        "title": "Path parameters",
+        "title": "Path Parameters",
         "url": "https://help.iot-x.com/api/how-to-use-the-api/parameters/path-parameters",
         "type": "article"
       }
@@ -166,7 +176,7 @@
         "type": "article"
       },
       {
-        "title": "Cookes - Mozilla",
+        "title": "Cookies - Mozilla",
         "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies",
         "type": "article"
       }
@@ -182,7 +192,7 @@
         "type": "article"
       },
       {
-        "title": "Content Negotiation in practice",
+        "title": "Content Negotiation in Practice",
         "url": "https://softwaremill.com/content-negotiation-in-practice/",
         "type": "article"
       }
@@ -258,8 +268,19 @@
   },
   "o8i093VQv-T5Qf1yGqU0R": {
     "title": "Different API Styles",
-    "description": "Application Programming Interface (API) design isn't a one-size-fits-all endeavor. APIs can be structured in various styles, each with its own unique characteristics, advantages, and use cases. Early identification of the appropriate API style is crucial in ensuring a functional, efficient and seamless end-user experience. Commonly used API styles include REST, SOAP, GraphQL, and gRPC. Understanding these diverse API styles would help in making better design choices, fostering efficient overall system architecture, and promoting an intuitive and easy-to-use application.",
-    "links": []
+    "description": "Application Programming Interface (API) design isn't a one-size-fits-all endeavor. APIs can be structured in various styles, each with its own unique characteristics, advantages, and use cases. Early identification of the appropriate API style is crucial in ensuring a functional, efficient and seamless end-user experience. Commonly used API styles include REST, SOAP, GraphQL, and gRPC. Understanding these diverse API styles would help in making better design choices, fostering efficient overall system architecture, and promoting an intuitive and easy-to-use application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "API Styles",
+        "url": "https://www.redhat.com/architect/api-styles",
+        "type": "article"
+      },
+      {
+        "title": "Top API Styles",
+        "url": "https://www.youtube.com/watch?v=4vLxWqE94l4",
+        "type": "video"
+      }
+    ]
   },
   "BvwdASMvuNQ9DNgzdSZ4o": {
     "title": "RESTful APIs",
@@ -287,45 +308,30 @@
     "description": "Simple JSON (JavaScript Object Notation) APIs are a popular form of API or \"Application Programming Interface\" which utilise JSON to exchange data between servers and web applications. This method has gained prominence mainly for its simplicity, light weight, and easy readability. In the context of API design, a well-structured JSON API allows developers to efficiently interact with the backend and retrieve only the data they need in a consistent and comprehensible manner. From reducing redundant data to enabling quick parsing, Simple JSON APIs provide numerous benefits to improve the overall performance of applications. Designing a good JSON API requires careful planning, sound knowledge of HTTP methods, endpoints, error handling mechanisms, and most importantly, a clear understanding of the application's data requirements.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "A specification for building JSON APIs",
+        "title": "Specification for Building JSON APIs",
         "url": "https://github.com/json-api/json-api",
         "type": "opensource"
       },
       {
-        "title": "JSON API: Explained in 4 minutes (+ EXAMPLES)",
+        "title": "JSON API: Explained in 4 Minutes",
         "url": "https://www.youtube.com/watch?v=N-4prIh7t38",
         "type": "video"
       }
     ]
   },
   "Wwd-0PjrtViMFWxRGaQey": {
-    "title": "gRPC APIs",
-    "description": "gRPC is a platform agnostic serialization protocol that is used to communicate between services. Designed by Google in 2015, it is a modern alternative to REST APIs. It is a binary protocol that uses HTTP/2 as a transport layer. It is a high performance, open source, general-purpose RPC framework that puts mobile and HTTP/2 first.\n\nIt's main use case is for communication between two different languages within the same application. You can use Python to communicate with Go, or Java to communicate with C#.\n\ngRPC uses the protocol buffer language to define the structure of the data that is\n\nVisit the following resources to learn more:",
+    "title": "SOAP APIs",
+    "description": "SOAP (Simple Object Access Protocol) APIs are a standard communication protocol system that permits programs that run on different operating systems (like Linux and Windows) to communicate using Hypertext Transfer Protocol (HTTP) and its Extensible Markup Language (XML). In the context of API Design, SOAP APIs offer a robust and well-defined process for interaction between various software applications, mostly over a network. They are highly extensible, versatile and support a wide range of communications protocols. Despite being more complex compared to other API types like REST, SOAP APIs ensure high reliability and security, making them the choice for certain business-focused, high-transaction applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "gRPC Website",
-        "url": "https://grpc.io/",
+        "title": "What are SOAP APIs?",
+        "url": "https://www.indeed.com/career-advice/career-development/what-is-soap-api",
         "type": "article"
       },
       {
-        "title": "gRPC Introduction",
-        "url": "https://grpc.io/docs/what-is-grpc/introduction/",
+        "title": "SOAP vs REST 101: Understand The Differences",
+        "url": "https://www.soapui.org/learn/api/soap-vs-rest-api/",
         "type": "article"
-      },
-      {
-        "title": "gRPC Core Concepts",
-        "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about gRPC",
-        "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Stephane Maarek - gRPC Introduction",
-        "url": "https://youtu.be/XRXTsQwyZSU",
-        "type": "video"
       }
     ]
   },
@@ -339,12 +345,17 @@
         "type": "opensource"
       },
       {
+        "title": "Visit Dedicated GraphQL Roadmap",
+        "url": "https://roadmap.sh/graphql",
+        "type": "article"
+      },
+      {
         "title": "GraphQL Website",
         "url": "https://graphql.org/",
         "type": "article"
       },
       {
-        "title": "GraphQL explained in 100 seconds",
+        "title": "GraphQL Explained in 100 Seconds",
         "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
         "type": "video"
       }
@@ -355,12 +366,12 @@
     "description": "Building JSON/RESTful APIs involves designing and implementing APIs that adhere to the architectural constraints of Representational State Transfer (REST). These APIs use JSON (JavaScript Object Notation) as a format for information interchange, due to its lightweight, easy-to-understand, and universally accepted nature. A well-designed RESTful API, utilizing JSON, is key in developing applications that are scalable, maintainable, and easily integrated with other systems. This design approach enables the resources on a server to be accessed and manipulated using standard HTTP protocols, facilitating communication between different services and systems. Furthermore, it enables client-server interactions to be stateless, meaning each request from a client must contain all the information needed by the server to understand and process the request.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "A specification for building APIs in JSON",
+        "title": "Specification for Building APIs in JSON",
         "url": "https://jsonapi.org/",
         "type": "article"
       },
       {
-        "title": "How to make a REST API",
+        "title": "How to Make a RESTful API",
         "url": "https://www.integrate.io/blog/how-to-make-a-rest-api/",
         "type": "article"
       },
@@ -392,7 +403,7 @@
     "description": "URI (Uniform Resource Identifier) is a string of characters used to identify a name or a resource on the Internet. Designing URIs carefully is a crucial part of creating a smooth API interface that is easy to understand, remember and use. Good URI design ensures that related resources are grouped together in a logical manner and can greatly impact the usability and maintainability of an API. It involves crafting standardised, intuitive HTTP paths that take advantage of the hierarchical nature of URLs to provide a better structure to the API. This hierarchy can then be used to expand the API over time without breaking existing clients' functionality.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Guidelines for URI design",
+        "title": "Guidelines for URI Design",
         "url": "https://css-tricks.com/guidelines-for-uri-design/",
         "type": "article"
       },
@@ -408,12 +419,12 @@
     "description": "API Versioning is a critical component of API Design and Management. As the APIs evolve over time to meet the new business requirements and functionality enhancements, it is crucial to manage the changes in a way that doesn't break the existing client applications. This calls for effective versioning strategies in API design. There are different versioning strategies like URI versioning, Request Header versioning, and Media Type versioning which are adopted based on the ease of implementation, client compatibility, and accessibility. Understanding each strategy and its pros and cons can lead to better API Design and maintainability.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is API versioning?",
+        "title": "What is API Versioning?",
         "url": "https://www.postman.com/api-platform/api-versioning/",
         "type": "article"
       },
       {
-        "title": "4 API versioning best practices",
+        "title": "API Versioning Best Practices",
         "url": "https://kodekloud.com/blog/api-versioning-best-practices/",
         "type": "article"
       },
@@ -513,7 +524,7 @@
     "description": "Error Handling is a crucial aspect of API design that ensures the stability, usability, and reliability of the API in production. APIs are designed to help systems communicate with each other. However, there can be instances where these systems might encounter exceptions or errors. The process of predicting, catching, and managing these error occurrences is what we refer to as 'Error Handling'. In the context of API Design, it involves defining and implementing specific strategies to detect, manage and inform consumers of any exception or error that occurs while executing requests. Configuring this appropriately provides a more robust and seamless communication experience, enabling developers to debug and rectify issues more efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Best practices for API error handling",
+        "title": "Best Practices for API Error Handling",
         "url": "https://blog.postman.com/best-practices-for-api-error-handling/",
         "type": "article"
       },
@@ -563,13 +574,24 @@
   },
   "cQnQ9v3mH27MGNwetz3JW": {
     "title": "Authentication Methods",
-    "description": "Application Programming Interfaces (APIs) are critical components in software development that allow different software systems to communicate and share functionality. To ensure secure communication, it's essential to authenticate the parties involved in the API transactions. The authentication process confirms the identity of the API user. There are numerous authentication methods available when designing an API, each with its own pros and cons. This includes Basic Authentication, API Key Authentication, OAuth, and JWT among others. Understanding these different methods and their best use cases is fundamental to designing secure and effective APIs.",
-    "links": []
+    "description": "Application Programming Interfaces (APIs) are critical components in software development that allow different software systems to communicate and share functionality. To ensure secure communication, it's essential to authenticate the parties involved in the API transactions. The authentication process confirms the identity of the API user. There are numerous authentication methods available when designing an API, each with its own pros and cons. This includes Basic Authentication, API Key Authentication, OAuth, and JWT among others. Understanding these different methods and their best use cases is fundamental to designing secure and effective APIs.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "API Authentication",
+        "url": "https://www.postman.com/api-platform/api-authentication/",
+        "type": "article"
+      }
+    ]
   },
   "0FzHERK5AeYL5wv1FBJbH": {
     "title": "Basic Auth",
     "description": "Basic Auth, short for Basic Authentication, is a simple method often used in API design for handling user authentication. In this method, client credentials, consisting of a username and password pair, are passed to the API server in a field in the HTTP header. The server then verifies these credentials before granting access to protected resources. Although Basic Auth is straightforward to implement, it is less secure compared to more advanced methods since it involves transmitting credentials in an encoded, but not encrypted, format. It is often used in cases where simplicity is paramount, or High security levels are not required.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Basic Authentication",
+        "url": "https://roadmap.sh/guides/basic-authentication",
+        "type": "article"
+      },
       {
         "title": "Basic Auth Generation Header",
         "url": "https://www.debugbear.com/basic-auth-header-generator",
@@ -592,6 +614,11 @@
     "description": "Token-based authentication is a crucial aspect of API design. It involves providing the user with a token that validates their identity after they have successfully logged in. Once the token is obtained, users can use it to access resources and services provided by the API. This token is usually passed in the headers of subsequent HTTP requests done by the client. One key advantage of token-based auth is that tokens can be created and checked by the server without storing them persistently, which can help to scale applications more easily. This authentication method enhances the security and scalability of web applications and it is mainly used in modern API strategies, including RESTful APIs.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Token Based Authentication",
+        "url": "https://roadmap.sh/guides/token-authentication",
+        "type": "article"
+      },
+      {
         "title": "What Is Token-Based Authentication?",
         "url": "https://www.okta.com/uk/identity-101/what-is-token-based-authentication/",
         "type": "article"
@@ -600,11 +627,6 @@
         "title": "Session vs Token Authentication in 100 Seconds",
         "url": "https://www.youtube.com/watch?v=UBUNrFtufWo",
         "type": "video"
-      },
-      {
-        "title": "Token based auth",
-        "url": "https://www.youtube.com/watch?v=woNZJMSNbuo",
-        "type": "video"
       }
     ]
   },
@@ -612,6 +634,11 @@
     "title": "JWT ",
     "description": "JSON Web Tokens, or JWT, are a popular and secure method of transferring information between two parties in the domain of API design. As a compact, URL-safe means of representing claims to be transferred between two parties, they play a vital role in security and authorization in modern APIs. By encoding these claims, the information can be verified and trusted with a digital signature - ensuring that the API end-points can handle requests in a secure and reliable way. JWT is a relatively lightweight and scalable method that brings improved authentication and information exchange processes in API design.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "JWT Authentication",
+        "url": "https://roadmap.sh/guides/jwt-authentication",
+        "type": "article"
+      },
       {
         "title": "Introduction to JSON Web Tokens",
         "url": "https://jwt.io/introduction",
@@ -634,6 +661,11 @@
     "description": "OAuth 2.0 is an authorization framework that allows applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, DigitalOcean, and others. It works by delegating user authentication to the service that hosts the user account and authorizing third-party applications to access the user account. OAuth 2.0 defines four roles: resource owner, client, resource server and authorization server. With regards to API design, OAuth 2.0 can be used to protect API endpoints by ensuring that the client applications having valid access tokens can only interact with the API. It provides detailed workflow processes and a set of protocols for the client application to get authorization to access resources.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "OAuth",
+        "url": "https://roadmap.sh/guides/oauth",
+        "type": "article"
+      },
+      {
         "title": "OAuth Website",
         "url": "https://oauth.net/2/",
         "type": "article"
@@ -655,7 +687,7 @@
     "description": "Application Programming Interfaces (APIs) are critical for building software applications. Among several key considerations during API design, one is deciding how to implement authentication and security. Session Based Authentication is one popular way to apply security in API design.\n\nThis method revolves around the server creating a session for the user after they successfully log in, associating it with a session identifier. This Session ID is then stored client-side within a cookie. On subsequent requests, the server validates the Session ID before processing the API call. The server will destroy the session after the user logs out, thereby invalidating the Session ID.\n\nUnderstanding Session Based Authentication is crucial for secure API design, especially in scenarios where security is a top priority or in legacy systems where this method is prevalent.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Session Based Authentication - Roadmap.sh",
+        "title": "Session Based Authentication",
         "url": "https://roadmap.sh/guides/session-based-authentication",
         "type": "article"
       },
@@ -673,8 +705,14 @@
   },
   "nHbn8_sMY7J8o6ckbD-ER": {
     "title": "Authorization Methods",
-    "description": "In API design, authorization methods play a crucial role in ensuring the security and integrity of data transactions. They are the mechanisms through which an API identifies and validates a user, system, or application before granting them access to specific resources. These methods include Basic Authentication, OAuth, Token-based authentication, JSON Web Tokens (JWT), and API Key based, among others. So, understanding these methods enhances the ability to design APIs that effectively protect resources while allowing necessary access. Each method has its own pros and cons, usage scenarios and security features that make them more suitable for certain situations rather than others.",
-    "links": []
+    "description": "In API design, authorization methods play a crucial role in ensuring the security and integrity of data transactions. They are the mechanisms through which an API identifies and validates a user, system, or application before granting them access to specific resources. These methods include Basic Authentication, OAuth, Token-based authentication, JSON Web Tokens (JWT), and API Key based, among others. So, understanding these methods enhances the ability to design APIs that effectively protect resources while allowing necessary access. Each method has its own pros and cons, usage scenarios and security features that make them more suitable for certain situations rather than others.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "API Authorization Methods",
+        "url": "https://konghq.com/blog/engineering/common-api-authentication-methods",
+        "type": "article"
+      }
+    ]
   },
   "wFsbmMi5Ey9UyDADdbdPW": {
     "title": "Role Based Access Control (RBAC)",
@@ -686,12 +724,12 @@
         "type": "article"
       },
       {
-        "title": "What is role-based access control (RBAC)?",
+        "title": "What is Role-based Access Control (RBAC)?",
         "url": "https://www.redhat.com/en/topics/security/what-is-role-based-access-control",
         "type": "article"
       },
       {
-        "title": "Role-based access control (RBAC) vs. Attribute-based access control (ABAC)",
+        "title": "Role-based Access Control (RBAC) vs. Attribute-based Access Control (ABAC)",
         "url": "https://www.youtube.com/watch?v=rvZ35YW4t5k",
         "type": "video"
       }
@@ -718,12 +756,12 @@
     "description": "API keys and management is an integral part of API design. An API key is a unique identifier used to authenticate a user, developer, or calling program to an API. This ensures security and control over API endpoints, as only those with a valid API key can make requests. API Management, on the other hand, refers to the practices and tools that enable an organization to govern and monitor its API usage. It involves all the aspects of managing APIs including design, deployment, documentation, security, versioning, and analytics. Both elements play crucial roles in securing and organizing API access for efficient and controlled data sharing and communication.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is API key management?",
+        "title": "What is API Key Management?",
         "url": "https://www.akeyless.io/secrets-management-glossary/api-key-management/",
         "type": "article"
       },
       {
-        "title": "API Key Management | Definition and Best Practices",
+        "title": "API Key Management - Definition and Best Practices",
         "url": "https://infisical.com/blog/api-key-management",
         "type": "article"
       }
@@ -760,13 +798,13 @@
         "type": "article"
       },
       {
-        "title": "What is Swagger?",
-        "url": "https://blog.hubspot.com/website/what-is-swagger",
+        "title": "OpenAPI Inititive",
+        "url": "https://www.openapis.org/",
         "type": "article"
       },
       {
-        "title": "OpenAPI Inititive",
-        "url": "https://www.openapis.org/",
+        "title": "What is Swagger?",
+        "url": "https://blog.hubspot.com/website/what-is-swagger",
         "type": "article"
       }
     ]
@@ -781,7 +819,12 @@
         "type": "article"
       },
       {
-        "title": "Postman Api Testing Tutorial for beginners",
+        "title": "Postman Docs",
+        "url": "https://www.postman.com/api-documentation-tool/",
+        "type": "article"
+      },
+      {
+        "title": "Postman Tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=MFxk5BZulVU",
         "type": "video"
       }
@@ -792,12 +835,12 @@
     "description": "[Readme.com](http://Readme.com) is an invaluable tool in the realm of API Design, renowned for providing a collaborative platform for creating beautiful, dynamic and intuitive documentation. It's a tool which aids developers in outlining clear, comprehensive documentation for their API interfaces. The API documentation created with [Readme.com](http://Readme.com) is not just about the presentation of information, but enhances the reader's understanding by making it interactive. This interactive approach encourages practical learning and offers insights into how the API will behave under different circumstances. With [Readme.com](http://Readme.com), developers can create a user-focused documentation environment that streamlines the learning process and makes their APIs easier to consume and implement.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "readmeio",
-        "url": "https://github.com/readmeio",
+        "title": "ReadMe",
+        "url": "https://github.com/orgs/readmeio/repositories?type=source",
         "type": "opensource"
       },
       {
-        "title": "readme.com",
+        "title": "ReadMe Website",
         "url": "https://readme.com",
         "type": "article"
       }
@@ -856,12 +899,12 @@
     "description": "API design has rapidly emerged as a vital component of software development. When designing an API, it is crucial to follow best practices to ensure optimization, scalability, and efficiency. The best practices in API design revolve around principles such as simplicity, consistency, security, and proper documentation among others. These practices not only smoothens the development process but also makes the API more user-friendly, stable, and easily maintainable. Thus, following the best practices in API design is not an option but rather a must for developers and organizations looking to create APIs that last longer and perform better.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Best practices for REST API design",
+        "title": "Best Practices for REST API Design",
         "url": "https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/",
         "type": "article"
       },
       {
-        "title": "Best practices in API design",
+        "title": "Best Practices in API Design",
         "url": "https://swagger.io/resources/articles/best-practices-in-api-design/",
         "type": "article"
       }
@@ -893,7 +936,7 @@
         "type": "article"
       },
       {
-        "title": "How does API monitoring improve API performance?",
+        "title": "How does API Monitoring Improves API Performance?",
         "url": "https://tyk.io/blog/api-product-metrics-what-you-need-to-know/",
         "type": "article"
       }
@@ -909,7 +952,7 @@
         "type": "article"
       },
       {
-        "title": "Using caching strategies to improve API performance",
+        "title": "Using Caching Strategies to Improve API Performance",
         "url": "https://www.lonti.com/blog/using-caching-strategies-to-improve-api-performance",
         "type": "article"
       },
@@ -925,8 +968,13 @@
     "description": "Load Balancing plays a crucial role in the domain of API Design. It primarily revolves around evenly and efficiently distributing network traffic across a group of backend servers, also known as a server farm or server pool. When it comes to API design, implementing load balancing algorithms is of immense importance to ensure that no single server bears too much demand. This allows for high availability and reliability by rerouting the traffic in case of server failure, effectively enhancing application performance and contributing to a positive user experience. Therefore, it's a vital tactic in ensuring the scalability and robustness of system architectures which heavily rely on API interactions.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is load balancing?",
+        "title": "What is Load Balancing?",
         "url": "https://www.cloudflare.com/en-gb/learning/performance/what-is-load-balancing/",
+        "type": "article"
+      },
+      {
+        "title": "Load Balancers in API",
+        "url": "https://learn.microsoft.com/en-us/rest/api/load-balancer/",
         "type": "article"
       },
       {
@@ -935,7 +983,7 @@
         "type": "article"
       },
       {
-        "title": "What is a load balancer?",
+        "title": "What is a Load Balancer?",
         "url": "https://www.youtube.com/watch?v=sCR3SAVdyCc",
         "type": "video"
       }
@@ -967,7 +1015,7 @@
     "description": "Profiling and monitoring are critical aspects of API design and implementation. Profiling, in this context, refers to the process of analyzing the behavior of your API in order to understand various performance metrics including response times, request rates, error rates, and the overall health and functionality of your API. On the other hand, monitoring is the ongoing process of checking the status of your API to ensure it's functioning as expected while also providing an early warning system for potential issues and improvements. Together, profiling and monitoring your API can lead to a more reliable, efficient, and high-performing service.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Monitor health and performance of your APIs",
+        "title": "Monitor Health and Performance of your APIs",
         "url": "https://learning.postman.com/docs/monitoring-your-api/intro-monitors/",
         "type": "article"
       },
@@ -1004,7 +1052,7 @@
         "type": "article"
       },
       {
-        "title": "API Integration Patterns",
+        "title": "API Integration Patterns - Devoteam",
         "url": "https://uk.devoteam.com/expert-view/api-integration-patterns/",
         "type": "article"
       }
@@ -1036,12 +1084,12 @@
     "description": "Event-driven architecture (EDA) is a software design concept that revolves around the production, interpretation, and consumption of events. With regards to API design, EDA grants systems the flexibility to decentralize analytics, microservices, and operations, thus promoting real-time information sharing and reaction. Event-driven APIs prioritize asynchronous communication, allowing applications to stay responsive even when tackling heavy data loads. For an effective API, adhering to EDA provides data reliability, maturity with a scalable structure, and efficient real-time data processing capabilities.\n\nLearn more form the following resources:",
     "links": [
       {
-        "title": "Event-driven architecture style",
+        "title": "Event Driven Architecture Style",
         "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven",
         "type": "article"
       },
       {
-        "title": "Event-driven architecture",
+        "title": "Event-driven Architecture",
         "url": "https://aws.amazon.com/event-driven-architecture/",
         "type": "article"
       },
@@ -1083,7 +1131,7 @@
         "type": "article"
       },
       {
-        "title": "Microservices explained in 5 minutes",
+        "title": "Microservices Explained in 5 Minutes",
         "url": "https://www.youtube.com/watch?v=lL_j7ilk7rc",
         "type": "video"
       }
@@ -1094,12 +1142,12 @@
     "description": "Messaging Queues play a fundamental role in API design, particularly in creating robust, decoupled, and efficient systems. These queues act like a buffer, storing messages or data sent from a sender (producer), allowing a receiver (consumer) to retrieve and process them at its own pace. In the context of API design, this concept enables developers to handle high-volume data processing requirements, providing an asynchronous communication protocol between multiple services. The benefits of messaging queues in API design include better system scalability, fault tolerance, and increased overall system resiliency.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a message queue?",
+        "title": "What is a Message Queue?",
         "url": "https://aws.amazon.com/message-queue/",
         "type": "article"
       },
       {
-        "title": "REST API message queues explained",
+        "title": "REST API Message Queues Explained",
         "url": "https://www.youtube.com/watch?v=2idPgA6IN_Q",
         "type": "video"
       }
@@ -1126,12 +1174,12 @@
     "description": "Batch Processing refers to the method of handling bulk data requests in API design. Here, multiple API requests are packed and processed as a single group or 'batch'. Instead of making numerous individual API calls, a user can make one batch request with numerous operations. This approach can increase performance and efficiency by reducing the overhead of establishing and closing multiple connections. The concept of 'batch processing' in API design is particularly useful in data-intensive applications or systems where the need for processing high volumes of data is prevalent.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "API design guidance: bulk vs batch import",
+        "title": "API Design Guidance: Bulk vs Batch Import",
         "url": "https://tyk.io/blog/api-design-guidance-bulk-and-batch-import/",
         "type": "article"
       },
       {
-        "title": "Stream vs Batch processing explained with examples",
+        "title": "Stream vs Batch Processing Explained with Examples",
         "url": "https://www.youtube.com/watch?v=1xgBQTF24mU",
         "type": "video"
       }
@@ -1139,7 +1187,7 @@
   },
   "H22jAI2W5QLL-b1rq-c56": {
     "title": "Rabbit MQ",
-    "description": "RabbitMQ is an open-source message-broker software/system that plays a crucial role in API design, specifically in facilitating effective and efficient inter-process communication. It implements the Advanced Message Queuing Protocol (AMQP) to enable secure and reliable data transmission in various formats such as text, binary, or serialized objects.\n\nIn API design, RabbitMQ comes in handy in decoupling application processes for scalability and robustness, whilst ensuring that data delivery occurs safely and seamlessly. It introduces queuing as a way of handling multiple users or service calls at once hence enhancing responsiveness and performance of APIs. Its queue system elegantly digests API request loads, allowing services to evenly process data while preventing overloading.\n\nLearn more from the following resources:",
+    "description": "RabbitMQ is an open-source message-broker software/system that plays a crucial role in API design, specifically in facilitating effective and efficient inter-process communication. It implements the Advanced Message Queuing Protocol (AMQP) to enable secure and reliable data transmission in various formats such as text, binary, or serialized objects. RabbitMQ comes in handy in decoupling application processes for scalability and robustness, whilst ensuring that data delivery occurs safely and seamlessly. It introduces queuing as a way of handling multiple users or service calls at once hence enhancing responsiveness and performance of APIs. Its queue system elegantly digests API request loads, allowing services to evenly process data while preventing overloading.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "RabbitMQ Website",
@@ -1179,7 +1227,7 @@
     "description": "API Testing refers to the process of checking the functionality, reliability, performance, and security of Application Programming Interfaces (APIs). It plays a crucial role in API design as it ensures that the APIs work correctly and as expected. This kind of testing does not require a user interface and mainly focuses on the business logic layer of the software architecture. API Testing is integral to guarantee that the data communication and responses between different software systems are error-free and streamlined.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is API testing?",
+        "title": "What is API Testing?",
         "url": "https://www.postman.com/api-platform/api-testing/",
         "type": "article"
       },
@@ -1224,7 +1272,7 @@
   },
   "6lm3wy9WTAERTqXCn6pFt": {
     "title": "Functional Testing",
-    "description": "Functional testing in the context of API design involves validating the endpoints and key-value pairs of an API. It ensures the server response works as expected and assesses the functionality of the API -- whether it is performing all the intended functions correctly. Various approaches like testing request-response pairs, error codes, and data accuracy are used. Functional testing can provide invaluable insights into how well an API meets the specified requirements and whether it is ready for integration into applications.\n\nLearn more from the following resources:",
+    "description": "Functional testing in the context of API design involves validating the endpoints and key-value pairs of an API. It ensures the server response works as expected and assesses the functionality of the API whether it is performing all the intended functions correctly. Various approaches like testing request-response pairs, error codes, and data accuracy are used. Functional testing can provide invaluable insights into how well an API meets the specified requirements and whether it is ready for integration into applications.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "API Functional Testing – Why Is It Important And How to Test",
@@ -1243,17 +1291,17 @@
     "description": "Load testing is a crucial aspect of API design that ensures reliability, efficiency and performance under varying loads. It primarily focuses on identifying the maximum capacity of the API in terms of the volume of requests it can handle and its subsequent behavior when this threshold is reached or overloaded. By simulating varying degrees of user load, developers can identify and rectify bottlenecks or breakdown points in the system, hence enhancing overall API resilience.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "API load testing - a beginners guide",
+        "title": "API Load Testing - Beginners Guide",
         "url": "https://grafana.com/blog/2024/01/30/api-load-testing/",
         "type": "article"
       },
       {
-        "title": "Test your API’s performance by simulating real-world traffic",
+        "title": "Test Your API’s Performance by Simulating Real-world Traffic",
         "url": "https://blog.postman.com/postman-api-performance-testing/",
         "type": "article"
       },
       {
-        "title": "Load testing your API's",
+        "title": "Load Testing API's",
         "url": "https://www.youtube.com/watch?v=a5hWE4hMOoY",
         "type": "video"
       }
@@ -1285,12 +1333,12 @@
     "description": "Contract Testing is a critical aspect of maintaining a robust and reliable API infrastructure. In the realm of API design, Contract Testing refers to the method of ensuring that APIs work as anticipated and that changes to them do not break their intended functionality. This approach validates the interaction between two different systems, typically consumer and provider ( API), ensuring they comply with their agreed-upon contract. By defining clear and concise contracts for our APIs, developers can avoid common deployment issues and enhance system integration processes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "A complete guide to Contract Testing",
+        "title": "Complete Guide to Contract Testing",
         "url": "https://testsigma.com/blog/api-contract-testing/",
         "type": "article"
       },
       {
-        "title": "Get started with API Contract Testing",
+        "title": "Geting Started with API Contract Testing",
         "url": "https://saucelabs.com/resources/blog/getting-started-with-api-contract-testing",
         "type": "article"
       },
@@ -1303,7 +1351,7 @@
   },
   "XD1vDtrRQFbLyKJaD1AlA": {
     "title": "Error Handling / Retries",
-    "description": "When creating effective API designs, addressing Error Handling and Retries forms an essential facet. This is primarily due to the fact that APIs aren't always error-free and instances of network hiccups or input inaccuracies from users can occur. Without robust error handling, such occurrences can easily lead to catastrophic application failure or unsatisfactory user experiences.\n\nIn this context, error handling can refer to validating inputs, managing exceptions, and returning appropriate error message or status codes to the user. Meanwhile, the concept of retries comes into play to ensure maximum request success amidst transient failures. Through correctly implemented retries, an API can repeatedly attempt to execute a request until it is successful, thus ensuring seamless operation. The criteria and mechanisms of retries, including the count, delay, and conditions for retries, are crucial aspects to solidify during the API design.\n\nLearn more from the following resources:",
+    "description": "When creating effective API designs, addressing Error Handling and Retries forms an essential facet. This is primarily due to the fact that APIs aren't always error-free and instances of network hiccups or input inaccuracies from users can occur. Without robust error handling, such occurrences can easily lead to catastrophic application failure or unsatisfactory user experiences. Error handling can refer to validating inputs, managing exceptions, and returning appropriate error message or status codes to the user. Meanwhile, the concept of retries comes into play to ensure maximum request success amidst transient failures. Through correctly implemented retries, an API can repeatedly attempt to execute a request until it is successful, thus ensuring seamless operation.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "How To Improve Your Backend By Adding Retries to Your API Calls",
@@ -1311,7 +1359,7 @@
         "type": "article"
       },
       {
-        "title": "How to make resilient web applications with retries",
+        "title": "How to Make Resilient Web Applications with Retries",
         "url": "https://www.youtube.com/watch?v=Gly94hp3Eec",
         "type": "video"
       }
@@ -1343,12 +1391,12 @@
         "type": "article"
       },
       {
-        "title": "What are websockets?",
+        "title": "What are Web Sockets?",
         "url": "https://www.pubnub.com/guides/websockets/",
         "type": "article"
       },
       {
-        "title": "How web sockets work",
+        "title": "How Web Sockets Work",
         "url": "https://www.youtube.com/watch?v=pnj3Jbho5Ck",
         "type": "video"
       }
@@ -1372,20 +1420,20 @@
   },
   "yvdfoly5WHHTq2Puss355": {
     "title": "Standards and Compliance",
-    "description": "When designing APIs, it's crucial to consider the concept of standards and compliance. Standards represent the set of rules and best practices that guide developers to create well-structured and easily maintainable APIs. They can range from the proper structure of the endpoints, the standardization of error responses, to naming conventions, and the usage of HTTP verbs.\n\nCompliance on the other hand, emphasizes on meeting protocol requirements or standards such as REST or SOAP. Furthermore, operating within regulated industries can also necessitate certain compliance measures like GDPR, HIPAA and others. Compliance in API Design ensures interoperability and safety of data transmission between systems.\n\nIn essence, Standards and Compliance in API Design contributes towards building more secure, robust, and efficient APIs that are user-friendly and universally understandable.\n\nLearn more from the following resources:",
+    "description": "When designing APIs, it's crucial to consider the concept of standards and compliance. Standards represent the set of rules and best practices that guide developers to create well-structured and easily maintainable APIs. They can range from the proper structure of the endpoints, the standardization of error responses, to naming conventions, and the usage of HTTP verbs. Compliance on the other hand, emphasizes on meeting protocol requirements or standards such as REST or SOAP. Furthermore, operating within regulated industries can also necessitate certain compliance measures like GDPR, HIPAA and others. Compliance in API Design ensures interoperability and safety of data transmission between systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is API compliance?",
+        "title": "What is API Compliance?",
         "url": "https://tyk.io/learning-center/api-compliance/",
         "type": "article"
       },
       {
-        "title": "What is API compliance and why is it important?",
+        "title": "What is API Compliance and Why is it important?",
         "url": "https://www.traceable.ai/blog-post/achieve-api-compliance",
         "type": "article"
       },
       {
-        "title": "REST API standards",
+        "title": "REST API Standards",
         "url": "https://www.integrate.io/blog/rest-api-standards/",
         "type": "article"
       }
@@ -1412,17 +1460,17 @@
     "description": "API Lifecycle Management is a crucial aspect in API design that oversees the process of creating, managing, and retiring APIs. This involves various stages from initial planning, designing, testing, deployment, to eventual retirement of the API. Proper lifecycle management ensures that an API meets the requirements, is reliable, and that it evolves with the needs of end users and developers. Moreover, it helps in maintaining the security, performance, and accessibility of the API throughout its lifetime. This comprehensive approach enables organizations to make the most of their APIs, mitigate issues, and facilitate successful digital transformation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is the API lifecycle?",
+        "title": "What is the API Lifecycle?",
         "url": "https://www.postman.com/api-platform/api-lifecycle/",
         "type": "article"
       },
       {
-        "title": "What is API lifescycle management?",
+        "title": "What is API Lifecycle Management?",
         "url": "https://swagger.io/blog/api-strategy/what-is-api-lifecycle-management/",
         "type": "article"
       },
       {
-        "title": "Day in the lifecycle of an API",
+        "title": "Day in the Lifecycle of an API",
         "url": "https://www.youtube.com/watch?v=VxY_cz0VQXE",
         "type": "video"
       }
@@ -1491,5 +1539,10 @@
         "type": "article"
       }
     ]
+  },
+  "grpc-apis@1DrqtOwxCuFtWQXQ6ZALp.md": {
+    "title": "gRPC APIs",
+    "description": "",
+    "links": []
   }
 }

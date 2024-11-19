@@ -2,6 +2,8 @@ import { cn } from '../lib/classname.ts';
 import { memo, useEffect, useState } from 'react';
 import { useScrollPosition } from '../hooks/use-scroll-position.ts';
 import { X } from 'lucide-react';
+import { isOnboardingStripHidden } from '../stores/page.ts';
+import { useStore } from '@nanostores/react';
 
 type OnboardingNudgeProps = {
   onStartOnboarding: () => void;
@@ -14,6 +16,7 @@ export function OnboardingNudge(props: OnboardingNudgeProps) {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const $isOnboardingStripHidden = useStore(isOnboardingStripHidden);
   const { y: scrollY } = useScrollPosition();
 
   useEffect(() => {
@@ -30,10 +33,14 @@ export function OnboardingNudge(props: OnboardingNudgeProps) {
     return null;
   }
 
+  if ($isOnboardingStripHidden) {
+    return null;
+  }
+
   return (
     <div
       className={cn(
-        'fixed left-0 right-0 top-0 z-[91] flex w-full items-center justify-center bg-yellow-300 border-b border-b-yellow-500/30 pt-1.5 pb-2',
+        'fixed left-0 right-0 top-0 z-[91] flex w-full items-center justify-center border-b border-b-yellow-500/30 bg-yellow-300 pb-2 pt-1.5',
         {
           'striped-loader': isLoading,
         },

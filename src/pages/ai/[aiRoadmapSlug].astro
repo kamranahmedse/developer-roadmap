@@ -25,7 +25,7 @@ if (error || !roadmap) {
 const title = roadmap?.title || 'Roadmap AI';
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} noIndex={true}>
   <GenerateRoadmap
     roadmapId={roadmap?.id}
     isAuthenticatedUser={roadmap?.isAuthenticatedUser}

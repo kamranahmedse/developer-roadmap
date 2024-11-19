@@ -5,7 +5,7 @@ order: 5
 renderer: 'editor'
 briefTitle: 'AI and Data Scientist'
 briefDescription: 'Step by step guide to becoming an AI and Data Scientist in 2024'
-title: 'AI and Data Scientist Roadmap'
+title: 'AI and Data Scientist'
 description: 'Step by step guide to becoming an AI and Data Scientist in 2024'
 hasTopics: true
 isNew: false

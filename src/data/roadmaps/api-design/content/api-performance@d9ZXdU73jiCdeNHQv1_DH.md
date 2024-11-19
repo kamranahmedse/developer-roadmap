@@ -4,5 +4,5 @@ When we talk about API design, one crucial aspect that demands our attention is 
 
 Learn more from the following resources:
 
-- [@video@Top 7 Ways to 10x Your API Performance](https://www.youtube.com/watch?v=zvWKqUiovAM)
 - [@article@10 Tips for Improving API Performance](https://nordicapis.com/10-tips-for-improving-api-performance/)
+- [@video@Top 7 Ways to 10x Your API Performance](https://www.youtube.com/watch?v=zvWKqUiovAM)

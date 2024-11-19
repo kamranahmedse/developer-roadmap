@@ -7,6 +7,15 @@ seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-gzngm.png'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
+  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
+  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
+  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
+  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
+  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-05-02
@@ -25,7 +34,7 @@ Just starting out in web or mobile development? You may feel swamped by all the 
 
 As someone who's been through this process for over a decade, I’ve made this post to make your learning journey smoother.
 
-I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right skills, and help you build a rewarding career in [front](https://roadmap.sh/frontend)[-](https://roadmap.sh/frontend)[end](https://roadmap.sh/frontend) [development](https://roadmap.sh/frontend).
+I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right [skills](https://roadmap.sh/frontend/developer-skills), and help you build a rewarding career in [front-end development](https://roadmap.sh/frontend).
 
 ## What are Languages, Libraries, and Frameworks?
 
@@ -48,7 +57,7 @@ Libraries are collections of pre-written code that developers can use to perform
 - JQuery
 
 **Frameworks**
-Frameworks are more comprehensive than libraries as they provide a structure or skeleton with sets of rules for building applications. They enforce architecture and offer tools, libraries, and components to streamline developments. Examples include:
+[Front-end frameworks](https://roadmap.sh/frontend/frameworks) are more comprehensive than libraries as they provide a structure or skeleton with sets of rules for building applications. They enforce architecture and offer tools, libraries, and components to streamline developments. Examples include:
 
 - Vue
 - Angular

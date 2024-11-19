@@ -5,4 +5,4 @@ In the context of API design, Content Negotiation refers to the process where th
 Learn more from the following resources:
 
 - [@article@Content Negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation)
-- [@article@Content Negotiation in practice](https://softwaremill.com/content-negotiation-in-practice/)
+- [@article@Content Negotiation in Practice](https://softwaremill.com/content-negotiation-in-practice/)

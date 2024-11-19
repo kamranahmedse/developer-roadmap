@@ -41,6 +41,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
+- [AI Engineer Roadmap](https://roadmap.sh/ai-engineer)
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [Linux Roadmap](https://roadmap.sh/linux)
 - [Terraform Roadmap](https://roadmap.sh/terraform)

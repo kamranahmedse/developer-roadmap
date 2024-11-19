@@ -7,6 +7,15 @@ seo:
   title: '12 In-Demand Front End Developer Skills to Master'
   description: 'Master these 12 in-demand front end developer skills and become a standout candidate in the web development field.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-skills-zdpyd.jpg'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
+  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
+  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
+  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
+  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
+  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-07-04

@@ -11,7 +11,7 @@ const { response: leaderboardStats, error: leaderboardError } =
   await leaderboardClient.listLeaderboardStats();
 ---
 
-<BaseLayout title='Leaderboard'>
+<BaseLayout title='Leaderboard' permalink="/leaderboard">
   {leaderboardError && <ErrorPage error={leaderboardError} />}
   {
     leaderboardStats && (

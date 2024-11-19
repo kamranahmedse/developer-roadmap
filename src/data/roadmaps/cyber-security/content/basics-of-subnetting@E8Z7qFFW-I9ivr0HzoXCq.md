@@ -5,5 +5,4 @@ Subnetting is a technique used in computer networking to divide a large network 
 Learn more from the following resources:
 
 - [@article@Networking Basics: What is IPv4 Subnetting?](https://www.cbtnuggets.com/blog/technology/networking/networking-basics-what-is-ipv4-subnetting)
-- [@video@Lets subnet your home network!](https://www.youtube.com/watch?v=mJ_5qeqGOaI&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&index=6)
-- [@video@Subnetting for hackers](https://www.youtube.com/watch?v=o0dZFcIFIAw)
+- [@video@Subnetting](https://www.youtube.com/playlist?list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF)

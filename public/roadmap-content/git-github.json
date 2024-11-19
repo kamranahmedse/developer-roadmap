@@ -227,7 +227,7 @@
       },
       {
         "title": "gitignore Documentation",
-        "url": "https://git-scm.com/docs/gitignore/en",
+        "url": "https://git-scm.com/docs/gitignore",
         "type": "article"
       },
       {
@@ -599,7 +599,7 @@
     "links": [
       {
         "title": "git clone",
-        "url": "https://git-scm.com/docs/git-clone/en",
+        "url": "https://git-scm.com/docs/git-clone",
         "type": "article"
       },
       {
@@ -810,7 +810,7 @@
     "links": [
       {
         "title": "Rebasing",
-        "url": "https://git-scm.com/book/en/Git-Branching-Rebasing",
+        "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
         "type": "article"
       }
     ]

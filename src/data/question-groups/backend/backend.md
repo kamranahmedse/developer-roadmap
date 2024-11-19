@@ -16,6 +16,15 @@ seo:
     - 'backend interview questions'
     - 'backend interview'
     - 'backend test'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
+  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
+  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
+  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
+  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
+  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
+  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
 sitemap:
   priority: 1
   changefreq: 'monthly'

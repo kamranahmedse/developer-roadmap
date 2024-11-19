@@ -25,10 +25,11 @@ const ogImageUrl =
 <BaseLayout
   title={replaceVariables(guideData.seo.title)}
   description={replaceVariables(guideData.seo.description)}
-  permalink={`/backend/languages`}
+  permalink={`/backend/frameworks`}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide!} />
   <GuideContent guide={guide!} />
+  <div slot="changelog-banner" />
 </BaseLayout>

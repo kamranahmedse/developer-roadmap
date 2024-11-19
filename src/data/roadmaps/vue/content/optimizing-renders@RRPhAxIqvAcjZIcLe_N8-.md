@@ -4,4 +4,4 @@ Optimizing rendering is crucial for ensuring a smooth and efficient user experie
 
 Learn more from the following resources:
 
-- [@article@Optimizing rendering in Vue](https://blog.logrocket.com/optimizing-rendering-vue/)
+- [@article@Optimizing Rendering in Vue](https://blog.logrocket.com/optimizing-rendering-vue/)

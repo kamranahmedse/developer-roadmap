@@ -685,7 +685,7 @@
   },
   "oxzcYXxy2I7GI7nbvFYVa": {
     "title": "Constructor Overloading",
-    "description": "In TypeScript, you can achieve constructor overloading by using multiple constructor definitions with different parameter lists in a single class. Given below is the example where we have multiple definitions for the constructor:\n\n    class Point {\n      // Overloads\n      constructor(x: number, y: string);\n      constructor(s: string);\n      constructor(xs: any, y?: any) {\n        // TBD\n      }\n    }\n    \n\nNote that, similar to function overloading, we only have one implementation of the consructor and it's the only the signature that is overloaded.\n\nLearn more from the following resources:",
+    "description": "In TypeScript, you can achieve constructor overloading by using multiple constructor definitions with different parameter lists in a single class. Given below is the example where we have multiple definitions for the constructor:\n\n    class Point {\n      // Overloads\n      constructor(x: number, y: string);\n      constructor(s: string);\n      constructor(xs: any, y?: any) {\n        // TBD\n      }\n    }\n    \n\nNote that, similar to function overloading, we only have one implementation of the constructor and it's the only the signature that is overloaded.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Constructors - TypeScript",
@@ -1029,7 +1029,7 @@
     "links": [
       {
         "title": "Ambient Modules",
-        "url": "https://www.typescriptlang.org/docs/handbook/modules.html#ambient-modules",
+        "url": "https://www.typescriptlang.org/docs/handbook/modules/reference.html#ambient-modules",
         "type": "article"
       }
     ]
@@ -1079,7 +1079,7 @@
   },
   "fU8Vnw1DobM4iXl1Tq6EK": {
     "title": "Formatting",
-    "description": "Prettier is an opinionated code formatter with support for JavaScript, HTML, CSS, YAML, Markdown, GraphQL Schemas. By far the biggest reason for adopting Prettier is to stop all the on-going debates over styles.\n\nVisit the following resources to learn more:",
+    "description": "Prettier is an opinionated code formatter with support for JavaScript, HTML, CSS, YAML, Markdown, GraphQL Schemas. By far the biggest reason for adopting Prettier is to stop all the on-going debates over styles. Biome is a faster alternative to Prettier! (It also does linting!)\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Prettier Website",
@@ -1089,6 +1089,11 @@
       {
         "title": "Why Prettier",
         "url": "https://prettier.io/docs/en/why-prettier.html",
+        "type": "article"
+      },
+      {
+        "title": "BiomeJS Website",
+        "url": "https://biomejs.dev",
         "type": "article"
       }
     ]

@@ -4,5 +4,6 @@ A development environment, testing framework, and asset pipeline for blockchains
 
 Visit the following resources to learn more:
 
-- [@article@Truffle Overview](https://trufflesuite.com/docs/truffle/)
-- [@video@Truffle Tutorial for Beginners | Compile, Test & Deploy Smart contracts to any EVM Blockchain](https://youtu.be/62f757RVEvU)
+- [@official@Truffle Documentation](https://trufflesuite.com/docs/truffle/)
+- [@article@Ultimate Guide to Truffle](https://archive.trufflesuite.com/guides/ultimate-guide-to-truffle-the-gateway-to-full-stack-blockchain-development/)
+- [@video@Truffle Tutorial for Beginners](https://youtu.be/62f757RVEvU)

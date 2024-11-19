@@ -4,5 +4,6 @@ Arbitrum aims to reduce transaction fees and congestion by moving as much comput
 
 Visit the following resources to learn more:
 
-- [@article@Arbitrum whitepaper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf)
-- [@article@Inside Arbitrum](https://developer.offchainlabs.com/docs/Inside_Arbitrum)
+- [@official@Arbitrum - The Future of Ethereum](https://arbitrum.io/)
+- [@official@Getting Started with Arbitrum](https://docs.arbitrum.io/welcome/get-started)
+- [@article@Arbitrum Whitepaper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf)
