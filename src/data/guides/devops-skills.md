@@ -32,9 +32,9 @@ tags:
 
 The role of the DevOps engineer is not always very well defined; some companies see it as the old-school sysadmin whose sole purpose is to take care of the platform's infrastructure. Others see it as the person in charge of the Terraform configuration files. In the end, properly understanding what DevOps is and what you should expect from this role is critical to properly taking advantage of it and adding the value it’s meant to be adding to your company.
 
-While you can work on becoming a DevOps engineer from scratch (there is actually a [DevOps roadmap for that](https://roadmap.sh/devops)), usually, a DevOps engineer is someone who has spent enough years either as a developer or in an operations role and wants to start helping solve the problems they’ve experienced throughout their entire career. This person sits between both sides and has intimate knowledge of one of them and a great deal of knowledge about the other side.
+While you can work on becoming a DevOps engineer from scratch (there is actually a [DevOps roadmap](https://roadmap.sh/devops) for that), usually, a [DevOps engineer](https://roadmap.sh/devops/devops-engineer) is someone who has spent enough years either as a developer or in an operations role and wants to start helping solve the problems they’ve experienced throughout their entire career. This person sits between both sides and has intimate knowledge of one of them and a great deal of knowledge about the other side.
 
-With that said, understanding everything there is to know to become a DevOps engineer who excels at their job is not trivial, and that’s why in this article, we’re going to cover the top 10 DevOps skills to help you level up your game.
+With that said, understanding everything there is to know to become a DevOps engineer who excels at their job is not trivial, and that’s why in this article, we’re going to cover the top 10 DevOps skills to help you level up your [career in DevOps](https://roadmap.sh/devops/career-path).
 
 The top 10 DevOps engineer skills to master are:
 
@@ -59,7 +59,7 @@ Linux is one of the most common operating systems in the world of software devel
 
 Granted, the word “master” is loaded and there are many aspects of the OS that you don’t really need to worry about these days (with all the containers and IaC tools around), however without pushing yourself too hard and becoming a full-blown developer, investing part of your time into learning one or more scripting languages is definitely a good call.
 
-As a DevOps engineer, you will be scripting and automating tasks, so pick a couple of popular scripting languages and make sure you understand them enough to get the job done. For example, picking Bash is a safe bet, as Bash is the native scripting language in most Linux distros. On top of that, you can pick something like Python or Ruby; both are great options. With an English-like syntax that’s very easy to read and understand and a set of very powerful automation libraries and DevOps tools available, you should be more than fine. For example, if you’re picking Python, you’ll be able to work on Ansible playbooks or custom modules, and if you go with Ruby, you can write Chef cookbooks.
+As a DevOps engineer, you will be scripting and automating tasks, so pick a couple of popular scripting languages and make sure you understand them enough to get the job done. For example, picking Bash is a safe bet, as Bash is the native scripting language in most Linux distros. On top of that, you can pick something like Python or Ruby; both are great options. With an English-like syntax that’s very easy to read and understand and a set of very powerful [DevOps automation](https://roadmap.sh/devops/automation) libraries and tools available, you should be more than fine. For example, if you’re picking Python, you’ll be able to work on Ansible playbooks or custom modules, and if you go with Ruby, you can write Chef cookbooks.
 
 In the end, it’s either about your own preference or the company’s standards if there are any, just pick one and figure out the tools at your disposal.
 
@@ -475,6 +475,7 @@ For those looking to deepen their understanding or get started on their DevOps j
 
 * [**Expanded DevOps Roadmap**](https://roadmap.sh/devops): A comprehensive guide that details the full range of DevOps skills, tools, and technologies you need to master as a DevOps engineer.
 * [**Simplified DevOps Roadmap**](https://roadmap.sh/devops?r=devops-beginner): A more streamlined version that highlights the core components of a DevOps career, making it easier for beginners to navigate the field.
+* [**DevOps interview questions**](https://roadmap.sh/questions/devops): Test your knowledge of DevOps by answering popular interview questions, and challenge yourself to level up and ace your next job interview.
 
 Success in DevOps is about cultivating a well-rounded skill set that combines technical expertise with strong collaboration, communication, and problem-solving abilities.
 
