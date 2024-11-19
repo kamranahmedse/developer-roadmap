@@ -8,4 +8,5 @@ Visit the following resources to learn more:
 - [@article@Bash Scripting Tutorial](https://www.javatpoint.com/bash)
 - [@video@Bash in 100 Seconds](https://www.youtube.com/watch?v=I4EWvMFj37g)
 - [@course@Bash Scripting Tutorial for Beginners](https://www.youtube.com/watch?v=tK9Oc6AEnR4)
+- [@course@Quick Start with Shell | Hands-on Labs](https://labex.io/tutorials/quick-start-with-shell-free-tutorials-420196)
 - [@feed@Explore top posts about Bash](https://app.daily.dev/tags/bash?ref=roadmapsh)
