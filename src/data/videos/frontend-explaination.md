@@ -2,7 +2,7 @@
 title: 'The Ultimate Frontend Developer Roadmap'
 description: 'Dive into our free frontend developer roadmap!'
 duration: '10 minutes'
-isNew: true
+isNew: false
 date: 2024-10-22
 authorId: 'kamran'
 sitemap:

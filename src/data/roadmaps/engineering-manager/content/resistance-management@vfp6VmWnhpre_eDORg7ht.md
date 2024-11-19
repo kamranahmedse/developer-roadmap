@@ -1,0 +1,1 @@
+# Resistance management

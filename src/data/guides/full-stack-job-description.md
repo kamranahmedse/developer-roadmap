@@ -7,7 +7,7 @@ seo:
   title: 'Full Stack Developer Job Description [2024 Template]'
   description: 'Looking to hire a Fullstack Engineer? Get the complete job description, skills, and responsibilities right here!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/fullstack-job-h15x6.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-01
 sitemap:

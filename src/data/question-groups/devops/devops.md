@@ -226,9 +226,9 @@ questions:
 
 The evolution of technology and practices, coupled with the increase in complexity of the systems we develop, make the role of DevOps more relevant by the day.
 
-But becoming a successful DevOps is not a trivial task, especially because this role is usually the evolution of a developer looking to get more involved in other related ops areas or someone from ops who’s starting to get more directly involved in the development space. 
+But becoming a successful DevOps engineer is not a trivial task, especially because this role is usually the evolution of a developer looking to get more involved in other related ops areas or someone from ops who’s starting to get more directly involved in the development space.
 
-Either way, DevOps engineers live between the development and operations teams, understanding enough about each area to be able to work towards improving their interactions.
+Either way, DevOps engineers work between the development and operations teams, understanding enough about each area to be able to work towards improving their interactions.
 
 Because of this strange situation, while detailed roadmaps (be sure to check out our DevOps roadmap!) help a lot, getting ready for a DevOps interview requires a lot of work.
 

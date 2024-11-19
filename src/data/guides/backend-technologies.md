@@ -7,6 +7,15 @@ seo:
   title: 'Top 10+ Backend Technologies to Use in @currentYear@: Expert Advice'
   description: 'Looking for the best backend technologies in @currentYear@? Check out our expert list of top tools for developers.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-technologies-pnof4.jpg'
+relatedTitle: "Other Guides"
+relatedGuides:
+  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
+  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
+  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
+  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
+  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
+  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
+  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
 isNew: false
 type: 'textual'
 date: 2024-08-27
