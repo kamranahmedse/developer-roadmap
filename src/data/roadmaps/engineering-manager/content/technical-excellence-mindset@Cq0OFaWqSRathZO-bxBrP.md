@@ -1,0 +1,1 @@
+# Technical excellence mindset
