@@ -1,1 +1,3 @@
 # Board presentations
+
+Engineering managers might sometime be involved in board presentations; i.e. as you might have to prepare and deliver strategic information to a company’s board of directors, focusing on key engineering projects, progress, and challenges. These presentations are crucial for securing board approval and support, providing insights into project impacts on financial and market positions. Effective communication must be clear, concise, and aligned with the broader business objectives, often involving data-driven results and forecasts. Managers must articulate technical content in a way that is accessible to members with varying degrees of technical expertise, emphasizing strategic relevance and business outcomes.

@@ -1,1 +1,5 @@
-# Blameless Post-mortems
+# Blameless Post-Mortems
+
+Blameless postmortems are a critical aspect of learning and continuous improvement within engineering organizations. They focus on understanding the root causes of an incident without assigning blame to individuals, thereby promoting a culture of transparency and safety where team members feel comfortable sharing details and insights that can prevent future failures. This approach shifts focus from person-specific fault to systemic issues, enabling a more effective and constructive analysis.
+
+The engineering manager plays a pivotal role in facilitating blameless postmortems. They are responsible for setting the tone of the discussion, ensuring it remains free from blame and focused on the underlying factors that led to the incident. By asking the right questions and guiding the team's discussion towards improvements in processes, tools, and systems, they help in identifying actionable lessons. Moreover, they are crucial in ensuring that the insights gained from the postmortem lead to real changes, which can involve updating documentation, modifying workflows, enhancing training, or instituting new checks and balances. Their leadership helps reinforce the culture of learning and accountability, encouraging teams to embrace failures as opportunities for growth.
