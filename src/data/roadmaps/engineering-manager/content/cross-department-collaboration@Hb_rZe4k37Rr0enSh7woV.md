@@ -1,1 +1,2 @@
-# Cross-department collaboration
+# Cross-Department Collaboration
+

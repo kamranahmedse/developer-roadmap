@@ -1,1 +1,3 @@
-# Agile methodologies
+# Agile Methodologies
+
+Agile methodologies are a series of collaborative, flexible project management systems that are invaluable for engineering managers. These methodologies, including Scrum, Kanban, and Extreme Programming (XP), support adaptive planning, encourage a flexible response to changes, and enhance team collaboration and continual improvement. By integrating agile practices, engineering managers can better align their development teams with fluctuating customer demands and market conditions, sustain high employee morale and productivity, and deliver high-quality products that fulfill customer requirements efficiently.

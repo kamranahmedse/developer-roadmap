@@ -1,1 +1,3 @@
-# Architecture documentation
+# Architecture Documentation
+
+Architectural decision-making involves the process of defining a software system's structure, components, and key characteristics, as well as the interactions between them. It requires considering technical and business requirements, scalability, performance, resilience, and maintainability of the software architecture. Engineering managers play a crucial role in architectural decision-making, ensuring that the decisions align with both the project goals and the overall business strategy. They should facilitate collaboration among stakeholders, help in evaluating the impact of architectural decisions, and ensure that necessary resources are allocated effectively. While they may not make all technical decisions themselves, engineering managers need to maintain a clear understanding of the technology to make informed decisions and to guide their teams appropriately.
