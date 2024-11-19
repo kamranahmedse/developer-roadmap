@@ -10,11 +10,11 @@ description: 'Step by step guide to becoming a modern frontend developer in 2024
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 question:
-  title: 'What is Frontend Development?'
+  title: 'What is a Frontend Developer?'
   description: |
-    Frontend development is the development of visual and interactive elements of a website that users interact with directly. It's a combination of HTML, CSS, and JavaScript, where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behavior and interactivity.
+    A frontend developer is a professional who uses HTML, CSS, and JavaScript to design and build the visual and interactive elements of websites and applications that users engage with directly. They ensure the interface is responsive, accessible, and visually appealing. Every feature you see and interact with on a website (like buttons, menus, and animations) is created by a frontend developer.
 
-    ## What does a Frontend Developer do?
+    ## What is the role of a Frontend Developer?
 
     While this is not a complete frontend developer job description, the following can be considered as a great introduction to the role of a frontend developer: you'll be responsible for creating the user interface of a website to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.
 
