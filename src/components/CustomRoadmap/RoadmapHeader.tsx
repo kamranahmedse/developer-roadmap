@@ -11,7 +11,8 @@ import { RoadmapActionButton } from './RoadmapActionButton';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 import { CustomRoadmapRatings } from './CustomRoadmapRatings.tsx';
-import { FeaturedListingStatus } from './FeaturedListing/FeaturedListingStatus.tsx';
+import { ShowcaseStatus } from './Showcase/ShowcaseStatus.tsx';
+import { ShowcaseAlert } from './Showcase/ShowcaseAlert.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -74,126 +75,131 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     : '/images/default-avatar.png';
 
   return (
-    <div className="border-b">
-      <div className="container relative py-5 sm:py-12">
-        {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
+    <>
+      {$currentRoadmap && <ShowcaseAlert currentRoadmap={$currentRoadmap} />}
 
-        {creator?.name && (
-          <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
-            <img
-              alt={creator.name}
-              src={avatarUrl}
-              className="h-5 w-5 rounded-full"
-            />
-            <span>
-              Created by&nbsp;
-              <span className="font-semibold text-gray-900">
-                {creator?.name}
+      <div className="border-b">
+        <div className="container relative py-5 sm:py-12">
+          {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
+
+          {creator?.name && (
+            <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
+              <img
+                alt={creator.name}
+                src={avatarUrl}
+                className="h-5 w-5 rounded-full"
+              />
+              <span>
+                Created by&nbsp;
+                <span className="font-semibold text-gray-900">
+                  {creator?.name}
+                </span>
+                {team && (
+                  <>
+                    &nbsp;from&nbsp;
+                    <span className="font-semibold text-gray-900">
+                      {team?.name}
+                    </span>
+                  </>
+                )}
               </span>
-              {team && (
+            </div>
+          )}
+          <div className="mb-3 mt-4 sm:mb-4">
+            <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
+            <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
+              {description}
+            </p>
+          </div>
+
+          <div className="flex justify-between gap-2 sm:gap-0">
+            <div className="flex justify-stretch gap-1 sm:gap-2">
+              <a
+                href="/community"
+                className="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
+                aria-label="Back to All Roadmaps"
+              >
+                &larr;
+                <span className="hidden sm:inline">&nbsp;Discover more</span>
+              </a>
+
+              <ShareRoadmapButton
+                roadmapId={roadmapId!}
+                description={description!}
+                pageUrl={`https://roadmap.sh/r/${roadmapSlug}`}
+                allowEmbed={true}
+              />
+            </div>
+            <div className="flex items-center gap-2">
+              {$canManageCurrentRoadmap && (
                 <>
-                  &nbsp;from&nbsp;
-                  <span className="font-semibold text-gray-900">
-                    {team?.name}
-                  </span>
-                </>
-              )}
-            </span>
-          </div>
-        )}
-        <div className="mb-3 mt-4 sm:mb-4">
-          <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
-          <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
-            {description}
-          </p>
-        </div>
+                  {isSharing && $currentRoadmap && (
+                    <ShareOptionsModal
+                      roadmapSlug={$currentRoadmap?.slug}
+                      isDiscoverable={$currentRoadmap.isDiscoverable}
+                      description={$currentRoadmap?.description}
+                      visibility={$currentRoadmap?.visibility}
+                      teamId={$currentRoadmap?.teamId}
+                      roadmapId={$currentRoadmap?._id!}
+                      sharedFriendIds={$currentRoadmap?.sharedFriendIds || []}
+                      sharedTeamMemberIds={
+                        $currentRoadmap?.sharedTeamMemberIds || []
+                      }
+                      onClose={() => setIsSharing(false)}
+                      onShareSettingsUpdate={(settings) => {
+                        currentRoadmap.set({
+                          ...$currentRoadmap,
+                          ...settings,
+                        });
+                      }}
+                    />
+                  )}
 
-        <div className="flex justify-between gap-2 sm:gap-0">
-          <div className="flex justify-stretch gap-1 sm:gap-2">
-            <a
-              href="/community"
-              className="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
-              aria-label="Back to All Roadmaps"
-            >
-              &larr;
-              <span className="hidden sm:inline">&nbsp;Discover more</span>
-            </a>
+                  {$currentRoadmap && (
+                    <ShowcaseStatus currentRoadmap={$currentRoadmap} />
+                  )}
 
-            <ShareRoadmapButton
-              roadmapId={roadmapId!}
-              description={description!}
-              pageUrl={`https://roadmap.sh/r/${roadmapSlug}`}
-              allowEmbed={true}
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            {$canManageCurrentRoadmap && (
-              <>
-                {isSharing && $currentRoadmap && (
-                  <ShareOptionsModal
-                    roadmapSlug={$currentRoadmap?.slug}
-                    isDiscoverable={$currentRoadmap.isDiscoverable}
-                    description={$currentRoadmap?.description}
-                    visibility={$currentRoadmap?.visibility}
-                    teamId={$currentRoadmap?.teamId}
-                    roadmapId={$currentRoadmap?._id!}
-                    sharedFriendIds={$currentRoadmap?.sharedFriendIds || []}
-                    sharedTeamMemberIds={
-                      $currentRoadmap?.sharedTeamMemberIds || []
-                    }
-                    onClose={() => setIsSharing(false)}
-                    onShareSettingsUpdate={(settings) => {
-                      currentRoadmap.set({
-                        ...$currentRoadmap,
-                        ...settings,
-                      });
+                  <RoadmapActionButton
+                    onUpdateSharing={() => setIsSharing(true)}
+                    onCustomize={() => {
+                      window.location.href = `${
+                        import.meta.env.PUBLIC_EDITOR_APP_URL
+                      }/${$currentRoadmap?._id}`;
+                    }}
+                    onDelete={() => {
+                      const confirmation = window.confirm(
+                        'Are you sure you want to delete this roadmap?',
+                      );
+
+                      if (!confirmation) {
+                        return;
+                      }
+
+                      deleteResource().finally(() => null);
                     }}
                   />
-                )}
+                </>
+              )}
 
-                {$currentRoadmap && (
-                  <FeaturedListingStatus currentRoadmap={$currentRoadmap} />
-                )}
-
-                <RoadmapActionButton
-                  onUpdateSharing={() => setIsSharing(true)}
-                  onCustomize={() => {
-                    window.location.href = `${
-                      import.meta.env.PUBLIC_EDITOR_APP_URL
-                    }/${$currentRoadmap?._id}`;
-                  }}
-                  onDelete={() => {
-                    const confirmation = window.confirm(
-                      'Are you sure you want to delete this roadmap?',
-                    );
-
-                    if (!confirmation) {
-                      return;
-                    }
-
-                    deleteResource().finally(() => null);
-                  }}
+              {((ratings?.average || 0) > 0 ||
+                showcaseStatus === 'approved') && (
+                <CustomRoadmapRatings
+                  roadmapSlug={roadmapSlug!}
+                  ratings={ratings!}
+                  canManage={$canManageCurrentRoadmap}
+                  unseenRatingCount={unseenRatingCount || 0}
                 />
-              </>
-            )}
-
-            {((ratings?.average || 0) > 0 || showcaseStatus === 'visible') && (
-              <CustomRoadmapRatings
-                roadmapSlug={roadmapSlug!}
-                ratings={ratings!}
-                canManage={$canManageCurrentRoadmap}
-                unseenRatingCount={unseenRatingCount || 0}
-              />
-            )}
+              )}
+            </div>
           </div>
-        </div>
 
-        <RoadmapHint
-          roadmapTitle={title!}
-          hasTNSBanner={false}
-          roadmapId={roadmapId!}
-        />
+          <RoadmapHint
+            roadmapTitle={title!}
+            hasTNSBanner={false}
+            roadmapId={roadmapId!}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

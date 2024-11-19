@@ -6,12 +6,12 @@ import { useStore } from '@nanostores/react';
 import { currentRoadmap } from '../../../stores/roadmap';
 import { useToast } from '../../../hooks/use-toast';
 
-type SubmitFeaturedListingWarningProps = {
+type SubmitShowcaseWarningProps = {
   onClose: () => void;
 };
 
-export function SubmitFeaturedListingWarning(
-  props: SubmitFeaturedListingWarningProps,
+export function SubmitShowcaseWarning(
+  props: SubmitShowcaseWarningProps,
 ) {
   const { onClose } = props;
 
@@ -40,21 +40,21 @@ export function SubmitFeaturedListingWarning(
     queryClient,
   );
 
-  const { featuredListStatus = 'idle', featuredListRejectedReason } =
+  const { showcaseStatus = 'idle', showcaseRejectedReason } =
     $currentRoadmap || {};
 
   return (
     <Modal onClose={onClose}>
       <div className="p-4">
         <h2 className="text-lg font-semibold">
-          {featuredListStatus === 'rejected_with_reason'
+          {showcaseStatus === 'rejected_with_reason'
             ? 'Rejected Reason'
             : 'Featured Listing'}
         </h2>
         <p className="mt-2 text-sm">
-          {featuredListStatus === 'rejected_with_reason' &&
-            featuredListRejectedReason}
-          {featuredListStatus === 'idle' && (
+          {showcaseStatus === 'rejected_with_reason' &&
+            showcaseRejectedReason}
+          {showcaseStatus === 'idle' && (
             <>
               Submitting your roadmap for a featured listing will make it
               visible to everyone on the platform.{' '}
@@ -78,7 +78,7 @@ export function SubmitFeaturedListingWarning(
           >
             {submit.isPending
               ? 'Submitting...'
-              : featuredListStatus === 'rejected_with_reason'
+              : showcaseStatus === 'rejected_with_reason'
                 ? 'Resubmit'
                 : 'Submit'}
           </button>
