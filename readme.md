@@ -48,6 +48,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
+- [Engineering Manager Roadmap](https://roadmap.sh/engineering-manager)
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Python Roadmap](https://roadmap.sh/python)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
