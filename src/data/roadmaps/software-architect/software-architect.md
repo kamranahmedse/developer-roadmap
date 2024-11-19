@@ -48,6 +48,7 @@ relatedRoadmaps:
   - 'golang'
   - 'java'
   - 'devops'
+  - 'engineering-manager'
 sitemap:
   priority: 1
   changefreq: 'monthly'

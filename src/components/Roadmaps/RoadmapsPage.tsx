@@ -22,6 +22,7 @@ const groupNames = [
   'Databases',
   'Computer Science',
   'Machine Learning',
+  'Management',
   'Game Development',
   'Design',
   'DevOps',
@@ -338,11 +339,6 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
-        title: 'Product Manager',
-        link: '/product-manager',
-        type: 'role',
-      },
-      {
         title: 'DevRel Engineer',
         link: '/devrel',
         type: 'role',
@@ -376,6 +372,21 @@ const groups: GroupType[] = [
         title: 'Prompt Engineering',
         link: '/prompt-engineering',
         type: 'skill',
+      },
+    ],
+  },
+  {
+    group: 'Management',
+    roadmaps: [
+      {
+        title: 'Product Manager',
+        link: '/product-manager',
+        type: 'role',
+      },
+      {
+        title: 'Engineering Manager',
+        link: '/engineering-manager',
+        type: 'role',
       },
     ],
   },
