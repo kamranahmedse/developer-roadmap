@@ -230,7 +230,7 @@ But becoming a successful DevOps engineer is not a trivial task, especially beca
 
 Either way, DevOps engineers work between the development and operations teams, understanding enough about each area to be able to work towards improving their interactions.
 
-Because of this strange situation, while detailed roadmaps (be sure to check out our DevOps roadmap!) help a lot, getting ready for a DevOps interview requires a lot of work.
+Because of this strange situation, while detailed roadmaps (be sure to check out our [DevOps roadmap](https://roadmap.sh/devops)!) help a lot, getting ready for a DevOps interview requires a lot of work.
 
 Here are the most relevant DevOps interview questions you’ll likely get asked during a DevOps interview, plus a few more that will push your skills to the next level.
 
