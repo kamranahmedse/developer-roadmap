@@ -1,13 +1,8 @@
-import {
-  CheckIcon,
-  EyeIcon,
-  FlagIcon,
-  FrownIcon,
-  SmileIcon,
-  XIcon,
-} from 'lucide-react';
+import { EyeIcon, FlagIcon, FrownIcon, SmileIcon } from 'lucide-react';
 import { cn } from '../../../lib/classname';
 import type { GetRoadmapResponse } from '../CustomRoadmap';
+import { useState } from 'react';
+import { SubmitShowcaseWarning } from './SubmitShowcaseWarning';
 
 type ShowcaseAlertProps = {
   currentRoadmap: GetRoadmapResponse;
@@ -16,12 +11,12 @@ type ShowcaseAlertProps = {
 export function ShowcaseAlert(props: ShowcaseAlertProps) {
   const { currentRoadmap } = props;
 
-  // const { showcaseStatus = 'idle' } = currentRoadmap;
-  // if (showcaseStatus === 'idle') {
-  //   return null;
-  // }
+  const [showRejectedReason, setShowRejectedReason] = useState(false);
 
-  const showcaseStatus = 'rejected_with_reason';
+  const { showcaseStatus = 'idle' } = currentRoadmap;
+  if (showcaseStatus === 'idle') {
+    return null;
+  }
 
   const showcaseStatusMap = {
     submitted: {
@@ -45,7 +40,12 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
       label: (
         <>
           Your roadmap needs changes before it can be featured.{' '}
-          <button className="font-medium underline underline-offset-2 hover:no-underline">
+          <button
+            className="font-medium underline underline-offset-2 hover:no-underline"
+            onClick={() => {
+              setShowRejectedReason(true);
+            }}
+          >
             Check Reason
           </button>
         </>
@@ -56,20 +56,30 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
   const { icon: Icon, label, className } = showcaseStatusMap[showcaseStatus];
 
   return (
-    <div
-      className={cn(
-        showcaseStatus === 'submitted' && 'bg-blue-100',
-        showcaseStatus === 'approved' && 'bg-green-100',
-        showcaseStatus === 'rejected' && 'bg-red-100',
-        showcaseStatus === 'rejected_with_reason' && 'bg-yellow-100',
+    <>
+      {showRejectedReason && (
+        <SubmitShowcaseWarning
+          onClose={() => {
+            setShowRejectedReason(false);
+          }}
+        />
       )}
-    >
-      <div className="container relative flex items-center justify-center py-2 text-sm">
-        <div className={cn('flex items-center gap-2', className)}>
-          <Icon className="h-4 w-4 shrink-0 stroke-[2.5]" />
-          <div>{label}</div>
+
+      <div
+        className={cn(
+          showcaseStatus === 'submitted' && 'bg-blue-100',
+          showcaseStatus === 'approved' && 'bg-green-100',
+          showcaseStatus === 'rejected' && 'bg-red-100',
+          showcaseStatus === 'rejected_with_reason' && 'bg-yellow-100',
+        )}
+      >
+        <div className="container relative flex items-center justify-center py-2 text-sm">
+          <div className={cn('flex items-center gap-2', className)}>
+            <Icon className="h-4 w-4 shrink-0 stroke-[2.5]" />
+            <div>{label}</div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

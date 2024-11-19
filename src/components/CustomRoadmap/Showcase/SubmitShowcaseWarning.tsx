@@ -5,14 +5,13 @@ import { httpPost } from '../../../lib/query-http';
 import { useStore } from '@nanostores/react';
 import { currentRoadmap } from '../../../stores/roadmap';
 import { useToast } from '../../../hooks/use-toast';
+import { DateTime } from 'luxon';
 
 type SubmitShowcaseWarningProps = {
   onClose: () => void;
 };
 
-export function SubmitShowcaseWarning(
-  props: SubmitShowcaseWarningProps,
-) {
+export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
   const { onClose } = props;
 
   const toast = useToast();
@@ -40,8 +39,12 @@ export function SubmitShowcaseWarning(
     queryClient,
   );
 
-  const { showcaseStatus = 'idle', showcaseRejectedReason } =
-    $currentRoadmap || {};
+  const {
+    showcaseStatus = 'idle',
+    showcaseRejectedReason,
+    showcaseRejectedAt,
+    updatedAt,
+  } = $currentRoadmap || {};
 
   return (
     <Modal onClose={onClose}>
@@ -52,8 +55,7 @@ export function SubmitShowcaseWarning(
             : 'Featured Listing'}
         </h2>
         <p className="mt-2 text-sm">
-          {showcaseStatus === 'rejected_with_reason' &&
-            showcaseRejectedReason}
+          {showcaseStatus === 'rejected_with_reason' && showcaseRejectedReason}
           {showcaseStatus === 'idle' && (
             <>
               Submitting your roadmap for a featured listing will make it
@@ -74,7 +76,26 @@ export function SubmitShowcaseWarning(
           <button
             className="w-full rounded-lg bg-gray-900 py-2 text-sm text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60"
             disabled={submit.isPending}
-            onClick={() => submit.mutate()}
+            onClick={() => {
+              const updatedAtDate =
+                updatedAt && DateTime.fromJSDate(new Date(updatedAt));
+              const showcaseRejectedAtDate =
+                showcaseRejectedAt &&
+                DateTime.fromJSDate(new Date(showcaseRejectedAt));
+
+              if (
+                showcaseRejectedAtDate &&
+                updatedAtDate &&
+                updatedAtDate < showcaseRejectedAtDate
+              ) {
+                toast.error(
+                  'You need to make changes to your roadmap before resubmitting.',
+                );
+                return;
+              }
+
+              submit.mutate();
+            }}
           >
             {submit.isPending
               ? 'Submitting...'
