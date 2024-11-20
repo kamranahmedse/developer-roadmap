@@ -10,10 +10,10 @@ type ShowcaseStatusProps = {
 export function ShowcaseStatus(props: ShowcaseStatusProps) {
   const { currentRoadmap } = props;
 
-  const { showcaseStatus = 'idle' } = currentRoadmap;
+  const { showcaseStatus } = currentRoadmap;
   const [showSubmitWarning, setShowSubmitWarning] = useState(false);
 
-  if (!currentRoadmap || showcaseStatus !== 'idle') {
+  if (!currentRoadmap || showcaseStatus !== undefined) {
     return null;
   }
 
@@ -32,7 +32,7 @@ export function ShowcaseStatus(props: ShowcaseStatusProps) {
         onClick={() => {
           setShowSubmitWarning(true);
         }}
-        disabled={showcaseStatus !== 'idle'}
+        disabled={!!showcaseStatus}
       >
         <SendIcon className="mr-0 h-4 w-4 stroke-[2.5] sm:mr-1.5" />
         <span className="hidden sm:inline">Submit for Showcase</span>

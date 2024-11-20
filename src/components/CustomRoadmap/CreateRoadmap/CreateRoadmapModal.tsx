@@ -24,7 +24,6 @@ export type AllowedCustomRoadmapType =
   (typeof allowedCustomRoadmapType)[number];
 
 export const allowedShowcaseStatus = [
-  'idle',
   'submitted',
   'approved',
   'rejected',

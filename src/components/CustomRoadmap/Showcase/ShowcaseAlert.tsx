@@ -13,8 +13,8 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
 
   const [showRejectedReason, setShowRejectedReason] = useState(false);
 
-  const { showcaseStatus = 'idle' } = currentRoadmap;
-  if (showcaseStatus === 'idle') {
+  const { showcaseStatus } = currentRoadmap;
+  if (!showcaseStatus) {
     return null;
   }
 
@@ -53,7 +53,12 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
       className: 'text-yellow-600 border-yellow-200',
     },
   };
-  const { icon: Icon, label, className } = showcaseStatusMap[showcaseStatus];
+  const showcaseStatusDetails = showcaseStatusMap[showcaseStatus];
+  if (!showcaseStatusDetails) {
+    return null;
+  }
+
+  const { icon: Icon, label, className } = showcaseStatusDetails;
 
   return (
     <>
@@ -67,6 +72,7 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
 
       <div
         className={cn(
+          'absolute inset-x-0 top-0 z-10',
           showcaseStatus === 'submitted' && 'bg-blue-100',
           showcaseStatus === 'approved' && 'bg-green-100',
           showcaseStatus === 'rejected' && 'bg-red-100',

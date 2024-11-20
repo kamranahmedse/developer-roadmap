@@ -76,10 +76,10 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
 
   return (
     <>
-      {$currentRoadmap && <ShowcaseAlert currentRoadmap={$currentRoadmap} />}
+      <div className="relative border-b">
+        {$currentRoadmap && <ShowcaseAlert currentRoadmap={$currentRoadmap} />}
 
-      <div className="border-b">
-        <div className="container relative py-5 sm:py-12">
+        <div className="container relative mt-6 py-5 sm:py-12">
           {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
 
           {creator?.name && (
@@ -181,8 +181,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                 </>
               )}
 
-              {((ratings?.average || 0) > 0 ||
-                showcaseStatus === 'approved') && (
+              {showcaseStatus === 'approved' && (
                 <CustomRoadmapRatings
                   roadmapSlug={roadmapSlug!}
                   ratings={ratings!}
