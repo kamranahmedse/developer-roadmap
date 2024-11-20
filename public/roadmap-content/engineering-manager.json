@@ -1,0 +1,672 @@
+{
+  "_hYN0gEi9BL24nptEtXWU": {
+    "title": "What is Engineering Management?",
+    "description": "",
+    "links": []
+  },
+  "oKbeLp4YB8rI1Q3vi0EnG": {
+    "title": "EM vs Tech Lead vs IC",
+    "description": "",
+    "links": []
+  },
+  "aSZ2uVCmpAdEPjJt6VKG4": {
+    "title": "People",
+    "description": "",
+    "links": []
+  },
+  "p9ecMvHCqjmvxf67di7pY": {
+    "title": "Product",
+    "description": "",
+    "links": []
+  },
+  "iZFn0FaRdrGv_-_8zii_-": {
+    "title": "Process",
+    "description": "",
+    "links": []
+  },
+  "FtWNnOE3zObmjS-Og26M3": {
+    "title": "Architectural Decision-Making",
+    "description": "Architectural decision making involves the process of identifying and solving architectural problems during the development and maintenance of buildings. This process requires the consideration of technical, economic, and social factors. Effective architectural decision making is crucial for engineering managers as it directly impacts the structural integrity, functionality, safety, sustainability, and cost-efficiency of projects. It also influences compliance with regulations, aesthetic outcomes, and stakeholder satisfaction. Successful architectural decisions enhance the project's value, promote innovation, and improve risk management, highlighting their significance in project success and organizational growth.",
+    "links": []
+  },
+  "pduPcv2QPpVmVvDdK4CPi": {
+    "title": "System Monitoring & Performance",
+    "description": "",
+    "links": []
+  },
+  "EyoVFmqOJbH1sAPHLISFt": {
+    "title": "Scaling Infrastructure",
+    "description": "",
+    "links": []
+  },
+  "fBENrXdMhoGYgL_d96tgo": {
+    "title": "Software Engineering Background",
+    "description": "",
+    "links": []
+  },
+  "iX4HPgoiEbc_gze1A01n4": {
+    "title": "System Design and Architecture",
+    "description": "",
+    "links": []
+  },
+  "EY6Hk5wPd9Y_VA1UROk44": {
+    "title": "Technical Debt and Management",
+    "description": "",
+    "links": []
+  },
+  "_2xnTKt5yi__jj_WgcLa7": {
+    "title": "Technical Documentation",
+    "description": "",
+    "links": []
+  },
+  "40yK6XzI8lSxdiAXxtF75": {
+    "title": "Code Review Best Practices",
+    "description": "Code review best practices involve systematic examinations of software source code intended to find and fix mistakes overlooked during initial development. These practices help ensure the code adheres to the agreed coding standards and is also structurally sound. Engineering managers play a crucial role in this process by defining and enforcing these best practices, facilitating efficient review processes, and integrating them into the software development life cycle. They might also be involved in training teams on effective code review techniques, selecting tools that aid the code review process, and analyzing code review data to ensure continuous improvement in code quality and team performance. Ultimately, engineering managers help create a culture that values the importance of code quality, peer collaboration, and continual learning and development.",
+    "links": []
+  },
+  "ikCJ8Ybu2AD1w5VuPNVAO": {
+    "title": "Technical Roadmapping",
+    "description": "",
+    "links": []
+  },
+  "H0aav5qKDNiNegJOGP2rx": {
+    "title": "Build vs Buy Evaluation",
+    "description": "\"Build vs Buy\" evaluation is a decision-making process used by organizations to determine whether they should develop a new technological solution in-house (\"build\") or acquire an existing product from a third party (\"buy\"). This strategic decision involves considering factors such as cost, time, resources, competitive advantage, and alignment with business goals. Engineering managers play a pivotal role in this process. They assess the technical feasibility of building the solution internally, estimate development time and costs, and evaluate the technical merits of existing products. Furthermore, engineering managers must consider the long-term impacts on the engineering team, such as maintenance, scalability, and integration with existing systems. Their expertise and leadership are crucial in making an informed decision that aligns technological capabilities with business objectives.",
+    "links": []
+  },
+  "d7zMBhMFgY9MwmKC9CVVh": {
+    "title": "Technical Risk Assessment",
+    "description": "",
+    "links": []
+  },
+  "gAEmpSMvNyjmTa5q9oZSg": {
+    "title": "CI/CD Implementation",
+    "description": "Continuous Integration and Continuous Deployment (CI/CD) are key practices in modern software development that involve automating the integration of code changes from multiple contributors into a single project, and automating the deployment of software to production environments. This methodology enables developers to frequently merge code changes, thereby detecting and addressing conflicts and bugs early, and ensuring that software can be reliably released at any time.\n\nEngineering managers play a critical role in CI/CD implementation. They are responsible for overseeing the setup and maintenance of CI/CD pipelines, ensuring the tools and systems are correctly integrated and functioning efficiently. This typically entails selecting appropriate CI/CD tools that align with the technical needs and goals of the project, such as Jenkins, GitLab, or CircleCI. Engineering managers also facilitate collaboration and communication among team members to foster a culture of continuous improvement, and they ensure that teams adhere to best practices in testing and quality assurance to maintain high standards of software quality in rapid deployment cycles. Additionally, they track metrics and oversee the CI/CD process to continually optimize development workflows, reduce deployment failures, and improve deployment frequency, stability, and scalability.",
+    "links": []
+  },
+  "bpJPDbifPwS4ScOoATlEI": {
+    "title": "Development / Release Workflow",
+    "description": "",
+    "links": []
+  },
+  "C2YsaZ32An_UXV8lB7opm": {
+    "title": "Technical Standards Setting",
+    "description": "",
+    "links": []
+  },
+  "sQCLhk__jvbityuuLlxiW": {
+    "title": "Security  Best Practices",
+    "description": "",
+    "links": []
+  },
+  "q5SJyM1d8cQzzAcR-kotB": {
+    "title": "Testing Strategies",
+    "description": "",
+    "links": []
+  },
+  "o1xPrfg8iNWQpD12xsbQJ": {
+    "title": "Incident Management",
+    "description": "",
+    "links": []
+  },
+  "3na5mBIPl5f6mjEzkgD_C": {
+    "title": "Hiring and Recruitment",
+    "description": "",
+    "links": []
+  },
+  "tPDmXXjvFI_8-MTo_dEUw": {
+    "title": "Team Structure and Design",
+    "description": "",
+    "links": []
+  },
+  "eJzYnoB6sArLjXRm51cM4": {
+    "title": "Performance Evaluations",
+    "description": "",
+    "links": []
+  },
+  "0ULnfq0ZFJXgoLbKM1gxC": {
+    "title": "Mentoring and Coaching",
+    "description": "",
+    "links": []
+  },
+  "fhFSR_N4ZDTHINEinubHG": {
+    "title": "Career Development Planning",
+    "description": "Career Development Planning in a team is an essential process in which employees envision their future pathways in terms of career progression and set long- and short-term career goals. This planning involves skills development, educational opportunities, and the setting of career milestones aligned with both individual aspirations and business needs. Engineering managers play a crucial role in this area. They act as mentors and coaches, helping to identify each team member's strengths and areas for improvement, aligning project assignments with career aspirations, and facilitating access to necessary trainings or resources. Furthermore, they ensure that the development plan is mutually beneficial, supporting both the individual's career growth and the organization’s goals. This way, engineering managers help to increase job satisfaction and retention, while also promoting a culture of continuous learning and improvement within the team.",
+    "links": []
+  },
+  "bx2SMhR58ud45se5dK7qS": {
+    "title": "Delegation",
+    "description": "",
+    "links": []
+  },
+  "QA5CR5f0geC_RQc_SOK-N": {
+    "title": "Conflict Resolution",
+    "description": "Conflicts and resolution in the context of engineering management involve addressing and solving interpersonal and technical disagreements within a team or between teams. Engineering managers play a pivotal role in this area by implementing strategies to handle and resolve conflicts effectively. They might facilitate communication, mediate disputes, and ensure a collaborative team environment. Engineering managers also use their expertise to align team members’ goals with project objectives, promoting a shared understanding and respect among team members. Effective conflict resolution enhances team cohesion, improves individual and group productivity, and ensures the successful delivery of engineering projects.",
+    "links": []
+  },
+  "Az9GgkLFoat2t_sYRUBv5": {
+    "title": "Feedback Delivery",
+    "description": "",
+    "links": []
+  },
+  "U_oOnDXkCE387r9olvMZB": {
+    "title": "Team Motivation",
+    "description": "",
+    "links": []
+  },
+  "7PBmYoSmIgZT21a2Ip3_S": {
+    "title": "Trust / Influence Building",
+    "description": "",
+    "links": []
+  },
+  "b3qoH_LuW-Gz4N8WdGnZs": {
+    "title": "One-on-One Meetings",
+    "description": "",
+    "links": []
+  },
+  "e0ZuiCoS8sJ0XB1lNiz7_": {
+    "title": "Team Meetings",
+    "description": "",
+    "links": []
+  },
+  "gqKEgKjEu5sOf5Gl-HS-j": {
+    "title": "Status Reporting",
+    "description": "",
+    "links": []
+  },
+  "TVqVlJqegLZRSkwNoHbBf": {
+    "title": "Stakeholder Management",
+    "description": "",
+    "links": []
+  },
+  "ZyNbSBd8plAZ5lt5OEUYu": {
+    "title": "Cross-functional Collaboration",
+    "description": "",
+    "links": []
+  },
+  "4v5yLKYVcMh0s7SQuf__C": {
+    "title": "Resource Allocation",
+    "description": "",
+    "links": []
+  },
+  "7BcToTqL78QmG4qb43X5Q": {
+    "title": "Sprint Planning",
+    "description": "",
+    "links": []
+  },
+  "-Qc6E3gkUUonfzifYqeJJ": {
+    "title": "Release Management",
+    "description": "",
+    "links": []
+  },
+  "mgw6M8I9qy1EoJpJV-gy1": {
+    "title": "Risk Management",
+    "description": "",
+    "links": []
+  },
+  "hH-UDVFlgKoMJcI1ssDFv": {
+    "title": "Dependency management",
+    "description": "",
+    "links": []
+  },
+  "n9gvPHn4c1U-l6v-W9v6r": {
+    "title": "Agile methodologies",
+    "description": "Agile methodologies are a series of collaborative, flexible project management systems that are invaluable for engineering managers. These methodologies, including Scrum, Kanban, and Extreme Programming (XP), support adaptive planning, encourage a flexible response to changes, and enhance team collaboration and continual improvement. By integrating agile practices, engineering managers can better align their development teams with fluctuating customer demands and market conditions, sustain high employee morale and productivity, and deliver high-quality products that fulfill customer requirements efficiently.",
+    "links": []
+  },
+  "SuT6q5lMMSyVkadlQp7iU": {
+    "title": "Project Tracking",
+    "description": "",
+    "links": []
+  },
+  "PXobPGPgCX3_55w4UtxT9": {
+    "title": "Milestone Management",
+    "description": "",
+    "links": []
+  },
+  "C-lJJSjT8Cxw_UT3ocFsO": {
+    "title": "Scope Management",
+    "description": "",
+    "links": []
+  },
+  "QWO5QFS7kXwfu3aa8IiRt": {
+    "title": "Timeline Estimation",
+    "description": "",
+    "links": []
+  },
+  "Wd8FCEaGZBTvsD-k4t0r4": {
+    "title": "KPI Definition",
+    "description": "",
+    "links": []
+  },
+  "idd92ZTBVUzptBl5jRdc3": {
+    "title": "Velocity Tracking",
+    "description": "",
+    "links": []
+  },
+  "ZWWsuFm_G4kvvl_cv8l_t": {
+    "title": "Quality Metrics",
+    "description": "",
+    "links": []
+  },
+  "KPDHk7tl_BnIj_obnq3Kl": {
+    "title": "Team Health Metrics",
+    "description": "",
+    "links": []
+  },
+  "g9WWa50V8ZbhIJgBRx0Nd": {
+    "title": "Project Postmortems",
+    "description": "",
+    "links": []
+  },
+  "nC5dfGlxbLoXUAp2u-6Gl": {
+    "title": "Product strategy alignment",
+    "description": "",
+    "links": []
+  },
+  "vhOHvfF_lfQrrOK6sGLTY": {
+    "title": "Business Case Development",
+    "description": "Business case development is a crucial process used to justify the initiation of a project or task, typically involving the assessment of financial and strategic costs and benefits alongside risk evaluations. This detailed evaluation helps key stakeholders understand the investments required and the potential returns or outcomes, enabling informed decision-making. Engineering managers play a vital role in this process, particularly in tech, manufacturing, and development projects. They contribute technical expertise and insights into operational impacts and resource requirements. Additionally, engineering managers help estimate timelines, budget needs, and the technical feasibility, ensuring the assumptions in the business case are grounded in practical realities. Their involvement is essential for aligning engineering capabilities with business objectives and for fostering an understanding among non-technical decision-makers of the technical challenges and solutions proposed within the business case.",
+    "links": []
+  },
+  "XinUWPahOdufmLYcEwMj_": {
+    "title": "ROI analysis",
+    "description": "",
+    "links": []
+  },
+  "P2gIOt-i0sQEOMBo-XjZO": {
+    "title": "Market awareness",
+    "description": "",
+    "links": []
+  },
+  "76GjwwEYaEX_kh02OSpdr": {
+    "title": "Competitive Analysis",
+    "description": "Competitive analysis is a critical strategy tool that involves assessing the strengths and weaknesses of competitors within the market. This analysis helps organizations identify opportunities and threats and develop strategies to maintain or improve their competitive edge. Engineering managers play a vital role in this process, particularly in technology-driven industries. They are involved by gathering and analyzing technical data on competitors’ products, technologies, and engineering capabilities. Their input is essential for determining the feasibility of surpassing competitors’ offerings and for identifying areas where their own organization can innovate or improve. With their unique insight into the technical complexities and operational requirements of product development, engineering managers help guide strategic decisions that align with the organization’s technical strengths and market goals. Their involvement ensures that strategic planning is grounded in realistic assessments of technological capabilities and market trends, facilitating more effective competitive positioning and long-term success.",
+    "links": []
+  },
+  "oqjr26B27SHSYVQ4IFnA1": {
+    "title": "Budget Planning",
+    "description": "Budget planning involves forecasting the financial resources needed to achieve strategic goals within a specific timeframe, often aligning with fiscal years or project timelines. Engineering managers play crucial roles in this process by estimating costs and resource needs specific to their projects, including personnel, hardware, software, and operational costs. They also help prioritize engineering projects based on organizational goals, potential ROI, and strategic importance. Additionally, engineering managers work closely with finance teams to ensure that their budget estimates align with financial constraints and organizational policies. Their input is essential for securing funding, managing risk, and ensuring that engineering projects are feasible and aligned with broader company objectives.",
+    "links": []
+  },
+  "iwwxnSVvCmZ57stXwzk8G": {
+    "title": "Resource forecasting",
+    "description": "",
+    "links": []
+  },
+  "rbhZJZtRV1ZZ5QaYW77ry": {
+    "title": "Cost Optimization",
+    "description": "Cost Optimization and Financial Management in the engineering context involve strategic approaches to minimizing costs while maximizing value in the production of goods or the provision of services. Engineering managers play a crucial role in this area by analyzing and refining production processes, selecting cost-effective materials and technologies, and ensuring that projects are completed within budget and on time. They might also be involved in negotiations with suppliers, the implementation of lean methodologies, and the use of automated systems to improve efficiencies. Additionally, engineering managers often collaborate with finance departments to align engineering strategies with broader financial goals, ensuring that project budgets are adhered to and financial risks are minimized. This multidisciplinary involvement helps organizations maintain or improve quality while reducing costs and enhancing profitability.",
+    "links": []
+  },
+  "Imgt669vbUT_Iec2o4Gvt": {
+    "title": "Vendor Management",
+    "description": "",
+    "links": []
+  },
+  "KA0y6KdVTjJFeX3frHUNo": {
+    "title": "Company Culture",
+    "description": "Company culture refers to the understanding and fostering of the values, beliefs, behaviors, and practices that make up the environment within a company. This encompasses how employees interact, the company’s mission, leadership style, policies, and work environment. Engineering managers play a crucial role in promoting company culture awareness by modeling desired behaviors, creating an inclusive and supportive team environment, and aligning engineering projects with the broader company values. They are also involved in hiring practices to ensure new team members fit with the company culture, implementing training programs to enhance cultural alignment, and providing feedback to ensure that the team's work environment supports productivity and employee satisfaction. By actively engaging in these practices, engineering managers help cultivate a positive and cohesive company culture that can drive organizational success.",
+    "links": []
+  },
+  "tt02qGHSn4fPbpboZ1Ni_": {
+    "title": "Change management",
+    "description": "Change management refers to the approach and processes used to ensure that significant changes are implemented in a controlled and systematic manner. Changes can include organizational restructuring, technology overhauls, strategy shifts, process reengineering, cultural transformations, and more. Engineering managers play a crucial role in this aspect, particularly when changes involve technical systems or processes. They are responsible for overseeing the planning, execution, and integration of new technologies or methods within their teams. Engineering managers also facilitate communication between technical staff and higher-level management to align engineering practices with broader organizational goals. Their involvement helps minimize disruptions and ensures that technical teams adopt new changes effectively, contributing to smoother transitions and the achievement of desired outcomes.",
+    "links": []
+  },
+  "mjMRNhPkeb4lEZXBb8Iot": {
+    "title": "Organization structure",
+    "description": "",
+    "links": []
+  },
+  "Zoz01JcNU69gr95IcWhYM": {
+    "title": "Politics navigation",
+    "description": "",
+    "links": []
+  },
+  "Hb_rZe4k37Rr0enSh7woV": {
+    "title": "Cross-department collaboration",
+    "description": "",
+    "links": []
+  },
+  "h7gEQNbGiabDA1q1Bk_IB": {
+    "title": "Emotional Intelligence",
+    "description": "",
+    "links": []
+  },
+  "ZuZuzwy-Frsn_PFJZVuAQ": {
+    "title": "Defining and Enforcing Values",
+    "description": "",
+    "links": []
+  },
+  "8Nro6PTkEkNugYBjQfJ6O": {
+    "title": "Team Traditions and Rituals",
+    "description": "",
+    "links": []
+  },
+  "Vb3A4a-UpGTAEs-dVI66s": {
+    "title": "Recognition programs",
+    "description": "",
+    "links": []
+  },
+  "LE3ykySYFL23KvuwxeBaR": {
+    "title": "Social connections",
+    "description": "",
+    "links": []
+  },
+  "6iM0n4faMNhk4mezS9AcG": {
+    "title": "Inclusive environment creation",
+    "description": "",
+    "links": []
+  },
+  "njqjYPMQK3nGYtqHzUylo": {
+    "title": "Innovation fostering",
+    "description": "",
+    "links": []
+  },
+  "aeD-kBZEr1NHFtAD8yHI_": {
+    "title": "Learning culture development",
+    "description": "",
+    "links": []
+  },
+  "74-7hDXaBVXYo6LJdgac_": {
+    "title": "Knowledge sharing practices",
+    "description": "",
+    "links": []
+  },
+  "Cq0OFaWqSRathZO-bxBrP": {
+    "title": "Technical excellence mindset",
+    "description": "",
+    "links": []
+  },
+  "fYkKo8D35AHd8agr3YrIP": {
+    "title": "Blameless Post-mortems",
+    "description": "Blameless postmortems are a critical aspect of learning and continuous improvement within engineering organizations. They focus on understanding the root causes of an incident without assigning blame to individuals, thereby promoting a culture of transparency and safety where team members feel comfortable sharing details and insights that can prevent future failures. This approach shifts focus from person-specific fault to systemic issues, enabling a more effective and constructive analysis.\n\nThe engineering manager plays a pivotal role in facilitating blameless postmortems. They are responsible for setting the tone of the discussion, ensuring it remains free from blame and focused on the underlying factors that led to the incident. By asking the right questions and guiding the team's discussion towards improvements in processes, tools, and systems, they help in identifying actionable lessons. Moreover, they are crucial in ensuring that the insights gained from the postmortem lead to real changes, which can involve updating documentation, modifying workflows, enhancing training, or instituting new checks and balances. Their leadership helps reinforce the culture of learning and accountability, encouraging teams to embrace failures as opportunities for growth.",
+    "links": []
+  },
+  "g9FvFKC715tZL2ZGlPl3N": {
+    "title": "Bias Recognition / Mitigation",
+    "description": "Recognizing and mitigating bias in team culture is crucial for fostering a fair, inclusive, and productive work environment. Bias can manifest in various forms, including but not limited to, race, gender, age, or educational background, and can significantly affect team dynamics and decision-making processes. An engineering manager plays a pivotal role in developing a good team culture by implementing strategies to identify and address these biases. This can be achieved through diversity training, open communication channels to discuss issues related to bias, and employing fair recruitment practices that aim to diversify the team. Regular feedback mechanisms, such as surveys or meetings where team members can speak freely about their experiences, help identify unconscious biases and areas for improvement. By actively working on these issues, an engineering manager promotes a culture of inclusivity where all team members are valued and have equal opportunities, ultimately leading to enhanced collaboration and innovation.",
+    "links": []
+  },
+  "Xaeb67Nqdi0kwvehQUYeJ": {
+    "title": "Emergency protocols",
+    "description": "",
+    "links": []
+  },
+  "LQ3YfAgJ4UaDgtnN-cMht": {
+    "title": "War Room Management",
+    "description": "",
+    "links": []
+  },
+  "irEwTIubCjORnlH27QpEo": {
+    "title": "Stakeholder Communication",
+    "description": "",
+    "links": []
+  },
+  "8zyK34SwHry2lrWchw0KZ": {
+    "title": "Post-incident analysis",
+    "description": "",
+    "links": []
+  },
+  "2fHcb1dAnf34APCAAlwnR": {
+    "title": "Service Recovery",
+    "description": "",
+    "links": []
+  },
+  "2RwpGPegD2GyiiV6SVbbM": {
+    "title": "Contingency planning",
+    "description": "Contingency planning is a critical component of risk management that involves identifying potential risks and developing plans to address them should they arise. It is particularly relevant in engineering projects to ensure that operations can continue smoothly with minimal downtime, even in adverse scenarios. Engineering managers play a crucial role in this process. They are responsible for leading the identification of risks specific to their projects—such as delays due to supplier issues, technical failures, or staffing problems—and devising appropriate response strategies. This not only involves logistical planning but also includes allocating resources effectively and communicating with stakeholders to ensure all team members are prepared for any situation. Engineering managers, therefore, ensure that contingency plans are practical, regularly updated, and seamlessly integrated into the overall project management framework.",
+    "links": []
+  },
+  "KOTzJ8e7mc0wmF46vrj3I": {
+    "title": "Disaster recovery",
+    "description": "",
+    "links": []
+  },
+  "v6N7BH0B55gX0oNXb55D7": {
+    "title": "Business continuity",
+    "description": "Business continuity involves strategies and procedures to ensure that an organization can continue operating and quickly resume critical functions in the event of a disruption, such as natural disasters, technological failures, or cyber attacks. Engineering managers play a vital role in this area, particularly in risk mitigation. They are responsible for identifying potential risks that could impact engineering operations and developing technical and operational solutions to minimize these risks. This includes designing redundant systems, implementing robust data backups, and ensuring that infrastructure is resistant to various types of failures. Moreover, engineering managers often lead cross-functional teams in creating and testing business continuity plans, ensuring that technical staff are trained to respond swiftly and effectively in crisis situations, and that technology investments align with the overall risk management strategy of the organization. Their expertise ensures that critical engineering services can be maintained without interruption, even under adverse conditions.",
+    "links": []
+  },
+  "FNp4-RgPvfC76pJKjX56a": {
+    "title": "Security incident handling",
+    "description": "",
+    "links": []
+  },
+  "kQG_wk66-51dA4Ly9ivjM": {
+    "title": "Production issues management",
+    "description": "",
+    "links": []
+  },
+  "mIUx8zAHWyPWPGvxuTK4y": {
+    "title": "Contingency planning",
+    "description": "Business continuity involves strategies and procedures to ensure that an organization can continue operating and quickly resume critical functions in the event of a disruption, such as natural disasters, technological failures, or cyber attacks. Engineering managers play a vital role in this area, particularly in risk mitigation. They are responsible for identifying potential risks that could impact engineering operations and developing technical and operational solutions to minimize these risks. This includes designing redundant systems, implementing robust data backups, and ensuring that infrastructure is resistant to various types of failures. Moreover, engineering managers often lead cross-functional teams in creating and testing business continuity plans, ensuring that technical staff are trained to respond swiftly and effectively in crisis situations, and that technology investments align with the overall risk management strategy of the organization. Their expertise ensures that critical engineering services can be maintained without interruption, even under adverse conditions.",
+    "links": []
+  },
+  "nnoVA8W70hrNDxN3XQCVL": {
+    "title": "Disaster recovery",
+    "description": "",
+    "links": []
+  },
+  "FwK-B7jRbBXVnuY9JxI1w": {
+    "title": "Business continuity",
+    "description": "Business continuity involves strategies and procedures to ensure that an organization can continue operating and quickly resume critical functions in the event of a disruption, such as natural disasters, technological failures, or cyber attacks. Engineering managers play a vital role in this area, particularly in risk mitigation. They are responsible for identifying potential risks that could impact engineering operations and developing technical and operational solutions to minimize these risks. This includes designing redundant systems, implementing robust data backups, and ensuring that infrastructure is resistant to various types of failures. Moreover, engineering managers often lead cross-functional teams in creating and testing business continuity plans, ensuring that technical staff are trained to respond swiftly and effectively in crisis situations, and that technology investments align with the overall risk management strategy of the organization. Their expertise ensures that critical engineering services can be maintained without interruption, even under adverse conditions.",
+    "links": []
+  },
+  "QFhhOgwz_bgZgOfKFg5XA": {
+    "title": "Security incident handling",
+    "description": "",
+    "links": []
+  },
+  "tmY4Ktu6luFg5wKylJW76": {
+    "title": "Production issues management",
+    "description": "",
+    "links": []
+  },
+  "5MM1ccB1pmQcd3Uyjmbr7": {
+    "title": "Board presentations",
+    "description": "Engineering managers might sometime be involved in board presentations; i.e. as you might have to prepare and deliver strategic information to a company’s board of directors, focusing on key engineering projects, progress, and challenges. These presentations are crucial for securing board approval and support, providing insights into project impacts on financial and market positions. Effective communication must be clear, concise, and aligned with the broader business objectives, often involving data-driven results and forecasts. Managers must articulate technical content in a way that is accessible to members with varying degrees of technical expertise, emphasizing strategic relevance and business outcomes.",
+    "links": []
+  },
+  "CHothgVl8ulFthwS7uKqK": {
+    "title": "Executive summaries",
+    "description": "",
+    "links": []
+  },
+  "uBrsV_EocAkRWEqJYjoZn": {
+    "title": "Strategic proposals",
+    "description": "",
+    "links": []
+  },
+  "pLUOU2AmAJ9aJAmIlVD7D": {
+    "title": "Budget requests",
+    "description": "Budget requests in organizations are formal proposals for funding specific projects or operations. Engineering managers are often directly involved in this process, playing a crucial role in detailing the financial needs of their departments. They must justify the costs of personnel, equipment, and project expenses to align with the strategic goals of the company. The engineering manager's input is vital in forecasting accurate budgets that ensure the engineering team has all necessary resources for successful project execution without fiscal overruns. Their proposals are typically reviewed during budget meetings with senior management, where they must advocate for their department’s needs effectively.",
+    "links": []
+  },
+  "QssXmeifoI3dtu-eXp8PK": {
+    "title": "Vision alignment",
+    "description": "",
+    "links": []
+  },
+  "QEViLNgG4Uv9Q9PWig0u3": {
+    "title": "Customer feedback integration",
+    "description": "",
+    "links": []
+  },
+  "V5s2i-L2tsZFNxMLN_e_U": {
+    "title": "Technical customer support",
+    "description": "",
+    "links": []
+  },
+  "A-Aa7VdDAYfaMUZD_cWwP": {
+    "title": "Customer success alignment",
+    "description": "",
+    "links": []
+  },
+  "2QwMcO27H3ygtLlWVplxr": {
+    "title": "Feature prioritization",
+    "description": "",
+    "links": []
+  },
+  "tCT2syTMyEHCspDLXxk6R": {
+    "title": "Technical partnerships",
+    "description": "",
+    "links": []
+  },
+  "WYoqfmk5ejB2UOiYXh4Zi": {
+    "title": "Vendor relationships",
+    "description": "",
+    "links": []
+  },
+  "xMN575nnnQJeHe2oJYw17": {
+    "title": "Technology partnerships",
+    "description": "",
+    "links": []
+  },
+  "f3P0fF4UzgVQZuMVTVmP1": {
+    "title": "Integration management",
+    "description": "",
+    "links": []
+  },
+  "ukmMMWacekcejEiEKCLzh": {
+    "title": "API strategy",
+    "description": "Engineering managers might have to work with external stakeholders who are interested in integrating with their team's services. This could be other teams within the company, or external partners. In these cases, it's important to have a clear API strategy with regards to how the team's services are exposed and consumed.",
+    "links": []
+  },
+  "Jctp5tPCK_vY35_bh7QFk": {
+    "title": "External collaboration",
+    "description": "",
+    "links": []
+  },
+  "TQY4hjo56rDdlbzjs_-nl": {
+    "title": "Competitive Analysis",
+    "description": "Competitive analysis is a critical strategy tool that involves assessing the strengths and weaknesses of competitors within the market. This analysis helps organizations identify opportunities and threats and develop strategies to maintain or improve their competitive edge. Engineering managers play a vital role in this process, particularly in technology-driven industries. They are involved by gathering and analyzing technical data on competitors’ products, technologies, and engineering capabilities. Their input is essential for determining the feasibility of surpassing competitors’ offerings and for identifying areas where their own organization can innovate or improve. With their unique insight into the technical complexities and operational requirements of product development, engineering managers help guide strategic decisions that align with the organization’s technical strengths and market goals. Their involvement ensures that strategic planning is grounded in realistic assessments of technological capabilities and market trends, facilitating more effective competitive positioning and long-term success.",
+    "links": []
+  },
+  "QUxpEK8smXRBs2gMdDInB": {
+    "title": "Legacy System Retirement",
+    "description": "",
+    "links": []
+  },
+  "gHhNi32MSBmqk-oKOy-uj": {
+    "title": "Architecture documentation",
+    "description": "Architectural decision-making involves the process of defining a software system's structure, components, and key characteristics, as well as the interactions between them. It requires considering technical and business requirements, scalability, performance, resilience, and maintainability of the software architecture. Engineering managers play a crucial role in architectural decision-making, ensuring that the decisions align with both the project goals and the overall business strategy. They should facilitate collaboration among stakeholders, help in evaluating the impact of architectural decisions, and ensure that necessary resources are allocated effectively. While they may not make all technical decisions themselves, engineering managers need to maintain a clear understanding of the technology to make informed decisions and to guide their teams appropriately.",
+    "links": []
+  },
+  "Kwy9O1z2hpeE0Sb3qtxEg": {
+    "title": "Process documentation",
+    "description": "",
+    "links": []
+  },
+  "dTjp_rEl1ITZjvELqVtfv": {
+    "title": "Decision records",
+    "description": "",
+    "links": []
+  },
+  "HUQ_-vU2pdBPyF0mBocHz": {
+    "title": "Lessons Learned",
+    "description": "",
+    "links": []
+  },
+  "4-MCXFOkMGcN369OPG-vw": {
+    "title": "Best Practices",
+    "description": "Best practices at a company can encompass various areas such as project management, coding standards, operational processes, and staff engagement strategies. Documenting these practices is crucial as it ensures consistency in performance, aids in training new employees, provides a basis for evaluation and improvement, and ensures compliance with regulatory requirements.\n\nAn engineering manager plays a pivotal role in documenting best practices by identifying the processes that work best, promoting a culture where documentation is valued, and ensuring the documentation is clear, accessible, and regularly updated. They can also facilitate feedback from team members to continuously refine these practices, ensuring they remain relevant and effective in meeting business goals.",
+    "links": []
+  },
+  "g6K9fxWdRQT5h_u4Y_bkq": {
+    "title": "Mentoring Programs",
+    "description": "",
+    "links": []
+  },
+  "7t9jmv3_lRCEG5y5DA8bF": {
+    "title": "Knowledge bases",
+    "description": "",
+    "links": []
+  },
+  "S8-nwYKlG7YHL2dWwR303": {
+    "title": "Brown Bags",
+    "description": "Brown Bags are informal meetings typically held during lunch hours where employees share knowledge and learn about new topics in a casual setting. These sessions are often voluntarily led by an employee who presents on a subject matter of their expertise or recent project experiences, stimulating peer learning and knowledge sharing. Engineering Managers can facilitate these sessions by encouraging participation from various team members, ensuring a diverse range of topics that cater to the broader interests and developmental needs of the team. They can also provide logistical support by setting up appropriate meeting spaces and perhaps offering refreshments. Additionally, Engineering Managers can recognize and reward active participation and presentation efforts to promote a continuing culture of learning and information exchange within the team.",
+    "links": []
+  },
+  "2LO0iWf-y3l4rA1n_oG1g": {
+    "title": "Tech Talks",
+    "description": "",
+    "links": []
+  },
+  "QMAIEkVFHrrP6lUWvd0S8": {
+    "title": "Migration planning",
+    "description": "",
+    "links": []
+  },
+  "9mNLfntu1TPjcX3RoUeMq": {
+    "title": "Legacy system retirement",
+    "description": "",
+    "links": []
+  },
+  "jerPoyfCcwZbNuE_cl1hq": {
+    "title": "Technology adoption",
+    "description": "",
+    "links": []
+  },
+  "f-52wRfPRrA9iniOMYQB7": {
+    "title": "Tool transitions",
+    "description": "",
+    "links": []
+  },
+  "ev9ZKygqETctLMSt1GAFU": {
+    "title": "Process changes",
+    "description": "",
+    "links": []
+  },
+  "1__zRE1iu1FDX9ynpWSBS": {
+    "title": "Change strategy",
+    "description": "Change strategy refers to the planned approach used to modify processes, systems, or structures within a company to reach desired business outcomes. This strategic approach ensures that changes are implemented smoothly and sustainably, aligning with the organization's long-term goals. Engineering managers play a crucial role in change strategy, particularly in technology-driven organizations. They are involved in assessing the technological impacts of proposed changes, planning and overseeing the implementation of new systems, and ensuring that technical teams are adequately prepared for and aligned with the change. Additionally, engineering managers help to mitigate risks associated with the integration of new technologies and workflows, fostering an environment of continuous improvement and adaptation. Through effective leadership, they maintain team productivity and morale during transitions, ensuring that engineering practices evolve in alignment with organizational changes.",
+    "links": []
+  },
+  "oGmtkOGVgA4huGJqkBEfj": {
+    "title": "Impact assessment",
+    "description": "",
+    "links": []
+  },
+  "34uOnta7dKOyZL0et_RC8": {
+    "title": "Stakeholder management",
+    "description": "",
+    "links": []
+  },
+  "Mxi4g_PzT0oYc3NgR0UVg": {
+    "title": "Communication planning",
+    "description": "Communication planning is a strategic approach to sharing information effectively within an organization, especially during periods of change. It involves outlining the communication goals, identifying the stakeholders, determining the message, choosing suitable channels, and scheduling the dissemination of the information. This is crucial in organizational change initiatives, where clear, consistent, and transparent communication can significantly impact the success of the transition and minimize resistance.\n\nEngineering managers play a fundamental role in this process. They act as a bridge between the technical staff, upper management, and other departments. For organizational changes that involve technological upgrades or changes in engineering processes, engineering managers must ensure that all technical staff understand the reasons for the change, the benefits, and how the change affects their work. They may also be tasked with providing feedback to higher management on the staff's reception to the changes and suggesting adjustments to the communication plan based on their frontline insight. This involvement helps in tailoring messages that address specific concerns, thereby fostering a smoother adaptation process within the engineering teams.",
+    "links": []
+  },
+  "vfp6VmWnhpre_eDORg7ht": {
+    "title": "Resistance management",
+    "description": "",
+    "links": []
+  },
+  "5_CE3p5jMA1uEqFNfp7Kh": {
+    "title": "Reorganizations",
+    "description": "",
+    "links": []
+  },
+  "ph0U4l2alVJ8lUJ96q7co": {
+    "title": "Team mergers",
+    "description": "",
+    "links": []
+  },
+  "FayHWdUHHYFFBwnXx37Gk": {
+    "title": "Role transitions",
+    "description": "",
+    "links": []
+  },
+  "eIlW4mZKNQfBsTDmZf7ex": {
+    "title": "Responsibility shifts",
+    "description": "",
+    "links": []
+  },
+  "y7YHIz7OI4sNfC_nhfLcu": {
+    "title": "Culture evolution",
+    "description": "",
+    "links": []
+  }
+}
