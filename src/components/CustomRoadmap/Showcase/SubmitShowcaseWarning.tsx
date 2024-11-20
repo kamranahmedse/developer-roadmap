@@ -20,10 +20,7 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
   const submit = useMutation(
     {
       mutationFn: async () => {
-        return httpPost(
-          `/v1-submit-for-featured-listing/${$currentRoadmap?._id}`,
-          {},
-        );
+        return httpPost(`/v1-submit-for-showcase/${$currentRoadmap?._id}`, {});
       },
       onSuccess: () => {
         queryClient.invalidateQueries({
@@ -40,7 +37,7 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
   );
 
   const {
-    showcaseStatus = 'idle',
+    showcaseStatus,
     showcaseRejectedReason,
     showcaseRejectedAt,
     updatedAt,
@@ -56,7 +53,7 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
         </h2>
         <p className="mt-2 text-sm">
           {showcaseStatus === 'rejected_with_reason' && showcaseRejectedReason}
-          {showcaseStatus === 'idle' && (
+          {!showcaseStatus && (
             <>
               Submitting your roadmap for a featured listing will make it
               visible to everyone on the platform.{' '}

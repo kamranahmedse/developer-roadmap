@@ -77,7 +77,9 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   return (
     <>
       <div className="relative border-b">
-        {$currentRoadmap && <ShowcaseAlert currentRoadmap={$currentRoadmap} />}
+        {$currentRoadmap && $canManageCurrentRoadmap && (
+          <ShowcaseAlert currentRoadmap={$currentRoadmap} />
+        )}
 
         <div className="container relative mt-6 py-5 sm:py-12">
           {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
