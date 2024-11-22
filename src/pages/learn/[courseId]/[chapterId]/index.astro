@@ -1,4 +1,5 @@
 ---
+import { EmptyView } from '../../../../components/Course/EmptyView';
 import SkeletonLayout from '../../../../layouts/SkeletonLayout.astro';
 import {
   getAllCourses,
@@ -20,7 +21,10 @@ export async function getStaticPaths() {
             chapterId: chapter.id,
           },
           props: {
-            course,
+            course: {
+              ...course,
+              chapters,
+            },
             chapter,
           },
         };
@@ -37,27 +41,20 @@ interface Params extends Record<string, string | undefined> {
 }
 
 interface Props {
-  course: CourseFileType;
+  course: CourseFileType & { chapters: ChapterFileType[] };
   chapter: ChapterFileType;
 }
 
 const { courseId, chapterId } = Astro.params;
-const { chapter } = Astro.props;
-
-const firstLesson = chapter.lessons?.sort(
-  (a, b) => a.frontmatter.order - b.frontmatter.order,
-)?.[0];
-
-const fullUrl = firstLesson
-  ? `/learn/${courseId}/${chapterId}/${firstLesson?.id}`
-  : `/learn/${courseId}`;
+const { course } = Astro.props;
 ---
 
-<SkeletonLayout title='Redirecting..' noIndex={true} redirectUrl={fullUrl}>
-  <div class='p-8'>
-    <h2 class='text-xl font-bold'>Redirecting ..</h2>
-    <p>Click the link below if you are not redirected automatically.</p>
-
-    <p><a href={fullUrl} class='text-blue-700 underline'>{fullUrl}</a></p>
-  </div>
+<SkeletonLayout title={course.frontmatter.title}>
+  <EmptyView
+    activeCourseId={courseId}
+    activeChapterId={chapterId}
+    title={course.frontmatter.title}
+    chapters={course.chapters}
+    client:load
+  />
 </SkeletonLayout>

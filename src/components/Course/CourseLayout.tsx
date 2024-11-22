@@ -17,7 +17,7 @@ import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 
 export type CourseLayoutProps = {
   children: ReactNode;
-} & Omit<CourseSidebarProps, 'completedPercentage'>;
+} & Omit<CourseSidebarProps, 'completedPercentage' | 'isLoading'>;
 
 export function CourseLayout(props: CourseLayoutProps) {
   const { children, ...sidebarProps } = props;
