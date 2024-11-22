@@ -64,7 +64,7 @@ Register a new user using the following request:
 POST /register
 {
   "name": "John Doe",
-  "email": "john@doe.com"
+  "email": "john@doe.com",
   "password": "password"
 }
 ```
