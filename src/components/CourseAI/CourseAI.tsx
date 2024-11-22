@@ -33,7 +33,7 @@ export function CourseAI(props: CourseAIProps) {
   return (
     <div className="relative">
       <button
-        className="flex items-center gap-1 rounded-lg border border-black pl-3 pr-4 py-2 text-sm leading-none disabled:opacity-60 hover:bg-black hover:text-white transition-colors"
+        className="flex items-center gap-1 rounded-lg border border-black py-2 pl-3 pr-4 text-sm leading-none transition-colors hover:bg-black hover:text-white disabled:opacity-60"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Sparkles className="size-4 stroke-[2]" />

@@ -56,3 +56,21 @@ export function useCompleteLessonMutation(courseId: string) {
     queryClient,
   );
 }
+
+export type CourseAILimitResponse = {
+  maxTokenCount: number;
+  usedTokenCount: number;
+};
+
+export function useCourseAILimit() {
+  return useQuery(
+    {
+      queryKey: ['course-ai-limit'],
+      queryFn: async () => {
+        return httpGet<CourseAILimitResponse>('/v1-course-ai-limit');
+      },
+      enabled: isLoggedIn(),
+    },
+    queryClient,
+  );
+}

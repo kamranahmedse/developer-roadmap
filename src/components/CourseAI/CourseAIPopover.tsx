@@ -12,6 +12,8 @@ import { flushSync } from 'react-dom';
 import type { AIChatHistoryType, AllowedAIChatRole } from './CourseAI';
 import { useToast } from '../../hooks/use-toast';
 import { removeAuthToken } from '../../lib/jwt';
+import { useCourseAILimit } from '../../hooks/use-course';
+import { CourseAILimit } from './CourseAILimit';
 
 type CourseAIPopoverProps = {
   courseId: string;
@@ -42,17 +44,26 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
 
-  const [isLoading, setIsLoading] = useState(false);
+  const {
+    data: tokenUsage,
+    isLoading,
+    refetch: refreshLimit,
+  } = useCourseAILimit();
+
+  const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [message, setMessage] = useState('');
   const [streamedMessage, setStreamedMessage] = useState('');
 
   useOutsideClick(containerRef, onOutsideClick);
 
+  const isLimitExceeded =
+    (tokenUsage?.maxTokenCount || 0) <= (tokenUsage?.usedTokenCount || 0);
+
   const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const trimmedMessage = message.trim();
-    if (!trimmedMessage || isLoading) {
+    if (!trimmedMessage || isStreamingMessage || isLoading || isLimitExceeded) {
       return;
     }
 
@@ -81,7 +92,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
   };
 
   const completeCourseAIChat = async (messages: AIChatHistoryType[]) => {
-    setIsLoading(true);
+    setIsStreamingMessage(true);
 
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-course-ai/${courseId}`,
@@ -105,7 +116,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
 
       toast.error(data?.message || 'Something went wrong');
       setCourseAIChatHistory([...messages].slice(0, messages.length - 1));
-      setIsLoading(false);
+      setIsStreamingMessage(false);
 
       // Logout user if token is invalid
       if (data.status === 401) {
@@ -117,7 +128,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
     const reader = response.body?.getReader();
 
     if (!reader) {
-      setIsLoading(false);
+      setIsStreamingMessage(false);
       toast.error('Something went wrong');
       return;
     }
@@ -141,7 +152,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
 
         flushSync(() => {
           setStreamedMessage('');
-          setIsLoading(false);
+          setIsStreamingMessage(false);
           setCourseAIChatHistory(newMessages);
         });
 
@@ -149,7 +160,8 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
       },
     });
 
-    setIsLoading(false);
+    refreshLimit();
+    setIsStreamingMessage(false);
   };
 
   useEffect(() => {
@@ -163,6 +175,8 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
     >
       <div className="flex items-center justify-between gap-2 border-b border-zinc-700 px-4 py-2 text-sm">
         <h4 className="text-base font-medium">Roadmap AI</h4>
+
+        <CourseAILimit />
       </div>
 
       <div
@@ -182,7 +196,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
                 );
               })}
 
-              {isLoading && !streamedMessage && (
+              {isStreamingMessage && !streamedMessage && (
                 <AIChatCard role="assistant" content="Thinking..." />
               )}
 
@@ -207,7 +221,7 @@ export function CourseAIPopover(props: CourseAIPopoverProps) {
         />
         <button
           type="submit"
-          disabled={isLoading}
+          disabled={isStreamingMessage || isLoading || isLimitExceeded}
           className="flex aspect-square h-full items-center justify-center text-zinc-500 hover:text-zinc-50"
         >
           <Send className="size-4 stroke-[2.5]" />
