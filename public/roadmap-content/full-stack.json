@@ -440,6 +440,11 @@
         "type": "article"
       },
       {
+        "title": "Redis University",
+        "url": "https://university.redis.io/academy",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Redis",
         "url": "https://app.daily.dev/tags/redis?ref=roadmapsh",
         "type": "article"
