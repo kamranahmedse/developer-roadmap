@@ -4,7 +4,7 @@ description: 'Create a pomodoro tracker application for productivity'
 isNew: true
 sort: 28
 difficulty: 'intermediate'
-nature: 'Networking'
+nature: 'Frameworks'
 skills:
   - 'HTML'
   - 'CSS'
