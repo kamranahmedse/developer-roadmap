@@ -15,5 +15,5 @@ ps -eo pid,pri,user
 To change the priority of any process, you can use the `renice` command:
 
 ```sh
-renice +5 -p [PID]   # Increase priority by 5 units for process ID [PID]
+renice -5 -p [PID]   # Increase priority by 5 units for process ID [PID]
 ```
