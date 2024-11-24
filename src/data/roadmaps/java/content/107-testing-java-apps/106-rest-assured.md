@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Rest-assured](https://rest-assured.io/)
 - [@opensource@Rest-assured Documentation](https://github.com/rest-assured/rest-assured/wiki)
+- [@article@A Guide to REST-assured](https://www.baeldung.com/rest-assured-tutorial)
 - [@feed@Explore top posts about REST API](https://app.daily.dev/tags/rest-api?ref=roadmapsh)
