@@ -2,8 +2,8 @@
 title: 'File Integrity Checker'  
 description: 'Verify the integrity of system or application log files to detect tampering.'  
 isNew: false  
-sort: 1
-difficulty: 'beginner'  
+sort: 16
+difficulty: 'intermediate'  
 nature: 'Security'  
 skills:  
   - 'Bash'  
@@ -15,29 +15,42 @@ seo:
   description: 'Learn how to build a CLI tool that validates the integrity of a file using hashes.'  
   keywords:  
     - 'integrity'
-    - 'hash'
+    - 'hashing'
+    - 'security'
+    - 'devops'
     - 'cyber security'  
 roadmapIds:  
-  - 'cyber-security'
+  - 'devops'
 ---
 
-In this project, you will develop a tool that verifies the integrity of log files to detect tampering. This project will help you understand file integrity monitoring, hashing techniques, and log analysis.
+You are required to develop a tool that verifies the integrity of log files to detect tampering. This tool can be used to enhance security measures by using techniques such as file integrity monitoring and hashing to ensure that no unauthorized changes have been made to the log files.
 
 ## Requirements
 
-The tool should:
+The tool should be capable of the following:
 
-- Accept a directory of log files as input.
-- Calculate cryptographic hashes (e.g., SHA-256) for each log file.
-- Compare the hashes with previously stored hashes to check for tampering.
-- Report any discrepancies in file integrity
+- Accept a directory or a single log file as input.
+- Utilize a cryptographic hashing algorithm, such as SHA-256, to compute hashes for each log file provided.
+- On first use, store the computed hashes in a secure location.
+- For subsequent uses, compare the newly computed hashes against the previously stored ones.
+- Clearly report any discrepancies found as a result of the hash comparison, indicating possible file tampering.
+- Allow for manual re-initialization of log file integrity.
 
-## Example
+Here is the example of how it might look like
 
 ```bash
-> ./integrity-check -file /var/log/syslog
-> Status: Modified (Hash mismatch)
+> ./integrity-check init /var/log  # Initializes and stores hashes of all log files in the directory
+> Hashes stored successfully.
 
-> ./integrity-check -file /var/log/auth.log
+> ./integrity-check check /var/log/syslog
+> Status: Modified (Hash mismatch)
+# Optionally report the files where hashes mismatched
+
+> ./integrity-check -check /var/log/auth.log
 > Status: Unmodified
+
+> ./integrity-check update /var/log/syslog
+> Hash updated successfully.
 ```
+
+After completing this project you will get the idea of hashing algorithms, security and writing scripts.
