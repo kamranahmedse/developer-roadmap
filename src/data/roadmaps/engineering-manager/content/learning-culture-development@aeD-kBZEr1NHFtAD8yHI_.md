@@ -1,1 +1,3 @@
 # Learning culture development
+
+An Engineering Manager cultivates a learning culture by promoting continuous growth, curiosity, and skill enrichment. They bear the responsibility to implement frameworks that empower team members to learn new technologies and share knowledge. Challenges might arise in determining the type of learning that works best for the team, and keeping everyone engaged and accountable. Successful managers deploy various learning approaches, including mentoring, training, and self-directed learning. They encourage openness, feedback, and ensure learning is a team-based, not competitive or isolating, experience.

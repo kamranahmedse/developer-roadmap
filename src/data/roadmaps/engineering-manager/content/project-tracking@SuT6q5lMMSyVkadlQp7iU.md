@@ -1,1 +1,3 @@
 # Project Tracking
+
+An Engineering Manager employs project tracking to ensure projects meet deadlines, stay within budget, and produce quality work. They establish clear, trackable objectives, identify key milestones, and employ tools such as Gantt charts or agile project management software. Challenges include predicting accurately project timelines and handling potential delays or setbacks. Succinct communication, forward-planning, and problem-solving skills are essential for successful project tracking. The manager actively tracks progress, assesses project health, and makes adjustments as necessary, keeping stakeholders continuously informed.

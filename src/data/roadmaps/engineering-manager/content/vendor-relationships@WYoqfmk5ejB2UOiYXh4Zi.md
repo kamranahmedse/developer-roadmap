@@ -1,1 +1,3 @@
 # Vendor relationships
+
+Engineering Managers are instrumental in managing vendor relationships. They oversee and evaluate vendor performance, ensuring services and products meet the specified requirements. Their responsibilities include negotiation of contracts, dealing with service issues, and establishing metrics for vendor assessment. Common challenges can include ensuring clear communication and resolving potential disputes, which require strong interpersonal and diplomatic skills.  Maintaining good vendor relationships is crucial because reliable vendors can enhance operational efficiency, product quality, and overall project outcomes.

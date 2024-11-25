@@ -1,1 +1,3 @@
 # Disaster recovery
+
+Engineering Managers are pivotal in devising robust disaster recovery plans. It is their responsibility to ensure that, in the event of a major system failure or a catastrophic event, the team has a well-defined path for restoring operations. This encompasses establishing procedures, setting recovery point objectives, and regularly conducting testing simulations. An effective manager tackles this challenge by instilling a proactive mindset among team members and adopting advanced technologies. Mastery in crisis management, strong decision-making abilities, and a deep understanding of the system architecture are needed to excel in this domain.

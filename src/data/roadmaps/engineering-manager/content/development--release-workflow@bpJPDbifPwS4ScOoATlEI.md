@@ -1,1 +1,3 @@
 # Development / Release Workflow
+
+An Engineering Manager plays a pivotal role in overseeing the development and release workflow. It's their responsibility to ensure that the engineering team maintains a high standard of quality while adhering to established processes. This requires them to balance the trade-offs between speed and quality, fix bugs and bottlenecks, and refine processes to increase efficiency. Dealing with any disruptions or last-minute changes in this workflow is also part of their job. To excel in this area, they need strong problem-solving skills, excellent leadership abilities, and deep technical knowledge.

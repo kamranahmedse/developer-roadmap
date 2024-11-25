@@ -1,1 +1,3 @@
 # Social connections
+
+An Engineering Manager plays a vital role in fostering social connections within the team. They create an environment of camaraderie by organizing team-building activities and encouraging open communication. This cultivates stronger relationships, better collaboration, and ultimately, higher productivity. The challenge lies in balancing work and social activities without compromising on either. This requires diplomatic skills, approachability, and a good understanding of each team member's personality. Furthermore, the Engineering manager needs to ensure that these connections build a sense of belonging and inclusivity.

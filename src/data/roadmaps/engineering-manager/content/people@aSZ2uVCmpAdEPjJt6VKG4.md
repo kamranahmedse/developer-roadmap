@@ -1,1 +1,3 @@
 # People
+
+An Engineering Manager has the crucial role of managing a team of engineers. This involves hiring, mentoring, and creating a conducive environment for engineers to thrive and be productive. Challenges include balancing technical needs with team dynamics and individual abilities. An Engineering Manager requires skills in communication, empathy, conflict resolution, and a deep understanding of technology in order to lead effectively. Amidst these, they must continually foster innovation, encourage professional development, and assure overall team morale and productivity.

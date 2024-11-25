@@ -1,1 +1,3 @@
 # Defining and Enforcing Values
+
+The Engineering Manager plays a crucial role in defining and enforcing team values to cultivate an optimal team culture. They pinpoint key values aligned with company goals, and ensure team's adherence through repeated communication and actions. Challenges arise with conflicts and resistance, handled through mediations and sometimes, necessary crew reshuffling. Skills needed for success are proficient communication, diplomacy, and empathy. Setting a personal example also underscores the importance of these values in everyday team operations.

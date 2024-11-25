@@ -1,1 +1,3 @@
 # Customer feedback integration
+
+An Engineering Manager addresses customer feedback integration through active engagement with customer concerns, translating them into concrete action plans. Core responsibilities include prioritizing feedback based on severity or frequency, defining relevant adjustments in product design or functionality, and leading the implementation process. Challenges often arise due to conflicting demands or limited resources; in such cases, strategic decision-making and negotiation skills are crucial. They also foster a customer-centric culture within the team, stressing on the importance of iterative improvements and the role it plays in customer satisfaction and retention.

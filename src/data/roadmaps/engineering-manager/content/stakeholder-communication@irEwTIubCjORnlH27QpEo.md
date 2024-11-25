@@ -1,1 +1,3 @@
 # Stakeholder Communication
+
+As an Engineering Manager, effective stakeholder communication during an incident response is crucial. It's their responsibility to provide clear, timely updates about the incident's status and potential impacts. This includes liaising between the incident response team and stakeholders, translating technical information into comprehensible terms. Challenges include avoiding miscommunications and ensuring transparency without causing undue alarm. Success in this area requires strong communication skills, empathy, and the ability to stay calm under pressure. Mastery of non-technical language for clear explaining the status to non-technical stakeholders is highly beneficial.

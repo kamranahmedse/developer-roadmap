@@ -1,1 +1,3 @@
 # Scope Management
+
+Scope Management is a critical aspect for an Engineering Manager. They must clearly define and control the project's objectives to avoid shifting goals or 'scope creep'. This involves collaborating with stakeholders to establish set deliverables, incorporating those goals into a project plan, and vigilantly monitoring progress. Challenges may arise from miscommunication or unplanned changes, requiring adept problem-solving and communication skills. Success in scope management thus calls for precision, adaptability and strong leadership on part of an Engineering Manager.

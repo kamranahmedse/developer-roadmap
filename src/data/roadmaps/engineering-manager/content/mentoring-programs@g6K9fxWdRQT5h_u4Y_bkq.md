@@ -1,1 +1,3 @@
 # Mentoring Programs
+
+Engineering Managers play a crucial role in setting up mentoring programs, which are key for knowledge transfer. They match seniors with less experienced team members to foster learning and increase the overall team competency. The challenge is to keep these relationships productive and ensure the transfer of knowledge is effective. Essential skills include communication and ability to identify strengths and opportunities for growth in team members. Successful managers don't just delegate this task, they actively monitor progress, address any issues, and continuously look for improvements to ensure the program delivers results.

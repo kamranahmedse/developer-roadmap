@@ -1,1 +1,3 @@
 # Feedback Delivery
+
+An Engineering Manager can transform their team by delivering constructive feedback effectively. It's a critical responsibility to improve performance and nurture an environment of continuous learning. They often face the challenge of avoiding resentment or disengage; thus, it’s vital to be empathetic, clear, and concise in their feedback. Emphasizing the positive, keeping a solution-based approach, and timing feedback well often lead to success and acceptance. Hence, honing these skills can result in resilient, adaptive, and progressively improving teams.

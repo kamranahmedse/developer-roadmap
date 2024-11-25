@@ -1,1 +1,3 @@
 # Technical customer support
+
+Engineering Managers play a crucial role in technical customer support. They ensure the team is skilled and well-equipped to swiftly handle customer issues. As they address complexities that could arise when dealing with intricate product queries, their ability to problem-solve, communicate, and coordinate is vital. Their responsibilities include setting, maintaining standards for response times, and continually improving the support process. Understanding the product technically and the client perspective is paramount for them to bridge the gap between consumers and the product, thereby enhancing customer satisfaction.

@@ -1,1 +1,3 @@
 # Project Postmortems
+
+Engineering Managers play a crucial role in conducting Project Postmortems. Their responsibility is essentially to evaluate the project's performance as a whole and pinpoint any areas of improvement. To overcome the challenge of subjectivity, they employ various metrics to measure success, such as project expenses, timelines, or scope. Outstanding communication and analytical skills can be beneficial here, as managers need to effectively communicate findings to the team and use this analysis to draft a plan for future projects. The ultimate aim is continuous improvement for every subsequent project.

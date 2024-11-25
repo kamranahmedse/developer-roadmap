@@ -1,1 +1,3 @@
 # Customer success alignment
+
+An Engineering Manager ensures customer success alignment by actively bridging the gap between engineering efforts and customer requirements. Their responsibility lies in translating customer success metrics into tangible technical goals for the team. Challenges such as miscommunication between departments are addressed by fostering transparency and implementing robust feedback mechanisms. Essential skills include empathetic leadership, strong technical grasp, and strategic thinking. Ultimately, they ensure that every code committed contributes directly or indirectly to bolstering customer success.

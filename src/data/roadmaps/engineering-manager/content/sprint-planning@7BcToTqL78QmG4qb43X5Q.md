@@ -1,1 +1,3 @@
 # Sprint Planning
+
+Sprint planning is a key responsibility for an Engineering Manager. Having a successful sprint planning session is all about balance, time management, and in-depth understanding of the team's capabilities. They aim to ensure that their team members are loaded with the right amount of work, set clear goals, and understand the expectations. Challenges include determining the workload capacity of the team and mitigating potential roadblocks. Succeeding in this aspect demands sharp decision-making skills, adaptability, and effective communication. They must know when to pushback, negotiate requirements, and prioritize tasks based on business needs.

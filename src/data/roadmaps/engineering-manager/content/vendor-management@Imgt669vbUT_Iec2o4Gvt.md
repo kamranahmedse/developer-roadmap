@@ -1,1 +1,3 @@
 # Vendor Management
+
+Managing vendors is a critical aspect of an Engineering Manager's role in financial management. They are responsible for selecting vendors, negotiating contracts, and ensuring the delivery of goods or services within budget. This often involves comparison of multiple vendor offerings and maintaining healthy relationships to secure better deals or terms. Major challenges include managing cost escalations and mitigating reliability risks. This realm requires robust negotiation skills, a deep understanding of technical needs, and adept financial planning. Ultimately, effective vendor management translates into a positive impact on the team's budget and project timelines.

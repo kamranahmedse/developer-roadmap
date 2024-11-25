@@ -1,1 +1,3 @@
 # Security  Best Practices
+
+Engineering Managers are pivotal in driving security best practices within their teams. They ensure that coding standards are aligned with security requirements, and risk mitigation strategies are appropriately employed. Key responsibilities include educating team members about security threats and ensuring security assessment tools are properly utilized. Challenges lie in maintaining up-to-date knowledge with ever-evolving security threats and ensuring a balance between software functionality and security. To excel at managing security best practices, they must possess deep knowledge of coding, network protocols, and encryption methodologies, and adaptability to incorporate new cybersecurity measures swiftly.

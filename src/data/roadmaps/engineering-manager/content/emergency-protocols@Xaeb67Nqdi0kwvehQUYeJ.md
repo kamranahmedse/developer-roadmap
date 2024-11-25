@@ -1,1 +1,3 @@
 # Emergency protocols
+
+The Engineering Manager is responsible for establishing and enforcing emergency protocols during incident response. They draft plans for disaster recovery, ensuring the continuity of work while minimizing technical disruptions. Among the challenges they face, applying swift problem-solving and resource allocation during unexpected situations is critical. Successful managers inculcate a culture of proactive risk assessment and incident prevention, combined with an adaptive, problem-solving mindset. Clear communication and collaboration skills are imperative, especially during high-pressure incidents. Constant tweaking and testing protocols also help maintain an ever-ready response team.

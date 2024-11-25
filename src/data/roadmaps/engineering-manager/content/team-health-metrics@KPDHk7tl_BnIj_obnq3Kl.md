@@ -1,1 +1,3 @@
 # Team Health Metrics
+
+An Engineering Manager is accountable for monitoring Team Health Metrics to maintain an efficient, productive and harmonious workspace. They capture qualitative and quantitative data such as code collaboration patterns, employee engagement scores, and team attrition rates. The challenge lies in identifying the accurate metrics which depict the true picture of the team's health, and interpreting them in a way that highlights opportunities for improvement. Strong communication skills, empathy, and data-driven mindset are essential for successful management and to instigate change based on these metrics.

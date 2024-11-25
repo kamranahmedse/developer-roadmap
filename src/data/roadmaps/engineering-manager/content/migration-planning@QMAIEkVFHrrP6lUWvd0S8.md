@@ -1,1 +1,3 @@
 # Migration planning
+
+An Engineering Manager plays a critical role in migration planning under technical change. Their responsibility involves strategizing and implementing a faultless path for system migration, ensuring minimal disruption and impact. This requires a solid understanding of tech-stack, possible bottlenecks, and dependencies. Challenges include accommodating continual business demands while the migration is in progress. Success lies in proactive communication with stakeholders, detailed backout plans, and comprehensive testing strategies. Therefore, a blend of technical acuity, leadership skills, and planning proficiency is required.

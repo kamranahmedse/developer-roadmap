@@ -1,1 +1,3 @@
 # Team Traditions and Rituals
+
+Engineering Managers play a pivotal role in fostering team traditions and rituals. These traditions, potentially as simple as a monthly team lunch or a weekly round-up meeting, help build a cohesive culture. Their key responsibility here is to ensure these rituals are inclusive, respected, and beneficial for team bonds. Challenges include inclusivity and time-management; these can be handled by carefully considering each team member's input and strategically scheduling to prevent work disruption. Success in this aspect requires strong communication skills, empathy, and an understanding of team dynamics.

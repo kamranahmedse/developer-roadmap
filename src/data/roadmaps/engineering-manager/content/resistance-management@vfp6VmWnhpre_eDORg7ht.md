@@ -1,1 +1,3 @@
 # Resistance management
+
+Handling resistance to change is a critical responsibility for an Engineering Manager while undergoing organizational change. Generally, resistance emerge due to fear of the unknown. Therefore, an Engineering Manager should focus on communication, transparency, and engagement. An invaluable skill is the ability to listen (really listen) and to empathize with the team's concerns along the way. Providing timely and truthful updates, involving team members in the change process to foster a sense of ownership, and reassuring their importance in the new setup are are key actions to mitigate resistance and ensure smooth transition.

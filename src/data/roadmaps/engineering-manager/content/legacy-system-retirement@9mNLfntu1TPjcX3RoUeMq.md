@@ -1,1 +1,3 @@
 # Legacy system retirement
+
+The retirement of legacy systems is a critical task for an Engineering Manager. They need to navigate team resistance while ensuring continuity of operations. An essential aspect is communicating the reasons behind the change, such as improved functionality or security. They must plan the transition meticulously, including data migration and staff training. Problem-solving and risk management skills are crucial to identify potential issues and create contingency plans. With their technical proficiency, they need to work closely with the system users, IT, and support staff to mitigate impact and manage the transition smoothly.

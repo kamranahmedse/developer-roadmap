@@ -1,1 +1,3 @@
 # Performance Evaluations
+
+Conducting performance evaluations is a vital part of an Engineering Manager's role in people management. They take responsibility in assessing the team's capabilities, identifying areas for growth and offering productive feedback. This process can be challenging due to its subjective nature and the need to balance corporate interests with team morale. To excel, managers must demonstrate excellent communication skills, empathy, and a commitment to fair assessments. They also need to establish clear evaluation criteria and be prepared to provide resources for improvement if needed.

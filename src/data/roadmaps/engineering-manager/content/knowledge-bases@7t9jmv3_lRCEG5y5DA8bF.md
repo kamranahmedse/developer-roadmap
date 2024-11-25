@@ -1,1 +1,3 @@
 # Knowledge bases
+
+Knowledge bases are an important tool in an Engineering Manager's arsenal, acting as repositories of shared information and experience among team members. Their key responsibilities include ensuring the base is up-to-date, relevant, and accessible. In addressing the challenge of maintaining its usefulness, managers need to facilitate and encourage team-wide contribution. Success in this aspect requires not just technical capabilities, but also strong communication and collaboration skills, fostering a culture where knowledge sharing is seen as valuable. Essentially, a well-managed knowledge base promotes unity, consistency, and efficiency in the team's journey towards shared goals.

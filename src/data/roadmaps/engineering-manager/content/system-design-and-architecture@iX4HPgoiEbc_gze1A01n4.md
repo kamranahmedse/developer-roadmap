@@ -1,8 +1,3 @@
-# System Design and Architecture
+#  System Design and Architecture
 
-System design and architecture are critical for building robust software systems. For engineering managers, it involves not only technical expertise but also leadership in decision-making, project management, and cross-team collaboration.
-
-Visit the following resources to learn more:
-
-- [@article@System Design Roadmap](https://roadmap.sh/system-design)
-- [@article@Software Architect Roadmap](https://roadmap.sh/software-architect)
+An Engineering Manager holds the vital role in steering system design and architecture. This involves making key decisions, such as which technologies to utilize, and fostering effective communication among team members to ensure alignment with overall system goals. The manager analyzes system requirements and chooses suitable design strategies, balancing the trade-offs between performance, scalability, and maintainability. Challenges often lie in managing competing priorities and stakeholder expectations, which necessitates deep technical knowledge, strong negotiation skills, and the ability to lead through influence. Ultimately, an Engineering Manager must create and maintain an architecture that effectively serves the needs of the business.

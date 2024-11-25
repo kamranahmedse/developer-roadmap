@@ -1,1 +1,3 @@
 # War Room Management
+
+The Engineering Manager occupies a crucial role in handling 'War Room Management', a critical component of incident response. They coordinate the communication and tasks between all participants, ensuring that everyone understands their role and the current incident status. This relentless coordination often entails an element of calming the 'storm', maintaining focus and moral within the team. Striking a balance between controlling chaos and facilitating solutions is a key challenge. Engineering managers must rely on their problem-solving skills, calm demeanor, and ability to motivate others, fostering an environment where rapid, effective resolution of incidents is possible.
