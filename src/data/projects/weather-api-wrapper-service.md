@@ -2,7 +2,7 @@
 title: 'Weather API'
 description: 'Build a weather API that fetches and returns weather data.'
 isNew: false
-sort: 7
+sort: 700
 difficulty: 'beginner'
 nature: 'API'
 skills:

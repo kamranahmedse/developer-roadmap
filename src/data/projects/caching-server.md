@@ -2,7 +2,7 @@
 title: 'Caching Proxy'
 description: 'Build a caching server that caches responses from other servers.'
 isNew: false
-sort: 10
+sort: 1200
 difficulty: 'intermediate'
 nature: 'CLI'
 skills:

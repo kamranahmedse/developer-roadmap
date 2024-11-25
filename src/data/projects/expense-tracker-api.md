@@ -2,7 +2,7 @@
 title: 'Expense Tracker API'
 description: 'Build an API for an expense tracker application.'
 isNew: false
-sort: 9
+sort: 1000
 difficulty: 'beginner'
 nature: 'API'
 skills:
