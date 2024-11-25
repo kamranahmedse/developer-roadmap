@@ -1,3 +1,7 @@
 # Technical partnerships
 
-An Engineering Manager plays a pivotal role in fostering technical partnerships, acting as the bridge between the technical team and external partners. They identify potential collaborations and ensure the team has the necessary resources to support these partnerships. Their key responsibility is to align the partnership goals with their team's technical capabilities, often requiring adept communication skills and vast technical knowledge. Challenges may arise due to varying technical standards and expectations; managers must effectively negotiate and compromise to maintain the relationship. Hence, adaptability, negotiation skills, and solid technical understanding are vital to succeed.
+An Engineering Manager plays a vital role in fostering technical partnerships in relation to customer relations. They have the responsibility of coordinating and collaborating with tech-partners to fulfill customer requirements, effectively leveraging their expertise for mutual benefit. They need to maintain a sound understanding of both the partner's capabilities and the customer's needs, bridging them effectively.
+
+The main challenges include managing expectations and solving conflicts between the needs of the customer and the capabilities of the tech-partner. Engineering Managers address these by maintaining transparency and keeping lines of communication open to ensure a smooth collaboration.
+
+To succeed, an Engineering Manager needs to have excellent communication and negotiation skills, alongside a strong understanding of technology. Being proactive in foreseeing and managing potential conflicts and issues can also lead to a successful technical partnership.

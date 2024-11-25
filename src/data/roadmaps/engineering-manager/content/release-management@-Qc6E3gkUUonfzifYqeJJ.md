@@ -1,3 +1,7 @@
 # Release Management
 
-An Engineering Manager juggles release management, a critical facet of project management. They're accountable for planning, scheduling, controlling and commencing software builds through different phases and environments. This involves identifying the potential bottlenecks, addressing challenges that may delay the software deployment and quality outputs. A keen eye, strategic thinking and effective communication are vital for ensuring that the release management 'train' runs on time, remedying issues swiftly and transparently. Optimizing the release process to reduce risks, increase efficiency and ultimately delivering quality software is a crucial responsibility of an Engineering Manager.
+Managing a software release is an essential role of an Engineering Manager. One key responsibility here is to establish deadlines and ensure all project components meet these deadlines. This includes tracking progress and addressing potential or actual delays. 
+
+Challenges here can include coordinating with multiple teams and managing changing product requirements. To tackle these, an Engineering Manager should use a clear and organized approach. Maintaining open lines of communication with all stakeholders is vital.
+
+Apart from strong leadership skills, an Engineering Manager dealing with release management also needs to have a solid understanding of the software development process. This prepares them to make informed decisions and give pertinent advice which are key to a smooth and successful software release.

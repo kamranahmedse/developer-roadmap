@@ -1,3 +1,7 @@
 # Architecture documentation
 
-Engineering Managers play an instrumental role in overseeing architecture documentation. These documents outline the systems design, essential for creating a concrete base before initiating projects. The manager ensures that the document is accurate, clear, and comprehensible. Challenges can include adapting to system changes and ensuring all modifications are appropriately documented. Exceptional communication skills, project management, and technical understanding of software architecture are fundamental skills in this area. The ultimate aim is to facilitate team understanding of system architecture via effective and updated documentation to promote efficient workflows.
+Engineering managers pave the way to secure well-built architecture documents. These texts act as blueprints - they guide software development and offer comprehensive visibility into the system's structure. Therefore, managers ensure that these crucial documents are precise, updated, and accessible to all team members.
+
+However, architecture documentation also throws up challenges. The difficulty lies in maintaining the usability and relevance of these documents, particularly as the system evolves over time. Managers tackle these issues by establishing strong documentation policies and encouraging team members to continuously review and revise their work.
+
+At the core, excellent communication skills and a deep understanding of system architecture are central to succeeding in this area. With these capabilities, engineering managers can effectively translate detailed technical insights into comprehensible visual models and clear descriptions.

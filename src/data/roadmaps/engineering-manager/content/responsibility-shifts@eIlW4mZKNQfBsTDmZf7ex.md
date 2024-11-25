@@ -1,3 +1,7 @@
 # Responsibility shifts
 
-Engineering managers often deal with responsibility shifts during team changes. This requires careful adjustment of team members' roles to ensure the continuity and effectiveness of projects. They need to be transparent, clarifying why and how responsibilities are being reassigned. It’s crucial for engineering managers to be empathetic, understanding and addressing any concerns raise by team members about these shifts. They also need strong leadership and negotiation skills to balance conflicting interests and equip their teams with resources needed for their new roles. One challenge they face is resistance to change, which they can overcome through clear communication and support.
+Engineering Managers often handle responsibility shifts within the team during change management. It's their duty to analyze what skills are needed, and delegate new duties accordingly. They also ensure all members understand their updated roles, ensuring a smooth transition.
+
+Responsibility shifts often present challenges because they might disrupt established work rhythms. The Engineering Manager should address these concerns head on. This could involve reassuring the team, providing additional training, or even modifying the shift if needed.
+
+Succeeding in this area takes great communication skills and a deep understanding of your team's strengths and weaknesses. It requires being open to feedback and adapting quickly. By doing so, Engineering Managers can turn the potentially tumultuous event of a responsibility shift into a moment of growth for both individuals and the team.

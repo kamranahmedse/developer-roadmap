@@ -1,3 +1,7 @@
 # Impact assessment
 
-The Engineering Manager is crucial in evaluating the degree of changes on organizational routines, staff, and operations, termed as Impact Assessment. Estimating the need for change, consolidating data, and defining the effects on workflow and team dynamics come under their responsibilities. This role faces the challenge of gauging both tangible and intangible effects. Mastery in strategic thinking, inclusion, and decision-making can solve this. Moreover, proactive communication and employee involvement can help in adopting new methods swiftly making the process less burdensome.
+An Engineering Manager's role in 'Impact Assessment' during 'Organizational Change' involves assessing the potential risks and effects of proposed changes on their team and the larger organization. They need to foresee potential negative impacts and devise strategies to mitigate them to maintain the team's productivity and morale.
+
+Engineering Managers are responsible for communicating these assessments to their teams and addressing any concerns. They must clearly express the necessity of the changes, the benefits, and how it could influence team and individual work. They should also layout planned measures to offset possible negative effects. 
+
+Doing successful impact assessments requires analytical skills, logical thinking, and excellent communication. Managers must gather and analyze data, predict possible outcomes, understand their team's strengths and weaknesses, and efficiently communicate the assessment results.

@@ -1,3 +1,7 @@
 # Recognition programs
 
-Engineering Managers play a pivotal role in instituting recognition programs. They are responsible for ensuring these initiatives are shaped in a way that motivates and appreciates team members, thereby reinforcing positive team culture. Implementing such programs can be challenging, requiring managers to balance fairness and objectivity. Key to success is to be inclusive, recognizing not just big accomplishments but subtle contributions too. Managers need to communicate effectively the purpose of these programs and the criteria for recognition, ensuring it aligns with team goals and overall company culture.
+Engineering Managers play a vital role in establishing and executing recognition programs in team culture. They understand the importance of acknowledging their team's contributions and achievements. As such, their main responsibility is designing and implementing effective recognition programs that motivate and inspire the team. 
+
+One challenge they face in this role is ensuring genuine and inclusive recognition. They tackle this by regular feedback sessions, timely appreciation, and personalized recognitions. They also need to balance recognitions between small daily wins and significant achievements. 
+
+Success in this role requires a keen understanding of the team's work and an empathetic approach. Trust-building and communication skills are also necessary to foster a sense of appreciation within the team. Engineering Managers must create spaces where everyone feels their work is valued.

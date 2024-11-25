@@ -1,3 +1,7 @@
 # Strategic proposals
 
-An Engineering Manager plays a crucial role in forming strategic proposals. They are tasked with identifying solutions to departmental and organizational challenges, and presenting them to executives. This requires meticulous planning, combing through technical data, and forecasting impacts. Their communication must be lucid and convincing while conveying complex information. They may face challenges in balancing technical details with executive-level simplicity. An effective Engineering Manager approaches this through a mix of technical proficiency, clear communication, and a deep understanding of business objectives.
+An Engineering Manager's role in strategic proposals involves developing and presenting potential strategies to executives. They need to understand the technical aspects of projects or strategies, and relay this information to non-technical audiences persuasively. 
+
+The challenge lies in tailoring technical content for an executive audience. This requires exceptional communication skills and an ability to simplify complex information. A successful Engineering Manager is one who can translate complex engineering concepts into strategic proposals that align with the company's objectives.
+
+Key responsibilities include understanding the company's strategic direction, proactively identifying areas for improvement or innovation, and crafting strategic proposals that clearly communicate benefits, costs, and potential risks. It's a demanding task that necessitates critical thinking, strategic planning, and clear communication skills.

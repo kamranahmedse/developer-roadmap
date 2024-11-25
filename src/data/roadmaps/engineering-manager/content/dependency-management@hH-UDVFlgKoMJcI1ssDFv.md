@@ -1,3 +1,7 @@
 # Dependency management
 
-Managing dependencies is a pivotal role for an Engineering Manager. They identify, track, and handle dependencies within and outside their team, ensuring smooth project progress. The manager's key tasks include enabling improved communication, mitigating potential risks, and ensuring timely issue resolution. They tackle challenges like unforeseen changes or delays using strategic planning and effective collaboration. Success in dependency management requires exemplary coordination and negotiation skills, keen attention to detail, and strong problem-solving capabilities. The ultimate goal is to deliver projects efficiently without compromising on quality.
+Dependency management plays a crucial role in an Engineering Manager's life. They need to understand and manage the dependencies between various tasks in a project. This includes determining what needs to be done first, what tasks depend on others, and what can be done in parallel. This is vital to keep projects on schedule and prevent bottlenecks.
+
+Engineering Managers face the challenge of juggling multiple dependencies at once, in a dynamic environment where priorities can shift rapidly. They use project management tools and methodologies, like Agile or Scrum, to visualize dependencies and manage them effectively. Regular communication with the team and other stakeholders also help to clarify dependencies and make adjustments as needed.
+
+To excel in this field, Engineering Managers need to be highly organized and detail-oriented. They also need strong problem-solving skills to navigate challenges and keep projects moving smoothly.

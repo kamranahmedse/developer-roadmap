@@ -1,3 +1,7 @@
 # Tech Talks
 
-As an Engineering Manager, facilitating Tech Talks is crucial for effective knowledge transfer within your team. They ensure the widespread sharing of skills, ideas, and expertise. Your responsibility involves scheduling talks, encouraging team members to present on their area of expertise, and creating an environment promoting active listening and involvement. Challenges may include initiative from team members and time management. Skills needed include communication, leadership, and organization. Remember, the goal here is promoting a culture of learning and continuous improvement.
+Engineering Managers often utilize Tech Talks as an effective method for knowledge transfer within the team. It's their responsibility to organize these sessions where team members can share ideas, innovations, and discoveries related to their technical work. These discussions can help to improve overall team understanding, promote learning, and foster a culture of open communication.
+
+One challenge for managers is getting team members to actively participate in Tech Talks. To overcome this, they might offer incentives or make participation part of performance assessments. Also, having clearly defined topics can help keep discussions focused and engaging.
+
+Successful Engineering Managers encourage team members to take ownership of Tech Talk sessions. This approach promotes leadership within the team and helps to share knowledge in a more organic and relatable way.

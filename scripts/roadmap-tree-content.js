@@ -597,7 +597,9 @@ const prompt = `
     - What are their key responsibilities related to this topic?
     - What challenges do they face and how do they address them?
     - What skills and approaches are needed to succeed in this aspect?
-  The content should be a short textual paragraph that is NO MORE THAN 100 words.
+  The content should be a few short textual paragraphs (MAXIMUM 3) that is NO MORE THAN 130 words.
+  IMPORTANT: Use simple and clear English. Avoid complex words and jargon when possible.
+  Write in a way that is easy to understand. Use short sentences and common words.
 `;
 
 /**
