@@ -243,8 +243,44 @@
   },
   "f7N4pAp_jBlT8_8owAcbG": {
     "title": "Performance",
-    "description": "",
-    "links": []
+    "description": "Key areas to improve Vue.js performance include lazy loading components to minimize initial load times, optimizing rendering to prevent unnecessary re-renders, implementing efficient state management using modern libraries like Pinia, reducing the bundle size by code splitting and tree shaking, utilizing virtual scrolling for large lists and tables, continuously monitoring performance to detect potential bottlenecks, and minimizing dependencies to decrease overall load.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to Optimize Performance in Vue.js Applications: Beginner to Advanced Guide",
+        "url": "https://dev.to/delia_code/how-to-optimize-performance-in-vuejs-applications-beginner-to-advanced-guide-53db",
+        "type": "article"
+      },
+      {
+        "title": "Vue Directives Basics",
+        "url": "https://vuejs.org/guide/best-practices/performance.html",
+        "type": "article"
+      },
+      {
+        "title": "Pinia Documentation",
+        "url": "https://pinia.vuejs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Webpack Documentation",
+        "url": "https://webpack.js.org/",
+        "type": "article"
+      },
+      {
+        "title": "Vue Virtual Scroller",
+        "url": "https://github.com/Akryum/vue-virtual-scroller",
+        "type": "article"
+      },
+      {
+        "title": "Vue Devtools Documentation",
+        "url": "https://devtools.vuejs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Vue Best Practices",
+        "url": "https://vuejs.org/guide/best-practices/overview.html",
+        "type": "article"
+      }
+    ]
   },
   "tU4Umtnfu01t9gLlnlK6b": {
     "title": "Conditional Rendering",
