@@ -1,3 +1,7 @@
 # Change strategy
 
-An Engineering Manager plays a crucal role in the development and implementation of a change strategy during organizational change. Crafting a clear, achievable strategy is key, with an emphasis on careful planning, communication, and responsiveness. An Engineering Manager must navigate potential resistance to change, help their team adapt, and ensure normal operations are maintained during the transition. Clear goal-setting, empathy, and strong interpersonal skills matter. Frequent evaluation of the strategy is also needed to make necessary adjustments and keep the whole team aligned with the new direction.
+An Engineering Manager plays a vital role in developing and deploying organizational change strategies. They need to clearly define the vision, set realistic objectives, devise a detailed roadmap for change, and regularly update the team. Proper communication is vital to manage any fears or doubts among team members.
+
+In this regard, skills required vary from strategic thinking to effective communication and empathy. It's not just about the technical aspects but understanding the human side of change. It is essential to identify the potential impacts of the change and prepare teams accordingly.
+
+The challenge lies in balancing the pace of change and dealing with resistance. Successful managers often tackle this by ensuring inclusivity in strategy development, open dialogues, and continuous support throughout the transition process.

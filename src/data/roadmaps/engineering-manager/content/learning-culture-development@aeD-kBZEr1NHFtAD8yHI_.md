@@ -1,3 +1,7 @@
 # Learning culture development
 
-An Engineering Manager cultivates a learning culture by promoting continuous growth, curiosity, and skill enrichment. They bear the responsibility to implement frameworks that empower team members to learn new technologies and share knowledge. Challenges might arise in determining the type of learning that works best for the team, and keeping everyone engaged and accountable. Successful managers deploy various learning approaches, including mentoring, training, and self-directed learning. They encourage openness, feedback, and ensure learning is a team-based, not competitive or isolating, experience.
+As an Engineering Manager, fostering a learning culture in the team is a notable aspect of their role. This involves creating an environment where team members are comfortable asking questions and making mistakes, seeing them as opportunities for learning and growth. The manager facilitates this by promoting continuous learning opportunities like webinars, workshops, and online classes. 
+
+One challenge they might face is resistance to change or learning new skills. To address this, they should demonstrate the value and importance of continuous learning. Show how it leads to improved performance and opens up new opportunities.
+
+To succeed, an Engineering Manager needs effective communication and leadership skills. They need to set clear expectations, provide positive reinforcement, and offer feedback to guide their team's learning and skill development.

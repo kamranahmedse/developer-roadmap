@@ -1,3 +1,7 @@
 # Change management
 
-Engineering Managers play a crucial role in change management within the organization. They are responsible for implementing changes effectively, ensuring teams are prepared for the transition, and reducing any potential disruptions. The task might be arduous, owing to resistance from team members, unforeseen challenges, or shortcomings in planning. To successfully navigate these, a manager needs excellent communication and leadership skills. Furthermore, adopting a systematic approach can help them understand the implications of changes, devise effective strategies, and inspire their team to embrace the new processes.
+Engineering Managers play a significant role in change management. They are responsible for implementing new processes and technologies while ensuring minimal disruption. One of the challenges they face is managing the human side of change. This involves addressing employee fears and resistance to avoid a drop in productivity.
+
+To successfully navigate change, Engineering Managers should use their keen understanding of the organization and its dynamics. They need to balance speed of implementation with the need for buy-in from all stakeholders. This takes strong communication skills, empathy, and effective planning.
+
+In all, change management is vital in an engineering team. It allows them to adapt to new situations, keep up with industry trends, and continually improve their processes and outcomes. The Engineering Manager's skill in this area is key to the team’s success and resilience.

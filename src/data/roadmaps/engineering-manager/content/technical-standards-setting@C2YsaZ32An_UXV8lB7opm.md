@@ -1,3 +1,7 @@
 # Technical Standards Setting
 
-Setting technical standards is a crucial task for an Engineering Manager. They must establish clear and achievable benchmarks that the team can realistically meet. This includes aligning the standards with the company's overall objectives and maintaining a balance between quality, cost, and time constraints. Challenges include getting buy-in from the team and ensuring the standards remain current with evolving technology. Essential skills include adaptability, foresight, and persuasive communication. Monitoring and continual updating of these standards is also part of their duty to maintain quality and efficient processes.
+Engineering Managers play a crucial role in the setting of technical standards. Their key responsibilities include identifying appropriate industry standards, ensuring the team's technical resources align with these standards, and implementing them consistently across all engineering projects.
+
+A common challenge faced by Engineering Managers is sustaining a balance between maintaining high standards and keeping up with the speed of technology innovations. They can address this by staying abreast with the latest technology trends and adjustments in industry standards.
+
+To succeed in this aspect, an Engineering Manager needs keen attention to detail, ability to research and comprehend complex technical concepts, and strong leadership skills to guide the team in aligning with these standards. Demonstrating flexibility and open-mindedness to change is also a crucial approach in managing evolving technical standards.

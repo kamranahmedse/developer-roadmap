@@ -1,3 +1,7 @@
 # Technical Risk Assessment
 
-As an Engineering Manager, assessing technical risks is vital to achieve strategic objectives. Their role involves identifying potential threats that could hamper project progress or system performance. Key responsibilities include quantifying the impact of these risks, planning mitigation strategies, and keeping the entire team informed. Challenges might lie in accurately predicting risks in a rapidly evolving tech landscape. To succeed, a balance of technical expertise, strategic thinking, and strong communication skills is essential. Managers must be proactive, regularly reviewing systems and project progress to pre-emptively identify and address technical risks.
+An Engineering Manager plays a pivotal role in technical risk assessment, acting as the gatekeeper to foresee and avoid potential dangers. Their key duties revolve around identifying the technical debt, evaluating its potential impact, and laying out choices to mitigate it. They also participate in disaster recovery planning, ensuring the team is prepared to handle any technical issues that might arise.
+
+The role also presents certain challenges such as keeping up with fast-changing technology trends and anticipating outdated technologies that could pose a risk. To navigate these roadblocks, their approach often involves consistent learning, problem-solving capabilities, and proactiveness.
+
+To succeed in technical risk assessment, an Engineering Manager requires a combination of technical expertise and adept risk management. They need to have a thorough understanding of their tech stack, the ability to foresee potential issues, and develop foolproof contingency plans.

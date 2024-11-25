@@ -1,3 +1,7 @@
 # Scaling Infrastructure
 
-An Engineering Manager devises and maps out effective strategies for scaling infrastructure. By understanding the current technology stack, they can identify potential bottlenecks, scalability issues, and improvements to optimize the system. They coordinate with their team to manage resources and infrastructure expansion in a sustainable manner. The challenges come from predicting future needs and designing flexible systems. Communication skills, foresight, and understanding cloud services, load balancing, and database technologies are crucial. They perform a perilous balancing act, considering factors like desired performance, cost, and system reliability.
+An Engineering Manager is vital to scaling infrastructure because they typically lead the design, development, and execution of such operations. As a part of their role, they might identify current bottlenecks, forecast future growth, and plan accordingly so the infrastructure can support the increased load.
+
+The process often involves challenges such as predicting growth accurately, balancing costs with potential needs, and efficiently implementing changes. To overcome them, effective communication, thorough technical knowledge, and good planning skills are needed.
+
+Success hinges on the ability to constantly monitor the infrastructure's performance, adjust strategies as needed, and maintain clear communication lines with both the developers who will implement the changes and the stakeholders who will approve the costs.

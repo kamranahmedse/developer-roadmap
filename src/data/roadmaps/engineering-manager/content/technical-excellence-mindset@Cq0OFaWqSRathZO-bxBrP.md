@@ -1,3 +1,7 @@
 # Technical excellence mindset
 
-An Engineering Manager nurtures a technical excellence mindset by fostering a culture of continuous learning and improvement. They ensure their team is provided with the necessary training, resources, and tools. They encourage risk-taking and learning from failures - both instrumental for innovation and growth. Challenges include balancing quality and pace of delivery. This can be managed by setting realistic goals and maintaining open communication. Key skills include the ability to inspire and motivate, foster creativity, and a genuine passion for technological innovation.
+An Engineering Manager plays a vital role in promoting a technical excellence mindset. Their key responsibility is to foster an environment where the team constantly challenges the status quo and seeks ways to improve their technical skills and knowledge. This requires creating an atmosphere that values continuous learning, encourages innovation, and rewards creative problem-solving.
+
+The challenge lies in maintaining this mindset while also meeting project deadlines and business objectives. Striking a balance between fostering technical excellence and delivering quality output on time is crucial. The manager addresses this by breaking down complex technical tasks into achievable goals that also offer learning experiences.
+
+Skills such as leadership, efficient communication, problem-solving, and goal-oriented thinking are needed to succeed in instilling a technical excellence mindset. The manager needs to lead by example, continuously improving their own skills and inspiring their team to do the same.

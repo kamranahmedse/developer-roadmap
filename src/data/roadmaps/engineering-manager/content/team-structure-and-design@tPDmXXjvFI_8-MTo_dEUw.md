@@ -1,3 +1,7 @@
 # Team Structure and Design
 
-An Engineering Manager plays a crucial role in designing the team structure. They wisely distribute roles and responsibilities based on individual skill sets, ensuring each task is assigned to the most capable team member. Building efficient team structures can pose a challenge as it involves tactical decision-making and strategic planning. To succeed, an Engineering Manager needs to have thorough knowledge of everyone's specialties, and problem-solving abilities to align those specialties with the team's goals effectively. Their responsibility is to foster an environment of collaboration where everyone's abilities are optimally utilized.
+Team structure and design weigh heavily on an Engineering Manager's shoulders. Key responsibilities include determining the necessary roles, defining their right fit, and establishing efficient channels of communication. This foundation is fundamental to improving overall productivity and agile adaptability. 
+
+Challenges include aligning team design to project demands while balancing individual talent and skill proficiencies. Managers often resolve these issues by identifying their teams' strengths, driving role clarity, and fostering a culture of open, honest feedback. 
+
+Success in this area requires robust understanding of software development processes, emotional intelligence for effective interpersonal relationships, and strategic planning skill to design adaptable team structures. By dexterously aligning individual strengths to project needs, managers truly extract the maximum potential from their teams.

@@ -1,3 +1,7 @@
 # Agile methodologies
 
-An Engineering Manager needs to effectively adapt and integrate Agile methodologies in the project's lifecycle. They play a pivotal role in fostering a culture of flexibility, transparency, and continuous improvement. Their responsibilities include coordinating with team members for sprint planning, backlog grooming, and conducting daily stand-ups. They foresee and tackle challenges like ensuring timely deliverables, managing scope changes and maintaining high quality. Key skill requirements encompass efficient problem-solving, strong communication and adapting to a fast-paced environment. In essence, they guide their team through the agile process ensuring its successful implementation.
+An Engineering Manager ensures smooth implementation of Agile methodologies within the team. The manager oversees sprint planning, backlog refinement, and retrospectives for consistent development flow. They have the key role in facilitating communication, fostering a high-performing environment, and encouraging adaptive planning.
+
+The Engineering Manager faces the challenge of maintaining an Agile mindset even when facing pressures to deliver. They have to ensure team members are motivated, engaged, and productive. This can be handled by adopting feedback-friendly culture and regular knowledge-sharing sessions. 
+
+Skills required for an Engineering Manager in handling Agile methodologies include strong leadership, excellent communication, and proficiency in risk management. The manager has to balance the opposing needs of flexibility and stability, always keeping customer satisfaction in perspective.

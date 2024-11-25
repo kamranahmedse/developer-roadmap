@@ -1,3 +1,7 @@
 # Knowledge sharing practices
 
-An Engineering Manager shapes knowledge-sharing practices within their engineering team. They ensure structured methods are in place for team members to learn, grow and exchange information. Key responsibilities involve promoting an environment that fosters continuous learning, encouraging regular sharing sessions and use of tools like Confluence or GitHub for documentation. They turn challenges such as knowledge hoarding and communication silos into collaborative learning opportunities. To excel, they need robust communication and motivational skills, and an understanding of tools and platforms that facilitate digital collaboration.
+An Engineering Manager drives knowledge sharing practices within an engineering culture. Ensuring his team is updated with recent tech advances and system upgrades is one of his key responsibilities. Conducting regular workshops, brainstorming sessions, organizing 'Tech-Talks' proves essential in maintaining a consistent knowledge flow.
+
+Challenges often arise in the form of team members being reluctant to share their expert knowledge, fearing it might minimize their value. To overcome this, the engineering manager should promote a supportive environment where every member understands the value of collective growth. 
+
+To succeed, the manager must display great communication skills, active listening, and respect for everyone's ideas and insights. An open and supportive environment encourages everyone to participate actively, leading to a thriving engineering culture.

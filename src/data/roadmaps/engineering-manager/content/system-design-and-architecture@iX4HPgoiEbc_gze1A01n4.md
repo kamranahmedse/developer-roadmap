@@ -1,3 +1,7 @@
 #  System Design and Architecture
 
-An Engineering Manager holds the vital role in steering system design and architecture. This involves making key decisions, such as which technologies to utilize, and fostering effective communication among team members to ensure alignment with overall system goals. The manager analyzes system requirements and chooses suitable design strategies, balancing the trade-offs between performance, scalability, and maintainability. Challenges often lie in managing competing priorities and stakeholder expectations, which necessitates deep technical knowledge, strong negotiation skills, and the ability to lead through influence. Ultimately, an Engineering Manager must create and maintain an architecture that effectively serves the needs of the business.
+An Engineering Manager leads and oversees the system design and architecture. They're responsible for ensuring that the design aligns with the company's business goals and client needs. Their tasks may include making key technical decisions, reviewing design proposals, architecting scalable systems, and ensuring systems' redundancy and fault tolerance.
+
+Technical issues are common in system design and architecture. An Engineering Manager handles these by having a deep understanding of the systems and their dependencies. They must effectively communicate these complexities to their team and guide the problem-solving process.
+
+The manager needs excellent problem-solving and communication skills. They need to understand the trade-off between design complexities, operational costs, and ease-of-use. This helps in creating systems that are efficient, user-friendly, and cost-effective.

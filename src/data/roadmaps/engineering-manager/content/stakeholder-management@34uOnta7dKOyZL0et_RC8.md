@@ -1,3 +1,7 @@
 # Stakeholder management
 
-An Engineering Manager plays a significant role in stakeholder management during organizational changes. Their responsibilities include conveying information about changes to both internal and external stakeholders and managing their concerns. They face challenges like resistance to change, so they must have strong communication and persuasion skills. An Engineering Manager must also understand stakeholders' positions to address their needs appropriately and ensure overall satisfaction with the implemented changes. Negotiation skills, diplomacy, and the ability to navigate complex relationships are critical for success in stakeholder management.
+An Engineering Manager plays a critical role in stakeholder management during organizational change. They act as the link between the technical team and all other stakeholders (e.g., customer, management, or other teams). Their main responsibilities include communicating effectively about the impact of the proposed changes on the product delivery, ensuring that the stakeholders are on the same page about it.
+
+The challenge here is that stakeholders may have different perspectives and respond differently to the change. To handle this, the Engineering Manager needs to have good negotiation skills and the ability to manage conflicts. They must present information in a way that maintains stakeholder buy-in throughout the process.
+
+In essence, successful stakeholder management requires clear communication, empathy, and understanding of different stakeholder's needs. This ensures a smoother transition with minimal disruptions to the engineering workflow.

@@ -1,3 +1,7 @@
 # Business continuity
 
-An Engineering Manager shoulders the responsibility of business continuity, ensuring the team’s functionality isn't disrupted, especially during unforeseen circumstances. This involves initiating contingencies like remote working, split operations, or alternative task assignments. The manager faces challenges in maintaining communication lines and keeping the team motivated. Success requires strategic planning, adaptability, and robust communication skills. It's vital not to overlook the human element while juggling resources and technical needs. Remember that maintaining regular touchpoints and showing empathy towards team members' individual situations goes a long way in sustaining business continuity.
+An Engineering Manager plays a pivotal role in the domain of business continuity. This involves ensuring that the various aspects of technological and process frameworks are resilient to disruptions. The aim is to sustain core business operations during times of crisis.
+
+Key responsibilities include setting up robust risk management systems, executing incident-response plans, and ensuring data integrity during downtime. It's a challenge to maintain operational resilience without stinting ongoing projects, and managing it involves a delicate balance of resources.
+
+To achieve this, Engineering Managers must possess excellent problem-solving skills and a clear understanding of business operation needs. Regular risk assessment and sharpening the team's skill set to adapt and respond to uncertainty quickly are essential strategies. Robust infrastructure, policy planning, and good leadership are underlying requirements to render effective business continuity.
