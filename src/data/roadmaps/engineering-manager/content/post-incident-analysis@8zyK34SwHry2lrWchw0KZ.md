@@ -1,1 +1,3 @@
 # Post-incident analysis
+
+As an Engineering Manager, part of your role involves leading post-incident analysis after an operational hiccup. It's your responsibility to understand what went wrong, why, and devise measures to prevent similar occurrences. The challenge lies in striking a balance between diving into the details and keeping a strategic view. Critical skills for success include effective communication to ensure all team members understand what happened and how to avoid it in the future, analytical thinking for understanding the root causes, and strategic planning for implementing preventive measures.

@@ -1,1 +1,3 @@
 # Production issues management
+
+Engineering Managers handle production issues management as part of risk mitigation. They're responsible for identifying and addressing potential risks that can affect production. This typically involves coordinating with development teams to pinpoint problem areas, developing and implementing solutions, and monitor outcomes. Key challenges can include complex issues that aren’t easily resolved and maintaining production efficiency. To effectively manage these issues, a constructive approach, combined with strong problem-solving and risk assessment skills, are required. Ultimately, the Engineering Manager ensures smooth production operations, limiting disruptions and promoting efficiency.

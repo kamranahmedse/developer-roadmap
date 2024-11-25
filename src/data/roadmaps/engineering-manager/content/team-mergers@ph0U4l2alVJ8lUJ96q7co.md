@@ -1,1 +1,3 @@
 # Team mergers
+
+Engineering Managers play a pivotal role in team mergers. They facilitate smooth transitions by transparent communication and by managing emotions of the team members. Since team mergers often involve reshuffling roles and responsibilities, managers must ensure fair distribution of work while leveraging the strengths of new team members. They address challenges by foreseeing potential clashes and laying down a clear roadmap. The key skills needed include conflict resolution, empathy, and strong leadership to guide the team positively into this new phase.

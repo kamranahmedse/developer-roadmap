@@ -1,1 +1,3 @@
 # KPI Definition
+
+Engineering Managers are instrumental in defining Key Performance Indicators (KPIs) for projects. They work collaboratively with team members to identify important metrics tied to project goals, ensuring each KPI is SMART - Specific, Measurable, Achievable, Relevant, and Time-bound. The challenge is to select KPIs that genuinely reflect the project's progress and results. Once established, the Engineering Manager tracks these KPIs, responding to deviations timely. Clear definition of KPIs requires a sound understanding of business objectives, team capabilities and data analysis, a skill that successful Engineering Managers must possess.

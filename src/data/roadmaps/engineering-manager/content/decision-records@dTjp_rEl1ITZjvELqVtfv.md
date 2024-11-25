@@ -1,1 +1,3 @@
 # Decision records
+
+Engineering managers often rely on decision records to track significant choices made during a product's development process. It's their responsibility to ensure that any rationale, context, and implications of a decision are accurately documented. This helps in maintaining consistency, responding to changes or issues, and onboarding new team members. Challenges include ensuring updates are timely and records rightly reflect what was decided. An engineering manager must have strong organizational and communication skills, and foster a culture where team members realize the importance of detailed and appropriate documentation.

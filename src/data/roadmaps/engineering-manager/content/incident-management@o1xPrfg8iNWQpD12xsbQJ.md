@@ -1,1 +1,3 @@
 # Incident Management
+
+As Engineering Managers, a vital role they play in ensuring quality and process is handling Incident Management. This requires them to establish strong communication, coordination and problem-solving skills. Their responsibility extends from diagnosing the incident and leading the team to a quick resolution, to preventing future issues by implementing systemic improvements based on post-mortem analyses. Challenges include maintaining calm during crises and efficiently directing resources towards complex problems. Success largely depends on their technical competence, combined with their ability to get the best out of their team in high-pressure situations.

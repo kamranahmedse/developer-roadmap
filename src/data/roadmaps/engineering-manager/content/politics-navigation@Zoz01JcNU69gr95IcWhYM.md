@@ -1,1 +1,3 @@
 # Politics navigation
+
+Politics navigation, for an Engineering Manager, involves identifying and understanding the power dynamics within the organization. Managers must adeptly form alliances and manage differing opinions to foster a collaborative environment for their team. Their responsibilities include handling conflicts, negotiating resources, and advocating for their team's interests. Challenges include avoiding negativity and maintaining neutrality while managing stakeholders. Key skills include diplomacy, communication and emotional intelligence. To succeed, managers need to be aware of political undercurrents, promoting their team without stepping on toes.

@@ -1,1 +1,3 @@
 # Security incident handling
+
+As an Engineering Manager, handling security incidents is crucial. They're responsible for ensuring the team swiftly responds to any breach or threat, minimizing damage and investigating vulnerabilities for future prevention. To address these challenges, they must be proficient in coordinating diverse teams, draw from a deep understanding of systems security, and maintain up-to-date knowledge on threat sources. Managers also foster a culture of security consciousness within their teams, emphasizing the importance of adherence to best practices to avoid incidents before they occur.

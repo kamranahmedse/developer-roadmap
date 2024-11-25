@@ -1,1 +1,3 @@
 # Lessons Learned
+
+An Engineering Manager plays a crucial role in collecting and applying Lessons Learned. His/Her main responsibility is to ensure that knowledge acquired from past projects is documented and used to improve future outputs. This involves fostering a culture of transparency and learning, where mistakes are discussed openly without blame. Challenges include overcoming team resistance and making sure the information is accessible and understandable. Mastery of communication, organization, and leadership are needed with an emphasis on promoting continuous improvement and knowledge sharing within the team.

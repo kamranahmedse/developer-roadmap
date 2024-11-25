@@ -1,1 +1,3 @@
 # Legacy System Retirement
+
+Retiring legacy systems can be a daunting task for an Engineering Manager. They're responsible for assessing the viability, risks, and costs associated with the process. To navigate this challenge, they need to formulate a technical strategy that ensures smooth transition with minimal business disruption. Central to this strategy is considering personnel's skillsets and potential system dependencies. Engineering Managers often solicit cross-functional input and foster open communication to ensure alignment and accountability. Training in project management and a deep understanding of the technical stack is crucial to successfully retire a legacy system.

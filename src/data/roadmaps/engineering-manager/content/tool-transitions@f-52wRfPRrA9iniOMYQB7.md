@@ -1,1 +1,3 @@
 # Tool transitions
+
+Engineering Managers play a pivotal role in tool transitions, a key aspect within technical change. They are responsible for strategizing and overseeing the transition to ensure minimal disruption in the workflow. Challenges faced include resistance from team members and potential loss of productivity during the transition. To address these, Managers must communicate the benefits of the new tool clearly and provide adequate training. Effective tool transitions require strong leadership, interpersonal skills, and a thorough understanding of the new and existing tools.

@@ -1,1 +1,3 @@
 # Role transitions
+
+Role transitions in a team require a delicate balance. As an Engineering Manager, managing these changes could involve moving team members between roles, or introducing new roles within the team. The key responsibility is to make sure that morale and productivity are not negatively affected. Challenges include ensuring smooth skills transfer and allaying concerns about the change. Proactive communication, empathy, and strategic planning can help address these issues. Boosting team acceptance and readiness for the change helps to ensure the transition results in productivity and morale improvements.

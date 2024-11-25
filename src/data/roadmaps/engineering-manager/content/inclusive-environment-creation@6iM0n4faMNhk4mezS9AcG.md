@@ -1,1 +1,3 @@
 # Inclusive environment creation
+
+An Engineering Manager plays a key role in fostering inclusion within their team. They should understand and value the unique perspectives and experiences that every team member brings, and ensure that these diverse viewpoints are respected and utilized. Creating an inclusive environment involves measures like open communication, unbiased practices, providing equal opportunities, and soliciting feedback. Overcoming challenges like unconscious bias and ensuring everyone feels heard and valued can be tricky. These require interpersonal skills, empathy, and ongoing effort. The manager should drive initiatives promoting inclusivity, thus boosting engagement and productivity.

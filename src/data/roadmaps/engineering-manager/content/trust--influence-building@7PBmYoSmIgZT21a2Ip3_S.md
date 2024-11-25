@@ -1,1 +1,3 @@
 # Trust / Influence Building
+
+An Engineering Manager needs to master trust and influence building, vital for team coherence. Trust, fostered through consistent transparency and reliability, is essential for creating a resilient team. Influence comes into play when aligning the team towards shared goals, often achieved by effective communication and an encouraging environment. Challenges include avoiding favoritism and maintaining unbiased openness. To overcome these, they must display integrity, respect for team members' contributions, and sound knowledge thereby influencing team decision-making and increasing overall productivity and innovation.

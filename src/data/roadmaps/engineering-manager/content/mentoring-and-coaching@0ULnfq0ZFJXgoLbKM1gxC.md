@@ -1,1 +1,3 @@
 # Mentoring and Coaching
+
+An Engineering Manager plays a pivotal role in mentoring and coaching. This involves guiding team members to enhance their skills, resolve complex technical issues, and focus on their career progression. Their key responsibilities include identifying individual strengths and weaknesses, fostering a supportive learning environment, and providing constructive feedback. They challenge the status quo by addressing personal and working style differences which could lead to family-like squabbles if not managed properly. Success here requires skills like empathy, effective communication, problem-solving and the ability to tailor guidance to each individual's learning style and career aspirations.

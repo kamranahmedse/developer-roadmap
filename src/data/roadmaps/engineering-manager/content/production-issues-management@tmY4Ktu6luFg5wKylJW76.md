@@ -1,1 +1,3 @@
 # Production issues management
+
+Managing production issues is a crucial responsibility for an Engineering Manager. They must create and lead an efficient response strategy to swiftly resolve any incidents to ensure minimal disruption. This involves preparing the team for these eventualities, coordinating team efforts, and making quick, informed decisions. The key challenges they face include crisis management, accurate problem diagnosis and solution implementation while keeping communication lines open with stakeholders. Success requires technical knowledge, strong communication, leadership skills, and a calm demeanor under pressure.

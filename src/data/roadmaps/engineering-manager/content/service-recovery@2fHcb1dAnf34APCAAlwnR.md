@@ -1,1 +1,3 @@
 # Service Recovery
+
+The Engineering Manager plays a crucial role during service recovery following an incident. They orchestrate the triage, identifying the cause and coordinating remediation efforts. They are responsible for leading the engineers to ensure systems are restored promptly while maintaining communication with stakeholders. Handling this task requires decision-making skills and proficiency in crisis management. The challenges they may face include preventing a recurrence, and thus they must facilitate a post-mortem analysis to identify lessons learned and apply improvements. This aspect demands adaptability, technical prowess, and exceptional leadership to rally the team during high pressure situations.

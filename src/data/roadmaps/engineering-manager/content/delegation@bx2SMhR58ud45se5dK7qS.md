@@ -1,1 +1,3 @@
 # Delegation
+
+Delegation is a critical duty of an Engineering Manager, allowing them to distribute tasks effectively throughout the team. The key is identifying the right tasks for the right people according to skills, interests, and workload. Lack of effective delegation may lead to micromanagement and overworked team members. Managers must be able to trust their team, communicate clearly about task expectations, and be ready to provide support without taking over. It’s a delicate balance requiring interpersonal skills and awareness, key elements in successful people management. This aids in boosting the whole team's productivity.

@@ -1,1 +1,3 @@
 # Disaster recovery
+
+An Engineering Manager's role in disaster recovery extends beyond technical understanding. They create and implement strategies ensuring their team can quickly recover from unforeseen issues. This involves planning and drills, consistent backups, and system redundancies. Mitigating potential risks to software operations entails foreseeing challenges and quick decision-making. Active communication across teams is crucial to ensure everyone understands their roles during crisis events. Success in disaster recovery requires a robust analytical approach, robust technical competencies, and strong leadership skills.

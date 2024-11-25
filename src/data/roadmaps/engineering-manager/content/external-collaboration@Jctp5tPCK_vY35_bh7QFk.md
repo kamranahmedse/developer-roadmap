@@ -1,1 +1,3 @@
 # External collaboration
+
+External collaboration entails an Engineering Manager forging connections with industry partners, clients, and external stakeholders. A vital part of their role involves continuously assessing partnerships' value and enhancing communication channels to ensure smoother project execution. They often grapple with different work cultures and time zones which require them to be adaptable and culturally competent. Success in external collaboration is rooted in strong negotiation, clear communication, and an ability to align diverse groups towards common engineering goals. Therefore, building these key skills is vital for an Engineering Manager.

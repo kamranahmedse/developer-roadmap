@@ -1,1 +1,3 @@
 # System Monitoring & Performance
+
+Engineering Managers play a crucial role in ensuring system monitoring & performance. They are responsible for implementing monitoring tools to track system health and identifying performance bottlenecks. Scaling the system to handle increased workload can be quite challenging, requiring a proactive approach and deep technical understanding. They also need to collaborate closely with their team to analyse performance data, respond to system alerts, and refine the system's architecture. Thus, good communication skills, decision-making abilities and a strong knowledge of system architectures are essential.

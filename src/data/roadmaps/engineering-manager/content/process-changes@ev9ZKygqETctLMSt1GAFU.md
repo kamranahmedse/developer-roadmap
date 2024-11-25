@@ -1,1 +1,3 @@
 # Process changes
+
+As an Engineering Manager, handling process changes involves analyzing current operations, identifying areas of improvement and creating new processes to enhance efficiency. They are responsible for evaluating the impacts of potential changes and communicating these anticipations to the team effectively. Challenges may include resistance to change and productivity losses during transition. Therefore, successful managers need skills like risk assessment, team communication, and flexible thinking. They need to ensure that changes are implemented smoothly, simultaneously ensuring minimal disruption and maximum adaptation from the engineering team.

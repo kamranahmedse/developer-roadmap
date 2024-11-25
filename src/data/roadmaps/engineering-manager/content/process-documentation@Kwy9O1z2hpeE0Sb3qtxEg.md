@@ -1,1 +1,3 @@
 # Process documentation
+
+An Engineering Manager plays a critical role in process documentation. They ensure accuracy and transparency by having a deep understanding of each procedure. Their key responsibilities include creating, updating, and ensuring the accessibility of these documents, which is vital for tasks' efficiency and consistency across their team. Challenges faced include keeping pace with fast-changing tech environments and ensuring team's compliance with the documented processes. Skills needed include strong communication, attention to detail, and adaptability to change. A successful manager always encourages their team to thoroughly follow and regularly update process documentation.

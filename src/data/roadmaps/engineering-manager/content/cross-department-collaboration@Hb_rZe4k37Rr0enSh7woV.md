@@ -1,2 +1,3 @@
-# Cross-Department Collaboration
+# Cross-department collaboration
 
+Cross-department collaboration under an engineering manager calls for exemplary communication and negotiation skills. It is the manager's responsibility to facilitate understanding and cooperation between technical staff and other departments. They prevent silo mentality by promoting shared goals and understanding differing processes. The main challenge is mitigating conflicting priorities, which they tackle by maintaining ongoing dialogue and compromise. Success lies in building relationships across teams, presenting complex technical matters simply to non-technical staff, and understanding their department's role in the overall organizational context.

@@ -1,1 +1,3 @@
 # EM vs Tech Lead vs IC
+
+An Engineering Manager, Tech Lead, and Individual contributor (IC) differ largely in their responsibilities and focus areas. The Engineering Manager oversees the team's growth, ensures project alignment with business goals, handles staffing issues and mentors team members. Comparatively, a Tech Lead is typically involved more intricarily in the dynamics of code development and is responsible for making key technical decisions. On the other hand, an IC has a hands-on role, contributing directly to codebase, but usually lacks the decision-making power. The Engineering Manager must acknowledge these differences and ensure each role works harmoniously for a productive output.

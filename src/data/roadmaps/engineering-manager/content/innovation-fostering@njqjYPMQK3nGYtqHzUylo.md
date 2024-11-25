@@ -1,1 +1,3 @@
 # Innovation fostering
+
+An Engineering Manager must foster innovation to stay competitive and adapt to technological changes. They provoke creative thinking through regular brainstorming sessions, encourage risk-taking, and provide the resources necessary for novel ideas and experiments. Key to this aspect is recognizing and rewarding unique solutions. Challenges include ensuring ideas align with the company's goals and values, and managing the potential failure of experimental strategies. A successful manager requires strong leadership and communication skills to inspire team members, and an open mind to accept and drive innovative changes.

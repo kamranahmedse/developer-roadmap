@@ -1,1 +1,3 @@
 # Velocity Tracking
+
+Velocity tracking is a vital tool for an Engineering Manager. It gauges the speed at which a team delivers work, helping them steer project timelines and resource allocation. A vital responsibility includes ensuring accurate data logging and interpreting velocity trends to predict future performance. A challenge they might face is velocity fluctuation due to team changes or varied task complexities. Addressing this needs a nuanced approach of reassessing estimation strategies, improving requirements detailing, and enhancing team skills. Consistency is key in velocity tracking, with a focus on sustained productivity rather than peak performance.
