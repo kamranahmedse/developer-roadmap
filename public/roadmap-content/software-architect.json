@@ -882,6 +882,11 @@
         "type": "article"
       },
       {
+        "title": "Authentication vs Authorization",
+        "url": "https://www.cerbos.dev/blog/authentication-vs-authorization",
+        "type": "article"
+      },
+      {
         "title": "SAML Overview",
         "url": "https://www.youtube.com/watch?v=i8wFExDSZv0",
         "type": "video"
