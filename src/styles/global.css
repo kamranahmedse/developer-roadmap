@@ -71,7 +71,7 @@ a > code:before {
 .course-content h1 > code,
 .course-content h2 > code,
 .course-content h3 > code {
-  background: #282A36 !important;
+  background: #282a36 !important;
   color: #f4f4f5 !important;
   padding: 2px 4px;
   border-radius: 5px;

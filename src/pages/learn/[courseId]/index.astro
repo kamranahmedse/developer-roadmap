@@ -1,4 +1,6 @@
 ---
+import { CourseLanding } from '../../../components/CourseLanding/CourseLanding';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 import {
   getAllCourses,
   getCourseById,
@@ -26,6 +28,7 @@ const { courseId } = Astro.params;
 const { course } = Astro.props;
 ---
 
-<pre>
-  {JSON.stringify(course, null, 2)}
-</pre>
+<BaseLayout title={course.frontmatter.title}>
+  <CourseLanding client:load />
+  <div slot='page-footer'></div>
+</BaseLayout>
