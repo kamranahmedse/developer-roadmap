@@ -2,7 +2,7 @@
 title: '24hr Story Feature'  
 description: 'Create a client-side instagram stories feature clone.'  
 isNew: false  
-sort: 30
+sort: 32
 difficulty: 'advanced'  
 nature: 'Frameworks'  
 skills:  
