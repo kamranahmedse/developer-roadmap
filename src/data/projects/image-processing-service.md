@@ -2,7 +2,7 @@
 title: 'Image Processing Service'
 description: 'Build a service that allows users to upload and process images.'
 isNew: false
-sort: 15
+sort: 1800
 difficulty: 'intermediate'
 nature: 'API'
 skills:

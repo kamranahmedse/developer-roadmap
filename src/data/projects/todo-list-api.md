@@ -2,7 +2,7 @@
 title: 'Todo List API'
 description: 'Build a RESTful API to allow users to manage their to-do list.'
 isNew: false
-sort: 7
+sort: 900
 difficulty: 'beginner'
 nature: 'API'
 skills:
