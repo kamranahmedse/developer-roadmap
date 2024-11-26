@@ -38,7 +38,7 @@ In this article, we’ll try to help guide you through the constantly growing fr
 
 ## Understanding Front End Development
 
-But before we move forward, let’s first understand what front end development is.
+But before we move forward, let’s first understand [what front end development is](https://roadmap.sh/frontend).
 
 Front end development involves creating the parts of a website or application that users interact with directly. This includes designing layouts, implementing visual elements, and ensuring a seamless user experience by coding the interactions through the use of three basic technologies: HTML, CSS, and JavaScript.
 
@@ -50,7 +50,7 @@ With that said, HTML, CSS, and JavaScript aren’t the only three front end deve
 
 ![html css and javascript layers](https://assets.roadmap.sh/guest/html-css-javascript-layers-7agjb.png)
 
-HTML, CSS, and JavaScript are the foundational technologies for front end development. Mind you, they’re not the only skills that matter, but they’re definitely the three skills you should focus on first.
+HTML, CSS, and JavaScript are the foundational [programming languages for front end development](https://roadmap.sh/frontend/languages). Mind you, they’re not the only skills that matter, but they’re definitely the three skills you should focus on first.
 
 ### HTML (HyperText Markup Language):
 
@@ -201,9 +201,9 @@ While in theory, all you need to be a front end developer is JavaScript + HTML +
 
 And in fact, those tools will also let you focus on the actual application you’re building, leaving the extra, presentation-related logic to the framework.
 
-We are, of course, talking about modern front end frameworks (or libraries) such as React, Vue, or Angular.
+We are, of course, talking about modern [front end frameworks](https://roadmap.sh/frontend/frameworks) (or libraries) such as React, Vue, or Angular.
 
-Of course, there are other options out there, such as Svelte, Solid, or even just the native Web Components that all major browsers support nowadays. However, while those are very valid options, the main 3 still remain the most used options and if you’re looking to become a front end developer, you’ll want to first focus on one of them.
+Of course, there are other options out there, such as Svelte, Solid, or even just the native Web Components that all major browsers support nowadays. However, while those are very valid options, the main 3 still remain the most used options and if you’re [looking to become a front end developer](https://roadmap.sh/frontend/how-to-become-frontend-developer), you’ll want to first focus on one of them.
 
 Each framework has its own strengths and use cases, so understanding their core concepts and ecosystems can significantly enhance a developer's productivity. 
 
@@ -263,8 +263,8 @@ Is your code going to be automatically better because of this? No, it’s not. Y
 
 ## Conclusion
 
-Understanding the importance and relevance of these 12 essential front end developer skills can equip front end developers with the tools and knowledge needed to create high-quality, performant, and accessible web applications.
+Understanding the importance and relevance of these essential front end developer skills can equip front end developers with the tools and knowledge needed to create high-quality, performant, and accessible web applications.
 
-That said, this is only a high-level overview of these skills, if you want to know more about how to tackle each of every one of these skills, check out this front end roadmap.
+That said, this is only a high-level overview of these skills, if you want to know more about how to tackle each of every one of these skills, check out **[this front end roadmap](https://roadmap.sh/frontend)**.
 
-In the end, staying updated with these core skills ensures developers can effectively tackle new challenges while remaining competitive in the industry.
+In the end, staying updated with these core skills ensures that you can effectively tackle new challenges while remaining competitive in the industry. Plus, the stronger your skillset, the better your chances are of ticking requirements on a [front end developer job description](https://roadmap.sh/frontend/job-description).
