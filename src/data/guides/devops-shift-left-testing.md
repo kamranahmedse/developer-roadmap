@@ -40,7 +40,7 @@ In this guide, you’ll learn what Shift-Left testing is, its benefits, things t
 
 ## What is Shift-Left testing?
 
-Shift-Left testing is a principle in DevOps that involves incorporating quality assurance and other testing activities **earlier** in the software development lifecycle (SDLC).
+Shift-Left testing is a [principle in DevOps](https://roadmap.sh/devops/principles) that involves incorporating quality assurance and other testing activities **earlier** in the software development lifecycle (SDLC).
 
 Over the years, testing has been somewhat considered an afterthought of the development process. The traditional approach waits for the development cycle to end or at least waits until 50% of the development process is done before testing the application. This approach can be slow, costly, and does not maximize resources because bugs found during the tests can’t be easily fixed during the development cycle.
 
@@ -106,7 +106,7 @@ It’s important to understand that Shift-Left testing is not a “magic wand”
 Adopting Shift-Left testing in your development process comes with several challenges, particularly related to resources and cultural resistance, which may overshadow the advantages it offers. To successfully implement Shift-Left testing, consider the following strategies:
 
 - **Promote a testing-first mindset** and encourage cross-functional collaboration between your teams with an emphasis on shared ownership of the product.
-- **Invest in training and skill development** focused on test automation, CI/CD, and other DevOps practices.
+- **Invest in training and skill development** focused on test automation, CI/CD, and other [best practices in DevOps](https://roadmap.sh/devops/best-practices).
 - **Choose tools that align with your organization’s needs** and integrate seamlessly within your budget.
 - **Start small** with a feature or pilot project, then gradually scale across the entire product chain. This approach will give your team the flexibility and the time to learn and refine strategies.
 - **Regularly conduct risk assessments** to identify areas for improvement and implement corresponding mitigation strategies.
