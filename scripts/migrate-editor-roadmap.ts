@@ -46,6 +46,13 @@ for (const roadmapId of editorRoadmapIds) {
     const width = node?.width || node?.style?.width || 0;
     const height = node?.height || node?.style?.height || 0;
 
+    if (['legend', 'title', 'label', 'linksgroup'].includes(node.type!)) {
+      delete node?.width;
+      delete node?.height;
+      delete node?.style?.width;
+      delete node?.style?.height;
+    }
+
     return {
       ...node,
       measured: {
