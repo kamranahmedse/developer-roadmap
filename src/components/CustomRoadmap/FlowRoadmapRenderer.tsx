@@ -9,7 +9,7 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
-import type { Node } from 'reactflow';
+import type { Node } from '@xyflow/react';
 import { type MouseEvent, useCallback, useRef, useState } from 'react';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
