@@ -22,35 +22,35 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
     submitted: {
       icon: EyeIcon,
       label:
-        'We are reviewing your roadmap. It will be visible to everyone on the platform once approved.',
-      className: 'text-blue-600 border-blue-200',
+        'We are currently reviewing your roadmap, please wait for our response.',
+      className: 'bg-blue-100 text-blue-600 border-blue-200',
     },
     approved: {
       icon: SmileIcon,
-      label: 'Hooray! Your roadmap is now visible to everyone on the platform.',
-      className: 'text-green-600 border-green-200',
+      label: 'Hooray! Your roadmap is now visible on the community page.',
+      className: 'text-green-600 bg-green-100 border-green-300',
     },
     rejected: {
       icon: FrownIcon,
       label: 'Sorry, we are unable to feature your roadmap at this time.',
-      className: 'text-red-600 border-red-200',
+      className: 'text-red-600 bg-red-100 border-red-300',
     },
     rejected_with_reason: {
       icon: FlagIcon,
       label: (
         <>
-          Your roadmap needs changes before it can be featured.{' '}
+          Your roadmap could not be featured at this time{' '}
           <button
-            className="font-medium underline underline-offset-2 hover:no-underline"
+            className="font-medium underline underline-offset-2 hover:text-red-800"
             onClick={() => {
               setShowRejectedReason(true);
             }}
           >
-            Check Reason
+            click here to see why
           </button>
         </>
       ),
-      className: 'text-yellow-600 border-yellow-200',
+      className: 'text-red-800 bg-red-200 border-red-200',
     },
   };
   const showcaseStatusDetails = showcaseStatusMap[showcaseStatus];
@@ -72,11 +72,8 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
 
       <div
         className={cn(
-          'absolute inset-x-0 top-0 z-10',
-          showcaseStatus === 'submitted' && 'bg-blue-100',
-          showcaseStatus === 'approved' && 'bg-green-100',
-          showcaseStatus === 'rejected' && 'bg-red-100',
-          showcaseStatus === 'rejected_with_reason' && 'bg-yellow-100',
+          'z-10 border-b -mb-4',
+          showcaseStatusDetails.className,
         )}
       >
         <div className="container relative flex items-center justify-center py-2 text-sm">

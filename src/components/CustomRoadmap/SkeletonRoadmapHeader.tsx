@@ -1,7 +1,7 @@
 export function SkeletonRoadmapHeader() {
   return (
     <div className="border-b">
-      <div className="container relative mt-6 py-5 sm:py-12">
+      <div className="container relative py-5 sm:py-12">
         <div className="-mb-0.5 flex items-center gap-1.5">
           <div className="h-5 w-5 animate-pulse rounded-full bg-gray-300" />
           <div className="h-5 w-5/12 animate-pulse rounded-md bg-gray-200" />

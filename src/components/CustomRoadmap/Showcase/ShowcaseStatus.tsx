@@ -13,7 +13,7 @@ export function ShowcaseStatus(props: ShowcaseStatusProps) {
   const { showcaseStatus } = currentRoadmap;
   const [showSubmitWarning, setShowSubmitWarning] = useState(false);
 
-  if (!currentRoadmap || showcaseStatus !== undefined) {
+  if (!currentRoadmap || showcaseStatus) {
     return null;
   }
 
@@ -35,7 +35,7 @@ export function ShowcaseStatus(props: ShowcaseStatusProps) {
         disabled={!!showcaseStatus}
       >
         <SendIcon className="mr-0 h-4 w-4 stroke-[2.5] sm:mr-1.5" />
-        <span className="hidden sm:inline">Submit for Showcase</span>
+        <span className="hidden sm:inline">Apply to be Featured</span>
       </button>
     </>
   );

@@ -48,16 +48,31 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
       <div className="p-4">
         <h2 className="text-lg font-semibold">
           {showcaseStatus === 'rejected_with_reason'
-            ? 'Rejected Reason'
-            : 'Featured Listing'}
+            ? 'Rejected with Reason'
+            : 'Feature Your Roadmap'}
         </h2>
         <p className="mt-2 text-sm">
-          {showcaseStatus === 'rejected_with_reason' && showcaseRejectedReason}
+          {showcaseStatus === 'rejected_with_reason' && (
+            <>
+              <span
+                className={
+                  'block rounded-md bg-red-100 px-2 py-1.5 text-red-700'
+                }
+              >
+                {showcaseRejectedReason}
+              </span>
+              <span className="block mt-3">
+                Feel free to make changes to your roadmap and resubmit.
+              </span>
+            </>
+          )}
           {!showcaseStatus && (
             <>
-              Submitting your roadmap for a featured listing will make it
-              visible to everyone on the platform.{' '}
-              <span className="font-medium">Are you sure?</span>
+              We will review your roadmap and if accepted, we will make it
+              public and show it on the community roadmap listing.{' '}
+              <span className="mt-4 block font-medium">
+                Are you sure to submit?
+              </span>
             </>
           )}
         </p>
