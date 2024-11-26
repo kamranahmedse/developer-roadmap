@@ -4,5 +4,4 @@ AI Engineering is the process of designing and implementing AI systems using pre
 
 Learn more from the following resources:
 
-
-- [@video@So you want to become an AI Engineer?](https://www.youtube.com/watch?v=4RixMPF4xis)
+- [@video@AI vs Machine Learning](https://www.youtube.com/watch?v=4RixMPF4xis)
