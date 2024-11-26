@@ -1,4 +1,6 @@
 import { cn } from '../../lib/classname';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type CourseFloatingSidebarProps = {
   isSticky: boolean;
@@ -6,6 +8,14 @@ type CourseFloatingSidebarProps = {
 
 export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
   const { isSticky } = props;
+
+  const whatYouGet = [
+    'Full access to all the courses',
+    'Personalized access using AI',
+    'Certificate of Completion',
+    'Playground for live-coding',
+    'Challenges / Quizes',
+  ];
 
   return (
     <div
@@ -23,7 +33,15 @@ export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
       </figure>
 
       <div className="p-2">
-        <button className="flex w-full items-center justify-between gap-1 rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 p-2 px-3 text-slate-50">
+        <button
+          className="flex w-full items-center justify-between gap-1 rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 p-2 px-3 text-slate-50"
+          onClick={() => {
+            if (!isLoggedIn()) {
+              showLoginPopup();
+              return;
+            }
+          }}
+        >
           <span>Enroll now</span>
           <span>5$ / month</span>
         </button>
@@ -42,17 +60,16 @@ export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
           />
         </figure>
       </div>
+
       <div className="p-2">
         <h4 className="text-lg font-medium">What you get</h4>
         <ul
           role="list"
           className="mt-2 flex list-disc flex-col gap-1 pl-4 text-sm text-gray-700 marker:text-gray-400"
         >
-          <li>Full access to all the courses</li>
-          <li>Personalized access using AI</li>
-          <li>Certificate of Completion</li>
-          <li>Playground for live-coding</li>
-          <li>Challenges / Quizes</li>
+          {whatYouGet.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </div>
     </div>
