@@ -8,14 +8,7 @@ seo:
   description: 'Want to become a DevOps engineer? Our @currentYear@ guide covers skills, certifications, and expert career advice. Start your journey today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/become-devops-engineer-4x2p7.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-06-11

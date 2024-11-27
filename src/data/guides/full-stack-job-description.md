@@ -1,10 +1,10 @@
 ---
-title: 'Full Stack Developer Job Description [2024 Template]'
+title: 'Full Stack Developer Job Description [@currentYear@ Template]'
 description: 'Looking to hire a Fullstack Engineer? Get the complete job description, skills, and responsibilities right here!'
 authorId: william
 excludedBySlug: '/full-stack/job-description'
 seo:
-  title: 'Full Stack Developer Job Description [2024 Template]'
+  title: 'Full Stack Developer Job Description [@currentYear@ Template]'
   description: 'Looking to hire a Fullstack Engineer? Get the complete job description, skills, and responsibilities right here!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/fullstack-job-h15x6.jpg'
 isNew: false

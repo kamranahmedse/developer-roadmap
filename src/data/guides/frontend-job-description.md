@@ -1,21 +1,14 @@
 ---
-title: "Frontend Developer Job Description [2024 Template]"
+title: "Frontend Developer Job Description [@currentYear@ Template]"
 description: 'Learn how to write the perfect frontend developer job description and get my best tips on how to recruit frontend dev talent effectively.'
 authorId: william
 excludedBySlug: '/frontend/job-description'
 seo:
-  title: "Frontend Developer Job Description [2024 Template]"
+  title: "Frontend Developer Job Description [@currentYear@ Template]"
   description: 'Learn how to write the perfect frontend developer job description and get my best tips on how to recruit frontend dev talent effectively.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-job-description-5fwzy.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
-  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
-  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
-  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
-  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
-  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
-  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
+relatedGuidesId: frontend
 isNew: true
 type: 'textual'
 date: 2024-11-04

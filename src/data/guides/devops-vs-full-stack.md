@@ -8,14 +8,7 @@ seo:
   description: 'DevOps engineer vs Full stack developer: Compare the roles, required skills, and future prospects to make an informed career choice.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-vs-full-stack-developer-jccsq.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-10-17

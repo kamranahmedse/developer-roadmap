@@ -1,21 +1,14 @@
 ---
-title: "Backend Developer Job Description [2024 Template]"
+title: "Backend Developer Job Description [@currentYear@ Template]"
 description: 'Learn how to write the perfect backend developer job description and get my best tips on how to recruit backend dev talent effectively.'
 authorId: ekene
 excludedBySlug: '/backend/job-description'
 seo:
-  title: "Backend Developer Job Description [2024 Template]"
+  title: "Backend Developer Job Description [@currentYear@ Template]"
   description: ''
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
-  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
-  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
-  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
-  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
-  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
-  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
+relatedGuidesId: backend
 isNew: true
 type: 'textual'
 date: 2024-11-12
