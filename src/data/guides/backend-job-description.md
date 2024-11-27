@@ -155,7 +155,7 @@ A backend engineer needs a combination of soft and technical skills to excel. So
 
 ### Knowledge of at least one backend programming language
 
-A [backend developer](https://roadmap.sh/backend/developer-skills) should have an in-depth knowledge of at least one backend programming language, such as [Java](https://roadmap.sh/java), C#, [Python](https://roadmap.sh/python), [JavaScript (Node.js)](https://roadmap.sh/nodejs), etc. It is also beneficial for a backend engineer to be familiar with some backend frameworks such as Django, [ASP.NET](https://roadmap.sh/aspnet-core), Ruby on Rails, [Sprint Boot](https://roadmap.sh/spring-boot), etc.
+A [backend developer](https://roadmap.sh/backend/developer-skills) should have an in-depth knowledge of at least one backend programming language, such as [Java](https://roadmap.sh/java), C#, [Python](https://roadmap.sh/python), [JavaScript (Node.js)](https://roadmap.sh/nodejs), etc. It is also beneficial for a backend engineer to be familiar with some [backend frameworks](https://roadmap.sh/backend/frameworks) such as Django, [ASP.NET](https://roadmap.sh/aspnet-core), Ruby on Rails, [Sprint Boot](https://roadmap.sh/spring-boot), etc.
 
 ![Backend languages](https://assets.roadmap.sh/guest/backend-languages.png)
 
