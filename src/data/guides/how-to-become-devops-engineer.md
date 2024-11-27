@@ -31,11 +31,11 @@ But **what is DevOps, and how is it different from other roles?**
 
 While the primary goal of a software engineer is to design and build software solutions, a DevOps engineer has a key role in streamlining the software development and deployment pipeline, automating infrastructure provisioning, and enhancing the deployment process.
 
-This guide provides in-depth knowledge on how to become a DevOps engineer, highlighting the mindset of DevOps engineers and the technical skills(including DevOps tools) required to become one. It also guides you on how you can find DevOps engineer jobs.
+This guide provides in-depth knowledge on how to become a DevOps engineer, highlighting the mindset of DevOps engineers and the [technical skills](https://roadmap.sh/devops/skills) (including DevOps tools) required to become one. It also guides you on how you can find DevOps engineer jobs.
 
 ## **TL;DR:**
 
-DevOps combines development and operations to automate software delivery. To become a DevOps engineer, you should adopt a mindset of automation, risk awareness, systems thinking, and continuous learning. In addition to the mindset, follow the steps below:
+DevOps combines development and operations to automate software delivery. To become a DevOps engineer, you should adopt a mindset of [automation](https://roadmap.sh/devops/automation), risk awareness, systems thinking, and continuous learning. In addition to the mindset, follow the steps below:
 
 - Step 1: Learn a programming language
 - Step 2: Get comfortable with Linux and terminal
@@ -59,7 +59,7 @@ As a DevOps engineer, you will use your knowledge of programming languages and s
 
 - Automate processes and frequent tasks
 - Patch a security bug exposing your internal application to outside users
-- Create automation tools, monitoring tools, and logging tools
+- Create [automation tools](https://roadmap.sh/devops/automation-tools), monitoring tools, and logging tools
 - Create monitoring dashboards to visualize workload and resource usage
 
 Hence, hands-on experience with programming is crucial to excel in your DevOps career.
