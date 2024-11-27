@@ -1,6 +1,7 @@
 import type { MarkdownFileType } from './file';
 import slugify from 'slugify';
-import { getAllAuthors } from './author.ts';
+import { getAllAuthors, type AuthorFileType } from './author.ts';
+import { getAllGuides } from './guide.ts';
 
 interface RawQuestionGroupFrontmatter {
   order: number;
@@ -18,7 +19,7 @@ interface RawQuestionGroupFrontmatter {
     keywords: string[];
   };
   relatedTitle?: string;
-  relatedGuides?: Record<string, string>;
+  relatedGuidesId?: string;
   sitemap: {
     priority: number;
     changefreq: string;
@@ -46,6 +47,8 @@ export type QuestionType = {
 export type QuestionGroupType = RawQuestionGroupFileType & {
   questions: QuestionType[];
   allTopics: string[];
+  author?: AuthorFileType;
+  relatedGuides?: Record<string, string>;
 };
 
 /**
@@ -71,6 +74,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
   );
 
   const allAuthors = await getAllAuthors();
+  const allGuides = await getAllGuides();
 
   return Object.values(questionGroupFilesMap)
     .map((questionGroupFile) => {
@@ -114,6 +118,21 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           return acc;
         }, [] as string[]);
 
+      const relatedGuides = questionGroupFile.frontmatter.relatedGuidesId
+        ? allGuides
+            .filter(
+              (guide) =>
+                guide.id === questionGroupFile.frontmatter.relatedGuidesId,
+            )
+            .reduce(
+              (acc, guide) => {
+                acc[guide.frontmatter.title] = `/guides/${guide.id}`;
+                return acc;
+              },
+              {} as Record<string, string>,
+            )
+        : undefined;
+
       return {
         ...questionGroupFile,
         id: questionGroupFileId,
@@ -122,6 +141,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
         author: allAuthors.find(
           (author) => author.id === questionGroupFile.frontmatter.authorId,
         )!,
+        relatedGuides,
       };
     })
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);

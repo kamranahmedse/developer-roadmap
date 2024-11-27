@@ -8,14 +8,7 @@ seo:
   description: 'Elevate your coding with backend developer tools that bring efficiency, scalability, and innovation to your projects. Improve your development process today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-development-tools-ou6el.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
-  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
-  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
-  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
-  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
-  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
-  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-03-19

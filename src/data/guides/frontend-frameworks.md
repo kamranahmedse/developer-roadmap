@@ -8,14 +8,7 @@ seo:
   description: 'Get expert advice on frontend frameworks for 2024. Elevate your web development process with these top picks.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/top-frontend-frameworks-wmqwc.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
-  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
-  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
-  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
-  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
-  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
-  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
+relatedGuidesId: frontend
 isNew: false
 type: 'textual'
 date: 2024-09-26

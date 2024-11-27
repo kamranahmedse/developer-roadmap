@@ -8,14 +8,7 @@ seo:
   description: 'Master the DevOps lifecycle by exploring its 7 phases, designed to enhance collaboration, streamline processes, and deliver software with agility.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/key-phases-of-devops-lifecycle-788fa.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-   'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-   'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-   '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-   'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-   '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-   'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-   'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-11-01

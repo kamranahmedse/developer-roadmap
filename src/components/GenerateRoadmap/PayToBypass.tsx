@@ -105,7 +105,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={roadmapCountId}
             name={roadmapCountId}
             required
-            className="placeholder-text-gray-400 block  w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="How many roadmaps you will be generating (daily, or monthly)?"
           />
         </div>
@@ -117,7 +117,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={usageId}
             name={usageId}
             required
-            className="placeholder-text-gray-400 block  w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="How will you be using this"
           />
         </div>
@@ -131,7 +131,7 @@ export function PayToBypass(props: PayToBypassProps) {
           <textarea
             id={feedbackId}
             name={feedbackId}
-            className="placeholder-text-gray-400 block  w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="Do you have any feedback?"
           />
         </div>
@@ -148,7 +148,7 @@ export function PayToBypass(props: PayToBypassProps) {
           </button>
           <button
             type="submit"
-            className="disbaled:opacity-60 w-full rounded-lg bg-gray-900 py-2 text-sm text-white hover:bg-gray-800 disabled:cursor-not-allowed"
+            className="w-full rounded-lg bg-gray-900 py-2 text-sm text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60"
             onClick={() => {
               setTimeout(() => {
                 onClose();

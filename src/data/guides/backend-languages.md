@@ -8,14 +8,7 @@ seo:
   description: 'Discover the best backend development languages to learn right now for career development, with practical tips from an experienced developer.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-languages-2x930.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
-  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
-  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
-  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
-  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
-  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
-  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-01-18

@@ -2,7 +2,6 @@
 import { getGuideTableOfContent, type GuideFileType } from '../../lib/guide';
 import MarkdownFile from '../MarkdownFile.astro';
 import { TableOfContent } from '../TableOfContent/TableOfContent';
-import { replaceVariables } from '../../lib/markdown';
 import { RelatedGuides } from './RelatedGuides';
 
 interface Props {
@@ -16,8 +15,7 @@ const tableOfContent = getGuideTableOfContent(allHeadings);
 
 const showTableOfContent = tableOfContent.length > 0;
 const showRelatedGuides =
-  guide?.frontmatter?.relatedGuides &&
-  Object.keys(guide?.frontmatter?.relatedGuides).length > 0;
+  guide?.relatedGuides && Object.keys(guide?.relatedGuides).length > 0;
 const { frontmatter: guideFrontmatter, author } = guide;
 ---
 
@@ -27,7 +25,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
       <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
           relatedTitle={guideFrontmatter?.relatedTitle}
-          relatedGuides={guideFrontmatter?.relatedGuides || {}}
+          relatedGuides={guide?.relatedGuides || {}}
           client:load
         />
         <TableOfContent toc={tableOfContent} client:load />
@@ -45,7 +43,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
   >
     <MarkdownFile>
       <h1 class='mb-3 text-balance text-4xl font-bold'>
-        {replaceVariables(guideFrontmatter.title)}
+        {guideFrontmatter.title}
       </h1>
       <p class='my-0 flex items-center justify-start text-sm text-gray-400'>
         <a
