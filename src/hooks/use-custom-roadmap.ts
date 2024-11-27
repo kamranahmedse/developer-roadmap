@@ -34,6 +34,7 @@ export function useCustomRoadmap(options: UseCustomRoadmapOptions) {
 
         return httpGet(roadmapUrl.toString());
       },
+      retry: false,
       enabled: !!(slug || id),
     },
     queryClient,
