@@ -29,7 +29,7 @@ In this article, we'll explore what DevOps Automation really is, its key compone
 
 ## What is DevOps Automation?
 
-DevOps Automation refers to the use of tools and scripts to automate the different stages of the DevOps lifecycle and many aspects of the software development life cycle. This includes everything from code integration and application deployment to infrastructure management and monitoring.
+DevOps Automation refers to the use of [automation tools](https://roadmap.sh/devops/automation-tools) and scripts to automate the different stages of the DevOps lifecycle and many aspects of the software development life cycle. This includes everything from code integration and application deployment to infrastructure management and monitoring.
 
 Automation is one of the key methodologies that help you ensure that these processes are, in the end, efficient, consistent, and reliable.
 
