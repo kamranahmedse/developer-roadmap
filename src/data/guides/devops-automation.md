@@ -178,7 +178,7 @@ Try to identify sources of toil in your workflows and continuously work to reduc
 
 ## Choose your DevOps automation tools
 
-Once you’ve incorporated these best practices into your DevOps activities, the next immediate action is to decide what your top automation tools will be.
+Once you’ve incorporated these best practices into your DevOps activities, the next immediate action is to decide what your top [DevOps automation tools](https://roadmap.sh/devops/automation-tools) will be.
 These tools should allow you to:
 
 * Comply with the best practices already covered.
