@@ -167,7 +167,7 @@ Understanding programming concepts also enables you to better manage the softwar
 
 ## 11\. Automation in DevOps
 
-Automation is at the heart of DevOps principles. It's about automating repetitive and manual tasks to accelerate processes, reduce errors, and free up time for more strategic work. We partially covered this concept before as part of the toil reduction principle.
+[Automation](https://roadmap.sh/devops/automation) is at the heart of DevOps principles. It's about automating repetitive and manual tasks to accelerate processes, reduce errors, and free up time for more strategic work. We partially covered this concept before as part of the toil reduction principle.
 
 However, it’s important to explain that automation not only involves code builds and tests, it also includes infrastructure provisioning and application deployment. In other words,  automation plays a key role in every stage of the DevOps lifecycle.
 
