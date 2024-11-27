@@ -4,4 +4,4 @@ Engineering management is the integration of engineering principles with busines
 
 Learn more from the following resources:
 
-- [@opensource@Awesome Engineering Management: A curated list of resources and tools for learning and practicing engineering management and leadership.](https://github.com/engineering-management/awesome-engineering-management)
+- [@article@Engineering Management Resources](https://github.com/engineering-management/awesome-engineering-management)
