@@ -1,4 +1,4 @@
-import { EyeIcon, FlagIcon, FrownIcon, SmileIcon } from 'lucide-react';
+import {EyeIcon, FlagIcon, FrownIcon, PartyPopper, SmileIcon} from 'lucide-react';
 import { cn } from '../../../lib/classname';
 import type { GetRoadmapResponse } from '../CustomRoadmap';
 import { useState } from 'react';
@@ -26,8 +26,8 @@ export function ShowcaseAlert(props: ShowcaseAlertProps) {
       className: 'bg-blue-100 text-blue-600 border-blue-200',
     },
     approved: {
-      icon: SmileIcon,
-      label: 'Hooray! Your roadmap is now visible on the community page.',
+      icon: PartyPopper,
+      label: 'Your roadmap is now visible on the community roadmaps page.',
       className: 'text-green-600 bg-green-100 border-green-300',
     },
     rejected: {
