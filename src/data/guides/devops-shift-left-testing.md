@@ -88,7 +88,7 @@ While Shift-Right testing comes with its own benefits when dealing with producti
 
 It’s important to understand that Shift-Left testing is not a “magic wand” that solves all your testing problems. It also comes with its own challenges. Below are some challenges you might encounter when adopting it:
 
-1. **Required skills**: Developers, testers, and other stakeholders may need to acquire new skills like test automation, continuous integration, and more. Training can be challenging for teams with limited resources.
+1. **Required skills**: Developers, testers, and other stakeholders may need to acquire new skills like test [automation](https://roadmap.sh/devops/automation), continuous integration, and more. Training can be challenging for teams with limited resources.
 2. **Cultural shift**: Adopting continuous testing on the left side of the development process requires a cultural change for all the stakeholders. Developers may need to take on additional testing responsibilities, while testers may need to acquire new skills. This can lead to resistance, adding to their workload and responsibilities.
 3. **Cost implication**: The implementation process requires new toolsets and automation frameworks, which can be time-consuming and costly to set up. Additionally, teams must overcome the learning curve associated with these tools.
 4. **Integration complexity**: Integrating testing in the early stage of SDLC can be complex, particularly in legacy and large systems. This is because it requires that all team members are aligned and willing to adjust their roles and responsibilities to accommodate the new testing approach.

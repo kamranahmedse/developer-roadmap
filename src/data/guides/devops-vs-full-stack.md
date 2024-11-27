@@ -94,7 +94,7 @@ DevOps helps to bridge the gap between development teams and operations teams. D
 
 DevOps has some core principles that influence the effectiveness of development and operations. Some of these DevOps principles include:
 
-- Automation of the software development lifecycle
+- [Automation](https://roadmap.sh/devops/automation) of the software development lifecycle
 - Collaboration
 
 ### Automation of the software development lifecycle

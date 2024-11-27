@@ -55,7 +55,7 @@ This is a RESTful API that would power a personal blog. This implies that you’
 
 And with those endpoints you’ve covered the basic CRUD operations (**C**reate, **R**ead, **U**pdate and **D**elete).
 
-As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main backend framework if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
+As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main [backend framework](https://roadmap.sh/backend/frameworks) if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
 
 ## 2. To-Do List API
 

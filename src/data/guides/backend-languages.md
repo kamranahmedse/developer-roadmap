@@ -57,7 +57,7 @@ Python's community plays a critical role in its accessibility. Abundant learning
 
 #### Practical Applications and Popular Frameworks
 
-Python's versatility is evident in its applicability across a spectrum of industries, from web development and data science to artificial intelligence and automation. In the context of backend development, Python shines brightly with its two standout frameworks: [Django](https://www.djangoproject.com/) and [Flask](https://github.com/pallets/flask).
+Python's versatility is evident in its applicability across a spectrum of industries, from web development and data science to artificial intelligence and automation. In the context of backend development, Python shines brightly with its two standout [backend frameworks](https://roadmap.sh/backend/frameworks): [Django](https://www.djangoproject.com/) and [Flask](https://github.com/pallets/flask).
 
 ##### Django
 

@@ -87,7 +87,7 @@ This is particularly important because the development team will continue to pus
 
 **Tools used**
 
-Jenkins, CircleCI, Travis CI, and GitHub Actions are some automation tools DevOps teams use to build, test, and deploy code changes.
+Jenkins, CircleCI, Travis CI, and GitHub Actions are some [automation tools](https://roadmap.sh/devops/automation-tools) DevOps teams use to build, test, and deploy code changes.
 
 ### 3. Continuous testing
 
@@ -163,7 +163,7 @@ Let’s explore some of these extensions and how they’re changing the developm
 
 ## Key DevOps extensions to watch in 2024
 
-Below are some extensions that build on the core principles of DevOps, like automation, collaboration, and continuous improvement:
+Below are some extensions that build on the core principles of DevOps, like [automation](https://roadmap.sh/devops/automation), collaboration, and continuous improvement:
 
 - DevSecOps
 - GitOps

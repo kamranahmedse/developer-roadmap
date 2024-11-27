@@ -27,7 +27,8 @@ Making career choices could be overwhelming for beginners and experienced softwa
 
 However, before selecting a path, it is helpful to look at certain factors, such as your interests, strengths, and the future prospects of the career path, as these factors play a crucial role in determining your potential for success.
 
-[DevOps engineering](https://roadmap.sh/devops) is one of the most [in-demand and highest](https://uk.indeed.com/career-advice/career-development/software-engineering-jobs)[-](https://uk.indeed.com/career-advice/career-development/software-engineering-jobs)[paying roles](https://uk.indeed.com/career-advice/career-development/software-engineering-jobs) in the tech industry and, in recent times, has become the go-to choice for many people getting into tech and experienced tech professionals.
+[DevOps engineering](https://roadmap.sh/devops) is one of the most [in-demand and highest-paying roles](https://uk.indeed.com/career-advice/career-development/software-engineering-jobs) in the tech industry and, in recent times, has become the go-to choice for many people getting into tech and experienced tech professionals.
+
 As a DevOps professional, you'll enjoy spectacular career growth filled with endless opportunities.
 
 The DevOps philosophy involves bringing developers and operation teams together to improve the software delivery process.
@@ -58,7 +59,7 @@ These are some factors to consider before choosing the DevOps engineer career pa
 
 ### Interest in automation
 
-Automation is an integral part of the DevOps career path. It involves writing scripts and code to automate repetitive tasks and enhance software delivery processes.  By automating repetitive tasks and workflows, DevOps teams can increase efficiency, reduce errors, and accelerate time to market for software releases.
+[Automation](https://roadmap.sh/devops/automation) is an integral part of the DevOps career path. It involves writing scripts and code to automate repetitive tasks and enhance software delivery processes.  By automating repetitive tasks and workflows, DevOps teams can increase efficiency, reduce errors, and accelerate time to market for software releases.
 
 ### Enjoy collaborating
 
@@ -117,7 +118,7 @@ Also, with the adoption of GitOps, an operational framework that takes DevOps pr
 
 ### Artificial intelligence and machine learning
 
-AI and ML have become integrated into our daily lives and automation tools are used to automate processes and routine tasks, monitor system health, and predict potential system issues. These AI tools need to be designed, maintained, and enhanced.
+AI and ML have become integrated into our daily lives and [automation tools](https://roadmap.sh/devops/automation-tools) are used to automate processes and routine tasks, monitor system health, and predict potential system issues. These AI tools need to be designed, maintained, and enhanced.
 
 In the AI and ML field, it is the job of an MLOps engineer, but a DevOps engineer can upskill and switch roles to an MLOps engineer.
 
