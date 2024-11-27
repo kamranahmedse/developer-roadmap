@@ -8,14 +8,7 @@ seo:
   description: 'Elevate your game by understanding this set of key DevOps principles and practices. Gain pro insights for a more efficient, collaborative workflow!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-09-24
