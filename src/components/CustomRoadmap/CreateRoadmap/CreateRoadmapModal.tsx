@@ -23,11 +23,16 @@ export const allowedCustomRoadmapType = ['role', 'skill'] as const;
 export type AllowedCustomRoadmapType =
   (typeof allowedCustomRoadmapType)[number];
 
-export const allowedShowcaseStatus = ['visible', 'hidden'] as const;
+export const allowedShowcaseStatus = [
+  'submitted',
+  'approved',
+  'rejected',
+  'rejected_with_reason',
+] as const;
 export type AllowedShowcaseStatus = (typeof allowedShowcaseStatus)[number];
 
 export interface RoadmapDocument {
-  _id?: string;
+  _id: string;
   title: string;
   description?: string;
   slug?: string;
@@ -51,13 +56,21 @@ export interface RoadmapDocument {
   edges: any[];
 
   isDiscoverable?: boolean;
-  showcaseStatus?: AllowedShowcaseStatus;
   ratings: {
     average: number;
+    totalCount: number;
     breakdown: {
       [key: number]: number;
     };
   };
+
+  showcaseStatus?: AllowedShowcaseStatus;
+  showcaseRejectedReason?: string;
+  showcaseRejectedAt?: Date;
+  showcaseSubmittedAt?: Date;
+  showcaseApprovedAt?: Date;
+
+  hasMigratedContent?: boolean;
 
   createdAt: Date;
   updatedAt: Date;

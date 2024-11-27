@@ -27,9 +27,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
   return (
     <>
       <div className="mb-2 mt-6 flex items-center justify-between gap-2">
-        <h2 className="text-xs uppercase text-gray-400">
-          My AI Roadmaps
-        </h2>
+        <h2 className="text-xs uppercase text-gray-400">My AI Roadmaps</h2>
 
         <a
           href="/ai/explore"
@@ -62,6 +60,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
           <>
             {roadmaps.map((roadmap) => (
               <a
+                key={roadmap.id}
                 href={`/ai/${roadmap.slug}`}
                 className="relative truncate rounded-md border bg-white p-2.5 text-left text-sm shadow-sm hover:border-gray-400 hover:bg-gray-50"
               >
