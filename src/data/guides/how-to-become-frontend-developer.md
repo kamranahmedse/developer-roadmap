@@ -50,7 +50,7 @@ The above steps will give you the [skills](https://roadmap.sh/frontend/developer
 
 ## Benefits of pursuing a career in front-end development
 
-The job market requires skilled professionals to create dynamic websites and web applications. This demand makes front-end development a role filled with numerous career opportunities.
+The job market requires skilled professionals to create dynamic websites and web applications as part of most [frontend developer job descriptions](https://roadmap.sh/frontend/job-description). This demand makes front-end development a role filled with numerous career opportunities.
 
 Some of the benefits of pursuing a career in front-end development include:
 

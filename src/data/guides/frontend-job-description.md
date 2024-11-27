@@ -34,7 +34,7 @@ Frontend developers create the interface and experience that people interact wit
 
 A well-written developer job description is key to finding the right developer. The challenge, however, is writing a developer job description that attracts top talent. A poorly written job description can attract unqualified applicants and overlook top talent. If you want to hire top frontend developers, you must understand what skills and duties come with the job.
 
-In this guide, I will show you how to create a good [front-end developer](https://roadmap.sh/frontend) job description template based on my experience hiring front-end developers. In the following sections, you'll learn about the responsibilities, skills, and what to look for when hiring candidates.
+In this guide, I will show you how to create a good front-end developer job description template based on my experience hiring [front-end developers](https://roadmap.sh/frontend). In the following sections, you'll learn about the responsibilities, [skills](https://roadmap.sh/frontend/developer-skills), and what to look for when hiring candidates.
 
 ## Frontend developer job description template
 
@@ -59,7 +59,7 @@ Front-end developer job descriptions may differ depending on a company's require
 - Translate web design mockups and feature requirements into functional, mobile-friendly websites using HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js.
 - Work closely with UI/UX designers to translate design wireframes into reusable code and collaborate with back-end developers to integrate APIs and services.
 - Ensure cross-browser compatibility and optimize applications for maximum speed and scalability.
-- Write clean, maintainable, and reusable code and conduct code reviews to ensure adherence to coding standards and [best practices](https://roadmap.sh/best-practices/frontend-performance).
+- Write clean, maintainable, and reusable code and conduct code reviews to ensure adherence to coding standards and best practices.
 
 **Requirements**
 
@@ -71,7 +71,7 @@ Front-end developer job descriptions may differ depending on a company's require
 - Hands-on experience with version control systems such as Git.
 - Experience with tools for debugging and development automation like Chrome DevTools and Webpack.
 - Relevant soft skills like customer service, communication, and problem-solving skills.
-- Practical experience and a strong portfolio that shows a broad range of abilities.
+- Practical experience and a strong [web developer portfolio](https://roadmap.sh/frontend/web-developer-portfolio) that shows a broad range of abilities.
 - Bachelor’s degree in computer science or relevant industry experience.
 
 **Nice to Have**
@@ -138,7 +138,7 @@ Frontend developers aren't just individual who make cool web applications or web
 
 - **Fix bugs:** Frontend developers help resolve website issues like browser compatibility issues, unclickable buttons, etc. 
 
-- **Optimize applications:** Frontend web developers ensure a website works well and loads fast. They are responsible for optimizing website performance, improving load times, and troubleshooting frontend issues. Frontend developers must stay up-to-date with [industry trends](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards#web_best_practices) and [](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards)best practices. This ensures that the websites they work on are accessible, follow web standards, and provide a great user experience.
+- **Optimize applications:** Frontend web developers ensure a website works well and loads fast. They are responsible for optimizing website performance, improving load times, and troubleshooting frontend issues. Frontend developers must stay up-to-date with [industry trends](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards#web_best_practices) and [best practices](https://roadmap.sh/best-practices/frontend-performance). This ensures that the websites they work on are accessible, follow web standards, and provide a great user experience.
 
 ### Collaborate with backend web developers and other teams
 
@@ -259,7 +259,7 @@ Technical interviews help ensure qualified candidates have the essential skills 
 
 ![Technical interviews](https://assets.roadmap.sh/guest/technical-interviews-358u3.png)
 
-Some examples of technical interview questions for a frontend developer job include:
+Some examples of technical [interview questions for a frontend developer job](https://roadmap.sh/questions/frontend) include:
 
 - Explain the difference between the undefined and null values in JavaScript
 - Explain the principle of responsive web design and how you implement it.
@@ -311,7 +311,7 @@ The process of getting into frontend development is often unclear to many people
 
 ### How long does it take to be a frontend developer?
 
-The time required to become a frontend developer can vary from person to person. It depends mostly on how fast you learn and how much time you put into learning and practicing. But if you keep at it, you can pick up frontend development skills in just a few months to a year.
+The time required to [become a frontend developer](https://roadmap.sh/frontend/how-to-become-frontend-developer) can vary from person to person. It depends mostly on how fast you learn and how much time you put into learning and practicing. But if you keep at it, you can pick up frontend development skills in just a few months to a year.
 
 ### How can I stay up-to-date with the latest front-end technologies and trends?
 
@@ -394,7 +394,7 @@ Back-end web developers do the following:
 
 ![Programming languages and frameworks used in frontend development](https://assets.roadmap.sh/guest/frontend-frameworks-and-libraries-fyelz.png)
 
-Frontend developers often use a combination of programming languages, frameworks, and libraries like:
+Frontend developers often use a combination of [programming languages](https://roadmap.sh/frontend/languages), [frameworks](https://roadmap.sh/frontend/frameworks), and libraries like:
 
 - **HyperText Markup Language (HTML)**: HTML is a standard markup language for creating web pages. It is the foundation of a website, providing its structure and content for the web browser to display.
 - **Cascading Style Sheet (CSS):** CSS is vital in controlling a website's visual presentation. It is a styling language that controls the layout and appearance of HTML and XHTML web pages. CSS transforms HTML elements like `<input>` into visual UI components like styled form fields. It allows frontend developers to add colors, fonts, icons, and more to websites.

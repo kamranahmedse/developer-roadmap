@@ -34,7 +34,7 @@ DevOps is a proven practice and set of standards that has helped small to large 
 
 Although every organization approaches these challenges in slightly different ways, there are **best practices** that you can follow to achieve successful implementation.
 
-In this guide, you’ll learn key [DevOps](https://roadmap.sh/devops) best practices to improve your workflow, and common DevOps anti-patterns to avoid when adopting these practices.
+In this guide, you’ll learn key DevOps best practices to improve your workflow, and common [DevOps](https://roadmap.sh/devops) anti-patterns to avoid when adopting these practices.
 
 **TL;DR: 14 DevOps key best practices you should know are:**
 
