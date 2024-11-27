@@ -93,6 +93,15 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
     hideRoadmapLoader();
   }, [data]);
 
+  useEffect(() => {
+    if (!error) {
+      return;
+    }
+
+    setIsLoading(false);
+    hideRoadmapLoader();
+  }, [error]);
+
   if (isLoading) {
     return null;
   }
