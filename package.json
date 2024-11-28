@@ -76,7 +76,7 @@
     "tailwindcss": "^3.4.13",
     "turndown": "^7.2.0",
     "unified": "^11.0.5",
-    "zustand": "^4.5.5"
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
