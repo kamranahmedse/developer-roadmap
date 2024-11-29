@@ -1,8 +1,14 @@
 {
   "_hYN0gEi9BL24nptEtXWU": {
     "title": "What is Engineering Management?",
-    "description": "",
-    "links": []
+    "description": "Engineering management is the integration of engineering principles with business practices to oversee and optimize complex engineering-driven enterprises. It involves planning, organizing, allocating resources, and directing activities that have a technological component.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Engineering Management Resources",
+        "url": "https://github.com/engineering-management/awesome-engineering-management",
+        "type": "article"
+      }
+    ]
   },
   "oKbeLp4YB8rI1Q3vi0EnG": {
     "title": "EM vs Tech Lead vs IC",
