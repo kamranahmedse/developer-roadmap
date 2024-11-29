@@ -19,4 +19,4 @@ When we checked that `x` and `y` are both equal in the above example, TypeScript
 
 Learn more from the following links:
 
-- [@article@Equality Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#equality-narrowing)
+- [@official@Equality Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#equality-narrowing)

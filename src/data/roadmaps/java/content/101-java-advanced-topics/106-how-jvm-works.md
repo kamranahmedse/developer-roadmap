@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@JVM languages](https://www.whizlabs.com/blog/jvm-languages/)
 - [@article@GraalVM](https://www.graalvm.org/)
 - [@feed@Explore top posts about JVM](https://app.daily.dev/tags/jvm?ref=roadmapsh)
+- [@video@JVM Architecture in 8min](https://www.youtube.com/watch?v=QHIWkwxs0AI)

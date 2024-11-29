@@ -4,5 +4,5 @@ As we develop our applications we may need to communicate with the parent compon
 
 Visit the following resources to learn more:
 
-- [@article@Listening to Events](https://vuejs.org/guide/essentials/component-basics.html#listening-to-events)
-- [@article@Events in Detail](https://vuejs.org/guide/components/events.html)
+- [@official@Listening to Events](https://vuejs.org/guide/essentials/component-basics.html#listening-to-events)
+- [@official@Events in Detail](https://vuejs.org/guide/components/events.html)

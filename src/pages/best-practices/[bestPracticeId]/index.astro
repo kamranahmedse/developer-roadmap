@@ -99,6 +99,7 @@ const ogImageUrl = getOpenGraphImageUrl({
           />
 
           <TopicDetail
+            resourceId={bestPracticeId}
             resourceTitle={bestPracticeData.title}
             resourceType='best-practice'
             client:idle
@@ -130,4 +131,6 @@ const ogImageUrl = getOpenGraphImageUrl({
   />
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}
+
+  <div slot='changelog-banner'></div>
 </BaseLayout>

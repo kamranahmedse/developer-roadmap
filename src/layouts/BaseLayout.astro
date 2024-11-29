@@ -8,11 +8,12 @@ import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
 import { Toaster } from '../components/Toast';
-import { PageSponsor } from '../components/PageSponsor';
+import { PageSponsors } from '../components/PageSponsors/PageSponsors';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
+import ChangelogBanner from "../components/ChangelogBanner.astro";
 
 export interface Props {
   title: string;
@@ -69,7 +70,6 @@ const gaPageIdentifier = Astro.url.pathname
     <meta name='commit' content={commitUrl} />
     <title>{title}</title>
     <meta name='description' content={description} />
-    <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
     {
       redirectUrl && (
@@ -109,7 +109,10 @@ const gaPageIdentifier = Astro.url.pathname
     />
     <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
     <meta name='application-name' content='roadmap.sh' />
-    <meta name="ahrefs-site-verification" content="04588b1b3d0118b4f973fa24f9df38ca6300d152cc26529a639e9a34d09c9880">
+    <meta
+      name='ahrefs-site-verification'
+      content='04588b1b3d0118b4f973fa24f9df38ca6300d152cc26529a639e9a34d09c9880'
+    />
 
     <link
       rel='apple-touch-icon'
@@ -152,6 +155,8 @@ const gaPageIdentifier = Astro.url.pathname
         />
       )
     }
+
+    <Analytics />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -161,7 +166,12 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <OpenSourceBanner />
+      <slot name='changelog-banner'>
+        <ChangelogBanner />
+      </slot>
+      <slot name='open-source-banner'>
+        <OpenSourceBanner />
+      </slot>
       <Footer />
     </slot>
 
@@ -173,14 +183,14 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
-    <PageSponsor
+
+    <PageSponsors
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
     />
 
     <slot name='after-footer' />
 
-    <Analytics />
     <PageVisit
       resourceId={resourceId}
       resourceType={resourceType}

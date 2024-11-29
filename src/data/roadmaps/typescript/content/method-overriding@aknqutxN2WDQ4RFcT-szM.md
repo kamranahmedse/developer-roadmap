@@ -27,4 +27,4 @@ In this example, the `Dog` class overrides the makeSound method defined in the A
 
 Learn more from the following resources:
 
-- [@article@TypeScript - Overriding Methods](https://www.typescriptlang.org/docs/handbook/2/classes.html#overriding-methods)
+- [@official@TypeScript - Overriding Methods](https://www.typescriptlang.org/docs/handbook/2/classes.html#overriding-methods)

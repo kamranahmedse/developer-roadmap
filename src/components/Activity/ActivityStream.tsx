@@ -56,9 +56,11 @@ export function ActivityStream(props: ActivityStreamProps) {
 
   return (
     <div className={cn('mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8', className)}>
-      <h2 className="mb-3 text-xs uppercase text-gray-400">
-        Learning Activity
-      </h2>
+      {activities.length > 0 && (
+        <h2 className="mb-3 text-xs uppercase text-gray-400">
+          Learning Activity
+        </h2>
+      )}
 
       {selectedActivity && (
         <ActivityTopicsModal

@@ -12,6 +12,7 @@ The concept is based on a military model, where the term "kill chain" represents
 - **Command and Control (C2)**: The attacker establishes a communication channel with the infected system, allowing them to remotely control the malware and conduct further actions.
 - **Actions on Objectives**: In this final phase, the attacker achieves their goal, which may involve stealing sensitive data, compromising systems, or disrupting services.
 
-Understanding and analyzing the Cyber Kill Chain helps organizations and individuals take a more proactive approach to cybersecurity. By recognizing the signs of an attack at each stage, appropriate countermeasures can be employed to either prevent or minimize the damage from the attack.
+Learn more from the following resources:
 
-By staying informed and diligently employing security best practices, you can effectively protect your digital assets and contribute to a safer cyberspace.
+- [@official@Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+- [@video@Learn the Cyber Kill Chain](https://www.youtube.com/watch?v=oCUrkc_0tmw)

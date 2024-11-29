@@ -1,0 +1,33 @@
+---
+import { DateTime } from 'luxon';
+
+const formattedDate = DateTime.fromISO('2024-09-13').toFormat('dd LLL, yyyy');
+---
+
+<div class='relative mb-6'>
+  <span
+    class='absolute -left-6 top-2 h-2 w-2 flex-shrink-0 rounded-full bg-gray-300'
+  ></span>
+
+  <div
+    class='mb-3 flex flex-col items-start gap-0.5 sm:flex-row sm:items-center sm:gap-2'
+  >
+    <span class='flex-shrink-0 text-xs tracking-wide text-gray-400'>
+      {formattedDate}
+    </span>
+    <span class='truncate text-balance text-base font-medium'>
+      Changelog page is launched
+    </span>
+  </div>
+
+  <div
+    class='flex flex-col items-center justify-center gap-2 sm:gap-2 rounded-xl border bg-white px-8 py-12 text-center'
+  >
+    <img src='/images/gifs/rocket.gif' class='w-[70px] mb-4' />
+    <h2 class='text-balance text-xl font-medium'>Changelog page is launched</h2>
+    <p class='font-normal text-balance text-gray-400 text-sm sm:text-base'>
+      We will be sharing a selected list of updates, improvements, and fixes made to
+      the website. Stay tuned!
+    </p>
+  </div>
+</div>

@@ -1,24 +1,26 @@
 name: Deploy to EC2
+
 on:
-  workflow_dispatch: # allow manual run
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - uses: pnpm/action-setup@v3.0.0
+      - uses: pnpm/action-setup@v4.0.0
         with:
-          version: 8.15.6
+          version: 9
 
-      # --------------------
+      # -------------------
       # Setup configuration
-      # --------------------
+      # -------------------
       - name: Prepare configuration files
         run: |
           git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/infra-config.git configuration --depth 1
@@ -26,13 +28,14 @@ jobs:
         run: |
           cp configuration/dist/github/developer-roadmap.env .env
 
-      # --------------------
-      # Prepare the build
-      # --------------------
-      - name: Install dependencies
+      # -----------------
+      # Prepare the Build
+      # -----------------
+      - name: Install Dependencies
         run: |
           pnpm install
-      - name: Generate build
+
+      - name: Generate Production Build
         run: |
           git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
           npm run generate-renderer
@@ -45,7 +48,7 @@ jobs:
       - uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
-      - name: Deploy app to EC2
+      - name: Deploy Application to EC2
         run: |
           rsync -apvz --delete --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/roadmap.sh/
       - name: Restart PM2
@@ -58,9 +61,9 @@ jobs:
             cd /var/www/roadmap.sh
             sudo pm2 restart web-roadmap
 
-      # --------------------
+      # ----------------------
       # Clear cloudfront cache
-      # --------------------
+      # ----------------------
       - name: Clear Cloudfront Caching
         run: |
           curl -L \

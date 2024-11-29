@@ -897,7 +897,7 @@
       "id": "DFMR-0MbmVCCrJu0I9JWG",
       "type": "subtopic",
       "data": {
-        "label": "Prespective Analytics",
+        "label": "Prescriptive Analytics",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -1693,39 +1693,6 @@
       },
       "dragging": false,
       "resizing": false,
-      "focusable": true,
-      "selectable": true
-    },
-    {
-      "width": 142,
-      "height": 49,
-      "id": "i4VCwFm-wc9cqE73i-BIb",
-      "type": "topic",
-      "position": {
-        "x": -326.321810236714,
-        "y": 540.1000000000001
-      },
-      "selected": false,
-      "data": {
-        "label": "Learn SQL",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center"
-        },
-        "oldId": "SiYUdtYMDImRPmV2_XPkH"
-      },
-      "zIndex": 999,
-      "style": {
-        "width": 142,
-        "height": 49
-      },
-      "resizing": false,
-      "positionAbsolute": {
-        "x": -326.321810236714,
-        "y": 540.1000000000001
-      },
-      "dragging": false,
       "focusable": true,
       "selectable": true
     },
@@ -4787,7 +4754,7 @@
         "oldId": "dOrnsftQKhJAmOmsSzDI0"
       },
       "zIndex": 999,
-      "width": 402,
+      "width": 430,
       "height": 30,
       "dragging": false,
       "positionAbsolute": {
@@ -5047,174 +5014,6 @@
       "focusable": true,
       "style": {
         "width": 436
-      },
-      "resizing": false
-    },
-    {
-      "id": "cNHT9S13pLinAI8snYcRj",
-      "type": "vertical",
-      "position": {
-        "x": 55.97857612108493,
-        "y": 4570.871616221306
-      },
-      "selected": false,
-      "data": {
-        "label": "vertical node",
-        "style": {
-          "stroke": "#2B78E4",
-          "strokeDasharray": "0.8 8",
-          "strokeLinecap": "round",
-          "strokeWidth": 3.5
-        }
-      },
-      "zIndex": 999,
-      "width": 20,
-      "height": 79,
-      "positionAbsolute": {
-        "x": 55.97857612108493,
-        "y": 4570.871616221306
-      },
-      "dragging": false,
-      "style": {
-        "width": 20,
-        "height": 79
-      },
-      "resizing": false,
-      "focusable": true,
-      "selectable": true
-    },
-    {
-      "id": "XzXLGjJr2F8Ln7gP0e5N8",
-      "type": "paragraph",
-      "position": {
-        "x": -131.52142387891513,
-        "y": 4457.871616221306
-      },
-      "selected": false,
-      "data": {
-        "label": "Have a look at the following relevant tracks",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center",
-          "borderColor": "#000000"
-        },
-        "oldId": "jXtqI8k4Abz-vr01IcpWL"
-      },
-      "zIndex": 999,
-      "width": 401,
-      "height": 113,
-      "positionAbsolute": {
-        "x": -131.52142387891513,
-        "y": 4457.871616221306
-      },
-      "dragging": false,
-      "style": {
-        "width": 401,
-        "height": 113
-      },
-      "resizing": false,
-      "selectable": true,
-      "focusable": true
-    },
-    {
-      "id": "4fauwiq2CJnzDA7Z9Pmeo",
-      "type": "button",
-      "position": {
-        "x": -119.18102870413122,
-        "y": 4511.679985574316
-      },
-      "selected": false,
-      "data": {
-        "label": "Android",
-        "href": "https://roadmap.sh/android",
-        "color": "#ffffff",
-        "backgroundColor": "#2a79e4",
-        "style": {
-          "fontSize": 17
-        },
-        "oldId": "eYziHRN-gsg9qr8Yddu2K"
-      },
-      "zIndex": 999,
-      "width": 119,
-      "height": 49,
-      "positionAbsolute": {
-        "x": -119.18102870413122,
-        "y": 4511.679985574316
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "style": {
-        "width": 119,
-        "height": 49
-      },
-      "resizing": false
-    },
-    {
-      "id": "eYziHRN-gsg9qr8Yddu2K",
-      "type": "button",
-      "position": {
-        "x": 4.958673919434659,
-        "y": 4511.679985574316
-      },
-      "selected": false,
-      "data": {
-        "label": "Flutter",
-        "href": "https://roadmap.sh/flutter",
-        "color": "#ffffff",
-        "backgroundColor": "#2a79e4",
-        "style": {
-          "fontSize": 17
-        }
-      },
-      "zIndex": 999,
-      "width": 103,
-      "height": 49,
-      "positionAbsolute": {
-        "x": 4.958673919434659,
-        "y": 4511.679985574316
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "style": {
-        "width": 103,
-        "height": 49
-      },
-      "resizing": false
-    },
-    {
-      "id": "kcOaZuvgtQ1ptjTvKfd2l",
-      "type": "button",
-      "position": {
-        "x": 113.09837654300054,
-        "y": 4511.679985574316
-      },
-      "selected": false,
-      "data": {
-        "label": "React Native",
-        "href": "https://roadmap.sh/flutter",
-        "color": "#ffffff",
-        "backgroundColor": "#2a79e4",
-        "style": {
-          "fontSize": 17
-        },
-        "oldId": "eYziHRN-gsg9qr8Yddu2K"
-      },
-      "zIndex": 999,
-      "width": 146,
-      "height": 49,
-      "positionAbsolute": {
-        "x": 113.09837654300054,
-        "y": 4511.679985574316
-      },
-      "dragging": false,
-      "selectable": true,
-      "focusable": true,
-      "style": {
-        "width": 146,
-        "height": 49
       },
       "resizing": false
     },
@@ -5543,6 +5342,32 @@
       "positionAbsolute": {
         "x": 15.13989797603216,
         "y": 369.3426822070478
+      },
+      "dragging": false
+    },
+    {
+      "id": "BnvNJCHnPsTo25Hn0dN9v",
+      "type": "button",
+      "position": {
+        "x": -321.643620473428,
+        "y": 543.1000000000001
+      },
+      "selected": false,
+      "data": {
+        "label": "Learn SQL",
+        "href": "https://roadmap.sh/sql",
+        "color": "#ffffff",
+        "backgroundColor": "#2a79e4",
+        "style": {
+          "fontSize": 17
+        }
+      },
+      "zIndex": 999,
+      "width": 128,
+      "height": 49,
+      "positionAbsolute": {
+        "x": -321.643620473428,
+        "y": 543.1000000000001
       },
       "dragging": false
     }
@@ -6404,24 +6229,6 @@
     },
     {
       "style": {
-        "strokeDasharray": "0",
-        "strokeLinecap": "round",
-        "strokeWidth": 3.5,
-        "stroke": "#2b78e4"
-      },
-      "source": "i4VCwFm-wc9cqE73i-BIb",
-      "sourceHandle": "z2",
-      "target": "YDomoxzf-65sru6XVu0_X",
-      "targetHandle": "y1",
-      "data": {
-        "edgeStyle": "solid"
-      },
-      "id": "reactflow__edge-i4VCwFm-wc9cqE73i-BIbz2-YDomoxzf-65sru6XVu0_Xy1",
-      "selected": false,
-      "type": "simplebezier"
-    },
-    {
-      "style": {
         "strokeDasharray": "0.8 8",
         "strokeLinecap": "round",
         "strokeWidth": 3.5,
@@ -6435,6 +6242,23 @@
         "edgeStyle": "dashed"
       },
       "id": "reactflow__edge-TeewVruErSsD4VLXcaDxpy2-lTycWscyFPi-BtkNg9cdmz1",
+      "selected": false
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "BnvNJCHnPsTo25Hn0dN9v",
+      "sourceHandle": "z2",
+      "target": "YDomoxzf-65sru6XVu0_X",
+      "targetHandle": "y1",
+      "data": {
+        "edgeStyle": "solid"
+      },
+      "id": "reactflow__edge-BnvNJCHnPsTo25Hn0dN9vz2-YDomoxzf-65sru6XVu0_Xy1",
       "selected": false
     }
   ]

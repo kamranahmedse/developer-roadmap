@@ -5,5 +5,5 @@ API mocking is a crucial aspect of API design and testing. It involves simulatin
 Learn more from the following resources:
 
 - [@article@What is API Mocking? Definition, Guide, and Best Practices](https://katalon.com/resources-center/blog/what-is-api-mocking)
-- [@articleWhat is API mocking (What is API Mocking? Definition, Guide, and Best Practices)](https://blog.postman.com/what-is-api-mocking/)
+- [@article@What is API mocking (What is API Mocking? Definition, Guide, and Best Practices)](https://blog.postman.com/what-is-api-mocking/)
 - [@video@How to Mock RESTFUL APIs - The Easy way!](https://www.youtube.com/watch?v=tJRN5WBF5Wc)

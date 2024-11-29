@@ -2,7 +2,7 @@
 title: 'Real-time Leaderboard'
 description: 'Create a real-time leaderboard system for ranking and scoring.'
 isNew: false
-sort: 17
+sort: 2000
 difficulty: 'advanced'
 nature: 'API'
 skills:

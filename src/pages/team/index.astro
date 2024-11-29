@@ -1,15 +1,69 @@
 ---
-import AccountSidebar from '../../components/AccountSidebar.astro';
-import { TeamsList } from '../../components/TeamsList';
-import AccountLayout from '../../layouts/AccountLayout.astro';
+import { DashboardPage } from '../../components/Dashboard/DashboardPage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllBestPractices } from '../../lib/best-practice';
+import { getRoadmapsByTag } from '../../lib/roadmap';
+
+const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
+const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
+const bestPractices = await getAllBestPractices();
+
+const enrichedRoleRoadmaps = roleRoadmaps
+  .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+  .map((roadmap) => {
+    const { frontmatter } = roadmap;
+
+    return {
+      id: roadmap.id,
+      url: `/${roadmap.id}`,
+      title: frontmatter.briefTitle,
+      description: frontmatter.briefDescription,
+      relatedRoadmapIds: frontmatter.relatedRoadmaps,
+      renderer: frontmatter.renderer,
+      metadata: {
+        tags: frontmatter.tags,
+      },
+    };
+  });
+const enrichedSkillRoadmaps = skillRoadmaps
+  .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+  .map((roadmap) => {
+    const { frontmatter } = roadmap;
+
+    return {
+      id: roadmap.id,
+      url: `/${roadmap.id}`,
+      title:
+        frontmatter.briefTitle === 'Go' ? 'Go Roadmap' : frontmatter.briefTitle,
+      description: frontmatter.briefDescription,
+      relatedRoadmapIds: frontmatter.relatedRoadmaps,
+      renderer: frontmatter.renderer,
+      metadata: {
+        tags: frontmatter.tags,
+      },
+    };
+  });
+
+const enrichedBestPractices = bestPractices.map((bestPractice) => {
+  const { frontmatter } = bestPractice;
+
+  return {
+    id: bestPractice.id,
+    url: `/best-practices/${bestPractice.id}`,
+    title: frontmatter.briefTitle,
+    description: frontmatter.briefDescription,
+  };
+});
 ---
 
-<AccountLayout
-  title='Update Profile'
-  noIndex={true}
-  initialLoadingMessage={'Loading teams'}
->
-  <AccountSidebar hasDesktopSidebar={false} activePageId='team' activePageTitle='Teams'>
-    <TeamsList client:only="react" />
-  </AccountSidebar>
-</AccountLayout>
+<BaseLayout title='Team' noIndex={true} permalink="/team">
+  <DashboardPage
+    builtInRoleRoadmaps={enrichedRoleRoadmaps}
+    builtInSkillRoadmaps={enrichedSkillRoadmaps}
+    builtInBestPractices={enrichedBestPractices}
+    isTeamPage={true}
+    client:load
+  />
+  <div slot='open-source-banner'></div>
+  <div slot="changelog-banner" />
+</BaseLayout>

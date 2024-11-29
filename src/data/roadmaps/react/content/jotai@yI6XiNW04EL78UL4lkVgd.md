@@ -9,4 +9,3 @@ It scales from a simple useState replacement to an enterprise TypeScript applica
 - [@official@Official Website: Jotai](https://jotai.org/)
 - [@video@Jotai React - Better Global State Management](https://www.youtube.com/watch?v=ZcKzPZN7Ids)
 - [@article@State Management on React - Jotai](https://dev.to/kevin-uehara/state-management-on-react-part-3-jotai-i7f)
-- 

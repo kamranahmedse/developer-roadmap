@@ -4,4 +4,4 @@ Type guards are a way to narrow down the type of a variable. This is useful when
 
 Learn more from the following resources:
 
-- [@article@Type Guards - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards)
+- [@official@Type Guards - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards)

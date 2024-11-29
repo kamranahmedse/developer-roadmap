@@ -4,5 +4,5 @@ API keys and management is an integral part of API design. An API key is a uniqu
 
 Learn more from the following resources:
 
-- [@article@What is API key management?](https://www.akeyless.io/secrets-management-glossary/api-key-management/)
-- [@article@API Key Management | Definition and Best Practices](https://infisical.com/blog/api-key-management)
+- [@article@What is API Key Management?](https://www.akeyless.io/secrets-management-glossary/api-key-management/)
+- [@article@API Key Management - Definition and Best Practices](https://infisical.com/blog/api-key-management)

@@ -1,5 +1,6 @@
 import type { MarkdownFileType } from './file';
 import { type AuthorFileType, getAllAuthors } from './author.ts';
+import { replaceVariables } from './markdown.ts';
 
 export interface GuideFrontmatter {
   title: string;
@@ -20,12 +21,15 @@ export interface GuideFrontmatter {
     priority: number;
     changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly';
   };
+  relatedTitle?: string;
+  relatedGuidesId?: string;
   tags: string[];
 }
 
 export type GuideFileType = MarkdownFileType<GuideFrontmatter> & {
   id: string;
   author: AuthorFileType;
+  relatedGuides?: Record<string, string>;
 };
 
 /**
@@ -61,13 +65,44 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
   const allAuthors = await getAllAuthors();
 
   const guideFiles = Object.values(guides) as GuideFileType[];
-  const enrichedGuides: GuideFileType[] = guideFiles.map((guideFile) => ({
-    ...guideFile,
-    id: guidePathToId(guideFile.file),
-    author: allAuthors.find(
-      (author) => author.id === guideFile.frontmatter.authorId,
-    )!,
-  }));
+
+  let enrichedGuides: GuideFileType[] = guideFiles.map((guideFile) => {
+    let relatedGuides: GuideFileType[] = [];
+    if (guideFile.frontmatter.relatedGuidesId) {
+      relatedGuides = guideFiles.filter(
+        (g) =>
+          g?.frontmatter?.relatedGuidesId ===
+            guideFile.frontmatter.relatedGuidesId && g.file !== guideFile.file,
+      );
+    }
+
+    return {
+      ...guideFile,
+      id: guidePathToId(guideFile.file),
+      author: allAuthors.find(
+        (author) => author.id === guideFile.frontmatter.authorId,
+      )!,
+      frontmatter: {
+        ...guideFile.frontmatter,
+        title: replaceVariables(guideFile.frontmatter.title),
+        description: replaceVariables(guideFile.frontmatter.description),
+        seo: {
+          ...(guideFile.frontmatter?.seo || {}),
+          title: replaceVariables(guideFile.frontmatter.seo.title),
+          description: replaceVariables(guideFile.frontmatter.seo.description),
+        },
+      },
+      relatedGuides: relatedGuides.reduce(
+        (acc, guide) => {
+          acc[replaceVariables(guide.frontmatter.title)] =
+            guide.frontmatter?.excludedBySlug ||
+            `/guides/${guidePathToId(guideFile.file)}`;
+          return acc;
+        },
+        {} as Record<string, string>,
+      ),
+    };
+  });
 
   return enrichedGuides.sort(
     (a, b) =>
@@ -115,6 +150,12 @@ export function getGuideTableOfContent(headings: HeadingType[]) {
         });
       }
     });
+
+  if (tableOfContents.length > 5) {
+    tableOfContents.forEach((group) => {
+      group.children = [];
+    });
+  }
 
   return tableOfContents;
 }

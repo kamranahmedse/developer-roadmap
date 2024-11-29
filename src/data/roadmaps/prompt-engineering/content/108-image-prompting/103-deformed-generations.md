@@ -1,3 +1,7 @@
 # Fix Deformed Generations
 
-- [@article@Fix Deformed Generations](https://learnprompting.org/docs/image_prompting/fix_deformed_generations)
+Deformed generations in image prompting refer to outputs from generative models that do not meet the intended aesthetic or structural quality, particularly when involving human body parts like hands and feet. This issue can often be mitigated using negative prompts, which instruct the AI to de-emphasize certain undesired features. Key strategies to address this problem include refining prompt design, using negative prompts and weighted terms, selecting appropriate models, implementing iterative processes and feedback loops, keeping models updated, and applying post-processing techniques. While current models may still struggle with certain deformations, employing these strategies effectively can significantly enhance image quality. As generative models continue to evolve, the need for such techniques is expected to decrease, but they remain essential for anyone working with AI-generated imagery to ensure outputs meet desired standards of quality and realism.
+
+Learn more from the following resources:
+- [@article@How to Fix Hands in Stable Diffusion: A Step-by-Step Guide - AI Prompt Directory](https://www.aipromptsdirectory.com/how-to-fix-hands-in-stable-diffusion-a-step-by-step-guide/)
+- [@guide@Guide to Negative Prompts in Stable Diffusion | getimg.ai](https://getimg.ai/guides/guide-to-negative-prompts-in-stable-diffusion)

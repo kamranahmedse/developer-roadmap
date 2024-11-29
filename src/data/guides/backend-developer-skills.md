@@ -7,6 +7,8 @@ seo:
   title: '8 In-Demand Backend Developer Skills to Master'
   description: 'Learn what the essential backend developer skills are that you should learn and master to advance in your career.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-skills-ece68.jpg'
+relatedTitle: "Other Guides"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-02-27
@@ -90,7 +92,7 @@ Of course, it’s impossible to predict which programming language will become a
 
 ### The importance of supporting frameworks
 
-Frameworks for a specific programming language do change a lot faster than the language itself, though.
+[Frameworks](https://roadmap.sh/backend/frameworks) for a specific programming language do change a lot faster than the language itself, though.
 
 Frameworks are there to provide you with a simplified gateway into the functionalities that you’d normally need for common tasks. For example, in the context of backend web development, frameworks usually take care of:
 

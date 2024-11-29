@@ -4,6 +4,6 @@ Pyramid is a general, open source, web application development framework built i
 
 Visit the following resources to learn more:
 
-- [@article@Pyramid - Official Website](https://trypyramid.com/)
-- [@article@Pyramid Documentation](https://trypyramid.com/documentation.html)
+- [@official@Pyramid Website](https://trypyramid.com/)
+- [@official@Pyramid Documentation](https://trypyramid.com/documentation.html)
 - [@article@Pyramid Framework Introduction](https://www.tutorialspoint.com/python_web_development_libraries/python_web_development_libraries_pyramid_framework.htm)

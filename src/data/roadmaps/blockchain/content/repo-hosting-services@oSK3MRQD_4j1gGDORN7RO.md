@@ -4,7 +4,6 @@ When working on a team, you often need a remote place to put your code so others
 
 Visit the following resources to learn more:
 
-- [@opensource@GitHub](https://github.com/features/)
+- [@article@GitHub](https://github.com/features/)
 - [@article@GitLab](https://about.gitlab.com/)
 - [@article@BitBucket](https://bitbucket.org/product/guides/getting-started/overview)
-- [@article@How to choose the best source code repository](https://bitbucket.org/product/code-repository)

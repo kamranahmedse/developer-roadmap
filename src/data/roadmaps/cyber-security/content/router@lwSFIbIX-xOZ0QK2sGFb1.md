@@ -1,33 +1,10 @@
 # Router
 
-A **router** is a networking device responsible for forwarding data packets between computer networks. It acts as a traffic coordinator, choosing the best possible path for data transmission, thus ensuring smooth communication between networks. Routers are an integral part of the internet, helping to establish and maintain connections between different networks and devices.
+A router is a networking device that directs data packets between different networks, ensuring they reach their destination. It operates at the network layer (Layer 3) of the OSI model and forwards data based on the IP addresses of the source and destination. Routers are essential for connecting devices to the internet or linking multiple networks together. They maintain a routing table to decide the best path for data and can dynamically update routes using protocols like RIP, OSPF, or BGP. Routers also handle Network Address Translation (NAT), allowing multiple devices to share a single public IP address. Many modern routers offer Wi-Fi for wireless connectivity and include basic firewall security to protect the network from threats.
 
-## Functionality of Routers
+Learn more from the following resources:
 
-- **Routing Decisions**: Routers analyze incoming data packets and make decisions on which path to forward the data based on destination IP addresses and network conditions.
-
-- **Connecting Networks**: Routers are essential in connecting different networks together. They enable communication between your home network and the broader internet, as well as between different networks within an organization.
-
-- **Managing Traffic**: Routers manage the flow of data to ensure optimal performance and avoid network congestion. They can prioritize certain types of data, such as video streaming, to ensure a better user experience.
-
-## Types of Routers
-
-- **Wired Routers**: Utilize Ethernet cables to connect devices to the network. They typically come with multiple ethernet ports for devices such as computers, gaming consoles, and smart TVs.
-
-- **Wireless Routers**: Provide network access without needing physical cables. Wireless routers use Wi-Fi to transmit data between devices and are the most common type of router found in homes and offices.
-
-- **Core Routers**: Operate within the backbone of the internet, directing data packets between major networks (such as ISPs). These routers are high-performance devices capable of handling massive amounts of data traffic.
-
-## Router Security
-
-As routers are a critical gateway between your network and the internet, it's essential to keep them secure. Some common router security practices include:
-
-- Changing default passwords and usernames: Manufacturers often set simple default passwords, which can be easily guessed or discovered by attackers. It's important to set a strong, unique password for your router.
-
-- Regular firmware updates: Router manufacturers release updates to address security vulnerabilities and improve performance. Keep your router's software up to date.
-
-- Disable remote management: Some routers have a feature that allows remote access, which can be exploited by hackers. If you don't need this feature, disable it.
-
-- Create a guest network: If your router supports it, create a separate network for guests to use. This isolates them from your primary network, ensuring that they cannot access your devices or data.
-
-By understanding routers and their role in cybersecurity, you can take the necessary steps to secure your network and protect your data.
+- [@article@What is a Router](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-router/)
+- [@video@What is a router and how does it work?](https://www.youtube.com/watch?v=UIJzHLpG9bM)
+- [@video@Everything Routers do](https://youtu.be/AzXys5kxpAM?si=nEsCH6jG2Lj6Ua8N)
+- [@video@How Routers forward Packets?](https://youtu.be/Ep-x_6kggKA?si=II5xBPoXjYEjLvWX)

@@ -4,6 +4,7 @@ Basic Auth, short for Basic Authentication, is a simple method often used in API
 
 Learn more from the following resources:
 
+- [@roadmap@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
 - [@article@Basic Auth Generation Header](https://www.debugbear.com/basic-auth-header-generator)
 - [@article@Basic Authentication - Swagger.io](https://swagger.io/docs/specification/authentication/basic-authentication/)
 - [@article@Basic Authentication - Twillio](https://www.twilio.com/docs/glossary/what-is-basic-authentication)

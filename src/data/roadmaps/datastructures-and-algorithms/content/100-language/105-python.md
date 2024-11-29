@@ -4,7 +4,7 @@ Python is a well known programming language which is both a strongly typed and a
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Python Roadmap](/python)
+- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@official@Python Website](https://www.python.org/)
 - [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
@@ -13,5 +13,4 @@ Visit the following resources to learn more:
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
 - [@article@An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
 - [@article@Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)
-- [@video@Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8\&ab_channel=ProgrammingwithMosh)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

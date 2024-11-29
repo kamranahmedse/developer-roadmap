@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@Understanding Path Variables and Query Parameters in HTTP Requests](https://medium.com/@averydcs/understanding-path-variables-and-query-parameters-in-http-requests-232248b71a8)
 - [@article@Describing parameters](https://swagger.io/docs/specification/describing-parameters/)
-- [@article@Path parameters](https://help.iot-x.com/api/how-to-use-the-api/parameters/path-parameters)
+- [@article@Path Parameters](https://help.iot-x.com/api/how-to-use-the-api/parameters/path-parameters)

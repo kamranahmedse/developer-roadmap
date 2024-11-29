@@ -1,4 +1,4 @@
-import { useState, type CSSProperties } from 'react';
+import { useState } from 'react';
 import type { HeadingGroupType } from '../../lib/guide';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -23,7 +23,7 @@ export function TableOfContent(props: TableOfContentProps) {
   return (
     <div
       className={cn(
-        'relative min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-10',
+        'relative min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-5',
         {
           'top-0 lg:!sticky': totalRows <= 20,
         },
@@ -46,7 +46,7 @@ export function TableOfContent(props: TableOfContentProps) {
 
       <ol
         className={cn(
-          'mt-0.5 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full space-y-0 max-lg:bg-white max-lg:shadow',
+          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow',
           !isOpen && 'hidden lg:block',
           isOpen && 'block',
         )}
@@ -68,7 +68,7 @@ export function TableOfContent(props: TableOfContentProps) {
             </a>
 
             {heading.children.length > 0 && (
-              <ol className="my-0 ml-4 mt-1 max-lg:ml-0 max-lg:mt-0 max-lg:list-none space-y-0">
+              <ol className="my-0 ml-4 mt-1 space-y-0 max-lg:ml-0 max-lg:mt-0 max-lg:list-none">
                 {heading.children.map((children) => {
                   return (
                     <li key={children.slug}>

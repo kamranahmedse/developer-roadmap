@@ -4,5 +4,5 @@ The `provider` meta-argument in Terraform specifies which provider configuration
 
 Learn more from the following resources:
 
-- [@official@Terraform Docs - for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/resource-provider)
-- [@article@Terraform by Example - for_each](https://www.terraformbyexample.com/providers/)
+- [@official@Terraform Docs - provider](https://developer.hashicorp.com/terraform/language/meta-arguments/resource-provider)
+- [@article@Terraform by Example - provider](https://www.terraformbyexample.com/providers/)

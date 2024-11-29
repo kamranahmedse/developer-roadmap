@@ -2,7 +2,7 @@
 title: 'Image Processing Service'
 description: 'Build a service that allows users to upload and process images.'
 isNew: false
-sort: 15
+sort: 1800
 difficulty: 'intermediate'
 nature: 'API'
 skills:
@@ -35,7 +35,7 @@ Here is the list of features that you should implement in this project:
 
 - **Sign-Up**: Allow users to create an account.
 - **Log-In**: Allow users to log into their account.
-- **JWT Authentication**: Secure endpoints using JWT tokens for authenticated access.
+- **JWT Authentication**: Secure endpoints using JWTs for authenticated access.
 
 ### Image Management
 
@@ -75,7 +75,7 @@ POST /register
   "password": "password123"
 }
 ```
-Response should be the user object with a JWT token.
+Response should be the user object with a JWT.
 
 Log in an existing user:
 
@@ -86,7 +86,7 @@ POST /login
   "password": "password123"
 }
 ```
-Response should be the user object with a JWT token.
+Response should be the user object with a JWT.
 
 ### Image Management Endpoints
 

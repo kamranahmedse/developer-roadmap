@@ -1,0 +1,52 @@
+name: Refresh Roadmap Content JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  refresh-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js Version 20 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install Dependencies and Generate Content JSON
+        run: |
+          pnpm install
+          npm run generate:roadmap-content-json
+      
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          delete-branch: false
+          branch: "chore/update-content-json"
+          base: "master"
+          labels: |
+            dependencies
+            automated pr
+          reviewers: kamranahmedse
+          commit-message: "chore: update roadmap content json"
+          title: "Updated Roadmap Content JSON - Automated"
+          body: |
+            ## Updated Roadmap Content JSON
+            
+            > [!IMPORTANT]
+            > This PR Updates the Roadmap Content JSON files stored in the `public` directory.
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
+
+            **Please Review the Changes and Merge the PR if everything is fine.**

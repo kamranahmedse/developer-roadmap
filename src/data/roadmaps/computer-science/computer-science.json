@@ -5797,7 +5797,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Cloud Design Ptterns",
+        "label": "Cloud Design Patterns",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -7157,7 +7157,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Porcesses and Threads",
+        "label": "Processes and Threads",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

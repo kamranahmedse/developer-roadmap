@@ -4,7 +4,7 @@ JavaScript allows you to add interactivity to your pages. Common examples that y
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated JavaScript Roadmap](/javascript)
+- [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
 - [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
@@ -14,6 +14,5 @@ Visit the following resources to learn more:
 - [@article@Official Docs for Deep Dives](https://www.typescriptlang.org/docs/)
 - [@article@The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@article@TypeScript Tutorial](https://www.tutorialspoint.com/typescript/index.htm)
-- [@article@Scrimba — TypeScript Basics](https://scrimba.com/learn/typescript)
 - [@video@TypeScript for Beginners](https://www.youtube.com/watch?v=BwuLxPH8IDs)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

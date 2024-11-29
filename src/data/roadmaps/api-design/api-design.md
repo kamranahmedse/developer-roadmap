@@ -7,7 +7,7 @@ briefTitle: 'API Design'
 briefDescription: 'Step by step guide to learn how to design and build robust APIs.'
 title: 'API Design'
 description: 'Step by step guide to learn how to design and build robust APIs.'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

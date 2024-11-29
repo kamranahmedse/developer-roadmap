@@ -14,6 +14,16 @@ const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const bestPractices = await getAllBestPractices();
 const questionGroups = await getAllQuestionGroups();
+const projectGroups = [
+  {
+    title: 'Frontend',
+    id: 'frontend',
+  },
+  {
+    title: 'Backend',
+    id: 'backend',
+  },
+]
 
 const guides = await getAllGuides();
 const questionGuides = (await getAllQuestionGroups()).filter(
@@ -31,7 +41,7 @@ const videos = await getAllVideos();
     <HeroSection />
 
     <FeaturedItems
-      heading='Role based Roadmaps'
+      heading='Role-based Roadmaps'
       featuredItems={roleRoadmaps
         .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
         .map((roadmapItem) => ({
@@ -44,7 +54,7 @@ const videos = await getAllVideos();
     />
 
     <FeaturedItems
-      heading='Skill based Roadmaps'
+      heading='Skill-based Roadmaps'
       featuredItems={skillRoadmaps
         .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
         .map((roadmapItem) => ({
@@ -57,6 +67,15 @@ const videos = await getAllVideos();
           isUpcoming: roadmapItem.frontmatter.isUpcoming,
         }))}
       showCreateRoadmap={true}
+    />
+
+    <FeaturedItems
+      heading='Project Ideas'
+      allowBookmark={false}
+      featuredItems={projectGroups.map((projectGroup) => ({
+        text: projectGroup.title,
+        url: `${projectGroup.id}/projects`,
+      }))}
     />
 
     <FeaturedItems

@@ -11,7 +11,7 @@ export function replaceVariables(
     currentYear: new Date().getFullYear().toString(),
   };
 
-  return markdown.replace(/@([^@]+)@/g, (match, p1) => {
+  return markdown?.replace(/@([^@]+)@/g, (match, p1) => {
     return allVariables[p1] || match;
   });
 }

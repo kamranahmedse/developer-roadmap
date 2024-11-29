@@ -4,6 +4,7 @@
 
 Learn more from the following resources:
 
+- [@official@Terraform Plan Documentation](https://developer.hashicorp.com/terraform/cli/commands/plan)
 - [@course@Create a Terraform plan](https://developer.hashicorp.com/terraform/tutorials/cli/plan)
 - [@video@Terraform - Terraform Plan](https://www.youtube.com/watch?v=9v08h-Oaelo)
 - [@article@Terraform plan command and how it works](https://spacelift.io/blog/terraform-plan)

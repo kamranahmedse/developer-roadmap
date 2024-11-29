@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import {
+  getAllProjects,
+  getProjectById,
+  type ProjectFrontmatter,
+} from '../../../lib/project';
+import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
+import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
+import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
+
+export async function getStaticPaths() {
+  const projects = await getAllProjects();
+
+  return projects
+    .map((project) => project.id)
+    .map((projectId) => ({
+      params: { projectId },
+    }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  projectId: string;
+}
+
+const { projectId } = Astro.params as Params;
+
+const project = await getProjectById(projectId);
+const projectData = project.frontmatter as ProjectFrontmatter;
+
+let jsonLdSchema: any[] = [];
+
+const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
+
+const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
+const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
+---
+
+<BaseLayout
+  permalink={`/projects/${projectId}/solutions`}
+  title={projectData?.seo?.title}
+  briefTitle={projectData.title}
+  ogImageUrl={ogImageUrl}
+  description={projectData.seo.description}
+  keywords={projectData.seo.keywords}
+  jsonLd={jsonLdSchema}
+  resourceId={projectId}
+>
+  <div class='bg-gray-50'>
+    <div class='container'>
+      <ProjectTabs
+        parentRoadmapId={parentRoadmapId}
+        projectId={projectId}
+        activeTab='solutions'
+      />
+
+      <ListProjectSolutions
+        project={projectData}
+        projectId={projectId}
+        client:load
+      />
+
+      <ProjectSolutionModal
+        projectId={projectId}
+        projectTitle={projectData.title}
+        projectDescription={projectData.description}
+        client:only='react'
+      />
+    </div>
+  </div>
+</BaseLayout>

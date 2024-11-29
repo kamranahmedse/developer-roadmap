@@ -4,5 +4,5 @@ In Node. js, process. env is a global variable that is injected during runtime. 
 
 Visit the following resources to learn more:
 
-- [@official@Node.js Learn environment variables](https://www.digitalocean.com/community/tutorials/nodejs-command-line-arguments-node-scripts)
+- [@official@Node.js Learn environment variables](https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs)
 - [@article@Process.env Node](https://www.knowledgehut.com/blog/web-development/node-environment-variables)

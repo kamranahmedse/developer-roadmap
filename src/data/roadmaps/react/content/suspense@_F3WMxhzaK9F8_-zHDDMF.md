@@ -12,3 +12,4 @@ Here is a general overview of how React Suspense works:
 Visit the following resources to learn more:
 
 - [@official@React Suspense](https://react.dev/reference/react/Suspense)
+- [@article@React Suspense - A complete guide](https://hygraph.com/blog/react-suspense)

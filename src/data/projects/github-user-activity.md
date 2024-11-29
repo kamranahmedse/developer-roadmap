@@ -2,11 +2,12 @@
 title: 'GitHub User Activity'
 description: 'Use GitHub API to fetch user activity and display it in the terminal.'
 isNew: false
-sort: 2
+sort: 200
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
   - 'Programming Language'
+  - 'CLI'
   - 'API Consumption'
 seo:
   title: 'GitHub User Activity CLI'
@@ -21,6 +22,7 @@ roadmapIds:
   - 'java'
   - 'golang'
   - 'spring-boot'
+  - 'cpp'
 ---
 
 In this project, you will build a simple command line interface (CLI) to fetch the recent activity of a GitHub user and display it in the terminal. This project will help you practice your programming skills, including working with APIs, handling JSON data, and building a simple CLI application.

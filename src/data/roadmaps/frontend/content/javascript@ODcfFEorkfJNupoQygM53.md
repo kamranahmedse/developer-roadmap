@@ -1,17 +1,10 @@
 # JavaScript
 
-JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.
+JavaScript is a high-level, interpreted programming language that is a core technology of the World Wide Web. It allows for dynamic, client-side scripting in web browsers, enabling interactive web pages and user interfaces. JavaScript supports object-oriented, imperative, and functional programming styles. It's also used server-side through Node.js, for desktop application development with frameworks like Electron, and in various other contexts. The language features dynamic typing, first-class functions, and prototype-based object-orientation. JavaScript's ubiquity in web development, coupled with its versatility and continuous evolution through ECMAScript standards, has made it one of the most popular programming languages in use today.
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated JavaScript Roadmap](/javascript)
-- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
+- [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
-- [@article@Learn JavaScript: Covered many topics](https://www.javascripttutorial.net/)
-- [@article@Eloquent JavaScript textbook](https://eloquentjavascript.net/)
-- [@opensource@You Dont Know JS Yet (book series) ](https://github.com/getify/You-Dont-Know-JS)
-- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
-- [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
 - [@article@Build 30 Javascript projects in 30 days](https://javascript30.com/)
-- [@opensource@Learn the basics of JavaScript](https://github.com/workshopper/javascripting)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

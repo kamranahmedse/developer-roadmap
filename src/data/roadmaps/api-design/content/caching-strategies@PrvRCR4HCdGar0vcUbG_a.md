@@ -5,5 +5,5 @@ Caching in API design serves as a technique that allows you to store copies of d
 Learn more from the following resources:
 
 - [@article@Caching Strategies for APIs](https://medium.com/@satyendra.jaiswal/caching-strategies-for-apis-improving-performance-and-reducing-load-1d4bd2df2b44)
-- [@article@Using caching strategies to improve API performance](https://www.lonti.com/blog/using-caching-strategies-to-improve-api-performance)
+- [@article@Using Caching Strategies to Improve API Performance](https://www.lonti.com/blog/using-caching-strategies-to-improve-api-performance)
 - [@video@Cache Systems Every Developer Should Know](https://www.youtube.com/watch?v=dGAgxozNWFE)

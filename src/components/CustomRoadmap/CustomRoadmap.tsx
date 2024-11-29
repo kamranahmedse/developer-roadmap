@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
-import { type AppError, type FetchError, httpGet } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
 import { RestrictedPage } from './RestrictedPage';
 import { FlowRoadmapRenderer } from './FlowRoadmapRenderer';
+import { useQuery } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+import { httpGet, type FetchError } from '../../lib/query-http';
+import { useCustomRoadmap } from '../../hooks/use-custom-roadmap';
 
 export const allowedLinkTypes = [
   'video',
@@ -71,43 +74,33 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<GetRoadmapResponse | null>(null);
-  const [error, setError] = useState<AppError | FetchError | undefined>();
 
-  async function getRoadmap() {
-    setIsLoading(true);
+  const { data, error } = useCustomRoadmap({
+    id,
+    secret,
+    slug,
+  });
 
-    const roadmapUrl = slug
-      ? new URL(
-          `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap-by-slug/${slug}`,
-        )
-      : new URL(`${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`);
-
-    if (secret) {
-      roadmapUrl.searchParams.set('secret', secret);
-    }
-
-    const { response, error } = await httpGet<GetRoadmapResponse>(
-      roadmapUrl.toString(),
-    );
-
-    if (error || !response) {
-      setError(error);
-      setIsLoading(false);
+  useEffect(() => {
+    if (!data) {
       return;
     }
 
-    document.title = `${response.title} - roadmap.sh`;
-
-    setRoadmap(response);
-    currentRoadmap.set(response);
+    document.title = `${data.title} - roadmap.sh`;
+    setRoadmap(data);
+    currentRoadmap.set(data);
     setIsLoading(false);
-  }
+    hideRoadmapLoader();
+  }, [data]);
 
   useEffect(() => {
-    getRoadmap().finally(() => {
-      hideRoadmapLoader();
-    });
-  }, []);
+    if (!error) {
+      return;
+    }
+
+    setIsLoading(false);
+    hideRoadmapLoader();
+  }, [error]);
 
   if (isLoading) {
     return null;
@@ -122,6 +115,7 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
       {!isEmbed && <RoadmapHeader />}
       <FlowRoadmapRenderer isEmbed={isEmbed} roadmap={roadmap!} />
       <TopicDetail
+        resourceId={roadmap!._id}
         resourceTitle={roadmap!.title}
         resourceType="roadmap"
         isEmbed={isEmbed}

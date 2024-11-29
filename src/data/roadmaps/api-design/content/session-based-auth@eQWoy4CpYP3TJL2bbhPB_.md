@@ -8,6 +8,6 @@ Understanding Session Based Authentication is crucial for secure API design, esp
 
 Learn more from the following resources:
 
-- [@official@Session Based Authentication - Roadmap.sh](https://roadmap.sh/guides/session-based-authentication)
+- [@roadmap@Session Based Authentication](https://roadmap.sh/guides/session-based-authentication)
 - [@video@Session Based Authentication - Roadmap.sh](https://www.youtube.com/watch?v=gKkBEOq_shs)
 - [@article@Session vs Token Authentication](https://www.authgear.com/post/session-vs-token-authentication)

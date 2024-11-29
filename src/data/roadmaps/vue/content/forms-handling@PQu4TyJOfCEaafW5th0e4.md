@@ -4,6 +4,6 @@ You can use the `v-model` directive to create two-way data bindings on form inpu
 
 Visit the following resources to learn more:
 
-- [@article@Form Input Bindings](https://vuejs.org/guide/essentials/forms.html)
+- [@official@Form Input Bindings](https://vuejs.org/guide/essentials/forms.html)
 - [@video@Vue JS 3 Tutorial - Form Handling](https://www.youtube.com/watch?v=T-AE-GtSlN4)
 - [@article@A complete guide to forms in Vue.js](https://blog.logrocket.com/an-imperative-guide-to-forms-in-vue-js-2/)

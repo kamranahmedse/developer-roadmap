@@ -1,20 +1,20 @@
 # Browser DevTools
 
-Most of the browsers have built-in developer tools that help you perform web development specific tasks on a webpage. My personal recommendation would be to use Chrome DevTools as it is the most advanced and has the most features. However, if you are using a different browser, you can still use the DevTools to debug your web application.
+Browser Developer Tools, commonly known as DevTools, are built-in features in modern web browsers that provide a suite of debugging and development capabilities. These tools allow developers to inspect, edit, and debug HTML, CSS, and JavaScript in real-time on web pages. Key features include:
 
-Chrome DevTools is a set of web development tools built into the Google Chrome browser. It allows web developers to debug and optimize web pages by providing a range of features for inspecting and manipulating the page's HTML, CSS, and JavaScript.
+1. DOM inspector for viewing and modifying page structure
+2. Console for JavaScript debugging and logging
+3. Network panel for analyzing HTTP requests and responses
+4. Performance profiler for optimizing page load and runtime performance
+5. Application panel for managing storage, caches, and service workers
+6. Source panel for setting breakpoints and debugging JavaScript
+7. Elements panel for live CSS editing
+8. Device emulation for testing responsive designs
 
-Some of the features provided by Chrome DevTools include:
-
-- **Elements panel**: Inspect and modify the page's HTML and CSS.
-- **Console panel**: View and debug JavaScript errors and log messages.
-- **Network panel**: Monitor network requests and responses, and analyze performance issues.
-- **Performance panel**: Analyze the performance of the page and identify bottlenecks.
-- **Application panel**: Inspect the page's resources, such as cookies and local storage.
-
-Chrome DevTools is a powerful and essential tool for web developers, and it is widely used to debug and optimize web pages. It is constantly updated with new features and improvements, and it is available on all modern web browsers.
+DevTools are essential for front-end development, performance optimization, and cross-browser compatibility testing, providing developers with crucial insights into web application behavior and structure.
 
 Visit the following resources to learn more:
 
 - [@article@Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)
+- [@article@Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/)
 - [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)

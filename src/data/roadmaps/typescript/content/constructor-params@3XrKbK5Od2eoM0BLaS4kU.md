@@ -12,4 +12,4 @@ In this example, the constructor has two parameters: name and age. name has a pr
 
 Learn more from the following links:
 
-- [@article@TypeScript - Construct](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)
+- [@official@TypeScript - Construct](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)

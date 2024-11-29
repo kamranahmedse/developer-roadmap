@@ -15,4 +15,4 @@ function f2(a: unknown) {
 
 Learn more from the following links:
 
-- [@article@Unknown Type in TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type)
+- [@official@Unknown Type in TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type)

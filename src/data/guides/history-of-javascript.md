@@ -46,7 +46,7 @@ After a few years of the release of ES5, things started to change, TC39 (the com
 - Default and rest parameters
 - Spread operator
 - `let` and `const`
-- Iterators  `for..of`
+- Iterators `for..of`
 - Generators
 - `map` and `set`
 - Proxies and Symbols
@@ -80,4 +80,4 @@ ESNext is a dynamic name that refers to whatever the current version of ECMAScri
 
 Since the release of ES6, [TC39](https://github.com/tc39) has quite streamlined their process. TC39 operates through a Github organization now and there are [several proposals](https://github.com/tc39/proposals) for new features or syntax to be added to the next versions of ECMAScript. Any one can go ahead and [submit a proposal](https://github.com/tc39/proposals) thus resulting in increasing the participation from the community. Every proposal goes through [four stages of maturity](https://tc39.github.io/process-document/) before it makes it into the specification.
 
-And that about wraps it up. Feel free to leave your feedback in the [discord](https://discord.gg/cJpEt5Qbwa). Also here are the links to original language specifications [ES6](https://www.ecma-international.org/ecma-262/6.0/), [ES7](https://www.ecma-international.org/ecma-262/7.0/) and [ES8](https://www.ecma-international.org/ecma-262/8.0/).
+And that about wraps it up. Feel free to leave your feedback in the [discord](https://roadmap.sh/discord). Also here are the links to original language specifications [ES6](https://www.ecma-international.org/ecma-262/6.0/), [ES7](https://www.ecma-international.org/ecma-262/7.0/) and [ES8](https://www.ecma-international.org/ecma-262/8.0/).

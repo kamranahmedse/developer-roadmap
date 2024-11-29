@@ -1,27 +1,76 @@
 # Pitfalls of LLMs
 
-LLMs are extremely powerful, but they are by no means perfect. There are many pitfalls that you should be aware of when using them.
+LLMs are extremely powerful. There are many pitfalls, safety challenges and risks that you should be aware of when using them.
 
-### Model Guessing Your Intentions
+### Language Translation
 
-Sometimes, LLMs might not fully comprehend the intent of your prompt and may generate generic or safe responses. To mitigate this, make your prompts more explicit or ask the model to think step-by-step before providing a final answer.
+There are several risks associated with LLMs in language translation.
 
-### Sensitivity to Prompt Phrasing
+- Inaccurate translations
+- Contextual misinterpretation
+- Biased translations
+- Deepfakes
+- Privacy and data security
+- Legal and regulatory compliance
 
-LLMs can be sensitive to the phrasing of your prompts, which might result in completely different or inconsistent responses. Ensure that your prompts are well-phrased and clear to minimize confusion.
+### Text Generation
 
-### Model Generating Plausible but Incorrect Answers
+Text generation is a powerful capability of LLMs but also introduces certain risks and challenges.
 
-In some cases, LLMs might generate answers that sound plausible but are actually incorrect. One way to deal with this is by adding a step for the model to verify the accuracy of its response or by prompting the model to provide evidence or a source for the given information.
+- Misinformation and fake news
+- Bias amplification
+- Offensive or inappropriate content
+- Plagiarism and copyright infringement
+- Lack of transparency
+- Privacy breaches
 
-### Verbose or Overly Technical Responses
+### Question Answering
 
-LLMs, especially larger ones, may generate responses that are unnecessarily verbose or overly technical. To avoid this, explicitly guide the model by making your prompt more specific, asking for a simpler response, or requesting a particular format.
+LLMs present several risks in the domain of question answering.
 
-### LLMs Not Asking for Clarification
+- Hallucination
+- Outdated information
+- Bias
+- Harmful answers
+- Lack of contextual understanding
+- Privacy and security concerns
+- Lack of transparency and xxplainability
 
-When faced with an ambiguous prompt, LLMs might try to answer it without asking for clarification. To encourage the model to seek clarification, you can prepend your prompt with "If the question is unclear, please ask for clarification."
+### Text summarization
 
-### Model Failure to Perform Multi-part Tasks
+Text summarization is a powerful application of LLMs but also introduces certain risks and challenge
 
-Sometimes, LLMs might not complete all parts of a multi-part task or might only focus on one aspect of it. To avoid this, consider breaking the task into smaller, more manageable sub-tasks or ensure that each part of the task is clearly identified in the prompt.
+- Information loss
+- Bias amplification
+- Contextual misinterpretation
+
+### Sentiment analysis
+
+Sentiment analysis, the process of determining a piece of text’s sentiment or emotional tone, is an application where LLMs are frequently employed.
+
+- Biased sentiment analysis
+- Cultural and contextual nuances
+- Limited domain understanding
+- Misinterpretation of negation and ambiguity
+- Overgeneralization and lack of individual variation
+
+### Code Assistance
+
+Code assistance and generation is an area where LLMs have shown promising capabilities.
+
+- Security vulnerabilities
+- Performance and efficiency challenges
+- Quality and reliability concerns
+- Insufficient understanding of business or domain context
+- Intellectual property concerns
+
+Read more from [Risks of Large Language Models: A comprehensive guide](https://www.deepchecks.com/risks-of-large-language-models/).
+
+Learn more from the following resources:
+
+- [@video@Risks of Large Language Models - IBM](https://www.youtube.com/watch?v=r4kButlDLUc)
+- [@article@Risks of Large Language Models: A comprehensive guide](https://www.deepchecks.com/risks-of-large-language-models/)
+- [@article@Limitations of LLMs: Bias, Hallucinations, and More](https://learnprompting.org/docs/basics/pitfalls)
+- [@guides@Risks & Misuses | Prompt Engineering Guide](https://www.promptingguide.ai/risks)
+- [@guides@OWASP Top 10 for LLM & Generative AI Security](https://genai.owasp.org/llm-top-10/)
+- [@guides@LLM Security Guide - Understanding the Risks of Prompt Injections and Other Attacks on Large Language Models ](https://www.mlopsaudits.com/blog/llm-security-guide-understanding-the-risks-of-prompt-injections-and-other-attacks-on-large-language-models)

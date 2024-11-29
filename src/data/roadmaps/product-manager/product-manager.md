@@ -8,7 +8,7 @@ briefDescription: Everything you need to know to become a Product Manager.
 hasTopics: true
 isHidden: false
 isUpcoming: false
-isNew: true
+isNew: false
 seo:
   title: Product Manager
   description: Learn what product management is, what product managers do and how to become one using our community-driven roadmap.
@@ -27,6 +27,7 @@ relatedRoadmaps:
   - 'api-design'
   - 'design-system'
   - 'software-architect'
+  - 'engineering-manager'
 sitemap:
   priority: 1
   changefreq: monthly

@@ -1,0 +1,882 @@
+{
+  "B0kARTODvCBi0iOF8iiqI": {
+    "title": "HTML",
+    "description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "W3Schools: Learn HTML",
+        "url": "https://www.w3schools.com/html/html_intro.asp",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about HTML",
+        "url": "https://app.daily.dev/tags/html?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "HTML Full Course for Beginners",
+        "url": "https://youtu.be/mJgBOIoGihA",
+        "type": "video"
+      },
+      {
+        "title": "HTML Full Course - Build a Website Tutorial",
+        "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        "type": "video"
+      }
+    ]
+  },
+  "dAJHWmGeiYdzZ1ZjrWz1S": {
+    "title": "CSS",
+    "description": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "W3Schools — Learn CSS",
+        "url": "https://www.w3schools.com/css/",
+        "type": "article"
+      },
+      {
+        "title": "Web.dev by Google — Learn CSS",
+        "url": "https://web.dev/learn/css/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about CSS",
+        "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "CSS Complete Course",
+        "url": "https://youtu.be/n4R2E7O-Ngo",
+        "type": "video"
+      },
+      {
+        "title": "HTML and CSS Tutorial",
+        "url": "https://www.youtube.com/watch?v=D-h8L5hgW-w",
+        "type": "video"
+      }
+    ]
+  },
+  "T9PB6WQf-Fa9NXKKvVOy_": {
+    "title": "JavaScript",
+    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated JavaScript Roadmap",
+        "url": "https://roadmap.sh/javascript",
+        "type": "article"
+      },
+      {
+        "title": "The Modern JavaScript Tutorial",
+        "url": "https://javascript.info/",
+        "type": "article"
+      },
+      {
+        "title": "Build 30 Javascript projects in 30 days",
+        "url": "https://javascript30.com/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about JavaScript",
+        "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://youtu.be/hdI2bqOjy3c?t=2",
+        "type": "video"
+      }
+    ]
+  },
+  "mGgx_QTEPmVKf6AijX9fi": {
+    "title": "npm",
+    "description": "npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to NPM",
+        "url": "https://github.com/workshopper/how-to-npm",
+        "type": "opensource"
+      },
+      {
+        "title": "Modern JavaScript for Dinosaurs",
+        "url": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html",
+        "type": "article"
+      },
+      {
+        "title": "An Absolute Beginners Guide to Using npm",
+        "url": "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about NPM",
+        "url": "https://app.daily.dev/tags/npm?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "NPM tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=2V1UUhBJ62Y",
+        "type": "video"
+      },
+      {
+        "title": "NPM Crash Course",
+        "url": "https://www.youtube.com/watch?v=jHDhaSSKmB0",
+        "type": "video"
+      }
+    ]
+  },
+  "WsdUAEaI7FX6DKKhPXUHp": {
+    "title": "Checkpoint - Static Webpages",
+    "description": "Now that you have learnt HTML and CSS, you should be able to build static webpages. I recommend you to build as many test projects at each yellow step of the roadmap as possible to solidify what you learn.\n\nThe practice that I used to follow when I was learning was this:\n\n*   While you are watching a course or reading a book, make sure to code along with the instructor/author — pause the video at regular intervals and code what you are being taught.\n*   Search on YouTube and watch a few project based tutorials on the topic that you are learning. Apart from coding along with the instructor:\n    *   Try to build the same project at least 2 to 3 times on your own without looking at the video. If you get stuck, refer to the section of the video where the instructor builds that part of the project.\n    *   Build something else that is similar to the project that you just built. For example, if you just built a todo app, try to build a notes app or a reminder app.\n\nProject Ideas\n-------------\n\nNow that you have learnt HTML and CSS, here are a few ideas for you to build:\n\n*   Try to copy the design of a website that you like.\n    *   Here is a [simple blog design in figma](https://www.figma.com/file/nh0V05z3NB87ue9v5PcO3R/writings.dev?type=design&node-id=0%3A1&t=2iQplaIojU3ydAfW-1) that you can try to copy.\n    *   Or try to rebuild the [webpages of this website](https://cs.fyi/).\n*   Take some inspiration from [personal portfolios of others](https://astro.build/showcase/) and build your own personal portfolio",
+    "links": []
+  },
+  "2DFzoIUjKdAKGjfu_SCfa": {
+    "title": "Checkpoint - Interactivity",
+    "description": "At this point you should be able to add interactivity to your web pages using JavaScript. You should make sure that you have learnt the following:\n\n*   Know about variables, loops, data types, conditionals, functions.\n*   Know about arrays and objects and different ways to access their data.\n*   Know how to select DOM elements.\n*   Add event listeners to DOM elements (e.g. click, focus, form submission).\n*   Use JavaScript to add and remove DOM elements\n*   Add and remove classes from DOM elements\n*   Use JavaScript to make HTTP requests to external APIs (i.e. `fetch`)\n*   Use JavaScript to store data in the browser's local storage\n\nHere are few ideas to practice your skills:\n\n*   Create a simple to-do list app that allows users to search, add, edit, and delete items. Use local storage to store the data.\n*   Create a simple webpage where user can put in anyone's GitHub username and see their profile information. You can use GitHub's API to fetch the data. For example, here is the [sample URL to fetch my data](https://api.github.com/users/kamranahmedse). Make sure to add validation and error handling.\n*   Create a basic calculator app that allows users to perform basic arithmetic operations.",
+    "links": []
+  },
+  "We2APJpOPTr-VNfowG0kI": {
+    "title": "Git",
+    "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Git & Github Roadmap",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "Learn Git with Tutorials, News and Tips - Atlassian",
+        "url": "https://www.atlassian.com/git",
+        "type": "article"
+      },
+      {
+        "title": "Git Cheat Sheet",
+        "url": "https://cs.fyi/guide/git-cheatsheet",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Git",
+        "url": "https://app.daily.dev/tags/git?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+        "type": "video"
+      },
+      {
+        "title": "Git Tutorial For Dummies",
+        "url": "https://www.youtube.com/watch?v=mJ-qvsxPHpY",
+        "type": "video"
+      }
+    ]
+  },
+  "8sPXL8iClpPqje03ksses": {
+    "title": "GitHub",
+    "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub Website",
+        "url": "https://github.com",
+        "type": "opensource"
+      },
+      {
+        "title": "GitHub Documentation",
+        "url": "https://docs.github.com/en/get-started/quickstart",
+        "type": "article"
+      },
+      {
+        "title": "How to Use Git in a Professional Dev Team",
+        "url": "https://ooloo.io/project/github-flow",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about GitHub",
+        "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is GitHub?",
+        "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
+        "type": "video"
+      },
+      {
+        "title": "Git vs. GitHub: Whats the difference?",
+        "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
+        "type": "video"
+      },
+      {
+        "title": "Git and GitHub for Beginners",
+        "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+        "type": "video"
+      },
+      {
+        "title": "Git and GitHub - CS50 Beyond 2019",
+        "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
+        "type": "video"
+      }
+    ]
+  },
+  "R4aeJNOrfWyVp3ea-qF4H": {
+    "title": "Checkpoint - External Packages",
+    "description": "At this point, you should be able to install and use external packages using `npm`. You probably know about [npmjs.com](https://npmjs.com/) where you can search for packages and read their documentation. You should also be familiar with the `package.json` file and how to use it to manage your project dependencies.\n\nYou don't need to get into the module bundlers and build tools just yet. Just make sure that you are able to use the dependencies installed in the `node_modules` folder using simple link and script tags in your HTML.\n\nRegarding projects, here are a few ideas that you can try:\n\n*   Create a simple webpage that shows the current time of user. You can use [dayjs](https://day.js.org/) to get the current time and display it on the page. Here is the [sample design for homepage](https://i.imgur.com/yGIMGkr.png).\n*   Install the [micromodal](https://micromodal.vercel.app/#introduction) library. Create a button on the page clicking which should open a modal and let the user select a timezone from a dropdown. Once the user selects a timezone, the modal should close and the time on the page should be updated to show the time in the selected timezone. Here is the [sample design for the modal](https://imgur.com/a/vFY6Sdl).",
+    "links": []
+  },
+  "CVCqdPkq_hGQfI8EEi5RC": {
+    "title": "Tailwind CSS",
+    "description": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tailwind CSS Website",
+        "url": "https://tailwindcss.com",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Tailwind CSS",
+        "url": "https://app.daily.dev/tags/tailwind-css?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Tailwind CSS Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo",
+        "type": "video"
+      },
+      {
+        "title": "Tailwind CSS Crash Course",
+        "url": "https://www.youtube.com/watch?v=UBOj6rqRUME",
+        "type": "video"
+      },
+      {
+        "title": "Should You Use Tailwind CSS?",
+        "url": "https://www.youtube.com/watch?v=hdGsFpZ0J2E",
+        "type": "video"
+      },
+      {
+        "title": "Official Screencasts",
+        "url": "https://www.youtube.com/c/TailwindLabs/videos",
+        "type": "video"
+      }
+    ]
+  },
+  "khoUtTUxdf8udAzN9_CAb": {
+    "title": "React",
+    "description": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated React Roadmap",
+        "url": "https://roadmap.sh/react",
+        "type": "article"
+      },
+      {
+        "title": "React Website",
+        "url": "https://react.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Official Getting Started",
+        "url": "https://react.dev/learn/tutorial-tic-tac-toe",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about React",
+        "url": "https://app.daily.dev/tags/react?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "React JS Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
+        "type": "video"
+      },
+      {
+        "title": "React Course - Beginners Tutorial for React",
+        "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+        "type": "video"
+      },
+      {
+        "title": "Understanding Reacts UI Rendering Process",
+        "url": "https://www.youtube.com/watch?v=i793Qm6kv3U",
+        "type": "video"
+      }
+    ]
+  },
+  "zFGWxgLPcZoW7KIzlnSV9": {
+    "title": "Checkpoint - Collaborative Work",
+    "description": "Now that you have learnt git and GitHub you should be ready to work with others. You should now setup your GitHub profile and push all the projects that you have built so far to your GitHub profile. Here are some of my recommendations for your GitHub profile:\n\n*   Keep the repository names lowercase and use hyphens to separate words e.g. `todo-app` instead of `TodoApp` or `Todo-App`.\n*   Add a `README.md` file to each repository that you create. This file should contain a description of the project. Put some effort into the readme and make sure it clearly details what the project is about and how anyone can run it locally.\n*   Add snapshots of your project to the readme file so that anyone can see what the project looks like without having to run it locally.\n*   Add a `LICENSE` file to each repository that you create. This file should contain the license that you want to use for the project. You can use [choosealicense.com](https://choosealicense.com/) to help you choose a license.\n\nYou can have a look at [my GitHub profile](https://github.com/kamranahmedse) and see how I have structured my repositories and how [some of my readme files look like](https://github.com/kamranahmedse/aws-cost-cli).",
+    "links": []
+  },
+  "7JU1cVggMDoZUV-adGsf-": {
+    "title": "Checkpoint - Frontend Apps",
+    "description": "At this point you should be able to build a complete frontend application including:\n\n*   Structuring your webpages with HTML\n*   Styling your webpages with CSS\n*   Adding interactivity to your webpages with JavaScript\n*   Using the DOM API to manipulate your webpages\n*   Using the Fetch API to make HTTP requests\n*   Understand promises and use `async`/`await` syntax to write asynchronous code\n*   Installing and using external libraries with npm\n*   Version controlling your code with Git\n*   Pushing your code to GitHub\n\nIf you decided to skip React and Tailwind for now, that is fine also but you should be able to build a complete frontend application using vanilla HTML, CSS, and JavaScript. However, keep in mind that the modern frontend applications are mostly built with frameworks like React, Vue, and Angular. So, you should learn at least one of them at any point of time.\n\nThis marks the end of frontend basics that you needed, we will now be moving to the backend development. While you continue with the backend development, know that there is more to frontend development and remember to checkout the [frontend roadmap](/frontend) later in your journey.",
+    "links": []
+  },
+  "_aA6Hp4KkgJeptqo8oKTg": {
+    "title": "Node.js",
+    "description": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Node.js Roadmap",
+        "url": "https://roadmap.sh/nodejs",
+        "type": "article"
+      },
+      {
+        "title": "Node.js Website",
+        "url": "https://nodejs.org/en/about/",
+        "type": "article"
+      },
+      {
+        "title": "Learn Node.js Official Website",
+        "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+        "type": "article"
+      },
+      {
+        "title": "Node.JS Introduction",
+        "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Node.js",
+        "url": "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Node.js and Express.js Full Course",
+        "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+        "type": "video"
+      }
+    ]
+  },
+  "JGu0TKwAw-ieiG92BytYI": {
+    "title": "Checkpoint — CLI Apps",
+    "description": "At this point you should be able to build CLI applications using Node.js or whatever backend programming language you picked.\n\nYou should be able to build a CLI application that can:\n\n*   Read and write files\n*   Parse command line arguments\n*   Make HTTP requests\n*   Parse JSON\n*   Use a third-party library (e.g. a library for parsing CSV files)\n*   Use a third-party API\n\nHere are some ideas for CLI applications you can build:\n\n*   Create a CLI application that takes a URL and a CSS selector arguments and prints the text content of the element that matches the selector. **Hint** you can use [cheerio](https://github.com/cheeriojs/cheerio)\n*   An application that optionally takes two dates and prints the most starred GitHub projects in that date range. **Hint** you can use [GitHub's search API](https://developer.github.com/v3/search/#search-repositories)\n*   Bulk rename files in a directory. **Hint** you can use [fs](https://nodejs.org/api/fs.html) and [path](https://nodejs.org/api/path.html)\n*   Write a CLI application that takes a path as input and compresses all the images in that directory. It should accept an option for output path; if the output path is not given it should compress images in place otherwise write the compressed images to the output path. **Hint** you can use [sharp](https://github.com/lovell/sharp).",
+    "links": []
+  },
+  "vmHbWdmMHF53otXIrqzRV": {
+    "title": "RESTful APIs",
+    "description": "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a REST API?",
+        "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+        "type": "article"
+      },
+      {
+        "title": "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
+        "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+        "type": "article"
+      },
+      {
+        "title": "Learn REST: A RESTful Tutorial",
+        "url": "https://restapitutorial.com/",
+        "type": "article"
+      },
+      {
+        "title": "What Is A RESTful API? Explanation of REST & HTTP",
+        "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+        "type": "video"
+      }
+    ]
+  },
+  "3EtGLO6cwkLc1-o9gwFNk": {
+    "title": "Checkpoint — Simple CRUD Apps",
+    "description": "**CRUD** stands for **Create, Read, Update, and Delete**. These are the four basic operations you can perform on any data when working with web applications, databases, and APIs.\n\nNow that you know about programming language and the databases, you should be able to build a simple CLI application that interacts with database. We haven't talked about the APIs yet but you don't need an API to practice CRUD operations. Here are some of the CLI applications you can build to practice CRUD operations:\n\n*   A simple todo list application for the CLI with the following options:\n    *   `--new` to add a new todo item\n    *   `--list [all|pending|done]` to list the todo items\n    *   `--done [id]` to update a todo item\n    *   `--delete [id]` to delete a todo item\n    *   `--help` to list all the available options\n    *   `--version` to print the version of the application",
+    "links": []
+  },
+  "vHojhJYjiN0IwruEqi1Dv": {
+    "title": "JWT Auth",
+    "description": "JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWTs are designed to be compact, safe to use within URLs, and ideal for SSO contexts.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "jwt.io Website",
+        "url": "https://jwt.io/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to JSON Web Tokens",
+        "url": "https://jwt.io/introduction",
+        "type": "article"
+      },
+      {
+        "title": "What is JWT?",
+        "url": "https://www.akana.com/blog/what-is-jwt",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about JWT",
+        "url": "https://app.daily.dev/tags/jwt?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What Is JWT and Why Should You Use JWT",
+        "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+        "type": "video"
+      },
+      {
+        "title": "What is JWT? JSON Web Token Explained",
+        "url": "https://www.youtube.com/watch?v=926mknSW9Lo",
+        "type": "video"
+      },
+      {
+        "title": "JWT Authentication Tutorial - Node.js",
+        "url": "https://www.youtube.com/watch?v=mbsmsi7l3r4",
+        "type": "video"
+      }
+    ]
+  },
+  "Onfd7Sl8LG2sjh2aQY7gb": {
+    "title": "Redis",
+    "description": "Redis is an open source (BSD licensed), in-memory **data structure store** used as a database, cache, message broker, and streaming engine. Redis provides data structures such as [strings](https://redis.io/topics/data-types-intro#strings), [hashes](https://redis.io/topics/data-types-intro#hashes), [lists](https://redis.io/topics/data-types-intro#lists), [sets](https://redis.io/topics/data-types-intro#sets), [sorted sets](https://redis.io/topics/data-types-intro#sorted-sets) with range queries, [bitmaps](https://redis.io/topics/data-types-intro#bitmaps), [hyperloglogs](https://redis.io/topics/data-types-intro#hyperloglogs), [geospatial indexes](https://redis.io/commands/geoadd), and [streams](https://redis.io/topics/streams-intro). Redis has built-in [replication](https://redis.io/topics/replication), [Lua scripting](https://redis.io/commands/eval), [LRU eviction](https://redis.io/topics/lru-cache), [transactions](https://redis.io/topics/transactions), and different levels of [on-disk persistence](https://redis.io/topics/persistence), and provides high availability via [Redis Sentinel](https://redis.io/topics/sentinel) and automatic partitioning with [Redis Cluster](https://redis.io/topics/cluster-tutorial).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Redis Roadmap",
+        "url": "https://roadmap.sh/redis",
+        "type": "article"
+      },
+      {
+        "title": "Redis Website",
+        "url": "https://redis.io/",
+        "type": "article"
+      },
+      {
+        "title": "Redis Documentation",
+        "url": "https://redis.io/docs/latest/",
+        "type": "article"
+      },
+      {
+        "title": "Redis University",
+        "url": "https://university.redis.io/academy",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Redis",
+        "url": "https://app.daily.dev/tags/redis?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Redis in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=G1rOthIU-uo",
+        "type": "video"
+      },
+      {
+        "title": "Redis Caching in Node.js",
+        "url": "https://www.youtube.com/watch?v=oaJq1mQ3dFI",
+        "type": "video"
+      }
+    ]
+  },
+  "SHTSvMDqI7X1_ZT7-m--n": {
+    "title": "Linux Basics",
+    "description": "Knowledge of UNIX is a must for almost all kind of development as most of the codes that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Coursera - Unix Courses",
+        "url": "https://www.coursera.org/courses?query=unix",
+        "type": "course"
+      },
+      {
+        "title": "Linux Basics",
+        "url": "https://dev.to/rudrakshi99/linux-basics-2onj",
+        "type": "article"
+      },
+      {
+        "title": "Unix / Linux Tutorial",
+        "url": "https://www.tutorialspoint.com/unix/index.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Linux",
+        "url": "https://app.daily.dev/tags/linux?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Linux Operating System - Crash Course",
+        "url": "https://www.youtube.com/watch?v=ROjZy1WbCIA",
+        "type": "video"
+      }
+    ]
+  },
+  "v4NF25lJElAtkU0Rm6Fob": {
+    "title": "Checkpoint — Complete App",
+    "description": "At this point, you should have everything that you need to build a complete application that:\n\n*   Has a responsive frontend that users can interact with\n*   Has a backend API that is secured with JWT authentication\n*   Has a database that stores data\n\nAt this point you should practice building as much as you can on your own to solidify your knowledge. If you need inspiration, here are some ideas:\n\n*   Build a simple blogging application where users can register, login, setup their blog and write posts.\n*   A single page site builder where users can pick a template, modify it and publish it. **Hint** you will need filesystem to store the design templates. Template files will have placeholders that you will need to replace with user data.\n*   Build a simple e-commerce application which will have two types of users i.e. **Sellers** who can: Register as Seller, Login, Setup their store, Add products, Edit products, Delete products, View Received Orders, Update Order Status (Pending, Shipped, Delivered), **Buyers** who can register, Login, Browse products by all sellers, Add products to cart, Checkout, View order history, View order status, Cancel order, View seller profile, View seller products\n\nThese are just some ideas to get you started. You can build anything you want. The goal is to practice building a complete application from scratch.",
+    "links": []
+  },
+  "cUOfvOlQ_0Uu1VX3i67kJ": {
+    "title": "Basic AWS Services",
+    "description": "AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPN, S3, Route 53, and SES.\n\nHere are some of the resources to get you started:",
+    "links": [
+      {
+        "title": "Up and Running with AWS VPC",
+        "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc",
+        "type": "article"
+      },
+      {
+        "title": "Up and Running with AWS EC2",
+        "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2",
+        "type": "article"
+      },
+      {
+        "title": "VPC Basics",
+        "url": "https://cloudcasts.io/course/vpc-basics",
+        "type": "article"
+      },
+      {
+        "title": "EC2 Essentials",
+        "url": "https://cloudcasts.io/course/ec2-essentials",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about AWS",
+        "url": "https://app.daily.dev/tags/aws?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro",
+        "type": "video"
+      },
+      {
+        "title": "AWS VPC & Subnets For Beginners",
+        "url": "https://youtu.be/TUTqYEZZUdc",
+        "type": "video"
+      },
+      {
+        "title": "Sam Meech-Ward's AWS Videos",
+        "url": "https://www.youtube.com/playlist?list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
+        "type": "video"
+      },
+      {
+        "title": "DNS with AWS Route 53",
+        "url": "https://www.youtube.com/watch?v=yRIY7BJohfo",
+        "type": "video"
+      },
+      {
+        "title": "Upload Images to S3 from Node Back End",
+        "url": "https://www.youtube.com/watch?v=NZElg91l_ms",
+        "type": "video"
+      },
+      {
+        "title": "S3 Bucket Hosting a Static Website",
+        "url": "https://www.youtube.com/watch?v=RoY3ekCCxKc&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
+        "type": "video"
+      }
+    ]
+  },
+  "6oBIxYj8WPcUHidQ99tus": {
+    "title": "EC2",
+    "description": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the form of virtual servers, known as instances. With EC2, you can quickly scale your infrastructure up or down as your computing requirements change. This service effectively reduces the time required to obtain and boot new server instances, allowing you to easily adjust capacity according to the needs of your application.",
+    "links": [
+      {
+        "title": "Up and Running with AWS EC2",
+        "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2",
+        "type": "article"
+      },
+      {
+        "title": "EC2 Essentials",
+        "url": "https://cloudcasts.io/course/ec2-essentials",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about AWS EC2",
+        "url": "https://app.daily.dev/tags/aws-ec2?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro",
+        "type": "video"
+      }
+    ]
+  },
+  "QtL-bLKtWIdH00K6k_PdC": {
+    "title": "VPC",
+    "description": "VPC stands for **Virtual Private Cloud** and is an essential service provided by AWS that allows you to create a private, isolated section within the AWS cloud, where you can define your own virtual network. It offers a more secure and controlled environment, enabling you to easily launch and manage your resources within your personal network.",
+    "links": [
+      {
+        "title": "Up and Running with AWS VPC",
+        "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc",
+        "type": "article"
+      },
+      {
+        "title": "VPC Basics",
+        "url": "https://cloudcasts.io/course/vpc-basics",
+        "type": "article"
+      },
+      {
+        "title": "AWS VPC & Subnets For Beginners",
+        "url": "https://youtu.be/TUTqYEZZUdc",
+        "type": "video"
+      }
+    ]
+  },
+  "5zyYpu9cyuTFwQCjTbHpS": {
+    "title": "Route53",
+    "description": "[Route53](https://aws.amazon.com/route53/) is AWS's Domain Name System (DNS) service that plays a critical role in connecting user requests to your web application or other resources within your infrastructure. With Route53, you can easily manage domains, redirect traffic, and configure domain-related settings. It has several advantages, including high availability, low latency, and integration with other AWS resources.",
+    "links": [
+      {
+        "title": "Amazon Route 53",
+        "url": "https://www.youtube.com/watch?v=RGWgfhZByAI",
+        "type": "video"
+      },
+      {
+        "title": "AWS Route 53 Domain Name",
+        "url": "https://www.youtube.com/watch?v=jDz4j_kkyLA",
+        "type": "video"
+      },
+      {
+        "title": "DNS with AWS Route 53",
+        "url": "https://www.youtube.com/watch?v=yRIY7BJohfo&t=2s",
+        "type": "video"
+      }
+    ]
+  },
+  "B-cphY7Imnv6JBMujVIF7": {
+    "title": "SES",
+    "description": "Amazon SES (Simple Email Service) is a scalable, flexible, and cost-effective cloud-based email service that is specifically designed for developers, marketers, and businesses to send and receive marketing, transactional, and notification emails. SES is useful, especially when you need to send a large volume of emails, as it offers high deliverability, reliability, and ease of use.",
+    "links": [
+      {
+        "title": "Contact Form Submission With AWS SES",
+        "url": "https://www.youtube.com/watch?v=HiHflLTqiwU",
+        "type": "video"
+      }
+    ]
+  },
+  "n2Xp_ijJ2OS8xhE7xMWxk": {
+    "title": "S3",
+    "description": "S3 is a service that allows you to store files in the cloud. It's a simple service that you can use to store files and serve them to your users.",
+    "links": [
+      {
+        "title": "Explore top posts about AWS S3",
+        "url": "https://app.daily.dev/tags/aws-s3?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Upload Images to S3 from Node Back End",
+        "url": "https://www.youtube.com/watch?v=NZElg91l_ms",
+        "type": "video"
+      },
+      {
+        "title": "S3 Bucket Hosting a Static Website",
+        "url": "https://www.youtube.com/watch?v=RoY3ekCCxKc&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
+        "type": "video"
+      }
+    ]
+  },
+  "y1SFX7uvWaCy4OYBnECLu": {
+    "title": "Monit",
+    "description": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.\n\nSome of the key features of Monit are:\n\n*   **Automatic Recovery:** Monit can automatically restart a service or process if it fails, making your application more resistant to unexpected issues.\n*   **Alert Notifications:** Monit can send email notifications when a problem is detected or when a certain condition is met, keeping you informed about the health of your application.\n*   **Event Logging:** All events detected by Monit are stored in a log for easy troubleshooting and analysis.\n*   **Resource Limit Monitoring:** Monit can monitor the resource utilization (CPU, memory, network, etc.) of a process or service and take action if a specific limit is exceeded.\n*   **Flexible Configuration:** Monit uses a simple, human-readable configuration syntax that allows you to tailor its behavior to your needs.\n*   **Web Interface:** Monit provides a built-in web interface for remotely monitoring your application's status and manage services.\n\nHave a look at the following resources to learn more about Monit:",
+    "links": [
+      {
+        "title": "Monit Website",
+        "url": "https://mmonit.com/monit/",
+        "type": "article"
+      },
+      {
+        "title": "Monit documentation",
+        "url": "https://mmonit.com/monit/documentation/",
+        "type": "article"
+      },
+      {
+        "title": "Monit - Opensource Self Healing Server Monitoring",
+        "url": "https://www.youtube.com/watch?v=3cA5lNje1Ow",
+        "type": "video"
+      }
+    ]
+  },
+  "HGhnbMg6jh6cAmUH4DtOx": {
+    "title": "PostgreSQL",
+    "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated PostgreSQL DBA Roadmap",
+        "url": "https://roadmap.sh/postgresql-dba",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Website",
+        "url": "https://www.postgresql.org/",
+        "type": "article"
+      },
+      {
+        "title": "Learn PostgreSQL - Full Tutorial for Beginners",
+        "url": "https://www.postgresqltutorial.com/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about PostgreSQL",
+        "url": "https://app.daily.dev/tags/postgresql?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=qw--VYLpxG4",
+        "type": "video"
+      },
+      {
+        "title": "Postgres tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=eMIxuk0nOkU",
+        "type": "video"
+      }
+    ]
+  },
+  "J2_IWAb1s9zZcxOY3NXm2": {
+    "title": "Checkpoint — Deployment",
+    "description": "Now that you know the basics of AWS, you should be able to deploy your application to AWS. You don't need to use all the AWS services, here is what you can probably get started with:\n\n*   Setup an EC2 instance using any AMI (e.g. latest version of Ubuntu)\n*   SSH into the EC2 instance using the key pair you created\n*   Install Node.js on the EC2 instance\n*   Install Git on the EC2 instance\n*   Clone your application from GitHub\n*   Install and configure database on the EC2 instance (e.g. PostgreSQL)\n*   Make sure that the security group of the EC2 instance allows HTTP and HTTPS traffic\n*   Try to access your application using the public IP address of the EC2 instance\n*   Purchase or setup a domain name using Route53 (or any other domain name provider) and point it to the public IP address of the EC2 instance\n*   Setup HTTPs using [certbot](https://roadmap.sh/guides/setup-and-auto-renew-ssl-certificates)\n*   And voilla! You have deployed your application to AWS!\n\nIf you get stuck, here is a video that shows how to deploy a Node.js application to AWS EC2:",
+    "links": [
+      {
+        "title": "Explore top posts about CI/CD",
+        "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro",
+        "type": "video"
+      }
+    ]
+  },
+  "863KMXcFJzInvTp_-Ldmz": {
+    "title": "GitHub Actions",
+    "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.",
+    "links": [
+      {
+        "title": "Github Actions",
+        "url": "https://github.com/features/actions",
+        "type": "opensource"
+      },
+      {
+        "title": "Visit Dedicated Git & Github Roadmap",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "Github Actions Documentation",
+        "url": "https://docs.github.com/en/actions",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about GitHub",
+        "url": "https://app.daily.dev/tags/github-actions?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "5 Ways to DevOps-ify your App",
+        "url": "https://www.youtube.com/watch?v=eB0nUzAI7M8",
+        "type": "video"
+      },
+      {
+        "title": "DevOps CI/CD Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=scEDHsr3APg",
+        "type": "video"
+      }
+    ]
+  },
+  "NQmEl27eBPYhivcXdOEz3": {
+    "title": "Checkpoint — Monitoring",
+    "description": "You should now implement monitoring and autorestarts for your application using monit. Regarding autorestarts, you can also use [pm2](https://pm2.keymetrics.io/).\n\nHere are some of the monitors you should implement for the application.\n\n*   CPU Usage\n*   Memory Usage\n*   Disk Usage\n*   Network Usage\n*   Service Availability\n*   Process Availability\n\nMonit comes with existing configurations for many services. You can find them in `/etc/monit/conf-available`. You can copy them (and modify if required) to `/etc/monit/conf-enabled` to enable them.",
+    "links": []
+  },
+  "rFXupYpUFfp7vZO8zh614": {
+    "title": "Ansible",
+    "description": "Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Ansible Website",
+        "url": "https://www.ansible.com/",
+        "type": "article"
+      },
+      {
+        "title": "Official Documentation",
+        "url": "https://docs.ansible.com/",
+        "type": "article"
+      },
+      {
+        "title": "Ansible Getting Started Guide",
+        "url": "https://www.ansible.com/resources/get-started",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Ansible",
+        "url": "https://app.daily.dev/tags/ansible?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Ansible Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=9Ua2b06oAr4",
+        "type": "video"
+      }
+    ]
+  },
+  "liaY1GnlOateB_ZKBjNpY": {
+    "title": "Checkpoint — CI / CD",
+    "description": "Now that you have the infrastructure setup, it's time to automate the deployment process. This is where CI / CD comes in. If you don't know what CI/CD are, you should watch [DevOps CI/CD Explained in 100 Seconds](https://www.youtube.com/watch?v=scEDHsr3APg).\n\nThe next step at this point is to implement CI/CD for your application using GitHub actions. Setup a GitHub action that, whenever you push to master, will automatically:\n\n*   Run your tests (ignore this step if you haven't learnt it yet)\n*   Deploy your application to AWS\n\nRegarding the deployment to AWS you can use `rsync` to copy the files to the server. Here's a [sample GitHub workflow](https://gist.github.com/kamranahmedse/1e94b412006040f38e24b9443b2da41a) using `rsync`.",
+    "links": []
+  },
+  "2kKHuQZScu7hCDgQWxl5u": {
+    "title": "Terraform",
+    "description": "Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Terraform Roadmap",
+        "url": "https://roadmap.sh/terraform",
+        "type": "article"
+      },
+      {
+        "title": "Terraform Website",
+        "url": "https://www.terraform.io/",
+        "type": "article"
+      },
+      {
+        "title": "Terraform Documentation",
+        "url": "https://www.terraform.io/docs",
+        "type": "article"
+      },
+      {
+        "title": "Terraform Tutorials",
+        "url": "https://learn.hashicorp.com/terraform",
+        "type": "article"
+      },
+      {
+        "title": "Terraform CDK Website",
+        "url": "https://www.terraform.io/cdktf",
+        "type": "article"
+      },
+      {
+        "title": "What is the CDKTF?",
+        "url": "https://www.terraform.io/cdktf/concepts/cdktf-architecture",
+        "type": "article"
+      },
+      {
+        "title": "CDKTF Getting Started Guide",
+        "url": "https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf",
+        "type": "article"
+      },
+      {
+        "title": "CDKTF Examples",
+        "url": "https://www.terraform.io/cdktf/examples",
+        "type": "article"
+      },
+      {
+        "title": "How to Scale Your Terraform Infrastructure",
+        "url": "https://thenewstack.io/how-to-scale-your-terraform-infrastructure/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Terraform",
+        "url": "https://app.daily.dev/tags/terraform?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Terraform Video",
+        "url": "https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp",
+        "type": "video"
+      }
+    ]
+  },
+  "sO_9-l4FECbaqiaFnyeXO": {
+    "title": "Checkpoint — Automation",
+    "description": "Now that you have learnt ansible, you can use it to automate the deployment of your application.\n\nA task for you at this point would be to automate the steps that you manually performed earlier when setting up the EC2 instance i.e. SSH into the server, install Node.js, Git, PostgreSQL, Running the application etc. Write an ansible playbook that automates these and see if you can spin up a new EC2 instance without SSHing into it and manually installing all the dependencies.",
+    "links": []
+  },
+  "YVMyHFSCVF-GgXydq-SFJ": {
+    "title": "Checkpoint — Infrastructure",
+    "description": "If you remember, earlier in the roadmap, you manually logged into the AWS console and had to setup the services. Now that you know terraform, go ahead and automate the process of creating the infrastructure for your application using terraform and with that your deployments will be fully automated i.e., you should have:\n\n*   Infrastructure setup using terraform\n*   Provisioning using Ansible\n*   CI/CD using GitHub Actions\n*   Monitoring using Monit\n\nAnd that is it! You have successfully completed the roadmap and are now a full-stack developer. Congratulations! 🎉\n\nWhat's next?\n------------\n\nGo ahead and build something cool! Share your learnings with the community and help others learn as well. If you have any questions, feel free to join our [discord server](https://roadmap.sh/discord) and ask away!",
+    "links": []
+  }
+}

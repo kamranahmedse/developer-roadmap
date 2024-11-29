@@ -6,4 +6,4 @@ One of the key features of Angular is its use of components, which are reusable 
 
 Learn more from the following resources:
 
-- [@official@ Angular website](https://angularjs.org/)
+- [@official@ Angular website](https://angular.dev/)

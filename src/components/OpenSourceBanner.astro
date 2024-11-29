@@ -1,10 +1,13 @@
 ---
-import { getFormattedStars } from '../lib/github';
-import Icon from './AstroIcon.astro';
+import { getFormattedStars, getRepositoryRank } from '../lib/github';
 import { getDiscordInfo } from '../lib/discord';
+
 import OpenSourceStat from './OpenSourceStat.astro';
 
-const starCount = await getFormattedStars('kamranahmedse/developer-roadmap');
+const repoName = 'kamranahmedse/developer-roadmap';
+
+const starCount = await getFormattedStars(repoName);
+const repoRank = await getRepositoryRank(repoName);
 const discordInfo = await getDiscordInfo();
 ---
 
@@ -16,18 +19,19 @@ const discordInfo = await getDiscordInfo();
         href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
         target='_blank'
         class='font-medium text-gray-600 underline underline-offset-2 hover:text-black'
-        >6th most starred project on GitHub</a
+        >{repoRank} most starred project on GitHub</a
       > and is visited by hundreds of thousands of developers every month.
     </p>
 
     <div
       class='mt-5 grid grid-cols-1 justify-between gap-2 divide-x-0 sm:my-11 sm:grid-cols-3 sm:gap-0 sm:divide-x mb-4 sm:mb-0'
     >
-      <OpenSourceStat text='GitHub Stars' value={starCount} />
-      <OpenSourceStat text='Registered Users' value={'+1M'} />
+      <OpenSourceStat text='GitHub Stars' value={starCount} secondaryValue={repoRank} />
+      <OpenSourceStat text='Registered Users' value={'+1.5M'} secondaryValue="+90k" />
       <OpenSourceStat
         text='Discord Members'
         value={discordInfo.totalFormatted}
+        secondaryValue="+2k"
       />
     </div>
   </div>

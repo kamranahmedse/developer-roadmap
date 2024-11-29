@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: ✋ ​ ​Roadmap Request
-    url: https://discord.gg/cJpEt5Qbwa
+    url: https://roadmap.sh/discord
     about: Please do not open issues with roadmap requests, hop onto the discord server for that.
   - name: 📝 ​ ​Typo or Grammatical Mistake
     url: https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data
     about: Please submit a pull request instead of reporting it as an issue.
   - name: 💬 ​ ​Chat on Discord
-    url: https://discord.gg/cJpEt5Qbwa
+    url: https://roadmap.sh/discord
     about: Join the community on our Discord server.
   - name: 🤝 ​ ​Guidance
-    url: https://discord.gg/cJpEt5Qbwa
+    url: https://roadmap.sh/discord
     about: Join the community in our Discord server.

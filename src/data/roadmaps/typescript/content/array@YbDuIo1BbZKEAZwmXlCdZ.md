@@ -8,4 +8,4 @@ const numbers: number[] = [1, 2, 3];
 
 Learn more from the following links:
 
-- [@article@Arrays](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)
+- [@official@Arrays](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)

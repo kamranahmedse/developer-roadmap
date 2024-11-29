@@ -1,15 +1,10 @@
 # Bitbucket
 
-Bitbucket is a Git based hosting and source code repository service that is Atlassian's alternative to other products like GitHub, GitLab etc
-
-Bitbucket offers hosting options via Bitbucket Cloud (Atlassian's servers), Bitbucket Server (customer's on-premise) or Bitbucket Data Centre (number of servers in customers on-premise or cloud environment)
+Bitbucket is a web-based version control repository hosting service owned by Atlassian. It primarily uses Git version control systems, offering both cloud-hosted and self-hosted options. Bitbucket provides features such as pull requests for code review, branch permissions, and inline commenting on code. It integrates seamlessly with other Atlassian products like Jira and Trello, making it popular among teams already using Atlassian tools. Bitbucket supports continuous integration and deployment through Bitbucket Pipelines. It offers unlimited private repositories for small teams, making it cost-effective for smaller organizations.
 
 Visit the following resources to learn more:
 
 - [@official@Bitbucket Website](https://bitbucket.org/product)
-- [@official@Getting started with Bitbucket](https://bitbucket.org/product/guides/basics/bitbucket-interface)
 - [@article@Using Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
-- [@official@A brief overview of Bitbucket](https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket)
 - [@video@Bitbucket tutorial | How to use Bitbucket Cloud](https://www.youtube.com/watch?v=M44nEyd_5To)
-- [@video@Bitbucket Tutorial | Bitbucket for Beginners](https://www.youtube.com/watch?v=i5T-DB8tb4A)
 - [@feed@Explore top posts about Bitbucket](https://app.daily.dev/tags/bitbucket?ref=roadmapsh)

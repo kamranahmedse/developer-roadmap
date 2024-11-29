@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Cloudflare - What is TLS?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls/)
 - [@article@Wikipedia - SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
 - [@video@SSH vs SSL vs TLS](https://www.youtube.com/watch?v=k3rFFLmQCuY)
+- [@video@SSL/TLS Explained in 7 Minutes](https://www.youtube.com/watch?v=67Kfsmy_frM)

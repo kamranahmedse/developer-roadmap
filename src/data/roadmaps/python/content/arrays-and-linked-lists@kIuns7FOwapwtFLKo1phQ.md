@@ -5,6 +5,6 @@ Arrays store elements in contiguous memory locations, resulting in easily calcul
 Visit the following resources to learn more:
 
 - [@article@Arrays in Python](https://www.edureka.co/blog/arrays-in-python/)
+- [@article@Linked List Python](https://realpython.com/linked-lists-python/)
 - [@video@Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
 - [@video@Linked List Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=odW9FU8jPRQ)
-- [@article@Linked List Python](https://realpython.com/linked-lists-python/)

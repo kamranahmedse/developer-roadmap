@@ -4,6 +4,7 @@ import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon2 } from '../ReactIcons/ErrorIcon2';
+import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,8 @@ export function TriggerVerifyAccount() {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         setAuthToken(response.token);
         window.location.href = '/';

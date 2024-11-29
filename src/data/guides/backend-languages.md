@@ -7,6 +7,8 @@ seo:
   title: 'The 5 Best Backend Development Languages to Master (@currentYear@)'
   description: 'Discover the best backend development languages to learn right now for career development, with practical tips from an experienced developer.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-languages-2x930.jpg'
+relatedTitle: "Other Guides"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-01-18
@@ -55,7 +57,7 @@ Python's community plays a critical role in its accessibility. Abundant learning
 
 #### Practical Applications and Popular Frameworks
 
-Python's versatility is evident in its applicability across a spectrum of industries, from web development and data science to artificial intelligence and automation. In the context of backend development, Python shines brightly with its two standout frameworks: [Django](https://www.djangoproject.com/) and [Flask](https://github.com/pallets/flask).
+Python's versatility is evident in its applicability across a spectrum of industries, from web development and data science to artificial intelligence and automation. In the context of backend development, Python shines brightly with its two standout [backend frameworks](https://roadmap.sh/backend/frameworks): [Django](https://www.djangoproject.com/) and [Flask](https://github.com/pallets/flask).
 
 ##### Django
 

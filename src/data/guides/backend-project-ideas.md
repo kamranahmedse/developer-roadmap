@@ -7,6 +7,8 @@ seo:
   title: '20 Backend Project Ideas to take you from Beginner to Pro'
   description: 'Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg'
+relatedTitle: "Other Guides"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-05-09
@@ -53,7 +55,7 @@ This is a RESTful API that would power a personal blog. This implies that you’
 
 And with those endpoints you’ve covered the basic CRUD operations (**C**reate, **R**ead, **U**pdate and **D**elete).
 
-As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main backend framework if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
+As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main [backend framework](https://roadmap.sh/backend/frameworks) if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
 
 ## 2. To-Do List API
 
@@ -104,7 +106,7 @@ At the same time, when you “set” the value in the cache, you can also give i
 For the last of our “easy” backend projects, let’s cover one more API, an expense tracker API. This API should let you:
 
 - Sign up as a new user.
-- Generate and validate JWT tokens for handling authentication and user session.
+- Generate and validate JWTs for handling authentication and user session.
 - List and filter your past expenses. You can add the following filters:
     - Past week.
     - Last month.
@@ -205,7 +207,7 @@ For this one, you’ll have to keep in mind everything we’ve been covering so 
 
 With that in mind, let’s take a look at the responsibilities of this system:
 
-- JWT token creation and validation to handle authorization.
+- JWT creation and validation to handle authorization.
 - Ability to create new users.
 - Shopping cart management, which involves payment gateway integration as well.
 - Product listings.
@@ -385,7 +387,7 @@ As a recommendation for technology implementing this project, [Socket.io](http:/
 
 ![Content Delivery Network (CDN) Simulator](https://assets.roadmap.sh/guest/cdn-simulator-lv7kl.png)
 
-For this particular backend project, we’re not going to focus on coding, but rather on backend tools and their configuration. A [CDN](https://aws.amazon.com/es/what-is/cdn/) (or Content Delivery Network) is a platform that allows you to serve static content (like text files, images, audio, etc) safely and reliably.
+For this particular backend project, we’re not going to focus on coding, but rather on backend tools and their configuration. A [CDN](https://aws.amazon.com/what-is/cdn/) (or Content Delivery Network) is a platform that allows you to serve static content (like text files, images, audio, etc) safely and reliably.
 
 Instead of having all files inside the same server, the content is replicated and distributed across a network of servers that can provide you with the files at any given point in time.
 

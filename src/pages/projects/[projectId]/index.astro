@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { Badge } from '../../../components/Badge';
+import {
+  getAllProjects,
+  getProjectById,
+  type ProjectFrontmatter,
+} from '../../../lib/project';
+import AstroIcon from '../../../components/AstroIcon.astro';
+import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
+import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
+
+export async function getStaticPaths() {
+  const projects = await getAllProjects();
+
+  return projects
+    .map((project) => project.id)
+    .map((projectId) => ({
+      params: { projectId },
+    }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  projectId: string;
+}
+
+const { projectId } = Astro.params as Params;
+
+const project = await getProjectById(projectId);
+const projectData = project.frontmatter as ProjectFrontmatter;
+
+let jsonLdSchema: any[] = [];
+
+const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
+const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
+
+const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
+---
+
+<BaseLayout
+  permalink={`/projects/${projectId}`}
+  title={projectData?.seo?.title}
+  briefTitle={projectData.title}
+  ogImageUrl={ogImageUrl}
+  description={projectData.seo.description}
+  keywords={projectData.seo.keywords}
+  jsonLd={jsonLdSchema}
+  resourceId={projectId}
+>
+  <div class='bg-gray-50'>
+    <div class='container'>
+      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='details' />
+
+      <div
+        class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
+      >
+        <div class='relative'>
+          <div class='mb-4 hidden items-center justify-between sm:flex'>
+            <div class='flex flex-row flex-wrap gap-1.5'>
+              {
+                projectData.skills.map((skill) => (
+                  <Badge variant='green' text={skill} />
+                ))
+              }
+            </div>
+            <Badge variant='yellow' text={projectData.difficulty} />
+          </div>
+          <div class='my-2 sm:my-7'>
+            <h1 class='mb-1 text-xl font-semibold sm:mb-2 sm:text-3xl'>
+              {projectData.title}
+            </h1>
+            <p class='text-balance text-sm text-gray-500'>
+              {projectData.description}
+            </p>
+          </div>
+        </div>
+
+        <ProjectStepper projectId={projectId} client:load />
+
+        <div
+          class='prose max-w-full prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 [&>ul>li]:my-1'
+        >
+          <project.Content />
+        </div>
+
+        <div
+          class='mt-5 flex flex-wrap items-center justify-center rounded-lg p-2.5 text-sm'
+        >
+          <AstroIcon class='mr-2 inline-block h-5 w-5' icon='github' />
+          Found a mistake?
+          <a
+            class='ml-1 underline underline-offset-2'
+            href={githubUrl}
+            target='_blank'
+          >
+            Help us improve.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -11,4 +11,4 @@ Features:
 
 Visit the following resources to learn more:
 
-- [@opensource@GitHub Repository](https://github.com/levigross/grequests)
+- [@opensource@Grequests](https://github.com/levigross/grequests)

@@ -4,5 +4,5 @@ Pinia is a store library for Vue.js, and can be used in Vue 2 and Vue 3, with th
 
 Visit the following resources to learn more:
 
-- [@article@Official Documentation](https://pinia.vuejs.org/)
+- [@official@Pinia Documentation](https://pinia.vuejs.org/)
 - [@video@Learn Pinia in 30Minutes](https://www.youtube.com/watch?v=JGC7aAC-3y8)

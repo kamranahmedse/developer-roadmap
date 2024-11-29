@@ -1,0 +1,436 @@
+{
+  "aStaDENn5PhEa-cFvNzXa": {
+    "title": "Mathematics",
+    "description": "Mathematics is the foundation of AI and Data Science. It is essential to have a good understanding of mathematics to excel in these fields.",
+    "links": [
+      {
+        "title": "Mathematics for Machine Learning",
+        "url": "https://imp.i384100.net/baqMYv",
+        "type": "article"
+      },
+      {
+        "title": "Algebra and Differential Calculus",
+        "url": "https://imp.i384100.net/LX5M7M",
+        "type": "article"
+      }
+    ]
+  },
+  "4WZL_fzJ3cZdWLLDoWN8D": {
+    "title": "Statistics",
+    "description": "Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. It is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It is used in a wide range of fields, including science, engineering, medicine, and social science. Statistics is used to make informed decisions, to predict future events, and to test hypotheses. It is also used to summarize data, to describe relationships between variables, and to make inferences about populations based on samples.\n\nLearn more from the resources given on the roadmap.",
+    "links": []
+  },
+  "gWMvD83hVXeTmCuHGIiOL": {
+    "title": "Linear Algebra, Calculus, Mathematical Analysis",
+    "description": "",
+    "links": [
+      {
+        "title": "Mathematics for Machine Learning Specialization",
+        "url": "https://imp.i384100.net/baqMYv",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Math",
+        "url": "https://app.daily.dev/tags/math?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Linear Algebra Youtube Course",
+        "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+        "type": "video"
+      }
+    ]
+  },
+  "mwPJh33MEUQ4Co_LiVEOb": {
+    "title": "Differential Calculus",
+    "description": "",
+    "links": [
+      {
+        "title": "Algebra and Differential Calculus for Data Science",
+        "url": "https://imp.i384100.net/LX5M7M",
+        "type": "article"
+      }
+    ]
+  },
+  "Y9YJdARIRqqCBCy3GVYdA": {
+    "title": "Statistics, CLT",
+    "description": "",
+    "links": [
+      {
+        "title": "Introduction to Statistics",
+        "url": "https://imp.i384100.net/3eRv4v",
+        "type": "article"
+      }
+    ]
+  },
+  "XJXIkWVDIrPJ-bVIvX0ZO": {
+    "title": "Hypothesis Testing",
+    "description": "",
+    "links": [
+      {
+        "title": "Introduction to Statistical Analysis: Hypothesis Testing",
+        "url": "https://imp.i384100.net/vN0JAA",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "jxJtwbiCvxHqmkWkE7zdx": {
+    "title": "Probability and Sampling",
+    "description": "",
+    "links": [
+      {
+        "title": "Probability and Statistics: To p or not to p?",
+        "url": "https://imp.i384100.net/daDM6Q",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Statistics",
+        "url": "https://app.daily.dev/tags/statistics?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "mJq9b50MJM9o9dLhx40iN": {
+    "title": "AB Testing",
+    "description": "",
+    "links": [
+      {
+        "title": "Practitioner’s Guide to Statistical Tests",
+        "url": "https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#1e3b",
+        "type": "article"
+      },
+      {
+        "title": "Step by Step Process for Planning an A/B Test",
+        "url": "https://towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about A/B Testing",
+        "url": "https://app.daily.dev/tags/ab-testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "v68nwX914qCwHDSwY_ZhG": {
+    "title": "Increasing Test Sensitivity",
+    "description": "",
+    "links": [
+      {
+        "title": "Minimum Detectable Effect (MDE)",
+        "url": "https://splitmetrics.com/resources/minimum-detectable-effect-mde/",
+        "type": "article"
+      },
+      {
+        "title": "Improving the Sensitivity of Online Controlled Experiments: Case Studies at Netflix",
+        "url": "https://kdd.org/kdd2016/papers/files/adp0945-xieA.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data",
+        "url": "https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf",
+        "type": "article"
+      },
+      {
+        "title": "How Booking.com increases the power of online experiments with CUPED",
+        "url": "https://booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d",
+        "type": "article"
+      },
+      {
+        "title": "Improving Experimental Power through Control Using Predictions as Covariate — CUPAC",
+        "url": "https://doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/",
+        "type": "article"
+      },
+      {
+        "title": "Improving the Sensitivity of Online Controlled Experiments: Case Studies at Netflix",
+        "url": "https://www.researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix",
+        "type": "article"
+      }
+    ]
+  },
+  "n2JFGwFxTuOviW6kHO1Uv": {
+    "title": "Ratio Metrics",
+    "description": "",
+    "links": [
+      {
+        "title": "Applying the Delta Method in Metric Analytics: A Practical Guide with Novel Ideas",
+        "url": "https://arxiv.org/pdf/1803.06336.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Approximations for Mean and Variance of a Ratio",
+        "url": "https://www.stat.cmu.edu/~hseltman/files/ratio.pdf",
+        "type": "article"
+      }
+    ]
+  },
+  "Gd2egqKZPnbPW1W2jw4j8": {
+    "title": "Econometrics",
+    "description": "Ecenometrics is the application of statistical methods to economic data. It is a branch of economics that aims to give empirical content to economic relations. More precisely, it is \"the quantitative analysis of actual economic phenomena based on the concurrent development of theory and observation, related by appropriate methods of inference.\" Econometrics can be described as something that allows economists \"to sift through mountains of data to extract simple relationships.\"",
+    "links": []
+  },
+  "y6xXsc-uSAmRDnNuyhqH2": {
+    "title": "Pre-requisites of Econometrics",
+    "description": "",
+    "links": [
+      {
+        "title": "10 Fundamental Theorems for Econometrics",
+        "url": "https://bookdown.org/ts_robinson1994/10EconometricTheorems/",
+        "type": "article"
+      }
+    ]
+  },
+  "h19k9Fn5XPh3_pKEC8Ftp": {
+    "title": "Regression, Timeseries, Fitting Distributions",
+    "description": "",
+    "links": [
+      {
+        "title": "Blockchain.com Data Scientist TakeHome Test",
+        "url": "https://github.com/stalkermustang/bcdc_ds_takehome",
+        "type": "opensource"
+      },
+      {
+        "title": "10 Fundamental Theorems for Econometrics",
+        "url": "https://bookdown.org/ts_robinson1994/10EconometricTheorems/",
+        "type": "article"
+      },
+      {
+        "title": "Dougherty Intro to Econometrics 4th edition",
+        "url": "https://www.academia.edu/33062577/Dougherty_Intro_to_Econometrics_4th_ed_small",
+        "type": "article"
+      },
+      {
+        "title": "Econometrics: Methods and Applications",
+        "url": "https://imp.i384100.net/k0krYL",
+        "type": "article"
+      },
+      {
+        "title": "Kaggle - Learn Time Series",
+        "url": "https://www.kaggle.com/learn/time-series",
+        "type": "article"
+      },
+      {
+        "title": "Time series Basics : Exploring traditional TS",
+        "url": "https://www.kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts#Hierarchical-time-series",
+        "type": "article"
+      },
+      {
+        "title": "How to Create an ARIMA Model for Time Series Forecasting in Python",
+        "url": "https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python",
+        "type": "article"
+      },
+      {
+        "title": "11 Classical Time Series Forecasting Methods in Python",
+        "url": "https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/",
+        "type": "article"
+      },
+      {
+        "title": "Linear Regression for Business Statistics",
+        "url": "https://imp.i384100.net/9g97Ke",
+        "type": "article"
+      }
+    ]
+  },
+  "XLDWuSt4tI4gnmqMFdpmy": {
+    "title": "Coding",
+    "description": "Programming is a fundamental skill for data scientists. You need to be able to write code to manipulate data, build models, and deploy solutions. The most common programming languages used in data science are Python and R. Python is a general-purpose programming language that is easy to learn and has a large number of libraries for data manipulation and machine learning. R is a programming language and free software environment for statistical computing and graphics. It is widely used for statistical analysis and data visualization.",
+    "links": []
+  },
+  "MVrAqizgkoAs2aghN8TgV": {
+    "title": "Learn Python Programming Language",
+    "description": "",
+    "links": [
+      {
+        "title": "Kaggle — Python",
+        "url": "https://www.kaggle.com/learn/python",
+        "type": "article"
+      },
+      {
+        "title": "Google's Python Class",
+        "url": "https://developers.google.com/edu/python",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Python",
+        "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "StBCykpzpM4g9PRFeSNXa": {
+    "title": "Data Structures and Algorithms (Python)",
+    "description": "",
+    "links": [
+      {
+        "title": "Learn Algorithms",
+        "url": "https://leetcode.com/explore/learn/",
+        "type": "article"
+      },
+      {
+        "title": "Leetcode - Study Plans",
+        "url": "https://leetcode.com/studyplan/",
+        "type": "article"
+      },
+      {
+        "title": "Algorithms Specialization",
+        "url": "https://imp.i384100.net/5gqv4n",
+        "type": "article"
+      }
+    ]
+  },
+  "Im0tXXn3GC-FUq2aMHgwm": {
+    "title": "Learn SQL",
+    "description": "",
+    "links": [
+      {
+        "title": "SQL Tutorial",
+        "url": "https://www.sqltutorial.org/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about SQL",
+        "url": "https://app.daily.dev/tags/sql?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "l1027SBZxTHKzqWw98Ee-": {
+    "title": "Exploratory Data Analysis",
+    "description": "Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. EDA is used to understand what the data can tell us beyond the formal modeling or hypothesis testing task. It is a crucial step in the data analysis process.",
+    "links": []
+  },
+  "JaN8YhMeN3whAe2TCXvw9": {
+    "title": "Data understanding, Data Analysis and Visualization",
+    "description": "",
+    "links": [
+      {
+        "title": "Exploratory Data Analysis With Python and Pandas",
+        "url": "https://imp.i384100.net/AWAv4R",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis for Machine Learning",
+        "url": "https://imp.i384100.net/GmQMLE",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis with Seaborn",
+        "url": "https://imp.i384100.net/ZQmMgR",
+        "type": "article"
+      }
+    ]
+  },
+  "kBdt_t2SvVsY3blfubWIz": {
+    "title": "Machine Learning",
+    "description": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to \"learn\" (e.g., progressively improve performance on a specific task) from data, without being explicitly programmed. The name machine learning was coined in 1959 by Arthur Samuel. Evolved from the study of pattern recognition and computational learning theory in artificial intelligence, machine learning explores the study and construction of algorithms that can learn from and make predictions on data – such algorithms overcome following strictly static program instructions by making data-driven predictions or decisions, through building a model from sample inputs. Machine learning is employed in a range of computing tasks where designing and programming explicit algorithms with good performance is difficult or infeasible; example applications include email filtering, detection of network intruders, and computer vision.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Advantages and Disadvantages of AI",
+        "url": "https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c",
+        "type": "article"
+      },
+      {
+        "title": "Reinforcement Learning 101",
+        "url": "https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292",
+        "type": "article"
+      },
+      {
+        "title": "Understanding AUC-ROC Curve",
+        "url": "https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5",
+        "type": "article"
+      }
+    ]
+  },
+  "FdBih8tlGPPy97YWq463y": {
+    "title": "Classic ML (Sup., Unsup.), Advanced ML (Ensembles, NNs)",
+    "description": "",
+    "links": [
+      {
+        "title": "Repository of notes, code and notebooks in Python for the book Pattern Recognition and Machine Learning by Christopher Bishop",
+        "url": "https://github.com/gerdm/prml",
+        "type": "opensource"
+      },
+      {
+        "title": "Open Machine Learning Course",
+        "url": "https://mlcourse.ai/book/topic01/topic01_intro.html",
+        "type": "article"
+      },
+      {
+        "title": "Coursera: Machine Learning Specialization",
+        "url": "https://imp.i384100.net/oqGkrg",
+        "type": "article"
+      },
+      {
+        "title": "Pattern Recognition and Machine Learning by Christopher Bishop",
+        "url": "https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Machine Learning",
+        "url": "https://app.daily.dev/tags/machine-learning?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "cjvVLN0XjrKPn6o20oMmc": {
+    "title": "Deep Learning",
+    "description": "Deep Learning\n-------------\n\nDeep learning is a subset of machine learning that deals with algorithms inspired by the structure and function of the brain called artificial neural networks. Deep learning is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish a pedestrian from a lamppost. It is the key to voice control in consumer devices like phones, tablets, TVs, and hands-free speakers. Deep learning is getting lots of attention lately and for good reason. It’s achieving results that were not possible before.",
+    "links": []
+  },
+  "eOFoGKveaHaBm_6ppJUtA": {
+    "title": "Fully Connected, CNN, RNN, LSTM, Transformers, TL",
+    "description": "",
+    "links": [
+      {
+        "title": "The Illustrated Transformer",
+        "url": "https://jalammar.github.io/illustrated-transformer/",
+        "type": "article"
+      },
+      {
+        "title": "Attention is All you Need",
+        "url": "https://arxiv.org/pdf/1706.03762.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Deep Learning Book",
+        "url": "https://www.deeplearningbook.org/",
+        "type": "article"
+      },
+      {
+        "title": "Deep Learning Specialization",
+        "url": "https://imp.i384100.net/Wq9MV3",
+        "type": "article"
+      }
+    ]
+  },
+  "Qa85hEVe2kz62k9Pj4QCA": {
+    "title": "MLOps",
+    "description": "MLOps is a practice for collaboration and communication between data scientists and operations professionals to help manage production ML lifecycle. It is a set of best practices that aims to automate the ML lifecycle, including training, deployment, and monitoring. MLOps helps organizations to scale ML models and deliver business value faster.",
+    "links": []
+  },
+  "uPzzUpI0--7OWDfNeBIjt": {
+    "title": "Deployment Models, CI/CD",
+    "description": "",
+    "links": [
+      {
+        "title": "Machine Learning Engineering for Production (MLOps) Specialization",
+        "url": "https://imp.i384100.net/nLA5mx",
+        "type": "article"
+      },
+      {
+        "title": "Full Stack Deep Learning",
+        "url": "https://fullstackdeeplearning.com/course/2022/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about CI/CD",
+        "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1940 @@
+{
+  "4zicbh7Wg2lmKSRhb6E-L": {
+    "title": "Understand the Basics",
+    "description": "Understand different concepts such as what is software architecture, software architect, different types of architects and so on.",
+    "links": []
+  },
+  "EGG99VA-PEdWdVxNDLtG_": {
+    "title": "What is Software Architecture",
+    "description": "Describes how an application is built including its components, how they interact with each other, environment in which they operate and so on.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Software Architecture in Software Engineering?",
+        "url": "https://www.computer.org/resources/software-architecture",
+        "type": "article"
+      },
+      {
+        "title": "Software Architecture: It might not be what you think it is",
+        "url": "https://www.infoq.com/articles/what-software-architecture/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "eG38hT0rotYJ3G-t9df9R": {
+    "title": "What is a Software Architect",
+    "description": "An expert developer who design software solutions from the ground up, making high-level decisions about each stage of the process including technical standards, tools, design principles, platforms to be used, etc., leading a team of engineers to create the final product.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "12 Skills a Software Architect Needs",
+        "url": "https://www.redhat.com/architect/what-is-software-architect",
+        "type": "article"
+      }
+    ]
+  },
+  "2sR4KULvAUUoOtopvsEBs": {
+    "title": "Levels of Architecture",
+    "description": "Architecture can be done on several “levels” of abstractions. The level influences the importance of necessary skills. As there are many categorizations possible my favorite segmentation includes these 3 levels:\n\n*   **Application Level:** The lowest level of architecture. Focus on one single application. Very detailed, low level design. Communication is usually within one development team.\n*   **Solution Level:** The mid-level of architecture. Focus on one or more applications which fulfill a business need (business solution). Some high, but mainly low-level design. Communication is between multiple development teams.\n*   **Enterprise Level:** The highest level of architecture. Focus on multiple solutions. High level, abstract design, which needs to be detailed out by solution or application architects. Communication is across the organization.",
+    "links": []
+  },
+  "Lqe47l4j-C4OwkbkwPYry": {
+    "title": "Application Architecture",
+    "description": "The lowest level of architecture. Focus on one single application. Very detailed, low level design. Communication is usually within one development team.",
+    "links": []
+  },
+  "uGs-9xE3DMJxKhenltbFK": {
+    "title": "Solution Architecture",
+    "description": "The mid-level of architecture. Focus on one or more applications which fulfill a business need (business solution). Some high, but mainly low-level design. Communication is between multiple development teams.",
+    "links": []
+  },
+  "vlW07sc-FQnxPMjDMn8_F": {
+    "title": "Enterprise Architecture",
+    "description": "The highest level of architecture. Focus on multiple solutions. High level, abstract design, which needs to be detailed out by solution or application architects. Communication is across the organization. Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Enterprise Software Architecture",
+        "url": "https://medium.com/@hsienwei/enterprise-software-architecture-957288829daa",
+        "type": "article"
+      },
+      {
+        "title": "Enterprise Architect vs Software Architect",
+        "url": "https://www.linkedin.com/pulse/enterprise-architect-vs-software-who-you-luigi-saggese/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "rUxbG2S2nJuA1YVY6sjiX": {
+    "title": "Responsibilities",
+    "description": "To understand the necessary skills an architect needs, we first need to understand typical activities. The following list contains from my perspective the most important activities:\n\n*   Define and decide development technology and platform\n*   Define development standards, e.g., coding standards, tools, review processes, test approach, etc.\n*   Support identifying and understanding business requirements\n*   Design systems and take decisions based on requirements\n*   Document and communicate architectural definitions, design and decisions\n*   Check and review architecture and code, e.g., check if defined patterns and coding standards are implemented properly\n*   Collaborate with other architects and stakeholders\n*   Coach and consult developers\n*   Make sure that as implementation takes place, the architecture is being adhered to\n*   Play a key part in reviewing code\n*   Detail out and refine higher level design into lower level design\n\n_Note: Architecture is a continuous activity, especially when it is applied in agile software development. Therefore, these activities are done over and over again._",
+    "links": []
+  },
+  "lBtlDFPEQvQ_xtLtehU0S": {
+    "title": "Important Skills to Learn",
+    "description": "To support the laid-out activities specific skills are required. From my experience, read books and discussions we can boil this down to these ten skills every software architect should have:\n\n*   Design\n*   Decide\n*   Simplify\n*   Code\n*   Document\n*   Communicate\n*   Estimate\n*   Balance\n*   Consult\n*   Market",
+    "links": []
+  },
+  "fBd2m8tMJmhuNSaakrpg4": {
+    "title": "Design & Architecture",
+    "description": "What makes a good design? This is probably the most important and challenging question. I will make a distinction between theory and practice. To my experience, having a mix of both is most valuable. Let’s start with theory:\n\n*   **Know the basic design patterns**: Patterns are one of the most important tools an architect needs to have to develop maintainable systems. With patterns you can reuse designs to solve common problems with proven solutions. The book “Design Patterns: Elements of Reusable Object-Oriented Software” written by John Vlissides, Ralph Johnson, Richard Helm, Erich Gamma is a must-read to everyone who is in software development. Although the patterns were published more than 20 years ago they are still the basis of modern software architecture. For example, the Model-View-Controller (MVC) pattern was described in this book, which is applied in many areas or is the basis for newer pattern, e.g. Model-View-ViewModel (MVVM).\n*   **Dig deeper into patterns and anti-patterns**: If you already know all basic Gang-of-Four patterns, then extend your knowledge with more software design patterns or dig deeper into your area of interest. One of my favorite books about application integration is “Enterprise Integration Patterns” written by Gregor Hohpe. This book is applicable in various areas whenever two applications need to exchange data, whether it is an old-school file exchange from some legacy systems or a modern microservice architecture.\n*   **Know quality measures**: Defining architecture is not the end. There are reasons why guidelines and coding standards are defined, applied and controlled. You do this because of quality and non-functional requirements. You want to have a system which is maintainable, reliable, adaptable, secure, testable, scalable, usable, etc. And one piece to achieving all of these quality attributes is applying good architecture work. You can start to learn more about quality measures on Wikipedia. Theory is important. Practice is equally—or even more—important if you do not want to become an Ivory Tower Architect.\n*   **Try out and understand different technology stacks**: I think this is the most important activity if you want to become a better architect. Try out (new) technology stacks and learn their ups and downs. Different or new technology comes with different design aspects and patterns. You most likely do not learn anything from just flipping through abstract slides but by trying it out by yourself and feeling the pain or the relief. An architect should not only have broad, but—also in some areas—deep knowledge. It is not important to master all technology stacks but to have a solid understanding of the most important in your area. Also, try out technology which is not in your area, e.g., if you are deep into SAP R/3 you should also try JavaScript and vice versa. Still, both parties will be surprised about the latest advances in SAP S/4 Hana. For example, you can try it by yourself and take a course at openSAP for free. Be curious and try out new things. Also try out stuff which you did not like some years ago.\n*   **Analyze and understand applied patterns**: Have a look at any current framework, e.g., Angular. You can study a lot of patterns in practice, e.g., Observables. Try to understand how it is applied in the framework, why it was done. And if you are really dedicated, have a deeper look into the code and understand how it was implemented.\n*   **Be curious and attend User Groups**. [Meetup](https://www.meetup.com/)",
+    "links": []
+  },
+  "MSDo0nPk_ghRYkZS4MAQ_": {
+    "title": "Decision Making",
+    "description": "An architect needs to be able to take decisions and guide projects or the entire organization into the right direction.\n\n*   **Know what is important**: Do not waste time with unimportant decisions or activities. Learn what is important. To my knowledge there is not a book which has these information. My personal favorites are these 2 characteristics which I usually consider when evaluating if something is important or not:\n    1.  Conceptional Integrity: If you decide to do it in one way, stick to it, even if it is sometimes better to do it differently. Usually, this leads to a more straightforward overall concept, eases comprehensibility and eases maintenance.\n    2.  Uniformity: If you for example define and apply naming conventions it is not about upper- or lowercase, but to have it applied everywhere in the same way.\n*   **Prioritize**: Some decisions are highly critical. If they are not taken early enough workarounds are build up which are often unlikely to be removed later and are a nightmare for maintenance, or worse, developers simply stop working until a decision is taken. In such situations it is sometimes even better to go with a “bad” decision instead of having no decision. But before it comes to this situation, consider prioritizing upcoming decisions. There are different ways to do so. I suggest having a look at the Weighted Shortest Job First (WSJF) model which is widely used within agile software development. Especially the measures time criticality and risk reduction are critical to estimate the priority of architecture decisions.\n*   **Know your competence**: Do not decide things which are not in your competence. This is critical as it may ruin your position as architect significantly if not considered. To avoid this, clarify with your peers which responsibilities you have and what is part of your role. If there are more than one architect, then you should respect the level of architecture in which you are currently deployed. As an lower level architect you better come up with suggestions for higher level architecture instead of decisions. Further, I recommend checking critical decisions always with a peer.\n*   **Evaluate multiple options**: Always lay out more than one option if it comes to decisions. In the majority of the cases I was involved in, there was more than one possible (good) option. Going with only one option is bad in two respects: First, it seems that you did not do your job properly and secondly it impedes making proper decisions. By defining measures, options can be compared based on facts instead of gut feelings, e.g. license costs or maturity. This usually leads to better and more sustainable decisions. Further, it eases to sell the decision to different stakeholders. Besides, if you do not have evaluated options properly you may miss arguments when it comes to discussions.",
+    "links": []
+  },
+  "lrtgF1RTaS4TCKww0aY6C": {
+    "title": "Simplifying Things",
+    "description": "Keep in mind the problem-solving principle Occam’s Razor which states to prefer simplicity. I interpret the principle as following: If you have too many assumptions about the problem to solve your solution will probably be wrong or lead to an unnecessary complex solution. Assumptions should be reduced (simplified) to come to a good solution.\n\n*   **Shake the solution**: To get solutions simplified, it often helps to “shake” the solution and look at them from different positions. Try to shape the solution by thinking top-down and again bottom-up. If you have a data flow or process, then first think left to right and again right to left. Ask questions such as: “What happens to your solution in a perfect world?” Or: “What would company / person X do?” (Where X is probably not your competitor, but one of the GAFA (Google, Apple, Facebook, & Amazon) companies.) Both questions force you to reduce assumptions as suggested by Occam’s Razor.\n*   **Take a step back**: After intense and long discussions, highly complex scribbles are often the results. You should never ever see these as the final results. Take a step back: Have a look at the big picture again (abstract level). Does it still make sense? Then go through it on the abstract level again and refactor. Sometimes it helps to stop a discussion and continue the next day. At least my brain needs some time to process and to come up with better, more elegant and simpler solutions.\n*   **Divide and Conquer**: Simplify the problem by dividing it into smaller pieces. Then solve them independently. Afterwards validate if the small pieces match together. Take the step back to have a look at the overall picture for this.\n*   **Refactoring is not evil**: It is totally ok to start with a more complex solution if no better idea can be found. If the solution is making troubles you can later rethink the solution and apply your learning. Refactoring is not evil. But before you start refactoring, keep in mind to have (1) enough automated tests in place which can ensure the proper functionality of the system and (2) the buy-in from your stakeholders. To learn more about refactoring I suggest reading “Refactoring. Improving the Design of Existing Code” by Martin Fowler.",
+    "links": []
+  },
+  "77KvWCA1oHSGgDKBTwjv7": {
+    "title": "How to Code",
+    "description": "Even as an Enterprise Architect, the most abstract level of architecture, you should still know what developers are doing on their daily basis. And if you do not understand how this is done, you may face two major problems:\n\n*   Developers won’t accept your sayings.\n*   You do not understand challenges and needs of developers.\n*   **Have a side project**: The purpose of this is to try out new technologies and tools to find out how development is done today and in the future. Experience is the combination of observations, emotions and hypothesis (“Experience and Knowledge Management in Software Engineering” by Kurt Schneider). Reading a tutorial or some pros and cons is good. But this is just “book knowledge”. Only if you try out things by yourself you can experience emotions and can built up hypothesis about why something is good or bad. And the longer you work with a technology the better your hypothesis will get. This will help you to take better decisions in your day to day work. As I started programming I had no code completion and only some utility libraries to speed up development. Obviously, with this background I would make wrong decisions today. Today, we have tons of programming languages, frameworks, tools, processes and practices. Only if you have some experience and a rough overview in the major trends you are able to take part of the conversation and to steer development into the right direction.\n*   **Find the right things to try out**: You cannot try out everything. This is simply impossible. You need a more structured approach. One source I recently discovered is the [Technology Radar](https://www.thoughtworks.com/radar) from ThoughtWorks. They categorize technologies, tools, platforms, languages and frameworks into four categories:\n    *   Adopt: “strong feeling to be ready for enterprise usage”.\n    *   Trial: “enterprise should try it in one project that can handle the risk”.\n    *   Assess: “explore how it affects your enterprise”\n    *   Hold: “process with caution”.\n\nWith this categorization it is easier to get an overview of new things and their readiness to better evaluate which trend to explore next.",
+    "links": []
+  },
+  "5D-kbQ520k1D3fCtD01T7": {
+    "title": "Documentation",
+    "description": "Architectural documentation is sometimes more and sometimes less important. Important documents are for example architectural decisions or code guidelines. Initial documentation is often required before coding starts and need to be refined continuously. Other documentation can be automatically generated as code can also be documentation, e.g. UML class diagrams.\n\n*   **Clean Code**: Code is the best documentation if done right. A good architect should be capable to distinguish between good and bad code. A really great resource to learn more about good and bad code is the book “Clean Code” by Robert C. Martin.\n*   **Generate documentation where possible**: Systems are changing quickly and it is hard to update the documentation. Whether it is about APIs or system landscapes in form of CMDBs (Configuration management database): The underlying information often changes too fast to keep the corresponding documentation up to date by hand. Example: For APIs you could auto generate documentation based on the definition file if you are model driven, or directly from the source code. A lot of tools exist for that, I think Swagger and RAML are a good starting point to learn more.\n*   **As much as necessary, as little as possible**: Whatever you need to document, e.g., decision papers, try to focus on only one thing at a time and include only the necessary information for this one thing. Extensive documentation is hard to read and to understand. Additional information should be stored in the appendix. Especially for decision papers it is more important to tell a convincing story instead of just throwing tons of arguments. Further, this saves you and your co-workers, who have to read it, a lot of time. Have a look at some documentation you have done in the past (source code, models, decision papers, etc.) and ask yourself the following questions: “Are all necessary information included to understand it?”, “Which information are really required and which could be omitted?” and “Does the documentation has a red line?”.\n*   **Learn more about architecture frameworks**: This point could be applied to all other “technical” points as well. I put it here, as frameworks like TOGAF or Zachmann are providing “tools” which feel heavy on the documentation side, although their added value is not limited to documentation. Getting certified in such a framework teaches you to tackle architecture more systematically.",
+    "links": []
+  },
+  "Ac49sOlQKblYK4FZuFHDR": {
+    "title": "Communication",
+    "description": "From my observations this is one of the most underestimated skill. If you are brilliant in design but cannot communicate your ideas, your thoughts are likely to have less impact or even fail to succeed.\n\n*   **Learn how to communicate your ideas**: When collaborating on a board or flip chart, it is essential to know how to use it properly in order to structure you and your peers’ thoughts. I found the book “UZMO — Thinking With Your Pen” to be a good resource to enhance my skills in this area. As an architect you usually do not only participating in a meeting, usually you need to drive the meeting and to moderate it.\n*   **Give talks to large groups**: Presenting your ideas to a small or large group should be doable for you. If you feel uncomfortable with this, start presenting to your best friend. Enlarge the group slowly. This is something which you can only learn by doing and by leaving your personal comfort zone. Be patient with yourself, this process may take some time.\n*   **Find the right level of communication**: Different stakeholders have different interests and views. They need to be addressed individually on their level. Before you communicate, step back and check if the information you want to share have the right level, regarding abstractness, content, goals, motivations, etc. Example: A developer is usually interested in the very little detail of the solution, whereas a manager prefers to know which option saves most money.\n*   **Communicate often**: A brilliant architecture is worthless if nobody knows about it. Distribute the target architecture and the thoughts behind it, regularly and on every organizational level. Schedule meetings with developers, architects and managers to show them the desired or defined way.\n*   **Be transparent**: Regular communication mitigates missing transparency only partially. You need to make the reason behind decisions transparent. Especially, if people are not involved in the decision-making process it is hard to understand and to follow the decision and rationale behind it.\n*   **Be always prepared to give a presentation**: There is always someone with questions and you want to give the right answers immediately. Try to always have the most important slides in a consolidated set which you can show and explain. It saves you a lot of time and it gives security to yourself.",
+    "links": []
+  },
+  "m0ZYdqPFDoHOPo18wKyvV": {
+    "title": "Estimate and Evaluate",
+    "description": "*   **Know basic project management principles**: As architect or lead developer you are often asked for estimates to realize your ideas: How long, how much, how many people, which skills, etc.? Of course, if you plan to introduce new tools or frameworks you need to have an answer for these kind of “management” questions. Initially, you should be able to give a rough estimate, like days, months or years. And do not forget that it is not only about implementing, there are more activities to consider, like requirements engineering, testing and fixing bugs. Therefore, you should know the activities the used software development process. One thing you can apply to get better estimates, is to use past data and derive your prediction from that. If you do not have past data, you can also try approaches such as COCOMO by Barry W. Boehm. If you are deployed in an agile project, learn how to estimate and to plan properly: The book “Agile Estimating and Planning” by Mike Cohn provides a solid overview in this area.\n*   **Evaluate “unknown” architecture**: As architect you should also be able to evaluate the suitability of architectures for the current or future context(s). This is not an easy task but you can prepare for it by having a set of questions at hand which are common for every architecture. And it’s not only about architecture but also about how the system is managed, as this also gives you insights about the quality. I suggest to always have some questions prepared and ready to use. Some ideas for general questions:\n    *   Design practices: Which patterns does the architecture follow? Are they consequently and correctly used? Does the design follow a red line or is there an uncontrolled growth? Is there a clear structure and separation of concerns?\n    *   Development practices: Code guidelines in place and followed? How is the code versioned? Deployment practices?\n    *   Quality assurance: Test automation coverage? Static code analysis in place and good results? Peer reviews in place?\n    *   Security: Which security concepts are in place? Built-in security? Penetration tests or automated security analysis tools in place and regularly used?",
+    "links": []
+  },
+  "otHQ6ye1xgkI1qb4tEHVF": {
+    "title": "Balance",
+    "description": "*   **Quality comes at a price**: Earlier I talked about quality and non-functional requirements. If you overdo architecture it will increase costs and probably lower speed of development. You need to balance architectural and functional requirements. Over engineering should be avoided.\n*   **Solve contradicting goals**: A classic example of contradicting goals are short- and long-term goals. Projects often tend to build the simplest solution whereas an architect has the long-term vision in mind. Often, the simple solution does not fit into the long-term solution and is at risk to be thrown away later (sunk costs). To avoid implementation into the wrong direction, two things need to be considered:\n    1.  Developers and business need to understand the long term vision and their benefits in order to adapt their solution and\n    2.  managers who are responsible for budget need to be involved to understand the financial impact. It is not necessary to have 100% of the long term vision in place directly, but the developed piece should fit into it.\n*   **Conflict management**: Architects are often the glue between multiple groups with different backgrounds. This may lead to conflicts on different levels of communication. To find a balanced solution which also reflect long-term, strategic goals, it is often the role of architects to help overcome the conflict. My starting point regarding communication theory was the “Four-Ears Model” of Schulze von Thun. Based on this model a lot can be shown and deducted. But this theory needs some practice, which should be experienced during communication seminars.",
+    "links": []
+  },
+  "LSWlk9A3b6hco9Il_elao": {
+    "title": "Consult & Coach",
+    "description": "Being pro-active is probably the best you can do when it comes to consulting and coaching. If you are asked, it is often too late. And cleaning up on the architecture site is something which you want to avoid. You need to somehow foresee the next weeks, months or even years and prepare yourself and the organization for the next steps.\n\n*   **Have a vision**: If you are deployed in a project, whether it is a traditional waterfall like approach or agile, you always need to have a vision of your mid- and long-term goals you want to achieve. This is not a detailed concept, but more a road-map towards everyone can work. As you cannot achieve everything at once (it is a journey) I prefer to use maturity models. They give a clear structure which can be easily consumed and give the current status of progress at every time. For different aspects I use different models, e.g. development practices or continuous delivery. Every level in the maturity model has clear requirements which follow the SMART criteria in order to ease measuring if you have achieved it or not. One nice example I found is for continues delivery.\n*   **Build a community of practice (CoP)**: Exchanging experience and knowledge among a common interest group helps distributing ideas and standardizing approaches. For example you could gather all JavaScript developer and architects in one room, every three months or so, and discuss past and current challenges and how they were tackled or new methodologies and approaches. Architects can share, discuss and align their visions, developers can share experience and learn from their peers. Such a round can be highly beneficial for the enterprise but also for the individual itself, as it helps building a stronger network and distributes ideas. Also check out the article Communities of Practice from the SAFe Framework which explains the CoP concept in an agile setting.\n*   **Conduct open door sessions**: One source of misconceptions or ambiguity is lack of communication. Block a fixed time slot, e.g. 30 min every week, for exchanging hot topics with your peers. This session has no agenda everything can be discussed. Try to solve minor things on the spot. Schedule follow-ups on the more complex topics.",
+    "links": []
+  },
+  "YW6j3Sg511dXToTcwSnOS": {
+    "title": "Marketing Skills",
+    "description": "Your ideas are great and you have communicated them well but still nobody wants to follow? Then you probably lack marketing skills.\n\n*   **Motivate and convince**: How do companies convince you of buying a product? They demonstrate its value and benefits. But not just with 5 bullet points. They wrap it nicely and make it as easy as possible to digest.\n    *   Prototypes: Show a prototype of your idea. There are plenty of tools for creating prototypes. In the context of enterprises who love SAP check out [build.me](http://build.me) in which you can create nice looking and clickable UI5 apps fast and easy.\n    *   Show a video: Instead of “boring slides” you can also show a video which demonstrates your idea or at least the direction. But please, don’t overdo marketing: In the long term, content is king. If your words do not come true, this will damage your reputation in the long term.\n*   **Fight for your ideas and be persistent**: People sometime do not like your ideas or they are just too lazy to follow them. If you are really convinced by your ideas, you should continuously go after them and “fight”. This is sometimes necessary. Architecture decisions with long term goals are often not the easiest one’s: Developers do not like them, as they are more complex to develop. Managers do not like them, as they are more expensive in the short term. This is your job to be persistent and to negotiate.\n*   **Find allies**: Establishing or enforcing your ideas on your own can be hard or even impossible. Try to find allies who can support and help convincing others. Use your network. If you do not have one yet, start building it now. You could start by talking to your (open-minded) peers about your ideas. If they like it, or at least parts of it, it is likely that they support your idea if asked by others (“The idea by X was interesting.”). If they don’t like it, ask for the why: Maybe you have missed something? Or your story is not convincing enough? Next step is to find allies with decision power. Ask for an open-minded discussion. If you fear the discussion, remember that sometimes you need to leave your comfort zone.\n*   **Repeat It, Believe It**: “\\[…\\] studies show that repeated exposure to an opinion makes people believe the opinion is more prevalent, even if the source of that opinion is only a single person.” (Source: The Financial Brand) If you publish few messages often enough, it can help to convince people more easily. But be aware: From my perspective such a strategy should be used wisely as it could backfire as a lousy marketing trick.",
+    "links": []
+  },
+  "hFx3mLqh5omNxqI9lfaAQ": {
+    "title": "Technical Skills",
+    "description": "*   Experience in software development\n*   Experience in project management\n*   Knowledge of one or more programming languages, such as Java, Python, JavaScript, Ruby, Rust, and C\n*   Knowledge of different development platforms\n*   Understanding of web applications, cybersecurity, and open source technologies\n*   Proficiency in analyzing code for issues and errors\n*   Experience in database platforms\n*   Experience with Operations and DevOps Skills",
+    "links": []
+  },
+  "uoDtVFThaV6OMK2wXGfP5": {
+    "title": "Programming Languages",
+    "description": "",
+    "links": []
+  },
+  "a5DB_hsD4bAf8BtHNFNPo": {
+    "title": "Java / Kotlin / Scala",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Java Roadmap",
+        "url": "https://roadmap.sh/java",
+        "type": "article"
+      },
+      {
+        "title": "Java Basics",
+        "url": "https://www.w3schools.com/java/",
+        "type": "article"
+      },
+      {
+        "title": "Learn the basics of Kotlin",
+        "url": "https://blog.teamtreehouse.com/absolute-beginners-guide-kotlin",
+        "type": "article"
+      },
+      {
+        "title": "Kotlin Docs",
+        "url": "https://kotlinlang.org/docs/reference/basic-syntax.html",
+        "type": "article"
+      },
+      {
+        "title": "Scala Tutorial",
+        "url": "https://docs.scala-lang.org/tour/basics.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Java",
+        "url": "https://app.daily.dev/tags/java?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "j2Ph2QcKwmKlbaMHz1l_i": {
+    "title": "Python",
+    "description": "Python is a multi-paradigm language. Being an interpreted language, code is executed as soon as it is written and the Python syntax allows for writing code in functional, procedural or object-oriented programmatic ways. Python is frequently recommended as the first language new coders should learn, because of its focus on readability, consistency, and ease of use. This comes with some downsides, as the language is not especially performant in most production tasks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Python Roadmap",
+        "url": "https://roadmap.sh/python",
+        "type": "article"
+      },
+      {
+        "title": "Python Website",
+        "url": "https://www.python.org/",
+        "type": "article"
+      },
+      {
+        "title": "Python Getting Started",
+        "url": "https://www.python.org/about/gettingstarted/",
+        "type": "article"
+      },
+      {
+        "title": "Automate the Boring Stuff",
+        "url": "https://automatetheboringstuff.com/",
+        "type": "article"
+      },
+      {
+        "title": "W3Schools - Python Tutorial ",
+        "url": "https://www.w3schools.com/python/",
+        "type": "article"
+      },
+      {
+        "title": "Python Crash Course",
+        "url": "https://ehmatthes.github.io/pcc/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Python",
+        "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "U_Hmzfjjs1jVtu2CZ0TlG": {
+    "title": "Ruby",
+    "description": "Ruby is a high-level, interpreted programming language that blends Perl, Smalltalk, Eiffel, Ada, and Lisp. Ruby focuses on simplicity and productivity along with a syntax that reads and writes naturally. Ruby supports procedural, object-oriented and functional programming and is dynamically typed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Ruby Website",
+        "url": "https://www.ruby-lang.org/en/",
+        "type": "article"
+      },
+      {
+        "title": "Learn Ruby in 20 minutes",
+        "url": "https://www.ruby-lang.org/en/documentation/quickstart/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Ruby",
+        "url": "https://app.daily.dev/tags/ruby?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "nKlM9k4qAh4wBFXqM-2kC": {
+    "title": "Go",
+    "description": "Go is an open source programming language supported by Google. Go can be used to write cloud services, CLI tools, used for API development, and much more.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Go Roadmap",
+        "url": "https://roadmap.sh/golang",
+        "type": "article"
+      },
+      {
+        "title": "A Tour of Go – Go Basics",
+        "url": "https://go.dev/tour/welcome/1",
+        "type": "article"
+      },
+      {
+        "title": "Go Reference Documentation",
+        "url": "https://go.dev/doc/",
+        "type": "article"
+      },
+      {
+        "title": "Go by Example - annotated example programs",
+        "url": "https://gobyexample.com/",
+        "type": "article"
+      },
+      {
+        "title": "W3Schools Go Tutorial ",
+        "url": "https://www.w3schools.com/go/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Golang",
+        "url": "https://app.daily.dev/tags/golang?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "bhP5gMpRVebSFpCeHVXBj": {
+    "title": "JavaScript / TypeScript",
+    "description": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Apart from being used on the frontend in browsers, there is Node.js which is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated JavaScript Roadmap",
+        "url": "https://roadmap.sh/javascript",
+        "type": "article"
+      },
+      {
+        "title": "W3Schools – JavaScript Tutorial",
+        "url": "https://www.w3schools.com/js/",
+        "type": "article"
+      },
+      {
+        "title": "The Modern JavaScript Tutorial",
+        "url": "https://javascript.info/",
+        "type": "article"
+      },
+      {
+        "title": "Official Website",
+        "url": "https://www.typescriptlang.org/",
+        "type": "article"
+      },
+      {
+        "title": "Official Docs for Deep Dives",
+        "url": "https://www.typescriptlang.org/docs/",
+        "type": "article"
+      },
+      {
+        "title": "The TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+        "type": "article"
+      },
+      {
+        "title": "TypeScript Tutorial",
+        "url": "https://www.tutorialspoint.com/typescript/index.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about JavaScript",
+        "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://youtu.be/hdI2bqOjy3c",
+        "type": "video"
+      },
+      {
+        "title": "Node.js Crash Course",
+        "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+        "type": "video"
+      },
+      {
+        "title": "Node.js Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
+        "type": "video"
+      },
+      {
+        "title": "TypeScript for Beginners",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
+        "type": "video"
+      }
+    ]
+  },
+  "D1IXOBUrrXf5bXhVu9cmI": {
+    "title": ".NET Framework Based",
+    "description": ".NET is an open-source platform with tools and libraries for building web, mobile, desktop, games, IoT, cloud, and microservices.\n\nOfficially supported languages in .NET: C#, F#, Visual Basic.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": ".NET Website",
+        "url": "https://dotnet.microsoft.com/en-us/",
+        "type": "article"
+      },
+      {
+        "title": "What is .NET?",
+        "url": "https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet",
+        "type": "article"
+      },
+      {
+        "title": "Why Choose .NET?",
+        "url": "https://dotnet.microsoft.com/en-us/platform/why-choose-dotnet",
+        "type": "article"
+      },
+      {
+        "title": "C# Documentation",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/?WT.mc_id=dotnet-35129-website",
+        "type": "article"
+      },
+      {
+        "title": "F# Documentation",
+        "url": "https://learn.microsoft.com/en-us/dotnet/fsharp/?WT.mc_id=dotnet-35129-website",
+        "type": "article"
+      },
+      {
+        "title": "Visual Basic Documentation",
+        "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about .NET",
+        "url": "https://app.daily.dev/tags/.net?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "_U0VoTkqM1d6NR13p5azS": {
+    "title": "Patterns & Design Principles",
+    "description": "",
+    "links": []
+  },
+  "AMDLJ_Bup-AY1chl_taV3": {
+    "title": "OOP",
+    "description": "Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Basic concepts of object-oriented programming",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming",
+        "type": "article"
+      },
+      {
+        "title": "w3schools - OOP Concepts",
+        "url": "https://www.w3schools.com/java/java_oop.asp",
+        "type": "article"
+      },
+      {
+        "title": "FreeCodeCamp - (OOP) in C++",
+        "url": "https://www.youtube.com/watch?v=wN0x9eZLix4",
+        "type": "video"
+      },
+      {
+        "title": "FreeCodeCamp - (OPP) in Python",
+        "url": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+        "type": "video"
+      }
+    ]
+  },
+  "jj5otph6mEYiR-oU5WVtT": {
+    "title": "MVC, MVP, MVVM",
+    "description": "Model-view-controller, or MVC, is a pattern used to separate user-interface, data and application logic. It does this by separating an application into three parts: Model, View, and Controller. The model holds the data, the view encompasses the user-interface, and the controller acts as a mediator between the two.\n\nModel-view-presenter, or MVP, was designed to ease automated unit testing and improve the separation of concerns in presentation logic. MVP is a variant of the MVC pattern, though differs in that it divides the application into the user-interface (view), data (model) and presentation logic (presenter). While the model and the view represent stay the same as in the model-view-controller pattern, the presenter differs from the controller in that it manipulates the model and updates the view.\n\nAnother variant of the MVC is the model-view-viewmodel pattern. The Model-view-viewmodel, or MVVM, separates the application into three core components: Model, View, and View Model. While the view and model represent all that they did in their parent pattern, the view model acts as a link between the model and view, retrieves data from the model and exposes it to the view through two-way data binding and can manipulate the model's data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MVC, MVP and MVVM Design Pattern",
+        "url": "https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "RsnN5bt8OhSMjSFmVgw-X": {
+    "title": "CQRS, Eventual Consistency",
+    "description": "CQRS (Segregation of Responsibility for Command Queries) is an architecture pattern that comes with the idea of separating read and write operations into two distinct logical processes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "CQRS",
+        "url": "https://martinfowler.com/bliki/CQRS.html",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to CQRS",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+        "type": "article"
+      }
+    ]
+  },
+  "AoWO2BIKG5X4JWir6kh5r": {
+    "title": "Actors",
+    "description": "Actor Model is a model that represents actors as the basic unit of a system, they can only communicate through messages and have their own private state, and they can also manage other actors, resulting in an encapsulated and fault-tolerant system.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The actor model in 10 minutes",
+        "url": "https://www.brianstorti.com/the-actor-model/",
+        "type": "article"
+      },
+      {
+        "title": "Actor Model Explained",
+        "url": "https://www.youtube.com/watch?v=ELwEdb_pD0k",
+        "type": "video"
+      }
+    ]
+  },
+  "bbKEEk7dvfFZBBJaIjm0j": {
+    "title": "ACID, CAP Theorem",
+    "description": "ACID (Atomicity, Consistency, Isolation, Durability) and CAP (Consistency, Availability, Partition Tolerance) are essential concepts in distributed systems. They are often used to explain the trade-offs between consistency and availability.\n\nCAP is an acronym for Consistency, Availability, and Partition Tolerance. According to the CAP theorem, any distributed system can only guarantee two of the three properties at any time. You can't guarantee all three properties at once.\n\nACID is an acronym that stands for Atomicity, Consistency, Isolation, Durability. ACID is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is CAP Theorem?",
+        "url": "https://www.bmc.com/blogs/cap-theorem/",
+        "type": "article"
+      },
+      {
+        "title": "CAP Theorem - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/CAP_theorem",
+        "type": "article"
+      },
+      {
+        "title": "An Illustrated Proof of the CAP Theorem",
+        "url": "https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/",
+        "type": "article"
+      },
+      {
+        "title": "CAP Theorem and its applications in NoSQL Databases",
+        "url": "https://www.ibm.com/uk-en/cloud/learn/cap-theorem",
+        "type": "article"
+      },
+      {
+        "title": "ACID - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/ACID",
+        "type": "article"
+      },
+      {
+        "title": "What is CAP Theorem?",
+        "url": "https://www.youtube.com/watch?v=_RbsFXWRZ10",
+        "type": "video"
+      }
+    ]
+  },
+  "QNG-KP01WQnq8o1-In1-n": {
+    "title": "SOLID",
+    "description": "SOLID is a set of principles applied to object-oriented design (OOD) to create maintainable, understandable, and flexible code, while avoiding code smells and defects. The principles are:\n\n*   Single Responsibility\n*   Open/Closed\n*   Liskov Substitution\n*   Interface Segregation\n*   Dependency Inversion\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SOLID Principles",
+        "url": "https://www.baeldung.com/solid-principles",
+        "type": "article"
+      },
+      {
+        "title": "SOLID: The First 5 Principles of Object Oriented Design",
+        "url": "https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design",
+        "type": "article"
+      }
+    ]
+  },
+  "DnP66pjK3b8tCtYr05n2G": {
+    "title": "TDD",
+    "description": "Test driven development (TDD) is the process of writing tests for software's requirements which will fail until the software is developed to meet those requirements. Once those tests pass, then the cycle repeats to refactor code or develop another feature/requirement. In theory, this ensures that software is written to meet requirements in the simplest form, and avoids code defects.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Test Driven Development (TDD)?",
+        "url": "https://www.guru99.com/test-driven-development.html",
+        "type": "article"
+      },
+      {
+        "title": "Test-driven development",
+        "url": "https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about TDD",
+        "url": "https://app.daily.dev/tags/tdd?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Agile in Practice: Test Driven Development",
+        "url": "https://youtu.be/uGaNkTahrIw",
+        "type": "video"
+      }
+    ]
+  },
+  "IIelzs8XYMPnXabFKRI51": {
+    "title": "DDD",
+    "description": "Domain-driven design (DDD) is a software design approach focusing on modeling software to match a domain according to input from that domain's experts.\n\nIn terms of object-oriented programming, it means that the structure and language of software code (class names, class methods, class variables) should match the business domain. For example, if a software processes loan applications, it might have classes like LoanApplication and Customer, and methods such as AcceptOffer and Withdraw.\n\nDDD connects the implementation to an evolving model and it is predicated on the following goals:\n\n*   Placing the project's primary focus on the core domain and domain logic;\n*   Basing complex designs on a model of the domain;\n*   Initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Domain Driven Design Quickly",
+        "url": "https://web.archive.org/web/20230606035225/https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "tools@diu8MyHxZuZSdhavYVj1T.md": {
+    "title": "Tools",
+    "description": "",
+    "links": []
+  },
+  "ZEzYb-i55hBe9kK3bla94": {
+    "title": "Git",
+    "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Learn Git with Tutorials, News and Tips - Atlassian",
+        "url": "https://www.atlassian.com/git",
+        "type": "article"
+      },
+      {
+        "title": "Git Cheat Sheet",
+        "url": "https://cs.fyi/guide/git-cheatsheet",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Git",
+        "url": "https://app.daily.dev/tags/git?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+        "type": "video"
+      }
+    ]
+  },
+  "CYnUg_okOcRrD7fSllxLW": {
+    "title": "Slack",
+    "description": "Slack is a messaging app for business that connects people to the information that they need. By bringing people together to work as one unified team, Slack transforms the way that organisations communicate.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Slack",
+        "url": "https://slack.com",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started",
+        "url": "https://slack.com/intl/en-in/help/categories/360000049043",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Slack",
+        "url": "https://app.daily.dev/tags/slack?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is Slack?",
+        "url": "https://www.youtube.com/watch?v=q19RtuCHt1Q",
+        "type": "video"
+      }
+    ]
+  },
+  "a6joS9WXg-rbw29_KfBd9": {
+    "title": "Trello",
+    "description": "Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Trello",
+        "url": "https://trello.com",
+        "type": "article"
+      },
+      {
+        "title": "Trello Guide",
+        "url": "https://trello.com/guide",
+        "type": "article"
+      },
+      {
+        "title": "A Tour Of Trello",
+        "url": "https://www.youtube.com/watch?v=AyfupeWS0yY",
+        "type": "video"
+      }
+    ]
+  },
+  "3bpd0iZTd3G-H8A7yrExY": {
+    "title": "Atlassian Tools",
+    "description": "The Jira platform is, at its core, our workflow engine that allows you to track issues or tasks through a predefined and customizable workflow. These tasks can be organized by project, allowing for the entirety of your organization to track their issues at a project level with complete transparency using granular user permissions.\n\n### Jira Service Desk\n\nJira Service Desk is for teams who receive incoming issues/requests from other teams/customers. Jira Service Desk is designed specifically for end-users to submit tickets to a help desk team.\n\n### Jira Core\n\nJira Core takes this workflow engine and caters it for business teams to develop organized, easy to use, task-oriented projects. Whether the tasks are a simple to-do list or a robust 7 step workflow with complex transitions, Jira Core is built to accommodate all of your requirements. Jira Core is an excellent solution for business teams, legal teams, HR teams, non-technical teams, marketing teams, financial teams, operation teams, and more.\n\n### Confluence\n\nConfluence is a collaboration wiki used to help teams collaborate and share knowledge efficiently. It acts as your document collaboration and repository as it keeps full tracking of what changed in each document, when, and by whom to keep an 'audit' trail. Team members can create, share, and collaborate on content.\n\n### Bitbucket\n\nBitbucket Server is the on-premises Git repository management solution for enterprise teams. It allows everyone in your organization to easily collaborate on your Git repositories.\n\n### Statuspage\n\nStatuspage helps teams inform customers and end-users about outages and scheduled maintenance. Statuspage is the communication piece of your incident management process. Keep users in the loop from 'investigating' through 'resolved'.\n\n### Opsgenie\n\nOpsgenie is a modern incident management solution for operating always-on services that enable dev and ops teams to stay aware and in control of alerts and incidents.\n\n### Advanced Roadmaps for Jira\n\nAdvanced Roadmaps is a Jira Software Cloud Premium feature that's designed to help multiple teams collaborate together, track the big picture, identify dependencies across large pieces of work, and plan for team capacity.\n\nAdvanced Roadmaps is available as a standalone app for Jira Software Server and Data Center.\n\n### Jira Align\n\nJira Align is an Enterprise Agile Planning platform that helps improve visibility, strategic alignment, and enterprise adaptability in order to accelerate your digital transformation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Jira Service Desk",
+        "url": "https://www.atlassian.com/software/jira/service-management/features/service-desk",
+        "type": "article"
+      },
+      {
+        "title": "Jira Core",
+        "url": "https://www.atlassian.com/software/jira/work-management",
+        "type": "article"
+      },
+      {
+        "title": "Confluence",
+        "url": "https://www.atlassian.com/wac/software/confluence?",
+        "type": "article"
+      },
+      {
+        "title": "Bitbucket",
+        "url": "https://bitbucket.org/product/",
+        "type": "article"
+      },
+      {
+        "title": "Statuspage",
+        "url": "https://www.atlassian.com/software/statuspage",
+        "type": "article"
+      },
+      {
+        "title": "Opsgenie",
+        "url": "https://www.atlassian.com/software/opsgenie",
+        "type": "article"
+      },
+      {
+        "title": "Advanced Roadmaps for Jira",
+        "url": "https://www.atlassian.com/software/jira/features/roadmaps",
+        "type": "article"
+      },
+      {
+        "title": "Jira Align",
+        "url": "https://www.atlassian.com/software/jira/align",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Atlassian",
+        "url": "https://app.daily.dev/tags/atlassian?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "PyTuVs08_z4EhLwhTYzFu": {
+    "title": "GitHub",
+    "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub Website",
+        "url": "https://github.com",
+        "type": "opensource"
+      },
+      {
+        "title": "GitHub Documentation",
+        "url": "https://docs.github.com/en/get-started/quickstart",
+        "type": "article"
+      },
+      {
+        "title": "How to Use Git in a Professional Dev Team",
+        "url": "https://ooloo.io/project/github-flow",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about GitHub",
+        "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is GitHub?",
+        "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E",
+        "type": "video"
+      },
+      {
+        "title": "Git vs. GitHub: Whats the difference?",
+        "url": "https://www.youtube.com/watch?v=wpISo9TNjfU",
+        "type": "video"
+      },
+      {
+        "title": "Git and GitHub for Beginners",
+        "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
+        "type": "video"
+      },
+      {
+        "title": "Git and GitHub - CS50 Beyond 2019",
+        "url": "https://www.youtube.com/watch?v=eulnSXkhE7I",
+        "type": "video"
+      }
+    ]
+  },
+  "SuMhTyaBS9vwASxAt39DH": {
+    "title": "Tools",
+    "description": "",
+    "links": []
+  },
+  "OaLmlfkZid7hKqJ9G8oNV": {
+    "title": "Architecture",
+    "description": "",
+    "links": []
+  },
+  "FAXKxl3fWUFShYmoCsInZ": {
+    "title": "Serverless",
+    "description": "Serverless architecture (also known as serverless computing or function as a service, FaaS) is a software design pattern where applications are hosted by a third-party service, eliminating the need for server software and hardware management by the developer. Applications are broken up into individual functions that can be invoked and scaled individually.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Serverless Architectures By AWS",
+        "url": "https://aws.amazon.com/lambda/serverless-architectures-learn-more/",
+        "type": "article"
+      },
+      {
+        "title": "Serverless in Detail",
+        "url": "https://martinfowler.com/articles/serverless.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Serverless",
+        "url": "https://app.daily.dev/tags/serverless?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "mka_DwiboH5sGFhXhk6ez": {
+    "title": "Client / Server",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Client-Server Architecture",
+        "url": "https://www.simplilearn.com/what-is-client-server-architecture-article",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "05hLO2_A8Tr6cLJGFRhOh": {
+    "title": "Layered",
+    "description": "Layered architecture is a software design pattern in which an application is composed of several layers or tiers. Each layer has a specific responsibility and communicates with the other layers through well-defined interfaces. This modular approach to software design allows for easier maintenance and testing, and also makes it possible to reuse components in different applications.\n\nThe most common type of layered architecture is the three-tier architecture, which is typically composed of a presentation layer, a business logic layer, and a data access layer. The presentation layer is responsible for displaying data to the user and receiving user input. The business logic layer contains the core business logic and rules of the application, and the data access layer is responsible for accessing and manipulating data in the database.\n\nLayered architecture is a common approach to designing scalable and maintainable software systems, and it is often used in enterprise-level applications.\n\nWhile layered architecture has many benefits, it also has some drawbacks that should be considered. These include the following:\n\n*   Complexity: Layered architecture can add complexity to an application, especially if it is not implemented carefully. This can make the application more difficult to understand and maintain.\n    \n*   Performance: Layered architecture can potentially impact the performance of an application, because data has to be passed between the different layers. This can be especially problematic if the application has a large number of layers or if the layers are not optimized for performance.\n    \n*   Tight coupling: If the layers in a layered architecture are not well-defined and loosely coupled, changes to one layer can potentially affect other layers, which can lead to maintainability issues.\n    \n*   Overhead: Layered architecture can add overhead to an application, because data has to be passed between the different layers. This can potentially impact the performance and scalability of the application.\n    \n\nOverall, while layered architecture has many benefits, it is important to carefully consider the potential drawbacks and make sure that the benefits outweigh the costs in your specific application.",
+    "links": []
+  },
+  "j7OP6RD_IAU6HsyiGaynx": {
+    "title": "Distributed Systems",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Free Distributed Systems book from Maarten van Steen",
+        "url": "https://www.distributed-systems.net/index.php/books/ds3/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "6uvmMgvOwGyuLC5TOhjFu": {
+    "title": "Service Oriented",
+    "description": "Service-oriented architecture (SOA) is an enterprise-wide approach to software development of application components that takes advantage of reusable software components, or services.\n\nSOA provides four different service types:\n\n1.  Functional services (i.e., business services), which are critical for business applications.\n2.  Enterprise services, which serve to implement functionality.\n3.  Application services, which are used to develop and deploy apps.\n4.  Infrastructure services, which are instrumental for backend processes like security and authentication.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SOA Architecture By AWS",
+        "url": "https://aws.amazon.com/what-is/service-oriented-architecture/",
+        "type": "article"
+      }
+    ]
+  },
+  "IzFTn5-tQuF_Z0cG_w6CW": {
+    "title": "Security",
+    "description": "",
+    "links": []
+  },
+  "7tBAD0ox9hTK4D483GTRo": {
+    "title": "Hashing Algorithms",
+    "description": "Hashing algorithms are used to generate a unique value for a given input. This value is called a hash. Hashing algorithms are used to verify the integrity of data, to store passwords, and to generate unique identifiers for data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Explore top posts about Algorithms",
+        "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Hashing Algorithms and Security - Computerphile",
+        "url": "https://www.youtube.com/watch?v=b4b8ktEV4Bg",
+        "type": "video"
+      },
+      {
+        "title": "Top Hashing Algorithms In Cryptography | MD5 and SHA 256 Algorithms Expalined | Simplilearn",
+        "url": "https://www.youtube.com/watch?v=Plp4F3ZfC7A",
+        "type": "video"
+      },
+      {
+        "title": "SHA: Secure Hashing Algorithm - Computerphile",
+        "url": "https://www.youtube.com/watch?v=DMtFhACPnTY",
+        "type": "video"
+      }
+    ]
+  },
+  "OpL2EqvHbUmFgnpuhtZPr": {
+    "title": "PKI",
+    "description": "A public key infrastructure (PKI) is a set of roles, policies, hardware, software, and procedures to create, manage, distribute, use, store and revoke digital certificates and public-key encryption. The purpose of a PKI is to facilitate the secure electronic transfer of information for a range of network activities such as e-commerce, internet banking, and confidential email. It is required for activities where simple passwords are an inadequate authentication method, and the more rigorous proof is required to confirm the identity of the parties involved in the communication and to validate the information being transferred.\n\n### Components of PKI\n\n*   **Digital certificates:** digital \"identities\" issued by trusted third parties, that identify users and machines. They may be securely stored in wallets or in directories.\n*   **Public and private keys:** form the basis of a PKI for secure communications, based on a secret private key and a mathematically related public key\n*   **Secure sockets layer (SSL):** An Internet-standard secure protocol\n*   **Certificate Authority (CA):** acts as a trusted, independent provider of digital certificates\n\n### What is PKI used for?\n\n*   Providing a recovery key for an encrypted hard drive\n*   Securing internal communications with database servers\n*   Signing documents\n*   Securing local networks: PKI capacities are built into Microsoft's Active Directory, for instance, and can work with physical keycards that store digital certificates to ensure that users are who they say they are.\n*   Secure messaging: the Signal protocol uses PKI, for instance\n*   Email Encryption\n*   Securing access to internet of things (IoT) devices\n\n### Advantages of the PKI Approach\n\n*   PKI is a standards-based technology.\n*   It allows the choice of trust provider.\n*   It is highly scalable. Users maintain their own certificates, and certificate authentication only involves the data exchange between the client and server. This means that no third-party authentication server needs to be online. There is, thus, no limit to the number of users who can be supported using PKI.\n*   PKI allows delegated trust. A user who has obtained a certificate from a recognized and trusted certificate authority can authenticate himself to a server the first time he connects to that server without having previously been registered with the system.\n*   Although PKI is not notably a single sign-on service, it can be implemented in such a way as to enable single sign-on.",
+    "links": []
+  },
+  "KhqUK-7jdClu9M2Pq7x--": {
+    "title": "OWASP",
+    "description": "OWASP or Open Web Application Security Project is an online community that produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OWASP Web Application Security Testing Checklist",
+        "url": "https://github.com/0xRadi/OWASP-Web-Checklist",
+        "type": "opensource"
+      },
+      {
+        "title": "Wikipedia - OWASP",
+        "url": "https://en.wikipedia.org/wiki/OWASP",
+        "type": "article"
+      },
+      {
+        "title": "OWASP Top 10 Security Risks",
+        "url": "https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP Cheatsheets",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html",
+        "type": "article"
+      }
+    ]
+  },
+  "KiwFXB6yd0go30zAFMTJt": {
+    "title": "Auth Strategies",
+    "description": "Visit the following resources to learn more:",
+    "links": [
+      {
+        "title": "JSON Web Token - Handbook",
+        "url": "https://auth0.com/resources/ebooks/jwt-handbook",
+        "type": "article"
+      },
+      {
+        "title": "Authentication vs Authorization",
+        "url": "https://www.cerbos.dev/blog/authentication-vs-authorization",
+        "type": "article"
+      },
+      {
+        "title": "SAML Overview",
+        "url": "https://www.youtube.com/watch?v=i8wFExDSZv0",
+        "type": "video"
+      },
+      {
+        "title": "A Devlopers Guide to SAML",
+        "url": "https://www.youtube.com/watch?v=l-6QSEqDJPo",
+        "type": "video"
+      },
+      {
+        "title": "SAML 2.0: Technical Overview",
+        "url": "https://www.youtube.com/watch?v=SvppXbpv-5k",
+        "type": "video"
+      },
+      {
+        "title": "An Illustrated Guide to OAuth and OpenID Connect",
+        "url": "https://www.youtube.com/watch?v=t18YB3xDfXI",
+        "type": "video"
+      },
+      {
+        "title": "OAuth 2.0 & OpenID Connect (OIDC): Technical Overview",
+        "url": "https://www.youtube.com/watch?v=rTzlF-U9Y6Y",
+        "type": "video"
+      }
+    ]
+  },
+  "YCJYRA3b-YSm8vKmGUFk5": {
+    "title": "Working with Data",
+    "description": "",
+    "links": []
+  },
+  "92GG4IRZ3FijumC94aL-T": {
+    "title": "Hadoop, Spark, MapReduce",
+    "description": "[Apache Spark](https://spark.apache.org/) is a data processing framework that can quickly perform processing tasks on very large data sets, and can also distribute data processing tasks across multiple computers, either on its own or in tandem with other distributed computing tools.\n\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spark vs Hadoop MapReduce",
+        "url": "https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Apache Spark",
+        "url": "https://app.daily.dev/tags/spark?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Hadoop explained in 5 minutes",
+        "url": "https://www.youtube.com/watch?v=aReuLtY0YMI",
+        "type": "video"
+      }
+    ]
+  },
+  "JUFE4OQhnXOt1J_MG-Sjf": {
+    "title": "ETL, Datawarehouses",
+    "description": "In the world of data warehousing, if you need to bring data from multiple different data sources into one, centralized database, you must first:\n\n*   **EXTRACT** data from its original source\n*   **TRANSFORM** data by deduplicating it, combining it, and ensuring quality, to then\n*   **LOAD** data into the target database\n\nETL tools enable data integration strategies by allowing companies to gather data from multiple data sources and consolidate it into a single, centralized location. ETL tools also make it possible for different types of data to work together.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is ETL?",
+        "url": "https://www.snowflake.com/guides/what-etl",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about ETL",
+        "url": "https://app.daily.dev/tags/etl?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "ETL explained",
+        "url": "https://www.youtube.com/watch?v=OW5OgsLpDCQ",
+        "type": "video"
+      }
+    ]
+  },
+  "n5AcBt_u8qtTe3PP9svPZ": {
+    "title": "SQL Databases",
+    "description": "SQL stands for Structured Query Language. It's used for relational databases. A SQL database is a collection of tables that stores a specific set of structured data.\n\nExamples of SQL Databases\n\n*   MariaDB and MySQL\n*   PostgreSQL\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SQL Databases",
+        "url": "https://www.openlogic.com/blog/what-sql-database",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about SQL",
+        "url": "https://app.daily.dev/tags/sql?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "57liQPaPyVpE-mdLnsbi0": {
+    "title": "NoSQL Databases",
+    "description": "NoSQL databases (aka \"not only SQL\") are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.\n\nTypes of NoSQL databases\n\n*   Document databases Ex. MongoDB\n*   Key-value databases Ex. Redis\n*   Wide-column databases Ex. Cassandra\n*   Graph databases Ex. Neo4J\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "NoSQL Databases",
+        "url": "https://www.mongodb.com/nosql-explained",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about NoSQL",
+        "url": "https://app.daily.dev/tags/nosql?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "a0baFv7hVWZGvS5VLh5ig": {
+    "title": "Apache Spark",
+    "description": "Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://spark.apache.org/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Apache",
+        "url": "https://app.daily.dev/tags/apache?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "I_VjjmMK52_tS8qjQUspN": {
+    "title": "Hadoop",
+    "description": "The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://hadoop.apache.org/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Apache Hadoop",
+        "url": "https://app.daily.dev/tags/apache-hadoop?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "B5YtP8C1A0jB3MOdg0c_q": {
+    "title": "Datawarehouse Principles",
+    "description": "It is based on the assumption that every system should take care of a concern in a way that such concern should be encapsulated by the system itself.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Toptal Developers Website",
+        "url": "https://www.toptal.com/data-science/data-warehouse-concepts-principles",
+        "type": "article"
+      }
+    ]
+  },
+  "Ocn7-ctpnl71ZCZ_uV-uD": {
+    "title": "APIs & Integrations",
+    "description": "",
+    "links": []
+  },
+  "priDGksAvJ05YzakkTFtM": {
+    "title": "gRPC",
+    "description": "gRPC is a platform agnostic serialization protocol that is used to communicate between services. Designed by Google in 2015, it is a modern alternative to REST APIs. It is a binary protocol that uses HTTP/2 as a transport layer. It is a high performance, open source, general-purpose RPC framework that puts mobile and HTTP/2 first.\n\nIt's main use case is for communication between two different languages within the same application. You can use Python to communicate with Go, or Java to communicate with C#.\n\ngRPC uses the protocol buffer language to define the structure of the data that is\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "gRPC Website",
+        "url": "https://grpc.io/",
+        "type": "article"
+      },
+      {
+        "title": "gRPC Introduction",
+        "url": "https://grpc.io/docs/what-is-grpc/introduction/",
+        "type": "article"
+      },
+      {
+        "title": "gRPC Core Concepts",
+        "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about gRPC",
+        "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Stephane Maarek - gRPC Introduction",
+        "url": "https://youtu.be/XRXTsQwyZSU",
+        "type": "video"
+      }
+    ]
+  },
+  "fELnBA0eOoE-d9rSmDJ8l": {
+    "title": "ESB, SOAP",
+    "description": "",
+    "links": []
+  },
+  "Sp3FdPT4F9YnTGvlE_vyq": {
+    "title": "GraphQL",
+    "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Apollo GraphQL Tutorials",
+        "url": "https://www.apollographql.com/tutorials/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about GraphQL",
+        "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "Ss43xwK1ydEToj6XmmCt7": {
+    "title": "REST",
+    "description": "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a REST API?",
+        "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+        "type": "article"
+      },
+      {
+        "title": "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
+        "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+        "type": "article"
+      },
+      {
+        "title": "Learn REST: A RESTful Tutorial",
+        "url": "https://restapitutorial.com/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about REST API",
+        "url": "https://app.daily.dev/tags/rest-api?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "DwNda95-fE7LWnDA6u1LU": {
+    "title": "BPM, BPEL",
+    "description": "BPM: Business Process Management\n--------------------------------\n\nMedium or large enterprises needs robust processes to streamline their business needs by reducing the cost incurred per process and diminishing the turn around time for each activity. To achieve the above, there are various BPM tools like PEGA, IBM BPM, Appian, etc. Basically these tools automate the processes through a robust process modelling and implementation.\n\nBPMN: Business Process Management Notations\n-------------------------------------------\n\nIts is a standard for representing business processes graphically. While modelling the process, the notations used are complied with BPMN (there are other like EPC, etc.). So BPMN is a standard notation that BPM consultants follow to model the business process. BPMN has versions and now BPMN 2.0 is the standard one.\n\nBPEL : Business Process Execution Language\n------------------------------------------\n\nProgrammers use BPEL to define how a business process that involves web services will be executed. BPEL messages are typically used to invoke remote services, orchestrate process execution and manage events and exceptions. BPEL is often associated with Business Process Management Notation. In many organizations, analysts use BPMN to visualize business processes and developers transform the visualizations to BPEL for execution.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is BPM?",
+        "url": "https://www.redhat.com/en/topics/automation/what-is-business-process-management",
+        "type": "article"
+      },
+      {
+        "title": "BPEL described",
+        "url": "https://www.ibm.com/docs/en/baw/19.x?topic=SS8JB4_19.x/com.ibm.wbpm.wid.main.doc/prodoverview/topics/cbpelproc.html",
+        "type": "article"
+      },
+      {
+        "title": "BPM vs BPEL",
+        "url": "https://www.youtube.com/watch?v=V6nr5dnb1JQ",
+        "type": "video"
+      }
+    ]
+  },
+  "4NVdEbmpQVHpBc7582S6E": {
+    "title": "Messaging Queues",
+    "description": "Message queuing makes it possible for applications to communicate asynchronously, by sending messages to each other via a queue. A message queue provides temporary storage between the sender and the receiver so that the sender can keep operating without interruption when the destination program is busy or not connected.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Messaging Queues",
+        "url": "https://aws.amazon.com/message-queue/",
+        "type": "article"
+      },
+      {
+        "title": "Messaging Queues Tutorial",
+        "url": "https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_message_queues.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "j9Y2YbBKi3clO_sZ2L_hQ": {
+    "title": "Web, Mobile",
+    "description": "",
+    "links": []
+  },
+  "6FDGecsHbqY-cm32yTZJa": {
+    "title": "Functional Programming",
+    "description": "Functional programming is a programming paradigm designed to handle pure mathematical functions. This paradigm is totally focused on writing more compounded and pure functions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Functional Programming with JavaScript",
+        "url": "https://www.telerik.com/blogs/functional-programming-javascript",
+        "type": "article"
+      },
+      {
+        "title": "Learning Functional Programming",
+        "url": "https://youtube.com/watch?v=e-5obm1G_FY",
+        "type": "video"
+      }
+    ]
+  },
+  "mCiYCbKIOVU34qil_q7Hg": {
+    "title": "React, Vue, Angular",
+    "description": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated React Roadmap",
+        "url": "https://roadmap.sh/react",
+        "type": "article"
+      },
+      {
+        "title": "React Website",
+        "url": "https://react.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Official Getting Started",
+        "url": "https://react.dev/learn/tutorial-tic-tac-toe",
+        "type": "article"
+      },
+      {
+        "title": "Vue.js Website",
+        "url": "https://vuejs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Official Getting Started",
+        "url": "https://vuejs.org/v2/guide/",
+        "type": "article"
+      },
+      {
+        "title": "Official - Getting started with Angular",
+        "url": "https://angular.io/start",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular",
+        "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "React JS Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
+        "type": "video"
+      },
+      {
+        "title": "React Course - Beginners Tutorial for React JavaScript Library [2022]",
+        "url": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+        "type": "video"
+      },
+      {
+        "title": "Understanding Reacts UI Rendering Process",
+        "url": "https://www.youtube.com/watch?v=i793Qm6kv3U",
+        "type": "video"
+      },
+      {
+        "title": "Vue.js Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+        "type": "video"
+      },
+      {
+        "title": "Vue.js Crash Course",
+        "url": "https://www.youtube.com/watch?v=qZXt1Aom3Cs",
+        "type": "video"
+      }
+    ]
+  },
+  "ulwgDCQi_BYx5lmll7pzU": {
+    "title": "SPA, SSR, SSG",
+    "description": "*   **SPA**: A single page application loads only a single web document from the server and then updates the content of that document on demand via `Javascript APIs` without reloading the entire document. React, Vue, Angular are the top frameworks used to create single page applications.\n*   **SSR**: This technique uses a server like `Node.js` to fully render the web document upon the receival of a request and then send it back to the client. This way the user get an interactive document with all the necessary information without having to wait for any JavaScript or CSS files to load.\n*   **SSG**: Static site generation renders the web document in the server(like SSR), however the page is rendered at **build time**. So, instead of rendering the page on the server upon the receival of a request, the page is already rendered in the server, waiting to be served to the client.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Web design patterns — SSR, SSG, and SPA",
+        "url": "https://medium.com/codex/web-design-patterns-ssr-ssg-and-spa-fadad7673dfe",
+        "type": "article"
+      },
+      {
+        "title": "Rendering on the Web",
+        "url": "https://web.dev/rendering-on-the-web/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Web Development",
+        "url": "https://app.daily.dev/tags/webdev?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "vpko5Kyf6BZ5MHpxXOKaf": {
+    "title": "Microfrontends",
+    "description": "Microfrontends is an architectural style where independently deliverable frontend applications built by different teams using different technologies are composed into a greater whole. Simply, a Micro-Frontend is a portion of a webpage (not the entire page). There is a “Host” or a “Container” page in the Micro-Frontend Architecture page that can host one or more Micro-Frontends.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Micro Frontends",
+        "url": "https://micro-frontends.org/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Web Development",
+        "url": "https://app.daily.dev/tags/webdev?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Micro-Frontends Course - Beginner to Expert",
+        "url": "https://www.youtube.com/watch?v=lKKsjpH09dU",
+        "type": "video"
+      }
+    ]
+  },
+  "s0RvufK2PLMXtlsn2KAUN": {
+    "title": "W3C and WHATWG",
+    "description": "World Wide Web Consortium (W3C) standards define the best practices for web development to enable developers to build rich interactive experiences that are available on any device. Theses standards range from recommended web technologies such as HTML, CSS, XML to the generally accepted principles of web architecture, semantics and services.\n\nWeb Hypertext Application Technology Working Group (WHATWG) is another set of web standards that came into existence after W3C announced that it was going to be focusing on XHTML over HTML.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "W3C Standards",
+        "url": "https://www.w3.org/standards/",
+        "type": "article"
+      },
+      {
+        "title": "WHATWG Standards",
+        "url": "https://spec.whatwg.org/",
+        "type": "article"
+      }
+    ]
+  },
+  "C0g_kQFlte5siHMHwlHQb": {
+    "title": "Reactive Programming",
+    "description": "Reactive programming describes a design paradigm that relies on asynchronous programming logic to handle real-time updates to otherwise static content. It provides an efficient means -- the use of automated data streams -- to handle data updates to content whenever a user makes an inquiry.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Reactive Programming?",
+        "url": "https://www.techtarget.com/searchapparchitecture/definition/reactive-programming",
+        "type": "article"
+      }
+    ]
+  },
+  "hjlkxYZS7Zf9En3IUS-Wm": {
+    "title": "Frameworks",
+    "description": "",
+    "links": []
+  },
+  "LQlzVxUxM3haWRwbhYHKY": {
+    "title": "BABOK",
+    "description": "The guide to the Business Analysis Body of Knowledge (BABOK Guide) is a book from the International Institute of Business Analysis (IIBA) that provides business analysts (BAs) with strategies for using data to improve an organization's workflow processes, technology, products and services.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge",
+        "type": "article"
+      }
+    ]
+  },
+  "wFu9VO48EYbIQrsM8YUCj": {
+    "title": "IAF",
+    "description": "The Integrated Architecture Framework (IAF) is an enterprise architecture framework that covers business, information, information system and technology infrastructure.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official PDF",
+        "url": "https://www.capgemini.com/wp-content/uploads/2018/03/architecture-for-the-information-age.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Integrated_Architecture_Framework",
+        "type": "article"
+      }
+    ]
+  },
+  "8FTKnAKNL9LnZBrw9YXqK": {
+    "title": "UML",
+    "description": "The Unified Modeling Language, or UML, is a modeling language that is intended to provide a standard way to visualize and describe the design of a system.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "UML Website",
+        "url": "https://www.uml.org",
+        "type": "article"
+      },
+      {
+        "title": "The Unified Modeling Language Reference Manual (Second Edition)",
+        "url": "https://personal.utdallas.edu/~chung/Fujitsu/UML_2.0/Rumbaugh--UML_2.0_Reference_CD.pdf",
+        "type": "article"
+      },
+      {
+        "title": "IBM Docs",
+        "url": "https://www.ibm.com/docs/en/rational-soft-arch/9.6.1?topic=files-uml-pattern-frameworks",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Unified_Modeling_Language",
+        "type": "article"
+      }
+    ]
+  },
+  "5TDTU22Fla2mRr6JeOcaY": {
+    "title": "TOGAF",
+    "description": "The TOGAF content framework provides a detailed model of architectural work products, including deliverables, artifacts within deliverables, and the architectural building blocks that artifacts represent.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Website",
+        "url": "https://www.opengroup.org/togaf",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework",
+        "type": "article"
+      }
+    ]
+  },
+  "UyIwiIiKaa6LTQaqzbCam": {
+    "title": "Management",
+    "description": "",
+    "links": []
+  },
+  "hRug9yJKYacB9X_2cUalR": {
+    "title": "PMI",
+    "description": "The PMI certification (Project Management Institute) is an internationally recognized credential in project management. The most well-known is the PMP® (Project Management Professional), which validates the skills and knowledge of professionals to manage projects effectively by applying best practices and standards defined in the PMBOK® (Project Management Body of Knowledge) guide.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Project Managment Institute",
+        "url": "https://www.pmi.org/",
+        "type": "article"
+      }
+    ]
+  },
+  "Rq1Wi-cHjS54SYo-Btp-e": {
+    "title": "ITIL",
+    "description": "**ITIL (Information Technology Infrastructure Library)** is a set of best practices for IT service management, designed to align IT services with business needs. Its primary focus is the efficient and effective delivery of value through managing the IT service lifecycle, which includes five phases: `Strategy`, `Design`, `Transition`, `Operation`, and `Continual Service Improvement`. ITIL includes key processes such as incident management, problem management, change management, configuration management, and service level agreements (SLAs). These practices aim to optimize performance, service quality, and customer satisfaction. Adopting ITIL helps organizations improve operational efficiency, reduce risks, and maintain clear control over IT services over time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Documentation",
+        "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation",
+        "type": "article"
+      },
+      {
+        "title": "What is ITIL?",
+        "url": "https://www.youtube.com/watch?v=wgnpfMK8vDk",
+        "type": "video"
+      }
+    ]
+  },
+  "SJ5lrlvyXgtAwOx4wvT2W": {
+    "title": "Prince2",
+    "description": "",
+    "links": []
+  },
+  "7rudOREGG-TTkCosU0hNw": {
+    "title": "RUP",
+    "description": "The RUP (**Rational Unified Process**) is not a widely recognized certification like PMP or Scrum, but rather a software development framework created by Rational Software (now IBM). It follows an iterative and incremental approach to project development, based on best practices for delivering high-quality software on time and within budget.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "IBM certified solution designer RUP",
+        "url": "https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003",
+        "type": "article"
+      }
+    ]
+  },
+  "qwpsGRFgzAYstM7bJA2ZJ": {
+    "title": "LeSS",
+    "description": "**LeSS** (Large-Scale-Scrum) is an agile framework designed to scale Scrum across multiple teams working on a single product. It adheres to Scrum's principles, emphasizing simplicity and continuous improvement. LeSS encourages coordination between teams by using a single backlog and a common Product Owner. Each team is responsible for parts of the product, but they collaborate in its joint development, with frequent feedback loops to adjust project direction. Its goal is to minimize bureaucracy and maximize value delivery in an agile and efficient way.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "LeSS Framework",
+        "url": "https://less.works/less/framework",
+        "type": "article"
+      },
+      {
+        "title": "Introductio to LeSS",
+        "url": "https://www.youtube.com/watch?v=1BZf_Oa7W94",
+        "type": "video"
+      }
+    ]
+  },
+  "Bg7ru1q1j6pNB43HGxnHT": {
+    "title": "SaFE",
+    "description": "**SAFe** is an agile framework designed to scale agile practices in large and complex organizations. Unlike LeSS, SAFe is more structured and provides a formal approach to coordinating multiple teams, programs, and portfolios. It incorporates elements of `Lean`, `DevOps`, and `agile principles`, and defines additional roles, ceremonies, and artifacts to align teams' goals with the business strategy. SAFe enables **large-scale planning**, **continuous delivery**, and **improvement of organizational efficiency**, offering a comprehensive framework for agile transformation at the corporate level.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SAFe 6.0",
+        "url": "https://scaledagileframework.com/SAFE",
+        "type": "article"
+      },
+      {
+        "title": "SAFe explained in five minutes",
+        "url": "https://www.youtube.com/watch?v=aW2m-BtCJyE&t=2s",
+        "type": "video"
+      }
+    ]
+  },
+  "O7H6dt3Z7EKohxfJzwbPM": {
+    "title": "Kanban",
+    "description": "`Kanban` is a popular agile methodology that focuses on visualizing workflow and continuously improving that flow. It's a more flexible approach than Scrum, without the rigid framework.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Kanban? A Simple Guide to Improve Efficiency.",
+        "url": "https://businessmap.io/kanban-resources/getting-started/what-is-kanban",
+        "type": "article"
+      },
+      {
+        "title": "Kanban Methodology: The Simplest Agile Framework ",
+        "url": "https://kissflow.com/project/agile/kanban-methodology/",
+        "type": "article"
+      },
+      {
+        "title": "What is Kanban Methodology? The Ultimate Guide",
+        "url": "https://www.wrike.com/kanban-guide/what-is-kanban/",
+        "type": "article"
+      }
+    ]
+  },
+  "PKqwKvoffm0unwcFwpojk": {
+    "title": "Scrum",
+    "description": "`Scrum` is a popular agile framework used for project management, particularly in software development. It emphasizes iterative development, collaboration, and flexibility to deliver high-quality products.\n\nKey elements of Scrum:\n\n*   **Sprints**: Time-boxed iterations (usually 2-4 weeks) where teams work on specific goals.\n*   **Product Backlog**: Prioritized list of features or requirements for the product.\n*   **Sprint Backlog**: Selected items from the Product Backlog to be completed during a Sprint.\n*   **Daily Scrum (Stand-up)**: Brief daily meeting where team members share progress, challenges, and plans for the day.\n*   **Sprint Review**: Meeting at the end of a Sprint to demonstrate completed work and gather feedback.\n*   **Sprint Retrospective**: Meeting to reflect on the Sprint, identify improvements, and adjust processes for the next Sprint.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is scrum and how to get started",
+        "url": "https://www.atlassian.com/agile/scrum.",
+        "type": "article"
+      },
+      {
+        "title": "Scrum Methodology: The Complete Guide & Best Practices",
+        "url": "https://thedigitalprojectmanager.com/projects/pm-methodology/scrum-methodology-complete-guide/",
+        "type": "article"
+      },
+      {
+        "title": "Essential Topics for the Scrum Product Owner",
+        "url": "https://www.scrum.org/resources/blog/essential-topics-scrum-product-owner",
+        "type": "article"
+      },
+      {
+        "title": "Scrum • Topics - Thriving Technologist",
+        "url": "https://thrivingtechnologist.com/topics/scrum/",
+        "type": "article"
+      }
+    ]
+  },
+  "7fL9lSu4BD1wRjnZy9tM9": {
+    "title": "XP",
+    "description": "`Extreme Programming (XP)` is a popular agile software development framework that emphasizes speed, simplicity, and quality. It was developed by Kent Beck in the late 1990s and is based on five values:\n\n*   **Communication**: Open and honest communication among team members and stakeholders is essential.\n*   **Simplicity**: The simplest solution that works is always preferred.\n*   **Feedback**: Continuous feedback from customers and team members is used to improve the product.\n*   **Courage**: Team members must be willing to make changes and take risks.\n*   **Respect**: Everyone on the team is treated with respect.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Extreme Programming (XP)?",
+        "url": "https://www.agilealliance.org/glossary/xp/",
+        "type": "article"
+      },
+      {
+        "title": "It's Values, Principles, And Practices",
+        "url": "https://www.nimblework.com/agile/extreme-programming-xp/",
+        "type": "article"
+      },
+      {
+        "title": "Extreme Programming (XP)",
+        "url": "https://scrum-master.org/en/extreme-programming-xp-a-beginners-guide-to-the-agile-method/",
+        "type": "article"
+      }
+    ]
+  },
+  "cBWJ6Duw99tSKr7U6OW3A": {
+    "title": "Networks",
+    "description": "",
+    "links": []
+  },
+  "Mt5W1IvuHevNXVRlh7z26": {
+    "title": "OSI",
+    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cloudflare - What is the OSI model",
+        "url": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/",
+        "type": "article"
+      }
+    ]
+  },
+  "UCCT7-E_QUKPg3jAsjobx": {
+    "title": "TCP/IP Model",
+    "description": "The `TCP/IP model` defines how devices should transmit data between them and enables communication over networks and large distances. The model represents how data is exchanged and organized over networks. It is split into four layers, which set the standards for data exchange and represent how data is handled and packaged when being delivered between applications, devices, and servers.\n\n*   **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.\n    \n*   **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination.\n    \n*   **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination.\n    \n*   **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other.\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Transmission Control Protocol TCP/IP? - Fortinet",
+        "url": "https://www.fortinet.com/resources/cyberglossary/tcp-ip#:~:text=The%20TCP%2FIP%20model%20defines,exchanged%20and%20organized%20over%20networks.",
+        "type": "article"
+      },
+      {
+        "title": "TCP/IP Model",
+        "url": "https://www.geeksforgeeks.org/tcp-ip-model/",
+        "type": "article"
+      },
+      {
+        "title": "What is TCP/IP and How Does it Work?",
+        "url": "https://www.techtarget.com/searchnetworking/definition/TCP-IP",
+        "type": "article"
+      }
+    ]
+  },
+  "Nq6o6Ty8VyNRsvg-UWp7D": {
+    "title": "HTTP, HTTPS",
+    "description": "HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. It defines how the content is requested and transmitted across the internet.\n\nHTTPS (**H**ypertext **T**ransfer **P**rotocol **S**ecure) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website.\n\n`HTTPS = HTTP + SSL/TLS`\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Everything you need to know about HTTP",
+        "url": "https://cs.fyi/guide/http-in-depth",
+        "type": "article"
+      },
+      {
+        "title": "What is HTTP?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/",
+        "type": "article"
+      },
+      {
+        "title": "An overview of HTTP",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
+        "type": "article"
+      },
+      {
+        "title": "HTTP/3 From A To Z: Core Concepts",
+        "url": "https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/",
+        "type": "article"
+      },
+      {
+        "title": "What is HTTPS?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/",
+        "type": "article"
+      },
+      {
+        "title": "Why HTTPS Matters",
+        "url": "https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https",
+        "type": "article"
+      },
+      {
+        "title": "Enabling HTTPS on Your Servers",
+        "url": "https://developers.google.com/web/fundamentals/security/encrypt-in-transit/enable-https",
+        "type": "article"
+      },
+      {
+        "title": "HTTP Crash Course & Exploration",
+        "url": "https://www.youtube.com/watch?v=iYM2zFP3Zn0",
+        "type": "video"
+      }
+    ]
+  },
+  "6_EOmU5GYGDGzmNoLY8cB": {
+    "title": "Proxies",
+    "description": "In computer networking, a proxy server is a server application that acts as an intermediary between a client requesting a resource and the server providing that resource.",
+    "links": []
+  },
+  "Hqk_GGsFi14SI5fgPSoGV": {
+    "title": "Firewalls",
+    "description": "A Firewall is a network security device that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies.",
+    "links": []
+  },
+  "EdJhuNhMSWjeVxGW-RZtL": {
+    "title": "Operations Knowledge",
+    "description": "",
+    "links": []
+  },
+  "igf9yp1lRdAlN5gyQ8HHC": {
+    "title": "Infrastructure as Code",
+    "description": "Sometimes referred to as IaC, this section refers to the techniques and tools used to define infrastructure, typically in a markup language like YAML or JSON. Infrastructure as code allows DevOps Engineers to use the same workflows used by software developers to version, roll back, and otherwise manage changes.\n\nThe term Infrastructure as Code encompasses everything from bootstrapping to configuration to orchestration, and it is considered a best practice in the industry to manage all infrastructure as code. This technique precipitated the explosion in system complexity seen in modern DevOps organizations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code",
+        "url": "https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/",
+        "type": "article"
+      },
+      {
+        "title": "What is infrastructure as code",
+        "url": "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Infrastructure",
+        "url": "https://app.daily.dev/tags/infrastructure?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is Infrastructure as Code?",
+        "url": "https://www.youtube.com/watch?v=zWw2wuiKd5o",
+        "type": "video"
+      },
+      {
+        "title": "What is Infrastructure as Code? Difference of Infrastructure as Code Tools",
+        "url": "https://www.youtube.com/watch?v=POPP2WTJ8es",
+        "type": "video"
+      },
+      {
+        "title": "Video introduction to infrastructure as code",
+        "url": "https://www.youtube.com/watch?v=zWw2wuiKd5o",
+        "type": "video"
+      }
+    ]
+  },
+  "C0rKd5Rr27Z1_GleoEZxF": {
+    "title": "Cloud Providers",
+    "description": "",
+    "links": []
+  },
+  "WoXoVwkSqXTP5U8HtyJOL": {
+    "title": "Serverless Concepts",
+    "description": "Serverless is a cloud-native development model that allows developers to build and run applications without having to manage servers.\n\nThere are still servers in serverless, but they are abstracted away from app development. A cloud provider handles the routine work of provisioning, maintaining, and scaling the server infrastructure. Developers can simply package their code in containers for deployment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is serverless?",
+        "url": "https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless",
+        "type": "article"
+      },
+      {
+        "title": "What is serverless computing?",
+        "url": "https://www.cloudflare.com/learning/serverless/what-is-serverless/",
+        "type": "article"
+      },
+      {
+        "title": "Serverless on AWS",
+        "url": "https://aws.amazon.com/serverless/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Serverless",
+        "url": "https://app.daily.dev/tags/serverless?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "XnvlRrOhdoMsiGwGEhBro": {
+    "title": "Linux / Unix",
+    "description": "Knowledge of UNIX is a must for almost all kind of development as most of the codes that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Coursera - Unix Courses",
+        "url": "https://www.coursera.org/courses?query=unix",
+        "type": "course"
+      },
+      {
+        "title": "Linux Basics ",
+        "url": "https://dev.to/rudrakshi99/linux-basics-2onj",
+        "type": "article"
+      },
+      {
+        "title": "Unix / Linux Tutorial",
+        "url": "https://www.tutorialspoint.com/unix/index.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Linux",
+        "url": "https://app.daily.dev/tags/linux?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Linux Operating System - Crash Course",
+        "url": "https://www.youtube.com/watch?v=ROjZy1WbCIA",
+        "type": "video"
+      }
+    ]
+  },
+  "OErbfM-H3laFm47GCHNPI": {
+    "title": "Service Mesh",
+    "description": "A Service Mesh is a dedicated infrastructure layer for handling service-to-service communication. It’s responsible for the reliable delivery of requests through the complex topology of services that comprise a modern, cloud native application. In layman's terms, it's a tool which helps you to control how different services communicate with each other.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Red Hat - What is a Service Mesh?",
+        "url": "https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Service Mesh - Blog Post",
+        "url": "https://platform9.com/blog/kubernetes-service-mesh-a-comparison-of-istio-linkerd-and-consul/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Service Mesh",
+        "url": "https://app.daily.dev/tags/service-mesh?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Service Mesh explained in 15 Minutes",
+        "url": "https://youtu.be/16fgzklcF7Y",
+        "type": "video"
+      }
+    ]
+  },
+  "isavRe4ANVn77ZX6gNSLH": {
+    "title": "CI / CD",
+    "description": "CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA \"integration hell\").\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is CI/CD?",
+        "url": "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
+        "type": "article"
+      },
+      {
+        "title": "What is CI/CD? Continuous integration and continuous delivery explained",
+        "url": "https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about CI/CD",
+        "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "l3oeo65FyV5HHvw5n_1wa": {
+    "title": "Containers",
+    "description": "Containers are a construct in which [cgroups](https://en.wikipedia.org/wiki/Cgroups), [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), and [chroot](https://en.wikipedia.org/wiki/Chroot) are used to fully encapsulate and isolate a process. This encapsulated process, called a container image, shares the kernel of the host with other containers, allowing containers to be significantly smaller and faster than virtual machines.\n\nThese images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What are Containers?",
+        "url": "https://cloud.google.com/learn/what-are-containers",
+        "type": "article"
+      },
+      {
+        "title": "What is a Container?",
+        "url": "https://www.docker.com/resources/what-container/",
+        "type": "article"
+      },
+      {
+        "title": "Articles about Containers - The New Stack",
+        "url": "https://thenewstack.io/category/containers/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Containers",
+        "url": "https://app.daily.dev/tags/containers?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What are Containers?",
+        "url": "https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz",
+        "type": "video"
+      }
+    ]
+  },
+  "CxceVdaNCyKDhs0huDtcL": {
+    "title": "Cloud Design Patterns",
+    "description": "These design patterns are useful for building reliable, scalable, secure applications in the cloud.\n\nThe link below has cloud design patterns where each pattern describes the problem that the pattern addresses, considerations for applying the pattern, and an example based on Microsoft Azure. Most patterns include code samples or snippets that show how to implement the pattern on Azure. However, most patterns are relevant to any distributed system, whether hosted on Azure or other cloud platforms.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cloud Design Patterns",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "8yALyPVUZPtd7LX3GrO1e": {
+    "title": "Enterprise Software",
+    "description": "",
+    "links": []
+  },
+  "gdtI0H_PzzTj_aFQn_NeA": {
+    "title": "MS Dynamics",
+    "description": "Microsoft Dynamics 365 is a combination of both Enterprise Resource Planning (ERP) software and Customer Relationship Management (CRM) software.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Everything you ever wanted to know about Microsoft Dynamics",
+        "url": "https://www.nigelfrank.com/insights/everything-you-ever-wanted-to-know-about-dynamics-crm",
+        "type": "article"
+      },
+      {
+        "title": "What is Microsoft Dynamics?",
+        "url": "https://www.youtube.com/watch?v=ogfclHWgqgE",
+        "type": "video"
+      }
+    ]
+  },
+  "TxWAznp1tUtZ1MvThf9M1": {
+    "title": "SAP ERP, HANA, Business Objects",
+    "description": "",
+    "links": []
+  },
+  "YfYviOXqGVp9C6DuhqBrn": {
+    "title": "EMC DMS",
+    "description": "",
+    "links": []
+  },
+  "5EVecZmvor09LjD7WR_Y9": {
+    "title": "IBM BPM",
+    "description": "IBM BPM is a comprehensive business process management platform. It provides a robust set of tools to author, test, and deploy business processes, as well as full visibility and insight to managing those business processes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "BPM overview",
+        "url": "https://www.ibm.com/docs/en/bpm/8.5.5?topic=manager-business-process-overview",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about IBM",
+        "url": "https://app.daily.dev/tags/ibm?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "BPM Demo",
+        "url": "https://www.youtube.com/watch?v=6yn4nCWMNLI",
+        "type": "video"
+      }
+    ]
+  },
+  "mOXyzdNn8W-9R99ffcnor": {
+    "title": "Salesforce",
+    "description": "Salesforce is a cloud platform helping companies to manage relationships with their customers\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Salesforce and what is it used for?",
+        "url": "https://ascendix.com/blog/what-is-salesforce-what-salesforce-is-used-for/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Salesforce",
+        "url": "https://app.daily.dev/tags/salesforce?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is Salesforce?",
+        "url": "https://www.youtube.com/watch?v=xx2sK-QiBjw",
+        "type": "video"
+      }
+    ]
+  },
+  "b6lCGw82qKpUmsxe1r1f5": {
+    "title": "Microservices",
+    "description": "Microservice architecture is a pattern in which highly cohesive, loosely coupled services are separately developed, maintained, and deployed. Each component handles an individual function, and when combined, the application handles an overall business function.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Pattern: Microservice Architecture",
+        "url": "https://microservices.io/patterns/microservices.html",
+        "type": "article"
+      },
+      {
+        "title": "What is Microservices?",
+        "url": "https://smartbear.com/solutions/microservices/",
+        "type": "article"
+      },
+      {
+        "title": "Microservices 101",
+        "url": "https://thenewstack.io/microservices-101/",
+        "type": "article"
+      },
+      {
+        "title": "Primer: Microservices Explained",
+        "url": "https://thenewstack.io/primer-microservices-explained/",
+        "type": "article"
+      },
+      {
+        "title": "Articles about Microservices",
+        "url": "https://thenewstack.io/category/microservices/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Microservices",
+        "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  }
+}

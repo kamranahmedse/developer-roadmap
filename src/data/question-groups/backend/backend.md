@@ -16,6 +16,8 @@ seo:
     - 'backend interview questions'
     - 'backend interview'
     - 'backend test'
+relatedTitle: "Other Guides"
+relatedGuidesId: "backend"
 sitemap:
   priority: 1
   changefreq: 'monthly'

@@ -4,5 +4,5 @@ The Vue Testing Library is a very lightweight solution for testing Vue component
 
 Visit the following resources to learn more:
 
-- [@article@Getting Started with Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro/)
+- [@official@Getting Started with Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro/)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

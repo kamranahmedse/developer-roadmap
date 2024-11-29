@@ -4,5 +4,5 @@ Simple JSON (JavaScript Object Notation) APIs are a popular form of API or "Appl
 
 Learn more from the following resources:
 
-- [@video@JSON API: Explained in 4 minutes (+ EXAMPLES)](https://www.youtube.com/watch?v=N-4prIh7t38)
-- [@opensource@A specification for building JSON APIs](https://github.com/json-api/json-api)
+- [@video@JSON API: Explained in 4 Minutes](https://www.youtube.com/watch?v=N-4prIh7t38)
+- [@opensource@Specification for Building JSON APIs](https://github.com/json-api/json-api)

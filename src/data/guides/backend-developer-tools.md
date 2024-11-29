@@ -7,6 +7,8 @@ seo:
   title: '25 Essential Backend Development Tools for @currentYear@'
   description: 'Elevate your coding with backend developer tools that bring efficiency, scalability, and innovation to your projects. Improve your development process today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-development-tools-ou6el.jpg'
+relatedTitle: "Other Guides"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-03-19

@@ -57,7 +57,7 @@ export class Renderer {
     }
 
     // Clone it so we can use it later
-    this.loaderHTML = this.loaderEl!.innerHTML;
+    this.loaderHTML = this.loaderEl?.innerHTML!;
     const dataset = this.containerEl.dataset;
 
     this.resourceType = dataset.resourceType!;
@@ -66,11 +66,7 @@ export class Renderer {
     return true;
   }
 
-  /**
-   * @param { string } jsonUrl
-   * @returns {Promise<SVGElement>}
-   */
-  jsonToSvg(jsonUrl: string) {
+  jsonToSvg(jsonUrl: string): Promise<void> | null {
     if (!jsonUrl) {
       console.error('jsonUrl not defined in frontmatter');
       return null;

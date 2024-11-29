@@ -18,4 +18,4 @@ In this example, the Person interface defines four properties: `firstName`, `las
 
 Learn more from the following links:
 
-- [@article@Extending Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- [@official@Extending Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is REST?](https://restfulapi.net/)
 - [@article@What is a RESTul API?](https://aws.amazon.com/what-is/restful-api/)
+- [@video@Understanding RESTful APIs](https://www.youtube.com/watch?v=lsMQRaeKNDk)

@@ -48,6 +48,7 @@ function handleGuest() {
     '/team/members',
     '/team/member',
     '/team/settings',
+    '/dashboard',
   ];
 
   showHideAuthElements('hide');

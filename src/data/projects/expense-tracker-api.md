@@ -2,7 +2,7 @@
 title: 'Expense Tracker API'
 description: 'Build an API for an expense tracker application.'
 isNew: false
-sort: 9
+sort: 1000
 difficulty: 'beginner'
 nature: 'API'
 skills:
@@ -32,7 +32,7 @@ Build an API for an expense tracker application. This API should allow users to 
 Here are the features that you should implement in your Expense Tracker API:
 
 - Sign up as a new user.
-- Generate and validate JWT tokens for handling authentication and user session.
+- Generate and validate JWTs for handling authentication and user session.
 - List and filter your past expenses. You can add the following filters:
   - Past week
   - Past month

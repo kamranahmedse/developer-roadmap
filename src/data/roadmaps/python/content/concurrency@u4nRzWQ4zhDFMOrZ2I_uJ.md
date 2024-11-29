@@ -4,4 +4,5 @@ Concurrency in Python allows multiple tasks to be executed simultaneously using 
 
 Learn more about concurrency using the following resources:
 
-- [@official@Python Concurrency](https://realpython.com/python-concurrency/)
+- [@official@Concurrent Execution](https://docs.python.org/3/library/concurrency.html)
+- [@article@Python Concurrency](https://realpython.com/python-concurrency/)

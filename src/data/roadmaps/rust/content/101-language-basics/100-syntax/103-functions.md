@@ -1,4 +1,4 @@
- Functions and Method Syntax
+# Functions and Method Syntax
 
 In Rust, functions are declared using the `fn` keyword. Each function can take a set of input variables with their specified types, and may return data of a specified type. The body of a function is contained within curly braces `{}`. Unlike other languages, in Rust, you don't need to end the last statement in a block with a semicolon; omitting the last semicolon of a block in this way turns the last statement into an expression, and the result of this expression becomes the implicit return value of the block. In other words, if we want to return a value, we simply write the expression we want to return.
 

@@ -34,4 +34,4 @@ type T7 = Parameters<Function>;
 
 Learn more from the following links:
 
-- [@article@Parameters<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#parameterstype)
+- [@official@Parameters<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#parameterstype)

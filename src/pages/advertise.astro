@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getRepositoryRank } from '../lib/github.ts';
+import { AdvertiseForm } from '../components/AdvertiseForm';
+---
+
+<BaseLayout title='Advertise with roadmap.sh' permalink={'/advertise'}>
+  <div class='bg-white py-8 sm:py-20'>
+    <div class='container'>
+      <div class='mb-2 sm:mb-8 flex items-center'>
+        <div>
+          <h1 class='mb-0 sm:mb-3 text-2xl font-bold sm:text-4xl'>
+            Advertise with roadmap.sh
+          </h1>
+          <p class='text-lg sm:text-xl text-gray-500'>
+            The best way to reach developers
+          </p>
+        </div>
+      </div>
+
+      <p class='mb-5'>
+        With hundreds of thousands of monthly visitors and over 1 million
+        registered users, roadmap.sh is the resource developers choose to skill
+        up and advance their careers. This community effort creates guides and
+        educational content where developers can choose their path to success.
+      </p>
+
+      <p class='mb-4 sm:mb-9'>
+        <span class='font-bold'>roadmap.sh</span> also provides opportunities to
+        advertise to developers where your message stands out on our platform to
+        generate valuable results. Do more with your budget and achieve your marketing
+        goals by targeting your ideal segments of our developer audience. Don’t wait
+        to get your message in front of aspirational developers.
+      </p>
+
+      <AdvertiseForm client:load />
+    </div>
+  </div>
+  <div slot="changelog-banner" />
+</BaseLayout>

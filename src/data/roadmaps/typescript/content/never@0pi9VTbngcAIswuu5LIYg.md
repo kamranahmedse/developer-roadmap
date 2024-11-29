@@ -25,4 +25,4 @@ function infiniteLoop(): never {
 
 Learn more from the following links:
 
-- [@article@Never](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)
+- [@official@Never Type](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)

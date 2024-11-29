@@ -8080,7 +8080,7 @@
           "x": "1010",
           "y": "2332",
           "properties": {
-            "controlName": "100-gui-dev:druid"
+            "controlName": "100-gui-dev:tauri"
           },
           "children": {
             "controls": {
@@ -8109,7 +8109,7 @@
                   "y": "13",
                   "properties": {
                     "size": "17",
-                    "text": "druid"
+                    "text": "tauri"
                   }
                 }
               ]

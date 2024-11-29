@@ -4,4 +4,4 @@ TanStack Query is a data fetching and caching library for Vue.js and React. It i
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://tanstack.com/query)
+- [@official@Tanstack Query Website](https://tanstack.com/query)

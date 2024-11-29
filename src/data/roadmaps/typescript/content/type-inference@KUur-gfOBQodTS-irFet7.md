@@ -12,4 +12,4 @@ In this example, the TypeScript compiler automatically infers that the type of t
 
 Learn more from the following links:
 
-- [@article@Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content)
+- [@official@Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content)

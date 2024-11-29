@@ -15,5 +15,5 @@ In this example, the Extends conditional type takes two types T and U and return
 
 Learn more from the following links:
 
-- [@article@Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#handbook-content)
+- [@official@Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#handbook-content)
 - [@video@Conditional Types - Advanced TypeScript](https://www.youtube.com/watch?v=QFWrbNehKk0)

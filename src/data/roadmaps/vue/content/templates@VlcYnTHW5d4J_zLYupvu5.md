@@ -4,4 +4,4 @@ Vue uses an HTML-based template syntax that allows you to declaratively bind the
 
 Visit the following resources to learn more:
 
-- [@article@Template Syntax](https://vuejs.org/guide/essentials/template-syntax.html)
+- [@official@Template Syntax](https://vuejs.org/guide/essentials/template-syntax.html)

@@ -4,4 +4,5 @@ Application state management is the process of maintaining knowledge of an appli
 
 Visit the following resources to learn more:
 
+- [@official@State Management](https://vuejs.org/guide/scaling-up/state-management.html)
 - [@article@What is State Management?](https://www.techtarget.com/searchapparchitecture/definition/state-management)

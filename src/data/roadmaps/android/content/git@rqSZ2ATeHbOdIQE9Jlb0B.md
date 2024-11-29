@@ -1,3 +1,9 @@
 # Git
 
-`Git` is a highly efficient and flexible distributed version control system that was created by Linus Torvalds, the creator of Linux. It allows multiple developers to work on a project concurrently, providing tools for non-linear development and tracking changes in any set of files. Git has a local repository with a complete history and version-tracking capabilities, allowing offline operations, unlike SVN. It ensures data integrity and provides strong support for non-linear development with features such as branching and merging. Yet, Git has a high learning curve and can be complex for beginners to understand the command line interface. Furthermore, Git also allows you to create `tags` to reference certain points in your history for milestone or version releases.
+`Git` is a highly efficient and flexible distributed version control system that was created by **Linus Torvalds**, the creator of Linux. It allows multiple developers to work on a project concurrently, providing tools for non-linear development and tracking changes in any set of files. Git has a local repository with a complete history and version-tracking capabilities, allowing offline operations, unlike SVN. It ensures data integrity and provides strong support for non-linear development with features such as branching and merging.
+
+Visit the following resources to learn more:
+
+- [@roadmap@Git and Github Roadmap](https://roadmap.sh/git-github)
+- [@official@Git](https://git-scm.com/)
+- [@official@Git Documentation](https://git-scm.com/docs)

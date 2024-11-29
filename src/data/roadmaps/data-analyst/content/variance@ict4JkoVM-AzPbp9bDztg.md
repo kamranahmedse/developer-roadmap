@@ -4,5 +4,5 @@ Data analysts heavily rely on statistical concepts to analyze and interpret data
 
 Learn more from the following resources:
 
-- [@article@](https://www.investopedia.com/terms/v/variance.asp)
-- [@article@How to calculate variance](https://www.scribbr.co.uk/stats/variance-meaning/
+- [@article@What is variance?](https://www.investopedia.com/terms/v/variance.asp)
+- [@article@How to calculate variance](https://www.scribbr.co.uk/stats/variance-meaning/)

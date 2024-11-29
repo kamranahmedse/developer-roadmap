@@ -28,6 +28,7 @@ import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
 import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
 import { cn } from '../../lib/classname';
 import { RoadmapIcon } from '../ReactIcons/RoadmapIcon.tsx';
+import { ContentConfirmationModal } from '../CreateTeam/ContentConfirmationModal.tsx';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -47,6 +48,7 @@ export function TeamRoadmaps() {
   const [selectedResource, setSelectedResource] = useState<
     TeamResourceConfig[0] | null
   >(null);
+  const [confirmationContentId, setConfirmationContentId] = useState('');
 
   async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -139,7 +141,7 @@ export function TeamRoadmaps() {
     setTeamResources(response);
   }
 
-  async function onAdd(roadmapId: string) {
+  async function onAdd(roadmapId: string, shouldCopyContent = false) {
     if (!teamId) {
       return;
     }
@@ -158,6 +160,7 @@ export function TeamRoadmaps() {
         resourceType: 'roadmap',
         removed: [],
         renderer: roadmap?.renderer || 'balsamiq',
+        shouldCopyContent,
       },
     );
 
@@ -230,18 +233,43 @@ export function TeamRoadmaps() {
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
-      teamResourceConfig={teamResources}
-      allRoadmaps={filteredAllRoadmaps}
+      teamResourceConfig={teamResources.map((c) => c.resourceId)}
+      allRoadmaps={filteredAllRoadmaps.filter((r) => r.renderer === 'editor')}
       teamId={teamId}
       onRoadmapAdd={(roadmapId: string) => {
-        onAdd(roadmapId).finally(() => {
-          pageProgressMessage.set('');
-        });
+        const isEditorRoadmap = allRoadmaps.find(
+          (r) => r.id === roadmapId && r.renderer === 'editor',
+        );
+
+        if (!isEditorRoadmap) {
+          onAdd(roadmapId).finally(() => {
+            pageProgressMessage.set('');
+          });
+
+          return;
+        }
+
+        setIsAddingRoadmap(false);
+        setConfirmationContentId(roadmapId);
       }}
       onRoadmapRemove={(roadmapId: string) => {
         if (confirm('Are you sure you want to remove this roadmap?')) {
           onRemove(roadmapId).finally(() => {});
         }
+      }}
+    />
+  );
+
+  const confirmationContentIdModal = confirmationContentId && (
+    <ContentConfirmationModal
+      onClose={() => {
+        setConfirmationContentId('');
+      }}
+      onClick={(shouldCopy) => {
+        onAdd(confirmationContentId, shouldCopy).finally(() => {
+          pageProgressMessage.set('');
+          setConfirmationContentId('');
+        });
       }}
     />
   );
@@ -279,10 +307,11 @@ export function TeamRoadmaps() {
         {pickRoadmapOptionModal}
         {addRoadmapModal}
         {createRoadmapModal}
+        {confirmationContentIdModal}
 
-        <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
+        <RoadmapIcon className="mb-3 h-14 w-14 opacity-10" />
 
-        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
+        <h3 className="mb-1 text-xl font-bold text-gray-900">No roadmaps</h3>
         <p className="text-base text-gray-500">
           {canManageCurrentTeam
             ? 'Add a roadmap to start tracking your team'
@@ -291,7 +320,7 @@ export function TeamRoadmaps() {
 
         {canManageCurrentTeam && (
           <button
-            className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
+            className="mt-3 rounded-md bg-black px-3 py-1.5 font-medium text-white hover:bg-gray-900 text-sm"
             onClick={() => setIsPickingOptions(true)}
           >
             Add roadmap
@@ -348,6 +377,7 @@ export function TeamRoadmaps() {
       {createRoadmapModal}
       {customizeRoadmapModal}
       {shareSettingsModal}
+      {confirmationContentIdModal}
 
       {canManageCurrentTeam && placeholderRoadmaps.length > 0 && (
         <div className="mb-5">

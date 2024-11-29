@@ -9,6 +9,12 @@ import { TeamActivityItem } from './TeamActivityItem';
 import { TeamActivityTopicsModal } from './TeamActivityTopicsModal';
 import { TeamEmptyStream } from './TeamEmptyStream';
 import { Pagination } from '../Pagination/Pagination';
+import {
+  ChartNoAxesGantt,
+  CircleDashed,
+  Flag,
+  LoaderCircle,
+} from 'lucide-react';
 
 export type TeamStreamActivity = {
   _id?: string;
@@ -49,8 +55,14 @@ type GetTeamActivityResponse = {
   perPage: number;
 };
 
-export function TeamActivityPage() {
-  const { t: teamId } = getUrlParams();
+type TeamActivityPageProps = {
+  teamId?: string;
+  canManageCurrentTeam?: boolean;
+};
+
+export function TeamActivityPage(props: TeamActivityPageProps) {
+  const { teamId: defaultTeamId, canManageCurrentTeam = false } = props;
+  const { t: teamId = defaultTeamId } = getUrlParams();
 
   const toast = useToast();
 
@@ -92,6 +104,18 @@ export function TeamActivityPage() {
       return;
     }
 
+    setIsLoading(true);
+    setTeamActivities({
+      data: {
+        users: [],
+        activities: [],
+      },
+      totalCount: 0,
+      totalPages: 0,
+      currPage: 1,
+      perPage: 21,
+    });
+    setCurrPage(1);
     getTeamProgress().then(() => {
       pageProgressMessage.set('');
       setIsLoading(false);
@@ -165,13 +189,44 @@ export function TeamActivityPage() {
     return enrichedUsers;
   }, [users, activities]);
 
-  if (!teamId) {
-    window.location.href = '/';
-    return;
-  }
+  const sectionHeading = (
+    <h3 className="mb-3 flex h-[20px] w-full items-center justify-between text-xs uppercase text-gray-400">
+      Team Activity
+      <span className="mx-3 h-[1px] flex-grow bg-gray-200" />
+      {canManageCurrentTeam && (
+        <a
+          href={`/team/progress?t=${teamId}`}
+          className="flex flex-row items-center rounded-full bg-gray-400 px-2.5 py-0.5 text-xs text-white transition-colors hover:bg-black"
+        >
+          <ChartNoAxesGantt className="mr-1.5 size-3" strokeWidth={2.5} />
+          Progresses
+        </a>
+      )}
+    </h3>
+  );
 
   if (isLoading) {
-    return null;
+    return (
+      <>
+        {sectionHeading}
+        <div className="flex flex-col gap-2">
+          {Array.from({ length: 4 }).map((_, index) => (
+            <div
+              key={index}
+              className="h-[70px] w-full animate-pulse rounded-lg border bg-gray-100"
+            />
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  if (!teamId) {
+    if (typeof window !== 'undefined') {
+      window.location.href = '/';
+    } else {
+      return null;
+    }
   }
 
   return (
@@ -185,9 +240,7 @@ export function TeamActivityPage() {
 
       {usersWithActivities.length > 0 ? (
         <>
-          <h3 className="mb-4 flex w-full items-center justify-between text-xs uppercase text-gray-400">
-            Team Activity
-          </h3>
+          {sectionHeading}
           <ul className="mb-4 mt-2 flex flex-col gap-3">
             {usersWithActivities.map((user, index) => {
               return (
@@ -216,7 +269,12 @@ export function TeamActivityPage() {
           />
         </>
       ) : (
-        <TeamEmptyStream teamId={teamId} />
+        <>
+          {sectionHeading}
+          <div className="rounded-lg border bg-white p-4">
+            <TeamEmptyStream teamId={teamId} />
+          </div>
+        </>
       )}
     </>
   );

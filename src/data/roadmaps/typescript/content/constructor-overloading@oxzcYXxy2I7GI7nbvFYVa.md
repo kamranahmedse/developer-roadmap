@@ -13,8 +13,8 @@ class Point {
 }
 ```
 
-Note that, similar to function overloading, we only have one implementation of the consructor and it's the only the signature that is overloaded.
+Note that, similar to function overloading, we only have one implementation of the constructor and it's the only the signature that is overloaded.
 
 Learn more from the following resources:
 
-- [@article@Constructors - TypeScript](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)
+- [@official@Constructors - TypeScript](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)

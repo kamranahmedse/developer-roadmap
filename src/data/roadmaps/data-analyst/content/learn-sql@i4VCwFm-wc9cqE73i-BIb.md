@@ -1,3 +1,0 @@
-# SQL for Data Analysts
-
-Structured Query Language, or SQL, is an essential tool for every data analyst. As a domain-specific language used in programming and designed for managing data held in relational database management systems, SQL allows analysts to manipulate and analyse large volumes of data efficiently. Understanding SQL allows a data analyst to extract insights from data stored in databases, conduct complex queries, and create elaborate data reports. SQL is recognized for its effectiveness in data manipulation and its compatibility with other coding languages, making it a fundamental competency in the data analytics field.

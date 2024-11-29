@@ -5,5 +5,5 @@ Swagger, also known as OpenAPI (not to be confused with OpenAI), is a set of too
 Learn more from the following resources:
 
 - [@official@Swagger Website](https://swagger.io/)
-- [@article@What is Swagger?](https://blog.hubspot.com/website/what-is-swagger)
 - [@official@OpenAPI Inititive](https://www.openapis.org/)
+- [@article@What is Swagger?](https://blog.hubspot.com/website/what-is-swagger)

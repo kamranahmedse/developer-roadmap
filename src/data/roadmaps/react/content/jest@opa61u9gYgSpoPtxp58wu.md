@@ -4,5 +4,6 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It
 
 Visit the following resources to learn more:
 
-- [@article@Jest Website](https://jestjs.io/)
+- [@official@Jest Website](https://jestjs.io/)
 - [@feed@Explore top posts about Jest](https://app.daily.dev/tags/jest?ref=roadmapsh)
+- [@article@Testing JavaScript with Jest on Vultr](https://developer.mozilla.org/en-US/blog/test-javascript-with-jest-on-vultr/)

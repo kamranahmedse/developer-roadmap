@@ -1,5 +1,8 @@
 # Caching
 
-Caching is a technique of storing frequently used data or results of complex computations in a local memory, for a certain period. So, next time, when the client requests the same information, instead of retrieving the information from the database, it will give the information from the local memory. The main advantage of caching is that it improves performance by reducing the processing burden.
+Caching is a technique used in computing to store and retrieve frequently accessed data quickly, reducing the need to fetch it from the original, slower source repeatedly. It involves keeping a copy of data in a location that's faster to access than its primary storage. Caching can occur at various levels, including browser caching, application-level caching, and database caching. It significantly improves performance by reducing latency, decreasing network traffic, and lowering the load on servers or databases. Common caching strategies include time-based expiration, least recently used (LRU) algorithms, and write-through or write-back policies. While caching enhances speed and efficiency, it also introduces challenges in maintaining data consistency and freshness. Effective cache management is crucial in balancing performance gains with the need for up-to-date information in dynamic systems.
 
-NB! Caching is a complicated topic that has obvious benefits but can lead to pitfalls like stale data, cache invalidation, distributed caching etc
+Visit the following resources to learn more:
+
+- [@article@What is Caching - AWS](https://aws.amazon.com/caching/)
+- [@article@Caching - Cloudflare](https://www.cloudflare.com/learning/cdn/what-is-caching/)

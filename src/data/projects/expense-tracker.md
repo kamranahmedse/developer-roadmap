@@ -2,7 +2,7 @@
 title: 'Expense Tracker'
 description: 'Build a simple expense tracker to manage your finances.'
 isNew: false
-sort: 3
+sort: 300
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -23,6 +23,7 @@ roadmapIds:
   - 'java'
   - 'golang'
   - 'spring-boot'
+  - 'cpp'
 ---
 
 Build a simple expense tracker application to manage your finances. The application should allow users to add, delete, and view their expenses. The application should also provide a summary of the expenses.
@@ -61,7 +62,7 @@ $ expense-tracker list
 $ expense-tracker summary
 # Total expenses: $30
 
-$ expense-tracker delete --id 1
+$ expense-tracker delete --id 2
 # Expense deleted successfully
 
 $ expense-tracker summary

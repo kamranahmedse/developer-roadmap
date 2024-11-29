@@ -7,6 +7,8 @@ description: 'Test, rate and improve your Frontend knowledge with these question
 authorId: 'fernando'
 isNew: false
 date: 2024-05-24
+relatedTitle: "Other Guides"
+relatedGuidesId: 'frontend'
 seo:
   title: 'Top 30 Popular Front End Developer Interview Questions'
   description: 'Nail your frontend developer interview with these 30 popularly asked questions and answers. Test your knowledge with our quiz cards!'
@@ -142,6 +144,8 @@ questions:
       - 'Advanced'
 ---
 
+![Popular frontend developer interview questions and answers.](https://assets.roadmap.sh/guest/frontend-developer-interview-questions-ezbj6.jpg)
+
 Preparing for your front end web development interview is key to achieving a successful outcome, but understanding what kind of questions or topics are going to be asked is not easy.
 
 So to help you get ready for your upcoming front end developer interview, here are 30 technical interview questions about web development with a focus on the front end, in other words, about JavaScript, HTML, and CSS.
@@ -153,8 +157,8 @@ Keep in mind that they’re grouped by difficulty into three categories: beginne
 Before jumping straight into front end interview prep, here are some key points to keep in mind:
 
 1. **Master the Fundamentals**: Before you start to solve complex problems, you need to make sure you have a solid understanding of front end development basics. This includes HTML, CSS, and JavaScript, as well as how they work together to create responsive, interactive web pages. Remember that you have the [Front End roadmap](https://roadmap.sh/frontend) available if you feel you still need to learn more about any of these topics.
-2. **Practice Coding**: You can improve your coding skills through mini-projects or by solving problems on platforms like [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/). Focus on challenges related to front end development.
-3. **Learn Modern Frameworks and Libraries**: Get to know popular frameworks and libraries such as React, Angular, or Vue.js. Understanding these tools is often crucial for modern front end roles.
+2. **Practice Coding**: You can improve your [frontend coding skills](https://roadmap.sh/frontend/developer-skills) through mini-projects or by solving problems on platforms like [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/). Focus on challenges related to front end development.
+3. **Learn Modern Frameworks and Libraries**: Get to know popular [frameworks](https://roadmap.sh/frontend/frameworks) and libraries such as React, Angular, or Vue.js. Understanding these tools is often crucial for modern front end roles.
 4. **Tackle the foundational tools of your dev workflow**: Make sure you’re comfortable with essential tools and practices such as version control (e.g., Git), testing (unit and integration testing), and build tools (e.g., Vite). These are crucial for any front end role.
 5. **Understand UI/UX Principles**: Understanding basic concepts of design and user experience can set you apart as a front end developer. Try to learn about accessibility, responsive design, and how to create intuitive interfaces.
 6. **Research the Company**: Show some interest in the company you’re interviewing with by learning about their business and products. Prepare some questions to ask during the interview to show you care about the role.

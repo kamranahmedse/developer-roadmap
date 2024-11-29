@@ -1,0 +1,47 @@
+---
+import SimplePageHeader from '../components/SimplePageHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllChangelogs } from '../lib/changelog';
+import ChangelogItem from '../components/Changelog/ChangelogItem.astro';
+import ChangelogLaunch from '../components/Changelog/ChangelogLaunch.astro';
+
+const allChangelogs = await getAllChangelogs();
+---
+
+<BaseLayout
+  title='Changelogs'
+  description='Changelogs for the updates and changes to roadmap.sh'
+  permalink='/changelog'
+  noIndex={true}
+>
+  <div class='bg-gray-100 px-4'>
+    <div class='-mx-4 border-b bg-white text-left'>
+      <div
+        class='mx-auto max-w-[500px] px-4 py-5 text-left sm:pb-10 sm:pt-12 sm:text-center'
+      >
+        <h1 class='mb-0.5 text-2xl font-semibold sm:mb-3 sm:text-4xl'>
+          Changelog
+        </h1>
+        <p class='text-balance text-sm sm:text-base'>
+          We are constantly improving and updating roadmap.sh
+        </p>
+      </div>
+    </div>
+
+    <div class='relative mx-auto max-w-[600px] pb-8 pt-8'>
+      <div
+        class='absolute inset-y-0 -left-5 hidden w-px -translate-x-[0.5px] bg-gray-300 sm:block'
+      >
+      </div>
+
+      {
+        allChangelogs.map((changelog) => (
+          <ChangelogItem changelog={changelog} />
+        ))
+      }
+
+      <ChangelogLaunch />
+    </div>
+  </div>
+  <div slot="changelog-banner"></div>
+</BaseLayout>

@@ -7,6 +7,8 @@ seo:
   title: 'What Front End Programming Languages Should You Learn?'
   description: 'Get ahead in web development. Discover the essential frontend languages every pro developer uses!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-front-end-languages-gzngm.png'
+relatedTitle: "Other Guides"
+relatedGuidesId: frontend
 isNew: false
 type: 'textual'
 date: 2024-05-02
@@ -25,30 +27,27 @@ Just starting out in web or mobile development? You may feel swamped by all the 
 
 As someone who's been through this process for over a decade, I’ve made this post to make your learning journey smoother.
 
-I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right skills, and help you build a rewarding career in [front](https://roadmap.sh/frontend)[-](https://roadmap.sh/frontend)[end](https://roadmap.sh/frontend) [development](https://roadmap.sh/frontend).
+I'll focus on the essential front-end languages and recommend a few important frameworks and libraries. This will equip you with the knowledge needed to make informed decisions, provide a roadmap to help you focus on the right skills, and help you build a rewarding career in [front-end development](https://roadmap.sh/frontend).
 
 ## What are Languages, Libraries, and Frameworks?
 
 Before we explore the front end languages, libraries, and frameworks to learn in 2024, it is important to understand what they are and the differences between them.
 
-**Languages**
-Languages are the core programming languages that developers use to write code. They have defined syntax, semantics, and rules for writing instructions that computers can execute and understand. Examples include: 
+**Languages** are the core programming languages that developers use to write code. They have defined syntax, semantics, and rules for writing instructions that computers can execute and understand. Examples include: 
 
 - JavaScript
 - TypeScript
 - Dart
 - Kotlin
 
-**Libraries**
-Libraries are collections of pre-written code that developers can use to perform specific tasks. They save time and improve productivity because developers don’t have to write code from scratch. Libraries extend the functionality of a programming language by providing functions, methods, and classes that can be imported and used. Examples include:
+**Libraries** are collections of pre-written code that developers can use to perform specific tasks. They save time and improve productivity because developers don’t have to write code from scratch. Libraries extend the functionality of a programming language by providing functions, methods, and classes that can be imported and used. Examples include:
 
 - React
 - Anime.js
 - Chart.js
 - JQuery
 
-**Frameworks**
-Frameworks are more comprehensive than libraries as they provide a structure or skeleton with sets of rules for building applications. They enforce architecture and offer tools, libraries, and components to streamline developments. Examples include:
+**[Front-end frameworks](https://roadmap.sh/frontend/frameworks)** are more comprehensive than libraries as they provide a structure or skeleton with sets of rules for building applications. They enforce architecture and offer tools, libraries, and components to streamline developments. Examples include:
 
 - Vue
 - Angular
@@ -365,4 +364,4 @@ Furthermore, users' evolving needs will continue to directly impact the approach
 
 Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end r](https://roadmap.sh/frontend)[oadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
 
-Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your skills to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress.
+Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your [skills](https://roadmap.sh/frontend/developer-skills) to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress.

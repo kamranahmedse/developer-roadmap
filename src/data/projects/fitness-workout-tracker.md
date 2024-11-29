@@ -2,7 +2,7 @@
 title: 'Workout Tracker'
 description: 'App to let users track their workouts and progress.'
 isNew: false
-sort: 14
+sort: 1700
 difficulty: 'intermediate'
 nature: 'API'
 skills:
@@ -37,7 +37,7 @@ You should write a data seeder to populate the database with a list of exercises
 
 ### User Authentication and Authorization
 
-Users will be able to sign up, log in, and log out of the application. You should use JWT tokens for authentication and authorization. Only authenticated users should be able to create, update, and delete workout plans. Needless to say, users should only be able to access their own workout plans.
+Users will be able to sign up, log in, and log out of the application. You should use JWTs for authentication and authorization. Only authenticated users should be able to create, update, and delete workout plans. Needless to say, users should only be able to access their own workout plans.
 
 - **Sign-Up**: Allow users to create an account.
 - **Login**: Allow users to log in to their account.

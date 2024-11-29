@@ -4,8 +4,8 @@ The `log` and `log/slog` (since go 1.21) packages are the standard logging packa
 
 Visit the following resources to learn more:
 
-- [@article@Official Documentation: log](https://pkg.go.dev/log)
-- [@article@Official Documentation: log/slog](https://pkg.go.dev/log/slog) `(since go 1.21)`
+- [@official@Documentation: log](https://pkg.go.dev/log)
+- [@official@Documentation: slog](https://pkg.go.dev/log/slog)
 - [@official@Go Blog: Structured Logging with slog](https://go.dev/blog/slog)
 - [@article@Go by Example: Logging](https://gobyexample.com/logging)
 - [@feed@Explore top posts about Logging](https://app.daily.dev/tags/logging?ref=roadmapsh)

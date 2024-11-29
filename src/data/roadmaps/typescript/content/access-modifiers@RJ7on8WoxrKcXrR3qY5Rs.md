@@ -10,4 +10,4 @@ Access modifiers in TypeScript allow you to define the level of visibility and a
 
 Learn more from the following resources:
 
-- [@article@TypeScript Access Modifiers](https://www.typescripttutorial.net/typescript-tutorial/typescript-access-modifiers/)
+- [@official@TypeScript Access Modifiers](https://www.typescripttutorial.net/typescript-tutorial/typescript-access-modifiers/)

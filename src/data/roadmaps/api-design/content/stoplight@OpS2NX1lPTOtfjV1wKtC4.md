@@ -5,4 +5,4 @@ Stoplight is an advanced tool that offers a comprehensive platform for technical
 Learn more from the following resources:
 
 - [@official@Stoplight Website](https://stoplight.io/)
-- [@opensource@/stoplightio](https://github.com/stoplightio)
+- [@opensource@stoplightio](https://github.com/stoplightio)
