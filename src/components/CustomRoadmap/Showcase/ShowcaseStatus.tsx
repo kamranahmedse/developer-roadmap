@@ -13,7 +13,7 @@ export function ShowcaseStatus(props: ShowcaseStatusProps) {
   const { showcaseStatus } = currentRoadmap;
   const [showSubmitWarning, setShowSubmitWarning] = useState(false);
 
-  if (!currentRoadmap || showcaseStatus) {
+  if (!currentRoadmap || showcaseStatus || currentRoadmap.aiRoadmapId) {
     return null;
   }
 
