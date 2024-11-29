@@ -20,7 +20,7 @@ question:
 
     ## Which languages are used for Frontend Development?
 
-    The best part about the frontend development role is that there aren’t that many options to pick from when it comes to technologies (unlike with backend development).
+    The best part about the frontend development role is that there aren’t that many options to pick from when it comes to [frontend technologies](https://roadmap.sh/frontend/technologies) (unlike with backend development).
 
     As a frontend developer, you’ll be working with the following technologies:
 
