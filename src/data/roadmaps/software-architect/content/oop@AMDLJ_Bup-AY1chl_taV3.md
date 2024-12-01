@@ -4,7 +4,8 @@ Object-oriented programming (OOP) is a computer programming model that organizes
 
 Visit the following resources to learn more:
 
-- [@article@Basic concepts of object-oriented programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)
-- [@article@w3schools - OOP Concepts](https://www.w3schools.com/java/java_oop.asp)
+- [@article@OOP - Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
+- [@article@Basic Concepts of Object-Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)
+- [@article@W3schools - OOP Concepts](https://www.w3schools.com/java/java_oop.asp)
 - [@video@FreeCodeCamp - (OOP) in C++](https://www.youtube.com/watch?v=wN0x9eZLix4)
 - [@video@FreeCodeCamp - (OPP) in Python](https://www.youtube.com/watch?v=Ej_02ICOIgs)
