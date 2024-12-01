@@ -4,5 +4,5 @@ Row Level Security (RLS) is a feature introduced in PostgreSQL 9.5 that allows y
 
 Learn more from the following resources:
 
-- [@video@How to Setup Row Level Security (RLS) in PostgreSQL](https://www.youtube.com/watch?v=j53NoW9cPtY)
 - [@official@Row Security Policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
+- [@video@How to Setup Row Level Security (RLS) in PostgreSQL](https://www.youtube.com/watch?v=j53NoW9cPtY)
