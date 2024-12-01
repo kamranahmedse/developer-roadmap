@@ -4,5 +4,5 @@ Object privileges in PostgreSQL are the permissions given to different user role
 
 Learn more from the following resources:
 
-- [@article@PostgreSQL roles and privileges explained](https://www.aviator.co/blog/postgresql-roles-and-privileges-explained/)
-- [@article@What are object privileges?](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/managing-privileges#what-are-postgresql-object-privileges)
+- [@article@PostgreSQL Roles and Privileges Explained](https://www.aviator.co/blog/postgresql-roles-and-privileges-explained/)
+- [@article@What are Object Privileges?](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/managing-privileges#what-are-postgresql-object-privileges)

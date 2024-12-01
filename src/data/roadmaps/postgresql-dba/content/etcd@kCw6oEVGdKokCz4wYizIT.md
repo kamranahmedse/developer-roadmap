@@ -6,5 +6,6 @@ Etcd can be utilized in conjunction with _connection poolers_ such as PgBouncer 
 
 Learn more from the following resources:
 
+- [@opensource@PostgreSQL High Availability with Etcd](https://github.com/patroni/patroni)
 - [@video@PostgreSQL High Availability](https://www.youtube.com/watch?v=J0ErkLo2b1E)
 - [@articles@etcd vs PostgreSQL](https://api7.ai/blog/etcd-vs-postgresql)

@@ -4,5 +4,5 @@ PostgreSQL provides various extensions to enhance its features and functionaliti
 
 Learn more from the following resources:
 
-- [@official@PostgreSQL extensions](https://www.postgresql.org/download/products/6-postgresql-extensions/)
+- [@official@PostgreSQL Extensions](https://www.postgresql.org/download/products/6-postgresql-extensions/)
 - [@official@Create Extension](https://www.postgresql.org/docs/current/sql-createextension.html)

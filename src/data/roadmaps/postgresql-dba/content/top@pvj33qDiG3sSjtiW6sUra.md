@@ -4,6 +4,6 @@
 
 Learn more from the following resources:
 
-- [@article@How to use the top command in Linux](https://phoenixnap.com/kb/top-command-in-linux)
+- [@article@How to Use the top Command in Linux](https://phoenixnap.com/kb/top-command-in-linux)
 - [@article@top man page](https://man7.org/linux/man-pages/man1/top.1.html)
 - [@video@Demystifying the Top Command in Linux](https://www.youtube.com/watch?v=WsR11EGF9PA)
