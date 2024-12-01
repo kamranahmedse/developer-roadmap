@@ -4,5 +4,4 @@ scrypt is a key derivation function designed to be computationally intensive and
 
 Visit the following resources to learn more:
 
-- [@official@sCrypt Website](https://scrypt.io/)
-- [@article@sCrypt: A Beginner’s Guide](https://medium.com/@yusufedresmaina/scrypt-a-beginners-guide-cf1aecf8b010)
+- [@official@Wikipedia - scrypt](https://en.wikipedia.org/wiki/Scrypt)
