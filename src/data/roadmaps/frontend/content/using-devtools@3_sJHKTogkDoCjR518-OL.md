@@ -15,6 +15,6 @@ DevTools are essential for front-end development, performance optimization, and 
 
 Visit the following resources to learn more:
 
-- [@article@Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)
-- [@article@Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/)
+- [@official@Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)
+- [@official@Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/)
 - [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)
