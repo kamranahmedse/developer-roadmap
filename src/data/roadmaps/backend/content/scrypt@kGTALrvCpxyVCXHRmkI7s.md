@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@sCrypt Website](https://scrypt.io/)
 - [@article@sCrypt: A Beginner’s Guide](https://medium.com/@yusufedresmaina/scrypt-a-beginners-guide-cf1aecf8b010)
+- [@article@Wikipedia - scrypt](https://en.wikipedia.org/wiki/Scrypt)
