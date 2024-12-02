@@ -4,6 +4,6 @@ Terraform secret management is a critical aspect of secure infrastructure-as-cod
 
 Learn more from the following resources:
 
+- [@official@Inject Secrets with Vault](https://developer.hashicorp.com/terraform/tutorials/secrets)
 - [@article@Terraform Secrets - How to manage them](https://spacelift.io/blog/terraform-secrets)
 - [@article@A comprehensive guide to managing secrets in your Terraform code](https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1)
-- [@official@Inject secrets with Vault](https://developer.hashicorp.com/terraform/tutorials/secrets)

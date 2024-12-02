@@ -1,7 +1,7 @@
 # Modules Best Practices
 
 Terraform module best practices focus on creating reusable, maintainable, and scalable infrastructure components.
- 
+
 - Modules should have a single, clear purpose and be designed with flexibility in mind, using input variables for customization.
 - Outputs should be carefully chosen to provide necessary information without over-exposing internal details.
 - Version your modules and use semantic versioning to manage changes.
@@ -15,6 +15,6 @@ Terraform module best practices focus on creating reusable, maintainable, and sc
 
 Learn more from the following resources:
 
-- [@official@Module best practices](https://developer.hashicorp.com/terraform/tutorials/modules/module#module-best-practices)
+- [@official@Module Best Practices](https://developer.hashicorp.com/terraform/tutorials/modules/module#module-best-practices)
 - [@article@Terraform Modules Guide: Best Practices & Examples](https://www.env0.com/blog/terraform-modules)
 - [@video@Best practices for modularizing a Terraform project | PlatformCon 2023](https://www.youtube.com/watch?v=byzwaTng3ac)

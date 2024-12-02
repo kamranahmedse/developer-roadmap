@@ -22,6 +22,6 @@ These features collectively provide a robust, secure, and scalable environment f
 
 Learn more from the following resources:
 
-- [@official@HCP Website](https://www.hashicorp.com/cloud)
-- [@article@HCP Terraform Plans and Features](https://developer.hashicorp.com/terraform/cloud-docs/overview)
+- [@official@HashiCorp Cloud Platform](https://www.hashicorp.com/cloud)
+- [@official@HCP Terraform Plans and Features](https://developer.hashicorp.com/terraform/cloud-docs/overview)
 - [@video@How does The Infrastructure Cloud work?](https://www.youtube.com/watch?v=zWWGsJrWj5E)

@@ -5,4 +5,4 @@ Terraform preconditions are declarative checks within resource or data blocks th
 Learn more from the following resources:
 
 - [@official@Custom Condition Checks](https://developer.hashicorp.com/terraform/language/values/outputs#custom-condition-checks)
-- [@video@Using Precondition and Postcondition Blocks in Terraform](https://www.youtube.com/watch?v=55ZLu8tSnvk)
+- [@video@Using Precondition and Post-condition Blocks in Terraform](https://www.youtube.com/watch?v=55ZLu8tSnvk)

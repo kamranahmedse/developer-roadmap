@@ -4,5 +4,5 @@ HashiCorp Configuration Language (HCL) is a configuration language built by Hash
 
 Learn more from the following resources:
 
-- [@official@Terraform Language Documentation(https://developer.hashicorp.com/terraform/language)
+- [@official@Terraform Language Documentation](https://developer.hashicorp.com/terraform/language)
 - [@opensource@HCL Repository](https://github.com/hashicorp/hcl)
