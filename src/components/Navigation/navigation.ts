@@ -7,7 +7,7 @@ export function logout() {
   removeAuthToken();
 
   // Reloading will automatically redirect the user if required
-  window.location.reload();
+  window.location.href = '/';
 }
 
 function bindEvents() {
