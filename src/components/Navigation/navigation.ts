@@ -1,7 +1,9 @@
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
+import { REDIRECT_PAGE_AFTER_AUTH } from '../Authenticator/authenticator.ts';
 
 export function logout() {
+  localStorage.removeItem(REDIRECT_PAGE_AFTER_AUTH);
   removeAuthToken();
 
   // Reloading will automatically redirect the user if required
