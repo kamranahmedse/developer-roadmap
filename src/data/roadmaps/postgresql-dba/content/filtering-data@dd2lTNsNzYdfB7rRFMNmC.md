@@ -4,6 +4,6 @@ Filtering data is an essential feature in any database management system, and Po
 
 Learn more from the following resources:
 
-- [@article@How to filter query results in PostgreSQL](https://www.prisma.io/dataguide/postgresql/reading-and-querying-data/filtering-data)
+- [@article@How to Filter Query Results in PostgreSQL](https://www.prisma.io/dataguide/postgresql/reading-and-querying-data/filtering-data)
 - [@article@Using PostgreSQL FILTER](https://www.crunchydata.com/blog/using-postgres-filter)
 - [@article@PostgreSQL - WHERE](https://www.w3schools.com/postgresql/postgresql_where.php)

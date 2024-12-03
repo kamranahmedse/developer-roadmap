@@ -4,6 +4,6 @@ Lighthouse is an open-source tool developed by Google that is used to audit the 
 
 Visit the following resources to learn more:
 
-- [@article@Lighthouse - Google Developers](https://developers.google.com/web/tools/lighthouse)
+- [@official@Lighthouse - Google Developers](https://developers.google.com/web/tools/lighthouse)
 - [@video@What is Google Lighthouse and how to use it](https://www.youtube.com/watch?v=VyaHwvPWuZU)
 - [@feed@Explore top posts about Lighthouse](https://app.daily.dev/tags/lighthouse?ref=roadmapsh)

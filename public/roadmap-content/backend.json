@@ -1398,6 +1398,11 @@
         "type": "article"
       },
       {
+        "title": "Design Patterns for Humans",
+        "url": "https://github.com/kamranahmedse/design-patterns-for-humans",
+        "type": "article"
+      },
+      {
         "title": "Tutorial - Builder Pattern (Gang of Four Design Patterns Series)",
         "url": "https://www.youtube.com/watch?v=_sa2WlAFWQos",
         "type": "video"
@@ -2352,6 +2357,11 @@
       {
         "title": "sCrypt: A Beginner’s Guide",
         "url": "https://medium.com/@yusufedresmaina/scrypt-a-beginners-guide-cf1aecf8b010",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia - scrypt",
+        "url": "https://en.wikipedia.org/wiki/Scrypt",
         "type": "article"
       }
     ]

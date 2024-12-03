@@ -16,5 +16,5 @@ Constraints are an essential part of the relational model, as they define rules 
 
 Learn more from the following resources:
 
-- [@official@Contraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
-- [@article@PostgreSQL - Contraints](https://www.tutorialspoint.com/postgresql/postgresql_constraints.htm)
+- [@official@Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
+- [@article@PostgreSQL - Constraints](https://www.tutorialspoint.com/postgresql/postgresql_constraints.htm)
