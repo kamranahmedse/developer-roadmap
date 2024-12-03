@@ -14,3 +14,7 @@ $ uptime
 ```
 
 In the output above, "2 days, 20 min" tells us how long the system has been up, while "0.00, 0.01, 0.05" shows the system's load average over the last one, five, and fifteen minutes, respectively.
+
+Visit the following resources to learn more:
+
+- [@article@Linux Uptime command](https://www.geeksforgeeks.org/linux-uptime-command-with-examples/)
