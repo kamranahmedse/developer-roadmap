@@ -6,4 +6,4 @@ Each test can be run from different locations around the world, on real browsers
 
 Visit the following resources to learn more:
 
-- [@official@WebPageTest Website](https://www.webpagetest.org/)
+- [@official@WebPageTest](https://www.webpagetest.org/)
