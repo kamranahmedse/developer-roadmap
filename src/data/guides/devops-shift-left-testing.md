@@ -100,7 +100,7 @@ Adopting Shift-Left testing in your development process comes with several chall
 
 - **Promote a testing-first mindset** and encourage cross-functional collaboration between your teams with an emphasis on shared ownership of the product.
 - **Invest in training and skill development** focused on test automation, CI/CD, and other [best practices in DevOps](https://roadmap.sh/devops/best-practices).
-- **Choose tools that align with your organization’s needs** and integrate seamlessly within your budget.
+- **Choose [DevOps tools](https://roadmap.sh/devops/tools) that align with your organization’s needs** and integrate seamlessly within your budget.
 - **Start small** with a feature or pilot project, then gradually scale across the entire product chain. This approach will give your team the flexibility and the time to learn and refine strategies.
 - **Regularly conduct risk assessments** to identify areas for improvement and implement corresponding mitigation strategies.
 
@@ -111,7 +111,7 @@ Below are some best practices to consider:
 ![Shift-Left best practices](https://assets.roadmap.sh/guest/shift-left-testing-devops-principles-0yrp4.png)
 
 1. **Adopt early test plans**: Create a plan that clearly outlines the testing goals and scope of the project. Also, ensure that testing is integrated into the early stages of your SDLC.
-2. **Test automation**: Use test automation tools to automate unit tests, integration tests, functional tests, and other necessary test cases. Additionally, regularly update and maintain test scripts to keep them relevant and accurate when running CI/CD pipeline.
+2. **Test automation**: Use test [automation tools](https://roadmap.sh/devops/automation-tools) to automate unit tests, integration tests, functional tests, and other necessary test cases. Additionally, regularly update and maintain test scripts to keep them relevant and accurate when running CI/CD pipeline.
 3. **Collaboration and communication**: Use project management tools like Jira and Linear, along with traditional methods such as meetings, check-ins, and stand-ups, to facilitate communication and collaboration between developers, testers, and other stakeholders.
 4. **Continuous learning**: Encourage your team to keep up-to-date with the latest testing techniques and tools, participate in industry events to learn from experts, and share knowledge and best practices within the team.
 

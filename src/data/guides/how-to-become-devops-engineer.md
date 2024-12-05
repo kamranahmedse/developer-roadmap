@@ -31,7 +31,7 @@ But **what is DevOps, and how is it different from other roles?**
 
 While the primary goal of a software engineer is to design and build software solutions, a DevOps engineer has a key role in streamlining the software development and deployment pipeline, automating infrastructure provisioning, and enhancing the deployment process.
 
-This guide provides in-depth knowledge on how to become a DevOps engineer, highlighting the mindset of DevOps engineers and the [technical skills](https://roadmap.sh/devops/skills) (including DevOps tools) required to become one. It also guides you on how you can find DevOps engineer jobs.
+This guide provides in-depth knowledge on how to become a DevOps engineer, highlighting the mindset of DevOps engineers and the [technical skills](https://roadmap.sh/devops/skills) (including [DevOps tools](https://roadmap.sh/devops/tools)) required to become one. It also guides you on how you can find DevOps engineer jobs.
 
 ## **TL;DR:**
 
