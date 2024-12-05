@@ -100,7 +100,7 @@ Adopting Shift-Left testing in your development process comes with several chall
 
 - **Promote a testing-first mindset** and encourage cross-functional collaboration between your teams with an emphasis on shared ownership of the product.
 - **Invest in training and skill development** focused on test automation, CI/CD, and other [best practices in DevOps](https://roadmap.sh/devops/best-practices).
-- **Choose tools that align with your organization’s needs** and integrate seamlessly within your budget.
+- **Choose [DevOps tools](https://roadmap.sh/devops/tools) that align with your organization’s needs** and integrate seamlessly within your budget.
 - **Start small** with a feature or pilot project, then gradually scale across the entire product chain. This approach will give your team the flexibility and the time to learn and refine strategies.
 - **Regularly conduct risk assessments** to identify areas for improvement and implement corresponding mitigation strategies.
 
