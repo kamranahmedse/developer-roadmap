@@ -14,7 +14,7 @@ while IFS= read -r issue; do
     comment_count=$(echo "$issue" | jq -r '.comments | length')
     body_characters=$(echo "$issue" | jq -r '.body | length')
 
-    # if has empty body
+    #   if has empty body
     if [[ "$created_at" == 2024-01* ]]; then
 
       comment="Hey there!
