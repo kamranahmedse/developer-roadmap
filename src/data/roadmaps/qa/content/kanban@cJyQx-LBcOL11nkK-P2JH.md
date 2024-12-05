@@ -6,5 +6,5 @@ A kanban board is an agile project management tool designed to help visualize wo
 
 Visit the following resources to learn more:
 
-- [@article@Kanban - A brief introduction](https://www.atlassian.com/agile/kanban)
+- [@article@Kanban - A Brief Introduction](https://www.atlassian.com/agile/kanban)
 - [@article@Kanban Model in Software Engineering](https://www.guru99.com/kanban-cards-boards-methodology.html)
