@@ -4,5 +4,5 @@ SoapUI is the world's leading Functional Testing tool for SOAP and REST testing.
 
 Visit the following resources to learn more:
 
-- [@official@SoapUI Official Website](https://www.soapui.org/)
+- [@official@SoapUI](https://www.soapui.org/)
 - [@official@SoapUI Docs](https://www.soapui.org/getting-started/)
