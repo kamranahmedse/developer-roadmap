@@ -108,7 +108,7 @@ Cloud-native applications have become popular recently. They involve developing 
 
 There are several cloud platforms, some of the most popular ones being [AWS](https://roadmap.sh/aws), Microsoft Azure, and Google Cloud Platform (GCP). One advantage of using these cloud providers is that you don't have to manage the cloud infrastructure but instead focus on developing your applications. You also pay for only the resources you use.
 
-Containerization tools like [Docker](https://roadmap.sh/docker) and [Kubernetes](https://roadmap.sh/kubernetes) have been made popular by cloud services and microservices. These tools are part of the toolkit of DevOps engineers.
+Containerization tools like [Docker](https://roadmap.sh/docker) and [Kubernetes](https://roadmap.sh/kubernetes) have been made popular by cloud services and microservices. These [tools for DevOps engineers](https://roadmap.sh/devops/tools) are an important part of their toolkit.
 
 ### Automation and CI/CD
 
