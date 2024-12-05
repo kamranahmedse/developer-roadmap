@@ -270,7 +270,7 @@ HTML, CSS, and JavaScript are fundamental knowledge for any front-end developer.
 
 The following are some of the essential front-end developer skills:
 
-- Solid understanding of core web development technologies, e.g., HTML, CSS, and JavaScript.
+- Solid understanding of core [frontend technologies](https://roadmap.sh/frontend/technologies), e.g., HTML, CSS, and JavaScript.
 - Proficient in using version control systems, e.g., Git.
 - Practical experience with front-end frameworks and libraries such as React and TailwindCSS.
 - **Soft skills**: Communication, problem-solving, and collaboration skills.
