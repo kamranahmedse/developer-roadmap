@@ -26,11 +26,11 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
           href={'/projects'}
           className="font-medium text-blue-500 underline underline-offset-2"
         >
-          backend roadmap
+          several of our roadmaps
         </a>
         <span className={'hidden md:inline'}>
           {' '}
-          and are coming soon on the others{' '}
+          and are coming soon on the others
         </span>
         <PartyPopper className="relative -top-[3px] ml-2 inline-block h-5 w-5 text-blue-500 md:ml-1 md:h-6 md:w-6" />
       </div>

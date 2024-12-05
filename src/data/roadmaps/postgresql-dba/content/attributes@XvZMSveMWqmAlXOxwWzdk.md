@@ -4,5 +4,5 @@ Attributes in the relational model are the columns of a table, representing the 
 
 Learn more from the following resources:
 
-- [@article@What is a relational Model?](https://www.guru99.com/relational-data-model-dbms.html)
+- [@article@What is a Relational Model?](https://www.guru99.com/relational-data-model-dbms.html)
 - [@article@Relational Model in DBMS](https://www.scaler.com/topics/dbms/relational-model-in-dbms/)

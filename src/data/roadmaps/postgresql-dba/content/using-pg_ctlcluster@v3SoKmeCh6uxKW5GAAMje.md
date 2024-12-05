@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@PostgreSQL documentation](https://www.postgresql.org/docs/current/pgctlcluster.html)
+- [@official@pg_ctlcluster](https://www.postgresql.org/docs/current/pgctlcluster.html)
