@@ -83,7 +83,7 @@ Finally, **Ansible** takes the cake when it comes to configuration management an
 
 The following table summarizes the data presented throughout this article:
 
-[![DevOps Automation Tools](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)
+![DevOps Automation Tools](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)
 
 Let’s now take a closer look at all the tools, and let you decide which ones are your favorite ones.
 
