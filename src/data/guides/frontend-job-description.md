@@ -153,7 +153,7 @@ It is important to hire a frontend developer who can collaborate with various te
 
 Creating easy-to-use websites and applications requires a broad range of technical skills. When evaluating candidates, look for proficiency in these must-have frontend developer skills:
 
-- Strong foundation in core web development technologies, like HTML, CSS, and JavaScript.
+- Strong foundation in core [web development technologies](https://roadmap.sh/frontend/technologies), like HTML, CSS, and JavaScript.
 - Strong grasp of version control systems, such as Git.
 - Good knowledge of frontend frameworks and libraries, for example, React JS and TailwindCSS.
 - Experience with CSS preprocessors for modular and maintainable styling, such as Sass.
