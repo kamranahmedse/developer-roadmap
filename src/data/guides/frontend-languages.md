@@ -360,7 +360,7 @@ Before selecting a language, assess the size and activity level of the community
 
 In summary, essential languages to learn in 2024 include HTML for structure, CSS for styling, and JavaScript for interactivity. TypeScript, Dart, Swift, and Kotlin are also significant.
 
-Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the choice of technologies during front-end development.
+Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the [choice of technologies during front-end development](https://roadmap.sh/frontend/technologies).
 
 Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end r](https://roadmap.sh/frontend)[oadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
 
