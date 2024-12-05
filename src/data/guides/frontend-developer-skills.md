@@ -33,7 +33,7 @@ In this article, we’ll try to help guide you through the constantly growing fr
 
 But before we move forward, let’s first understand [what front end development is](https://roadmap.sh/frontend).
 
-Front end development involves creating the parts of a website or application that users interact with directly. This includes designing layouts, implementing visual elements, and ensuring a seamless user experience by coding the interactions through the use of three basic technologies: HTML, CSS, and JavaScript.
+Front end development involves creating the parts of a website or application that users interact with directly. This includes designing layouts, implementing visual elements, and ensuring a seamless user experience by coding the interactions through the use of three basic [frontend technologies](https://roadmap.sh/frontend/technologies): HTML, CSS, and JavaScript.
 
 Unlike backend development, which deals with server-side logic, front end development focuses exclusively on client-side logic.
 
