@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Usage: tsx ./scripts/editor-roadmap-dirs.ts <roadmapId>
-
+//test of pull request
 // Directory containing the roadmaps
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
 const roadmapId = process.argv[2];
