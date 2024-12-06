@@ -123,6 +123,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
           question?.title && (
             <RoadmapTitleQuestion
               client:load
+              roadmapId={roadmapId}
               question={question?.title}
               answer={question?.description}
             />
