@@ -14,9 +14,9 @@
         "type": "article"
       },
       {
-        "title": "https://www.youtube.com/watch?v=DR22zNNetp0&t=1s",
+        "title": "Test Oracle in Software Testing",
         "url": "https://www.youtube.com/watch?v=DR22zNNetp0&t=1s",
-        "type": "article"
+        "type": "video"
       }
     ]
   },
@@ -62,7 +62,7 @@
     "description": "qTest is a test management tool used for Project Management, Bug Tracking, and Test Management. It follows the centralized test management concept that helps to communicate easily and assists in rapid development of task across QA team and other stakeholders.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "QTest tutorial",
+        "title": "QTest Tutorial",
         "url": "https://www.tutorialspoint.com/qtest/qtest_introduction.htm",
         "type": "article"
       },
@@ -78,7 +78,7 @@
     "description": "TestRail is a web-based test case management tool. It is used by testers, developers and team leads to manage, track, and organize software testing efforts. TestRail allows team members to enter test cases, organize test suites, execute test runs, and track their results, all from a modern and easy to use web interface.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TestRail Website",
+        "title": "TestRail",
         "url": "https://www.gurock.com/testrail/",
         "type": "article"
       },
@@ -94,7 +94,7 @@
     "description": "TestLink is most widely used web based open source test management tool. It synchronizes both requirements specification and test specification together. Tester can create test project and document test cases using this tool. With TestLink you can create an account for multiple users and assign different user roles.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TestLink Website",
+        "title": "TestLink",
         "url": "https://testlink.org/",
         "type": "article"
       },
@@ -118,7 +118,7 @@
   },
   "JInFH3JRvAxjvpIFKjUiP": {
     "title": "What is Quality Assurance?",
-    "description": "Quality is extremely hard to define, and it is simply stated: “Fit for use or purpose.” It is all about meeting the needs and expectations of customers concerning the functionality, design, reliability, durability, & price of the product.\n\nWhat is Assurance\n-----------------\n\nAssurance is nothing but a positive declaration of a product or service, which gives confidence. It is certain of a product or a service which it will work well. It provides a guarantee that the product will work without any problems as per the expectations or requirements.\n\nQuality Assurance in Software Testing\n-------------------------------------\n\nQuality Assurance in Software Testing is defined as a procedure to ensure the quality of software products or services provided to the customers by an organization. Quality assurance focuses on improving the [software development process](https://www.guru99.com/software-development-life-cycle-tutorial.html) and making it efficient and effective per the quality standards defined for software products. Quality Assurance is popularly known as QA Testing.\n\nVisit the following resources to learn more:",
+    "description": "Quality is extremely hard to define, and it is simply stated: “Fit for use or purpose.” It is all about meeting the needs and expectations of customers concerning the functionality, design, reliability, durability, & price of the product.\n\nWhat is Assurance\n-----------------\n\nAssurance is nothing but a positive declaration of a product or service, which gives confidence. It is certain of a product or a service which it will work well. It provides a guarantee that the product will work without any problems as per the expectations or requirements.\n\nQuality Assurance in Software Testing\n-------------------------------------\n\nQuality Assurance in Software Testing is defined as a procedure to ensure the quality of software products or services provided to the customers by an organization. Quality assurance focuses on improving the software development process and making it efficient and effective per the quality standards defined for software products. Quality Assurance is popularly known as QA Testing.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is Quality Assurance(QA)? Process, Methods, Examples",
@@ -268,7 +268,7 @@
     "description": "Jira is a software application used for issue tracking and project management. The tool, developed by the Australian software company Atlassian, has become widely used by agile development teams to track bugs, stories, epics, and other tasks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Atlassian Website",
+        "title": "Atlassian",
         "url": "https://www.atlassian.com/",
         "type": "article"
       },
@@ -299,7 +299,7 @@
     "description": "Assembla is an extensive suite of applications for software development, enabling distributed agile teams. It allows development teams to manage, initiate and maintain agile projects, applications and websites.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Assembla Website",
+        "title": "Assembla",
         "url": "https://get.assembla.com/projects/",
         "type": "article"
       },
@@ -315,7 +315,7 @@
     "description": "YouTrack is a project management software developed by JetBrains. It’s in the form of a plugin that can be attached to the JetBrains IDEs such as Intellij Idea, and helps create and assign tasks to a development team as well as track the progress of working.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "YouTrack Website",
+        "title": "YouTrack",
         "url": "https://www.jetbrains.com/youtrack/",
         "type": "article"
       },
@@ -331,7 +331,7 @@
     "description": "Trello is a popular, simple, and easy-to-use collaboration tool that enables you to organize projects and everything related to them into boards. With Trello, you can find all kinds of information, such as:\n\n*   What’s being worked on?\n*   Who’s working on what?\n*   What progress the project is making\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Trello Website",
+        "title": "Trello",
         "url": "https://trello.com/en",
         "type": "article"
       },
@@ -539,8 +539,14 @@
   },
   "Lve3xpC1FU91TQqoDOYv7": {
     "title": "Sanity Testing",
-    "description": "Sanity testing is a kind of Software Testing performed after receiving a software build, with minor changes in code, or functionality, to ascertain that the bugs have been fixed and no further issues are introduced due to these changes. The goal is to determine that the proposed functionality works roughly as expected. If sanity test fails, the build is rejected to save the time and costs involved in a more rigorous testing.",
-    "links": []
+    "description": "Sanity testing is a kind of Software Testing performed after receiving a software build, with minor changes in code, or functionality, to ascertain that the bugs have been fixed and no further issues are introduced due to these changes. The goal is to determine that the proposed functionality works roughly as expected. If sanity test fails, the build is rejected to save the time and costs involved in a more rigorous testing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Sanity Testing?",
+        "url": "https://www.browserstack.com/guide/sanity-testing#:~:text=Sanity%20Testing%20or%20Surface%20Level,working%20properly%20without%20any%20bugs.",
+        "type": "article"
+      }
+    ]
   },
   "XCeXiKvBblmDArfbWjDvw": {
     "title": "Regression Testing",
@@ -690,7 +696,7 @@
     "description": "Kanban is a very popular framework for development in the agile software development methodology. It provides a transparent way of visualizing the tasks and work capacity of a team. It mainly uses physical and digital boards to allow the team members to visualize the current state of the project they are working on.\n\nA kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Kanban - A brief introduction",
+        "title": "Kanban - A Brief Introduction",
         "url": "https://www.atlassian.com/agile/kanban",
         "type": "article"
       },
@@ -845,7 +851,7 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the front and gives structure to the webpage, which you can style using CSS and make interactive using JavaScript.\n\nCSS or Cascading Style Sheets is the language used to style the front end of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.\n\nJavaScript allows you to add interactivity to your pages. You may have seen common examples on the websites: sliders, click interactions, popups, and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools: Learn HTML",
+        "title": "W3Schools - Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
         "type": "article"
       },
@@ -871,7 +877,7 @@
     "description": "Every modern web browser includes a powerful suite of developer tools. These tools do a range of things, from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load. This article explains how to use the basic functions of your browser's devtools.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What are browser developer tools?",
+        "title": "What are Browser Developer Tools?",
         "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools",
         "type": "article"
       },
@@ -892,7 +898,7 @@
         "type": "article"
       },
       {
-        "title": "Getting started",
+        "title": "Getting Started with AJAX",
         "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started",
         "type": "article"
       },
@@ -907,6 +913,11 @@
     "title": "Caching",
     "description": "Caching ensures that the resources downloaded once are reused instead of doing a fresh fetch again. It is useful for increasing subsequent page load speed by reusing cached images, fonts, and other static assets. Caching should not be typically done on dynamic content. For example list of posts or comments. As part of the testing strategy, both caching and cache invalidation (not getting stale dynamic content) needs to be tested.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "What is Caching and How it Works | AWS",
+        "url": "https://aws.amazon.com/caching/",
+        "type": "article"
+      },
       {
         "title": "Caching - Simply Explained",
         "url": "https://www.youtube.com/watch?v=6FyXURRVmR0",
@@ -971,7 +982,7 @@
     "description": "Selenium IDE is an open source web automation testing tool from the Selenium Suite used primarily for QA purposes. It functions as a Firefox extension and does not require any programming knowledge and test cases can be created simply by interacting with the browser.\n\nSelenium itself is an open-source, automated testing tool used to test web applications across various browsers. It's primarily built in Java and supports several browsers and programming languages. Selenium IDE was developed to speed up the creation of automation scripts. It’s a rapid prototyping tool and can be used by engineers with no programming knowledge whatsoever. Because of its simplicity, Selenium IDE is best used as a prototyping tool and not a complete solution for developing and maintaining complex test suites.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Selenium IDE Website",
+        "title": "Selenium IDE",
         "url": "https://www.selenium.dev/selenium-ide/",
         "type": "article"
       },
@@ -992,7 +1003,7 @@
     "description": "Ghost Inspector is a codeless automated testing tool that allows you to easily create and run automated browser tests for websites and web applications. These tests carry out actions in a web browser the same way a real user would to ensure that everything is working properly.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Ghost Inspector Website",
+        "title": "Ghost Inspector",
         "url": "https://ghostinspector.com/",
         "type": "article"
       },
@@ -1024,7 +1035,7 @@
     "description": "WebdriverIO is a progressive automation framework built to automate modern web and mobile applications. It simplifies the interaction with your app and provides a set of plugins that help you create a scalable, robust and stable test suite.\n\nWebdriverIO leverages the power of the WebDriver protocol that is developed and supported by all browser vendors and guarantees a true cross-browser testing experience. While other automation tools require you to download modified browser that aren't used by actual users or emulate user behavior by injecting JavaScript, WebdriverIO relies on a common agreed standard for automation that is properly tested and ensures compatibility for decades to come.\n\nDuring the development of this automation standard the web has changed a lot and many of the requirements that developers have today to test their web application can not be fulfilled using WebDriver anymore. While some of the core contributors of this project help support the next generation of the WebDriver protocol, WebdriverIO provides an alternative automation solution based on the Chrome DevTools protocol. This allows the user to seamlessly switch between conventional commands based on WebDriver and powerful browser interactions through Puppeteer.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "WebdriverIO Website",
+        "title": "WebdriverIO",
         "url": "https://webdriver.io/",
         "type": "article"
       },
@@ -1050,7 +1061,7 @@
     "description": "Playwright Test was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation of Google Chrome for Android and Mobile Safari.Playwright leverages the DevTools protocol to write powerful, stable automated tests.Playwright can actually see into and control the browser rather than relying on a middle translation layer, it allows for the simulation of more insightful and relevant user scenarios.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website: Playwright",
+        "title": "Playwright",
         "url": "https://playwright.dev/",
         "type": "article"
       },
@@ -1071,7 +1082,7 @@
         "type": "article"
       },
       {
-        "title": "QA Wolf Official Docs",
+        "title": "QA Wolf Docs",
         "url": "https://app.qawolf.com/docs/why-qa-wolf",
         "type": "article"
       },
@@ -1097,18 +1108,23 @@
     "description": "Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha – a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Cypress",
         "url": "https://www.cypress.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Cypress Documentation",
         "url": "https://docs.cypress.io/guides/overview/why-cypress#Other",
         "type": "article"
       },
       {
-        "title": "How it works",
+        "title": "How it Works",
         "url": "https://www.cypress.io/how-it-works",
+        "type": "article"
+      },
+      {
+        "title": "Cypress - End to End Testing Framework",
+        "url": "https://dev.to/bushraalam/cypress-end-to-end-testing-framework-3naa",
         "type": "article"
       },
       {
@@ -1120,6 +1136,11 @@
         "title": "Cypress End-to-End Testing",
         "url": "https://www.youtube.com/watch?v=7N63cMKosIE",
         "type": "video"
+      },
+      {
+        "title": "Cypress Tips & Tricks",
+        "url": "https://www.youtube.com/watch?v=PZ2OsLBts1E&list=PLP9o9QNnQuAYYRpJzDNWpeuOVTwxmIxcI",
+        "type": "video"
       }
     ]
   },
@@ -1128,12 +1149,12 @@
     "description": "Jasmine is a very popular JavaScript BDD (behavior-driven development) framework for unit testing JavaScript applications. It provides utilities that can be used to run automated tests for both synchronous and asynchronous code. It does not depend on any other JavaScript frameworks. It does not require a DOM.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Jasmines Official Website",
+        "title": "Jasmines",
         "url": "https://jasmine.github.io/",
         "type": "article"
       },
       {
-        "title": "Easy and Practical example of Angular testing with Jasmine",
+        "title": "Easy and Practical Example of Angular Testing with Jasmine",
         "url": "https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine",
         "type": "article"
       },
@@ -1186,7 +1207,7 @@
     "description": "Selenium is an open-source tool that automates web browsers. It provides a single interface that lets you write test scripts in programming languages like Ruby, Java, NodeJS, PHP, Perl, Python, and C#, among others.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Seleniums Official Website",
+        "title": "Selenium",
         "url": "https://www.selenium.dev/",
         "type": "article"
       },
@@ -1207,12 +1228,12 @@
     "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Jest",
         "url": "https://jestjs.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Jest Documentation",
         "url": "https://jestjs.io/docs/getting-started",
         "type": "article"
       },
@@ -1249,7 +1270,7 @@
     "description": "Front-end automation is a way to characterize automation that streamlines tasks focused on interactivity, websites, and attended processes. Robotic process automation, or RPA, is considered automation on the front end, or from the user-interface (UI) level. Benefits of front-end automation include quick task building with no programming knowledge, no required changes to existing programs or applications, and those individuals who know the keystrokes can easily build the automation task.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How we do automated testing on our frontend",
+        "title": "How We do Automated Testing on our Frontend",
         "url": "https://dev.to/davidz/how-we-do-automated-testing-on-our-frontend-b10",
         "type": "article"
       },
@@ -1265,7 +1286,7 @@
     "description": "Backend Testing is a testing method that checks the server side or database of web applications or software. Backend testing aims to test the application layer or database layer to ensure that the web application or software is free from database defects like deadlock, data corruption, or data loss.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is backend testing?",
+        "title": "What is Backend Testing?",
         "url": "https://testinggenez.com/what-is-backend-testing-and-types/",
         "type": "article"
       },
@@ -1286,13 +1307,18 @@
     "description": "Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha – a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Cypress",
         "url": "https://www.cypress.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Cypress Documentation",
         "url": "https://docs.cypress.io/guides/overview/why-cypress#Other",
+        "type": "article"
+      },
+      {
+        "title": "How it Works",
+        "url": "https://www.cypress.io/how-it-works",
         "type": "article"
       },
       {
@@ -1311,7 +1337,7 @@
         "type": "video"
       },
       {
-        "title": "Cypress Tips & Trics",
+        "title": "Cypress Tips & Tricks",
         "url": "https://www.youtube.com/watch?v=PZ2OsLBts1E&list=PLP9o9QNnQuAYYRpJzDNWpeuOVTwxmIxcI",
         "type": "video"
       }
@@ -1343,7 +1369,7 @@
     "description": "SoapUI is the world's leading Functional Testing tool for SOAP and REST testing. With its easy-to-use graphical interface, and enterprise-class features, SoapUI allows you to easily and rapidly create and execute automated functional, regression, and load tests.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SoapUI Official Website",
+        "title": "SoapUI",
         "url": "https://www.soapui.org/",
         "type": "article"
       },
@@ -1364,7 +1390,7 @@
         "type": "opensource"
       },
       {
-        "title": "karate website",
+        "title": "Karate Framework",
         "url": "https://www.karatelabs.io/",
         "type": "article"
       },
@@ -1380,17 +1406,17 @@
     "description": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster. It is an API client that makes it easy for developers to create, share, test, and document APIs. With this open-source solution, users can create and save simple and complex HTTP/s requests and read their responses.\n\nNewman is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line. It's built with extensibility to integrate it with your continuous integration servers and build systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Postman website",
+        "title": "Postman",
         "url": "https://www.postman.com",
         "type": "article"
       },
       {
-        "title": "Learn postman",
+        "title": "Learn Postman",
         "url": "https://learning.postman.com/docs/getting-started/introduction/",
         "type": "article"
       },
       {
-        "title": "Newman cli usage",
+        "title": "Newman CLI",
         "url": "https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/",
         "type": "article"
       },
@@ -1400,7 +1426,7 @@
         "type": "article"
       },
       {
-        "title": "API testing with postman",
+        "title": "API Testing with Postman",
         "url": "https://www.youtube.com/watch?v=VywxIQ2ZXw4",
         "type": "video"
       }
@@ -1453,7 +1479,7 @@
         "type": "opensource"
       },
       {
-        "title": "Official Documentation",
+        "title": "Espresso Documentation",
         "url": "https://developer.android.com/training/testing/espresso#kotlin",
         "type": "article"
       },
@@ -1469,7 +1495,7 @@
     "description": "Detox is a JavaScript mobile testing framework that is built into the application and the test execution starts with app launch. This makes test execution really fast and robust as no external additional tools are needed to orchestrate and synchronize during the test execution.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Detox Website",
+        "title": "Detox",
         "url": "https://wix.github.io/Detox/",
         "type": "article"
       },
@@ -1495,18 +1521,18 @@
         "type": "opensource"
       },
       {
-        "title": "Appium Website",
+        "title": "Appium",
         "url": "https://appium.io/",
+        "type": "article"
+      },
+      {
+        "title": "Appium Documentation",
+        "url": "https://appium.io/docs/en/2.0/intro/",
         "type": "article"
       },
       {
         "title": "Appium Tutorial for Mobile Application Testing",
         "url": "https://www.browserstack.com/guide/appium-tutorial-for-testing",
-        "type": "article"
-      },
-      {
-        "title": "Appium Website",
-        "url": "https://appium.io/docs/en/2.0/intro/",
         "type": "article"
       }
     ]
@@ -1516,7 +1542,7 @@
     "description": "Mobile app testing, and more specifically, app UI testing involves checking how the interface behaves when user actions are performed and then compares results with expected outcomes. Here, testers try to replicate exactly how a user would interact with the application and validate the state of the UI. XCUITest allows them to write test cases for these purposes using two fundamental concepts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Documentation",
+        "title": "XCUITest Documentation",
         "url": "https://developer.apple.com/documentation/xctest/",
         "type": "article"
       },
@@ -1537,7 +1563,7 @@
     "description": "In software QA, accessibility testing is the practice of confirming that an application is usable for as many people as possible, including people with disabilities such as vision impairment, hearing problems and cognitive conditions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Accessibility testing -Javapoint",
+        "title": "Accessibility Testing - Javatpoint",
         "url": "https://www.javatpoint.com/accessibility-testing",
         "type": "article"
       },
@@ -1553,7 +1579,7 @@
     "description": "Wave is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Wave Website",
+        "title": "Wave",
         "url": "https://wave.webaim.org/",
         "type": "article"
       },
@@ -1585,7 +1611,7 @@
     "description": "These are a set of tools built into the browser to aid frontend developers diagnose and solve various issues in their applications — such as JavaScript and logical bugs, CSS styling issues or even just making quick temporary alterations to the DOM.\n\nTo enter the dev tools, right click and click **Inspect** (or press `ctrl+shift+c`/`cmd+opt+c`) to enter the Elements panel. Here you can debug CSS and HTML issues. If you want to see logged messages or interact with javascript, enter the **Console** tab from the tabs above (or press `ctrl+shift+j`/`cmd+opt+j` to enter it directly). Another very useful feature in the Chrome dev tools is the Lighthouse (for checking performance) — more on this later.\n\nNOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or otherwise) will have their own, largely-similar set of devtools.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Docs",
+        "title": "Chrome Dev Tools",
         "url": "https://developer.chrome.com/docs/devtools/overview/",
         "type": "article"
       },
@@ -1606,7 +1632,7 @@
     "description": "Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more. You can run Lighthouse in Chrome DevTools, from the command line, or as a Node module. You give Lighthouse a URL to audit, run a series of audits against the page, and then generate a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important and how to fix it.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Lighthouse Website",
+        "title": "Lighthouse Source",
         "url": "https://github.com/GoogleChrome/lighthouse/",
         "type": "opensource"
       },
@@ -1622,7 +1648,7 @@
     "description": "WebPageTest is a web performance tool providing deep diagnostic information about how a page performs under a variety of conditions.\n\nEach test can be run from different locations around the world, on real browsers, over any number of customizable network conditions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "WebPageTest Website",
+        "title": "WebPageTest",
         "url": "https://www.webpagetest.org/",
         "type": "article"
       }
@@ -1630,10 +1656,10 @@
   },
   "J1Yx1VcO20Lc3r3PdGpUW": {
     "title": "Gatling",
-    "description": "Gatling is a highly capable load testing tool. It is designed for ease of use, maintainability and high performance.\n\nOut of the box, Gatling comes with excellent support of the HTTP protocol that makes it a tool of choice for load testing any HTTP server. As the core engine is actually protocol agnostic, it is perfectly possible to implement support for other protocols. For example, Gatling currently also ships JMS support.\n\nGatling’s architecture is asynchronous as long as the underlying protocol, such as HTTP, can be implemented in a non blocking way. This kind of architecture lets us implement virtual users as messages instead of dedicated threads, making them very resource cheap. Thus, running thousands of concurrent virtual users is not an issue.\n\nVisit the following resources to learn more:",
+    "description": "Gatling is a highly capable load testing tool. It is designed for ease of use, maintainability and high performance. Out of the box, Gatling comes with excellent support of the HTTP protocol that makes it a tool of choice for load testing any HTTP server. As the core engine is actually protocol agnostic, it is perfectly possible to implement support for other protocols. For example, Gatling currently also ships JMS support.\n\nGatling’s architecture is asynchronous as long as the underlying protocol, such as HTTP, can be implemented in a non blocking way. This kind of architecture lets us implement virtual users as messages instead of dedicated threads, making them very resource cheap. Thus, running thousands of concurrent virtual users is not an issue.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Gatling Website",
+        "title": "Gatling",
         "url": "https://gatling.io/",
         "type": "article"
       },
@@ -1649,7 +1675,7 @@
     "description": "Grafana k6 is an open-source load testing tool that makes performance testing easy and productive for engineering teams. k6 is free, developer-centric, and extensible.\n\nUsing k6, you can test the reliability and performance of your systems and catch performance regressions and problems earlier. k6 will help you to build resilient and performant applications that scale.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "k6 Website",
+        "title": "Grafana k6 Website",
         "url": "https://k6.io/",
         "type": "article"
       },
@@ -1665,7 +1691,7 @@
     "description": "Artillery is a modern, powerful & easy-to-use performance testing toolkit. Use it to ship scalable applications that stay performant & resilient under high load.\n\nArtillery prioritizes developer productivity and happiness, and follows the \"batteries-included\" philosophy.\n\nFeatures\n--------\n\n*   Emulate complex user behavior with scenarios\n*   Load testing and smoke testing\n*   Batteries included\n*   Extensible & hackable\n*   Integrations and add-ons\n*   Designed for cross-team collaboration\n*   Planet-scale testing\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Artillery Website",
+        "title": "Artillery",
         "url": "https://www.artillery.io/",
         "type": "article"
       },
@@ -1681,7 +1707,7 @@
     "description": "Vegeta is a versatile HTTP load testing tool built out of a need to drill HTTP services with a constant request rate. It can be used both as a command line utility and a library.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Vegeta Website",
+        "title": "Vegeta",
         "url": "https://github.com/tsenart/vegeta",
         "type": "opensource"
       }
@@ -1692,7 +1718,7 @@
     "description": "Apache JMeter is an Apache project that can be used as a load testing tool for analyzing and measuring the performance of a variety of services, with a focus on web applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Apache JMeter Website",
+        "title": "Apache JMeter",
         "url": "https://jmeter.apache.org/",
         "type": "article"
       },
@@ -1713,7 +1739,7 @@
     "description": "Locust is an easy-to-use, scriptable and scalable performance testing tool. You define the behavior of your users in regular Python code instead of being stuck in a UI or restrictive domain-specific language. This makes Locust infinitely expandable and very developer friendly. Given below are some of the features of Locust.\n\n*   Write test scenarios in plain old Python\n*   Distributed and scalable - supports hundreds of thousands of concurrent users\n*   Web-based UI\n*   Can test any system\n*   Hackable\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Locust Website",
+        "title": "Locust",
         "url": "https://locust.io/",
         "type": "article"
       },
@@ -1742,7 +1768,7 @@
   },
   "75-XdVA4BL6UrcvpC9grx": {
     "title": "Authentication / Authorization",
-    "description": "`Authentication` is the process of verifying that an individual, entity or website is whom it claims to be. Authentication in the context of web applications is commonly performed by submitting a username or ID and one or more items of private information that only a given user should know.\n\n`Authorization` may be defined as \"the process of verifying that a requested action or service is approved for a specific entity\" (NIST). `Authorization` is distinct from authentication which is the process of verifying an entity's identity. When designing and developing a software solution, it is important to keep these distinctions in mind. A user who has been authenticated (perhaps by providing a username and password) is often not authorized to access every resource and perform every action that is technically possible through a system.\n\nFor example, a web app may have both regular users and admins, with the admins being able to perform actions the average user is not privileged to do so, even though they have been authenticated. Additionally, authentication is not always required for accessing resources; an unauthenticated user may be authorized to access certain public resources, such as an image or login page, or even an entire web app.\n\nVisit the following resources to learn more:",
+    "description": "`Authentication` is the process of verifying that an individual, entity or website is whom it claims to be. Authentication in the context of web applications is commonly performed by submitting a username or ID and one or more items of private information that only a given user should know.\n\n`Authorization` may be defined as \"the process of verifying that a requested action or service is approved for a specific entity\" (NIST). `Authorization` is distinct from authentication which is the process of verifying an entity's identity. When designing and developing a software solution, it is important to keep these distinctions in mind. A user who has been authenticated (perhaps by providing a username and password) is often not authorized to access every resource and perform every action that is technically possible through a system.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "OWASP Website",
@@ -1774,7 +1800,7 @@
   },
   "YV6ST78AH4J0i2Rw9zhZj": {
     "title": "Secrets Management",
-    "description": "Secrets Management is a systematic way of in managing, storing, securing, and retrieving credentials for any systems, database, and other services.\n\nCredentials such as passwords, SSH keys, certificates, API keys, backup codes, and more.\n\nVisit the following resources to learn more:",
+    "description": "Secrets Management is a systematic way of in managing, storing, securing, and retrieving credentials for any systems, database, and other services. Credentials such as passwords, SSH keys, certificates, API keys, backup codes, and more.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "AWS Secrets Management Website",
@@ -1867,9 +1893,9 @@
     "description": "Gmail-tester is a simple Node.js Gmail client which checks/returns email message(s) straight from any Gmail-powered account (both private and company).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Gmail-tester Website",
+        "title": "Gmail-tester Package",
         "url": "https://www.npmjs.com/package/gmail-tester",
-        "type": "article"
+        "type": "opensource"
       },
       {
         "title": "Using the gmail-tester + Puppeteer to poll Gmail inbox",
@@ -1930,7 +1956,7 @@
         "type": "article"
       },
       {
-        "title": "Allure Official Docs",
+        "title": "Allure Docs",
         "url": "https://docs.qameta.io/allure-report/",
         "type": "article"
       }
@@ -1949,20 +1975,26 @@
   },
   "pJvijtG-a0vOq16EFu3Gr": {
     "title": "Monitoring & Logs",
-    "description": "DevOps monitoring entails overseeing the entire development process from planning, development, integration and testing, deployment, and operations. It involves a complete and real-time view of the status of applications, services, and infrastructure in the production environment. Features such as real-time streaming, historical replay, and visualizations are critical components of application and service monitoring.",
-    "links": []
+    "description": "DevOps monitoring entails overseeing the entire development process from planning, development, integration and testing, deployment, and operations. It involves a complete and real-time view of the status of applications, services, and infrastructure in the production environment. Features such as real-time streaming, historical replay, and visualizations are critical components of application and service monitoring.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Two Pillars of Modern QA - Errors and Logs",
+        "url": "https://medium.com/@mohsenny/the-two-pillars-of-modern-qa-from-error-prevention-to-post-release-monitoring-4c11cc99fe14",
+        "type": "article"
+      }
+    ]
   },
   "8CztIu0BOPZZRZsqR9asW": {
     "title": "Grafana",
     "description": "Grafana is the open-source platform for monitoring and observability. It allows you to query, visualize, alert on and understand your metrics no matter where they are stored.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Grafana Website",
+        "title": "Grafana",
         "url": "https://grafana.com/",
         "type": "article"
       },
       {
-        "title": "Grafana Official Documentation",
+        "title": "Grafana Documentation",
         "url": "https://grafana.com/docs/",
         "type": "article"
       },
@@ -1988,7 +2020,7 @@
     "description": "New Relic is an observability platform that helps you build better software. You can bring in data from any digital source so that you can fully understand your system and how to improve it.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "New Relic Website",
+        "title": "New Relic",
         "url": "https://newrelic.com/",
         "type": "article"
       },
@@ -2009,7 +2041,7 @@
     "description": "A Simple Tool for Monitoring Complex APIs. Verify that the structure and content of your API calls meets your expectations. Powerful and flexible assertions give you total control over defining a successful API call.\n\nCreate simple monitors with dynamic data for even the most complex use cases. More than simple string matching, build API validations without any code and use them across local dev, staging and production environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Runscope Website",
+        "title": "Runscope",
         "url": "https://www.runscope.com",
         "type": "article"
       }
@@ -2020,8 +2052,13 @@
     "description": "Sentry tracks your software performance, measuring metrics like throughput and latency, and displaying the impact of errors across multiple systems. Sentry captures distributed traces consisting of transactions and spans, which measure individual services and individual operations within those services.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Sentry Website",
+        "title": "Sentry",
         "url": "https://sentry.io",
+        "type": "article"
+      },
+      {
+        "title": "Sentry Documentation",
+        "url": "https://docs.sentry.io/",
         "type": "article"
       }
     ]
@@ -2031,7 +2068,7 @@
     "description": "Kibana is a free and open user interface that lets you visualize your Elasticsearch data and navigate the Elastic Stack. Do anything from tracking query load to understanding the way requests flow through your apps.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Elastic Kibana Website",
+        "title": "Elastic Kibana",
         "url": "https://www.elastic.co/kibana/",
         "type": "article"
       },
@@ -2052,12 +2089,12 @@
     "description": "Datadog is a monitoring and analytics platform for large-scale applications. It encompasses infrastructure monitoring, application performance monitoring, log management, and user-experience monitoring. Datadog aggregates data across your entire stack with 400+ integrations for troubleshooting, alerting, and graphing.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Datadog Website",
+        "title": "Datadog",
         "url": "https://www.datadoghq.com/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Datadog Documentation",
         "url": "https://docs.datadoghq.com/",
         "type": "article"
       }
@@ -2107,8 +2144,13 @@
   },
   "WrqKdOTRUiOnc1aIhTZeB": {
     "title": "Git",
-    "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
+    "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/",
+        "type": "article"
+      },
       {
         "title": "Learn Git with Tutorials, News and Tips - Atlassian",
         "url": "https://www.atlassian.com/git",
@@ -2141,18 +2183,18 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GitHub Website",
+        "title": "Visit Dedicated Github Roadmap",
+        "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "GitHub",
         "url": "https://github.com",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitHub Documentation",
         "url": "https://docs.github.com/en/get-started/quickstart",
-        "type": "article"
-      },
-      {
-        "title": "How to Use Git in a Professional Dev Team",
-        "url": "https://ooloo.io/project/github-flow",
         "type": "article"
       },
       {
@@ -2184,10 +2226,10 @@
   },
   "4xlbvY7NS3cemSZsEQAkD": {
     "title": "Bitbucket",
-    "description": "Bitbucket is a Git based hosting and source code repository service that is Atlassian's alternative to other products like GitHub, GitLab etc\n\nBitbucket offers hosting options via Bitbucket Cloud (Atlassian's servers), Bitbucket Server (customer's on-premise) or Bitbucket Data Centre (number of servers in customers on-premise or cloud environment)\n\nVisit the following resources to learn more:",
+    "description": "Bitbucket is a Git based hosting and source code repository service that is Atlassian's alternative to other products like GitHub, GitLab etc.\n\nBitbucket offers hosting options via Bitbucket Cloud (Atlassian's servers), Bitbucket Server (customer's on-premise) or Bitbucket Data Centre (number of servers in customers on-premise or cloud environment)\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Bitbucket Website",
+        "title": "Bitbucket",
         "url": "https://bitbucket.org/product",
         "type": "article"
       },
@@ -2212,7 +2254,7 @@
         "type": "article"
       },
       {
-        "title": "Bitbucket tutorial | How to use Bitbucket Cloud",
+        "title": "How to Use Bitbucket Cloud",
         "url": "https://www.youtube.com/watch?v=M44nEyd_5To",
         "type": "video"
       },
@@ -2228,9 +2270,9 @@
     "description": "GitLab is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GitLab Website",
+        "title": "GitLab",
         "url": "https://gitlab.com/",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitLab Documentation",
@@ -2275,7 +2317,7 @@
     "description": "CircleCI is a CI/CD service that can be integrated with GitHub, BitBucket and GitLab repositories. The service that can be used as a SaaS offering or self-managed using your own resources.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "CircleCI Website",
+        "title": "CircleCI",
         "url": "https://circleci.com/",
         "type": "article"
       },
@@ -2298,15 +2340,15 @@
   },
   "3oDyxhhbCCqxuCh1sT9VC": {
     "title": "Drone",
-    "description": "Drone is a CI/CD service offering by [Harness](https://harness.io/). Each build runs on an isolated Docker container, and Drone integrates with many popular source code management repositories like GitHub, BitBucket and GitLab\n\nVisit the following resources to learn more:",
+    "description": "Drone is a CI/CD service offering by Harness. Each build runs on an isolated Docker container, and Drone integrates with many popular source code management repositories like GitHub, BitBucket and GitLab\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Drone Website",
+        "title": "Drone",
         "url": "https://www.drone.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Drone Documentation",
         "url": "https://docs.drone.io/",
         "type": "article"
       },
@@ -2322,7 +2364,7 @@
     "description": "Jenkins is an open-source CI/CD automation server. Jenkins is primarily used for building projects, running tests, static code analysis and deployments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Jenkins Website",
+        "title": "Jenkins",
         "url": "https://www.jenkins.io/",
         "type": "article"
       },
@@ -2374,9 +2416,9 @@
     "description": "GitLab offers a CI/CD service that can be used as a SaaS offering or self-managed using your own resources. You can use GitLab CI with any GitLab hosted repository, or any BitBucket Cloud or GitHub repository in the GitLab Premium self-managed, GitLab Premium SaaS and higher tiers.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GitLab Website",
+        "title": "GitLab",
         "url": "https://gitlab.com/",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitLab Documentation",
@@ -2410,12 +2452,12 @@
     "description": "Bamboo is a CI/CD service provided by Atlassian. Bamboo is primarily used for automating builds, tests and releases in a single workflow.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Bamboo Website",
+        "title": "Bamboo",
         "url": "https://www.atlassian.com/software/bamboo",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Bamboo Documentation",
         "url": "https://confluence.atlassian.com/bamboo/bamboo-documentation-289276551.html",
         "type": "article"
       },
@@ -2431,12 +2473,12 @@
     "description": "TeamCity is a CI/CD service provided by JetBrains. TeamCity can be used as a SaaS offering or self-managed using your own resources.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TeamCity Website",
+        "title": "TeamCity",
         "url": "https://www.jetbrains.com/teamcity/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "TeamCity Documentation ",
         "url": "https://www.jetbrains.com/help/teamcity/teamcity-documentation.html",
         "type": "article"
       },
@@ -2457,12 +2499,12 @@
     "description": "Azure DevOps is developed by Microsoft as a full scale application lifecycle management and CI/CD service. Azure DevOps provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Azure DevOps Website",
+        "title": "Azure DevOps",
         "url": "https://azure.microsoft.com/en-us/services/devops/#overview",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Azure Documentation",
         "url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops&viewFallbackFrom=vsts",
         "type": "article"
       },
@@ -2525,7 +2567,7 @@
     "description": "Zombie.js allows you to run Unit or Integration tests without a real web browser. Instead, it uses a simulated browser where it stores the HTML code and runs the JavaScript you may have in your HTML page. This means that an HTML page doesn’t need to be displayed, saving precious time that would otherwise be occupied rendering it.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Zombie.js Website",
+        "title": "Zombie.js",
         "url": "http://zombie.js.org/",
         "type": "article"
       },
@@ -2546,7 +2588,7 @@
     "description": "Puppeteer is a Node library that provides a high-level API to control headless Chrome or Chromium browsers over the DevTools Protocol. It can also be configured to use full (non-headless) Chrome or Chromium.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Puppeteer Website",
+        "title": "Puppeteer",
         "url": "https://pptr.dev/",
         "type": "article"
       },
@@ -2578,13 +2620,23 @@
     "description": "Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha – a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Cypress",
         "url": "https://www.cypress.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Cypress Documentation",
         "url": "https://docs.cypress.io/guides/overview/why-cypress#Other",
+        "type": "article"
+      },
+      {
+        "title": "How it Works",
+        "url": "https://www.cypress.io/how-it-works",
+        "type": "article"
+      },
+      {
+        "title": "Cypress - End to End Testing Framework",
+        "url": "https://dev.to/bushraalam/cypress-end-to-end-testing-framework-3naa",
         "type": "article"
       },
       {
@@ -2595,6 +2647,11 @@
       {
         "title": "Cypress End-to-End Testing",
         "url": "https://www.youtube.com/watch?v=7N63cMKosIE",
+        "type": "video"
+      },
+      {
+        "title": "Cypress Tips & Tricks",
+        "url": "https://www.youtube.com/watch?v=PZ2OsLBts1E&list=PLP9o9QNnQuAYYRpJzDNWpeuOVTwxmIxcI",
         "type": "video"
       }
     ]
@@ -2631,7 +2688,7 @@
     "description": "HtmlUnit is a \"GUI-Less browser for Java programs\". It models HTML documents and provides an API that allows you to invoke pages, fill out forms, click links, etc... just like you do in your \"normal\" browser. It has fairly good JavaScript support (which is constantly improving) and is able to work even with quite complex AJAX libraries, simulating Chrome, Firefox or Internet Explorer depending on the configuration used.\n\nHtmlUnit is not a generic unit testing framework. It is specifically a way to simulate a browser for testing purposes and is intended to be used within another testing framework such as JUnit or TestNG.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "HtmlUnit Website",
+        "title": "HtmlUnit",
         "url": "https://htmlunit.sourceforge.io/",
         "type": "article"
       },
