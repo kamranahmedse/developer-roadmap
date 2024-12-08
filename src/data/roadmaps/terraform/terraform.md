@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/terraform.json'
 pdfUrl: '/pdfs/roadmaps/terraform.pdf'
 order: 15
 briefTitle: 'Terraform'
-briefDescription: 'Step by step guide to learning Terraform in 2024'
+briefDescription: 'Step by step guide to learn Terraform in 2024'
 title: 'Terraform Roadmap'
-description: 'Step by step guide to learning Terraform in 2024'
+description: 'Step by step guide to learn Terraform in 2024'
 isNew: false
 hasTopics: true
 dimensions:

@@ -4,6 +4,6 @@ HCP (HashiCorp Cloud Platform) authentication provides secure access management 
 
 Learn more from the following resources:
 
-- [@official@hcp auth login](https://developer.hashicorp.com/hcp/docs/cli/commands/auth/login)
-- [@article@Authenticate with HCP](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/auth)
+- [@official@HCP Authentication](https://developer.hashicorp.com/hcp/docs/cli/commands/auth/login)
+- [@official@Authenticate with HCP](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/auth)
 - [@opensource@hashicorp/hcp-auth-login](https://github.com/hashicorp/hcp-auth-action)

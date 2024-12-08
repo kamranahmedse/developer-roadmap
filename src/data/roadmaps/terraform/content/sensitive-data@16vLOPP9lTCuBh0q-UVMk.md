@@ -5,5 +5,5 @@ Terraform state files often contain sensitive data like passwords, API keys, and
 Learn more from the following resources:
 
 - [@official@Sensitive data in state](https://developer.hashicorp.com/terraform/language/state/sensitive-data)
-- [@article@Handling Sensitive Values in State](https://developer.hashicorp.com/terraform/plugin/best-practices/sensitive-state)
+- [@official@Handling Sensitive Values in State](https://developer.hashicorp.com/terraform/plugin/best-practices/sensitive-state)
 - [@video@Terraform — Protecting Sensitive Data](https://www.youtube.com/watch?v=yLc1YkB7DFo)

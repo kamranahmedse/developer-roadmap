@@ -4,6 +4,6 @@ Checkov is an open-source static code analysis tool designed for scanning Infras
 
 Learn more from the following resources:
 
-- [@official@Checkov Website](https://www.checkov.io/)
+- [@official@Checkov](https://www.checkov.io/)
 - [@opensource@bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
 - [@article@Scanning Terraform Code with Checkov](https://devopscube.com/terraform-checkov-scan/)

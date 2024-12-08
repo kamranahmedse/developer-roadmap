@@ -6,6 +6,6 @@ Creation-time provisioners that fail will cause the resource creation to fail, p
 
 Learn more from the following resources:
 
-- [@official@Creation time provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#creation-time-provisioners)
-- [@official@Destroy time provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#destroy-time-provisioners)
-- [@article@How to: Terraform destroy time provisioners](https://support.hashicorp.com/hc/en-us/articles/11119084989587-How-to-Terraform-Destroy-time-Provisioners)
+- [@official@Creation Time Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#creation-time-provisioners)
+- [@official@Destroy Time Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#destroy-time-provisioners)
+- [@official@How to: Terraform destroy time provisioners](https://support.hashicorp.com/hc/en-us/articles/11119084989587-How-to-Terraform-Destroy-time-Provisioners)

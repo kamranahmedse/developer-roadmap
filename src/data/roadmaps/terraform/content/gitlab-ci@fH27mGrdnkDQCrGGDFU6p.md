@@ -4,6 +4,6 @@ Using Terraform with GitLab CI enables automated infrastructure management withi
 
 Learn more from the following resources:
 
-- [@article@Infrastructure as Code with Terraform and GitLab](https://docs.gitlab.com/ee/user/infrastructure/iac/)
+- [@official@Infrastructure as Code with Terraform and GitLab](https://docs.gitlab.com/ee/user/infrastructure/iac/)
 - [@article@How to Implement GitLab CI/CD Pipeline with Terraform](https://spacelift.io/blog/gitlab-terraform)
 - [@video@Automate deploying to AWS using Terraform with GitLab CICD pipeline](https://www.youtube.com/watch?v=oqOzM_WBqZc)

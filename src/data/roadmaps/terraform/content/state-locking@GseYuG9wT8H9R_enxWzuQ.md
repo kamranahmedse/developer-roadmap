@@ -5,5 +5,5 @@ Terraform state locking is a mechanism that prevents concurrent modifications to
 Learn more from the following resources:
 
 - [@official@State - Locking](https://developer.hashicorp.com/terraform/language/state/locking)
-- [@article@State Storage and Locking](https://developer.hashicorp.com/terraform/language/state/backends)
+- [@official@State Storage and Locking](https://developer.hashicorp.com/terraform/language/state/backends)
 - [@video@Terraform - State locking](https://www.youtube.com/watch?v=QdDCUpggmrw)

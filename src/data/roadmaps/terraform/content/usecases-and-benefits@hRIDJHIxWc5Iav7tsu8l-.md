@@ -4,6 +4,6 @@ Using Terraform offers numerous benefits. It allows you to define your infrastru
 
 Learn more from the following resources:
 
-- [@official@Use Cases](https://developer.hashicorp.com/terraform/intro/use-cases#use-cases)
+- [@official@Use Cases of Terraform](https://developer.hashicorp.com/terraform/intro/use-cases#use-cases)
 - [@article@9 Terraform Use Cases for Your Infrastructure as Code](https://spacelift.io/blog/terraform-use-cases)
 - [@video@What are the Benefits of Using Terraform?](https://www.youtube.com/watch?v=0M4IvedbLJ4)

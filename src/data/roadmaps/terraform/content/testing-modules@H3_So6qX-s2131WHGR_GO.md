@@ -4,6 +4,6 @@ Testing Terraform modules involves validating their functionality, reusability, 
 
 Learn more from the following resources:
 
-- [@official@Write Terraform tests](https://developer.hashicorp.com/terraform/tutorials/configuration-language/test)
-- [@video@Terraform module testing](https://www.youtube.com/watch?v=1LInIWM_2UQ)
-- [@article@Terraform test](https://developer.hashicorp.com/terraform/language/tests)
+- [@official@Write Terraform Tests](https://developer.hashicorp.com/terraform/tutorials/configuration-language/test)
+- [@video@Terraform Module Testing](https://www.youtube.com/watch?v=1LInIWM_2UQ)
+- [@official@Terraform Test](https://developer.hashicorp.com/terraform/language/tests)

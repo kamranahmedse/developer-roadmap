@@ -4,4 +4,4 @@ The validate command helps you make sure your Terraform code is syntactically co
 
 Learn more from the following resources:
 
- - [@article@Terraform Validate practical examples](https://www.env0.com/blog/terraform-validate-command-practical-examples-and-best-practices)
+- [@article@Terraform Validate Examples](https://www.env0.com/blog/terraform-validate-command-practical-examples-and-best-practices)

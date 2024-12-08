@@ -4,7 +4,7 @@ Project initialization in Terraform involves setting up the necessary configurat
 
 Learn more from the following resources:
 
--[@official@Init Command](https://developer.hashicorp.com/terraform/cli/commands/init)
+- [@official@Init Command](https://developer.hashicorp.com/terraform/cli/commands/init)
 - [@official@Initialize Terraform Configuration](https://developer.hashicorp.com/terraform/tutorials/cli/init)
 - [@article@Terraform Init](https://spacelift.io/blog/terraform-init)
 - [@video@Learn Terraform: The Init Command](https://www.youtube.com/watch?v=82lsMLqWjS4)

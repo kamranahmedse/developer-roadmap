@@ -4,5 +4,5 @@ Terraform unit testing focuses on verifying the behavior of individual modules o
 
 Learn more from the following resources:
 
-- [@article@Terraform unit tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#unit-tests)
-- [@official@Integration or unit testing](https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing)
+- [@official@Integration or Unit Testing](https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing)
+- [@article@Terraform Unit Tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#unit-tests)
