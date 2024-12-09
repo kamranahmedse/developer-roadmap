@@ -4,5 +4,5 @@ Terraform variable type constraints specify allowed data types for input variabl
 
 Learn more from the following resources:
 
-- [@official@Variable Type Contraints](https://developer.hashicorp.com/terraform/language/expressions/type-constraints)
+- [@official@Variable Type Constraints](https://developer.hashicorp.com/terraform/language/expressions/type-constraints)
 - [@video@Terraform Type Constraints](https://www.youtube.com/watch?v=hNZiZEQfV4Q)

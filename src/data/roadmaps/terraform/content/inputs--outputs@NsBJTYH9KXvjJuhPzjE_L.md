@@ -6,4 +6,4 @@ When calling a module, inputs are provided as arguments. Outputs, defined using 
 
 Learn more from the following resources:
 
-- [@official@Accessing module output values](https://developer.hashicorp.com/terraform/language/modules/syntax#accessing-module-output-values)
+- [@official@Accessing Module Output Values](https://developer.hashicorp.com/terraform/language/modules/syntax#accessing-module-output-values)

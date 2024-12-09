@@ -6,5 +6,5 @@ Developing custom provisioners requires a deep understanding of Terraform's arch
 
 Learn more from the following resources:
 
-- [@official@Terraform provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
-- [@article@Terraform provisioners - Why you should avoid them](https://spacelift.io/blog/terraform-provisioners)
+- [@official@Terraform Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
+- [@article@Terraform Provisioners - Why you should avoid them](https://spacelift.io/blog/terraform-provisioners)
