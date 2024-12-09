@@ -49,6 +49,8 @@ seo:
 relatedRoadmaps:
   - 'devops'
   - 'backend'
+  - 'system-design'
+  - 'software-design-architecture'
 sitemap:
   priority: 1
   changefreq: 'monthly'

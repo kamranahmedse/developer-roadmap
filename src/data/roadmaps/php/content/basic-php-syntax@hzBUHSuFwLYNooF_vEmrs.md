@@ -1,0 +1,1 @@
+# Basic PHP Syntax
