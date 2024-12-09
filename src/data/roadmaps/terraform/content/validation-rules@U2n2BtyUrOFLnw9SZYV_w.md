@@ -4,4 +4,4 @@ Validation rules can be used to specify custom validations to a variable. The mo
 
 Learn more from the following resources:
 
-- [@offical@Custom Validation Rules](https://developer.hashicorp.com/terraform/language/values/variables#custom-validation-rules)
+- [@official@Custom Validation Rules](https://developer.hashicorp.com/terraform/language/values/variables#custom-validation-rules)

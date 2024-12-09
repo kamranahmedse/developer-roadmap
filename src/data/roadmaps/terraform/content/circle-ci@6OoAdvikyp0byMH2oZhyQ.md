@@ -4,6 +4,6 @@ Integrating Terraform with CircleCI enables automated infrastructure management 
 
 Learn more from the following resources:
 
-- [@official@Deploy infrastructure with Terraform and CircleCI](https://developer.hashicorp.com/terraform/tutorials/automation/circle-ci)
+- [@official@Deploy Infrastructure with Terraform and CircleCI](https://developer.hashicorp.com/terraform/tutorials/automation/circle-ci)
 - [@opensource@CircleCI Terraform Orb](https://circleci.com/developer/orbs/orb/circleci/terraform)
 - [@article@How I deployed terraform resources with CircleCI](https://medium.com/nerd-for-tech/how-i-deployed-terraform-resources-with-circleci-628aa29ed514)

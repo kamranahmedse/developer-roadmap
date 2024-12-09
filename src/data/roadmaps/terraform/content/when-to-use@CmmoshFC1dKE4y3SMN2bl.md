@@ -4,5 +4,5 @@ Provisioners in Terraform should be used judiciously, primarily when other decla
 
 Learn more from the following resources:
 
-- [@article@My thoughts on why you should use Terraform Provisioners as a final option](https://thomasthornton.cloud/2023/05/11/my-thoughts-on-why-you-should-use-terraform-provisioners-as-a-final-option/)
+- [@article@Why You should Use Terraform Provisioners as a Final Option](https://thomasthornton.cloud/2023/05/11/my-thoughts-on-why-you-should-use-terraform-provisioners-as-a-final-option/)
 - [@article@Why Terraform Provisioners Are The Last Resort?](https://k21academy.com/terraform-iac/terraform-provisioners/)
