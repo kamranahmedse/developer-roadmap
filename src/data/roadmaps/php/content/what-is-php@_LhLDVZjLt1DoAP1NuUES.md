@@ -1,1 +1,3 @@
 # What is PHP?
+
+PHP, an acronym for Hypertext Preprocessor, is a popular server-side scripting language favored for web development. It's versatile, dynamic, and can be embedded seamlessly into HTML code. PHP scripts are executed on the server, and the result is sent back to the browser as plain HTML. For example, a basic PHP script to display "Hello, World!" on a webpage would look like this - `<?php echo "Hello, World!"; ?>`. You can learn more about PHP by reading the official PHP documentation [here](https://www.php.net/manual/en/intro-whatis.php).

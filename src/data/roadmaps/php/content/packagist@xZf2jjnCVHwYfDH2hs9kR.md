@@ -1,1 +1,3 @@
 # Packagist
+
+Packagist is the primary package repository for PHP, providing a service for hosting and distributing PHP package dependencies. Developers can use it to upload their PHP packages and share them with other developers globally. In conjunction with Composer, Packagist helps manage package versions and resolve dependencies for PHP, acting as a crucial part of modern PHP development. For example, to install a package from Packagist, you would run the command `composer require vendor/package`. You can find more information and documentation on the official [Packagist website](https://packagist.org/).
