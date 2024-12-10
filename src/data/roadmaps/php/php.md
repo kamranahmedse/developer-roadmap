@@ -16,8 +16,8 @@ schema:
   headline: 'PHP Roadmap'
   description: 'Learn how to use PHP with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/php.png'
-  datePublished: '2023-11-29'
-  dateModified: '2023-11-29'
+  datePublished: '2024-12-10'
+  dateModified: '2024-12-10'
 seo:
   title: 'PHP Roadmap - roadmap.sh'
   description: 'Step by step guide to learn PHP in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
