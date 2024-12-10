@@ -5,3 +5,4 @@ It is a feature in Kubernetes that automatically scales the number of replicas o
 Learn more from the following resources:
 
 - [@official@Horizontal Pod Autoscaling - Documentation](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+- [@article@All you need to know about HorizontalPodAutoscaler](https://aptakube.com/blog/hpa-horizontalpodautoscaler)
