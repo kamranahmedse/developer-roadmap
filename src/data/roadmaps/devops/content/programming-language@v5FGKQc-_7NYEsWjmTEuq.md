@@ -6,4 +6,3 @@ For beginners, Python is often recommended due to its easy-to-read syntax and wi
 Visit the following resources to learn more:
 
 - [@article@Guide to Picking a Language for DevOps](https://cs.fyi/guide/programming-language-for-devops)
-- 
