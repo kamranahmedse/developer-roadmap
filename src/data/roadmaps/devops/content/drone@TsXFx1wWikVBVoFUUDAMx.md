@@ -4,6 +4,6 @@ Drone is an open-source continuous integration (CI) platform built on container 
 
 Visit the following resources to learn more:
 
-- [@official@Drone Website](https://www.drone.io/)
-- [@official@Official Documentation](https://docs.drone.io/)
+- [@official@Drone](https://www.drone.io/)
+- [@official@DroneDocumentation](https://docs.drone.io/)
 - [@video@Drone CI Quickstart](https://www.youtube.com/watch?v=Qf8EHRzAgHQ)

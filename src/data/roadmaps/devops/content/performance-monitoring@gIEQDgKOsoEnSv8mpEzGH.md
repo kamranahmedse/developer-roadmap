@@ -4,7 +4,7 @@ Performance monitoring is the systematic observation and measurement of an IT sy
 
 Learn more from the following resources:
 
-- [@article@Linux commands: exploring virtual memory with vmstat](https://www.redhat.com/sysadmin/linux-commands-vmstat)
+- [@article@Linux Commands: Exploring Virtual Memory with vmstat](https://www.redhat.com/sysadmin/linux-commands-vmstat)
 - [@article@VMstat Man Page](https://man7.org/linux/man-pages/man8/vmstat.8.html)
 - [@article@vmstat tutorial](https://phoenixnap.com/kb/vmstat-command)
 - [@feed@Explore top posts about Monitoring](https://app.daily.dev/tags/monitoring?ref=roadmapsh)

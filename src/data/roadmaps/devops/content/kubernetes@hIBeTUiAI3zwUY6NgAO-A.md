@@ -4,6 +4,7 @@ Kubernetes is an open source container management platform, and the dominant pro
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit Dedicated Kubernetes Roadmap](https://roadmap.sh/kubernetes)
 - [@official@Kubernetes Website](https://kubernetes.io/)
 - [@opensource@kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)
 - [@article@Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care](https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/)

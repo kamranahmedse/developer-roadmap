@@ -4,7 +4,7 @@ A service mesh is a dedicated infrastructure layer that manages communication be
 
 Visit the following resources to learn more:
 
-- [@article@Whats a service mesh?](https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh)
-- [@article@The latest news about service mesh (TNS)](https://thenewstack.io/category/service-mesh/)
-- [@video@Istio & Service Mesh - simply explained in 15 mins](https://www.youtube.com/watch?v=16fgzklcF7Y)
+- [@article@Whats a Service Mesh?](https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh)
+- [@article@The Latest News About Service Mesh (TNS)](https://thenewstack.io/category/service-mesh/)
+- [@video@Istio & Service Mesh - Simply Explained in 15 mins](https://www.youtube.com/watch?v=16fgzklcF7Y)
 - [@feed@Explore top posts about Service Mesh](https://app.daily.dev/tags/service-mesh?ref=roadmapsh)

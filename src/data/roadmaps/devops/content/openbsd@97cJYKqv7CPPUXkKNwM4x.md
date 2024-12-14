@@ -4,5 +4,5 @@ OpenBSD is a free, open-source Unix-like operating system known for its strong f
 
 Visit the following resources to learn more:
 
-- [@official@OpenBSD Website](https://www.openbsd.org/)
+- [@official@OpenBSD](https://www.openbsd.org/)
 - [@video@Installing OpenBSD on the Fastest iMac G3](https://www.youtube.com/watch?v=-7gSMEsF3Q0)
