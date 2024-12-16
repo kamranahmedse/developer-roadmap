@@ -8,13 +8,12 @@ Text editors are software tools used for creating, editing, and managing text fi
 - **Sublime Text**: A feature-rich editor with a focus on speed and a user-friendly interface.
 - **Visual Studio Code**: A modern, open-source editor with built-in support for debugging, extensions, and integration with various development tools.
 
-Each editor offers different features, such as syntax highlighting, code completion, and version control integration, catering to diverse needs in programming and text processing.
 Visit the following resources to learn more:
 
 - [@official@Vim](https://www.vim.org)
-- [@article@Vim Adventures](https://vim-adventures.com/)
 - [@official@GNU Nano](https://www.nano-editor.org/)
 - [@official@GNU Emacs](https://www.gnu.org/software/emacs/)
+- [@article@Vim Adventures](https://vim-adventures.com/)
 - [@video@Vim Tutorial for Beginners](https://www.youtube.com/watch?v=RZ4p-saaQkc)
 - [@video@Linux Crash Course - nano](https://www.youtube.com/watch?v=DLeATFgGM-A)
 - [@video@The Absolute Beginner's Guide to Emacs](https://www.youtube.com/watch?v=48JlgiBpw_I)

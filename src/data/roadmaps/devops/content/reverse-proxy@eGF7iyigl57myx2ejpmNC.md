@@ -5,6 +5,6 @@ A reverse proxy is a server that sits between client devices and backend servers
 Visit the following resources to learn more:
 
 - [@article@What is Reverse Proxy?](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/)
-- [@article@NGINX documentation](https://www.nginx.com/resources/glossary/reverse-proxy-server/)
+- [@article@NGINX Documentation](https://www.nginx.com/resources/glossary/reverse-proxy-server/)
 - [@article@Understanding NGINX as a Reverse Proxy](https://medium.com/globant/understanding-nginx-as-a-reverse-proxy-564f76e856b2)
 - [@video@Proxy vs Reverse Proxy (Real-world Examples)](https://www.youtube.com/watch?v=4NB0NDtOwIQ)
