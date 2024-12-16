@@ -4,5 +4,5 @@ A `CHECK` constraint in SQL is used to enforce data integrity by specifying a co
 
 Learn more from the following resources:
 
-- [@article@CHECK - PostgreSQL](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-check/)
+- [@article@CHECK - PostgreSQL](https://neon.tech/postgresql/postgresql-tutorial/postgresql-check-constraint)
 - [@article@SQL CHECK Constraint](https://www.w3schools.com/sql/sql_check.asp)
