@@ -4,4 +4,4 @@ Configuration files are critical for PHP applications because they help manage d
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation - PHP Config](https://www.php.net/manual/en/ini.list.php)
+- [@official@PHP Config](https://www.php.net/manual/en/ini.list.php)

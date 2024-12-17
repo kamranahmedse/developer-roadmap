@@ -23,4 +23,6 @@ echo $obj->value;
 // And when the script ends, "Object is being destroyed."
 ```
 
-Visit [PHP Constructors and Destructors](https://www.php.net/manual/en/language.oop5.decon.php) for a more detailed look at these vital concepts.
+Visit the following resources to learn more:
+
+- [@official@PHP Constructors and Destructors](https://www.php.net/manual/en/language.oop5.decon.php)

@@ -4,4 +4,4 @@ When you are developing PHP application, security should always be a top priorit
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Auth Mechanisms](https://www.php.net/manual/en/features.http-auth.php)
+- [@official@Auth Mechanisms](https://www.php.net/manual/en/features.http-auth.php)

@@ -14,4 +14,4 @@ In this example, PHP will automatically load the MyClass.php file when the MyCla
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Autloading](https://www.php.net/manual/en/language.oop5.autoload.php)
+- [@official@Autoloading](https://www.php.net/manual/en/language.oop5.autoload.php)

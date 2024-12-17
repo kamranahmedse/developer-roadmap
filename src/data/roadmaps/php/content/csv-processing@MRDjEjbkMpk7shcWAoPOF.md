@@ -11,4 +11,8 @@ if (($handle = fopen("sample.csv", "r")) !== FALSE) {
 }
 ```
 
-In this snippet, PHP reads through each line of the `sample.csv` file, converting each into an array with `fgetcsv()`. You can study more about CSV processing in PHP via the official [PHP documentation](https://php.net/manual/en/ref.fileinfo.php).
+In this snippet, PHP reads through each line of the `sample.csv` file, converting each into an array with `fgetcsv()`.
+
+Visit the following resources to learn more:
+
+- [@official@CSV Processing](https://php.net/manual/en/ref.fileinfo.php)

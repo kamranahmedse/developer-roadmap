@@ -7,4 +7,6 @@ define("PI", 3.14);
 echo PI; // Outputs: 3.14
 ```
 
-For more information, visit the PHP documentation on constants [here](https://www.php.net/manual/en/language.constants.php).
+Visit the following resources to learn more:
+
+- [@official@Constants](https://www.php.net/manual/en/language.constants.php)

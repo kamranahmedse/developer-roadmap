@@ -10,4 +10,5 @@ This command adds the `vendor/package` dependency to your project. The same goes
 
 Visit the following resources to learn more:
 
-- [@official@Composer Official Website](https://getcomposer.org/doc/)
+- [@official@Composer](https://getcomposer.org/)
+- [@official@Composer Documentation](https://getcomposer.org/doc/)

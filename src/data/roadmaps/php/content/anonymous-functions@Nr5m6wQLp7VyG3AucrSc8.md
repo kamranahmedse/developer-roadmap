@@ -16,4 +16,4 @@ In this example, we're creating an anonymous function and assigning it to the va
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Anonymous Functions](https://www.php.net/manual/en/functions.anonymous.php)
+- [@official@Anonymous Functions](https://www.php.net/manual/en/functions.anonymous.php)

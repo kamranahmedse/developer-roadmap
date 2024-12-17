@@ -16,4 +16,9 @@ if(curl_errno($ch)){
 
 curl_close($ch);
 ```
-In this code, we initialize a cURL session, set its options, execute it, then close the session. We also included error handling. PHP's cURL functions are documented in detail at [PHP.net](https://www.php.net/manual/en/book.curl.php).
+
+Visit the following resources to learn more:
+
+- [@official@cURL](https://curl.se/)
+- [@opensource@curl/curl](https://github.com/curl/curl)
+- [@official@cURL in PHP](https://www.php.net/manual/en/book.curl.php)
