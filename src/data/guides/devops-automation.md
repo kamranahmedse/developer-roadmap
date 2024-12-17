@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/what-is-devops-automation-03k11.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-05
 sitemap:

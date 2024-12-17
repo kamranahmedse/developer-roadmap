@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-best-practices-4yhmb.jpg'
 relatedTitle: "Other Guides"
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-26
 sitemap:

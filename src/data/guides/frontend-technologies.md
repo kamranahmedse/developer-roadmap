@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-technologies-fan67.jpg'
 relatedTitle: "Other Guides"
 relatedGuidesId: frontend
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-29
 sitemap:

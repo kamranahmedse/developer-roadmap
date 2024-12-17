@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-devops-automation-tools-aoyls.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-26
 sitemap:
