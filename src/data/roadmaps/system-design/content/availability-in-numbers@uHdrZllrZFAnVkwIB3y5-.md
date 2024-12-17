@@ -52,3 +52,4 @@ To learn more, visit the following links:
 
 - [@article@Availability in System Design](https://www.enjoyalgorithms.com/blog/availability-system-design-concept/)
 - [@article@Uptime calculator: How much downtime corresponds to 99.9 % uptime](https://uptime.is/)
+- [@opensource@Availability in numbers](https://github.com/maxculley/developer-roadmap.git)
