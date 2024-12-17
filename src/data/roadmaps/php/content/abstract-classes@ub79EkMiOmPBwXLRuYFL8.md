@@ -4,4 +4,4 @@ Abstract classes in PHP are those which cannot be instantiated on their own. The
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation](https://www.php.net/manual/en/language.oop5.abstract.php)
+- [@official@Abstract Classes](https://www.php.net/manual/en/language.oop5.abstract.php)

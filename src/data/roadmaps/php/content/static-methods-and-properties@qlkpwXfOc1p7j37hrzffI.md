@@ -14,4 +14,8 @@ class MyClass {
 echo MyClass::myStaticMethod(); 
 ```
 
-In this example, we're directly accessing `myStaticMethod` from `MyClass` without an instantiation. For more detail, check out the PHP documentation [here](https://www.php.net/manual/en/language.oop5.static.php).
+In this example, we're directly accessing `myStaticMethod` from `MyClass` without an instantiation.
+
+Visit the following resources to learn more:
+
+- [@official@Static Methods and Properties](https://www.php.net/manual/en/language.oop5.static.php)

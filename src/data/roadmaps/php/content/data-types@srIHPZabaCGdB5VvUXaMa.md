@@ -9,4 +9,6 @@ $decimalNumber = 12.34;  // Floating-point number
 $boolean = true; // Boolean
 ```
 
-For a deeper dive into PHP's data types, you can check out the official [PHP documentation](https://www.php.net/manual/en/language.types.php).
+Visit the following resources to learn more:
+
+- [@official@Data Types](https://www.php.net/manual/en/language.types.php)

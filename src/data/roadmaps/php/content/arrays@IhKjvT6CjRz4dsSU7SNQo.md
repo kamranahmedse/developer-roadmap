@@ -4,4 +4,4 @@ Arrays in PHP are fundamental data structures that store multiple elements in a 
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Arrays](https://www.php.net/manual/en/language.types.array.php)
+- [@official@Arrays](https://www.php.net/manual/en/language.types.array.php)

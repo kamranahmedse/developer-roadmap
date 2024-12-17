@@ -15,4 +15,7 @@ if ($file) {
     echo 'Error opening file';
 }
 ```
-Check the [official PHP documentation](https://www.php.net/manual/en/book.filesystem.php) for more information on file system functions.
+
+Visit the following resources to learn more:
+
+- [@official@Filesystem Operations](https://www.php.net/manual/en/book.filesystem.php)

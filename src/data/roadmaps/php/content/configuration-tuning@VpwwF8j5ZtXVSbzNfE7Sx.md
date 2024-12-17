@@ -12,4 +12,4 @@ ini_set('max_execution_time', '300');
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation - PHP.ini](https://www.php.net/manual/en/ini.core.php)
+- [@official@Configuration Tuning](https://www.php.net/manual/en/ini.core.php)

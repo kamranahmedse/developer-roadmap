@@ -10,4 +10,8 @@ for ($i = 0; $i < 5; $i++) {
 ?>
 ```
 
-In this example, the loop will execute five times, with $i increasing by one each time, outputting the numbers from 0 to 4. You can find more detailed explanation and examples of loops in PHP in the official PHP documentation [here](https://www.php.net/manual/en/language.control-structures.php).
+In this example, the loop will execute five times, with $i increasing by one each time, outputting the numbers from 0 to 4.
+
+Visit the following resources to learn more:
+
+- [@official@Loops](https://www.php.net/manual/en/language.control-structures.php)

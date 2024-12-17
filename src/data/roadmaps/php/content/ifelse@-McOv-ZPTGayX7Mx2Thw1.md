@@ -11,4 +11,8 @@ if ($number > 5) {
 }
 ```
 
-In this example, the output will be "The number is greater than 5" because the condition evaluated to true. You can find more information on the if/else conditional statements in the [PHP documentation](https://www.php.net/manual/en/control-structures.elseif.php).
+In this example, the output will be "The number is greater than 5" because the condition evaluated to true.
+
+Visit the following resources to learn more:
+
+- [@official@if-else](https://www.php.net/manual/en/control-structures.elseif.php)

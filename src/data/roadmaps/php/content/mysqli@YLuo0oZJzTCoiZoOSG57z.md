@@ -1,6 +1,8 @@
 # MySQLi
 
-MySQLi is a PHP extension that allows PHP programs to connect with MySQL databases. This extension provides the capability to perform queries, retrieve data, and perform complex operations on MySQL databases using PHP. MySQLi comes with an object-oriented and procedural interface and supports prepared statements, multiple statements, and transactions. Here's a basic example of using MySQLi to connect to a MySQL database:
+MySQLi is a PHP extension that allows PHP programs to connect with MySQL databases. This extension provides the capability to perform queries, retrieve data, and perform complex operations on MySQL databases using PHP. MySQLi comes with an object-oriented and procedural interface and supports prepared statements, multiple statements, and transactions. 
+
+Here's a basic example of using MySQLi to connect to a MySQL database:
 
 ```php
 $servername = "localhost";
@@ -17,4 +19,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 ```
-You can get more information about MySQLi from PHP documentation [here](https://www.php.net/manual/en/book.mysqli.php).
+
+Visit the following resources to learn more:
+
+- [@official@MySQLi](https://www.php.net/manual/en/book.mysqli.php)

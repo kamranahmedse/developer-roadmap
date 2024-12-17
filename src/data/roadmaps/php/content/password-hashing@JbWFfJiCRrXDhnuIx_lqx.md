@@ -13,4 +13,7 @@ if (password_verify('mypassword', $hash)) {
     echo 'Invalid password.';
 }
 ```
-Use PHP's built-in functions for password hashing to enhance your application's security. For more information, you can refer to [PHP documentation here](https://www.php.net/manual/en/function.password-hash.php).
+
+Visit the following resources to learn more:
+
+- [@official@Password Hashing](https://www.php.net/manual/en/function.password-hash.php)

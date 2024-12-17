@@ -7,4 +7,8 @@ $myVar = array( "Hello", "World!");
 var_dump($myVar);
 ```
 
-This will output the size of array and details of each element in the array. You can find more examples and usage scenarios on the [PHP official documentation](https://www.php.net/manual/en/function.var-dump.php).
+This will output the size of array and details of each element in the array.
+
+Visit the following resources to learn more:
+
+- [@official@var_dump](https://www.php.net/manual/en/function.var-dump.php)

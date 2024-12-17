@@ -4,4 +4,4 @@ PHP supports object-oriented programming, offering a multi-paradigm way of codin
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Classes](https://www.php.net/manual/en/language.oop5.php)
+- [@official@Classes](https://www.php.net/manual/en/language.oop5.php)

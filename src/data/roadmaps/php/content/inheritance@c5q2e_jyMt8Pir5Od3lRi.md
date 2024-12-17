@@ -20,4 +20,9 @@ $myCar = new Car();
 $myCar->drive(); // Inherits drive method from Vehicle
 $myCar->horn(); // Unique to Car
 ```
-In the above example, the 'Car' class inherits the drive method from the 'Vehicle' class but also has an additional method, horn. This is an illustration of how inheritance in PHP can help to organize your code efficiently and intuitively. Visit PHP's official documentation (https://www.php.net/manual/en/keyword.extends.php) for more details on inheritance.
+
+In the above example, the 'Car' class inherits the drive method from the 'Vehicle' class but also has an additional method, horn. This is an illustration of how inheritance in PHP can help to organize your code efficiently and intuitively.
+
+Visit the following resources to learn more:
+
+- [@official@Inheritance](https://www.php.net/manual/en/keyword.extends.php)

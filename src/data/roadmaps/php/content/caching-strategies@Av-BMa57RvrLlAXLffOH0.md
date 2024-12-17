@@ -4,4 +4,4 @@ Caching Strategies are integral to Performance Optimization in PHP. Caching mini
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation - Opcache](https://www.php.net/manual/en/book.opcache.php)
+- [@official@Opcache](https://www.php.net/manual/en/book.opcache.php)

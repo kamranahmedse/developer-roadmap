@@ -7,4 +7,9 @@ composer require --dev phpstan/phpstan
 ./vendor/bin/phpstan analyse src
 ```
 
-It outputs information about any issues it finds in code. However, to reap the full benefits, understand that these tools require proper configuration and regular usage. Visit the [official PHPStan documentation](https://phpstan.org/user-guide/getting-started) to learn more about static analysis in PHP. The ultimate goal is clean, reliable, and maintainable code.
+It outputs information about any issues it finds in code. However, to reap the full benefits, understand that these tools require proper configuration and regular usage.
+
+Visit the following resources to learn more:
+
+- [@official@PHP Stan](https://phpstan.org/)
+- [@official@PHP Stan - Getting Started](https://phpstan.org/user-guide/getting-started)

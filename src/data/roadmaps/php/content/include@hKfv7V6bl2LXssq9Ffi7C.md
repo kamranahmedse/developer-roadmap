@@ -8,4 +8,8 @@ The 'include' statement in PHP is a useful method for inserting code written in 
 ?>
 ```
 
-In this code snippet, 'filename.php' is the file containing the code that you want to insert. Just replace 'filename.php' with the actual file path you want to include. For the full details, check out the PHP documentation for 'include' [here](https://www.php.net/manual/en/function.include.php).
+In this code snippet, 'filename.php' is the file containing the code that you want to insert. Just replace 'filename.php' with the actual file path you want to include.
+
+Visit the following resources to learn more:
+
+- [@official@include](https://www.php.net/manual/en/function.include.php)

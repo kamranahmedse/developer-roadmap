@@ -4,4 +4,4 @@ Access specifiers, also known as access modifiers, in PHP are keywords used in t
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation](https://www.php.net/manual/en/language.oop5.visibility.php)
+- [@official@Access Specifiers & Visibility](https://www.php.net/manual/en/language.oop5.visibility.php)

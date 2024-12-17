@@ -4,4 +4,4 @@ PHP syntax is generally considered similar to C-style syntax, where code blocks 
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Basic Syntax](https://www.php.net/manual/en/langref.php)
+- [@official@Basic Syntax](https://www.php.net/manual/en/langref.php)

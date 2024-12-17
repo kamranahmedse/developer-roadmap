@@ -12,4 +12,6 @@ Then, run this command in your project directory:
 php-cs-fixer fix /path-to-your-php-files
 ```
 
-You may refer to the official PHP documentation for more in-depth information here: [PHP CS Fixer Documentation](https://cs.symfony.com/).
+Visit the following resources to learn more:
+
+- [@official@CS Fixer](https://cs.symfony.com/)

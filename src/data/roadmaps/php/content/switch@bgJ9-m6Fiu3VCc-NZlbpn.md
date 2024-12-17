@@ -21,4 +21,6 @@ switch ($fruit) {
 
 Switch statements can make your code cleaner and easier to manage, especially when dealing with multiple conditions. 
 
-For more information, see the PHP documentation: [PHP: switch - Manual](https://www.php.net/manual/en/control-structures.switch.php)
+Visit the following resources to learn more:
+
+- [@official@switch](https://www.php.net/manual/en/control-structures.switch.php)

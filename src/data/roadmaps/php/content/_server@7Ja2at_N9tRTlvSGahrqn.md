@@ -10,4 +10,4 @@ echo 'Your IP is: ' . $_SERVER['REMOTE_ADDR'];
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation](https://www.php.net/reserved.variables.server)
+- [@official@$_SERVER](https://www.php.net/reserved.variables.server)

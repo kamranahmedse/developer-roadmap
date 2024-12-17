@@ -4,4 +4,4 @@ Conditionals in PHP, much like in other programming languages, allow for branchi
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation - Control Structures](https://www.php.net/manual/en/language.control-structures.php)
+- [@official@Control Structures](https://www.php.net/manual/en/language.control-structures.php)

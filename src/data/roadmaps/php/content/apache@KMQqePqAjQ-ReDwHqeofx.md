@@ -4,5 +4,5 @@ Apache is a popular web server that can efficiently host PHP applications. Apach
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentations - Apache](https://www.php.net/manual/en/install.unix.apache2.php)
-- [@official@Apache Website](https://httpd.apache.org/)
+- [@official@Apache PHP Documentation](https://www.php.net/manual/en/install.unix.apache2.php)
+- [@official@Apache](https://httpd.apache.org/)

@@ -4,4 +4,4 @@ Arrow functions provide a more concise syntax to create anonymous functions. The
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - Arrow Functions](https://www.php.net/manual/en/functions.arrow.php)
+- [@official@Arrow Functions](https://www.php.net/manual/en/functions.arrow.php)
