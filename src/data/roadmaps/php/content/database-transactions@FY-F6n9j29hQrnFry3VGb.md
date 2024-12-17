@@ -4,4 +4,4 @@ Database transactions in PHP refer to a unit of work performed within a database
 
 Visit the following resources to learn more:
 
-- [@official@PHP Documentation - PDO Transactions](https://www.php.net/manual/en/pdo.transactions.php)
+- [@official@PDO Transactions](https://www.php.net/manual/en/pdo.transactions.php)

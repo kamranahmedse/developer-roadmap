@@ -10,4 +10,8 @@ function greet($name) {
 echo greet("John"); // Outputs: Hello, John
 ```
 
-In the code above, "greet" is a function that takes one parameter "name". It concatenates "Hello, " with the name and returns the result. For more on PHP functions, visit the PHP documentation at [php.net](https://www.php.net/manual/en/language.functions.php).
+In the code above, "greet" is a function that takes one parameter "name". It concatenates "Hello, " with the name and returns the result.
+
+Visit the following resources to learn more:
+
+- [@official@Functions](https://www.php.net/manual/en/language.functions.php)

@@ -11,4 +11,6 @@ greet(); // Outputs: Hello, guest!
 greet("John"); // Outputs: Hello, John!
 ```
 
-In this example, the `greet` function has a default value of "guest" for the `$name` parameter. So, if no argument is given while calling `greet`, it defaults to greet a "guest". If an argument is provided, like `John`, it overrides the default value. Follow this [link](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.default) for the PHP documentation on function arguments.
+In this example, the `greet` function has a default value of "guest" for the `$name` parameter. So, if no argument is given while calling `greet`, it defaults to greet a "guest". If an argument is provided, like `John`, it overrides the default value.
+
+- [@official@Default Parameters](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.default)

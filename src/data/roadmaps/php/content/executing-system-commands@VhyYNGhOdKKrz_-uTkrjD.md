@@ -12,4 +12,6 @@ foreach($output as $out){
 ?>
 ```
 
-The above script runs the 'ls' command that lists all files and directories in the current folder. For more details, check out the official PHP documentation [here](https://www.php.net/manual/en/ref.exec.php).
+Visit the following resources to learn more:
+
+- [@official@Exec Function](https://www.php.net/manual/en/ref.exec.php)
