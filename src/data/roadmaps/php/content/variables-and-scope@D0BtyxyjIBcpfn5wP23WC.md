@@ -11,4 +11,6 @@ function test() {
 test(); //prints 10
 ```
 
-For further understanding on the topic, this link to PHP's official documentation can be useful: [PHP: Variables Scope](https://www.php.net/manual/en/language.variables.scope.php)
+Visit the following resources to learn more:
+
+- [@official@Variables and Scope](https://www.php.net/manual/en/language.variables.scope.php)

@@ -9,4 +9,6 @@ xml_parse($parser, $xml_data);
 xml_parser_free($parser);
 ```
 
-Look into PHP's official documentation on XML Parser for more details: https://www.php.net/manual/en/book.xml.php.
+Visit the following resources to learn more:
+
+- [@official@XML Processing](https://www.php.net/manual/en/book.xml.php)
