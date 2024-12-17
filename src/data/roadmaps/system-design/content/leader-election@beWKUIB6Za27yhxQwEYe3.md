@@ -4,4 +4,4 @@ Coordinate the actions performed by a collection of collaborating instances in a
 
 To learn more, visit the following links:
 
-- [@article@Overview of Leader Election](https://learn.microsoft.com/en-us/azure/architecture/patterns/leader-election)
+- [@article@Leader Election Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/leader-election)
