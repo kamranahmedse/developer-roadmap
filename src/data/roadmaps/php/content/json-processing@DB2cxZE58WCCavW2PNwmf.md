@@ -18,4 +18,7 @@ print_r($decoded);
 
 // Output: Array ( [a] => 1 [b] => 2 [c] => 3 )
 ```
-To master JSON processing in PHP, refer to the official documentation: [PHP JSON Manual](https://www.php.net/manual/en/book.json.php)
+
+Visit the following resources to learn more:
+
+- [@official@JSON Manual](https://www.php.net/manual/en/book.json.php)

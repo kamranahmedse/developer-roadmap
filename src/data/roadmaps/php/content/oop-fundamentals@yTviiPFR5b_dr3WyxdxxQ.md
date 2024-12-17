@@ -14,4 +14,8 @@ $hello = new Hello();
 $hello->displayGreeting(); // Outputs "Hello, world!"
 ```
 
-This snippet defines a class `Hello` with a property `$greeting` and a method `displayGreeting()`. Instances of this class can access these methods and properties. OOP Fundamentals in PHP are much more comprehensive, encompassing concepts like inheritance, encapsulation, and polymorphism. To dive deeper, explore the [official PHP Documentation](https://php.net/manual/en/language.oop5.basic.php).
+This snippet defines a class `Hello` with a property `$greeting` and a method `displayGreeting()`. Instances of this class can access these methods and properties. OOP Fundamentals in PHP are much more comprehensive, encompassing concepts like inheritance, encapsulation, and polymorphism.
+
+Visit the following resources to learn more:
+
+- [@official@OOP](https://php.net/manual/en/language.oop5.basic.php)

@@ -10,4 +10,9 @@ function addNumbers($num1, $num2) {
 
 echo addNumbers(3, 4);  // Outputs: 7
 ```
-In the above code, `$num1` and `$num2` are parameters, and the sum of these numbers is the return value. To deepen your understanding, visit PHP function parameters and return values guide on the [official PHP website](https://www.php.net/manual/en/functions.arguments.php).
+
+In the above code, `$num1` and `$num2` are parameters, and the sum of these numbers is the return value.
+
+Visit the following resources to learn more:
+
+- [@official@Parameters / Return Values](https://www.php.net/manual/en/functions.arguments.php)

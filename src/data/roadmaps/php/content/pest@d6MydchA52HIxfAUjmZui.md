@@ -8,4 +8,8 @@ it('has homepage', function () {
     $response->assertStatus(200);
 });
 ```
-It simplifies your testing workflow and makes it more readable and impactful. Check out the official Pest documentation at https://pestphp.com/.
+
+Visit the following resources to learn more:
+
+- [@official@Pest](https://pestphp.com/)
+- [@official@Pest Installation](https://pestphp.com/docs/installation)

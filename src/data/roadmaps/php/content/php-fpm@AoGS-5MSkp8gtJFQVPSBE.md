@@ -11,4 +11,8 @@ location ~ \.php$ {
     include fastcgi_params;
 }
 ```
-Here `$uri` is the incoming request and `fastcgi_pass` should be the location where PHP-FPM listens. Visit this [link](https://www.php.net/manual/en/install.fpm.php) to learn more on installing and configuring PHP-FPM.
+Here `$uri` is the incoming request and `fastcgi_pass` should be the location where PHP-FPM listens.
+
+Visit the following resources to learn more:
+
+- [@official@PHP FPM](https://www.php.net/manual/en/install.fpm.php)

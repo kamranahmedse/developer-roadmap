@@ -10,4 +10,8 @@ require_once('somefile.php');
 ?>
 ```
 
-This code fetches all the functions and codes from 'somefile.php' and includes them in the current file. You can check more about this statement on the official PHP documentation: [require_once](https://www.php.net/manual/en/function.require-once.php)
+This code fetches all the functions and codes from 'somefile.php' and includes them in the current file.
+
+Visit the following resources to learn more:
+
+- [@official@require_once](https://www.php.net/manual/en/function.require-once.php)

@@ -1,6 +1,7 @@
 # Phan
 
-Phan is a static analysis tool specially made for PHP language, greatly useful in catching common issues in the code before execution. It can analyze the syntax and behaviors in PHP code, detecting problems such as undeclared variables, type inconsistencies, uncaught exceptions, and more. Interestingly, Phan has a particular strength — it understands the relationships among PHP's different features, making the tool effective in finding subtle, complicated bugs. To use it, simply install it using composer and run the command 'phan' in your project directory. Want to learn more? The official PHP documentation can support you: [PHP Documentation](https://www.php.net/manual/en/).
+Phan is a static analysis tool specially made for PHP language, greatly useful in catching common issues in the code before execution. It can analyze the syntax and behaviors in PHP code, detecting problems such as undeclared variables, type inconsistencies, uncaught exceptions, and more. Interestingly, Phan has a particular strength — it understands the relationships among PHP's different features, making the tool effective in finding subtle, complicated bugs. To use it, simply install it using composer and run the command 'phan' in your project directory.
+
 ```php
 <?php
 // Phan sample usage
@@ -15,3 +16,8 @@ $code = "<?php function add(int $a, int $b): int { return $a + $b; } echo add('h
 Phan::analyzeFile('test.php', $code);
 ```
 Above is a basic sample of using Phan. It checks for a type error in a PHP function.
+
+Visit the following resources to learn more:
+
+- [@official@Phan](https://phan.github.io/)
+- [@opensource@phan/phan](https://github.com/phan/phan)

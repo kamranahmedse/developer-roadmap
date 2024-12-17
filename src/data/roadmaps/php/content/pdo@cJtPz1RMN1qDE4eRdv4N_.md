@@ -13,4 +13,7 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 ```
-You can learn more about PDO at the official PHP documentation site: [PHP: PDO - Manual](https://www.php.net/manual/en/book.pdo.php).
+
+Visit the following resources to learn more:
+
+- [@official@Data Objects](https://www.php.net/manual/en/book.pdo.php)

@@ -23,4 +23,8 @@ class StackTest extends TestCase
 }
 ?>
 ```
-In this example, we’re testing the 'push' and 'pop' functionality of an array. Want to go deeper into PHPUnit? Check out the [PHP documentation](https://phpunit.de/getting-started/phpunit-7.html).
+In this example, we’re testing the 'push' and 'pop' functionality of an array.
+
+Visit the following resources to learn more:
+
+- [@official@PHP Unit](https://phpunit.de/getting-started/phpunit-7.html)

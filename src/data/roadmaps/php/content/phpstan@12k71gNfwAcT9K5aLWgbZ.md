@@ -4,11 +4,14 @@ PHPStan is a static analysis tool for PHP that focuses on discovering bugs in yo
 
 Here's a basic example of how you can use PHPStan:
 
-```
+```shell
 // install PHPStan using composer
 $ composer require --dev phpstan/phpstan
 
 // analyse your code
 $ vendor/bin/phpstan analyse src
 ```
-For more advanced configuration and usage options, refer to the [PHPStan documentation](https://phpstan.org/user-guide/getting-started).
+
+Visit the following resources to learn more:
+
+- [@official@PHP Stan](https://phpstan.org/user-guide/getting-started)

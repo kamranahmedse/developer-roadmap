@@ -8,4 +8,8 @@ include_once 'database.php';
 $db = new Database();
 ```
 
-In this simple code snippet, we include the `database.php` file once, giving us access to the `Database` class. You can find reference in the PHP Documentation [here](https://www.php.net/manual/en/function.include-once.php).
+In this simple code snippet, we include the `database.php` file once, giving us access to the `Database` class.
+
+Visit the following resources to learn more:
+
+- [@official@include_once](https://www.php.net/manual/en/function.include-once.php)

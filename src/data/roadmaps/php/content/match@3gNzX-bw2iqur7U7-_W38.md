@@ -9,4 +9,8 @@ $message = match ($statusCode) {
   default => 'unknown status code',
 };
 ```
-In this code, based on the value of `$statusCode`, the `match` expression assigns a specific text to the `$message`. If `$statusCode` is not 200, 300, or 400, the `default` case applies. After running the code, the `$message` variable contains the result of the `match` expression. You can learn more about `match` expressions in PHP documentation: https://www.php.net/manual/en/control-structures.match.php.
+In this code, based on the value of `$statusCode`, the `match` expression assigns a specific text to the `$message`. If `$statusCode` is not 200, 300, or 400, the `default` case applies. After running the code, the `$message` variable contains the result of the `match` expression.
+
+Visit the following resources to learn more:
+
+- [@official@match](https://www.php.net/manual/en/control-structures.match.php)

@@ -12,4 +12,8 @@ function countDown($count) {
 countDown(5);
 ```
 
-In this example, the function `countDown` calls itself until the count hits zero, displaying numbers from 5 to 0. To learn more about recursive functions, the PHP documentation is a helpful resource. Here's a direct link to it: [PHP Documentation](https://www.php.net/manual/en/language.functions.php).
+In this example, the function `countDown` calls itself until the count hits zero, displaying numbers from 5 to 0.
+
+Visit the following resources to learn more:
+
+- [@official@Functions - Recursion](https://www.php.net/manual/en/language.functions.php)

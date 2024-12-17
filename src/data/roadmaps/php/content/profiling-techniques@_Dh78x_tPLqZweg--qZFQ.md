@@ -8,4 +8,6 @@ xdebug_start_trace();
 xdebug_stop_trace();
 ```
 
-For more details, refer to the Xdebug documentation on the [PHP website](https://xdebug.org/docs/profiler).
+Visit the following resources to learn more:
+
+- [@official@Xdebug Profiler](https://xdebug.org/docs/profiler)

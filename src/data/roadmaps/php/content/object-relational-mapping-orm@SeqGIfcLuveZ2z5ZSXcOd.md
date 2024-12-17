@@ -9,4 +9,6 @@ $entityManager->persist($product);
 $entityManager->flush();
 ```
 
-You can see a more detailed explanation about it at the PHP documentation on [Object Relational Mapping (ORM)](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/tutorials/getting-started.html).
+Visit the following resources to learn more:
+
+- [@article@Object Relational Mapping (ORM)](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/tutorials/getting-started.html)
