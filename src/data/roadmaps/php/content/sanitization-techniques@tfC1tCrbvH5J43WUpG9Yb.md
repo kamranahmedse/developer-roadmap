@@ -8,4 +8,6 @@ $clean_data = filter_var($dirty_data, FILTER_SANITIZE_STRING);
 echo $clean_data;
 ``` 
 
-This will effectively remove any malicious scripts from the text. Take a look at the resource in the [PHP documentation](https://www.php.net/manual/en/function.filter-var.php) for more details.
+Visit the following resources to learn more:
+
+- [@official@Sanitization Techniques](https://www.php.net/manual/en/function.filter-var.php)
