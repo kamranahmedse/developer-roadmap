@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Types Assertions](https://go.dev/tour/methods/15)
 - [@video@Go Syntax - Type Assertions](https://youtube.com/watch?v=vtGbi9bGr3s)
+- [@article@Golang - Type Assertions](https://www.programiz.com/golang/type-assertions)
