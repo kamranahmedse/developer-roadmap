@@ -9,7 +9,7 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
-import type { Edge, Node } from 'reactflow';
+import type { Edge, Node } from '@xyflow/react';
 import { Renderer } from '../../../editor/renderer';
 import { slugify } from '../../lib/slugger';
 import { isLoggedIn } from '../../lib/jwt';

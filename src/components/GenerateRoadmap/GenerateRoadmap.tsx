@@ -274,6 +274,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
             width: undefined,
             height: undefined,
           },
+          measured: {
+            width: undefined,
+            height: undefined,
+          },
         })),
         edges,
       },
@@ -720,7 +724,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         </div>
         <div
           className={cn({
-            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px]  md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
+            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px] md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
               !isAuthenticatedUser,
           })}
         >
