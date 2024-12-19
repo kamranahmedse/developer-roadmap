@@ -169,6 +169,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development', 'DevOps'],
       },
       {
+        title: 'PHP',
+        link: '/php',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
         title: 'C++',
         link: '/cpp',
         type: 'skill',

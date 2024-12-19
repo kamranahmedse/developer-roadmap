@@ -4,6 +4,6 @@ Terraform end-to-end testing involves validating the entire infrastructure deplo
 
 Learn more from the following resources:
 
-- [@artice@Getting Started: End to End Tests](https://tf2project.io/docs/getting-started/end-to-end-tests.html)
+- [@article@Getting Started: End to End Tests](https://tf2project.io/docs/getting-started/end-to-end-tests.html)
 - [@article@End-to-end tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#end-to-end-tests)
 - [@video@End To End Testing On Terraform With Terratest](https://www.youtube.com/watch?v=PlzL6Bv2fSA)

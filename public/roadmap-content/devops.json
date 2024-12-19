@@ -123,7 +123,12 @@
         "type": "course"
       },
       {
-        "title": "The Rust Programming Language - online book",
+        "title": "Visit Dedicated Rust Roadmap",
+        "url": "https://roadmap.sh/rust",
+        "type": "article"
+      },
+      {
+        "title": "The Rust Programming Language - Online Book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
       },
@@ -319,7 +324,7 @@
     "description": "FreeBSD is a free, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD). Known for its stability, performance, and advanced networking capabilities, FreeBSD is popular for server environments, embedded systems, and as a basis for network appliances. It features a monolithic kernel, a comprehensive set of userland utilities, and a ports collection for easy software installation. FreeBSD supports a wide range of architectures and includes advanced features like the ZFS file system, jails for containerization, and the pf packet filter. While less common in desktop environments, it's widely used in internet infrastructure, storage systems, and by companies requiring a robust, customizable OS with a permissive license.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "FreeBSD Website",
+        "title": "FreeBSD",
         "url": "https://www.freebsd.org/",
         "type": "article"
       },
@@ -329,7 +334,7 @@
         "type": "article"
       },
       {
-        "title": "Official FreeBSD Documentation",
+        "title": "FreeBSD Documentation",
         "url": "https://docs.freebsd.org/en/",
         "type": "article"
       },
@@ -350,7 +355,7 @@
     "description": "OpenBSD is a free, open-source Unix-like operating system known for its strong focus on security, code correctness, and proactive approach to eliminating vulnerabilities. It's renowned for its stringent code review process, integrated cryptography, and default security features like stack protection and memory safeguards. OpenBSD pioneered many security innovations, including OpenSSH, and maintains a \"secure by default\" philosophy. The system is prized for its comprehensive documentation, clean and consistent codebase, and adherence to standards. While primarily used in server environments, especially for firewalls and network appliances, OpenBSD also supports desktop use. Its emphasis on security and stability makes it popular in high-security environments and among developers focused on system-level programming and network security.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "OpenBSD Website",
+        "title": "OpenBSD",
         "url": "https://www.openbsd.org/",
         "type": "article"
       },
@@ -410,7 +415,7 @@
   },
   "wjJPzrFJBNYOD3SJLzW2M": {
     "title": "Terminal Knowledge",
-    "description": "A terminal is simply a text-based interface to the computer, it is used to interact with your computer system via CLI (command line interface)\n\nVisit the following resources to learn more:",
+    "description": "A terminal is simply a text-based interface to the computer, it is used to interact with your computer system via CLI (command line interface).\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is CLI?",
@@ -450,7 +455,7 @@
     "description": "Performance monitoring is the systematic observation and measurement of an IT system's operational efficiency and effectiveness. It involves collecting, analyzing, and reporting on key performance indicators (KPIs) across various components including applications, networks, servers, and databases. This process uses specialized tools to track metrics such as response time, throughput, resource utilization, and error rates. Performance monitoring helps identify bottlenecks, predict potential issues, and optimize system resources. It's crucial for maintaining service level agreements (SLAs), ensuring user satisfaction, and supporting capacity planning. In modern IT environments, performance monitoring often incorporates real-time analytics, AI-driven insights, and automated alerting systems, enabling proactive management of complex, distributed systems and supporting continuous improvement in IT operations and service delivery.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Linux commands: exploring virtual memory with vmstat",
+        "title": "Linux Commands: Exploring Virtual Memory with vmstat",
         "url": "https://www.redhat.com/sysadmin/linux-commands-vmstat",
         "type": "article"
       },
@@ -567,16 +572,11 @@
   },
   "Jt8BmtLUH6fHT2pGKoJs3": {
     "title": "Vim / Nano /  Emacs",
-    "description": "Text editors are software tools used for creating, editing, and managing text files. They range from simple editors with basic features to complex Integrated Development Environments (IDEs). Popular text editors include:\n\n*   **Notepad**: A basic editor for Windows, suitable for simple text files.\n*   **Vim**: A highly configurable and powerful editor known for its efficiency and modal interface.\n*   **Emacs**: A versatile editor with extensive customization options and a wide range of plugins.\n*   **Sublime Text**: A feature-rich editor with a focus on speed and a user-friendly interface.\n*   **Visual Studio Code**: A modern, open-source editor with built-in support for debugging, extensions, and integration with various development tools.\n\nEach editor offers different features, such as syntax highlighting, code completion, and version control integration, catering to diverse needs in programming and text processing. Visit the following resources to learn more:",
+    "description": "Text editors are software tools used for creating, editing, and managing text files. They range from simple editors with basic features to complex Integrated Development Environments (IDEs). Popular text editors include:\n\n*   **Notepad**: A basic editor for Windows, suitable for simple text files.\n*   **Vim**: A highly configurable and powerful editor known for its efficiency and modal interface.\n*   **Emacs**: A versatile editor with extensive customization options and a wide range of plugins.\n*   **Sublime Text**: A feature-rich editor with a focus on speed and a user-friendly interface.\n*   **Visual Studio Code**: A modern, open-source editor with built-in support for debugging, extensions, and integration with various development tools.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Vim",
         "url": "https://www.vim.org",
-        "type": "article"
-      },
-      {
-        "title": "Vim Adventures",
-        "url": "https://vim-adventures.com/",
         "type": "article"
       },
       {
@@ -587,6 +587,11 @@
       {
         "title": "GNU Emacs",
         "url": "https://www.gnu.org/software/emacs/",
+        "type": "article"
+      },
+      {
+        "title": "Vim Adventures",
+        "url": "https://vim-adventures.com/",
         "type": "article"
       },
       {
@@ -611,7 +616,7 @@
     "description": "Version control systems (VCS) are tools that track changes to code and files over time, enabling multiple users to collaborate on projects, maintain history, and manage different versions of codebases. They help in tracking modifications, merging changes, and resolving conflicts. There are two main types of VCS: centralized and distributed. Centralized systems (like Subversion and CVS) rely on a single central repository, while distributed systems (like Git and Mercurial) allow each user to have a complete copy of the repository, including its history. Distributed VCSs, such as Git, are particularly popular for their flexibility, branching capabilities, and robust support for collaborative workflows.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & GitHub",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -652,7 +657,7 @@
         "type": "course"
       },
       {
-        "title": "Learn Git & GitHub",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -709,13 +714,13 @@
     "description": "GitHub is a web-based platform for version control and collaboration using Git. It provides cloud-based Git repository hosting, offering features like bug tracking, task management, and project wikis. GitHub facilitates code review through pull requests, supports issue tracking, and enables social coding with features like forking and starring repositories. It offers both public and private repositories, making it popular for open-source projects and private development. GitHub's ecosystem includes integrations with various development tools and CI/CD platforms. With features like GitHub Actions for automation, GitHub Packages for package management, and GitHub Pages for web hosting, it serves as a comprehensive platform for software development workflows, fostering collaboration among developers worldwide. Visit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & GitHub",
-        "url": "https://roadmap.sh/git-github",
+        "title": "GitHub",
+        "url": "https://github.com",
         "type": "article"
       },
       {
-        "title": "GitHub Website",
-        "url": "https://github.com",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
+        "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
@@ -742,7 +747,7 @@
       {
         "title": "GitLab Website",
         "url": "https://gitlab.com/",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitLab Documentation",
@@ -771,6 +776,11 @@
         "type": "article"
       },
       {
+        "title": "Bitbucket Overview",
+        "url": "https://bitbucket.org/product/guides/getting-started/overview",
+        "type": "article"
+      },
+      {
         "title": "Git and Bitbucket Introduction",
         "url": "https://www.w3schools.com/git/git_intro.asp?remote=bitbucket",
         "type": "article"
@@ -781,7 +791,7 @@
         "type": "article"
       },
       {
-        "title": "Bitbucket tutorial | How to use Bitbucket Cloud",
+        "title": "Bitbucket Tutorial | How to use Bitbucket Cloud",
         "url": "https://www.youtube.com/watch?v=M44nEyd_5To",
         "type": "video"
       }
@@ -854,7 +864,7 @@
     "description": "NGINX is a high-performance, open-source web server, reverse proxy, and load balancer. Known for its efficiency in handling concurrent connections, NGINX uses an event-driven, asynchronous architecture that consumes minimal resources. It excels at serving static content, proxying requests to application servers, and load balancing across multiple backends. NGINX is widely used for its ability to improve website performance, scalability, and security. It supports various protocols including HTTP, HTTPS, SMTP, and WebSocket, and offers features like SSL/TLS termination, caching, and content compression. Popular in both small-scale and enterprise environments, NGINX is a key component in many modern web architectures, particularly in microservices and containerized deployments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Nginx",
         "url": "https://nginx.org/",
         "type": "article"
       },
@@ -885,7 +895,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation(Tomcat 10.0)",
+        "title": "Tomcat Documentation",
         "url": "https://tomcat.apache.org/tomcat-10.0-doc/index.html",
         "type": "article"
       },
@@ -948,7 +958,7 @@
     "description": "Microsoft Internet Information Services (IIS) is a flexible, secure and manageable Web server for hosting anything on the Web. It's an extensible web server created by Microsoft for use with Windows NT family. IIS supports HTTP, HTTPS, FTP, FTPS, SMTP and NNTP. It's been an integral part of the Windows NT family since Windows NT 4.0, and is included with Windows Server versions. IIS features a modular architecture, allowing administrators to customize server functionality. It supports various programming languages and frameworks, particularly [ASP.NET](http://ASP.NET). IIS provides tools for web application deployment, security management, and performance optimization, making it a popular choice for hosting Windows-based web applications in enterprise environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Microsoft IIS",
         "url": "https://www.iis.net/",
         "type": "article"
       },
@@ -1026,7 +1036,7 @@
         "type": "article"
       },
       {
-        "title": "NGINX documentation",
+        "title": "NGINX Documentation",
         "url": "https://www.nginx.com/resources/glossary/reverse-proxy-server/",
         "type": "article"
       },
@@ -1057,7 +1067,7 @@
         "type": "article"
       },
       {
-        "title": "Articles about Containers - The New Stack",
+        "title": "Containers - The New Stack",
         "url": "https://thenewstack.io/category/containers/",
         "type": "article"
       },
@@ -1218,7 +1228,7 @@
     "description": "Google Cloud is Google's cloud computing service offering, providing over 150 products/services to choose from. It consists of a set of physical assets, such as computers and hard disk drives, and virtual resources, such as virtual machines(VMs), that are contained in Google's data centers. It runs on the same infrastructure that Google uses internally for its end-user products, such as Search, Gmail, Google Drive, and YouTube.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Google Cloud Website",
+        "title": "Google Cloud",
         "url": "https://cloud.google.com/",
         "type": "article"
       },
@@ -1244,7 +1254,7 @@
     "description": "DigitalOcean is a cloud infrastructure provider that offers simple, affordable, and developer-friendly virtual private servers, known as \"Droplets.\" It focuses on providing straightforward cloud computing services, including virtual machines, managed databases, object storage, and Kubernetes clusters. DigitalOcean is known for its user-friendly interface, transparent pricing, and extensive documentation, making it popular among developers, startups, and small to medium-sized businesses. The platform emphasizes simplicity and performance, offering features like one-click applications, team management, and a robust API for automation. While not as feature-rich as some larger cloud providers, DigitalOcean's streamlined approach and competitive pricing make it an attractive option for those seeking uncomplicated cloud infrastructure solutions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "DigitalOcean Website",
+        "title": "DigitalOcean",
         "url": "https://www.digitalocean.com/",
         "type": "article"
       },
@@ -1270,12 +1280,12 @@
     "description": "Alibaba Cloud is the cloud computing arm of Alibaba Group, offering a broad range of cloud services and solutions designed to support enterprise IT infrastructure and digital transformation. It provides scalable and flexible cloud computing resources, including virtual machines, storage, databases, and networking. Alibaba Cloud’s services also encompass big data analytics, artificial intelligence, machine learning, and security solutions. Known for its global data center network, it supports businesses with high availability, disaster recovery, and compliance needs. Alibaba Cloud is a key player in the cloud market, particularly in Asia, providing comprehensive tools for businesses to build, deploy, and manage applications and services in the cloud.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Alibaba Cloud Website",
+        "title": "Alibaba Cloud",
         "url": "https://www.alibabacloud.com/",
         "type": "article"
       },
       {
-        "title": "Alibaba Cloud Getting Started Guide",
+        "title": "Getting Started with Alibaba Cloud",
         "url": "https://www.alibabacloud.com/getting-started",
         "type": "article"
       },
@@ -1333,7 +1343,7 @@
     "description": "Contabo is a German web hosting and dedicated server provider known for offering affordable virtual private servers (VPS) and dedicated servers with high performance specifications. They provide a range of hosting solutions, including shared hosting, VPS, dedicated servers, and storage solutions, catering to both individual developers and businesses. Contabo is particularly popular among budget-conscious users for its competitive pricing on high-resource VPS plans. Their services include features like SSD storage, DDoS protection, and data centers in multiple locations. While not as well-known as some larger cloud providers, Contabo has gained a reputation in the hosting community for offering good value for money, especially for users requiring substantial computing resources at lower costs.\n\nVisit the following link to learn more:",
     "links": [
       {
-        "title": "Contabo - Official Website",
+        "title": "Contabo",
         "url": "https://contabo.com/",
         "type": "article"
       }
@@ -1365,7 +1375,7 @@
         "type": "article"
       },
       {
-        "title": "HOw DNS works (comic)",
+        "title": "How DNS Works (comic)",
         "url": "https://howdns.works/",
         "type": "article"
       },
@@ -1557,7 +1567,7 @@
     "description": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) is an email authentication protocol that builds upon SPF and DKIM to protect against email spoofing and phishing attacks. It allows domain owners to specify how email receivers should handle messages that fail authentication checks. DMARC provides a feedback mechanism for domain owners to receive reports on email authentication results, helping them monitor and improve their email security. By implementing DMARC policies, organizations can enhance their email deliverability, protect their brand reputation, and reduce the likelihood of their domain being used in fraudulent email campaigns. DMARC is widely adopted by major email providers and is considered a crucial component of modern email security strategies.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "DMARC Official Website",
+        "title": "DMARC",
         "url": "https://dmarc.org/",
         "type": "article"
       },
@@ -1740,12 +1750,12 @@
     "description": "Vercel is a provider of front-end cloud that provides the infrastructure to build, scale, and secure a faster, more personalized web. In other words, it is a cloud platform designed to simplify the deployment process for web applications, particularly those built with modern frameworks like React, Next, etc. where various projects can be deployed by connecting the GitHub repository in Vercel we can deploy the selected GitHub branch to the Vercel domains. Simultaneously, it provides custom domains to deploy code on live servers. These servers contain the `vercel.app` as the suffix in the domain.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Vercel",
         "url": "https://vercel.com/",
         "type": "article"
       },
       {
-        "title": "Official Docs",
+        "title": "Vercel Docs",
         "url": "https://vercel.com/docs",
         "type": "article"
       },
@@ -1763,7 +1773,7 @@
   },
   "l8VAewSEXzoyqYFhoplJj": {
     "title": "Cloudflare",
-    "description": "Cloudflare is a company that provides a range of services to help protect and accelerate websites and applications. At its core, Cloudflare is a content delivery network (CDN) and a reverse proxy cloud provider. This means that it acts as an intermediary between a website's origin server and its visitors, caching content and filtering out malicious traffic. Cloudflare was founded in July 2009 by Matthew Prince, Lee Holloway, and Michelle Zatlyn. The company was venture-capital funded and submitted its S-1 filing for IPO on the New York Stock Exchange in August 2019. It opened for public trading on September 13, 2019, at $15 per share.\n\nVisit the following resources to learn more:",
+    "description": "Cloudflare is a internet company that provides a range of services to help protect and accelerate websites and applications. At its core, Cloudflare is a content delivery network (CDN) and a reverse proxy cloud provider. This means that it acts as an intermediary between a website's origin server and its visitors, caching content and filtering out malicious traffic. Cloudflare was founded in July 2009 by Matthew Prince, Lee Holloway, and Michelle Zatlyn. The company was venture-capital funded and submitted its S-1 filing for IPO on the New York Stock Exchange in August 2019. It opened for public trading on September 13, 2019, at $15 per share.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare",
@@ -1834,7 +1844,7 @@
     "description": "Netlify Functions are serverless functions that allow developers to run server-side code in a JAMstack environment without managing servers. They are built on AWS Lambda and automatically deploy alongside your Netlify site. These functions can handle tasks like API requests, form submissions, and database operations, enabling dynamic functionality in static sites. They support various languages including JavaScript, TypeScript, and Go. Netlify Functions integrate seamlessly with Netlify's deployment pipeline, offering easy development, testing, and production deployment.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Documentation",
+        "title": "Netlify Documentation",
         "url": "https://docs.netlify.com/platform/primitives/#functions",
         "type": "article"
       },
@@ -1891,12 +1901,12 @@
         "type": "opensource"
       },
       {
-        "title": "AWS CDK Website",
+        "title": "AWS CDK",
         "url": "https://aws.amazon.com/cdk/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "AWS CDK Documentation",
         "url": "https://docs.aws.amazon.com/cdk/index.html",
         "type": "article"
       },
@@ -1912,7 +1922,7 @@
     "description": "AWS CloudFormation is a infrastructure-as-code service that allows users to define and provision AWS infrastructure resources using templates. These templates, written in JSON or YAML, describe the desired AWS resources and their properties. CloudFormation automates the creation, update, and deletion of resources, ensuring consistent and repeatable deployments across multiple environments. It supports a wide range of AWS services and can manage complex interdependencies between resources. CloudFormation also provides features like change sets for previewing changes, nested stacks for modular designs, and drift detection to identify manual changes. This service enables teams to version control their infrastructure, implement best practices, and streamline the management of AWS resources throughout their lifecycle.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "AWS CloudFormation Website",
+        "title": "AWS CloudFormation",
         "url": "https://aws.amazon.com/cloudformation/",
         "type": "article"
       },
@@ -1959,7 +1969,7 @@
         "type": "course"
       },
       {
-        "title": "Terraform Roadmap",
+        "title": "Visit Dedicated Terraform Roadmap",
         "url": "https://roadmap.sh/terraform",
         "type": "article"
       },
@@ -2120,11 +2130,6 @@
         "type": "course"
       },
       {
-        "title": "Learn Git & GitHub",
-        "url": "https://roadmap.sh/git-github",
-        "type": "article"
-      },
-      {
         "title": "GitHub Actions Documentation",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
@@ -2250,12 +2255,12 @@
     "description": "Drone is an open-source continuous integration (CI) platform built on container technology. It automates building, testing, and deploying code using a simple, YAML-based pipeline configuration stored alongside the source code. Drone executes each step of the CI/CD process in isolated Docker containers, ensuring consistency and reproducibility. It supports multiple version control systems, offers parallel execution of pipeline steps, and provides plugins for integrating with various tools and services. Drone's lightweight, scalable architecture makes it suitable for projects of all sizes, from small teams to large enterprises. Its focus on simplicity and containerization aligns well with modern DevOps practices and microservices architectures.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Drone Website",
+        "title": "Drone",
         "url": "https://www.drone.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Drone Documentation",
         "url": "https://docs.drone.io/",
         "type": "article"
       },
@@ -2271,7 +2276,7 @@
     "description": "TeamCity is a continuous integration (CI) and continuous delivery (CD) server developed by JetBrains, designed to automate the build, test, and deployment processes in software development. It supports multiple languages and frameworks, offering a flexible and scalable environment for managing pipelines. TeamCity provides powerful features like version control integration, build chaining, parallel execution, and detailed reporting. It also offers a user-friendly web interface, customizable build configurations, and extensive plugin support, making it a popular choice for teams aiming to streamline their CI/CD workflows.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Documentation",
+        "title": "TeamCity Documentation",
         "url": "https://www.jetbrains.com/help/teamcity/teamcity-documentation.html",
         "type": "article"
       },
@@ -2380,7 +2385,7 @@
         "type": "opensource"
       },
       {
-        "title": "Vault - Official Website",
+        "title": "HashiCorp Vault",
         "url": "https://www.vaultproject.io/",
         "type": "article"
       },
@@ -2448,7 +2453,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Zabbix Documentation",
         "url": "https://www.zabbix.com/manuals",
         "type": "article"
       },
@@ -2490,7 +2495,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Datadog Documentation",
         "url": "https://docs.datadoghq.com/",
         "type": "article"
       },
@@ -2506,7 +2511,7 @@
     "description": "Grafana is an open-source analytics and interactive visualization web application. It connects to various data sources, including time-series databases, relational databases, and cloud services, to create customizable dashboards. Grafana excels at visualizing time-series data for infrastructure and application analytics, supporting a wide range of chart types and plugins. It features alerting capabilities, user authentication, and role-based access control. Grafana is commonly used for monitoring system metrics, application performance, and business analytics. Its flexibility and ability to combine data from multiple sources make it popular in DevOps environments for creating comprehensive monitoring solutions. Grafana's user-friendly interface and extensive customization options enable users to create visually appealing and informative dashboards for real-time data visualization and analysis.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Grafana Website",
+        "title": "Grafana",
         "url": "https://grafana.com/",
         "type": "article"
       },
@@ -2553,7 +2558,7 @@
     "description": "The Elastic Stack, formerly known as ELK Stack, is a set of open-source tools for searching, analyzing, and visualizing data in real-time. It consists of four main components: Elasticsearch (a distributed search and analytics engine), Logstash (a data processing pipeline), Kibana (a data visualization and management tool), and Beats (lightweight data shippers). Together, these tools enable users to collect data from various sources, process and enrich it, store it in a searchable format, and create interactive visualizations and dashboards. The Elastic Stack is widely used for log analytics, application performance monitoring, security information and event management (SIEM), and business intelligence applications, offering scalability and flexibility for handling large volumes of diverse data.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Elastic Stack Website",
+        "title": "Elastic Stack",
         "url": "https://www.elastic.co/elastic-stack/",
         "type": "article"
       },
@@ -2605,7 +2610,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Splunk Documentation",
         "url": "https://docs.splunk.com/Documentation",
         "type": "article"
       },
@@ -2636,12 +2641,12 @@
         "type": "article"
       },
       {
-        "title": "Official Guides",
+        "title": "Papertrail Guides",
         "url": "https://www.papertrail.com/solution/guides/",
         "type": "article"
       },
       {
-        "title": "Official Blog",
+        "title": "Papertrail Blog",
         "url": "https://www.papertrail.com/blog/",
         "type": "article"
       },
@@ -2664,6 +2669,11 @@
       {
         "title": "What is Kubernetes?",
         "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+        "type": "article"
+      },
+      {
+        "title": "Docker Swarm",
+        "url": "https://docs.docker.com/engine/swarm/",
         "type": "article"
       },
       {
@@ -2810,7 +2820,7 @@
   },
   "ootuLJfRXarVvm3J1Ir11": {
     "title": "Nexus",
-    "description": "The Nexus Repository Manager is a widely used repository manager software developed by Sonatype. It's designed to manage binary components such as Java libraries, Docker images, npm packages, NuGet packages, and more. Nexus Repository Manager allows organizations to store, manage, and distribute software components securely and efficiently.",
+    "description": "The Nexus Repository Manager is a widely used repository manager software developed by Sonatype. It's designed to manage binary components such as Java libraries, Docker images, npm packages, NuGet packages, and more. Nexus Repository Manager allows organizations to store, manage, and distribute software components securely and efficiently.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Repository Management Basics",
@@ -2897,7 +2907,7 @@
     "description": "FluxCD is a GitOps-based continuous delivery tool for Kubernetes. It automates the deployment of applications by using Git repositories as the source of truth for defining the desired state of a system. FluxCD continuously monitors these repositories and automatically applies changes to the cluster when differences are detected. It supports multi-tenancy, Helm releases, and provides features like automated image updates and notifications. FluxCD enables declarative, version-controlled infrastructure and application management, promoting consistency across environments and simplifying the deployment process. Its integration with Kubernetes makes it particularly useful for cloud-native applications, allowing teams to implement efficient, automated, and auditable deployment workflows.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Flux CD Docs",
+        "title": "Flux CD",
         "url": "https://docs.fluxcd.io/",
         "type": "article"
       },
@@ -2918,12 +2928,12 @@
     "description": "A service mesh is a dedicated infrastructure layer that manages communication between microservices in a distributed application. It provides features like load balancing, service discovery, encryption, observability, and traffic management, allowing services to communicate securely and efficiently. By abstracting network-related concerns from the application code, a service mesh enhances reliability and security while simplifying the management of microservice interactions. Popular service mesh implementations include Istio, Linkerd, and Consul.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Whats a service mesh?",
+        "title": "Whats a Service Mesh?",
         "url": "https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh",
         "type": "article"
       },
       {
-        "title": "The latest news about service mesh (TNS)",
+        "title": "The Latest News About Service Mesh (TNS)",
         "url": "https://thenewstack.io/category/service-mesh/",
         "type": "article"
       },
@@ -2933,7 +2943,7 @@
         "type": "article"
       },
       {
-        "title": "Istio & Service Mesh - simply explained in 15 mins",
+        "title": "Istio & Service Mesh - Simply Explained in 15 mins",
         "url": "https://www.youtube.com/watch?v=16fgzklcF7Y",
         "type": "video"
       }
@@ -3133,12 +3143,12 @@
     "description": "Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system designed by Grafana Labs. It's purpose-built to be cost-effective and easy to operate, making it particularly well-suited for storing and querying logs from Kubernetes clusters. Loki indexes metadata about logs rather than the full text, which allows it to be more resource-efficient than traditional log management systems. It uses the same querying language as Prometheus (LogQL), making it easier for users familiar with Prometheus to adopt. Loki integrates seamlessly with Grafana for visualization and is often used alongside Prometheus and Grafana in cloud-native observability stacks. Its design focuses on simplicity, making it an attractive option for organizations looking for efficient log management in containerized environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Loki Website",
+        "title": "Loki",
         "url": "https://grafana.com/oss/loki/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Loki Documentation",
         "url": "https://grafana.com/docs/loki/latest/?pg=oss-loki&plcmt=quick-links",
         "type": "article"
       },
@@ -3162,6 +3172,11 @@
         "title": "kubernetes/kubernetes",
         "url": "https://github.com/kubernetes/kubernetes",
         "type": "opensource"
+      },
+      {
+        "title": "Visit Dedicated Kubernetes Roadmap",
+        "url": "https://roadmap.sh/kubernetes",
+        "type": "article"
       },
       {
         "title": "Kubernetes Website",
@@ -3252,12 +3267,12 @@
         "type": "opensource"
       },
       {
-        "title": "Jaeger Website",
+        "title": "Jaeger",
         "url": "https://www.jaegertracing.io/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Jaeger Documentation",
         "url": "https://www.jaegertracing.io/docs/1.37/",
         "type": "article"
       }
@@ -3265,10 +3280,10 @@
   },
   "pk76Us6z8LoX3f0mhnCyR": {
     "title": "New Relic",
-    "description": "New Relic is a cloud-based observability platform that provides full-stack visibility into software applications and infrastructure. It offers real-time performance monitoring, analytics, and alerting across various environments, including web, mobile, and cloud applications. New Relic's suite includes tools for application performance monitoring (APM), infrastructure monitoring, log management, and digital customer experience tracking. It uses distributed tracing and AI-powered analytics to help developers and operations teams identify and resolve issues quickly. New Relic's platform supports a wide range of programming languages and integrates with many popular development and deployment tools, making it a comprehensive solution for modern software observability and performance optimization in DevOps environments. Visit the following resources to learn more:",
+    "description": "New Relic is a cloud-based observability platform that provides full-stack visibility into software applications and infrastructure. It offers real-time performance monitoring, analytics, and alerting across various environments, including web, mobile, and cloud applications. New Relic's suite includes tools for application performance monitoring (APM), infrastructure monitoring, log management, and digital customer experience tracking. It uses distributed tracing and AI-powered analytics to help developers and operations teams identify and resolve issues quickly. New Relic's platform supports a wide range of programming languages and integrates with many popular development and deployment tools, making it a comprehensive solution for modern software observability and performance optimization in DevOps environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "New Relic Website",
+        "title": "New Relic",
         "url": "https://newrelic.com/",
         "type": "article"
       },
@@ -3294,7 +3309,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Datadog Documentation",
         "url": "https://docs.datadoghq.com/",
         "type": "article"
       },
@@ -3315,7 +3330,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Prometheus Documentation",
         "url": "https://prometheus.io/docs/introduction/overview/",
         "type": "article"
       },
@@ -3341,7 +3356,7 @@
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "OpenTelemetry Documentation",
         "url": "https://opentelemetry.io/docs/",
         "type": "article"
       },

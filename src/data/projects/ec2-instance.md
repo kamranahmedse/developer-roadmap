@@ -64,4 +64,4 @@ After completing this project, you will have gained practical experience in:
 
 <hr />
 
-After finishing this project you should have a good understanding of launching and connecting to EC2 isntances, basic knowledge of security groups, and be able to deploy any of the projects from previous tasks using AWS EC2. Future project ideas will be based on these concepts.
+After finishing this project you should have a good understanding of launching and connecting to EC2 instances, basic knowledge of security groups, and be able to deploy any of the projects from previous tasks using AWS EC2. Future project ideas will be based on these concepts.

@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-best-practices-4yhmb.jpg'
 relatedTitle: "Other Guides"
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-26
 sitemap:
@@ -23,7 +23,7 @@ tags:
 
 ![DevOps Best Practices and methods you should know](https://assets.roadmap.sh/guest/devops-best-practices-4yhmb.jpg)
 
-DevOps is a proven practice and set of standards that has helped small to large enterprises streamline their software development process and IT operations. It has helped break down silos and deliver more reliable and high-quality software. Despite the benefits it brings, its implementation can be difficult. This is because you need to know the process, the tools to use, and a shift in operational culture, which can be challenging.
+DevOps is a proven practice and set of standards that has helped small to large enterprises streamline their software development process and IT operations. It has helped break down silos and deliver more reliable and high-quality software. Despite the benefits it brings, its implementation can be difficult. This is because you need to know the process, the [DevOps tools](https://roadmap.sh/devops/tools) to use, and a shift in operational culture, which can be challenging.
 
 Although every organization approaches these challenges in slightly different ways, there are **best practices** that you can follow to achieve successful implementation.
 

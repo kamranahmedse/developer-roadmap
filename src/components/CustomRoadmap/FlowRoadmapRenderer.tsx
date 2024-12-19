@@ -17,7 +17,9 @@ import { totalRoadmapNodes } from '../../stores/roadmap.ts';
 
 type FlowRoadmapRendererProps = {
   isEmbed?: boolean;
-  roadmap: RoadmapDocument;
+  roadmap: RoadmapDocument & {
+    canManage?: boolean
+  };
 };
 
 export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
@@ -159,7 +161,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       {hideRenderer && (
         <EmptyRoadmap
           roadmapId={roadmapId}
-          canManage={roadmap.canManage}
+          canManage={roadmap.canManage || false}
           className="grow"
         />
       )}

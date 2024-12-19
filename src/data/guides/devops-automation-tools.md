@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/best-devops-automation-tools-aoyls.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-26
 sitemap:
@@ -83,7 +83,7 @@ Finally, **Ansible** takes the cake when it comes to configuration management an
 
 The following table summarizes the data presented throughout this article:
 
-[![DevOps Automation Tools](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)
+![DevOps Automation Tools](https://assets.roadmap.sh/guest/devops-automation-tools-wns3s.png)
 
 Let’s now take a closer look at all the tools, and let you decide which ones are your favorite ones.
 

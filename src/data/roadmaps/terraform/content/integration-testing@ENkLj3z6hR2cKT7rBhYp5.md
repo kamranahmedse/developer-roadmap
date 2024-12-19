@@ -4,6 +4,6 @@ Terraform integration testing involves verifying that Terraform configurations w
 
 Learn more from the following resources:
 
-- [@official@Integration or unit testing](https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing)
+- [@official@Integration Testing or Unit Testing](https://developer.hashicorp.com/terraform/language/tests#integration-or-unit-testing)
 - [@video@Learn Terraform - Integration and End-to-End Testing](https://www.youtube.com/watch?v=gdcc1WBzMwY)
 - [@article@Integration tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#integration-tests)

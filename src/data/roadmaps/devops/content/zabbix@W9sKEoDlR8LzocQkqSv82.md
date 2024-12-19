@@ -5,5 +5,5 @@ Zabbix is an open-source monitoring solution designed for tracking the performan
 Visit the following resources to learn more:
 
 - [@official@Zabbix Website](https://www.zabbix.com/)
-- [@official@Official Documentation](https://www.zabbix.com/manuals)
+- [@official@Zabbix Documentation](https://www.zabbix.com/manuals)
 - [@video@How to Monitor EVERYTHING in your HomeLab for free - Zabbix Overview](https://www.youtube.com/watch?v=R_EQzBkz4sE)

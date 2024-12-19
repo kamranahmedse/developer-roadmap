@@ -77,7 +77,7 @@ To effectively implement CI/CD pipelines, you'll need to be proficient with the 
 * **Jenkins**: An open-source automation server, Jenkins is highly customizable and supports a huge number of integration plugins.
 * **GitLab CI**: Part of the larger GitLab platform, GitLab CI is tightly integrated with GitLab's version control and issue-tracking features.
 * **CircleCI**: Known for its speed and simplicity, CircleCI is perfect for environments that prioritize cloud-native solutions. It provides a user-friendly interface and integrates well with popular tools like Docker, AWS, and Kubernetes.
-* **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with other DevOps tools, and provides flexibility to run complex automation tasks across multiple environments.
+* **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with [other DevOps tools](https://roadmap.sh/devops/tools), and provides flexibility to run complex automation tasks across multiple environments.
 
 ### Best Practices for Setting Up and Managing CI/CD Pipelines
 

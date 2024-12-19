@@ -27,7 +27,7 @@ Whether you’re an experienced DevOps engineer or trying to expand your experti
 
 But what are these phases, and do they really need to be followed in a specific order to truly matter?
 
-As a [DevOps engineer](https://roadmap.sh/devops), your primary role is to help the development and operations teams operate better. You’ll do this by collaborating closely with software engineers, quality assurance teams, and other stakeholders to set up **processes**, implement tools, and create standards to achieve the overall goal of the project.
+As a [DevOps engineer](https://roadmap.sh/devops), your primary role is to help the development and operations teams operate better. You’ll do this by collaborating closely with software engineers, quality assurance teams, and other stakeholders to set up **processes**, implement **[tools](https://roadmap.sh/devops/tools)**, and create standards to achieve the overall goal of the project.
 
 In this guide, you’ll learn about these phases, how they're implemented, and the sequence in which they are applied in software development.
 

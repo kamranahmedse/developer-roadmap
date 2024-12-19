@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png'
 relatedTitle: "Other Guides"
 relatedGuidesId: backend
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-12
 sitemap:

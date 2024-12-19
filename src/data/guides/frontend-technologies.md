@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-technologies-fan67.jpg'
 relatedTitle: "Other Guides"
 relatedGuidesId: frontend
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-29
 sitemap:
@@ -51,29 +51,29 @@ The following tables summarize the article and the ratings provided for each tec
 
 ### Core Frontend technologies:
 
-[![Core frontend technologies](https://assets.roadmap.sh/guest/core-frontend-technologies.png)](https://assets.roadmap.sh/guest/core-frontend-technologies.png)
+![Core frontend technologies](https://assets.roadmap.sh/guest/core-frontend-technologies.png)
 
 ### Frontend frameworks:
 
-[![Frontend frameworks](https://assets.roadmap.sh/guest/frontend-frameworks.png)](https://assets.roadmap.sh/guest/frontend-frameworks.png)
+![Frontend frameworks](https://assets.roadmap.sh/guest/frontend-frameworks.png)
 
 ### Emerging & Specialized technologies:
 
-[![Emerging and specialized frontend technologies](https://assets.roadmap.sh/guest/emerging-specialiazed-frontend-technologies.png)](https://assets.roadmap.sh/guest/emerging-specialiazed-frontend-technologies.png)
+![Emerging and specialized frontend technologies](https://assets.roadmap.sh/guest/emerging-specialiazed-frontend-technologies.png)
 
 ### Mobile-focused frontend technologies:
 
-[![Mobile focused frontend technologies](https://assets.roadmap.sh/guest/mobile-focused-frontend-technologies.png)](https://assets.roadmap.sh/guest/mobile-focused-frontend-technologies.png)
+![Mobile focused frontend technologies](https://assets.roadmap.sh/guest/mobile-focused-frontend-technologies.png)
 
 ## Core Frontend Technologies: The Trifecta
 
-[![Core Frontend Technologies](https://assets.roadmap.sh/guest/frontend-core-languages.png)](https://assets.roadmap.sh/guest/frontend-core-languages.png)
+![Core Frontend Technologies](https://assets.roadmap.sh/guest/frontend-core-languages.png)
 
 Every outstanding web page or web application begins with a strong foundation, and that foundation is built on HTML5, CSS, and JavaScript.
 
 ### HTML5
 
-[![HTML5](https://assets.roadmap.sh/guest/html5-w2rf5.png)](https://assets.roadmap.sh/guest/html5-w2rf5.png)
+![HTML5](https://assets.roadmap.sh/guest/html5-w2rf5.png)
 
 HTML (or Hypertext Markup Language) is the backbone of web development in the sense that it’s the standard all websites are built on and it’s going to be the skeleton of your user interface.
 
@@ -90,7 +90,7 @@ Evaluation:
 
 ### **CSS**
 
-[![CSS](https://assets.roadmap.sh/guest/css-nngn2.png)](https://assets.roadmap.sh/guest/css-nngn2.png)
+![CSS](https://assets.roadmap.sh/guest/css-nngn2.png)
 
 CSS (Cascading Style Sheets) is what makes the web beautiful. It's responsible for the styling, layout, and responsiveness of a webpage (and to some extent, its dynamism).
 
@@ -107,7 +107,7 @@ Evaluation:
 
 ### **JavaScript**
 
-[![JavaScript](https://assets.roadmap.sh/guest/javascript-qryyu.png)](https://assets.roadmap.sh/guest/javascript-qryyu.png)
+![JavaScript](https://assets.roadmap.sh/guest/javascript-qryyu.png)
 
 JavaScript brings interactivity to the web. From simple event handling to full-blown web and mobile applications, JavaScript is a key player in frontend development.
 
@@ -124,13 +124,13 @@ Evaluation:
 
 ## Frontend Frameworks and Libraries
 
-[![Frontend Frameworks Libraries](https://assets.roadmap.sh/guest/frontend-frameworks-libraries-p2gcg.png)](https://assets.roadmap.sh/guest/frontend-frameworks-libraries-p2gcg.png)
+![Frontend Frameworks Libraries](https://assets.roadmap.sh/guest/frontend-frameworks-libraries-p2gcg.png)
 
 Progressive Web Apps (PWAs) are revolutionizing the web by delivering seamless, app-like experiences directly in the browser. And no matter what option you pick from this list, they’re perfect choices for both, frontend and backend technologies (with the potential addition of frameworks on top of them).
 
 ### React
 
-[![React](https://assets.roadmap.sh/guest/react-p4iz4.png)](https://assets.roadmap.sh/guest/react-p4iz4.png)
+![React](https://assets.roadmap.sh/guest/react-p4iz4.png)
 
 React remains a powerhouse in the frontend development world. Its flexibility and robust ecosystem make it a top choice for building dynamic user interfaces. From simple single page web applications to extremely complex web apps, React gives developers the right tools for the job.
 
@@ -147,7 +147,7 @@ Evaluation:
 
 ### VueJS
 
-[![VueJS](https://assets.roadmap.sh/guest/vuejs-4udv4.png)](https://assets.roadmap.sh/guest/vuejs-4udv4.png)
+![VueJS](https://assets.roadmap.sh/guest/vuejs-4udv4.png)
 
 VueJS has steadily gained popularity due to its simplicity and powerful features, making it a great option for many types of projects, such as building user interfaces, SPAs (or Single Page Applications) or even a progressive web app.
 
@@ -164,7 +164,7 @@ Evaluation:
 
 ### Angular
 
-[![Angular](https://assets.roadmap.sh/guest/angular-k4udy.png)](https://assets.roadmap.sh/guest/angular-k4udy.png)
+![Angular](https://assets.roadmap.sh/guest/angular-k4udy.png)
 
 Angular is a comprehensive framework maintained by Google, designed for building large-scale, enterprise-level applications. It offers a robust set of tools out of the box, making it a complete solution for frontend development.
 
@@ -181,7 +181,7 @@ Evaluation:
 
 ### Svelte
 
-[![Svelte](https://assets.roadmap.sh/guest/svelte-6llr7.png)](https://assets.roadmap.sh/guest/svelte-6llr7.png)
+![Svelte](https://assets.roadmap.sh/guest/svelte-6llr7.png)
 
 Svelte is an emerging frontend framework that takes a unique approach by shifting much of the work to compile time. Created by Rich Harris, it’s already on version 5 and constantly evolving.
 
@@ -198,13 +198,13 @@ Evaluation:
 
 ## Emerging and Specialized Frontend Technologies
 
-[![Emerging and specialized frontend technologies](https://assets.roadmap.sh/guest/emerging-frontend-tech-8lj3k.png)](https://assets.roadmap.sh/guest/emerging-frontend-tech-8lj3k.png)
+![Emerging and specialized frontend technologies](https://assets.roadmap.sh/guest/emerging-frontend-tech-8lj3k.png)
 
 As the frontend landscape continues to evolve, new and specialized frontend technologies are emerging to address specific needs and optimize performance.
 
 ### Web Components
 
-[![Web Components](https://assets.roadmap.sh/guest/web-components-1y5lk.png)](https://assets.roadmap.sh/guest/web-components-1y5lk.png)
+![Web Components](https://assets.roadmap.sh/guest/web-components-1y5lk.png)
 
 Web Components provide a standardized way to create reusable and encapsulated custom HTML elements (which is what you want, especially when building complex user interfaces).
 
@@ -221,7 +221,7 @@ Evaluation:
 
 ### Astro
 
-[![Astro](https://assets.roadmap.sh/guest/astro-r8dnu.png)](https://assets.roadmap.sh/guest/astro-r8dnu.png)
+![Astro](https://assets.roadmap.sh/guest/astro-r8dnu.png)
 
 Astro is a modern site builder that focuses on optimizing performance by delivering minimal JavaScript to the client and focusing on static site generation.
 
@@ -255,13 +255,13 @@ Evaluation:
 
 ## Mobile-Focused Frontend Technologies
 
-[![Mobile-focused frontend technologies](https://assets.roadmap.sh/guest/mobile-focused-tech-qr5ei.png)](https://assets.roadmap.sh/guest/mobile-focused-tech-qr5ei.png)
+![Mobile-focused frontend technologies](https://assets.roadmap.sh/guest/mobile-focused-tech-qr5ei.png)
 
 With the surge in mobile device usage, frontend technologies that cater specifically to mobile development have become essential. Here, we explore two of the top mobile-focused frontend technologies for 2024: Flutter and React Native.
 
 ### Flutter
 
-[![Flutter](https://assets.roadmap.sh/guest/flutter-febon.png)](https://assets.roadmap.sh/guest/flutter-febon.png)
+![Flutter](https://assets.roadmap.sh/guest/flutter-febon.png)
 
 Flutter, developed by Google, has quickly become a favorite for building cross-platform mobile applications. Its ability to deliver apps into multiple platforms through a single codebase makes it a very attractive choice for developers aiming to target both iOS and Android platforms.
 
@@ -279,7 +279,7 @@ Evaluation:
 
 ### React Native
 
-[![React Native](https://assets.roadmap.sh/guest/react-native-mhkim.png)](https://assets.roadmap.sh/guest/react-native-mhkim.png)
+![React Native](https://assets.roadmap.sh/guest/react-native-mhkim.png)
 
 Originally backed by Facebook, allows developers to build mobile applications using JavaScript and React. Its ability to provide near-native performance through a bridge architecture has made it a popular choice for many large-scale applications.
 
@@ -296,7 +296,7 @@ Evaluation:
 
 ## Expert Recommendations
 
-[![Extra Recommendations](https://assets.roadmap.sh/guest/extra-recommendations-97fr0.png)](https://assets.roadmap.sh/guest/extra-recommendations-97fr0.png)
+![Extra Recommendations](https://assets.roadmap.sh/guest/extra-recommendations-97fr0.png)
 
 After meticulously evaluating each frontend technology across key categories, it's time to offer expert recommendations tailored to different project needs within the space of web development.
 
@@ -304,7 +304,7 @@ Here are our top picks for various scenarios in 2024:
 
 ### Best for Beginners
 
-[![Vue Best for Beginners](https://assets.roadmap.sh/guest/winner-vue-ml5sq.png)](https://assets.roadmap.sh/guest/winner-vue-ml5sq.png)
+![Vue Best for Beginners](https://assets.roadmap.sh/guest/winner-vue-ml5sq.png)
 
 **Recommendation**: Vue.js
 
@@ -319,7 +319,7 @@ Vue.js stands out as the ideal choice for beginners thanks to its gentle learnin
 
 ### Best for Large-Scale Applications
 
-[![Angular Best for Scale](https://assets.roadmap.sh/guest/angular-best-for-scale-hp0nv.png)](https://assets.roadmap.sh/guest/angular-best-for-scale-hp0nv.png)
+![Angular Best for Scale](https://assets.roadmap.sh/guest/angular-best-for-scale-hp0nv.png)
 
 **Recommendation**: Angular
 
@@ -334,7 +334,7 @@ Angular is the heavyweight champion when it comes to building large-scale, enter
 
 ### Best for High-Performance Needs
 
-[![Scala - Best for High Performance](https://assets.roadmap.sh/guest/best-performance-felipe-12yzc.png)](https://assets.roadmap.sh/guest/best-performance-felipe-12yzc.png)
+![Scala - Best for High Performance](https://assets.roadmap.sh/guest/best-performance-felipe-12yzc.png)
 
 **Recommendation**:  Svelte
 
@@ -349,7 +349,7 @@ If performance is your top priority, Svelte is the way to go. By shifting much o
 
 ### Best for Mobile Integration
 
-[![Flutter - Best for Mobile](https://assets.roadmap.sh/guest/flutter-best-mobile-framework-0xm1g.png)](https://assets.roadmap.sh/guest/flutter-best-mobile-framework-0xm1g.png)
+![Flutter - Best for Mobile](https://assets.roadmap.sh/guest/flutter-best-mobile-framework-0xm1g.png)
 
 **Recommendation**: Flutter
 
@@ -364,7 +364,7 @@ Flutter is the perfect choice for developers looking to build cross-platform mob
 
 ### Best for Static Site Generation
 
-[![Astro - Best Static Site Generator](https://assets.roadmap.sh/guest/astro-best-static-site-generator-hpn65.png)](https://assets.roadmap.sh/guest/astro-best-static-site-generator-hpn65.png)
+![Astro - Best Static Site Generator](https://assets.roadmap.sh/guest/astro-best-static-site-generator-hpn65.png)
 
 **Recommendation**:  Astro
 
@@ -381,7 +381,7 @@ If you haven’t yet, you gotta try it\!.
 
 ### Best for Flexibility and Framework-Agnostic Projects
 
-[![Web-Components - Most Flexible](https://assets.roadmap.sh/guest/web-components-most-flexible-min-30d5h.png)](https://assets.roadmap.sh/guest/web-components-most-flexible-min-30d5h.png)
+![Web-Components - Most Flexible](https://assets.roadmap.sh/guest/web-components-most-flexible-min-30d5h.png)
 
 **Recommendation**: Web Components
 
@@ -398,7 +398,7 @@ They provide a standardized way to create reusable and encapsulated custom HTML 
 
 ### Best for Minimal JavaScript and Server-Driven UI
 
-[![htmx - Most Minimalistic](https://assets.roadmap.sh/guest/htmx-most-minimalistic-qu73o.png)](https://assets.roadmap.sh/guest/htmx-most-minimalistic-qu73o.png)
+![htmx - Most Minimalistic](https://assets.roadmap.sh/guest/htmx-most-minimalistic-qu73o.png)
 
 **Recommendation**:  htmx
 

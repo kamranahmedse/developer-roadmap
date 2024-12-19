@@ -1051,7 +1051,7 @@
     ]
   },
   "16TT8R4N-9tCfWmPetqMP": {
-    "title": "Namespace Agumentation",
+    "title": "Namespace Augmentation",
     "description": "In TypeScript, namespace augmentation is a way to extend or modify existing namespaces. This is useful when you want to add new functionality to existing namespaces or to fix missing or incorrect declarations in third-party libraries.\n\nHere's an example of how you can use namespace augmentation in TypeScript:\n\n    // myModule.d.ts\n    declare namespace MyModule {\n      export interface MyModule {\n        newFunction(): void;\n      }\n    }\n    \n    // main.ts\n    /// <reference path=\"myModule.d.ts\" />\n    namespace MyModule {\n      export class MyModule {\n        public newFunction() {\n          console.log('I am a new function in MyModule!');\n        }\n      }\n    }\n    \n    const obj = new MyModule.MyModule();\n    obj.newFunction(); // Output: \"I am a new function in MyModule!\"\n    \n\nIn this example, we use namespace augmentation to add a new function \"newFunction\" to the \"MyModule\" namespace. This is done in the declaration file `myModule.d.ts` by declaring a new interface \"MyModule\" within the \"MyModule\" namespace and adding the \"newFunction\" function to it.\n\nLearn more from the following links:",
     "links": [
       {
