@@ -56,7 +56,7 @@
   "networking-protocols:emails:white-grey-listing": "E-lSLGzgOPrz-25ER2Hk7",
   "networking-protocols:emails:smtp": "zJy9dOynWgLTDKI1iBluG",
   "networking-protocols:emails:dmarc": "5vUKHuItQfkarp7LtACvX",
-  "networking-protocols:emails:imaps": "WMuXqa4b5wyRuYAQKQJRj",
+  "networking-protocols:emails:imap": "WMuXqa4b5wyRuYAQKQJRj",
   "networking-protocols:emails:spf": "ewcJfnDFKXN8I5TLpXEaB",
   "networking-protocols:emails:pop3s": "fzO6xVTBxliu24f3W5zaU",
   "networking-protocols:emails:domain-keys": "RYCD78msIR2BPJoIP71aj",
