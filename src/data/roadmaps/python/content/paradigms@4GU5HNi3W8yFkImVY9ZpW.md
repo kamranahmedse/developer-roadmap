@@ -10,3 +10,4 @@ Python is a multi-paradigm programming language, which means that it supports se
 Visit the following resources to learn more:
 
 - [@article@Python Paradigms](https://opensource.com/article/19/10/python-programming-paradigms)  
+- [@video@Learn Functional Programming - Python Course](https://www.youtube.com/watch?v=5QZYGU0C2OA)
