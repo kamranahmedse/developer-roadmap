@@ -10,7 +10,7 @@ type typeAB = typeA & typeB;
 
 The `typeAB` will have all properties from both typeA and typeB.
 
-Note that the union type uses the `|` operator that defines a variable which can hold a value of either `typeA` or `typeB`
+Note that the union type uses the `|` operator that defines a variable which can hold `typeA` value, or `typeB` value, or both altogether.
 
 Learn more from the following links:
 
