@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-shift-left-testing-16zah.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-04
 sitemap:

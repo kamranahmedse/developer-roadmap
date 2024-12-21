@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-job-description-5fwzy.jpg'
 relatedTitle: "Other Guides"
 relatedGuidesId: frontend
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-11-04
 sitemap:
