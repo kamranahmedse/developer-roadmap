@@ -12,6 +12,6 @@ DDD connects the implementation to an evolving model and it is predicated on the
 
 Visit the following resources to learn more:
 
-- [@article@DDD Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process/blob/master/README.md)
+- [@article@DDD Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process/)
 - [@article@Domain Driven Design Quickly](https://web.archive.org/web/20230606035225/https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)
