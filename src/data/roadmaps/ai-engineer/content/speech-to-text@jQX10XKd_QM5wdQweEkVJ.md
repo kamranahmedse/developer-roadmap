@@ -4,6 +4,6 @@ In the context of multimodal AI, speech-to-text technology converts spoken langu
 
 Learn more from the following resources:
 
-- [@article@What is speech to text? Amazon](https://aws.amazon.com/what-is/speech-to-text/)
-- [@article@Turn speech into text using Google AI](https://cloud.google.com/speech-to-text)
-- [@article@How is Speech to Text Used? ](https://h2o.ai/wiki/speech-to-text/)
+- [@article@What is Speech to Text?](https://aws.amazon.com/what-is/speech-to-text/)
+- [@article@Turn Speech into Text using Google AI](https://cloud.google.com/speech-to-text)
+- [@article@How is Speech to Text Used?](https://h2o.ai/wiki/speech-to-text/)
