@@ -839,6 +839,11 @@
         "title": "Python Paradigms",
         "url": "https://opensource.com/article/19/10/python-programming-paradigms",
         "type": "article"
+      },
+      {
+        "title": "Learn Functional Programming - Python Course",
+        "url": "https://www.youtube.com/watch?v=5QZYGU0C2OA",
+        "type": "video"
       }
     ]
   },
@@ -1317,7 +1322,7 @@
     "description": "Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Shpinx Website",
+        "title": "Sphinx Website",
         "url": "https://www.sphinx-doc.org/en/master/",
         "type": "article"
       }
