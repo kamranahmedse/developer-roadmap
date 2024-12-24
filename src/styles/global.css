@@ -56,6 +56,9 @@ h3 > code {
 .prose ul li > code:before,
 p > code:before,
 .prose ul li > code:after,
+.prose ol li > code:before,
+p > code:before,
+.prose ol li > code:after,
 p > code:after,
 a > code:after,
 a > code:before {
