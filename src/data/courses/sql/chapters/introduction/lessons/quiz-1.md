@@ -1,67 +1,115 @@
 ---
 title: Quiz 1
-description: Test your knowledge of SQL queries with this quiz.
+description: Test your knowledge of SQL basics with this quiz.
 order: 200
 type: quiz
 questions:
   - id: 1
-    title: 'Which of the following SQL clauses is used to filter results after the GROUP BY clause?'
+    title: 'What does SQL stand for?'
     options:
       - id: 1
-        text: 'WHERE'
+        text: 'Standard Query Language'
       - id: 2
-        text: 'HAVING'
-        isCorrectOption: true
+        text: 'Sequential Query Language'
       - id: 3
-        text: 'GROUP BY'
+        text: 'Structured Query Language'
+        isCorrectOption: true
       - id: 4
-        text: 'ORDER BY'
+        text: 'Simplified Query Language'
   - id: 2
-    title: 'Which SQL function is used to return the first non-null expression?'
+    title: 'Which type of database organizes data into tables, rows, and columns?'
     options:
       - id: 1
-        text: 'COALESCE'
+        text: 'Relational Database'
         isCorrectOption: true
       - id: 2
-        text: 'IFNULL'
+        text: 'NoSQL Database'
       - id: 3
-        text: 'NULLIF'
+        text: 'Graph Database'
       - id: 4
-        text: 'NVL'
+        text: 'Document Database'
   - id: 3
-    title: 'What is the purpose of an SQL CTE (Common Table Expression)?'
+    title: 'What statement is wrong about SQL?'
     options:
       - id: 1
-        text: 'To create temporary tables that last for the duration of a query'
-        isCorrectOption: true
+        text: 'SQL is a declarative language'
       - id: 2
-        text: 'To define reusable views'
+        text: 'SQL is a procedural language'
       - id: 3
-        text: 'To encapsulate subqueries'
+        text: 'SQL is case-insensitive'
       - id: 4
-        text: 'To optimize the execution of queries'
+        text: 'SQL is Database Management System'
+        isCorrectOption: true
   - id: 4
-    title: 'In an SQL window function, which clause defines the subset of rows to apply the function on?'
+    title: 'Which of the following is wrong about Database Management System?'
     options:
       - id: 1
-        text: 'ORDER BY'
+        text: 'DBMS helps in managing and organizing data efficiently.'
       - id: 2
-        text: 'PARTITION BY'
-        isCorrectOption: true
+        text: 'DBMS stands for Database Management System'
       - id: 3
-        text: 'GROUP BY'
+        text: 'DBMS is a software that allows users to interact with a database'
       - id: 4
-        text: 'DISTINCT'
+        text: 'DBMS and SQL are languages for interacting with a database'
+        isCorrectOption: true
   - id: 5
-    title: 'Which SQL join returns all rows when there is a match in either of the tables?'
+    title: 'What SQL clause is used to filter rows in a query?'
     options:
       - id: 1
-        text: 'INNER JOIN'
+        text: 'SELECT'
       - id: 2
-        text: 'LEFT JOIN'
-      - id: 3
-        text: 'RIGHT JOIN'
-      - id: 4
-        text: 'FULL OUTER JOIN'
+        text: 'WHERE'
         isCorrectOption: true
+      - id: 3
+        text: 'ORDER BY'
+      - id: 4
+        text: 'GROUP BY'
+  - id: 6
+    title: 'Which of the following is an example of a DDL statement?'
+    options:
+      - id: 1
+        text: 'SELECT * FROM users;'
+      - id: 2
+        text: 'CREATE TABLE users (id INT, name VARCHAR(255));'
+        isCorrectOption: true
+      - id: 3
+        text: 'INSERT INTO users (id, name) VALUES (1, "John");'
+      - id: 4
+        text: 'UPDATE users SET name = "Jane" WHERE id = 1;'
+  - id: 7
+    title: 'What type of SQL query would be used to retrieve data from a database?'
+    options:
+      - id: 1
+        text: 'Data Definition Language (DDL)'
+      - id: 2
+        text: 'Data Manipulation Language (DML)'
+      - id: 3
+        text: 'Data Query Language (DQL)'
+        isCorrectOption: true
+      - id: 4
+        text: 'Data Control Language (DCL)'
+  - id: 8
+    title: 'Which SQL command is used to modify existing data in a table?'
+    options:
+      - id: 1
+        text: 'UPDATE'
+        isCorrectOption: true
+      - id: 2
+        text: 'ALTER'
+      - id: 3
+        text: 'MODIFY'
+      - id: 4
+        text: 'CHANGE'
+  - id: 9
+    title: 'SQL is the language used to what type of database?'
+    options:
+      - id: 1
+        text: 'Graph Database'
+      - id: 2
+        text: 'NoSQL Database'
+      - id: 3
+        text: 'Relational Database'
+        isCorrectOption: true
+      - id: 4
+        text: 'Document Database'
 ---
