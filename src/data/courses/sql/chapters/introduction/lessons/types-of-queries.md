@@ -5,22 +5,19 @@ order: 160
 type: lesson
 ---
 
-SQL (Structured Query Language) is a powerful tool for managing and manipulating data in relational databases. It provides a variety of query types that serve different purposes, from retrieving data to modifying database structures and more. There are three core types of queries in SQL:
+SQL provides a variety of query types each designed to fulfill specific tasks from retrieving data to modifying database structures and controlling access. These query types can be categorized into five main groups:
 
-1. Data Query Language (DQL)
-2. Data Manipulation Language (DML)
-3. Data Definition Language (DDL)
+- Data Query Language (DQL)
+- Data Manipulation Language (DML)
+- Data Definition Language (DDL)
+- Data Control Language (DCL)
+- Transaction Control Language (TCL)
 
-However, there are two additional types of queries that are used to manage the database itself:
-
-1. Data Control Language (DCL)
-2. Transaction Control Language (TCL)
-
-DCL and TCL are not covered in this course, but we will cover the other three types of queries in detail.
+While this course focuses primarily on DQL, DML, and DDL, a brief overview of DCL and TCL is given below to give you an idea of what they are.
 
 ## Data Query Language (DQL)
 
-DQL is used to retrieve data from a database, enabling users to extract meaningful information based on specific conditions. The most common DQL statement is the `SELECT` statement.
+DQL is used to retrieve data from a database, enabling you to extract meaningful insights based on specified conditions. The primary statement in DQL is `SELECT`, which allows users to fetch data from tables.
 
 For example, the following statement retrieves all rows from the `users` table:
 
@@ -30,7 +27,7 @@ SELECT * FROM users;
 
 ## Data Manipulation Language (DML)
 
-DML is used to manipulate data stored in the database, such as inserting, updating, or deleting records. The most common DML statements are `INSERT`, `UPDATE`, and `DELETE`.
+DML is used to modify data stored in a database. It includes commands to insert, update, and delete records. The most commonly used DML statements are `INSERT`, `UPDATE`, and `DELETE`.
 
 For example, the following statement inserts a new row into the `users` table:
 
@@ -54,9 +51,11 @@ DELETE FROM users
 WHERE id = 1;
 ```
 
+We will look each of these statements and more in detail in later chapters.
+
 ## Data Definition Language (DDL)
 
-DDL is used to define the structure of the database. The most common DDL statements are `CREATE`, `ALTER`, and `DROP`.
+Before we start inserting data into our database, we need to set up the database and the tables. This is done using the DDL statements. These statements are used to create, modify, and delete database objects such as tables, indexes, and views. Most common DDL statements are `CREATE`, `ALTER`, and `DROP`.
 
 For example, the following statement creates a new table called `users`:
 
@@ -69,4 +68,45 @@ CREATE TABLE users (
 );
 ```
 
-Don't worry if you don't understand the syntax of these statements yet, we will cover them in detail in later chapters.
+## Data Control Language (DCL)
+
+DCL is used to manage access permissions and security within a database. It allows administrators to grant or revoke rights to specific users. The most common DCL statements are `GRANT` and `REVOKE`. 
+
+For example, the following statement grants the user `john` access to the `users` table:
+
+```sql
+GRANT SELECT, INSERT, UPDATE, DELETE ON users TO john;
+```
+
+Although DCL is not covered extensively in this course, it is crucial for database security and user management.
+
+## Transaction Control Language (TCL)
+
+TCL manages database transactions to ensure data integrity. Transactions group multiple operations into a single unit, allowing them to be committed or rolled back together. Example of transaction could be a bank transfer where money is deducted from one account and added to another account while updating the bank statement for both accounts. If any of these steps fail, the transaction is rolled back, and the database is left in a consistent state. Here is an simplified example of a transaction:
+
+```sql
+BEGIN;
+-- Deduct money from source account
+UPDATE accounts SET balance = balance - 100 WHERE account_id = 1;
+-- Add money to destination account
+UPDATE accounts SET balance = balance + 100 WHERE account_id = 2;
+-- Update bank statement for source and destination account
+UPDATE bank_statements SET balance = balance - 100 WHERE account_id = 1;
+UPDATE bank_statements SET balance = balance + 100 WHERE account_id = 2;
+COMMIT;
+```
+
+Most common TCL statements are `COMMIT` (saves the changes), `ROLLBACK` (undoes changes in case of an error), and `SAVEPOINT` (sets checkpoints within a transaction).
+
+---
+Takeaways
+
+- SQL provides a variety of query types each designed to fulfill specific tasks from retrieving data to modifying database structures and controlling access.
+- DQL is used to retrieve data from a database, enabling you to extract meaningful insights based on specified conditions. Common DQL statement is `SELECT`.
+- DML is used to modify data stored in a database. Common DML statements are `INSERT`, `UPDATE`, and `DELETE`.
+- DDL is used to create, modify, and delete database objects such as tables, indexes, and views. Common DDL statements are `CREATE`, `ALTER`, and `DROP`.
+- DCL is used to manage access permissions and security within a database. Common DCL statements are `GRANT` and `REVOKE`.
+- TCL manages database transactions to ensure data integrity. Common TCL statements are `COMMIT`, `ROLLBACK`, and `SAVEPOINT`.
+---
+
+In the next chapter, we will start looking at DQL queries first to get you started with SQL and then move on to DDL and DML.

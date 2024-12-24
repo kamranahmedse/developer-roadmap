@@ -90,7 +90,7 @@ export function CourseView(props: CourseViewProps) {
           >
             <div className="relative h-full">
               <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
-                <div className="mx-auto max-w-2xl p-4">
+                <div className="mx-auto max-w-3xl p-4">
                   <h3 className="mt-10 text-4xl font-bold">
                     {lesson.frontmatter.title}
                   </h3>

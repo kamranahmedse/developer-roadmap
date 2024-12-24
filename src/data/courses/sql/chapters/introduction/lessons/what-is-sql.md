@@ -67,6 +67,15 @@ SQL is a standard language based on the [ISO/IEC 9075 standard](https://en.wikip
 
 While these flavors differ, they are all based on the same standard, and therefore, the SQL statements you write will be compatible with most of them. By completing this course, you will be able to write SQL statements that are compatible with most popular database systems.
 
-## Conclusion
+
+---
+
+## Key Takeaways
+
+- SQL is a declarative language that allows us to describe what we want to achieve rather than how to achieve it.
+- SQL is case-insensitive.
+- SQL statements are made up of clauses e.g. `SELECT`, `FROM`, `WHERE`, etc.
+- SQL is a standard language based on the ISO/IEC 9075 standard.
+- There are many different flavors of SQL that are based on the SQL standard.
 
 In this chapter, we covered the basics of SQL, the language for querying databases. We discussed the different operations that can be performed on a database, the components of a database, the syntax of SQL statements, and the different flavors of SQL. In the next chapter, we will cover the different types of queries in SQL.
