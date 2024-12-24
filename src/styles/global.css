@@ -87,6 +87,17 @@ a > code:before {
   content: '' !important;
 }
 
+.course-content table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.course-content table td,
+.course-content table th {
+  padding: 5px 10px;
+}
+
 .note-content-editor[contenteditable] ~ grammarly-extension,
 .note-content-editor input ~ grammarly-extension,
 .note-content-editor textarea ~ grammarly-extension {

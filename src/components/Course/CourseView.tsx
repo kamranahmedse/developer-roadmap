@@ -9,6 +9,7 @@ import {
 import { isLoggedIn } from '../../lib/jwt';
 import { IdCardIcon, Loader2Icon } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
+import { cn } from '../../lib/classname';
 
 const SqlCodeEditor = lazy(() =>
   import('../SqlCodeEditor/SqlCodeEditor').then((module) => ({
@@ -90,11 +91,19 @@ export function CourseView(props: CourseViewProps) {
           >
             <div className="relative h-full">
               <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
-                <div className="mx-auto max-w-3xl p-4">
+                <div
+                  className={cn('mx-auto max-w-3xl p-4', {
+                    'max-w-xl': [
+                      'lesson-challenge',
+                      'challenge',
+                      'lesson-quiz',
+                    ].includes(lessonType),
+                  })}
+                >
                   <h3 className="mt-10 text-4xl font-bold">
                     {lesson.frontmatter.title}
                   </h3>
-                  <div className="course-content prose prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800">
+                  <div className="course-content prose-blockquote:font-normal prose prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800">
                     {children}
                   </div>
                 </div>
