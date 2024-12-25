@@ -88,22 +88,3 @@ This query will return the name of the customer and their phone number. If the p
 | Charlie | 555-555-5555 | charlie@example.com |
 | Eve     | 555-777-8888 | eve@example.com     |
 | Grace   | 555-444-3333 | grace@example.com   |
-
----
-
-## Challenge
-
-Given the following table for `orders` write a query to return the top 3 most expensive orders that don't have a `shipped_at` date.
-
-| id  | customer_id | total_amount | shipped_at |
-| --- | ----------- | ------------ | ---------- |
-| 1   | 1           | 100          | 2024-01-01 |
-| 2   | 2           | 200          | NULL       |
-| 3   | 3           | 300          | 2024-01-03 |
-| 4   | 4           | 400          | NULL       |
-| 5   | 5           | 500          | 2024-01-05 |
-| 6   | 6           | 600          | NULL       |
-| 7   | 7           | 700          | 2024-01-07 |
-| 8   | 8           | 800          | NULL       |
-| 9   | 9           | 900          | 2024-01-09 |
-| 10  | 10          | 1000         | NULL       |
