@@ -2,8 +2,7 @@
 
 Angular is a TypeScript-based open-source front-end web framework developed and maintained by Google.
 
-- It is used for building dynamic, single-page web applications (SPAs).
-- Angular provides comprehensive tools, including dependency injection, data binding, routing, and testing, to create robust and scalable web applications.
+It is used for building dynamic, single-page web applications (SPAs). Angular provides comprehensive tools, including dependency injection, data binding, routing, and testing, to create robust and scalable web applications.
 
 Visit the following resources to learn more:
 
