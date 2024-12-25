@@ -81,6 +81,14 @@ a > code:before {
   font-size: 17px !important;
 }
 
+.course-content.prose blockquote h1,
+.course-content.prose blockquote h2,
+.course-content.prose blockquote h3,
+.course-content.prose blockquote h4 {
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
 .course-content.prose ul li > code:before,
 .course-content p > code:before,
 .course-content.prose ul li > code:after,
