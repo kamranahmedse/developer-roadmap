@@ -93,6 +93,10 @@ a > code:before {
 .course-content p > code:before,
 .course-content.prose ul li > code:after,
 .course-content p > code:after,
+.course-content h2 > code:after,
+.course-content h2 > code:before,
+.course-content table code:before,
+.course-content table code:after,
 .course-content a > code:after,
 .course-content a > code:before {
   content: '' !important;

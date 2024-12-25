@@ -68,6 +68,8 @@ CREATE TABLE users (
 );
 ```
 
+Again, don't worry about the syntax for now. We will cover it in detail in the coming chapters.
+
 ## Data Control Language (DCL)
 
 DCL is used to manage access permissions and security within a database. It allows administrators to grant or revoke rights to specific users. The most common DCL statements are `GRANT` and `REVOKE`. 
