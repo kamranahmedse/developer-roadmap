@@ -17,13 +17,13 @@ Single line comments are created using `--` followed by the comment text. For ex
 -- They are ignored by the database.
 SELECT * FROM customers;
 
--- You can use them to comment 
+-- You can use them to comment
 -- out parts of your query.
 SELECT * FROM customers; -- WHERE id = 1;
 
 -- Add notes to your query for later reference.
-SELECT * 
-FROM customers 
+SELECT *
+FROM customers
 WHERE country = 'USA';  -- USA users only
 ```
 
@@ -39,18 +39,16 @@ Multi line comments are created using `/*` followed by the comment text and `*/`
 SELECT * FROM customers;
 
 /*
-    -- Other queries for our database
-    SELECT * FROM customers;
-    SELECT * FROM orders;
-    SELECT * FROM books;
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM books;
 */
+```
 
--- You can also use them to comment 
--- out parts of your query. e.g. 
--- here we are commenting out the
--- country condition so we are only 
--- getting orders that are shipped.
-SELECT * 
-FROM orders 
+You can also use them to comment out parts of your query. e.g. here we are commenting out the country condition so we are only getting orders that are shipped.
+
+```sql
+SELECT *
+FROM orders
 WHERE /* country = 'USA' AND */ status = 'shipped';
 ```
