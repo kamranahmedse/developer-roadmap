@@ -4,5 +4,5 @@ PHP, an acronym for Hypertext Preprocessor, is a popular server-side scripting l
 
 Visit the following resources to learn more:
 
-- [@official@What is PHP?](https://www.php.net/manual/en/intro-whatis.php)
+- [@official@What is PHP?](https://www.php.net/manual/en/introduction.php)
 - [@article@Introduction to PHP](https://www.phptutorial.net/php-tutorial/what-is-php/)
