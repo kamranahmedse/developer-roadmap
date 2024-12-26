@@ -5,15 +5,13 @@ order: 130
 type: lesson
 ---
 
-> Although, what we covered in the previous lesson is enough for most of the use cases, it is good to know about some other data types that are supported by some databases.
-
 In our previous lesson we only covered some basic data types for the numeric category. We also did not go into the details of how much space each data type takes up in the database and how to store numbers in a way that is more space efficient.
 
 In this lesson we will cover more data types for the numeric category and look at some other standard SQL data types.
 
 ## Numeric Data Types
 
-Numeric data types are used to store numerical values. They can be further categorized into two types:
+Numeric data types can be further categorized into two types:
 
 | Category    | Description                                                                     |
 | ----------- | ------------------------------------------------------------------------------- |
@@ -120,3 +118,18 @@ Here is the list of data types used to store approximate numbers:
 - `DOUBLE PRECISION`
 
 `FLOAT` and `REAL` are mostly the same and have the same precision. `DOUBLE PRECISION` have higher precision than `FLOAT` and `REAL`. You should look at the documentation of the database you are using (e.g. [PostgreSQL](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-FLOAT), [MySQL](https://dev.mysql.com/doc/refman/8.3/en/floating-point-types.html)) to understand the precision of floating point numbers.
+
+> ## Mathematical Errors
+>
+> It's important to note that, because floating-point values are approximate and not stored as exact values, attempts to treat them as exact in comparisons may lead to problems. They are also subject to platform or implementation dependencies. For more information visit [Problems with Floating-Point Values](https://dev.mysql.com/doc/refman/8.4/en/problems-with-float.html).
+>
+> Decimal, on the other hand, stores numbers as exact values without loss of precision.
+
+## Should I use Decimal or Floating Point?
+
+
+| Decimal Numbers                                                                          | Floating-Point Numbers                                                                          |
+| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Use when you need exact precision, such as for financial calculations or monetary values | Use when you're working with approximate values, like scientific measurements                   |
+| Use when dealing with fixed-point numbers where accuracy is crucial                      | Use when you need to store very large or very small numbers efficiently                         |
+|                                                                                          | Use when absolute precision is not critical, and you're willing to accept small rounding errors |
