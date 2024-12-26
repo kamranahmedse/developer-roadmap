@@ -8,159 +8,25 @@ import {
 } from 'lucide-react';
 import { Rating } from '../Rating/Rating';
 import { CourseStatPill } from './CourseStatPill';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useMemo } from 'react';
 import { cn } from '../../lib/classname';
 import { CourseInfoCard } from './CourseInfoCard';
 import { ChevronDownIcon } from '../ReactIcons/ChevronDownIcon';
 import { CourseChapterItem } from './CourseChapterItem';
 import { CourseFloatingSidebar } from './CourseFloatingSidebar';
+import type { CourseDetailsResponse } from '../../api/course';
+import { sanitizeHtml } from '../../lib/sanitize-html';
+import { markdownToHtml } from '../../lib/markdown';
+import { getRelativeTimeString } from '../../lib/date';
+import { humanizeNumber } from '../../lib/number';
 
-const DUMMY_COURSE_CONTENT = [
-  {
-    title: 'Introduction to SQL',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'What is SQL?',
-      },
-      {
-        type: 'lesson',
-        title: 'Why use SQL?',
-      },
-      {
-        type: 'lesson',
-        title: 'SQL Syntax',
-      },
-      {
-        type: 'quiz',
-        title: 'Quiz 1',
-      },
-      {
-        type: 'challenge',
-        title: 'Challenge 1',
-      },
-    ],
-  },
-  {
-    title: 'Basic SQL Queries',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'SELECT Statement',
-      },
-      {
-        type: 'lesson',
-        title: 'WHERE Clause',
-      },
-      {
-        type: 'lesson',
-        title: 'ORDER BY Clause',
-      },
-      {
-        type: 'quiz',
-        title: 'Quiz 2',
-      },
-      {
-        type: 'challenge',
-        title: 'Challenge 2',
-      },
-    ],
-  },
-  {
-    title: 'Advanced SQL Queries',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'JOIN Clause',
-      },
-      {
-        type: 'lesson',
-        title: 'GROUP BY Clause',
-      },
-      {
-        type: 'lesson',
-        title: 'HAVING Clause',
-      },
-      {
-        type: 'quiz',
-        title: 'Quiz 3',
-      },
-      {
-        type: 'challenge',
-        title: 'Challenge 3',
-      },
-    ],
-  },
-  {
-    title: 'SQL Functions',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'COUNT() Function',
-      },
-      {
-        type: 'lesson',
-        title: 'SUM() Function',
-      },
-      {
-        type: 'lesson',
-        title: 'AVG() Function',
-      },
-      {
-        type: 'quiz',
-        title: 'Quiz 4',
-      },
-      {
-        type: 'challenge',
-        title: 'Challenge 4',
-      },
-    ],
-  },
-  {
-    title: 'Database Design',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'Normalization',
-      },
-      {
-        type: 'lesson',
-        title: 'Denormalization',
-      },
-      {
-        type: 'lesson',
-        title: 'Indexes',
-      },
-      {
-        type: 'quiz',
-        title: 'Quiz 5',
-      },
-      {
-        type: 'challenge',
-        title: 'Challenge 5',
-      },
-    ],
-  },
-  {
-    title: 'Optimizing Queries',
-    lessons: [
-      {
-        type: 'lesson',
-        title: 'Query Optimization',
-      },
-      {
-        type: 'lesson',
-        title: 'Indexing',
-      },
-      {
-        type: 'lesson',
-        title: 'Query Caching',
-      },
-    ],
-  },
-];
+type CourseLandingProps = {
+  course: CourseDetailsResponse;
+};
 
-export function CourseLanding() {
+export function CourseLanding(props: CourseLandingProps) {
+  const { course } = props;
+
   const containerRef = useRef<HTMLDivElement>(null);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -177,46 +43,90 @@ export function CourseLanding() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [containerRef]);
 
+  const {
+    title,
+    chapters,
+    description,
+    briefDescription,
+    briefTitle,
+    difficulty,
+    updatedAt,
+    rating,
+    willLearn = [],
+    enrolled,
+    prerequisites,
+  } = course;
+
+  const updatedTime = getRelativeTimeString(updatedAt);
+  const averageRating = rating ? rating.average : 0;
+
+  const sortedChapters = chapters.sort((a, b) => a.sort - b.sort);
+  const [lessonCount, challengeCount] = sortedChapters.reduce(
+    (acc, chapter) => {
+      const lessonCount = chapter.lessons.filter(
+        (lesson) => lesson.type === 'lesson',
+      ).length;
+      const challengeCount = chapter.lessons.filter(
+        (lesson) => lesson.type === 'challenge' || lesson.type === 'quiz',
+      ).length;
+
+      return [acc[0] + lessonCount, acc[1] + challengeCount];
+    },
+    [0, 0],
+  );
+
+  const enrolledLabel = `${humanizeNumber(enrolled)} user${
+    enrolled > 1 ? 's' : ''
+  } enrolled`;
+
   return (
     <>
       <div className="bg-slate-900 py-5 text-white sm:py-8">
         <div className="container grid grid-cols-5 gap-6">
           <div className="col-start-1 col-end-4 space-y-4">
             <p className="flex items-center gap-1 text-sm text-slate-400">
-              <a>Home</a> / <a>Courses</a> / <a>Learn SQL</a>
+              <a href="/">Home</a> / <a href="/courses">Courses</a> /{' '}
+              <a href={`/learn/${course.slug}`}>{title}</a>
             </p>
 
-            <h1 className="mt-8 text-5xl font-bold">SQL 101</h1>
+            <h1 className="mt-8 text-5xl font-bold">{briefTitle}</h1>
 
             <div className="flex items-center gap-2">
               <CourseStatPill
                 icon={ShapesIcon}
-                label="Difficulty Beginner"
-                className="border-none p-0 text-slate-400"
+                label={`Difficulty ${difficulty}`}
+                className="border-none p-0 capitalize text-slate-400"
               />
               <CourseStatPill
                 icon={CalendarIcon}
-                label="Updated 5 days ago"
+                label={`Updated ${updatedTime}`}
                 className="border-none p-0 text-slate-400"
               />
             </div>
 
-            <p className="text-sm">
-              Learn everything you need to know about SQL with an interactive
-              playground. It comes with a built-in editor and a database to
-              practice your queries.
-            </p>
+            {briefDescription && (
+              <Description
+                description={briefDescription}
+                className="prose-invert"
+              />
+            )}
 
             <div className="flex items-center gap-2 text-sm">
-              <span>4.5</span>
-              <Rating rating={4.5} />
-              <span>(559 ratings)</span>
+              <span>{averageRating}</span>
+              <Rating rating={averageRating} />
+              <span>({rating.count} ratings)</span>
             </div>
 
             <div className="flex items-center gap-2">
-              <CourseStatPill icon={UsersIcon} label="4.5k users enrolled" />
-              <CourseStatPill icon={LetterTextIcon} label="20 Lessons" />
-              <CourseStatPill icon={CodeXmlIcon} label="35 Challenges" />
+              <CourseStatPill icon={UsersIcon} label={enrolledLabel} />
+              <CourseStatPill
+                icon={LetterTextIcon}
+                label={`${lessonCount} Lessons`}
+              />
+              <CourseStatPill
+                icon={CodeXmlIcon}
+                label={`${challengeCount} Challenges`}
+              />
             </div>
           </div>
         </div>
@@ -228,37 +138,39 @@ export function CourseLanding() {
           ref={containerRef}
         >
           <div className="col-start-1 col-end-4 space-y-4">
-            <CourseInfoCard title="What you'll learn">
-              <ul className="flex list-inside list-disc flex-col gap-1 text-sm text-gray-700 marker:text-gray-400">
-                <li>Understand SQL syntax</li>
-                <li>Write complex queries</li>
-                <li>Use SQL in real-world scenarios</li>
-                <li>Optimize your queries</li>
-                <li>Understand database design</li>
-                <li>Write complex queries</li>
-              </ul>
-            </CourseInfoCard>
-            <CourseInfoCard title="About this Course">
-              <div className="prose-sm mt-4">
-                <p>
-                  SQL 101 is a beginner-friendly course that will teach you
-                  everything you need to know about SQL. It comes with an
-                  interactive playground where you can practice your queries.
-                </p>
-                <p>
-                  The course is divided into multiple sections, each covering a
-                  different aspect of SQL. You'll learn how to write complex
-                  queries, use SQL in real-world scenarios, optimize your
-                  queries, and understand database design.
-                </p>
-              </div>
-            </CourseInfoCard>
+            {willLearn.length > 0 && (
+              <CourseInfoCard title="What you'll learn">
+                <ul className="flex list-inside list-disc flex-col gap-1 text-sm text-gray-700 marker:text-gray-400">
+                  {willLearn.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </CourseInfoCard>
+            )}
+
+            {description && (
+              <CourseInfoCard title="About this Course">
+                <div className="mt-4">
+                  <Description description={description} />
+                </div>
+              </CourseInfoCard>
+            )}
+
+            {prerequisites && prerequisites.length > 0 && (
+              <CourseInfoCard title="Prerequisites">
+                <ul className="flex list-inside list-disc flex-col gap-1 text-sm text-gray-700 marker:text-gray-400">
+                  {prerequisites.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </CourseInfoCard>
+            )}
 
             <CourseInfoCard title="Course Content">
-              {DUMMY_COURSE_CONTENT.map((section, index) => {
-                const { title, lessons } = section;
+              {sortedChapters.map((chapter, index) => {
+                const { title, lessons } = chapter;
                 const isFirst = index === 0;
-                const isLast = index === DUMMY_COURSE_CONTENT.length - 1;
+                const isLast = index === sortedChapters.length - 1;
 
                 return (
                   <CourseChapterItem
@@ -275,10 +187,33 @@ export function CourseLanding() {
             </CourseInfoCard>
           </div>
           <div className="col-start-4 col-end-6">
-            <CourseFloatingSidebar isSticky={isSticky} />
+            <CourseFloatingSidebar isSticky={isSticky} course={course} />
           </div>
         </div>
       </div>
     </>
+  );
+}
+
+type DescriptionProps = {
+  description: string;
+  className?: string;
+};
+
+export function Description(props: DescriptionProps) {
+  const { description, className } = props;
+
+  const html = useMemo(() => {
+    return sanitizeHtml(markdownToHtml(description, false));
+  }, [description]);
+
+  return (
+    <div
+      className={cn(
+        'course-content prose prose-sm prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800',
+        className,
+      )}
+      dangerouslySetInnerHTML={{ __html: html }}
+    ></div>
   );
 }

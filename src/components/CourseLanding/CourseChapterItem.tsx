@@ -70,20 +70,28 @@ export function CourseChapterItem(props: CourseChapterItemProps) {
 
       {isOpen && (
         <div className="border-t">
-          {lessons.map((lesson, index) => {
-            return (
-              <div key={index} className="flex items-center gap-2 p-2">
-                <span className="text-gray-500">
-                  {lesson.type === 'lesson' ? (
-                    <BookIcon className="size-4 stroke-[2.5]" />
-                  ) : (
-                    <CodeXmlIcon className="size-4 stroke-[2.5]" />
-                  )}
-                </span>
-                <span>{lesson.title}</span>
-              </div>
-            );
-          })}
+          {lessons.length === 0 && (
+            <div className="p-2 text-gray-500">No lessons</div>
+          )}
+
+          {lessons.length > 0 && (
+            <>
+              {[...textualLessons, ...excercises].map((lesson, index) => {
+                return (
+                  <div key={index} className="flex items-center gap-2 p-2">
+                    <span className="text-gray-500">
+                      {lesson.type === 'lesson' ? (
+                        <BookIcon className="size-4 stroke-[2.5]" />
+                      ) : (
+                        <CodeXmlIcon className="size-4 stroke-[2.5]" />
+                      )}
+                    </span>
+                    <span>{lesson.title}</span>
+                  </div>
+                );
+              })}
+            </>
+          )}
         </div>
       )}
     </div>
