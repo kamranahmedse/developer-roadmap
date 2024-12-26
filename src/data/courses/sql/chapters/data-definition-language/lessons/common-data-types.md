@@ -24,7 +24,7 @@ Different databases have different data types, but all the database support some
 
 | Data Type | Description                                                 |
 | --------- | ----------------------------------------------------------- |
-| `INT`     | Whole numbers without decimal points e.g. 1, 2, 3, etc.     |
+| `INTEGER` | Whole numbers without decimal points e.g. 1, 2, 3, etc.     |
 | `FLOAT`   | Numbers with decimal points e.g. 1.99, 2.99, 3.99, etc.     |
 | `DOUBLE`  | Like `FLOAT` but with more precision e.g. 1.79769313486231  |
 | `VARCHAR` | Max 255 characters long string of text e.g. 'Hello, World!' |
@@ -54,9 +54,9 @@ Here is the type of data that can be stored in each column:
 
 | Column      | Type      | Description                                                                  |
 | ----------- | --------- | ---------------------------------------------------------------------------- |
-| `id`        | `INT`     | Non-decimal numbers e.g. `1`, `2`, `3`, etc.                                 |
+| `id`        | `INTEGER` | Non-decimal numbers e.g. `1`, `2`, `3`, etc.                                 |
 | `name`      | `VARCHAR` | Text of varying length (maximum 250 characters) e.g. `John Doe`, `Bob Smith` |
-| `age`       | `INT`     | Non-decimal numbers e.g. `19`, `22`, `30`, etc.                              |
+| `age`       | `INTEGER` | Non-decimal numbers e.g. `19`, `22`, `30`, etc.                              |
 | `weight`    | `FLOAT`   | Decimal numbers e.g. `73.99`, `65`, `92.06`, etc.                            |
 | `is_active` | `BOOLEAN` | Whether the user is active e.g. `True` or `False`                            |
 
@@ -69,7 +69,7 @@ Let's look at the differences between these data types which will help you under
 
 ### `VARCHAR` vs `CHAR` for the `name` column
 
-The difference between `VARCHAR` and `CHAR` is that `VARCHAR` is a variable length and memory efficient string of text, while `CHAR` is a fixed length string of text. 
+The difference between `VARCHAR` and `CHAR` is that `VARCHAR` is a variable length and memory efficient string of text, while `CHAR` is a fixed length string of text.
 
 This means that `VARCHAR (250)` can store any string of text that is up to 250 characters long, but the space is allocated depending on the length of the string e.g. if the string is 10 characters long, the space allocated is 10 bytes, if the string is 150 characters long, the space allocated is 150 bytes.
 
