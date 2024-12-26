@@ -98,7 +98,11 @@ a > code:before {
 .course-content table code:before,
 .course-content table code:after,
 .course-content a > code:after,
-.course-content a > code:before {
+.course-content a > code:before,
+.course-content h2 code:after,
+.course-content h2 code:before,
+.course-content h3 code:after,
+.course-content h3 code:before {
   content: '' !important;
 }
 
