@@ -1,22 +1,15 @@
 ---
-title: More on Data Types
+title: More on Numeric Types
 description: Learn about common data types in SQL.
 order: 130
 type: lesson
 ---
 
-As we discussed in the previous lesson, there are following four basic categories of data types in SQL:
+> Although, what we covered in the previous lesson is enough for most of the use cases, it is good to know about some other data types that are supported by some databases.
 
-| Category  | Description                           |
-| --------- | ------------------------------------- |
-| Numeric   | Used for storing numerical values     |
-| Temporal  | Used for storing date and time values |
-| Character | Used for storing text values          |
-| Boolean   | Used for storing boolean values       |
+In our previous lesson we only covered some basic data types for the numeric category. We also did not go into the details of how much space each data type takes up in the database and how to store numbers in a way that is more space efficient.
 
-In our previous lesson we only covered some basic data types for each category. We also did not go into the details of how much space each data type takes up in the database.
-
-In this lesson we will go into more details about each data type and look at some other standard SQL data types.
+In this lesson we will cover more data types for the numeric category and look at some other standard SQL data types.
 
 ## Numeric Data Types
 
