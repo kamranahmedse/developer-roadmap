@@ -1,7 +1,7 @@
 ---
 title: Common Data Types
 description: Learn about common data types in SQL.
-order: 110
+order: 120
 type: lesson-challenge
 ---
 
