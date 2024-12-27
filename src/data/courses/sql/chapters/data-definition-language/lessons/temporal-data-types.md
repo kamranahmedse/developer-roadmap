@@ -19,7 +19,6 @@ Given below is the list of temporal data types in SQL with their sample usage:
 | `TIME`      | Stores only the time of day                       | Store hours, appointment times    |
 | `DATETIME`  | Stores both date and time                         | Event times, log entries          |
 | `TIMESTAMP` | Similar to `DATETIME` but with timezone awareness | e.g. Calendar events              |
-| `INTERVAL`  | Stores periods of time                            | Duration calculations, scheduling |
 
 Let's explore each of these types in detail in the following sections.
 
