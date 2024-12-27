@@ -14,7 +14,7 @@ Now that we have got the theoretical part out of the way, let's dive into the pr
 We don't expect you to have a database setup on your local machine. All our lessons will have the coding environment setup with the database ready for you to use and practice. We will be using a hypothetical pre-populated databases throughout this course to help you learn SQL. Additional things to note about the coding environment:
 
 - Our database environment is not persistent. This means that if you close the browser or refresh the page, the database will be reset to its original state.
-- We are using SQLite for our coding environment. The concepts we will be covering, however, are the same for any other database and you are not required to know anything about SQLite to follow this course.
+- We are using PostgreSQL for our coding environment. The concepts we will be covering, however, are the same for any other database and you are not required to know anything about PostgreSQL to follow this course.
 
 ### Important Note on Running Snippets
 
