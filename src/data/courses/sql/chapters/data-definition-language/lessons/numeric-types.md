@@ -121,7 +121,7 @@ Here is the list of data types used to store approximate numbers:
 
 > ## Mathematical Errors
 >
-> It's important to note that, because floating-point values are approximate and not stored as exact values, attempts to treat them as exact in comparisons may lead to problems. They are also subject to platform or implementation dependencies. For more information visit [Problems with Floating-Point Values](https://dev.mysql.com/doc/refman/8.4/en/problems-with-float.html).
+> It's important to note that, because floating-point values are approximate and not stored as exact values, attempts to treat them as exact in comparisons may lead to problems (e.g. `WHERE price = 1.00`). They are also subject to platform or implementation dependencies. For more information visit [Problems with Floating-Point Values](https://dev.mysql.com/doc/refman/8.4/en/problems-with-float.html).
 >
 > Decimal, on the other hand, stores numbers as exact values without loss of precision.
 

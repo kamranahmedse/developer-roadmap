@@ -15,7 +15,7 @@ While SQLite supports standard SQL, it differs from other databases in how it ha
 
 ### Dynamic Typing in SQLite
 
-SQLite uses dynamic typing, meaning it doesn’t strictly enforce data types on columns. This allows storing any value, like a string, in an `INTEGER` column which is something not allowed in databases with static typing, such as MySQL and PostgreSQL.
+SQLite uses dynamic typing, meaning it doesn't strictly enforce data types on columns; the data types you define when creating a table have no effect on the data stored in the database, they are merely used as a display hint. This allows storing any value type in any column, e.g. you can store a string in an `INTEGER` column.
 
 For example, the SQL statement below is perfectly valid in SQLite:
 
