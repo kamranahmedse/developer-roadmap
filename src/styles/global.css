@@ -74,8 +74,9 @@ a > code:before {
 .course-content h1 > code,
 .course-content h2 > code,
 .course-content h3 > code {
-  background: #282a36 !important;
-  color: #f4f4f5 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #282a36 !important;
+  color: #282a36 !important;
   padding: 2px 4px;
   border-radius: 5px;
   font-size: 17px !important;
@@ -101,8 +102,8 @@ a > code:before {
 .course-content a > code:before,
 .course-content h2 code:after,
 .course-content h2 code:before,
-.course-content h3 code:after,
-.course-content h3 code:before {
+.course-content h2 code:after,
+.course-content h2 code:before {
   content: '' !important;
 }
 
