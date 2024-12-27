@@ -2,7 +2,7 @@
 title: More on Numeric Types
 description: Learn about common data types in SQL.
 order: 130
-type: lesson
+type: lesson-challenge
 ---
 
 In our previous lesson we only covered some basic data types for the numeric category. We also did not go into the details of how much space each data type takes up in the database and how to store numbers in a way that is more space efficient.
@@ -84,6 +84,10 @@ CREATE TABLE products (
 
 If you try to insert a number with more than 4 digits in total or more than 2 digits after the decimal point, you will get an error or unexpected results depending on the database you are using.
 
+> ### Note on Coding Editor
+>
+> Pressing the `Run` button in the coding editor resets the database after execution. So make sure to run the above `CREATE TABLE` and `INSERT INTO` statements below in the same editor session to avoid any issues.
+
 ```sql
 -- 23.123 will be rounded to 23.12 because it can't
 -- store more than 2 digits after the decimal point
@@ -91,7 +95,7 @@ INSERT INTO products (id, price)
 VALUES (1, 23.123);
 ```
 
-Regarding the error or rounding, it depends on the database you are using. I would recommend you to check the documentation of the database you are using to understand how it handles errors and rounding. Alternatively, write some queries to test how it works.
+Since we are using PostgreSQL for our coding editor, the above query will result in truncation of the number to `23.12` because it can't store more than 2 digits after the decimal point.
 
 ## Approximate Numerics
 
@@ -121,12 +125,11 @@ Here is the list of data types used to store approximate numbers:
 
 > ## Mathematical Errors
 >
-> It's important to note that, because floating-point values are approximate and not stored as exact values, attempts to treat them as exact in comparisons may lead to problems (e.g. `WHERE price = 1.00`). They are also subject to platform or implementation dependencies. For more information visit [Problems with Floating-Point Values](https://dev.mysql.com/doc/refman/8.4/en/problems-with-float.html).
+> It's important to note that, because floating-point values are approximate and not stored as exact values, attempts to treat them as exact in comparisons may lead to problems (e.g. trying to compare `WHERE price = 1.00`). They are also subject to platform or implementation dependencies. For more information visit [Problems with Floating-Point Values](https://dev.mysql.com/doc/refman/8.4/en/problems-with-float.html).
 >
 > Decimal, on the other hand, stores numbers as exact values without loss of precision.
 
 ## Should I use Decimal or Floating Point?
-
 
 | Decimal Numbers                                                                          | Floating-Point Numbers                                                                          |
 | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
