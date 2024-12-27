@@ -5,7 +5,7 @@ order: 160
 type: lesson-challenge
 ---
 
-In our previous lessons, we learned about various constraints that help maintain data integrity. In this lesson, we'll look at two of the most important constraints in SQL: Primary Keys and Foreign Keys.
+In our previous lessons, we learned about various constraints that help maintain data integrity. In this lesson we will learn about primary keys and how to use them effectively.
 
 ## Primary Keys
 
