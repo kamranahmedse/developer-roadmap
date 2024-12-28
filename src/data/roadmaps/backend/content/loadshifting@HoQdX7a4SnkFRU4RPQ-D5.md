@@ -5,3 +5,4 @@ Load shifting is a strategy used to manage and distribute computing or system wo
 Learn more from the following resources:
 
 - [@video@Load Shifting 101](https://www.youtube.com/watch?v=DOyMJEdk5aE)
+- [@wiki@Load Shifting](https://en.wikipedia.org/wiki/Load_shifting)

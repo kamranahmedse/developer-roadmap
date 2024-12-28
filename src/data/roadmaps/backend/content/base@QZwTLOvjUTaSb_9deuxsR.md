@@ -4,4 +4,4 @@ Oracle Base Database Service enables you to maintain absolute control over your 
 
 Learn more from the following resources:
 
-- [@official@Base Database Website](https://docs.oracle.com/en-us/iaas/base-database/index.html)
+- [@official@Base Database Documentation](https://docs.oracle.com/en-us/iaas/base-database/index.html)
