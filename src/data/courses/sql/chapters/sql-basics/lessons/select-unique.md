@@ -1,5 +1,5 @@
 ---
-title: Unique Projection
+title: Select Unique
 description: Write a SQL query to find the total number of orders in the `orders` table.
 order: 330
 type: challenge

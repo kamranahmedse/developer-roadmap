@@ -1,5 +1,5 @@
 ---
-title: Expression Projection
+title: Select Expression
 description: Write a SQL query to find the total number of orders in the `orders` table.
 order: 310
 type: challenge
