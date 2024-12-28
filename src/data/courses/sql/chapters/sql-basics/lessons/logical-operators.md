@@ -1,7 +1,7 @@
 ---
-title: Challenge 5
+title: Logical Operators
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 500
+order: 340
 type: challenge
 initSteps:
   - CREATE TABLE books (
@@ -24,7 +24,6 @@ expectedResults:
   - columns: [id, title, genre, price, stock, year]
     values:
       - [1, 'The Great Adventure', 'Fiction', 15.99, 12, 2020]
-      - [3, 'Science Explained', 'Science', 20.00, 0, 2019]
 ---
 
 Given the following `books` table:
@@ -38,19 +37,14 @@ Given the following `books` table:
 | 5   | History Revisited    | History | 10.99 | 20    | 2017 |
 | 6   | Fictional Reality    | Fiction | 25.99 | 3     | 2022 |
 
-Write a query to retrieve `books` that meet the following criteria and order them as specified:
+Write a query to find books that match the following conditions:
 
-- The `genre` must be either Fiction or Science.
-- The `price` should be `>= 10` and `<= 20`.
-
-Here are the sorting requirements:
-
-- First, sort the results by **stock** in **descending order** (books with more stock appear first).
-- If two books have the same stock, sort them by **price** in ascending order.
+- The book is either **Fiction** or **Mystery**.
+- It costs **less than $20**.
+- It was **published after 2018** OR has **more than 10 copies in stock**.
 
 ## Expected Results
 
 | id  | title               | genre   | price | stock | year |
 | --- | ------------------- | ------- | ----- | ----- | ---- |
 | 1   | The Great Adventure | Fiction | 15.99 | 12    | 2020 |
-| 3   | Science Explained   | Science | 20.00 | 0     | 2019 |

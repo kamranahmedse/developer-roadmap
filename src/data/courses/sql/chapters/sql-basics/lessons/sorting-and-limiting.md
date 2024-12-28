@@ -1,7 +1,7 @@
 ---
-title: Challenge 6
+title: Sorting and Limiting
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 600
+order: 360
 type: challenge
 initSteps:
   - CREATE TABLE orders (

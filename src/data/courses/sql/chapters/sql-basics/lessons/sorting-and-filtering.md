@@ -1,7 +1,7 @@
 ---
-title: Challenge 7
+title: Sorting and Filtering
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 700
+order: 370
 type: challenge
 initSteps:
   - CREATE TABLE orders (

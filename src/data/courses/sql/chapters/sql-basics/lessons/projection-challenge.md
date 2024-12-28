@@ -1,5 +1,5 @@
 ---
-title: Challenge 1
+title: Projection Challenge
 description: Write a SQL query to find the total number of orders in the `orders` table.
 order: 300
 type: challenge

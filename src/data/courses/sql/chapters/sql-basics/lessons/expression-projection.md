@@ -1,7 +1,7 @@
 ---
-title: Challenge 2
+title: Expression Projection
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 300
+order: 310
 type: challenge
 initSteps:
   - CREATE TABLE books (

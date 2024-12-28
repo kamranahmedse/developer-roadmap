@@ -1,7 +1,7 @@
 ---
-title: Challenge 3
+title: Unique Projection
 description: Write a SQL query to find the total number of orders in the `orders` table.
-order: 300
+order: 330
 type: challenge
 initSteps:
   - CREATE TABLE orders (
