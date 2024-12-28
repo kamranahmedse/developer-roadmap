@@ -2,12 +2,8 @@
 title: Temporal Data Types
 description: Learn about date and time data types in SQL and how to use them effectively.
 order: 140
-type: lesson
+type: lesson-challenge
 ---
-
-In this last lesson about data types, we will look at the temporal data types and move on to the next lessons about other DDL statements.
-
-## What are Temporal Data Types?
 
 Temporal data types are used to store date and time data. These are one of the most important data types in SQL and understanding them is crucial for working with any application that needs to store time-based data.
 
@@ -37,31 +33,28 @@ CREATE TABLE books (
 -- Insert a book record
 INSERT INTO books (id, title, publication_date, reprint_date)
 VALUES (1, 'The Great Adventure', '2023-05-15', '2024-01-01');
+
+-- Select the book record
+SELECT * FROM books;
 ```
 
 When you insert or query date data, the format `YYYY-MM-DD` is used. This is the standard format for dates based on [ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601) and it is used by most databases.
 
 > Both MySQL and PostgreSQL allow you to use the format `YYYYMMDD` when inserting dates as well. You can read more about the date and time literals in the [MySQL documentation](https://dev.mysql.com/doc/en/date-and-time-literals.html) and [PostgreSQL documentation](https://www.postgresql.org/docs/current/datatype-datetime.html#DATATYPE-DATETIME-INPUT-DATES).
 
-When you query the date data back from the database i.e.
-
-```sql
-SELECT * FROM books;
-```
-
-You will get the date in the format `YYYY-MM-DD` i.e.
+When you query the date data back from the database, you will get the date in the format `YYYY-MM-DD` i.e.
 
 | id  | title               | publication_date | reprint_date |
 | --- | ------------------- | ---------------- | ------------ |
 | 1   | The Great Adventure | 2023-05-15       | 2024-01-01   |
 
-All the databases have formatting functions e.g. MySQL has `DATE_FORMAT` and PostgreSQL has `TO_CHAR` functions which you can use to format the date data as per your requirement. For example, query below formats the date data to `DD-MM-YYYY` format.
+All the databases have formatting functions e.g. MySQL has `DATE_FORMAT` and PostgreSQL has `TO_CHAR` functions which can be used to format the date as per your requirement. For example, query below formats the date data to `DD-MM-YYYY` format.
 
 ```sql
 SELECT
     id,
     title,
-    DATE_FORMAT(publication_date, '%d-%m-%Y') as publication_date
+    TO_CHAR(publication_date, 'DD-MM-YYYY') AS publication_date
 FROM books;
 ```
 
@@ -87,9 +80,17 @@ INSERT INTO bookstore_hours (day_of_week, opening_time, closing_time)
 VALUES
   ('Monday', '09:00:00', '18:00:00'),
   ('Tuesday', '09:00:00', '18:00:00');
+
+-- Select the bookstore hours
+SELECT * FROM bookstore_hours;
 ```
 
 When you query this data back from the database, you will get the same format `HH:MM:SS`.
+
+| day_of_week | opening_time | closing_time |
+| ----------- | ------------ | ------------ |
+| Monday      | 09:00:00     | 18:00:00     |
+| Tuesday     | 09:00:00     | 18:00:00     |
 
 ### DATETIME/TIMESTAMP
 
