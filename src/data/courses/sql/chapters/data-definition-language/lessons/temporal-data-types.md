@@ -3,6 +3,88 @@ title: Temporal Data Types
 description: Learn about date and time data types in SQL and how to use them effectively.
 order: 140
 type: lesson-challenge
+setup: |
+    ```sql
+    -- Create the books table
+    CREATE TABLE books (
+        id INTEGER PRIMARY KEY,
+        title VARCHAR(100),
+        publication_date DATE,
+        reprint_date DATE
+    );
+
+    -- Create the orders table
+    CREATE TABLE orders (
+        id INTEGER PRIMARY KEY,
+        book_id INTEGER,
+        order_time TIMESTAMP,
+        delivery_date DATE
+    );
+
+    -- Create the sales table
+    CREATE TABLE sales (
+        id INTEGER PRIMARY KEY,
+        book_id INTEGER,
+        sale_date DATE,
+        sale_amount DECIMAL(10,2)
+    );
+
+    -- Create the transactions table
+    CREATE TABLE transactions (
+        id INTEGER PRIMARY KEY,
+        type VARCHAR(50),
+        transaction_date DATE,
+        amount DECIMAL(10,2)
+    );
+
+    -- Create the events table
+    CREATE TABLE events (
+        id INTEGER PRIMARY KEY,
+        name VARCHAR(100),
+        event_time TIMESTAMP,
+        duration INTEGER  -- duration in minutes
+    );
+
+    -- Insert sample data into books
+    INSERT INTO books (id, title, publication_date, reprint_date) VALUES
+        (1, 'The Great Adventure', '2023-05-15', '2024-01-01'),
+        (2, 'Mystery of SQL', '2023-08-20', '2024-02-15'),
+        (3, 'Database Design 101', '2022-03-10', '2023-11-30'),
+        (4, 'Query Optimization', '2024-01-15', NULL);
+
+    -- Insert sample data into orders
+    INSERT INTO orders (id, book_id, order_time, delivery_date) VALUES
+        (1, 1, '2024-03-15 14:30:00', '2024-03-22'),
+        (2, 2, '2024-03-16 09:15:00', '2024-03-23'),
+        (3, 1, '2024-03-16 11:45:00', '2024-03-23'),
+        (4, 3, '2024-03-17 16:20:00', '2024-03-24'),
+        (5, 2, '2024-03-18 10:30:00', '2024-03-25');
+
+    -- Insert sample data into sales
+    INSERT INTO sales (id, book_id, sale_date, sale_amount) VALUES
+        (1, 1, '2024-03-15', 29.99),
+        (2, 2, '2024-03-15', 24.99),
+        (3, 1, '2024-03-16', 29.99),
+        (4, 3, '2024-03-16', 34.99),
+        (5, 2, '2024-03-17', 24.99),
+        (6, 4, '2024-03-18', 39.99);
+
+    -- Insert sample data into transactions
+    INSERT INTO transactions (id, type, transaction_date, amount) VALUES
+        (1, 'SALE', '2024-03-15', 29.99),
+        (2, 'SALE', '2024-03-15', 24.99),
+        (3, 'REFUND', '2024-03-16', -24.99),
+        (4, 'SALE', '2024-03-16', 34.99),
+        (5, 'SALE', '2024-03-17', 24.99);
+
+    -- Insert sample data into events
+    INSERT INTO events (id, name, event_time, duration) VALUES
+        (1, 'Book Signing - The Great Adventure', '2024-03-20 14:00:00', 120),
+        (2, 'Reading Club', '2024-03-21 10:00:00', 90),
+        (3, 'Author Meet & Greet', '2024-03-22 15:30:00', 60),
+        (4, 'Database Workshop', '2024-03-23 09:00:00', 180),
+        (5, 'Kids Story Time', '2024-03-24 11:00:00', 45);
+    ```
 ---
 
 Temporal data types are used to store date and time data. These are one of the most important data types in SQL and understanding them is crucial for working with any application that needs to store time-based data.
@@ -151,96 +233,146 @@ The query might return:
 
 Alright, now that we have seen the temporal data types, let's look at some common operations you might perform with temporal data.
 
-## Common Operations with Temporal Data
+---
 
-Here are some common operations you might perform with temporal data in a bookstore:
+## Common Temporal Operations
 
-### Difference between two dates
+I have created the following tables with sample data so that you can follow along with the examples below in the editor:
 
-In MySQL, you can use the `DATEDIFF` function to calculate the difference between two dates. For example, given the following table:
+| Table Name     | Columns                                           | Description                                                |
+| -------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| `books`        | `id`, `title`, `publication_date`, `reprint_date` | Tracks books with their publication and reprint dates      |
+| `orders`       | `id`, `book_id`, `order_time`, `delivery_date`    | Records customer orders with order time and delivery dates |
+| `sales`        | `id`, `book_id`, `sale_date`, `sale_amount`       | Daily sales records with transaction dates                 |
+| `transactions` | `id`, `type`, `transaction_date`, `amount`        | Financial transactions including purchases and refunds     |
+| `events`       | `id`, `name`, `event_time`, `duration`            | Bookstore events like book signings and reading clubs      |
 
-| id  | title               | publication_date | reprint_date |
-| --- | ------------------- | ---------------- | ------------ |
-| 1   | The Great Adventure | 2023-05-15       | 2024-01-01   |
+> You don't need to memorize the functions below, it's enough to know that these operations exist and you can refer to the documentation when you need them.
+>
+> The goal of this section is to give you an idea of how powerful temporal data types are and how you can use them to perform various operations.
 
-You can use the following query to calculate how long books have been in print:
+### Extracting Parts of Dates
 
-```sql
-SELECT
-    title,
-    publication_date,
-    reprint_date,
-    DATEDIFF(reprint_date, publication_date) as days_in_print
-FROM books;
-```
-
-The output will be:
-
-| id  | title               | publication_date | reprint_date | days_in_print |
-| --- | ------------------- | ---------------- | ------------ | ------------- |
-| 1   | The Great Adventure | 2023-05-15       | 2024-01-01   | 231           |
-
-### Getting the Month of Sales
-
-Given the following `sales` table:
-
-| id  | customer_name | book_id | sale_amount | sale_date  |
-| --- | ------------- | ------- | ----------- | ---------- |
-| 1   | John Doe      | 101     | 100.00      | 2024-01-01 |
-| 2   | Jane Smith    | 102     | 150.00      | 2024-02-15 |
-| 3   | Alice Johnson | 103     | 200.00      | 2024-03-20 |
-| 4   | Bob Brown     | 104     | 120.00      | 2024-04-25 |
-| 5   | Carol Green   | 105     | 180.00      | 2024-05-30 |
-
-You can use the following query to get the month of sales:
+You can extract specific parts of a date like year, month, day, etc:
 
 ```sql
+-- Get year from a date
 SELECT
-    customer_name,
-    DATE_FORMAT(sale_date, '%M') as month,
-    sale_amount
+    sale_date,
+    EXTRACT(YEAR FROM sale_date) as sale_year
+FROM sales;
+
+-- Get month number
+SELECT
+    sale_date,
+    EXTRACT(MONTH FROM sale_date) as month_num
+FROM sales;
+
+-- Get day of month
+SELECT
+    sale_date,
+    EXTRACT(DAY FROM sale_date) as day_of_month
 FROM sales;
 ```
 
-The output will be:
+### Date Arithmetic
 
-| customer_name | month    | sale_amount |
-| ------------- | -------- | ----------- |
-| John Doe      | January  | 100.00      |
-| Jane Smith    | February | 150.00      |
-| Alice Johnson | March    | 200.00      |
-| Bob Brown     | April    | 120.00      |
-| Carol Green   | May      | 180.00      |
-
-### Getting Sales for a Specific Dates
-
-You can use the `WHERE` clause and perform range queries on the date column. For example, given the following table:
-
-| id  | customer_name | book_id | sale_amount | sale_date  |
-| --- | ------------- | ------- | ----------- | ---------- |
-| 1   | John Doe      | 101     | 100.00      | 2024-01-01 |
-| 2   | Jane Smith    | 102     | 150.00      | 2024-02-15 |
-| 3   | Alice Johnson | 103     | 200.00      | 2024-03-20 |
-| 4   | Bob Brown     | 104     | 120.00      | 2024-03-25 |
-| 5   | Carol Green   | 105     | 180.00      | 2024-03-30 |
-
-You can use the following query to get the sales for March 2024:
+You can perform various arithmetic operations with dates:
 
 ```sql
+-- Add or subtract intervals
 SELECT
-    customer_name,
-    sale_amount
-FROM sales
-WHERE sale_date BETWEEN '2024-03-01' AND '2024-03-31';
+    order_time,
+    order_time + INTERVAL '7 days' as delivery_due_date,
+    order_time + INTERVAL '1 month' as payment_due_date
+FROM orders;
+
+-- Calculate age or duration
+SELECT
+    title,
+    publication_date,
+    AGE(CURRENT_DATE, publication_date) as book_age
+FROM books;
 ```
 
-The output will be:
+### Date Range Queries
 
-| customer_name | sale_amount |
-| ------------- | ----------- |
-| Alice Johnson | 200.00      |
-| Bob Brown     | 120.00      |
-| Carol Green   | 180.00      |
+Common ways to filter data based on date ranges:
+
+```sql
+-- Records from last 30 days
+SELECT *
+FROM orders
+WHERE order_time >= CURRENT_DATE - INTERVAL '30 days';
+
+-- Records between two dates
+SELECT *
+FROM sales
+WHERE sale_date BETWEEN '2024-01-01' AND '2024-12-31';
+
+-- Records for specific month
+SELECT *
+FROM transactions
+WHERE EXTRACT(YEAR FROM transaction_date) = 2024
+AND EXTRACT(MONTH FROM transaction_date) = 3;
+
+-- Records for current month
+SELECT *
+FROM transactions
+WHERE EXTRACT(YEAR FROM transaction_date) = EXTRACT(YEAR FROM CURRENT_DATE)
+AND EXTRACT(MONTH FROM transaction_date) = EXTRACT(MONTH FROM CURRENT_DATE);
+```
+
+### Date Truncation
+
+Sometimes you might want to truncate the date to a specific part of the date. For example, you might want to get the start of the week, month or year for a given date.
+
+```sql
+-- Truncate to start of week
+SELECT
+    sale_date,
+    DATE_TRUNC('week', sale_date) as week_start
+FROM sales;
+
+-- Truncate to start of month
+SELECT
+    transaction_date,
+    DATE_TRUNC('month', transaction_date) as month_start
+FROM transactions;
+```
+
+### Getting Current Date and Time
+
+You can use `CURRENT_DATE` and `CURRENT_TIME` to get the current date and time.
+
+```sql
+-- Get current timestamp in different formats
+SELECT
+    CURRENT_TIMESTAMP,
+    CURRENT_DATE,
+    CURRENT_TIME;
+```
+
+### Filtering Based on Time Parts
+
+You can filter records based on specific parts of datetime values:
+
+```sql
+-- Get orders during business hours
+SELECT *
+FROM orders
+WHERE EXTRACT(HOUR FROM order_time) BETWEEN 9 AND 17;
+
+-- Get weekend orders
+SELECT *
+FROM orders
+WHERE EXTRACT(DOW FROM order_time) IN (0, 6); -- Sunday = 0, Saturday = 6
+
+-- Get morning orders (before noon)
+SELECT *
+FROM orders
+WHERE EXTRACT(HOUR FROM order_time) < 12;
+```
 
 > Note: The exact syntax for temporal operations might vary between different database systems. Always consult your specific database's documentation for the most accurate information. Here is the [MySQL documentation](https://dev.mysql.com/doc/en/date-and-time-functions.html) and [PostgreSQL documentation](https://www.postgresql.org/docs/current/functions-datetime.html).
 
