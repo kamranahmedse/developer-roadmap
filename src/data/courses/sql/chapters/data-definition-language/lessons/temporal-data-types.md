@@ -9,12 +9,12 @@ Temporal data types are used to store date and time data. These are one of the m
 
 Given below is the list of temporal data types in SQL with their sample usage:
 
-| Category    | Description                                       | Example Usage                     |
-| ----------- | ------------------------------------------------- | --------------------------------- |
-| `DATE`      | Stores only the date (year, month, day)           | Birth dates, holidays, deadlines  |
-| `TIME`      | Stores only the time of day                       | Store hours, appointment times    |
-| `DATETIME`  | Stores both date and time                         | Event times, log entries          |
-| `TIMESTAMP` | Similar to `DATETIME` but with timezone awareness | e.g. Calendar events              |
+| Category    | Description                                       | Example Usage                    |
+| ----------- | ------------------------------------------------- | -------------------------------- |
+| `DATE`      | Stores only the date (year, month, day)           | Birth dates, holidays, deadlines |
+| `TIME`      | Stores only the time of day                       | Store hours, appointment times   |
+| `DATETIME`  | Stores both date and time                         | Event times, log entries         |
+| `TIMESTAMP` | Similar to `DATETIME` but with timezone awareness | e.g. Calendar events             |
 
 Let's explore each of these types in detail in the following sections.
 
@@ -94,31 +94,62 @@ When you query this data back from the database, you will get the same format `H
 
 ### DATETIME/TIMESTAMP
 
-These types store both date and time information. While they might seem similar, there is an important distinction: `TIMESTAMP` values are converted from the current time zone to `UTC` for storage, and converted back from `UTC` to the current time zone for retrieval. However, `DATETIME` values are stored and retrieved without any timezone conversion.
+Most of the databases support `DATETIME` and `TIMESTAMP` types. Both of these types store date and time data with some differences.
+
+For example, MySQL supports both types:
+
+| Type        | Description                                           |
+| ----------- | ----------------------------------------------------- |
+| `DATETIME`  | Stores both date and time                             |
+| `TIMESTAMP` | Stores both date and time but with timezone awareness |
+
+PostgreSQL doesn't have `DATETIME` but has:
+
+| Type          | Description                                           |
+| ------------- | ----------------------------------------------------- |
+| `TIMESTAMP`   | Stores both date and time                             |
+| `TIMESTAMPTZ` | Stores both date and time but with timezone awareness |
+
+Given below is the example of how to create a table with `TIMESTAMP` type in PostgreSQL. The query below however will work for any database that supports `TIMESTAMP` type.
 
 ```sql
 CREATE TABLE orders (
   id INTEGER,
   book_id INTEGER,
-  order_datetime DATETIME,
-  payment_confirmed_at TIMESTAMP
+  order_time TIMESTAMP
 );
 
--- Insert a book order
-INSERT INTO orders (id, book_id, order_datetime, payment_confirmed_at)
+-- Insert a book order (PostgreSQL)
+INSERT INTO orders (id, book_id, order_time)
 VALUES (
   1,
   101,
-  '2024-03-15 14:30:00',
+  '2024-03-15 14:30:00'
+);
+
+-- You can also use CURRENT_TIMESTAMP to get the current timestamp
+INSERT INTO orders (id, book_id, order_time)
+VALUES (
+  2,
+  102,
   CURRENT_TIMESTAMP
 );
+
+-- Query the orders table
+SELECT
+    id,
+    order_time
+FROM orders;
 ```
 
-If you query the data back from the database, you won't see any timezone information but the `payment_confirmed_at` column has underlying timezone information that is used for storage and retrieval.
+The query might return:
 
----
+| id  | order_time               |
+| --- | ------------------------ |
+| 1   | 2024-03-15T14:30:00.000Z |
+| 2   | 2024-12-28T01:19:58.654Z |
 
-Alright, now that we have seen the temporal data types, let's look at some common operations you might perform with temporal data in a bookstore.
+Alright, now that we have seen the temporal data types, let's look at some common operations you might perform with temporal data.
 
 ## Common Operations with Temporal Data
 
