@@ -62,7 +62,7 @@ export function CourseSidebar(props: CourseSidebarProps) {
       </div>
 
       <div className="relative h-full">
-        <div className="absolute inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
+        <div className="absolute pb-[150px] inset-0 overflow-y-auto [scrollbar-color:#3f3f46_#27272a;]">
           {chapters?.map((chapter, index) => {
             const isActive = openedChapterId === chapter.id;
 

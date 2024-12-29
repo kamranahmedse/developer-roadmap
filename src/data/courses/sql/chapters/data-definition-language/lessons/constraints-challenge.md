@@ -27,14 +27,3 @@ You need to create a table named `book_inventory` for a bookstore system. The ta
 ## Expected Output
 
 After executing your query, the table should be created successfully with all specified columns and constraints.
-
-## Notes
-
-This challenge tests your knowledge of:
-
-- SQL data types (INTEGER, VARCHAR, DECIMAL, BOOLEAN, DATE, TIMESTAMP)
-- Primary key and unique constraints
-- NOT NULL constraints
-- DEFAULT values
-- CHECK constraints for data validation
-- Working with date and time data types
