@@ -1,5 +1,5 @@
 ---
-title: Data Analysis Challenge
+title: Sales Data Analysis
 description: Practice querying temporal data from a bookstore's sales records
 order: 340
 type: challenge
