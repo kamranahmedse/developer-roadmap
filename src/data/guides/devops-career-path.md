@@ -1,11 +1,11 @@
 ---
 title: 'Is DevOps engineering a good career path in @currentYear@?'
-description: 'Learn why a DevOps career path is a smart choice in 2024. Get insights into demand, growth, and earning potential in DevOps.'
+description: 'Learn why a DevOps career path is a smart choice in 2025. Get insights into demand, growth, and earning potential in DevOps.'
 authorId: ekene
 excludedBySlug: '/devops/career-path'
 seo:
   title: 'Is DevOps engineering a good career path in @currentYear@?'
-  description: 'Learn why a DevOps career path is a smart choice in 2024. Get insights into demand, growth, and earning potential in DevOps.'
+  description: 'Learn why a DevOps career path is a smart choice in 2025. Get insights into demand, growth, and earning potential in DevOps.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-career-path-2h4r7.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
@@ -81,7 +81,7 @@ It is worth noting that working in DevOps involves working in high-pressure envi
 
 Also, there is a steep learning curve. As a tech beginner, it could be daunting and challenging to get into DevOps and adapt the DevOps culture, but as you go along, it gets easier.
 
-## DevOps in 2024
+## DevOps in 2025
 
 According to [Statista](https://www.statista.com/statistics/1367003/in-demand-it-roles/), DevOps software engineering positions are among the top technical positions demanded by recruiters worldwide in 2023. Indeed reported that the average annual salary of [DevOps engineer](https://www.indeed.com/career/development-operations-engineer/salaries?from=top_sb) in the USA is $124,392.
 

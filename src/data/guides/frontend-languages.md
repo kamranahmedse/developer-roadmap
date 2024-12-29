@@ -31,7 +31,7 @@ I'll focus on the essential front-end languages and recommend a few important fr
 
 ## What are Languages, Libraries, and Frameworks?
 
-Before we explore the front end languages, libraries, and frameworks to learn in 2024, it is important to understand what they are and the differences between them.
+Before we explore the front end languages, libraries, and frameworks to learn in 2025, it is important to understand what they are and the differences between them.
 
 **Languages** are the core programming languages that developers use to write code. They have defined syntax, semantics, and rules for writing instructions that computers can execute and understand. Examples include: 
 
@@ -55,11 +55,11 @@ Before we explore the front end languages, libraries, and frameworks to learn in
 
 The major differences are that languages are used to write code, libraries provide reusable functions, and frameworks offer a structured approach to developing applications.
 
-## Top front-end languages to learn in 2024
+## Top front-end languages to learn in 2025
 
 ![frontend languages](https://assets.roadmap.sh/guest/top-frontend-languages-to-learn-pofrf.JPG)
 
-These are the best front-end languages you should learn in 2024: 
+These are the best front-end languages you should learn in 2025: 
 
 **For web front-end development**:
 
@@ -230,13 +230,13 @@ The table below shows a quick summary of each language’s use cases as a front 
 
 ![use cases](https://assets.roadmap.sh/guest/use-cases-qwm5k.JPG)
 
-## Top front-end frameworks and libraries to learn in 2024
+## Top front-end frameworks and libraries to learn in 2025
 
 While front end languages are essential for creating robust applications that meet business needs, they can become burdensome when developing medium to large applications. Issues like lack of code reusability, maintainability challenges, time-consuming development, and repetition may arise.
 
 Frameworks and libraries offer a solution by providing a structured approach to application development. They include pre-written code, reusable functions, coding standards, and architectural patterns that developers can leverage for common tasks, saving time and effort. Additionally, frameworks often have built-in security features that help JavaScript code execute safely on users' computers. They also enhance scalability and performance optimization, improving overall software quality.
 
-You should explore these frontend frameworks and libraries in 2024:
+You should explore these frontend frameworks and libraries in 2025:
 
 - React
 - Vue
@@ -323,7 +323,7 @@ Companies like Figma, AutoCAD, and cloud-native companies actively leverage WebA
 
 ## How do you select the right front-end language?
 
-Choosing the right front end language to learn is an important decision. It shouldn’t be taken lightly, as it significantly impacts your career trajectory and success. This section examines some points to help you select a front end language to learn in 2024.
+Choosing the right front end language to learn is an important decision. It shouldn’t be taken lightly, as it significantly impacts your career trajectory and success. This section examines some points to help you select a front end language to learn in 2025.
 
 The points are:
 
@@ -358,7 +358,7 @@ In addition, if you plan to learn a new language to secure a job, it's essential
 
 Before selecting a language, assess the size and activity level of the community in terms of available resources. Then, look at the updates, fixes, patches, and innovations surrounding libraries and frameworks in the language. For example, the JavaScript ecosystem constantly releases updates to libraries and frameworks.
 
-In summary, essential languages to learn in 2024 include HTML for structure, CSS for styling, and JavaScript for interactivity. TypeScript, Dart, Swift, and Kotlin are also significant.
+In summary, essential languages to learn in 2025 include HTML for structure, CSS for styling, and JavaScript for interactivity. TypeScript, Dart, Swift, and Kotlin are also significant.
 
 Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the [choice of technologies during front-end development](https://roadmap.sh/frontend/technologies).
 

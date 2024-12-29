@@ -31,7 +31,7 @@ Diving straight in, I will cover the top 5 backend programming languages that yo
 
 ## Top 5 Backend Languages to Learn for Web Development
 
-The best backend languages to learn in 2024 are:
+The best backend languages to learn in 2025 are:
 
 - Python
 - Java

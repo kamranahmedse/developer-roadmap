@@ -21,7 +21,7 @@ tags:
 
 ![What is a DevOps engineer and what are their responsibilities?](https://assets.roadmap.sh/guest/what-is-devops-engineer-jort4.jpg)
 
-Are you a developer monitoring recent changes in the ecosystem, looking to change careers or pick up new skills in 2024? If your choice is [DevOps](https://roadmap.sh/devops), you might be wondering what it entails, what it will take to become one in 2024, and how it is affected by the recent changes in the tech ecosystem.
+Are you a developer monitoring recent changes in the ecosystem, looking to change careers or pick up new skills in 2025? If your choice is [DevOps](https://roadmap.sh/devops), you might be wondering what it entails, what it will take to become one in 2025, and how it is affected by the recent changes in the tech ecosystem.
 
 In recent years, the technology ecosystem has experienced a constant shift in the way hiring managers reach out, companies hire, and the roles and responsibilities described in job postings. Particularly, 2023 proved to be a challenging year as layoffs in the technology sector grew significantly, with more than [262,000 employees laid off across 1,180 firms](https://www.statista.com/statistics/199999/worldwide-tech-layoffs-covid-19/).
 

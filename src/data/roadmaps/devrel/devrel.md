@@ -4,9 +4,9 @@ jsonUrl: '/jsons/roadmaps/devrel.json'
 pdfUrl: '/pdfs/roadmaps/devrel.pdf'
 order: 21
 briefTitle: 'Developer Relations'
-briefDescription: 'Step by step guide to becoming a Developer Advocate in 2024'
+briefDescription: 'Step by step guide to becoming a Developer Advocate in 2025'
 title: 'Developer Relations'
-description: 'Step by step guide to becoming a Developer Advocate in 2024'
+description: 'Step by step guide to becoming a Developer Advocate in 2025'
 hasTopics: true
 isForkable: false
 isNew: false

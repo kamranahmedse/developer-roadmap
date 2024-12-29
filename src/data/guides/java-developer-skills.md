@@ -27,7 +27,7 @@ If you are building web applications, the ability to work on both front-end and 
 
 To remain competitive as a Java developer, you must continuously improve your skill sets to meet evolving industry demands.
 
-This guide will equip you with the skills required in 2024. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
+This guide will equip you with the skills required in 2025. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
 
 These are the skills we will cover in this guide:
 
@@ -53,7 +53,7 @@ The required skills can be classified into [front-end (client)](https://roadmap.
 
 ## Required skills for front-end Java development
 
-Here are the front-end skills you should learn in 2024:
+Here are the front-end skills you should learn in 2025:
 
 - HTML and CSS
 - JavaScript
@@ -90,7 +90,7 @@ As a Java full-stack web developer, having a solid understanding of accessibilit
 
 ## Required skills for back-end Java development
 
-Here are the back-end skills you should learn in 2024:
+Here are the back-end skills you should learn in 2025:
 
 - Java programming language
 - Database management system

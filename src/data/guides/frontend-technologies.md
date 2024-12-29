@@ -27,7 +27,7 @@ While technology is not the sole deciding factor that will make or break your pr
 
 The “issue” with that statement, is that the [frontend development](https://roadmap.sh/frontend) space is in constant flux. Every day there is a new JavaScript library being released. Every month, a new framework is created, and every couple of years, a new runtime appears (Bun, I’m looking at you\!).
 
-So to stay updated, let's dive into the top frontend technologies you should consider using in 2024\.
+So to stay updated, let's dive into the top frontend technologies you should consider using in 2025\.
 
 The frontend technologies we’ll be covering are:
 
@@ -300,7 +300,7 @@ Evaluation:
 
 After meticulously evaluating each frontend technology across key categories, it's time to offer expert recommendations tailored to different project needs within the space of web development.
 
-Here are our top picks for various scenarios in 2024:
+Here are our top picks for various scenarios in 2025:
 
 ### Best for Beginners
 

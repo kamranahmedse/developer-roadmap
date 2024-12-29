@@ -161,7 +161,7 @@ The DevOps lifecycle is a continuous process that involves development, integrat
 
 Let’s explore some of these extensions and how they’re changing the development process.
 
-## Key DevOps extensions to watch in 2024
+## Key DevOps extensions to watch in 2025
 
 Below are some extensions that build on the core principles of DevOps, like [automation](https://roadmap.sh/devops/automation), collaboration, and continuous improvement:
 

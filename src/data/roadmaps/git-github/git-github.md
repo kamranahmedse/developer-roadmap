@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/git-github.pdf'
 renderer: 'editor'
 order: 19
 briefTitle: 'Git and GitHub'
-briefDescription: 'Step by step guide to learn Git and GitHub in 2024'
+briefDescription: 'Step by step guide to learn Git and GitHub in 2025'
 title: 'Learn Git and GitHub'
-description: 'Step by step guide to learn Git and GitHub in 2024'
+description: 'Step by step guide to learn Git and GitHub in 2025'
 hasTopics: true
 isNew: false
 dimensions:

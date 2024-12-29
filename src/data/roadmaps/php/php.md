@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/php.json'
 pdfUrl: '/pdfs/roadmaps/php.pdf'
 order: 20
 briefTitle: 'PHP'
-briefDescription: 'Step by step guide to learning PHP in 2024'
+briefDescription: 'Step by step guide to learning PHP in 2025'
 title: 'PHP Roadmap'
-description: 'Step by step guide to learning PHP in 2024'
+description: 'Step by step guide to learning PHP in 2025'
 renderer: 'editor'
 isNew: true
 hasTopics: true
@@ -14,13 +14,13 @@ dimensions:
   height: 3260
 schema:
   headline: 'PHP Roadmap'
-  description: 'Learn how to use PHP with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to use PHP with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/php.png'
   datePublished: '2024-12-10'
   dateModified: '2024-12-10'
 seo:
   title: 'PHP Roadmap - roadmap.sh'
-  description: 'Step by step guide to learn PHP in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Step by step guide to learn PHP in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'php tutorial'
     - 'step by step guide for php'

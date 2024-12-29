@@ -1,10 +1,10 @@
 ---
-title: 'Top 7 Frontend Frameworks to Use in 2024: Pro Advice'
+title: 'Top 7 Frontend Frameworks to Use in 2025: Pro Advice'
 description: 'Get expert advice on frontend frameworks for 2024. Elevate your web development process with these top picks.'
 authorId: fernando
 excludedBySlug: '/frontend/frameworks'
 seo:
-  title: 'Top 7 Frontend Frameworks to Use in 2024: Pro Advice'
+  title: 'Top 7 Frontend Frameworks to Use in 2025: Pro Advice'
   description: 'Get expert advice on frontend frameworks for 2024. Elevate your web development process with these top picks.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/top-frontend-frameworks-wmqwc.jpg'
 relatedTitle: "Other Guides"
@@ -64,7 +64,7 @@ Of course, the choice of React is mine, and mine alone. You have to consider you
 
 Let’s get into the selection and what their strengths and weaknesses are to help you select the right one for you.
 
-## Top 7 Frontend Development Frameworks in 2024
+## Top 7 Frontend Development Frameworks in 2025
 
 ### React
 

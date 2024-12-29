@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/ai-engineer.pdf'
 order: 4
 renderer: 'editor'
 briefTitle: 'AI Engineer'
-briefDescription: 'Step by step guide to becoming an AI Engineer in 2024'
+briefDescription: 'Step by step guide to becoming an AI Engineer in 2025'
 title: 'AI Engineer'
-description: 'Step by step guide to becoming an AI Engineer in 2024'
+description: 'Step by step guide to becoming an AI Engineer in 2025'
 hasTopics: true
 isNew: true
 dimensions:
