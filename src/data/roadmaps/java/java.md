@@ -3,7 +3,7 @@ jsonUrl: '/jsons/roadmaps/java.json'
 pdfUrl: '/pdfs/roadmaps/java.pdf'
 order: 9
 briefTitle: 'Java'
-briefDescription: 'Step by step guide to becoming a Java Developer in 2024'
+briefDescription: 'Step by step guide to becoming a Java Developer in 2025'
 title: 'Java Developer'
 description: 'Step by step guide to becoming a Java developer in 2024'
 hasTopics: true

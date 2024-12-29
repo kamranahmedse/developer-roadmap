@@ -22,7 +22,7 @@ dimensions:
   height: 3200
 schema:
   headline: 'System Design Roadmap'
-  description: 'Learn System Design with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn System Design with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/system-design.png'
   datePublished: '2023-01-17'
   dateModified: '2023-01-17'

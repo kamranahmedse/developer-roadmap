@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/devops.pdf'
 order: 3
 renderer: 'editor'
 briefTitle: 'DevOps'
-briefDescription: 'Step by step guide for DevOps or operations role in 2024'
+briefDescription: 'Step by step guide for DevOps or operations role in 2025'
 title: 'DevOps Roadmap'
-description: 'Step by step guide for DevOps, SRE or any other Operations Role in 2024'
+description: 'Step by step guide for DevOps, SRE or any other Operations Role in 2025'
 hasTopics: true
 isForkable: false
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'

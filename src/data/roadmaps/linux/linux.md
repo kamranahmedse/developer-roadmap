@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/linux.json'
 pdfUrl: '/pdfs/roadmaps/linux.pdf'
 order: 14
 briefTitle: 'Linux'
-briefDescription: 'Step by step guide to learning Linux in 2024'
+briefDescription: 'Step by step guide to learning Linux in 2025'
 title: 'Linux Roadmap'
-description: 'Step by step guide to learning Linux in 2024'
+description: 'Step by step guide to learning Linux in 2025'
 isNew: false
 hasTopics: true
 dimensions:
@@ -13,13 +13,13 @@ dimensions:
   height: 2070
 schema:
   headline: 'Linux Roadmap'
-  description: 'Learn how to use Linux with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to use Linux with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/linux.png'
   datePublished: '2024-04-24'
   dateModified: '2024-04-24'
 seo:
   title: 'Linux Roadmap - roadmap.sh'
-  description: 'Step by step guide to learn Linux in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Step by step guide to learn Linux in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'linux tutorial'
     - 'step by step guide for linux'

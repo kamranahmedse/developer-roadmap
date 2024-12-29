@@ -4,9 +4,9 @@ jsonUrl: '/jsons/roadmaps/frontend.json'
 pdfUrl: '/pdfs/roadmaps/frontend.pdf'
 order: 1
 briefTitle: 'Frontend'
-briefDescription: 'Step by step guide to becoming a frontend developer in 2024'
+briefDescription: 'Step by step guide to becoming a frontend developer in 2025'
 title: 'Frontend Developer'
-description: 'Step by step guide to becoming a modern frontend developer in 2024'
+description: 'Step by step guide to becoming a modern frontend developer in 2025'
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 question:

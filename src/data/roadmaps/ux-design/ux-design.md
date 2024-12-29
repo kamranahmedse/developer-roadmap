@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/ux-design.pdf'
 renderer: 'editor'
 order: 12
 briefTitle: 'UX Design'
-briefDescription: 'Step by step guide to becoming a UX Designer in 2024'
+briefDescription: 'Step by step guide to becoming a UX Designer in 2025'
 title: 'UX Design'
-description: 'Step by step guide to becoming a UX Designer in 2024'
+description: 'Step by step guide to becoming a UX Designer in 2025'
 isNew: false
 hasTopics: true
 dimensions:
@@ -14,13 +14,13 @@ dimensions:
   height: 2900
 schema:
   headline: 'UX Design Roadmap'
-  description: 'Learn all about UX Design with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn all about UX Design with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/ux-design.png'
   datePublished: '2023-04-26'
   dateModified: '2023-04-26'
 seo:
-  title: 'UX Design Roadmap: Step by Step guide to learn UX Design in 2024'
-  description: 'Learn how to become a UX Designer in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  title: 'UX Design Roadmap: Step by Step guide to learn UX Design in 2025'
+  description: 'Learn how to become a UX Designer in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'guide to learn ux design'
     - 'guide to becoming a ux designer'
