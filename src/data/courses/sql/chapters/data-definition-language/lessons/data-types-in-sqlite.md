@@ -50,7 +50,7 @@ The output will be:
 | --- | -------- | ----------- |
 | 1   | John Doe | Twenty Five |
 
-You should also note that SQLite supports only a few data types: `INTEGER`, `REAL`, `TEXT`, `BLOB`, and `NULL`. Other data types such as `DECIMAL`, `FLOAT`, `VARCHAR`, etc., are not supported, although it will not complain if you try to assign them to a column.
+You should also note that SQLite supports only a few data types: `INTEGER`, `REAL`, `TEXT`, `BLOB`, and `NULL`. Other data types such as &nbsp;`DECIMAL`, `FLOAT`, `VARCHAR`, etc., are not supported, although it will not complain if you try to assign them to a column.
 
 For more details, check the [SQLite data types](https://www.sqlite.org/datatype3.html) and [why it uses dynamic typing](https://www.sqlite.org/flextypegood.html) in the official documentation.
 

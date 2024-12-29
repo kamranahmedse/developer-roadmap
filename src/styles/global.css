@@ -59,6 +59,14 @@ p > code:before,
 .prose ol li > code:before,
 p > code:before,
 .prose ol li > code:after,
+.course-content h1 > code:after,
+.course-content h1 > code:before,
+.course-content h2 > code:after,
+.course-content h2 > code:before,
+.course-content h3 > code:after,
+.course-content h3 > code:before,
+.course-content h4 > code:after,
+.course-content h4 > code:before,
 p > code:after,
 a > code:after,
 a > code:before {
@@ -73,13 +81,16 @@ a > code:before {
 .course-content em > code,
 .course-content h1 > code,
 .course-content h2 > code,
-.course-content h3 > code {
+.course-content h3 > code,
+.course-content table code {
   background: #f4f4f5 !important;
   border: 1px solid #282a36 !important;
   color: #282a36 !important;
   padding: 2px 4px;
   border-radius: 5px;
-  font-size: 17px !important;
+  font-size: 16px !important;
+  white-space: pre;
+  font-weight: normal;
 }
 
 .course-content.prose blockquote h1,
