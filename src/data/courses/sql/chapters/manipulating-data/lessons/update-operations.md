@@ -1,5 +1,5 @@
 ---
-title: Updating Data
+title: UPDATE Operations
 description: Learn how to update data in a table.
 order: 110
 type: lesson-challenge
