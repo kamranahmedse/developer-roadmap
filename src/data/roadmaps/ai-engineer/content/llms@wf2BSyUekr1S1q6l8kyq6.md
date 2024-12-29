@@ -5,5 +5,5 @@ LLMs, or Large Language Models, are advanced AI models trained on vast datasets 
 Learn more from the following resources:
 
 - [@article@What is a large language model (LLM)?](https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/)
-- [@video@How Large Langauge Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ)
+- [@video@How Large Language Models Work](https://www.youtube.com/watch?v=5sLYAQS9sWQ)
 - [@video@Large Language Models (LLMs) - Everything You NEED To Know](https://www.youtube.com/watch?v=osKyvYJ3PRM)

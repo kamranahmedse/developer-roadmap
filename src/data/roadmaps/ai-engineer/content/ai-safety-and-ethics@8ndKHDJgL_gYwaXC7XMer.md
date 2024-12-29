@@ -5,4 +5,4 @@ AI safety and ethics involve establishing guidelines and best practices to ensur
 Learn more from the following resources:
 
 - [@video@What is AI Ethics?](https://www.youtube.com/watch?v=aGwYtUzMQUk)
-- [@article@Understanding artificial intelligence ethics and safety](https://www.turing.ac.uk/news/publications/understanding-artificial-intelligence-ethics-and-safety)
+- [@article@Understanding Artificial Intelligence Ethics and Safety](https://www.turing.ac.uk/news/publications/understanding-artificial-intelligence-ethics-and-safety)
