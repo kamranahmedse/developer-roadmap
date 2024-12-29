@@ -4,7 +4,9 @@ Redis is an open-source, in-memory data structure store known for its speed and 
 
 Visit the following resources to learn more:
 
-- [@official@Redis Website](https://redis.io/)
+- [@roadmap@Visit Dedicated Redis Roadmap](https://roadmap.sh/redis)
+- [@official@Redis](https://redis.io/)
+- [@official@Redis Documentation](https://redis.io/docs/latest/)
 - [@video@Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
 - [@course@Redis Crash Course](https://www.youtube.com/watch?v=XCsS_NVAa1g)
 - [@feed@Explore top posts about Redis](https://app.daily.dev/tags/redis?ref=roadmapsh)
