@@ -131,7 +131,7 @@ export function CourseLayout(props: CourseLayoutProps) {
             : 'grid-rows-1',
         )}
       >
-        <div className="grid grid-cols-[240px_1fr] overflow-hidden">
+        <div className="grid grid-cols-[255px_1fr] overflow-hidden">
           <CourseSidebar
             {...sidebarProps}
             completedPercentage={Number(courseProgressPercentage)}

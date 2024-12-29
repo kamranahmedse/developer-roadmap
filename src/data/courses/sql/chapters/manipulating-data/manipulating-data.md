@@ -1,5 +1,5 @@
 ---
-title: Data Definition Language
+title: Manipulating Data
 description: Learn the basics of SQL, the language for querying databases.
-order: 3
+order: 4
 ---
