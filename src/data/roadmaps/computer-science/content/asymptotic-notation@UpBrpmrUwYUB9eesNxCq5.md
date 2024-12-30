@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [@video@Asymptotic Notation - CS50](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [@article@CS 61B Lecture 19: Asymptotic Analysis](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
 - [@article@Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
+- [@article@Big O Notation | Brilliant Math & Science Wiki](https://brilliant.org/wiki/big-o-notation/)
