@@ -4,6 +4,11 @@
     "description": "AI Engineering is the process of designing and implementing AI systems using pre-trained models and existing AI tools to solve practical problems. AI Engineers focus on applying AI in real-world scenarios, improving user experiences, and automating tasks, without developing new models from scratch. They work to ensure AI systems are efficient, scalable, and can be seamlessly integrated into business applications, distinguishing their role from AI Researchers and ML Engineers, who concentrate more on creating new models or advancing AI theory.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "AI Engineering",
+        "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_engineering",
+        "type": "article"
+      },
+      {
         "title": "AI vs Machine Learning",
         "url": "https://www.youtube.com/watch?v=4RixMPF4xis",
         "type": "video"
@@ -62,7 +67,7 @@
         "type": "article"
       },
       {
-        "title": "How Large Langauge Models Work",
+        "title": "How Large Language Models Work",
         "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
         "type": "video"
       },
@@ -120,12 +125,12 @@
     "description": "Embeddings are dense, continuous vector representations of data, such as words, sentences, or images, in a lower-dimensional space. They capture the semantic relationships and patterns in the data, where similar items are placed closer together in the vector space. In machine learning, embeddings are used to convert complex data into numerical form that models can process more easily. For example, word embeddings represent words based on their meanings and contexts, allowing models to understand relationships like synonyms or analogies. Embeddings are widely used in tasks like natural language processing, recommendation systems, and image recognition to improve model performance and efficiency.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What are embeddings in machine learning?",
+        "title": "What are Embeddings in Machine Learning?",
         "url": "https://www.cloudflare.com/en-gb/learning/ai/what-are-embeddings/",
         "type": "article"
       },
       {
-        "title": "What is embedding?",
+        "title": "What is Embedding?",
         "url": "https://www.ibm.com/topics/embedding",
         "type": "article"
       },
@@ -178,7 +183,7 @@
     "description": "Prompt engineering is the process of crafting effective inputs (prompts) to guide AI models, like GPT, to generate desired outputs. It involves strategically designing prompts to optimize the model’s performance by providing clear instructions, context, and examples. Effective prompt engineering can improve the quality, relevance, and accuracy of responses, making it essential for applications like chatbots, content generation, and automated support. By refining prompts, developers can better control the model’s behavior, reduce ambiguity, and achieve more consistent results, enhancing the overall effectiveness of AI-driven systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Prompt Engineering Roadmap",
+        "title": "Visit DedicatedPrompt Engineering Roadmap",
         "url": "https://roadmap.sh/prompt-engineering",
         "type": "article"
       },
@@ -263,7 +268,7 @@
     "description": "Pre-trained models are Machine Learning (ML) models that have been previously trained on a large dataset to solve a specific task or set of tasks. These models learn patterns, features, and representations from the training data, which can then be fine-tuned or adapted for other related tasks. Pre-training provides a good starting point, reducing the amount of data and computation required to train a new model from scratch.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Pre-trained models: Past, present and future",
+        "title": "Pre-trained Models: Past, Present and Future",
         "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231",
         "type": "article"
       }
@@ -290,7 +295,7 @@
     "description": "Pre-trained models, while powerful, come with several limitations and considerations. They may carry biases present in the training data, leading to unintended or discriminatory outcomes, these models are also typically trained on general data, so they might not perform well on niche or domain-specific tasks without further fine-tuning. Another concern is the \"black-box\" nature of many pre-trained models, which can make their decision-making processes hard to interpret and explain.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Pretrained Topic Models: Advantages and Limitation",
+        "title": "Pre-trained Topic Models: Advantages and Limitation",
         "url": "https://www.kaggle.com/code/amalsalilan/pretrained-topic-models-advantages-and-limitation",
         "type": "article"
       },
@@ -371,6 +376,11 @@
     "links": [
       {
         "title": "Google Gemini",
+        "url": "https://gemini.google.com/",
+        "type": "article"
+      },
+      {
+        "title": "Google's Gemini Documentation",
         "url": "https://workspace.google.com/solutions/ai/",
         "type": "article"
       },
@@ -469,8 +479,14 @@
   },
   "zdeuA4GbdBl2DwKgiOA4G": {
     "title": "OpenAI API",
-    "description": "The OpenAI API provides access to powerful AI models like GPT, Codex, DALL-E, and Whisper, enabling developers to integrate capabilities such as text generation, code assistance, image creation, and speech recognition into their applications via a simple, scalable interface.",
-    "links": []
+    "description": "The OpenAI API provides access to powerful AI models like GPT, Codex, DALL-E, and Whisper, enabling developers to integrate capabilities such as text generation, code assistance, image creation, and speech recognition into their applications via a simple, scalable interface.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Open AI API",
+        "url": "https://openai.com/api/",
+        "type": "article"
+      }
+    ]
   },
   "_bPTciEA1GT1JwfXim19z": {
     "title": "Chat Completions API",
@@ -482,7 +498,7 @@
         "type": "article"
       },
       {
-        "title": "",
+        "title": "Getting Start with Chat Completions API",
         "url": "https://medium.com/the-ai-archives/getting-started-with-openais-chat-completions-api-in-2024-462aae00bf0a",
         "type": "article"
       }
@@ -493,7 +509,7 @@
     "description": "Prompts for the OpenAI API are carefully crafted inputs designed to guide the language model in generating specific, high-quality content. These prompts can be used to direct the model to create stories, articles, dialogue, or even detailed responses on particular topics. Effective prompts set clear expectations by providing context, specifying the format, or including examples, such as \"Write a short sci-fi story about a future where humans can communicate with animals,\" or \"Generate a detailed summary of the key benefits of using renewable energy.\" Well-designed prompts help ensure that the API produces coherent, relevant, and creative outputs, making it easier to achieve desired results across various applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "Visit Dedicated Prompt Engineering Roadmap",
         "url": "https://roadmap.sh/prompt-engineering",
         "type": "article"
       },
@@ -589,7 +605,7 @@
     "description": "AI safety and ethics involve establishing guidelines and best practices to ensure that artificial intelligence systems are developed, deployed, and used in a manner that prioritizes human well-being, fairness, and transparency. This includes addressing risks such as bias, privacy violations, unintended consequences, and ensuring that AI operates reliably and predictably, even in complex environments. Ethical considerations focus on promoting accountability, avoiding discrimination, and aligning AI systems with human values and societal norms. Frameworks like explainability, human-in-the-loop design, and robust monitoring are often used to build systems that not only achieve technical objectives but also uphold ethical standards and mitigate potential harms.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Understanding artificial intelligence ethics and safety",
+        "title": "Understanding Artificial Intelligence Ethics and Safety",
         "url": "https://www.turing.ac.uk/news/publications/understanding-artificial-intelligence-ethics-and-safety",
         "type": "article"
       },
@@ -760,12 +776,12 @@
     "description": "Open-source models are freely available for customization and collaboration, promoting transparency and flexibility, while closed-source models are proprietary, offering ease of use but limiting modification and transparency.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "OpenAI vs. open-source LLM",
+        "title": "OpenAI vs. Open Source LLM",
         "url": "https://ubiops.com/openai-vs-open-source-llm/",
         "type": "article"
       },
       {
-        "title": "AI360 | Open-Source vs Closed-Source LLMs",
+        "title": "Open-Source vs Closed-Source LLMs",
         "url": "https://www.youtube.com/watch?v=710PDpuLwOc",
         "type": "video"
       }
@@ -818,7 +834,7 @@
         "type": "course"
       },
       {
-        "title": "Documentation",
+        "title": "Hugging Face Documentation",
         "url": "https://huggingface.co/docs/hub/en/index",
         "type": "article"
       }
@@ -932,20 +948,31 @@
   },
   "--ig0Ume_BnXb9K2U7HJN": {
     "title": "What are Embeddings",
-    "description": "Embeddings are dense, numerical vector representations of data, such as words, sentences, images, or audio, that capture their semantic meaning and relationships. By converting data into fixed-length vectors, embeddings allow machine learning models to process and understand the data more effectively. For example, word embeddings represent similar words with similar vectors, enabling tasks like semantic search, recommendation systems, and clustering. Embeddings make it easier to compare, search, and analyze complex, unstructured data by mapping similar items close together in a high-dimensional space.",
-    "links": []
+    "description": "Embeddings are dense, numerical vector representations of data, such as words, sentences, images, or audio, that capture their semantic meaning and relationships. By converting data into fixed-length vectors, embeddings allow machine learning models to process and understand the data more effectively. For example, word embeddings represent similar words with similar vectors, enabling tasks like semantic search, recommendation systems, and clustering. Embeddings make it easier to compare, search, and analyze complex, unstructured data by mapping similar items close together in a high-dimensional space.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introducing Text and Code Embeddings",
+        "url": "https://openai.com/index/introducing-text-and-code-embeddings/",
+        "type": "article"
+      },
+      {
+        "title": "What are Embeddings",
+        "url": "https://www.cloudflare.com/learning/ai/what-are-embeddings/",
+        "type": "article"
+      }
+    ]
   },
   "eMfcyBxnMY_l_5-8eg6sD": {
     "title": "Semantic Search",
     "description": "Embeddings are used for semantic search by converting text, such as queries and documents, into high-dimensional vectors that capture the underlying meaning and context, rather than just exact words. These embeddings represent the semantic relationships between words or phrases, allowing the system to understand the query’s intent and retrieve relevant information, even if the exact terms don’t match.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is semantic search?",
+        "title": "What is Semantic Search?",
         "url": "https://www.elastic.co/what-is/semantic-search",
         "type": "article"
       },
       {
-        "title": "What is Semantic Search? Cohere",
+        "title": "What is Semantic Search? - Cohere",
         "url": "https://www.youtube.com/watch?v=fFt4kR4ntAA",
         "type": "video"
       }
@@ -972,7 +999,7 @@
     "description": "Anomaly detection with embeddings works by transforming data, such as text, images, or time-series data, into vector representations that capture their patterns and relationships. In this high-dimensional space, similar data points are positioned close together, while anomalies stand out as those that deviate significantly from the typical distribution. This approach is highly effective for detecting outliers in tasks like fraud detection, network security, and quality control.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Anomoly in Embeddings",
+        "title": "Anomaly in Embeddings",
         "url": "https://ai.google.dev/gemini-api/tutorials/anomaly_detection",
         "type": "article"
       }
@@ -999,7 +1026,7 @@
         "type": "article"
       },
       {
-        "title": "Master OpenAI EMBEDDING API",
+        "title": "Master OpenAI Embedding API",
         "url": "https://www.youtube.com/watch?v=9oCS-VQupoc",
         "type": "video"
       }
@@ -1065,8 +1092,19 @@
   },
   "tt9u3oFlsjEMfPyojuqpc": {
     "title": "Vector Databases",
-    "description": "Vector databases are systems specialized in storing, indexing, and retrieving high-dimensional vectors, often used as embeddings for data like text, images, or audio. Unlike traditional databases, they excel at managing unstructured data by enabling fast similarity searches, where vectors are compared to find the closest matches. This makes them essential for tasks like semantic search, recommendation systems, and content discovery. Using techniques like approximate nearest neighbor (ANN) search, vector databases handle large datasets efficiently, ensuring quick and accurate retrieval even at scale.",
-    "links": []
+    "description": "Vector databases are systems specialized in storing, indexing, and retrieving high-dimensional vectors, often used as embeddings for data like text, images, or audio. Unlike traditional databases, they excel at managing unstructured data by enabling fast similarity searches, where vectors are compared to find the closest matches. This makes them essential for tasks like semantic search, recommendation systems, and content discovery. Using techniques like approximate nearest neighbor (ANN) search, vector databases handle large datasets efficiently, ensuring quick and accurate retrieval even at scale.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Vector Databases",
+        "url": "https://developers.cloudflare.com/vectorize/reference/what-is-a-vector-database/",
+        "type": "article"
+      },
+      {
+        "title": "What are Vector Databases?",
+        "url": "https://www.mongodb.com/resources/basics/databases/vector-databases",
+        "type": "article"
+      }
+    ]
   },
   "WcjX6p-V-Rdd77EL8Ega9": {
     "title": "Purpose and Functionality",
@@ -1110,7 +1148,7 @@
     "description": "Pinecone is a managed vector database designed for efficient similarity search and real-time retrieval of high-dimensional data, such as embeddings. It allows developers to store, index, and query vector representations, making it easy to build applications like recommendation systems, semantic search, and AI-driven content discovery. Pinecone is scalable, handles large datasets, and provides fast, low-latency searches using optimized indexing techniques.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Pinecone Website",
+        "title": "Pinecone",
         "url": "https://www.pinecone.io",
         "type": "article"
       },
@@ -1131,7 +1169,7 @@
     "description": "Weaviate is an open-source vector database that allows users to store, search, and manage high-dimensional vectors, often used for tasks like semantic search and recommendation systems. It enables efficient similarity searches by converting data (like text, images, or audio) into embeddings and indexing them for fast retrieval. Weaviate also supports integrating external data sources and schemas, making it easy to combine structured and unstructured data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Weaviate Website",
+        "title": "Weaviate",
         "url": "https://weaviate.io/",
         "type": "article"
       },
@@ -1173,8 +1211,13 @@
         "type": "opensource"
       },
       {
-        "title": "LanceDB Website",
+        "title": "LanceDB",
         "url": "https://lancedb.com/",
+        "type": "article"
+      },
+      {
+        "title": "LanceDB Documentation",
+        "url": "https://docs.lancedb.com/enterprise/introduction",
         "type": "article"
       }
     ]
@@ -1189,7 +1232,7 @@
         "type": "opensource"
       },
       {
-        "title": "Qdrant Website",
+        "title": "Qdrant",
         "url": "https://qdrant.tech/",
         "type": "article"
       },
@@ -1205,7 +1248,7 @@
     "description": "Supabase Vector is an extension of the Supabase platform, specifically designed for AI and machine learning applications that require vector operations. It leverages PostgreSQL's pgvector extension to provide efficient vector storage and similarity search capabilities. This makes Supabase Vector particularly useful for applications involving embeddings, semantic search, and recommendation systems. With Supabase Vector, developers can store and query high-dimensional vector data alongside regular relational data, all within the same PostgreSQL database.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Supabase Vector website",
+        "title": "Supabase Vector",
         "url": "https://supabase.com/vector",
         "type": "article"
       },
@@ -1237,7 +1280,7 @@
         "type": "article"
       },
       {
-        "title": "Vector Databases simply explained! (Embeddings & Indexes)",
+        "title": "Vector Databases Simply Explained! (Embeddings & Indexes)",
         "url": "https://www.youtube.com/watch?v=dN0lsF2cvm4",
         "type": "video"
       }
@@ -1250,8 +1293,19 @@
   },
   "lVhWhZGR558O-ljHobxIi": {
     "title": "RAG & Implementation",
-    "description": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation to produce more accurate, context-aware responses. It uses two components: a retriever, which searches a database to find relevant information, and a generator, which crafts a response based on the retrieved data. Implementing RAG involves using a retrieval model (e.g., embeddings and vector search) alongside a generative language model (like GPT). The process starts by converting a query into embeddings, retrieving relevant documents from a vector database, and feeding them to the language model, which then generates a coherent, informed response. This approach grounds outputs in real-world data, resulting in more reliable and detailed answers.",
-    "links": []
+    "description": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation to produce more accurate, context-aware responses. It uses two components: a retriever, which searches a database to find relevant information, and a generator, which crafts a response based on the retrieved data. Implementing RAG involves using a retrieval model (e.g., embeddings and vector search) alongside a generative language model (like GPT). The process starts by converting a query into embeddings, retrieving relevant documents from a vector database, and feeding them to the language model, which then generates a coherent, informed response. This approach grounds outputs in real-world data, resulting in more reliable and detailed answers.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is RAG?",
+        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+        "type": "article"
+      },
+      {
+        "title": "What is Retrieval-Augmented Generation? IBM",
+        "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M",
+        "type": "video"
+      }
+    ]
   },
   "GCn4LGNEtPI0NWYAZCRE-": {
     "title": "RAG Usecases",
@@ -1382,7 +1436,7 @@
   },
   "WZVW8FQu6LyspSKm1C_sl": {
     "title": "Using SDKs Directly",
-    "description": "While tools like Langchain and LlamaIndex make it easy to implement RAG, you don't have to necessarily learn and use them. If you know about the different steps of implementing RAG you can simply do it all yourself e.g. do the chunking using @langchain/textsplitters package, create embeddings using any LLM e.g. use OpenAI Embedding API through their SDK, save the embeddings to any vector database e.g. if you are using Supabase Vector DB, you can use their SDK and similarly you can use the relevant SDKs for the rest of the steps as well.\n\nLearn more from the following resources:",
+    "description": "While tools like Langchain and LlamaIndex make it easy to implement RAG, you don't have to necessarily learn and use them. If you know about the different steps of implementing RAG you can simply do it all yourself e.g. do the chunking using `@langchain/textsplitters` package, create embeddings using any LLM e.g. use OpenAI Embedding API through their SDK, save the embeddings to any vector database e.g. if you are using Supabase Vector DB, you can use their SDK and similarly you can use the relevant SDKs for the rest of the steps as well.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Langchain Text Splitter Package",
@@ -1406,7 +1460,7 @@
     "description": "LangChain is a development framework that simplifies building applications powered by language models, enabling seamless integration of multiple AI models and data sources. It focuses on creating chains, or sequences, of operations where language models can interact with databases, APIs, and other models to perform complex tasks. LangChain offers tools for prompt management, data retrieval, and workflow orchestration, making it easier to develop robust, scalable applications like chatbots, automated data analysis, and multi-step reasoning systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "LangChain Website",
+        "title": "LangChain",
         "url": "https://www.langchain.com/",
         "type": "article"
       },
@@ -1422,7 +1476,7 @@
     "description": "LlamaIndex, formerly known as GPT Index, is a tool designed to facilitate the integration of large language models (LLMs) with structured and unstructured data sources. It acts as a data framework that helps developers build retrieval-augmented generation (RAG) applications by indexing various types of data, such as documents, databases, and APIs, enabling LLMs to query and retrieve relevant information efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "llamaindex Website",
+        "title": "Llama Index",
         "url": "https://docs.llamaindex.ai/en/stable/",
         "type": "article"
       },
@@ -1525,7 +1579,7 @@
   },
   "6xaRB34_g0HGt-y1dGYXR": {
     "title": "Manual Implementation",
-    "description": "Services like [Open AI functions](https://platform.openai.com/docs/guides/function-calling) and Tools or [Vercel's AI SDK](https://sdk.vercel.ai/docs/foundations/tools) make it really easy to make SDK agents however it is a good idea to learn how these tools work under the hood. You can also create fully custom implementation of agents using by implementing custom loop.\n\nLearn more from the following resources:",
+    "description": "Services like Open AI functions and Tools or Vercel's AI SDK make it really easy to make SDK agents however it is a good idea to learn how these tools work under the hood. You can also create fully custom implementation of agents using by implementing custom loop.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "OpenAI Function Calling",
@@ -1637,8 +1691,19 @@
   },
   "TxaZCtTCTUfwCxAJ2pmND": {
     "title": "Video Understanding",
-    "description": "Video understanding with multimodal AI involves analyzing and interpreting both visual and audio content to provide a more comprehensive understanding of videos. Common use cases include video summarization, where AI extracts key scenes and generates summaries; content moderation, where the system detects inappropriate visuals or audio; and video indexing for easier search and retrieval of specific moments within a video. Other applications include enhancing video-based recommendations, security surveillance, and interactive entertainment, where video and audio are processed together for real-time user interaction.",
-    "links": []
+    "description": "Video understanding with multimodal AI involves analyzing and interpreting both visual and audio content to provide a more comprehensive understanding of videos. Common use cases include video summarization, where AI extracts key scenes and generates summaries; content moderation, where the system detects inappropriate visuals or audio; and video indexing for easier search and retrieval of specific moments within a video. Other applications include enhancing video-based recommendations, security surveillance, and interactive entertainment, where video and audio are processed together for real-time user interaction.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Awesome LLM for Video Understanding",
+        "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+        "type": "opensource"
+      },
+      {
+        "title": "Video Understanding",
+        "url": "https://dl.acm.org/doi/10.1145/3503161.3551600",
+        "type": "article"
+      }
+    ]
   },
   "mxQYB820447DC6kogyZIL": {
     "title": "Audio Processing",
@@ -1677,17 +1742,17 @@
     "description": "In the context of multimodal AI, speech-to-text technology converts spoken language into written text, enabling seamless integration with other data types like images and text. This allows AI systems to process audio input and combine it with visual or textual information, enhancing applications such as virtual assistants, interactive chatbots, and multimedia content analysis. For example, a multimodal AI can transcribe a video’s audio while simultaneously analyzing on-screen visuals and text, providing richer and more context-aware insights.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is speech to text? Amazon",
+        "title": "What is Speech to Text?",
         "url": "https://aws.amazon.com/what-is/speech-to-text/",
         "type": "article"
       },
       {
-        "title": "Turn speech into text using Google AI",
+        "title": "Turn Speech into Text using Google AI",
         "url": "https://cloud.google.com/speech-to-text",
         "type": "article"
       },
       {
-        "title": "How is Speech to Text Used? ",
+        "title": "How is Speech to Text Used?",
         "url": "https://h2o.ai/wiki/speech-to-text/",
         "type": "article"
       }
@@ -1778,7 +1843,7 @@
     "description": "LlamaIndex enables multi-modal apps by linking language models (LLMs) to diverse data sources, including text and images. It indexes and retrieves information across formats, allowing LLMs to process and integrate data from multiple modalities. This supports applications like visual question answering, content summarization, and interactive systems by providing structured, context-aware inputs from various content types.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "LlamaIndex Multy-modal",
+        "title": "LlamaIndex Multi-modal",
         "url": "https://docs.llamaindex.ai/en/stable/use_cases/multimodal/",
         "type": "article"
       },
@@ -1791,7 +1856,7 @@
   },
   "NYge7PNtfI-y6QWefXJ4d": {
     "title": "Development Tools",
-    "description": "AI has given rise to a collection of AI powered development tools of various different varieties. We have IDEs like Cursor that has AI baked into it, live context capturing tools such as Pieces and a variety of brower based tools like V0, Claude and more.",
+    "description": "AI has given rise to a collection of AI powered development tools of various different varieties. We have IDEs like Cursor that has AI baked into it, live context capturing tools such as Pieces and a variety of brower based tools like V0, Claude and more.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "v0 Website",
@@ -1809,7 +1874,7 @@
         "type": "article"
       },
       {
-        "title": "Pieces Website",
+        "title": "Pieces",
         "url": "https://pieces.app",
         "type": "article"
       }
