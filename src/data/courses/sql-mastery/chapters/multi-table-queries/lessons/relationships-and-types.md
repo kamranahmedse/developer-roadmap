@@ -64,6 +64,18 @@ In our bookstore, a `book` can be purchased by multiple `customers`, and a `cust
 
 ![](https://assets.roadmap.sh/guest/many-to-many-c7ytk.png)
 
+---
+
+## Singular vs Plural Table Names
+
+You might have noticed that we are using plural names for our tables, such as `books`, `customers`, and `sales`. This is a debated topic, and opinions vary. I generally lean towards using singular table names.
+
+Both approaches are valid, but the key is to maintain consistency. I find singular names to be simpler and more intuitive, especially when considering that each row represents a single instance of the entity.
+
+For further insights, you can check out [this StackOverflow discussion](https://stackoverflow.com/questions/338156/table-naming-dilemma-singular-vs-plural-names).
+
+---
+
 ## Entity-Relationship (ER) Diagrams
 
 Now that we have a good understanding of the different types of relationships, let's explore how to visually represent them using Entity-Relationship (ER) diagrams.
