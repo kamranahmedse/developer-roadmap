@@ -1,8 +1,8 @@
 ---
-title: Relational Data
+title: More on Relational Data
 description: Learn how data is organized and related in relational databases
 order: 100
-type: lesson-challenge
+type: lesson
 ---
 
 By now, you should have a good understanding of what relational databases are and how they store data in tables. Before we dive into multi-table queries, let’s take a step back and revisit the concept of relational data to understand relationships.
@@ -58,7 +58,7 @@ An entity is a real-world object or concept that we want to store information ab
 
 ### Attribute
 
-Attributes are details or properties that describe an entity. In our example above, `books` entity has attributes like `title`, `author`, `price`, etc. `customers` entity has attributes like `name`, `email`, etc. Similarly `sales` entity has attributes like `price`, `quantity`, etc.
+Attributes are details or properties that describe an entity. In our example above, `books` entity has attributes like `title`, `author`, `price`, etc. `customers` entity has attributes like &nbsp;`name`, `email`, etc. Similarly `sales` entity has attributes like `price`, `quantity`, etc.
 
 #### Primary and Foreign Keys
 
@@ -70,7 +70,7 @@ We have already discussed primary keys in the previous chapter about DDL. To rec
 
 > Foreign key is a field in one table that refers to the primary key of another table.
 
-In addition to that, each entity may have one or more foreign keys. **Foreign key** is a field in one table that refers to the primary key of another table. For example, in our `sales` table, `book_id` and `customer_id` are foreign keys that refer to the `book_id` and `customer_id` in the `books` and `customers` tables respectively.
+In addition to that, each entity may have one or more foreign keys. **Foreign key** is a field in one table that refers to the primary key of another table. For example, in our `sales` table, `book_id` and `customer_id` are foreign keys that refer to the primary keys of `books` and `customers` tables respectively. 
 
 | Table Name | Primary Key   | Foreign Key              |
 | ---------- | ------------- | ------------------------ |
@@ -78,6 +78,6 @@ In addition to that, each entity may have one or more foreign keys. **Foreign ke
 | customers  | `customer_id` |                          |
 | sales      | `sale_id`     | `book_id`, `customer_id` |
 
----
+> You should note that the name of the foreign key column in the `sales` table does not have to match the name of the primary key column in the `books` and `customers` tables.
 
 In the next lesson, we will dive deeper into relationships and the different types of relationships.
