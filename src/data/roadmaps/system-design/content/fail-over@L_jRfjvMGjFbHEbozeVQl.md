@@ -29,4 +29,5 @@ Active-active failover can also be referred to as master-master failover.
 
 To learn more visit the following links:
 
+- [@opensource@Design Pattern - Fail-Over](https://github.com/donnemartin/system-design-primer#fail-over/)
 - [@article@Fail Over Pattern - High Availability](https://www.filecloud.com/blog/2015/12/architectural-patterns-for-high-availability/)
