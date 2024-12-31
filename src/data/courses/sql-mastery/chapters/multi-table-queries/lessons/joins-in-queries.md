@@ -95,6 +95,24 @@ The way this query works as follows:
 
 ![](https://assets.roadmap.sh/guest/step3-result-zhqzl.png)
 
+### Using Aliases
+
+We can also use aliases in the `FROM` and `JOIN` clauses.
+
+```sql
+-- Add aliases to the tables in the FROM clause
+SELECT a.id, a.name, ab.biography
+FROM author AS a
+JOIN author_biography AS ab ON a.id = ab.author_id;
+
+-- Using AS is optional i.e.
+SELECT a.id, a.name, ab.biography
+FROM author a
+JOIN author_biography ab ON a.id = ab.author_id;
+```
+
+The result from this query will be the same as the previous query.
+
 
 
 Let's take the same example our bookstore from our previous lesson. Among the tables we had in our bookstore, we had `customer` and `sale`. Here is some data we have in both tables respectively:
