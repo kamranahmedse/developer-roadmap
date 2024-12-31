@@ -16,3 +16,4 @@ This prints "10". The function accepts any number of arguments and adds them tog
 Visit the following resources to learn more:
 
 - [@official@Variadic Functions](https://www.php.net/manual/en/functions.arguments.php#functions.variable-arg-list)
+- [@article@Variable-length function arguments using spread token in PHP](https://www.amitmerchant.com/variable-length-function-arguments-using-spread-php/)
