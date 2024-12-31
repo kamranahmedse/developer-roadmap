@@ -6118,38 +6118,6 @@
       "selectable": true
     },
     {
-      "width": 159,
-      "height": 49,
-      "id": "CH_K6mmFX_GdSzi2n1ID7",
-      "type": "button",
-      "position": {
-        "x": 74.88773173232016,
-        "y": 3618.8973113943102
-      },
-      "selected": false,
-      "data": {
-        "label": "System Design",
-        "href": "https://roadmap.sh/system-design",
-        "color": "#FFFFFf",
-        "backgroundColor": "#4136D6",
-        "style": {
-          "fontSize": 17
-        },
-        "borderColor": "#4136D6",
-        "oldId": "-sFboM4eFUMVq1tlPl-fV"
-      },
-      "zIndex": 999,
-      "dragging": false,
-      "positionAbsolute": {
-        "x": 74.88773173232016,
-        "y": 3618.8973113943102
-      },
-      "style": {},
-      "focusable": true,
-      "resizing": false,
-      "selectable": true
-    },
-    {
       "width": 107,
       "height": 49,
       "id": "-sFboM4eFUMVq1tlPl-fV",
