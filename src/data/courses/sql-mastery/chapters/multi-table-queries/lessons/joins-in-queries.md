@@ -5,6 +5,18 @@ order: 120
 type: lesson-challenge
 setup: |
   ```sql
+    CREATE TABLE dress (
+      id INT PRIMARY KEY,
+      dress_name VARCHAR(255)
+    );
+
+    CREATE TABLE color (
+      id INT PRIMARY KEY,
+      color_name VARCHAR(255)
+    );
+
+    INSERT INTO dress (id, dress_name)
+
   CREATE TABLE author (
       id INT PRIMARY KEY,
       name VARCHAR(255)
@@ -288,7 +300,13 @@ Here is how the query works:
 
 ### LEFT JOIN
 
-The `LEFT JOIN` (or `LEFT OUTER JOIN`) returns all rows from the left table and matching rows from the right table. If no match is found, NULL values are returned for the right table's columns.
+The `LEFT JOIN` (or `LEFT OUTER JOIN`) returns all rows from the left table and matching rows from the right table. If no match is found, `NULL` values are returned for the right table's columns.
+
+Taking the same `author` and `author_biography` tables, let's say we want to get all the authors and their biographies.
+
+![](https://assets.roadmap.sh/guest/author-no-biography-x74fu.png)
+
+The query using `LEFT JOIN` will look like this:
 
 ```sql
 SELECT a.name, ab.biography
@@ -296,85 +314,140 @@ FROM author a
 LEFT JOIN author_biography ab ON a.id = ab.author_id;
 ```
 
-![](https://assets.roadmap.sh/guest/left-join-venn-diagram-p9m3n.png)
+The result from this query will be:
 
-For example, if we had an author without a biography:
+| name           | biography                 |
+| -------------- | ------------------------- |
+| Bob Brown      | Bob Brown's biography     |
+| Alice Johnson  | Alice Johnson's biography |
+| Jane Smith     | Jane Smith's biography    |
+| John Doe       | John Doe's biography      |
+| Samantha Jay   | `null`                    |
+| Nicola Bateman | `null`                    |
 
-```sql
-INSERT INTO author (id, name) VALUES (5, 'Carol White');
+Notice how the authors "Samantha Jay" and "Nicola Bateman" are included in the result with `NULL` values for the biography column. If we had used `INNER JOIN` instead, they would not have been included in the result.
 
-SELECT a.name, ab.biography
-FROM author a
-LEFT JOIN author_biography ab ON a.id = ab.author_id;
-```
+Left join is useful when you want to ensure that all rows from the left table are included in the result, even if there are no matching rows in the right table. For example, in our books example, if you want to get all the customers along with their number of sales, you can use `LEFT JOIN` to ensure that all customers are included in the result, even if they don't have any sales.
 
-Result:
-| name | biography |
-|---------------|---------------------------|
-| John Doe | John Doe's biography |
-| Jane Smith | Jane Smith's biography |
-| Alice Johnson | Alice Johnson's biography |
-| Bob Brown | Bob Brown's biography |
-| Carol White | NULL |
+> We will look at more examples when we learn about aggregate functions in the future chapters.
 
 ### RIGHT JOIN
 
-The `RIGHT JOIN` (or `RIGHT OUTER JOIN`) is similar to LEFT JOIN but returns all rows from the right table and matching rows from the left table.
+The `RIGHT JOIN` (or `RIGHT OUTER JOIN`) is similar to LEFT JOIN but returns all rows from the right table but only the matching rows from the left table.
+
+For example, let's simulate a scenario where we have an entry inside `author_biography` for an `author` that does not exist. Running the following `RIGHT JOIN` query will return all the biographies including the one for the author that does not exist:
 
 ```sql
+-- We don't have an author with id 10
+INSERT INTO author_biography (id, author_id, biography)
+VALUES (5, 10, 'Missing author biography');
+
+-- Now let's use RIGHT JOIN for joining the tables
 SELECT a.name, ab.biography
 FROM author a
 RIGHT JOIN author_biography ab ON a.id = ab.author_id;
 ```
 
-![](https://assets.roadmap.sh/guest/right-join-venn-diagram-t7k4m.png)
+The output from this query will be:
+
+| name          | biography                 |
+| ------------- | ------------------------- |
+| Bob Brown     | Bob Brown's biography     |
+| Alice Johnson | Alice Johnson's biography |
+| Jane Smith    | Jane Smith's biography    |
+| John Doe      | John Doe's biography      |
+| `null`        | Missing author biography  |
+
+Notice we have a "Missing author biography" row in the result with author name set to `null`.
+
+> As an exercise, try running the same query with `INNER JOIN` and `LEFT JOIN` and see the difference in results.
 
 ### FULL JOIN
 
 The `FULL JOIN` (or `FULL OUTER JOIN`) returns all rows from both tables. If there's no match, NULL values are returned for the table that doesn't have a matching row.
 
+Let's use the same `author` and `author_biography` tables to understand this better.
+
 ```sql
+-- We don't have an author with id 10
+INSERT INTO author_biography (id, author_id, biography)
+VALUES (5, 10, 'Missing author biography');
+
+-- I already have some authors with missing biographies
+-- So no need to set them up in the editor.
+
+-- Now let's use FULL JOIN for joining the tables
 SELECT a.name, ab.biography
 FROM author a
 FULL JOIN author_biography ab ON a.id = ab.author_id;
 ```
 
-![](https://assets.roadmap.sh/guest/full-join-venn-diagram-h8n5p.png)
+The output from this query will be:
 
-> Note: Not all database systems support FULL JOIN (e.g., MySQL). In such cases, you can simulate it using a combination of LEFT JOIN and RIGHT JOIN with UNION.
+| name           | biography                 |
+| -------------- | ------------------------- |
+| Bob Brown      | Bob Brown's biography     |
+| Alice Johnson  | Alice Johnson's biography |
+| Jane Smith     | Jane Smith's biography    |
+| John Doe       | John Doe's biography      |
+| `null`         | Missing author biography  |
+| Samantha Jay   | `null`                    |
+| Nicola Bateman | `null`                    |
+
+Notice how the authors "Samantha Jay" and "Nicola Bateman" are included in the result with `NULL` values for the biography column. Similarly, there is a "Missing author biography" row in the result with author name set to `null`.
 
 ### CROSS JOIN
 
-A `CROSS JOIN` returns the Cartesian product of both tables (every row from the first table paired with every row from the second table). It doesn't require a join condition.
+A `CROSS JOIN` returns the Cartesian product of both tables (i.e. every row from the first table paired with every row from the second table). It doesn't require a join condition.
+
+Consider the two tables `dress` and `color` with following data:
+
+| dress_id | dress_name |
+| -------- | ---------- |
+| 1        | Dress 1    |
+| 2        | Dress 2    |
+| 3        | Dress 3    |
+| 4        | Dress 4    |
+
+| color_id | color_name |
+| -------- | ---------- |
+| 1        | Red        |
+| 2        | Blue       |
+| 3        | Green      |
+| 4        | Yellow     |
+
+I have already set up the data in the editor. Now let's run the following query:
 
 ```sql
-SELECT a.name, ab.biography
-FROM author a
-CROSS JOIN author_biography ab;
+SELECT d.dress_name, c.color_name
+FROM dress d
+CROSS JOIN color c;
 ```
 
-This would result in 16 rows (4 authors × 4 biographies) where every author is paired with every biography, regardless of the author_id relationship.
+This would result in 16 rows (4 dresses × 4 colors) where every dress is paired with every color, regardless of the dress_id relationship.
 
-## Best Practices for Using JOINs
+![](https://assets.roadmap.sh/guest/dress-color-s0z98.png)
 
-1. **Always specify the join type explicitly** - While `JOIN` defaults to `INNER JOIN`, it's better to be explicit for code readability.
+The result from this query will be:
 
-2. **Use table aliases** - Especially when dealing with multiple joins, aliases make queries more readable and maintainable.
+| dress_name | color_name |
+| ---------- | ---------- |
+| Dress 1    | Red        |
+| Dress 1    | Blue       |
+| Dress 1    | Green      |
+| Dress 1    | Yellow     |
+| Dress 2    | Blue       |
+| Dress 2    | Green      |
+| Dress 2    | Yellow     |
+| Dress 3    | Red        |
+| Dress 3    | Blue       |
+| Dress 3    | Green      |
+| Dress 3    | Yellow     |
+| Dress 4    | Red        |
+| Dress 4    | Blue       |
+| Dress 4    | Green      |
+| Dress 4    | Yellow     |
 
-3. **Qualify column names** - When columns exist in multiple tables, always qualify them with table names or aliases to avoid ambiguity.
+---
 
-```sql
--- Good: Using aliases and qualified column names
-SELECT a.name, ab.biography
-FROM author a
-INNER JOIN author_biography ab ON a.id = ab.author_id;
-
--- Not as good: No aliases, unqualified columns
-SELECT name, biography
-FROM author
-INNER JOIN author_biography ON id = author_id;
-```
-
-4. **Consider performance** - JOINs can be resource-intensive, especially with large tables. Only select the columns you need and ensure proper indexing on join columns.
-
-Now that you understand different types of JOINs, you can choose the appropriate one based on your specific needs. In the next lesson, we'll explore more complex scenarios involving multiple JOINs.
+Now that you understand different types of JOINs, you can choose the appropriate one based on your specific needs. In the future lessons, we will look at more complex scenarios involving multiple JOINs.
