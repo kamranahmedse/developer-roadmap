@@ -177,4 +177,64 @@ CREATE TABLE book_editions (
 
 4. **Maintain Data Consistency**: Always insert parent records before child records and remove child records before parent records.
 
+## Types of Joins Using Foreign Keys
+
+When working with foreign key relationships, you can use different types of JOIN operations to combine data from related tables:
+
+### INNER JOIN
+
+Returns only the matching records from both tables:
+
+```sql
+SELECT books.title, sales.quantity
+FROM books
+INNER JOIN sales ON books.id = sales.book_id;
+```
+
+### LEFT JOIN (LEFT OUTER JOIN)
+
+Returns all records from the left table and matching records from the right table:
+
+```sql
+SELECT books.title, COALESCE(sales.quantity, 0) as quantity
+FROM books
+LEFT JOIN sales ON books.id = sales.book_id;
+```
+
+### RIGHT JOIN (RIGHT OUTER JOIN)
+
+Returns all records from the right table and matching records from the left table:
+
+```sql
+SELECT authors.name, books.title
+FROM books
+RIGHT JOIN authors ON books.author_id = authors.id;
+```
+
+### FULL JOIN (FULL OUTER JOIN)
+
+Returns all records from both tables, matching where possible:
+
+```sql
+SELECT books.title, reviews.rating
+FROM books
+FULL OUTER JOIN reviews ON books.id = reviews.book_id;
+```
+
+### Cross Join
+
+Returns the Cartesian product of both tables (every possible combination):
+
+```sql
+SELECT books.title, categories.name
+FROM books
+CROSS JOIN categories;
+```
+
+> 💡 **Note**: The type of JOIN you choose depends on your specific needs:
+> - Use INNER JOIN when you only want matching records
+> - Use LEFT/RIGHT JOIN when you need all records from one table
+> - Use FULL JOIN when you need all records from both tables
+> - Use CROSS JOIN rarely, typically for generating combinations
+
 In the next lesson, we'll learn how to query data across multiple tables using these relationships.
