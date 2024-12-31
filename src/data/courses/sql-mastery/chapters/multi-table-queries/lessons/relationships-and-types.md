@@ -7,7 +7,7 @@ type: lesson
 
 In the previous lesson, we explored how relational databases store data in tables and how entities and attributes are defined. Now, let's delve deeper into the types of relationships that can exist between these entities and how they are represented.
 
-Let's take the same example of our bookstore. Here are different entities we have in our bookstore:
+For example, let's say we have a database for a bookstore. We have the following entities:
 
 | Entity Name          | Description                                                                                              |
 | -------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -104,4 +104,4 @@ The complete ER diagram after adding the attributes is shown below:
 
 [![](https://assets.roadmap.sh/guest/complete-bookstore-erd-vb0fp.png)](https://assets.roadmap.sh/guest/complete-bookstore-erd-vb0fp.png)
 
-In the next lesson, we will look at foreign keys and how they are used to enforce relationships between tables. We will also look at some of the DML operations we can perform on multiple tables.
+In the next lesson, we will look at how to query data across multiple tables using joins.
