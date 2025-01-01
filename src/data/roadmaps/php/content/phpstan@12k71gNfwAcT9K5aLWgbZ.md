@@ -15,3 +15,4 @@ $ vendor/bin/phpstan analyse src
 Visit the following resources to learn more:
 
 - [@official@PHP Stan](https://phpstan.org/user-guide/getting-started)
+- [@article@Statically analysing your PHP code using PHPStan](https://www.amitmerchant.com/statically-analysing-your-php-using-phpstan/)
