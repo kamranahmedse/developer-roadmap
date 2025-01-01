@@ -92,8 +92,8 @@ CREATE TABLE book_reviews (
   rating INTEGER,
   review_status TEXT,
 
-  -- Named CHECK constraints
-  -- [CONSTRAINT name] CHECK (condition)
+  -- Named CHECK constraint Syntax
+  -- CONSTRAINT [CONSTRAINT name] CHECK (condition)
   CONSTRAINT valid_rating CHECK (rating >= 1 AND rating <= 5),
   CONSTRAINT valid_status CHECK (
     review_status IN ('pending', 'approved', 'rejected')
