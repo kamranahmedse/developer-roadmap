@@ -219,51 +219,6 @@ The output will be:
 
 Notice how it took the `writer_name` column alias from the first query for the name of the column in the result set.
 
-## Challenge Time! 🎯
+---
 
-Using the provided tables, write queries to:
-
-1. Find all books that cost exactly $19.99 across all categories
-2. List authors who have written both fiction and non-fiction books
-3. Find summer reads that aren't in our fiction collection
-
-<details>
-<summary>Solution</summary>
-
-```sql
--- 1. Books that cost $19.99
-SELECT title, author, 'Fiction' as category
-FROM fiction_book
-WHERE price = 19.99
-UNION
-SELECT title, author, 'Non-Fiction' as category
-FROM non_fiction_book
-WHERE price = 19.99;
-
--- 2. Authors in both categories
-SELECT author FROM fiction_book
-INTERSECT
-SELECT author FROM non_fiction_book;
-
--- 3. Summer reads not in fiction
-SELECT title, author FROM summer_reads
-EXCEPT
-SELECT title, author FROM fiction_book;
-```
-
-</details>
-
-## Key Takeaways
-
-- Use UNION to combine results and remove duplicates
-- Use UNION ALL when you want to keep duplicates (it's faster than UNION)
-- Use INTERSECT to find common rows between results
-- Use EXCEPT to find rows in one result that aren't in another
-- Column count, order, and data types must match across queries
-- These operations are particularly useful when working with similar but separate data sets
-
-Remember: Choose the appropriate set operation based on your needs:
-
-- UNION/UNION ALL for combining results
-- INTERSECT for finding common elements
-- EXCEPT for finding differences
+Remember to practice the queries above in the editor. Feel free to create your own tables and data to practice with. In the next lesson we will look at Views.

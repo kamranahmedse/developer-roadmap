@@ -1,7 +1,7 @@
 ---
 title: Expensive Books
 description: Practice creating a report with multiple tables
-order: 100
+order: 110
 type: challenge
 setup: |
   ```sql
