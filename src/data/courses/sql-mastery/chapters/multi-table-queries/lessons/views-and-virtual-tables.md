@@ -305,9 +305,33 @@ FROM book b
     INNER JOIN author a ON b.author_id = a.id;
 ```
 
+### Renaming Views
+
+You can rename a view using the `ALTER VIEW` statement. For example, the following statement renames the `enriched_book` view to `book_details`:
+
+```sql
+ALTER VIEW enriched_book
+RENAME TO book_details;
+```
+
+> **Note** MySQL has a different syntax for renaming views. Always look up the syntax for your database engine.
+>
+> ```sql
+> RENAME TABLE enriched_book TO book_details;
+> ```
+
+To rename a column in a view, you can use the `ALTER VIEW` statement. For example, the following statement renames the `author` column to `author_name` in the `book_details` view:
+
+```sql
+ALTER VIEW book_details
+RENAME COLUMN author TO author_name;
+```
+
+> **Note** MySQL does not support renaming columns in views. You will have to drop and recreate the view.
+
 ## Dropping Views
 
-To remove a view, use the DROP VIEW statement:
+To remove a view, use the `DROP VIEW` statement:
 
 ```sql
 DROP VIEW book_details;
