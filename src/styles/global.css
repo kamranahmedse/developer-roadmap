@@ -93,6 +93,10 @@ a > code:before {
   font-weight: normal;
 }
 
+.course-content blockquote {
+  font-style: normal;
+}
+
 .course-content.prose blockquote h1,
 .course-content.prose blockquote h2,
 .course-content.prose blockquote h3,
