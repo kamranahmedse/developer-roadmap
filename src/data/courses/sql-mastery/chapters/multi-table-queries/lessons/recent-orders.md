@@ -1,6 +1,6 @@
 ---
-title: High Value Orders
-description: Practice using EXCEPT to identify potential technical book opportunities
+title: Recent 3 Orders
+description: Practice using LIMIT to get the top N records
 order: 110
 type: challenge
 setup: |
@@ -39,7 +39,7 @@ setup: |
   ```
 ---
 
-The bookstore wants to identify the highest value orders i.e. the orders worth more than or equal to $500. Write a query to find order amounts, dates along with the customer names.
+The bookstore wants to display the 3 most recent orders placed by customers. Write a query to retrieve the customer names, order dates, and total amounts of these orders, ordered by the most recent first.
 
 We have the `customer` and `sale` tables.
 
@@ -66,30 +66,32 @@ We have the `customer` and `sale` tables.
 | 6   | 2           | 2024-11-23 | 300.00       |
 | 7   | 2           | 2024-11-11 | 300.00       |
 
-Write a query to find the orders above $500 along with the information of the customers. Your output should have the following columns:
+Write a query to find the 3 most recent orders along with the information of the customers. Your output should have the following columns:
 
 - `customer_name`
-- `order_amount`
 - `order_date`
+- `order_amount`
 
-The output should be ordered by the `order_amount` in descending order.
+The output should be ordered by the `order_date` in descending order.
 
 ## Expected Output
 
-| customer_name | order_amount | order_date        |
-| ------------- | ------------ | ----------------- |
-| Jane Smith    | 600.00       | November 11, 2024 |
-| John Doe      | 550.00       | October 20, 2024  |
+| customer_name | order_date     | total_amount |
+| ------------- | -------------- | ------------ |
+| Bob Brown     | December, 2024 | 250.00       |
+| John Doe      | December, 2024 | 100.00       |
+| Jane Smith    | November, 2024 | 300.00       |
 
 ## Solution
 
 ```sql
 SELECT
     c.name,
-    s.total_amount,
-    TO_CHAR(s.order_date, 'Month DD, YYYY') AS order_date
+    TO_CHAR(s.order_date, 'Month, YYYY') AS order_date,
+    s.total_amount
 FROM customer c
-JOIN sale s ON c.id = s.customer_id
-WHERE s.total_amount >= 500
-ORDER BY s.total_amount DESC;
+JOIN sale s
+    ON c.id = s.customer_id
+ORDER BY s.order_date DESC
+LIMIT 3;
 ```
