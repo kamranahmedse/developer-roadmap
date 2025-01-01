@@ -448,4 +448,4 @@ The result from this query will be:
 | Dress 4    | Green      |
 | Dress 4    | Yellow     |
 
-That's all for this lesson. Make sure to practice the examples and try out different types of JOINs. Future lessons will cover more examples and use cases for JOINs. For now, let's move on to the next lesson about foreign keys.
+That's all for this lesson. Make sure to practice the examples and try out different types of JOINs. Future lessons will cover more examples and use cases for JOINs. Let's move on to the next lesson where we will learn about self joins and their use cases.

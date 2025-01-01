@@ -1,7 +1,7 @@
 ---
 title: Foreign Key Constraint
 description: Learn how foreign keys are used to enforce relationships between tables
-order: 130
+order: 140
 type: lesson-challenge
 setup: |
   ```sql
