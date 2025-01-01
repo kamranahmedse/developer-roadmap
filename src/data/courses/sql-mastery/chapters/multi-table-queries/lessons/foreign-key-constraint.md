@@ -429,18 +429,61 @@ The choice of option depends on your use case. The table below should give you a
 
 ## Composite Foreign Keys
 
-Just like primary keys, foreign keys can also consist of multiple columns:
+Just like we can have composite primary keys (primary keys made up of multiple columns), we can also have composite foreign keys. A composite foreign key is a foreign key that references a composite primary key in another table.
+
+Let's understand this with an example. Imagine we have a `book` table where each book is uniquely identified by both its `id` and `edition` number:
 
 ```sql
-CREATE TABLE book_editions (
-    book_id INTEGER,
-    edition_number INTEGER,
-    publisher_id INTEGER,
-    publication_year INTEGER,
+CREATE TABLE book (
+    id INTEGER,
+    edition INTEGER,
+    title VARCHAR(255),
 
-    PRIMARY KEY (book_id, edition_number),
-    FOREIGN KEY (book_id, edition_number)
-        REFERENCES books(id, edition)
+    -- Composite primary key
+    PRIMARY KEY (id, edition)
+);
+
+CREATE TABLE book_review (
+    review_id INTEGER PRIMARY KEY,
+    book_id INTEGER,
+    book_edition INTEGER,
+    review_text TEXT,
+
+    -- Composite foreign key referencing both columns
+    FOREIGN KEY (book_id, book_edition)
+        REFERENCES book(id, edition)
 );
 ```
 
+In this example:
+
+- The `book` table has a composite primary key made up of `id` and `edition`
+- The `book_review` table has a composite foreign key (`book_id`, `book_edition`) that references both columns of the primary key in `book`
+
+When using composite foreign keys:
+
+- All columns in the foreign key must reference all columns in the referenced primary key
+- The columns must be specified in the same order as they appear in the primary key
+- The data types of the corresponding columns must match
+
+For example, this would be valid:
+
+```sql
+-- Insert a book
+INSERT INTO book (id, edition, title)
+VALUES (1, 1, 'SQL Basics');
+
+-- Insert a review (valid because book exists)
+INSERT INTO book_review (review_id, book_id, book_edition, review_text)
+VALUES (1, 1, 1, 'Great book!');
+```
+
+But this would fail:
+
+```sql
+-- This will fail because there's no book with id=2, edition=1
+INSERT INTO book_review (review_id, book_id, book_edition, review_text)
+VALUES (2, 2, 1, 'Invalid review!');
+```
+
+The same rules for `ON DELETE` and `ON UPDATE` that we learned earlier also apply to composite foreign keys.
