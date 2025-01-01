@@ -1659,21 +1659,10 @@
       }
     ]
   },
-  "n4It-lr7FFtSY83DcGydX": {
-    "title": "Backens for Frontend",
-    "description": "Create separate backend services to be consumed by specific frontend applications or interfaces. This pattern is useful when you want to avoid customizing a single backend for multiple interfaces. This pattern was first described by Sam Newman.\n\nTo learn more, visit the following links:",
-    "links": [
-      {
-        "title": "Backends for Frontends pattern",
-        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Frontend Development",
-        "url": "https://app.daily.dev/tags/frontend?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+  "backends-for-frontend@n4It-lr7FFtSY83DcGydX.md": {
+    "title": "Backends for Frontend",
+    "description": "",
+    "links": []
   },
   "4hi7LvjLcv8eR6m-uk8XQ": {
     "title": "Anti-Corruption Layer",
