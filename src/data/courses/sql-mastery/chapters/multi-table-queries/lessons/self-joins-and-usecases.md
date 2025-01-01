@@ -18,20 +18,6 @@ setup: |
          (4, 'Emily Davis', 2),        -- Reports to Sarah
          (5, 'James Wilson', 2),       -- Reports to Sarah
          (6, 'Lisa Anderson', 3);      -- Reports to Michael
-
-  CREATE TABLE product (
-      id INT PRIMARY KEY,
-      name VARCHAR(255),
-      substitute_product_id INT
-  );
-
-  INSERT INTO product (id, name, substitute_product_id)
-  VALUES (1, 'iPhone 13', 2),
-         (2, 'iPhone 14', 3),
-         (3, 'iPhone 15', NULL),
-         (4, 'Galaxy S21', 5),
-         (5, 'Galaxy S22', 6),
-         (6, 'Galaxy S23', NULL);
   ```
 ---
 
