@@ -1,7 +1,7 @@
 ---
 title: High Value Orders
 description: Practice using EXCEPT to identify potential technical book opportunities
-order: 110
+order: 130
 type: challenge
 setup: |
   ```sql
@@ -39,9 +39,7 @@ setup: |
   ```
 ---
 
-The bookstore wants to identify the highest value orders i.e. the orders worth more than or equal to $500. Write a query to find order amounts, dates along with the customer names.
-
-We have the `customer` and `sale` tables.
+Given the following three tables you are required to write a query to find the orders worth more than or equal to $500.
 
 > `customer` table has the list of customers.
 
@@ -66,13 +64,13 @@ We have the `customer` and `sale` tables.
 | 6   | 2           | 2024-11-23 | 300.00       |
 | 7   | 2           | 2024-11-11 | 300.00       |
 
-Write a query to find the orders above $500 along with the information of the customers. Your output should have the following columns:
+Your output should contain the orders with amount greater than or equal to `$500` and the following columns for each order:
 
 - `customer_name`
 - `order_amount`
 - `order_date`
 
-The output should be ordered by the `order_amount` in descending order.
+Results should be sorted by `order_amount` in descending order.
 
 ## Expected Output
 

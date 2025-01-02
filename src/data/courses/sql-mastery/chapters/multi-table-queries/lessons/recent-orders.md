@@ -39,9 +39,7 @@ setup: |
   ```
 ---
 
-The bookstore wants to display the 3 most recent orders placed by customers. Write a query to retrieve the customer names, order dates, and total amounts of these orders, ordered by the most recent first.
-
-We have the `customer` and `sale` tables.
+Given the following data in `customer` and `sale` tables, we want to track the recent orders in our bookstore.
 
 > `customer` table has the list of customers.
 
@@ -66,7 +64,7 @@ We have the `customer` and `sale` tables.
 | 6   | 2           | 2024-11-23 | 300.00       |
 | 7   | 2           | 2024-11-11 | 300.00       |
 
-Write a query to find the 3 most recent orders along with the information of the customers. Your output should have the following columns:
+Write a query to find the 3 most recent orders along with customer information. Your output should have the following columns:
 
 - `customer_name`
 - `order_date`

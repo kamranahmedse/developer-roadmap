@@ -39,7 +39,7 @@ setup: |
   ```
 ---
 
-Our bookstore has some marketing budget. The marketing team wants to send coupons to customers who have never placed an order. They have asked us to extract the list of customers for them.
+Given the following data in `customer` and `sale` tables, we need to find the customers who have never placed an order.
 
 We have the `customer` and `sale` tables.
 

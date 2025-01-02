@@ -1,7 +1,7 @@
 ---
 title: Multi-Section Authors
 description: Practice creating a report with multiple tables
-order: 120
+order: 180
 type: challenge
 setup: |
   ```sql

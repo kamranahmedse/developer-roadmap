@@ -1,7 +1,7 @@
 ---
 title: Trending Tech Books
 description: Practice using EXCEPT to identify potential technical book opportunities
-order: 100
+order: 200
 type: challenge
 setup: |
   ```sql
@@ -59,7 +59,7 @@ You have access to two tables: `trending_book` which tracks currently popular bo
 | 4   | Python Crash Course        | Python               | 34.99 |
 | 5   | Head First Java            | Java                 | 44.99 |
 
-Write a query to find the technical books that are not currently trending. This will help the publisher to review the books that are not currently popular and consider creating new editions or improving the existing ones.
+Write a query to find the technical books that are not currently trending. **Hint:** you can use one of the set operations.
 
 ## Expected Results
 
