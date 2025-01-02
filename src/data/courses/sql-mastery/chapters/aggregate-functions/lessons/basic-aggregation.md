@@ -243,6 +243,19 @@ The output from this query will be `9.99` and `12.99` since the lowest price is 
 
 You can use multiple aggregate functions in a single query.
 
+> **Important Note**: When using aggregate functions in a SELECT clause, you can only include:
+> 1. Aggregate functions (like COUNT, SUM, AVG, etc.)
+> 2. Constants
+> 
+> If you try to include a regular column that isn't aggregated, you'll get an error. For example, this query will fail:
+> ```sql
+> SELECT 
+>     title,           -- This will cause an error!
+>     COUNT(*) as count
+> FROM sale;
+> ```
+> To include regular columns along with aggregate functions, you need to use the GROUP BY clause, which we'll cover in the next lesson.
+
 For example, our query to calculate the total number of sales, total number of books sold, average price, minimum price, and maximum price in `February 2024` will be:
 
 ```sql
