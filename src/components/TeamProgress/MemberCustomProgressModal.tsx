@@ -21,7 +21,7 @@ import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
 import { ReadonlyEditor } from '../../../editor/readonly-editor';
-import type { Node } from 'reactflow';
+import type { Node } from '@xyflow/react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
