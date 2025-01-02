@@ -50,9 +50,9 @@ setup: |
   ```
 ---
 
-Given the following three tables with the given data:
+The bookstore manager wants to analyze premium-priced books across all sections of the store. They're particularly interested in books priced above $20 to understand the distribution of higher-priced inventory across different categories. This information will help them make informed decisions about pricing strategies and premium book displays.
 
-> `fiction_book` table has the following data:
+Given the following data in table `fiction_book`
 
 | id  | title                   | author              | price |
 | --- | ----------------------- | ------------------- | ----- |
@@ -62,7 +62,7 @@ Given the following three tables with the given data:
 | 4   | The Hobbit              | J.R.R. Tolkien      | 29.99 |
 | 5   | The Doors of Perception | Aldous Huxley       | 12.99 |
 
-> `non_fiction_book` table looks like this:
+And the following data in table `non_fiction_book`
 
 | id  | title                              | author            | price |
 | --- | ---------------------------------- | ----------------- | ----- |
@@ -72,7 +72,7 @@ Given the following three tables with the given data:
 | 4   | Pride and Prejudice: A Study Guide | John Smith        | 12.99 |
 | 5   | The Doors of Perception            | Aldous Huxley     | 12.99 |
 
-> `summer_read` table has the following data:
+And the following data in table `summer_read`
 
 | id  | title            | author              | price |
 | --- | ---------------- | ------------------- | ----- |
@@ -80,13 +80,16 @@ Given the following three tables with the given data:
 | 2   | Sapiens          | Yuval Noah Harari   | 24.99 |
 | 3   | The Art of War   | Sun Tzu             | 19.99 |
 
-Write a query to find the books in all three tables that cost more than $20 along with their section i.e. `Fiction`, `Non-Fiction`, and `Summer Read`.
+Write a query to identify all books priced above $20 across all sections. The manager wants to see:
 
-> It's okay if the books are repeated in the result set. Important thing is to show the section and the book details.
+- The book's ID
+- The title
+- The price
+- Which section it belongs to (Fiction, Non-Fiction, or Summer Read)
 
-## Expected Results
+Note: Some books may appear multiple times if they're featured in different sections.
 
-Your output should look like this:
+## Expected Output
 
 | id  | title                   | price | section     |
 | --- | ----------------------- | ----- | ----------- |
@@ -101,11 +104,49 @@ Your output should look like this:
 
 ```sql
 SELECT id, title, price, 'Fiction' as section
-FROM fiction_book WHERE price > 20
+FROM fiction_book 
+WHERE price > 20
 UNION
 SELECT id, title, price, 'Non-Fiction' as section
-FROM non_fiction_book WHERE price > 20
+FROM non_fiction_book 
+WHERE price > 20
 UNION
 SELECT id, title, price, 'Summer Read' as section
-FROM summer_read WHERE price > 20
+FROM summer_read 
+WHERE price > 20
+ORDER BY section, price DESC;
 ```
+
+### Explanation
+
+Let's break down how this query works:
+
+First, we get expensive books from the fiction section:
+
+```sql
+SELECT id, title, price, 'Fiction' as section
+FROM fiction_book 
+WHERE price > 20
+```
+
+Then we use `UNION` to combine results with expensive non-fiction books:
+
+```sql
+UNION
+SELECT id, title, price, 'Non-Fiction' as section
+FROM non_fiction_book 
+WHERE price > 20
+```
+
+And finally, we add expensive books from the summer reading list:
+
+```sql
+UNION
+SELECT id, title, price, 'Summer Read' as section
+FROM summer_read 
+WHERE price > 20
+```
+
+The `UNION` operator combines the results from all three queries while removing any duplicates. We add a literal string value as 'section' to identify which table each book comes from.
+
+This query helps the manager understand the distribution of premium-priced books across different sections, which can inform decisions about pricing strategies and store displays.

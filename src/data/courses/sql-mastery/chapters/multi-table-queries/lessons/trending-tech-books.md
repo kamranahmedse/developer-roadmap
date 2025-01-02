@@ -37,9 +37,9 @@ setup: |
   ```
 ---
 
-You have access to two tables: `trending_book` which tracks currently popular books across all genres, and `tech_book` which lists programming and technology books.
+The bookstore's marketing team wants to boost sales in the technology section. They've noticed some tech books aren't getting as much attention as others and want to identify which technical books aren't currently trending. This information will help them plan targeted promotions and display adjustments to increase visibility for these underperforming titles.
 
-> `trending_book` table shows currently trending books:
+Given the following data in table `trending_book`
 
 | title                    | author           | rating | votes |
 | ------------------------ | ---------------- | ------ | ----- |
@@ -49,7 +49,7 @@ You have access to two tables: `trending_book` which tracks currently popular bo
 | Project Hail Mary        | Andy Weir        | 4.8    | 1800  |
 | Neuromancer              | William Gibson   | 4.5    | 1600  |
 
-> `tech_book` table contains the technology book catalog:
+And the following data in table `tech_book`
 
 | id  | title                      | category             | price |
 | --- | -------------------------- | -------------------- | ----- |
@@ -59,11 +59,11 @@ You have access to two tables: `trending_book` which tracks currently popular bo
 | 4   | Python Crash Course        | Python               | 34.99 |
 | 5   | Head First Java            | Java                 | 44.99 |
 
-Write a query to find the technical books that are not currently trending. **Hint:** you can use one of the set operations.
+Write a query to identify technical books that aren't currently in the trending list. The marketing team wants to see:
 
-## Expected Results
+- The title of each non-trending technical book
 
-Your query should return:
+## Expected Output
 
 | title                      |
 | -------------------------- |
@@ -78,5 +78,35 @@ SELECT title
 FROM tech_book
 EXCEPT
 SELECT title
-FROM trending_book;
+FROM trending_book
+ORDER BY title;
 ```
+
+### Explanation
+
+Let's break down how this query works:
+
+First, we get all titles from the technical books catalog:
+
+```sql
+SELECT title
+FROM tech_book
+```
+
+Then we use `EXCEPT` to remove any titles that appear in the trending books list:
+
+```sql
+EXCEPT
+SELECT title
+FROM trending_book
+```
+
+The `EXCEPT` operator returns all rows from the first query that don't appear in the results of the second query. This effectively gives us all technical books that aren't trending.
+
+Finally, we order the results alphabetically:
+
+```sql
+ORDER BY title
+```
+
+This query helps the marketing team identify which technical books might need additional promotion or better placement in the store. They can use this information to create targeted marketing campaigns or special displays for these books to increase their visibility and sales.
