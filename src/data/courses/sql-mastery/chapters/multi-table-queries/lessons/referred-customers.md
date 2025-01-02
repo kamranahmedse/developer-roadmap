@@ -40,7 +40,7 @@ Your output should contain the following columns:
 
 - `name`
 - `email`
-- `referred_by` (name of the customer or '- None -')
+- `referred_by` — name of the customer or `- None -`
 
 > **Tip:** You can use `COALESCE` function for `referred_by` column.
 
