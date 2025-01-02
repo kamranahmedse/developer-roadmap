@@ -836,6 +836,11 @@
         "type": "article"
       },
       {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
+      {
         "title": "Big O Notation — Calculating Time Complexity",
         "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
         "type": "video"
@@ -854,11 +859,16 @@
   },
   "c-NrTtJuNihbHzyPEOKTW": {
     "title": "Big O",
-    "description": "Big O Notation describes, how well an algorithm scales with the input size. It is used to describe the worst case scenario of an algorithm. It is used to compare algorithms and to determine which algorithm is better.\n\nVisit the following resources to learn more:",
+    "description": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "moviesCS 61B Lecture 19: Asymptotic Analysis",
         "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "type": "article"
+      },
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
         "type": "article"
       },
       {
@@ -880,8 +890,13 @@
   },
   "ThLpVZQIJ4diY5m0dik8m": {
     "title": "Big-Theta",
-    "description": "While Big O Notation refers to the upper bound of a function, Big Theta Notation refers to the exact bound of a function. Big Theta Notation is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
+    "description": "If a function has the same Big O and Big Omega, they also become the function's Big Theta. Big Theta is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
@@ -896,8 +911,13 @@
   },
   "X33735aeAVSlJ6yv9GS-h": {
     "title": "Big Omega",
-    "description": "Big Omega notation is used to describe the lower bound of a function. It is the opposite of Big O notation. While Big O is used to describe the worst case scenario of an algorithm, Big Omega is used to describe the best case scenario of an algorithm.\n\nVisit the following resources to learn more:",
+    "description": "The Big Omega notation is similar to the Big O notation. The only difference is that it denotes the lower bound on the growth rate of a function.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
