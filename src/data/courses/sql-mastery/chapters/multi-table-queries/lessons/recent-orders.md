@@ -39,9 +39,9 @@ setup: |
   ```
 ---
 
-Given the following data in `customer` and `sale` tables, we want to track the recent orders in our bookstore.
+The bookstore manager wants to keep track of the most recent sales activity to identify current buying trends. They've asked you to create a report showing the three most recent orders with customer details to help understand who their latest customers are and what they're spending.
 
-> `customer` table has the list of customers.
+Given the following data in table `customer`
 
 | id  | name          | email                     |
 | --- | ------------- | ------------------------- |
@@ -52,7 +52,7 @@ Given the following data in `customer` and `sale` tables, we want to track the r
 | 5   | Charlie Davis | charlie.davis@example.com |
 | 6   | David Lee     | david.lee@example.com     |
 
-> `sale` table has the list of sales.
+And the following data in table `sale`
 
 | id  | customer_id | order_date | total_amount |
 | --- | ----------- | ---------- | ------------ |
@@ -64,13 +64,11 @@ Given the following data in `customer` and `sale` tables, we want to track the r
 | 6   | 2           | 2024-11-23 | 300.00       |
 | 7   | 2           | 2024-11-11 | 300.00       |
 
-Write a query to find the 3 most recent orders along with customer information. Your output should have the following columns:
+Write a query to identify the 3 most recent orders along with customer information. The manager wants to see:
 
-- `customer_name`
-- `order_date`
-- `order_amount`
-
-The output should be ordered by the `order_date` in descending order.
+- The customer's name
+- When they placed their order (formatted as "Month, YYYY")
+- How much they spent
 
 ## Expected Output
 
@@ -84,7 +82,7 @@ The output should be ordered by the `order_date` in descending order.
 
 ```sql
 SELECT
-    c.name,
+    c.name AS customer_name,
     TO_CHAR(s.order_date, 'Month, YYYY') AS order_date,
     s.total_amount
 FROM customer c
@@ -93,3 +91,35 @@ JOIN sale s
 ORDER BY s.order_date DESC
 LIMIT 3;
 ```
+
+### Explanation
+
+Let's break down how this query works:
+
+We start by joining the `customer` and `sale` tables to get customer information with their orders:
+
+```sql
+FROM customer c
+JOIN sale s
+    ON c.id = s.customer_id
+```
+
+We format the date to be more readable using `TO_CHAR`:
+
+```sql
+TO_CHAR(s.order_date, 'Month, YYYY') AS order_date
+```
+
+We order the results by order date in descending order (newest first):
+
+```sql
+ORDER BY s.order_date DESC
+```
+
+Finally, we use `LIMIT` to get only the 3 most recent orders:
+
+```sql
+LIMIT 3
+```
+
+This query helps the manager quickly see who their most recent customers are and identify any patterns in recent purchasing behavior.
