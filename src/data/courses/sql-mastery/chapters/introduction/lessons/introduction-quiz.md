@@ -1,5 +1,5 @@
 ---
-title: Quiz 1
+title: Introduction Quiz
 description: Test your knowledge of SQL basics with this quiz.
 order: 200
 type: quiz
