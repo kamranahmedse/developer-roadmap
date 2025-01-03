@@ -281,4 +281,76 @@ This query would output something like:
 | Non-Fiction | 3           | 2            | 1             | 0             |
 | Technical   | 3           | 0            | 2             | 1             |
 
+---
+
+## Important Rules and Gotchas
+
+When working with GROUP BY and aggregate functions, there are some important rules to keep in mind:
+
+### SELECT Columns
+
+When using `GROUP BY`, every column in your `SELECT` list must either be included in the `GROUP BY` clause, or be used within an aggregate function.
+
+For example, this query will fail:
+
+```sql
+-- ERROR: category_name must appear in GROUP BY clause
+SELECT
+    category_name,    -- Not in GROUP BY
+    store_location,   -- Not in GROUP BY
+    SUM(amount)      -- This is fine (aggregate function)
+FROM sale
+GROUP BY category;    -- Only grouping by category
+```
+
+To fix it, either include all columns in GROUP BY:
+
+```sql
+-- OK! This works
+SELECT
+    category_name,
+    store_location,
+    SUM(amount)
+FROM sale
+GROUP BY category_name, store_location;
+```
+
+Or use them in aggregate functions:
+
+```sql
+-- OK! This also works
+SELECT
+    category_name,
+    COUNT(DISTINCT store_location),
+    SUM(amount)
+FROM sale
+GROUP BY category_name;
+```
+
+### NULL Values in Groups
+
+`NULL` values are ignored by all the aggregate functions except `COUNT(*)`. Also, when using `GROUP BY`, `NULL` values form their own group and appear first in the results unless ordered otherwise.
+
+### Order of Operations
+
+SQL processes clauses in the following order:
+
+| Top to Bottom |
+| ------------- |
+| `FROM`        |
+| `WHERE`       |
+| `GROUP BY`    |
+| `HAVING`      |
+| `SELECT`      |
+| `ORDER BY`    |
+
+Some common gotchas when working with `GROUP BY`:
+
+- `WHERE` filters rows before they're grouped
+- `HAVING` filters after grouping. We will learn more about this in the next lesson
+- You can't use column aliases from `SELECT` in `WHERE` or `GROUP BY`, because as you can see in the order of operations, `WHERE` and `GROUP BY` are processed before `SELECT`
+- You can use column aliases in `ORDER BY`
+
+---
+
 In the next lesson, we will learn about grouping and filtering data using the `HAVING` clause.
