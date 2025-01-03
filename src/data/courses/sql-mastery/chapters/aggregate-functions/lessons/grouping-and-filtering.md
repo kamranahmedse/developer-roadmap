@@ -277,3 +277,6 @@ The output will be:
 ### Aggregate Functions
 
 `HAVING` can only use the columns in `GROUP BY` and aggregate functions.
+
+
+That is all for this lesson. In the future chapters, we'll explore some more advanced aggregation techniques including window functions and running totals. Let's solve some challenges and then move on to the next chapter.
