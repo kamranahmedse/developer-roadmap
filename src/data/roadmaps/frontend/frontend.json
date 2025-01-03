@@ -2278,6 +2278,44 @@
       "focusable": true
     },
     {
+      "width": 110,
+      "height": 49,
+      "id": "L2RjXtG3f9HkF8Q3NzJ0z",
+      "type": "subtopic",
+      "position": {
+        "x": 67.34973095743374,
+        "y": 1097.007960598624
+      },
+      "selected": false,
+      "data": {
+        "label": "Biome",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "G4JpL9bE8K2aRqV5tM7sD",
+        "legend": {
+          "id": "NJhQIvMyMD1Cu-JA1UCmJ",
+          "color": "#874efe",
+          "label": "Personal Recommendation / Opinion",
+          "position": "right-center"
+        }
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 67.34973095743374,
+        "y": 1097.007960598624
+      },
+      "style": {
+        "width": 110,
+        "height": 49
+      },
+      "resizing": false,
+      "focusable": true
+    },
+    {
       "width": 160,
       "height": 51,
       "id": "igg4_hb3XE3vuvY8ufV-4",

@@ -1369,6 +1369,32 @@
       }
     ]
   },
+  "L2RjXtG3f9HkF8Q3NzJ0z": {
+    "title": "Biome",
+    "description": "Biome is an open-source, opinionated code quality tool for JavaScript, TypeScript, and other modern programming languages. It combines features of both linting and formatting, ensuring code adheres to best practices while maintaining consistent style across a project. Similar to ESLint, Biome helps identify potential errors, enforce coding standards, and reduce bugs by detecting issues early in the development process. It also offers automatic formatting, much like Prettier, to standardize code style without the need for manual intervention. With Biome, developers can streamline their workflows, as it supports real-time feedback through editor integrations, pre-commit hooks, and build processes. Its zero-config philosophy and extensibility make it a versatile and efficient tool for teams of all sizes. By automating fixes and improving code readability, Biome enhances productivity and reduces cognitive load, helping developers focus on writing high-quality code.",
+    "links": [
+      {
+        "title": "Biome Official Website",
+        "url": "https://biomejs.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Biome",
+        "url": "https://biomejs.dev/guides/getting-started/",
+        "type": "article"
+      },
+      {
+        "title": "Biome GitHub Repository",
+        "url": "https://github.com/biomejs/biome",
+        "type": "article"
+      },
+      {
+        "title": "Biome Overview Video",
+        "url": "https://www.youtube.com/watch?v=zfzMO3nW_Wo&t=10s",
+        "type": "video"
+      }
+    ]
+  },
   "igg4_hb3XE3vuvY8ufV-4": {
     "title": "Testing",
     "description": "Testing apps involves systematically evaluating software to ensure it meets requirements, functions correctly, and maintains quality. Key testing types include:\n\n1.  Unit testing: Verifying individual components or functions\n2.  Integration testing: Checking interactions between different parts of the app\n3.  Functional testing: Ensuring the app meets specified requirements\n4.  UI/UX testing: Evaluating the user interface and experience\n5.  Performance testing: Assessing app speed, responsiveness, and stability\n6.  Security testing: Identifying vulnerabilities and ensuring data protection\n7.  Accessibility testing: Verifying usability for people with disabilities\n8.  Compatibility testing: Checking functionality across different devices and platforms\n\nModern testing often incorporates automated testing tools and continuous integration/continuous deployment (CI/CD) pipelines. Test-driven development (TDD) and behavior-driven development (BDD) are popular methodologies that emphasize writing tests before or alongside code. Effective testing strategies help identify bugs early, improve code quality, and ensure a reliable user experience.\n\nVisit the following resources to learn more:",

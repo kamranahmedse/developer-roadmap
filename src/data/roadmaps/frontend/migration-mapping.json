@@ -49,6 +49,7 @@
   "build-tools:linters-formatters": "9VcGfDBBD8YcKatj4VcH1",
   "build-tools:linters-formatters:prettier": "zbkpu_gvQ4mgCiZKzS1xv",
   "build-tools:linters-formatters:eslint": "NFjsI712_qP0IOmjuqXar",
+  "build-tools:linters-formatters:biome": "L2RjXtG3f9HkF8Q3NzJ0z",
   "build-tools:module-bundlers:vite": "0Awx3zEI5_gYEIrD7IVX6",
   "build-tools:module-bundlers:esbuild": "4W7UXfdKIUsm1bUrjdTVT",
   "build-tools:module-bundlers:webpack": "twufEtHgxcRUWAUQ9bXus",
