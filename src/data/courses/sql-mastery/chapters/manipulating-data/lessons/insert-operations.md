@@ -5,7 +5,7 @@ order: 100
 type: lesson-challenge
 ---
 
-In our previous chapter, we learned all about Data Definition Language (DDL) i.e. how to create, modify and delete tables. This chapter is all about Data Manipulation Language (DML) i.e. doing the same but for data i.e. inserting, updating and deleting data.
+In our previous chapter, we learned all about selecting existing data from a table. This chapter is all about Data Manipulation Language (DML), which includes inserting, updating, and deleting data. We will learn about creating tables in the next chapter. For now, let's work with the existing tables that I have created for you.
 
 In this lesson, we will learn how to insert data into a table.
 

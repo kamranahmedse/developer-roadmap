@@ -86,7 +86,7 @@ DELETE FROM books;
 
 ### DELETE vs TRUNCATE
 
-In the previous chapter, we learned about `TRUNCATE` to remove all the rows from a table. You can use `DELETE` to achieve the same result i.e. both of the following will achieve the same result:
+In the next chapter, we will learn about `TRUNCATE` to remove all the rows from a table. You can use `DELETE` to achieve the same result i.e. both of the following will achieve the same result:
 
 ```sql
 DELETE FROM books;
