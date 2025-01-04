@@ -4,4 +4,4 @@ Rust is a modern system programming language focused on performance, safety, and
 
 - [@official@Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 - [@official@Official Website](https://www.rust-lang.org/)
-- [@official@Rust Book](https://edu.anarcho-copy.org/Programming%20Languages/Rust/rust-programming-language-steve-klabnik.pdf)
+- [@opensource@Rust Book](https://edu.anarcho-copy.org/Programming%20Languages/Rust/rust-programming-language-steve-klabnik.pdf)
