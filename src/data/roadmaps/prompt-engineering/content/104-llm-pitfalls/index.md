@@ -34,7 +34,7 @@ LLMs present several risks in the domain of question answering.
 - Harmful answers
 - Lack of contextual understanding
 - Privacy and security concerns
-- Lack of transparency and xxplainability
+- Lack of transparency and explainability
 
 ### Text summarization
 
