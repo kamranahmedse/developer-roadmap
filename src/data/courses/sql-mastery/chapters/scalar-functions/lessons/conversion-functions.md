@@ -121,6 +121,6 @@ SELECT
     CAST('0' AS BOOLEAN);        -- Returns: false
 ```
 
-> **Note**: While `CAST` is standard SQL, some databases offer alternative syntax. For example, PostgreSQL supports the `::` operator (`'123'::integer`), and SQL Server supports the `CONVERT` function. The handling of invalid conversions also varies between databases. Always check your database's documentation for specific behavior and best practices.
+> **Note**: While `CAST` is standard SQL, some databases offer alternative syntax. For example, PostgreSQL supports the `::` operator `'123'::integer`, and SQL Server supports the `CONVERT` function. The handling of invalid conversions also varies between databases. Always check your database's documentation for specific behavior and best practices.
 
 In the next lesson, we'll explore logical functions for handling conditional operations.
