@@ -177,50 +177,48 @@ WHERE id NOT IN (
 
 The `EXISTS` operator is another powerful way to use row subqueries. It checks whether the subquery returns any rows.
 
-For example, to find the books that have sold more than 2 copies in a single sale, we can use the `EXISTS` operator as follows:
+For example, to find books from the Programming category that cost more than $40:
 
 ```sql
 SELECT title
-FROM book b
+FROM book
 WHERE EXISTS (
     SELECT 1
-    FROM sale s
-    WHERE s.book_id = b.id
-    AND s.quantity > 2
+    FROM book
+    WHERE category = 'Programming'
+    AND price > 40
 );
 ```
 
-The query above will only return the books for which the subquery returns at least one row. The opposite of `EXISTS` is `NOT EXISTS` which returns the books for which the subquery returns no rows.
+The query above will return books where the subquery condition is met. The opposite of `EXISTS` is `NOT EXISTS` which returns results when the subquery returns no rows.
 
 #### Multiple Column Subqueries
 
 It is possible to return multiple columns from a subquery.
 
-Here is an example where we find the book with the highest price in the `Programming` category:
+Here is an example where we find books that match the price and category of any Data Analysis books:
 
 ```sql
-SELECT title, price
+SELECT title, price, category
 FROM book
-WHERE (price, category) = (
-    SELECT MAX(price), category
+WHERE (price, category) IN (
+    SELECT price, category
     FROM book
-    WHERE category = 'Programming'
-    GROUP BY category
+    WHERE category = 'Data Analysis'
 );
 ```
 
 ### Table Subqueries
 
-Table subqueries return a table as the result. They are often used in the `FROM` clause. Here is an example where we find the total quantity of books sold for each book:
+Table subqueries return a table as the result. They are often used in the `FROM` clause. Here is an example where we find the average price by category:
 
 ```sql
-SELECT b.title, s.quantity
-FROM book b
-INNER JOIN (
-    SELECT book_id, SUM(quantity) as quantity
-    FROM sale
-    GROUP BY book_id
-) s ON b.id = s.book_id;
+SELECT category, avg_price
+FROM (
+    SELECT category, AVG(price) as avg_price
+    FROM book
+    GROUP BY category
+) category_stats;
 ```
 
 Another common use case for table subqueries is DML operations. For example, you can use a table subquery to insert data into a table.
@@ -288,12 +286,12 @@ FROM book;
 
 ## When to Use Subqueries
 
-Subqueries are particularly useful when you may need to:
+Subqueries are particularly useful when you need to:
 
 - Perform calculations and use the result in the main query
 - Compare values against aggregated results
-- Check for existence of related records
-- Transform data before joining it
+- Filter data based on results from another query
+- Transform data before using it in the main query
 
 We will look at some more examples of subqueries in the later lessons so you can get a better feel for when to use them.
 
@@ -303,4 +301,4 @@ However, sometimes you can achieve the same result using JOINs. The choice betwe
 - **Performance**: JOINs are often more efficient
 - **Functionality**: Some operations can only be done with subqueries
 
-In the next lesson, we'll look at correlated subqueries, which are subqueries that reference columns from the outer query.
+In the next lesson, we'll look at correlated subqueries, which are a special type of subquery that references columns from the outer query.
