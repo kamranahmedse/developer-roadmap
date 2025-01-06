@@ -792,6 +792,11 @@
         "title": "Observer Pattern",
         "url": "https://en.wikipedia.org/wiki/Observer_pattern",
         "type": "article"
+      },
+      {
+        "title": "Observer Pattern",
+        "url": "https://refactoring.guru/design-patterns/observer",
+        "type": "article"
       }
     ]
   },
