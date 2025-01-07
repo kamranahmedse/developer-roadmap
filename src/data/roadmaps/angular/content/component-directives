@@ -1,0 +1,38 @@
+### Component Directives in Angular
+
+#### Definition:
+Component directives in Angular are **specialized directives** that define a **component**—the basic building block of an Angular application. A component directive is created using the `@Component` decorator and includes metadata that describes how to render the component and manage its behavior.
+
+#### Purpose:
+- **Encapsulation**: Components encapsulate template (HTML), styles (CSS), and logic (TypeScript), promoting modularity and reusability.
+- **UI Building**: Each component corresponds to a piece of the user interface.
+- **Hierarchy**: Components form a tree structure, allowing you to create complex UIs by nesting components.
+
+#### Key Features:
+1. **Selector**: Defines how to use the component in the template (like a custom HTML tag, attribute, or class).
+2. **Template/TemplateUrl**: Specifies the HTML structure for the component.
+3. **Styles/StyleUrls**: Provides styling specific to the component.
+4. **Lifecycle Hooks**: Allows components to respond to events during their lifecycle (e.g., initialization, destruction).
+5. **Inputs and Outputs**: Facilitates communication between parent and child components.
+
+---
+
+### Links to Component Directives
+
+1. **Official Angular Documentation: Components**  
+   - [Angular Components Overview](https://angular.io/guide/architecture-components)  
+   - Description of how to create and use components in Angular.
+
+2. **Component API Reference**  
+   - [Angular Component Decorator API](https://angular.io/api/core/Component)  
+   - Detailed API documentation for the `@Component` decorator.
+
+3. **Guide to Component Interaction**  
+   - [Angular Component Interaction](https://angular.io/guide/inputs-outputs)  
+   - Explains how components communicate with each other using inputs and outputs.
+
+4. **Lifecycle Hooks**  
+   - [Angular Lifecycle Hooks](https://angular.io/guide/lifecycle-hooks)  
+   - Documentation on the lifecycle hooks available for components.
+
+---
