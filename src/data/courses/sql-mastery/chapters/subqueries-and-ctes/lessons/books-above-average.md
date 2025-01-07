@@ -73,14 +73,3 @@ WHERE price > (
 )
 ORDER BY price DESC;
 ```
-
-This challenge requires you to:
-1. Calculate the average price using a subquery
-2. Compare each book's price to this average
-3. Show how much each book is above the average price
-
-The solution demonstrates the use of subqueries:
-- In the SELECT clause to calculate the difference from average
-- In the WHERE clause to filter for above-average prices
-
----

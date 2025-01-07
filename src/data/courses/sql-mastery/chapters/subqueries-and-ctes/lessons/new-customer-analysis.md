@@ -98,8 +98,6 @@ Write a query using CTEs that shows the top 3 selling books and how many new cus
 | Advanced SQL | 3          | 2                  |
 | Data Science | 3          | 1                  |
 
-> **Note:** Only the top 3 selling books are shown, ordered by total quantity sold.
-
 ## Solution
 
 ```sql
