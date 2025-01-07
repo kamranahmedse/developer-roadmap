@@ -34,20 +34,20 @@ setup: |
       (5, 'Statistics 101', 24.99, 'Data Analysis');
 
   INSERT INTO sale (id, book_id, sale_date, quantity, customer_id) VALUES
-      (1, 1, '2024-01-15', 2, 1),
-      (2, 1, '2024-01-16', 1, 2),
-      (3, 2, '2024-01-15', 3, 1),
-      (4, 3, '2024-01-17', 1, 3),
-      (5, 4, '2024-01-18', 2, 4),
-      (6, 1, '2024-01-19', 1, 3),
-      (7, 2, '2024-01-20', 2, 4),
-      (8, 3, '2024-01-21', 1, 3);
+      (1, 1, '2025-01-15', 2, 1),
+      (2, 1, '2025-01-16', 1, 2),
+      (3, 2, '2025-01-15', 3, 1),
+      (4, 3, '2025-01-17', 1, 3),
+      (5, 4, '2025-01-18', 2, 4),
+      (6, 1, '2025-01-19', 1, 3),
+      (7, 2, '2025-01-20', 2, 4),
+      (8, 3, '2025-01-21', 1, 3);
 
   INSERT INTO customer (id, name, joined_date) VALUES
-      (1, 'John Smith', '2023-12-01'),
-      (2, 'Jane Doe', '2023-12-15'),
-      (3, 'Bob Wilson', '2024-01-01'),
-      (4, 'Alice Brown', '2024-01-10');
+      (1, 'John Smith', '2024-12-01'),
+      (2, 'Jane Doe', '2024-12-15'),
+      (3, 'Bob Wilson', '2025-01-01'),
+      (4, 'Alice Brown', '2025-01-10');
   ```
 ---
 
@@ -69,7 +69,7 @@ SELECT * FROM cte_name;
 
 Let's look at some simple examples to get the idea.
 
-### Example 1: Find all engineering books
+### Example: Find all engineering books
 
 Query below is a simple CTE to find all the engineering books:
 
@@ -82,7 +82,7 @@ WITH engineering_books AS (
 SELECT * FROM engineering_books;
 ```
 
-### Example 2: Programming books and their sales
+### Example: Programming books and their sales
 
 Say we want to find all programming books and their total sales:
 
@@ -157,7 +157,9 @@ Now that we have 3 different simpler queries instead of one complex query, it's 
 
 As we saw in the query above, you can define multiple CTEs separated by commas. CTEs can be used in the other CTEs as well.
 
-For example, let's say we want to find the top 3 selling books and the number of new customers (joined date > 2024-01-01) who bought them.
+### Example: Top 3 selling books and new customers
+
+For example, let's say we want to find the top 3 selling books and the number of new customers (joined date > 2025-01-01) who bought them.
 
 ```sql
 -- CTE 1: Find the top 3 selling books
@@ -170,11 +172,11 @@ WITH top_selling_books AS (
     ORDER BY SUM(quantity) DESC
     LIMIT 3
 ),
--- CTE 2: Find all customers who joined after 2024-01-01
+-- CTE 2: Find all customers who joined after 2025-01-01
 recent_customers AS (
     SELECT *
     FROM customer
-    WHERE joined_date >= '2024-01-01'
+    WHERE joined_date >= '2025-01-01'
 )
 -- Main query: Find the books and the number of new customers who bought them
 SELECT
@@ -187,6 +189,93 @@ INNER JOIN sale s ON s.book_id = tsb.book_id
 INNER JOIN recent_customers c ON c.id = s.customer_id
 GROUP BY b.title, tsb.total_sold;
 ```
+
+Let's break this query down to understand it better:
+
+> `top_selling_books` CTE finds the top 3 selling books
+
+| book_id | total_sold |
+| ------- | ---------- |
+| 2       | 5          |
+| 1       | 4          |
+| 3       | 2          |
+
+> `recent_customers` CTE finds all customers who joined after 2025-01-01
+
+| id  | name        | joined_date |
+| --- | ----------- | ----------- |
+| 3   | Bob Wilson  | 2025-01-01  |
+| 4   | Alice Brown | 2025-01-10  |
+
+Finally the main query joins the `top_selling_books` with `book` (to get the title) and `sale` (to get the count of sales) and `recent_customers` (to ensure we only get customers who joined after 2025-01-01). The final result is:
+
+| title        | total_sold | new_customer_count |
+| ------------ | ---------- | ------------------ |
+| Advanced SQL | 5          | 1                  |
+| Data Science | 2          | 1                  |
+| SQL Basics   | 4          | 1                  |
+
+### Example: Customer Spending Analysis
+
+Let's say we want to analyze customers who have made multiple purchases and calculate their average spending:
+
+```sql
+-- CTE 1: Calculate purchase metrics for each customer
+WITH customer_purchases AS (
+    SELECT
+        c.id,
+        c.name,
+        COUNT(DISTINCT s.id) as purchases,
+        SUM(b.price * s.quantity) as total_spent
+    FROM customer c
+    JOIN sale s ON s.customer_id = c.id
+    JOIN book b ON b.id = s.book_id
+    GROUP BY c.id, c.name
+    HAVING COUNT(DISTINCT s.id) > 1
+),
+-- CTE 2: Calculate overall spending metrics
+spending_metrics AS (
+    SELECT
+        AVG(total_spent) as avg_customer_spend,
+        MAX(total_spent) as max_customer_spend
+    FROM customer_purchases
+)
+-- Main query: Combine and categorize customer spending
+SELECT
+    cp.*,
+    ROUND(cp.total_spent / cp.purchases, 2) as avg_per_purchase,
+    CASE
+        WHEN cp.total_spent > sm.avg_customer_spend THEN 'Above Average'
+        ELSE 'Below Average'
+    END as spending_category
+FROM customer_purchases cp
+CROSS JOIN spending_metrics sm
+ORDER BY cp.total_spent DESC;
+```
+
+Let's break down the query:
+
+> `customer_purchases` CTE calculates metrics for each customer
+
+| id  | name        | purchases | total_spent |
+| --- | ----------- | --------- | ----------- |
+| 1   | John Smith  | 2         | 209.95      |
+| 3   | Bob Wilson  | 3         | 109.97      |
+| 4   | Alice Brown | 2         | 169.96      |
+
+> `spending_metrics` CTE calculates overall spending metrics
+
+| avg_customer_spend | max_customer_spend |
+| ------------------ | ------------------ |
+| 163.29             | 209.95             |
+
+Finally we have cross join in the main query to join each purchase to each row in the `spending_metrics` so that we can compare each customer to the overall spending metrics.
+
+| id  | name        | purchases | total_spent | avg_per_purchase | spending_category |
+| --- | ----------- | --------- | ----------- | ---------------- | ----------------- |
+| 1   | John Smith  | 2         | 209.95      | 104.98           | Above Average     |
+| 3   | Bob Wilson  | 3         | 109.97      | 36.66            | Below Average     |
+| 4   | Alice Brown | 2         | 169.96      | 84.98            | Below Average     |
 
 ## Best Practices
 
