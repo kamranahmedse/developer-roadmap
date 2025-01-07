@@ -1852,8 +1852,18 @@
   },
   "vjMqqFsTxSjaiYxmliwLi": {
     "title": "Endianess",
-    "description": "Endianess is the order in which bytes are stored in memory. The two most common types of endianess are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
+    "description": "Endianness is the order in which bytes are stored in memory. The two most common types of endianness are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Endianness",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Endianness",
+        "type": "article"
+      },
+      {
+        "title": "Big-Endian vs Little-Endian Explained with Examples",
+        "url": "https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/",
+        "type": "article"
+      },
       {
         "title": "Big Endian vs Little Endian.mp4",
         "url": "https://www.youtube.com/watch?v=JrNF0KRAlyo",
