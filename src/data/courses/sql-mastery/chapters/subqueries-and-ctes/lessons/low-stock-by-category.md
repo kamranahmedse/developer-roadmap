@@ -75,18 +75,5 @@ WHERE b1.stock < (
     SELECT AVG(stock)
     FROM book b2
     WHERE b2.category = b1.category
-)
-ORDER BY b1.category, b1.stock;
+);
 ```
-
-This challenge requires you to:
-1. Use a correlated subquery to calculate the average stock for each category
-2. Compare each book's stock to its category average
-3. Show only books with below-average stock
-
-The solution demonstrates:
-- Using correlated subqueries in both SELECT and WHERE clauses
-- Comparing individual values against group averages
-- Working with a single table
-
----

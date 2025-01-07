@@ -90,6 +90,8 @@ Write a query using CTEs that shows the top 3 selling books and how many new cus
 - Total quantity sold
 - Number of new customers who bought the book
 
+Order by total quantity sold in descending order.
+
 ## Expected Output
 
 | title        | total_sold | new_customer_count |

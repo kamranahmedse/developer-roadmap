@@ -67,6 +67,5 @@ WHERE b1.published_date = (
     SELECT MAX(published_date)
     FROM book b2
     WHERE b2.category = b1.category
-)
-ORDER BY b1.category;
+);
 ``` 

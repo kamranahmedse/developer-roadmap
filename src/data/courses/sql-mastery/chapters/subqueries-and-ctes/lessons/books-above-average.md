@@ -43,7 +43,7 @@ Write a query that shows:
 - Price
 - How much the price is above the average (rounded to 2 decimal places)
 
-Only include books that are priced above the average book price.
+Only include books that are priced above the average book price and order by price in descending order.
 
 ## Expected Output
 
