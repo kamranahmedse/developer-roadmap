@@ -111,6 +111,7 @@ Here are some of the benefits you get when using CTEs:
 - **Improved Readability**: By breaking down complex queries into named parts, the code becomes easier to understand.
 - **Code Reusability**: You can reference the same CTE multiple times in your main query.
 - **Better Maintenance**: When you need to modify the logic, you only need to change it in one place.
+- **Ease of Testing**: You can test each CTE independently.
 
 Let's look at a more complex example that demonstrates these benefits. This query calculates monthly sales statistics for books.
 
