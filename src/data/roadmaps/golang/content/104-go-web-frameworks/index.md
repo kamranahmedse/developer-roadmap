@@ -6,6 +6,7 @@ There are several famous web frameworks for Go. Most common ones being:
 - Gin
 - Revel
 - Echo
+- GoFiber
 
 Visit the following resources to learn more:
 
