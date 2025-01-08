@@ -3987,7 +3987,7 @@
       },
       "selected": false,
       "data": {
-        "label": "The design patterns given in this section are of varying importance. You don't need to master all of them. Simply get an overview of each and this will give you some insight into designing scalabe systems.",
+        "label": "The design patterns given in this section are of varying importance. You don't need to master all of them. Simply get an overview of each and this will give you some insight into designing scalable systems.",
         "style": {
           "fontSize": 17,
           "borderColor": "#000000",
