@@ -5,14 +5,14 @@ order: 130
 type: lesson-challenge
 setup: |
   ```sql
-  CREATE TABLE daily_sales (
+  CREATE TABLE sale (
     id SERIAL PRIMARY KEY,
     sale_date DATE,
     book_title VARCHAR(100),
     revenue DECIMAL(10, 2)
   );
 
-  INSERT INTO daily_sales (sale_date, book_title, revenue) 
+  INSERT INTO sale (sale_date, book_title, revenue) 
   VALUES 
     ('2024-01-15', 'The Great Gatsby', 249.90),
     ('2024-01-15', 'SQL Basics', 399.90),
@@ -66,7 +66,7 @@ SELECT
             UNBOUNDED PRECEDING AND
             CURRENT ROW
     ) as running_total
-FROM daily_sales
+FROM sale
 ORDER BY sale_date;
 ```
 
@@ -107,7 +107,7 @@ SELECT
             2 PRECEDING AND
             CURRENT ROW
     ), 2) as moving_avg
-FROM daily_sales
+FROM sale
 ORDER BY sale_date;
 ```
 
@@ -172,7 +172,7 @@ SELECT
             CURRENT ROW AND
             1 FOLLOWING
     ) as next_day_total
-FROM daily_sales
+FROM sale
 ORDER BY sale_date;
 
 -- Using RANGE
@@ -187,7 +187,7 @@ SELECT
             CURRENT ROW AND
             INTERVAL '1 day' FOLLOWING
     ) as next_day_total
-FROM daily_sales
+FROM sale
 ORDER BY sale_date;
 ```
 
@@ -260,6 +260,77 @@ Given the data, the calculation is done as follows:
 
 Notice how `RANGE` includes all rows within the next day, while `ROWS` only included the next single row. This is why the totals are higher with `RANGE` - it's summing all sales that occurred on the current and next day.
 
+## NTH_VALUE()
+
+While we are talking about window frames, let's also look at another window function that is useful when working with ordered data.
+
+The `NTH_VALUE()` function lets you find the Nth value in an ordered set of values. This is particularly useful when you want to find, for example, the second most expensive book, third cheapest book, etc.
+
+Let's look at some examples:
+
+### Example: Second Most Expensive Sale
+
+To find the second most expensive sale:
+
+```sql
+SELECT
+    book_title,
+    revenue,
+    NTH_VALUE(book_title, 2) OVER(
+        ORDER BY revenue DESC
+        ROWS BETWEEN
+            UNBOUNDED PRECEDING AND
+            UNBOUNDED FOLLOWING
+    ) as second_most_expensive
+FROM sale;
+```
+
+The output will be:
+
+| book_title          | revenue | second_most_expensive |
+| ------------------- | ------- | --------------------- |
+| Data Science        | 499.90  | Data Science          |
+| Data Science        | 499.90  | Data Science          |
+| Python Programming  | 449.90  | Data Science          |
+| SQL Basics          | 399.90  | Data Science          |
+| SQL Basics          | 399.90  | Data Science          |
+| Web Development     | 349.90  | Data Science          |
+| The Hobbit          | 299.90  | Data Science          |
+| The Great Gatsby    | 249.90  | Data Science          |
+| 1984                | 199.90  | Data Science          |
+| Pride and Prejudice | 149.90  | Data Science          |
+
+### Example: Second Cheapest Sale
+
+We can combine `NTH_VALUE()` with `PARTITION BY` to find the second cheapest sale in each category:
+
+```sql
+SELECT
+    book_title,
+    revenue,
+    NTH_VALUE(book_title, 2) OVER (
+        ORDER BY revenue ASC
+        ROWS BETWEEN
+            UNBOUNDED PRECEDING AND
+            UNBOUNDED FOLLOWING
+    ) AS second_cheapest
+FROM sale;
+```
+
+The output will show:
+
+| book_title          | revenue | second_cheapest |
+| ------------------- | ------- | --------------- |
+| Pride and Prejudice | 149.90  | 1984            |
+| 1984                | 199.90  | 1984            |
+| The Great Gatsby    | 249.90  | 1984            |
+| The Hobbit          | 299.90  | 1984            |
+| Web Development     | 349.90  | 1984            |
+| SQL Basics          | 399.90  | 1984            |
+| Python Programming  | 449.90  | 1984            |
+| Data Science        | 499.90  | 1984            |
+| Data Science        | 499.90  | 1984            |
+
 ## Practical Use Cases
 
 Here are some common scenarios where window frames are particularly useful:
@@ -272,4 +343,4 @@ Here are some common scenarios where window frames are particularly useful:
 
 - **Sliding Window Calculations**: Useful when you need to look at a fixed number of rows before and after each row. For example, finding unusual values by comparing each row with its neighbors or calculating percentage changes between consecutive periods
 
-In the next lesson, we'll explore more advanced window function techniques and their real-world applications.
+And with that, our lesson on window frames is complete. Let's solve some challenges to solidify your understanding.
