@@ -29,272 +29,215 @@ setup: |
   ```
 ---
 
-In our previous lessons, we learned about the `OVER` clause and `PARTITION BY`. Now, let's explore ranking functions, which are special window functions that assign ranks to rows based on specified ordering.
+In our previous lessons, we learned about the `OVER` clause, `PARTITION BY`, and `ORDER BY`. Now, let's explore ranking functions, which are special window functions that assign ranks to rows based on specified ordering.
 
-The three main ranking functions are `ROW_NUMBER()`, `RANK()`, and &nbsp;`DENSE_RANK()`. Let's explore each one using our bookstore data.
+SQL provides three main ranking functions:
+
+| Function     | Description                         |
+| ------------ | ----------------------------------- |
+| ROW_NUMBER() | Assigns unique sequential numbers   |
+| RANK()       | Assigns ranks with gaps for ties    |
+| DENSE_RANK() | Assigns ranks without gaps for ties |
+
+Let's explore each one in detail using our bookstore data.
 
 ## ROW_NUMBER()
 
-`ROW_NUMBER()` assigns a unique sequential number to each row within a partition. Let's look at a simple query without any `PARTITION BY` to see how it works:
+`ROW_NUMBER()` assigns a unique sequential number to each row within a partition. This is useful for pagination, finding the first/last occurrence of something, or getting unique sequential numbers.
+
+Let's look at a simple example ranking books by revenue:
 
 ```sql
 SELECT
     book_title,
-    category,
-    revenue,
-    ROW_NUMBER() OVER() as row_number
-FROM sale
-ORDER BY row_number;
-```
-
-This produces the following result:
-
-| book_title          | category  | revenue | row_number |
-| ------------------- | --------- | ------- | ---------- |
-| The Great Gatsby    | Fiction   | 1249.50 | 1          |
-| The Great Gatsby    | Fiction   | 1249.50 | 2          |
-| Web Development     | Technical | 2624.25 | 3          |
-| SQL Basics          | Technical | 3999.00 | 4          |
-| Data Science        | Technical | 4999.00 | 5          |
-| Pride and Prejudice | Fiction   | 449.70  | 6          |
-| The Hobbit          | Fiction   | 1499.50 | 7          |
-| Python Programming  | Technical | 3374.25 | 8          |
-| SQL Basics          | Technical | 3999.00 | 9          |
-| 1984                | Fiction   | 999.50  | 10         |
-
-Notice how `row_number` starts at 1 and increments by 1 for each row. Let's add a `PARTITION BY` clause to see how it works within a partition.
-
-### Ranking within a Partition
-
-Let's use `PARTITION BY` to assign sequential numbers to each book sold on a given date. We will use the `sale_date` column to partition the data. Our query will look like this:
-
-```sql
-SELECT
-    book_title,
-    category,
-    sale_date,
-    ROW_NUMBER() OVER(PARTITION BY sale_date) as order_counter
-FROM sale;
-```
-
-This produces the following result:
-
-| book_title          | category  | sale_date  | order_counter |
-| ------------------- | --------- | ---------- | ------------- |
-| The Great Gatsby    | Fiction   | 2024-01-15 | 1             |
-| SQL Basics          | Technical | 2024-01-15 | 2             |
-| 1984                | Fiction   | 2024-01-15 | 3             |
-| Python Programming  | Technical | 2024-01-16 | 1             |
-| Pride and Prejudice | Fiction   | 2024-01-16 | 2             |
-| Data Science        | Technical | 2024-01-16 | 3             |
-| Web Development     | Technical | 2024-01-17 | 1             |
-| The Hobbit          | Fiction   | 2024-01-17 | 2             |
-| SQL Basics          | Technical | 2024-01-17 | 3             |
-| The Great Gatsby    | Fiction   | 2024-01-17 | 4             |
-
-Notice how `order_counter` restarts at 1 for each `sale_date`.
-
-### Ranking and Ordering
-
-We can also use `ORDER BY` inside the `ROW_NUMBER()` function to order the rows before assigning numbers. Let's rank the books by their revenue:
-
-```sql
-SELECT
-    book_title,
-    category,
     revenue,
     ROW_NUMBER() OVER(ORDER BY revenue DESC) as revenue_rank
-FROM sale;
+FROM sale
+ORDER BY revenue_rank;
 ```
 
-The output from this query will be:
+We will get the following results:
 
-| book_title          | category  | revenue | revenue_rank |
-| ------------------- | --------- | ------- | ------------ |
-| Data Science        | Technical | 4999.00 | 1            |
-| SQL Basics          | Technical | 3999.00 | 2            |
-| SQL Basics          | Technical | 3999.00 | 3            |
-| Python Programming  | Technical | 3374.25 | 4            |
-| Web Development     | Technical | 2624.25 | 5            |
-| The Hobbit          | Fiction   | 1499.50 | 6            |
-| The Great Gatsby    | Fiction   | 1249.50 | 7            |
-| The Great Gatsby    | Fiction   | 1249.50 | 8            |
-| 1984                | Fiction   | 999.50  | 9            |
-| Pride and Prejudice | Fiction   | 449.70  | 10           |
+| book_title          | revenue | revenue_rank |
+| ------------------- | ------- | ------------ |
+| Data Science        | 4999.00 | 1            |
+| SQL Basics          | 3999.00 | 2            |
+| SQL Basics          | 3999.00 | 3            |
+| Python Programming  | 3374.25 | 4            |
+| Web Development     | 2624.25 | 5            |
+| The Hobbit          | 1499.50 | 6            |
+| The Great Gatsby    | 1249.50 | 7            |
+| The Great Gatsby    | 1249.50 | 8            |
+| 1984                | 999.50  | 9            |
+| Pride and Prejudice | 449.70  | 10           |
 
-Notice how it sorted the rows by revenue and assigned ranks.
+Looking at the results, we can see:
 
-#### Ranking, Partitioning, and Ordering
+- Books are ordered by revenue (highest to lowest)
+- Each row gets a unique number
+- Even though some books have the same revenue (like SQL Basics), they get different numbers (2 and 3)
 
-We can also combine `PARTITION BY` and `ORDER BY` to rank within partitions and order the rows before assigning numbers. Let's rank the books by their revenue for each date:
+### ROW_NUMBER() with PARTITION BY
+
+We can combine `ROW_NUMBER()` with `PARTITION BY` to number rows within categories:
 
 ```sql
 SELECT
+    category,
     book_title,
-    sale_date,
     revenue,
     ROW_NUMBER() OVER(
-        PARTITION BY sale_date
+        PARTITION BY category
         ORDER BY revenue DESC
-    ) as revenue_rank
-FROM sale;
+    ) as category_rank
+FROM sale
+ORDER BY category, category_rank;
 ```
 
-The output from this query will be:
+This gives us the following results:
 
-| book_title          | sale_date  | revenue | revenue_rank |
-| ------------------- | ---------- | ------- | ------------ |
-| SQL Basics          | 2024-01-15 | 3999.00 | 1            |
-| The Great Gatsby    | 2024-01-15 | 1249.50 | 2            |
-| 1984                | 2024-01-15 | 999.50  | 3            |
-| Data Science        | 2024-01-16 | 4999.00 | 1            |
-| Python Programming  | 2024-01-16 | 3374.25 | 2            |
-| Pride and Prejudice | 2024-01-16 | 449.70  | 3            |
-| SQL Basics          | 2024-01-17 | 3999.00 | 1            |
-| Web Development     | 2024-01-17 | 2624.25 | 2            |
-| The Hobbit          | 2024-01-17 | 1499.50 | 3            |
-| The Great Gatsby    | 2024-01-17 | 1249.50 | 4            |
+| category  | book_title          | revenue | category_rank |
+| --------- | ------------------- | ------- | ------------- |
+| Fiction   | The Hobbit          | 1499.50 | 1             |
+| Fiction   | The Great Gatsby    | 1249.50 | 2             |
+| Fiction   | The Great Gatsby    | 1249.50 | 3             |
+| Fiction   | 1984                | 999.50  | 4             |
+| Fiction   | Pride and Prejudice | 449.70  | 5             |
+| Technical | Data Science        | 4999.00 | 1             |
+| Technical | SQL Basics          | 3999.00 | 2             |
+| Technical | SQL Basics          | 3999.00 | 3             |
+| Technical | Python Programming  | 3374.25 | 4             |
+| Technical | Web Development     | 2624.25 | 5             |
 
-Notice how the `revenue_rank` restarts at 1 for each `sale_date` and also higher the revenue in the same day, higher the rank. We can also apply sorting on the final result.
+Looking at the results, we can see:
 
-```sql
-SELECT
-    book_title,
-    sale_date,
-    revenue,
-    ROW_NUMBER() OVER(
-        PARTITION BY sale_date
-        ORDER BY revenue DESC
-    ) as revenue_rank
-FROM
-    sale
-ORDER BY
-    sale_date ASC,
-    revenue_rank DESC;
-```
-
-The output will now be sorted by `sale_date` and `revenue_rank`.
-
-|          book_title | sale_date  | revenue | revenue_rank |
-| ------------------: | :--------- | :------ | :----------- |
-|                1984 | 2024-01-15 | 999.50  | 3            |
-|    The Great Gatsby | 2024-01-15 | 1249.50 | 2            |
-|          SQL Basics | 2024-01-15 | 3999.00 | 1            |
-| Pride and Prejudice | 2024-01-16 | 449.70  | 3            |
-|  Python Programming | 2024-01-16 | 3374.25 | 2            |
-|        Data Science | 2024-01-16 | 4999.00 | 1            |
-|    The Great Gatsby | 2024-01-17 | 1249.50 | 4            |
-|          The Hobbit | 2024-01-17 | 1499.50 | 3            |
-|     Web Development | 2024-01-17 | 2624.25 | 2            |
-|          SQL Basics | 2024-01-17 | 3999.00 | 1            |
+- Numbering restarts at 1 for each category
+- Within each category, books are ordered by revenue
+- Each book gets a unique number within its category
 
 ## RANK()
 
-`RANK()` is similar to `ROW_NUMBER()`, but it handles ties (i.e. two or more rows with the same value) differently. When values are equal, they get the same rank, and the next rank skips numbers to account for the tie.
+`RANK()` is similar to `ROW_NUMBER()`, but handles ties differently. When values are equal, they get the same rank, and the next rank skips numbers to account for the tie.
 
 Let's rank books by copies sold:
 
 ```sql
 SELECT
     book_title,
-    category,
     copies_sold,
     RANK() OVER(ORDER BY copies_sold DESC) as sales_rank
 FROM sale
 ORDER BY sales_rank;
 ```
 
-This produces the following result:
+This produces the following results:
 
-| book_title          | category  | copies_sold | sales_rank |
-| :------------------ | :-------- | ----------: | ---------: |
-| SQL Basics          | Technical |         100 |          1 |
-| SQL Basics          | Technical |         100 |          1 |
-| Data Science        | Technical |         100 |          1 |
-| Web Development     | Technical |          75 |          4 |
-| Python Programming  | Technical |          75 |          4 |
-| The Great Gatsby    | Fiction   |          50 |          6 |
-| The Great Gatsby    | Fiction   |          50 |          6 |
-| The Hobbit          | Fiction   |          50 |          6 |
-| 1984                | Fiction   |          50 |          6 |
-| Pride and Prejudice | Fiction   |          30 |         10 |
+| book_title          | copies_sold | sales_rank |
+| ------------------- | ----------- | ---------- |
+| SQL Basics          | 100         | 1          |
+| SQL Basics          | 100         | 1          |
+| Data Science        | 100         | 1          |
+| Web Development     | 75          | 4          |
+| Python Programming  | 75          | 4          |
+| The Great Gatsby    | 50          | 6          |
+| The Great Gatsby    | 50          | 6          |
+| The Hobbit          | 50          | 6          |
+| 1984                | 50          | 6          |
+| Pride and Prejudice | 30          | 10         |
 
-Notice how:
+If you look at the `sales_rank` column, you can see:
 
-- Books with `100` copies all get rank `1`
-- The next rank is `4` (skipping `2` and `3`)
-- Books with `50` copies all get rank `6`
-- The last book gets rank `10`
+- Books with 100 copies all get rank 1
+- The next rank is 4 (skipping 2 and 3) because of the two books `SQL Basics` and `Data Science` both having 100 copies
+- Books with 75 copies both get rank 4
+- The next rank is 6 (skipping 5)
+- Books with 50 copies all get rank 6
+- The last book gets rank 10
 
 ## DENSE_RANK()
 
-`DENSE_RANK()` is like `RANK()` but doesn't skip numbers for ties. It's like `RANK()` but without the gaps.
+`DENSE_RANK()` is like `RANK()`, but it doesn't skip numbers for ties. It's "dense" because there are no gaps in the ranking numbers.
 
 Let's see the same data with `DENSE_RANK()`:
 
 ```sql
 SELECT
     book_title,
-    category,
     copies_sold,
     DENSE_RANK() OVER(ORDER BY copies_sold DESC) as dense_rank
 FROM sale
 ORDER BY dense_rank;
 ```
 
-Now we get:
+This gives us the following results:
 
-| book_title          | category  | copies_sold | sales_rank |
-| :------------------ | :-------- | ----------: | ---------: |
-| SQL Basics          | Technical |         100 |          1 |
-| SQL Basics          | Technical |         100 |          1 |
-| Data Science        | Technical |         100 |          1 |
-| Web Development     | Technical |          75 |          2 |
-| Python Programming  | Technical |          75 |          2 |
-| The Great Gatsby    | Fiction   |          50 |          3 |
-| The Great Gatsby    | Fiction   |          50 |          3 |
-| The Hobbit          | Fiction   |          50 |          3 |
-| 1984                | Fiction   |          50 |          3 |
-| Pride and Prejudice | Fiction   |          30 |          4 |
+| book_title          | copies_sold | dense_rank |
+| ------------------- | ----------- | ---------- |
+| SQL Basics          | 100         | 1          |
+| SQL Basics          | 100         | 1          |
+| Data Science        | 100         | 1          |
+| Web Development     | 75          | 2          |
+| Python Programming  | 75          | 2          |
+| The Great Gatsby    | 50          | 3          |
+| The Great Gatsby    | 50          | 3          |
+| The Hobbit          | 50          | 3          |
+| 1984                | 50          | 3          |
+| Pride and Prejudice | 30          | 4          |
 
-Notice how:
+Looking at the results, we can see:
 
-- Books with `100` copies still get rank `1`
-- Books with `75` copies get rank `2` (no skipping)
-- Books with `50` copies get rank `3`
-- The last book gets rank `4`
+- Books with 100 copies still get rank 1
+- Books with 75 copies get rank 2 (no skipping)
+- Books with 50 copies get rank 3
+- The last book gets rank 4
 
-## Combining Ranking Functions
+## Comparing All Three Functions
 
-We can combine ranking functions with `PARTITION BY` to rank within groups:
+Let's see all three ranking functions side by side:
 
 ```sql
 SELECT
-    category,
     book_title,
-    revenue,
-    ROW_NUMBER() OVER(PARTITION BY category ORDER BY revenue DESC) as category_rank,
-    RANK() OVER(ORDER BY revenue DESC) as overall_rank
-FROM sale
-ORDER BY category, category_rank;
+    copies_sold,
+    ROW_NUMBER() OVER(ORDER BY copies_sold DESC) as row_num,
+    RANK() OVER(ORDER BY copies_sold DESC) as rank,
+    DENSE_RANK() OVER(ORDER BY copies_sold DESC) as dense_rank
+FROM
+    sale
+ORDER BY
+    copies_sold DESC,
+    book_title;
 ```
 
-This shows both category-specific and overall rankings:
+This shows us the following results:
 
-| category  | book_title          | revenue | category_rank | overall_rank |
-| --------- | ------------------- | ------- | ------------- | ------------ |
-| Fiction   | The Great Gatsby    | 1249.50 | 1             | 5            |
-| Fiction   | The Great Gatsby    | 1249.50 | 2             | 5            |
-| Fiction   | The Hobbit          | 1499.50 | 3             | 4            |
-| Fiction   | Pride and Prejudice | 449.70  | 4             | 10           |
-| Technical | Data Science        | 4999.00 | 1             | 1            |
-| Technical | SQL Basics          | 3999.00 | 2             | 2            |
-| Technical | SQL Basics          | 3999.00 | 3             | 2            |
-| Technical | Python Programming  | 3374.25 | 4             | 3            |
+| book_title          | copies_sold | row_num | rank | dense_rank |
+| ------------------- | ----------- | ------- | ---- | ---------- |
+| Data Science        | 100         | 1       | 1    | 1          |
+| SQL Basics          | 100         | 2       | 1    | 1          |
+| SQL Basics          | 100         | 3       | 1    | 1          |
+| Python Programming  | 75          | 4       | 4    | 2          |
+| Web Development     | 75          | 5       | 4    | 2          |
+| 1984                | 50          | 6       | 6    | 3          |
+| The Great Gatsby    | 50          | 7       | 6    | 3          |
+| The Great Gatsby    | 50          | 8       | 6    | 3          |
+| The Hobbit          | 50          | 9       | 6    | 3          |
+| Pride and Prejudice | 30          | 10      | 10   | 4          |
 
-Notice how:
+The key differences between the three functions are:
 
-- `category_rank` restarts at 1 for each category
-- `overall_rank` considers all books regardless of category
+- `ROW_NUMBER()` always gives unique numbers (1,2,3,4...)
+- `RANK()` gives same number for ties but skips (1,1,1,4,4,6...)
+- `DENSE_RANK()` gives same number for ties but doesn't skip (1,1,1,2,2,3...)
+
+## Practical Use Cases
+
+Here are some common scenarios where each ranking function is most useful:
+
+- `ROW_NUMBER()` is useful for pagination (getting rows 1-10, 11-20, etc.), finding the first/last occurrence of something, or when you need unique sequential numbers
+
+- `RANK()` is perfect for competition or sports rankings where multiple participants can tie. For example, in a race, if two runners finish in 20.5 seconds, they both get 1st place. The next runner finishing in 20.7 seconds gets 3rd place (not 2nd). This matches how real-world competitions handle ties
+
+- `DENSE_RANK()` is perfect for grading systems or classification tiers. For example, in a class grading system, if three students score 95%, they all get rank 1. If two students score 92%, they get rank 2 (not rank 4). This matches how real-world grading systems handle ties.
 
 In the next lesson, we'll explore window frames and how they affect our calculations.
