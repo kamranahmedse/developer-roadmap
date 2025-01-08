@@ -22,6 +22,20 @@ export type AllowedProfileVisibility =
 export const allowedOnboardingStatus = ['done', 'pending', 'ignored'] as const;
 export type AllowedOnboardingStatus = (typeof allowedOnboardingStatus)[number];
 
+export const allowedSubscriptionStatus = [
+  'active',
+  'canceled',
+  'incomplete',
+  'incomplete_expired',
+  'past_due',
+  'paused',
+  'trialing',
+  'unpaid',
+  'none',
+] as const;
+export type AllowedSubscriptionStatus =
+  (typeof allowedSubscriptionStatus)[number];
+
 export interface UserDocument {
   _id?: string;
   name: string;
@@ -71,6 +85,18 @@ export interface UserDocument {
     addFriends: AllowedOnboardingStatus;
     roadCard: AllowedOnboardingStatus;
     inviteTeam: AllowedOnboardingStatus;
+  };
+
+  customerId: string;
+  subscription?: {
+    id: string;
+    planId: string;
+    priceId: string;
+    interval: string;
+    status: AllowedSubscriptionStatus;
+    currentPeriodStart: Date;
+    currentPeriodEnd: Date;
+    cancelAtPeriodEnd: boolean;
   };
 
   createdAt: string;
