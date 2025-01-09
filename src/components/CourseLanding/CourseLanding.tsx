@@ -181,6 +181,7 @@ export function CourseLanding(props: CourseLandingProps) {
                       isFirst ? 'rounded-t-md' : '',
                       isLast ? 'rounded-b-md' : 'border-b-0',
                     )}
+                    isOpen={isFirst}
                   />
                 );
               })}

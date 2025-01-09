@@ -24,7 +24,7 @@ export function BillingPage() {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showVerifyUpgradeModal, setShowVerifyUpgradeModal] = useState(false);
 
-  const { data: billingDetails, isPending } = useQuery(
+  const { data: billingDetails, isPending: isLoadingBillingDetails } = useQuery(
     billingDetailsOptions(),
     queryClient,
   );
@@ -50,7 +50,7 @@ export function BillingPage() {
     );
 
   useEffect(() => {
-    if (isPending) {
+    if (isLoadingBillingDetails) {
       return;
     }
 
@@ -59,9 +59,9 @@ export function BillingPage() {
     if (shouldVerifyUpgrade) {
       setShowVerifyUpgradeModal(true);
     }
-  }, [isPending]);
+  }, [isLoadingBillingDetails]);
 
-  if (isPending || !billingDetails) {
+  if (isLoadingBillingDetails || !billingDetails) {
     return null;
   }
 
@@ -98,7 +98,7 @@ export function BillingPage() {
 
       {showVerifyUpgradeModal && <VerifyUpgrade />}
 
-      {billingDetails?.status === 'none' && !isPending && (
+      {billingDetails?.status === 'none' && !isLoadingBillingDetails && (
         <div className="flex h-full w-full flex-col">
           <p className="text-gray-800">
             You are using free plan,&nbsp;
@@ -114,12 +114,12 @@ export function BillingPage() {
         </div>
       )}
 
-      {billingDetails?.status !== 'none' && !isPending && (
+      {billingDetails?.status !== 'none' && !isLoadingBillingDetails && (
         <>
           {billingDetails?.status === 'past_due' && (
-            <div className="mb-4 rounded-md border border-red-300 bg-red-50 p-2 text-red-500">
-              Your subscription is past due. Please update your payment
-              information from the Stripe Portal.
+            <div className="mb-4 rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-500">
+              We were not able to charge your card. Please update your payment
+              information.
             </div>
           )}
 

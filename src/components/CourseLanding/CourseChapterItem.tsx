@@ -10,12 +10,13 @@ type CourseChapterItemProps = {
     title: string;
   }[];
   className?: string;
+  isOpen?: boolean;
 };
 
 export function CourseChapterItem(props: CourseChapterItemProps) {
-  const { title, lessons, className } = props;
+  const { title, lessons, className, isOpen: defaultIsOpen = false } = props;
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(defaultIsOpen);
 
   const { excercises, textualLessons } = useMemo(() => {
     const excercises: CourseChapterItemProps['lessons'] = [];
