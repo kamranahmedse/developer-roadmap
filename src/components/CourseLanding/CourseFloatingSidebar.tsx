@@ -9,10 +9,26 @@ import { useEffect, useState } from 'react';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
 import { CheckCircle2Icon, Loader2Icon, LockIcon } from 'lucide-react';
-import { getUrlParams } from '../../lib/browser';
-import { billingDetailsOptions } from '../../queries/billing';
-import { UpgradePlanModal } from './UpgradePlanModal';
+import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import {
+  billingDetailsOptions,
+  coursePriceOptions,
+} from '../../queries/billing';
 import { UpgradeAndEnroll } from './UpgradeAndEnroll';
+import { VerifyEnrollment } from './VerifyEnrollment';
+import { EnrollButton } from './EnrollButton';
+
+type CreateCheckoutSessionBody = {
+  courseId: string;
+  success?: string;
+  cancel?: string;
+};
+
+type CreateCheckoutSessionParams = {};
+
+type CreateCheckoutSessionResponse = {
+  checkoutUrl: string;
+};
 
 type CourseFloatingSidebarProps = {
   isSticky: boolean;
@@ -22,77 +38,32 @@ type CourseFloatingSidebarProps = {
 export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
   const { isSticky, course } = props;
 
-  const { slug } = course;
-  const courseUrl = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${slug}`;
+  const { slug, _id: courseId } = course;
 
-  const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
-  const [showUpgradePlanModal, setShowUpgradePlanModal] = useState(false);
-  const [showUpgradeAndEnrollModal, setShowUpgradeAndEnrollModal] =
-    useState(false);
-
-  const {
-    courseProgress,
-    billingDetails,
-    pending: isPending,
-  } = useQueries(
+  const { data: courseProgress, isLoading: isCourseProgressLoading } = useQuery(
     {
-      queries: [
-        {
-          ...courseProgressOptions(slug),
-          enabled: !!isLoggedIn(),
-        },
-        {
-          ...billingDetailsOptions(),
-          enabled: !!isLoggedIn(),
-        },
-      ],
-      combine(results) {
-        return {
-          courseProgress: results[0].data,
-          billingDetails: results[1].data,
-          pending: results.some((result) => result.isPending),
-        };
-      },
+      ...courseProgressOptions(slug),
+      enabled: !!isLoggedIn(),
     },
     queryClient,
   );
 
-  const { mutate: enroll, isPending: isEnrolling } = useMutation(
-    {
-      mutationFn: () => {
-        return httpPost(`/v1-enroll-course/${slug}`, {});
-      },
-      onSuccess: () => {
-        window.location.href = courseUrl;
-      },
-      onError: (error) => {
-        console.error(error);
-        toast.error(error?.message || 'Failed to enroll');
-      },
-    },
+  const { isLoading: isCoursePricingLoading } = useQuery(
+    coursePriceOptions({ courseSlug: slug }),
     queryClient,
   );
 
   const hasEnrolled = courseProgress?.startedAt ? true : false;
-  const isPaidUser = billingDetails?.status === 'active';
 
+  const isQueryLoading = isCourseProgressLoading || isCoursePricingLoading;
   useEffect(() => {
-    if (!isLoggedIn()) {
-      setIsLoading(false);
-      return;
-    }
-
-    if (isPending) {
+    if (isQueryLoading) {
       return;
     }
 
     setIsLoading(false);
-    const shouldAutoEnroll = getUrlParams()?.e === '1';
-    if (!hasEnrolled && shouldAutoEnroll) {
-      setShowUpgradeAndEnrollModal(true);
-    }
-  }, [courseProgress, isPending]);
+  }, [courseProgress, isQueryLoading]);
 
   const whatYouGet = [
     'Full access to all the courses',
@@ -104,16 +75,6 @@ export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
 
   return (
     <>
-      {showUpgradePlanModal && (
-        <UpgradePlanModal
-          onClose={() => setShowUpgradePlanModal(false)}
-          success={`/learn/${slug}?e=1`}
-          cancel={`/learn/${slug}`}
-        />
-      )}
-
-      {showUpgradeAndEnrollModal && <UpgradeAndEnroll courseSlug={slug} />}
-
       <div
         className={cn(
           'sticky top-8 -translate-y-1/2 overflow-hidden rounded-lg border bg-white shadow-sm transition-transform',
@@ -129,60 +90,11 @@ export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
         </figure>
 
         <div className="p-2">
-          <button
-            className={cn(
-              'relative flex min-h-10 w-full items-center justify-between gap-1 overflow-hidden rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 p-2 px-3 text-slate-50 disabled:cursor-not-allowed disabled:opacity-50',
-              (hasEnrolled || isEnrolling || isPaidUser) && 'justify-center',
-            )}
-            onClick={() => {
-              if (!isLoggedIn()) {
-                showLoginPopup();
-                return;
-              }
-
-              if (!slug) {
-                toast.error('Course slug not found');
-                return;
-              }
-
-              if (hasEnrolled && isPaidUser) {
-                window.location.href = courseUrl;
-                return;
-              }
-
-              if (isPaidUser) {
-                enroll();
-                return;
-              }
-
-              setShowUpgradePlanModal(true);
-            }}
-            disabled={isLoading || isEnrolling}
-          >
-            {!isEnrolling && (
-              <>
-                {hasEnrolled && isPaidUser && <span>Resume Learning</span>}
-                {!hasEnrolled && !isPaidUser && (
-                  <>
-                    <span>Enroll now</span>
-                    <span>5$ / month</span>
-                  </>
-                )}
-                {!hasEnrolled && isPaidUser && <span>Enroll now</span>}
-              </>
-            )}
-
-            {isEnrolling && (
-              <>
-                <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
-                <span>Enrolling...</span>
-              </>
-            )}
-
-            {isLoading && (
-              <div className="striped-loader-darker absolute inset-0 z-10 h-full w-full bg-purple-500" />
-            )}
-          </button>
+          <EnrollButton
+            courseId={courseId}
+            courseSlug={slug}
+            isLoading={isLoading}
+          />
         </div>
 
         <div className="border-b p-2 pb-4">
