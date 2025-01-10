@@ -18,4 +18,6 @@ This antipattern typically occurs because:
 - The application uses a library that only provides synchronous methods for I/O.
 - An external library performs synchronous I/O operations internally. A single synchronous I/O call can block an entire call chain.
 
+Visit the following links to learn more:
+
 - [@article@What is Synchronous I/O antipattern?](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/synchronous-io/)
