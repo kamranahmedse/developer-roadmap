@@ -66,6 +66,8 @@ export function EnrollButton(props: EnrollButtonProps) {
   );
 
   const hasEnrolled = !!courseProgress?.startedAt;
+  const hasProgress =
+    courseProgress?.startedAt && courseProgress?.completed?.length > 0;
 
   return (
     <button
@@ -103,7 +105,7 @@ export function EnrollButton(props: EnrollButtonProps) {
       disabled={isCreatingCheckoutSession || isLoading}
     >
       {hasEnrolled && !isCreatingCheckoutSession && (
-        <span>Resume Learning</span>
+        <span>{hasProgress ? 'Resume Learning' : 'Start Learning'}</span>
       )}
 
       {!hasEnrolled && !isCreatingCheckoutSession && (
