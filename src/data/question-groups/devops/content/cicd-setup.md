@@ -1,7 +1,7 @@
 Setting up a CI/CD pipeline from scratch involves several steps. Assuming you’ve already set up your project on a version control system, and everyone in your team has proper access to it, then the next steps would help:
 
 1. **Set up the Continuous Integration (CI)**:
-- Select a continuous integration tool (there are many, like [Jenkins](https://jenkins.io), [GitLab CI](https://about.gitlab.com), [CircleCI](https://circlecio.com), pick one).
+- Select a continuous integration tool (there are many, like [Jenkins](https://jenkins.io), [GitLab CI](https://about.gitlab.com), [CircleCI](https://circleci.com), pick one).
 - Connect the CI tool to your version control system.
 - Write a build script that defines the build process, including steps like code checkout, dependency installation, compiling the code, and running tests.
 - Set up automated testing to run on every code commit or pull request.
