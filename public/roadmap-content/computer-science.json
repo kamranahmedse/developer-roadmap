@@ -826,11 +826,6 @@
         "type": "article"
       },
       {
-        "title": "CS 61B Lecture 19: Asymptotic Analysis",
-        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
-        "type": "article"
-      },
-      {
         "title": "Big-O Cheat Sheet",
         "url": "https://www.bigocheatsheet.com/",
         "type": "article"
@@ -853,6 +848,11 @@
       {
         "title": "Asymptotic Notation - CS50",
         "url": "https://www.youtube.com/watch?v=iOq5kSKqeR4",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 19: Asymptotic Analysis",
+        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
         "type": "video"
       }
     ]
