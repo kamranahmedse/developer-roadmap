@@ -3,7 +3,6 @@ import { useAuth } from '../../hooks/use-auth';
 import { useCopyText } from '../../hooks/use-copy-text';
 import { cn } from '../../lib/classname';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
-import { TrophyEmoji } from '../ReactIcons/TrophyEmoji.tsx';
 
 type InviteFriendsProps = {
   refByUserCount: number;
