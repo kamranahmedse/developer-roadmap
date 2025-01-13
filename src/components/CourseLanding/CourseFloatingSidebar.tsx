@@ -6,16 +6,8 @@ import { showLoginPopup } from '../../lib/popup';
 import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
-import { httpPost } from '../../lib/query-http';
-import { useToast } from '../../hooks/use-toast';
-import { CheckCircle2Icon, Loader2Icon, LockIcon } from 'lucide-react';
-import { deleteUrlParam, getUrlParams } from '../../lib/browser';
-import {
-  billingDetailsOptions,
-  coursePriceOptions,
-} from '../../queries/billing';
-import { UpgradeAndEnroll } from './UpgradeAndEnroll';
-import { VerifyEnrollment } from './VerifyEnrollment';
+import { CheckCircle2Icon, LockIcon } from 'lucide-react';
+import { coursePriceOptions } from '../../queries/billing';
 import { EnrollButton } from './EnrollButton';
 
 type CreateCheckoutSessionBody = {
