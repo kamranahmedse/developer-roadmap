@@ -360,6 +360,6 @@ In summary, essential languages to learn in 2025 include HTML for structure, CSS
 
 Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the [choice of technologies during front-end development](https://roadmap.sh/frontend/technologies).
 
-Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end](https://roadmap.sh/frontend) roadmap is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
+Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end roadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
 
 Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your [skills](https://roadmap.sh/frontend/developer-skills) to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress.
