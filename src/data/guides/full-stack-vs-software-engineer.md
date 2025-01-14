@@ -208,7 +208,7 @@ Experience and expertise are key factors that determine the salaries of full sta
 As you’ve seen, becoming a full stack developer requires various skill sets. roadmap.sh provides a step-by-step guide on how to become a [full-stack programmer or developer](https://roadmap.sh/full-stack), and by signing up, you will be able to:
 
 - Keep track of your learning progress and share it on your public roadmap.sh profile.
-- Draw your roadmap, either as an individual learner or for [Dev](https://roadmap.sh/teams) [teams](https://roadmap.sh/teams).
+- Draw your roadmap, either as an individual learner or for [Dev teams](https://roadmap.sh/teams).
 - [Generate new roadmaps with AI](https://roadmap.sh/ai).
 - Collaborate on official roadmaps.
 
