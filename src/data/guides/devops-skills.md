@@ -207,9 +207,9 @@ These patterns define how applications are structured and interact with cloud in
 * **Serverless Architecture**: Serverless computing allows developers to build and deploy applications without managing the underlying infrastructure. In a serverless architecture, code is executed in response to events, such as HTTP requests or changes in data, using services like **AWS Lambda**, **Azure Functions**, or **Google Cloud Functions**.
 * **Event-Driven Architecture**: In an event-driven architecture, applications respond to events in real-time, often using tools like **event streams** (e.g., Apache Kafka) and **message queues**.
 
-## 6\. Monitoring and Logging!
+## 6\. Monitoring and Logging
 
-[monitoring logging servers][https://assets.roadmap.sh/guest/monitoring-logging-servers-ztf1a.png]
+![monitoring logging servers](https://assets.roadmap.sh/guest/monitoring-logging-servers-ztf1a.png)
 
 Monitoring and logging are vital components of a robust DevOps strategy. They provide visibility into the health and performance of your systems, allowing you to detect issues early, troubleshoot, and ensure the reliability of your applications.
 

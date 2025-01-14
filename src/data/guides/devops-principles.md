@@ -139,7 +139,7 @@ Key tools for implementing GitOps include Argo CD and Flux. These tools help you
 
 ## 9\. Continuous Learning and Improvement
 
-![Continious Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
+![Continuous Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
 
 In general the world of tech is constantly evolving and changing and continuous learning and improvement are essential practices for staying ahead and relevant.
 

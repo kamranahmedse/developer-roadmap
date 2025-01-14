@@ -4,7 +4,7 @@ description: 'Explore the responsibilities and roles of a DevOps Engineer in @cu
 authorId: ekene
 excludedBySlug: '/devops/devops-engineer'
 seo:
-  title: 'What is a DevOps Engineer? Responsbilities & Roles in @currentYear@'
+  title: 'What is a DevOps Engineer? Responsibilities & Roles in @currentYear@'
   description: 'Explore the responsibilities and roles of a DevOps Engineer in @currentYear@. Gain insights into the evolving field of DevOps and what it takes to succeed.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/what-is-devops-engineer-jort4.jpg'
 isNew: false

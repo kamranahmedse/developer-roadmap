@@ -114,7 +114,7 @@ The recently concluded [State of DevOps Report](https://cloud.google.com/resourc
 
 Microservice architecture involves breaking down your application into small, independent, and deployable services. Each service is responsible for a specific functionality and can be independently developed, tested, and deployed. This architecture promotes scalability, fault isolation, and rapid innovation, which are essential to the DevOps environment.
 
-![](https://assets.roadmap.sh/guest/microservices-architecture-wo59y.png)
+![Microservices Architecture](https://assets.roadmap.sh/guest/microservices-architecture-wo59y.png)
 
 To implement microservice architecture effectively into your DevOps processes, you need to:
 
@@ -161,7 +161,7 @@ To take advantage of configuration management in your DevOps processes, you need
 
 ### 10. Practice DevSecOps
 
-![](https://assets.roadmap.sh/guest/devsecops-rafjn.png)
+![DevSecOps](https://assets.roadmap.sh/guest/devsecops-rafjn.png)
 
 DevSecOps stands for **Development, Security, and Operations**. It’s an extension of DevOps that promotes the integration of security practices into every phase of the software development lifecycle (SDLC). In the traditional development process, security is often handled by a separate team at the end of the process. In this case, when vulnerabilities are discovered, it slows down the deployment and increases the cost of fixing issues.
 

@@ -200,4 +200,4 @@ By automating key portions of your software development process like CI/CD, infr
 
 Implementing best practices will ensure your automation efforts are successful and aligned with your business goals.
 
-If you’re looking for more details on how to get started as a DevOps or you’d like to learn more about this practice, check out the [full DevOps roadmap here](https://roadmap.sh/devops).
+If you’re looking for more details on how to get started as a DevOps or you’d like to learn more about this practice, check out our [DevOps roadmap here](https://roadmap.sh/devops).
