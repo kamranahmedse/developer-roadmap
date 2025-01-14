@@ -236,11 +236,11 @@ Evaluation:
 * **Learning Curve**: Moderate; familiarity with multiple frontend frameworks can be beneficial. Developers need to understand Astro's unique concepts and how it integrates with existing tools.  
   **Rating**: 4/5 ⭐
 
-### htmx
+### HTMX
 
 ![](https://assets.roadmap.sh/guest/htmx-7zeaa.png)
 
-htmx is a lightweight library that allows frontend developers to add dynamic behavior to their web pages using HTML attributes. It emphasizes simplicity and minimal client-side JavaScript, enabling fast and responsive interactions.
+HTMX is a lightweight library that allows frontend developers to add dynamic behavior to their web pages using HTML attributes. It emphasizes simplicity and minimal client-side JavaScript, enabling fast and responsive interactions.
 
 Evaluation:
 
@@ -275,7 +275,6 @@ Evaluation:
   **Rating**: 4.5/5 ⭐
 * **Learning Curve**: Flutter uses the Dart programming language, which may require developers to learn new syntax and concepts. However, Flutter's comprehensive documentation and the growing number of learning resources help mitigate the learning curve, making it accessible to developers with a background in object-oriented programming.  
   **Rating**: 3.5/5 ⭐
-
 
 ### React Native
 
