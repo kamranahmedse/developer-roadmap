@@ -182,7 +182,7 @@ Design patterns are proven approaches to solving specific design challenges and 
 
 As the popular saying goes, "a tree cannot make a forest." While it might be tempting to work in isolation and tackle all development tasks alone, it's essential for you to join communities that encourage collaboration, peer learning, and staying updated on the latest developments.
 
-A great community to join is the [r](https://roadmap.sh/discord)[oadmap.sh](https://roadmap.sh/discord) [Discord community](https://roadmap.sh/discord), where you can connect with like-minded individuals who share your passion for development.
+A great community to join is the [roadmap.sh](https://roadmap.sh/) [Discord community](https://roadmap.sh/discord), where you can connect with like-minded individuals who share your passion for development.
 
 ### Soft skills
 
@@ -192,7 +192,7 @@ In addition to technical expertise, soft skills play a vital role in the develop
 
 Frameworks, libraries, technologies, modes of adoption, and business requirements will continue to evolve. It is important you stay curious, continuously learn, and keep up with the latest developments in the Java ecosystem, which is huge.
 
-While staying informed about changes in the ecosystem can be overwhelming, especially with information from various sources like blogs, online training, bootcamp courses, etc., there's a reliable and regularly updated platform for Java resources: [Java developer’s](https://roadmap.sh/java) [r](https://roadmap.sh/java)[oadmap.sh](https://roadmap.sh/java).
+While staying informed about changes in the ecosystem can be overwhelming, especially with information from various sources like blogs, online training, bootcamp courses, etc., there's a reliable and regularly updated platform for Java resources: [Java Developer Roadmap](https://roadmap.sh/java).
 
 ## Java’s adoption in the real-world
 
