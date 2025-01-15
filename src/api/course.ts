@@ -12,18 +12,17 @@ export type AllowedCourseDifficulty =
 export interface CourseDocument {
   _id: string;
 
-  title: string;
   slug: string;
+  title: string;
   description?: string;
+  detailedDescription?: string;
+
   difficulty?: AllowedCourseDifficulty;
-
-  briefTitle?: string;
-  briefDescription?: string;
-
-  creatorId: string;
 
   willLearn?: string[];
   prerequisites?: string[];
+
+  creatorId: string;
 
   // AI Configurations
   setting: {

@@ -47,8 +47,7 @@ export function CourseLanding(props: CourseLandingProps) {
     title,
     chapters,
     description,
-    briefDescription,
-    briefTitle,
+    detailedDescription,
     difficulty,
     updatedAt,
     rating,
@@ -89,7 +88,7 @@ export function CourseLanding(props: CourseLandingProps) {
               <a href={`/learn/${course.slug}`}>{title}</a>
             </p>
 
-            <h1 className="mt-8 text-5xl font-bold">{briefTitle}</h1>
+            <h1 className="mt-8 text-5xl font-bold">{title}</h1>
 
             <div className="flex items-center gap-2">
               <CourseStatPill
@@ -104,17 +103,13 @@ export function CourseLanding(props: CourseLandingProps) {
               />
             </div>
 
-            {briefDescription && (
-              <Description
-                description={briefDescription}
-                className="prose-invert"
-              />
+            {description && (
+              <Description description={description} className="prose-invert" />
             )}
 
             <div className="flex items-center gap-2 text-sm">
-              <span>{averageRating}</span>
               <Rating rating={averageRating} />
-              <span>({rating.count} ratings)</span>
+              <span>{averageRating}</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -148,10 +143,10 @@ export function CourseLanding(props: CourseLandingProps) {
               </CourseInfoCard>
             )}
 
-            {description && (
+            {detailedDescription && (
               <CourseInfoCard title="About this Course">
                 <div className="mt-4">
-                  <Description description={description} />
+                  <Description description={detailedDescription} />
                 </div>
               </CourseInfoCard>
             )}
