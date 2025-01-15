@@ -26,4 +26,4 @@ In short, 'Finding and Listing Processes (proc)' in Linux is not just a core asp
 
 Visit the following resources to learn more:
 
-- [@article@The /proc file system](https://www.kernel.org/doc/html/latest/filesystems/proc.html)
+- [@article@The /proc File System](https://www.kernel.org/doc/html/latest/filesystems/proc.html)
