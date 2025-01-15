@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Docker Compose documentation](https://docs.docker.com/compose/)
 - [@video@Docker Compose Tutorial](https://www.youtube.com/watch?v=DM65_JyGxCo)
-- [Curated Docker Compose Samples](https://github.com/docker/awesome-compose?tab=readme-ov-file)
+- [@opensource@Curated Docker Compose Samples](https://github.com/docker/awesome-compose?tab=readme-ov-file)
