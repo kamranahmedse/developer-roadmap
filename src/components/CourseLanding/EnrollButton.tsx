@@ -65,9 +65,9 @@ export function EnrollButton(props: EnrollButtonProps) {
     queryClient,
   );
 
-  const hasEnrolled = !!courseProgress?.startedAt;
+  const hasEnrolled = !!courseProgress?.enrolledAt;
   const hasProgress =
-    courseProgress?.startedAt && courseProgress?.completed?.length > 0;
+    courseProgress?.enrolledAt && courseProgress?.completed?.length > 0;
 
   return (
     <button

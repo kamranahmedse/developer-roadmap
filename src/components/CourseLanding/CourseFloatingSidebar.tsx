@@ -46,7 +46,7 @@ export function CourseFloatingSidebar(props: CourseFloatingSidebarProps) {
     queryClient,
   );
 
-  const hasEnrolled = courseProgress?.startedAt ? true : false;
+  const hasEnrolled = courseProgress?.enrolledAt ? true : false;
 
   const isQueryLoading = isCourseProgressLoading || isCoursePricingLoading;
   useEffect(() => {

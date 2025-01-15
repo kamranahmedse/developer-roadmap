@@ -16,7 +16,7 @@ export interface CourseProgressDocument {
     feedback?: string;
   };
 
-  startedAt?: Date;
+  enrolledAt?: Date;
   completedAt?: Date;
   createdAt: Date;
   updatedAt: Date;
@@ -24,7 +24,7 @@ export interface CourseProgressDocument {
 
 export type CourseProgressResponse = Pick<
   CourseProgressDocument,
-  'completed' | 'completedAt' | 'review' | 'startedAt'
+  'completed' | 'completedAt' | 'review' | 'enrolledAt'
 >;
 
 export function courseProgressOptions(courseSlug: string) {
