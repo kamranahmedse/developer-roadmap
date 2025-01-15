@@ -148,7 +148,6 @@ export type CourseDetailsResponse = Omit<CourseDocument, 'setting'> & {
   enrolled: number;
   rating: {
     average: number;
-    count: number;
   };
 };
 
