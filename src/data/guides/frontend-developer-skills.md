@@ -53,8 +53,9 @@ HTML, CSS, and JavaScript are the foundational [programming languages for front 
 ### CSS (Cascading Style Sheets):
 
 - **Role**: CSS is responsible for the visual presentation of the web page. It controls the layout, colors, fonts, and overall style. While HTML lays out the foundational work for the page, CSS is a big component in making it look “good” for the users.
-- **Key Features**: CSS3 introduces features like Flexbox, Grid Layout, animations, and transitions, which enable complex designs with less code. While trying to build responsive designs (which everyone should be doing by now), media queries, flexbox and grid are your friends, making web pages look good on all devices.                                                                                            
-### JavaScript:
+- **Key Features**: CSS3 introduces features like Flexbox, Grid Layout, animations, and transitions, which enable complex designs with less code. While trying to build responsive designs (which everyone should be doing by now), media queries, flexbox and grid are your friends, making web pages look good on all devices.
+
+### JavaScript
 
 - **Role**: JavaScript adds interactivity and dynamic behavior to web pages. It enables features like form validation, content updates without page reloads, and interactive elements like sliders and carousels. In other words, while CSS makes it look “good”, JavaScript makes it interactive and reactive to the user’s actions.
 - **Key Features**: Modern JavaScript (ES6+) introduces features like arrow functions, template literals, destructuring, modules, and promises. These features make the code more concise and readable. Whether you’re an old developer looking to become a front end developer, or a new one just getting started, adopting these features is key to your success as a JavaScript developer.
@@ -136,7 +137,7 @@ The answer to that question is “yes, there should be”, however, as a front e
 - **Increased visibility and traffic**: Good SEO practices improve a website’s ranking on search engine results pages (SERPs). As a front end developer you have control over how the page is rendered, including how fast it does it and the information that is provided to search engines In other words, you have full control over the traffic and visibility of the project you’re working on.
 - **Career advancement**: As businesses increasingly recognize the importance of online presence, the demand for developers with SEO expertise is growing. Front End developers who can implement SEO best practices are more valuable to employers and clients, leading to better - job opportunities and career growth.
 - **Improved code quality**: SEO-friendly code is usually cleaner, more organized, and easier to maintain (there are no guarantees though). By adhering to SEO best practices, front end developers tend to produce code that is well-structured and follows industry standards, leading to fewer bugs and more scalable projects.
-			
+
 ## 7. RESTful APIs
 
 ![RESTful API](https://assets.roadmap.sh/guest/restfulapi-from-frontend-dev-8msjn.png)
@@ -198,7 +199,7 @@ We are, of course, talking about modern [front end frameworks](https://roadmap.s
 
 Of course, there are other options out there, such as Svelte, Solid, or even just the native Web Components that all major browsers support nowadays. However, while those are very valid options, the main 3 still remain the most used options and if you’re [looking to become a front end developer](https://roadmap.sh/frontend/how-to-become-frontend-developer), you’ll want to first focus on one of them.
 
-Each framework has its own strengths and use cases, so understanding their core concepts and ecosystems can significantly enhance a developer's productivity. 
+Each framework has its own strengths and use cases, so understanding their core concepts and ecosystems can significantly enhance a developer's productivity.
 
 Now the question remains: which one is the right one for you? That’s entirely up to you to decide, but here are some of the highlights of each framework:
 

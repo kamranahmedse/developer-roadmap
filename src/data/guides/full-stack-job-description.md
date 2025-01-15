@@ -117,13 +117,13 @@ In full stack development, [**DevOps skills**] are highly valuable. A basic unde
 
 In full stack development, proficiency in automated testing and debugging is essential for identifying and resolving bugs in both frontend and backend code. Moreover, a strong grasp of caching techniques and technologies such as Redis can significantly enhance application performance and improve the overall user experience.
 
-![testing and performnace](https://assets.roadmap.sh/guest/testing-and-performance-improvement-skills-1z2hm.png)
+![Testing and Performance](https://assets.roadmap.sh/guest/testing-and-performance-improvement-skills-1z2hm.png)
 
 ### Soft skills
 
 While technical skills are essential, full stack engineers must also possess a strong soft skill set. Full stack developers must have good communication skills (written and spoken), organization skills, and the ability to collaborate effectively with other team members to ensure the project's success.
 
-![Soft skills](https://assets.roadmap.sh/guest/soft-skills-qnz1f.png)
+![Soft Skills](https://assets.roadmap.sh/guest/soft-skills-qnz1f.png)
 
 ## Additional skills to consider when hiring full stack engineers
 
@@ -150,7 +150,6 @@ Frameworks, libraries, design principles, and so on will continue to evolve. Ful
 ### Project management skills
 
 Working on multiple projects simultaneously is inevitable. Full stack engineer candidates should have a basic understanding of project management principles and methodologies like Agile and Scrum. Additionally, they should be able to manage their time, prioritize tasks, and meet deadlines.
-
 
 ## Community and networking
 
