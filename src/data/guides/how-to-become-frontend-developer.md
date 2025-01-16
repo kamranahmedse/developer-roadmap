@@ -178,7 +178,7 @@ The final step in becoming a front-end developer is to build an online portfolio
 - Open source contributions code.
 - Code examples to demonstrate your problem-solving skills.
 
-Once you've built a solid portfolio, it's time to apply for a front-end developer job. This process includes writing a cover letter and resume and preparing for interviews. This roadmap.sh guide will help you prepare for these interviews: [Top](https://roadmap.sh/questions/frontend) [Front End Developer Interview Questions](https://roadmap.sh/questions/frontend).
+Once you've built a solid portfolio, it's time to apply for a front-end developer job. This process includes writing a cover letter and resume and preparing for interviews. This roadmap.sh guide will help you prepare for these interviews: [Top Front End Developer Interview Questions](https://roadmap.sh/questions/frontend).
 
 But remember, front-end development is a continuous learning process. So, it's essential to keep learning during and after a job search to keep up with new tools and trends.
 
@@ -238,6 +238,7 @@ It involves several steps, like:
     - Animated dropdown menus for easy-to-use web navigation.
 
 ## Frequently asked questions (FAQ): Becoming a front-end developer
+
 ![Frequently asked questions: Becoming a front-end developer](https://assets.roadmap.sh/guest/frontend-developer-faqs-zhhns.jpeg)
 
 The process of becoming a front-end developer may pose some questions to you. The following are some answers to common questions to get you started:
@@ -305,4 +306,4 @@ Though it is not required, having a grasp of the basics of backend development c
 
 To become a front-end developer, you need a mix of skills, dedication, and the right guidance. If you follow the steps in this guide, you'll be on track to kickstart an excellent front-end career. Stay on track with a personalized learning plan available on roadmap.sh.
 
-roadmap.sh will keep you focused and help you reach your maximum potential as a front-end developer. It has numerous resources that will help you learn front-end and web development. To get started, sign up, create a [front-end roadmap plan](https://roadmap.sh/frontend), and begin studying. You can also share the roadmap with your study buddies. 
+roadmap.sh will keep you focused and help you reach your maximum potential as a front-end developer. It has numerous resources that will help you learn front-end and web development. To get started, sign up, create a [front-end roadmap plan](https://roadmap.sh/frontend), and begin studying. You can also share the roadmap with your study buddies.
