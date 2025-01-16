@@ -19,6 +19,7 @@ import { sanitizeHtml } from '../../lib/sanitize-html';
 import { markdownToHtml } from '../../lib/markdown';
 import { getRelativeTimeString } from '../../lib/date';
 import { humanizeNumber } from '../../lib/number';
+import { EnrollButton } from './EnrollButton';
 
 type CourseLandingProps = {
   course: CourseDetailsResponse;
@@ -28,20 +29,7 @@ export function CourseLanding(props: CourseLandingProps) {
   const { course } = props;
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) {
-      return;
-    }
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > container.offsetTop);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [containerRef]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const {
     title,
@@ -76,13 +64,13 @@ export function CourseLanding(props: CourseLandingProps) {
 
   const enrolledLabel = `${humanizeNumber(enrolled)} user${
     enrolled > 1 ? 's' : ''
-  } enrolled`;
+  }`;
 
   return (
-    <>
+    <div ref={containerRef}>
       <div className="bg-slate-900 py-5 text-white sm:py-8">
         <div className="container grid grid-cols-5 gap-6">
-          <div className="col-start-1 col-end-4 space-y-4">
+          <div className="col-start-1 col-end-4 space-y-4 max-md:col-end-6">
             <p className="flex items-center gap-1 text-sm text-slate-400">
               <a href="/">Home</a> / <a href="/courses">Courses</a> /{' '}
               <a href={`/learn/${course.slug}`}>{title}</a>
@@ -113,26 +101,38 @@ export function CourseLanding(props: CourseLandingProps) {
             </div>
 
             <div className="flex items-center gap-2">
-              <CourseStatPill icon={UsersIcon} label={enrolledLabel} />
+              <CourseStatPill
+                icon={UsersIcon}
+                label={enrolledLabel + ' enrolled'}
+                tinyLabel={enrolledLabel}
+              />
               <CourseStatPill
                 icon={LetterTextIcon}
                 label={`${lessonCount} Lessons`}
+                tinyLabel={`${lessonCount}`}
               />
               <CourseStatPill
                 icon={CodeXmlIcon}
                 label={`${challengeCount} Challenges`}
+                tinyLabel={`${challengeCount}`}
               />
             </div>
+          </div>
+
+          <div className="relative col-start-4 col-end-6 max-md:hidden">
+            <CourseFloatingSidebar
+              containerRef={containerRef}
+              course={course}
+              isLoading={isLoading}
+              setIsLoading={setIsLoading}
+            />
           </div>
         </div>
       </div>
 
       <div className="bg-gray-50">
-        <div
-          className="container grid grid-cols-5 gap-6 py-8"
-          ref={containerRef}
-        >
-          <div className="col-start-1 col-end-4 space-y-4">
+        <div className="container grid grid-cols-5 gap-6 py-8">
+          <div className="col-start-1 col-end-4 space-y-4 max-md:col-end-6">
             {willLearn.length > 0 && (
               <CourseInfoCard title="What you'll learn">
                 <ul className="flex list-inside list-disc flex-col gap-1 text-sm text-gray-700 marker:text-gray-400">
@@ -182,12 +182,37 @@ export function CourseLanding(props: CourseLandingProps) {
               })}
             </CourseInfoCard>
           </div>
-          <div className="col-start-4 col-end-6">
-            <CourseFloatingSidebar isSticky={isSticky} course={course} />
-          </div>
         </div>
       </div>
-    </>
+
+      <div className="bottom-0 hidden items-center justify-between gap-2 bg-black p-4 text-white max-md:sticky max-md:flex">
+        <div>
+          <h2 className="truncate text-xl font-medium">{title}</h2>
+
+          <div className="mt-2 flex items-center gap-2">
+            <CourseStatPill
+              icon={ShapesIcon}
+              label={`Difficulty ${difficulty}`}
+              className="border-none p-0 capitalize text-slate-400"
+              tinyLabel={difficulty}
+            />
+            <CourseStatPill
+              icon={CalendarIcon}
+              label={`Updated ${updatedTime}`}
+              tinyLabel={updatedTime}
+              className="border-none p-0 text-slate-400"
+            />
+          </div>
+        </div>
+
+        <EnrollButton
+          courseId={course._id}
+          courseSlug={course.slug}
+          isLoading={isLoading}
+          className="w-fit gap-3"
+        />
+      </div>
+    </div>
   );
 }
 

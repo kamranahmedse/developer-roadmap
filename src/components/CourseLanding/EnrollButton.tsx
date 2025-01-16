@@ -23,10 +23,12 @@ type EnrollButtonProps = {
   courseId: string;
   courseSlug: string;
   isLoading: boolean;
+
+  className?: string;
 };
 
 export function EnrollButton(props: EnrollButtonProps) {
-  const { courseId, courseSlug, isLoading } = props;
+  const { courseId, courseSlug, isLoading, className } = props;
 
   const toast = useToast();
 
@@ -74,6 +76,7 @@ export function EnrollButton(props: EnrollButtonProps) {
       className={cn(
         'relative flex min-h-10 w-full items-center justify-between gap-1 overflow-hidden rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 p-2 px-3 text-slate-50 disabled:cursor-not-allowed disabled:opacity-50',
         (hasEnrolled || isCreatingCheckoutSession) && 'justify-center',
+        className,
       )}
       onClick={() => {
         if (isCourseProgressLoading || isCreatingCheckoutSession) {

@@ -43,18 +43,18 @@ export function CourseChapterItem(props: CourseChapterItemProps) {
         className="flex w-full items-center justify-between gap-1 p-2 pr-3"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-medium">{title}</span>
+        <span className="truncate text-lg font-medium">{title}</span>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           {textualLessons.length > 0 && (
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 max-sm:hidden">
               {textualLessons.length} Lesson
               {textualLessons.length > 1 ? 's' : ''}
             </span>
           )}
 
           {excercises.length > 0 && (
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 max-sm:hidden">
               {excercises.length} Excerice
               {excercises.length > 1 ? 's' : ''}
             </span>
