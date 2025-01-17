@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Serialization and Deserialization in Java](https://www.javatpoint.com/serialization-in-java)
 - [@article@Introduction to Java Serialization](https://www.baeldung.com/java-serialization)
+- [@article@Introduction to Java Serialization](https://www.geeksforgeeks.org/serialization-in-java)
