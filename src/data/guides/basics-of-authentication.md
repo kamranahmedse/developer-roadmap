@@ -91,7 +91,7 @@ And in case of authorization failure, i.e., if the user tries to perform an oper
 
 Given below is the list of common authentication strategies:
 
-- Basics of Authentication
+- Basic Authentication
 - Session Based Authentication
 - Token-Based Authentication
 - JWT Authentication
