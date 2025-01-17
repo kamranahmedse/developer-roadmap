@@ -3,6 +3,7 @@ import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
+import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount';
 
 type EmailLoginFormProps = {
   isDisabled?: boolean;
@@ -38,7 +39,9 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
 
       const currentLocation = window.location.href;
       const url = new URL(currentLocation, window.location.origin);
-      url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+      if (response?.isNewUser) {
+        url.searchParams.set(FIRST_LOGIN_TAG, '1');
+      }
       window.location.href = url.toString();
       return;
     }

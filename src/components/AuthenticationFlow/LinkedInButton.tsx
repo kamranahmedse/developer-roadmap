@@ -5,6 +5,7 @@ import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
+import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount.tsx';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -75,7 +76,9 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         setAuthToken(response.token);
 
         const url = new URL(redirectUrl, window.location.origin);
-        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        if (response?.isNewUser) {
+          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        }
         window.location.href = url.toString();
       })
       .catch((err) => {

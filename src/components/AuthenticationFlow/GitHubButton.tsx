@@ -5,6 +5,7 @@ import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
+import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount.tsx';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -76,7 +77,9 @@ export function GitHubButton(props: GitHubButtonProps) {
         setAuthToken(response.token);
 
         const url = new URL(redirectUrl, window.location.origin);
-        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        if (response?.isNewUser) {
+          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        }
         window.location.href = url.toString();
       })
       .catch((err) => {

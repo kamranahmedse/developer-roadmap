@@ -6,6 +6,8 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon2 } from '../ReactIcons/ErrorIcon2';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
 
+export const FIRST_LOGIN_TAG = 'fl' as const;
+
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -32,7 +34,9 @@ export function TriggerVerifyAccount() {
         setAuthToken(response.token);
 
         const url = new URL('/', window.location.origin);
-        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        if (response?.isNewUser) {
+          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        }
         window.location.href = url.toString();
       })
       .catch((err) => {
