@@ -29,7 +29,7 @@ That said, having a project portfolio, even as backend developers, it’s very i
 
 As an added bonus, the experience you get out of the entire process of building the apps for your portfolio will help you improve your coding skills.
 
-Let’s take a look at 20 of the best backend projects you can work on to improve both your project portfolio and to [learn backend development](https://roadmap.sh/backend).
+Let’s take a look at 20 of the best backend projects you can work on to improve both your project portfolio and to learn [backend development](https://roadmap.sh/backend).
 
 Keep in mind that these project ideas are organized from easiest to hardest to complete, and the entire list should take you at least a year to complete, if you’re not rushing the process.
 
@@ -108,10 +108,10 @@ For the last of our “easy” backend projects, let’s cover one more API, an 
 - Sign up as a new user.
 - Generate and validate JWTs for handling authentication and user session.
 - List and filter your past expenses. You can add the following filters:
-    - Past week.
-    - Last month.
-    - Last 3 months.
-    - Custom (to specify a start and end date of your choosing).
+  - Past week.
+  - Last month.
+  - Last 3 months.
+  - Custom (to specify a start and end date of your choosing).
 - Add new expenses.
 - Remove existing expenses.
 - Update existing expenses.

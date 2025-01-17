@@ -45,7 +45,7 @@ They’re some of the most known and used languages in the industry right now (s
 
 ### Python
 
-Python has been around for decades already and while it’s never been the most popular option, it has always managed to stay within the top 5 choices. People love it for being easy to read, straightforward, and able to handle all sorts of tasks, making it a top pick for developers globally. Sure, Python's got a big name in data processing and machine learning, but let's not forget its solid impact on web development!.
+[Python](https://roadmap.sh/python) has been around for decades already and while it’s never been the most popular option, it has always managed to stay within the top 5 choices. People love it for being easy to read, straightforward, and able to handle all sorts of tasks, making it a top pick for developers globally. Sure, Python's got a big name in data processing and machine learning, but let's not forget its solid impact on web development!.
 
 What makes Python extra appealing, especially for beginners, is the fact that reading and writing it feels very much like English (or at least, as pseudo code). This makes it a top choice for folks just starting out in coding.
 
@@ -53,7 +53,7 @@ What makes Python extra appealing, especially for beginners, is the fact that re
 
 One of Python's standout features is its beginner-friendly syntax, making it an ideal language for those new to programming. The emphasis on readability and the absence of complex syntax (for the most part), eases the learning curve, enabling new developers to quickly grasp fundamental concepts.
 
-Python's community plays a critical role in its accessibility. Abundant learning resources, tutorials, and documentation are readily available, empowering beginners to progress from basic programming principles to advanced backend development seamlessly. Online platforms like Codecademy, Coursera, realpython.com, and even Google offer comprehensive courses tailored to all skill levels.
+Python's community plays a critical role in its accessibility. Abundant learning resources, tutorials, and documentation are readily available, empowering beginners to progress from basic programming principles to advanced backend development seamlessly. Online platforms like Codecademy, Coursera, Real Python, and even Google offer comprehensive courses tailored to all skill levels.
 
 #### Practical Applications and Popular Frameworks
 
@@ -87,11 +87,11 @@ As with all other backend languages in this article, Python has some pros and co
 
 ### Java
 
-Java has a massive presence and for good reason (according to [JetBrain’s survey in 2022, Java was used by 48% of developers](https://w3techs.com/technologies/details/pl-php)).It's the kind of programming language that's everywhere – serving up websites, running your favorite apps, and even powering big-scale enterprise systems.
+[Java](https://roadmap.sh/java) has a massive presence and for good reason (according to [JetBrain’s survey in 2022, Java was used by 48% of developers](https://w3techs.com/technologies/details/pl-php)).It's the kind of programming language that's everywhere – serving up websites, running your favorite apps, and even powering big-scale enterprise systems.
 
 #### Is it worth learning Java?
 
-Now, learning Java, (a strongly typed, object oriented programming language (OOP), is a journey worth taking, but it's not a walk in the park. It's a bit like climbing a mountain – you start at the bottom with the basics, and as you ascend, you get into the nitty-gritty of things like object-oriented programming. The process will force you to learn a lot, which is a great thing, by the end you’ll have a lot of understanding of mechanics and concepts around OOP that can be extrapolated into other languages. However, that can also be overwhelming to some developers who just want to learn by building mini-projects. In those situations, the learning curve of Java might be too long (not steep, but long because there is a lot more to cover than with alternatives such as Python or JavaScript).
+Now, learning Java, (a strongly typed, object oriented programming language (OOP)), is a journey worth taking, but it's not a walk in the park. It's a bit like climbing a mountain – you start at the bottom with the basics, and as you ascend, you get into the nitty-gritty of things like object-oriented programming. The process will force you to learn a lot, which is a great thing, by the end you’ll have a lot of understanding of mechanics and concepts around OOP that can be extrapolated into other languages. However, that can also be overwhelming to some developers who just want to learn by building mini-projects. In those situations, the learning curve of Java might be too long (not steep, but long because there is a lot more to cover than with alternatives such as Python or JavaScript).
 
 That said, the community is big and there are tons of resources, from online courses to forums, helping you navigate the Java landscape. And good reason, considering Java has been around for quite a while.
 
@@ -257,8 +257,6 @@ Once you’ve answered those questions, you’ll probably have some idea of wher
 - Are the main frameworks still under development? Or have they been parked for a while?
 
 In the end, you’re evaluating the language and its ecosystem, making sure they’re both evolving right along the web industry. If you find that there are aspects that are falling behind, then it probably isn’t a good choice.
-
-A handy tool when trying to evaluate a language like that is [roadmap.sh](https://roadmap.sh).
 
 [![Roadmap.sh](/guides/backend-languages/backend-roadmap-part.png)](https://roadmap.sh/backend)
 
