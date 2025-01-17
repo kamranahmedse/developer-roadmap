@@ -13,7 +13,7 @@ export function TriggerVerifyAccount() {
   const triggerVerify = (code: string) => {
     setIsLoading(true);
 
-    httpPost<{ token: string }>(
+    httpPost<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-verify-account`,
       {
         code,
@@ -30,7 +30,10 @@ export function TriggerVerifyAccount() {
         triggerUtmRegistration();
 
         setAuthToken(response.token);
-        window.location.href = '/';
+
+        const url = new URL('/', window.location.origin);
+        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        window.location.href = url.toString();
       })
       .catch((err) => {
         setIsLoading(false);

@@ -24,19 +24,22 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
     setIsDisabled?.(true);
     setError('');
 
-    const { response, error } = await httpPost<{ token: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-login`,
-      {
-        email,
-        password,
-      },
-    );
+    const { response, error } = await httpPost<{
+      token: string;
+      isNewUser: boolean;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
+      email,
+      password,
+    });
 
     // Log the user in and reload the page
     if (response?.token) {
       setAuthToken(response.token);
-      window.location.reload();
 
+      const currentLocation = window.location.href;
+      const url = new URL(currentLocation, window.location.origin);
+      url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+      window.location.href = url.toString();
       return;
     }
 

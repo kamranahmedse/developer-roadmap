@@ -35,7 +35,7 @@ export function GoogleButton(props: GoogleButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
       }`,
@@ -78,7 +78,10 @@ export function GoogleButton(props: GoogleButtonProps) {
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
         localStorage.removeItem(GOOGLE_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        const url = new URL(redirectUrl, window.location.origin);
+        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        window.location.href = url.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');

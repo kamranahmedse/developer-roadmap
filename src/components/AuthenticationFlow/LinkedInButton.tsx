@@ -32,7 +32,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
         window.location.search
       }`,
@@ -73,7 +73,10 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         localStorage.removeItem(LINKEDIN_REDIRECT_AT);
         localStorage.removeItem(LINKEDIN_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        const url = new URL(redirectUrl, window.location.origin);
+        url.searchParams.set('isNewUser', String(response?.isNewUser || false));
+        window.location.href = url.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
