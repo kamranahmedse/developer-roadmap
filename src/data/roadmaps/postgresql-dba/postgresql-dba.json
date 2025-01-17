@@ -2765,7 +2765,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Object Priviliges",
+        "label": "Object Privileges",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -2830,7 +2830,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Default Priviliges",
+        "label": "Default Privileges",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
