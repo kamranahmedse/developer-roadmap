@@ -5,4 +5,4 @@ Containers are isolated, lightweight environments that run applications using a 
 Visit the following resources to learn more:
 
 - [@official@Docker CLI Commands](https://docs.docker.com/engine/reference/commandline/cli/)
-- [@article@Docker CLI Commands Cheat Sheet](https://www.docker.com/blog/docker-cli-commands-cheat-sheet/)
+- [@article@Docker CLI Commands Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
