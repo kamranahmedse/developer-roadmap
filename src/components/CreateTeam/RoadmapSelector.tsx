@@ -11,6 +11,7 @@ import type {
 } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
+import { ContentConfirmationModal } from './ContentConfirmationModal';
 
 export type TeamResourceConfig = {
   isCustomResource: boolean;
@@ -44,6 +45,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState<boolean>(false);
 
   const [error, setError] = useState<string>('');
+  const [confirmationContentId, setConfirmationContentId] = useState<string>();
 
   async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -101,7 +103,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     });
   }
 
-  async function addTeamResource(roadmapId: string) {
+  async function addTeamResource(roadmapId: string, shouldCopyContent = false) {
     if (!teamId) {
       return;
     }
@@ -118,6 +120,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         resourceType: 'roadmap',
         removed: [],
         renderer: renderer || 'balsamiq',
+        shouldCopyContent,
       },
     );
 
@@ -148,8 +151,24 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     });
   }
 
+  const confirmationContentIdModal = confirmationContentId && (
+    <ContentConfirmationModal
+      onClose={() => {
+        setConfirmationContentId('');
+      }}
+      onClick={(shouldCopy) => {
+        addTeamResource(confirmationContentId, shouldCopy).finally(() => {
+          pageProgressMessage.set('');
+          setConfirmationContentId('');
+        });
+      }}
+    />
+  );
+
   return (
     <div>
+      {confirmationContentIdModal}
+
       {changingRoadmapId && (
         <UpdateTeamResourceModal
           onClose={() => setChangingRoadmapId('')}
@@ -170,9 +189,20 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           allRoadmaps={allRoadmaps.filter((r) => r.renderer === 'editor')}
           teamId={teamId}
           onRoadmapAdd={(roadmapId) => {
-            addTeamResource(roadmapId).finally(() => {
-              pageProgressMessage.set('');
-            });
+            const isEditorRoadmap = allRoadmaps.find(
+              (r) => r.id === roadmapId && r.renderer === 'editor',
+            );
+
+            if (!isEditorRoadmap) {
+              addTeamResource(roadmapId).finally(() => {
+                pageProgressMessage.set('');
+              });
+
+              return;
+            }
+
+            setShowSelectRoadmapModal(false);
+            setConfirmationContentId(roadmapId);
           }}
           onRoadmapRemove={(roadmapId) => {
             onRemove(roadmapId).finally(() => {});
