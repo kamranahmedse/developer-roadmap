@@ -5,6 +5,7 @@ import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
+import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount.tsx';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -32,7 +33,7 @@ export function GitHubButton(props: GitHubButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-callback${
         window.location.search
       }`,
@@ -74,7 +75,12 @@ export function GitHubButton(props: GitHubButtonProps) {
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        const url = new URL(redirectUrl, window.location.origin);
+        if (response?.isNewUser) {
+          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        }
+        window.location.href = url.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');

@@ -8,6 +8,7 @@ import {
   getStoredUtmParams,
   triggerUtmRegistration,
 } from '../../lib/browser.ts';
+import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount.tsx';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
@@ -35,7 +36,7 @@ export function GoogleButton(props: GoogleButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
       }`,
@@ -78,7 +79,12 @@ export function GoogleButton(props: GoogleButtonProps) {
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
         localStorage.removeItem(GOOGLE_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        const url = new URL(redirectUrl, window.location.origin);
+        if (response?.isNewUser) {
+          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        }
+        window.location.href = url.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
