@@ -17,3 +17,7 @@ sudo systemctl status sshd
 ```
 
 Managing services is a key skill in Linux system administration and essential for maintaining a secure and stable system.
+
+Learn more from the following resources:
+
+- [@article@How to Master Linux Service Management with Systemctl](https://labex.io/tutorials/linux-how-to-master-linux-service-management-with-systemctl-392864)
