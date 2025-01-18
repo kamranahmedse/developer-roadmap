@@ -581,8 +581,13 @@
     "description": "In Vue.js, **inline handlers** are defined directly in the template using expressions, making them suitable for simple tasks. For example, you might use an inline handler to increment a counter. **Method handlers**, on the other hand, are defined in the `methods` option and are better for more complex logic or when reusing functionality across multiple components. They improve code readability and maintainability.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Inline Handlers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#inline-handlers",
+        "type": "article"
+      },
+      {
         "title": "Method Handlers",
-        "url": "https://v1.vuejs.org/guide/events.html",
+        "url": "https://vuejs.org/guide/essentials/event-handling#method-handlers",
         "type": "article"
       }
     ]
@@ -591,6 +596,11 @@
     "title": "Event Modifiers",
     "description": "In Vue.js, event modifiers are special postfixes that you can add to event handlers to control the behavior of events more easily. They help simplify common tasks such as stopping propagation, preventing default actions, and ensuring that the event is triggered only under certain conditions.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Event Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#event-modifiers",
+        "type": "article"
+      },
       {
         "title": "Event Modifiers in Vue.js",
         "url": "https://www.freecodecamp.org/news/how-event-handling-works-in-vue-3-guide-for-devs/",
@@ -603,8 +613,8 @@
     "description": "Input bindings are a way to bind user input to a component's data. This allows the component to react to user input and update its state accordingly. Input bindings are typically used with form elements such as text inputs, checkboxes, and select dropdowns.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Input Bindings",
-        "url": "https://vuejs.org/guide/essentials/forms",
+        "title": "Key Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#key-modifiers",
         "type": "article"
       }
     ]
@@ -613,6 +623,11 @@
     "title": "Mouse Button Modifiers",
     "description": "Mouse button modifiers are a type of modifier that can be used with event handlers to specify which mouse button or buttons should trigger the event. These modifiers allow you to customize the behavior of event handlers, such as v-on:click, to respond to specific mouse button clicks.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Mouse Button Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#mouse-button-modifiers",
+        "type": "article"
+      },
       {
         "title": "Button Modifiers",
         "url": "https://medium.com/evolve-you/vue-3-keyboard-and-mouse-a4866d7d0e8",
