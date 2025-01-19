@@ -1608,11 +1608,6 @@
         "type": "article"
       },
       {
-        "title": "Google Devs Content Security Policy (CSP)",
-        "url": "https://developers.google.com/web/fundamentals/security/csp",
-        "type": "article"
-      },
-      {
         "title": "Web.dev - Content Security Policy (CSP)",
         "url": "https://web.dev/csp/",
         "type": "article"
