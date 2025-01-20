@@ -8,6 +8,4 @@ To succeed in risk management, Engineering Managers need strong analytical skill
 
 Visit the following resources to learn more:
 
-- [Lesson 127 - Assessing Architectural Risk Part 1](https://www.youtube.com/watch?v=qHCG6j-ZRgU)
-- [Lesson 128 - Assessing Architectural Risk Part 2](https://www.youtube.com/watch?v=dcLh0CL294E)
-- [Lesson 129 - Assessing Architectural Risk Part 3](https://www.youtube.com/watch?v=iJD909A7Yv0)
+- Assessing Architectural Risk [Part 1](https://www.youtube.com/watch?v=qHCG6j-ZRgU) - [Part 2](https://www.youtube.com/watch?v=dcLh0CL294E) - [Part 3](https://www.youtube.com/watch?v=iJD909A7Yv0)
