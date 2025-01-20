@@ -28,10 +28,16 @@ import {
   PenSquare,
   Component,
   Waypoints,
-  CheckSquare, Braces, FolderKanban, Coins, Megaphone, GitBranch,
+  CheckSquare,
+  Braces,
+  FolderKanban,
+  Coins,
+  Megaphone,
+  GitBranch,
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 ---
 
 <BaseLayout
@@ -223,10 +229,10 @@ import { TipItem } from '../components/GetStarted/TipItem';
       />
 
       <RoadmapCard
-          icon={Braces}
-          title='API Design'
-          link='/api-design'
-          description='Learn all you need to know to design robust APIs.'
+        icon={Braces}
+        title='API Design'
+        link='/api-design'
+        description='Learn all you need to know to design robust APIs.'
       />
     </div>
 
@@ -338,10 +344,10 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapCard
-        icon={Bot}
-        title='AI Engineer'
-        link='/ai-engineer'
-        description='Learn all you need to become an AI Engineer.'
+      icon={Bot}
+      title='AI Engineer'
+      link='/ai-engineer'
+      description='Learn all you need to become an AI Engineer.'
     />
 
     <RoadmapCard
@@ -385,10 +391,10 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a UX Designer.'
       />
       <RoadmapCard
-          icon={Coins}
-          title='Blockchain'
-          link='/blockchain'
-          description='Learn all you need to know to become a Blockchain Developer.'
+        icon={Coins}
+        title='Blockchain'
+        link='/blockchain'
+        description='Learn all you need to know to become a Blockchain Developer.'
       />
     </div>
     <div class='flex flex-col justify-start gap-3'>
@@ -405,18 +411,18 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a Technical Writer.'
       />
       <RoadmapCard
-          icon={Megaphone}
-          title='DevRel Engineer'
-          link='/devrel'
-          description='Learn all you need to know to become a DevRel Engineer.'
+        icon={Megaphone}
+        title='DevRel Engineer'
+        link='/devrel'
+        description='Learn all you need to know to become a DevRel Engineer.'
       />
     </div>
     <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
-          icon={FolderKanban}
-          title='Product Manager'
-          link='/product-manager'
-          description='Learn all you need to know to become a Project Manager.'
+        icon={FolderKanban}
+        title='Product Manager'
+        link='/product-manager'
+        description='Learn all you need to know to become a Project Manager.'
       />
       <RoadmapCard
         icon={Component}
@@ -480,4 +486,5 @@ import { TipItem } from '../components/GetStarted/TipItem';
       </p>
     </div>
   </div>
+  <ChangelogBanner slot='changelog-banner' />
 </BaseLayout>
