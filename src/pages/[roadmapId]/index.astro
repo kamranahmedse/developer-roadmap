@@ -134,6 +134,8 @@ const projects = await getProjectsByRoadmapId(roadmapId);
 
     <div class='container relative !max-w-[1000px]'>
       <ShareIcons
+        resourceId={roadmapId}
+        resourceType='roadmap'
         description={roadmapData.briefDescription}
         pageUrl={`https://roadmap.sh/${roadmapId}`}
         client:load

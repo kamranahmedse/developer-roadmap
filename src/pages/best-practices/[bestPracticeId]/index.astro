@@ -94,6 +94,8 @@ const ogImageUrl = getOpenGraphImageUrl({
       !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
         <div class='container relative !max-w-[1000px]'>
           <ShareIcons
+            resourceId={bestPracticeId}
+            resourceType='best-practice'
             description={bestPracticeData.briefDescription}
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
             client:load

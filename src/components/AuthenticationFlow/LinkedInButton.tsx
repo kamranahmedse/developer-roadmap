@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
+import { FIRST_LOGIN_PARAM, TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
-import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount.tsx';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -77,7 +76,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
         const url = new URL(redirectUrl, window.location.origin);
         if (response?.isNewUser) {
-          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+          url.searchParams.set(FIRST_LOGIN_PARAM, '1');
         }
         window.location.href = url.toString();
       })

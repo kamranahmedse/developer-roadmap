@@ -6,12 +6,14 @@ import { RedditIcon } from '../ReactIcons/RedditIcon';
 import { TwitterIcon } from '../ReactIcons/TwitterIcon';
 
 type ShareIconsProps = {
+  resourceId: string;
+  resourceType: string;
   pageUrl: string;
   description: string;
 };
 
 export function ShareIcons(props: ShareIconsProps) {
-  const { pageUrl, description } = props;
+  const { pageUrl, description, resourceType, resourceId } = props;
 
   const shareIconsRef = useRef<HTMLDivElement>(null);
 
@@ -73,26 +75,30 @@ export function ShareIcons(props: ShareIconsProps) {
       ref={shareIconsRef}
     >
       <div className="sticky top-[100px] flex flex-col items-center gap-1.5">
-        {icons.map((icon, index) => (
-          <a
-            key={index}
-            href={icon.url}
-            target="_blank"
-            className={cn(
-              'text-gray-500 hover:text-gray-700',
-              index === 0 && 'mt-0.5',
-            )}
-            onClick={() => {
-              window.fireEvent({
-                category: 'RoadmapShareLink',
-                action: 'Roadmap Share Link Clicked',
-                label: icon.url,
-              });
-            }}
-          >
-            {icon.icon}
-          </a>
-        ))}
+        {icons.map((icon, index) => {
+          const host = new URL(icon.url).host;
+
+          return (
+            <a
+              key={index}
+              href={icon.url}
+              target="_blank"
+              className={cn(
+                'text-gray-500 hover:text-gray-700',
+                index === 0 && 'mt-0.5',
+              )}
+              onClick={() => {
+                window.fireEvent({
+                  category: 'RoadmapShareLink',
+                  action: `Share Roadmap / ${resourceType} / ${resourceId} / ${host}`,
+                  label: icon.url,
+                });
+              }}
+            >
+              {icon.icon}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

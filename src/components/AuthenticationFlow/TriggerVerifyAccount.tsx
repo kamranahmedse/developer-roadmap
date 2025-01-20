@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
+import { FIRST_LOGIN_PARAM, TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon2 } from '../ReactIcons/ErrorIcon2';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
-
-export const FIRST_LOGIN_TAG = 'fl' as const;
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +33,7 @@ export function TriggerVerifyAccount() {
 
         const url = new URL('/', window.location.origin);
         if (response?.isNewUser) {
-          url.searchParams.set(FIRST_LOGIN_TAG, '1');
+          url.searchParams.set(FIRST_LOGIN_PARAM, '1');
         }
         window.location.href = url.toString();
       })

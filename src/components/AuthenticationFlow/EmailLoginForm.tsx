@@ -2,8 +2,7 @@ import Cookies from 'js-cookie';
 import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
-import { FIRST_LOGIN_TAG } from './TriggerVerifyAccount';
+import { FIRST_LOGIN_PARAM, setAuthToken } from '../../lib/jwt';
 
 type EmailLoginFormProps = {
   isDisabled?: boolean;
@@ -40,7 +39,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
       const currentLocation = window.location.href;
       const url = new URL(currentLocation, window.location.origin);
       if (response?.isNewUser) {
-        url.searchParams.set(FIRST_LOGIN_TAG, '1');
+        url.searchParams.set(FIRST_LOGIN_PARAM, '1');
       }
       window.location.href = url.toString();
       return;
