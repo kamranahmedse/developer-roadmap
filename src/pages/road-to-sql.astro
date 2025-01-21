@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 import SkeletonLayout from '../layouts/SkeletonLayout.astro';
+import { ClipboardList, FileQuestion, Brain, Code } from 'lucide-react';
 ---
 
 <SkeletonLayout title='Road to SQL'>
@@ -11,7 +11,7 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
       <div
         class='inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500'
       >
-        Master SQL in Weeks, Not Months
+        Complete Course to Master Practical SQL
       </div>
 
       <h1
@@ -31,23 +31,39 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
           developers, data analysts, and anyone working with data.
         </p>
 
+        <div
+          class='mb-12 mt-12 flex flex-row items-center justify-center gap-4'
+        >
+          <div class='flex flex-row gap-2'>
+            <ClipboardList className='h-6 w-6 text-yellow-500' />
+            <span>55+ Practical Lessons</span>
+          </div>
+          <div class='flex flex-row gap-2'>
+            <FileQuestion className='h-6 w-6 text-yellow-500' />
+            <span>100+ Challenges</span>
+          </div>
+          <div class='flex flex-row gap-2'>
+            <Code className='h-6 w-6 text-yellow-500' />
+            <span>Integrated IDE</span>
+          </div>
+          <div class='flex flex-row gap-2'>
+            <Brain className='h-6 w-6 text-yellow-500' />
+            <span>AI Tutor</span>
+          </div>
+        </div>
+
         <div class='relative mt-16'>
           <div class='absolute inset-0 flex items-center' aria-hidden='true'>
             <div class='w-full border-t border-zinc-800'></div>
           </div>
           <div class='relative flex justify-center'>
             <span
-              class='rounded-full bg-zinc-900 px-4 py-0.5 text-sm text-zinc-500'
+              class='rounded-full bg-zinc-800 px-4 py-0.5 text-sm text-zinc-500'
             >
-              Why This Course?
+              What's Covered
             </span>
           </div>
         </div>
-
-        <p class='mt-4 text-lg text-zinc-500 md:text-base'>
-          No-fluff, practical lessons, that teach you from basic select queries to
-          complex joins, subqueries, window functions, CTEs, and more.
-        </p>
 
         <div class='mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
           <div
@@ -55,21 +71,6 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
           >
             <div class='relative'>
               <div class='flex items-center justify-center'>
-                <div class='text-4xl font-bold text-yellow-500'>55</div>
-              </div>
-              <div class='mt-2 text-sm font-medium text-zinc-300'>
-                Textual Lessons
-              </div>
-              <div class='mt-1 text-xs text-zinc-500'>
-                No-fluff, lessons to help you understand SQL
-              </div>
-            </div>
-          </div>
-          <div
-            class='relative overflow-hidden rounded-2xl bg-zinc-800/30 px-6 py-8'
-          >
-            <div class='relative'>
-              <div class='flex items-center'>
                 <div class='text-4xl font-bold text-yellow-500'>50+</div>
               </div>
               <div class='mt-2 text-sm font-medium text-zinc-300'>
@@ -79,7 +80,6 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
                 From Industry Experts
               </div>
             </div>
-
           </div>
           <div
             class='relative overflow-hidden rounded-2xl bg-zinc-800/30 px-6 py-8'
@@ -346,4 +346,3 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
     </div>
   </div>
 </SkeletonLayout>
-
