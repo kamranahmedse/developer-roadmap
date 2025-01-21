@@ -1,7 +1,349 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SkeletonLayout from '../layouts/SkeletonLayout.astro';
 ---
 
-<BaseLayout title='Road to SQL'>
-  
-</BaseLayout>
+<SkeletonLayout title='Road to SQL'>
+  <div
+    class='flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-16 text-zinc-400'
+  >
+    <div class='max-w-4xl text-center'>
+      <div
+        class='inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500'
+      >
+        Master SQL in Weeks, Not Months
+      </div>
+
+      <h1
+        class='mt-8 text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl'
+      >
+        Master SQL Queries
+        <div
+          class='mt-2 bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent'
+        >
+          From Basic to Advanced
+        </div>
+      </h1>
+
+      <div class='mx-auto mt-12 max-w-2xl'>
+        <p class='text-xl text-zinc-300 md:text-2xl'>
+          A structured course to master database querying - perfect for
+          developers, data analysts, and anyone working with data.
+        </p>
+
+        <div class='relative mt-16'>
+          <div class='absolute inset-0 flex items-center' aria-hidden='true'>
+            <div class='w-full border-t border-zinc-800'></div>
+          </div>
+          <div class='relative flex justify-center'>
+            <span
+              class='rounded-full bg-zinc-900 px-4 py-0.5 text-sm text-zinc-500'
+            >
+              Why This Course?
+            </span>
+          </div>
+        </div>
+
+        <p class='mt-4 text-lg text-zinc-500 md:text-base'>
+          No-fluff, practical lessons, that teach you from basic select queries to
+          complex joins, subqueries, window functions, CTEs, and more.
+        </p>
+
+        <div class='mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
+          <div
+            class='relative overflow-hidden rounded-2xl bg-zinc-800/30 px-6 py-8'
+          >
+            <div class='relative'>
+              <div class='flex items-center justify-center'>
+                <div class='text-4xl font-bold text-yellow-500'>55</div>
+              </div>
+              <div class='mt-2 text-sm font-medium text-zinc-300'>
+                Textual Lessons
+              </div>
+              <div class='mt-1 text-xs text-zinc-500'>
+                No-fluff, lessons to help you understand SQL
+              </div>
+            </div>
+          </div>
+          <div
+            class='relative overflow-hidden rounded-2xl bg-zinc-800/30 px-6 py-8'
+          >
+            <div class='relative'>
+              <div class='flex items-center'>
+                <div class='text-4xl font-bold text-yellow-500'>50+</div>
+              </div>
+              <div class='mt-2 text-sm font-medium text-zinc-300'>
+                Real-world Examples
+              </div>
+              <div class='mt-1 text-xs text-zinc-500'>
+                From Industry Experts
+              </div>
+            </div>
+
+          </div>
+          <div
+            class='relative overflow-hidden rounded-2xl bg-zinc-800/30 px-6 py-8'
+          >
+            <div class='relative'>
+              <div class='flex items-center'>
+                <div class='text-4xl font-bold text-yellow-500'>∞</div>
+              </div>
+              <div class='mt-2 text-sm font-medium text-zinc-300'>
+                AI Support
+              </div>
+              <div class='mt-1 text-xs text-zinc-500'>
+                Personal AI Instructor
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='relative mt-16'>
+          <div class='absolute inset-0 flex items-center' aria-hidden='true'>
+            <div class='w-full border-t border-zinc-800'></div>
+          </div>
+          <div class='relative flex justify-center'>
+            <span class='bg-zinc-900 px-4 text-sm text-zinc-500'
+              >PLATFORM FEATURES</span
+            >
+          </div>
+        </div>
+
+        <div class='mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3'>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'></path>
+            </svg>
+            <span>Live Coding</span>
+          </div>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+              ></path>
+            </svg>
+            <span>Interactive IDE</span>
+          </div>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M13 10V3L4 14h7v7l9-11h-7z'></path>
+            </svg>
+            <span>Instant Feedback</span>
+          </div>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5'
+              ></path>
+            </svg>
+            <span>AI Instructor</span>
+          </div>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2'
+              ></path>
+            </svg>
+            <span>Smart Notes</span>
+          </div>
+          <div
+            class='flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left'
+          >
+            <svg
+              class='h-5 w-5 text-yellow-500'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z'
+              ></path>
+            </svg>
+            <span>SQL Challenges</span>
+          </div>
+        </div>
+
+        <div class='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2'>
+          <div class='rounded-xl bg-zinc-800/30 p-6 text-left'>
+            <div class='flex items-center'>
+              <div class='rounded-lg bg-yellow-500/10 p-2'>
+                <svg
+                  class='h-6 w-6 text-yellow-500'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z'
+                  ></path>
+                </svg>
+              </div>
+              <div class='ml-4 text-lg font-semibold text-white'>
+                Learn by Doing
+              </div>
+            </div>
+            <p class='mt-2 text-sm'>
+              Practice with real-world scenarios, live SQL environment, and
+              instant feedback on your queries
+            </p>
+          </div>
+          <div class='rounded-xl bg-zinc-800/30 p-6 text-left'>
+            <div class='flex items-center'>
+              <div class='rounded-lg bg-yellow-500/10 p-2'>
+                <svg
+                  class='h-6 w-6 text-yellow-500'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10'
+                  ></path>
+                </svg>
+              </div>
+              <div class='ml-4 text-lg font-semibold text-white'>
+                Industry-Ready Skills
+              </div>
+            </div>
+            <p class='mt-2 text-sm'>
+              Learn best practices and patterns used by top tech companies in
+              their database operations
+            </p>
+          </div>
+          <div class='rounded-xl bg-zinc-800/30 p-6 text-left'>
+            <div class='flex items-center'>
+              <div class='rounded-lg bg-yellow-500/10 p-2'>
+                <svg
+                  class='h-6 w-6 text-yellow-500'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+                </svg>
+              </div>
+              <div class='ml-4 text-lg font-semibold text-white'>
+                Self-Paced Learning
+              </div>
+            </div>
+            <p class='mt-2 text-sm'>
+              Learn at your own pace with lifetime access to all course
+              materials and future updates
+            </p>
+          </div>
+          <div class='rounded-xl bg-zinc-800/30 p-6 text-left'>
+            <div class='flex items-center'>
+              <div class='rounded-lg bg-yellow-500/10 p-2'>
+                <svg
+                  class='h-6 w-6 text-yellow-500'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+                  ></path>
+                </svg>
+              </div>
+              <div class='ml-4 text-lg font-semibold text-white'>
+                Industry Recognition
+              </div>
+            </div>
+            <p class='mt-2 text-sm'>
+              Earn a verifiable certificate that showcases your SQL expertise to
+              employers
+            </p>
+          </div>
+        </div>
+
+        <div class='mt-12 rounded-xl bg-yellow-500/10 p-8 text-left'>
+          <div class='flex items-center justify-between'>
+            <div>
+              <h3 class='text-xl font-bold text-white'>
+                Ready to Start Your SQL Journey?
+              </h3>
+              <p class='mt-2 text-zinc-400'>
+                Join thousands of successful learners who have mastered SQL with
+                us
+              </p>
+            </div>
+            <button
+              class='rounded-lg bg-yellow-500 px-6 py-3 text-sm font-semibold text-black hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-zinc-900'
+            >
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</SkeletonLayout>
+
