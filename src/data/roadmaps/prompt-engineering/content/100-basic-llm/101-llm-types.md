@@ -4,7 +4,7 @@ On a high level, LLMs can be categorized into two types i.e. Base LLMs and Instr
 
 ## Base LLMs
 
-Base LLMs are the LLMs which are designed to predict the next word based on the training data. They are not designed to answer questions, carry out conversations or help solve problems. For example, if you give a base LLM the sentence "In this book about LLMs, we will discuss", it might complete this sentence and give you "In this book about LLMs, we will discsus **what LLMs are, how they work, and how you can leverage them in your applications.**." Or if you give it "What are some famous social networks?", instead of answering it might give back "Why do people use social networks?" or "What are some of the benefits of social networks?". As you can see, it is giving us relevant text but it is not answering the question. This is where the Instruction tuned LLMs come in to the picture.
+Base LLMs are the LLMs which are designed to predict the next word based on the training data. They are not designed to answer questions, carry out conversations or help solve problems. For example, if you give a base LLM the sentence "In this book about LLMs, we will discuss", it might complete this sentence and give you "In this book about LLMs, we will discsus **what LLMs are, how they work, and how you can leverage them in your applications.**" Or if you give it "What are some famous social networks?", instead of answering it might give back "Why do people use social networks?" or "What are some of the benefits of social networks?". As you can see, it is giving us relevant text but it is not answering the question. This is where the Instruction Tuned LLMs come into the picture.
 
 ## Instruction tuned LLMs
 
