@@ -4,4 +4,4 @@ Tuples are immutable sequences, meaning that once a tuple is created, its elemen
 
 - [@official@Tuples Documentation](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
 - [@article@When and How to Use Tuples](https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/)
-- [@video@why are Tuples even a thing?](https://www.youtube.com/watch?v=fR_D_KIAYrE).
+- [@video@why are Tuples even a thing?](https://www.youtube.com/watch?v=fR_D_KIAYrE)
