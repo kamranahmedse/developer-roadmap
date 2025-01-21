@@ -557,11 +557,11 @@
   },
   "fY8zgbB13wxZ1CFtMSdZZ": {
     "title": "SQL Tuning",
-    "description": "SQL tuning is a broad topic and many books have been written as reference. It's important to benchmark and profile to simulate and uncover bottlenecks.\n\n*   Benchmark - Simulate high-load situations with tools such as ab.\n*   Profile - Enable tools such as the slow query log to help track performance issues.\n\nBenchmarking and profiling might point you to the following optimizations.\n\nTo learn more, visit the following links:",
+    "description": "SQL tuning is the attempt to diagnose and repair SQL statements that fail to meet a performance standard. It is a broad topic and many books have been written as reference. It's important to benchmark and profile to simulate and uncover bottlenecks.\n\n*   Benchmark - Simulate high-load situations with tools such as ab.\n*   Profile - Enable tools such as the slow query log to help track performance issues.\n\nBenchmarking and profiling might point you to the following optimizations.\n\nTo learn more, visit the following links:",
     "links": [
       {
-        "title": "Optimizing MySQL Queries",
-        "url": "https://aiddroid.com/10-tips-optimizing-mysql-queries-dont-suck/",
+        "title": "Introduction to SQL Tuning - Oracle",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/tgsql/introduction-to-sql-tuning.html#GUID-B653E5F3-F078-4BBC-9516-B892960046A2",
         "type": "article"
       },
       {
