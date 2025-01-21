@@ -21,7 +21,7 @@ Summarize the text delimited by triple curly braces into a single sentence.
 ```
 
 ```
-Translate the text delimited by tripple quotes into Arabic
+Translate the text delimited by triple quotes into Arabic.
 
 """How are you?"""
 ```
