@@ -4,4 +4,5 @@ Global properties allows you to add properties or methods that can be accessed t
 
 Visit the following resources to learn more:
 
+- [@official@Application API - globalProperties](https://vuejs.org/api/application.html#app-config-globalproperties)
 - [@article@Vue.js Global Properties](https://blog.logrocket.com/vue-js-globalproperties/)

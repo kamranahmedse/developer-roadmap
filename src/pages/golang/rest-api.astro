@@ -5,7 +5,7 @@ import { getGuideById } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { replaceVariables } from '../../lib/markdown';
 
-const guideId = 'devops-vs-developer';
+const guideId = 'golang-rest-api';
 const guide = await getGuideById(guideId);
 
 const { frontmatter: guideData } = guide!;
@@ -19,8 +19,8 @@ const ogImageUrl =
 ---
 
 <BaseLayout
-  title={replaceVariables(guideData.seo.title)}
-  description={replaceVariables(guideData.seo.description)}
+  title={guideData.seo.title}
+  description={guideData.seo.description}
   permalink={guideData.excludedBySlug}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}

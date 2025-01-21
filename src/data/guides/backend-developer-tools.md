@@ -25,7 +25,7 @@ tags:
 
 As developers, we’re not just writing code on a text editor without any other external help. Whether we realize it or not, we’re constantly using different development tools to improve the way we work and the speed at which we can deliver our code.
 
-In this article, we’ll cover 25 backend development tools that are crucial in the web development industry, and as a [backend developer](/backend), you should be aware of them.
+In this article, we’ll cover 25 backend development tools that are crucial in the web development industry, and as a [backend developer](https://roadmap.sh/backend), you should be aware of them.
 
 The categories we’ll tackle are:
 

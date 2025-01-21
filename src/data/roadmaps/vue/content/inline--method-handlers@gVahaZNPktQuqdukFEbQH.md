@@ -4,4 +4,5 @@ In Vue.js, **inline handlers** are defined directly in the template using expres
 
 Visit the following resources to learn more:
 
-- [@official@Method Handlers](https://v1.vuejs.org/guide/events.html)
+- [@official@Inline Handlers](https://vuejs.org/guide/essentials/event-handling#inline-handlers)
+- [@official@Method Handlers](https://vuejs.org/guide/essentials/event-handling#method-handlers)

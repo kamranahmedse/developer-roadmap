@@ -17,7 +17,7 @@ const links = [
     isHighlighted: true,
   },
   {
-    link: '/ai/explore',
+    link: '/ai',
     label: 'AI Roadmaps',
     description: 'Generate roadmaps with AI',
     Icon: Sparkles,
