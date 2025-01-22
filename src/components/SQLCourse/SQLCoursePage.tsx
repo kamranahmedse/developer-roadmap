@@ -291,6 +291,10 @@ export function SQLCoursePage() {
         </div>
       </div>
 
+      <div className="max-w-3xl text-left w-full mt-9">
+        <p className="text-xl leading-snug">Oh, and you get the lifetime access to the course and all the updates. Also, there is a certificate of completion which you can share with your potential employers.</p>
+      </div>
+
       <SectionHeader
         title="Course Overview"
         description="The course is designed to help you go from SQL beginner to expert
