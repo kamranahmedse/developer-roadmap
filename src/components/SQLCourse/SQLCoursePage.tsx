@@ -1,24 +1,23 @@
 import {
-  ArrowRightIcon,
-  BookIcon,
-  BrainIcon,
-  ClipboardIcon,
-  ClockIcon,
-  CodeIcon,
-  FileQuestionIcon,
-  LayersIcon,
-  LightbulbIcon,
-  ShieldCheckIcon,
-  DatabaseIcon,
-  TableIcon,
-  GitMergeIcon,
-  WrenchIcon,
-  BarChartIcon,
-  GitBranchIcon,
-  ArrowUpDownIcon,
+    ArrowRightIcon,
+    ArrowUpDownIcon,
+    BarChartIcon,
+    BrainIcon,
+    ClipboardIcon,
+    CodeIcon,
+    DatabaseIcon,
+    Eye,
+    FileQuestionIcon,
+    GitBranchIcon,
+    GitMergeIcon,
+    LayersIcon,
+    TableIcon,
+    WrenchIcon
 } from 'lucide-react';
 import { ChapterRow } from './ChapterRow';
+import { CourseFeature } from './CourseFeature';
 import { SectionHeader } from './SectionHeader';
+import { Spotlight } from './Spotlight';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -229,7 +228,8 @@ export function SQLCoursePage() {
 
   return (
     <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-16 text-zinc-400">
-      <div className="mt-20 max-w-3xl text-center">
+      <div className="relative mt-20 max-w-3xl text-center">
+        <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
         <div className="inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500">
           Complete Course to Master Practical SQL
         </div>
@@ -277,35 +277,17 @@ export function SQLCoursePage() {
 
       <SectionHeader
         title="Not your average SQL course"
-        description="It's not just the no-fluff, textual course with a focus on practical challenges that makes this course unique. There are features that make it stand out from the rest."
+        description="It's not just a no-fluff, text-based interactive course with focus on practical challenges that makes this course unique. There are features that make it stand out from the rest."
       />
 
-      <div className="mx-auto w-full max-w-3xl mt-10">
+      <div className="mx-auto mt-10 w-full max-w-3xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <CodeIcon />
-            <span>Interactive IDE</span>
-          </div>
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <LayersIcon />
-            <span>Interactive IDE</span>
-          </div>
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <ArrowRightIcon />
-            <span>Instant Feedback</span>
-          </div>
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <BrainIcon />
-            <span>AI Instructor</span>
-          </div>
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <ClipboardIcon />
-            <span>Smart Notes</span>
-          </div>
-          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-            <FileQuestionIcon />
-            <span>SQL Challenges</span>
-          </div>
+          <CourseFeature title="Textual Course" icon={Eye} />
+          <CourseFeature title="Interactive IDE" icon={CodeIcon} />
+          <CourseFeature title="Practical Challenges" icon={FileQuestionIcon} />
+          <CourseFeature title="Instant Feedback" icon={ArrowRightIcon} />
+          <CourseFeature title="AI Instructor" icon={BrainIcon} />
+          <CourseFeature title="Take Notes" icon={ClipboardIcon} />
         </div>
       </div>
 

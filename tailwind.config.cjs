@@ -37,11 +37,22 @@ module.exports = {
             opacity: '1',
           },
         },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
       animation: {
         'fade-slide-up':
           'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
         'fade-in': 'fade-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
     },
     container: {
