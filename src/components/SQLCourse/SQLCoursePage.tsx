@@ -311,7 +311,7 @@ export function SQLCoursePage() {
             title="Take Notes"
             icon={ClipboardIcon}
             description="The course allows you to take notes, where you can write down your thoughts and ideas. You can visit them later to review your progress."
-            imgUrl='https://assets.roadmap.sh/guest/course-notes.png'
+            imgUrl="https://assets.roadmap.sh/guest/course-notes.png"
           />
           <CourseFeature
             title="Completion Certificate"
