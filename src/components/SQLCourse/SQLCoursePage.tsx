@@ -275,17 +275,17 @@ export function SQLCoursePage() {
       </div>
 
       <div className="mx-auto max-w-4xl">
-        <div className="relative mt-16 w-full">
+        <div className="relative mt-24 w-full">
           <div className="flex items-center gap-6">
-            <div className="inline-flex items-center rounded-xl bg-gradient-to-r from-yellow-500/10 to-yellow-300/10 px-6 py-2.5">
-              <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-lg font-semibold text-transparent">
+            <div className="inline-flex items-center rounded-xl py-2.5">
+              <span className="text-zinc-200 text-3xl font-medium">
                 Course Overview
               </span>
             </div>
             <div className="h-[1px] flex-grow bg-gradient-to-r from-yellow-500/20 to-transparent"></div>
           </div>
         </div>
-        <p className="mt-8 text-xl text-zinc-400 leading-snug">
+        <p className="mt-4 text-xl text-zinc-400 leading-snug">
           The course is designed to help you go from SQL beginner to expert
           through hands-on practice with real-world scenarios, mastering
           everything from basic to complex queries.
