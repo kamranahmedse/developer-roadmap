@@ -25,7 +25,7 @@ export function ChapterRow(props: ChapterRowProps) {
     lessons = [],
   } = props;
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const regularLessons = lessons.filter((l) => l.type === 'lesson');
   const challenges = lessons.filter((l) => l.type === 'challenge');
