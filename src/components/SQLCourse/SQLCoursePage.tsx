@@ -277,10 +277,10 @@ export function SQLCoursePage() {
 
       <SectionHeader
         title="Not your average SQL course"
-        description="It's not just a no-fluff, text-based interactive course with focus on practical challenges that makes this course unique. There are features that make it stand out from the rest."
+        description="Built around a text-based interactive approach and packed with practical challenges, this course stands out with features that make it truly unique."
       />
 
-      <div className="mx-auto mt-10 w-full max-w-3xl">
+      <div className="mx-auto mt-10 w-full max-w-5xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
           <CourseFeature title="Textual Course" icon={Eye} />
           <CourseFeature title="Interactive IDE" icon={CodeIcon} />

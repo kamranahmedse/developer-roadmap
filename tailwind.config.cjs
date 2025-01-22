@@ -52,7 +52,7 @@ module.exports = {
         'fade-slide-up':
           'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
         'fade-in': 'fade-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
-        spotlight: "spotlight 2s ease .75s 1 forwards",
+        spotlight: "spotlight 2s ease 0.25s 1 forwards",
       },
     },
     container: {
