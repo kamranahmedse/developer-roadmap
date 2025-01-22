@@ -229,7 +229,7 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 py-16 text-zinc-400">
+    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-16 text-zinc-400">
       <div className="relative mt-20 max-w-3xl text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
         <div className="inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500">
@@ -342,18 +342,52 @@ export function SQLCoursePage() {
         everything from basic to complex queries."
       />
 
-      <div className="my-12 w-full max-w-3xl space-y-4">
+      <div className="mt-12 w-full max-w-3xl space-y-4">
         {chapters.map((chapter, index) => (
           <ChapterRow key={index} {...chapter} />
         ))}
       </div>
 
       <SectionHeader
-        title="Platform Features"
-        description="The course is designed to help you go from SQL beginner to expert
-        through hands-on practice with real-world scenarios, mastering
-        everything from basic to complex queries."
+        title="Who are you?"
+        description={
+          <div className="mt-4 flex flex-col gap-6 text-xl leading-[1.52]">
+            <p>
+              I am Kamran Ahmed, an engineering leader with 10+ years of
+              experience in the tech industry. Over the years, I have worked on
+              building and scaling software systems, solving real-world
+              problems, and mastering several tools and technologies.
+            </p>
+            <p>
+              I am also the creator of roadmap.sh, a platform trusted by
+              millions of developers to guide their learning journeys. My goal
+              is to simplify complex topics and make learning practical and
+              accessible.
+            </p>
+            <p>
+              In this course, I will share everything I have learned about SQL
+              from the basics to advanced concepts in a way that is easy to
+              understand and apply. Whether you are just starting or looking to
+              sharpen your skills, you are in the right place.
+            </p>
+          </div>
+        }
       />
+
+      <div className="mt-8 w-full max-w-3xl space-y-4">
+        <div className="flex flex-row items-center gap-5">
+          <img
+            src="https://github.com/kamranahmedse.png"
+            className="size-16 rounded-full bg-yellow-500/10"
+          />
+          <div className="flex flex-col">
+            <span className="text-2xl font-medium text-zinc-200">
+              Kamran Ahmed
+            </span>
+            <span className="text-lg text-zinc-500">Software Engineer</span>
+          </div>
+        </div>
+      </div>
 
       <FloatingPurchase />
     </div>

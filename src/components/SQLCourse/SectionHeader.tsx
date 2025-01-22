@@ -1,13 +1,13 @@
 type SectionHeaderProps = {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
 };
 
 export function SectionHeader(props: SectionHeaderProps) {
   const { title, description } = props;
 
   return (
-    <div className="mx-auto max-w-3xl w-full">
+    <div className="mx-auto w-full max-w-3xl">
       <div className="relative mt-24 w-full">
         <div className="flex items-center gap-6">
           <div className="inline-flex items-center rounded-xl py-2.5">
@@ -16,7 +16,11 @@ export function SectionHeader(props: SectionHeaderProps) {
           <div className="h-[1px] flex-grow bg-gradient-to-r from-yellow-500/20 to-transparent"></div>
         </div>
       </div>
-      <p className="mt-4 text-xl leading-snug text-zinc-400">{description}</p>
+      {typeof description === 'string' ? (
+        <p className="mt-4 text-xl leading-snug text-zinc-400">{description}</p>
+      ) : (
+        description
+      )}
     </div>
   );
 }
