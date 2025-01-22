@@ -282,12 +282,12 @@ export function SQLCoursePage() {
 
       <div className="mx-auto mt-10 w-full max-w-5xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <CourseFeature title="Textual Course" icon={Eye} />
-          <CourseFeature title="Interactive IDE" icon={CodeIcon} />
-          <CourseFeature title="Practical Challenges" icon={FileQuestionIcon} />
-          <CourseFeature title="Instant Feedback" icon={ArrowRightIcon} />
-          <CourseFeature title="AI Instructor" icon={BrainIcon} />
-          <CourseFeature title="Take Notes" icon={ClipboardIcon} />
+          <CourseFeature title="Textual Course" icon={Eye} description='Unlike video-based courses, where you have to learn at the pace of the instructor, this course is text-based and you can learn at your own pace.' />
+          <CourseFeature title="Interactive IDE" icon={CodeIcon} description='The course is built around an interactive IDE, where you can write and run SQL queries in real-time.' />
+          <CourseFeature title="Practical Challenges" icon={FileQuestionIcon} description='The course is packed with practical challenges, where you can test your knowledge and skills.' />
+          <CourseFeature title="Instant Feedback" icon={ArrowRightIcon} description='The course provides instant feedback, where you can see the results of your queries immediately.' />
+          <CourseFeature title="AI Instructor" icon={BrainIcon} description='There is an AI chatbot that acts as your instructor, answering questions, helping you with your queries and providing guidance.' />
+          <CourseFeature title="Take Notes" icon={ClipboardIcon} description='The course allows you to take notes, where you can write down your thoughts and ideas. You can visit them later to review your progress.' />
         </div>
       </div>
 
