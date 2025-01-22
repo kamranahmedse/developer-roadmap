@@ -18,6 +18,7 @@ import {
   ArrowUpDownIcon,
 } from 'lucide-react';
 import { ChapterRow } from './ChapterRow';
+import { SectionHeader } from './SectionHeader';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -274,150 +275,59 @@ export function SQLCoursePage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl">
-        <div className="relative mt-24 w-full">
-          <div className="flex items-center gap-6">
-            <div className="inline-flex items-center rounded-xl py-2.5">
-              <span className="text-zinc-200 text-3xl font-medium">
-                Course Overview
-              </span>
-            </div>
-            <div className="h-[1px] flex-grow bg-gradient-to-r from-yellow-500/20 to-transparent"></div>
+      <SectionHeader
+        title="Not your average SQL course"
+        description="It's not just the no-fluff, textual course with a focus on practical challenges that makes this course unique. There are features that make it stand out from the rest."
+      />
+
+      <div className="mx-auto w-full max-w-3xl mt-10">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <CodeIcon />
+            <span>Interactive IDE</span>
+          </div>
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <LayersIcon />
+            <span>Interactive IDE</span>
+          </div>
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <ArrowRightIcon />
+            <span>Instant Feedback</span>
+          </div>
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <BrainIcon />
+            <span>AI Instructor</span>
+          </div>
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <ClipboardIcon />
+            <span>Smart Notes</span>
+          </div>
+          <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
+            <FileQuestionIcon />
+            <span>SQL Challenges</span>
           </div>
         </div>
-        <p className="mt-4 text-xl text-zinc-400 leading-snug">
-          The course is designed to help you go from SQL beginner to expert
-          through hands-on practice with real-world scenarios, mastering
-          everything from basic to complex queries.
-        </p>
       </div>
 
-      <div className="my-12 w-full max-w-4xl space-y-4">
+      <SectionHeader
+        title="Course Overview"
+        description="The course is designed to help you go from SQL beginner to expert
+        through hands-on practice with real-world scenarios, mastering
+        everything from basic to complex queries."
+      />
+
+      <div className="my-12 w-full max-w-3xl space-y-4">
         {chapters.map((chapter, index) => (
           <ChapterRow key={index} {...chapter} />
         ))}
       </div>
 
-      <div className="max-w-2xl">
-        <div className="mx-auto mt-12 max-w-2xl">
-          <div className="relative mt-16">
-            <div
-              className="absolute inset-0 flex items-center"
-              aria-hidden="true"
-            >
-              <div className="w-full border-t border-zinc-800"></div>
-            </div>
-            <div className="relative flex justify-center">
-              <span className="bg-zinc-900 px-4 text-sm text-zinc-500">
-                PLATFORM FEATURES
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <CodeIcon />
-              <span>Live Coding</span>
-            </div>
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <LayersIcon />
-              <span>Interactive IDE</span>
-            </div>
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <ArrowRightIcon />
-              <span>Instant Feedback</span>
-            </div>
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <BrainIcon />
-              <span>AI Instructor</span>
-            </div>
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <ClipboardIcon />
-              <span>Smart Notes</span>
-            </div>
-            <div className="flex items-center space-x-3 rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left">
-              <FileQuestionIcon />
-              <span>SQL Challenges</span>
-            </div>
-          </div>
-
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-xl bg-zinc-800/30 p-6 text-left">
-              <div className="flex items-center">
-                <div className="rounded-lg bg-yellow-500/10 p-2">
-                  <LightbulbIcon />
-                </div>
-                <div className="ml-4 text-lg font-semibold text-white">
-                  Learn by Doing
-                </div>
-              </div>
-              <p className="mt-2 text-sm">
-                Practice with real-world scenarios, live SQL environment, and
-                instant feedback on your queries
-              </p>
-            </div>
-            <div className="rounded-xl bg-zinc-800/30 p-6 text-left">
-              <div className="flex items-center">
-                <div className="rounded-lg bg-yellow-500/10 p-2">
-                  <LayersIcon />
-                </div>
-                <div className="ml-4 text-lg font-semibold text-white">
-                  Industry-Ready Skills
-                </div>
-              </div>
-              <p className="mt-2 text-sm">
-                Learn best practices and patterns used by top tech companies in
-                their database operations
-              </p>
-            </div>
-            <div className="rounded-xl bg-zinc-800/30 p-6 text-left">
-              <div className="flex items-center">
-                <div className="rounded-lg bg-yellow-500/10 p-2">
-                  <ClockIcon />
-                </div>
-                <div className="ml-4 text-lg font-semibold text-white">
-                  Self-Paced Learning
-                </div>
-              </div>
-              <p className="mt-2 text-sm">
-                Learn at your own pace with lifetime access to all course
-                materials and future updates
-              </p>
-            </div>
-            <div className="rounded-xl bg-zinc-800/30 p-6 text-left">
-              <div className="flex items-center">
-                <div className="rounded-lg bg-yellow-500/10 p-2">
-                  <ShieldCheckIcon />
-                </div>
-                <div className="ml-4 text-lg font-semibold text-white">
-                  Industry Recognition
-                </div>
-              </div>
-              <p className="mt-2 text-sm">
-                Earn a verifiable certificate that showcases your SQL expertise
-                to employers
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-12 rounded-xl bg-yellow-500/10 p-8 text-left">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-xl font-bold text-white">
-                  Ready to Start Your SQL Journey?
-                </h3>
-                <p className="mt-2 text-zinc-400">
-                  Join thousands of successful learners who have mastered SQL
-                  with us
-                </p>
-              </div>
-              <button className="rounded-lg bg-yellow-500 px-6 py-3 text-sm font-semibold text-black hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-zinc-900">
-                Enroll Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <SectionHeader
+        title="Platform Features"
+        description="The course is designed to help you go from SQL beginner to expert
+        through hands-on practice with real-world scenarios, mastering
+        everything from basic to complex queries."
+      />
     </div>
   );
 }
