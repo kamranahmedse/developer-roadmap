@@ -179,6 +179,16 @@
         "title": "Tuples Documentation",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
         "type": "article"
+      },
+      {
+        "title": "When and How to Use Tuples",
+        "url": "https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/",
+        "type": "article"
+      },
+      {
+        "title": "why are Tuples even a thing?",
+        "url": "https://www.youtube.com/watch?v=fR_D_KIAYrE",
+        "type": "video"
       }
     ]
   },

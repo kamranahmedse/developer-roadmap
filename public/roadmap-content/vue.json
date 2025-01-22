@@ -235,6 +235,11 @@
     "description": "Global properties allows you to add properties or methods that can be accessed throughout your application. This is particularly useful for sharing functionality or data across components without the need to pass props explicitly.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Application API - globalProperties",
+        "url": "https://vuejs.org/api/application.html#app-config-globalproperties",
+        "type": "article"
+      },
+      {
         "title": "Vue.js Global Properties",
         "url": "https://blog.logrocket.com/vue-js-globalproperties/",
         "type": "article"
@@ -544,7 +549,7 @@
     "links": [
       {
         "title": "Modifiers",
-        "url": "https://v2.vuejs.org/v2/guide/components-custom-events.html",
+        "url": "https://vuejs.org/guide/essentials/forms.html#modifiers",
         "type": "article"
       }
     ]

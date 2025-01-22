@@ -583,7 +583,7 @@
     "links": [
       {
         "title": "pg_ctlcluster",
-        "url": "https://www.postgresql.org/docs/current/pgctlcluster.html",
+        "url": "https://manpages.ubuntu.com/manpages/focal/man1/pg_ctlcluster.1.html",
         "type": "article"
       }
     ]
