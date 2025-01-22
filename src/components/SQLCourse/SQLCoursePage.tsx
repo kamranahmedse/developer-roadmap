@@ -353,16 +353,23 @@ export function SQLCoursePage() {
         description={
           <div className="mt-4 flex flex-col gap-6 text-xl leading-[1.52]">
             <p>
-              I am Kamran Ahmed, an engineering leader with 10+ years of
-              experience in the tech industry. Over the years, I have worked on
-              building and scaling software systems, solving real-world
-              problems, and mastering several tools and technologies.
+              I am Kamran Ahmed, an engineering leader with over a decade of
+              experience in the tech industry. Throughout my career I have built
+              and scaled software systems, architected complex data systems, and
+              worked with large amounts of data to create efficient solutions.
             </p>
             <p>
-              I am also the creator of roadmap.sh, a platform trusted by
-              millions of developers to guide their learning journeys. My goal
-              is to simplify complex topics and make learning practical and
-              accessible.
+              I am also the creator of{' '}
+              <a
+                href="https://roadmap.sh"
+                target="_blank"
+                className="text-yellow-400"
+              >
+                roadmap.sh
+              </a>
+              , a platform trusted by millions of developers to guide their
+              learning journeys. I love to simplify complex topics and make
+              learning practical and accessible.
             </p>
             <p>
               In this course, I will share everything I have learned about SQL
