@@ -1,18 +1,19 @@
 import {
-    ArrowRightIcon,
-    ArrowUpDownIcon,
-    BarChartIcon,
-    BrainIcon,
-    ClipboardIcon,
-    CodeIcon,
-    DatabaseIcon,
-    Eye,
-    FileQuestionIcon,
-    GitBranchIcon,
-    GitMergeIcon,
-    LayersIcon,
-    TableIcon,
-    WrenchIcon
+  ArrowRightIcon,
+  ArrowUpDownIcon,
+  BarChartIcon,
+  BrainIcon,
+  ClipboardIcon,
+  CodeIcon,
+  DatabaseIcon,
+  Eye,
+  FileCheckIcon,
+  FileQuestionIcon,
+  GitBranchIcon,
+  GitMergeIcon,
+  LayersIcon,
+  TableIcon,
+  WrenchIcon,
 } from 'lucide-react';
 import { ChapterRow } from './ChapterRow';
 import { CourseFeature } from './CourseFeature';
@@ -282,17 +283,55 @@ export function SQLCoursePage() {
 
       <div className="mx-auto mt-10 w-full max-w-5xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <CourseFeature title="Textual Course" icon={Eye} description='Unlike video-based courses, where you have to learn at the pace of the instructor, this course is text-based and you can learn at your own pace.' />
-          <CourseFeature title="Interactive IDE" icon={CodeIcon} description='The course is built around an interactive IDE, where you can write and run SQL queries in real-time.' />
-          <CourseFeature title="Practical Challenges" icon={FileQuestionIcon} description='The course is packed with practical challenges, where you can test your knowledge and skills.' />
-          <CourseFeature title="Instant Feedback" icon={ArrowRightIcon} description='The course provides instant feedback, where you can see the results of your queries immediately.' />
-          <CourseFeature title="AI Instructor" icon={BrainIcon} description='There is an AI chatbot that acts as your instructor, answering questions, helping you with your queries and providing guidance.' />
-          <CourseFeature title="Take Notes" icon={ClipboardIcon} description='The course allows you to take notes, where you can write down your thoughts and ideas. You can visit them later to review your progress.' />
+          <CourseFeature
+            title="Textual Course"
+            icon={Eye}
+            imgUrl="https://assets.roadmap.sh/guest/textual-course.png"
+            description="Unlike video-based courses where you have to learn at the pace of the instructor, this course is text-based, allowing you to learn at your own pace."
+          />
+          <CourseFeature
+            title="Coding Environment"
+            icon={CodeIcon}
+            imgUrl="https://assets.roadmap.sh/guest/coding-environment.png"
+            description="With the integrated IDE, you can practice your SQL queries in real-time, getting instant feedback on your results."
+          />
+          <CourseFeature
+            title="Practical Challenges"
+            icon={FileQuestionIcon}
+            imgUrl="https://assets.roadmap.sh/guest/coding-challenges.png"
+            description="The course is packed with practical challenges and quizzes, allowing you to test your knowledge and skills."
+          />
+          <CourseFeature
+            title="AI Instructor"
+            icon={BrainIcon}
+            description="Powerful AI tutor to help you with your queries, provide additional explanations and help if you get stuck."
+            imgUrl="https://assets.roadmap.sh/guest/ai-integration.png"
+          />
+          <CourseFeature
+            title="Take Notes"
+            icon={ClipboardIcon}
+            description="The course allows you to take notes, where you can write down your thoughts and ideas. You can visit them later to review your progress."
+            imgUrl='https://assets.roadmap.sh/guest/course-notes.png'
+          />
+          <CourseFeature
+            title="Completion Certificate"
+            icon={FileCheckIcon}
+            imgUrl="https://assets.roadmap.sh/guest/course-certificate.jpg"
+            description="The course provides a completion certificate, which you can share with your potential employers."
+          />
         </div>
       </div>
 
-      <div className="max-w-3xl text-left w-full mt-9">
-        <p className="text-xl leading-snug">Oh, and you get the lifetime access to the course and all the updates. Also, there is a certificate of completion which you can share with your potential employers.</p>
+      <div className="mt-9 w-full max-w-3xl text-left">
+        <p className="text-xl leading-snug">
+          Oh, and you get the{' '}
+          <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
+            lifetime access
+          </span>{' '}
+          to the course including all the future updates. Also, there is a
+          certificate of completion which you can share with your potential
+          employers.
+        </p>
       </div>
 
       <SectionHeader

@@ -1,20 +1,48 @@
 import { MinusIcon, PlusIcon, type LucideIcon } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 
 type CourseFeatureProps = {
   title: string;
   icon: LucideIcon;
   description: string;
+  imgUrl?: string;
 };
 
 export function CourseFeature(props: CourseFeatureProps) {
-  const { title, icon: Icon, description } = props;
+  const { title, icon: Icon, description, imgUrl } = props;
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      if (isZoomed) {
+        setIsZoomed(false);
+      }
+    }
+
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isZoomed]);
 
   return (
     <>
+      {isZoomed && (
+        <div
+          onClick={() => {
+            setIsZoomed(false);
+            setIsExpanded(false);
+          }}
+          className="fixed inset-0 z-[999] flex cursor-zoom-out items-center justify-center bg-black bg-opacity-75"
+        >
+          <img
+            src={imgUrl}
+            alt={title}
+            className="max-h-[50%] max-w-[90%] rounded-xl object-contain"
+          />
+        </div>
+      )}
       <div
         className={cn(
           'fixed inset-0 z-10 bg-black/70 opacity-100 transition-opacity duration-200 ease-out',
@@ -47,6 +75,17 @@ export function CourseFeature(props: CourseFeatureProps) {
         {isExpanded && (
           <div className="absolute left-0 top-full z-20 translate-y-2 rounded-lg border border-zinc-800 bg-zinc-800 p-4">
             <p>{description}</p>
+            {imgUrl && (
+              <img
+                onClick={() => {
+                  setIsZoomed(true);
+                  setIsExpanded(false);
+                }}
+                src={imgUrl}
+                alt={title}
+                className="mt-4 h-auto w-full cursor-zoom-in rounded-lg object-right-top"
+              />
+            )}
           </div>
         )}
       </div>
