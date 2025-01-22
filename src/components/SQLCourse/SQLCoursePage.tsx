@@ -1,71 +1,229 @@
-import { ArrowRightIcon, BookIcon, BrainIcon, ClipboardIcon, ClockIcon, CodeIcon, FileQuestionIcon, LayersIcon, LightbulbIcon, ShieldCheckIcon, DatabaseIcon, TableIcon, GitMergeIcon, WrenchIcon, BarChartIcon, GitBranchIcon, ArrowUpDownIcon } from 'lucide-react';
+import {
+  ArrowRightIcon,
+  BookIcon,
+  BrainIcon,
+  ClipboardIcon,
+  ClockIcon,
+  CodeIcon,
+  FileQuestionIcon,
+  LayersIcon,
+  LightbulbIcon,
+  ShieldCheckIcon,
+  DatabaseIcon,
+  TableIcon,
+  GitMergeIcon,
+  WrenchIcon,
+  BarChartIcon,
+  GitBranchIcon,
+  ArrowUpDownIcon,
+} from 'lucide-react';
 import { ChapterRow } from './ChapterRow';
 
+type ChapterData = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  lessonCount: number;
+  challengeCount: number;
+  lessons: { title: string; type: 'lesson' | 'challenge' }[];
+};
+
 export function SQLCoursePage() {
-  const chapters = [
+  const chapters: ChapterData[] = [
     {
       icon: <DatabaseIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Introduction",
-      description: "Get comfortable with database concepts and SQL fundamentals.",
+      title: 'Introduction',
+      description:
+        'Get comfortable with database concepts and SQL fundamentals.',
       lessonCount: 4,
-      challengeCount: 1
+      challengeCount: 1,
+      lessons: [
+        { title: 'Basics of Databases', type: 'lesson' },
+        { title: 'What is SQL?', type: 'lesson' },
+        { title: 'Types of Queries', type: 'lesson' },
+        { title: 'Next Steps', type: 'lesson' },
+        { title: 'Introduction Quiz', type: 'challenge' },
+      ],
     },
     {
       icon: <TableIcon className="h-6 w-6 text-yellow-500" />,
-      title: "SQL Basics",
-      description: "Master the essential SQL query operations and syntax.",
+      title: 'SQL Basics',
+      description: 'Master the essential SQL query operations and syntax.',
       lessonCount: 9,
-      challengeCount: 3
+      challengeCount: 7,
+      lessons: [
+        { title: 'SELECT Fundamentals', type: 'lesson' },
+        { title: 'Aliases and Constants', type: 'lesson' },
+        { title: 'Expressions in SELECT', type: 'lesson' },
+        { title: 'Selecting DISTINCT Values', type: 'lesson' },
+        { title: 'Filtering with WHERE', type: 'lesson' },
+        { title: 'Sorting with ORDER BY', type: 'lesson' },
+        { title: 'Limiting Results with LIMIT', type: 'lesson' },
+        { title: 'Handling NULL Values', type: 'lesson' },
+        { title: 'Comments', type: 'lesson' },
+        { title: 'Projection Challenge', type: 'challenge' },
+        { title: 'Select Expression', type: 'challenge' },
+        { title: 'Select Unique', type: 'challenge' },
+        { title: 'Logical Operators', type: 'challenge' },
+        { title: 'Sorting Challenge', type: 'challenge' },
+        { title: 'Sorting and Limiting', type: 'challenge' },
+        { title: 'Sorting and Filtering', type: 'challenge' },
+      ],
     },
     {
       icon: <CodeIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Manipulating Data",
-      description: "Learn how to modify and manipulate data in your database.",
+      title: 'Manipulating Data',
+      description: 'Learn how to modify and manipulate data in your database.',
       lessonCount: 3,
-      challengeCount: 3
+      challengeCount: 3,
+      lessons: [
+        { title: 'INSERT Operations', type: 'lesson' },
+        { title: 'UPDATE Operations', type: 'lesson' },
+        { title: 'DELETE Operations', type: 'lesson' },
+        { title: 'Inserting Customers', type: 'challenge' },
+        { title: 'Updating Bookstore', type: 'challenge' },
+        { title: 'Deleting Books', type: 'challenge' },
+      ],
     },
     {
       icon: <LayersIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Defining Tables",
-      description: "Master database schema design and table management.",
-      lessonCount: 4,
-      challengeCount: 2
+      title: 'Defining Tables',
+      description: 'Master database schema design and table management.',
+      lessonCount: 9,
+      challengeCount: 7,
+      lessons: [
+        { title: 'Creating Tables', type: 'lesson' },
+        { title: 'Data Types in SQLite', type: 'lesson' },
+        { title: 'Common Data Types', type: 'lesson' },
+        { title: 'More on Numeric Types', type: 'lesson' },
+        { title: 'Temporal Data Types', type: 'lesson' },
+        { title: 'CHECK Constraints', type: 'lesson' },
+        { title: 'Primary Key Constraint', type: 'lesson' },
+        { title: 'Modifying Tables', type: 'lesson' },
+        { title: 'Dropping and Truncating', type: 'lesson' },
+        { title: 'Simple Table Creation', type: 'challenge' },
+        { title: 'Data Types Challenge', type: 'challenge' },
+        { title: 'Constraints Challenge', type: 'challenge' },
+        { title: 'Temporal Validation', type: 'challenge' },
+        { title: 'Sales Data Analysis', type: 'challenge' },
+        { title: 'Modifying Tables', type: 'challenge' },
+        { title: 'Removing Table Data', type: 'challenge' },
+      ],
     },
     {
       icon: <GitMergeIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Multi-Table Queries",
-      description: "Learn to work with multiple tables using JOINs and relationships.",
-      lessonCount: 4,
-      challengeCount: 2
+      title: 'Multi-Table Queries',
+      description:
+        'Learn to work with multiple tables using JOINs and relationships.',
+      lessonCount: 7,
+      challengeCount: 10,
+      lessons: [
+        { title: 'More on Relational Data', type: 'lesson' },
+        { title: 'Relationships and Types', type: 'lesson' },
+        { title: 'JOINs in Queries', type: 'lesson' },
+        { title: 'Self Joins and Usecases', type: 'lesson' },
+        { title: 'Foreign Key Constraint', type: 'lesson' },
+        { title: 'Set Operator Queries', type: 'lesson' },
+        { title: 'Views and Virtual Tables', type: 'lesson' },
+        { title: 'Inactive Customers', type: 'challenge' },
+        { title: 'Recent 3 Orders', type: 'challenge' },
+        { title: 'High Value Orders', type: 'challenge' },
+        { title: 'Specific Book Customers', type: 'challenge' },
+        { title: 'Referred Customers', type: 'challenge' },
+        { title: 'Readers Like You', type: 'challenge' },
+        { title: 'Same Price Books', type: 'challenge' },
+        { title: 'Multi-Section Authors', type: 'challenge' },
+        { title: 'Expensive Books', type: 'challenge' },
+        { title: 'Trending Tech Books', type: 'challenge' },
+      ],
     },
     {
       icon: <WrenchIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Aggregate Functions",
-      description: "Analyze and summarize data using SQL's powerful aggregation features.",
+      title: 'Aggregate Functions',
+      description:
+        "Analyze and summarize data using SQL's powerful aggregation features.",
       lessonCount: 4,
-      challengeCount: 2
+      challengeCount: 10,
+      lessons: [
+        { title: 'What is Aggregation?', type: 'lesson' },
+        { title: 'Basic Aggregation', type: 'lesson' },
+        { title: 'Grouping Data', type: 'lesson' },
+        { title: 'Grouping and Filtering', type: 'lesson' },
+        { title: 'Book Sales Summary', type: 'challenge' },
+        { title: 'Category Insights', type: 'challenge' },
+        { title: 'Author Tier Analysis', type: 'challenge' },
+        { title: 'Author Book Stats', type: 'challenge' },
+        { title: 'Daily Sales Report', type: 'challenge' },
+        { title: 'Publisher Stats', type: 'challenge' },
+        { title: 'High Value Publishers', type: 'challenge' },
+        { title: 'Premium Authors', type: 'challenge' },
+        { title: 'Sales Analysis', type: 'challenge' },
+        { title: 'Employee Performance', type: 'challenge' },
+      ],
     },
     {
       icon: <BarChartIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Scalar Functions",
-      description: "Master built-in functions for data transformation and manipulation.",
-      lessonCount: 4,
-      challengeCount: 2
+      title: 'Scalar Functions',
+      description:
+        'Master built-in functions for data transformation and manipulation.',
+      lessonCount: 6,
+      challengeCount: 5,
+      lessons: [
+        { title: 'What are they?', type: 'lesson' },
+        { title: 'String Functions', type: 'lesson' },
+        { title: 'Numeric Functions', type: 'lesson' },
+        { title: 'Date Functions', type: 'lesson' },
+        { title: 'Conversion Functions', type: 'lesson' },
+        { title: 'Logical Functions', type: 'lesson' },
+        { title: 'Customer Contact List', type: 'challenge' },
+        { title: 'Membership Duration', type: 'challenge' },
+        { title: 'Book Performance', type: 'challenge' },
+        { title: 'Book Categories', type: 'challenge' },
+        { title: 'Monthly Sales Analysis', type: 'challenge' },
+      ],
     },
     {
       icon: <GitBranchIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Subqueries and CTEs",
-      description: "Write complex queries using subqueries and common table expressions.",
+      title: 'Subqueries and CTEs',
+      description:
+        'Write complex queries using subqueries and common table expressions.',
       lessonCount: 4,
-      challengeCount: 2
+      challengeCount: 6,
+      lessons: [
+        { title: 'What are Subqueries?', type: 'lesson' },
+        { title: 'Correlated Subqueries', type: 'lesson' },
+        { title: 'Common Table Expressions', type: 'lesson' },
+        { title: 'Recursive CTEs', type: 'lesson' },
+        { title: 'Books Above Average', type: 'challenge' },
+        { title: 'Latest Category Books', type: 'challenge' },
+        { title: 'Low Stock by Category', type: 'challenge' },
+        { title: 'Bestseller Rankings', type: 'challenge' },
+        { title: 'New Customer Analysis', type: 'challenge' },
+        { title: 'Daily Sales Report', type: 'challenge' },
+      ],
     },
     {
       icon: <ArrowUpDownIcon className="h-6 w-6 text-yellow-500" />,
-      title: "Window Functions",
-      description: "Advanced analytics and calculations using window functions.",
-      lessonCount: 4,
-      challengeCount: 2
-    }
+      title: 'Window Functions',
+      description:
+        'Advanced analytics and calculations using window functions.',
+      lessonCount: 5,
+      challengeCount: 7,
+      lessons: [
+        { title: 'What are they?', type: 'lesson' },
+        { title: 'OVER and PARTITION BY', type: 'lesson' },
+        { title: 'Use of ORDER BY', type: 'lesson' },
+        { title: 'Ranking Functions', type: 'lesson' },
+        { title: 'Window Frames', type: 'lesson' },
+        { title: 'Basic Sales Metrics', type: 'challenge' },
+        { title: 'Bestseller Comparison', type: 'challenge' },
+        { title: 'Author Category Sales', type: 'challenge' },
+        { title: 'Top Authors', type: 'challenge' },
+        { title: 'Price Tier Rankings', type: 'challenge' },
+        { title: 'Month-over-Month Sales', type: 'challenge' },
+        { title: 'Price Range Analysis', type: 'challenge' },
+      ],
+    },
   ];
 
   return (
@@ -88,19 +246,19 @@ export function SQLCoursePage() {
         </p>
 
         <div className="flex flex-row items-center justify-center gap-5">
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row items-center gap-2">
             <ClipboardIcon className="size-6 text-yellow-600" />
             <span>55+ Lessons</span>
           </div>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row items-center gap-2">
             <FileQuestionIcon className="size-6 text-yellow-600" />
             <span>100+ Challenges</span>
           </div>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row items-center gap-2">
             <CodeIcon className="size-6 text-yellow-600" />
             <span>Integrated IDE</span>
           </div>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row items-center gap-2">
             <BrainIcon className="size-6 text-yellow-600" />
             <span>AI Tutor</span>
           </div>
@@ -116,7 +274,7 @@ export function SQLCoursePage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-2xl">
+      <div className="mx-auto max-w-4xl">
         <div className="relative mt-16 w-full">
           <div
             className="absolute inset-0 flex items-center"
@@ -125,12 +283,12 @@ export function SQLCoursePage() {
             <div className="w-full border-t border-zinc-800"></div>
           </div>
           <div className="relative flex justify-center">
-            <span className="rounded-full bg-zinc-800 px-4 py-0.5 text-sm text-zinc-500">
+            <span className="rounded-full bg-zinc-800 px-5 py-1 text-base text-zinc-500">
               What to expect
             </span>
           </div>
         </div>
-        <p className="mt-4 text-center text-zinc-500">
+        <p className="mt-8 text-center text-xl text-zinc-500 leading-snug">
           The course is designed to help you go from SQL beginner to expert
           through hands-on practice with real-world scenarios, mastering
           everything from basic to complex queries.
