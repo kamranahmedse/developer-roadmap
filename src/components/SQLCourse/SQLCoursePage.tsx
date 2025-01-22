@@ -19,6 +19,7 @@ import { ChapterRow } from './ChapterRow';
 import { CourseFeature } from './CourseFeature';
 import { SectionHeader } from './SectionHeader';
 import { Spotlight } from './Spotlight';
+import { FloatingPurchase } from './FloatingPurchase';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -353,6 +354,8 @@ export function SQLCoursePage() {
         through hands-on practice with real-world scenarios, mastering
         everything from basic to complex queries."
       />
+
+      <FloatingPurchase />
     </div>
   );
 }
