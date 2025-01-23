@@ -23,6 +23,8 @@ import { FloatingPurchase } from './FloatingPurchase';
 import { CourseAuthor } from './CourseAuthor';
 import { FAQSection } from './FAQSection';
 import { BuyButton } from './BuyButton';
+import { AccountButton } from './AccountButton';
+import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -232,7 +234,17 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-16 text-zinc-400">
+    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-px text-zinc-400">
+      <div className="flex w-full items-center justify-between px-5 pt-7">
+        <a
+          href="https://roadmap.sh"
+          target="_blank"
+          className="opacity-20 transition-opacity hover:opacity-100"
+        >
+          <RoadmapLogoIcon />
+        </a>
+        <AccountButton />
+      </div>
       <div className="relative mt-20 max-w-3xl text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
         <div className="inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500">
