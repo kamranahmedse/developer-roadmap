@@ -1,10 +1,10 @@
 ---
-title: '25 Essential Backend Development Tools for @currentYear@'
-description: 'Elevate your development process with these 25 essential backend developer tools.'
+title: '28 Essential Backend Development Tools for @currentYear@'
+description: 'Elevate your development process with these 28 essential backend developer tools.'
 authorId: fernando
 excludedBySlug: '/backend/developer-tools'
 seo:
-  title: '25 Essential Backend Development Tools for @currentYear@'
+  title: '28 Essential Backend Development Tools for @currentYear@'
   description: 'Elevate your coding with backend developer tools that bring efficiency, scalability, and innovation to your projects. Improve your development process today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-development-tools-ou6el.jpg'
 relatedTitle: "Other Guides"
