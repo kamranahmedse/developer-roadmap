@@ -27,6 +27,7 @@ type CoursePriceParams = {
 };
 
 type CoursePriceResponse = {
+  flag: string;
   fullPrice: number;
   regionalPrice: number;
   regionalDiscountPercentage: number;

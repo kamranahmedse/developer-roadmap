@@ -190,6 +190,18 @@ a > code:before {
   animation: barberpole 15s linear infinite;
 }
 
+.striped-loader-yellow {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(55, 100%, 50%, 0.7) 5px,
+    hsla(55, 100%, 50%, 0.7) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
 @keyframes barberpole {
   100% {
     background-position: 100% 100%;

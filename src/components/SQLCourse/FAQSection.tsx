@@ -45,6 +45,11 @@ export function FAQSection() {
         'No prior SQL knowledge is required. The course starts from the basics and gradually progresses to advanced topics.',
     },
     {
+      question: 'Do I need to have a local database to follow the course?',
+      answer:
+        'No, we have an integrated coding playground, populated with a sample databases depending on the lesson, that you can use to follow the course. You can also use your own database if you have one.',
+    },
+    {
       question: 'How long do I have access to the course?',
       answer:
         'You get lifetime access to the course including all future updates. Once you purchase, you can learn at your own pace and revisit the content anytime.',
