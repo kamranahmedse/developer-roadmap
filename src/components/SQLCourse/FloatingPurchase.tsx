@@ -27,11 +27,10 @@ export function FloatingPurchase() {
       <div className="flex w-full max-w-[800px] items-center justify-between rounded-2xl bg-yellow-950 p-5 shadow-lg ring-1 ring-yellow-500/40">
         <div className="flex flex-col">
           <h2 className="mb-1 text-xl font-medium text-white">
-            Master SQL for just $59
+            Go from zero to hero in SQL
           </h2>
           <p className="text-sm text-zinc-400">
-            Get instant access to 55+ lessons, 100+ challenges, and AI-powered
-            learning
+            Get instant access to the course and start learning today
           </p>
         </div>
 
