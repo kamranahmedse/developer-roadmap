@@ -9,6 +9,7 @@ import { queryClient } from '../../stores/query-client';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
+import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 
 type CreateCheckoutSessionBody = {
   courseId: string;
@@ -30,12 +31,12 @@ export function BuyButton(props: BuyButtonProps) {
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
   const toast = useToast();
 
-  const { data: coursePricing, isFetching } = useQuery(
+  const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
     coursePriceOptions({ courseSlug: 'road-to-sql' }),
     queryClient,
   );
 
-  const { data: courseProgress, isLoading: isCourseProgressLoading } = useQuery(
+  const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
     {
       ...courseProgressOptions('road-to-sql'),
       enabled: !!isLoggedIn(),
@@ -69,15 +70,16 @@ export function BuyButton(props: BuyButtonProps) {
   );
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const shouldTriggerPurchase = urlParams.get(COURSE_PURCHASE_PARAM) === '1';
+    const urlParams = getUrlParams();
+    const shouldTriggerPurchase = urlParams[COURSE_PURCHASE_PARAM] === '1';
     if (shouldTriggerPurchase) {
+      deleteUrlParam(COURSE_PURCHASE_PARAM);
       initPurchase();
     }
   }, []);
 
   const isLoadingPricing =
-    isFetching || !coursePricing || isCourseProgressLoading;
+    isLoadingCourse || !coursePricing || isLoadingCourseProgress;
   const isAlreadyEnrolled = !!courseProgress?.enrolledAt;
 
   function initPurchase() {
@@ -150,12 +152,14 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           )}
         </button>
-        {!isLoadingPricing && !isAlreadyEnrolled && coursePricing?.isEligibleForDiscount && (
-          <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
-            {coursePricing.regionalDiscountPercentage}% regional discount
-            applied
-          </span>
-        )}
+        {!isLoadingPricing &&
+          !isAlreadyEnrolled &&
+          coursePricing?.isEligibleForDiscount && (
+            <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
+              {coursePricing.regionalDiscountPercentage}% regional discount
+              applied
+            </span>
+          )}
       </div>
     );
   }
