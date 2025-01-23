@@ -1,13 +1,24 @@
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { ArrowRightIcon } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
-import { isLoggedIn } from '../../lib/jwt';
+import { COURSE_PURCHASE_PARAM, isLoggedIn } from '../../lib/jwt';
 import { coursePriceOptions } from '../../queries/billing';
 import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 import { useToast } from '../../hooks/use-toast';
+import { httpPost } from '../../lib/query-http';
+
+type CreateCheckoutSessionBody = {
+  courseId: string;
+  success?: string;
+  cancel?: string;
+};
+
+type CreateCheckoutSessionResponse = {
+  checkoutUrl: string;
+};
 
 type BuyButtonProps = {
   variant?: 'main' | 'floating';
@@ -32,9 +43,54 @@ export function BuyButton(props: BuyButtonProps) {
     queryClient,
   );
 
+  const {
+    mutate: createCheckoutSession,
+    isPending: isCreatingCheckoutSession,
+  } = useMutation(
+    {
+      mutationFn: (body: CreateCheckoutSessionBody) => {
+        return httpPost<CreateCheckoutSessionResponse>(
+          '/v1-create-checkout-session',
+          body,
+        );
+      },
+      onMutate: () => {
+        toast.loading('Creating checkout session...');
+      },
+      onSuccess: (data) => {
+        window.location.href = data.checkoutUrl;
+      },
+      onError: (error) => {
+        console.error(error);
+        toast.error(error?.message || 'Failed to create checkout session');
+      },
+    },
+    queryClient,
+  );
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const shouldTriggerPurchase = urlParams.get(COURSE_PURCHASE_PARAM) === '1';
+    if (shouldTriggerPurchase) {
+      initPurchase();
+    }
+  }, []);
+
   const isLoadingPricing =
     isFetching || !coursePricing || isCourseProgressLoading;
   const isAlreadyEnrolled = !!courseProgress?.enrolledAt;
+
+  function initPurchase() {
+    if (!isLoggedIn()) {
+      return;
+    }
+
+    createCheckoutSession({
+      courseId: 'road-to-sql',
+      success: `/road-to-sql?e=1`,
+      cancel: `/road-to-sql`,
+    });
+  }
 
   function onBuyClick() {
     if (!isLoggedIn()) {
@@ -48,7 +104,7 @@ export function BuyButton(props: BuyButtonProps) {
       return;
     }
 
-    alert('purchase');
+    initPurchase();
   }
 
   const courseLoginPopup = isLoginPopupOpen && (
@@ -63,9 +119,9 @@ export function BuyButton(props: BuyButtonProps) {
           onClick={onBuyClick}
           disabled={isLoadingPricing}
           className={cn(
-            'group relative inline-flex min-w-[235px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-zinc-900',
-            isLoadingPricing &&
-              'striped-loader-yellow pointer-events-none bg-yellow-500',
+            'group relative inline-flex min-w-[235px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0',
+            (isLoadingPricing || isCreatingCheckoutSession) &&
+              'striped-loader-yellow pointer-events-none scale-105 bg-yellow-500',
           )}
         >
           {isLoadingPricing ? (
@@ -94,8 +150,8 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           )}
         </button>
-        {!isAlreadyEnrolled && coursePricing?.isEligibleForDiscount && (
-          <span className="absolute top-full translate-y-2 text-sm text-yellow-400">
+        {!isLoadingPricing && !isAlreadyEnrolled && coursePricing?.isEligibleForDiscount && (
+          <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
             {coursePricing.regionalDiscountPercentage}% regional discount
             applied
           </span>
@@ -111,8 +167,8 @@ export function BuyButton(props: BuyButtonProps) {
         onClick={onBuyClick}
         disabled={isLoadingPricing}
         className={cn(
-          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-zinc-900',
-          isLoadingPricing &&
+          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none',
+          (isLoadingPricing || isCreatingCheckoutSession) &&
             'striped-loader-yellow pointer-events-none bg-yellow-500',
         )}
       >
