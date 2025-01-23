@@ -234,8 +234,8 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-px text-zinc-400">
-      <div className="flex w-full items-center justify-between px-5 pt-7">
+    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
+      <div className="flex w-full items-center justify-between">
         <a
           href="https://roadmap.sh"
           target="_blank"
@@ -245,25 +245,26 @@ export function SQLCoursePage() {
         </a>
         <AccountButton />
       </div>
-      <div className="relative mt-20 max-w-3xl text-center">
+      <div className="relative mt-7 max-w-3xl text-left md:mt-20 md:text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
-        <div className="inline-block rounded-full bg-yellow-500/10 px-6 py-2 text-lg text-yellow-500">
-          Complete Course to Master Practical SQL
+        <div className="inline-block rounded-full bg-yellow-500/10 px-4 py-1.5 text-base text-yellow-500 md:px-6 md:py-2 md:text-lg">
+          <span className="hidden sm:block">Complete Course to Master Practical SQL</span>
+          <span className="block sm:hidden">Complete SQL Course</span>
         </div>
 
-        <h1 className="mt-8 text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
-          Master SQL Queries
-          <div className="mt-2 bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
+        <h1 className="mt-5 text-4xl font-bold tracking-tight text-white md:mt-8 md:text-7xl">
+          Master SQL <span className="hidden min-[384px]:inline">Queries</span>
+          <div className="mt-2.5 md:text-6xl lg:text-7xl bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
             From Basic to Advanced
           </div>
         </h1>
 
-        <p className="mx-auto my-12 max-w-2xl text-2xl text-zinc-300">
+        <p className="mx-auto my-5 md:my-12 max-w-2xl text-xl lg:text-2xl text-zinc-300">
           A structured course to master database querying - perfect for
           developers, data analysts, and anyone working with data.
         </p>
 
-        <div className="flex flex-row items-center justify-center gap-5">
+        <div className="hidden md:flex flex-row items-center justify-center gap-5">
           <div className="flex flex-row items-center gap-2">
             <ClipboardIcon className="size-6 text-yellow-600" />
             <span>55+ Lessons</span>
@@ -282,8 +283,8 @@ export function SQLCoursePage() {
           </div>
         </div>
 
-        <div className="mt-12">
-          <BuyButton />
+        <div className="mt-7 md:mt-12 flex justify-start md:justify-center">
+          <BuyButton variant="main" />
         </div>
       </div>
 

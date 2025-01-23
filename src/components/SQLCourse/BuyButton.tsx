@@ -115,13 +115,13 @@ export function BuyButton(props: BuyButtonProps) {
 
   if (variant === 'main') {
     return (
-      <div className="relative flex flex-col items-center gap-2">
+      <div className="relative flex w-full flex-col items-center gap-2 md:w-auto">
         {courseLoginPopup}
         <button
           onClick={onBuyClick}
           disabled={isLoadingPricing}
           className={cn(
-            'group relative inline-flex min-w-[235px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0',
+            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base md:text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0 md:w-auto md:rounded-full',
             (isLoadingPricing || isCreatingCheckoutSession) &&
               'striped-loader-yellow pointer-events-none scale-105 bg-yellow-500',
           )}
@@ -138,10 +138,10 @@ export function BuyButton(props: BuyButtonProps) {
               now for{' '}
               {coursePricing?.isEligibleForDiscount ? (
                 <span className="flex items-center gap-2">
-                  <span className="text-base line-through opacity-75">
+                  <span className="text-base hidden md:inline line-through opacity-75">
                     ${coursePricing?.fullPrice}
                   </span>
-                  <span className="text-xl">
+                  <span className="text-base md:text-xl">
                     ${coursePricing?.regionalPrice}
                   </span>
                 </span>
