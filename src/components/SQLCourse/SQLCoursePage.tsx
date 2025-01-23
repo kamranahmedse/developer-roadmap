@@ -351,7 +351,7 @@ export function SQLCoursePage() {
       </div>
 
       <SectionHeader
-        title="Who are you?"
+        title="About the Author"
         description={
           <div className="mt-4 flex flex-col gap-6 text-xl leading-[1.52]">
             <p>
