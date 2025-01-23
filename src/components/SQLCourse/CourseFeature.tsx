@@ -83,7 +83,7 @@ export function CourseFeature(props: CourseFeatureProps) {
                 }}
                 src={imgUrl}
                 alt={title}
-                className="mt-4 h-auto w-full cursor-zoom-in rounded-lg object-right-top"
+                className="mt-4 h-auto pointer-events-none md:pointer-events-auto w-full cursor-zoom-in rounded-lg object-right-top"
               />
             )}
           </div>

@@ -3,6 +3,7 @@ import { cn } from '../../lib/classname';
 import { useState } from 'react';
 
 type ChapterRowProps = {
+  counter: number;
   icon: React.ReactNode;
   title: string;
   description: string;
@@ -15,6 +16,7 @@ type ChapterRowProps = {
 
 export function ChapterRow(props: ChapterRowProps) {
   const {
+    counter,
     icon,
     title,
     description,
@@ -31,7 +33,9 @@ export function ChapterRow(props: ChapterRowProps) {
   const challenges = lessons.filter((l) => l.type === 'challenge');
 
   return (
-    <div className={cn('group relative select-none overflow-hidden', className)}>
+    <div
+      className={cn('group relative select-none overflow-hidden', className)}
+    >
       <div
         role="button"
         onClick={() => isExpandable && setIsExpanded(!isExpanded)}
@@ -46,12 +50,13 @@ export function ChapterRow(props: ChapterRowProps) {
         )}
       >
         <div className="flex items-start gap-4">
-          <div className="flex-shrink-0">
+          <div className="hidden flex-shrink-0 md:block">
             <div className="rounded-full bg-yellow-500/10 p-3">{icon}</div>
           </div>
 
           <div className="flex-grow">
             <h3 className="text-xl font-semibold tracking-wide text-white">
+              <span className="text-gray-500 inline md:hidden">{counter}. </span>
               {title}
             </h3>
             <p className="mt-2 text-zinc-400">{description}</p>
@@ -81,9 +86,9 @@ export function ChapterRow(props: ChapterRowProps) {
 
       {isExpanded && (
         <div className="rounded-b-xl border border-t-0 border-zinc-800 bg-gradient-to-br from-zinc-900/50 via-zinc-900/30 to-zinc-900/20">
-          <div className="grid grid-cols-2 divide-x divide-zinc-800">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-zinc-800">
             {regularLessons.length > 0 && (
-              <div className="p-6">
+              <div className="p-6 pb-0 md:pb-6">
                 <h4 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">
                   Lessons
                 </h4>

@@ -248,23 +248,25 @@ export function SQLCoursePage() {
       <div className="relative mt-7 max-w-3xl text-left md:mt-20 md:text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
         <div className="inline-block rounded-full bg-yellow-500/10 px-4 py-1.5 text-base text-yellow-500 md:px-6 md:py-2 md:text-lg">
-          <span className="hidden sm:block">Complete Course to Master Practical SQL</span>
+          <span className="hidden sm:block">
+            Complete Course to Master Practical SQL
+          </span>
           <span className="block sm:hidden">Complete SQL Course</span>
         </div>
 
         <h1 className="mt-5 text-4xl font-bold tracking-tight text-white md:mt-8 md:text-7xl">
           Master SQL <span className="hidden min-[384px]:inline">Queries</span>
-          <div className="mt-2.5 md:text-6xl lg:text-7xl bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
+          <div className="mt-2.5 bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent md:text-6xl lg:text-7xl">
             From Basic to Advanced
           </div>
         </h1>
 
-        <p className="mx-auto my-5 md:my-12 max-w-2xl text-xl lg:text-2xl text-zinc-300">
+        <p className="mx-auto my-5 max-w-2xl text-xl text-zinc-300 md:my-12 lg:text-2xl">
           A structured course to master database querying - perfect for
           developers, data analysts, and anyone working with data.
         </p>
 
-        <div className="hidden md:flex flex-row items-center justify-center gap-5">
+        <div className="hidden flex-row items-center justify-center gap-5 md:flex">
           <div className="flex flex-row items-center gap-2">
             <ClipboardIcon className="size-6 text-yellow-600" />
             <span>55+ Lessons</span>
@@ -283,7 +285,7 @@ export function SQLCoursePage() {
           </div>
         </div>
 
-        <div className="mt-7 md:mt-12 flex justify-start md:justify-center">
+        <div className="mt-7 flex justify-start md:mt-12 md:justify-center">
           <BuyButton variant="main" />
         </div>
       </div>
@@ -291,11 +293,11 @@ export function SQLCoursePage() {
       <SectionHeader
         title="Not your average SQL course"
         description="Built around a text-based interactive approach and packed with practical challenges, this course stands out with features that make it truly unique."
-        className="mt-32"
+        className="mt-16 md:mt-32"
       />
 
-      <div className="mx-auto mt-10 w-full max-w-5xl">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <div className="mx-auto mt-6 w-full max-w-5xl md:mt-10">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
           <CourseFeature
             title="Textual Course"
             icon={Eye}
@@ -335,8 +337,8 @@ export function SQLCoursePage() {
         </div>
       </div>
 
-      <div className="mt-9 w-full max-w-3xl text-left">
-        <p className="text-xl leading-snug">
+      <div className="mt-7 w-full max-w-3xl text-left md:mt-9">
+        <p className="text-lg leading-normal md:text-xl">
           Oh, and you get the{' '}
           <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
             lifetime access
@@ -352,11 +354,12 @@ export function SQLCoursePage() {
         description="The course is designed to help you go from SQL beginner to expert
         through hands-on practice with real-world scenarios, mastering
         everything from basic to complex queries."
+        className="mt-8 md:mt-24"
       />
 
-      <div className="mt-12 w-full max-w-3xl space-y-4">
+      <div className="mt-8 w-full max-w-3xl space-y-4 md:mt-12">
         {chapters.map((chapter, index) => (
-          <ChapterRow key={index} {...chapter} />
+          <ChapterRow key={index} counter={index + 1} {...chapter} />
         ))}
       </div>
 
