@@ -14,9 +14,9 @@ function FAQRow({ question, answer }: FAQItem) {
     <div className="rounded-lg border border-zinc-800 bg-zinc-900">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="flex w-full items-center justify-between p-6 text-left"
+        className="flex w-full items-center justify-between p-4 md:p-6 text-left gap-2"
       >
-        <h3 className="text-xl font-normal text-white">{question}</h3>
+        <h3 className="text-lg md:text-xl text-balance font-normal text-white">{question}</h3>
         <ChevronDownIcon
           className={`h-5 w-5 text-zinc-400 transition-transform duration-200 ${
             isExpanded ? 'rotate-180' : ''
@@ -24,7 +24,7 @@ function FAQRow({ question, answer }: FAQItem) {
         />
       </button>
       {isExpanded && (
-        <div className="border-t border-zinc-800 p-6 pt-4 text-lg leading-relaxed">
+        <div className="border-t border-zinc-800 p-6 pt-4 text-base md:text-lg leading-relaxed">
           <p>{answer}</p>
         </div>
       )}
@@ -100,9 +100,10 @@ export function FAQSection() {
       <SectionHeader
         title="Frequently Asked Questions"
         description="Find answers to common questions about the course below."
+        className="mt-10 md:mt-24"
       />
 
-      <div className="mt-8 w-full max-w-3xl space-y-4">
+      <div className="mt-6 md:mt-8 w-full max-w-3xl space-y-2 md:space-y-6">
         {faqs.map((faq, index) => (
           <FAQRow key={index} {...faq} />
         ))}

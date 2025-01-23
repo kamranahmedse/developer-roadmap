@@ -1,6 +1,6 @@
 import { ChevronDown, BookIcon, CodeIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type ChapterRowProps = {
   counter: number;
@@ -32,6 +32,11 @@ export function ChapterRow(props: ChapterRowProps) {
   const regularLessons = lessons.filter((l) => l.type === 'lesson');
   const challenges = lessons.filter((l) => l.type === 'challenge');
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    setIsExpanded(!isMobile);
+  }, []);
+
   return (
     <div
       className={cn('group relative select-none overflow-hidden', className)}
@@ -56,7 +61,9 @@ export function ChapterRow(props: ChapterRowProps) {
 
           <div className="flex-grow">
             <h3 className="text-xl font-semibold tracking-wide text-white">
-              <span className="text-gray-500 inline md:hidden">{counter}. </span>
+              <span className="inline text-gray-500 md:hidden">
+                {counter}.{' '}
+              </span>
               {title}
             </h3>
             <p className="mt-2 text-zinc-400">{description}</p>
@@ -86,7 +93,7 @@ export function ChapterRow(props: ChapterRowProps) {
 
       {isExpanded && (
         <div className="rounded-b-xl border border-t-0 border-zinc-800 bg-gradient-to-br from-zinc-900/50 via-zinc-900/30 to-zinc-900/20">
-          <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-zinc-800">
+          <div className="grid grid-cols-1 divide-zinc-800 md:grid-cols-2 md:divide-x">
             {regularLessons.length > 0 && (
               <div className="p-6 pb-0 md:pb-6">
                 <h4 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">

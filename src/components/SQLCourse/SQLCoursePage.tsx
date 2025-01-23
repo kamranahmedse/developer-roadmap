@@ -365,8 +365,9 @@ export function SQLCoursePage() {
 
       <SectionHeader
         title="About the Author"
+        className="mt-12 md:mt-24"
         description={
-          <div className="mt-4 flex flex-col gap-6 text-xl leading-[1.52]">
+          <div className="mt-2 md:mt-4 flex flex-col gap-4 md:gap-6 text-lg md:text-xl leading-[1.52]">
             <p>
               I am Kamran Ahmed, an engineering leader with over a decade of
               experience in the tech industry. Throughout my career I have built

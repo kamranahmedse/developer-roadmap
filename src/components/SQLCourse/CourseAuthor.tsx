@@ -4,14 +4,20 @@ export function CourseAuthor() {
       <div className="flex flex-row items-center gap-5">
         <img
           src="https://github.com/kamranahmedse.png"
-          className="size-16 rounded-full bg-yellow-500/10"
+          className="size-12 rounded-full bg-yellow-500/10 md:size-16"
         />
-        <div className="flex flex-col">
-          <span className="text-2xl font-medium text-zinc-200">
+        <a
+          href="https://twitter.com/kamrify"
+          target="_blank"
+          className="flex flex-col"
+        >
+          <span className="text-lg font-medium text-zinc-200 md:text-2xl">
             Kamran Ahmed
           </span>
-          <span className="text-lg text-zinc-500">Software Engineer</span>
-        </div>
+          <span className="text-sm text-zinc-500 md:text-lg">
+            Software Engineer
+          </span>
+        </a>
       </div>
     </div>
   );
