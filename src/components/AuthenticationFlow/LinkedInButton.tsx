@@ -69,6 +69,12 @@ export function LinkedInButton(props: LinkedInButtonProps) {
           redirectUrl = authRedirectUrl;
         }
 
+        if (redirectUrl.includes('road-to-sql')) {
+          const tempUrl = new URL(redirectUrl, window.location.origin);
+          tempUrl.searchParams.set('t', '1');
+          redirectUrl = tempUrl.toString();
+        }
+
         localStorage.removeItem(LINKEDIN_REDIRECT_AT);
         localStorage.removeItem(LINKEDIN_LAST_PAGE);
         setAuthToken(response.token);

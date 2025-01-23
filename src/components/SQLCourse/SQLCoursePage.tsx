@@ -290,6 +290,7 @@ export function SQLCoursePage() {
       <SectionHeader
         title="Not your average SQL course"
         description="Built around a text-based interactive approach and packed with practical challenges, this course stands out with features that make it truly unique."
+        className="mt-32"
       />
 
       <div className="mx-auto mt-10 w-full max-w-5xl">

@@ -73,6 +73,13 @@ export function GitHubButton(props: GitHubButtonProps) {
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
+
+        if (redirectUrl.includes('road-to-sql')) {
+          const tempUrl = new URL(redirectUrl, window.location.origin);
+          tempUrl.searchParams.set('t', '1');
+          redirectUrl = tempUrl.toString();
+        }
+
         window.location.href = redirectUrl;
       })
       .catch((err) => {

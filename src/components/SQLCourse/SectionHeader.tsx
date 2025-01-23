@@ -1,14 +1,17 @@
+import { cn } from '../../lib/classname';
+
 type SectionHeaderProps = {
   title: string;
   description: string | React.ReactNode;
+  className?: string;
 };
 
 export function SectionHeader(props: SectionHeaderProps) {
-  const { title, description } = props;
+  const { title, description, className } = props;
 
   return (
-    <div className="mx-auto w-full max-w-3xl">
-      <div className="relative mt-24 w-full">
+    <div className={cn('mx-auto w-full mt-24 max-w-3xl', className)}>
+      <div className="relative w-full">
         <div className="flex items-center gap-6">
           <div className="inline-flex items-center rounded-xl py-2.5">
             <span className="text-3xl font-medium text-zinc-200">{title}</span>
