@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
-import { httpGet } from '../../lib/http';
-import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { cn } from '../../lib/classname.ts';
+import { httpGet } from '../../lib/http';
+import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
+import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -71,7 +70,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
         if (redirectUrl.includes('road-to-sql')) {
           const tempUrl = new URL(redirectUrl, window.location.origin);
-          tempUrl.searchParams.set('t', '1');
+          tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           redirectUrl = tempUrl.toString();
         }
 
