@@ -35,7 +35,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
     );
 
     return (
-      <Modal onClose={onClose} bodyClassName="p-5">
+      <Modal onClose={onClose} bodyClassName="p-5 h-auto">
         {emailHeader}
         {emailNature === 'login' && (
           <EmailLoginForm
@@ -51,17 +51,17 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
         )}
 
         <button
-          className="mt-1 w-full rounded-md border border-gray-400 py-2 text-center text-sm text-gray-600 hover:bg-gray-100"
+          className="mt-2 w-full rounded-md border border-gray-400 py-2 text-center text-sm text-gray-600 hover:bg-gray-100"
           onClick={() => setEmailNature(null)}
         >
-          Cancel
+          Back to Options
         </button>
       </Modal>
     );
   }
 
   return (
-    <Modal onClose={onClose} bodyClassName="p-5">
+    <Modal onClose={onClose} bodyClassName="p-5 h-auto">
       <div className="mb-7 text-center">
         <p className="mb-3.5 pt-2 text-2xl font-semibold leading-5 text-slate-900">
           Create or login to your account
