@@ -186,6 +186,11 @@
         "type": "article"
       },
       {
+        "title": "Python's tuple Data Type: A Deep Dive With Examples",
+        "url": "https://realpython.com/python-tuple/#getting-started-with-pythons-tuple-data-type",
+        "type": "article"
+      },
+      {
         "title": "why are Tuples even a thing?",
         "url": "https://www.youtube.com/watch?v=fR_D_KIAYrE",
         "type": "video"
@@ -215,7 +220,7 @@
   },
   "bc9CL_HMT-R6nXO1eR-gP": {
     "title": "Dictionaries",
-    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Dictionaries are unordered collections, meaning the order of items is not guaranteed.\n\nLearn more from the following resources:",
+    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Starting from Python 3.7, dictionaries maintain the order of items as they were added.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Dictionaries in Python",
@@ -225,6 +230,11 @@
       {
         "title": "W3 Schools - Dictionaries",
         "url": "https://www.w3schools.com/python/python_dictionaries.asp",
+        "type": "article"
+      },
+      {
+        "title": "Dictionaries in Python",
+        "url": "https://realpython.com/python-dicts/",
         "type": "article"
       }
     ]
