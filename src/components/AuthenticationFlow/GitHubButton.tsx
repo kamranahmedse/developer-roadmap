@@ -4,17 +4,19 @@ import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { cn } from '../../../editor/utils/classname.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
   setIsDisabled?: (isDisabled: boolean) => void;
+  className?: string;
 };
 
 const GITHUB_REDIRECT_AT = 'githubRedirectAt';
 const GITHUB_LAST_PAGE = 'githubLastPage';
 
 export function GitHubButton(props: GitHubButtonProps) {
-  const { isDisabled, setIsDisabled } = props;
+  const { isDisabled, setIsDisabled, className } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -117,7 +119,10 @@ export function GitHubButton(props: GitHubButtonProps) {
   return (
     <>
       <button
-        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+        className={cn(
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          className,
+        )}
         disabled={isLoading || isDisabled}
         onClick={handleClick}
       >

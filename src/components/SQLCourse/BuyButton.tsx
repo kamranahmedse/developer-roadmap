@@ -4,6 +4,10 @@ import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { cn } from '../../lib/classname';
 import { Spinner } from '../ReactIcons/Spinner';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { useState } from 'react';
+import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 
 type BuyButtonProps = {
   variant?: 'main' | 'floating';
@@ -12,6 +16,8 @@ type BuyButtonProps = {
 export function BuyButton(props: BuyButtonProps) {
   const { variant = 'main' } = props;
 
+  const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
+
   const { data: coursePricing, isFetching } = useQuery(
     coursePriceOptions({ courseSlug: 'road-to-sql' }),
     queryClient,
@@ -19,10 +25,23 @@ export function BuyButton(props: BuyButtonProps) {
 
   const isLoadingPricing = isFetching || !coursePricing;
 
+  function onBuyClick() {
+    if (!isLoggedIn()) {
+      setIsLoginPopupOpen(true);
+      return;
+    }
+  }
+
+  const courseLoginPopup = isLoginPopupOpen && (
+    <CourseLoginPopup onClose={() => setIsLoginPopupOpen(false)} />
+  );
+
   if (variant === 'main') {
     return (
       <div className="relative flex flex-col items-center gap-2">
+        {courseLoginPopup}
         <button
+          onClick={onBuyClick}
           disabled={isLoadingPricing}
           className={cn(
             'group relative inline-flex min-w-[235px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-zinc-900',
@@ -64,10 +83,12 @@ export function BuyButton(props: BuyButtonProps) {
 
   return (
     <div className="relative flex flex-col items-center gap-2">
+      {courseLoginPopup}
       <button
+        onClick={onBuyClick}
         disabled={isLoadingPricing}
         className={cn(
-          'group min-w-[220px] relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-zinc-900',
+          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-zinc-900',
           isLoadingPricing &&
             'striped-loader-yellow pointer-events-none bg-yellow-500',
         )}

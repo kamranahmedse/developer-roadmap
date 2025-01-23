@@ -4,17 +4,19 @@ import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
+import { cn } from '../../lib/classname.ts';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
   setIsDisabled?: (isDisabled: boolean) => void;
+  className?: string;
 };
 
 const GOOGLE_REDIRECT_AT = 'googleRedirectAt';
 const GOOGLE_LAST_PAGE = 'googleLastPage';
 
 export function GoogleButton(props: GoogleButtonProps) {
-  const { isDisabled, setIsDisabled } = props;
+  const { isDisabled, setIsDisabled, className } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -97,9 +99,12 @@ export function GoogleButton(props: GoogleButtonProps) {
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
-          const pagePath = ['/respond-invite', '/befriend', '/r', '/ai'].includes(
-            window.location.pathname,
-          )
+          const pagePath = [
+            '/respond-invite',
+            '/befriend',
+            '/r',
+            '/ai',
+          ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;
 
@@ -119,7 +124,10 @@ export function GoogleButton(props: GoogleButtonProps) {
   return (
     <>
       <button
-        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+        className={cn(
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          className,
+        )}
         disabled={isLoading || isDisabled}
         onClick={handleClick}
       >
