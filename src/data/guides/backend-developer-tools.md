@@ -175,13 +175,26 @@ Some of the major features of DBeaver are:
 
 Task management to kill any long-lasting queries that block your database.
 
+### 10. MySQL Workbench
+
+[MySQL Workbench](https://www.mysql.com/products/workbench/) has a free community edition that can be used as MySQL database client. It helps in creating schemas, writing and executing SQL queries, and monitoring database performance. Its a popular tool for developers working with MySQL.
+
+![MySQL Workbench Visual Design](https://github.com/user-attachments/assets/5bd8891a-5abc-40dc-bb26-c78af2fc1a80)
+
+Some of the major features are:
+
+- Connect to a local or remote MySQL database
+- Querying a MySQL database
+- Visualising a relational database
+- Import/export database
+
 ## Collaboration tools for web development
 
 Unless you’re working as a solo-dev (and even then!), collaboration tools allow you to coordinate your work and understand who’s working on what and what you should be working on next.
 
 While these might not be considered “backend tools” per se, they definitely help improve your performance and organization, so we can still call them “development tools” as a broader term.
 
-### 10. Trello
+### 11. Trello
 
 [Trello](https://trello.com/) is a very simple yet powerful organizational tool that lets teams build a Kanban-like board with clear states and simple UX (drag&drop is king in Trello).
 
@@ -191,7 +204,7 @@ Setting up a new project and a team takes minutes in Trello, and through the plu
 
 The simple UI and intuitive UX make Trello one of the best options out there for collaborative tools as long as the needs of the team are met with simple column-based layouts and minimal information.
 
-### 11. Monday
+### 12. Monday
 
 [Monday](https://monday.com/) is a relatively new online platform for project management and collaboration. I say “new” because some of the other alternatives here have been around for over 5+ years.
 
@@ -201,7 +214,7 @@ Their limited free plan lasts forever, so if you have a small team and limited r
 
 Monday’s fully customizable UI lets you build the collaborative environment you need. This is a huge advantage over others who've been around for longer and have a fixed UI that you have to adapt to.
 
-### 12. Basecamp
+### 13. Basecamp
 
 [Basecamp](https://basecamp.com/) is a mix between Trello, Monday, and Notion in the sense that it tries to provide developers with the best and most relevant tools from those worlds, leaving out the ones that just create “noise.”
 
@@ -216,7 +229,7 @@ Basecamp’s philosophy is to keep things simple and only focus on the features 
 
 The only “downside” to basecamp, if you will, is that there is no “forever free” plan. Both their plans are paid and have a 30-day free trial, so you can definitely give it a shot and figure out if what they offer is enough for your needs.
 
-### 13. Wrike
+### 14. Wrike
 
 [Wrike](https://www.wrike.com/) is yet another attempt at making project management and collaboration feel organic and seamless. They have a minimalistic UI and provide you with over 400 integrations to create your own workflows based on your needs and current ecosystem.
 
@@ -228,13 +241,26 @@ Their innovative use of AI allows you to create content faster, analyze project 
 
 Wrike feels efficient and powerful, even for its free plan. Give it a chance if you’re a freelancer or if you have a small team looking for something new and powerful.
 
+### 15. Linear
+
+[Linear](https://linear.app/) is a simple tool for managing & planning IT Projects. The minimal interface makes it less overwhelming to start with, it has all the required feature an IT team can ask for. Its free plan is enough for small teams.
+
+![Linear Screenshot](https://github.com/user-attachments/assets/01da7d50-99ab-498e-8398-30dcf2b7f5b4)
+
+Some of the major features are:
+- Sprint Management
+- Project planning
+- Configurable workflows
+- Integrations - Git, Slack etc.
+
+
 ## Hosting Services
 
 When it comes to backend development, deploying your code and running it on the cloud will be a common thing; this is a practice known as continuous integration and continuous deployment (CI/CD). While in some situations, you’ll be dealing with a custom, in-house infrastructure, there are platforms that will make the entire process very lightweight (as in deploying with a couple of clicks).
 
 Let’s take a look at some of the most common alternatives!
 
-### 14. Railway
+### 16. Railway
 
 [Railway.app](https://railway.app/) aims at giving developers all the tools they need at a click’s distance. We’re talking about:
 
@@ -250,7 +276,7 @@ Let’s take a look at some of the most common alternatives!
 
 Railway has no free plan, but their basic one is very accessible. Careful though, they also charge per resource utilization. Lucky for you, they have a [very handy consumption calculator](https://railway.app/pricing) to avoid surprises at the end of the month!
 
-### 15. Heroku
+### 17. Heroku
 
 [Heroku](https://www.heroku.com/) is another Platform as a Service provider. This one provides the basic services most of them do, such as autoscaling, monitoring, GitHub integration, and more.
 
@@ -260,7 +286,7 @@ The list of supported programming languages is not huge, but the most common one
 
 Another great selling point for Heroku is that on top of their infrastructure, they also offer a managed Postgre database as a service and a Redis one. In both situations, you’ll have to pay for the services as you use them, so keep that in mind.
 
-### 16. Digital Ocean
+### 18. Digital Ocean
 
 As opposed to platforms such as Heroku, [Digital Ocean](https://www.digitalocean.com/) is known as an Infrastructure as a Service provider (IaaS). They give you all the servers you need and all the resources (memory, CPU, etc) you want to pay for. However, setting up your deployment process, automating your integration tests, or even having all the required libraries to run your code is up to you.
 
@@ -272,7 +298,7 @@ Large-scale applications will usually require to have custom infrastructure that
 
 On top of their basic offering, they do offer managed databases such as MongoDB, MySQL, Redis, and others.
 
-### 17. Hetzner
+### 19. Hetzner
 
 [Hetzner](https://www.hetzner.com/) is yet another IaaS that offers everything you need to get going if you know what to do with it. In other words, they offer all the hardware you might dream of, even in the cloud, but you have to configure it and maintain it.
 
@@ -282,7 +308,7 @@ Their only “managed” offer is for web hosting though, so if you’re looking
 
 Other than that, their offering is quite standard, although their pricing model might not be. While they do have the standard pricing tiers like the rest of them, they also give you the option to “bid” for used hardware that is no longer needed.
 
-### 18. Vercel
+### 20. Vercel
 
 If you’re building a NextJS application and you’re looking for a quick way to deploy it, then there is probably no better place than [Vercel](https://vercel.com/) (the owner of NextJS).
 
@@ -296,7 +322,7 @@ Even their free plan is perfect for quick SaaS prototypes and small applications
 
 While it’s true they don’t support other technologies or even offer other related services, such as managed databases, there is hardly anyone who can provide a better developer experience when it comes to deploying a NextJS application.
 
-### 19. Render
+### 21. Render
 
 You can think of [Render](https://render.com/) as if Vercel and Heroku had a love child. Render gives you the amazing developer experience provided by Vercel but the flexibility (or more) from Heroku.
 
@@ -306,7 +332,7 @@ You’re not tied to a single technology; instead, you have all the major runtim
 
 Render also offers managed MySQL and managed Redis instances for you to use, even in their free tier. In the end, unless you’ve been using Heroku for a while and you’re happy with their DX, it might be a good idea to check out Render instead.
 
-### 20. OVHCloud
+### 22. OVHCloud
 
 [OVHCloud](https://www.ovhcloud.com/) is an all-in-one solution that seems to provide you with everything you need, from “bare metal” (as in infrastructure) to managed hosting for web applications, managed databases (they have many to choose from), and many other services.
 
@@ -322,7 +348,7 @@ As backend developers, we’ll always be dealing with APIs (Application Programm
 
 Whatever you’re doing, it’s always good to have some backend tools to help you build and test them faster, so let’s take a look at a few options.
 
-### 21. Swagger
+### 23. Swagger
 
 Some developers would argue that one of the hardest parts of creating an API is documenting it. Not only because it might sound like a boring task, but explaining what the API endpoint is doing well enough is not trivial.
 
@@ -332,7 +358,7 @@ That’s where [Swagger](https://swagger.io/) comes into play.
 
 This tool allows you to create interactive documentation that provides developers with all they need to understand how to use your endpoints, and at the same time, it also gives them the option to test them directly from the generated UI.
 
-### 22. Postman
+### 24. Postman
 
 [Postman](https://www.postman.com/) is less of a documentation-only app and has grown over the years to become a testing API tool that every developer and development team should know about. Backend developers are especially benefited from using Postman because of how well it helps organize and manage APIs.
 
@@ -342,11 +368,24 @@ With Postman, you can organize all your company’s APIs, share them with the as
 
 While Swagger is more of a development tool that every backend developer should know about, Postman is the tool that every development team should use to share & control internal API access and documentation.
 
+### 25. Requestly
+
+[Requestly](https://requestly.com/) is an open-source API testing and mocking tool, designed as a development companion for developers and QAs. It combines a web proxy and API client to reduce the time to manage APIs, interception and modifications of the requests. It helps in saving developers time spent on replicating and testing edge cases.
+
+![Requestly API Client and Debugging tool](https://github.com/user-attachments/assets/45ede818-861f-4798-90b4-a4c83398fd2b)
+
+Some of the major features are:
+- API Client
+- HTTP Interceptor
+- HTTP Request Modification
+- Mock APIs
+- GraphQL Support
+
 ## Productivity
 
 Finally, the last category is about productivity. While some of the products and services mentioned already do provide productivity enhancements, they weren’t there for that. The following list of backend tools is created thinking only about the benefits they can bring to your productivity while working as a backend developer.
 
-### 23. iTerm
+### 26. iTerm
 
 If you’re a macOS user, then [iTerm](https://iterm2.com/) is definitely one of the “must haves” you need to look into. As a backend developer, you’ll spend a lot of your day in the terminal.
 
@@ -362,7 +401,7 @@ iTerm will take that experience to the next level by bringing in features such a
 
 Mind you, none of these features are mandatory; you can easily work without them, but they do improve your quality of life as a developer. Hence the reason why iTerm leads this list.
 
-### 24. Zsh/OhMyZsh
+### 27. Zsh/OhMyZsh
 
 The combination of these two gives your terminal superpowers. [Zsh](https://zsh.sourceforge.io/) is an improved shell that lets you work much faster and more efficiently if you’re spending several hours typing commands in your terminal. For example, you get features such as:
 
@@ -380,7 +419,7 @@ As mentioned above, after you have your ZSH installed and set up, you should loo
 
 If you find yourself spending hours on the terminal, consider installing this combo.
 
-### 25. Raycast
+### 28. Raycast
 
 [Raycast](https://www.raycast.com/) allows you to improve your productivity by giving you a better application launcher. Instead of using the default launcher, you can replace it with Raycast and gain superpowers.
 
