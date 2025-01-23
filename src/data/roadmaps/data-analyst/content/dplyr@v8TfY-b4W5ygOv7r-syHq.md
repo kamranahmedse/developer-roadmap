@@ -4,5 +4,5 @@ Data cleaning plays a crucial role in the data analysis pipeline, where it recti
 
 Learn more from the following resources:
 
-- [@official@dplyr website](https://dplyr.tidyverse.org/)
+- [@official@dplyr](https://dplyr.tidyverse.org/)
 - [@video@Dplyr Essentials](https://www.youtube.com/watch?v=Gvhkp-Yw65U)
