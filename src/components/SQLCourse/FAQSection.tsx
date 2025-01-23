@@ -84,9 +84,9 @@ export function FAQSection() {
       answer: 'Yes, please contact me at kamran@roadmap.sh',
     },
     {
-      question: 'How do I gift this course to someone?',
+      question: 'How can I gift this course to someone?',
       answer:
-        'Send me an email at kamran@roadmap.sh and I will be happy to help you.',
+        'Please contact me at kamran@roadmap.sh and I will be happy to help you.',
     },
     {
       question: 'What if I have a question that is not answered here?',
