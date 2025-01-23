@@ -72,12 +72,26 @@ export function FAQSection() {
     {
       question: "What if I don't like the course?",
       answer:
-        'I will refund your purchase within 2 days of the purchase. No questions asked. However, I would love to hear your feedback so that I can improve the course.',
+        'I will refund your purchase within 7 days of the purchase. No questions asked. However, I would love to hear your feedback so that I can improve the course. Send me an email at kamran@roadmap.sh',
     },
     {
       question: 'I already know SQL, can I still take this course?',
       answer:
         'Yes! The course starts from the basics and gradually progresses to advanced topics. You can skip the chapters that you already know and focus on the ones that you need.',
+    },
+    {
+      question: 'Do you offer any team licenses?',
+      answer: 'Yes, please contact me at kamran@roadmap.sh',
+    },
+    {
+      question: 'How do I gift this course to someone?',
+      answer:
+        'Send me an email at kamran@roadmap.sh and I will be happy to help you.',
+    },
+    {
+      question: 'What if I have a question that is not answered here?',
+      answer:
+        'Please contact me at kamran@roadmap.sh and I will be happy to help you.',
     },
   ];
 
