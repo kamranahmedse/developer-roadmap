@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Iterators in Python](https://www.w3schools.com/python/python_iterators.asp)
 - [@article@Python Iterators](https://www.programiz.com/python-programming/iterator)
+- [@article@Iterators and Iterables in Python](https://realpython.com/python-iterators-iterables/)
