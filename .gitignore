@@ -34,3 +34,4 @@ tests-examples
 !/editor/readonly-editor.tsx
 !/editor/renderer/renderer.ts
 !/editor/renderer/index.tsx
+.vscode/settings.json
