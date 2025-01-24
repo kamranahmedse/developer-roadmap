@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
-import { courseProgressOptions } from '../../queries/course-progress';
+import {
+  courseProgressOptions,
+  type CourseProgressResponse,
+} from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
-import { useQuery } from '@tanstack/react-query';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 import { BuyButton } from './BuyButton';
+import { useQuery } from '@tanstack/react-query';
 
 export function AccountButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
-  const { data: courseProgress, isLoading: isCourseProgressLoading } = useQuery(
-    {
-      ...courseProgressOptions('road-to-sql'),
-      enabled: !!isLoggedIn(),
-    },
+  const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
+    courseProgressOptions('sql'),
     queryClient,
   );
 
@@ -35,7 +35,7 @@ export function AccountButton() {
     />
   );
 
-  if (!isVisible || isCourseProgressLoading) {
+  if (!isVisible || isLoadingCourseProgress) {
     return <button className={`${buttonClasses} opacity-0`}>...</button>;
   }
 
@@ -59,7 +59,7 @@ export function AccountButton() {
 
   return (
     <a
-      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/road-to-sql`}
+      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`}
       className={`${buttonClasses} animate-fade-in`}
     >
       Start Learning

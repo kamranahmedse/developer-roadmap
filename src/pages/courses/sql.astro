@@ -1,0 +1,8 @@
+---
+import { SQLCoursePage } from '../../components/SQLCourse/SQLCoursePage.tsx';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout title='SQL Course'>
+  <SQLCoursePage client:load />
+</SkeletonLayout>

@@ -71,7 +71,7 @@ export function GoogleButton(props: GoogleButtonProps) {
 
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
-        if (redirectUrl.includes('road-to-sql') && shouldTriggerPurchase) {
+        if (redirectUrl.includes('/courses/sql') && shouldTriggerPurchase) {
           const tempUrl = new URL(redirectUrl, window.location.origin);
           tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           redirectUrl = tempUrl.toString();

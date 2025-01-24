@@ -32,13 +32,13 @@ export function BuyButton(props: BuyButtonProps) {
   const toast = useToast();
 
   const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
-    coursePriceOptions({ courseSlug: 'road-to-sql' }),
+    coursePriceOptions({ courseSlug: 'sql' }),
     queryClient,
   );
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
     {
-      ...courseProgressOptions('road-to-sql'),
+      ...courseProgressOptions('sql'),
       enabled: !!isLoggedIn(),
     },
     queryClient,
@@ -88,9 +88,9 @@ export function BuyButton(props: BuyButtonProps) {
     }
 
     createCheckoutSession({
-      courseId: 'road-to-sql',
-      success: `/road-to-sql?e=1`,
-      cancel: `/road-to-sql`,
+      courseId: 'sql',
+      success: `/courses/sql?e=1`,
+      cancel: `/courses/sql`,
     });
   }
 
@@ -102,7 +102,7 @@ export function BuyButton(props: BuyButtonProps) {
 
     const hasEnrolled = !!courseProgress?.enrolledAt;
     if (hasEnrolled) {
-      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/road-to-sql`;
+      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`;
       return;
     }
 
