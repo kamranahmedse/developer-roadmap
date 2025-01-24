@@ -30,6 +30,7 @@ export type CourseProgressResponse = Pick<
 export function courseProgressOptions(courseSlug: string) {
   return queryOptions({
     queryKey: ['course-progress', courseSlug],
+    retryOnMount: false,
     queryFn: async () => {
       return httpGet<CourseProgressResponse>(
         `/v1-course-progress/${courseSlug}`,

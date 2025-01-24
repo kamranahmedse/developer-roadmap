@@ -37,10 +37,7 @@ export function BuyButton(props: BuyButtonProps) {
   );
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
-    {
-      ...courseProgressOptions('sql'),
-      enabled: !!isLoggedIn(),
-    },
+    courseProgressOptions('sql'),
     queryClient,
   );
 
