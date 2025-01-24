@@ -4,6 +4,7 @@ import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
+import { BuyButton } from './BuyButton';
 
 export function AccountButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +27,12 @@ export function AccountButton() {
 
   const hasEnrolled = !!courseProgress?.enrolledAt;
   const loginModal = (
-    <CourseLoginPopup onClose={() => setShowLoginModal(false)} />
+    <CourseLoginPopup
+      checkoutAfterLogin={false}
+      onClose={() => {
+        setShowLoginModal(false);
+      }}
+    />
   );
 
   if (!isVisible || isCourseProgressLoading) {
@@ -48,11 +54,7 @@ export function AccountButton() {
   }
 
   if (!hasEnrolled) {
-    return (
-      <button className={`${buttonClasses} animate-fade-in`}>
-        Purchase Course
-      </button>
-    );
+    return <BuyButton variant="top-nav" />;
   }
 
   return (

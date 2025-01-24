@@ -22,7 +22,7 @@ type CreateCheckoutSessionResponse = {
 };
 
 type BuyButtonProps = {
-  variant?: 'main' | 'floating';
+  variant?: 'main' | 'floating' | 'top-nav';
 };
 
 export function BuyButton(props: BuyButtonProps) {
@@ -121,7 +121,7 @@ export function BuyButton(props: BuyButtonProps) {
           onClick={onBuyClick}
           disabled={isLoadingPricing}
           className={cn(
-            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base md:text-lg font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0 md:w-auto md:rounded-full',
+            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0 md:w-auto md:rounded-full md:text-lg',
             (isLoadingPricing || isCreatingCheckoutSession) &&
               'striped-loader-yellow pointer-events-none scale-105 bg-yellow-500',
           )}
@@ -138,7 +138,7 @@ export function BuyButton(props: BuyButtonProps) {
               now for{' '}
               {coursePricing?.isEligibleForDiscount ? (
                 <span className="flex items-center gap-2">
-                  <span className="text-base hidden md:inline line-through opacity-75">
+                  <span className="hidden text-base line-through opacity-75 md:inline">
                     ${coursePricing?.fullPrice}
                   </span>
                   <span className="text-base md:text-xl">
@@ -161,6 +161,18 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           )}
       </div>
+    );
+  }
+
+  if (variant === 'top-nav') {
+    return (
+      <button
+        onClick={onBuyClick}
+        disabled={isLoadingPricing}
+        className={`animate-fade-in rounded-full px-5 py-2 text-base font-medium text-yellow-700 transition-colors hover:text-yellow-500`}
+      >
+        Purchase Course
+      </button>
     );
   }
 

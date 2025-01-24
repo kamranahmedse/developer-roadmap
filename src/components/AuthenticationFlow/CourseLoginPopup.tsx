@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Modal } from '../Modal';
 import { GitHubButton } from './GitHubButton';
 import { GoogleButton } from './GoogleButton';
@@ -8,10 +8,13 @@ import { EmailSignupForm } from './EmailSignupForm';
 
 type CourseLoginPopupProps = {
   onClose: () => void;
+  checkoutAfterLogin?: boolean;
 };
 
+export const CHECKOUT_AFTER_LOGIN_KEY = 'checkoutAfterLogin';
+
 export function CourseLoginPopup(props: CourseLoginPopupProps) {
-  const { onClose } = props;
+  const { onClose: parentOnClose, checkoutAfterLogin = true } = props;
 
   const [isDisabled, setIsDisabled] = useState(false);
   const [isUsingEmail, setIsUsingEmail] = useState(false);
@@ -19,6 +22,20 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
   const [emailNature, setEmailNature] = useState<'login' | 'signup' | null>(
     null,
   );
+
+  function onClose() {
+    // if user didn't login and closed the popup, we remove the checkoutAfterLogin flag
+    // so that login from other buttons on course page will trigger purchase
+    localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
+    parentOnClose();
+  }
+
+  useEffect(() => {
+    localStorage.setItem(
+      CHECKOUT_AFTER_LOGIN_KEY,
+      checkoutAfterLogin ? '1' : '0',
+    );
+  }, [checkoutAfterLogin]);
 
   if (emailNature) {
     const emailHeader = (

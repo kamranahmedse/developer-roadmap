@@ -4,6 +4,7 @@ import { httpGet } from '../../lib/http';
 import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -73,10 +74,14 @@ export function GitHubButton(props: GitHubButtonProps) {
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
 
-        if (redirectUrl.includes('road-to-sql')) {
+        const shouldTriggerPurchase =
+          localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
+        if (redirectUrl.includes('road-to-sql') && shouldTriggerPurchase) {
           const tempUrl = new URL(redirectUrl, window.location.origin);
           tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           redirectUrl = tempUrl.toString();
+
+          localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
 
         window.location.href = redirectUrl;

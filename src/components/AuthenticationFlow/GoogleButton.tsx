@@ -4,6 +4,7 @@ import { httpGet } from '../../lib/http';
 import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
@@ -68,10 +69,14 @@ export function GoogleButton(props: GoogleButtonProps) {
           redirectUrl = authRedirectUrl;
         }
 
-        if (redirectUrl.includes('road-to-sql')) {
+        const shouldTriggerPurchase =
+          localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
+        if (redirectUrl.includes('road-to-sql') && shouldTriggerPurchase) {
           const tempUrl = new URL(redirectUrl, window.location.origin);
           tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           redirectUrl = tempUrl.toString();
+
+          localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
 
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
