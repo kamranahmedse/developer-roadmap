@@ -4,5 +4,5 @@ As a big data processing framework, Apache Spark showcases immense importance in
 
 Learn more from the following resources:
 
-- [@official@Apache Spark Website](https://spark.apache.org/)
+- [@official@Apache Spark](https://spark.apache.org/)
 - [@opensource@apache/spark](https://github.com/apache/spark)
