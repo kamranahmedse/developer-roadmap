@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
+import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
-import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 import {
   getStoredUtmParams,
   triggerUtmRegistration,
@@ -12,13 +13,14 @@ import {
 type GoogleButtonProps = {
   isDisabled?: boolean;
   setIsDisabled?: (isDisabled: boolean) => void;
+  className?: string;
 };
 
 const GOOGLE_REDIRECT_AT = 'googleRedirectAt';
 const GOOGLE_LAST_PAGE = 'googleLastPage';
 
 export function GoogleButton(props: GoogleButtonProps) {
-  const { isDisabled, setIsDisabled } = props;
+  const { isDisabled, setIsDisabled, className } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -73,6 +75,16 @@ export function GoogleButton(props: GoogleButtonProps) {
         if (authRedirectUrl) {
           localStorage.removeItem('authRedirect');
           redirectUrl = authRedirectUrl;
+        }
+
+        const shouldTriggerPurchase =
+          localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
+        if (redirectUrl.includes('/courses/sql') && shouldTriggerPurchase) {
+          const tempUrl = new URL(redirectUrl, window.location.origin);
+          tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
+          redirectUrl = tempUrl.toString();
+
+          localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
 
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
@@ -130,7 +142,10 @@ export function GoogleButton(props: GoogleButtonProps) {
   return (
     <>
       <button
-        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+        className={cn(
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          className,
+        )}
         disabled={isLoading || isDisabled}
         onClick={handleClick}
       >

@@ -56,6 +56,9 @@ h3 > code {
 .prose ul li > code:before,
 p > code:before,
 .prose ul li > code:after,
+.prose ol li > code:before,
+p > code:before,
+.prose ol li > code:after,
 p > code:after,
 a > code:after,
 a > code:before {
@@ -108,6 +111,18 @@ a > code:before {
     transparent 5px,
     hsla(0, 0%, 0%, 0.2) 5px,
     hsla(0, 0%, 0%, 0.2) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
+.striped-loader-yellow {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(55, 100%, 50%, 0.7) 5px,
+    hsla(55, 100%, 50%, 0.7) 10px
   );
   background-size: 200% 200%;
   animation: barberpole 15s linear infinite;

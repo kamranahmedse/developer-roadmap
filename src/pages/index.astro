@@ -9,6 +9,7 @@ import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
 import { getAllQuestionGroups } from '../lib/question-group';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
@@ -23,7 +24,7 @@ const projectGroups = [
     title: 'Backend',
     id: 'backend',
   },
-]
+];
 
 const guides = await getAllGuides();
 const questionGuides = (await getAllQuestionGroups()).filter(
@@ -107,4 +108,5 @@ const videos = await getAllVideos();
       <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
     </div>
   </div>
+  <ChangelogBanner slot='changelog-banner' />
 </BaseLayout>
