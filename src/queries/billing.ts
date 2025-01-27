@@ -1,26 +1,5 @@
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
-import { isLoggedIn } from '../lib/jwt';
-import type { AllowedSubscriptionStatus } from '../api/user';
-
-type BillingDetailsResponse = {
-  status: AllowedSubscriptionStatus;
-  planId?: string;
-  priceId?: string;
-  interval?: string;
-  currentPeriodEnd?: Date;
-  cancelAtPeriodEnd?: boolean;
-};
-
-export function billingDetailsOptions() {
-  return queryOptions({
-    queryKey: ['billing-details'],
-    queryFn: async () => {
-      return httpGet<BillingDetailsResponse>('/v1-billing-details');
-    },
-    enabled: !!isLoggedIn(),
-  });
-}
 
 type CoursePriceParams = {
   courseSlug: string;

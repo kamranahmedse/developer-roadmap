@@ -89,7 +89,6 @@
     "@types/react-calendar-heatmap": "^1.6.7",
     "@types/react-slick": "^0.23.13",
     "@types/sanitize-html": "^2.13.0",
-    "@types/sql.js": "^1.4.9",
     "@types/turndown": "^5.0.5",
     "csv-parser": "^3.0.0",
     "gh-pages": "^6.1.1",
