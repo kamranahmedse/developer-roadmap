@@ -4,7 +4,8 @@ Everscale is a layer-1 PoS blockchain network of the 5th generation. It is one o
 
 Visit the following resources to learn more:
 
-- [Everscale site](https://everscale.network)
-- [Everscale Whitepaper](https://everscale.network/docs/everscale-whitepaper.pdf)
-- [Documentation](https://docs.everscale.network/)
-- [Guide](https://everscale.guide/)
+- [@official@Everscale](https://everscale.network)
+- [@official@Everscale Documentation](https://docs.everscale.network/)
+- [@official@Everscale Guide](https://everscale.guide/)
+- [@official@Everscale - Getting Started](https://everscale.network/getting-started)
+- [@official@Everscale Whitepaper](https://everscale.network/docs/everscale-whitepaper.pdf)

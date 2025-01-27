@@ -4,6 +4,6 @@ Error Handling is a crucial aspect of API design that ensures the stability, usa
 
 Learn more from the following resources:
 
-- [@article@Best practices for API error handling](https://blog.postman.com/best-practices-for-api-error-handling/)
+- [@article@Best Practices for API Error Handling](https://blog.postman.com/best-practices-for-api-error-handling/)
 - [@article@Best Practices for REST API Error Handling](https://www.baeldung.com/rest-api-error-handling-best-practices)
 - [@video@Handling HTTP API Errors with Problem Details](https://www.youtube.com/watch?v=uvTT_0hqhyY)

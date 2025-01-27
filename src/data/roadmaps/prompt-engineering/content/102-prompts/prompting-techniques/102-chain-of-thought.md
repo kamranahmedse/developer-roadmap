@@ -22,3 +22,9 @@ We can approach the topic through a series of connected prompts:
 - "For each of these challenges, discuss how individuals and organizations can mitigate or address them."
 
 By employing the Chain of Thought technique, we have directed the model to provide a thorough and systematic analysis of the subject in question, ultimately resulting in a more meaningful and accurate response.
+
+Learn more from the following resources:
+
+- [@article@Chain-of-Thought Prompting | Prompt Engineering Guide](https://www.promptingguide.ai/techniques/cot)
+- [@article@Chain-of-Thought Prompting](https://learnprompting.org/docs/intermediate/chain_of_thought)
+- [@guides@Introduction to Thought Generation Prompting Techniques for LLMs](https://learnprompting.org/docs/advanced/thought_generation/introduction)

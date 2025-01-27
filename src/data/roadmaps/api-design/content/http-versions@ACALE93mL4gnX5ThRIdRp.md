@@ -5,4 +5,4 @@ HTTP or Hypertext Transfer Protocol is pivotal in the world of API design. HTTP 
 Visit the following resources to learn more:
 
 - [@article@Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
-- [@article@HTTP: 1.0 vs. 1.1 vs 2.0 vs. 3.0](https://www.baeldung.com/cs/http-versions)
+- [@article@HTTP: 1.0 vs 1.1 vs 2.0 vs 3.0](https://www.baeldung.com/cs/http-versions)

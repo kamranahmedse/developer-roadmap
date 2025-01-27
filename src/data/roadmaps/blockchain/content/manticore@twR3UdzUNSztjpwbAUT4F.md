@@ -4,4 +4,4 @@ Manticore is a symbolic execution tool for analysis of smart contracts and binar
 
 Visit the following resources to learn more:
 
-- [@article@Manticore Docs](https://manticore.readthedocs.io/)
+- [@official@Manticore Docs](https://manticore.readthedocs.io/)

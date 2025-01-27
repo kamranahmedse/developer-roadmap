@@ -5,6 +5,10 @@ import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
+import {
+  getStoredUtmParams,
+  triggerUtmRegistration,
+} from '../../lib/browser.ts';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
@@ -39,6 +43,8 @@ export function GoogleButton(props: GoogleButtonProps) {
       }`,
     )
       .then(({ response, error }) => {
+        const utmParams = getStoredUtmParams();
+
         if (!response?.token) {
           setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
@@ -46,6 +52,8 @@ export function GoogleButton(props: GoogleButtonProps) {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         let redirectUrl = '/';
         const googleRedirectAt = localStorage.getItem(GOOGLE_REDIRECT_AT);

@@ -4,5 +4,5 @@ The `EXEC` command in Redis is used to execute a transaction that has been initi
 
 Learn more from the following resources:
 
-- [@official@](https://redis.io/docs/latest/commands/eval/)
+- [@official@EXEC Documentation](https://redis.io/docs/latest/commands/exec/)
 - [@article@Redis Transactions: EXEC](https://www.w3resource.com/redis/redis-exec.php)

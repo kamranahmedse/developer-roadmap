@@ -1,1 +1,3 @@
 # Documentation
+
+Documentation is a key resource that guides new users through understanding and using a platform or tool. It should provide clear, step-by-step instructions, code examples, and explanations that help developers get started quickly, addressing common questions and challenges. Effective onboarding documentation is well-organized, easy to navigate, and written in a straightforward, approachable tone. It often includes tutorials, guides, and FAQs that cover everything from initial setup to more advanced features, ensuring that developers can smoothly integrate the platform into their projects. Good documentation reduces friction, boosts developer confidence, and accelerates adoption.

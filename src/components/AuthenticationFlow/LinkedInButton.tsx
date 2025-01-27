@@ -5,6 +5,7 @@ import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
+import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -46,6 +47,8 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         let redirectUrl = '/';
         const linkedInRedirectAt = localStorage.getItem(LINKEDIN_REDIRECT_AT);

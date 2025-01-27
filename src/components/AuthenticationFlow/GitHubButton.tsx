@@ -5,6 +5,7 @@ import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
+import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -47,6 +48,8 @@ export function GitHubButton(props: GitHubButtonProps) {
 
           return;
         }
+
+        triggerUtmRegistration();
 
         let redirectUrl = '/';
         const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);

@@ -2,7 +2,7 @@
 title: 'Movie Reservation System'
 description: 'Build a system that allows users to reserve movie tickets.'
 isNew: false
-sort: 16
+sort: 1900
 difficulty: 'advanced'
 nature: 'API'
 skills:
@@ -18,6 +18,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

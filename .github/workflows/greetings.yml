@@ -1,0 +1,33 @@
+name: ❤️ Greetings
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    branches: [master]
+    types: [opened]
+
+jobs:
+  greet:
+    name: Greet New Contributors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            🙌 Hello! Thank you for taking the time to file an issue. 
+            
+            If this is a bug report, please include any relevant logs or details that can help us debug the problem. Your help is greatly appreciated! 💡
+
+            We'll get back to you as soon as possible, kindly be patient for a response from a maintainer.
+          pr-message: |
+            🎉 Warm regards and welcome! Thank you for your first ever contribution to **Roadmap.sh**! 
+            
+            We appreciate your effort and enthusiasm. Before diving in, we kindly ask you to take a moment to go through our [Contribution Guidelines](https://github.com/kamranahmedse/developer-roadmap/blob/master/contributing.md) 📘 to ensure your contribution aligns with the project's standards and goals.
+
+            If you are fixing a bug, please reference the associated issue number in your pull request description. 🐛
+
+            If you're working on a new feature, feel free to check with the community on [discord](https://roadmap.sh/discord) to ensure the feature will be accepted. *Also, kindly refrain pinging the maintainer(s).* 🚀
+
+            Thanks for choosing to contribute, and for making this project better! 🌟

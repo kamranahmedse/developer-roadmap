@@ -2,7 +2,7 @@
 title: 'Simple Monitoring'
 description: 'Set up a basic monitoring dashboard using Netdata.'
 isNew: false
-sort: 7
+sort: 800
 difficulty: 'beginner'
 nature: 'Monitoring'
 skills:

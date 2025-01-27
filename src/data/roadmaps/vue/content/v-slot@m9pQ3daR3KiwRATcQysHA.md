@@ -4,7 +4,7 @@ The v-slot directive to define slots in components, allowing you to pass and ren
 
 For named slots, you use v-slot with a specific slot name. This lets you pass different content to different parts of a component:
 
-```vue
+```html
 <template>
   <custom-component>
     <template v-slot:header>

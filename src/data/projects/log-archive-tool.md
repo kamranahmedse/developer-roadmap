@@ -2,7 +2,7 @@
 title: 'Log Archive Tool'
 description: 'Build a tool to archive logs from the CLI with the date and time.'
 isNew: false
-sort: 2
+sort: 200
 difficulty: 'beginner'
 nature: 'CLI'
 skills:

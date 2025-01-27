@@ -6,5 +6,5 @@ BoC stands for Bag of Cells, and it refers to the data structure used in the TVM
 
 Visit the following resources to learn more:
 
-- [Original specification](https://ton.org/tvm.pdf)
-- [Everscale VM specification](https://docs.everscale.network/tvm.pdf)
+- [@official@Original Specification](https://ton.org/tvm.pdf)
+- [@official@Everscale VM Specification](https://docs.everscale.network/tvm.pdf)

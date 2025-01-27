@@ -826,13 +826,13 @@
         "type": "article"
       },
       {
-        "title": "CS 61B Lecture 19: Asymptotic Analysis",
-        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "title": "Big-O Cheat Sheet",
+        "url": "https://www.bigocheatsheet.com/",
         "type": "article"
       },
       {
-        "title": "Big-O Cheat Sheet",
-        "url": "https://www.bigocheatsheet.com/",
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
         "type": "article"
       },
       {
@@ -849,16 +849,26 @@
         "title": "Asymptotic Notation - CS50",
         "url": "https://www.youtube.com/watch?v=iOq5kSKqeR4",
         "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 19: Asymptotic Analysis",
+        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "type": "video"
       }
     ]
   },
   "c-NrTtJuNihbHzyPEOKTW": {
     "title": "Big O",
-    "description": "Big O Notation describes, how well an algorithm scales with the input size. It is used to describe the worst case scenario of an algorithm. It is used to compare algorithms and to determine which algorithm is better.\n\nVisit the following resources to learn more:",
+    "description": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "moviesCS 61B Lecture 19: Asymptotic Analysis",
         "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "type": "article"
+      },
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
         "type": "article"
       },
       {
@@ -880,8 +890,13 @@
   },
   "ThLpVZQIJ4diY5m0dik8m": {
     "title": "Big-Theta",
-    "description": "While Big O Notation refers to the upper bound of a function, Big Theta Notation refers to the exact bound of a function. Big Theta Notation is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
+    "description": "If a function has the same Big O and Big Omega, they also become the function's Big Theta. Big Theta is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
@@ -896,8 +911,13 @@
   },
   "X33735aeAVSlJ6yv9GS-h": {
     "title": "Big Omega",
-    "description": "Big Omega notation is used to describe the lower bound of a function. It is the opposite of Big O notation. While Big O is used to describe the worst case scenario of an algorithm, Big Omega is used to describe the best case scenario of an algorithm.\n\nVisit the following resources to learn more:",
+    "description": "The Big Omega notation is similar to the Big O notation. The only difference is that it denotes the lower bound on the growth rate of a function.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
@@ -1832,8 +1852,18 @@
   },
   "vjMqqFsTxSjaiYxmliwLi": {
     "title": "Endianess",
-    "description": "Endianess is the order in which bytes are stored in memory. The two most common types of endianess are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
+    "description": "Endianness is the order in which bytes are stored in memory. The two most common types of endianness are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Endianness",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Endianness",
+        "type": "article"
+      },
+      {
+        "title": "Big-Endian vs Little-Endian Explained with Examples",
+        "url": "https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/",
+        "type": "article"
+      },
       {
         "title": "Big Endian vs Little Endian.mp4",
         "url": "https://www.youtube.com/watch?v=JrNF0KRAlyo",
@@ -2638,7 +2668,7 @@
   },
   "0btHNkzWL1w_-pUgU_k2y": {
     "title": "P = NP",
-    "description": "The P = NP problem is one of the most famous problems in computer science. It asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of solving the given input. In other words, it asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of determining if a given input belongs to a certain class of problems. This problem is also known as the Halting Problem.\n\nVisit the following resources to learn more:",
+    "description": "The P = NP problem is one of the most famous problems in computer science. It asks whether a problem that can be solved in polynomial time on a non-deterministic machine (i.e., the problem is in NP) can also be solved in polynomial time on a deterministic machine (i.e., the problem is in P).\n\nIf you can find a polynomial-time solution to an NP-complete problem, then all problems in NP can be solved in polynomial time. This shows that P = NP.\n\nIf you can prove for any single NP-complete problem that it is only solvable in exponential time, then all NP-complete problems are only solvable in exponential time. This shows that P ≠ NP.\n\nSo far, we don't know whether P = NP or P ≠ NP.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Whats P=NP?, and why is it such a famous question?",
@@ -3336,8 +3366,19 @@
   },
   "tcQSH-eAvJUZuePTDjAIb": {
     "title": "DML",
-    "description": "The SQL commands that deals with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
-    "links": []
+    "description": "The SQL commands that manipulate data in the database belong to DML, or Data Manipulation Language, and this includes most of the SQL statements. DCL is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "DML: Data Manipulation Language",
+        "url": "https://satoricyber.com/glossary/dml-data-manipulation-language",
+        "type": "article"
+      },
+      {
+        "title": "Difference Between DDL and DML",
+        "url": "https://appmaster.io/blog/difference-between-ddl-and-dml",
+        "type": "article"
+      }
+    ]
   },
   "05lkb3B86Won7Rkf-8DeD": {
     "title": "DQL",
@@ -3901,7 +3942,7 @@
   },
   "GDLKJkKgB-i7n0YcV2NDa": {
     "title": "How Computers Calculate",
-    "description": "Visit the following resources to learn more:",
+    "description": "Computers calculate using the binary system, where all data is represented as 0s and 1s. These binary states correspond to the ON/OFF positions of transistors, which are the building blocks of logic gates (AND, OR, NOT). Numbers, characters, and instructions are broken into binary sequences (bits), and grouped into bytes (8 bits). Arithmetic operations like addition are performed through logic gates, which combine binary values. The CPU executes these calculations by following a fetch-decode-execute cycle. Complex calculations, such as handling decimals, use floating-point representation. Programs written in high-level languages are compiled into machine code for the CPU to execute.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "How computers calculate - ALU",
@@ -3966,6 +4007,11 @@
         "title": "Operating Systems and System Programming",
         "url": "https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c",
         "type": "article"
+      },
+      {
+        "title": "25 hour Operating Systems Course - freecodecamp",
+        "url": "https://youtu.be/yK1uBHPdp30?si=gGPdK7cM4KlP6Qq0",
+        "type": "video"
       }
     ]
   },
@@ -4040,8 +4086,29 @@
   },
   "Ge2nagN86ofa2y-yYR1lv": {
     "title": "Scheduling Algorithms",
-    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n*   **Multilevel Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.",
-    "links": []
+    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more :",
+    "links": [
+      {
+        "title": "CPU Scheduling in Operating Systems - geeksforgeeks",
+        "url": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/",
+        "type": "article"
+      },
+      {
+        "title": "Lottery Scheduling for Operating Systems - geeksforgeeks",
+        "url": "https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/",
+        "type": "article"
+      },
+      {
+        "title": "Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks",
+        "url": "https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to CPU Scheduling",
+        "url": "https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL",
+        "type": "video"
+      }
+    ]
   },
   "cpQvB0qMDL3-NWret7oeA": {
     "title": "CPU Interrupts",

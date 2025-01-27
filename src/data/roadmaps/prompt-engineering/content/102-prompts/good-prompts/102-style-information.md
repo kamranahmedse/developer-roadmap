@@ -2,7 +2,7 @@
 
 By providing explicit instructions regarding the desired tone, you can influence the language model's writing style and ensure it aligns with your specific requirements.
 
-Clearly communicate the desired tone, style, or mood in the prompt. Whether it's formal, casual, humorous, professional, or any other specific style, mentioning it explicitly helps guide the model's writing. Also, consider ncorporating keywords or phrases that reflect the desired style. For example, if you want a formal tone, include phrases like "in a professional manner" or "using formal language." This provides additional context to the model regarding the tone you expect.
+Clearly communicate the desired tone, style, or mood in the prompt. Whether it's formal, casual, humorous, professional, or any other specific style, mentioning it explicitly helps guide the model's writing. Also, consider incorporating keywords or phrases that reflect the desired style. For example, if you want a formal tone, include phrases like "in a professional manner" or "using formal language." This provides additional context to the model regarding the tone you expect.
 
 ### Example Prompt
 

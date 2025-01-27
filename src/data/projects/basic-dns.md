@@ -2,7 +2,7 @@
 title: 'Basic DNS Setup'
 description: 'Purchase a custom domain and set up basic DNS records.'
 isNew: false
-sort: 6
+sort: 700
 difficulty: 'beginner'
 nature: 'DNS'
 skills:

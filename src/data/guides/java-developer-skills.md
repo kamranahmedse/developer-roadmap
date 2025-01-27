@@ -27,7 +27,7 @@ If you are building web applications, the ability to work on both front-end and 
 
 To remain competitive as a Java developer, you must continuously improve your skill sets to meet evolving industry demands.
 
-This guide will equip you with the skills required in 2024. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
+This guide will equip you with the skills required in 2025. You’ll understand the landscape of Java demand, adoption, diverse applications, and strategies for excelling as a Java developer. By the end of this guide, you will be confident about pursuing a Java development career.
 
 These are the skills we will cover in this guide:
 
@@ -53,7 +53,7 @@ The required skills can be classified into [front-end (client)](https://roadmap.
 
 ## Required skills for front-end Java development
 
-Here are the front-end skills you should learn in 2024:
+Here are the front-end skills you should learn in 2025:
 
 - HTML and CSS
 - JavaScript
@@ -90,7 +90,7 @@ As a Java full-stack web developer, having a solid understanding of accessibilit
 
 ## Required skills for back-end Java development
 
-Here are the back-end skills you should learn in 2024:
+Here are the back-end skills you should learn in 2025:
 
 - Java programming language
 - Database management system
@@ -182,7 +182,7 @@ Design patterns are proven approaches to solving specific design challenges and 
 
 As the popular saying goes, "a tree cannot make a forest." While it might be tempting to work in isolation and tackle all development tasks alone, it's essential for you to join communities that encourage collaboration, peer learning, and staying updated on the latest developments.
 
-A great community to join is the [r](https://roadmap.sh/discord)[oadmap.sh](https://roadmap.sh/discord) [Discord community](https://roadmap.sh/discord), where you can connect with like-minded individuals who share your passion for development.
+A great community to join is the [roadmap.sh](https://roadmap.sh/) [Discord community](https://roadmap.sh/discord), where you can connect with like-minded individuals who share your passion for development.
 
 ### Soft skills
 
@@ -192,7 +192,7 @@ In addition to technical expertise, soft skills play a vital role in the develop
 
 Frameworks, libraries, technologies, modes of adoption, and business requirements will continue to evolve. It is important you stay curious, continuously learn, and keep up with the latest developments in the Java ecosystem, which is huge.
 
-While staying informed about changes in the ecosystem can be overwhelming, especially with information from various sources like blogs, online training, bootcamp courses, etc., there's a reliable and regularly updated platform for Java resources: [Java developer’s](https://roadmap.sh/java) [r](https://roadmap.sh/java)[oadmap.sh](https://roadmap.sh/java).
+While staying informed about changes in the ecosystem can be overwhelming, especially with information from various sources like blogs, online training, bootcamp courses, etc., there's a reliable and regularly updated platform for Java resources: [Java Developer Roadmap](https://roadmap.sh/java).
 
 ## Java’s adoption in the real-world
 

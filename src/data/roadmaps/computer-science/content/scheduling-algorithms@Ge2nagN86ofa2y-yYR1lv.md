@@ -11,5 +11,11 @@ Here is the list of some of the most commonly used scheduling algorithms:
 - **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.
 - **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.
 - **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.
+- **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.
 - **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.
-- **Multilevel Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.
+
+Visit the following resources to learn more : 
+- [@video@Introduction to CPU Scheduling](https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL)
+- [@article@CPU Scheduling in Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/)
+- [@article@Lottery Scheduling for Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/)
+- [@article@Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks](https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/)

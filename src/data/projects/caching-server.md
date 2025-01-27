@@ -2,7 +2,7 @@
 title: 'Caching Proxy'
 description: 'Build a caching server that caches responses from other servers.'
 isNew: false
-sort: 10
+sort: 1200
 difficulty: 'intermediate'
 nature: 'CLI'
 skills:
@@ -17,11 +17,13 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'
   - 'golang'
   - 'spring-boot'
+  - 'cpp'
 ---
 
 You are required to build a CLI tool that starts a caching proxy server, it will forward requests to the actual server and cache the responses. If the same request is made again, it will return the cached response instead of forwarding the request to the server.

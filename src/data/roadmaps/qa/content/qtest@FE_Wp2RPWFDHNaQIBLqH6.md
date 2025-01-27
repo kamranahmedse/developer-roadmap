@@ -4,5 +4,5 @@ qTest is a test management tool used for Project Management, Bug Tracking, and T
 
 Visit the following resources to learn more:
 
-- [@article@QTest tutorial](https://www.tutorialspoint.com/qtest/qtest_introduction.htm)
+- [@article@QTest Tutorial](https://www.tutorialspoint.com/qtest/qtest_introduction.htm)
 - [@video@Getting Started with qTest and Parameters](https://www.youtube.com/watch?v=1q8vQ2XF9QE)

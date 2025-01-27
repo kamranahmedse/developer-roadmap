@@ -13,10 +13,10 @@ export function UserProgressModalHeader(props: UserProgressModalHeaderProps) {
 
   const userProgressTotal = progress?.total || 0;
   const userDone = progress?.done?.length || 0;
-  const progressPercentage =
-    Math.round((userDone / userProgressTotal) * 100) || 0;
-  const userLearning = progress?.learning?.length || 0;
   const userSkipped = progress?.skipped?.length || 0;
+  const progressPercentage =
+    Math.round(((userDone + userSkipped) / userProgressTotal) * 100) || 0;
+  const userLearning = progress?.learning?.length || 0;
 
   return (
     <div className="p-4">

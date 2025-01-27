@@ -18,3 +18,10 @@ Please explain the process of how a solar panel works, starting with sunlight hi
 ```
 
 By designing prompts that explicitly request step-by-step reasoning, the zeroshot chain of thought technique can lead to more comprehensive and insightful answers that go beyond simple factual statements.
+
+Learn more from the following resources:
+
+- [@article@Zero-Shot Prompting | Prompt Engineering Guide](https://www.promptingguide.ai/techniques/zeroshot)
+- [@article@Zero-Shot CoT Prompting: Improving AI with Step-by-Step Reasoning](https://learnprompting.org/docs/intermediate/zero_shot_cot)
+- [@article@Shot-Based Prompting: Zero-Shot, One-Shot, and Few-Shot Prompting](https://learnprompting.org/docs/basics/few_shot)
+- [@guides@Introduction to Advanced Zero-Shot Prompting Techniques](https://learnprompting.org/docs/advanced/zero_shot/introduction)

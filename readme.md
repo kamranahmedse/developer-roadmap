@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/brand.png" height="128">
+  <a href="https://roadmap.sh/"><img src="public/images/brand.png" height="128"></a>
   <h2 align="center"><a href="https://roadmap.sh">roadmap.sh</a></h2>
   <p align="center">Community driven roadmaps, articles and resources for developers<p>
   <p align="center">
@@ -41,12 +41,14 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
+- [AI Engineer Roadmap](https://roadmap.sh/ai-engineer)
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [Linux Roadmap](https://roadmap.sh/linux)
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
+- [Engineering Manager Roadmap](https://roadmap.sh/engineering-manager)
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Python Roadmap](https://roadmap.sh/python)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
@@ -60,6 +62,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Node.js Roadmap](https://roadmap.sh/nodejs)
+- [PHP Roadmap](https://roadmap.sh/php)
 - [GraphQL Roadmap](https://roadmap.sh/graphql)
 - [Android Roadmap](https://roadmap.sh/android)
 - [iOS Roadmap](https://roadmap.sh/ios)

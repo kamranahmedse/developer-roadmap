@@ -8,4 +8,4 @@ Deploying Terraform-defined infrastructure involves several key steps:
 
 You can learn more from the following resources:
 
-- [@article@The Core Terraform Workflow](https://developer.hashicorp.com/terraform/intro/core-workflow)
+- [@official@The Core Terraform Workflow](https://developer.hashicorp.com/terraform/intro/core-workflow)

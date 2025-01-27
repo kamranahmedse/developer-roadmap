@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/data-analyst.pdf'
 order: 4
 renderer: "editor"
 briefTitle: 'Data Analyst'
-briefDescription: 'Step by step guide to becoming an Data Analyst in 2024'
+briefDescription: 'Step by step guide to becoming an Data Analyst in 2025'
 title: 'Data Analyst Roadmap'
-description: 'Step by step guide to becoming an Data Analyst in 2024'
+description: 'Step by step guide to becoming an Data Analyst in 2025'
 hasTopics: true
 isNew: false
 dimensions:

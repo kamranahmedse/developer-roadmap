@@ -2,7 +2,7 @@
 title: 'Static Site Server'
 description: 'Setup a basic linux server and configure it to serve a static site.'
 isNew: false
-sort: 5
+sort: 600
 difficulty: 'beginner'
 nature: 'Nginx'
 skills:

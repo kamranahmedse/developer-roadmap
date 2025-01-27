@@ -27,6 +27,7 @@ relatedRoadmaps:
   - 'api-design'
   - 'design-system'
   - 'software-architect'
+  - 'engineering-manager'
 sitemap:
   priority: 1
   changefreq: monthly

@@ -449,6 +449,11 @@
         "type": "article"
       },
       {
+        "title": "JavaScript error reference - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
@@ -462,6 +467,11 @@
       {
         "title": "Node.js Errors - Official Docs",
         "url": "https://nodejs.org/api/errors.html#errors_class_systemerror",
+        "type": "article"
+      },
+      {
+        "title": "@Article@16 Common Errors in Node.js and How to Fix Them",
+        "url": "https://betterstack.com/community/guides/scaling-nodejs/nodejs-errors/",
         "type": "article"
       }
     ]
@@ -521,6 +531,11 @@
       {
         "title": "Async Errors",
         "url": "https://www.mariokandut.com/handling-errors-in-asynchronous-functions-node-js/",
+        "type": "article"
+      },
+      {
+        "title": "The best way to handle errors in asynchronous javascript",
+        "url": "https://dev.to/m__mdy__m/the-best-way-to-handle-errors-in-asynchronous-javascript-16bb",
         "type": "article"
       }
     ]
@@ -996,7 +1011,7 @@
     "links": [
       {
         "title": "Node.js Learn environment variables",
-        "url": "https://www.digitalocean.com/community/tutorials/nodejs-command-line-arguments-node-scripts",
+        "url": "https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs",
         "type": "article"
       },
       {
@@ -1029,6 +1044,11 @@
       {
         "title": "Official Documentation",
         "url": "https://nodejs.org/api/process.html#processstdin",
+        "type": "article"
+      },
+      {
+        "title": "Node.js Process stdin & stdout",
+        "url": "https://nodecli.com/node-stdin-stdout",
         "type": "article"
       }
     ]
@@ -1169,6 +1189,11 @@
         "title": "Explore top posts about Node.js",
         "url": "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "What is an API (in 5 minutes)",
+        "url": "https://youtu.be/ByGJQzlzxQg?si=9EB9lgRvEOgt3xPJ",
+        "type": "video"
       }
     ]
   },
@@ -1867,6 +1892,11 @@
         "title": "winston Website",
         "url": "https://github.com/winstonjs/winston",
         "type": "opensource"
+      },
+      {
+        "title": "A Complete Guide to Winston Logging in Node.js",
+        "url": "https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/",
+        "type": "article"
       }
     ]
   },

@@ -4,9 +4,9 @@ TypeScript is a strongly-typed, object-oriented programming language that builds
 
 Visit the following resources to learn more:
 
-- [@roadmap@TypeScript Roadmap](https://roadmap.sh/typescript)
+- [@roadmap@Visit Dedicated TypeScript Roadmap](https://roadmap.sh/typescript)
 - [@official@TypeScript Website](https://www.typescriptlang.org/)
 - [@official@TypeScript Playground](https://www.typescriptlang.org/play)
-- [@article@The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [@official@The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 - [@video@TypeScript for Beginners](https://www.youtube.com/watch?v=BwuLxPH8IDs)
 - [@feed@Explore top posts about TypeScript](https://app.daily.dev/tags/typescript?ref=roadmapsh)

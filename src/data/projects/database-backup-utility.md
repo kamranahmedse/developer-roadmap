@@ -2,7 +2,7 @@
 title: 'Database Backup Utility'
 description: 'Build a database backup utility that can backup and restore any DB'
 isNew: false
-sort: 18
+sort: 2100
 difficulty: 'advanced'
 nature: 'CLI'
 skills:
@@ -17,11 +17,13 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'
   - 'golang'
   - 'spring-boot'
+  - 'cpp'
 ---
 
 You are required to build a command-line interface (CLI) utility for backing up any type of database. The utility will support various database management systems (DBMS) such as MySQL, PostgreSQL, MongoDB, SQLite, and others. The tool will feature automatic backup scheduling, compression of backup files, storage options (local and cloud), and logging of backup activities.

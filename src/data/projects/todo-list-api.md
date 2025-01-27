@@ -2,7 +2,7 @@
 title: 'Todo List API'
 description: 'Build a RESTful API to allow users to manage their to-do list.'
 isNew: false
-sort: 7
+sort: 900
 difficulty: 'beginner'
 nature: 'API'
 skills:
@@ -19,6 +19,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'
@@ -64,7 +65,7 @@ Register a new user using the following request:
 POST /register
 {
   "name": "John Doe",
-  "email": "john@doe.com"
+  "email": "john@doe.com",
   "password": "password"
 }
 ```
@@ -77,7 +78,7 @@ This will validate the given details, make sure the email is unique and store th
 }
 ```
 
-The token can either be a JWT token or a random string that can be used for authentication. We leave it up to you to decide the implementation details.
+The token can either be a JWT or a random string that can be used for authentication. We leave it up to you to decide the implementation details.
 
 ### User Login
 

@@ -1,7 +1,6 @@
 ---
 import type { GuideFileType, GuideFrontmatter } from '../lib/guide';
-import { replaceVariables } from '../lib/markdown';
-import { QuestionGroupType } from '../lib/question-group';
+import { type QuestionGroupType } from '../lib/question-group';
 
 export interface Props {
   guide: GuideFileType | QuestionGroupType;
@@ -38,7 +37,7 @@ if (isQuestionGroupType(guide)) {
   <span
     class='text-sm transition-transform group-hover:translate-x-2 md:text-base'
   >
-    {replaceVariables(frontmatter.title)}
+    {frontmatter.title}
 
     {
       frontmatter.isNew && (
@@ -46,7 +45,7 @@ if (isQuestionGroupType(guide)) {
           New
           <span class='hidden sm:inline'>
             &middot;
-            {new Date(frontmatter.date).toLocaleString('default', {
+            {new Date(frontmatter.date || '').toLocaleString('default', {
               month: 'long',
             })}
           </span>

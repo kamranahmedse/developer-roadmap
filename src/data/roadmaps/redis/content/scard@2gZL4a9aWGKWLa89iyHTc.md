@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@](https://redis.io/docs/latest/commands/scard/)
+- [@official@SCARD Documentation](https://redis.io/docs/latest/commands/scard/)

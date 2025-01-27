@@ -4,4 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@video@Decision trees - A friendly introduction](https://www.youtube.com/watch?v=HkyWAhr9v8g)
+- [@article@Game Strategy - Real Time Decision Tree](https://medium.com/@aleena.sebastian/game-strategy-optimization-using-decision-trees-d4067008eed1)
+- [@article@Real Time Decision Tree](https://www.codewithc.com/real-time-decision-trees-in-pygame-ai/)
+- [@video@Decision Trees - A Friendly Introduction](https://www.youtube.com/watch?v=HkyWAhr9v8g)

@@ -3,9 +3,9 @@ pdfUrl: '/pdfs/roadmaps/game-developer.pdf'
 order: 17
 renderer: 'editor'
 briefTitle: 'Game Developer'
-briefDescription: 'Roadmap to becoming a Game Developer in 2024'
+briefDescription: 'Roadmap to becoming a Game Developer in 2025'
 title: 'Game Developer'
-description: 'Roadmap to becoming a Game Developer in 2024'
+description: 'Roadmap to becoming a Game Developer in 2025'
 hasTopics: true
 isNew: false
 dimensions:

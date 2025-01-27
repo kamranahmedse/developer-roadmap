@@ -4,6 +4,6 @@ Decentralized storage is where data is stored on a decentralized network across 
 
 Visit the following resources to learn more:
 
-- [@article@What Is Decentralized Storage?](https://medium.com/@ppio/what-is-decentralized-storage-9c4b761942e2)
 - [@article@Decentralized Storage](https://ethereum.org/en/developers/docs/storage/)
+- [@article@What Is Decentralized Storage?](https://medium.com/@ppio/what-is-decentralized-storage-9c4b761942e2)
 - [@feed@Explore top posts about Decentralized](https://app.daily.dev/tags/decentralized?ref=roadmapsh)

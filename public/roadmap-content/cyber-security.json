@@ -78,7 +78,7 @@
         "type": "article"
       },
       {
-        "title": "Libra Office",
+        "title": "LibreOffice",
         "url": "https://www.libreoffice.org/",
         "type": "article"
       }
@@ -406,7 +406,7 @@
   },
   "s86x24SHPEbbOB9lYNU-w": {
     "title": "CISM",
-    "description": "The Certified Information Security Manager (CISM) is an advanced cybersecurity certification offered by ISACA that focuses on information security management. It is designed for professionals who have a strong understanding of information security and are responsible for overseeing, designing, and managing an organization's information security programs.\n\nCommon ports are standardized communication endpoints used by various network protocols and services. In cybersecurity, understanding these ports is crucial for configuring firewalls, detecting potential threats, and managing network traffic. Some widely used ports include 80 and 443 for HTTP and HTTPS web traffic, 22 for SSH secure remote access, 25 for SMTP email transmission, and 53 for DNS name resolution. FTP typically uses port 21 for control and 20 for data transfer, while ports 137-139 and 445 are associated with SMB file sharing. Database services often use specific ports, such as 3306 for MySQL and 1433 for Microsoft SQL Server. Cybersecurity professionals must be familiar with these common ports and their expected behaviors to effectively monitor network activities, identify anomalies, and secure systems against potential attacks targeting specific services.\n\nLearn more from the following resources:",
+    "description": "The Certified Information Security Manager (CISM) is an advanced cybersecurity certification offered by ISACA that focuses on information security management. It is designed for professionals who have a strong understanding of information security and are responsible for overseeing, designing, and managing an organization's information security programs.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "CISM Website",
@@ -811,13 +811,8 @@
         "type": "article"
       },
       {
-        "title": "Lets subnet your home network!",
-        "url": "https://www.youtube.com/watch?v=mJ_5qeqGOaI&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&index=6",
-        "type": "video"
-      },
-      {
-        "title": "Subnetting for hackers",
-        "url": "https://www.youtube.com/watch?v=o0dZFcIFIAw",
+        "title": "Subnetting",
+        "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF",
         "type": "video"
       }
     ]
@@ -1058,7 +1053,7 @@
   },
   "lwSFIbIX-xOZ0QK2sGFb1": {
     "title": "Router",
-    "description": "Amazon Simple Storage Service (S3) is a scalable, object-based cloud storage service provided by AWS. It allows users to store and retrieve large amounts of data, such as files, backups, or media content, with high durability and availability. S3 is designed for flexibility, enabling users to access data from anywhere via the internet while offering security features like encryption and access controls. It is widely used for data storage, content distribution, disaster recovery, and big data analytics, providing cost-effective, scalable storage for a variety of applications.\n\nLearn more from the following resources:",
+    "description": "A router is a networking device that directs data packets between different networks, ensuring they reach their destination. It operates at the network layer (Layer 3) of the OSI model and forwards data based on the IP addresses of the source and destination. Routers are essential for connecting devices to the internet or linking multiple networks together. They maintain a routing table to decide the best path for data and can dynamically update routes using protocols like RIP, OSPF, or BGP. Routers also handle Network Address Translation (NAT), allowing multiple devices to share a single public IP address. Many modern routers offer Wi-Fi for wireless connectivity and include basic firewall security to protect the network from threats.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is a Router",
@@ -1068,6 +1063,16 @@
       {
         "title": "What is a router and how does it work?",
         "url": "https://www.youtube.com/watch?v=UIJzHLpG9bM",
+        "type": "video"
+      },
+      {
+        "title": "Everything Routers do",
+        "url": "https://youtu.be/AzXys5kxpAM?si=nEsCH6jG2Lj6Ua8N",
+        "type": "video"
+      },
+      {
+        "title": "How Routers forward Packets?",
+        "url": "https://youtu.be/Ep-x_6kggKA?si=II5xBPoXjYEjLvWX",
         "type": "video"
       }
     ]
@@ -1393,11 +1398,16 @@
   },
   "LKK1A5-xawA7yCIAWHS8P": {
     "title": "SSL / TLS",
-    "description": "Single Sign-On (SSO) is an authentication method that allows users to access multiple applications or systems with one set of login credentials. It enables users to log in once and gain access to various connected systems without re-entering credentials. SSO enhances user experience by reducing password fatigue, streamlines access management for IT departments, and can improve security by centralizing authentication controls. It typically uses protocols like SAML, OAuth, or OpenID Connect to securely share authentication information across different domains. While SSO offers convenience and can strengthen security when implemented correctly, it also presents a single point of failure if compromised, making robust security measures for the SSO system critical.\n\nLearn more from the following resources:",
+    "description": "Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols used to provide security in internet communications. These protocols encrypt the data that is transmitted over the web, so anyone who tries to intercept packets will not be able to interpret the data. One difference that is important to know is that SSL is now deprecated due to security flaws, and most modern web browsers no longer support it. But TLS is still secure and widely supported, so preferably use TLS.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What’s the Difference Between SSL and TLS?",
-        "url": "https://aws.amazon.com/compare/the-difference-between-ssl-and-tls/",
+        "title": "What is SSL? | SSL definition",
+        "url": "https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/",
+        "type": "article"
+      },
+      {
+        "title": "TLS Basics",
+        "url": "https://www.internetsociety.org/deploy360/tls/basics/",
         "type": "article"
       },
       {
@@ -1795,7 +1805,7 @@
         "type": "article"
       },
       {
-        "title": "",
+        "title": "What is LDAP",
         "url": "https://www.youtube.com/watch?v=vy3e6ekuqqg",
         "type": "video"
       }
@@ -1887,11 +1897,6 @@
       {
         "title": "Core Impact",
         "url": "https://www.coresecurity.com/",
-        "type": "article"
-      },
-      {
-        "title": "Immunity Canvas",
-        "url": "www.immunitysec.com",
         "type": "article"
       },
       {
@@ -2205,7 +2210,7 @@
       },
       {
         "title": "Biometrics (fingerprint, facial recognition, etc.)",
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5428991/",
+        "url": "https://me-en.kaspersky.com/resource-center/definitions/biometrics",
         "type": "article"
       },
       {
@@ -4446,7 +4451,7 @@
     ]
   },
   "RJctUpvlUJGAdwBNtDSXw": {
-    "title": "Understand the concept of Infrastructure as Cloud",
+    "title": "Understand the concept of Infrastructure as Code",
     "description": "Infrastructure as Code (IaC) is a practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. It treats infrastructure configuration as software, allowing it to be version-controlled, tested, and automatically deployed. IaC enables consistent, repeatable environment setups, reduces manual errors, facilitates rapid scaling and disaster recovery, and improves collaboration between development and operations teams. Popular IaC tools include Terraform, AWS CloudFormation, and Ansible, which use declarative or imperative approaches to define infrastructure states. This approach is fundamental to DevOps practices, cloud computing, and the efficient management of complex, dynamic IT environments.\n\nLearn more from the following resources:",
     "links": [
       {

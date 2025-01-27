@@ -2,7 +2,7 @@
 title: 'Prometheus and Grafana'
 description: 'Setup monitoring using Prometheus and visualize metrics in Grafana.'
 isNew: false
-sort: 20
+sort: 1800
 difficulty: 'advanced'
 nature: 'Monitoring'
 skills:

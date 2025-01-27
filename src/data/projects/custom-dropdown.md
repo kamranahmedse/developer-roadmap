@@ -1,23 +1,23 @@
 ---
-title: 'Custom Dropdown'  
-description: 'Create a custom dropdown using HTML, CSS, and JavaScript.'  
-isNew: false  
-sort: 19
-difficulty: 'intermediate'  
-nature: 'JavaScript'  
-skills:  
-  - 'HTML'  
-  - 'CSS'  
-  - 'JavaScript'  
-  - 'DOM Manipulation'  
-seo:  
-  title: 'Build a Custom Dropdown Menu with JavaScript'  
-  description: 'Learn how to create a fully customizable dropdown menu that allows users to select an item and see the selection reflected in the dropdown.'  
-  keywords:  
+title: 'Custom Dropdown'
+description: 'Create a custom dropdown using HTML, CSS, and JavaScript.'
+isNew: false
+sort: 20
+difficulty: 'intermediate'
+nature: 'JavaScript'
+skills:
+  - 'HTML'
+  - 'CSS'
+  - 'JavaScript'
+  - 'DOM Manipulation'
+seo:
+  title: 'Build a Custom Dropdown Menu with JavaScript'
+  description: 'Learn how to create a fully customizable dropdown menu that allows users to select an item and see the selection reflected in the dropdown.'
+  keywords:
     - 'custom dropdown'
     - 'javascript dropdown'
-    - 'html and css'  
-roadmapIds:  
+    - 'html and css'
+roadmapIds:
   - 'frontend'
 ---
 

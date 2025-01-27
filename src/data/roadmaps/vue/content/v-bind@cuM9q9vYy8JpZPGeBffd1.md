@@ -1,11 +1,10 @@
 # v-bind
 
-The `v-bind` directive dynamically binds an HTML attribute to data.
+The `v-bind` directive dynamically binds an HTML attribute to data. The shorthand for this directive is `:`
 
-The shorthand for this directive is `:`
+## Example
 
-Example:
-```vue
+```html
 <script setup>
   import { ref } from 'vue';
   const image_url = ref("path/to/image.png")
@@ -18,4 +17,4 @@ Example:
 
 Visit the following resources for more information:
 
-- [@official@v-bind documentation](https://vuejs.org/api/built-in-directives.html#v-bind)
+- [@official@v-bind Documentation](https://vuejs.org/api/built-in-directives.html#v-bind)

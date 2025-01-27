@@ -1,9 +1,12 @@
 export function getPercentage(portion: number, total: number): string {
-  if (total <= 0 || portion <= 0) {
-    return '0';
-  } else if (portion > total) {
-    return '100';
+  if (portion <= 0 || total <= 0) {
+    return '0.00';
+  }
+  
+  if (portion >= total) {
+    return '100.00';
   }
 
-  return ((portion / total) * 100).toFixed(2);
+  const percentage = (portion / total) * 100;
+  return percentage.toFixed(2);
 }

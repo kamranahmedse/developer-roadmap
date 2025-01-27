@@ -4,9 +4,9 @@ jsonUrl: '/jsons/roadmaps/backend.json'
 pdfUrl: '/pdfs/roadmaps/backend.pdf'
 order: 2
 briefTitle: 'Backend'
-briefDescription: 'Step by step guide to becoming a backend developer in 2024'
+briefDescription: 'Step by step guide to becoming a backend developer in 2025'
 title: 'Backend Developer'
-description: 'Step by step guide to becoming a modern backend developer in 2024'
+description: 'Step by step guide to becoming a modern backend developer in 2025'
 hasTopics: true
 isForkable: false
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'

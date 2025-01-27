@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/redis.pdf'
 renderer: 'editor'
 order: 19
 briefTitle: 'Redis'
-briefDescription: 'Step by step guide to learn Redis in 2024'
+briefDescription: 'Step by step guide to learn Redis in 2025'
 title: 'Redis Roadmap'
-description: 'Step by step guide to learn Redis in 2024'
+description: 'Step by step guide to learn Redis in 2025'
 hasTopics: true
 isNew: true
 dimensions:

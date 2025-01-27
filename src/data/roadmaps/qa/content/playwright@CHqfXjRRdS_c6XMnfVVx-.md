@@ -4,5 +4,5 @@ Playwright Test was created specifically to accommodate the needs of end-to-end 
 
 Visit the following resources to learn more:
 
-- [@official@Official Website: Playwright](https://playwright.dev/)
+- [@official@Playwright](https://playwright.dev/)
 - [@article@Playwright Tutorial: Learn Basics and Setup](https://www.browserstack.com/guide/playwright-tutorial)

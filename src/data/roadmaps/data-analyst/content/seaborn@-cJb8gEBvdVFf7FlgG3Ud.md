@@ -4,5 +4,5 @@ Seaborn is a robust, comprehensive Python library focused on the creation of inf
 
 Learn more from the following resources:
 
-- [@official@Seaborn Website](https://seaborn.pydata.org/)
+- [@official@Seaborn](https://seaborn.pydata.org/)
 - [@video@Seaborn Tutorial : Seaborn Full Course](https://www.youtube.com/watch?v=6GUZXDef2U0)

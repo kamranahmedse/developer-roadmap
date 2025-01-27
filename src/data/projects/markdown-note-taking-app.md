@@ -2,7 +2,7 @@
 title: 'Markdown Note-taking App'
 description: 'Build a note-taking app that uses markdown for formatting.'
 isNew: false
-sort: 10
+sort: 1300
 difficulty: 'intermediate'
 nature: 'API'
 skills:
@@ -17,6 +17,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

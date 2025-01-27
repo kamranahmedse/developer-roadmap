@@ -4,7 +4,7 @@ TeamCity is a continuous integration (CI) and continuous delivery (CD) server de
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://www.jetbrains.com/help/teamcity/teamcity-documentation.html)
-- [@article@TeamCity Tutorials](https://www.jetbrains.com/teamcity/tutorials/)
+- [@official@TeamCity Documentation](https://www.jetbrains.com/help/teamcity/teamcity-documentation.html)
+- [@official@TeamCity Tutorials](https://www.jetbrains.com/teamcity/tutorials/)
 - [@video@CI/CD with JetBrains TeamCity](https://www.youtube.com/watch?v=zqi4fDF-S60)
 - [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

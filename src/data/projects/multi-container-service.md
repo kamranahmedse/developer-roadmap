@@ -2,7 +2,7 @@
 title: 'Multi-Container Application'
 description: 'Use Docker Compose to run a multi-container application'
 isNew: false
-sort: 14
+sort: 1500
 difficulty: 'intermediate'
 nature: 'Docker Compose'
 skills:

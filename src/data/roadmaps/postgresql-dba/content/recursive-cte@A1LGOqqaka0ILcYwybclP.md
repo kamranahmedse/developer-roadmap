@@ -6,5 +6,5 @@ Note that recursive CTEs can be complex, and it's important to ensure a proper t
 
 Learn more from the following resources:
 
-- [@article@PostgreSQL Recursive Query](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-recursive-query/)
-- [@article@PostgreSQL recursive query explained](https://elvisciotti.medium.com/postgresql-recursive-query-the-simplest-example-explained-f9b85e0a371b)
+- [@article@PostgreSQL - Recursive Query](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-recursive-query/)
+- [@article@PostgreSQL Recursive Query Explained](https://elvisciotti.medium.com/postgresql-recursive-query-the-simplest-example-explained-f9b85e0a371b)

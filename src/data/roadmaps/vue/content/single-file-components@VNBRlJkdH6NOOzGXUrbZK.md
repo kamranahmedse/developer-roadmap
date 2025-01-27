@@ -4,4 +4,4 @@ Vue Single-File Components (a.k.a. `*.vue` files, abbreviated as SFC) is a speci
 
 Visit the following resources to learn more:
 
-- [@article@Single File Components](https://vuejs.org/guide/scaling-up/sfc.html)
+- [@official@Single File Components](https://vuejs.org/guide/scaling-up/sfc.html)

@@ -2,7 +2,7 @@
 title: 'Server Performance Stats'
 description: 'Write a script to analyse basic server performance stats.'
 isNew: true
-sort: 0
+sort: 100
 difficulty: 'beginner'
 nature: 'CLI'
 skills:

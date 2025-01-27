@@ -5,4 +5,5 @@ Postman is a popular tool in web development for designing, testing, and managin
 Learn more from the following resources:
 
 - [@official@Postman Website](https://www.postman.com/)
-- [@video@Postman Api Testing Tutorial for beginners](https://www.youtube.com/watch?v=MFxk5BZulVU)
+- [@official@Postman Docs](https://www.postman.com/api-documentation-tool/)
+- [@video@Postman Tutorial for Beginners](https://www.youtube.com/watch?v=MFxk5BZulVU)
