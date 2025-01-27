@@ -73,8 +73,6 @@ export interface UserDocument {
     inviteTeam: AllowedOnboardingStatus;
   };
 
-  customerId: string;
-
   createdAt: string;
   updatedAt: string;
 }
