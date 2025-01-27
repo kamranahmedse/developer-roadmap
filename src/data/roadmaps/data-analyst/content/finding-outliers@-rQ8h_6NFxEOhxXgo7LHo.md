@@ -4,4 +4,4 @@ In the field of data analysis, data cleaning is an essential and preliminary ste
 
 Visit the following resources to learn more:
 
-- [@article@Outliers]([https://www.mathsisfun.com/data/outliers.html)
+- [@article@Outliers](https://www.mathsisfun.com/data/outliers.html)
