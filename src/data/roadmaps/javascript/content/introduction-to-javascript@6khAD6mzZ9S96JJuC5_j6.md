@@ -10,6 +10,7 @@ Visit the following resources to learn more:
 - [@article@Exploring JS: JavaScript books for programmers](https://exploringjs.com/)
 - [@article@Eloquent JavaScript textbook](https://eloquentjavascript.net/)
 - [@opensource@You Don't Know JS Yet (book series)](https://github.com/getify/You-Dont-Know-JS)
+- [@opensource@JavaScript Notes for Beginners](https://goalkicker.com/JavaScriptBook/)
 - [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
 - [@video@Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)
