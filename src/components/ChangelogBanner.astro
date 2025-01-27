@@ -1,8 +1,7 @@
 ---
 import { getAllChangelogs } from '../lib/changelog';
 import { DateTime } from 'luxon';
-import { SubscribeToChangelog } from './SubscribeToChangelog';
-
+import AstroIcon from './AstroIcon.astro';
 const allChangelogs = await getAllChangelogs();
 const top10Changelogs = allChangelogs.slice(0, 10);
 ---
@@ -56,15 +55,22 @@ const top10Changelogs = allChangelogs.slice(0, 10);
       </ul>
     </div>
     <div
-      class='mt-2 flex flex-col items-start gap-2 sm:mt-8 sm:items-center sm:justify-center'
+      class='mt-2 flex flex-col gap-2 sm:flex-row sm:mt-8 sm:items-center sm:justify-center'
     >
       <a
         href='/changelog'
-        class='inline-block rounded-lg bg-gray-800 px-4 py-2 text-sm text-white transition-colors hover:bg-gray-700 sm:rounded-full sm:px-6 sm:text-base'
+        class='inline-block rounded-lg border border-black bg-black px-4 py-2 text-sm text-white transition-colors hover:bg-gray-700 sm:rounded-full sm:px-6 sm:text-base'
       >
         View Full Changelog
       </a>
-      <SubscribeToChangelog client:load />
+      <button
+        data-guest-required
+        data-popup='login-popup'
+        class='flex flex-row items-center gap-2 rounded-lg border border-black bg-white px-4 py-2 text-sm text-black transition-all hover:bg-black hover:text-white sm:rounded-full sm:pl-4 sm:pr-5 sm:text-base'
+      >
+        <AstroIcon icon='bell' class='h-5 w-5' />
+        Subscribe for Notifications
+      </button>
     </div>
   </div>
 </div>
