@@ -3,6 +3,14 @@ import { SQLCoursePage } from '../../components/SQLCourse/SQLCoursePage.tsx';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 ---
 
-<SkeletonLayout title='Master SQL'>
+<SkeletonLayout
+  title='Master SQL'
+  briefTitle='Learn SQL from the ground up'
+  ogImageUrl='https://assets.roadmap.sh/guest/sql-course-bjc53.png'
+  description='Learn SQL from the ground up. This course covers the basics of SQL, intermediate concepts, and advanced topics.'
+  keywords={['sql', 'database', 'database management', 'database administration']}
+  canonicalUrl='/courses/sql'
+  noIndex={true}
+>
   <SQLCoursePage client:load />
 </SkeletonLayout>
