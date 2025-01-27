@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Python Modules](https://docs.python.org/3/tutorial/modules.html)
 - [@article@Modules in Python](https://www.programiz.com/python-programming/modules)
+- [@article@Python Modules and Packages](https://realpython.com/python-modules-packages/)
