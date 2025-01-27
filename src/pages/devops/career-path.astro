@@ -19,9 +19,9 @@ const ogImageUrl =
 ---
 
 <BaseLayout
-  title={guideData.seo.title}
-  description={guideData.seo.description}
-  permalink={guide.frontmatter.excludedBySlug}
+  title={replaceVariables(guideData.seo.title)}
+  description={replaceVariables(guideData.seo.description)}
+  permalink={guideData.excludedBySlug}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >

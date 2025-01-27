@@ -557,11 +557,11 @@
   },
   "fY8zgbB13wxZ1CFtMSdZZ": {
     "title": "SQL Tuning",
-    "description": "SQL tuning is a broad topic and many books have been written as reference. It's important to benchmark and profile to simulate and uncover bottlenecks.\n\n*   Benchmark - Simulate high-load situations with tools such as ab.\n*   Profile - Enable tools such as the slow query log to help track performance issues.\n\nBenchmarking and profiling might point you to the following optimizations.\n\nTo learn more, visit the following links:",
+    "description": "SQL tuning is the attempt to diagnose and repair SQL statements that fail to meet a performance standard. It is a broad topic and many books have been written as reference. It's important to benchmark and profile to simulate and uncover bottlenecks.\n\n*   Benchmark - Simulate high-load situations with tools such as ab.\n*   Profile - Enable tools such as the slow query log to help track performance issues.\n\nBenchmarking and profiling might point you to the following optimizations.\n\nTo learn more, visit the following links:",
     "links": [
       {
-        "title": "Optimizing MySQL Queries",
-        "url": "https://aiddroid.com/10-tips-optimizing-mysql-queries-dont-suck/",
+        "title": "Introduction to SQL Tuning - Oracle",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/tgsql/introduction-to-sql-tuning.html#GUID-B653E5F3-F078-4BBC-9516-B892960046A2",
         "type": "article"
       },
       {
@@ -1140,8 +1140,14 @@
   },
   "Ihnmxo_bVgZABDwg1QGGk": {
     "title": "Synchronous I/O",
-    "description": "Blocking the calling thread while I/O completes can reduce performance and affect vertical scalability.\n\nA synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.\n\nCommon examples of I/O include:\n\n*   Retrieving or persisting data to a database or any type of persistent storage.\n*   Sending a request to a web service.\n*   Posting a message or retrieving a message from a queue.\n*   Writing to or reading from a local file.\n\nThis antipattern typically occurs because:",
-    "links": []
+    "description": "Blocking the calling thread while I/O completes can reduce performance and affect vertical scalability.\n\nA synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.\n\nCommon examples of I/O include:\n\n*   Retrieving or persisting data to a database or any type of persistent storage.\n*   Sending a request to a web service.\n*   Posting a message or retrieving a message from a queue.\n*   Writing to or reading from a local file.\n\nThis antipattern typically occurs because:\n\n*   It appears to be the most intuitive way to perform an operation.\n*   The application requires a response from a request.\n*   The application uses a library that only provides synchronous methods for I/O.\n*   An external library performs synchronous I/O operations internally. A single synchronous I/O call can block an entire call chain.\n\nVisit the following links to learn more:",
+    "links": [
+      {
+        "title": "What is Synchronous I/O antipattern?",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/synchronous-io/",
+        "type": "article"
+      }
+    ]
   },
   "hDFYlGFYwcwWXLmrxodFX": {
     "title": "Monitoring",

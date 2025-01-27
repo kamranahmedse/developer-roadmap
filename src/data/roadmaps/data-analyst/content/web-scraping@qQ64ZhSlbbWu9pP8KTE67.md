@@ -4,5 +4,5 @@ Web scraping plays a significant role in collecting unique datasets for data ana
 
 Learn more from the following resources:
 
-- [@article@What is web scraping what is it used for?](https://www.parsehub.com/blog/what-is-web-scraping/)
-- [@video@What is web scraping?](https://www.youtube.com/watch?v=dlj_QL-ENJM)
+- [@article@What is Web Scraping & What is it used for?](https://www.parsehub.com/blog/what-is-web-scraping/)
+- [@video@What is Web Scraping?](https://www.youtube.com/watch?v=dlj_QL-ENJM)

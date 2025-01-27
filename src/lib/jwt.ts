@@ -3,6 +3,8 @@ import Cookies from 'js-cookie';
 import type { AllowedOnboardingStatus } from '../api/user';
 
 export const TOKEN_COOKIE_NAME = '__roadmapsh_jt__';
+export const FIRST_LOGIN_PARAM = 'fl' as const;
+export const COURSE_PURCHASE_PARAM = 't';
 
 export type TokenPayload = {
   id: string;

@@ -33,7 +33,7 @@ I'll focus on the essential front-end languages and recommend a few important fr
 
 Before we explore the front end languages, libraries, and frameworks to learn in 2025, it is important to understand what they are and the differences between them.
 
-**Languages** are the core programming languages that developers use to write code. They have defined syntax, semantics, and rules for writing instructions that computers can execute and understand. Examples include: 
+**Languages** are the core programming languages that developers use to write code. They have defined syntax, semantics, and rules for writing instructions that computers can execute and understand. Examples include:
 
 - JavaScript
 - TypeScript
@@ -76,11 +76,9 @@ These are the best front-end languages you should learn in 2025:
 
 ### HyperText Markup Language (HTML)
 
-<p align="center">
-  <img src="https://assets.roadmap.sh/guest/html-bmvj9.png" alt="HTML HyperText Markup Language" />
-</p>
+![HTML](https://assets.roadmap.sh/guest/html-bmvj9.png)
 
-HTML is the standard markup language for creating web pages. It defines the structure and layout of content within a web browser, allowing for the display of text, images, videos, and more that users interact with. HTML is beginner-friendly, supported across multiple browsers, and fundamental to web development. 
+HTML is the standard markup language for creating web pages. It defines the structure and layout of content within a web browser, allowing for the display of text, images, videos, and more that users interact with. HTML is beginner-friendly, supported across multiple browsers, and fundamental to web development.
 
 HTML depends on languages like CSS and JavaScript to achieve full functionality, and it is mostly limited to web-based projects. Beyond being the backbone of web applications, it also plays an integral role in improving application accessibility, enhancing search engine optimization (SEO), and enabling assistive technologies to interpret and present content accurately.
 
@@ -121,7 +119,7 @@ Despite advancements in web technologies, CSS remains a powerful styling tool th
 
 ![JavaScript](https://assets.roadmap.sh/guest/javascript-logo-vf4vv.png)
 
-JavaScript is a versatile front end language used in conjunction with HTML and CSS to enhance the interaction of web pages. With features like excellent speed and cross-browser compatibility, JavaScript enables developers to add dynamic elements such as form validation, animations, 2D/3D graphics, dynamic updates to web pages without requiring a page refresh, and other interactive features to web applications. 
+JavaScript is a versatile front end language used in conjunction with HTML and CSS to enhance the interaction of web pages. With features like excellent speed and cross-browser compatibility, JavaScript enables developers to add dynamic elements such as form validation, animations, 2D/3D graphics, dynamic updates to web pages without requiring a page refresh, and other interactive features to web applications.
 
 JavaScript is essential for web development and has a vast ecosystem of libraries and frameworks for building applications across multiple platforms.
 
@@ -203,7 +201,6 @@ Swift is primarily designed to support Apple's operating systems and has limited
 
 - It is essential for developing applications within Apple’s ecosystem.
 - Relatively easy to learn and use, yet powerful for professional native development.
-
 
 ### Kotlin
 
@@ -312,7 +309,8 @@ React Native enables the development of cross-platform mobile applications, such
 
 You can learn more details by exploring the [React Native roadmap](https://roadmap.sh/react-native).
 
-### WebAssembly and front-end development
+### WebAssembly and Front-end development
+
 ![WebAssembly](https://assets.roadmap.sh/guest/webassembly-logo-lugnl.png)
 
 WebAssembly (or Wasm) is a binary instruction format serving as a compilation target for programming languages, enabling them to run efficiently in web browsers. It empowers developers to write high-performance code in languages like C, [C++](https://roadmap.sh/cpp), and [Rust](https://roadmap.sh/rust), which can then be seamlessly integrated into web applications, enhancing web front-end development capabilities.
@@ -362,6 +360,6 @@ In summary, essential languages to learn in 2025 include HTML for structure, CSS
 
 Furthermore, users' evolving needs will continue to directly impact the approach to front-end development. This evolution will spur the rise of new technologies, libraries, and frameworks and prompt existing technologies to update their solutions. Business requirements will also play a significant role in determining the [choice of technologies during front-end development](https://roadmap.sh/frontend/technologies).
 
-Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end r](https://roadmap.sh/frontend)[oadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
+Staying informed about these changes is critical, as is knowing the appropriate path to follow when learning or adopting new technology. The [front-end roadmap](https://roadmap.sh/frontend) is a reliable source of truth for developers seeking to stay updated and informed about the changes that may arise in front-end development.
 
 Beyond having access to a reliable roadmap, an essential aspect of learning is monitoring your progress, demonstrating your [skills](https://roadmap.sh/frontend/developer-skills) to potential employers, and joining a supportive community. [Sign up to get started](https://roadmap.sh/signup) on the frontend roadmap while tracking your progress.

@@ -14,6 +14,7 @@ These tools allow you to install them on your own infrastructure and don’t req
 On the other hand, these tools either require you to use them from the cloud or are only accessible in SaaS format, which means they provide the infrastructure, and you just use their services.
 
 Some examples of these tools are:
+
 - CircleCI
 - Travis CI
 - GitLab CI/CD (cloud version)

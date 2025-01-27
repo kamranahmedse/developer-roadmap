@@ -129,7 +129,7 @@ Frontend developer duties go far beyond designing a website's appearance. They p
 
 Frontend developers aren't just individual who make cool web applications or websites. They also play a critical role in maintaining existing web applications. It is crucial to hire a frontend developer who can:
 
-- **Fix bugs:** Frontend developers help resolve website issues like browser compatibility issues, unclickable buttons, etc. 
+- **Fix bugs:** Frontend developers help resolve website issues like browser compatibility issues, unclickable buttons, etc.
 
 - **Optimize applications:** Frontend web developers ensure a website works well and loads fast. They are responsible for optimizing website performance, improving load times, and troubleshooting frontend issues. Frontend developers must stay up-to-date with [industry trends](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards#web_best_practices) and [best practices](https://roadmap.sh/best-practices/frontend-performance). This ensures that the websites they work on are accessible, follow web standards, and provide a great user experience.
 
@@ -158,7 +158,7 @@ Creating easy-to-use websites and applications requires a broad range of technic
 - Good knowledge of frontend frameworks and libraries, for example, React JS and TailwindCSS.
 - Experience with CSS preprocessors for modular and maintainable styling, such as Sass.
 - Experience with browser testing and debugging tools, like Chrome DevTools.
-- Proficient understanding of web performance optimization techniques, like lazy loading. 
+- Proficient understanding of web performance optimization techniques, like lazy loading.
 - Experience identifying and fixing performance bottlenecks using tools such as Google PageSpeed Insights.
 - Attention to detail to ensure visually consistent and error-free web applications.
 - Ability to stay up-to-date with emerging technologies like progressive web apps.
@@ -167,7 +167,7 @@ Creating easy-to-use websites and applications requires a broad range of technic
 
 Desirable skills set exceptional frontend web developers apart from the rest. They demonstrate a developer's ability to excel and deliver high-quality results.
 
-![](https://assets.roadmap.sh/guest/difference-between-front-end-developers-and-back-end-web-developers-1-vaw6v.png)
+![Frontend vs Backend Developers](https://assets.roadmap.sh/guest/difference-between-front-end-developers-and-back-end-web-developers-1-vaw6v.png)
 
 Hire a frontend web developer who can do more than just the basics by checking for the following skills:
 
@@ -312,7 +312,7 @@ The time required to [become a frontend developer](https://roadmap.sh/frontend/h
 
 ## What is the typical career path for a frontend developer?
 
-Frontend development offers a cool career path with vast opportunities for professional development. 
+Frontend development offers a cool career path with vast opportunities for professional development.
 
 ![Typical career path for a frontend developer](https://assets.roadmap.sh/guest/typical-career-path-for-a-front-end-developer-96zb3.png)
 

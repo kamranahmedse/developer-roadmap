@@ -4,5 +4,5 @@ Workflow runners are the environments where GitHub Actions workflows are execute
 
 Learn more from the following resources:
 
+- [@official@GitHub Actions Runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [@video@GitHub Actions Self-hosted runners](https://www.youtube.com/watch?v=aLHyPZO0Fy0)
-- [@article@GitHub Actions Runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)

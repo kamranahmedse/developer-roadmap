@@ -95,7 +95,7 @@ Get comfortable, because it’s going to be a long read.
 
 ### 1. GitHub Actions
 
-![](https://assets.roadmap.sh/guest/github-actions-sddcg.png)
+![Github Actions](https://assets.roadmap.sh/guest/github-actions-sddcg.png)
 
 #### Overview
 
@@ -123,7 +123,7 @@ GitHub Actions offers robust security features, including encrypted secrets, gra
 
 ### 2. Jenkins
 
-[![](https://assets.roadmap.sh/guest/jenkins-3ns0g.png)](https://assets.roadmap.sh/guest/jenkins-3ns0g.png)
+[![Jenkins CI](https://assets.roadmap.sh/guest/jenkins-3ns0g.png)](https://assets.roadmap.sh/guest/jenkins-3ns0g.png)
 
 #### Overview
 
@@ -151,7 +151,7 @@ Jenkins provides essential security features like role-based access control, cre
 
 ### 3. Ansible
 
-[![](https://assets.roadmap.sh/guest/ansible-jxqvt.png)](https://assets.roadmap.sh/guest/ansible-jxqvt.png)
+[![Ansible](https://assets.roadmap.sh/guest/ansible-jxqvt.png)](https://assets.roadmap.sh/guest/ansible-jxqvt.png)
 
 #### Overview
 
@@ -211,7 +211,7 @@ Puppet provides solid security features, including encrypted data handling, role
 
 #### Overview
 
-If you’re talking about DevOps automation tools, Terrafor is definitely up there on the list. **Terraform** by HashiCorp is a leading Infrastructure as Code (IaC) tool that enables you to define and provision infrastructure across various cloud providers using a declarative configuration language.
+If you’re talking about DevOps automation tools, Terraform is definitely up there on the list. **Terraform** by HashiCorp is a leading Infrastructure as Code (IaC) tool that enables you to define and provision infrastructure across various cloud providers using a declarative configuration language.
 
 #### Integration Capabilities 5/5 ★★★★★
 
@@ -277,16 +277,16 @@ Understanding your project requirements and team size will set the foundation fo
 
 #### 1. Project Requirements
 
-* **Type of Projects:** Are you working on small, agile projects or large-scale, enterprise-level applications? Different tools excel in different scenarios.
-* **Development Practices:** Do you follow specific methodologies like Agile, Scrum, or Kanban? Ensure the tool supports your preferred workflow.
-* **Deployment Frequency:** High-frequency deployments require robust CI/CD tools like GitHub Actions or Jenkins to keep up with the pace.
-* **Timeline**: Do you have the time to learn a new skill? Is it better to go with something that gets the job done and is familiar to you vs. picking the ideal tool which has a steeper learning curve and will require you to spend some months fiddling around and making educated guesses.
+- **Type of Projects:** Are you working on small, agile projects or large-scale, enterprise-level applications? Different tools excel in different scenarios.
+- **Development Practices:** Do you follow specific methodologies like Agile, Scrum, or Kanban? Ensure the tool supports your preferred workflow.
+- **Deployment Frequency:** High-frequency deployments require robust CI/CD tools like GitHub Actions or Jenkins to keep up with the pace.
+- **Timeline**: Do you have the time to learn a new skill? Is it better to go with something that gets the job done and is familiar to you vs. picking the ideal tool which has a steeper learning curve and will require you to spend some months fiddling around and making educated guesses.
 
 #### 2. Team Size and Expertise
 
-* **Skill Level:** If your team is new to DevOps, tools with a gentle learning curve like Ansible or GitHub Actions might be more suitable.
-* **Resource Availability:** Larger teams might benefit from more comprehensive tools with extensive features, while smaller teams might prefer lightweight solutions to avoid overcomplicating things.
-* **Collaboration Needs:** Consider how the tool facilitates teamwork. Features like shared dashboards and integrated communication can enhance collaboration.
+- **Skill Level:** If your team is new to DevOps, tools with a gentle learning curve like Ansible or GitHub Actions might be more suitable.
+- **Resource Availability:** Larger teams might benefit from more comprehensive tools with extensive features, while smaller teams might prefer lightweight solutions to avoid overcomplicating things.
+- **Collaboration Needs:** Consider how the tool facilitates teamwork. Features like shared dashboards and integrated communication can enhance collaboration.
 
 ### Considering Integration with Existing Tools
 
@@ -294,14 +294,14 @@ No one likes playing nice with others? Well, in the DevOps world, seamless integ
 
 #### 1. Compatibility with Existing Tools
 
-* **Version Control Systems:** Ensure the automation tool integrates smoothly with your version control system, whether it’s GitHub, GitLab, or Bitbucket.
-* **CI/CD Pipelines:** If you’re already using certain CI/CD tools, check if your new tool can complement or replace them without causing disruptions.
-* **Containerization and Orchestration:** Tools like Docker and Kubernetes are staples in many DevOps workflows. Make sure your automation tool plays well with these technologies.
+- **Version Control Systems:** Ensure the automation tool integrates smoothly with your version control system, whether it’s GitHub, GitLab, or Bitbucket.
+- **CI/CD Pipelines:** If you’re already using certain CI/CD tools, check if your new tool can complement or replace them without causing disruptions.
+- **Containerization and Orchestration:** Tools like Docker and Kubernetes are staples in many DevOps workflows. Make sure your automation tool plays well with these technologies.
 
 #### 2. APIs and Extensibility
 
-* **Custom Integrations:** Look for tools that offer robust APIs, allowing you to create custom integrations tailored to your specific needs.
-* **Plugin Ecosystems:** Tools with extensive plugin libraries (like Jenkins) offer greater flexibility and the ability to extend functionality as needed.
+- **Custom Integrations:** Look for tools that offer robust APIs, allowing you to create custom integrations tailored to your specific needs.
+- **Plugin Ecosystems:** Tools with extensive plugin libraries (like Jenkins) offer greater flexibility and the ability to extend functionality as needed.
 
 ### Evaluating Scalability and Flexibility
 
@@ -309,13 +309,13 @@ Your organization might be small now, but you’re playing the long game, and wh
 
 #### 1. Scalability
 
-* **Handling Increased Load:** Ensure the tool can manage an increase in projects, users, and deployments without performance degradation.
-* **Multi-Project Support:** If you plan to expand your project portfolio, choose tools that can handle multiple projects efficiently.
+- **Handling Increased Load:** Ensure the tool can manage an increase in projects, users, and deployments without performance degradation.
+- **Multi-Project Support:** If you plan to expand your project portfolio, choose tools that can handle multiple projects efficiently.
 
 #### 2. Flexibility
 
-* **Customization Options:** The ability to customize workflows, scripts, and configurations ensures the tool can adapt to your unique processes. This will make the tool useful in more situations/projects, giving you a higher ROI.
-* **Support for Multiple Environments:** Tools that support various environments (development, staging, production) offer greater flexibility in managing different stages of your projects.
+- **Customization Options:** The ability to customize workflows, scripts, and configurations ensures the tool can adapt to your unique processes. This will make the tool useful in more situations/projects, giving you a higher ROI.
+- **Support for Multiple Environments:** Tools that support various environments (development, staging, production) offer greater flexibility in managing different stages of your projects.
 
 ### Budget Considerations
 
@@ -323,14 +323,14 @@ Let’s face it—budget constraints are a reality for most organizations. Balan
 
 #### 1. Cost vs. Features
 
-* **Free vs. Paid Plans:** Many DevOps tools offer free tiers with basic features, which can be great for small teams or startups. Evaluate whether the paid features are worth the investment for your needs.
-* **License Models:** Understand the pricing structure—whether it’s based on the number of users, projects, or usage levels. Choose a model that aligns with your usage patterns.
+- **Free vs. Paid Plans:** Many DevOps tools offer free tiers with basic features, which can be great for small teams or startups. Evaluate whether the paid features are worth the investment for your needs.
+- **License Models:** Understand the pricing structure—whether it’s based on the number of users, projects, or usage levels. Choose a model that aligns with your usage patterns.
 
 #### 2. Total Cost of Ownership (TCO)
 
-* **Initial Setup Costs:** Consider the time and resources required to implement and configure the tool.
-* **Maintenance and Support:** Factor in ongoing costs related to updates, support, and potential training for your team.
-* **Hidden Costs:** Watch out for additional costs like premium plugins, integrations, or storage fees that might not be apparent upfront.
+- **Initial Setup Costs:** Consider the time and resources required to implement and configure the tool.
+- **Maintenance and Support:** Factor in ongoing costs related to updates, support, and potential training for your team.
+- **Hidden Costs:** Watch out for additional costs like premium plugins, integrations, or storage fees that might not be apparent upfront.
 
 ### Quick Tips for Choosing the Right Tool
 

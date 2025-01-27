@@ -4,5 +4,6 @@ TensorFlow, developed by Google Brain Team, has become a crucial tool in the rea
 
 Learn more from the following resources:
 
-- [@official@Tensorflow Website](https://www.tensorflow.org/)
+- [@official@Tensorflow](https://www.tensorflow.org/)
+- [@official@Tensorflow Documentation](https://www.tensorflow.org/learn)
 - [@video@Tensorflow in 100 seconds](https://www.youtube.com/watch?v=i8NETqtGHms)

@@ -826,11 +826,6 @@
         "type": "article"
       },
       {
-        "title": "CS 61B Lecture 19: Asymptotic Analysis",
-        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
-        "type": "article"
-      },
-      {
         "title": "Big-O Cheat Sheet",
         "url": "https://www.bigocheatsheet.com/",
         "type": "article"
@@ -853,6 +848,11 @@
       {
         "title": "Asymptotic Notation - CS50",
         "url": "https://www.youtube.com/watch?v=iOq5kSKqeR4",
+        "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 19: Asymptotic Analysis",
+        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
         "type": "video"
       }
     ]
@@ -2668,7 +2668,7 @@
   },
   "0btHNkzWL1w_-pUgU_k2y": {
     "title": "P = NP",
-    "description": "The P = NP problem is one of the most famous problems in computer science. It asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of solving the given input. In other words, it asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of determining if a given input belongs to a certain class of problems. This problem is also known as the Halting Problem.\n\nVisit the following resources to learn more:",
+    "description": "The P = NP problem is one of the most famous problems in computer science. It asks whether a problem that can be solved in polynomial time on a non-deterministic machine (i.e., the problem is in NP) can also be solved in polynomial time on a deterministic machine (i.e., the problem is in P).\n\nIf you can find a polynomial-time solution to an NP-complete problem, then all problems in NP can be solved in polynomial time. This shows that P = NP.\n\nIf you can prove for any single NP-complete problem that it is only solvable in exponential time, then all NP-complete problems are only solvable in exponential time. This shows that P ≠ NP.\n\nSo far, we don't know whether P = NP or P ≠ NP.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Whats P=NP?, and why is it such a famous question?",
@@ -3366,8 +3366,19 @@
   },
   "tcQSH-eAvJUZuePTDjAIb": {
     "title": "DML",
-    "description": "The SQL commands that deals with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
-    "links": []
+    "description": "The SQL commands that manipulate data in the database belong to DML, or Data Manipulation Language, and this includes most of the SQL statements. DCL is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "DML: Data Manipulation Language",
+        "url": "https://satoricyber.com/glossary/dml-data-manipulation-language",
+        "type": "article"
+      },
+      {
+        "title": "Difference Between DDL and DML",
+        "url": "https://appmaster.io/blog/difference-between-ddl-and-dml",
+        "type": "article"
+      }
+    ]
   },
   "05lkb3B86Won7Rkf-8DeD": {
     "title": "DQL",
@@ -3931,7 +3942,7 @@
   },
   "GDLKJkKgB-i7n0YcV2NDa": {
     "title": "How Computers Calculate",
-    "description": "Visit the following resources to learn more:",
+    "description": "Computers calculate using the binary system, where all data is represented as 0s and 1s. These binary states correspond to the ON/OFF positions of transistors, which are the building blocks of logic gates (AND, OR, NOT). Numbers, characters, and instructions are broken into binary sequences (bits), and grouped into bytes (8 bits). Arithmetic operations like addition are performed through logic gates, which combine binary values. The CPU executes these calculations by following a fetch-decode-execute cycle. Complex calculations, such as handling decimals, use floating-point representation. Programs written in high-level languages are compiled into machine code for the CPU to execute.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "How computers calculate - ALU",

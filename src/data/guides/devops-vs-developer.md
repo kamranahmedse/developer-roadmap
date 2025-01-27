@@ -7,7 +7,7 @@ seo:
   title: 'DevOps Vs. Developer: What Are The Key Differences?'
   description: 'Understand the differences between DevOps and Developer roles. Find out which career aligns with your skills and future goals.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-vs-developer-yv25p.jpg'
-isNew: true
+isNew: false
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
 type: 'textual'

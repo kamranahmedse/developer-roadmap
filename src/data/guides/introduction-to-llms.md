@@ -25,7 +25,6 @@ LLM stands for "Large Language Model." These are advanced AI systems designed to
 
 [![LLMS Visualized](https://roadmap.sh/guides/llms.png)](https://x.com/kamrify/status/1658271217189634049)
 
-
 OpenAI has been a major contributor to this space in the past few years with their models and research. However, there are other players in the market as well e.g. Meta with their [OPT](https://huggingface.co/facebook/opt-66b), [OPT-IML](https://huggingface.co/facebook/opt-iml-30b) and [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) models, Google released [FLAN-T5](https://huggingface.co/google/flan-t5-xxl) and [BERT](https://huggingface.co/google-bert/bert-base-uncased), [StableLM](https://github.com/stability-AI/stableLM/) by Stability AI, [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) at Stanford and there are many [other opensource models as well](https://github.com/Hannibal046/Awesome-LLM).
 
 ## Training an LLM Model

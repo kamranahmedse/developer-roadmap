@@ -28,11 +28,11 @@ I'll be using a [Debian ISO](https://cdimage.debian.org/debian-cd/current/amd64/
 
 ## Finding peers
 
-Here’s a problem: we want to download a file with BitTorrent, but it’s a peer-to-peer protocol and we have no idea where to find peers to download it from. This is a lot like moving to a new city and trying to make friends—maybe we’ll hit up a local pub or a meetup group! Centralized locations like these are the big idea behind trackers, which are central servers that introduce peers to each other. They’re just web servers running over HTTP, and you can find Debian’s at http://bttracker.debian.org:6969/
+Here’s a problem: we want to download a file with BitTorrent, but it’s a peer-to-peer protocol and we have no idea where to find peers to download it from. This is a lot like moving to a new city and trying to make friends—maybe we’ll hit up a local pub or a meetup group! Centralized locations like these are the big idea behind trackers, which are central servers that introduce peers to each other. They’re just web servers running over HTTP, and you can find Debian’s at `http://bttracker.debian.org:6969/`.
 
 ![illustration of a desktop computer and laptop sitting at a pub](/guides/torrent-client/trackers.png)
 
-Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and KickassTorrents getting seized and shut down. New methods cut out the middleman by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
+Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and Kickass Torrents getting seized and shut down. New methods cut out the middleman by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
 
 ### Parsing a .torrent file
 

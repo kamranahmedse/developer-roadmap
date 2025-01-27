@@ -41,7 +41,7 @@ Over the years, testing has been somewhat considered an afterthought of the deve
 
 The main idea is to move testing to the **left side** of the development process so that it can happen earlier and more often during the design and development phase.
 
-Shift-Left testing aligns with the DevOps principle of continuous integration and continuous delivery (CI/CD) because automated tests can be written alongside the code and executed as part of the development pipeline. This approach ensures that issues are caught early, developers receive immediate feedback, and overall software quality is improved.
+Shift-Left testing aligns with the DevOps principle of continuous integration and continuous delivery (CI/CD) because [automated tests](https://roadmap.sh/devops/test-automation) can be written alongside the code and executed as part of the development pipeline. This approach ensures that issues are caught early, developers receive immediate feedback, and overall software quality is improved.
 
 To implement Shift-Left testing, organizations often rely on a variety of automated testing tools. While the choice of tools may vary based on team preference and specific projects, below are some popular tools for performing Shift-Left testing:
 

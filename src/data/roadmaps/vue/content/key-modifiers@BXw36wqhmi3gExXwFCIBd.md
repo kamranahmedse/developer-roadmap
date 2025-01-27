@@ -4,4 +4,4 @@ Input bindings are a way to bind user input to a component's data. This allows t
 
 Visit the following resources to learn more:
 
-- [@official@Input Bindings](https://vuejs.org/guide/essentials/forms)
+- [@official@Key Modifiers](https://vuejs.org/guide/essentials/event-handling#key-modifiers)
