@@ -616,6 +616,11 @@
         "title": "Python Iterators",
         "url": "https://www.programiz.com/python-programming/iterator",
         "type": "article"
+      },
+      {
+        "title": "Iterators and Iterables in Python",
+        "url": "https://realpython.com/python-iterators-iterables/",
+        "type": "article"
       }
     ]
   },
