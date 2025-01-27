@@ -86,9 +86,6 @@ export function AdvertiseForm() {
 
     pageProgressMessage.set('Please wait');
 
-    // Placeholder function to send data
-    console.log('Form data:', formData);
-
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-advertise`,
       formData,

@@ -1,20 +1,27 @@
 import { useEffect, useState } from 'react';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { FIRST_LOGIN_PARAM, setAuthToken } from '../../lib/jwt';
+import {
+  FIRST_LOGIN_PARAM,
+  COURSE_PURCHASE_PARAM,
+  setAuthToken,
+} from '../../lib/jwt';
+import { cn } from '../../../editor/utils/classname.ts';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
   setIsDisabled?: (isDisabled: boolean) => void;
+  className?: string;
 };
 
 const GITHUB_REDIRECT_AT = 'githubRedirectAt';
 const GITHUB_LAST_PAGE = 'githubLastPage';
 
 export function GitHubButton(props: GitHubButtonProps) {
-  const { isDisabled, setIsDisabled } = props;
+  const { isDisabled, setIsDisabled, className } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -48,7 +55,7 @@ export function GitHubButton(props: GitHubButtonProps) {
 
         triggerUtmRegistration();
 
-        let redirectUrl = '/';
+        let redirectUrl = new URL('/', window.location.origin);
         const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);
         const lastPageBeforeGithub = localStorage.getItem(GITHUB_LAST_PAGE);
 
@@ -60,25 +67,36 @@ export function GitHubButton(props: GitHubButtonProps) {
           const timeSinceRedirect = now - socialRedirectAtTime;
 
           if (timeSinceRedirect < 30 * 1000) {
-            redirectUrl = lastPageBeforeGithub;
+            redirectUrl = new URL(lastPageBeforeGithub, window.location.origin);
           }
         }
 
         const authRedirectUrl = localStorage.getItem('authRedirect');
         if (authRedirectUrl) {
           localStorage.removeItem('authRedirect');
-          redirectUrl = authRedirectUrl;
+          redirectUrl = new URL(authRedirectUrl, window.location.origin);
         }
 
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
 
-        const url = new URL(redirectUrl, window.location.origin);
         if (response?.isNewUser) {
-          url.searchParams.set(FIRST_LOGIN_PARAM, '1');
+          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
         }
-        window.location.href = url.toString();
+
+        const shouldTriggerPurchase =
+          localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
+
+        if (
+          redirectUrl.pathname.includes('/courses/sql') &&
+          shouldTriggerPurchase
+        ) {
+          redirectUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
+          localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
+        }
+
+        window.location.href = redirectUrl.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
@@ -124,7 +142,10 @@ export function GitHubButton(props: GitHubButtonProps) {
   return (
     <>
       <button
-        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+        className={cn(
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          className,
+        )}
         disabled={isLoading || isDisabled}
         onClick={handleClick}
       >

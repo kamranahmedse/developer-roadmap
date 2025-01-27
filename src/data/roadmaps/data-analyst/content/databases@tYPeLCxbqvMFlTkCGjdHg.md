@@ -4,5 +4,5 @@ Behind every strong data analyst, there's not just a rich assortment of data, bu
 
 Learn more from the following resources:
 
-- [@official@PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
-- [@official@MongoDB Roadmap](https://roadmap.sh/mongodb)
+- [@roadmap@Visit Dedicated SQL Roadmap](https://roadmap.sh/sql)
+- [@roadmap@Visit Dedicated PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
