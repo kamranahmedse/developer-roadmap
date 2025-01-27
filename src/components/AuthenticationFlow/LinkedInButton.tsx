@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react';
+import Cookies from 'js-cookie';
+import {
+  FIRST_LOGIN_PARAM,
+  COURSE_PURCHASE_PARAM,
+  TOKEN_COOKIE_NAME,
+  setAuthToken,
+} from '../../lib/jwt';
 import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
-import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
@@ -34,7 +40,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
         window.location.search
       }`,
@@ -50,7 +56,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
         triggerUtmRegistration();
 
-        let redirectUrl = '/';
+        let redirectUrl = new URL('/', window.location.origin);
         const linkedInRedirectAt = localStorage.getItem(LINKEDIN_REDIRECT_AT);
         const lastPageBeforeLinkedIn = localStorage.getItem(LINKEDIN_LAST_PAGE);
 
@@ -62,30 +68,38 @@ export function LinkedInButton(props: LinkedInButtonProps) {
           const timeSinceRedirect = now - socialRedirectAtTime;
 
           if (timeSinceRedirect < 30 * 1000) {
-            redirectUrl = lastPageBeforeLinkedIn;
+            redirectUrl = new URL(
+              lastPageBeforeLinkedIn,
+              window.location.origin,
+            );
           }
         }
 
         const authRedirectUrl = localStorage.getItem('authRedirect');
         if (authRedirectUrl) {
           localStorage.removeItem('authRedirect');
-          redirectUrl = authRedirectUrl;
+          redirectUrl = new URL(authRedirectUrl, window.location.origin);
+        }
+
+        if (response?.isNewUser) {
+          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
         }
 
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
-        if (redirectUrl.includes('/courses/sql') && shouldTriggerPurchase) {
-          const tempUrl = new URL(redirectUrl, window.location.origin);
-          tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
-          redirectUrl = tempUrl.toString();
-
+        if (
+          redirectUrl.pathname.includes('/courses/sql') &&
+          shouldTriggerPurchase
+        ) {
+          redirectUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
 
         localStorage.removeItem(LINKEDIN_REDIRECT_AT);
         localStorage.removeItem(LINKEDIN_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        window.location.href = redirectUrl.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');

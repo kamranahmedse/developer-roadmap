@@ -2,7 +2,7 @@
 import BestPracticeHeader from '../../../components/BestPracticeHeader.astro';
 import FrameRenderer from '../../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../../components/MarkdownFile.astro';
-import ShareIcons from '../../../components/ShareIcons/ShareIcons.astro';
+import { ShareIcons } from '../../../components/ShareIcons/ShareIcons';
 import { TopicDetail } from '../../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../../components/UpcomingForm.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
@@ -94,8 +94,11 @@ const ogImageUrl = getOpenGraphImageUrl({
       !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
         <div class='container relative !max-w-[1000px]'>
           <ShareIcons
+            resourceId={bestPracticeId}
+            resourceType='best-practice'
             description={bestPracticeData.briefDescription}
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
+            client:load
           />
 
           <TopicDetail

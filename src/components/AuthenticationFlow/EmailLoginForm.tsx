@@ -2,7 +2,7 @@ import Cookies from 'js-cookie';
 import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
+import { FIRST_LOGIN_PARAM, setAuthToken } from '../../lib/jwt';
 
 type EmailLoginFormProps = {
   isDisabled?: boolean;
@@ -24,19 +24,24 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
     setIsDisabled?.(true);
     setError('');
 
-    const { response, error } = await httpPost<{ token: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-login`,
-      {
-        email,
-        password,
-      },
-    );
+    const { response, error } = await httpPost<{
+      token: string;
+      isNewUser: boolean;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
+      email,
+      password,
+    });
 
     // Log the user in and reload the page
     if (response?.token) {
       setAuthToken(response.token);
-      window.location.reload();
 
+      const currentLocation = window.location.href;
+      const url = new URL(currentLocation, window.location.origin);
+      if (response?.isNewUser) {
+        url.searchParams.set(FIRST_LOGIN_PARAM, '1');
+      }
+      window.location.href = url.toString();
       return;
     }
 

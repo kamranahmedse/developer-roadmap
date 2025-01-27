@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react';
-import { cn } from '../../lib/classname.ts';
+import Cookies from 'js-cookie';
+import {
+  FIRST_LOGIN_PARAM,
+  TOKEN_COOKIE_NAME,
+  setAuthToken,
+} from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
-import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
+import { COURSE_PURCHASE_PARAM } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
@@ -9,6 +14,7 @@ import {
   getStoredUtmParams,
   triggerUtmRegistration,
 } from '../../lib/browser.ts';
+import { cn } from '../../lib/classname.ts';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
@@ -37,14 +43,12 @@ export function GoogleButton(props: GoogleButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
       }`,
     )
       .then(({ response, error }) => {
-        const utmParams = getStoredUtmParams();
-
         if (!response?.token) {
           setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
@@ -55,7 +59,7 @@ export function GoogleButton(props: GoogleButtonProps) {
 
         triggerUtmRegistration();
 
-        let redirectUrl = '/';
+        let redirectUrl = new URL('/', window.location.origin);
         const googleRedirectAt = localStorage.getItem(GOOGLE_REDIRECT_AT);
         const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
 
@@ -67,22 +71,27 @@ export function GoogleButton(props: GoogleButtonProps) {
           const timeSinceRedirect = now - socialRedirectAtTime;
 
           if (timeSinceRedirect < 30 * 1000) {
-            redirectUrl = lastPageBeforeGoogle;
+            redirectUrl = new URL(lastPageBeforeGoogle, window.location.origin);
           }
         }
 
         const authRedirectUrl = localStorage.getItem('authRedirect');
         if (authRedirectUrl) {
           localStorage.removeItem('authRedirect');
-          redirectUrl = authRedirectUrl;
+          redirectUrl = new URL(authRedirectUrl, window.location.origin);
+        }
+
+        if (response?.isNewUser) {
+          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
         }
 
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
-        if (redirectUrl.includes('/courses/sql') && shouldTriggerPurchase) {
-          const tempUrl = new URL(redirectUrl, window.location.origin);
-          tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
-          redirectUrl = tempUrl.toString();
+        if (
+          redirectUrl.pathname.includes('/courses/sql') &&
+          shouldTriggerPurchase
+        ) {
+          redirectUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
 
           localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
@@ -90,7 +99,8 @@ export function GoogleButton(props: GoogleButtonProps) {
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
         localStorage.removeItem(GOOGLE_LAST_PAGE);
         setAuthToken(response.token);
-        window.location.href = redirectUrl;
+
+        window.location.href = redirectUrl.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');

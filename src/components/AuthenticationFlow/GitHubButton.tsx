@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
+import {
+  FIRST_LOGIN_PARAM,
+  COURSE_PURCHASE_PARAM,
+  setAuthToken,
+} from '../../lib/jwt';
 import { cn } from '../../../editor/utils/classname.ts';
 import { httpGet } from '../../lib/http';
-import { COURSE_PURCHASE_PARAM, setAuthToken } from '../../lib/jwt';
-import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 import { triggerUtmRegistration } from '../../lib/browser.ts';
@@ -34,7 +38,7 @@ export function GitHubButton(props: GitHubButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
-    httpGet<{ token: string }>(
+    httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-callback${
         window.location.search
       }`,
@@ -51,7 +55,7 @@ export function GitHubButton(props: GitHubButtonProps) {
 
         triggerUtmRegistration();
 
-        let redirectUrl = '/';
+        let redirectUrl = new URL('/', window.location.origin);
         const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);
         const lastPageBeforeGithub = localStorage.getItem(GITHUB_LAST_PAGE);
 
@@ -63,31 +67,36 @@ export function GitHubButton(props: GitHubButtonProps) {
           const timeSinceRedirect = now - socialRedirectAtTime;
 
           if (timeSinceRedirect < 30 * 1000) {
-            redirectUrl = lastPageBeforeGithub;
+            redirectUrl = new URL(lastPageBeforeGithub, window.location.origin);
           }
         }
 
         const authRedirectUrl = localStorage.getItem('authRedirect');
         if (authRedirectUrl) {
           localStorage.removeItem('authRedirect');
-          redirectUrl = authRedirectUrl;
+          redirectUrl = new URL(authRedirectUrl, window.location.origin);
         }
 
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
 
+        if (response?.isNewUser) {
+          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
+        }
+
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
-        if (redirectUrl.includes('/courses/sql') && shouldTriggerPurchase) {
-          const tempUrl = new URL(redirectUrl, window.location.origin);
-          tempUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
-          redirectUrl = tempUrl.toString();
 
+        if (
+          redirectUrl.pathname.includes('/courses/sql') &&
+          shouldTriggerPurchase
+        ) {
+          redirectUrl.searchParams.set(COURSE_PURCHASE_PARAM, '1');
           localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
         }
 
-        window.location.href = redirectUrl;
+        window.location.href = redirectUrl.toString();
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
