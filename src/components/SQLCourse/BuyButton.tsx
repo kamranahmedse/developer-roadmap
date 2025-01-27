@@ -11,6 +11,8 @@ import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 
+export const COURSE_SLUG = 'master-sql';
+
 type CreateCheckoutSessionBody = {
   courseId: string;
   success?: string;
@@ -32,12 +34,12 @@ export function BuyButton(props: BuyButtonProps) {
   const toast = useToast();
 
   const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
-    coursePriceOptions({ courseSlug: 'sql' }),
+    coursePriceOptions({ courseSlug: COURSE_SLUG }),
     queryClient,
   );
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
-    courseProgressOptions('sql'),
+    courseProgressOptions(COURSE_SLUG),
     queryClient,
   );
 
@@ -85,7 +87,7 @@ export function BuyButton(props: BuyButtonProps) {
     }
 
     createCheckoutSession({
-      courseId: 'sql',
+      courseId: COURSE_SLUG,
       success: `/courses/sql?e=1`,
       cancel: `/courses/sql`,
     });

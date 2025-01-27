@@ -1,20 +1,19 @@
+import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import {
-  courseProgressOptions,
-  type CourseProgressResponse,
+  courseProgressOptions
 } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
-import { BuyButton } from './BuyButton';
-import { useQuery } from '@tanstack/react-query';
+import { BuyButton, COURSE_SLUG } from './BuyButton';
 
 export function AccountButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
-    courseProgressOptions('sql'),
+    courseProgressOptions(COURSE_SLUG),
     queryClient,
   );
 
