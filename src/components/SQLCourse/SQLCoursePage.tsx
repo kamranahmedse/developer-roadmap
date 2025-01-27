@@ -32,7 +32,7 @@ type ChapterData = {
   description: string;
   lessonCount: number;
   challengeCount: number;
-  lessons: { title: string; type: 'lesson' | 'challenge' }[];
+  lessons: { title: string; type: 'lesson' | 'challenge' | 'quiz' }[];
 };
 
 export function SQLCoursePage() {
@@ -68,6 +68,7 @@ export function SQLCoursePage() {
         { title: 'Limiting Results with LIMIT', type: 'lesson' },
         { title: 'Handling NULL Values', type: 'lesson' },
         { title: 'Comments', type: 'lesson' },
+        { title: 'Basic Queries Quiz', type: 'quiz' },
         { title: 'Projection Challenge', type: 'challenge' },
         { title: 'Select Expression', type: 'challenge' },
         { title: 'Select Unique', type: 'challenge' },
@@ -87,6 +88,7 @@ export function SQLCoursePage() {
         { title: 'INSERT Operations', type: 'lesson' },
         { title: 'UPDATE Operations', type: 'lesson' },
         { title: 'DELETE Operations', type: 'lesson' },
+        { title: 'Data Manipulation Quiz', type: 'quiz' },
         { title: 'Inserting Customers', type: 'challenge' },
         { title: 'Updating Bookstore', type: 'challenge' },
         { title: 'Deleting Books', type: 'challenge' },
@@ -108,6 +110,7 @@ export function SQLCoursePage() {
         { title: 'Primary Key Constraint', type: 'lesson' },
         { title: 'Modifying Tables', type: 'lesson' },
         { title: 'Dropping and Truncating', type: 'lesson' },
+        { title: 'Defining Tables Quiz', type: 'quiz' },
         { title: 'Simple Table Creation', type: 'challenge' },
         { title: 'Data Types Challenge', type: 'challenge' },
         { title: 'Constraints Challenge', type: 'challenge' },
@@ -132,6 +135,7 @@ export function SQLCoursePage() {
         { title: 'Foreign Key Constraint', type: 'lesson' },
         { title: 'Set Operator Queries', type: 'lesson' },
         { title: 'Views and Virtual Tables', type: 'lesson' },
+        { title: 'Multi-Table Queries Quiz', type: 'quiz' },
         { title: 'Inactive Customers', type: 'challenge' },
         { title: 'Recent 3 Orders', type: 'challenge' },
         { title: 'High Value Orders', type: 'challenge' },
@@ -156,6 +160,7 @@ export function SQLCoursePage() {
         { title: 'Basic Aggregation', type: 'lesson' },
         { title: 'Grouping Data', type: 'lesson' },
         { title: 'Grouping and Filtering', type: 'lesson' },
+        { title: 'Aggregate Queries Quiz', type: 'quiz' },
         { title: 'Book Sales Summary', type: 'challenge' },
         { title: 'Category Insights', type: 'challenge' },
         { title: 'Author Tier Analysis', type: 'challenge' },
@@ -182,6 +187,7 @@ export function SQLCoursePage() {
         { title: 'Date Functions', type: 'lesson' },
         { title: 'Conversion Functions', type: 'lesson' },
         { title: 'Logical Functions', type: 'lesson' },
+        { title: 'Scalar Functions Quiz', type: 'quiz' },
         { title: 'Customer Contact List', type: 'challenge' },
         { title: 'Membership Duration', type: 'challenge' },
         { title: 'Book Performance', type: 'challenge' },
@@ -201,6 +207,7 @@ export function SQLCoursePage() {
         { title: 'Correlated Subqueries', type: 'lesson' },
         { title: 'Common Table Expressions', type: 'lesson' },
         { title: 'Recursive CTEs', type: 'lesson' },
+        { title: 'Subqueries Quiz', type: 'quiz' },
         { title: 'Books Above Average', type: 'challenge' },
         { title: 'Latest Category Books', type: 'challenge' },
         { title: 'Low Stock by Category', type: 'challenge' },
@@ -222,6 +229,7 @@ export function SQLCoursePage() {
         { title: 'Use of ORDER BY', type: 'lesson' },
         { title: 'Ranking Functions', type: 'lesson' },
         { title: 'Window Frames', type: 'lesson' },
+        { title: 'Window Functions Quiz', type: 'quiz' },
         { title: 'Basic Sales Metrics', type: 'challenge' },
         { title: 'Bestseller Comparison', type: 'challenge' },
         { title: 'Author Category Sales', type: 'challenge' },

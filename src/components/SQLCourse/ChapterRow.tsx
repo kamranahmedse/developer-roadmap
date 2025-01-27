@@ -1,4 +1,4 @@
-import { ChevronDown, BookIcon, CodeIcon } from 'lucide-react';
+import { ChevronDown, BookIcon, CodeIcon, FileQuestion, MessageCircleQuestionIcon, CircleDot } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { useEffect, useState } from 'react';
 
@@ -11,7 +11,7 @@ type ChapterRowProps = {
   challengeCount: number;
   isExpandable?: boolean;
   className?: string;
-  lessons?: { title: string; type: 'lesson' | 'challenge' }[];
+  lessons?: { title: string; type: 'lesson' | 'challenge' | 'quiz' }[];
 };
 
 export function ChapterRow(props: ChapterRowProps) {
@@ -30,7 +30,9 @@ export function ChapterRow(props: ChapterRowProps) {
   const [isExpanded, setIsExpanded] = useState(true);
 
   const regularLessons = lessons.filter((l) => l.type === 'lesson');
-  const challenges = lessons.filter((l) => l.type === 'challenge');
+  const challenges = lessons.filter((l) =>
+    ['challenge', 'quiz'].includes(l.type),
+  );
 
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
@@ -124,7 +126,11 @@ export function ChapterRow(props: ChapterRowProps) {
                       key={index}
                       className="flex items-center gap-3 text-zinc-400 hover:text-yellow-500"
                     >
-                      <CodeIcon className="h-4 w-4" />
+                      {challenge.type === 'challenge' ? (
+                        <CodeIcon className="h-4 w-4" />
+                      ) : (
+                        <CircleDot className="h-4 w-4" />
+                      )}
                       <span>{challenge.title}</span>
                     </div>
                   ))}
