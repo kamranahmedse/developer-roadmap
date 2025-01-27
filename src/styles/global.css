@@ -59,84 +59,10 @@ p > code:before,
 .prose ol li > code:before,
 p > code:before,
 .prose ol li > code:after,
-.course-content h1 > code:after,
-.course-content h1 > code:before,
-.course-content h2 > code:after,
-.course-content h2 > code:before,
-.course-content h3 > code:after,
-.course-content h3 > code:before,
-.course-content h4 > code:after,
-.course-content h4 > code:before,
 p > code:after,
 a > code:after,
 a > code:before {
   content: '' !important;
-}
-
-.course-content.prose ul li > code,
-.course-content.prose ol li > code,
-.course-content p code,
-.course-content a > code,
-.course-content strong > code,
-.course-content em > code,
-.course-content h1 > code,
-.course-content h2 > code,
-.course-content h3 > code,
-.course-content table code {
-  background: #f4f4f5 !important;
-  border: 1px solid #282a36 !important;
-  color: #282a36 !important;
-  padding: 2px 4px;
-  border-radius: 5px;
-  font-size: 16px !important;
-  white-space: pre;
-  font-weight: normal;
-}
-
-.course-content blockquote {
-  font-style: normal;
-}
-
-.course-content.prose blockquote h1,
-.course-content.prose blockquote h2,
-.course-content.prose blockquote h3,
-.course-content.prose blockquote h4 {
-  font-style: normal;
-  margin-bottom: 8px;
-}
-
-.course-content.prose ul li > code:before,
-.course-content p > code:before,
-.course-content.prose ul li > code:after,
-.course-content p > code:after,
-.course-content h2 > code:after,
-.course-content h2 > code:before,
-.course-content table code:before,
-.course-content table code:after,
-.course-content a > code:after,
-.course-content a > code:before,
-.course-content h2 code:after,
-.course-content h2 code:before,
-.course-content h2 code:after,
-.course-content h2 code:before {
-  content: '' !important;
-}
-
-.course-content table {
-  border-collapse: collapse;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.course-content table td,
-.course-content table th {
-  padding: 5px 10px;
-}
-
-.note-content-editor[contenteditable] ~ grammarly-extension,
-.note-content-editor input ~ grammarly-extension,
-.note-content-editor textarea ~ grammarly-extension {
-  display: none;
 }
 
 .sponsor-footer {
@@ -206,14 +132,4 @@ a > code:before {
   100% {
     background-position: 100% 100%;
   }
-}
-
-.certificate-bg {
-  background-color: white;
-  background-image: radial-gradient(#444df74f 0.5px, transparent 0.5px),
-    radial-gradient(#444df74f 0.5px, white 0.5px);
-  background-size: 20px 20px;
-  background-position:
-    0 0,
-    10px 10px;
 }
