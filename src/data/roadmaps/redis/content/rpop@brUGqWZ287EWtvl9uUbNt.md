@@ -4,4 +4,4 @@ The RPOP command removes and then returns the last elements of the list stored a
 
 Learn more from the following resources:
 
-- [@official@RPOP Documentation](https://redis.io/docs/latest/commands/rpush/)
+- [@official@RPOP Documentation](https://redis.io/docs/latest/commands/rpop/)
