@@ -260,14 +260,14 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }, [member]);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
         id={'customized-roadmap'}
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div
           ref={popupBodyEl}
-          className="popup-body relative rounded-lg bg-white pt-[1px] shadow"
+          className="popup-body relative rounded-lg bg-white pt-[1px] shadow-sm"
         >
           <MemberProgressModalHeader
             resourceId={resourceId}

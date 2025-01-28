@@ -86,7 +86,7 @@ export function UserProfileRoadmapRenderer(
       <div
         className={cn(
           'bg-white',
-          isCustomResource ? 'w-full' : 'container relative !max-w-[1000px]',
+          isCustomResource ? 'w-full' : 'container relative max-w-[1000px]!',
         )}
       >
         {isCustomResource ? (

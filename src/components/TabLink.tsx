@@ -53,7 +53,7 @@ export function TabLink(props: TabLinkProps) {
   if (isActive) {
     return (
       <span className={className}>
-        <Icon className="h-4 w-4 flex-shrink-0" />
+        <Icon className="h-4 w-4 shrink-0" />
         <span className={textClass}>{text}</span>
         {badgeNode}
       </span>
@@ -69,7 +69,7 @@ export function TabLink(props: TabLinkProps) {
       href={url}
       className={className}
     >
-      <Icon className="h-4 w-4 flex-shrink-0" />
+      <Icon className="h-4 w-4 shrink-0" />
       <span className={textClass}>{text}</span>
       {badgeNode}
     </a>

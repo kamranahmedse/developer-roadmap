@@ -6,7 +6,7 @@ The "logs under booting" in Linux refers to the messages and information that ar
 
 Linux utilizes various log message levels from `emerg` (the system is unusable) to `debug` (debug-level messages). During the boot process, messages from various components of the system like kernel, init, services, etc., are stored. Many Linux distributions use systemd logging system, `journalctl`, which holds the logs of the boot process.
 
-Viewing boot messages can occur in real-time with the `dmesg` command. It's used to read and print the kernel ring buffer. Or they can be accessed via the logging setup of your system, which often includes text files in `/var/log`. 
+Viewing boot messages can occur in real-time with the `dmesg` command. It's used to read and print the kernel ring-3 buffer. Or they can be accessed via the logging setup of your system, which often includes text files in `/var/log`. 
 
 ```shell
 dmesg | less

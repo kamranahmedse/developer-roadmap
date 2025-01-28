@@ -32,7 +32,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-0 top-full z-[9999] mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+          className="align-right absolute right-0 top-full z-9999 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
         >
           <ul>
             {onCustomize && (
@@ -42,7 +42,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
                     setIsOpen(false);
                     onCustomize();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <PenSquare size={14} className="mr-2" />
                   Edit
@@ -56,7 +56,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
                     setIsOpen(false);
                     onUpdateSharing();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <Lock size={14} className="mr-2" />
                   Sharing
@@ -70,7 +70,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
                     setIsOpen(false);
                     onDelete();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <Trash2 size={14} className="mr-2" />
                   Delete

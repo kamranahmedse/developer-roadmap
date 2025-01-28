@@ -22,7 +22,7 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
   } = props;
 
   return (
-    <div className="min-h-full flex-grow bg-gray-200/40 pb-36 pt-10">
+    <div className="min-h-full grow bg-gray-200/40 pb-36 pt-10">
       <div className="container flex flex-col gap-8">
         <PrivateProfileBanner
           isOwnProfile={isOwnProfile}

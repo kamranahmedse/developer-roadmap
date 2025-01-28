@@ -7,7 +7,7 @@ const top10Changelogs = allChangelogs.slice(0, 10);
 ---
 
 <div class='border-t bg-white py-6 text-left sm:py-16 sm:text-center'>
-  <div class='container !max-w-[650px]'>
+  <div class='container max-w-[650px]!'>
     <p class='text-2xl font-bold sm:text-5xl'>
       <img
         src='/images/gifs/rocket.gif'
@@ -40,10 +40,10 @@ const top10Changelogs = allChangelogs.slice(0, 10);
                   href={`/changelog#${changelog.id}`}
                   class='flex flex-col items-start sm:flex-row sm:items-center'
                 >
-                  <span class='flex-shrink-0 pr-0 text-right text-sm tracking-wide text-gray-400 sm:w-[120px] sm:pr-4'>
+                  <span class='shrink-0 pr-0 text-right text-sm tracking-wide text-gray-400 sm:w-[120px] sm:pr-4'>
                     {formattedDate}
                   </span>
-                  <span class='hidden h-3 w-3 flex-shrink-0 rounded-full bg-gray-300 sm:block' />
+                  <span class='hidden h-3 w-3 shrink-0 rounded-full bg-gray-300 sm:block' />
                   <span class='text-balance text-base font-medium text-gray-900 sm:pl-8'>
                     {changelog.frontmatter.title}
                   </span>

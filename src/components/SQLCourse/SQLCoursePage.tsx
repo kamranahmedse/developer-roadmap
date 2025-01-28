@@ -242,7 +242,7 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
+    <div className="flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
       <div className="flex w-full items-center justify-between">
         <a
           href="https://roadmap.sh"
@@ -264,7 +264,7 @@ export function SQLCoursePage() {
 
         <h1 className="mt-5 text-4xl font-bold tracking-tight text-white md:mt-8 md:text-7xl">
           Master SQL <span className="hidden min-[384px]:inline">Queries</span>
-          <div className="mt-2.5 bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent md:text-6xl lg:text-7xl">
+          <div className="mt-2.5 bg-linear-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent md:text-6xl lg:text-7xl">
             From Basic to Advanced
           </div>
         </h1>
@@ -348,7 +348,7 @@ export function SQLCoursePage() {
       <div className="mt-7 w-full max-w-3xl text-left md:mt-9">
         <p className="text-lg leading-normal md:text-xl">
           Oh, and you get the{' '}
-          <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
             lifetime access
           </span>{' '}
           to the course including all the future updates. Also, there is a

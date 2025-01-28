@@ -271,7 +271,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                           counter % submittedAlternatives.length
                         ] || 'submitted their solution'}
                       </span>{' '}
-                      <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
+                      <span className="grow text-right text-gray-400 sm:grow-0 sm:text-left sm:font-medium sm:text-black">
                         {getRelativeTimeString(solution?.submittedAt!)}
                       </span>
                     </div>

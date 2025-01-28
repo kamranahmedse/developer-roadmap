@@ -76,7 +76,7 @@ export function UserProfileRoadmap(props: UserProfileRoadmapProps) {
 
       <div className="relative z-50 mt-10 hidden items-center justify-between border-y bg-white px-2 py-1.5 sm:flex">
         <p className="container flex text-sm">
-          <span className="mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
             <span data-progress-percentage="">{progressPercentage}</span>% Done
           </span>
 

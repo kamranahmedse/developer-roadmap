@@ -41,7 +41,7 @@ export function DiscoverRoadmapSorting(props: DiscoverRoadmapSortingProps) {
 
   return (
     <div
-      className="min-auto relative flex flex-shrink-0 sm:min-w-[140px]"
+      className="min-auto relative flex shrink-0 sm:min-w-[140px]"
       ref={dropdownRef}
     >
       <button

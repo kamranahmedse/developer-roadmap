@@ -32,7 +32,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
     <div className="p-4">
       <button
         onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-hidden"
       >
         <ChevronLeft size={16} />
         Back to options
@@ -97,7 +97,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
             name="openai-api-key"
             id="openai-api-key"
             className={cn(
-              'block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-800 transition-colors focus:border-black focus:outline-none',
+              'block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-800 transition-colors focus:border-black focus:outline-hidden',
               {
                 'border-red-500 bg-red-100 focus:border-red-500': error,
               },

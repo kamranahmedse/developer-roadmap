@@ -32,7 +32,7 @@ export function ReferYourFriend(props: ReferYourFriendProps) {
     <div className="p-4">
       <button
         onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-hidden"
       >
         <ChevronLeft size={16} />
         Back to options
@@ -49,7 +49,7 @@ export function ReferYourFriend(props: ReferYourFriendProps) {
       <label className="mt-4 flex flex-col gap-2">
         <input
           ref={inputRef}
-          className="w-full rounded-md border bg-gray-100 p-2 px-2.5 text-gray-700 focus:outline-none"
+          className="w-full rounded-md border bg-gray-100 p-2 px-2.5 text-gray-700 focus:outline-hidden"
           value={referralLink}
           readOnly={true}
           onClick={handleCopy}

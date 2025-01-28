@@ -13,7 +13,7 @@ export function Editor(props: EditorProps) {
   const { isCopied, copyText } = useCopyText();
 
   return (
-    <div className="flex w-full flex-grow flex-col overflow-hidden rounded border border-gray-300 bg-gray-50">
+    <div className="flex w-full grow flex-col overflow-hidden rounded-sm border border-gray-300 bg-gray-50">
       <div className="flex items-center justify-between gap-2 border-b border-gray-300 px-3 py-2">
         <span className="text-xs uppercase leading-none text-gray-400">
           {title}

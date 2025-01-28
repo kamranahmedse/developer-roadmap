@@ -37,7 +37,7 @@ export function ProjectProgress(props: ProjectProgressType) {
         target="_blank"
       >
         <ProjectStatus projectStatus={projectStatus} />
-        <span className="ml-2 flex-grow truncate">{projectStatus?.title}</span>
+        <span className="ml-2 grow truncate">{projectStatus?.title}</span>
         <span className="inline-flex items-center gap-1 text-xs text-gray-400">
           {projectStatus.upvotes}
           <ThumbsUp className="size-2.5 stroke-[2.5px]" />

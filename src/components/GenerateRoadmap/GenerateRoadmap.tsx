@@ -507,7 +507,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         />
       )}
 
-      <section className="flex flex-grow flex-col bg-gray-100">
+      <section className="flex grow flex-col bg-gray-100">
         <div className="flex items-center justify-center border-b bg-white py-3 sm:py-6">
           {isLoading && (
             <span className="flex items-center gap-2 rounded-full bg-black px-3 py-1 text-white">
@@ -516,7 +516,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
             </span>
           )}
           {!isLoading && (
-            <div className="container flex flex-grow flex-col items-start">
+            <div className="container flex grow flex-col items-start">
               <AIRoadmapAlert />
               {isKeyOnly && isAuthenticatedUser && (
                 <div className="flex flex-row gap-4">
@@ -606,7 +606,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                 <button
                   type={'submit'}
                   className={cn(
-                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                    'flex min-w-[127px] shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
                     'disabled:cursor-not-allowed disabled:opacity-50',
                   )}
                   onClick={(e) => {
@@ -732,7 +732,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           />
           {!isAuthenticatedUser && (
             <div className="absolute bottom-0 left-0 right-0">
-              <div className="h-80 w-full bg-gradient-to-t from-gray-100 to-transparent" />
+              <div className="h-80 w-full bg-linear-to-t from-gray-100 to-transparent" />
               <div className="bg-gray-100">
                 <div className="mx-auto max-w-[600px] flex-col items-center justify-center bg-gray-100 px-5 pt-px">
                   <div className="mt-8 text-center">

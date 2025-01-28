@@ -43,7 +43,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
         <li className="mb-1 px-1">
           <button
             className={cn(
-              'flex h-9 w-full items-center rounded py-1 pl-3 pr-2 text-sm font-medium text-slate-100 hover:opacity-80',
+              'flex h-9 w-full items-center rounded-sm py-1 pl-3 pr-2 text-sm font-medium text-slate-100 hover:opacity-80',
               isConfigLoading
                 ? 'striped-loader-darker flex border-slate-800 opacity-70'
                 : 'border-slate-600 bg-slate-700',
@@ -70,7 +70,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="px-1">
         <a
           href="/account"
-          className="group flex items-center gap-2 rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex items-center gap-2 rounded-sm py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <User2 className="h-4 w-4 stroke-[2.5px] text-slate-400 group-hover:text-white" />
           Account
@@ -79,13 +79,13 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="px-1">
         <a
           href="/account/update-profile"
-          className="group flex items-center justify-between gap-2 rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex items-center justify-between gap-2 rounded-sm py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <span className="flex items-center gap-2">
             <SquareUserRound className="h-4 w-4 stroke-[2.5px] text-slate-400 group-hover:text-white" />
             My Profile
           </span>
-          <span className="rounded-sm bg-yellow-300 px-1 text-xs uppercase tracking-wide text-black">
+          <span className="rounded-xs bg-yellow-300 px-1 text-xs uppercase tracking-wide text-black">
             New
           </span>
         </a>
@@ -93,7 +93,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="px-1">
         <a
           href="/account/friends"
-          className="group flex items-center gap-2 rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex items-center gap-2 rounded-sm py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <Users2 className="h-4 w-4 stroke-[2px] text-slate-400 group-hover:text-white" />
           Friends
@@ -104,7 +104,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
           onClick={() => {
             onCreateRoadmap();
           }}
-          className="group flex w-full items-center gap-2 rounded py-2 pl-3 pr-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex w-full items-center gap-2 rounded-sm py-2 pl-3 pr-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <Plus className="h-4 w-4 stroke-[2px] text-slate-400 group-hover:text-white" />
           New Roadmap
@@ -113,7 +113,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="border-b border-b-gray-700/60 px-1 pb-1">
         <a
           href="/account/roadmaps"
-          className="group flex items-center gap-2 rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex items-center gap-2 rounded-sm py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <Map className="h-4 w-4 stroke-[2px] text-slate-400 group-hover:text-white" />
           Roadmaps
@@ -121,7 +121,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       </li>
       <li className="px-1 pt-1">
         <button
-          className="group flex w-full items-center justify-between rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex w-full items-center justify-between rounded-sm py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
           onClick={() => setIsTeamsOpen(true)}
         >
           <span className="flex items-center gap-2.5">
@@ -133,7 +133,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       </li>
       <li className="px-1">
         <button
-          className="group flex w-full items-center gap-2 rounded py-2 pl-3 pr-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex w-full items-center gap-2 rounded-sm py-2 pl-3 pr-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
           type="button"
           onClick={logout}
         >

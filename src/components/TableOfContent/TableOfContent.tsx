@@ -25,7 +25,7 @@ export function TableOfContent(props: TableOfContentProps) {
       className={cn(
         'relative min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-5',
         {
-          'top-0 lg:!sticky': totalRows <= 20,
+          'top-0 lg:sticky!': totalRows <= 20,
         },
       )}
     >
@@ -46,7 +46,7 @@ export function TableOfContent(props: TableOfContentProps) {
 
       <ol
         className={cn(
-          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow',
+          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow-sm',
           !isOpen && 'hidden lg:block',
           isOpen && 'block',
         )}

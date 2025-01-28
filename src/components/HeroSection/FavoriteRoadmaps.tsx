@@ -143,7 +143,7 @@ export function FavoriteRoadmaps() {
       className={`transition-opacity duration-500  opacity-${containerOpacity}`}
     >
       <div
-        className={`flex min-h-[192px] bg-gradient-to-b sm:min-h-[280px] ${
+        className={`flex min-h-[192px] bg-linear-to-b sm:min-h-[280px] ${
           hasProgress && `border-t border-t-[#1e293c]`
         }`}
       >
