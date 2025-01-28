@@ -4,4 +4,4 @@ In API design, authorization methods play a crucial role in ensuring the securit
 
 Visit the following resources to learn more:
 
-- [@article@API Authorization Methods](https://konghq.com/blog/engineering/common-api-authentication-methods)
+- [@article@API Authorization Methods](https://www.pingidentity.com/en/resources/identity-fundamentals/authorization/authorization-methods.html)
