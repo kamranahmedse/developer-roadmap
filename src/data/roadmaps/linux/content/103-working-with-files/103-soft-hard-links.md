@@ -17,3 +17,7 @@ ln -s source_file.txt soft_link.txt
 ```
 
 Please, understand that `source_file.txt` is the original file and `hard_link.txt` & `soft_link.txt` are the hard and soft links respectively.
+
+Learn more from the following resources:
+
+- [@article@How to understand the difference between hard and symbolic links in Linux](https://labex.io/tutorials/linux-how-to-understand-the-difference-between-hard-and-symbolic-links-in-linux-409929)
