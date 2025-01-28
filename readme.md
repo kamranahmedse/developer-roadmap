@@ -95,7 +95,7 @@ There are also interactive best practices:
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
-..and questions to help you test, rate and improve your knowledge
+and questions to help you test, rate and improve your knowledge:
 
 - [JavaScript Questions](https://roadmap.sh/questions/javascript)
 - [Node.js Questions](https://roadmap.sh/questions/nodejs)
