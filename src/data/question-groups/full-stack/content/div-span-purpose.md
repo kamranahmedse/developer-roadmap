@@ -1,0 +1,2 @@
+* **`<div>`**: This is a block-level element that groups other block-level elements (layout or sections) together. It’s quite useful for layout definition.  
+* **`<span>`**: This inline element is great for grouping together other inline elements, such as text nodes. Because the \<span \> has no structural impact on the content when used, it’s perfect for styling text (or even sections of a larger text) without visually affecting it (other than the actual CSS applied).
