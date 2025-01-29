@@ -103,7 +103,7 @@ export function QuestionCard(props: QuestionCardProps) {
 
         {question.isLongAnswer && (
           <div
-            className={`qa-answer prose prose-sm prose-quoteless mx-auto flex w-full max-w-[600px] flex-grow flex-col items-start justify-center py-0 px-4 text-left text-sm prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-pre:!mb-6 prose-pre:w-full prose-ul:my-2 prose-li:m-0 prose-li:mb-0.5 sm:px-5 sm:text-lg sm:prose-p:mb-4`}
+            className={`qa-answer prose prose-h5:font-semibold prose-h5:mb-2 prose-h5:text-black prose-sm prose-quoteless mx-auto flex w-full max-w-[600px] flex-grow flex-col items-start justify-center py-0 px-4 text-left text-sm prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-pre:!mb-6 prose-pre:w-full prose-ul:my-2 prose-li:m-0 prose-li:mb-0.5 sm:px-5 sm:text-lg sm:prose-p:mb-4`}
             dangerouslySetInnerHTML={{
               __html: markdownToHtml(question.answer, false),
             }}

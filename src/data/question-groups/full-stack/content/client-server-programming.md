@@ -1,6 +1,6 @@
 The **client-side** and **server-side** refer to two distinct parts of a **web application** that work together to deliver functionality to users. Understanding their roles is essential for building efficient and responsive applications.
 
-#### Client-Side
+##### Client-Side
 * **What it Does**: This is the part of the application that runs in the user’s browser. It handles **user interfaces** and interactions, allowing users to see and interact with the application.  
 * **Key Characteristics**:  
   * Executes **JavaScript code** directly in the browser to handle tasks like form validation, animations, and dynamic content updates (through DOM \-Document Object Model- updates).  
@@ -10,7 +10,7 @@ The **client-side** and **server-side** refer to two distinct parts of a **web a
   * Clicking a button that triggers a JavaScript function to show a popup.  
   * Fetching additional items on a page using `fetch()` or `axios` without a full page reload.  
 
-#### Server-Side
+##### Server-Side
 
 * **What it Does**: This part operates on the server and processes requests from the client, performing tasks like database queries, business logic, and serving responses.  
 * **Key Characteristics**:  
