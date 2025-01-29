@@ -4,10 +4,10 @@ Named arguments in PHP, introduced with PHP 8.0, allow you to specify the values
 
 ```php
 <?php
-$a = array_fill(start_index: 0, num: 100, value: 50);
+$a = array_fill(start_index: 0, count: 100, value: 50);
 ```
 
-In this code snippet, the parameters are passed by their names ('start_index', 'num', 'value'), not by their order in the function definition.
+In this code snippet, the parameters are passed by their names ('start_index', 'count', 'value'), not by their order in the function definition.
 
 Visit the following resources to learn more:
 
