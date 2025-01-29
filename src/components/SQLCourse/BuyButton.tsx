@@ -101,7 +101,7 @@ export function BuyButton(props: BuyButtonProps) {
 
     const hasEnrolled = !!courseProgress?.enrolledAt;
     if (hasEnrolled) {
-      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`;
+      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/master-sql`;
       return;
     }
 

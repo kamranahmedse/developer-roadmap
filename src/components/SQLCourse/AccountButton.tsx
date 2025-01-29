@@ -58,7 +58,7 @@ export function AccountButton() {
 
   return (
     <a
-      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`}
+      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/master-sql`}
       className={`${buttonClasses} animate-fade-in`}
     >
       Start Learning
