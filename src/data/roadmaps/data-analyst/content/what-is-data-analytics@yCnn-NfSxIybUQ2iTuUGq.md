@@ -4,4 +4,4 @@ Data Analytics is a core component of a Data Analyst's role. The field involves 
 
 Learn more from the following resources:
 
-- [@article@Introduction to Data Analytics](https://www.coursera.org/learn/introduction-to-data-analytics)
+- [@course@Introduction to Data Analytics](https://www.coursera.org/learn/introduction-to-data-analytics)
