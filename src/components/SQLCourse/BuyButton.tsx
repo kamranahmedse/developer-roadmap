@@ -133,7 +133,7 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           ) : (
             <span className="relative flex items-center gap-2">
-              {coursePricing?.isEligibleForDiscount && coursePricing?.flag} Buy
+              Buy
               now for{' '}
               {coursePricing?.isEligibleForDiscount ? (
                 <span className="flex items-center gap-2">
@@ -151,14 +151,6 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           )}
         </button>
-        {!isLoadingPricing &&
-          !isAlreadyEnrolled &&
-          coursePricing?.isEligibleForDiscount && (
-            <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
-              {coursePricing.regionalDiscountPercentage}% regional discount
-              applied
-            </span>
-          )}
       </div>
     );
   }
@@ -195,19 +187,11 @@ export function BuyButton(props: BuyButtonProps) {
           </span>
         ) : (
           <span className="relative flex items-center gap-2">
-            {coursePricing?.flag && coursePricing.isEligibleForDiscount
-              ? coursePricing.flag
-              : null}{' '}
             Buy Now ${coursePricing?.regionalPrice}
             <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
           </span>
         )}
       </button>
-      {!isAlreadyEnrolled && coursePricing?.isEligibleForDiscount && (
-        <span className="top-full text-sm text-yellow-400">
-          {coursePricing.regionalDiscountPercentage}% regional discount applied
-        </span>
-      )}
     </div>
   );
 }
