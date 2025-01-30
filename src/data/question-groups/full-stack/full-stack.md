@@ -19,6 +19,7 @@ seo:
 sitemap:
   priority: 1
   changefreq: 'monthly'
+ending: 'full-stack-end.md'
 questions:
   - question: What is full-stack development?
     answer: full-stack-development.md

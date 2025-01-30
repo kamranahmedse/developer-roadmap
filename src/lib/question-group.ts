@@ -29,6 +29,7 @@ interface RawQuestionGroupFrontmatter {
     answer: string;
     topics: string[];
   }[];
+  ending?: string;
 }
 
 type RawQuestionGroupFileType =
@@ -49,6 +50,7 @@ export type QuestionGroupType = RawQuestionGroupFileType & {
   allTopics: string[];
   author?: AuthorFileType;
   relatedGuides?: Record<string, string>;
+  ending?: string;
 };
 
 /**
@@ -133,9 +135,19 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
             )
         : undefined;
 
+      let endingText = '';
+      if (questionGroupFile.frontmatter.ending) {
+        const endingFilePath = `/src/data/question-groups/${questionGroupDir}/content/${questionGroupFile.frontmatter.ending}`;
+        endingText =
+          (answerFilesMap[endingFilePath] as any)?.default ||
+          answerFilesMap[endingFilePath] ||
+          `File missing: ${endingFilePath}`;
+      }
+
       return {
         ...questionGroupFile,
         id: questionGroupFileId,
+        ending: endingText,
         questions: formattedAnswers,
         allTopics: uniqueTopics,
         author: allAuthors.find(
