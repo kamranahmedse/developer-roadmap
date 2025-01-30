@@ -1,8 +1,6 @@
 # L2 blockchains
 
-Layer-2 refers to a network or technology that operates on top of an underlying blockchain protocol to improve its scalability and efficiency.
-
-This category of scaling solutions entails shifting a portion of Ethereum's transactional burden to an adjacent system architecture, which then handles the brunt of the network’s processing and only subsequently reports back to Ethereum to finalize its results.
+Layer-2 refers to a network or technology that operates on top of an underlying blockchain protocol to improve its scalability and efficiency. This category of scaling solutions entails shifting a portion of Ethereum's transactional burden to an adjacent system architecture, which then handles the brunt of the network’s processing and only subsequently reports back to Ethereum to finalize its results.
 
 Visit the following resources to learn more:
 

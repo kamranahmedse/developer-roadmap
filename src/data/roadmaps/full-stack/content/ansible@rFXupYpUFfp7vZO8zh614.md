@@ -4,8 +4,8 @@ Ansible is an open-source configuration management, application deployment and p
 
 Visit the following resources to learn more:
 
-- [@official@Ansible Website](https://www.ansible.com/)
-- [@article@Official Documentation](https://docs.ansible.com/)
+- [@official@Ansible](https://www.ansible.com/)
+- [@official@Ansible Documentation](https://docs.ansible.com/)
 - [@official@Ansible Getting Started Guide](https://www.ansible.com/resources/get-started)
 - [@video@Ansible Full Course for Beginners](https://www.youtube.com/watch?v=9Ua2b06oAr4)
 - [@feed@Explore top posts about Ansible](https://app.daily.dev/tags/ansible?ref=roadmapsh)

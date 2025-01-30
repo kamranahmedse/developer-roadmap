@@ -1,6 +1,6 @@
 # Coding Assistance
 
-You can use ChatGPT for debugging, code generation, reformatting, commenting, and more.
+Large Language Models (LLMs) tailored for coding have become invaluable tools for developers, offering a wide range of functionalities to assist in coding tasks. These include debugging, code generation, reformatting and reviewing, translating between programming languages, refactoring code, program simulations, and generating unit tests. Recent advancements have expanded their capabilities to include code optimization, documentation generation, bug fixing, project management assistance, security analysis, and version control support. New features also allow users to interact with outputs directly, such as editing or refining code suggestions with or without additional prompts, like OpenAI's Canvas or Anthropic's Artefacts. These advancements make LLMs' capabilities available across the software development process, enhancing productivity and streamlining workflows across various stages of coding and project management.
 
 ## Code Generation
 
@@ -26,6 +26,7 @@ noun = random.choice(nouns)
 madlib = f"I {verb} {preposition} the {noun}."
 
 print(madlib)
+
 ```
 
 ## Commenting and Reformatting Code
@@ -62,6 +63,7 @@ for i in range(num_points):
     
     # Print a space for padding, followed by an asterisk at the appropriate position on the wave
     print(' ' * (amplitude + y) + '*')
+
 ```
 
 ## Debugging
@@ -111,7 +113,9 @@ for i in numbers:
         if j in numbers:
             numbers.remove(j)
 print(numbers)
+
 ```
+
 Note that we asked the bot to "act like a senior developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a very junior developer."
 
 ## Translating Between Programming Languages
@@ -147,8 +151,13 @@ salary = float(input("Enter employee's salary: "))
 ss_tax = salary * 0.062
 
 print("Social Security tax is: $", round(ss_tax, 2))
+
 ```
 
 Learn more from the following resources:
 
 - [@article@LLM Coding Assistance](https://learnprompting.org/docs/basic_applications/coding_assistance)
+- [@guides@Generating Code | Prompt Engineering Guide](https://www.promptingguide.ai/applications/coding)
+- [@article@Prompt engineering 101 for developers](https://www.pluralsight.com/resources/blog/software-development/prompt-engineering-for-developers)
+- [@guide@Prompt Engineering for Coding Tasks ](https://towardsdatascience.com/prompt-engineering-llms-coding-chatgpt-artificial-intelligence-c16620503e4e)
+- [@article@How GenAI Transforms Software Development: 11 Use Cases](https://www.index.dev/blog/11-generative-ai-use-cases-software-development)

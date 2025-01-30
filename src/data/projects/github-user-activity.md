@@ -2,7 +2,7 @@
 title: 'GitHub User Activity'
 description: 'Use GitHub API to fetch user activity and display it in the terminal.'
 isNew: false
-sort: 2
+sort: 200
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -17,6 +17,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

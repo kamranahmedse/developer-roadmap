@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/spring-boot.json'
 pdfUrl: '/pdfs/roadmaps/spring-boot.pdf'
 order: 10
 briefTitle: 'Spring Boot'
-briefDescription: 'Step by step guide to becoming a Spring Boot Developer in 2024'
+briefDescription: 'Step by step guide to becoming a Spring Boot Developer in 2025'
 title: 'Spring Boot Developer'
-description: 'Step by step guide to becoming a Spring Boot developer in 2024'
+description: 'Step by step guide to becoming a Spring Boot developer in 2025'
 hasTopics: true
 isNew: false
 dimensions:
@@ -13,7 +13,7 @@ dimensions:
   height: 1245.52
 schema:
   headline: 'Spring Boot Roadmap'
-  description: 'Learn Spring Boot with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn Spring Boot with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/spring-boot.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'

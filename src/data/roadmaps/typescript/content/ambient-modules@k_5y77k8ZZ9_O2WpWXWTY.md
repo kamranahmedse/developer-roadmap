@@ -19,4 +19,4 @@ In this example, we declare an ambient module "my-module" in the `myModule.d.ts`
 
 Learn more from the following links:
 
-- [@official@Ambient Modules](https://www.typescriptlang.org/docs/handbook/modules.html#ambient-modules)
+- [@official@Ambient Modules](https://www.typescriptlang.org/docs/handbook/modules/reference.html#ambient-modules)

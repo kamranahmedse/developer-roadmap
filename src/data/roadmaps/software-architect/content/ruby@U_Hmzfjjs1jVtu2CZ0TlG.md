@@ -4,6 +4,6 @@ Ruby is a high-level, interpreted programming language that blends Perl, Smallta
 
 Visit the following resources to learn more:
 
-- [@article@Ruby Website](https://www.ruby-lang.org/en/)
-- [@article@Learn Ruby in 20 minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
+- [@official@Ruby](https://www.ruby-lang.org/en/)
+- [@official@Learn Ruby in 20 minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 - [@feed@Explore top posts about Ruby](https://app.daily.dev/tags/ruby?ref=roadmapsh)

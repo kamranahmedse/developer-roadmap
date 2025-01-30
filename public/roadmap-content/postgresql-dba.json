@@ -1,8 +1,18 @@
 {
   "lDIy56RyC1XM7IfORsSLD": {
     "title": "Introduction",
-    "description": "PostgreSQL is a powerful, open-source Object-Relational Database Management System (ORDBMS) that is known for its robustness, extensibility, and SQL compliance. It was initially developed at the University of California, Berkeley, in the 1980s and has since become one of the most popular open-source databases in the world.",
+    "description": "PostgreSQL is a powerful, open-source Object-Relational Database Management System (ORDBMS) that is known for its robustness, extensibility, and SQL compliance. It was initially developed at the University of California, Berkeley, in the 1980s and has since become one of the most popular open-source databases in the world.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "PostgreSQL",
+        "url": "https://www.postgresql.org/",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/",
+        "type": "article"
+      },
       {
         "title": "History of POSTGRES to PostgreSQL",
         "url": "https://www.postgresql.org/docs/current/history.html",
@@ -15,7 +25,22 @@
     "description": "Relational databases are a type of database management system (DBMS) that stores and organizes data in a structured format called tables. These tables are made up of rows, also known as records or tuples, and columns, which are also called attributes or fields. The term \"relational\" comes from the fact that these tables can be related to one another through keys and relationships.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Relational Databases: concept and history",
+        "title": "Databases and SQL",
+        "url": "https://www.edx.org/course/databases-5-sql",
+        "type": "course"
+      },
+      {
+        "title": "Relational Databases",
+        "url": "https://www.ibm.com/cloud/learn/relational-databases",
+        "type": "article"
+      },
+      {
+        "title": "Intro To Relational Databases",
+        "url": "https://www.udacity.com/course/intro-to-relational-databases--ud197",
+        "type": "article"
+      },
+      {
+        "title": "Relational Databases: Concept and History",
         "url": "https://www.ibm.com/topics/relational-databases",
         "type": "article"
       },
@@ -81,13 +106,35 @@
   },
   "-M9EFgiDSSAzj9ISk-aeh": {
     "title": "Basic RDBMS Concepts",
-    "description": "Relational Database Management Systems (RDBMS) are a type of database management system which stores and organizes data in tables, making it easy to manipulate, query, and manage the information. They follow the relational model defined by E.F. Codd in 1970, which means that data is represented as tables with rows and columns.",
-    "links": []
+    "description": "Relational Database Management Systems (RDBMS) are a type of database management system which stores and organizes data in tables, making it easy to manipulate, query, and manage the information. They follow the relational model defined by E.F. Codd in 1970, which means that data is represented as tables with rows and columns.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Relational Database Management Systems",
+        "url": "https://www.essentialsql.com/understanding-relational-databases-a-beginners-guide/",
+        "type": "article"
+      }
+    ]
   },
   "RoYP1tYw5dvhmkVTo1HS-": {
     "title": "Object Model",
-    "description": "PostgreSQL is an object-relational database management system (ORDBMS). That means it combines features of both relational (RDBMS) and object-oriented databases (OODBMS). The object model in PostgreSQL provides features like user-defined data types, inheritance, and polymorphism, which enhances its capabilities beyond a typical SQL-based RDBMS.",
-    "links": []
+    "description": "PostgreSQL is an object-relational database management system (ORDBMS). That means it combines features of both relational (RDBMS) and object-oriented databases (OODBMS). The object model in PostgreSQL provides features like user-defined data types, inheritance, and polymorphism, which enhances its capabilities beyond a typical SQL-based RDBMS.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Object Model",
+        "url": "https://www.postgresql.org/docs/current/tutorial-concepts.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding PostgreSQL: The Power of an Object-Relational",
+        "url": "https://medium.com/@asadbukhari886/understanding-of-postgresql-the-power-of-an-object-relational-database-b6ae349c3f40",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Server and Database Objects",
+        "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-server-and-database-objects/",
+        "type": "article"
+      }
+    ]
   },
   "xVocG4LuFdtphwoOxiJTa": {
     "title": "Queries",
@@ -102,7 +149,7 @@
   },
   "4Pw7udOMIsiaKr7w9CRxc": {
     "title": "Data Types",
-    "description": "PostgreSQL offers a rich and diverse set of data types, catering to a wide range of applications and ensuring data integrity and performance. These include standard numeric types such as integers, floating-point numbers, and serial types for auto-incrementing fields. Character types like VARCHAR and TEXT handle varying lengths of text, while DATE, TIME, and TIMESTAMP support a variety of temporal data requirements. PostgreSQL also supports a comprehensive set of Boolean, enumerated (ENUM), and composite types, enabling more complex data structures. Additionally, it excels with its support for JSON and JSONB data types, allowing for efficient storage and querying of semi-structured data. The inclusion of array types, geometric data types, and the PostGIS extension for geographic data further extends PostgreSQL's versatility, making it a powerful tool for a broad spectrum of data management needs.\n\nLearn more from the following resources:",
+    "description": "PostgreSQL offers a rich and diverse set of data types, catering to a wide range of applications and ensuring data integrity and performance. These include standard numeric types such as integers, floating-point numbers, and serial types for auto-incrementing fields. Character types like `VARCHAR` and `TEXT` handle varying lengths of text, while DATE, TIME, and TIMESTAMP support a variety of temporal data requirements. PostgreSQL also supports a comprehensive set of Boolean, enumerated (ENUM), and composite types, enabling more complex data structures. Additionally, it excels with its support for JSON and JSONB data types, allowing for efficient storage and querying of semi-structured data. The inclusion of array types, geometric data types, and the PostGIS extension for geographic data further extends PostgreSQL's versatility, making it a powerful tool for a broad spectrum of data management needs.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Data Types",
@@ -110,7 +157,7 @@
         "type": "article"
       },
       {
-        "title": "An introduction to PostgreSQL data types",
+        "title": "Introduction to PostgreSQL DataTypes",
         "url": "https://www.prisma.io/dataguide/postgresql/introduction-to-data-types",
         "type": "article"
       },
@@ -128,6 +175,11 @@
       {
         "title": "Concepts",
         "url": "https://www.postgresql.org/docs/7.1/query-concepts.html",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL - Rows",
+        "url": "https://www.postgresql.org/docs/current/functions-comparisons.html",
         "type": "article"
       }
     ]
@@ -164,13 +216,13 @@
     "description": "Schemas are an essential part of PostgreSQL's object model, and they help provide structure, organization, and namespacing for your database objects. A schema is a collection of database objects, such as tables, views, indexes, and functions, that are organized within a specific namespace.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a schema in PostgreSQL",
-        "url": "https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/",
+        "title": "Schemas",
+        "url": "https://www.postgresql.org/docs/current/ddl-schemas.html",
         "type": "article"
       },
       {
-        "title": "Schemas",
-        "url": "https://www.postgresql.org/docs/current/ddl-schemas.html",
+        "title": "Schema in PostgreSQL",
+        "url": "https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/",
         "type": "article"
       }
     ]
@@ -193,8 +245,19 @@
   },
   "mDVbjdVN0spY7dI_8k1YW": {
     "title": "Relational Model",
-    "description": "The relational model is an approach to organizing and structuring data using tables, also referred to as \"relations\". It was first introduced by Edgar F. Codd in 1970 and has since become the foundation for most database management systems (DBMS), including PostgreSQL. This model organizes data into tables with rows and columns, where each row represents a single record and each column represents an attribute or field of the record.\n\nThe core concepts of the relational model include:\n\n*   **Attributes:** An attribute is a column within a table that represents a specific characteristic or property of an entity, such as \"name\", \"age\", \"email\", etc.\n    \n*   **Tuples:** A tuple is a single row within a table that represents a specific instance of an entity with its corresponding attribute values.\n    \n*   **Relations:** A relation is a table that consists of a set of tuples with the same attributes. It represents the relationship between entities and their attributes.\n    \n*   **Primary Key:** A primary key is a unique identifier for each tuple within a table. It enforces the uniqueness of records and is used to establish relationships between tables.\n    \n*   **Foreign Key:** A foreign key is an attribute within a table that references the primary key of another table. It is used to establish and enforce connections between relations.\n    \n*   **Normalization:** Normalization is a process of organizing data in a way to minimize redundancy and improve data integrity. It involves decomposing complex tables into simpler tables, ensuring unique records, and properly defining foreign keys.\n    \n*   **Data Manipulation Language (DML):** DML is a subset of SQL used to perform operations on data stored within the relational database, such as INSERT, UPDATE, DELETE, and SELECT.\n    \n*   **Data Definition Language (DDL):** DDL is another subset of SQL used to define, modify, or delete database structures, such as CREATE, ALTER, and DROP.\n    \n\nBy understanding and implementing the relational model, databases can achieve high-level data integrity, reduce data redundancy, and simplify the process of querying and manipulating data. PostgreSQL, as an RDBMS (Relational Database Management System), fully supports the relational model, enabling users to efficiently and effectively manage their data in a well-structured and organized manner.",
-    "links": []
+    "description": "The relational model is an approach to organizing and structuring data using tables, also referred to as \"relations\". It was first introduced by Edgar F. Codd in 1970 and has since become the foundation for most database management systems (DBMS), including PostgreSQL. This model organizes data into tables with rows and columns, where each row represents a single record and each column represents an attribute or field of the record.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is the Relational Model?",
+        "url": "https://www.postgresql.org/docs/7.1/relmodel-oper.html",
+        "type": "article"
+      },
+      {
+        "title": "The Relational Model",
+        "url": "https://www.geeksforgeeks.org/relational-model-in-dbms/",
+        "type": "article"
+      }
+    ]
   },
   "-LuxJvI5IaOx6NqzK0d8S": {
     "title": "Domains",
@@ -217,7 +280,7 @@
     "description": "Attributes in the relational model are the columns of a table, representing the properties or characteristics of the entity described by the table. Each attribute has a domain, defining the possible values it can take, such as integer, text, or date. Attributes play a crucial role in defining the schema of a relation (table) and are used to store and manipulate data. They are fundamental in maintaining data integrity, enforcing constraints, and enabling the relational operations that form the basis of SQL queries.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a relational Model?",
+        "title": "What is a Relational Model?",
         "url": "https://www.guru99.com/relational-data-model-dbms.html",
         "type": "article"
       },
@@ -230,32 +293,32 @@
   },
   "vJhvgGwNV3JB-wWn_0gMb": {
     "title": "Tuples",
-    "description": "In the relational model, a **tuple** is a fundamental concept that represents a single record or row in a table. In PostgreSQL, a tuple is composed of a set of attribute values, each corresponding to a specific column or field in the table. A tuple is defined as an ordered set of attribute values, meaning that each value in a tuple corresponds to a specific attribute or column in the table. The values can be of different data types, such as integers, strings, or dates, depending on the schema of the table.\n\nFor example, consider a `users` table with columns `id`, `name`, and `email`. A sample tuple in this table could be `(1, 'John Smith', 'john.smith@example.com')`, where each value corresponds to its respective column. PostgreSQL provides a variety of operations that can be performed on tuples, which can be classified into three main categories:\n\n*   **Projection**: This operation involves selecting one or more attributes from a tuple and creating a new tuple with only the selected attributes. For example, projecting the `name` and `email` attributes from the previously mentioned tuple would result in `('John Smith', 'john.smith@example.com')`.\n    \n*   **Selection**: Selection involves filtering tuples based on a specific condition. For example, you may want to select all tuples from the `users` table where the `email` attribute ends with \"@example.com\".\n    \n*   **Join**: The join operation combines tuples from two or more tables based on a common attribute or condition. For example, if we have another table called `orders` with a `user_id` column, we could use a join operation to retrieve all records from both tables where the `users.id` attribute matches the `orders.user_id`.\n    \n\nLearn more from the following resources:",
+    "description": "In the relational model, a **tuple** is a fundamental concept that represents a single record or row in a table. In PostgreSQL, a tuple is composed of a set of attribute values, each corresponding to a specific column or field in the table. A tuple is defined as an ordered set of attribute values, meaning that each value in a tuple corresponds to a specific attribute or column in the table. The values can be of different data types, such as integers, strings, or dates, depending on the schema of the table.\n\nFor example, consider a `users` table with columns `id`, `name`, and `email`. A sample tuple in this table could be `(1, 'John Smith', 'john.smith@example.com')`, where each value corresponds to its respective column. PostgreSQL provides a variety of operations that can be performed on tuples.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Whats the difference between and tuple and a row?",
-        "url": "https://stackoverflow.com/questions/19799282/whats-the-difference-between-a-tuple-and-a-row-in-postgres",
+        "title": "How PostgreSQL Freezes Tuples",
+        "url": "https://medium.com/@hnasr/how-postgres-freezes-tuples-4a9931261fc",
         "type": "article"
       },
       {
-        "title": "How PostgreSQL freezes tuples",
-        "url": "https://medium.com/@hnasr/how-postgres-freezes-tuples-4a9931261fc",
+        "title": "Whats the difference between and tuple and a row?",
+        "url": "https://stackoverflow.com/questions/19799282/whats-the-difference-between-a-tuple-and-a-row-in-postgres",
         "type": "article"
       }
     ]
   },
   "2hM2IPAnNYq-LlEbcFp2Z": {
     "title": "Relations",
-    "description": "In the relational model, a relation is essentially a table composed of rows and columns, where each row represents a unique record (or tuple) and each column represents an attribute of the data. The structure of a relation is defined by its schema, which specifies the relation's name and the names and data types of its attributes. Relations are governed by integrity constraints, such as domain constraints, key constraints, and referential integrity constraints, to ensure data accuracy and consistency. Operations like selection, projection, join, and others can be performed on relations to retrieve and manipulate data efficiently.",
+    "description": "In the relational model, a relation is essentially a table composed of rows and columns, where each row represents a unique record (or tuple) and each column represents an attribute of the data. The structure of a relation is defined by its schema, which specifies the relation's name and the names and data types of its attributes. Relations are governed by integrity constraints, such as domain constraints, key constraints, and referential integrity constraints, to ensure data accuracy and consistency. Operations like selection, projection, join, and others can be performed on relations to retrieve and manipulate data efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Relationships",
-        "url": "https://hasura.io/learn/database/postgresql/core-concepts/6-postgresql-relationships/",
+        "title": "Domain Constraints",
+        "url": "https://www.postgresql.org/docs/current/infoschema-domain-constraints.html",
         "type": "article"
       },
       {
-        "title": "domain_contraints",
-        "url": "https://www.postgresql.org/docs/current/infoschema-domain-constraints.html",
+        "title": "Relationships",
+        "url": "https://hasura.io/learn/database/postgresql/core-concepts/6-postgresql-relationships/",
         "type": "article"
       }
     ]
@@ -265,12 +328,12 @@
     "description": "Constraints are an essential part of the relational model, as they define rules that the data within the database must follow. They ensure that the data is consistent, accurate, and reliable.\n\n**Primary Key** - A primary key constraint is a column or a set of columns that uniquely identifies each row in a table. There can only be one primary key per table, and its value must be unique and non-null for each row.\n\n**Foreign Key** - A foreign key constraint ensures that a column or columns in a table refer to an existing row in another table. It helps maintain referential integrity between tables.\n\n**Unique** - A unique constraint ensures that the values in a column or set of columns are unique across all rows in a table. In other words, it prevents duplicate entries in the specified column(s).\n\n**Check** - A check constraint verifies that the values entered into a column meet a specific condition. It helps to maintain data integrity by restricting the values that can be inserted into a column.\n\n**Not Null** - A NOT NULL constraint enforces that a column cannot contain a NULL value. This ensures that a value must be provided for the specified column when inserting or updating data in the table.\n\n**Exclusion** - An exclusion constraint is a more advanced form of constraint that allows you to specify conditions that should not exist when comparing multiple rows in a table. It helps maintain data integrity by preventing conflicts in data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Contraints",
+        "title": "Constraints",
         "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
         "type": "article"
       },
       {
-        "title": "PostgreSQL - Contraints",
+        "title": "PostgreSQL - Constraints",
         "url": "https://www.tutorialspoint.com/postgresql/postgresql_constraints.htm",
         "type": "article"
       }
@@ -278,13 +341,30 @@
   },
   "91eOGK8mtJulWRlhKyv0F": {
     "title": "NULL",
-    "description": "In the relational model used by PostgreSQL, null values represent missing or unknown information within a database. Unlike zero, empty strings, or other default values, null signifies the absence of a value and is treated uniquely in operations and queries. For example, any arithmetic operation involving a null results in a null, and comparisons with null using standard operators return unknown rather than true or false. To handle null values, PostgreSQL provides specific functions and constructs such as `IS NULL`, `IS NOT NULL`, and the `COALESCE` function, which returns the first non-null value in its arguments. Understanding and correctly handling null values is crucial for accurate data retrieval and integrity in relational databases.",
-    "links": []
+    "description": "In the relational model used by PostgreSQL, null values represent missing or unknown information within a database. Unlike zero, empty strings, or other default values, null signifies the absence of a value and is treated uniquely in operations and queries. For example, any arithmetic operation involving a null results in a null, and comparisons with null using standard operators return unknown rather than true or false. To handle null values, PostgreSQL provides specific functions and constructs such as `IS NULL`, `IS NOT NULL`, and the `COALESCE` function, which returns the first non-null value in its arguments. Understanding and correctly handling null values is crucial for accurate data retrieval and integrity in relational databases.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PostgreSQL - NULL",
+        "url": "https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-NULL",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL - NULL Values",
+        "url": "https://www.relationaldbdesign.com/database-analysis/module2/relational-database-null-values.php",
+        "type": "article"
+      }
+    ]
   },
   "_BSR2mo1lyXEFXbKYb1ZG": {
     "title": "High Level Database Concepts",
-    "description": "High-level database concepts encompass fundamental principles that underpin the design, implementation, and management of database systems. These concepts form the foundation of effective database management, enabling the design of robust, efficient, and scalable systems.",
-    "links": []
+    "description": "High-level database concepts encompass fundamental principles that underpin the design, implementation, and management of database systems. These concepts form the foundation of effective database management, enabling the design of robust, efficient, and scalable systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Demystifying PostgreSQL: 10 Crucial Concepts and Files",
+        "url": "https://medium.com/@RohitAjaygupta/demystifying-postgresql-10-crucial-concepts-and-files-explained-with-practical-examples-a5a70cd2b848",
+        "type": "article"
+      }
+    ]
   },
   "9u7DPbfybqmldisiePq0m": {
     "title": "ACID",
@@ -309,7 +389,7 @@
   },
   "-_ADJsTVGAgXq7_-8bdIO": {
     "title": "MVCC",
-    "description": "Multi-Version Concurrency Control (MVCC) is a technique used by PostgreSQL to allow multiple transactions to access the same data concurrently without conflicts or delays. It ensures that each transaction has a consistent snapshot of the database and can operate on its own version of the data.\n\nLearn more from the following resources:",
+    "description": "Multi-Version Concurrency Control (MVCC) is a technique used by PostgreSQL to allow multiple transactions to access the same data concurrently without conflicts or delays. It ensures that each transaction has a consistent snapshot of the database and can operate on its own version of the data.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Intro to MVCC",
@@ -317,7 +397,7 @@
         "type": "article"
       },
       {
-        "title": "Multiversion concurrency control - Wikipedia",
+        "title": "Multi-Version Concurrency Control - Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Multiversion_concurrency_control",
         "type": "article"
       },
@@ -367,10 +447,10 @@
   },
   "Qk14b9WyeCp9RV9WAwojt": {
     "title": "Query Processing",
-    "description": "In this section, we will discuss the concept of query processing in PostgreSQL. Query processing is an important aspect of a database system, as it is responsible for managing data retrieval and modification using Structured Query Language (SQL) queries. Efficient query processing is crucial for ensuring optimal database performance.\n\nLearn more from the following resources:",
+    "description": "Query processing is an important aspect of a database system, as it is responsible for managing data retrieval and modification using Structured Query Language (SQL) queries. Efficient query processing is crucial for ensuring optimal database performance.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Understand PostgreSQL query processing - Microsoft",
+        "title": "Understand PostgreSQL Query Processing - Microsoft",
         "url": "https://learn.microsoft.com/en-us/training/modules/understand-postgresql-query-process/",
         "type": "course"
       },
@@ -386,6 +466,11 @@
     "description": "Docker is an excellent tool for simplifying the installation and management of applications, including PostgreSQL. By using Docker, you can effectively isolate PostgreSQL from your system and avoid potential conflicts with other installations or configurations.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Official PostgresSQL Docker Image",
+        "url": "https://hub.docker.com/_/postgres",
+        "type": "article"
+      },
+      {
         "title": "How to Use the Postgres Docker Official Image",
         "url": "https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/",
         "type": "article"
@@ -399,7 +484,7 @@
   },
   "pEtQy1nuW98YUwrbfs7Np": {
     "title": "Package Managers",
-    "description": "Package managers are essential tools that help you install, update, and manage software packages on your system. They keep track of dependencies, handle configuration files and ensure that the installation process is seamless for the end-user.\n\nLearn more from the following resources:",
+    "description": "Package managers are essential tools that help you install, update, and manage software packages on your system. They keep track of dependencies, handle configuration files and ensure that the installation process is seamless for the end-user.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Install PostgreSQL with APT",
@@ -438,6 +523,11 @@
     "title": "Deployment in Cloud",
     "description": "In this section, we will discuss deploying PostgreSQL in the cloud. Deploying your PostgreSQL database in the cloud offers significant advantages such as scalability, flexibility, high availability, and cost reduction. There are several cloud providers that offer PostgreSQL as a service, which means you can quickly set up and manage your databases without having to worry about underlying infrastructure, backups, and security measures.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "5 Ways to Host PostgreSQL Databases",
+        "url": "https://www.prisma.io/dataguide/postgresql/5-ways-to-host-postgresql",
+        "type": "article"
+      },
       {
         "title": "Postgres On Kubernetes",
         "url": "https://cloudnative-pg.io/",
@@ -492,16 +582,27 @@
     "description": "`pg_ctlcluster` is a command-line utility provided by PostgreSQL to manage database clusters. It is especially helpful for users who have multiple PostgreSQL clusters running on the same system.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "PostgreSQL documentation",
-        "url": "https://www.postgresql.org/docs/current/pgctlcluster.html",
+        "title": "pg_ctlcluster",
+        "url": "https://manpages.ubuntu.com/manpages/focal/man1/pg_ctlcluster.1.html",
         "type": "article"
       }
     ]
   },
   "FtPiBWMFhjakyXsmSL_CI": {
     "title": "Installation and Setup",
-    "description": "",
-    "links": []
+    "description": "To install and set up PostgreSQL, begin by downloading the installer from the official PostgreSQL website for your operating system (Windows, macOS, or Linux). For Windows, run the installer and follow the prompts to configure components, set a password for the superuser (postgres), and choose the installation directory and port (default is 5432). On macOS, using Homebrew is the recommended method; simply run brew install postgresql in the terminal, then initialize the database with brew services start postgresql. For Linux, use the package manager (APT for Debian/Ubuntu or YUM for CentOS/RHEL) to install PostgreSQL, followed by initializing the database and starting the service. After installation, you can access PostgreSQL using the psql command-line tool to create databases and manage your data effectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Installing PostgreSQL",
+        "url": "https://www.postgresql.org/download/",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL - Installation",
+        "url": "https://www.postgresql.org/docs/current/tutorial-install.html",
+        "type": "article"
+      }
+    ]
   },
   "ANUgfkADLI_du7iRvnUdi": {
     "title": "Learn SQL",
@@ -511,21 +612,26 @@
         "title": "Visit Dedicated SQL Roadmap",
         "url": "https://roadmap.sh/sql",
         "type": "article"
+      },
+      {
+        "title": "SQL Tutorial - Essential SQL For The Beginners",
+        "url": "https://www.sqltutorial.org/",
+        "type": "article"
       }
     ]
   },
   "KMdF9efNGULualk5o1W0_": {
     "title": "For Schemas",
-    "description": "A schema is a logical collection of database objects within a PostgreSQL database. It behaves like a namespace that allows you to group and isolate your database objects separately from other schemas. The primary goal of a schema is to organize your database structure, making it easier to manage and maintain.\n\nBy default, every PostgreSQL database has a `public` schema, which is the default search path for any unqualified table or other database object.\n\nLearn more from the following resources:",
+    "description": "A schema is a logical collection of database objects within a PostgreSQL database. It behaves like a namespace that allows you to group and isolate your database objects separately from other schemas. The primary goal of a schema is to organize your database structure, making it easier to manage and maintain. By default, every PostgreSQL database has a `public` schema, which is the default search path for any unqualified table or other database object.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "PostgreSQL Schema",
-        "url": "https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/",
-        "type": "article"
-      },
       {
         "title": "Schemas",
         "url": "https://www.postgresql.org/docs/current/ddl-schemas.html",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Schema",
+        "url": "https://hasura.io/learn/database/postgresql/core-concepts/1-postgresql-schema/",
         "type": "article"
       }
     ]
@@ -598,7 +704,7 @@
     "description": "Filtering data is an essential feature in any database management system, and PostgreSQL is no exception. When we refer to filtering data, we're talking about selecting a particular subset of data that fulfills specific criteria or conditions. In PostgreSQL, we use the **WHERE** clause to filter data in a query based on specific conditions.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "How to filter query results in PostgreSQL",
+        "title": "How to Filter Query Results in PostgreSQL",
         "url": "https://www.prisma.io/dataguide/postgresql/reading-and-querying-data/filtering-data",
         "type": "article"
       },
@@ -640,7 +746,7 @@
     "description": "Joining tables is a fundamental operation in the world of databases. It allows you to combine information from multiple tables based on common columns. PostgreSQL provides various types of joins, such as Inner Join, Left Join, Right Join, and Full Outer Join.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Joins between tables",
+        "title": "Joins Between Tables",
         "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
         "type": "article"
       },
@@ -661,7 +767,7 @@
         "type": "article"
       },
       {
-        "title": "Copying data between tables in PostgreSQL",
+        "title": "Copying Data Between Tables in PostgreSQL",
         "url": "https://www.atlassian.com/data/sql/copying-data-between-tables",
         "type": "article"
       }
@@ -795,8 +901,19 @@
   },
   "T819BZ-CZgUX_BY7Gna0J": {
     "title": "Configuring",
-    "description": "Configuring PostgreSQL involves modifying several key configuration files to optimize performance, security, and functionality. The primary configuration files are postgresql.conf, pg\\_hba.conf, and pg\\_ident.conf, typically located in the PostgreSQL data directory. By properly configuring these files, you can tailor PostgreSQL to better fit your specific needs and environment.",
-    "links": []
+    "description": "Configuring PostgreSQL involves modifying several key configuration files to optimize performance, security, and functionality. The primary configuration files are postgresql.conf, pg\\_hba.conf, and pg\\_ident.conf, typically located in the PostgreSQL data directory. By properly configuring these files, you can tailor PostgreSQL to better fit your specific needs and environment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Configuring PostgreSQL",
+        "url": "https://www.postgresql.org/docs/current/runtime-config.html",
+        "type": "article"
+      },
+      {
+        "title": "Install and Configure PostgreSQL",
+        "url": "https://ubuntu.com/server/docs/install-and-configure-postgresql",
+        "type": "article"
+      }
+    ]
   },
   "yl3gxfQs4nOE0N7uGqR0d": {
     "title": "Resource Usage",
@@ -890,7 +1007,7 @@
   },
   "3pLn1mhRnekG537ejHUYA": {
     "title": "Checkpoints / Background Writer",
-    "description": "In PostgreSQL, checkpoints and the background writer are essential for maintaining data integrity and optimizing performance. Checkpoints periodically write all modified data (dirty pages) from the shared buffers to the disk, ensuring that the database can recover to a consistent state after a crash. This process is controlled by settings such as `checkpoint_timeout`, `checkpoint_completion_target`, and `max_wal_size`, balancing between write performance and recovery time. The background writer continuously flushes dirty pages to disk in the background, smoothing out the I/O workload and reducing the amount of work needed during checkpoints. This helps to maintain steady performance and avoid spikes in disk activity. Proper configuration of these mechanisms is crucial for ensuring efficient disk I/O management and overall database stability.\n\nCheckpoints periodically write all modified data (dirty pages) from the shared buffer cache to the disk, ensuring that the database can recover to a consistent state after a crash. The frequency of checkpoints is controlled by parameters like `checkpoint_timeout`, `checkpoint_completion_target`, and `checkpoint_segments`, balancing the trade-off between I/O load and recovery time.\n\nThe background writer, on the other hand, continuously flushes dirty pages to disk, smoothing out the I/O workload and reducing the amount of work needed during a checkpoint. Parameters such as `bgwriter_delay`, `bgwriter_lru_maxpages`, and `bgwriter_lru_multiplier` control its behavior, optimizing the balance between database performance and the frequency of disk writes. Proper configuration of both components ensures efficient disk I/O management, minimizes performance bottlenecks, and enhances overall system stability.\n\nLearn more from the following resources:",
+    "description": "In PostgreSQL, checkpoints and the background writer are essential for maintaining data integrity and optimizing performance. Checkpoints periodically write all modified data (dirty pages) from the shared buffers to the disk, ensuring that the database can recover to a consistent state after a crash. This process is controlled by settings such as `checkpoint_timeout`, `checkpoint_completion_target`, and `max_wal_size`, balancing between write performance and recovery time. The background writer continuously flushes dirty pages to disk in the background, smoothing out the I/O workload and reducing the amount of work needed during checkpoints. This helps to maintain steady performance and avoid spikes in disk activity. Proper configuration of these mechanisms is crucial for ensuring efficient disk I/O management and overall database stability.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Checkpoints",
@@ -914,7 +1031,7 @@
     "description": "When working with PostgreSQL, it is often useful to analyze the performance of your queries and system as a whole. This can help you optimize your database and spot potential bottlenecks. One way to achieve this is by reporting logging statistics. PostgreSQL provides configuration settings for generating essential logging statistics on query and system performance.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Error reporting and logging",
+        "title": "Error Reporting and Logging",
         "url": "https://www.postgresql.org/docs/current/runtime-config-logging.html",
         "type": "article"
       },
@@ -930,7 +1047,7 @@
     "description": "PostgreSQL provides various extensions to enhance its features and functionalities. Extensions are optional packages that can be loaded into your PostgreSQL database to provide additional functionality like new data types or functions. Using extensions can be a powerful way to add new features to your PostgreSQL database and customize your database's functionality according to your needs.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "PostgreSQL extensions",
+        "title": "PostgreSQL Extensions",
         "url": "https://www.postgresql.org/download/products/6-postgresql-extensions/",
         "type": "article"
       },
@@ -943,20 +1060,31 @@
   },
   "2Zg8R5gs9LMQOcOMZtoPk": {
     "title": "Security",
-    "description": "Securing PostgreSQL involves multiple layers of considerations to protect data and ensure only authorized access.",
-    "links": []
+    "description": "Securing PostgreSQL involves multiple layers of considerations to protect data and ensure only authorized access.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "PostgreSQL Database Security Best Practices",
+        "url": "https://www.percona.com/blog/postgresql-database-security-best-practices/",
+        "type": "article"
+      },
+      {
+        "title": "Security - Azure Database for PostgreSQL",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-security",
+        "type": "article"
+      }
+    ]
   },
   "S20aJB-VuSpXYyd0-0S8c": {
-    "title": "Object Priviliges",
+    "title": "Object Privileges",
     "description": "Object privileges in PostgreSQL are the permissions given to different user roles to access or modify database objects like tables, views, sequences, and functions. Ensuring proper object privileges is crucial for maintaining a secure and well-functioning database.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "PostgreSQL roles and privileges explained",
+        "title": "PostgreSQL Roles and Privileges Explained",
         "url": "https://www.aviator.co/blog/postgresql-roles-and-privileges-explained/",
         "type": "article"
       },
       {
-        "title": "What are object privileges?",
+        "title": "What are Object Privileges?",
         "url": "https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/managing-privileges#what-are-postgresql-object-privileges",
         "type": "article"
       }
@@ -989,7 +1117,7 @@
     ]
   },
   "t18XjeHP4uRyERdqhHpl5": {
-    "title": "Default Priviliges",
+    "title": "Default Privileges",
     "description": "PostgreSQL allows you to define object privileges for various types of database objects. These privileges determine if a user can access and manipulate objects like tables, views, sequences, or functions. In this section, we will focus on understanding default privileges in PostgreSQL.\n\nLearn more from the following resources:",
     "links": [
       {
@@ -1006,8 +1134,19 @@
   },
   "09QX_zjCUajxUqcNZKy0x": {
     "title": "Advanced Topics",
-    "description": "In addition to basic PostgreSQL security concepts, such as user authentication, privilege management, and encryption, there are several advanced topics that you should be aware of to enhance the security of your PostgreSQL databases.",
-    "links": []
+    "description": "In addition to basic PostgreSQL security concepts, such as user authentication, privilege management, and encryption, there are several advanced topics that you should be aware of to enhance the security of your PostgreSQL databases.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Best Practices for Postgres Security",
+        "url": "https://www.timescale.com/learn/postgres-security-best-practices",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL - Encryption and Monitoring",
+        "url": "https://www.enterprisedb.com/postgresql-best-practices-encryption-monitoring",
+        "type": "article"
+      }
+    ]
   },
   "bokFf6VNrLcilI9Hid386": {
     "title": "Row-Level Security",
@@ -1046,12 +1185,12 @@
     "description": "PostgreSQL supports various authentication models to control access, including trust (no password, for secure environments), password-based (md5 and scram-sha-256 for hashed passwords), GSSAPI and SSPI (Kerberos for secure single sign-on), LDAP (centralized user management), certificate-based (SSL certificates for strong authentication), PAM (leveraging OS-managed authentication), Ident (verifying OS user names), and RADIUS (centralized authentication via RADIUS servers). These methods are configured in the `pg_hba.conf` file, specifying the appropriate authentication method for different combinations of databases, users, and client addresses, ensuring flexible and secure access control.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Authentication methods",
+        "title": "Authentication Methods",
         "url": "https://www.postgresql.org/docs/current/auth-methods.html",
         "type": "article"
       },
       {
-        "title": "An introduction to authorization and authentication in PostgreSQL",
+        "title": "An Introduction to Authorization and Authentication in PostgreSQL",
         "url": "https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/intro-to-authn-and-authz",
         "type": "article"
       }
@@ -1189,12 +1328,12 @@
     "description": "Operators in Kubernetes are software extensions that use custom resources to manage applications and their components. They encapsulate operational knowledge and automate complex tasks such as deployments, backups, and scaling. Using Custom Resource Definitions (CRDs) and custom controllers, Operators continuously monitor the state of the application and reconcile it with the desired state, ensuring the system is self-healing and resilient. Popular frameworks for building Operators include the Operator SDK, Kubebuilder, and Metacontroller, which simplify the process and enhance Kubernetes' capability to manage stateful and complex applications efficiently.",
     "links": [
       {
-        "title": "Kubernetes Roadmap",
+        "title": "Visit Dedicated Kubernetes Roadmap",
         "url": "https://roadmap.sh/kubernetes",
         "type": "article"
       },
       {
-        "title": "Kubernetes Website",
+        "title": "Kubernetes",
         "url": "https://kubernetes.io/",
         "type": "article"
       },
@@ -1260,7 +1399,7 @@
   },
   "xk2G-HUS-dviNW3BAMmJv": {
     "title": "KeepAlived",
-    "description": "Keepalived is a robust and widely-used open-source solution for load balancing and high availability. It helps to maintain a stable and perfect working environment even in the presence of failures such as server crashes or connectivity issues.\n\nKeepalived achieves this by utilizing the Linux Virtual Server (LVS) module and the Virtual Router Redundancy Protocol (VRRP).\n\nFor PostgreSQL database systems, Keepalived can be an advantageous addition to your infrastructure by offering fault tolerance and load balancing. With minimal configuration, it distributes read-only queries among multiple replicated PostgreSQL servers or divides transaction processing across various nodes – ensuring an efficient and resilient system.\n\nLearn more from the following resources:",
+    "description": "Keepalived is a robust and widely-used open-source solution for load balancing and high availability. It helps to maintain a stable and perfect working environment even in the presence of failures such as server crashes or connectivity issues.\n\nKeepalived achieves this by utilizing the Linux Virtual Server (LVS) module and the Virtual Router Redundancy Protocol (VRRP). For PostgreSQL database systems, Keepalived can be an advantageous addition to your infrastructure by offering fault tolerance and load balancing. With minimal configuration, it distributes read-only queries among multiple replicated PostgreSQL servers or divides transaction processing across various nodes – ensuring an efficient and resilient system.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "acassen/keepalived",
@@ -1268,8 +1407,13 @@
         "type": "opensource"
       },
       {
-        "title": "Keepalived Website",
+        "title": "Keepalived",
         "url": "https://www.keepalived.org/",
+        "type": "article"
+      },
+      {
+        "title": "Keepalived: High Availability for Self-hosted Services",
+        "url": "https://www.virtualizationhowto.com/2023/09/keepalived-high-availability-for-self-hosted-services/",
         "type": "article"
       }
     ]
@@ -1278,6 +1422,11 @@
     "title": "Etcd",
     "description": "Etcd is a distributed key-value store that provides an efficient and reliable means for storing crucial data across clustered environments. It has become popular as a fundamental component for storing configuration data and service discovery in distributed systems.\n\nEtcd can be utilized in conjunction with _connection poolers_ such as PgBouncer or HAProxy to improve PostgreSQL load balancing. By maintaining a list of active PostgreSQL servers' IP addresses and ports as keys in the store, connection poolers can fetch this information periodically to route client connections to the right servers. Additionally, transactional operations on the store can simplify the process of adding or removing nodes from the load balancer configuration while maintaining consistency.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "PostgreSQL High Availability with Etcd",
+        "url": "https://github.com/patroni/patroni",
+        "type": "opensource"
+      },
       {
         "title": "etcd vs PostgreSQL",
         "url": "https://api7.ai/blog/etcd-vs-postgresql",
@@ -1316,12 +1465,12 @@
         "type": "opensource"
       },
       {
-        "title": "Zabbix Website",
+        "title": "Zabbix",
         "url": "https://www.zabbix.com/",
         "type": "article"
       },
       {
-        "title": "Using Zabbix to monitor your home network",
+        "title": "Using Zabbix to Monitor your Home Network",
         "url": "https://jswheeler.medium.com/using-zabbix-to-monitor-your-home-network-71ed2b1181ae",
         "type": "article"
       }
@@ -1527,7 +1676,7 @@
   },
   "3V1PPIeB0i9qNUsT8-4O-": {
     "title": "PgBouncer Alternatives",
-    "description": "Pgpool-II\n---------\n\nPgpool-II is another widely-used connection pooler for PostgreSQL. It provides several advanced features, such as load balancing, replication, and limiting connections.\n\n*   **Load Balancing** - Pgpool-II can distribute read queries among multiple PostgreSQL servers to balance the read load, helping to improve overall performance.\n*   **Replication** - In addition to connection pooling, Pgpool-II can act as a replication tool for creating real-time data backups.\n*   **Limiting Connections** - You can set connection limits for clients to control the maximum number of allowed connections for specific users or databases.\n\nHAProxy\n-------\n\nHAProxy is a high-performance and highly-available load balancer for TCP and HTTP-based applications, including PostgreSQL. It is particularly well-suited for distributing connections across multiple PostgreSQL servers for high availability and load balancing.\n\n*   **Connection Distribution** - HAProxy uses load balancing algorithms to ensure connections are evenly distributed across the available servers, which can help prevent connection overloading.\n*   **Health Checking** - HAProxy can perform periodic health checks on your PostgreSQL servers, which can help to ensure that client connections are redirected to healthy servers.\n*   **SSL Support** - HAProxy provides SSL/TLS support, enabling secure connections between clients and PostgreSQL servers.\n\nOdyssey\n-------\n\nOdyssey is an open-source, multithreaded connection pooler for PostgreSQL developed by Yandex. It is designed for high-performance and large-scale deployments and supports features like transparent SSL, load balancing, and advanced routing.\n\n*   **High Performance** - Odyssey uses a multithreaded architecture to process its connections, which can help significantly increase its performance compared to single-threaded connection poolers.\n*   **Advanced Routing** - Odyssey allows you to configure routing rules and load balancing based on client, server, user, and even specific SQL queries.\n*   **Transparent SSL** - Odyssey supports transparent SSL connections between clients and PostgreSQL servers, ensuring secure communication.\n\nLearn more from the following resources:",
+    "description": "Pgpool-II, HAProxy, and Odyssey are prominent tools for enhancing PostgreSQL performance and availability. **Pgpool-II** is a versatile connection pooler offering load balancing, replication, and connection limits to optimize performance. **HAProxy** excels as a load balancer for distributing connections across PostgreSQL servers, featuring health checks and SSL/TLS support for secure, high-availability setups. **Odyssey**, developed by Yandex, is a multithreaded connection pooler designed for high-performance deployments, providing advanced routing, transparent SSL, and load balancing capabilities tailored for large-scale systems.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "yandex/odyssey",
@@ -1596,7 +1745,7 @@
   },
   "TZvZ_jNjWnM535ZktyhQN": {
     "title": "Patroni Alternatives",
-    "description": "While Patroni is a popular choice for managing PostgreSQL clusters, there are several other tools and frameworks available that you might consider as alternatives to Patroni. Each of these has its unique set of features and benefits, and some may be better suited to your specific requirements or use-cases.\n\nStolon - Stolon is a cloud-native PostgreSQL manager that automatically ensures high availability and, if required, can seamlessly scale instances. It was developed by the team at Sorint.lab and is written in Go. Some of the main features that differentiate Stolon from other solutions are:\n\nPgpool-II - Pgpool-II is an advanced and powerful PostgreSQL management and load balancing solution, developed by the Pgpool Global Development Group. Pgpool-II not only provides high availability and connection pooling, but also offers a myriad of other features, such as:\n\nRepmgr - Repmgr is an open-source replication management tool for PostgreSQL that has been fully integrated and supported by 2ndQuadrant. It simplifies administration and daily management, providing a robust and easy-to-use solution. The main features of Repmgr include:\n\nPAF (PostgreSQL Automatic Failover) - PAF is an HA (high-availability) resource agent for the Pacemaker and Corosync cluster manager, designed for the PostgreSQL's built-in streaming replication. It was developed by the team at Dalibo and is quite lightweight compared to other alternatives. Key features of PAF include:\n\nLearn more from the following resources:",
+    "description": "While Patroni is a popular choice for managing PostgreSQL clusters, there are several other tools and frameworks available that you might consider as alternatives to Patroni. Each of these has its unique set of features and benefits, and some may be better suited to your specific requirements or use-cases.\n\nSeveral alternatives to Patroni exist for PostgreSQL cluster management, each with unique features catering to specific needs. **Stolon**, a cloud-native manager by Sorint.lab, ensures high availability and seamless scaling. **Pgpool-II**, by the Pgpool Global Development Group, offers load balancing, connection pooling, and high availability. **Repmgr**, developed by 2ndQuadrant, simplifies replication and cluster administration. **PAF (PostgreSQL Automatic Failover)**, created by Dalibo, provides lightweight failover management using Pacemaker and Corosync. These tools present diverse options for managing PostgreSQL clusters effectively.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "dalibo/PAF",
@@ -1609,13 +1758,13 @@
         "type": "article"
       },
       {
-        "title": "pgPool Website",
-        "url": "https://www.pgpool.net/mediawiki/index.php/Main_Page",
+        "title": "RepMgr",
+        "url": "https://repmgr.org/",
         "type": "article"
       },
       {
-        "title": "RepMgr Website",
-        "url": "https://repmgr.org/",
+        "title": "pgPool",
+        "url": "https://www.pgpool.net/mediawiki/index.php/Main_Page",
         "type": "article"
       }
     ]
@@ -1638,15 +1787,31 @@
   },
   "e5s7-JRqNy-OhfnjTScZI": {
     "title": "Learn to Automate",
-    "description": "When working with PostgreSQL, automating repetitive and time-consuming tasks is crucial for increasing efficiency and reliability in your database operations.",
-    "links": []
+    "description": "When working with PostgreSQL, automating repetitive and time-consuming tasks is crucial for increasing efficiency and reliability in your database operations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PostgreSQL - Automation",
+        "url": "https://www.postgresql.org/docs/current/maintenance.html",
+        "type": "article"
+      },
+      {
+        "title": "Autoscaling Azure PostgreSQL Server with Automation Tasks",
+        "url": "https://techcommunity.microsoft.com/blog/adforpostgresql/autoscaling-azure-postgresql-server-with-automation-tasks/3911718",
+        "type": "article"
+      }
+    ]
   },
   "-clI2RmfhK8F8beHULaIB": {
     "title": "Shell Scripts",
     "description": "Shell scripts are a powerful tool used to automate repetitive tasks and perform complex operations. They are essentially text files containing a sequence of commands to be executed by the shell (such as Bash or Zsh). By leveraging shell scripts with tools such as `cron`, you can efficiently automate tasks related to PostgreSQL and streamline your database administration processes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Shell scripting tutorial",
+        "title": "Shell Script Cheatsheet",
+        "url": "https://cheatsheets.zip/bash",
+        "type": "article"
+      },
+      {
+        "title": "Shell Scripting Tutorial",
         "url": "https://www.tutorialspoint.com/unix/shell_scripting.htm",
         "type": "article"
       },
@@ -1678,7 +1843,7 @@
         "type": "opensource"
       },
       {
-        "title": "Ansible Website",
+        "title": "Ansible",
         "url": "https://www.ansible.com/",
         "type": "article"
       },
@@ -1726,12 +1891,12 @@
     "description": "Puppet is an open-source software configuration management tool that enables system administrators to automate the provisioning, configuration, and management of a server infrastructure. It helps minimize human errors, ensures consistency across multiple systems, and simplifies the process of managing PostgreSQL installations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Puppet documentation",
+        "title": "Puppet Documentation",
         "url": "https://puppet.com/docs/puppet/latest/index.html",
         "type": "article"
       },
       {
-        "title": "Puppet PostgreSQL module documentation",
+        "title": "Puppet PostgreSQL Module Documentation",
         "url": "https://forge.puppet.com/modules/puppetlabs/postgresql/",
         "type": "article"
       }
@@ -1779,13 +1944,13 @@
     "description": "Bulk load process data involves transferring large volumes of data from external files into the PostgreSQL database. This is an efficient way to insert massive amounts of data into your tables quickly, and it's ideal for initial data population or data migration tasks. Leveraging the `COPY` command or `pg_bulkload` utility in combination with best practices should help you load large datasets swiftly and securely.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "7 Best Practice Tips for PostgreSQL Bulk Data Loading",
-        "url": "https://www.enterprisedb.com/blog/7-best-practice-tips-postgresql-bulk-data-loading",
+        "title": "Populating a Database",
+        "url": "https://www.postgresql.org/docs/current/populate.html",
         "type": "article"
       },
       {
-        "title": "Populating a Database",
-        "url": "https://www.postgresql.org/docs/current/populate.html",
+        "title": "7 Best Practice Tips for PostgreSQL Bulk Data Loading",
+        "url": "https://www.enterprisedb.com/blog/7-best-practice-tips-postgresql-bulk-data-loading",
         "type": "article"
       }
     ]
@@ -1800,7 +1965,7 @@
         "type": "article"
       },
       {
-        "title": "How to use table partitioning to scale PostgreSQL",
+        "title": "How to use Table Partitioning to Scale PostgreSQL",
         "url": "https://www.enterprisedb.com/postgres-tutorials/how-use-table-partitioning-scale-postgresql",
         "type": "article"
       }
@@ -2129,12 +2294,12 @@
     "description": "Recursive CTEs are a powerful feature in SQL that allow you to build complex hierarchical queries, retrieve data stored in hierarchical structures or even perform graph traversal. In simple terms, a recursive CTE is a CTE that refers to itself in its own definition, creating a loop that iterates through the data until a termination condition is met.\n\nNote that recursive CTEs can be complex, and it's important to ensure a proper termination condition to avoid infinite recursion. Also, be careful with the use of `UNION ALL` or `UNION`, as it may impact the results and the performance of your query.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "PostgreSQL Recursive Query",
+        "title": "PostgreSQL - Recursive Query",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-recursive-query/",
         "type": "article"
       },
       {
-        "title": "PostgreSQL recursive query explained",
+        "title": "PostgreSQL Recursive Query Explained",
         "url": "https://elvisciotti.medium.com/postgresql-recursive-query-the-simplest-example-explained-f9b85e0a371b",
         "type": "article"
       }
@@ -2161,7 +2326,7 @@
     "description": "`top` is a command-line utility that comes pre-installed on most Unix-based operating systems such as Linux, macOS, and BSD. It provides a dynamic, real-time view of the processes running on a system, displaying valuable information like process ID, user, CPU usage, memory usage, and more.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "How to use the top command in Linux",
+        "title": "How to Use the top Command in Linux",
         "url": "https://phoenixnap.com/kb/top-command-in-linux",
         "type": "article"
       },
@@ -2336,7 +2501,7 @@
         "type": "article"
       },
       {
-        "title": "Awk command in Linux/Unix",
+        "title": "Awk Command in Linux/Unix",
         "url": "https://www.digitalocean.com/community/tutorials/awk-command-linux-unix",
         "type": "article"
       },
@@ -2478,7 +2643,7 @@
   },
   "UZ1vRFRjiQAVu6BygqwEL": {
     "title": "explain.dalibo.com",
-    "description": "[explain.dalibo.com](http://explain.dalibo.com) is a free service that allows you to analyze the execution plan of your queries. It is based on the [explain.depesz.com](explain.depesz.com) service.\n\nLearn more from the following resources:",
+    "description": "[explain.dalibo.com](http://explain.dalibo.com) is a free service that allows you to analyze the execution plan of your queries. It is based on the [explain.depesz.com](http://explain.depesz.com) service.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "explain.dalibo.com",
@@ -2558,8 +2723,14 @@
   },
   "G9DB1ZQjgXaHxJ4Lm6xGx": {
     "title": "SQL Query Patterns / Anti-patterns",
-    "description": "Schema query patterns in PostgreSQL optimize data retrieval and manipulation by using indexes on frequently queried columns to speed up SELECT queries, optimizing joins with indexed foreign keys and appropriate join types, and leveraging table partitioning to limit data scans. Common Table Expressions (CTEs) break down complex queries for better readability and maintainability, while window functions allow advanced analytics within queries. Query caching and prepared statements reduce access times and execution overhead, respectively, and materialized views precompute and store complex query results for faster access. These patterns collectively enhance the efficiency, performance, and reliability of PostgreSQL queries.",
-    "links": []
+    "description": "Schema query patterns in PostgreSQL optimize data retrieval and manipulation by using indexes on frequently queried columns to speed up SELECT queries, optimizing joins with indexed foreign keys and appropriate join types, and leveraging table partitioning to limit data scans. Common Table Expressions (CTEs) break down complex queries for better readability and maintainability, while window functions allow advanced analytics within queries. Query caching and prepared statements reduce access times and execution overhead, respectively, and materialized views precompute and store complex query results for faster access. These patterns collectively enhance the efficiency, performance, and reliability of PostgreSQL queries.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PostgreSQL - Query Patterns",
+        "url": "https://www.postgresql.org/docs/current/functions-matching.html",
+        "type": "article"
+      }
+    ]
   },
   "Dhhyg23dBMyAKCFwZmu71": {
     "title": "Indexes and their Usecases",
@@ -2635,13 +2806,13 @@
     "description": "Generalized Inverted Index (GIN) is a powerful indexing method in PostgreSQL that can be used for complex data types such as arrays, text search, and more. GIN provides better search capabilities for non-traditional data types, while also offering efficient and flexible querying.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Generalized Inverted Indexes",
-        "url": "https://www.cockroachlabs.com/docs/stable/inverted-indexes",
+        "title": "GIN Introduction",
+        "url": "https://www.postgresql.org/docs/current/gin-intro.html",
         "type": "article"
       },
       {
-        "title": "GIN Introduction",
-        "url": "https://www.postgresql.org/docs/current/gin-intro.html",
+        "title": "Generalized Inverted Indexes",
+        "url": "https://www.cockroachlabs.com/docs/stable/inverted-indexes",
         "type": "article"
       }
     ]
@@ -2669,13 +2840,60 @@
   },
   "8H7hJhGKxr1nrjkHv9Xao": {
     "title": "Mailing Lists",
-    "description": "Mailing lists are an essential part of PostgreSQL's development community. They provide a platform for collaboration, discussion, and problem-solving. By participating in these lists, you can contribute to the development of PostgreSQL, share your knowledge with others, and stay informed about the latest updates, improvements, and conferences.\n\nHere are some prominent mailing lists in PostgreSQL's development community:\n\n*   **pgsql-hackers**: This is the primary mailing list for PostgreSQL's core development. It is intended for discussions around new features, patches, performance improvements, and bug fixes. To subscribe, visit [pgsql-hackers Subscription](https://www.postgresql.org/list/pgsql-hackers/).\n    \n*   **pgsql-announce**: This mailing list is for official announcements regarding new PostgreSQL releases, security updates, and other important events. To stay updated, you can subscribe at [pgsql-announce Subscription](https://www.postgresql.org/list/pgsql-announce/).\n    \n*   **pgsql-general**: The pgsql-general mailing list is for general discussions related to PostgreSQL, including usage, administration, configuration, and SQL queries. Subscribe at [pgsql-general Subscription](https://www.postgresql.org/list/pgsql-general/).\n    \n*   **pgsql-novice**: This mailing list is specifically designed for PostgreSQL beginners who need help or advice. If you're new to PostgreSQL, consider joining this community by subscribing at [pgsql-novice Subscription](https://www.postgresql.org/list/pgsql-novice/).\n    \n*   **pgsql-docs**: If you're interested in contributing to PostgreSQL's documentation or want to discuss its content, subscribe to the pgsql-docs mailing list at [pgsql-docs Subscription](https://www.postgresql.org/list/pgsql-docs/).\n    \n*   **Regional and language-specific mailing lists**: PostgreSQL also offers several regional and language-specific mailing lists to help users communicate in their native languages. Find a suitable mailing list on the [PostgreSQL Mailing Lists page](https://www.postgresql.org/list/).\n    \n\nHow to Contribute\n-----------------\n\nTo get started with mailing lists, follow these steps:\n\n*   **Subscribe**: Choose a mailing list that suits your interests and click on the respective subscription link to sign up.\n    \n*   **Introduce yourself**: It's a good idea to send a brief introduction email to the mailing list, describing your skills and interests related to PostgreSQL.\n    \n*   **Read the archives**: Familiarize yourself with previous discussions by reading the mailing list archives. You can find them on the [PostgreSQL Mailing Lists page](https://www.postgresql.org/list/).\n    \n*   **Participate**: Once you're comfortable with the mailing list's topics and etiquette, start participating in ongoing discussions or initiate new threads.\n    \n\nRemember to follow the [mailing list's etiquette](https://www.postgresql.org/community/lists/etiquette/) to ensure a positive and productive experience for all community members.",
-    "links": []
+    "description": "Mailing lists are an essential part of PostgreSQL's development community. They provide a platform for collaboration, discussion, and problem-solving. By participating in these lists, you can contribute to the development of PostgreSQL, share your knowledge with others, and stay informed about the latest updates, improvements, and conferences.\n\nPostgreSQL's development community offers a variety of mailing lists for discussions, announcements, and contributions. Key lists include **pgsql-hackers** for core development and feature discussions, **pgsql-announce** for official announcements, **pgsql-general** for general usage and administration queries, **pgsql-novice** for beginners seeking advice, and **pgsql-docs** for documentation-related contributions. Regional and language-specific lists are also available. To engage, subscribe to a mailing list that matches your interests, introduce yourself, read the archives for context, and participate in discussions. For guidelines, follow the Mailing List Etiquette.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Mailing List Etiquette",
+        "url": "https://www.postgresql.org/community/lists/etiquette/",
+        "type": "article"
+      },
+      {
+        "title": "pgsql-hackers Subscription",
+        "url": "https://www.postgresql.org/list/pgsql-hackers/",
+        "type": "article"
+      },
+      {
+        "title": "pgsql-announce Subscription",
+        "url": "https://www.postgresql.org/list/pgsql-announce/",
+        "type": "article"
+      },
+      {
+        "title": "pgsql-general Subscription",
+        "url": "https://www.postgresql.org/list/pgsql-general/",
+        "type": "article"
+      },
+      {
+        "title": "pgsql-novice Subscription",
+        "url": "https://www.postgresql.org/list/pgsql-novice/",
+        "type": "article"
+      },
+      {
+        "title": "pgsql-docs Subscription",
+        "url": "https://www.postgresql.org/list/pgsql-docs/",
+        "type": "article"
+      },
+      {
+        "title": "PostgreSQL Mailing Lists page",
+        "url": "https://www.postgresql.org/list/",
+        "type": "article"
+      }
+    ]
   },
   "Jy0G0ZnHPOM8hba_PbwuA": {
     "title": "Reviewing Patches",
-    "description": "One of the most valuable contributions to PostgreSQL is reviewing and testing patches submitted by other developers. This process ensures that every proposed change undergoes quality control, helps new contributors get involved and learn about PostgreSQL, and maintains the overall stability and reliability of the project.\n\n### Why is reviewing patches important?\n\n*   Improves code quality by identifying bugs, security issues, and performance problems\n*   Helps maintain consistency and adherence to project standards and best practices\n*   Provides valuable feedback for developers working on new features and enhancements\n*   Helps new contributors learn about PostgreSQL internals and progressively grow their expertise\n\n### How can I participate in reviewing patches?\n\n*   Subscribe to the [pgsql-hackers mailing list](https://www.postgresql.org/list/pgsql-hackers/) where patch discussions and reviews take place.\n*   Browse the [commitfest schedule](https://commitfest.postgresql.org/) to stay informed about upcoming events and deadlines.\n*   Choose a patch from the commitfest that interests you or that you feel confident to review.\n*   Analyze the patch to ensure:\n    *   Correctness: Does the patch work as intended and solve the problem it addresses?\n    *   Performance: Does the patch avoid introducing performance regressions or trade-offs?\n    *   Code quality: Is the code clean, modular, and maintainable? Does it adhere to PostgreSQL coding conventions?\n    *   Documentation: Are the changes properly documented, and do they provide the necessary context for other developers?\n    *   Test coverage: Are there appropriate tests covering the new code or changes?\n*   Provide feedback on the patch, either by replying to the relevant mailing list thread or by commenting directly on the patch submission in the commitfest app. Be constructive and specific in your comments, and offer suggestions for improvement when possible.\n*   Follow up on any discussion around your review and participate in ongoing improvements and iterations of the patch.\n\nRemember, reviewing patches is a collaborative process that relies on the input of many individuals. Your contributions are essential in maintaining the high quality and stability of the PostgreSQL project.",
-    "links": []
+    "description": "Reviewing patches is a vital contribution to PostgreSQL, ensuring quality control, maintaining project standards, and helping new contributors understand the system's internals. By identifying bugs, improving performance, and ensuring proper documentation and test coverage, reviewers uphold PostgreSQL's reliability and stability. To participate, subscribe to the _pgsql-hackers mailing list_, explore patches in the _commitfest schedule_, and provide constructive feedback on correctness, performance, and code quality. Engaging in this collaborative process is an impactful way to support the PostgreSQL community.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "pgsql-hackers Mailing List",
+        "url": "https://www.postgresql.org/list/pgsql-hackers/",
+        "type": "article"
+      },
+      {
+        "title": "Commitfest Schedule",
+        "url": "https://commitfest.postgresql.org/",
+        "type": "article"
+      }
+    ]
   },
   "eQzMU_KyQmHJQ6gzyk0-1": {
     "title": "Writing Patches",

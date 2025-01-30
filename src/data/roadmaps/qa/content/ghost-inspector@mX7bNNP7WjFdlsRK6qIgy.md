@@ -4,5 +4,5 @@ Ghost Inspector is a codeless automated testing tool that allows you to easily c
 
 Visit the following resources to learn more:
 
-- [@official@Ghost Inspector Website](https://ghostinspector.com/)
+- [@official@Ghost Inspector](https://ghostinspector.com/)
 - [@article@What Is Ghost Inspector? Overview & Tour Of Features](https://theqalead.com/test-management/what-is-ghost-inspector-overview-tour-of-features/)

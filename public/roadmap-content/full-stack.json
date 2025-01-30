@@ -135,11 +135,16 @@
   },
   "We2APJpOPTr-VNfowG0kI": {
     "title": "Git",
-    "description": "[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
+    "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Visit Dedicated Git & Github Roadmap",
         "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "Git Documentation",
+        "url": "https://git-scm.com/",
         "type": "article"
       },
       {
@@ -174,9 +179,9 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GitHub Website",
+        "title": "GitHub",
         "url": "https://github.com",
-        "type": "opensource"
+        "type": "article"
       },
       {
         "title": "GitHub Documentation",
@@ -225,7 +230,7 @@
     "description": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Tailwind CSS Website",
+        "title": "Tailwind CSS",
         "url": "https://tailwindcss.com",
         "type": "article"
       },
@@ -248,11 +253,6 @@
         "title": "Should You Use Tailwind CSS?",
         "url": "https://www.youtube.com/watch?v=hdGsFpZ0J2E",
         "type": "video"
-      },
-      {
-        "title": "Official Screencasts",
-        "url": "https://www.youtube.com/c/TailwindLabs/videos",
-        "type": "video"
       }
     ]
   },
@@ -266,12 +266,12 @@
         "type": "article"
       },
       {
-        "title": "React Website",
+        "title": "React",
         "url": "https://react.dev/",
         "type": "article"
       },
       {
-        "title": "Official Getting Started",
+        "title": "Getting Started with React",
         "url": "https://react.dev/learn/tutorial-tic-tac-toe",
         "type": "article"
       },
@@ -384,7 +384,7 @@
     "description": "JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWTs are designed to be compact, safe to use within URLs, and ideal for SSO contexts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "jwt.io Website",
+        "title": "jwt.io",
         "url": "https://jwt.io/",
         "type": "article"
       },
@@ -422,7 +422,7 @@
   },
   "Onfd7Sl8LG2sjh2aQY7gb": {
     "title": "Redis",
-    "description": "Redis is an open source (BSD licensed), in-memory **data structure store** used as a database, cache, message broker, and streaming engine. Redis provides data structures such as [strings](https://redis.io/topics/data-types-intro#strings), [hashes](https://redis.io/topics/data-types-intro#hashes), [lists](https://redis.io/topics/data-types-intro#lists), [sets](https://redis.io/topics/data-types-intro#sets), [sorted sets](https://redis.io/topics/data-types-intro#sorted-sets) with range queries, [bitmaps](https://redis.io/topics/data-types-intro#bitmaps), [hyperloglogs](https://redis.io/topics/data-types-intro#hyperloglogs), [geospatial indexes](https://redis.io/commands/geoadd), and [streams](https://redis.io/topics/streams-intro). Redis has built-in [replication](https://redis.io/topics/replication), [Lua scripting](https://redis.io/commands/eval), [LRU eviction](https://redis.io/topics/lru-cache), [transactions](https://redis.io/topics/transactions), and different levels of [on-disk persistence](https://redis.io/topics/persistence), and provides high availability via [Redis Sentinel](https://redis.io/topics/sentinel) and automatic partitioning with [Redis Cluster](https://redis.io/topics/cluster-tutorial).\n\nVisit the following resources to learn more:",
+    "description": "Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Visit Dedicated Redis Roadmap",
@@ -437,6 +437,11 @@
       {
         "title": "Redis Documentation",
         "url": "https://redis.io/docs/latest/",
+        "type": "article"
+      },
+      {
+        "title": "Redis University",
+        "url": "https://university.redis.io/academy",
         "type": "article"
       },
       {
@@ -464,6 +469,11 @@
         "title": "Coursera - Unix Courses",
         "url": "https://www.coursera.org/courses?query=unix",
         "type": "course"
+      },
+      {
+        "title": "Visit Dedicated Linux Roadmap",
+        "url": "https://roadmap.sh/linux",
+        "type": "article"
       },
       {
         "title": "Linux Basics",
@@ -532,11 +542,6 @@
         "type": "video"
       },
       {
-        "title": "Sam Meech-Ward's AWS Videos",
-        "url": "https://www.youtube.com/playlist?list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
-        "type": "video"
-      },
-      {
         "title": "DNS with AWS Route 53",
         "url": "https://www.youtube.com/watch?v=yRIY7BJohfo",
         "type": "video"
@@ -545,18 +550,18 @@
         "title": "Upload Images to S3 from Node Back End",
         "url": "https://www.youtube.com/watch?v=NZElg91l_ms",
         "type": "video"
-      },
-      {
-        "title": "S3 Bucket Hosting a Static Website",
-        "url": "https://www.youtube.com/watch?v=RoY3ekCCxKc&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
-        "type": "video"
       }
     ]
   },
   "6oBIxYj8WPcUHidQ99tus": {
     "title": "EC2",
-    "description": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the form of virtual servers, known as instances. With EC2, you can quickly scale your infrastructure up or down as your computing requirements change. This service effectively reduces the time required to obtain and boot new server instances, allowing you to easily adjust capacity according to the needs of your application.",
+    "description": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the form of virtual servers, known as instances. With EC2, you can quickly scale your infrastructure up or down as your computing requirements change. This service effectively reduces the time required to obtain and boot new server instances, allowing you to easily adjust capacity according to the needs of your application.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Amazon AWS EC2",
+        "url": "https://aws.amazon.com/ec2/",
+        "type": "article"
+      },
       {
         "title": "Up and Running with AWS EC2",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2",
@@ -581,8 +586,13 @@
   },
   "QtL-bLKtWIdH00K6k_PdC": {
     "title": "VPC",
-    "description": "VPC stands for **Virtual Private Cloud** and is an essential service provided by AWS that allows you to create a private, isolated section within the AWS cloud, where you can define your own virtual network. It offers a more secure and controlled environment, enabling you to easily launch and manage your resources within your personal network.",
+    "description": "VPC stands for **Virtual Private Cloud** and is an essential service provided by AWS that allows you to create a private, isolated section within the AWS cloud, where you can define your own virtual network. It offers a more secure and controlled environment, enabling you to easily launch and manage your resources within your personal network.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Amazon AWS VPC",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "type": "article"
+      },
       {
         "title": "Up and Running with AWS VPC",
         "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc",
@@ -602,8 +612,13 @@
   },
   "5zyYpu9cyuTFwQCjTbHpS": {
     "title": "Route53",
-    "description": "[Route53](https://aws.amazon.com/route53/) is AWS's Domain Name System (DNS) service that plays a critical role in connecting user requests to your web application or other resources within your infrastructure. With Route53, you can easily manage domains, redirect traffic, and configure domain-related settings. It has several advantages, including high availability, low latency, and integration with other AWS resources.",
+    "description": "Route53 is AWS's Domain Name System (DNS) service that plays a critical role in connecting user requests to your web application or other resources within your infrastructure. With Route53, you can easily manage domains, redirect traffic, and configure domain-related settings. It has several advantages, including high availability, low latency, and integration with other AWS resources.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Route53",
+        "url": "https://aws.amazon.com/route53/",
+        "type": "article"
+      },
       {
         "title": "Amazon Route 53",
         "url": "https://www.youtube.com/watch?v=RGWgfhZByAI",
@@ -623,8 +638,13 @@
   },
   "B-cphY7Imnv6JBMujVIF7": {
     "title": "SES",
-    "description": "Amazon SES (Simple Email Service) is a scalable, flexible, and cost-effective cloud-based email service that is specifically designed for developers, marketers, and businesses to send and receive marketing, transactional, and notification emails. SES is useful, especially when you need to send a large volume of emails, as it offers high deliverability, reliability, and ease of use.",
+    "description": "Amazon SES (Simple Email Service) is a scalable, flexible, and cost-effective cloud-based email service that is specifically designed for developers, marketers, and businesses to send and receive marketing, transactional, and notification emails. SES is useful, especially when you need to send a large volume of emails, as it offers high deliverability, reliability, and ease of use.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Amazon AWS SES",
+        "url": "https://aws.amazon.com/ses/",
+        "type": "article"
+      },
       {
         "title": "Contact Form Submission With AWS SES",
         "url": "https://www.youtube.com/watch?v=HiHflLTqiwU",
@@ -634,8 +654,13 @@
   },
   "n2Xp_ijJ2OS8xhE7xMWxk": {
     "title": "S3",
-    "description": "S3 is a service that allows you to store files in the cloud. It's a simple service that you can use to store files and serve them to your users.",
+    "description": "S3 is a service that allows you to store files in the cloud. It's a simple service that you can use to store files and serve them to your users.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Amazon AWS S3",
+        "url": "https://aws.amazon.com/s3/",
+        "type": "article"
+      },
       {
         "title": "Explore top posts about AWS S3",
         "url": "https://app.daily.dev/tags/aws-s3?ref=roadmapsh",
@@ -655,15 +680,15 @@
   },
   "y1SFX7uvWaCy4OYBnECLu": {
     "title": "Monit",
-    "description": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.\n\nSome of the key features of Monit are:\n\n*   **Automatic Recovery:** Monit can automatically restart a service or process if it fails, making your application more resistant to unexpected issues.\n*   **Alert Notifications:** Monit can send email notifications when a problem is detected or when a certain condition is met, keeping you informed about the health of your application.\n*   **Event Logging:** All events detected by Monit are stored in a log for easy troubleshooting and analysis.\n*   **Resource Limit Monitoring:** Monit can monitor the resource utilization (CPU, memory, network, etc.) of a process or service and take action if a specific limit is exceeded.\n*   **Flexible Configuration:** Monit uses a simple, human-readable configuration syntax that allows you to tailor its behavior to your needs.\n*   **Web Interface:** Monit provides a built-in web interface for remotely monitoring your application's status and manage services.\n\nHave a look at the following resources to learn more about Monit:",
+    "description": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Monit Website",
+        "title": "Monit",
         "url": "https://mmonit.com/monit/",
         "type": "article"
       },
       {
-        "title": "Monit documentation",
+        "title": "Monit Documentation",
         "url": "https://mmonit.com/monit/documentation/",
         "type": "article"
       },
@@ -728,16 +753,16 @@
   },
   "863KMXcFJzInvTp_-Ldmz": {
     "title": "GitHub Actions",
-    "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.",
+    "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Github Actions",
-        "url": "https://github.com/features/actions",
-        "type": "opensource"
-      },
       {
         "title": "Visit Dedicated Git & Github Roadmap",
         "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "Github Actions",
+        "url": "https://github.com/features/actions",
         "type": "article"
       },
       {
@@ -772,12 +797,12 @@
     "description": "Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Ansible Website",
+        "title": "Ansible",
         "url": "https://www.ansible.com/",
         "type": "article"
       },
       {
-        "title": "Official Documentation",
+        "title": "Ansible Documentation",
         "url": "https://docs.ansible.com/",
         "type": "article"
       },
@@ -823,33 +848,13 @@
         "type": "article"
       },
       {
-        "title": "Terraform Tutorials",
-        "url": "https://learn.hashicorp.com/terraform",
-        "type": "article"
-      },
-      {
-        "title": "Terraform CDK Website",
+        "title": "Terraform CDK",
         "url": "https://www.terraform.io/cdktf",
         "type": "article"
       },
       {
-        "title": "What is the CDKTF?",
-        "url": "https://www.terraform.io/cdktf/concepts/cdktf-architecture",
-        "type": "article"
-      },
-      {
-        "title": "CDKTF Getting Started Guide",
-        "url": "https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf",
-        "type": "article"
-      },
-      {
-        "title": "CDKTF Examples",
-        "url": "https://www.terraform.io/cdktf/examples",
-        "type": "article"
-      },
-      {
-        "title": "How to Scale Your Terraform Infrastructure",
-        "url": "https://thenewstack.io/how-to-scale-your-terraform-infrastructure/",
+        "title": "Terraform Tutorials",
+        "url": "https://learn.hashicorp.com/terraform",
         "type": "article"
       },
       {

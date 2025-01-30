@@ -5,4 +5,4 @@ Local values can be understood as a name assigned to any expression to use it mu
 Learn more from the following resources:
 
 - [@official@Local Values](https://developer.hashicorp.com/terraform/language/values/locals)
-- [@Article@Terraform Locals](https://spacelift.io/blog/terraform-locals)
+- [@article@Terraform Locals](https://spacelift.io/blog/terraform-locals)

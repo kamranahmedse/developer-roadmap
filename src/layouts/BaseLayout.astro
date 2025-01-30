@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
 import { Toaster } from '../components/Toast';
-import { PageSponsor } from '../components/PageSponsor';
+import { PageSponsors } from '../components/PageSponsors/PageSponsors';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
@@ -70,7 +70,6 @@ const gaPageIdentifier = Astro.url.pathname
     <meta name='commit' content={commitUrl} />
     <title>{title}</title>
     <meta name='description' content={description} />
-    <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
     {
       redirectUrl && (
@@ -156,6 +155,8 @@ const gaPageIdentifier = Astro.url.pathname
         />
       )
     }
+
+    <Analytics />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -166,7 +167,6 @@ const gaPageIdentifier = Astro.url.pathname
 
     <slot name='page-footer'>
       <slot name='changelog-banner'>
-        <ChangelogBanner />
       </slot>
       <slot name='open-source-banner'>
         <OpenSourceBanner />
@@ -182,14 +182,14 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
-    <PageSponsor
+
+    <PageSponsors
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
     />
 
     <slot name='after-footer' />
 
-    <Analytics />
     <PageVisit
       resourceId={resourceId}
       resourceType={resourceType}

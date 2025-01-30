@@ -7,7 +7,9 @@ seo:
   title: 'Frontend vs. Backend in AI Development'
   description: 'Learn the key differences between frontend and backend in AI development, from roles to tools, and how they impact project success.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-vs-backend-in-ai-43wtm.jpg'
-isNew: true
+relatedTitle: "Other Guides"
+relatedGuidesId: frontend
+isNew: false
 type: 'textual'
 date: 2024-10-17
 sitemap:

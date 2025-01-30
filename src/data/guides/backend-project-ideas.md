@@ -7,6 +7,8 @@ seo:
   title: '20 Backend Project Ideas to take you from Beginner to Pro'
   description: 'Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-project-ideas-zxutw.jpg'
+relatedTitle: "Other Guides"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-05-09
@@ -27,7 +29,7 @@ That said, having a project portfolio, even as backend developers, it’s very i
 
 As an added bonus, the experience you get out of the entire process of building the apps for your portfolio will help you improve your coding skills.
 
-Let’s take a look at 20 of the best backend projects you can work on to improve both your project portfolio and to [learn backend development](https://roadmap.sh/backend).
+Let’s take a look at 20 of the best backend projects you can work on to improve both your project portfolio and to learn [backend development](https://roadmap.sh/backend).
 
 Keep in mind that these project ideas are organized from easiest to hardest to complete, and the entire list should take you at least a year to complete, if you’re not rushing the process.
 
@@ -53,7 +55,7 @@ This is a RESTful API that would power a personal blog. This implies that you’
 
 And with those endpoints you’ve covered the basic CRUD operations (**C**reate, **R**ead, **U**pdate and **D**elete).
 
-As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main backend framework if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
+As a recommendation for techstack, you could use [Fastify](https://fastify.dev/) as the main [backend framework](https://roadmap.sh/backend/frameworks) if you’re going with Node, or perhaps [Django](https://www.djangoproject.com/) for Python or even [Ruby on Rails](https://rubyonrails.org/) or [Sinatra](https://sinatrarb.com/) for Ruby. As for your database, you could use [MongoDB](https://www.mongodb.com/) if you want to try NoSQL or [MySQL](https://www.mysql.com/) if you’re looking to get started with relational databases first.
 
 ## 2. To-Do List API
 
@@ -106,10 +108,10 @@ For the last of our “easy” backend projects, let’s cover one more API, an 
 - Sign up as a new user.
 - Generate and validate JWTs for handling authentication and user session.
 - List and filter your past expenses. You can add the following filters:
-    - Past week.
-    - Last month.
-    - Last 3 months.
-    - Custom (to specify a start and end date of your choosing).
+  - Past week.
+  - Last month.
+  - Last 3 months.
+  - Custom (to specify a start and end date of your choosing).
 - Add new expenses.
 - Remove existing expenses.
 - Update existing expenses.

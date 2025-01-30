@@ -4,7 +4,6 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
 - [@official@GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [@video@What is GitHub Actions?](https://www.youtube.com/watch?v=URmeTqglS58)
 - [@video@Automate your Workflow with GitHub Actions](https://www.youtube.com/watch?v=nyKZTKQS_EQ)

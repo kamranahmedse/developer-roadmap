@@ -1,6 +1,6 @@
 # Big O Notation
 
-Big O Notation describes, how well an algorithm scales with the input size. It is used to describe the worst case scenario of an algorithm. It is used to compare algorithms and to determine which algorithm is better.
+The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.
 
 Visit the following resources to learn more:
 
@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@video@Big O Notations](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [@article@moviesCS 61B Lecture 19: Asymptotic Analysis](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
 - [@video@Big Oh Notation (and Omega and Theta)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3)
+- [@article@Big O Notation | Brilliant Math & Science Wiki](https://brilliant.org/wiki/big-o-notation/)

@@ -4,4 +4,4 @@ The PMI certification (Project Management Institute) is an internationally recog
 
 Visit the following resources to learn more:
 
-- [@official@Project Managment Institute](https://www.pmi.org/)
+- [@official@Project Management Institute](https://www.pmi.org/)

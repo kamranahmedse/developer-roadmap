@@ -1,0 +1,3 @@
+1. **One-to-Many**: One record in a table relates to multiple records in another. Handled via foreign keys. Example: A `user` has many `posts`.  
+2. **Many-to-Many**: Requires a join table to link records from two tables. Example: `students` and `courses` with an intermediary `enrollments` table.  
+3. **Primary/Foreign Keys**: Establish links between tables for querying and ensuring data consistency.

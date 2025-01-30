@@ -1,4 +1,4 @@
-![Reverse Procy Explained](https://assets.roadmap.sh/guest/reverse-proxy-explained-t12iw.png)
+![Reverse Proxy Explained](https://assets.roadmap.sh/guest/reverse-proxy-explained-t12iw.png)
 
 A reverse proxy is a piece of software that sits between clients and backend servers, forwarding client requests to the appropriate server and returning the server's response to the client. It helps with load balancing, security, caching, and handling SSL termination.
 

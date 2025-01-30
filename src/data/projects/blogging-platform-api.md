@@ -2,7 +2,7 @@
 title: 'Blogging Platform API'
 description: 'Build a RESTful API for a personal blogging platform'
 isNew: false
-sort: 7
+sort: 800
 difficulty: 'beginner'
 nature: 'API'
 skills:
@@ -18,6 +18,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

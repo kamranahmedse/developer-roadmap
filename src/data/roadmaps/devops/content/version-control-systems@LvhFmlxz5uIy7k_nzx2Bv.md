@@ -4,7 +4,7 @@ Version control systems (VCS) are tools that track changes to code and files ove
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@Git](https://git-scm.com/)
 - [@official@Mecurial](https://www.mercurial-scm.org/)
 - [@official@Subversion](https://subversion.apache.org/)

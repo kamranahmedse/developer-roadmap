@@ -176,7 +176,7 @@
         "type": "article"
       },
       {
-        "title": "Cookes - Mozilla",
+        "title": "Cookies - Mozilla",
         "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies",
         "type": "article"
       }
@@ -709,7 +709,7 @@
     "links": [
       {
         "title": "API Authorization Methods",
-        "url": "https://konghq.com/blog/engineering/common-api-authentication-methods",
+        "url": "https://www.pingidentity.com/en/resources/identity-fundamentals/authorization/authorization-methods.html",
         "type": "article"
       }
     ]
@@ -1540,9 +1540,35 @@
       }
     ]
   },
-  "grpc-apis@1DrqtOwxCuFtWQXQ6ZALp.md": {
+  "1DrqtOwxCuFtWQXQ6ZALp": {
     "title": "gRPC APIs",
-    "description": "",
-    "links": []
+    "description": "gRPC is a platform agnostic serialization protocol that is used to communicate between services. Designed by Google in 2015, it is a modern alternative to REST APIs. It is a binary protocol that uses HTTP/2 as a transport layer. It is a high performance, open source, general-purpose RPC framework that puts mobile and HTTP/2 first. It's main use case is for communication between two different languages within the same application. You can use Python to communicate with Go, or Java to communicate with C#.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "gRPC Website",
+        "url": "https://grpc.io/",
+        "type": "article"
+      },
+      {
+        "title": "gRPC Introduction",
+        "url": "https://grpc.io/docs/what-is-grpc/introduction/",
+        "type": "article"
+      },
+      {
+        "title": "gRPC Core Concepts",
+        "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about gRPC",
+        "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Stephane Maarek - gRPC Introduction",
+        "url": "https://youtu.be/XRXTsQwyZSU",
+        "type": "video"
+      }
+    ]
   }
 }

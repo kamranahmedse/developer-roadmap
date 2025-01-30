@@ -4,23 +4,23 @@ jsonUrl: '/jsons/roadmaps/frontend.json'
 pdfUrl: '/pdfs/roadmaps/frontend.pdf'
 order: 1
 briefTitle: 'Frontend'
-briefDescription: 'Step by step guide to becoming a frontend developer in 2024'
+briefDescription: 'Step by step guide to becoming a frontend developer in 2025'
 title: 'Frontend Developer'
-description: 'Step by step guide to becoming a modern frontend developer in 2024'
+description: 'Step by step guide to becoming a modern frontend developer in 2025'
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 question:
-  title: 'What is Frontend Development?'
+  title: 'What is a Frontend Developer?'
   description: |
-    Frontend development is the development of visual and interactive elements of a website that users interact with directly. It's a combination of HTML, CSS, and JavaScript, where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behavior and interactivity.
+    A frontend developer is a professional who uses HTML, CSS, and JavaScript to design and build the visual and interactive elements of websites and applications that users engage with directly. They ensure the interface is responsive, accessible, and visually appealing. Every feature you see and interact with on a website (like buttons, menus, and animations) is created by a frontend developer.
 
-    ## What does a Frontend Developer do?
+    ## What is the role of a Frontend Developer?
 
     While this is not a complete frontend developer job description, the following can be considered as a great introduction to the role of a frontend developer: you'll be responsible for creating the user interface of a website to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.
 
     ## Which languages are used for Frontend Development?
 
-    The best part about the frontend development role is that there aren’t that many options to pick from when it comes to technologies (unlike with backend development).
+    The easy part about the frontend development role is that there aren’t that many options to choose from when it comes to [frontend languages](https://roadmap.sh/frontend/languages) and [technologies](https://roadmap.sh/frontend/technologies) (unlike with backend development).
 
     As a frontend developer, you’ll be working with the following technologies:
 

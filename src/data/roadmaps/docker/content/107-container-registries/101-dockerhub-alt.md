@@ -1,6 +1,6 @@
 # DockerHub Alternatives
 
-Container images can be stored in many different registries, not just Dockerhub. Most major cloud platforms now provide container registries such as "Artifact Registry" on Google Cloud Platform, Elastic Container Registry on AWS and Azure Container Registry on Microsoft Azure. GitHub also provides it's own resistry which is useful when container builds are included in your GitHub Actions workflow.
+Container images can be stored in many different registries, not just Dockerhub. Most major cloud platforms now provide container registries such as "Artifact Registry" on Google Cloud Platform, Elastic Container Registry on AWS and Azure Container Registry on Microsoft Azure. GitHub also provides it's own registry which is useful when container builds are included in your GitHub Actions workflow.
 
 Visit the following resources to learn more:
 

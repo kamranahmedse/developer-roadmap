@@ -7,7 +7,9 @@ seo:
   title: 'DevOps engineer vs Full stack developer: Which is best?'
   description: 'DevOps engineer vs Full stack developer: Compare the roles, required skills, and future prospects to make an informed career choice.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-vs-full-stack-developer-jccsq.jpg'
-isNew: true
+relatedGuidesTitle: 'Other Guides'
+relatedGuidesId: devops
+isNew: false
 type: 'textual'
 date: 2024-10-17
 sitemap:
@@ -38,7 +40,7 @@ The key differences between DevOps engineers and full stack developers are summa
 | Responsible for the smooth flow of code changes from development to production. | Focuses on end-to-end application development (both frontend and backend) |
 | Uses monitoring tools to track the performance of deployed software and also identify issues and bottlenecks in the deployment process. | Writes unit, integration, and end-to-end tests for the application code and fixes bugs related to the code. |
 | Focuses on automating processes and ensuring a software application runs reliably and flawlessly. | Handles the development of web applications or a software program (frontend and backend) |
-| Familiar with tools that aid task automation, code testing and deployments. | Has expertise in various frontend and backend programming languages |
+| Familiar with [tools that aid task automation](https://roadmap.sh/devops/automation-tools), code testing and deployments. | Has expertise in various frontend and backend programming languages |
 | Focuses more on the infrastructure management side of the whole development life-cycle, which includes managing networks and servers. | Could either focus on the frontend and backend web architectures. |
 | Has an in-depth understanding of operations to ensure optimal software delivery. | Possess a basic knowledge of operations. |
 
@@ -92,7 +94,7 @@ DevOps helps to bridge the gap between development teams and operations teams. D
 
 DevOps has some core principles that influence the effectiveness of development and operations. Some of these DevOps principles include:
 
-- Automation of the software development lifecycle
+- [Automation](https://roadmap.sh/devops/automation) of the software development lifecycle
 - Collaboration
 
 ### Automation of the software development lifecycle
@@ -151,7 +153,7 @@ DevOps engineers should have solid cloud computing skills. Recently, many applic
 
 The frontend of an application includes everything the user can see and interact with, i.e., the user interface. The backend consists of the things the user doesn’t see. These include the server-side and systems supporting the business logic.
 
-Full stack coders also use DevOps tools. Depending on the project, a full stack developer may use DevOps technologies like GitHub and mongoDB to create software applications. 
+Full stack coders also use [DevOps tools](https://roadmap.sh/devops/tools). Depending on the project, a full stack developer may use DevOps technologies like GitHub and mongoDB to create software applications. 
 
 Let's take a look at frontend and backend development in greater detail.
 

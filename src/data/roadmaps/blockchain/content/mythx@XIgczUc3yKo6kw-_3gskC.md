@@ -4,5 +4,5 @@ MythX is a comprehensive smart contract security analysis tools developed by Con
 
 Visit the following resources to learn more:
 
-- [@official@MythX Official Site](https://mythx.io/)
-- [@article@MythX Documentation](https://docs.mythx.io/)
+- [@official@MythX](https://mythx.io/)
+- [@official@MythX Documentation](https://docs.mythx.io/)

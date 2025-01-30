@@ -1,11 +1,9 @@
 ---
-import { Menu } from 'lucide-react';
+import { AccountStreak } from '../AccountStreak/AccountStreak';
 import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
-import { AccountDropdown } from './AccountDropdown';
-import NewIndicator from './NewIndicator.astro';
-import { AccountStreak } from '../AccountStreak/AccountStreak';
 import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
+import { AccountDropdown } from './AccountDropdown';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -48,7 +46,7 @@ import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu'
         </a>
         <a
           href='/changelog'
-          class='group relative text-blue-300 hover:text-white hidden md:block ml-0.5'
+          class='group relative ml-0.5 hidden text-blue-300 hover:text-white md:block'
         >
           Changelog
 

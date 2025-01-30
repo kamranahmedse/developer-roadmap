@@ -12,5 +12,6 @@ Visit the following resources to learn more:
 - [@video@Big O Notation — Calculating Time Complexity](https://www.youtube.com/watch?v=Z0bH0cMY0E8)
 - [@video@Big O Notation in 5 Minutes](https://www.youtube.com/watch?v=__vX2sjlpXU)
 - [@video@Asymptotic Notation - CS50](https://www.youtube.com/watch?v=iOq5kSKqeR4)
-- [@article@CS 61B Lecture 19: Asymptotic Analysis](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
+- [@video@CS 61B Lecture 19: Asymptotic Analysis](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
 - [@article@Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
+- [@article@Big O Notation | Brilliant Math & Science Wiki](https://brilliant.org/wiki/big-o-notation/)

@@ -1,9 +1,9 @@
 ---
 order: 4
 briefTitle: 'Backend'
-briefDescription: 'Test, rate and improve your Backend knowledge with these questions.'
+briefDescription: 'Test, Rate and Improve your Backend knowledge with these questions.'
 title: '50 Popular Backend Developer Interview Questions and Answers'
-description: 'Test, rate and improve your Backend knowledge with these questions.'
+description: 'Test, Rate and Improve your Backend knowledge with these questions.'
 authorId: 'fernando'
 isNew: false
 date: 2024-05-24
@@ -16,6 +16,8 @@ seo:
     - 'backend interview questions'
     - 'backend interview'
     - 'backend test'
+relatedTitle: "Other Guides"
+relatedGuidesId: "backend"
 sitemap:
   priority: 1
   changefreq: 'monthly'
@@ -80,7 +82,7 @@ questions:
     answer: maintainable-code.md
     topics:
       - 'Beginner'
-  - question: Describe how you would implement a full-text search in a database
+  - question: Describe how you would implement a full-text search in a database.
     answer: fulltext-search.md
     topics:
       - 'Intermediate'
@@ -120,11 +122,11 @@ questions:
     answer: gdpr-compliance.md
     topics:
       - 'Intermediate'
-  - question: Explain how you would deal with long-running processes in web requests
+  - question: Explain how you would deal with long-running processes in web requests.
     answer: long-running.md
     topics:
       - 'Intermediate'
-  - question: Discuss the implementation of rate limiting to protect APIs from abuse
+  - question: Discuss the implementation of rate limiting to protect APIs from abuse.
     answer: rate-limiting.md
     topics:
       - 'Intermediate'
@@ -140,7 +142,7 @@ questions:
     answer: api-dependencies.md
     topics:
       - 'Intermediate'
-  - question: Describe the concept of eventual consistency and its implications in backend systems
+  - question: Describe the concept of eventual consistency and its implications in backend systems.
     answer: eventual-consistency.md
     topics:
       - 'Intermediate'
@@ -184,7 +186,7 @@ questions:
     answer: realtime-data-sync.md
     topics:
       - 'Advanced'
-  - question: Discuss the benefits and drawbacks of microservice architectures in backend systems
+  - question: Discuss the benefits and drawbacks of microservice architectures in backend systems.
     answer: benefits-drawbacks-microservices.md
     topics:
       - 'Advanced'
@@ -192,7 +194,7 @@ questions:
     answer: load-testing-api.md
     topics:
       - 'Advanced'
-  - question: Describe how you would implement a server-side cache eviction strategy
+  - question: Describe how you would implement a server-side cache eviction strategy.
     answer: cache-eviction.md
     topics:
       - 'Advanced'
@@ -216,7 +218,7 @@ questions:
     answer: anomaly-detection.md
     topics:
       - 'Advanced'
-  - question: Describe the process of creating a global, high-availability data storage solution for a multinational application
+  - question: Describe the process of creating a global, high-availability data storage solution for a multinational application.
     answer: high-available-storage.md
     topics:
       - 'Advanced'
@@ -228,17 +230,16 @@ Getting ready for a software developer interview is never easy, especially if yo
 
 In this article, we’ll go over 50 popular backend interview questions ordered by experience level.
 
-For each question, we’ll provide some explanations, but feel free to further research each topic in detail, or go to the [Backend Roadmap](/backend) if you’re looking for a place to get started in your learning journey.
+For each question, we’ll provide some explanations, but feel free to further research each topic in detail, or go to the [Backend Roadmap](https://roadmap.sh/backend) if you’re looking for a place to get started in your learning journey.
 
 ## Preparing for your Backend interview
 
 Before we get started, it’s important to remember the following points when getting ready for your backend technical interview:
 
 - Cover the basics of backend development. If you’re going for a web dev role, make sure you understand how client-server communication works. If you’re going for a dev tool development, understand the best practices around CLI development, etc.
-- Practice coding, either by developing [your own mini-projects](/backend/developer-tools) or by using sites such as [LeetCode](https://leetcode.com), [HackerRank](https://hackerrank.com), and others.
+- Practice coding, either by completing [projects](https://roadmap.sh/backend/projects) or by using sites such as [LeetCode](https://leetcode.com), [HackerRank](https://hackerrank.com), and others.
 - Consider reading up on software architecture; even if your role won’t be that of an architect, you’ll show understanding on a higher level by being able to discuss these topics.
-- Make sure you have, at least, a basic understanding of most of the foundational layer of tools and practices for your role, such as version management (i.e. using Git), testing (as in unit testing at least), DevOps (including CI/CD pipeline, etc.), and anything else related to your role and the company.
+- Make sure you have, at least, a basic understanding of most of the foundational layer of tools and practices for your role, such as version management (i.e. using Git), testing (as in unit testing at least), [DevOps](https://roadmap.sh/devops) (including CI/CD pipelines, etc.), and anything else related to your role and the company.
 - On a more general note, remember to read up on the company to be able to show interest and understanding of their business/product and also come prepared with a couple of questions of your own, showing you care about the role and the company.
 
 With that said, let’s now focus on the list of backend interview questions that you may be asked when applying for a backend development role!
-

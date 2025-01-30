@@ -14,7 +14,7 @@ dimensions:
   height: 2309.7
 schema:
   headline: 'Design System Roadmap'
-  description: 'Learn how to create a Design System with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to create a Design System with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/design-system.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-19'

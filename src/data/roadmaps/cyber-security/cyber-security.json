@@ -10668,7 +10668,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Understand the concept of Infrastructure as Cloud",
+        "label": "Understand the concept of Infrastructure as Code",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

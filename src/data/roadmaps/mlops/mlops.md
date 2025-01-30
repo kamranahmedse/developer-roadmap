@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/mlops.pdf'
 renderer: 'editor'
 order: 18
 briefTitle: 'MLOps'
-briefDescription: 'Step by step guide to learn MLOps in 2024'
+briefDescription: 'Step by step guide to learn MLOps in 2025'
 title: 'MLOps Roadmap'
-description: 'Step by step guide to learn MLOps in 2024'
+description: 'Step by step guide to learn MLOps in 2025'
 hasTopics: true
 isNew: false
 dimensions:

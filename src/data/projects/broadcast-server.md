@@ -2,7 +2,7 @@
 title: 'Broadcast Server'
 description: 'Build a server that can broadcast messages to connected clients.'
 isNew: false
-sort: 12
+sort: 1500
 difficulty: 'intermediate'
 nature: 'CLI'
 skills:
@@ -18,6 +18,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

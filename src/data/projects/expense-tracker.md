@@ -2,7 +2,7 @@
 title: 'Expense Tracker'
 description: 'Build a simple expense tracker to manage your finances.'
 isNew: false
-sort: 3
+sort: 300
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -18,6 +18,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'
@@ -62,7 +63,7 @@ $ expense-tracker list
 $ expense-tracker summary
 # Total expenses: $30
 
-$ expense-tracker delete --id 1
+$ expense-tracker delete --id 2
 # Expense deleted successfully
 
 $ expense-tracker summary

@@ -4,5 +4,5 @@ In the realms of data analysis, data cleaning is a crucial preliminary process, 
 
 Learn more from the following resources:
 
-- [@official@Pandas Website](https://pandas.pydata.org/)
+- [@official@Pandas](https://pandas.pydata.org/)
 - [@video@NumPy vs Pandas](https://www.youtube.com/watch?v=KHoEbRH46Zk)

@@ -2,7 +2,7 @@
 title: 'E-Commerce API'
 description: 'E-Commerce platform with cart and payment gateway integration.'
 isNew: false
-sort: 13
+sort: 1600
 difficulty: 'intermediate'
 nature: 'API'
 skills:
@@ -17,6 +17,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

@@ -4,7 +4,8 @@ C# (pronounced C-sharp) is a modern, object-oriented programming language develo
 
 Visit the following resources to learn more:
 
+- [@official@C# Tour](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
 - [@course@C# Learning Path](https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?WT.mc_id=dotnet-35129-website)
 - [@article@C# on W3 schools](https://www.w3schools.com/cs/index.php)
 - [@video@Learn C# Programming – Full Course with Mini-Projects](https://www.youtube.com/watch?v=YrtFtdTTfv0)
-- [@feed@Explore top posts about C#](https://app.daily.dev/tags/c#?ref=roadmapsh)
+- [@feed@Explore top posts about C#](https://app.daily.dev/tags/csharp?ref=roadmapsh)

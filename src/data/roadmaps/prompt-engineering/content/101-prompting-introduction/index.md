@@ -24,4 +24,5 @@ Hello, how are you?
 
 But it's one of the best practices to be clear and use delimiters to separate the content in prompt from the instructions. You will learn more about it in the "Best Practices" nodes of the roadmap.
 
-- [@article@Basic Prompting](https://learnprompting.org/docs/basics/intro)
+- [@article@Basic Prompting - Learn Prompting](https://learnprompting.org/docs/basics/intro)
+- [@guides@Basics of Prompting - Prompt Engineering Guide](https://www.promptingguide.ai/introduction/basics)

@@ -4,5 +4,6 @@ In this section, we will discuss deploying PostgreSQL in the cloud. Deploying yo
 
 Learn more from the following resources:
 
+- [@article@5 Ways to Host PostgreSQL Databases](https://www.prisma.io/dataguide/postgresql/5-ways-to-host-postgresql)
 - [@article@Postgres On Kubernetes](https://cloudnative-pg.io/)
 - [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

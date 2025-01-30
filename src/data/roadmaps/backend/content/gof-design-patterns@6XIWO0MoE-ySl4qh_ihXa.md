@@ -5,4 +5,5 @@ The Gang of Four (GoF) Design Patterns are a collection of 23 foundational softw
 Learn more from the following links:
 
 - [@article@Gangs of Four (GoF) Design Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns)
+- [@article@Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
 - [@video@Tutorial - Builder Pattern (Gang of Four Design Patterns Series)](https://www.youtube.com/watch?v=_sa2WlAFWQos)

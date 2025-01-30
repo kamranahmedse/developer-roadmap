@@ -171,6 +171,11 @@
     "description": "HTML (Hypertext Markup Language) is the standard markup language used to create web pages and web applications. It provides a structure for content on the World Wide Web, using a system of elements and attributes to define the layout and content of a document. HTML elements are represented by tags, which browsers interpret to render the visual and auditory elements of a web page. The language has evolved through several versions, with HTML5 being the current standard, introducing semantic elements, improved multimedia support, and enhanced form controls. HTML works in conjunction with CSS for styling and JavaScript for interactivity, forming the foundation of modern web development.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Responsive Web Design Certification - Co-Learn HTML & CSS with guided projects",
+        "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+        "type": "course"
+      },
+      {
         "title": "W3Schools: Learn HTML",
         "url": "https://www.w3schools.com/html/html_intro.asp",
         "type": "article"
@@ -319,6 +324,11 @@
       {
         "title": "HTML & CSS Full Course - Beginner to Pro",
         "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc",
+        "type": "course"
+      },
+      {
+        "title": "Responsive Web Design Certification - Co-Learn HTML & CSS with guided projects",
+        "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
         "type": "course"
       },
       {
@@ -520,13 +530,8 @@
     "description": "Repo hosting services provide platforms for storing, managing, and collaborating on software projects using version control systems, primarily Git. These services offer features like issue tracking, pull requests, code review tools, wikis, and continuous integration/continuous deployment (CI/CD) pipelines. Popular platforms include GitHub, GitLab, Bitbucket, and SourceForge, each with unique offerings. GitHub, owned by Microsoft, is the largest and most widely used, known for its open-source community. GitLab offers a complete DevOps platform with built-in CI/CD. Bitbucket, part of Atlassian's suite, integrates well with other Atlassian tools. These services facilitate team collaboration, code sharing, and project management, making them integral to modern software development workflows. They also often provide features like access control, branch protection, and integration with various development tools, enhancing the overall development process.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & Github",
+        "title": "Visit Dedicated Git & Github Roadmap",
         "url": "https://roadmap.sh/git-github",
-        "type": "article"
-      },
-      {
-        "title": "Codeberg Website",
-        "url": "https://codeberg.org/",
         "type": "article"
       },
       {
@@ -537,6 +542,11 @@
       {
         "title": "GitLab Website",
         "url": "https://about.gitlab.com",
+        "type": "article"
+      },
+      {
+        "title": "Codeberg Website",
+        "url": "https://codeberg.org/",
         "type": "article"
       },
       {
@@ -551,7 +561,7 @@
     "description": "Version Control Systems (VCS) are tools that help developers track and manage changes to code over time. They allow multiple people to work on a project simultaneously, maintaining a history of modifications. Git is the most popular VCS, known for its distributed nature and branching model. Other systems include Subversion (SVN) and Mercurial. VCS enables features like branching for parallel development, merging to combine changes, and reverting to previous states. They facilitate collaboration through remote repositories, pull requests, and code reviews. VCS also provides backup and recovery capabilities, conflict resolution, and the ability to tag specific points in history. By maintaining a detailed record of changes and supporting non-linear development, VCS has become an essential tool in modern software development, enhancing productivity, code quality, and team collaboration.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & Github",
+        "title": "Visit Dedicated Git & Github Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -765,7 +775,12 @@
       },
       {
         "title": "NPM Website",
-        "url": "https://www.npmjs.com/https://www.npmjs.com/",
+        "url": "https://www.npmjs.com/",
+        "type": "article"
+      },
+      {
+        "title": "NPM Documentation",
+        "url": "https://docs.npmjs.com/",
         "type": "article"
       },
       {
@@ -779,7 +794,7 @@
         "type": "article"
       },
       {
-        "title": "NPM tutorial for Beginners",
+        "title": "NPM Tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=2V1UUhBJ62Y",
         "type": "video"
       }
@@ -812,7 +827,7 @@
       },
       {
         "title": "Getting started with Angular",
-        "url": "https://angular.io/start",
+        "url": "https://angular.dev/tutorials/learn-angular",
         "type": "article"
       },
       {
@@ -1092,6 +1107,11 @@
         "type": "article"
       },
       {
+        "title": "Online Sass Playground",
+        "url": "https://sass-lang.com/playground/",
+        "type": "article"
+      },
+      {
         "title": "Sass Tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=_a5j7KoflTs",
         "type": "video"
@@ -1234,8 +1254,13 @@
     "description": "Webpack is a popular open-source JavaScript module bundler that transforms, bundles, or packages resources for the web. It takes modules with dependencies and generates static assets representing those modules. Webpack can handle not just JavaScript, but also other assets like CSS, images, and fonts. It uses loaders to preprocess files and plugins to perform a wider range of tasks like bundle optimization. Webpack's key features include code splitting, lazy loading, and a rich ecosystem of extensions. It supports hot module replacement for faster development and tree shaking to eliminate unused code. While it has a steeper learning curve compared to some alternatives, Webpack's flexibility and powerful features make it a standard tool in many modern JavaScript development workflows, especially for complex applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Webpack Website",
+        "title": "Webpack",
         "url": "https://webpack.js.org/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Webpack",
+        "url": "https://webpack.js.org/guides/getting-started/",
         "type": "article"
       },
       {
@@ -1282,12 +1307,12 @@
     "links": [
       {
         "title": "Vite - The Build Tool for the Web",
-        "url": "https://vitejs.dev",
+        "url": "https://vite.dev",
         "type": "article"
       },
       {
         "title": "Vite Documentation",
-        "url": "https://vitejs.dev/guide/",
+        "url": "https://vite.dev/guide/",
         "type": "article"
       },
       {
@@ -1593,11 +1618,6 @@
         "type": "article"
       },
       {
-        "title": "Google Devs Content Security Policy (CSP)",
-        "url": "https://developers.google.com/web/fundamentals/security/csp",
-        "type": "article"
-      },
-      {
         "title": "Web.dev - Content Security Policy (CSP)",
         "url": "https://web.dev/csp/",
         "type": "article"
@@ -1755,7 +1775,7 @@
     "description": "TypeScript is a strongly-typed, object-oriented programming language that builds upon JavaScript by adding optional static typing and other features. Developed and maintained by Microsoft, it compiles to plain JavaScript, allowing it to run in any environment that supports JavaScript. TypeScript offers enhanced IDE support with better code completion, refactoring, and error detection during development. It introduces concepts like interfaces, generics, and decorators, enabling more robust software architecture. TypeScript is particularly valuable for large-scale applications, as it improves code maintainability and readability. Its type system helps catch errors early in the development process, reducing runtime errors. With its growing ecosystem and adoption in popular frameworks like Angular, TypeScript has become a standard tool in modern web development.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "TypeScript Roadmap",
+        "title": "Visit Dedicated TypeScript Roadmap",
         "url": "https://roadmap.sh/typescript",
         "type": "article"
       },
@@ -1874,19 +1894,24 @@
     "description": "Angular is a popular open-source web application framework developed and maintained by Google. It uses TypeScript, a statically typed superset of JavaScript, to build scalable and efficient single-page applications (SPAs). Angular follows a component-based architecture, where the user interface is composed of reusable, self-contained components. The framework provides features like two-way data binding, dependency injection, and a powerful template syntax, which simplify the development of complex web applications. Angular also includes a comprehensive set of tools for testing, routing, and state management, making it a full-fledged solution for front-end development. Its modular structure and emphasis on best practices make it particularly suitable for large-scale enterprise applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Angular Roadmap",
+        "title": "Visit Dedicated Angular Roadmap",
         "url": "https://roadmap.sh/angular",
         "type": "article"
       },
       {
-        "title": "Angular Website",
-        "url": "https://angular.dev",
+        "title": "Getting started with Angular",
+        "url": "https://angular.dev/tutorials/learn-angular",
         "type": "article"
       },
       {
         "title": "Explore top posts about Angular",
         "url": "https://app.daily.dev/tags/angular?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Angular for Beginners Course",
+        "url": "https://www.youtube.com/watch?v=3qBXWUpoPHo",
+        "type": "video"
       }
     ]
   },
@@ -1989,12 +2014,12 @@
     "description": "SvelteKit is a framework for building web applications using Svelte, a component-based JavaScript framework. It provides a full-stack development experience, handling both server-side and client-side rendering. SvelteKit offers features like file-based routing, code-splitting, and server-side rendering out of the box. It supports both static site generation and server-side rendering, allowing developers to choose the most appropriate approach for each page. SvelteKit emphasizes simplicity and performance, leveraging Svelte's compile-time approach to generate highly optimized JavaScript. It includes built-in development tools, easy deployment options, and integrates well with various backend services. SvelteKit's efficient development experience and flexibility make it an attractive option for building modern, performant web applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Svelte Kit Website",
+        "title": "Svelte Kit",
         "url": "https://kit.svelte.dev/",
         "type": "article"
       },
       {
-        "title": "Official Svelte Kit Docs",
+        "title": "Svelte Kit Docs",
         "url": "https://kit.svelte.dev/docs/introduction",
         "type": "article"
       },
@@ -2124,7 +2149,7 @@
     "description": "VuePress is a static site generator powered by Vue.js, primarily designed for creating documentation websites. It generates pre-rendered static HTML for each page, resulting in fast loading times and SEO-friendly content. VuePress features a Vue-powered theming system, automatic code syntax highlighting, and a default theme optimized for technical documentation. It supports markdown content with Vue components, allowing for dynamic and interactive documentation. VuePress offers built-in search functionality, responsive layouts, and easy customization through plugins and themes. While primarily used for documentation, it's versatile enough for blogs and simple websites. VuePress's combination of simplicity, performance, and Vue.js integration makes it popular for creating modern, fast-loading documentation sites and technical blogs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Vuepress",
         "url": "https://vuepress.vuejs.org/",
         "type": "article"
       },
@@ -2134,7 +2159,7 @@
         "type": "article"
       },
       {
-        "title": "Whats VuePress?",
+        "title": "What is VuePress?",
         "url": "https://www.youtube.com/watch?v=iRhRdY7SQJg",
         "type": "video"
       }
@@ -2197,7 +2222,7 @@
     "description": "Eleventy (11ty) is a simple to use, easy to customize, highly performant and powerful static site generator with a helpful set of plugins (e.g. navigation, build-time image transformations, cache assets). Pages can be built and written with a variety of template languages (HTML, Markdown, JavaScript, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug or JS template literals). But it also offers the possibility to dynamically create pages from local data or external sources that are compiled at build time. It has zero client-side JavaScript dependencies.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Eleventy",
         "url": "https://www.11ty.dev/",
         "type": "article"
       },
@@ -2585,6 +2610,11 @@
       {
         "title": "Web Storage API - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
+        "type": "article"
+      },
+      {
+        "title": "Web Storage API – How to Store Data on the Browser",
+        "url": "https://www.freecodecamp.org/news/web-storage-api-how-to-store-data-on-the-browser/",
         "type": "article"
       },
       {

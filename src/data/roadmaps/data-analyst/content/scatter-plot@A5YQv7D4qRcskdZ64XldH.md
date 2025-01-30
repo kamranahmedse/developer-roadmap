@@ -4,5 +4,5 @@ A scatter plot, a crucial aspect of data visualization, is a mathematical diagra
 
 Learn more from the following resources:
 
-- [@article@Mastering scatter plots](https://www.atlassian.com/data/charts/what-is-a-scatter-plot)
+- [@article@Mastering Scatter Plots](https://www.atlassian.com/data/charts/what-is-a-scatter-plot)
 - [@video@Scatter Graphs: What are they and how to plot them](https://www.youtube.com/watch?v=Vyg9qmBsgAc)
