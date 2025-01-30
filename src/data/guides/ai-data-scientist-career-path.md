@@ -47,7 +47,7 @@ This surge is partly due to the “explosion” of artificial intelligence, part
 
 One of the most appealing aspects of data science positions is the average data scientist’s salary. Reports from Glassdoor and Indeed highlight that data scientists are among the highest-paid professionals in the technology sector. For example, the national average salary for a data scientist in the United States is approximately $120,000 annually, with experienced professionals earning significantly more.
 
-These salaries are a reflection of the reality: the high demand for data science skills and the technical expertise required for these roles are not easy to come by. What’s even more, companies in high-cost regions, such as Silicon Valley, New York City, and Seattle, tend to offer premium salaries to attract top talent.
+These salaries are a reflection of the reality: the high demand for [data science skills](https://roadmap.sh/ai-data-scientist/skills) and the technical expertise required for these roles are not easy to come by. What’s even more, companies in high-cost regions, such as Silicon Valley, New York City, and Seattle, tend to offer premium salaries to attract top talent.
 
 The financial rewards in this field are usually complemented by additional benefits such as opportunities for professional development like research, publishing, patent registration, etc. 
 
