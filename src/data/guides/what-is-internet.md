@@ -73,7 +73,7 @@ Cryptography is what keeps our communication secure on the Internet. In this sho
 
 ## Cybersecurity and Crime
 
-Cybersecurity refers to the protective measures against criminal activity accomplished through using a network, technological devices, and the internet.In this video, you will learn about the basics of cybersecurity and common cybercrimes.
+Cybersecurity refers to the protective measures against criminal activity accomplished through using a network, technological devices, and the internet. In this video, you will learn about the basics of cybersecurity and common cybercrimes.
 
 <iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/AuYNXgO_f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
