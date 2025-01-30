@@ -189,7 +189,7 @@ Embracing trends like **MLOps** for operationalizing machine learning, **AutoML*
 
 **Summary**
 
-Mastering these essential data scientist skills—from programming languages and machine learning skills to interpreting data insights and statistical models—will future-proof your career as a data scientist. These include the core skills of data manipulation, statistical analysis, and data visualization, all of which are central to the data science field.
+Mastering these essential data scientist skills—from programming languages and machine learning skills to interpreting data insights and statistical models—will future-proof your [career path in data science](https://roadmap.sh/ai-data-scientist/career-path). These include the core skills of data manipulation, statistical analysis, and data visualization, all of which are central to the data science field.
 
 In addition, while big data technologies and data engineering skills are not the central focus of a data scientist's role, they serve as valuable, data science-adjacent competencies. Familiarity with big data tools like Apache Spark and cloud computing platforms can enhance scalability and efficiency in handling massive datasets, while data engineering knowledge helps create robust pipelines to support analysis. By building expertise in these areas and maintaining adaptability, you can excel in this dynamic, data-driven industry.
 
