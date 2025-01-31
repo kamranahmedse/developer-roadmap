@@ -6,14 +6,14 @@ import {
 } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
 import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
-import { BuyButton, COURSE_SLUG } from './BuyButton';
+import { BuyButton, SQL_COURSE_SLUG } from './BuyButton';
 
 export function AccountButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
-    courseProgressOptions(COURSE_SLUG),
+    courseProgressOptions(SQL_COURSE_SLUG),
     queryClient,
   );
 
@@ -58,7 +58,7 @@ export function AccountButton() {
 
   return (
     <a
-      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/master-sql`}
+      href={`${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`}
       className={`${buttonClasses} animate-fade-in`}
     >
       Start Learning

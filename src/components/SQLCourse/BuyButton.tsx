@@ -11,7 +11,7 @@ import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 
-export const COURSE_SLUG = 'master-sql';
+export const SQL_COURSE_SLUG = 'sql';
 
 type CreateCheckoutSessionBody = {
   courseId: string;
@@ -34,12 +34,12 @@ export function BuyButton(props: BuyButtonProps) {
   const toast = useToast();
 
   const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
-    coursePriceOptions({ courseSlug: COURSE_SLUG }),
+    coursePriceOptions({ courseSlug: SQL_COURSE_SLUG }),
     queryClient,
   );
 
   const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
-    courseProgressOptions(COURSE_SLUG),
+    courseProgressOptions(SQL_COURSE_SLUG),
     queryClient,
   );
 
@@ -87,7 +87,7 @@ export function BuyButton(props: BuyButtonProps) {
     }
 
     createCheckoutSession({
-      courseId: COURSE_SLUG,
+      courseId: SQL_COURSE_SLUG,
       success: `/courses/sql?e=1`,
       cancel: `/courses/sql`,
     });
@@ -101,7 +101,7 @@ export function BuyButton(props: BuyButtonProps) {
 
     const hasEnrolled = !!courseProgress?.enrolledAt;
     if (hasEnrolled) {
-      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/master-sql`;
+      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`;
       return;
     }
 
