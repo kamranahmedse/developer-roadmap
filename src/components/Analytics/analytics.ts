@@ -6,6 +6,7 @@ declare global {
       category: string;
       label?: string;
       value?: string;
+      callback?: () => void;
     }) => void;
   }
 }
@@ -17,7 +18,7 @@ declare global {
  * @returns void
  */
 window.fireEvent = (props) => {
-  const { action, category, label, value } = props;
+  const { action, category, label, value, callback } = props;
   if (!window.gtag) {
     console.warn('Missing GTAG - Analytics disabled');
     return;
@@ -25,11 +26,16 @@ window.fireEvent = (props) => {
 
   if (import.meta.env.DEV) {
     console.log('Analytics event fired', props);
+    callback?.();
+    return;
   }
 
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
     value: value,
+    ...(callback ? { event_callback: callback } : {}),
   });
 };
+
+export {};
