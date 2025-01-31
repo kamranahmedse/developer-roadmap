@@ -5,3 +5,4 @@ AWS Lambda layers are distribution mechanisms for libraries, custom runtimes, an
 Visit the following resources to learn more:
 
 - [@official@AWS Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html)
+- [@video@Create and Use Lambda Layers](https://www.youtube.com/watch?v=jyuZDkiHe2Q)
