@@ -75,6 +75,12 @@ export function BuyButton(props: BuyButtonProps) {
             window.location.href = data.checkoutUrl;
           },
         });
+
+        // Hacky way to make sure that we redirect in case
+        // GA was blocked or not able to redirect the user.
+        setTimeout(() => {
+          window.location.href = data.checkoutUrl;
+        }, 3000);
       },
       onError: (error) => {
         console.error(error);
