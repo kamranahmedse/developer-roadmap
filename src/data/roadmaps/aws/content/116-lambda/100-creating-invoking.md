@@ -5,3 +5,4 @@ To create a Lambda function in AWS, navigate to the AWS Management Console, sele
 Visit the following resources to learn more:
 
 - [@official@Create Your First Lambda Function](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
+- [@video@First AWS Lambda Function](https://www.youtube.com/watch?v=e1tkFsFOBHA)
