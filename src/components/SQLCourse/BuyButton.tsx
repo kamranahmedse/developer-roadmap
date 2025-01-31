@@ -2,7 +2,11 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { ArrowRightIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
-import { COURSE_PURCHASE_PARAM, isLoggedIn } from '../../lib/jwt';
+import {
+  COURSE_PURCHASE_PARAM,
+  COURSE_PURCHASE_SUCCESS_PARAM,
+  isLoggedIn,
+} from '../../lib/jwt';
 import { coursePriceOptions } from '../../queries/billing';
 import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
@@ -58,7 +62,19 @@ export function BuyButton(props: BuyButtonProps) {
         toast.loading('Creating checkout session...');
       },
       onSuccess: (data) => {
-        window.location.href = data.checkoutUrl;
+        if (!window.gtag) {
+          window.location.href = data.checkoutUrl;
+          return;
+        }
+
+        window?.fireEvent({
+          action: `${SQL_COURSE_SLUG}_begin_checkout`,
+          category: 'course',
+          label: `${SQL_COURSE_SLUG} Course Checkout Started`,
+          callback: () => {
+            window.location.href = data.checkoutUrl;
+          },
+        });
       },
       onError: (error) => {
         console.error(error);
@@ -77,6 +93,32 @@ export function BuyButton(props: BuyButtonProps) {
     }
   }, []);
 
+  useEffect(() => {
+    const urlParams = getUrlParams();
+    const param = urlParams?.[COURSE_PURCHASE_SUCCESS_PARAM];
+    if (!param) {
+      return;
+    }
+
+    const success = param === '1';
+
+    if (success) {
+      window?.fireEvent({
+        action: `${SQL_COURSE_SLUG}_purchase_complete`,
+        category: 'course',
+        label: `${SQL_COURSE_SLUG} Course Purchase Completed`,
+      });
+    } else {
+      window?.fireEvent({
+        action: `${SQL_COURSE_SLUG}_purchase_canceled`,
+        category: 'course',
+        label: `${SQL_COURSE_SLUG} Course Purchase Canceled`,
+      });
+    }
+
+    deleteUrlParam(COURSE_PURCHASE_SUCCESS_PARAM);
+  }, []);
+
   const isLoadingPricing =
     isLoadingCourse || !coursePricing || isLoadingCourseProgress;
   const isAlreadyEnrolled = !!courseProgress?.enrolledAt;
@@ -88,8 +130,8 @@ export function BuyButton(props: BuyButtonProps) {
 
     createCheckoutSession({
       courseId: SQL_COURSE_SLUG,
-      success: `/courses/sql?e=1`,
-      cancel: `/courses/sql`,
+      success: `/courses/${SQL_COURSE_SLUG}?${COURSE_PURCHASE_SUCCESS_PARAM}=1`,
+      cancel: `/courses/${SQL_COURSE_SLUG}?${COURSE_PURCHASE_SUCCESS_PARAM}=0`,
     });
   }
 
