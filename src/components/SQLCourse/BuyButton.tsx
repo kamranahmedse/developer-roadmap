@@ -133,8 +133,7 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           ) : (
             <span className="relative flex items-center gap-2">
-              Buy
-              now for{' '}
+              Buy now for{' '}
               {coursePricing?.isEligibleForDiscount ? (
                 <span className="flex items-center gap-2">
                   <span className="hidden text-base line-through opacity-75 md:inline">
@@ -151,6 +150,12 @@ export function BuyButton(props: BuyButtonProps) {
             </span>
           )}
         </button>
+
+        {!isLoadingPricing && !isAlreadyEnrolled && (
+          <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
+            Lifetime access <span className="mx-1">&middot;</span> Free updates
+          </span>
+        )}
       </div>
     );
   }
@@ -192,6 +197,12 @@ export function BuyButton(props: BuyButtonProps) {
           </span>
         )}
       </button>
+
+      {!isLoadingPricing && !isAlreadyEnrolled && (
+        <span className="top-full text-sm text-yellow-400">
+          Lifetime access <span className="mx-1">&middot;</span> Free updates
+        </span>
+      )}
     </div>
   );
 }
