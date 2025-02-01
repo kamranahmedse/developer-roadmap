@@ -534,7 +534,7 @@
     "links": [
       {
         "title": "RPOP Documentation",
-        "url": "https://redis.io/docs/latest/commands/rpush/",
+        "url": "https://redis.io/docs/latest/commands/rpop/",
         "type": "article"
       }
     ]
@@ -954,8 +954,19 @@
   },
   "jrgaoDnt_RxTu79hk4hCD": {
     "title": "Atomicity in Redis",
-    "description": "Atomicity in Redis refers to the property that ensures a set of operations is executed as a single, indivisible unit. This means that either all the operations are executed successfully or none of them are. Atomicity is crucial in Redis to maintain consistency, especially when multiple operations need to be performed together.\n\nLearn more from the following resources:\n\n*   [@official@Atomicity with Lua](https://redis.io/learn/develop/java/spring/rate-limiting/fixed-window/reactive-lua) -[@article@Atomicity in Redis operations](https://lucaspin.medium.com/atomicity-in-redis-operations-a1d7bc9f4a90)",
-    "links": []
+    "description": "Atomicity in Redis refers to the property that ensures a set of operations is executed as a single, indivisible unit. This means that either all the operations are executed successfully or none of them are. Atomicity is crucial in Redis to maintain consistency, especially when multiple operations need to be performed together.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Atomicity with Lua",
+        "url": "https://redis.io/learn/develop/java/spring/rate-limiting/fixed-window/reactive-lua",
+        "type": "article"
+      },
+      {
+        "title": "Atomicity in Redis operations",
+        "url": "https://lucaspin.medium.com/atomicity-in-redis-operations-a1d7bc9f4a90",
+        "type": "article"
+      }
+    ]
   },
   "LHlwjN3WHYUBUafzzwsWQ": {
     "title": "Pipelining",

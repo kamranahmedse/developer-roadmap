@@ -553,6 +553,11 @@
         "title": "Modules in Python",
         "url": "https://www.programiz.com/python-programming/modules",
         "type": "article"
+      },
+      {
+        "title": "Python Modules and Packages",
+        "url": "https://realpython.com/python-modules-packages/",
+        "type": "article"
       }
     ]
   },
