@@ -393,7 +393,7 @@
   },
   "RkNjYva8o_jXp9suz5YdG": {
     "title": "Named Arguments",
-    "description": "Named arguments in PHP, introduced with PHP 8.0, allow you to specify the values of required parameters by their names, instead of their position in the function call, thus making your code more readable, reducing mistakes, and allowing for unimportant arguments to be skipped. Here's an array\\_fill() function using named arguments:\n\n    <?php\n    $a = array_fill(start_index: 0, num: 100, value: 50);\n    \n\nIn this code snippet, the parameters are passed by their names ('start\\_index', 'num', 'value'), not by their order in the function definition.\n\nVisit the following resources to learn more:",
+    "description": "Named arguments in PHP, introduced with PHP 8.0, allow you to specify the values of required parameters by their names, instead of their position in the function call, thus making your code more readable, reducing mistakes, and allowing for unimportant arguments to be skipped. Here's an array\\_fill() function using named arguments:\n\n    <?php\n    $a = array_fill(start_index: 0, count: 100, value: 50);\n    \n\nIn this code snippet, the parameters are passed by their names ('start\\_index', 'count', 'value'), not by their order in the function definition.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Named Arguments",
@@ -1015,12 +1015,12 @@
     "description": "Symfony is a set of PHP components and a framework for web projects. It aims to speed up the creation and maintenance of web applications and replace the recurring coding tasks. Symfony uses Composer, a PHP dependency manager, to manage its components. Below is an example of creating a new Symfony project:\n\n    composer create-project symfony/website-skeleton myproject\n    \n\nThis will download and install a new Symfony project in the 'myproject' directory. Symfony's components are reusable PHP libraries that will help you complete tasks, like routing, templating, or even creating form handling.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Symphony",
+        "title": "Symfony",
         "url": "https://symfony.com/",
         "type": "article"
       },
       {
-        "title": "Symphony Documentation",
+        "title": "Symfony Documentation",
         "url": "https://symfony.com/doc/current/index.html",
         "type": "article"
       }
