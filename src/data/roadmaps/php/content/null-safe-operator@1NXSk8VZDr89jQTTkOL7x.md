@@ -4,4 +4,5 @@ The Null Safe Operator is a handy feature in PHP which deals with an issue that 
 
 Visit the following resources to learn more:
 
-- [@official@Null Safe Operator](https://www.php.net/manual/en/language.oop5.nullsafe.php)
+- [@official@The Basics - Manual](https://www.php.net/manual/en/language.oop5.basic.php)
+- [@official@PHP RFC: Nullsafe operator](https://wiki.php.net/rfc/nullsafe_operator)
