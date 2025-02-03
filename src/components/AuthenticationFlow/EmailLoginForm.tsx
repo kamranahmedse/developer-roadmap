@@ -38,9 +38,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
 
       const currentLocation = window.location.href;
       const url = new URL(currentLocation, window.location.origin);
-      if (response?.isNewUser) {
-        url.searchParams.set(FIRST_LOGIN_PARAM, '1');
-      }
+      url.searchParams.set(FIRST_LOGIN_PARAM, response?.isNewUser ? '1' : '0');
       window.location.href = url.toString();
       return;
     }
