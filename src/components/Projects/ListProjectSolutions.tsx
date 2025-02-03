@@ -16,6 +16,7 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
 import type { ProjectFrontmatter } from '../../lib/project.ts';
 import { ProjectSolutionModal } from './ProjectSolutionModal.tsx';
+import { SortProjects } from './SortProjects.tsx';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -57,11 +58,13 @@ type ListProjectSolutionsResponse = {
 type QueryParams = {
   p?: string;
   l?: string;
+  s?: string;
 };
 
 type PageState = {
   currentPage: number;
   language: string;
+  sort: string;
 };
 
 type ListProjectSolutionsProps = {
@@ -100,6 +103,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   const [pageState, setPageState] = useState<PageState>({
     currentPage: 0,
     language: '',
+    sort: 'rating',
   });
 
   const [isLoading, setIsLoading] = useState(true);
@@ -108,12 +112,17 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     ListProjectSolutionsResponse['data'][number] | null
   >(null);
 
-  const loadSolutions = async (page = 1, language: string = '') => {
+  const loadSolutions = async (
+    page = 1,
+    language: string = '',
+    sort: string = 'rating',
+  ) => {
     const { response, error } = await httpGet<ListProjectSolutionsResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-project-solutions/${projectId}`,
       {
         currPage: page,
         ...(language ? { languages: language } : {}),
+        sort,
       },
     );
 
@@ -178,6 +187,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     setPageState({
       currentPage: +(queryParams.p || '1'),
       language: queryParams.l || '',
+      sort: queryParams.s || 'rating',
     });
   }, []);
 
@@ -187,17 +197,27 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       return;
     }
 
-    if (pageState.currentPage !== 1 || pageState.language !== '') {
+    if (
+      pageState.currentPage !== 1 ||
+      pageState.language !== '' ||
+      pageState.sort !== 'rating'
+    ) {
       setUrlParams({
         p: String(pageState.currentPage),
         l: pageState.language,
+        s: pageState.sort,
       });
     } else {
       deleteUrlParam('p');
       deleteUrlParam('l');
+      deleteUrlParam('s');
     }
 
-    loadSolutions(pageState.currentPage, pageState.language).finally(() => {
+    loadSolutions(
+      pageState.currentPage,
+      pageState.language,
+      pageState.sort,
+    ).finally(() => {
       setIsLoading(false);
     });
   }, [pageState]);
@@ -227,16 +247,27 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           <p className="text-sm text-gray-500">{projectData.description}</p>
         </div>
         {!isLoading && (
-          <SelectLanguages
-            projectId={projectId}
-            selectedLanguage={selectedLanguage}
-            onSelectLanguage={(language) => {
-              setPageState((prev) => ({
-                ...prev,
-                language: prev.language === language ? '' : language,
-              }));
-            }}
-          />
+          <div className="flex flex-shrink-0 items-center gap-2">
+            <SortProjects
+              selectedSort={pageState.sort}
+              onSelectSort={(sort) => {
+                setPageState((prev) => ({
+                  ...prev,
+                  sort,
+                }));
+              }}
+            />
+            <SelectLanguages
+              projectId={projectId}
+              selectedLanguage={selectedLanguage}
+              onSelectLanguage={(language) => {
+                setPageState((prev) => ({
+                  ...prev,
+                  language: prev.language === language ? '' : language,
+                }));
+              }}
+            />
+          </div>
         )}
       </div>
 
