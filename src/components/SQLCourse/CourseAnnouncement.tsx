@@ -18,7 +18,7 @@ export function CourseAnnouncement() {
           <span className="flex items-center gap-1.5 text-xs font-medium text-black md:text-base">
             <Database className="hidden h-4 w-4 flex-shrink-0 text-black sm:block" />
             <span className="hidden sm:block">
-              Master SQL with our new course
+              Master SQL with our new paid course
             </span>
             <span className="block sm:hidden">Announcing our SQL course</span>
           </span>
