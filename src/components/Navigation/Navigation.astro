@@ -4,7 +4,10 @@ import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
 import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
 import { AccountDropdown } from './AccountDropdown';
+import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
 ---
+
+<CourseAnnouncement client:load />
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
