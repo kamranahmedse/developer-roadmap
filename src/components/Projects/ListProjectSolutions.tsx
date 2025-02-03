@@ -213,6 +213,13 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
 
   const selectedLanguage = pageState.language;
 
+  const setSelectedLanguage = (language: string) => {
+    setPageState((prev) => ({
+      ...prev,
+      language: prev.language === language ? '' : language,
+    }));
+  };
+
   return (
     <div className="mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5">
       {leavingRoadmapModal}
@@ -221,7 +228,9 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           <h1 className="mb-1 text-xl font-semibold">
             {projectData.title} Solutions
           </h1>
-          <p className="text-sm text-gray-500">{projectData.description}</p>
+          <p className="text-sm text-gray-500">
+            Solutions submitted by the community
+          </p>
         </div>
         {!isLoading && (
           <div className="flex flex-shrink-0 items-center gap-2">
@@ -260,6 +269,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
                 counter={counter}
                 onVote={handleSubmitVote}
                 onVisitSolution={setShowLeavingRoadmapModal}
+                onLanguageClick={setSelectedLanguage}
               />
             ))}
           </div>

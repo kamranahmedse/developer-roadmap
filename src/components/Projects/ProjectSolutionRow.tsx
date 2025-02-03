@@ -43,68 +43,94 @@ type ProjectSolutionRowProps = {
   counter: number;
   onVote: (solutionId: string, voteType: AllowedVoteType) => void;
   onVisitSolution: (solution: ProjectSolutionRowProps['solution']) => void;
+  onLanguageClick?: (language: string) => void;
 };
 
 export function ProjectSolutionRow(props: ProjectSolutionRowProps) {
-  const { solution, counter, onVote, onVisitSolution } = props;
+  const { solution, counter, onVote, onVisitSolution, onLanguageClick } = props;
 
   const avatar = solution.user.avatar || '';
 
   return (
-    <div className="flex flex-col gap-2 py-2 text-sm text-gray-500">
-      <div className="flex flex-col justify-between gap-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0">
-        <div className="flex items-center gap-1.5">
-          <img
-            src={
-              avatar
-                ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-                : '/images/default-avatar.png'
-            }
-            alt={solution.user.name}
-            className="mr-0.5 h-7 w-7 rounded-full"
-          />
-          <span className="font-medium text-black">{solution.user.name}</span>
-          <span className="hidden sm:inline">
-            {submittedAlternatives[counter % submittedAlternatives.length] ||
-              'submitted their solution'}
-          </span>{' '}
-          <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
-            {getRelativeTimeString(solution?.submittedAt!)}
-          </span>
-        </div>
+    <div className="group flex flex-col border-gray-100 px-3 py-2.5 text-sm hover:bg-gray-50/50 sm:flex-row sm:justify-between">
+      <div className="flex min-w-0 items-start gap-3">
+        <img
+          src={
+            avatar
+              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+              : '/images/default-avatar.png'
+          }
+          alt={solution.user.name}
+          className="h-7 w-7 flex-shrink-0 rounded-full sm:h-8 sm:w-8"
+        />
+        <div className="min-w-0 flex-auto">
+          <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+            <span className="max-w-[150px] truncate font-medium text-gray-900 sm:max-w-[180px]">
+              {solution.user.name}
+            </span>
+            <span className="hidden truncate text-xs text-gray-500 sm:block sm:text-sm">
+              {submittedAlternatives[counter % submittedAlternatives.length] ||
+                'submitted their solution'}
+            </span>
+            <span
+              className="text-xs text-gray-400"
+              title={new Date(solution?.submittedAt!).toLocaleString()}
+            >
+              · {getRelativeTimeString(solution?.submittedAt!)}
+            </span>
+          </div>
 
-        <div className="flex items-center justify-end gap-1">
-          <span className="flex shrink-0 overflow-hidden rounded-full border">
-            <VoteButton
-              icon={ThumbsUp}
-              isActive={solution?.voteType === 'upvote'}
-              count={solution.upvotes || 0}
+          <div className="mt-2.5 flex gap-1.5">
+            <div className="flex gap-1">
+              <span className="flex shrink-0 overflow-hidden rounded-full border">
+                <VoteButton
+                  icon={ThumbsUp}
+                  isActive={solution?.voteType === 'upvote'}
+                  count={solution.upvotes || 0}
+                  onClick={() => {
+                    onVote(solution._id!, 'upvote');
+                  }}
+                />
+
+                <VoteButton
+                  icon={ThumbsDown}
+                  isActive={solution?.voteType === 'downvote'}
+                  count={solution.downvotes || 0}
+                  hideCount={true}
+                  onClick={() => {
+                    onVote(solution._id!, 'downvote');
+                  }}
+                />
+              </span>
+            </div>
+
+            <button
+              className="flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
               onClick={() => {
-                onVote(solution._id!, 'upvote');
+                onVisitSolution(solution);
               }}
-            />
-
-            <VoteButton
-              icon={ThumbsDown}
-              isActive={solution?.voteType === 'downvote'}
-              count={solution.downvotes || 0}
-              hideCount={true}
-              onClick={() => {
-                onVote(solution._id!, 'downvote');
-              }}
-            />
-          </span>
-
-          <button
-            className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
-            onClick={() => {
-              onVisitSolution(solution);
-            }}
-          >
-            <GitHubIcon className="h-4 w-4 text-current" />
-            Visit Solution
-          </button>
+            >
+              <GitHubIcon className="h-3.5 w-3.5 text-current" />
+              <span>Visit Solution</span>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div className="mt-2.5 hidden sm:mt-0 sm:block sm:pl-4">
+        {solution.languages && solution.languages.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1.5">
+            {solution.languages.slice(0, 2).map((lang) => (
+              <button
+                key={lang}
+                onClick={() => onLanguageClick?.(lang)}
+                className="inline-flex items-center rounded-md border border-gray-200 bg-white px-2 py-0.5 text-xs font-medium text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-gray-900"
+              >
+                {lang}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
