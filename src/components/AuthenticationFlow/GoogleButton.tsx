@@ -81,9 +81,10 @@ export function GoogleButton(props: GoogleButtonProps) {
           redirectUrl = new URL(authRedirectUrl, window.location.origin);
         }
 
-        if (response?.isNewUser) {
-          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
-        }
+        redirectUrl.searchParams.set(
+          FIRST_LOGIN_PARAM,
+          response?.isNewUser ? '1' : '0',
+        );
 
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';

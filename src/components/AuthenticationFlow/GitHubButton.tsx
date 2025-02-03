@@ -81,9 +81,10 @@ export function GitHubButton(props: GitHubButtonProps) {
         localStorage.removeItem(GITHUB_LAST_PAGE);
         setAuthToken(response.token);
 
-        if (response?.isNewUser) {
-          redirectUrl.searchParams.set(FIRST_LOGIN_PARAM, '1');
-        }
+        redirectUrl.searchParams.set(
+          FIRST_LOGIN_PARAM,
+          response?.isNewUser ? '1' : '0',
+        );
 
         const shouldTriggerPurchase =
           localStorage.getItem(CHECKOUT_AFTER_LOGIN_KEY) !== '0';
