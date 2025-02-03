@@ -1,17 +1,8 @@
 import { Database, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-const HIDE_STORAGE_KEY = 'sql-course-announcement-hidden';
-
 export function CourseAnnouncement() {
   const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const isHidden = localStorage.getItem(HIDE_STORAGE_KEY) === 'true';
-    if (isHidden) {
-      setIsVisible(false);
-    }
-  }, []);
 
   if (!isVisible) {
     return null;
@@ -42,7 +33,6 @@ export function CourseAnnouncement() {
         type="button"
         className="absolute right-3.5 top-1/2 -translate-y-1/2 rounded-lg px-1.5 py-1.5 text-gray-500 hover:bg-yellow-500 hover:text-gray-700"
         onClick={(e) => {
-          localStorage.setItem(HIDE_STORAGE_KEY, 'true');
           setIsVisible(false);
         }}
       >
