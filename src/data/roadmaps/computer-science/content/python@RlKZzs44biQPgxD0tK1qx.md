@@ -5,8 +5,8 @@ Python is a well known programming language which is both a strongly typed and a
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- [@official@Python Website](https://www.python.org/)
-- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
+- [@official@Python](https://www.python.org/)
+- [@official@Getting Started with Python](https://www.python.org/about/gettingstarted/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
 - [@article@Python principles - Python basics](https://pythonprinciples.com/)
 - [@article@W3Schools - Python Tutorial ](https://www.w3schools.com/python/)

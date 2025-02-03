@@ -4,3 +4,4 @@ DQL statements are used for performing queries on the data within schema objects
 
 Visit the following resources to learn more:
 
+- [@article@Data Query Language](https://en.wikipedia.org/wiki/Data_query_language)
