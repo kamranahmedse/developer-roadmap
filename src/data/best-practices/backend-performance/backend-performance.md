@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/best-practices/backend-performance.pdf'
 order: 1
 briefTitle: 'Backend Performance'
 briefDescription: 'Backend Performance Best Practices'
-isNew: true
+isNew: false
 isUpcoming: false
 title: 'Backend Performance Best Practices'
 description: 'Detailed list of best practices to improve your backend performance'

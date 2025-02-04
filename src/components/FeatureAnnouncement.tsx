@@ -6,6 +6,7 @@ import { isMobileScreen } from '../lib/is-mobile.ts';
 type FeatureAnnouncementProps = {};
 
 export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
+  return null;
   return (
     <>
       <a
