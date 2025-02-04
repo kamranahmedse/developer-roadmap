@@ -17,7 +17,7 @@ export function FeatureAnnouncement(props: FeatureAnnouncementProps) {
           Courses
         </span>{' '}
         <span className={'hidden sm:inline'}>
-          Our first course about SQL is now live!
+          Our first paid course about SQL is now live!
         </span>
         <span className={'inline text-sm sm:hidden'}>
           Our SQL course is now live!
