@@ -6,7 +6,7 @@ excludedBySlug: '/golang/vs-java'
 seo:
   title: 'Go vs Java: Choosing the Right Language for Your Projects'
   description: 'Comparing Go vs Java for your projects? Explore features like concurrency, memory management, and learning curves to find the right fit for your needs.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/build-a-rest-api-in-golang-k3zuq.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/go-vs-java-fo08l.jpg'
 relatedGuidesTitle: 'Other Guides'
 isNew: true
 type: 'textual'
