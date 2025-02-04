@@ -9,7 +9,7 @@ export function CourseAnnouncement() {
   }
 
   return (
-    <div className="sticky top-0 z-[91]">
+    <div className="sticky top-0 z-[1000]">
       <a
         href="/courses/sql"
         className="flex items-center bg-yellow-400 py-1.5"
