@@ -287,28 +287,32 @@ export function ProjectStepper(props: ProjectStepperProps) {
             number={2}
           />
 
-          <span className="text-gray-600 sm:hidden">&middot;</span>
-          <button
-            className={cn(
-              'flex items-center gap-2 text-sm sm:hidden',
-              isCopied ? 'text-green-500' : 'text-gray-600',
-            )}
-            onClick={() => {
-              copyText(projectSolutionUrl);
-            }}
-          >
-            {isCopied ? (
-              <>
-                <CheckIcon additionalClasses="h-3 w-3" />
-                URL Copied
-              </>
-            ) : (
-              <>
-                <Share className="h-3 w-3 stroke-[2.5px]" />
-                Share your Solution
-              </>
-            )}
-          </button>
+          {activeStep > 1 && (
+            <>
+              <span className="text-gray-600 sm:hidden">&middot;</span>
+              <button
+                className={cn(
+                  'flex items-center gap-2 text-sm sm:hidden',
+                  isCopied ? 'text-green-500' : 'text-gray-600',
+                )}
+                onClick={() => {
+                  copyText(projectSolutionUrl);
+                }}
+              >
+                {isCopied ? (
+                  <>
+                    <CheckIcon additionalClasses="h-3 w-3" />
+                    URL Copied
+                  </>
+                ) : (
+                  <>
+                    <Share className="h-3 w-3 stroke-[2.5px]" />
+                    Share your Solution
+                  </>
+                )}
+              </button>
+            </>
+          )}
         </div>
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep
