@@ -1,7 +1,7 @@
 ---
 title: 'Data Science vs. Data Analytics: Which is Right for You?'
 description: 'Data science vs. Data analytics? This guide breaks down roles, tools, and growth opportunities for aspiring data professionals.'
-authorId: ekene
+authorId: william
 excludedBySlug: '/ai-data-scientist/vs-data-analytics'
 seo:
   title: 'Data Science vs. Data Analytics: Which is Right for You?'
