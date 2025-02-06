@@ -26,7 +26,7 @@ import { BuyButton } from './BuyButton';
 import { AccountButton } from './AccountButton';
 import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 import { PlatformDemo } from './PlatformDemo';
-
+import { AuthorQuoteMessage } from './AuthorQuoteMessage';
 type ChapterData = {
   icon: React.ReactNode;
   title: string;
@@ -243,7 +243,7 @@ export function SQLCoursePage() {
   ];
 
   return (
-    <div className="flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
+    <div className="relative flex flex-grow flex-col items-center bg-gradient-to-b from-zinc-900 to-zinc-950 px-4 pb-52 pt-3 text-zinc-400 md:px-10 md:pt-8">
       <div className="flex w-full items-center justify-between">
         <a
           href="https://roadmap.sh"
@@ -298,6 +298,8 @@ export function SQLCoursePage() {
           <BuyButton variant="main" />
         </div>
       </div>
+
+      <AuthorQuoteMessage />
 
       <PlatformDemo />
 

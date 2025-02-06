@@ -33,7 +33,7 @@ export function PlatformDemo() {
         src="https://assets.roadmap.sh/guest/course-environment-87jg8.png"
         alt="Course Environment"
         onClick={() => setIsZoomed(true)}
-        className="mt-20 w-full max-w-5xl rounded-xl cursor-zoom-in"
+        className="mt-12 sm:mt-20 w-full max-w-5xl rounded-xl cursor-zoom-in"
       />
     </>
   );

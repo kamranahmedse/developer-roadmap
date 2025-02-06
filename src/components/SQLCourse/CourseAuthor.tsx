@@ -3,8 +3,9 @@ export function CourseAuthor() {
     <div className="mt-8 w-full max-w-3xl space-y-4">
       <div className="flex flex-row items-center gap-5">
         <img
-          src="https://github.com/kamranahmedse.png"
+          src="https://assets.roadmap.sh/guest/kamran-lqjta.jpeg"
           className="size-12 rounded-full bg-yellow-500/10 md:size-16"
+          alt="Kamran Ahmed"
         />
         <a
           href="https://twitter.com/kamrify"

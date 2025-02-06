@@ -199,7 +199,7 @@ export function BuyButton(props: BuyButtonProps) {
           )}
         </button>
 
-        {!isLoadingPricing && !isAlreadyEnrolled && (
+        {!isLoadingPricing && (
           <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
             Lifetime access <span className="mx-1">&middot;</span> Free updates
           </span>
