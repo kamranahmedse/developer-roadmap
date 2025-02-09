@@ -25,7 +25,7 @@ Here is a simple OpenCL code example that illustrates how to implement vector ad
 
 const char *kernelSource = "__kernel void vector_add(__global int *A, __global int *B, __global int *C, const int N){"
                             "  int i = get_global_id(0);"
-                            "  if(i < N){"
+                            "  if (i < N){"
                             "    C[i] = A[i] + B[i];"
                             "  }"
                             "}";
