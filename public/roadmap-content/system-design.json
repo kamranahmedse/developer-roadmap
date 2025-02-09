@@ -1326,16 +1326,10 @@
       }
     ]
   },
-  "LncTxPg-wx8loy55r5NmV": {
+  "queu-based-load-leveling@LncTxPg-wx8loy55r5NmV.md": {
     "title": "Queu-based Load Leveling",
-    "description": "Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.\n\nLearn more from the following links:",
-    "links": [
-      {
-        "title": "Queue-Based Load Leveling pattern",
-        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "2ryzJhRDTo98gGgn9mAxR": {
     "title": "Publisher/Subscriber",
