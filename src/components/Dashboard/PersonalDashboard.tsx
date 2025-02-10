@@ -122,13 +122,13 @@ function DashboardStats(props: DashboardStatsProps) {
           label="topics done today"
           isLoading={isLoading}
         />
-        <DashboardStatItem
+        {/* <DashboardStatItem
           icon={FolderGit2}
           iconClassName="text-blue-500"
           value={finishedProjectsCount}
           label="projects finished"
           isLoading={isLoading}
-        />
+        /> */}
       </div>
 
       <button

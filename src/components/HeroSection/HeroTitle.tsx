@@ -1,15 +1,24 @@
 import type { ReactNode } from 'react';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { ChevronDown, ChevronsDownUp, ChevronsUpDown } from 'lucide-react';
+import { cn } from '../../lib/classname.ts';
 
 type HeroTitleProps = {
   icon: any;
   isLoading?: boolean;
   title: string | ReactNode;
   rightContent?: ReactNode;
+  isCollapsed?: boolean;
 };
 
 export function HeroTitle(props: HeroTitleProps) {
-  const { isLoading = false, title, icon, rightContent } = props;
+  const {
+    isLoading = false,
+    title,
+    icon,
+    rightContent,
+    isCollapsed = false,
+  } = props;
 
   return (
     <div className="flex items-center justify-between">
@@ -21,8 +30,30 @@ export function HeroTitle(props: HeroTitleProps) {
           </span>
         )}
         {title}
+        {!isLoading && (
+          <button
+            className={cn(
+              'ml-2 inline-flex items-center gap-1 rounded-md bg-slate-800 py-0.5 pl-1 pr-1.5 text-xs uppercase tracking-wider text-slate-400 hover:bg-slate-700',
+              {
+                'bg-transparent text-slate-600 hover:bg-slate-800 hover:text-slate-400':
+                  !isCollapsed,
+              },
+            )}
+          >
+            {isCollapsed && (
+              <>
+                <ChevronsUpDown className="h-3.5 w-3.5" /> Expand
+              </>
+            )}
+            {!isCollapsed && (
+              <>
+                <ChevronsDownUp className="h-3.5 w-3.5" /> Collapse
+              </>
+            )}
+          </button>
+        )}
       </p>
       <div>{rightContent}</div>
     </div>
   );
-} 
+}
