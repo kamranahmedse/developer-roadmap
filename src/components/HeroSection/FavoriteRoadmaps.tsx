@@ -146,7 +146,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
           completedProjects.length > 0 && (
             <button
               onClick={() => setShowCompleted(!showCompleted)}
-              className="flex items-center gap-2 rounded-md px-2 py-1 text-xs text-slate-400 hover:text-slate-300"
+              className="flex items-center gap-2 rounded-md text-xs text-slate-400 hover:text-slate-300"
             >
               {showCompleted ? (
                 <EyeOff className="h-3.5 w-3.5" />

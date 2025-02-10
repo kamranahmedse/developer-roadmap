@@ -41,9 +41,9 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
           icon={icon}
           isLoading={isLoading}
           title={title}
-          rightContent={rightContent}
+          rightContent={!isCollapsed && rightContent}
         />
-        {!isLoading && !isAllCollapsed && (
+        {!isCollapsed && (
           <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
             {children}
           </div>
