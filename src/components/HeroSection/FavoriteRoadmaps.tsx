@@ -1,4 +1,14 @@
-import { FolderKanban, MapIcon, Plus, Sparkle, ThumbsUp } from 'lucide-react';
+import {
+  FolderKanban,
+  MapIcon,
+  Plus,
+  Sparkle,
+  ThumbsUp,
+  ChevronDown,
+  ChevronUp,
+  Eye,
+  EyeOff,
+} from 'lucide-react';
 import type { ReactNode } from 'react';
 import type { ResourceType } from '../../lib/resource-progress.ts';
 import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton.tsx';
@@ -8,6 +18,7 @@ import { Spinner } from '../ReactIcons/Spinner.tsx';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';
 import { getRelativeTimeString } from '../../lib/date';
+import { useState } from 'react';
 
 export type AIRoadmapType = {
   id: string;
@@ -66,21 +77,25 @@ type HeroTitleProps = {
   icon: any;
   isLoading?: boolean;
   title: string | ReactNode;
+  rightContent?: ReactNode;
 };
 
 function HeroTitle(props: HeroTitleProps) {
-  const { isLoading = false, title, icon } = props;
+  const { isLoading = false, title, icon, rightContent } = props;
 
   return (
-    <p className="mb-4 flex items-center text-sm text-gray-400">
-      {!isLoading && icon}
-      {isLoading && (
-        <span className="mr-1.5">
-          <Spinner />
-        </span>
-      )}
-      {title}
-    </p>
+    <div className="flex items-center justify-between">
+      <p className="mb-4 flex items-center text-sm text-gray-400">
+        {!isLoading && icon}
+        {isLoading && (
+          <span className="mr-1.5">
+            <Spinner />
+          </span>
+        )}
+        {title}
+      </p>
+      <div>{rightContent}</div>
+    </div>
   );
 }
 
@@ -107,7 +122,7 @@ export function HeroProject({ project }: HeroProjectProps) {
       className="group relative flex flex-col justify-between gap-2 rounded-md border border-slate-800 bg-slate-900 p-4 hover:border-slate-600"
     >
       <div className="relative z-10 flex items-start justify-between gap-2">
-        <h3 className="font-medium text-slate-200 group-hover:text-slate-100">
+        <h3 className="font-medium text-slate-200 group-hover:text-slate-100 truncate">
           {project.title}
         </h3>
         <span
@@ -119,14 +134,16 @@ export function HeroProject({ project }: HeroProjectProps) {
         >
           {project.submittedAt && project.repositoryUrl
             ? 'Submitted'
-            : 'In Progress'}
+            : 'Started'}
         </span>
       </div>
       <div className="relative z-10 flex items-center gap-2 text-xs text-slate-400">
-        <span className="flex items-center gap-1">
-          <ThumbsUp className="h-3 w-3" />
-          {project.upvotes}
-        </span>
+        {project.submittedAt && project.repositoryUrl && (
+          <span className="flex items-center gap-1">
+            <ThumbsUp className="h-3 w-3" />
+            {project.upvotes}
+          </span>
+        )}
         {project.startedAt && (
           <span>Started {getRelativeTimeString(project.startedAt)}</span>
         )}
@@ -142,6 +159,19 @@ export function HeroProject({ project }: HeroProjectProps) {
 
 export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
   const { progress, isLoading, customRoadmaps, aiRoadmaps, projects } = props;
+  const [showCompleted, setShowCompleted] = useState(false);
+
+  const completedProjects = projects.filter(
+    (project) => project.submittedAt && project.repositoryUrl,
+  );
+  const inProgressProjects = projects.filter(
+    (project) => !project.submittedAt || !project.repositoryUrl,
+  );
+
+  const projectsToShow = [
+    ...inProgressProjects,
+    ...(showCompleted ? completedProjects : []),
+  ];
 
   return (
     <div className="flex flex-col gap-5 pt-5">
@@ -254,16 +284,31 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
             }
             isLoading={isLoading}
             title="Your projects"
+            rightContent={
+              completedProjects.length > 0 && (
+                <button
+                  onClick={() => setShowCompleted(!showCompleted)}
+                  className="flex items-center gap-2 rounded-md px-2 py-1 text-xs text-slate-400 hover:text-slate-300"
+                >
+                  {showCompleted ? (
+                    <EyeOff className="h-3.5 w-3.5" />
+                  ) : (
+                    <Eye className="h-3.5 w-3.5" />
+                  )}
+                  {completedProjects.length} Completed
+                </button>
+              )
+            }
           />
-          {!isLoading && projects.length > 0 && (
+          {!isLoading && projectsToShow.length > 0 && (
             <div className="grid grid-cols-1 gap-2 pb-5 sm:grid-cols-2 md:grid-cols-3">
-              {projects.map((project) => (
+              {projectsToShow.map((project) => (
                 <HeroProject key={project._id} project={project} />
               ))}
 
               <a
                 href="/projects"
-                className="flex h-[120px] items-center justify-center gap-2 rounded-md border border-dashed border-slate-800 p-4 text-sm text-slate-400 hover:border-slate-600 hover:bg-slate-900/50 hover:text-slate-300"
+                className="flex min-h-[80px] items-center justify-center gap-2 rounded-md border border-dashed border-slate-800 p-4 text-sm text-slate-400 hover:border-slate-600 hover:bg-slate-900/50 hover:text-slate-300"
               >
                 <Plus size={16} />
                 Start a new project
