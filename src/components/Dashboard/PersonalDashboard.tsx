@@ -274,12 +274,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
     : '/images/default-avatar.png';
 
-  const allRoadmapsAndBestPractices = [
-    ...builtInRoleRoadmaps,
-    ...builtInSkillRoadmaps,
-    ...builtInBestPractices,
-  ];
-
   const enrichedProjects = personalDashboardDetails?.projects
     .map((project) => {
       const projectDetail = projectDetails.find(
