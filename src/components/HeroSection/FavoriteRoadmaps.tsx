@@ -19,6 +19,7 @@ import type { UserProgress } from '../TeamProgress/TeamProgressPage.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';
 import { getRelativeTimeString } from '../../lib/date';
 import { useState } from 'react';
+import { cn } from '../../lib/classname.ts';
 
 export type AIRoadmapType = {
   id: string;
@@ -35,6 +36,8 @@ type ProgressRoadmapProps = {
   resourceType: ResourceType;
   resourceTitle: string;
   isFavorite?: boolean;
+
+  isTrackable?: boolean;
 };
 
 export function HeroRoadmap(props: ProgressRoadmapProps) {
@@ -46,21 +49,31 @@ export function HeroRoadmap(props: ProgressRoadmapProps) {
     resourceTitle,
     isFavorite,
     allowFavorite = true,
+    isTrackable = true,
   } = props;
 
   return (
     <a
       href={url}
-      className="relative flex flex-col overflow-hidden rounded-md border border-slate-800 bg-slate-900 p-3 text-sm text-slate-400 hover:border-slate-600 hover:text-slate-300"
+      className={cn(
+        'relative flex flex-col overflow-hidden rounded-md border p-3 text-sm text-slate-400 hover:text-slate-300',
+        {
+          'border-slate-800 bg-slate-900 hover:border-slate-600': isTrackable,
+          'border-slate-700/50 bg-slate-800/50 hover:border-slate-600/70':
+            !isTrackable,
+        },
+      )}
     >
       <span title={resourceTitle} className="relative z-20 truncate">
         {resourceTitle}
       </span>
 
-      <span
-        className="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
-        style={{ width: `${percentageDone}%` }}
-      ></span>
+      {isTrackable && (
+        <span
+          className="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
+          style={{ width: `${percentageDone}%` }}
+        ></span>
+      )}
 
       {allowFavorite && (
         <MarkFavorite
@@ -122,7 +135,7 @@ export function HeroProject({ project }: HeroProjectProps) {
       className="group relative flex flex-col justify-between gap-2 rounded-md border border-slate-800 bg-slate-900 p-4 hover:border-slate-600"
     >
       <div className="relative z-10 flex items-start justify-between gap-2">
-        <h3 className="font-medium text-slate-200 group-hover:text-slate-100 truncate">
+        <h3 className="truncate font-medium text-slate-200 group-hover:text-slate-100">
           {project.title}
         </h3>
         <span
@@ -259,6 +272,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
                   url={`/ai/${aiRoadmap.slug}`}
                   percentageDone={0}
                   allowFavorite={false}
+                  isTrackable={false}
                 />
               ))}
 
