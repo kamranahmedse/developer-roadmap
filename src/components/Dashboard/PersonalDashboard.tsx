@@ -17,11 +17,11 @@ import { $accountStreak, type StreakResponse } from '../../stores/streak';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import {
   FavoriteRoadmaps,
-  HeroRoadmap,
   type AIRoadmapType,
 } from '../HeroSection/FavoriteRoadmaps.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
+import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 
 type UserDashboardResponse = {
   name: string;
@@ -106,7 +106,7 @@ function DashboardStats(props: DashboardStatsProps) {
   } = props;
 
   return (
-    <div className="container flex items-center justify-between gap-2 pb-2 pt-6 text-sm text-slate-400 mb-3">
+    <div className="container mb-3 flex items-center justify-between gap-2 pb-2 pt-6 text-sm text-slate-400">
       <div className="flex items-center gap-2">
         <DashboardStatItem
           icon={Zap}
