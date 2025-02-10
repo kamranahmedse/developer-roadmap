@@ -112,7 +112,7 @@ function HeroTitle(props: HeroTitleProps) {
 
   return (
     <div className="flex items-center justify-between">
-      <p className="mb-4 flex items-center text-sm text-gray-400">
+      <p className="flex items-center text-sm text-gray-400">
         {!isLoading && icon}
         {isLoading && (
           <span className="mr-1.5">
@@ -134,6 +134,7 @@ type FavoriteRoadmapsProps = {
   customRoadmaps: UserProgress[];
   aiRoadmaps: AIRoadmapType[];
   isLoading: boolean;
+  isAllCollapsed: boolean;
 };
 
 type HeroProjectProps = {
@@ -185,7 +186,7 @@ export function HeroProject({ project }: HeroProjectProps) {
 }
 
 export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
-  const { progress, isLoading, customRoadmaps, aiRoadmaps, projects } = props;
+  const { progress, isLoading, customRoadmaps, aiRoadmaps, projects, isAllCollapsed } = props;
   const [showCompleted, setShowCompleted] = useState(false);
 
   const completedProjects = projects.filter(
@@ -201,8 +202,11 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
   ];
 
   return (
-    <div className="flex flex-col gap-5 pt-5">
-      <div className="border-b border-b-slate-800/70">
+    <div className="flex flex-col">
+      <div className={cn("", {
+        "border-b border-b-slate-800/70 pt-5 pb-5": !isAllCollapsed,
+        "py-2": isAllCollapsed
+      })}>
         <div className="container">
           <HeroTitle
             icon={
@@ -213,8 +217,8 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
             isLoading={isLoading}
             title="Your progress and bookmarks"
           />
-          {!isLoading && progress.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 pb-5 sm:grid-cols-2 md:grid-cols-3">
+          {!isLoading && progress.length > 0 && !isAllCollapsed && (
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 mt-3">
               {progress.map((resource) => (
                 <HeroRoadmap
                   key={`${resource.resourceType}-${resource.resourceId}`}
@@ -238,15 +242,18 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         </div>
       </div>
 
-      <div className="border-b border-b-slate-800/70">
+      <div className={cn("", {
+        "border-b border-b-slate-800/70 pt-5 pb-5": !isAllCollapsed,
+        "py-2": isAllCollapsed
+      })}>
         <div className="container">
           <HeroTitle
             icon={(<MapIcon className="mr-1.5 h-[14px] w-[14px]" />) as any}
             isLoading={isLoading}
             title="Your custom roadmaps"
           />
-          {!isLoading && customRoadmaps.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 pb-5 sm:grid-cols-2 md:grid-cols-3">
+          {!isLoading && customRoadmaps.length > 0 && !isAllCollapsed && (
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 mt-3">
               {customRoadmaps.map((customRoadmap) => (
                 <HeroRoadmap
                   key={customRoadmap.resourceId}
@@ -268,15 +275,18 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         </div>
       </div>
 
-      <div className="border-b border-b-slate-800/70">
+      <div className={cn("", {
+        "border-b border-b-slate-800/70 pt-5 pb-5": !isAllCollapsed,
+        "py-2": isAllCollapsed
+      })}>
         <div className="container">
           <HeroTitle
             icon={(<Sparkle className="mr-1.5 h-[14px] w-[14px]" />) as any}
             isLoading={isLoading}
             title="Your AI roadmaps"
           />
-          {!isLoading && aiRoadmaps.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 pb-5 sm:grid-cols-2 md:grid-cols-3">
+          {!isLoading && aiRoadmaps.length > 0 && !isAllCollapsed && (
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 mt-3">
               {aiRoadmaps.map((aiRoadmap) => (
                 <HeroRoadmap
                   key={aiRoadmap.id}
@@ -304,7 +314,10 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         </div>
       </div>
 
-      <div className="">
+      <div className={cn("", {
+        "border-b border-b-slate-800/70 pt-5 pb-5": !isAllCollapsed,
+        "py-2": isAllCollapsed
+      })}>
         <div className="container">
           <HeroTitle
             icon={
@@ -328,8 +341,8 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
               )
             }
           />
-          {!isLoading && projectsToShow.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 pb-5 sm:grid-cols-2 md:grid-cols-3">
+          {!isLoading && projectsToShow.length > 0 && !isAllCollapsed && (
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 mt-3">
               {projectsToShow.map((project) => (
                 <HeroProject key={project._id} project={project} />
               ))}
