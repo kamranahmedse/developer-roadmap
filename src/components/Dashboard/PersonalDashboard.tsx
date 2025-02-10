@@ -1,27 +1,26 @@
-import { type JSXElementConstructor, useEffect, useState } from 'react';
-import { httpGet } from '../../lib/http';
-import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
-import type { PageType } from '../CommandMenu/CommandMenu';
-import { useToast } from '../../hooks/use-toast';
-import { getCurrentPeriod } from '../../lib/date';
-import { ListDashboardCustomProgress } from './ListDashboardCustomProgress';
-import { RecommendedRoadmaps } from './RecommendedRoadmaps';
-import { ProgressStack } from './ProgressStack';
 import { useStore } from '@nanostores/react';
-import { $accountStreak, type StreakResponse } from '../../stores/streak';
-import { CheckEmoji } from '../ReactIcons/CheckEmoji.tsx';
-import { ConstructionEmoji } from '../ReactIcons/ConstructionEmoji.tsx';
-import { BookEmoji } from '../ReactIcons/BookEmoji.tsx';
-import { DashboardAiRoadmaps } from './DashboardAiRoadmaps.tsx';
+import {
+  CheckCircle,
+  ChevronsDownUp,
+  FolderGit2,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
-import { PencilIcon, type LucideIcon } from 'lucide-react';
+import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname.ts';
+import { httpGet } from '../../lib/http';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import { $accountStreak, type StreakResponse } from '../../stores/streak';
+import type { PageType } from '../CommandMenu/CommandMenu';
 import {
   FavoriteRoadmaps,
+  HeroRoadmap,
   type AIRoadmapType,
 } from '../HeroSection/FavoriteRoadmaps.tsx';
+import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
+import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 
 type UserDashboardResponse = {
   name: string;
@@ -42,6 +41,7 @@ export type BuiltInRoadmap = {
   title: string;
   description: string;
   isFavorite?: boolean;
+  isNew?: boolean;
   relatedRoadmapIds?: string[];
   renderer?: AllowedRoadmapRenderer;
   metadata?: Record<string, any>;
@@ -52,6 +52,87 @@ type PersonalDashboardProps = {
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
 };
+
+type DashboardStatsProps = {
+  accountStreak?: StreakResponse;
+  topicsDoneToday?: number;
+  finishedProjectsCount?: number;
+  isLoading: boolean;
+};
+
+type DashboardStatItemProps = {
+  icon: LucideIcon;
+  iconClassName: string;
+  value: number;
+  label: string;
+  isLoading: boolean;
+};
+
+function DashboardStatItem(props: DashboardStatItemProps) {
+  const { icon: Icon, iconClassName, value, label, isLoading } = props;
+
+  return (
+    <div
+      className={cn(
+        'flex items-center gap-1.5 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3',
+        {
+          'striped-loader-slate striped-loader-slate-fast text-transparent':
+            isLoading,
+        },
+      )}
+    >
+      <Icon
+        size={16}
+        className={cn(iconClassName, { 'text-transparent': isLoading })}
+      />
+      <span>
+        <span className="tabular-nums">{value}</span> {label}
+      </span>
+    </div>
+  );
+}
+
+function DashboardStats(props: DashboardStatsProps) {
+  const {
+    accountStreak,
+    topicsDoneToday = 0,
+    finishedProjectsCount = 0,
+    isLoading,
+  } = props;
+
+  return (
+    <div className="container flex items-center justify-between gap-2 pb-2 pt-6 text-sm text-slate-400">
+      <div className="flex items-center gap-2">
+        <DashboardStatItem
+          icon={Zap}
+          iconClassName="text-yellow-500"
+          value={accountStreak?.count || 0}
+          label="day streak"
+          isLoading={isLoading}
+        />
+        <DashboardStatItem
+          icon={CheckCircle}
+          iconClassName="text-green-500"
+          value={topicsDoneToday}
+          label="topics done today"
+          isLoading={isLoading}
+        />
+        <DashboardStatItem
+          icon={FolderGit2}
+          iconClassName="text-blue-500"
+          value={finishedProjectsCount}
+          label="projects finished"
+          isLoading={isLoading}
+        />
+      </div>
+
+      <button className="flex items-center gap-1 rounded-lg border border-transparent py-1.5 pl-3 pr-3 text-xs uppercase tracking-wide text-slate-400 hover:border-slate-800 hover:bg-slate-800">
+        <ChevronsDownUp className="size-3" />
+        <span>Collapse All</span>
+      </button>
+    </div>
+  );
+}
 
 export function PersonalDashboard(props: PersonalDashboardProps) {
   const {
@@ -236,181 +317,130 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
   const { username } = personalDashboardDetails || {};
 
-  // later on it will be switching of version based on localstorage
-  if (true) {
-    return (
-      <div className="min-h-screen bg-slate-900">
-        <FavoriteRoadmaps
-          progress={learningRoadmapsToShow}
-          customRoadmaps={customRoadmaps}
-          aiRoadmaps={aiGeneratedRoadmaps}
-          projects={enrichedProjects || []}
-          isLoading={isLoading}
-        />
-      </div>
-    );
-  }
-
   return (
-    <section className="container">
-      {isLoading ? (
-        <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
-      ) : (
-        <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center">
-          <h2 className="text-lg font-medium">
-            Hi {name}, good {getCurrentPeriod()}!
-          </h2>
-          <a
-            href="/home"
-            className="rounded-full bg-gray-200 px-2.5 py-1 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
-          >
-            Visit Homepage
-          </a>
-        </div>
-      )}
-
-      <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
-        {isLoading ? (
-          <>
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-          </>
-        ) : (
-          <>
-            <DashboardCard
-              imgUrl={avatarLink}
-              title={name!}
-              description={
-                username ? 'View your profile' : 'Setup your profile'
-              }
-              href={username ? `/u/${username}` : '/account/update-profile'}
-              {...(username && {
-                externalLinkIcon: PencilIcon,
-                externalLinkHref: '/account/update-profile',
-                externalLinkText: 'Edit',
-              })}
-              className={
-                !username
-                  ? 'border-dashed border-gray-500 bg-gray-100 hover:border-gray-500 hover:bg-gray-200'
-                  : ''
-              }
-            />
-
-            <DashboardCard
-              icon={BookEmoji}
-              title="Visit Roadmaps"
-              description="Learn new skills"
-              href="/roadmaps"
-            />
-
-            <DashboardCard
-              icon={ConstructionEmoji}
-              title="Build Projects"
-              description="Practice what you learn"
-              href="/projects"
-            />
-            <DashboardCard
-              icon={CheckEmoji}
-              title="Best Practices"
-              description="Do things the right way"
-              href="/best-practices"
-            />
-          </>
-        )}
-      </div>
-
-      <ProgressStack
-        progresses={learningRoadmapsToShow}
-        projects={enrichedProjects || []}
+    <div>
+      <DashboardStats
         isLoading={isLoading}
         accountStreak={accountStreak}
-        topicDoneToday={personalDashboardDetails?.topicDoneToday || 0}
+        topicsDoneToday={personalDashboardDetails?.topicDoneToday}
+        finishedProjectsCount={
+          enrichedProjects?.filter((p) => p.submittedAt && p.repositoryUrl)
+            .length
+        }
       />
 
-      <ListDashboardCustomProgress
-        progresses={customRoadmaps}
+      <FavoriteRoadmaps
+        progress={learningRoadmapsToShow}
+        customRoadmaps={customRoadmaps}
+        aiRoadmaps={aiGeneratedRoadmaps}
+        projects={enrichedProjects || []}
         isLoading={isLoading}
       />
 
-      <DashboardAiRoadmaps
-        roadmaps={aiGeneratedRoadmaps}
-        isLoading={isLoading}
-      />
+      <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
+        <div className="container">
+          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            Role Based Roadmaps
+          </h2>
 
-      <RecommendedRoadmaps
-        roadmaps={recommendedRoadmaps}
-        isLoading={isLoading}
-      />
-    </section>
-  );
-}
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            {builtInRoleRoadmaps.map((roadmap) => {
+              const roadmapProgress = learningRoadmapsToShow.find(
+                (lr) => lr.resourceId === roadmap.id,
+              );
 
-type DashboardCardProps = {
-  icon?: JSXElementConstructor<any>;
-  imgUrl?: string;
-  title: string;
-  description: string;
-  href: string;
-  externalLinkIcon?: LucideIcon;
-  externalLinkText?: string;
-  externalLinkHref?: string;
-  className?: string;
-};
+              const percentageDone =
+                (((roadmapProgress?.skipped || 0) +
+                  (roadmapProgress?.done || 0)) /
+                  (roadmapProgress?.total || 1)) *
+                100;
 
-function DashboardCard(props: DashboardCardProps) {
-  const {
-    icon: Icon,
-    imgUrl,
-    title,
-    description,
-    href,
-    externalLinkHref,
-    externalLinkIcon: ExternalLinkIcon,
-    externalLinkText,
-    className,
-  } = props;
-
-  return (
-    <div className={cn('relative overflow-hidden', className)}>
-      <a
-        href={href}
-        className="flex flex-col rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
-      >
-        {Icon && (
-          <div className="px-4 pb-3 pt-4">
-            <Icon className="size-6" />
+              return (
+                <HeroRoadmap
+                  key={roadmap.id}
+                  resourceId={roadmap.id}
+                  resourceType="roadmap"
+                  resourceTitle={roadmap.title}
+                  isFavorite={roadmap.isFavorite}
+                  percentageDone={percentageDone}
+                  isNew={roadmap.isNew}
+                  url={`/${roadmap.id}`}
+                />
+              );
+            })}
           </div>
-        )}
-
-        {imgUrl && (
-          <div className="px-4 pb-1.5 pt-3.5">
-            <img src={imgUrl} alt={title} className="size-8 rounded-full" />
-          </div>
-        )}
-
-        <div className="flex grow flex-col justify-center gap-0.5 p-4">
-          <h3 className="truncate font-medium text-black">{title}</h3>
-          <p className="text-xs text-black">{description}</p>
         </div>
-      </a>
+      </div>
 
-      {externalLinkHref && (
-        <a
-          href={externalLinkHref}
-          className="absolute right-1 top-1 flex items-center gap-1.5 rounded-md bg-gray-200 p-1 px-2 text-xs text-gray-600 hover:bg-gray-300 hover:text-black"
-        >
-          {ExternalLinkIcon && <ExternalLinkIcon className="size-3" />}
-          {externalLinkText}
-        </a>
-      )}
+      <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+        <div className="container">
+          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            Skill Based Roadmaps
+          </h2>
+
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            {builtInSkillRoadmaps.map((roadmap) => {
+              const roadmapProgress = learningRoadmapsToShow.find(
+                (lr) => lr.resourceId === roadmap.id,
+              );
+
+              const percentageDone =
+                (((roadmapProgress?.skipped || 0) +
+                  (roadmapProgress?.done || 0)) /
+                  (roadmapProgress?.total || 1)) *
+                100;
+
+              return (
+                <HeroRoadmap
+                  key={roadmap.id}
+                  resourceId={roadmap.id}
+                  resourceType="roadmap"
+                  resourceTitle={roadmap.title}
+                  isFavorite={roadmap.isFavorite}
+                  percentageDone={percentageDone}
+                  isNew={roadmap.isNew}
+                  url={`/${roadmap.id}`}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+        <div className="container">
+          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            Best Practices
+          </h2>
+
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            {builtInBestPractices.map((roadmap) => {
+              const roadmapProgress = learningRoadmapsToShow.find(
+                (lr) => lr.resourceId === roadmap.id,
+              );
+
+              const percentageDone =
+                (((roadmapProgress?.skipped || 0) +
+                  (roadmapProgress?.done || 0)) /
+                  (roadmapProgress?.total || 1)) *
+                100;
+
+              return (
+                <HeroRoadmap
+                  key={roadmap.id}
+                  resourceId={roadmap.id}
+                  resourceType="best-practice"
+                  resourceTitle={roadmap.title}
+                  isFavorite={roadmap.isFavorite}
+                  percentageDone={percentageDone}
+                  isNew={roadmap.isNew}
+                  url={`/best-practices/${roadmap.id}`}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </div>
-  );
-}
-
-function DashboardCardSkeleton() {
-  return (
-    <div className="h-[128px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
   );
 }

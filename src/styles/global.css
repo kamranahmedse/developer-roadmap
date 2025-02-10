@@ -140,6 +140,10 @@ a > code:before {
   animation: barberpole 30s linear infinite;
 }
 
+.striped-loader-slate-fast {
+  animation: barberpole 10s linear infinite;
+}
+
 @keyframes barberpole {
   100% {
     background-position: 100% 100%;
