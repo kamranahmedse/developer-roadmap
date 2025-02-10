@@ -4,4 +4,5 @@ In AWS, an ECS **Cluster** is a logical grouping of tasks or services. If you ru
 
 Visit the following resources to learn more:
 
-- [@official@Clusters / ECS Container Agents](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html)
+- [@official@Clusters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html)
+- [@official@ECS Container Agents](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-config.html)
