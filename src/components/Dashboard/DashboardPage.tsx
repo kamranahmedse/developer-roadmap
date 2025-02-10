@@ -4,11 +4,12 @@ import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/react';
 import { $teamList } from '../../stores/team';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
-import { DashboardTab } from './DashboardTab';
+import { DashboardTabButton } from './DashboardTabButton';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
 import { getUser } from '../../lib/jwt';
 import { useParams } from '../../hooks/use-params';
+import { cn } from '../../../editor/utils/classname';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
@@ -66,22 +67,19 @@ export function DashboardPage(props: DashboardPageProps) {
       : '/images/default-avatar.png';
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-20 pt-8">
-      <div className="container">
-        <div className="mb-6 flex flex-wrap items-center gap-1.5 sm:mb-8">
-          <DashboardTab
+    <>
+      <div
+        className={cn('bg-[#151b2e] py-5', {
+          'striped-loader-slate': isLoading,
+        })}
+      >
+        <div className="container flex flex-wrap items-center gap-1.5">
+          <DashboardTabButton
             label="Personal"
             isActive={!selectedTeamId && !isTeamPage}
             href="/dashboard"
             avatar={userAvatar}
           />
-
-          {isLoading && (
-            <>
-              <DashboardTabSkeleton />
-              <DashboardTabSkeleton />
-            </>
-          )}
 
           {!isLoading && (
             <>
@@ -91,7 +89,7 @@ export function DashboardPage(props: DashboardPageProps) {
                   ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
                   : '/images/default-avatar.png';
                 return (
-                  <DashboardTab
+                  <DashboardTabButton
                     key={team._id}
                     label={team.name}
                     isActive={team._id === selectedTeamId}
@@ -106,33 +104,39 @@ export function DashboardPage(props: DashboardPageProps) {
                   />
                 );
               })}
-              <DashboardTab
+              <DashboardTabButton
                 label="+ Create Team"
                 isActive={false}
                 href="/team/new"
-                className="border border-dashed border-gray-300 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-gray-600 hover:text-black"
+                className="border border-dashed border-slate-700 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-solid hover:border-slate-700 hover:text-gray-400"
               />
             </>
           )}
         </div>
+      </div>
 
+      <div className="">
         {!selectedTeamId && !isTeamPage && (
-          <PersonalDashboard
-            builtInRoleRoadmaps={builtInRoleRoadmaps}
-            builtInSkillRoadmaps={builtInSkillRoadmaps}
-            builtInBestPractices={builtInBestPractices}
-          />
+          <div className="min-h-screen pb-20">
+            <PersonalDashboard
+              builtInRoleRoadmaps={builtInRoleRoadmaps}
+              builtInSkillRoadmaps={builtInSkillRoadmaps}
+              builtInBestPractices={builtInBestPractices}
+            />
+          </div>
         )}
 
         {(selectedTeamId || isTeamPage) && (
-          <TeamDashboard
-            builtInRoleRoadmaps={builtInRoleRoadmaps!}
-            builtInSkillRoadmaps={builtInSkillRoadmaps!}
-            teamId={selectedTeamId!}
-          />
+          <div className="container">
+            <TeamDashboard
+              builtInRoleRoadmaps={builtInRoleRoadmaps!}
+              builtInSkillRoadmaps={builtInSkillRoadmaps!}
+              teamId={selectedTeamId!}
+            />
+          </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
 

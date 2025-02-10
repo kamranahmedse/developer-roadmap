@@ -128,6 +128,18 @@ a > code:before {
   animation: barberpole 15s linear infinite;
 }
 
+.striped-loader-slate {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(0, 0%, 0%, 0.1) 5px,
+    hsla(0, 0%, 0%, 0.1) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 30s linear infinite;
+}
+
 @keyframes barberpole {
   100% {
     background-position: 100% 100%;

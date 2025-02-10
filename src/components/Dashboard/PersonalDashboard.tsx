@@ -18,6 +18,10 @@ import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { PencilIcon, type LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import {
+  FavoriteRoadmaps,
+  type AIRoadmapType,
+} from '../HeroSection/FavoriteRoadmaps.tsx';
 
 type UserDashboardResponse = {
   name: string;
@@ -28,11 +32,7 @@ type UserDashboardResponse = {
   profileVisibility: AllowedProfileVisibility;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
-  aiRoadmaps: {
-    id: string;
-    title: string;
-    slug: string;
-  }[];
+  aiRoadmaps: AIRoadmapType[];
   topicDoneToday: number;
 };
 
@@ -138,7 +138,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     return () => window.removeEventListener('refresh-favorites', loadProgress);
   }, []);
 
-  const learningRoadmapsToShow = (personalDashboardDetails?.progresses || [])
+  const learningRoadmapsToShow: UserProgress[] = (
+    personalDashboardDetails?.progresses || []
+  )
     .filter((progress) => !progress.isCustomResource)
     .sort((a, b) => {
       const updatedAtA = new Date(a.updatedAt);
@@ -156,7 +158,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     });
 
   const aiGeneratedRoadmaps = personalDashboardDetails?.aiRoadmaps || [];
-  const customRoadmaps = (personalDashboardDetails?.progresses || [])
+
+  const customRoadmaps: UserProgress[] = (
+    personalDashboardDetails?.progresses || []
+  )
     .filter((progress) => progress.isCustomResource)
     .sort((a, b) => {
       const updatedAtA = new Date(a.updatedAt);
@@ -231,8 +236,23 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
   const { username } = personalDashboardDetails || {};
 
+  // later on it will be switching of version based on localstorage
+  if (true) {
+    return (
+      <div className="min-h-screen bg-slate-900">
+        <FavoriteRoadmaps
+          progress={learningRoadmapsToShow}
+          customRoadmaps={customRoadmaps}
+          aiRoadmaps={aiGeneratedRoadmaps}
+          projects={enrichedProjects || []}
+          isLoading={isLoading}
+        />
+      </div>
+    );
+  }
+
   return (
-    <section>
+    <section className="container">
       {isLoading ? (
         <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
       ) : (

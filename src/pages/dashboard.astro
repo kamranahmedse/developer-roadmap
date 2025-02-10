@@ -56,7 +56,7 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
 });
 ---
 
-<BaseLayout title='Dashboard' noIndex={true} permalink="/dashboard">
+<BaseLayout title='Dashboard' noIndex={true} permalink='/dashboard'>
   <DashboardPage
     builtInRoleRoadmaps={enrichedRoleRoadmaps}
     builtInSkillRoadmaps={enrichedSkillRoadmaps}
@@ -64,5 +64,5 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
     client:load
   />
   <div slot='open-source-banner'></div>
-  <div slot="changelog-banner" />
+  <div slot='changelog-banner'></div>
 </BaseLayout>
