@@ -104,16 +104,16 @@ Go and Java are powerful languages with distinct approaches to handling errors. 
 
 ```go
 func divide(a, b int) (int, error) {
-    if b == 0 {
-        return 0, errors.New("division by zero")
-    }
-    return a / b, nil
+	if b == 0 {
+		return 0, errors.New("division by zero")
+	}
+	return a / b, nil
 }
 
 // Usage
 result, err := divide(10, 0)
 if err != nil {
-    log.Fatal(err)
+	log.Fatal(err)
 }
 ```
 
