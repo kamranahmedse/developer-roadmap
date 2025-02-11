@@ -32,10 +32,10 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
   return (
     <div
       className={cn(
-        'transition-all',
+        'border-b border-gray-800/50',
         {
-          'pb-2 pt-5': !isCollapsed,
-          'py-1': isCollapsed,
+          'py-4': !isCollapsed,
+          'py-3': isCollapsed,
         },
         className,
       )}
@@ -52,7 +52,7 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
           }}
         />
         {!isCollapsed && (
-          <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:grid-cols-3">
             {children}
           </div>
         )}

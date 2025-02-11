@@ -24,14 +24,16 @@ export function HeroTitle(props: HeroTitleProps) {
 
   return (
     <div className="flex items-center justify-between">
-      <p className="flex items-center text-sm text-gray-400">
-        {!isLoading && icon}
-        {isLoading && (
-          <span className="mr-1.5">
-            <Spinner />
-          </span>
-        )}
-        {title}
+      <div className="flex items-center gap-3">
+        <p className="flex items-center text-sm text-gray-400">
+          {!isLoading && icon}
+          {isLoading && (
+            <span className="mr-1.5">
+              <Spinner />
+            </span>
+          )}
+          {title}
+        </p>
         {!isLoading && (
           <button
             onClick={onToggleCollapse}
@@ -55,8 +57,8 @@ export function HeroTitle(props: HeroTitleProps) {
             )}
           </button>
         )}
-      </p>
-      <div>{isCollapsed && rightContent}</div>
+      </div>
+      <div className="flex items-center">{!isCollapsed && rightContent}</div>
     </div>
   );
 }
