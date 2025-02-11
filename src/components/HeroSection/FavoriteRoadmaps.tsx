@@ -65,7 +65,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<CheckIcon additionalClasses="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your progress and bookmarks"
-        isEmpty={progress.length === 0}
+        isEmpty={!isLoading && progress.length === 0}
         emptyTitle={
           <>
             No bookmarked roadmaps yet
@@ -102,7 +102,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<MapIcon className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your custom roadmaps"
-        isEmpty={customRoadmaps.length === 0}
+        isEmpty={!isLoading && customRoadmaps.length === 0}
         emptyTitle={
           <>
             No custom roadmaps found
@@ -140,19 +140,17 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<Sparkle className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your AI roadmaps"
-        isEmpty={aiRoadmaps.length === 0}
+        isEmpty={!isLoading && aiRoadmaps.length === 0}
         emptyTitle={
           <>
             No AI roadmaps found
-            <button
-              onClick={() => {
-                setIsCreatingCustomRoadmap(true);
-              }}
+            <a
+              href="/ai"
               className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
             >
               <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
               Generate AI roadmap
-            </button>
+            </a>
           </>
         }
       >
@@ -184,7 +182,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<FolderKanban className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your active projects"
-        isEmpty={projectsToShow.length === 0}
+        isEmpty={!isLoading && projectsToShow.length === 0}
         emptyTitle={
           <>
             No active projects found
