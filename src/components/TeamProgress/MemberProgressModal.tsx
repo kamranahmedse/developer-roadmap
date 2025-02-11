@@ -1,7 +1,8 @@
+import '../FrameRenderer/FrameRenderer.css';
+import '../EditorRoadmap/EditorRoadmapRenderer.css';
 import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { Spinner } from '../ReactIcons/Spinner';
-import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
@@ -59,6 +60,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     useState<MemberProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
+  const [renderer, setRenderer] = useState<PageType['renderer']>('balsamiq');
 
   let resourceJsonUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
@@ -98,6 +100,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     }
 
     const renderer = page.renderer || 'balsamiq';
+    setRenderer(renderer);
 
     const res = await fetch(jsonUrl, {});
     const json = await res.json();
@@ -275,7 +278,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   return (
     <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
-        id={'customized-roadmap'}
+        id={renderer === 'editor' ? undefined : 'customized-roadmap'}
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div
