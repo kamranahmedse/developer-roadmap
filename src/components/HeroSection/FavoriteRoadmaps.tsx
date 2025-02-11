@@ -29,18 +29,10 @@ type FavoriteRoadmapsProps = {
   customRoadmaps: UserProgress[];
   aiRoadmaps: AIRoadmapType[];
   isLoading: boolean;
-  isAllCollapsed: boolean;
 };
 
 export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
-  const {
-    progress,
-    isLoading,
-    customRoadmaps,
-    aiRoadmaps,
-    projects,
-    isAllCollapsed,
-  } = props;
+  const { progress, isLoading, customRoadmaps, aiRoadmaps, projects } = props;
   const [showCompleted, setShowCompleted] = useState(false);
 
   const completedProjects = projects.filter(
@@ -61,7 +53,6 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<CheckIcon additionalClasses="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your progress and bookmarks"
-        isAllCollapsed={isAllCollapsed}
       >
         {progress.map((resource) => (
           <HeroRoadmap
@@ -87,7 +78,6 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<MapIcon className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your custom roadmaps"
-        isAllCollapsed={isAllCollapsed}
       >
         {customRoadmaps.map((customRoadmap) => (
           <HeroRoadmap
@@ -111,7 +101,6 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<Sparkle className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your AI roadmaps"
-        isAllCollapsed={isAllCollapsed}
       >
         {aiRoadmaps.map((aiRoadmap) => (
           <HeroRoadmap
@@ -141,7 +130,6 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<FolderKanban className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your active projects"
-        isAllCollapsed={isAllCollapsed}
         rightContent={
           completedProjects.length > 0 && (
             <button

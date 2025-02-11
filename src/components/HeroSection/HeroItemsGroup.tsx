@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { cn } from '../../lib/classname';
 import { HeroTitle } from './HeroTitle';
 
@@ -7,7 +7,6 @@ type HeroItemsGroupProps = {
   isLoading?: boolean;
   title: string | ReactNode;
   rightContent?: ReactNode;
-  isAllCollapsed?: boolean;
   children?: ReactNode;
   className?: string;
 };
@@ -18,24 +17,34 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
     isLoading = false,
     title,
     rightContent,
-    isAllCollapsed = false,
     children,
     className,
   } = props;
 
-  const [isCollapsed, setIsCollapsed] = useState(isLoading || isAllCollapsed);
+  const isInitialRender = useRef(true);
+
+  const storageKey = `hero-group-${title}-collapsed`;
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  function isCollapsedByStorage() {
+    const stored = localStorage.getItem(storageKey);
+
+    return stored === 'true';
+  }
 
   useEffect(() => {
-    setIsCollapsed(isAllCollapsed || isLoading);
-  }, [isAllCollapsed, isLoading]);
+    setIsCollapsed(isCollapsedByStorage());
+  }, [isLoading]);
+
+  const isLoadingOrCollapsed = isLoading || isCollapsed;
 
   return (
     <div
       className={cn(
         'border-b border-gray-800/50',
         {
-          'py-4': !isCollapsed,
-          'py-3': isCollapsed,
+          'py-4': !isLoadingOrCollapsed,
+          'py-3': isLoadingOrCollapsed,
           'opacity-50 transition-opacity hover:opacity-100':
             isCollapsed && !isLoading,
         },
@@ -51,9 +60,10 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
           isCollapsed={isCollapsed}
           onToggleCollapse={() => {
             setIsCollapsed(!isCollapsed);
+            localStorage.setItem(storageKey, (!isCollapsed).toString());
           }}
         />
-        {!isCollapsed && (
+        {!isLoadingOrCollapsed && (
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:grid-cols-3">
             {children}
           </div>

@@ -59,8 +59,6 @@ type DashboardStatsProps = {
   topicsDoneToday?: number;
   finishedProjectsCount?: number;
   isLoading: boolean;
-  isAllCollapsed: boolean;
-  onToggleCollapseAll: () => void;
 };
 
 type DashboardStatItemProps = {
@@ -101,8 +99,6 @@ function DashboardStats(props: DashboardStatsProps) {
     topicsDoneToday = 0,
     finishedProjectsCount = 0,
     isLoading,
-    onToggleCollapseAll,
-    isAllCollapsed,
   } = props;
 
   return (
@@ -130,23 +126,6 @@ function DashboardStats(props: DashboardStatsProps) {
           isLoading={isLoading}
         /> */}
       </div>
-
-      <button
-        className="flex items-center gap-1 rounded-lg border border-transparent py-1.5 pl-3 pr-3 text-xs uppercase tracking-wide text-slate-400 hover:border-slate-800 hover:bg-slate-800"
-        onClick={onToggleCollapseAll}
-      >
-        {isAllCollapsed ? (
-          <>
-            <ChevronsUpDown className="size-3" />
-            <span>Expand All</span>
-          </>
-        ) : (
-          <>
-            <ChevronsDownUp className="size-3" />
-            <span>Collapse All</span>
-          </>
-        )}
-      </button>
     </div>
   );
 }
@@ -161,7 +140,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
-  const [isAllCollapsed, setIsAllCollapsed] = useState(false);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
   const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
@@ -305,10 +283,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         isLoading={isLoading}
         accountStreak={accountStreak}
         topicsDoneToday={personalDashboardDetails?.topicDoneToday}
-        onToggleCollapseAll={() => {
-          setIsAllCollapsed(!isAllCollapsed);
-        }}
-        isAllCollapsed={isAllCollapsed}
         finishedProjectsCount={
           enrichedProjects?.filter((p) => p.submittedAt && p.repositoryUrl)
             .length
@@ -321,7 +295,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         aiRoadmaps={aiGeneratedRoadmaps}
         projects={enrichedProjects || []}
         isLoading={isLoading}
-        isAllCollapsed={isAllCollapsed}
       />
 
       <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
