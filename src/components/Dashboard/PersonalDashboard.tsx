@@ -1,9 +1,11 @@
 import { useStore } from '@nanostores/react';
 import {
+  ChartColumn,
   CheckCircle,
-  ChevronsDownUp,
-  ChevronsUpDown,
+  CheckSquare,
   FolderGit2,
+  Pencil,
+  SquarePen,
   Zap,
   type LucideIcon,
 } from 'lucide-react';
@@ -19,9 +21,9 @@ import {
   FavoriteRoadmaps,
   type AIRoadmapType,
 } from '../HeroSection/FavoriteRoadmaps.tsx';
+import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 
 type UserDashboardResponse = {
   name: string;
@@ -52,13 +54,6 @@ type PersonalDashboardProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
-};
-
-type DashboardStatsProps = {
-  accountStreak?: StreakResponse;
-  topicsDoneToday?: number;
-  finishedProjectsCount?: number;
-  isLoading: boolean;
 };
 
 type DashboardStatItemProps = {
@@ -93,38 +88,108 @@ function DashboardStatItem(props: DashboardStatItemProps) {
   );
 }
 
+type ProfileButtonProps = {
+  isLoading: boolean;
+  name?: string;
+  username?: string;
+  avatar?: string;
+};
+
+function PersonalProfileButton(props: ProfileButtonProps) {
+  const { isLoading, name, username, avatar } = props;
+
+  if (isLoading || !username) {
+    return (
+      <a
+        href="/account/update-profile"
+        className={cn(
+          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
+          {
+            'striped-loader-slate striped-loader-slate-fast text-transparent':
+              isLoading,
+            'bg-blue-500/10 text-blue-500 hover:bg-blue-500/20': !isLoading,
+          },
+        )}
+      >
+        <CheckSquare className="h-4 w-4" strokeWidth={2.5} />
+        Set up your profile
+      </a>
+    );
+  }
+
+  return (
+    <div className="flex gap-1.5">
+      <a
+        href={`/u/${username}`}
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-300 transition-colors hover:bg-slate-800/70"
+      >
+        <img
+          src={avatar}
+          alt={name || 'Profile'}
+          className="h-5 w-5 rounded-full ring-1 ring-slate-700"
+        />
+        <span className="font-medium">Visit Profile</span>
+      </a>
+      <a
+        href="/account/update-profile"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
+        title="Edit Profile"
+      >
+        <SquarePen className="h-4 w-4" />
+      </a>
+    </div>
+  );
+}
+
+type DashboardStatsProps = {
+  profile: ProfileButtonProps;
+  accountStreak?: StreakResponse;
+  topicsDoneToday?: number;
+  finishedProjectsCount?: number;
+  isLoading: boolean;
+};
+
 function DashboardStats(props: DashboardStatsProps) {
   const {
     accountStreak,
     topicsDoneToday = 0,
     finishedProjectsCount = 0,
     isLoading,
+    profile,
   } = props;
 
   return (
     <div className="container mb-3 flex items-center justify-between gap-2 pb-2 pt-6 text-sm text-slate-400">
-      <div className="flex items-center gap-2">
-        <DashboardStatItem
-          icon={Zap}
-          iconClassName="text-yellow-500"
-          value={accountStreak?.count || 0}
-          label="day streak"
+      <div className="flex w-full items-center justify-between gap-2">
+        <PersonalProfileButton
           isLoading={isLoading}
+          name={profile.name}
+          username={profile.username}
+          avatar={profile.avatar}
         />
-        <DashboardStatItem
-          icon={CheckCircle}
-          iconClassName="text-green-500"
-          value={topicsDoneToday}
-          label="topics done today"
-          isLoading={isLoading}
-        />
-        {/* <DashboardStatItem
-          icon={FolderGit2}
-          iconClassName="text-blue-500"
-          value={finishedProjectsCount}
-          label="projects finished"
-          isLoading={isLoading}
-        /> */}
+        <div className="flex items-center gap-2">
+          <DashboardStatItem
+            icon={Zap}
+            iconClassName="text-yellow-500"
+            value={accountStreak?.count || 0}
+            label="day streak"
+            isLoading={isLoading}
+          />
+          <DashboardStatItem
+            icon={ChartColumn}
+            iconClassName="text-green-500"
+            value={topicsDoneToday}
+            label="learnt today"
+            isLoading={isLoading}
+          />
+          <DashboardStatItem
+            icon={FolderGit2}
+            iconClassName="text-blue-500"
+            value={finishedProjectsCount}
+            label="projects finished"
+            isLoading={isLoading}
+          />
+        </div>
       </div>
     </div>
   );
@@ -280,6 +345,12 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   return (
     <div>
       <DashboardStats
+        profile={{
+          name,
+          username,
+          avatar: avatarLink,
+          isLoading,
+        }}
         isLoading={isLoading}
         accountStreak={accountStreak}
         topicsDoneToday={personalDashboardDetails?.topicDoneToday}
