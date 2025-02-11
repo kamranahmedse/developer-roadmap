@@ -11,6 +11,8 @@ import { DashboardTabButton } from './DashboardTabButton';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
 import type { QuestionGroupType } from '../../lib/question-group';
+import type { GuideFileType } from '../../lib/guide';
+import type { VideoFileType } from '../../lib/video';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
@@ -18,6 +20,8 @@ type DashboardPageProps = {
   builtInBestPractices?: BuiltInRoadmap[];
   isTeamPage?: boolean;
   questionGroups?: QuestionGroupType[];
+  guides?: GuideFileType[];
+  videos?: VideoFileType[];
 };
 
 export function DashboardPage(props: DashboardPageProps) {
@@ -27,6 +31,8 @@ export function DashboardPage(props: DashboardPageProps) {
     builtInSkillRoadmaps,
     isTeamPage = false,
     questionGroups,
+    guides,
+    videos,
   } = props;
 
   const currentUser = getUser();
@@ -128,6 +134,8 @@ export function DashboardPage(props: DashboardPageProps) {
               builtInSkillRoadmaps={builtInSkillRoadmaps}
               builtInBestPractices={builtInBestPractices}
               questionGroups={questionGroups}
+              guides={guides}
+              videos={videos}
             />
           </div>
         )}

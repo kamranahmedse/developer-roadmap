@@ -26,6 +26,11 @@ import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import { projectGroups } from '../../pages/index.astro';
 import type { QuestionGroupType } from '../../lib/question-group';
+import { FeaturedGuideList } from '../FeaturedGuides/FeaturedGuideList';
+import { FeaturedVideoList } from '../FeaturedVideos/FeaturedVideoList';
+import type { GuideFileType } from '../../lib/guide';
+import type { VideoFileType } from '../../lib/video';
+
 type UserDashboardResponse = {
   name: string;
   email: string;
@@ -56,6 +61,8 @@ type PersonalDashboardProps = {
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
   questionGroups?: QuestionGroupType[];
+  guides?: GuideFileType[];
+  videos?: VideoFileType[];
 };
 
 type DashboardStatItemProps = {
@@ -203,6 +210,8 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     builtInBestPractices = [],
     builtInSkillRoadmaps = [],
     questionGroups = [],
+    guides = [],
+    videos = [],
   } = props;
 
   const toast = useToast();
@@ -528,6 +537,17 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16">
+        <FeaturedGuideList
+          heading="Guides"
+          guides={guides}
+          questions={questionGroups
+            .filter((questionGroup) => questionGroup.frontmatter.authorId)
+            .slice(0, 7)}
+        />
+        <FeaturedVideoList heading="Videos" videos={videos} />
       </div>
     </div>
   );

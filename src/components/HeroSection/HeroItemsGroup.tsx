@@ -46,7 +46,7 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
         'border-b border-gray-800/50',
         {
           'py-4': !isLoadingOrCollapsedOrEmpty,
-          'py-3': isLoadingOrCollapsedOrEmpty,
+          'py-4 ': isLoadingOrCollapsedOrEmpty,
           'opacity-50 transition-opacity hover:opacity-100':
             isCollapsed && !isLoading,
         },

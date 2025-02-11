@@ -3,7 +3,7 @@ import slugify from 'slugify';
 import { getAllAuthors, type AuthorFileType } from './author.ts';
 import { getAllGuides } from './guide.ts';
 
-interface RawQuestionGroupFrontmatter {
+export interface RawQuestionGroupFrontmatter {
   order: number;
   briefTitle: string;
   briefDescription: string;

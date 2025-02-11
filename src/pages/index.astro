@@ -1,15 +1,15 @@
 ---
-import FeaturedVideos from '../components/FeaturedVideos.astro';
-import FeaturedGuides from '../components/FeaturedGuides.astro';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
+import { FeaturedGuideList } from '../components/FeaturedGuides/FeaturedGuideList';
 import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
+import { FeaturedVideoList } from '../components/FeaturedVideos/FeaturedVideoList';
 import HeroSection from '../components/HeroSection/HeroSection.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
 import { getAllGuides } from '../lib/guide';
+import { getAllQuestionGroups } from '../lib/question-group';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
-import { getAllQuestionGroups } from '../lib/question-group';
-import ChangelogBanner from '../components/ChangelogBanner.astro';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
@@ -105,12 +105,12 @@ const videos = await getAllVideos();
     />
 
     <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
-      <FeaturedGuides
+      <FeaturedGuideList
         heading='Guides'
         guides={guides.slice(0, 7)}
         questions={questionGuides.slice(0, 7)}
       />
-      <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
+      <FeaturedVideoList heading='Videos' videos={videos.slice(0, 7)} />
     </div>
   </div>
   <ChangelogBanner slot='changelog-banner' />
