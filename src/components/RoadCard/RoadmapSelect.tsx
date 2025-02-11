@@ -1,8 +1,8 @@
 import { httpGet } from '../../lib/http';
 import { useEffect, useState } from 'react';
 import { pageProgressMessage } from '../../stores/page';
-import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps';
 import { SelectionButton } from './SelectionButton';
+import type { UserProgressResponse } from '../Roadmaps/RoadmapsPage';
 
 type RoadmapSelectProps = {
   selectedRoadmaps: string[];

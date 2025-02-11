@@ -1,23 +1,35 @@
-import { type JSXElementConstructor, useEffect, useState } from 'react';
-import { httpGet } from '../../lib/http';
-import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
-import type { PageType } from '../CommandMenu/CommandMenu';
-import { useToast } from '../../hooks/use-toast';
-import { getCurrentPeriod } from '../../lib/date';
-import { ListDashboardCustomProgress } from './ListDashboardCustomProgress';
-import { RecommendedRoadmaps } from './RecommendedRoadmaps';
-import { ProgressStack } from './ProgressStack';
 import { useStore } from '@nanostores/react';
-import { $accountStreak, type StreakResponse } from '../../stores/streak';
-import { CheckEmoji } from '../ReactIcons/CheckEmoji.tsx';
-import { ConstructionEmoji } from '../ReactIcons/ConstructionEmoji.tsx';
-import { BookEmoji } from '../ReactIcons/BookEmoji.tsx';
-import { DashboardAiRoadmaps } from './DashboardAiRoadmaps.tsx';
+import {
+  ChartColumn,
+  CheckCircle,
+  CheckSquare,
+  FolderGit2,
+  Pencil,
+  SquarePen,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
-import { PencilIcon, type LucideIcon } from 'lucide-react';
+import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname.ts';
+import { httpGet } from '../../lib/http';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import { $accountStreak, type StreakResponse } from '../../stores/streak';
+import type { PageType } from '../CommandMenu/CommandMenu';
+import {
+  FavoriteRoadmaps,
+  type AIRoadmapType,
+} from '../HeroSection/FavoriteRoadmaps.tsx';
+import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
+import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
+import type { UserProgress } from '../TeamProgress/TeamProgressPage';
+import { projectGroups } from '../../pages/index.astro';
+import type { QuestionGroupType } from '../../lib/question-group';
+import { FeaturedGuideList } from '../FeaturedGuides/FeaturedGuideList';
+import { FeaturedVideoList } from '../FeaturedVideos/FeaturedVideoList';
+import type { GuideFileType } from '../../lib/guide';
+import type { VideoFileType } from '../../lib/video';
 
 type UserDashboardResponse = {
   name: string;
@@ -28,11 +40,7 @@ type UserDashboardResponse = {
   profileVisibility: AllowedProfileVisibility;
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
-  aiRoadmaps: {
-    id: string;
-    title: string;
-    slug: string;
-  }[];
+  aiRoadmaps: AIRoadmapType[];
   topicDoneToday: number;
 };
 
@@ -42,6 +50,7 @@ export type BuiltInRoadmap = {
   title: string;
   description: string;
   isFavorite?: boolean;
+  isNew?: boolean;
   relatedRoadmapIds?: string[];
   renderer?: AllowedRoadmapRenderer;
   metadata?: Record<string, any>;
@@ -51,16 +60,162 @@ type PersonalDashboardProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
+  questionGroups?: QuestionGroupType[];
+  guides?: GuideFileType[];
+  videos?: VideoFileType[];
 };
+
+type DashboardStatItemProps = {
+  icon: LucideIcon;
+  iconClassName: string;
+  value: number;
+  label: string;
+  isLoading: boolean;
+};
+
+function DashboardStatItem(props: DashboardStatItemProps) {
+  const { icon: Icon, iconClassName, value, label, isLoading } = props;
+
+  return (
+    <div
+      className={cn(
+        'flex items-center gap-1.5 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3',
+        {
+          'striped-loader-slate striped-loader-slate-fast text-transparent':
+            isLoading,
+        },
+      )}
+    >
+      <Icon
+        size={16}
+        className={cn(iconClassName, { 'text-transparent': isLoading })}
+      />
+      <span>
+        <span className="tabular-nums">{value}</span> {label}
+      </span>
+    </div>
+  );
+}
+
+type ProfileButtonProps = {
+  isLoading: boolean;
+  name?: string;
+  username?: string;
+  avatar?: string;
+};
+
+function PersonalProfileButton(props: ProfileButtonProps) {
+  const { isLoading, name, username, avatar } = props;
+
+  if (isLoading || !username) {
+    return (
+      <a
+        href="/account/update-profile"
+        className={cn(
+          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
+          {
+            'striped-loader-slate striped-loader-slate-fast text-transparent':
+              isLoading,
+            'bg-blue-500/10 text-blue-500 hover:bg-blue-500/20': !isLoading,
+          },
+        )}
+      >
+        <CheckSquare className="h-4 w-4" strokeWidth={2.5} />
+        Set up your profile
+      </a>
+    );
+  }
+
+  return (
+    <div className="flex gap-1.5">
+      <a
+        href={`/u/${username}`}
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-300 transition-colors hover:bg-slate-800/70"
+      >
+        <img
+          src={avatar}
+          alt={name || 'Profile'}
+          className="h-5 w-5 rounded-full ring-1 ring-slate-700"
+        />
+        <span className="font-medium">Visit Profile</span>
+      </a>
+      <a
+        href="/account/update-profile"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
+        title="Edit Profile"
+      >
+        <SquarePen className="h-4 w-4" />
+      </a>
+    </div>
+  );
+}
+
+type DashboardStatsProps = {
+  profile: ProfileButtonProps;
+  accountStreak?: StreakResponse;
+  topicsDoneToday?: number;
+  finishedProjectsCount?: number;
+  isLoading: boolean;
+};
+
+function DashboardStats(props: DashboardStatsProps) {
+  const {
+    accountStreak,
+    topicsDoneToday = 0,
+    finishedProjectsCount = 0,
+    isLoading,
+    profile,
+  } = props;
+
+  return (
+    <div className="container mb-3 flex flex-col gap-4 pb-2 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <PersonalProfileButton
+          isLoading={isLoading}
+          name={profile.name}
+          username={profile.username}
+          avatar={profile.avatar}
+        />
+        <div className="hidden flex-wrap items-center gap-2 md:flex">
+          <DashboardStatItem
+            icon={Zap}
+            iconClassName="text-yellow-500"
+            value={accountStreak?.count || 0}
+            label="day streak"
+            isLoading={isLoading}
+          />
+          <DashboardStatItem
+            icon={ChartColumn}
+            iconClassName="text-green-500"
+            value={topicsDoneToday}
+            label="learnt today"
+            isLoading={isLoading}
+          />
+          <DashboardStatItem
+            icon={FolderGit2}
+            iconClassName="text-blue-500"
+            value={finishedProjectsCount}
+            label="projects finished"
+            isLoading={isLoading}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function PersonalDashboard(props: PersonalDashboardProps) {
   const {
     builtInRoleRoadmaps = [],
     builtInBestPractices = [],
     builtInSkillRoadmaps = [],
+    questionGroups = [],
+    guides = [],
+    videos = [],
   } = props;
 
   const toast = useToast();
+
   const [isLoading, setIsLoading] = useState(true);
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
@@ -138,7 +293,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     return () => window.removeEventListener('refresh-favorites', loadProgress);
   }, []);
 
-  const learningRoadmapsToShow = (personalDashboardDetails?.progresses || [])
+  const learningRoadmapsToShow: UserProgress[] = (
+    personalDashboardDetails?.progresses || []
+  )
     .filter((progress) => !progress.isCustomResource)
     .sort((a, b) => {
       const updatedAtA = new Date(a.updatedAt);
@@ -156,7 +313,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     });
 
   const aiGeneratedRoadmaps = personalDashboardDetails?.aiRoadmaps || [];
-  const customRoadmaps = (personalDashboardDetails?.progresses || [])
+
+  const customRoadmaps: UserProgress[] = (
+    personalDashboardDetails?.progresses || []
+  )
     .filter((progress) => progress.isCustomResource)
     .sort((a, b) => {
       const updatedAtA = new Date(a.updatedAt);
@@ -168,43 +328,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const avatarLink = avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
     : '/images/default-avatar.png';
-
-  const allRoadmapsAndBestPractices = [
-    ...builtInRoleRoadmaps,
-    ...builtInSkillRoadmaps,
-    ...builtInBestPractices,
-  ];
-
-  const relatedRoadmapIds = allRoadmapsAndBestPractices
-    // take the ones that user is learning
-    .filter((roadmap) =>
-      learningRoadmapsToShow?.some(
-        (learningRoadmap) => learningRoadmap.resourceId === roadmap.id,
-      ),
-    )
-    .flatMap((roadmap) => roadmap.relatedRoadmapIds)
-    // remove the ones that user is already learning or has bookmarked
-    .filter(
-      (roadmapId) =>
-        !learningRoadmapsToShow.some((lr) => lr.resourceId === roadmapId),
-    );
-
-  const recommendedRoadmapIds = new Set(
-    relatedRoadmapIds.length === 0
-      ? [
-          'frontend',
-          'backend',
-          'devops',
-          'ai-data-scientist',
-          'full-stack',
-          'api-design',
-        ]
-      : relatedRoadmapIds,
-  );
-
-  const recommendedRoadmaps = allRoadmapsAndBestPractices.filter((roadmap) =>
-    recommendedRoadmapIds.has(roadmap.id),
-  );
 
   const enrichedProjects = personalDashboardDetails?.projects
     .map((project) => {
@@ -232,165 +355,200 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const { username } = personalDashboardDetails || {};
 
   return (
-    <section>
-      {isLoading ? (
-        <div className="h-7 w-1/4 animate-pulse rounded-lg bg-gray-200"></div>
-      ) : (
-        <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center">
-          <h2 className="text-lg font-medium">
-            Hi {name}, good {getCurrentPeriod()}!
-          </h2>
-          <a
-            href="/home"
-            className="rounded-full bg-gray-200 px-2.5 py-1 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
-          >
-            Visit Homepage
-          </a>
-        </div>
-      )}
-
-      <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
-        {isLoading ? (
-          <>
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-            <DashboardCardSkeleton />
-          </>
-        ) : (
-          <>
-            <DashboardCard
-              imgUrl={avatarLink}
-              title={name!}
-              description={
-                username ? 'View your profile' : 'Setup your profile'
-              }
-              href={username ? `/u/${username}` : '/account/update-profile'}
-              {...(username && {
-                externalLinkIcon: PencilIcon,
-                externalLinkHref: '/account/update-profile',
-                externalLinkText: 'Edit',
-              })}
-              className={
-                !username
-                  ? 'border-dashed border-gray-500 bg-gray-100 hover:border-gray-500 hover:bg-gray-200'
-                  : ''
-              }
-            />
-
-            <DashboardCard
-              icon={BookEmoji}
-              title="Visit Roadmaps"
-              description="Learn new skills"
-              href="/roadmaps"
-            />
-
-            <DashboardCard
-              icon={ConstructionEmoji}
-              title="Build Projects"
-              description="Practice what you learn"
-              href="/projects"
-            />
-            <DashboardCard
-              icon={CheckEmoji}
-              title="Best Practices"
-              description="Do things the right way"
-              href="/best-practices"
-            />
-          </>
-        )}
-      </div>
-
-      <ProgressStack
-        progresses={learningRoadmapsToShow}
-        projects={enrichedProjects || []}
+    <div>
+      <DashboardStats
+        profile={{
+          name,
+          username,
+          avatar: avatarLink,
+          isLoading,
+        }}
         isLoading={isLoading}
         accountStreak={accountStreak}
-        topicDoneToday={personalDashboardDetails?.topicDoneToday || 0}
+        topicsDoneToday={personalDashboardDetails?.topicDoneToday}
+        finishedProjectsCount={
+          enrichedProjects?.filter((p) => p.submittedAt && p.repositoryUrl)
+            .length
+        }
       />
 
-      <ListDashboardCustomProgress
-        progresses={customRoadmaps}
+      <FavoriteRoadmaps
+        progress={learningRoadmapsToShow}
+        customRoadmaps={customRoadmaps}
+        aiRoadmaps={aiGeneratedRoadmaps}
+        projects={enrichedProjects || []}
         isLoading={isLoading}
       />
 
-      <DashboardAiRoadmaps
-        roadmaps={aiGeneratedRoadmaps}
-        isLoading={isLoading}
-      />
+      <div className="bg-gradient-to-b from-slate-900 to-black pb-12">
+        <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2
+              id="role-based-roadmaps"
+              className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
+            >
+              Role Based Roadmaps
+            </h2>
 
-      <RecommendedRoadmaps
-        roadmaps={recommendedRoadmaps}
-        isLoading={isLoading}
-      />
-    </section>
-  );
-}
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
+              {builtInRoleRoadmaps.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
 
-type DashboardCardProps = {
-  icon?: JSXElementConstructor<any>;
-  imgUrl?: string;
-  title: string;
-  description: string;
-  href: string;
-  externalLinkIcon?: LucideIcon;
-  externalLinkText?: string;
-  externalLinkHref?: string;
-  className?: string;
-};
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
 
-function DashboardCard(props: DashboardCardProps) {
-  const {
-    icon: Icon,
-    imgUrl,
-    title,
-    description,
-    href,
-    externalLinkHref,
-    externalLinkIcon: ExternalLinkIcon,
-    externalLinkText,
-    className,
-  } = props;
-
-  return (
-    <div className={cn('relative overflow-hidden', className)}>
-      <a
-        href={href}
-        className="flex flex-col rounded-lg border border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50"
-      >
-        {Icon && (
-          <div className="px-4 pb-3 pt-4">
-            <Icon className="size-6" />
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="roadmap"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
           </div>
-        )}
-
-        {imgUrl && (
-          <div className="px-4 pb-1.5 pt-3.5">
-            <img src={imgUrl} alt={title} className="size-8 rounded-full" />
-          </div>
-        )}
-
-        <div className="flex grow flex-col justify-center gap-0.5 p-4">
-          <h3 className="truncate font-medium text-black">{title}</h3>
-          <p className="text-xs text-black">{description}</p>
         </div>
-      </a>
 
-      {externalLinkHref && (
-        <a
-          href={externalLinkHref}
-          className="absolute right-1 top-1 flex items-center gap-1.5 rounded-md bg-gray-200 p-1 px-2 text-xs text-gray-600 hover:bg-gray-300 hover:text-black"
-        >
-          {ExternalLinkIcon && <ExternalLinkIcon className="size-3" />}
-          {externalLinkText}
-        </a>
-      )}
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Skill Based Roadmaps
+            </h2>
+
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
+              {builtInSkillRoadmaps.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
+
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
+
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="roadmap"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Project Ideas
+            </h2>
+
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
+              {projectGroups.map((projectGroup) => {
+                return (
+                  <HeroRoadmap
+                    percentageDone={0}
+                    key={projectGroup.id}
+                    resourceId={projectGroup.id}
+                    resourceType="roadmap"
+                    resourceTitle={projectGroup.title}
+                    url={`/${projectGroup.id}/projects`}
+                    allowFavorite={false}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Best Practices
+            </h2>
+
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
+              {builtInBestPractices.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
+
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
+
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="best-practice"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/best-practices/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Questions
+            </h2>
+
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
+              {questionGroups.map((questionGroup) => {
+                return (
+                  <HeroRoadmap
+                    percentageDone={0}
+                    key={questionGroup.id}
+                    resourceId={questionGroup.id}
+                    resourceType="roadmap"
+                    resourceTitle={questionGroup.frontmatter.briefTitle}
+                    url={`/questions/${questionGroup.id}`}
+                    allowFavorite={false}
+                    isNew={questionGroup.frontmatter.isNew}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-5 bg-gray-50 px-4 py-5 sm:gap-16 sm:px-0 sm:py-16">
+        <FeaturedGuideList
+          heading="Guides"
+          guides={guides}
+          questions={questionGroups
+            .filter((questionGroup) => questionGroup.frontmatter.authorId)
+            .slice(0, 7)}
+        />
+        <FeaturedVideoList heading="Videos" videos={videos} />
+      </div>
     </div>
-  );
-}
-
-function DashboardCardSkeleton() {
-  return (
-    <div className="h-[128px] animate-pulse rounded-lg border border-gray-300 bg-white"></div>
   );
 }

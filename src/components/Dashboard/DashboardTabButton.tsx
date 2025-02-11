@@ -11,7 +11,7 @@ type DashboardTabProps = {
   icon?: ReactNode;
 };
 
-export function DashboardTab(props: DashboardTabProps) {
+export function DashboardTabButton(props: DashboardTabProps) {
   const { isActive, onClick, label, className, href, avatar, icon } = props;
 
   const Slot = href ? 'a' : 'button';
@@ -20,8 +20,10 @@ export function DashboardTab(props: DashboardTabProps) {
     <Slot
       onClick={onClick}
       className={cn(
-        'flex h-[30px] shrink-0 items-center gap-1 rounded-md border bg-white p-1.5 px-2 text-sm leading-none text-gray-600',
-        isActive ? 'border-gray-500 bg-gray-200 text-gray-900' : '',
+        'flex h-[30px] shrink-0 items-center gap-1 rounded-md border border-slate-700 bg-slate-800 p-1.5 pl-2 pr-3 text-sm leading-none text-gray-400 transition-colors hover:bg-slate-700',
+        isActive
+          ? 'border-slate-200 bg-slate-200 text-gray-900 hover:bg-slate-200'
+          : '',
         className,
       )}
       {...(href ? { href } : {})}
@@ -30,7 +32,7 @@ export function DashboardTab(props: DashboardTabProps) {
         <img
           src={avatar}
           alt="avatar"
-          className="h-4 w-4 mr-0.5 rounded-full object-cover"
+          className="mr-0.5 h-4 w-4 rounded-full object-cover"
         />
       )}
       {icon}

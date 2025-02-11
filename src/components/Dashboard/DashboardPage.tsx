@@ -1,20 +1,27 @@
-import { useEffect, useState } from 'react';
-import { httpGet } from '../../lib/http';
-import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/react';
+import { useEffect, useState } from 'react';
+import { cn } from '../../../editor/utils/classname';
+import { useParams } from '../../hooks/use-params';
+import { useToast } from '../../hooks/use-toast';
+import { httpGet } from '../../lib/http';
+import { getUser } from '../../lib/jwt';
 import { $teamList } from '../../stores/team';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
-import { DashboardTab } from './DashboardTab';
+import { DashboardTabButton } from './DashboardTabButton';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
-import { getUser } from '../../lib/jwt';
-import { useParams } from '../../hooks/use-params';
+import type { QuestionGroupType } from '../../lib/question-group';
+import type { GuideFileType } from '../../lib/guide';
+import type { VideoFileType } from '../../lib/video';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
   isTeamPage?: boolean;
+  questionGroups?: QuestionGroupType[];
+  guides?: GuideFileType[];
+  videos?: VideoFileType[];
 };
 
 export function DashboardPage(props: DashboardPageProps) {
@@ -23,6 +30,9 @@ export function DashboardPage(props: DashboardPageProps) {
     builtInBestPractices,
     builtInSkillRoadmaps,
     isTeamPage = false,
+    questionGroups,
+    guides,
+    videos,
   } = props;
 
   const currentUser = getUser();
@@ -66,78 +76,80 @@ export function DashboardPage(props: DashboardPageProps) {
       : '/images/default-avatar.png';
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-20 pt-8">
-      <div className="container">
-        <div className="mb-6 flex flex-wrap items-center gap-1.5 sm:mb-8">
-          <DashboardTab
-            label="Personal"
-            isActive={!selectedTeamId && !isTeamPage}
-            href="/dashboard"
-            avatar={userAvatar}
-          />
+    <>
+      <div
+        className={cn('bg-slate-900', {
+          'striped-loader-slate': isLoading,
+        })}
+      >
+        <div className="bg-slate-800/30 py-5">
+          <div className="container flex flex-wrap items-center gap-1.5">
+            <DashboardTabButton
+              label="Personal"
+              isActive={!selectedTeamId && !isTeamPage}
+              href="/dashboard"
+              avatar={userAvatar}
+            />
 
-          {isLoading && (
-            <>
-              <DashboardTabSkeleton />
-              <DashboardTabSkeleton />
-            </>
-          )}
-
-          {!isLoading && (
-            <>
-              {teamList.map((team) => {
-                const { avatar } = team;
-                const avatarUrl = avatar
-                  ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-                  : '/images/default-avatar.png';
-                return (
-                  <DashboardTab
-                    key={team._id}
-                    label={team.name}
-                    isActive={team._id === selectedTeamId}
-                    {...(team.status === 'invited'
-                      ? {
-                          href: `/respond-invite?i=${team.memberId}`,
-                        }
-                      : {
-                          href: `/team?t=${team._id}`,
-                        })}
-                    avatar={avatarUrl}
-                  />
-                );
-              })}
-              <DashboardTab
-                label="+ Create Team"
-                isActive={false}
-                href="/team/new"
-                className="border border-dashed border-gray-300 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-gray-600 hover:text-black"
-              />
-            </>
-          )}
+            {!isLoading && (
+              <>
+                {teamList.map((team) => {
+                  const { avatar } = team;
+                  const avatarUrl = avatar
+                    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+                    : '/images/default-avatar.png';
+                  return (
+                    <DashboardTabButton
+                      key={team._id}
+                      label={team.name}
+                      isActive={team._id === selectedTeamId}
+                      {...(team.status === 'invited'
+                        ? {
+                            href: `/respond-invite?i=${team.memberId}`,
+                          }
+                        : {
+                            href: `/team?t=${team._id}`,
+                          })}
+                      avatar={avatarUrl}
+                    />
+                  );
+                })}
+                <DashboardTabButton
+                  label="+ Create Team"
+                  isActive={false}
+                  href="/team/new"
+                  className="border border-dashed border-slate-700 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-solid hover:border-slate-700 hover:text-gray-400"
+                />
+              </>
+            )}
+          </div>
         </div>
+      </div>
 
+      <div className="">
         {!selectedTeamId && !isTeamPage && (
-          <PersonalDashboard
-            builtInRoleRoadmaps={builtInRoleRoadmaps}
-            builtInSkillRoadmaps={builtInSkillRoadmaps}
-            builtInBestPractices={builtInBestPractices}
-          />
+          <div className="bg-slate-900">
+            <PersonalDashboard
+              builtInRoleRoadmaps={builtInRoleRoadmaps}
+              builtInSkillRoadmaps={builtInSkillRoadmaps}
+              builtInBestPractices={builtInBestPractices}
+              questionGroups={questionGroups}
+              guides={guides}
+              videos={videos}
+            />
+          </div>
         )}
 
         {(selectedTeamId || isTeamPage) && (
-          <TeamDashboard
-            builtInRoleRoadmaps={builtInRoleRoadmaps!}
-            builtInSkillRoadmaps={builtInSkillRoadmaps!}
-            teamId={selectedTeamId!}
-          />
+          <div className="container">
+            <TeamDashboard
+              builtInRoleRoadmaps={builtInRoleRoadmaps!}
+              builtInSkillRoadmaps={builtInSkillRoadmaps!}
+              teamId={selectedTeamId!}
+            />
+          </div>
         )}
       </div>
-    </div>
-  );
-}
-
-function DashboardTabSkeleton() {
-  return (
-    <div className="h-[30px] w-[114px] animate-pulse rounded-md border bg-white"></div>
+    </>
   );
 }
