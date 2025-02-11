@@ -168,15 +168,15 @@ function DashboardStats(props: DashboardStatsProps) {
   } = props;
 
   return (
-    <div className="container mb-3 flex items-center justify-between gap-2 pb-2 pt-6 text-sm text-slate-400">
-      <div className="flex w-full items-center justify-between gap-2">
+    <div className="container mb-3 flex flex-col gap-4 pb-2 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <PersonalProfileButton
           isLoading={isLoading}
           name={profile.name}
           username={profile.username}
           avatar={profile.avatar}
         />
-        <div className="flex items-center gap-2">
+        <div className="hidden flex-wrap items-center gap-2 md:flex">
           <DashboardStatItem
             icon={Zap}
             iconClassName="text-yellow-500"
@@ -385,12 +385,12 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           <div className="container">
             <h2
               id="role-based-roadmaps"
-              className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
+              className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
             >
               Role Based Roadmaps
             </h2>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
               {builtInRoleRoadmaps.map((roadmap) => {
                 const roadmapProgress = learningRoadmapsToShow.find(
                   (lr) => lr.resourceId === roadmap.id,
@@ -421,11 +421,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
         <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
           <div className="container">
-            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
               Skill Based Roadmaps
             </h2>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
               {builtInSkillRoadmaps.map((roadmap) => {
                 const roadmapProgress = learningRoadmapsToShow.find(
                   (lr) => lr.resourceId === roadmap.id,
@@ -456,11 +456,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
         <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
           <div className="container">
-            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
               Project Ideas
             </h2>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
               {projectGroups.map((projectGroup) => {
                 return (
                   <HeroRoadmap
@@ -480,11 +480,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
         <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
           <div className="container">
-            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
               Best Practices
             </h2>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
               {builtInBestPractices.map((roadmap) => {
                 const roadmapProgress = learningRoadmapsToShow.find(
                   (lr) => lr.resourceId === roadmap.id,
@@ -515,11 +515,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
         <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
           <div className="container">
-            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
               Questions
             </h2>
 
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
               {questionGroups.map((questionGroup) => {
                 return (
                   <HeroRoadmap
@@ -539,7 +539,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16">
+      <div className="grid grid-cols-1 gap-5 bg-gray-50 px-4 py-5 sm:gap-16 sm:px-0 sm:py-16">
         <FeaturedGuideList
           heading="Guides"
           guides={guides}
