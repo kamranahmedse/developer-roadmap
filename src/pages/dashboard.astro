@@ -2,11 +2,13 @@
 import { DashboardPage } from '../components/Dashboard/DashboardPage';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
+import { getAllQuestionGroups } from '../lib/question-group';
 import { getRoadmapsByTag } from '../lib/roadmap';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const bestPractices = await getAllBestPractices();
+const questionGroups = await getAllQuestionGroups();
 
 const enrichedRoleRoadmaps = roleRoadmaps
   .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
@@ -63,6 +65,7 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
     builtInRoleRoadmaps={enrichedRoleRoadmaps}
     builtInSkillRoadmaps={enrichedSkillRoadmaps}
     builtInBestPractices={enrichedBestPractices}
+    questionGroups={questionGroups}
     client:load
   />
   <div slot='open-source-banner'></div>

@@ -10,12 +10,14 @@ import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
 import { DashboardTabButton } from './DashboardTabButton';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
+import type { QuestionGroupType } from '../../lib/question-group';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
   isTeamPage?: boolean;
+  questionGroups?: QuestionGroupType[];
 };
 
 export function DashboardPage(props: DashboardPageProps) {
@@ -24,6 +26,7 @@ export function DashboardPage(props: DashboardPageProps) {
     builtInBestPractices,
     builtInSkillRoadmaps,
     isTeamPage = false,
+    questionGroups,
   } = props;
 
   const currentUser = getUser();
@@ -124,6 +127,7 @@ export function DashboardPage(props: DashboardPageProps) {
               builtInRoleRoadmaps={builtInRoleRoadmaps}
               builtInSkillRoadmaps={builtInSkillRoadmaps}
               builtInBestPractices={builtInBestPractices}
+              questionGroups={questionGroups}
             />
           </div>
         )}

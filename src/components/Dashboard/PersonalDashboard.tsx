@@ -24,7 +24,8 @@ import {
 import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-
+import { projectGroups } from '../../pages/index.astro';
+import type { QuestionGroupType } from '../../lib/question-group';
 type UserDashboardResponse = {
   name: string;
   email: string;
@@ -54,6 +55,7 @@ type PersonalDashboardProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
+  questionGroups?: QuestionGroupType[];
 };
 
 type DashboardStatItemProps = {
@@ -200,6 +202,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     builtInRoleRoadmaps = [],
     builtInBestPractices = [],
     builtInSkillRoadmaps = [],
+    questionGroups = [],
   } = props;
 
   const toast = useToast();
@@ -368,110 +371,161 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         isLoading={isLoading}
       />
 
-      <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
-        <div className="container">
-          <h2
-            id="role-based-roadmaps"
-            className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
-          >
-            Role Based Roadmaps
-          </h2>
+      <div className="bg-gradient-to-b from-slate-900 to-black pb-12">
+        <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2
+              id="role-based-roadmaps"
+              className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
+            >
+              Role Based Roadmaps
+            </h2>
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {builtInRoleRoadmaps.map((roadmap) => {
-              const roadmapProgress = learningRoadmapsToShow.find(
-                (lr) => lr.resourceId === roadmap.id,
-              );
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {builtInRoleRoadmaps.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
 
-              const percentageDone =
-                (((roadmapProgress?.skipped || 0) +
-                  (roadmapProgress?.done || 0)) /
-                  (roadmapProgress?.total || 1)) *
-                100;
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
 
-              return (
-                <HeroRoadmap
-                  key={roadmap.id}
-                  resourceId={roadmap.id}
-                  resourceType="roadmap"
-                  resourceTitle={roadmap.title}
-                  isFavorite={roadmap.isFavorite}
-                  percentageDone={percentageDone}
-                  isNew={roadmap.isNew}
-                  url={`/${roadmap.id}`}
-                />
-              );
-            })}
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="roadmap"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
-        <div className="container">
-          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
-            Skill Based Roadmaps
-          </h2>
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Skill Based Roadmaps
+            </h2>
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {builtInSkillRoadmaps.map((roadmap) => {
-              const roadmapProgress = learningRoadmapsToShow.find(
-                (lr) => lr.resourceId === roadmap.id,
-              );
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {builtInSkillRoadmaps.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
 
-              const percentageDone =
-                (((roadmapProgress?.skipped || 0) +
-                  (roadmapProgress?.done || 0)) /
-                  (roadmapProgress?.total || 1)) *
-                100;
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
 
-              return (
-                <HeroRoadmap
-                  key={roadmap.id}
-                  resourceId={roadmap.id}
-                  resourceType="roadmap"
-                  resourceTitle={roadmap.title}
-                  isFavorite={roadmap.isFavorite}
-                  percentageDone={percentageDone}
-                  isNew={roadmap.isNew}
-                  url={`/${roadmap.id}`}
-                />
-              );
-            })}
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="roadmap"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
-        <div className="container">
-          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
-            Best Practices
-          </h2>
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Project Ideas
+            </h2>
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {builtInBestPractices.map((roadmap) => {
-              const roadmapProgress = learningRoadmapsToShow.find(
-                (lr) => lr.resourceId === roadmap.id,
-              );
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {projectGroups.map((projectGroup) => {
+                return (
+                  <HeroRoadmap
+                    percentageDone={0}
+                    key={projectGroup.id}
+                    resourceId={projectGroup.id}
+                    resourceType="roadmap"
+                    resourceTitle={projectGroup.title}
+                    url={`/${projectGroup.id}/projects`}
+                    allowFavorite={false}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
 
-              const percentageDone =
-                (((roadmapProgress?.skipped || 0) +
-                  (roadmapProgress?.done || 0)) /
-                  (roadmapProgress?.total || 1)) *
-                100;
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Best Practices
+            </h2>
 
-              return (
-                <HeroRoadmap
-                  key={roadmap.id}
-                  resourceId={roadmap.id}
-                  resourceType="best-practice"
-                  resourceTitle={roadmap.title}
-                  isFavorite={roadmap.isFavorite}
-                  percentageDone={percentageDone}
-                  isNew={roadmap.isNew}
-                  url={`/best-practices/${roadmap.id}`}
-                />
-              );
-            })}
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {builtInBestPractices.map((roadmap) => {
+                const roadmapProgress = learningRoadmapsToShow.find(
+                  (lr) => lr.resourceId === roadmap.id,
+                );
+
+                const percentageDone =
+                  (((roadmapProgress?.skipped || 0) +
+                    (roadmapProgress?.done || 0)) /
+                    (roadmapProgress?.total || 1)) *
+                  100;
+
+                return (
+                  <HeroRoadmap
+                    key={roadmap.id}
+                    resourceId={roadmap.id}
+                    resourceType="best-practice"
+                    resourceTitle={roadmap.title}
+                    isFavorite={roadmap.isFavorite}
+                    percentageDone={percentageDone}
+                    isNew={roadmap.isNew}
+                    url={`/best-practices/${roadmap.id}`}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
+          <div className="container">
+            <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+              Questions
+            </h2>
+
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {questionGroups.map((questionGroup) => {
+                return (
+                  <HeroRoadmap
+                    percentageDone={0}
+                    key={questionGroup.id}
+                    resourceId={questionGroup.id}
+                    resourceType="roadmap"
+                    resourceTitle={questionGroup.frontmatter.briefTitle}
+                    url={`/questions/${questionGroup.id}`}
+                    allowFavorite={false}
+                    isNew={questionGroup.frontmatter.isNew}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
