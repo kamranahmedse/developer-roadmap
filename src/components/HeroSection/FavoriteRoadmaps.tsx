@@ -68,7 +68,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         isEmpty={!isLoading && progress.length === 0}
         emptyTitle={
           <>
-            No bookmarked roadmaps yet
+            No bookmars found
             <a
               href="#role-based-roadmaps"
               className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
