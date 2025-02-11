@@ -1,4 +1,7 @@
+import type { PageType } from '../components/CommandMenu/CommandMenu';
 import type { MarkdownFileType } from './file';
+import { httpGet } from './http';
+import type { ResourceType } from './resource-progress';
 
 export function resourceTitleFromId(id: string): string {
   if (id === 'devops') {
@@ -149,4 +152,30 @@ export async function getRoadmapFaqsById(roadmapId: string): Promise<string[]> {
   ).catch(() => ({}));
 
   return faqs || [];
+}
+
+export async function getResourceMeta(
+  resourceType: ResourceType,
+  resourceId: string,
+) {
+  const { error, response } = await httpGet<PageType[]>(`/pages.json`);
+  if (error || !response) {
+    return null;
+  }
+
+  const page = response.find((page) => {
+    if (resourceType === 'roadmap') {
+      return page.url === `/${resourceId}`;
+    } else if (resourceType === 'best-practice') {
+      return page.url === `/best-practices/${resourceId}`;
+    }
+
+    return false;
+  });
+
+  if (!page) {
+    return null;
+  }
+
+  return page;
 }

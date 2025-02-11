@@ -20,6 +20,7 @@ import { replaceChildren } from '../../lib/dom.ts';
 import { XIcon } from 'lucide-react';
 import type { PageType } from '../CommandMenu/CommandMenu.tsx';
 import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { getResourceMeta } from '../../lib/roadmap.ts';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -90,22 +91,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   async function renderResource(jsonUrl: string) {
-    const { error, response } = await httpGet<PageType[]>(`/pages.json`);
-    if (error || !response) {
-      toast.error(error?.message || 'Resource not found');
-      return;
-    }
-
-    const page = response.find((page) => {
-      if (resourceType === 'roadmap') {
-        return page.url === `/${resourceId}`;
-      } else if (resourceType === 'best-practice') {
-        return page.url === `/best-practices/${resourceId}`;
-      }
-
-      return false;
-    });
-
+    const page = await getResourceMeta(resourceType, resourceId);
     if (!page) {
       toast.error('Resource not found');
       return;
