@@ -82,17 +82,16 @@ export function DashboardPage(props: DashboardPageProps) {
           'striped-loader-slate': isLoading,
         })}
       >
-        <div className="bg-slate-800/30 py-5">
+        <div className="bg-slate-800/30 py-5 min-h-[70px]">
           <div className="container flex flex-wrap items-center gap-1.5">
-            <DashboardTabButton
-              label="Personal"
-              isActive={!selectedTeamId && !isTeamPage}
-              href="/dashboard"
-              avatar={userAvatar}
-            />
-
             {!isLoading && (
               <>
+                <DashboardTabButton
+                  label="Personal"
+                  isActive={!selectedTeamId && !isTeamPage}
+                  href="/dashboard"
+                  avatar={userAvatar}
+                />
                 {teamList.map((team) => {
                   const { avatar } = team;
                   const avatarUrl = avatar
