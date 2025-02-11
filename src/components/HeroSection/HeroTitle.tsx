@@ -9,6 +9,7 @@ type HeroTitleProps = {
   title: string | ReactNode;
   rightContent?: ReactNode;
   isCollapsed?: boolean;
+  onToggleCollapse?: () => void;
 };
 
 export function HeroTitle(props: HeroTitleProps) {
@@ -18,6 +19,7 @@ export function HeroTitle(props: HeroTitleProps) {
     icon,
     rightContent,
     isCollapsed = false,
+    onToggleCollapse,
   } = props;
 
   return (
@@ -32,6 +34,7 @@ export function HeroTitle(props: HeroTitleProps) {
         {title}
         {!isLoading && (
           <button
+            onClick={onToggleCollapse}
             className={cn(
               'ml-2 inline-flex items-center gap-1 rounded-md bg-slate-800 py-0.5 pl-1 pr-1.5 text-xs uppercase tracking-wider text-slate-400 hover:bg-slate-700',
               {
@@ -53,7 +56,7 @@ export function HeroTitle(props: HeroTitleProps) {
           </button>
         )}
       </p>
-      <div>{rightContent}</div>
+      <div>{isCollapsed && rightContent}</div>
     </div>
   );
 }

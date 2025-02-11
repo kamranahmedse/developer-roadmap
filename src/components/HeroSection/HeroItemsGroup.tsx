@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { cn } from '../../lib/classname';
 import { HeroTitle } from './HeroTitle';
 
@@ -23,15 +23,19 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
     className,
   } = props;
 
-  const isCollapsed = isAllCollapsed || isLoading;
+  const [isCollapsed, setIsCollapsed] = useState(isLoading || isAllCollapsed);
+
+  useEffect(() => {
+    setIsCollapsed(isAllCollapsed || isLoading);
+  }, [isAllCollapsed, isLoading]);
 
   return (
     <div
       className={cn(
-        '',
+        'transition-all',
         {
-          'border-b border-b-slate-800/70 pb-5 pt-5': !isCollapsed,
-          'py-2': isCollapsed,
+          'pb-2 pt-5': !isCollapsed,
+          'py-1': isCollapsed,
         },
         className,
       )}
@@ -41,8 +45,11 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
           icon={icon}
           isLoading={isLoading}
           title={title}
-          rightContent={!isCollapsed && rightContent}
+          rightContent={rightContent}
           isCollapsed={isCollapsed}
+          onToggleCollapse={() => {
+            setIsCollapsed(!isCollapsed);
+          }}
         />
         {!isCollapsed && (
           <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
