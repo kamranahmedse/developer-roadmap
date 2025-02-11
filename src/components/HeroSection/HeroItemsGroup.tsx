@@ -36,6 +36,8 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
         {
           'py-4': !isCollapsed,
           'py-3': isCollapsed,
+          'opacity-50 transition-opacity hover:opacity-100':
+            isCollapsed && !isLoading,
         },
         className,
       )}
