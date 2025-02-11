@@ -101,8 +101,6 @@ export function MemberProgressModal(props: ProgressMapProps) {
         return page.url === `/${resourceId}`;
       } else if (resourceType === 'best-practice') {
         return page.url === `/best-practices/${resourceId}`;
-      } else if (resourceType === 'question') {
-        return page.url === `/questions/${resourceId}`;
       }
 
       return false;
