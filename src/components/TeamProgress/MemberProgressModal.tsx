@@ -18,6 +18,9 @@ import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
 import { replaceChildren } from '../../lib/dom.ts';
 import { XIcon } from 'lucide-react';
+import type { PageType } from '../CommandMenu/CommandMenu.tsx';
+import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { getResourceMeta } from '../../lib/roadmap.ts';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -88,14 +91,24 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   async function renderResource(jsonUrl: string) {
+    const page = await getResourceMeta(resourceType, resourceId);
+    if (!page) {
+      toast.error('Resource not found');
+      return;
+    }
+
+    const renderer = page.renderer || 'balsamiq';
+
     const res = await fetch(jsonUrl, {});
     const json = await res.json();
-    const svg: SVGElement | null = await wireframeJSONToSVG(json, {
-      fontURL: '/fonts/balsamiq.woff2',
-    });
+    const svg =
+      renderer === 'editor'
+        ? await renderFlowJSON(json as any)
+        : await wireframeJSONToSVG(json, {
+            fontURL: '/fonts/balsamiq.woff2',
+          });
 
     replaceChildren(containerEl.current!, svg);
-    // containerEl.current?.replaceChildren(svg);
   }
 
   useKeydown('Escape', () => {
@@ -136,10 +149,10 @@ export function MemberProgressModal(props: ProgressMapProps) {
           skipped = [],
         } = memberProgress;
 
-        done.forEach((id: string) => renderTopicProgress(id, 'done'));
-        learning.forEach((id: string) => renderTopicProgress(id, 'learning'));
-        skipped.forEach((id: string) => renderTopicProgress(id, 'skipped'));
-        removed.forEach((id: string) => renderTopicProgress(id, 'removed'));
+        done.forEach((id) => renderTopicProgress(id, 'done'));
+        learning.forEach((id) => renderTopicProgress(id, 'learning'));
+        skipped.forEach((id) => renderTopicProgress(id, 'skipped'));
+        removed.forEach((id) => renderTopicProgress(id, 'removed'));
       })
       .catch((err) => {
         console.error(err);
