@@ -10,6 +10,8 @@ type HeroTitleProps = {
   rightContent?: ReactNode;
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
+  isEmpty?: boolean;
+  emptyTitle?: ReactNode;
 };
 
 export function HeroTitle(props: HeroTitleProps) {
@@ -20,6 +22,8 @@ export function HeroTitle(props: HeroTitleProps) {
     rightContent,
     isCollapsed = false,
     onToggleCollapse,
+    isEmpty = false,
+    emptyTitle,
   } = props;
 
   return (
@@ -32,13 +36,13 @@ export function HeroTitle(props: HeroTitleProps) {
               <Spinner />
             </span>
           )}
-          {title}
+          {!isEmpty ? title : emptyTitle || title}
         </p>
       </div>
       <div className="flex items-center gap-2">
         {!isCollapsed && rightContent}
 
-        {!isLoading && (
+        {!isLoading && !isEmpty && (
           <button
             onClick={onToggleCollapse}
             className={cn(

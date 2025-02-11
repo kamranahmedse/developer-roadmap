@@ -299,7 +299,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
 
       <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
         <div className="container">
-          <h2 className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
+          <h2
+            id="role-based-roadmaps"
+            className="text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2"
+          >
             Role Based Roadmaps
           </h2>
 

@@ -5,6 +5,8 @@ import { HeroTitle } from './HeroTitle';
 type HeroItemsGroupProps = {
   icon: any;
   isLoading?: boolean;
+  isEmpty?: boolean;
+  emptyTitle?: ReactNode;
   title: string | ReactNode;
   rightContent?: ReactNode;
   children?: ReactNode;
@@ -15,13 +17,13 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
   const {
     icon,
     isLoading = false,
+    isEmpty = false,
+    emptyTitle,
     title,
     rightContent,
     children,
     className,
   } = props;
-
-  const isInitialRender = useRef(true);
 
   const storageKey = `hero-group-${title}-collapsed`;
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -36,15 +38,15 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
     setIsCollapsed(isCollapsedByStorage());
   }, [isLoading]);
 
-  const isLoadingOrCollapsed = isLoading || isCollapsed;
+  const isLoadingOrCollapsedOrEmpty = isLoading || isCollapsed || isEmpty;
 
   return (
     <div
       className={cn(
         'border-b border-gray-800/50',
         {
-          'py-4': !isLoadingOrCollapsed,
-          'py-3': isLoadingOrCollapsed,
+          'py-4': !isLoadingOrCollapsedOrEmpty,
+          'py-3': isLoadingOrCollapsedOrEmpty,
           'opacity-50 transition-opacity hover:opacity-100':
             isCollapsed && !isLoading,
         },
@@ -55,6 +57,8 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
         <HeroTitle
           icon={icon}
           isLoading={isLoading}
+          isEmpty={isEmpty}
+          emptyTitle={emptyTitle}
           title={title}
           rightContent={rightContent}
           isCollapsed={isCollapsed}
@@ -63,7 +67,7 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
             localStorage.setItem(storageKey, (!isCollapsed).toString());
           }}
         />
-        {!isLoadingOrCollapsed && (
+        {!isLoadingOrCollapsedOrEmpty && (
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:grid-cols-3">
             {children}
           </div>

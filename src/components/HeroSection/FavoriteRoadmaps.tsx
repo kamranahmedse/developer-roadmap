@@ -5,6 +5,8 @@ import {
   Sparkle,
   Eye,
   EyeOff,
+  Square,
+  SquareCheckBig,
 } from 'lucide-react';
 import { useState } from 'react';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';
@@ -14,6 +16,7 @@ import { HeroProject } from './HeroProject';
 import { HeroRoadmap } from './HeroRoadmap';
 import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton.tsx';
 import { HeroItemsGroup } from './HeroItemsGroup';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
 export type AIRoadmapType = {
   id: string;
@@ -34,6 +37,7 @@ type FavoriteRoadmapsProps = {
 export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
   const { progress, isLoading, customRoadmaps, aiRoadmaps, projects } = props;
   const [showCompleted, setShowCompleted] = useState(false);
+  const [isCreatingCustomRoadmap, setIsCreatingCustomRoadmap] = useState(false);
 
   const completedProjects = projects.filter(
     (project) => project.submittedAt && project.repositoryUrl,
@@ -49,10 +53,31 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
 
   return (
     <div className="flex flex-col">
+      {isCreatingCustomRoadmap && (
+        <CreateRoadmapModal
+          onClose={() => {
+            setIsCreatingCustomRoadmap(false);
+          }}
+        />
+      )}
+
       <HeroItemsGroup
         icon={<CheckIcon additionalClasses="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your progress and bookmarks"
+        isEmpty={progress.length === 0}
+        emptyTitle={
+          <>
+            No bookmarked roadmaps yet
+            <a
+              href="#role-based-roadmaps"
+              className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
+            >
+              <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
+              Bookmark a roadmap
+            </a>
+          </>
+        }
       >
         {progress.map((resource) => (
           <HeroRoadmap
@@ -71,13 +96,27 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
             }
           />
         ))}
-        <CreateRoadmapButton />
       </HeroItemsGroup>
 
       <HeroItemsGroup
         icon={<MapIcon className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your custom roadmaps"
+        isEmpty={customRoadmaps.length === 0}
+        emptyTitle={
+          <>
+            No custom roadmaps found
+            <button
+              onClick={() => {
+                setIsCreatingCustomRoadmap(true);
+              }}
+              className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
+            >
+              <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
+              Create custom roadmap
+            </button>
+          </>
+        }
       >
         {customRoadmaps.map((customRoadmap) => (
           <HeroRoadmap
@@ -101,6 +140,21 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<Sparkle className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your AI roadmaps"
+        isEmpty={aiRoadmaps.length === 0}
+        emptyTitle={
+          <>
+            No AI roadmaps found
+            <button
+              onClick={() => {
+                setIsCreatingCustomRoadmap(true);
+              }}
+              className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
+            >
+              <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
+              Generate AI roadmap
+            </button>
+          </>
+        }
       >
         {aiRoadmaps.map((aiRoadmap) => (
           <HeroRoadmap
@@ -130,6 +184,19 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         icon={<FolderKanban className="mr-1.5 h-[14px] w-[14px]" />}
         isLoading={isLoading}
         title="Your active projects"
+        isEmpty={projectsToShow.length === 0}
+        emptyTitle={
+          <>
+            No active projects found
+            <a
+              href="/projects"
+              className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
+            >
+              <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
+              Start a new project
+            </a>
+          </>
+        }
         rightContent={
           completedProjects.length > 0 && (
             <button
