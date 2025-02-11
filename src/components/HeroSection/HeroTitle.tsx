@@ -34,13 +34,17 @@ export function HeroTitle(props: HeroTitleProps) {
           )}
           {title}
         </p>
+      </div>
+      <div className="flex items-center gap-2">
+        {!isCollapsed && rightContent}
+
         {!isLoading && (
           <button
             onClick={onToggleCollapse}
             className={cn(
               'ml-2 inline-flex items-center gap-1 rounded-md bg-slate-800 py-0.5 pl-1 pr-1.5 text-xs uppercase tracking-wider text-slate-400 hover:bg-slate-700',
               {
-                'bg-transparent text-slate-600 hover:bg-slate-800 hover:text-slate-400':
+                'bg-slate-800 text-slate-500 hover:bg-slate-800 hover:text-slate-400':
                   !isCollapsed,
               },
             )}
@@ -58,7 +62,6 @@ export function HeroTitle(props: HeroTitleProps) {
           </button>
         )}
       </div>
-      <div className="flex items-center">{!isCollapsed && rightContent}</div>
     </div>
   );
 }
