@@ -258,6 +258,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development'],
       },
       {
+        title: 'Cloudflare',
+        link: '/cloudflare',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
         title: 'Linux',
         link: '/linux',
         type: 'skill',

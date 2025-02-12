@@ -43,6 +43,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
 - [AI Engineer Roadmap](https://roadmap.sh/ai-engineer)
 - [AWS Roadmap](https://roadmap.sh/aws)
+- [Cloudflare Roadmap](https://roadmap.sh/cloudflare)
 - [Linux Roadmap](https://roadmap.sh/linux)
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
