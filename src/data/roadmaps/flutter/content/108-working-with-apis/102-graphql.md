@@ -9,3 +9,7 @@ If you want to learn more about GraphQL, here are a few links to get you started
 [GraphQL official website](https://graphql.org/) - This is the official website for GraphQL, which provides an overview of the language, as well as documentation and resources for learning more.
 
 [How to GraphQL](https://www.howtographql.com/) - This is a comprehensive tutorial that covers everything you need to know about GraphQL, including the basics of the language, how to set up a GraphQL server, and how to use GraphQL in a client application.
+
+Learn more from the following resources:
+
+- [@video@100 Seconds of GraphQL?](https://www.youtube.com/watch?v=eIQh02xuVw4)
