@@ -1,0 +1,487 @@
+{
+  "PcYnYAAkKMbzoiCnBfjqO": {
+    "title": "JavaScript Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "q9oQTt_NqhdWvJfA5XH1V": {
+    "title": "Basic Command-line Knowledge",
+    "description": "",
+    "links": []
+  },
+  "9iSdASlRxyod9YwZ2IUry": {
+    "title": "HTTP and Web Protocols",
+    "description": "",
+    "links": []
+  },
+  "C08pIguX1N45Iw0kh0Fvu": {
+    "title": "Git Basics",
+    "description": "",
+    "links": []
+  },
+  "dSBYTGGkol3MAXyg7G7_J": {
+    "title": "Node.js and NPM",
+    "description": "",
+    "links": []
+  },
+  "zR84MFLL6y0dygz9hXXPA": {
+    "title": "TypeScript Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "Isl5anwDvb1MacA-JH4ej": {
+    "title": "Understand Serverless Architecture",
+    "description": "",
+    "links": []
+  },
+  "TB6vGzDgGZ9yAd9MGR7vw": {
+    "title": "Workers Runtime Environment",
+    "description": "",
+    "links": []
+  },
+  "aGWLomYHGkIfn7GFc0_Yl": {
+    "title": "Edge Computing Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "HNEXPU6r_T7UYvwLv2wnt": {
+    "title": "Request/Response Handling",
+    "description": "",
+    "links": []
+  },
+  "_2UnRlbUplHvs5-Stj4O4": {
+    "title": "Fetch API and Runtime APIs",
+    "description": "",
+    "links": []
+  },
+  "i6L9FI6fBDXr0XtMrc_uR": {
+    "title": "Workers Lifecycle",
+    "description": "",
+    "links": []
+  },
+  "WZSi9inWPhqZQvDN-C8BV": {
+    "title": "Service Bindings",
+    "description": "",
+    "links": []
+  },
+  "uBjcQ9PJUfwzu5N_2CNjN": {
+    "title": "Caching Strategies",
+    "description": "",
+    "links": []
+  },
+  "aStbAF4zraqhJ-N3RH4ha": {
+    "title": "Middleware Patterns",
+    "description": "",
+    "links": []
+  },
+  "9ef2VPCru8lCmRxxGe-Eo": {
+    "title": "Bindings",
+    "description": "",
+    "links": []
+  },
+  "-8MsWNvuqwQCbLpOx_kov": {
+    "title": "Hono",
+    "description": "",
+    "links": []
+  },
+  "15jl6CSCkqnh_eFfysLDM": {
+    "title": "Itty Router",
+    "description": "",
+    "links": []
+  },
+  "Tzx93tvoGrc9_fKQqkorN": {
+    "title": "Wrangler",
+    "description": "",
+    "links": []
+  },
+  "uoaOrypiMkyoikXvTHeVS": {
+    "title": "DevTools Integration",
+    "description": "",
+    "links": []
+  },
+  "8Y6TIYoWIXrxtmzDVdS0b": {
+    "title": "CI/CD Pipelines",
+    "description": "",
+    "links": []
+  },
+  "zSwio18XdBfqwSneAx_AP": {
+    "title": "Any Frontend Framework",
+    "description": "",
+    "links": []
+  },
+  "o4sBgniPmLqwej6TlIPcl": {
+    "title": "Miniflare",
+    "description": "",
+    "links": []
+  },
+  "1dGFfQauOgHP7T4ReMpCU": {
+    "title": "Workers KV",
+    "description": "",
+    "links": []
+  },
+  "EBTHbXOOZiqrcYJvKhcWV": {
+    "title": "Key-value Operations",
+    "description": "",
+    "links": []
+  },
+  "sQlRIYLnZcugATgpogJmw": {
+    "title": "Metadata Handling",
+    "description": "",
+    "links": []
+  },
+  "i64-aCpZHygq76fBU6eXD": {
+    "title": "Bulk Operations",
+    "description": "",
+    "links": []
+  },
+  "OgW-iIrJZ5-sOWKnFpIZd": {
+    "title": "Caching Patterns",
+    "description": "",
+    "links": []
+  },
+  "gxLUlXGuaY5Q-0xmBgQwz": {
+    "title": "R2 Storage",
+    "description": "",
+    "links": []
+  },
+  "K9iW2H6riKwddWmpWJFJw": {
+    "title": "Object Storage",
+    "description": "",
+    "links": []
+  },
+  "BPahk1qH9Hk11tsE2hw3A": {
+    "title": "Large File Handling",
+    "description": "",
+    "links": []
+  },
+  "3jU5753Uza2aS-gZo7w4k": {
+    "title": "Asset Management",
+    "description": "",
+    "links": []
+  },
+  "UNE6XK4su5r2jcxhY7hOG": {
+    "title": "Bucket Operations",
+    "description": "",
+    "links": []
+  },
+  "YvgmmF9sWfURgijFV7E31": {
+    "title": "Bucket Lifecycle",
+    "description": "",
+    "links": []
+  },
+  "mKN0Ta3zSk7PCm_uHYKFN": {
+    "title": "D1",
+    "description": "",
+    "links": []
+  },
+  "PnhP47woPJb_JnLpMMiTw": {
+    "title": "Schema Management",
+    "description": "",
+    "links": []
+  },
+  "M8rSSVFUHixgWZRfaBPHb": {
+    "title": "Migrations",
+    "description": "",
+    "links": []
+  },
+  "65xDESm6jbHWkVO4NgHqx": {
+    "title": "Query Optimization",
+    "description": "",
+    "links": []
+  },
+  "MpWO1sroeF106SEMU1V1a": {
+    "title": "Drizzle",
+    "description": "",
+    "links": []
+  },
+  "h3MHLZZwkYqqb5PSfMhpB": {
+    "title": "Prisma",
+    "description": "",
+    "links": []
+  },
+  "zyRgTtlng6idboSgL9YTt": {
+    "title": "Queues",
+    "description": "",
+    "links": []
+  },
+  "EFA8m0EdhygxcBWzwmbnT": {
+    "title": "Message Processing",
+    "description": "",
+    "links": []
+  },
+  "qgvDGyLjc6lMmVPjHozFM": {
+    "title": "Background Jobs",
+    "description": "",
+    "links": []
+  },
+  "MInAsLLJtIq6WQDSj5yGH": {
+    "title": "Rate Limiting",
+    "description": "",
+    "links": []
+  },
+  "Grl59SjY31Q3sgf9uX-xf": {
+    "title": "Dead Letter Queues",
+    "description": "",
+    "links": []
+  },
+  "G-xBbtaniYFRE9Dgs18px": {
+    "title": "Durable Objects",
+    "description": "",
+    "links": []
+  },
+  "EQjhRlM7zpANNWkypScIl": {
+    "title": "State Management",
+    "description": "",
+    "links": []
+  },
+  "RYm0oBFCxm-S-aCwZ21p6": {
+    "title": "Coordination",
+    "description": "",
+    "links": []
+  },
+  "36w4Q73XkCwo5Cva0XsF8": {
+    "title": "Persistence",
+    "description": "",
+    "links": []
+  },
+  "rxxibrJUo1rQ3XCuUIP59": {
+    "title": "Transactional Operations",
+    "description": "",
+    "links": []
+  },
+  "rAl7zXcODiqIpS__3qf1A": {
+    "title": "Workflows",
+    "description": "",
+    "links": []
+  },
+  "a0S0_JLwLLNGLUAHrqG4P": {
+    "title": "Workers AI",
+    "description": "",
+    "links": []
+  },
+  "zMwmoCUp9429_aXU-Bz4H": {
+    "title": "Text Generation",
+    "description": "",
+    "links": []
+  },
+  "S7laV14zsx31O0Tsj2SRL": {
+    "title": "Image Processing",
+    "description": "",
+    "links": []
+  },
+  "HJbJ8OxjJzznYwLlIOSO2": {
+    "title": "Speech Rcognition",
+    "description": "",
+    "links": []
+  },
+  "QxPoNHsL-Pj_z3aU6qEP4": {
+    "title": "AI Model Integration",
+    "description": "",
+    "links": []
+  },
+  "NWGVtH1vxQuO4lly0Omuy": {
+    "title": "Vectorize",
+    "description": "",
+    "links": []
+  },
+  "UIWaR1ZdjSm0UAS69Kz_5": {
+    "title": "Vector Embeddings",
+    "description": "",
+    "links": []
+  },
+  "pg3GtykCegK411DYDN8sN": {
+    "title": "Similarity Search",
+    "description": "",
+    "links": []
+  },
+  "Ep9_oV_YnkbH1gHM-n3gO": {
+    "title": "AI-powered Search",
+    "description": "",
+    "links": []
+  },
+  "LoT3NtpNj9uAgQRV-MD_E": {
+    "title": "Stream",
+    "description": "",
+    "links": []
+  },
+  "zQp7XfDKWJgMf2LexRJhN": {
+    "title": "Video Delivery",
+    "description": "",
+    "links": []
+  },
+  "RiQSPAV9uRFgwQFJckTFV": {
+    "title": "Live streaming",
+    "description": "",
+    "links": []
+  },
+  "3B6Z7F0D3Sf8ZBlV3kkGx": {
+    "title": "Video Processing",
+    "description": "",
+    "links": []
+  },
+  "8bOWuopxHtBWUSFaVT54P": {
+    "title": "Images",
+    "description": "",
+    "links": []
+  },
+  "vHQdMgaL2EEr2o_eJmOuV": {
+    "title": "Calls",
+    "description": "",
+    "links": []
+  },
+  "aKEH4ZxI6J1nwjp_AgH5r": {
+    "title": "Logging and Monitoring",
+    "description": "",
+    "links": []
+  },
+  "z-1Ye5hcNdr9r6Gwdw7mv": {
+    "title": "Email Workers",
+    "description": "",
+    "links": []
+  },
+  "-lsYPD6JueIV94RybGH_Y": {
+    "title": "Routing",
+    "description": "",
+    "links": []
+  },
+  "6bNUqx5f_w5NuDL25BABN": {
+    "title": "Processing",
+    "description": "",
+    "links": []
+  },
+  "kdIfqTCcOSvV4KDpjr7nu": {
+    "title": "Filtering",
+    "description": "",
+    "links": []
+  },
+  "vu8yJsS1WccsdcEVUqwNd": {
+    "title": "AI Gateway",
+    "description": "",
+    "links": []
+  },
+  "qkFRW_tJB8_1IYpYskQ5M": {
+    "title": "Browser Rendering",
+    "description": "",
+    "links": []
+  },
+  "76xovsBrKOnlRBVjsqNq1": {
+    "title": "Security & Performance",
+    "description": "",
+    "links": []
+  },
+  "8IF7jftushwZrn7JXpC_v": {
+    "title": "Workers Security Model",
+    "description": "",
+    "links": []
+  },
+  "uNinrB9wm5ahjGXu5fc0g": {
+    "title": "Isolates Architecture",
+    "description": "",
+    "links": []
+  },
+  "KWix4jeNUKJ07Iu95Mqj_": {
+    "title": "Web Security Headers",
+    "description": "",
+    "links": []
+  },
+  "JP5U6c2fZjtkU-Xzwtapx": {
+    "title": "Rate Limiting",
+    "description": "",
+    "links": []
+  },
+  "ui3pUfsGMxv4WRzHkgbF0": {
+    "title": "Cache API",
+    "description": "",
+    "links": []
+  },
+  "INiqdtppBmCthOEXuHb-V": {
+    "title": "HTML Rewriting",
+    "description": "",
+    "links": []
+  },
+  "sXBxaQtwJ-luGVXdqVXk1": {
+    "title": "Edge SSL/TLS",
+    "description": "",
+    "links": []
+  },
+  "So-cKAVfbgsw2zzFREu7Q": {
+    "title": "Bot Management",
+    "description": "",
+    "links": []
+  },
+  "wvurOKbemF4Tt2WZcmqDL": {
+    "title": "Integration & Workflows",
+    "description": "",
+    "links": []
+  },
+  "SaHqm7T4FFVrsgyfImo66": {
+    "title": "Pages Functions",
+    "description": "",
+    "links": []
+  },
+  "JfpVexcbuWCx_R3EjFmbo": {
+    "title": "Service Bindings",
+    "description": "",
+    "links": []
+  },
+  "jYAUIKozuhsNK5LbkeAJ6": {
+    "title": "Inter Worker Communication",
+    "description": "",
+    "links": []
+  },
+  "4g5w6IAdzefdlRTxbRbdS": {
+    "title": "External API Integration",
+    "description": "",
+    "links": []
+  },
+  "uOUjI6CPrhZIlz6mRCtOW": {
+    "title": "Webhook Handling",
+    "description": "",
+    "links": []
+  },
+  "Z9Yywlf7rXFBtxTq5B2Y5": {
+    "title": "Event-driven Architectures",
+    "description": "",
+    "links": []
+  },
+  "gsCRhwwjXuyueaYHSPOVZ": {
+    "title": "Development Tools",
+    "description": "",
+    "links": []
+  },
+  "n0vIbHmUZHrF4WjEhYdb8": {
+    "title": "Wrangler",
+    "description": "",
+    "links": []
+  },
+  "vZHBp4S6WaS5sa5rfUOk-": {
+    "title": "Miniflare",
+    "description": "",
+    "links": []
+  },
+  "G6YQZUQh_x8Qxm1oBseLQ": {
+    "title": "DevTools",
+    "description": "",
+    "links": []
+  },
+  "jyWxaMx7_nojt5HsyAv7K": {
+    "title": "Testing Frameworks",
+    "description": "",
+    "links": []
+  },
+  "Cy2T8978yUAPGol-yzxv_": {
+    "title": "Monitoring Tools",
+    "description": "",
+    "links": []
+  },
+  "TmQC7fTL6b9EsBDYibv4g": {
+    "title": "Debugging Techniques",
+    "description": "",
+    "links": []
+  },
+  "8WZpSKBHCeYfTEL9tBNKr": {
+    "title": "Tunnels",
+    "description": "",
+    "links": []
+  }
+}
