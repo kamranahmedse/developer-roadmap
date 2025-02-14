@@ -5,7 +5,7 @@ import {
   COURSE_PURCHASE_PARAM,
   setAuthToken,
 } from '../../lib/jwt';
-import { cn } from '../../../editor/utils/classname.ts';
+import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
