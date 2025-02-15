@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@What is a Crypto Wallet?: A Beginner’s Guide](https://crypto.com/university/crypto-wallets)
 - [@article@Crypto Wallet? What is it?](https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet)
+- [@course@Cyfrin Updraft | Smart Contract DevOps](https://updraft.cyfrin.io/courses/wallets)
 - [@feed@Explore top posts about Crypto](https://app.daily.dev/tags/crypto?ref=roadmapsh)
