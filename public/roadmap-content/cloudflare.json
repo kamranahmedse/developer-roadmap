@@ -81,13 +81,45 @@
   },
   "-8MsWNvuqwQCbLpOx_kov": {
     "title": "Hono",
-    "description": "",
-    "links": []
+    "description": "Hono is a small, simple and ultrafast web framework built on web standards. It works on any JavaScript runtime: Cloudflare Workers, Fastly Compute, Deno, Bun, Vercel, Netlify, AWS Lambda, Lambda@Edge, and Node.js. Hono is more known for supporting a lot more than the basics.\n\nUse-cases\n---------\n\nHono is a simple web application framework similar to the well known javascript framework Express, without a frontend. But it runs on CDN Edges and allows you to construct larger applications when combined with middleware.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Hono JS Examples",
+        "url": "https://github.com/honojs/examples",
+        "type": "opensource"
+      },
+      {
+        "title": "Official Documentation",
+        "url": "https://hono.dev/docs/",
+        "type": "article"
+      },
+      {
+        "title": "Hono.js: A Small Framework with Big Potential",
+        "url": "https://medium.com/@appvintechnologies/hono-js-a-small-framework-with-big-potential-15a093fc5c07",
+        "type": "article"
+      },
+      {
+        "title": "Quick Start with Hono: Simple Setup Guide",
+        "url": "https://dev.to/koshirok096/quick-start-with-hono-simple-setup-guide-bite-sized-article-lhe",
+        "type": "article"
+      },
+      {
+        "title": "Learn with me",
+        "url": "https://www.youtube.com/watch?v=gY-TK33G6kQ",
+        "type": "video"
+      }
+    ]
   },
   "15jl6CSCkqnh_eFfysLDM": {
     "title": "Itty Router",
-    "description": "",
-    "links": []
+    "description": "Itty Router is a lightweight router with the motto \"less is more\" that supports Cloudflare workers and pages. While other libraries may suffer from feature creep/bloat to please a wider audience, Itty Router painfully consider every single byte added to itty. Our router options range from ~450 bytes to ~970 bytes for a batteries-included version with built-in defaults, error handling, formatting, etc. On top of that, the following concepts aim to keep YOUR code tiny (and readable) as well.\n\nSimple Projects ideas\n---------------------\n\nItty Router is a lightweight router system that supports typescript. You can create easy and good routers for Cloudflare workers or pages. With a simple project like a URL shortener, you can use Itty Router and Cloudflare KV.\n\nOther project ideas can be found:\n\n*   Webhook Relay\n    *   Transform webhook data or API data towards another API so you can transform the data as you like.\n*   Micro URL Monitoring\n    *   Monitor any URL and give back responses on the specific endpoint.\n*   Single-Use Download Links (Watch out for costs from Cloudflare!)\n    *   Generate links that expire after one download, ideal for file sharing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Documentation",
+        "url": "https://itty.dev/itty-router/",
+        "type": "article"
+      }
+    ]
   },
   "Tzx93tvoGrc9_fKQqkorN": {
     "title": "Wrangler",
