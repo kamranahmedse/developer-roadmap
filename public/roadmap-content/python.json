@@ -652,7 +652,7 @@
   },
   "P_Di-XPSDITmU3xKQew8G": {
     "title": "Object Oriented Programming",
-    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
+    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphism, encapsulation, etc., in programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Object Oriented Programming in Python",
@@ -715,7 +715,7 @@
   },
   "zAS4YiEJ6VPsyABrkIG8i": {
     "title": "Methods, Dunder",
-    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
+    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods that have two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Method vs Function in Python",
@@ -1314,7 +1314,7 @@
     "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "links": [
       {
-        "title": "ruff documentation",
+        "title": "Ruff documentation",
         "url": "https://docs.astral.sh/ruff/",
         "type": "article"
       }
