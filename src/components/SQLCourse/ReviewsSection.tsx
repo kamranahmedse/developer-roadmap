@@ -88,7 +88,7 @@ export function ReviewsSection() {
         })}
       >
         <div
-          className={`ma-x-3xl grid grid-cols-3 gap-4 ${!isExpanded ? 'relative' : ''}`}
+          className={`ma-x-3xl grid grid-cols-2 gap-4 lg:grid-cols-3 ${!isExpanded ? 'relative' : ''}`}
         >
           {visibleReviews.map((review, index) => (
             <div
@@ -134,7 +134,7 @@ export function ReviewsSection() {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-2 rounded-full border border-zinc-800 bg-[#121212] px-6 py-2 text-sm font-medium text-zinc-300 transition-all hover:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-100"
+          className="flex items-center gap-2 rounded-full bg-zinc-800 px-6 py-2 text-sm font-medium text-zinc-300 transition-all hover:bg-zinc-700 hover:text-zinc-100"
         >
           {isExpanded ? 'Show Less' : 'Show More Reviews'}
           <ChevronDownIcon

@@ -159,3 +159,9 @@ a > code:before {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+.highlight-yellow {
+  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=ffff43);
+  margin: -2px -4px;
+  padding: 2px 4px;
+}
