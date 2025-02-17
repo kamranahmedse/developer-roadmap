@@ -1,4 +1,6 @@
-import { StarIcon, User2Icon } from 'lucide-react';
+import { ChevronDownIcon, StarIcon, User2Icon } from 'lucide-react';
+import { useState } from 'react';
+import { cn } from '../../../editor/utils/classname';
 
 type Review = {
   name: string;
@@ -9,6 +11,7 @@ type Review = {
 };
 
 export function ReviewsSection() {
+  const [isExpanded, setIsExpanded] = useState(false);
   const reviews: Review[] = [
     {
       name: 'Tomáš Janků',
@@ -67,52 +70,80 @@ export function ReviewsSection() {
       avatarUrl: 'https://github.com/faisalahsan.png',
     },
     {
-      name: 'Mian Asif',
-      role: 'Software Engineering Lead',
+      name: 'Kalvin Chakma',
+      role: 'Software Engineer',
       rating: 5,
       text: "Best SQL course I've taken. The progression from basic to advanced concepts is well thought out, and the challenges are excellent.",
-      avatarUrl: 'https://github.com/mian.png',
+      avatarUrl: 'https://github.com/kalvin-chakma.png',
     },
   ];
 
+  const visibleReviews = isExpanded ? reviews : reviews.slice(0, 6);
+
   return (
-    <>
-      <div className="ma-x-3xl mt-24 grid grid-cols-3 flex-row gap-4 overflow-hidden">
-        {reviews.map((review, index) => (
-          <div
-            key={index}
-            className="max-w-[300px] flex-shrink-0 break-inside-avoid-column rounded-lg bg-zinc-800/30 p-6 backdrop-blur"
-          >
-            <div className="flex items-center gap-4">
-              {review.avatarUrl && (
-                <img
-                  src={review.avatarUrl}
-                  alt={review.name}
-                  className="h-12 w-12 rounded-full object-cover"
-                />
-              )}
-              {!review.avatarUrl && (
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800">
-                  <User2Icon className="h-6 w-6 text-zinc-400" />
+    <div className="relative">
+      <div
+        className={cn('rounded-2xl pb-12 pt-24', {
+          'pb-8': isExpanded,
+        })}
+      >
+        <div
+          className={`ma-x-3xl grid grid-cols-3 gap-4 ${!isExpanded ? 'relative' : ''}`}
+        >
+          {visibleReviews.map((review, index) => (
+            <div
+              key={index}
+              className="max-w-[300px] flex-shrink-0 break-inside-avoid-column rounded-lg bg-zinc-800/30 p-6 backdrop-blur"
+            >
+              <div className="flex items-center gap-4">
+                {review.avatarUrl && (
+                  <img
+                    src={review.avatarUrl}
+                    alt={review.name}
+                    className="h-12 w-12 rounded-full object-cover"
+                  />
+                )}
+                {!review.avatarUrl && (
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800">
+                    <User2Icon className="h-6 w-6 text-zinc-400" />
+                  </div>
+                )}
+                <div>
+                  <h3 className="font-semibold text-zinc-100">{review.name}</h3>
+                  <p className="text-sm text-zinc-400">{review.role}</p>
                 </div>
-              )}
-              <div>
-                <h3 className="font-semibold text-zinc-100">{review.name}</h3>
-                <p className="text-sm text-zinc-400">{review.role}</p>
               </div>
+              <div className="mt-2 flex">
+                {Array.from({ length: review.rating }).map((_, i) => (
+                  <StarIcon
+                    key={i}
+                    className="h-4 w-4 fill-yellow-500 text-yellow-500"
+                  />
+                ))}
+              </div>
+              <p className="mt-4 text-zinc-300">{review.text}</p>
             </div>
-            <div className="mt-2 flex">
-              {Array.from({ length: review.rating }).map((_, i) => (
-                <StarIcon
-                  key={i}
-                  className="h-4 w-4 fill-yellow-500 text-yellow-500"
-                />
-              ))}
-            </div>
-            <p className="mt-4 text-zinc-300">{review.text}</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {!isExpanded && (
+          <div className="absolute bottom-0 left-0 right-0 h-40 rounded-b-2xl bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent" />
+        )}
       </div>
-    </>
+
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="flex items-center gap-2 rounded-full border border-zinc-800 bg-[#121212] px-6 py-2 text-sm font-medium text-zinc-300 transition-all hover:border-zinc-700 hover:bg-zinc-900 hover:text-zinc-100"
+        >
+          {isExpanded ? 'Show Less' : 'Show More Reviews'}
+          <ChevronDownIcon
+            className={`h-4 w-4 transition-transform ${
+              isExpanded ? 'rotate-180' : ''
+            }`}
+          />
+        </button>
+      </div>
+    </div>
   );
 }
