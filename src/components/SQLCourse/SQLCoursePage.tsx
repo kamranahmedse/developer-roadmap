@@ -254,7 +254,7 @@ export function SQLCoursePage() {
         </a>
         <AccountButton />
       </div>
-      <div className="relative mt-7 max-w-3xl text-left md:mt-20 md:text-center">
+      <div className="relative mt-7 max-w-4xl text-left md:mt-20 md:text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
         <div className="inline-block rounded-full bg-yellow-500/10 px-4 py-1.5 text-base text-yellow-500 md:px-6 md:py-2 md:text-lg">
           <span className="hidden sm:block">
