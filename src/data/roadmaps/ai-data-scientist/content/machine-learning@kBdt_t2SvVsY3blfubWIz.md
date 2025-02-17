@@ -4,6 +4,6 @@ Machine learning is a field of artificial intelligence that uses statistical tec
 
 Learn more from the following resources:
 
-- [@article@Advantages and Disadvantages of AI](https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c)
-- [@article@Reinforcement Learning 101](https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292)
-- [@article@Understanding AUC-ROC Curve](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)
+- [@article@Advantages and Disadvantages of AI](https://medium.com/@laners.org/advantages-and-disadvantages-of-artificial-intelligence-cd6e42819b20)
+- [@article@Reinforcement Learning 101](https://medium.com/towards-data-science/reinforcement-learning-101-e24b50e1d292)
+- [@article@Understanding AUC-ROC Curve](https://medium.com/towards-data-science/understanding-auc-roc-curve-68b2303cc9c5)
