@@ -60,7 +60,7 @@ export function ReviewsSection() {
       name: 'Adnan Ahmed',
       role: 'Engineering Manager',
       rating: 5,
-      text: 'Having the integrated IDE made a huge difference. Being able to immediately practice what I learned was **invaluable**.',
+      text: 'Having the integrated IDE made a huge difference. Being able to **immediately practice** what I learned was **invaluable**.',
       avatarUrl: 'https://assets.roadmap.sh/guest/idnan-fzps5.jpeg',
     },
     {
@@ -74,7 +74,7 @@ export function ReviewsSection() {
       name: 'Faisal Ahsan',
       role: 'Software Engineer',
       rating: 5,
-      text: 'The course and the learning experience was great. What I really liked was the **no-fluff explanations** and practical examples.',
+      text: 'The course and the learning experience was great. What I really liked was the **no-fluff explanations** and **practical examples**.',
       avatarUrl: 'https://assets.roadmap.sh/guest/faisal-q78p2.jpeg',
     },
   ];
