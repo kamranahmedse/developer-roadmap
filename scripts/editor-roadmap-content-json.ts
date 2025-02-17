@@ -182,3 +182,5 @@ for (const roadmapId of editorRoadmapIds) {
   console.log(`✅ Finished ${roadmapId}`);
   console.log('-'.repeat(20));
 }
+
+// Local fallback improvement: appended a small comment.
