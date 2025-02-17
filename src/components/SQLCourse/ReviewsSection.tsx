@@ -78,22 +78,23 @@ export function ReviewsSection() {
     },
   ];
 
-  const visibleReviews = isExpanded ? reviews : reviews.slice(0, 6);
-
   return (
-    <div className="relative">
+    <div className="relative max-w-5xl">
       <div
-        className={cn('rounded-2xl pb-12 pt-24', {
+        className={cn('rounded-2xl pb-0 pt-24', {
           'pb-8': isExpanded,
         })}
       >
         <div
-          className={`ma-x-3xl grid grid-cols-2 gap-4 lg:grid-cols-3 ${!isExpanded ? 'relative' : ''}`}
+          className={cn(
+            'relative grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
+            isExpanded ? '' : 'max-h-[400px] overflow-hidden',
+          )}
         >
-          {visibleReviews.map((review, index) => (
+          {reviews.map((review, index) => (
             <div
               key={index}
-              className="max-w-[300px] flex-shrink-0 break-inside-avoid-column rounded-lg bg-zinc-800/30 p-6 backdrop-blur"
+              className="flex-shrink-0 break-inside-avoid-column rounded-xl bg-zinc-800/30 p-6 backdrop-blur"
             >
               <div className="flex items-center gap-4">
                 {review.avatarUrl && (
@@ -124,14 +125,21 @@ export function ReviewsSection() {
               <p className="mt-4 text-zinc-300">{review.text}</p>
             </div>
           ))}
-        </div>
 
-        {!isExpanded && (
-          <div className="absolute bottom-0 left-0 right-0 h-40 rounded-b-2xl bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent" />
-        )}
+          <div
+            className={cn(
+              'absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent',
+              isExpanded ? 'opacity-0' : 'opacity-100',
+            )}
+          />
+        </div>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+      <div
+        className={cn('absolute left-1/2 top-full -translate-x-1/2', {
+          '-translate-y-1/2': !isExpanded,
+        })}
+      >
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="flex items-center gap-2 rounded-full bg-zinc-800 px-6 py-2 text-sm font-medium text-zinc-300 transition-all hover:bg-zinc-700 hover:text-zinc-100"
