@@ -417,8 +417,6 @@ export function SQLCoursePage() {
 
       <CourseAuthor />
 
-      <ReviewsSection />
-
       <FAQSection />
 
       <FloatingPurchase />

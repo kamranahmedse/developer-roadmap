@@ -1,6 +1,7 @@
 import { ChevronDownIcon, StarIcon, User2Icon } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../../../editor/utils/classname';
+import { markdownToHtml } from '../../lib/markdown';
 
 type Review = {
   name: string;
@@ -17,64 +18,64 @@ export function ReviewsSection() {
       name: 'Tomáš Janků',
       role: 'Software Engineer',
       rating: 5,
-      text: "The course and it's interactivity is excellent and I'd honestly say it's one of the best on the SQL theme I've seen out there.",
+      text: "The course and it's interactivity is excellent and I'd honestly say it's **one of the best** on the SQL theme I've seen out there.",
       avatarUrl: 'https://github.com/jankudev.png',
     },
     {
       name: 'Gourav Khunger',
       role: 'Software Engineer',
       rating: 5,
-      text: 'This course was absolutely brilliant! The integrated database environment to practice what I learned was the best part.',
+      text: 'This course was **absolutely brilliant!** The integrated database environment to practice what I learned was the best part.',
       avatarUrl: 'https://github.com/gouravkhunger.png',
     },
     {
       name: 'Meabed',
       role: 'CTO',
       rating: 5,
-      text: 'Kamran has clearly put a lot of thought into this course. The content, structure and exercises were all great.',
+      text: 'Kamran has **clearly put a lot of thought** into this course. The content, structure and exercises were all great.',
       avatarUrl: 'https://github.com/meabed.png',
     },
     {
       name: 'Mohsin Aheer',
-      role: 'Software Engineer',
+      role: 'Sr. Software Engineer',
       rating: 5,
-      text: 'I already knew SQL but this course taught me a bunch of new things. Practical examples and challenges were great. Highly recommended!',
+      text: 'I already knew SQL but this course **taught me a bunch of new things.** Practical examples and challenges were great. Highly recommended!',
       avatarUrl: 'https://github.com/aheermohsinse.png',
     },
     {
       name: 'Reeve Tee',
       role: 'Software Engineer',
       rating: 5,
-      text: 'I found the course highly comprehensive and incredibly valuable. I would love to see more courses like this!',
+      text: 'I found the course **highly comprehensive and incredibly valuable**. I would love to see more courses like this!',
       avatarUrl: '',
     },
     {
       name: 'Zeeshan',
-      role: 'Software Engineer',
+      role: 'Sr. Software Engineer',
       rating: 5,
-      text: 'Loved the teaching style and the way the course was structured. The AI tutor was a great help when I got stuck.',
+      text: 'Loved the teaching style and the way the course was structured. The **AI tutor was a great help** when I got stuck.',
       avatarUrl: 'https://github.com/ziishaned.png',
     },
     {
       name: 'Adnan Ahmed',
       role: 'Engineering Manager',
       rating: 5,
-      text: 'Having the integrated IDE made a huge difference. Being able to immediately practice what I learned was invaluable.',
+      text: 'Having the integrated IDE made a huge difference. Being able to immediately practice what I learned was **invaluable**.',
       avatarUrl: 'https://github.com/idnan.png',
+    },
+    {
+      name: 'Kalvin Chakma',
+      role: 'Jr. Software Engineer',
+      rating: 5,
+      text: "Best SQL course I've taken. The progression from basic to advanced concepts is **well thought out**, and the challenges are **excellent**.",
+      avatarUrl: 'https://github.com/kalvin-chakma.png',
     },
     {
       name: 'Faisal Ahsan',
       role: 'Software Engineer',
       rating: 5,
-      text: 'The course and the learning experience was great. What I really liked was the no-fluff explanations and practical examples.',
+      text: 'The course and the learning experience was great. What I really liked was the **no-fluff explanations** and practical examples.',
       avatarUrl: 'https://github.com/faisalahsan.png',
-    },
-    {
-      name: 'Kalvin Chakma',
-      role: 'Software Engineer',
-      rating: 5,
-      text: "Best SQL course I've taken. The progression from basic to advanced concepts is well thought out, and the challenges are excellent.",
-      avatarUrl: 'https://github.com/kalvin-chakma.png',
     },
   ];
 
@@ -94,7 +95,7 @@ export function ReviewsSection() {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="flex-shrink-0 break-inside-avoid-column rounded-xl bg-zinc-800/30 p-6 backdrop-blur"
+              className="review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl bg-zinc-800/30 p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70"
             >
               <div className="flex items-center gap-4">
                 {review.avatarUrl && (
@@ -122,7 +123,12 @@ export function ReviewsSection() {
                   />
                 ))}
               </div>
-              <p className="mt-4 text-zinc-300">{review.text}</p>
+              <p
+                className="mt-4 text-zinc-300"
+                dangerouslySetInnerHTML={{
+                  __html: markdownToHtml(review.text),
+                }}
+              />
             </div>
           ))}
 
