@@ -149,3 +149,13 @@ a > code:before {
     background-position: 100% 100%;
   }
 }
+
+/* Hide scrollbars */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

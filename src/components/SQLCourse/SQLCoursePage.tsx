@@ -14,6 +14,7 @@ import {
   LayersIcon,
   TableIcon,
   WrenchIcon,
+  StarIcon,
 } from 'lucide-react';
 import { ChapterRow } from './ChapterRow';
 import { CourseFeature } from './CourseFeature';
@@ -27,6 +28,7 @@ import { AccountButton } from './AccountButton';
 import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 import { PlatformDemo } from './PlatformDemo';
 import { AuthorQuoteMessage } from './AuthorQuoteMessage';
+import { ReviewsSection } from './ReviewsSection';
 type ChapterData = {
   icon: React.ReactNode;
   title: string;
@@ -256,6 +258,7 @@ export function SQLCoursePage() {
       </div>
       <div className="relative mt-7 max-w-4xl text-left md:mt-20 md:text-center">
         <Spotlight className="left-[-170px] top-[-200px]" fill="#EAB308" />
+        
         <div className="inline-block rounded-full bg-yellow-500/10 px-4 py-1.5 text-base text-yellow-500 md:px-6 md:py-2 md:text-lg">
           <span className="hidden sm:block">
             Complete Course to Master Practical SQL
@@ -298,6 +301,8 @@ export function SQLCoursePage() {
           <BuyButton variant="main" />
         </div>
       </div>
+
+      <ReviewsSection />
 
       <AuthorQuoteMessage />
 
@@ -411,6 +416,8 @@ export function SQLCoursePage() {
       />
 
       <CourseAuthor />
+
+      <ReviewsSection />
 
       <FAQSection />
 
