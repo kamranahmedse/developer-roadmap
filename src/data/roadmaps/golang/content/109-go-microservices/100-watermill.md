@@ -1,8 +1,12 @@
 # Watermill
 
-Watermill is an event streaming library for handling asynchronous requests in go. It provides multiple sets of implementations for pub/sub.
-e.g: You can use conventional pub/sub implementations like Kafka or RabbitMQ, but also HTTP or MySQL binlog, if that fits your use case.
+Watermill is an event streaming library for handling asynchronous requests in Go. It provides multiple implementations for pub/sub.
+For example, you can use conventional pub/sub systems like Kafka or RabbitMQ, as well as HTTP or MySQL binlog, depending on your use case.
 
 Visit the following resources to learn more:
 
-- [@official@Watermill Website](https://watermill.io/)
+- [@official@Watermill Website](https://watermill.io)
+- [@official@Watermill Documentation](https://watermill.io/docs/getting-started)
+- [@opensource@Watermill](https://github.com/ThreeDotsLabs/watermill)
+- [@video@ThreeDotsLabs](https://www.youtube.com/@ThreeDotsLabs)
+- [@article@Watermill 1.4 Released](https://threedots.tech/post/watermill-1-4/)
