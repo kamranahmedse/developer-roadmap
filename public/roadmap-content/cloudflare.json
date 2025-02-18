@@ -148,8 +148,19 @@
   },
   "1dGFfQauOgHP7T4ReMpCU": {
     "title": "Workers KV",
-    "description": "",
-    "links": []
+    "description": "Workers KV is a data storage that allows you to store and retrieve data globally. With Workers KV, you can build dynamic and performant APIs and websites that support high read volumes with low latency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cloudflare Workers KV Documentation",
+        "url": "https://developers.cloudflare.com/kv/",
+        "type": "article"
+      },
+      {
+        "title": "How to Use Cloudflare Workers and KV Storage",
+        "url": "https://www.youtube.com/watch?v=NGk2HxV0Xkg",
+        "type": "article"
+      }
+    ]
   },
   "EBTHbXOOZiqrcYJvKhcWV": {
     "title": "Key-value Operations",
