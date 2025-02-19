@@ -7,6 +7,3 @@ Visit the following resources to learn more:
 
 - [@official@Watermill Website](https://watermill.io)
 - [@official@Watermill Documentation](https://watermill.io/docs/getting-started)
-- [@opensource@Watermill](https://github.com/ThreeDotsLabs/watermill)
-- [@video@ThreeDotsLabs](https://www.youtube.com/@ThreeDotsLabs)
-- [@article@Watermill 1.4 Released](https://threedots.tech/post/watermill-1-4/)
