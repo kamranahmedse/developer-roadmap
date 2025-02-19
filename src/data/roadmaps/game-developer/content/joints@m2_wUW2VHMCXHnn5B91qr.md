@@ -4,5 +4,6 @@ Joints in game development primarily refer to the connections between two object
 
 Visit the following resources to learn more:
 
-- [@article@Game Character Rigging Fundamentals](https://learn.unity.com/project/game-character-rigging-fundamentals)
+- [@official@Introduction to joints](https://docs.unity3d.com/Manual/Joints.html)
+- [@article@Character Rigging for Video Games](https://game-ace.com/blog/character-rigging-for-video-games/)
 - [@article@Joints in Unity](https://simonpham.medium.com/joints-in-unity-f9b602212524)
