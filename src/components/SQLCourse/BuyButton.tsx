@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
-import { ArrowRightIcon } from 'lucide-react';
+import { ArrowRightIcon, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import {
@@ -14,6 +14,7 @@ import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
 import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import { VideoModal } from '../VideoModal';
 
 export const SQL_COURSE_SLUG = 'sql';
 
@@ -35,6 +36,7 @@ export function BuyButton(props: BuyButtonProps) {
   const { variant = 'main' } = props;
 
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const toast = useToast();
 
   const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
@@ -164,6 +166,12 @@ export function BuyButton(props: BuyButtonProps) {
     return (
       <div className="relative flex w-full flex-col items-center gap-2 md:w-auto">
         {courseLoginPopup}
+        {isVideoModalOpen && (
+          <VideoModal
+            videoId="6S1CcF-ngeQ"
+            onClose={() => setIsVideoModalOpen(false)}
+          />
+        )}
         <button
           onClick={onBuyClick}
           disabled={isLoadingPricing}
@@ -200,8 +208,14 @@ export function BuyButton(props: BuyButtonProps) {
         </button>
 
         {!isLoadingPricing && (
-          <span className="absolute top-full translate-y-2.5 text-sm text-yellow-400">
-            Lifetime access <span className="mx-1">&middot;</span> Free updates
+          <span className="absolute top-full z-50 flex w-[300px] translate-y-3 flex-row items-center justify-center text-sm text-yellow-400">
+            Lifetime access <span className="mx-2">&middot;</span>{' '}
+            <button
+              onClick={() => setIsVideoModalOpen(true)}
+              className="flex cursor-pointer flex-row items-center gap-1.5 underline underline-offset-4 hover:text-yellow-500"
+            >
+              <Play className="size-3 fill-current" /> Watch Video (3 min)
+            </button>
           </span>
         )}
       </div>
