@@ -14,7 +14,7 @@ export function PlatformDemo() {
           onClose={() => setIsVideoModalOpen(false)}
         />
       )}
-      <div className="relative mt-12 w-full max-w-5xl sm:mt-20">
+      <div className="relative mt-12 w-full max-w-5xl sm:mt-24">
         <img
           src="https://assets.roadmap.sh/guest/course-environment-87jg8.png"
           alt="Course Environment"
