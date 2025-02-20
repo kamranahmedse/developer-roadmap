@@ -12,7 +12,7 @@ import {
   GitMergeIcon,
   LayersIcon,
   TableIcon,
-  WrenchIcon
+  WrenchIcon,
 } from 'lucide-react';
 import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 import { AccountButton } from './AccountButton';
