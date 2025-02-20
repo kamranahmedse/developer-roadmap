@@ -19,7 +19,7 @@ Here's a simple example using OpenCV in C++ to read and display an image:
 #include <iostream>
 
 int main(int argc, char** argv) {
-    if(argc != 2) {
+    if (argc != 2) {
         std::cout << "Usage: display_image ImageToLoadAndDisplay" << std::endl;
         return -1;
     }
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     cv::Mat image;
     image = cv::imread(argv[1], cv::IMREAD_COLOR);
 
-    if(!image.data) {
+    if (!image.data) {
         std::cout << "Could not open or find the image" << std::endl;
         return -1;
     }

@@ -23,14 +23,14 @@ Here is a simple OpenCL code example that illustrates how to implement vector ad
 #include <iostream>
 #include <vector>
 
-const char *kernelSource = "__kernel void vector_add(__global int *A, __global int *B, __global int *C, const int N){"
+const char *kernelSource = "__kernel void vector_add(__global int *A, __global int *B, __global int *C, const int N) {"
                             "  int i = get_global_id(0);"
-                            "  if(i < N){"
+                            "  if (i < N) {"
                             "    C[i] = A[i] + B[i];"
                             "  }"
                             "}";
 
-int main(){
+int main() {
     // Initialize data vectors
     std::vector<int> A = {1, 2, 3};
     std::vector<int> B = {4, 5, 6};

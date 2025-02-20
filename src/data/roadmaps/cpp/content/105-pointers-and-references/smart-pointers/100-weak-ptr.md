@@ -26,7 +26,7 @@ int main() {
         std::shared_ptr<MyClass> shared = std::make_shared<MyClass>();
         weak = shared;
 
-        if(auto sharedFromWeak = weak.lock()) {
+        if (auto sharedFromWeak = weak.lock()) {
             sharedFromWeak->DoSomething(); // Safely use the object
             std::cout << "Shared uses count: " << sharedFromWeak.use_count() << '\n'; // 2
         }
@@ -34,7 +34,7 @@ int main() {
 
     // shared goes out of scope and the MyClass object is destroyed
 
-    if(auto sharedFromWeak = weak.lock()) {
+    if (auto sharedFromWeak = weak.lock()) {
         // This block will not be executed because the object is destroyed
     }
     else {
