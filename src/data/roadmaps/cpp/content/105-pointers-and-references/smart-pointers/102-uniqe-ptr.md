@@ -35,9 +35,9 @@ int main() {
     std::unique_ptr<int> p2 = std::move(p1); // Ownership is transferred from p1 to p2
 
     if (p1) {
-        std::cout << "p1 owns the object" << std::endl;
+        std::cout << "p1 owns the object\n";
     } else if (p2) {
-        std::cout << "p2 owns the object" << std::endl;
+        std::cout << "p2 owns the object\n";
     }
 
     return 0;
@@ -52,7 +52,7 @@ int main() {
 
 struct MyDeleter {
     void operator()(int* ptr) {
-        std::cout << "Custom Deleter: Deleting pointer" << std::endl;
+        std::cout << "Custom Deleter: Deleting pointer\n";
         delete ptr;
     }
 };

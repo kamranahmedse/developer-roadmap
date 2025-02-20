@@ -33,7 +33,7 @@ Example of a source file:
 #include <iostream>
 
 void Example::printMessage() {
-    std::cout << "Hello, code splitting!" << std::endl;
+    std::cout << "Hello, code splitting!\n";
 }
 ```
 

@@ -12,28 +12,28 @@ To resolve this ambiguity, you can use virtual inheritance. A virtual base class
 class Base {
 public:
     void print() {
-        std::cout << "Base class" << std::endl;
+        std::cout << "Base class\n";
     }
 };
 
 class Derived1 : virtual public Base {
 public:
     void derived1Print() {
-        std::cout << "Derived1 class" << std::endl;
+        std::cout << "Derived1 class\n";
     }
 };
 
 class Derived2 : virtual public Base {
 public:
     void derived2Print() {
-        std::cout << "Derived2 class" << std::endl;
+        std::cout << "Derived2 class\n";
     }
 };
 
 class Derived3 : public Derived1, public Derived2 {
 public:
     void derived3Print() {
-        std::cout << "Derived3 class" << std::endl;
+        std::cout << "Derived3 class\n";
     }
 };
 

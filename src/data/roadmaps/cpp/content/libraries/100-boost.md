@@ -27,15 +27,15 @@ int main() {
     boost::filesystem::path path("directory_path");
   
     if (boost::filesystem::exists(path)) {
-        std::cout << "Path: " << path << " exists!" << std::endl;
+        std::cout << "Path: " << path << " exists!\n";
       
         if (boost::filesystem::is_directory(path)) {
-            std::cout << "Path: " << path << " is a directory." << std::endl;
+            std::cout << "Path: " << path << " is a directory.\n";
         } else if (boost::filesystem::is_regular_file(path)) {
-            std::cout << "Path: " << path << " is a regular file." << std::endl;
+            std::cout << "Path: " << path << " is a regular file.\n";
         }
     } else {
-        std::cout << "Path: " << path << " does not exist!" << std::endl;
+        std::cout << "Path: " << path << " does not exist!\n";
     }
 
     return 0;

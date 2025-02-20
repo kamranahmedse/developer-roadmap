@@ -64,7 +64,7 @@ int main() {
     m["one"] = 1;
     m["two"] = 2;
 
-    std::cout << "Map contains:" << std::endl;
+    std::cout << "Map contains:\n";
     for (const auto &pair : m) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
@@ -87,7 +87,7 @@ int main() {
     um["one"] = 1;
     um["two"] = 2;
 
-    std::cout << "Unordered map contains:" << std::endl;
+    std::cout << "Unordered map contains:\n";
     for (const auto &pair : um) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }

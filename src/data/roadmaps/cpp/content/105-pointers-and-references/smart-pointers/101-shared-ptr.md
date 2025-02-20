@@ -14,8 +14,8 @@ Here's an example of how to use `shared_ptr`:
 
 class MyClass {
 public:
-    MyClass() { std::cout << "Constructor is called." << std::endl; }
-    ~MyClass() { std::cout << "Destructor is called." << std::endl; }
+    MyClass() { std::cout << "Constructor is called.\n"; }
+    ~MyClass() { std::cout << "Destructor is called.\n"; }
 };
 
 int main() {
@@ -26,11 +26,11 @@ int main() {
         // create another shared pointer and initialize it with the previously created pointer
         std::shared_ptr<MyClass> ptr2 = ptr1;
 
-        std::cout << "Inside the inner scope." << std::endl;
+        std::cout << "Inside the inner scope.\n";
         // both pointers share the same object, and the reference counter has been increased to 2
     }
 
-    std::cout << "Outside the inner scope." << std::endl;
+    std::cout << "Outside the inner scope.\n";
     // leaving the inner scope will destroy ptr2, and the reference counter is decremented to 1
     
     // the main function returns, ptr1 goes out of scope, and the reference counter becomes 0
