@@ -34,7 +34,7 @@ export function ReviewsSection() {
       rating: 5,
       text: [
         'I found this course to be **really well thought out**. I bought this course for the advanced chapters, but I ended up learning a bunch of new things even from the beginner lessons.',
-        'No matter your SQL experience, this course is **a must-have** if you want to level up your SQL and data analysis skills.',
+        'No matter your SQL experience, this course is **a must-have** if you want to level up your SQL and data analysis skills. Highly recommended!',
       ],
       avatarUrl: 'https://assets.roadmap.sh/guest/william-imoh-sd2dk.jpg',
       isProminent: true,
