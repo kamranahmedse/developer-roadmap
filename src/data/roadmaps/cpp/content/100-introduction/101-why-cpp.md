@@ -43,7 +43,7 @@ int main() {
     // High-level programming
     std::vector<int> myVector = {1, 2, 3};
     for (const auto &i: myVector) {
-        std::cout << i << std::endl;
+        std::cout << i << '\n';
     }
 }
 ```

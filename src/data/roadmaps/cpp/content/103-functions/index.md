@@ -36,7 +36,7 @@ int addNumbers(int a, int b) {
 int main() {
     int num1 = 5, num2 = 10;
     int result = addNumbers(num1, num2); // Calling the function
-    std::cout << "The sum is: " << result << std::endl;
+    std::cout << "The sum is: " << result << '\n';
     return 0;
 }
 ```
@@ -58,7 +58,7 @@ int multiplyNumbers(int x, int y);
 int main() {
     int num1 = 3, num2 = 7;
     int result = multiplyNumbers(num1, num2); // Calling the function
-    std::cout << "The product is: " << result << std::endl;
+    std::cout << "The product is: " << result << '\n';
     return 0;
 }
 

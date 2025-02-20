@@ -31,9 +31,9 @@ int main() {
 
     try {
         int result = divide(num1, num2);
-        std::cout << "The result is: " << result << std::endl;
+        std::cout << "The result is: " << result << '\n';
     } catch (const char* msg) {
-        std::cerr << "Error: " << msg << std::endl;
+        std::cerr << "Error: " << msg << '\n';
     }
 
     return 0;
@@ -71,9 +71,9 @@ int main() {
 
     try {
         int result = divide(num1, num2);
-        std::cout << "The result is: " << result << std::endl;
+        std::cout << "The result is: " << result << '\n';
     } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+        std::cerr << "Error: " << e.what() << '\n';
     }
 
     return 0;

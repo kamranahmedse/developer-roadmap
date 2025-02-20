@@ -21,8 +21,8 @@ int main() {
     int a;
     int* a_ptr = &a;
 
-    std::cout << "Is 'a' a pointer? " << std::boolalpha << std::is_pointer<decltype(a)>::value << std::endl;
-    std::cout << "Is 'a_ptr' a pointer? " << std::boolalpha << std::is_pointer<decltype(a_ptr)>::value << std::endl;
+    std::cout << "Is 'a' a pointer? " << std::boolalpha << std::is_pointer<decltype(a)>::value << '\n';
+    std::cout << "Is 'a_ptr' a pointer? " << std::boolalpha << std::is_pointer<decltype(a_ptr)>::value << '\n';
 
     return 0;
 }
@@ -46,7 +46,7 @@ typename std::enable_if<std::is_arithmetic<T>::value, T>::type find_max(T a, T b
 
 int main() {
     int max = find_max(10, 20);
-    std::cout << "Max: " << max << std::endl;
+    std::cout << "Max: " << max << '\n';
 
     return 0;
 }

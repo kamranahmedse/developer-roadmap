@@ -15,7 +15,7 @@ Here's a brief summary of the different C++ standards released to date:
    ```cpp
    std::vector<int> numbers = {1, 2, 3, 4};
    for (int num : numbers) {
-       std::cout << num << std::endl;
+       std::cout << num << '\n';
    }
    ```
    - Smart pointers like `std::shared_ptr` and `std::unique_ptr`.

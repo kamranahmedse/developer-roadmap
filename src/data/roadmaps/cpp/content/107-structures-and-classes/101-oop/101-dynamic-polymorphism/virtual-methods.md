@@ -53,10 +53,10 @@ int main() {
     Rectangle r(4, 6);
 
     Shape* shape = &c;
-    std::cout << "Circle's area: " << shape->area() << std::endl;
+    std::cout << "Circle's area: " << shape->area() << '\n';
 
     shape = &r;
-    std::cout << "Rectangle's area: " << shape->area() << std::endl;
+    std::cout << "Rectangle's area: " << shape->area() << '\n';
 
     return 0;
 }

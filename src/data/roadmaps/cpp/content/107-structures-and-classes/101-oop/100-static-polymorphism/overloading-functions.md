@@ -12,15 +12,15 @@ Here's an example illustrating function overloading:
 #include <iostream>
 
 void print(int num) {
-    std::cout << "Printing int: " << num << std::endl;
+    std::cout << "Printing int: " << num << '\n';
 }
 
 void print(double num) {
-    std::cout << "Printing double: " << num << std::endl;
+    std::cout << "Printing double: " << num << '\n';
 }
 
 void print(char const *str) {
-    std::cout << "Printing string: " << str << std::endl;
+    std::cout << "Printing string: " << str << '\n';
 }
 
 int main() {

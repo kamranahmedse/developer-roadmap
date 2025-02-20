@@ -50,7 +50,7 @@ int main() {
 
     // Output results
     for (size_t i = 0; i < A.size(); ++i) {
-        std::cout << A[i] << " + " << B[i] << " = " << C[i] << std::endl;
+        std::cout << A[i] << " + " << B[i] << " = " << C[i] << '\n';
     }
     return 0;
 }

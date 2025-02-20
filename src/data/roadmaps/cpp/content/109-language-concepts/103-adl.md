@@ -25,7 +25,7 @@ int main() {
     MyNamespace::MyClass obj;
     obj.value = 42;
     using std::cout; // Required to use 'cout' without fully qualifying it.
-    cout << obj << std::endl; // ADL is used to find the correct overloaded 'operator<<'.
+    cout << obj << '\n'; // ADL is used to find the correct overloaded 'operator<<'.
 }
 ```
 

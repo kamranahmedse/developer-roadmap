@@ -32,7 +32,7 @@ You can pass arguments to the thread function by providing them as additional ar
 #include <thread>
 
 void print_sum(int a, int b) {
-    std::cout << "The sum is: " << a + b << std::endl;
+    std::cout << "The sum is: " << a + b << '\n';
 }
 
 int main() {
@@ -59,7 +59,7 @@ void print_block(int n, char c) {
         for (int i = 0; i < n; ++i) {
             std::cout << c;
         }
-        std::cout << std::endl;
+        std::cout << '\n';
     }
 }
 

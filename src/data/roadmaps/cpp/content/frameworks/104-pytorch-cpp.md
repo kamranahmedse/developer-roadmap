@@ -15,19 +15,19 @@ To use the PyTorch C++ API, you need to install the LibTorch distribution. Follo
 int main() {
   // Create a 3x3 matrix with zeros.
   torch::Tensor a = torch::zeros({3, 3});
-  std::cout << a << std::endl;
+  std::cout << a << '\n';
 
   // Create a 2x2 matrix with ones and convert to float.
   torch::Tensor b = torch::ones({2, 2}).to(torch::kFloat);
-  std::cout << b << std::endl;
+  std::cout << b << '\n';
 
   // Create a random tensor size 2x2 and specify its type.
   torch::Tensor c = torch::randint(0, 10, {2, 2}, torch::kInt);
-  std::cout << c << std::endl;
+  std::cout << c << '\n';
 
   // Perform element-wise addition.
   auto sum = b + c.to(torch::kFloat);
-  std::cout << sum << std::endl;
+  std::cout << sum << '\n';
 }
 ```
 
@@ -62,7 +62,7 @@ int main() {
   // Use the custom module.
   torch::Tensor input = torch::randn({2, 1, 28, 28});
   torch::Tensor output = net.forward(input);
-  std::cout << output << std::endl;
+  std::cout << output << '\n';
 
   return 0;
 }

@@ -33,7 +33,7 @@ T sum(T t, Args... args) {
 
 int main() {
   int result = sum(1, 2, 3, 4, 5);  // expands to 1 + 2 + 3 + 4 + 5
-  std::cout << "The sum is: " << result << std::endl;
+  std::cout << "The sum is: " << result << '\n';
 
   return 0;
 }
@@ -63,7 +63,7 @@ class Tuple<Head, Tail...> : public Tuple<Tail...> {
 
 int main() {
   Tuple<int, float, double> tuple(1, 2.0f, 3.0);
-  std::cout << "First element: " << tuple.head() << std::endl;
+  std::cout << "First element: " << tuple.head() << '\n';
   return 0;
 }
 ```

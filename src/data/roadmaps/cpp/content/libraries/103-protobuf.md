@@ -58,9 +58,9 @@ Here is a brief summary of protobuf and how to use it in C++:
        input.close();
 
        // Print the deserialized message
-       std::cout << "Name: " << input_person.name() << std::endl;
-       std::cout << "Age: " << input_person.age() << std::endl;
-       std::cout << "Email: " << input_person.email() << std::endl;
+       std::cout << "Name: " << input_person.name() << '\n';
+       std::cout << "Age: " << input_person.age() << '\n';
+       std::cout << "Email: " << input_person.email() << '\n';
 
        google::protobuf::ShutdownProtobufLibrary();
 

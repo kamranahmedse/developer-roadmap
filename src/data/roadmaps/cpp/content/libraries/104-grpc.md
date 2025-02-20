@@ -66,7 +66,7 @@ void RunServer() {
   builder.RegisterService(&service);
 
   std::unique_ptr<Server> server(builder.BuildAndStart());
-  std::cout << "Server listening on " << server_address << std::endl;
+  std::cout << "Server listening on " << server_address << '\n';
   server->Wait();
 }
 
@@ -120,7 +120,7 @@ int main(int argc, char** argv) {
   GreeterClient greeter(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
   std::string user("world");
   std::string reply = greeter.SayHello(user);
-  std::cout << "Greeter received: " << reply << std::endl;
+  std::cout << "Greeter received: " << reply << '\n';
 
   return 0;
 }
