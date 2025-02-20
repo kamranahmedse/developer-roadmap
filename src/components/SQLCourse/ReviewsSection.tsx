@@ -33,7 +33,7 @@ export function ReviewsSection() {
       role: 'Founder and Data Enthusiast',
       rating: 5,
       text: [
-        'I have been working with SQL and databases for a long time, I bought this course for the advanced chapters but ended up learning a bunch of **new things even from the beginner lessons**.',
+        'I have been working with SQL and databases for a long time, I bought this course for the advanced chapters but ended up completing the entire course. I learned a lot of new things and it was **well worth the investment**.',
         'No matter your SQL experience, this course is **a must-have** if you want to level up your SQL and data analysis skills. Highly recommended!',
       ],
       avatarUrl: 'https://assets.roadmap.sh/guest/william-imoh-sd2dk.jpg',
