@@ -10,19 +10,22 @@ importers:
     dependencies:
       '@astrojs/node':
         specifier: ^8.3.4
-        version: 8.3.4(astro@4.16.18)
+        version: 8.3.4(astro@4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3))
       '@astrojs/react':
         specifier: ^3.6.2
-        version: 3.6.3(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+        version: 3.6.3(@types/node@18.19.74)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@astrojs/sitemap':
         specifier: ^3.2.0
         version: 3.2.1
       '@astrojs/tailwind':
         specifier: ^5.1.2
-        version: 5.1.5(astro@4.16.18)(tailwindcss@3.4.17)
+        version: 5.1.5(astro@4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3))(tailwindcss@3.4.17)
       '@fingerprintjs/fingerprintjs':
         specifier: ^4.5.0
         version: 4.5.1
+      '@microsoft/clarity':
+        specifier: ^1.0.0
+        version: 1.0.0
       '@nanostores/react':
         specifier: ^0.8.0
         version: 0.8.4(nanostores@0.11.3)(react@18.3.1)
@@ -43,7 +46,7 @@ importers:
         version: 18.3.5(@types/react@18.3.18)
       astro:
         specifier: ^4.16.1
-        version: 4.16.18(typescript@5.7.3)
+        version: 4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -109,10 +112,10 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-tooltip:
         specifier: ^5.28.0
-        version: 5.28.0(react-dom@18.3.1)(react@18.3.1)
+        version: 5.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       reactflow:
         specifier: ^11.11.4
-        version: 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+        version: 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rehype-external-links:
         specifier: ^3.0.0
         version: 3.0.0
@@ -145,7 +148,7 @@ importers:
         version: 3.4.17
       tiptap-markdown:
         specifier: ^0.8.10
-        version: 0.8.10(@tiptap/core@2.11.3)
+        version: 0.8.10(@tiptap/core@2.11.3(@tiptap/pm@2.11.3))
       turndown:
         specifier: ^7.2.0
         version: 7.2.0
@@ -788,6 +791,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@microsoft/clarity@1.0.0':
+    resolution: {integrity: sha512-2QY6SmXnqRj6dWhNY8NYCN3e53j4zCFebH4wGnNhdGV1mqAsQwql2fT0w8TISxCvwwfVp8idsWLIdrRHOms1PQ==}
 
   '@mixmark-io/domino@2.2.0':
     resolution: {integrity: sha512-Y28PR25bHXUg88kCV7nivXrP2Nj2RueZ3/l/jdx6J9f8J4nsEGcgX0Qe6lt7Pa+J79+kPiJU3LguR6O/6zrLOw==}
@@ -3441,9 +3447,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@8.3.4(astro@4.16.18)':
+  '@astrojs/node@8.3.4(astro@4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3))':
     dependencies:
-      astro: 4.16.18(typescript@5.7.3)
+      astro: 4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3)
       send: 0.19.1
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -3453,15 +3459,15 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.3(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@astrojs/react@3.6.3(@types/node@18.19.74)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/react': 18.3.18
       '@types/react-dom': 18.3.5(@types/react@18.3.18)
-      '@vitejs/plugin-react': 4.3.4(vite@5.4.14)
+      '@vitejs/plugin-react': 4.3.4(vite@5.4.14(@types/node@18.19.74))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       ultrahtml: 1.5.3
-      vite: 5.4.14
+      vite: 5.4.14(@types/node@18.19.74)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3479,9 +3485,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/tailwind@5.1.5(astro@4.16.18)(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@5.1.5(astro@4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 4.16.18(typescript@5.7.3)
+      astro: 4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 4.0.2(postcss@8.5.1)
@@ -3904,6 +3910,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@microsoft/clarity@1.0.0': {}
+
   '@mixmark-io/domino@2.2.0': {}
 
   '@nanostores/react@0.8.4(nanostores@0.11.3)(react@18.3.1)':
@@ -3992,9 +4000,9 @@ snapshots:
     dependencies:
       playwright: 1.50.0
 
-  '@reactflow/background@11.3.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/background@11.3.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.5
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -4003,9 +4011,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@reactflow/controls@11.2.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/controls@11.2.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.5
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -4014,7 +4022,7 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@reactflow/core@11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/core@11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/d3': 7.4.3
       '@types/d3-drag': 3.0.7
@@ -4031,9 +4039,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@reactflow/minimap@11.7.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/minimap@11.7.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/d3-selection': 3.0.11
       '@types/d3-zoom': 3.0.8
       classcat: 5.0.5
@@ -4046,9 +4054,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@reactflow/node-resizer@2.2.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/node-resizer@2.2.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.5
       d3-drag: 3.0.0
       d3-selection: 3.0.0
@@ -4059,9 +4067,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@reactflow/node-toolbar@1.3.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)':
+  '@reactflow/node-toolbar@1.3.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.5
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -4123,11 +4131,13 @@ snapshots:
       '@resvg/resvg-js-win32-ia32-msvc': 2.6.2
       '@resvg/resvg-js-win32-x64-msvc': 2.6.2
 
-  '@rollup/pluginutils@5.1.4':
+  '@rollup/pluginutils@5.1.4(rollup@4.32.0)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.2
+    optionalDependencies:
+      rollup: 4.32.0
 
   '@rollup/rollup-android-arm-eabi@4.32.0':
     optional: true
@@ -4503,14 +4513,14 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-react@4.3.4(vite@5.4.14)':
+  '@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@18.19.74))':
     dependencies:
       '@babel/core': 7.26.7
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.7)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.14
+      vite: 5.4.14(@types/node@18.19.74)
     transitivePeerDependencies:
       - supports-color
 
@@ -4559,7 +4569,7 @@ snapshots:
 
   array-union@2.1.0: {}
 
-  astro@4.16.18(typescript@5.7.3):
+  astro@4.16.18(@types/node@18.19.74)(rollup@4.32.0)(typescript@5.7.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -4569,7 +4579,7 @@ snapshots:
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.7)
       '@babel/types': 7.26.7
       '@oslojs/encoding': 1.1.0
-      '@rollup/pluginutils': 5.1.4
+      '@rollup/pluginutils': 5.1.4(rollup@4.32.0)
       '@types/babel__core': 7.20.5
       '@types/cookie': 0.6.0
       acorn: 8.14.0
@@ -4615,8 +4625,8 @@ snapshots:
       tsconfck: 3.1.4(typescript@5.7.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
-      vite: 5.4.14
-      vitefu: 1.0.5(vite@5.4.14)
+      vite: 5.4.14(@types/node@18.19.74)
+      vitefu: 1.0.5(vite@5.4.14(@types/node@18.19.74))
       which-pm: 3.0.0
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -5869,6 +5879,7 @@ snapshots:
       form-data-encoder: 1.7.2
       formdata-node: 4.4.1
       node-fetch: 2.7.0
+    optionalDependencies:
       zod: 3.24.1
     transitivePeerDependencies:
       - encoding
@@ -5984,8 +5995,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.5.1):
     dependencies:
       lilconfig: 3.1.3
-      postcss: 8.5.1
       yaml: 2.7.0
+    optionalDependencies:
+      postcss: 8.5.1
 
   postcss-nested@6.2.0(postcss@8.5.1):
     dependencies:
@@ -6025,6 +6037,7 @@ snapshots:
   prettier-plugin-tailwindcss@0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.4.2):
     dependencies:
       prettier: 3.4.2
+    optionalDependencies:
       prettier-plugin-astro: 0.14.1
 
   prettier@3.4.2: {}
@@ -6178,7 +6191,7 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-tooltip@5.28.0(react-dom@18.3.1)(react@18.3.1):
+  react-tooltip@5.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@floating-ui/dom': 1.6.13
       classnames: 2.5.1
@@ -6189,14 +6202,14 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  reactflow@11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1):
+  reactflow@11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@reactflow/background': 11.3.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
-      '@reactflow/controls': 11.2.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
-      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
-      '@reactflow/minimap': 11.7.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
-      '@reactflow/node-resizer': 2.2.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
-      '@reactflow/node-toolbar': 1.3.14(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
+      '@reactflow/background': 11.3.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/controls': 11.2.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/core': 11.11.4(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/minimap': 11.7.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/node-resizer': 2.2.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/node-toolbar': 1.3.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -6612,7 +6625,7 @@ snapshots:
 
   tinyexec@0.3.2: {}
 
-  tiptap-markdown@0.8.10(@tiptap/core@2.11.3):
+  tiptap-markdown@0.8.10(@tiptap/core@2.11.3(@tiptap/pm@2.11.3)):
     dependencies:
       '@tiptap/core': 2.11.3(@tiptap/pm@2.11.3)
       '@types/markdown-it': 13.0.9
@@ -6639,7 +6652,7 @@ snapshots:
   ts-interface-checker@0.1.13: {}
 
   tsconfck@3.1.4(typescript@5.7.3):
-    dependencies:
+    optionalDependencies:
       typescript: 5.7.3
 
   tslib@2.8.1: {}
@@ -6753,17 +6766,18 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.14:
+  vite@5.4.14(@types/node@18.19.74):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.1
       rollup: 4.32.0
     optionalDependencies:
+      '@types/node': 18.19.74
       fsevents: 2.3.3
 
-  vitefu@1.0.5(vite@5.4.14):
-    dependencies:
-      vite: 5.4.14
+  vitefu@1.0.5(vite@5.4.14(@types/node@18.19.74)):
+    optionalDependencies:
+      vite: 5.4.14(@types/node@18.19.74)
 
   w3c-keyname@2.2.8: {}
 
@@ -6835,8 +6849,9 @@ snapshots:
 
   zustand@4.5.6(@types/react@18.3.18)(react@18.3.1):
     dependencies:
+      use-sync-external-store: 1.4.0(react@18.3.1)
+    optionalDependencies:
       '@types/react': 18.3.18
       react: 18.3.1
-      use-sync-external-store: 1.4.0(react@18.3.1)
 
   zwitch@2.0.4: {}
