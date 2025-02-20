@@ -44,8 +44,7 @@ std::cout << "Hello, World!\n";
 ```
 - `std`: This is the namespace where C++ standard library entities (classes and functions) reside. It stands for "standard" and is an abbreviation for the Standard Template Library (STL).
 - `std::cout`: The standard "character output" stream that writes to the console
-- `"Hello, World!"`: The string literal to print
-- `'\n'`: The "end line" manipulator that inserts a newline character and flushes the output buffer
+- `"Hello, World!\n"`: The string literal to print. Notice the newline character `\n` at the end.
 
 ## Return Statement
 
