@@ -42,7 +42,7 @@ To output text to the console, we use the `std::cout` object and the insertion o
 ```cpp
 std::cout << "Hello, World!" << std::endl;
 ```
-- `std`: This is the namespace where C++ standard library entities (classes and functions) reside. It stands for "standard" and is an abbreviation for the Standard Template Library (STL).
+- `std`: This is the namespace where C++ standard library entities (classes and functions) reside. It stands for "standard"
 - `std::cout`: The standard "character output" stream that writes to the console
 - `"Hello, World!"`: The string literal to print
 - `std::endl`: The "end line" manipulator that inserts a newline character and flushes the output buffer
