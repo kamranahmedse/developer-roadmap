@@ -7,13 +7,38 @@ type Review = {
   name: string;
   role: string;
   rating: number;
-  text: string;
+  text: string | string[];
   avatarUrl?: string;
+  isProminent?: boolean;
+  isSecondaryProminent?: boolean;
 };
 
 export function ReviewsSection() {
   const [isExpanded, setIsExpanded] = useState(false);
   const reviews: Review[] = [
+    {
+      name: 'Robin Wieruch',
+      role: 'Author - Multiple best-selling books',
+      rating: 5,
+      text: [
+        'Kamran has been in the **educative space for a long time**, and it shows in the way he teaches SQL: clear, structured, and straight to the point.',
+        "He breaks down SQL fundamentals in a way that's both **intuitive and practical**, helping you not just write queries, but truly understand how databases work.",
+        "Even if you've used SQL before, this **course will fill in gaps you didn't even realize you had**. Get ready to level up your database skills!",
+      ],
+      avatarUrl: 'https://assets.roadmap.sh/guest/robin.jpeg',
+      isProminent: true,
+    },
+    {
+      name: 'William Imoh',
+      role: 'Founder and Data Enthusiast',
+      rating: 5,
+      text: [
+        'I found this course to be **really well thought out**. I bought this course for the advanced chapters, but I ended up learning a bunch of new things even from the beginner lessons.',
+        'No matter your SQL experience, this course is **a must-have** if you want to level up your SQL and data analysis skills.',
+      ],
+      avatarUrl: 'https://assets.roadmap.sh/guest/william-imoh-sd2dk.jpg',
+      isProminent: true,
+    },
     {
       name: 'Tomáš Janků',
       role: 'Software Engineer',
@@ -79,6 +104,9 @@ export function ReviewsSection() {
     },
   ];
 
+  const prominentReviews = reviews.filter((r) => r.isProminent);
+  const regularReviews = reviews.filter((r) => !r.isProminent);
+
   return (
     <div className="relative max-w-5xl">
       <div
@@ -86,16 +114,79 @@ export function ReviewsSection() {
           'pb-8': isExpanded,
         })}
       >
+        {/* Prominent Reviews */}
+        <div className="mb-4 md:mb-6">
+          <div className="grid grid-cols-1 gap-4 md:gap-6 md:grid-cols-2">
+            {prominentReviews.map((review, index) => (
+              <div
+                key={index}
+                className="review-testimonial relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70"
+              >
+                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-yellow-500/5" />
+                <div className="flex items-center gap-4">
+                  {review.avatarUrl && (
+                    <img
+                      src={review.avatarUrl}
+                      alt={review.name}
+                      className="h-16 w-16 rounded-full border-2 border-yellow-500/20 object-cover"
+                    />
+                  )}
+                  {!review.avatarUrl && (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-zinc-800">
+                      <User2Icon className="h-8 w-8 text-zinc-400" />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-lg font-semibold text-zinc-100">
+                      {review.name}
+                    </h3>
+                    <p className="text-sm text-yellow-500/70">{review.role}</p>
+                    <div className="mt-1 flex">
+                      {Array.from({ length: review.rating }).map((_, i) => (
+                        <StarIcon
+                          key={i}
+                          className="h-4 w-4 fill-yellow-500 text-yellow-500"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 flex flex-col gap-3">
+                  {(typeof review.text === 'string'
+                    ? [review.text]
+                    : review.text
+                  ).map((text, index) => (
+                    <p
+                      key={index}
+                      className="text-zinc-300"
+                      dangerouslySetInnerHTML={{
+                        __html: markdownToHtml(text),
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div
           className={cn(
             'relative grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
             isExpanded ? '' : 'max-h-[400px] overflow-hidden',
           )}
         >
-          {reviews.map((review, index) => (
+          {regularReviews.map((review, index) => (
             <div
               key={index}
-              className="review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl bg-zinc-800/30 p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70"
+              className={cn(
+                'review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70',
+                {
+                  'bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent':
+                    review.isSecondaryProminent,
+                  'bg-zinc-800/30': !review.isSecondaryProminent,
+                },
+              )}
             >
               <div className="flex items-center gap-4">
                 {review.avatarUrl && (
