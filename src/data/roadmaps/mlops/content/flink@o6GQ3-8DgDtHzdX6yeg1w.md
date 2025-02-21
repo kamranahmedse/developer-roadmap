@@ -4,6 +4,6 @@ Apache Flink is an open-source stream processing framework designed for real-tim
 
 Visit the following resources to learn more:
 
-- [@article@Apache Flink Documentation](https://flink.apache.org/)
+- [@official@Apache Flink Documentation](https://flink.apache.org/)
+- [@article@Apache Flink](https://www.tutorialspoint.com/apache_flink/apache_flink_introduction.htm)
 - [@feed@Explore top posts about Apache Flink](https://app.daily.dev/tags/apache-flink?ref=roadmapsh)
--[@reference@Apache Flink Tutorialpoint](https://www.tutorialspoint.com/apache_flink/apache_flink_introduction.htm)

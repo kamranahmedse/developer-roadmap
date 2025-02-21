@@ -4,5 +4,6 @@ Bash (Bourne Again Shell) is a Unix shell and command language used for interact
 
 Learn more from the following resources:
 
+- [@article@Bash Reference Manual](https://www.gnu.org/software/bash/manual/bashref.html)
 - [@opensource@bash-guide](https://github.com/Idnan/bash-guide)
 - [@video@Bash Scripting Course](https://www.youtube.com/watch?v=tK9Oc6AEnR4)
