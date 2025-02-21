@@ -112,6 +112,8 @@ export function clearMigratedRoadmapProgress(
     'typescript',
     'python',
     'sql',
+    'system-design',
+    'aspnet-core'
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
