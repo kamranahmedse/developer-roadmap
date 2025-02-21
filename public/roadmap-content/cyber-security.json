@@ -120,7 +120,7 @@
         "type": "opensource"
       },
       {
-        "titl": "RFIF / NFC Documentation",
+        "title": "RFIF / NFC Documentation",
         "url": "https://www.nxp.com/products/rfid-nfc:RFID-NFC",
         "type": "article"
       },
@@ -166,6 +166,16 @@
     "title": "Bluetooth",
     "description": "Bluetooth is a short-range wireless technology standard used for exchanging data between fixed and mobile devices over short distances. While it offers convenience for connecting peripherals and transferring information, it also presents several security concerns in the cybersecurity landscape. Bluetooth vulnerabilities can potentially allow attackers to intercept communications, execute malicious code, or gain unauthorized access to devices. Common attacks include bluejacking, bluesnarfing, and bluebugging. To mitigate these risks, cybersecurity professionals recommend regularly updating device firmware, using the latest Bluetooth protocols, enabling encryption, and turning off Bluetooth when not in use. Despite ongoing security improvements, Bluetooth remains an attack vector that requires vigilant monitoring and protection in both personal and enterprise environments.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Core Specification",
+        "url": "https://www.bluetooth.com/specifications/specs",
+        "type": "article"
+      },
+      {
+        "title": "Bluetooth Official Website",
+        "url": "https://www.bluetooth.com/learn-about-bluetooth/tech-overview",
+        "type": "article"
+      },
       {
         "title": "Bluetooth in Cyber Security",
         "url": "https://www.zenarmor.com/docs/network-basics/what-is-bluetooth",
