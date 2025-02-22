@@ -4,6 +4,6 @@ Apache Kafka is an open-source distributed event streaming platform used by thou
 
 Visit the following resources to learn more:
 
-- [@article@Apache Kafka quickstart](https://kafka.apache.org/quickstart)
+- [@official@Apache Kafka Quickstart](https://kafka.apache.org/quickstart)
 - [@video@Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
 - [@feed@Explore top posts about Kafka](https://app.daily.dev/tags/kafka?ref=roadmapsh)
