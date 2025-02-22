@@ -18,7 +18,7 @@ int main() {
     std::unique_ptr<int> p1(new int(5)); // Initialize with pointer to a new integer
     std::unique_ptr<int> p2 = std::make_unique<int>(10); // Preferred method (C++14 onwards)
 
-    std::cout << *p1 << ", " << *p2 << std::endl;
+    std::cout << *p1 << ", " << *p2 << '\n';
     return 0;
 }
 ```
@@ -35,9 +35,9 @@ int main() {
     std::unique_ptr<int> p2 = std::move(p1); // Ownership is transferred from p1 to p2
 
     if (p1) {
-        std::cout << "p1 owns the object" << std::endl;
+        std::cout << "p1 owns the object\n";
     } else if (p2) {
-        std::cout << "p2 owns the object" << std::endl;
+        std::cout << "p2 owns the object\n";
     }
 
     return 0;
@@ -52,7 +52,7 @@ int main() {
 
 struct MyDeleter {
     void operator()(int* ptr) {
-        std::cout << "Custom Deleter: Deleting pointer" << std::endl;
+        std::cout << "Custom Deleter: Deleting pointer\n";
         delete ptr;
     }
 };

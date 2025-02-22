@@ -13,7 +13,7 @@ The first stage is the preprocessing of the source code. Preprocessors modify th
 #define PI 3.14
 
 int main() {
-    std::cout << "The value of PI is: " << PI << std::endl;
+    std::cout << "The value of PI is: " << PI << '\n';
     return 0;
 }
 ```
