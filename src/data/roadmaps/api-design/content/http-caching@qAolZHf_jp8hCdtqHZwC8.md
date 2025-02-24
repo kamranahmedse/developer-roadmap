@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Why HTTP Caching matters for APIs](https://thenewstack.io/why-http-caching-matters-for-apis/)
 - [@article@Caching REST API Response](https://restfulapi.net/caching/)
+- [@article@HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
