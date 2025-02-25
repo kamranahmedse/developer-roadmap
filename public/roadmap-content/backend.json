@@ -1132,6 +1132,11 @@
         "type": "article"
       },
       {
+        "title": "RESTful web API design",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+        "type": "article"
+      },
+      {
         "title": "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
         "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
         "type": "article"
