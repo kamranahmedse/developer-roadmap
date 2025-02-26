@@ -33,7 +33,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
   return (
     <div
       className={cn(
-        'relative hidden rounded-b-[5px] border-t bg-white text-sm font-medium hover:bg-gray-50 sm:block',
+        'relative block rounded-b-[5px] border-t bg-white text-sm font-medium hover:bg-gray-50 sm:block',
         {
           'rounded-0 -mx-4 sm:mx-0': isAnswerVisible,
           // @FIXME:
@@ -41,7 +41,6 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
           // the frontend roadmap. This is because we did not use to have the question 
           // on mobile devices before and we don't want to cause any SEO issues. It will
           // be enabled on other roadmaps in the future.
-          block: roadmapId === 'frontend',
         },
       )}
     >
