@@ -569,6 +569,11 @@
         "title": "Caching REST API Response",
         "url": "https://restfulapi.net/caching/",
         "type": "article"
+      },
+      {
+        "title": "HTTP caching",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching",
+        "type": "article"
       }
     ]
   },
