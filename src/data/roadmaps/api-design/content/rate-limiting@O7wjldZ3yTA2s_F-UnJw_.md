@@ -7,3 +7,4 @@ Learn more from the following resources:
 - [@article@Rate limit](https://developer.mozilla.org/en-US/docs/Glossary/Rate_limit)
 - [@article@Throttle](https://developer.mozilla.org/en-US/docs/Glossary/Throttle)
 - [@article@Debounce](https://developer.mozilla.org/en-US/docs/Glossary/Debounce)
+- [@article@What is rate limiting? | Rate limiting and bots](https://www.cloudflare.com/en-gb/learning/bots/what-is-rate-limiting/)
