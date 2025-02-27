@@ -4,15 +4,13 @@ import {
   ChevronDown,
   ChevronLeft,
   ChevronRight,
-  Layers,
   Loader2,
   Menu,
   X,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { readAICourseStream } from '../../helper/read-stream';
-import { markdownToHtml } from '../../lib/markdown';
-import { getUrlParams } from '../../lib/browser';
+import { cn } from '../../lib/classname';
 
 // Define types for our course structure
 type Lesson = string;
@@ -28,29 +26,32 @@ type Course = {
   difficulty: string;
 };
 
-type AICourseContentProps = {};
+type AICourseContentProps =
+  | {
+      slug: string;
+      term?: string;
+      difficulty?: string;
+    }
+  | {
+      slug?: string;
+      term: string;
+      difficulty: string;
+    };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const [term, setTerm] = useState('');
-  const [difficulty, setDifficulty] = useState('beginner');
+  const {
+    term: defaultTerm,
+    difficulty: defaultDifficulty,
+    slug: defaultSlug,
+  } = props;
+
+  const [term, setTerm] = useState(defaultTerm || '');
+  const [difficulty, setDifficulty] = useState(defaultDifficulty || 'beginner');
+  const [courseSlug, setCourseSlug] = useState(defaultSlug || '');
 
   const [courseId, setCourseId] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [courseContent, setCourseContent] = useState('');
-
-  useEffect(() => {
-    const urlParams = getUrlParams();
-    const termFromUrl = urlParams.term as string | '';
-    const difficultyFromUrl = urlParams.difficulty || 'beginner';
-
-    if (!termFromUrl) {
-      window.location.href = '/ai-tutor';
-      return;
-    }
-
-    setTerm(termFromUrl);
-    setDifficulty(difficultyFromUrl);
-  }, []);
 
   const [streamedCourse, setStreamedCourse] = useState<{
     title: string;
@@ -90,18 +91,30 @@ export function AICourseContent(props: AICourseContentProps) {
   };
 
   useEffect(() => {
-    if (!term && !courseId) {
+    if (!term || !difficulty) {
       return;
     }
 
-    if (courseId) {
-      // fetchCourse();
-    } else {
-      generateCourse(term, difficulty);
-    }
-  }, [courseId, term, difficulty]);
+    generateCourse({ term, difficulty });
+  }, [term, difficulty]);
 
-  const generateCourse = async (term: string, difficulty: string) => {
+  useEffect(() => {
+    if (!defaultSlug) {
+      return;
+    }
+
+    generateCourse({ slug: defaultSlug });
+  }, [defaultSlug]);
+
+  const generateCourse = async ({
+    term,
+    difficulty,
+    slug: slugToBeUsed,
+  }: {
+    term?: string;
+    difficulty?: string;
+    slug?: string;
+  }) => {
     setIsLoading(true);
     setStreamedCourse({ title: '', modules: [] });
     setExpandedModules({});
@@ -116,8 +129,12 @@ export function AICourseContent(props: AICourseContentProps) {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            keyword: term,
-            difficulty,
+            ...(slugToBeUsed
+              ? { slug: slugToBeUsed }
+              : {
+                  keyword: term,
+                  difficulty,
+                }),
           }),
           credentials: 'include',
         },
@@ -141,23 +158,40 @@ export function AICourseContent(props: AICourseContentProps) {
         return;
       }
 
-      // Define regex patterns to extract course ID
       const COURSE_ID_REGEX = new RegExp('@COURSEID:(\\w+)@');
+      const COURSE_SLUG_REGEX = new RegExp(/@COURSESLUG:([\w-]+)@/);
 
       await readAICourseStream(reader, {
         onStream: (result) => {
           // Check if the result contains a course ID
-          if (result.includes('@COURSEID')) {
+          if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
+            console.log('result', result);
+
             const courseIdMatch = result.match(COURSE_ID_REGEX);
+            const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
             const extractedCourseId = courseIdMatch?.[1] || '';
+            const extractedCourseSlug = courseSlugMatch?.[1] || '';
 
-            if (extractedCourseId) {
-              console.log('extractedCourseId', extractedCourseId);
-              // setCourseId(extractedCourseId);
+            console.log('extractedCourseId', extractedCourseId);
+            console.log('extractedCourseSlug', extractedCourseSlug);
 
-              // Remove the course ID token from the result
-              result = result.replace(COURSE_ID_REGEX, '');
+            if (extractedCourseSlug && !defaultSlug) {
+              window.history.pushState(
+                {
+                  courseId,
+                  courseSlug: extractedCourseSlug,
+                },
+                '',
+                `${origin}/ai-tutor/${extractedCourseSlug}`,
+              );
             }
+
+            result = result
+              .replace(COURSE_ID_REGEX, '')
+              .replace(COURSE_SLUG_REGEX, '');
+
+            setCourseId(extractedCourseId);
+            setCourseSlug(extractedCourseSlug);
           }
 
           // Store the raw content and log it
@@ -206,48 +240,10 @@ export function AICourseContent(props: AICourseContentProps) {
           }
         },
         onStreamEnd: (result) => {
-          // Clean up any tokens from the final result
-          result = result.replace(COURSE_ID_REGEX, '');
+          result = result
+            .replace(COURSE_ID_REGEX, '')
+            .replace(COURSE_SLUG_REGEX, '');
           setCourseContent(result);
-
-          try {
-            const lines = result.split('\n');
-            const title = lines[0].replace('#', '').trim();
-            const modules: Module[] = [];
-
-            let currentModule: Module | null = null;
-
-            for (let i = 1; i < lines.length; i++) {
-              const line = lines[i].trim();
-
-              if (line.startsWith('## ')) {
-                // New module
-                if (currentModule) {
-                  modules.push(currentModule);
-                }
-                currentModule = {
-                  title: line.replace('## ', ''),
-                  lessons: [],
-                };
-              } else if (line.startsWith('- ') && currentModule) {
-                // Lesson within current module
-                currentModule.lessons.push(line.replace('- ', ''));
-              }
-            }
-
-            // Add the last module if it exists
-            if (currentModule) {
-              modules.push(currentModule);
-            }
-
-            setStreamedCourse({
-              title,
-              modules,
-            });
-          } catch (e) {
-            console.error('Error parsing course content:', e);
-          }
-
           setIsLoading(false);
         },
       });
@@ -273,26 +269,6 @@ export function AICourseContent(props: AICourseContentProps) {
         });
         // Expand only the next module
         newState[nextModuleIndex] = true;
-        return newState;
-      });
-    }
-  };
-
-  const goToPrevModule = () => {
-    if (activeModuleIndex > 0) {
-      const prevModuleIndex = activeModuleIndex - 1;
-      setActiveModuleIndex(prevModuleIndex);
-      setActiveLessonIndex(0);
-
-      // Expand the previous module in the sidebar
-      setExpandedModules((prev) => {
-        const newState: Record<number, boolean> = {};
-        // Set all modules to collapsed
-        streamedCourse.modules.forEach((_, idx) => {
-          newState[idx] = false;
-        });
-        // Expand only the previous module
-        newState[prevModuleIndex] = true;
         return newState;
       });
     }
@@ -331,6 +307,29 @@ export function AICourseContent(props: AICourseContentProps) {
       }
     }
   };
+
+  useEffect(() => {
+    const handlePopState = (e: PopStateEvent) => {
+      const { courseId, courseSlug } = e.state || {};
+      if (!courseId || !courseSlug) {
+        window.location.reload();
+        return;
+      }
+
+      setCourseId(courseId);
+      setCourseSlug(courseSlug);
+
+      setIsLoading(true);
+      generateCourse({ slug: courseSlug }).finally(() => {
+        setIsLoading(false);
+      });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
 
   const currentModule = streamedCourse.modules[activeModuleIndex];
   const currentLesson = currentModule?.lessons[activeLessonIndex];
@@ -384,9 +383,10 @@ export function AICourseContent(props: AICourseContentProps) {
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar */}
         <aside
-          className={`${
-            sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-          } fixed inset-y-0 left-0 z-20 mt-16 w-80 transform overflow-y-auto border-r border-gray-200 bg-white pt-4 transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0`}
+          className={cn(
+            'fixed inset-y-0 left-0 z-20 mt-16 w-80 transform overflow-y-auto border-r border-gray-200 bg-white pt-4 transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0',
+            sidebarOpen ? 'translate-x-0' : '-translate-x-full',
+          )}
         >
           {/* Course title */}
           <div className="mb-4 px-4">
@@ -423,11 +423,12 @@ export function AICourseContent(props: AICourseContentProps) {
               <div key={moduleIdx} className="rounded-md">
                 <button
                   onClick={() => toggleModule(moduleIdx)}
-                  className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium ${
+                  className={cn(
+                    'flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium',
                     activeModuleIndex === moduleIdx
                       ? 'bg-gray-100 text-gray-900'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
+                      : 'text-gray-700 hover:bg-gray-50',
+                  )}
                 >
                   <div className="flex min-w-0 items-start pr-2">
                     <span className="mr-2 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-xs font-semibold">
@@ -468,12 +469,13 @@ export function AICourseContent(props: AICourseContentProps) {
                           setSidebarOpen(true);
                           setViewMode('module');
                         }}
-                        className={`flex w-full items-start rounded-md px-3 py-2 text-left text-sm ${
+                        className={cn(
+                          'flex w-full items-start rounded-md px-3 py-2 text-left text-sm',
                           activeModuleIndex === moduleIdx &&
-                          activeLessonIndex === lessonIdx
+                            activeLessonIndex === lessonIdx
                             ? 'bg-gray-800 text-white'
-                            : 'text-gray-600 hover:bg-gray-50'
-                        }`}
+                            : 'text-gray-600 hover:bg-gray-50',
+                        )}
                       >
                         <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
                           {lessonIdx + 1}.
@@ -492,9 +494,10 @@ export function AICourseContent(props: AICourseContentProps) {
 
         {/* Main content */}
         <main
-          className={`flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out ${
-            sidebarOpen ? 'md:ml-0' : ''
-          }`}
+          className={cn(
+            'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out',
+            sidebarOpen ? 'md:ml-0' : '',
+          )}
         >
           {viewMode === 'module' ? (
             <div className="mx-auto max-w-4xl">
@@ -538,11 +541,12 @@ export function AICourseContent(props: AICourseContentProps) {
                     disabled={
                       activeModuleIndex === 0 && activeLessonIndex === 0
                     }
-                    className={`flex items-center rounded-md px-4 py-2 ${
+                    className={cn(
+                      'flex items-center rounded-md px-4 py-2',
                       activeModuleIndex === 0 && activeLessonIndex === 0
                         ? 'cursor-not-allowed text-gray-400'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
+                    )}
                   >
                     <ChevronLeft size={16} className="mr-2" />
                     Previous Lesson
@@ -554,12 +558,13 @@ export function AICourseContent(props: AICourseContentProps) {
                       activeModuleIndex === totalModules - 1 &&
                       activeLessonIndex === totalLessons - 1
                     }
-                    className={`flex items-center rounded-md px-4 py-2 ${
+                    className={cn(
+                      'flex items-center rounded-md px-4 py-2',
                       activeModuleIndex === totalModules - 1 &&
-                      activeLessonIndex === totalLessons - 1
+                        activeLessonIndex === totalLessons - 1
                         ? 'cursor-not-allowed text-gray-400'
-                        : 'bg-gray-800 text-white hover:bg-gray-700'
-                    }`}
+                        : 'bg-gray-800 text-white hover:bg-gray-700',
+                    )}
                   >
                     Next Lesson
                     <ChevronRight size={16} className="ml-2" />

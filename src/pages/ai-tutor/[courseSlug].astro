@@ -1,0 +1,22 @@
+---
+import { AICourseContent } from '../../components/GenerateCourse/AICourseContent';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  courseSlug: string;
+}
+
+const { courseSlug } = Astro.params as Params;
+---
+
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl={`/ai-tutor/${courseSlug}`}
+>
+  <AICourseContent client:load slug={courseSlug} />
+</SkeletonLayout>
