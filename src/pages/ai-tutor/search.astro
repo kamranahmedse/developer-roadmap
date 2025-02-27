@@ -1,0 +1,15 @@
+---
+import { AICourse } from '../../components/GenerateCourse/AICourse';
+import { AICourseContent } from '../../components/GenerateCourse/AICourseContent';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl='/ai-tutor/search'
+>
+  <AICourseContent client:load />
+</SkeletonLayout>
