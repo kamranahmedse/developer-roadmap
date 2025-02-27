@@ -1,0 +1,8 @@
+---
+import { AICourse } from '../../components/GenerateCourse/AICourse';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='AI Tutor' noIndex={true}>
+  <AICourse client:load />
+</BaseLayout>

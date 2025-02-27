@@ -1,0 +1,16 @@
+---
+import { AICourse } from '../../components/GenerateCourse/AICourse';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  courseId: string;
+}
+
+const { courseId } = Astro.params as Params;
+---
+
+<BaseLayout title='AI Tutor' noIndex={true}>
+  <AICourse courseId={courseId} client:load />
+</BaseLayout>
