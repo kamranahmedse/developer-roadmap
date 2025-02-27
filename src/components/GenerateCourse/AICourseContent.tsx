@@ -11,8 +11,8 @@ import {
 import { useEffect, useState } from 'react';
 import { readAICourseStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
+import { getUrlParams } from '../../lib/browser';
 
-// Define types for our course structure
 type Lesson = string;
 
 type Module = {
@@ -26,17 +26,11 @@ type Course = {
   difficulty: string;
 };
 
-type AICourseContentProps =
-  | {
-      slug: string;
-      term?: string;
-      difficulty?: string;
-    }
-  | {
-      slug?: string;
-      term: string;
-      difficulty: string;
-    };
+type AICourseContentProps = {
+  slug?: string;
+  term?: string;
+  difficulty?: string;
+};
 
 export function AICourseContent(props: AICourseContentProps) {
   const {
@@ -50,7 +44,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const [courseSlug, setCourseSlug] = useState(defaultSlug || '');
 
   const [courseId, setCourseId] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [courseContent, setCourseContent] = useState('');
 
   const [streamedCourse, setStreamedCourse] = useState<{
@@ -105,6 +99,21 @@ export function AICourseContent(props: AICourseContentProps) {
 
     generateCourse({ slug: defaultSlug });
   }, [defaultSlug]);
+
+  useEffect(() => {
+    if (term || courseSlug) {
+      return;
+    }
+
+    const params = getUrlParams();
+    const paramsTerm = params?.term;
+    const paramsDifficulty = params?.difficulty;
+    if (!paramsTerm || !paramsDifficulty) {
+      return;
+    }
+
+    generateCourse({ term: paramsTerm, difficulty: paramsDifficulty });
+  }, [term, difficulty, courseSlug]);
 
   const generateCourse = async ({
     term,
@@ -176,7 +185,7 @@ export function AICourseContent(props: AICourseContentProps) {
             console.log('extractedCourseSlug', extractedCourseSlug);
 
             if (extractedCourseSlug && !defaultSlug) {
-              window.history.pushState(
+              window.history.replaceState(
                 {
                   courseId,
                   courseSlug: extractedCourseSlug,
