@@ -2,7 +2,6 @@ import {
   ArrowLeft,
   BookOpenCheck,
   ChevronDown,
-  ChevronLeft,
   ChevronRight,
   Loader2,
   Menu,
@@ -12,6 +11,7 @@ import { useEffect, useState } from 'react';
 import { readAICourseStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
+import { AICourseModuleView } from './AICourseModuleView';
 
 type Lesson = string;
 
@@ -112,7 +112,8 @@ export function AICourseContent(props: AICourseContentProps) {
       return;
     }
 
-    generateCourse({ term: paramsTerm, difficulty: paramsDifficulty });
+    setTerm(paramsTerm);
+    setDifficulty(paramsDifficulty);
   }, [term, difficulty, courseSlug]);
 
   const generateCourse = async ({
@@ -341,7 +342,6 @@ export function AICourseContent(props: AICourseContentProps) {
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
-      {/* Top navigation bar */}
       <header className="flex h-16 items-center justify-between bg-white px-4 shadow-sm">
         <div className="flex items-center">
           <button
@@ -382,9 +382,7 @@ export function AICourseContent(props: AICourseContentProps) {
         </div>
       </header>
 
-      {/* Main content with sidebar */}
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar */}
         <aside
           className={cn(
             'fixed inset-y-0 left-0 z-20 mt-16 w-80 transform overflow-y-auto border-r border-gray-200 bg-white pt-4 transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0',
@@ -495,88 +493,27 @@ export function AICourseContent(props: AICourseContentProps) {
           </nav>
         </aside>
 
-        {/* Main content */}
         <main
           className={cn(
             'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out',
             sidebarOpen ? 'md:ml-0' : '',
           )}
         >
-          {viewMode === 'module' ? (
-            <div className="mx-auto max-w-4xl">
-              {/* Module and lesson navigation */}
-              <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-                <div>
-                  <div className="text-sm text-gray-500">
-                    Module {activeModuleIndex + 1} of {totalModules}
-                  </div>
-                  <h2 className="text-2xl font-bold">
-                    {currentModule?.title?.replace(
-                      /^Module\s*?\d+[\.:]\s*/,
-                      '',
-                    ) || 'Loading...'}
-                  </h2>
-                </div>
-              </div>
+          {viewMode === 'module' && (
+            <AICourseModuleView
+              courseSlug={courseSlug}
+              activeModuleIndex={activeModuleIndex}
+              totalModules={totalModules}
+              currentModuleTitle={currentModule?.title || ''}
+              activeLessonIndex={activeLessonIndex}
+              totalLessons={totalLessons}
+              currentLessonTitle={currentLesson || ''}
+              onGoToPrevLesson={goToPrevLesson}
+              onGoToNextLesson={goToNextLesson}
+            />
+          )}
 
-              {/* Current lesson */}
-              <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="text-sm text-gray-500">
-                    Lesson {activeLessonIndex + 1} of {totalLessons}
-                  </div>
-                </div>
-
-                <h3 className="mb-6 text-xl font-semibold">
-                  {currentLesson?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
-                </h3>
-
-                <div className="prose max-w-none">
-                  <p className="text-gray-600">
-                    This lesson is part of the "{currentModule?.title}" module.
-                  </p>
-                </div>
-
-                {/* Navigation buttons */}
-                <div className="mt-8 flex items-center justify-between">
-                  <button
-                    onClick={goToPrevLesson}
-                    disabled={
-                      activeModuleIndex === 0 && activeLessonIndex === 0
-                    }
-                    className={cn(
-                      'flex items-center rounded-md px-4 py-2',
-                      activeModuleIndex === 0 && activeLessonIndex === 0
-                        ? 'cursor-not-allowed text-gray-400'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
-                    )}
-                  >
-                    <ChevronLeft size={16} className="mr-2" />
-                    Previous Lesson
-                  </button>
-
-                  <button
-                    onClick={goToNextLesson}
-                    disabled={
-                      activeModuleIndex === totalModules - 1 &&
-                      activeLessonIndex === totalLessons - 1
-                    }
-                    className={cn(
-                      'flex items-center rounded-md px-4 py-2',
-                      activeModuleIndex === totalModules - 1 &&
-                        activeLessonIndex === totalLessons - 1
-                        ? 'cursor-not-allowed text-gray-400'
-                        : 'bg-gray-800 text-white hover:bg-gray-700',
-                    )}
-                  >
-                    Next Lesson
-                    <ChevronRight size={16} className="ml-2" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          ) : (
-            /* Full course content view */
+          {viewMode === 'full' && (
             <div className="mx-auto max-w-3xl rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
               <div className="mb-4 flex items-center justify-between">
                 <h2 className="text-xl font-bold">Course Outline</h2>
@@ -643,7 +580,6 @@ export function AICourseContent(props: AICourseContentProps) {
         </main>
       </div>
 
-      {/* Overlay for mobile sidebar */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 z-10 bg-gray-900 bg-opacity-50 md:hidden"
