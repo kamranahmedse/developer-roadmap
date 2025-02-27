@@ -172,17 +172,11 @@ export function AICourseContent(props: AICourseContentProps) {
 
       await readAICourseStream(reader, {
         onStream: (result) => {
-          // Check if the result contains a course ID
           if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
-            console.log('result', result);
-
             const courseIdMatch = result.match(COURSE_ID_REGEX);
             const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
             const extractedCourseId = courseIdMatch?.[1] || '';
             const extractedCourseSlug = courseSlugMatch?.[1] || '';
-
-            console.log('extractedCourseId', extractedCourseId);
-            console.log('extractedCourseSlug', extractedCourseSlug);
 
             if (extractedCourseSlug && !defaultSlug) {
               window.history.replaceState(
