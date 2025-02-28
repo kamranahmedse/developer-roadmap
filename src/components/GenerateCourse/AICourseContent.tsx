@@ -12,6 +12,7 @@ import { readAICourseStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { AICourseModuleView } from './AICourseModuleView';
+import { showLoginPopup } from '../../lib/popup';
 import { isLoggedIn } from '../../lib/jwt';
 
 type Lesson = string;
@@ -126,7 +127,10 @@ export function AICourseContent(props: AICourseContentProps) {
     difficulty?: string;
     slug?: string;
   }) => {
-    if (!isLoggedIn()) {
+    // it means that they are not logged in and they are not generating a course from a slug
+    // so we need to show the login popup - basically they are trying to generate a course from the search page
+    if (!isLoggedIn() && !defaultSlug) {
+      showLoginPopup();
       return;
     }
 
