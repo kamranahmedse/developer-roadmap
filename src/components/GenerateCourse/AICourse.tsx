@@ -1,6 +1,8 @@
 import { Loader2Icon, SearchIcon, WandIcon } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export const difficultyLevels = [
   'beginner',
@@ -14,18 +16,20 @@ type AICourseProps = {};
 export function AICourse(props: AICourseProps) {
   const [keyword, setKeyword] = useState('');
   const [difficulty, setDifficulty] = useState<DifficultyLevel>('intermediate');
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && keyword.trim() && !isLoading) {
+    if (e.key === 'Enter' && keyword.trim()) {
       onSubmit();
     }
   };
 
   function onSubmit() {
-    if (typeof window !== 'undefined') {
-      window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}`;
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
     }
+
+    window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}`;
   }
 
   return (

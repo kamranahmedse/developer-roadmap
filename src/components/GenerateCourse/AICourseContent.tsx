@@ -12,6 +12,7 @@ import { readAICourseStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { AICourseModuleView } from './AICourseModuleView';
+import { isLoggedIn } from '../../lib/jwt';
 
 type Lesson = string;
 
@@ -125,6 +126,10 @@ export function AICourseContent(props: AICourseContentProps) {
     difficulty?: string;
     slug?: string;
   }) => {
+    if (!isLoggedIn()) {
+      return;
+    }
+
     setIsLoading(true);
     setStreamedCourse({ title: '', modules: [] });
     setExpandedModules({});
