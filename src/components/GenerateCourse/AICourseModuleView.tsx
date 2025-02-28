@@ -43,6 +43,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const generateAiCourseContent = async () => {
     setIsLoading(true);
     setError('');
+    setLessonHtml('');
 
     if (!isLoggedIn()) {
       setIsLoading(false);
