@@ -2312,7 +2312,7 @@
     ]
   },
   "gBuaVZfqJ0-g21sKohQtx": {
-    "title": "Azuer Service Bus",
+    "title": "Azure Service Bus",
     "description": "Azure Service Bus is a scalable and reliable messaging platform that can handle a high volume of messages, it's also easy to use, has a lot of features like subscription, Topics, Dead Letter, and easy to integrate with other Azure services, and it's a managed service which means Microsoft takes care of the infrastructure and scaling. However, it's worth noting that Azure Service Bus is a paid service and the cost will depend on the number of messages and the size of the data that you are sending and receiving.\n\nTo learn more, visit the following links:",
     "links": [
       {
