@@ -1,21 +1,13 @@
-import {
-  ArrowLeft,
-  BookOpenCheck,
-  ChevronDown,
-  ChevronRight,
-  Loader2,
-  Menu,
-  X,
-} from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { readAICourseStream } from '../../helper/read-stream';
+import { ArrowLeft, BookOpenCheck, Loader2, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import { cn } from '../../lib/classname';
-import { getUrlParams } from '../../lib/browser';
-import { AICourseModuleView } from './AICourseModuleView';
-import { showLoginPopup } from '../../lib/popup';
-import { isLoggedIn } from '../../lib/jwt';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
-import { generateAiCourseStructure } from '../../lib/ai';
+import { type AiCourse } from '../../lib/ai';
+import { getAiCourseProgressOptions } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+import { AICourseModuleList } from './AICourseModuleList';
+import { AICourseModuleView } from './AICourseModuleView';
 
 type Lesson = string;
 
@@ -31,218 +23,34 @@ type Course = {
 };
 
 type AICourseContentProps = {
-  slug?: string;
-  term?: string;
-  difficulty?: string;
+  courseSlug?: string;
+  course: AiCourse;
+  isLoading: boolean;
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const { slug: defaultSlug } = props;
-
-  const [term, setTerm] = useState('');
-  const [difficulty, setDifficulty] = useState('beginner');
-
-  const [courseSlug, setCourseSlug] = useState(defaultSlug || '');
+  const { course, courseSlug, isLoading } = props;
 
   const [courseId, setCourseId] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const [streamedCourse, setStreamedCourse] = useState<{
-    title: string;
-    modules: Module[];
-  }>({
-    title: '',
-    modules: [],
-  });
-  const [expandedModules, setExpandedModules] = useState<
-    Record<number, boolean>
-  >({});
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
 
-  const toggleModule = (index: number) => {
-    setExpandedModules((prev) => {
-      // If this module is already expanded, collapse it
-      if (prev[index]) {
-        return {
-          ...prev,
-          [index]: false,
-        };
-      }
+  const [expandedModules, setExpandedModules] = useState<
+    Record<number, boolean>
+  >({});
 
-      // Otherwise, collapse all modules and expand only this one
-      const newState: Record<number, boolean> = {};
-      // Set all modules to collapsed
-      streamedCourse.modules.forEach((_, idx) => {
-        newState[idx] = false;
-      });
-      // Expand only the clicked module
-      newState[index] = true;
-      return newState;
-    });
-  };
-
-  useEffect(() => {
-    if (!defaultSlug) {
-      return;
-    }
-
-    generateCourse({ slug: defaultSlug });
-  }, [defaultSlug]);
-
-  useEffect(() => {
-    if (term || courseSlug) {
-      return;
-    }
-
-    const params = getUrlParams();
-    const paramsTerm = params?.term;
-    const paramsDifficulty = params?.difficulty;
-    if (!paramsTerm || !paramsDifficulty) {
-      return;
-    }
-
-    setTerm(paramsTerm);
-    setDifficulty(paramsDifficulty);
-  }, [term, difficulty, courseSlug]);
-
-  const getAiCourseResponse = async (options: {
-    slug?: string;
-    term?: string;
-    difficulty?: string;
-  }): Promise<Response> => {
-    const { slug, term, difficulty } = options;
-
-    if (slug) {
-      return fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-get-ai-course/${slug}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({}),
-          credentials: 'include',
-        },
-      );
-    }
-
-    return fetch(`${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        keyword: term,
-        difficulty,
-      }),
-      credentials: 'include',
-    });
-  };
-
-  const generateCourse = async (options: {
-    slug?: string;
-    term?: string;
-    difficulty?: string;
-  }) => {
-    const { slug, term, difficulty } = options;
-
-    if (!isLoggedIn() && !slug) {
-      setIsLoading(false);
-      setError('You must be logged in to generate a course');
-      showLoginPopup();
-      return;
-    }
-
-    setIsLoading(true);
-    setStreamedCourse({ title: '', modules: [] });
-    setExpandedModules({});
-    setViewMode('full');
-    setError(null);
-
-    try {
-      const response = await getAiCourseResponse({ slug, term, difficulty });
-
-      if (!response.ok) {
-        const data = await response.json();
-        console.error(
-          'Error generating course:',
-          data?.message || 'Something went wrong',
-        );
-        setIsLoading(false);
-        setError(data?.message || 'Something went wrong');
-        return;
-      }
-
-      const reader = response.body?.getReader();
-
-      if (!reader) {
-        console.error('Failed to get reader from response');
-        setError('Something went wrong');
-        setIsLoading(false);
-        return;
-      }
-
-      const COURSE_ID_REGEX = new RegExp('@COURSEID:(\\w+)@');
-      const COURSE_SLUG_REGEX = new RegExp(/@COURSESLUG:([\w-]+)@/);
-
-      await readAICourseStream(reader, {
-        onStream: (result) => {
-          if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
-            const courseIdMatch = result.match(COURSE_ID_REGEX);
-            const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
-            const extractedCourseId = courseIdMatch?.[1] || '';
-            const extractedCourseSlug = courseSlugMatch?.[1] || '';
-
-            if (extractedCourseSlug && !defaultSlug) {
-              window.history.replaceState(
-                {
-                  courseId,
-                  courseSlug: extractedCourseSlug,
-                },
-                '',
-                `${origin}/ai-tutor/${extractedCourseSlug}`,
-              );
-            }
-
-            result = result
-              .replace(COURSE_ID_REGEX, '')
-              .replace(COURSE_SLUG_REGEX, '');
-
-            setCourseId(extractedCourseId);
-            setCourseSlug(extractedCourseSlug);
-          }
-
-          try {
-            const aiCourse = generateAiCourseStructure(result);
-            setStreamedCourse({
-              title: aiCourse.title,
-              modules: aiCourse.modules,
-            });
-          } catch (e) {
-            console.error('Error parsing streamed course content:', e);
-          }
-        },
-        onStreamEnd: (result) => {
-          result = result
-            .replace(COURSE_ID_REGEX, '')
-            .replace(COURSE_SLUG_REGEX, '');
-          setIsLoading(false);
-        },
-      });
-    } catch (error: any) {
-      setError(error?.message || 'Something went wrong');
-      console.error('Error in course generation:', error);
-      setIsLoading(false);
-    }
-  };
+  const { data: aiCourseProgress } = useQuery(
+    getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
+    queryClient,
+  );
 
   // Navigation helpers
   const goToNextModule = () => {
-    if (activeModuleIndex < streamedCourse.modules.length - 1) {
+    if (activeModuleIndex < course.modules.length - 1) {
       const nextModuleIndex = activeModuleIndex + 1;
       setActiveModuleIndex(nextModuleIndex);
       setActiveLessonIndex(0);
@@ -251,7 +59,7 @@ export function AICourseContent(props: AICourseContentProps) {
       setExpandedModules((prev) => {
         const newState: Record<number, boolean> = {};
         // Set all modules to collapsed
-        streamedCourse.modules.forEach((_, idx) => {
+        course.modules.forEach((_, idx) => {
           newState[idx] = false;
         });
         // Expand only the next module
@@ -262,7 +70,7 @@ export function AICourseContent(props: AICourseContentProps) {
   };
 
   const goToNextLesson = () => {
-    const currentModule = streamedCourse.modules[activeModuleIndex];
+    const currentModule = course.modules[activeModuleIndex];
     if (currentModule && activeLessonIndex < currentModule.lessons.length - 1) {
       setActiveLessonIndex(activeLessonIndex + 1);
     } else {
@@ -274,7 +82,7 @@ export function AICourseContent(props: AICourseContentProps) {
     if (activeLessonIndex > 0) {
       setActiveLessonIndex(activeLessonIndex - 1);
     } else {
-      const prevModule = streamedCourse.modules[activeModuleIndex - 1];
+      const prevModule = course.modules[activeModuleIndex - 1];
       if (prevModule) {
         const prevModuleIndex = activeModuleIndex - 1;
         setActiveModuleIndex(prevModuleIndex);
@@ -284,7 +92,7 @@ export function AICourseContent(props: AICourseContentProps) {
         setExpandedModules((prev) => {
           const newState: Record<number, boolean> = {};
           // Set all modules to collapsed
-          streamedCourse.modules.forEach((_, idx) => {
+          course.modules.forEach((_, idx) => {
             newState[idx] = false;
           });
           // Expand only the previous module
@@ -295,32 +103,9 @@ export function AICourseContent(props: AICourseContentProps) {
     }
   };
 
-  useEffect(() => {
-    const handlePopState = (e: PopStateEvent) => {
-      const { courseId, courseSlug } = e.state || {};
-      if (!courseId || !courseSlug) {
-        window.location.reload();
-        return;
-      }
-
-      setCourseId(courseId);
-      setCourseSlug(courseSlug);
-
-      setIsLoading(true);
-      generateCourse({ slug: courseSlug }).finally(() => {
-        setIsLoading(false);
-      });
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-    };
-  }, []);
-
-  const currentModule = streamedCourse.modules[activeModuleIndex];
+  const currentModule = course.modules[activeModuleIndex];
   const currentLesson = currentModule?.lessons[activeLessonIndex];
-  const totalModules = streamedCourse.modules.length;
+  const totalModules = course.modules.length;
   const totalLessons = currentModule?.lessons.length || 0;
 
   if (error && !isLoading) {
@@ -337,26 +122,21 @@ export function AICourseContent(props: AICourseContentProps) {
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       <header className="flex h-16 items-center justify-between bg-white px-4 shadow-sm">
         <div className="flex items-center">
-          <button
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.location.href = '/ai-tutor/search';
-              }
-            }}
+          <a
+            href="/ai-tutor"
             className="mr-4 rounded-md p-2 hover:bg-gray-100"
             aria-label="Back to generator"
           >
             <ArrowLeft size={20} />
-          </button>
+          </a>
           <h1 className="text-xl font-bold">
-            {streamedCourse.title || 'Loading Course...'}
+            {course.title || 'Loading Course...'}
           </h1>
         </div>
         <div className="flex items-center gap-2">
           {viewMode === 'module' && (
             <button
               onClick={() => {
-                // Collapse all modules in the sidebar when switching to outline view
                 setExpandedModules({});
                 setViewMode('full');
               }}
@@ -382,7 +162,6 @@ export function AICourseContent(props: AICourseContentProps) {
             sidebarOpen ? 'translate-x-0' : '-translate-x-full',
           )}
         >
-          {/* Course title */}
           <div className="mb-4 px-4">
             <div className="flex items-center justify-between">
               <h2 className="text-lg font-bold">Course Content</h2>
@@ -403,7 +182,7 @@ export function AICourseContent(props: AICourseContentProps) {
             </div>
             <div className="mt-2 text-sm text-gray-500">
               {totalModules} modules •{' '}
-              {streamedCourse.modules.reduce(
+              {course.modules.reduce(
                 (total, module) => total + module.lessons.length,
                 0,
               )}{' '}
@@ -411,79 +190,18 @@ export function AICourseContent(props: AICourseContentProps) {
             </div>
           </div>
 
-          {/* Module list */}
-          <nav className="space-y-1 px-2">
-            {streamedCourse.modules.map((module, moduleIdx) => (
-              <div key={moduleIdx} className="rounded-md">
-                <button
-                  onClick={() => toggleModule(moduleIdx)}
-                  className={cn(
-                    'flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium',
-                    activeModuleIndex === moduleIdx
-                      ? 'bg-gray-100 text-gray-900'
-                      : 'text-gray-700 hover:bg-gray-50',
-                  )}
-                >
-                  <div className="flex min-w-0 items-start pr-2">
-                    <span className="mr-2 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-xs font-semibold">
-                      {moduleIdx + 1}
-                    </span>
-                    <span className="break-words">
-                      {module.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
-                    </span>
-                  </div>
-                  {expandedModules[moduleIdx] ? (
-                    <ChevronDown size={16} className="flex-shrink-0" />
-                  ) : (
-                    <ChevronRight size={16} className="flex-shrink-0" />
-                  )}
-                </button>
-
-                {/* Lessons */}
-                {expandedModules[moduleIdx] && (
-                  <div className="ml-8 mt-1 space-y-1">
-                    {module.lessons.map((lesson, lessonIdx) => (
-                      <button
-                        key={lessonIdx}
-                        onClick={() => {
-                          setActiveModuleIndex(moduleIdx);
-                          setActiveLessonIndex(lessonIdx);
-                          // Expand only this module in the sidebar
-                          setExpandedModules((prev) => {
-                            const newState: Record<number, boolean> = {};
-                            // Set all modules to collapsed
-                            streamedCourse.modules.forEach((_, idx) => {
-                              newState[idx] = false;
-                            });
-                            // Expand only the current module
-                            newState[moduleIdx] = true;
-                            return newState;
-                          });
-                          // Ensure sidebar is visible on mobile
-                          setSidebarOpen(true);
-                          setViewMode('module');
-                        }}
-                        className={cn(
-                          'flex w-full items-start rounded-md px-3 py-2 text-left text-sm',
-                          activeModuleIndex === moduleIdx &&
-                            activeLessonIndex === lessonIdx
-                            ? 'bg-gray-800 text-white'
-                            : 'text-gray-600 hover:bg-gray-50',
-                        )}
-                      >
-                        <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
-                          {lessonIdx + 1}.
-                        </span>
-                        <span className="break-words">
-                          {lesson?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </nav>
+          <AICourseModuleList
+            course={course}
+            activeModuleIndex={activeModuleIndex}
+            setActiveModuleIndex={setActiveModuleIndex}
+            activeLessonIndex={activeLessonIndex}
+            setActiveLessonIndex={setActiveLessonIndex}
+            setSidebarOpen={setSidebarOpen}
+            viewMode={viewMode}
+            setViewMode={setViewMode}
+            expandedModules={expandedModules}
+            setExpandedModules={setExpandedModules}
+          />
         </aside>
 
         <main
@@ -494,7 +212,7 @@ export function AICourseContent(props: AICourseContentProps) {
         >
           {viewMode === 'module' && (
             <AICourseModuleView
-              courseSlug={courseSlug}
+              courseSlug={courseSlug!}
               activeModuleIndex={activeModuleIndex}
               totalModules={totalModules}
               currentModuleTitle={currentModule?.title || ''}
@@ -515,9 +233,9 @@ export function AICourseContent(props: AICourseContentProps) {
                   <Loader2 size={20} className="animate-spin text-gray-400" />
                 )}
               </div>
-              {streamedCourse.title ? (
+              {course.title ? (
                 <div className="flex flex-col">
-                  {streamedCourse.modules.map((module, moduleIdx) => (
+                  {course.modules.map((module, moduleIdx) => (
                     <div
                       key={moduleIdx}
                       className="mb-5 pb-4 last:border-0 last:pb-0"
@@ -537,7 +255,7 @@ export function AICourseContent(props: AICourseContentProps) {
                               setExpandedModules((prev) => {
                                 const newState: Record<number, boolean> = {};
                                 // Set all modules to collapsed
-                                streamedCourse.modules.forEach((_, idx) => {
+                                course.modules.forEach((_, idx) => {
                                   newState[idx] = false;
                                 });
                                 // Expand only the current module

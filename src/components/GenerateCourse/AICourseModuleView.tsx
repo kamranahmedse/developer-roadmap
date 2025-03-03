@@ -114,7 +114,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const { mutate: markAsDone, isPending: isMarkingAsDone } = useMutation(
     {
       mutationFn: () => {
-        const lessonId = `${slugify(currentModuleTitle)}-${slugify(currentLessonTitle)}`;
+        const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
         return httpPost(
           `${import.meta.env.PUBLIC_API_URL}/v1-mark-as-done-ai-lesson/${courseSlug}`,
           {
