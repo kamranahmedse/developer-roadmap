@@ -182,6 +182,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       courseSlug={courseSlug}
       course={course}
       isLoading={isLoading}
+      error={error}
     />
   );
 }

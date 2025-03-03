@@ -18,3 +18,16 @@ export function aiRoadmapApi(context: APIContext) {
     },
   };
 }
+
+export interface AICourseDocument {
+  _id: string;
+  userId: string;
+  title: string;
+  slug?: string;
+  keyword: string;
+  difficulty: string;
+  data: string;
+  viewCount: number;
+  createdAt: Date;
+  updatedAt: Date;
+}

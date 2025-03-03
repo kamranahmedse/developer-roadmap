@@ -1,4 +1,11 @@
-import { ArrowLeft, BookOpenCheck, Loader2, Menu, X } from 'lucide-react';
+import {
+  ArrowLeft,
+  BookOpenCheck,
+  CheckCircleIcon,
+  Loader2,
+  Menu,
+  X,
+} from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
@@ -8,6 +15,8 @@ import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
+import { slugify } from '../../lib/slugger';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
 
 type Lesson = string;
 
@@ -26,27 +35,25 @@ type AICourseContentProps = {
   courseSlug?: string;
   course: AiCourse;
   isLoading: boolean;
+  error?: string;
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const { course, courseSlug, isLoading } = props;
-
-  const [courseId, setCourseId] = useState('');
-  const [error, setError] = useState<string | null>(null);
+  const { course, courseSlug, isLoading, error } = props;
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
 
-  const [expandedModules, setExpandedModules] = useState<
-    Record<number, boolean>
-  >({});
-
   const { data: aiCourseProgress } = useQuery(
     getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
     queryClient,
   );
+
+  const [expandedModules, setExpandedModules] = useState<
+    Record<number, boolean>
+  >({});
 
   // Navigation helpers
   const goToNextModule = () => {
@@ -192,6 +199,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
           <AICourseModuleList
             course={course}
+            courseSlug={courseSlug}
             activeModuleIndex={activeModuleIndex}
             setActiveModuleIndex={setActiveModuleIndex}
             activeLessonIndex={activeLessonIndex}
@@ -235,52 +243,72 @@ export function AICourseContent(props: AICourseContentProps) {
               </div>
               {course.title ? (
                 <div className="flex flex-col">
-                  {course.modules.map((module, moduleIdx) => (
-                    <div
-                      key={moduleIdx}
-                      className="mb-5 pb-4 last:border-0 last:pb-0"
-                    >
-                      <h2 className="mb-2 text-xl font-bold text-gray-800">
-                        {module.title}
-                      </h2>
-                      <div className="ml-2 space-y-1">
-                        {module.lessons.map((lesson, lessonIdx) => (
-                          <div
-                            key={lessonIdx}
-                            className="flex cursor-pointer items-start rounded-md border border-gray-100 p-2 transition-colors hover:border-gray-300 hover:bg-blue-50"
-                            onClick={() => {
-                              setActiveModuleIndex(moduleIdx);
-                              setActiveLessonIndex(lessonIdx);
-                              // Expand only this module in the sidebar
-                              setExpandedModules((prev) => {
-                                const newState: Record<number, boolean> = {};
-                                // Set all modules to collapsed
-                                course.modules.forEach((_, idx) => {
-                                  newState[idx] = false;
-                                });
-                                // Expand only the current module
-                                newState[moduleIdx] = true;
-                                return newState;
-                              });
-                              // Ensure sidebar is visible on mobile
-                              setSidebarOpen(true);
-                              setViewMode('module');
-                            }}
-                          >
-                            <span className="mr-2 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700">
-                              {lessonIdx + 1}
-                            </span>
-                            <p className="flex-1 pt-0.5 text-gray-700">
-                              {lesson}
-                            </p>
-                            <span className="text-sm font-medium text-blue-600">
-                              View →
-                            </span>
-                          </div>
-                        ))}
+                  {course.modules.map((module, moduleIdx) => {
+                    return (
+                      <div
+                        key={moduleIdx}
+                        className="mb-5 pb-4 last:border-0 last:pb-0"
+                      >
+                        <h2 className="mb-2 text-xl font-bold text-gray-800">
+                          {module.title}
+                        </h2>
+                        <div className="ml-2 space-y-1">
+                          {module.lessons.map((lesson, lessonIdx) => {
+                            const key = `${slugify(module.title)}__${slugify(lesson)}`;
+                            const isCompleted =
+                              aiCourseProgress?.done.includes(key);
+
+                            return (
+                              <div
+                                key={key}
+                                className="flex cursor-pointer items-start rounded-md border border-gray-100 p-2 transition-colors hover:border-gray-300 hover:bg-blue-50"
+                                onClick={() => {
+                                  setActiveModuleIndex(moduleIdx);
+                                  setActiveLessonIndex(lessonIdx);
+                                  // Expand only this module in the sidebar
+                                  setExpandedModules((prev) => {
+                                    const newState: Record<number, boolean> =
+                                      {};
+                                    // Set all modules to collapsed
+                                    course.modules.forEach((_, idx) => {
+                                      newState[idx] = false;
+                                    });
+                                    // Expand only the current module
+                                    newState[moduleIdx] = true;
+                                    return newState;
+                                  });
+                                  // Ensure sidebar is visible on mobile
+                                  setSidebarOpen(true);
+                                  setViewMode('module');
+                                }}
+                              >
+                                {!isCompleted && (
+                                  <span
+                                    className={cn(
+                                      'mr-2 mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700',
+                                    )}
+                                  >
+                                    {lessonIdx + 1}
+                                  </span>
+                                )}
+
+                                {isCompleted && (
+                                  <CheckIcon additionalClasses="size-6 mt-0.5 mr-2 flex-shrink-0 text-green-500" />
+                                )}
+
+                                <p className="flex-1 pt-0.5 text-gray-700">
+                                  {lesson}
+                                </p>
+                                <span className="text-sm font-medium text-blue-600">
+                                  View →
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="flex h-64 items-center justify-center">

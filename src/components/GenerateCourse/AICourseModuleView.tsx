@@ -4,10 +4,11 @@ import { useEffect, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
 import { markdownToHtml } from '../../lib/markdown';
-import { useMutation } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
+import { getAiCourseProgressOptions } from '../../queries/ai-course';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -43,6 +44,13 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const [error, setError] = useState('');
 
   const [lessonHtml, setLessonHtml] = useState('');
+  const { data: aiCourseProgress } = useQuery(
+    getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
+    queryClient,
+  );
+
+  const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
+  const isLessonDone = aiCourseProgress?.done.includes(lessonId);
 
   const generateAiCourseContent = async () => {
     setIsLoading(true);
@@ -114,13 +122,9 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const { mutate: markAsDone, isPending: isMarkingAsDone } = useMutation(
     {
       mutationFn: () => {
-        const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
-        return httpPost(
-          `${import.meta.env.PUBLIC_API_URL}/v1-mark-as-done-ai-lesson/${courseSlug}`,
-          {
-            lessonId: lessonId,
-          },
-        );
+        return httpPost(`/v1-mark-as-done-ai-lesson/${courseSlug}`, {
+          lessonId,
+        });
       },
     },
     queryClient,
@@ -162,7 +166,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
             </div>
           )}
 
-          {!isGenerating && !isLoading && (
+          {!isGenerating && !isLoading && !isLessonDone && (
             <button
               className="rounded-md bg-blue-500 px-4 py-1 text-white hover:bg-blue-600 disabled:opacity-50"
               disabled={isMarkingAsDone}

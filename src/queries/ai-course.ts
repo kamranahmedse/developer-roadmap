@@ -31,3 +31,37 @@ export function getAiCourseProgressOptions(params: GetAICourseProgressParams) {
     enabled: !!params.aiCourseSlug && isLoggedIn(),
   };
 }
+
+type GetAICourseParams = {
+  aiCourseSlug: string;
+};
+
+export interface AICourseDocument {
+  _id: string;
+  userId: string;
+  title: string;
+  slug?: string;
+  keyword: string;
+  difficulty: string;
+  data: string;
+  viewCount: number;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+type GetAICourseBody = {};
+
+type GetAICourseQuery = {};
+
+type GetAICourseResponse = AICourseDocument;
+
+export function getAiCourseOptions(params: GetAICourseParams) {
+  return {
+    queryKey: ['ai-course', params],
+    queryFn: () => {
+      return httpGet<GetAICourseResponse>(
+        `/v1-get-ai-course/${params.aiCourseSlug}`,
+      );
+    },
+  };
+}
