@@ -4,6 +4,10 @@ import { useEffect, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
 import { markdownToHtml } from '../../lib/markdown';
+import { useMutation } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+import { httpPost } from '../../lib/query-http';
+import { slugify } from '../../lib/slugger';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -107,6 +111,21 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
     });
   };
 
+  const { mutate: markAsDone, isPending: isMarkingAsDone } = useMutation(
+    {
+      mutationFn: () => {
+        const lessonId = `${slugify(currentModuleTitle)}-${slugify(currentLessonTitle)}`;
+        return httpPost(
+          `${import.meta.env.PUBLIC_API_URL}/v1-mark-as-done-ai-lesson/${courseSlug}`,
+          {
+            lessonId: lessonId,
+          },
+        );
+      },
+    },
+    queryClient,
+  );
+
   useEffect(() => {
     generateAiCourseContent();
   }, [currentModuleTitle, currentLessonTitle]);
@@ -141,6 +160,16 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
             <div className="flex items-center justify-center">
               <Loader2Icon size={24} className="animate-spin text-gray-400" />
             </div>
+          )}
+
+          {!isGenerating && !isLoading && (
+            <button
+              className="rounded-md bg-blue-500 px-4 py-1 text-white hover:bg-blue-600 disabled:opacity-50"
+              disabled={isMarkingAsDone}
+              onClick={() => markAsDone()}
+            >
+              {isMarkingAsDone ? 'Marking as Done...' : 'Mark as Done'}
+            </button>
           )}
         </div>
 

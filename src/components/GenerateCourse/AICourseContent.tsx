@@ -503,6 +503,7 @@ export function AICourseContent(props: AICourseContentProps) {
               currentLessonTitle={currentLesson || ''}
               onGoToPrevLesson={goToPrevLesson}
               onGoToNextLesson={goToNextLesson}
+              key={`${courseSlug}-${activeModuleIndex}-${activeLessonIndex}`}
             />
           )}
 
