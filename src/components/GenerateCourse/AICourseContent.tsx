@@ -15,6 +15,7 @@ import { AICourseModuleView } from './AICourseModuleView';
 import { showLoginPopup } from '../../lib/popup';
 import { isLoggedIn } from '../../lib/jwt';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import { generateAiCourseStructure } from '../../lib/ai';
 
 type Lesson = string;
 
@@ -36,19 +37,15 @@ type AICourseContentProps = {
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const {
-    term: defaultTerm,
-    difficulty: defaultDifficulty,
-    slug: defaultSlug,
-  } = props;
+  const { slug: defaultSlug } = props;
 
-  const [term, setTerm] = useState(defaultTerm || '');
-  const [difficulty, setDifficulty] = useState(defaultDifficulty || 'beginner');
+  const [term, setTerm] = useState('');
+  const [difficulty, setDifficulty] = useState('beginner');
+
   const [courseSlug, setCourseSlug] = useState(defaultSlug || '');
 
   const [courseId, setCourseId] = useState('');
   const [isLoading, setIsLoading] = useState(true);
-  const [courseContent, setCourseContent] = useState('');
   const [error, setError] = useState<string | null>(null);
 
   const [streamedCourse, setStreamedCourse] = useState<{
@@ -89,14 +86,6 @@ export function AICourseContent(props: AICourseContentProps) {
   };
 
   useEffect(() => {
-    if (!term || !difficulty) {
-      return;
-    }
-
-    generateCourse({ term, difficulty });
-  }, [term, difficulty]);
-
-  useEffect(() => {
     if (!defaultSlug) {
       return;
     }
@@ -120,18 +109,50 @@ export function AICourseContent(props: AICourseContentProps) {
     setDifficulty(paramsDifficulty);
   }, [term, difficulty, courseSlug]);
 
-  const generateCourse = async ({
-    term,
-    difficulty,
-    slug: slugToBeUsed,
-  }: {
+  const getAiCourseResponse = async (options: {
+    slug?: string;
     term?: string;
     difficulty?: string;
+  }): Promise<Response> => {
+    const { slug, term, difficulty } = options;
+
+    if (slug) {
+      return fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-get-ai-course/${slug}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({}),
+          credentials: 'include',
+        },
+      );
+    }
+
+    return fetch(`${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        keyword: term,
+        difficulty,
+      }),
+      credentials: 'include',
+    });
+  };
+
+  const generateCourse = async (options: {
     slug?: string;
+    term?: string;
+    difficulty?: string;
   }) => {
-    // it means that they are not logged in and they are not generating a course from a slug
-    // so we need to show the login popup - basically they are trying to generate a course from the search page
-    if (!isLoggedIn() && !defaultSlug) {
+    const { slug, term, difficulty } = options;
+
+    if (!isLoggedIn() && !slug) {
+      setIsLoading(false);
+      setError('You must be logged in to generate a course');
       showLoginPopup();
       return;
     }
@@ -141,25 +162,9 @@ export function AICourseContent(props: AICourseContentProps) {
     setExpandedModules({});
     setViewMode('full');
     setError(null);
+
     try {
-      const response = await fetch(
-        `${import.meta.env.PUBLIC_API_URL || ''}/v1-generate-ai-course`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            ...(slugToBeUsed
-              ? { slug: slugToBeUsed }
-              : {
-                  keyword: term,
-                  difficulty,
-                }),
-          }),
-          credentials: 'include',
-        },
-      );
+      const response = await getAiCourseResponse({ slug, term, difficulty });
 
       if (!response.ok) {
         const data = await response.json();
@@ -211,46 +216,11 @@ export function AICourseContent(props: AICourseContentProps) {
             setCourseSlug(extractedCourseSlug);
           }
 
-          // Store the raw content and log it
-          setCourseContent(result);
-
-          // Parse the streamed content to update the sidebar in real-time
           try {
-            const lines = result.split('\n');
-            let title = '';
-            const modules: Module[] = [];
-            let currentModule: Module | null = null;
-
-            for (let i = 0; i < lines.length; i++) {
-              const line = lines[i].trim();
-
-              if (i === 0 && line.startsWith('#')) {
-                // First line is the title
-                title = line.replace('#', '').trim();
-              } else if (line.startsWith('## ')) {
-                // New module
-                if (currentModule) {
-                  modules.push(currentModule);
-                }
-                currentModule = {
-                  title: line.replace('## ', ''),
-                  lessons: [],
-                };
-                // Removed auto-expand code to keep modules collapsed by default
-              } else if (line.startsWith('- ') && currentModule) {
-                // Lesson within current module
-                currentModule.lessons.push(line.replace('- ', ''));
-              }
-            }
-
-            // Add the last module if it exists
-            if (currentModule) {
-              modules.push(currentModule);
-            }
-
+            const aiCourse = generateAiCourseStructure(result);
             setStreamedCourse({
-              title,
-              modules,
+              title: aiCourse.title,
+              modules: aiCourse.modules,
             });
           } catch (e) {
             console.error('Error parsing streamed course content:', e);
@@ -260,7 +230,6 @@ export function AICourseContent(props: AICourseContentProps) {
           result = result
             .replace(COURSE_ID_REGEX, '')
             .replace(COURSE_SLUG_REGEX, '');
-          setCourseContent(result);
           setIsLoading(false);
         },
       });
