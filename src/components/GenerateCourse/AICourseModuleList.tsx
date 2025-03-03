@@ -1,16 +1,13 @@
 import { type Dispatch, type SetStateAction, useState } from 'react';
 import type { AiCourse } from '../../lib/ai';
-import {
-  CheckCircleIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from 'lucide-react';
+import { Check, ChevronDownIcon, ChevronRightIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getAiCourseProgressOptions } from '../../queries/ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { slugify } from '../../lib/slugger';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { CircularProgress } from './CircularProgress';
 
 type AICourseModuleListProps = {
   course: AiCourse;
@@ -43,7 +40,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
     setExpandedModules,
   } = props;
 
-  const { data: aiCourseProgress } = useQuery(
+  const { data: aiCourseProgress, isLoading } = useQuery(
     getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
     queryClient,
   );
@@ -74,85 +71,115 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
 
   return (
     <nav className="space-y-1 px-2">
-      {course.modules.map((module, moduleIdx) => (
-        <div key={moduleIdx} className="rounded-md">
-          <button
-            onClick={() => toggleModule(moduleIdx)}
-            className={cn(
-              'flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium',
-              activeModuleIndex === moduleIdx
-                ? 'bg-gray-100 text-gray-900'
-                : 'text-gray-700 hover:bg-gray-50',
-            )}
-          >
-            <div className="flex min-w-0 items-start pr-2">
-              <span className="mr-2 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-xs font-semibold">
-                {moduleIdx + 1}
-              </span>
-              <span className="break-words">
-                {module.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
-              </span>
-            </div>
-            {expandedModules[moduleIdx] ? (
-              <ChevronDownIcon size={16} className="flex-shrink-0" />
-            ) : (
-              <ChevronRightIcon size={16} className="flex-shrink-0" />
-            )}
-          </button>
+      {course.modules.map((module, moduleIdx) => {
+        const totalLessons = module.lessons.length;
+        const completedLessons = module.lessons.filter((lesson) => {
+          const key = `${slugify(module.title)}__${slugify(lesson)}`;
+          return done.includes(key);
+        }).length;
 
-          {/* Lessons */}
-          {expandedModules[moduleIdx] && (
-            <div className="ml-8 mt-1 space-y-1">
-              {module.lessons.map((lesson, lessonIdx) => {
-                const key = `${slugify(module.title)}__${slugify(lesson)}`;
-                const isCompleted = done.includes(key);
+        const percentage = Math.round((completedLessons / totalLessons) * 100);
+        const isActive = expandedModules[moduleIdx];
+        const isModuleCompleted = completedLessons === totalLessons;
 
-                return (
-                  <button
-                    key={key}
-                    onClick={() => {
-                      setActiveModuleIndex(moduleIdx);
-                      setActiveLessonIndex(lessonIdx);
-                      // Expand only this module in the sidebar
-                      setExpandedModules((prev) => {
-                        const newState: Record<number, boolean> = {};
-                        // Set all modules to collapsed
-                        course.modules.forEach((_, idx) => {
-                          newState[idx] = false;
-                        });
-                        // Expand only the current module
-                        newState[moduleIdx] = true;
-                        return newState;
-                      });
-                      // Ensure sidebar is visible on mobile
-                      setSidebarOpen(true);
-                      setViewMode('module');
-                    }}
+        return (
+          <div key={moduleIdx} className="rounded-md">
+            <button
+              onClick={() => toggleModule(moduleIdx)}
+              className={cn(
+                'flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium',
+                activeModuleIndex === moduleIdx
+                  ? 'bg-gray-100 text-gray-900'
+                  : 'text-gray-700 hover:bg-gray-50',
+              )}
+            >
+              <div className="flex min-w-0 items-start pr-2">
+                <CircularProgress
+                  percentage={percentage}
+                  isVisible={!isModuleCompleted}
+                  isActive={isActive}
+                  isLoading={isLoading}
+                >
+                  <span
                     className={cn(
-                      'flex w-full items-start rounded-md px-3 py-2 text-left text-sm',
-                      activeModuleIndex === moduleIdx &&
-                        activeLessonIndex === lessonIdx
-                        ? 'bg-gray-800 text-white'
-                        : 'text-gray-600 hover:bg-gray-50',
+                      'flex size-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                      {
+                        'bg-black': isActive,
+                        'bg-green-600': isModuleCompleted,
+                      },
                     )}
                   >
-                    {isCompleted ? (
-                      <CheckIcon additionalClasses="size-3.5 relative top-[2px] mr-2 flex-shrink-0 text-green-500" />
-                    ) : (
-                      <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
-                        {lessonIdx + 1}.
-                      </span>
+                    {!isModuleCompleted && moduleIdx + 1}
+                    {isModuleCompleted && (
+                      <Check className="h-3 w-3 stroke-[3] text-white" />
                     )}
-                    <span className="break-words">
-                      {lesson?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      ))}
+                  </span>
+                </CircularProgress>
+                <span className="ml-2 break-words">
+                  {module.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
+                </span>
+              </div>
+              {expandedModules[moduleIdx] ? (
+                <ChevronDownIcon size={16} className="flex-shrink-0" />
+              ) : (
+                <ChevronRightIcon size={16} className="flex-shrink-0" />
+              )}
+            </button>
+
+            {/* Lessons */}
+            {expandedModules[moduleIdx] && (
+              <div className="ml-8 mt-1 space-y-1">
+                {module.lessons.map((lesson, lessonIdx) => {
+                  const key = `${slugify(module.title)}__${slugify(lesson)}`;
+                  const isCompleted = done.includes(key);
+
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => {
+                        setActiveModuleIndex(moduleIdx);
+                        setActiveLessonIndex(lessonIdx);
+                        // Expand only this module in the sidebar
+                        setExpandedModules((prev) => {
+                          const newState: Record<number, boolean> = {};
+                          // Set all modules to collapsed
+                          course.modules.forEach((_, idx) => {
+                            newState[idx] = false;
+                          });
+                          // Expand only the current module
+                          newState[moduleIdx] = true;
+                          return newState;
+                        });
+                        // Ensure sidebar is visible on mobile
+                        setSidebarOpen(true);
+                        setViewMode('module');
+                      }}
+                      className={cn(
+                        'flex w-full items-start rounded-md px-3 py-2 text-left text-sm',
+                        activeModuleIndex === moduleIdx &&
+                          activeLessonIndex === lessonIdx
+                          ? 'bg-gray-800 text-white'
+                          : 'text-gray-600 hover:bg-gray-50',
+                      )}
+                    >
+                      {isCompleted ? (
+                        <CheckIcon additionalClasses="size-3.5 relative top-[2px] mr-2 flex-shrink-0 text-green-500" />
+                      ) : (
+                        <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
+                          {lessonIdx + 1}.
+                        </span>
+                      )}
+                      <span className="break-words">
+                        {lesson?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </nav>
   );
 }

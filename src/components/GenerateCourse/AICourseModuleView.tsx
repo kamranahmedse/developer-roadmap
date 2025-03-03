@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight, Loader2Icon, LockIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
 import { markdownToHtml } from '../../lib/markdown';
@@ -52,6 +52,11 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
   const isLessonDone = aiCourseProgress?.done.includes(lessonId);
 
+  const abortController = useMemo(
+    () => new AbortController(),
+    [activeModuleIndex, activeLessonIndex],
+  );
+
   const generateAiCourseContent = async () => {
     setIsLoading(true);
     setError('');
@@ -76,6 +81,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         headers: {
           'Content-Type': 'application/json',
         },
+        signal: abortController.signal,
         credentials: 'include',
         body: JSON.stringify({
           moduleTitle: currentModuleTitle,
@@ -111,9 +117,17 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
     setIsGenerating(true);
     await readAICourseLessonStream(reader, {
       onStream: async (result) => {
+        if (abortController.signal.aborted) {
+          return;
+        }
+
         setLessonHtml(markdownToHtml(result, false));
       },
       onStreamEnd: () => {
+        if (abortController.signal.aborted) {
+          return;
+        }
+
         setIsGenerating(false);
       },
     });
@@ -126,6 +140,13 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           lessonId,
         });
       },
+      onSuccess: () => {
+        queryClient.invalidateQueries(
+          getAiCourseProgressOptions({
+            aiCourseSlug: courseSlug || '',
+          }),
+        );
+      },
     },
     queryClient,
   );
@@ -133,6 +154,12 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   useEffect(() => {
     generateAiCourseContent();
   }, [currentModuleTitle, currentLessonTitle]);
+
+  useEffect(() => {
+    return () => {
+      abortController.abort();
+    };
+  }, [abortController]);
 
   return (
     <div className="mx-auto max-w-4xl">
