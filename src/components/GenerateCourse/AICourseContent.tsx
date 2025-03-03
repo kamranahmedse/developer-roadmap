@@ -14,6 +14,7 @@ import { getUrlParams } from '../../lib/browser';
 import { AICourseModuleView } from './AICourseModuleView';
 import { showLoginPopup } from '../../lib/popup';
 import { isLoggedIn } from '../../lib/jwt';
+import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 
 type Lesson = string;
 
@@ -48,6 +49,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const [courseId, setCourseId] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [courseContent, setCourseContent] = useState('');
+  const [error, setError] = useState<string | null>(null);
 
   const [streamedCourse, setStreamedCourse] = useState<{
     title: string;
@@ -138,7 +140,7 @@ export function AICourseContent(props: AICourseContentProps) {
     setStreamedCourse({ title: '', modules: [] });
     setExpandedModules({});
     setViewMode('full');
-
+    setError(null);
     try {
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL || ''}/v1-generate-ai-course`,
@@ -166,6 +168,7 @@ export function AICourseContent(props: AICourseContentProps) {
           data?.message || 'Something went wrong',
         );
         setIsLoading(false);
+        setError(data?.message || 'Something went wrong');
         return;
       }
 
@@ -348,6 +351,16 @@ export function AICourseContent(props: AICourseContentProps) {
   const currentLesson = currentModule?.lessons[activeLessonIndex];
   const totalModules = streamedCourse.modules.length;
   const totalLessons = currentModule?.lessons.length || 0;
+
+  if (error ) {
+    return (
+      <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
+        <ErrorIcon additionalClasses="h-24 w-24" />
+        <h1 className="mt-2.5 text-2xl font-bold">Error Generating Course</h1>
+        <p className="mt-1 text-gray-500">{error}</p>
+      </div>
+    );
+  }
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
