@@ -176,6 +176,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
       if (!reader) {
         console.error('Failed to get reader from response');
+        setError('Something went wrong');
         setIsLoading(false);
         return;
       }
@@ -263,7 +264,8 @@ export function AICourseContent(props: AICourseContentProps) {
           setIsLoading(false);
         },
       });
-    } catch (error) {
+    } catch (error: any) {
+      setError(error?.message || 'Something went wrong');
       console.error('Error in course generation:', error);
       setIsLoading(false);
     }
@@ -352,7 +354,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const totalModules = streamedCourse.modules.length;
   const totalLessons = currentModule?.lessons.length || 0;
 
-  if (error ) {
+  if (error && !isLoading) {
     return (
       <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
         <ErrorIcon additionalClasses="h-24 w-24" />
