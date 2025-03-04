@@ -3,7 +3,10 @@ import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
-import { markdownToHtml } from '../../lib/markdown';
+import {
+  markdownToHtml,
+  markdownToHtmlWithHighlighting,
+} from '../../lib/markdown';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
@@ -105,6 +108,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         window.location.reload();
       }
     }
+
     const reader = response.body?.getReader();
 
     if (!reader) {
@@ -123,11 +127,12 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
         setLessonHtml(markdownToHtml(result, false));
       },
-      onStreamEnd: () => {
+      onStreamEnd: async (result) => {
         if (abortController.signal.aborted) {
           return;
         }
 
+        setLessonHtml(await markdownToHtmlWithHighlighting(result));
         setIsGenerating(false);
       },
     });
