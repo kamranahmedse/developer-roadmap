@@ -24,6 +24,8 @@ type AICourseModuleListProps = {
 
   expandedModules: Record<number, boolean>;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;
+
+  isLoading: boolean;
 };
 
 export function AICourseModuleList(props: AICourseModuleListProps) {
@@ -38,9 +40,11 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
     setViewMode,
     expandedModules,
     setExpandedModules,
+
+    isLoading,
   } = props;
 
-  const { data: aiCourseProgress, isLoading } = useQuery(
+  const { data: aiCourseProgress } = useQuery(
     getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
     queryClient,
   );

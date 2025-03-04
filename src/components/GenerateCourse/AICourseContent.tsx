@@ -18,19 +18,6 @@ import { AICourseModuleView } from './AICourseModuleView';
 import { slugify } from '../../lib/slugger';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 
-type Lesson = string;
-
-type Module = {
-  title: string;
-  lessons: Lesson[];
-};
-
-type Course = {
-  title: string;
-  modules: Module[];
-  difficulty: string;
-};
-
 type AICourseContentProps = {
   courseSlug?: string;
   course: AiCourse;
@@ -115,6 +102,15 @@ export function AICourseContent(props: AICourseContentProps) {
   const totalModules = course.modules.length;
   const totalLessons = currentModule?.lessons.length || 0;
 
+  const totalCourseLessons = course.modules.reduce(
+    (total, module) => total + module.lessons.length,
+    0,
+  );
+  const totalDoneLessons = aiCourseProgress?.done?.length || 0;
+  const finishedPercentage = Math.round(
+    (totalDoneLessons / totalCourseLessons) * 100,
+  );
+
   if (error && !isLoading) {
     return (
       <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
@@ -188,13 +184,21 @@ export function AICourseContent(props: AICourseContentProps) {
               </div>
             </div>
             <div className="mt-2 text-sm text-gray-500">
-              {totalModules} modules •{' '}
-              {course.modules.reduce(
-                (total, module) => total + module.lessons.length,
-                0,
-              )}{' '}
-              lessons
+              {totalModules} modules • {totalCourseLessons} lessons
             </div>
+
+            {!isLoading && (
+              <div className="mt-2 text-sm text-black">
+                <span className="rounded-lg bg-yellow-400 px-1 py-0.5">
+                  {finishedPercentage}%
+                </span>{' '}
+                Completed
+              </div>
+            )}
+
+            {isLoading && (
+              <div className="mt-2 h-5 w-1/2 animate-pulse rounded-lg bg-gray-200"></div>
+            )}
           </div>
 
           <AICourseModuleList
@@ -209,6 +213,7 @@ export function AICourseContent(props: AICourseContentProps) {
             setViewMode={setViewMode}
             expandedModules={expandedModules}
             setExpandedModules={setExpandedModules}
+            isLoading={isLoading}
           />
         </aside>
 

@@ -126,6 +126,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
               .replace(COURSE_SLUG_REGEX, '');
 
             setCourseId(extractedCourseId);
+            setCourseSlug(extractedCourseSlug);
           }
 
           try {
