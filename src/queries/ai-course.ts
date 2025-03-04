@@ -1,5 +1,6 @@
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
+import { queryOptions } from '@tanstack/react-query';
 
 export interface AICourseProgressDocument {
   _id: string;
@@ -73,14 +74,16 @@ type GetAICourseLimitResponse = {
   limit: number;
   lessonUsed: number;
   lessonLimit: number;
+  followUpUsed: number;
+  followUpLimit: number;
 };
 
 export function getAiCourseLimitOptions() {
-  return {
+  return queryOptions({
     queryKey: ['ai-course-limit'],
     queryFn: () => {
       return httpGet<GetAICourseLimitResponse>(`/v1-get-ai-course-limit`);
     },
     enabled: !!isLoggedIn(),
-  };
+  });
 }

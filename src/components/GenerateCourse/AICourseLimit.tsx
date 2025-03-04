@@ -5,6 +5,7 @@ import {
   MessageCircleQuestionIcon,
   ChevronDownIcon,
   ClockIcon,
+  BotIcon,
 } from 'lucide-react';
 import { useState, useRef } from 'react';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
@@ -35,10 +36,13 @@ export function AICourseLimit() {
     limit: courseLimit,
     lessonUsed,
     lessonLimit,
+    followUpUsed,
+    followUpLimit,
   } = limits;
 
   const coursePercentage = Math.round((courseUsed / courseLimit) * 100);
   const lessonPercentage = Math.round((lessonUsed / lessonLimit) * 100);
+  const followUpPercentage = Math.round((followUpUsed / followUpLimit) * 100);
 
   return (
     <div className="relative" ref={containerRef}>
@@ -53,6 +57,10 @@ export function AICourseLimit() {
         <div className="mr-3 flex items-center gap-1.5">
           <BookOpenIcon className="h-4 w-4" />
           {lessonPercentage}%
+        </div>
+        <div className="mr-3 flex items-center gap-1.5">
+          <BotIcon className="h-4 w-4" />
+          {followUpPercentage}%
         </div>
 
         <span className="mr-1">of daily limits</span>
@@ -86,6 +94,20 @@ export function AICourseLimit() {
                 className="absolute inset-0 bg-gray-100"
                 style={{
                   width: `${lessonPercentage}%`,
+                }}
+              />
+            </div>
+
+            <div className="relative overflow-hidden">
+              <div className="relative z-10 flex items-center gap-2 border-b border-b-gray-200 px-2 py-1">
+                <BotIcon className="size-3.5" />
+                {followUpUsed} of {followUpLimit} follow-ups used
+              </div>
+
+              <div
+                className="absolute inset-0 bg-gray-100"
+                style={{
+                  width: `${followUpPercentage}%`,
                 }}
               />
             </div>

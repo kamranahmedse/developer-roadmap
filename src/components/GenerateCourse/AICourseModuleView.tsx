@@ -15,6 +15,7 @@ import {
   getAiCourseLimitOptions,
   getAiCourseProgressOptions,
 } from '../../queries/ai-course';
+import { AICourseFollowUp } from './AICourseFollowUp';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -269,6 +270,14 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           </button>
         </div>
       </div>
+
+      {!isGenerating && (
+        <AICourseFollowUp
+          courseSlug={courseSlug}
+          moduleTitle={currentModuleTitle}
+          lessonTitle={currentLessonTitle}
+        />
+      )}
     </div>
   );
 }
