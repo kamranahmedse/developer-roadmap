@@ -11,7 +11,10 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
-import { getAiCourseProgressOptions } from '../../queries/ai-course';
+import {
+  getAiCourseLimitOptions,
+  getAiCourseProgressOptions,
+} from '../../queries/ai-course';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -133,6 +136,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         }
 
         setLessonHtml(await markdownToHtmlWithHighlighting(result));
+        queryClient.invalidateQueries(getAiCourseLimitOptions());
         setIsGenerating(false);
       },
     });

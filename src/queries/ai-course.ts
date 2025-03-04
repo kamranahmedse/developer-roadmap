@@ -65,3 +65,22 @@ export function getAiCourseOptions(params: GetAICourseParams) {
     },
   };
 }
+
+type GetAICourseLimitParams = {};
+
+type GetAICourseLimitResponse = {
+  used: number;
+  limit: number;
+  lessonUsed: number;
+  lessonLimit: number;
+};
+
+export function getAiCourseLimitOptions() {
+  return {
+    queryKey: ['ai-course-limit'],
+    queryFn: () => {
+      return httpGet<GetAICourseLimitResponse>(`/v1-get-ai-course-limit`);
+    },
+    enabled: !!isLoggedIn(),
+  };
+}

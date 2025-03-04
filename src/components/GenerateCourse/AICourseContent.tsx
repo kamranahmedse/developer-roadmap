@@ -17,6 +17,7 @@ import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
 import { slugify } from '../../lib/slugger';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { AICourseLimit } from './AICourseLimit';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -137,6 +138,8 @@ export function AICourseContent(props: AICourseContentProps) {
           </h1>
         </div>
         <div className="flex items-center gap-2">
+          <AICourseLimit />
+
           {viewMode === 'module' && (
             <button
               onClick={() => {

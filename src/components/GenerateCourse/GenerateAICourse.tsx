@@ -5,6 +5,8 @@ import { showLoginPopup } from '../../lib/popup';
 import { generateAiCourseStructure, type AiCourse } from '../../lib/ai';
 import { readAICourseStream } from '../../helper/read-stream';
 import { AICourseContent } from './AICourseContent';
+import { queryClient } from '../../stores/query-client';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
 
 type GenerateAICourseProps = {};
 
@@ -144,6 +146,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
             .replace(COURSE_ID_REGEX, '')
             .replace(COURSE_SLUG_REGEX, '');
           setIsLoading(false);
+          queryClient.invalidateQueries(getAiCourseLimitOptions());
         },
       });
     } catch (error: any) {

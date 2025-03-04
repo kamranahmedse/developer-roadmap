@@ -91,7 +91,6 @@ export async function markdownToHtmlWithHighlighting(markdown: string) {
         return self.renderToken(tokens, idx, options);
       };
 
-    // @ts-ignore
     markdownItAsync.renderer.rules.link_open = function (
       tokens,
       idx,
