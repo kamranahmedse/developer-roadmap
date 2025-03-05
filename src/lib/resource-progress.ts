@@ -113,7 +113,8 @@ export function clearMigratedRoadmapProgress(
     'python',
     'sql',
     'system-design',
-    'aspnet-core'
+    'aspnet-core',
+    'java'
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
