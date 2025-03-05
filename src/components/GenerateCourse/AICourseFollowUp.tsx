@@ -17,7 +17,14 @@ export function AICourseFollowUp(props: AICourseFollowUpProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [courseAIChatHistory, setCourseAIChatHistory] = useState<
     AIChatHistoryType[]
-  >([]);
+  >([
+    {
+      role: 'assistant',
+      content:
+        'Hey, I am your AI instructor. Here are some examples of what you can ask me about 🤖',
+      isDefault: true,
+    },
+  ]);
 
   return (
     <div className="relative">
@@ -46,6 +53,10 @@ export function AICourseFollowUp(props: AICourseFollowUpProps) {
             setIsOpen(false);
           }}
         />
+      )}
+
+      {isOpen && (
+        <div className="pointer-events-none fixed inset-0 z-50 bg-black/50" />
       )}
     </div>
   );

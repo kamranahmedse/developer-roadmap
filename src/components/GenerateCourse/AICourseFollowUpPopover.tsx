@@ -182,7 +182,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
 
   return (
     <div
-      className="absolute bottom-0 left-0 z-10 flex h-[400px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow"
+      className="absolute bottom-0 left-0 z-[99] flex h-[500px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow"
       ref={containerRef}
     >
       <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
@@ -256,7 +256,7 @@ function AIChatCard(props: AIChatCardProps) {
   const { role, content } = props;
 
   const html = useMemo(() => {
-    return markdownToHtml(content);
+    return markdownToHtml(content, false);
   }, [content]);
 
   return (
@@ -278,7 +278,7 @@ function AIChatCard(props: AIChatCardProps) {
           <Bot className="size-4 stroke-[2.5]" />
         </div>
         <div
-          className="course-content course-ai-content prose prose-sm mt-0.5 max-w-full grow overflow-hidden text-sm"
+          className="course-content course-ai-content prose prose-sm mt-0.5 max-w-full overflow-hidden text-sm"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
