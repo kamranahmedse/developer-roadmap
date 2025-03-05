@@ -19,6 +19,7 @@ import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
+import TextareaAutosize from 'react-textarea-autosize';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -198,11 +199,23 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
             <div className="flex flex-col justify-end gap-2 px-3 py-2">
               {courseAIChatHistory.map((chat, index) => {
                 return (
-                  <AIChatCard
-                    key={index}
-                    role={chat.role}
-                    content={chat.content}
-                  />
+                  <>
+                    <AIChatCard
+                      key={index}
+                      role={chat.role}
+                      content={chat.content}
+                    />
+
+                    {chat.isDefault && (
+                      <div className="mb-1 mt-0.5">
+                        <div className="grid grid-cols-2 gap-2">
+                          {capabilities.map((capability, index) => (
+                            <CapabilityCard key={index} {...capability} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </>
                 );
               })}
 
@@ -219,7 +232,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
       </div>
 
       <form
-        className="relative flex h-[41px] items-center border-t border-gray-200 text-sm"
+        className="relative flex items-start border-t border-gray-200 text-sm"
         onSubmit={handleChatSubmit}
       >
         {isLimitExceeded && (
@@ -228,17 +241,22 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
             <p>You have reached the AI usage limit for today.</p>
           </div>
         )}
-        <input
-          className="h-full grow bg-transparent px-4 py-2 focus:outline-none"
+        <TextareaAutosize
+          className="h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none"
           placeholder="Ask AI anything about the lesson..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           autoFocus={true}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+              handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
+            }
+          }}
         />
         <button
           type="submit"
           disabled={isStreamingMessage || isLimitExceeded}
-          className="flex aspect-square h-full items-center justify-center text-zinc-500 hover:text-black"
+          className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black"
         >
           <Send className="size-4 stroke-[2.5]" />
         </button>
@@ -285,3 +303,66 @@ function AIChatCard(props: AIChatCardProps) {
     </div>
   );
 }
+
+type CapabilityCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  className?: string;
+};
+
+function CapabilityCard({
+  icon,
+  title,
+  description,
+  className,
+}: CapabilityCardProps) {
+  return (
+    <div
+      className={cn(
+        'flex flex-col gap-2 rounded-lg bg-yellow-500/10 p-3',
+        className,
+      )}
+    >
+      <div className="flex items-center gap-2">
+        {icon}
+        <span className="text-[13px] font-medium leading-none text-black">
+          {title}
+        </span>
+      </div>
+      <p className="text-[12px] leading-normal text-gray-600">{description}</p>
+    </div>
+  );
+}
+
+const capabilities = [
+  {
+    icon: (
+      <HelpCircle
+        className="size-4 shrink-0 text-yellow-600"
+        strokeWidth={2.5}
+      />
+    ),
+    title: 'Clarify Concepts',
+    description: "If you don't understand a concept, ask me to clarify it",
+  },
+  {
+    icon: (
+      <BookOpen className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />
+    ),
+    title: 'More Details',
+    description: 'Get deeper insights about topics covered in the lesson',
+  },
+  {
+    icon: (
+      <Code className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />
+    ),
+    title: 'Code Help',
+    description: 'Share your code and ask me to help you debug it',
+  },
+  {
+    icon: <Bot className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />,
+    title: 'Best Practices',
+    description: 'Share your code and ask me the best way to do something',
+  },
+] as const;
