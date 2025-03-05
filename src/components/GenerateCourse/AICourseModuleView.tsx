@@ -197,7 +197,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
           {!isGenerating && !isLoading && !isLessonDone && (
             <button
-              className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800 disabled:opacity-50"
+              className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black pl-2 pr-3 py-1 text-sm text-white hover:bg-gray-800 disabled:opacity-50"
               disabled={isMarkingAsDone}
               onClick={() => markAsDone()}
             >

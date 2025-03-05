@@ -1,23 +1,16 @@
-import {
-  ArrowLeft,
-  BookOpenCheck,
-  CheckCircleIcon,
-  Loader2,
-  Menu,
-  X,
-} from 'lucide-react';
-import { useState } from 'react';
-import { cn } from '../../lib/classname';
-import { ErrorIcon } from '../ReactIcons/ErrorIcon';
-import { type AiCourse } from '../../lib/ai';
-import { getAiCourseProgressOptions } from '../../queries/ai-course';
 import { useQuery } from '@tanstack/react-query';
+import { BookOpenCheck, ChevronLeft, Loader2, Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import { type AiCourse } from '../../lib/ai';
+import { cn } from '../../lib/classname';
+import { slugify } from '../../lib/slugger';
+import { getAiCourseProgressOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import { AICourseLimit } from './AICourseLimit';
 import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
-import { slugify } from '../../lib/slugger';
-import { CheckIcon } from '../ReactIcons/CheckIcon';
-import { AICourseLimit } from './AICourseLimit';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -124,18 +117,28 @@ export function AICourseContent(props: AICourseContentProps) {
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
-      <header className="flex h-16 items-center justify-between bg-white px-4 shadow-sm">
+      <div className="bg-gray-100">
         <div className="flex items-center">
           <a
             href="/ai-tutor"
-            className="mr-4 rounded-md p-2 hover:bg-gray-100"
+            className="mr-2 flex flex-row items-center gap-1 rounded-full px-3 py-2 text-xs font-medium"
             aria-label="Back to generator"
           >
-            <ArrowLeft size={20} />
+            <ChevronLeft className="size-3" strokeWidth={3} />
+            Back to Generator
           </a>
-          <h1 className="text-xl font-bold">
-            {course.title || 'Loading Course...'}
-          </h1>
+        </div>
+      </div>
+      <header className="flex h-[75px] items-center justify-between border-b bg-white px-4">
+        <div className="flex items-center">
+          <div className="flex flex-col">
+            <h1 className="mb-0.5 text-lg font-semibold">
+              {course.title || 'Loading Course...'}
+            </h1>
+            <div className="flex flex-row items-center gap-1 text-xs text-gray-500">
+              {totalModules} modules • {totalCourseLessons} lessons &middot;{' '}
+            </div>
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <AICourseLimit />
@@ -170,13 +173,25 @@ export function AICourseContent(props: AICourseContentProps) {
         >
           <div className="mb-4 px-4">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-bold">Course Content</h2>
               <div className="flex items-center">
+                {!isLoading && (
+                  <div className="text-xs text-black">
+                    <span className="rounded-full bg-yellow-400 px-1.5 py-0.5">
+                      {finishedPercentage}%
+                    </span>{' '}
+                    Completed
+                  </div>
+                )}
+
                 {isLoading && (
-                  <Loader2
-                    size={16}
-                    className="mr-2 animate-spin text-gray-400"
-                  />
+                  <div className="flex flex-row items-center gap-1 text-xs text-gray-500">
+                    <Loader2
+                      size={16}
+                      className="mr-2 animate-spin text-gray-400"
+                    />
+
+                    Please wait ..
+                  </div>
                 )}
                 <button
                   onClick={() => setSidebarOpen(false)}
@@ -186,22 +201,6 @@ export function AICourseContent(props: AICourseContentProps) {
                 </button>
               </div>
             </div>
-            <div className="mt-2 text-sm text-gray-500">
-              {totalModules} modules • {totalCourseLessons} lessons
-            </div>
-
-            {!isLoading && (
-              <div className="mt-2 text-sm text-black">
-                <span className="rounded-lg bg-yellow-400 px-1 py-0.5">
-                  {finishedPercentage}%
-                </span>{' '}
-                Completed
-              </div>
-            )}
-
-            {isLoading && (
-              <div className="mt-2 h-5 w-1/2 animate-pulse rounded-lg bg-gray-200"></div>
-            )}
           </div>
 
           <AICourseModuleList
