@@ -1,4 +1,10 @@
-import { ChevronLeft, ChevronRight, Loader2Icon, LockIcon } from 'lucide-react';
+import {
+  CheckIcon,
+  ChevronLeft,
+  ChevronRight,
+  Loader2Icon,
+  LockIcon,
+} from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -173,46 +179,37 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <div className="text-sm text-gray-500">
-            Module {activeModuleIndex + 1} of {totalModules}
+      <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+        {(isGenerating || isLoading) && (
+          <div className="absolute right-3 top-3 flex items-center justify-center">
+            <Loader2Icon
+              size={18}
+              strokeWidth={3}
+              className="animate-spin text-gray-400/70"
+            />
           </div>
-          <h2 className="text-2xl font-bold">
-            {currentModuleTitle?.replace(/^Module\s*?\d+[\.:]\s*/, '') ||
-              'Loading...'}
-          </h2>
-        </div>
-      </div>
+        )}
 
-      <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
           <div className="text-sm text-gray-500">
             Lesson {activeLessonIndex + 1} of {totalLessons}
           </div>
-        </div>
-
-        <div className="mb-6 flex items-center justify-between gap-2">
-          <h3 className="text-xl font-semibold">
-            {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
-          </h3>
-
-          {(isGenerating || isLoading) && (
-            <div className="flex items-center justify-center">
-              <Loader2Icon size={24} className="animate-spin text-gray-400" />
-            </div>
-          )}
 
           {!isGenerating && !isLoading && !isLessonDone && (
             <button
-              className="rounded-md bg-blue-500 px-4 py-1 text-white hover:bg-blue-600 disabled:opacity-50"
+              className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800 disabled:opacity-50"
               disabled={isMarkingAsDone}
               onClick={() => markAsDone()}
             >
+              <CheckIcon size={16} className="mr-2" />
               {isMarkingAsDone ? 'Marking as Done...' : 'Mark as Done'}
             </button>
           )}
         </div>
+
+        <h1 className="mb-6 text-3xl font-semibold">
+          {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
+        </h1>
 
         {!error && isLoggedIn() && (
           <div
