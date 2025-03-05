@@ -97,7 +97,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                   : 'text-gray-700 hover:bg-gray-50',
               )}
             >
-              <div className="flex min-w-0 items-start pr-2">
+              <div className="flex min-w-0 items-center pr-2">
                 <CircularProgress
                   percentage={percentage}
                   isVisible={!isModuleCompleted}
