@@ -1,1 +1,7 @@
 # Object Lifecycle
+
+The object lifecycle refers to the series of stages an object goes through from its creation (allocation of memory) to its destruction (reclaiming of memory). These stages typically include object creation, initialization, usage, and eventual garbage collection when the object is no longer needed. Understanding this lifecycle is crucial for efficient memory management and preventing resource leaks.
+
+Visit the following resources to learn more:
+
+- [@article@Object Life Cycle in Java](https://www.tpointtech.com/object-life-cycle-in-java)

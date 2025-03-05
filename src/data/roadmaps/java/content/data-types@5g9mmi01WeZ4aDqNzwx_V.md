@@ -9,8 +9,6 @@ Data Types are divided into two group -
 
 Visit the following resources to learn more:
 
-- [@article@What are Data Types & Variables?](https://www.guru99.com/java-variables.html)
+- [@article@Java Data Types](https://jenkov.com/tutorials/java/variables.html)
+- [@article@What are Data Types & Variables?](https://jenkov.com/tutorials/java/data-types.html)
 - [@article@Java Variables](https://www.javatpoint.com/java-variables)
-- [@article@Learn more about Data types and Variables](https://www.javatpoint.com/java-data-types)
-- [@article@Java enums](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
-- [@article@Java Records](https://www.baeldung.com/java-record-keyword)

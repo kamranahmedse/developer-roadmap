@@ -81,6 +81,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@ai-sdk/google": "^1.1.19",
     "@playwright/test": "^1.48.0",
     "@tailwindcss/typography": "^0.5.15",
     "@types/dom-to-image": "^2.6.7",
@@ -91,6 +92,7 @@
     "@types/react-slick": "^0.23.13",
     "@types/sanitize-html": "^2.13.0",
     "@types/turndown": "^5.0.5",
+    "ai": "^4.1.51",
     "csv-parser": "^3.0.0",
     "gh-pages": "^6.2.0",
     "js-yaml": "^4.1.0",
