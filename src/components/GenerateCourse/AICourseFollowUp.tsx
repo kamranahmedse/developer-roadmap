@@ -33,7 +33,7 @@ export function AICourseFollowUp(props: AICourseFollowUpProps) {
         onClick={() => setIsOpen(true)}
       >
         <BotIcon className="h-4 w-4" />
-        <span>You still have confusion about the lesson? Ask me anything.</span>
+        <span>Still confused? Ask AI for follow up questions.</span>
 
         <ArrowRightIcon className="ml-auto h-4 w-4" />
       </button>
