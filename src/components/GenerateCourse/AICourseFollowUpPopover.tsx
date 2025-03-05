@@ -15,7 +15,10 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { readAICourseLessonStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { useToast } from '../../hooks/use-toast';
-import { markdownToHtml } from '../../lib/markdown';
+import {
+  markdownToHtml,
+  markdownToHtmlWithHighlighting,
+} from '../../lib/markdown';
 import { cn } from '../../lib/classname';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
@@ -26,6 +29,7 @@ export type AIChatHistoryType = {
   role: AllowedAIChatRole;
   content: string;
   isDefault?: boolean;
+  html?: string;
 };
 
 type AICourseFollowUpPopoverProps = {
@@ -160,6 +164,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
           {
             role: 'assistant',
             content,
+            html: await markdownToHtmlWithHighlighting(content),
           },
         ];
 
@@ -204,6 +209,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
                       key={index}
                       role={chat.role}
                       content={chat.content}
+                      html={chat.html}
                     />
 
                     {chat.isDefault && (
@@ -268,14 +274,19 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
 type AIChatCardProps = {
   role: AllowedAIChatRole;
   content: string;
+  html?: string;
 };
 
 function AIChatCard(props: AIChatCardProps) {
-  const { role, content } = props;
+  const { role, content, html: defaultHtml } = props;
 
   const html = useMemo(() => {
+    if (defaultHtml) {
+      return defaultHtml;
+    }
+
     return markdownToHtml(content, false);
-  }, [content]);
+  }, [content, defaultHtml]);
 
   return (
     <div
