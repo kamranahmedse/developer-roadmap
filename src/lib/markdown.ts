@@ -17,13 +17,13 @@ export function replaceVariables(
   });
 }
 
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+});
+
 export function markdownToHtml(markdown: string, isInline = true): string {
   try {
-    const md = new MarkdownIt({
-      html: true,
-      linkify: true,
-    });
-
     // Solution to open links in new tab in markdown
     // otherwise default behaviour is to open in same tab
     //

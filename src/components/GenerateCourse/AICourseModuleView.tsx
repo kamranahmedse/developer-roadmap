@@ -1,10 +1,5 @@
-import {
-  CheckIcon,
-  ChevronLeft,
-  ChevronRight,
-  Loader2Icon,
-  LockIcon,
-} from 'lucide-react';
+import './AICourseFollowUp.css';
+import { CheckIcon, ChevronLeft, ChevronRight, Loader2Icon, LockIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -213,7 +208,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
         {!error && isLoggedIn() && (
           <div
-            className="prose max-w-none"
+            className="course-content prose prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
             dangerouslySetInnerHTML={{ __html: lessonHtml }}
           />
         )}
@@ -268,7 +263,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         </div>
       </div>
 
-      {!isGenerating && (
+      {!isGenerating && !isLoading && (
         <AICourseFollowUp
           courseSlug={courseSlug}
           moduleTitle={currentModuleTitle}
