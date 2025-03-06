@@ -1,4 +1,4 @@
-import './AICourseFollowUp.css';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import {
   CheckIcon,
   ChevronLeft,
@@ -7,23 +7,24 @@ import {
   LockIcon,
   XIcon,
 } from 'lucide-react';
-import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
+import { cn } from '../../lib/classname';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   markdownToHtml,
   markdownToHtmlWithHighlighting,
 } from '../../lib/markdown';
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { queryClient } from '../../stores/query-client';
-import { httpPatch, httpPost } from '../../lib/query-http';
+import { httpPatch } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
 import {
   getAiCourseLimitOptions,
   getAiCourseProgressOptions,
+  type AICourseProgressDocument,
 } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
+import './AICourseFollowUp.css';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -154,15 +155,17 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const { mutate: toggleDone, isPending: isTogglingDone } = useMutation(
     {
       mutationFn: () => {
-        return httpPatch(`/v1-toggle-done-ai-lesson/${courseSlug}`, {
-          lessonId,
-        });
+        return httpPatch<AICourseProgressDocument>(
+          `/v1-toggle-done-ai-lesson/${courseSlug}`,
+          {
+            lessonId,
+          },
+        );
       },
-      onSuccess: () => {
-        queryClient.invalidateQueries(
-          getAiCourseProgressOptions({
-            aiCourseSlug: courseSlug || '',
-          }),
+      onSuccess: (data) => {
+        queryClient.setQueryData(
+          ['ai-course-progress', { aiCourseSlug: courseSlug }],
+          data,
         );
       },
     },
@@ -178,6 +181,15 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
       abortController.abort();
     };
   }, [abortController]);
+
+  const cantGoForward =
+    (activeModuleIndex === totalModules - 1 &&
+      activeLessonIndex === totalLessons - 1) ||
+    isGenerating ||
+    isLoading;
+
+  const cantGoBack =
+    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating;
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -200,24 +212,37 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           {!isGenerating && !isLoading && (
             <>
               <button
-                disabled={isLoading}
+                disabled={isLoading || isTogglingDone}
                 className={cn(
-                  'absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
+                  'absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
                   isLessonDone
                     ? 'bg-red-500 hover:bg-red-600'
                     : 'bg-green-500 hover:bg-green-600',
                 )}
                 onClick={() => toggleDone()}
               >
-                {isLessonDone ? (
+                {isTogglingDone ? (
                   <>
-                    <XIcon size={16} className="mr-1" />
-                    Mark as Undone
+                    <Loader2Icon
+                      size={16}
+                      strokeWidth={3}
+                      className="animate-spin text-white"
+                    />
+                    Please wait ...
                   </>
                 ) : (
                   <>
-                    <CheckIcon size={16} className="mr-1" />
-                    Mark as Done
+                    {isLessonDone ? (
+                      <>
+                        <XIcon size={16} />
+                        Mark as Undone
+                      </>
+                    ) : (
+                      <>
+                        <CheckIcon size={16} />
+                        Mark as Done
+                      </>
+                    )}
                   </>
                 )}
               </button>
@@ -254,10 +279,10 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         <div className="mt-8 flex items-center justify-between">
           <button
             onClick={onGoToPrevLesson}
-            disabled={activeModuleIndex === 0 && activeLessonIndex === 0}
+            disabled={cantGoBack}
             className={cn(
-              'flex items-center rounded-md px-4 py-2',
-              activeModuleIndex === 0 && activeLessonIndex === 0
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              cantGoBack
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
             )}
@@ -268,14 +293,10 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
           <button
             onClick={onGoToNextLesson}
-            disabled={
-              activeModuleIndex === totalModules - 1 &&
-              activeLessonIndex === totalLessons - 1
-            }
+            disabled={cantGoForward}
             className={cn(
-              'flex items-center rounded-md px-4 py-2',
-              activeModuleIndex === totalModules - 1 &&
-                activeLessonIndex === totalLessons - 1
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              cantGoForward
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-800 text-white hover:bg-gray-700',
             )}
