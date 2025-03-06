@@ -253,7 +253,7 @@ export function AICourseContent(props: AICourseContentProps) {
             <div className="mx-auto max-w-3xl rounded-xl border border-gray-200 bg-white shadow-sm">
               <div
                 className={cn(
-                  'mb-4 flex items-start justify-between border-b border-gray-100 p-6',
+                  'mb-8 flex items-start justify-between border-b border-gray-100 p-6',
                   isLoading && 'striped-loader',
                 )}
               >
