@@ -26,10 +26,13 @@ type CreateSubscriptionCheckoutSessionResponse = {
 
 type UpgradeAccountModalProps = {
   onClose: () => void;
+
+  success?: string;
+  cancel?: string;
 };
 
 export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
-  const { onClose } = props;
+  const { onClose, success, cancel } = props;
 
   const [selectedPlan, setSelectedPlan] =
     useState<AllowedSubscriptionInterval>('month');
@@ -199,8 +202,8 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                             const currentUrlPath = window.location.pathname;
                             createCheckoutSession({
                               priceId: plan.priceId,
-                              success: `${currentUrlPath}?s=1`,
-                              cancel: `${currentUrlPath}?s=0`,
+                              success: success || `${currentUrlPath}?s=1`,
+                              cancel: cancel || `${currentUrlPath}?s=0`,
                             });
                             return;
                           }

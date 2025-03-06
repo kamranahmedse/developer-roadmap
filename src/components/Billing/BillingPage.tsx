@@ -8,7 +8,7 @@ import {
 } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
-import { UpgradePlanModal } from '../CourseLanding/UpgradePlanModal';
+import { UpgradeAccountModal } from './UpgradeAccountModal';
 import { getUrlParams } from '../../lib/browser';
 import { VerifyUpgrade } from './VerifyUpgrade';
 
@@ -66,15 +66,12 @@ export function BillingPage() {
   }
 
   const selectedPlanDetails = USER_SUBSCRIPTION_PLAN_PRICES.find(
-    (plan) => plan.planId === (billingDetails?.planId || 'free'),
+    (plan) => plan.priceId === billingDetails?.priceId,
   );
 
   const shouldHideDeleteButton =
     billingDetails?.status === 'canceled' || billingDetails?.cancelAtPeriodEnd;
-  const priceDetails =
-    (billingDetails?.interval || 'month') === 'month'
-      ? selectedPlanDetails?.prices.month
-      : selectedPlanDetails?.prices.year;
+  const priceDetails = selectedPlanDetails;
 
   const formattedNextBillDate = new Date(
     billingDetails?.currentPeriodEnd || '',
@@ -87,7 +84,7 @@ export function BillingPage() {
   return (
     <>
       {showUpgradeModal && (
-        <UpgradePlanModal
+        <UpgradeAccountModal
           onClose={() => {
             setShowUpgradeModal(false);
           }}
@@ -101,7 +98,7 @@ export function BillingPage() {
       {billingDetails?.status === 'none' && !isLoadingBillingDetails && (
         <div className="flex h-full w-full flex-col">
           <p className="text-gray-800">
-            You are using free plan,&nbsp;
+            You are not subscribed to any plan,&nbsp;
             <button
               className="text-black underline underline-offset-2 hover:text-gray-800"
               onClick={() => {
@@ -114,67 +111,71 @@ export function BillingPage() {
         </div>
       )}
 
-      {billingDetails?.status !== 'none' && !isLoadingBillingDetails && (
-        <>
-          {billingDetails?.status === 'past_due' && (
-            <div className="mb-4 rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-500">
-              We were not able to charge your card. Please update your payment
-              information.
-            </div>
-          )}
+      {billingDetails?.status !== 'none' &&
+        !isLoadingBillingDetails &&
+        priceDetails && (
+          <>
+            {billingDetails?.status === 'past_due' && (
+              <div className="mb-4 rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-500">
+                We were not able to charge your card. Please update your payment
+                information.
+              </div>
+            )}
 
-          <div className="flex items-start gap-10">
-            <div className="flex flex-col">
-              <span className="text-gray-500">Plan</span>
-              <span className="mt-1 text-lg font-medium capitalize text-black">
-                {selectedPlanDetails?.name}
-              </span>
-            </div>
-            <div className="flex grow items-center justify-between gap-2">
+            <div className="flex items-start gap-10">
               <div className="flex flex-col">
-                <span className="text-gray-500">Payment</span>
+                <span className="text-gray-500">Plan</span>
                 <span className="mt-1 text-lg font-medium capitalize text-black">
-                  ${priceDetails!.amount / 100}
-                  <span className="text-sm font-normal text-gray-500">
-                    &nbsp;/ {priceDetails!.interval}
-                  </span>
+                  {selectedPlanDetails?.name}
                 </span>
               </div>
+              <div className="flex grow items-center justify-between gap-2">
+                <div className="flex flex-col">
+                  <span className="text-gray-500">Payment</span>
+                  <span className="mt-1 text-lg font-medium capitalize text-black">
+                    ${priceDetails.amount}
+                    <span className="text-sm font-normal text-gray-500">
+                      &nbsp;/ {priceDetails.interval}
+                    </span>
+                  </span>
+                </div>
 
-              {!shouldHideDeleteButton && (
-                <button
-                  className="inline-flex items-center gap-1 self-end text-xs underline underline-offset-1 hover:text-gray-600"
-                  onClick={() => {
-                    setShowUpgradeModal(true);
-                  }}
-                >
-                  Update Plan
-                </button>
-              )}
+                {!shouldHideDeleteButton && (
+                  <button
+                    className="inline-flex items-center gap-1 self-end text-xs underline underline-offset-1 hover:text-gray-600"
+                    onClick={() => {
+                      setShowUpgradeModal(true);
+                    }}
+                  >
+                    Update Plan
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
 
-          <div className="mt-4 flex justify-between gap-2">
-            <div className="flex flex-col">
-              <span className="text-gray-500">
-                {billingDetails?.cancelAtPeriodEnd ? 'Expires On' : 'Renews On'}
-              </span>
-              <span className="mt-1 text-lg font-medium capitalize text-black">
-                {formattedNextBillDate}
-              </span>
+            <div className="mt-4 flex justify-between gap-2">
+              <div className="flex flex-col">
+                <span className="text-gray-500">
+                  {billingDetails?.cancelAtPeriodEnd
+                    ? 'Expires On'
+                    : 'Renews On'}
+                </span>
+                <span className="mt-1 text-lg font-medium capitalize text-black">
+                  {formattedNextBillDate}
+                </span>
+              </div>
+              <button
+                className="inline-flex self-end text-xs underline underline-offset-1 hover:text-gray-600 disabled:cursor-not-allowed disabled:opacity-50"
+                onClick={() => {
+                  createCustomerPortal({});
+                }}
+                disabled={isCreatingCustomerPortal}
+              >
+                Manage my Subscription
+              </button>
             </div>
-            <button
-              className="inline-flex self-end text-xs underline underline-offset-1 hover:text-gray-600 disabled:cursor-not-allowed disabled:opacity-50"
-              onClick={() => {
-                createCustomerPortal({});
-              }}
-              disabled={isCreatingCustomerPortal}
-            >
-              Manage my Subscription
-            </button>
-          </div>
-        </>
-      )}
+          </>
+        )}
     </>
   );
 }
