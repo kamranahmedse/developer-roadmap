@@ -160,7 +160,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                         setViewMode('module');
                       }}
                       className={cn(
-                        'flex w-full cursor-pointer items-center py-3 pl-3.5 pr-2 text-left text-sm leading-relaxed',
+                        'flex gap-2.5 w-full cursor-pointer items-center py-3 pl-3.5 pr-2 text-left text-sm leading-normal',
                         activeModuleIndex === moduleIdx &&
                           activeLessonIndex === lessonIdx
                           ? 'bg-gray-200 text-black'
@@ -170,7 +170,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                       {isCompleted ? (
                         <CheckIcon
                           additionalClasses={cn(
-                            'size-[18px] relative bg-white rounded-full top-[2px] mr-2.5 flex-shrink-0 text-green-600',
+                            'size-[18px] relative bg-white rounded-full top-[2px] flex-shrink-0 text-green-600',
                             {
                               'text-black':
                                 activeModuleIndex === moduleIdx &&
@@ -181,7 +181,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                       ) : (
                         <span
                           className={cn(
-                            'mr-2 flex size-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                            'flex size-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
                             {
                               'bg-black':
                                 activeModuleIndex === moduleIdx &&
