@@ -133,7 +133,7 @@ export function AICourseContent(props: AICourseContentProps) {
               {course.title || 'Loading Course...'}
             </h1>
             <div className="flex flex-row items-center gap-1 text-xs text-gray-500">
-              {totalModules} modules • {totalCourseLessons} lessons &middot;{' '}
+              {totalModules} modules • {totalCourseLessons} lessons
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ export function AICourseContent(props: AICourseContentProps) {
                 </div>
               ) : (
                 <div className="flex h-64 items-center justify-center">
-                  <Loader2 size={40} className="animate-spin text-gray-400" />
+                  <Loader2 size={36} className="animate-spin text-gray-300" />
                 </div>
               )}
             </div>
