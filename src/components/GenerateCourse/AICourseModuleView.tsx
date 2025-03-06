@@ -1,4 +1,4 @@
-import './AICourseFollowUp.css';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import {
   CheckIcon,
   ChevronLeft,
@@ -7,23 +7,24 @@ import {
   LockIcon,
   XIcon,
 } from 'lucide-react';
-import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAICourseLessonStream } from '../../helper/read-stream';
+import { cn } from '../../lib/classname';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   markdownToHtml,
   markdownToHtmlWithHighlighting,
 } from '../../lib/markdown';
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { queryClient } from '../../stores/query-client';
-import { httpPatch, httpPost } from '../../lib/query-http';
+import { httpPatch } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
 import {
   getAiCourseLimitOptions,
   getAiCourseProgressOptions,
+  type AICourseProgressDocument,
 } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
+import './AICourseFollowUp.css';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -154,15 +155,17 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
   const { mutate: toggleDone, isPending: isTogglingDone } = useMutation(
     {
       mutationFn: () => {
-        return httpPatch(`/v1-toggle-done-ai-lesson/${courseSlug}`, {
-          lessonId,
-        });
+        return httpPatch<AICourseProgressDocument>(
+          `/v1-toggle-done-ai-lesson/${courseSlug}`,
+          {
+            lessonId,
+          },
+        );
       },
-      onSuccess: () => {
-        queryClient.invalidateQueries(
-          getAiCourseProgressOptions({
-            aiCourseSlug: courseSlug || '',
-          }),
+      onSuccess: (data) => {
+        queryClient.setQueryData(
+          ['ai-course-progress', { aiCourseSlug: courseSlug }],
+          data,
         );
       },
     },
@@ -200,24 +203,37 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           {!isGenerating && !isLoading && (
             <>
               <button
-                disabled={isLoading}
+                disabled={isLoading || isTogglingDone}
                 className={cn(
-                  'absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
+                  'absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
                   isLessonDone
                     ? 'bg-red-500 hover:bg-red-600'
                     : 'bg-green-500 hover:bg-green-600',
                 )}
                 onClick={() => toggleDone()}
               >
-                {isLessonDone ? (
+                {isTogglingDone ? (
                   <>
-                    <XIcon size={16} className="mr-1" />
-                    Mark as Undone
+                    <Loader2Icon
+                      size={16}
+                      strokeWidth={3}
+                      className="animate-spin text-white"
+                    />
+                    Please wait ...
                   </>
                 ) : (
                   <>
-                    <CheckIcon size={16} className="mr-1" />
-                    Mark as Done
+                    {isLessonDone ? (
+                      <>
+                        <XIcon size={16} />
+                        Mark as Undone
+                      </>
+                    ) : (
+                      <>
+                        <CheckIcon size={16} />
+                        Mark as Done
+                      </>
+                    )}
                   </>
                 )}
               </button>
