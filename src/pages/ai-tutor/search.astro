@@ -1,6 +1,7 @@
 ---
 import { GenerateAICourse } from '../../components/GenerateCourse/GenerateAICourse';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 ---
 
 <SkeletonLayout
@@ -11,4 +12,5 @@ import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
   canonicalUrl='/ai-tutor/search'
 >
   <GenerateAICourse client:load />
+  <CheckSubscriptionVerification client:load />
 </SkeletonLayout>

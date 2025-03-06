@@ -4,6 +4,7 @@ import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
 import { AICourseContent } from './AICourseContent';
 import { generateAiCourseStructure } from '../../lib/ai';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type GetAICourseProps = {
   courseSlug: string;
@@ -44,15 +45,18 @@ export function GetAICourse(props: GetAICourseProps) {
   }, [error]);
 
   return (
-    <AICourseContent
-      course={{
-        title: aiCourse?.title || '',
-        modules: aiCourse?.course.modules || [],
-        difficulty: aiCourse?.difficulty || 'Easy',
-      }}
-      isLoading={isLoading}
-      courseSlug={courseSlug}
-      error={error?.message}
-    />
+    <>
+      <UpgradeAccountModal />
+      <AICourseContent
+        course={{
+          title: aiCourse?.title || '',
+          modules: aiCourse?.course.modules || [],
+          difficulty: aiCourse?.difficulty || 'Easy',
+        }}
+        isLoading={isLoading}
+        courseSlug={courseSlug}
+        error={error?.message}
+      />
+    </>
   );
 }

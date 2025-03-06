@@ -6,7 +6,6 @@ import { useToast } from '../../hooks/use-toast';
 import { VerifyUpgrade } from './VerifyUpgrade';
 import { Loader2Icon } from 'lucide-react';
 import { httpPost } from '../../lib/query-http';
-import type { IntervalType } from './UpgradePlanModal';
 
 type UpdatePlanBody = {
   priceId: string;
@@ -18,13 +17,12 @@ type UpdatePlanResponse = {
 
 type UpdatePlanConfirmationProps = {
   planDetails: (typeof USER_SUBSCRIPTION_PLAN_PRICES)[number];
-  interval: IntervalType;
   onClose: () => void;
   onCancel: () => void;
 };
 
 export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
-  const { planDetails, onClose, onCancel, interval } = props;
+  const { planDetails, onClose, onCancel } = props;
 
   const toast = useToast();
   const {
@@ -34,7 +32,10 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
   } = useMutation(
     {
       mutationFn: (body: UpdatePlanBody) => {
-        return httpPost<UpdatePlanResponse>('/v1-update-plan', body);
+        return httpPost<UpdatePlanResponse>(
+          '/v1-update-subscription-plan',
+          body,
+        );
       },
       onError: (error) => {
         console.error(error);
@@ -48,9 +49,9 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
     return null;
   }
 
-  const selectedPrice = planDetails.prices[interval];
+  const selectedPrice = planDetails;
   if (status === 'success') {
-    return <VerifyUpgrade newPriceId={selectedPrice.id} />;
+    return <VerifyUpgrade newPriceId={selectedPrice.priceId} />;
   }
 
   return (
@@ -61,10 +62,10 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
       <h3 className="text-xl font-bold">Subscription Update</h3>
       <p className="mt-2 text-balance text-gray-500">
         Your plan will be updated to the{' '}
-        <b className="text-gray-600">{planDetails.name}</b> plan, and will be
-        charged{' '}
+        <b className="text-gray-600">{planDetails.interval}</b> plan, and will
+        be charged{' '}
         <b className="text-gray-600">
-          ${selectedPrice.amount / 100} {selectedPrice.interval}
+          ${selectedPrice.amount} {selectedPrice.interval}
         </b>
         .
       </p>
@@ -81,7 +82,7 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
           className="flex items-center justify-center rounded-md border border-gray-800 bg-black py-2 text-sm font-semibold text-white hover:opacity-80 disabled:opacity-50"
           disabled={isPending}
           onClick={() => {
-            updatePlan({ priceId: selectedPrice.id });
+            updatePlan({ priceId: selectedPrice.priceId });
           }}
         >
           {isPending && (

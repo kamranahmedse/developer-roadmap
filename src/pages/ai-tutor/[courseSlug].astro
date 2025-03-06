@@ -1,6 +1,7 @@
 ---
 import { GetAICourse } from '../../components/GenerateCourse/GetAICourse';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 
 export const prerender = false;
 
@@ -19,4 +20,5 @@ const { courseSlug } = Astro.params as Params;
   canonicalUrl={`/ai-tutor/${courseSlug}`}
 >
   <GetAICourse client:load courseSlug={courseSlug} />
+  <CheckSubscriptionVerification client:load />
 </SkeletonLayout>

@@ -12,14 +12,15 @@ import { cn } from '../../lib/classname';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
+import { UpdatePlanConfirmation } from './UpdatePlanConfirmation';
 
-type CreateCheckoutSessionBody = {
+type CreateSubscriptionCheckoutSessionBody = {
   priceId: string;
   success?: string;
   cancel?: string;
 };
 
-type CreateCheckoutSessionResponse = {
+type CreateSubscriptionCheckoutSessionResponse = {
   checkoutUrl: string;
 };
 
@@ -29,7 +30,6 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
   const [selectedPlan, setSelectedPlan] =
     useState<AllowedSubscriptionInterval>('month');
   const [isUpdatingPlan, setIsUpdatingPlan] = useState(false);
-  const [isCheckoutSuccess, setIsCheckoutSuccess] = useState(false);
 
   const user = getUser();
 
@@ -41,11 +41,14 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
 
   const toast = useToast();
 
-  const { mutate: createCheckoutSession, isPending } = useMutation(
+  const {
+    mutate: createCheckoutSession,
+    isPending: isCreatingCheckoutSession,
+  } = useMutation(
     {
-      mutationFn: (body: CreateCheckoutSessionBody) => {
-        return httpPost<CreateCheckoutSessionResponse>(
-          '/v1-create-checkout-session',
+      mutationFn: (body: CreateSubscriptionCheckoutSessionBody) => {
+        return httpPost<CreateSubscriptionCheckoutSessionResponse>(
+          '/v1-create-subscription-checkout-session',
           body,
         );
       },
@@ -96,67 +99,25 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
     </div>
   ) : null;
 
-  const checkoutSuccessModal = isCheckoutSuccess
-    ? null
-    : // <MyPlanUpdateSuccess />
-      null;
-
-  const features = [
-    { free: 'Unlimited timezones', paid: 'Unlimited Timezones' },
-    {
-      free: 'Upto 3 Timezone Teams',
-      paid: 'Unlimited Timezone Teams',
-    },
-    {
-      free: '1 Workspace and Project',
-      paid: 'Unlimited Workspaces and Projects',
-    },
-    { free: '7 days Task History', paid: 'Unlimited Task History' },
-    {
-      free: 'Daily Planner (7 tasks per day)',
-      paid: 'Daily Planner (Unlimited tasks)',
-    },
-    { free: 'Pomodoro Timer', paid: 'Pomodoro Timer' },
-    { free: 'Focus Sounds', paid: 'Focus sounds' },
-    {
-      free: 'World Clock, Stop Watch, Timer',
-      paid: 'World Clock, Stop Watch, Timer',
-    },
-    { free: '', paid: 'Help the development of the app' },
-    { free: '', paid: '...and more features coming soon!' },
-  ];
-
   const calculateYearlyPrice = (monthlyPrice: number) => {
     return (monthlyPrice * 12).toFixed(2);
   };
 
-  const calculateDiscount = (
-    originalPrice: number,
-    discountedPrice: number,
-  ) => {
-    return Math.round(
-      ((originalPrice - discountedPrice) / originalPrice) * 100,
+  if (isUpdatingPlan && selectedPlanDetails) {
+    return (
+      <UpdatePlanConfirmation
+        planDetails={selectedPlanDetails}
+        onClose={() => setIsUpdatingPlan(false)}
+        onCancel={() => setIsUpdatingPlan(false)}
+      />
     );
-  };
-
-  const yearlyDiscount = calculateDiscount(
-    parseFloat(calculateYearlyPrice(USER_SUBSCRIPTION_PLAN_PRICES[0].amount)),
-    USER_SUBSCRIPTION_PLAN_PRICES[1].amount,
-  );
-
-  if (isUpdatingPlan) {
-    return null;
-    // <UpdateMyPlanConfirmation
-    //   planDetails={selectedPlanDetails}
-    //   onClose={() => setIsUpdatingPlan(false)}
-    //   onCancel={() => setIsUpdatingPlan(false)}
-    // />
   }
 
   return (
     <Modal
       onClose={() => {}}
-      wrapperClassName="bg-zinc-900 rounded-xl p-6 max-w-3xl w-full min-h-[540px]"
+      wrapperClassName="rounded-xl max-w-3xl w-full min-h-[540px]"
+      bodyClassName="p-6"
     >
       <div onClick={(e) => e.stopPropagation()}>
         {errorContent}
@@ -165,11 +126,11 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
         {!isLoading && !error && (
           <div className="flex flex-col">
             <div className="mb-8 text-left">
-              <h2 className="text-xl font-bold text-zinc-100">
+              <h2 className="text-xl font-bold">
                 Unlock premium features and by-pass the limits.
               </h2>
             </div>
-            <div className="mb-8 grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-8">
               {USER_SUBSCRIPTION_PLAN_PRICES.map((plan) => {
                 const isCurrentPlanSelected =
                   currentPlan?.priceId === plan.priceId;
@@ -182,12 +143,12 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                       'flex flex-col space-y-4 rounded-lg p-6',
                       isYearly
                         ? 'border-2 border-yellow-400'
-                        : 'border border-zinc-700',
+                        : 'border border-gray-200',
                     )}
                   >
                     <div className="flex items-start justify-between">
                       <div>
-                        <h4 className="font-semibold text-zinc-100">
+                        <h4 className="font-semibold">
                           {isYearly ? 'Yearly Payment' : 'Monthly Payment'}
                         </h4>
                         {isYearly && (
@@ -222,10 +183,12 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                     <div>
                       <button
                         className={cn(
-                          'w-full rounded-md py-2.5 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60',
+                          'flex min-h-11 w-full items-center justify-center rounded-md py-2.5 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60',
                           'bg-yellow-400 text-black hover:bg-yellow-500',
                         )}
-                        disabled={isCurrentPlanSelected}
+                        disabled={
+                          isCurrentPlanSelected || isCreatingCheckoutSession
+                        }
                         onClick={() => {
                           setSelectedPlan(plan.interval);
                           if (!currentPlanPriceId) {
@@ -243,32 +206,22 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                         data-form-type="other"
                         data-lpignore="true"
                       >
-                        {isCurrentPlanSelected ? 'Current Plan' : 'Select Plan'}
+                        {isCreatingCheckoutSession &&
+                        selectedPlan === plan.interval ? (
+                          <Loader2 className="h-4 w-4 animate-spin" />
+                        ) : isCurrentPlanSelected ? (
+                          'Current Plan'
+                        ) : (
+                          'Select Plan'
+                        )}
                       </button>
                     </div>
                   </div>
                 );
               })}
             </div>
-            <div>
-              <h4 className="mb-4 font-semibold text-zinc-100">
-                Features included in all paid plans:
-              </h4>
-              <ul className="grid grid-cols-2 gap-x-8 gap-y-2">
-                {features.map((feature, index) => (
-                  <li key={index} className="flex items-center">
-                    <Check className="mr-2 h-4 w-4 text-yellow-400" />
-                    <span className="text-sm text-zinc-400">
-                      {feature.paid}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         )}
-
-        {checkoutSuccessModal}
       </div>
     </Modal>
   );

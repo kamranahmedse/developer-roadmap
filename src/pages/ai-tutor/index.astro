@@ -1,8 +1,10 @@
 ---
 import { AICourse } from '../../components/GenerateCourse/AICourse';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 ---
 
 <BaseLayout title='AI Tutor' noIndex={true}>
   <AICourse client:load />
+  <CheckSubscriptionVerification client:load />
 </BaseLayout>
