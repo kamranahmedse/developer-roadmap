@@ -1,5 +1,12 @@
 import './AICourseFollowUp.css';
-import { CheckIcon, ChevronLeft, ChevronRight, Loader2Icon, LockIcon } from 'lucide-react';
+import {
+  CheckIcon,
+  ChevronLeft,
+  ChevronRight,
+  Loader2Icon,
+  LockIcon,
+  XIcon,
+} from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { useEffect, useMemo, useState } from 'react';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -190,15 +197,29 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
             Lesson {activeLessonIndex + 1} of {totalLessons}
           </div>
 
-          {!isGenerating && !isLoading && !isLessonDone && (
-            <button
-              className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black pl-2 pr-3 py-1 text-sm text-white hover:bg-gray-800 disabled:opacity-50"
-              disabled={isMarkingAsDone}
-              onClick={() => markAsDone()}
-            >
-              <CheckIcon size={16} className="mr-2" />
-              {isMarkingAsDone ? 'Marking as Done...' : 'Mark as Done'}
-            </button>
+          {!isGenerating && !isLoading && (
+            <>
+              <button
+                disabled={isLoading}
+                className={cn(
+                  'absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
+                  isLessonDone ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600',
+                )}
+                onClick={() => markAsDone()}
+              >
+                {isLessonDone ? (
+                  <>
+                    <XIcon size={16} className="mr-1" />
+                    Mark as Undone
+                  </>
+                ) : (
+                  <>
+                    <CheckIcon size={16} className="mr-1" />
+                    Mark as Done
+                  </>
+                )}
+              </button>
+            </>
           )}
         </div>
 
@@ -208,7 +229,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
         {!error && isLoggedIn() && (
           <div
-            className="course-content prose max-w-full prose-lg mt-8 text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
+            className="course-content prose prose-lg mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
             dangerouslySetInnerHTML={{ __html: lessonHtml }}
           />
         )}

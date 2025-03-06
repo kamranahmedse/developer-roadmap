@@ -36,21 +36,18 @@ export function AICourseContent(props: AICourseContentProps) {
     Record<number, boolean>
   >({});
 
-  // Navigation helpers
   const goToNextModule = () => {
     if (activeModuleIndex < course.modules.length - 1) {
       const nextModuleIndex = activeModuleIndex + 1;
       setActiveModuleIndex(nextModuleIndex);
       setActiveLessonIndex(0);
 
-      // Expand the next module in the sidebar
       setExpandedModules((prev) => {
         const newState: Record<number, boolean> = {};
-        // Set all modules to collapsed
         course.modules.forEach((_, idx) => {
           newState[idx] = false;
         });
-        // Expand only the next module
+
         newState[nextModuleIndex] = true;
         return newState;
       });
@@ -182,7 +179,7 @@ export function AICourseContent(props: AICourseContentProps) {
                 <span className="relative z-10 rounded-full bg-yellow-400 px-1.5 py-0.5">
                   {finishedPercentage}%
                 </span>{' '}
-                Completed
+                <span className="relative z-10">Completed</span>
                 <span
                   style={{
                     width: `${finishedPercentage}%`,
@@ -245,58 +242,63 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
 
           {viewMode === 'full' && (
-            <div className="mx-auto max-w-3xl rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-              <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-xl font-bold">Course Outline</h2>
-                {isLoading && (
-                  <Loader2 size={20} className="animate-spin text-gray-400" />
+            <div className="mx-auto max-w-3xl rounded-xl border border-gray-200 bg-white shadow-sm">
+              <div
+                className={cn(
+                  'mb-4 flex items-start justify-between border-b border-gray-100 p-6',
+                  isLoading && 'striped-loader',
                 )}
+              >
+                <div>
+                  <h2 className="mb-1 text-2xl font-bold">
+                    {course.title || 'Loading course ..'}
+                  </h2>
+                  <p className="text-sm capitalize text-gray-500">
+                    {course.title ? course.difficulty : 'Please wait ..'}
+                  </p>
+                </div>
               </div>
               {course.title ? (
-                <div className="flex flex-col">
-                  {course.modules.map((module, moduleIdx) => {
+                <div className="flex flex-col px-6 pb-6">
+                  {course.modules.map((courseModule, moduleIdx) => {
                     return (
                       <div
                         key={moduleIdx}
                         className="mb-5 pb-4 last:border-0 last:pb-0"
                       >
-                        <h2 className="mb-2 text-xl font-bold text-gray-800">
-                          {module.title}
+                        <h2 className="mb-4 text-xl font-bold text-gray-800">
+                          {courseModule.title}
                         </h2>
-                        <div className="ml-2 space-y-1">
-                          {module.lessons.map((lesson, lessonIdx) => {
-                            const key = `${slugify(module.title)}__${slugify(lesson)}`;
+                        <div className="space-y-1">
+                          {courseModule.lessons.map((lesson, lessonIdx) => {
+                            const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
                             const isCompleted =
                               aiCourseProgress?.done.includes(key);
 
                             return (
                               <div
                                 key={key}
-                                className="flex cursor-pointer items-start rounded-md border border-gray-100 p-2 transition-colors hover:border-gray-300 hover:bg-blue-50"
+                                className="flex cursor-pointer items-center gap-3 rounded-md border border-gray-100 p-2 transition-colors hover:border-gray-300 hover:bg-blue-50"
                                 onClick={() => {
                                   setActiveModuleIndex(moduleIdx);
                                   setActiveLessonIndex(lessonIdx);
-                                  // Expand only this module in the sidebar
                                   setExpandedModules((prev) => {
                                     const newState: Record<number, boolean> =
                                       {};
-                                    // Set all modules to collapsed
                                     course.modules.forEach((_, idx) => {
                                       newState[idx] = false;
                                     });
-                                    // Expand only the current module
                                     newState[moduleIdx] = true;
                                     return newState;
                                   });
-                                  // Ensure sidebar is visible on mobile
-                                  setSidebarOpen(true);
+
                                   setViewMode('module');
                                 }}
                               >
                                 {!isCompleted && (
                                   <span
                                     className={cn(
-                                      'mr-2 mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700',
+                                      'mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700',
                                     )}
                                   >
                                     {lessonIdx + 1}
@@ -304,14 +306,14 @@ export function AICourseContent(props: AICourseContentProps) {
                                 )}
 
                                 {isCompleted && (
-                                  <CheckIcon additionalClasses="size-6 mt-0.5 mr-2 flex-shrink-0 text-green-500" />
+                                  <CheckIcon additionalClasses="size-6 mt-0.5 flex-shrink-0 text-green-500" />
                                 )}
 
                                 <p className="flex-1 pt-0.5 text-gray-700">
-                                  {lesson}
+                                  {lesson.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
                                 </p>
-                                <span className="text-sm font-medium text-blue-600">
-                                  View →
+                                <span className="text-sm font-medium text-gray-500">
+                                  {isCompleted ? 'View' : 'Start'} →
                                 </span>
                               </div>
                             );
