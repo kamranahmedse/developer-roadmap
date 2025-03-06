@@ -182,6 +182,15 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
     };
   }, [abortController]);
 
+  const cantGoForward =
+    (activeModuleIndex === totalModules - 1 &&
+      activeLessonIndex === totalLessons - 1) ||
+    isGenerating ||
+    isLoading;
+
+  const cantGoBack =
+    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating;
+
   return (
     <div className="mx-auto max-w-4xl">
       <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
@@ -270,10 +279,10 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         <div className="mt-8 flex items-center justify-between">
           <button
             onClick={onGoToPrevLesson}
-            disabled={activeModuleIndex === 0 && activeLessonIndex === 0}
+            disabled={cantGoBack}
             className={cn(
-              'flex items-center rounded-md px-4 py-2',
-              activeModuleIndex === 0 && activeLessonIndex === 0
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              cantGoBack
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
             )}
@@ -284,14 +293,10 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
           <button
             onClick={onGoToNextLesson}
-            disabled={
-              activeModuleIndex === totalModules - 1 &&
-              activeLessonIndex === totalLessons - 1
-            }
+            disabled={cantGoForward}
             className={cn(
-              'flex items-center rounded-md px-4 py-2',
-              activeModuleIndex === totalModules - 1 &&
-                activeLessonIndex === totalLessons - 1
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              cantGoForward
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-800 text-white hover:bg-gray-700',
             )}
