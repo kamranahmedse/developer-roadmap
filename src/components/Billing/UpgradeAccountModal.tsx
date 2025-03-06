@@ -24,9 +24,13 @@ type CreateSubscriptionCheckoutSessionResponse = {
   checkoutUrl: string;
 };
 
-type UpgradeAccountModalProps = {};
+type UpgradeAccountModalProps = {
+  onClose: () => void;
+};
 
 export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
+  const { onClose } = props;
+
   const [selectedPlan, setSelectedPlan] =
     useState<AllowedSubscriptionInterval>('month');
   const [isUpdatingPlan, setIsUpdatingPlan] = useState(false);
@@ -115,7 +119,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
 
   return (
     <Modal
-      onClose={() => {}}
+      onClose={onClose}
       wrapperClassName="rounded-xl max-w-3xl w-full min-h-[540px]"
       bodyClassName="p-6"
     >

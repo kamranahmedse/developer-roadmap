@@ -45,18 +45,15 @@ export function GetAICourse(props: GetAICourseProps) {
   }, [error]);
 
   return (
-    <>
-      <UpgradeAccountModal />
-      <AICourseContent
-        course={{
-          title: aiCourse?.title || '',
-          modules: aiCourse?.course.modules || [],
-          difficulty: aiCourse?.difficulty || 'Easy',
-        }}
-        isLoading={isLoading}
-        courseSlug={courseSlug}
-        error={error?.message}
-      />
-    </>
+    <AICourseContent
+      course={{
+        title: aiCourse?.title || '',
+        modules: aiCourse?.course.modules || [],
+        difficulty: aiCourse?.difficulty || 'Easy',
+      }}
+      isLoading={isLoading}
+      courseSlug={courseSlug}
+      error={error?.message}
+    />
   );
 }
