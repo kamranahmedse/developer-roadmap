@@ -21,13 +21,13 @@ export const USER_SUBSCRIPTION_PLAN_PRICES = [
     name: 'Pay Monthly',
     interval: 'month',
     priceId: import.meta.env.PUBLIC_STRIPE_INDIVIDUAL_MONTHLY_PRICE_ID,
-    amount: 10,
+    amount: import.meta.env.PUBLIC_STRIPE_INDIVIDUAL_MONTHLY_PRICE_AMOUNT,
   },
   {
     name: 'Pay Yearly',
     interval: 'year',
     priceId: import.meta.env.PUBLIC_STRIPE_INDIVIDUAL_YEARLY_PRICE_ID,
-    amount: 100,
+    amount: import.meta.env.PUBLIC_STRIPE_INDIVIDUAL_YEARLY_PRICE_AMOUNT,
   },
 ] as const;
 
