@@ -114,7 +114,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
-      <div className="bg-gray-100 border-b border-gray-200">
+      <div className="border-b border-gray-200 bg-gray-100">
         <div className="flex items-center px-4 py-2">
           <a
             href="/ai-tutor"
@@ -139,7 +139,9 @@ export function AICourseContent(props: AICourseContentProps) {
               {finishedPercentage > 0 && (
                 <>
                   <span className="text-gray-400">•</span>
-                  <span className="font-medium text-green-600">{finishedPercentage}% complete</span>
+                  <span className="font-medium text-green-600">
+                    {finishedPercentage}% complete
+                  </span>
                 </>
               )}
             </div>
@@ -178,7 +180,7 @@ export function AICourseContent(props: AICourseContentProps) {
         >
           <div
             className={cn(
-              'relative mb-2 flex min-h-[40px] items-center border-b border-gray-200 px-3',
+              'relative flex min-h-[40px] items-center justify-between border-b border-gray-200 px-3',
               isLoading && 'striped-loader bg-gray-50',
             )}
           >

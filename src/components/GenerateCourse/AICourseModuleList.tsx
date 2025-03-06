@@ -74,7 +74,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
   const { done = [] } = aiCourseProgress || {};
 
   return (
-    <nav className="space-y-1 px-2">
+    <nav className="space-y-1 py-2 px-2">
       {course.modules.map((module, moduleIdx) => {
         const totalLessons = module.lessons.length;
         const completedLessons = module.lessons.filter((lesson) => {
@@ -143,18 +143,14 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                       onClick={() => {
                         setActiveModuleIndex(moduleIdx);
                         setActiveLessonIndex(lessonIdx);
-                        // Expand only this module in the sidebar
                         setExpandedModules((prev) => {
                           const newState: Record<number, boolean> = {};
-                          // Set all modules to collapsed
                           course.modules.forEach((_, idx) => {
                             newState[idx] = false;
                           });
-                          // Expand only the current module
                           newState[moduleIdx] = true;
                           return newState;
                         });
-                        // Ensure sidebar is visible on mobile
                         setSidebarOpen(true);
                         setViewMode('module');
                       }}
