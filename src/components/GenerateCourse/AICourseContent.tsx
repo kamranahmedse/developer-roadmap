@@ -114,30 +114,38 @@ export function AICourseContent(props: AICourseContentProps) {
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
-      <div className="bg-gray-100">
-        <div className="flex items-center">
+      <div className="bg-gray-100 border-b border-gray-200">
+        <div className="flex items-center px-4 py-2">
           <a
             href="/ai-tutor"
-            className="mr-2 flex flex-row items-center gap-1 rounded-full px-3 py-2 text-xs font-medium"
+            className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
             aria-label="Back to generator"
           >
-            <ChevronLeft className="size-3" strokeWidth={3} />
+            <ChevronLeft className="size-4" strokeWidth={2.5} />
             Back to Generator
           </a>
         </div>
       </div>
-      <header className="flex h-[75px] items-center justify-between border-b bg-white px-4">
+      <header className="flex h-[80px] items-center justify-between border-b border-gray-200 bg-white px-6 shadow-sm">
         <div className="flex items-center">
           <div className="flex flex-col">
-            <h1 className="mb-0.5 text-lg font-semibold">
+            <h1 className="text-xl font-bold text-gray-900">
               {course.title || 'Loading Course...'}
             </h1>
-            <div className="flex flex-row items-center gap-1 text-xs text-gray-500">
-              {totalModules} modules • {totalCourseLessons} lessons
+            <div className="mt-1 flex flex-row items-center gap-2 text-sm text-gray-600">
+              <span className="font-medium">{totalModules} modules</span>
+              <span className="text-gray-400">•</span>
+              <span className="font-medium">{totalCourseLessons} lessons</span>
+              {finishedPercentage > 0 && (
+                <>
+                  <span className="text-gray-400">•</span>
+                  <span className="font-medium text-green-600">{finishedPercentage}% complete</span>
+                </>
+              )}
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <AICourseLimit />
 
           {viewMode === 'module' && (
@@ -146,17 +154,17 @@ export function AICourseContent(props: AICourseContentProps) {
                 setExpandedModules({});
                 setViewMode('full');
               }}
-              className="flex items-center rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium hover:bg-gray-50"
+              className="flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
             >
-              <BookOpenCheck size={16} className="mr-2" />
+              <BookOpenCheck size={18} className="mr-2" />
               View Course Outline
             </button>
           )}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 md:hidden"
           >
-            {sidebarOpen ? <X size={18} /> : <Menu size={18} />}
+            {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </header>
@@ -269,7 +277,7 @@ export function AICourseContent(props: AICourseContentProps) {
                         <h2 className="mb-4 text-xl font-bold text-gray-800">
                           {courseModule.title}
                         </h2>
-                        <div className="space-y-1">
+                        <div className="divide-y divide-gray-100">
                           {courseModule.lessons.map((lesson, lessonIdx) => {
                             const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
                             const isCompleted =
@@ -278,7 +286,7 @@ export function AICourseContent(props: AICourseContentProps) {
                             return (
                               <div
                                 key={key}
-                                className="flex cursor-pointer items-center gap-3 rounded-md border border-gray-100 p-2 transition-colors hover:border-gray-300 hover:bg-blue-50"
+                                className="flex cursor-pointer items-center gap-2 rounded-md px-2 py-2.5 transition-colors hover:bg-gray-100"
                                 onClick={() => {
                                   setActiveModuleIndex(moduleIdx);
                                   setActiveLessonIndex(lessonIdx);
@@ -298,7 +306,7 @@ export function AICourseContent(props: AICourseContentProps) {
                                 {!isCompleted && (
                                   <span
                                     className={cn(
-                                      'mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 text-xs font-semibold text-blue-700',
+                                      'flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800',
                                     )}
                                   >
                                     {lessonIdx + 1}
@@ -306,13 +314,13 @@ export function AICourseContent(props: AICourseContentProps) {
                                 )}
 
                                 {isCompleted && (
-                                  <CheckIcon additionalClasses="size-6 mt-0.5 flex-shrink-0 text-green-500" />
+                                  <CheckIcon additionalClasses="size-6 flex-shrink-0 text-green-500" />
                                 )}
 
-                                <p className="flex-1 pt-0.5 text-gray-700">
+                                <p className="flex-1 truncate text-base text-gray-800">
                                   {lesson.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
                                 </p>
-                                <span className="text-sm font-medium text-gray-500">
+                                <span className="text-sm font-medium text-gray-700">
                                   {isCompleted ? 'View' : 'Start'} →
                                 </span>
                               </div>
