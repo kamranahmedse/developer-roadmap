@@ -24,7 +24,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
 
   const { data: aiCourseProgress } = useQuery(
@@ -115,7 +115,7 @@ export function AICourseContent(props: AICourseContentProps) {
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       <div className="border-b border-gray-200 bg-gray-100">
-        <div className="flex items-center px-4 py-2">
+        <div className="flex items-center justify-between px-4 py-2">
           <a
             href="/ai-tutor"
             className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
@@ -124,6 +124,16 @@ export function AICourseContent(props: AICourseContentProps) {
             <ChevronLeft className="size-4" strokeWidth={2.5} />
             Back to Generator
           </a>
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+          >
+            {sidebarOpen ? (
+              <X size={17} strokeWidth={3} />
+            ) : (
+              <Menu size={17} strokeWidth={3} />
+            )}
+          </button>
         </div>
       </div>
       <header className="flex h-[80px] items-center justify-between border-b border-gray-200 bg-white px-6 shadow-sm">
@@ -162,19 +172,13 @@ export function AICourseContent(props: AICourseContentProps) {
               View Course Outline
             </button>
           )}
-          <button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 md:hidden"
-          >
-            {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
         </div>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
         <aside
           className={cn(
-            'fixed inset-y-0 left-0 z-20 w-80 transform overflow-y-auto border-r border-gray-200 bg-white transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0',
+            'fixed inset-y-0 left-0 z-20 w-80 transform overflow-y-auto border-r border-gray-200 bg-white transition-transform duration-200 ease-in-out lg:relative lg:mt-0 lg:translate-x-0',
             sidebarOpen ? 'translate-x-0' : '-translate-x-full',
           )}
         >
@@ -204,7 +208,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
             <button
               onClick={() => setSidebarOpen(false)}
-              className="rounded-md p-1 hover:bg-gray-100 md:hidden"
+              className="rounded-md p-1 hover:bg-gray-100 lg:hidden"
             >
               <X size={18} />
             </button>
@@ -233,7 +237,7 @@ export function AICourseContent(props: AICourseContentProps) {
         <main
           className={cn(
             'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out',
-            sidebarOpen ? 'md:ml-0' : '',
+            sidebarOpen ? 'lg:ml-0' : '',
           )}
         >
           {viewMode === 'module' && (
@@ -302,6 +306,7 @@ export function AICourseContent(props: AICourseContentProps) {
                                     return newState;
                                   });
 
+                                  setSidebarOpen(false);
                                   setViewMode('module');
                                 }}
                               >
@@ -345,7 +350,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-10 bg-gray-900 bg-opacity-50 md:hidden"
+          className="fixed inset-0 z-10 bg-gray-900 bg-opacity-50 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         ></div>
       )}

@@ -156,7 +156,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                           newState[moduleIdx] = true;
                           return newState;
                         });
-                        setSidebarOpen(true);
+                        setSidebarOpen(false);
                         setViewMode('module');
                       }}
                       className={cn(
