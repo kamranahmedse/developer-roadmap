@@ -160,7 +160,7 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                         setViewMode('module');
                       }}
                       className={cn(
-                        'flex w-full cursor-pointer items-start py-3 pl-3.5 pr-2 text-left text-sm leading-relaxed',
+                        'flex w-full cursor-pointer items-center py-3 pl-3.5 pr-2 text-left text-sm leading-relaxed',
                         activeModuleIndex === moduleIdx &&
                           activeLessonIndex === lessonIdx
                           ? 'bg-gray-200 text-black'
@@ -179,8 +179,17 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                           )}
                         />
                       ) : (
-                        <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
-                          {lessonIdx + 1}.
+                        <span
+                          className={cn(
+                            'mr-2 flex size-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                            {
+                              'bg-black':
+                                activeModuleIndex === moduleIdx &&
+                                activeLessonIndex === lessonIdx,
+                            },
+                          )}
+                        >
+                          {lessonIdx + 1}
                         </span>
                       )}
                       <span className="break-words">
