@@ -29,11 +29,11 @@ export function AICourseFollowUp(props: AICourseFollowUpProps) {
   return (
     <div className="relative">
       <button
-        className="mt-4 flex w-full items-center gap-2 rounded-lg border border-yellow-300 bg-yellow-100 p-2"
+        className="mt-4 flex w-full items-center gap-2 rounded-lg border border-yellow-300 bg-yellow-100 p-4 hover:bg-yellow-200"
         onClick={() => setIsOpen(true)}
       >
         <BotIcon className="h-4 w-4" />
-        <span>Still confused? Ask AI for follow up questions.</span>
+        <span>Still confused? Ask AI some follow up questions.</span>
 
         <ArrowRightIcon className="ml-auto h-4 w-4" />
       </button>

@@ -12,9 +12,9 @@ import { CircularProgress } from './CircularProgress';
 type AICourseModuleListProps = {
   course: AiCourse;
   courseSlug?: string;
-  activeModuleIndex: number;
+  activeModuleIndex: number | undefined;
   setActiveModuleIndex: (index: number) => void;
-  activeLessonIndex: number;
+  activeLessonIndex: number | undefined;
   setActiveLessonIndex: (index: number) => void;
 
   setSidebarOpen: (open: boolean) => void;

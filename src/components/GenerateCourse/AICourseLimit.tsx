@@ -45,7 +45,7 @@ export function AICourseLimit() {
   const followUpPercentage = Math.round((followUpUsed / followUpLimit) * 100);
 
   return (
-    <div className="relative" ref={containerRef}>
+    <div className="relative z-10" ref={containerRef}>
       <button
         className="flex cursor-pointer items-center rounded-lg border border-gray-200 px-2 py-1.5 text-sm hover:bg-gray-50"
         onClick={() => setIsOpen(!isOpen)}

@@ -167,48 +167,52 @@ export function AICourseContent(props: AICourseContentProps) {
       <div className="flex flex-1 overflow-hidden">
         <aside
           className={cn(
-            'fixed inset-y-0 left-0 z-20 mt-16 w-80 transform overflow-y-auto border-r border-gray-200 bg-white pt-4 transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0',
+            'fixed inset-y-0 left-0 z-20 w-80 transform overflow-y-auto border-r border-gray-200 bg-white transition-transform duration-200 ease-in-out md:relative md:mt-0 md:translate-x-0',
             sidebarOpen ? 'translate-x-0' : '-translate-x-full',
           )}
         >
-          <div className="mb-4 px-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                {!isLoading && (
-                  <div className="text-xs text-black">
-                    <span className="rounded-full bg-yellow-400 px-1.5 py-0.5">
-                      {finishedPercentage}%
-                    </span>{' '}
-                    Completed
-                  </div>
-                )}
-
-                {isLoading && (
-                  <div className="flex flex-row items-center gap-1 text-xs text-gray-500">
-                    <Loader2
-                      size={16}
-                      className="mr-2 animate-spin text-gray-400"
-                    />
-
-                    Please wait ..
-                  </div>
-                )}
-                <button
-                  onClick={() => setSidebarOpen(false)}
-                  className="rounded-md p-1 hover:bg-gray-100 md:hidden"
-                >
-                  <X size={18} />
-                </button>
+          <div
+            className={cn(
+              'relative mb-2 flex min-h-[40px] items-center border-b border-gray-200 px-3',
+              isLoading && 'striped-loader bg-gray-50',
+            )}
+          >
+            {!isLoading && (
+              <div className="text-xs text-black">
+                <span className="relative z-10 rounded-full bg-yellow-400 px-1.5 py-0.5">
+                  {finishedPercentage}%
+                </span>{' '}
+                Completed
+                <span
+                  style={{
+                    width: `${finishedPercentage}%`,
+                  }}
+                  className={cn(
+                    'absolute bottom-0 left-0 top-0',
+                    'bg-gray-200/50',
+                  )}
+                ></span>
               </div>
-            </div>
+            )}
+
+            <button
+              onClick={() => setSidebarOpen(false)}
+              className="rounded-md p-1 hover:bg-gray-100 md:hidden"
+            >
+              <X size={18} />
+            </button>
           </div>
 
           <AICourseModuleList
             course={course}
             courseSlug={courseSlug}
-            activeModuleIndex={activeModuleIndex}
+            activeModuleIndex={
+              viewMode === 'module' ? activeModuleIndex : undefined
+            }
             setActiveModuleIndex={setActiveModuleIndex}
-            activeLessonIndex={activeLessonIndex}
+            activeLessonIndex={
+              viewMode === 'module' ? activeLessonIndex : undefined
+            }
             setActiveLessonIndex={setActiveLessonIndex}
             setSidebarOpen={setSidebarOpen}
             viewMode={viewMode}
