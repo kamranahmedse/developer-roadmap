@@ -74,11 +74,11 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
   const { done = [] } = aiCourseProgress || {};
 
   return (
-    <nav className="space-y-1 py-2 px-2">
-      {course.modules.map((module, moduleIdx) => {
-        const totalLessons = module.lessons.length;
-        const completedLessons = module.lessons.filter((lesson) => {
-          const key = `${slugify(module.title)}__${slugify(lesson)}`;
+    <nav className="bg-gray-100">
+      {course.modules.map((courseModule, moduleIdx) => {
+        const totalLessons = courseModule.lessons.length;
+        const completedLessons = courseModule.lessons.filter((lesson) => {
+          const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
           return done.includes(key);
         }).length;
 
@@ -91,50 +91,55 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
             <button
               onClick={() => toggleModule(moduleIdx)}
               className={cn(
-                'flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-medium',
+                'relative z-10 flex w-full cursor-pointer flex-row items-center gap-2 border-b border-b-gray-200 bg-white px-2 py-3 text-base text-gray-600 hover:bg-gray-100',
                 activeModuleIndex === moduleIdx
-                  ? 'bg-gray-100 text-gray-900'
-                  : 'text-gray-700 hover:bg-gray-50',
+                  ? 'text-gray-900'
+                  : 'text-gray-700',
+                moduleIdx === 0 && 'pt-4',
               )}
             >
-              <div className="flex min-w-0 items-center pr-2">
-                <CircularProgress
-                  percentage={percentage}
-                  isVisible={!isModuleCompleted}
-                  isActive={isActive}
-                  isLoading={isLoading}
-                >
-                  <span
-                    className={cn(
-                      'flex size-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
-                      {
-                        'bg-black': isActive,
-                        'bg-green-600': isModuleCompleted,
-                      },
-                    )}
+              <div className="flex min-w-0 flex-1 items-center gap-2">
+                <div className="flex-shrink-0">
+                  <CircularProgress
+                    percentage={percentage}
+                    isVisible={!isModuleCompleted}
+                    isActive={isActive}
+                    isLoading={isLoading}
                   >
-                    {!isModuleCompleted && moduleIdx + 1}
-                    {isModuleCompleted && (
-                      <Check className="h-3 w-3 stroke-[3] text-white" />
-                    )}
-                  </span>
-                </CircularProgress>
-                <span className="ml-2 break-words">
-                  {module.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
+                    <span
+                      className={cn(
+                        'flex size-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                        {
+                          'bg-black': isActive,
+                          'bg-green-600': isModuleCompleted,
+                        },
+                      )}
+                    >
+                      {!isModuleCompleted && moduleIdx + 1}
+                      {isModuleCompleted && (
+                        <Check className="size-3 stroke-[3] text-white" />
+                      )}
+                    </span>
+                  </CircularProgress>
+                </div>
+                <span className="flex flex-1 items-center break-words text-left text-sm leading-relaxed">
+                  {courseModule.title?.replace(/^Module\s*?\d+[\.:]\s*/, '')}
                 </span>
               </div>
-              {expandedModules[moduleIdx] ? (
-                <ChevronDownIcon size={16} className="flex-shrink-0" />
-              ) : (
-                <ChevronRightIcon size={16} className="flex-shrink-0" />
-              )}
+              <div className="ml-auto self-center">
+                {expandedModules[moduleIdx] ? (
+                  <ChevronDownIcon size={16} className="flex-shrink-0" />
+                ) : (
+                  <ChevronRightIcon size={16} className="flex-shrink-0" />
+                )}
+              </div>
             </button>
 
             {/* Lessons */}
             {expandedModules[moduleIdx] && (
-              <div className="ml-8 mt-1 space-y-1">
-                {module.lessons.map((lesson, lessonIdx) => {
-                  const key = `${slugify(module.title)}__${slugify(lesson)}`;
+              <div className="flex flex-col border-b border-b-gray-200 bg-gray-100">
+                {courseModule.lessons.map((lesson, lessonIdx) => {
+                  const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
                   const isCompleted = done.includes(key);
 
                   return (
@@ -155,15 +160,24 @@ export function AICourseModuleList(props: AICourseModuleListProps) {
                         setViewMode('module');
                       }}
                       className={cn(
-                        'flex w-full items-start rounded-md px-3 py-2 text-left text-sm',
+                        'flex w-full cursor-pointer items-start py-3 pl-3.5 pr-2 text-left text-sm leading-relaxed',
                         activeModuleIndex === moduleIdx &&
                           activeLessonIndex === lessonIdx
-                          ? 'bg-gray-800 text-white'
-                          : 'text-gray-600 hover:bg-gray-50',
+                          ? 'bg-gray-200 text-black'
+                          : 'text-gray-600 hover:bg-gray-200/70',
                       )}
                     >
                       {isCompleted ? (
-                        <CheckIcon additionalClasses="size-3.5 relative top-[2px] mr-2 flex-shrink-0 text-green-500" />
+                        <CheckIcon
+                          additionalClasses={cn(
+                            'size-[18px] relative bg-white rounded-full top-[2px] mr-2.5 flex-shrink-0 text-green-600',
+                            {
+                              'text-black':
+                                activeModuleIndex === moduleIdx &&
+                                activeLessonIndex === lessonIdx,
+                            },
+                          )}
+                        />
                       ) : (
                         <span className="relative top-[2px] mr-2 flex-shrink-0 text-xs">
                           {lessonIdx + 1}.
