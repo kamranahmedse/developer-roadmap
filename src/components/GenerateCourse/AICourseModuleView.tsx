@@ -17,7 +17,7 @@ import {
 } from '../../lib/markdown';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
-import { httpPost } from '../../lib/query-http';
+import { httpPatch, httpPost } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
 import {
   getAiCourseLimitOptions,
@@ -151,10 +151,10 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
     });
   };
 
-  const { mutate: markAsDone, isPending: isMarkingAsDone } = useMutation(
+  const { mutate: toggleDone, isPending: isTogglingDone } = useMutation(
     {
       mutationFn: () => {
-        return httpPost(`/v1-mark-as-done-ai-lesson/${courseSlug}`, {
+        return httpPatch(`/v1-toggle-done-ai-lesson/${courseSlug}`, {
           lessonId,
         });
       },
@@ -203,9 +203,11 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
                 disabled={isLoading}
                 className={cn(
                   'absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
-                  isLessonDone ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600',
+                  isLessonDone
+                    ? 'bg-red-500 hover:bg-red-600'
+                    : 'bg-green-500 hover:bg-green-600',
                 )}
-                onClick={() => markAsDone()}
+                onClick={() => toggleDone()}
               >
                 {isLessonDone ? (
                   <>

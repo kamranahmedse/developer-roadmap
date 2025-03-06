@@ -288,7 +288,7 @@ export function AICourseContent(props: AICourseContentProps) {
                             return (
                               <div
                                 key={key}
-                                className="flex cursor-pointer items-center gap-2 rounded-md px-2 py-2.5 transition-colors hover:bg-gray-100"
+                                className="flex cursor-pointer items-center gap-2 px-2 py-2.5 transition-colors hover:bg-gray-100"
                                 onClick={() => {
                                   setActiveModuleIndex(moduleIdx);
                                   setActiveLessonIndex(lessonIdx);
