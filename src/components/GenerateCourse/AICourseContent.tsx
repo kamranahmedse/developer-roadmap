@@ -147,7 +147,7 @@ export function AICourseContent(props: AICourseContentProps) {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex gap-3">
           <AICourseLimit />
 
           {viewMode === 'module' && (

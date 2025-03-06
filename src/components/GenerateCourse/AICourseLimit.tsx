@@ -47,7 +47,7 @@ export function AICourseLimit() {
   return (
     <div className="relative z-10" ref={containerRef}>
       <button
-        className="flex cursor-pointer items-center rounded-lg border border-gray-200 px-2 py-1.5 text-sm hover:bg-gray-50"
+        className="flex h-full cursor-pointer items-center rounded-lg border border-gray-200 px-2 py-1.5 text-sm hover:bg-gray-50"
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="mr-3 flex items-center gap-1.5">
