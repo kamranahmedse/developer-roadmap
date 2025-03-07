@@ -12,6 +12,7 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { billingDetailsOptions } from '../../queries/billing';
 
 export function AICourseLimit() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -23,11 +24,14 @@ export function AICourseLimit() {
     queryClient,
   );
 
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
   useOutsideClick(containerRef, () => {
     setIsOpen(false);
   });
 
-  if (isLoading || !limits) {
+  if (isLoading || !limits || isBillingDetailsLoading || !userBillingDetails) {
     return (
       <div className="h-[34px] w-[243px] animate-pulse rounded-lg border border-gray-200 bg-gray-200"></div>
     );
@@ -124,15 +128,19 @@ export function AICourseLimit() {
         )}
       </div>
 
-      <button
-        className="ml-2 rounded-md border border-gray-200 px-2 py-1 text-sm hover:bg-gray-50"
-        onClick={() => setShowUpgradeModal(true)}
-      >
-        Upgrade
-      </button>
+      {userBillingDetails.status === 'none' && (
+        <>
+          <button
+            className="ml-2 rounded-md border border-gray-200 px-2 py-1 text-sm hover:bg-gray-50"
+            onClick={() => setShowUpgradeModal(true)}
+          >
+            Upgrade
+          </button>
 
-      {showUpgradeModal && (
-        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+          {showUpgradeModal && (
+            <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+          )}
+        </>
       )}
     </>
   );
