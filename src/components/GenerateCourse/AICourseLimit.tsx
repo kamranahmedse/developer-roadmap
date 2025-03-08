@@ -32,7 +32,7 @@ export function AICourseLimit() {
     <>
       <button className="mr-1 flex items-center gap-1 text-sm font-medium lg:hidden underline underline-offset-2">
         <Info className="size-4" />
-        {totalPercentage}% of limit used
+        {totalPercentage}% limit used
       </button>
 
       <button className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex">

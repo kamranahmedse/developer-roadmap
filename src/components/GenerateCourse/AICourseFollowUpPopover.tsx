@@ -1,14 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import {
-  BookOpen,
-  Bot,
-  Code,
-  GitCompare,
-  HelpCircle,
-  LockIcon,
-  MessageCircle,
-  Send,
-} from 'lucide-react';
+import { BookOpen, Bot, Code, HelpCircle, LockIcon, Send } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import { flushSync } from 'react-dom';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -41,6 +32,7 @@ type AICourseFollowUpPopoverProps = {
   setCourseAIChatHistory: (value: AIChatHistoryType[]) => void;
 
   onOutsideClick?: () => void;
+  onUpgradeClick: () => void;
 };
 
 export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
@@ -49,6 +41,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
     moduleTitle,
     lessonTitle,
     onOutsideClick,
+    onUpgradeClick,
 
     courseAIChatHistory,
     setCourseAIChatHistory,
@@ -205,7 +198,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
                 return (
                   <>
                     <AIChatCard
-                      key={index}
+                      key={`chat-${index}`}
                       role={chat.role}
                       content={chat.content}
                       html={chat.html}
@@ -244,9 +237,17 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
         onSubmit={handleChatSubmit}
       >
         {isLimitExceeded && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black text-white">
-            <LockIcon className="size-4" strokeWidth={2.5} />
-            <p>You have reached the AI usage limit for today.</p>
+          <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
+            <LockIcon className="size-4 cursor-not-allowed" strokeWidth={2.5} />
+            <p className="cursor-not-allowed">Limit reached for today</p>
+            <button
+              onClick={() => {
+                onUpgradeClick();
+              }}
+              className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+            >
+              Upgrade for more
+            </button>
           </div>
         )}
         <TextareaAutosize
