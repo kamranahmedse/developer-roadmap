@@ -83,3 +83,19 @@ export function getAiCourseLimitOptions() {
     enabled: !!isLoggedIn(),
   });
 }
+
+type ListUserAiCoursesParams = {};
+
+type ListUserAiCoursesResponse = (AICourseDocument & {
+  progress: AICourseProgressDocument;
+})[];
+
+export function listUserAiCoursesOptions() {
+  return {
+    queryKey: ['user-ai-courses'],
+    queryFn: () => {
+      return httpGet<ListUserAiCoursesResponse>(`/v1-list-user-ai-courses`);
+    },
+    enabled: !!isLoggedIn(),
+  };
+}

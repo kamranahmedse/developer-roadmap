@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { useQuery } from '@tanstack/react-query';
+import { listUserAiCoursesOptions } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
 
 export const difficultyLevels = [
   'beginner',
@@ -16,6 +19,11 @@ type AICourseProps = {};
 export function AICourse(props: AICourseProps) {
   const [keyword, setKeyword] = useState('');
   const [difficulty, setDifficulty] = useState<DifficultyLevel>('intermediate');
+
+  const { data: userAiCourses, isLoading: isUserAiCoursesLoading } = useQuery(
+    listUserAiCoursesOptions(),
+    queryClient,
+  );
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && keyword.trim()) {
@@ -117,6 +125,39 @@ export function AICourse(props: AICourseProps) {
               Generate Course
             </button>
           </form>
+        </div>
+
+        <div className="mt-8 rounded-lg border border-gray-200 bg-white p-6">
+          <h2 className="mb-4 text-lg font-medium">Your Courses</h2>
+
+          {isUserAiCoursesLoading && (
+            <div className="h-[92px] animate-pulse rounded-lg border border-gray-200 bg-gray-200"></div>
+          )}
+
+          {!isUserAiCoursesLoading && userAiCourses?.length === 0 && (
+            <p className="text-gray-600">
+              You haven't generated any courses yet.
+            </p>
+          )}
+
+          {!isUserAiCoursesLoading &&
+            userAiCourses &&
+            userAiCourses.length > 0 && (
+              <div className="grid grid-cols-2 gap-2">
+                {userAiCourses.map((course) => (
+                  <a
+                    key={course._id}
+                    href={`/ai-tutor/${course.slug}`}
+                    className="group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400"
+                  >
+                    <span className="flex-grow truncate">{course.title}</span>
+                    <span className="rounded-md bg-gray-100 px-2 py-1 text-xs capitalize text-gray-400">
+                      {course.difficulty}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            )}
         </div>
       </div>
     </section>
