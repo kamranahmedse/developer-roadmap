@@ -193,7 +193,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+      <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm max-lg:pt-3 max-lg:px-4 max-lg:pb-4">
         {(isGenerating || isLoading) && (
           <div className="absolute right-3 top-3 flex items-center justify-center">
             <Loader2Icon
@@ -214,7 +214,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
               <button
                 disabled={isLoading || isTogglingDone}
                 className={cn(
-                  'absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50',
+                  'absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
                   isLessonDone
                     ? 'bg-red-500 hover:bg-red-600'
                     : 'bg-green-500 hover:bg-green-600',
@@ -250,13 +250,13 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           )}
         </div>
 
-        <h1 className="mb-6 text-3xl font-semibold">
+        <h1 className="mb-6 max-lg:mb-3 max-lg:text-xl text-balance text-3xl font-semibold">
           {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
         </h1>
 
         {!error && isLoggedIn() && (
           <div
-            className="course-content prose prose-lg mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
+            className="course-content max-lg:prose-pre:text-sm max-lg:prose-pre:px-3 max-lg:prose-h3:text-base max-lg:prose-h2:text-lg max-lg:prose-h2:mt-3 prose prose-lg max-lg:mt-4 max-lg:text-base mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
             dangerouslySetInnerHTML={{ __html: lessonHtml }}
           />
         )}
