@@ -215,7 +215,10 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
                       <div className="mb-1 mt-0.5">
                         <div className="grid grid-cols-2 gap-2">
                           {capabilities.map((capability, index) => (
-                            <CapabilityCard key={index} {...capability} />
+                            <CapabilityCard
+                              key={`capability-${index}`}
+                              {...capability}
+                            />
                           ))}
                         </div>
                       </div>

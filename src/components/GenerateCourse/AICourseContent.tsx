@@ -122,27 +122,33 @@ export function AICourseContent(props: AICourseContentProps) {
             aria-label="Back to generator"
           >
             <ChevronLeft className="size-4" strokeWidth={2.5} />
-            Back to Generator
+            Back<span className="hidden lg:inline"> to Generator</span>
           </a>
-          <button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
-          >
-            {sidebarOpen ? (
-              <X size={17} strokeWidth={3} />
-            ) : (
-              <Menu size={17} strokeWidth={3} />
-            )}
-          </button>
+          <div className="flex items-center gap-2">
+            <div className="flex flex-row lg:hidden">
+              <AICourseLimit />
+            </div>
+
+            <button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+            >
+              {sidebarOpen ? (
+                <X size={17} strokeWidth={3} />
+              ) : (
+                <Menu size={17} strokeWidth={3} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
-      <header className="flex h-[80px] items-center justify-between border-b border-gray-200 bg-white px-6">
+      <header className="flex items-center justify-between border-b border-gray-200 bg-white px-6 max-lg:py-4 lg:h-[80px]">
         <div className="flex items-center">
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-gray-900">
+            <h1 className="text-balance text-xl font-bold !leading-tight text-gray-900 max-lg:mb-0.5 max-lg:text-lg">
               {course.title || 'Loading Course...'}
             </h1>
-            <div className="mt-1 flex flex-row items-center gap-2 text-sm text-gray-600">
+            <div className="mt-1 flex flex-row items-center gap-2 text-sm text-gray-600 max-lg:text-xs">
               <span className="font-medium">{totalModules} modules</span>
               <span className="text-gray-400">•</span>
               <span className="font-medium">{totalCourseLessons} lessons</span>
@@ -157,8 +163,10 @@ export function AICourseContent(props: AICourseContentProps) {
             </div>
           </div>
         </div>
-        <div className="flex gap-3">
-          <AICourseLimit />
+        <div className="flex gap-2">
+          <div className="hidden gap-2 lg:flex">
+            <AICourseLimit />
+          </div>
 
           {viewMode === 'module' && (
             <button
@@ -236,7 +244,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
         <main
           className={cn(
-            'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out',
+            'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out max-lg:p-3',
             sidebarOpen ? 'lg:ml-0' : '',
           )}
         >
