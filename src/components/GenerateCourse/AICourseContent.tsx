@@ -264,15 +264,15 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
 
           {viewMode === 'full' && (
-            <div className="mx-auto max-w-3xl rounded-xl border border-gray-200 bg-white shadow-sm">
+            <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
               <div
                 className={cn(
-                  'mb-8 flex items-start justify-between border-b border-gray-100 p-6',
+                  'mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
                   isLoading && 'striped-loader',
                 )}
               >
                 <div>
-                  <h2 className="mb-1 text-2xl font-bold">
+                  <h2 className="mb-1 text-balance text-2xl font-bold max-lg:text-lg max-lg:leading-tight">
                     {course.title || 'Loading course ..'}
                   </h2>
                   <p className="text-sm capitalize text-gray-500">
@@ -281,14 +281,14 @@ export function AICourseContent(props: AICourseContentProps) {
                 </div>
               </div>
               {course.title ? (
-                <div className="flex flex-col px-6 pb-6">
+                <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">
                   {course.modules.map((courseModule, moduleIdx) => {
                     return (
                       <div
                         key={moduleIdx}
-                        className="mb-5 pb-4 last:border-0 last:pb-0"
+                        className="max-lg:mb-2 mb-5 pb-4 last:border-0 last:pb-0"
                       >
-                        <h2 className="mb-4 text-xl font-bold text-gray-800">
+                        <h2 className="mb-4 text-xl font-bold text-gray-800 max-lg:mb-2 max-lg:text-lg max-lg:leading-tight">
                           {courseModule.title}
                         </h2>
                         <div className="divide-y divide-gray-100">
@@ -300,7 +300,7 @@ export function AICourseContent(props: AICourseContentProps) {
                             return (
                               <div
                                 key={key}
-                                className="flex cursor-pointer items-center gap-2 px-2 py-2.5 transition-colors hover:bg-gray-100"
+                                className="flex cursor-pointer items-center gap-2 px-2 py-2.5 transition-colors hover:bg-gray-100 max-lg:px-0 max-lg:py-1.5"
                                 onClick={() => {
                                   setActiveModuleIndex(moduleIdx);
                                   setActiveLessonIndex(lessonIdx);
@@ -321,7 +321,7 @@ export function AICourseContent(props: AICourseContentProps) {
                                 {!isCompleted && (
                                   <span
                                     className={cn(
-                                      'flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800',
+                                      'flex max-lg:size-5 max-lg:text-xs size-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800',
                                     )}
                                   >
                                     {lessonIdx + 1}
@@ -332,10 +332,10 @@ export function AICourseContent(props: AICourseContentProps) {
                                   <CheckIcon additionalClasses="size-6 flex-shrink-0 text-green-500" />
                                 )}
 
-                                <p className="flex-1 truncate text-base text-gray-800">
+                                <p className="flex-1 truncate text-base text-gray-800 max-lg:text-sm">
                                   {lesson.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
                                 </p>
-                                <span className="text-sm font-medium text-gray-700">
+                                <span className="text-sm font-medium text-gray-700 max-lg:hidden">
                                   {isCompleted ? 'View' : 'Start'} →
                                 </span>
                               </div>
