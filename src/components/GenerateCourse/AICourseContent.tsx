@@ -152,6 +152,20 @@ export function AICourseContent(props: AICourseContentProps) {
               <span className="font-medium">{totalModules} modules</span>
               <span className="text-gray-400">•</span>
               <span className="font-medium">{totalCourseLessons} lessons</span>
+              {viewMode === 'module' && (
+                <span className="flex flex-row items-center gap-1 lg:hidden">
+                  <span className="text-gray-400">•</span>
+                  <button
+                    className="underline underline-offset-2"
+                    onClick={() => {
+                      setExpandedModules({});
+                      setViewMode('full');
+                    }}
+                  >
+                    View outline
+                  </button>
+                </span>
+              )}
               {finishedPercentage > 0 && (
                 <>
                   <span className="text-gray-400">•</span>
@@ -174,7 +188,7 @@ export function AICourseContent(props: AICourseContentProps) {
                 setExpandedModules({});
                 setViewMode('full');
               }}
-              className="max-lg:hidden flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+              className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
             >
               <BookOpenCheck size={18} className="mr-2" />
               View Course Outline
@@ -286,7 +300,7 @@ export function AICourseContent(props: AICourseContentProps) {
                     return (
                       <div
                         key={moduleIdx}
-                        className="max-lg:mb-2 mb-5 pb-4 last:border-0 last:pb-0"
+                        className="mb-5 pb-4 last:border-0 last:pb-0 max-lg:mb-2"
                       >
                         <h2 className="mb-4 text-xl font-bold text-gray-800 max-lg:mb-2 max-lg:text-lg max-lg:leading-tight">
                           {courseModule.title}
@@ -321,7 +335,7 @@ export function AICourseContent(props: AICourseContentProps) {
                                 {!isCompleted && (
                                   <span
                                     className={cn(
-                                      'flex max-lg:size-5 max-lg:text-xs size-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800',
+                                      'flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800 max-lg:size-5 max-lg:text-xs',
                                     )}
                                   >
                                     {lessonIdx + 1}
