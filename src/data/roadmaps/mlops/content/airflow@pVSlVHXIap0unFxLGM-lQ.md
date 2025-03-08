@@ -4,5 +4,6 @@ Airflow is a platform to programmatically author, schedule and monitor workflows
 
 Visit the following resources to learn more:
 
-- [@article@Airflow website](https://airflow.apache.org/)
+- [@official@Airflow](https://airflow.apache.org/)
+- [@official@Airflow Documentation](https://airflow.apache.org/docs)
 - [@feed@Explore top posts about Apache Airflow](https://app.daily.dev/tags/apache-airflow?ref=roadmapsh)
