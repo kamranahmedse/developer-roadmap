@@ -36,7 +36,7 @@ int main() {
     int number;
     std::cout << "Enter an integer: ";
     std::cin >> number;
-    std::cout << "You entered: " << number << std::endl;
+    std::cout << "You entered: " << number << '\n';
     return 0;
 }
 ```
@@ -124,7 +124,7 @@ int add(int a, int b) {
 
 int main() {
     int result = add(3, 4);
-    std::cout << "3 + 4 = " << result << std::endl;
+    std::cout << "3 + 4 = " << result << '\n';
     return 0;
 }
 ```

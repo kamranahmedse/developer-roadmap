@@ -27,8 +27,8 @@ namespace animals {
 }
 
 int main() {
-    std::cout << "Dog's name: " << animals::dog << std::endl;
-    std::cout << "Cat's name: " << animals::cat << std::endl;
+    std::cout << "Dog's name: " << animals::dog << '\n';
+    std::cout << "Cat's name: " << animals::cat << '\n';
 
     return 0;
 }
@@ -50,8 +50,8 @@ namespace outer {
 }
 
 int main() {
-    std::cout << "Outer x: " << outer::x << std::endl;
-    std::cout << "Inner y: " << outer::inner::y << std::endl;
+    std::cout << "Outer x: " << outer::x << '\n';
+    std::cout << "Inner y: " << outer::inner::y << '\n';
 
     return 0;
 }
@@ -74,7 +74,7 @@ namespace animals {
 int main() {
     using animals::dog;
     
-    std::cout << "Dog's name: " << dog << std::endl;
+    std::cout << "Dog's name: " << dog << '\n';
 
     return 0;
 }
@@ -93,8 +93,8 @@ namespace animals {
 int main() {
     using namespace animals;
     
-    std::cout << "Dog's name: " << dog << std::endl;
-    std::cout << "Cat's name: " << cat << std::endl;
+    std::cout << "Dog's name: " << dog << '\n';
+    std::cout << "Cat's name: " << cat << '\n';
 
     return 0;
 }

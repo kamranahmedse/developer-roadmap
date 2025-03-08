@@ -57,7 +57,7 @@ std::future<int> async_value(int value) {
 
 int main() {
     auto result = async_value(42);
-    std::cout << "Result: " << result.get() << std::endl;
+    std::cout << "Result: " << result.get() << '\n';
 }
 ```
 

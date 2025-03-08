@@ -51,17 +51,17 @@ int main()
       std::string responseBody;
       StreamCopier::copyToString(responseStream, responseBody);
 
-      std::cout << "Response: " << responseBody << std::endl;
+      std::cout << "Response: " << responseBody << '\n';
     }
     else
     {
       // Error
-      std::cout << "Error: " << response.getStatus() << " " << response.getReason() << std::endl;
+      std::cout << "Error: " << response.getStatus() << " " << response.getReason() << '\n';
     }
   }
   catch(const Exception& e)
   {
-    std::cerr << "Error: " << e.displayText() << std::endl;
+    std::cerr << "Error: " << e.displayText() << '\n';
     return -1;
   }
 

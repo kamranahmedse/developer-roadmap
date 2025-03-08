@@ -15,7 +15,7 @@ Here's an example in C++ demonstrating dynamic polymorphism.
 class Shape {
 public:
     virtual void draw() {
-        std::cout << "Drawing a shape" << std::endl; 
+        std::cout << "Drawing a shape\n"; 
     }
 };
 
@@ -23,7 +23,7 @@ public:
 class Circle : public Shape {
 public:
     void draw() override {
-        std::cout << "Drawing a circle" << std::endl; 
+        std::cout << "Drawing a circle\n"; 
     }
 };
 
@@ -31,7 +31,7 @@ public:
 class Rectangle : public Shape {
 public:
     void draw() override {
-        std::cout << "Drawing a rectangle" << std::endl;
+        std::cout << "Drawing a rectangle\n";
     }
 };
 
