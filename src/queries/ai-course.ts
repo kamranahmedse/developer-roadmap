@@ -72,10 +72,6 @@ type GetAICourseLimitParams = {};
 type GetAICourseLimitResponse = {
   used: number;
   limit: number;
-  lessonUsed: number;
-  lessonLimit: number;
-  followUpUsed: number;
-  followUpLimit: number;
 };
 
 export function getAiCourseLimitOptions() {
