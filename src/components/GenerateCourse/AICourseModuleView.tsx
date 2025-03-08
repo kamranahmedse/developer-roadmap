@@ -193,7 +193,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm max-lg:pt-3 max-lg:px-4 max-lg:pb-4">
+      <div className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm max-lg:px-4 max-lg:pb-4 max-lg:pt-3">
         {(isGenerating || isLoading) && (
           <div className="absolute right-3 top-3 flex items-center justify-center">
             <Loader2Icon
@@ -250,13 +250,13 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           )}
         </div>
 
-        <h1 className="mb-6 max-lg:mb-3 max-lg:text-xl text-balance text-3xl font-semibold">
+        <h1 className="mb-6 text-balance text-3xl font-semibold max-lg:mb-3 max-lg:text-xl">
           {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
         </h1>
 
         {!error && isLoggedIn() && (
           <div
-            className="course-content max-lg:prose-pre:text-sm max-lg:prose-pre:px-3 max-lg:prose-h3:text-base max-lg:prose-h2:text-lg max-lg:prose-h2:mt-3 prose prose-lg max-lg:mt-4 max-lg:text-base mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800"
+            className="course-content prose prose-lg mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800 max-lg:mt-4 max-lg:text-base max-lg:prose-h2:mt-3 max-lg:prose-h2:text-lg max-lg:prose-h3:text-base max-lg:prose-pre:px-3 max-lg:prose-pre:text-sm"
             dangerouslySetInnerHTML={{ __html: lessonHtml }}
           />
         )}
@@ -281,27 +281,27 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
             onClick={onGoToPrevLesson}
             disabled={cantGoBack}
             className={cn(
-              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50 max-lg:px-3 max-lg:py-1.5 max-lg:text-sm',
               cantGoBack
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200',
             )}
           >
             <ChevronLeft size={16} className="mr-2" />
-            Previous Lesson
+            Previous <span className="hidden lg:inline">&nbsp;Lesson</span>
           </button>
 
           <button
             onClick={onGoToNextLesson}
             disabled={cantGoForward}
             className={cn(
-              'flex items-center rounded-full px-4 py-2 disabled:opacity-50',
+              'flex items-center rounded-full px-4 py-2 disabled:opacity-50 max-lg:px-3 max-lg:py-1.5 max-lg:text-sm',
               cantGoForward
                 ? 'cursor-not-allowed text-gray-400'
                 : 'bg-gray-800 text-white hover:bg-gray-700',
             )}
           >
-            Next Lesson
+            Next <span className="hidden lg:inline">&nbsp;Lesson</span>
             <ChevronRight size={16} className="ml-2" />
           </button>
         </div>
