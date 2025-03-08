@@ -69,8 +69,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
     queryClient,
   );
 
-  const isLimitExceeded =
-    (tokenUsage?.followUpLimit || 0) <= (tokenUsage?.followUpUsed || 0);
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
 
   const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
