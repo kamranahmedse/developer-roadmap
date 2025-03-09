@@ -4,5 +4,4 @@ Dart is a true object-oriented language, so even functions are objects and have 
 
 Visit the following resources to learn more:
 
-- [@article@Functions](https://dart.dev/guides/language/language-tour#functions)
-- [@article@Dart Function](https://www.javatpoint.com/dart-function)
+- [@official@Functions](https://dart.dev/guides/language/language-tour#functions)

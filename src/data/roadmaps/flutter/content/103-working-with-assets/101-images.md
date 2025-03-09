@@ -10,5 +10,5 @@ The `Image` widget also accepts additional parameters such as `fit`, `width`, an
 
 Visit the following resources to learn more:
 
-- [@article@Adding assets and images](https://docs.flutter.dev/development/ui/assets-and-images)
+- [@official@Adding Assets and Images](https://docs.flutter.dev/development/ui/assets-and-images)
 - [@article@Images in Flutter](https://docs.flutter.dev/cookbook/images)
