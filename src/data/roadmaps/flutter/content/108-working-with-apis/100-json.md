@@ -8,5 +8,5 @@ To encode a Dart object to a JSON string, you can use the `jsonEncode` function 
 
 Visit the following resources to learn more:
 
-- [@article@JSON and serialization](https://docs.flutter.dev/development/data-and-backend/json)
-- [@article@Using JSON](https://dart.dev/guides/json)
+- [@official@JSON and serialization](https://docs.flutter.dev/development/data-and-backend/json)
+- [@official@Using JSON](https://dart.dev/guides/json)
