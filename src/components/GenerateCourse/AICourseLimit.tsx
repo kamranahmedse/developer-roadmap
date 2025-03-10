@@ -30,6 +30,10 @@ export function AICourseLimit() {
 
   const totalPercentage = getPercentage(used, limit);
 
+  // has consumed 80% of the limit
+  const isNearLimit = used >= limit * 0.8;
+  const isPaidUser = userBillingDetails.status !== 'none';
+
   return (
     <>
       <button
@@ -52,24 +56,26 @@ export function AICourseLimit() {
         />
       )}
 
-      <button
-        onClick={() => {
-          setShowAILimitsPopup(true);
-        }}
-        className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
-      >
-        <span className="relative z-10">
-          {totalPercentage}% of the daily limit used
-        </span>
-        <div
-          className="absolute inset-0 h-full bg-gray-200/80"
-          style={{
-            width: `${totalPercentage}%`,
+      {(!isPaidUser || isNearLimit) && (
+        <button
+          onClick={() => {
+            setShowAILimitsPopup(true);
           }}
-        ></div>
-      </button>
+          className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
+        >
+          <span className="relative z-10">
+            {totalPercentage}% of the daily limit used
+          </span>
+          <div
+            className="absolute inset-0 h-full bg-gray-200/80"
+            style={{
+              width: `${totalPercentage}%`,
+            }}
+          ></div>
+        </button>
+      )}
 
-      {userBillingDetails.status === 'none' && (
+      {!isPaidUser && (
         <>
           <button
             className="hidden items-center justify-center gap-1 rounded-md bg-yellow-400 px-4 py-1 text-sm font-medium underline-offset-2 hover:bg-yellow-500 lg:flex"

@@ -130,8 +130,8 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
   return (
     <Modal
       onClose={onClose}
-      bodyClassName="p-6 bg-white"
-      wrapperClassName="h-auto rounded-xl max-w-3xl w-full min-h-[540px]"
+      bodyClassName="p-4 sm:p-6 bg-white"
+      wrapperClassName="h-auto rounded-xl max-w-3xl w-full min-h-[540px] mx-2 sm:mx-4"
       overlayClassName="items-start md:items-center"
     >
       <div onClick={(e) => e.stopPropagation()}>
@@ -140,16 +140,16 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
         {loader}
         {!isLoading && !error && (
           <div className="flex flex-col">
-            <div className="mb-8 text-left">
-              <h2 className="text-2xl font-bold text-black">
+            <div className="mb-6 sm:mb-8 text-left">
+              <h2 className="text-xl sm:text-2xl font-bold text-black">
                 Unlock Premium Features
               </h2>
-              <p className="mt-2 text-gray-600">
+              <p className="mt-1 sm:mt-2 text-sm sm:text-base text-gray-600">
                 Supercharge your learning experience with premium benefits
               </p>
             </div>
 
-            <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="mb-6 sm:mb-8 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2">
               {USER_SUBSCRIPTION_PLAN_PRICES.map((plan) => {
                 const isCurrentPlanSelected =
                   currentPlan?.priceId === plan.priceId;
@@ -159,41 +159,41 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                   <div
                     key={plan.interval}
                     className={cn(
-                      'flex flex-col space-y-4 rounded-lg bg-white p-6',
+                      'flex flex-col space-y-3 sm:space-y-4 rounded-lg bg-white p-4 sm:p-6',
                       isYearly
-                        ? 'border-2 border-yellow-400 shadow-lg shadow-yellow-400/20'
+                        ? 'border-2 border-yellow-400'
                         : 'border border-gray-200',
                     )}
                   >
                     <div className="flex items-start justify-between">
                       <div>
-                        <h4 className="font-semibold text-black">
+                        <h4 className="text-sm sm:text-base font-semibold text-black">
                           {isYearly ? 'Yearly Payment' : 'Monthly Payment'}
                         </h4>
                         {isYearly && (
-                          <span className="text-sm font-medium text-green-600">
+                          <span className="text-xs sm:text-sm font-medium text-green-600">
                             (2 months free)
                           </span>
                         )}
                       </div>
                       {isYearly && (
-                        <span className="rounded-full bg-yellow-400 px-2 py-1 text-xs font-semibold text-black">
+                        <span className="rounded-full bg-yellow-400 px-1.5 py-0.5 sm:px-2 sm:py-1 text-xs font-semibold text-black">
                           Most Popular
                         </span>
                       )}
                     </div>
                     <div className="flex items-baseline">
                       {isYearly && (
-                        <p className="mr-2 text-sm text-gray-400 line-through">
+                        <p className="mr-2 text-xs sm:text-sm text-gray-400 line-through">
                           $
                           {calculateYearlyPrice(
                             USER_SUBSCRIPTION_PLAN_PRICES[0].amount,
                           )}
                         </p>
                       )}
-                      <p className="text-3xl font-bold text-black">
+                      <p className="text-2xl sm:text-3xl font-bold text-black">
                         ${plan.amount}{' '}
-                        <span className="text-sm font-normal text-gray-500">
+                        <span className="text-xs sm:text-sm font-normal text-gray-500">
                           / {isYearly ? 'year' : 'month'}
                         </span>
                       </p>
@@ -204,7 +204,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                     <div>
                       <button
                         className={cn(
-                          'flex min-h-11 w-full items-center justify-center rounded-md py-2.5 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60',
+                          'flex min-h-9 sm:min-h-11 w-full items-center justify-center rounded-md py-2 sm:py-2.5 text-sm sm:text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60',
                           'bg-yellow-400 text-black hover:bg-yellow-500',
                         )}
                         disabled={
@@ -229,7 +229,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                       >
                         {isCreatingCheckoutSession &&
                         selectedPlan === plan.interval ? (
-                          <Loader2 className="h-4 w-4 animate-spin" />
+                          <Loader2 className="h-3.5 w-3.5 sm:h-4 sm:w-4 animate-spin" />
                         ) : isCurrentPlanSelected ? (
                           'Current Plan'
                         ) : (
@@ -243,58 +243,58 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
             </div>
 
             {/* Benefits Section */}
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              <div className="flex items-start space-x-3">
-                <Zap className="mt-0.5 h-5 w-5 text-yellow-400" />
+            <div className="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2">
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <Zap className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
                 <div>
-                  <h4 className="font-medium text-black">
+                  <h4 className="text-sm sm:text-base font-medium text-black">
                     Unlimited AI Course Generations
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Generate as many custom courses as you need
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <Infinity className="mt-0.5 h-5 w-5 text-yellow-400" />
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <Infinity className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
                 <div>
-                  <h4 className="font-medium text-black">
+                  <h4 className="text-sm sm:text-base font-medium text-black">
                     No Daily Limits on course features
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Use all features without restrictions
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <MessageSquare className="mt-0.5 h-5 w-5 text-yellow-400" />
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <MessageSquare className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
                 <div>
-                  <h4 className="font-medium text-black">
+                  <h4 className="text-sm sm:text-base font-medium text-black">
                     Unlimited Course Follow-ups
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Ask as many questions as you need
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <Sparkles className="mt-0.5 h-5 w-5 text-yellow-400" />
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <Sparkles className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
                 <div>
-                  <h4 className="font-medium text-black">
+                  <h4 className="text-sm sm:text-base font-medium text-black">
                     Early Access to Features
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Be the first to try new tools and features
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <Heart className="mt-0.5 h-5 w-5 text-yellow-400" />
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <Heart className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
                 <div>
-                  <h4 className="font-medium text-black">
+                  <h4 className="text-sm sm:text-base font-medium text-black">
                     Support Development
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs sm:text-sm text-gray-600">
                     Help us continue building roadmap.sh
                   </p>
                 </div>

@@ -13,7 +13,7 @@ type VerifyUpgradeProps = {
 export function VerifyUpgrade(props: VerifyUpgradeProps) {
   const { newPriceId } = props;
 
-  const { data: userBillingDetails, isFetching } = useQuery(
+  const { data: userBillingDetails } = useQuery(
     {
       ...billingDetailsOptions(),
       refetchInterval: 1000,
@@ -42,32 +42,34 @@ export function VerifyUpgrade(props: VerifyUpgradeProps) {
       onClose={() => {}}
       bodyClassName="rounded-xl bg-white p-6"
     >
-      <div className="flex flex-col items-center text-center mb-4">
-        <CheckCircle className="h-12 w-12 text-green-600 mb-3" />
+      <div className="mb-4 flex flex-col items-center text-center">
+        <CheckCircle className="mb-3 h-12 w-12 text-green-600" />
         <h3 className="text-xl font-bold text-black">Subscription Activated</h3>
       </div>
-      
-      <p className="mt-2 text-balance text-gray-600 text-center">
+
+      <p className="mt-2 text-balance text-center text-gray-600">
         Your subscription has been activated successfully.
       </p>
 
-      <p className="mt-4 text-balance text-gray-600 text-center">
-        It might take a few minutes for the changes to reflect. We will{' '}
+      <p className="mt-4 text-balance text-center text-gray-600">
+        It might take a minute for the changes to reflect. We will{' '}
         <b className="text-black">reload</b> the page for you.
       </p>
 
-      {isFetching && (
-        <div className="flex animate-pulse items-center justify-center gap-2 mt-4">
-          <Loader2 className="h-5 w-5 animate-spin stroke-[2.5px] text-green-600" />
-          <span className="text-gray-600">Refreshing</span>
-        </div>
-      )}
+      <div className="my-6 flex animate-pulse items-center justify-center gap-2">
+        <Loader2 className="size-4 animate-spin stroke-[2.5px] text-green-600" />
+        <span className="text-gray-600">Please wait...</span>
+      </div>
 
-      <p className="mt-6 text-gray-500 text-center text-sm">
-        If it takes longer than expected, please{' '}
-        <a className="text-blue-600 underline underline-offset-2 hover:text-blue-700">
-          contact us
-        </a>.
+      <p className="text-center text-sm text-gray-500">
+        If it takes longer than expected, please email us at{' '}
+        <a
+          href="mailto:info@roadmap.sh"
+          className="text-blue-600 underline underline-offset-2 hover:text-blue-700"
+        >
+          info@roadmap.sh
+        </a>
+        .
       </p>
     </Modal>
   );
