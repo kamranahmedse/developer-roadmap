@@ -67,8 +67,6 @@ for (const roadmapId of editorRoadmapIds) {
     return {
       ...node,
       measured: {
-        // adding one `1px` in width to avoid the node to be cut in half
-        // this is a quick fix to avoid the issue
         width: width + ADDITIONAL_WIDTH,
         height,
       },
