@@ -5,3 +5,7 @@ An Engineering Manager ensures smooth implementation of Agile methodologies with
 The Engineering Manager faces the challenge of maintaining an Agile mindset even when facing pressures to deliver. They have to ensure team members are motivated, engaged, and productive. This can be handled by adopting feedback-friendly culture and regular knowledge-sharing sessions. 
 
 Skills required for an Engineering Manager in handling Agile methodologies include strong leadership, excellent communication, and proficiency in risk management. The manager has to balance the opposing needs of flexibility and stability, always keeping customer satisfaction in perspective.
+
+Visit the following resources to learn more:
+
+- [@official@Scrum Guide](https://scrumguides.org/)
