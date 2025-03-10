@@ -25,7 +25,7 @@ The MongoDB Sink Connector enables the transfer of data from a Kafka topic to Mo
 
 To get started with MongoDB Kafka connectors, you can follow these steps:
 
-- Download and install [Apache Kafka](https://kafka.apache.org/downloads) and [MongoDB Kafka Connector](https://www.confluent.io/hub/mongodb/mongo-kafka-connect).
+- Download and install [Apache Kafka](https://kafka.apache.org/downloads) and [MongoDB Kafka Connector](https://www.confluent.io/hub/mongodb/kafka-connect-mongodb).
 - Configure your source/sink connector properties.
 - Start the Kafka connect runtime with the MongoDB connector.
 - Verify that your data is being transferred between Kafka and MongoDB as per your requirement.
