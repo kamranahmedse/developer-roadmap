@@ -1,21 +1,9 @@
 # Advanced Dart
 
-Here are some advanced concepts in Dart that are commonly used in Flutter development:
-
-- Generics: allows creating reusable code by abstracting over types
-- Async/Await: simplifies asynchronous programming by allowing to wait for a Future to complete in a clean, readable way.
-- Mixins: lets classes inherit behaviors from multiple mixin classes
-- Abstract Classes: provide a base class that can be extended to create multiple concrete implementations.
-- Streams: provide a way to receive a continuous sequence of events, like data from a server or user events.
-- Isolates: allow running Dart code in separate threads with communication through message passing.
-- Futures: represent a value that will be available at some point in the future.
-- Null-aware operators (??, ?.): provide a concise way to handle null values.
-- Collection literals: provide concise syntax for creating collections.
-- Extension Methods: allow adding methods to existing classes, even if you don't have access to their source code.
-
-By mastering these concepts, you will be able to write more efficient and maintainable Dart code in your Flutter projects.
+Advanced Dart concepts crucial for Flutter development include generics for reusable code, `async`/`await` for clean asynchronous operations, mixins for multiple inheritance, abstract classes for base implementations, streams for continuous event handling, isolates for parallel processing, futures for future value representation, null-aware operators for concise null handling, collection literals for efficient collection creation, and extension methods for adding functionality to existing classes, all contributing to more efficient and maintainable code.
 
 Learn more from the following resources:
 
 - [@official@Tutorials - Dart](https://dart.dev/tutorials)
+- [@article@Advanced Dart](https://techdynasty.medium.com/advanced-dart-in-flutter-elevating-your-development-skills-1c8ec309266f)
 - [@feed@Explore top posts about Dart](https://app.daily.dev/tags/dart?ref=roadmapsh)

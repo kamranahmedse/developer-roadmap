@@ -9,5 +9,5 @@ You can use custom fonts in your app by including the font file in your app's as
 
 Visit the following resources to learn more:
 
-- [@article@Font - Flutter](https://docs.flutter.dev/cookbook/design/fonts)
+- [@official@Fonts](https://docs.flutter.dev/cookbook/design/fonts)
 - [@article@How to use custom fonts in Flutter](https://blog.logrocket.com/use-custom-fonts-flutter/)

@@ -4,7 +4,7 @@ Redux is a state management library for Flutter, commonly used with the Flutter 
 
 Visit the following resources to learn more:
 
-- [@article@flutter\_redux](https://pub.dev/packages/flutter_redux)
-- [@article@Redux - Tutorial](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#redux)
+- [@official@flutter\_redux](https://pub.dev/packages/flutter_redux)
+- [@official@Redux - Tutorial](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#redux)
 - [@article@Building a Flutter app with Redux](https://hillel.dev/2018/06/01/building-a-large-flutter-app-with-redux/)
 - [@feed@Explore top posts about Redux](https://app.daily.dev/tags/redux?ref=roadmapsh)

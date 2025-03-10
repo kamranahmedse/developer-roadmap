@@ -4,5 +4,5 @@ Flutter's ValueNotifier is a lightweight tool for state management in Flutter. I
 
 Visit the following resources to learn more:
 
-- [@article@ValueNotifier class - Flutter](https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html)
+- [@official@ValueNotifier Class - Flutter](https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html)
 - [@article@ValuerNotifier & ValueListenableBuilder](https://medium.com/@avnishnishad/flutter-communication-between-widgets-using-valuenotifier-and-valuelistenablebuilder-b51ef627a58b)

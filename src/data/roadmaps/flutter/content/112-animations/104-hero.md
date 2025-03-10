@@ -4,6 +4,5 @@ Hero is a widget in Flutter that allows you to create smooth animations between 
 
 Visit the following resources to learn more:
 
-- [@article@Hero animations](https://docs.flutter.dev/development/ui/animations/hero-animations)
+- [@official@Hero Animations](https://docs.flutter.dev/development/ui/animations/hero-animations)
 - [@article@HeroAnimation class](https://docs.flutter.dev/development/ui/animations/hero-animations#heroanimation-class)
-- [@article@Hero class](https://api.flutter.dev/flutter/widgets/Hero-class.html)

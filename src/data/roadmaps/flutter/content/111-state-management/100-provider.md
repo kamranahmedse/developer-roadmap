@@ -4,5 +4,5 @@ Provider is a wrapper around InheritedWidget (base class for widgets that effici
 
 Visit the following resources to learn more:
 
-- [@article@provider](https://pub.dev/packages/provider)
-- [@article@Simple app state management](https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple)
+- [@official@Provider](https://pub.dev/packages/provider)
+- [@official@Simple App State Management](https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple)

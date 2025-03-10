@@ -11,6 +11,6 @@ Guidelines and protocols are important considerations for Flutter developers as 
 
 By following these guidelines and protocols, Flutter developers can ensure that their apps are well-designed, user-friendly, and secure, making it easier to attract and retain users.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Flutter - Protocols](https://api.flutter.dev/objcdoc/Protocols.html)

@@ -4,5 +4,5 @@ A stateful widget is dynamic: for example, it can change its appearance in respo
 
 Visit the following resources to learn more:
 
-- [@article@StatefulWidget class](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
+- [@official@StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
 - [@video@Flutter Tutorial - Stateful Widgets](https://www.youtube.com/watch?v=p5dkB3Mrxdo)

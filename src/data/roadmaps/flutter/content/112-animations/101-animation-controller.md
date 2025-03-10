@@ -11,5 +11,5 @@ By default, an AnimationController linearly produces values that range from 0.0 
 
 Learn more from the following links:
 
-- [@article@AnimationController - Flutter](https://docs.flutter.dev/development/ui/animations/tutorial#animationcontroller)
+- [@official@AnimationController - Flutter](https://docs.flutter.dev/ui/animations/tutorial#animationcontroller)
 - [@article@AnimationController class](https://api.flutter.dev/flutter/animation/AnimationController-class.html)

@@ -4,5 +4,5 @@ Flutter’s animation support makes it easy to implement a variety of animation 
 
 Visit the following resources to learn more:
 
-- [@article@Introduction to animations](https://docs.flutter.dev/development/ui/animations)
+- [@official@Introduction to Animations](https://docs.flutter.dev/development/ui/animations)
 - [@article@Animation library](https://api.flutter.dev/flutter/animation/animation-library.html)
