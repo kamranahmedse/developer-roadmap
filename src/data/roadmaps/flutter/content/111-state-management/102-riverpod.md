@@ -6,8 +6,8 @@ One of the key features of Riverpod is its ability to manage and scope state in 
 
 Learn more from the following links:
 
-- [@article@riverpod](https://pub.dev/packages/riverpod)
-- [@article@Riverpod in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#riverpod)
-- [@official@Documentation](https://riverpod.dev/)
+- [@official@riverpod](https://pub.dev/packages/riverpod)
+- [@official@Riverpod in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#riverpod)
+- [@official@riverpod Documentation](https://riverpod.dev/)
 - [@article@Documentation v2 is in progress](https://docs-v2.riverpod.dev/)
 - [@article@Flutter Riverpod 2.0: The Ultimate Guide](https://codewithandrea.com/articles/flutter-state-management-riverpod/)

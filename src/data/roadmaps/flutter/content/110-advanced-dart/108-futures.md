@@ -10,4 +10,4 @@ Futures in Flutter are a way of representing a potential value that will be avai
 
 Learn more from the following resources:
 
-- [@article@Futures and Error handling](https://dart.dev/guides/libraries/futures-error-handling)
+- [@official@Futures and Error handling](https://dart.dev/guides/libraries/futures-error-handling)

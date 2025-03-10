@@ -4,5 +4,5 @@ VelocityX is a Flutter UI toolkit for building high-performance, visually stunni
 
 Learn more from the following links:
 
-- [@official@Get started with VelocityX](https://velocityx.dev/)
+- [@official@Get Started with VelocityX](https://velocityx.dev/)
 - [@article@Intro to velocity_x](https://pub.dev/packages/velocity_x)
