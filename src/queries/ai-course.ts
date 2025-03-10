@@ -15,10 +15,6 @@ type GetAICourseProgressParams = {
   aiCourseSlug: string;
 };
 
-type GetAICourseProgressBody = {};
-
-type GetAICourseProgressQuery = {};
-
 type GetAICourseProgressResponse = AICourseProgressDocument;
 
 export function getAiCourseProgressOptions(params: GetAICourseProgressParams) {
@@ -50,10 +46,6 @@ export interface AICourseDocument {
   updatedAt: Date;
 }
 
-type GetAICourseBody = {};
-
-type GetAICourseQuery = {};
-
 type GetAICourseResponse = AICourseDocument;
 
 export function getAiCourseOptions(params: GetAICourseParams) {
@@ -67,9 +59,7 @@ export function getAiCourseOptions(params: GetAICourseParams) {
   };
 }
 
-type GetAICourseLimitParams = {};
-
-type GetAICourseLimitResponse = {
+export type GetAICourseLimitResponse = {
   used: number;
   limit: number;
 };
@@ -83,8 +73,6 @@ export function getAiCourseLimitOptions() {
     enabled: !!isLoggedIn(),
   });
 }
-
-type ListUserAiCoursesParams = {};
 
 type ListUserAiCoursesResponse = (AICourseDocument & {
   progress: AICourseProgressDocument;

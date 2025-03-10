@@ -38,6 +38,8 @@ type AICourseModuleViewProps = {
 
   onGoToPrevLesson: () => void;
   onGoToNextLesson: () => void;
+
+  onUpgrade: () => void;
 };
 
 export function AICourseModuleView(props: AICourseModuleViewProps) {
@@ -53,6 +55,8 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
     onGoToPrevLesson,
     onGoToNextLesson,
+
+    onUpgrade,
   } = props;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -262,8 +266,29 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         )}
 
         {error && isLoggedIn() && (
-          <div className="mt-8 flex items-center justify-center">
-            <p className="text-red-500">{error}</p>
+          <div className="mt-8 flex min-h-[300px] items-center justify-center rounded-xl bg-red-50/80">
+            {error.includes('reached the limit') ? (
+              <div className="flex max-w-sm flex-col items-center text-center">
+                <h2 className="text-xl font-semibold text-red-600">
+                  Limit reached
+                </h2>
+                <p className="my-3 text-red-600">
+                  You have reached the AI usage limit for today. Please upgrade
+                  your account to continue.
+                </p>
+
+                <button
+                  onClick={() => {
+                    onUpgrade();
+                  }}
+                  className="rounded-full bg-red-600 px-4 py-1 text-white hover:bg-red-700"
+                >
+                  Upgrade Account
+                </button>
+              </div>
+            ) : (
+              <p className="text-red-600">{error}</p>
+            )}
           </div>
         )}
 

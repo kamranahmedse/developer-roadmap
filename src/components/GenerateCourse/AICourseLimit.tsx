@@ -1,16 +1,17 @@
 import { useQuery } from '@tanstack/react-query';
-import { useState } from 'react';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { billingDetailsOptions } from '../../queries/billing';
 import { getPercentage } from '../../helper/number';
 import { Gift, Info } from 'lucide-react';
-import { AILimitsPopup } from './AILimitsPopup';
 
-export function AICourseLimit() {
-  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
-  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
+type AICourseLimitProps = {
+  onUpgrade: () => void;
+  onShowLimits: () => void;
+};
+
+export function AICourseLimit(props: AICourseLimitProps) {
+  const { onUpgrade, onShowLimits } = props;
 
   const { data: limits, isLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -38,28 +39,16 @@ export function AICourseLimit() {
     <>
       <button
         className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
-        onClick={() => setShowAILimitsPopup(true)}
+        onClick={() => onShowLimits()}
       >
         <Info className="size-4" />
         {totalPercentage}% limit used
       </button>
 
-      {showAILimitsPopup && (
-        <AILimitsPopup
-          used={used}
-          limit={limit}
-          onClose={() => setShowAILimitsPopup(false)}
-          onUpgrade={() => {
-            setShowAILimitsPopup(false);
-            setShowUpgradeModal(true);
-          }}
-        />
-      )}
-
       {(!isPaidUser || isNearLimit) && (
         <button
           onClick={() => {
-            setShowAILimitsPopup(true);
+            onShowLimits();
           }}
           className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
         >
@@ -76,19 +65,13 @@ export function AICourseLimit() {
       )}
 
       {!isPaidUser && (
-        <>
-          <button
-            className="hidden items-center justify-center gap-1 rounded-md bg-yellow-400 px-4 py-1 text-sm font-medium underline-offset-2 hover:bg-yellow-500 lg:flex"
-            onClick={() => setShowUpgradeModal(true)}
-          >
-            <Gift className="size-4" />
-            Upgrade
-          </button>
-
-          {showUpgradeModal && (
-            <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
-          )}
-        </>
+        <button
+          className="hidden items-center justify-center gap-1 rounded-md bg-yellow-400 px-4 py-1 text-sm font-medium underline-offset-2 hover:bg-yellow-500 lg:flex"
+          onClick={() => onUpgrade()}
+        >
+          <Gift className="size-4" />
+          Upgrade
+        </button>
       )}
     </>
   );

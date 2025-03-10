@@ -4,16 +4,22 @@ import { formatCommaNumber } from '../../lib/number';
 import { billingDetailsOptions } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
 
 type AILimitsPopupProps = {
-  used: number;
-  limit: number;
   onClose: () => void;
   onUpgrade: () => void;
 };
 
 export function AILimitsPopup(props: AILimitsPopupProps) {
-  const { used, limit, onClose, onUpgrade } = props;
+  const { onClose, onUpgrade } = props;
+
+  const { data: limits, isLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+
+  const { used, limit } = limits ?? { used: 0, limit: 0 };
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

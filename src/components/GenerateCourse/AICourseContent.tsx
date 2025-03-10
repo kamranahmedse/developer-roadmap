@@ -11,6 +11,8 @@ import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 import { AICourseLimit } from './AICourseLimit';
 import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { AILimitsPopup } from './AILimitsPopup';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -21,6 +23,9 @@ type AICourseContentProps = {
 
 export function AICourseContent(props: AICourseContentProps) {
   const { course, courseSlug, isLoading, error } = props;
+
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
@@ -114,6 +119,20 @@ export function AICourseContent(props: AICourseContentProps) {
 
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
+      {showUpgradeModal && (
+        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+      )}
+
+      {showAILimitsPopup && (
+        <AILimitsPopup
+          onClose={() => setShowAILimitsPopup(false)}
+          onUpgrade={() => {
+            setShowAILimitsPopup(false);
+            setShowUpgradeModal(true);
+          }}
+        />
+      )}
+
       <div className="border-b border-gray-200 bg-gray-100">
         <div className="flex items-center justify-between px-4 py-2">
           <a
@@ -126,7 +145,10 @@ export function AICourseContent(props: AICourseContentProps) {
           </a>
           <div className="flex items-center gap-2">
             <div className="flex flex-row lg:hidden">
-              <AICourseLimit />
+              <AICourseLimit
+                onUpgrade={() => setShowUpgradeModal(true)}
+                onShowLimits={() => setShowAILimitsPopup(true)}
+              />
             </div>
 
             <button
@@ -179,7 +201,10 @@ export function AICourseContent(props: AICourseContentProps) {
         </div>
         <div className="flex gap-2">
           <div className="hidden gap-2 lg:flex">
-            <AICourseLimit />
+            <AICourseLimit
+              onUpgrade={() => setShowUpgradeModal(true)}
+              onShowLimits={() => setShowAILimitsPopup(true)}
+            />
           </div>
 
           {viewMode === 'module' && (
@@ -274,6 +299,7 @@ export function AICourseContent(props: AICourseContentProps) {
               onGoToPrevLesson={goToPrevLesson}
               onGoToNextLesson={goToNextLesson}
               key={`${courseSlug}-${activeModuleIndex}-${activeLessonIndex}`}
+              onUpgrade={() => setShowUpgradeModal(true)}
             />
           )}
 
