@@ -4,8 +4,8 @@ Python is an interpreted high-level general-purpose programming language. Its de
 
 Learn more from the following resources:
 
-- [@roadmap@Python Roadmap](https://roadmap.sh/python)
-- [@official@Python.org](https://www.python.org/)
+- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
+- [@official@Python](https://www.python.org/)
 - [@article@Real Python](https://realpython.com/)
 - [@article@Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

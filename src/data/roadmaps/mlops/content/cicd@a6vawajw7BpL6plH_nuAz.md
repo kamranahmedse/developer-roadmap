@@ -4,5 +4,6 @@ CI/CD (Continuous Integration and Continuous Deployment/Delivery) is a software 
 
 Learn more from the following resources:
 
-- [@article@What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+- [@article@What is CI/CD? - Gitlab](https://about.gitlab.com/topics/ci-cd/)
+- [@article@What is CI/CD? - Redhat](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 - [@video@CI/CD In 5 Minutes](https://www.youtube.com/watch?v=42UP1fxi2SY)
