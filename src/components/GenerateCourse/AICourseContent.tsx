@@ -1,5 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { BookOpenCheck, ChevronLeft, Loader2, Menu, X } from 'lucide-react';
+import {
+  BookOpenCheck,
+  ChevronLeft,
+  Loader2,
+  Menu,
+  X,
+  CircleAlert,
+} from 'lucide-react';
 import { useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
 import { cn } from '../../lib/classname';
@@ -107,18 +114,8 @@ export function AICourseContent(props: AICourseContentProps) {
     (totalDoneLessons / totalCourseLessons) * 100,
   );
 
-  if (error && !isLoading) {
-    return (
-      <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
-        <ErrorIcon additionalClasses="h-24 w-24" />
-        <h1 className="mt-2.5 text-2xl font-bold">Error Generating Course</h1>
-        <p className="mt-1 text-gray-500">{error}</p>
-      </div>
-    );
-  }
-
-  return (
-    <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
+  const modals = (
+    <>
       {showUpgradeModal && (
         <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
       )}
@@ -132,6 +129,53 @@ export function AICourseContent(props: AICourseContentProps) {
           }}
         />
       )}
+    </>
+  );
+
+  if (error && !isLoading) {
+    const isLimitReached = error.includes('limit');
+
+    const icon = isLimitReached ? (
+      <CircleAlert className="mb-4 size-16 text-red-500" />
+    ) : (
+      <ErrorIcon additionalClasses="mb-4 size-16" />
+    );
+    const title = isLimitReached ? 'Limit Reached' : 'Error Generating Course';
+    const message = isLimitReached
+      ? 'You have reached the daily AI usage limit. Please upgrade your account to continue.'
+      : error;
+    return (
+      <>
+        {modals}
+        <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
+          {icon}
+          <h1 className="text-2xl font-bold">{title}</h1>
+          <p className="my-3 max-w-sm text-balance text-gray-500">{message}</p>
+
+          {isLimitReached && (
+            <div className="mt-4">
+              <button
+                onClick={() => setShowUpgradeModal(true)}
+                className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
+              >
+                Upgrade to remove Limits
+              </button>
+
+              <p className="mt-4 text-sm text-black">
+                <a href="/ai-tutor" className="underline underline-offset-2">
+                  Back to AI Tutor
+                </a>
+              </p>
+            </div>
+          )}
+        </div>
+      </>
+    );
+  }
+
+  return (
+    <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
+      {modals}
 
       <div className="border-b border-gray-200 bg-gray-100">
         <div className="flex items-center justify-between px-4 py-2">
