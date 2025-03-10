@@ -3,10 +3,7 @@ import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
-import { useQuery } from '@tanstack/react-query';
-import { listUserAiCoursesOptions } from '../../queries/ai-course';
-import { queryClient } from '../../stores/query-client';
-import { AICourseCard } from './AICourseCard';
+import { UserCoursesList } from './UserCoursesList';
 
 export const difficultyLevels = [
   'beginner',
@@ -20,11 +17,6 @@ type AICourseProps = {};
 export function AICourse(props: AICourseProps) {
   const [keyword, setKeyword] = useState('');
   const [difficulty, setDifficulty] = useState<DifficultyLevel>('beginner');
-
-  const { data: userAiCourses, isLoading: isUserAiCoursesLoading } = useQuery(
-    listUserAiCoursesOptions(),
-    queryClient,
-  );
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && keyword.trim()) {
@@ -48,12 +40,12 @@ export function AICourse(props: AICourseProps) {
           AI Course Generator
         </h1>
         <p className="mb-6 text-center text-gray-600">
-          Enter a topic below to generate a course on it.
+          Enter a topic below to generate a course on it
         </p>
 
         <div className="rounded-lg border border-gray-200 bg-white p-6">
           <form
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-5"
             onSubmit={(e) => {
               e.preventDefault();
               onSubmit();
@@ -62,7 +54,7 @@ export function AICourse(props: AICourseProps) {
             <div className="flex flex-col">
               <label
                 htmlFor="keyword"
-                className="mb-2 text-sm font-medium text-gray-700"
+                className="mb-2.5 text-sm font-medium text-gray-700"
               >
                 Course Topic
               </label>
@@ -80,14 +72,11 @@ export function AICourse(props: AICourseProps) {
                   className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-500"
                   maxLength={50}
                 />
-                <span className="absolute bottom-3 right-3 text-xs text-gray-400">
-                  {keyword.length}/50
-                </span>
               </div>
             </div>
 
             <div className="flex flex-col">
-              <label className="mb-2 text-sm font-medium text-gray-700">
+              <label className="mb-2.5 text-sm font-medium text-gray-700">
                 Difficulty Level
               </label>
               <div className="flex gap-2">
@@ -97,7 +86,7 @@ export function AICourse(props: AICourseProps) {
                     type="button"
                     onClick={() => setDifficulty(level)}
                     className={cn(
-                      'rounded-md border px-4 py-1 text-sm capitalize',
+                      'rounded-md border px-4 py-2 capitalize',
                       difficulty === level
                         ? 'border-gray-800 bg-gray-800 text-white'
                         : 'border-gray-200 bg-gray-100 text-gray-700 hover:bg-gray-200',
@@ -126,23 +115,7 @@ export function AICourse(props: AICourseProps) {
         </div>
 
         <div className="mt-8 min-h-[200px]">
-          <h2 className="mb-2 text-lg font-semibold">Your Courses</h2>
-
-          {!isUserAiCoursesLoading && userAiCourses?.length === 0 && (
-            <p className="text-gray-600">
-              You haven't generated any courses yet.
-            </p>
-          )}
-
-          {!isUserAiCoursesLoading &&
-            userAiCourses &&
-            userAiCourses.length > 0 && (
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {userAiCourses.map((course) => (
-                  <AICourseCard key={course._id} course={course} />
-                ))}
-              </div>
-            )}
+          <UserCoursesList />
         </div>
       </div>
     </section>

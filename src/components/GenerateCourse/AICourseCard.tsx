@@ -1,6 +1,6 @@
 import type { AICourseListItem } from '../../queries/ai-course';
 import type { DifficultyLevel } from './AICourse';
-import { BookOpen, Calendar } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 type AICourseCardProps = {
   course: AICourseListItem;
@@ -20,16 +20,10 @@ export function AICourseCard(props: AICourseCardProps) {
   // Map difficulty to color
   const difficultyColor =
     {
-      beginner: 'bg-green-100 text-green-700',
-      intermediate: 'bg-blue-100 text-blue-700',
-      advanced: 'bg-purple-100 text-purple-700',
-    }[course.difficulty as DifficultyLevel] || 'bg-gray-100 text-gray-700';
-
-  // Get a short description preview if available
-  const descriptionPreview = course.data
-    ? JSON.parse(course.data)?.description?.substring(0, 100) +
-      (JSON.parse(course.data)?.description?.length > 100 ? '...' : '')
-    : null;
+      beginner: 'text-green-700',
+      intermediate: 'text-blue-700',
+      advanced: 'text-purple-700',
+    }[course.difficulty as DifficultyLevel] || 'text-gray-700';
 
   // Calculate progress percentage
   const totalTopics = course.lessonCount || 0;
@@ -40,34 +34,24 @@ export function AICourseCard(props: AICourseCardProps) {
   return (
     <a
       href={`/ai-tutor/${course.slug}`}
-      className="group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-300 bg-white p-4 text-left transition-all hover:border-gray-3    00 hover:bg-gray-50"
+      className="hover:border-gray-3 00 group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
     >
-      <div className="mb-2 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <span
-          className={`rounded-full px-2.5 py-1 text-xs font-medium capitalize ${difficultyColor}`}
+          className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
         >
           {course.difficulty}
         </span>
-        {formattedDate && (
-          <span className="flex items-center text-xs text-gray-500">
-            <Calendar className="mr-1 h-3 w-3" />
-            {formattedDate}
-          </span>
-        )}
       </div>
 
-      <h3 className="mb-2 text-base font-semibold text-gray-900">
+      <h3 className="my-2 text-base font-semibold text-gray-900">
         {course.title}
       </h3>
-
-      {descriptionPreview && (
-        <p className="mb-3 text-xs text-gray-600">{descriptionPreview}</p>
-      )}
 
       <div className="mt-auto flex items-center justify-between pt-2">
         <div className="flex items-center text-xs text-gray-600">
           <BookOpen className="mr-1 h-3.5 w-3.5" />
-          <span>{totalTopics} topics</span>
+          <span>{totalTopics} lessons</span>
         </div>
 
         {totalTopics > 0 && (

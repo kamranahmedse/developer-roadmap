@@ -293,8 +293,8 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         )}
 
         {!isLoggedIn() && (
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 rounded-lg border border-gray-200 p-8">
-            <LockIcon className="size-10 stroke-[2.5] text-gray-400" />
+          <div className="mt-8 flex min-h-[152px] flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 p-8">
+            <LockIcon className="size-7 stroke-[2] text-gray-400/90" />
             <p className="text-sm text-gray-500">
               Please login to generate course content
             </p>
