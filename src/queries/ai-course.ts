@@ -74,9 +74,12 @@ export function getAiCourseLimitOptions() {
   });
 }
 
-type ListUserAiCoursesResponse = (AICourseDocument & {
+export type AICourseListItem = AICourseDocument & {
   progress: AICourseProgressDocument;
-})[];
+  lessonCount: number;
+};
+
+type ListUserAiCoursesResponse = AICourseListItem[];
 
 export function listUserAiCoursesOptions() {
   return {
