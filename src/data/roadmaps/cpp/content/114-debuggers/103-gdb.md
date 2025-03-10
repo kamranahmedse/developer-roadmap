@@ -38,7 +38,7 @@ Suppose you have a simple `cpp` file called `example.cpp`:
 #include <iostream>
 
 void my_function(int i) {
-  std::cout << "In my_function with i = " << i << std::endl;
+  std::cout << "In my_function with i = " << i << '\n';
 }
 
 int main() {

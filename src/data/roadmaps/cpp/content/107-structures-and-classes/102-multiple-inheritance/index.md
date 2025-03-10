@@ -30,7 +30,7 @@ class Animal
 public:
     void eat()
     {
-        std::cout << "I can eat!" << std::endl;
+        std::cout << "I can eat!\n";
     }
 };
 
@@ -40,7 +40,7 @@ class Mammal
 public:
     void breath()
     {
-        std::cout << "I can breathe!" << std::endl;
+        std::cout << "I can breathe!\n";
     }
 };
 
@@ -50,7 +50,7 @@ class Dog : public Animal, public Mammal
 public:
     void bark()
     {
-        std::cout << "I can bark! Woof woof!" << std::endl;
+        std::cout << "I can bark! Woof woof!\n";
     }
 };
 

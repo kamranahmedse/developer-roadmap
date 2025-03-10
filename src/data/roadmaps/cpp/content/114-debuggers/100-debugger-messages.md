@@ -51,7 +51,7 @@ int main() {
     int num2 = 0;
     int result = num1 / num2;
 
-    std::cout << "Result: " << result << std::endl;
+    std::cout << "Result: " << result << '\n';
 
     return 0;
 }

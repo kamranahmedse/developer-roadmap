@@ -18,7 +18,7 @@ int main() {
 
     for (size_t i = 0; i < sizeof(int); ++i) {
         // Print the individual bytes of the integer as characters
-        std::cout << "Byte " << i << ": " << char_ptr[i] << std::endl;
+        std::cout << "Byte " << i << ": " << char_ptr[i] << '\n';
     }
 
     return 0;

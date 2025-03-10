@@ -12,22 +12,22 @@ Let's consider the following example:
 class Base {
 public:
     virtual void function1() {
-        std::cout << "Base::function1" << std::endl;
+        std::cout << "Base::function1\n";
     }
 
     virtual void function2() {
-        std::cout << "Base::function2" << std::endl;
+        std::cout << "Base::function2\n";
     }
 };
 
 class Derived : public Base {
 public:
     void function1() override {
-        std::cout << "Derived::function1" << std::endl;
+        std::cout << "Derived::function1\n";
     }
 
     void function3() {
-        std::cout << "Derived::function3" << std::endl;
+        std::cout << "Derived::function3\n";
     }
 };
 

@@ -21,7 +21,7 @@ For example:
 
 int main() {
     for (int i = 0; i < 5; i++) {
-        std::cout << "Iteration: " << i << std::endl;
+        std::cout << "Iteration: " << i << '\n';
     }
     return 0;
 }
@@ -47,7 +47,7 @@ For example:
 int main() {
     int i = 0;
     while (i < 5) {
-        std::cout << "Iteration: " << i << std::endl;
+        std::cout << "Iteration: " << i << '\n';
         i++;
     }
     return 0;
@@ -74,7 +74,7 @@ For example:
 int main() {
     int i = 0;
     do {
-        std::cout << "Iteration: " << i << std::endl;
+        std::cout << "Iteration: " << i << '\n';
         i++;
     } while (i < 5);
     return 0;
