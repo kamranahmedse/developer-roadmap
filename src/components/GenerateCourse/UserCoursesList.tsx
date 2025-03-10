@@ -39,12 +39,12 @@ export function UserCoursesList(props: UserCoursesListProps) {
 
   return (
     <>
-      <div className="mb-3 flex min-h-[35px] items-center justify-between">
+      <div className="mb-3 max-sm:mb-1 flex min-h-[35px] items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="text-lg font-semibold">Your Courses</h2>
         </div>
 
-        <div className="relative w-64">
+        <div className="relative max-sm:hidden w-64">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <Search className="h-4 w-4 text-gray-400" />
           </div>

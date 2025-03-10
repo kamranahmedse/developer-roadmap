@@ -35,15 +35,15 @@ export function AICourse(props: AICourseProps) {
 
   return (
     <section className="flex flex-grow flex-col bg-gray-100">
-      <div className="container mx-auto flex max-w-3xl flex-col py-24">
-        <h1 className="mb-2 text-center text-3xl font-bold">
+      <div className="container mx-auto flex max-w-3xl flex-col max-sm:py-4 py-24">
+        <h1 className="mb-2 max-sm:mb-2 max-sm:text-left text-center max-sm:text-xl text-3xl font-bold">
           AI Course Generator
         </h1>
-        <p className="mb-6 text-center text-gray-600">
-          Enter a topic below to generate a course on it
+        <p className="mb-6 max-sm:hidden max-sm:text-sm max-sm:text-left text-center text-gray-600">
+          Enter a topic below to generate a course for it
         </p>
 
-        <div className="rounded-lg border border-gray-200 bg-white p-6">
+        <div className="rounded-lg border border-gray-200 bg-white max-sm:p-4 p-6">
           <form
             className="flex flex-col gap-5"
             onSubmit={(e) => {
@@ -68,8 +68,8 @@ export function AICourse(props: AICourseProps) {
                   value={keyword}
                   onChange={(e) => setKeyword(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="e.g., Machine Learning, JavaScript, Photography"
-                  className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-500"
+                  placeholder="e.g., Algebra, JavaScript, Photography"
+                  className="w-full max-sm:placeholder:text-base rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-500"
                   maxLength={50}
                 />
               </div>
@@ -79,14 +79,14 @@ export function AICourse(props: AICourseProps) {
               <label className="mb-2.5 text-sm font-medium text-gray-700">
                 Difficulty Level
               </label>
-              <div className="flex gap-2">
+              <div className="flex max-sm:flex-col max-sm:gap-1 gap-2">
                 {difficultyLevels.map((level) => (
                   <button
                     key={level}
                     type="button"
                     onClick={() => setDifficulty(level)}
                     className={cn(
-                      'rounded-md border px-4 py-2 capitalize',
+                      'rounded-md max-sm:text-sm border px-4 py-2 capitalize',
                       difficulty === level
                         ? 'border-gray-800 bg-gray-800 text-white'
                         : 'border-gray-200 bg-gray-100 text-gray-700 hover:bg-gray-200',
@@ -102,7 +102,7 @@ export function AICourse(props: AICourseProps) {
               type="submit"
               disabled={!keyword.trim()}
               className={cn(
-                'mt-2 flex items-center justify-center rounded-lg px-4 py-2 font-medium text-white transition-colors',
+                'mt-2 max-sm:text-sm flex items-center justify-center rounded-md px-4 py-2 font-medium text-white transition-colors',
                 !keyword.trim()
                   ? 'cursor-not-allowed bg-gray-400'
                   : 'bg-black hover:bg-gray-800',
