@@ -35,6 +35,14 @@ This macro defines a function-like macro `SQUARE` that calculates the square of 
 ```cpp
 int square_of_five = SQUARE(5); // expands to ((5) * (5))
 ```
+**CAUTION!**
+
+The following macro may seem to be the same as the one above, but this version can lead to unexpected results:
+```cpp
+#define SQUARE(x) (x*x); // DANGEROUS!!!
+#define PI 3.14159;
+const double val = SQUARE(PI+2); // expands to (PI+2*PI+2), and equals to (3*PI+2)
+```
 
 ## Conditional Compilation
 
