@@ -6,9 +6,11 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { billingDetailsOptions } from '../../queries/billing';
 import { getPercentage } from '../../helper/number';
 import { Gift, Info } from 'lucide-react';
+import { AILimitsPopup } from './AILimitsPopup';
 
 export function AICourseLimit() {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
 
   const { data: limits, isLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -30,12 +32,32 @@ export function AICourseLimit() {
 
   return (
     <>
-      <button className="mr-1 flex items-center gap-1 text-sm font-medium lg:hidden underline underline-offset-2">
+      <button
+        className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
+        onClick={() => setShowAILimitsPopup(true)}
+      >
         <Info className="size-4" />
         {totalPercentage}% limit used
       </button>
 
-      <button className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex">
+      {showAILimitsPopup && (
+        <AILimitsPopup
+          used={used}
+          limit={limit}
+          onClose={() => setShowAILimitsPopup(false)}
+          onUpgrade={() => {
+            setShowAILimitsPopup(false);
+            setShowUpgradeModal(true);
+          }}
+        />
+      )}
+
+      <button
+        onClick={() => {
+          setShowAILimitsPopup(true);
+        }}
+        className="relative hidden h-full min-h-[38px] cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
+      >
         <span className="relative z-10">
           {totalPercentage}% of the daily limit used
         </span>

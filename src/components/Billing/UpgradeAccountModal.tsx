@@ -1,4 +1,11 @@
-import { Check, Loader2 } from 'lucide-react';
+import {
+  Loader2,
+  Zap,
+  Infinity,
+  MessageSquare,
+  Sparkles,
+  Heart,
+} from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { getUser } from '../../lib/jwt';
 import { useMutation, useQuery } from '@tanstack/react-query';
@@ -91,15 +98,15 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
   }
 
   const loader = isLoading ? (
-    <div className="absolute inset-0 flex h-[540px] w-full items-center justify-center">
-      <Loader2 className="h-6 w-6 animate-spin stroke-[3px] text-zinc-500" />
+    <div className="absolute inset-0 flex h-[540px] w-full items-center justify-center bg-white">
+      <Loader2 className="h-6 w-6 animate-spin stroke-[3px] text-green-600" />
     </div>
   ) : null;
 
   const error = billingError;
   const errorContent = error ? (
     <div className="flex h-full w-full flex-col">
-      <p className="text-center text-red-500">
+      <p className="text-center text-red-400">
         {error?.message ||
           'An error occurred while loading the billing details.'}
       </p>
@@ -123,8 +130,9 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
   return (
     <Modal
       onClose={onClose}
-      wrapperClassName="rounded-xl max-w-3xl w-full min-h-[540px]"
-      bodyClassName="p-6"
+      bodyClassName="p-6 bg-white"
+      wrapperClassName="h-auto rounded-xl max-w-3xl w-full min-h-[540px]"
+      overlayClassName="items-start md:items-center"
     >
       <div onClick={(e) => e.stopPropagation()}>
         {errorContent}
@@ -133,11 +141,15 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
         {!isLoading && !error && (
           <div className="flex flex-col">
             <div className="mb-8 text-left">
-              <h2 className="text-xl font-bold">
-                Unlock premium features and by-pass the limits.
+              <h2 className="text-2xl font-bold text-black">
+                Unlock Premium Features
               </h2>
+              <p className="mt-2 text-gray-600">
+                Supercharge your learning experience with premium benefits
+              </p>
             </div>
-            <div className="grid grid-cols-2 gap-8">
+
+            <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {USER_SUBSCRIPTION_PLAN_PRICES.map((plan) => {
                 const isCurrentPlanSelected =
                   currentPlan?.priceId === plan.priceId;
@@ -147,19 +159,19 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                   <div
                     key={plan.interval}
                     className={cn(
-                      'flex flex-col space-y-4 rounded-lg p-6',
+                      'flex flex-col space-y-4 rounded-lg bg-white p-6',
                       isYearly
-                        ? 'border-2 border-yellow-400'
+                        ? 'border-2 border-yellow-400 shadow-lg shadow-yellow-400/20'
                         : 'border border-gray-200',
                     )}
                   >
                     <div className="flex items-start justify-between">
                       <div>
-                        <h4 className="font-semibold">
+                        <h4 className="font-semibold text-black">
                           {isYearly ? 'Yearly Payment' : 'Monthly Payment'}
                         </h4>
                         {isYearly && (
-                          <span className="text-sm text-green-500">
+                          <span className="text-sm font-medium text-green-600">
                             (2 months free)
                           </span>
                         )}
@@ -172,21 +184,23 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                     </div>
                     <div className="flex items-baseline">
                       {isYearly && (
-                        <p className="mr-2 text-sm text-zinc-400 line-through">
+                        <p className="mr-2 text-sm text-gray-400 line-through">
                           $
                           {calculateYearlyPrice(
                             USER_SUBSCRIPTION_PLAN_PRICES[0].amount,
                           )}
                         </p>
                       )}
-                      <p className="text-3xl font-bold text-yellow-400">
+                      <p className="text-3xl font-bold text-black">
                         ${plan.amount}{' '}
-                        <span className="text-sm font-normal text-zinc-500">
+                        <span className="text-sm font-normal text-gray-500">
                           / {isYearly ? 'year' : 'month'}
                         </span>
                       </p>
                     </div>
+
                     <div className="flex-grow"></div>
+
                     <div>
                       <button
                         className={cn(
@@ -226,6 +240,65 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                   </div>
                 );
               })}
+            </div>
+
+            {/* Benefits Section */}
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="flex items-start space-x-3">
+                <Zap className="mt-0.5 h-5 w-5 text-yellow-400" />
+                <div>
+                  <h4 className="font-medium text-black">
+                    Unlimited AI Course Generations
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Generate as many custom courses as you need
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Infinity className="mt-0.5 h-5 w-5 text-yellow-400" />
+                <div>
+                  <h4 className="font-medium text-black">
+                    No Daily Limits on course features
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Use all features without restrictions
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <MessageSquare className="mt-0.5 h-5 w-5 text-yellow-400" />
+                <div>
+                  <h4 className="font-medium text-black">
+                    Unlimited Course Follow-ups
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Ask as many questions as you need
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Sparkles className="mt-0.5 h-5 w-5 text-yellow-400" />
+                <div>
+                  <h4 className="font-medium text-black">
+                    Early Access to Features
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Be the first to try new tools and features
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Heart className="mt-0.5 h-5 w-5 text-yellow-400" />
+                <div>
+                  <h4 className="font-medium text-black">
+                    Support Development
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    Help us continue building roadmap.sh
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         )}

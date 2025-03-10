@@ -57,36 +57,36 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
   return (
     <Modal
       onClose={isPending ? () => {} : onClose}
-      bodyClassName="rounded-xl bg-white p-4"
+      bodyClassName="rounded-xl bg-white p-6"
     >
-      <h3 className="text-xl font-bold">Subscription Update</h3>
-      <p className="mt-2 text-balance text-gray-500">
+      <h3 className="text-xl font-bold text-black">Subscription Update</h3>
+      <p className="mt-2 text-balance text-gray-600">
         Your plan will be updated to the{' '}
-        <b className="text-gray-600">{planDetails.interval}</b> plan, and will
+        <b className="text-black">{planDetails.interval}</b> plan, and will
         be charged{' '}
-        <b className="text-gray-600">
-          ${selectedPrice.amount} {selectedPrice.interval}
+        <b className="text-black">
+          ${selectedPrice.amount}/{selectedPrice.interval}
         </b>
         .
       </p>
 
-      <div className="mt-6 grid grid-cols-2 gap-2">
+      <div className="mt-6 grid grid-cols-2 gap-3">
         <button
-          className="rounded-md border border-gray-300 py-2 text-sm font-semibold hover:opacity-80 disabled:opacity-50"
+          className="rounded-md border border-gray-200 py-2 text-sm font-semibold hover:bg-gray-50 transition-colors disabled:opacity-50"
           onClick={onCancel}
           disabled={isPending}
         >
           Cancel
         </button>
         <button
-          className="flex items-center justify-center rounded-md border border-gray-800 bg-black py-2 text-sm font-semibold text-white hover:opacity-80 disabled:opacity-50"
+          className="flex items-center justify-center rounded-md bg-yellow-400 py-2 text-sm font-semibold text-black hover:bg-yellow-500 transition-colors disabled:opacity-50"
           disabled={isPending}
           onClick={() => {
             updatePlan({ priceId: selectedPrice.priceId });
           }}
         >
           {isPending && (
-            <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
+            <Loader2Icon className="size-4 animate-spin stroke-[2.5] mr-2" />
           )}
           {!isPending && 'Confirm'}
         </button>
