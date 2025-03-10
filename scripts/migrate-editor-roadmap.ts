@@ -43,8 +43,8 @@ for (const roadmapId of editorRoadmapIds) {
 
   const roadmapNodes = roadmapJSON.nodes as Node[];
   const updatedNodes = roadmapNodes.map((node) => {
-    const width = node?.width || node?.style?.width || 0;
-    const height = node?.height || node?.style?.height || 0;
+    const width = +(node?.width || node?.style?.width || 0);
+    const height = +(node?.height || node?.style?.height || 0);
 
     if (['legend', 'title', 'label', 'linksgroup'].includes(node.type!)) {
       delete node?.width;
@@ -53,10 +53,23 @@ for (const roadmapId of editorRoadmapIds) {
       delete node?.style?.height;
     }
 
+    const ADDITIONAL_WIDTH = 1;
+    // adding one `1px` in width to avoid the node to be cut in half
+    // this is a quick fix to avoid the issue
+    if (node?.style?.width) {
+      node.style.width = width + ADDITIONAL_WIDTH;
+    }
+
+    if (node?.width) {
+      node.width = width + ADDITIONAL_WIDTH;
+    }
+
     return {
       ...node,
       measured: {
-        width,
+        // adding one `1px` in width to avoid the node to be cut in half
+        // this is a quick fix to avoid the issue
+        width: width + ADDITIONAL_WIDTH,
         height,
       },
     };
