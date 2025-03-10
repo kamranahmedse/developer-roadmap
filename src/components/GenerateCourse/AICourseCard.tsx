@@ -40,7 +40,7 @@ export function AICourseCard(props: AICourseCardProps) {
   return (
     <a
       href={`/ai-tutor/${course.slug}`}
-      className="group relative flex w-full flex-col overflow-hidden rounded-md border border-gray-300 bg-white p-4 text-left transition-all hover:border-gray-3    00 hover:bg-gray-50"
+      className="group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-300 bg-white p-4 text-left transition-all hover:border-gray-3    00 hover:bg-gray-50"
     >
       <div className="mb-2 flex items-center justify-between">
         <span
