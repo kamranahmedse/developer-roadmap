@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { showLoginPopup } from '../../lib/popup';
 import { generateAiCourseStructure, type AiCourse } from '../../lib/ai';
 import { readAICourseStream } from '../../helper/read-stream';
 import { AICourseContent } from './AICourseContent';
@@ -49,9 +48,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     const { term, difficulty } = options;
 
     if (!isLoggedIn()) {
-      setIsLoading(false);
-      setError('You must be logged in to generate a course');
-      showLoginPopup();
+      window.location.href = '/ai-tutor';
       return;
     }
 
