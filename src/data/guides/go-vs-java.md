@@ -30,19 +30,19 @@ In this guide, I'll walk you through the key features of both Go and Java, inclu
 
 The table below summarizes the key features of Go and Java:
 
-| **Feature**               | **Go**                                                       | **Java**                                                        |
-| ------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
-| **Type**                  | Compiled language to native code                             | Compiled to bytecode, runs on the JVM                           |
-| **Concurrency Model**     | Goroutines (lightweight threads, managed by Go runtime)      | Threads (OS-level, managed by JVM)                              |
-| **Memory Management**     | Garbage collection, with manual memory management options    | Automatic garbage collection (JVM)                              |
-| **Syntax**                | Simple, concise, inspired by C                               | Verbose, object oriented language                               |
-| **Performance**           | High due to direct compilation to machine code               | Good, but can be slower due to the JVM layer                    |
-| **Cross-Platform**        | Compiles to native binaries, runs on multiple platforms      | JVM provides cross-platform compatibility                       |
-| **Error Handling**        | Explicit error handling via return values                    | Exceptions (try-catch mechanism)                                |
-| **Learning Curve**        | Lower due to simpler syntax and fewer features               | Steeper, especially for new developers due to verbosity         |
-| **Use Cases**             | System programming, microservices, cloud-native apps, DevOps | Enterprise applications, Android development, large-scale apps  |
-| **Community & Libraries** | Growing, especially for cloud-native and system tools        | Mature, large ecosystem with extensive libraries and frameworks |
-| **Scalability**           | Excellent for highly concurrent and lightweight applications | Scalable, but can be more resource-intensive                    |
+| **Feature**               | **Go**                                                       | **Java**                                                                                      |
+| ------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| **Type**                  | Compiled language to native code                             | Compiled to bytecode, runs on the JVM                                                         |
+| **Concurrency Model**     | Goroutines (lightweight threads, managed by Go runtime)      | Threads (OS-level, managed by JVM) OR Virtual Threads (> JRE 21, lightweight, managed by JVM) |
+| **Memory Management**     | Garbage collection, with manual memory management options    | Automatic garbage collection (JVM), default depends on JVM, 4 GC options                      |
+| **Syntax**                | Simple, concise, inspired by C                               | Verbose, object oriented language                                                             |
+| **Performance**           | High due to direct compilation to machine code               | Good, but can be slower due to the JVM layer                                                  |
+| **Cross-Platform**        | Compiles to native binaries, runs on multiple platforms      | JVM provides cross-platform compatibility                                                     |
+| **Error Handling**        | Explicit error handling via return values                    | Exceptions (try-catch mechanism)                                                              |
+| **Learning Curve**        | Lower due to simpler syntax and fewer features               | Steeper, especially for new developers due to verbosity                                       |
+| **Use Cases**             | System programming, microservices, cloud-native apps, DevOps | Enterprise applications, Android development, large-scale apps                                |
+| **Community & Libraries** | Growing, especially for cloud-native and system tools        | Mature, large ecosystem with extensive libraries and frameworks                               |
+| **Scalability**           | Excellent for highly concurrent and lightweight applications | Scalable, but can be more resource-intensive                                                  |
 
 Before looking at these features in detail, let's take a closer look at these two programming languages.
 
