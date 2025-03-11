@@ -1,17 +1,36 @@
 import { useQuery } from '@tanstack/react-query';
-import { listUserAiCoursesOptions } from '../../queries/ai-course';
+import {
+  getAiCourseLimitOptions,
+  listUserAiCoursesOptions,
+} from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { AICourseCard } from './AICourseCard';
 import { useEffect, useState } from 'react';
-import { Loader2, Search, Lock } from 'lucide-react';
+import { Gift, Loader2, Search, User2 } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { cn } from '../../lib/classname';
+import { billingDetailsOptions } from '../../queries/billing';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type UserCoursesListProps = {};
 
 export function UserCoursesList(props: UserCoursesListProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [isInitialLoading, setIsInitialLoading] = useState(true);
+  const [showUpgradePopup, setShowUpgradePopup] = useState(false);
+
+  const { data: limits, isLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+
+  const { used, limit } = limits ?? { used: 0, limit: 0 };
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isPaidUser = userBillingDetails?.status !== 'none';
 
   const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
     listUserAiCoursesOptions(),
@@ -37,36 +56,67 @@ export function UserCoursesList(props: UserCoursesListProps) {
 
   const isAuthenticated = isLoggedIn();
 
+  const canSearch =
+    !isInitialLoading &&
+    !isUserAiCoursesLoading &&
+    isAuthenticated &&
+    userAiCourses?.length !== 0;
+
+  const limitUsedPercentage = Math.round((used / limit) * 100);
+
   return (
     <>
-      <div className="mb-3 max-sm:mb-1 flex min-h-[35px] items-center justify-between">
+      {showUpgradePopup && (
+        <UpgradeAccountModal onClose={() => setShowUpgradePopup(false)} />
+      )}
+      <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
         <div className="flex items-center gap-2">
           <h2 className="text-lg font-semibold">Your Courses</h2>
         </div>
 
-        <div className="relative max-sm:hidden w-64">
-          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-            <Search className="h-4 w-4 text-gray-400" />
+        <div className="flex items-center gap-2">
+          <div
+            className={cn(
+              'flex items-center gap-2 opacity-0 transition-opacity',
+              {
+                'opacity-100': !isPaidUser,
+              },
+            )}
+          >
+            <p className="flex items-center text-sm text-yellow-600">
+              {limitUsedPercentage}% of daily limit used{' '}
+              <button
+                onClick={() => {
+                  setShowUpgradePopup(true);
+                }}
+                className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pl-1.5 pr-2 text-xs text-white"
+              >
+                <Gift className="size-4" />
+                Upgrade
+              </button>
+            </p>
           </div>
-          <input
-            type="text"
-            className="block w-full rounded-md border border-gray-200 bg-white py-1.5 pl-10 pr-3 leading-5 placeholder-gray-500 focus:border-gray-300 focus:outline-none focus:ring-blue-500 disabled:opacity-70 sm:text-sm"
-            placeholder="Search your courses..."
-            value={searchTerm}
-            disabled={
-              isInitialLoading ||
-              isUserAiCoursesLoading ||
-              !isAuthenticated ||
-              userAiCourses?.length === 0
-            }
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+
+          <div className={cn('relative w-64 max-sm:hidden', {
+            
+          })}>
+            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <Search className="h-4 w-4 text-gray-400" />
+            </div>
+            <input
+              type="text"
+              className="block w-full rounded-md border border-gray-200 bg-white py-1.5 pl-10 pr-3 leading-5 placeholder-gray-500 transition-all focus:border-gray-300 focus:outline-none focus:ring-blue-500 disabled:opacity-70 sm:text-sm"
+              placeholder="Search your courses..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
       {!isInitialLoading && !isUserAiCoursesLoading && !isAuthenticated && (
         <div className="flex min-h-[152px] flex-col items-center justify-center rounded-lg border border-gray-200 bg-white px-6 py-4">
-          <Lock className="mb-3 size-6 text-gray-300/90" strokeWidth={2.5} />
+          <User2 className="mb-2 size-8 text-gray-300" />
           <p className="max-w-sm text-balance text-center text-gray-500">
             <button
               onClick={() => {
@@ -76,7 +126,7 @@ export function UserCoursesList(props: UserCoursesListProps) {
             >
               Sign up (free and takes 2s) or login
             </button>{' '}
-            to start generating courses.
+            to generate and save courses.
           </p>
         </div>
       )}

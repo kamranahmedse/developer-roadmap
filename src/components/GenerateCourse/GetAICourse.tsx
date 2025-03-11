@@ -4,7 +4,7 @@ import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
 import { AICourseContent } from './AICourseContent';
 import { generateAiCourseStructure } from '../../lib/ai';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { isLoggedIn } from '../../lib/jwt';
 
 type GetAICourseProps = {
   courseSlug: string;
@@ -23,10 +23,16 @@ export function GetAICourse(props: GetAICourseProps) {
           course: generateAiCourseStructure(data.data),
         };
       },
-      enabled: !!courseSlug,
+      enabled: !!courseSlug && !!isLoggedIn(),
     },
     queryClient,
   );
+
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      window.location.href = '/ai-tutor';
+    }
+  }, [isLoggedIn]);
 
   useEffect(() => {
     if (!aiCourse) {
