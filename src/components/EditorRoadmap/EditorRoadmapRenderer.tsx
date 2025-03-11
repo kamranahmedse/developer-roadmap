@@ -1,6 +1,6 @@
 import './EditorRoadmapRenderer.css';
 
-import { useCallback, useEffect, useRef } from 'react';
+import { lazy, useCallback, useEffect, useRef } from 'react';
 import {
   renderResourceProgress,
   updateResourceProgress,
@@ -11,10 +11,15 @@ import {
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Edge, Node } from '@roadmapsh/editor';
-import { Renderer } from '@roadmapsh/editor';
 import { slugify } from '../../lib/slugger';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+
+const Renderer = lazy(() =>
+  import('@roadmapsh/editor').then((mod) => ({
+    default: mod.Renderer,
+  })),
+);
 
 export type RoadmapRendererProps = {
   resourceId: string;

@@ -57,4 +57,9 @@ export default defineConfig({
     }),
     react(),
   ],
+  vite: {
+    ssr: {
+      noExternal: [/^@roadmapsh\/editor.*$/],
+    },
+  },
 });
