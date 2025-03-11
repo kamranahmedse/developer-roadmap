@@ -12,7 +12,14 @@ import { UpgradeAccountModal } from './UpgradeAccountModal';
 import { getUrlParams } from '../../lib/browser';
 import { VerifyUpgrade } from './VerifyUpgrade';
 import { EmptyBillingScreen } from './EmptyBillingScreen';
-import { Calendar, RefreshCw, Loader2, AlertTriangle } from 'lucide-react';
+import {
+  Calendar,
+  RefreshCw,
+  Loader2,
+  AlertTriangle,
+  CreditCard,
+  ArrowRightLeft,
+} from 'lucide-react';
 
 export type CreateCustomerPortalBody = {};
 
@@ -181,6 +188,7 @@ export function BillingPage() {
                       setShowUpgradeModal(true);
                     }}
                   >
+                    <ArrowRightLeft className="mr-2 h-4 w-4" />
                     Switch Plan
                   </button>
                 )}
@@ -194,9 +202,11 @@ export function BillingPage() {
                     isCreatingCustomerPortal || isCreatingCustomerPortalSuccess
                   }
                 >
-                  {(isCreatingCustomerPortal ||
-                    isCreatingCustomerPortalSuccess) && (
+                  {isCreatingCustomerPortal ||
+                  isCreatingCustomerPortalSuccess ? (
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  ) : (
+                    <CreditCard className="mr-2 h-4 w-4" />
                   )}
                   Manage Subscription
                 </button>
