@@ -133,11 +133,11 @@ export function BillingPage() {
               Current Subscription
             </h2>
 
-            <p className="mb-6 text-sm text-gray-500">
+            <p className="text-sm text-gray-500">
               Thank you for being a pro member. Your plan details are below.
             </p>
 
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
                   <RefreshCw className="size-5 text-gray-600" />
@@ -173,10 +173,10 @@ export function BillingPage() {
                 </div>
               </div>
 
-              <div className="mt-8 flex max-sm:flex-col gap-3">
+              <div className="mt-8 flex gap-3 max-sm:flex-col">
                 {!shouldHideDeleteButton && (
                   <button
-                    className="inline-flex max-sm:flex-grow items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 max-sm:flex-grow"
                     onClick={() => {
                       setShowUpgradeModal(true);
                     }}
