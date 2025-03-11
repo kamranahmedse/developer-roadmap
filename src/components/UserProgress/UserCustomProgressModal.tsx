@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
@@ -173,7 +173,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
               variant="modal"
               roadmap={roadmap!}
               className="min-h-[400px]"
-              onRendered={(wrapperRef: RefObject<HTMLDivElement>) => {
+              onRendered={(wrapperRef) => {
                 const {
                   done = [],
                   learning = [],

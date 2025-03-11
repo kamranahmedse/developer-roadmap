@@ -96,7 +96,7 @@ export function UserProfileRoadmapRenderer(
               edges,
             }}
             className="min-h-[1000px]"
-            onRendered={(wrapperRef: RefObject<HTMLDivElement>) => {
+            onRendered={(wrapperRef) => {
               done?.forEach((topicId: string) => {
                 topicSelectorAll(topicId, wrapperRef?.current!).forEach(
                   (el) => {
