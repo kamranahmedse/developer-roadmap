@@ -4,5 +4,5 @@ Flutter's ChangeNotifier is a fundamental class for state management in Flutter.
 
 Visit the following resources to learn more:
 
-- [@article@ChangeNotifier class - Flutter](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html)
-- [@article@Simple app state management](https://docs.flutter.dev/data-and-backend/state-mgmt/simple)
+- [@official@ChangeNotifier class - Flutter](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html)
+- [@official@Simple app state management](https://docs.flutter.dev/data-and-backend/state-mgmt/simple)

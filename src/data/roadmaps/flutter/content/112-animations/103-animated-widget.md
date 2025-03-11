@@ -4,5 +4,5 @@ AnimatedWidget is a Flutter widget that takes an `Animation` object as an argume
 
 Learn more from the following links:
 
-- [@article@Simplifying with Animated­Widget](https://docs.flutter.dev/development/ui/animations/tutorial#simplifying-with-animatedwidgets)
+- [@official@Simplifying with Animated­Widget](https://docs.flutter.dev/development/ui/animations/tutorial#simplifying-with-animatedwidgets)
 - [@article@AnimatedWidget Class](https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html)
