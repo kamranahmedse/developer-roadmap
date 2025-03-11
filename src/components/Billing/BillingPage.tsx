@@ -11,6 +11,7 @@ import { httpPost } from '../../lib/query-http';
 import { UpgradeAccountModal } from './UpgradeAccountModal';
 import { getUrlParams } from '../../lib/browser';
 import { VerifyUpgrade } from './VerifyUpgrade';
+import { EmptyBillingScreen } from './EmptyBillingScreen';
 
 export type CreateCustomerPortalBody = {};
 
@@ -96,19 +97,9 @@ export function BillingPage() {
       {showVerifyUpgradeModal && <VerifyUpgrade />}
 
       {billingDetails?.status === 'none' && !isLoadingBillingDetails && (
-        <div className="flex h-full w-full flex-col">
-          <p className="text-gray-800">
-            You are not subscribed to any plan,&nbsp;
-            <button
-              className="text-black underline underline-offset-2 hover:text-gray-800"
-              onClick={() => {
-                setShowUpgradeModal(true);
-              }}
-            >
-              upgrade account.
-            </button>
-          </p>
-        </div>
+        <EmptyBillingScreen 
+          onUpgrade={() => setShowUpgradeModal(true)} 
+        />
       )}
 
       {billingDetails?.status !== 'none' &&

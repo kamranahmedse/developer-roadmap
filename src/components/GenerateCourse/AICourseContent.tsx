@@ -136,7 +136,7 @@ export function AICourseContent(props: AICourseContentProps) {
     const isLimitReached = error.includes('limit');
 
     const icon = isLimitReached ? (
-      <CircleAlert className="mb-4 size-16 text-red-500" />
+      <CircleAlert className="mb-4 size-16 text-yellow-500" />
     ) : (
       <ErrorIcon additionalClasses="mb-4 size-16" />
     );
