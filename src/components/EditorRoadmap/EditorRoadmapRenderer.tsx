@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useRef } from 'react';
 import './EditorRoadmapRenderer.css';
+
+import { useCallback, useEffect, useRef } from 'react';
 import {
   renderResourceProgress,
   updateResourceProgress,
@@ -9,8 +10,8 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
-import type { Edge, Node } from '@xyflow/react';
-import { Renderer } from '../../../editor/renderer';
+import type { Edge, Node } from '@roadmapsh/editor';
+import { Renderer } from '@roadmapsh/editor';
 import { slugify } from '../../lib/slugger';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';

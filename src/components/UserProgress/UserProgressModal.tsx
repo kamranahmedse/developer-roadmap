@@ -11,9 +11,8 @@ import { useAuth } from '../../hooks/use-auth';
 import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
-import type { PageType } from '../CommandMenu/CommandMenu.tsx';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
-import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { renderFlowJSON } from '@roadmapsh/editor';
 
 export type ProgressMapProps = {
   userId?: string;

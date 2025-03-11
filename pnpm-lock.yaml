@@ -32,6 +32,9 @@ importers:
       '@resvg/resvg-js':
         specifier: ^2.6.2
         version: 2.6.2
+      '@roadmapsh/editor':
+        specifier: npm:@roadmapsh/dummy-editor@^0.0.3
+        version: '@roadmapsh/dummy-editor@0.0.3'
       '@tanstack/react-query':
         specifier: ^5.59.16
         version: 5.59.16(react@18.3.1)
@@ -1050,6 +1053,9 @@ packages:
   '@resvg/resvg-js@2.6.2':
     resolution: {integrity: sha512-xBaJish5OeGmniDj9cW5PRa/PtmuVU3ziqrbr5xJj901ZDN4TosrVaNZpEiLZAxdfnhAe7uQ7QFWfjPe9d9K2Q==}
     engines: {node: '>= 10'}
+
+  '@roadmapsh/dummy-editor@0.0.3':
+    resolution: {integrity: sha512-64DCKH+g1VdJihr3ePiMkP4DmQ4MzeVUFNarHXxHhYchw8ix3F5YMOE93657UNRnw02cAbLZ/IPuLcN68b9Ypg==}
 
   '@rollup/pluginutils@5.1.2':
     resolution: {integrity: sha512-/FIdS3PyZ39bjZlwqFnWqCOVnW7o963LtKMwQOD0NhQqw22gSr2YY1afu3FxRip4ZCZNsD5jq6Aaz6QV3D/Njw==}
@@ -2726,6 +2732,10 @@ packages:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
+  react@19.0.0:
+    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+    engines: {node: '>=0.10.0'}
+
   read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
 
@@ -2962,6 +2972,9 @@ packages:
 
   tailwind-merge@2.5.3:
     resolution: {integrity: sha512-d9ZolCAIzom1nf/5p4LdD5zvjmgSxY0BGgdSvmXIoMYAiPdAW/dSpP7joCDYFY7r/HkEa2qmPtkgsu0xjQeQtw==}
+
+  tailwind-merge@3.0.2:
+    resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
   tailwindcss@3.4.13:
     resolution: {integrity: sha512-KqjHOJKogOUt5Bs752ykCeiwvi0fKVkr5oqsFNt/8px/tA8scFPIlkygsf6jXrfCqGHz7VflA6+yytWuM+XhFw==}
@@ -4021,6 +4034,12 @@ snapshots:
       '@resvg/resvg-js-win32-arm64-msvc': 2.6.2
       '@resvg/resvg-js-win32-ia32-msvc': 2.6.2
       '@resvg/resvg-js-win32-x64-msvc': 2.6.2
+
+  '@roadmapsh/dummy-editor@0.0.3':
+    dependencies:
+      clsx: 2.1.1
+      react: 19.0.0
+      tailwind-merge: 3.0.2
 
   '@rollup/pluginutils@5.1.2(rollup@4.22.4)':
     dependencies:
@@ -5858,6 +5877,8 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
+  react@19.0.0: {}
+
   read-cache@1.0.0:
     dependencies:
       pify: 2.3.0
@@ -6206,6 +6227,8 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwind-merge@2.5.3: {}
+
+  tailwind-merge@3.0.2: {}
 
   tailwindcss@3.4.13:
     dependencies:

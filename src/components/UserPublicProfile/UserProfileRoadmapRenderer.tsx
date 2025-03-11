@@ -8,7 +8,7 @@ import {
 import { useToast } from '../../hooks/use-toast';
 import { replaceChildren } from '../../lib/dom.ts';
 import type { GetUserProfileRoadmapResponse } from '../../api/user.ts';
-import { ReadonlyEditor } from '../../../editor/readonly-editor.tsx';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import { cn } from '../../lib/classname.ts';
 
 export type UserProfileRoadmapRendererProps = GetUserProfileRoadmapResponse & {

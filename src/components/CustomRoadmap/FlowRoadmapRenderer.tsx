@@ -1,4 +1,4 @@
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import {
   refreshProgressCounters,
@@ -9,7 +9,7 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
-import type { Node } from '@xyflow/react';
+import type { Node } from '@roadmapsh/editor';
 import { type MouseEvent, useCallback, useRef, useState } from 'react';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';

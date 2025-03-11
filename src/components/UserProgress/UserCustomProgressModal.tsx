@@ -7,7 +7,7 @@ import { topicSelectorAll } from '../../lib/resource-progress';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';

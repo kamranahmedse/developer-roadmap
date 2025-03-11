@@ -1,6 +1,9 @@
+@import '@roadmapsh/editor/style.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer components {
   .container {

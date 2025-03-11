@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Edge, Node } from '@xyflow/react';
+import type { Edge, Node } from '@roadmapsh/editor';
 import matter from 'gray-matter';
 import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
