@@ -27,7 +27,8 @@
     "compress:images": "tsx ./scripts/compress-images.ts",
     "generate:roadmap-content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
     "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/node": "^8.3.4",
@@ -91,6 +92,7 @@
     "@types/turndown": "^5.0.5",
     "csv-parser": "^3.0.0",
     "gh-pages": "^6.2.0",
+    "husky": "^9.1.7",
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
     "openai": "^4.67.3",

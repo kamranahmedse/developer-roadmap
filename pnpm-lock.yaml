@@ -186,6 +186,9 @@ importers:
       gh-pages:
         specifier: ^6.2.0
         version: 6.2.0
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
@@ -1985,6 +1988,11 @@ packages:
 
   humanize-ms@1.2.1:
     resolution: {integrity: sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -5076,6 +5084,8 @@ snapshots:
   humanize-ms@1.2.1:
     dependencies:
       ms: 2.1.3
+
+  husky@9.1.7: {}
 
   ignore@5.3.2: {}
 
