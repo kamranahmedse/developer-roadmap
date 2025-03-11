@@ -107,7 +107,7 @@ export function BillingPage() {
       {billingDetails?.status !== 'none' &&
         !isLoadingBillingDetails &&
         priceDetails && (
-          <div className="mt-1 max-w-3xl">
+          <div className="mt-1">
             {billingDetails?.status === 'past_due' && (
               <div className="mb-6 flex items-center gap-2 rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-red-600">
                 <AlertTriangle className="h-5 w-5" />
@@ -173,10 +173,10 @@ export function BillingPage() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 flex max-sm:flex-col gap-3">
                 {!shouldHideDeleteButton && (
                   <button
-                    className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    className="inline-flex max-sm:flex-grow items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
                     onClick={() => {
                       setShowUpgradeModal(true);
                     }}
