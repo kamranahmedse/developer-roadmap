@@ -71,7 +71,9 @@ export function UserCoursesList(props: UserCoursesListProps) {
       )}
       <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
         <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold">Your Courses</h2>
+          <h2 className="text-lg font-semibold">
+            <span className='max-md:hidden'>Your </span>Courses
+          </h2>
         </div>
 
         <div className="flex items-center gap-2">
@@ -84,7 +86,12 @@ export function UserCoursesList(props: UserCoursesListProps) {
             )}
           >
             <p className="flex items-center text-sm text-yellow-600">
-              {limitUsedPercentage}% of daily limit used{' '}
+              <span className="max-md:hidden">
+                {limitUsedPercentage}% of daily limit used{' '}
+              </span>
+              <span className="inline md:hidden">
+                {limitUsedPercentage}% used
+              </span>
               <button
                 onClick={() => {
                   setShowUpgradePopup(true);
@@ -97,9 +104,7 @@ export function UserCoursesList(props: UserCoursesListProps) {
             </p>
           </div>
 
-          <div className={cn('relative w-64 max-sm:hidden', {
-            
-          })}>
+          <div className={cn('relative w-64 max-sm:hidden', {})}>
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
               <Search className="h-4 w-4 text-gray-400" />
             </div>
