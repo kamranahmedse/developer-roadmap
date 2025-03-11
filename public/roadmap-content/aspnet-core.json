@@ -2311,31 +2311,10 @@
       }
     ]
   },
-  "gBuaVZfqJ0-g21sKohQtx": {
+  "azuer-service-bus@gBuaVZfqJ0-g21sKohQtx.md": {
     "title": "Azuer Service Bus",
-    "description": "Azure Service Bus is a scalable and reliable messaging platform that can handle a high volume of messages, it's also easy to use, has a lot of features like subscription, Topics, Dead Letter, and easy to integrate with other Azure services, and it's a managed service which means Microsoft takes care of the infrastructure and scaling. However, it's worth noting that Azure Service Bus is a paid service and the cost will depend on the number of messages and the size of the data that you are sending and receiving.\n\nTo learn more, visit the following links:",
-    "links": [
-      {
-        "title": "Getting Started With Azure Service Bus and ASP.NET Core",
-        "url": "https://www.c-sharpcorner.com/article/get-started-with-azure-service-bus-queues-asp-net-core-part-1/",
-        "type": "article"
-      },
-      {
-        "title": "How to Send & receive messages from Azure Service Bus queue (.NET)?",
-        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless",
-        "type": "article"
-      },
-      {
-        "title": "What is Azure Service Bus?",
-        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Azure",
-        "url": "https://app.daily.dev/tags/azure?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "SQKIUa_UsJ4cls-Vs9yHU": {
     "title": "Mass Transit",
