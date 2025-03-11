@@ -311,7 +311,7 @@ export function SQLCoursePage() {
 
       <SectionHeader
         title="Not your average SQL course"
-        description="Built around a text-based interactive approach and packed with practical challenges, this course stands out with features that make it truly unique."
+        description="This SQL programming class is designed to help you go from beginner to expert through hands-on practice with real-world scenarios, mastering everything from basic to complex queries."
         className="mt-16 md:mt-20"
       />
 
