@@ -9,7 +9,3 @@ echo "Latest commit hash: $LATEST_COMMIT_HASH"
 
 # Install the package using the latest commit hash
 pnpm add github:roadmapsh/web-draw-v2#"$LATEST_COMMIT_HASH"\&path:packages/editor
-
-# Ignore worktree changes for package.json and pnpm-lock.yaml
-git update-index --assume-unchanged package.json || true
-git update-index --assume-unchanged pnpm-lock.yaml || true
