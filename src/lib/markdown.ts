@@ -1,5 +1,6 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
+import MarkdownItAsync from 'markdown-it-async';
 
 // replaces @variableName@ with the value of the variable
 export function replaceVariables(
@@ -16,13 +17,13 @@ export function replaceVariables(
   });
 }
 
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+});
+
 export function markdownToHtml(markdown: string, isInline = true): string {
   try {
-    const md = new MarkdownIt({
-      html: true,
-      linkify: true,
-    });
-
     // Solution to open links in new tab in markdown
     // otherwise default behaviour is to open in same tab
     //
@@ -59,4 +60,53 @@ export function markdownToHtml(markdown: string, isInline = true): string {
 // \\[link\\](https://example.com) -> [link](https://example.com)
 export function sanitizeMarkdown(markdown: string) {
   return markdown.replace(/\\\[([^\\]+)\\\]\(([^\\]+)\)/g, '[$1]($2)');
+}
+
+const markdownItAsync = MarkdownItAsync({
+  html: true,
+  linkify: true,
+
+  async highlight(code, lang, attrs) {
+    const { codeToHtml } = await import('shiki');
+
+    const html = await codeToHtml(code, {
+      lang: lang?.toLowerCase(),
+      theme: 'dracula',
+    });
+
+    return html;
+  },
+});
+
+export async function markdownToHtmlWithHighlighting(markdown: string) {
+  try {
+    // Solution to open links in new tab in markdown
+    // otherwise default behaviour is to open in same tab
+    //
+    // SOURCE: https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer
+    //
+    const defaultRender =
+      markdownItAsync.renderer.rules.link_open ||
+      function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options);
+      };
+
+    markdownItAsync.renderer.rules.link_open = function (
+      tokens,
+      idx,
+      options,
+      env,
+      self,
+    ) {
+      // Add a new `target` attribute, or replace the value of the existing one.
+      tokens[idx].attrSet('target', '_blank');
+
+      // Pass the token to the default renderer.
+      return defaultRender(tokens, idx, options, env, self);
+    };
+
+    return markdownItAsync.renderAsync(markdown);
+  } catch (e) {
+    return markdown;
+  }
 }
