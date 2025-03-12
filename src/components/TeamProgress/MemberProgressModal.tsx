@@ -20,7 +20,7 @@ import { MemberProgressModalHeader } from './MemberProgressModalHeader';
 import { replaceChildren } from '../../lib/dom.ts';
 import { XIcon } from 'lucide-react';
 import type { PageType } from '../CommandMenu/CommandMenu.tsx';
-import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { renderFlowJSON } from '@roadmapsh/editor';
 import { getResourceMeta } from '../../lib/roadmap.ts';
 
 export type ProgressMapProps = {

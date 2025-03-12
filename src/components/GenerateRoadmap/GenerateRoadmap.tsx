@@ -1,3 +1,5 @@
+import './GenerateRoadmap.css';
+
 import {
   type FormEvent,
   type MouseEvent,
@@ -6,10 +8,8 @@ import {
   useRef,
   useState,
 } from 'react';
-import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
-import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
-import { renderFlowJSON } from '../../../editor/renderer/renderer';
+import { generateAIRoadmapFromText, renderFlowJSON } from '@roadmapsh/editor';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
 import {
@@ -271,6 +271,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           height: undefined,
           style: {
             ...node.style,
+            width: undefined,
+            height: undefined,
+          },
+          measured: {
             width: undefined,
             height: undefined,
           },
@@ -720,7 +724,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         </div>
         <div
           className={cn({
-            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px]  md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
+            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px] md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
               !isAuthenticatedUser,
           })}
         >

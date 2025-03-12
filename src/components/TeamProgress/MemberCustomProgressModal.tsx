@@ -1,3 +1,4 @@
+import '../FrameRenderer/FrameRenderer.css';
 import {
   useCallback,
   useEffect,
@@ -6,7 +7,6 @@ import {
   useRef,
 } from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
-import '../FrameRenderer/FrameRenderer.css';
 import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import {
@@ -15,13 +15,12 @@ import {
   type ResourceType,
   updateResourceProgress,
 } from '../../lib/resource-progress';
-import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
-import type { Node } from 'reactflow';
+import { ReadonlyEditor } from '@roadmapsh/editor';
+import type { Node } from '@roadmapsh/editor';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';

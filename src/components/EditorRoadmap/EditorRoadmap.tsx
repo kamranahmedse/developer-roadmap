@@ -11,8 +11,6 @@ import {
 import { httpGet } from '../../lib/http';
 import { ProgressNudge } from '../FrameRenderer/ProgressNudge';
 import { getUrlParams } from '../../lib/browser.ts';
-import { cn } from '../../lib/classname.ts';
-import { getUser } from '../../lib/jwt.ts';
 
 type EditorRoadmapProps = {
   resourceId: string;
