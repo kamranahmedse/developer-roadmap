@@ -1,6 +1,6 @@
 # Ephemeral FS
 
-By default, the storage within a Docker container is ephemeral, meaning that any data changes or modifications made inside a container will only persist as long as the container is running. Once the container is stopped and removed, all the associated data will be lost. This is because Docker containers are designed to be stateless by nature. This temporary or short-lived storage is called the "ephemeral container file system". It is an essential feature of Docker, as it enables fast and consistent deployment of applications across different environments without worrying about the state of a container.
+By default, the storage within a Docker container is ephemeral, meaning that any data changes or modifications made inside a container will only persist until the container is stopped and removed. Once the container is stopped and removed, all the associated data will be lost. This is because Docker containers are designed to be stateless by nature. This temporary or short-lived storage is called the "ephemeral container file system". It is an essential feature of Docker, as it enables fast and consistent deployment of applications across different environments without worrying about the state of a container.
 
 Visit the following resources to learn more:
 

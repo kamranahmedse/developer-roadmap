@@ -1023,16 +1023,16 @@
   },
   "XteNExIZN3_g95_dPCopY": {
     "title": "Exitting / Exit Codes",
-    "description": "`Exiting` is a way of terminating a Node.js process by using node.js process module.\n\nVisit the following resources to learn more:",
+    "description": "Exiting is a way of terminating a Node.js process by using node.js process module.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Node.js Docs on exit",
-        "url": "https://nodejs.org/docs/latest/api/process.html",
+        "title": "Exit Documentation",
+        "url": "https://nodejs.org/api/process.html#event-exit",
         "type": "article"
       },
       {
         "title": "How to Exit a Process in Node.js",
-        "url": "https://www.knowledgehut.com/blog/web-development/node-js-process-exit",
+        "url": "https://betterstack.com/community/questions/how-to-exit-in-node-js/",
         "type": "article"
       }
     ]

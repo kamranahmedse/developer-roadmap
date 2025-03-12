@@ -179,6 +179,21 @@
         "title": "Tuples Documentation",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
         "type": "article"
+      },
+      {
+        "title": "When and How to Use Tuples",
+        "url": "https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/",
+        "type": "article"
+      },
+      {
+        "title": "Python's tuple Data Type: A Deep Dive With Examples",
+        "url": "https://realpython.com/python-tuple/#getting-started-with-pythons-tuple-data-type",
+        "type": "article"
+      },
+      {
+        "title": "why are Tuples even a thing?",
+        "url": "https://www.youtube.com/watch?v=fR_D_KIAYrE",
+        "type": "video"
       }
     ]
   },
@@ -205,7 +220,7 @@
   },
   "bc9CL_HMT-R6nXO1eR-gP": {
     "title": "Dictionaries",
-    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Dictionaries are unordered collections, meaning the order of items is not guaranteed.\n\nLearn more from the following resources:",
+    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Starting from Python 3.7, dictionaries maintain the order of items as they were added.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Dictionaries in Python",
@@ -215,6 +230,11 @@
       {
         "title": "W3 Schools - Dictionaries",
         "url": "https://www.w3schools.com/python/python_dictionaries.asp",
+        "type": "article"
+      },
+      {
+        "title": "Dictionaries in Python",
+        "url": "https://realpython.com/python-dicts/",
         "type": "article"
       }
     ]
@@ -533,6 +553,11 @@
         "title": "Modules in Python",
         "url": "https://www.programiz.com/python-programming/modules",
         "type": "article"
+      },
+      {
+        "title": "Python Modules and Packages",
+        "url": "https://realpython.com/python-modules-packages/",
+        "type": "article"
       }
     ]
   },
@@ -596,6 +621,11 @@
         "title": "Python Iterators",
         "url": "https://www.programiz.com/python-programming/iterator",
         "type": "article"
+      },
+      {
+        "title": "Iterators and Iterables in Python",
+        "url": "https://realpython.com/python-iterators-iterables/",
+        "type": "article"
       }
     ]
   },
@@ -622,7 +652,7 @@
   },
   "P_Di-XPSDITmU3xKQew8G": {
     "title": "Object Oriented Programming",
-    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
+    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphism, encapsulation, etc., in programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Object Oriented Programming in Python",
@@ -685,7 +715,7 @@
   },
   "zAS4YiEJ6VPsyABrkIG8i": {
     "title": "Methods, Dunder",
-    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
+    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods that have two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Method vs Function in Python",
@@ -839,6 +869,11 @@
         "title": "Python Paradigms",
         "url": "https://opensource.com/article/19/10/python-programming-paradigms",
         "type": "article"
+      },
+      {
+        "title": "Learn Functional Programming - Python Course",
+        "url": "https://www.youtube.com/watch?v=5QZYGU0C2OA",
+        "type": "video"
       }
     ]
   },
@@ -1279,7 +1314,7 @@
     "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "links": [
       {
-        "title": "ruff documentation",
+        "title": "Ruff documentation",
         "url": "https://docs.astral.sh/ruff/",
         "type": "article"
       }
@@ -1317,7 +1352,7 @@
     "description": "Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Shpinx Website",
+        "title": "Sphinx Website",
         "url": "https://www.sphinx-doc.org/en/master/",
         "type": "article"
       }

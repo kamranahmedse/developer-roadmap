@@ -77,6 +77,9 @@ h3 > code {
 .prose ul li > code:before,
 p > code:before,
 .prose ul li > code:after,
+.prose ol li > code:before,
+p > code:before,
+.prose ol li > code:after,
 p > code:after,
 a > code:after,
 a > code:before {
@@ -134,8 +137,46 @@ a > code:before {
   animation: barberpole 15s linear infinite;
 }
 
+.striped-loader-yellow {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(55, 100%, 50%, 0.7) 5px,
+    hsla(55, 100%, 50%, 0.7) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
+.striped-loader-slate {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    hsla(0, 0%, 0%, 0.1) 5px,
+    hsla(0, 0%, 0%, 0.1) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 30s linear infinite;
+}
+
+.striped-loader-slate-fast {
+  animation: barberpole 10s linear infinite;
+}
+
 @keyframes barberpole {
   100% {
     background-position: 100% 100%;
   }
+}
+
+/* Hide scrollbars */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

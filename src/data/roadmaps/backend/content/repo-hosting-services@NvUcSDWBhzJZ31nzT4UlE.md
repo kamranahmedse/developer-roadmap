@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@GitHub](https://github.com)
 - [@official@GitLab](https://about.gitlab.com/)
 - [@official@BitBucket](https://bitbucket.org/product/guides/getting-started/overview)
-- [@article@How to choose the best source code repository](https://blockandcapital.com/en/choose-code-repository/)

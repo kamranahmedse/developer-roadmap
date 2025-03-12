@@ -4,5 +4,5 @@ Tableau is a powerful data visualization tool utilized extensively by data analy
 
 Learn more from the following resources:
 
-- [@official@Tableau Website](https://www.tableau.com/en-gb)
+- [@official@Tableau](https://www.tableau.com/en-gb)
 - [@video@What is Tableau?](https://www.youtube.com/watch?v=NLCzpPRCc7U)

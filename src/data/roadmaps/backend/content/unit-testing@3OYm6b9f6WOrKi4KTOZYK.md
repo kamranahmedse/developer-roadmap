@@ -4,7 +4,7 @@ Unit testing is a software testing method where individual components or units o
 
 Visit the following resources to learn more:
 
-- [@article@Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
+- [@article@Unit Testing](https://en.wikipedia.org/wiki/Unit_testing)
 - [@article@What is Unit Testing?](https://www.guru99.com/unit-testing-guide.html)
 - [@video@What is Unit Testing?](https://www.youtube.com/watch?v=W2KOSaetWBk)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

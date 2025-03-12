@@ -5,4 +5,4 @@ Application Programming Interfaces, better known as APIs, play a fundamental rol
 Learn more from the following resources:
 
 - [@article@What is an API?](https://aws.amazon.com/what-is/api/)
-- [@article@A beginners guide to APIs](https://www.postman.com/what-is-an-api/)
+- [@article@A Beginner's Guide to APIs](https://www.postman.com/what-is-an-api/)

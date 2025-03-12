@@ -364,8 +364,13 @@
     "description": "Joints in game development primarily refer to the connections between two objects, often used in the context of physics simulations and character animations. These might simulate the physics of real-world joints like hinges or springs. Developers can control various characteristics of joints such as their constraints, forces, and reactions. The different types come with various properties suitable for specific needs. For example, Fixed joints keep objects together, Hinge joints allow rotation around an axis, and Spring joints apply a force to keep objects apart.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Game Character Rigging Fundamentals",
-        "url": "https://learn.unity.com/project/game-character-rigging-fundamentals",
+        "title": "Introduction to joints",
+        "url": "https://docs.unity3d.com/Manual/Joints.html",
+        "type": "article"
+      },
+      {
+        "title": "Character Rigging for Video Games",
+        "url": "https://game-ace.com/blog/character-rigging-for-video-games/",
         "type": "article"
       },
       {
@@ -599,16 +604,16 @@
   },
   "vWLKYK2KUzV1fO-vQunzW": {
     "title": "EPA",
-    "description": "The **EPA**, also known as the _Environmental Protection Agency_, is not typically related to game development or the concept of intersection within this context. However, in game development, EPA might refer to an 'Event-driven Process chain Architecture' or some other game-specific acronym. In this domain, different terminologies and acronyms are often used to express complex architectures, designs, or functionalities. If you have encountered EPA in a game development context, it might be best to refer to the specific documentation or guide where it was described for a better understanding. Understanding the context is key to untangle the meaning of such abbreviations.\n\nVisit the following resources to learn more:",
+    "description": "The **EPA** (Expanding Polytope Algorithm) is an iterative algorithm used for calculating the penetration depth between two shapes in collision detection. It is commonly used in physics engines and robotics. The algorithm takes the resulting simplex from a previously applied GJK algorithm, iteratively expanding the polytope towards the Minkowski Difference boundary until it finds the closest point to the origin. The vector from that point to the origin is the penetration vector and its magnitude is equal to the penetration depth between the two shapes.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Environmental Sustainability in Game Development",
-        "url": "https://polydin.com/environmental-sustainability-in-game-development/",
+        "title": "EPA: Collision response algorithm for 2D/3D - winter.dev",
+        "url": "https://winter.dev/articles/epa-algorithm",
         "type": "article"
       },
       {
-        "title": "Gaming Sustainability - Microsoft Game Dev",
-        "url": "https://learn.microsoft.com/en-us/gaming/sustainability/sustainability-overview",
+        "title": "EPA (Expanding Polytope Algorithm) - dyn4j",
+        "url": "https://dyn4j.org/2010/05/epa-expanding-polytope-algorithm/",
         "type": "article"
       }
     ]
@@ -744,7 +749,7 @@
   },
   "7OffO2mBmfBKqPBTZ9ngI": {
     "title": "Godot",
-    "description": "Godot is an open-source, multi-platform game engine that is known for being feature-rich and user-friendly. It is developed by hundreds of contributors from around the world and supports the creation of both 2D and 3D games. Godot uses its own scripting language, GDScript, which is similar to Python, but it also supports C# and visual scripting. It is equipped with a unique scene system and comes with a multitude of tools that can expedite the development process. Godot's design philosophy centers around flexibility, extensibility, and ease of use, providing a handy tool for both beginners and pros in game development.\n\nVisit the following resources to learn more:",
+    "description": "Godot is an open-source, multi-platform game engine that is known for being feature-rich and user-friendly. It is developed by hundreds of contributors from around the world and supports the creation of both 2D and 3D games. Godot uses its own scripting language, GDScript, which is similar to Python, but it also supports C#. It is equipped with a unique scene system and comes with a multitude of tools that can expedite the development process. Godot's design philosophy centers around flexibility, extensibility, and ease of use, providing a handy tool for both beginners and pros in game development.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "godotengine/godot",
@@ -763,7 +768,17 @@
       },
       {
         "title": "Godot in 100 Seconds",
-        "url": "https://m.youtube.com/watch?v=QKgTZWbwD1U",
+        "url": "https://www.youtube.com/watch?v=QKgTZWbwD1U",
+        "type": "video"
+      },
+      {
+        "title": "Tutorial - How to make a Video Game in Godot",
+        "url": "https://www.youtube.com/watch?v=LOhfqjmasi0",
+        "type": "video"
+      },
+      {
+        "title": "Tutorial - How to make 3D Games in Godot",
+        "url": "https://www.youtube.com/watch?v=ke5KpqcoiIU",
         "type": "video"
       }
     ]
@@ -882,8 +897,8 @@
     "description": "**C** and **C++ (commonly known as CPP)** are two of the most foundational high-level programming languages in computer science. **C** was developed in the 1970s and it is a procedural language, meaning it follows a step-by-step approach. Its fundamental principles include structured programming and lexical variable scope.\n\nOn the other hand, **C++** follows the paradigm of both procedural and object-oriented programming. It was developed as an extension to C to add the concept of \"classes\" - a core feature of object-oriented programming. C++ enhances C by introducing new features like function overloading, exception handling, and templates.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The C Programming Language",
-        "url": "https://www.iso.org/standard/74528.html",
+        "title": "C Programming Language",
+        "url": "https://en.wikipedia.org/wiki/C_%28programming_language%29",
         "type": "article"
       },
       {

@@ -1,15 +1,11 @@
 ---
-import {
-  getGuideTableOfContent,
-  type GuideFileType,
-  HeadingGroupType,
-} from '../../lib/guide';
+import { getGuideTableOfContent, type HeadingGroupType } from '../../lib/guide';
+import { markdownToHtml } from '../../lib/markdown';
+import { type QuestionGroupType } from '../../lib/question-group';
+import { RelatedGuides } from '../Guide/RelatedGuides';
 import MarkdownFile from '../MarkdownFile.astro';
 import { TableOfContent } from '../TableOfContent/TableOfContent';
-import { markdownToHtml, replaceVariables } from '../../lib/markdown';
-import { QuestionGroupType } from '../../lib/question-group';
 import { QuestionsList } from './QuestionsList';
-import { RelatedGuides } from '../Guide/RelatedGuides';
 
 interface Props {
   questionGroup: QuestionGroupType;
@@ -22,14 +18,12 @@ const tableOfContent: HeadingGroupType[] = [
   ...getGuideTableOfContent(allHeadings),
   {
     depth: 2,
-    title: 'Test with Flashcards',
     children: [],
     slug: 'test-with-flashcards',
     text: 'Test yourself with Flashcards',
   },
   {
     depth: 2,
-    title: 'Questions List',
     children: [
       {
         depth: 2,
@@ -68,7 +62,7 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
       <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
           relatedTitle={guideFrontmatter?.relatedTitle}
-          relatedGuides={guideFrontmatter?.relatedGuides || {}}
+          relatedGuides={questionGroup?.relatedGuides || {}}
           client:load
         />
         <TableOfContent toc={tableOfContent} client:load />
@@ -86,7 +80,7 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
   >
     <MarkdownFile>
       <h1 class='mb-3 text-balance text-4xl font-bold'>
-        {replaceVariables(guideFrontmatter.title)}
+        {guideFrontmatter.title}
       </h1>
       {
         author && (
@@ -142,8 +136,8 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
             </h3>
             {questionGroup.questions
               .filter((q) => {
-                return q.topics
-                  .map((t) => t.toLowerCase())
+                return q?.topics
+                  ?.map((t) => t.toLowerCase())
                   .includes(questionLevel);
               })
               .map((q) => (
@@ -155,6 +149,11 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
           </div>
         ))
       }
+      {questionGroup.ending && (
+        <div class='mb-5'>
+          <div set:html={markdownToHtml(questionGroup.ending, false)} />
+        </div>
+      )}
     </MarkdownFile>
   </div>
 </article>

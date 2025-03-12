@@ -77,7 +77,7 @@ For example, to iterate through a vector and print its elements, you can use the
 
 ```cpp
 std::vector<int> my_vec = {1, 2, 3, 4, 5};
-for(auto it = my_vec.begin(); it != my_vec.end(); ++it) {
+for (auto it = my_vec.begin(); it != my_vec.end(); ++it) {
     std::cout << *it << " ";
 }
 ```

@@ -15,6 +15,7 @@ import { siteConfig } from '../lib/config';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
 import ChangelogBanner from '../components/ChangelogBanner.astro';
+import Clarity from '../components/Analytics/Clarity.astro';
 
 export interface Props {
   title: string;
@@ -71,7 +72,6 @@ const gaPageIdentifier = Astro.url.pathname
     <meta name='commit' content={commitUrl} />
     <title>{title}</title>
     <meta name='description' content={description} />
-    <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
     {
       redirectUrl && (
@@ -159,6 +159,7 @@ const gaPageIdentifier = Astro.url.pathname
     }
 
     <Analytics />
+    <Clarity />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -168,9 +169,7 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <slot name='changelog-banner'>
-        <ChangelogBanner />
-      </slot>
+      <slot name='changelog-banner' />
       <slot name='open-source-banner'>
         <OpenSourceBanner />
       </slot>

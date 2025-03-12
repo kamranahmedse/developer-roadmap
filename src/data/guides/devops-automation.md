@@ -8,15 +8,8 @@ seo:
   description: 'Streamline your DevOps pipeline! Explore what DevOps automation is and the 8 best practices for seamless delivery.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/what-is-devops-automation-03k11.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-isNew: true
+relatedGuidesId: devops
+isNew: false
 type: 'textual'
 date: 2024-11-05
 sitemap:
@@ -36,7 +29,7 @@ In this article, we'll explore what DevOps Automation really is, its key compone
 
 ## What is DevOps Automation?
 
-DevOps Automation refers to the use of tools and scripts to automate the different stages of the DevOps lifecycle and many aspects of the software development life cycle. This includes everything from code integration and application deployment to infrastructure management and monitoring.
+DevOps Automation refers to the use of [automation tools](https://roadmap.sh/devops/automation-tools) and scripts to automate the different stages of the DevOps lifecycle and many aspects of the software development life cycle. This includes everything from code integration and application deployment to infrastructure management and monitoring.
 
 Automation is one of the key methodologies that help you ensure that these processes are, in the end, efficient, consistent, and reliable.
 
@@ -185,7 +178,7 @@ Try to identify sources of toil in your workflows and continuously work to reduc
 
 ## Choose your DevOps automation tools
 
-Once you’ve incorporated these best practices into your DevOps activities, the next immediate action is to decide what your top automation tools will be.
+Once you’ve incorporated these best practices into your DevOps activities, the next immediate action is to decide what your top [DevOps automation tools](https://roadmap.sh/devops/automation-tools) will be.
 These tools should allow you to:
 
 * Comply with the best practices already covered.
@@ -207,4 +200,4 @@ By automating key portions of your software development process like CI/CD, infr
 
 Implementing best practices will ensure your automation efforts are successful and aligned with your business goals.
 
-If you’re looking for more details on how to get started as a DevOps or you’d like to learn more about this practice, check out the [full DevOps roadmap here](https://roadmap.sh/devops).
+If you’re looking for more details on how to get started as a DevOps or you’d like to learn more about this practice, check out our [DevOps roadmap here](https://roadmap.sh/devops).

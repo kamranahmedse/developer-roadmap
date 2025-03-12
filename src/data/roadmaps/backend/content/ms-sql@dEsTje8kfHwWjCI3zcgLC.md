@@ -4,7 +4,7 @@ Microsoft SQL Server (MS SQL) is a relational database management system develop
 
 Visit the following resources to learn more:
 
-- [@roadmap@SQL Roadmap](https://roadmap.sh/sql)
+- [@roadmap@Visit Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - [@official@MS SQL](https://www.microsoft.com/en-ca/sql-server/)
 - [@article@Tutorials for SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15)
 - [@video@SQL Server tutorial for beginners](https://www.youtube.com/watch?v=-EPMOaV7h_Q)

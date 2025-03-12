@@ -55,6 +55,8 @@ Find [the content directory inside the relevant roadmap](https://github.com/kamr
 - Maximum of 8 links per topic.
 - Follow the below style guide for content.
 
+Please note that we are intentionally keeping the content under the topic popup concise. You MUST always aim to explain the topic simply in a **single paragraph** or so and provide external resources where users can learn more about the topic.
+
 ### How To Structure Content
 
 Please adhere to the following style when adding content to a topic:

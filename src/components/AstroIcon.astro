@@ -1,6 +1,5 @@
 ---
 import { parse } from 'node-html-parser';
-import type { Attributes } from 'node-html-parser/dist/nodes/html';
 
 export interface Props {
   icon: string;
@@ -14,7 +13,6 @@ async function getSVG(name: string) {
     query: '?raw',
     eager: true,
   });
-
 
   if (!(filepath in files)) {
     throw new Error(`${filepath} not found`);

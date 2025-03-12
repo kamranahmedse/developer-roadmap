@@ -5,3 +5,4 @@ A row in PostgreSQL represents a single, uniquely identifiable record with a spe
 Learn more from the following resources:
 
 - [@official@Concepts](https://www.postgresql.org/docs/7.1/query-concepts.html)
+- [@official@PostgreSQL - Rows](https://www.postgresql.org/docs/current/functions-comparisons.html)

@@ -23,7 +23,7 @@ DESCRIPTION:${details}
 LOCATION:${location}
 DTSTART:${startDate.toISOString().replace(/-|:|\.\d+/g, '')}
 DTEND:${endDate.toISOString().replace(/-|:|\.\d+/g, '')}
-RRULE:FREQ=DAILY
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
 
 BEGIN:VALARM
 TRIGGER:-PT30M
@@ -151,7 +151,7 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
       dates: `${startDate.toISO().replace(/-|:|\.\d+/g, '')}/${endDate.toISO().replace(/-|:|\.\d+/g, '')}`,
       details,
       location,
-      recur: 'RRULE:FREQ=DAILY',
+      recur: 'RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR',
     }).toString();
 
     setIsLoading(false);

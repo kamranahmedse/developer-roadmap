@@ -8,14 +8,7 @@ seo:
   description: 'Find out exactly what it takes to be a successful DevOps engineer with my recommendations for essential DevOps skills'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-09-12
@@ -84,7 +77,7 @@ To effectively implement CI/CD pipelines, you'll need to be proficient with the 
 * **Jenkins**: An open-source automation server, Jenkins is highly customizable and supports a huge number of integration plugins.
 * **GitLab CI**: Part of the larger GitLab platform, GitLab CI is tightly integrated with GitLab's version control and issue-tracking features.
 * **CircleCI**: Known for its speed and simplicity, CircleCI is perfect for environments that prioritize cloud-native solutions. It provides a user-friendly interface and integrates well with popular tools like Docker, AWS, and Kubernetes.
-* **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with other DevOps tools, and provides flexibility to run complex automation tasks across multiple environments.
+* **GitHub Actions**: GitHub Actions is a powerful CI/CD tool integrated directly into GitHub, allowing developers to automate, test, and deploy their code right from their repositories. It supports custom workflows, integration with [other DevOps tools](https://roadmap.sh/devops/tools), and provides flexibility to run complex automation tasks across multiple environments.
 
 ### Best Practices for Setting Up and Managing CI/CD Pipelines
 
@@ -214,9 +207,9 @@ These patterns define how applications are structured and interact with cloud in
 * **Serverless Architecture**: Serverless computing allows developers to build and deploy applications without managing the underlying infrastructure. In a serverless architecture, code is executed in response to events, such as HTTP requests or changes in data, using services like **AWS Lambda**, **Azure Functions**, or **Google Cloud Functions**.
 * **Event-Driven Architecture**: In an event-driven architecture, applications respond to events in real-time, often using tools like **event streams** (e.g., Apache Kafka) and **message queues**.
 
-## 6\. Monitoring and Logging!
+## 6\. Monitoring and Logging
 
-[monitoring logging servers][https://assets.roadmap.sh/guest/monitoring-logging-servers-ztf1a.png]
+![monitoring logging servers](https://assets.roadmap.sh/guest/monitoring-logging-servers-ztf1a.png)
 
 Monitoring and logging are vital components of a robust DevOps strategy. They provide visibility into the health and performance of your systems, allowing you to detect issues early, troubleshoot, and ensure the reliability of your applications.
 

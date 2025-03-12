@@ -5,3 +5,4 @@ The **Observer Pattern** is a software design pattern in which an object, known 
 Visit the following resources to learn more:
 
 - [@article@Observer Pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+- [@article@Observer Pattern](https://refactoring.guru/design-patterns/observer)

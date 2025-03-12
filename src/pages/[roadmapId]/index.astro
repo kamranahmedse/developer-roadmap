@@ -4,7 +4,7 @@ import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
-import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import { ShareIcons } from '../../components/ShareIcons/ShareIcons';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -123,6 +123,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
           question?.title && (
             <RoadmapTitleQuestion
               client:load
+              roadmapId={roadmapId}
               question={question?.title}
               answer={question?.description}
             />
@@ -133,8 +134,11 @@ const projects = await getProjectsByRoadmapId(roadmapId);
 
     <div class='container relative !max-w-[1000px]'>
       <ShareIcons
+        resourceId={roadmapId}
+        resourceType='roadmap'
         description={roadmapData.briefDescription}
         pageUrl={`https://roadmap.sh/${roadmapId}`}
+        client:load
       />
 
       {

@@ -1,10 +1,8 @@
 # Angular and History
 
-Angular is a web framework that empowers developers to build fast, reliable applications.
+Angular is a TypeScript-based open-source front-end web framework developed and maintained by Google.
 
-Maintained by a dedicated team at Google, Angular provides a broad suite of tools, APIs, and libraries to simplify and
-streamline your development workflow. Angular gives you a solid platform on which to build fast, reliable applications
-that scale with both the size of your team and the size of your codebase.
+It is used for building dynamic, single-page web applications (SPAs). Angular provides comprehensive tools, including dependency injection, data binding, routing, and testing, to create robust and scalable web applications.
 
 Visit the following resources to learn more:
 

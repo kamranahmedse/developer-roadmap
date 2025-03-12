@@ -1,0 +1,15 @@
+---
+import { SQLCoursePage } from '../../components/SQLCourse/SQLCoursePage.tsx';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout
+  title='Master SQL'
+  briefTitle='Learn SQL from the ground up'
+  ogImageUrl='https://assets.roadmap.sh/guest/sql-course-bjc53.png'
+  description='Learn SQL from the ground up. This SQL programming class is designed to help you go from beginner to expert through hands-on practice with real-world scenarios, mastering everything from basic to complex queries.'
+  keywords={['sql', 'database', 'database management', 'database administration']}
+  canonicalUrl='/courses/sql'
+>
+  <SQLCoursePage client:load />
+</SkeletonLayout>

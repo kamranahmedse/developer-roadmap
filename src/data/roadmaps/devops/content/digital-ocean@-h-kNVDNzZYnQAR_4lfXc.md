@@ -4,7 +4,7 @@ DigitalOcean is a cloud infrastructure provider that offers simple, affordable, 
 
 Visit the following resources to learn more:
 
-- [@official@DigitalOcean Website](https://www.digitalocean.com/)
+- [@official@DigitalOcean](https://www.digitalocean.com/)
 - [@article@DigitalOcean Hacktoberfest](https://hacktoberfest.com/)
 - [@video@Getting Started With Kubernetes on DigitalOcean](https://www.youtube.com/watch?v=cJKdo-glRD0)
 - [@feed@Explore top posts about DigitalOcean](https://app.daily.dev/tags/digitalocean?ref=roadmapsh)

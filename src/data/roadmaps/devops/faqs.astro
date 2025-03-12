@@ -3,54 +3,123 @@ import type { FAQType } from '../../../components/FAQs/FAQs.astro';
 
 export const faqs: FAQType[] = [
   {
-    question: 'How do Agile and DevOps interrelate?',
+    question: 'What skills are required to become a DevOps Engineer?',
     answer: [
-      'Agile and DevOps both prioritize collaboration, continuous improvement, and delivering working software. They can be used together to create a more efficient software development process. Agile emphasizes iterative development and customer satisfaction, while DevOps emphasizes automating processes and integrating development and operations teams. When used together, Agile and DevOps can improve software development and delivery by streamlining processes and enhancing collaboration.',
+      'To become a DevOps Engineer, you need to have a combination of technical and soft skills. Technical skills include knowledge of programming languages, [automation tools](https://roadmap.sh/devops/automation-tools), containerization, cloud platforms, CI/CD pipelines, configuration management tools, and monitoring and logging tools.',
+      "Soft skills include communication, collaboration, problem-solving, and adaptability. After all, you'll be dealing with multiple actors, both from the different dev teams you interact with and from ops teams looking to ensure smooth operations and robust performance.",
+      'Gain experience by working on DevOps projects, develop a DevOps mindset, get certified, and apply for DevOps Engineer positions by highlighting your [DevOps skills](https://roadmap.sh/devops/skills) and experience in your resume.',
+    ],
+  },
+  {
+    question: 'Does a DevOps Engineer know how to code?',
+    answer: [
+      'A DevOps Engineer usually knows how to code, and not only that but they typically have great coding skills. After all, they use code on pretty much everything they do.',
+      "Mind you, they may not always write application code like a software developer (that's not their job after all), however, they frequently script and automate tasks using languages like Python, Bash, Go, or Ruby.",
+      'DevOps Engineers also write infrastructure-as-code (IaC) using tools like Terraform or CloudFormation, build CI/CD pipelines with scripting languages, and automate system configurations with Ansible, Chef, or Puppet. The list of [DevOps tools](https://roadmap.sh/devops/tools) available is quite extensive, and most of them require some sort of coding skills.',
+      "And while it's not always the case, in some situations they might also need to understand and modify application code when troubleshooting deployments or optimizing performance (tasks that can also be done in conjunction with the dev team).",
+      "In short, coding is a big part of a DevOps Engineer's toolkit, but the focus is on automation, efficiency, and system reliability rather than pure application development.",
+    ],
+  },
+  {
+    question: 'How are DevOps Engineers different from developers?',
+    answer: [
+      'DevOps Engineers and developers are different from each other, however, their roles complement themselves nicely in the context of software development. Developers focus on writing application code, implementing features, and optimizing performance, while DevOps Engineers ensure that the software runs smoothly in production by managing deployment pipelines, automating infrastructure, and maintaining system reliability.',
+      "A key difference is that developers primarily work on building and improving applications, whereas DevOps Engineers handle the processes and tools that enable continuous integration, automated testing, and efficient deployments. If you're curious about a more detailed comparison, [this guide on DevOps vs. Developers](https://roadmap.sh/devops/vs-developer) breaks it down further. Similarly, if you’re wondering [how DevOps compares to full-stack development, this resource](https://roadmap.sh/devops/vs-full-stack) provides a helpful perspective.",
+      'While both roles require coding skills, **DevOps is more focused on automation, scalability, and system stability**, ensuring that developers can ship code faster and with fewer problems.',
+    ],
+  },
+  {
+    question: 'How do I prepare for a DevOps interview?',
+    answer: [
+      'A great way to prepare for a DevOps interview is by working on [hands-on DevOps projects](https://roadmap.sh/devops/projects) that showcase your skills in automation, CI/CD, cloud infrastructure, and monitoring. Setting up a **home lab** where you can play around and test new techniques or deploy applications using DevOps tools like Docker, Kubernetes, Terraform, and Jenkins can help demonstrate your practical experience and give you a competitive advantage over other candidates.',
+      'Apart from that, another great idea is to review [common DevOps interview questions](https://roadmap.sh/questions/devops). Doing so can help you identify gaps in your understanding. Topics like infrastructure as code (IaC), container orchestration, logging and monitoring, and security best practices often come up during interviews.',
+      'Another useful step is to study real-world expectations by going through a [DevOps Engineer job description](https://roadmap.sh/devops/job-description). This can give you a clearer idea of what employers are looking for and help tailor your study program.',
+      'Finally, soft skills matter too—be ready to discuss how you collaborate with developers, handle incidents, and optimize deployment processes. DevOps is as much about culture and teamwork as it is about technical expertise, so showing you have a problem-solving mindset and an understanding of [DevOps principles](https://roadmap.sh/devops/principles) will set you apart in the interview.',
+    ],
+  },
+  {
+    question: 'What is a DevOps Lifecycle?',
+    answer: [
+      'A [DevOps lifecycle](https://roadmap.sh/devops/lifecycle) is a set of practices and processes that help organizations deliver software more quickly and reliably. The DevOps lifecycle typically includes planning, development, testing, deployment, monitoring, and feedback. ',
+      'It starts with **planning**, where teams define objectives, outline features, and create a roadmap for **development**. Agile methodologies and tools like Jira help facilitate this process. In the development phase, developers get to write and commit code using version control systems like Git. During this stage, testing is also involved (although without being the main focus of it) through the use of unit testing suits like Jasmine or JUnit.',
+      'Once the code is ready, it moves to **testing**, where automated and manual tests validate functionality, security, and performance. This ensures that the application is stable before deployment. The **deployment** phase follows, where CI/CD pipelines automate the release process, making it easier to push updates to staging or production environments with minimal risk while ensuring the quality and security of the delivery (through automated tests and validations).',
+      'After deployment, **monitoring** tools track system health and application performance, providing real-time insights into potential issues. After all of this, during the **feedback stage**, teams are able to analyze monitoring data, user reports, and incident responses to iterate and refine their processes and improve future iterations.',
+      'Through the DevOps lifecycle, companies automate and integrate these stages allowing them to improve collaboration between development and operations teams, increasing the speed of software delivery, and enhancing the overall quality of software products.',
+    ],
+  },
+  {
+    question: 'What is DevOps automation?',
+    answer: [
+      "DevOps automation is about leveraging various tools and scripts to minimize manual tasks throughout the dev lifecycle. In essence, it's a strategy for addressing challenges by automating key aspects of the project.",
+      "Although it won't remove every problem, a well-executed automation plan can **enhance efficiency, reduce mistakes, and speed up delivery**. This is done by simplifying key steps with a focus on: integrating code, running tests, provisioning infrastructure, managing configurations, deploying applications, and monitoring system performance.",
+      'A significant area in this practice is **Continuous Integration/Continuous Deployment (CI/CD)**, which automatically tests and deploys code changes with minimal human input.',
+      'On top of it, Infrastructure as Code (IaC) allows teams to manage and define infrastructure through code, resulting in more reliable, scalable, and faster deployments. Tools for configuration management automate the setup of systems and software installations, while monitoring and logging solutions offer real-time insights into system health.',
+      'Selecting the right set of tools is vital for success. If you’re interested in exploring effective solutions, consider reviewing this comprehensive list of [top DevOps automation tools](https://roadmap.sh/devops/automation-tools) to determine which ones best complement your workflow.',
+    ],
+  },
+  {
+    question: 'What is a pipeline in DevOps?',
+    answer: [
+      'In DevOps, a pipeline is an automated sequence of processes that takes code from development to production. Often referred to as a CI/CD (Continuous Integration/Continuous Deployment) pipeline, it simplifies the workflow by introducing automation. The main tasks inside a pipeline are:',
+      '**Building:** Compiling code and preparing it for testing. In some situations the compiling step might be optional or not even required, however, it can be replaced by linting.',
+      '**Testing:** Running automated tests to catch issues early. If a test fails, the whole pipeline will usually fail, preventing the code from moving forward into production.',
+      '**Deployment:** Releasing the code to staging or production environments.',
+      '**Monitoring:** Checking the performance and stability of the deployed application.',
+      'A well-defined pipeline ensures that software is consistently built, tested, and deployed, which, in turn, helps reduce human error, increases efficiency, and supports the rapid delivery of high-quality software.',
+    ],
+  },
+  {
+    question: 'What metrics are used in DevOps to measure success?',
+    answer: [
+      'In DevOps, being such a complex practice, measuring success is not straightforward. Instead, success is measured using a combination of metrics that tackle both the development process and operational performance.',
+      'Some of the key metrics include:',
+      '**Deployment Frequency:** Measures how often new releases are deployed to production. A higher frequency often indicates a streamlined, efficient process.',
+      "**Lead Time for Changes:** The duration from when code is committed to when it's successfully deployed. Shorter lead times suggest that the existing pipelines provide the flexibility required to quickly put ideas into production.",
+      "**Mean Time to Recovery (MTTR):** The average time it takes to restore service after a failure or outage. Lower MTTR values reflect a team's ability to promptly resolve issues and maintain system reliability. It can also signal a strong and mature infrastructure.",
+      '**Change Failure Rate:** The percentage of deployments that result in failures, such as outages or the need for rollbacks. A lower change failure rate signals a more stable and reliable deployment practice.',
+      '**Automated Test Coverage and Quality Metrics:** These include the percentage of code covered by automated tests, as well as other quality indicators like code complexity and defect density. They help ensure that the software is robust and maintainable.',
+      '**System Performance and Uptime:** Operational metrics like uptime, response time, and error rates monitor the health and performance of the application in production, ensuring a good user experience.',
+      '**Cycle Time:** The total time it takes for a new feature or bug fix to move from initial concept to production. Shorter cycle times indicate a more efficient process.',
+      'As you can see, together these metrics target not only the technical aspects of the DevOps practice but also the operational agility available.',
     ],
   },
   {
     question: 'What are some misconceptions about DevOps?',
     answer: [
       'Some common misconceptions about DevOps include:',
-      "**DevOps is just automation**: While automation is an important part of DevOps, it's not the only thing. DevOps is a culture that emphasizes collaboration, communication, and integration between development and operations teams to improve the quality and speed of software delivery.",
-      '**DevOps is just a job title**: DevOps is a mindset and set of practices, not a specific job title. Anyone involved in the software development and delivery process can adopt a DevOps mindset and apply DevOps practices in their work, including developers, testers, operations engineers, and others.',
-      '**DevOps eliminates the need for IT operations**: DevOps does not eliminate the need for IT operations. Instead, it changes the way that operations teams work by promoting collaboration with development teams and introducing new tools and processes for deployment, monitoring, and maintenance.',
+      "**DevOps is just automation:** While automation is an important part of DevOps, it's not the only thing. DevOps is a culture that emphasizes collaboration, communication, and continuous integration between dev and ops teams to improve the quality and speed of software delivery.",
+      '**DevOps is just a job title:** DevOps is a mindset and set of practices, not a specific job title. Anyone involved in the software development and delivery process can adopt a DevOps mindset and apply DevOps practices in their work, including developers, testers, operations engineers, and others.',
+      '**DevOps eliminates the need for IT operations:** DevOps does not eliminate the need for IT operations. Instead, it changes the way that operations teams work by promoting collaboration with development teams and introducing new tools and processes for deployment, monitoring, and maintenance.',
     ],
   },
   {
-    question: 'How to become a DevOps Engineer?',
+    question: 'How do Agile and DevOps interrelate?',
     answer: [
-      'To [become a DevOps Engineer](https://roadmap.sh/devops/how-to-become-devops-engineer), you need to have technical skills in areas such as development, automation, containerization, cloud, CI/CD pipelines etc. Some sample tools and technologies to learn may include any programming language, AWS, Ansible, Terraform, Docker, Kubernetes, Jenkins, Git, and monitoring and logging tools. Gain experience by working on DevOps projects, develop a DevOps mindset, get certified, and apply for DevOps Engineer positions by highlighting your skills and experience in your resume. Start your [career path in DevOps engineering](https://roadmap.sh/devops/career-path) by working on some [DevOps projects](https://roadmap.sh/devops/projects).',
-    ],
-  },
-  {
-    question: 'What skills are required to become a DevOps Engineer?',
-    answer: [
-      'To become a DevOps Engineer, you need to have a combination of technical and soft skills. Technical skills include knowledge of programming languages, automation tools, containerization, cloud platforms, CI/CD pipelines, and monitoring and logging tools. Soft skills include communication, collaboration, problem-solving, and adaptability. Some sample tools and technologies to learn may include any programming language, AWS, Ansible, Terraform, Docker, Kubernetes, Jenkins, Git, and monitoring and logging tools. Gain experience by working on DevOps projects, develop a DevOps mindset, get certified, and apply for DevOps Engineer positions by highlighting your [DevOps skills](https://roadmap.sh/devops/skills) and experience in your resume.',
+      '[Agile and DevOps](https://roadmap.sh/devops/vs-agile) both prioritize collaboration, continuous improvement, and delivering working software. They can be used together to create a more efficient software development process. Agile emphasizes iterative development and customer satisfaction, while DevOps emphasizes automating processes and integrating developers and ops teams. When used together, Agile and DevOps can improve software development and delivery by streamlining processes and enhancing collaboration.',
     ],
   },
   {
     question: 'What is the difference between SRE and DevOps?',
     answer: [
-      'The difference between [DevOps Engineer vs SRE](https://roadmap.sh/devops/devops-vs-sre) lies in focus: DevOps Engineers improve software delivery and infrastructure automation, bridging development and operations, while Site Reliability Engineers (SREs) ensure system reliability and performance, applying software engineering to operations. DevOps emphasizes CI/CD and collaboration, whereas SREs prioritize monitoring, incident response, and scalability.',
+      'The difference between [DevOps vs SRE](https://roadmap.sh/devops/devops-vs-sre) lies in focus: DevOps Engineers improve software delivery and infrastructure automation, bridging development and operations, while Site Reliability Engineers (SREs) ensure system reliability and performance, applying software engineering to operations. DevOps emphasizes CI/CD and collaboration, whereas SREs prioritize monitoring, incident response, and scalability.',
     ],
   },
   {
-    question: 'How do I prepare for a DevOps interview?',
+    question: 'What is the difference between DevSecOps and DevOps?',
     answer: [
-      'A great way to prepare for a DevOps interview is by building [DevOps projects](https://roadmap.sh/devops/projects) to validate your skills as well as reviewing common [devops interview questions](https://roadmap.sh/questions/devops) to ensure you capture any gaps in your understanding.',
+      "The main difference between DevSecOps and DevOps is in their names, one of them includes security in their focus while the other doesn't. However, there's more to that story, so let's dive a little deeper.",
+      'On one hand, DevOps primarily focuses on simplifying the software delivery process by automating processes and fostering close collaboration between devs and ops teams. The goal is to quickly and reliably deliver code to production.',
+      'Now, on the other hand, DevSecOps builds on top of the above by embedding security measures into every stage of the development process. Instead of treating security as an afterthought, security teams are now involved in all activities, helping in the process of building secure software.',
+      'This extended practice now makes sure that vulnerability assessments, compliance checks, and code scanning are core activities of the workflow from the very beginning.',
+      'While this shift might cause some unease among developers at first, in the long run, it helps mitigate risks by making security a shared responsibility. In a DevOps environment, speed and efficiency are the most important things, but with DevSecOps, having a secure pipeline becomes a priority as well.',
+      "If you're curious about the finer points and practical differences between these approaches, a detailed discussion can be found in this comprehensive comparison: [DevOps vs DevSecOps](https://roadmap.sh/devops/vs-devsecops).",
     ],
   },
   {
-    question: 'What is shift-left?',
+    question: 'What is shift-left in DevOps?',
     answer: [
-      'Shift left is a software development practice that involves moving tasks and processes earlier in the development lifecycle. By shifting tasks left, teams can identify and address issues earlier in the development process, reducing the cost and effort required to fix them. [Shift left](https://roadmap.sh/devops/shift-left-testing) practices include implementing automated testing, code reviews, and security checks early in the development process to catch and fix issues before they become more costly to address.',
-    ],
-  },
-  {
-    question: 'What is a DevOps Lifecycle?',
-    answer: [
-      'A [DevOps lifecycle](https://roadmap.sh/devops/lifecycle) is a set of practices and processes that help organizations deliver software more quickly and reliably. The DevOps lifecycle typically includes planning, development, testing, deployment, monitoring, and feedback. By automating and integrating these stages, organizations can improve collaboration between development and operations teams, increase the speed of software delivery, and enhance the quality of software products.',
+      'Shift-left is a software development practice that involves moving tasks and processes earlier in the development lifecycle. By shifting tasks left, teams can identify and address issues earlier in development, reducing the cost and effort required to fix them.',
+      '[Shift-left practices](https://roadmap.sh/devops/shift-left-testing) include implementing automated testing, code reviews, and security checks early on to catch and fix issues before they become more costly to address.',
     ],
   },
 ];

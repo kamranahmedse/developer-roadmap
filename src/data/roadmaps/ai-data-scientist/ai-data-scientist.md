@@ -3,10 +3,10 @@ jsonUrl: '/jsons/roadmaps/ai-data-scientist.json'
 pdfUrl: '/pdfs/roadmaps/ai-data-scientist.pdf'
 order: 5
 renderer: 'editor'
-briefTitle: 'AI and Data Scientist'
-briefDescription: 'Step by step guide to becoming an AI and Data Scientist in 2024'
-title: 'AI and Data Scientist'
-description: 'Step by step guide to becoming an AI and Data Scientist in 2024'
+briefTitle: 'AI and Data Scientist Roadmap'
+briefDescription: 'Step by step guide to becoming an AI and Data Scientist in 2025'
+title: 'AI and Data Scientist Roadmap'
+description: 'Step by step roadmap guide to becoming an AI and Data Scientist in 2025'
 hasTopics: true
 isNew: false
 dimensions:

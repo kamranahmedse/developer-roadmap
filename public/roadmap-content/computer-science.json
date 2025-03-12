@@ -55,12 +55,12 @@
         "type": "article"
       },
       {
-        "title": "Python Website",
+        "title": "Python",
         "url": "https://www.python.org/",
         "type": "article"
       },
       {
-        "title": "Python Getting Started",
+        "title": "Getting Started with Python",
         "url": "https://www.python.org/about/gettingstarted/",
         "type": "article"
       },
@@ -183,6 +183,11 @@
     "description": "Rust is a modern systems programming language focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated Rust Roadmap",
+        "url": "https://roadmap.sh/rust",
+        "type": "article"
+      },
+      {
         "title": "The Rust Programming Language - online book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
@@ -214,6 +219,11 @@
     "description": "C++ is a powerful general-purpose programming language. It can be used to develop operating systems, browsers, games, and so on. C++ supports different ways of programming like procedural, object-oriented, functional, and so on. This makes C++ powerful as well as flexible.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "C++ Roadmap",
+        "url": "https://roadmap.sh/cpp",
+        "type": "article"
+      },
+      {
         "title": "Learn C++",
         "url": "https://learncpp.com/",
         "type": "article"
@@ -236,11 +246,6 @@
       {
         "title": "W3Schools C++",
         "url": "https://www.w3schools.com/cpp/default.asp",
-        "type": "article"
-      },
-      {
-        "title": "C++ Roadmap",
-        "url": "https://roadmap.sh/cpp",
         "type": "article"
       },
       {
@@ -325,6 +330,11 @@
         "title": "Data Structures and Algorithms By Google",
         "url": "https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/",
         "type": "course"
+      },
+      {
+        "title": "Visit Dedicated DSA Roadmap",
+        "url": "https://roadmap.sh/datastructures-and-algorithms",
+        "type": "article"
       },
       {
         "title": "Data Structures and Algorithms",
@@ -645,6 +655,11 @@
         "title": "Complete Binary Tree - Programiz",
         "url": "https://www.programiz.com/dsa/complete-binary-tree",
         "type": "article"
+      },
+      {
+        "title": "Complete Binary Trees",
+        "url": "https://www.wscubetech.com/resources/dsa/complete-binary-tree",
+        "type": "article"
       }
     ]
   },
@@ -771,8 +786,14 @@
   },
   "HZ1kk0TQ13FLC9t13BZl5": {
     "title": "Adjacency Matrix",
-    "description": "",
-    "links": []
+    "description": "An adjacency matrix is a square matrix used to represent a finite graph. It is used to represent the connections between vertices in a graph. The matrix is filled with 0s and 1s, where a 1 represents a connection between two vertices and a 0 represents no connection.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Adjacency Matrix",
+        "url": "https://en.wikipedia.org/wiki/Adjacency_matrix",
+        "type": "article"
+      }
+    ]
   },
   "rTnKJcPniUtqvfOyC88N0": {
     "title": "Adjacency List",
@@ -826,13 +847,13 @@
         "type": "article"
       },
       {
-        "title": "CS 61B Lecture 19: Asymptotic Analysis",
-        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "title": "Big-O Cheat Sheet",
+        "url": "https://www.bigocheatsheet.com/",
         "type": "article"
       },
       {
-        "title": "Big-O Cheat Sheet",
-        "url": "https://www.bigocheatsheet.com/",
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
         "type": "article"
       },
       {
@@ -849,16 +870,26 @@
         "title": "Asymptotic Notation - CS50",
         "url": "https://www.youtube.com/watch?v=iOq5kSKqeR4",
         "type": "video"
+      },
+      {
+        "title": "CS 61B Lecture 19: Asymptotic Analysis",
+        "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "type": "video"
       }
     ]
   },
   "c-NrTtJuNihbHzyPEOKTW": {
     "title": "Big O",
-    "description": "Big O Notation describes, how well an algorithm scales with the input size. It is used to describe the worst case scenario of an algorithm. It is used to compare algorithms and to determine which algorithm is better.\n\nVisit the following resources to learn more:",
+    "description": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "moviesCS 61B Lecture 19: Asymptotic Analysis",
         "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
+        "type": "article"
+      },
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
         "type": "article"
       },
       {
@@ -880,8 +911,13 @@
   },
   "ThLpVZQIJ4diY5m0dik8m": {
     "title": "Big-Theta",
-    "description": "While Big O Notation refers to the upper bound of a function, Big Theta Notation refers to the exact bound of a function. Big Theta Notation is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
+    "description": "If a function has the same Big O and Big Omega, they also become the function's Big Theta. Big Theta is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
@@ -896,8 +932,13 @@
   },
   "X33735aeAVSlJ6yv9GS-h": {
     "title": "Big Omega",
-    "description": "Big Omega notation is used to describe the lower bound of a function. It is the opposite of Big O notation. While Big O is used to describe the worst case scenario of an algorithm, Big Omega is used to describe the best case scenario of an algorithm.\n\nVisit the following resources to learn more:",
+    "description": "The Big Omega notation is similar to the Big O notation. The only difference is that it denotes the lower bound on the growth rate of a function.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Big O Notation | Brilliant Math & Science Wiki",
+        "url": "https://brilliant.org/wiki/big-o-notation/",
+        "type": "article"
+      },
       {
         "title": "Big Oh Notation (and Omega and Theta)",
         "url": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3",
@@ -997,8 +1038,14 @@
   },
   "7a6-AnBI-3tAU1dkOvPkx": {
     "title": "Common Algorithms",
-    "description": "Here are some common algorithms that you should know. You can find more information about them in the [Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms) section of the Computer Science course.\n\n*   Sorting\n*   Recursion\n*   Searching\n*   Cache Algorithms\n*   Tree Algorithms\n*   Graph Algorithms\n*   Greedy Algorithms\n*   Backtracking\n*   Substring Search\n*   Suffix Arrays\n*   Dynamic Programming",
-    "links": []
+    "description": "Here are some common algorithms that you should know. You can find more information about them in the Algorithms section of the Computer Science course.\n\n*   Sorting\n*   Recursion\n*   Searching\n*   Cache Algorithms\n*   Tree Algorithms\n*   Graph Algorithms\n*   Greedy Algorithms\n*   Backtracking\n*   Substring Search\n*   Suffix Arrays\n*   Dynamic Programming\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Top Algorithms and Data Structures",
+        "url": "https://towardsdatascience.com/top-algorithms-and-data-structures-you-really-need-to-know-ab9a2a91c7b5",
+        "type": "article"
+      }
+    ]
   },
   "0_qNhprnXU3i8koW3XTdD": {
     "title": "Tail Recursion",
@@ -1123,20 +1170,26 @@
   "XwyqBK9rgP1MMcJrdIzm5": {
     "title": "Linear Search",
     "description": "Linear search is a very simple algorithm that is used to search for a value in an array. It sequentially checks each element of the array until a match is found or until all the elements have been searched.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Linear Search",
+        "url": "https://www.programiz.com/dsa/linear-search",
+        "type": "article"
+      }
+    ]
   },
   "4wGBYFZpcdTt97WTbSazx": {
     "title": "Bubble Sort",
     "description": "Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Bubble Sort",
-        "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB",
-        "type": "video"
+        "title": "Bubble Sort Algorithm",
+        "url": "https://www.programiz.com/dsa/bubble-sort",
+        "type": "article"
       },
       {
-        "title": "Analyzing Bubble Sort",
-        "url": "https://www.youtube.com/watch?v=ni_zk257Nqo&index=7&list=PL89B61F78B552C1AB",
+        "title": "Bubble Sort",
+        "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB",
         "type": "video"
       },
       {
@@ -1355,7 +1408,13 @@
   "Yf5gOIe7oiL19MjEVcpdw": {
     "title": "Depth First Search",
     "description": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Depth-first Search",
+        "url": "https://en.wikipedia.org/wiki/Depth-first_search",
+        "type": "article"
+      }
+    ]
   },
   "eY4nK2lPYsrR-a_8y2sao": {
     "title": "Bellman Ford's Algorithm",
@@ -1422,8 +1481,13 @@
   },
   "aBjBHpq_OajgQjxdCobXD": {
     "title": "Finding Hamiltonian Paths",
-    "description": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician [Hamilton](https://en.wikipedia.org/wiki/William_Rowan_Hamilton). Hamiltonian paths are a special case of [Hamiltonian cycles](https://en.wikipedia.org/wiki/Hamiltonian_cycle), which are cycles that visit every node in a graph exactly once.\n\nVisit the following resources to learn more:",
+    "description": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician Hamilton. Hamiltonian paths are a special case of Hamiltonian cycles, which are cycles that visit every node in a graph exactly once.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Hamiltonian Cycles",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_cycle",
+        "type": "article"
+      },
       {
         "title": "Hamiltonian Path",
         "url": "https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/tutorial/",
@@ -1832,8 +1896,18 @@
   },
   "vjMqqFsTxSjaiYxmliwLi": {
     "title": "Endianess",
-    "description": "Endianess is the order in which bytes are stored in memory. The two most common types of endianess are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
+    "description": "Endianness is the order in which bytes are stored in memory. The two most common types of endianness are big endian and little endian. Big endian stores the most significant byte first, while little endian stores the least significant byte first.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Endianness",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Endianness",
+        "type": "article"
+      },
+      {
+        "title": "Big-Endian vs Little-Endian Explained with Examples",
+        "url": "https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/",
+        "type": "article"
+      },
       {
         "title": "Big Endian vs Little Endian.mp4",
         "url": "https://www.youtube.com/watch?v=JrNF0KRAlyo",
@@ -1937,13 +2011,13 @@
     "description": "Class Diagrams are used to model the static structure of a system. They are used to show the classes, their attributes, operations (or methods), and the relationships between objects.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "UML Class Diagram Tutorial",
-        "url": "https://www.youtube.com/watch?v=UI6lqHOVHic",
-        "type": "video"
+        "title": "Class Diagrams",
+        "url": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/",
+        "type": "article"
       },
       {
         "title": "UML Class Diagram Tutorial",
-        "url": "https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLfoY2ARMh0hC2FcJKP5voAKCpk6PZXSd5&index=2",
+        "url": "https://www.youtube.com/watch?v=UI6lqHOVHic",
         "type": "video"
       }
     ]
@@ -2324,26 +2398,6 @@
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
         "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
@@ -2394,26 +2448,6 @@
       {
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]
@@ -2466,26 +2500,6 @@
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
         "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
@@ -2536,26 +2550,6 @@
       {
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]
@@ -2613,32 +2607,12 @@
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
         "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
   "0btHNkzWL1w_-pUgU_k2y": {
     "title": "P = NP",
-    "description": "The P = NP problem is one of the most famous problems in computer science. It asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of solving the given input. In other words, it asks if the problem of determining if a given input belongs to a certain class of problems is as hard as the problem of determining if a given input belongs to a certain class of problems. This problem is also known as the Halting Problem.\n\nVisit the following resources to learn more:",
+    "description": "The P = NP problem is one of the most famous problems in computer science. It asks whether a problem that can be solved in polynomial time on a non-deterministic machine (i.e., the problem is in NP) can also be solved in polynomial time on a deterministic machine (i.e., the problem is in P).\n\nIf you can find a polynomial-time solution to an NP-complete problem, then all problems in NP can be solved in polynomial time. This shows that P = NP.\n\nIf you can prove for any single NP-complete problem that it is only solvable in exponential time, then all NP-complete problems are only solvable in exponential time. This shows that P ≠ NP.\n\nSo far, we don't know whether P = NP or P ≠ NP.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Whats P=NP?, and why is it such a famous question?",
@@ -2912,11 +2886,6 @@
         "type": "video"
       },
       {
-        "title": "MIT 6.851 - Memory Hierarchy Models",
-        "url": "https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf",
-        "type": "video"
-      },
-      {
         "title": "B-Trees (playlist) in 26 minutes",
         "url": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz",
         "type": "video"
@@ -3028,6 +2997,11 @@
     "description": "A CDN is a network of servers that are distributed geographically. The servers are connected to each other and to the internet. The servers are used to deliver content to users. The content is delivered to the user from the server that is closest to the user. This is done to reduce latency and improve the performance of the content delivery.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "What is a CDN?",
+        "url": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+        "type": "article"
+      },
+      {
         "title": "Content Delivery Network (CDN) - System Design",
         "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#content-delivery-network-cdn",
         "type": "article"
@@ -3134,6 +3108,11 @@
     "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated GraphQL Roadmap",
+        "url": "https://roadmap.sh/graphql",
+        "type": "article"
+      },
+      {
         "title": "Apollo GraphQL Tutorials",
         "url": "https://www.apollographql.com/tutorials/",
         "type": "article"
@@ -3197,7 +3176,7 @@
     "description": "Long polling is a technique used to implement server push functionality over HTTP. It is a method of opening a request on the server and keeping it open until an event occurs, at which point the server responds. This is in contrast to a regular HTTP request, where the server responds immediately with whatever data is available at the time.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Long polling",
+        "title": "Long Polling",
         "url": "https://javascript.info/long-polling",
         "type": "article"
       },
@@ -3222,7 +3201,18 @@
   "bVjI14VismTHNCyA0mEBP": {
     "title": "Web Sockets",
     "description": "Web sockets are a bidirectional communication protocol between a client and a server. They are used for real-time applications like chat, multiplayer games, and live data updates. Web sockets are also used to establish a connection between a server and a client. This connection is then used to send data in both directions.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "WebSockets",
+        "url": "https://en.wikipedia.org/wiki/WebSocket",
+        "type": "article"
+      },
+      {
+        "title": "Web Sockets API",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+        "type": "article"
+      }
+    ]
   },
   "JckRqZA8C6IqQLPpTCgf4": {
     "title": "SSE",
@@ -3250,12 +3240,12 @@
     "description": "A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Oracle: What is a Database?",
+        "title": "What is a Database?",
         "url": "https://www.oracle.com/database/what-is-database/",
         "type": "article"
       },
       {
-        "title": "Prisma.io: What are Databases?",
+        "title": "What are Databases?",
         "url": "https://www.prisma.io/dataguide/intro/what-are-databases",
         "type": "article"
       },
@@ -3332,22 +3322,56 @@
   "ii1vF74u3yrFNlw_21b3B": {
     "title": "DDL",
     "description": "DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "DDL",
+        "url": "https://en.wikipedia.org/wiki/Data_definition_language",
+        "type": "article"
+      }
+    ]
   },
   "tcQSH-eAvJUZuePTDjAIb": {
     "title": "DML",
-    "description": "The SQL commands that deals with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
-    "links": []
+    "description": "The SQL commands that manipulate data in the database belong to DML, or Data Manipulation Language, and this includes most of the SQL statements. DCL is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "DML: Data Manipulation Language",
+        "url": "https://satoricyber.com/glossary/dml-data-manipulation-language",
+        "type": "article"
+      },
+      {
+        "title": "Difference Between DDL and DML",
+        "url": "https://appmaster.io/blog/difference-between-ddl-and-dml",
+        "type": "article"
+      }
+    ]
   },
   "05lkb3B86Won7Rkf-8DeD": {
     "title": "DQL",
     "description": "DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL Command is to get some schema relation based on the query passed to it. We can define DQL as follows it is a component of SQL statement that allows getting data from the database and imposing order upon it. It includes the SELECT statement. This command allows getting the data out of the database to perform operations with it. When a SELECT is fired against a table or tables the result is compiled into a further temporary table, which is displayed or perhaps received by the program i.e. a front-end.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Data Query Language",
+        "url": "https://en.wikipedia.org/wiki/Data_query_language",
+        "type": "article"
+      }
+    ]
   },
   "4bUmfuP2qgcli8I2Vm9zh": {
     "title": "DCL",
     "description": "DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "DCL",
+        "url": "https://en.wikipedia.org/wiki/Data_Control_Language",
+        "type": "article"
+      },
+      {
+        "title": "DCL Commands",
+        "url": "https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/",
+        "type": "article"
+      }
+    ]
   },
   "_sm63rZNKoibVndeNgOpW": {
     "title": "Locking",
@@ -3394,7 +3418,13 @@
   "q3nRhTYS5wg9tYnQe2sCF": {
     "title": "BASE",
     "description": "The rise in popularity of NoSQL databases provided a flexible and fluidity with ease to manipulate data and as a result, a new database model was designed, reflecting these properties. The acronym BASE is slightly more confusing than ACID but however, the words behind it suggest ways in which the BASE model is different and acronym BASE stands for:-\n\n*   **B**asically **A**vailable\n*   **S**oft state\n*   **E**ventual consistency\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "BASE Model vs. ACID Model",
+        "url": "https://www.geeksforgeeks.org/acid-model-vs-base-model-for-database/",
+        "type": "article"
+      }
+    ]
   },
   "uqfeiQ9K--QkGNwks4kjk": {
     "title": "CAP Theorem",
@@ -3763,7 +3793,7 @@
     "description": "Public-key cryptography, or asymmetric cryptography, is the field of cryptographic systems that use pairs of related keys. Each key pair consists of a public key and a corresponding private key. Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Public-key cryptography - Wikipedia",
+        "title": "Public-key Cryptography",
         "url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
         "type": "article"
       },
@@ -3836,7 +3866,12 @@
         "type": "opensource"
       },
       {
-        "title": "Wikipedia - OWASP",
+        "title": "OWASP",
+        "url": "https://owasp.org/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP - Wiki",
         "url": "https://en.wikipedia.org/wiki/OWASP",
         "type": "article"
       },
@@ -3885,7 +3920,7 @@
   },
   "1eglba39q426Nh0E0qcdj": {
     "title": "How CPU Executes Programs",
-    "description": "Visit the following resources to learn more:",
+    "description": "The CPU executes programs by repeatedly fetching instructions from memory, decoding them to understand the operation, and then executing those operations. This cycle, called the fetch-decode-execute cycle, continues for each instruction in the program, with the CPU using registers for temporary storage and a program counter to keep track of the next instruction. Modern CPUs use techniques like pipelining and caches to speed up this process, enabling them to execute complex programs efficiently.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Explore top posts about Computing",
@@ -3893,7 +3928,7 @@
         "type": "article"
       },
       {
-        "title": "How CPU executes a program",
+        "title": "How CPU Executes a Program",
         "url": "https://www.youtube.com/watch?v=XM4lGflQFvA",
         "type": "video"
       }
@@ -3901,7 +3936,7 @@
   },
   "GDLKJkKgB-i7n0YcV2NDa": {
     "title": "How Computers Calculate",
-    "description": "Visit the following resources to learn more:",
+    "description": "Computers calculate using the binary system, where all data is represented as 0s and 1s. These binary states correspond to the ON/OFF positions of transistors, which are the building blocks of logic gates (AND, OR, NOT). Numbers, characters, and instructions are broken into binary sequences (bits), and grouped into bytes (8 bits). Arithmetic operations like addition are performed through logic gates, which combine binary values. The CPU executes these calculations by following a fetch-decode-execute cycle. Complex calculations, such as handling decimals, use floating-point representation. Programs written in high-level languages are compiled into machine code for the CPU to execute.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "How computers calculate - ALU",
@@ -3923,8 +3958,13 @@
   },
   "AxiGqbteK7ZSXEUt_zckH": {
     "title": "Instructions and Programs",
-    "description": "Visit the following resources to learn more:",
+    "description": "Instructions are the most basic commands a CPU can understand, directing it to perform specific actions like adding numbers or moving data. A program, on the other hand, is a collection of these instructions, organized in a sequence to accomplish a particular task. Think of instructions as individual words and a program as a complete sentence or story; the CPU executes these instructions one by one, following the program's logic, to achieve the desired outcome.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Instruction and Programs",
+        "url": "https://nerdfighteria.info/v/zltgXvg6r3k/",
+        "type": "article"
+      },
       {
         "title": "Instructions and Programs",
         "url": "https://youtu.be/zltgXvg6r3k",
@@ -3934,8 +3974,13 @@
   },
   "DjTQjMbika4_yTzrBpcmB": {
     "title": "CPU Cache",
-    "description": "Visit the following resources to learn more:",
+    "description": "A CPU cache is a hardware cache used by the central processing unit of a computer to reduce the average cost to access data from the main memory. A cache is a smaller, faster memory, located closer to a processor core, which stores copies of the data from frequently used main memory locations.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "What is CPU Cache",
+        "url": "https://www.howtogeek.com/854138/what-is-cpu-cache/",
+        "type": "article"
+      },
       {
         "title": "Explore top posts about Computing",
         "url": "https://app.daily.dev/tags/computing?ref=roadmapsh",
@@ -4029,10 +4074,10 @@
   },
   "xUo5Ox_HTgGyeQMDIkVyK": {
     "title": "Concurrency in Multiple Cores",
-    "description": "Visit the following resources to learn more:",
+    "description": "Concurrency or Parallelism is simultaneous execution of processes on a multiple cores per CPU or multiple CPUs (on a single motherboard). Concurrency is when Parallelism is achieved on a single core/CPU by using scheduling algorithms that divides the CPU's time (time-slice).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is the difference between multicore and concurrent programming?",
+        "title": "Difference between Multi-core and concurrent Programming?",
         "url": "https://stackoverflow.com/questions/5372861/what-is-the-difference-between-multicore-and-concurrent-programming",
         "type": "article"
       },
@@ -4040,12 +4085,17 @@
         "title": "Concurrency in Multicore systems",
         "url": "https://cs.stackexchange.com/questions/140793/concurrency-in-multiple-core",
         "type": "article"
+      },
+      {
+        "title": "Mastering Concurrency",
+        "url": "https://www.harrisonclarke.com/blog/mastering-concurrency-a-guide-for-software-engineers",
+        "type": "article"
       }
     ]
   },
   "Ge2nagN86ofa2y-yYR1lv": {
     "title": "Scheduling Algorithms",
-    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more :",
+    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more",
     "links": [
       {
         "title": "CPU Scheduling in Operating Systems - geeksforgeeks",
@@ -4079,7 +4129,7 @@
         "type": "article"
       },
       {
-        "title": "Video on Interrupts",
+        "title": "Interrupts",
         "url": "https://youtu.be/iKlAWIKEyuw",
         "type": "video"
       }
@@ -4180,26 +4230,6 @@
       {
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]

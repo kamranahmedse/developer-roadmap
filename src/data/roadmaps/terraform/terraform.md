@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/terraform.json'
 pdfUrl: '/pdfs/roadmaps/terraform.pdf'
 order: 15
 briefTitle: 'Terraform'
-briefDescription: 'Step by step guide to learning Terraform in 2024'
+briefDescription: 'Step by step guide to learn Terraform in 2025'
 title: 'Terraform Roadmap'
-description: 'Step by step guide to learning Terraform in 2024'
+description: 'Step by step guide to learn Terraform in 2025'
 isNew: false
 hasTopics: true
 dimensions:
@@ -13,13 +13,13 @@ dimensions:
   height: 2600
 schema:
   headline: 'Terraform Roadmap'
-  description: 'Learn how to use Terraform with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to use Terraform with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/terraform.png'
   datePublished: '2024-06-21'
   dateModified: '2024-06-21'
 seo:
   title: 'Terraform Roadmap - roadmap.sh'
-  description: 'Step by step guide to learn Terraform in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Step by step guide to learn Terraform in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'terraform tutorial'
     - 'step by step guide for terraform'

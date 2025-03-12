@@ -4,7 +4,7 @@ Appium is an open-source framework that allows QAs to conduct automated app test
 
 Visit the following resources to learn more:
 
-- [@official@Appium Website](https://appium.io/)
+- [@official@Appium](https://appium.io/)
+- [@official@Appium Documentation](https://appium.io/docs/en/2.0/intro/)
 - [@article@Appium Tutorial for Mobile Application Testing](https://www.browserstack.com/guide/appium-tutorial-for-testing)
-- [@official@Appium Website](https://appium.io/docs/en/2.0/intro/)
 - [@opensource@Appium example tests on Github](https://github.com/appium/appium/tree/1.x/sample-code)

@@ -8,7 +8,7 @@ Assurance is nothing but a positive declaration of a product or service, which g
 
 ## Quality Assurance in Software Testing
 
-Quality Assurance in Software Testing is defined as a procedure to ensure the quality of software products or services provided to the customers by an organization. Quality assurance focuses on improving the [software development process](https://www.guru99.com/software-development-life-cycle-tutorial.html) and making it efficient and effective per the quality standards defined for software products. Quality Assurance is popularly known as QA Testing.
+Quality Assurance in Software Testing is defined as a procedure to ensure the quality of software products or services provided to the customers by an organization. Quality assurance focuses on improving the software development process and making it efficient and effective per the quality standards defined for software products. Quality Assurance is popularly known as QA Testing.
 
 Visit the following resources to learn more:
 

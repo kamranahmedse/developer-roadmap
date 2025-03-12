@@ -4,6 +4,6 @@ TestRail is a web-based test management tool used by testers, developers and oth
 
 Visit the following resources to learn more:
 
-- [@article@Testrail](https://www.gurock.com/testrail/)
-- [@article@Testrail Official Docs](https://support.gurock.com/hc/en-us/)
-- [@article@Testrail Tutorial Docs](https://www.tutorialspoint.com/testrail/testrail_introduction.htm)
+- [@official@Testrail](https://www.gurock.com/testrail/)
+- [@official@Testrail Official Docs](https://support.gurock.com/hc/en-us/)
+- [@official@Testrail Tutorial Docs](https://www.tutorialspoint.com/testrail/testrail_introduction.htm)

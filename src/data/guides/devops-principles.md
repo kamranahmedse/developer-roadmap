@@ -1,21 +1,14 @@
 ---
-title: '11 DevOps Principles and Practices to Master: Pro Advice'
+title: '11 Core DevOps Principles to Master'
 description: 'Elevate your game by understanding this set of key DevOps principles and practices. Gain pro insights for a more efficient, collaborative workflow!'
 authorId: fernando
 excludedBySlug: '/devops/principles'
 seo:
-  title: '11 DevOps Principles and Practices to Master: Pro Advice'
+  title: '11 Core DevOps Principles and to Master: Pro Advice'
   description: 'Elevate your game by understanding this set of key DevOps principles and practices. Gain pro insights for a more efficient, collaborative workflow!'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-skills-tlace.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-09-24
@@ -28,7 +21,7 @@ tags:
   - 'guide-sitemap'
 ---
 
-![DevOps Principles and Practices](https://assets.roadmap.sh/guest/devops-principles-pfswx.jpg)
+![DevOps principles to master](https://assets.roadmap.sh/guest/devops-principles-pfswx.jpg)
 
 If you truly want to understand what makes DevOps so effective, it’s essential to know and master its core principles.
 
@@ -64,7 +57,7 @@ Key components of this culture include shared responsibility, transparency, and 
 
 ![Continuous Integration and Continuous Deployment](https://assets.roadmap.sh/guest/continous-development-vs-continuous-integration-l2fak.png)
 
-Continuous Integration (CI) and Continuous Deployment (CD) are central to DevOps principles. CI is the practice of frequently integrating code changes into a shared repository, ensuring that new code is automatically tested and validated. This practice helps catch bugs early, reducing the risk of introducing issues into the main codebase. CI allows devs and ops teams to work more efficiently, improving the overall quality of the software.
+Continuous Integration (CI) and Continuous Deployment (CD) are central to DevOps principles. CI is the practice of frequently integrating code changes into a shared repository, ensuring that new code is [automatically tested](https://roadmap.sh/devops/test-automation) and validated. This practice helps catch bugs early, reducing the risk of introducing issues into the main codebase. CI allows devs and ops teams to work more efficiently, improving the overall quality of the software.
 
 Continuous Deployment, on the other hand, takes things a step further by automatically deploying code changes to production once they pass the CI tests. This ensures that new features and bug fixes are delivered to users as quickly as possible. Together, CI and CD form a pipeline that streamlines the software development lifecycle, from code commit to production deployment in seconds (or in some cases, minutes).
 
@@ -146,7 +139,7 @@ Key tools for implementing GitOps include Argo CD and Flux. These tools help you
 
 ## 9\. Continuous Learning and Improvement
 
-![Continious Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
+![Continuous Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
 
 In general the world of tech is constantly evolving and changing and continuous learning and improvement are essential practices for staying ahead and relevant.
 
@@ -156,7 +149,7 @@ So to keep up, DevOps engineers and teams need to be committed to learning and i
 
 Encouraging a culture of continuous learning within your team can help keep everyone up-to-date with the latest DevOps trends and tools. This can include participating in conferences, attending workshops, and enrolling in online courses. Reading books like "The Phoenix Project," "The Unicorn Project," and "The DevOps Handbook" can provide valuable insights and inspiration.
 
-If you’re not into books, then websites like [12factor.net](http://12factor.net), [OpenGitOps.dev](http://OpenGitOps.dev), and [CNCF.io](http://CNCF.io) are also great resources for staying current with industry best practices.
+If you’re not into books, then websites like [12factor.net](http://12factor.net), [OpenGitOps.dev](http://OpenGitOps.dev), and [CNCF.io](http://CNCF.io) are also great resources for staying current with industry [best practices](https://roadmap.sh/devops/best-practices).
 
 Continuous improvement goes hand-in-hand with continuous learning. It's about regularly reviewing and refining your processes, identifying areas for improvement after failing and experimenting with new approaches. This iterative approach helps you optimize the development process, improve collaboration between devs and operations, and deliver better software.
 
@@ -174,13 +167,13 @@ Understanding programming concepts also enables you to better manage the softwar
 
 ## 11\. Automation in DevOps
 
-Automation is at the heart of DevOps principles. It's about automating repetitive and manual tasks to accelerate processes, reduce errors, and free up time for more strategic work. We partially covered this concept before as part of the toil reduction principle.
+[Automation](https://roadmap.sh/devops/automation) is at the heart of DevOps principles. It's about automating repetitive and manual tasks to accelerate processes, reduce errors, and free up time for more strategic work. We partially covered this concept before as part of the toil reduction principle.
 
 However, it’s important to explain that automation not only involves code builds and tests, it also includes infrastructure provisioning and application deployment. In other words,  automation plays a key role in every stage of the DevOps lifecycle.
 
 The whole point of automation is to accelerate processes. It enables faster, more consistent, and more reliable software delivery. By automating tasks like code integration, testing, and deployment, you can reduce the time it takes to get new features into production and minimize the risk of human error.
 
-There are many areas in the DevOps lifecycle where automation can be applied, in fact, the challenge would be to find areas where it wouldn’t make sense to apply it. These include CI/CD pipelines, infrastructure provisioning, configuration management, monitoring, and security testing. In this area, some of the most popular DevOps tools are Jenkins, Ansible, Terraform, and Selenium. They all provide the building blocks for automating these tasks, allowing you to create a seamless and efficient development workflow that everyone enjoys.
+There are many areas in the DevOps lifecycle where automation can be applied, in fact, the challenge would be to find areas where it wouldn’t make sense to apply it. These include CI/CD pipelines, infrastructure provisioning, configuration management, monitoring, and security testing. In this area, some of the most popular [DevOps tools](https://roadmap.sh/devops/tools) are Jenkins, Ansible, Terraform, and Selenium. They all provide the building blocks for automating these tasks, allowing you to create a seamless and efficient development workflow that everyone enjoys.
 
 If you’re looking to start implementing automation in your DevOps workflow, consider starting small and gradually expanding automation efforts, using version control for automation scripts (Git is a great option), and continuously monitoring and refining automated processes.
 

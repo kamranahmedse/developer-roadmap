@@ -1,11 +1,6 @@
 # IDEs
 
-An IDE (Integrated Development Environment) is a software application that provides a comprehensive environment for coding, debugging, testing, and deploying software. There are several IDEs that support Flutter development, including:
-
-- Android Studio: Google's official IDE for Android development, which also supports Flutter development.
-- Visual Studio Code: a popular, free, and open-source code editor that can be extended with plugins, including the Flutter extension.
-- IntelliJ IDEA: a commercial Java IDE that also supports Flutter development.
-- Xcode: Apple's official IDE for iOS development, which also supports Flutter development for macOS and iOS.
+An IDE (Integrated Development Environment) is a software application that provides a comprehensive environment for coding, debugging, testing, and deploying software.
 
 These IDEs provide a variety of features and tools to assist in the development of Flutter apps, including code completion, debugging, testing, and more. Developers can choose the IDE that works best for their needs and preferences.
 

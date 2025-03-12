@@ -1,7 +1,7 @@
 ---
 import { getAllChangelogs } from '../lib/changelog';
 import { DateTime } from 'luxon';
-
+import AstroIcon from './AstroIcon.astro';
 const allChangelogs = await getAllChangelogs();
 const top10Changelogs = allChangelogs.slice(0, 10);
 ---
@@ -12,16 +12,18 @@ const top10Changelogs = allChangelogs.slice(0, 10);
       <img
         src='/images/gifs/rocket.gif'
         alt='Rocket'
-        class='mr-2 hidden sm:inline h-12 w-12'
+        class='mr-2 hidden h-12 w-12 sm:inline'
       />
       Actively Maintained
     </p>
-    <p class='mt-1 mb-2 sm:my-2 text-sm leading-relaxed text-gray-600 sm:my-5 sm:text-lg'>
+    <p
+      class='mb-2 mt-1 text-sm leading-relaxed text-gray-600 sm:my-2 sm:my-5 sm:text-lg'
+    >
       We are always improving our content, adding new resources and adding
       features to enhance your learning experience.
     </p>
 
-    <div class='relative mt-2 sm:mt-8 text-left'>
+    <div class='relative mt-2 text-left sm:mt-8'>
       <div
         class='absolute inset-y-0 left-[120px] hidden w-px -translate-x-[0.5px] translate-x-[5.75px] bg-gray-300 sm:block'
       >
@@ -36,13 +38,13 @@ const top10Changelogs = allChangelogs.slice(0, 10);
               <li class='relative'>
                 <a
                   href={`/changelog#${changelog.id}`}
-                  class='flex flex-col sm:flex-row items-start sm:items-center'
+                  class='flex flex-col items-start sm:flex-row sm:items-center'
                 >
-                  <span class='sm:w-[120px] flex-shrink-0 pr-0 sm:pr-4 text-right text-sm tracking-wide text-gray-400'>
+                  <span class='flex-shrink-0 pr-0 text-right text-sm tracking-wide text-gray-400 sm:w-[120px] sm:pr-4'>
                     {formattedDate}
                   </span>
-                  <span class='h-3 w-3 flex-shrink-0 rounded-full bg-gray-300 hidden sm:block' />
-                  <span class='text-balance sm:pl-8 text-base font-medium text-gray-900'>
+                  <span class='hidden h-3 w-3 flex-shrink-0 rounded-full bg-gray-300 sm:block' />
+                  <span class='text-balance text-base font-medium text-gray-900 sm:pl-8'>
                     {changelog.frontmatter.title}
                   </span>
                 </a>
@@ -52,13 +54,23 @@ const top10Changelogs = allChangelogs.slice(0, 10);
         }
       </ul>
     </div>
-    <div class='mt-2 sm:mt-8 text-left sm:text-center'>
+    <div
+      class='mt-2 flex flex-col gap-2 sm:flex-row sm:mt-8 sm:items-center sm:justify-center'
+    >
       <a
         href='/changelog'
-        class='inline-block text-sm sm:text-base rounded-lg sm:rounded-full bg-gray-800 px-4 sm:px-6 py-2 text-white transition-colors hover:bg-gray-700'
+        class='inline-block rounded-lg border border-black bg-black px-4 py-2 text-sm text-white transition-colors hover:bg-gray-700 sm:rounded-full sm:px-6 sm:text-base'
       >
         View Full Changelog
       </a>
+      <button
+        data-guest-required
+        data-popup='login-popup'
+        class='flex flex-row items-center gap-2 rounded-lg border border-black bg-white px-4 py-2 text-sm text-black transition-all hover:bg-black hover:text-white sm:rounded-full sm:pl-4 sm:pr-5 sm:text-base'
+      >
+        <AstroIcon icon='bell' class='h-5 w-5' />
+        Subscribe for Notifications
+      </button>
     </div>
   </div>
 </div>

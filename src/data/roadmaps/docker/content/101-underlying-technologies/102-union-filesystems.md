@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@AUFS (Advanced Multi-Layered Unification Filesystem)](http://aufs.sourceforge.net/)
 - [@article@OverlayFS (Overlay Filesystem)](https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html)
-- [@article@Btrfs (B-Tree Filesystem)](https://btrfs.wiki.kernel.org/index.php/Main_Page)
+- [@article@Btrfs (B-Tree Filesystem)](https://btrfs.readthedocs.io/en/stable/)
 - [@article@ZFS (Z File System)](https://zfsonlinux.org/)

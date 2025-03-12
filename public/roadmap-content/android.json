@@ -460,7 +460,7 @@
   },
   "U8iMGGOd2EgPxSuwSG39Z": {
     "title": "Linear",
-    "description": "**LinearLayout** is a view group that aligns all children in a single directioni, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "description": "**LinearLayout** is a view group that aligns all children in a single direction, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Linear Layout",
@@ -791,6 +791,11 @@
       {
         "title": "Observer Pattern",
         "url": "https://en.wikipedia.org/wiki/Observer_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Observer Pattern",
+        "url": "https://refactoring.guru/design-patterns/observer",
         "type": "article"
       }
     ]

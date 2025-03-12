@@ -4,5 +4,6 @@ LanceDB is a vector database designed for efficient storage, retrieval, and mana
 
 Learn more from the following resources:
 
-- [@official@LanceDB Website](https://lancedb.com/)
+- [@official@LanceDB](https://lancedb.com/)
+- [@official@LanceDB Documentation](https://docs.lancedb.com/enterprise/introduction)
 - [@opensource@LanceDB on GitHub](https://github.com/lancedb/lancedb)

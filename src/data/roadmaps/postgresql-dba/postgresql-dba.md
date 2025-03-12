@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/postgresql-dba.pdf'
 renderer: 'editor'
 order: 5
 briefTitle: 'PostgreSQL'
-briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2024'
+briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2025'
 title: 'PostgreSQL DBA'
-description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2024'
+description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2025'
 hasTopics: true
 dimensions:
   width: 969

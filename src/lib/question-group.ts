@@ -1,8 +1,9 @@
 import type { MarkdownFileType } from './file';
 import slugify from 'slugify';
-import { getAllAuthors } from './author.ts';
+import { getAllAuthors, type AuthorFileType } from './author.ts';
+import { getAllGuides } from './guide.ts';
 
-interface RawQuestionGroupFrontmatter {
+export interface RawQuestionGroupFrontmatter {
   order: number;
   briefTitle: string;
   briefDescription: string;
@@ -18,7 +19,7 @@ interface RawQuestionGroupFrontmatter {
     keywords: string[];
   };
   relatedTitle?: string;
-  relatedGuides?: Record<string, string>;
+  relatedGuidesId?: string;
   sitemap: {
     priority: number;
     changefreq: string;
@@ -28,6 +29,7 @@ interface RawQuestionGroupFrontmatter {
     answer: string;
     topics: string[];
   }[];
+  ending?: string;
 }
 
 type RawQuestionGroupFileType =
@@ -46,6 +48,9 @@ export type QuestionType = {
 export type QuestionGroupType = RawQuestionGroupFileType & {
   questions: QuestionType[];
   allTopics: string[];
+  author?: AuthorFileType;
+  relatedGuides?: Record<string, string>;
+  ending?: string;
 };
 
 /**
@@ -71,6 +76,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
   );
 
   const allAuthors = await getAllAuthors();
+  const allGuides = await getAllGuides();
 
   return Object.values(questionGroupFilesMap)
     .map((questionGroupFile) => {
@@ -114,14 +120,40 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           return acc;
         }, [] as string[]);
 
+      const relatedGuides = questionGroupFile.frontmatter.relatedGuidesId
+        ? allGuides
+            .filter(
+              (guide) =>
+                guide.id === questionGroupFile.frontmatter.relatedGuidesId,
+            )
+            .reduce(
+              (acc, guide) => {
+                acc[guide.frontmatter.title] = `/guides/${guide.id}`;
+                return acc;
+              },
+              {} as Record<string, string>,
+            )
+        : undefined;
+
+      let endingText = '';
+      if (questionGroupFile.frontmatter.ending) {
+        const endingFilePath = `/src/data/question-groups/${questionGroupDir}/content/${questionGroupFile.frontmatter.ending}`;
+        endingText =
+          (answerFilesMap[endingFilePath] as any)?.default ||
+          answerFilesMap[endingFilePath] ||
+          `File missing: ${endingFilePath}`;
+      }
+
       return {
         ...questionGroupFile,
         id: questionGroupFileId,
+        ending: endingText,
         questions: formattedAnswers,
         allTopics: uniqueTopics,
         author: allAuthors.find(
           (author) => author.id === questionGroupFile.frontmatter.authorId,
         )!,
+        relatedGuides,
       };
     })
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);

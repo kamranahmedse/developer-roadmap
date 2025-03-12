@@ -8,10 +8,9 @@ Flutter CLI (Command Line Interface) is a command-line tool that is used to deve
 - Updating the Flutter framework and packages
 - Analyzing the performance of Flutter apps
 
-By using the Flutter CLI, developers can streamline the development process and automate repetitive tasks. The Flutter CLI is included in the Flutter SDK and is available for Windows, macOS, and Linux.
 Visit the following resources to learn more:
 
-- [@article@The Flutter command-line tool](https://docs.flutter.dev/reference/flutter-cli)
-- [@article@CLI Packages in Flutter](https://dart.dev/server/libraries#command-line-packages)
-- [@article@Get started with Flutter CLI](https://dart.dev/tutorials/server/get-started)
+- [@official@The Flutter CLI](https://docs.flutter.dev/reference/flutter-cli)
+- [@official@CLI Packages in Flutter](https://dart.dev/server/libraries#command-line-packages)
+- [@official@Get Started with Flutter CLI](https://dart.dev/tutorials/server/get-started)
 - [@feed@Explore top posts about CLI](https://app.daily.dev/tags/cli?ref=roadmapsh)

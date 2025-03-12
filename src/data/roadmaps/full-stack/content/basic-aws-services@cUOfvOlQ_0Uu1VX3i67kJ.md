@@ -10,8 +10,6 @@ Here are some of the resources to get you started:
 - [@article@Up and Running with AWS EC2](https://cs.fyi/guide/up-and-running-with-aws-ec2)
 - [@article@VPC Basics](https://cloudcasts.io/course/vpc-basics)
 - [@article@EC2 Essentials](https://cloudcasts.io/course/ec2-essentials)
-- [@video@Sam Meech-Ward's AWS Videos](https://www.youtube.com/playlist?list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M)
 - [@video@DNS with AWS Route 53](https://www.youtube.com/watch?v=yRIY7BJohfo)
 - [@video@Upload Images to S3 from Node Back End](https://www.youtube.com/watch?v=NZElg91l_ms)
-- [@video@S3 Bucket Hosting a Static Website](https://www.youtube.com/watch?v=RoY3ekCCxKc\&list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M)
 - [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)

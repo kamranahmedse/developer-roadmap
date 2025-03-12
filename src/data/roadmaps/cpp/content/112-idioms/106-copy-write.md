@@ -20,7 +20,7 @@ public:
     // Make a copy only if we want to modify the data.
     void write(const std::string &str) {
         // Check if there's more than one reference.
-        if(!data.unique()) {
+        if (data.use_count() > 1) {
             data = std::make_shared<std::string>(*data);
             std::cout << "Copy is actually made for writing." << std::endl;
         }

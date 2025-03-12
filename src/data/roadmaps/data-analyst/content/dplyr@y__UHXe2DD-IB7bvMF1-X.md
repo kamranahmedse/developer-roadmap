@@ -4,5 +4,5 @@ Dplyr is a powerful and popular toolkit for data manipulation in R. As a data an
 
 Learn more from the following resources:
 
-- [@official@dplyr website](https://dplyr.tidyverse.org/)
+- [@official@dplyr](https://dplyr.tidyverse.org/)
 - [@video@Dplyr Essentials](https://www.youtube.com/watch?v=Gvhkp-Yw65U)

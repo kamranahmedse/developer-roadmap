@@ -1,6 +1,7 @@
 # Enterprise Level Architecture
 
 The highest level of architecture. Focus on multiple solutions. High level, abstract design, which needs to be detailed out by solution or application architects. Communication is across the organization.
+
 Visit the following resources to learn more:
 
 - [@article@Enterprise Software Architecture](https://medium.com/@hsienwei/enterprise-software-architecture-957288829daa)

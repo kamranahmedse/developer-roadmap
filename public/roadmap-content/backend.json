@@ -88,6 +88,11 @@
     "description": "Rust is a systems programming language known for its focus on safety, performance, and concurrency. It provides fine-grained control over system resources while ensuring memory safety without needing a garbage collector. Rust's ownership model enforces strict rules on how data is accessed and managed, preventing common issues like null pointer dereferences and data races. Its strong type system and modern features, such as pattern matching and concurrency support, make it suitable for a wide range of applications, from low-level systems programming to high-performance web servers and tools. Rust is gaining traction in both industry and open source for its reliability and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated Rust Roadmap",
+        "url": "https://roadmap.sh/rust",
+        "type": "article"
+      },
+      {
         "title": "The Rust Programming Language - Book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
@@ -119,7 +124,12 @@
     "description": "PHP (Hypertext Preprocessor) is a widely-used, open-source scripting language designed primarily for web development but also applicable for general-purpose programming. It is embedded within HTML to create dynamic web pages and interact with databases, often working with MySQL or other database systems. PHP is known for its simplicity, ease of integration with various web servers, and extensive support for web-related functionalities. Its wide adoption is driven by its role in powering major platforms and content management systems like WordPress, Joomla, and Drupal. PHP's features include server-side scripting, session management, and support for various web protocols and formats.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "PHP Website",
+        "title": "Visit Dedicated PHP Roadmap",
+        "url": "https://roadmap.sh/php",
+        "type": "article"
+      },
+      {
+        "title": "PHP",
         "url": "https://php.net/",
         "type": "article"
       },
@@ -196,7 +206,7 @@
         "type": "article"
       },
       {
-        "title": "Build 30 Javascript projects in 30 days",
+        "title": "Build 30 Javascript Projects in 30 days",
         "url": "https://javascript30.com/",
         "type": "article"
       },
@@ -289,6 +299,11 @@
         "type": "course"
       },
       {
+        "title": "C# Tour",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
+        "type": "article"
+      },
+      {
         "title": "C# on W3 schools",
         "url": "https://www.w3schools.com/cs/index.php",
         "type": "article"
@@ -338,7 +353,7 @@
   },
   "2f0ZO6GJElfZ2Eis28Hzg": {
     "title": "Pick a Language",
-    "description": "Even if you’re a beginner the least you would have known is that Web Development is majorly classified into two facets: Frontend Development and Backend Development. And obviously, they both have their respective set of tools and technologies. For instance, when we talk about Frontend Development, there always comes 3 names first and foremost – HTML, CSS, and JavaScript. In the same way, when it comes to Backend Web Development – we primarily require a backend (or you can say server-side) programming language to make the website function along with various other tools & technologies such as databases, frameworks, web servers, etc.",
+    "description": "Even if you’re a beginner, the first thing you’ll learn is that web development is primarily divided into two aspects: Frontend Development and Backend Development, each with its unique tools and technologies. For Frontend Development, foundational technologies include HTML, CSS, and JavaScript. Similarly, Backend Development revolves around server-side programming languages like Python, Java, or Node.js, complemented by databases, frameworks, and web servers that enable website functionality.",
     "links": []
   },
   "_I1E__wCIVrhjMk6IMieE": {
@@ -346,7 +361,7 @@
     "description": "Git is a distributed version control system designed to handle projects of any size with speed and efficiency. Created by Linus Torvalds in 2005, it tracks changes in source code during software development, allowing multiple developers to work together on non-linear development. Git maintains a complete history of all changes, enabling easy rollbacks and comparisons between versions. Its distributed nature means each developer has a full copy of the repository, allowing for offline work and backup. Git's key features include branching and merging capabilities, staging area for commits, and support for collaborative workflows like pull requests. Its speed, flexibility, and robust branching and merging capabilities have made it the most widely used version control system in software development, particularly for open-source projects and team collaborations.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & GitHub",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -382,7 +397,7 @@
     "description": "Version Control Systems (VCS) are tools that manage and track changes to code or documents over time, allowing multiple users to collaborate on a project efficiently. They record every change made to files, enabling developers to revert to previous versions, compare changes, and maintain a history of modifications. VCS can be centralized, where the repository is hosted on a central server (e.g., Subversion), or distributed, where each user has a complete copy of the repository (e.g., Git, Mercurial). Version control facilitates collaboration, enhances code integrity, and supports continuous integration by enabling smooth management of concurrent changes and resolving conflicts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & GitHub",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -408,13 +423,18 @@
     "description": "GitHub is a web-based platform for version control and collaboration using Git. Owned by Microsoft, it provides hosting for software development and offers features beyond basic Git functionality. GitHub includes tools for project management, code review, and social coding. Key features include repositories for storing code, pull requests for proposing and reviewing changes, issues for tracking bugs and tasks, and actions for automating workflows. It supports both public and private repositories, making it popular for open-source projects and private development. GitHub's collaborative features, like forking repositories and inline code comments, facilitate team development and community contributions. With its extensive integrations and large user base, GitHub has become a central hub for developers, serving as a portfolio, collaboration platform, and deployment tool for software projects of all sizes.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Learn Git & GitHub",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
         "title": "GitHub",
         "url": "https://github.com",
+        "type": "article"
+      },
+      {
+        "title": "GitHub Documentation",
+        "url": "https://docs.github.com",
         "type": "article"
       },
       {
@@ -444,8 +464,13 @@
     "description": "Bitbucket is a web-based version control repository hosting service owned by Atlassian. It primarily uses Git version control systems, offering both cloud-hosted and self-hosted options. Bitbucket provides features such as pull requests for code review, branch permissions, and inline commenting on code. It integrates seamlessly with other Atlassian products like Jira and Trello, making it popular among teams already using Atlassian tools. Bitbucket supports continuous integration and deployment through Bitbucket Pipelines. It offers unlimited private repositories for small teams, making it cost-effective for smaller organizations.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Bitbucket Website",
+        "title": "Bitbucket",
         "url": "https://bitbucket.org/product",
+        "type": "article"
+      },
+      {
+        "title": "Overview of Bitbucket",
+        "url": "https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket",
         "type": "article"
       },
       {
@@ -509,11 +534,6 @@
         "title": "BitBucket",
         "url": "https://bitbucket.org/product/guides/getting-started/overview",
         "type": "article"
-      },
-      {
-        "title": "How to choose the best source code repository",
-        "url": "https://blockandcapital.com/en/choose-code-repository/",
-        "type": "article"
       }
     ]
   },
@@ -558,7 +578,7 @@
     "description": "Microsoft SQL Server (MS SQL) is a relational database management system developed by Microsoft for managing and storing structured data. It supports a wide range of data operations, including querying, transaction management, and data warehousing. SQL Server provides tools and features for database design, performance optimization, and security, including support for complex queries through T-SQL (Transact-SQL), data integration with SQL Server Integration Services (SSIS), and business intelligence with SQL Server Analysis Services (SSAS) and SQL Server Reporting Services (SSRS). It is commonly used in enterprise environments for applications requiring reliable data storage, transaction processing, and reporting.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SQL Roadmap",
+        "title": "Visit Dedicated SQL Roadmap",
         "url": "https://roadmap.sh/sql",
         "type": "article"
       },
@@ -609,7 +629,7 @@
         "type": "article"
       },
       {
-        "title": "MySQL Full Course for free",
+        "title": "MySQL Complete Course",
         "url": "https://www.youtube.com/watch?v=5OdVJbNCSso",
         "type": "video"
       }
@@ -983,8 +1003,19 @@
   },
   "95d9itpUZ4s9roZN8kG9x": {
     "title": "Scaling Databases",
-    "description": "Scaling databases is the process of adapting them to handle more data and users efficiently. It's achieved by either upgrading existing hardware (vertical scaling) or adding more servers (horizontal scaling). Techniques like sharding and replication are key. This ensures databases continue to be a robust asset as they grow.",
-    "links": []
+    "description": "Scaling databases is the process of adapting them to handle more data and users efficiently. It's achieved by either upgrading existing hardware (vertical scaling) or adding more servers (horizontal scaling). Techniques like sharding and replication are key. This ensures databases continue to be a robust asset as they grow.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Strategies for Scaling Databases: A Comprehensive Guide",
+        "url": "https://medium.com/@anil.goyal0057/strategies-for-scaling-databases-a-comprehensive-guide-b69cda7df1d3",
+        "type": "article"
+      },
+      {
+        "title": "Horizontal vs. Vertical Scaling - How to Scale a Database",
+        "url": "https://www.freecodecamp.org/news/horizontal-vs-vertical-scaling-in-database/",
+        "type": "article"
+      }
+    ]
   },
   "dLY0KafPstajCcSbslC4M": {
     "title": "HATEOAS",
@@ -1127,7 +1158,7 @@
     "description": "GraphQL is a query language for APIs and a runtime for executing those queries, developed by Facebook. Unlike REST, where fixed endpoints return predefined data, GraphQL allows clients to request exactly the data they need, making API interactions more flexible and efficient. It uses a single endpoint and relies on a schema that defines the types and structure of the available data. This approach reduces over-fetching and under-fetching of data, making it ideal for complex applications with diverse data needs across multiple platforms (e.g., web, mobile).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "GraphQL Roadmap",
+        "title": "Visit Dedicated GraphQL Roadmap",
         "url": "https://roadmap.sh/graphql",
         "type": "article"
       },
@@ -1310,7 +1341,7 @@
     "description": "Unit testing is a software testing method where individual components or units of a program are tested in isolation to ensure they function correctly. This approach focuses on verifying the smallest testable parts of an application, such as functions or methods, by executing them with predefined inputs and comparing the results to expected outcomes. Unit tests are typically automated and written by developers during the coding phase to catch bugs early, facilitate code refactoring, and ensure that each unit of code performs as intended. By isolating and testing each component, unit testing helps improve code reliability and maintainability.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Unit testing",
+        "title": "Unit Testing",
         "url": "https://en.wikipedia.org/wiki/Unit_testing",
         "type": "article"
       },
@@ -1395,6 +1426,11 @@
       {
         "title": "Gangs of Four (GoF) Design Patterns",
         "url": "https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns",
+        "type": "article"
+      },
+      {
+        "title": "Design Patterns for Humans",
+        "url": "https://github.com/kamranahmedse/design-patterns-for-humans",
         "type": "article"
       },
       {
@@ -1654,8 +1690,8 @@
         "type": "article"
       },
       {
-        "title": "Architectural Patterns in a nutshell",
-        "url": "https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013",
+        "title": "10 Common Software Architectural Patterns in a nutshell",
+        "url": "https://theiotacademy.medium.com/10-common-software-architectural-patterns-in-a-nutshell-1b1f6cf5036b",
         "type": "article"
       }
     ]
@@ -1727,7 +1763,7 @@
     "description": "Message brokers are intermediaries that facilitate communication between distributed systems or components by receiving, routing, and delivering messages. They enable asynchronous message passing, decoupling producers (senders) from consumers (receivers), which improves scalability and flexibility. Common functions of message brokers include message queuing, load balancing, and ensuring reliable message delivery through features like persistence and acknowledgment. Popular message brokers include Apache Kafka, RabbitMQ, and ActiveMQ, each offering different features and capabilities suited to various use cases like real-time data processing, event streaming, or task management.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What are message brokers?",
+        "title": "What are Message Brokers?",
         "url": "https://www.ibm.com/topics/message-brokers",
         "type": "article"
       },
@@ -1795,13 +1831,13 @@
     "description": "WebSockets provide a protocol for full-duplex, real-time communication between a client (usually a web browser) and a server over a single, long-lived connection. Unlike traditional HTTP, which requires multiple request-response cycles to exchange data, WebSockets establish a persistent connection that allows for continuous data exchange in both directions. This enables efficient real-time interactions, such as live chat, online gaming, and real-time updates on web pages. WebSocket connections start with an HTTP handshake, then upgrade to a WebSocket protocol, facilitating low-latency communication and reducing overhead compared to HTTP polling or long polling.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Introduction to WebSockets",
-        "url": "https://www.tutorialspoint.com/websockets/index.htm",
+        "title": "Socket.io Library Bidirectional and Low-latency Communication for Every Platform",
+        "url": "https://socket.io/",
         "type": "article"
       },
       {
-        "title": "Socket.io Library Bidirectional and low-latency communication for every platform",
-        "url": "https://socket.io/",
+        "title": "Introduction to WebSockets",
+        "url": "https://www.tutorialspoint.com/websockets/index.htm",
         "type": "article"
       },
       {
@@ -1868,7 +1904,7 @@
         "type": "opensource"
       },
       {
-        "title": "Official Website",
+        "title": "Caddy Server",
         "url": "https://caddyserver.com/",
         "type": "article"
       },
@@ -1884,8 +1920,13 @@
     "description": "Apache, officially known as the Apache HTTP Server, is a free, open-source web server software developed and maintained by the Apache Software Foundation. It's one of the most popular web servers worldwide, known for its robustness, flexibility, and extensive feature set. Apache supports a wide range of operating systems and can handle various content types and programming languages through its modular architecture. It offers features like virtual hosting, SSL/TLS support, and URL rewriting. Apache's configuration files allow for detailed customization of server behavior. While it has faced competition from newer alternatives like Nginx, especially in high-concurrency scenarios, Apache remains widely used due to its stability, comprehensive documentation, and large community support. It's particularly favored for its ability to integrate with other open-source technologies in the LAMP (Linux, Apache, MySQL, PHP/Perl/Python) stack.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Apache Server Website",
+        "title": "Apache Server",
         "url": "https://httpd.apache.org/",
+        "type": "article"
+      },
+      {
+        "title": "Apache Server Documentation",
+        "url": "https://httpd.apache.org/docs/2.4/",
         "type": "article"
       },
       {
@@ -1978,8 +2019,18 @@
         "type": "course"
       },
       {
-        "title": "Redis Website",
+        "title": "Visit Dedicated Redis Roadmap",
+        "url": "https://roadmap.sh/redis",
+        "type": "article"
+      },
+      {
+        "title": "Redis",
         "url": "https://redis.io/",
+        "type": "article"
+      },
+      {
+        "title": "Redis Documentation",
+        "url": "https://redis.io/docs/latest/",
         "type": "article"
       },
       {
@@ -2051,8 +2102,13 @@
     "description": "Apache CouchDB is an open-source document-oriented NoSQL database. It uses JSON to store data, JavaScript as its query language using MapReduce, and HTTP for an API. Unlike a relational database, a CouchDB database does not store data and relationships in tables. Instead, each database is a collection of independent documents. Each document maintains its own data and self-contained schema.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "CouchDB Website",
+        "title": "CouchDB",
         "url": "https://couchdb.apache.org/",
+        "type": "article"
+      },
+      {
+        "title": "CouchDB Documentation",
+        "url": "https://docs.couchdb.org/en/stable/",
         "type": "article"
       },
       {
@@ -2161,6 +2217,11 @@
     "description": "Load shifting is a strategy used to manage and distribute computing or system workloads more efficiently by moving or redistributing the load from peak times to off-peak periods. This approach helps in balancing the demand on resources, optimizing performance, and reducing costs. In cloud computing and data centers, load shifting can involve rescheduling jobs, leveraging different regions or availability zones, or adjusting resource allocation based on real-time demand. By smoothing out peak loads, organizations can enhance system reliability, minimize latency, and better utilize their infrastructure.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Load Shifting",
+        "url": "https://en.wikipedia.org/wiki/Load_shifting",
+        "type": "article"
+      },
+      {
         "title": "Load Shifting 101",
         "url": "https://www.youtube.com/watch?v=DOyMJEdk5aE",
         "type": "video"
@@ -2231,7 +2292,7 @@
     "links": [
       {
         "title": "What is Instrumentation?",
-        "url": "https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)",
+        "url": "https://en.wikipedia.org/wiki/Instrumentation_/(computer_programming/)",
         "type": "article"
       },
       {
@@ -2352,6 +2413,11 @@
       {
         "title": "sCrypt: A Beginner’s Guide",
         "url": "https://medium.com/@yusufedresmaina/scrypt-a-beginners-guide-cf1aecf8b010",
+        "type": "article"
+      },
+      {
+        "title": "Wikipedia - scrypt",
+        "url": "https://en.wikipedia.org/wiki/Scrypt",
         "type": "article"
       }
     ]
@@ -2574,7 +2640,7 @@
         "type": "article"
       },
       {
-        "title": "An overview of HTTP",
+        "title": "Overview of HTTP",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
         "type": "article"
       },
@@ -2626,7 +2692,7 @@
     "description": "Hosting refers to the service of providing server space and resources for storing and delivering website files and applications to users over the internet. Hosting providers offer the infrastructure, such as servers, storage, and network connectivity, required to make websites and applications accessible online. There are various types of hosting, including shared hosting (where multiple websites share a single server), virtual private servers (VPS), dedicated hosting (where a single server is dedicated to one user), and cloud hosting (which uses a network of servers to provide scalable resources). Hosting services often include domain registration, security features, and technical support to ensure websites are reliably available and perform well.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is the difference between webpage, website, web server, and search engine?",
+        "title": "What is the difference between Webpage, Website, Web server, and search engine?",
         "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines",
         "type": "article"
       },
@@ -2801,6 +2867,11 @@
     "title": "Token Authentication",
     "description": "Token-based authentication is a protocol which allows users to verify their identity, and in return receive a unique access token. During the life of the token, users then access the website or app that the token has been issued for, rather than having to re-enter credentials each time they go back to the same webpage, app, or any resource protected with that same token. Auth tokens work like a stamped ticket. The user retains access as long as the token remains valid. Once the user logs out or quits an app, the token is invalidated. Token-based authentication is different from traditional password-based or server-based authentication techniques. Tokens offer a second layer of security, and administrators have detailed control over each action and transaction.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Token Based Authentication",
+        "url": "https://roadmap.sh/guides/token-authentication",
+        "type": "article"
+      },
       {
         "title": "What Is Token-Based Authentication?",
         "url": "https://www.okta.com/identity-101/what-is-token-based-authentication/",
@@ -3017,8 +3088,18 @@
         "type": "course"
       },
       {
-        "title": "Redis Website",
+        "title": "Visit Dedicated Redis Roadmap",
+        "url": "https://roadmap.sh/redis",
+        "type": "article"
+      },
+      {
+        "title": "Redis",
         "url": "https://redis.io/",
+        "type": "article"
+      },
+      {
+        "title": "Redis Documentation",
+        "url": "https://redis.io/docs/latest/",
         "type": "article"
       },
       {
@@ -3064,8 +3145,13 @@
         "type": "course"
       },
       {
-        "title": "Firebase Website",
+        "title": "Firebase",
         "url": "https://firebase.google.com/",
+        "type": "article"
+      },
+      {
+        "title": "Firebase Documentation",
+        "url": "https://firebase.google.com/docs",
         "type": "article"
       },
       {
@@ -3195,7 +3281,7 @@
     "description": "Oracle Base Database Service enables you to maintain absolute control over your data while using the combined capabilities of Oracle Database and Oracle Cloud Infrastructure. Oracle Base Database Service offers database systems (DB systems) on virtual machines. They are available as single-node DB systems and multi-node RAC DB systems on Oracle Cloud Infrastructure (OCI). You can manage these DB systems by using the OCI Console, the OCI API, the OCI CLI, the Database CLI (DBCLI), Enterprise Manager, or SQL Developer.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Base Database Website",
+        "title": "Base Database Documentation",
         "url": "https://docs.oracle.com/en-us/iaas/base-database/index.html",
         "type": "article"
       }
@@ -3206,7 +3292,7 @@
     "description": "Amazon Neptune is a fully managed graph database service provided by Amazon Web Services (AWS). It's designed to store and navigate highly connected data, supporting both property graph and RDF (Resource Description Framework) models. Neptune uses graph query languages like Gremlin and SPARQL, making it suitable for applications involving complex relationships, such as social networks, recommendation engines, fraud detection systems, and knowledge graphs. It offers high availability, with replication across multiple Availability Zones, and supports up to 15 read replicas for improved performance. Neptune integrates with other AWS services, provides encryption at rest and in transit, and offers fast recovery from failures. Its scalability and performance make it valuable for handling large-scale, complex data relationships in enterprise-level applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "AWS Neptune Website",
+        "title": "AWS Neptune",
         "url": "https://aws.amazon.com/neptune/",
         "type": "article"
       },

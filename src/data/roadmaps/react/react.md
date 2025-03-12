@@ -4,16 +4,16 @@ pdfUrl: '/pdfs/roadmaps/react.pdf'
 renderer: 'editor'
 order: 2
 briefTitle: 'React'
-briefDescription: 'Step by step guide to become a React Developer in 2024'
+briefDescription: 'Step by step guide to become a React Developer in 2025'
 title: 'React Developer'
-description: 'Everything that is there to learn about React and the ecosystem in 2024.'
+description: 'Everything that is there to learn about React and the ecosystem in 2025.'
 hasTopics: true
 dimensions:
   width: 968
   height: 2140
 schema:
   headline: 'React Developer Roadmap'
-  description: 'Learn to become a React developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn to become a React developer with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/react.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'

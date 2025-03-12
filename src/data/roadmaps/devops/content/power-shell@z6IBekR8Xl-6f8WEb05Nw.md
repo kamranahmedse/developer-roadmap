@@ -4,6 +4,6 @@ PowerShell is a task automation and configuration management framework from Micr
 
 Learn more from the following resources:
 
-- [@article@PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
+- [@official@PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
 - [@video@Learn PowerShell in Less Than 2 Hours](https://www.youtube.com/watch?v=ZOoCaWyifmI)
 - [@feed@Explore top posts about PowerShell](https://app.daily.dev/tags/powershell?ref=roadmapsh)

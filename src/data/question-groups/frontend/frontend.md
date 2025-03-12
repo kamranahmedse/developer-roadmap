@@ -1,21 +1,14 @@
 ---
 order: 5
 briefTitle: 'Frontend'
-briefDescription: 'Test, rate and improve your Frontend knowledge with these questions.'
+briefDescription: 'Test, Rate and Improve your Frontend knowledge with these questions.'
 title: 'Top 30 Popular Front End Developer Interview Questions'
-description: 'Test, rate and improve your Frontend knowledge with these questions.'
+description: 'Test, Rate and Improve your Frontend knowledge with these questions.'
 authorId: 'fernando'
 isNew: false
 date: 2024-05-24
 relatedTitle: "Other Guides"
-relatedGuides:
-  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
-  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
-  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
-  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
-  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
-  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
-  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
+relatedGuidesId: 'frontend'
 seo:
   title: 'Top 30 Popular Front End Developer Interview Questions'
   description: 'Nail your frontend developer interview with these 30 popularly asked questions and answers. Test your knowledge with our quiz cards!'
@@ -163,13 +156,12 @@ Keep in mind that they’re grouped by difficulty into three categories: beginne
 
 Before jumping straight into front end interview prep, here are some key points to keep in mind:
 
-1. **Master the Fundamentals**: Before you start to solve complex problems, you need to make sure you have a solid understanding of front end development basics. This includes HTML, CSS, and JavaScript, as well as how they work together to create responsive, interactive web pages. Remember that you have the [Front End roadmap](https://roadmap.sh/frontend) available if you feel you still need to learn more about any of these topics.
-2. **Practice Coding**: You can improve your coding skills through mini-projects or by solving problems on platforms like [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/). Focus on challenges related to front end development.
-3. **Learn Modern Frameworks and Libraries**: Get to know popular frameworks and libraries such as React, Angular, or Vue.js. Understanding these tools is often crucial for modern front end roles.
+1. **Master the Fundamentals**: Before you start to solve complex problems, you need to make sure you have a solid understanding of front end development basics. This includes HTML, CSS, and JavaScript, as well as how they work together to create responsive, interactive web pages. Remember that you have the [Frontend](https://roadmap.sh/frontend) roadmap available if you feel you still need to learn more about any of these topics.
+2. **Practice Coding**: You can improve your [frontend coding skills](https://roadmap.sh/frontend/developer-skills) through [mini-projects](https://roadmap.sh/frontend/projects) or by solving problems on platforms like [LeetCode](https://leetcode.com/) and [HackerRank](https://www.hackerrank.com/). Focus on challenges related to front end development.
+3. **Learn Modern Frameworks and Libraries**: Get to know popular [frameworks](https://roadmap.sh/frontend/frameworks) and libraries such as [React](https://roadmap.sh/react), [Angular](https://roadmap.sh/angular), or [Vue.js](https://roadmap.sh/vue). Understanding these tools is often crucial for modern front end roles.
 4. **Tackle the foundational tools of your dev workflow**: Make sure you’re comfortable with essential tools and practices such as version control (e.g., Git), testing (unit and integration testing), and build tools (e.g., Vite). These are crucial for any front end role.
 5. **Understand UI/UX Principles**: Understanding basic concepts of design and user experience can set you apart as a front end developer. Try to learn about accessibility, responsive design, and how to create intuitive interfaces.
 6. **Research the Company**: Show some interest in the company you’re interviewing with by learning about their business and products. Prepare some questions to ask during the interview to show you care about the role.
 7. **Improve your communication skills**. This one is not front end-specific, however, it’s always a good idea to invest in your future.
 
 With these tips out of the way, let's now get into some of the most common Front End interview questions that you’ll encounter!
-

@@ -33,7 +33,6 @@ export function getUrlUtmParams(): UtmParams {
 
 export function triggerUtmRegistration() {
   const utmParams = getStoredUtmParams();
-  console.log(utmParams);
   if (!utmParams.utmSource) {
     return;
   }

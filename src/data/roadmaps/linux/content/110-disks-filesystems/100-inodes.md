@@ -12,3 +12,7 @@ Although you would not interact with inodes directly in everyday usage, understa
 # Retrieve the inode of a file
 ls -i filename
 ```
+
+Learn more from the following resources:
+
+- [@article@Introduction to Inodes](https://linuxjourney.com/lesson/inodes)

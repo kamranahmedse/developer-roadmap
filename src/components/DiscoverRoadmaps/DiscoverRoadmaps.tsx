@@ -133,14 +133,6 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
             <div className="relative">
               <div className="flex flex-col sm:flex-row items-center gap-1.5">
                 <span className="group relative normal-case">
-                  <Tooltip
-                    position={'bottom-left'}
-                    additionalClass={
-                      'translate-y-0.5 bg-yellow-300 font-normal !text-black'
-                    }
-                  >
-                    Ask us to feature it once you're done!
-                  </Tooltip>
                   <button
                     className="rounded-md bg-black px-3.5 py-1.5 text-sm font-medium text-white transition-colors hover:bg-black"
                     onClick={() => {
@@ -151,14 +143,6 @@ export function DiscoverRoadmaps(props: DiscoverRoadmapsProps) {
                   </button>
                 </span>
                 <span className="group relative normal-case">
-                  <Tooltip
-                    position={'bottom-left'}
-                    additionalClass={
-                      'translate-y-0.5 bg-yellow-300 font-normal !text-black'
-                    }
-                  >
-                    Up-to-date and maintained by the official team
-                  </Tooltip>
                   <a
                     href="/roadmaps"
                     className="inline-block rounded-md bg-gray-300 px-3.5 py-1.5 text-sm text-black sm:py-1.5 sm:text-sm"

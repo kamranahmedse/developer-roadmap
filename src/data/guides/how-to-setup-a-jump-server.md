@@ -19,7 +19,7 @@ tags:
 
 Given below is the demonstration of a sample production environment for a web application that consists of two different components, application server and database server.
 
-![](https://i.imgur.com/nBJDuVO.png)
+![Private Network](https://i.imgur.com/nBJDuVO.png)
 
 Application server has both a public and private IP address. It is accessible from the internet. Database server has only a private IP address and is accessible only from the application server.
 
@@ -39,7 +39,6 @@ For example, you might have this infrastructure on AWS, where you have a custom 
 Let's say that the application server is in the public subnet and the database server is in the private subnet.
 
 > If you want to learn more about AWS VPC, check out this [detailed guide about AWS VPC](https://cs.fyi/guide/up-and-running-with-aws-vpc), Subnets and everything else you need to know about AWS VPC.
-
 > Also, have a look at [this guide on AWS EC2 instances](https://cs.fyi/guide/up-and-running-with-aws-ec2) which covers all the important concepts about EC2 instances and how to launch them.
 
 We can easily SSH into the application server from the internet i.e.

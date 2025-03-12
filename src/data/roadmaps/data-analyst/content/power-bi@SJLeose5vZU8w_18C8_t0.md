@@ -4,5 +4,5 @@ PowerBI, an interactive data visualization and business analytics tool developed
 
 Learn more from the following resources:
 
-- [@official@Power BI Website](https://www.microsoft.com/en-us/power-platform/products/power-bi)
+- [@official@Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
 - [@video@Power BI for beginners](https://www.youtube.com/watch?v=NNSHu0rkew8)

@@ -3,9 +3,9 @@ pdfUrl: '/pdfs/roadmaps/server-side-game-developer.pdf'
 order: 17
 renderer: 'editor'
 briefTitle: 'Server Side Game Developer'
-briefDescription: 'Roadmap to becoming a Server Side Game Developer in 2024'
+briefDescription: 'Roadmap to becoming a Server Side Game Developer in 2025'
 title: 'Server Side Game Developer'
-description: 'Roadmap to becoming a Server Side Game Developer in 2024'
+description: 'Roadmap to becoming a Server Side Game Developer in 2025'
 hasTopics: true
 isNew: true
 isHidden: true

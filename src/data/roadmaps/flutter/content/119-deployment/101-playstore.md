@@ -4,6 +4,6 @@ The Google Play Store is an online store for Android apps, games, and other digi
 
 Visit the following resources to learn more:
 
-- [@article@Publish your app](https://developer.android.com/studio/publish)
-- [@article@Build and release an Android app](https://docs.flutter.dev/deployment/android)
+- [@official@Build and Release an Android App](https://docs.flutter.dev/deployment/android)
+- [@article@Publish your App - Android Developer](https://developer.android.com/studio/publish)
 - [@article@Publishing Flutter App To PlayStore](https://medium.flutterdevs.com/publishing-flutter-app-to-playstore-fa7543b61a7b)
