@@ -79,7 +79,7 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
           Cancel
         </button>
         <button
-          className="flex items-center justify-center rounded-md bg-yellow-400 py-2 text-sm font-semibold text-black hover:bg-yellow-500 transition-colors disabled:opacity-50"
+          className="flex items-center justify-center rounded-md bg-purple-600 py-2 text-sm font-semibold text-white hover:bg-purple-500 transition-colors disabled:opacity-50"
           disabled={isPending}
           onClick={() => {
             updatePlan({ priceId: selectedPrice.priceId });

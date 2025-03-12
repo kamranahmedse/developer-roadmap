@@ -161,7 +161,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                     className={cn(
                       'flex flex-col space-y-3 sm:space-y-4 rounded-lg bg-white p-4 sm:p-6',
                       isYearly
-                        ? 'border-2 border-yellow-400'
+                        ? 'border-2 border-purple-400'
                         : 'border border-gray-200',
                     )}
                   >
@@ -171,13 +171,13 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                           {isYearly ? 'Yearly Payment' : 'Monthly Payment'}
                         </h4>
                         {isYearly && (
-                          <span className="text-xs sm:text-sm font-medium text-green-600">
+                          <span className="text-xs sm:text-sm font-medium text-blue-600">
                             (2 months free)
                           </span>
                         )}
                       </div>
                       {isYearly && (
-                        <span className="rounded-full bg-yellow-400 px-1.5 py-0.5 sm:px-2 sm:py-1 text-xs font-semibold text-black">
+                        <span className="rounded-full bg-purple-600 px-1.5 py-0.5 sm:px-2 sm:py-1 text-xs font-semibold text-white">
                           Most Popular
                         </span>
                       )}
@@ -204,8 +204,8 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                     <div>
                       <button
                         className={cn(
-                          'flex min-h-9 sm:min-h-11 w-full items-center justify-center rounded-md py-2 sm:py-2.5 text-sm sm:text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60',
-                          'bg-yellow-400 text-black hover:bg-yellow-500',
+                          'flex min-h-9 sm:min-h-11 w-full items-center justify-center rounded-md py-2 sm:py-2.5 text-sm sm:text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 disabled:cursor-not-allowed disabled:opacity-60',
+                          'bg-purple-600 text-white hover:bg-purple-500',
                         )}
                         disabled={
                           isCurrentPlanSelected || isCreatingCheckoutSession
@@ -245,7 +245,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
             {/* Benefits Section */}
             <div className="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2">
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <Zap className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                <Zap className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-purple-400" />
                 <div>
                   <h4 className="text-sm sm:text-base font-medium text-black">
                     Unlimited AI Course Generations
@@ -256,7 +256,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 </div>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <Infinity className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                <Infinity className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-purple-400" />
                 <div>
                   <h4 className="text-sm sm:text-base font-medium text-black">
                     No Daily Limits on course features
@@ -267,7 +267,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 </div>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <MessageSquare className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                <MessageSquare className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-purple-400" />
                 <div>
                   <h4 className="text-sm sm:text-base font-medium text-black">
                     Unlimited Course Follow-ups
@@ -278,7 +278,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 </div>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <Sparkles className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                <Sparkles className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-purple-400" />
                 <div>
                   <h4 className="text-sm sm:text-base font-medium text-black">
                     Early Access to Features
@@ -289,7 +289,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 </div>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <Heart className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-yellow-400" />
+                <Heart className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5 text-purple-400" />
                 <div>
                   <h4 className="text-sm sm:text-base font-medium text-black">
                     Support Development
