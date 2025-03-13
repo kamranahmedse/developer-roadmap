@@ -55,7 +55,7 @@ export function billingDetailsOptions() {
 }
 
 export function useIsPaidUser() {
-  const { data } = useQuery(
+  const { data, isLoading } = useQuery(
     {
       queryKey: ['billing-details'],
       queryFn: async () => {
@@ -67,7 +67,10 @@ export function useIsPaidUser() {
     queryClient,
   );
 
-  return data ?? false;
+  return {
+    isPaidUser: data ?? false,
+    isLoading,
+  };
 }
 
 type CoursePriceParams = {

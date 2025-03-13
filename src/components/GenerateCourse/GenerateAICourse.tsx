@@ -54,6 +54,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     await generateCourse({
       term,
       difficulty,
+      slug: courseSlug,
       onCourseIdChange: setCourseId,
       onCourseSlugChange: setCourseSlug,
       onCourseChange: setCourse,

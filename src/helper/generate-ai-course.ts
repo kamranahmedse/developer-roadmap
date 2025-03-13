@@ -9,10 +9,11 @@ import { getAiCourseLimitOptions } from '../queries/ai-course';
 type GenerateCourseOptions = {
   term: string;
   difficulty: string;
+  slug?: string;
   isForce?: boolean;
   onCourseIdChange?: (courseId: string) => void;
   onCourseSlugChange?: (courseSlug: string) => void;
-  onCourseChange?: (course: AiCourse) => void;
+  onCourseChange?: (course: AiCourse, rawData: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
   onError?: (error: string) => void;
 };
@@ -20,6 +21,7 @@ type GenerateCourseOptions = {
 export async function generateCourse(options: GenerateCourseOptions) {
   const {
     term,
+    slug,
     difficulty,
     onCourseIdChange,
     onCourseSlugChange,
@@ -30,29 +32,47 @@ export async function generateCourse(options: GenerateCourseOptions) {
   } = options;
 
   onLoadingChange?.(true);
-  onCourseChange?.({
-    title: '',
-    modules: [],
-    difficulty: '',
-  });
+  onCourseChange?.(
+    {
+      title: '',
+      modules: [],
+      difficulty: '',
+    },
+    '',
+  );
   onError?.('');
 
   try {
-    const response = await fetch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+    let response = null;
+
+    if (slug && isForce) {
+      response = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-regenerate-ai-course/${slug}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          credentials: 'include',
         },
-        body: JSON.stringify({
-          keyword: term,
-          difficulty,
-          isForce,
-        }),
-        credentials: 'include',
-      },
-    );
+      );
+    } else {
+      response = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            keyword: term,
+            difficulty,
+            isForce,
+          }),
+          credentials: 'include',
+        },
+      );
+    }
 
     if (!response.ok) {
       const data = await response.json();
@@ -108,10 +128,13 @@ export async function generateCourse(options: GenerateCourseOptions) {
 
         try {
           const aiCourse = generateAiCourseStructure(result);
-          onCourseChange?.({
-            ...aiCourse,
-            difficulty: difficulty || '',
-          });
+          onCourseChange?.(
+            {
+              ...aiCourse,
+              difficulty: difficulty || '',
+            },
+            result,
+          );
         } catch (e) {
           console.error('Error parsing streamed course content:', e);
         }

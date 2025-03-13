@@ -15,6 +15,8 @@ export function GetAICourse(props: GetAICourseProps) {
   const { courseSlug } = props;
 
   const [isLoading, setIsLoading] = useState(true);
+  const [isRegenerating, setIsRegenerating] = useState(false);
+
   const [error, setError] = useState('');
   const { data: aiCourse, error: queryError } = useQuery(
     {
@@ -61,7 +63,17 @@ export function GetAICourse(props: GetAICourseProps) {
     await generateCourse({
       term: aiCourse.keyword,
       difficulty: aiCourse.difficulty,
-      onLoadingChange: setIsLoading,
+      slug: courseSlug,
+      onCourseChange: (course, rawData) => {
+        queryClient.setQueryData(
+          getAiCourseOptions({ aiCourseSlug: courseSlug }).queryKey,
+          {
+            ...aiCourse,
+            data: rawData,
+          },
+        );
+      },
+      onLoadingChange: setIsRegenerating,
       onError: setError,
       isForce: true,
     });
@@ -74,7 +86,7 @@ export function GetAICourse(props: GetAICourseProps) {
         modules: aiCourse?.course.modules || [],
         difficulty: aiCourse?.difficulty || 'Easy',
       }}
-      isLoading={isLoading}
+      isLoading={isLoading || isRegenerating}
       courseSlug={courseSlug}
       error={error}
       onRegenerateOutline={handleRegenerateCourse}

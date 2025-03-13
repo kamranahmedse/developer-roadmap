@@ -16,7 +16,7 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  const isPaidUser = useIsPaidUser();
+  const { isPaidUser } = useIsPaidUser();
 
   useOutsideClick(ref, () => setIsDropdownVisible(false));
 
