@@ -5,4 +5,3 @@ The relational model is an approach to organizing and structuring data using tab
 Learn more from the following resources:
 
 - [@article@What is the Relational Model?](https://www.postgresql.org/docs/7.1/relmodel-oper.html)
-- [@article@The Relational Model](https://www.geeksforgeeks.org/relational-model-in-dbms/)

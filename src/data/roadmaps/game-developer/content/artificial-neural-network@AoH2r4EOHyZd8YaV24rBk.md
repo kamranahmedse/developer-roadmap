@@ -4,6 +4,5 @@ Artificial Neural Networks (ANN) are a branch of machine learning that draw insp
 
 Visit the following resources to learn more:
 
-- [@article@Artificial Neural Networks (ANN)](https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/)
 - [@article@What is ANN?](https://www.coursera.org/articles/artificial-neural-network)
 - [@article@What is Neural Network?](https://www.ibm.com/topics/neural-networks)

@@ -68,7 +68,7 @@ Usually saved in a .js file extension, this code will show **"Sign up on roadmap
 
 ### Java vs. JavaScript: Execution and runtime
 
-Java is often used for server-side programming. It is a compiled language that requires a [Java Virtual Machine](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/) **(JVM)** to run Java code. Before running your code, it's compiled into bytecode, a platform-independent format. The JVM then executes the bytecode to ensure that Java programs run on any system with JVM installed. It makes Java a good choice for large-scale applications that run on any operating system. These operating systems include Windows, macOS, Linux, and mobile devices.
+Java is often used for server-side programming. It is a compiled language that requires a Java Virtual Machine **(JVM)** to run Java code. Before running your code, it's compiled into bytecode, a platform-independent format. The JVM then executes the bytecode to ensure that Java programs run on any system with JVM installed. It makes Java a good choice for large-scale applications that run on any operating system. These operating systems include Windows, macOS, Linux, and mobile devices.
 
 ![](https://assets.roadmap.sh/guest/java-vs-javascript-execution-and-runtime-csnnz.png)
 

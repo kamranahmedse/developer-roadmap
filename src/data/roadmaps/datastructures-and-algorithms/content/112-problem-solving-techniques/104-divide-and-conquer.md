@@ -4,5 +4,4 @@ Divide and conquer is a powerful algorithm design technique that solves a proble
 
 Learn more from the following links:
 
-- [@article@Introduction to Divide and Conquer Algorithm](https://www.geeksforgeeks.org/introduction-to-divide-and-conquer-algorithm/)
 - [@video@Divide & Conquer Algorithm In 3 Minutes](https://www.youtube.com/watch?v=YOh6hBtX5l0)

@@ -4,7 +4,6 @@
 
 Learn more from the following links:
 
-- [@article@Dynamic Programming (DP) Tutorial with Problems](https://www.geeksforgeeks.org/introduction-to-dynamic-programming-data-structures-and-algorithm-tutorials/)
 - [@article@Getting Started with Dynamic Programming in Data Structures and Algorithms](https://medium.com/@PythonicPioneer/getting-started-with-dynamic-programming-in-data-structures-and-algorithms-126c7a16775c)
 - [@video@What Is Dynamic Programming and How To Use It](https://www.youtube.com/watch?v=vYquumk4nWw&t=4s)
 - [@video@5 Simple Steps for Solving Dynamic Programming Problems](https://www.youtube.com/watch?v=aPQY__2H3tE)

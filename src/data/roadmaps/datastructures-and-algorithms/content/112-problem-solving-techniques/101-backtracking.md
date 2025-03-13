@@ -4,5 +4,4 @@ Backtracking is a powerful algorithmic technique that aims to solve a problem in
 
 Learn more from the following links:
 
-- [@article@Backtracking Algorithm](https://www.geeksforgeeks.org/backtracking-algorithms/)
 - [@video@What is backtracking?](https://www.youtube.com/watch?v=Peo7k2osVVs)

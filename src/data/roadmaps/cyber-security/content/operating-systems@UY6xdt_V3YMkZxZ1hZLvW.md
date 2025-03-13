@@ -4,5 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@What is an operating system?](https://www.geeksforgeeks.org/what-is-an-operating-system/)
 - [@video@What is an operating system as fast as possible](https://www.youtube.com/watch?v=pVzRTmdd9j0)

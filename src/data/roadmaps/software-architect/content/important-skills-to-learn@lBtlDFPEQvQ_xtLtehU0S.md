@@ -12,7 +12,3 @@ To support the laid-out activities specific skills are required. From my experie
 - Balance
 - Consult
 - Market
-
-Visit the following resources to learn more:
-
-- [@article@Software Architect Skills](https://www.geeksforgeeks.org/software-architects-skills/)
