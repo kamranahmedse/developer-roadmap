@@ -1,5 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseOptions } from '../../queries/ai-course';
+import {
+  getAiCourseOptions,
+  getAiCourseProgressOptions,
+} from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
 import { AICourseContent } from './AICourseContent';
@@ -73,7 +76,16 @@ export function GetAICourse(props: GetAICourseProps) {
           },
         );
       },
-      onLoadingChange: setIsRegenerating,
+      onLoadingChange: (isNewLoading) => {
+        setIsRegenerating(isNewLoading);
+        if (!isNewLoading) {
+          queryClient.invalidateQueries({
+            queryKey: getAiCourseProgressOptions({
+              aiCourseSlug: courseSlug,
+            }).queryKey,
+          });
+        }
+      },
       onError: setError,
       isForce: true,
     });
