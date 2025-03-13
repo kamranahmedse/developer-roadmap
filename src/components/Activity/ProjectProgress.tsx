@@ -1,5 +1,4 @@
 import { getUser } from '../../lib/jwt';
-import { getPercentage } from '../../helper/number';
 import { ProjectProgressActions } from './ProjectProgressActions';
 import { cn } from '../../lib/classname';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';

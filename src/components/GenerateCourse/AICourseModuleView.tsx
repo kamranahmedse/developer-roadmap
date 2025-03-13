@@ -8,7 +8,7 @@ import {
   XIcon,
 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { readAICourseLessonStream } from '../../helper/read-stream';
+import { readStream } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
@@ -136,7 +136,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
     setIsLoading(false);
     setIsGenerating(true);
-    await readAICourseLessonStream(reader, {
+    await readStream(reader, {
       onStream: async (result) => {
         if (abortController.signal.aborted) {
           return;

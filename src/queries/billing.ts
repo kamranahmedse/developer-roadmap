@@ -1,6 +1,7 @@
-import { queryOptions } from '@tanstack/react-query';
+import { queryOptions, useQuery } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
+import { queryClient } from '../stores/query-client';
 
 export const allowedSubscriptionStatus = [
   'active',
@@ -51,6 +52,22 @@ export function billingDetailsOptions() {
     },
     enabled: !!isLoggedIn(),
   });
+}
+
+export function useIsPaidUser() {
+  const { data } = useQuery(
+    {
+      queryKey: ['billing-details'],
+      queryFn: async () => {
+        return httpGet<BillingDetailsResponse>('/v1-billing-details');
+      },
+      enabled: !!isLoggedIn(),
+      select: (data) => data.status === 'active',
+    },
+    queryClient,
+  );
+
+  return data ?? false;
 }
 
 type CoursePriceParams = {

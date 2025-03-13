@@ -27,7 +27,7 @@ export function AICourseCard(props: AICourseCardProps) {
 
   // Calculate progress percentage
   const totalTopics = course.lessonCount || 0;
-  const completedTopics = course.progress?.done?.length || 0;
+  const completedTopics = course.done?.length || 0;
   const progressPercentage =
     totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
 

@@ -20,16 +20,18 @@ import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
+import { RegenerateOutline } from './RegenerateOutline';
 
 type AICourseContentProps = {
   courseSlug?: string;
   course: AiCourse;
   isLoading: boolean;
   error?: string;
+  onRegenerateOutline: () => void;
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const { course, courseSlug, isLoading, error } = props;
+  const { course, courseSlug, isLoading, error, onRegenerateOutline } = props;
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
@@ -49,21 +51,23 @@ export function AICourseContent(props: AICourseContentProps) {
   >({});
 
   const goToNextModule = () => {
-    if (activeModuleIndex < course.modules.length - 1) {
-      const nextModuleIndex = activeModuleIndex + 1;
-      setActiveModuleIndex(nextModuleIndex);
-      setActiveLessonIndex(0);
-
-      setExpandedModules((prev) => {
-        const newState: Record<number, boolean> = {};
-        course.modules.forEach((_, idx) => {
-          newState[idx] = false;
-        });
-
-        newState[nextModuleIndex] = true;
-        return newState;
-      });
+    if (activeModuleIndex >= course.modules.length) {
+      return;
     }
+
+    const nextModuleIndex = activeModuleIndex + 1;
+    setActiveModuleIndex(nextModuleIndex);
+    setActiveLessonIndex(0);
+
+    setExpandedModules((prev) => {
+      const newState: Record<number, boolean> = {};
+      course.modules.forEach((_, idx) => {
+        newState[idx] = false;
+      });
+
+      newState[nextModuleIndex] = true;
+      return newState;
+    });
   };
 
   const goToNextLesson = () => {
@@ -78,26 +82,29 @@ export function AICourseContent(props: AICourseContentProps) {
   const goToPrevLesson = () => {
     if (activeLessonIndex > 0) {
       setActiveLessonIndex(activeLessonIndex - 1);
-    } else {
-      const prevModule = course.modules[activeModuleIndex - 1];
-      if (prevModule) {
-        const prevModuleIndex = activeModuleIndex - 1;
-        setActiveModuleIndex(prevModuleIndex);
-        setActiveLessonIndex(prevModule.lessons.length - 1);
-
-        // Expand the previous module in the sidebar
-        setExpandedModules((prev) => {
-          const newState: Record<number, boolean> = {};
-          // Set all modules to collapsed
-          course.modules.forEach((_, idx) => {
-            newState[idx] = false;
-          });
-          // Expand only the previous module
-          newState[prevModuleIndex] = true;
-          return newState;
-        });
-      }
+      return;
     }
+
+    const prevModule = course.modules[activeModuleIndex - 1];
+    if (!prevModule) {
+      return;
+    }
+
+    const prevModuleIndex = activeModuleIndex - 1;
+    setActiveModuleIndex(prevModuleIndex);
+    setActiveLessonIndex(prevModule.lessons.length - 1);
+
+    // Expand the previous module in the sidebar
+    setExpandedModules((prev) => {
+      const newState: Record<number, boolean> = {};
+      // Set all modules to collapsed
+      course.modules.forEach((_, idx) => {
+        newState[idx] = false;
+      });
+      // Expand only the previous module
+      newState[prevModuleIndex] = true;
+      return newState;
+    });
   };
 
   const currentModule = course.modules[activeModuleIndex];
@@ -109,6 +116,7 @@ export function AICourseContent(props: AICourseContentProps) {
     (total, module) => total + module.lessons.length,
     0,
   );
+
   const totalDoneLessons = aiCourseProgress?.done?.length || 0;
   const finishedPercentage = Math.round(
     (totalDoneLessons / totalCourseLessons) * 100,
@@ -351,7 +359,7 @@ export function AICourseContent(props: AICourseContentProps) {
             <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
               <div
                 className={cn(
-                  'mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
+                  'relative mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
                   isLoading && 'striped-loader',
                 )}
               >
@@ -363,6 +371,12 @@ export function AICourseContent(props: AICourseContentProps) {
                     {course.title ? course.difficulty : 'Please wait ..'}
                   </p>
                 </div>
+
+                {!isLoading && (
+                  <RegenerateOutline
+                    onRegenerateOutline={onRegenerateOutline}
+                  />
+                )}
               </div>
               {course.title ? (
                 <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">

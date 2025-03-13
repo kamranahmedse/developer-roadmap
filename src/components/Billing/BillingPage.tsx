@@ -16,10 +16,11 @@ import {
   Calendar,
   RefreshCw,
   Loader2,
-  AlertTriangle,
   CreditCard,
   ArrowRightLeft,
+  CircleX,
 } from 'lucide-react';
+import { BillingWarning } from './BillingWarning';
 
 export type CreateCustomerPortalBody = {};
 
@@ -37,6 +38,10 @@ export function BillingPage() {
     billingDetailsOptions(),
     queryClient,
   );
+
+  const isCanceled =
+    billingDetails?.status === 'canceled' || billingDetails?.cancelAtPeriodEnd;
+  const isPastDue = billingDetails?.status === 'past_due';
 
   const {
     mutate: createCustomerPortal,
@@ -80,9 +85,6 @@ export function BillingPage() {
   const selectedPlanDetails = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.priceId === billingDetails?.priceId,
   );
-
-  const shouldHideDeleteButton =
-    billingDetails?.status === 'canceled' || billingDetails?.cancelAtPeriodEnd;
   const priceDetails = selectedPlanDetails;
 
   const formattedNextBillDate = new Date(
@@ -115,25 +117,30 @@ export function BillingPage() {
         !isLoadingBillingDetails &&
         priceDetails && (
           <div className="mt-1">
-            {billingDetails?.status === 'past_due' && (
-              <div className="mb-6 flex items-center gap-2 rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-red-600">
-                <AlertTriangle className="h-5 w-5" />
-                <span>
-                  We were not able to charge your card.{' '}
-                  <button
-                    disabled={
-                      isCreatingCustomerPortal ||
-                      isCreatingCustomerPortalSuccess
-                    }
-                    onClick={() => {
-                      createCustomerPortal({});
-                    }}
-                    className="font-semibold underline underline-offset-4 disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    Update payment information.
-                  </button>
-                </span>
-              </div>
+            {isCanceled && (
+              <BillingWarning
+                icon={CircleX}
+                message="Your subscription has been canceled."
+                buttonText="Reactivate?"
+                onButtonClick={() => {
+                  createCustomerPortal({});
+                }}
+                isLoading={
+                  isCreatingCustomerPortal || isCreatingCustomerPortalSuccess
+                }
+              />
+            )}
+            {isPastDue && (
+              <BillingWarning
+                message="We were not able to charge your card."
+                buttonText="Update payment information."
+                onButtonClick={() => {
+                  createCustomerPortal({});
+                }}
+                isLoading={
+                  isCreatingCustomerPortal || isCreatingCustomerPortalSuccess
+                }
+              />
             )}
 
             <h2 className="mb-2 text-xl font-semibold text-black">
@@ -181,7 +188,7 @@ export function BillingPage() {
               </div>
 
               <div className="mt-8 flex gap-3 max-sm:flex-col">
-                {!shouldHideDeleteButton && (
+                {!isCanceled && (
                   <button
                     className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 max-sm:flex-grow"
                     onClick={() => {

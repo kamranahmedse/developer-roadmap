@@ -1,5 +1,5 @@
-import { getPercentage } from '../../helper/number';
 import { getRelativeTimeString } from '../../lib/date';
+import { getPercentage } from '../../lib/number';
 
 type UserPublicProgressStats = {
   resourceType: 'roadmap';

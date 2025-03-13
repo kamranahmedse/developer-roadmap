@@ -11,7 +11,6 @@ import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
-import { readAIRoadmapStream } from '../../helper/read-stream';
 import {
   getOpenAIKey,
   isLoggedIn,
@@ -31,7 +30,7 @@ import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
-import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
+import { IS_KEY_ONLY_ROADMAP_GENERATION, readAIRoadmapStream } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';

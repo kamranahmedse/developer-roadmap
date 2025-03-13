@@ -39,6 +39,7 @@ export interface AICourseDocument {
   title: string;
   slug?: string;
   keyword: string;
+  done: string[];
   difficulty: string;
   data: string;
   viewCount: number;
@@ -75,7 +76,6 @@ export function getAiCourseLimitOptions() {
 }
 
 export type AICourseListItem = AICourseDocument & {
-  progress: AICourseProgressDocument;
   lessonCount: number;
 };
 

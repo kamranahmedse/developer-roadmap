@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { AICourseContent } from './AICourseContent';
 import { generateAiCourseStructure } from '../../lib/ai';
 import { isLoggedIn } from '../../lib/jwt';
+import { generateCourse } from '../../helper/generate-ai-course';
 
 type GetAICourseProps = {
   courseSlug: string;
@@ -14,7 +15,8 @@ export function GetAICourse(props: GetAICourseProps) {
   const { courseSlug } = props;
 
   const [isLoading, setIsLoading] = useState(true);
-  const { data: aiCourse, error } = useQuery(
+  const [error, setError] = useState('');
+  const { data: aiCourse, error: queryError } = useQuery(
     {
       ...getAiCourseOptions({ aiCourseSlug: courseSlug }),
       select: (data) => {
@@ -43,12 +45,27 @@ export function GetAICourse(props: GetAICourseProps) {
   }, [aiCourse]);
 
   useEffect(() => {
-    if (!error) {
+    if (!queryError) {
       return;
     }
 
     setIsLoading(false);
-  }, [error]);
+    setError(queryError.message);
+  }, [queryError]);
+
+  const handleRegenerateCourse = async () => {
+    if (!aiCourse) {
+      return;
+    }
+
+    await generateCourse({
+      term: aiCourse.keyword,
+      difficulty: aiCourse.difficulty,
+      onLoadingChange: setIsLoading,
+      onError: setError,
+      isForce: true,
+    });
+  };
 
   return (
     <AICourseContent
@@ -59,7 +76,8 @@ export function GetAICourse(props: GetAICourseProps) {
       }}
       isLoading={isLoading}
       courseSlug={courseSlug}
-      error={error?.message}
+      error={error}
+      onRegenerateOutline={handleRegenerateCourse}
     />
   );
 }

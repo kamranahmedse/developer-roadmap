@@ -3,13 +3,13 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import { Ban, Cog, Contact, FileText, User, UserRound, X } from 'lucide-react';
+import { Ban, Cog, Contact, FileText, X } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
 import { getOpenAIKey, isLoggedIn, removeAuthToken } from '../../lib/jwt';
-import { readAIRoadmapContentStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { showLoginPopup } from '../../lib/popup';
+import { readAIRoadmapContentStream } from '../../lib/ai';
 
 type RoadmapTopicDetailProps = RoadmapNodeDetails & {
   onClose?: () => void;

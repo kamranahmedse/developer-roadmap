@@ -1,6 +1,5 @@
-import { getPercentage } from '../../helper/number';
+import { getPercentage } from '../../lib/number';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { ArrowUpRight, ExternalLink } from 'lucide-react';
 
 type DashboardProgressCardProps = {
   progress: UserProgress;
