@@ -44,6 +44,7 @@ export function getAiCourseOptions(params: GetAICourseParams) {
         `/v1-get-ai-course/${params.aiCourseSlug}`,
       );
     },
+    enabled: !!params.aiCourseSlug,
   };
 }
 
