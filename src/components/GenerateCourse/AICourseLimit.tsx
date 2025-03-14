@@ -31,19 +31,22 @@ export function AICourseLimit(props: AICourseLimitProps) {
 
   const totalPercentage = getPercentage(used, limit);
 
-  // has consumed 80% of the limit
-  const isNearLimit = used >= limit * 0.8;
+  // has consumed 85% of the limit
+  const isNearLimit = used >= limit * 0.85;
   const isPaidUser = userBillingDetails.status === 'active';
 
   return (
     <>
-      <button
-        className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
-        onClick={() => onShowLimits()}
-      >
-        <Info className="size-4" />
-        {totalPercentage}% limit used
-      </button>
+      {!isPaidUser ||
+        (isNearLimit && (
+          <button
+            className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
+            onClick={() => onShowLimits()}
+          >
+            <Info className="size-4" />
+            {totalPercentage}% limit used
+          </button>
+        ))}
 
       {(!isPaidUser || isNearLimit) && (
         <button
