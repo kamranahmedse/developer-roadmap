@@ -198,6 +198,7 @@ def divide(a, b):
     finally:
         print("Execution completed.")
 
+
 print(divide(10, 2))  # Result: 5.0
 print(divide(10, 0))  # Error: Division by zero is not allowed.
 ```

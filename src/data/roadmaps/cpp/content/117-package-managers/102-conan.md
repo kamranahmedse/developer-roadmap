@@ -45,6 +45,7 @@ Here's an example:
 ```python
 from conans import ConanFile, CMake
 
+
 class MyLibraryConan(ConanFile):
     name = "MyLibrary"
     version = "0.1"
