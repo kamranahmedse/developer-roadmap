@@ -43,8 +43,9 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     term: string;
     difficulty: string;
     isForce?: boolean;
+    prompt?: string;
   }) => {
-    const { term, difficulty, isForce } = options;
+    const { term, difficulty, isForce, prompt } = options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai-tutor';
@@ -61,6 +62,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       onLoadingChange: setIsLoading,
       onError: setError,
       isForce,
+      prompt,
     });
   };
 
@@ -95,8 +97,13 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       course={course}
       isLoading={isLoading}
       error={error}
-      onRegenerateOutline={() => {
-        handleGenerateCourse({ term, difficulty, isForce: true });
+      onRegenerateOutline={(prompt) => {
+        handleGenerateCourse({
+          term,
+          difficulty,
+          isForce: true,
+          prompt,
+        });
       }}
     />
   );

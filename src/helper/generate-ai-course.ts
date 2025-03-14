@@ -11,6 +11,7 @@ type GenerateCourseOptions = {
   difficulty: string;
   slug?: string;
   isForce?: boolean;
+  prompt?: string;
   onCourseIdChange?: (courseId: string) => void;
   onCourseSlugChange?: (courseSlug: string) => void;
   onCourseChange?: (course: AiCourse, rawData: string) => void;
@@ -29,6 +30,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
     onLoadingChange,
     onError,
     isForce = false,
+    prompt,
   } = options;
 
   onLoadingChange?.(true);
@@ -54,6 +56,10 @@ export async function generateCourse(options: GenerateCourseOptions) {
             'Content-Type': 'application/json',
           },
           credentials: 'include',
+          body: JSON.stringify({
+            isForce,
+            customPrompt: prompt,
+          }),
         },
       );
     } else {
@@ -68,6 +74,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
             keyword: term,
             difficulty,
             isForce,
+            customPrompt: prompt,
           }),
           credentials: 'include',
         },

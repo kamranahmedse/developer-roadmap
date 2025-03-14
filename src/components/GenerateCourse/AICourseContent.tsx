@@ -27,7 +27,7 @@ type AICourseContentProps = {
   course: AiCourse;
   isLoading: boolean;
   error?: string;
-  onRegenerateOutline: () => void;
+  onRegenerateOutline: (prompt?: string) => void;
 };
 
 export function AICourseContent(props: AICourseContentProps) {

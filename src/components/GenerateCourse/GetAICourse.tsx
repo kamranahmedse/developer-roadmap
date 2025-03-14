@@ -58,7 +58,7 @@ export function GetAICourse(props: GetAICourseProps) {
     setError(queryError.message);
   }, [queryError]);
 
-  const handleRegenerateCourse = async () => {
+  const handleRegenerateCourse = async (prompt?: string) => {
     if (!aiCourse) {
       return;
     }
@@ -67,6 +67,7 @@ export function GetAICourse(props: GetAICourseProps) {
       term: aiCourse.keyword,
       difficulty: aiCourse.difficulty,
       slug: courseSlug,
+      prompt,
       onCourseChange: (course, rawData) => {
         queryClient.setQueryData(
           getAiCourseOptions({ aiCourseSlug: courseSlug }).queryKey,

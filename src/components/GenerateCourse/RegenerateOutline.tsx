@@ -4,9 +4,10 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { ModifyCoursePrompt } from './ModifyCoursePrompt';
 
 type RegenerateOutlineProps = {
-  onRegenerateOutline: () => void;
+  onRegenerateOutline: (prompt?: string) => void;
 };
 
 export function RegenerateOutline(props: RegenerateOutlineProps) {
@@ -14,6 +15,8 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [showPromptModal, setShowPromptModal] = useState(false);
+
   const ref = useRef<HTMLDivElement>(null);
 
   const { isPaidUser } = useIsPaidUser();
@@ -26,6 +29,16 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
         <UpgradeAccountModal
           onClose={() => {
             setShowUpgradeModal(false);
+          }}
+        />
+      )}
+
+      {showPromptModal && (
+        <ModifyCoursePrompt
+          onClose={() => setShowPromptModal(false)}
+          onSubmit={(prompt) => {
+            setShowPromptModal(false);
+            onRegenerateOutline(prompt);
           }}
         />
       )}
@@ -59,7 +72,17 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
               />
               Regenerate
             </button>
-            <button className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100">
+            <button
+              onClick={() => {
+                setIsDropdownVisible(false);
+                if (!isPaidUser) {
+                  setShowUpgradeModal(true);
+                } else {
+                  setShowPromptModal(true);
+                }
+              }}
+              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
+            >
               <PenSquare
                 size={16}
                 className="text-gray-400"
