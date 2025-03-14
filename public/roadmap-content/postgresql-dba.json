@@ -251,11 +251,6 @@
         "title": "What is the Relational Model?",
         "url": "https://www.postgresql.org/docs/7.1/relmodel-oper.html",
         "type": "article"
-      },
-      {
-        "title": "The Relational Model",
-        "url": "https://www.geeksforgeeks.org/relational-model-in-dbms/",
-        "type": "article"
       }
     ]
   },

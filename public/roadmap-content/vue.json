@@ -573,11 +573,6 @@
         "title": "Binding Events",
         "url": "https://vuejs.org/guide/essentials/event-handling",
         "type": "article"
-      },
-      {
-        "title": "Vue.js Event Handling",
-        "url": "https://www.geeksforgeeks.org/vue-js-event-handling/",
-        "type": "article"
       }
     ]
   },
