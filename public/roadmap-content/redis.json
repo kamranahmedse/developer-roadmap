@@ -732,11 +732,6 @@
         "title": "Redis Lists",
         "url": "https://redis.io/docs/latest/develop/data-types/lists/",
         "type": "article"
-      },
-      {
-        "title": "Complete Guide to Redis Lists",
-        "url": "https://www.geeksforgeeks.org/complete-guide-to-redis-lists/",
-        "type": "article"
       }
     ]
   },
@@ -975,11 +970,6 @@
       {
         "title": "Redis Pipelining",
         "url": "https://redis.io/docs/latest/develop/use/pipelining/",
-        "type": "article"
-      },
-      {
-        "title": "Complete Guide to Redis Pipelining",
-        "url": "https://www.geeksforgeeks.org/complete-guide-to-redis-pipelining/",
         "type": "article"
       }
     ]

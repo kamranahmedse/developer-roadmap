@@ -244,11 +244,6 @@
     "description": "Loops are used to execute a block of code repeatedly.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Loops in Python",
-        "url": "https://www.geeksforgeeks.org/loops-in-python/",
-        "type": "article"
-      },
-      {
         "title": "Python \"while\" Loops (Indefinite Iteration)",
         "url": "https://realpython.com/python-while-loop/",
         "type": "article"

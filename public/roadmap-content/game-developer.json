@@ -987,11 +987,6 @@
     "description": "Computer Graphics is a subfield of computer science that studies methods for digitally synthesizing and manipulating visual content. It involves creating and manipulating visual content using specialized computer software and hardware. This field is primarily used in the creation of digital and video games, CGI in films, and also in visual effects for commercials. The field is divided into two major categories: **Raster graphics** and **Vector graphics**. Raster graphics, also known as bitmap, involve the representation of images through a dot matrix data structure, while Vector graphics involve the use of polygons to represent images in computer graphics. Both of these methods have their unique usage scenarios. Other concepts integral to the study of computer graphics include rendering (including both real-time rendering and offline rendering), animation, and 3D modeling. Generally, computer graphics skills are essential for game developers and animation experts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is Computer Graphics?",
-        "url": "https://www.geeksforgeeks.org/introduction-to-computer-graphics/",
-        "type": "article"
-      },
-      {
         "title": "Introduction to Computer Graphics",
         "url": "https://open.umn.edu/opentextbooks/textbooks/420",
         "type": "article"
@@ -1896,11 +1891,6 @@
         "title": "MCTS Algorithm",
         "url": "https://en.wikipedia.org/wiki/Monte_Carlo_tree_search/",
         "type": "article"
-      },
-      {
-        "title": "Monte Carlo Tree Search",
-        "url": "https://www.geeksforgeeks.org/ml-monte-carlo-tree-search-mcts/",
-        "type": "article"
       }
     ]
   },
@@ -1998,11 +1988,6 @@
     "title": "Artificial Neural Network",
     "description": "Artificial Neural Networks (ANN) are a branch of machine learning that draw inspiration from biological neural networks. ANNs are capable of 'learning' from observational data, thereby enhancing game development in numerous ways. They consist of interconnected layers of nodes, or artificial neurons, that process information through their interconnected network. Each node's connection has numerical weight that gets adjusted during learning, which helps in optimizing problem solving. ANNs are utilized in various aspects of game development, such as improving AI behavior, procedural content generation, and game testing. They can also be used for image recognition tasks, such as identifying objects or actions in a game environment.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Artificial Neural Networks (ANN)",
-        "url": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
-        "type": "article"
-      },
       {
         "title": "What is ANN?",
         "url": "https://www.coursera.org/articles/artificial-neural-network",

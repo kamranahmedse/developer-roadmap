@@ -3365,11 +3365,6 @@
         "title": "DCL",
         "url": "https://en.wikipedia.org/wiki/Data_Control_Language",
         "type": "article"
-      },
-      {
-        "title": "DCL Commands",
-        "url": "https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/",
-        "type": "article"
       }
     ]
   },
@@ -3417,14 +3412,8 @@
   },
   "q3nRhTYS5wg9tYnQe2sCF": {
     "title": "BASE",
-    "description": "The rise in popularity of NoSQL databases provided a flexible and fluidity with ease to manipulate data and as a result, a new database model was designed, reflecting these properties. The acronym BASE is slightly more confusing than ACID but however, the words behind it suggest ways in which the BASE model is different and acronym BASE stands for:-\n\n*   **B**asically **A**vailable\n*   **S**oft state\n*   **E**ventual consistency\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "BASE Model vs. ACID Model",
-        "url": "https://www.geeksforgeeks.org/acid-model-vs-base-model-for-database/",
-        "type": "article"
-      }
-    ]
+    "description": "The rise in popularity of NoSQL databases provided a flexible and fluidity with ease to manipulate data and as a result, a new database model was designed, reflecting these properties. The acronym BASE is slightly more confusing than ACID but however, the words behind it suggest ways in which the BASE model is different and acronym BASE stands for:-\n\n*   **B**asically **A**vailable\n*   **S**oft state\n*   **E**ventual consistency",
+    "links": []
   },
   "uqfeiQ9K--QkGNwks4kjk": {
     "title": "CAP Theorem",
@@ -4095,29 +4084,8 @@
   },
   "Ge2nagN86ofa2y-yYR1lv": {
     "title": "Scheduling Algorithms",
-    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more",
-    "links": [
-      {
-        "title": "CPU Scheduling in Operating Systems - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/",
-        "type": "article"
-      },
-      {
-        "title": "Lottery Scheduling for Operating Systems - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/",
-        "type": "article"
-      },
-      {
-        "title": "Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/",
-        "type": "article"
-      },
-      {
-        "title": "Introduction to CPU Scheduling",
-        "url": "https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL",
-        "type": "video"
-      }
-    ]
+    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.",
+    "links": []
   },
   "cpQvB0qMDL3-NWret7oeA": {
     "title": "CPU Interrupts",

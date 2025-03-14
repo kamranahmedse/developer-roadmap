@@ -334,11 +334,6 @@
         "title": "JavaScript Scope",
         "url": "https://www.w3schools.com/js/js_scope.asp",
         "type": "article"
-      },
-      {
-        "title": "Block Scoping in JavaScript",
-        "url": "https://www.geeksforgeeks.org/javascript-es2015-block-scoping",
-        "type": "article"
       }
     ]
   },
