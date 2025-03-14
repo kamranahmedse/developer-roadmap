@@ -4,6 +4,7 @@ Version control/source control systems allow developers to track and control cha
 
 Visit the following resources to learn more:
 
-- [@article@Git](https://git-scm.com/)
+- [@official@Git](https://git-scm.com/)
+- [@official@Git Documentation](https://git-scm.com/docs)
 - [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@feed@Explore top posts about Version Control](https://app.daily.dev/tags/version-control?ref=roadmapsh)
