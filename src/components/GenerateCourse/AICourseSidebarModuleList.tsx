@@ -19,8 +19,8 @@ type AICourseModuleListProps = {
 
   setSidebarOpen: (open: boolean) => void;
 
-  viewMode: 'module' | 'full';
-  setViewMode: (mode: 'module' | 'full') => void;
+  viewMode: 'module' | 'outline';
+  setViewMode: (mode: 'module' | 'outline') => void;
 
   expandedModules: Record<number, boolean>;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;

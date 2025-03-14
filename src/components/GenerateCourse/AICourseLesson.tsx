@@ -27,7 +27,7 @@ import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
 import { useIsPaidUser } from '../../queries/billing';
 
-type AICourseModuleViewProps = {
+type AICourseLessonProps = {
   courseSlug: string;
 
   activeModuleIndex: number;
@@ -43,7 +43,7 @@ type AICourseModuleViewProps = {
   onUpgrade: () => void;
 };
 
-export function AICourseModuleView(props: AICourseModuleViewProps) {
+export function AICourseLesson(props: AICourseLessonProps) {
   const {
     courseSlug,
 
@@ -222,11 +222,11 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
           </div>
 
           {!isGenerating && !isLoading && (
-            <>
+            <div className="absolute right-3 top-3 flex items-center justify-between gap-2">
               <button
                 disabled={isLoading || isTogglingDone}
                 className={cn(
-                  'absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
+                  'flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
                   isLessonDone
                     ? 'bg-red-500 hover:bg-red-600'
                     : 'bg-green-500 hover:bg-green-600',
@@ -258,7 +258,7 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
                   </>
                 )}
               </button>
-            </>
+            </div>
           )}
         </div>
 

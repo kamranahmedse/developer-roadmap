@@ -18,7 +18,7 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 import { AICourseLimit } from './AICourseLimit';
 import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
-import { AICourseModuleView } from './AICourseModuleView';
+import { AICourseLesson } from './AICourseLesson';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
 import { RegenerateOutline } from './RegenerateOutline';
@@ -387,7 +387,7 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
         >
           {viewMode === 'module' && (
-            <AICourseModuleView
+            <AICourseLesson
               courseSlug={courseSlug!}
               activeModuleIndex={activeModuleIndex}
               totalModules={totalModules}
