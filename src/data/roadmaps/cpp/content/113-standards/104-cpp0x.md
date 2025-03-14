@@ -16,7 +16,7 @@ Some of the notable features in C++11 include:
   ```cpp
   std::vector<int> vec = {1, 2, 3};
   for (int i : vec) {
-      std::cout << i << std::endl;
+      std::cout << i << '\n';
   }
   ```
 
