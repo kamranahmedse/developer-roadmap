@@ -20,12 +20,13 @@ import { httpPatch } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
 import {
   getAiCourseLimitOptions,
-  getAiCourseOptions
+  getAiCourseOptions,
 } from '../../queries/ai-course';
 import { useIsPaidUser } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
+import { RegenerateLesson } from './RegenerateLesson';
 
 type AICourseLessonProps = {
   courseSlug: string;
@@ -78,7 +79,10 @@ export function AICourseLesson(props: AICourseLessonProps) {
     [activeModuleIndex, activeLessonIndex],
   );
 
-  const generateAiCourseContent = async () => {
+  const generateAiCourseContent = async (
+    isForce?: boolean,
+    customPrompt?: string,
+  ) => {
     setIsLoading(true);
     setError('');
     setLessonHtml('');
@@ -107,6 +111,8 @@ export function AICourseLesson(props: AICourseLessonProps) {
         body: JSON.stringify({
           moduleIndex: activeModuleIndex,
           lessonIndex: activeLessonIndex,
+          isForce,
+          customPrompt,
         }),
       },
     );
@@ -219,6 +225,11 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
           {!isGenerating && !isLoading && (
             <div className="absolute right-3 top-3 flex items-center justify-between gap-2">
+              <RegenerateLesson
+                onRegenerateLesson={(prompt) => {
+                  generateAiCourseContent(true, prompt);
+                }}
+              />
               <button
                 disabled={isLoading || isTogglingDone}
                 className={cn(
