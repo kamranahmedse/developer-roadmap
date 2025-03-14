@@ -21,6 +21,7 @@ import { AICourseModuleView } from './AICourseModuleView';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
 import { RegenerateOutline } from './RegenerateOutline';
+import { useIsPaidUser } from '../../queries/billing';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -40,6 +41,8 @@ export function AICourseContent(props: AICourseContentProps) {
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
+
+  const { isPaidUser } = useIsPaidUser();
 
   const { data: aiCourseProgress } = useQuery(
     getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
@@ -162,12 +165,14 @@ export function AICourseContent(props: AICourseContentProps) {
 
           {isLimitReached && (
             <div className="mt-4">
-              <button
-                onClick={() => setShowUpgradeModal(true)}
-                className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
-              >
-                Upgrade to remove Limits
-              </button>
+              {!isPaidUser && (
+                <button
+                  onClick={() => setShowUpgradeModal(true)}
+                  className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
+                >
+                  Upgrade to remove Limits
+                </button>
+              )}
 
               <p className="mt-4 text-sm text-black">
                 <a href="/ai-tutor" className="underline underline-offset-2">
