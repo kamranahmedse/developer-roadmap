@@ -11,6 +11,7 @@ export type AiCourse = {
   title: string;
   modules: Module[];
   difficulty: string;
+  done: string[];
 };
 
 export function generateAiCourseStructure(

@@ -20,6 +20,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     title: '',
     modules: [],
     difficulty: '',
+    done: [],
   });
 
   useEffect(() => {

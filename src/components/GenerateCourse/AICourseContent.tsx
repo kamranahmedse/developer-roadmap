@@ -1,28 +1,25 @@
-import { useQuery } from '@tanstack/react-query';
 import {
   BookOpenCheck,
   ChevronLeft,
+  CircleAlert,
   Loader2,
   Menu,
-  X,
-  CircleAlert,
   Play,
+  X,
 } from 'lucide-react';
 import { useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { slugify } from '../../lib/slugger';
-import { getAiCourseProgressOptions } from '../../queries/ai-course';
-import { queryClient } from '../../stores/query-client';
+import { useIsPaidUser } from '../../queries/billing';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import { AICourseLesson } from './AICourseLesson';
 import { AICourseLimit } from './AICourseLimit';
 import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
-import { AICourseLesson } from './AICourseLesson';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
 import { RegenerateOutline } from './RegenerateOutline';
-import { useIsPaidUser } from '../../queries/billing';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -45,10 +42,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const { isPaidUser } = useIsPaidUser();
 
-  const { data: aiCourseProgress } = useQuery(
-    getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
-    queryClient,
-  );
+  const aiCourseProgress = course.done || [];
 
   const [expandedModules, setExpandedModules] = useState<
     Record<number, boolean>
@@ -121,7 +115,7 @@ export function AICourseContent(props: AICourseContentProps) {
     0,
   );
 
-  const totalDoneLessons = aiCourseProgress?.done?.length || 0;
+  const totalDoneLessons = (course?.done || []).length;
   const finishedPercentage = Math.round(
     (totalDoneLessons / totalCourseLessons) * 100,
   );
@@ -389,6 +383,7 @@ export function AICourseContent(props: AICourseContentProps) {
           {viewMode === 'module' && (
             <AICourseLesson
               courseSlug={courseSlug!}
+              progress={aiCourseProgress}
               activeModuleIndex={activeModuleIndex}
               totalModules={totalModules}
               currentModuleTitle={currentModule?.title || ''}
@@ -438,9 +433,8 @@ export function AICourseContent(props: AICourseContentProps) {
                         </h2>
                         <div className="divide-y divide-gray-100">
                           {courseModule.lessons.map((lesson, lessonIdx) => {
-                            const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
-                            const isCompleted =
-                              aiCourseProgress?.done.includes(key);
+                            const key = `${slugify(String(moduleIdx))}-${slugify(String(lessonIdx))}`;
+                            const isCompleted = aiCourseProgress.includes(key);
 
                             return (
                               <div

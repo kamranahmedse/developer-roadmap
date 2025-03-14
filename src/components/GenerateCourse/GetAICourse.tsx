@@ -1,8 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import {
-  getAiCourseOptions,
-  getAiCourseProgressOptions,
-} from '../../queries/ai-course';
+import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
 import { AICourseContent } from './AICourseContent';
@@ -24,12 +21,6 @@ export function GetAICourse(props: GetAICourseProps) {
   const { data: aiCourse, error: queryError } = useQuery(
     {
       ...getAiCourseOptions({ aiCourseSlug: courseSlug }),
-      select: (data) => {
-        return {
-          ...data,
-          course: generateAiCourseStructure(data.data),
-        };
-      },
       enabled: !!courseSlug && !!isLoggedIn(),
     },
     queryClient,
@@ -75,18 +66,14 @@ export function GetAICourse(props: GetAICourseProps) {
             ...aiCourse,
             title: course.title,
             difficulty: course.difficulty,
-            data: rawData,
+            modules: course.modules,
           },
         );
       },
       onLoadingChange: (isNewLoading) => {
         setIsRegenerating(isNewLoading);
         if (!isNewLoading) {
-          queryClient.invalidateQueries({
-            queryKey: getAiCourseProgressOptions({
-              aiCourseSlug: courseSlug,
-            }).queryKey,
-          });
+          // TODO: Update progress
         }
       },
       onError: setError,
@@ -98,8 +85,9 @@ export function GetAICourse(props: GetAICourseProps) {
     <AICourseContent
       course={{
         title: aiCourse?.title || '',
-        modules: aiCourse?.course.modules || [],
+        modules: aiCourse?.modules || [],
         difficulty: aiCourse?.difficulty || 'Easy',
+        done: aiCourse?.done || [],
       }}
       isLoading={isLoading || isRegenerating}
       courseSlug={courseSlug}

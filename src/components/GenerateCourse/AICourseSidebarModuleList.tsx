@@ -2,9 +2,6 @@ import { type Dispatch, type SetStateAction } from 'react';
 import type { AiCourse } from '../../lib/ai';
 import { Check, ChevronDownIcon, ChevronRightIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import { getAiCourseProgressOptions } from '../../queries/ai-course';
-import { useQuery } from '@tanstack/react-query';
-import { queryClient } from '../../stores/query-client';
 import { slugify } from '../../lib/slugger';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { CircularProgress } from './CircularProgress';
@@ -44,10 +41,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
     isLoading,
   } = props;
 
-  const { data: aiCourseProgress } = useQuery(
-    getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
-    queryClient,
-  );
+  const aiCourseProgress = course.done || [];
 
   const toggleModule = (index: number) => {
     setExpandedModules((prev) => {
@@ -71,16 +65,18 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
     });
   };
 
-  const { done = [] } = aiCourseProgress || {};
+  const done = aiCourseProgress || [];
 
   return (
     <nav className="bg-gray-100">
       {course.modules.map((courseModule, moduleIdx) => {
         const totalLessons = courseModule.lessons.length;
-        const completedLessons = courseModule.lessons.filter((lesson) => {
-          const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
-          return done.includes(key);
-        }).length;
+        const completedLessons = courseModule.lessons.filter(
+          (lesson, lessonIdx) => {
+            const key = `${slugify(String(moduleIdx))}-${slugify(String(lessonIdx))}`;
+            return done.includes(key);
+          },
+        ).length;
 
         const percentage = Math.round((completedLessons / totalLessons) * 100);
         const isActive = expandedModules[moduleIdx];
@@ -139,7 +135,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
             {expandedModules[moduleIdx] && (
               <div className="flex flex-col border-b border-b-gray-200 bg-gray-100">
                 {courseModule.lessons.map((lesson, lessonIdx) => {
-                  const key = `${slugify(courseModule.title)}__${slugify(lesson)}`;
+                  const key = `${slugify(String(moduleIdx))}-${slugify(String(lessonIdx))}`;
                   const isCompleted = done.includes(key);
 
                   return (
@@ -160,7 +156,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                         setViewMode('module');
                       }}
                       className={cn(
-                        'flex gap-2.5 w-full cursor-pointer items-center py-3 pl-3.5 pr-2 text-left text-sm leading-normal',
+                        'flex w-full cursor-pointer items-center gap-2.5 py-3 pl-3.5 pr-2 text-left text-sm leading-normal',
                         activeModuleIndex === moduleIdx &&
                           activeLessonIndex === lessonIdx
                           ? 'bg-gray-200 text-black'

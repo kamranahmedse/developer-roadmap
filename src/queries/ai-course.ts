@@ -11,23 +11,10 @@ export interface AICourseProgressDocument {
   updatedAt: Date;
 }
 
-type GetAICourseProgressParams = {
-  aiCourseSlug: string;
+type AICourseModule = {
+  title: string;
+  lessons: string[];
 };
-
-type GetAICourseProgressResponse = AICourseProgressDocument;
-
-export function getAiCourseProgressOptions(params: GetAICourseProgressParams) {
-  return {
-    queryKey: ['ai-course-progress', params],
-    queryFn: () => {
-      return httpGet<GetAICourseProgressResponse>(
-        `/v1-get-ai-course-progress/${params.aiCourseSlug}`,
-      );
-    },
-    enabled: !!params.aiCourseSlug && isLoggedIn(),
-  };
-}
 
 type GetAICourseParams = {
   aiCourseSlug: string;
@@ -41,7 +28,7 @@ export interface AICourseDocument {
   keyword: string;
   done: string[];
   difficulty: string;
-  data: string;
+  modules: AICourseModule[];
   viewCount: number;
   createdAt: Date;
   updatedAt: Date;

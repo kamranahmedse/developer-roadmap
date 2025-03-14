@@ -39,6 +39,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
       title: '',
       modules: [],
       difficulty: '',
+      done: [],
     },
     '',
   );

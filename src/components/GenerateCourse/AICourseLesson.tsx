@@ -1,4 +1,4 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
+import { useMutation } from '@tanstack/react-query';
 import {
   CheckIcon,
   ChevronLeft,
@@ -8,6 +8,7 @@ import {
   XIcon,
 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
+import type { AICourseDocument } from '../../api/ai-roadmap';
 import { readStream } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -19,16 +20,16 @@ import { httpPatch } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
 import {
   getAiCourseLimitOptions,
-  getAiCourseProgressOptions,
-  type AICourseProgressDocument,
+  getAiCourseOptions
 } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
-import { useIsPaidUser } from '../../queries/billing';
 
 type AICourseLessonProps = {
   courseSlug: string;
+  progress: string[];
 
   activeModuleIndex: number;
   totalModules: number;
@@ -46,6 +47,7 @@ type AICourseLessonProps = {
 export function AICourseLesson(props: AICourseLessonProps) {
   const {
     courseSlug,
+    progress = [],
 
     activeModuleIndex,
     totalModules,
@@ -65,13 +67,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
   const [error, setError] = useState('');
 
   const [lessonHtml, setLessonHtml] = useState('');
-  const { data: aiCourseProgress } = useQuery(
-    getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
-    queryClient,
-  );
 
-  const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
-  const isLessonDone = aiCourseProgress?.done.includes(lessonId);
+  const lessonId = `${slugify(String(activeModuleIndex))}-${slugify(String(activeLessonIndex))}`;
+  const isLessonDone = progress?.includes(lessonId);
 
   const { isPaidUser } = useIsPaidUser();
 
@@ -107,11 +105,8 @@ export function AICourseLesson(props: AICourseLessonProps) {
         signal: abortController.signal,
         credentials: 'include',
         body: JSON.stringify({
-          moduleTitle: currentModuleTitle,
-          lessonTitle: currentLessonTitle,
-          modulePosition: activeModuleIndex,
-          lessonPosition: activeLessonIndex,
-          totalLessonsInModule: totalLessons,
+          moduleIndex: activeModuleIndex,
+          lessonIndex: activeLessonIndex,
         }),
       },
     );
@@ -167,16 +162,17 @@ export function AICourseLesson(props: AICourseLessonProps) {
   const { mutate: toggleDone, isPending: isTogglingDone } = useMutation(
     {
       mutationFn: () => {
-        return httpPatch<AICourseProgressDocument>(
+        return httpPatch<AICourseDocument>(
           `/v1-toggle-done-ai-lesson/${courseSlug}`,
           {
-            lessonId,
+            moduleIndex: activeModuleIndex,
+            lessonIndex: activeLessonIndex,
           },
         );
       },
       onSuccess: (data) => {
         queryClient.setQueryData(
-          ['ai-course-progress', { aiCourseSlug: courseSlug }],
+          getAiCourseOptions({ aiCourseSlug: courseSlug }).queryKey,
           data,
         );
       },
