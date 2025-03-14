@@ -75,17 +75,38 @@ export function getAiCourseLimitOptions() {
   });
 }
 
-export type AICourseListItem = AICourseDocument & {
+export type ListUserAiCoursesQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+export type AICourseWithLessonCount = AICourseDocument & {
   lessonCount: number;
 };
 
-type ListUserAiCoursesResponse = AICourseListItem[];
+type ListUserAiCoursesResponse = {
+  data: AICourseWithLessonCount[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
 
-export function listUserAiCoursesOptions() {
+export function listUserAiCoursesOptions(
+  params: ListUserAiCoursesQuery = {
+    perPage: '10',
+    currPage: '1',
+    query: '',
+  },
+) {
   return {
-    queryKey: ['user-ai-courses'],
+    queryKey: ['user-ai-courses', params],
     queryFn: () => {
-      return httpGet<ListUserAiCoursesResponse>(`/v1-list-user-ai-courses`);
+      return httpGet<ListUserAiCoursesResponse>(
+        `/v1-list-user-ai-courses`,
+        params,
+      );
     },
     enabled: !!isLoggedIn(),
   };

@@ -1,9 +1,9 @@
-import type { AICourseListItem } from '../../queries/ai-course';
+import type { AICourseWithLessonCount } from '../../queries/ai-course';
 import type { DifficultyLevel } from './AICourse';
 import { BookOpen } from 'lucide-react';
 
 type AICourseCardProps = {
-  course: AICourseListItem;
+  course: AICourseWithLessonCount;
 };
 
 export function AICourseCard(props: AICourseCardProps) {
