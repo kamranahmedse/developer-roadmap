@@ -72,6 +72,8 @@ export function GetAICourse(props: GetAICourseProps) {
           getAiCourseOptions({ aiCourseSlug: courseSlug }).queryKey,
           {
             ...aiCourse,
+            title: course.title,
+            difficulty: course.difficulty,
             data: rawData,
           },
         );
