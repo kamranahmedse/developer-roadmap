@@ -181,6 +181,8 @@ export function AICourseContent(props: AICourseContentProps) {
     );
   }
 
+  const isViewingLesson = viewMode === 'module';
+
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       {modals}
@@ -189,11 +191,17 @@ export function AICourseContent(props: AICourseContentProps) {
         <div className="flex items-center justify-between px-4 py-2">
           <a
             href="/ai-tutor"
+            onClick={(e) => {
+              if (isViewingLesson) {
+                e.preventDefault();
+                setViewMode('full');
+              }
+            }}
             className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
             aria-label="Back to generator"
           >
             <ChevronLeft className="size-4" strokeWidth={2.5} />
-            Back<span className="hidden lg:inline"> to AI Tutor</span>
+            Back {isViewingLesson ? 'to Outline' : 'to AI Tutor'}
           </a>
           <div className="flex items-center gap-2">
             <div className="flex flex-row lg:hidden">
