@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction, useState } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import type { AiCourse } from '../../lib/ai';
 import { Check, ChevronDownIcon, ChevronRightIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -28,7 +28,7 @@ type AICourseModuleListProps = {
   isLoading: boolean;
 };
 
-export function AICourseModuleList(props: AICourseModuleListProps) {
+export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
   const {
     course,
     courseSlug,

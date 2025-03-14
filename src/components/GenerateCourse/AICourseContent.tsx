@@ -6,6 +6,7 @@ import {
   Menu,
   X,
   CircleAlert,
+  Play,
 } from 'lucide-react';
 import { useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
@@ -16,7 +17,7 @@ import { queryClient } from '../../stores/query-client';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 import { AICourseLimit } from './AICourseLimit';
-import { AICourseModuleList } from './AICourseModuleList';
+import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
@@ -40,7 +41,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
+  const [viewMode, setViewMode] = useState<'module' | 'outline'>('outline');
 
   const { isPaidUser } = useIsPaidUser();
 
@@ -199,7 +200,7 @@ export function AICourseContent(props: AICourseContentProps) {
             onClick={(e) => {
               if (isViewingLesson) {
                 e.preventDefault();
-                setViewMode('full');
+                setViewMode('outline');
               }
             }}
             className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
@@ -246,7 +247,7 @@ export function AICourseContent(props: AICourseContentProps) {
                     className="underline underline-offset-2"
                     onClick={() => {
                       setExpandedModules({});
-                      setViewMode('full');
+                      setViewMode('outline');
                     }}
                   >
                     View outline
@@ -276,7 +277,7 @@ export function AICourseContent(props: AICourseContentProps) {
             <button
               onClick={() => {
                 setExpandedModules({});
-                setViewMode('full');
+                setViewMode('outline');
               }}
               className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
             >
@@ -301,11 +302,13 @@ export function AICourseContent(props: AICourseContentProps) {
             )}
           >
             {!isLoading && (
-              <div className="text-xs text-black">
-                <span className="relative z-10 rounded-full bg-yellow-400 px-1.5 py-0.5">
-                  {finishedPercentage}%
-                </span>{' '}
-                <span className="relative z-10">Completed</span>
+              <div className="flex w-full items-center justify-between text-xs text-black">
+                <span>
+                  <span className="relative z-10 rounded-full bg-yellow-400 px-1.5 py-0.5">
+                    {finishedPercentage}%
+                  </span>{' '}
+                  <span className="relative z-10">Completed</span>
+                </span>
                 <span
                   style={{
                     width: `${finishedPercentage}%`,
@@ -315,6 +318,37 @@ export function AICourseContent(props: AICourseContentProps) {
                     'bg-gray-200/50',
                   )}
                 ></span>
+
+                {viewMode !== 'outline' && (
+                  <button
+                    onClick={() => {
+                      setExpandedModules({});
+                      setViewMode('outline');
+                    }}
+                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
+                  >
+                    <BookOpenCheck size={14} />
+                    View Outline
+                  </button>
+                )}
+
+                {viewMode === 'outline' && (
+                  <button
+                    onClick={() => {
+                      setExpandedModules({
+                        ...expandedModules,
+                        0: true,
+                      });
+                      setActiveModuleIndex(0);
+                      setActiveLessonIndex(0);
+                      setViewMode('module');
+                    }}
+                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
+                  >
+                    <Play size={14} />
+                    Start Course
+                  </button>
+                )}
               </div>
             )}
 
@@ -326,7 +360,7 @@ export function AICourseContent(props: AICourseContentProps) {
             </button>
           </div>
 
-          <AICourseModuleList
+          <AICourseSidebarModuleList
             course={course}
             courseSlug={courseSlug}
             activeModuleIndex={
@@ -368,7 +402,7 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           )}
 
-          {viewMode === 'full' && (
+          {viewMode === 'outline' && (
             <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
               <div
                 className={cn(
