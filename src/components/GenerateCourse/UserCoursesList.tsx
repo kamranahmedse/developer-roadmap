@@ -10,7 +10,7 @@ import { Gift, Loader2, Search, User2 } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
-import { billingDetailsOptions } from '../../queries/billing';
+import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type UserCoursesListProps = {};
@@ -20,17 +20,13 @@ export function UserCoursesList(props: UserCoursesListProps) {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
-  const { data: limits, isLoading } = useQuery(
+  const { data: limits, isLoading: isLimitsLoading } = useQuery(
     getAiCourseLimitOptions(),
     queryClient,
   );
 
   const { used, limit } = limits ?? { used: 0, limit: 0 };
-
-  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
-    useQuery(billingDetailsOptions(), queryClient);
-
-  const isPaidUser = userBillingDetails?.status !== 'none';
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
     listUserAiCoursesOptions(),
@@ -55,13 +51,6 @@ export function UserCoursesList(props: UserCoursesListProps) {
   });
 
   const isAuthenticated = isLoggedIn();
-
-  const canSearch =
-    !isInitialLoading &&
-    !isUserAiCoursesLoading &&
-    isAuthenticated &&
-    userAiCourses?.length !== 0;
-
   const limitUsedPercentage = Math.round((used / limit) * 100);
 
   return (
@@ -72,37 +61,39 @@ export function UserCoursesList(props: UserCoursesListProps) {
       <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
         <div className="flex items-center gap-2">
           <h2 className="text-lg font-semibold">
-            <span className='max-md:hidden'>Your </span>Courses
+            <span className="max-md:hidden">Your </span>Courses
           </h2>
         </div>
 
         <div className="flex items-center gap-2">
-          <div
-            className={cn(
-              'flex items-center gap-2 opacity-0 transition-opacity',
-              {
-                'opacity-100': !isPaidUser,
-              },
-            )}
-          >
-            <p className="flex items-center text-sm text-yellow-600">
-              <span className="max-md:hidden">
-                {limitUsedPercentage}% of daily limit used{' '}
-              </span>
-              <span className="inline md:hidden">
-                {limitUsedPercentage}% used
-              </span>
-              <button
-                onClick={() => {
-                  setShowUpgradePopup(true);
-                }}
-                className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pl-1.5 pr-2 text-xs text-white"
-              >
-                <Gift className="size-4" />
-                Upgrade
-              </button>
-            </p>
-          </div>
+          {used > 0 && limit > 0 && !isPaidUserLoading && (
+            <div
+              className={cn(
+                'flex items-center gap-2 opacity-0 transition-opacity',
+                {
+                  'opacity-100': !isPaidUser,
+                },
+              )}
+            >
+              <p className="flex items-center text-sm text-yellow-600">
+                <span className="max-md:hidden">
+                  {limitUsedPercentage}% of daily limit used{' '}
+                </span>
+                <span className="inline md:hidden">
+                  {limitUsedPercentage}% used
+                </span>
+                <button
+                  onClick={() => {
+                    setShowUpgradePopup(true);
+                  }}
+                  className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pl-1.5 pr-2 text-xs text-white"
+                >
+                  <Gift className="size-4" />
+                  Upgrade
+                </button>
+              </p>
+            </div>
+          )}
 
           <div className={cn('relative w-64 max-sm:hidden', {})}>
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">

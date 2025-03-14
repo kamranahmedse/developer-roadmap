@@ -2,18 +2,18 @@ import { useQuery } from '@tanstack/react-query';
 import { BookOpen, Bot, Code, HelpCircle, LockIcon, Send } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import { flushSync } from 'react-dom';
+import TextareaAutosize from 'react-textarea-autosize';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import { readAICourseLessonStream } from '../../helper/read-stream';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { useToast } from '../../hooks/use-toast';
+import { readStream } from '../../lib/ai';
+import { cn } from '../../lib/classname';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   markdownToHtml,
   markdownToHtmlWithHighlighting,
 } from '../../lib/markdown';
-import { cn } from '../../lib/classname';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import TextareaAutosize from 'react-textarea-autosize';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -142,7 +142,7 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
       return;
     }
 
-    await readAICourseLessonStream(reader, {
+    await readStream(reader, {
       onStream: async (content) => {
         flushSync(() => {
           setStreamedMessage(content);

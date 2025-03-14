@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { generateAiCourseStructure, type AiCourse } from '../../lib/ai';
-import { readAICourseStream } from '../../helper/read-stream';
+import { type AiCourse } from '../../lib/ai';
 import { AICourseContent } from './AICourseContent';
-import { queryClient } from '../../stores/query-client';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { generateCourse } from '../../helper/generate-ai-course';
 
 type GenerateAICourseProps = {};
 
@@ -38,119 +36,34 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
 
     setTerm(paramsTerm);
     setDifficulty(paramsDifficulty);
-    generateCourse({ term: paramsTerm, difficulty: paramsDifficulty });
+    handleGenerateCourse({ term: paramsTerm, difficulty: paramsDifficulty });
   }, [term, difficulty]);
 
-  const generateCourse = async (options: {
+  const handleGenerateCourse = async (options: {
     term: string;
     difficulty: string;
+    isForce?: boolean;
+    prompt?: string;
   }) => {
-    const { term, difficulty } = options;
+    const { term, difficulty, isForce, prompt } = options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai-tutor';
       return;
     }
 
-    setIsLoading(true);
-    setCourse({
-      title: '',
-      modules: [],
-      difficulty: '',
+    await generateCourse({
+      term,
+      difficulty,
+      slug: courseSlug,
+      onCourseIdChange: setCourseId,
+      onCourseSlugChange: setCourseSlug,
+      onCourseChange: setCourse,
+      onLoadingChange: setIsLoading,
+      onError: setError,
+      isForce,
+      prompt,
     });
-    setError('');
-
-    try {
-      const response = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            keyword: term,
-            difficulty,
-          }),
-          credentials: 'include',
-        },
-      );
-
-      if (!response.ok) {
-        const data = await response.json();
-        console.error(
-          'Error generating course:',
-          data?.message || 'Something went wrong',
-        );
-        setIsLoading(false);
-        setError(data?.message || 'Something went wrong');
-        return;
-      }
-
-      const reader = response.body?.getReader();
-
-      if (!reader) {
-        console.error('Failed to get reader from response');
-        setError('Something went wrong');
-        setIsLoading(false);
-        return;
-      }
-
-      const COURSE_ID_REGEX = new RegExp('@COURSEID:(\\w+)@');
-      const COURSE_SLUG_REGEX = new RegExp(/@COURSESLUG:([\w-]+)@/);
-
-      await readAICourseStream(reader, {
-        onStream: (result) => {
-          if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
-            const courseIdMatch = result.match(COURSE_ID_REGEX);
-            const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
-            const extractedCourseId = courseIdMatch?.[1] || '';
-            const extractedCourseSlug = courseSlugMatch?.[1] || '';
-
-            if (extractedCourseSlug) {
-              window.history.replaceState(
-                {
-                  courseId,
-                  courseSlug: extractedCourseSlug,
-                  term,
-                  difficulty,
-                },
-                '',
-                `${origin}/ai-tutor/${extractedCourseSlug}`,
-              );
-            }
-
-            result = result
-              .replace(COURSE_ID_REGEX, '')
-              .replace(COURSE_SLUG_REGEX, '');
-
-            setCourseId(extractedCourseId);
-            setCourseSlug(extractedCourseSlug);
-          }
-
-          try {
-            const aiCourse = generateAiCourseStructure(result);
-            setCourse({
-              ...aiCourse,
-              difficulty: difficulty || '',
-            });
-          } catch (e) {
-            console.error('Error parsing streamed course content:', e);
-          }
-        },
-        onStreamEnd: (result) => {
-          result = result
-            .replace(COURSE_ID_REGEX, '')
-            .replace(COURSE_SLUG_REGEX, '');
-          setIsLoading(false);
-          queryClient.invalidateQueries(getAiCourseLimitOptions());
-        },
-      });
-    } catch (error: any) {
-      setError(error?.message || 'Something went wrong');
-      console.error('Error in course generation:', error);
-      setIsLoading(false);
-    }
   };
 
   useEffect(() => {
@@ -167,7 +80,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       setDifficulty(difficulty);
 
       setIsLoading(true);
-      generateCourse({ term, difficulty }).finally(() => {
+      handleGenerateCourse({ term, difficulty }).finally(() => {
         setIsLoading(false);
       });
     };
@@ -184,6 +97,14 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       course={course}
       isLoading={isLoading}
       error={error}
+      onRegenerateOutline={(prompt) => {
+        handleGenerateCourse({
+          term,
+          difficulty,
+          isForce: true,
+          prompt,
+        });
+      }}
     />
   );
 }

@@ -8,7 +8,7 @@ import {
   XIcon,
 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { readAICourseLessonStream } from '../../helper/read-stream';
+import { readStream } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
@@ -25,6 +25,7 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
+import { useIsPaidUser } from '../../queries/billing';
 
 type AICourseModuleViewProps = {
   courseSlug: string;
@@ -71,6 +72,8 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
 
   const lessonId = `${slugify(currentModuleTitle)}__${slugify(currentLessonTitle)}`;
   const isLessonDone = aiCourseProgress?.done.includes(lessonId);
+
+  const { isPaidUser } = useIsPaidUser();
 
   const abortController = useMemo(
     () => new AbortController(),
@@ -124,36 +127,41 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
         removeAuthToken();
         window.location.reload();
       }
-    }
-
-    const reader = response.body?.getReader();
-
-    if (!reader) {
-      setIsLoading(false);
-      setError('Something went wrong');
       return;
     }
 
-    setIsLoading(false);
-    setIsGenerating(true);
-    await readAICourseLessonStream(reader, {
-      onStream: async (result) => {
-        if (abortController.signal.aborted) {
-          return;
-        }
+    if (!response.body) {
+      setIsLoading(false);
+      setError('No response body received');
+      return;
+    }
 
-        setLessonHtml(markdownToHtml(result, false));
-      },
-      onStreamEnd: async (result) => {
-        if (abortController.signal.aborted) {
-          return;
-        }
+    try {
+      const reader = response.body.getReader();
+      setIsLoading(false);
+      setIsGenerating(true);
+      await readStream(reader, {
+        onStream: async (result) => {
+          if (abortController.signal.aborted) {
+            return;
+          }
 
-        setLessonHtml(await markdownToHtmlWithHighlighting(result));
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
-        setIsGenerating(false);
-      },
-    });
+          setLessonHtml(markdownToHtml(result, false));
+        },
+        onStreamEnd: async (result) => {
+          if (abortController.signal.aborted) {
+            return;
+          }
+
+          setLessonHtml(await markdownToHtmlWithHighlighting(result));
+          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          setIsGenerating(false);
+        },
+      });
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Something went wrong');
+      setIsLoading(false);
+    }
   };
 
   const { mutate: toggleDone, isPending: isTogglingDone } = useMutation(
@@ -273,18 +281,21 @@ export function AICourseModuleView(props: AICourseModuleViewProps) {
                   Limit reached
                 </h2>
                 <p className="my-3 text-red-600">
-                  You have reached the AI usage limit for today. Please upgrade
-                  your account to continue.
+                  You have reached the AI usage limit for today.
+                  {!isPaidUser && <>Please upgrade your account to continue.</>}
+                  {isPaidUser && <>Please wait until tomorrow to continue.</>}
                 </p>
 
-                <button
-                  onClick={() => {
-                    onUpgrade();
-                  }}
-                  className="rounded-full bg-red-600 px-4 py-1 text-white hover:bg-red-700"
-                >
-                  Upgrade Account
-                </button>
+                {!isPaidUser && (
+                  <button
+                    onClick={() => {
+                      onUpgrade();
+                    }}
+                    className="rounded-full bg-red-600 px-4 py-1 text-white hover:bg-red-700"
+                  >
+                    Upgrade Account
+                  </button>
+                )}
               </div>
             ) : (
               <p className="text-red-600">{error}</p>

@@ -24,7 +24,7 @@ export function AILimitsPopup(props: AILimitsPopupProps) {
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
 
-  const isPaidUser = userBillingDetails?.status !== 'none';
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   return (
     <Modal

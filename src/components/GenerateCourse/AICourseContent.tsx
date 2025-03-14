@@ -20,16 +20,19 @@ import { AICourseModuleList } from './AICourseModuleList';
 import { AICourseModuleView } from './AICourseModuleView';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AILimitsPopup } from './AILimitsPopup';
+import { RegenerateOutline } from './RegenerateOutline';
+import { useIsPaidUser } from '../../queries/billing';
 
 type AICourseContentProps = {
   courseSlug?: string;
   course: AiCourse;
   isLoading: boolean;
   error?: string;
+  onRegenerateOutline: (prompt?: string) => void;
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const { course, courseSlug, isLoading, error } = props;
+  const { course, courseSlug, isLoading, error, onRegenerateOutline } = props;
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
@@ -38,6 +41,8 @@ export function AICourseContent(props: AICourseContentProps) {
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'module' | 'full'>('full');
+
+  const { isPaidUser } = useIsPaidUser();
 
   const { data: aiCourseProgress } = useQuery(
     getAiCourseProgressOptions({ aiCourseSlug: courseSlug || '' }),
@@ -49,21 +54,23 @@ export function AICourseContent(props: AICourseContentProps) {
   >({});
 
   const goToNextModule = () => {
-    if (activeModuleIndex < course.modules.length - 1) {
-      const nextModuleIndex = activeModuleIndex + 1;
-      setActiveModuleIndex(nextModuleIndex);
-      setActiveLessonIndex(0);
-
-      setExpandedModules((prev) => {
-        const newState: Record<number, boolean> = {};
-        course.modules.forEach((_, idx) => {
-          newState[idx] = false;
-        });
-
-        newState[nextModuleIndex] = true;
-        return newState;
-      });
+    if (activeModuleIndex >= course.modules.length) {
+      return;
     }
+
+    const nextModuleIndex = activeModuleIndex + 1;
+    setActiveModuleIndex(nextModuleIndex);
+    setActiveLessonIndex(0);
+
+    setExpandedModules((prev) => {
+      const newState: Record<number, boolean> = {};
+      course.modules.forEach((_, idx) => {
+        newState[idx] = false;
+      });
+
+      newState[nextModuleIndex] = true;
+      return newState;
+    });
   };
 
   const goToNextLesson = () => {
@@ -78,26 +85,29 @@ export function AICourseContent(props: AICourseContentProps) {
   const goToPrevLesson = () => {
     if (activeLessonIndex > 0) {
       setActiveLessonIndex(activeLessonIndex - 1);
-    } else {
-      const prevModule = course.modules[activeModuleIndex - 1];
-      if (prevModule) {
-        const prevModuleIndex = activeModuleIndex - 1;
-        setActiveModuleIndex(prevModuleIndex);
-        setActiveLessonIndex(prevModule.lessons.length - 1);
-
-        // Expand the previous module in the sidebar
-        setExpandedModules((prev) => {
-          const newState: Record<number, boolean> = {};
-          // Set all modules to collapsed
-          course.modules.forEach((_, idx) => {
-            newState[idx] = false;
-          });
-          // Expand only the previous module
-          newState[prevModuleIndex] = true;
-          return newState;
-        });
-      }
+      return;
     }
+
+    const prevModule = course.modules[activeModuleIndex - 1];
+    if (!prevModule) {
+      return;
+    }
+
+    const prevModuleIndex = activeModuleIndex - 1;
+    setActiveModuleIndex(prevModuleIndex);
+    setActiveLessonIndex(prevModule.lessons.length - 1);
+
+    // Expand the previous module in the sidebar
+    setExpandedModules((prev) => {
+      const newState: Record<number, boolean> = {};
+      // Set all modules to collapsed
+      course.modules.forEach((_, idx) => {
+        newState[idx] = false;
+      });
+      // Expand only the previous module
+      newState[prevModuleIndex] = true;
+      return newState;
+    });
   };
 
   const currentModule = course.modules[activeModuleIndex];
@@ -109,6 +119,7 @@ export function AICourseContent(props: AICourseContentProps) {
     (total, module) => total + module.lessons.length,
     0,
   );
+
   const totalDoneLessons = aiCourseProgress?.done?.length || 0;
   const finishedPercentage = Math.round(
     (totalDoneLessons / totalCourseLessons) * 100,
@@ -154,12 +165,14 @@ export function AICourseContent(props: AICourseContentProps) {
 
           {isLimitReached && (
             <div className="mt-4">
-              <button
-                onClick={() => setShowUpgradeModal(true)}
-                className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
-              >
-                Upgrade to remove Limits
-              </button>
+              {!isPaidUser && (
+                <button
+                  onClick={() => setShowUpgradeModal(true)}
+                  className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
+                >
+                  Upgrade to remove Limits
+                </button>
+              )}
 
               <p className="mt-4 text-sm text-black">
                 <a href="/ai-tutor" className="underline underline-offset-2">
@@ -173,6 +186,8 @@ export function AICourseContent(props: AICourseContentProps) {
     );
   }
 
+  const isViewingLesson = viewMode === 'module';
+
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       {modals}
@@ -181,11 +196,17 @@ export function AICourseContent(props: AICourseContentProps) {
         <div className="flex items-center justify-between px-4 py-2">
           <a
             href="/ai-tutor"
+            onClick={(e) => {
+              if (isViewingLesson) {
+                e.preventDefault();
+                setViewMode('full');
+              }
+            }}
             className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
             aria-label="Back to generator"
           >
             <ChevronLeft className="size-4" strokeWidth={2.5} />
-            Back<span className="hidden lg:inline"> to AI Tutor</span>
+            Back {isViewingLesson ? 'to Outline' : 'to AI Tutor'}
           </a>
           <div className="flex items-center gap-2">
             <div className="flex flex-row lg:hidden">
@@ -351,7 +372,7 @@ export function AICourseContent(props: AICourseContentProps) {
             <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
               <div
                 className={cn(
-                  'mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
+                  'relative mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
                   isLoading && 'striped-loader',
                 )}
               >
@@ -363,6 +384,12 @@ export function AICourseContent(props: AICourseContentProps) {
                     {course.title ? course.difficulty : 'Please wait ..'}
                   </p>
                 </div>
+
+                {!isLoading && (
+                  <RegenerateOutline
+                    onRegenerateOutline={onRegenerateOutline}
+                  />
+                )}
               </div>
               {course.title ? (
                 <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">

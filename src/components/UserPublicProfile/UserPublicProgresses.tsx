@@ -1,6 +1,5 @@
 import type { GetPublicProfileResponse } from '../../api/user';
-import { UserPublicProgressStats } from './UserPublicProgressStats';
-import { getPercentage } from '../../helper/number.ts';
+import { getPercentage } from '../../lib/number';
 
 type UserPublicProgressesProps = {
   userId: string;
@@ -73,15 +72,15 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                   target="_blank"
                   key={roadmap.id + counter}
                   href={`/${roadmap.id}?s=${userId}`}
-                  className="relative group border-gray-300 flex items-center justify-between rounded-md border bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400 overflow-hidden"
+                  className="group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400"
                 >
                   <span className="flex-grow truncate">{roadmap.title}</span>
                   <span className="text-xs text-gray-400">
-                    {parseInt(percentageDone, 10)}%
+                    {percentageDone}%
                   </span>
 
                   <span
-                    className="absolute transition-colors left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 group-hover:bg-black/10"
+                    className="absolute left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
                     style={{
                       width: `${percentageDone}%`,
                     }}

@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
-import { queryClient } from '../../stores/query-client';
-import { billingDetailsOptions } from '../../queries/billing';
-import { getPercentage } from '../../helper/number';
 import { Gift, Info } from 'lucide-react';
+import { getPercentage } from '../../lib/number';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { queryClient } from '../../stores/query-client';
 
 type AICourseLimitProps = {
   onUpgrade: () => void;
@@ -31,19 +31,22 @@ export function AICourseLimit(props: AICourseLimitProps) {
 
   const totalPercentage = getPercentage(used, limit);
 
-  // has consumed 80% of the limit
-  const isNearLimit = used >= limit * 0.8;
-  const isPaidUser = userBillingDetails.status !== 'none';
+  // has consumed 85% of the limit
+  const isNearLimit = used >= limit * 0.85;
+  const isPaidUser = userBillingDetails.status === 'active';
 
   return (
     <>
-      <button
-        className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
-        onClick={() => onShowLimits()}
-      >
-        <Info className="size-4" />
-        {totalPercentage}% limit used
-      </button>
+      {!isPaidUser ||
+        (isNearLimit && (
+          <button
+            className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
+            onClick={() => onShowLimits()}
+          >
+            <Info className="size-4" />
+            {totalPercentage}% limit used
+          </button>
+        ))}
 
       {(!isPaidUser || isNearLimit) && (
         <button
