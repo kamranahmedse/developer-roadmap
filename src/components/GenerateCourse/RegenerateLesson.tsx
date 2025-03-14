@@ -2,7 +2,6 @@ import { PenSquare, RefreshCcw } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
-import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { ModifyCoursePrompt } from './ModifyCoursePrompt';
 
@@ -18,8 +17,6 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
   const [showPromptModal, setShowPromptModal] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
-
-  const { isPaidUser } = useIsPaidUser();
 
   useOutsideClick(ref, () => setIsDropdownVisible(false));
 
@@ -58,12 +55,7 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
           <div className="absolute right-0 top-full min-w-[170px] overflow-hidden rounded-md border border-gray-200 bg-white">
             <button
               onClick={() => {
-                if (!isPaidUser) {
-                  setIsDropdownVisible(false);
-                  setShowUpgradeModal(true);
-                } else {
-                  onRegenerateLesson();
-                }
+                onRegenerateLesson();
               }}
               className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
             >
@@ -77,11 +69,7 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
             <button
               onClick={() => {
                 setIsDropdownVisible(false);
-                if (!isPaidUser) {
-                  setShowUpgradeModal(true);
-                } else {
-                  setShowPromptModal(true);
-                }
+                setShowPromptModal(true);
               }}
               className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
             >
