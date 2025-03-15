@@ -128,32 +128,32 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     return allRoadmaps;
   };
 
-  useEffect(() => {
-    if (debouncedSearchValue.length === 0 || isFirstRender.current) {
-      setSearchResults([]);
-      return;
-    }
+  // useEffect(() => {
+  //   if (debouncedSearchValue.length === 0 || isFirstRender.current) {
+  //     setSearchResults([]);
+  //     return;
+  //   }
 
-    setIsActive(true);
-    setIsLoading(true);
-    loadTopAIRoadmapTerm()
-      .then((results) => {
-        const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
-        const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
-          return (
-            roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1
-          );
-        });
+  //   setIsActive(true);
+  //   setIsLoading(true);
+  //   loadTopAIRoadmapTerm()
+  //     .then((results) => {
+  //       const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
+  //       const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
+  //         return (
+  //           roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1
+  //         );
+  //       });
 
-        setSearchResults(
-          [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
-        );
-        setActiveCounter(0);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, [debouncedSearchValue]);
+  //       setSearchResults(
+  //         [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
+  //       );
+  //       setActiveCounter(0);
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false);
+  //     });
+  // }, [debouncedSearchValue]);
 
   useEffect(() => {
     if (isFirstRender.current) {
