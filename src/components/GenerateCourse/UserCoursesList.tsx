@@ -144,7 +144,7 @@ export function UserCoursesList(props: UserCoursesListProps) {
         </div>
       )}
 
-      {!isUserAiCoursesLoading && !isInitialLoading && courses.length === 0 && (
+      {!isUserAiCoursesLoading && !isInitialLoading && courses.length === 0 && isAuthenticated && (
         <div className="flex min-h-[152px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
           <p className="text-sm text-gray-600">
             You haven't generated any courses yet.
