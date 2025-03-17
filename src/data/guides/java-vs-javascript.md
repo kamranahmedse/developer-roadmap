@@ -8,7 +8,7 @@ seo:
   description: 'Understand the unique strengths of Java and JavaScript to decide which suits your programming needs best.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/java-vs-javascript-66pqp.jpg'
 relatedTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-30
 sitemap:

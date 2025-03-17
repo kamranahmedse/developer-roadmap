@@ -5,7 +5,7 @@ briefDescription: 'Test, Rate and Improve your Full-stack knowledge with these q
 title: 'Top 50 Full Stack Developer Interview Questions'
 description: 'Ace your interview with our curated list of 50 full-stack developer interview questions, perfect for beginners and experienced candidates.'
 authorId: 'fernando'
-isNew: true
+isNew: false
 date: 2025-01-29
 seo:
   title: 'Top 50 Full Stack Developer Interview Questions'

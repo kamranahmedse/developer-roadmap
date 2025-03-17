@@ -8,7 +8,7 @@ seo:
   description: 'Comparing Go vs Java for your projects? Explore features like concurrency, memory management, and learning curves to find the right fit for your needs.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/go-vs-java-fo08l.jpg'
 relatedGuidesTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-02-04
 sitemap:

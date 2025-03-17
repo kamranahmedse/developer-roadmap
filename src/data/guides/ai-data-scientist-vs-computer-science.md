@@ -7,7 +7,7 @@ seo:
   title: 'Data Science vs. Computer Science: Which Path to Choose'
   description: 'Data science or computer science? Learn the tools, roles, and paths in each field to decide which fits your strengths and career goals.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-computer-science-rudoc.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-02-06
 sitemap:
