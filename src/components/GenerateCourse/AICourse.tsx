@@ -4,6 +4,7 @@ import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UserCoursesList } from './UserCoursesList';
+import { FineTuneCourse } from './FineTuneCourse';
 
 export const difficultyLevels = [
   'beginner',
@@ -97,6 +98,8 @@ export function AICourse(props: AICourseProps) {
                 ))}
               </div>
             </div>
+
+            <FineTuneCourse />
 
             <button
               type="submit"
