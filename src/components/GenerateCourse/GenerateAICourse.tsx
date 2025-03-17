@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { type AiCourse } from '../../lib/ai';
+import { getCourseFineTuneData, type AiCourse } from '../../lib/ai';
 import { AICourseContent } from './AICourseContent';
 import { generateCourse } from '../../helper/generate-ai-course';
 import { useQuery } from '@tanstack/react-query';
@@ -13,6 +13,10 @@ type GenerateAICourseProps = {};
 export function GenerateAICourse(props: GenerateAICourseProps) {
   const [term, setTerm] = useState('');
   const [difficulty, setDifficulty] = useState('');
+  const [sessionId, setSessionId] = useState('');
+  const [goal, setGoal] = useState('');
+  const [about, setAbout] = useState('');
+  const [customInstructions, setCustomInstructions] = useState('');
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -54,16 +58,47 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
 
     setTerm(paramsTerm);
     setDifficulty(paramsDifficulty);
-    handleGenerateCourse({ term: paramsTerm, difficulty: paramsDifficulty });
+
+    const sessionId = params?.id;
+    setSessionId(sessionId);
+
+    let paramsGoal = '';
+    let paramsAbout = '';
+    let paramsCustomInstructions = '';
+
+    if (sessionId) {
+      const fineTuneData = getCourseFineTuneData(sessionId);
+      if (fineTuneData) {
+        paramsGoal = fineTuneData.goal;
+        paramsAbout = fineTuneData.about;
+        paramsCustomInstructions = fineTuneData.customInstructions;
+
+        setGoal(paramsGoal);
+        setAbout(paramsAbout);
+        setCustomInstructions(paramsCustomInstructions);
+      }
+    }
+
+    handleGenerateCourse({
+      term: paramsTerm,
+      difficulty: paramsDifficulty,
+      instructions: paramsCustomInstructions,
+      goal: paramsGoal,
+      about: paramsAbout,
+    });
   }, [term, difficulty]);
 
   const handleGenerateCourse = async (options: {
     term: string;
     difficulty: string;
+    instructions?: string;
+    goal?: string;
+    about?: string;
     isForce?: boolean;
     prompt?: string;
   }) => {
-    const { term, difficulty, isForce, prompt } = options;
+    const { term, difficulty, isForce, prompt, instructions, goal, about } =
+      options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai-tutor';
@@ -79,6 +114,9 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       onCourseChange: setCourse,
       onLoadingChange: setIsLoading,
       onError: setError,
+      instructions,
+      goal,
+      about,
       isForce,
       prompt,
     });
