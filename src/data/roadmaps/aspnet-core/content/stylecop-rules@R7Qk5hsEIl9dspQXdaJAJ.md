@@ -4,7 +4,7 @@ StyleCop is a tool used for developers to standardize their code and ensure they
 
 Visit the following resources to learn more:
 
-- [@opensource@GitHub: StyleCop GitHub official page](https://github.com/StyleCop/StyleCop)
-- [@opensource@GitLab: StyeleCop Analyzers,a more modern version of StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
-- [@video@StyleCop set up tutorial ](https://www.youtube.com/watch?v=dmpOKmz3lPw)
-- [@article@Guide on how to start using it](https://blog.submain.com/stylecop-detailed-guide/)
+- [@opensource@StyleCop GitHub official page](https://github.com/StyleCop/StyleCop)
+- [@opensource@StyeleCop Analyzers, a more modern version of StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
+- [@video@The StyleCop setup and Advantages](https://www.youtube.com/watch?v=dmpOKmz3lPw)
+- [@article@StyleCop: A Detailed Guide to Starting and Using It](https://blog.submain.com/stylecop-detailed-guide/)
