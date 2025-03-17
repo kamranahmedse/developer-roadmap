@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [@video@Introduction To Linked List](https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2)
 - [@video@Python Linked List](https://www.youtube.com/watch?v=qp8u-frRAnU&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=4&ab_channel=codebasics)
+- [@video@Python Linked List in Hindi](https://youtu.be/FWQNMFHKz7A?si=Tv3Y1voWbruHh5j3)
