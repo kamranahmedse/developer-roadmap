@@ -64,8 +64,8 @@ type CourseFineTuneData = {
 export function storeFineTuneData(meta: CourseFineTuneData) {
   const sessionId = Date.now().toString();
 
-  sessionStorage.setItem(sessionId, JSON.stringify(meta));
-  sessionStorage.setItem('lastSessionId', sessionId);
+  localStorage.setItem(sessionId, JSON.stringify(meta));
+  localStorage.setItem('lastSessionId', sessionId);
 
   return sessionId;
 }
@@ -73,7 +73,7 @@ export function storeFineTuneData(meta: CourseFineTuneData) {
 export function getCourseFineTuneData(
   sessionId: string,
 ): CourseFineTuneData | null {
-  const meta = sessionStorage.getItem(sessionId);
+  const meta = localStorage.getItem(sessionId);
   if (!meta) {
     return null;
   }
@@ -82,16 +82,16 @@ export function getCourseFineTuneData(
 }
 
 export function getLastSessionId(): string | null {
-  return sessionStorage.getItem('lastSessionId');
+  return localStorage.getItem('lastSessionId');
 }
 
 export function clearFineTuneData() {
   const sessionId = getLastSessionId();
   if (sessionId) {
-    sessionStorage.removeItem(sessionId);
+    localStorage.removeItem(sessionId);
   }
 
-  sessionStorage.removeItem('lastSessionId');
+  localStorage.removeItem('lastSessionId');
 }
 
 const NEW_LINE = '\n'.charCodeAt(0);
