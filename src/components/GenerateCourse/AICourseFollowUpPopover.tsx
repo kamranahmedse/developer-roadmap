@@ -1,5 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
-import { BookOpen, Bot, Code, HelpCircle, LockIcon, Send } from 'lucide-react';
+import {
+  BookOpen,
+  Bot,
+  Code,
+  Globe, Hammer,
+  HelpCircle,
+  LockIcon,
+  Send,
+} from 'lucide-react';
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 import { flushSync } from 'react-dom';
 import TextareaAutosize from 'react-textarea-autosize';
@@ -369,14 +377,14 @@ const capabilities = [
   },
   {
     icon: (
-      <Code className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />
+      <Hammer className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />
     ),
-    title: 'Code Help',
-    description: 'Share your code and ask me to help you debug it',
+    title: 'Real-world Examples',
+    description: 'Ask for real-world examples to understand better',
   },
   {
     icon: <Bot className="size-4 shrink-0 text-yellow-600" strokeWidth={2.5} />,
     title: 'Best Practices',
-    description: 'Share your code and ask me the best way to do something',
+    description: 'Learn about best practices and common pitfalls',
   },
 ] as const;

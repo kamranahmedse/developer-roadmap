@@ -203,7 +203,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
     isLoading;
 
   const cantGoBack =
-    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating;
+    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating || isLoading;
 
   return (
     <div className="mx-auto max-w-4xl">
