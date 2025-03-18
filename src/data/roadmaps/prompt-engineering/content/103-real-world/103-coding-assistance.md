@@ -15,9 +15,9 @@ The output will be something like:
 ```python
 import random
 
-prepositions = ['at', 'in', 'on', 'with', 'under', 'over']
-verbs = ['run', 'jump', 'dance', 'sing', 'laugh', 'cry']
-nouns = ['cat', 'dog', 'tree', 'flower', 'book', 'computer']
+prepositions = ["at", "in", "on", "with", "under", "over"]
+verbs = ["run", "jump", "dance", "sing", "laugh", "cry"]
+nouns = ["cat", "dog", "tree", "flower", "book", "computer"]
 
 preposition = random.choice(prepositions)
 verb = random.choice(verbs)
@@ -26,7 +26,6 @@ noun = random.choice(nouns)
 madlib = f"I {verb} {preposition} the {noun}."
 
 print(madlib)
-
 ```
 
 ## Commenting and Reformatting Code
@@ -60,10 +59,9 @@ num_points = 50
 for i in range(num_points):
     # Calculate the y value of the wave using the sine function from the math module
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
-    
-    # Print a space for padding, followed by an asterisk at the appropriate position on the wave
-    print(' ' * (amplitude + y) + '*')
 
+    # Print a space for padding, followed by an asterisk at the appropriate position on the wave
+    print(" " * (amplitude + y) + "*")
 ```
 
 ## Debugging
@@ -113,7 +111,6 @@ for i in numbers:
         if j in numbers:
             numbers.remove(j)
 print(numbers)
-
 ```
 
 Note that we asked the bot to "act like a senior developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a very junior developer."
@@ -151,7 +148,6 @@ salary = float(input("Enter employee's salary: "))
 ss_tax = salary * 0.062
 
 print("Social Security tax is: $", round(ss_tax, 2))
-
 ```
 
 Learn more from the following resources:
