@@ -17,14 +17,14 @@ public:
     }
 
     void implementation() {
-        std::cout << "Default implementation in Base" << std::endl;
+        std::cout << "Default implementation in Base\n";
     }
 };
 
 class Derived1 : public Base<Derived1> {
 public:
     void implementation() {
-        std::cout << "Custom implementation in Derived1" << std::endl;
+        std::cout << "Custom implementation in Derived1\n";
     }
 };
 

@@ -24,12 +24,12 @@ int main() {
 
     // Without auto, iterating the vector would look like this:
     for (std::vector<int>::iterator it = myVector.begin(); it != myVector.end(); ++it) {
-        std::cout << *it << std::endl;
+        std::cout << *it << '\n';
     }
 
     // With auto, the iterator declaration becomes simpler:
     for (auto it = myVector.begin(); it != myVector.end(); ++it) {
-        std::cout << *it << std::endl;
+        std::cout << *it << '\n';
     }
 }
 ```

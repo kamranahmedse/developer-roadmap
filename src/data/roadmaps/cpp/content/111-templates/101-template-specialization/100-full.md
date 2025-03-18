@@ -19,7 +19,7 @@ template <typename T>
 class MyContainer {
 public:
     void print() {
-        std::cout << "Generic container." << std::endl;
+        std::cout << "Generic container.\n";
     }
 };
 
@@ -28,7 +28,7 @@ template <>
 class MyContainer<int> {
 public:
     void print() {
-        std::cout << "Container for integers." << std::endl;
+        std::cout << "Container for integers.\n";
     }
 };
 

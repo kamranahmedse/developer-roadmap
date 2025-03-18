@@ -32,12 +32,12 @@ int main() {
 
     // Using the standalone function 'add'
     int sum = add(x, y);
-    std::cout << "Sum: " << sum << std::endl;
+    std::cout << "Sum: " << sum << '\n';
 
     // Using a class and member function
     Calculator calc;
     int product = calc.multiply(x, y);
-    std::cout << "Product: " << product << std::endl;
+    std::cout << "Product: " << product << '\n';
 
     return 0;
 }

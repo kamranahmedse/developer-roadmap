@@ -25,7 +25,7 @@ Here are a few examples to demonstrate the use of lambda functions in C++:
 
 ```cpp
 auto printHello = []() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World!\n";
 };
 printHello(); // Output: Hello, World!
 ```

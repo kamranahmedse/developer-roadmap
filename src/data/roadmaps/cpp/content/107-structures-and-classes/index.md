@@ -48,7 +48,7 @@ public:
     void display() {
         std::cout << "Roll no: " << roll_no
                   << "\nName: " << name
-                  << "\nMarks: " << marks << std::endl;
+                  << "\nMarks: " << marks << '\n';
     }
 };
 

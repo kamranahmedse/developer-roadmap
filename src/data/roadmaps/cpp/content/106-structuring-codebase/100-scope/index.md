@@ -10,7 +10,7 @@
 int globalVar; // This is a global variable
 
 int main() {
-    std::cout << "Global variable: " << globalVar << std::endl;
+    std::cout << "Global variable: " << globalVar << '\n';
 }
 ```
 
@@ -22,12 +22,12 @@ int main() {
 void localExample() {
     int localVar; // This is a local variable
     localVar = 5;
-    std::cout << "Local variable: " << localVar << std::endl;
+    std::cout << "Local variable: " << localVar << '\n';
 }
 
 int main() {
     localExample();
-    // std::cout << localVar << std::endl; //error: ‘localVar’ was not declared in this scope
+    // std::cout << localVar << '\n'; //error: ‘localVar’ was not declared in this scope
 }
 ```
 
@@ -41,7 +41,7 @@ namespace MyNamespace {
 }
 
 int main() {
-    std::cout << "Namespace variable: " << MyNamespace::namespaceVar << std::endl;
+    std::cout << "Namespace variable: " << MyNamespace::namespaceVar << '\n';
 }
 ```
 
@@ -62,8 +62,8 @@ int MyClass::staticMember = 7;
 
 int main() {
     MyClass obj(10);
-    std::cout << "Static member: " << MyClass::staticMember << std::endl;
-    std::cout << "Non-static member: " << obj.nonStaticMember << std::endl;
+    std::cout << "Static member: " << MyClass::staticMember << '\n';
+    std::cout << "Non-static member: " << obj.nonStaticMember << '\n';
 }
 ```
 

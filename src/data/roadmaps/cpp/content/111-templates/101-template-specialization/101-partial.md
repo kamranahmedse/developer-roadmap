@@ -36,9 +36,9 @@ int main() {
     MyTemplate<double*> t2; // Partial specialization for pointers
     MyTemplate<int> t3; // Full specialization for int
 
-    std::cout << t1.name() << std::endl;
-    std::cout << t2.name() << std::endl;
-    std::cout << t3.name() << std::endl;
+    std::cout << t1.name() << '\n';
+    std::cout << t2.name() << '\n';
+    std::cout << t3.name() << '\n';
 
     return 0;
 }
