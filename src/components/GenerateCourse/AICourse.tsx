@@ -6,6 +6,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { UserCoursesList } from './UserCoursesList';
 import { FineTuneCourse } from './FineTuneCourse';
 import {
+  clearFineTuneData,
   getCourseFineTuneData,
   getLastSessionId,
   storeFineTuneData,
@@ -40,9 +41,9 @@ export function AICourse(props: AICourseProps) {
       return;
     }
 
-    // setAbout(fineTuneData.about);
-    // setGoal(fineTuneData.goal);
-    // setCustomInstructions(fineTuneData.customInstructions);
+    setAbout(fineTuneData.about);
+    setGoal(fineTuneData.goal);
+    setCustomInstructions(fineTuneData.customInstructions);
   }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -57,13 +58,15 @@ export function AICourse(props: AICourseProps) {
       return;
     }
 
-    const sessionId = hasFineTuneData
-      ? storeFineTuneData({
-          about,
-          goal,
-          customInstructions,
-        })
-      : '';
+    let sessionId = '';
+    if (hasFineTuneData) {
+      clearFineTuneData();
+      sessionId = storeFineTuneData({
+        about,
+        goal,
+        customInstructions,
+      });
+    }
 
     window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
   }
