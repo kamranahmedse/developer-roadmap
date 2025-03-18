@@ -515,6 +515,10 @@ export function AICourseContent(props: AICourseContentProps) {
               )}
             </div>
           )}
+
+          <div className="mb-10 mt-5 mx-auto text-center text-sm text-gray-400">
+            AI can make mistakes, check imporant info.
+          </div>
         </main>
       </div>
 
