@@ -22,6 +22,7 @@ import { AILimitsPopup } from './AILimitsPopup';
 import { RegenerateOutline } from './RegenerateOutline';
 
 type AICourseContentProps = {
+  courseCreatorId: string;
   courseSlug?: string;
   course: AiCourse;
   isLoading: boolean;
@@ -30,7 +31,14 @@ type AICourseContentProps = {
 };
 
 export function AICourseContent(props: AICourseContentProps) {
-  const { course, courseSlug, isLoading, error, onRegenerateOutline } = props;
+  const {
+    course,
+    courseSlug,
+    isLoading,
+    error,
+    onRegenerateOutline,
+    courseCreatorId,
+  } = props;
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
@@ -382,6 +390,7 @@ export function AICourseContent(props: AICourseContentProps) {
         >
           {viewMode === 'module' && (
             <AICourseLesson
+              courseCreatorId={courseCreatorId}
               courseSlug={courseSlug!}
               progress={aiCourseProgress}
               activeModuleIndex={activeModuleIndex}

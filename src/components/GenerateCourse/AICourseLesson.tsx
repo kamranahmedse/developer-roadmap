@@ -27,8 +27,11 @@ import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
 import { RegenerateLesson } from './RegenerateLesson';
+import { useAuth } from '../../hooks/use-auth';
+import { useToast } from '../../hooks/use-toast';
 
 type AICourseLessonProps = {
+  courseCreatorId: string;
   courseSlug: string;
   progress: string[];
 
@@ -47,6 +50,7 @@ type AICourseLessonProps = {
 
 export function AICourseLesson(props: AICourseLessonProps) {
   const {
+    courseCreatorId,
     courseSlug,
     progress = [],
 
@@ -63,6 +67,8 @@ export function AICourseLesson(props: AICourseLessonProps) {
     onUpgrade,
   } = props;
 
+  const user = useAuth();
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
@@ -182,6 +188,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
           data,
         );
       },
+      onError: (error) => {
+        toast.error(error?.message || 'Something went wrong');
+      },
     },
     queryClient,
   );
@@ -203,7 +212,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
     isLoading;
 
   const cantGoBack =
-    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating || isLoading;
+    (activeModuleIndex === 0 && activeLessonIndex === 0) ||
+    isGenerating ||
+    isLoading;
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -231,7 +242,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 }}
               />
               <button
-                disabled={isLoading || isTogglingDone}
+                disabled={
+                  isLoading || isTogglingDone || user?.id !== courseCreatorId
+                }
                 className={cn(
                   'flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
                   isLessonDone

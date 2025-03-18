@@ -92,6 +92,7 @@ export function GetAICourse(props: GetAICourseProps) {
 
   return (
     <AICourseContent
+      courseCreatorId={aiCourse?.userId!}
       course={{
         title: aiCourse?.title || '',
         modules: aiCourse?.modules || [],
