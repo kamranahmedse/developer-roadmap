@@ -14,6 +14,7 @@ import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
 import Clarity from '../components/Analytics/Clarity.astro';
+import RedditPixel from '../components/Analytics/RedditPixel.astro';
 
 export interface Props {
   title: string;
@@ -158,6 +159,7 @@ const gaPageIdentifier = Astro.url.pathname
 
     <Analytics />
     <Clarity />
+    <RedditPixel />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
