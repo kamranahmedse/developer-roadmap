@@ -2,6 +2,7 @@ import {
   BookOpenCheck,
   ChevronLeft,
   CircleAlert,
+  CircleOff,
   Loader2,
   Menu,
   Play,
@@ -140,40 +141,62 @@ export function AICourseContent(props: AICourseContentProps) {
 
   if (error && !isLoading) {
     const isLimitReached = error.includes('limit');
+    const isNotFound = error.includes('not exist');
 
-    const icon = isLimitReached ? (
-      <CircleAlert className="mb-4 size-16 text-yellow-500" />
-    ) : (
-      <ErrorIcon additionalClasses="mb-4 size-16" />
-    );
-    const title = isLimitReached ? 'Limit Reached' : 'Error Generating Course';
-    const message = isLimitReached
-      ? 'You have reached the daily AI usage limit. Please upgrade your account to continue.'
-      : error;
+    let icon = <ErrorIcon additionalClasses="mb-4 size-16" />;
+    let title = 'Error occurred';
+    let message = error;
+
+    if (isLimitReached) {
+      icon = <CircleAlert className="mb-4 size-16 text-yellow-500" />;
+      title = 'Limit Reached';
+      message =
+        'You have reached the daily AI usage limit. Please upgrade your account to continue.';
+    } else if (isNotFound) {
+      icon = <CircleOff className="mb-4 size-16 text-gray-300" />;
+      title = 'Course Not Found';
+      message =
+        'The course you are looking for does not exist. Why not create your own course?';
+    }
+
+    const showUpgradeButton = isLimitReached && !isPaidUser;
+
     return (
       <>
         {modals}
         <div className="flex h-screen flex-col items-center justify-center px-4 text-center">
           {icon}
-          <h1 className="text-2xl font-bold">{title}</h1>
-          <p className="my-3 max-w-sm text-balance text-gray-500">{message}</p>
+          <h1 className="mb-2 text-2xl font-bold">{title}</h1>
+          <p className="max-w-sm text-balance text-gray-500">{message}</p>
 
-          {isLimitReached && (
-            <div className="mt-4">
-              {!isPaidUser && (
-                <button
-                  onClick={() => setShowUpgradeModal(true)}
-                  className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
+          {showUpgradeButton && (
+            <div className="my-5">
+              <button
+                onClick={() => setShowUpgradeModal(true)}
+                className="rounded-md bg-yellow-400 px-6 py-2 text-sm font-medium text-black hover:bg-yellow-500"
+              >
+                Upgrade to remove Limits
+              </button>
+
+              <p className="mt-5 text-sm text-black">
+                <a
+                  href="/ai-tutor"
+                  className="font-medium underline underline-offset-2"
                 >
-                  Upgrade to remove Limits
-                </button>
-              )}
-
-              <p className="mt-4 text-sm text-black">
-                <a href="/ai-tutor" className="underline underline-offset-2">
                   Back to AI Tutor
                 </a>
               </p>
+            </div>
+          )}
+
+          {(isNotFound || !showUpgradeButton) && (
+            <div className="my-5">
+              <a
+                href="/ai-tutor"
+                className="rounded-md bg-black px-6 py-2 text-sm font-medium text-white hover:bg-opacity-80"
+              >
+                Create a course with AI
+              </a>
             </div>
           )}
         </div>
