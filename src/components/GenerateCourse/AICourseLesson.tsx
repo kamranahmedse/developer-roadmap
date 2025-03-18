@@ -334,19 +334,44 @@ export function AICourseLesson(props: AICourseLessonProps) {
             Previous <span className="hidden lg:inline">&nbsp;Lesson</span>
           </button>
 
-          <button
-            onClick={onGoToNextLesson}
-            disabled={cantGoForward}
-            className={cn(
-              'flex items-center rounded-full px-4 py-2 disabled:opacity-50 max-lg:px-3 max-lg:py-1.5 max-lg:text-sm',
-              cantGoForward
-                ? 'cursor-not-allowed text-gray-400'
-                : 'bg-gray-800 text-white hover:bg-gray-700',
-            )}
-          >
-            Next <span className="hidden lg:inline">&nbsp;Lesson</span>
-            <ChevronRight size={16} className="ml-2" />
-          </button>
+          <div>
+            <button
+              onClick={() => {
+                if (!isLessonDone) {
+                  toggleDone(undefined, {
+                    onSuccess: () => {
+                      onGoToNextLesson();
+                    },
+                  });
+                } else {
+                  onGoToNextLesson();
+                }
+              }}
+              disabled={cantGoForward || isTogglingDone}
+              className={cn(
+                'flex items-center rounded-full px-4 py-2 disabled:opacity-50 max-lg:px-3 max-lg:py-1.5 max-lg:text-sm',
+                cantGoForward
+                  ? 'cursor-not-allowed text-gray-400'
+                  : 'bg-gray-800 text-white hover:bg-gray-700',
+              )}
+            >
+              {isTogglingDone ? (
+                <>
+                  <Loader2Icon
+                    size={16}
+                    strokeWidth={3}
+                    className="animate-spin text-white"
+                  />
+                  Please wait ...
+                </>
+              ) : (
+                <>
+                  Next <span className="hidden lg:inline">&nbsp;Lesson</span>
+                  <ChevronRight size={16} className="ml-2" />
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
