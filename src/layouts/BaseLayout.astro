@@ -15,6 +15,7 @@ import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
 import Clarity from '../components/Analytics/Clarity.astro';
 import RedditPixel from '../components/Analytics/RedditPixel.astro';
+import GoogleAd from '../components/Analytics/GoogleAd.astro';
 
 export interface Props {
   title: string;
@@ -160,6 +161,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Analytics />
     <Clarity />
     <RedditPixel />
+    <GoogleAd />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -189,6 +191,19 @@ const gaPageIdentifier = Astro.url.pathname
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
     />
+
+    <!-- /22873384501/roadmap -->
+    <div id='div-gpt-ad-1742391132948-0'>
+      <script>
+        // @ts-nocheck
+        googletag.cmd.push(function () {
+          googletag.pubads().setPrivacySettings({
+            nonPersonalizedAds: true,
+          });
+          googletag.display('div-gpt-ad-1742391132948-0');
+        });
+      </script>
+    </div>
 
     <slot name='after-footer' />
 
