@@ -185,7 +185,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
       {error && !isLoading && !isGenerating && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
           <ErrorIcon additionalClasses="h-10 w-10" />
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 mt-4">
             {error || 'Something went wrong'}
           </p>
         </div>
