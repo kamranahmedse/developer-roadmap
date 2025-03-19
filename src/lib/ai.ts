@@ -1,3 +1,5 @@
+import { nanoid } from 'nanoid';
+
 export const IS_KEY_ONLY_ROADMAP_GENERATION = false;
 
 type Lesson = string;
@@ -206,4 +208,77 @@ export async function readStream(
   onStream?.(result);
   onStreamEnd?.(result);
   reader.releaseLock();
+}
+
+export type SubTopic = {
+  id: string;
+  type: 'subtopic';
+  label: string;
+};
+
+export type Topic = {
+  id: string;
+  type: 'topic';
+  label: string;
+  children?: SubTopic[];
+};
+
+export type Label = {
+  id: string;
+  type: 'label';
+  label: string;
+};
+
+export type Title = {
+  id: string;
+  type: 'title';
+  label: string;
+};
+
+export type ResultItem = Title | Topic | Label;
+
+export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
+  const lines = data.split('\n');
+
+  const result: ResultItem[] = [];
+  let currentTopic: Topic | null = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (i === 0 && line.startsWith('#')) {
+      const title = line.replace('#', '').trim();
+      result.push({
+        id: nanoid(),
+        type: 'title',
+        label: title,
+      });
+    } else if (line.startsWith('###')) {
+      if (currentTopic) {
+        result.push(currentTopic);
+      }
+
+      const label = line.replace('###', '').trim();
+      currentTopic = {
+        id: nanoid(),
+        type: 'topic',
+        label,
+        children: [],
+      };
+    } else if (line.startsWith('- ')) {
+      if (currentTopic) {
+        const label = line.replace('-', '').trim();
+        currentTopic.children?.push({
+          id: nanoid(),
+          type: 'subtopic',
+          label,
+        });
+      }
+    }
+  }
+
+  if (currentTopic) {
+    result.push(currentTopic);
+  }
+
+  return result;
 }

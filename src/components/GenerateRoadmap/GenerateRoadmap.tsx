@@ -30,7 +30,10 @@ import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
-import { IS_KEY_ONLY_ROADMAP_GENERATION, readAIRoadmapStream } from '../../lib/ai.ts';
+import {
+  IS_KEY_ONLY_ROADMAP_GENERATION,
+  readAIRoadmapStream,
+} from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
@@ -51,6 +54,7 @@ export type RoadmapNodeDetails = {
   targetGroup?: SVGElement;
   nodeTitle?: string;
   parentTitle?: string;
+  parentId?: string;
 };
 
 export function getNodeDetails(
@@ -62,9 +66,10 @@ export function getNodeDetails(
   const nodeType = targetGroup?.dataset?.type;
   const nodeTitle = targetGroup?.dataset?.title;
   const parentTitle = targetGroup?.dataset?.parentTitle;
+  const parentId = targetGroup?.dataset?.parentId;
   if (!nodeId || !nodeType) return null;
 
-  return { nodeId, nodeType, targetGroup, nodeTitle, parentTitle };
+  return { nodeId, nodeType, targetGroup, nodeTitle, parentTitle, parentId };
 }
 
 export const allowedClickableNodeTypes = [
@@ -719,7 +724,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         </div>
         <div
           className={cn({
-            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px]  md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
+            'relative mb-20 max-h-[800px] min-h-[800px] overflow-hidden sm:max-h-[1000px] md:min-h-[1000px] lg:max-h-[1200px] lg:min-h-[1200px]':
               !isAuthenticatedUser,
           })}
         >
