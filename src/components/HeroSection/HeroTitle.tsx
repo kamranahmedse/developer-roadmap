@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { ChevronDown, ChevronsDownUp, ChevronsUpDown } from 'lucide-react';
+import { ChevronsDownUp, ChevronsUpDown } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
 
 type HeroTitleProps = {
@@ -29,7 +29,10 @@ export function HeroTitle(props: HeroTitleProps) {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <p className="flex items-center gap-0.5 text-sm text-gray-400">
+        <p
+          onClick={onToggleCollapse}
+          className="flex items-center cursor-default gap-0.5 text-sm text-gray-400"
+        >
           {!isLoading && icon}
           {isLoading && (
             <span className="mr-1.5">
