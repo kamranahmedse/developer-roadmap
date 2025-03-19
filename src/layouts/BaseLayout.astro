@@ -197,7 +197,9 @@ const gaPageIdentifier = Astro.url.pathname
       <script>
         // @ts-nocheck
         googletag.cmd.push(function () {
+          // Set non-personalized ads
           googletag.pubads().setPrivacySettings({
+            restrictDataProcessing: true,
             nonPersonalizedAds: true,
           });
           googletag.display('div-gpt-ad-1742391132948-0');
