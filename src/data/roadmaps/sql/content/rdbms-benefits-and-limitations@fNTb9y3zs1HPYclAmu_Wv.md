@@ -28,5 +28,5 @@ Here are some of the limitations of using an RDBMS:
 
 Learn more from the following resources:
 
-- [@article@Advantages and Disadvantages of DBMS](https://www.javatpoint.com/advantages-and-disadvantages-of-dbms)
+- [@article@Advantages and Disadvantages of DBMS](https://www.tpointtech.com/advantages-and-disadvantages-of-dbms)
 - [@article@ACID Transactions in Databases](https://www.databricks.com/glossary/acid-transactions)

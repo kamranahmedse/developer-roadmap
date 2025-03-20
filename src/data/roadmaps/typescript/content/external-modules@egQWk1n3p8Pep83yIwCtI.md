@@ -19,5 +19,5 @@ In this example, we use the "export" keyword in the "myModule.ts" file to export
 
 Learn more from the following links:
 
-- [@official@External Module](https://www.javatpoint.com/typescript-module)
+- [@official@External Module](https://www.tpointtech.com/typescript-module)
 - [@article@TypeScript - External Module](https://learncodeweb.com/typescript/modules-in-typescript-explain-with-an-example/)

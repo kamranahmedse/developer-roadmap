@@ -5,5 +5,5 @@ Java Generic methods and generic classes enable programmers to specify, with a s
 Visit the following resources to learn more:
 
 - [@article@Java - Generics](https://www.tutorialspoint.com/java/java_generics.htm)
-- [@article@Generics in Java](https://www.javatpoint.com/generics-in-java)
+- [@article@Generics in Java](https://www.tpointtech.com/generics-in-java)
 - [@video@Generics in Java](https://www.youtube.com/watch?v=XMvznsY02Mk)

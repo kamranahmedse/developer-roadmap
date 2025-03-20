@@ -7,4 +7,4 @@ To create package use this command -> javac -d directory javafilename
 Visit the following resources to learn more:
 
 - [@article@Packages in Java](https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html)
-- [@article@Java Package](https://www.javatpoint.com/package)
+- [@article@Java Package](https://www.tpointtech.com/package)

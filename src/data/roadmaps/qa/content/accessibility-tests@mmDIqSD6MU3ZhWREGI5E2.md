@@ -4,5 +4,5 @@ In software QA, accessibility testing is the practice of confirming that an appl
 
 Visit the following resources to learn more:
 
-- [@article@Accessibility Testing - Javatpoint](https://www.javatpoint.com/accessibility-testing)
+- [@article@Accessibility Testing - tpointtech](https://www.tpointtech.com/accessibility-testing)
 - [@feed@Explore top posts about Accessibility](https://app.daily.dev/tags/accessibility?ref=roadmapsh)

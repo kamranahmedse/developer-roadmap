@@ -20,4 +20,4 @@ gedit [filename]
 Visit the following resources to learn more: 
 
 - [@article@How to edit a file](https://www.scaler.com/topics/how-to-edit-a-file-in-linux/)
-- [@article@Linux edit file](https://www.javatpoint.com/linux-edit-file)    
+- [@article@Linux edit file](https://www.tpointtech.com/linux-edit-file)    
