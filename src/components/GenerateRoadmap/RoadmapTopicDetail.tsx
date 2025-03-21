@@ -3,10 +3,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import { Ban, Cog, Contact, FileText, X } from 'lucide-react';
+import { Ban, Contact, FileText, X } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
-import { getOpenAIKey, isLoggedIn, removeAuthToken } from '../../lib/jwt';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { cn } from '../../lib/classname';
 import { showLoginPopup } from '../../lib/popup';
 import { readAIRoadmapContentStream } from '../../lib/ai';
@@ -121,7 +121,6 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   }, []);
 
   const hasContent = topicHtml?.length > 0;
-  const openAIKey = getOpenAIKey();
 
   return (
     <div className={'relative z-[92]'}>
@@ -146,24 +145,13 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               </span>{' '}
               topics generated
             </span>
-            {!openAIKey && (
-              <button
-                className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-                onClick={onConfigureOpenAI}
-              >
-                Need to generate more?{' '}
-                <span className="font-semibold">Click here.</span>
-              </button>
-            )}
-            {openAIKey && (
-              <button
-                className="flex items-center gap-1 rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-                onClick={onConfigureOpenAI}
-              >
-                <Cog className="-mt-0.5 inline-block h-4 w-4" />
-                Configure OpenAI Key
-              </button>
-            )}
+            <button
+              className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+              onClick={onConfigureOpenAI}
+            >
+              Need to generate more?{' '}
+              <span className="font-semibold">Click here.</span>
+            </button>
           </div>
         )}
 

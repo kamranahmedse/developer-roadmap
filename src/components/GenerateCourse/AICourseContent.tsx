@@ -3,7 +3,6 @@ import {
   ChevronLeft,
   CircleAlert,
   CircleOff,
-  Loader2,
   Menu,
   Play,
   X,
@@ -11,16 +10,16 @@ import {
 import { useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
 import { cn } from '../../lib/classname';
-import { slugify } from '../../lib/slugger';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 import { AICourseLesson } from './AICourseLesson';
 import { AICourseLimit } from './AICourseLimit';
 import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
 import { AILimitsPopup } from './AILimitsPopup';
-import { RegenerateOutline } from './RegenerateOutline';
+import { AICourseOutlineView } from './AICourseOutlineView';
+import { AICourseRoadmapView } from './AICourseRoadmapView';
+import { AIRoadmapViewSwitch } from './AIRoadmapViewSwitch';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -29,6 +28,8 @@ type AICourseContentProps = {
   error?: string;
   onRegenerateOutline: (prompt?: string) => void;
 };
+
+export type AICourseViewMode = 'module' | 'outline' | 'roadmap';
 
 export function AICourseContent(props: AICourseContentProps) {
   const { course, courseSlug, isLoading, error, onRegenerateOutline } = props;
@@ -39,7 +40,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<'module' | 'outline'>('outline');
+  const [viewMode, setViewMode] = useState<AICourseViewMode>('outline');
 
   const { isPaidUser } = useIsPaidUser();
 
@@ -257,6 +258,7 @@ export function AICourseContent(props: AICourseContentProps) {
               <span className="font-medium">{totalModules} modules</span>
               <span className="text-gray-400">•</span>
               <span className="font-medium">{totalCourseLessons} lessons</span>
+
               {viewMode === 'module' && (
                 <span className="flex flex-row items-center gap-1 lg:hidden">
                   <span className="text-gray-400">•</span>
@@ -271,6 +273,7 @@ export function AICourseContent(props: AICourseContentProps) {
                   </button>
                 </span>
               )}
+
               {finishedPercentage > 0 && (
                 <>
                   <span className="text-gray-400">•</span>
@@ -290,18 +293,12 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           </div>
 
-          {viewMode === 'module' && (
-            <button
-              onClick={() => {
-                setExpandedModules({});
-                setViewMode('outline');
-              }}
-              className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
-            >
-              <BookOpenCheck size={18} className="mr-2" />
-              View Course Outline
-            </button>
-          )}
+          <AIRoadmapViewSwitch
+            viewMode={viewMode}
+            setViewMode={setViewMode}
+            isLoading={isLoading}
+            variant="text"
+          />
         </div>
       </header>
 
@@ -336,20 +333,16 @@ export function AICourseContent(props: AICourseContentProps) {
                   )}
                 ></span>
 
-                {viewMode !== 'outline' && (
-                  <button
-                    onClick={() => {
-                      setExpandedModules({});
-                      setViewMode('outline');
-                    }}
-                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
-                  >
-                    <BookOpenCheck size={14} />
-                    View Outline
-                  </button>
+                {viewMode === 'module' && (
+                  <AIRoadmapViewSwitch
+                    viewMode={viewMode}
+                    setViewMode={setViewMode}
+                    isLoading={isLoading}
+                    variant="icon"
+                  />
                 )}
 
-                {viewMode === 'outline' && (
+                {viewMode !== 'module' && (
                   <button
                     onClick={() => {
                       setExpandedModules({
@@ -399,9 +392,10 @@ export function AICourseContent(props: AICourseContentProps) {
 
         <main
           className={cn(
-            'flex-1 overflow-y-auto p-6 transition-all duration-200 ease-in-out max-lg:p-3',
+            'flex-1 overflow-y-scroll p-6 transition-all duration-200 ease-in-out max-lg:p-3',
             sidebarOpen ? 'lg:ml-0' : '',
           )}
+          key={`${courseSlug}-${viewMode}`}
         >
           {viewMode === 'module' && (
             <AICourseLesson
@@ -421,102 +415,29 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
 
           {viewMode === 'outline' && (
-            <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
-              <div
-                className={cn(
-                  'relative mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
-                  isLoading && 'striped-loader',
-                )}
-              >
-                <div>
-                  <h2 className="mb-1 text-balance text-2xl font-bold max-lg:text-lg max-lg:leading-tight">
-                    {course.title || 'Loading course ..'}
-                  </h2>
-                  <p className="text-sm capitalize text-gray-500">
-                    {course.title ? course.difficulty : 'Please wait ..'}
-                  </p>
-                </div>
-
-                {!isLoading && (
-                  <RegenerateOutline
-                    onRegenerateOutline={onRegenerateOutline}
-                  />
-                )}
-              </div>
-              {course.title ? (
-                <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">
-                  {course.modules.map((courseModule, moduleIdx) => {
-                    return (
-                      <div
-                        key={moduleIdx}
-                        className="mb-5 pb-4 last:border-0 last:pb-0 max-lg:mb-2"
-                      >
-                        <h2 className="mb-4 text-xl font-bold text-gray-800 max-lg:mb-2 max-lg:text-lg max-lg:leading-tight">
-                          {courseModule.title}
-                        </h2>
-                        <div className="divide-y divide-gray-100">
-                          {courseModule.lessons.map((lesson, lessonIdx) => {
-                            const key = `${slugify(String(moduleIdx))}-${slugify(String(lessonIdx))}`;
-                            const isCompleted = aiCourseProgress.includes(key);
-
-                            return (
-                              <div
-                                key={key}
-                                className="flex cursor-pointer items-center gap-2 px-2 py-2.5 transition-colors hover:bg-gray-100 max-lg:px-0 max-lg:py-1.5"
-                                onClick={() => {
-                                  setActiveModuleIndex(moduleIdx);
-                                  setActiveLessonIndex(lessonIdx);
-                                  setExpandedModules((prev) => {
-                                    const newState: Record<number, boolean> =
-                                      {};
-                                    course.modules.forEach((_, idx) => {
-                                      newState[idx] = false;
-                                    });
-                                    newState[moduleIdx] = true;
-                                    return newState;
-                                  });
-
-                                  setSidebarOpen(false);
-                                  setViewMode('module');
-                                }}
-                              >
-                                {!isCompleted && (
-                                  <span
-                                    className={cn(
-                                      'flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800 max-lg:size-5 max-lg:text-xs',
-                                    )}
-                                  >
-                                    {lessonIdx + 1}
-                                  </span>
-                                )}
-
-                                {isCompleted && (
-                                  <CheckIcon additionalClasses="size-6 flex-shrink-0 text-green-500" />
-                                )}
-
-                                <p className="flex-1 truncate text-base text-gray-800 max-lg:text-sm">
-                                  {lesson.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
-                                </p>
-                                <span className="text-sm font-medium text-gray-700 max-lg:hidden">
-                                  {isCompleted ? 'View' : 'Start'} →
-                                </span>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              ) : (
-                <div className="flex h-64 items-center justify-center">
-                  <Loader2 size={36} className="animate-spin text-gray-300" />
-                </div>
-              )}
-            </div>
+            <AICourseOutlineView
+              course={course}
+              isLoading={isLoading}
+              onRegenerateOutline={onRegenerateOutline}
+              setActiveModuleIndex={setActiveModuleIndex}
+              setActiveLessonIndex={setActiveLessonIndex}
+              setSidebarOpen={setSidebarOpen}
+              setViewMode={setViewMode}
+              setExpandedModules={setExpandedModules}
+            />
           )}
 
-          <div className="mb-10 mt-5 mx-auto text-center text-sm text-gray-400">
+          {viewMode === 'roadmap' && !isLoading && (
+            <AICourseRoadmapView
+              courseSlug={courseSlug!}
+              setActiveModuleIndex={setActiveModuleIndex}
+              setActiveLessonIndex={setActiveLessonIndex}
+              setViewMode={setViewMode}
+              setExpandedModules={setExpandedModules}
+            />
+          )}
+
+          <div className="mx-auto mb-10 mt-5 text-center text-sm text-gray-400">
             AI can make mistakes, check imporant info.
           </div>
         </main>
