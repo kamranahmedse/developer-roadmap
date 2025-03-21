@@ -6,6 +6,6 @@ In hibernate framework, we have Transaction interface that defines the unit of w
 
 For more information, visit the following links:
 
-- [@article@Hibernate Transaction Management Example](https://www.javatpoint.com/hibernate-transaction-management-example)
+- [@article@Hibernate Transaction Management Example](https://www.tpointtech.com/hibernate-transaction-management-example)
 - [@article@Hibernate Transaction Management](https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html)
 - [@article@Hibernate Transaction](https://www.w3schools.blog/hibernate-transaction-management)

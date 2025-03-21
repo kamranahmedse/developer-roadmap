@@ -6,7 +6,7 @@ Visit the following resources to learn more:
 
 - [@official@Spring Data JPA](https://spring.io/projects/spring-data-jpa)
 - [@article@Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
-- [@article@Spring Data JPA Tutorial](https://www.javatpoint.com/spring-and-jpa-integration)
+- [@article@Spring Data JPA Tutorial](https://www.tpointtech.com/spring-and-jpa-integration)
 - [@video@Spring Data JPA Tutorial](https://youtu.be/XszpXoII9Sg)
 - [@video@Spring Boot Tutorial - Spring Data JPA](https://youtu.be/8SGI_XS5OPw)
 - [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

@@ -6,5 +6,5 @@ Visit the following links for more resources:
 
 - [@article@Spring Dependency Injection](https://www.baeldung.com/spring-dependency-injection)
 - [@article@Dependency Injection Using Spring Boot](https://medium.com/edureka/what-is-dependency-injection-5006b53af782)
-- [@article@Dependency Injection in Spring](https://www.javatpoint.com/dependency-injection-in-spring)
+- [@article@Dependency Injection in Spring](https://www.tpointtech.com/dependency-injection-in-spring)
 - [@feed@Explore top posts about Dependency Injection](https://app.daily.dev/tags/dependency-injection?ref=roadmapsh)

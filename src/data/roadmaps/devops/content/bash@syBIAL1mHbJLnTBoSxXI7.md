@@ -5,7 +5,7 @@ Bash (Bourne Again Shell) is a powerful Unix shell and command language interpre
 Visit the following resources to learn more:
 
 - [@article@Interactive Shell Scripting Tutorial](https://www.learnshell.org/en/Welcome)
-- [@article@Bash Scripting Tutorial](https://www.javatpoint.com/bash)
+- [@article@Bash Scripting Tutorial](https://www.tpointtech.com/bash)
 - [@video@Bash in 100 Seconds](https://www.youtube.com/watch?v=I4EWvMFj37g)
 - [@course@Bash Scripting Tutorial for Beginners](https://www.youtube.com/watch?v=tK9Oc6AEnR4)
 - [@feed@Explore top posts about Bash](https://app.daily.dev/tags/bash?ref=roadmapsh)
