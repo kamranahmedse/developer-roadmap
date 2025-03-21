@@ -89,6 +89,7 @@ const page = Astro.url;
       }
     }
 
+    googletag.pubads().enableSingleRequest();
     googletag.enableServices();
 
     googletag.pubads().addEventListener('slotRenderEnded', function (e) {
