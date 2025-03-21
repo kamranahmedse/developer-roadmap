@@ -6,7 +6,7 @@ Node.js provides a set of asynchronous I/O primitives in its standard library th
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://nodejs.org/en/about/)
+- [@official@Node.js](https://nodejs.org/en/about/)
 - [@official@Node.js - Getting Started](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [@article@Node.js - Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
 - [@video@What is Node.js?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
