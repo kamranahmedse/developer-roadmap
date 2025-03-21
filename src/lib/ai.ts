@@ -54,6 +54,7 @@ export function generateAiCourseStructure(
   return {
     title,
     modules,
+    done: [],
   };
 }
 
@@ -245,14 +246,7 @@ export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (i === 0 && line.startsWith('#')) {
-      const title = line.replace('#', '').trim();
-      result.push({
-        id: nanoid(),
-        type: 'title',
-        label: title,
-      });
-    } else if (line.startsWith('###')) {
+    if (line.startsWith('###')) {
       if (currentTopic) {
         result.push(currentTopic);
       }
@@ -264,7 +258,20 @@ export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
         label,
         children: [],
       };
-    } else if (line.startsWith('- ')) {
+    } else if (line.startsWith('##')) {
+      result.push({
+        id: nanoid(),
+        type: 'label',
+        label: line.replace('##', '').trim(),
+      });
+    } else if (i === 0 && line.startsWith('#')) {
+      const title = line.replace('#', '').trim();
+      result.push({
+        id: nanoid(),
+        type: 'title',
+        label: title,
+      });
+    } else if (line.startsWith('-')) {
       if (currentTopic) {
         const label = line.replace('-', '').trim();
         currentTopic.children?.push({

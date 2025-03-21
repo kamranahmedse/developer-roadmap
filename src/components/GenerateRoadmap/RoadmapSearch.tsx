@@ -1,10 +1,9 @@
 import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { useEffect, useState } from 'react';
-import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
+import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
-import { OpenAISettings } from './OpenAISettings.tsx';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 
@@ -33,12 +32,10 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const [openAPIKey, setOpenAPIKey] = useState('');
   const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
 
   useEffect(() => {
-    setOpenAPIKey(getOpenAIKey() || '');
     setIsAuthenticatedUser(isLoggedIn());
   }, []);
 
@@ -49,7 +46,6 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
       {isConfiguring && (
         <IncreaseRoadmapLimit
           onClose={() => {
-            setOpenAPIKey(getOpenAIKey()!);
             setIsConfiguring(false);
             loadAIRoadmapLimit();
           }}
@@ -104,10 +100,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             disabled={
               isLoadingResults ||
               (isAuthenticatedUser &&
-                (!limit ||
-                  !roadmapTerm ||
-                  limitUsed >= limit ||
-                  (isKeyOnly && !openAPIKey)))
+                (!limit || !roadmapTerm || limitUsed >= limit || isKeyOnly))
             }
           >
             {isLoadingResults && (
@@ -202,31 +195,16 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
       )}
       {isKeyOnly && isAuthenticatedUser && (
         <div className="mx-auto mt-12 flex max-w-[450px] flex-col items-center gap-4">
-          {!openAPIKey && (
-            <>
-              <p className={'text-center text-red-500'}>
-                We have hit the limit for AI roadmap generation. Please try
-                again later or{' '}
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="font-semibold text-purple-600 underline underline-offset-2"
-                >
-                  add your own OpenAI API key.
-                </button>
-              </p>
-            </>
-          )}
-          {openAPIKey && (
-            <p className={'text-center text-gray-500'}>
-              You have added your own OpenAI API key.{' '}
-              <button
-                onClick={() => setIsConfiguring(true)}
-                className="font-semibold text-purple-600 underline underline-offset-2"
-              >
-                Configure it here if you want.
-              </button>
-            </p>
-          )}
+          <p className={'text-center text-red-500'}>
+            We have hit the limit for AI roadmap generation. Please try again
+            again later or{' '}
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="font-semibold text-purple-600 underline underline-offset-2"
+            >
+              get more credits.
+            </button>
+          </p>
 
           <p className="flex flex-col gap-2 text-center text-gray-500 sm:flex-row">
             <a
@@ -259,25 +237,13 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
           {isAuthenticatedUser && (
             <p className="flex items-center text-sm">
-              {!openAPIKey && (
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                >
-                  Need to generate more?{' '}
-                  <span className="font-semibold">Click here.</span>
-                </button>
-              )}
-
-              {openAPIKey && (
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                >
-                  <Cog size={15} />
-                  Configure OpenAI key
-                </button>
-              )}
+              <button
+                onClick={() => setIsConfiguring(true)}
+                className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+              >
+                Need to generate more?{' '}
+                <span className="font-semibold">Click here.</span>
+              </button>
             </p>
           )}
         </div>
