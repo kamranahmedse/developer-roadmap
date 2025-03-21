@@ -90,5 +90,24 @@ const page = Astro.url;
     }
 
     googletag.enableServices();
+
+    googletag.pubads().addEventListener('slotRenderEnded', function (e) {
+      if (!e.isEmpty) {
+        return;
+      }
+
+      const slotId = e.slot.getSlotElementId();
+      if (!slotId) {
+        return;
+      }
+
+      // If empty, hide the ad slot after a small delay.
+      setTimeout(() => {
+        const adContainer = document.getElementById(slotId);
+        if (adContainer) {
+          adContainer.style.display = 'none';
+        }
+      }, 1800);
+    });
   });
 </script>
