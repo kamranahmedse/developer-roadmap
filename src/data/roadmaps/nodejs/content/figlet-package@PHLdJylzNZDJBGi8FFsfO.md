@@ -4,4 +4,4 @@ This package aims to fully implement the FIGfont spec in JavaScript, which repre
 
 Visit the following resources to learn more:
 
-- [@opensource@GitHub Repository](https://github.com/patorjk/figlet.js)
+- [@opensource@figlet](https://github.com/patorjk/figlet.js)

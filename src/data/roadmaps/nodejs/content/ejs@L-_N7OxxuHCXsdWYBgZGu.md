@@ -5,9 +5,9 @@ In simple words, the EJS template engine helps to easily embed JavaScript into y
 
 Visit the following resources to learn more:
 
-- [@official@EJS Website](https://ejs.co/)
-- [@official@EJS Official Documentation](https://ejs.co/#docs)
-- [@official@EJS Official Package](https://www.npmjs.com/package/ejs)
+- [@official@EJS](https://ejs.co/)
+- [@official@EJS Documentation](https://ejs.co/#docs)
+- [@official@EJS Package](https://www.npmjs.com/package/ejs)
 - [@article@Try EJS Online](https://ionicabizau.github.io/ejs-playground/)
 - [@article@How to use EJS](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application)
 - [@article@Step-by-Step EJS Guide](https://codeforgeek.com/ejs-template-engine-in-nodejs/)

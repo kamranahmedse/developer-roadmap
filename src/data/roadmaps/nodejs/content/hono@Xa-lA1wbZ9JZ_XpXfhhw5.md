@@ -4,5 +4,5 @@ Hono is a lightweight, simple, and fast web framework for Cloudflare Workers, De
 
 Visit the following resources to learn more:
 
-- [@article@Hono Official Documentations](https://hono.dev/docs/)
+- [@official@Hono Documentation](https://hono.dev/docs/)
 - [@article@Build a web application with Hono](https://blog.logrocket.com/build-web-application-hono/)

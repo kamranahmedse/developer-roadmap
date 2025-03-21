@@ -4,5 +4,5 @@ PM2 is a production process manager for Node.js applications with a built-in loa
 
 Visit the following resources to learn more:
 
-- [@article@Pm2 Website](https://pm2.keymetrics.io/)
-- [@article@Pm2 Official Documentations](https://pm2.keymetrics.io/docs/usage/quick-start/)
+- [@official@Pm2](https://pm2.keymetrics.io/)
+- [@official@Pm2 Documentations](https://pm2.keymetrics.io/docs/usage/quick-start/)

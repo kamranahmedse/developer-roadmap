@@ -4,5 +4,5 @@ Vitest is a Vite-native unit testing framework that's Jest-compatible. Vitest is
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://vitest.dev/)
-- [@article@Vitest Documentation](https://vitest.dev/guide/)
+- [@official@Vitest](https://vitest.dev/)
+- [@official@Vitest Documentation](https://vitest.dev/guide/)

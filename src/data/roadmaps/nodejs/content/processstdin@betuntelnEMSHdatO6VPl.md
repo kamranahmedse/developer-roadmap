@@ -4,5 +4,5 @@ The `process.stdin` is a standard Readable stream which listens for user input a
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://nodejs.org/api/process.html#processstdin)
+- [@official@process.stdin](https://nodejs.org/api/process.html#processstdin)
 - [@article@Node.js Process stdin & stdout](https://nodecli.com/node-stdin-stdout)
