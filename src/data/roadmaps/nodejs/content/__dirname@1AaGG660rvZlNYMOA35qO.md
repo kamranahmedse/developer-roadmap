@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Official Website](https://nodejs.org/docs/latest/api/modules.html#__dirname)
 - [@article@How to use \_\_dirname](https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname)
+- [@article@Node.js: Using __dirname and __filename with ES Modules](https://www.kindacode.com/article/node-js-using-__dirname-and-__filename-with-es-modules)
