@@ -258,6 +258,7 @@ export function AICourseContent(props: AICourseContentProps) {
               <span className="font-medium">{totalModules} modules</span>
               <span className="text-gray-400">•</span>
               <span className="font-medium">{totalCourseLessons} lessons</span>
+
               {viewMode === 'module' && (
                 <span className="flex flex-row items-center gap-1 lg:hidden">
                   <span className="text-gray-400">•</span>
@@ -272,6 +273,7 @@ export function AICourseContent(props: AICourseContentProps) {
                   </button>
                 </span>
               )}
+
               {finishedPercentage > 0 && (
                 <>
                   <span className="text-gray-400">•</span>
@@ -291,18 +293,12 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           </div>
 
-          {viewMode === 'module' && (
-            <button
-              onClick={() => {
-                setExpandedModules({});
-                setViewMode('outline');
-              }}
-              className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
-            >
-              <BookOpenCheck size={18} className="mr-2" />
-              View Course Outline
-            </button>
-          )}
+          <AIRoadmapViewSwitch
+            viewMode={viewMode}
+            setViewMode={setViewMode}
+            isLoading={isLoading}
+            variant="text"
+          />
         </div>
       </header>
 
@@ -337,20 +333,16 @@ export function AICourseContent(props: AICourseContentProps) {
                   )}
                 ></span>
 
-                {viewMode !== 'outline' && (
-                  <button
-                    onClick={() => {
-                      setExpandedModules({});
-                      setViewMode('outline');
-                    }}
-                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
-                  >
-                    <BookOpenCheck size={14} />
-                    View Outline
-                  </button>
+                {viewMode === 'module' && (
+                  <AIRoadmapViewSwitch
+                    viewMode={viewMode}
+                    setViewMode={setViewMode}
+                    isLoading={isLoading}
+                    variant="icon"
+                  />
                 )}
 
-                {viewMode === 'outline' && (
+                {viewMode !== 'module' && (
                   <button
                     onClick={() => {
                       setExpandedModules({
@@ -419,14 +411,6 @@ export function AICourseContent(props: AICourseContentProps) {
               onGoToNextLesson={goToNextLesson}
               key={`${courseSlug}-${activeModuleIndex}-${activeLessonIndex}`}
               onUpgrade={() => setShowUpgradeModal(true)}
-            />
-          )}
-
-          {(viewMode === 'outline' || viewMode === 'roadmap') && (
-            <AIRoadmapViewSwitch
-              viewMode={viewMode}
-              setViewMode={setViewMode}
-              isLoading={isLoading}
             />
           )}
 

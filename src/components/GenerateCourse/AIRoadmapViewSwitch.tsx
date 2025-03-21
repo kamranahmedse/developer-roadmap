@@ -1,3 +1,4 @@
+import { BookOpenCheckIcon, SignpostIcon, type LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { AICourseViewMode } from './AICourseContent';
 
@@ -5,35 +6,76 @@ type AIRoadmapViewSwitchProps = {
   viewMode: AICourseViewMode;
   setViewMode: (mode: AICourseViewMode) => void;
   isLoading: boolean;
+  variant?: 'icon' | 'text';
 };
 
 export function AIRoadmapViewSwitch(props: AIRoadmapViewSwitchProps) {
-  const { viewMode, setViewMode, isLoading } = props;
+  const { viewMode, setViewMode, isLoading, variant = 'icon' } = props;
 
   return (
-    <div className="sticky top-0 z-10 mx-auto mb-5 flex justify-center">
-      <div className="grid min-w-[200px] grid-cols-2 gap-0.5 rounded-xl border border-gray-200 bg-white p-0.5 shadow-sm">
-        <button
-          className={cn(
-            'rounded-lg px-2 py-1 text-sm font-medium disabled:cursor-not-allowed',
-            viewMode === 'outline' && 'bg-gray-100 text-gray-800',
-          )}
-          onClick={() => setViewMode('outline')}
-          disabled={isLoading}
-        >
-          Outline
-        </button>
-        <button
-          className={cn(
-            'rounded-lg px-2 py-1 text-sm font-medium disabled:cursor-not-allowed',
-            viewMode === 'roadmap' && 'bg-gray-100 text-gray-800',
-          )}
-          onClick={() => setViewMode('roadmap')}
-          disabled={isLoading}
-        >
-          Roadmap
-        </button>
-      </div>
+    <div
+      className={cn(
+        'grid shrink-0 grid-cols-2 gap-0.5 rounded-md border border-gray-300 bg-white p-0.5 shadow-sm',
+      )}
+    >
+      <SwitchButton
+        onClick={() => setViewMode('outline')}
+        isActive={viewMode === 'outline'}
+        disabled={isLoading}
+        variant={variant}
+        icon={BookOpenCheckIcon}
+        label="Outline"
+      />
+
+      <SwitchButton
+        onClick={() => setViewMode('roadmap')}
+        isActive={viewMode === 'roadmap'}
+        disabled={isLoading}
+        variant={variant}
+        icon={SignpostIcon}
+        label="Roadmap"
+      />
     </div>
+  );
+}
+
+type SwitchButtonProps = {
+  onClick: () => void;
+  isActive: boolean;
+  disabled: boolean;
+  variant?: 'icon' | 'text';
+  icon: LucideIcon;
+  label: string;
+};
+
+export function SwitchButton(props: SwitchButtonProps) {
+  const {
+    onClick,
+    isActive,
+    disabled,
+    variant = 'icon',
+    icon: Icon,
+    label,
+  } = props;
+
+  return (
+    <button
+      className={cn(
+        'flex items-center justify-center gap-1.5 rounded text-sm hover:bg-gray-100 disabled:cursor-not-allowed',
+        isActive && 'bg-gray-100 text-gray-800',
+        variant === 'text' ? 'px-2 py-1.5' : 'p-[5px]',
+      )}
+      onClick={onClick}
+      disabled={disabled}
+    >
+      <Icon
+        className={cn(
+          'size-4',
+          variant === 'icon' && 'h-3 w-3',
+          isActive && 'text-gray-800',
+        )}
+      />
+      {variant === 'text' && label}
+    </button>
   );
 }
