@@ -5,6 +5,6 @@ AI has given rise to a collection of AI powered development tools of various dif
 Learn more from the following resources:
 
 - [@official@v0 Website](https://v0.dev)
-- [@official@Aider - AI Pair Programming in Terminal](https://github.com/Aider-AI/aider)
+- [@official@Aider - AI Pair Programming in Terminal](https://aider.chat/)
 - [@official@Replit AI](https://replit.com/ai)
 - [@official@Pieces](https://pieces.app)

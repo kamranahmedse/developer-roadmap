@@ -5,4 +5,4 @@ Prompt injection attacks are a type of security vulnerability where malicious in
 Learn more from the following resources:
 
 - [@article@Prompt Injection in LLMs](https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection)
-- [@article@What is a prompt injection attack?](https://www.wiz.io/academy/prompt-injection-attack)
+- [@article@What is a Prompt Injection Attack?](https://www.wiz.io/academy/prompt-injection-attack)

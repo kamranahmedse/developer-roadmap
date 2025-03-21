@@ -4,4 +4,4 @@ The OpenAI API provides access to powerful AI models like GPT, Codex, DALL-E, an
 
 Learn more from the following resources:
 
-- [@official@Open AI API](https://openai.com/api/)
+- [@official@OpenAI API](https://openai.com/api/)

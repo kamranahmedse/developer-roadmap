@@ -4,5 +4,5 @@ Replicate is a platform that allows developers to run machine learning models in
 
 Learn more from the following resources:
 
-- [@official@Replicate Website](https://replicate.com/)
+- [@official@Replicate](https://replicate.com/)
 - [@video@Replicate.com Beginners Tutorial](https://www.youtube.com/watch?v=y0_GE5ErqY8)
