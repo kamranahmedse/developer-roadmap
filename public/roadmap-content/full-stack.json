@@ -504,7 +504,7 @@
   },
   "cUOfvOlQ_0Uu1VX3i67kJ": {
     "title": "Basic AWS Services",
-    "description": "AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPN, S3, Route 53, and SES.\n\nHere are some of the resources to get you started:",
+    "description": "AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPC, S3, Route 53, and SES.\n\nHere are some of the resources to get you started:",
     "links": [
       {
         "title": "Up and Running with AWS VPC",
