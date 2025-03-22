@@ -2,6 +2,9 @@
 
 NativeDriver is an implementation of the WebDriver API which drives the UI of a native application rather than a web application. It extends the WebDriver API in a few key places, and re-interprets the existing API for native applications.
 
+- SQLite
+  - [sqlite](https://www.npmjs.com/package/sqlite)
+  - [native NodeJS v22 LTS SQLite](https://nodejs.org/docs/latest-v22.x/api/sqlite.html)  
 - MySQL:
   - [mysql](https://www.npmjs.com/package/mysql)
   - [mysql2](https://www.npmjs.com/package/mysql2)
