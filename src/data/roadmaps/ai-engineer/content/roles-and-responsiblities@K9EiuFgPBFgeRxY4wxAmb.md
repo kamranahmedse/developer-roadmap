@@ -5,4 +5,3 @@ AI Engineers are responsible for designing, developing, and deploying AI systems
 Learn more from the following resources:
 
 - [@article@AI Engineer Job Description](https://resources.workable.com/ai-engineer-job-description)
-- [@article@How To Become an AI Engineer (Plus Job Duties and Skills)](https://www.indeed.com/career-advice/finding-a-job/ai-engineer)
