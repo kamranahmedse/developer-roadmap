@@ -5,4 +5,4 @@
 Learn more from the following resources:
 
 - [@article@What is Data Lineage?](https://www.ibm.com/topics/data-lineage)
-- [@article@What is a feature store](https://www.snowflake.com/guides/what-feature-store-machine-learning/)
+- [@article@What is a Feature Store](https://www.snowflake.com/guides/what-feature-store-machine-learning/)
