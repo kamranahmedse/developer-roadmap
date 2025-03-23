@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { cn } from '../../lib/classname';
 import { HeroTitle } from './HeroTitle';
 
@@ -47,8 +47,6 @@ export function HeroItemsGroup(props: HeroItemsGroupProps) {
         {
           'py-4': !isLoadingOrCollapsedOrEmpty,
           'py-4 ': isLoadingOrCollapsedOrEmpty,
-          'opacity-50 transition-opacity hover:opacity-100':
-            isCollapsed && !isLoading,
         },
         className,
       )}

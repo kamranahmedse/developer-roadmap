@@ -1,9 +1,9 @@
 import Cookies from 'js-cookie';
 import { httpGet, httpPost } from './http';
 import { TOKEN_COOKIE_NAME, getUser } from './jwt';
+import { roadmapProgress, totalRoadmapNodes } from '../stores/roadmap.ts';
 // @ts-ignore
 import Element = astroHTML.JSX.Element;
-import { roadmapProgress, totalRoadmapNodes } from '../stores/roadmap.ts';
 
 export type ResourceType = 'roadmap' | 'best-practice';
 export type ResourceProgressType =
@@ -114,7 +114,8 @@ export function clearMigratedRoadmapProgress(
     'sql',
     'system-design',
     'aspnet-core',
-    'java'
+    'java',
+    'cpp',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
