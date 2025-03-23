@@ -6,6 +6,6 @@ Example - `$ node inspect myscript.js`
 
 Visit the following resources to learn more:
 
-- [@official@Official Docs](https://nodejs.org/api/debugger.html)
+- [@official@Debugger](https://nodejs.org/api/debugger.html)
 - [@official@Inspect Docs](https://nodejs.org/en/learn/getting-started/debugging)
 - [@article@Freecodecamp.org - Debugging](https://www.freecodecamp.org/news/how-to-debug-node-js-applications/)
