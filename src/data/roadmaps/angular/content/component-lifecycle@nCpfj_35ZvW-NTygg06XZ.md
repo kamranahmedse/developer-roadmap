@@ -12,4 +12,5 @@ Visit the following resources to learn more:
 
 - [@official@Component Lifecycle](https://angular.dev/guide/components/lifecycle)
 - [@article@The life cycle hooks of angular - Blog ](https://blog.logrocket.com/angular-lifecycle-hooks/)
-- [@feed@Explore top posts about React Hooks](https://app.daily.dev/tags/react-hooks?ref=roadmapsh)
+- [@article@Angular Lifecycle Hooks — Everything you need to know](https://medium.com/@sinanozturk/angular-component-lifecycle-hooks-2f600c48dff3)
+- [@feed@Explore top posts about Angular LifeCycle Hooks](https://dev.to/search?utf8=%E2%9C%93&q=angular+hook)
