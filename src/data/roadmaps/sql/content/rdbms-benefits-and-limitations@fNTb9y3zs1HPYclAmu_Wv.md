@@ -28,4 +28,4 @@ Here are some of the limitations of using an RDBMS:
 
 Learn more from the following resources:
 
-- [@article@ACID Transactions in Databases](https://www.databricks.com/glossary/acid-transactions)
+- [@article@Advantages and Disadvantages of DBMS](https://cloud.google.com/learn/what-is-a-relational-database)
