@@ -4,4 +4,5 @@ Once data is embedded, a classification algorithm, such as a neural network or a
 
 Learn more from the following resources:
 
+- [@article@What Is Data Classification?](https://www.paloaltonetworks.com/cyberpedia/data-classification)
 - [@video@Text Embeddings, Classification, and Semantic Search (w/ Python Code)](https://www.youtube.com/watch?v=sNa_uiqSlJo)
