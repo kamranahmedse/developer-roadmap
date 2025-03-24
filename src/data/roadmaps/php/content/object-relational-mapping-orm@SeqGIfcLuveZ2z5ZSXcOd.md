@@ -11,4 +11,4 @@ $entityManager->flush();
 
 Visit the following resources to learn more:
 
-- [@article@What is an Object Relational Mapping (ORM)](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools)
+- [@article@What is an Object Relational Mapping (ORM)](https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one#answer-1279678)
