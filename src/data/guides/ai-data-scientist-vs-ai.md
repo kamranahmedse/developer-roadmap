@@ -29,7 +29,7 @@ Data science focuses on extracting meaningful insights from data. As a data scie
 
 In contrast, artificial intelligence is about developing intelligent systems that can perform tasks that typically require human intelligence. These tasks include pattern recognition, predictive analysis, and language translation. You'll design algorithms to learn and solve problems without constant human intervention.
 
-If you don't know much about data science and AI, don't worry about it. Check out our beginner's guide on data science and AI to get a good overview of both fields. In this guide, I'll show you what each field is about, the skills you need, and the opportunities they offer. By the end, you'll know which career path suits you best based on your interests, skills, and goals.
+If you don't know much about data science and AI, don't worry about it. Check out our beginner's guide on [data science](https://roadmap.sh/ai-data-scientist) and [AI](https://roadmap.sh/ai-engineer) to get a good overview of both fields. In this guide, I'll show you what each field is about, the skills you need, and the opportunities they offer. By the end, you'll know which career path suits you best based on your interests, skills, and goals.
 
 ## Data science vs. AI: What are the key differences?
 
@@ -75,21 +75,21 @@ On the flip side, AI involves various responsibilities like designing, training,
 
 ## The tools you'll use
 
-One important thing to consider when choosing between data science and AI is the tools you'll use. In data science, you'll work with programming languages like Python, R, and SQL to extract insights and analyze data. You'll use Python libraries like Pandas to manipulate data and NumPy to make math calculations. 
+One important thing to consider when choosing between data science and AI is the tools you'll use. In data science, you'll work with programming languages like [Python](https://roadmap.sh/python), R, and [SQL](https://roadmap.sh/sql) to extract insights and analyze data. You'll use Python libraries like Pandas to manipulate data and NumPy to make math calculations. 
 
 As a data scientist, you'll also use big data technologies like Hadoop to work with large volumes of data. Machine learning libraries like TensorFlow will help you develop advanced machine learning models. Also, you'll use data visualization tools like Tableau and Power BI when sharing your results.
 
 ![Data science vs. artificial intelligence: tools](https://assets.roadmap.sh/guest/tools-for-data-science-and-artificial-intelligence-q6i4v.png)
 
-On the flip side, artificial intelligence needs more advanced tools to work its magic. You'll use programming languages like Java and Python, like in data science, but you'll focus on AI frameworks like PyTorch to train deep learning models, especially neural networks. These frameworks can do various machine learning tasks, such as supervised learning (e.g., image classification), unsupervised learning (e.g., anomaly detection), and reinforcement learning (e.g., game playing) when needed. 
+On the flip side, artificial intelligence needs more advanced tools to work its magic. You'll use programming languages like [Java](https://roadmap.sh/java) and [Python](https://roadmap.sh/python), like in data science, but you'll focus on AI frameworks like PyTorch to train deep learning models, especially neural networks. These frameworks can do various machine learning tasks, such as supervised learning (e.g., image classification), unsupervised learning (e.g., anomaly detection), and reinforcement learning (e.g., game playing) when needed. 
 
-Tools like OpenCV will help with computer vision tasks, and libraries like NLTK and spaCy will help with natural language processing. As an AI engineer, you'll also work with specialized hardware like graphics processing units (GPUs) and tensor processing units (TPUs). These tools provide the computational power to train large neural networks well. Finally, you'll work with cloud platforms like AWS and Google Cloud AI Platform to deploy and manage your AI models.
+Tools like OpenCV will help with computer vision tasks, and libraries like NLTK and spaCy will help with natural language processing. As an AI engineer, you'll also work with specialized hardware like graphics processing units (GPUs) and tensor processing units (TPUs). These tools provide the computational power to train large neural networks well. Finally, you'll work with cloud platforms like [AWS](https://roadmap.sh/aws) and Google Cloud AI Platform to deploy and manage your AI models.
 
 ## How do the skills you need differ?
 
 Now that you know the differences between data science and artificial intelligence, let's look at the skills you need. As a data scientist, it's important to build a solid understanding in the following areas:
 
-- Proficient in programming skills like Python and SQL for data analysis and manipulation.
+- Proficient in programming skills like [Python](https://roadmap.sh/python) and [SQL](https://roadmap.sh/sql) for data analysis and manipulation.
 - Strong understanding of statistics and mathematics to analyze and interpret data.
 - Good in data wrangling for cleaning and organizing datasets before analysis.
 - Proficient in data mining to extract useful patterns and insights from large datasets.
@@ -102,7 +102,7 @@ Now that you know the differences between data science and artificial intelligen
 In contrast, as an AI engineer, you'll create complex AI systems using the following skills:
 
 - In-depth knowledge of advanced machine learning concepts, including neural networks, to create models for tasks like image recognition or natural language processing.
-- Proficiency in programming skills (Python, C++, Java) for creating complex algorithms.
+- Proficiency in programming skills ([Python](https://roadmap.sh/python), [C++](https://roadmap.sh/c-plus-plus), [Java](https://roadmap.sh/java)) for creating complex algorithms.
 - Understanding mathematics, e.g., linear algebra and calculus for algorithm development.
 - Experience with frameworks like TensorFlow and PyTorch for building and deploying AI models.
 - Knowledge of computer vision and natural language processing to create intelligent systems that understand and interact with data.
@@ -113,9 +113,9 @@ A very good educational foundation is necessary to start a career as a data scie
 
 ![Data science vs. artificial intelligence: Educational path](https://assets.roadmap.sh/guest/educational-pathway-to-data-science-and-ai-careers-clcgu.png)
 
-On the other hand, artificial intelligence often requires higher educational qualifications, such as a bachelor's, master's, or Ph.D., due to its technically complex and research-oriented nature. You'll first need a bachelor's degree in computer science, data science, or artificial intelligence to start a career in this field. This will give you a good understanding of machine learning, mathematics, and statistics. You'll go into detail on topics like algebra and calculus and learn languages like Python and Java. Some AI engineers may pursue a master's degree if they aim for senior or research positions, but it's not always necessary.
+On the other hand, artificial intelligence often requires higher educational qualifications, such as a bachelor's, master's, or Ph.D., due to its technically complex and research-oriented nature. You'll first need a bachelor's degree in computer science, data science, or artificial intelligence to start a career in this field. This will give you a good understanding of machine learning, mathematics, and statistics. You'll go into detail on topics like algebra and calculus and learn languages like [Python](https://roadmap.sh/python) and [Java](https://roadmap.sh/java). Some AI engineers may pursue a master's degree if they aim for senior or research positions, but it's not always necessary.
 
-Also, you don't always have to attend a university to learn. Some people who want to become data scientists and AI engineers go to boot camps, take online courses, or get certifications instead. Platforms like roadmap.sh offer detailed data science and AI courses to help you learn. The platforms are more flexible and focus on practical projects, so you can create a portfolio to showcase your skills.
+Also, you don't always have to attend a university to learn. Some people who want to become data scientists and AI engineers go to boot camps, take online courses, or get certifications instead. Platforms like [roadmap.sh](https://roadmap.sh) offer detailed [data science](https://roadmap.sh/ai-data-scientist) and [AI courses](https://roadmap.sh/ai-engineer) to help you learn. The platforms are more flexible and focus on practical projects, so you can create a portfolio to showcase your skills.
 
 ## Which field offers better career prospects?
 
@@ -123,11 +123,11 @@ Data science and artificial intelligence both look promising in terms of job opp
 
 ![Data science vs. artificial intelligence: career path](https://assets.roadmap.sh/guest/career-paths-and-industries-for-data-science-and-ai-i333u.png)
 
-Data science is a recognized field with many uses in industries like finance, healthcare, and marketing. If you're interested in data science, you could work as a data analyst, business analyst, or data scientist. According to Indeed, the average salary for a data scientist in the United States (USA) across all industries is $125,495.
+Data science is a recognized field with many uses in industries like finance, healthcare, and marketing. If you're interested in data science, you could work as a [data analyst](https://roadmap.sh/data-analyst), business analyst, or data scientist. According to [Indeed](https://www.indeed.com/career/data-scientist/salaries?from=top_sb), the average salary for a data scientist in the United States (USA) across all industries is $125,495.
 
 ![Average salary of a data scientist in USA](https://assets.roadmap.sh/guest/average-salary-of-a-data-scientist-in-usa-vevcq.png)
 
-On the other hand, artificial intelligence is in high demand in industries like robotics, automotive, and tech startups. If you're interested in artificial intelligence, you can work as a machine learning or AI engineer. According to Indeed, engineers working in machine learning in the USA make an average of $162,735 annually.
+On the other hand, artificial intelligence is in high demand in industries like robotics, automotive, and tech startups. If you're interested in artificial intelligence, you can work as a machine learning or AI engineer. [According to Indeed](https://www.indeed.com/career/machine-learning-engineer/salaries?from=top_sb), engineers working in machine learning in the USA make an average of $162,735 annually.
 
 ![Average salary of an engineer in machine learning](https://assets.roadmap.sh/guest/average-salary-of-an-engineer-in-machine-learning-ncqpb.png)
 
@@ -137,7 +137,7 @@ While salary is important when choosing between data science and artificial inte
 
 Yes, data science and artificial intelligence overlap. Data science is like the backbone of AI. It supplies the data and insights needed to train and improve artificial intelligence models.
 
-Many skills overlap between data science and artificial intelligence. For instance, being good at coding in Python, R, and SQL is important in both fields. Both fields also need machine learning, statistics, and data visualization knowledge. Switching from data science to AI or vice versa is straightforward because they share many similarities in skills and tools.
+Many skills overlap between data science and artificial intelligence. For instance, being good at coding in [Python](https://roadmap.sh/python), R, and [SQL](https://roadmap.sh/sql) is important in both fields. Both fields also need machine learning, statistics, and data visualization knowledge. Switching from data science to AI or vice versa is straightforward because they share many similarities in skills and tools.
 
 ## Will AI replace data science?
 
@@ -157,7 +157,7 @@ On the other hand, artificial intelligence might be better if you're into techno
 
 ### Connect with others
 
-Talk to some data science and artificial intelligence professionals and get their advice. Start by attending conferences or joining online communities to connect with others. 
+Talk to some data science and artificial intelligence professionals and get their advice. Start by attending conferences or joining [online communities](https://roadmap.sh/discord) to connect with others. 
 
 You can ask questions, share your thoughts, and learn from others as a community member. When you chat with other professionals, ask them what they enjoy about their work, what their challenges are, and if they have any tips for newcomers. Listening to their stories can give you a better idea of what each job is really like.
 
@@ -171,4 +171,4 @@ Artificial intelligence and data science have changed how businesses work and ma
 
 It's not about figuring out which field is better than the other—it's about choosing the one that fits your goals, interests, and skills. So relax and take some time to figure out what you're really into before making any big decisions.
 
-For continuous learning, visit the roadmap.sh data science and artificial intelligence guides. Both guides have all the resources you need to start your journey as a data scientist or AI engineer.
+For continuous learning, visit the roadmap.sh [data science](https://roadmap.sh/ai-data-scientist) and [artificial intelligence](https://roadmap.sh/ai-engineer) guides. Both guides have all the resources you need to start your journey as a data scientist or AI engineer.
