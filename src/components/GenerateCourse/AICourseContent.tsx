@@ -517,7 +517,7 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
 
           <div className="mb-10 mt-5 mx-auto text-center text-sm text-gray-400">
-            AI can make mistakes, check imporant info.
+            AI can make mistakes, check important info.
           </div>
         </main>
       </div>
