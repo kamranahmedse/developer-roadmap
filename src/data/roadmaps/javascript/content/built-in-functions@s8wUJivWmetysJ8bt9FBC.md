@@ -1,8 +1,10 @@
 # Built in functions
 
-- A JavaScript **method** is a property containing a **function definition** . In other words, when the data stored on an object is a function we call that a method.
-- To differentiate between properties and methods, we can think of it this way: **A property is what an object has, while a method is what an object does.**
-- Since JavaScript methods are actions that can be performed on objects, we first need to have objects to start with. There are several objects built into JavaScript which we can use.
+- JavaScript provides a variety of built-in functions that help perform common tasks efficiently. These functions are available globally or within specific objects and do not require explicit definition.
+
+- For example, functions like parseInt(), setTimeout(), and Math.random() are built-in and can be used directly. Additionally, JavaScript objects such as Array, String, and Date come with their own built-in methods, allowing powerful operations on data structures.
+
+- Understanding built-in functions helps streamline development by leveraging JavaScript’s core capabilities without reinventing the wheel.
 
 Visit the following resources to learn more:
 
