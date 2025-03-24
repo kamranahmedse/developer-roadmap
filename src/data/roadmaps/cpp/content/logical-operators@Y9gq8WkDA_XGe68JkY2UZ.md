@@ -13,7 +13,7 @@ C++ provides the following logical operators:
    ```cpp
    int a = 5, b = 10;
    if (a > 0 && b > 0) {
-       std::cout << "Both values are positive." << '\n';
+       std::cout << "Both values are positive.\n";
    }
    ```
 - **OR Operator (||)**
@@ -25,7 +25,7 @@ C++ provides the following logical operators:
    ```cpp
    int a = 5, b = -10;
    if (a > 0 || b > 0) {
-       std::cout << "At least one value is positive." << '\n';
+       std::cout << "At least one value is positive.\n";
    }
    ```
 
@@ -38,7 +38,7 @@ C++ provides the following logical operators:
    ```cpp
    int a = 5;
    if (!(a < 0)) {
-       std::cout << "The value is not negative." << '\n';
+       std::cout << "The value is not negative.\n";
    }
    ```
 
@@ -48,7 +48,7 @@ Using these operators, you can create more complex logical expressions, for exam
 int a = 5, b = -10, c = 15;
 
 if (a > 0 && (b > 0 || c > 0)) {
-    std::cout << "At least two values are positive." << '\n';
+    std::cout << "At least two values are positive.\n";
 }
 ```
 

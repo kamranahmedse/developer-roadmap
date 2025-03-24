@@ -10,7 +10,7 @@ The first program that most people learn to write in any programming language is
 #include <iostream>
 
 int main() {
-  std::cout << "Hello, World!" << '\n';
+  std::cout << "Hello, World!\n";
   return 0;
 }
 ```
@@ -40,7 +40,7 @@ int main() {
 To output text to the console, we use the `std::cout` object and the insertion operator `<<`. In the "Hello, World!" example, we used the following line to print "Hello, World!" to the console:
 
 ```cpp
-std::cout << "Hello, World!" << '\n';
+std::cout << "Hello, World!\n";
 ```
 - `std`: This is the namespace where C++ standard library entities (classes and functions) reside. It stands for "standard"
 - `std::cout`: The standard "character output" stream that writes to the console
