@@ -13,7 +13,7 @@ To create a new thread, include the `<thread>` header file and create an instanc
 #include <thread>
 
 void my_function() {
-    std::cout << "This function is executing in a separate thread" << '\n';
+    std::cout << "This function is executing in a separate thread\n";
 }
 
 int main() {

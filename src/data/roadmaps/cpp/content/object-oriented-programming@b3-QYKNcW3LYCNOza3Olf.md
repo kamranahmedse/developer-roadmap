@@ -13,7 +13,7 @@ public:
     int age;
 
     void bark() {
-        std::cout << name << " barks!" << '\n';
+        std::cout << name << " barks!\n";
     }
 };
 ```
@@ -47,7 +47,7 @@ public:
     }
 
     void bark() {
-        std::cout << name << " barks!" << '\n';
+        std::cout << name << " barks!\n";
     }
 };
 ```
@@ -62,14 +62,14 @@ Inheritance is the concept of deriving new classes from existing ones, which ena
 class Animal {
 public:
     void breathe() {
-        std::cout << "I can breathe" << '\n';
+        std::cout << "I can breathe\n";
     }
 };
 
 class Dog : public Animal {
 public:
     void bark() {
-        std::cout << "Dog barks!" << '\n';
+        std::cout << "Dog barks!\n";
     }
 };
 ```
@@ -90,21 +90,21 @@ Polymorphism allows you to use a single interface to represent different types. 
 class Animal {
 public:
     virtual void makeSound() {
-        std::cout << "The Animal makes a sound" << '\n';
+        std::cout << "The Animal makes a sound\n";
     }
 };
 
 class Dog : public Animal {
 public:
     void makeSound() override {
-        std::cout << "Dog barks!" << '\n';
+        std::cout << "Dog barks!\n";
     }
 };
 
 class Cat : public Animal {
 public:
     void makeSound() override {
-        std::cout << "Cat meows!" << '\n';
+        std::cout << "Cat meows!\n";
     }
 };
 ```

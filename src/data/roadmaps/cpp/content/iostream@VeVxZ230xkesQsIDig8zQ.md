@@ -35,8 +35,8 @@ int main() {
 #include <iostream>
 
 int main() {
-    std::cerr << "An error occurred." << '\n';
-    std::clog << "Logging information." << '\n';
+    std::cerr << "An error occurred.\n";
+    std::clog << "Logging information.\n";
     return 0;
 }
 ```

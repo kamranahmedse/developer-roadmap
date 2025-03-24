@@ -10,14 +10,14 @@ Here is a basic example of how `dynamic_cast` can be used:
 class BaseClass {
    public:
     virtual void display() {
-        std::cout << "BaseClass" << '\n';
+        std::cout << "BaseClass\n";
     }
 };
 
 class DerivedClass : public BaseClass {
    public:
     void display() {
-        std::cout << "DerivedClass" << '\n';
+        std::cout << "DerivedClass\n";
     }
 };
 

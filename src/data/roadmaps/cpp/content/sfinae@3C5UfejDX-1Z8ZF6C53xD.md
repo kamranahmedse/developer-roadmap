@@ -15,14 +15,14 @@ Here's an example that demonstrates SFINAE in action:
 template <typename T, typename = void>
 struct foo_impl {
     void operator()(T t) {
-        std::cout << "Called when T is not arithmetic" << '\n';
+        std::cout << "Called when T is not arithmetic\n";
     }
 };
 
 template <typename T>
 struct foo_impl<T, std::enable_if_t<std::is_arithmetic<T>::value>> {
     void operator()(T t) {
-        std::cout << "Called when T is arithmetic" << '\n';
+        std::cout << "Called when T is arithmetic\n";
     }
 };
 

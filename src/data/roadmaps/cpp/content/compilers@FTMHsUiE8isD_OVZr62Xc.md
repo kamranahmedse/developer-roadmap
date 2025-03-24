@@ -22,7 +22,7 @@ Let's say you have a simple C++ program saved in a file called `hello.cpp`:
 #include <iostream>
 
 int main() {
-  std::cout << "Hello, World!" << '\n';
+  std::cout << "Hello, World!\n";
   return 0;
 }
 ```

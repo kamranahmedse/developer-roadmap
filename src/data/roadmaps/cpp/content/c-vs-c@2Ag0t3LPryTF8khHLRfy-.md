@@ -34,7 +34,7 @@ int main() {
 class HelloWorld {
 public:
     void printHello() {
-        std::cout << "Hello, World!" << '\n';
+        std::cout << "Hello, World!\n";
     }
 };
 
