@@ -5,7 +5,7 @@ authorId: ekene
 excludedBySlug: '/ai-data-scientist/vs-business-analytics'
 seo:
   title: "Data Science vs Business Analytics: How I'd Choose My Path"
-  description: "I once struggled to choose between data science and business analytics. If you're in the same boat, I'll guide you to find the right fit.."
+  description: "I once struggled to choose between data science and business analytics. If you're in the same boat, I'll guide you to find the right fit."
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-and-business-analytics-zxubk.jpg'
 isNew: true
 type: 'textual'
