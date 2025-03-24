@@ -18,7 +18,7 @@ async function getSVG(name: string) {
     throw new Error(`${filepath} not found`);
   }
 
-  const root = parse(files[filepath].default as string);
+  const root = parse((files[filepath] as any).default as string);
 
   const svg = root.querySelector('svg');
 
