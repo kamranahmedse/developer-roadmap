@@ -8,7 +8,7 @@ seo:
   description: 'Wondering which language is right for you? Explore our comprehensive Java vs Python guide to find the best option for your career.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/java-vs-python-xuk2b.jpg'
 relatedTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-17
 sitemap:

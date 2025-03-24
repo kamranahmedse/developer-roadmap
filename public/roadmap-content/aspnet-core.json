@@ -573,8 +573,29 @@
   },
   "R7Qk5hsEIl9dspQXdaJAJ": {
     "title": "StyleCop Rules",
-    "description": "",
-    "links": []
+    "description": "StyleCop is a tool used for developers to standardize their code and ensure they all follow the same syntax principles. With StyleCop, one standard can be defined in a `stylecop.json` file and shared across your team so that each member has the same guidelines when formatting your code. Beyond a single project, StyleCop can also be added as an extension, so all of the projects on your IDE follow the same formatting rules, this is especially useful if your organization follows the same rule standards for all projects.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "StyleCop GitHub official page",
+        "url": "https://github.com/StyleCop/StyleCop",
+        "type": "opensource"
+      },
+      {
+        "title": "StyeleCop Analyzers, a more modern version of StyleCop",
+        "url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+        "type": "opensource"
+      },
+      {
+        "title": "StyleCop: A Detailed Guide to Starting and Using It",
+        "url": "https://blog.submain.com/stylecop-detailed-guide/",
+        "type": "article"
+      },
+      {
+        "title": "The StyleCop setup and Advantages",
+        "url": "https://www.youtube.com/watch?v=dmpOKmz3lPw",
+        "type": "video"
+      }
+    ]
   },
   "ipABerBcM9zCte9pYaIse": {
     "title": "Minimal APIs",
@@ -2311,8 +2332,8 @@
       }
     ]
   },
-  "azuer-service-bus@gBuaVZfqJ0-g21sKohQtx.md": {
-    "title": "Azuer Service Bus",
+  "azure-service-bus@gBuaVZfqJ0-g21sKohQtx.md": {
+    "title": "Azure Service Bus",
     "description": "",
     "links": []
   },

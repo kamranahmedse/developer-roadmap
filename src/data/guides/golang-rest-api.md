@@ -8,7 +8,7 @@ seo:
   description: 'Want to build a REST API in Golang? Follow our detailed tutorial to set up, code, and deploy your API with best practices and clear examples.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/build-a-rest-api-in-golang-k3zuq.jpg'
 relatedGuidesTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-17
 sitemap:

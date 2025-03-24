@@ -1,6 +1,6 @@
 # Basic AWS Services
 
-AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPN, S3, Route 53, and SES.
+AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPC, S3, Route 53, and SES.
 
 Here are some of the resources to get you started:
 

@@ -4,5 +4,5 @@ The `setImmediate` function delays the execution of a function to be called afte
 
 Visit the following resources to learn more:
 
-- [@article@Understanding setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate)
 - [@official@Understanding setImmediate](https://nodejs.org/en/learn/asynchronous-work/understanding-setimmediate)
+- [@article@Understanding setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate)

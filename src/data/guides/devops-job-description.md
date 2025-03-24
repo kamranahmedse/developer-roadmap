@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-engineer-job-description-0xjml.jpg'
 relatedTitle: 'Other Guides'
 relatedGuidesId: 'devops'
-isNew: true
+isNew: false
 type: 'textual'
 date: '2025-01-17'
 sitemap:

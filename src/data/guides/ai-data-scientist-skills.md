@@ -1,13 +1,13 @@
 ---
-title: 'Top 11 Data Sience Skills to Master in @currentYear@'
+title: 'Top 11 Data Science Skills to Master in @currentYear@'
 description: 'Looking to excel in data science? Learn the must-have skills for @currentYear@ with our expert guide and advance your data science career.'
 authorId: fernando
 excludedBySlug: '/ai-data-scientist/skills'
 seo:
-  title: 'Top 11 Data Sience Skills to Master in @currentYear@'
+  title: 'Top 11 Data Science Skills to Master in @currentYear@'
   description: 'Looking to excel in data science? Learn the must-have skills for @currentYear@ with our expert guide and advance your data science career.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-skills-to-master-q36qn.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-28
 sitemap:

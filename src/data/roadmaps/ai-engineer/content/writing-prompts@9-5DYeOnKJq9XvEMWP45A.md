@@ -5,5 +5,5 @@ Prompts for the OpenAI API are carefully crafted inputs designed to guide the la
 Learn more from the following resources:
 
 - [@roadmap@Visit Dedicated Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
-- [@article@How to write AI prompts](https://www.descript.com/blog/article/how-to-write-ai-prompts)
+- [@article@How to Write AI prompts](https://www.descript.com/blog/article/how-to-write-ai-prompts)
 - [@article@Prompt Engineering Guide](https://www.promptingguide.ai/)

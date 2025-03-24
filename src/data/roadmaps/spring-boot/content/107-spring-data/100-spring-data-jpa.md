@@ -6,5 +6,4 @@ For more resources, visit the following links:
 
 - [@official@Spring Data JPA](https://spring.io/projects/spring-data-jpa)
 - [@article@Introduction to Spring Data JPA](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
-- [@article@Spring Data JPA Tutorial](https://www.javatpoint.com/spring-and-jpa-integration)
 - [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)
