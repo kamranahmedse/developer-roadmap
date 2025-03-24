@@ -234,5 +234,5 @@ roadmap.sh offers step-by-step guidance on [how to become a DevOps engineer](htt
 
 - Keep track of your progress and also share it on your roadmap.sh profile.
 - Collaborate on other official roadmaps.
-- Draw your roadmap, either as an individual learner or for [Dev](https://roadmap.sh/teams) [t](https://roadmap.sh/teams)[eams](https://roadmap.sh/teams).
-- [Generate new roadmaps with AI](https://roadmap.sh/ai).
+- Draw your [roadmap](https://draw.roadmap.sh/), either as an individual learner or for [Dev](https://roadmap.sh/teams) [team](https://roadmap.sh/teams).
+- Generate new roadmaps with [AI](https://roadmap.sh/ai).

@@ -23,7 +23,7 @@ tags:
 
 ![The best backend developer skills to learn.](https://assets.roadmap.sh/guest/backend-developer-skills-ece68.jpg)
 
-Whether your goal is to become a backend developer or to stay relevant as one, the goal itself requires adopting an eternal student mindset. The ever-evolving web development space demands continuous learning, regardless of the programming language you use. New frameworks, libraries, and methodologies emerge regularly, offering different solutions to old problems. To remain relevant as a [backend developer](/backend), you’ll have to stay updated by honing your core skills.
+Whether your goal is to become a backend developer or to stay relevant as one, the goal itself requires adopting an eternal student mindset. The ever-evolving web development space demands continuous learning, regardless of the programming language you use. New frameworks, libraries, and methodologies emerge regularly, offering different solutions to old problems. To remain relevant as a [backend developer](https://roadmap.sh/backend), you’ll have to stay updated by honing your core skills.
 
 In this article, we’ll cover the following set of backend developer skills we recommend you aim for:
 
@@ -69,7 +69,7 @@ The most common names you should look out for are:
 
 While there are other options, the ones mentioned above, from the backend point of view, are some of the most relevant languages to pay attention to. Here are the top 10 most popular ones amongst professional developers (screenshot taken from SO’s survey of 2023):
 
-![Stackoverflow Survey Result](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1709057007054.png)
+![StackOverflow Survey Result](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1709057007054.png)
 
 ### Keeping an eye on the rising stars
 
@@ -146,7 +146,7 @@ These are the standard structured databases (A.K.A relational databases) where y
 
 ### NoSQL databases
 
-As the name implies, these are not your standard SQL databases; in fact, within this category, there are columnar databases, document-based ones (such as MongoDB), key-value-based ones (like Redis), and more. They don’t use predefined data structures, giving you more flexibility and control over what you can store and how you store it. Backend developers will deal with only a handful of these, as there are many different sub-types, and more are created every year.
+As the name implies, these are not your standard SQL databases; in fact, within this category, there are columnar databases, document-based ones (such as [MongoDB](https://roadmap.sh/mongodb)), key-value-based ones (like [Redis](https://roadmap.sh/redis)), and more. They don’t use predefined data structures, giving you more flexibility and control over what you can store and how you store it. Backend developers will deal with only a handful of these, as there are many different sub-types, and more are created every year.
 
 Some examples of these databases are:
 
@@ -270,6 +270,6 @@ To summarize, if you expect to become a backend developer or to grow in the area
 - CI/CD and DevOps are practices you’ll be involved with, either directly or indirectly, so learn about them.
 - Soft skills are just as important as technical skills if you expect to grow in your career.
 
-That said, do not take this list as the ultimate roadmap but rather as a starting point. If you’re willing to take your backend developer career to the next level, push yourself out of your comfort zone and pursue the skills listed here and the ones listed in this detailed [backend development roadmap](https://roadmap.sh/backend).
+That said, do not take this list as the ultimate roadmap but rather as a starting point. If you’re willing to take your backend developer career to the next level, push yourself out of your comfort zone and pursue the skills listed here and the ones listed in this detailed [backend roadmap](https://roadmap.sh/backend).
 
 Remember, constant learning is the only absolute truth in the software development world (this is true for backend developers, too). If you keep your skillset updated with the latest trends, you’ll remain adaptable and effective as a backend developer.

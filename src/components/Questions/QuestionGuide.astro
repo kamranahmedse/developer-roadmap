@@ -149,6 +149,11 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
           </div>
         ))
       }
+      {questionGroup.ending && (
+        <div class='mb-5'>
+          <div set:html={markdownToHtml(questionGroup.ending, false)} />
+        </div>
+      )}
     </MarkdownFile>
   </div>
 </article>

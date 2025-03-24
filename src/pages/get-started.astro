@@ -40,6 +40,7 @@ import {
 } from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 ---
 
 <BaseLayout
@@ -283,11 +284,14 @@ import { TipItem } from '../components/GetStarted/TipItem';
       description='Learn all you need to know to become a DevOps Engineer.'
     />
 
-    <RoadmapCard
-      icon={Cloud}
-      title='AWS'
-      link='/aws'
-      description='Learn all you need to know to become an AWS Engineer.'
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'AWS', link: '/aws' },
+        { title: 'Cloudflare', link: '/cloudflare' },
+      ]}
+      description='or perhaps you want to learn AWS or Cloudflare?'
+      secondaryRoadmaps={[{ title: 'Terraform', link: '/terraform' }]}
+      secondaryDescription='Or learn to automate your infrastructure using Terraform?'
     />
 
     <RoadmapMultiCard
@@ -295,9 +299,8 @@ import { TipItem } from '../components/GetStarted/TipItem';
         { title: 'Docker', link: '/docker' },
         { title: 'Kubernetes', link: '/kubernetes' },
         { title: 'Linux', link: '/linux' },
-        { title: 'Terraform', link: '/terraform' },
       ]}
-      description='or perhaps you want to learn Docker, Kubernetes, Terraform or Linux?'
+      description='or perhaps you want to learn Docker, Kubernetes or Linux?'
       secondaryRoadmaps={[
         { title: 'Python', link: '/python' },
         { title: 'Go', link: '/golang' },
@@ -508,4 +511,5 @@ import { TipItem } from '../components/GetStarted/TipItem';
       </p>
     </div>
   </div>
+  <ChangelogBanner slot='changelog-banner' />
 </BaseLayout>

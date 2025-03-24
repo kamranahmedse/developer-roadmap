@@ -251,11 +251,6 @@
         "title": "What is the Relational Model?",
         "url": "https://www.postgresql.org/docs/7.1/relmodel-oper.html",
         "type": "article"
-      },
-      {
-        "title": "The Relational Model",
-        "url": "https://www.geeksforgeeks.org/relational-model-in-dbms/",
-        "type": "article"
       }
     ]
   },
@@ -583,7 +578,7 @@
     "links": [
       {
         "title": "pg_ctlcluster",
-        "url": "https://www.postgresql.org/docs/current/pgctlcluster.html",
+        "url": "https://manpages.ubuntu.com/manpages/focal/man1/pg_ctlcluster.1.html",
         "type": "article"
       }
     ]
@@ -1075,7 +1070,7 @@
     ]
   },
   "S20aJB-VuSpXYyd0-0S8c": {
-    "title": "Object Priviliges",
+    "title": "Object Privileges",
     "description": "Object privileges in PostgreSQL are the permissions given to different user roles to access or modify database objects like tables, views, sequences, and functions. Ensuring proper object privileges is crucial for maintaining a secure and well-functioning database.\n\nLearn more from the following resources:",
     "links": [
       {
@@ -1117,7 +1112,7 @@
     ]
   },
   "t18XjeHP4uRyERdqhHpl5": {
-    "title": "Default Priviliges",
+    "title": "Default Privileges",
     "description": "PostgreSQL allows you to define object privileges for various types of database objects. These privileges determine if a user can access and manipulate objects like tables, views, sequences, or functions. In this section, we will focus on understanding default privileges in PostgreSQL.\n\nLearn more from the following resources:",
     "links": [
       {

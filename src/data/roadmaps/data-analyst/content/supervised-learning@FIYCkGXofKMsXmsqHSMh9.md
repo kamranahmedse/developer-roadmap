@@ -4,5 +4,5 @@ Supervised machine learning forms an integral part of the toolset for a Data Ana
 
 Learn more from the following resources:
 
-- [@article@What is supervised learning?](https://cloud.google.com/discover/what-is-supervised-learning)
+- [@article@What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
 - [@article@Supervised Machine Learning](https://www.datacamp.com/blog/supervised-machine-learning)

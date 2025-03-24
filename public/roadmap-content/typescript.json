@@ -652,14 +652,8 @@
   },
   "lvtTSHH9yBTCiLng8btnI": {
     "title": "Hybrid Types",
-    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };\n    \n\nLearn more from the following links:",
-    "links": [
-      {
-        "title": "Geeksforgeeks.org - Hybrid Types",
-        "url": "https://www.geeksforgeeks.org/what-are-hybrid-types-in-typescript/#:~:text=Hybrid%20types%20are%20a%20combination,properties%20like%20a%20regular%20object.",
-        "type": "article"
-      }
-    ]
+    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };",
+    "links": []
   },
   "ib0jfZzukYOZ42AdJqt_W": {
     "title": "Classes",
@@ -799,11 +793,6 @@
       {
         "title": "TypeScript Utility Types Guide",
         "url": "https://camchenry.com/blog/typescript-utility-types",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Utility Types: Key Concepts And Best Practices",
-        "url": "https://marketsplash.com/tutorials/typescript/typescript-utility-types/",
         "type": "article"
       }
     ]

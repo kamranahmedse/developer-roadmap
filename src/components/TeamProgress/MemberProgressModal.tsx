@@ -1,7 +1,8 @@
+import '../FrameRenderer/FrameRenderer.css';
+import '../EditorRoadmap/EditorRoadmapRenderer.css';
 import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { Spinner } from '../ReactIcons/Spinner';
-import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
@@ -18,6 +19,9 @@ import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
 import { replaceChildren } from '../../lib/dom.ts';
 import { XIcon } from 'lucide-react';
+import type { PageType } from '../CommandMenu/CommandMenu.tsx';
+import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { getResourceMeta } from '../../lib/roadmap.ts';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -56,6 +60,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     useState<MemberProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
+  const [renderer, setRenderer] = useState<PageType['renderer']>('balsamiq');
 
   let resourceJsonUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
@@ -88,14 +93,25 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   async function renderResource(jsonUrl: string) {
+    const page = await getResourceMeta(resourceType, resourceId);
+    if (!page) {
+      toast.error('Resource not found');
+      return;
+    }
+
+    const renderer = page.renderer || 'balsamiq';
+    setRenderer(renderer);
+
     const res = await fetch(jsonUrl, {});
     const json = await res.json();
-    const svg: SVGElement | null = await wireframeJSONToSVG(json, {
-      fontURL: '/fonts/balsamiq.woff2',
-    });
+    const svg =
+      renderer === 'editor'
+        ? await renderFlowJSON(json as any)
+        : await wireframeJSONToSVG(json, {
+            fontURL: '/fonts/balsamiq.woff2',
+          });
 
     replaceChildren(containerEl.current!, svg);
-    // containerEl.current?.replaceChildren(svg);
   }
 
   useKeydown('Escape', () => {
@@ -136,10 +152,10 @@ export function MemberProgressModal(props: ProgressMapProps) {
           skipped = [],
         } = memberProgress;
 
-        done.forEach((id: string) => renderTopicProgress(id, 'done'));
-        learning.forEach((id: string) => renderTopicProgress(id, 'learning'));
-        skipped.forEach((id: string) => renderTopicProgress(id, 'skipped'));
-        removed.forEach((id: string) => renderTopicProgress(id, 'removed'));
+        done.forEach((id) => renderTopicProgress(id, 'done'));
+        learning.forEach((id) => renderTopicProgress(id, 'learning'));
+        skipped.forEach((id) => renderTopicProgress(id, 'skipped'));
+        removed.forEach((id) => renderTopicProgress(id, 'removed'));
       })
       .catch((err) => {
         console.error(err);
@@ -262,7 +278,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   return (
     <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
-        id={'customized-roadmap'}
+        id={renderer === 'editor' ? undefined : 'customized-roadmap'}
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div

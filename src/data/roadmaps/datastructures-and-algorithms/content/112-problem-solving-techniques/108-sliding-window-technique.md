@@ -4,6 +4,5 @@ The **Sliding Window Technique** is an algorithmic paradigm that manages a subse
 
 Learn more from the following links:
 
-- [@article@Sliding Window Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
 - [@article@Mastering Sliding Window Techniques](https://medium.com/@rishu__2701/mastering-sliding-window-techniques-48f819194fd7)
 - [@video@Sliding window technique](https://www.youtube.com/watch?v=p-ss2JNynmw)

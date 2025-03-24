@@ -5,4 +5,3 @@
 Visit the following resources to learn more:
 
 - [@article@MCTS Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search/)
-- [@article@Monte Carlo Tree Search](https://www.geeksforgeeks.org/ml-monte-carlo-tree-search-mcts/)

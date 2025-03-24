@@ -10,8 +10,27 @@ import {
 } from '../../lib/browser.ts';
 import { RoadmapCard } from './RoadmapCard.tsx';
 import { httpGet } from '../../lib/http.ts';
-import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps.tsx';
 import { isLoggedIn } from '../../lib/jwt.ts';
+import type { AllowedMemberRoles } from '../ShareOptions/ShareTeamMemberList.tsx';
+
+export type UserProgressResponse = {
+  resourceId: string;
+  resourceType: 'roadmap' | 'best-practice';
+  resourceTitle: string;
+  isFavorite: boolean;
+  done: number;
+  learning: number;
+  skipped: number;
+  total: number;
+  updatedAt: Date;
+  isCustomResource: boolean;
+  roadmapSlug?: string;
+  team?: {
+    name: string;
+    id: string;
+    role: AllowedMemberRoles;
+  };
+}[];
 
 const groupNames = [
   'Absolute Beginners',
@@ -235,6 +254,12 @@ const groups: GroupType[] = [
       {
         title: 'AWS',
         link: '/aws',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Cloudflare',
+        link: '/cloudflare',
         type: 'skill',
         otherGroups: ['Web Development'],
       },

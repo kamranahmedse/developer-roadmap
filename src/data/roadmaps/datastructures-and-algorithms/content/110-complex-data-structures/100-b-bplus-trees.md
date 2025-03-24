@@ -4,6 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@Introduction of B Tree](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
-- [@article@Introduction of B+ Tree](https://www.geeksforgeeks.org/introduction-of-b-tree/)
 - [@video@B Trees and B+ Trees. How they are useful in Databases](https://www.youtube.com/watch?v=aZjYr87r1b8)

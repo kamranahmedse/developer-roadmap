@@ -57,7 +57,7 @@ Key components of this culture include shared responsibility, transparency, and 
 
 ![Continuous Integration and Continuous Deployment](https://assets.roadmap.sh/guest/continous-development-vs-continuous-integration-l2fak.png)
 
-Continuous Integration (CI) and Continuous Deployment (CD) are central to DevOps principles. CI is the practice of frequently integrating code changes into a shared repository, ensuring that new code is automatically tested and validated. This practice helps catch bugs early, reducing the risk of introducing issues into the main codebase. CI allows devs and ops teams to work more efficiently, improving the overall quality of the software.
+Continuous Integration (CI) and Continuous Deployment (CD) are central to DevOps principles. CI is the practice of frequently integrating code changes into a shared repository, ensuring that new code is [automatically tested](https://roadmap.sh/devops/test-automation) and validated. This practice helps catch bugs early, reducing the risk of introducing issues into the main codebase. CI allows devs and ops teams to work more efficiently, improving the overall quality of the software.
 
 Continuous Deployment, on the other hand, takes things a step further by automatically deploying code changes to production once they pass the CI tests. This ensures that new features and bug fixes are delivered to users as quickly as possible. Together, CI and CD form a pipeline that streamlines the software development lifecycle, from code commit to production deployment in seconds (or in some cases, minutes).
 
@@ -139,7 +139,7 @@ Key tools for implementing GitOps include Argo CD and Flux. These tools help you
 
 ## 9\. Continuous Learning and Improvement
 
-![Continious Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
+![Continuous Learning and Improvement](https://assets.roadmap.sh/guest/learn-improve-4fzcr.png)
 
 In general the world of tech is constantly evolving and changing and continuous learning and improvement are essential practices for staying ahead and relevant.
 

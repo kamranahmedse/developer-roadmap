@@ -11,6 +11,14 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh/',
+  vite: {
+    server: {
+      allowedHosts: [
+        'roadmap.sh',
+        'port3k.kamranahmed.info',
+      ],
+    },
+  },
   markdown: {
     shikiConfig: {
       theme: 'dracula',

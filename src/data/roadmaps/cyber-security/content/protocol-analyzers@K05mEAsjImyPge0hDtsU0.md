@@ -4,5 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@What is a protocol analyzer?](https://www.geeksforgeeks.org/what-is-protocol-analyzer/)
 - [@video@Protocol Analyzers](https://www.youtube.com/watch?v=hTMhlB-o0Ow)

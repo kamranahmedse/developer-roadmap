@@ -1,20 +1,17 @@
+import { ArrowUpRight, ThumbsDown, ThumbsUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
-import { ModalLoader } from '../UserProgress/ModalLoader';
-import { Modal } from '../Modal';
-import { httpGet, httpPost } from '../../lib/http';
-import {
-  submittedAlternatives,
-  type AllowedVoteType,
-} from './ListProjectSolutions';
 import { getRelativeTimeString } from '../../lib/date';
-import { ArrowUpRight, ThumbsDown, ThumbsUp, Trophy } from 'lucide-react';
-import { VoteButton } from './VoteButton';
-import { GitHubIcon } from '../ReactIcons/GitHubIcon';
+import { httpGet, httpPost } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { pageProgressMessage } from '../../stores/page';
-import { useToast } from '../../hooks/use-toast';
+import { Modal } from '../Modal';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon';
+import { ModalLoader } from '../UserProgress/ModalLoader';
+import { type AllowedVoteType } from './ListProjectSolutions';
+import { VoteButton } from './VoteButton';
 
 type UserProjectSolutionResponse = {
   id?: string;
@@ -135,8 +132,12 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
       bodyClassName={'h-auto'}
     >
       <div className="relative p-6">
-          <h1 className="text-2xl text-balance mb-1 font-bold text-gray-900">{projectTitle}</h1>
-          <p className="text-sm text-balance text-gray-600">{projectDescription}</p>
+        <h1 className="mb-1 text-balance text-2xl font-bold text-gray-900">
+          {projectTitle}
+        </h1>
+        <p className="text-balance text-sm text-gray-600">
+          {projectDescription}
+        </p>
 
         <div className="my-5 rounded-lg bg-gray-100 p-4">
           <div className="flex items-center gap-3">
@@ -150,7 +151,9 @@ export function ProjectSolutionModal(props: ProjectSolutionModalProps) {
               className="h-12 w-12 rounded-full border-2 border-white shadow-md"
             />
             <div>
-              <h2 className="text-lg font-semibold text-gray-900">{solution?.user.name}'s Solution</h2>
+              <h2 className="text-lg font-semibold text-gray-900">
+                {solution?.user.name}'s Solution
+              </h2>
               <p className="text-sm text-gray-600">
                 Submitted their solution{' '}
                 {getRelativeTimeString(solution?.submittedAt!)}

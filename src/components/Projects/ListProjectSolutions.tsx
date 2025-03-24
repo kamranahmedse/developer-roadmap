@@ -16,6 +16,8 @@ import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
 import type { ProjectFrontmatter } from '../../lib/project.ts';
 import { ProjectSolutionModal } from './ProjectSolutionModal.tsx';
+import { SortProjects } from './SortProjects.tsx';
+import { ProjectSolutionRow } from './ProjectSolutionRow';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -57,41 +59,19 @@ type ListProjectSolutionsResponse = {
 type QueryParams = {
   p?: string;
   l?: string;
+  s?: string;
 };
 
 type PageState = {
   currentPage: number;
   language: string;
+  sort: string;
 };
 
 type ListProjectSolutionsProps = {
   project: ProjectFrontmatter;
   projectId: string;
 };
-
-export const submittedAlternatives = [
-  'submitted their solution',
-  'got it done',
-  'submitted their take',
-  'finished the project',
-  'submitted their work',
-  'completed the project',
-  'got it done',
-  'delivered their project',
-  'handed in their solution',
-  'provided their deliverables',
-  'submitted their approach',
-  'sent in their project',
-  'presented their take',
-  'shared their completed task',
-  'submitted their approach',
-  'completed it',
-  'finalized their solution',
-  'delivered their approach',
-  'turned in their project',
-  'submitted their final draft',
-  'delivered their solution',
-];
 
 export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   const { projectId, project: projectData } = props;
@@ -100,6 +80,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
   const [pageState, setPageState] = useState<PageState>({
     currentPage: 0,
     language: '',
+    sort: 'rating',
   });
 
   const [isLoading, setIsLoading] = useState(true);
@@ -108,12 +89,17 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     ListProjectSolutionsResponse['data'][number] | null
   >(null);
 
-  const loadSolutions = async (page = 1, language: string = '') => {
+  const loadSolutions = async (
+    page = 1,
+    language: string = '',
+    sort: string = 'rating',
+  ) => {
     const { response, error } = await httpGet<ListProjectSolutionsResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-project-solutions/${projectId}`,
       {
         currPage: page,
         ...(language ? { languages: language } : {}),
+        sort,
       },
     );
 
@@ -178,6 +164,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
     setPageState({
       currentPage: +(queryParams.p || '1'),
       language: queryParams.l || '',
+      sort: queryParams.s || 'rating',
     });
   }, []);
 
@@ -187,17 +174,27 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       return;
     }
 
-    if (pageState.currentPage !== 1 || pageState.language !== '') {
+    if (
+      pageState.currentPage !== 1 ||
+      pageState.language !== '' ||
+      pageState.sort !== 'rating'
+    ) {
       setUrlParams({
         p: String(pageState.currentPage),
         l: pageState.language,
+        s: pageState.sort,
       });
     } else {
       deleteUrlParam('p');
       deleteUrlParam('l');
+      deleteUrlParam('s');
     }
 
-    loadSolutions(pageState.currentPage, pageState.language).finally(() => {
+    loadSolutions(
+      pageState.currentPage,
+      pageState.language,
+      pageState.sort,
+    ).finally(() => {
       setIsLoading(false);
     });
   }, [pageState]);
@@ -216,6 +213,13 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
 
   const selectedLanguage = pageState.language;
 
+  const setSelectedLanguage = (language: string) => {
+    setPageState((prev) => ({
+      ...prev,
+      language: prev.language === language ? '' : language,
+    }));
+  };
+
   return (
     <div className="mb-4 overflow-hidden rounded-lg border bg-white p-3 sm:p-5">
       {leavingRoadmapModal}
@@ -224,19 +228,32 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           <h1 className="mb-1 text-xl font-semibold">
             {projectData.title} Solutions
           </h1>
-          <p className="text-sm text-gray-500">{projectData.description}</p>
+          <p className="text-sm text-gray-500">
+            Solutions submitted by the community
+          </p>
         </div>
         {!isLoading && (
-          <SelectLanguages
-            projectId={projectId}
-            selectedLanguage={selectedLanguage}
-            onSelectLanguage={(language) => {
-              setPageState((prev) => ({
-                ...prev,
-                language: prev.language === language ? '' : language,
-              }));
-            }}
-          />
+          <div className="flex flex-shrink-0 items-center gap-2">
+            <SortProjects
+              selectedSort={pageState.sort}
+              onSelectSort={(sort) => {
+                setPageState((prev) => ({
+                  ...prev,
+                  sort,
+                }));
+              }}
+            />
+            <SelectLanguages
+              projectId={projectId}
+              selectedLanguage={selectedLanguage}
+              onSelectLanguage={(language) => {
+                setPageState((prev) => ({
+                  ...prev,
+                  language: prev.language === language ? '' : language,
+                }));
+              }}
+            />
+          </div>
         )}
       </div>
 
@@ -245,73 +262,16 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       ) : (
         <>
           <div className="flex min-h-[500px] flex-col divide-y divide-gray-100">
-            {solutions?.data.map((solution, counter) => {
-              const avatar = solution.user.avatar || '';
-              return (
-                <div
-                  key={solution._id}
-                  className="flex flex-col gap-2 py-2 text-sm text-gray-500"
-                >
-                  <div className="flex flex-col justify-between gap-2 text-sm text-gray-500 sm:flex-row sm:items-center sm:gap-0">
-                    <div className="flex items-center gap-1.5">
-                      <img
-                        src={
-                          avatar
-                            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-                            : '/images/default-avatar.png'
-                        }
-                        alt={solution.user.name}
-                        className="mr-0.5 h-7 w-7 rounded-full"
-                      />
-                      <span className="font-medium text-black">
-                        {solution.user.name}
-                      </span>
-                      <span className="hidden sm:inline">
-                        {submittedAlternatives[
-                          counter % submittedAlternatives.length
-                        ] || 'submitted their solution'}
-                      </span>{' '}
-                      <span className="flex-grow text-right text-gray-400 sm:flex-grow-0 sm:text-left sm:font-medium sm:text-black">
-                        {getRelativeTimeString(solution?.submittedAt!)}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center justify-end gap-1">
-                      <span className="flex shrink-0 overflow-hidden rounded-full border">
-                        <VoteButton
-                          icon={ThumbsUp}
-                          isActive={solution?.voteType === 'upvote'}
-                          count={solution.upvotes || 0}
-                          onClick={() => {
-                            handleSubmitVote(solution._id!, 'upvote');
-                          }}
-                        />
-
-                        <VoteButton
-                          icon={ThumbsDown}
-                          isActive={solution?.voteType === 'downvote'}
-                          count={solution.downvotes || 0}
-                          hideCount={true}
-                          onClick={() => {
-                            handleSubmitVote(solution._id!, 'downvote');
-                          }}
-                        />
-                      </span>
-
-                      <button
-                        className="ml-1 flex items-center gap-1 rounded-full border px-2 py-1 text-xs text-black transition-colors hover:border-black hover:bg-black hover:text-white"
-                        onClick={() => {
-                          setShowLeavingRoadmapModal(solution);
-                        }}
-                      >
-                        <GitHubIcon className="h-4 w-4 text-current" />
-                        Visit Solution
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            {solutions?.data.map((solution, counter) => (
+              <ProjectSolutionRow
+                key={solution._id}
+                solution={solution}
+                counter={counter}
+                onVote={handleSubmitVote}
+                onVisitSolution={setShowLeavingRoadmapModal}
+                onLanguageClick={setSelectedLanguage}
+              />
+            ))}
           </div>
 
           {(solutions?.totalPages || 0) > 1 && (

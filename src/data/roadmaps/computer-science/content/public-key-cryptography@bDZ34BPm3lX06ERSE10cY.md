@@ -4,7 +4,7 @@ Public-key cryptography, or asymmetric cryptography, is the field of cryptograph
 
 Visit the following resources to learn more:
 
-- [@article@Public-key cryptography - Wikipedia](https://en.wikipedia.org/wiki/Public-key_cryptography)
+- [@article@Public-key Cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography)
 - [@video@Public Key Cryptography - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4)
 - [@video@Public Key Cryptography: RSA Encryption Algorithm](https://www.youtube.com/watch?v=wXB-V_Keiu8)
 - [@feed@Explore top posts about Cryptography](https://app.daily.dev/tags/cryptography?ref=roadmapsh)

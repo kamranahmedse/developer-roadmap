@@ -4,6 +4,5 @@ Heap Sort is an efficient, comparison-based sorting algorithm. It utilizes a dat
 
 Learn more from the following resources:
 
-- [@article@Heap Sort - W3Schools](https://www.geeksforgeeks.org/heap-sort/)
 - [@article@Heap Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/heap-sort/tutorial/)
 - [@video@Heap sort in 4 minutes](https://www.youtube.com/watch?v=2DmK_H7IdTo)

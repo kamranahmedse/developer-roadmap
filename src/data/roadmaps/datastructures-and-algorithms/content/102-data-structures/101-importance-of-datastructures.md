@@ -4,5 +4,4 @@ Data structures are crucial in the field of computer science and coding because 
 
 Learn more from the following links:
 
-- [@article@Why Data Structures and Algorithms Are Important to Learn?](https://www.geeksforgeeks.org/why-data-structures-and-algorithms-are-important-to-learn/)
 - [@video@What are Data Structures? Why is it Important?](https://www.youtube.com/watch?v=18V8Avz2OH8)

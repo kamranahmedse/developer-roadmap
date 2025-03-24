@@ -42,7 +42,7 @@
     ]
   },
   "mwPJh33MEUQ4Co_LiVEOb": {
-    "title": "Differential Calculus",
+    "title": "Differential Calculus ",
     "description": "",
     "links": [
       {
@@ -330,17 +330,17 @@
     "links": [
       {
         "title": "Advantages and Disadvantages of AI",
-        "url": "https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c",
+        "url": "https://medium.com/@laners.org/advantages-and-disadvantages-of-artificial-intelligence-cd6e42819b20",
         "type": "article"
       },
       {
         "title": "Reinforcement Learning 101",
-        "url": "https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292",
+        "url": "https://medium.com/towards-data-science/reinforcement-learning-101-e24b50e1d292",
         "type": "article"
       },
       {
         "title": "Understanding AUC-ROC Curve",
-        "url": "https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5",
+        "url": "https://medium.com/towards-data-science/understanding-auc-roc-curve-68b2303cc9c5",
         "type": "article"
       }
     ]

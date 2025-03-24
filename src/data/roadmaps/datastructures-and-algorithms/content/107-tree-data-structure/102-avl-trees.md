@@ -4,5 +4,4 @@ An **AVL tree** is a type of binary search tree that is self-balancing, which me
 
 Learn more from the following links:
 
-- [@article@AVL Tree Data Structure](https://www.geeksforgeeks.org/introduction-to-avl-tree/)
 - [@video@AVL trees in 5 minutes — Intro & Search](https://www.youtube.com/watch?v=DB1HFCEdLxA)

@@ -13,7 +13,10 @@ import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
-import ChangelogBanner from "../components/ChangelogBanner.astro";
+import Clarity from '../components/Analytics/Clarity.astro';
+import RedditPixel from '../components/Analytics/RedditPixel.astro';
+import GoogleAd from '../components/Analytics/GoogleAd.astro';
+import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
 
 export interface Props {
   title: string;
@@ -157,6 +160,9 @@ const gaPageIdentifier = Astro.url.pathname
     }
 
     <Analytics />
+    <Clarity />
+    <RedditPixel />
+    <GoogleAd />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
@@ -166,9 +172,7 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <slot name='changelog-banner'>
-        <ChangelogBanner />
-      </slot>
+      <slot name='changelog-banner' />
       <slot name='open-source-banner'>
         <OpenSourceBanner />
       </slot>
@@ -189,6 +193,7 @@ const gaPageIdentifier = Astro.url.pathname
       client:load
     />
 
+    <GoogleAdSlot />
     <slot name='after-footer' />
 
     <PageVisit

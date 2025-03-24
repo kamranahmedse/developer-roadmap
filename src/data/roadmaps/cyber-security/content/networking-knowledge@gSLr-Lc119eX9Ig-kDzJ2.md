@@ -14,4 +14,3 @@ This knowledge is essential for designing, implementing, and maintaining effecti
 Learn more from the following resources:
 
 - [@article@What are Network Protocols?](https://www.solarwinds.com/resources/it-glossary/network-protocols)
-- [@article@Types of Network Topology](https://www.geeksforgeeks.org/types-of-network-topology/)

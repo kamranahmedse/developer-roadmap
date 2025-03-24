@@ -10,5 +10,5 @@ This will download and install a new Symfony project in the 'myproject' director
 
 Visit the following resources to learn more:
 
-- [@official@Symphony](https://symfony.com/)
-- [@official@Symphony Documentation](https://symfony.com/doc/current/index.html)
+- [@official@Symfony](https://symfony.com/)
+- [@official@Symfony Documentation](https://symfony.com/doc/current/index.html)

@@ -4,7 +4,7 @@ Originally created at Lyft, Envoy is a high-performance data plane designed for 
 
 Visit the following resources to learn more:
 
-- [@official@Envoy Website](https://www.envoyproxy.io/)
-- [@opensourece@envoyproxy/envoy](https://github.com/envoyproxy/envoy)
+- [@official@Envoy](https://www.envoyproxy.io/)
+- [@opensource@envoyproxy/envoy](https://github.com/envoyproxy/envoy)
 - [@article@What is Envoy?](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy)
 - [@feed@Explore top posts about Envoy](https://app.daily.dev/tags/envoy?ref=roadmapsh)

@@ -1,8 +1,8 @@
 # EPA
 
-The **EPA**, also known as the *Environmental Protection Agency*, is not typically related to game development or the concept of intersection within this context. However, in game development, EPA might refer to an 'Event-driven Process chain Architecture' or some other game-specific acronym. In this domain, different terminologies and acronyms are often used to express complex architectures, designs, or functionalities. If you have encountered EPA in a game development context, it might be best to refer to the specific documentation or guide where it was described for a better understanding. Understanding the context is key to untangle the meaning of such abbreviations.
+The **EPA** (Expanding Polytope Algorithm) is an iterative algorithm used for calculating the penetration depth between two shapes in collision detection. It is commonly used in physics engines and robotics. The algorithm takes the resulting simplex from a previously applied GJK algorithm, iteratively expanding the polytope towards the Minkowski Difference boundary until it finds the closest point to the origin. The vector from that point to the origin is the penetration vector and its magnitude is equal to the penetration depth between the two shapes.
 
 Visit the following resources to learn more:
 
-- [@article@Environmental Sustainability in Game Development](https://polydin.com/environmental-sustainability-in-game-development/)
-- [@article@Gaming Sustainability - Microsoft Game Dev](https://learn.microsoft.com/en-us/gaming/sustainability/sustainability-overview)
+- [@article@EPA: Collision response algorithm for 2D/3D - winter.dev](https://winter.dev/articles/epa-algorithm)
+- [@article@EPA (Expanding Polytope Algorithm) - dyn4j](https://dyn4j.org/2010/05/epa-expanding-polytope-algorithm/)

@@ -1,7 +1,7 @@
 ---
 title: 'How to Become a Front-End Developer in 7 Steps'
 description: 'Learn how to become a front-end developer in 7 clear steps. Start your coding journey with practical tips and resources today!'
-authorId: kamran
+authorId: william
 excludedBySlug: '/frontend/how-to-become-frontend-developer'
 seo:
   title: 'How to become a Front-End Developer in 7 Steps'

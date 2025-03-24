@@ -4,5 +4,4 @@ A **Skip List** is a probabilistic data structure that allows efficient search, 
 
 Learn more from the following resources:
 
-- [@article@Skip List – Efficient Search, Insert and Delete in Linked List](https://www.geeksforgeeks.org/skip-list/)
 - [@video@Skip Lists](https://www.youtube.com/watch?v=NDGpsfwAaqo)

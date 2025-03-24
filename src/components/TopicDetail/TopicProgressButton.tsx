@@ -108,7 +108,6 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   useKeydown(
     'r',
     () => {
-      console.log(progress);
       if (progress === 'pending') {
         onClose();
         return;

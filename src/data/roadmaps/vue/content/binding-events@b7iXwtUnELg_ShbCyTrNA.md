@@ -5,4 +5,3 @@ Vue.js is an open-source Model–View–ViewModel front-end JavaScript framework
 Visit the following resources to learn more:
 
 - [@official@Binding Events](https://vuejs.org/guide/essentials/event-handling)
-- [@article@Vue.js Event Handling](https://www.geeksforgeeks.org/vue-js-event-handling/)

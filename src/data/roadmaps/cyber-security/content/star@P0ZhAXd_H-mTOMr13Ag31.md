@@ -4,5 +4,4 @@ A star network topology is a configuration where all devices (nodes) are connect
 
 Learn more from the following resources:
 
-- [@article@Advantages and Disadvantages of Star Topology](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-star-topology/)
 - [@video@Star Topology](https://www.youtube.com/watch?v=EQ3rW22-Py0)

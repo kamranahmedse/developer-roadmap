@@ -1,5 +1,5 @@
 ---
-import GuideListItem from '../../components/GuideListItem.astro';
+import { GuideListItem } from '../../components/FeaturedGuides/GuideListItem';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides } from '../../lib/guide';
@@ -12,8 +12,8 @@ const questionGuides = (await getAllQuestionGroups()).filter(
 
 const allGuides = [...guides, ...questionGuides];
 const sortedGuides = allGuides.sort((a, b) => {
-  const aDate = new Date(a.frontmatter.date);
-  const bDate = new Date(b.frontmatter.date);
+  const aDate = new Date(a.frontmatter.date as string);
+  const bDate = new Date(b.frontmatter.date as string);
 
   return bDate.getTime() - aDate.getTime();
 });
@@ -36,5 +36,5 @@ const sortedGuides = allGuides.sort((a, b) => {
       </div>
     </div>
   </div>
-  <div slot="changelog-banner" />
+  <div slot='changelog-banner'></div>
 </BaseLayout>

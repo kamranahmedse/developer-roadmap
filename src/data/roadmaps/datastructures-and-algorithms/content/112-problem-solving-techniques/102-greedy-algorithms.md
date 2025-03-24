@@ -4,5 +4,4 @@ Greedy algorithms follow the problem-solving heuristic of making the locally opt
 
 Learn more from the following links:
 
-- [@article@Greedy Algorithm Tutorial – Examples, Application and Practice Problem](https://www.geeksforgeeks.org/introduction-to-greedy-algorithm-data-structures-and-algorithm-tutorials/)
 - [@video@Greedy Algorithms Tutorial ](https://www.youtube.com/watch?v=bC7o8P_Ste4)

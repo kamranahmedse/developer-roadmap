@@ -4,6 +4,7 @@ Rust is a modern systems programming language focusing on safety, speed, and con
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit Dedicated Rust Roadmap](https://roadmap.sh/rust)
 - [@article@The Rust Programming Language - online book](https://doc.rust-lang.org/book/)
 - [@article@Rust by Example - collection of runnable examples](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 - [@article@Rust vs. Go: Why They’re Better Together](https://thenewstack.io/rust-vs-go-why-theyre-better-together/)

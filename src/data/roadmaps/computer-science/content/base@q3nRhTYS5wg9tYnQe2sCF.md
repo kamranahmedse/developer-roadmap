@@ -5,6 +5,3 @@ The rise in popularity of NoSQL databases provided a flexible and fluidity with 
 - **B**asically **A**vailable
 - **S**oft state
 - **E**ventual consistency
-
-Visit the following resources to learn more:
-
