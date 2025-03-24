@@ -5,5 +5,3 @@ TestLink is most widely used web based open source test management tool. It sync
 Visit the following resources to learn more:
 
 - [@official@TestLink](https://testlink.org/)
-- [@article@TestLink Tutorial: A Complete Guide](https://www.guru99.com/testlink-tutorial-complete-guide.html)
-- [@article@TestLink Tutorial: Tutorials Point](https://www.tutorialspoint.com/testlink/index.htm)
