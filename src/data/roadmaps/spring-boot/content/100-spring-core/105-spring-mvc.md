@@ -6,7 +6,6 @@ Spring MVC provides a powerful and flexible way to build web applications, and i
 
 For more resources, visit the following links:
 
-- [@article@Spring MVC Tutorial](https://www.javatpoint.com/spring-mvc-tutorial)
 - [@article@Spring - MVC Framework](https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
 - [@article@Web MVC framework](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html)
 - [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

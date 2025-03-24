@@ -1,6 +1,64 @@
 <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'
 ></script>
 <script async>
+  const ignoredPages = [
+    'login',
+    'signup',
+    'best-practices',
+    'guides',
+    'videos',
+    'roadmaps',
+    'community',
+    'start-here',
+    'ai',
+    'ai-tutor',
+    'teams',
+    'about',
+    'account',
+    'projects',
+    'questions',
+    'guides',
+    'advertise',
+  ];
+
+  function sanitizeSettingValue(value) {
+    return (
+      String(value)
+        .trim()
+        // Remove characters forbidden at https://support.google.com/admanager/answer/10020177.
+        .replace(/'|\\|'|=|!|#|\*|~|;|\^|\(|\)|<|>|\[|\]|,|&/g, '')
+        // Extra spaces aren't forbidden, but rarely desired.
+        .replace(/\s+/, ' ')
+        // The + sign is also forbidden, but is being replaced with 'and' instead.
+        .replace('+', 'and')
+        // Maximum length of 40 for values.
+        .substring(0, 40)
+    );
+  }
+
+  const page = window.location.pathname;
+  const pageParts = page.split('/').filter(Boolean);
+
+  const isRoadmapPage =
+    pageParts.length === 1 && !ignoredPages.includes(pageParts[0]);
+  const isBestPracticesPage =
+    pageParts.length === 2 && pageParts[0] === 'best-practices';
+
+  let adSettings = {};
+  if (isRoadmapPage) {
+    adSettings = {
+      post_id: sanitizeSettingValue(pageParts[0]),
+      page_type: 'roadmap',
+      category: ['roadmap', sanitizeSettingValue(pageParts[0])],
+    };
+  } else if (isBestPracticesPage) {
+    adSettings = {
+      post_id: sanitizeSettingValue(pageParts[1]),
+      page_type: 'best-practice',
+      category: ['best-practice', sanitizeSettingValue(pageParts[1])],
+    };
+  }
+
   // @ts-nocheck
   window.googletag = window.googletag || { cmd: [] };
   googletag.cmd.push(function () {
@@ -18,6 +76,34 @@
         'div-gpt-ad-1742391132948-0',
       )
       .addService(googletag.pubads());
+
+    // Set targeting for all ad slots on the page.
+    for (let key in adSettings) {
+      if (adSettings.hasOwnProperty(key)) {
+        googletag.pubads().setTargeting(key, adSettings[key]);
+      }
+    }
+
+    googletag.pubads().enableSingleRequest();
     googletag.enableServices();
+
+    googletag.pubads().addEventListener('slotRenderEnded', function (e) {
+      if (!e.isEmpty) {
+        return;
+      }
+
+      const slotId = e.slot.getSlotElementId();
+      if (!slotId) {
+        return;
+      }
+
+      // If empty, hide the ad slot after a small delay.
+      setTimeout(() => {
+        const adContainer = document.getElementById(slotId);
+        if (adContainer) {
+          adContainer.style.display = 'none';
+        }
+      }, 1800);
+    });
   });
 </script>

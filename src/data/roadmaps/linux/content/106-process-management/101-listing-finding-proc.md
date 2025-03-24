@@ -23,3 +23,7 @@ Exploring the proc directory (`/proc`), we dive even deeper, enabling us to view
 cat /proc/{PID}/status
 ```
 In short, 'Finding and Listing Processes (proc)' in Linux is not just a core aspect of process management, but also a necessary skill for enhancing system performance and resolution of issues.
+
+Visit the following resources to learn more:
+
+- [@article@The /proc File System](https://www.kernel.org/doc/html/latest/filesystems/proc.html)

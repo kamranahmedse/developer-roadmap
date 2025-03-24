@@ -5,4 +5,4 @@ Cookies play an instrumental role in the field of API (Application Programming I
 Learn more from the following resources:
 
 - [@article@What Are API Cookies? How to Send it?](https://apidog.com/articles/what-are-api-cookies/)
-- [@article@Cookies - Mozilla](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies)
+- [@article@Using HTTP cookies - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
