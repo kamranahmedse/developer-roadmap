@@ -12,15 +12,15 @@ Example:
 #include <iostream>
 
 void print(int i) {
-    std::cout << "Printing int: " << i << std::endl;
+    std::cout << "Printing int: " << i << '\n';
 }
 
 void print(double d) {
-    std::cout << "Printing double: " << d << std::endl;
+    std::cout << "Printing double: " << d << '\n';
 }
 
 void print(const char* s) {
-    std::cout << "Printing string: " << s << std::endl;
+    std::cout << "Printing string: " << s << '\n';
 }
 
 int main() {
@@ -44,7 +44,7 @@ Example:
 // Template function to print any type
 template<typename T>
 void print(const T& value) {
-    std::cout << "Printing value: " << value << std::endl;
+    std::cout << "Printing value: " << value << '\n';
 }
 
 int main() {

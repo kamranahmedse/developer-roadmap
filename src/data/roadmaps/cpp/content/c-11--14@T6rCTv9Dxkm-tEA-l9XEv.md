@@ -13,7 +13,7 @@ The C++11 standard, also known as C++0x, was officially released in September 20
   ```cpp
   std::vector<int> numbers {1, 2, 3, 4};
   for (int number : numbers) {
-      std::cout << number << std::endl;
+      std::cout << number << '\n';
   }
   ```
 

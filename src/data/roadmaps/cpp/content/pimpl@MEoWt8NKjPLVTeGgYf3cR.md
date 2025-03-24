@@ -32,7 +32,7 @@ class MyClass_Impl // the actual implementation
 public:
     void some_method()
     {
-        std::cout << "Implementation method called!" << std::endl;
+        std::cout << "Implementation method called!" << '\n';
     }
 };
 

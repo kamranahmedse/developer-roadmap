@@ -17,9 +17,9 @@ int main() {
     c = num;    // This asssigment would convert num's value to ASCII equivalent character
     num = pi; // This assignment would convert pi's value from double type to int type
     
-    std::cout << "The value of num is: " << num << std::endl;
-    std::cout << "The value of pi is: " << pi << std::endl;
-    std::cout << "The value of c is: "<< c << std::endl;
+    std::cout << "The value of num is: " << num << '\n';
+    std::cout << "The value of pi is: " << pi << '\n';
+    std::cout << "The value of c is: "<< c << '\n';
     return 0;
 }
 ```

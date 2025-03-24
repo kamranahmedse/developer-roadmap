@@ -15,14 +15,14 @@ int main() {
     // Some code here...
 
     if (/*some error condition*/) {
-        std::cout << "An error occurred." << std::endl;
+        std::cout << "An error occurred." << '\n';
         return 1;
     }
 
     // More code here...
 
     if (/*another error condition*/) {
-        std::cout << "Another error occurred." << std::endl;
+        std::cout << "Another error occurred." << '\n';
         return 2;
     }
 
@@ -40,7 +40,7 @@ void some_function() {
     // Some code here...
 
     if (/*some error condition*/) {
-        std::cout << "An error occurred." << std::endl;
+        std::cout << "An error occurred." << '\n';
         std::exit(1);
     }
 

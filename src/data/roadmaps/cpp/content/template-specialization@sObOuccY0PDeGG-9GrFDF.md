@@ -19,12 +19,12 @@ Here is an example:
 
 template <typename T>
 void printData(const T& data) {
-    std::cout << "General template: " << data << std::endl;
+    std::cout << "General template: " << data << '\n';
 }
 
 template <>
 void printData(const char* const & data) {
-    std::cout << "Specialized template for const char*: " << data << std::endl;
+    std::cout << "Specialized template for const char*: " << data << '\n';
 }
 
 int main() {
@@ -50,7 +50,7 @@ public:
     MyPair(K k, V v) : key(k), value(v) {}
 
     void print() const {
-        std::cout << "General template: key = " << key << ", value = " << value << std::endl;
+        std::cout << "General template: key = " << key << ", value = " << value << '\n';
     }
 
 private:
@@ -65,7 +65,7 @@ public:
 
     void print() const {
         std::cout << "Partial specialization for int values: key = " << key
-                  << ", value = " << value << std::endl;
+                  << ", value = " << value << '\n';
     }
 
 private:

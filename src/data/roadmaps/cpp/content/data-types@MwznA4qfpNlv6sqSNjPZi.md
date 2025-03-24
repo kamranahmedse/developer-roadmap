@@ -109,7 +109,7 @@ public:
     int age;
 
     void printInfo() {
-        std::cout << "Name: " << name << ", Age: " << age << std::endl;
+        std::cout << "Name: " << name << ", Age: " << age << '\n';
     };
 };
 

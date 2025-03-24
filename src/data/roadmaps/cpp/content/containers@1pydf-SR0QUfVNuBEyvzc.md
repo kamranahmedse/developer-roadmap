@@ -21,7 +21,7 @@ int main() {
     for (int x : vec) {
         std::cout << ' ' << x;
     }
-    std::cout << std::endl;
+    std::cout << '\n';
 }
 ```
 
@@ -44,7 +44,7 @@ int main() {
     for (int x : lst) {
         std::cout << ' ' << x;
     }
-    std::cout << std::endl;
+    std::cout << '\n';
 }
 ```
 
@@ -64,9 +64,9 @@ int main() {
     m["one"] = 1;
     m["two"] = 2;
 
-    std::cout << "Map contains:" << std::endl;
+    std::cout << "Map contains:" << '\n';
     for (const auto &pair : m) {
-        std::cout << pair.first << ": " << pair.second << std::endl;
+        std::cout << pair.first << ": " << pair.second << '\n';
     }
 }
 ```
@@ -87,9 +87,9 @@ int main() {
     um["one"] = 1;
     um["two"] = 2;
 
-    std::cout << "Unordered map contains:" << std::endl;
+    std::cout << "Unordered map contains:" << '\n';
     for (const auto &pair : um) {
-        std::cout << pair.first << ": " << pair.second << std::endl;
+        std::cout << pair.first << ": " << pair.second << '\n';
     }
 }
 ```

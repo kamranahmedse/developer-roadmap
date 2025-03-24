@@ -14,7 +14,7 @@ public:
 
     // Use the same shared data for copying.
     MyString(const MyString &other) : data(other.data) { 
-        std::cout << "Copied using the Copy-Write idiom." << std::endl;
+        std::cout << "Copied using the Copy-Write idiom." << '\n';
     }
 
     // Make a copy only if we want to modify the data.
@@ -22,7 +22,7 @@ public:
         // Check if there's more than one reference.
         if (data.use_count() > 1) {
             data = std::make_shared<std::string>(*data);
-            std::cout << "Copy is actually made for writing." << std::endl;
+            std::cout << "Copy is actually made for writing." << '\n';
         }
         *data = str;
     }
