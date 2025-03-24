@@ -1,3 +1,5 @@
+import { nanoid } from 'nanoid';
+
 export const IS_KEY_ONLY_ROADMAP_GENERATION = false;
 
 type Lesson = string;
@@ -52,6 +54,7 @@ export function generateAiCourseStructure(
   return {
     title,
     modules,
+    done: [],
   };
 }
 
@@ -206,4 +209,60 @@ export async function readStream(
   onStream?.(result);
   onStreamEnd?.(result);
   reader.releaseLock();
+}
+
+export type Question = {
+  id: string;
+  title: string;
+  options: {
+    id: string;
+    title: string;
+    isCorrect: boolean;
+  }[];
+};
+
+export function generateAiCourseLessonQuestions(
+  questionData: string,
+): Question[] {
+  const questions: Question[] = [];
+
+  const lines = questionData.split('\n');
+  let currentQuestion: Question | null = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('#')) {
+      if (currentQuestion) {
+        questions.push(currentQuestion);
+        currentQuestion = null;
+      }
+
+      const title = line.replace('#', '').trim();
+      currentQuestion = {
+        id: nanoid(),
+        title,
+        options: [],
+      };
+    } else if (line.startsWith('-')) {
+      if (!currentQuestion) {
+        continue;
+      }
+
+      let title = line.replace('-', '').trim();
+      const isCorrect = title.startsWith('*');
+      title = title.replace('*', '').trim();
+
+      currentQuestion.options.push({
+        id: nanoid(),
+        title,
+        isCorrect,
+      });
+    }
+  }
+
+  if (currentQuestion) {
+    questions.push(currentQuestion);
+  }
+
+  return questions;
 }

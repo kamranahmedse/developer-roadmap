@@ -27,6 +27,7 @@ import { queryClient } from '../../stores/query-client';
 import { AICourseFollowUp } from './AICourseFollowUp';
 import './AICourseFollowUp.css';
 import { RegenerateLesson } from './RegenerateLesson';
+import { TestMyKnowledgeAction } from './TestMyKnowledgeAction';
 
 type AICourseLessonProps = {
   courseSlug: string;
@@ -203,7 +204,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
     isLoading;
 
   const cantGoBack =
-    (activeModuleIndex === 0 && activeLessonIndex === 0) || isGenerating || isLoading;
+    (activeModuleIndex === 0 && activeLessonIndex === 0) ||
+    isGenerating ||
+    isLoading;
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -317,6 +320,14 @@ export function AICourseLesson(props: AICourseLessonProps) {
               Please login to generate course content
             </p>
           </div>
+        )}
+
+        {!isLoading && !isGenerating && (
+          <TestMyKnowledgeAction
+            courseSlug={courseSlug}
+            activeModuleIndex={activeModuleIndex}
+            activeLessonIndex={activeLessonIndex}
+          />
         )}
 
         <div className="mt-8 flex items-center justify-between">
