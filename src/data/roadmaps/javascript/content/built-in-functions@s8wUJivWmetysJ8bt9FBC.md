@@ -1,10 +1,6 @@
 # Built in functions
 
-- JavaScript provides a variety of built-in functions that help perform common tasks efficiently. These functions are available globally or within specific objects and do not require explicit definition.
-
-- For example, functions like parseInt(), setTimeout(), and Math.random() are built-in and can be used directly. Additionally, JavaScript objects such as Array, String, and Date come with their own built-in methods, allowing powerful operations on data structures.
-
-- Understanding built-in functions helps streamline development by leveraging JavaScript’s core capabilities without reinventing the wheel.
+JavaScript offers a variety of built-in functions that simplify common tasks, available globally or within specific objects without requiring explicit definition. Functions like parseInt(), setTimeout(), and Math.random() can be used directly, while objects like Array, String, and Date include built-in methods for efficient data manipulation. Understanding these functions enhances development by leveraging JavaScript’s core features without reinventing the wheel.
 
 Visit the following resources to learn more:
 
