@@ -429,6 +429,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
           {viewMode === 'roadmap' && !isLoading && (
             <AICourseRoadmapView
+              done={course.done}
               courseSlug={courseSlug!}
               setActiveModuleIndex={setActiveModuleIndex}
               setActiveLessonIndex={setActiveLessonIndex}

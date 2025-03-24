@@ -274,8 +274,12 @@ export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
     } else if (line.startsWith('-')) {
       if (currentTopic) {
         const label = line.replace('-', '').trim();
+        const currentTopicIndex = result.length - 1;
+        const subTopicIndex = currentTopic.children?.length || 0;
+        const id = `${currentTopicIndex}-${subTopicIndex}`;
+
         currentTopic.children?.push({
-          id: nanoid(),
+          id,
           type: 'subtopic',
           label,
         });

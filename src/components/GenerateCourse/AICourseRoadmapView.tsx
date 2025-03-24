@@ -3,7 +3,8 @@ import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
 import {
   generateAICourseRoadmapStructure,
-  readStream,
+  readAIRoadmapStream,
+  type AiCourse,
   type ResultItem,
 } from '../../lib/ai';
 import {
@@ -19,8 +20,10 @@ import type { AICourseViewMode } from './AICourseContent';
 import { replaceChildren } from '../../lib/dom';
 import { Loader2Icon } from 'lucide-react';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import { renderTopicProgress } from '../../lib/resource-progress';
 
 export type AICourseRoadmapViewProps = {
+  done: string[];
   courseSlug: string;
   setActiveModuleIndex: (index: number) => void;
   setActiveLessonIndex: (index: number) => void;
@@ -30,6 +33,7 @@ export type AICourseRoadmapViewProps = {
 
 export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   const {
+    done = [],
     courseSlug,
     setActiveModuleIndex,
     setActiveLessonIndex,
@@ -78,7 +82,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
 
       setIsLoading(false);
       setIsGenerating(true);
-      await readStream(reader, {
+      await readAIRoadmapStream(reader, {
         onStream: async (result) => {
           const roadmap = generateAICourseRoadmapStructure(result);
           const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -92,6 +96,10 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
           replaceChildren(containerEl.current!, svg);
           setRoadmapStructure(roadmap);
           setIsGenerating(false);
+
+          done.forEach((id) => {
+            renderTopicProgress(id, 'done');
+          });
         },
       });
     } catch (error) {
