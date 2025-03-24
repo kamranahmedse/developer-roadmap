@@ -128,38 +128,11 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
 
       const nodeId = targetGroup?.dataset?.nodeId;
       const nodeType = targetGroup?.dataset?.type;
-      const nodeTitle = targetGroup?.dataset?.title;
-      const parentTitle = targetGroup?.dataset?.parentTitle;
-      if (!nodeId || !nodeType) {
+      if (!nodeId || !nodeType || nodeType !== 'subtopic') {
         return null;
       }
 
-      const filteredRoadmapStructure = roadmapStructure.filter(
-        (module) => module.type !== 'title',
-      );
-
-      const moduleIndex = filteredRoadmapStructure.findIndex(
-        (module) => module.label === parentTitle,
-      );
-
-      const module = filteredRoadmapStructure[moduleIndex];
-      if (module?.type !== 'topic') {
-        return;
-      }
-
-      const topicIndex = module.children?.findIndex(
-        (topic) => topic.label === nodeTitle,
-      );
-
-      if (topicIndex === undefined) {
-        return;
-      }
-
-      const topic = module.children?.[topicIndex];
-      if (topic?.type !== 'subtopic') {
-        return;
-      }
-
+      const [moduleIndex, topicIndex] = nodeId.split('-').map(Number);
       setExpandedModules((prev) => {
         const newState: Record<number, boolean> = {};
         roadmapStructure.forEach((_, idx) => {
