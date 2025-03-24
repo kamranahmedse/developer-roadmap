@@ -84,13 +84,13 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
       setIsGenerating(true);
       await readAIRoadmapStream(reader, {
         onStream: async (result) => {
-          const roadmap = generateAICourseRoadmapStructure(result);
+          const roadmap = generateAICourseRoadmapStructure(result, true);
           const { nodes, edges } = generateAIRoadmapFromText(roadmap);
           const svg = await renderFlowJSON({ nodes, edges });
           replaceChildren(containerEl.current!, svg);
         },
         onStreamEnd: async (result) => {
-          const roadmap = generateAICourseRoadmapStructure(result);
+          const roadmap = generateAICourseRoadmapStructure(result, true);
           const { nodes, edges } = generateAIRoadmapFromText(roadmap);
           const svg = await renderFlowJSON({ nodes, edges });
           replaceChildren(containerEl.current!, svg);

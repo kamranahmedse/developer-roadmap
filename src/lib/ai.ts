@@ -238,7 +238,10 @@ export type Title = {
 
 export type ResultItem = Title | Topic | Label;
 
-export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
+export function generateAICourseRoadmapStructure(
+  data: string,
+  isCourseRoadmap: boolean = false,
+): ResultItem[] {
   const lines = data.split('\n');
 
   const result: ResultItem[] = [];
@@ -274,9 +277,13 @@ export function generateAICourseRoadmapStructure(data: string): ResultItem[] {
     } else if (line.startsWith('-')) {
       if (currentTopic) {
         const label = line.replace('-', '').trim();
-        const currentTopicIndex = result.length - 1;
-        const subTopicIndex = currentTopic.children?.length || 0;
-        const id = `${currentTopicIndex}-${subTopicIndex}`;
+
+        let id = nanoid();
+        if (isCourseRoadmap) {
+          const currentTopicIndex = result.length - 1;
+          const subTopicIndex = currentTopic.children?.length || 0;
+          id = `${currentTopicIndex}-${subTopicIndex}`;
+        }
 
         currentTopic.children?.push({
           id,
