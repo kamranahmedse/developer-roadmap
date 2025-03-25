@@ -37,18 +37,17 @@ export function AICourseLimit(props: AICourseLimitProps) {
 
   return (
     <>
-      {!isPaidUser ||
-        (isNearLimit && (
-          <button
-            className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
-            onClick={() => onShowLimits()}
-          >
-            <Info className="size-4" />
-            {totalPercentage}% limit used
-          </button>
-        ))}
+      {!isPaidUser && (
+        <button
+          className="mr-1 flex items-center gap-1 text-sm font-medium underline underline-offset-2 lg:hidden"
+          onClick={() => onShowLimits()}
+        >
+          <Info className="size-4" />
+          {totalPercentage}% limit used
+        </button>
+      )}
 
-      {(!isPaidUser || isNearLimit) && (
+      {!isPaidUser && (
         <button
           onClick={() => {
             onShowLimits();
