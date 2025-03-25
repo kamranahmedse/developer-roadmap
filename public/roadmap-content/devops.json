@@ -205,11 +205,6 @@
         "type": "article"
       },
       {
-        "title": "All you need to know about OS.",
-        "url": "https://www.javatpoint.com/operating-system",
-        "type": "article"
-      },
-      {
         "title": "Learn Operating Systems",
         "url": "https://www.tutorialspoint.com/operating_system/os_overview.htm",
         "type": "article"
@@ -530,11 +525,6 @@
       {
         "title": "Interactive Shell Scripting Tutorial",
         "url": "https://www.learnshell.org/en/Welcome",
-        "type": "article"
-      },
-      {
-        "title": "Bash Scripting Tutorial",
-        "url": "https://www.javatpoint.com/bash",
         "type": "article"
       },
       {

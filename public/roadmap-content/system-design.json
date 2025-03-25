@@ -670,7 +670,7 @@
   },
   "RNITLR1FUQWkRbSBXTD_z": {
     "title": "Write-through",
-    "description": "The application uses the cache as the main data store, reading and writing data to it, while the cache is responsible for reading and writing to the database:\n\n*   Application adds/updates entry in cache\n*   Cache synchronously writes entry to data store\n*   Return\n\nApplication code:\n\n    set_user(12345, {\"foo\":\"bar\"})\n    \n\nCache code:\n\n    def set_user(user_id, values):\n      user = db.query(\"UPDATE Users WHERE id = {0}\", user_id, values)\n      cache.set(user_id, user)\n    \n\nWrite-through is a slow overall operation due to the write operation, but subsequent reads of just written data are fast. Users are generally more tolerant of latency when updating data than reading data. Data in the cache is not stale.\n\nDisadvantages\n-------------\n\n*   When a new node is created due to failure or scaling, the new node will not cache entries until the entry is updated in the database. Cache-aside in conjunction with write through can mitigate this issue.\n*   Most data written might never be read, which can be minimized with a TTL.\n\n![Write through](https://i.imgur.com/Ujf0awN.png)\n\nHave a look at the following resources to learn more:",
+    "description": "The application uses the cache as the main data store, reading and writing data to it, while the cache is responsible for reading and writing to the database:\n\n*   Application adds/updates entry in cache\n*   Cache synchronously writes entry to data store\n*   Return\n\nApplication code:\n\n    set_user(12345, {\"foo\": \"bar\"})\n    \n\nCache code:\n\n    def set_user(user_id, values):\n        user = db.query(\"UPDATE Users WHERE id = {0}\", user_id, values)\n        cache.set(user_id, user)\n    \n\nWrite-through is a slow overall operation due to the write operation, but subsequent reads of just written data are fast. Users are generally more tolerant of latency when updating data than reading data. Data in the cache is not stale.\n\nDisadvantages\n-------------\n\n*   When a new node is created due to failure or scaling, the new node will not cache entries until the entry is updated in the database. Cache-aside in conjunction with write through can mitigate this issue.\n*   Most data written might never be read, which can be minimized with a TTL.\n\n![Write through](https://i.imgur.com/Ujf0awN.png)\n\nHave a look at the following resources to learn more:",
     "links": [
       {
         "title": "Scalability, availability, stability, patterns",
@@ -1838,11 +1838,6 @@
       {
         "title": "Geode pattern",
         "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes",
-        "type": "article"
-      },
-      {
-        "title": "Geode Formation, Types & Appearance | What is a Geode?",
-        "url": "https://study.com/academy/lesson/geode-formation-types-appearance.html",
         "type": "article"
       }
     ]
