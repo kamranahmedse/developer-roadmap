@@ -1,4 +1,4 @@
-# WSA-Poll**  
+# WSA-Poll
 
 **WSA-Poll** is a Windows-specific alternative to `poll`, used for monitoring multiple sockets 
 for readiness in non-blocking network applications. It is commonly utilized in server-side 

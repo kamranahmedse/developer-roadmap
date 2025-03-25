@@ -1,4 +1,4 @@
-# io_uring**  
+# io_uring
 
 **io_uring** is a modern asynchronous I/O framework introduced in Linux 5.1, designed to 
 provide high-performance, low-latency I/O operations. It is widely used in server-side game 
