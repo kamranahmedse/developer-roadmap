@@ -3,7 +3,7 @@
 **epoll** is a high-performance I/O event notification system in Linux, essential for handling 
 large-scale asynchronous network operations in server-side game development. Unlike `select` 
 or `poll`, it uses an event-driven model, reducing CPU overhead and improving scalability. 
-Game servers leverage epoll to efficiently manage thousands of concurrent connections, 
+Game servers leverage `epoll` to efficiently manage thousands of concurrent connections, 
 responding only when events occur, minimizing system calls, and optimizing resource 
 usage—making it ideal for multiplayer games and real-time applications.
 
