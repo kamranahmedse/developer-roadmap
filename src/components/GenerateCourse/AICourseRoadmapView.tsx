@@ -99,6 +99,17 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
           done.forEach((id) => {
             renderTopicProgress(id, 'done');
           });
+
+          const modules = roadmap.filter((item) => item.type === 'topic');
+          for (const module of modules) {
+            const moduleId = module.id;
+            const isAllLessonsDone =
+              module?.children?.every((child) => done.includes(child.id)) ??
+              false;
+            if (isAllLessonsDone) {
+              renderTopicProgress(moduleId, 'done');
+            }
+          }
         },
       });
     } catch (error) {

@@ -334,12 +334,16 @@ export function AICourseContent(props: AICourseContentProps) {
                 ></span>
 
                 {viewMode === 'module' && (
-                  <AIRoadmapViewSwitch
-                    viewMode={viewMode}
-                    setViewMode={setViewMode}
-                    isLoading={isLoading}
-                    variant="icon"
-                  />
+                  <button
+                    onClick={() => {
+                      setExpandedModules({});
+                      setViewMode('outline');
+                    }}
+                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
+                  >
+                    <BookOpenCheck size={14} />
+                    View Outline
+                  </button>
                 )}
 
                 {viewMode !== 'module' && (
