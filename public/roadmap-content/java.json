@@ -89,11 +89,6 @@
         "title": "What are Data Types & Variables?",
         "url": "https://jenkov.com/tutorials/java/data-types.html",
         "type": "article"
-      },
-      {
-        "title": "Java Variables",
-        "url": "https://www.javatpoint.com/java-variables",
-        "type": "article"
       }
     ]
   },
@@ -104,11 +99,6 @@
       {
         "title": "What are Conditional statements?",
         "url": "https://www.educative.io/answers/what-are-conditional-statements-in-programming",
-        "type": "article"
-      },
-      {
-        "title": "Conditionals in Java",
-        "url": "https://www.javatpoint.com/java-if-else",
         "type": "article"
       },
       {
@@ -143,11 +133,6 @@
     "title": "Loops",
     "description": "In Java and other programming languages, loops are used to iterate a part of the program several times. There are four types of loops in Java, `for`, `forEach`, `while`, and `do...while`.\n\n*   Syntax of `for` loop is `for(initialization;condition;increment/decrement){}`\n*   Syntax of `forEach` loop is `for(data_type variable:array_name){}`\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "What are loops in Java?",
-        "url": "https://www.javatpoint.com/java-for-loop",
-        "type": "article"
-      },
       {
         "title": "Loops in Java.",
         "url": "https://www.programiz.com/java-programming/for-loop",
@@ -495,11 +480,6 @@
         "title": "Packages in Java",
         "url": "https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html",
         "type": "article"
-      },
-      {
-        "title": "Java Package",
-        "url": "https://www.javatpoint.com/package",
-        "type": "article"
       }
     ]
   },
@@ -706,11 +686,6 @@
       },
       {
         "title": "Generics in Java",
-        "url": "https://www.javatpoint.com/generics-in-java",
-        "type": "article"
-      },
-      {
-        "title": "Generics in Java",
         "url": "https://www.youtube.com/watch?v=XMvznsY02Mk",
         "type": "video"
       }
@@ -738,7 +713,7 @@
     "links": [
       {
         "title": "Exception Handling in Java",
-        "url": "https://www.javatpoint.com/exception-handling-in-java",
+        "url": "https://www.tpointtech.com/exception-handling-in-java",
         "type": "article"
       },
       {
@@ -877,11 +852,6 @@
         "type": "article"
       },
       {
-        "title": "Gradle",
-        "url": "https://www.javatpoint.com/gradle",
-        "type": "article"
-      },
-      {
         "title": "Building Spring Boot Projects with Gradle",
         "url": "https://www.baeldung.com/spring-boot-gradle-plugin",
         "type": "article"
@@ -958,11 +928,6 @@
       {
         "title": "How To Work With Files In Java",
         "url": "https://www.marcobehler.com/guides/java-files",
-        "type": "article"
-      },
-      {
-        "title": "Java File Class",
-        "url": "https://www.javatpoint.com/java-file-class",
         "type": "article"
       },
       {
@@ -1152,11 +1117,6 @@
     "description": "Java provides a new additional package in Java 8 called java.util.stream. This package consists of classes, interfaces and enum to allows functional-style operations on the elements. You can use stream by importing java.util.stream package.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Java 8 Stream",
-        "url": "https://www.javatpoint.com/java-8-stream",
-        "type": "article"
-      },
-      {
         "title": "The Java 8 Stream API Tutorial",
         "url": "https://www.baeldung.com/java-8-streams",
         "type": "article"
@@ -1246,11 +1206,6 @@
         "type": "article"
       },
       {
-        "title": "Spring Data JPA Tutorial",
-        "url": "https://www.javatpoint.com/spring-and-jpa-integration",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Spring Framework",
         "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
         "type": "article"
@@ -1274,11 +1229,6 @@
       {
         "title": "Hibernate",
         "url": "https://hibernate.org/",
-        "type": "article"
-      },
-      {
-        "title": "Hibernate Tutorial",
-        "url": "https://www.javatpoint.com/hibernate-tutorial",
         "type": "article"
       },
       {
@@ -1316,11 +1266,6 @@
       {
         "title": "Introduction to Java Logging",
         "url": "https://www.baeldung.com/java-logging-intro",
-        "type": "article"
-      },
-      {
-        "title": "Java Logger",
-        "url": "https://www.javatpoint.com/java-logger",
         "type": "article"
       },
       {

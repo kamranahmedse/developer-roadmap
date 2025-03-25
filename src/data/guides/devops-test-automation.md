@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-test-automation-nvpbi.jpg'
 relatedGuidesTitle: 'Other Guides'
 relatedGuidesId: devops
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-16
 sitemap:

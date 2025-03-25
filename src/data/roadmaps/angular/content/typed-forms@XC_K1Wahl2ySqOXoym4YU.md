@@ -4,7 +4,7 @@ Since Angular 14, reactive forms are strictly typed by default. You don't have t
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @let](https://angular.dev/api/core/@let)
+- [@official@Angular Official Docs - Typed Forms](https://angular.dev/guide/forms/typed-forms)
 - [@article@Angular Strictly Typed Forms (Complete Guide)](https://blog.angular-university.io/angular-typed-forms/)
 - [@video@Getting started with typed reactive forms in Angular](https://www.youtube.com/watch?v=mT3UR0TdDnU)
 - [@video@Angular TYPED Forms: Are You Using Them Correctly?](https://www.youtube.com/watch?v=it2BZoIvBPc)

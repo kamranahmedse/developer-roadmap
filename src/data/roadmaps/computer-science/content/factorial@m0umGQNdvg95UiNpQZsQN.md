@@ -16,7 +16,7 @@ def generate_permutations(s):
         # Current character
         current_char = s[i]
         # Remaining characters
-        remaining_chars = s[:i] + s[i+1:]
+        remaining_chars = s[:i] + s[i + 1 :]
         # Generate all permutations of the remaining characters
         for perm in generate_permutations(remaining_chars):
             # Add the current character to the front of each generated permutation

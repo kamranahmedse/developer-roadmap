@@ -126,7 +126,7 @@
   },
   "-DJgS6l2qngfwurExlmmT": {
     "title": "Functions, Builtin Functions",
-    "description": "In programming, a function is a reusable block of code that executes a certain functionality when it is called. Functions are integral parts of every programming language because they help make your code more modular and reusable. In Python, we define a function with the `def` keyword, then write the function identifier (name) followed by parentheses and a colon.\n\nExample\n-------\n\n    def greet(name):\n        print(f\"Hello, {name}!\")\n    \n    greet(\"Roadmap.sh\")     \n    \n\nVisit the following resources to learn more:",
+    "description": "In programming, a function is a reusable block of code that executes a certain functionality when it is called. Functions are integral parts of every programming language because they help make your code more modular and reusable. In Python, we define a function with the `def` keyword, then write the function identifier (name) followed by parentheses and a colon.\n\nExample\n-------\n\n    def greet(name):\n        print(f\"Hello, {name}!\")\n    \n    \n    greet(\"Roadmap.sh\")\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Built-in Functions in Python",
@@ -699,11 +699,6 @@
       {
         "title": "Python Inheritance",
         "url": "https://www.w3schools.com/python/python_inheritance.asp",
-        "type": "article"
-      },
-      {
-        "title": "Inheritance in Python",
-        "url": "https://www.javatpoint.com/inheritance-in-python",
         "type": "article"
       }
     ]

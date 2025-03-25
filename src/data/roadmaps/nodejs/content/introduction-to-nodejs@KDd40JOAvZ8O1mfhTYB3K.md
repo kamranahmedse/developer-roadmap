@@ -6,6 +6,6 @@ It is used for server-side programming, and primarily deployed for non-blocking,
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://nodejs.org/en/)
-- [@official@Official Documentation](https://nodejs.org/en/docs/)
+- [@official@Node.js](https://nodejs.org/en/)
+- [@official@Node.js Documentation](https://nodejs.org/en/docs/)
 - [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

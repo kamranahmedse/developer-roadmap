@@ -1,9 +1,16 @@
 import { SearchIcon, WandIcon } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UserCoursesList } from './UserCoursesList';
+import { FineTuneCourse } from './FineTuneCourse';
+import {
+  clearFineTuneData,
+  getCourseFineTuneData,
+  getLastSessionId,
+  storeFineTuneData,
+} from '../../lib/ai';
 
 export const difficultyLevels = [
   'beginner',
@@ -18,6 +25,27 @@ export function AICourse(props: AICourseProps) {
   const [keyword, setKeyword] = useState('');
   const [difficulty, setDifficulty] = useState<DifficultyLevel>('beginner');
 
+  const [hasFineTuneData, setHasFineTuneData] = useState(false);
+  const [about, setAbout] = useState('');
+  const [goal, setGoal] = useState('');
+  const [customInstructions, setCustomInstructions] = useState('');
+
+  useEffect(() => {
+    const lastSessionId = getLastSessionId();
+    if (!lastSessionId) {
+      return;
+    }
+
+    const fineTuneData = getCourseFineTuneData(lastSessionId);
+    if (!fineTuneData) {
+      return;
+    }
+
+    setAbout(fineTuneData.about);
+    setGoal(fineTuneData.goal);
+    setCustomInstructions(fineTuneData.customInstructions);
+  }, []);
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && keyword.trim()) {
       onSubmit();
@@ -30,7 +58,17 @@ export function AICourse(props: AICourseProps) {
       return;
     }
 
-    window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}`;
+    let sessionId = '';
+    if (hasFineTuneData) {
+      clearFineTuneData();
+      sessionId = storeFineTuneData({
+        about,
+        goal,
+        customInstructions,
+      });
+    }
+
+    window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
   }
 
   return (
@@ -97,6 +135,17 @@ export function AICourse(props: AICourseProps) {
                 ))}
               </div>
             </div>
+
+            <FineTuneCourse
+              hasFineTuneData={hasFineTuneData}
+              setHasFineTuneData={setHasFineTuneData}
+              about={about}
+              goal={goal}
+              customInstructions={customInstructions}
+              setAbout={setAbout}
+              setGoal={setGoal}
+              setCustomInstructions={setCustomInstructions}
+            />
 
             <button
               type="submit"

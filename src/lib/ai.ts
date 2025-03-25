@@ -55,6 +55,45 @@ export function generateAiCourseStructure(
   };
 }
 
+type CourseFineTuneData = {
+  about: string;
+  goal: string;
+  customInstructions: string;
+};
+
+export function storeFineTuneData(meta: CourseFineTuneData) {
+  const sessionId = Date.now().toString();
+
+  localStorage.setItem(sessionId, JSON.stringify(meta));
+  localStorage.setItem('lastSessionId', sessionId);
+
+  return sessionId;
+}
+
+export function getCourseFineTuneData(
+  sessionId: string,
+): CourseFineTuneData | null {
+  const meta = localStorage.getItem(sessionId);
+  if (!meta) {
+    return null;
+  }
+
+  return JSON.parse(meta);
+}
+
+export function getLastSessionId(): string | null {
+  return localStorage.getItem('lastSessionId');
+}
+
+export function clearFineTuneData() {
+  const sessionId = getLastSessionId();
+  if (sessionId) {
+    localStorage.removeItem(sessionId);
+  }
+
+  localStorage.removeItem('lastSessionId');
+}
+
 const NEW_LINE = '\n'.charCodeAt(0);
 
 export async function readAIRoadmapStream(

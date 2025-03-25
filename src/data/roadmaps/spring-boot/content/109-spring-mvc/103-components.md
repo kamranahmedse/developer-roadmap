@@ -12,7 +12,3 @@ The Spring MVC (Model-View-Controller) framework has several key components that
 - `HandlerAdapter`: This is used to handle the request and generate the response.
 
 There are other supporting components that are used to manage the lifecycle of the application's objects, such as the Spring IoC container and different interceptors that provides additional functionality, such as caching and security.
-
-For more information, visit the following links:
-
-- [@article@Spring Boot vs Spring MVC: How do They Compare?](https://www.javatpoint.com/spring-vs-spring-boot-vs-spring-mvc)
