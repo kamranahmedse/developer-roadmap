@@ -1028,11 +1028,6 @@
     "description": "In TypeScript, external modules allow you to organize and share code across multiple files. External modules in TypeScript follow the CommonJS or ES modules standards.\n\nHere's an example of how you can use external modules in TypeScript:\n\n    // myModule.ts\n    export function doSomething() {\n      console.log('Doing something...');\n    }\n    \n    // main.ts\n    import { doSomething } from './myModule';\n    doSomething(); // Output: \"Doing something...\"\n    \n\nIn this example, we use the \"export\" keyword in the \"myModule.ts\" file to export the \"doSomething\" function, making it available for other files to use.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "External Module",
-        "url": "https://www.javatpoint.com/typescript-module",
-        "type": "article"
-      },
-      {
         "title": "TypeScript - External Module",
         "url": "https://learncodeweb.com/typescript/modules-in-typescript-explain-with-an-example/",
         "type": "article"
