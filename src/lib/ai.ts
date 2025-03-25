@@ -126,7 +126,7 @@ export async function readAIRoadmapStream(
       for (let i = 0; i < value.length; i++) {
         if (value[i] === NEW_LINE) {
           result += decoder.decode(value.slice(start, i + 1));
-          onStream?.(result);
+          await onStream?.(result);
           start = i + 1;
         }
       }
@@ -136,8 +136,8 @@ export async function readAIRoadmapStream(
     }
   }
 
-  onStream?.(result);
-  onStreamEnd?.(result);
+  await onStream?.(result);
+  await onStreamEnd?.(result);
   reader.releaseLock();
 }
 

@@ -4,7 +4,6 @@ import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generat
 import {
   generateAICourseRoadmapStructure,
   readAIRoadmapStream,
-  type AiCourse,
   type ResultItem,
 } from '../../lib/ai';
 import {
@@ -128,7 +127,31 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
 
       const nodeId = targetGroup?.dataset?.nodeId;
       const nodeType = targetGroup?.dataset?.type;
-      if (!nodeId || !nodeType || nodeType !== 'subtopic') {
+      if (!nodeId || !nodeType) {
+        return null;
+      }
+
+      if (nodeType === 'topic') {
+        const topicIndex = roadmapStructure
+          .filter((item) => item.type === 'topic')
+          .findIndex((item) => item.id === nodeId);
+
+        setExpandedModules((prev) => {
+          const newState: Record<number, boolean> = {};
+          roadmapStructure.forEach((_, idx) => {
+            newState[idx] = false;
+          });
+          newState[topicIndex] = true;
+          return newState;
+        });
+
+        setActiveModuleIndex(topicIndex);
+        setActiveLessonIndex(0);
+        setViewMode('module');
+        return;
+      }
+
+      if (nodeType !== 'subtopic') {
         return null;
       }
 
@@ -156,7 +179,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[200px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
+    <div className="relative mx-auto min-h-[200px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-7xl">
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
           <Loader2Icon className="h-10 w-10 animate-spin stroke-[3px]" />
