@@ -8,5 +8,5 @@ handling to avoid deadlocks and ensure efficient thread scheduling. Commonly use
 semaphores help maintain stability in high-performance multiplayer environments.
 
 Visit the following resources to learn more:
-  
+
 - [@article@Semaphores in Process Synchronization](https://www.geeksforgeeks.org/semaphores-in-process-synchronization/)

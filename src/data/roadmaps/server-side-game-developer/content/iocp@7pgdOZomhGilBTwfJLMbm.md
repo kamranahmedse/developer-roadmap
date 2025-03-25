@@ -9,5 +9,6 @@ minimizing CPU overhead and improving scalability. By leveraging IOCP, game serv
 efficiently handle thousands of connections with minimal latency, making it the preferred 
 choice for high-performance Windows-based game networking.  
 
-Resources:  
+Visit the following resources to learn more:
+
 - [@documentation@Microsoft IOCP Documentation](https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports)  

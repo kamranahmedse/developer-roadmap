@@ -8,5 +8,6 @@ connections. However, it is generally less efficient than `epoll` on Linux due t
 scanning mechanism. For high-performance game servers on Windows, IOCP (I/O Completion Ports) 
 is often preferred over `WSA-Poll`.  
 
-Resources:  
+Visit the following resources to learn more:
+
 - [@documentation@Microsoft WSA-Poll Documentation](https://learn.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-wsapoll)

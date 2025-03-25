@@ -8,6 +8,7 @@ system calls by using a shared memory ring buffer between the kernel and user sp
 context switching overhead. This results in improved scalability and responsiveness, allowing 
 game servers to handle thousands of concurrent connections with minimal CPU usage.  
 
-Resources:  
+Visit the following resources to learn more:
+
 - [@documentation@Linux io_uring_enter](https://man7.org/linux/man-pages/man2/io_uring_enter.2.html)
 - [@article@Efficient Networking with io_uring](https://lwn.net/Articles/776703/)

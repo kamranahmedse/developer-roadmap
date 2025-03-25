@@ -8,6 +8,7 @@ a large number of concurrent connections. Despite its drawbacks, it remains usef
 simpler applications or legacy systems. Modern alternatives like `epoll` or `kqueue` offer 
 better performance and scalability.  
 
-Resources:  
+Visit the following resources to learn more:
+
 - [@documentation@Linux select API](https://man7.org/linux/man-pages/man2/select.2.html)
 - [@article@select vs epoll vs poll](https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/)
