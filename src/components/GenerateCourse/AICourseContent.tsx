@@ -4,8 +4,8 @@ import {
   CircleAlert,
   CircleOff,
   Menu,
-  Play,
   X,
+  Map,
 } from 'lucide-react';
 import { useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
@@ -19,7 +19,6 @@ import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
 import { AILimitsPopup } from './AILimitsPopup';
 import { AICourseOutlineView } from './AICourseOutlineView';
 import { AICourseRoadmapView } from './AICourseRoadmapView';
-import { AIRoadmapViewSwitch } from './AIRoadmapViewSwitch';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -291,19 +290,6 @@ export function AICourseContent(props: AICourseContentProps) {
               onUpgrade={() => setShowUpgradeModal(true)}
               onShowLimits={() => setShowAILimitsPopup(true)}
             />
-
-            {viewMode === 'module' && (
-              <button
-                onClick={() => {
-                  setExpandedModules({});
-                  setViewMode('outline');
-                }}
-                className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
-              >
-                <BookOpenCheck size={18} className="mr-2" />
-                View Course Outline
-              </button>
-            )}
           </div>
         </div>
       </header>
@@ -339,36 +325,38 @@ export function AICourseContent(props: AICourseContentProps) {
                   )}
                 ></span>
 
-                {viewMode === 'module' && (
+                <div className="flex gap-0 rounded-md bg-white p-0.5">
                   <button
                     onClick={() => {
                       setExpandedModules({});
                       setViewMode('outline');
                     }}
-                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
+                    className={cn(
+                      'flex items-center gap-1 rounded px-2 py-1 text-xs transition-colors',
+                      viewMode === 'outline'
+                        ? 'bg-gray-200 text-gray-900'
+                        : 'text-gray-600 hover:bg-gray-50',
+                    )}
                   >
                     <BookOpenCheck size={14} />
-                    View Outline
+                    Outline
                   </button>
-                )}
-
-                {viewMode !== 'module' && (
                   <button
                     onClick={() => {
-                      setExpandedModules({
-                        ...expandedModules,
-                        0: true,
-                      });
-                      setActiveModuleIndex(0);
-                      setActiveLessonIndex(0);
-                      setViewMode('module');
+                      setExpandedModules({});
+                      setViewMode('roadmap');
                     }}
-                    className="flex items-center gap-1 rounded-md bg-gray-200 px-2.5 py-1.5 text-xs transition-colors hover:bg-gray-300"
+                    className={cn(
+                      'flex items-center gap-1 rounded px-2 py-1 text-xs transition-colors',
+                      viewMode === 'roadmap'
+                        ? 'bg-gray-200 text-gray-900'
+                        : 'text-gray-600 hover:bg-gray-50',
+                    )}
                   >
-                    <Play size={14} />
-                    Start Course
+                    <Map size={14} />
+                    Map
                   </button>
-                )}
+                </div>
               </div>
             )}
 
