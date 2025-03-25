@@ -292,12 +292,18 @@ export function AICourseContent(props: AICourseContentProps) {
               onShowLimits={() => setShowAILimitsPopup(true)}
             />
 
-            <AIRoadmapViewSwitch
-              viewMode={viewMode}
-              setViewMode={setViewMode}
-              isLoading={isLoading}
-              variant="text"
-            />
+            {viewMode === 'module' && (
+              <button
+                onClick={() => {
+                  setExpandedModules({});
+                  setViewMode('outline');
+                }}
+                className="flex flex-shrink-0 items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 max-lg:hidden"
+              >
+                <BookOpenCheck size={18} className="mr-2" />
+                View Course Outline
+              </button>
+            )}
           </div>
         </div>
       </header>
