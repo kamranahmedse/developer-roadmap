@@ -2,8 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import {
   BookOpen,
   Bot,
-  Code,
-  Globe, Hammer,
+  Hammer,
   HelpCircle,
   LockIcon,
   Send,
@@ -22,6 +21,7 @@ import {
 } from '../../lib/markdown';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
+import { billingDetailsOptions } from '../../queries/billing';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -70,7 +70,11 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
     queryClient,
   );
 
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -247,15 +251,20 @@ export function AICourseFollowUpPopover(props: AICourseFollowUpPopoverProps) {
         {isLimitExceeded && (
           <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
             <LockIcon className="size-4 cursor-not-allowed" strokeWidth={2.5} />
-            <p className="cursor-not-allowed">Limit reached for today</p>
-            <button
-              onClick={() => {
-                onUpgradeClick();
-              }}
-              className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-            >
-              Upgrade for more
-            </button>
+            <p className="cursor-not-allowed">
+              Limit reached for today
+              {isPaidUser ? '. Please wait until tomorrow.' : ''}
+            </p>
+            {!isPaidUser && (
+              <button
+                onClick={() => {
+                  onUpgradeClick();
+                }}
+                className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+              >
+                Upgrade for more
+              </button>
+            )}
           </div>
         )}
         <TextareaAutosize

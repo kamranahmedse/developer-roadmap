@@ -40,17 +40,20 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
         />
       )}
 
-      <div className="absolute right-3 top-3" ref={ref}>
+      <div ref={ref} className="flex relative items-stretch">
         <button
-          className={cn('text-gray-400 hover:text-black', {
-            'text-black': isDropdownVisible,
-          })}
+          className={cn(
+            'rounded-md px-2.5 text-gray-400 hover:text-black',
+            {
+              'text-black': isDropdownVisible,
+            },
+          )}
           onClick={() => setIsDropdownVisible(!isDropdownVisible)}
         >
           <PenSquare className="text-current" size={16} strokeWidth={2.5} />
         </button>
         {isDropdownVisible && (
-          <div className="absolute right-0 top-full min-w-[170px] overflow-hidden rounded-md border border-gray-200 bg-white">
+          <div className="absolute right-0 top-full translate-y-1 min-w-[170px] overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
             <button
               onClick={() => {
                 onRegenerateOutline();
