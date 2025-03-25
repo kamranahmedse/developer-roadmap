@@ -16,6 +16,7 @@ type AICourseOutlineViewProps = {
   setSidebarOpen: (open: boolean) => void;
   setViewMode: (mode: AICourseViewMode) => void;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;
+  viewMode: AICourseViewMode;
 };
 
 export function AICourseOutlineView(props: AICourseOutlineViewProps) {
@@ -28,6 +29,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
     setSidebarOpen,
     setViewMode,
     setExpandedModules,
+    viewMode,
   } = props;
 
   const aiCourseProgress = course.done || [];
@@ -38,6 +40,8 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
         course={course}
         isLoading={isLoading}
         onRegenerateOutline={onRegenerateOutline}
+        viewMode={viewMode}
+        setViewMode={setViewMode}
       />
       {course.title ? (
         <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">

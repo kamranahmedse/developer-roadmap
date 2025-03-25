@@ -36,6 +36,7 @@ export type AICourseRoadmapViewProps = {
   setViewMode: (mode: AICourseViewMode) => void;
   onUpgradeClick: () => void;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;
+  viewMode: AICourseViewMode;
 };
 
 export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
@@ -50,6 +51,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
     setViewMode,
     setExpandedModules,
     onUpgradeClick,
+    viewMode,
   } = props;
 
   const containerEl = useRef<HTMLDivElement>(null);
@@ -212,6 +214,8 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
           setViewMode('outline');
           onRegenerateOutline(prompt);
         }}
+        viewMode={viewMode}
+        setViewMode={setViewMode}
       />
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">

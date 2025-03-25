@@ -40,7 +40,7 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
         />
       )}
 
-      <div className="absolute right-3 top-3" ref={ref}>
+      <div ref={ref} className="flex items-center">
         <button
           className={cn('text-gray-400 hover:text-black', {
             'text-black': isDropdownVisible,

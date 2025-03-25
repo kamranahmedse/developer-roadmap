@@ -428,6 +428,7 @@ export function AICourseContent(props: AICourseContentProps) {
               setSidebarOpen={setSidebarOpen}
               setViewMode={setViewMode}
               setExpandedModules={setExpandedModules}
+              viewMode={viewMode}
             />
           )}
 
@@ -443,6 +444,7 @@ export function AICourseContent(props: AICourseContentProps) {
               setViewMode={setViewMode}
               setExpandedModules={setExpandedModules}
               onUpgradeClick={() => setShowUpgradeModal(true)}
+              viewMode={viewMode}
             />
           )}
 
