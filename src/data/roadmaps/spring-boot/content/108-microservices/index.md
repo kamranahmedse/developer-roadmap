@@ -5,6 +5,5 @@ Spring Microservices is a framework that makes it easier to build and manage mic
 For more resources, visit the following links:
 
 - [@official@Microservices with Spring](https://spring.io/microservices)
-- [@article@Microservices Tutorial](https://www.javatpoint.com/microservices)
 - [@article@Microservices with Spring Boot ](https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-intro-to-microservices-part-1-c0d24cd422c3)
 - [@feed@Explore top posts about Microservices](https://app.daily.dev/tags/microservices?ref=roadmapsh)

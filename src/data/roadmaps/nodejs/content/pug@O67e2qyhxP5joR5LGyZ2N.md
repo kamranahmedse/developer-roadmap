@@ -6,7 +6,7 @@ Pug is a high-performance template engine heavily influenced by Haml and impleme
 
 Visit the following resources to learn more:
 
-- [@article@Getting started with PugJs](https://pugjs.org/api/getting-started.html)
+- [@official@Getting started with PugJs](https://pugjs.org/api/getting-started.html)
 - [@article@How to Build a Node Application Using a Pug Template](https://blog.bitsrc.io/how-to-build-a-node-application-using-a-pug-template-7319ab1bba69?gi=40b338891148)
 - [@video@Node.js + Express - Tutorial - PugJS Templating Engine](https://www.youtube.com/watch?v=DSp9ExFw3Ig)
 - [@article@Pug.js tutorial](https://zetcode.com/javascript/pugjs/)

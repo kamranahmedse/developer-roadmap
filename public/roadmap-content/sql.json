@@ -21,12 +21,7 @@
     "links": [
       {
         "title": "Advantages and Disadvantages of DBMS",
-        "url": "https://www.javatpoint.com/advantages-and-disadvantages-of-dbms",
-        "type": "article"
-      },
-      {
-        "title": "ACID Transactions in Databases",
-        "url": "https://www.databricks.com/glossary/acid-transactions",
+        "url": "https://cloud.google.com/learn/what-is-a-relational-database",
         "type": "article"
       }
     ]
@@ -947,11 +942,6 @@
     "title": "CEILING",
     "description": "The `CEILING()` function in SQL returns the smallest integer greater than or equal to a given numeric value. It's useful when you need to round up a number to the nearest whole number, regardless of whether the number is already an integer or a decimal. For example, `CEILING(4.2)` would return `5`, and `CEILING(-4.7)` would return `-4`. This function is commonly used in scenarios where rounding up is necessary, such as calculating the number of pages needed to display a certain number of items when each page has a fixed capacity.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "CEILING Function in SQL",
-        "url": "https://www.javatpoint.com/ceiling-function-in-sql",
-        "type": "article"
-      },
       {
         "title": "SQL CEILING",
         "url": "https://www.w3schools.com/sql/func_sqlserver_ceiling.asp",

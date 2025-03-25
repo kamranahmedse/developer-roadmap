@@ -379,8 +379,13 @@
         "type": "article"
       },
       {
-        "title": "Explore top posts about React Hooks",
-        "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh",
+        "title": "Angular Lifecycle Hooks — Everything you need to know",
+        "url": "https://medium.com/@sinanozturk/angular-component-lifecycle-hooks-2f600c48dff3",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Angular LifeCycle Hooks",
+        "url": "https://dev.to/search?utf8=%E2%9C%93&q=angular+hook",
         "type": "article"
       }
     ]
@@ -1156,18 +1161,8 @@
         "type": "article"
       },
       {
-        "title": "What is an Angular Service",
-        "url": "https://www.javatpoint.com/what-is-an-angular-service",
-        "type": "article"
-      },
-      {
         "title": "Service for API Calls",
         "url": "https://www.knowledgehut.com/blog/web-development/make-api-calls-angular",
-        "type": "article"
-      },
-      {
-        "title": "Service Tutorial with Example",
-        "url": "https://www.positronx.io/angular-service-tutorial-with-example/",
         "type": "article"
       }
     ]
@@ -1224,11 +1219,6 @@
         "type": "article"
       },
       {
-        "title": "Angular Reactive Forms",
-        "url": "https://www.javatpoint.com/angular-reactive-forms",
-        "type": "article"
-      },
-      {
         "title": "How To Use Reactive Forms in Angular",
         "url": "https://www.digitalocean.com/community/tutorials/angular-reactive-forms-introduction",
         "type": "article"
@@ -1250,8 +1240,8 @@
     "description": "Since Angular 14, reactive forms are strictly typed by default. You don't have to define extra custom types or add a ton of type annotations to your form declarations to benefit from this extra type safety, as Angular will infer types from the default value of a form control. Non-typed forms are still supported. To use them, you must import the `Untyped` symbols from `@angular/forms`.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Angular Official Docs - @let",
-        "url": "https://angular.dev/api/core/@let",
+        "title": "Angular Official Docs - Typed Forms",
+        "url": "https://angular.dev/guide/forms/typed-forms",
         "type": "article"
       },
       {

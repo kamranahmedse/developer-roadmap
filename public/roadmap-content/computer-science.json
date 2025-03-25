@@ -337,11 +337,6 @@
         "type": "article"
       },
       {
-        "title": "Data Structures and Algorithms",
-        "url": "https://www.javatpoint.com/data-structure-tutorial",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Data Structures",
         "url": "https://app.daily.dev/tags/data-structures?ref=roadmapsh",
         "type": "article"
@@ -1033,7 +1028,7 @@
   },
   "m0umGQNdvg95UiNpQZsQN": {
     "title": "Factorial",
-    "description": "Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst case scenario for an algorithm. Factorial complexity algorithms are very inefficient and should be avoided.\n\n    def generate_permutations(s):\n        # Base case: If the string length is 1, return a list containing the string\n        if len(s) == 1:\n            return [s]\n    \n        # Initialize the result list\n        permutations = []\n    \n        # Recursively generate all permutations\n        for i in range(len(s)):\n            # Current character\n            current_char = s[i]\n            # Remaining characters\n            remaining_chars = s[:i] + s[i+1:]\n            # Generate all permutations of the remaining characters\n            for perm in generate_permutations(remaining_chars):\n                # Add the current character to the front of each generated permutation\n                permutations.append(current_char + perm)\n    \n        return permutations",
+    "description": "Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst case scenario for an algorithm. Factorial complexity algorithms are very inefficient and should be avoided.\n\n    def generate_permutations(s):\n        # Base case: If the string length is 1, return a list containing the string\n        if len(s) == 1:\n            return [s]\n    \n        # Initialize the result list\n        permutations = []\n    \n        # Recursively generate all permutations\n        for i in range(len(s)):\n            # Current character\n            current_char = s[i]\n            # Remaining characters\n            remaining_chars = s[:i] + s[i + 1 :]\n            # Generate all permutations of the remaining characters\n            for perm in generate_permutations(remaining_chars):\n                # Add the current character to the front of each generated permutation\n                permutations.append(current_char + perm)\n    \n        return permutations",
     "links": []
   },
   "7a6-AnBI-3tAU1dkOvPkx": {
@@ -1042,7 +1037,7 @@
     "links": [
       {
         "title": "Top Algorithms and Data Structures",
-        "url": "https://towardsdatascience.com/top-algorithms-and-data-structures-you-really-need-to-know-ab9a2a91c7b5",
+        "url": "https://medium.com/data-science/top-algorithms-and-data-structures-you-really-need-to-know-ab9a2a91c7b5",
         "type": "article"
       }
     ]
@@ -1799,11 +1794,6 @@
         "type": "course"
       },
       {
-        "title": "The Knuth-Morris-Pratt (KMP)Algorithm",
-        "url": "https://www.javatpoint.com/daa-knuth-morris-pratt-algorithm",
-        "type": "article"
-      },
-      {
         "title": "9.1 Knuth-Morris-Pratt KMP String Matching Algorithm",
         "url": "https://www.youtube.com/watch?v=V5-7GzOfADQ",
         "type": "video"
@@ -1818,11 +1808,6 @@
         "title": "Boyer Moore Algorithm",
         "url": "https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore",
         "type": "course"
-      },
-      {
-        "title": "The Boyer-Moore Algorithm",
-        "url": "https://www.javatpoint.com/daa-boyer-moore-algorithm",
-        "type": "article"
       }
     ]
   },

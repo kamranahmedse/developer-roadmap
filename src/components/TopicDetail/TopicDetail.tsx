@@ -323,8 +323,8 @@ export function TopicDetail(props: TopicDetailProps) {
   const resourceTitleForSearch = resourceTitle
     ?.toLowerCase()
     ?.replace(/\s+?roadmap/gi, '');
-  const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
-  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitleForSearch}`;
+  const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} guide for ${encodeURIComponent(resourceTitleForSearch || '')}`;
+  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} for ${encodeURIComponent(resourceTitleForSearch || '')}`;
 
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';

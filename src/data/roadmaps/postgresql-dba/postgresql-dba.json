@@ -6518,7 +6518,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Tenser",
+        "label": "Tensor",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

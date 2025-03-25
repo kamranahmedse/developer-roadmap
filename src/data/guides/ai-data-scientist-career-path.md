@@ -7,7 +7,7 @@ seo:
   title: 'Is Data Science a Good Career? Advice From a Pro'
   description: 'Is data science a good career choice? Learn from a professional about the benefits, growth potential, and how to thrive in this exciting field.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/is-data-science-a-good-career-10j3j.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-28
 sitemap:
