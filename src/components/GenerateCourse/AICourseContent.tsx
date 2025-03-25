@@ -435,6 +435,9 @@ export function AICourseContent(props: AICourseContentProps) {
             <AICourseRoadmapView
               done={course.done}
               courseSlug={courseSlug!}
+              course={course}
+              isLoading={isLoading}
+              onRegenerateOutline={onRegenerateOutline}
               setActiveModuleIndex={setActiveModuleIndex}
               setActiveLessonIndex={setActiveLessonIndex}
               setViewMode={setViewMode}

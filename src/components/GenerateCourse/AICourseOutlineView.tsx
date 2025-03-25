@@ -1,4 +1,3 @@
-import { RegenerateOutline } from './RegenerateOutline';
 import { cn } from '../../lib/classname';
 import type { AiCourse } from '../../lib/ai';
 import { slugify } from '../../lib/slugger';
@@ -6,6 +5,7 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import type { Dispatch, SetStateAction } from 'react';
 import { Loader2Icon } from 'lucide-react';
 import type { AICourseViewMode } from './AICourseContent';
+import { AICourseOutlineHeader } from './AICourseOutlineHeader';
 
 type AICourseOutlineViewProps = {
   course: AiCourse;
@@ -33,26 +33,12 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
   const aiCourseProgress = course.done || [];
 
   return (
-    <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-3xl">
-      <div
-        className={cn(
-          'relative mb-1 flex items-start justify-between border-b border-gray-100 p-6 max-lg:hidden',
-          isLoading && 'striped-loader',
-        )}
-      >
-        <div>
-          <h2 className="mb-1 text-balance text-2xl font-bold max-lg:text-lg max-lg:leading-tight">
-            {course.title || 'Loading course ..'}
-          </h2>
-          <p className="text-sm capitalize text-gray-500">
-            {course.title ? course.difficulty : 'Please wait ..'}
-          </p>
-        </div>
-
-        {!isLoading && (
-          <RegenerateOutline onRegenerateOutline={onRegenerateOutline} />
-        )}
-      </div>
+    <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
+      <AICourseOutlineHeader
+        course={course}
+        isLoading={isLoading}
+        onRegenerateOutline={onRegenerateOutline}
+      />
       {course.title ? (
         <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">
           {course.modules.map((courseModule, moduleIdx) => {

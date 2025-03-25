@@ -22,10 +22,15 @@ import { renderTopicProgress } from '../../lib/resource-progress';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { billingDetailsOptions } from '../../queries/billing';
+import { AICourseOutlineHeader } from './AICourseOutlineHeader';
+import type { AiCourse } from '../../lib/ai';
 
 export type AICourseRoadmapViewProps = {
   done: string[];
   courseSlug: string;
+  course: AiCourse;
+  isLoading: boolean;
+  onRegenerateOutline: (prompt?: string) => void;
   setActiveModuleIndex: (index: number) => void;
   setActiveLessonIndex: (index: number) => void;
   setViewMode: (mode: AICourseViewMode) => void;
@@ -37,6 +42,9 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   const {
     done = [],
     courseSlug,
+    course,
+    isLoading,
+    onRegenerateOutline,
     setActiveModuleIndex,
     setActiveLessonIndex,
     setViewMode,
@@ -47,7 +55,6 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   const containerEl = useRef<HTMLDivElement>(null);
   const [roadmapStructure, setRoadmapStructure] = useState<ResultItem[]>([]);
 
-  const [isLoading, setIsLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -76,7 +83,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
           data?.message || 'Something went wrong',
         );
         setError(data?.message || 'Something went wrong');
-        setIsLoading(false);
+        setIsGenerating(false);
         return;
       }
 
@@ -84,11 +91,10 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
       if (!reader) {
         console.error('Failed to get reader from response');
         setError('Something went wrong');
-        setIsLoading(false);
+        setIsGenerating(false);
         return;
       }
 
-      setIsLoading(false);
       setIsGenerating(true);
       await readAIRoadmapStream(reader, {
         onStream: async (result) => {
@@ -124,7 +130,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
     } catch (error) {
       console.error('Error generating course roadmap:', error);
       setError('Something went wrong');
-      setIsLoading(false);
+      setIsGenerating(false);
     }
   };
 
@@ -138,7 +144,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
 
   const handleNodeClick = useCallback(
     (e: MouseEvent<HTMLDivElement, unknown>) => {
-      if (isLoading || isGenerating) {
+      if (isGenerating) {
         return;
       }
 
@@ -189,7 +195,6 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
       setViewMode('module');
     },
     [
-      isLoading,
       roadmapStructure,
       setExpandedModules,
       setActiveModuleIndex,
@@ -200,13 +205,21 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
 
   return (
     <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
+      <AICourseOutlineHeader
+        course={course}
+        isLoading={isLoading}
+        onRegenerateOutline={(prompt) => {
+          setViewMode('outline');
+          onRegenerateOutline(prompt);
+        }}
+      />
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
           <Loader2Icon className="h-10 w-10 animate-spin stroke-[3px]" />
         </div>
       )}
 
-      {error && !isLoading && !isGenerating && (
+      {error && !isGenerating && (
         <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center">
           <Frown className="size-20 text-red-500" />
           <p className="mx-auto mt-5 max-w-[250px] text-balance text-center text-base text-red-500">
