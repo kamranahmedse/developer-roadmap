@@ -32,7 +32,6 @@ export function AICourseLimit(props: AICourseLimitProps) {
   const totalPercentage = getPercentage(used, limit);
 
   // has consumed 85% of the limit
-  const isNearLimit = used >= limit * 0.85;
   const isPaidUser = userBillingDetails.status === 'active';
 
   return (

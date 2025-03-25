@@ -435,6 +435,7 @@ export function AICourseContent(props: AICourseContentProps) {
               setActiveLessonIndex={setActiveLessonIndex}
               setViewMode={setViewMode}
               setExpandedModules={setExpandedModules}
+              onUpgradeClick={() => setShowUpgradeModal(true)}
             />
           )}
 

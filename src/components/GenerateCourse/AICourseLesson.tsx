@@ -290,7 +290,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 <p className="my-3 text-red-600">
                   You have reached the AI usage limit for today.
                   {!isPaidUser && <>Please upgrade your account to continue.</>}
-                  {isPaidUser && <>Please wait until tomorrow to continue.</>}
+                  {isPaidUser && <>&nbsp;Please wait until tomorrow to continue.</>}
                 </p>
 
                 {!isPaidUser && (
