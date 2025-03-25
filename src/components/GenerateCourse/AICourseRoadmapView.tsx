@@ -199,7 +199,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-7xl">
+    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
           <Loader2Icon className="h-10 w-10 animate-spin stroke-[3px]" />

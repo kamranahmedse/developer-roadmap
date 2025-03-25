@@ -291,14 +291,14 @@ export function AICourseContent(props: AICourseContentProps) {
               onUpgrade={() => setShowUpgradeModal(true)}
               onShowLimits={() => setShowAILimitsPopup(true)}
             />
-          </div>
 
-          <AIRoadmapViewSwitch
-            viewMode={viewMode}
-            setViewMode={setViewMode}
-            isLoading={isLoading}
-            variant="text"
-          />
+            <AIRoadmapViewSwitch
+              viewMode={viewMode}
+              setViewMode={setViewMode}
+              isLoading={isLoading}
+              variant="text"
+            />
+          </div>
         </div>
       </header>
 
