@@ -358,11 +358,6 @@
     "title": "Object Lifecycle",
     "description": "The object lifecycle refers to the series of stages an object goes through from its creation (allocation of memory) to its destruction (reclaiming of memory). These stages typically include object creation, initialization, usage, and eventual garbage collection when the object is no longer needed. Understanding this lifecycle is crucial for efficient memory management and preventing resource leaks.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Object Life Cycle in Java",
-        "url": "https://www.tpointtech.com/object-life-cycle-in-java",
-        "type": "article"
-      }
     ]
   },
   "qdA6bK9ZkP8p0_NH_wMuj": {
@@ -711,11 +706,6 @@
     "title": "Exception Handling",
     "description": "Exception Handling in Java is one of the effective means to handle the runtime errors so that the regular flow of the application can be preserved. Java Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.\n\nThere are three types of exceptions -\n\n1.  Checked Exception - exceptions checked at compile time. Example - IOException\n2.  Unchecked Exception - exceptions checked at run time. Example - NullPointerException\n3.  Error - It is irrecoverable. Example - OutOfMemoryError\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Exception Handling in Java",
-        "url": "https://www.tpointtech.com/exception-handling-in-java",
-        "type": "article"
-      },
       {
         "title": "Understanding Java Exceptions",
         "url": "https://www.youtube.com/watch?v=W-N2ltgU-X4",

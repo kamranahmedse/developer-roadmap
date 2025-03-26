@@ -548,11 +548,6 @@
     "description": "Regression Testing is a type of software testing to confirm that a recent program or code change has not adversely affected existing features. Regression testing is a black box testing technique. Test cases are re-executed to check the previous functionality of the application is working fine and that the new changes have not produced any bugs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Regression Testing",
-        "url": "https://www.tpointtech.com/regression-testing",
-        "type": "article"
-      },
-      {
         "title": "What is Regression Testing with Test Cases",
         "url": "https://www.guru99.com/regression-testing.html",
         "type": "article"
