@@ -424,7 +424,7 @@ export function QuizItem(props: QuizItemProps) {
       </div>
 
       {isLoading && (
-        <div className="absolute right-2 top-2 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-none">
+        <div className="absolute bg-white right-3 top-3 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-none">
           <Loader2Icon className="size-5 animate-spin text-gray-400" />
         </div>
       )}
