@@ -322,7 +322,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           </div>
         )}
 
-        {!isLoading && !isGenerating && (
+        {!isLoading && !isGenerating && !error && (
           <TestMyKnowledgeAction
             courseSlug={courseSlug}
             activeModuleIndex={activeModuleIndex}

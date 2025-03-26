@@ -5,8 +5,8 @@ import {
   CircleIcon,
   CircleXIcon,
   FlaskConicalIcon,
+  FrownIcon,
   Loader2Icon,
-  RotateCcwIcon,
 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import {
@@ -115,17 +115,26 @@ export function TestMyKnowledgeAction(props: TestMyKnowledgeActionProps) {
   };
 
   return (
-    <div className="mt-12 flex flex-col gap-4">
+    <div className="mt-10 flex flex-col gap-4">
       <div className="flex items-center gap-2">
         <button
-          className="flex flex-shrink-0 items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+          className={cn(
+            'flex flex-shrink-0 items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900',
+            {
+              'bg-gray-100 text-gray-900': isKnowledgeTestOpen,
+            },
+          )}
           onClick={() => {
-            if (isGenerating || isLoading || isKnowledgeTestOpen) {
+            if (isGenerating || isLoading) {
               return;
             }
 
-            setIsKnowledgeTestOpen(true);
-            generateAiLessonQuestions();
+            if (!isKnowledgeTestOpen) {
+              setIsKnowledgeTestOpen(true);
+              generateAiLessonQuestions();
+            } else {
+              setIsKnowledgeTestOpen(false);
+            }
           }}
         >
           <FlaskConicalIcon className="size-5 shrink-0" />
@@ -133,7 +142,14 @@ export function TestMyKnowledgeAction(props: TestMyKnowledgeActionProps) {
         </button>
       </div>
 
-      {isKnowledgeTestOpen && (
+      {error && (
+        <div className="flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-lg rounded-xl bg-red-50/80 p-5 text-red-500">
+          <FrownIcon className="size-10 shrink-0" />
+          <span className="font-semibold">{error}</span>
+        </div>
+      )}
+
+      {!error && isKnowledgeTestOpen && (
         <ListQuestions
           isLoading={isLoading}
           isGenerating={isGenerating}
@@ -160,19 +176,36 @@ export function ListQuestions(props: ListQuestionsProps) {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
 
   const activeQuestion = questions[activeQuestionIndex];
-  const handleOptionSelectChange = useCallback(
-    (questionId: string, optionId: string) => {
-      setSelectedAnswers((prev) => {
-        const newSelectedAnswers = { ...prev };
-        const selectedOptionIds = newSelectedAnswers[questionId] ?? [];
-        newSelectedAnswers[questionId] = selectedOptionIds.includes(optionId)
-          ? selectedOptionIds.filter((id) => id !== optionId)
-          : [...selectedOptionIds, optionId];
-        return newSelectedAnswers;
-      });
-    },
-    [],
-  );
+
+  const handleOptionSelectChange = function (
+    questionId: string,
+    optionId: string,
+  ) {
+    setSelectedAnswers((prev) => {
+      const newAnswers = { ...prev };
+
+      const canMultiSelect =
+        activeQuestion.options.filter((option) => option.isCorrect).length > 1;
+      const isAlreadySelected = selectedAnswers[questionId]?.includes(optionId);
+
+      if (isAlreadySelected) {
+        newAnswers[questionId] = newAnswers[questionId].filter(
+          (id) => id !== optionId,
+        );
+      } else {
+        if (canMultiSelect) {
+          newAnswers[questionId] = [
+            ...(newAnswers[questionId] || []),
+            optionId,
+          ];
+        } else {
+          newAnswers[questionId] = [optionId];
+        }
+      }
+
+      return newAnswers;
+    });
+  };
 
   const handleNext = useCallback(() => {
     const isLastQuestion = activeQuestionIndex === questions.length - 1;
@@ -218,7 +251,7 @@ export function ListQuestions(props: ListQuestionsProps) {
   if (isLoading || !questions.length) {
     return (
       <div className="flex h-[306px] w-full items-center justify-center rounded-lg border p-5 text-black">
-        <Loader2Icon className="size-8 animate-spin stroke-[2.5]" />
+        <Loader2Icon className="size-8 animate-spin stroke-[2.5] text-gray-400" />
       </div>
     );
   }
@@ -272,6 +305,9 @@ export function QuizItem(props: QuizItemProps) {
   } = props;
   const { id: questionId, title, options } = question;
 
+  const canMultiSelect =
+    options.filter((option) => option.isCorrect).length > 1;
+
   const correctAnswerIds = options
     .filter((option) => option.isCorrect)
     .map((option) => option.id);
@@ -291,7 +327,22 @@ export function QuizItem(props: QuizItemProps) {
         'border-green-500': hasCorrectAnswer,
       })}
     >
-      <h3 className="mx-2 text-balance text-lg font-medium">{title}</h3>
+      {submitted && (
+        <span
+          className={cn(
+            'absolute right-2 top-2 rounded-lg px-2 py-1 text-sm text-gray-500',
+            {
+              'bg-red-100 text-red-500': hasWrongAnswer,
+              'bg-green-100 text-green-500': hasCorrectAnswer,
+            },
+          )}
+        >
+          {hasWrongAnswer ? 'Wrong' : 'Correct'}
+        </span>
+      )}
+      <h3 className="mx-2 text-balance text-lg font-medium">
+        {title} {canMultiSelect ? '(Select Multiple)' : ''}
+      </h3>
 
       <div className="mt-4 flex flex-col gap-1">
         {options.map((option, index) => {
@@ -324,7 +375,13 @@ export function QuizItem(props: QuizItemProps) {
         <div className="text-gray-500">
           {submitted ? (
             <span>
-              You got {correctAnswerCount} out of {totalQuestions} correct
+              You got {correctAnswerCount} out of {totalQuestions} correct.
+              <button
+                className="relative -top-0.5 ml-1 rounded-md bg-black px-2 py-0.5 text-xs uppercase tracking-wider text-white hover:bg-black/80"
+                onClick={onTryAgain}
+              >
+                Try again?
+              </button>
             </span>
           ) : (
             <span>Answer all questions to submit</span>
@@ -349,19 +406,9 @@ export function QuizItem(props: QuizItemProps) {
         </div>
       </div>
 
-      {submitted && (
-        <button
-          className="absolute right-2 top-2 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-none"
-          onClick={onTryAgain}
-        >
-          <RotateCcwIcon className="size-5 shrink-0" />
-          <span className="max-sm:hidden">Try Again</span>
-        </button>
-      )}
-
       {isLoading && (
         <div className="absolute right-2 top-2 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-none">
-          <Loader2Icon className="size-5 animate-spin" />
+          <Loader2Icon className="size-5 animate-spin text-gray-400" />
         </div>
       )}
     </div>
