@@ -1,4 +1,4 @@
-import { Check, ChevronLeft, Clipboard } from 'lucide-react';
+import { Check, Clipboard } from 'lucide-react';
 import { useAuth } from '../../hooks/use-auth';
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useToast } from '../../hooks/use-toast';
@@ -30,14 +30,6 @@ export function ReferYourFriend(props: ReferYourFriendProps) {
 
   return (
     <div className="p-4">
-      <button
-        onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
-      >
-        <ChevronLeft size={16} />
-        Back to options
-      </button>
-
       <h2 className="text-xl font-semibold text-gray-800">
         Refer your Friends
       </h2>
