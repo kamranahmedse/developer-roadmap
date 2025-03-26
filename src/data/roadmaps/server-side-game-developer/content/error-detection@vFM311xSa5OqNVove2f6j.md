@@ -8,6 +8,7 @@ mechanisms such as cyclic redundancy check (CRC) and parity checks may be used i
 network layers to enhance reliability. Effective error detection minimizes data corruption 
 in multiplayer games, ensuring smooth gameplay and synchronization across players.
 
-Resources:  
+Visit the following resources to learn more:
+
 - [@article@Error Detection Code – Checksum](https://www.geeksforgeeks.org/error-detection-code-checksum/)  
 - [@article@Error Control in TCP](https://www.cisco.com/c/en/us/support/docs/ip/tcp/13733-40.html)
