@@ -808,6 +808,11 @@
         "type": "article"
       },
       {
+        "title": "File system",
+        "url": "https://nodejs.org/docs/latest/api/fs.html",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Node.js",
         "url": "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
         "type": "article"

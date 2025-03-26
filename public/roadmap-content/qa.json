@@ -97,11 +97,6 @@
         "title": "TestLink",
         "url": "https://testlink.org/",
         "type": "article"
-      },
-      {
-        "title": "TestLink Tutorial: A Complete Guide",
-        "url": "https://www.guru99.com/testlink-tutorial-complete-guide.html",
-        "type": "article"
       }
     ]
   },
@@ -553,11 +548,6 @@
     "description": "Regression Testing is a type of software testing to confirm that a recent program or code change has not adversely affected existing features. Regression testing is a black box testing technique. Test cases are re-executed to check the previous functionality of the application is working fine and that the new changes have not produced any bugs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Regression Testing",
-        "url": "https://www.tpointtech.com/regression-testing",
-        "type": "article"
-      },
-      {
         "title": "What is Regression Testing with Test Cases",
         "url": "https://www.guru99.com/regression-testing.html",
         "type": "article"
@@ -675,11 +665,6 @@
         "type": "article"
       },
       {
-        "title": "Agile Model",
-        "url": "https://www.javatpoint.com/software-engineering-agile-model",
-        "type": "article"
-      },
-      {
         "title": "Manifesto for Agile Software Development",
         "url": "https://agilemanifesto.org/",
         "type": "article"
@@ -757,11 +742,6 @@
       {
         "title": "Manual Testing Tutorial: What is, Types, Concepts",
         "url": "https://www.guru99.com/manual-testing.html",
-        "type": "article"
-      },
-      {
-        "title": "Manual Testing",
-        "url": "https://www.javatpoint.com/manual-testing",
         "type": "article"
       },
       {
@@ -1562,11 +1542,6 @@
     "title": "Accessibility Tests",
     "description": "In software QA, accessibility testing is the practice of confirming that an application is usable for as many people as possible, including people with disabilities such as vision impairment, hearing problems and cognitive conditions.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Accessibility Testing - Javatpoint",
-        "url": "https://www.javatpoint.com/accessibility-testing",
-        "type": "article"
-      },
       {
         "title": "Explore top posts about Accessibility",
         "url": "https://app.daily.dev/tags/accessibility?ref=roadmapsh",

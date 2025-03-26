@@ -126,7 +126,7 @@ export async function readAIRoadmapStream(
       for (let i = 0; i < value.length; i++) {
         if (value[i] === NEW_LINE) {
           result += decoder.decode(value.slice(start, i + 1));
-          onStream?.(result);
+          await onStream?.(result);
           start = i + 1;
         }
       }
@@ -136,8 +136,8 @@ export async function readAIRoadmapStream(
     }
   }
 
-  onStream?.(result);
-  onStreamEnd?.(result);
+  await onStream?.(result);
+  await onStreamEnd?.(result);
   reader.releaseLock();
 }
 
@@ -265,4 +265,94 @@ export function generateAiCourseLessonQuestions(
   }
 
   return questions;
+}
+
+export type SubTopic = {
+  id: string;
+  type: 'subtopic';
+  label: string;
+};
+
+export type Topic = {
+  id: string;
+  type: 'topic';
+  label: string;
+  children?: SubTopic[];
+};
+
+export type Label = {
+  id: string;
+  type: 'label';
+  label: string;
+};
+
+export type Title = {
+  id: string;
+  type: 'title';
+  label: string;
+};
+
+export type ResultItem = Title | Topic | Label;
+
+export function generateAICourseRoadmapStructure(
+  data: string,
+  isCourseRoadmap: boolean = false,
+): ResultItem[] {
+  const lines = data.split('\n');
+
+  const result: ResultItem[] = [];
+  let currentTopic: Topic | null = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('###')) {
+      if (currentTopic) {
+        result.push(currentTopic);
+      }
+
+      const label = line.replace('###', '').trim();
+      currentTopic = {
+        id: nanoid(),
+        type: 'topic',
+        label,
+        children: [],
+      };
+    } else if (line.startsWith('##')) {
+      result.push({
+        id: nanoid(),
+        type: 'label',
+        label: line.replace('##', '').trim(),
+      });
+    } else if (i === 0 && line.startsWith('#')) {
+      const title = line.replace('#', '').trim();
+      result.push({
+        id: nanoid(),
+        type: 'title',
+        label: title,
+      });
+    } else if (line.startsWith('-')) {
+      if (currentTopic) {
+        const label = line.replace('-', '').trim();
+
+        let id = nanoid();
+        if (isCourseRoadmap) {
+          const currentTopicIndex = result.length - 1;
+          const subTopicIndex = currentTopic.children?.length || 0;
+          id = `${currentTopicIndex}-${subTopicIndex}`;
+        }
+
+        currentTopic.children?.push({
+          id,
+          type: 'subtopic',
+          label,
+        });
+      }
+    }
+  }
+
+  if (currentTopic) {
+    result.push(currentTopic);
+  }
+
+  return result;
 }

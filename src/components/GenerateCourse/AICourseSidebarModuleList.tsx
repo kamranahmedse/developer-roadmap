@@ -5,6 +5,7 @@ import { cn } from '../../lib/classname';
 import { slugify } from '../../lib/slugger';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { CircularProgress } from './CircularProgress';
+import type { AICourseViewMode } from './AICourseContent';
 
 type AICourseModuleListProps = {
   course: AiCourse;
@@ -16,8 +17,8 @@ type AICourseModuleListProps = {
 
   setSidebarOpen: (open: boolean) => void;
 
-  viewMode: 'module' | 'outline';
-  setViewMode: (mode: 'module' | 'outline') => void;
+  viewMode: AICourseViewMode;
+  setViewMode: (mode: AICourseViewMode) => void;
 
   expandedModules: Record<number, boolean>;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;

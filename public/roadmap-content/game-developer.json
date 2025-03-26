@@ -1407,8 +1407,19 @@
   },
   "sC3omOmL2DOyTSvET5cDa": {
     "title": "Infinite",
-    "description": "",
-    "links": []
+    "description": "Infinite refers to concept that deals with rendering scenes or objects that extend beyond the visible boundaries of the screen. This is crucial for creating immersive environments, as it allows developers to simulate vast landscapes or endless spaces without the need to render every detail at once. Techniques such as level of detail (LOD), culling, and procedural generation are often employed to manage performance while maintaining the illusion of infinity.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Unlocking Infinite Worlds In Gaming",
+        "url": "https://sdlccorp.com/post/procedural-generation-unlocking-infinite-worlds-in-gaming/",
+        "type": "article"
+      },
+      {
+        "title": "Creating Infinite Game Worlds",
+        "url": "https://medium.com/@lemapp09/beginning-game-development-creating-infinite-game-worlds-56f8a2ad5ae5",
+        "type": "article"
+      }
+    ]
   },
   "OcxesFnB5wO6VXrHYnhz-": {
     "title": "Visibility and Occlusion",

@@ -70,27 +70,6 @@ export function visitAIRoadmap(roadmapId: string) {
   });
 }
 
-export function deleteOpenAIKey() {
-  Cookies.remove('oak', {
-    path: '/',
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
-}
-
-export function saveOpenAIKey(apiKey: string) {
-  Cookies.set('oak', apiKey, {
-    path: '/',
-    expires: 365,
-    sameSite: 'lax',
-    secure: true,
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
-}
-
-export function getOpenAIKey() {
-  return Cookies.get('oak');
-}
-
 const AI_REFERRAL_COOKIE_NAME = 'referral_code';
 
 export function setAIReferralCode(code: string) {
