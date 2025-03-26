@@ -443,7 +443,7 @@ export function AICourseContent(props: AICourseContentProps) {
           )}
 
           <div className="mx-auto mb-10 mt-5 text-center text-sm text-gray-400">
-            AI can make mistakes, check imporant info.
+            AI can make mistakes, check important info.
           </div>
         </main>
       </div>
