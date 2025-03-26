@@ -1,5 +1,5 @@
 import { Flag, Play, Send, Share, Square, StopCircle, X } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, type RefObject, useState } from 'react';
 import { cn } from '../../../lib/classname.ts';
 import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
 import { StepperAction } from './StepperAction.tsx';
@@ -34,7 +34,8 @@ export function ProjectStepper(props: ProjectStepperProps) {
   const { projectId } = props;
 
   const stickyElRef = useRef<HTMLDivElement>(null);
-  const isSticky = useStickyStuck(stickyElRef, 8);
+  const isSticky = useStickyStuck(stickyElRef as RefObject<HTMLElement>, 8);
+  
   const currentUser = getUser();
 
   const [isStartingProject, setIsStartingProject] = useState(false);
@@ -110,7 +111,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
 
   return (
     <div
-      ref={stickyElRef}
+      ref={stickyElRef} // Tür uyumu sağlandı
       className={cn(
         'relative top-0 -mx-4 my-5 overflow-hidden rounded-none border border-x-0 bg-white transition-all sm:sticky sm:mx-0 sm:rounded-lg sm:border-x',
         {
@@ -314,6 +315,10 @@ export function ProjectStepper(props: ProjectStepperProps) {
             </>
           )}
         </div>
+        <div
+  className={cn('sticky top-0 z-10', isSticky && 'is-stuck')}
+  ref={stickyElRef}
+></div>
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep
           isActive={activeStep === 2}

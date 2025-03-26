@@ -1,20 +1,7 @@
 import '../GenerateRoadmap/GenerateRoadmap.css';
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
-import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
-import {
-  generateAICourseRoadmapStructure,
-  readAIRoadmapStream,
-  type ResultItem,
-} from '../../lib/ai';
-import {
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-  type Dispatch,
-  type SetStateAction,
-  type MouseEvent,
-} from 'react';
+import { generateAICourseRoadmapStructure, readAIRoadmapStream, type ResultItem } from '../../lib/ai';
+import { useCallback, useEffect, useRef, useState, type Dispatch, type SetStateAction, type MouseEvent } from 'react';
 import type { AICourseViewMode } from './AICourseContent';
 import { replaceChildren } from '../../lib/dom';
 import { Frown, Loader2Icon } from 'lucide-react';
@@ -24,6 +11,7 @@ import { useQuery } from '@tanstack/react-query';
 import { billingDetailsOptions } from '../../queries/billing';
 import { AICourseOutlineHeader } from './AICourseOutlineHeader';
 import type { AiCourse } from '../../lib/ai';
+import { generateAIRoadmapFromText } from '../../utils/roadmapUtils'; // 'someUtilityFunction' kaldırıldı
 
 export type AICourseRoadmapViewProps = {
   done: string[];
@@ -101,15 +89,25 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
       await readAIRoadmapStream(reader, {
         onStream: async (result) => {
           const roadmap = generateAICourseRoadmapStructure(result, true);
-          const { nodes, edges } = generateAIRoadmapFromText(roadmap);
+          const { nodes, edges } = generateAIRoadmapFromText({
+            nodes: roadmap.filter((item) => item.type === 'node' as any) as ResultItem[], 
+            edges: roadmap.filter((item) => item.type === 'edge' as any) as ResultItem[],
+          });
           const svg = await renderFlowJSON({ nodes, edges });
-          replaceChildren(containerEl.current!, svg);
+          if (svg !== undefined && svg !== null) {
+            replaceChildren(containerEl.current!, svg); // Fixed usage
+          }
         },
         onStreamEnd: async (result) => {
           const roadmap = generateAICourseRoadmapStructure(result, true);
-          const { nodes, edges } = generateAIRoadmapFromText(roadmap);
+          const { nodes, edges } = generateAIRoadmapFromText({
+            nodes: roadmap.filter((item) => item.type === 'node' as any) as ResultItem[], 
+            edges: roadmap.filter((item) => item.type === 'edge' as any) as ResultItem[],
+          });
           const svg = await renderFlowJSON({ nodes, edges });
-          replaceChildren(containerEl.current!, svg);
+          if (svg !== undefined && svg !== null) {
+            replaceChildren(containerEl.current!, svg); // Fixed usage
+          }
           setRoadmapStructure(roadmap);
           setIsGenerating(false);
 

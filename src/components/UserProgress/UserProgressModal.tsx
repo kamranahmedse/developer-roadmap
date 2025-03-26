@@ -99,7 +99,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     }
 
     return renderer === 'editor'
-      ? await renderFlowJSON(roadmapJson as any)
+      ? await renderFlowJSON(roadmapJson as any) as SVGElement | undefined
       : await wireframeJSONToSVG(roadmapJson, {
           fontURL: '/fonts/balsamiq.woff2',
         });

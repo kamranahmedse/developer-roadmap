@@ -1,6 +1,5 @@
 import { ChevronDownIcon, StarIcon, User2Icon } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '../../../editor/utils/classname';
 import { markdownToHtml } from '../../lib/markdown';
 
 type Review = {
@@ -110,9 +109,7 @@ export function ReviewsSection() {
   return (
     <div className="relative max-w-5xl">
       <div
-        className={cn('rounded-2xl pb-0 pt-24', {
-          'pb-8': isExpanded,
-        })}
+        className={`rounded-2xl pb-0 pt-24 ${isExpanded ? 'pb-8' : ''}`}
       >
         {/* Prominent Reviews */}
         <div className="mb-4 md:mb-6">
@@ -160,7 +157,7 @@ export function ReviewsSection() {
                       key={index}
                       className="text-zinc-300"
                       dangerouslySetInnerHTML={{
-                        __html: markdownToHtml(text),
+                        __html: markdownToHtml(Array.isArray(review.text) ? review.text.join('') : review.text),
                       }}
                     />
                   ))}
@@ -171,22 +168,18 @@ export function ReviewsSection() {
         </div>
 
         <div
-          className={cn(
-            'relative grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
-            isExpanded ? '' : 'max-h-[400px] overflow-hidden',
-          )}
+          className={`relative grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ${
+            isExpanded ? '' : 'max-h-[400px] overflow-hidden'
+          }`}
         >
           {regularReviews.map((review, index) => (
             <div
               key={index}
-              className={cn(
-                'review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70',
-                {
-                  'bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent':
-                    review.isSecondaryProminent,
-                  'bg-zinc-800/30': !review.isSecondaryProminent,
-                },
-              )}
+              className={`review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70 ${
+                review.isSecondaryProminent
+                  ? 'bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent'
+                  : 'bg-zinc-800/30'
+              }`}
             >
               <div className="flex items-center gap-4">
                 {review.avatarUrl && (
@@ -217,25 +210,24 @@ export function ReviewsSection() {
               <p
                 className="mt-4 text-zinc-300"
                 dangerouslySetInnerHTML={{
-                  __html: markdownToHtml(review.text),
+                  __html: markdownToHtml(Array.isArray(review.text) ? review.text.join('') : review.text),
                 }}
               />
             </div>
           ))}
 
           <div
-            className={cn(
-              'absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent',
-              isExpanded ? 'opacity-0' : 'opacity-100',
-            )}
+            className={`absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent ${
+              isExpanded ? 'opacity-0' : 'opacity-100'
+            }`}
           />
         </div>
       </div>
 
       <div
-        className={cn('absolute left-1/2 top-full -translate-x-1/2', {
-          '-translate-y-1/2': !isExpanded,
-        })}
+        className={`absolute left-1/2 top-full -translate-x-1/2 ${
+          !isExpanded ? '-translate-y-1/2' : ''
+        }`}
       >
         <button
           onClick={() => setIsExpanded(!isExpanded)}

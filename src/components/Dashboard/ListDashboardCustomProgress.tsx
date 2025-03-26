@@ -3,7 +3,6 @@ import { DashboardCustomProgressCard } from './DashboardCustomProgressCard';
 import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { Simulate } from 'react-dom/test-utils';
 import {
   ArrowUpRight,
   Bot,

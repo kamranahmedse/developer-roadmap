@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor Test</title>
+</head>
+<body>
+    <h1>AI Tutor Test</h1>
+
+    <!-- JWT Token Girişi -->
+    <label for="tokenInput">JWT Token:</label>
+    <input type="text" id="tokenInput" placeholder="Enter your JWT token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzQzMDAwMTE0LCJleHAiOjE3NDMwMDM3MTR9.aD_aInBh8jf66iMdp9TuzCJKKhunVsuV9YIfMm_0Blw">
+    <button id="testButton">Send Request</button>
+
+    <!-- Input Data Girişi -->
+    <label for="inputData">Input Data:</label>
+    <input type="text" id="inputData" placeholder="Enter data for calculation">
+    <button id="calculateButton">Calculate</button>
+
+    <!-- Yanıt Gösterimi -->
+    <pre id="response"></pre>
+
+    <script>
+        // /ai-tutor uç noktasına GET isteği
+        document.getElementById('testButton').addEventListener('click', async () => {
+            const token = document.getElementById('tokenInput').value; // Kullanıcıdan token al
+            try {
+                const response = await fetch('https://legendary-disco-pjww576pvjpq37xg7-3001.app.github.dev/ai-tutor', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                const data = await response.json();
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('response').textContent = `Error: ${error.message}`;
+            }
+        });
+
+        // /ai-tutor/calculate uç noktasına POST isteği
+        document.getElementById('calculateButton').addEventListener('click', async () => {
+            const token = document.getElementById('tokenInput').value;
+            const input = document.getElementById('inputData').value;
+            try {
+                const response = await fetch('https://legendary-disco-pjww576pvjpq37xg7-3001.app.github.dev/ai-tutor/calculate', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ input })
+                });
+                const data = await response.json();
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('response').textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

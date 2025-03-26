@@ -32,6 +32,8 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
 
       {showPromptModal && (
         <ModifyCoursePrompt
+          title="Course Title" // Eksik özellik eklendi
+          description="Course Description" // Eksik özellik eklendi
           onClose={() => setShowPromptModal(false)}
           onSubmit={(prompt) => {
             setShowPromptModal(false);

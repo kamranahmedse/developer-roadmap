@@ -1,5 +1,6 @@
-import type { FAQType } from '../components/FAQs/FAQs.astro';
-
+// Ensure the correct path to the module or create the module if it doesn't exist
+import type { FAQType } from '../components/GenerateCourse/FAQs';
+// // Adjusted path as an example
 type ArticleSchemaProps = {
   url: string;
   headline: string;
@@ -50,7 +51,7 @@ export function generateFAQSchema(faqs: FAQType[]) {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer.join(' '),
+        text: Array.isArray(faq.answer) ? faq.answer.join(' ') : faq.answer,
       },
     })),
   };

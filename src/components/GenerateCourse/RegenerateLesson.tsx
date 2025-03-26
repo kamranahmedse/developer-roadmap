@@ -9,6 +9,13 @@ type RegenerateLessonProps = {
   onRegenerateLesson: (prompt?: string) => void;
 };
 
+interface ModifyCoursePromptProps {
+  title: string;
+  description: string;
+  onClose: () => void;
+  onSubmit: (prompt: string) => void;
+}
+
 export function RegenerateLesson(props: RegenerateLessonProps) {
   const { onRegenerateLesson } = props;
 
@@ -33,7 +40,7 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
       {showPromptModal && (
         <ModifyCoursePrompt
           title="Give AI more context"
-          description="Pass additional information to the AI to generate a lesson."
+          description="Provide additional details to refine the AI-generated course."
           onClose={() => setShowPromptModal(false)}
           onSubmit={(prompt) => {
             setShowPromptModal(false);

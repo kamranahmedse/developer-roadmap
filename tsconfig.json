@@ -1,10 +1,14 @@
+// import classname from '@utils/classname';
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "node",
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    // "paths": {
+    //   "@utils/*": ["src/editor/utils/*"]
+    // }
   },
   "exclude": ["node_modules", "dist"]
 }

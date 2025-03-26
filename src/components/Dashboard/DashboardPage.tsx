@@ -1,6 +1,6 @@
 import { useStore } from '@nanostores/react';
 import { useEffect, useState } from 'react';
-import { cn } from '../../../editor/utils/classname';
+import classNames from 'classnames'; // clsx yerine classnames kullanımı
 import { useParams } from '../../hooks/use-params';
 import { useToast } from '../../hooks/use-toast';
 import { httpGet } from '../../lib/http';
@@ -78,7 +78,7 @@ export function DashboardPage(props: DashboardPageProps) {
   return (
     <>
       <div
-        className={cn('bg-slate-900', {
+        className={classNames('bg-slate-900', {
           'striped-loader-slate': isLoading,
         })}
       >

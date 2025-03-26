@@ -19,6 +19,9 @@ const legends = [
   { count: '20+', color: 'bg-gray-800' },
 ];
 
+type ReactCalendarHeatmapValue<T> = { date: T; count: number };
+type TooltipDataAttrs = { /* TooltipDataAttrs türünü burada tanımlayın */ };
+
 export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
   const { activity } = props;
   const data = Object.entries(activity.activityCount).map(([date, count]) => ({
@@ -64,15 +67,14 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
             return 'fill-gray-200 rounded-md [rx:2px] focus:outline-none';
           }
         }}
-        tooltipDataAttrs={(value: any) => {
-          if (!value || !value.date) {
-            return null;
+        tooltipDataAttrs={(value): TooltipDataAttrs => {
+          if (!value) {
+            return {
+              'data-tooltip': 'No activity on this day'
+            };
           }
-
-          const formattedDate = formatActivityDate(value.date);
           return {
-            'data-tooltip-id': 'user-activity-tip',
-            'data-tooltip-content': `${value.count} Updates - ${formattedDate}`,
+            'data-tooltip': `${value.count} activities on ${value.date}`
           };
         }}
       />

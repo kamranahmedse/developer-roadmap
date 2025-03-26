@@ -111,7 +111,9 @@ export function MemberProgressModal(props: ProgressMapProps) {
             fontURL: '/fonts/balsamiq.woff2',
           });
 
-    replaceChildren(containerEl.current!, svg);
+    if (svg) {
+      replaceChildren(containerEl.current as Element, svg);
+    }
   }
 
   useKeydown('Escape', () => {

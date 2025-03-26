@@ -39,7 +39,7 @@ export function DashboardProgressCard(props: DashboardProgressCardProps) {
     >
       <span className="flex-grow truncate">{resourceTitle}</span>
       <span className="text-xs text-gray-400">
-        {parseInt(progressPercentage, 10)}%
+        {parseInt(progressPercentage.toString(), 10)}%
       </span>
 
       <span

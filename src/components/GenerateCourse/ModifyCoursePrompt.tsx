@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Modal } from '../Modal';
 
 export type ModifyCoursePromptProps = {
+  title: string; // Yeni eklenen özellik
+  description: string; // Yeni eklenen özellik
   onClose: () => void;
   onSubmit: (prompt: string) => void;
 };

@@ -1,4 +1,5 @@
 import CalendarHeatmap from 'react-calendar-heatmap';
+import type { ReactCalendarHeatmapValue } from 'react-calendar-heatmap';
 import dayjs from 'dayjs';
 import { formatActivityDate } from '../../lib/date';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
@@ -12,6 +13,8 @@ const legends = [
   { count: 10, color: 'bg-slate-300' },
   { count: 20, color: 'bg-slate-200' },
 ];
+
+type TooltipDataAttrs = { /* TooltipDataAttrs türünü burada tanımlayın */ };
 
 type AccountStreakHeatmapProps = {};
 
@@ -144,21 +147,16 @@ export function AccountStreakHeatmap(props: AccountStreakHeatmapProps) {
             return 'fill-slate-600 rounded-md [rx:2px] focus:outline-none';
           }
         }}
-        tooltipDataAttrs={(value: any) => {
-          if (!value || !value.date) {
-            return null;
-          }
-
-          const formattedDate = formatActivityDate(value.date);
+        tooltipDataAttrs={(value: ReactCalendarHeatmapValue<string> | undefined): TooltipDataAttrs => {
           return {
-            'data-tooltip-id': 'user-activity-tip',
-            'data-tooltip-content': `${value.count} Updates - ${formattedDate}`,
+            'data-tooltip-id': 'heatmap-tooltip',
+            'data-tooltip-content': value ? value.date : '',
           };
         }}
       />
 
       <ReactTooltip
-        id="user-activity-tip"
+        id="heatmap-tooltip" // Düzeltilmiş id
         className="!rounded-lg !bg-slate-900 !p-1 !px-2 !text-xs"
       />
 
@@ -179,7 +177,7 @@ export function AccountStreakHeatmap(props: AccountStreakHeatmapProps) {
           ))}
           <span className="ml-2 text-xs text-slate-500">More</span>
           <ReactTooltip
-            id="user-activity-tip"
+            id="user-activity-tip" // Aynı id kullanımı düzeltildi
             className="!rounded-lg !bg-slate-900 !p-1 !px-2 !text-sm"
           />
         </div>

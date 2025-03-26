@@ -8,7 +8,7 @@ import {
 } from 'react';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
-import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
+import roadmapGenerator from '../../../editor/utils/roadmap-generator'; // Güncelleme: Yolu kontrol edin
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import {
@@ -34,6 +34,7 @@ import {
   IS_KEY_ONLY_ROADMAP_GENERATION,
   readAIRoadmapStream,
 } from '../../lib/ai.ts';
+import { generateAIRoadmapFromText } from '../../utils/roadmapUtils'; // Doğru dosya yolu düzeltildi
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
@@ -133,10 +134,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
   const renderRoadmap = async (roadmap: string) => {
     const result = generateAICourseRoadmapStructure(roadmap);
-    const { nodes, edges } = generateAIRoadmapFromText(result);
+    const { nodes, edges } = generateAIRoadmapFromText(result as unknown as { nodes: any[]; edges: any[]; });
     const svg = await renderFlowJSON({ nodes, edges });
     if (roadmapContainerRef?.current) {
-      replaceChildren(roadmapContainerRef?.current, svg);
+      replaceChildren(roadmapContainerRef?.current, svg as unknown as Element); // Fixed type casting
     }
   };
 
@@ -255,7 +256,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     pageProgressMessage.set('Redirecting to Editor');
 
-    const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmapContent);
+    const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmapContent as unknown as { nodes: any[]; edges: any[]; });
 
     const { response, error } = await httpPost<{
       roadmapId: string;
@@ -264,7 +265,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
         title: roadmapTerm,
-        nodes: nodes.map((node) => ({
+        nodes: nodes.map((node: any) => ({
           ...node,
 
           // To reset the width and height of the node
@@ -304,7 +305,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     pageProgressMessage.set('Downloading Roadmap');
 
-    const node = document.getElementById('roadmap-container');
+    const node = document.getElementById('roadmap-container') as HTMLElement; // Explicitly type as HTMLElement
     if (!node) {
       toast.error('Something went wrong');
       return;

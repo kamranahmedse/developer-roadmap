@@ -75,7 +75,7 @@ export function ResourceProgress(props: ResourceProgressType) {
       >
         <span className="flex-grow truncate">{title}</span>
         <span className="text-xs text-gray-400">
-          {parseInt(progressPercentage, 10)}%
+          {parseInt(progressPercentage.toString(), 10)}%
         </span>
 
         <span
