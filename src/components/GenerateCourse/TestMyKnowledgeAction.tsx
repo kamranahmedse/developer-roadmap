@@ -116,31 +116,33 @@ export function TestMyKnowledgeAction(props: TestMyKnowledgeActionProps) {
 
   return (
     <div className="mt-10 flex flex-col gap-4">
-      <div className="flex items-center gap-2">
-        <button
-          className={cn(
-            'flex flex-shrink-0 items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900',
-            {
-              'bg-gray-100 text-gray-900': isKnowledgeTestOpen,
-            },
-          )}
-          onClick={() => {
-            if (isGenerating || isLoading) {
-              return;
-            }
+      {!isKnowledgeTestOpen && (
+        <div className="flex items-center gap-2">
+          <button
+            className={cn(
+              'flex flex-shrink-0 items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900',
+              {
+                'bg-gray-100 text-gray-900': isKnowledgeTestOpen,
+              },
+            )}
+            onClick={() => {
+              if (isGenerating || isLoading) {
+                return;
+              }
 
-            if (!isKnowledgeTestOpen) {
-              setIsKnowledgeTestOpen(true);
-              generateAiLessonQuestions();
-            } else {
-              setIsKnowledgeTestOpen(false);
-            }
-          }}
-        >
-          <FlaskConicalIcon className="size-5 shrink-0" />
-          <span>Test My Knowledge</span>
-        </button>
-      </div>
+              if (!isKnowledgeTestOpen) {
+                setIsKnowledgeTestOpen(true);
+                generateAiLessonQuestions();
+              } else {
+                setIsKnowledgeTestOpen(false);
+              }
+            }}
+          >
+            <FlaskConicalIcon className="size-5 shrink-0" />
+            <span>Test My Knowledge</span>
+          </button>
+        </div>
+      )}
 
       {error && (
         <div className="flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-lg rounded-xl bg-red-50/80 p-5 text-red-500">
@@ -258,6 +260,7 @@ export function ListQuestions(props: ListQuestionsProps) {
 
   return (
     <QuizItem
+      counter={activeQuestionIndex + 1}
       totalQuestions={questions.length}
       correctAnswerCount={correctAnswerCount}
       isLoading={isGenerating}
@@ -275,6 +278,7 @@ export function ListQuestions(props: ListQuestionsProps) {
 type QuizItemProps = {
   totalQuestions: number;
   correctAnswerCount: number;
+  counter: number;
 
   question: Question;
   onOptionSelectChange?: (id: string, optionId: string) => void;
@@ -292,9 +296,8 @@ export function QuizItem(props: QuizItemProps) {
   const {
     totalQuestions,
     correctAnswerCount,
-
+    counter,
     isLoading,
-
     question,
     onOptionSelectChange,
     selectedOptionIds,
@@ -322,87 +325,98 @@ export function QuizItem(props: QuizItemProps) {
 
   return (
     <div
-      className={cn('relative w-full rounded-lg border p-5 text-black', {
+      className={cn('relative w-full rounded-lg border text-black', {
         'border-red-400': hasWrongAnswer,
         'border-green-500': hasCorrectAnswer,
       })}
     >
-      {submitted && (
-        <span
-          className={cn(
-            'absolute right-2 top-2 rounded-lg px-2 py-1 text-sm text-gray-500',
-            {
-              'bg-red-100 text-red-500': hasWrongAnswer,
-              'bg-green-100 text-green-500': hasCorrectAnswer,
-            },
-          )}
-        >
-          {hasWrongAnswer ? 'Wrong' : 'Correct'}
+      <div className="flex items-center gap-4 rounded-t-lg bg-gray-100/40 p-4 border-b">
+        <span className="text-sm font-medium text-gray-700">
+          Question {counter} of {totalQuestions}
         </span>
-      )}
-      <h3 className="mx-2 text-balance text-lg font-medium">
-        {title} {canMultiSelect ? '(Select Multiple)' : ''}
-      </h3>
-
-      <div className="mt-4 flex flex-col gap-1">
-        {options.map((option, index) => {
-          let status: QuizOptionStatus = 'default';
-          if (submitted) {
-            if (option.isCorrect) {
-              status = 'correct';
-            } else if (selectedOptionIds?.includes(option.id)) {
-              status = 'wrong';
-            }
-          } else {
-            if (selectedOptionIds?.includes(option.id)) {
-              status = 'selected';
-            }
-          }
-
-          return (
-            <QuizOption
-              key={index}
-              title={option.title}
-              status={status}
-              onSelect={() => onOptionSelectChange?.(questionId, option.id)}
-              submitted={submitted}
-            />
-          );
-        })}
+        <div className="h-1.5 flex-1 rounded-full bg-gray-200">
+          <div
+            className="h-full rounded-full bg-black transition-all"
+            style={{ width: `${(counter / totalQuestions) * 100}%` }}
+          />
+        </div>
+        {submitted && (
+          <span
+            className={cn('rounded-full px-2 py-0.5 text-xs font-medium', {
+              'bg-red-500 text-white': hasWrongAnswer,
+              'bg-green-500 text-white': hasCorrectAnswer,
+            })}
+          >
+            {hasWrongAnswer ? 'Wrong' : 'Correct'}
+          </span>
+        )}
       </div>
 
-      <div className="mt-4 flex w-full items-center justify-between px-2">
-        <div className="text-gray-500">
-          {submitted ? (
-            <span>
-              You got {correctAnswerCount} out of {totalQuestions} correct.
-              <button
-                className="relative -top-0.5 ml-1 rounded-md bg-black px-2 py-0.5 text-xs uppercase tracking-wider text-white hover:bg-black/80"
-                onClick={onTryAgain}
-              >
-                Try again?
-              </button>
-            </span>
-          ) : (
-            <span>Answer all questions to submit</span>
-          )}
+      <div className="p-5">
+        <h3 className="mx-2 text-balance text-lg font-medium">
+          {title} {canMultiSelect ? '(Select Multiple)' : ''}
+        </h3>
+
+        <div className="mt-4 flex flex-col gap-1">
+          {options.map((option, index) => {
+            let status: QuizOptionStatus = 'default';
+            if (submitted) {
+              if (option.isCorrect) {
+                status = 'correct';
+              } else if (selectedOptionIds?.includes(option.id)) {
+                status = 'wrong';
+              }
+            } else {
+              if (selectedOptionIds?.includes(option.id)) {
+                status = 'selected';
+              }
+            }
+
+            return (
+              <QuizOption
+                key={index}
+                title={option.title}
+                status={status}
+                onSelect={() => onOptionSelectChange?.(questionId, option.id)}
+                submitted={submitted}
+              />
+            );
+          })}
         </div>
 
-        <div className="flex gap-2">
-          <button
-            className="flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pr-4 text-sm text-black hover:bg-black hover:text-white focus:outline-none max-sm:pr-2"
-            onClick={onPrevious}
-          >
-            <ChevronLeftIcon className="size-5 shrink-0" />
-            <span className="max-sm:hidden">Previous</span>
-          </button>
-          <button
-            className="flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pl-4 text-sm text-black hover:bg-black hover:text-white focus:outline-none max-sm:pl-2"
-            onClick={onNext}
-          >
-            <span className="max-sm:hidden">Next</span>
-            <ChevronRightIcon className="size-5 shrink-0" />
-          </button>
+        <div className="mt-4 flex w-full items-center justify-between px-2">
+          <div className="text-gray-500">
+            {submitted ? (
+              <span>
+                You got {correctAnswerCount} out of {totalQuestions} correct.
+                <button
+                  className="relative -top-0.5 ml-1 rounded-md bg-black px-2 py-0.5 text-xs uppercase tracking-wider text-white hover:bg-black/80"
+                  onClick={onTryAgain}
+                >
+                  Try again?
+                </button>
+              </span>
+            ) : (
+              <span>Answer all questions to submit</span>
+            )}
+          </div>
+
+          <div className="flex gap-2">
+            <button
+              className="flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pr-4 text-sm text-black hover:bg-black hover:text-white focus:outline-none max-sm:pr-2"
+              onClick={onPrevious}
+            >
+              <ChevronLeftIcon className="size-5 shrink-0" />
+              <span className="max-sm:hidden">Previous</span>
+            </button>
+            <button
+              className="flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pl-4 text-sm text-black hover:bg-black hover:text-white focus:outline-none max-sm:pl-2"
+              onClick={onNext}
+            >
+              <span className="max-sm:hidden">Next</span>
+              <ChevronRightIcon className="size-5 shrink-0" />
+            </button>
+          </div>
         </div>
       </div>
 
