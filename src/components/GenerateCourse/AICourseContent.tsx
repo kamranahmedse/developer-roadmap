@@ -392,6 +392,9 @@ export function AICourseContent(props: AICourseContentProps) {
           className={cn(
             'flex-1 overflow-y-scroll p-6 transition-all duration-200 ease-in-out max-lg:p-3',
             sidebarOpen ? 'lg:ml-0' : '',
+            viewMode === 'module'
+              ? 'flex flex-col overflow-hidden p-0 max-lg:p-0'
+              : '',
           )}
           key={`${courseSlug}-${viewMode}`}
         >
@@ -442,7 +445,12 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           )}
 
-          <div className="mx-auto mb-10 mt-5 text-center text-sm text-gray-400">
+          <div
+            className={cn(
+              'mx-auto mb-10 mt-5 text-center text-sm text-gray-400',
+              viewMode === 'module' ? 'hidden' : '',
+            )}
+          >
             AI can make mistakes, check important info.
           </div>
         </main>
