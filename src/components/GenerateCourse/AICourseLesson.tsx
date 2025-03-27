@@ -24,8 +24,7 @@ import {
 } from '../../queries/ai-course';
 import { useIsPaidUser } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
-import { AICourseFollowUp } from './AICourseFollowUp';
-import './AICourseFollowUp.css';
+import './AICourseLessonChat.css';
 import { RegenerateLesson } from './RegenerateLesson';
 import { TestMyKnowledgeAction } from './TestMyKnowledgeAction';
 import { AICourseLessonChat } from './AICourseLessonChat';
