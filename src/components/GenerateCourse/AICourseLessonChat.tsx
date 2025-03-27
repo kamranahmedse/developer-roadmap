@@ -9,6 +9,7 @@ import {
   XIcon,
 } from 'lucide-react';
 import {
+  Fragment,
   useCallback,
   useEffect,
   useMemo,
@@ -241,9 +242,8 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                 <div className="flex flex-col justify-end gap-2 px-3 py-2">
                   {courseAIChatHistory.map((chat, index) => {
                     return (
-                      <>
+                      <Fragment key={`chat-${index}`}>
                         <AIChatCard
-                          key={`chat-${index}`}
                           role={chat.role}
                           content={chat.content}
                           html={chat.html}
@@ -261,7 +261,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                             </div>
                           </div>
                         )}
-                      </>
+                      </Fragment>
                     );
                   })}
 
