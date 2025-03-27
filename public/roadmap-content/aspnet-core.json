@@ -1626,8 +1626,19 @@
   },
   "w5RnrhsP4p-AdSOLYVAY9": {
     "title": "Gridlify",
-    "description": "",
-    "links": []
+    "description": "Gridify offers a powerful string-based dynamic LINQ query language that is both simple and easy to use. Gridify is a dynamic LINQ library that simplifies the process of converting strings to LINQ queries. Gridify makes it effortless to apply filtering, sorting, and pagination using text-based data. It also has a Javascript/Typescript client to integrate the Gridify with the frontend tables.\n\nFor more information, visit the following links:",
+    "links": [
+      {
+        "title": "Gridify Library",
+        "url": "https://github.com/alirezanet/Gridify",
+        "type": "opensource"
+      },
+      {
+        "title": "Working with Dynamic Filters Using Gridify in .NET",
+        "url": "https://levelup.gitconnected.com/working-with-dynamic-filters-using-gridify-in-net-6bba618dd9f8",
+        "type": "article"
+      }
+    ]
   },
   "YojZ5fpzw-5WgoqqkO6wl": {
     "title": "Odata",

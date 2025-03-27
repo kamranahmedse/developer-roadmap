@@ -356,9 +356,8 @@
   },
   "3qowgj1pas1X7oRric9eU": {
     "title": "Object Lifecycle",
-    "description": "The object lifecycle refers to the series of stages an object goes through from its creation (allocation of memory) to its destruction (reclaiming of memory). These stages typically include object creation, initialization, usage, and eventual garbage collection when the object is no longer needed. Understanding this lifecycle is crucial for efficient memory management and preventing resource leaks.\n\nVisit the following resources to learn more:",
-    "links": [
-    ]
+    "description": "The object lifecycle refers to the series of stages an object goes through from its creation (allocation of memory) to its destruction (reclaiming of memory). These stages typically include object creation, initialization, usage, and eventual garbage collection when the object is no longer needed. Understanding this lifecycle is crucial for efficient memory management and preventing resource leaks.",
+    "links": []
   },
   "qdA6bK9ZkP8p0_NH_wMuj": {
     "title": "Abstraction",
