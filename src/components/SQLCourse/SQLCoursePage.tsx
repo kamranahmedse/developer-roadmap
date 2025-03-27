@@ -426,10 +426,6 @@ export function SQLCoursePage() {
             Terms of Use
           </a>
           <span className="mx-4 hidden md:block">&middot;</span>
-          <a href="/terms-of-sale" target="_blank" className="text-zinc-500">
-            Terms of Sale
-          </a>
-          <span className="mx-4 hidden md:block">&middot;</span>
           <a href="/privacy" target="_blank" className="text-zinc-500">
             Privacy Policy
           </a>
