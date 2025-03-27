@@ -72,7 +72,7 @@ export function FAQSection() {
     {
       question: "What if I don't like the course?",
       answer:
-        'I will refund your purchase within 7 days of the purchase. No questions asked. However, I would love to hear your feedback so that I can improve the course. Send me an email at kamran@roadmap.sh',
+        'You can request a refund within 30 days of purchase by emailing info@roadmap.sh. The refund amount will be prorated based on when you request it. For example, if you request a refund 15 days after purchase, you\'ll receive 50% back. I\'d also love to hear your feedback to improve the course.',
     },
     {
       question: 'I already know SQL, can I still take this course?',
