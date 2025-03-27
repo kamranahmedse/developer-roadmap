@@ -5,6 +5,8 @@ import {
   ChevronRight,
   Loader2Icon,
   LockIcon,
+  MessageCircleIcon,
+  MessageCircleOffIcon,
   XIcon,
 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
@@ -28,6 +30,7 @@ import './AICourseLessonChat.css';
 import { RegenerateLesson } from './RegenerateLesson';
 import { TestMyKnowledgeAction } from './TestMyKnowledgeAction';
 import { AICourseLessonChat } from './AICourseLessonChat';
+import { AICourseFooter } from './AICourseFooter';
 
 type AICourseLessonProps = {
   courseSlug: string;
@@ -44,6 +47,9 @@ type AICourseLessonProps = {
   onGoToNextLesson: () => void;
 
   onUpgrade: () => void;
+
+  isAIChatsOpen: boolean;
+  setIsAIChatsOpen: (isAIChatsOpen: boolean) => void;
 };
 
 export function AICourseLesson(props: AICourseLessonProps) {
@@ -62,6 +68,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
     onGoToNextLesson,
 
     onUpgrade,
+
+    isAIChatsOpen,
+    setIsAIChatsOpen,
   } = props;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -210,7 +219,12 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
   return (
     <div className="grid h-full grid-cols-5">
-      <div className="relative col-span-3">
+      <div
+        className={cn(
+          'relative',
+          isAIChatsOpen ? 'col-span-3 max-lg:col-span-5' : 'col-span-5',
+        )}
+      >
         <div className="absolute inset-0 overflow-y-auto bg-white p-8 pb-0 max-lg:px-4 max-lg:pt-3">
           {(isGenerating || isLoading) && (
             <div className="absolute right-6 top-6 flex items-center justify-center">
@@ -267,6 +281,17 @@ export function AICourseLesson(props: AICourseLessonProps) {
                         </>
                       )}
                     </>
+                  )}
+                </button>
+
+                <button
+                  onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+                  className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
+                >
+                  {!isAIChatsOpen ? (
+                    <MessageCircleIcon className="size-4 stroke-[2.5]" />
+                  ) : (
+                    <MessageCircleOffIcon className="size-4 stroke-[2.5]" />
                   )}
                 </button>
               </div>
@@ -390,19 +415,20 @@ export function AICourseLesson(props: AICourseLessonProps) {
             </div>
           </div>
 
-          <div className="mx-auto mb-10 mt-5 text-center text-sm text-gray-400">
-            AI can make mistakes, check important info.
-          </div>
+          <AICourseFooter />
         </div>
       </div>
 
-      <AICourseLessonChat
-        courseSlug={courseSlug}
-        moduleTitle={currentModuleTitle}
-        lessonTitle={currentLessonTitle}
-        onUpgradeClick={onUpgrade}
-        isDisabled={isGenerating || isLoading || isTogglingDone}
-      />
+      {isAIChatsOpen && (
+        <AICourseLessonChat
+          courseSlug={courseSlug}
+          moduleTitle={currentModuleTitle}
+          lessonTitle={currentLessonTitle}
+          onUpgradeClick={onUpgrade}
+          isDisabled={isGenerating || isLoading || isTogglingDone}
+          onClose={() => setIsAIChatsOpen(false)}
+        />
+      )}
     </div>
   );
 }

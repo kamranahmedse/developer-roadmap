@@ -19,6 +19,7 @@ import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
 import { AILimitsPopup } from './AILimitsPopup';
 import { AICourseOutlineView } from './AICourseOutlineView';
 import { AICourseRoadmapView } from './AICourseRoadmapView';
+import { AICourseFooter } from './AICourseFooter';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -35,6 +36,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
+  const [isAIChatsOpen, setIsAIChatsOpen] = useState(true);
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
@@ -412,6 +414,8 @@ export function AICourseContent(props: AICourseContentProps) {
               onGoToNextLesson={goToNextLesson}
               key={`${courseSlug}-${activeModuleIndex}-${activeLessonIndex}`}
               onUpgrade={() => setShowUpgradeModal(true)}
+              isAIChatsOpen={isAIChatsOpen}
+              setIsAIChatsOpen={setIsAIChatsOpen}
             />
           )}
 
@@ -445,14 +449,7 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           )}
 
-          <div
-            className={cn(
-              'mx-auto mb-10 mt-5 text-center text-sm text-gray-400',
-              viewMode === 'module' ? 'hidden' : '',
-            )}
-          >
-            AI can make mistakes, check important info.
-          </div>
+          <AICourseFooter className={viewMode === 'module' ? 'hidden' : ''} />
         </main>
       </div>
 

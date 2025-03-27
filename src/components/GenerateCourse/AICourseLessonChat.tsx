@@ -6,6 +6,7 @@ import {
   HelpCircle,
   LockIcon,
   Send,
+  XIcon,
 } from 'lucide-react';
 import {
   useCallback,
@@ -44,13 +45,22 @@ type AICourseLessonChatProps = {
   lessonTitle: string;
   onUpgradeClick: () => void;
   isDisabled?: boolean;
+
+  onClose: () => void;
 };
 
 export function AICourseLessonChat(props: AICourseLessonChatProps) {
-  const { courseSlug, moduleTitle, lessonTitle, onUpgradeClick, isDisabled } =
-    props;
+  const {
+    courseSlug,
+    moduleTitle,
+    lessonTitle,
+    onUpgradeClick,
+    isDisabled,
+    onClose,
+  } = props;
 
   const toast = useToast();
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
 
   const [courseAIChatHistory, setCourseAIChatHistory] = useState<
@@ -193,9 +203,24 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
     scrollToBottom();
   }, []);
 
+  useOutsideClick(containerRef, () => {
+    onClose();
+  });
+
   return (
-    <div className="relative col-span-2 h-full border-l border-gray-200">
-      <div className="absolute inset-0 flex w-full flex-col overflow-hidden bg-white">
+    <div className="relative col-span-2 h-full border-l border-gray-200 max-lg:fixed max-lg:inset-y-0 max-lg:right-0 max-lg:z-10 max-lg:w-[420px] max-lg:border-none">
+      <div className="fixed inset-0 z-10 bg-black/50 lg:hidden" />
+      <div
+        className="absolute inset-0 z-20 flex w-full flex-col overflow-hidden bg-white"
+        ref={containerRef}
+      >
+        <button
+          onClick={onClose}
+          className="absolute right-2 top-2 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
+        >
+          <XIcon className="size-4 stroke-[2.5]" />
+        </button>
+
         <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
           <h4 className="text-base font-medium">Course AI</h4>
         </div>
