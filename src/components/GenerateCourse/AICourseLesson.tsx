@@ -243,6 +243,17 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
             {!isGenerating && !isLoading && (
               <div className="absolute right-6 top-6 flex items-center justify-between gap-2">
+                <button
+                  onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+                  className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
+                >
+                  {!isAIChatsOpen ? (
+                    <MessageCircleIcon className="size-4 stroke-[2.5]" />
+                  ) : (
+                    <MessageCircleOffIcon className="size-4 stroke-[2.5]" />
+                  )}
+                </button>
+
                 <RegenerateLesson
                   onRegenerateLesson={(prompt) => {
                     generateAiCourseContent(true, prompt);
@@ -281,17 +292,6 @@ export function AICourseLesson(props: AICourseLessonProps) {
                         </>
                       )}
                     </>
-                  )}
-                </button>
-
-                <button
-                  onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
-                  className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
-                >
-                  {!isAIChatsOpen ? (
-                    <MessageCircleIcon className="size-4 stroke-[2.5]" />
-                  ) : (
-                    <MessageCircleOffIcon className="size-4 stroke-[2.5]" />
                   )}
                 </button>
               </div>
@@ -419,16 +419,16 @@ export function AICourseLesson(props: AICourseLessonProps) {
         </div>
       </div>
 
-      {isAIChatsOpen && (
-        <AICourseLessonChat
-          courseSlug={courseSlug}
-          moduleTitle={currentModuleTitle}
-          lessonTitle={currentLessonTitle}
-          onUpgradeClick={onUpgrade}
-          isDisabled={isGenerating || isLoading || isTogglingDone}
-          onClose={() => setIsAIChatsOpen(false)}
-        />
-      )}
+      <AICourseLessonChat
+        courseSlug={courseSlug}
+        moduleTitle={currentModuleTitle}
+        lessonTitle={currentLessonTitle}
+        onUpgradeClick={onUpgrade}
+        isDisabled={isGenerating || isLoading || isTogglingDone}
+        onClose={() => setIsAIChatsOpen(false)}
+        isAIChatsOpen={isAIChatsOpen}
+        setIsAIChatsOpen={setIsAIChatsOpen}
+      />
     </div>
   );
 }

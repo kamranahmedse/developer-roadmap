@@ -47,6 +47,9 @@ type AICourseLessonChatProps = {
   isDisabled?: boolean;
 
   onClose: () => void;
+
+  isAIChatsOpen: boolean;
+  setIsAIChatsOpen: (isAIChatsOpen: boolean) => void;
 };
 
 export function AICourseLessonChat(props: AICourseLessonChatProps) {
@@ -57,10 +60,12 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
     onUpgradeClick,
     isDisabled,
     onClose,
+
+    isAIChatsOpen,
+    setIsAIChatsOpen,
   } = props;
 
   const toast = useToast();
-  const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
 
   const [courseAIChatHistory, setCourseAIChatHistory] = useState<
@@ -203,124 +208,127 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
     scrollToBottom();
   }, []);
 
-  useOutsideClick(containerRef, () => {
-    onClose();
-  });
-
   return (
-    <div className="relative col-span-2 h-full border-l border-gray-200 max-lg:fixed max-lg:inset-y-0 max-lg:right-0 max-lg:z-10 max-lg:w-[420px] max-lg:border-none">
-      <div className="fixed inset-0 z-10 bg-black/50 lg:hidden" />
-      <div
-        className="absolute inset-0 z-20 flex w-full flex-col overflow-hidden bg-white"
-        ref={containerRef}
-      >
-        <button
-          onClick={onClose}
-          className="absolute right-2 top-2 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
-        >
-          <XIcon className="size-4 stroke-[2.5]" />
-        </button>
-
-        <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
-          <h4 className="text-base font-medium">Course AI</h4>
-        </div>
-
+    <>
+      {isAIChatsOpen && (
         <div
-          className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
-          ref={scrollareaRef}
-        >
-          <div className="absolute inset-0 flex flex-col">
-            <div className="flex grow flex-col justify-end">
-              <div className="flex flex-col justify-end gap-2 px-3 py-2">
-                {courseAIChatHistory.map((chat, index) => {
-                  return (
-                    <>
-                      <AIChatCard
-                        key={`chat-${index}`}
-                        role={chat.role}
-                        content={chat.content}
-                        html={chat.html}
-                      />
+          className="fixed inset-0 z-10 bg-black/50 lg:hidden"
+          onClick={onClose}
+        />
+      )}
+      <div
+        className="relative col-span-2 h-full border-l border-gray-200 transition-all data-[state=closed]:hidden max-lg:fixed max-lg:inset-y-0 max-lg:right-0 max-lg:z-10 max-lg:w-[420px] max-lg:border-none max-lg:data-[state=closed]:translate-x-full max-lg:data-[state=open]:translate-x-0"
+        data-state={isAIChatsOpen ? 'open' : 'closed'}
+      >
+        <div className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white">
+          <button
+            onClick={onClose}
+            className="absolute right-2 top-2 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
+          >
+            <XIcon className="size-4 stroke-[2.5]" />
+          </button>
 
-                      {chat.isDefault && (
-                        <div className="mb-1 mt-0.5">
-                          <div className="grid grid-cols-2 gap-2">
-                            {capabilities.map((capability, index) => (
-                              <CapabilityCard
-                                key={`capability-${index}`}
-                                {...capability}
-                              />
-                            ))}
+          <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
+            <h4 className="text-base font-medium">Course AI</h4>
+          </div>
+
+          <div
+            className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
+            ref={scrollareaRef}
+          >
+            <div className="absolute inset-0 flex flex-col">
+              <div className="flex grow flex-col justify-end">
+                <div className="flex flex-col justify-end gap-2 px-3 py-2">
+                  {courseAIChatHistory.map((chat, index) => {
+                    return (
+                      <>
+                        <AIChatCard
+                          key={`chat-${index}`}
+                          role={chat.role}
+                          content={chat.content}
+                          html={chat.html}
+                        />
+
+                        {chat.isDefault && (
+                          <div className="mb-1 mt-0.5">
+                            <div className="grid grid-cols-2 gap-2">
+                              {capabilities.map((capability, index) => (
+                                <CapabilityCard
+                                  key={`capability-${index}`}
+                                  {...capability}
+                                />
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      )}
-                    </>
-                  );
-                })}
+                        )}
+                      </>
+                    );
+                  })}
 
-                {isStreamingMessage && !streamedMessage && (
-                  <AIChatCard role="assistant" content="Thinking..." />
-                )}
+                  {isStreamingMessage && !streamedMessage && (
+                    <AIChatCard role="assistant" content="Thinking..." />
+                  )}
 
-                {streamedMessage && (
-                  <AIChatCard role="assistant" content={streamedMessage} />
-                )}
+                  {streamedMessage && (
+                    <AIChatCard role="assistant" content={streamedMessage} />
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <form
-          className="relative flex items-start border-t border-gray-200 text-sm"
-          onSubmit={handleChatSubmit}
-        >
-          {isLimitExceeded && (
-            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
-              <LockIcon
-                className="size-4 cursor-not-allowed"
-                strokeWidth={2.5}
-              />
-              <p className="cursor-not-allowed">
-                Limit reached for today
-                {isPaidUser ? '. Please wait until tomorrow.' : ''}
-              </p>
-              {!isPaidUser && (
-                <button
-                  onClick={() => {
-                    onUpgradeClick();
-                  }}
-                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                >
-                  Upgrade for more
-                </button>
-              )}
-            </div>
-          )}
-          <TextareaAutosize
-            className={cn(
-              'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none',
-              isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
-            )}
-            placeholder="Ask AI anything about the lesson..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            autoFocus={true}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && !e.shiftKey) {
-                handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
-              }
-            }}
-          />
-          <button
-            type="submit"
-            disabled={isDisabled || isStreamingMessage || isLimitExceeded}
-            className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+          <form
+            className="relative flex items-start border-t border-gray-200 text-sm"
+            onSubmit={handleChatSubmit}
           >
-            <Send className="size-4 stroke-[2.5]" />
-          </button>
-        </form>
+            {isLimitExceeded && (
+              <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
+                <LockIcon
+                  className="size-4 cursor-not-allowed"
+                  strokeWidth={2.5}
+                />
+                <p className="cursor-not-allowed">
+                  Limit reached for today
+                  {isPaidUser ? '. Please wait until tomorrow.' : ''}
+                </p>
+                {!isPaidUser && (
+                  <button
+                    onClick={() => {
+                      onUpgradeClick();
+                    }}
+                    className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                  >
+                    Upgrade for more
+                  </button>
+                )}
+              </div>
+            )}
+            <TextareaAutosize
+              className={cn(
+                'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none',
+                isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
+              )}
+              placeholder="Ask AI anything about the lesson..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              autoFocus={true}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
+                }
+              }}
+            />
+            <button
+              type="submit"
+              disabled={isDisabled || isStreamingMessage || isLimitExceeded}
+              className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              <Send className="size-4 stroke-[2.5]" />
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

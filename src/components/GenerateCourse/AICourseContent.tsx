@@ -6,8 +6,11 @@ import {
   Menu,
   X,
   Map,
+  MessageCircle,
+  MessageCircleOffIcon,
+  MessageCircleIcon,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { useIsPaidUser } from '../../queries/billing';
@@ -208,6 +211,12 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const isViewingLesson = viewMode === 'module';
 
+  useEffect(() => {
+    if (window && window?.innerWidth < 1024 && isAIChatsOpen) {
+      setIsAIChatsOpen(false);
+    }
+  }, []);
+
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       {modals}
@@ -236,6 +245,19 @@ export function AICourseContent(props: AICourseContentProps) {
               />
             </div>
 
+            {viewMode === 'module' && (
+              <button
+                onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+                className="ml-1.5 flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+              >
+                {isAIChatsOpen ? (
+                  <MessageCircleOffIcon size={17} strokeWidth={3} />
+                ) : (
+                  <MessageCircleIcon size={17} strokeWidth={3} />
+                )}
+              </button>
+            )}
+            
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
