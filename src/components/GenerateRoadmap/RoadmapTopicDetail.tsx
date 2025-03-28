@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import { Ban, Contact, FileText, X } from 'lucide-react';
+import { Ban, Contact, FileText, X, ArrowRight } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -35,6 +35,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
+  const [isStreaming, setIsStreaming] = useState(false);
 
   const topicRef = useRef<HTMLDivElement>(null);
 
@@ -90,9 +91,13 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
     }
 
     setIsLoading(false);
+    setIsStreaming(true);
     await readAIRoadmapContentStream(reader, {
       onStream: async (result) => {
         setTopicHtml(markdownToHtml(result, false));
+      },
+      onStreamEnd(roadmap) {
+        setIsStreaming(false);
       },
     });
     onTopicContentGenerateComplete?.();
@@ -149,8 +154,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
               onClick={onConfigureOpenAI}
             >
-              Need to generate more?{' '}
-              <span className="font-semibold">Click here.</span>
+              Need more? <span className="font-semibold">Click here.</span>
             </button>
           </div>
         )}
@@ -200,6 +204,18 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
                   id="topic-content"
                   dangerouslySetInnerHTML={{ __html: topicHtml }}
                 />
+
+                {!isStreaming && (
+                  <div className="mt-4">
+                    <a
+                      href="/ai-tutor"
+                      className="mb-1 mt-2 inline-flex items-center rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-800 no-underline hover:bg-yellow-500"
+                    >
+                      Dive deeper using AI Tutor
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
