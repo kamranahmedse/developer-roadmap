@@ -37,6 +37,18 @@ import {
   ResizablePanelGroup,
 } from './Resizeable';
 
+function getQuestionsFromResult(result: string) {
+  const matchedQuestions = result.match(
+    /=START_QUESTIONS=(.*?)=END_QUESTIONS=/,
+  );
+
+  if (matchedQuestions) {
+    return matchedQuestions[1].split('@@');
+  }
+
+  return [];
+}
+
 type AICourseLessonProps = {
   courseSlug: string;
   progress: string[];
@@ -82,6 +94,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
+  const [defaultQuestions, setDefaultQuestions] = useState<string[]>([]);
 
   const [lessonHtml, setLessonHtml] = useState('');
 
@@ -163,14 +176,29 @@ export function AICourseLesson(props: AICourseLessonProps) {
             return;
           }
 
-          setLessonHtml(markdownToHtml(result, false));
+          const questions = getQuestionsFromResult(result);
+          setDefaultQuestions(questions);
+          const newResult = result.replace(
+            /=START_QUESTIONS=.*?=END_QUESTIONS=/,
+            '',
+          );
+
+          setLessonHtml(markdownToHtml(newResult, false));
         },
         onStreamEnd: async (result) => {
           if (abortController.signal.aborted) {
             return;
           }
 
-          setLessonHtml(await markdownToHtmlWithHighlighting(result));
+          const questions = getQuestionsFromResult(result);
+          setDefaultQuestions(questions);
+
+          const newResult = result.replace(
+            /=START_QUESTIONS=.*?=END_QUESTIONS=/,
+            '',
+          );
+
+          setLessonHtml(await markdownToHtmlWithHighlighting(newResult));
           queryClient.invalidateQueries(getAiCourseLimitOptions());
           setIsGenerating(false);
         },
@@ -445,6 +473,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 lessonTitle={currentLessonTitle}
                 onUpgradeClick={onUpgrade}
                 isDisabled={isGenerating || isLoading || isTogglingDone}
+                defaultQuestions={defaultQuestions}
               />
             </ResizablePanel>
           </>
@@ -462,6 +491,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
               lessonTitle={currentLessonTitle}
               onUpgradeClick={onUpgrade}
               isDisabled={isGenerating || isLoading || isTogglingDone}
+              defaultQuestions={defaultQuestions}
             />
 
             <button

@@ -6,7 +6,6 @@ import {
   HelpCircle,
   LockIcon,
   Send,
-  XIcon,
 } from 'lucide-react';
 import {
   Fragment,
@@ -19,7 +18,6 @@ import {
 } from 'react';
 import { flushSync } from 'react-dom';
 import TextareaAutosize from 'react-textarea-autosize';
-import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useToast } from '../../hooks/use-toast';
 import { readStream } from '../../lib/ai';
 import { cn } from '../../lib/classname';
@@ -46,14 +44,23 @@ type AICourseLessonChatProps = {
   lessonTitle: string;
   onUpgradeClick: () => void;
   isDisabled?: boolean;
+
+  defaultQuestions?: string[];
 };
 
 export function AICourseLessonChat(props: AICourseLessonChatProps) {
-  const { courseSlug, moduleTitle, lessonTitle, onUpgradeClick, isDisabled } =
-    props;
+  const {
+    courseSlug,
+    moduleTitle,
+    lessonTitle,
+    onUpgradeClick,
+    isDisabled,
+    defaultQuestions = [],
+  } = props;
 
   const toast = useToast();
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   const [courseAIChatHistory, setCourseAIChatHistory] = useState<
     AIChatHistoryType[]
@@ -197,7 +204,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
 
   return (
     <>
-      <div className="relative h-full border-l border-gray-200">
+      <div className="relative h-full">
         <div className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white">
           <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
             <h4 className="text-base font-medium">Course AI</h4>
@@ -219,7 +226,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                           html={chat.html}
                         />
 
-                        {chat.isDefault && (
+                        {chat.isDefault && !defaultQuestions?.length && (
                           <div className="mb-1 mt-0.5">
                             <div className="grid grid-cols-2 gap-2">
                               {capabilities.map((capability, index) => (
@@ -227,6 +234,28 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                                   key={`capability-${index}`}
                                   {...capability}
                                 />
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {chat.isDefault && defaultQuestions?.length > 1 && (
+                          <div className="mb-1 mt-0.5">
+                            <div className="grid grid-cols-2 items-stretch gap-2">
+                              {defaultQuestions.map((question, index) => (
+                                <button
+                                  key={`default-question-${index}`}
+                                  className="rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black"
+                                  onClick={() => {
+                                    flushSync(() => {
+                                      setMessage(question);
+                                    });
+
+                                    textareaRef.current?.focus();
+                                  }}
+                                >
+                                  {question}
+                                </button>
                               ))}
                             </div>
                           </div>
@@ -287,6 +316,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                   handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
                 }
               }}
+              ref={textareaRef}
             />
             <button
               type="submit"
