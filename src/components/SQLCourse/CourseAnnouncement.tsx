@@ -1,15 +1,22 @@
 import { Database, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { cn } from '../../lib/classname';
 
 export function CourseAnnouncement() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
-  if (!isVisible) {
-    return null;
-  }
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <div className="sticky top-0 z-[91]">
+    <div
+      className={cn(
+        'sticky top-0 z-[91] h-0 overflow-hidden transition-[height] duration-300',
+        isVisible ? 'h-[36px]' : 'h-0',
+      )}
+    >
       <a href="/courses/sql" className="flex items-center bg-yellow-400 py-1.5">
         <span className="container mx-auto flex items-center justify-start gap-2 text-center sm:justify-center sm:gap-4">
           <span className="flex items-center gap-1.5 text-xs font-medium text-black md:text-base">
