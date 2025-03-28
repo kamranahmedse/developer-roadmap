@@ -450,26 +450,28 @@ export function AICourseLesson(props: AICourseLessonProps) {
           </>
         )}
 
-        <div
-          className="fixed inset-0 hidden data-[state=open]:block lg:hidden data-[state=open]:lg:hidden"
-          data-state={isAIChatsMobileOpen ? 'open' : 'closed'}
-        >
-          <div className="absolute inset-0 bg-black/50" />
-          <AICourseLessonChat
-            courseSlug={courseSlug}
-            moduleTitle={currentModuleTitle}
-            lessonTitle={currentLessonTitle}
-            onUpgradeClick={onUpgrade}
-            isDisabled={isGenerating || isLoading || isTogglingDone}
-          />
-
-          <button
-            onClick={() => setIsAIChatsMobileOpen(false)}
-            className="absolute right-2 top-2 z-20 rounded-full p-1 text-gray-400 hover:text-black"
+        {isAIChatsMobileOpen && (
+          <div
+            className="fixed inset-0 hidden data-[state=open]:block lg:hidden data-[state=open]:lg:hidden"
+            data-state={isAIChatsMobileOpen ? 'open' : 'closed'}
           >
-            <XIcon className="size-4 stroke-[2.5]" />
-          </button>
-        </div>
+            <div className="absolute inset-0 bg-black/50" />
+            <AICourseLessonChat
+              courseSlug={courseSlug}
+              moduleTitle={currentModuleTitle}
+              lessonTitle={currentLessonTitle}
+              onUpgradeClick={onUpgrade}
+              isDisabled={isGenerating || isLoading || isTogglingDone}
+            />
+
+            <button
+              onClick={() => setIsAIChatsMobileOpen(false)}
+              className="absolute right-2 top-2 z-20 rounded-full p-1 text-gray-400 hover:text-black"
+            >
+              <XIcon className="size-4 stroke-[2.5]" />
+            </button>
+          </div>
+        )}
       </ResizablePanelGroup>
     </div>
   );
