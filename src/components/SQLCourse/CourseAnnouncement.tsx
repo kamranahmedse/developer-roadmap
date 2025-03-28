@@ -6,7 +6,7 @@ export function CourseAnnouncement() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 1500);
+    const timer = setTimeout(() => setIsVisible(true), 1700);
     return () => clearTimeout(timer);
   }, []);
 
@@ -14,7 +14,7 @@ export function CourseAnnouncement() {
     <div
       className={cn(
         'sticky top-0 z-[91] h-0 overflow-hidden transition-[height] duration-300',
-        isVisible ? 'h-[36px]' : 'h-0',
+        isVisible ? 'sm:h-[36px] h-[30px]' : 'h-0',
       )}
     >
       <a href="/courses/sql" className="flex items-center bg-yellow-400 py-1.5">
