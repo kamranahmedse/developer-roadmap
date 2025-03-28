@@ -39,7 +39,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
-  const [isAIChatsOpen, setIsAIChatsOpen] = useState(true);
+  const [isAIChatsOpen, setIsAIChatsOpen] = useState(false);
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
@@ -211,12 +211,6 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const isViewingLesson = viewMode === 'module';
 
-  useEffect(() => {
-    if (window && window?.innerWidth < 1024 && isAIChatsOpen) {
-      setIsAIChatsOpen(false);
-    }
-  }, []);
-
   return (
     <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
       {modals}
@@ -257,7 +251,7 @@ export function AICourseContent(props: AICourseContentProps) {
                 )}
               </button>
             )}
-            
+
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
