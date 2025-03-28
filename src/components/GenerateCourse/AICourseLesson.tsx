@@ -271,10 +271,11 @@ export function AICourseLesson(props: AICourseLessonProps) {
           defaultSize={isAIChatsOpen ? 60 : 100}
           minSize={40}
           id="course-text-content"
+          className="h-full overflow-y-scroll bg-white"
           order={1}
         >
-          <div className="relative h-full">
-            <div className="absolute inset-0 overflow-y-auto bg-white p-8 pb-0 max-lg:px-4 max-lg:pt-3">
+          <div className="relative mx-auto max-w-5xl">
+            <div className="bg-white p-8 pb-0 max-lg:px-4 max-lg:pt-3">
               {(isGenerating || isLoading) && (
                 <div className="absolute right-6 top-6 flex items-center justify-center">
                   <Loader2Icon
