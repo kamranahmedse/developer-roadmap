@@ -109,7 +109,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
     {
       role: 'assistant',
       content:
-        'Hey, I am your AI instructor. Here are some examples of what you can ask me about 🤖',
+        'Hey, I am your AI instructor. How can I help you today? 🤖',
       isDefault: true,
     },
   ]);
@@ -268,7 +268,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
     <div className="h-full">
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel
-          defaultSize={isAIChatsOpen ? 60 : 100}
+          defaultSize={isAIChatsOpen ? 70 : 100}
           minSize={40}
           id="course-text-content"
           className="h-full !overflow-y-scroll bg-white"
@@ -292,7 +292,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
 
                 {!isGenerating && !isLoading && (
-                  <div className="absolute right-6 top-6 flex items-center justify-between gap-2">
+                  <div className="absolute top-2 right-2 lg:right-6 lg:top-6 flex items-center justify-between gap-2">
                     <button
                       onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
                       className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"

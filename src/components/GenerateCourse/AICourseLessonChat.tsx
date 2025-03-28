@@ -211,7 +211,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
 
   return (
     <ResizablePanel
-      defaultSize={isAIChatsOpen ? 40 : 0}
+      defaultSize={isAIChatsOpen ? 30 : 0}
       minSize={20}
       id="course-chat-content"
       order={2}
