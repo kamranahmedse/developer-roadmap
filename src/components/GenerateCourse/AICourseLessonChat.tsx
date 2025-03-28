@@ -249,26 +249,13 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                         html={chat.html}
                       />
 
-                      {chat.isDefault && !defaultQuestions?.length && (
-                        <div className="mb-1 mt-0.5">
-                          <div className="grid grid-cols-2 gap-2">
-                            {capabilities.map((capability, index) => (
-                              <CapabilityCard
-                                key={`capability-${index}`}
-                                {...capability}
-                              />
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
                       {chat.isDefault && defaultQuestions?.length > 1 && (
                         <div className="mb-1 mt-0.5">
-                          <div className="grid grid-cols-2 items-stretch gap-2">
+                          <div className="flex flex-col justify-end gap-1">
                             {defaultQuestions.map((question, index) => (
                               <button
                                 key={`default-question-${index}`}
-                                className="flex h-full items-start self-start rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black hover:bg-yellow-500/20"
+                                className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
                                 onClick={() => {
                                   flushSync(() => {
                                     setMessage(question);

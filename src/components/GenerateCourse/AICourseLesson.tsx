@@ -271,7 +271,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           defaultSize={isAIChatsOpen ? 60 : 100}
           minSize={40}
           id="course-text-content"
-          className="h-full overflow-y-scroll bg-white"
+          className="h-full !overflow-y-scroll bg-white"
           order={1}
         >
           <div className="relative mx-auto max-w-5xl">

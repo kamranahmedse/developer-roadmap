@@ -5,10 +5,8 @@ import {
   CircleOff,
   Menu,
   X,
-  Map,
-  MessageCircle,
-  MessageCircleOffIcon,
-  MessageCircleIcon,
+  Map, MessageCircleOffIcon,
+  MessageCircleIcon
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
