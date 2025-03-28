@@ -245,7 +245,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                               {defaultQuestions.map((question, index) => (
                                 <button
                                   key={`default-question-${index}`}
-                                  className="rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black"
+                                  className="flex h-full items-start self-start rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black hover:bg-yellow-500/20"
                                   onClick={() => {
                                     flushSync(() => {
                                       setMessage(question);
