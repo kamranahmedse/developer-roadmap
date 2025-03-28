@@ -245,16 +245,18 @@ export function AICourseContent(props: AICourseContentProps) {
               />
             </div>
 
-            <button
-              onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
-              className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
-            >
-              {isAIChatsOpen ? (
-                <MessageCircleOffIcon size={17} strokeWidth={3} />
-              ) : (
-                <MessageCircleIcon size={17} strokeWidth={3} />
-              )}
-            </button>
+            {viewMode === 'module' && (
+              <button
+                onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+                className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+              >
+                {isAIChatsOpen ? (
+                  <MessageCircleOffIcon size={17} strokeWidth={3} />
+                ) : (
+                  <MessageCircleIcon size={17} strokeWidth={3} />
+                )}
+              </button>
+            )}
 
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
