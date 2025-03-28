@@ -29,7 +29,10 @@ import { queryClient } from '../../stores/query-client';
 import './AICourseLessonChat.css';
 import { RegenerateLesson } from './RegenerateLesson';
 import { TestMyKnowledgeAction } from './TestMyKnowledgeAction';
-import { AICourseLessonChat } from './AICourseLessonChat';
+import {
+  AICourseLessonChat,
+  type AIChatHistoryType,
+} from './AICourseLessonChat';
 import { AICourseFooter } from './AICourseFooter';
 import {
   ResizableHandle,
@@ -66,7 +69,7 @@ type AICourseLessonProps = {
   onUpgrade: () => void;
 
   isAIChatsOpen: boolean;
-  setIsAIChatsOpen: (isAIChatsOpen: boolean) => void;
+  setIsAIChatsOpen: (isOpen: boolean) => void;
 };
 
 export function AICourseLesson(props: AICourseLessonProps) {
@@ -86,11 +89,10 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
     onUpgrade,
 
-    isAIChatsOpen: isAIChatsMobileOpen,
-    setIsAIChatsOpen: setIsAIChatsMobileOpen,
+    isAIChatsOpen,
+    setIsAIChatsOpen,
   } = props;
 
-  const [isAIChatsOpen, setIsAIChatsOpen] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
@@ -100,6 +102,17 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
   const lessonId = `${slugify(String(activeModuleIndex))}-${slugify(String(activeLessonIndex))}`;
   const isLessonDone = progress?.includes(lessonId);
+
+  const [courseAIChatHistory, setCourseAIChatHistory] = useState<
+    AIChatHistoryType[]
+  >([
+    {
+      role: 'assistant',
+      content:
+        'Hey, I am your AI instructor. Here are some examples of what you can ask me about 🤖',
+      isDefault: true,
+    },
+  ]);
 
   const { isPaidUser } = useIsPaidUser();
 
@@ -460,47 +473,20 @@ export function AICourseLesson(props: AICourseLessonProps) {
         {isAIChatsOpen && (
           <>
             <ResizableHandle withHandle={false} className="max-lg:hidden" />
-            <ResizablePanel
-              defaultSize={40}
-              minSize={20}
-              id="course-chat-content"
-              order={2}
-              className="max-lg:hidden"
-            >
-              <AICourseLessonChat
-                courseSlug={courseSlug}
-                moduleTitle={currentModuleTitle}
-                lessonTitle={currentLessonTitle}
-                onUpgradeClick={onUpgrade}
-                isDisabled={isGenerating || isLoading || isTogglingDone}
-                defaultQuestions={defaultQuestions}
-              />
-            </ResizablePanel>
-          </>
-        )}
-
-        {isAIChatsMobileOpen && (
-          <div
-            className="fixed inset-0 hidden data-[state=open]:block lg:hidden data-[state=open]:lg:hidden"
-            data-state={isAIChatsMobileOpen ? 'open' : 'closed'}
-          >
-            <div className="absolute inset-0 bg-black/50" />
             <AICourseLessonChat
               courseSlug={courseSlug}
               moduleTitle={currentModuleTitle}
               lessonTitle={currentLessonTitle}
               onUpgradeClick={onUpgrade}
+              courseAIChatHistory={courseAIChatHistory}
+              setCourseAIChatHistory={setCourseAIChatHistory}
               isDisabled={isGenerating || isLoading || isTogglingDone}
               defaultQuestions={defaultQuestions}
+              onClose={() => setIsAIChatsOpen(false)}
+              isAIChatsOpen={isAIChatsOpen}
+              setIsAIChatsOpen={setIsAIChatsOpen}
             />
-
-            <button
-              onClick={() => setIsAIChatsMobileOpen(false)}
-              className="absolute right-2 top-2 z-20 rounded-full p-1 text-gray-400 hover:text-black"
-            >
-              <XIcon className="size-4 stroke-[2.5]" />
-            </button>
-          </div>
+          </>
         )}
       </ResizablePanelGroup>
     </div>

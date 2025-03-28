@@ -39,7 +39,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
-  const [isAIChatsOpen, setIsAIChatsOpen] = useState(false);
+  const [isAIChatsOpen, setIsAIChatsOpen] = useState(true);
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
@@ -144,6 +144,12 @@ export function AICourseContent(props: AICourseContentProps) {
     </>
   );
 
+  useEffect(() => {
+    if (window && window?.innerWidth < 1024 && isAIChatsOpen) {
+      setIsAIChatsOpen(false);
+    }
+  }, []);
+
   if (error && !isLoading) {
     const isLimitReached = error.includes('limit');
     const isNotFound = error.includes('not exist');
@@ -239,18 +245,16 @@ export function AICourseContent(props: AICourseContentProps) {
               />
             </div>
 
-            {viewMode === 'module' && (
-              <button
-                onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
-                className="ml-1.5 flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
-              >
-                {isAIChatsOpen ? (
-                  <MessageCircleOffIcon size={17} strokeWidth={3} />
-                ) : (
-                  <MessageCircleIcon size={17} strokeWidth={3} />
-                )}
-              </button>
-            )}
+            <button
+              onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+              className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+            >
+              {isAIChatsOpen ? (
+                <MessageCircleOffIcon size={17} strokeWidth={3} />
+              ) : (
+                <MessageCircleIcon size={17} strokeWidth={3} />
+              )}
+            </button>
 
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}

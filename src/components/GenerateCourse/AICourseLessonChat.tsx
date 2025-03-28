@@ -6,6 +6,7 @@ import {
   HelpCircle,
   LockIcon,
   Send,
+  XIcon,
 } from 'lucide-react';
 import {
   Fragment,
@@ -29,6 +30,7 @@ import {
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
+import { ResizablePanel } from './Resizeable';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -46,6 +48,14 @@ type AICourseLessonChatProps = {
   isDisabled?: boolean;
 
   defaultQuestions?: string[];
+
+  courseAIChatHistory: AIChatHistoryType[];
+  setCourseAIChatHistory: (history: AIChatHistoryType[]) => void;
+
+  onClose: () => void;
+
+  isAIChatsOpen: boolean;
+  setIsAIChatsOpen: (isOpen: boolean) => void;
 };
 
 export function AICourseLessonChat(props: AICourseLessonChatProps) {
@@ -56,22 +66,19 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
     onUpgradeClick,
     isDisabled,
     defaultQuestions = [],
+
+    courseAIChatHistory,
+    setCourseAIChatHistory,
+
+    onClose,
+
+    isAIChatsOpen,
+    setIsAIChatsOpen,
   } = props;
 
   const toast = useToast();
   const scrollareaRef = useRef<HTMLDivElement | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
-
-  const [courseAIChatHistory, setCourseAIChatHistory] = useState<
-    AIChatHistoryType[]
-  >([
-    {
-      role: 'assistant',
-      content:
-        'Hey, I am your AI instructor. Here are some examples of what you can ask me about 🤖',
-      isDefault: true,
-    },
-  ]);
 
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [message, setMessage] = useState('');
@@ -203,132 +210,147 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
   }, []);
 
   return (
-    <>
-      <div className="relative h-full">
-        <div className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white">
-          <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
-            <h4 className="text-base font-medium">Course AI</h4>
-          </div>
+    <ResizablePanel
+      defaultSize={isAIChatsOpen ? 40 : 0}
+      minSize={20}
+      id="course-chat-content"
+      order={2}
+      className="relative h-full max-lg:fixed max-lg:inset-0 max-lg:data-[chat-state=open]:flex max-lg:data-[chat-state=closed]:hidden"
+      data-chat-state={isAIChatsOpen ? 'open' : 'closed'}
+    >
+      <div
+        className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white data-[state=open]:flex data-[state=closed]:hidden"
+        data-state={isAIChatsOpen ? 'open' : 'closed'}
+      >
+        <button
+          onClick={onClose}
+          className="absolute right-2 top-2 z-20 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
+        >
+          <XIcon className="size-4 stroke-[2.5]" />
+        </button>
 
-          <div
-            className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
-            ref={scrollareaRef}
-          >
-            <div className="absolute inset-0 flex flex-col">
-              <div className="flex grow flex-col justify-end">
-                <div className="flex flex-col justify-end gap-2 px-3 py-2">
-                  {courseAIChatHistory.map((chat, index) => {
-                    return (
-                      <Fragment key={`chat-${index}`}>
-                        <AIChatCard
-                          role={chat.role}
-                          content={chat.content}
-                          html={chat.html}
-                        />
+        <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
+          <h4 className="text-base font-medium">Course AI</h4>
+        </div>
 
-                        {chat.isDefault && !defaultQuestions?.length && (
-                          <div className="mb-1 mt-0.5">
-                            <div className="grid grid-cols-2 gap-2">
-                              {capabilities.map((capability, index) => (
-                                <CapabilityCard
-                                  key={`capability-${index}`}
-                                  {...capability}
-                                />
-                              ))}
-                            </div>
+        <div
+          className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
+          ref={scrollareaRef}
+        >
+          <div className="absolute inset-0 flex flex-col">
+            <div className="flex grow flex-col justify-end">
+              <div className="flex flex-col justify-end gap-2 px-3 py-2">
+                {courseAIChatHistory.map((chat, index) => {
+                  return (
+                    <Fragment key={`chat-${index}`}>
+                      <AIChatCard
+                        role={chat.role}
+                        content={chat.content}
+                        html={chat.html}
+                      />
+
+                      {chat.isDefault && !defaultQuestions?.length && (
+                        <div className="mb-1 mt-0.5">
+                          <div className="grid grid-cols-2 gap-2">
+                            {capabilities.map((capability, index) => (
+                              <CapabilityCard
+                                key={`capability-${index}`}
+                                {...capability}
+                              />
+                            ))}
                           </div>
-                        )}
+                        </div>
+                      )}
 
-                        {chat.isDefault && defaultQuestions?.length > 1 && (
-                          <div className="mb-1 mt-0.5">
-                            <div className="grid grid-cols-2 items-stretch gap-2">
-                              {defaultQuestions.map((question, index) => (
-                                <button
-                                  key={`default-question-${index}`}
-                                  className="flex h-full items-start self-start rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black hover:bg-yellow-500/20"
-                                  onClick={() => {
-                                    flushSync(() => {
-                                      setMessage(question);
-                                    });
+                      {chat.isDefault && defaultQuestions?.length > 1 && (
+                        <div className="mb-1 mt-0.5">
+                          <div className="grid grid-cols-2 items-stretch gap-2">
+                            {defaultQuestions.map((question, index) => (
+                              <button
+                                key={`default-question-${index}`}
+                                className="flex h-full items-start self-start rounded-md bg-yellow-500/10 p-2 text-left text-sm text-black hover:bg-yellow-500/20"
+                                onClick={() => {
+                                  flushSync(() => {
+                                    setMessage(question);
+                                  });
 
-                                    textareaRef.current?.focus();
-                                  }}
-                                >
-                                  {question}
-                                </button>
-                              ))}
-                            </div>
+                                  textareaRef.current?.focus();
+                                }}
+                              >
+                                {question}
+                              </button>
+                            ))}
                           </div>
-                        )}
-                      </Fragment>
-                    );
-                  })}
+                        </div>
+                      )}
+                    </Fragment>
+                  );
+                })}
 
-                  {isStreamingMessage && !streamedMessage && (
-                    <AIChatCard role="assistant" content="Thinking..." />
-                  )}
+                {isStreamingMessage && !streamedMessage && (
+                  <AIChatCard role="assistant" content="Thinking..." />
+                )}
 
-                  {streamedMessage && (
-                    <AIChatCard role="assistant" content={streamedMessage} />
-                  )}
-                </div>
+                {streamedMessage && (
+                  <AIChatCard role="assistant" content={streamedMessage} />
+                )}
               </div>
             </div>
           </div>
-
-          <form
-            className="relative flex items-start border-t border-gray-200 text-sm"
-            onSubmit={handleChatSubmit}
-          >
-            {isLimitExceeded && (
-              <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
-                <LockIcon
-                  className="size-4 cursor-not-allowed"
-                  strokeWidth={2.5}
-                />
-                <p className="cursor-not-allowed">
-                  Limit reached for today
-                  {isPaidUser ? '. Please wait until tomorrow.' : ''}
-                </p>
-                {!isPaidUser && (
-                  <button
-                    onClick={() => {
-                      onUpgradeClick();
-                    }}
-                    className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                  >
-                    Upgrade for more
-                  </button>
-                )}
-              </div>
-            )}
-            <TextareaAutosize
-              className={cn(
-                'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none',
-                isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
-              )}
-              placeholder="Ask AI anything about the lesson..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              autoFocus={true}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
-                }
-              }}
-              ref={textareaRef}
-            />
-            <button
-              type="submit"
-              disabled={isDisabled || isStreamingMessage || isLimitExceeded}
-              className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              <Send className="size-4 stroke-[2.5]" />
-            </button>
-          </form>
         </div>
+
+        <form
+          className="relative flex items-start border-t border-gray-200 text-sm"
+          onSubmit={handleChatSubmit}
+        >
+          {isLimitExceeded && (
+            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
+              <LockIcon
+                className="size-4 cursor-not-allowed"
+                strokeWidth={2.5}
+              />
+              <p className="cursor-not-allowed">
+                Limit reached for today
+                {isPaidUser ? '. Please wait until tomorrow.' : ''}
+              </p>
+              {!isPaidUser && (
+                <button
+                  onClick={() => {
+                    onUpgradeClick();
+                  }}
+                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                >
+                  Upgrade for more
+                </button>
+              )}
+            </div>
+          )}
+          <TextareaAutosize
+            className={cn(
+              'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none',
+              isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
+            )}
+            placeholder="Ask AI anything about the lesson..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            autoFocus={true}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
+              }
+            }}
+            ref={textareaRef}
+          />
+          <button
+            type="submit"
+            disabled={isDisabled || isStreamingMessage || isLimitExceeded}
+            className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <Send className="size-4 stroke-[2.5]" />
+          </button>
+        </form>
       </div>
-    </>
+    </ResizablePanel>
   );
 }
 
