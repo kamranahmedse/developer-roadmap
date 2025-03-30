@@ -106,7 +106,7 @@ int main() {
     return 0;
 }
 ```
-## Resources
-- [@official@C++ Reference: Statements and Flow Control](https://en.cppreference.com/w/cpp/language/control)
-- [@opensource@GNU C++ Documentation](https://gcc.gnu.org/onlinedocs/gcc/Flow-Control.html)
-- [@video@Control Flow in C++ (freeCodeCamp)](https://www.youtube.com/watch?v=_bYFu9mBnr4)
+Visit the following resources to learn more: 
+- [@official@Statements in C++](https://en.cppreference.com/w/cpp/language/statements)
+- [@article@Control Flow Statements in Programming (Geeks for Geeks)](https://www.geeksforgeeks.org/control-flow-statements-in-programming/)
+- [@article@Control Flow Cheatsheet for C++(Codecademy)](https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/control-flow-cpp/cheatsheet)
