@@ -2,6 +2,7 @@
 import { aiRoadmapApi } from '../../api/ai-roadmap';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { GenerateRoadmap } from '../../components/GenerateRoadmap/GenerateRoadmap';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 
 export const prerender = false;
 
@@ -31,4 +32,5 @@ const title = roadmap?.title || 'Roadmap AI';
     isAuthenticatedUser={roadmap?.isAuthenticatedUser}
     client:load
   />
+  <CheckSubscriptionVerification client:load />
 </BaseLayout>

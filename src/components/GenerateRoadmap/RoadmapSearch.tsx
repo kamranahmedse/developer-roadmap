@@ -5,7 +5,8 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import { useIsPaidUser } from '../../queries/billing.ts';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -30,6 +31,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     isKeyOnly,
   } = props;
 
+  const { isPaidUser, isLoading } = useIsPaidUser();
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
   const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
@@ -44,7 +46,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
   return (
     <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
       {isConfiguring && (
-        <IncreaseRoadmapLimit
+        <UpgradeAccountModal
           onClose={() => {
             setIsConfiguring(false);
             loadAIRoadmapLimit();
@@ -193,7 +195,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
         </div>
       )}
-      {isKeyOnly && isAuthenticatedUser && (
+      {isKeyOnly && isAuthenticatedUser && !isPaidUser && (
         <div className="mx-auto mt-12 flex max-w-[450px] flex-col items-center gap-4">
           <p className={'text-center text-red-500'}>
             We have hit the limit for AI roadmap generation. Please try again
@@ -222,7 +224,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
         </div>
       )}
-      {!isKeyOnly && limit > 0 && isAuthenticatedUser && (
+      {!isKeyOnly && limit > 0 && isAuthenticatedUser && !isPaidUser && (
         <div className="mt-12 flex flex-col items-center gap-4">
           <p className="text-center text-gray-500">
             You have generated{' '}
@@ -235,17 +237,15 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </span>{' '}
             roadmaps today.
           </p>
-          {isAuthenticatedUser && (
-            <p className="flex items-center text-sm">
-              <button
-                onClick={() => setIsConfiguring(true)}
-                className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-              >
-                Need to generate more?{' '}
-                <span className="font-semibold">Click here.</span>
-              </button>
-            </p>
-          )}
+          <p className="flex items-center text-sm">
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+            >
+              Need to generate more?{' '}
+              <span className="font-semibold">Click here.</span>
+            </button>
+          </p>
         </div>
       )}
     </div>
