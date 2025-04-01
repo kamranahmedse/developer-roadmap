@@ -2,9 +2,16 @@
 import { AICourse } from '../../components/GenerateCourse/AICourse';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
+
+const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
 ---
 
-<BaseLayout title='AI Tutor' noIndex={true}>
+<BaseLayout
+  title='AI Tutor'
+  noIndex={true}
+  ogImageUrl={ogImage}
+  description='Learn anything with AI Tutor. Pick a topic, and the AI will guide you through the learning process.'
+>
   <AICourse client:load />
   <CheckSubscriptionVerification client:load />
 </BaseLayout>
