@@ -239,7 +239,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
           <h4 className="text-base font-medium">Course AI</h4>
           <button
             onClick={onClose}
-            className="hidden rounded-md px-2 py-2 text-xs font-medium text-gray-300 hover:bg-gray-100 hover:text-black lg:block"
+            className="hidden rounded-md px-2 py-2 text-xs font-medium text-gray-500 hover:bg-gray-100 hover:text-black lg:block"
           >
             <X className="size-4 stroke-[2.5]" />
           </button>
