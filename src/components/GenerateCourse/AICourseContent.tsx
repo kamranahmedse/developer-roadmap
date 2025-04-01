@@ -5,9 +5,10 @@ import {
   CircleOff,
   Menu,
   X,
-  Map,
+  Map, MessageCircleOffIcon,
+  MessageCircleIcon
 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
 import { cn } from '../../lib/classname';
 import { useIsPaidUser } from '../../queries/billing';
@@ -19,6 +20,7 @@ import { AICourseSidebarModuleList } from './AICourseSidebarModuleList';
 import { AILimitsPopup } from './AILimitsPopup';
 import { AICourseOutlineView } from './AICourseOutlineView';
 import { AICourseRoadmapView } from './AICourseRoadmapView';
+import { AICourseFooter } from './AICourseFooter';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -35,6 +37,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
+  const [isAIChatsOpen, setIsAIChatsOpen] = useState(true);
 
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
   const [activeLessonIndex, setActiveLessonIndex] = useState(0);
@@ -139,6 +142,12 @@ export function AICourseContent(props: AICourseContentProps) {
     </>
   );
 
+  useEffect(() => {
+    if (window && window?.innerWidth < 1024 && isAIChatsOpen) {
+      setIsAIChatsOpen(false);
+    }
+  }, []);
+
   if (error && !isLoading) {
     const isLimitReached = error.includes('limit');
     const isNotFound = error.includes('not exist');
@@ -233,6 +242,19 @@ export function AICourseContent(props: AICourseContentProps) {
                 onShowLimits={() => setShowAILimitsPopup(true)}
               />
             </div>
+
+            {viewMode === 'module' && (
+              <button
+                onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
+                className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+              >
+                {isAIChatsOpen ? (
+                  <MessageCircleOffIcon size={17} strokeWidth={3} />
+                ) : (
+                  <MessageCircleIcon size={17} strokeWidth={3} />
+                )}
+              </button>
+            )}
 
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -392,6 +414,9 @@ export function AICourseContent(props: AICourseContentProps) {
           className={cn(
             'flex-1 overflow-y-scroll p-6 transition-all duration-200 ease-in-out max-lg:p-3',
             sidebarOpen ? 'lg:ml-0' : '',
+            viewMode === 'module'
+              ? 'flex flex-col overflow-hidden p-0 max-lg:p-0'
+              : '',
           )}
           key={`${courseSlug}-${viewMode}`}
         >
@@ -409,6 +434,8 @@ export function AICourseContent(props: AICourseContentProps) {
               onGoToNextLesson={goToNextLesson}
               key={`${courseSlug}-${activeModuleIndex}-${activeLessonIndex}`}
               onUpgrade={() => setShowUpgradeModal(true)}
+              isAIChatsOpen={isAIChatsOpen}
+              setIsAIChatsOpen={setIsAIChatsOpen}
             />
           )}
 
@@ -442,9 +469,7 @@ export function AICourseContent(props: AICourseContentProps) {
             />
           )}
 
-          <div className="mx-auto mb-10 mt-5 text-center text-sm text-gray-400">
-            AI can make mistakes, check important info.
-          </div>
+          <AICourseFooter className={viewMode === 'module' ? 'hidden' : ''} />
         </main>
       </div>
 
