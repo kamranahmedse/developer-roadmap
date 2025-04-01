@@ -9,6 +9,10 @@ hasTopics: true
 isHidden: false
 isUpcoming: false
 isNew: false
+partner:
+  description: "Ready-to use free on/offboarding templates for new employees"
+  link: "https://www.silo.team/book-a-demo-silo-team?utm_source=affiliate1&utm_medium=referral&utm_campaign=free_onboarding_checklist"
+  linkText: "silo.team"
 seo:
   title: Product Manager
   description: Learn what product management is, what product managers do and how to become one using our community-driven roadmap.

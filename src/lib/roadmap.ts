@@ -28,7 +28,11 @@ export interface RoadmapFrontmatter {
   isHidden: boolean;
   isNew: boolean;
   isUpcoming: boolean;
-  tnsBannerLink?: string;
+  partner?: {
+    description: string;
+    link: string;
+    linkText: string;
+  };
   note?: string;
   question?: {
     title: string;

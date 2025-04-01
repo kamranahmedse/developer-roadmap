@@ -9,6 +9,10 @@ title: 'Software Architect'
 description: 'Step by step guide to becoming a Software Architect in 2025'
 isNew: false
 hasTopics: true
+partner:
+  description: "Ready-to use free on/offboarding templates for new employees"
+  link: "https://www.silo.team/book-a-demo-silo-team?utm_source=affiliate1&utm_medium=referral&utm_campaign=free_onboarding_checklist"
+  linkText: "silo.team"
 dimensions:
   width: 968
   height: 2525

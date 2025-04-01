@@ -9,7 +9,10 @@ title: 'Backend Developer'
 description: 'Step by step guide to becoming a modern backend developer in 2025'
 hasTopics: true
 isForkable: false
-tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+partner:
+  description: "Get the latest Backend news from our sister site"
+  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
+  linkText: "TheNewStack.io"
 question:
   title: 'What is Backend Development?'
   description: |

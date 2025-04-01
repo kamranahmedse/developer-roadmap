@@ -18,7 +18,11 @@ export interface Props {
   title: string;
   description: string;
   note?: string;
-  tnsBannerLink?: string;
+  partner?: {
+    description: string;
+    link: string;
+    linkText: string;
+  };
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
@@ -26,14 +30,14 @@ export interface Props {
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
-  activeTab?: 'roadmap' | 'projects';
+  activeTab?: 'roadmap' | 'projects' | 'courses';
 }
 
 const {
   title,
   description,
   roadmapId,
-  tnsBannerLink,
+  partner,
   isUpcoming = false,
   note,
   hasTopics = false,
@@ -53,13 +57,13 @@ const roadmapTitle =
 
 <div class='container mt-0 flex flex-col gap-2.5 px-0 sm:mt-3 sm:px-4'>
   {
-    tnsBannerLink && (
+    partner && (
       <div class='hidden rounded-md border bg-white px-2 py-1.5 sm:block'>
         <p class='py-0.5 text-left text-sm'>
           <span class='badge mr-1'>Partner</span>
-          Get the latest {roadmapTitle} news from our sister site{' '}
-          <a href={tnsBannerLink} target='_blank' class='font-medium underline'>
-            TheNewStack.io
+          {partner.description}
+          <a href={partner.link} target='_blank' class='font-medium underline'>
+            {partner.linkText}
           </a>
         </p>
       </div>
