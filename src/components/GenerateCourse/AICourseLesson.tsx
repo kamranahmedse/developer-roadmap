@@ -482,6 +482,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
               courseAIChatHistory={courseAIChatHistory}
               setCourseAIChatHistory={setCourseAIChatHistory}
               isDisabled={isGenerating || isLoading || isTogglingDone}
+              isGeneratingLesson={isGenerating || isLoading}
               defaultQuestions={defaultQuestions}
               onClose={() => setIsAIChatsOpen(false)}
               isAIChatsOpen={isAIChatsOpen}

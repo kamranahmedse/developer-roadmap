@@ -5,9 +5,10 @@ import {
   Hammer,
   HelpCircle,
   LockIcon,
-  Send, User2,
+  Send,
+  User2,
   X,
-  XIcon
+  XIcon,
 } from 'lucide-react';
 import {
   Fragment,
@@ -32,6 +33,7 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { ResizablePanel } from './Resizeable';
+import { Spinner } from '../ReactIcons/Spinner';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -47,6 +49,7 @@ type AICourseLessonChatProps = {
   lessonTitle: string;
   onUpgradeClick: () => void;
   isDisabled?: boolean;
+  isGeneratingLesson?: boolean;
 
   defaultQuestions?: string[];
 
@@ -75,6 +78,8 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
 
     isAIChatsOpen,
     setIsAIChatsOpen,
+
+    isGeneratingLesson,
   } = props;
 
   const toast = useToast();
@@ -245,7 +250,20 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
           ref={scrollareaRef}
         >
           <div className="absolute inset-0 flex flex-col">
-            <div className="flex grow flex-col justify-end">
+            <div className="relative flex grow flex-col justify-end">
+              {isGeneratingLesson && (
+                <div className="absolute inset-0 flex items-center justify-center gap-1.5 bg-gray-100">
+                  <div className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-white px-3 py-1.5">
+                    <Spinner
+                      className="size-4 text-gray-400"
+                      outerFill="transparent"
+                    />
+                    <p className="text-sm text-gray-500">
+                      Generating lesson...
+                    </p>
+                  </div>
+                </div>
+              )}
               <div className="flex flex-col justify-end gap-2 px-3 py-2">
                 {courseAIChatHistory.map((chat, index) => {
                   return (
@@ -259,7 +277,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                       {chat.isDefault && defaultQuestions?.length > 1 && (
                         <div className="mb-1 mt-0.5">
                           <p className="mb-2 text-xs font-normal text-gray-500">
-                            Here are some questions that you might have about this lesson.
+                            Some questions you might have about this lesson.
                           </p>
                           <div className="flex flex-col justify-end gap-1">
                             {defaultQuestions.map((question, index) => (
