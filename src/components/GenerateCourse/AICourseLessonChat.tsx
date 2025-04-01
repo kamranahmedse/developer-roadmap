@@ -5,8 +5,9 @@ import {
   Hammer,
   HelpCircle,
   LockIcon,
-  Send,
-  XIcon,
+  Send, User2,
+  X,
+  XIcon
 } from 'lucide-react';
 import {
   Fragment,
@@ -231,6 +232,12 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
 
         <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
           <h4 className="text-base font-medium">Course AI</h4>
+          <button
+            onClick={onClose}
+            className="hidden rounded-md px-2 py-2 text-xs font-medium text-gray-300 hover:bg-gray-100 hover:text-black lg:block"
+          >
+            <X className="size-4 stroke-[2.5]" />
+          </button>
         </div>
 
         <div
@@ -251,6 +258,9 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
 
                       {chat.isDefault && defaultQuestions?.length > 1 && (
                         <div className="mb-1 mt-0.5">
+                          <p className="mb-2 text-xs font-normal text-gray-500">
+                            Here are some questions that you might have about this lesson.
+                          </p>
                           <div className="flex flex-col justify-end gap-1">
                             {defaultQuestions.map((question, index) => (
                               <button
@@ -374,7 +384,11 @@ function AIChatCard(props: AIChatCardProps) {
               : 'bg-yellow-400 text-black',
           )}
         >
-          <Bot className="size-4 stroke-[2.5]" />
+          {role === 'user' ? (
+            <User2 className="size-4 stroke-[2.5]" />
+          ) : (
+            <Bot className="size-4 stroke-[2.5]" />
+          )}
         </div>
         <div
           className="course-content course-ai-content prose prose-sm mt-0.5 max-w-full overflow-hidden text-sm"
