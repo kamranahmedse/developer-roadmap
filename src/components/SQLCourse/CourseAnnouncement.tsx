@@ -26,7 +26,10 @@ export function CourseAnnouncement() {
             </span>
             <span className="block sm:hidden">Announcing our SQL course</span>
           </span>
-          <span className="items-center gap-1.5 rounded-full bg-black px-2 py-0.5 text-xs font-medium uppercase tracking-wide text-white hover:bg-zinc-800 sm:px-3 sm:py-1">
+          <span className={cn(
+            "items-center gap-1.5 rounded-full bg-black px-2 py-0.5 text-xs font-medium uppercase tracking-wide text-white hover:bg-zinc-800 sm:px-3 sm:py-1",
+            isVisible && "animate-wiggle [animation-delay:0.25s]"
+          )}>
             <span className="mr-1.5 hidden sm:inline">Start Learning</span>
             <span className="mr-1.5 inline sm:hidden">Visit</span>
             <span className="">→</span>

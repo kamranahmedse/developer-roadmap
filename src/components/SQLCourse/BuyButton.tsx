@@ -15,6 +15,7 @@ import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { VideoModal } from '../VideoModal';
+import { showLoginPopup } from '../../lib/popup';
 
 export const SQL_COURSE_SLUG = 'sql';
 
@@ -128,11 +129,15 @@ export function BuyButton(props: BuyButtonProps) {
   }, []);
 
   const isLoadingPricing =
-    isLoadingCourse || !coursePricing || isLoadingCourseProgress;
+    isLoadingCourse ||
+    !coursePricing ||
+    isLoadingCourseProgress ||
+    isCreatingCheckoutSession;
   const isAlreadyEnrolled = !!courseProgress?.enrolledAt;
 
   function initPurchase() {
     if (!isLoggedIn()) {
+      setIsLoginPopupOpen(true);
       return;
     }
 
