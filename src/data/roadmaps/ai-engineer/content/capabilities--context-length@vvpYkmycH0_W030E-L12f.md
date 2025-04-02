@@ -4,5 +4,5 @@ A key aspect of the OpenAI models is their context length, which refers to the a
 
 Learn more from the following resources:
 
-- [@official@Managing Context](https://platform.openai.com/docs/guides/text-generation/managing-context-for-text-generation)
+- [@official@Managing Context](https://platform.openai.com/docs/guides/conversation-state?api-mode=responses#managing-context-for-text-generation)
 - [@official@Capabilities](https://platform.openai.com/docs/guides/text-generation)
