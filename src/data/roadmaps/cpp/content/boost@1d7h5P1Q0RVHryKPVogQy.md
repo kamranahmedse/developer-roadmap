@@ -1,0 +1,1 @@
+The Boost Library in C++ is a collection of high-quality, peer-reviewed libraries that extend the capabilities of the C++ Standard Library. It provides additional functionality for various domains like data structures, algorithms, concurrency, networking, and more. Many of these libraries have influenced the development of modern C++ standards (C++11 and beyond).
