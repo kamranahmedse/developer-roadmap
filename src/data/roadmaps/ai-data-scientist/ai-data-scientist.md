@@ -53,7 +53,7 @@ question:
 
     **#1. Learn the Basics:** Start with math (like statistics) and programming (Python or R) to understand and process data efficiently.
 
-    **#2.** Practice with Data: Begin with small projects, like analyzing trends or creating charts, and gradually tackle more complex goals.
+    **#2. Practice with Data:** Begin with small projects, like analyzing trends or creating charts, and gradually tackle more complex goals.
 
     **#3. Take Courses:** Use online classes and tutorials to learn Data Science step by step.
 
