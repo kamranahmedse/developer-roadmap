@@ -16,6 +16,10 @@ export default defineConfig({
       status: 301,
       destination: '/devops',
     },
+    '/ai-tutor': {
+      status: 301,
+      destination: '/ai',
+    },
   },
   vite: {
     server: {
