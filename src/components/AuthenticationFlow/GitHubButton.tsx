@@ -127,7 +127,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
-      const pagePath = ['/respond-invite', '/befriend', '/r', '/ai'].includes(
+      const pagePath = ['/respond-invite', '/befriend', '/r', '/ai-roadmaps'].includes(
         window.location.pathname,
       )
         ? window.location.pathname + window.location.search

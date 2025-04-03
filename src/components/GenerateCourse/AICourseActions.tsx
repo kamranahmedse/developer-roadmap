@@ -63,7 +63,7 @@ export function AICourseActions(props: AICourseActionsType) {
       {isOpen && (
         <div className="absolute right-0 top-8 z-10 w-48 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
           <a
-            href={`/ai-tutor/${courseSlug}`}
+            href={`/ai/${courseSlug}`}
             className="flex w-full items-center gap-1.5 p-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-black disabled:cursor-not-allowed disabled:opacity-70"
           >
             <Play className="h-3.5 w-3.5" />

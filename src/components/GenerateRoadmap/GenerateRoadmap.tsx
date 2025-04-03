@@ -19,7 +19,7 @@ import {
 } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Ban, Cog, Download, PenSquare, Save, Wand } from 'lucide-react';
+import { Ban, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -199,7 +199,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                 roadmapSlug,
               },
               '',
-              `${origin}/ai/${roadmapSlug}`,
+              `${origin}/ai-roadmaps/${roadmapSlug}`,
             );
           }
 
@@ -473,7 +473,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     );
   }
 
-  const pageUrl = `https://roadmap.sh/ai/${roadmapSlug}`;
+  const pageUrl = `https://roadmap.sh/ai-roadmaps/${roadmapSlug}`;
   const canGenerateMore = roadmapLimitUsed < roadmapLimit || isPaidUser;
   const isGenerateButtonDisabled =
     isLoadingResults ||

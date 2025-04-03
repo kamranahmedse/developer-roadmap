@@ -1,8 +1,8 @@
 import {
-  BadgeCheck,
-  HeartHandshake,
-  Telescope,
-  type LucideIcon,
+    BadgeCheck,
+    HeartHandshake,
+    Telescope,
+    type LucideIcon,
 } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { cn } from '../lib/classname';
@@ -56,7 +56,7 @@ export function RoadmapAlert(props: RoadmapAlertProps) {
           Community Roadmaps
         </a>
         <a
-          href="/ai/explore"
+          href="/ai-roadmaps/explore"
           className="flex items-center gap-1.5 rounded-md border border-yellow-600 px-2 py-1 text-yellow-700 transition-colors hover:bg-yellow-300 hover:text-yellow-800"
         >
           <Telescope size={15} />

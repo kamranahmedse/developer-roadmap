@@ -68,7 +68,7 @@ export function AICourse(props: AICourseProps) {
       });
     }
 
-    window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
+    window.location.href = `/ai/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
   }
 
   return (

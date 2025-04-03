@@ -17,8 +17,9 @@ const { courseSlug } = Astro.params as Params;
   briefTitle='AI Tutor'
   description='AI Tutor'
   keywords={['ai', 'tutor', 'education', 'learning']}
-  canonicalUrl={`/ai-tutor/${courseSlug}`}
+  canonicalUrl={`/ai/${courseSlug}`}
 >
+  <div slot='course-announcement'></div>
   <GetAICourse client:load courseSlug={courseSlug} />
   <CheckSubscriptionVerification client:load />
 </SkeletonLayout>

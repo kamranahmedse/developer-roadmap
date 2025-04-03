@@ -189,7 +189,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
               <p className="mt-5 text-sm text-black">
                 <a
-                  href="/ai-tutor"
+                  href="/ai"
                   className="font-medium underline underline-offset-2"
                 >
                   Back to AI Tutor
@@ -201,7 +201,7 @@ export function AICourseContent(props: AICourseContentProps) {
           {(isNotFound || !showUpgradeButton) && (
             <div className="my-5">
               <a
-                href="/ai-tutor"
+                href="/ai"
                 className="rounded-md bg-black px-6 py-2 text-sm font-medium text-white hover:bg-opacity-80"
               >
                 Create a course with AI
@@ -222,7 +222,7 @@ export function AICourseContent(props: AICourseContentProps) {
       <div className="border-b border-gray-200 bg-gray-100">
         <div className="flex items-center justify-between px-4 py-2">
           <a
-            href="/ai-tutor"
+            href="/ai"
             onClick={(e) => {
               if (isViewingLesson) {
                 e.preventDefault();

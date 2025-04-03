@@ -7,8 +7,6 @@ import { AccountDropdown } from './AccountDropdown';
 import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
 ---
 
-<CourseAnnouncement client:load />
-
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
     <div class='flex items-center gap-5'>
@@ -21,7 +19,7 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
       </a>
 
       <a
-        href='/ai-tutor'
+        href='/ai'
         class='group relative inline text-gray-400 hover:text-white sm:hidden'
       >
         AI Tutor
@@ -35,7 +33,7 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
         </a>
         <RoadmapDropdownMenu client:load />
         <a
-          href='/ai-tutor'
+          href='/ai'
           class='group relative mr-3 text-blue-300 hover:text-white'
         >
           AI Tutor

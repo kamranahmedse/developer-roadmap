@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
 import {
-  FIRST_LOGIN_PARAM,
-  TOKEN_COOKIE_NAME,
-  setAuthToken,
+  FIRST_LOGIN_PARAM, setAuthToken
 } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { COURSE_PURCHASE_PARAM } from '../../lib/jwt';
@@ -11,8 +8,7 @@ import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
 import {
-  getStoredUtmParams,
-  triggerUtmRegistration,
+  triggerUtmRegistration
 } from '../../lib/browser.ts';
 import { cn } from '../../lib/classname.ts';
 
@@ -132,7 +128,7 @@ export function GoogleButton(props: GoogleButtonProps) {
             '/respond-invite',
             '/befriend',
             '/r',
-            '/ai',
+            '/ai-roadmaps',
           ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;

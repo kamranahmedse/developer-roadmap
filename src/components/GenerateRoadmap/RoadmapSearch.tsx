@@ -1,4 +1,4 @@
-import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
+import { ArrowUpRight, Ban, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
@@ -160,7 +160,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </button>
           ))}
           <a
-            href="/ai/explore"
+            href="/ai-roadmaps/explore"
             className="flex items-center gap-1.5 rounded-full border border-black bg-gray-700 px-2 py-0.5 text-sm text-white transition-colors hover:border-black hover:bg-black"
           >
             Explore AI Roadmaps <Telescope size={17} />
@@ -181,7 +181,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
           <p className="flex flex-col gap-2 text-center text-gray-500 sm:flex-row">
             <a
-              href="/ai/explore"
+              href="/ai-roadmaps/explore"
               className="flex items-center gap-1.5 rounded-full border border-purple-600 px-2.5 py-0.5 text-sm text-purple-600 transition-colors hover:bg-purple-600 hover:text-white"
             >
               Explore AI Generated Roadmaps <Telescope size={15} />
@@ -210,7 +210,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
           <p className="flex flex-col gap-2 text-center text-gray-500 sm:flex-row">
             <a
-              href="/ai/explore"
+              href="/ai-roadmaps/explore"
               className="flex items-center gap-1.5 rounded-full border border-purple-600 px-2.5 py-0.5 text-sm text-purple-600 transition-colors hover:bg-purple-600 hover:text-white"
             >
               Explore AI Roadmaps <Telescope size={15} />

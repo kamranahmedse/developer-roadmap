@@ -208,7 +208,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
                 {!isStreaming && (
                   <div className="mt-4">
                     <a
-                      href="/ai-tutor"
+                      href="/ai"
                       className="mb-1 mt-2 inline-flex items-center rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-800 no-underline hover:bg-yellow-500"
                     >
                       Dive deeper using AI Tutor

@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
 import {
   FIRST_LOGIN_PARAM,
-  COURSE_PURCHASE_PARAM,
-  TOKEN_COOKIE_NAME,
-  setAuthToken,
+  COURSE_PURCHASE_PARAM, setAuthToken
 } from '../../lib/jwt';
 import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
@@ -131,7 +128,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
             '/respond-invite',
             '/befriend',
             '/r',
-            '/ai',
+            '/ai-roadmaps',
           ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;

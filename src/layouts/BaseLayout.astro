@@ -17,6 +17,7 @@ import Clarity from '../components/Analytics/Clarity.astro';
 import RedditPixel from '../components/Analytics/RedditPixel.astro';
 import GoogleAd from '../components/Analytics/GoogleAd.astro';
 import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
+import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
 
 export interface Props {
   title: string;
@@ -165,6 +166,9 @@ const gaPageIdentifier = Astro.url.pathname
     <GoogleAd />
   </head>
   <body class='flex min-h-screen flex-col'>
+    <slot name='course-announcement'>
+      <CourseAnnouncement client:load />
+    </slot>
     <slot name='page-header'>
       <Navigation />
     </slot>

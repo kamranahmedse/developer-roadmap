@@ -1,15 +1,6 @@
-import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { DashboardCustomProgressCard } from './DashboardCustomProgressCard';
 import { DashboardCardLink } from './DashboardCardLink';
-import { useState } from 'react';
-import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { Simulate } from 'react-dom/test-utils';
 import {
-  ArrowUpRight,
-  Bot,
-  BrainCircuit,
-  Map,
-  PencilRuler,
+  BrainCircuit
 } from 'lucide-react';
 
 type DashboardAiRoadmapsProps = {
@@ -30,7 +21,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
         <h2 className="text-xs uppercase text-gray-400">My AI Roadmaps</h2>
 
         <a
-          href="/ai/explore"
+          href="/ai-roadmaps/explore"
           className="rounded-full bg-gray-200 px-2.5 py-0.5 text-xs font-medium text-gray-700 hover:bg-gray-300 hover:text-black"
         >
           AI Generated Roadmaps
@@ -41,7 +32,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
         <DashboardCardLink
           className="mt-0"
           icon={BrainCircuit}
-          href="/ai"
+          href="/ai-roadmaps"
           title="Generate Roadmaps with AI"
           description="You can generate your own roadmap with AI"
         />
@@ -61,7 +52,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
             {roadmaps.map((roadmap) => (
               <a
                 key={roadmap.id}
-                href={`/ai/${roadmap.slug}`}
+                href={`/ai-roadmaps/${roadmap.slug}`}
                 className="relative truncate rounded-md border bg-white p-2.5 text-left text-sm shadow-sm hover:border-gray-400 hover:bg-gray-50"
               >
                 {roadmap.title}
@@ -70,7 +61,7 @@ export function DashboardAiRoadmaps(props: DashboardAiRoadmapsProps) {
 
             <a
               className="flex items-center justify-center rounded-lg border border-dashed border-gray-300 bg-white p-2.5 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-600"
-              href={'/ai'}
+              href={'/ai-roadmaps'}
             >
               + Generate New
             </a>

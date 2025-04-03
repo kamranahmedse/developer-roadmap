@@ -1,5 +1,5 @@
-import { ChevronDown, Globe, Menu, Sparkles, Map } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { ChevronDown, Globe, Sparkles, Map } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import {
@@ -17,7 +17,7 @@ const links = [
     isHighlighted: true,
   },
   {
-    link: '/ai',
+    link: '/ai-roadmaps',
     label: 'AI Roadmaps',
     description: 'Generate roadmaps with AI',
     Icon: Sparkles,
