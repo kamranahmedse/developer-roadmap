@@ -35,8 +35,9 @@ import {
   readAIRoadmapStream,
 } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import { useIsPaidUser } from '../../queries/billing.ts';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -101,6 +102,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
+  const { isPaidUser, isLoading: isLoadingPaidUser } = useIsPaidUser();
   const { rc: referralCode } = getUrlParams() as {
     rc?: string;
   };
@@ -472,12 +474,25 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
   }
 
   const pageUrl = `https://roadmap.sh/ai/${roadmapSlug}`;
-  const canGenerateMore = roadmapLimitUsed < roadmapLimit;
+  const canGenerateMore = roadmapLimitUsed < roadmapLimit || isPaidUser;
+  const isGenerateButtonDisabled =
+    isLoadingResults ||
+    (isAuthenticatedUser &&
+      // if no limit,
+      (!roadmapLimit ||
+        // no roadmap term,
+        !roadmapTerm ||
+        // if limit is reached and user is not paid user,
+        (roadmapLimitUsed >= roadmapLimit && !isPaidUser) ||
+        // if roadmap term is the same as the current roadmap term,
+        roadmapTerm === currentRoadmap?.term ||
+        // if key only,
+        isKeyOnly));
 
   return (
     <>
       {isConfiguring && (
-        <IncreaseRoadmapLimit
+        <UpgradeAccountModal
           onClose={() => {
             setIsConfiguring(false);
             loadAIRoadmapLimit().finally(() => null);
@@ -519,7 +534,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           {!isLoading && (
             <div className="container flex flex-grow flex-col items-start">
               <AIRoadmapAlert />
-              {isKeyOnly && isAuthenticatedUser && (
+              {isKeyOnly && isAuthenticatedUser && !isPaidUser && (
                 <div className="flex flex-row gap-4">
                   <p className={'text-left text-red-500'}>
                     We have hit the limit for AI roadmap generation. Please try
@@ -533,7 +548,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   </p>
                 </div>
               )}
-              {!isKeyOnly && isAuthenticatedUser && (
+              {!isKeyOnly && isAuthenticatedUser && !isPaidUser && (
                 <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
                   <span>
                     <span
@@ -582,7 +597,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                 <button
                   type={'submit'}
                   className={cn(
-                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2.5 text-white',
                     'disabled:cursor-not-allowed disabled:opacity-50',
                   )}
                   onClick={(e) => {
@@ -591,15 +606,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                       showLoginPopup();
                     }
                   }}
-                  disabled={
-                    isLoadingResults ||
-                    (isAuthenticatedUser &&
-                      (!roadmapLimit ||
-                        !roadmapTerm ||
-                        roadmapLimitUsed >= roadmapLimit ||
-                        roadmapTerm === currentRoadmap?.term ||
-                        isKeyOnly))
-                  }
+                  disabled={isGenerateButtonDisabled}
                 >
                   {isLoadingResults && (
                     <>

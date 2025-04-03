@@ -1,8 +1,10 @@
 ---
 import { GenerateRoadmap } from '../../components/GenerateRoadmap/GenerateRoadmap';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 ---
 
-<BaseLayout title='Roadmap AI' permalink="/ai">
+<BaseLayout title='Roadmap AI' permalink='/ai'>
   <GenerateRoadmap client:load />
+  <CheckSubscriptionVerification client:load />
 </BaseLayout>
