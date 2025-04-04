@@ -205,13 +205,20 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
           const questions = getQuestionsFromResult(result);
           setDefaultQuestions(questions);
-
+          
           const newResult = result.replace(
             /=START_QUESTIONS=.*?=END_QUESTIONS=/,
             '',
           );
 
-          setLessonHtml(await markdownToHtmlWithHighlighting(newResult));
+          const markdownHtml = await markdownToHtmlWithHighlighting(
+            newResult,
+          ).catch((e) => {
+            console.error(e);
+            return newResult;
+          });
+
+          setLessonHtml(markdownHtml);
           queryClient.invalidateQueries(getAiCourseLimitOptions());
           setIsGenerating(false);
         },

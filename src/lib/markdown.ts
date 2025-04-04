@@ -51,6 +51,9 @@ const markdownItAsync = MarkdownItAsync({
     const html = await codeToHtml(code, {
       lang: lang?.toLowerCase(),
       theme: 'dracula',
+    }).catch((e) => {
+      console.warn(e);
+      return code;
     });
 
     return html;
