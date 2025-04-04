@@ -7,7 +7,7 @@ export function urlToId(url: string) {
     .replace(/\/$/, '')
     .replace(/^\//, '')
     .replace(/[^a-zA-Z0-9]/g, '-')
-    .toLowerCase();
+    .toLowerCase() || 'home';
 }
 
 const LAST_PATH_KEY = 'lastPage';
