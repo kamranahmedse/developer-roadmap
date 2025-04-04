@@ -4,7 +4,7 @@ Reading files is a common task in PHP and it provides a range of functions for t
 
 Here's a small example using `fgets()`:
 
-```PHP
+```php
 $file = fopen("example.txt", "r"); 
 if ($file) {
     while (($line = fgets($file)) !== false) {
