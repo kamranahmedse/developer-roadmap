@@ -17,3 +17,7 @@ cp -rf packages/dummy-editor ../../editor
 
 # Remove temp directory
 rm -rf .temp
+
+# Reinstall so that the editor which was setup gets used
+rm -rf node_modules
+pnpm install

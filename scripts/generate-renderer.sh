@@ -32,6 +32,7 @@ done
 rm -rf .temp
 
 # Reinstall so that the editor which was setup gets used
+rm -rf node_modules
 pnpm install
 
 git checkout -- pnpm-lock.yaml
