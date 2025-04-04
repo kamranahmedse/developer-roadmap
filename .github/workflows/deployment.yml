@@ -27,7 +27,6 @@ jobs:
       - name: Copy configuration files
         run: |
           cp configuration/dist/github/developer-roadmap.env .env
-          git ls-remote https://${{ secrets.GITHUB_TOKEN }}@github.com/roadmapsh/web-draw.git
 
       # -----------------
       # Prepare the Build
@@ -38,9 +37,8 @@ jobs:
 
       - name: Generate Production Build
         run: |
-          LATEST_COMMIT_HASH=$(git ls-remote https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git refs/heads/main | awk '{print $1}')
-          echo "Using commit hash: $LATEST_COMMIT_HASH"
-          pnpm add "github:roadmapsh/web-draw#${LATEST_COMMIT_HASH}&path:packages/editor"
+          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
+          npm run generate-renderer
           npm run compress:images
           npm run build
 
