@@ -27,7 +27,7 @@ jobs:
       - name: Copy configuration files
         run: |
           cp configuration/dist/github/developer-roadmap.env .env
-          git ls-remote https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git
+          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git web-draw-temp --depth 1
 
       # -----------------
       # Prepare the Build
