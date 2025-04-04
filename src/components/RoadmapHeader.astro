@@ -1,6 +1,7 @@
 ---
 import {
   ArrowLeftIcon,
+  BookOpenIcon,
   FolderKanbanIcon,
   MapIcon,
   MessageCircle,
@@ -136,6 +137,17 @@ const roadmapTitle =
           isActive={activeTab === 'projects'}
           badgeText={projectCount > 0 ? '' : 'soon'}
         />
+        {
+          roadmapId === 'sql' && (
+            <TabLink
+              url={`/${roadmapId}/courses`}
+              icon={BookOpenIcon}
+              text='Courses'
+              isActive={activeTab === 'courses'}
+              badgeText='New'
+            />
+          )
+        }
       </div>
 
       <TabLink
