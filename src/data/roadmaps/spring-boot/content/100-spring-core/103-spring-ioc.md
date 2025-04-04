@@ -23,5 +23,4 @@ More more resources, check out the following links:
 
 - [@article@Spring IoC, Spring Bean Example Tutorial](https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial)
 - [@article@Intro to Inversion of Control with Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
-- [@article@IoC Container](https://www.javatpoint.com/ioc-container)
 - [@feed@Explore top posts about Spring Framework](https://app.daily.dev/tags/spring?ref=roadmapsh)

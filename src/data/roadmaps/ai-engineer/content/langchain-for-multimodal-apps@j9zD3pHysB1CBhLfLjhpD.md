@@ -4,5 +4,5 @@ LangChain is a framework designed to build applications that integrate multiple 
 
 Learn more from the following resources:
 
-- [@official@LangChain Website](https://www.langchain.com/)
+- [@official@LangChain](https://www.langchain.com/)
 - [@video@Build a Multimodal GenAI App with LangChain and Gemini LLMs](https://www.youtube.com/watch?v=bToMzuiOMhg)

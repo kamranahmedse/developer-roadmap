@@ -522,11 +522,6 @@
     "description": "**Operating systems (OS)** are software that manage computer hardware and provide a platform for applications to run. They handle essential functions such as managing memory, processing tasks, controlling input and output devices, and facilitating file management. Key examples include **Windows**, **macOS**, **Linux**, and **Unix**. Each operating system offers different features and interfaces, tailored to specific user needs or system requirements, from desktop computing to server management and embedded systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is an operating system?",
-        "url": "https://www.geeksforgeeks.org/what-is-an-operating-system/",
-        "type": "article"
-      },
-      {
         "title": "What is an operating system as fast as possible",
         "url": "https://www.youtube.com/watch?v=pVzRTmdd9j0",
         "type": "video"
@@ -708,11 +703,6 @@
         "title": "What are Network Protocols?",
         "url": "https://www.solarwinds.com/resources/it-glossary/network-protocols",
         "type": "article"
-      },
-      {
-        "title": "Types of Network Topology",
-        "url": "https://www.geeksforgeeks.org/types-of-network-topology/",
-        "type": "article"
       }
     ]
   },
@@ -853,11 +843,6 @@
     "title": "loopback",
     "description": "**Loopback** refers to a special network interface used to send traffic back to the same device for testing and diagnostic purposes. The loopback address for IPv4 is `127.0.0.1`, while for IPv6 it is `::1`. When a device sends a request to the loopback address, the network data does not leave the local machine; instead, it is processed internally, allowing developers to test applications or network services without requiring external network access. Loopback is commonly used to simulate network traffic, check local services, or debug issues locally.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "What is a loopback address?",
-        "url": "https://www.geeksforgeeks.org/what-is-a-loopback-address/",
-        "type": "article"
-      },
       {
         "title": "Understanding the loopback address and loopback interfaces",
         "url": "https://study-ccna.com/loopback-interface-loopback-address/",
@@ -1256,11 +1241,6 @@
     "title": "Star",
     "description": "A star network topology is a configuration where all devices (nodes) are connected directly to a central hub or switch. In this arrangement, each node has a dedicated point-to-point link to the central device, forming a star-like structure. This topology offers advantages such as easy installation and reconfiguration, centralized management, and fault isolation. If one connection fails, it doesn't affect others. However, the central hub is a single point of failure for the entire network. Star topologies are commonly used in local area networks (LANs) due to their reliability, scalability, and ease of maintenance, making them a popular choice in both small office and large enterprise environments.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "Advantages and Disadvantages of Star Topology",
-        "url": "https://www.geeksforgeeks.org/advantages-and-disadvantages-of-star-topology/",
-        "type": "article"
-      },
       {
         "title": "Star Topology",
         "url": "https://www.youtube.com/watch?v=EQ3rW22-Py0",
@@ -1699,11 +1679,6 @@
     "description": "**Protocol analyzers**, also known as network analyzers or packet sniffers, are tools used to capture, inspect, and analyze network traffic. They help diagnose network issues, troubleshoot performance problems, and ensure security by providing detailed insights into the data packets transmitted across a network. Protocol analyzers decode and display various network protocols, such as TCP/IP, HTTP, and DNS, allowing users to understand communication patterns, detect anomalies, and identify potential vulnerabilities. Popular examples include Wireshark and tcpdump.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a protocol analyzer?",
-        "url": "https://www.geeksforgeeks.org/what-is-protocol-analyzer/",
-        "type": "article"
-      },
-      {
         "title": "Protocol Analyzers",
         "url": "https://www.youtube.com/watch?v=hTMhlB-o0Ow",
         "type": "video"
@@ -1733,14 +1708,8 @@
   },
   "xFuWk7M-Vctk_xb7bHbWs": {
     "title": "route",
-    "description": "The `route` command is a network utility used to view and manipulate the IP routing table on Unix-like and Windows systems. It allows users to display the current routes that data packets take, as well as add, modify, or delete routes for network traffic. This command is often used in network troubleshooting and configuration to control how data flows between different networks and subnets. By specifying routes manually, administrators can define specific paths for network traffic, bypassing default routes and optimizing performance or security.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "How to check the routing table in Linux",
-        "url": "https://www.geeksforgeeks.org/route-command-in-linux-with-examples/",
-        "type": "article"
-      }
-    ]
+    "description": "The `route` command is a network utility used to view and manipulate the IP routing table on Unix-like and Windows systems. It allows users to display the current routes that data packets take, as well as add, modify, or delete routes for network traffic. This command is often used in network troubleshooting and configuration to control how data flows between different networks and subnets. By specifying routes manually, administrators can define specific paths for network traffic, bypassing default routes and optimizing performance or security.",
+    "links": []
   },
   "y8GaUNpaCT1Ai88wPOk6d": {
     "title": "tcpdump",
@@ -2308,11 +2277,6 @@
     "title": "Understand Handshakes",
     "description": "In networking and cybersecurity, a handshake is a process of establishing a secure connection between two parties before data exchange begins. It typically involves a series of predefined messages exchanged to verify identities, agree on communication parameters, and sometimes establish encryption keys. The most common example is the TCP three-way handshake used to initiate a connection. In cryptographic protocols like TLS/SSL, handshakes are more complex, involving certificate verification and key exchange. Handshakes are crucial for ensuring secure, authenticated communications, preventing unauthorized access, and setting up the parameters for efficient data transfer in various network protocols and security systems.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "TCP 3-Way Handshake Process",
-        "url": "https://www.geeksforgeeks.org/tcp-3-way-handshake-process/",
-        "type": "article"
-      },
       {
         "title": "TLS Handshake Explained",
         "url": "https://www.youtube.com/watch?v=86cQJ0MMses",
@@ -3110,14 +3074,8 @@
   },
   "W7bcydXdwlubXF2PHKOuq": {
     "title": "Port Blocking",
-    "description": "Port blocking is an essential practice in hardening the security of your network and devices. It involves restricting, filtering, or entirely denying access to specific network ports to minimize exposure to potential cyber threats. By limiting access to certain ports, you can effectively safeguard your systems against unauthorized access and reduce the likelihood of security breaches.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "What is port blocking with LAN?",
-        "url": "https://www.geeksforgeeks.org/what-is-port-blocking-within-lan/",
-        "type": "article"
-      }
-    ]
+    "description": "Port blocking is an essential practice in hardening the security of your network and devices. It involves restricting, filtering, or entirely denying access to specific network ports to minimize exposure to potential cyber threats. By limiting access to certain ports, you can effectively safeguard your systems against unauthorized access and reduce the likelihood of security breaches.",
+    "links": []
   },
   "FxuMJmDoDkIsPFp2iocFg": {
     "title": "Group Policy",
@@ -4035,7 +3993,7 @@
         "type": "article"
       },
       {
-        "title": "What is password praying?",
+        "title": "What is password spraying?",
         "url": "https://www.techtarget.com/whatis/definition/password-spraying",
         "type": "article"
       },

@@ -7,7 +7,7 @@ seo:
   title: 'Data Science vs Machine Learning: How are they different?'
   description: 'Excited about a career in data science or machine learning? Learn the differences, key skills, tools, and how to choose the role that aligns with your ambitions.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-machine-learning-gaa7s.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-02-06
 sitemap:

@@ -4,7 +4,7 @@ Memory leaks are caused when your Node.js app’s CPU and memory usage increases
 
 Visit the following resources to learn more:
 
-- [@article@Memory leaks in Node.js](https://sematext.com/blog/nodejs-memory-leaks/)
-- [@article@Memory leaks causes](https://sematext.com/blog/nodejs-memory-leaks/#what-causes-them-common-node-js-memory-leaks)
-- [@article@Memory leaks detectors](https://sematext.com/blog/nodejs-memory-leaks/#node-js-memory-leak-detectors)
+- [@article@Memory Leaks in Node.js](https://sematext.com/blog/nodejs-memory-leaks/)
+- [@article@Memory Leaks Causes](https://sematext.com/blog/nodejs-memory-leaks/#what-causes-them-common-node-js-memory-leaks)
+- [@article@Memory Leaks Detectors](https://sematext.com/blog/nodejs-memory-leaks/#node-js-memory-leak-detectors)
 - [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

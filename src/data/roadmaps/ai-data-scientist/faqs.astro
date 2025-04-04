@@ -1,0 +1,165 @@
+---
+import type { FAQType } from '../../components/FAQs/FAQs.astro';
+
+export const faqs: FAQType[] = [
+  {
+    question: 'What degree do you need to become a data scientist?',
+    answer: [
+      "You don't need a specific degree to become a data scientist, but fields like Computer Science, Mathematics, Statistics, or Engineering are helpful for their focus on programming, algorithms, and databases.",
+      'Degrees in Physics, Economics, or Social Sciences also provide critical thinking and research skills valuable for analyzing data.',
+      'Recently, many have transitioned into Data Science through bootcamps or online courses, highlighting the importance of practical skills over formal degrees.',
+    ],
+  },
+  {
+    question: 'Is becoming a data scientist a good career path?',
+    answer: [
+      'Yes, [becoming a data scientist is a good career path](https://roadmap.sh/ai-data-scientist/career-path) for many reasons, although all of them stem from the same one: technology is generating more and more data every day, and making sense of it is crucial for any business. The main derived reasons validating data science as a great career choice are:',
+      '**High Demand:** Companies in almost every industry need data scientists to help them make sense of their data. This creates plenty of job opportunities.',
+      '**Competitive Salaries:** Data Science is one of the highest-paying fields in tech, making it financially rewarding.',
+      '**Diverse Applications:** Getting bored in the field of data science is quite a challenge. If you think about it, data science skills can be applied in healthcare, finance, marketing, sports, and more, offering flexibility in choosing industries.',
+      '**Continuous Learning:** The field evolves quickly, which makes it exciting for those who love learning and staying up-to-date with new tools and techniques.',
+      '**Impactful Work:** Data scientists solve real-world problems, like predicting diseases, optimizing business processes, or making products more user-friendly.',
+      'While the path requires dedication and learning, the rewards—both professional and personal—make it a worthwhile choice for those who enjoy working with data and solving problems.',
+    ],
+  },
+  {
+    question: 'What are data scientist salaries like?',
+    answer: [
+      'Data scientist salaries vary based on factors such as location, experience, and industry, making them very hard to average and provide values that are useful to everyone around the globe.',
+      "Here's an overview of average annual salaries for entry-level data scientists in various regions based on information gathered from Glassdoor and Indeed:",
+      'In the United States, according to Glassdoor, the average salary for an entry-level data scientist is approximately $110k per year. Indeed, on the other hand, reports an average salary of around $54,313 per year for entry-level data scientists.',
+      "For European countries, like Spain, for example, the average salary for an entry-level data scientist is about $40k per year. In the **United Kingdom**, while there aren't a lot of details for entry-level positions, reports show that the average salary for a data scientist in London is £50k per year, suggesting that entry-level positions may start lower.",
+      'Finally, in **Canada**, the average salary for entry-level data scientists is around CAD 88k.',
+      'Remember that all these figures are averages and can vary based on individual qualifications, specific job roles, the employing organization, and even your ability to negotiate your salary.',
+      'However, generally speaking, Data Science is considered a well-compensated field with opportunities for growth and advancement.',
+    ],
+  },
+  {
+    question: 'What skills does a data scientist need?',
+    answer: [
+      'The most important [data science skills](https://roadmap.sh/ai-data-scientist/skills) a data scientist needs to possess are all listed in this roadmap.',
+      'At a high level, a data scientist needs a mix of technical and soft skills to succeed. Here are some of the key skills:',
+      '**Programming:** Knowing Python, R, or [SQL](https://roadmap.sh/sql) is a big plus, as relying on others to deploy your work can be limiting.',
+      '**Statistics & Math:** Essential for interpreting and modeling data, focusing on statistics, probability, and linear algebra.',
+      '**Data Visualization:** Master creating charts, graphs, and dashboards to effectively share your findings.',
+      '**Machine Learning:** Understand algorithms and models for predicting and classifying data.',
+      '**Big Data Tools:** Basic knowledge of Hadoop or Spark helps in handling large datasets and collaborating with data engineers.',
+      '**Data Wrangling:** Cleaning and prepping messy data is a must-have skill.',
+      '**Critical Thinking:** Asking the right questions and solving novel problems is key.',
+      '**Communication:** Simplify complex findings for stakeholders.',
+      '**Domain Knowledge:** Knowing your industry (e.g., finance or healthcare) helps you choose the right tools and approaches.',
+      'These skills combined will help data scientists extract actionable insights from data and drive decision-making in organizations.',
+    ],
+  },
+  {
+    question: 'What tools do data scientists use?',
+    answer: [
+      "The [tools used by data scientists](https://roadmap.sh/ai-data-scientist/tools) vary quite a lot depending on the projects they're working on, the industry they're in, and even on their focus (whether they're purely theoretical data scientists or if they're also writing production-ready code).",
+      'That said, here are some of the most common tools used in the data science field:',
+      '**Programming Languages:** **Python** is one of the most popular programming languages for data analysis, machine learning, and visualization. It is also ideal for developing microservices that make your ML models available to the public. On the other hand, something like R would be perfect for statistical computing and data visualization. Finally, **SQL** is used to query and manage databases.',
+      "**Data Manipulation and Analysis Tools:** Libraries like **Pandas** and **NumPy** are industry standards for data manipulation in Python. If you're using R instead, check out Dplyr and Tidyr; they're both great for data manipulation in that language. Both quantitative and qualitative data are processed and analyzed using tools like Pandas, NumPy, Dplyr, and Tidyr.",
+      '**Data Visualization Tools:** Tableau and Power BI are some of the most used tools for creating interactive dashboards. If, on the other hand, you require more control and customization, you might want to look at Matplotlib and Seaborn; they are Python libraries for generating graphs and plots.',
+      "**Machine Learning Frameworks:** In this case, there aren't that many options; the industry is currently focusing on Scikit-learn, a Python library for machine learning, TensorFlow, and PyTorch, which focus more on deep learning applications.",
+      '**Big Data Tools:** Hadoop and Spark are de facto standards at this point for handling and processing large datasets.',
+      "**Databases:** If you're looking into SQL, MySQL, and [PostgreSQL](https://roadmap.sh/postgresql-dba), they are your best bets. For NoSQL, a great starting point is MongoDB.",
+      "**Cloud Platforms:** In this category, nothing beats the 3 big ones: **AWS**, **Google Cloud**, and **Azure**. If you're looking for scalable storage, processing, and machine learning services, you've found your answers.",
+      '**Version Control:** In terms of industry standards, **Git** is pretty much alone here.',
+      '**Collaboration Tools:** **Jupyter Notebooks** and **RStudio** are designed for sharing code and analysis in an interactive format.',
+    ],
+  },
+  {
+    question: 'What is the Data Science Lifecycle?',
+    answer: [
+      'The [Data Science Lifecycle](https://roadmap.sh/ai-data-scientist/lifecycle) is the process data scientists follow to complete a data science project.',
+      'It consists of several stages:',
+      '**Problem Definition:** Clearly define the problem you want to solve and understand the objectives.',
+      '**Data Collection:** Gather relevant data from various sources, such as databases, APIs, or external datasets.',
+      "**Data Preparation:** Clean, organize, and preprocess the data to ensure it's ready for analysis. This includes handling missing values, removing duplicates, and formatting data correctly.",
+      '**Exploratory Data Analysis (EDA):** Analyze the data to identify patterns, trends, and relationships. Use visualization tools to gain insights.',
+      '**Model Building:** Develop and train machine learning models or statistical algorithms to solve the problem.',
+      "**Model Evaluation:** Test the model's performance using metrics like accuracy, precision, recall, or F1 score to ensure it meets the objectives.",
+      '**Deployment:** Integrate the model into production systems so it can be used in real-world applications.',
+      "**Monitoring and Maintenance:** Continuously monitor the model's performance and update it as needed to adapt to new data or changing requirements.",
+      'With these steps, data scientists ensure that they cover all the basics when working on a project, from ideation to production release.',
+    ],
+  },
+  {
+    question: 'How are data scientists different from AI Engineers?',
+    answer: [
+      "Data scientists are different from [AI Engineers](https://roadmap.sh/ai-engineer), however, they're often confused due to overlapping skills.",
+      'For **data scientists**, the focus is to analyze data and uncover insights, while in the case of **AI Engineers**, their focus is on building, deploying, and maintaining AI systems. **Data scientists** tend to be great at data manipulation (Python, R, SQL) and statistical analysis, while **AI Engineers** are quite skilled in software engineering, programming, and machine learning frameworks.',
+      'In the end, **data scientists** will provide insights, reports, and predictive models. While **AI Engineers** will deliver AI-powered applications, APIs, and scalable systems.',
+      'More on this topic here: [Data Science vs AI](https://roadmap.sh/ai-data-scientist/vs-ai).',
+    ],
+  },
+  {
+    question: 'What is the difference between Data Science and Data Analytics?',
+    answer: [
+      "The difference between [data science and data analytics](https://roadmap.sh/ai-data-scientist/vs-data-analytics) might not be obvious at first sight, but it's a big one once you look closer into both roles. Data science involves creating predictive models, applying statistical methods, and exploring data to uncover insights. It usually includes advanced techniques such as machine learning. Data analysts, on the other hand, focus on analyzing current and historical data to answer specific questions and generate reports or dashboards, often with less emphasis on predictive modeling or advanced algorithms.",
+    ],
+  },
+  {
+    question: 'What is the difference between Data Science and Statistics?',
+    answer: [
+      'The difference between [data science vs statistics](https://roadmap.sh/ai-data-scientist/vs-statistics) is that the first one is an interdisciplinary field that not only relies on statistical methods but also incorporates programming, data engineering, and domain expertise.',
+      'It usually works with large-scale, unstructured data (sometimes) and uses techniques such as machine learning and data visualization to derive insights and drive decisions.',
+      'Statistics, on the other hand, is centered mainly on mathematical theories and probability, used to analyze controlled datasets. It traditionally emphasizes hypothesis testing, model fitting, and drawing conclusions from sample data.',
+    ],
+  },
+  {
+    question:
+      'What is the difference between Data Science and Business Analytics?',
+    answer: [
+      'The [difference between data science and business analytics](https://roadmap.sh/ai-data-scientist/vs-business-analytics) is that data science focuses on extracting insights from massive and diverse datasets by developing predictive models and leveraging advanced algorithms.',
+      'Business Analytics, on the other hand, is more concerned with analyzing historical data and generating reports to support immediate data-driven decision making.',
+      "In a data science vs business analytics scenario, you're confronting development and insight discovery vs historical data analysis.",
+    ],
+  },
+  {
+    question:
+      'What is the difference between Data Science and Machine Learning?',
+    answer: [
+      'The [difference between data science and machine learning](https://roadmap.sh/ai-data-scientist/vs-machine-learning) is actually not that clear; in fact, many developers confuse them as being the same thing. Machine learning can be seen as a subset of data science that specifically deals with creating and refining algorithms capable of learning from data.',
+      'Its primary goal is to make predictions or classify data based on learned patterns. Data science, however, encompasses a wider spectrum—from data collection and cleaning to analysis and communication of insights—using a variety of tools, including machine learning techniques, to trigger decision-making.',
+    ],
+  },
+  {
+    question:
+      'What is the difference between Data Science and Computer Science?',
+    answer: [
+      'The [difference between data science and computer science](https://roadmap.sh/ai-data-scientist/vs-computer-science) is that data science applies statistical and computational methods to solve real-world problems using data, while computer science is a broader discipline that covers theory, algorithms, programming languages, and system design.',
+      'You could even say that the question of data science vs computer science makes no sense because the latter is just an umbrella term that encompasses the first one and many other disciplines.',
+    ],
+  },
+  {
+    question: 'What is the difference between Data Science and Cyber Security?',
+    answer: [
+      'The difference between data science and cyber security is that while the first one is centered on analyzing and interpreting data to generate actionable insights, the latter is focused on protecting systems, networks, and data from unauthorized access and cyber threats.',
+      'In other words, the question of data science vs cyber security could be answered shortly by saying that data science seeks to leverage data for better decision-making, and cyber security is dedicated to safeguarding information and ensuring system integrity.',
+    ],
+  },
+  {
+    question:
+      'What is the difference between Data Science and Software Engineering?',
+    answer: [
+      'The difference between data science and software engineering is that data science focuses on extracting insights from data through statistical analysis, machine learning, and data visualization. Software Engineering, on the other hand, is centered on designing, building, and maintaining software systems.',
+      'While both fields require programming skills, data scientists primarily manipulate and analyze data to support decision-making, and software engineers focus more on building the architecture and systems that allow for the creation of a specific software functionality.',
+    ],
+  },
+  {
+    question:
+      'What is the difference between Data Science and Data Engineering?',
+    answer: [
+      'The main [difference between data science and data engineering](https://roadmap.sh/ai-data-scientist/vs-data-engineering) is their focus.',
+      'Data Science focuses on analyzing and modeling data to extract insights and make predictions. It emphasizes statistics, machine learning, and visualization. Data engineering involves building and maintaining the infrastructure and pipelines needed to collect, store, and process data efficiently from multiple data sources. Data engineers ensure that data scientists have clean, accessible, and reliable data for their analyses.',
+    ],
+  },
+  {
+    question: 'How long does it take to become a data scientist?',
+    answer: [
+      "Becoming a data scientist can take between 1 to 3 years, on average, considering a focused approach. Of course, keep in mind that this answer will highly depend on your approach to becoming a data scientist and your prior experience. And if you're aiming for a position as a senior data scientist, the time to get there will increase significantly if you haven't started yet.",
+      'A strong foundation in programming, statistics, and ML is essential for this to happen. Many achieve this through a combination of formal education, such as a degree or certification program, and hands-on projects to build practical skills.',
+    ],
+  },
+];
+---

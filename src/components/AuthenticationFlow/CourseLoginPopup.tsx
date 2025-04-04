@@ -81,7 +81,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
     <Modal onClose={onClose} bodyClassName="p-5 h-auto">
       <div className="mb-7 text-center">
         <p className="mb-3.5 pt-2 text-2xl font-semibold leading-5 text-slate-900">
-          Create or login to your account
+          Create or login to Enroll
         </p>
         <p className="mt-2 text-sm leading-4 text-slate-600">
           Login or sign up for an account to start learning

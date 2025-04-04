@@ -4,5 +4,5 @@ Query processing is an important aspect of a database system, as it is responsib
 
 Learn more from the following resources:
 
-- [@article@Query Processing in PostgreSQL](https://medium.com/agedb/query-processing-in-postgresql-1309fa93f69f)
+- [@article@Query Processing in PostgreSQL](https://www.interdb.jp/pg/pgsql03.html)
 - [@course@Understand PostgreSQL Query Processing - Microsoft](https://learn.microsoft.com/en-us/training/modules/understand-postgresql-query-process/)

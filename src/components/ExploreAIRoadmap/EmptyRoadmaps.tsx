@@ -12,7 +12,7 @@ export function EmptyRoadmaps() {
       </p>
       <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-1.5">
         <a
-          href="/ai"
+          href="/ai-roadmaps"
           className="flex w-full items-center gap-1.5 rounded-md bg-gray-900 px-3 py-1.5 text-xs text-white sm:w-auto sm:text-sm"
         >
           <Wand2 className="h-4 w-4" />

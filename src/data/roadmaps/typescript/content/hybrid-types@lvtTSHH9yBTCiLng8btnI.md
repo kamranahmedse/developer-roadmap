@@ -24,7 +24,3 @@ type User = {
   education: Education;
 };
 ```
-
-Learn more from the following links:
-
-- [@official@Geeksforgeeks.org - Hybrid Types](https://www.geeksforgeeks.org/what-are-hybrid-types-in-typescript/#:~:text=Hybrid%20types%20are%20a%20combination,properties%20like%20a%20regular%20object.)

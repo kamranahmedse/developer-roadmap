@@ -11,9 +11,7 @@ import {
 import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText, renderFlowJSON } from '@roadmapsh/editor';
 import { replaceChildren } from '../../lib/dom';
-import { readAIRoadmapStream } from '../../helper/read-stream';
 import {
-  getOpenAIKey,
   isLoggedIn,
   removeAuthToken,
   setAIReferralCode,
@@ -21,7 +19,7 @@ import {
 } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Ban, Cog, Download, PenSquare, Save, Wand } from 'lucide-react';
+import { Ban, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -31,10 +29,15 @@ import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
-import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
+import {
+  generateAICourseRoadmapStructure,
+  IS_KEY_ONLY_ROADMAP_GENERATION,
+  readAIRoadmapStream,
+} from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import { useIsPaidUser } from '../../queries/billing.ts';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -52,6 +55,7 @@ export type RoadmapNodeDetails = {
   targetGroup?: SVGElement;
   nodeTitle?: string;
   parentTitle?: string;
+  parentId?: string;
 };
 
 export function getNodeDetails(
@@ -63,9 +67,10 @@ export function getNodeDetails(
   const nodeType = targetGroup?.dataset?.type;
   const nodeTitle = targetGroup?.dataset?.title;
   const parentTitle = targetGroup?.dataset?.parentTitle;
+  const parentId = targetGroup?.dataset?.parentId;
   if (!nodeId || !nodeType) return null;
 
-  return { nodeId, nodeType, targetGroup, nodeTitle, parentTitle };
+  return { nodeId, nodeType, targetGroup, nodeTitle, parentTitle, parentId };
 }
 
 export const allowedClickableNodeTypes = [
@@ -97,6 +102,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
+  const { isPaidUser, isLoading: isLoadingPaidUser } = useIsPaidUser();
   const { rc: referralCode } = getUrlParams() as {
     rc?: string;
   };
@@ -125,13 +131,11 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
   const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
   const [isConfiguring, setIsConfiguring] = useState(false);
 
-  const [openAPIKey, setOpenAPIKey] = useState<string | undefined>(
-    getOpenAIKey(),
-  );
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
 
   const renderRoadmap = async (roadmap: string) => {
-    const { nodes, edges } = generateAIRoadmapFromText(roadmap);
+    const result = generateAICourseRoadmapStructure(roadmap);
+    const { nodes, edges } = generateAIRoadmapFromText(result);
     const svg = await renderFlowJSON({ nodes, edges });
     if (roadmapContainerRef?.current) {
       replaceChildren(roadmapContainerRef?.current, svg);
@@ -195,7 +199,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                 roadmapSlug,
               },
               '',
-              `${origin}/ai/${roadmapSlug}`,
+              `${origin}/ai-roadmaps/${roadmapSlug}`,
             );
           }
 
@@ -473,15 +477,27 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     );
   }
 
-  const pageUrl = `https://roadmap.sh/ai/${roadmapSlug}`;
-  const canGenerateMore = roadmapLimitUsed < roadmapLimit;
+  const pageUrl = `https://roadmap.sh/ai-roadmaps/${roadmapSlug}`;
+  const canGenerateMore = roadmapLimitUsed < roadmapLimit || isPaidUser;
+  const isGenerateButtonDisabled =
+    isLoadingResults ||
+    (isAuthenticatedUser &&
+      // if no limit,
+      (!roadmapLimit ||
+        // no roadmap term,
+        !roadmapTerm ||
+        // if limit is reached and user is not paid user,
+        (roadmapLimitUsed >= roadmapLimit && !isPaidUser) ||
+        // if roadmap term is the same as the current roadmap term,
+        roadmapTerm === currentRoadmap?.term ||
+        // if key only,
+        isKeyOnly));
 
   return (
     <>
       {isConfiguring && (
-        <IncreaseRoadmapLimit
+        <UpgradeAccountModal
           onClose={() => {
-            setOpenAPIKey(getOpenAIKey());
             setIsConfiguring(false);
             loadAIRoadmapLimit().finally(() => null);
           }}
@@ -522,34 +538,21 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           {!isLoading && (
             <div className="container flex flex-grow flex-col items-start">
               <AIRoadmapAlert />
-              {isKeyOnly && isAuthenticatedUser && (
+              {isKeyOnly && isAuthenticatedUser && !isPaidUser && (
                 <div className="flex flex-row gap-4">
-                  {!openAPIKey && (
-                    <p className={'text-left text-red-500'}>
-                      We have hit the limit for AI roadmap generation. Please
-                      try again tomorrow or{' '}
-                      <button
-                        onClick={() => setIsConfiguring(true)}
-                        className="font-semibold text-purple-600 underline underline-offset-2"
-                      >
-                        add your own OpenAI API key
-                      </button>
-                    </p>
-                  )}
-                  {openAPIKey && (
-                    <p className={'text-left text-gray-500'}>
-                      You have added your own OpenAI API key.{' '}
-                      <button
-                        onClick={() => setIsConfiguring(true)}
-                        className="font-semibold text-purple-600 underline underline-offset-2"
-                      >
-                        Configure it here if you want.
-                      </button>
-                    </p>
-                  )}
+                  <p className={'text-left text-red-500'}>
+                    We have hit the limit for AI roadmap generation. Please try
+                    again tomorrow or{' '}
+                    <button
+                      onClick={() => setIsConfiguring(true)}
+                      className="font-semibold text-purple-600 underline underline-offset-2"
+                    >
+                      add more credits.
+                    </button>
+                  </p>
                 </div>
               )}
-              {!isKeyOnly && isAuthenticatedUser && (
+              {!isKeyOnly && isAuthenticatedUser && !isPaidUser && (
                 <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
                   <span>
                     <span
@@ -565,25 +568,13 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                     </span>{' '}
                     roadmaps generated today.
                   </span>
-                  {!openAPIKey && (
-                    <button
-                      onClick={() => setIsConfiguring(true)}
-                      className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                    >
-                      Need to generate more?{' '}
-                      <span className="font-semibold">Click here.</span>
-                    </button>
-                  )}
-
-                  {openAPIKey && (
-                    <button
-                      onClick={() => setIsConfiguring(true)}
-                      className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                    >
-                      <Cog size={15} />
-                      Configure OpenAI key
-                    </button>
-                  )}
+                  <button
+                    onClick={() => setIsConfiguring(true)}
+                    className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                  >
+                    Need to generate more?{' '}
+                    <span className="font-semibold">Click here.</span>
+                  </button>
                 </div>
               )}
               {!isAuthenticatedUser && (
@@ -610,7 +601,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                 <button
                   type={'submit'}
                   className={cn(
-                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2.5 text-white',
                     'disabled:cursor-not-allowed disabled:opacity-50',
                   )}
                   onClick={(e) => {
@@ -619,15 +610,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                       showLoginPopup();
                     }
                   }}
-                  disabled={
-                    isLoadingResults ||
-                    (isAuthenticatedUser &&
-                      (!roadmapLimit ||
-                        !roadmapTerm ||
-                        roadmapLimitUsed >= roadmapLimit ||
-                        roadmapTerm === currentRoadmap?.term ||
-                        (isKeyOnly && !openAPIKey)))
-                  }
+                  disabled={isGenerateButtonDisabled}
                 >
                   {isLoadingResults && (
                     <>

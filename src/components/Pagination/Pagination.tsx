@@ -11,6 +11,7 @@ type PaginationProps = {
   totalCount: number;
   isDisabled?: boolean;
   onPageChange: (page: number) => void;
+  className?: string;
 };
 
 export function Pagination(props: PaginationProps) {
@@ -22,6 +23,7 @@ export function Pagination(props: PaginationProps) {
     currPage,
     perPage,
     isDisabled = false,
+    className,
   } = props;
 
   if (!totalPages || totalPages === 1) {
@@ -32,10 +34,14 @@ export function Pagination(props: PaginationProps) {
 
   return (
     <div
-      className={cn('flex items-center', {
-        'justify-between': variant === 'default',
-        'justify-start': variant === 'minimal',
-      })}
+      className={cn(
+        'flex items-center',
+        {
+          'justify-between': variant === 'default',
+          'justify-start': variant === 'minimal',
+        },
+        className,
+      )}
     >
       <div className="flex items-center gap-1 text-xs font-medium">
         <button

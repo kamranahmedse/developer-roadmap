@@ -11,5 +11,4 @@ There are mainly four states of the Hibernate Lifecycle :
 
 For more resources, visit the following links:
 
-- [@article@Entity Lifecycle in Hibernate](https://www.javatpoint.com/hibernate-lifecycle)
 - [@article@Hibernate Entity Lifecycle & and its state](https://www.baeldung.com/hibernate-entity-lifecycle)

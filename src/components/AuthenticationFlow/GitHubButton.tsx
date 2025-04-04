@@ -9,7 +9,7 @@ import { cn } from '../../lib/classname.ts';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { triggerUtmRegistration } from '../../lib/browser.ts';
+import { getLastPath, triggerUtmRegistration, urlToId } from '../../lib/browser.ts';
 
 type GitHubButtonProps = {
   isDisabled?: boolean;
@@ -38,10 +38,12 @@ export function GitHubButton(props: GitHubButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
+    const lastPageBeforeGithub = localStorage.getItem(GITHUB_LAST_PAGE);
+
     httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-callback${
         window.location.search
-      }`,
+      }&src=${urlToId(lastPageBeforeGithub || getLastPath() || window.location.pathname)}`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -57,7 +59,6 @@ export function GitHubButton(props: GitHubButtonProps) {
 
         let redirectUrl = new URL('/', window.location.origin);
         const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);
-        const lastPageBeforeGithub = localStorage.getItem(GITHUB_LAST_PAGE);
 
         // If the social redirect is there and less than 30 seconds old
         // redirect to the page that user was on before they clicked the github login button
@@ -127,9 +128,12 @@ export function GitHubButton(props: GitHubButtonProps) {
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
-      const pagePath = ['/respond-invite', '/befriend', '/r', '/ai'].includes(
-        window.location.pathname,
-      )
+      const pagePath = [
+        '/respond-invite',
+        '/befriend',
+        '/r',
+        '/ai-roadmaps',
+      ].includes(window.location.pathname)
         ? window.location.pathname + window.location.search
         : window.location.pathname;
 

@@ -251,11 +251,6 @@
         "title": "What is the Relational Model?",
         "url": "https://www.postgresql.org/docs/7.1/relmodel-oper.html",
         "type": "article"
-      },
-      {
-        "title": "The Relational Model",
-        "url": "https://www.geeksforgeeks.org/relational-model-in-dbms/",
-        "type": "article"
       }
     ]
   },
@@ -456,7 +451,7 @@
       },
       {
         "title": "Query Processing in PostgreSQL",
-        "url": "https://medium.com/agedb/query-processing-in-postgresql-1309fa93f69f",
+        "url": "https://www.interdb.jp/pg/pgsql03.html",
         "type": "article"
       }
     ]
@@ -2631,7 +2626,7 @@
     ]
   },
   "xEu5n6U9-WKVxjlT5YUgx": {
-    "title": "Tenser",
+    "title": "Tensor",
     "description": "Tensor Query Language (TQL) is a specialized SQL-like language designed for querying and managing datasets stored as tensors, primarily used within the Deep Lake platform. TQL extends traditional SQL capabilities to support multidimensional array operations, making it particularly useful for data science and machine learning workflows. Key features include array arithmetic, user-defined functions, and integration with deep learning frameworks like PyTorch and TensorFlow, allowing for efficient data manipulation and analysis directly within these environments.\n\nTQL enables users to perform complex queries on datasets, including operations like embedding search, array slicing, and custom numeric computations. This flexibility supports a wide range of applications, from simple data retrieval to sophisticated data preprocessing steps needed for training machine learning models. The language also integrates with version control, allowing users to manage and query different versions of their datasets seamlessly.\n\nLearn more from the following resources:",
     "links": [
       {

@@ -7,7 +7,7 @@ seo:
   title: 'Data Science Tools: Our Top 11 Recommendations for @currentYear@'
   description: 'Master your data science projects with our top 11 tools for 2025! Discover the best platforms for data analysis, visualization, and machine learning.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-tools-1a9w1.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-28
 sitemap:

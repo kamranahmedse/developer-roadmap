@@ -8,7 +8,8 @@ In programming, a function is a reusable block of code that executes a certain f
 def greet(name):
     print(f"Hello, {name}!")
 
-greet("Roadmap.sh")     
+
+greet("Roadmap.sh")
 ```
 
 Visit the following resources to learn more:

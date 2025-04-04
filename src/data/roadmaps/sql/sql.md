@@ -1,7 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/sql.json'
 pdfUrl: '/pdfs/roadmaps/sql.pdf'
-order: 8
+order: 0.5
 renderer: 'editor'
 briefTitle: 'SQL'
 briefDescription: 'Step by step guide to learning SQL in 2025'

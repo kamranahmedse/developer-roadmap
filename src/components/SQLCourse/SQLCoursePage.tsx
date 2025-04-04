@@ -419,6 +419,18 @@ export function SQLCoursePage() {
       <FAQSection />
 
       <FloatingPurchase />
+
+      <div className="mt-12 w-full max-w-3xl text-left md:mt-9">
+        <p className="flex flex-col gap-2 items-center justify-center text-sm md:flex-row md:gap-0">
+          <a href="/terms" target="_blank" className="text-zinc-500">
+            Terms of Use
+          </a>
+          <span className="mx-4 hidden md:block">&middot;</span>
+          <a href="/privacy" target="_blank" className="text-zinc-500">
+            Privacy Policy
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

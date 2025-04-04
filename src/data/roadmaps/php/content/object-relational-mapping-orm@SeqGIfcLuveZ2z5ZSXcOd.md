@@ -11,4 +11,4 @@ $entityManager->flush();
 
 Visit the following resources to learn more:
 
-- [@article@Object Relational Mapping (ORM)](https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/tutorials/getting-started.html)
+- [@article@What is an Object Relational Mapping (ORM)](https://stackoverflow.com/questions/1279613/what-is-an-orm-how-does-it-work-and-how-should-i-use-one#answer-1279678)

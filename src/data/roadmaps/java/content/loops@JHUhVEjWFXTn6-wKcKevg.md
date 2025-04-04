@@ -7,5 +7,4 @@ In Java and other programming languages, loops are used to iterate a part of the
 
 Visit the following resources to learn more:
 
-- [@article@What are loops in Java?](https://www.javatpoint.com/java-for-loop)
 - [@article@Loops in Java.](https://www.programiz.com/java-programming/for-loop)

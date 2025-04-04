@@ -4,8 +4,8 @@ GitHub is a web-based platform built on top of Git that provides version control
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
-- [@official@GitHub Website](https://github.com)
-- [@article@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@official@GitHub](https://github.com)
+- [@official@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)

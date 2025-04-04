@@ -4,5 +4,4 @@ ISAM, which stands for Indexed Sequential Access Method, is a type of disk stora
 
 Learn more from the following resources:
 
-- [@article@ISAM in Database](https://www.geeksforgeeks.org/isam-in-database/)
 - [@video@DBMS - Index Sequential Access Method (ISAM)](https://www.youtube.com/watch?v=EiW1VVPor10)

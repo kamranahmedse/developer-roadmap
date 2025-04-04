@@ -5,4 +5,3 @@ Lists in Redis are ordered collections of string elements, allowing operations s
 Learn more from the following resources:
 
 - [@official@Redis Lists](https://redis.io/docs/latest/develop/data-types/lists/)
-- [@article@Complete Guide to Redis Lists](https://www.geeksforgeeks.org/complete-guide-to-redis-lists/)

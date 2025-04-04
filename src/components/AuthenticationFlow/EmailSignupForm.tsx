@@ -1,6 +1,11 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import {
+  deleteUrlParam,
+  getLastPath,
+  getUrlParams,
+  urlToId,
+} from '../../lib/browser';
 import { isLoggedIn, setAIReferralCode } from '../../lib/jwt';
 
 type EmailSignupFormProps = {
@@ -34,6 +39,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         email,
         password,
         name,
+        src: urlToId(getLastPath() || window.location.pathname),
       },
     );
 

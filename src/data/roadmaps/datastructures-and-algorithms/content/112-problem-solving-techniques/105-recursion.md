@@ -4,5 +4,4 @@ Recursion is a method where the solution to a problem depends on solutions to sh
 
 Learn more from the following links:
 
-- [@article@Introduction to Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-2/)
 - [@video@Recursion in 100 Seconds](https://www.youtube.com/watch?v=rf60MejMz3E)

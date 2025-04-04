@@ -1,7 +1,7 @@
 import { getUser } from '../../lib/jwt';
-import { getPercentage } from '../../helper/number';
 import { ResourceProgressActions } from './ResourceProgressActions';
 import { cn } from '../../lib/classname';
+import { getPercentage } from '../../lib/number';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';

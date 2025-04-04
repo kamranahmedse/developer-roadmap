@@ -1,3 +1,54 @@
+export function urlToId(url: string) {
+  return url
+    .replace(/^https?:\/\//, '')
+    .replace('roadmap.sh', '')
+    .replace(/localhost:[\d]*?/, '')
+    .replace(/\?.*$/, '')
+    .replace(/\/$/, '')
+    .replace(/^\//, '')
+    .replace(/[^a-zA-Z0-9]/g, '-')
+    .toLowerCase() || 'home';
+}
+
+const LAST_PATH_KEY = 'lastPage';
+
+export function storePathAsLastPath() {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  const ignoredPaths = [
+    '/login',
+    '/signup',
+    '/verfication-pending',
+    '/verify-email',
+    '/forgot-password',
+  ];
+
+  if (ignoredPaths.includes(window.location.pathname)) {
+    return;
+  }
+
+  const pagePath = [
+    '/respond-invite',
+    '/befriend',
+    '/r',
+    '/ai-roadmaps',
+  ].includes(window.location.pathname)
+    ? window.location.pathname + window.location.search
+    : window.location.pathname;
+
+  localStorage.setItem(LAST_PATH_KEY, pagePath);
+}
+
+export function getLastPath() {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  return localStorage.getItem(LAST_PATH_KEY) || 'home';
+}
+
 type UtmParams = Partial<{
   utmSource: string;
   utmMedium: string;

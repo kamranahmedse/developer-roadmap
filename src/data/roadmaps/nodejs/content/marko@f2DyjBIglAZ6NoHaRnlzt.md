@@ -4,4 +4,4 @@ Marko is a fast and lightweight HTML-based templating engine that compiles templ
 
 Visit the following resources to learn more:
 
-- [@article@Marko Documentation](https://markojs.com/docs/guides-overview/)
+- [@official@Marko Documentation](https://markojs.com/docs/guides-overview/)

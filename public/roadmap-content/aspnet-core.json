@@ -232,11 +232,6 @@
     "description": "As the name indicates, a **Data Structure** is a way of organizing the data in the **memory** so it can be used efficiently. Some common data structures are array, linked list, stack, hashtable, queue, tree, heap, and graph.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Data Structures and Algorithms",
-        "url": "https://www.javatpoint.com/data-structure-tutorial",
-        "type": "article"
-      },
-      {
         "title": "C# resources",
         "url": "https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf",
         "type": "article"
@@ -483,7 +478,7 @@
     ]
   },
   "qpVxwuyA2oE06MZLtEdP1": {
-    "title": "Razon Pages",
+    "title": "Razor Pages",
     "description": "Razor Pages is a feature of the [ASP.NET](http://ASP.NET) Core framework that allows developers to build web applications using a combination of Razor markup (a markup syntax for defining dynamic HTML) and C# code. Razor Pages is built on top of the [ASP.NET](http://ASP.NET) Core MVC (Model-View-Controller) framework, and provides a simpler, more intuitive way to build web pages and handle user input.\n\nRazor Pages are useful for building simple, self-contained web pages that do not require a complex navigation or layout structure, and are often used for building small to medium-size web applications.\n\nFor more information, visit the following links:",
     "links": [
       {
@@ -573,8 +568,29 @@
   },
   "R7Qk5hsEIl9dspQXdaJAJ": {
     "title": "StyleCop Rules",
-    "description": "",
-    "links": []
+    "description": "StyleCop is a tool used for developers to standardize their code and ensure they all follow the same syntax principles. With StyleCop, one standard can be defined in a `stylecop.json` file and shared across your team so that each member has the same guidelines when formatting your code. Beyond a single project, StyleCop can also be added as an extension, so all of the projects on your IDE follow the same formatting rules, this is especially useful if your organization follows the same rule standards for all projects.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "StyleCop GitHub official page",
+        "url": "https://github.com/StyleCop/StyleCop",
+        "type": "opensource"
+      },
+      {
+        "title": "StyeleCop Analyzers, a more modern version of StyleCop",
+        "url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+        "type": "opensource"
+      },
+      {
+        "title": "StyleCop: A Detailed Guide to Starting and Using It",
+        "url": "https://blog.submain.com/stylecop-detailed-guide/",
+        "type": "article"
+      },
+      {
+        "title": "The StyleCop setup and Advantages",
+        "url": "https://www.youtube.com/watch?v=dmpOKmz3lPw",
+        "type": "video"
+      }
+    ]
   },
   "ipABerBcM9zCte9pYaIse": {
     "title": "Minimal APIs",
@@ -1610,8 +1626,19 @@
   },
   "w5RnrhsP4p-AdSOLYVAY9": {
     "title": "Gridlify",
-    "description": "",
-    "links": []
+    "description": "Gridify offers a powerful string-based dynamic LINQ query language that is both simple and easy to use. Gridify is a dynamic LINQ library that simplifies the process of converting strings to LINQ queries. Gridify makes it effortless to apply filtering, sorting, and pagination using text-based data. It also has a Javascript/Typescript client to integrate the Gridify with the frontend tables.\n\nFor more information, visit the following links:",
+    "links": [
+      {
+        "title": "Gridify Library",
+        "url": "https://github.com/alirezanet/Gridify",
+        "type": "opensource"
+      },
+      {
+        "title": "Working with Dynamic Filters Using Gridify in .NET",
+        "url": "https://levelup.gitconnected.com/working-with-dynamic-filters-using-gridify-in-net-6bba618dd9f8",
+        "type": "article"
+      }
+    ]
   },
   "YojZ5fpzw-5WgoqqkO6wl": {
     "title": "Odata",
@@ -1825,8 +1852,14 @@
   },
   "oMMBzRrHkUymxAR4oqr75": {
     "title": "Manual Mapping",
-    "description": "",
-    "links": []
+    "description": "Manual object mapping in [ASP.NET](http://ASP.NET) Core means explicitly assigning values from one object to another without using third-party libraries like AutoMapper. This approach gives you full control over how properties are mapped and allows for custom transformations if needed.\n\nFor instance, if an **Employee** entity has properties such as Id, Name, Email, and Department, and we need to convert it into an **EmployeeDTO** without exposing sensitive data like Id, a manual mapping method can selectively map only the necessary fields. However, it comes with trade-offs, such as increased boilerplate code and the need for manual updates whenever the data model changes. In a real-world [ASP.NET](http://ASP.NET) Core application, manual mapping can be implemented using static helper methods or extension methods that take an entity as input and return a DTO, ensuring that the mapping logic remains centralized and reusable across different parts of the application.\n\nTo learn more, visit the following resources:",
+    "links": [
+      {
+        "title": "Manual vs Automapping in ASP.NET?",
+        "url": "https://medium.com/@anderson.buenogod/manual-vs-automated-mapping-in-c-which-approach-is-best-for-your-project-50de1fd73bfa",
+        "type": "article"
+      }
+    ]
   },
   "s57tKy1rajlJbKFDVXLqs": {
     "title": "Task Scheduling",
@@ -2311,10 +2344,31 @@
       }
     ]
   },
-  "azuer-service-bus@gBuaVZfqJ0-g21sKohQtx.md": {
-    "title": "Azuer Service Bus",
-    "description": "",
-    "links": []
+  "gBuaVZfqJ0-g21sKohQtx": {
+    "title": "Azure Service Bus",
+    "description": "Azure Service Bus is a scalable and reliable messaging platform that can handle a high volume of messages, it's also easy to use, has a lot of features like subscription, Topics, Dead Letter, and easy to integrate with other Azure services, and it's a managed service which means Microsoft takes care of the infrastructure and scaling. However, it's worth noting that Azure Service Bus is a paid service and the cost will depend on the number of messages and the size of the data that you are sending and receiving.\n\nTo learn more, visit the following links:",
+    "links": [
+      {
+        "title": "Getting Started With Azure Service Bus and ASP.NET Core",
+        "url": "https://www.c-sharpcorner.com/article/get-started-with-azure-service-bus-queues-asp-net-core-part-1/",
+        "type": "article"
+      },
+      {
+        "title": "How to Send & receive messages from Azure Service Bus queue (.NET)?",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless",
+        "type": "article"
+      },
+      {
+        "title": "What is Azure Service Bus?",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Azure",
+        "url": "https://app.daily.dev/tags/azure?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
   },
   "SQKIUa_UsJ4cls-Vs9yHU": {
     "title": "Mass Transit",
