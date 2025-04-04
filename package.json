@@ -26,6 +26,7 @@
     "warm:urls": "sh ./scripts/warm-urls.sh https://roadmap.sh/sitemap-0.xml",
     "compress:images": "tsx ./scripts/compress-images.ts",
     "generate:roadmap-content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
+    "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "@nanostores/react": "^0.8.0",
     "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
+    "@roadmapsh/editor": "npm:@roadmapsh/dummy-editor@^0.0.5",
     "@tanstack/react-query": "^5.59.16",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
@@ -67,7 +69,6 @@
     "react-resizable-panels": "^2.1.7",
     "react-textarea-autosize": "^8.5.7",
     "react-tooltip": "^5.28.0",
-    "reactflow": "^11.11.4",
     "rehype-external-links": "^3.0.0",
     "remark-parse": "^11.0.0",
     "roadmap-renderer": "^1.0.6",
@@ -82,7 +83,7 @@
     "tiptap-markdown": "^0.8.10",
     "turndown": "^7.2.0",
     "unified": "^11.0.5",
-    "zustand": "^4.5.5"
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@ai-sdk/google": "^1.1.19",

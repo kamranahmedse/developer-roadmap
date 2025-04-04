@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 import Analytics from '../components/Analytics/Analytics.astro';
 import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
@@ -10,9 +12,9 @@ import { PageProgress } from '../components/PageProgress';
 import { Toaster } from '../components/Toast';
 import { PageSponsors } from '../components/PageSponsors/PageSponsors';
 import { siteConfig } from '../lib/config';
-import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import type { ResourceType } from '../lib/resource-progress';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 import Clarity from '../components/Analytics/Clarity.astro';
 import RedditPixel from '../components/Analytics/RedditPixel.astro';
 import GoogleAd from '../components/Analytics/GoogleAd.astro';

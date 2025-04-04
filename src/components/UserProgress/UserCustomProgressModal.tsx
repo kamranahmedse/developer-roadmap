@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
@@ -7,7 +7,7 @@ import { topicSelectorAll } from '../../lib/resource-progress';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
@@ -173,7 +173,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
               variant="modal"
               roadmap={roadmap!}
               className="min-h-[400px]"
-              onRendered={(wrapperRef: RefObject<HTMLDivElement>) => {
+              onRendered={(wrapperRef) => {
                 const {
                   done = [],
                   learning = [],
