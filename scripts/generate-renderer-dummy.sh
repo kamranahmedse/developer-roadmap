@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 rm -rf .temp
 rm -rf editor
 
