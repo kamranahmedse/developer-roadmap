@@ -3,9 +3,6 @@ name: Deploy to EC2
 on:
   workflow_dispatch:
 
-env:
-  GH_PAT: ${{ secrets.GH_PAT }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -41,7 +38,7 @@ jobs:
       - name: Generate Production Build
         run: |
           git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
-          npm run generate-renderer
+          GH_PAT=${{ secrets.GH_PAT }} npm run generate-renderer
           npm run compress:images
           npm run build
 
