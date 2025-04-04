@@ -1,7 +1,7 @@
 import { ChevronDownIcon, StarIcon, User2Icon } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '../../../editor/utils/classname';
 import { markdownToHtml } from '../../lib/markdown';
+import { cn } from '../../lib/classname';
 
 type Review = {
   name: string;
