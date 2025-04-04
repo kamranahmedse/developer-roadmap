@@ -8,4 +8,4 @@ LATEST_COMMIT_HASH=$(git ls-remote https://github.com/roadmapsh/web-draw-v2.git 
 echo "Latest commit hash: $LATEST_COMMIT_HASH"
 
 # Install the package using the latest commit hash
-pnpm add github:roadmapsh/web-draw-v2#"$LATEST_COMMIT_HASH"\&path:packages/editor
+pnpm add github:roadmapsh/web-draw#"$LATEST_COMMIT_HASH"\&path:packages/editor
