@@ -27,7 +27,7 @@ jobs:
       - name: Copy configuration files
         run: |
           cp configuration/dist/github/developer-roadmap.env .env
-          git ls-remote https://x-access-token:${{ github.token }}@github.com/roadmapsh/web-draw.git
+          git ls-remote https://${{ secrets.GITHUB_TOKEN }}@github.com/roadmapsh/web-draw.git
 
       # -----------------
       # Prepare the Build
