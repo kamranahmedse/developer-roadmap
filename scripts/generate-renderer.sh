@@ -2,6 +2,9 @@
 
 set -e
 
+# Remove old editor
+rm -rf editor
+
 if [ ! -d ".temp/web-draw" ]; then
   git clone ssh://git@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
 fi
@@ -10,13 +13,10 @@ cd .temp/web-draw
 pnpm install
 npm run build -- --filter=@roadmapsh/editor
 
-# Remove old editor
-rm -rf editor
+cd ../../
 
 # Copy new editor
-cp -rf packages/editor ../../editor
-
-cd ../../
+cp -rf .temp/web-draw/packages/editor editor
 
 editor_changed_files=$(git ls-files -m editor)
 
