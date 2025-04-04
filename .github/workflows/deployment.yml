@@ -3,9 +3,6 @@ name: Deploy to EC2
 on:
   workflow_dispatch:
 
-env:
-  GH_PAT: ${{ secrets.GH_PAT }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -39,11 +36,10 @@ jobs:
           pnpm install
 
       - name: Generate Production Build
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
-          npm run generate-renderer
+          LATEST_COMMIT_HASH=$(git ls-remote https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git refs/heads/main | awk '{print $1}')
+          echo "Using commit hash: $LATEST_COMMIT_HASH"
+          pnpm add "github:roadmapsh/web-draw#${LATEST_COMMIT_HASH}&path:packages/editor"
           npm run compress:images
           npm run build
 
