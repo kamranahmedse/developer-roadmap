@@ -46,7 +46,7 @@ export function getLastPath() {
     return;
   }
 
-  return localStorage.getItem(LAST_PATH_KEY) || '';
+  return localStorage.getItem(LAST_PATH_KEY) || 'home';
 }
 
 type UtmParams = Partial<{
