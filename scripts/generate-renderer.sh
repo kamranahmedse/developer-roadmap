@@ -2,10 +2,13 @@
 
 set -e
 
-# Fetch the latest commit hash from the GitHub repo
-LATEST_COMMIT_HASH=$(git ls-remote git@github.com:roadmapsh/web-draw.git refs/heads/main | awk '{print $1}')
+if [ -n "$GH_PAT" ]; then
+  LATEST_COMMIT_HASH=$(git ls-remote "https://${GH_PAT}@github.com/roadmapsh/web-draw.git" refs/heads/main | awk '{print $1}')
+else
+  LATEST_COMMIT_HASH=$(git ls-remote git@github.com:roadmapsh/web-draw.git refs/heads/main | awk '{print $1}')
+fi
 
-echo "Latest commit hash: $LATEST_COMMIT_HASH"
+echo "Using commit hash: $LATEST_COMMIT_HASH"
 
-# Install the package using the latest commit hash
+# Install the package using the commit hash
 pnpm add github:roadmapsh/web-draw#"$LATEST_COMMIT_HASH"\&path:packages/editor
