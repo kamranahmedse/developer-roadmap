@@ -33,8 +33,8 @@ importers:
         specifier: ^2.6.2
         version: 2.6.2
       '@roadmapsh/editor':
-        specifier: ssh://git@github.com/roadmapsh/web-draw#v0.0.11&path:packages/editor
-        version: git+https://git@github.com:roadmapsh/web-draw.git#93ad79741c92f89cfd8cd60e5daefd77bc7c2d3c&path:packages/editor(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(use-sync-external-store@1.5.0(react@18.3.1))
+        specifier: 0.0.11
+        version: 0.0.11(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(use-sync-external-store@1.5.0(react@18.3.1))
       '@tailwindcss/vite':
         specifier: ^4.1.3
         version: 4.1.3(vite@5.4.17(@types/node@18.19.86)(lightningcss@1.29.2))
@@ -1032,9 +1032,8 @@ packages:
     resolution: {integrity: sha512-xBaJish5OeGmniDj9cW5PRa/PtmuVU3ziqrbr5xJj901ZDN4TosrVaNZpEiLZAxdfnhAe7uQ7QFWfjPe9d9K2Q==}
     engines: {node: '>= 10'}
 
-  '@roadmapsh/editor@git+https://git@github.com:roadmapsh/web-draw.git#93ad79741c92f89cfd8cd60e5daefd77bc7c2d3c&path:packages/editor':
-    resolution: {commit: 93ad79741c92f89cfd8cd60e5daefd77bc7c2d3c, path: packages/editor, repo: git@github.com:roadmapsh/web-draw.git, type: git}
-    version: 0.0.11
+  '@roadmapsh/editor@0.0.11':
+    resolution: {integrity: sha512-7wPWpz03DTEuc7IZRxfCLjwurHxiAhD2xYV6DquwX1jMCnrojh567vpf0UP72QgAuJ/lSHbW0vzr0SnhClRaxA==, tarball: https://npm.pkg.github.com/download/@roadmapsh/editor/0.0.11/9f04a92d97eb6b7b410461018ee79d91be9c41a2}
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
@@ -4127,7 +4126,7 @@ snapshots:
       '@resvg/resvg-js-win32-ia32-msvc': 2.6.2
       '@resvg/resvg-js-win32-x64-msvc': 2.6.2
 
-  '@roadmapsh/editor@git+https://git@github.com:roadmapsh/web-draw.git#93ad79741c92f89cfd8cd60e5daefd77bc7c2d3c&path:packages/editor(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(use-sync-external-store@1.5.0(react@18.3.1))':
+  '@roadmapsh/editor@0.0.11(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(use-sync-external-store@1.5.0(react@18.3.1))':
     dependencies:
       '@xyflow/react': 12.5.4(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(react@19.1.0)
       clsx: 2.1.1

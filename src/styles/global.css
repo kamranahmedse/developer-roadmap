@@ -1,8 +1,19 @@
-@import '@roadmapsh/editor/dist/index.css';
-
 @import 'tailwindcss';
+@import '@roadmapsh/editor/style.css';
 
 @config '../../tailwind.config.cjs';
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('/fonts/balsamiq.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-balsamiq: 'Balsamiq Sans', sans-serif;
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
