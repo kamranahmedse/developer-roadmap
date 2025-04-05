@@ -40,7 +40,7 @@
     "@nanostores/react": "^0.8.0",
     "@napi-rs/image": "^1.9.2",
     "@resvg/resvg-js": "^2.6.2",
-    "@roadmapsh/editor": "file:editor",
+    "@roadmapsh/editor": "ssh://git@github.com/roadmapsh/web-draw#v0.0.8&path:packages/editor",
     "@tanstack/react-query": "^5.59.16",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",

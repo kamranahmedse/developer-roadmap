@@ -38,7 +38,6 @@ jobs:
       - name: Generate Production Build
         run: |
           git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
-          npm run generate-renderer
           # npm run compress:images
           npm run build
 
