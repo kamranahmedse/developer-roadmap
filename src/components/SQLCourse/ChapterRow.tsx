@@ -48,20 +48,20 @@ export function ChapterRow(props: ChapterRowProps) {
         onClick={() => isExpandable && setIsExpanded(!isExpanded)}
         className={cn(
           'relative rounded-xl border border-zinc-800 bg-zinc-800 p-6',
-          'bg-gradient-to-br from-zinc-900/90 via-zinc-900/70 to-zinc-900/50',
+          'bg-linear-to-br from-zinc-900/90 via-zinc-900/70 to-zinc-900/50',
           !isExpanded &&
-            'hover:bg-gradient-to-br hover:from-zinc-900/95 hover:via-zinc-900/80 hover:to-zinc-900/60',
+            'hover:bg-linear-to-br hover:from-zinc-900/95 hover:via-zinc-900/80 hover:to-zinc-900/60',
           !isExpanded &&
             'hover:cursor-pointer hover:shadow-[0_0_30px_rgba(0,0,0,0.2)]',
           isExpanded && 'rounded-b-none border-b-0',
         )}
       >
         <div className="flex items-start gap-4">
-          <div className="hidden flex-shrink-0 md:block">
+          <div className="hidden shrink-0 md:block">
             <div className="rounded-full bg-yellow-500/10 p-3">{icon}</div>
           </div>
 
-          <div className="flex-grow">
+          <div className="grow">
             <h3 className="text-xl font-semibold tracking-wide text-white">
               <span className="inline text-gray-500 md:hidden">
                 {counter}.{' '}
@@ -81,7 +81,7 @@ export function ChapterRow(props: ChapterRowProps) {
           </div>
 
           {isExpandable && (
-            <div className="flex-shrink-0 rounded-full bg-zinc-800/80 p-2 text-zinc-400 group-hover:bg-zinc-800 group-hover:text-yellow-500">
+            <div className="shrink-0 rounded-full bg-zinc-800/80 p-2 text-zinc-400 group-hover:bg-zinc-800 group-hover:text-yellow-500">
               <ChevronDown
                 className={cn(
                   'h-4 w-4 transition-transform',
@@ -94,7 +94,7 @@ export function ChapterRow(props: ChapterRowProps) {
       </div>
 
       {isExpanded && (
-        <div className="rounded-b-xl border border-t-0 border-zinc-800 bg-gradient-to-br from-zinc-900/50 via-zinc-900/30 to-zinc-900/20">
+        <div className="rounded-b-xl border border-t-0 border-zinc-800 bg-linear-to-br from-zinc-900/50 via-zinc-900/30 to-zinc-900/20">
           <div className="grid grid-cols-1 divide-zinc-800 md:grid-cols-2 md:divide-x">
             {regularLessons.length > 0 && (
               <div className="p-6 pb-0 md:pb-6">

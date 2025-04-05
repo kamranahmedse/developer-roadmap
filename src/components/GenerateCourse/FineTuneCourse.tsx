@@ -19,7 +19,7 @@ function Question(props: QuestionProps) {
       </label>
       <textarea
         placeholder={placeholder}
-        className="min-h-[80px] w-full resize-none px-4 py-3 text-gray-700 placeholder:text-gray-400 focus:outline-none"
+        className="min-h-[80px] w-full resize-none px-4 py-3 text-gray-700 placeholder:text-gray-400 focus:outline-hidden"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         autoFocus={autoFocus}
@@ -56,7 +56,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
     <div className="flex flex-col overflow-hidden rounded-lg border border-gray-200 transition-all">
       <label
         className={cn(
-          'group flex cursor-pointer select-none flex-row items-center gap-2.5 px-4 py-3 text-left text-gray-500 transition-colors hover:bg-gray-100 focus:outline-none',
+          'group flex cursor-pointer select-none flex-row items-center gap-2.5 px-4 py-3 text-left text-gray-500 transition-colors hover:bg-gray-100 focus:outline-hidden',
           hasFineTuneData && 'bg-gray-100',
         )}
       >

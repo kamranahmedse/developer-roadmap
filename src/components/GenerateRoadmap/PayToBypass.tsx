@@ -22,7 +22,7 @@ export function PayToBypass(props: PayToBypassProps) {
     <div className="p-4">
       <button
         onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-hidden"
       >
         <ChevronLeft size={16} />
         Back to options
@@ -46,7 +46,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={userId}
             name={userId}
             type="text"
-            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             value={user?.id}
             readOnly
           />
@@ -59,7 +59,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={nameId}
             name={nameId}
             type="text"
-            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             value={user?.name}
             readOnly
           />
@@ -72,7 +72,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={emailId}
             name={emailId}
             type="email"
-            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             value={user?.email}
             readOnly
           />
@@ -90,7 +90,7 @@ export function PayToBypass(props: PayToBypassProps) {
             name={amountId}
             type="text"
             required
-            className="block w-full rounded-lg border p-3 py-2 shadow-sm outline-none placeholder:text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="block w-full rounded-lg border p-3 py-2 shadow-xs outline-hidden placeholder:text-sm placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="How much are you willing to pay for this?"
           />
         </div>
@@ -105,7 +105,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={roadmapCountId}
             name={roadmapCountId}
             required
-            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="How many roadmaps you will be generating (daily, or monthly)?"
           />
         </div>
@@ -117,7 +117,7 @@ export function PayToBypass(props: PayToBypassProps) {
             id={usageId}
             name={usageId}
             required
-            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="How will you be using this"
           />
         </div>
@@ -131,7 +131,7 @@ export function PayToBypass(props: PayToBypassProps) {
           <textarea
             id={feedbackId}
             name={feedbackId}
-            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="placeholder-text-gray-400 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-sm focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="Do you have any feedback?"
           />
         </div>

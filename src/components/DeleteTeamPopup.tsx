@@ -73,7 +73,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
         <div className="relative h-full w-full max-w-md p-4 md:h-auto">
           <div
             ref={popupBodyEl}
-            className="popup-body relative rounded-lg bg-white p-4 shadow"
+            className="popup-body relative rounded-lg bg-white p-4 shadow-sm"
           >
             <h2 className="text-2xl font-semibold text-black">Delete Team</h2>
             <p className="text-gray-500">
@@ -90,7 +90,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
                   type="text"
                   name="delete-account"
                   id="delete-account"
-                  className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
+                  className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:border-gray-400"
                   placeholder={'Type "delete" to confirm'}
                   required
                   autoFocus
@@ -111,7 +111,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
                   type="button"
                   disabled={isLoading}
                   onClick={handleClosePopup}
-                  className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
+                  className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
                 >
                   Cancel
                 </button>
@@ -120,7 +120,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
                   disabled={
                     isLoading || confirmationText.toUpperCase() !== 'DELETE'
                   }
-                  className="flex-grow cursor-pointer rounded-lg bg-red-500 py-2 text-white disabled:opacity-40"
+                  className="grow cursor-pointer rounded-lg bg-red-500 py-2 text-white disabled:opacity-40"
                 >
                   {isLoading ? 'Please wait ..' : 'Confirm'}
                 </button>

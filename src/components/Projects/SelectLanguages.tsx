@@ -114,7 +114,7 @@ export function SelectLanguages(props: SelectLanguagesProps) {
   };
 
   return (
-    <div className="relative flex flex-shrink-0">
+    <div className="relative flex shrink-0">
       <div className="relative">
         <button
           className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pl-3 pr-2 text-xs font-medium text-gray-900"
@@ -148,7 +148,7 @@ export function SelectLanguages(props: SelectLanguagesProps) {
             <input
               ref={searchInputRef}
               type="text"
-              className="w-full rounded-md border border-gray-200 py-1.5 pl-9 pr-3 text-sm focus:border-gray-300 focus:outline-none"
+              className="w-full rounded-md border border-gray-200 py-1.5 pl-9 pr-3 text-sm focus:border-gray-300 focus:outline-hidden"
               placeholder="Search languages..."
               value={searchQuery}
               onChange={(e) => {

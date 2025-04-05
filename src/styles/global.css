@@ -1,11 +1,11 @@
-@import '@roadmapsh/editor/style.css';
+@import '@roadmapsh/editor/dist/index.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@config '../../tailwind.config.cjs';
 
 /*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
 
@@ -18,33 +18,29 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    --color-gray-200: oklch(0.928 0.006 264.531);
-    border-color: var(--color-gray-200, currentColor);
+    border-color: var(--color-gray-200, currentcolor);
   }
 }
 
-@layer components {
-  .container {
-    @apply mx-auto !max-w-[830px] px-4;
-  }
+@utility container {
+  @apply mx-auto max-w-[830px]! px-4;
+}
 
-  .container-lg {
-    @apply mx-auto !max-w-[968px] px-4;
-  }
+@utility container-lg {
+  @apply mx-auto max-w-[968px]! px-4;
+}
 
-  .badge {
-    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white;
-  }
+@utility badge {
+  @apply rounded-xs bg-gray-400 px-1.5 py-0.5 text-xs font-medium text-white uppercase;
+}
 
+@utility no-scrollbar {
   /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
-
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 svg {

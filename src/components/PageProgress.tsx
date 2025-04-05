@@ -28,7 +28,7 @@ export function PageProgress(props: Props) {
   return (
     <div>
       {/* Tailwind based spinner for full page */}
-      <div className="fixed left-0 top-0 z-[100] flex h-full w-full items-center justify-center bg-white bg-opacity-75">
+      <div className="fixed left-0 top-0 z-100 flex h-full w-full items-center justify-center bg-white bg-opacity-75">
         <div className="flex  items-center justify-center rounded-md border bg-white px-4 py-2 ">
           <Spinner
             className="h-4 w-4 sm:h-4 sm:w-4"

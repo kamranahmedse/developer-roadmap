@@ -27,7 +27,7 @@ export function ResourceListSeparator(props: ResourceSeparatorProps) {
         {Icon && <Icon className="inline-block h-3 w-3 fill-current" />}
         {text}
       </span>
-      <hr className="absolute inset-x-0 flex-grow border-current" />
+      <hr className="absolute inset-x-0 grow border-current" />
     </p>
   );
 }

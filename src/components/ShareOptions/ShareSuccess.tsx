@@ -64,7 +64,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
 
       <input
         type="text"
-        className="mt-6 w-full rounded-md border bg-gray-50 p-2 px-2.5 text-gray-700 focus:outline-none"
+        className="mt-6 w-full rounded-md border bg-gray-50 p-2 px-2.5 text-gray-700 focus:outline-hidden"
         value={shareLink}
         readOnly
         onClick={(e) => {
@@ -115,7 +115,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
                     href={socialShareLink.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-8 w-8 items-center justify-center gap-1.5 rounded-md border bg-gray-50 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none"
+                    className="flex h-8 w-8 items-center justify-center gap-1.5 rounded-md border bg-gray-50 text-sm text-gray-700 hover:bg-gray-100 focus:outline-hidden"
                   >
                     <socialShareLink.icon className="h-4 w-4" />
                   </a>
@@ -129,7 +129,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
       <div className="mt-4 flex flex-col items-center justify-end gap-2">
         <button
           className={cn(
-            'flex w-full items-center justify-center gap-1.5 rounded bg-black px-4 py-2.5 text-sm font-medium text-white hover:opacity-80',
+            'flex w-full items-center justify-center gap-1.5 rounded-sm bg-black px-4 py-2.5 text-sm font-medium text-white hover:opacity-80',
             isCopied && 'bg-green-300 text-green-800',
           )}
           disabled={isCopied}
@@ -142,7 +142,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
         </button>
         <button
           className={cn(
-            'flex w-full items-center justify-center gap-1.5 rounded border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100',
+            'flex w-full items-center justify-center gap-1.5 rounded-sm border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100',
           )}
           onClick={onClose}
         >

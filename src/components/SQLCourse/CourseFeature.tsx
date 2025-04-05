@@ -34,7 +34,7 @@ export function CourseFeature(props: CourseFeatureProps) {
             setIsZoomed(false);
             setIsExpanded(false);
           }}
-          className="fixed inset-0 z-[999] flex cursor-zoom-out items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-999 flex cursor-zoom-out items-center justify-center bg-black bg-opacity-75"
         >
           <img
             src={imgUrl}
@@ -62,7 +62,7 @@ export function CourseFeature(props: CourseFeatureProps) {
             },
           )}
         >
-          <span className="flex flex-grow items-center space-x-3">
+          <span className="flex grow items-center space-x-3">
             <Icon />
             <span>{title}</span>
           </span>

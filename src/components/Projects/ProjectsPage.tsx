@@ -114,7 +114,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
       <div className="container relative flex flex-col gap-4 sm:flex-row">
         <div
           className={cn(
-            'hidden w-full flex-col from-gray-100 sm:w-[160px] sm:shrink-0 sm:border-r sm:bg-gradient-to-l sm:pt-6',
+            'hidden w-full flex-col from-gray-100 sm:w-[160px] sm:shrink-0 sm:border-r sm:bg-linear-to-l sm:pt-6',
             {
               'hidden sm:flex': !isFilterOpen,
               'z-50 flex': isFilterOpen,
@@ -171,7 +171,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
             </div>
           </div>
         </div>
-        <div className="flex flex-grow flex-col pb-20 pt-2 sm:pt-6">
+        <div className="flex grow flex-col pb-20 pt-2 sm:pt-6">
           <div className="mb-4 flex items-center justify-between text-sm text-gray-500">
             <h3 className={'flex items-center'}>
               <Box size={15} className="mr-1" strokeWidth={2} />

@@ -63,17 +63,17 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
               alt={title}
               className="h-[120px] w-full object-cover object-left-top"
             />
-            <span className="absolute group-hover:opacity-0 inset-0 bg-gradient-to-b from-transparent to-black/40" />
+            <span className="absolute group-hover:opacity-0 inset-0 bg-linear-to-b from-transparent to-black/40" />
 
             <div className="absolute font-medium inset-x-0 top-full group-hover:inset-y-0 flex items-center justify-center px-2 text-center text-xs bg-black/50 text-white py-0.5 opacity-0 group-hover:opacity-100 cursor-pointer">
-              <span className='bg-black py-0.5 rounded px-1'>{title}</span>
+              <span className='bg-black py-0.5 rounded-sm px-1'>{title}</span>
             </div>
           </div>
         ))}
       </div>
       {enlargedImage && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black bg-opacity-75"
           onClick={handleCloseEnlarged}
         >
           <img

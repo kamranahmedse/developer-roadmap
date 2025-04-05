@@ -206,7 +206,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
+    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}

@@ -236,12 +236,12 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                       </p>
                     </div>
 
-                    <div className="flex-grow"></div>
+                    <div className="grow"></div>
 
                     <div>
                       <button
                         className={cn(
-                          'flex min-h-9 w-full items-center justify-center rounded-md py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-11 sm:py-2.5 sm:text-base',
+                          'flex min-h-9 w-full items-center justify-center rounded-md py-2 text-sm font-medium transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-yellow-400 disabled:cursor-not-allowed disabled:opacity-60 sm:min-h-11 sm:py-2.5 sm:text-base',
                           'bg-yellow-400 text-black hover:bg-yellow-500',
                         )}
                         disabled={

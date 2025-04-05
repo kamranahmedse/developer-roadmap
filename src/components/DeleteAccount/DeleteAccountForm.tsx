@@ -53,7 +53,7 @@ export function DeleteAccountForm() {
           type="text"
           name="delete-account"
           id="delete-account"
-          className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
+          className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:border-gray-400"
           placeholder={'Type "delete" to confirm'}
           required
           autoFocus
@@ -72,14 +72,14 @@ export function DeleteAccountForm() {
           type="button"
           disabled={isLoading}
           onClick={handleClosePopup}
-          className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
+          className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
         >
           Cancel
         </button>
         <button
           type="submit"
           disabled={isLoading || confirmationText.toUpperCase() !== 'DELETE'}
-          className="flex-grow cursor-pointer rounded-lg bg-red-500 py-2 text-white disabled:opacity-40"
+          className="grow cursor-pointer rounded-lg bg-red-500 py-2 text-white disabled:opacity-40"
         >
           {isLoading ? 'Please wait ..' : 'Confirm'}
         </button>

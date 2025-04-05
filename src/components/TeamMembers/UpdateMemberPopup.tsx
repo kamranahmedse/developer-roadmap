@@ -56,7 +56,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
-          className="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow-sm"
         >
           <h3 className="mb-1.5 text-xl font-medium sm:text-2xl">
             Update Role
@@ -91,14 +91,14 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
                 type="button"
                 disabled={isLoading}
                 onClick={handleClosePopup}
-                className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
+                className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={isLoading || !selectedRole}
-                className="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
+                className="grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
               >
                 {isLoading ? 'Please wait ..' : 'Update Role'}
               </button>

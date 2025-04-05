@@ -28,7 +28,7 @@ export function CircularProgress(props: CircularProgressProps) {
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="relative flex h-[28px] w-[28px] flex-shrink-0 items-center justify-center">
+    <div className="relative flex h-[28px] w-[28px] shrink-0 items-center justify-center">
       {isVisible && !isLoading && (
         <svg className="absolute h-full w-full -rotate-90">
           <circle

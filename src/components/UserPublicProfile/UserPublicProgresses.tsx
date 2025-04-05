@@ -45,7 +45,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                   target="_blank"
                   href={`/r/${roadmap.roadmapSlug}`}
                   key={roadmap.id + counter}
-                  className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+                  className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-xs transition-all hover:border-gray-300 hover:bg-gray-50"
                 >
                   {roadmap.title}
                 </a>
@@ -74,7 +74,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                   href={`/${roadmap.id}?s=${userId}`}
                   className="group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400"
                 >
-                  <span className="flex-grow truncate">{roadmap.title}</span>
+                  <span className="grow truncate">{roadmap.title}</span>
                   <span className="text-xs text-gray-400">
                     {percentageDone}%
                   </span>

@@ -44,7 +44,7 @@ Here are some of the most commonly used Flexbox styles:
 </View>
 ```
 
-- **`flex`**: This style determines how the child items grow or shrink when there's remaining space in the container. It's a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
+- **`flex`**: This style determines how the child items grow or shrink when there's remaining space in the container. It's a shorthand for `grow`, `shrink`, and `flex-basis`.
 ```jsx
 <View style={{flexDirection: 'row'}}>
   <Text style={{flex: 1}}>First child</Text>

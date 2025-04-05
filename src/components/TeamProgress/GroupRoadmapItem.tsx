@@ -26,7 +26,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
     <>
       <div className="flex h-full min-h-[270px] flex-col rounded-md border">
         <div className="flex items-center gap-3 border-b p-3">
-          <div className="flex min-w-0 flex-grow items-center justify-between">
+          <div className="flex min-w-0 grow items-center justify-between">
             <h3 className="truncate font-medium">{resourceTitle}</h3>
             <a
               href={roadmapLink}
@@ -47,7 +47,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
 
             return (
               <button
-                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none ${
+                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-hidden ${
                   isMyProgress ? 'border-green-500 hover:border-green-600' : ''
                 }`}
                 key={member?.member._id}
@@ -71,7 +71,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                       alt={member.member.name || ''}
                       className="h-5 w-5 shrink-0 rounded-full"
                     />
-                    <span className="inline-grid grid-cols-[auto,32px] items-center">
+                    <span className="inline-grid grid-cols-[auto_32px] items-center">
                       <span className="mr-[5px] truncate">
                         {member?.member?.name}
                       </span>

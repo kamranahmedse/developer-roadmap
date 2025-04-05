@@ -3,7 +3,7 @@ import { Award, QuoteIcon, Trophy } from 'lucide-react';
 export function AuthorQuoteMessage() {
   return (
     <div className="mx-auto mt-14 max-w-2xl sm:mt-20">
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/10 via-yellow-400/5 to-yellow-300/10 p-8 sm:p-12">
+      <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-400/5 to-yellow-300/10 p-8 sm:p-12">
         <div className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2">
           <div className="size-[500px] rounded-full bg-yellow-500/5 blur-3xl" />
         </div>

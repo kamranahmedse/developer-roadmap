@@ -128,7 +128,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const hasContent = topicHtml?.length > 0;
 
   return (
-    <div className={'relative z-[92]'}>
+    <div className={'relative z-92'}>
       <div
         ref={topicRef}
         tabIndex={0}

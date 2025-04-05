@@ -23,11 +23,11 @@ export function SubmissionRequirement(props: SubmissionRequirementProps) {
       {!isLoading && (
         <>
           {status === 'pending' ? (
-            <CircleDashed className="h-4 w-4 flex-shrink-0 text-gray-400" />
+            <CircleDashed className="h-4 w-4 shrink-0 text-gray-400" />
           ) : status === 'success' ? (
-            <CheckIcon className="h-4 w-4 flex-shrink-0 text-green-800" />
+            <CheckIcon className="h-4 w-4 shrink-0 text-green-800" />
           ) : (
-            <X className="h-4 w-4 flex-shrink-0 text-yellow-800" />
+            <X className="h-4 w-4 shrink-0 text-yellow-800" />
           )}
         </>
       )}
