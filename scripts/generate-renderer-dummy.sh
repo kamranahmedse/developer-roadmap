@@ -2,18 +2,23 @@
 
 set -e
 
-rm -rf .temp
+# Remove old editor
 rm -rf editor
 
-git clone ssh://git@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
+if [ ! -d ".temp/web-draw" ]; then
+  git clone ssh://git@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
+fi
 
-cd .temp/web-draw
-pnpm install
-npm run build -- --filter=@roadmapsh/dummy-editor
+# Make dir
+mkdir -p packages/editor
+mkdir -p packages/editor/dist
 
+# Copy the editor dist, package.json
+cp -rf .temp/web-draw/packages/dummy-editor/dist packages/editor
+cp -rf .temp/web-draw/packages/dummy-editor/package.json packages/editor
 
-# Copy new editor
-cp -rf packages/dummy-editor ../../editor
+# replace the @roadmapsh/dummy-editor with @roadmapsh/editor
+sed -i '' 's/@roadmapsh\/dummy-editor/@roadmapsh\/editor/g' packages/editor/package.json
 
 # Remove temp directory
 rm -rf .temp

@@ -4,6 +4,7 @@
 
 # build output
 dist/
+!packages/editor/dist
 .output/
 
 # dependencies
@@ -29,5 +30,3 @@ pnpm-debug.log*
 /playwright/.cache/
 tests-examples
 *.csveditor/
-
-editor/

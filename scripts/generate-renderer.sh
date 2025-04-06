@@ -9,30 +9,26 @@ if [ ! -d ".temp/web-draw" ]; then
   git clone ssh://git@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
 fi
 
-cd .temp/web-draw
-pnpm install
-npm run build -- --filter=@roadmapsh/editor
+# Make dir
+mkdir -p packages/editor
+mkdir -p packages/editor/dist
 
-cd ../../
+# Copy the editor dist, package.json
+cp -rf .temp/web-draw/packages/editor/dist packages/editor
+cp -rf .temp/web-draw/packages/editor/package.json packages/editor
 
-# Copy new editor
-cp -rf .temp/web-draw/packages/editor editor
+# Remove temp directory
+rm -rf .temp
 
-editor_changed_files=$(git ls-files -m editor)
+editor_changed_files=$(git ls-files -m packages/editor)
 
-echo $editor_changed_files
+echo "editor_changed_files: $editor_changed_files"
 
-# for each of the changed files, assume they are unchanged
 for file in $editor_changed_files; do
   echo "Assuming $file is unchanged"
   git update-index --assume-unchanged $file
 done
 
-# Remove temp directory
-rm -rf .temp
-
 # Reinstall so that the editor which was setup gets used
 rm -rf node_modules
 pnpm install
-
-git checkout -- pnpm-lock.yaml
