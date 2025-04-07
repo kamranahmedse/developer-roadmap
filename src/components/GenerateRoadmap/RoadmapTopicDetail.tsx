@@ -246,7 +246,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
+      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
     </div>
   );
 }

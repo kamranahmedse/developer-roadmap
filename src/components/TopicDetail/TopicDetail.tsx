@@ -13,7 +13,7 @@ import {
   renderTopicProgress,
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
-import { pageProgressMessage, sponsorHidden } from '../../stores/page';
+import { pageProgressMessage } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
@@ -623,7 +623,7 @@ export function TopicDetail(props: TopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
+      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
     </div>
   );
 }

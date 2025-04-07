@@ -475,7 +475,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-10 bg-gray-900 bg-opacity-50 lg:hidden"
+          className="fixed inset-0 z-10 bg-gray-900/50 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         ></div>
       )}

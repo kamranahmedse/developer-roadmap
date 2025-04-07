@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, MoveRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback } from 'react';
 
 interface ChangelogImagesProps {
@@ -73,7 +73,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
       </div>
       {enlargedImage && (
         <div
-          className="fixed inset-0 z-999 flex items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/75"
           onClick={handleCloseEnlarged}
         >
           <img
@@ -82,7 +82,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             className="max-h-[90%] max-w-[90%] rounded-xl object-contain"
           />
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white hover:bg-opacity-100 bg-opacity-50 p-2"
+            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('prev');
@@ -91,7 +91,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             <ChevronLeft size={24} />
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white hover:bg-opacity-100 bg-opacity-50 p-2"
+            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('next');
