@@ -28,6 +28,7 @@ export interface Props {
   isUpcoming?: boolean;
   hasSearch?: boolean;
   projectCount?: number;
+  coursesCount?: number;
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
@@ -45,12 +46,11 @@ const {
   projectCount = 0,
   question,
   activeTab = 'roadmap',
+  coursesCount = 0,
 } = Astro.props;
 
-const roadmapTitle =
-  roadmapId === 'devops'
-    ? 'DevOps'
-    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const hasCourses = coursesCount > 0;
+const hasProjects = projectCount > 0;
 ---
 
 <LoginPopup />
@@ -72,7 +72,7 @@ const roadmapTitle =
   }
 
   <div
-    class='relative rounded-none border bg-white px-5 pb-0 pt-4 sm:rounded-lg'
+    class='relative rounded-none border bg-white px-5 pt-4 pb-0 sm:rounded-lg'
   >
     <div class='flex items-start justify-between'>
       <a
@@ -91,7 +91,7 @@ const roadmapTitle =
         &larr;&nbsp;<span>&nbsp;All Roadmaps</span>
       </a>
       <div
-        class='relative right-0 top-0 flex items-center gap-1 sm:-right-2 sm:-top-0.5'
+        class='relative top-0 right-0 flex items-center gap-1 sm:-top-0.5 sm:-right-2'
       >
         <MarkFavorite
           resourceId={roadmapId}
@@ -113,51 +113,55 @@ const roadmapTitle =
         />
       </div>
     </div>
-    <div class='mb-5 mt-5 sm:mb-12 sm:mt-12'>
+    <div class:list={['mt-5 mb-5 sm:mt-12 sm:mb-12']}>
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-3.5 sm:text-5xl'>
         {title}
       </h1>
-      <p class='text-balance text-sm text-gray-500 sm:text-lg'>
+      <p class='text-sm text-balance text-gray-500 sm:text-lg'>
         {description}
       </p>
     </div>
 
-    <div class='flex justify-between gap-2 sm:gap-0'>
-      <div class='relative top-px flex gap-1 sm:gap-3'>
-        <TabLink
-          url={`/${roadmapId}`}
-          icon={MapIcon}
-          isActive={activeTab === 'roadmap'}
-          text='Roadmap'
-        />
-        <TabLink
-          url={`/${roadmapId}/projects`}
-          icon={FolderKanbanIcon}
-          text='Projects'
-          isActive={activeTab === 'projects'}
-          badgeText={projectCount > 0 ? '' : 'soon'}
-        />
-        {
-          roadmapId === 'sql' && (
+    {
+      (
+        <div class='flex justify-between gap-2 sm:gap-0'>
+          <div class='relative top-px flex gap-1 sm:gap-3'>
             <TabLink
-              url={`/${roadmapId}/courses`}
-              icon={BookOpenIcon}
-              text='Courses'
-              isActive={activeTab === 'courses'}
-              badgeText='New'
+              url={`/${roadmapId}`}
+              icon={MapIcon}
+              isActive={activeTab === 'roadmap'}
+              text='Roadmap'
             />
-          )
-        }
-      </div>
+            {hasProjects && (
+              <TabLink
+                url={`/${roadmapId}/projects`}
+                icon={FolderKanbanIcon}
+                text='Projects'
+                isActive={activeTab === 'projects'}
+                badgeText={projectCount > 0 ? '' : 'soon'}
+              />
+            )}
+            {hasCourses && (
+              <TabLink
+                url={`/${roadmapId}/courses`}
+                icon={BookOpenIcon}
+                text='Courses'
+                isActive={activeTab === 'courses'}
+                badgeText='New'
+              />
+            )}
+          </div>
 
-      <TabLink
-        url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
-        icon={MessageCircle}
-        text='Suggest Changes'
-        isExternal={true}
-        hideTextOnMobile={true}
-        isActive={false}
-      />
-    </div>
+          <TabLink
+            url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
+            icon={MessageCircle}
+            text='Suggest Changes'
+            isExternal={true}
+            hideTextOnMobile={true}
+            isActive={false}
+          />
+        </div>
+      )
+    }
   </div>
 </div>

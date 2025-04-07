@@ -70,6 +70,7 @@ const ogImageUrl =
 const question = roadmapData?.question;
 const note = roadmapData.note;
 const projects = await getProjectsByRoadmapId(roadmapId);
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
@@ -114,6 +115,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
       projectCount={projects.length}
+      coursesCount={courses.length}
     />
 
     <div class='container mt-2.5'>

@@ -48,25 +48,7 @@ const nounTitle =
   descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
 
-const courses = [
-  {
-    title: 'Complete Course to Master SQL',
-    description: 'Learn SQL from scratch with this comprehensive course',
-    link: 'https://roadmap.sh/courses/sql',
-    instructor: {
-      name: 'Kamran Ahmed',
-      image: 'https://github.com/kamranahmedse.png',
-      title: 'Founder roadmap.sh',
-    },
-    features: [
-      '55+ Lessons',
-      'AI Tutor',
-      'Coding Environment',
-      'Quizzes',
-      'Certification',
-    ],
-  },
-];
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
@@ -91,17 +73,20 @@ const courses = [
       isUpcoming={roadmapData.isUpcoming}
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
+      coursesCount={courses.length}
       activeTab='courses'
     />
 
     <div class='container'>
-      <div class='relative mb-8 mt-2.5'>
+      <div class='relative mt-2.5 mb-8'>
         <div class='my-4 flex items-center justify-between'>
           <p class='border-l-4 border-black pl-2 text-sm text-black'>
             Official Courses by <span class='font-semibold'> roadmap.sh </span>
             team
           </p>
-          <div class='text-sm text-gray-500'>More coming soon</div>
+          <div class='hidden text-sm text-gray-500 sm:block'>
+            More coming soon
+          </div>
         </div>
 
         <div class='grid grid-cols-1 gap-5 md:grid-cols-1'>
@@ -127,7 +112,7 @@ const courses = [
                             </span>
                           ))}
                         </div>
-                        <div class='flex items-center justify-between'>
+                        <div class='mt-6 flex flex-col items-start justify-between gap-3 sm:mt-0 sm:flex-row sm:items-center sm:gap-0'>
                           <div class='flex items-center'>
                             <img
                               src={course.instructor.image}
@@ -144,7 +129,7 @@ const courses = [
                             </div>
                           </div>
 
-                          <span class='group rounded-lg border border-gray-900 bg-gray-900 px-4 py-1.5 text-sm font-medium text-white transition-colors duration-300 hover:opacity-80'>
+                          <span class='group w-full sm:py-1.5 sm:w-auto mt-3 rounded-lg border border-gray-900 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors duration-300 hover:opacity-80 sm:mt-0'>
                             View Course <span class='ml-1'>&rarr;</span>
                           </span>
                         </div>
