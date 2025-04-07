@@ -20,15 +20,6 @@ cp -rf .temp/web-draw/packages/editor/package.json packages/editor
 # Remove temp directory
 rm -rf .temp
 
-editor_changed_files=$(git ls-files -m packages/editor)
-
-echo "editor_changed_files: $editor_changed_files"
-
-for file in $editor_changed_files; do
-  echo "Assuming $file is unchanged"
-  git update-index --assume-unchanged $file
-done
-
 # Reinstall so that the editor which was setup gets used
 rm -rf node_modules
 pnpm install
