@@ -19,8 +19,10 @@ import {
   CreditCard,
   ArrowRightLeft,
   CircleX,
+  AlertCircle,
 } from 'lucide-react';
 import { BillingWarning } from './BillingWarning';
+import { cn } from '../../lib/classname';
 
 export type CreateCustomerPortalBody = {};
 
@@ -42,6 +44,7 @@ export function BillingPage() {
   const isCanceled =
     billingDetails?.status === 'canceled' || billingDetails?.cancelAtPeriodEnd;
   const isPastDue = billingDetails?.status === 'past_due';
+  const isIncomplete = billingDetails?.status === 'incomplete';
 
   const {
     mutate: createCustomerPortal,
@@ -117,6 +120,19 @@ export function BillingPage() {
         !isLoadingBillingDetails &&
         priceDetails && (
           <div className="mt-1">
+            {isIncomplete && (
+              <BillingWarning
+                icon={AlertCircle}
+                message="Your subscription is incomplete."
+                buttonText="Update payment information."
+                onButtonClick={() => {
+                  createCustomerPortal({});
+                }}
+                isLoading={
+                  isCreatingCustomerPortal || isCreatingCustomerPortalSuccess
+                }
+              />
+            )}
             {isCanceled && (
               <BillingWarning
                 icon={CircleX}
@@ -157,7 +173,7 @@ export function BillingPage() {
                   <RefreshCw className="size-5 text-gray-600" />
                 </div>
                 <div>
-                  <span className="text-xs uppercase tracking-wider text-gray-400">
+                  <span className="text-xs tracking-wider text-gray-400 uppercase">
                     Payment
                   </span>
                   <h3 className="flex items-baseline text-lg font-semibold text-black">
@@ -170,27 +186,35 @@ export function BillingPage() {
               </div>
             </div>
 
-            <div className="mt-6 border-t border-gray-100 pt-6">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-                  <Calendar className="size-5 text-gray-600" />
+            <div
+              className={cn(
+                'mt-6 pt-6',
+                !isIncomplete && 'border-t border-gray-100',
+                isIncomplete && '-mt-6',
+              )}
+            >
+              {!isIncomplete && (
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+                    <Calendar className="size-5 text-gray-600" />
+                  </div>
+                  <div>
+                    <span className="text-xs tracking-wider text-gray-400 uppercase">
+                      {billingDetails?.cancelAtPeriodEnd
+                        ? 'Expires On'
+                        : 'Renews On'}
+                    </span>
+                    <h3 className="text-lg font-semibold text-black">
+                      {formattedNextBillDate}
+                    </h3>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-xs uppercase tracking-wider text-gray-400">
-                    {billingDetails?.cancelAtPeriodEnd
-                      ? 'Expires On'
-                      : 'Renews On'}
-                  </span>
-                  <h3 className="text-lg font-semibold text-black">
-                    {formattedNextBillDate}
-                  </h3>
-                </div>
-              </div>
+              )}
 
               <div className="mt-8 flex gap-3 max-sm:flex-col">
                 {!isCanceled && (
                   <button
-                    className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-50 focus:outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-2 max-sm:grow"
+                    className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-hidden max-sm:grow"
                     onClick={() => {
                       setShowUpgradeModal(true);
                     }}
@@ -201,7 +225,7 @@ export function BillingPage() {
                 )}
 
                 <button
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-50 focus:outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
                   onClick={() => {
                     createCustomerPortal({});
                   }}
