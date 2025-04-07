@@ -8,6 +8,8 @@ import { getGuidesByAuthor } from '../../lib/guide';
 import { getAllQuestionGroups } from '../../lib/question-group';
 import { getVideosByAuthor } from '../../lib/video';
 
+export const prerender = true;
+
 interface Params extends Record<string, string | undefined> {}
 
 export async function getStaticPaths() {

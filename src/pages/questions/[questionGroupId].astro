@@ -14,6 +14,8 @@ import QuestionGuide from '../../components/Questions/QuestionGuide.astro';
 import { markdownToHtml } from '../../lib/markdown';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 
+export const prerender = true;
+
 export interface Props {
   questionGroup: QuestionGroupType;
 }

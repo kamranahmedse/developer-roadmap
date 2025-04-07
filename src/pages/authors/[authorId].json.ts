@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getAuthorById, getAuthorIds } from '../../lib/author';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const authorIds = await getAuthorIds();
 

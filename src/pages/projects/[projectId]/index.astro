@@ -10,6 +10,8 @@ import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const projects = await getAllProjects();
 

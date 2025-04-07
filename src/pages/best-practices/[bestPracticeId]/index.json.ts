@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const bestPracticeJsons = await import.meta.glob(
     '/src/data/best-practices/**/*.json',
