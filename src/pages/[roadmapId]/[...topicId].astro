@@ -10,7 +10,10 @@ export const prerender = false;
 const { topicId, roadmapId } = Astro.params;
 
 if (!topicId || !roadmapId) {
-  return Astro.redirect('/404');
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+
+  return Astro.rewrite('/404');
 }
 
 // Handle nested paths by joining the segments
@@ -48,7 +51,10 @@ if (!fs.existsSync(contentPath)) {
   );
 
   if (!fs.existsSync(indexFilePath)) {
-    return Astro.redirect('/404');
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
+
+    return Astro.rewrite('/404');
   }
 
   contentPath = indexFilePath;
