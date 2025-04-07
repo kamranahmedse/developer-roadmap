@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from 'markdown-it-async';
 
 export const prerender = false;
 
@@ -16,7 +16,7 @@ if (!topicId || !roadmapId) {
 const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
 
 // Construct the path to the markdown file
-const contentPath = path.join(
+let contentPath = path.join(
   process.cwd(),
   'src',
   'data',
@@ -28,7 +28,21 @@ const contentPath = path.join(
 
 // Check if file exists
 if (!fs.existsSync(contentPath)) {
-  return Astro.redirect('/404');
+  const indexFilePath = path.join(
+    process.cwd(),
+    'src',
+    'data',
+    'roadmaps',
+    roadmapId,
+    'content',
+    `${topicPath}/index.md`,
+  );
+
+  if (!fs.existsSync(indexFilePath)) {
+    return Astro.redirect('/404');
+  }
+
+  contentPath = indexFilePath;
 }
 
 // Read and parse the markdown file
@@ -50,8 +64,8 @@ const { data: roadmapData } = matter(roadmapContent);
 const fileWithoutBasePath = contentPath.replace(/.+?\/src\/data/, '/src/data');
 const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
 
-const md = new MarkdownIt();
-const htmlContent = md.render(content);
+const md = MarkdownIt();
+const htmlContent = await md.renderAsync(content);
 ---
 
 <div data-github-url={gitHubUrl}></div>
