@@ -12,6 +12,20 @@ isNew: false
 dimensions:
   width: 968
   height: 2650
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
 schema:
   headline: 'Data Analyst Roadmap'
   description: 'Learn how to become an Data Analyst with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

@@ -12,6 +12,20 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2317.91
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
 schema:
   headline: 'API Design'
   description: 'Step by step guide to learn how to design and build robust APIs.'

@@ -16,7 +16,20 @@ question:
     
     ## What are the components of System Design?
     Some of the the major components that play a crucial role in designing a system include Programming language choice, Databases, CDNs, Load Balancers, Caches, Proxies, Queues, Web Servers, Application Servers, Search Engines, Logging and Monitoring Systems, Scaling, and more. Key considerations include scalability, architectural patterns, and security measures to safeguard the system. These elements collectively contribute to building a robust, efficient, and secure system, though this list represents just a subset of the comprehensive factors involved in system design.
-
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
 dimensions:
   width: 968
   height: 3200

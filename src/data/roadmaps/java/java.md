@@ -8,6 +8,20 @@ briefDescription: 'Step by step guide to becoming a Java Developer in 2025'
 title: 'Java Developer'
 description: 'Step by step guide to becoming a Java developer in 2025'
 hasTopics: true
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
 question:
   title: 'What is a Java Developer?'
   description: |

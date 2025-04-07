@@ -5,6 +5,7 @@ import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import CourseStep from '../../components/courses/CourseStep.astro';
 import Milestone from '../../components/courses/Milestone.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
 
 export const prerender = true;
 
@@ -50,6 +51,7 @@ const nounTitle =
   descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
 
+const projects = await getProjectsByRoadmapId(roadmapId);
 const courses = roadmapData.courses || [];
 ---
 
@@ -76,6 +78,7 @@ const courses = roadmapData.courses || [];
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
       coursesCount={courses.length}
+      projectCount={projects.length}
       activeTab='courses'
     />
 
@@ -131,7 +134,7 @@ const courses = roadmapData.courses || [];
                             </div>
                           </div>
 
-                          <span class='group w-full sm:py-1.5 sm:w-auto mt-3 rounded-lg border border-gray-900 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors duration-300 hover:opacity-80 sm:mt-0'>
+                          <span class='group mt-3 w-full rounded-lg border border-gray-900 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors duration-300 hover:opacity-80 sm:mt-0 sm:w-auto sm:py-1.5'>
                             View Course <span class='ml-1'>&rarr;</span>
                           </span>
                         </div>
