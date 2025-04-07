@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapJsons = import.meta.glob('/src/data/roadmaps/**/*.json', {
     eager: true,

@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getRoadmapIds } from '../../lib/roadmap.ts';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const coursesJsons: Record<string, any> = import.meta.glob(
     '/src/data/roadmaps/**/courses.json',

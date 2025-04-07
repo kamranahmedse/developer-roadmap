@@ -3,6 +3,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 import { getAllLinkGroups } from '../../../lib/link-group';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const linkGroups = await getAllLinkGroups();
 

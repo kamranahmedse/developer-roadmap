@@ -6,6 +6,8 @@ import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import CourseStep from '../../components/courses/CourseStep.astro';
 import Milestone from '../../components/courses/Milestone.astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 

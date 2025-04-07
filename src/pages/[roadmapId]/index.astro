@@ -19,6 +19,8 @@ import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 

@@ -5,6 +5,8 @@ import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 

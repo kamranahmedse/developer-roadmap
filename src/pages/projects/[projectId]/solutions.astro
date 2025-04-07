@@ -9,6 +9,8 @@ import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
 import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const projects = await getAllProjects();
 
