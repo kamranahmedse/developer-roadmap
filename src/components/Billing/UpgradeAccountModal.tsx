@@ -5,6 +5,7 @@ import {
   MessageSquare,
   Sparkles,
   Heart,
+  MapIcon,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -33,17 +34,22 @@ type Perk = {
 const PREMIUM_PERKS: Perk[] = [
   {
     icon: Zap,
-    title: 'Unlimited AI Course Generations',
-    description: 'Generate as many custom courses as you need',
+    title: 'AI Course Generations',
+    description: 'No limits on the number of AI courses',
+  },
+  {
+    icon: MapIcon,
+    title: 'AI Roadmaps',
+    description: 'No limits on the number of AI roadmaps',
   },
   {
     icon: Infinity,
-    title: 'No Daily Limits on course features',
-    description: 'Use all features without restrictions',
+    title: 'Extended Daily Limits',
+    description: 'Generate more content in a day',
   },
   {
     icon: MessageSquare,
-    title: 'Unlimited Course Follow-ups',
+    title: 'Course Follow-ups',
     description: 'Ask as many questions as you need',
   },
   {
@@ -284,7 +290,10 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
               {PREMIUM_PERKS.map((perk, index) => {
                 const Icon = perk.icon;
                 return (
-                  <div key={index} className="flex items-start space-x-2 sm:space-x-3">
+                  <div
+                    key={index}
+                    className="flex items-start space-x-2 sm:space-x-3"
+                  >
                     <Icon className="mt-0.5 h-4 w-4 text-yellow-500 sm:h-5 sm:w-5" />
                     <div>
                       <h4 className="text-sm font-medium text-black sm:text-base">
