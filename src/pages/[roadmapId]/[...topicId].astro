@@ -26,6 +26,8 @@ let contentPath = path.join(
   `${topicPath}.md`,
 );
 
+console.log(contentPath);
+
 // Check if file exists
 if (!fs.existsSync(contentPath)) {
   const indexFilePath = path.join(
