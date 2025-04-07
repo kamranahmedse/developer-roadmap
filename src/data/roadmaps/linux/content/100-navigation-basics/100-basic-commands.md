@@ -12,7 +12,7 @@ ls
 # View current working directory
 pwd  
 
-# Displays the mannual page for a command
+# Displays the manual page for a command
 man ls
 ```
 
