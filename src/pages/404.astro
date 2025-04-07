@@ -3,6 +3,8 @@ import Icon from '../components/AstroIcon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapIds } from '../lib/roadmap';
 
+export const prerender = true;
+
 const roadmapIds = await getRoadmapIds();
 const legacyRoadmapUrls = [...roadmapIds.map((id) => `/${id}/`), '/roadmaps/'];
 ---
