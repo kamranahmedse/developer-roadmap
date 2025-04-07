@@ -1,4 +1,4 @@
-import { ArrowDownWideNarrow, Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import type { SortByValues } from './DiscoverRoadmaps';
@@ -41,11 +41,11 @@ export function DiscoverRoadmapSorting(props: DiscoverRoadmapSortingProps) {
 
   return (
     <div
-      className="min-auto relative flex flex-shrink-0 sm:min-w-[140px]"
+      className="min-auto relative flex shrink-0 sm:min-w-[140px]"
       ref={dropdownRef}
     >
       <button
-        className="py-15 flex w-full items-center justify-between gap-2 rounded-md border px-2 text-sm bg-white"
+        className="flex w-full items-center justify-between gap-2 rounded-md border bg-white px-2 text-sm"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{selectedValue?.label}</span>
@@ -56,7 +56,7 @@ export function DiscoverRoadmapSorting(props: DiscoverRoadmapSortingProps) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-10 z-10 min-w-40 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
+        <div className="absolute top-10 right-0 z-10 min-w-40 overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg">
           {sortingLabels.map((item) => (
             <button
               key={item.value}

@@ -115,7 +115,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
       <div className="flex flex-row gap-2">
         {!isUsingEmail && (
           <button
-            className="flex-grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
+            className="grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
             onClick={() => setIsUsingEmail(true)}
           >
             Use your email address
@@ -124,13 +124,13 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
         {isUsingEmail && (
           <>
             <button
-              className="flex-grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
+              className="grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
               onClick={() => setEmailNature('login')}
             >
               Already have an account
             </button>
             <button
-              className="flex-grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
+              className="grow rounded-md border border-gray-400 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100"
               onClick={() => setEmailNature('signup')}
             >
               Create an account

@@ -131,7 +131,7 @@ export function UpdateTeamForm() {
             type="text"
             name="name"
             id="name"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="roadmap.sh"
             disabled={isDisabled}
             required
@@ -153,7 +153,7 @@ export function UpdateTeamForm() {
             type="text"
             name="website"
             id="website"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://roadmap.sh"
             disabled={isDisabled}
             value={website}
@@ -172,7 +172,7 @@ export function UpdateTeamForm() {
               type="text"
               name="linkedIn"
               id="linkedIn"
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
               placeholder="https://linkedin.com/company/roadmapsh"
               disabled={isDisabled}
               value={linkedIn}
@@ -191,7 +191,7 @@ export function UpdateTeamForm() {
             type="text"
             name="gitHub"
             id="gitHub"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://github.com/roadmapsh"
             disabled={isDisabled}
             value={gitHub}
@@ -208,7 +208,7 @@ export function UpdateTeamForm() {
           <select
             name="type"
             id="type"
-            className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             disabled={isDisabled}
             value={teamType || ''}
             onChange={(e) =>
@@ -232,7 +232,7 @@ export function UpdateTeamForm() {
             <select
               name="team-size"
               id="team-size"
-              className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
               required={teamType === 'company'}
               disabled={isDisabled}
               value={teamSize}
@@ -250,7 +250,7 @@ export function UpdateTeamForm() {
           </div>
         )}
 
-        <div className="mt-4 flex h-[42px] w-full items-center rounded-lg border border-gray-300 px-3 py-2 shadow-sm">
+        <div className="mt-4 flex h-[42px] w-full items-center rounded-lg border border-gray-300 px-3 py-2 shadow-xs">
           <label
             htmlFor="personal-progress-only"
             className="flex items-center gap-2 text-sm leading-none text-slate-500"
@@ -278,7 +278,7 @@ export function UpdateTeamForm() {
         <div className="mt-4 flex w-full flex-col">
           <button
             type="submit"
-            className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+            className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
             disabled={isDisabled || isLoading}
           >
             {isLoading ? <Spinner /> : 'Update'}
@@ -310,7 +310,7 @@ export function UpdateTeamForm() {
           <button
             onClick={() => setIsDeleting(true)}
             data-popup="delete-team-popup"
-            className="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+            className="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-hidden focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
           >
             Delete Team
           </button>

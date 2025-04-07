@@ -12,7 +12,7 @@ export function CategoryFilterButton(props: CategoryFilterButtonProps) {
   return (
     <button
       className={cn(
-        'border-b bg-gradient-to-l py-1.5 pr-3 text-center text-sm text-gray-500 hover:text-gray-900 sm:text-right',
+        'border-b bg-linear-to-l py-1.5 pr-3 text-center text-sm text-gray-500 hover:text-gray-900 sm:text-right',
         {
           'from-white font-semibold text-gray-900':
             selected && category !== 'All Roadmaps',

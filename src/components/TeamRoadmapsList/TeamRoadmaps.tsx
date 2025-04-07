@@ -429,7 +429,7 @@ export function TeamRoadmaps() {
                             resourceConfig.resourceId
                           }`}
                           className={
-                            'flex gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
+                            'flex gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-hidden'
                           }
                           target={'_blank'}
                         >
@@ -513,7 +513,7 @@ export function TeamRoadmaps() {
                     <a
                       href={`/r/${resourceConfig.roadmapSlug}`}
                       className={
-                        'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
+                        'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-hidden'
                       }
                       target={'_blank'}
                     >
@@ -524,7 +524,7 @@ export function TeamRoadmaps() {
                       <a
                         href={editorLink}
                         className={
-                          'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-none'
+                          'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-hidden'
                         }
                         target={'_blank'}
                       >
@@ -606,7 +606,7 @@ export function TeamRoadmaps() {
                     <a
                       href={`/${resourceConfig.resourceId}?t=${teamId}`}
                       className={
-                        'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
+                        'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-hidden'
                       }
                       target={'_blank'}
                     >

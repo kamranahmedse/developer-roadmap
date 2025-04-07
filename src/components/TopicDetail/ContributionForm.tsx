@@ -56,7 +56,7 @@ function ContributionInput(props: ContributionInputProps) {
         ref={titleRef}
         type="text"
         required
-        className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-none"
+        className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-hidden"
         placeholder="e.g. Introduction to RESTful APIs"
         onFocus={() => setFocused('title')}
         onBlur={() => setFocused('')}
@@ -72,7 +72,7 @@ function ContributionInput(props: ContributionInputProps) {
       <input
         type="url"
         required
-        className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-none"
+        className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-hidden"
         placeholder="e.g. https://roadmap.sh/guides/some-url"
         onFocus={() => setFocused('link')}
         onBlur={() => setFocused('')}

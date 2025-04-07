@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, MoveRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback } from 'react';
 
 interface ChangelogImagesProps {
@@ -63,17 +63,17 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
               alt={title}
               className="h-[120px] w-full object-cover object-left-top"
             />
-            <span className="absolute group-hover:opacity-0 inset-0 bg-gradient-to-b from-transparent to-black/40" />
+            <span className="absolute group-hover:opacity-0 inset-0 bg-linear-to-b from-transparent to-black/40" />
 
             <div className="absolute font-medium inset-x-0 top-full group-hover:inset-y-0 flex items-center justify-center px-2 text-center text-xs bg-black/50 text-white py-0.5 opacity-0 group-hover:opacity-100 cursor-pointer">
-              <span className='bg-black py-0.5 rounded px-1'>{title}</span>
+              <span className='bg-black py-0.5 rounded-sm px-1'>{title}</span>
             </div>
           </div>
         ))}
       </div>
       {enlargedImage && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/75"
           onClick={handleCloseEnlarged}
         >
           <img
@@ -82,7 +82,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             className="max-h-[90%] max-w-[90%] rounded-xl object-contain"
           />
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white hover:bg-opacity-100 bg-opacity-50 p-2"
+            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('prev');
@@ -91,7 +91,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             <ChevronLeft size={24} />
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white hover:bg-opacity-100 bg-opacity-50 p-2"
+            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('next');

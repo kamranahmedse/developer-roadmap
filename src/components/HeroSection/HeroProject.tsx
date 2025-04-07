@@ -21,7 +21,7 @@ export function HeroProject({ project }: HeroProjectProps) {
         </h3>
         <span
           className={cn(
-            'absolute -right-2 -top-2 flex flex-shrink-0 items-center gap-1 rounded-full text-xs uppercase tracking-wide',
+            'absolute -right-2 -top-2 flex shrink-0 items-center gap-1 rounded-full text-xs uppercase tracking-wide',
             {
               'text-green-600/50': project.submittedAt && project.repositoryUrl,
               'text-yellow-600': !project.submittedAt || !project.repositoryUrl,
@@ -43,9 +43,9 @@ export function HeroProject({ project }: HeroProjectProps) {
         )}
       </div>
 
-      <div className="absolute inset-0 rounded-md bg-gradient-to-br from-slate-800/50 via-transparent to-transparent" />
+      <div className="absolute inset-0 rounded-md bg-linear-to-br from-slate-800/50 via-transparent to-transparent" />
       {project.submittedAt && project.repositoryUrl && (
-        <div className="absolute inset-0 rounded-md bg-gradient-to-br from-green-950/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 rounded-md bg-linear-to-br from-green-950/20 via-transparent to-transparent" />
       )}
     </a>
   );

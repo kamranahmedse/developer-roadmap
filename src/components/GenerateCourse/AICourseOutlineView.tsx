@@ -35,7 +35,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
   const aiCourseProgress = course.done || [];
 
   return (
-    <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
+    <div className="mx-auto rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}
@@ -82,7 +82,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
                         {!isCompleted && (
                           <span
                             className={cn(
-                              'flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800 max-lg:size-5 max-lg:text-xs',
+                              'flex size-6 shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-medium text-gray-800 max-lg:size-5 max-lg:text-xs',
                             )}
                           >
                             {lessonIdx + 1}
@@ -90,7 +90,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
                         )}
 
                         {isCompleted && (
-                          <CheckIcon additionalClasses="size-6 flex-shrink-0 text-green-500" />
+                          <CheckIcon additionalClasses="size-6 shrink-0 text-green-500" />
                         )}
 
                         <p className="flex-1 truncate text-base text-gray-800 max-lg:text-sm">

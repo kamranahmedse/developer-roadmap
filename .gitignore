@@ -30,4 +30,4 @@ pnpm-debug.log*
 tests-examples
 *.csveditor/
 
-editor/
+packages/editor

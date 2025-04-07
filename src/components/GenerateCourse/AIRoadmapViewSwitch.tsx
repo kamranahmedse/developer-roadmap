@@ -15,7 +15,7 @@ export function AIRoadmapViewSwitch(props: AIRoadmapViewSwitchProps) {
   return (
     <div
       className={cn(
-        'grid shrink-0 grid-cols-2 gap-0.5 rounded-md border border-gray-300 bg-white p-0.5 shadow-sm',
+        'grid shrink-0 grid-cols-2 gap-0.5 rounded-md border border-gray-300 bg-white p-0.5 shadow-xs',
       )}
     >
       <SwitchButton
@@ -61,7 +61,7 @@ export function SwitchButton(props: SwitchButtonProps) {
   return (
     <button
       className={cn(
-        'flex items-center justify-center gap-1.5 rounded text-sm hover:bg-gray-100 disabled:cursor-not-allowed',
+        'flex items-center justify-center gap-1.5 rounded-sm text-sm hover:bg-gray-100 disabled:cursor-not-allowed',
         isActive && 'bg-gray-100 text-gray-800',
         variant === 'text' ? 'px-2 py-1.5' : 'p-[5px]',
       )}

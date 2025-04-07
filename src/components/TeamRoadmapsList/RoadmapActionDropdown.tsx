@@ -31,7 +31,7 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
       <button
         disabled={false}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none sm:hidden"
+        className="flex items-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-hidden sm:hidden"
       >
         <MoreVertical size={14} />
         Options
@@ -50,7 +50,7 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
                     setIsOpen(false);
                     onUpdateSharing();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <Lock size={14} className="mr-2" />
                   Sharing
@@ -64,7 +64,7 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
                     setIsOpen(false);
                     onCustomize();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <Shapes size={14} className="mr-2" />
                   Customize
@@ -78,7 +78,7 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
                     setIsOpen(false);
                     onDelete();
                   }}
-                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
                   <Trash2 size={14} className="mr-2" />
                   Delete

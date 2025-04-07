@@ -44,7 +44,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
   const randomTerms = ['OAuth', 'UI / UX', 'SRE', 'DevRel'];
 
   return (
-    <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
+    <div className="flex grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
       {isConfiguring && (
         <UpgradeAccountModal
           onClose={() => {
@@ -90,7 +90,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           />
           <button
             className={cn(
-              'flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+              'flex min-w-[154px] shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
               'disabled:cursor-not-allowed disabled:opacity-50',
             )}
             onClick={(e) => {

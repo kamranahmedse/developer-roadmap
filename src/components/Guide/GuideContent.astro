@@ -22,7 +22,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
   {
     (showTableOfContent || showRelatedGuides) && (
-      <div class='sticky top-0 lg:relative bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+      <div class='sticky top-0 lg:relative bg-linear-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
           relatedTitle={guideFrontmatter?.relatedTitle}
           relatedGuides={guide?.relatedGuides || {}}

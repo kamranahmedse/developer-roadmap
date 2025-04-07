@@ -181,7 +181,7 @@ export function BuyButton(props: BuyButtonProps) {
           onClick={onBuyClick}
           disabled={isLoadingPricing}
           className={cn(
-            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none active:ring-0 md:w-auto md:rounded-full md:text-lg',
+            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden active:ring-0 md:w-auto md:rounded-full md:text-lg',
             (isLoadingPricing || isCreatingCheckoutSession) &&
               'striped-loader-yellow pointer-events-none scale-105 bg-yellow-500',
           )}
@@ -246,7 +246,7 @@ export function BuyButton(props: BuyButtonProps) {
         onClick={onBuyClick}
         disabled={isLoadingPricing}
         className={cn(
-          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-none',
+          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-2 font-medium text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden',
           (isLoadingPricing || isCreatingCheckoutSession) &&
             'striped-loader-yellow pointer-events-none bg-yellow-500',
         )}

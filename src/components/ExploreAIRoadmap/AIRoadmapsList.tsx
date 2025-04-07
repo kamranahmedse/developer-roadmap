@@ -35,7 +35,7 @@ export function AIRoadmapsList(props: AIRoadmapsListProps) {
             className="flex min-h-[95px] flex-col rounded-md border transition-colors hover:bg-gray-100"
             target={'_blank'}
           >
-            <h2 className="flex-grow px-2.5 py-2.5 text-base font-medium leading-tight">
+            <h2 className="grow px-2.5 py-2.5 text-base font-medium leading-tight">
               {roadmap.title}
             </h2>
             <div className="flex items-center justify-between gap-2 px-2.5 py-2">

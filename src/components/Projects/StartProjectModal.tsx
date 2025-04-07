@@ -15,7 +15,7 @@ function StepLabel(props: StepLabelProps) {
   const { label } = props;
 
   return (
-    <span className="flex-shrink-0 rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-600">
+    <span className="shrink-0 rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-600">
       {label}
     </span>
   );

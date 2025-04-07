@@ -48,20 +48,20 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
         values={data}
         classForValue={(value) => {
           if (!value) {
-            return 'fill-gray-100 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-100 rounded-md [rx:2px] focus:outline-hidden';
           }
 
           const { count } = value;
           if (count >= 20) {
-            return 'fill-gray-800 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-800 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 10) {
-            return 'fill-gray-600 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-600 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 5) {
-            return 'fill-gray-500 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-500 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 3) {
-            return 'fill-gray-300 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-300 rounded-md [rx:2px] focus:outline-hidden';
           } else {
-            return 'fill-gray-200 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-gray-200 rounded-md [rx:2px] focus:outline-hidden';
           }
         }}
         tooltipDataAttrs={(value: any) => {
@@ -79,7 +79,7 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
 
       <ReactTooltip
         id="user-activity-tip"
-        className="!rounded-lg !bg-gray-900 !p-1 !px-2 !text-sm"
+        className="rounded-lg! bg-gray-900! p-1! px-2! text-sm!"
       />
 
       <div className="mt-4 flex items-center justify-between">
@@ -95,13 +95,13 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
               data-tooltip-id="user-activity-tip"
               data-tooltip-content={`${legend.count} Updates`}
             >
-              <div className={`h-3 w-3 ${legend.color} mr-1 rounded-sm`}></div>
+              <div className={`h-3 w-3 ${legend.color} mr-1 rounded-xs`}></div>
             </div>
           ))}
           <span className="ml-2 text-xs text-gray-500">More</span>
           <ReactTooltip
             id="user-activity-tip"
-            className="!rounded-lg !bg-gray-900 !p-1 !px-2 !text-sm"
+            className="rounded-lg! bg-gray-900! p-1! px-2! text-sm!"
           />
         </div>
       </div>

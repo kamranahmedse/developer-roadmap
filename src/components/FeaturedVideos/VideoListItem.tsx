@@ -17,7 +17,7 @@ export function VideoListItem(props: VideoListItemProps) {
         {frontmatter.title}
 
         {frontmatter.isNew && (
-          <span className="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5">
+          <span className="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-xs uppercase ml-1.5">
             New
             <span className="hidden sm:inline">
               &middot;

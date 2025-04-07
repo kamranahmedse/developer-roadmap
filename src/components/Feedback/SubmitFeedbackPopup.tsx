@@ -68,7 +68,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          className="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow-sm"
         >
           {!isSuccess && (
             <>
@@ -84,7 +84,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
                     ref={inputEl}
                     name="submit-feedback"
                     id="submit-feedback"
-                    className="mt-2 block min-h-[150px] w-full resize-none rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400"
+                    className="mt-2 block min-h-[150px] w-full resize-none rounded-md border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400"
                     placeholder="Enter your feedback"
                     required
                     autoFocus
@@ -105,14 +105,14 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
                     type="button"
                     disabled={isLoading}
                     onClick={handleClosePopup}
-                    className="flex-grow cursor-pointer rounded-md bg-gray-200 py-2 text-center"
+                    className="grow cursor-pointer rounded-md bg-gray-200 py-2 text-center"
                   >
                     Cancel
                   </button>
                   <button
                     disabled={isLoading}
                     type="submit"
-                    className="flex-grow cursor-pointer rounded-md bg-black py-2 text-white disabled:opacity-40"
+                    className="grow cursor-pointer rounded-md bg-black py-2 text-white disabled:opacity-40"
                   >
                     {isLoading ? 'Please wait ..' : 'Send'}
                   </button>
@@ -133,7 +133,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
               <button
                 type="button"
                 onClick={handleClosePopup}
-                className="mt-4 w-full flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
+                className="mt-4 w-full grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
               >
                 Close
               </button>

@@ -95,7 +95,7 @@ export function RespondInviteForm() {
         <div>
           <a
             href="/"
-            className="flex-grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
+            className="grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
           >
             Back to home
           </a>
@@ -121,7 +121,7 @@ export function RespondInviteForm() {
               onClick={() => showLoginPopup()}
               data-popup="login-popup"
               type="button"
-              className="flex-grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
+              className="grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
             >
               Login to respond
             </button>
@@ -139,7 +139,7 @@ export function RespondInviteForm() {
                   pageProgressMessage.set('');
                 })
               }
-              className="flex-grow cursor-pointer rounded-lg hover:bg-gray-300 bg-gray-200 px-3 py-2 text-center"
+              className="grow cursor-pointer rounded-lg hover:bg-gray-300 bg-gray-200 px-3 py-2 text-center"
             >
               Accept
             </button>
@@ -150,7 +150,7 @@ export function RespondInviteForm() {
                   pageProgressMessage.set('');
                 })
               }
-              className="flex-grow cursor-pointer rounded-lg bg-red-500 hover:bg-red-600 px-3 py-2 text-white disabled:opacity-40"
+              className="grow cursor-pointer rounded-lg bg-red-500 hover:bg-red-600 px-3 py-2 text-white disabled:opacity-40"
             >
               Reject
             </button>

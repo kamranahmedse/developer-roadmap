@@ -79,7 +79,7 @@ export function SubmitShowcaseWarning(props: SubmitShowcaseWarningProps) {
 
         <div className="mt-4 grid grid-cols-2 gap-2">
           <button
-            className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center text-sm hover:bg-gray-300"
+            className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center text-sm hover:bg-gray-300"
             onClick={onClose}
             disabled={submit.isPending}
           >

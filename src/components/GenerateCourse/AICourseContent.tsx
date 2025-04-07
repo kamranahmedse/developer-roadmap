@@ -216,7 +216,7 @@ export function AICourseContent(props: AICourseContentProps) {
   const isViewingLesson = viewMode === 'module';
 
   return (
-    <section className="flex h-screen flex-grow flex-col overflow-hidden bg-gray-50">
+    <section className="flex h-screen grow flex-col overflow-hidden bg-gray-50">
       {modals}
 
       <div className="border-b border-gray-200 bg-gray-100">
@@ -246,7 +246,7 @@ export function AICourseContent(props: AICourseContentProps) {
             {viewMode === 'module' && (
               <button
                 onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
-                className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+                className="flex items-center justify-center text-gray-400 shadow-xs transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
               >
                 {isAIChatsOpen ? (
                   <MessageCircleOffIcon size={17} strokeWidth={3} />
@@ -258,7 +258,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="flex items-center justify-center text-gray-400 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
+              className="flex items-center justify-center text-gray-400 shadow-xs transition-colors hover:bg-gray-50 hover:text-gray-900 lg:hidden"
             >
               {sidebarOpen ? (
                 <X size={17} strokeWidth={3} />
@@ -272,7 +272,7 @@ export function AICourseContent(props: AICourseContentProps) {
       <header className="flex items-center justify-between border-b border-gray-200 bg-white px-6 max-lg:py-4 lg:h-[80px]">
         <div className="flex items-center">
           <div className="flex flex-col">
-            <h1 className="text-balance text-xl font-bold !leading-tight text-gray-900 max-lg:mb-0.5 max-lg:text-lg">
+            <h1 className="text-balance text-xl font-bold leading-tight! text-gray-900 max-lg:mb-0.5 max-lg:text-lg">
               {course.title || 'Loading Course...'}
             </h1>
             <div className="mt-1 flex flex-row items-center gap-2 text-sm text-gray-600 max-lg:text-xs">
@@ -354,7 +354,7 @@ export function AICourseContent(props: AICourseContentProps) {
                       setViewMode('outline');
                     }}
                     className={cn(
-                      'flex items-center gap-1 rounded px-2 py-1 text-xs transition-colors',
+                      'flex items-center gap-1 rounded-sm px-2 py-1 text-xs transition-colors',
                       viewMode === 'outline'
                         ? 'bg-gray-200 text-gray-900'
                         : 'text-gray-600 hover:bg-gray-50',
@@ -369,7 +369,7 @@ export function AICourseContent(props: AICourseContentProps) {
                       setViewMode('roadmap');
                     }}
                     className={cn(
-                      'flex items-center gap-1 rounded px-2 py-1 text-xs transition-colors',
+                      'flex items-center gap-1 rounded-sm px-2 py-1 text-xs transition-colors',
                       viewMode === 'roadmap'
                         ? 'bg-gray-200 text-gray-900'
                         : 'text-gray-600 hover:bg-gray-50',
@@ -475,7 +475,7 @@ export function AICourseContent(props: AICourseContentProps) {
 
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-10 bg-gray-900 bg-opacity-50 lg:hidden"
+          className="fixed inset-0 z-10 bg-gray-900/50 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         ></div>
       )}

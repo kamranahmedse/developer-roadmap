@@ -33,7 +33,7 @@ export function Modal(props: ModalProps) {
   return (
     <div
       className={cn(
-        'fixed left-0 right-0 top-0 z-[99] flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50',
+        'fixed left-0 right-0 top-0 z-99 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50',
         overlayClassName,
       )}
     >
@@ -46,7 +46,7 @@ export function Modal(props: ModalProps) {
         <div
           ref={popupBodyEl}
           className={cn(
-            'relative h-full rounded-lg bg-white shadow',
+            'relative h-full rounded-lg bg-white shadow-sm',
             bodyClassName,
           )}
         >

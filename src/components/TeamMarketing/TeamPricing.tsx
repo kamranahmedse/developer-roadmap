@@ -46,7 +46,7 @@ export function TeamPricing() {
                   localStorage.setItem('redirect', '/team/new');
                 }}
                 href={isAuthenticated ? '/team/new' : '/signup'}
-                className="block rounded-md bg-purple-600 px-6 py-2 text-center text-sm font-medium leading-6 text-white shadow transition hover:bg-gray-700 hover:shadow-lg focus:outline-none"
+                className="block rounded-md bg-purple-600 px-6 py-2 text-center text-sm font-medium leading-6 text-white shadow-sm transition hover:bg-gray-700 hover:shadow-lg focus:outline-hidden"
               >
                 {isAuthenticated ? 'Create your Team' : 'Sign up for free'}
               </a>
@@ -61,7 +61,7 @@ export function TeamPricing() {
               <p className="text-gray-600">Onboarding support</p>
             </div>
           </div>
-          <div className="flex flex-grow flex-col items-center justify-center rounded-md border border-gray-300 py-8">
+          <div className="flex grow flex-col items-center justify-center rounded-md border border-gray-300 py-8">
             <img
               alt={'waving hand'}
               src={'/images/team-promo/contact.png'}

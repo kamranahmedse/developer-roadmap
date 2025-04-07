@@ -63,7 +63,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
           <div className="relative flex w-full items-center gap-2 rounded-md border p-2">
             <div className="h-6 w-6 shrink-0 animate-pulse rounded-full bg-gray-200" />
             <div className="inline-grid w-full">
-              <div className="h-4 animate-pulse rounded bg-gray-200" />
+              <div className="h-4 animate-pulse rounded-sm bg-gray-200" />
             </div>
           </div>
         </li>

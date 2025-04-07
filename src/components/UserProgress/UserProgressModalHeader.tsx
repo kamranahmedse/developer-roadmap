@@ -35,7 +35,7 @@ export function UserProgressModalHeader(props: UserProgressModalHeaderProps) {
       <p
         className={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden`}
       >
-        <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+        <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
           <span>{progressPercentage}</span>% Done
         </span>
 
@@ -48,7 +48,7 @@ export function UserProgressModalHeader(props: UserProgressModalHeaderProps) {
           isLoading ? 'striped-loader' : ''
         }`}
       >
-        <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+        <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
           <span>{progressPercentage}</span>% Done
         </span>
 

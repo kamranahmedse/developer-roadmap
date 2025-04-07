@@ -392,7 +392,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         isLoading={isLoading}
       />
 
-      <div className="bg-gradient-to-b from-slate-900 to-black pb-12">
+      <div className="bg-linear-to-b from-slate-900 to-black pb-12">
         <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
           <div className="container">
             <h2

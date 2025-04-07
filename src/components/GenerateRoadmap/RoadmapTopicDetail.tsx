@@ -128,7 +128,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const hasContent = topicHtml?.length > 0;
 
   return (
-    <div className={'relative z-[92]'}>
+    <div className={'relative z-92'}>
       <div
         ref={topicRef}
         tabIndex={0}
@@ -246,7 +246,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
+      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
     </div>
   );
 }

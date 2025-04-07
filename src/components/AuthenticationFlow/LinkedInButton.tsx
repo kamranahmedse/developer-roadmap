@@ -152,7 +152,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
     <>
       <button
         className={cn(
-          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-hidden hover:border-gray-400 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
           className,
         )}
         disabled={isLoading || isDisabled}

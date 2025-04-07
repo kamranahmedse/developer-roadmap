@@ -30,7 +30,7 @@ function Input(props: InputProps) {
           value={value}
           onChange={onChange}
           rows={rows}
-          className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-xs focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           autoComplete="off"
           data-1p-ignore=""
           data-form-type="other"
@@ -45,7 +45,7 @@ function Input(props: InputProps) {
           value={value}
           onChange={onChange}
           required={required}
-          className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-xs focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           autoComplete="off"
           data-1p-ignore=""
           data-form-type="other"
@@ -120,7 +120,7 @@ export function AdvertiseForm() {
         Ready to learn more? Fill out the form below to get started!
       </h2>
       {error && (
-        <div className="relative mb-4 rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700">
+        <div className="relative mb-4 rounded-sm border border-red-400 bg-red-100 px-4 py-3 text-red-700">
           {error}
         </div>
       )}
@@ -199,7 +199,7 @@ export function AdvertiseForm() {
               type="checkbox"
               checked={formData.updates}
               onChange={handleInputChange}
-              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+              className="h-4 w-4 rounded-sm border-gray-300 text-indigo-600 focus:ring-indigo-500"
             />
           </div>
           <div className="ml-3 text-sm">
@@ -213,7 +213,7 @@ export function AdvertiseForm() {
         <div>
           <button
             type="submit"
-            className="flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-xs hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             Send
           </button>

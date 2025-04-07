@@ -14,7 +14,7 @@ export function RoadmapCard(props: RoadmapCardProps) {
   return (
     <a
       key={roadmap.link}
-      className="relative rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+      className="relative rounded-md border bg-white px-3 py-2 text-left text-sm shadow-xs transition-all hover:border-gray-300 hover:bg-gray-50"
       href={roadmap.link}
     >
       {roadmap.title}

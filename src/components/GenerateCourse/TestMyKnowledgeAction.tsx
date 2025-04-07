@@ -120,7 +120,7 @@ export function TestMyKnowledgeAction(props: TestMyKnowledgeActionProps) {
         <div className="flex items-center gap-2">
           <button
             className={cn(
-              'group flex flex-shrink-0 items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-all hover:border-black hover:bg-gray-50 hover:text-gray-900',
+              'group flex shrink-0 items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-all hover:border-black hover:bg-gray-50 hover:text-gray-900',
               {
                 'bg-gray-100 text-gray-900': isKnowledgeTestOpen,
               },
@@ -333,7 +333,7 @@ export function QuizItem(props: QuizItemProps) {
         },
       )}
     >
-      <div className="flex items-center gap-4 rounded-t-xl border-b bg-gradient-to-r from-gray-50 to-white p-5">
+      <div className="flex items-center gap-4 rounded-t-xl border-b bg-linear-to-r from-gray-50 to-white p-5">
         <span className="text-sm font-medium text-gray-700">
           Question {counter} of {totalQuestions}
         </span>
@@ -406,14 +406,14 @@ export function QuizItem(props: QuizItemProps) {
 
           <div className="flex gap-2">
             <button
-              className="group flex h-10 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pr-4 text-sm text-black transition-all hover:border-black hover:bg-black hover:text-white focus:outline-none max-sm:pr-2"
+              className="group flex h-10 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pr-4 text-sm text-black transition-all hover:border-black hover:bg-black hover:text-white focus:outline-hidden max-sm:pr-2"
               onClick={onPrevious}
             >
               <ChevronLeftIcon className="size-5 shrink-0 transition-transform group-hover:-translate-x-0.5" />
               <span className="max-sm:hidden">Previous</span>
             </button>
             <button
-              className="group flex h-10 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pl-4 text-sm text-black transition-all hover:border-black hover:bg-black hover:text-white focus:outline-none max-sm:pl-2"
+              className="group flex h-10 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 pl-4 text-sm text-black transition-all hover:border-black hover:bg-black hover:text-white focus:outline-hidden max-sm:pl-2"
               onClick={onNext}
             >
               <span className="max-sm:hidden">Next</span>
@@ -424,7 +424,7 @@ export function QuizItem(props: QuizItemProps) {
       </div>
 
       {isLoading && (
-        <div className="absolute bg-white right-3 top-3 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-none">
+        <div className="absolute bg-white right-3 top-3 flex h-8 items-center justify-center gap-1 rounded-lg border border-gray-200 p-2 text-sm text-black hover:bg-black hover:text-white focus:outline-hidden">
           <Loader2Icon className="size-5 animate-spin text-gray-400" />
         </div>
       )}

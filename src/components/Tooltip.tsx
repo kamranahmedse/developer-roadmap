@@ -52,7 +52,7 @@ export function Tooltip(props: TooltipProps) {
   return (
     <span
       className={clsx(
-        'pointer-events-none absolute z-10 block w-max transform rounded-md bg-gray-900 px-2 py-1 text-sm font-medium text-white opacity-0 shadow-sm duration-100 group-hover:opacity-100',
+        'pointer-events-none absolute z-10 block w-max transform rounded-md bg-gray-900 px-2 py-1 text-sm font-medium text-white opacity-0 shadow-xs duration-100 group-hover:opacity-100',
         positionClass,
         additionalClass,
       )}

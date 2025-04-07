@@ -120,7 +120,7 @@ export function ReviewsSection() {
             {prominentReviews.map((review, index) => (
               <div
                 key={index}
-                className="review-testimonial relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70"
+                className="review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70"
               >
                 <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-yellow-500/5" />
                 <div className="flex items-center gap-4">
@@ -180,9 +180,9 @@ export function ReviewsSection() {
             <div
               key={index}
               className={cn(
-                'review-testimonial flex-shrink-0 break-inside-avoid-column rounded-xl p-6 backdrop-blur [&_strong]:font-normal [&_strong]:text-yellow-300/70',
+                'review-testimonial shrink-0 break-inside-avoid-column rounded-xl p-6 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
                 {
-                  'bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-transparent':
+                  'bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent':
                     review.isSecondaryProminent,
                   'bg-zinc-800/30': !review.isSecondaryProminent,
                 },
@@ -225,7 +225,7 @@ export function ReviewsSection() {
 
           <div
             className={cn(
-              'absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-transparent',
+              'absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-[#121212] via-[#121212]/80 to-transparent',
               isExpanded ? 'opacity-0' : 'opacity-100',
             )}
           />
