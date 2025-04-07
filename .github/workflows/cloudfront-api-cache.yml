@@ -2,7 +2,7 @@ name: Clears API Cloudfront Cache
 on:
   workflow_dispatch:
 jobs:
-  aws_costs:
+  cloudfront_api_cache:
     runs-on: ubuntu-latest
     steps:
       - name: Clear Cloudfront Caching
