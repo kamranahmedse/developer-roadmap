@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it-async';
+import { fileURLToPath } from 'node:url';
 
 export const prerender = false;
 
@@ -15,9 +16,14 @@ if (!topicId || !roadmapId) {
 // Handle nested paths by joining the segments
 const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
 
+// Get the project root directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const projectRoot = path.resolve(__dirname, '../../..');
+
 // Construct the path to the markdown file
 let contentPath = path.join(
-  process.cwd(),
+  projectRoot,
   'src',
   'data',
   'roadmaps',
@@ -31,7 +37,7 @@ console.log(contentPath);
 // Check if file exists
 if (!fs.existsSync(contentPath)) {
   const indexFilePath = path.join(
-    process.cwd(),
+    projectRoot,
     'src',
     'data',
     'roadmaps',
@@ -53,7 +59,7 @@ const { data: frontmatter, content } = matter(fileContent);
 
 // Get the roadmap metadata
 const roadmapPath = path.join(
-  process.cwd(),
+  projectRoot,
   'src',
   'data',
   'roadmaps',
