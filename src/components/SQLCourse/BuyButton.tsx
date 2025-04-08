@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
-import { ArrowRightIcon, Play } from 'lucide-react';
+import { ArrowRightIcon, BookOpen, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import {
@@ -10,12 +10,14 @@ import {
 import { coursePriceOptions } from '../../queries/billing';
 import { courseProgressOptions } from '../../queries/course-progress';
 import { queryClient } from '../../stores/query-client';
-import { CourseLoginPopup } from '../AuthenticationFlow/CourseLoginPopup';
+import {
+  CourseLoginPopup,
+  SAMPLE_AFTER_LOGIN_KEY,
+} from '../AuthenticationFlow/CourseLoginPopup';
 import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { VideoModal } from '../VideoModal';
-import { showLoginPopup } from '../../lib/popup';
 
 export const SQL_COURSE_SLUG = 'sql';
 
@@ -96,7 +98,13 @@ export function BuyButton(props: BuyButtonProps) {
   useEffect(() => {
     const urlParams = getUrlParams();
     const shouldTriggerPurchase = urlParams[COURSE_PURCHASE_PARAM] === '1';
-    if (shouldTriggerPurchase) {
+    const shouldTriggerSample =
+      localStorage.getItem(SAMPLE_AFTER_LOGIN_KEY) === '1';
+
+    if (shouldTriggerSample) {
+      localStorage.removeItem(SAMPLE_AFTER_LOGIN_KEY);
+      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`;
+    } else if (shouldTriggerPurchase) {
       deleteUrlParam(COURSE_PURCHASE_PARAM);
       initPurchase();
     }
@@ -163,6 +171,16 @@ export function BuyButton(props: BuyButtonProps) {
     initPurchase();
   }
 
+  function onReadSampleClick() {
+    if (!isLoggedIn()) {
+      localStorage.setItem(SAMPLE_AFTER_LOGIN_KEY, '1');
+      setIsLoginPopupOpen(true);
+      return;
+    }
+
+    window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`;
+  }
+
   const courseLoginPopup = isLoginPopupOpen && (
     <CourseLoginPopup onClose={() => setIsLoginPopupOpen(false)} />
   );
@@ -177,43 +195,54 @@ export function BuyButton(props: BuyButtonProps) {
             onClose={() => setIsVideoModalOpen(false)}
           />
         )}
-        <button
-          onClick={onBuyClick}
-          disabled={isLoadingPricing}
-          className={cn(
-            'group relative inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden active:ring-0 md:w-auto md:rounded-full md:text-lg',
-            (isLoadingPricing || isCreatingCheckoutSession) &&
-              'striped-loader-yellow pointer-events-none scale-105 bg-yellow-500',
-          )}
-        >
-          {isLoadingPricing ? (
-            <span className="relative flex items-center gap-2">&nbsp;</span>
-          ) : isAlreadyEnrolled ? (
-            <span className="relative flex items-center gap-2">
-              Start Learning
-            </span>
-          ) : (
-            <span className="relative flex items-center gap-2">
-              Buy now for{' '}
-              {coursePricing?.isEligibleForDiscount ? (
-                <span className="flex items-center gap-2">
-                  <span className="hidden text-base line-through opacity-75 md:inline">
-                    ${coursePricing?.fullPrice}
+        <div className="flex flex-row">
+          <button
+            onClick={onBuyClick}
+            disabled={isLoadingPricing}
+            className={cn(
+              'group relative mr-2 inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden active:ring-0 md:w-auto md:rounded-full md:text-lg',
+              (isLoadingPricing || isCreatingCheckoutSession) &&
+                'striped-loader-yellow pointer-events-none mr-4 scale-105 bg-yellow-500',
+            )}
+          >
+            {isLoadingPricing ? (
+              <span className="relative flex items-center gap-2">&nbsp;</span>
+            ) : isAlreadyEnrolled ? (
+              <span className="relative flex items-center gap-2">
+                Start Learning
+              </span>
+            ) : (
+              <span className="relative flex items-center gap-2">
+                Buy now for{' '}
+                {coursePricing?.isEligibleForDiscount ? (
+                  <span className="flex items-center gap-2">
+                    <span className="hidden text-base line-through opacity-75 md:inline">
+                      ${coursePricing?.fullPrice}
+                    </span>
+                    <span className="text-base md:text-xl">
+                      ${coursePricing?.regionalPrice}
+                    </span>
                   </span>
-                  <span className="text-base md:text-xl">
-                    ${coursePricing?.regionalPrice}
-                  </span>
-                </span>
-              ) : (
-                <span>${coursePricing?.regionalPrice}</span>
-              )}
-              <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+                ) : (
+                  <span>${coursePricing?.regionalPrice}</span>
+                )}
+                <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+              </span>
+            )}
+          </button>
+          <button
+            onClick={onReadSampleClick}
+            className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full"
+          >
+            <span className="relative flex items-center gap-2">
+              <BookOpen className="h-5 w-5" />
+              Read Sample
             </span>
-          )}
-        </button>
+          </button>
+        </div>
 
         {!isLoadingPricing && (
-          <span className="absolute top-full z-50 flex w-[300px] translate-y-3 flex-row items-center justify-center text-sm text-yellow-400">
+          <span className="absolute top-full z-50 flex w-[300px] translate-y-4 flex-row items-center justify-center text-sm text-yellow-400">
             Lifetime access <span className="mx-2">&middot;</span>{' '}
             <button
               onClick={() => setIsVideoModalOpen(true)}
