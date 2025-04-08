@@ -101,6 +101,38 @@ export function listUserAiCoursesOptions(
   };
 }
 
+type ListFeaturedAiCoursesParams = {};
+
+type ListFeaturedAiCoursesQuery = {
+  perPage?: string;
+  currPage?: string;
+};
+
+type ListFeaturedAiCoursesResponse = {
+  data: AICourseWithLessonCount[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listFeaturedAiCoursesOptions(
+  params: ListFeaturedAiCoursesQuery = {
+    perPage: '10',
+    currPage: '1',
+  },
+) {
+  return {
+    queryKey: ['featured-ai-courses', params],
+    queryFn: () => {
+      return httpGet<ListFeaturedAiCoursesResponse>(
+        `/v1-list-featured-ai-courses`,
+        params,
+      );
+    },
+  };
+}
+
 type ListExploreAiCoursesParams = {};
 
 type ListExploreAiCoursesQuery = {

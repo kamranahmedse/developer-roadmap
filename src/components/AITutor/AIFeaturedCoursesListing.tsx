@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import {
+  listFeaturedAiCoursesOptions,
   listUserAiCoursesOptions,
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
@@ -8,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { Loader2 } from 'lucide-react';
 import { getUrlParams, setUrlParams, deleteUrlParam } from '../../lib/browser';
 import { AICourseCard } from '../GenerateCourse/AICourseCard';
+import { Pagination } from '../Pagination/Pagination';
 
 type AIFeaturedCoursesListingProps = {};
 
@@ -15,21 +17,18 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
 
   const [pageState, setPageState] = useState<ListUserAiCoursesQuery>({
-    perPage: '10',
+    perPage: '20',
     currPage: '1',
-    query: '',
   });
 
-  const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
-    listUserAiCoursesOptions(pageState),
-    queryClient,
-  );
+  const { data: featuredAiCourses, isFetching: isFeaturedAiCoursesLoading } =
+    useQuery(listFeaturedAiCoursesOptions(pageState), queryClient);
 
   useEffect(() => {
     setIsInitialLoading(false);
-  }, [userAiCourses]);
+  }, [featuredAiCourses]);
 
-  const courses = userAiCourses?.data ?? [];
+  const courses = featuredAiCourses?.data ?? [];
 
   useEffect(() => {
     const queryParams = getUrlParams();
@@ -37,19 +36,16 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
     setPageState({
       ...pageState,
       currPage: queryParams?.p || '1',
-      query: queryParams?.q || '',
     });
   }, []);
 
   useEffect(() => {
-    if (pageState?.currPage !== '1' || pageState?.query !== '') {
+    if (pageState?.currPage !== '1') {
       setUrlParams({
         p: pageState?.currPage || '1',
-        q: pageState?.query || '',
       });
     } else {
       deleteUrlParam('p');
-      deleteUrlParam('q');
     }
   }, [pageState]);
 
@@ -61,7 +57,7 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
         </div>
       </div>
 
-      {(isUserAiCoursesLoading || isInitialLoading) && (
+      {(isFeaturedAiCoursesLoading || isInitialLoading) && (
         <div className="flex min-h-[152px] items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white py-4">
           <Loader2
             className="size-4 animate-spin text-gray-400"
@@ -71,7 +67,7 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
         </div>
       )}
 
-      {!isUserAiCoursesLoading && courses && courses.length > 0 && (
+      {!isFeaturedAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">
           {courses.map((course) => (
             <AICourseCard
@@ -81,11 +77,22 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
               showProgress={false}
             />
           ))}
+
+          <Pagination
+            totalCount={featuredAiCourses?.totalCount || 0}
+            totalPages={featuredAiCourses?.totalPages || 0}
+            currPage={Number(featuredAiCourses?.currPage || 1)}
+            perPage={Number(featuredAiCourses?.perPage || 10)}
+            onPageChange={(page) => {
+              setPageState({ ...pageState, currPage: String(page) });
+            }}
+            className="rounded-lg border border-gray-200 bg-white p-4"
+          />
         </div>
       )}
 
-      {!isUserAiCoursesLoading &&
-        (userAiCourses?.data?.length || 0 > 0) &&
+      {!isFeaturedAiCoursesLoading &&
+        (featuredAiCourses?.data?.length || 0 > 0) &&
         courses.length === 0 && (
           <div className="flex min-h-[114px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
             <p className="text-sm text-gray-600">
