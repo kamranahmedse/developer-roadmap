@@ -5,10 +5,12 @@ import { AICourseActions } from './AICourseActions';
 
 type AICourseCardProps = {
   course: AICourseWithLessonCount;
+  showActions?: boolean;
+  showProgress?: boolean;
 };
 
 export function AICourseCard(props: AICourseCardProps) {
-  const { course } = props;
+  const { course, showActions = true, showProgress = true } = props;
 
   // Format date if available
   const formattedDate = course.createdAt
@@ -56,7 +58,7 @@ export function AICourseCard(props: AICourseCardProps) {
             <span>{totalTopics} lessons</span>
           </div>
 
-          {totalTopics > 0 && (
+          {showProgress && totalTopics > 0 && (
             <div className="flex items-center">
               <div className="mr-2 h-1.5 w-16 overflow-hidden rounded-full bg-gray-200">
                 <div
@@ -72,8 +74,8 @@ export function AICourseCard(props: AICourseCardProps) {
         </div>
       </a>
 
-      {course.slug && (
-        <div className="absolute right-2 top-2">
+      {showActions && course.slug && (
+        <div className="absolute top-2 right-2">
           <AICourseActions courseSlug={course.slug} />
         </div>
       )}

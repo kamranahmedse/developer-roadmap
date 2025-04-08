@@ -97,7 +97,7 @@ export function AICourse(props: AICourseProps) {
                 Course Topic
               </label>
               <div className="relative">
-                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                <div className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400">
                   <SearchIcon size={18} />
                 </div>
                 <input
@@ -107,7 +107,7 @@ export function AICourse(props: AICourseProps) {
                   onChange={(e) => setKeyword(e.target.value)}
                   onKeyDown={handleKeyDown}
                   placeholder="e.g., Algebra, JavaScript, Photography"
-                  className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-hidden focus:ring-1 focus:ring-gray-500 max-sm:placeholder:text-base"
+                  className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:ring-1 focus:ring-gray-500 focus:outline-hidden max-sm:placeholder:text-base"
                   maxLength={50}
                 />
               </div>
@@ -161,10 +161,6 @@ export function AICourse(props: AICourseProps) {
               Generate Course
             </button>
           </form>
-        </div>
-
-        <div className="mt-8 min-h-[200px]">
-          <UserCoursesList />
         </div>
       </div>
     </section>

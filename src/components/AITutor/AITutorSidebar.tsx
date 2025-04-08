@@ -1,14 +1,20 @@
-import { ChevronLeft, PlusCircle, BookOpen, Compass } from 'lucide-react';
+import {
+  ChevronLeft,
+  PlusCircle,
+  BookOpen,
+  Compass,
+  CircleDotIcon,
+} from 'lucide-react';
 
 type AITutorSidebarProps = {
-  activeTab: 'new' | 'courses' | 'explore';
+  activeTab: AITutorTab;
 };
 
 const sidebarItems = [
   {
     key: 'new',
     label: 'New Course',
-    href: '/ai/new',
+    href: '/ai',
     icon: PlusCircle,
   },
   {
@@ -18,12 +24,20 @@ const sidebarItems = [
     icon: BookOpen,
   },
   {
+    key: 'stuff-picks',
+    label: 'Stuff Picks',
+    href: '/ai/stuff-picks',
+    icon: CircleDotIcon,
+  },
+  {
     key: 'explore',
     label: 'Explore',
     href: '/ai/explore',
     icon: Compass,
   },
 ];
+
+export type AITutorTab = (typeof sidebarItems)[number]['key'];
 
 export function AITutorSidebar(props: AITutorSidebarProps) {
   const { activeTab } = props;
