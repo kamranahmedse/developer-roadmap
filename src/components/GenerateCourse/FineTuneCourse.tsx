@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { cn } from '../../lib/classname';
 
 type QuestionProps = {
@@ -70,7 +69,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
           }}
         />
         Tell us more to tailor the course (optional){' '}
-        <span className="ml-auto rounded-md bg-gray-400 px-2 py-0.5 text-xs text-white">
+        <span className="ml-auto rounded-md bg-gray-400 px-2 py-0.5 text-xs text-white hidden sm:block">
           recommended
         </span>
       </label>

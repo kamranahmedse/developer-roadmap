@@ -1,18 +1,23 @@
 ---
-import { AICourse } from '../../components/GenerateCourse/AICourse';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ChevronLeft, PlusCircle, BookOpen, Compass } from 'lucide-react';
 import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
-
+import { AICourse } from '../../components/GenerateCourse/AICourse';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { AITutorSidebar } from '../../components/AITutor/AITutorSidebar';
 const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
 ---
 
-<BaseLayout
+<SkeletonLayout
   title='Roadmap AI'
   noIndex={true}
   ogImageUrl={ogImage}
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
-  <div slot='course-announcement'></div>
-  <AICourse client:load />
-  <CheckSubscriptionVerification client:load />
-</BaseLayout>
+  <div class='flex flex-grow flex-row'>
+    <AITutorSidebar client:load activeTab='new' />
+    <div class='flex flex-grow flex-col'>
+      <AICourse client:load />
+      <CheckSubscriptionVerification client:load />
+    </div>
+  </div>
+</SkeletonLayout>
