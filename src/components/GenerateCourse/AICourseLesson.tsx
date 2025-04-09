@@ -70,6 +70,9 @@ type AICourseLessonProps = {
 
   isAIChatsOpen: boolean;
   setIsAIChatsOpen: (isOpen: boolean) => void;
+
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function AICourseLesson(props: AICourseLessonProps) {
@@ -91,6 +94,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
     isAIChatsOpen,
     setIsAIChatsOpen,
+
+    isForkable,
+    onForkCourse,
   } = props;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -108,8 +114,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
   >([
     {
       role: 'assistant',
-      content:
-        'Hey, I am your AI instructor. How can I help you today? 🤖',
+      content: 'Hey, I am your AI instructor. How can I help you today? 🤖',
       isDefault: true,
     },
   ]);
@@ -205,7 +210,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
           const questions = getQuestionsFromResult(result);
           setDefaultQuestions(questions);
-          
+
           const newResult = result.replace(
             /=START_QUESTIONS=.*?=END_QUESTIONS=/,
             '',
@@ -284,7 +289,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           <div className="relative mx-auto max-w-5xl">
             <div className="bg-white p-8 pb-0 max-lg:px-4 max-lg:pt-3">
               {(isGenerating || isLoading) && (
-                <div className="absolute right-6 top-6 flex items-center justify-center">
+                <div className="absolute top-6 right-6 flex items-center justify-center">
                   <Loader2Icon
                     size={18}
                     strokeWidth={3}
@@ -299,7 +304,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
 
                 {!isGenerating && !isLoading && (
-                  <div className="absolute top-2 right-2 lg:right-6 lg:top-6 flex items-center justify-between gap-2">
+                  <div className="absolute top-2 right-2 flex items-center justify-between gap-2 lg:top-6 lg:right-6">
                     <button
                       onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
                       className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
@@ -315,16 +320,25 @@ export function AICourseLesson(props: AICourseLessonProps) {
                       onRegenerateLesson={(prompt) => {
                         generateAiCourseContent(true, prompt);
                       }}
+                      isForkable={isForkable}
+                      onForkCourse={onForkCourse}
                     />
                     <button
                       disabled={isLoading || isTogglingDone}
                       className={cn(
-                        'flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
+                        'flex items-center gap-1.5 rounded-full bg-black py-1 pr-3 pl-2 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
                         isLessonDone
                           ? 'bg-red-500 hover:bg-red-600'
                           : 'bg-green-500 hover:bg-green-600',
                       )}
-                      onClick={() => toggleDone()}
+                      onClick={() => {
+                        if (isForkable) {
+                          onForkCourse();
+                          return;
+                        }
+
+                        toggleDone();
+                      }}
                     >
                       {isTogglingDone ? (
                         <>
@@ -355,13 +369,13 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 )}
               </div>
 
-              <h1 className="mb-6 text-balance text-3xl font-semibold max-lg:mb-3 max-lg:text-xl">
+              <h1 className="mb-6 text-3xl font-semibold text-balance max-lg:mb-3 max-lg:text-xl">
                 {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
               </h1>
 
               {!error && isLoggedIn() && (
                 <div
-                  className="course-content prose prose-lg mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800 max-lg:mt-4 max-lg:text-base max-lg:prose-h2:mt-3 max-lg:prose-h2:text-lg max-lg:prose-h3:text-base max-lg:prose-pre:px-3 max-lg:prose-pre:text-sm"
+                  className="course-content prose prose-lg prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800 max-lg:prose-h2:mt-3 max-lg:prose-h2:text-lg max-lg:prose-h3:text-base max-lg:prose-pre:px-3 max-lg:prose-pre:text-sm mt-8 max-w-full text-black max-lg:mt-4 max-lg:text-base"
                   dangerouslySetInnerHTML={{ __html: lessonHtml }}
                 />
               )}

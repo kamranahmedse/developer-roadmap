@@ -472,6 +472,10 @@ export function AICourseContent(props: AICourseContentProps) {
               onUpgrade={() => setShowUpgradeModal(true)}
               isAIChatsOpen={isAIChatsOpen}
               setIsAIChatsOpen={setIsAIChatsOpen}
+              isForkable={isForkable}
+              onForkCourse={() => {
+                setIsForkingCourse(true);
+              }}
             />
           )}
 
