@@ -1,5 +1,3 @@
-import { cn } from '../../lib/classname';
-
 type QuestionProps = {
   label: string;
   placeholder: string;
@@ -51,52 +49,31 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
     setHasFineTuneData,
   } = props;
 
-  return (
-    <div className="flex flex-col overflow-hidden transition-all">
-      <label
-        className={cn(
-          'group flex cursor-pointer select-none flex-row items-center gap-2.5 px-4 py-3 text-left text-gray-500 transition-colors hover:bg-gray-100 focus:outline-hidden',
-          hasFineTuneData && 'bg-gray-100',
-        )}
-      >
-        <input
-          id="fine-tune-checkbox"
-          type="checkbox"
-          className="h-4 w-4 group-hover:fill-current"
-          checked={hasFineTuneData}
-          onChange={() => {
-            setHasFineTuneData(!hasFineTuneData);
-          }}
-        />
-        Tell us more to tailor the course (optional){' '}
-        <span className="ml-auto rounded-md bg-gray-400 px-2 py-0.5 text-xs text-white hidden sm:block">
-          recommended
-        </span>
-      </label>
+  if (!hasFineTuneData) {
+    return null;
+  }
 
-      {hasFineTuneData && (
-        <div className="mt-0 flex flex-col">
-          <Question
-            label="Tell us about your self"
-            placeholder="e.g. I am a frontend developer and have good knowledge of HTML, CSS, and JavaScript."
-            value={about}
-            onChange={setAbout}
-            autoFocus={true}
-          />
-          <Question
-            label="What is your goal with this course?"
-            placeholder="e.g. I want to be able to build Node.js APIs with Express.js and MongoDB."
-            value={goal}
-            onChange={setGoal}
-          />
-          <Question
-            label="Custom Instructions (Optional)"
-            placeholder="Give additional instructions to the AI as if you were giving them to a friend."
-            value={customInstructions}
-            onChange={setCustomInstructions}
-          />
-        </div>
-      )}
+  return (
+    <div className="mt-0 flex flex-col">
+      <Question
+        label="Tell us about your self"
+        placeholder="e.g. I am a frontend developer and have good knowledge of HTML, CSS, and JavaScript."
+        value={about}
+        onChange={setAbout}
+        autoFocus={true}
+      />
+      <Question
+        label="What is your goal with this course?"
+        placeholder="e.g. I want to be able to build Node.js APIs with Express.js and MongoDB."
+        value={goal}
+        onChange={setGoal}
+      />
+      <Question
+        label="Custom Instructions (Optional)"
+        placeholder="Give additional instructions to the AI as if you were giving them to a friend."
+        value={customInstructions}
+        onChange={setCustomInstructions}
+      />
     </div>
   );
 }

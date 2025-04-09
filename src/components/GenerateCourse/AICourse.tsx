@@ -1,6 +1,5 @@
-import { Settings2Icon, WandIcon } from 'lucide-react';
+import { WandIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { FineTuneCourse } from './FineTuneCourse';
@@ -11,6 +10,7 @@ import {
   getLastSessionId,
   storeFineTuneData,
 } from '../../lib/ai';
+import { cn } from '../../lib/classname';
 
 export const difficultyLevels = [
   'beginner',
@@ -94,22 +94,46 @@ export function AICourse(props: AICourseProps) {
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask tutor to teach you..."
+            placeholder="e.g. JavaScript Promises, React Hooks, Go Routines etc"
             className="w-full rounded-md border-none bg-transparent px-4 pt-4 pb-8 text-gray-900 focus:outline-hidden max-sm:placeholder:text-base"
             maxLength={50}
           />
 
-          <div className="flex flex-row gap-2 px-4">
-            <div className="flex flex-row gap-2">
-              <DifficultyDropdown value={difficulty} onChange={setDifficulty} />
+          <div className="flex flex-row items-center justify-between gap-2 px-4 pb-4">
+            <div className="flex flex-row items-center gap-2">
+              <div className="flex flex-row gap-2">
+                <DifficultyDropdown
+                  value={difficulty}
+                  onChange={setDifficulty}
+                />
+              </div>
+              <label
+                htmlFor="fine-tune-checkbox"
+                className="flex cursor-pointer flex-row items-center gap-1 rounded-full bg-gray-100 px-4 py-1 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-700"
+              >
+                <input
+                  type="checkbox"
+                  checked={hasFineTuneData}
+                  onChange={() => setHasFineTuneData(!hasFineTuneData)}
+                  className="mr-1"
+                  id="fine-tune-checkbox"
+                />
+                Explain the course
+              </label>
             </div>
+
             <button
-              type="button"
-              onClick={() => setHasFineTuneData(!hasFineTuneData)}
-              className="flex px-2 py-1 bg-gray-100 rounded-full flex-row items-center gap-1 text-sm text-gray-500 hover:text-gray-700"
+              type="submit"
+              disabled={!keyword.trim()}
+              className={cn(
+                'flex items-center justify-center rounded-full px-4 py-1 text-white transition-colors text-sm',
+                !keyword.trim()
+                  ? 'cursor-not-allowed bg-gray-400'
+                  : 'bg-black hover:bg-gray-800',
+              )}
             >
-              <Settings2Icon size={16} />
-              Settings
+              <WandIcon size={18} className="mr-2" />
+              Generate Course
             </button>
           </div>
 
@@ -123,20 +147,6 @@ export function AICourse(props: AICourseProps) {
             setGoal={setGoal}
             setCustomInstructions={setCustomInstructions}
           />
-
-          <button
-            type="submit"
-            disabled={!keyword.trim()}
-            className={cn(
-              'mt-2 flex items-center justify-center rounded-md px-4 py-2 font-medium text-white transition-colors max-sm:text-sm',
-              !keyword.trim()
-                ? 'cursor-not-allowed bg-gray-400'
-                : 'bg-black hover:bg-gray-800',
-            )}
-          >
-            <WandIcon size={18} className="mr-2" />
-            Generate Course
-          </button>
         </form>
       </div>
     </div>
