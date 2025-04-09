@@ -1,98 +1,100 @@
 # If-Else / Switch / Goto
 
-## If-Else Statement
+C++ provides you with tools which helps you to control the way your program behaves (logic flows) based on how the user interact with your program. Here we will discuss about `if-else`, `switch` and `goto` are three common ways to guide the flow of logic in your code.
 
-The `if-else` statement allows conditional execution based on boolean expressions.
+## if-else
+
+Used to execute a block of code only if a certain condition is met
+
+**syntax**
 
 ```cpp
-#include <iostream>
-
-int main() {
-    int num = 10;
-
-    // Check if the number is positive, negative, or zero
-    if (num > 0) {
-        std::cout << "Number is positive" << std::endl;
-    } else if (num < 0) {
-        std::cout << "Number is negative" << std::endl;
-    } else {
-        std::cout << "Number is zero" << std::endl;
-    }
-    return 0;
+if(/*condition*/){
+//block of code
+}
+// else is executed when if Statement is false adding else with if is optional
+else{
+//block of code
 }
 ```
 
-### Explanation:
-- If `num` is greater than zero, it prints "Number is positive."
-- If `num` is less than zero, it prints "Number is negative."
-- Otherwise, it prints "Number is zero."
+if you want to check multiple conditions in a particular sequence you can use `else if` like this for example
 
----
+```cpp
+#include<iostream>
+int main (){
+  std::cout << "Enter a number: ";
+  std::cin >> number;
 
-## Switch Statement
+  if (number > 0) {
+      std::cout << "The number is positive." << std::endl;
+  } else if (number < 0) {
+      std::cout << "The number is negative." << std::endl;
+  } else {
+      std::cout << "The number is zero." << std::endl;
+  }
 
-The `switch` statement is used when multiple conditions depend on a single variable.
+  return 0;
+}
+```
 
+## switch:
+When we need to compare a single variable against multiple constant values, a switch statement can be used instead of multiple `if-else` blocks.
+
+**syntax**
 ```cpp
 #include <iostream>
 
 int main() {
-    int choice = 2;
+    int choice;
 
-    // Evaluating different cases based on the value of 'choice'
+    std::cout << "Enter a number (1-3): ";
+    std::cin >> choice;
+
     switch (choice) {
         case 1:
-            std::cout << "You chose option 1" << std::endl;
-            break; // Exit switch after executing this case
+            std::cout << "You chose One." << std::endl;
+            break;
         case 2:
-            std::cout << "You chose option 2" << std::endl;
+            std::cout << "You chose Two." << std::endl;
             break;
         case 3:
-            std::cout << "You chose option 3" << std::endl;
+            std::cout << "You chose Three." << std::endl;
             break;
         default:
-            std::cout << "Invalid choice" << std::endl;
+            std::cout << "Invalid choice." << std::endl;
     }
+
     return 0;
 }
 ```
+## Goto
+`goto` is a low-level control flow feature that allows unconditional jumps to a labeled part of the code. While it can be useful in specific scenarios, especially for breaking out of deeply nested loops or handling errors in C, it often leads to confusing and hard-to-maintain code if not used carefully.
 
-### Explanation:
-- Depending on the value of `choice`, a corresponding message is printed.
-- The `break` statement ensures that the control exits after the matched case.
-- If no cases match, the `default` case executes.
-
----
-
-## Goto Statement
-
-The `goto` statement allows jumping to a labeled statement within a function.
-
+**syntax**
 ```cpp
 #include <iostream>
 
 int main() {
-    int num = 5;
-    
-    // If condition is met, jump to 'label'
-    if (num < 10)
-        goto label;
-    
-    std::cout << "This will be skipped" << std::endl;
-    
-    label:
-    std::cout << "Jumped to label" << std::endl;
-    
+    std::cout << "Before goto\n";
+
+    goto skip;
+
+    std::cout << "This will be skipped\n";
+
+skip:
+    std::cout << "After label\n";
+
     return 0;
 }
+/* 
+  Output:
+  Before goto
+  After label
+*/
 ```
-
-### Explanation:
-- If `num` is less than 10, execution jumps to `label`.
-- The statement between `if` and `label:` is skipped.
-
 Visit the following resources to learn more:
 
-- [@video@if-else/The 'if-else' Statement in C++](https://www.youtube.com/watch?v=9-BjXs1vMSc)
-- [@video@switch/Learn C++ With Me - Switch Statement](https://www.youtube.com/watch?v=uOlLs1OYSSI)
-- [@video@goto/C++ Tutorial for Beginners - Break, Continue, and Goto](https://www.youtube.com/watch?v=ikGk4ZZ-uYE&t=14s)
+- [@video@The 'if-else' Statement in C++](https://www.youtube.com/watch?v=9-BjXs1vMSc)
+- [@video@Learn C++ With Me - Switch Statement](https://www.youtube.com/watch?v=uOlLs1OYSSI)
+- [@video@ why is it illegal to use "goto"?](https://youtu.be/AKJhThyTmQw?si=gjEqAsDZVMDGVAT2)
