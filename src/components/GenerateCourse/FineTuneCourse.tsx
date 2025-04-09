@@ -52,7 +52,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
   } = props;
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-lg border border-gray-200 transition-all">
+    <div className="flex flex-col overflow-hidden transition-all">
       <label
         className={cn(
           'group flex cursor-pointer select-none flex-row items-center gap-2.5 px-4 py-3 text-left text-gray-500 transition-colors hover:bg-gray-100 focus:outline-hidden',

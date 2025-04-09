@@ -11,7 +11,7 @@ export function AITutorLayout(props: AITutorLayoutProps) {
   return (
     <div className="flex flex-grow flex-row">
       <AITutorSidebar activeTab={activeTab} />
-      <div className="flex flex-grow flex-col bg-gray-100 px-4 py-4">
+      <div className="flex flex-grow h-screen overflow-y-scroll flex-col bg-gray-100 px-4 py-4">
         {children}
       </div>
     </div>

@@ -1,9 +1,10 @@
-import { SearchIcon, WandIcon } from 'lucide-react';
+import { WandIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { FineTuneCourse } from './FineTuneCourse';
+import { DifficultyDropdown } from '../AITutor/DifficultyDropdown';
 import {
   clearFineTuneData,
   getCourseFineTuneData,
@@ -71,7 +72,7 @@ export function AICourse(props: AICourseProps) {
   }
 
   return (
-    <div className="flex w-full max-w-3xl mx-auto flex-grow flex-col justify-center">
+    <div className="mx-auto flex w-full max-w-3xl flex-grow flex-col justify-center">
       <h1 className="mb-2.5 text-center text-4xl font-bold max-sm:mb-2 max-sm:text-left max-sm:text-xl">
         What can I help you learn?
       </h1>
@@ -79,59 +80,27 @@ export function AICourse(props: AICourseProps) {
         Enter a topic below to generate a personalized course for it
       </p>
 
-      <div className="rounded-lg border border-gray-200 bg-white p-6 max-sm:p-4">
+      <div className="rounded-lg border border-gray-300 bg-white">
         <form
-          className="flex flex-col gap-5"
+          className="flex flex-col"
           onSubmit={(e) => {
             e.preventDefault();
             onSubmit();
           }}
         >
-          <div className="flex flex-col">
-            <label
-              htmlFor="keyword"
-              className="mb-2.5 text-sm font-medium text-gray-700"
-            >
-              Course Topic
-            </label>
-            <div className="relative">
-              <div className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400">
-                <SearchIcon size={18} />
-              </div>
-              <input
-                id="keyword"
-                type="text"
-                value={keyword}
-                onChange={(e) => setKeyword(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="e.g., Algebra, JavaScript, Photography"
-                className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:ring-1 focus:ring-gray-500 focus:outline-hidden max-sm:placeholder:text-base"
-                maxLength={50}
-              />
-            </div>
-          </div>
+          <input
+            id="keyword"
+            type="text"
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Ask tutor to teach you..."
+            className="w-full rounded-md border-none bg-transparent px-4 pt-4 pb-8 text-gray-900 focus:outline-hidden max-sm:placeholder:text-base"
+            maxLength={50}
+          />
 
-          <div className="flex flex-col">
-            <label className="mb-2.5 text-sm font-medium text-gray-700">
-              Difficulty Level
-            </label>
-            <div className="flex gap-2 max-sm:flex-col max-sm:gap-1">
-              {difficultyLevels.map((level) => (
-                <button
-                  key={level}
-                  type="button"
-                  onClick={() => setDifficulty(level)}
-                  className={cn(
-                    'rounded-md border px-4 py-2 capitalize max-sm:text-sm',
-                    difficulty === level
-                      ? 'border-gray-800 bg-gray-800 text-white'
-                      : 'border-gray-200 bg-gray-100 text-gray-700 hover:bg-gray-200',
-                  )}
-                >
-                  {level}
-                </button>
-              ))}
-            </div>
+          <div className="flex flex-col px-4">
+            <DifficultyDropdown value={difficulty} onChange={setDifficulty} />
           </div>
 
           <FineTuneCourse
