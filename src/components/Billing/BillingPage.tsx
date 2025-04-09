@@ -42,7 +42,10 @@ export function BillingPage() {
   );
 
   const isCanceled =
-    billingDetails?.status === 'canceled' || billingDetails?.cancelAtPeriodEnd;
+    billingDetails?.status === 'canceled' ||
+    billingDetails?.status === 'incomplete_expired' ||
+    billingDetails?.cancelAtPeriodEnd;
+
   const isPastDue = billingDetails?.status === 'past_due';
   const isIncomplete = billingDetails?.status === 'incomplete';
 
