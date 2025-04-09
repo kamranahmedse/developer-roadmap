@@ -1,10 +1,4 @@
-import {
-  ChevronLeft,
-  PlusCircle,
-  BookOpen,
-  Compass,
-  CircleDotIcon,
-} from 'lucide-react';
+import { BookOpen, Bot, Compass, Plus, Star } from 'lucide-react';
 
 type AITutorSidebarProps = {
   activeTab: AITutorTab;
@@ -15,7 +9,7 @@ const sidebarItems = [
     key: 'new',
     label: 'New Course',
     href: '/ai',
-    icon: PlusCircle,
+    icon: Plus,
   },
   {
     key: 'courses',
@@ -27,7 +21,7 @@ const sidebarItems = [
     key: 'staff-picks',
     label: 'Staff Picks',
     href: '/ai/staff-picks',
-    icon: CircleDotIcon,
+    icon: Star,
   },
   {
     key: 'explore',
@@ -43,38 +37,34 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
   const { activeTab } = props;
 
   return (
-    <div className="flex w-[240px] flex-col border-r border-gray-200 bg-gradient-to-b from-white to-gray-50">
-      <a
-        href="https://roadmap.sh"
-        className="flex w-full items-center justify-start gap-1.5 border-b border-gray-200 px-5 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-black"
-      >
-        <ChevronLeft className="size-4" />
-        Back to <span className="font-semibold text-black">roadmap.sh</span>
-      </a>
-
-      <div className="px-6 pt-6 pb-2">
-        <h2 className="text-lg font-semibold text-gray-900">Learn with AI</h2>
-        <p className="mt-1 text-sm text-gray-500">
+    <aside className="hidden w-[255px] shrink-0 border-r border-slate-200 md:block">
+      <div className="flex flex-col items-start justify-center px-6 py-5">
+        <Bot className="mb-2 size-8 text-black" />
+        <h2 className="mb-0.5 text-base font-semibold text-black">AI Tutor</h2>
+        <p className="max-w-[150px] text-xs text-gray-500">
           Your personalized learning companion for any topic
         </p>
       </div>
 
-      <div className="flex-1 px-3 py-3">
-        <nav className="space-y-1">
-          {sidebarItems.map((item) => (
+      <ul className="space-y-1">
+        {sidebarItems.map((item) => (
+          <li key={item.key}>
             <a
-              key={item.key}
               href={item.href}
-              className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-all hover:bg-gray-100 hover:text-black ${
-                activeTab === item.key ? 'bg-gray-100 text-black' : ''
+              className={`font-regular flex w-full items-center border-r-2 px-5 py-2 text-sm transition-all ${
+                activeTab === item.key
+                  ? 'border-r-black bg-gray-100 text-black'
+                  : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
               }`}
             >
-              <item.icon className="size-4" />
-              {item.label}
+              <span className="flex grow items-center">
+                <item.icon className="mr-2 size-4" />
+                {item.label}
+              </span>
             </a>
-          ))}
-        </nav>
-      </div>
-    </div>
+          </li>
+        ))}
+      </ul>
+    </aside>
   );
 }
