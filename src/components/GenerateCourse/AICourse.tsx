@@ -73,7 +73,7 @@ export function AICourse(props: AICourseProps) {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-grow flex-col justify-center">
-      <h1 className="mb-2.5 text-center text-4xl font-bold max-sm:mb-2 max-sm:text-left max-sm:text-xl">
+      <h1 className="mb-2.5 text-center text-4xl font-semibold max-sm:mb-2 max-sm:text-left max-sm:text-xl">
         What can I help you learn?
       </h1>
       <p className="mb-6 text-center text-lg text-gray-600 max-sm:hidden max-sm:text-left max-sm:text-sm">
@@ -118,7 +118,7 @@ export function AICourse(props: AICourseProps) {
                   className="mr-1"
                   id="fine-tune-checkbox"
                 />
-                Explain the course
+                Explain more for better course
               </label>
             </div>
 
