@@ -12,14 +12,6 @@ type AICourseCardProps = {
 export function AICourseCard(props: AICourseCardProps) {
   const { course, showActions = true, showProgress = true } = props;
 
-  // Format date if available
-  const formattedDate = course.createdAt
-    ? new Date(course.createdAt).toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-      })
-    : null;
-
   // Map difficulty to color
   const difficultyColor =
     {
@@ -35,10 +27,10 @@ export function AICourseCard(props: AICourseCardProps) {
     totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-grow flex-col">
       <a
         href={`/ai/${course.slug}`}
-        className="hover:border-gray-3 00 group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50 min-h-full "
+        className="hover:border-gray-3 00 group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
       >
         <div className="flex items-center justify-between">
           <span

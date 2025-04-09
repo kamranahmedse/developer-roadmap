@@ -7,7 +7,7 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { AICourseCard } from './AICourseCard';
 import { useEffect, useState } from 'react';
-import { Gift, Loader2, User2 } from 'lucide-react';
+import { BookOpen, Gift } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
@@ -16,6 +16,8 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { getUrlParams, setUrlParams, deleteUrlParam } from '../../lib/browser';
 import { AICourseSearch } from './AICourseSearch';
 import { Pagination } from '../Pagination/Pagination';
+import { AILoadingState } from '../AITutor/AILoadingState';
+import { AITutorTallMessage } from '../AITutor/AITutorTallMessage';
 
 type UserCoursesListProps = {};
 
@@ -72,6 +74,43 @@ export function UserCoursesList(props: UserCoursesListProps) {
     }
   }, [pageState]);
 
+  if (isInitialLoading || isUserAiCoursesLoading) {
+    return (
+      <AILoadingState
+        title="Loading your courses"
+        subtitle="This may take a moment..."
+      />
+    );
+  }
+
+  if (!isLoggedIn()) {
+    return (
+      <AITutorTallMessage
+        title="Sign up or login"
+        subtitle="Takes 2s to sign up and generate your first course."
+        icon={BookOpen}
+        buttonText="Sign up or Login"
+        onButtonClick={() => {
+          showLoginPopup();
+        }}
+      />
+    );
+  }
+
+  if (courses.length === 0) {
+    return (
+      <AITutorTallMessage
+        title="No courses found"
+        subtitle="You haven't generated any courses yet."
+        icon={BookOpen}
+        buttonText="Create your first course"
+        onButtonClick={() => {
+          window.location.href = '/ai';
+        }}
+      />
+    );
+  }
+
   return (
     <>
       {showUpgradePopup && (
@@ -105,7 +144,7 @@ export function UserCoursesList(props: UserCoursesListProps) {
                   onClick={() => {
                     setShowUpgradePopup(true);
                   }}
-                  className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pl-1.5 pr-2 text-xs text-white"
+                  className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pr-2 pl-1.5 text-xs text-white"
                 >
                   <Gift className="size-4" />
                   Upgrade
@@ -127,46 +166,13 @@ export function UserCoursesList(props: UserCoursesListProps) {
         </div>
       </div>
 
-      {!isInitialLoading && !isUserAiCoursesLoading && !isAuthenticated && (
-        <div className="flex min-h-[152px] flex-col items-center justify-center rounded-lg border border-gray-200 bg-white px-6 py-4">
-          <User2 className="mb-2 size-8 text-gray-300" />
-          <p className="max-w-sm text-balance text-center text-gray-500">
-            <button
-              onClick={() => {
-                showLoginPopup();
-              }}
-              className="font-medium text-black underline underline-offset-2 hover:opacity-80"
-            >
-              Sign up (free and takes 2s) or login
-            </button>{' '}
-            to generate and save courses.
-          </p>
-        </div>
-      )}
-
-      {!isUserAiCoursesLoading && !isInitialLoading && courses.length === 0 && isAuthenticated && (
-        <div className="flex min-h-[152px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
-          <p className="text-sm text-gray-600">
-            You haven't generated any courses yet.
-          </p>
-        </div>
-      )}
-
-      {(isUserAiCoursesLoading || isInitialLoading) && (
-        <div className="flex min-h-[152px] items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white py-4">
-          <Loader2
-            className="size-4 animate-spin text-gray-400"
-            strokeWidth={2.5}
-          />
-          <p className="text-sm font-medium text-gray-600">Loading...</p>
-        </div>
-      )}
-
       {!isUserAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">
-          {courses.map((course) => (
-            <AICourseCard key={course._id} course={course} />
-          ))}
+          <div className="grid grid-cols-3 gap-2">
+            {courses.map((course) => (
+              <AICourseCard key={course._id} course={course} />
+            ))}
+          </div>
 
           <Pagination
             totalCount={userAiCourses?.totalCount || 0}
