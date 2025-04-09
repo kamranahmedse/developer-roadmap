@@ -1,4 +1,5 @@
-import { BookOpen, Bot, Compass, Plus, Star } from 'lucide-react';
+import { BookOpen, Compass, Plus, Star } from 'lucide-react';
+import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 
 type AITutorSidebarProps = {
   activeTab: AITutorTab;
@@ -39,8 +40,15 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
   return (
     <aside className="hidden w-[255px] shrink-0 border-r border-slate-200 md:block">
       <div className="flex flex-col items-start justify-center px-6 py-5">
-        <Bot className="mb-2 size-8 text-black" />
-        <h2 className="mb-0.5 text-base font-semibold text-black">AI Tutor</h2>
+        <div className="flex flex-row items-center gap-1">
+          <AITutorLogo className="size-11 text-gray-500" color="black" />
+        </div>
+        <div className="my-3 flex flex-col">
+          <h2 className="-mb-px text-base font-semibold text-black">
+            AI Tutor
+          </h2>
+          <span className="text-xs text-gray-500">by roadmap.sh</span>
+        </div>
         <p className="max-w-[150px] text-xs text-gray-500">
           Your personalized learning companion for any topic
         </p>
