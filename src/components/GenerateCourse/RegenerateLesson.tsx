@@ -7,10 +7,12 @@ import { ModifyCoursePrompt } from './ModifyCoursePrompt';
 
 type RegenerateLessonProps = {
   onRegenerateLesson: (prompt?: string) => void;
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function RegenerateLesson(props: RegenerateLessonProps) {
-  const { onRegenerateLesson } = props;
+  const { onRegenerateLesson, isForkable, onForkCourse } = props;
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
@@ -37,6 +39,11 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
           onClose={() => setShowPromptModal(false)}
           onSubmit={(prompt) => {
             setShowPromptModal(false);
+            if (isForkable) {
+              onForkCourse();
+              return;
+            }
+
             onRegenerateLesson(prompt);
           }}
         />
@@ -52,9 +59,15 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
           <PenSquare className="text-current" size={16} strokeWidth={2.5} />
         </button>
         {isDropdownVisible && (
-          <div className="absolute right-0 top-full min-w-[170px] overflow-hidden rounded-md border border-gray-200 bg-white">
+          <div className="absolute top-full right-0 min-w-[170px] overflow-hidden rounded-md border border-gray-200 bg-white">
             <button
               onClick={() => {
+                setIsDropdownVisible(false);
+                if (isForkable) {
+                  onForkCourse();
+                  return;
+                }
+
                 onRegenerateLesson();
               }}
               className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
@@ -69,6 +82,11 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
             <button
               onClick={() => {
                 setIsDropdownVisible(false);
+                if (isForkable) {
+                  onForkCourse();
+                  return;
+                }
+
                 setShowPromptModal(true);
               }}
               className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"

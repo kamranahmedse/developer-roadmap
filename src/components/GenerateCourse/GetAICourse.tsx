@@ -102,6 +102,7 @@ export function GetAICourse(props: GetAICourseProps) {
       courseSlug={courseSlug}
       error={error}
       onRegenerateOutline={handleRegenerateCourse}
+      creatorId={aiCourse?.userId}
     />
   );
 }
