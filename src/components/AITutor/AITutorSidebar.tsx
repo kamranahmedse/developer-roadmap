@@ -24,9 +24,9 @@ const sidebarItems = [
     icon: BookOpen,
   },
   {
-    key: 'stuff-picks',
-    label: 'Stuff Picks',
-    href: '/ai/stuff-picks',
+    key: 'staff-picks',
+    label: 'Staff Picks',
+    href: '/ai/staff-picks',
     icon: CircleDotIcon,
   },
   {

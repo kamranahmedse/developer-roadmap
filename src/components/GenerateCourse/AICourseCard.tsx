@@ -38,7 +38,7 @@ export function AICourseCard(props: AICourseCardProps) {
     <div className="relative">
       <a
         href={`/ai/${course.slug}`}
-        className="hover:border-gray-3 00 group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
+        className="hover:border-gray-3 00 group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50 min-h-full "
       >
         <div className="flex items-center justify-between">
           <span

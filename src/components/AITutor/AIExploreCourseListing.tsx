@@ -56,7 +56,7 @@ export function AIExploreCourseListing(props: AIExploreCourseListingProps) {
         courses &&
         courses.length > 0 &&
         !error && (
-          <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {courses.map((course) => (
               <AICourseCard
                 key={course._id}
