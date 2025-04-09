@@ -1,4 +1,4 @@
-import { WandIcon } from 'lucide-react';
+import { Settings2Icon, WandIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { isLoggedIn } from '../../lib/jwt';
@@ -99,8 +99,18 @@ export function AICourse(props: AICourseProps) {
             maxLength={50}
           />
 
-          <div className="flex flex-col px-4">
-            <DifficultyDropdown value={difficulty} onChange={setDifficulty} />
+          <div className="flex flex-row gap-2 px-4">
+            <div className="flex flex-row gap-2">
+              <DifficultyDropdown value={difficulty} onChange={setDifficulty} />
+            </div>
+            <button
+              type="button"
+              onClick={() => setHasFineTuneData(!hasFineTuneData)}
+              className="flex px-2 py-1 bg-gray-100 rounded-full flex-row items-center gap-1 text-sm text-gray-500 hover:text-gray-700"
+            >
+              <Settings2Icon size={16} />
+              Settings
+            </button>
           </div>
 
           <FineTuneCourse

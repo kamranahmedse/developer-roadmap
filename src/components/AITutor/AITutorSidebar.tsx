@@ -47,7 +47,9 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
           <h2 className="-mb-px text-base font-semibold text-black">
             AI Tutor
           </h2>
-          <span className="text-xs text-gray-500">by roadmap.sh</span>
+          <span className="text-xs text-gray-500">
+            by <a href="/" className="hover:underline underline-offset-2">roadmap.sh</a>
+          </span>
         </div>
         <p className="max-w-[150px] text-xs text-gray-500">
           Your personalized learning companion for any topic
