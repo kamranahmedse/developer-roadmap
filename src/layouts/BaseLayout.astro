@@ -2,6 +2,11 @@
 import '../styles/global.css';
 
 import Analytics from '../components/Analytics/Analytics.astro';
+import Clarity from '../components/Analytics/Clarity.astro';
+import GoogleAd from '../components/Analytics/GoogleAd.astro';
+import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
+import Hubspot from '../components/Analytics/Hubspot.astro';
+import RedditPixel from '../components/Analytics/RedditPixel.astro';
 import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import { CommandMenu } from '../components/CommandMenu/CommandMenu';
@@ -9,17 +14,12 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
-import { Toaster } from '../components/Toast';
 import { PageSponsors } from '../components/PageSponsors/PageSponsors';
-import { siteConfig } from '../lib/config';
 import { PageVisit } from '../components/PageVisit/PageVisit';
-import type { ResourceType } from '../lib/resource-progress';
-import ChangelogBanner from '../components/ChangelogBanner.astro';
-import Clarity from '../components/Analytics/Clarity.astro';
-import RedditPixel from '../components/Analytics/RedditPixel.astro';
-import GoogleAd from '../components/Analytics/GoogleAd.astro';
-import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
 import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
+import { Toaster } from '../components/Toast';
+import { siteConfig } from '../lib/config';
+import type { ResourceType } from '../lib/resource-progress';
 
 export interface Props {
   title: string;
@@ -166,6 +166,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Clarity />
     <RedditPixel />
     <GoogleAd />
+    <Hubspot />
   </head>
   <body class='flex min-h-screen flex-col'>
     <slot name='course-announcement'>
