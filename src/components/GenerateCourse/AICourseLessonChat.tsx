@@ -221,23 +221,26 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
       minSize={20}
       id="course-chat-content"
       order={2}
-      className="relative h-full max-lg:fixed max-lg:inset-0 max-lg:data-[chat-state=open]:flex max-lg:data-[chat-state=closed]:hidden"
+      className="relative h-full max-lg:fixed! max-lg:inset-0! max-lg:data-[chat-state=closed]:hidden max-lg:data-[chat-state=open]:flex"
       data-chat-state={isAIChatsOpen ? 'open' : 'closed'}
     >
       <div
-        className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white data-[state=open]:flex data-[state=closed]:hidden"
+        className="absolute inset-y-0 right-0 z-20 flex w-full flex-col overflow-hidden bg-white data-[state=closed]:hidden data-[state=open]:flex"
         data-state={isAIChatsOpen ? 'open' : 'closed'}
       >
         <button
           onClick={onClose}
-          className="absolute right-2 top-2 z-20 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
+          className="absolute top-2 right-2 z-20 hidden rounded-full p-1 text-gray-400 hover:text-black max-lg:block"
         >
           <XIcon className="size-4 stroke-[2.5]" />
         </button>
 
         <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
           <h4 className="flex items-center gap-2 text-base font-medium">
-            <Bot className="size-5 shrink-0 text-black relative -top-[1px]" strokeWidth={2.5} />
+            <Bot
+              className="relative -top-[1px] size-5 shrink-0 text-black"
+              strokeWidth={2.5}
+            />
             AI Instructor
           </h4>
           <button
@@ -278,7 +281,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                       />
 
                       {chat.isDefault && defaultQuestions?.length > 1 && (
-                        <div className="mb-1 mt-0.5">
+                        <div className="mt-0.5 mb-1">
                           <p className="mb-2 text-xs font-normal text-gray-500">
                             Some questions you might have about this lesson.
                           </p>
@@ -442,7 +445,7 @@ function CapabilityCard({
     >
       <div className="flex items-center gap-2">
         {icon}
-        <span className="text-[13px] font-medium leading-none text-black">
+        <span className="text-[13px] leading-none font-medium text-black">
           {title}
         </span>
       </div>
