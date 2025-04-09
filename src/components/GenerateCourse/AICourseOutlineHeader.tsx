@@ -10,11 +10,20 @@ type AICourseOutlineHeaderProps = {
   onRegenerateOutline: (prompt?: string) => void;
   viewMode: AICourseViewMode;
   setViewMode: (mode: AICourseViewMode) => void;
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
-  const { course, isLoading, onRegenerateOutline, viewMode, setViewMode } =
-    props;
+  const {
+    course,
+    isLoading,
+    onRegenerateOutline,
+    viewMode,
+    setViewMode,
+    isForkable,
+    onForkCourse,
+  } = props;
 
   return (
     <div
@@ -24,18 +33,22 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
       )}
     >
       <div className="max-lg:hidden">
-        <h2 className="mb-1 text-balance text-2xl font-bold max-lg:text-lg max-lg:leading-tight">
+        <h2 className="mb-1 text-2xl font-bold text-balance max-lg:text-lg max-lg:leading-tight">
           {course.title || 'Loading course ..'}
         </h2>
-        <p className="text-sm capitalize text-gray-500">
+        <p className="text-sm text-gray-500 capitalize">
           {course.title ? course.difficulty : 'Please wait ..'}
         </p>
       </div>
 
-      <div className="absolute right-3 top-3 flex gap-2 max-lg:relative max-lg:right-0 max-lg:top-0 max-lg:w-full max-lg:flex-row-reverse max-lg:justify-between">
+      <div className="absolute top-3 right-3 flex gap-2 max-lg:relative max-lg:top-0 max-lg:right-0 max-lg:w-full max-lg:flex-row-reverse max-lg:justify-between">
         {!isLoading && (
           <>
-            <RegenerateOutline onRegenerateOutline={onRegenerateOutline} />
+            <RegenerateOutline
+              onRegenerateOutline={onRegenerateOutline}
+              isForkable={isForkable}
+              onForkCourse={onForkCourse}
+            />
             <div className="mr-1 flex rounded-lg border border-gray-200 bg-white p-0.5">
               <button
                 onClick={() => setViewMode('outline')}
@@ -55,7 +68,14 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
                 <span>Outline</span>
               </button>
               <button
-                onClick={() => setViewMode('roadmap')}
+                onClick={() => {
+                  if (isForkable) {
+                    onForkCourse();
+                    return;
+                  }
+
+                  setViewMode('roadmap');
+                }}
                 className={cn(
                   'flex items-center gap-1 rounded-md px-2 py-1 text-sm transition-colors',
                   viewMode === 'roadmap'
