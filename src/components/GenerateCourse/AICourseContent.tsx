@@ -8,6 +8,7 @@ import {
   Map,
   MessageCircleOffIcon,
   MessageCircleIcon,
+  GitForkIcon,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { type AiCourse } from '../../lib/ai';
@@ -327,6 +328,17 @@ export function AICourseContent(props: AICourseContentProps) {
               onUpgrade={() => setShowUpgradeModal(true)}
               onShowLimits={() => setShowAILimitsPopup(true)}
             />
+            {isForkable && (
+              <button
+                className="hidden items-center justify-center gap-1 rounded-md bg-yellow-400 px-4 py-1 text-sm font-medium underline-offset-2 hover:bg-yellow-500 lg:flex"
+                onClick={() => {
+                  setIsForkingCourse(true);
+                }}
+              >
+                <GitForkIcon className="size-4" />
+                Fork
+              </button>
+            )}
           </div>
         </div>
       </header>
