@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
-import { ArrowRightIcon, BookOpen, Play } from 'lucide-react';
+import { ArrowRightIcon, MousePointerClick, Play } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
 import {
@@ -178,7 +178,15 @@ export function BuyButton(props: BuyButtonProps) {
       return;
     }
 
-    window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`;
+    window?.fireEvent({
+      action: `${SQL_COURSE_SLUG}_demo_started`,
+      category: 'course',
+      label: `${SQL_COURSE_SLUG} Course Demo Started`,
+    });
+
+    setTimeout(() => {
+      window.location.href = `${import.meta.env.PUBLIC_COURSE_APP_URL}/${SQL_COURSE_SLUG}`;
+    }, 200);
   }
 
   const courseLoginPopup = isLoginPopupOpen && (
@@ -195,7 +203,7 @@ export function BuyButton(props: BuyButtonProps) {
             onClose={() => setIsVideoModalOpen(false)}
           />
         )}
-        <div className="flex flex-row">
+        <div className="flex flex-col gap-2 md:flex-row md:gap-0">
           <button
             onClick={onBuyClick}
             disabled={isLoadingPricing}
@@ -236,8 +244,8 @@ export function BuyButton(props: BuyButtonProps) {
               className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full"
             >
               <span className="relative flex items-center gap-2">
-                <BookOpen className="h-5 w-5" />
-                Read Sample
+                <MousePointerClick className="h-5 w-5" />
+                Access Demo
               </span>
             </button>
           )}
