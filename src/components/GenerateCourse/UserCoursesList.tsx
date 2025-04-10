@@ -1,23 +1,22 @@
 import { useQuery } from '@tanstack/react-query';
+import { BookOpen } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 import {
-  getAiCourseLimitOptions,
   listUserAiCoursesOptions,
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
-import { queryClient } from '../../stores/query-client';
-import { AICourseCard } from './AICourseCard';
-import { useEffect, useState } from 'react';
-import { BookOpen, Gift } from 'lucide-react';
-import { isLoggedIn } from '../../lib/jwt';
-import { showLoginPopup } from '../../lib/popup';
-import { cn } from '../../lib/classname';
 import { useIsPaidUser } from '../../queries/billing';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { getUrlParams, setUrlParams, deleteUrlParam } from '../../lib/browser';
-import { AICourseSearch } from './AICourseSearch';
-import { Pagination } from '../Pagination/Pagination';
+import { queryClient } from '../../stores/query-client';
 import { AILoadingState } from '../AITutor/AILoadingState';
+import { AITutorHeader } from '../AITutor/AITutorHeader';
 import { AITutorTallMessage } from '../AITutor/AITutorTallMessage';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { Pagination } from '../Pagination/Pagination';
+import { AICourseCard } from './AICourseCard';
+import { AICourseSearch } from './AICourseSearch';
 
 type UserCoursesListProps = {};
 
@@ -31,12 +30,6 @@ export function UserCoursesList(props: UserCoursesListProps) {
     query: '',
   });
 
-  const { data: limits, isLoading: isLimitsLoading } = useQuery(
-    getAiCourseLimitOptions(),
-    queryClient,
-  );
-
-  const { used, limit } = limits ?? { used: 0, limit: 0 };
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
@@ -49,8 +42,6 @@ export function UserCoursesList(props: UserCoursesListProps) {
   }, [userAiCourses]);
 
   const courses = userAiCourses?.data ?? [];
-  const isAuthenticated = isLoggedIn();
-  const limitUsedPercentage = Math.round((used / limit) * 100);
 
   useEffect(() => {
     const queryParams = getUrlParams();
@@ -116,55 +107,24 @@ export function UserCoursesList(props: UserCoursesListProps) {
       {showUpgradePopup && (
         <UpgradeAccountModal onClose={() => setShowUpgradePopup(false)} />
       )}
-      <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
-        <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold">
-            <span className="max-md:hidden">Your </span>Courses
-          </h2>
-        </div>
 
-        <div className="flex items-center gap-2">
-          {used > 0 && limit > 0 && !isPaidUserLoading && (
-            <div
-              className={cn(
-                'pointer-events-none flex items-center gap-2 opacity-0 transition-opacity',
-                {
-                  'pointer-events-auto opacity-100': !isPaidUser,
-                },
-              )}
-            >
-              <p className="flex items-center text-sm text-yellow-600">
-                <span className="max-md:hidden">
-                  {limitUsedPercentage}% of daily limit used{' '}
-                </span>
-                <span className="inline md:hidden">
-                  {limitUsedPercentage}% used
-                </span>
-                <button
-                  onClick={() => {
-                    setShowUpgradePopup(true);
-                  }}
-                  className="ml-1.5 flex items-center gap-1 rounded-full bg-yellow-600 py-0.5 pr-2 pl-1.5 text-xs text-white"
-                >
-                  <Gift className="size-4" />
-                  Upgrade
-                </button>
-              </p>
-            </div>
-          )}
-
-          <AICourseSearch
-            value={pageState?.query || ''}
-            onChange={(value) => {
-              setPageState({
-                ...pageState,
-                query: value,
-                currPage: '1',
-              });
-            }}
-          />
-        </div>
-      </div>
+      <AITutorHeader
+        title="Your Courses"
+        isPaidUser={isPaidUser}
+        isPaidUserLoading={isPaidUserLoading}
+        setShowUpgradePopup={setShowUpgradePopup}
+      >
+        <AICourseSearch
+          value={pageState?.query || ''}
+          onChange={(value) => {
+            setPageState({
+              ...pageState,
+              query: value,
+              currPage: '1',
+            });
+          }}
+        />
+      </AITutorHeader>
 
       {!isUserAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">

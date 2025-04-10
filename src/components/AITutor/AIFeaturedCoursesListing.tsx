@@ -4,10 +4,13 @@ import {
 } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
-import { Loader2 } from 'lucide-react';
 import { getUrlParams, setUrlParams, deleteUrlParam } from '../../lib/browser';
 import { AICourseCard } from '../GenerateCourse/AICourseCard';
 import { Pagination } from '../Pagination/Pagination';
+import { AILoadingState } from './AILoadingState';
+import { AITutorTallMessage } from './AITutorTallMessage';
+import { BookOpen } from 'lucide-react';
+import { AITutorHeader } from './AITutorHeader';
 
 type AIFeaturedCoursesListingProps = {};
 
@@ -47,34 +50,45 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
     }
   }, [pageState]);
 
-  return (
-    <>
-      <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
-        <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold">Staff Picks</h2>
-        </div>
-      </div>
+  if (isInitialLoading || isFeaturedAiCoursesLoading) {
+    return (
+      <AILoadingState
+        title="Loading featured courses"
+        subtitle="This may take a moment..."
+      />
+    );
+  }
 
-      {(isFeaturedAiCoursesLoading || isInitialLoading) && (
-        <div className="flex min-h-[152px] items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white py-4">
-          <Loader2
-            className="size-4 animate-spin text-gray-400"
-            strokeWidth={2.5}
-          />
-          <p className="text-sm font-medium text-gray-600">Loading...</p>
-        </div>
-      )}
+  if (courses.length === 0) {
+    return (
+      <AITutorTallMessage
+        title="No featured courses"
+        subtitle="There are no featured courses available at the moment."
+        icon={BookOpen}
+        buttonText="Browse all courses"
+        onButtonClick={() => {
+          window.location.href = '/ai';
+        }}
+      />
+    );
+  }
+
+  return (
+    <div className="w-full">
+      <AITutorHeader title="Featured Courses" />
 
       {!isFeaturedAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">
-          {courses.map((course) => (
-            <AICourseCard
-              key={course._id}
-              course={course}
-              showActions={false}
-              showProgress={false}
-            />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {courses.map((course) => (
+              <AICourseCard
+                key={course._id}
+                course={course}
+                showActions={false}
+                showProgress={false}
+              />
+            ))}
+          </div>
 
           <Pagination
             totalCount={featuredAiCourses?.totalCount || 0}
@@ -98,6 +112,6 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
             </p>
           </div>
         )}
-    </>
+    </div>
   );
 }
