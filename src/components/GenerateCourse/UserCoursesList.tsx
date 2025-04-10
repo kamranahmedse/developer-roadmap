@@ -8,7 +8,6 @@ import {
   listUserAiCoursesOptions,
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
-import { useIsPaidUser } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { AILoadingState } from '../AITutor/AILoadingState';
 import { AITutorHeader } from '../AITutor/AITutorHeader';
@@ -18,9 +17,7 @@ import { Pagination } from '../Pagination/Pagination';
 import { AICourseCard } from './AICourseCard';
 import { AICourseSearch } from './AICourseSearch';
 
-type UserCoursesListProps = {};
-
-export function UserCoursesList(props: UserCoursesListProps) {
+export function UserCoursesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
@@ -29,8 +26,6 @@ export function UserCoursesList(props: UserCoursesListProps) {
     currPage: '1',
     query: '',
   });
-
-  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
     listUserAiCoursesOptions(pageState),
@@ -110,9 +105,7 @@ export function UserCoursesList(props: UserCoursesListProps) {
 
       <AITutorHeader
         title="Your Courses"
-        isPaidUser={isPaidUser}
-        isPaidUserLoading={isPaidUserLoading}
-        setShowUpgradePopup={setShowUpgradePopup}
+        onUpgradeClick={() => setShowUpgradePopup(true)}
       >
         <AICourseSearch
           value={pageState?.query || ''}

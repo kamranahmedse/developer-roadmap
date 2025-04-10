@@ -2,25 +2,19 @@ import { useQuery } from '@tanstack/react-query';
 import { AITutorLimits } from './AITutorLimits';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
+import { useIsPaidUser } from '../../queries/billing';
 
 type AITutorHeaderProps = {
   title: string;
-  isPaidUser: boolean;
-  isPaidUserLoading: boolean;
-  setShowUpgradePopup: (show: boolean) => void;
+  onUpgradeClick: () => void;
   children?: React.ReactNode;
 };
 
 export function AITutorHeader(props: AITutorHeaderProps) {
-  const {
-    title,
-    isPaidUser,
-    isPaidUserLoading,
-    setShowUpgradePopup,
-    children,
-  } = props;
+  const { title, onUpgradeClick, children } = props;
 
   const { data: limits } = useQuery(getAiCourseLimitOptions(), queryClient);
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { used, limit } = limits ?? { used: 0, limit: 0 };
 
@@ -36,7 +30,7 @@ export function AITutorHeader(props: AITutorHeaderProps) {
           limit={limit}
           isPaidUser={isPaidUser}
           isPaidUserLoading={isPaidUserLoading}
-          onUpgradeClick={() => setShowUpgradePopup(true)}
+          onUpgradeClick={onUpgradeClick}
         />
 
         {children}

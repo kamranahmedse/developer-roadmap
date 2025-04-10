@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react';
 import { AlertCircle, Loader2 } from 'lucide-react';
 import { AICourseCard } from '../GenerateCourse/AICourseCard';
 
-type AIExploreCourseListingProps = {};
-
-export function AIExploreCourseListing(props: AIExploreCourseListingProps) {
+export function AIExploreCourseListing() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
 
   const {

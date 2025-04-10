@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import {
-  listFeaturedAiCoursesOptions, type ListUserAiCoursesQuery
+  listFeaturedAiCoursesOptions,
+  type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
@@ -11,11 +12,11 @@ import { AILoadingState } from './AILoadingState';
 import { AITutorTallMessage } from './AITutorTallMessage';
 import { BookOpen } from 'lucide-react';
 import { AITutorHeader } from './AITutorHeader';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
-type AIFeaturedCoursesListingProps = {};
-
-export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
+export function AIFeaturedCoursesListing() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
+  const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
   const [pageState, setPageState] = useState<ListUserAiCoursesQuery>({
     perPage: '20',
@@ -75,11 +76,18 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
 
   return (
     <div className="w-full">
-      <AITutorHeader title="Featured Courses" />
+      {showUpgradePopup && (
+        <UpgradeAccountModal onClose={() => setShowUpgradePopup(false)} />
+      )}
+
+      <AITutorHeader
+        title="Featured Courses"
+        onUpgradeClick={() => setShowUpgradePopup(true)}
+      />
 
       {!isFeaturedAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
             {courses.map((course) => (
               <AICourseCard
                 key={course._id}
