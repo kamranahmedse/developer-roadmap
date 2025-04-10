@@ -7,7 +7,7 @@ Spring Boot follows a layered architecture in which each layer communicates with
 - **Persistence Layer**: The persistence layer contains all the storage logic and translates business objects from and to database rows.
 - **Database Layer**: In the database layer, CRUD (create, retrieve, update, delete) operations are performed.
 
-For more information, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Spring Boot Architecture – Detailed Explanation](https://www.interviewbit.com/blog/spring-boot-architecture)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

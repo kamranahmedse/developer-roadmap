@@ -9,6 +9,6 @@ There are mainly four states of the Hibernate Lifecycle :
 - Detached State
 - Removed State
 
-For more resources, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Hibernate Entity Lifecycle & and its state](https://www.baeldung.com/hibernate-entity-lifecycle)

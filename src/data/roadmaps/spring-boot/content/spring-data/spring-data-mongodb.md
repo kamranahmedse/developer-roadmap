@@ -4,7 +4,7 @@ Spring Data for MongoDB is part of the umbrella Spring Data project which aims t
 
 The Spring Data MongoDB project provides integration with the MongoDB document database. Key functional areas of Spring Data MongoDB are a POJO centric model for interacting with a MongoDB DBCollection and easily writing a Repository style data access layer.
 
-For more resources on spring data mongodb, visit the following links:
+Visit the following resources to learn more:
 
 - [@official@Spring Data MongoDB](https://spring.io/projects/spring-data-mongodb)
 - [@article@Introduction to Spring Data MongoDB](https://www.baeldung.com/spring-data-mongodb-tutorial)

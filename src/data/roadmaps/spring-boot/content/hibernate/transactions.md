@@ -4,7 +4,7 @@ A transaction simply represents a unit of work. In such case, if one step fails,
 
 In hibernate framework, we have Transaction interface that defines the unit of work. It maintains abstraction from the transaction implementation (JTA,JDBC).
 
-For more information, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Hibernate Transaction Management](https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html)
 - [@article@Hibernate Transaction](https://www.w3schools.blog/hibernate-transaction-management)

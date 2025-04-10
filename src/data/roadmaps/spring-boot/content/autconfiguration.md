@@ -4,4 +4,4 @@ Spring Boot's Autoconfiguration is a powerful and convenient feature that makes 
 
 For more information, visit the following links:
 
-- [@article@Auto-configuration using Spring Boot](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-auto-configuration.html)
+- [@official@Auto-configuration using Spring Boot](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-auto-configuration.html)
