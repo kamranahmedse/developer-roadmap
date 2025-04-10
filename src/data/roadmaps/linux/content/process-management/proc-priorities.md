@@ -9,7 +9,7 @@ By understanding and managing proc priorities, you can optimize system performan
 Here's a simple command in the Linux terminal to display the process ID, priority, and user for all processes:
 
 ```sh
-ps -eo pid,pri,user
+ps -eo pid,pri,user,comm
 ``` 
 
 To change the priority of any process, you can use the `renice` command:
