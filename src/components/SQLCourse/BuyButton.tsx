@@ -38,13 +38,14 @@ type BuyButtonProps = {
 export function BuyButton(props: BuyButtonProps) {
   const { variant = 'main' } = props;
 
+  const [isFakeLoading, setIsFakeLoading] = useState(true);
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const toast = useToast();
 
   const isTesting = getUrlParams()['testing'] === '1';
 
-  const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
+  const { data: coursePricing, isLoading: isLoadingPrice } = useQuery(
     coursePriceOptions({ courseSlug: SQL_COURSE_SLUG }),
     queryClient,
   );
@@ -138,8 +139,17 @@ export function BuyButton(props: BuyButtonProps) {
     deleteUrlParam(COURSE_PURCHASE_SUCCESS_PARAM);
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsFakeLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const isLoadingPricing =
-    isLoadingCourse ||
+    isFakeLoading ||
+    isLoadingPrice ||
     !coursePricing ||
     isLoadingCourseProgress ||
     isCreatingCheckoutSession;
