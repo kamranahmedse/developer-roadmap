@@ -22,7 +22,7 @@ export function UserCoursesList() {
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
   const [pageState, setPageState] = useState<ListUserAiCoursesQuery>({
-    perPage: '10',
+    perPage: '21',
     currPage: '1',
     query: '',
   });

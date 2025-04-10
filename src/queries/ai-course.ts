@@ -154,7 +154,7 @@ export function useListExploreAiCourses() {
         return httpGet<ListExploreAiCoursesResponse>(
           `/v1-list-explore-ai-courses`,
           {
-            perPage: '20',
+            perPage: '21',
             currPage: String(pageParam),
           },
         );
