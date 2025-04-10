@@ -126,8 +126,8 @@ export function BillingPage() {
             {isIncomplete && (
               <BillingWarning
                 icon={AlertCircle}
-                message="Your subscription is incomplete."
-                buttonText="Update payment information."
+                message="Your subscription is incomplete "
+                buttonText="please pay invoice on Stripe."
                 onButtonClick={() => {
                   createCustomerPortal({});
                 }}
@@ -215,7 +215,7 @@ export function BillingPage() {
               )}
 
               <div className="mt-8 flex gap-3 max-sm:flex-col">
-                {!isCanceled && (
+                {!isCanceled && !isIncomplete && (
                   <button
                     className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-hidden max-sm:grow"
                     onClick={() => {
