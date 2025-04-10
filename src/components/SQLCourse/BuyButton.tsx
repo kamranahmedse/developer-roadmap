@@ -42,6 +42,8 @@ export function BuyButton(props: BuyButtonProps) {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const toast = useToast();
 
+  const isTesting = getUrlParams()['testing'] === '1';
+
   const { data: coursePricing, isLoading: isLoadingCourse } = useQuery(
     coursePriceOptions({ courseSlug: SQL_COURSE_SLUG }),
     queryClient,
@@ -238,10 +240,10 @@ export function BuyButton(props: BuyButtonProps) {
               </span>
             )}
           </button>
-          {!isLoadingPricing && !isAlreadyEnrolled && (
+          {isTesting &&!isLoadingPricing && !isAlreadyEnrolled && (
             <button
               onClick={onReadSampleClick}
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full"
+              className="group relative hidden lg:inline-flex items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full"
             >
               <span className="relative flex items-center gap-2">
                 <MousePointerClick className="h-5 w-5" />
