@@ -1,8 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import {
-  listFeaturedAiCoursesOptions,
-  listUserAiCoursesOptions,
-  type ListUserAiCoursesQuery,
+  listFeaturedAiCoursesOptions, type ListUserAiCoursesQuery
 } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useEffect, useState } from 'react';
@@ -53,7 +51,7 @@ export function AIFeaturedCoursesListing(props: AIFeaturedCoursesListingProps) {
     <>
       <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
         <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold">Stuff Picks</h2>
+          <h2 className="text-lg font-semibold">Staff Picks</h2>
         </div>
       </div>
 

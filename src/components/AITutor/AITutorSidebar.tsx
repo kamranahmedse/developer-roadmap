@@ -1,4 +1,4 @@
-import { BookOpen, Compass, Plus, Star } from 'lucide-react';
+import { BookOpen, Compass, Plus, Star, Users2 } from 'lucide-react';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 
 type AITutorSidebarProps = {
@@ -25,9 +25,9 @@ const sidebarItems = [
     icon: Star,
   },
   {
-    key: 'explore',
-    label: 'Explore',
-    href: '/ai/explore',
+    key: 'community',
+    label: 'Community',
+    href: '/ai/community',
     icon: Compass,
   },
 ];
@@ -48,7 +48,10 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
             AI Tutor
           </h2>
           <span className="text-xs text-gray-500">
-            by <a href="/" className="hover:underline underline-offset-2">roadmap.sh</a>
+            by{' '}
+            <a href="/" className="underline-offset-2 hover:underline">
+              roadmap.sh
+            </a>
           </span>
         </div>
         <p className="max-w-[150px] text-xs text-gray-500">

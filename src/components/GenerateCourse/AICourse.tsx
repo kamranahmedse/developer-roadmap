@@ -118,7 +118,7 @@ export function AICourse(props: AICourseProps) {
                   className="mr-1"
                   id="fine-tune-checkbox"
                 />
-                Explain more for better course
+                Explain more for a better course
               </label>
             </div>
 
