@@ -12,6 +12,7 @@ type CourseLoginPopupProps = {
 };
 
 export const CHECKOUT_AFTER_LOGIN_KEY = 'checkoutAfterLogin';
+export const SAMPLE_AFTER_LOGIN_KEY = 'sampleAfterLogin';
 
 export function CourseLoginPopup(props: CourseLoginPopupProps) {
   const { onClose: parentOnClose, checkoutAfterLogin = true } = props;
@@ -27,6 +28,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
     // if user didn't login and closed the popup, we remove the checkoutAfterLogin flag
     // so that login from other buttons on course page will trigger purchase
     localStorage.removeItem(CHECKOUT_AFTER_LOGIN_KEY);
+    localStorage.removeItem(SAMPLE_AFTER_LOGIN_KEY);
     parentOnClose();
   }
 
@@ -40,7 +42,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
   if (emailNature) {
     const emailHeader = (
       <div className="mb-7 text-center">
-        <p className="mb-3.5 pt-2 text-2xl font-semibold leading-5 text-slate-900">
+        <p className="mb-3.5 pt-2 text-2xl leading-5 font-semibold text-slate-900">
           {emailNature === 'login'
             ? 'Login to your account'
             : 'Create an account'}
@@ -80,7 +82,7 @@ export function CourseLoginPopup(props: CourseLoginPopupProps) {
   return (
     <Modal onClose={onClose} bodyClassName="p-5 h-auto">
       <div className="mb-7 text-center">
-        <p className="mb-3.5 pt-2 text-2xl font-semibold leading-5 text-slate-900">
+        <p className="mb-3.5 pt-2 text-2xl leading-5 font-semibold text-slate-900">
           Create or login to Enroll
         </p>
         <p className="mt-2 text-sm leading-4 text-slate-600">
