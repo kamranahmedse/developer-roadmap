@@ -240,17 +240,22 @@ export function BuyButton(props: BuyButtonProps) {
               </span>
             )}
           </button>
-          {isTesting &&!isLoadingPricing && !isAlreadyEnrolled && (
-            <button
-              onClick={onReadSampleClick}
-              className="group relative hidden lg:inline-flex items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full"
-            >
-              <span className="relative flex items-center gap-2">
-                <MousePointerClick className="h-5 w-5" />
-                Access Demo
-              </span>
-            </button>
-          )}
+          <button
+            onClick={onReadSampleClick}
+            data-demo-button
+            className={cn(
+              'group relative hidden items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full',
+              {
+                'hidden lg:inline-flex':
+                  isTesting && !isLoadingPricing && !isAlreadyEnrolled,
+              },
+            )}
+          >
+            <span className="relative flex items-center gap-2">
+              <MousePointerClick className="h-5 w-5" />
+              Access Demo
+            </span>
+          </button>
         </div>
 
         {!isLoadingPricing && (
