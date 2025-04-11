@@ -4,5 +4,4 @@ In PostgreSQL, a database is a named collection of tables, indexes, views, store
 
 Learn more from the following resources:
 
-- [@official@Managing Databases](https://www.postgresql.org/docs/8.1/managing-databases.html)
-- [@official@Managing a Database](https://www.postgresql.org/docs/7.1/start-manage-db.html)
+- [@official@Managing Databases](https://www.postgresql.org/docs/current/managing-databases.html)
