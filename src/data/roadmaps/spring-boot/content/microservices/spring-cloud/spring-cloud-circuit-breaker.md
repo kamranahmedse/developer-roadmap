@@ -2,7 +2,7 @@
 
 Spring Cloud Circuit Breaker is a library for managing the fault tolerance of microservices-based applications using the Circuit Breaker pattern. The Circuit Breaker pattern is a design pattern that helps to prevent cascading failures and improve the resilience of distributed systems. It does this by introducing a "circuit breaker" proxy in front of a service that can detect when the service is unresponsive or has failed, and stop routing traffic to it temporarily, in order to allow the service to recover.
 
-For more resources, visit the following links:
+Visit the following resources to learn more:
 
 - [@official@Spring Cloud Circuit Breaker](https://spring.io/projects/spring-cloud-circuitbreaker)
 - [@article@Quick Guide to Spring Cloud Circuit Breaker](https://www.baeldung.com/spring-cloud-circuit-breaker)
