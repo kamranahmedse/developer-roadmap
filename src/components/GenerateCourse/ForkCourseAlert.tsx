@@ -17,13 +17,13 @@ export function ForkCourseAlert(props: ForkCourseAlertProps) {
   }
 
   return (
-    <div className="mb-4 flex items-center justify-between gap-2 rounded-lg bg-yellow-200 p-3 text-black">
+    <div className="mb-3.5 lg:-mt-2.5 max-w-5xl mx-auto flex items-center justify-between gap-2 rounded-lg bg-yellow-200 p-3 text-black">
       <p className="text-sm text-balance">
         To start tracking your progress, you can fork the course.
       </p>
 
       <button
-        className="flex shrink-0 items-center gap-2 rounded-md bg-yellow-400 p-1 px-2 text-sm text-black"
+        className="flex shrink-0 items-center gap-2 rounded-md bg-yellow-400 py-1.5 px-3 text-sm text-black"
         onClick={onForkCourse}
       >
         <GitForkIcon className="size-3.5" />
