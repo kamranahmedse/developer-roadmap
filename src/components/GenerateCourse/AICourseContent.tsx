@@ -248,7 +248,10 @@ export function AICourseContent(props: AICourseContentProps) {
             aria-label="Back to generator"
           >
             <ChevronLeft className="size-4" strokeWidth={2.5} />
-            Back {isViewingLesson ? 'to Outline' : 'to AI Tutor'}
+            Back{' '}
+            <span className="hidden lg:inline">
+              {isViewingLesson ? 'to Outline' : 'to AI Tutor'}
+            </span>
           </a>
           <div className="flex items-center gap-2">
             <div className="flex flex-row lg:hidden">
@@ -439,7 +442,6 @@ export function AICourseContent(props: AICourseContentProps) {
             courseSlug &&
             (viewMode === 'outline' || viewMode === 'roadmap') && (
               <ForkCourseAlert
-                courseSlug={courseSlug}
                 creatorId={creatorId}
                 onForkCourse={() => {
                   setIsForkingCourse(true);
@@ -459,6 +461,7 @@ export function AICourseContent(props: AICourseContentProps) {
           {viewMode === 'module' && (
             <AICourseLesson
               courseSlug={courseSlug!}
+              creatorId={creatorId}
               progress={aiCourseProgress}
               activeModuleIndex={activeModuleIndex}
               totalModules={totalModules}

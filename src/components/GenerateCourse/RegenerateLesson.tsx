@@ -49,7 +49,7 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
         />
       )}
 
-      <div className="relative mr-2 flex items-center" ref={ref}>
+      <div className="relative lg:mr-1 flex items-center" ref={ref}>
         <button
           className={cn('rounded-full p-1 text-gray-400 hover:text-black', {
             'text-black': isDropdownVisible,

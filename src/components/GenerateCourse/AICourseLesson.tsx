@@ -3,6 +3,7 @@ import {
   CheckIcon,
   ChevronLeft,
   ChevronRight,
+  GitForkIcon,
   Loader2Icon,
   LockIcon,
   MessageCircleIcon,
@@ -55,6 +56,7 @@ function getQuestionsFromResult(result: string) {
 type AICourseLessonProps = {
   courseSlug: string;
   progress: string[];
+  creatorId?: string;
 
   activeModuleIndex: number;
   totalModules: number;
@@ -79,6 +81,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
   const {
     courseSlug,
     progress = [],
+    creatorId,
 
     activeModuleIndex,
     totalModules,
@@ -298,13 +301,13 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
               )}
 
-              <div className="mb-4 flex items-center justify-between">
+              <div className="mb-4 flex max-sm:flex-col-reverse justify-between">
                 <div className="text-sm text-gray-500">
                   Lesson {activeLessonIndex + 1} of {totalLessons}
                 </div>
 
                 {!isGenerating && !isLoading && (
-                  <div className="absolute top-2 right-2 flex items-center justify-between gap-2 lg:top-6 lg:right-6">
+                  <div className="md:absolute top-2 right-2 flex items-center max-sm:justify-end gap-2 lg:top-6 lg:right-6 mb-3">
                     <button
                       onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
                       className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
@@ -323,6 +326,16 @@ export function AICourseLesson(props: AICourseLessonProps) {
                       isForkable={isForkable}
                       onForkCourse={onForkCourse}
                     />
+
+                    {isForkable && (
+                      <button
+                        onClick={onForkCourse}
+                        className="flex items-center gap-1.5 rounded-full border bg-gray-100 py-1 pr-4 pl-3 text-sm text-black hover:bg-gray-200 disabled:opacity-50 max-lg:text-xs"
+                      >
+                        <GitForkIcon className="size-3.5" />
+                        Fork Course
+                      </button>
+                    )}
                     <button
                       disabled={isLoading || isTogglingDone}
                       className={cn(
