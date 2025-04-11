@@ -41,7 +41,7 @@ export function ExploreAISorting(props: ExploreAISortingProps) {
       ref={dropdownRef}
     >
       <button
-        className="flex w-full items-center justify-between gap-2 rounded-md border px-2 py-15 text-sm"
+        className="flex w-full items-center justify-between gap-2 rounded-md border px-2 text-sm"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{selectedValue?.label}</span>
