@@ -48,13 +48,19 @@ export function ForkCourseConfirmation(props: ForkCourseConfirmationProps) {
   );
 
   return (
-    <Modal onClose={isPending ? () => {} : onClose}>
+    <Modal
+      onClose={isPending ? () => {} : onClose}
+      wrapperClassName="h-auto items-start"
+      overlayClassName="items-start md:items-center"
+    >
       <div className="flex flex-col items-center p-4 pt-8">
-        <GitForkIcon className="size-14 text-gray-500" />
-        <p className="mt-2 text-xl font-medium">Fork Course</p>
-        <p className="mt-1 text-center text-balance text-gray-500">
-          Forking this course will create a new course with the same content.
-        </p>
+        <GitForkIcon className="size-14 text-gray-300" />
+        <div className="my-5 text-center">
+          <p className="text-xl font-semibold">Fork Course</p>
+          <p className="mt-1 text-center text-balance text-gray-500">
+            Create a copy of this course
+          </p>
+        </div>
 
         <div className="mt-4 grid w-full grid-cols-2 gap-2">
           <button
