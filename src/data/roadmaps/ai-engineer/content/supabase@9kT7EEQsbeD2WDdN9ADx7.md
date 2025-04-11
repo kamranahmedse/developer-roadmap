@@ -4,5 +4,5 @@ Supabase Vector is an extension of the Supabase platform, specifically designed 
 
 Learn more from the following resources:
 
-- [@official@Supabase Vector](https://supabase.com/vector)
+- [@official@Supabase Vector](https://supabase.com/docs/guides/ai)
 - [@video@Supabase Vector: The Postgres Vector database](https://www.youtube.com/watch?v=MDxEXKkxf2Q)
