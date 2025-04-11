@@ -477,6 +477,11 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 <div>
                   <button
                     onClick={() => {
+                      if (!isLoggedIn()) {
+                        onGoToNextLesson();
+                        return;
+                      }
+
                       if (!isLessonDone) {
                         toggleDone(undefined, {
                           onSuccess: () => {
