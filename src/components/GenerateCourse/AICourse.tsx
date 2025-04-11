@@ -72,11 +72,11 @@ export function AICourse(props: AICourseProps) {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-grow flex-col justify-center">
-      <h1 className="mb-2.5 text-center text-4xl font-semibold max-sm:mb-2 max-sm:text-left max-sm:text-xl">
+    <div className="mx-auto flex w-full max-w-3xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-0">
+      <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
         What can I help you learn?
       </h1>
-      <p className="mb-6 text-center text-lg text-gray-600 max-sm:hidden max-sm:text-left max-sm:text-sm">
+      <p className="mb-3 text-balance text-center text-lg text-gray-600 max-md:text-left max-md:text-sm lg:mb-6">
         Enter a topic below to generate a personalized course for it
       </p>
 
@@ -100,7 +100,7 @@ export function AICourse(props: AICourseProps) {
             maxLength={50}
           />
 
-          <div className="flex flex-row items-center justify-between gap-2 px-4 pb-4">
+          <div className="flex flex-col items-start justify-between gap-2 px-4 pb-4 md:flex-row md:items-center">
             <div className="flex flex-row items-center gap-2">
               <div className="flex flex-row gap-2">
                 <DifficultyDropdown
@@ -119,7 +119,8 @@ export function AICourse(props: AICourseProps) {
                   className="mr-1"
                   id="fine-tune-checkbox"
                 />
-                Explain more for a better course
+                Explain more
+                <span className="hidden md:inline"> for a better course</span>
               </label>
             </div>
 
@@ -127,7 +128,7 @@ export function AICourse(props: AICourseProps) {
               type="submit"
               disabled={!keyword.trim()}
               className={cn(
-                'flex items-center justify-center rounded-full px-4 py-1 text-sm text-white transition-colors',
+                'hidden items-center justify-center rounded-full px-4 py-1 text-sm text-white transition-colors md:flex',
                 !keyword.trim()
                   ? 'cursor-not-allowed bg-gray-400'
                   : 'bg-black hover:bg-gray-800',
@@ -148,6 +149,20 @@ export function AICourse(props: AICourseProps) {
             setGoal={setGoal}
             setCustomInstructions={setCustomInstructions}
           />
+
+          <button
+            type="submit"
+            disabled={!keyword.trim()}
+            className={cn(
+              'mx-4 mb-3 flex items-center justify-center rounded-full px-4 py-1 text-sm text-white transition-colors md:hidden',
+              !keyword.trim()
+                ? 'cursor-not-allowed bg-gray-400'
+                : 'bg-black hover:bg-gray-800',
+            )}
+          >
+            <WandIcon size={18} className="mr-2" />
+            Generate Course
+          </button>
         </form>
       </div>
     </div>
