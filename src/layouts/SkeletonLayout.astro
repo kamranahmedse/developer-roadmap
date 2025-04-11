@@ -1,17 +1,12 @@
 ---
-import Varify from '../components/Analytics/Varify.astro';
 import BaseLayout, { type Props as BaseLayoutProps } from './BaseLayout.astro';
 
-export interface Props extends BaseLayoutProps {
-  hasVarify?: boolean;
-}
+export interface Props extends BaseLayoutProps {}
 
 const props = Astro.props;
 ---
 
 <BaseLayout {...props}>
-  {props.hasVarify && <Varify slot='after-header' />}
-
   <div slot='course-announcement'></div>
   <div slot='page-header'></div>
   <slot />

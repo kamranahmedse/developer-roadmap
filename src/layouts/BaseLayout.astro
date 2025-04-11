@@ -36,6 +36,7 @@ export interface Props {
   jsonLd?: Record<string, unknown>[];
   resourceId?: string;
   resourceType?: ResourceType;
+  hasVarify?: boolean;
 }
 
 const {
@@ -52,6 +53,7 @@ const {
   initialLoadingMessage = '',
   resourceId,
   resourceType,
+  hasVarify = false,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -151,6 +153,18 @@ const gaPageIdentifier = Astro.url.pathname
 
     <link rel='preconnect' href='https://www.google-analytics.com/' />
     <link rel='preconnect' href='https://api.roadmap.sh/' />
+
+    {
+      hasVarify && (
+        <Fragment>
+          <script>
+            window.varify = window.varify || {};
+            window.varify.iid = 4013;
+          </script>
+          <script src='https://app.varify.io/varify.js' />
+        </Fragment>
+      )
+    }
 
     <slot name='after-header' />
     {
