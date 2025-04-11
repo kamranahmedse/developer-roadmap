@@ -4,6 +4,6 @@ npm provides various features to help install and maintain the project's depende
 
 Visit the following resources to learn more:
 
-- [@video@How to Update All NPM Dependencies At Once](https://www.youtube.com/watch?v=Ghdfdq17JAY)
 - [@official@Updating packages downloaded from the registry](https://docs.npmjs.com/updating-packages-downloaded-from-the-registry)
+- [@video@How to Update All NPM Dependencies At Once](https://www.youtube.com/watch?v=Ghdfdq17JAY)
 - [@article@How to Update Npm Packages Safely With Npm Check Updates](https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/)

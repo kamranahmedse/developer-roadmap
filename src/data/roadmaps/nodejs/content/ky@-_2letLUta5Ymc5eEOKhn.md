@@ -5,4 +5,4 @@ Ky is a tiny and elegant HTTP client based on the browser Fetch API. Ky targets 
 Visit the following resources to learn more:
 
 - [@opensource@Ky Docs](https://github.com/sindresorhus/ky)
-- [@official@npmjs.org](https://www.npmjs.com/package/ky/v/0.9.0)
+- [@official@Ky Package](https://www.npmjs.com/package/ky/v/0.9.0)
