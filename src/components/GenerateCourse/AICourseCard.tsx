@@ -5,18 +5,12 @@ import { AICourseActions } from './AICourseActions';
 
 type AICourseCardProps = {
   course: AICourseWithLessonCount;
+  showActions?: boolean;
+  showProgress?: boolean;
 };
 
 export function AICourseCard(props: AICourseCardProps) {
-  const { course } = props;
-
-  // Format date if available
-  const formattedDate = course.createdAt
-    ? new Date(course.createdAt).toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-      })
-    : null;
+  const { course, showActions = true, showProgress = true } = props;
 
   // Map difficulty to color
   const difficultyColor =
@@ -33,10 +27,10 @@ export function AICourseCard(props: AICourseCardProps) {
     totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-grow flex-col">
       <a
         href={`/ai/${course.slug}`}
-        className="hover:border-gray-3 00 group relative flex w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
+        className="hover:border-gray-3 00 group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
       >
         <div className="flex items-center justify-between">
           <span
@@ -56,7 +50,7 @@ export function AICourseCard(props: AICourseCardProps) {
             <span>{totalTopics} lessons</span>
           </div>
 
-          {totalTopics > 0 && (
+          {showProgress && totalTopics > 0 && (
             <div className="flex items-center">
               <div className="mr-2 h-1.5 w-16 overflow-hidden rounded-full bg-gray-200">
                 <div
@@ -72,8 +66,8 @@ export function AICourseCard(props: AICourseCardProps) {
         </div>
       </a>
 
-      {course.slug && (
-        <div className="absolute right-2 top-2">
+      {showActions && course.slug && (
+        <div className="absolute top-2 right-2">
           <AICourseActions courseSlug={course.slug} />
         </div>
       )}

@@ -1,7 +1,5 @@
 ---
-import { ChevronLeft, PlusCircle, BookOpen, Compass } from 'lucide-react';
-import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
-import { AICourse } from '../../components/GenerateCourse/AICourse';
+import { AIExploreCourseListing } from '../../components/AITutor/AIExploreCourseListing';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { AITutorLayout } from '../../components/AITutor/AITutorLayout';
 const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
@@ -13,8 +11,7 @@ const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
   ogImageUrl={ogImage}
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
-  <AITutorLayout activeTab='new' client:load>
-    <AICourse client:load />
-    <CheckSubscriptionVerification client:load />
+  <AITutorLayout activeTab='community' client:load>
+    <AIExploreCourseListing client:load />
   </AITutorLayout>
 </SkeletonLayout>

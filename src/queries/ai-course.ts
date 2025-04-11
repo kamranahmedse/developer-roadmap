@@ -83,7 +83,7 @@ type ListUserAiCoursesResponse = {
 
 export function listUserAiCoursesOptions(
   params: ListUserAiCoursesQuery = {
-    perPage: '10',
+    perPage: '21',
     currPage: '1',
     query: '',
   },
@@ -97,5 +97,71 @@ export function listUserAiCoursesOptions(
       );
     },
     enabled: !!isLoggedIn(),
+  };
+}
+
+type ListFeaturedAiCoursesParams = {};
+
+type ListFeaturedAiCoursesQuery = {
+  perPage?: string;
+  currPage?: string;
+};
+
+type ListFeaturedAiCoursesResponse = {
+  data: AICourseWithLessonCount[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listFeaturedAiCoursesOptions(
+  params: ListFeaturedAiCoursesQuery = {
+    perPage: '21',
+    currPage: '1',
+  },
+) {
+  return {
+    queryKey: ['featured-ai-courses', params],
+    queryFn: () => {
+      return httpGet<ListFeaturedAiCoursesResponse>(
+        `/v1-list-featured-ai-courses`,
+        params,
+      );
+    },
+  };
+}
+
+type ListExploreAiCoursesParams = {};
+
+export type ListExploreAiCoursesQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+type ListExploreAiCoursesResponse = {
+  data: AICourseWithLessonCount[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listExploreAiCoursesOptions(
+  params: ListExploreAiCoursesQuery = {
+    perPage: '21',
+    currPage: '1',
+    query: '',
+  },
+) {
+  return {
+    queryKey: ['explore-ai-courses', params],
+    queryFn: () => {
+      return httpGet<ListExploreAiCoursesResponse>(
+        `/v1-list-explore-ai-courses`,
+        params,
+      );
+    },
   };
 }
