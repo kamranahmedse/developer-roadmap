@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
-import { AlertCircle } from 'lucide-react';
 import { AICourseCard } from '../GenerateCourse/AICourseCard';
 import { AILoadingState } from './AILoadingState';
 import { AITutorHeader } from './AITutorHeader';
@@ -12,6 +11,9 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { Pagination } from '../Pagination/Pagination';
+import { AICourseSearch } from '../GenerateCourse/AICourseSearch';
+import { AITutorTallMessage } from './AITutorTallMessage';
+import { BookOpen } from 'lucide-react';
 
 export function AIExploreCourseListing() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -20,10 +22,14 @@ export function AIExploreCourseListing() {
   const [pageState, setPageState] = useState<ListExploreAiCoursesQuery>({
     perPage: '21',
     currPage: '1',
+    query: '',
   });
 
-  const { data: exploreAiCourses, isFetching: isExploreAiCoursesLoading } =
-    useQuery(listExploreAiCoursesOptions(pageState), queryClient);
+  const {
+    data: exploreAiCourses,
+    isFetching: isExploreAiCoursesLoading,
+    isRefetching: isExploreAiCoursesRefetching,
+  } = useQuery(listExploreAiCoursesOptions(pageState), queryClient);
 
   useEffect(() => {
     setIsInitialLoading(false);
@@ -49,26 +55,6 @@ export function AIExploreCourseListing() {
     }
   }, [pageState]);
 
-  if (isInitialLoading || isExploreAiCoursesLoading) {
-    return (
-      <AILoadingState
-        title="Loading courses"
-        subtitle="This may take a moment..."
-      />
-    );
-  }
-
-  if (!exploreAiCourses?.data) {
-    return (
-      <div className="flex min-h-[152px] items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white py-4">
-        <AlertCircle className="size-4 text-red-500" />
-        <p className="text-sm font-medium text-red-600">
-          Error loading courses.
-        </p>
-      </div>
-    );
-  }
-
   return (
     <>
       {showUpgradePopup && (
@@ -78,9 +64,27 @@ export function AIExploreCourseListing() {
       <AITutorHeader
         title="Explore Courses"
         onUpgradeClick={() => setShowUpgradePopup(true)}
-      />
+      >
+        <AICourseSearch
+          value={pageState?.query || ''}
+          onChange={(value) => {
+            setPageState({
+              ...pageState,
+              query: value,
+              currPage: '1',
+            });
+          }}
+        />
+      </AITutorHeader>
 
-      {courses && courses.length > 0 && (
+      {(isInitialLoading || isExploreAiCoursesLoading) && (
+        <AILoadingState
+          title="Loading courses"
+          subtitle="This may take a moment..."
+        />
+      )}
+
+      {!isExploreAiCoursesLoading && courses && courses.length > 0 && (
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-3 gap-2">
             {courses.map((course) => (
@@ -106,11 +110,19 @@ export function AIExploreCourseListing() {
         </div>
       )}
 
-      {!isExploreAiCoursesLoading && courses.length === 0 && (
-        <div className="flex min-h-[114px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
-          <p className="text-sm text-gray-600">No courses found.</p>
-        </div>
-      )}
+      {!isInitialLoading &&
+        !isExploreAiCoursesLoading &&
+        courses.length === 0 && (
+          <AITutorTallMessage
+            title="No courses found"
+            subtitle="Try a different search or check back later."
+            icon={BookOpen}
+            buttonText="Create your first course"
+            onButtonClick={() => {
+              window.location.href = '/ai';
+            }}
+          />
+        )}
     </>
   );
 }

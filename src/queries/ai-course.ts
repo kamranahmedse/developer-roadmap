@@ -83,7 +83,7 @@ type ListUserAiCoursesResponse = {
 
 export function listUserAiCoursesOptions(
   params: ListUserAiCoursesQuery = {
-    perPage: '10',
+    perPage: '21',
     currPage: '1',
     query: '',
   },
@@ -117,7 +117,7 @@ type ListFeaturedAiCoursesResponse = {
 
 export function listFeaturedAiCoursesOptions(
   params: ListFeaturedAiCoursesQuery = {
-    perPage: '10',
+    perPage: '21',
     currPage: '1',
   },
 ) {
@@ -137,6 +137,7 @@ type ListExploreAiCoursesParams = {};
 export type ListExploreAiCoursesQuery = {
   perPage?: string;
   currPage?: string;
+  query?: string;
 };
 
 type ListExploreAiCoursesResponse = {
@@ -151,6 +152,7 @@ export function listExploreAiCoursesOptions(
   params: ListExploreAiCoursesQuery = {
     perPage: '21',
     currPage: '1',
+    query: '',
   },
 ) {
   return {

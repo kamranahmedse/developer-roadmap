@@ -12,7 +12,7 @@ export function AITutorTallMessage(props: AITutorTallMessageProps) {
   const { title, subtitle, icon: Icon, buttonText, onButtonClick } = props;
 
   return (
-    <div className="flex min-h-full flex-grow flex-col items-center justify-center rounded-lg">
+    <div className="flex flex-grow flex-col items-center justify-center rounded-lg border border-gray-200 bg-white p-8">
       <Icon className="size-12 text-gray-300" />
       <div className="my-4 text-center">
         <h2 className="mb-2 text-xl font-semibold">{title}</h2>
