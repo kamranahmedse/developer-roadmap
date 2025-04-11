@@ -25,11 +25,11 @@ export function ForkCourseAlert(props: ForkCourseAlertProps) {
       )}
     >
       <p className="text-sm text-balance">
-        To start tracking your progress, you can fork the course.
+        Fork the course to track progress and make changes to the course.
       </p>
 
       <button
-        className="flex shrink-0 items-center gap-2 rounded-md bg-yellow-400 px-3 py-1.5 text-sm text-black"
+        className="flex shrink-0 items-center gap-2 rounded-md hover:bg-yellow-500 bg-yellow-400 px-3 py-1.5 text-sm text-black"
         onClick={onForkCourse}
       >
         <GitForkIcon className="size-3.5" />

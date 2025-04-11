@@ -1,4 +1,4 @@
-import { GitForkIcon, Loader2Icon } from 'lucide-react';
+import { Copy, GitForkIcon, Loader2Icon } from 'lucide-react';
 import { Modal } from '../Modal';
 import type { AICourseDocument } from '../../queries/ai-course';
 import { useMutation } from '@tanstack/react-query';
@@ -50,37 +50,46 @@ export function ForkCourseConfirmation(props: ForkCourseConfirmationProps) {
   return (
     <Modal
       onClose={isPending ? () => {} : onClose}
-      wrapperClassName="h-auto items-start"
+      wrapperClassName="h-auto items-start max-w-md w-full"
       overlayClassName="items-start md:items-center"
     >
-      <div className="flex flex-col items-center p-4 pt-8">
-        <GitForkIcon className="size-14 text-gray-300" />
-        <div className="my-5 text-center">
-          <p className="text-xl font-semibold">Fork Course</p>
-          <p className="mt-1 text-center text-balance text-gray-500">
-            Create a copy of this course
+      <div className="relative flex flex-col items-center p-8">
+        <div className="p-4">
+          <Copy className="size-12 text-gray-300" strokeWidth={1.5} />
+        </div>
+
+        <div className="mt-6 text-center">
+          <h2 className="text-2xl font-bold text-gray-900">Fork Course</h2>
+          <p className="mt-3 text-center leading-relaxed text-balance text-gray-600">
+            Create a copy of this course to track your progress and make changes
+            to suit your learning style.
           </p>
         </div>
 
-        <div className="mt-4 grid w-full grid-cols-2 gap-2">
+        <div className="mt-8 grid w-full grid-cols-2 gap-3">
           <button
             disabled={isPending}
-            className="flex items-center justify-center gap-2 rounded-md bg-gray-100 p-2 hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+            onClick={onClose}
+            className="flex items-center justify-center gap-2 rounded-lg border border-gray-200 px-4 py-2.5 font-medium text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
             Cancel
           </button>
 
           <button
             disabled={isPending}
-            className="flex h-10 items-center justify-center gap-2 rounded-md bg-black p-2 text-white hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
-            onClick={() => {
-              forkCourse();
-            }}
+            className="flex hover:opacity-80 items-center justify-center gap-2 rounded-lg bg-black px-4 py-2.5 font-medium text-white transition-all hover:bg-gray-900 disabled:cursor-not-allowed disabled:opacity-50"
+            onClick={() => forkCourse()}
           >
             {isPending ? (
-              <Loader2Icon className="size-4 animate-spin" />
+              <>
+                <Loader2Icon className="size-4 animate-spin" />
+                <span>Forking...</span>
+              </>
             ) : (
-              'Fork Course'
+              <>
+                <GitForkIcon className="size-4" />
+                <span>Fork Course</span>
+              </>
             )}
           </button>
         </div>
