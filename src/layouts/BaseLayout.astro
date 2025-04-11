@@ -157,11 +157,11 @@ const gaPageIdentifier = Astro.url.pathname
     {
       hasVarify && (
         <Fragment>
-          <script>
+          <script is:inline>
             window.varify = window.varify || {};
             window.varify.iid = 4013;
           </script>
-          <script src='https://app.varify.io/varify.js' />
+          <script is:inline src='https://app.varify.io/varify.js' />
         </Fragment>
       )
     }
