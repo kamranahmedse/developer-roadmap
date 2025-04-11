@@ -69,11 +69,6 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
               </button>
               <button
                 onClick={() => {
-                  if (isForkable) {
-                    onForkCourse();
-                    return;
-                  }
-
                   setViewMode('roadmap');
                 }}
                 className={cn(

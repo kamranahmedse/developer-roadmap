@@ -40,6 +40,7 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from './Resizeable';
+import { showLoginPopup } from '../../lib/popup';
 
 function getQuestionsFromResult(result: string) {
   const matchedQuestions = result.match(
@@ -301,13 +302,13 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
               )}
 
-              <div className="mb-4 flex max-sm:flex-col-reverse justify-between">
+              <div className="mb-4 flex justify-between max-sm:flex-col-reverse">
                 <div className="text-sm text-gray-500">
                   Lesson {activeLessonIndex + 1} of {totalLessons}
                 </div>
 
                 {!isGenerating && !isLoading && (
-                  <div className="md:absolute top-2 right-2 flex items-center max-sm:justify-end gap-2 lg:top-6 lg:right-6 mb-3">
+                  <div className="top-2 right-2 mb-3 flex items-center gap-2 max-sm:justify-end md:absolute lg:top-6 lg:right-6">
                     <button
                       onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
                       className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
@@ -345,6 +346,11 @@ export function AICourseLesson(props: AICourseLessonProps) {
                           : 'bg-green-500 hover:bg-green-600',
                       )}
                       onClick={() => {
+                        if (!isLoggedIn()) {
+                          showLoginPopup();
+                          return;
+                        }
+
                         if (isForkable) {
                           onForkCourse();
                           return;
@@ -429,10 +435,18 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
               {!isLoggedIn() && (
                 <div className="mt-8 flex min-h-[152px] flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 p-8">
-                  <LockIcon className="size-7 stroke-2 text-gray-400/90" />
+                  <LockIcon className="size-10 stroke-2 text-gray-400/90" />
                   <p className="text-sm text-gray-500">
                     Please login to generate course content
                   </p>
+                  <button
+                    onClick={() => {
+                      showLoginPopup();
+                    }}
+                    className="rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800"
+                  >
+                    Login to Continue
+                  </button>
                 </div>
               )}
 

@@ -4,6 +4,8 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { ModifyCoursePrompt } from './ModifyCoursePrompt';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type RegenerateLessonProps = {
   onRegenerateLesson: (prompt?: string) => void;
@@ -39,6 +41,11 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
           onClose={() => setShowPromptModal(false)}
           onSubmit={(prompt) => {
             setShowPromptModal(false);
+            if (!isLoggedIn()) {
+              showLoginPopup();
+              return;
+            }
+
             if (isForkable) {
               onForkCourse();
               return;
@@ -49,7 +56,7 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
         />
       )}
 
-      <div className="relative lg:mr-1 flex items-center" ref={ref}>
+      <div className="relative flex items-center lg:mr-1" ref={ref}>
         <button
           className={cn('rounded-full p-1 text-gray-400 hover:text-black', {
             'text-black': isDropdownVisible,
@@ -63,6 +70,11 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
             <button
               onClick={() => {
                 setIsDropdownVisible(false);
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 if (isForkable) {
                   onForkCourse();
                   return;
@@ -82,6 +94,11 @@ export function RegenerateLesson(props: RegenerateLessonProps) {
             <button
               onClick={() => {
                 setIsDropdownVisible(false);
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 if (isForkable) {
                   onForkCourse();
                   return;

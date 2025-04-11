@@ -513,6 +513,10 @@ export function AICourseContent(props: AICourseContentProps) {
               setExpandedModules={setExpandedModules}
               onUpgradeClick={() => setShowUpgradeModal(true)}
               viewMode={viewMode}
+              isForkable={isForkable}
+              onForkCourse={() => {
+                setIsForkingCourse(true);
+              }}
             />
           )}
 

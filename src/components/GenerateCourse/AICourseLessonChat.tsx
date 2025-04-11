@@ -34,6 +34,7 @@ import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { ResizablePanel } from './Resizeable';
 import { Spinner } from '../ReactIcons/Spinner';
+import { showLoginPopup } from '../../lib/popup';
 
 export type AllowedAIChatRole = 'user' | 'assistant';
 export type AIChatHistoryType = {
@@ -324,8 +325,8 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
           className="relative flex items-start border-t border-gray-200 text-sm"
           onSubmit={handleChatSubmit}
         >
-          {isLimitExceeded && (
-            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black text-white">
+          {isLimitExceeded && isLoggedIn() && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
               <LockIcon
                 className="size-4 cursor-not-allowed"
                 strokeWidth={2.5}
@@ -344,6 +345,23 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                   Upgrade for more
                 </button>
               )}
+            </div>
+          )}
+          {!isLoggedIn() && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+              <LockIcon
+                className="size-4 cursor-not-allowed"
+                strokeWidth={2.5}
+              />
+              <p className="cursor-not-allowed">Please login to continue</p>
+              <button
+                onClick={() => {
+                  showLoginPopup();
+                }}
+                className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+              >
+                Login to Chat
+              </button>
             </div>
           )}
           <TextareaAutosize

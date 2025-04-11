@@ -17,13 +17,15 @@ import {
 } from 'react';
 import type { AICourseViewMode } from './AICourseContent';
 import { replaceChildren } from '../../lib/dom';
-import { Frown, Loader2Icon } from 'lucide-react';
+import { Frown, Loader2Icon, LockIcon } from 'lucide-react';
 import { renderTopicProgress } from '../../lib/resource-progress';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { billingDetailsOptions } from '../../queries/billing';
 import { AICourseOutlineHeader } from './AICourseOutlineHeader';
 import type { AiCourse } from '../../lib/ai';
+import { showLoginPopup } from '../../lib/popup';
+import { isLoggedIn } from '../../lib/jwt';
 
 export type AICourseRoadmapViewProps = {
   done: string[];
@@ -37,6 +39,8 @@ export type AICourseRoadmapViewProps = {
   onUpgradeClick: () => void;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;
   viewMode: AICourseViewMode;
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
@@ -52,6 +56,8 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
     setExpandedModules,
     onUpgradeClick,
     viewMode,
+    isForkable,
+    onForkCourse,
   } = props;
 
   const containerEl = useRef<HTMLDivElement>(null);
@@ -66,6 +72,11 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   const isPaidUser = userBillingDetails?.status === 'active';
 
   const generateAICourseRoadmap = async (courseSlug: string) => {
+    if (!isLoggedIn()) {
+      setIsGenerating(false);
+      return;
+    }
+
     try {
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course-roadmap/${courseSlug}`,
@@ -216,6 +227,8 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         }}
         viewMode={viewMode}
         setViewMode={setViewMode}
+        isForkable={isForkable}
+        onForkCourse={onForkCourse}
       />
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
@@ -223,10 +236,27 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         </div>
       )}
 
-      {error && !isGenerating && (
+      {!isLoggedIn() && (
+        <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-2">
+          <LockIcon className="size-10 stroke-2 text-gray-400/90" />
+          <p className="text-sm text-gray-500">
+            Please login to generate course content
+          </p>
+          <button
+            onClick={() => {
+              showLoginPopup();
+            }}
+            className="rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800"
+          >
+            Login to Continue
+          </button>
+        </div>
+      )}
+
+      {error && !isGenerating && !isLoggedIn() && (
         <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center">
           <Frown className="size-20 text-red-500" />
-          <p className="mx-auto mt-5 max-w-[250px] text-balance text-center text-base text-red-500">
+          <p className="mx-auto mt-5 max-w-[250px] text-center text-base text-balance text-red-500">
             {error || 'Something went wrong'}
           </p>
 
