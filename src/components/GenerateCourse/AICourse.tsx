@@ -92,6 +92,7 @@ export function AICourse(props: AICourseProps) {
             id="keyword"
             type="text"
             value={keyword}
+            autoFocus={true}
             onChange={(e) => setKeyword(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="e.g. JavaScript Promises, React Hooks, Go Routines etc"
@@ -126,7 +127,7 @@ export function AICourse(props: AICourseProps) {
               type="submit"
               disabled={!keyword.trim()}
               className={cn(
-                'flex items-center justify-center rounded-full px-4 py-1 text-white transition-colors text-sm',
+                'flex items-center justify-center rounded-full px-4 py-1 text-sm text-white transition-colors',
                 !keyword.trim()
                   ? 'cursor-not-allowed bg-gray-400'
                   : 'bg-black hover:bg-gray-800',

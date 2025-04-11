@@ -9,13 +9,13 @@ import {
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { AILoadingState } from '../AITutor/AILoadingState';
 import { AITutorHeader } from '../AITutor/AITutorHeader';
 import { AITutorTallMessage } from '../AITutor/AITutorTallMessage';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { Pagination } from '../Pagination/Pagination';
 import { AICourseCard } from './AICourseCard';
 import { AICourseSearch } from './AICourseSearch';
+import { AILoadingState } from '../AITutor/AILoadingState';
 
 export function UserCoursesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -60,16 +60,7 @@ export function UserCoursesList() {
     }
   }, [pageState]);
 
-  if (isInitialLoading || isUserAiCoursesLoading) {
-    return (
-      <AILoadingState
-        title="Loading your courses"
-        subtitle="This may take a moment..."
-      />
-    );
-  }
-
-  if (!isLoggedIn()) {
+  if (!isInitialLoading && !isLoggedIn()) {
     return (
       <AITutorTallMessage
         title="Sign up or login"
@@ -78,20 +69,6 @@ export function UserCoursesList() {
         buttonText="Sign up or Login"
         onButtonClick={() => {
           showLoginPopup();
-        }}
-      />
-    );
-  }
-
-  if (courses.length === 0) {
-    return (
-      <AITutorTallMessage
-        title="No courses found"
-        subtitle="You haven't generated any courses yet."
-        icon={BookOpen}
-        buttonText="Create your first course"
-        onButtonClick={() => {
-          window.location.href = '/ai';
         }}
       />
     );
@@ -119,7 +96,14 @@ export function UserCoursesList() {
         />
       </AITutorHeader>
 
-      {!isUserAiCoursesLoading && courses && courses.length > 0 && (
+      {(isUserAiCoursesLoading || isInitialLoading) && (
+        <AILoadingState
+          title="Loading your courses"
+          subtitle="This may take a moment..."
+        />
+      )}
+
+      {!isUserAiCoursesLoading && !isInitialLoading && courses.length > 0 && (
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-3 gap-2">
             {courses.map((course) => (
@@ -140,15 +124,17 @@ export function UserCoursesList() {
         </div>
       )}
 
-      {!isUserAiCoursesLoading &&
-        (userAiCourses?.data?.length || 0 > 0) &&
-        courses.length === 0 && (
-          <div className="flex min-h-[114px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
-            <p className="text-sm text-gray-600">
-              No courses match your search.
-            </p>
-          </div>
-        )}
+      {!isUserAiCoursesLoading && !isInitialLoading && courses.length === 0 && (
+        <AITutorTallMessage
+          title="No courses found"
+          subtitle="You haven't generated any courses yet."
+          icon={BookOpen}
+          buttonText="Create your first course"
+          onButtonClick={() => {
+            window.location.href = '/ai';
+          }}
+        />
+      )}
     </>
   );
 }
