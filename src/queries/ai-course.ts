@@ -1,7 +1,6 @@
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
-import { queryOptions, useInfiniteQuery } from '@tanstack/react-query';
-import { queryClient } from '../stores/query-client';
+import { queryOptions } from '@tanstack/react-query';
 
 export interface AICourseProgressDocument {
   _id: string;
@@ -135,45 +134,32 @@ export function listFeaturedAiCoursesOptions(
 
 type ListExploreAiCoursesParams = {};
 
-type ListExploreAiCoursesQuery = {
+export type ListExploreAiCoursesQuery = {
   perPage?: string;
   currPage?: string;
 };
 
 type ListExploreAiCoursesResponse = {
   data: AICourseWithLessonCount[];
+  totalCount: number;
+  totalPages: number;
   currPage: number;
   perPage: number;
 };
 
-export function useListExploreAiCourses() {
-  return useInfiniteQuery(
-    {
-      queryKey: ['explore-ai-courses'],
-      queryFn: ({ pageParam = 1 }) => {
-        return httpGet<ListExploreAiCoursesResponse>(
-          `/v1-list-explore-ai-courses`,
-          {
-            perPage: '21',
-            currPage: String(pageParam),
-          },
-        );
-      },
-      getNextPageParam: (lastPage, pages, lastPageParam) => {
-        if (lastPage?.data?.length === 0) {
-          return undefined;
-        }
-
-        return lastPageParam + 1;
-      },
-      getPreviousPageParam: (firstPage, allPages, firstPageParam) => {
-        if (firstPageParam <= 1) {
-          return undefined;
-        }
-        return firstPageParam - 1;
-      },
-      initialPageParam: 1,
+export function listExploreAiCoursesOptions(
+  params: ListExploreAiCoursesQuery = {
+    perPage: '21',
+    currPage: '1',
+  },
+) {
+  return {
+    queryKey: ['explore-ai-courses', params],
+    queryFn: () => {
+      return httpGet<ListExploreAiCoursesResponse>(
+        `/v1-list-explore-ai-courses`,
+        params,
+      );
     },
-    queryClient,
-  );
+  };
 }

@@ -1,31 +1,53 @@
-import { useListExploreAiCourses } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
-import { AlertCircle, Loader2 } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { AICourseCard } from '../GenerateCourse/AICourseCard';
 import { AILoadingState } from './AILoadingState';
 import { AITutorHeader } from './AITutorHeader';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import {
+  listExploreAiCoursesOptions,
+  type ListExploreAiCoursesQuery,
+} from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
+import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
+import { Pagination } from '../Pagination/Pagination';
 
 export function AIExploreCourseListing() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
-  const {
-    data,
-    error,
-    fetchNextPage,
-    hasNextPage,
-    isFetching,
-    isFetchingNextPage,
-    status,
-    isLoading: isExploreAiCoursesLoading,
-  } = useListExploreAiCourses();
+  const [pageState, setPageState] = useState<ListExploreAiCoursesQuery>({
+    perPage: '21',
+    currPage: '1',
+  });
+
+  const { data: exploreAiCourses, isFetching: isExploreAiCoursesLoading } =
+    useQuery(listExploreAiCoursesOptions(pageState), queryClient);
 
   useEffect(() => {
     setIsInitialLoading(false);
-  }, [data]);
+  }, [exploreAiCourses]);
 
-  const courses = data?.pages.flatMap((page) => page.data) ?? [];
+  const courses = exploreAiCourses?.data ?? [];
+
+  useEffect(() => {
+    const queryParams = getUrlParams();
+    setPageState({
+      ...pageState,
+      currPage: queryParams?.p || '1',
+    });
+  }, []);
+
+  useEffect(() => {
+    if (pageState?.currPage !== '1') {
+      setUrlParams({
+        p: pageState?.currPage || '1',
+      });
+    } else {
+      deleteUrlParam('p');
+    }
+  }, [pageState]);
 
   if (isInitialLoading || isExploreAiCoursesLoading) {
     return (
@@ -36,12 +58,12 @@ export function AIExploreCourseListing() {
     );
   }
 
-  if (error) {
+  if (!exploreAiCourses?.data) {
     return (
       <div className="flex min-h-[152px] items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white py-4">
         <AlertCircle className="size-4 text-red-500" />
         <p className="text-sm font-medium text-red-600">
-          {error?.message ?? 'Error loading courses.'}
+          Error loading courses.
         </p>
       </div>
     );
@@ -59,39 +81,34 @@ export function AIExploreCourseListing() {
       />
 
       {courses && courses.length > 0 && (
-        <div className="grid grid-cols-3 gap-2">
-          {courses.map((course) => (
-            <AICourseCard
-              key={course._id}
-              course={course}
-              showActions={false}
-              showProgress={false}
-            />
-          ))}
-        </div>
-      )}
+        <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-3 gap-2">
+            {courses.map((course) => (
+              <AICourseCard
+                key={course._id}
+                course={course}
+                showActions={false}
+                showProgress={false}
+              />
+            ))}
+          </div>
 
-      {hasNextPage && !isFetchingNextPage && (
-        <div className="mt-4 flex items-center justify-center">
-          <button
-            onClick={() => fetchNextPage()}
-            disabled={isFetchingNextPage}
-            className="rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 disabled:opacity-50"
-          >
-            Load more
-          </button>
-        </div>
-      )}
-
-      {isFetchingNextPage && (
-        <div className="mt-4 flex items-center justify-center gap-2">
-          <Loader2
-            className="size-4 animate-spin text-gray-400"
-            strokeWidth={2.5}
+          <Pagination
+            totalCount={exploreAiCourses?.totalCount || 0}
+            totalPages={exploreAiCourses?.totalPages || 0}
+            currPage={Number(exploreAiCourses?.currPage || 1)}
+            perPage={Number(exploreAiCourses?.perPage || 21)}
+            onPageChange={(page) => {
+              setPageState({ ...pageState, currPage: String(page) });
+            }}
+            className="rounded-lg border border-gray-200 bg-white p-4"
           />
-          <p className="text-sm font-medium text-gray-600">
-            Loading more courses...
-          </p>
+        </div>
+      )}
+
+      {!isExploreAiCoursesLoading && courses.length === 0 && (
+        <div className="flex min-h-[114px] items-center justify-center rounded-lg border border-gray-200 bg-white py-4">
+          <p className="text-sm text-gray-600">No courses found.</p>
         </div>
       )}
     </>
