@@ -60,7 +60,16 @@ export function UserCoursesList() {
     }
   }, [pageState]);
 
-  if (!isInitialLoading && !isLoggedIn()) {
+  if (isUserAiCoursesLoading || isInitialLoading) {
+    return (
+      <AILoadingState
+        title="Loading your courses"
+        subtitle="This may take a moment..."
+      />
+    );
+  }
+
+  if (!isLoggedIn()) {
     return (
       <AITutorTallMessage
         title="Sign up or login"
@@ -105,7 +114,7 @@ export function UserCoursesList() {
 
       {!isUserAiCoursesLoading && !isInitialLoading && courses.length > 0 && (
         <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
             {courses.map((course) => (
               <AICourseCard key={course._id} course={course} />
             ))}
