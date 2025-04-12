@@ -286,7 +286,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   className="relative flex flex-col items-start overflow-hidden rounded-md border border-gray-300"
                   key={resourceId}
                 >
-                  <div className={'w-full flex-grow px-3 pb-2 pt-4'}>
+                  <div className={'w-full grow px-3 pb-2 pt-4'}>
                     <span className="mb-0.5 block text-base font-medium leading-snug text-black">
                       {roadmapTitle}
                     </span>
@@ -341,7 +341,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                       <button
                         type="button"
                         className={
-                          'text-xs text-gray-500 underline hover:text-black focus:outline-none'
+                          'text-xs text-gray-500 underline hover:text-black focus:outline-hidden'
                         }
                         onClick={() => {
                           if (isCustomResource) {

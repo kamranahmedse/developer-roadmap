@@ -328,7 +328,7 @@
     "links": [
       {
         "title": "Managing Context",
-        "url": "https://platform.openai.com/docs/guides/text-generation/managing-context-for-text-generation",
+        "url": "https://platform.openai.com/docs/guides/conversation-state?api-mode=responses#managing-context-for-text-generation",
         "type": "article"
       },
       {

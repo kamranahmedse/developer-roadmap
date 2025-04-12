@@ -1,5 +1,5 @@
 # Reducing Subqueries
 
-Recursive queries in SQL allow for iterative processing of hierarchical or tree-structured data within a single query. They consist of an anchor member (the base case) and a recursive member that references the query itself, enabling the exploration of parent-child relationships, traversal of graphs, or generation of series data. This powerful feature is particularly useful for tasks like querying organizational hierarchies, bill of materials structures, or navigating complex relationships in data that would otherwise require multiple separate queries or procedural code.
+Reducing subqueries is a common SQL optimization technique, especially when dealing with complex logic or large datasets. Correlated subqueries, which are evaluated once for each row in the outer query, can degrade the performance. Subqueries can often be replaced with JOIN operations. In cases where subqueries are reused, consider replacing them with Common Table Expressions (CTEs), which offer modularity and avoid repeated executions of the same logic. Limiting the result set returned by subqueries and storing the results of expensive subqueries in temporary tables for reuse can also improve performance.
 
 Learn more from the following resources:

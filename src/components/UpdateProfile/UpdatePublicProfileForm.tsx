@@ -201,7 +201,7 @@ export function UpdatePublicProfileForm() {
       <SkillProfileAlert />
 
       <div className="mb-8 flex flex-col justify-between gap-2 sm:mb-1 sm:flex-row">
-        <div className="flex flex-grow flex-row items-center gap-2 sm:items-center">
+        <div className="flex grow flex-row items-center gap-2 sm:items-center">
           <h3 className="mr-1 text-xl font-bold sm:text-3xl">Skill Profile</h3>
           {publicProfileUrl && (
             <>
@@ -210,7 +210,7 @@ export function UpdatePublicProfileForm() {
                 target="_blank"
                 className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
               >
-                <ArrowUpRight className="h-3 w-3 stroke-[3]" />
+                <ArrowUpRight className="h-3 w-3 stroke-3" />
                 Visit
               </a>
               <button
@@ -262,7 +262,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="name"
             id="name"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             placeholder="John Doe"
             value={name}
@@ -289,7 +289,7 @@ export function UpdatePublicProfileForm() {
             type="email"
             name="email"
             id="email"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
             placeholder="john@example.com"
@@ -306,7 +306,7 @@ export function UpdatePublicProfileForm() {
               />
               <label
                 htmlFor="isEmailVisible"
-                className="flex-grow cursor-pointer py-1.5"
+                className="grow cursor-pointer py-1.5"
               >
                 Show my email on profile
               </label>
@@ -325,7 +325,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="headline"
             id="headline"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="Full Stack Developer"
             value={headline}
             onChange={(e) => setHeadline((e.target as HTMLInputElement).value)}
@@ -495,7 +495,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="github"
             id="github"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://github.com/username"
             value={github}
             onChange={(e) => setGithub((e.target as HTMLInputElement).value)}
@@ -512,7 +512,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="twitter"
             id="twitter"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://twitter.com/username"
             value={twitter}
             onChange={(e) => setTwitter((e.target as HTMLInputElement).value)}
@@ -530,7 +530,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="linkedin"
             id="linkedin"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://www.linkedin.com/in/username/"
             value={linkedin}
             onChange={(e) => setLinkedin((e.target as HTMLInputElement).value)}
@@ -547,7 +547,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="dailydev"
             id="dailydev"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://app.daily.dev/username"
             value={dailydev}
             onChange={(e) => setDailydev((e.target as HTMLInputElement).value)}
@@ -565,7 +565,7 @@ export function UpdatePublicProfileForm() {
             type="text"
             name="website"
             id="website"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://example.com"
             value={website}
             onChange={(e) => setWebsite((e.target as HTMLInputElement).value)}
@@ -583,7 +583,7 @@ export function UpdatePublicProfileForm() {
             />
             <label
               htmlFor="isAvailableForHire"
-              className="flex-grow cursor-pointer py-1.5"
+              className="grow cursor-pointer py-1.5"
             >
               Available for Hire
             </label>
@@ -593,7 +593,7 @@ export function UpdatePublicProfileForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
           {isLoading ? 'Please wait..' : 'Save Profile'}
         </button>

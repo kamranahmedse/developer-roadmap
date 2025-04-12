@@ -1,6 +1,11 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import {
+  deleteUrlParam,
+  getLastPath,
+  getUrlParams,
+  urlToId,
+} from '../../lib/browser';
 import { isLoggedIn, setAIReferralCode } from '../../lib/jwt';
 
 type EmailSignupFormProps = {
@@ -34,6 +39,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         email,
         password,
         name,
+        src: urlToId(getLastPath() || window.location.pathname),
       },
     );
 
@@ -74,7 +80,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         min={3}
         max={50}
         required
-        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         placeholder="Full Name"
         value={name}
         onInput={(e) => setName(String((e.target as any).value))}
@@ -87,7 +93,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         type="email"
         autoComplete="email"
         required
-        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         placeholder="Email Address"
         value={email}
         onInput={(e) => setEmail(String((e.target as any).value))}
@@ -102,7 +108,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
         min={6}
         max={50}
         required
-        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+        className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         placeholder="Password"
         value={password}
         onInput={(e) => setPassword(String((e.target as any).value))}
@@ -115,7 +121,7 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
       <button
         type="submit"
         disabled={isLoading || isDisabled}
-        className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
         {isLoading ? 'Please wait...' : 'Continue to Verify Email'}
       </button>

@@ -16,7 +16,7 @@ export function SectionHeader(props: SectionHeaderProps) {
           <div className="inline-flex items-center rounded-xl ">
             <span className="text-2xl md:text-3xl font-medium text-zinc-200">{title}</span>
           </div>
-          <div className="h-[1px] flex-grow bg-gradient-to-r from-yellow-500/20 to-transparent"></div>
+          <div className="h-[1px] grow bg-linear-to-r from-yellow-500/20 to-transparent"></div>
         </div>
       </div>
       {typeof description === 'string' ? (

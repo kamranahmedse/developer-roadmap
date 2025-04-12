@@ -8,7 +8,7 @@ import {
 import { useToast } from '../../hooks/use-toast';
 import { replaceChildren } from '../../lib/dom.ts';
 import type { GetUserProfileRoadmapResponse } from '../../api/user.ts';
-import { ReadonlyEditor } from '../../../editor/readonly-editor.tsx';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import { cn } from '../../lib/classname.ts';
 
 export type UserProfileRoadmapRendererProps = GetUserProfileRoadmapResponse & {
@@ -86,7 +86,7 @@ export function UserProfileRoadmapRenderer(
       <div
         className={cn(
           'bg-white',
-          isCustomResource ? 'w-full' : 'container relative !max-w-[1000px]',
+          isCustomResource ? 'w-full' : 'container relative max-w-[1000px]!',
         )}
       >
         {isCustomResource ? (
@@ -96,7 +96,7 @@ export function UserProfileRoadmapRenderer(
               edges,
             }}
             className="min-h-[1000px]"
-            onRendered={(wrapperRef: RefObject<HTMLDivElement>) => {
+            onRendered={(wrapperRef) => {
               done?.forEach((topicId: string) => {
                 topicSelectorAll(topicId, wrapperRef?.current!).forEach(
                   (el) => {

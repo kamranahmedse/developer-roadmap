@@ -4,4 +4,4 @@ The stack trace is used to trace the active stack frames at a particular instanc
 
 Visit the following resources to learn more:
 
-- [@article@Multiple ways to log the stack trace in node.js](https://www.cloudhadoop.com/nodejs-print-stack-trace-error/)
+- [@article@Multiple Ways to Log The Stack Trace in Node.js](https://www.cloudhadoop.com/nodejs-print-stack-trace-error/)

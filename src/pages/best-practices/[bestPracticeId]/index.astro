@@ -15,6 +15,8 @@ import {
   getAllBestPractices,
 } from '../../../lib/best-practice';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const bestPractices = await getAllBestPractices();
 
@@ -92,7 +94,7 @@ const ogImageUrl = getOpenGraphImageUrl({
   <div class='bg-gray-50 py-4 sm:py-12'>
     {
       !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
-        <div class='container relative !max-w-[1000px]'>
+        <div class='container relative max-w-[1000px]!'>
           <ShareIcons
             resourceId={bestPracticeId}
             resourceType='best-practice'

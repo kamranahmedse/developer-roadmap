@@ -273,7 +273,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       <form className="mt-4" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="w-full rounded-lg border border-gray-300 p-2 text-sm focus:border-gray-500 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 p-2 text-sm focus:border-gray-500 focus:outline-hidden"
           placeholder="https://github.com/you/solution-repo"
           value={repoUrl}
           onChange={(e) => setRepoUrl(e.target.value)}

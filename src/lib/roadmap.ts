@@ -33,6 +33,17 @@ export interface RoadmapFrontmatter {
     link: string;
     linkText: string;
   };
+  courses?: {
+    title: string;
+    description: string;
+    link: string;
+    instructor: {
+      name: string;
+      image: string;
+      title: string;
+    };
+    features: string[];
+  }[];
   note?: string;
   question?: {
     title: string;

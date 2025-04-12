@@ -1,6 +1,6 @@
 import '../GenerateRoadmap/GenerateRoadmap.css';
-import { renderFlowJSON } from '../../../editor/renderer/renderer';
-import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
+import { renderFlowJSON } from '@roadmapsh/editor';
+import { generateAIRoadmapFromText } from '@roadmapsh/editor';
 import {
   generateAICourseRoadmapStructure,
   readAIRoadmapStream,
@@ -206,7 +206,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-sm lg:max-w-5xl">
+    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}

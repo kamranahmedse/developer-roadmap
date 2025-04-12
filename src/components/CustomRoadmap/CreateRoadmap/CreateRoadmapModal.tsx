@@ -179,7 +179,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="title"
               id="title"
               required
-              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 text-black outline-none focus:border-black sm:text-sm"
+              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 text-black outline-hidden focus:border-black sm:text-sm"
               placeholder="Enter Title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -199,7 +199,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="description"
               required
               className={cn(
-                'block h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 text-black outline-none focus:border-black sm:text-sm',
+                'block h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 text-black outline-hidden focus:border-black sm:text-sm',
                 isInvalidDescription && 'border-red-300 bg-red-100',
               )}
               placeholder="Enter Description"
@@ -219,7 +219,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             onClick={onClose}
             type="button"
             className={cn(
-              'block h-9 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100',
+              'block h-9 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-hidden hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100',
               !teamId && 'w-full',
             )}
           >
@@ -232,7 +232,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
                 disabled={isLoading}
                 type="button"
                 onClick={(e) => handleSubmit(e, false)}
-                className="flex h-9 items-center justify-center rounded-md border border-black bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                className="flex h-9 items-center justify-center rounded-md border border-black bg-white px-4 py-2 text-sm font-medium text-black outline-hidden hover:bg-black hover:text-white focus:bg-black focus:text-white"
               >
                 {isLoading ? (
                   <Loader2 size={16} className="animate-spin" />
@@ -246,7 +246,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               disabled={isLoading}
               type="submit"
               className={cn(
-                'flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800',
+                'flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-hidden hover:bg-gray-800 focus:bg-gray-800',
                 teamId ? 'hidden sm:flex' : 'w-full',
               )}
             >

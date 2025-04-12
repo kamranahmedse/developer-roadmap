@@ -98,7 +98,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                         progress?.renderer,
                       )
                     }
-                    className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
+                    className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-hidden"
                     key={progress.resourceId}
                   >
                     <span className="relative z-10 flex items-center justify-between text-sm">
@@ -186,7 +186,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
         {friend.status === 'rejected' && (
           <>
             <div
-              className={'flex w-full flex-grow items-center justify-center'}
+              className={'flex w-full grow items-center justify-center'}
             >
               <span className=" flex flex-col items-center text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
@@ -214,7 +214,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
         {friend.status === 'got_rejected' && (
           <>
             <div
-              className={'flex w-full flex-grow items-center justify-center'}
+              className={'flex w-full grow items-center justify-center'}
             >
               <span className=" flex flex-col items-center text-sm text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
@@ -242,7 +242,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
         {friend.status === 'sent' && (
           <>
             <div
-              className={'flex w-full flex-grow items-center justify-center'}
+              className={'flex w-full grow items-center justify-center'}
             >
               <span className=" flex flex-col items-center text-green-500">
                 <AddedUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
@@ -296,7 +296,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
           <>
             <div
               className={
-                'flex w-full flex-grow flex-col items-center justify-center px-4'
+                'flex w-full grow flex-col items-center justify-center px-4'
               }
             >
               <AddUserIcon additionalClasses="mr-2 h-8 w-8 mb-1 text-green-500" />

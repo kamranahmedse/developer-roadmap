@@ -11,7 +11,7 @@ dimensions:
   width: 968
   height: 1495.21
 question:
-  title: Is Golang as fast as C++?
+  title: What is Golang?
   description: |
     Golang is an open-source programming language developed at Google by developers like Rob Pike. As an interesting trivia fact, Golang is often referred to as "the go language".
 

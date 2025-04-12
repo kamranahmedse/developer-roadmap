@@ -4,9 +4,7 @@ import {
   Plus,
   Sparkle,
   Eye,
-  EyeOff,
-  Square,
-  SquareCheckBig,
+  EyeOff, SquareCheckBig
 } from 'lucide-react';
 import { useState } from 'react';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';
@@ -145,7 +143,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
           <>
             No AI roadmaps found
             <a
-              href="/ai"
+              href="/ai-roadmaps"
               className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
             >
               <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
@@ -160,7 +158,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
             resourceId={aiRoadmap.id}
             resourceType={'roadmap'}
             resourceTitle={aiRoadmap.title}
-            url={`/ai/${aiRoadmap.slug}`}
+            url={`/ai-roadmaps/${aiRoadmap.slug}`}
             percentageDone={0}
             allowFavorite={false}
             isTrackable={false}
@@ -168,7 +166,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
         ))}
 
         <a
-          href="/ai"
+          href="/ai-roadmaps"
           className={
             'flex h-full w-full items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-800 p-3 text-sm text-gray-400 hover:border-gray-600 hover:bg-gray-900 hover:text-gray-300'
           }

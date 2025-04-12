@@ -1,6 +1,7 @@
 declare global {
   interface Window {
     gtag: any;
+    varify: any;
     fireEvent: (props: {
       action: string;
       category: string;

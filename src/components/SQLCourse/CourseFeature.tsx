@@ -34,7 +34,7 @@ export function CourseFeature(props: CourseFeatureProps) {
             setIsZoomed(false);
             setIsExpanded(false);
           }}
-          className="fixed inset-0 z-[999] flex cursor-zoom-out items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-999 flex cursor-zoom-out items-center justify-center bg-black/75"
         >
           <img
             src={imgUrl}
@@ -56,13 +56,13 @@ export function CourseFeature(props: CourseFeatureProps) {
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className={cn(
-            'z-20 flex w-full items-center rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left transition-colors duration-200 ease-out hover:bg-zinc-800/40',
+            'z-20 flex w-full cursor-pointer items-center rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left transition-colors duration-200 ease-out hover:bg-zinc-800/40',
             {
               'relative bg-zinc-800 hover:bg-zinc-800': isExpanded,
             },
           )}
         >
-          <span className="flex flex-grow items-center space-x-3">
+          <span className="flex grow items-center space-x-3">
             <Icon />
             <span>{title}</span>
           </span>

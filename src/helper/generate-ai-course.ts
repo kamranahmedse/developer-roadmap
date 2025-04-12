@@ -131,7 +131,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
                 difficulty,
               },
               '',
-              `${origin}/ai-tutor/${extractedCourseSlug}`,
+              `${origin}/ai/${extractedCourseSlug}`,
             );
           }
 

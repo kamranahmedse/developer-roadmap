@@ -135,7 +135,7 @@ export function Step1(props: Step1Props) {
           ref={nameRef as any}
           autoFocus={true}
           id="name"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="Roadmap Inc."
           disabled={isLoading}
           required
@@ -157,7 +157,7 @@ export function Step1(props: Step1Props) {
             name="website"
             required
             id="website"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://roadmap.sh"
             disabled={isLoading}
             value={website}
@@ -178,7 +178,7 @@ export function Step1(props: Step1Props) {
             type="url"
             name="website"
             id="website"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://www.linkedin.com/company/roadmapsh"
             disabled={isLoading}
             value={linkedInUrl}
@@ -200,7 +200,7 @@ export function Step1(props: Step1Props) {
           type="url"
           name="website"
           id="website"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="https://github.com/roadmapsh"
           disabled={isLoading}
           value={gitHubUrl}
@@ -219,7 +219,7 @@ export function Step1(props: Step1Props) {
           <select
             name="team-size"
             id="team-size"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required={selectedTeamType === 'company'}
             disabled={isLoading}
             value={teamSize}

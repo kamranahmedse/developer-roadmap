@@ -35,7 +35,7 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
         onClose();
       }}
     >
-      <div className={`popup-body relative rounded-lg bg-white p-4 shadow`}>
+      <div className={`popup-body relative rounded-lg bg-white p-4 shadow-sm`}>
         <span className="mb-2 flex items-center justify-between text-lg font-semibold capitalize">
           <span className="flex items-center gap-2">
             {actionType.replace('_', ' ')}

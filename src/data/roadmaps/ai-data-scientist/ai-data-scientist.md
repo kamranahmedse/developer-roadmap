@@ -3,7 +3,7 @@ jsonUrl: '/jsons/roadmaps/ai-data-scientist.json'
 pdfUrl: '/pdfs/roadmaps/ai-data-scientist.pdf'
 order: 5
 renderer: 'editor'
-briefTitle: 'AI and Data Scientist Roadmap'
+briefTitle: 'AI and Data Scientist'
 briefDescription: 'Step by step guide to becoming an AI and Data Scientist in 2025'
 title: 'AI and Data Scientist Roadmap'
 description: 'Step by step roadmap guide to becoming an AI and Data Scientist in 2025'
@@ -53,7 +53,7 @@ question:
 
     **#1. Learn the Basics:** Start with math (like statistics) and programming (Python or R) to understand and process data efficiently.
 
-    **#2.** Practice with Data: Begin with small projects, like analyzing trends or creating charts, and gradually tackle more complex goals.
+    **#2. Practice with Data:** Begin with small projects, like analyzing trends or creating charts, and gradually tackle more complex goals.
 
     **#3. Take Courses:** Use online classes and tutorials to learn Data Science step by step.
 

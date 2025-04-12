@@ -205,13 +205,20 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
           const questions = getQuestionsFromResult(result);
           setDefaultQuestions(questions);
-
+          
           const newResult = result.replace(
             /=START_QUESTIONS=.*?=END_QUESTIONS=/,
             '',
           );
 
-          setLessonHtml(await markdownToHtmlWithHighlighting(newResult));
+          const markdownHtml = await markdownToHtmlWithHighlighting(
+            newResult,
+          ).catch((e) => {
+            console.error(e);
+            return newResult;
+          });
+
+          setLessonHtml(markdownHtml);
           queryClient.invalidateQueries(getAiCourseLimitOptions());
           setIsGenerating(false);
         },
@@ -271,7 +278,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           defaultSize={isAIChatsOpen ? 70 : 100}
           minSize={40}
           id="course-text-content"
-          className="h-full !overflow-y-scroll bg-white"
+          className="h-full overflow-y-scroll! bg-white"
           order={1}
         >
           <div className="relative mx-auto max-w-5xl">
@@ -395,7 +402,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
               {!isLoggedIn() && (
                 <div className="mt-8 flex min-h-[152px] flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 p-8">
-                  <LockIcon className="size-7 stroke-[2] text-gray-400/90" />
+                  <LockIcon className="size-7 stroke-2 text-gray-400/90" />
                   <p className="text-sm text-gray-500">
                     Please login to generate course content
                   </p>

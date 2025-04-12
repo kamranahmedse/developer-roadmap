@@ -67,7 +67,7 @@ function ProgressLane(props: ProgressLaneProps) {
   return (
     <div
       className={cn(
-        'flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-sm',
+        'flex h-full flex-col rounded-md border bg-white px-4 py-3 shadow-xs',
         className,
       )}
     >
@@ -92,7 +92,7 @@ function ProgressLane(props: ProgressLaneProps) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-grow flex-col gap-1.5">
+      <div className="mt-4 flex grow flex-col gap-1.5">
         {isLoading && (
           <div
             className={cn('grid grid-cols-2 gap-2', loadingWrapperClassName)}
@@ -105,7 +105,7 @@ function ProgressLane(props: ProgressLaneProps) {
         {!isLoading && children}
 
         {!isLoading && isEmpty && (
-          <div className="flex flex-grow flex-col items-center justify-center text-gray-500">
+          <div className="flex grow flex-col items-center justify-center text-gray-500">
             <EmptyIcon
               size={37}
               strokeWidth={1.5}
@@ -201,7 +201,7 @@ export function ProgressStack(props: ProgressStackProps) {
             emptyLinkHref={'/roadmaps'}
             emptyLinkText={'Explore Roadmaps'}
           >
-            <div className="grid flex-grow auto-rows-min grid-cols-2 items-start gap-2">
+            <div className="grid grow auto-rows-min grid-cols-2 items-start gap-2">
               {userProgressesToShow.length > 0 && (
                 <>
                   {userProgressesToShow.map((progress) => {
@@ -351,7 +351,7 @@ function StatsCard(props: StatsCardProps) {
   const { title, value, isLoading = false } = props;
 
   return (
-    <div className="flex flex-col gap-1 rounded-md border bg-white p-4 shadow-sm">
+    <div className="flex flex-col gap-1 rounded-md border bg-white p-4 shadow-xs">
       <h3 className="mb-1 text-xs uppercase text-gray-500">{title}</h3>
       {isLoading ? (
         <CardSkeleton className="h-8" />

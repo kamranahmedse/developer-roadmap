@@ -88,7 +88,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
             }}
             className="group relative flex items-center gap-2 rounded-full bg-stone-900 px-3 text-sm text-yellow-400"
           >
-            <Calendar className="h-4 w-4 flex-shrink-0" strokeWidth={2.5} />
+            <Calendar className="h-4 w-4 shrink-0" strokeWidth={2.5} />
           </button>
         )}
         <button
@@ -97,7 +97,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
           }}
           className="group relative flex items-center gap-2 rounded-full bg-stone-900 px-3 text-sm text-yellow-400"
         >
-          <X className="h-4 w-4 flex-shrink-0" strokeWidth={2.5} />
+          <X className="h-4 w-4 shrink-0" strokeWidth={2.5} />
         </button>
       </div>
     </>

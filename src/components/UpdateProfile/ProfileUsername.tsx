@@ -109,7 +109,7 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             type="text"
             name="username"
             id="username"
-            className="w-full px-3 py-2 outline-none placeholder:text-gray-400"
+            className="w-full px-3 py-2 outline-hidden placeholder:text-gray-400"
             placeholder="johndoe"
             spellCheck={false}
             value={username}

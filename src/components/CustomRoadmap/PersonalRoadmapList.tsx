@@ -176,7 +176,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         <a
           href={editorLink}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-black hover:bg-gray-50 focus:outline-none'
+            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-black hover:bg-gray-50 focus:outline-hidden'
           }
           target={'_blank'}
         >
@@ -186,7 +186,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         <a
           href={`/r/${roadmap?.slug}`}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs text-blue-600 hover:bg-blue-50 focus:outline-none'
+            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs text-blue-600 hover:bg-blue-50 focus:outline-hidden'
           }
           target={'_blank'}
         >

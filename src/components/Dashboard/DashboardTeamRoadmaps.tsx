@@ -206,7 +206,7 @@ export function DashboardTeamRoadmaps(props: DashboardTeamRoadmapsProps) {
   const roadmapHeading = (
     <div className="mb-3 flex h-[20px] items-center justify-between gap-2 text-xs">
       <h2 className="uppercase text-gray-400">Roadmaps</h2>
-      <span className="mx-3 h-[1px] flex-grow bg-gray-200" />
+      <span className="mx-3 h-[1px] grow bg-gray-200" />
       {canManageCurrentTeam && (
         <a
           href={`/team/roadmaps?t=${teamId}`}

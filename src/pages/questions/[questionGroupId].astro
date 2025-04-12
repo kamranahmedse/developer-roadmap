@@ -14,6 +14,8 @@ import QuestionGuide from '../../components/Questions/QuestionGuide.astro';
 import { markdownToHtml } from '../../lib/markdown';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 
+export const prerender = true;
+
 export interface Props {
   questionGroup: QuestionGroupType;
 }
@@ -42,7 +44,7 @@ const { frontmatter } = questionGroup;
   {
     !questionGroup.frontmatter.authorId && (
       <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
-        <div class='container !max-w-[740px]'>
+        <div class='container max-w-[740px]!'>
           <div class='mb-3 mt-2 text-left sm:mb-5 sm:mt-8 sm:text-center'>
             <div class='mb-2 md:mb-6'>
               <a

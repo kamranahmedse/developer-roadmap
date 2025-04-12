@@ -5,6 +5,9 @@ import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import CourseStep from '../../components/courses/CourseStep.astro';
 import Milestone from '../../components/courses/Milestone.astro';
+import { getProjectsByRoadmapId } from '../../lib/project';
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -33,7 +36,7 @@ const ogImageUrl =
     resourceId: roadmapId,
   });
 
-const descriptionNoun = {
+const descriptionNoun: Record<string, string> = {
   'AI and Data Scientist': 'AI and Data Science',
   'Game Developer': 'Game Development',
   'Technical Writer': 'Technical Writing',
@@ -41,12 +44,15 @@ const descriptionNoun = {
 };
 
 const title = `${roadmapData.briefTitle} Courses`;
-const description = `Courses and project driven path to help you master ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
+const description = `Premium courses to help you master ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
 
 const seoTitle = `${roadmapData.briefTitle} Courses`;
 const nounTitle =
   descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
+
+const projects = await getProjectsByRoadmapId(roadmapId);
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
@@ -71,60 +77,89 @@ const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance yo
       isUpcoming={roadmapData.isUpcoming}
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
+      coursesCount={courses.length}
+      projectCount={projects.length}
       activeTab='courses'
     />
 
     <div class='container'>
-      <div class='relative my-3 rounded-lg border bg-white px-12 py-8'>
-        <span class='absolute inset-y-0 left-[26.3px] w-[1px] bg-black'></span>
-
-        <div
-          class='mb-8 flex flex-col gap-4 text-sm leading-normal text-gray-500'
-        >
-          <p>
-            Frontend development is a vast field with a lot of tools and
-            technologies. We have the <a
-              class='font-medium text-black underline underline-offset-2'
-              href='/frontend'>frontend roadmap</a
-            >
-            which is filled with a lot of <span class='font-medium text-black'
-              >free and good</span
-            > resources to help you learn. But sometimes it helps to have a minimalistic
-            list of courses and project recommendations to help you get started.
+      <div class='relative mt-2.5 mb-8'>
+        <div class='my-4 flex items-center justify-between'>
+          <p class='border-l-4 border-black pl-2 text-sm text-black'>
+            Official Courses by <span class='font-semibold'> roadmap.sh </span>
+            team
           </p>
-
-          <p class='rounded-md bg-yellow-100 p-2 text-yellow-900'>
-            Below are some of the best courses (paid) and projects to help you
-            learn frontend development. These are handpicked and are a great way
-            to get started.
-          </p>
-
-          <p>
-            Please note that these are paid courses curated from external
-            platforms. We earn a small commission if you purchase the course
-            using the links below. This helps us maintain the website and keep
-            it free for everyone.
-          </p>
-
-          <p>
-            If you are looking for free resources, you can check out the <a
-              class='font-medium text-black underline underline-offset-2'
-              href='/frontend'>frontend roadmap</a
-            >. Also, we have a <a
-              class='font-medium text-black underline underline-offset-2'
-              href='/frontend/projects'>list of projects</a
-            > that you can work on to enhance your skills.
-          </p>
+          <div class='hidden text-sm text-gray-500 sm:block'>
+            More coming soon
+          </div>
         </div>
 
-        <!--Step content curator-->
-        <CourseStep />
-        <div class='mt-8'></div>
-        <CourseStep />
-        <div class='mt-8'></div>
-        <Milestone />
-        <div class='mt-8'></div>
-        <CourseStep />
+        <div class='grid grid-cols-1 gap-5 md:grid-cols-1'>
+          {
+            courses.map((course) => (
+              <a
+                href={course.link}
+                class='block rounded-lg border border-gray-200 bg-white p-6 duration-300 hover:border-gray-400/60'
+              >
+                <div class='flex justify-between'>
+                  <div class='flex-1'>
+                    <h3 class='mb-2 text-2xl font-bold text-black'>
+                      {course.title}
+                    </h3>
+                    <p class='text-base text-gray-600'>{course.description}</p>
+
+                    {course.features.length > 0 && (
+                      <>
+                        <div class='my-6 flex flex-wrap gap-2'>
+                          {course.features.map((feature) => (
+                            <span class='rounded-full border border-gray-200 bg-gray-100 px-2 py-0.5 text-xs text-gray-700'>
+                              {feature}
+                            </span>
+                          ))}
+                        </div>
+                        <div class='mt-6 flex flex-col items-start justify-between gap-3 sm:mt-0 sm:flex-row sm:items-center sm:gap-0'>
+                          <div class='flex items-center'>
+                            <img
+                              src={course.instructor.image}
+                              alt={course.instructor.name}
+                              class='mr-3 h-12 w-12 rounded-full border border-gray-200'
+                            />
+                            <div>
+                              <p class='text-base font-medium text-gray-900'>
+                                {course.instructor.name}
+                              </p>
+                              <p class='text-sm text-gray-500'>
+                                {course.instructor.title}
+                              </p>
+                            </div>
+                          </div>
+
+                          <span class='group mt-3 w-full rounded-lg border border-gray-900 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors duration-300 hover:opacity-80 sm:mt-0 sm:w-auto sm:py-1.5'>
+                            View Course <span class='ml-1'>&rarr;</span>
+                          </span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+
+        {
+          courses.length === 0 && (
+            <div class='rounded-lg border border-gray-200 bg-white py-10 text-center'>
+              <h3 class='mb-2 text-lg font-medium text-gray-700'>
+                No courses available yet
+              </h3>
+              <p class='text-sm text-gray-500'>
+                We're working on creating premium courses for this roadmap.
+                Check back soon!
+              </p>
+            </div>
+          )
+        }
       </div>
     </div>
   </div>

@@ -19,6 +19,8 @@ import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 
@@ -70,6 +72,7 @@ const ogImageUrl =
 const question = roadmapData?.question;
 const note = roadmapData.note;
 const projects = await getProjectsByRoadmapId(roadmapId);
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
@@ -114,6 +117,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       isForkable={roadmapData.isForkable}
       question={roadmapData.question}
       projectCount={projects.length}
+      coursesCount={courses.length}
     />
 
     <div class='container mt-2.5'>
@@ -132,7 +136,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       </div>
     </div>
 
-    <div class='container relative !max-w-[1000px]'>
+    <div class='container relative max-w-[1000px]!'>
       <ShareIcons
         resourceId={roadmapId}
         resourceType='roadmap'

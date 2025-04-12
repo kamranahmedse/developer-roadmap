@@ -233,7 +233,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
           </p>
         </div>
         {!isLoading && (
-          <div className="flex flex-shrink-0 items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
             <SortProjects
               selectedSort={pageState.sort}
               onSelectSort={(sort) => {

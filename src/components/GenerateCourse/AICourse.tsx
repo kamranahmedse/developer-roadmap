@@ -68,11 +68,11 @@ export function AICourse(props: AICourseProps) {
       });
     }
 
-    window.location.href = `/ai-tutor/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
+    window.location.href = `/ai/search?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}`;
   }
 
   return (
-    <section className="flex flex-grow flex-col bg-gray-100">
+    <section className="flex grow flex-col bg-gray-100">
       <div className="container mx-auto flex max-w-3xl flex-col py-24 max-sm:py-4">
         <h1 className="mb-2.5 text-center text-4xl font-bold max-sm:mb-2 max-sm:text-left max-sm:text-xl">
           Learn anything with AI
@@ -107,7 +107,7 @@ export function AICourse(props: AICourseProps) {
                   onChange={(e) => setKeyword(e.target.value)}
                   onKeyDown={handleKeyDown}
                   placeholder="e.g., Algebra, JavaScript, Photography"
-                  className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-500 max-sm:placeholder:text-base"
+                  className="w-full rounded-md border border-gray-300 bg-white p-3 pl-10 text-gray-900 focus:outline-hidden focus:ring-1 focus:ring-gray-500 max-sm:placeholder:text-base"
                   maxLength={50}
                 />
               </div>

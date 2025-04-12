@@ -96,7 +96,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
               )}
             >
               <div className="flex min-w-0 flex-1 items-center gap-2">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <CircularProgress
                     percentage={percentage}
                     isVisible={!isModuleCompleted}
@@ -105,7 +105,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                   >
                     <span
                       className={cn(
-                        'flex size-[21px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                        'flex size-[21px] shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
                         {
                           'bg-black': isActive,
                           'bg-green-600': isModuleCompleted,
@@ -114,7 +114,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                     >
                       {!isModuleCompleted && moduleIdx + 1}
                       {isModuleCompleted && (
-                        <Check className="size-3 stroke-[3] text-white" />
+                        <Check className="size-3 stroke-3 text-white" />
                       )}
                     </span>
                   </CircularProgress>
@@ -125,9 +125,9 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
               </div>
               <div className="ml-auto self-center">
                 {expandedModules[moduleIdx] ? (
-                  <ChevronDownIcon size={16} className="flex-shrink-0" />
+                  <ChevronDownIcon size={16} className="shrink-0" />
                 ) : (
-                  <ChevronRightIcon size={16} className="flex-shrink-0" />
+                  <ChevronRightIcon size={16} className="shrink-0" />
                 )}
               </div>
             </button>
@@ -167,7 +167,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                       {isCompleted ? (
                         <CheckIcon
                           additionalClasses={cn(
-                            'size-[18px] relative bg-white rounded-full top-[2px] flex-shrink-0 text-green-600',
+                            'size-[18px] relative bg-white rounded-full top-[2px] shrink-0 text-green-600',
                             {
                               'text-black':
                                 activeModuleIndex === moduleIdx &&
@@ -178,7 +178,7 @@ export function AICourseSidebarModuleList(props: AICourseModuleListProps) {
                       ) : (
                         <span
                           className={cn(
-                            'flex size-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
+                            'flex size-[18px] shrink-0 items-center justify-center rounded-full bg-gray-400/70 text-xs font-semibold text-white',
                             {
                               'bg-black':
                                 activeModuleIndex === moduleIdx &&

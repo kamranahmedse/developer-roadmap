@@ -1,19 +1,11 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
-import {
-  FIRST_LOGIN_PARAM,
-  TOKEN_COOKIE_NAME,
-  setAuthToken,
-} from '../../lib/jwt';
+import { FIRST_LOGIN_PARAM, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { COURSE_PURCHASE_PARAM } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import {
-  getStoredUtmParams,
-  triggerUtmRegistration,
-} from '../../lib/browser.ts';
+import { triggerUtmRegistration, urlToId, getLastPath } from '../../lib/browser.ts';
 import { cn } from '../../lib/classname.ts';
 
 type GoogleButtonProps = {
@@ -43,10 +35,12 @@ export function GoogleButton(props: GoogleButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
+    const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
+
     httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
-      }`,
+      }&src=${urlToId(lastPageBeforeGoogle || getLastPath() || window.location.pathname)}`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -61,7 +55,6 @@ export function GoogleButton(props: GoogleButtonProps) {
 
         let redirectUrl = new URL('/', window.location.origin);
         const googleRedirectAt = localStorage.getItem(GOOGLE_REDIRECT_AT);
-        const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
 
         // If the social redirect is there and less than 30 seconds old
         // redirect to the page that user was on before they clicked the github login button
@@ -132,7 +125,7 @@ export function GoogleButton(props: GoogleButtonProps) {
             '/respond-invite',
             '/befriend',
             '/r',
-            '/ai',
+            '/ai-roadmaps',
           ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;
@@ -154,7 +147,7 @@ export function GoogleButton(props: GoogleButtonProps) {
     <>
       <button
         className={cn(
-          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-hidden hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
           className,
         )}
         disabled={isLoading || isDisabled}

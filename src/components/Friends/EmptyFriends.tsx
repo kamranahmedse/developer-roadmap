@@ -28,7 +28,7 @@ export function EmptyFriends(props: EmptyFriendsProps) {
             }}
             type="text"
             value={befriendUrl}
-            className="w-full border-none bg-transparent px-1.5 outline-none"
+            className="w-full border-none bg-transparent px-1.5 outline-hidden"
             readOnly
           />
           <button

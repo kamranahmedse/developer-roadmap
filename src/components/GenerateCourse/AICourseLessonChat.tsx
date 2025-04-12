@@ -345,7 +345,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
           )}
           <TextareaAutosize
             className={cn(
-              'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-none',
+              'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-hidden',
               isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
             )}
             placeholder="Ask AI anything about the lesson..."

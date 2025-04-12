@@ -46,7 +46,7 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
           name="search"
           type="text"
           placeholder="Type 3 or more characters to search..."
-          className="w-full rounded-md border border-gray-200 px-3 py-2 pl-9 text-sm transition-colors focus:border-black focus:outline-none"
+          className="w-full rounded-md border border-gray-200 px-3 py-2 pl-9 text-sm transition-colors focus:border-black focus:outline-hidden"
           value={term}
           onChange={(e) => setTerm(e.target.value)}
         />
@@ -57,7 +57,7 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
         )}
       </div>
       {total > 0 && (
-        <p className="flex-shrink-0 text-sm text-gray-500 hidden sm:block">
+        <p className="shrink-0 text-sm text-gray-500 hidden sm:block">
           {Intl.NumberFormat('en-US', {
             notation: 'compact',
           }).format(total)}{' '}

@@ -42,7 +42,7 @@ export function RelatedGuides(props: RelatedGuidesProps) {
 
       <ol
         className={cn(
-          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow',
+          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow-sm',
           !isOpen && 'hidden lg:block',
           isOpen && 'block',
         )}

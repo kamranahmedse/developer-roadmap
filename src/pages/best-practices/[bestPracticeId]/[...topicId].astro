@@ -2,6 +2,8 @@
 import { getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
 import type { BestPracticeTopicFileType } from '../../../lib/best-practice-topic';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const topicPathMapping = await getAllBestPracticeTopicFiles();
 

@@ -36,7 +36,7 @@ export function GuideListItem(props: GuideListItemProps) {
         {frontmatter.title}
 
         {frontmatter.isNew && (
-          <span className="ml-2.5 rounded-sm bg-green-300 px-1.5 py-0.5 text-xs font-medium uppercase text-green-900">
+          <span className="ml-2.5 rounded-xs bg-green-300 px-1.5 py-0.5 text-xs font-medium uppercase text-green-900">
             New
             <span className="hidden sm:inline">
               &nbsp;&middot;&nbsp;

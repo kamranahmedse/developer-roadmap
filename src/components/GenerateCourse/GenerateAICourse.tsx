@@ -101,7 +101,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       options;
 
     if (!isLoggedIn()) {
-      window.location.href = '/ai-tutor';
+      window.location.href = '/ai';
       return;
     }
 

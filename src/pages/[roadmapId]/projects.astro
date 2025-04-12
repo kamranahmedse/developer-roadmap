@@ -8,6 +8,8 @@ import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import { projectApi } from '../../api/project';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 
@@ -83,6 +85,7 @@ const { response: userCounts } =
       question={roadmapData.question}
       activeTab='projects'
       projectCount={projects.length}
+      coursesCount={roadmapData.courses?.length || 0}
     />
 
     <div class='container'>

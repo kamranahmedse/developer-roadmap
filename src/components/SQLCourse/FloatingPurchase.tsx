@@ -18,7 +18,7 @@ export function FloatingPurchase() {
   return (
     <div
       className={cn(
-        'fixed bottom-0 left-0 right-0 z-[5] flex items-center justify-center transition-all duration-200 ease-out',
+        'fixed bottom-0 left-0 right-0 z-5 flex items-center justify-center transition-all duration-200 ease-out',
         {
           'pointer-events-none -bottom-10 opacity-0': isHidden,
         },

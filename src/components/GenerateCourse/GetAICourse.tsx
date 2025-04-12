@@ -27,7 +27,7 @@ export function GetAICourse(props: GetAICourseProps) {
 
   useEffect(() => {
     if (!isLoggedIn()) {
-      window.location.href = '/ai-tutor';
+      window.location.href = '/ai';
     }
   }, [isLoggedIn]);
 

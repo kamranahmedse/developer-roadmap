@@ -94,7 +94,7 @@ export function MemberActionDropdown({
                   <button
                     onClick={action.handleClick}
                     disabled={isLoading}
-                    className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                    className="flex w-full cursor-pointer items-center rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                   >
                     {action.name}
                   </button>

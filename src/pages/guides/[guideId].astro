@@ -5,6 +5,8 @@ import { getAllGuides, type GuideFileType } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { replaceVariables } from '../../lib/markdown';
 
+export const prerender = true;
+
 export interface Props {
   guide: GuideFileType;
 }

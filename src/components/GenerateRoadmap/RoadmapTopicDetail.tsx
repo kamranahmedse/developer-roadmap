@@ -128,7 +128,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const hasContent = topicHtml?.length > 0;
 
   return (
-    <div className={'relative z-[92]'}>
+    <div className={'relative z-92'}>
       <div
         ref={topicRef}
         tabIndex={0}
@@ -208,7 +208,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
                 {!isStreaming && (
                   <div className="mt-4">
                     <a
-                      href="/ai-tutor"
+                      href="/ai"
                       className="mb-1 mt-2 inline-flex items-center rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-gray-800 no-underline hover:bg-yellow-500"
                     >
                       Dive deeper using AI Tutor
@@ -246,7 +246,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
+      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
     </div>
   );
 }
