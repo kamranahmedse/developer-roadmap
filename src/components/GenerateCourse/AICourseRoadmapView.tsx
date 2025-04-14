@@ -17,15 +17,15 @@ import {
 } from 'react';
 import type { AICourseViewMode } from './AICourseContent';
 import { replaceChildren } from '../../lib/dom';
-import { Frown, Loader2Icon, LockIcon } from 'lucide-react';
+import { Frown, Loader2Icon } from 'lucide-react';
 import { renderTopicProgress } from '../../lib/resource-progress';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { billingDetailsOptions } from '../../queries/billing';
 import { AICourseOutlineHeader } from './AICourseOutlineHeader';
 import type { AiCourse } from '../../lib/ai';
-import { showLoginPopup } from '../../lib/popup';
 import { isLoggedIn } from '../../lib/jwt';
+import { LoginToView } from '../AITutor/LoginToView';
 
 export type AICourseRoadmapViewProps = {
   done: string[];
@@ -217,7 +217,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
+    <div className="relative overflow-hidden mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}
@@ -236,22 +236,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         </div>
       )}
 
-      {!isLoggedIn() && (
-        <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-2">
-          <LockIcon className="size-10 stroke-2 text-gray-400/90" />
-          <p className="text-sm text-gray-500">
-            Please login to generate course content
-          </p>
-          <button
-            onClick={() => {
-              showLoginPopup();
-            }}
-            className="rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800"
-          >
-            Login to Continue
-          </button>
-        </div>
-      )}
+      {!isLoggedIn() && <LoginToView className="-mt-1 -mb-2 rounded-none border-none" />}
 
       {error && !isGenerating && !isLoggedIn() && (
         <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center">

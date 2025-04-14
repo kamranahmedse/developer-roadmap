@@ -41,6 +41,7 @@ import {
   ResizablePanelGroup,
 } from './Resizeable';
 import { showLoginPopup } from '../../lib/popup';
+import { LoginToView } from '../AITutor/LoginToView';
 
 function getQuestionsFromResult(result: string) {
   const matchedQuestions = result.match(
@@ -433,22 +434,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
               )}
 
-              {!isLoggedIn() && (
-                <div className="mt-8 flex min-h-[152px] flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 p-8">
-                  <LockIcon className="size-10 stroke-2 text-gray-400/90" />
-                  <p className="text-sm text-gray-500">
-                    Please login to generate course content
-                  </p>
-                  <button
-                    onClick={() => {
-                      showLoginPopup();
-                    }}
-                    className="rounded-full bg-black px-4 py-1 text-sm text-white hover:bg-gray-800"
-                  >
-                    Login to Continue
-                  </button>
-                </div>
-              )}
+              {!isLoggedIn() && <LoginToView />}
 
               {!isLoading && !isGenerating && !error && (
                 <TestMyKnowledgeAction

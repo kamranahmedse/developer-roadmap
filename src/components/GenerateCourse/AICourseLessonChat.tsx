@@ -360,7 +360,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
                 }}
                 className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
               >
-                Login to Chat
+                Login / Register
               </button>
             </div>
           )}
