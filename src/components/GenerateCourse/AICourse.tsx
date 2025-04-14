@@ -166,12 +166,14 @@ export function AICourse(props: AICourseProps) {
         </form>
       </div>
 
-      <div className="mx-auto mt-4 max-w-xl rounded-lg bg-gray-50 px-4 py-3">
-        <p className="text-center text-sm leading-6 text-gray-600">
-          <span className="font-semibold text-gray-900">Pro tip:</span> Use
-          specific topics like "JavaScript Promises" or "Go Routines" instead of
-          "JavaScript" or "Go" for better results
-        </p>
+      <div className="mx-auto mt-4 max-w-xl rounded-lg border border-yellow-100 bg-yellow-50 px-5 py-4">
+        <div className="flex items-center gap-3">
+          <p className="text-sm leading-6 text-gray-700">
+            <span className="font-semibold text-gray-900">Pro tip:</span> Use
+            Use specific topics like "JavaScript Promises" or "Go Routines"
+            instead of "JavaScript" or "Go" for better results 💡
+          </p>
+        </div>
       </div>
     </div>
   );
