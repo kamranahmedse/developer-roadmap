@@ -43,8 +43,6 @@ export function BuyButton(props: BuyButtonProps) {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const toast = useToast();
 
-  const isTesting = getUrlParams()['testing'] === '1';
-
   const { data: coursePricing, isLoading: isLoadingPrice } = useQuery(
     coursePriceOptions({ courseSlug: SQL_COURSE_SLUG }),
     queryClient,
@@ -257,7 +255,7 @@ export function BuyButton(props: BuyButtonProps) {
               'group relative hidden items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full',
               {
                 'hidden lg:inline-flex':
-                  isTesting && !isLoadingPricing && !isAlreadyEnrolled,
+                  !isLoadingPricing && !isAlreadyEnrolled,
               },
             )}
           >
