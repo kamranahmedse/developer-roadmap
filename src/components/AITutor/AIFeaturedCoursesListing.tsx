@@ -13,6 +13,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorTallMessage } from './AITutorTallMessage';
 import { BookOpen } from 'lucide-react';
 import { AILoadingState } from './AILoadingState';
+import { AICourseSearch } from '../GenerateCourse/AICourseSearch';
 
 export function AIFeaturedCoursesListing() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -21,6 +22,7 @@ export function AIFeaturedCoursesListing() {
   const [pageState, setPageState] = useState<ListUserAiCoursesQuery>({
     perPage: '21',
     currPage: '1',
+    query: '',
   });
 
   const { data: featuredAiCourses, isFetching: isFeaturedAiCoursesLoading } =
@@ -38,16 +40,19 @@ export function AIFeaturedCoursesListing() {
     setPageState({
       ...pageState,
       currPage: queryParams?.p || '1',
+      query: queryParams?.q || '',
     });
   }, []);
 
   useEffect(() => {
-    if (pageState?.currPage !== '1') {
+    if (pageState?.currPage !== '1' || pageState?.query !== '') {
       setUrlParams({
         p: pageState?.currPage || '1',
+        q: pageState?.query || '',
       });
     } else {
       deleteUrlParam('p');
+      deleteUrlParam('q');
     }
   }, [pageState]);
 
@@ -60,7 +65,18 @@ export function AIFeaturedCoursesListing() {
       <AITutorHeader
         title="Featured Courses"
         onUpgradeClick={() => setShowUpgradePopup(true)}
-      />
+      >
+        <AICourseSearch
+          value={pageState?.query || ''}
+          onChange={(value) => {
+            setPageState({
+              ...pageState,
+              query: value,
+              currPage: '1',
+            });
+          }}
+        />
+      </AITutorHeader>
 
       {(isFeaturedAiCoursesLoading || isInitialLoading) && (
         <AILoadingState
