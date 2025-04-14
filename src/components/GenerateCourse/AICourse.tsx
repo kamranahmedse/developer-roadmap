@@ -169,9 +169,9 @@ export function AICourse(props: AICourseProps) {
       <div className="mx-auto mt-4 max-w-xl rounded-lg border border-yellow-100 bg-yellow-50 px-5 py-4">
         <div className="flex items-center gap-3">
           <p className="text-sm leading-6 text-gray-700">
-            <span className="font-semibold text-gray-900">Pro tip:</span> Use
+            <span className="font-semibold text-gray-900">💡 Pro tip:</span> Use
             Use specific topics like "JavaScript Promises" or "Go Routines"
-            instead of "JavaScript" or "Go" for better results 💡
+            instead of "JavaScript" or "Go" for better results
           </p>
         </div>
       </div>
