@@ -76,7 +76,7 @@ export function AICourse(props: AICourseProps) {
       <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
         What can I help you learn?
       </h1>
-      <p className="mb-3 text-balance text-center text-lg text-gray-600 max-md:text-left max-md:text-sm lg:mb-6">
+      <p className="mb-3 text-center text-lg text-balance text-gray-600 max-md:text-left max-md:text-sm lg:mb-6">
         Enter a topic below to generate a personalized course for it
       </p>
 
@@ -164,6 +164,14 @@ export function AICourse(props: AICourseProps) {
             Generate Course
           </button>
         </form>
+      </div>
+
+      <div className="mx-auto mt-4 max-w-xl rounded-lg bg-gray-50 px-4 py-3">
+        <p className="text-center text-sm leading-6 text-gray-600">
+          <span className="font-semibold text-gray-900">Pro tip:</span> Use
+          specific topics like "JavaScript Promises" or "Go Routines" instead of
+          "JavaScript" or "Go" for better results
+        </p>
       </div>
     </div>
   );
