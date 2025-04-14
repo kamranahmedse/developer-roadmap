@@ -4,6 +4,7 @@ import { getPercentage } from '../../lib/number';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
+import { isLoggedIn } from '../../lib/jwt';
 
 type AICourseLimitProps = {
   onUpgrade: () => void;
@@ -20,6 +21,10 @@ export function AICourseLimit(props: AICourseLimitProps) {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
+
+  if (!isLoggedIn()) {
+    return null;
+  }
 
   if (isLoading || !limits || isBillingDetailsLoading || !userBillingDetails) {
     return (

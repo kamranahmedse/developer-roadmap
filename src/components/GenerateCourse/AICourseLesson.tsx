@@ -3,6 +3,7 @@ import {
   CheckIcon,
   ChevronLeft,
   ChevronRight,
+  GitForkIcon,
   Loader2Icon,
   LockIcon,
   MessageCircleIcon,
@@ -39,6 +40,8 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from './Resizeable';
+import { showLoginPopup } from '../../lib/popup';
+import { LoginToView } from '../AITutor/LoginToView';
 
 function getQuestionsFromResult(result: string) {
   const matchedQuestions = result.match(
@@ -55,6 +58,7 @@ function getQuestionsFromResult(result: string) {
 type AICourseLessonProps = {
   courseSlug: string;
   progress: string[];
+  creatorId?: string;
 
   activeModuleIndex: number;
   totalModules: number;
@@ -70,12 +74,16 @@ type AICourseLessonProps = {
 
   isAIChatsOpen: boolean;
   setIsAIChatsOpen: (isOpen: boolean) => void;
+
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function AICourseLesson(props: AICourseLessonProps) {
   const {
     courseSlug,
     progress = [],
+    creatorId,
 
     activeModuleIndex,
     totalModules,
@@ -91,6 +99,9 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
     isAIChatsOpen,
     setIsAIChatsOpen,
+
+    isForkable,
+    onForkCourse,
   } = props;
 
   const [isLoading, setIsLoading] = useState(true);
@@ -108,8 +119,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
   >([
     {
       role: 'assistant',
-      content:
-        'Hey, I am your AI instructor. How can I help you today? 🤖',
+      content: 'Hey, I am your AI instructor. How can I help you today? 🤖',
       isDefault: true,
     },
   ]);
@@ -205,7 +215,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
 
           const questions = getQuestionsFromResult(result);
           setDefaultQuestions(questions);
-          
+
           const newResult = result.replace(
             /=START_QUESTIONS=.*?=END_QUESTIONS=/,
             '',
@@ -284,7 +294,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           <div className="relative mx-auto max-w-5xl">
             <div className="bg-white p-8 pb-0 max-lg:px-4 max-lg:pt-3">
               {(isGenerating || isLoading) && (
-                <div className="absolute right-6 top-6 flex items-center justify-center">
+                <div className="absolute top-6 right-6 flex items-center justify-center">
                   <Loader2Icon
                     size={18}
                     strokeWidth={3}
@@ -293,13 +303,13 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
               )}
 
-              <div className="mb-4 flex items-center justify-between">
+              <div className="mb-4 flex justify-between max-sm:flex-col-reverse">
                 <div className="text-sm text-gray-500">
                   Lesson {activeLessonIndex + 1} of {totalLessons}
                 </div>
 
                 {!isGenerating && !isLoading && (
-                  <div className="absolute top-2 right-2 lg:right-6 lg:top-6 flex items-center justify-between gap-2">
+                  <div className="top-2 right-2 mb-3 flex items-center gap-2 max-sm:justify-end md:absolute lg:top-6 lg:right-6">
                     <button
                       onClick={() => setIsAIChatsOpen(!isAIChatsOpen)}
                       className="rounded-full p-1 text-gray-400 hover:text-black max-lg:hidden"
@@ -315,16 +325,40 @@ export function AICourseLesson(props: AICourseLessonProps) {
                       onRegenerateLesson={(prompt) => {
                         generateAiCourseContent(true, prompt);
                       }}
+                      isForkable={isForkable}
+                      onForkCourse={onForkCourse}
                     />
+
+                    {isForkable && (
+                      <button
+                        onClick={onForkCourse}
+                        className="flex items-center gap-1.5 rounded-full border bg-gray-100 py-1 pr-4 pl-3 text-sm text-black hover:bg-gray-200 disabled:opacity-50 max-lg:text-xs"
+                      >
+                        <GitForkIcon className="size-3.5" />
+                        Fork Course
+                      </button>
+                    )}
                     <button
                       disabled={isLoading || isTogglingDone}
                       className={cn(
-                        'flex items-center gap-1.5 rounded-full bg-black py-1 pl-2 pr-3 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
+                        'flex items-center gap-1.5 rounded-full bg-black py-1 pr-3 pl-2 text-sm text-white hover:bg-gray-800 disabled:opacity-50 max-lg:text-xs',
                         isLessonDone
                           ? 'bg-red-500 hover:bg-red-600'
                           : 'bg-green-500 hover:bg-green-600',
                       )}
-                      onClick={() => toggleDone()}
+                      onClick={() => {
+                        if (!isLoggedIn()) {
+                          showLoginPopup();
+                          return;
+                        }
+
+                        if (isForkable) {
+                          onForkCourse();
+                          return;
+                        }
+
+                        toggleDone();
+                      }}
                     >
                       {isTogglingDone ? (
                         <>
@@ -355,13 +389,13 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 )}
               </div>
 
-              <h1 className="mb-6 text-balance text-3xl font-semibold max-lg:mb-3 max-lg:text-xl">
+              <h1 className="mb-6 text-3xl font-semibold text-balance max-lg:mb-3 max-lg:text-xl">
                 {currentLessonTitle?.replace(/^Lesson\s*?\d+[\.:]\s*/, '')}
               </h1>
 
               {!error && isLoggedIn() && (
                 <div
-                  className="course-content prose prose-lg mt-8 max-w-full text-black prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800 max-lg:mt-4 max-lg:text-base max-lg:prose-h2:mt-3 max-lg:prose-h2:text-lg max-lg:prose-h3:text-base max-lg:prose-pre:px-3 max-lg:prose-pre:text-sm"
+                  className="course-content prose prose-lg prose-headings:mb-3 prose-headings:mt-8 prose-blockquote:font-normal prose-pre:rounded-2xl prose-pre:text-lg prose-li:my-1 prose-thead:border-zinc-800 prose-tr:border-zinc-800 max-lg:prose-h2:mt-3 max-lg:prose-h2:text-lg max-lg:prose-h3:text-base max-lg:prose-pre:px-3 max-lg:prose-pre:text-sm mt-8 max-w-full text-black max-lg:mt-4 max-lg:text-base"
                   dangerouslySetInnerHTML={{ __html: lessonHtml }}
                 />
               )}
@@ -400,14 +434,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 </div>
               )}
 
-              {!isLoggedIn() && (
-                <div className="mt-8 flex min-h-[152px] flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 p-8">
-                  <LockIcon className="size-7 stroke-2 text-gray-400/90" />
-                  <p className="text-sm text-gray-500">
-                    Please login to generate course content
-                  </p>
-                </div>
-              )}
+              {!isLoggedIn() && <LoginToView />}
 
               {!isLoading && !isGenerating && !error && (
                 <TestMyKnowledgeAction
@@ -436,6 +463,11 @@ export function AICourseLesson(props: AICourseLessonProps) {
                 <div>
                   <button
                     onClick={() => {
+                      if (!isLoggedIn()) {
+                        onGoToNextLesson();
+                        return;
+                      }
+
                       if (!isLessonDone) {
                         toggleDone(undefined, {
                           onSuccess: () => {

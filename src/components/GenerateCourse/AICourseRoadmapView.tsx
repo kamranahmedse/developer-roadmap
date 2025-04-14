@@ -24,6 +24,8 @@ import { useQuery } from '@tanstack/react-query';
 import { billingDetailsOptions } from '../../queries/billing';
 import { AICourseOutlineHeader } from './AICourseOutlineHeader';
 import type { AiCourse } from '../../lib/ai';
+import { isLoggedIn } from '../../lib/jwt';
+import { LoginToView } from '../AITutor/LoginToView';
 
 export type AICourseRoadmapViewProps = {
   done: string[];
@@ -37,6 +39,8 @@ export type AICourseRoadmapViewProps = {
   onUpgradeClick: () => void;
   setExpandedModules: Dispatch<SetStateAction<Record<number, boolean>>>;
   viewMode: AICourseViewMode;
+  isForkable: boolean;
+  onForkCourse: () => void;
 };
 
 export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
@@ -52,6 +56,8 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
     setExpandedModules,
     onUpgradeClick,
     viewMode,
+    isForkable,
+    onForkCourse,
   } = props;
 
   const containerEl = useRef<HTMLDivElement>(null);
@@ -66,6 +72,11 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   const isPaidUser = userBillingDetails?.status === 'active';
 
   const generateAICourseRoadmap = async (courseSlug: string) => {
+    if (!isLoggedIn()) {
+      setIsGenerating(false);
+      return;
+    }
+
     try {
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-course-roadmap/${courseSlug}`,
@@ -206,7 +217,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
+    <div className="relative overflow-hidden mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}
@@ -216,6 +227,8 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         }}
         viewMode={viewMode}
         setViewMode={setViewMode}
+        isForkable={isForkable}
+        onForkCourse={onForkCourse}
       />
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">
@@ -223,10 +236,12 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         </div>
       )}
 
-      {error && !isGenerating && (
+      {!isLoggedIn() && <LoginToView className="-mt-1 -mb-2 rounded-none border-none" />}
+
+      {error && !isGenerating && !isLoggedIn() && (
         <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center">
           <Frown className="size-20 text-red-500" />
-          <p className="mx-auto mt-5 max-w-[250px] text-balance text-center text-base text-red-500">
+          <p className="mx-auto mt-5 max-w-[250px] text-center text-base text-balance text-red-500">
             {error || 'Something went wrong'}
           </p>
 
