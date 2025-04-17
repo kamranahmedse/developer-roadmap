@@ -31,6 +31,8 @@ export function Pagination(props: PaginationProps) {
   }
 
   const pages = usePagination(currPage, totalPages, 5);
+  const showingFrom = (currPage - 1) * perPage + 1;
+  const showingTo = Math.min(showingFrom + perPage - 1, totalCount);
 
   return (
     <div
@@ -98,9 +100,9 @@ export function Pagination(props: PaginationProps) {
         </button>
       </div>
       <span className="ml-2 hidden text-sm font-normal text-gray-500 sm:block">
-        Showing {formatCommaNumber((currPage - 1) * perPage)} to{' '}
-        {formatCommaNumber((currPage - 1) * perPage + perPage)} of{' '}
-        {formatCommaNumber(totalCount)} entries
+        Showing {formatCommaNumber(showingFrom)} to{' '}
+        {formatCommaNumber(showingTo)} of {formatCommaNumber(totalCount)}{' '}
+        entries
       </span>
     </div>
   );
