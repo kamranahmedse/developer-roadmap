@@ -83,7 +83,7 @@ export function AICourse(props: AICourseProps) {
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
         {!isPaidUser && isLoggedIn() && (
-          <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500">
+          <div className="absolute max-md:hidden bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500">
             You are on the free plan
             <button
               onClick={() => setIsUpgradeModalOpen(true)}
