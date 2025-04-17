@@ -56,6 +56,7 @@ export function BuyButton(props: BuyButtonProps) {
   const {
     mutate: createCheckoutSession,
     isPending: isCreatingCheckoutSession,
+    isSuccess: isCheckoutSessionCreated,
   } = useMutation(
     {
       mutationFn: (body: CreateCheckoutSessionBody) => {
@@ -147,6 +148,7 @@ export function BuyButton(props: BuyButtonProps) {
 
   const isLoadingPricing =
     isFakeLoading ||
+    isCheckoutSessionCreated ||
     isLoadingPrice ||
     !coursePricing ||
     isLoadingCourseProgress ||
