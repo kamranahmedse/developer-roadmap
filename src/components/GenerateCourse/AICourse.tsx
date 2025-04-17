@@ -11,6 +11,8 @@ import {
   storeFineTuneData,
 } from '../../lib/ai';
 import { cn } from '../../lib/classname';
+import { useIsPaidUser } from '../../queries/billing';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 export const difficultyLevels = [
   'beginner',
@@ -29,6 +31,9 @@ export function AICourse(props: AICourseProps) {
   const [about, setAbout] = useState('');
   const [goal, setGoal] = useState('');
   const [customInstructions, setCustomInstructions] = useState('');
+  const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   useEffect(() => {
     const lastSessionId = getLastSessionId();
@@ -73,13 +78,28 @@ export function AICourse(props: AICourseProps) {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-0">
-      <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
-        What can I help you learn?
-      </h1>
-      <p className="mb-3 text-center text-lg text-balance text-gray-600 max-md:text-left max-md:text-sm lg:mb-6">
-        Enter a topic below to generate a personalized course for it
-      </p>
-
+      <div className="relative">
+        {isUpgradeModalOpen && (
+          <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
+        )}
+        {!isPaidUser && isLoggedIn() && (
+          <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500">
+            You are on the free plan
+            <button
+              onClick={() => setIsUpgradeModalOpen(true)}
+              className="ml-2 rounded-lg bg-yellow-600 px-2 py-1 text-sm text-white hover:opacity-80"
+            >
+              Upgrade to Pro
+            </button>
+          </div>
+        )}
+        <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
+          What can I help you learn?
+        </h1>
+        <p className="mb-3 text-center text-lg text-balance text-gray-600 max-md:text-left max-md:text-sm md:mb-6">
+          Enter a topic below to generate a personalized course for it
+        </p>
+      </div>
       <div className="rounded-lg border border-gray-300 bg-white">
         <form
           className="flex flex-col"
@@ -164,16 +184,6 @@ export function AICourse(props: AICourseProps) {
             Generate Course
           </button>
         </form>
-      </div>
-
-      <div className="mx-auto mt-4 max-w-xl rounded-lg border border-yellow-100 bg-yellow-50 px-5 py-4">
-        <div className="flex items-center gap-3">
-          <p className="text-sm leading-6 text-gray-700">
-            <span className="font-semibold text-gray-900">💡 Pro tip:</span> Use
-            Use specific topics like "JavaScript Promises" or "Go Routines"
-            instead of "JavaScript" or "Go" for better results
-          </p>
-        </div>
       </div>
     </div>
   );
