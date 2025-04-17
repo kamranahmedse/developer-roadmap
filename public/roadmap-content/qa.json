@@ -545,8 +545,24 @@
   },
   "XCeXiKvBblmDArfbWjDvw": {
     "title": "Regression Testing",
-    "description": "Regression Testing is a type of software testing to confirm that a recent program or code change has not adversely affected existing features. Regression testing is a black box testing technique. Test cases are re-executed to check the previous functionality of the application is working fine and that the new changes have not produced any bugs.",
-    "links": []
+    "description": "Regression Testing is a type of software testing to confirm that a recent program or code change has not adversely affected existing features. Regression testing is a black box testing technique. Test cases are re-executed to check the previous functionality of the application is working fine and that the new changes have not produced any bugs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Regression Testing?",
+        "url": "https://www.guru99.com/regression-testing.html",
+        "type": "article"
+      },
+      {
+        "title": "What is Regression Testing? Definition, Tools and Examples",
+        "url": "https://katalon.com/resources-center/blog/regression-testing",
+        "type": "article"
+      },
+      {
+        "title": "What is Regression Testing? A Software Testing FAQ - Why? How? When?",
+        "url": "https://www.youtube.com/watch?v=xmQuLTarGI4",
+        "type": "video"
+      }
+    ]
   },
   "MVShii4LZiWW_gPTJzkty": {
     "title": "Smoke Testing",
