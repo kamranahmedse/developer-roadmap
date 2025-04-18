@@ -20,16 +20,10 @@ export function GetAICourse(props: GetAICourseProps) {
   const { data: aiCourse, error: queryError } = useQuery(
     {
       ...getAiCourseOptions({ aiCourseSlug: courseSlug }),
-      enabled: !!courseSlug && !!isLoggedIn(),
+      enabled: !!courseSlug,
     },
     queryClient,
   );
-
-  useEffect(() => {
-    if (!isLoggedIn()) {
-      window.location.href = '/ai';
-    }
-  }, [isLoggedIn]);
 
   useEffect(() => {
     if (!aiCourse) {
@@ -102,6 +96,7 @@ export function GetAICourse(props: GetAICourseProps) {
       courseSlug={courseSlug}
       error={error}
       onRegenerateOutline={handleRegenerateCourse}
+      creatorId={aiCourse?.userId}
     />
   );
 }

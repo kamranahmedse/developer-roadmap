@@ -4,10 +4,17 @@ import { Modal } from '../Modal';
 export type ModifyCoursePromptProps = {
   onClose: () => void;
   onSubmit: (prompt: string) => void;
+  title?: string;
+  description?: string;
 };
 
 export function ModifyCoursePrompt(props: ModifyCoursePromptProps) {
-  const { onClose, onSubmit } = props;
+  const {
+    onClose,
+    onSubmit,
+    title = 'Give AI more context',
+    description = 'Pass additional information to the AI to generate a course outline.',
+  } = props;
 
   const [prompt, setPrompt] = useState('');
 
@@ -25,12 +32,8 @@ export function ModifyCoursePrompt(props: ModifyCoursePromptProps) {
     >
       <div className="flex flex-col gap-4">
         <div>
-          <h2 className="mb-2 text-left text-xl font-semibold">
-            Give AI more context
-          </h2>
-          <p className="text-sm text-gray-500">
-            Pass additional information to the AI to generate a course outline.
-          </p>
+          <h2 className="mb-2 text-left text-xl font-semibold">{title}</h2>
+          <p className="text-sm text-gray-500">{description}</p>
         </div>
         <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
           <textarea

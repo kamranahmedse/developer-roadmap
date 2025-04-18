@@ -1,8 +1,10 @@
-import Cookies from 'js-cookie';
 import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { FIRST_LOGIN_PARAM, setAuthToken } from '../../lib/jwt';
+import {
+  COURSE_PURCHASE_PARAM, FIRST_LOGIN_PARAM,
+  setAuthToken
+} from '../../lib/jwt';
 
 type EmailLoginFormProps = {
   isDisabled?: boolean;
@@ -38,7 +40,10 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
 
       const currentLocation = window.location.href;
       const url = new URL(currentLocation, window.location.origin);
+
       url.searchParams.set(FIRST_LOGIN_PARAM, response?.isNewUser ? '1' : '0');
+      url.searchParams.set(COURSE_PURCHASE_PARAM, '1');
+
       window.location.href = url.toString();
       return;
     }
@@ -90,7 +95,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
         onInput={(e) => setPassword(String((e.target as any).value))}
       />
 
-      <p className="mb-3 mt-2 text-sm text-gray-500">
+      <p className="mt-2 mb-3 text-sm text-gray-500">
         <a
           href="/forgot-password"
           className="text-blue-800 hover:text-blue-600"

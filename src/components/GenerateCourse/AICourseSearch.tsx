@@ -37,7 +37,7 @@ export function AICourseSearch(props: AICourseSearchProps) {
       <input
         type="text"
         className="block w-full rounded-md border border-gray-200 bg-white py-1.5 pl-10 pr-3 leading-5 placeholder-gray-500 focus:border-gray-300 focus:outline-hidden focus:ring-blue-500 disabled:opacity-70 sm:text-sm"
-        placeholder="Search your courses..."
+        placeholder="Search courses..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />

@@ -234,7 +234,14 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                           )}
                         </p>
                       )}
-                      <p className="text-2xl font-bold text-black sm:text-3xl">
+                      <p
+                        className={cn(
+                          'text-2xl font-bold text-black sm:text-3xl',
+                          {
+                            'mt-0 md:mt-6': !isYearly,
+                          },
+                        )}
+                      >
                         ${plan.amount}{' '}
                         <span className="text-xs font-normal text-gray-500 sm:text-sm">
                           / {isYearly ? 'year' : 'month'}

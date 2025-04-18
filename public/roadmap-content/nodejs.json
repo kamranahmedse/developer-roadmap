@@ -545,7 +545,7 @@
     "description": "The stack trace is used to trace the active stack frames at a particular instance during the execution of a program. The stack trace is useful while debugging code as it shows the exact point that has caused an error.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Multiple ways to log the stack trace in node.js",
+        "title": "Multiple Ways to Log The Stack Trace in Node.js",
         "url": "https://www.cloudhadoop.com/nodejs-print-stack-trace-error/",
         "type": "article"
       }
@@ -803,13 +803,13 @@
     "description": "You can programmatically manipulate files in Node.js with the built-in `fs` module. The name is short for “file system,” and the module contains all the functions you need to read, write, and delete files on the local machine.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How To Work with Files using the fs Module in Node.js",
-        "url": "https://www.digitalocean.com/community/tutorials/how-to-work-with-files-using-the-fs-module-in-node-js",
+        "title": "File System Module",
+        "url": "https://nodejs.org/docs/latest/api/fs.html",
         "type": "article"
       },
       {
-        "title": "File system",
-        "url": "https://nodejs.org/docs/latest/api/fs.html",
+        "title": "How To Work with Files using the fs Module in Node.js",
+        "url": "https://www.digitalocean.com/community/tutorials/how-to-work-with-files-using-the-fs-module-in-node-js",
         "type": "article"
       },
       {
@@ -861,7 +861,7 @@
     "description": "File System or `fs` module is a built in module in Node that enables interacting with the file system using JavaScript. All file system operations have synchronous, callback, and promise-based forms, and are accessible using both CommonJS syntax and ES6 Modules.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "fs",
+        "title": "fs module",
         "url": "https://nodejs.org/api/fs.html",
         "type": "article"
       },
@@ -952,7 +952,7 @@
     "description": "Chokidar is a fast open-source file watcher for node. js. You give it a bunch of files, it watches them for changes and notifies you every time an old file is edited; or a new file is created.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "chokidar package",
+        "title": "chokidar",
         "url": "https://www.npmjs.com/package/chokidar",
         "type": "article"
       }
@@ -1159,7 +1159,7 @@
     "description": "`process.argv` is an array of parameters that are sent when you run a Node.js file or Node.js process.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Node.js Docs on process.argv",
+        "title": "process.argv",
         "url": "https://nodejs.org/docs/latest/api/process.html#processargv",
         "type": "article"
       },
@@ -1248,7 +1248,7 @@
         "type": "article"
       },
       {
-        "title": "Fastify Documentations",
+        "title": "Fastify Documentation",
         "url": "https://www.fastify.io/docs/latest/",
         "type": "article"
       },
@@ -1358,7 +1358,7 @@
         "type": "opensource"
       },
       {
-        "title": "npmjs.org",
+        "title": "Ky Package",
         "url": "https://www.npmjs.com/package/ky/v/0.9.0",
         "type": "article"
       }
@@ -1607,6 +1607,11 @@
         "title": "What is Database?",
         "url": "https://en.wikipedia.org/wiki/Database",
         "type": "article"
+      },
+      {
+        "title": "What is Database - AWS",
+        "url": "https://aws.amazon.com/what-is/database/",
+        "type": "article"
       }
     ]
   },
@@ -1617,6 +1622,11 @@
       {
         "title": "Mongoose",
         "url": "https://mongoosejs.com",
+        "type": "article"
+      },
+      {
+        "title": "Mongoose Documentation",
+        "url": "https://mongoosejs.com/docs/guide.html",
         "type": "article"
       },
       {
@@ -1654,8 +1664,14 @@
   },
   "5WqLm53CHDT5uBoMH-iPl": {
     "title": "Native Drivers",
-    "description": "Another way to connect to different databases in Node.js is to use the official native drivers provided by the database.\n\nVisit the following resources to learn more:\n\n[@official@MongoDB Drivers](https://www.mongodb.com/docs/drivers/)",
-    "links": []
+    "description": "Another way to connect to different databases in Node.js is to use the official native drivers provided by the database.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MongoDB Drivers",
+        "url": "https://www.mongodb.com/docs/drivers/",
+        "type": "article"
+      }
+    ]
   },
   "HDDnt79_PCB5JU-KnHKUh": {
     "title": "Knex",
@@ -1972,7 +1988,7 @@
         "type": "article"
       },
       {
-        "title": "Pm2 Documentations",
+        "title": "Pm2 Documentation",
         "url": "https://pm2.keymetrics.io/docs/usage/quick-start/",
         "type": "article"
       }
@@ -2015,7 +2031,7 @@
     "description": "The Cluster module allows you to easily create child processes that each runs simultaneously on their own single thread, to handle workloads among their application threads.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Cluster Docs",
+        "title": "Node.js Cluster",
         "url": "https://nodejs.org/api/cluster.html#cluster",
         "type": "article"
       }
