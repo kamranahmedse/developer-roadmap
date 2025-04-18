@@ -4,4 +4,4 @@ Flutter Outline is a feature in the Flutter development environment (IDE) that p
 
 Visit the following resources to learn more:
 
-- [@official@Flutter Outline](https://api.flutter.dev/flutter/material/OutlinedButton-class.html)
+- [@official@Flutter Widget Tree](https://docs.flutter.dev/tools/devtools/inspector#flutter-widget-tree)
