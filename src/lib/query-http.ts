@@ -6,9 +6,19 @@ type HttpOptionsType = RequestInit;
 
 type AppResponse = Record<string, any>;
 
-export interface FetchError extends Error {
+export class FetchError extends Error {
   status: number;
   message: string;
+
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+    this.message = message;
+  }
+
+  static isFetchError(error: any): error is FetchError {
+    return error instanceof FetchError;
+  }
 }
 
 type AppError = {
@@ -69,10 +79,7 @@ export async function httpCall<ResponseType = AppResponse>(
 
     if (!response.ok) {
       if (data.errors) {
-        const error = new Error() as FetchError;
-        error.message = data.message;
-        error.status = response?.status;
-        throw error;
+        throw new FetchError(response?.status, data.message);
       } else {
         throw new Error('An unexpected error occurred');
       }
