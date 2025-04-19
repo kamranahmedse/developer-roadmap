@@ -341,8 +341,24 @@
   },
   "hNBErGNiegLsUJn_vgcOR": {
     "title": "Virtual Methods",
-    "description": "",
-    "links": []
+    "description": "Virtual functions enable runtime polymorphism in C++, allowing derived classes to override base class behavior. When called via a base pointer/reference, the _actual object's type_ determines which function is executed (dynamic dispatch). Non-virtual functions use compile-time resolution based on the pointer/reference type (static dispatch), which prevents overriding.\n\n    // Base class with virtual function\n    class Animal {\n    public:\n        virtual void speak() { std::cout << \"Generic sound\"; }\n    };\n    \n    // Derived class override\n    class Dog : public Animal {\n    public:\n        void speak() override { std::cout << \"Woof!\"; } // Dynamic dispatch\n    };\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "C++ Virtual Functions Documentation",
+        "url": "https://en.cppreference.com/w/cpp/language/virtual",
+        "type": "article"
+      },
+      {
+        "title": "GeeksforGeeks Virtual Functions Guide",
+        "url": "https://www.geeksforgeeks.org/virtual-function-cpp/",
+        "type": "article"
+      },
+      {
+        "title": "Virtual Functions Explained (YouTube)",
+        "url": "https://www.youtube.com/watch?v=oIV2KchSyGQ&ab_channel=TheCherno",
+        "type": "video"
+      }
+    ]
   },
   "s99ImazcwCgAESxZd8ksa": {
     "title": "Virtual Tables",

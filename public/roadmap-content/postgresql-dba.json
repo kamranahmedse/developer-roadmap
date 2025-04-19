@@ -228,12 +228,7 @@
     "links": [
       {
         "title": "Managing Databases",
-        "url": "https://www.postgresql.org/docs/8.1/managing-databases.html",
-        "type": "article"
-      },
-      {
-        "title": "Managing a Database",
-        "url": "https://www.postgresql.org/docs/7.1/start-manage-db.html",
+        "url": "https://www.postgresql.org/docs/current/managing-databases.html",
         "type": "article"
       }
     ]
