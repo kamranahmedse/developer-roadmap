@@ -16,6 +16,7 @@ ls -al > file_list.txt
 
 This command will write the output of 'ls -al' into 'file_list.txt', whether or not the file initially existed. It will be created if necessary, and if it already exists – it will be overwritten.
 
-Learn more from the following resources:
+Also, there are more ways to "unite" differentt commands and make it work with each other, so you can make bash scripts more powerful and efficient.
+If you desire, you may follow the following resource to know the possible options, that shows tools like piping "|" that allows the output of a command to be the input of the next one, or the logical AND "&&" operator, that runs every command only if the first one executed succesfully.
 
 - [@article@Logical Commands and Redirection](https://labex.io/tutorials/linux-logical-commands-and-redirection-387332)
