@@ -4,5 +4,5 @@ Leaderboards and counters are common use cases for Redis, leveraging its sorted 
 
 Learn more from the following resources:
 
-- [@official@ZADD Documentation](https://redis.io/docs/latest/commands/zadd/)
-- [@official@ZRANGE Documentation](https://redis.io/docs/latest/commands/zrange/)
+- [@official@ZADD](https://redis.io/docs/latest/commands/zadd/)
+- [@official@ZRANGE](https://redis.io/docs/latest/commands/zrange/)
