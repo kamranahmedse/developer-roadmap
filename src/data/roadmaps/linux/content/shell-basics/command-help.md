@@ -18,6 +18,8 @@ Moreover, you can add the *--help* flag to almost any command to get more inform
 For example:
 ```bash
 date --help
+```
+
 To view examples with TLDR, use:
 
 ```bash
