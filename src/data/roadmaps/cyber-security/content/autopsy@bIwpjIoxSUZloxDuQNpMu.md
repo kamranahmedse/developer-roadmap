@@ -4,5 +4,5 @@ Autopsy is a versatile and powerful open-source digital forensics platform that 
 
 Learn more from the following resources:
 
-- [@official@Autopsy Website](https://www.autopsy.com/)
+- [@official@Autopsy](https://www.autopsy.com/)
 - [@video@Disk analysis with Autopsy](https://www.youtube.com/watch?v=o6boK9dG-Lc&t=236s)
