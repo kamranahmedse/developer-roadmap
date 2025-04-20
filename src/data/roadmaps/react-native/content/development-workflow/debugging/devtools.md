@@ -1,5 +1,7 @@
-# React Native - DevTools
+# DevTools
 
+React Native DevTools are essential tools that help developers debug and optimize their applications during the development process.
 
-You can use the [standalone version of React Developer Tools](https://github.com/facebook/react/tree/main/packages/react-devtools) to debug the React component hierarchy. Visit the [React Native Documentation](https://reactnative.dev/docs/react-devtools) for more information.
+Visit the following resources to learn more:
 
+- [@official@Devtools](https://reactnative.dev/docs/react-devtools)

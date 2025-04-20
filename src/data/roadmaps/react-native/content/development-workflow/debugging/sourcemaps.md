@@ -10,3 +10,7 @@ There are various types of sourcemaps which give different levels of detail to t
 - `source-map`: Full source mapping with both line and column information. It is accurate, though slower compared to other options.
 
 After generating sourcemaps, you can use them to debug errors more efficiently, as they will reference the original locations in the source code. The browser's developer tools, like Google Chrome, have built-in support for sourcemaps, providing the ability to navigate and debug errors with ease.
+
+Visit the following resources to learn more:
+
+- [@official@SourceMaps](https://reactnative.dev/docs/0.71/sourcemaps)
