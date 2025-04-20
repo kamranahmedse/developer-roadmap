@@ -4,5 +4,6 @@ In the context of cybersecurity, a bus refers to a communication system that tra
 
 Learn more from the following resources:
 
-- [@article@What is a bus?](https://www.lenovo.com/gb/en/glossary/bus/?srsltid=AfmBOoocoXVvqdupLu13XAm0FZMOHjRtjnnCCFxa59tEa-bQwhiVhac2)
-- [@video@Computer buses](https://www.youtube.com/watch?v=aBCaCrC3z0k)
+- [@article@Bus in Computing](https://en.wikipedia.org/wiki/Bus_(computing))
+- [@article@What is a Bus?](https://www.lenovo.com/gb/en/glossary/bus/?srsltid=AfmBOoocoXVvqdupLu13XAm0FZMOHjRtjnnCCFxa59tEa-bQwhiVhac2)
+- [@video@Computer Buses](https://www.youtube.com/watch?v=aBCaCrC3z0k)
