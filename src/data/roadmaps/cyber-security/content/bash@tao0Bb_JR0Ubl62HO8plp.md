@@ -4,6 +4,7 @@ Bash (Bourne Again Shell) is a widely-used Unix shell and scripting language tha
 
 Learn more from the following resources:
 
+- [@official@Bash](https://www.gnu.org/software/bash/)
 - [@video@Bash in 100 Seconds](https://www.youtube.com/watch?v=I4EWvMFj37g)
 - [@course@Beginners Guide To The Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
 - [@course@Start learning bash](https://linuxhandbook.com/bash/)
